@@ -207,13 +207,149 @@ function HomePage() {
 
 function Breadcrumbs({ page }: { page: SitePage }) {
   return (
-    <nav aria-label="Breadcrumb" className="container pt-5 text-sm text-[var(--muted)]">
+    <nav aria-label="Breadcrumb" className="mx-auto max-w-[1180px] px-5 pt-5 text-[16px] text-[#4f4f4f]">
       <Link className="focus-ring underline" href="/">
         Home
       </Link>
       {page.path !== "/" ? <span aria-hidden="true"> / </span> : null}
       {page.path !== "/" ? <span>{page.h1}</span> : null}
     </nav>
+  );
+}
+
+function LiveTextBlock({ lines }: { lines: string[] }) {
+  return (
+    <div className="legacy-live-copy mx-auto max-w-[1040px] space-y-5 text-center text-[18px] leading-8 text-[#333]">
+      {lines.map((line, index) => {
+        const isHeading = line.length < 95 && !/[.!?]$/.test(line) && index > 0;
+        if (isHeading) {
+          return (
+            <h2 className="pt-3 text-[28px] font-black leading-tight text-[#333]" key={`${line}-${index}`}>
+              {line}
+            </h2>
+          );
+        }
+        return <p key={`${line}-${index}`}>{line}</p>;
+      })}
+    </div>
+  );
+}
+
+function LivePageBody({ page }: { page: SitePage }) {
+  const paragraphs = page.body.filter(Boolean);
+  const image = page.heroImage;
+  const isBlog = page.type === "blog-post";
+
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-10 text-center">
+        <div className="mx-auto max-w-[1180px] px-5">
+          {isBlog ? (
+            <p className="mb-3 text-[15px] text-[#555]">Audiology Associates of Westchester</p>
+          ) : null}
+          <h1 className="mx-auto max-w-[1060px] text-[34px] font-black leading-tight text-[#333] md:text-[44px]">
+            {page.h1 || page.title}
+          </h1>
+          {image ? (
+            <Image
+              alt={image.alt || page.h1}
+              className="mx-auto mt-8 max-h-[460px] w-full max-w-[980px] object-cover"
+              height={760}
+              priority={false}
+              src={image.src}
+              width={1180}
+            />
+          ) : null}
+          <div className="mt-8">
+            <LiveTextBlock lines={paragraphs.length ? paragraphs : [page.metaDescription]} />
+          </div>
+        </div>
+      </section>
+
+      {page.sections.length ? (
+        <section className="bg-[#f3f3f3] py-10 text-center">
+          <div className="mx-auto max-w-[1180px] px-5">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {page.sections.slice(0, 9).map((section) => (
+                <div className="bg-white p-5 text-[18px] font-black text-[#333]" key={section}>
+                  {section}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {page.type === "service" || page.type === "hearing-aids" || page.type === "educational" ? (
+        <section className="bg-white py-10 text-center">
+          <div className="mx-auto max-w-[900px] px-5">
+            <h2 className="text-[26px] font-black text-[#333]">Contact Audiology Associates of Westchester</h2>
+            <p className="mt-4 text-[17px] leading-7 text-[#333]">
+              For personalized recommendations, appointment availability, or questions about this topic, please call
+              the practice directly.
+            </p>
+            <Link className="legacy-live-button mt-6 inline-flex" href="/contact-us">
+              MAKE AN APPOINTMENT TODAY
+            </Link>
+          </div>
+        </section>
+      ) : null}
+    </>
+  );
+}
+
+function LiveContactPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-10 text-center">
+        <div className="mx-auto max-w-[1180px] px-5">
+          <h1 className="text-[38px] font-black leading-tight text-[#333]">{page.h1}</h1>
+          <LiveTextBlock lines={page.body.slice(0, 6)} />
+          <div className="mt-10 grid gap-8 text-left lg:grid-cols-[0.8fr_1.2fr]">
+            <div className="space-y-5 text-[17px] leading-7 text-[#333]">
+              {locations
+                .filter((location) => location.type === "office")
+                .slice(0, 2)
+                .map((location) => (
+                  <address className="not-italic" key={location.path}>
+                    <Link className="font-black text-[#005a9c] underline" href={location.path}>
+                      {location.name}
+                    </Link>
+                    <p>{location.address}</p>
+                    <a className="font-bold text-[#005a9c] underline" href={location.phoneHref}>
+                      {location.phone}
+                    </a>
+                  </address>
+                ))}
+            </div>
+            <ContactForm context={`Contact page: ${page.h1}`} />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function LivePatientFormsPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-10 text-center">
+        <div className="mx-auto max-w-[980px] px-5">
+          <h1 className="text-[38px] font-black text-[#333]">{page.h1}</h1>
+          <LiveTextBlock lines={page.body.slice(0, 8)} />
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {patientForms.map((form) => (
+              <a className="legacy-live-button inline-flex" href={form.href} key={form.href} rel="noreferrer" target="_blank">
+                {form.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
@@ -655,18 +791,28 @@ export function PageRenderer({ page }: { page: SitePage }) {
     );
   }
 
+  if (page.type === "contact") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <LiveContactPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "form") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <LivePatientFormsPage page={page} />
+      </>
+    );
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <Breadcrumbs page={page} />
-      <Hero page={page} />
-      {page.type === "blog-index" ? <BlogIndex /> : <ContentText page={page} />}
-      {page.type === "form" ? <PatientForms /> : null}
-      <ServiceExtras page={page} />
-      <LocationDetails page={page} />
-      <ContactSection page={page} />
-      <FaqSection page={page} />
-      <FinalCta />
+      {page.type === "blog-index" ? <BlogIndex /> : <LivePageBody page={page} />}
     </>
   );
 }
