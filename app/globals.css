@@ -117,7 +117,21 @@ select {
 }
 
 .legacy-header .zd-plugin svg {
-  display: none;
+  display: none !important;
+}
+
+.legacy-header .legacy-why-button {
+  color: #ffffff !important;
+}
+
+.legacy-header .legacy-book-button {
+  background: #ffe92f !important;
+  color: #14313d !important;
+  gap: 0 !important;
+}
+
+.legacy-header .legacy-book-button:hover {
+  background: #ffe92f !important;
 }
 
 .legacy-footer .legacy-social-circle {

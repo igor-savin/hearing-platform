@@ -79,7 +79,7 @@ export function Header() {
     <header className="legacy-header bg-white">
       <div className="relative mx-auto flex min-h-[171px] w-full max-w-[2048px] items-center justify-center px-5 py-4">
         <Link
-          className="focus-ring absolute left-[78px] top-[40px] hidden rounded-[4px] bg-[#005a9c] px-[36px] py-[13px] text-[18px] leading-none text-white lg:inline-flex"
+          className="focus-ring legacy-why-button absolute left-[78px] top-[40px] hidden rounded-[4px] bg-[#005a9c] px-[36px] py-[13px] text-[18px] leading-none text-white lg:inline-flex"
           href="/why-choose-us"
         >
           Why Choose Us?
@@ -118,7 +118,7 @@ export function Header() {
           </a>
           <div className="mt-[9px] flex justify-center">
             <ZocdocButton
-              className="rounded-none bg-[#ffe92f] px-[29px] py-[10px] text-[20px] font-black text-[#07364a] hover:bg-[#ffe92f]"
+              className="legacy-book-button rounded-none px-[29px] py-[10px] text-[20px] font-black"
               trackingId="appointment-header"
             />
           </div>
@@ -126,8 +126,8 @@ export function Header() {
       </div>
 
       <nav aria-label="Primary navigation" className="bg-[#005a9c] text-white">
-        <div className="mx-auto max-w-[900px] px-3">
-          <ul className="flex flex-wrap items-stretch justify-center">
+        <div className="mx-auto max-w-[920px] px-3">
+          <ul className="flex flex-nowrap items-stretch justify-center">
             <li>
               <Link
                 className="focus-ring inline-flex h-full items-center border-2 border-white px-[10px] py-[11px] text-[14px] uppercase tracking-[0.08em]"
@@ -139,7 +139,7 @@ export function Header() {
             {navGroups.map((group) => (
               <li className="legacy-nav-item relative" key={group.label}>
                 <details>
-                  <summary className="focus-ring flex cursor-pointer list-none items-center gap-2 px-[28px] py-[14px] text-[14px] uppercase tracking-[0.08em] marker:hidden">
+                  <summary className="focus-ring flex cursor-pointer list-none items-center gap-2 px-[23px] py-[14px] text-[14px] uppercase tracking-[0.08em] marker:hidden">
                     {group.href ? <Link href={group.href}>{group.label}</Link> : group.label}
                     <ChevronDown size={13} aria-hidden="true" />
                   </summary>
