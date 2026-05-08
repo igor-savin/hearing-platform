@@ -12,3 +12,4 @@ coverage
 .vercel-home
 firebase-debug.log
 .vercel
+.git-ssh
