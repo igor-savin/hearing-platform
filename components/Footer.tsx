@@ -5,7 +5,7 @@ function SocialCircle({ label, href, children }: { label: string; href: string; 
   return (
     <a
       aria-label={label}
-      className="focus-ring inline-flex h-8 w-8 items-center justify-center rounded-full border-[3px] border-[#005a9c] text-sm font-black leading-none text-[#005a9c]"
+      className="focus-ring legacy-footer-social inline-flex items-center justify-center rounded-full border-[5px] border-white text-[42px] font-black leading-none text-white"
       href={href}
       rel="noreferrer"
       target="_blank"
@@ -21,24 +21,24 @@ export function Footer() {
 
   return (
     <footer className="legacy-footer border-t border-[#7da4c3] bg-[#005a9c] text-center text-white">
-      <div className="mx-auto max-w-[1180px] px-5 pb-[17px] pt-[25px]">
-        <p className="mb-[43px] text-[28px] font-normal uppercase leading-tight tracking-normal">{siteName}</p>
+      <div className="mx-auto max-w-[1500px] px-5 pb-[18px] pt-[40px]">
+        <p className="mb-[72px] text-[31px] font-normal uppercase leading-tight tracking-normal">{siteName}</p>
 
-        <div className="mx-auto grid max-w-[1100px] gap-8 text-[20px] leading-tight md:grid-cols-2">
+        <div className="mx-auto grid max-w-[1250px] gap-8 text-[20px] leading-tight md:grid-cols-2">
           {harrison ? (
             <address className="not-italic">
-              <Link className="focus-ring font-bold text-white underline" href={harrison.path}>
+              <Link className="focus-ring text-[20px] font-bold text-white underline" href={harrison.path}>
                 Harrison, NY Location
               </Link>
-              <p className="mt-[7px]">{harrison.address}</p>
+              <p className="mt-[8px] whitespace-nowrap text-[20px]">{harrison.address}</p>
             </address>
           ) : null}
           {somers ? (
             <address className="not-italic">
-              <Link className="focus-ring font-bold text-white underline" href={somers.path}>
+              <Link className="focus-ring text-[20px] font-bold text-white underline" href={somers.path}>
                 Somers, NY Location
               </Link>
-              <p className="mt-[7px]">
+              <p className="mt-[8px] whitespace-nowrap text-[20px]">
                 {somers.address} | Phone:{" "}
                 <a className="focus-ring underline" href={somers.phoneHref}>
                   {somers.phone}
@@ -48,7 +48,7 @@ export function Footer() {
           ) : null}
         </div>
 
-        <div className="mt-[22px] flex justify-center gap-1">
+        <div className="mt-[27px] flex justify-center gap-[7px]">
           <SocialCircle href="https://www.facebook.com/AAofW" label="Facebook">
             f
           </SocialCircle>

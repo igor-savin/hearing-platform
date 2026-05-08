@@ -136,10 +136,7 @@ select {
   background: #ffe92f !important;
 }
 
-.legacy-footer .legacy-social-circle {
-  border-color: #ffffff;
-  color: #ffffff;
-  height: 50px;
-  width: 50px;
-  font-size: 34px;
+.legacy-footer .legacy-footer-social {
+  height: 58px;
+  width: 58px;
 }
