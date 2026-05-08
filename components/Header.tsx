@@ -157,10 +157,10 @@ export function Header() {
                     </button>
                   )}
                 </div>
-                <div className="legacy-dropdown absolute left-0 top-full z-50 hidden min-w-[390px] bg-[#005a9c] text-white shadow-lg">
+                <div className="legacy-dropdown absolute left-0 top-full z-50 hidden min-w-[335px] bg-[#005a9c] text-white shadow-lg">
                   {group.links.map(([label, href]) => (
                     <Link
-                      className="focus-ring block whitespace-nowrap border-b border-white/55 px-8 py-[22px] text-[27px] uppercase leading-tight tracking-[0.06em] last:border-b-0 hover:bg-[#005a9c]"
+                      className="focus-ring block whitespace-nowrap border-b border-white/55 px-[30px] py-[18px] text-[20px] uppercase leading-tight tracking-[0.06em] last:border-b-0 hover:bg-[#005a9c]"
                       href={href}
                       key={href}
                     >
