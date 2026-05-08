@@ -1,0 +1,84 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "hosting": {
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      ".npm-cache/**",
+      "reports/**",
+      "scripts/**"
+    ],
+    "frameworksBackend": {
+      "region": "us-central1"
+    },
+    "headers": [
+      {
+        "source": "/llms.txt",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain; charset=utf-8"
+          }
+        ]
+      },
+      {
+        "source": "/sitemap.xml",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/xml; charset=utf-8"
+          }
+        ]
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/privacy-policy",
+        "destination": "/privacy",
+        "type": 301
+      },
+      {
+        "source": "/somers-ny",
+        "destination": "/Somers-NY",
+        "type": 301
+      },
+      {
+        "source": "/white-plains-ny",
+        "destination": "/White-Plains-NY",
+        "type": 301
+      },
+      {
+        "source": "/scarsdale-ny",
+        "destination": "/Scarsdale-NY",
+        "type": 301
+      },
+      {
+        "source": "/hearing-aid-brands",
+        "destination": "/hearing-aids-brands",
+        "type": 301
+      },
+      {
+        "source": "/locations",
+        "destination": "/contact-us",
+        "type": 301
+      },
+      {
+        "source": "/services",
+        "destination": "/hearing-testing",
+        "type": 301
+      },
+      {
+        "source": "/null",
+        "destination": "/",
+        "type": 301
+      }
+    ]
+  }
+}

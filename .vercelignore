@@ -1,0 +1,12 @@
+.firebase
+.firebase-cache
+.next
+.npm-cache
+.vercel-home
+coverage
+dist
+node_modules
+out
+reports
+tsconfig.tsbuildinfo
+firebase-debug.log

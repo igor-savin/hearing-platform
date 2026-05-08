@@ -1,0 +1,48 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function validSubmission() {
+      let data = request.resource.data;
+      return data.keys().hasOnly([
+          'context',
+          'name',
+          'email',
+          'phone',
+          'preferredLocation',
+          'message',
+          'attachmentPath',
+          'source',
+          'createdAt'
+        ])
+        && data.context is string
+        && data.context.size() <= 120
+        && data.name is string
+        && data.name.size() >= 2
+        && data.name.size() <= 120
+        && data.email is string
+        && data.email.size() <= 160
+        && data.phone is string
+        && data.phone.size() >= 7
+        && data.phone.size() <= 40
+        && data.preferredLocation is string
+        && data.preferredLocation.size() <= 80
+        && data.message is string
+        && data.message.size() >= 2
+        && data.message.size() <= 3000
+        && data.attachmentPath is string
+        && data.attachmentPath.size() <= 240
+        && data.source == 'website'
+        && data.createdAt == request.time;
+    }
+
+    match /contactSubmissions/{submissionId} {
+      allow create: if validSubmission();
+      allow read, update, delete: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

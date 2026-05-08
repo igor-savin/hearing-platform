@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbfaf7;
+  --foreground: #253239;
+  --brand: #115e68;
+  --brand-dark: #0a3d45;
+  --brand-soft: #e5f3f4;
+  --accent: #c57a34;
+  --accent-dark: #9f5c1e;
+  --cream: #fff7ed;
+  --muted: #5d6b72;
+  --line: #d7e2e3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  width: min(1160px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.medical-shadow {
+  box-shadow: 0 18px 45px rgba(17, 94, 104, 0.12);
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(197, 122, 52, 0.45);
+  outline-offset: 3px;
+}
+
+.rich-text p + p {
+  margin-top: 1rem;
+}
+
+.rich-text ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.rich-text li + li {
+  margin-top: 0.35rem;
+}
+
+.rich-text h2,
+.rich-text h3 {
+  color: var(--brand-dark);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.rich-text h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.rich-text h3 {
+  font-size: 1.25rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 100;
+  background: white;
+  border: 2px solid var(--brand);
+  padding: 10px 14px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
