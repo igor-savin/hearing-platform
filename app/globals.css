@@ -101,3 +101,21 @@ select {
 .skip-link:focus {
   top: 16px;
 }
+
+.legacy-header summary::-webkit-details-marker {
+  display: none;
+}
+
+.legacy-nav-item details:not([open]) .legacy-dropdown {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .legacy-nav-item:hover .legacy-dropdown {
+    display: block;
+  }
+}
+
+.legacy-header .zd-plugin svg {
+  display: none;
+}

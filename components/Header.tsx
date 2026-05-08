@@ -1,118 +1,152 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { logoUrl, primaryPhone, primaryPhoneHref } from "@/lib/site";
 
 const navGroups = [
   {
-    label: "About Us",
+    label: "ABOUT US",
     links: [
-      ["Meet the Team", "/meet-the-team"],
-      ["Why Choose Us", "/why-choose-us"],
-      ["Careers", "/careers"],
+      ["MEET THE TEAM", "/meet-the-team"],
+      ["WHY CHOOSE US", "/why-choose-us"],
+      ["CAREERS", "/careers"],
       ["Blog", "/blog"]
     ]
   },
   {
-    label: "Hearing Loss",
+    label: "HEARING LOSS",
     links: [
-      ["Hearing Loss Misconceptions", "/hearing-loss-misconceptions"],
-      ["Improve Your Hearing", "/improve-your-hearing"],
-      ["Dizziness and Ringing in Your Ears", "/dizziness-and-ringing-in-your-ears"],
-      ["Help a Loved One", "/help-a-loved-one"],
-      ["Prevent Hearing Loss", "/prevent-hearing-loss"],
-      ["Get Answers", "/get-answers"]
+      ["HEARING LOSS MISCONCEPTIONS", "/hearing-loss-misconceptions"],
+      ["IMPROVE YOUR HEARING", "/improve-your-hearing"],
+      ["DIZZINESS AND RINGING IN YOUR EARS", "/dizziness-and-ringing-in-your-ears"],
+      ["HELP A LOVED ONE", "/help-a-loved-one"],
+      ["PREVENT HEARING LOSS", "/prevent-hearing-loss"],
+      ["GET ANSWERS", "/get-answers"]
     ]
   },
   {
-    label: "Hearing Aids",
+    label: "HEARING AIDS",
     links: [
-      ["Hearing Aids 101", "/hearing-aids-101"],
-      ["Types of Hearing Aids", "/types-of-hearing-aids"],
-      ["Hearing Aid Brands", "/hearing-aids-brands"],
-      ["Batteries and Accessories", "/batteries-and-accessories"],
-      ["Lyric Invisible Hearing", "/lyric-invisible-hearing"],
-      ["Instructional Videos", "/instructional-videos"],
-      ["Referral Program", "/hearing-aid-referral-program"]
+      ["HEARING AIDS 101", "/hearing-aids-101"],
+      ["TYPES OF HEARING AIDS", "/types-of-hearing-aids"],
+      ["HEARING AIDS BRANDS", "/hearing-aids-brands"],
+      ["BATTERIES AND ACCESSORIES", "/batteries-and-accessories"],
+      ["LYRIC® INVISIBLE HEARING™", "/lyric-invisible-hearing"],
+      ["INSTRUCTIONAL VIDEOS", "/instructional-videos"]
     ]
   },
   {
-    label: "Services",
+    label: "SERVICES",
     links: [
-      ["Hearing Testing", "/hearing-testing"],
-      ["Hearing Aid Fitting", "/hearing-aid-fitting"],
-      ["Tinnitus Therapy", "/tinnitus-therapy"],
-      ["Hearing Protection", "/hearing-protection"],
-      ["Hearing Aid Repair", "/hearing-aid-repair"]
+      ["HEARING TESTING", "/hearing-testing"],
+      ["HEARING AID FITTING", "/hearing-aid-fitting"],
+      ["TINNITUS THERAPY", "/tinnitus-therapy"],
+      ["HEARING PROTECTION", "/hearing-protection"],
+      ["HEARING AID REPAIR", "/hearing-aid-repair"]
     ]
   },
   {
-    label: "Contact",
+    label: "CONTACT US",
+    href: "/contact-us",
     links: [
-      ["Contact Us", "/contact-us"],
-      ["Patient Forms", "/patient-forms"],
-      ["Somers, NY Office", "/Somers-NY"],
-      ["Harrison, NY Office", "/harrison-ny"],
-      ["White Plains, NY", "/White-Plains-NY"],
-      ["Scarsdale, NY", "/Scarsdale-NY"],
-      ["Greenwich, CT", "/greenwich-ct"],
-      ["Rye, NY", "/rye-ny"],
-      ["Mt. Kisco, NY", "/mt-kisco-ny"]
+      ["PATIENT FORMS", "/patient-forms"],
+      ["SOMERS, NY OFFICE", "/Somers-NY"],
+      ["GREENWICH, CT", "/greenwich-ct"],
+      ["RYE, NY", "/rye-ny"],
+      ["MT. KISCO, NY", "/mt-kisco-ny"],
+      ["HARRISON, NY", "/harrison-ny"]
     ]
   }
 ];
 
+function SocialCircle({ label, href, children }: { label: string; href: string; children: string }) {
+  return (
+    <a
+      aria-label={label}
+      className="focus-ring inline-flex h-8 w-8 items-center justify-center rounded-full border-[3px] border-[#005a9c] text-sm font-black leading-none text-[#005a9c]"
+      href={href}
+      rel="noreferrer"
+      target="_blank"
+    >
+      {children}
+    </a>
+  );
+}
+
 export function Header() {
   return (
-    <header className="border-b border-[var(--line)] bg-white">
-      <div className="bg-[var(--brand-dark)] text-white">
-        <div className="container flex flex-wrap items-center justify-between gap-3 py-2 text-sm">
-          <Link className="focus-ring inline-flex items-center gap-2 font-bold" href="/why-choose-us">
-            <MapPin size={16} aria-hidden="true" />
-            Serving Westchester County
-          </Link>
-          <div className="flex flex-wrap items-center gap-3">
-            <a
-              className="focus-ring inline-flex items-center gap-2 font-bold"
-              data-track="phone-header"
-              href={primaryPhoneHref}
-            >
-              <Phone size={16} aria-hidden="true" />
-              {primaryPhone}
-            </a>
-            <ZocdocButton className="px-3 py-2" trackingId="appointment-header" />
-          </div>
-        </div>
-      </div>
-      <div className="container flex flex-col items-center gap-5 py-5 lg:flex-row lg:justify-between">
+    <header className="legacy-header bg-white">
+      <div className="relative mx-auto flex min-h-[172px] w-full max-w-[2048px] items-center justify-center px-5 py-6">
+        <Link
+          className="focus-ring absolute left-[18px] top-[37px] hidden rounded-[4px] bg-[#005a9c] px-9 py-3 text-[20px] leading-none text-white lg:inline-flex"
+          href="/why-choose-us"
+        >
+          Why Choose Us?
+        </Link>
+
         <Link className="focus-ring block" href="/" aria-label="Audiology Associates of Westchester home">
           <Image
             alt="Audiology Associates of Westchester logo"
-            className="h-auto w-[290px] max-w-full"
-            height={120}
+            className="h-auto w-[360px] max-w-[78vw] md:w-[575px] lg:w-[700px]"
+            height={192}
             priority
             src={logoUrl}
-            width={584}
+            width={1200}
           />
         </Link>
-        <nav aria-label="Primary navigation" className="w-full lg:w-auto">
-          <ul className="flex flex-wrap items-center justify-center gap-2">
+
+        <div className="absolute right-[18px] top-0 hidden min-w-[250px] text-center lg:block">
+          <div className="mb-2 flex justify-center gap-1">
+            <SocialCircle href="https://www.facebook.com/AAofW" label="Facebook">
+              f
+            </SocialCircle>
+            <SocialCircle href="https://twitter.com/audiologyassoci" label="X">
+              X
+            </SocialCircle>
+            <SocialCircle href="https://www.yelp.com/biz/audiology-associates-of-westchester-white-plains-2" label="Yelp">
+              *
+            </SocialCircle>
+          </div>
+          <p className="text-[18px] leading-tight text-black">Call Us Today</p>
+          <a
+            className="focus-ring text-[18px] font-bold leading-tight text-[#005a9c] underline"
+            data-track="phone-header"
+            href={primaryPhoneHref}
+          >
+            {primaryPhone}
+          </a>
+          <div className="mt-2 flex justify-center">
+            <ZocdocButton
+              className="rounded-none bg-[#ffe92f] px-8 py-3 text-[20px] font-black text-[#07364a] hover:bg-[#ffe92f]"
+              trackingId="appointment-header"
+            />
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary navigation" className="bg-[#005a9c] text-white">
+        <div className="mx-auto max-w-[980px] px-3">
+          <ul className="flex flex-wrap items-stretch justify-center">
             <li>
-              <Link className="focus-ring rounded-md px-3 py-2 text-sm font-bold text-[var(--brand-dark)]" href="/">
-                Home
+              <Link
+                className="focus-ring inline-flex h-full items-center border-2 border-white px-3 py-3 text-[15px] uppercase tracking-[0.08em]"
+                href="/"
+              >
+                HOME
               </Link>
             </li>
             {navGroups.map((group) => (
-              <li className="relative" key={group.label}>
-                <details className="group">
-                  <summary className="focus-ring cursor-pointer list-none rounded-md px-3 py-2 text-sm font-bold text-[var(--brand-dark)] marker:hidden">
-                    {group.label}
+              <li className="legacy-nav-item relative" key={group.label}>
+                <details>
+                  <summary className="focus-ring flex cursor-pointer list-none items-center gap-2 px-7 py-[15px] text-[15px] uppercase tracking-[0.08em] marker:hidden">
+                    {group.href ? <Link href={group.href}>{group.label}</Link> : group.label}
+                    <ChevronDown size={13} aria-hidden="true" />
                   </summary>
-                  <div className="absolute left-1/2 z-40 mt-2 w-72 -translate-x-1/2 rounded-md border border-[var(--line)] bg-white p-2 medical-shadow">
+                  <div className="legacy-dropdown absolute left-0 z-50 min-w-[270px] border border-[#d7e2e3] bg-white py-3 text-[#27323a] shadow-lg">
                     {group.links.map(([label, href]) => (
                       <Link
-                        className="focus-ring block rounded px-3 py-2 text-sm text-[var(--foreground)] hover:bg-[var(--brand-soft)]"
+                        className="focus-ring block whitespace-nowrap px-8 py-3 text-[15px] leading-tight hover:bg-[#f4f7f8]"
                         href={href}
                         key={href}
                       >
@@ -124,8 +158,8 @@ export function Header() {
               </li>
             ))}
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
   );
 }
