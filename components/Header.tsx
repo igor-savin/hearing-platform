@@ -138,23 +138,36 @@ export function Header() {
             </li>
             {navGroups.map((group) => (
               <li className="legacy-nav-item relative" key={group.label}>
-                <details>
-                  <summary className="focus-ring flex cursor-pointer list-none items-center gap-2 px-[23px] py-[14px] text-[14px] uppercase tracking-[0.08em] marker:hidden">
-                    {group.href ? <Link href={group.href}>{group.label}</Link> : group.label}
-                    <ChevronDown size={13} aria-hidden="true" />
-                  </summary>
-                  <div className="legacy-dropdown absolute left-0 z-50 min-w-[270px] border border-[#d7e2e3] bg-white py-3 text-[#27323a] shadow-lg">
-                    {group.links.map(([label, href]) => (
-                      <Link
-                        className="focus-ring block whitespace-nowrap px-8 py-3 text-[15px] leading-tight hover:bg-[#f4f7f8]"
-                        href={href}
-                        key={href}
-                      >
-                        {label}
-                      </Link>
-                    ))}
-                  </div>
-                </details>
+                <div className="legacy-nav-trigger flex items-center">
+                  {group.href ? (
+                    <Link
+                      className="focus-ring flex items-center gap-2 px-[23px] py-[14px] text-[14px] uppercase tracking-[0.08em]"
+                      href={group.href}
+                    >
+                      {group.label}
+                      <ChevronDown size={13} aria-hidden="true" />
+                    </Link>
+                  ) : (
+                    <button
+                      className="focus-ring flex cursor-default items-center gap-2 px-[23px] py-[14px] text-[14px] uppercase tracking-[0.08em]"
+                      type="button"
+                    >
+                      {group.label}
+                      <ChevronDown size={13} aria-hidden="true" />
+                    </button>
+                  )}
+                </div>
+                <div className="legacy-dropdown absolute left-0 top-full z-50 hidden min-w-[390px] bg-[#005a9c] text-white shadow-lg">
+                  {group.links.map(([label, href]) => (
+                    <Link
+                      className="focus-ring block whitespace-nowrap border-b border-white/55 px-8 py-[22px] text-[27px] uppercase leading-tight tracking-[0.06em] last:border-b-0 hover:bg-[#005a9c]"
+                      href={href}
+                      key={href}
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
               </li>
             ))}
           </ul>

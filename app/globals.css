@@ -102,18 +102,20 @@ select {
   top: 16px;
 }
 
-.legacy-header summary::-webkit-details-marker {
-  display: none;
-}
-
-.legacy-nav-item details:not([open]) .legacy-dropdown {
-  display: none;
-}
-
 @media (hover: hover) and (pointer: fine) {
   .legacy-nav-item:hover .legacy-dropdown {
     display: block;
   }
+}
+
+.legacy-nav-item:focus-within .legacy-dropdown {
+  display: block;
+}
+
+.legacy-nav-item button {
+  color: inherit;
+  background: transparent;
+  border: 0;
 }
 
 .legacy-header .zd-plugin svg {
