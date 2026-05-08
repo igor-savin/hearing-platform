@@ -64,7 +64,7 @@ function SocialCircle({ label, href, children }: { label: string; href: string; 
   return (
     <a
       aria-label={label}
-      className="focus-ring inline-flex h-8 w-8 items-center justify-center rounded-full border-[3px] border-[#005a9c] text-sm font-black leading-none text-[#005a9c]"
+      className="focus-ring legacy-social-circle inline-flex h-[34px] w-[34px] items-center justify-center rounded-full border-[3px] border-[#005a9c] text-[21px] font-black leading-none text-[#005a9c]"
       href={href}
       rel="noreferrer"
       target="_blank"
@@ -77,9 +77,9 @@ function SocialCircle({ label, href, children }: { label: string; href: string; 
 export function Header() {
   return (
     <header className="legacy-header bg-white">
-      <div className="relative mx-auto flex min-h-[172px] w-full max-w-[2048px] items-center justify-center px-5 py-6">
+      <div className="relative mx-auto flex min-h-[171px] w-full max-w-[2048px] items-center justify-center px-5 py-4">
         <Link
-          className="focus-ring absolute left-[18px] top-[37px] hidden rounded-[4px] bg-[#005a9c] px-9 py-3 text-[20px] leading-none text-white lg:inline-flex"
+          className="focus-ring absolute left-[78px] top-[40px] hidden rounded-[4px] bg-[#005a9c] px-[36px] py-[13px] text-[18px] leading-none text-white lg:inline-flex"
           href="/why-choose-us"
         >
           Why Choose Us?
@@ -96,8 +96,8 @@ export function Header() {
           />
         </Link>
 
-        <div className="absolute right-[18px] top-0 hidden min-w-[250px] text-center lg:block">
-          <div className="mb-2 flex justify-center gap-1">
+        <div className="absolute right-[220px] top-[3px] hidden min-w-[170px] text-center lg:block">
+          <div className="mb-[7px] flex justify-center gap-1">
             <SocialCircle href="https://www.facebook.com/AAofW" label="Facebook">
               f
             </SocialCircle>
@@ -108,17 +108,17 @@ export function Header() {
               *
             </SocialCircle>
           </div>
-          <p className="text-[18px] leading-tight text-black">Call Us Today</p>
+          <p className="text-[16px] leading-tight text-black">Call Us Today</p>
           <a
-            className="focus-ring text-[18px] font-bold leading-tight text-[#005a9c] underline"
+            className="focus-ring text-[16px] font-bold leading-tight text-[#005a9c] underline"
             data-track="phone-header"
             href={primaryPhoneHref}
           >
             {primaryPhone}
           </a>
-          <div className="mt-2 flex justify-center">
+          <div className="mt-[9px] flex justify-center">
             <ZocdocButton
-              className="rounded-none bg-[#ffe92f] px-8 py-3 text-[20px] font-black text-[#07364a] hover:bg-[#ffe92f]"
+              className="rounded-none bg-[#ffe92f] px-[29px] py-[10px] text-[20px] font-black text-[#07364a] hover:bg-[#ffe92f]"
               trackingId="appointment-header"
             />
           </div>
@@ -126,11 +126,11 @@ export function Header() {
       </div>
 
       <nav aria-label="Primary navigation" className="bg-[#005a9c] text-white">
-        <div className="mx-auto max-w-[980px] px-3">
+        <div className="mx-auto max-w-[900px] px-3">
           <ul className="flex flex-wrap items-stretch justify-center">
             <li>
               <Link
-                className="focus-ring inline-flex h-full items-center border-2 border-white px-3 py-3 text-[15px] uppercase tracking-[0.08em]"
+                className="focus-ring inline-flex h-full items-center border-2 border-white px-[10px] py-[11px] text-[14px] uppercase tracking-[0.08em]"
                 href="/"
               >
                 HOME
@@ -139,7 +139,7 @@ export function Header() {
             {navGroups.map((group) => (
               <li className="legacy-nav-item relative" key={group.label}>
                 <details>
-                  <summary className="focus-ring flex cursor-pointer list-none items-center gap-2 px-7 py-[15px] text-[15px] uppercase tracking-[0.08em] marker:hidden">
+                  <summary className="focus-ring flex cursor-pointer list-none items-center gap-2 px-[28px] py-[14px] text-[14px] uppercase tracking-[0.08em] marker:hidden">
                     {group.href ? <Link href={group.href}>{group.label}</Link> : group.label}
                     <ChevronDown size={13} aria-hidden="true" />
                   </summary>
