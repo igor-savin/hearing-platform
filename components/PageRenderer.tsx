@@ -35,6 +35,176 @@ const patientForms = [
   }
 ];
 
+const homeImages = {
+  banner: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/banner-1920w.jpg",
+  meetTeam: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/meet-the-team-1920w.jpg",
+  people: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/what-people-are-saying-1920w.jpg",
+  experts: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/talk-to-experts-1920w.jpg",
+  testing: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/w2-1920w.jpg",
+  fitting: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/AdobeStock_232317406-1920w.jpg",
+  tinnitus: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/w4-1920w.jpg",
+  protection: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/w1-1920w.jpg",
+  repair: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Hearst+Widex+photo-1920w.png"
+};
+
+const homeServiceCards = [
+  ["Hearing Testing", "/hearing-testing", homeImages.testing, "doctor administering hearing test on older man"],
+  ["Hearing Aid Fitting", "/hearing-aid-fitting", homeImages.fitting, "hearing aid fitting appointment"],
+  ["Tinnitus Therapy", "/tinnitus-therapy", homeImages.tinnitus, "sound reverberating around ear"],
+  ["Hearing Protection", "/hearing-protection", homeImages.protection, "sound-cancelling earmuffs hanging up"],
+  ["Hearing Aid Repair", "/hearing-aid-repair", homeImages.repair, "woman handing over small hearing aid for repair"]
+];
+
+function HomePage() {
+  return (
+    <>
+      <section className="legacy-home-hero relative grid min-h-[390px] place-items-center overflow-hidden bg-[#05446a] px-5 py-20 text-center text-white">
+        <Image
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          src={homeImages.banner}
+        />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10">
+          <h1 className="text-[44px] font-black leading-tight drop-shadow-lg md:text-[58px]">
+            You&rsquo;ll Never Say &ldquo;What?&rdquo; Again!
+          </h1>
+          <p className="mt-7 text-[18px] font-black uppercase tracking-[0.4em] drop-shadow-md md:text-[26px]">
+            Improve Your Hearing <span className="mx-3">•</span> Hearing Aids <span className="mx-3">•</span> Hearing Testing
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 text-center">
+        <div className="mx-auto max-w-[1180px] px-5">
+          <h2 className="text-[36px] font-black leading-tight text-[#0a3d45] md:text-[48px]">
+            Your Trusted Audiologist
+            <br />
+            <span className="text-[22px] font-black text-[#4f4f4f]">
+              Serving Greenwich, CT; Scarsdale, Mt. Kisco, White Plains, Harrison, Rye, Somers, NY &amp; Beyond
+            </span>
+          </h2>
+          <div className="mx-auto mt-7 max-w-[1040px] space-y-5 text-[18px] leading-8 text-[#333]">
+            <p>
+              Hearing loss can be frustrating and cause you to miss out on everything around you. Whether you want
+              to watch TV without turning the volume all the way up, you want to hear your grandchildren, or you
+              want to have a conversation with a friend, hearing impairment can get in the way.
+            </p>
+            <p>
+              Fortunately, the audiologist at Audiology Associates of Westchester can help you regain quality of life
+              and hear the world around you. We offer a variety of audiology services like{" "}
+              <Link className="text-[#005a9c] underline" href="/hearing-testing">
+                hearing tests
+              </Link>
+              ,{" "}
+              <Link className="text-[#005a9c] underline" href="/hearing-aid-fitting">
+                hearing aid fitting
+              </Link>
+              ,{" "}
+              <Link className="text-[#005a9c] underline" href="/tinnitus-therapy">
+                tinnitus therapy
+              </Link>{" "}
+              to improve your hearing, and more so you don&rsquo;t miss a sound.
+            </p>
+          </div>
+          <p className="mt-7 text-[22px] font-black text-[#333]">Improve your hearing and live life to the fullest. Call now.</p>
+          <Link className="legacy-live-button mt-6 inline-flex" href="/contact-us">
+            CALL THE NEAREST LOCATION
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-[#005a9c] py-12 text-center text-white">
+        <div className="mx-auto grid max-w-[1180px] gap-8 px-5 md:grid-cols-3">
+          {[
+            ["MEET THE TEAM", "/meet-the-team", homeImages.meetTeam, "doctor looking in woman's ear", "Learn more about our experienced team of hearing doctors."],
+            ["WHY CHOOSE US", "/why-choose-us", homeImages.people, "women laughing together over coffee", "Check out these many reasons to choose us for your hearing needs."],
+            ["CONTACT US", "/contact-us", homeImages.experts, "older man smiling on the phone", "Give us a call and take the first step towards restored hearing."]
+          ].map(([title, href, src, alt, text]) => (
+            <div key={href}>
+              <Image alt={alt} className="h-[235px] w-full object-cover" height={470} src={src} width={720} />
+              <Link className="legacy-live-button mt-5 inline-flex" href={href}>
+                {title}
+              </Link>
+              <p className="mx-auto mt-4 max-w-[310px] text-[16px] leading-7">{text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-white py-14">
+        <div className="mx-auto grid max-w-[1180px] gap-10 px-5 lg:grid-cols-2">
+          <div>
+            <h2 className="text-center text-[32px] font-black leading-tight text-[#333]">
+              How Hearing Aids Help You Live a More Fulfilling Life
+            </h2>
+            <div className="mx-auto my-5 h-[2px] w-full max-w-[450px] bg-gray-400" />
+            <ul className="space-y-5 text-[17px] leading-8 text-[#333]">
+              <li><strong>Comfort &amp; Convenience:</strong> Hearing loss requires you to adjust everything you hear. Getting control of your hearing means you won&rsquo;t be uncomfortable or inconvenienced from failing to hear what&rsquo;s going on around you.</li>
+              <li><strong>Confidence:</strong> Boost your confidence in every area of your life with improved hearing.</li>
+              <li><strong>Communication:</strong> Missing out on the conversations around you can be hard on your relationships. Hearing solutions can ease the difficulties you have with speaking with family and friends.</li>
+              <li><strong>Connection:</strong> Those with hearing loss tend to avoid social situations altogether. Improve your hearing, and you&rsquo;ll want to connect with others once again.</li>
+            </ul>
+            <p className="mt-6 text-[17px] leading-8 text-[#333]">
+              The knowledgeable and experienced hearing doctors here at Audiology Associates of Westchester can help you
+              enhance all these areas of your life and more - contact us today!
+            </p>
+            <Link className="legacy-live-button mt-7 inline-flex" href="/contact-us">
+              CALL THE NEAREST LOCATION
+            </Link>
+          </div>
+          <div className="hidden min-h-[360px] bg-[#f5f5f5] lg:block" />
+        </div>
+      </section>
+
+      <section className="bg-white pb-14 text-center">
+        <div className="mx-auto max-w-[1180px] px-5">
+          <h2 className="mb-7 text-[30px] font-black text-[#333]">Our Audiology Services</h2>
+          <div className="grid gap-5 md:grid-cols-5">
+            {homeServiceCards.map(([title, href, src, alt]) => (
+              <Link className="group block" href={href} key={href}>
+                <Image alt={alt} className="aspect-square w-full object-cover transition group-hover:scale-[0.98]" height={360} src={src} width={360} />
+                <h3 className="mt-3 text-[18px] font-black text-[#005a9c]">{title}</h3>
+              </Link>
+            ))}
+          </div>
+          <Link className="legacy-live-button mt-8 inline-flex" href="/hearing-testing">
+            READ MORE +
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-[#f3f3f3] py-14">
+        <div className="mx-auto grid max-w-[1180px] gap-10 px-5 lg:grid-cols-2">
+          <div>
+            <h2 className="text-center text-[30px] font-black leading-tight text-[#333]">
+              Why Choose Audiology Associates of Westchester?
+            </h2>
+            <ul className="mt-8 list-disc space-y-4 pl-6 text-[17px] leading-7 text-[#333]">
+              <li>Our first priority is our patients. We would love to help you regain your ability to hear.</li>
+              <li>Our hearing doctors can provide you with a hearing test to understand the root of your hearing loss.</li>
+              <li>We stay up to date on the latest and most effective hearing solutions.</li>
+              <li>We can adjust and repair your hearing aid as needed.</li>
+              <li>We provide follow-up appointments so that our hearing doctors can always ensure your hearing stays top notch.</li>
+              <li>We&rsquo;re dedicated to your full satisfaction.</li>
+            </ul>
+            <Link className="legacy-live-button mt-7 inline-flex" href="/contact-us">
+              MAKE AN APPOINTMENT TODAY
+            </Link>
+          </div>
+          <div>
+            <h2 className="text-[24px] font-black text-[#333]">Get In Touch</h2>
+            <ContactForm context="Homepage contact form" />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function Breadcrumbs({ page }: { page: SitePage }) {
   return (
     <nav aria-label="Breadcrumb" className="container pt-5 text-sm text-[var(--muted)]">
@@ -476,19 +646,27 @@ function FinalCta() {
 export function PageRenderer({ page }: { page: SitePage }) {
   const schema = schemaForPage(page);
 
+  if (page.type === "home") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <HomePage />
+      </>
+    );
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Breadcrumbs page={page} />
       <Hero page={page} />
       {page.type === "blog-index" ? <BlogIndex /> : <ContentText page={page} />}
-      {page.type === "home" ? <HomeExtras /> : null}
       {page.type === "form" ? <PatientForms /> : null}
       <ServiceExtras page={page} />
       <LocationDetails page={page} />
       <ContactSection page={page} />
       <FaqSection page={page} />
-      {page.type !== "home" ? <FinalCta /> : null}
+      <FinalCta />
     </>
   );
 }
