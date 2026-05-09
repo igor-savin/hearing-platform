@@ -431,7 +431,10 @@ function LivePatientFormsPage({ page }: { page: SitePage }) {
 }
 
 function LiveTeamPage({ page }: { page: SitePage }) {
-  const intro = page.body.filter((line) => line.includes("We all hope") || line.includes("With locations")).slice(0, 2);
+  const intro = [
+    page.body.find((line) => line.startsWith("We all hope") && !line.includes("With locations")),
+    page.body.find((line) => line.startsWith("With locations"))
+  ].filter((line): line is string => Boolean(line));
 
   return (
     <>

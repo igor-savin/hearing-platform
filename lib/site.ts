@@ -320,6 +320,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
     .filter((line) => !/^Somers, NY Location$/i.test(line))
     .filter((line) => !/^325 NY 100, Somers/i.test(line))
     .filter((line) => !/^Blog$/i.test(line))
+    .filter((line) => !(line.includes("Phone:") && line.includes("Address:") && line.includes("Hours of Operation")))
     .filter((line) => !titleish.has(line))
     .filter((line, index) => index < 2 || !titleish.has(line));
 
