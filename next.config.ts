@@ -12,21 +12,6 @@ const nextConfig: NextConfig = {
         statusCode: 301
       },
       {
-        source: "/somers-ny",
-        destination: "/Somers-NY",
-        statusCode: 301
-      },
-      {
-        source: "/white-plains-ny",
-        destination: "/White-Plains-NY",
-        statusCode: 301
-      },
-      {
-        source: "/scarsdale-ny",
-        destination: "/Scarsdale-NY",
-        statusCode: 301
-      },
-      {
         source: "/hearing-aid-brands",
         destination: "/hearing-aids-brands",
         statusCode: 301
