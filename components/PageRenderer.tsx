@@ -55,6 +55,99 @@ const homeServiceCards = [
   ["Hearing Aid Repair", "/hearing-aid-repair", homeImages.repair, "woman handing over small hearing aid for repair"]
 ];
 
+const teamMembers = [
+  {
+    name: "Dr. Jennifer Ratner, Au.D.",
+    pronouns: "(she/her/hers)",
+    role: "Partner, Doctor of Audiology",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Jen-Ratner-img-1920w.jpg",
+    alt: "Jennifer Ratner, Au.D. - Doctor of Audiology - Audiology Associates of Westchester"
+  },
+  {
+    name: "Dr. Caitlin Dold, Au.D.",
+    pronouns: "(she/her/hers)",
+    role: "Lead Audiologist, Doctor of Audiology",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0255MFox9-2021-Edit-368076c6-1920w.jpg",
+    alt: "Caitlin Dold, Au.D. - Doctor of Audiology at Audiology Associates of Westchester"
+  },
+  {
+    name: "Dr. Jenna M. Elias, Au.D., F-AAA",
+    pronouns: "(she/her/hers)",
+    role: "Audiology Staff, Doctor of Audiology",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Untitled-3-1920w.jpg",
+    alt: "Dr. Jenna Elias"
+  },
+  {
+    name: "Dr. Leannmarie Senat",
+    pronouns: "(she/her/hers)",
+    role: "Audiology Staff, Doctor of Audiology",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Leannmarie-Senat-img-1920w.jpg",
+    alt: "Dr. Leannmarie Senat"
+  },
+  {
+    name: "Julia Rivera",
+    pronouns: "(she/her/hers)",
+    role: "Doctorate of Audiology Extern",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/IMG_6425-1920w.jpg",
+    alt: "Julia Rivera"
+  },
+  {
+    name: "Dr. Kira Savin, Au.D.",
+    pronouns: "(she/her/hers)",
+    role: "Partner, Doctor of Audiology",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0422MFox9-2021-Edit-489c6f34-1920w.jpg",
+    alt: "Kira Savin, Au.D. - Doctor of Audiology at Audiology Associates of Westchester"
+  },
+  {
+    name: "Jennifer Tarlton",
+    pronouns: "(she/her/hers)",
+    role: "Practice Administrator",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Jennifer-Tarlton-img-1920w.jpg",
+    alt: "Jennifer Tarlton"
+  },
+  {
+    name: "Alicia Rivera",
+    pronouns: "",
+    role: "Patient Care Coordinator Lead / Billing Specialist",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0643MFox9-2021-Edit-fb1663ce-1920w.jpg",
+    alt: "Alicia Rivera - Patient Care Coordinator Lead/ Billing Specialist"
+  },
+  {
+    name: "Barbara Lawrence",
+    pronouns: "",
+    role: "Patient Care Coordinator",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Barbara_19-Edit+%281%29-1920w.jpg",
+    alt: "Barbara Lawrence"
+  },
+  {
+    name: "Hazel Icaza",
+    pronouns: "",
+    role: "Patient Care Coordinator",
+    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Hazel_26-Edit-1920w.jpg",
+    alt: "Hazel Icaza"
+  }
+];
+
+const hearingAidBrands = [
+  ["Widex Hearing Aids", "Widex is a family-owned company that has been advancing the hearing aid industry since 1956. They specialize in tinnitus solutions and create high-quality hearing aids like their EVOKE™ line.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/WidexLogo-1920w.png", "Widex High Definition Hearing logo"],
+  ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. They create some of the most advanced products, including ones that are smartphone compatible and have activity tracking capabilities.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/StarkeyLogo-250x131-1920w.png", "Starkey logo"],
+  ["Phonak Hearing Aids", "Phonak hearing aids offer new solutions to hearing loss problems. Their products are continually changed to meet hearing loss problems. Their products include Phonak Audéo™ Marvel, Phonak Bolero™ Marvel, Phonak Sky™ Marvel, and many others.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/PhonakLogo-250x53-1920w.png", "Phonak logo"],
+  ["Lyric Hearing Aids", "Lyric creates extended wear, nearly invisible hearing aids. In fact, they created the Phonak Lyric™, touted as the world’s only 100% invisible hearing aid. All of their products are designed to provide superb sound quality.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/LyricLogo-250x128-1920w.png", "Lyric logo"],
+  ["Unitron Hearing Aids", "Unitron creates simple yet effective hearing aids that have won numerous Red Dot awards. Some of their products include Moxi Now, Stride M, Stride P, Moxi Fit, and Moxi Kiss.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/UnitronLogo-250x64-1920w.png", "Unitron Connect logo"],
+  ["Signia & Siemens Hearing Aids", "Signia has provided over 120 countries with high-quality hearing aids that deliver crystal-clear results. Siemens, under the Signia name, has provided customized audiology solutions for more than 100 years.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Signia_logo-1920w.png", "Signia logo"],
+  ["Rexton Hearing Aids", "Rexton offers hearing aids and accessories to improve your quality of life. Their focus is on accessibility and personalization to make sure everyone in need of a hearing aid finds what they need.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/RextonLogo-250x47-1920w.png", "Rexton logo"],
+  ["Oticon Hearing Aids", "Oticon has led the way for many changes in the hearing aid industry, recently with their Oticon Opn S™ and Oticon Opn Play™. These products can be used by children and adults who wish to hear clearly while enjoying an active life.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/oticon-hearing-aids-logo-1920w.png", "Oticon logo"],
+  ["Resound Hearing Aids", "ReSound has been offering hearing loss solutions to people of all ages since 1943. They provide advanced, cutting edge technology, earning them the CES Innovation Award, the Die Goldene Concha award, the Golden Lobe Award, and more.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/ResoundLogo-250x102-1920w.png", "ReSound logo"],
+  ["Caption Call", "CaptionCall makes a transcript of phone conversations so you can see what the other person is saying. This is a real-time solution for those with hearing loss who have trouble using a phone.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/caption-call-trans-bg1-1920w.png", "Caption Call logo"],
+  ["CapTel", "CapTel is a phone that amplifies the noise you want while reducing the noise you don’t want. It also provides a caption and transcript of the conversation.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/CapTel_logo-1920w.png", "CapTel logo"]
+];
+
+const liveBlogOrder = [
+  "/celebrating-pride-month-embracing-inclusivity-and-compassion",
+  "/psoriasis-affects-more-than-your-skin",
+  "/how-to-take-care-of-a-blocked-ear"
+];
+
 function HomePage() {
   return (
     <>
@@ -207,24 +300,26 @@ function HomePage() {
 
 function Breadcrumbs({ page }: { page: SitePage }) {
   return (
-    <nav aria-label="Breadcrumb" className="mx-auto max-w-[1180px] px-5 pt-5 text-[16px] text-[#4f4f4f]">
+    <nav aria-label="Breadcrumb" className="bg-[#f7f7f5] py-[13px] text-[16px] text-[#4f4f4f]">
+      <div className="mx-auto max-w-[1180px] px-5">
       <Link className="focus-ring underline" href="/">
         Home
       </Link>
       {page.path !== "/" ? <span aria-hidden="true"> / </span> : null}
       {page.path !== "/" ? <span>{page.h1}</span> : null}
+      </div>
     </nav>
   );
 }
 
 function LiveTextBlock({ lines }: { lines: string[] }) {
   return (
-    <div className="legacy-live-copy mx-auto max-w-[1040px] space-y-5 text-center text-[18px] leading-8 text-[#333]">
+    <div className="legacy-live-copy mx-auto max-w-[1030px] space-y-5 text-center text-[17px] leading-[1.75] text-[#333]">
       {lines.map((line, index) => {
-        const isHeading = line.length < 95 && !/[.!?]$/.test(line) && index > 0;
+        const isHeading = line.length < 115 && !/[.!?]$/.test(line) && index > 0;
         if (isHeading) {
           return (
-            <h2 className="pt-3 text-[28px] font-black leading-tight text-[#333]" key={`${line}-${index}`}>
+            <h2 className="pt-4 text-[25px] font-black leading-tight text-[#333]" key={`${line}-${index}`}>
               {line}
             </h2>
           );
@@ -239,22 +334,23 @@ function LivePageBody({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean);
   const image = page.heroImage;
   const isBlog = page.type === "blog-post";
+  const showImage = isBlog && image;
 
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-10 text-center">
+      <section className="bg-white py-10 text-center md:py-12">
         <div className="mx-auto max-w-[1180px] px-5">
           {isBlog ? (
             <p className="mb-3 text-[15px] text-[#555]">Audiology Associates of Westchester</p>
           ) : null}
-          <h1 className="mx-auto max-w-[1060px] text-[34px] font-black leading-tight text-[#333] md:text-[44px]">
+          <h1 className="mx-auto max-w-[1080px] text-[32px] font-black leading-[1.15] text-[#333] md:text-[38px]">
             {page.h1 || page.title}
           </h1>
-          {image ? (
+          {showImage ? (
             <Image
               alt={image.alt || page.h1}
-              className="mx-auto mt-8 max-h-[460px] w-full max-w-[980px] object-cover"
+              className="mx-auto mt-8 max-h-[430px] w-full max-w-[860px] object-cover"
               height={760}
               priority={false}
               src={image.src}
@@ -267,28 +363,9 @@ function LivePageBody({ page }: { page: SitePage }) {
         </div>
       </section>
 
-      {page.sections.length ? (
-        <section className="bg-[#f3f3f3] py-10 text-center">
-          <div className="mx-auto max-w-[1180px] px-5">
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {page.sections.slice(0, 9).map((section) => (
-                <div className="bg-white p-5 text-[18px] font-black text-[#333]" key={section}>
-                  {section}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
-
       {page.type === "service" || page.type === "hearing-aids" || page.type === "educational" ? (
-        <section className="bg-white py-10 text-center">
+        <section className="bg-white pb-12 text-center">
           <div className="mx-auto max-w-[900px] px-5">
-            <h2 className="text-[26px] font-black text-[#333]">Contact Audiology Associates of Westchester</h2>
-            <p className="mt-4 text-[17px] leading-7 text-[#333]">
-              For personalized recommendations, appointment availability, or questions about this topic, please call
-              the practice directly.
-            </p>
             <Link className="legacy-live-button mt-6 inline-flex" href="/contact-us">
               MAKE AN APPOINTMENT TODAY
             </Link>
@@ -345,6 +422,82 @@ function LivePatientFormsPage({ page }: { page: SitePage }) {
               <a className="legacy-live-button inline-flex" href={form.href} key={form.href} rel="noreferrer" target="_blank">
                 {form.label}
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function LiveTeamPage({ page }: { page: SitePage }) {
+  const intro = page.body.filter((line) => line.includes("We all hope") || line.includes("With locations")).slice(0, 2);
+
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-10 text-center">
+        <div className="mx-auto max-w-[1180px] px-5">
+          <h1 className="text-[38px] font-black leading-tight text-[#333]">{page.h1}</h1>
+          <div className="mt-7">
+            <LiveTextBlock lines={intro.length ? intro : page.body.slice(0, 2)} />
+          </div>
+          <h2 className="mt-12 text-[28px] font-black text-[#333]">Doctors of Audiology</h2>
+          <div className="mt-8 grid gap-x-10 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+            {teamMembers.slice(0, 6).map((person) => (
+              <article className="text-center" key={person.name}>
+                <Image
+                  alt={person.alt}
+                  className="mx-auto aspect-[4/5] w-full max-w-[290px] object-cover"
+                  height={520}
+                  src={person.image}
+                  width={420}
+                />
+                <h3 className="mt-4 text-[22px] font-black text-[#333]">{person.name}</h3>
+                {person.pronouns ? <p className="mt-1 text-[16px] leading-6 text-[#333]">{person.pronouns}</p> : null}
+                <p className="text-[16px] font-bold leading-6 text-[#333]">{person.role}</p>
+              </article>
+            ))}
+          </div>
+          <h2 className="mt-14 text-[28px] font-black text-[#333]">Executive Team</h2>
+          <div className="mt-8 grid gap-x-10 gap-y-14 md:grid-cols-2 lg:grid-cols-4">
+            {teamMembers.slice(6).map((person) => (
+              <article className="text-center" key={person.name}>
+                <Image
+                  alt={person.alt}
+                  className="mx-auto aspect-[4/5] w-full max-w-[250px] object-cover"
+                  height={500}
+                  src={person.image}
+                  width={380}
+                />
+                <h3 className="mt-4 text-[21px] font-black text-[#333]">{person.name}</h3>
+                {person.pronouns ? <p className="mt-1 text-[15px] leading-6 text-[#333]">{person.pronouns}</p> : null}
+                <p className="text-[15px] font-bold leading-6 text-[#333]">{person.role}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function LiveBrandsPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-10 text-center">
+        <div className="mx-auto max-w-[1180px] px-5">
+          <h1 className="text-[38px] font-black text-[#333]">{page.h1}</h1>
+          <div className="mt-10 grid gap-x-12 gap-y-10 text-left md:grid-cols-2">
+            {hearingAidBrands.map(([title, text, src, alt]) => (
+              <article className="border-b border-[#d3d3d3] pb-8" key={title}>
+                <div className="flex min-h-[86px] items-center">
+                  <Image alt={alt} className="max-h-[72px] w-auto object-contain" height={120} src={src} width={270} />
+                </div>
+                <h2 className="mt-3 text-[24px] font-black text-[#333]">{title}</h2>
+                <p className="mt-3 text-[17px] leading-7 text-[#333]">{text}</p>
+              </article>
             ))}
           </div>
         </div>
@@ -655,29 +808,50 @@ function LocationDetails({ page }: { page: SitePage }) {
   );
 }
 
-function BlogIndex() {
+function BlogIndex({ page }: { page: SitePage }) {
+  const orderedPosts = liveBlogOrder
+    .map((path) => blogPosts.find((post) => post.path === path))
+    .filter((post): post is SitePage => Boolean(post));
+
   return (
-    <section className="section">
-      <div className="container">
-        <div className="grid gap-5 md:grid-cols-3">
-          {blogPosts.map((post) => (
-            <Link className="focus-ring rounded-lg border border-[var(--line)] bg-white p-4 medical-shadow" href={post.path} key={post.path}>
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-10 text-center">
+        <div className="mx-auto max-w-[1180px] px-5">
+          <h1 className="text-[38px] font-black text-[#333]">Recent Posts</h1>
+          <div className="mt-8 grid gap-8 text-left md:grid-cols-3">
+          {orderedPosts.map((post) => (
+            <Link className="focus-ring block bg-white" href={post.path} key={post.path}>
               {post.heroImage ? (
                 <Image
                   alt={post.heroImage.alt || post.h1}
-                  className="aspect-[16/10] w-full rounded-md object-cover"
+                  className="aspect-[16/10] w-full object-cover"
                   height={420}
                   src={post.heroImage.src}
                   width={720}
                 />
               ) : null}
-              <h2 className="mt-4 text-xl font-black text-[var(--brand-dark)]">{post.h1}</h2>
-              <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{post.metaDescription}</p>
+              <h2 className="mt-4 text-[20px] font-black leading-tight text-[#333]">{post.h1}</h2>
             </Link>
           ))}
+          </div>
+          <div className="mx-auto mt-12 max-w-[940px] space-y-5 text-center text-[18px] leading-8 text-[#333]">
+            <h2 className="text-[28px] font-black text-[#333]">
+              Hear Clearly and Protect Your Hearing with Audiology Associates of Westchester
+            </h2>
+            <p>
+              At Audiology Associates of Westchester, we are dedicated to your hearing health. We offer a comprehensive
+              range of audiology services to address all your hearing needs, from routine hearing tests to advanced
+              hearing aid fitting and tinnitus therapy.
+            </p>
+            <p>
+              Let us help you hear clearly and enjoy the sounds you love again. Contact Audiology Associates of
+              Westchester today to schedule a hearing test and discuss your hearing healthcare options.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
@@ -809,10 +983,28 @@ export function PageRenderer({ page }: { page: SitePage }) {
     );
   }
 
+  if (page.type === "team") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <LiveTeamPage page={page} />
+      </>
+    );
+  }
+
+  if (page.path === "/hearing-aids-brands") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <LiveBrandsPage page={page} />
+      </>
+    );
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      {page.type === "blog-index" ? <BlogIndex /> : <LivePageBody page={page} />}
+      {page.type === "blog-index" ? <BlogIndex page={page} /> : <LivePageBody page={page} />}
     </>
   );
 }

@@ -298,7 +298,14 @@ function dedupe<T>(items: T[], key: (item: T) => string) {
 }
 
 function cleanBodyText(page: CrawlPage, path: string) {
-  const titleish = new Set([page.h1, page.title, page.title.replace(/\s*\|.*$/, "")].map(fixSpacing));
+  const pathLabel =
+    path === "/"
+      ? ""
+      : path
+          .replace(/^\//, "")
+          .replace(/-/g, " ")
+          .replace(/\b\w/g, (character) => character.toUpperCase());
+  const titleish = new Set([page.h1, page.title, page.title.replace(/\s*\|.*$/, ""), pathLabel].map(fixSpacing));
   const lines = page.text
     .map(fixSpacing)
     .filter(Boolean)
@@ -313,6 +320,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
     .filter((line) => !/^Somers, NY Location$/i.test(line))
     .filter((line) => !/^325 NY 100, Somers/i.test(line))
     .filter((line) => !/^Blog$/i.test(line))
+    .filter((line) => !titleish.has(line))
     .filter((line, index) => index < 2 || !titleish.has(line));
 
   const cleaned = dedupe(lines, (line) => line.toLowerCase());
