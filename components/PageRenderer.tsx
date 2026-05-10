@@ -377,7 +377,10 @@ function LivePageBody({ page }: { page: SitePage }) {
 }
 
 function LiveContactPage({ page }: { page: SitePage }) {
-  const intro = page.body.filter((line) => line.startsWith("When you visit") || line.startsWith("With two convenient"));
+  const intro = [
+    page.body.find((line) => line.startsWith("When you visit") && !line.includes("With two convenient")),
+    page.body.find((line) => line.startsWith("With two convenient"))
+  ].filter((line): line is string => Boolean(line));
 
   return (
     <>

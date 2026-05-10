@@ -324,7 +324,10 @@ function cleanBodyText(page: CrawlPage, path: string) {
     .filter((line) => !titleish.has(line))
     .filter((line, index) => index < 2 || !titleish.has(line));
 
-  const cleaned = dedupe(lines, (line) => line.toLowerCase());
+  const cleaned = dedupe(lines, (line) => line.toLowerCase()).filter((line, _index, allLines) => {
+    if (line.length < 180) return true;
+    return !allLines.some((other) => other !== line && other.length > 85 && line.includes(other));
+  });
 
   if (path === "/thank-you") {
     return [
