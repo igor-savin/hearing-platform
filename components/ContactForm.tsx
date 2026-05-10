@@ -2,8 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { ref, uploadBytes } from "firebase/storage";
-import { db, firebaseEnabled, storage } from "@/lib/firebase";
+import { db, firebaseEnabled } from "@/lib/firebase";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -18,18 +17,10 @@ export function ContactForm({ context = "General contact" }: { context?: string 
 
     const form = event.currentTarget;
     const data = new FormData(form);
-    const file = data.get("attachment");
-    let attachmentPath = "";
 
     try {
       if (!firebaseEnabled || !db) {
         throw new Error("Firebase is not configured in this environment.");
-      }
-
-      if (file instanceof File && file.size > 0 && storage) {
-        const safeName = file.name.replace(/[^a-z0-9.\-_]+/gi, "-").toLowerCase();
-        attachmentPath = `contact-attachments/${Date.now()}-${safeName}`;
-        await uploadBytes(ref(storage, attachmentPath), file);
       }
 
       await addDoc(collection(db, "contactSubmissions"), {
@@ -37,9 +28,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         name: String(data.get("name") || ""),
         email: String(data.get("email") || ""),
         phone: String(data.get("phone") || ""),
-        preferredLocation: String(data.get("preferredLocation") || ""),
         message: String(data.get("message") || ""),
-        attachmentPath,
         source: "website",
         createdAt: serverTimestamp()
       });
@@ -57,81 +46,57 @@ export function ContactForm({ context = "General contact" }: { context?: string 
   }
 
   return (
-    <form className="grid gap-4 rounded-lg border border-[var(--line)] bg-white p-5 medical-shadow" onSubmit={onSubmit}>
-      <div className="grid gap-4 md:grid-cols-2">
-        <label className="grid gap-2 font-bold text-[var(--brand-dark)]">
+    <form className="legacy-contact-form grid gap-[13px] bg-white text-left" onSubmit={onSubmit}>
+      <div className="grid gap-[13px] md:grid-cols-2">
+        <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
           Name
           <input
-            className="focus-ring rounded-md border border-[var(--line)] px-3 py-3 font-normal text-[var(--foreground)]"
+            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
             name="name"
             required
             type="text"
           />
         </label>
-        <label className="grid gap-2 font-bold text-[var(--brand-dark)]">
+        <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
           Phone
           <input
-            className="focus-ring rounded-md border border-[var(--line)] px-3 py-3 font-normal text-[var(--foreground)]"
+            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
             name="phone"
             required
             type="tel"
           />
         </label>
       </div>
-      <div className="grid gap-4 md:grid-cols-2">
-        <label className="grid gap-2 font-bold text-[var(--brand-dark)]">
+      <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
           Email
           <input
-            className="focus-ring rounded-md border border-[var(--line)] px-3 py-3 font-normal text-[var(--foreground)]"
+            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
             name="email"
             type="email"
           />
         </label>
-        <label className="grid gap-2 font-bold text-[var(--brand-dark)]">
-          Preferred Location
-          <select
-            className="focus-ring rounded-md border border-[var(--line)] px-3 py-3 font-normal text-[var(--foreground)]"
-            name="preferredLocation"
-          >
-            <option value="">Choose a location</option>
-            <option>Harrison</option>
-            <option>Somers</option>
-            <option>White Plains</option>
-            <option>Scarsdale</option>
-            <option>Not sure</option>
-          </select>
-        </label>
-      </div>
-      <label className="grid gap-2 font-bold text-[var(--brand-dark)]">
-        How can we help?
+      <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
+        Message
         <textarea
-          className="focus-ring min-h-32 rounded-md border border-[var(--line)] px-3 py-3 font-normal text-[var(--foreground)]"
+          className="focus-ring min-h-[118px] border border-[#bcbcbc] bg-white px-[10px] py-[9px] text-[16px] font-normal text-[#333]"
           name="message"
           required
         />
       </label>
-      <label className="grid gap-2 font-bold text-[var(--brand-dark)]">
-        Optional attachment
-        <input
-          className="focus-ring rounded-md border border-[var(--line)] bg-white px-3 py-3 font-normal text-[var(--foreground)]"
-          name="attachment"
-          type="file"
-        />
-      </label>
       <button
-        className="focus-ring inline-flex items-center justify-center rounded-md bg-[var(--brand)] px-5 py-3 font-black text-white disabled:cursor-not-allowed disabled:opacity-70"
+        className="focus-ring mt-[4px] inline-flex min-h-[42px] w-fit items-center justify-center bg-[#005a9c] px-[30px] py-[12px] text-[15px] font-bold uppercase tracking-[0.04em] text-white disabled:cursor-not-allowed disabled:opacity-70"
         data-track="contact-submit"
         disabled={status === "sending"}
         type="submit"
       >
-        {status === "sending" ? "Sending..." : "Submit This Form"}
+        {status === "sending" ? "Sending..." : "Submit"}
       </button>
       {message ? (
-        <p className={status === "success" ? "text-[var(--brand-dark)]" : "text-red-700"} role="status">
+        <p className={status === "success" ? "text-[#333]" : "text-red-700"} role="status">
           {message}
         </p>
       ) : null}
-      <p className="text-sm text-[var(--muted)]">
+      <p className="text-[13px] leading-5 text-[#555]">
         Do not use this form for emergencies. Appointment availability and clinical recommendations
         should be confirmed directly with the practice.
       </p>

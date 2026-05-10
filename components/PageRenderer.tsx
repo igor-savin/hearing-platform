@@ -377,13 +377,15 @@ function LivePageBody({ page }: { page: SitePage }) {
 }
 
 function LiveContactPage({ page }: { page: SitePage }) {
+  const intro = page.body.filter((line) => line.startsWith("When you visit") || line.startsWith("With two convenient"));
+
   return (
     <>
       <Breadcrumbs page={page} />
       <section className="bg-white py-10 text-center">
         <div className="mx-auto max-w-[1180px] px-5">
           <h1 className="text-[38px] font-black leading-tight text-[#333]">{page.h1}</h1>
-          <LiveTextBlock lines={page.body.slice(0, 6)} />
+          <LiveTextBlock lines={intro.length ? intro : page.body.slice(0, 4)} />
           <div className="mt-10 grid gap-8 text-left lg:grid-cols-[0.8fr_1.2fr]">
             <div className="space-y-5 text-[17px] leading-7 text-[#333]">
               {locations
@@ -401,7 +403,10 @@ function LiveContactPage({ page }: { page: SitePage }) {
                   </address>
                 ))}
             </div>
-            <ContactForm context={`Contact page: ${page.h1}`} />
+            <div>
+              <p className="mb-4 text-[20px] font-black text-[#333]">Submit This Form to Contact Us</p>
+              <ContactForm context={`Contact page: ${page.h1}`} />
+            </div>
           </div>
         </div>
       </section>
@@ -417,9 +422,9 @@ function LivePatientFormsPage({ page }: { page: SitePage }) {
         <div className="mx-auto max-w-[980px] px-5">
           <h1 className="text-[38px] font-black text-[#333]">{page.h1}</h1>
           <LiveTextBlock lines={page.body.slice(0, 8)} />
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
+          <div className="mt-8 space-y-3 text-[18px] leading-7">
             {patientForms.map((form) => (
-              <a className="legacy-live-button inline-flex" href={form.href} key={form.href} rel="noreferrer" target="_blank">
+              <a className="block font-bold text-[#005a9c] underline" href={form.href} key={form.href} rel="noreferrer" target="_blank">
                 {form.label}
               </a>
             ))}
@@ -435,6 +440,11 @@ function LiveTeamPage({ page }: { page: SitePage }) {
     page.body.find((line) => line.startsWith("We all hope") && !line.includes("With locations")),
     page.body.find((line) => line.startsWith("With locations"))
   ].filter((line): line is string => Boolean(line));
+  const introSet = new Set(intro);
+  const detailLines = page.body
+    .filter((line) => !introSet.has(line))
+    .filter((line) => !line.includes("We all hope to have great hearing") || line.length < 160)
+    .filter((line) => !line.includes("With locations in White Plains") || line.length < 160);
 
   return (
     <>
@@ -478,6 +488,34 @@ function LiveTeamPage({ page }: { page: SitePage }) {
                 <p className="text-[15px] font-bold leading-6 text-[#333]">{person.role}</p>
               </article>
             ))}
+          </div>
+          <div className="mx-auto mt-14 max-w-[1030px] text-left text-[17px] leading-[1.75] text-[#333]">
+            <h2 className="text-center text-[28px] font-black text-[#333]">Team Backgrounds</h2>
+            <div className="mt-7 space-y-5">
+              {detailLines.map((line, index) => {
+                const isGroupHeading = ["Doctors of Audiology", "Executive Team", "Administrative Team"].includes(line);
+                const isProfileHeading =
+                  teamMembers.some((person) => line === person.name || line.startsWith(`${person.name} `)) ||
+                  /^(Jennifer Tarlton|Alicia Rivera|Barbara Lawrence|Hazel Icaza|Julia Rivera)/.test(line);
+                const isShortHeading = line.length < 85 && !/[.!?"]$/.test(line);
+
+                if (isGroupHeading) {
+                  return (
+                    <h3 className="pt-5 text-center text-[25px] font-black text-[#333]" key={`${line}-${index}`}>
+                      {line}
+                    </h3>
+                  );
+                }
+                if (isProfileHeading || isShortHeading) {
+                  return (
+                    <h4 className="pt-3 text-[21px] font-black text-[#333]" key={`${line}-${index}`}>
+                      {line}
+                    </h4>
+                  );
+                }
+                return <p key={`${line}-${index}`}>{line}</p>;
+              })}
+            </div>
           </div>
         </div>
       </section>
@@ -846,6 +884,11 @@ function BlogIndex({ page }: { page: SitePage }) {
               At Audiology Associates of Westchester, we are dedicated to your hearing health. We offer a comprehensive
               range of audiology services to address all your hearing needs, from routine hearing tests to advanced
               hearing aid fitting and tinnitus therapy.
+            </p>
+            <p>
+              Our team of experienced audiologists can diagnose and treat various types of hearing loss, including
+              central hearing loss and sensorineural hearing loss. We understand the importance of protecting your
+              hearing, and we provide expert advice on occupational hearing protection and ear protection options.
             </p>
             <p>
               Let us help you hear clearly and enjoy the sounds you love again. Contact Audiology Associates of

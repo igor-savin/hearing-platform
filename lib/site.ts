@@ -341,7 +341,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
     ];
   }
 
-  return cleaned.slice(0, path === "/meet-the-team" ? 65 : 28);
+  return cleaned.slice(0, path === "/meet-the-team" ? 160 : 45);
 }
 
 function determineType(path: string, originalType: string): SitePageType {
