@@ -28,7 +28,9 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         name: String(data.get("name") || ""),
         email: String(data.get("email") || ""),
         phone: String(data.get("phone") || ""),
+        preferredLocation: "",
         message: String(data.get("message") || ""),
+        attachmentPath: "",
         source: "website",
         createdAt: serverTimestamp()
       });

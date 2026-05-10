@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export function AnalyticsScripts() {
   const gaId = process.env.NEXT_PUBLIC_GA4_ID;
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID || "GTM-T6X664N";
@@ -10,7 +12,9 @@ export function AnalyticsScripts() {
 
   return (
     <>
-      <script
+      <Script
+        id="data-layer-init"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
@@ -19,8 +23,10 @@ export function AnalyticsScripts() {
       />
       {gaId ? (
         <>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
-          <script
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+          <Script
+            id="ga4-init"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
@@ -34,7 +40,9 @@ export function AnalyticsScripts() {
       ) : null}
       {gtmId ? (
         <>
-          <script
+          <Script
+            id="gtm-init"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -58,7 +66,9 @@ export function AnalyticsScripts() {
       ) : null}
       {facebookPixelId ? (
         <>
-          <script
+          <Script
+            id="facebook-pixel-init"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
               __html: `
                 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -83,7 +93,9 @@ export function AnalyticsScripts() {
         </>
       ) : null}
       {piwikSiteId ? (
-        <script
+        <Script
+          id="piwik-pro-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               var _paq = window._paq || [];
@@ -103,7 +115,9 @@ export function AnalyticsScripts() {
         />
       ) : null}
       {snowplowAppId ? (
-        <script
+        <Script
+          id="snowplow-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
@@ -117,8 +131,10 @@ export function AnalyticsScripts() {
           }}
         />
       ) : null}
-      <script async src="https://offsiteschedule.zocdoc.com/plugin/embed" />
-      <script
+      <Script src="https://offsiteschedule.zocdoc.com/plugin/embed" strategy="afterInteractive" />
+      <Script
+        id="interaction-tracking"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             document.addEventListener('click', function(event) {

@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "tsc --noEmit",
     "crawl": "node scripts/crawl-site.mjs",
-    "qa": "node scripts/qa-site.mjs"
+    "qa": "node scripts/qa-site.mjs",
+    "qa:functionality": "node scripts/functionality-qa.mjs"
   },
   "dependencies": {
     "@firebase/app": "^0.14.2",
