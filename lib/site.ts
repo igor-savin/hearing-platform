@@ -276,10 +276,75 @@ function fixSpacing(value: string) {
     .replace(/Treatmentfor/g, "Treatment for")
     .replace(/Protectionfor/g, "Protection for")
     .replace(/Frequently Asked QuestionsAbout/g, "Frequently Asked Questions About")
+    .replace(/providebest-practice/g, "provide best-practice")
+    .replace(/informationfor/g, "information for")
+    .replace(/American Board of Audiology \.CH-TM/g, "American Board of Audiology. CH-TM")
     .replace(/Reason #1:Our/g, "Reason #1: Our")
     .replace(/hearing aidin/g, "hearing aid in")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function expandBodyLine(line: string) {
+  const withBreaks = line
+    .replace(/(We receive your Personal Information from various sources:)\s+When/g, "$1|When")
+    .replace(/(We do not rent, sell, or share Users’ information with third parties except as described in this Privacy Policy\. We may use the information for the following:)\s*Communicating/g, "$1|Communicating")
+    .replace(/(You may request to:)\s+Receive/g, "$1|Receive")
+    .replace(/Custom Ear Molds and PlugsWe provide/g, "Custom Ear Molds and Plugs|We provide")
+    .replace(/Cell Phone AccessoriesWe offer/g, "Cell Phone Accessories|We offer")
+    .replace(/Audiometric TestAn audiometric test/g, "Audiometric Test|An audiometric test")
+    .replace(/TympanometryTympanometry tests/g, "Tympanometry|Tympanometry tests")
+    .replace(/OAEsAcoustically evoked/g, "OAEs|Acoustically evoked")
+    .replace(/Maskers – A tinnitus masker/g, "|Maskers – A tinnitus masker")
+    .replace(/Allergy Treatment – Allergy symptoms/g, "|Allergy Treatment – Allergy symptoms")
+    .replace(/Avoid heat, moisture, and hair products\.Follow/g, "Avoid heat, moisture, and hair products.|Follow")
+    .replace(/When not in use, turn them off\.As soon/g, "When not in use, turn them off.|As soon")
+    .replace(/batteries die, replace them\. Make sure/g, "batteries die, replace them.|Make sure")
+    .replace(/\.The best way/g, ".|The best way")
+    .replace(/patient\.Otolaryngologists/g, "patient.|Otolaryngologists")
+    .replace(/DispenserCollege:/g, "Dispenser|College:")
+    .replace(/(\d{4})Graduate:/g, "$1|Graduate:")
+    .replace(/(\d{4})Board Certification:/g, "$1|Board Certification:")
+    .replace(/Awards:/g, "|Awards:")
+    .replace(/Certificate Holder:/g, "|Certificate Holder:")
+    .replace(/Certification:/g, "|Certification:")
+    .replace(/Professional Affiliations:/g, "|Professional Affiliations:")
+    .replace(/Professional Proficiency/g, "|Professional Proficiency")
+    .replace(/Hearing AssociationLong Island/g, "Hearing Association|Long Island");
+
+  return withBreaks
+    .split("|")
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .flatMap((part) => {
+      const question = part.match(/^(.{8,150}\?)\s+(.+)$/);
+      if (question) return [question[1], question[2]];
+
+      const tinnitusTherapies = part.match(/^(At Audiology Associates of Westchester, we utilize the following tinnitus therapies:)\s+(.+)$/);
+      if (tinnitusTherapies) return [tinnitusTherapies[1], tinnitusTherapies[2]];
+
+      return [part];
+    })
+    .map(fixSpacing);
+}
+
+function mostlyCoveredByOtherLines(line: string, allLines: string[]) {
+  if (line.length < 180) return false;
+
+  let remaining = line.toLowerCase();
+  let covered = 0;
+  const candidates = allLines
+    .filter((other) => other !== line && other.length > 70 && line.toLowerCase().includes(other.toLowerCase()))
+    .sort((a, b) => b.length - a.length);
+
+  for (const candidate of candidates) {
+    const lowerCandidate = candidate.toLowerCase();
+    if (!remaining.includes(lowerCandidate)) continue;
+    covered += lowerCandidate.length;
+    remaining = remaining.replace(lowerCandidate, " ");
+  }
+
+  return covered / line.length > 0.72;
 }
 
 function pathFromUrl(url: string) {
@@ -308,6 +373,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
   const titleish = new Set([page.h1, page.title, page.title.replace(/\s*\|.*$/, ""), pathLabel].map(fixSpacing));
   const lines = page.text
     .map(fixSpacing)
+    .flatMap(expandBodyLine)
     .filter(Boolean)
     .filter((line) => !/^Call Us Today/i.test(line))
     .filter((line) => line !== primaryPhone)
@@ -324,15 +390,13 @@ function cleanBodyText(page: CrawlPage, path: string) {
     .filter((line) => !titleish.has(line))
     .filter((line, index) => index < 2 || !titleish.has(line));
 
-  const cleaned = dedupe(lines, (line) => line.toLowerCase()).filter((line, _index, allLines) => {
-    if (line.length < 180) return true;
-    return !allLines.some((other) => other !== line && other.length > 85 && line.includes(other));
-  });
+  const cleaned = dedupe(lines, (line) => line.toLowerCase()).filter(
+    (line, _index, allLines) => !mostlyCoveredByOtherLines(line, allLines)
+  );
 
   if (path === "/thank-you") {
     return [
-      "Thank you for contacting Audiology Associates of Westchester. A member of the practice team will follow up as soon as possible.",
-      "If your need is urgent or you need to confirm appointment availability, please call the office directly."
+      "Thank you for contacting us! Your message has been received."
     ];
   }
 
@@ -344,7 +408,9 @@ function cleanBodyText(page: CrawlPage, path: string) {
     ];
   }
 
-  return cleaned.slice(0, path === "/meet-the-team" ? 160 : 45);
+  const bodyLimit = path === "/meet-the-team" ? 160 : path === "/privacy" ? 120 : 45;
+
+  return cleaned.slice(0, bodyLimit);
 }
 
 function determineType(path: string, originalType: string): SitePageType {

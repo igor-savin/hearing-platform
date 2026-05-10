@@ -204,6 +204,21 @@ function HomePage() {
             </p>
           </div>
           <p className="mt-7 text-[22px] font-black text-[#333]">Improve your hearing and live life to the fullest. Call now.</p>
+          <div className="mx-auto mt-7 max-w-[1040px] space-y-5 text-[18px] leading-8 text-[#333]">
+            <p>
+              Hearing loss is upsetting, but Audiology Associates of Westchester can help you regain control and
+              communicate with family and friends once again. Call our professional hearing doctors today to schedule an
+              appointment, so you never have to say &ldquo;What?&rdquo; again!
+            </p>
+            <p>
+              Our experienced audiologists care for patients throughout White Plains, Harrison, Rye, Mt. Kisco, and
+              Scarsdale, NY, as well as Greenwich, CT and the rest of Westchester County.
+            </p>
+            <p>
+              Give us a call today to schedule an appointment with our hearing doctors at one of our two convenient
+              locations. Additionally, we are proud to introduce the opening of our newest office in Somers, NY!
+            </p>
+          </div>
           <Link className="legacy-live-button mt-6 inline-flex" href="/contact-us">
             CALL THE NEAREST LOCATION
           </Link>
@@ -316,10 +331,18 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
   return (
     <div className="legacy-live-copy mx-auto max-w-[1030px] space-y-5 text-center text-[17px] leading-[1.75] text-[#333]">
       {lines.map((line, index) => {
-        const isHeading = line.length < 115 && !/[.!?]$/.test(line) && index > 0;
+        const isQuestion = line.endsWith("?");
+        const isHeading = line.length < 115 && !/[.!]$/.test(line) && index > 0;
         if (isHeading) {
           return (
             <h2 className="pt-4 text-[25px] font-black leading-tight text-[#333]" key={`${line}-${index}`}>
+              {line}
+            </h2>
+          );
+        }
+        if (isQuestion) {
+          return (
+            <h2 className="pt-3 text-[22px] font-black leading-tight text-[#333]" key={`${line}-${index}`}>
               {line}
             </h2>
           );
@@ -330,11 +353,45 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
   );
 }
 
+function BlogPostRelated({ page }: { page: SitePage }) {
+  if (page.type !== "blog-post") return null;
+
+  const relatedPosts = liveBlogOrder
+    .map((path) => blogPosts.find((post) => post.path === path))
+    .filter((post): post is SitePage => Boolean(post))
+    .filter((post) => post.path !== page.path);
+
+  if (!relatedPosts.length) return null;
+
+  return (
+    <section className="bg-white pb-12 text-center">
+      <div className="mx-auto max-w-[1180px] px-5">
+        <div className="mx-auto grid max-w-[900px] gap-8 text-left md:grid-cols-2">
+          {relatedPosts.map((post) => (
+            <Link className="focus-ring block bg-white" href={post.path} key={post.path}>
+              {post.heroImage ? (
+                <Image
+                  alt={post.heroImage.alt || post.h1}
+                  className="aspect-[16/10] w-full object-cover"
+                  height={420}
+                  src={post.heroImage.src}
+                  width={720}
+                />
+              ) : null}
+              <h2 className="mt-4 text-[20px] font-black leading-tight text-[#333]">{post.h1}</h2>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function LivePageBody({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean);
   const image = page.heroImage;
   const isBlog = page.type === "blog-post";
-  const showImage = isBlog && image;
+  const showImage = (isBlog || page.path === "/hearing-aid-referral-program" || page.path === "/tinnitus-therapy") && image;
 
   return (
     <>
@@ -362,6 +419,8 @@ function LivePageBody({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+
+      {isBlog ? <BlogPostRelated page={page} /> : null}
 
       {page.type === "service" || page.type === "hearing-aids" || page.type === "educational" ? (
         <section className="bg-white pb-12 text-center">
@@ -403,6 +462,19 @@ function LiveContactPage({ page }: { page: SitePage }) {
                     <a className="font-bold text-[#005a9c] underline" href={location.phoneHref}>
                       {location.phone}
                     </a>
+                    {location.fax ? <p>Fax: {location.fax}</p> : null}
+                    <p className="font-bold">Hours of Operation</p>
+                    {location.path === "/Somers-NY" ? (
+                      <>
+                        <p>Monday, Tuesday, Wednesday, Thursday</p>
+                        <p>8:30am – 5:00pm</p>
+                      </>
+                    ) : (
+                      <>
+                        <p>Monday-Friday</p>
+                        <p>8:30am – 5:00pm</p>
+                      </>
+                    )}
                   </address>
                 ))}
             </div>
@@ -536,8 +608,17 @@ function LiveBrandsPage({ page }: { page: SitePage }) {
           <div className="mt-10 grid gap-x-12 gap-y-10 text-left md:grid-cols-2">
             {hearingAidBrands.map(([title, text, src, alt]) => (
               <article className="border-b border-[#d3d3d3] pb-8" key={title}>
-                <div className="flex min-h-[86px] items-center">
+                <div className="flex min-h-[86px] flex-wrap items-center gap-5">
                   <Image alt={alt} className="max-h-[72px] w-auto object-contain" height={120} src={src} width={270} />
+                  {title === "Signia & Siemens Hearing Aids" ? (
+                    <Image
+                      alt="Siemens logo"
+                      className="max-h-[52px] w-auto object-contain"
+                      height={80}
+                      src="https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/SiemensLogo-250x40-1920w.png"
+                      width={250}
+                    />
+                  ) : null}
                 </div>
                 <h2 className="mt-3 text-[24px] font-black text-[#333]">{title}</h2>
                 <p className="mt-3 text-[17px] leading-7 text-[#333]">{text}</p>
