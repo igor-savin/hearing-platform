@@ -148,6 +148,206 @@ const liveBlogOrder = [
   "/how-to-take-care-of-a-blocked-ear"
 ];
 
+const liveBlue = "#005a9c";
+const liveSoftBlue = "#dbe9f3";
+
+type LegacyLocationSection = {
+  title: string;
+  paragraphs: string[];
+  background?: "blue" | "white";
+  mapQuery?: string;
+  mapCaption?: string;
+  addressLines?: string[];
+  phone?: string;
+  phoneHref?: string;
+  fax?: string;
+  hours?: string[];
+};
+
+type LegacyLocationContent = {
+  intro?: string;
+  heading: string;
+  paragraphs: string[];
+  sections: LegacyLocationSection[];
+};
+
+const legacyLocationContent: Record<string, LegacyLocationContent> = {
+  "/rye-ny": {
+    heading: "Expert Audiologists, Just 10 Minutes Away from Rye, NY",
+    paragraphs: [
+      "As the residents of Rye, NY continue to age, the need for reliable audiology services is greater than ever. While you may be experiencing the symptoms of hearing loss, advances in modern technology have made it possible to maximize your hearing throughout your golden years. All you have to do is visit Audiology Associates of Westchester to access the very latest in hearing aids and ear protection!",
+      "For years, our certified team has continued to assist patients throughout Rye, NY and the rest of Westchester County. We've created a welcoming facility in the Harrison, NY community to ensure our patients feel calm and comfortable throughout their audiology screenings and hearing aid fittings. It's truly never been easier to access contemporary audiology services!"
+    ],
+    sections: [
+      {
+        title: "Contact our Hearing Doctor to Access the Latest in Audiology Services",
+        background: "blue",
+        paragraphs: [
+          "The team at Audiology Associates of Westchester is proud to help local residents combat the symptoms of hearing loss. In fact, our Harrison, NY facility is located just 10 minutes away from the heart of Rye. Our specialists are always standing by to help reduce the discomfort that's associated with hearing loss, tinnitus, and many other related conditions.",
+          "If you're interested in scheduling an appointment with our hearing experts, don't waste another moment. Simply contact one of the knowledgeable representatives at Audiology Associates of Westchester. Our certified team of hearing doctors are fully prepared to administer modern audiology services and hearing aid fittings."
+        ],
+        mapQuery: "Rye, NY",
+        mapCaption: "Get Directions from the Rye, NY Community"
+      }
+    ]
+  },
+  "/greenwich-ct": {
+    heading: "Expert audiologists, just 15 minutes away from Greenwich, CT!",
+    paragraphs: [
+      "Located at the southwestern tip of Connecticut, Greenwich is considered one of the most affluent areas to live in the United States. Our area is made up primarily of working professionals, though as time passes, many members of our community are beginning to think about their golden stages of life.",
+      "Many people experience hearing loss as they age, though you can experience auditory issues at any age. If you live in Greenwich and are experiencing auditory problems, it's important to seek help right away. Ongoing hearing conditions such as tinnitus or consistent hearing loss can be difficult, annoying, and frightening to handle. An experienced audiologist can help you manage and overcome your symptoms in order to hear normally again.",
+      "Audiology Associates of Westchester is conveniently located to provide hearing aids and therapy services to the entire Greenwich area."
+    ],
+    sections: [
+      {
+        title: "Quality Audiology Services for All of Greenwich, CT!",
+        background: "blue",
+        paragraphs: [
+          "If you are experiencing hearing loss or other auditory problems in Greenwich, CT, help is a short trip away. Located an easy 15-minute drive away in Harrison, NY, Audiology Associates of Westchester is your source for comprehensive hearing protection treatments and products that will help restore your hearing and reduce discomfort from hearing loss, tinnitus, or other conditions.",
+          "If you are experiencing hearing loss or discomfort related to auditory issues, reach out to our professional audiologists today. Our hearing doctors are here to help you manage your symptoms and regain some control over your condition. Our hearing doctors are proud to serve the entire Greenwich, CT area!"
+        ],
+        mapQuery: "Greenwich, CT",
+        mapCaption: "Get Directions from the Greenwich, CT Community"
+      },
+      {
+        title: "Contact our Hearing Doctor Today!",
+        background: "white",
+        paragraphs: [
+          "Contact Audiology Associates of Westchester today to schedule an appointment with our hearing doctors and learn more about our audiology services."
+        ]
+      }
+    ]
+  },
+  "/mt-kisco-ny": {
+    heading: "Experienced audiologists located just a short drive from Mt. Kisco, NY!",
+    paragraphs: [
+      "Mt. Kisco is a small and quaint village in Westchester County, NY. The town can trace its origins back to hundreds of years and is home to a number of beautiful and historic buildings. The town is known for its diverse housing, including breathtaking historical homes, and its picturesque setting.",
+      "Most residents of Mt. Kisco are working professionals raising their families together in a close-knit community. If you are part of the Mt. Kisco community and have been experiencing hearing loss or other symptoms of hearing problems, seek out an experienced local audiologist that can help you get to the bottom of the issue.",
+      "Hearing problems can manifest in many different ways, including headaches and dizziness - you may not immediately realize that the problem lies with your auditory system. If you suspect that you or a loved one might be experiencing hearing problems, Audiology Associates of Westchester is here to help."
+    ],
+    sections: [
+      {
+        title: "Quality Audiology Services for Mt. Kisco, NY",
+        background: "blue",
+        paragraphs: [
+          "You don't have to live with auditory issues, especially if they are causing problems in your day-to-day life. If you or a loved one are experiencing hearing loss, ringing in your ears, or other hearing problems, consult an experienced and knowledgeable professional that will work tirelessly to diagnose and treat the issue.",
+          "Audiology Associates of Westchester has convenient locations located a short drive from Mt. Kisco. Our professional audiologists will work with you to identify and treat the hearing problem you are experiencing. Contact us today to schedule an appointment with a hearing doctor or to learn more about our services!"
+        ],
+        mapQuery: "Mt. Kisco, NY",
+        mapCaption: "Get Directions from the Mt. Kisco, NY Community"
+      }
+    ]
+  },
+  "/harrison-ny": {
+    intro: "Hearing aids, hearing protection, tinnitus treatment & more!",
+    heading: "Audiologist in Harrison, NY",
+    paragraphs: [
+      "Approximately twenty two miles north of Manhattan lies the coterminous town-village of Harrison, NY. Considered one of the most affluent suburbs in Westchester County, Harrison is home primarily to families and many individuals commute to New York City for work. About twenty percent of the population includes children under the age of eighteen.",
+      "Regardless of your age, hearing loss and audiology issues can arise and make every day tasks a bit more difficult. Whether you are experiencing early signs of hearing loss or you need your hearing aid fitted to make it more comfortable, Audiology Associates of Westchester can help! Our audiology services cover everything from your initial hearing tests to tinnitus therapy and more. If you are experiencing any hearing loss symptoms, don't hesitate to schedule an appointment with our experienced team."
+    ],
+    sections: [
+      {
+        title: "Learn more about our audiology services",
+        background: "blue",
+        paragraphs: [
+          "In order to best serve you, Audiology Associates of Westchester has an office on Mamaroneck Avenue in Harrison, NY. We offer the same array of professional audiology services at all of our locations. If you are experiencing any hearing loss symptoms or other auditory problems, our team of knowledgeable audiologists can help find the right solution for your specific needs, helping you hear more clearly.",
+          "Our services include hearing aid fitting, repair, and service that helps your device fit more comfortably and operate correctly. In addition, we offer occupational hearing protection for those who work in loud environments. For more information about the audiology services we offer the Harrison, NY area, please don't hesitate to contact us today!"
+        ],
+        mapQuery: "550 Mamaroneck Ave Suite 407 Harrison NY 10528",
+        mapCaption: "Get Directions to Our Harrison, NY Office",
+        addressLines: ["550 Mamaroneck Ave, Suite 407 (4th floor)", "Harrison, NY 10528"],
+        phone: primaryPhone,
+        phoneHref: primaryPhoneHref,
+        hours: ["Monday-Friday: 8:30am - 5:00pm"]
+      },
+      {
+        title: "Call (914) 821-6496 to Schedule An Appointment with Our Audiologists!",
+        background: "white",
+        paragraphs: [
+          "We can answer all of your queries and schedule you an appointment for a hearing test. We look forward to providing you with the solutions you need to clearly and comfortably hear the world around you."
+        ]
+      }
+    ]
+  },
+  "/Somers-NY": {
+    heading: "Somers, NY Office",
+    paragraphs: [],
+    sections: [
+      {
+        title: "Call Now to Request an Appointment",
+        background: "white",
+        paragraphs: [],
+        mapQuery: "325 NY 100 Somers NY 10589",
+        mapCaption: "Get Directions to Our Somers, NY Office",
+        addressLines: ["325 NY 100, Somers, NY 10589"],
+        phone: "(914) 556-6720",
+        phoneHref: "tel:+19145566720",
+        hours: ["Monday, Tuesday, Wednesday, Thursday", "8:30am - 5:00pm"]
+      },
+      {
+        title: "Audiology Services for Somers, NY",
+        background: "blue",
+        paragraphs: [
+          "If you live in Somers, Mahopac, Putnam Valley, or the surrounding areas and are experiencing hearing loss symptoms, be sure to reach out to us today. Our caring team will work with you to find a solution that takes into consideration your personal circumstance and comfort. Make an appointment to meet with our audiologist in Somers, NY today. We look forward to working with you.",
+          "At Audiology Associates of Westchester, we are proud to announce our newest office in Somers, NY is now open. This location allows our talented hearing doctors and staff to better serve patients throughout Westchester County. Whether you are looking for tinnitus therapy, hearing protection, or have a question about hearing aids and would like to schedule a hearing test before going through with a fitting, we offer a number of dedicated audiology services to meet your needs.",
+          "We are proud to offer hearing aids and accessories from top-rated brands in the industry including Lyric®, Oticon, Phonak, and more."
+        ]
+      }
+    ]
+  },
+  "/White-Plains-NY": {
+    intro: "Contact Our White Plains, NY Office",
+    heading: "Providing Quality Audiology Services to Residents of White Plains, NY",
+    paragraphs: [
+      "As one of the most sought-after places to live in Westchester County, White Plains, NY is well-known for its educational institutions, medical facilities, and historical points of interest. Community involvement is a hallmark of the city and with a recent focus on urban renewal, organizations and businesses throughout White Plains, NY are dedicated to providing visitors and residents alike with a high quality of life.",
+      "Audiology Associates of Westchester is just one of these businesses. When you visit our office in White Plains, NY, our team of audiologists will work closely with you to determine your level of hearing and the extent of any hearing loss. From hearing protection to hearing aids, tinnitus therapy, and more, we offer number of audiology services designed to help those who come to us maintain and improve their hearing as well as relieve any discomfort associated with hearing loss."
+    ],
+    sections: [
+      {
+        title: "Call Today to Schedule an Appointment",
+        background: "blue",
+        paragraphs: [
+          "If you are searching for an experienced hearing doctor in White Plains, Rye, Port Chester, or the nearby communities, we invite you to reach out to us today. Our caring and compassionate team will listen to your concerns and conduct testing based on your hearing loss symptoms. Following your diagnosis, our hearing doctor will recommend the product or therapy to help improve your hearing health or the hearing health of a loved one.",
+          "If you live in White Plains, NY and have questions about your hearing, call Audiology Associates of Westchester today to schedule an appointment."
+        ],
+        mapQuery: "785 Mamaroneck Ave Building 4 White Plains NY 10605",
+        mapCaption: "Get Directions to Our White Plains, NY Office",
+        addressLines: ["785 Mamaroneck Ave., Bldg. 4", "White Plains, NY 10605"],
+        phone: primaryPhone,
+        phoneHref: primaryPhoneHref,
+        fax: "(914) 949-0717",
+        hours: ["Monday-Friday: 8:30am - 5:00pm"]
+      }
+    ]
+  },
+  "/Scarsdale-NY": {
+    intro: "Contact Our Scarsdale, NY Office",
+    heading: "Hearing Doctor Proudly Serving Scarsdale, NY and Beyond",
+    paragraphs: [
+      "Scarsdale is a town and village in Westchester County, New York. Living in Scarsdale offers residents a suburban feel and most residents own their homes. In Scarsdale there are a lot of restaurants, coffee shops, and parks. The public schools in Scarsdale are highly rated, making this a great place to live and start a family.",
+      "The scenic village is just about 35 minutes from New York City and has been ranked the richest town on the East Coast for years. If you live in the area and are noticing hearing loss symptoms, get in touch with the team at Audiology Associates of Westchester to schedule an appointment.",
+      "It is our pleasure to offer hearing aid fittings and other audiology services to residents in Scarsdale, NY and the surrounding areas. Our hearing doctors take your health and safety seriously. We understand that hearing loss can affect every area of your life, from relations to daily activities. We want you to understand all of your options and be able to pick the treatment that best fits your lifestyle."
+    ],
+    sections: [
+      {
+        title: "Call Today to Schedule an Appointment",
+        background: "blue",
+        paragraphs: [
+          "If you are experiencing hearing loss symptoms or other auditory problems in Scarsdale, NY, the hearing doctors at our Scarsdale office are ready to help you. If you are experiencing hearing loss or discomfort related to auditory issues, reach out to our professional hearing doctors today.",
+          "It’s important you don’t trust just anyone with your hearing aid fitting process; choose an experienced team that can perfect your customized fitting. We are proud to serve the entire Scarsdale, NY area and beyond! Contact us today to schedule an appointment!"
+        ],
+        mapQuery: "259 Heathcote Road Scarsdale NY 10583",
+        mapCaption: "Get Directions to Our Scarsdale, NY Office",
+        addressLines: ["259 Heathcote Road", "Scarsdale, NY 10583"],
+        phone: primaryPhone,
+        phoneHref: primaryPhoneHref,
+        fax: "(914) 949-0717",
+        hours: ["Monday-Friday: 8:30am - 5:00pm"]
+      }
+    ]
+  }
+};
+
 function HomePage() {
   return (
     <>
@@ -327,29 +527,157 @@ function Breadcrumbs({ page }: { page: SitePage }) {
   );
 }
 
+function LiveRule({ className = "" }: { className?: string }) {
+  return <div className={`mt-[30px] h-[2px] w-full ${className}`} style={{ backgroundColor: liveBlue }} />;
+}
+
+function LegacyParagraph({ text: paragraph }: { text: string }) {
+  const linkedPractice = paragraph.split("Audiology Associates of Westchester");
+  if (linkedPractice.length > 1) {
+    return (
+      <p>
+        {linkedPractice.map((part, index) => (
+          <span key={`${part}-${index}`}>
+            {index > 0 ? (
+              <Link className="text-[#005a9c] underline" href="/">
+                Audiology Associates of Westchester
+              </Link>
+            ) : null}
+            {part}
+          </span>
+        ))}
+      </p>
+    );
+  }
+
+  return <p>{paragraph}</p>;
+}
+
+function LegacyParagraphs({ paragraphs, className = "" }: { paragraphs: string[]; className?: string }) {
+  return (
+    <div className={`space-y-[30px] text-[24px] leading-[1.35] text-black ${className}`}>
+      {paragraphs.map((paragraph) => (
+        <LegacyParagraph key={paragraph} text={paragraph} />
+      ))}
+    </div>
+  );
+}
+
 function LiveTextBlock({ lines }: { lines: string[] }) {
   return (
-    <div className="legacy-live-copy mx-auto max-w-[1030px] space-y-5 text-center text-[17px] leading-[1.75] text-[#333]">
+    <div className="legacy-live-copy max-w-[1440px] space-y-[30px] text-left text-[24px] leading-[1.35] text-black">
       {lines.map((line, index) => {
         const isQuestion = line.endsWith("?");
         const isHeading = line.length < 115 && !/[.!]$/.test(line) && index > 0;
         if (isHeading) {
           return (
-            <h2 className="pt-4 text-[25px] font-black leading-tight text-[#333]" key={`${line}-${index}`}>
+            <h2 className="pt-[22px] text-[40px] font-normal leading-tight text-black" key={`${line}-${index}`}>
               {line}
+              <LiveRule />
             </h2>
           );
         }
         if (isQuestion) {
           return (
-            <h2 className="pt-3 text-[22px] font-black leading-tight text-[#333]" key={`${line}-${index}`}>
+            <h2 className="pt-[22px] text-[36px] font-normal leading-tight text-black" key={`${line}-${index}`}>
               {line}
+              <LiveRule />
             </h2>
           );
         }
-        return <p key={`${line}-${index}`}>{line}</p>;
+        return <LegacyParagraph key={`${line}-${index}`} text={line} />;
       })}
     </div>
+  );
+}
+
+function GoogleMapEmbed({ query, title }: { query: string; title: string }) {
+  const src = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
+
+  return (
+    <iframe
+      className="h-[320px] w-full border border-[#555]"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      src={src}
+      title={title}
+    />
+  );
+}
+
+function LegacyLocationSectionView({ section }: { section: LegacyLocationSection }) {
+  const hasMap = Boolean(section.mapQuery);
+  const hasDetails = Boolean(section.addressLines?.length || section.phone || section.hours?.length);
+
+  return (
+    <section
+      className={`py-[56px] ${section.background === "blue" ? "bg-[#dbe9f3]" : "bg-white"}`}
+      style={{ backgroundColor: section.background === "blue" ? liveSoftBlue : "#ffffff" }}
+    >
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{section.title}</h2>
+        <LiveRule />
+
+        <div className={hasMap || hasDetails ? "mt-[48px] grid gap-[64px] lg:grid-cols-[0.9fr_1fr]" : "mt-[48px]"}>
+          <div className="space-y-[34px]">
+            {section.paragraphs.length ? <LegacyParagraphs paragraphs={section.paragraphs} /> : null}
+            {hasDetails ? (
+              <address className="space-y-[10px] text-[24px] leading-[1.35] text-black not-italic">
+                {section.addressLines?.map((line) => <p key={line}>{line}</p>)}
+                {section.phone && section.phoneHref ? (
+                  <p>
+                    Phone:{" "}
+                    <a className="text-[#005a9c] underline" href={section.phoneHref}>
+                      {section.phone}
+                    </a>
+                  </p>
+                ) : null}
+                {section.fax ? <p>Fax: {section.fax}</p> : null}
+                {section.hours?.length ? (
+                  <>
+                    <p className="pt-[8px] font-bold">Hours of Operation</p>
+                    {section.hours.map((line) => <p key={line}>{line}</p>)}
+                  </>
+                ) : null}
+              </address>
+            ) : null}
+          </div>
+
+          {hasMap ? (
+            <div>
+              <GoogleMapEmbed query={section.mapQuery!} title={section.mapCaption || section.title} />
+              {section.mapCaption ? (
+                <p className="mt-[30px] text-center text-[26px] font-bold italic leading-tight text-[#005a9c]">
+                  {section.mapCaption}
+                </p>
+              ) : null}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LiveLocationPage({ page }: { page: SitePage }) {
+  const content = legacyLocationContent[page.path];
+  if (!content) return <LivePageBody page={page} />;
+
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          {content.intro ? <p className="mb-[18px] text-[24px] leading-tight text-black">{content.intro}</p> : null}
+          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{content.heading}</h1>
+          <LiveRule />
+          {content.paragraphs.length ? <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} /> : null}
+        </div>
+      </section>
+      {content.sections.map((section) => (
+        <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
+      ))}
+    </>
   );
 }
 
@@ -388,7 +716,7 @@ function BlogPostRelated({ page }: { page: SitePage }) {
 }
 
 function LivePageBody({ page }: { page: SitePage }) {
-  const paragraphs = page.body.filter(Boolean);
+  const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
   const image = page.heroImage;
   const isBlog = page.type === "blog-post";
   const showImage = (isBlog || page.path === "/hearing-aid-referral-program" || page.path === "/tinnitus-therapy") && image;
@@ -396,25 +724,26 @@ function LivePageBody({ page }: { page: SitePage }) {
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-10 text-center md:py-12">
-        <div className="mx-auto max-w-[1180px] px-5">
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           {isBlog ? (
             <p className="mb-3 text-[15px] text-[#555]">Audiology Associates of Westchester</p>
           ) : null}
-          <h1 className="mx-auto max-w-[1080px] text-[32px] font-black leading-[1.15] text-[#333] md:text-[38px]">
+          <h1 className="max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
             {page.h1 || page.title}
           </h1>
+          <LiveRule />
           {showImage ? (
             <Image
               alt={image.alt || page.h1}
-              className="mx-auto mt-8 max-h-[430px] w-full max-w-[860px] object-cover"
+              className="mt-[38px] max-h-[430px] w-full max-w-[860px] object-cover"
               height={760}
               priority={false}
               src={image.src}
               width={1180}
             />
           ) : null}
-          <div className="mt-8">
+          <div className="mt-[38px]">
             <LiveTextBlock lines={paragraphs.length ? paragraphs : [page.metaDescription]} />
           </div>
         </div>
@@ -423,8 +752,8 @@ function LivePageBody({ page }: { page: SitePage }) {
       {isBlog ? <BlogPostRelated page={page} /> : null}
 
       {page.type === "service" || page.type === "hearing-aids" || page.type === "educational" ? (
-        <section className="bg-white pb-12 text-center">
-          <div className="mx-auto max-w-[900px] px-5">
+        <section className="bg-white pb-12">
+          <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
             <Link className="legacy-live-button mt-6 inline-flex" href="/contact-us">
               MAKE AN APPOINTMENT TODAY
             </Link>
@@ -1118,6 +1447,15 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <LiveTeamPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "location" || page.type === "service-area") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <LiveLocationPage page={page} />
       </>
     );
   }
