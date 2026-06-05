@@ -279,7 +279,6 @@ function fixSpacing(value: string) {
     .replace(/providebest-practice/g, "provide best-practice")
     .replace(/informationfor/g, "information for")
     .replace(/American Board of Audiology \.CH-TM/g, "American Board of Audiology. CH-TM")
-    .replace(/Reason #1:Our/g, "Reason #1: Our")
     .replace(/hearing aidin/g, "hearing aid in")
     .replace(/\s+/g, " ")
     .trim();
@@ -329,7 +328,7 @@ function expandBodyLine(line: string) {
 }
 
 function mostlyCoveredByOtherLines(line: string, allLines: string[]) {
-  if (line.length < 180) return false;
+  if (line.length < 120) return false;
 
   let remaining = line.toLowerCase();
   let covered = 0;
@@ -371,11 +370,17 @@ function cleanBodyText(page: CrawlPage, path: string) {
           .replace(/-/g, " ")
           .replace(/\b\w/g, (character) => character.toUpperCase());
   const titleish = new Set([page.h1, page.title, page.title.replace(/\s*\|.*$/, ""), pathLabel].map(fixSpacing));
+  const sectionish = new Set((page.sections || []).map(fixSpacing).filter(Boolean));
+  const isLikelyHeading = (line: string) =>
+    line.length < 130 &&
+    !/[.!?]$/.test(line) &&
+    !/^Call Us Today/i.test(line) &&
+    !/^\(?\d{3}\)?/.test(line);
   const lines = page.text
     .map(fixSpacing)
     .flatMap(expandBodyLine)
     .filter(Boolean)
-    .filter((line) => !/^Call Us Today/i.test(line))
+    .filter((line) => sectionish.has(line) || /^Call Us Today to Schedule/i.test(line) || !/^Call Us Today/i.test(line))
     .filter((line) => line !== primaryPhone)
     .filter((line) => !/^AUDIOLOGY ASSOCIATES OF WESTCHESTER$/i.test(line))
     .filter((line) => !/^WEBSITE DESIGN BY/i.test(line))
@@ -391,7 +396,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
     .filter((line, index) => index < 2 || !titleish.has(line));
 
   const cleaned = dedupe(lines, (line) => line.toLowerCase()).filter(
-    (line, _index, allLines) => !mostlyCoveredByOtherLines(line, allLines)
+    (line, _index, allLines) => sectionish.has(line) || isLikelyHeading(line) || !mostlyCoveredByOtherLines(line, allLines)
   );
 
   if (path === "/thank-you") {
@@ -406,6 +411,9 @@ function cleanBodyText(page: CrawlPage, path: string) {
       "This page summarizes the privacy practices published on the current website, including the types of device, registration, and voluntary information collected through the site.",
       "Patients should contact the practice directly with privacy questions or to request additional information."
     ];
+  }
+  if (path === "/privacy" && !cleaned.includes("Audiology Associates of Westchester Privacy Policy")) {
+    cleaned.unshift("Audiology Associates of Westchester Privacy Policy");
   }
 
   const bodyLimit = path === "/meet-the-team" ? 160 : path === "/privacy" ? 120 : 45;
@@ -520,7 +528,7 @@ const generatedPages = uniqueCrawlPages
   .map((page): SitePage => {
     const path = pathFromUrl(page.url);
     const type = determineType(path, page.type);
-    const h1 = fixSpacing(page.h1 || (path === "/privacy" ? "Privacy Policy" : page.title.replace(/\s*\|.*$/, "")));
+    const h1 = page.h1 || (path === "/privacy" ? "" : page.title.replace(/\s*\|.*$/, ""));
     const metaDescription =
       fixSpacing(page.metaDescription) ||
       `${h1} from ${siteName}, serving Westchester County and nearby communities.`;

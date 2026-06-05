@@ -128,6 +128,165 @@ const teamMembers = [
   }
 ];
 
+type LegacyTeamProfile = {
+  name: string;
+  pronouns: string;
+  role: string;
+  image: string;
+  alt: string;
+  paragraphs: string[];
+  credentials?: string[];
+  affiliations?: string[];
+};
+
+const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }> = [
+  {
+    group: "Doctors of Audiology",
+    profiles: [
+      {
+        ...teamMembers[0],
+        paragraphs: [
+          "“I consider it an absolute privilege to re-connect my patients to their loved ones and surroundings through better hearing. I find such joy in helping my patients and cherish the connection I make with each and every one of them.”",
+          "Dr. Ratner was awarded her doctorate in audiology from the top graduate audiology program in the country, Vanderbilt University School of Medicine. She has worked as a research assistant in the Dan Maddox Hearing Aid Research Laboratory at Vanderbilt University, and she completed her externship at the renowned Veterans Affairs Medical Center in Nashville, TN. Dr. Ratner went on to work at a private practice in Manhattan prior to joining our staff. She is a member of the American Academy of Audiology, accredited by the American Speech-Language-Hearing Association, and a fellow of the Tinnitus Practitioners Association. She has a strong background in diagnostic testing, fitting and verification of hearing aids, counseling and orientation and auditory rehabilitation. As a music lover and former musician, she enjoys meeting the unique needs of musicians with hearing loss. In 2017, she was awarded the Rising Stars Top 40 Under 40 award from the Business Council of Westchester."
+        ],
+        credentials: [
+          "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
+          "College: B.A. Communication Sciences and Disorders, Magna Cum Laude; Florida State University, 2008",
+          "Graduate: Au.D. Audiology, Vanderbilt University School of Medicine, 2012",
+          "Board Certification: American Academy of Audiology",
+          "Awards: American Academy of Audiology, 2013-2014 Scholar Award",
+          "Certificate Holder: Tinnitus Management (CH-TM)",
+          "Professional Affiliations:"
+        ],
+        affiliations: [
+          "American Academy of Audiology",
+          "Tinnitus Practitioners Association",
+          "American Speech, Language, and Hearing Association"
+        ]
+      },
+      {
+        ...teamMembers[1],
+        paragraphs: [
+          "Dr. Dold is a White Plains native who received her doctorate from Vanderbilt University School of Medicine. While at Vanderbilt, she worked as a research assistant in a collaboration between the Hearing and Communication Research Lab and Listening and Learning Lab examining listening-related fatigue. She was awarded a T-35 Traineeship from the NIH and was subsequently published and completed a traineeship with the U.S. Department of Veteran Affairs. She completed her externship at Audiology Associates of Westchester and runs the Practice’s clinical education program for Audiology students in training.",
+          "Her areas of expertise include comprehensive diagnostic testing, counseling, and orientation, fitting and verification of hearing aids, testing for cochlear implant candidacy, activation and programming of cochlear implants, tinnitus testing and treatment, cerumen removal, Lyric® invisible extended-wear hearing devices, custom fit hearing protection and musician’s plugs, and auditory rehabilitation. She has worked with special populations including veterans, individuals with disabilities, and D/deaf individuals. She is highly proficient in American Sign Language and holds a New York State license in Audiology, is accredited by the American Speech-Language-Hearing Association and is a member of the American Academy of Audiology.",
+          "In 2024, she was awarded the Rising Stars Top 40 Under 40 Award from the Business Council of Westchester."
+        ],
+        credentials: [
+          "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
+          "College: B.A., Sociology; Self-Designed Second Major: Learning and Culture in the Deaf Community, College of the Holy Cross, 2010",
+          "Graduate: Au.D. Audiology, Vanderbilt University School of Medicine, 2020",
+          "Certificate Holder: Tinnitus Management (CH-TM); Auditory Preceptor (CH-AP)",
+          "Professional Proficiency in American Sign Language",
+          "Professional Affiliations:"
+        ],
+        affiliations: [
+          "American Academy of Audiology – Academy Fellow",
+          "American Speech-Language-Hearing Association – Certificate of Clinical Competence"
+        ]
+      },
+      {
+        ...teamMembers[2],
+        paragraphs: [
+          "“Hearing loss can really affect people’s lives especially if it goes untreated. I became an audiologist as I love reconnecting my patients to their surrounding environments and to what they love. I find it truly rewarding to put hearing aids on my patients and see their eyes light up at how well they are hearing.”",
+          "Jenna M. Elias received her Doctor of Audiology degree at the University of Florida and her master’s degree at Hofstra University. She is licensed in New York State as an audiologist and hearing aid dispenser. Dr. Elias worked in various clinical settings including a large ENT practice and Bellevue Hospital in New York City prior to joining the Audiology Associates of Westchester team. Dr. Elias is a fellow of the American Academy of Audiology and Sigma Pi honor society. She has extensive training in hearing aid dispensing and diagnostic audiology."
+        ],
+        credentials: [
+          "Audiology Licensure: New York State and NYS Hearing Aid Dispenser",
+          "College: M.A. Audiology, Hofstra University, 2015",
+          "Graduate: University of Florida, Doctor of Audiology; Spring 2018",
+          "Professional Affiliations:"
+        ],
+        affiliations: [
+          "American Academy of Audiology – Academy Fellow",
+          "American Speech-Language-Hearing Association - Certificate of Clinical Competence"
+        ]
+      },
+      {
+        ...teamMembers[3],
+        paragraphs: [
+          "Leannmarie Senat earned her Doctorate of Audiology from The City University of New York Graduate Center. Her clinical training included placements at the Brooklyn Veterans Affairs Medical Center, with a focus on adult amplification, and at the Long Island Jewish (LIJ) Medical Center, where she concentrated on vestibular assessment as well as pediatric and adult diagnostics. She completed her residency at the LIJ Hearing and Speech Center, gaining extensive experience in diagnostic audiology and hearing aid services for patients across the lifespan."
+        ],
+        credentials: [
+          "College: CUNY Queens College, B.A., Communication Science and Disorders, Spring 2021",
+          "Graduate: CUNY Graduate Center, Doctor of Audiology; Spring 2025"
+        ]
+      },
+      {
+        ...teamMembers[4],
+        paragraphs: [
+          "Julia Rivera is a Doctor of Audiology (Au.D.) candidate at Montclair State University, where she is expected to graduate in May 2026. She earned her Bachelor of Arts in Communication Sciences and Disorders from Pace University.",
+          "Before beginning her doctoral studies, Julia gained over 150 hours of experience in speech and language therapy, working with children aged 4 to 21 in school-based settings. This background strengthened her understanding of communication development and deepened her commitment to interdisciplinary, patient-centered care",
+          "Her clinical training includes experience across private practice, hospital, and ENT settings, where she has developed a strong foundation in diagnostic audiology, vestibular assessment, hearing aid technology, and patient counseling. Julia is passionate about providing person and family centered care that empowers individuals to improve their communication and quality of life.",
+          "Julia’s doctoral research examines how structural racism and social determinants of health influence follow-up adherence within Early Hearing Detection and Intervention (EHDI) programs, reflecting her passion for promoting equity and access in hearing healthcare."
+        ]
+      }
+    ]
+  },
+  {
+    group: "Executive Team",
+    profiles: [
+      {
+        ...teamMembers[5],
+        paragraphs: [
+          "“There is nothing more rewarding than helping a patient achieve better hearing. I believe that everyone’s hearing needs are unique, like a fingerprint, and my goal is to find customized solutions for all populations.”",
+          "Dr. Kira Savin specializes in providing personalized hearing solutions using the latest and most discreet technology available, including the Lyric® invisible extended-wear hearing device. Dr. Savin's areas of expertise include hearing rehabilitation, auditory counseling and retraining therapy, tinnitus management, and dispensing hearing aids and assistive listening technologies for adults. She holds a New York State license in audiology, as well as hearing aid dispensing. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology. Dr. Savin completed her residency at SUNY Downstate Medical Center in Brooklyn, NY. She previously worked at a private practice in New York City where she dispensed hearing aids and provided hearing care solutions, including customized musicians’ devices for all populations."
+        ],
+        credentials: [
+          "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
+          "College: B.A., Communication Sciences and Disorders, Pace University, 2005",
+          "Graduate: Au.D., Salus University, George S. Osborne College of Audiology, 2013",
+          "Certification: American Academy of Audiology",
+          "Certificate Holder: Tinnitus Management (CH-TM)",
+          "Professional Affiliations:"
+        ],
+        affiliations: [
+          "American Academy of Audiology – Academy Scholar",
+          "American Speech-Language-Hearing Association",
+          "Long Island Speech and Hearing Association"
+        ]
+      },
+      {
+        ...teamMembers[6],
+        paragraphs: [
+          "Jennifer Tarlton joined Audiology Associates of Westchester in December 2022. She brings a multi-faceted knowledge in both management and administrative support fields. Jennifer provides the practice with financial, insurance administration and personnel management. She is charged with onboarding the new employees and ensuring the staff has what they need to provide the care and attention for all the patients. Jennifer also assists in establishing efficient and effective systems and processes, which result in patient satisfaction, employee and provider engagement and strong financial performance. Jennifer was drawn to a career in healthcare because both of her parents had successful and satisfying careers within the medical and mental healthcare industry. She is dedicated to bringing her knowledge and skills to a practice that truly enhances and makes a difference in its patients' lives.",
+          "Outside of work, Jennifer enjoys travel and is an avid runner."
+        ]
+      }
+    ]
+  },
+  {
+    group: "Administrative Team",
+    profiles: [
+      {
+        ...teamMembers[7],
+        pronouns: "(she/her/hers)",
+        role: "Patient Care Coordinator Lead/Billing Specialist",
+        paragraphs: [
+          "Alicia is a cornerstone of our audiology practice, serving with dedication and expertise as both the Patient Care Coordinator Lead/Billing Specialist. With a remarkable career spanning nearly four decades in the medical field, Alicia joined our team a decade ago and has since played a pivotal role in ensuring our operations run seamlessly.",
+          "Since embarking on her medical career in 1985, Alicia has accumulated a wealth of experience and knowledge that enriches her dual roles within our practice. As the Patient Care Coordinator Lead/Billing Specialist, she warmly welcomes patients with a reassuring smile, coordinates appointments effortlessly, and ensures a hospitable environment for everyone who walks through our doors. Her attention to detail and organizational skills guarantee that every patient receives prompt and courteous service.",
+          "In her capacity as Billing Specialist, Alicia meticulously oversees all financial aspects of our practice. Her precision ensures accurate billing processes, transparent financial communications, and effective management of insurance claims. Alicia's deep understanding of medical billing procedures and her commitment to efficiency contribute significantly to the smooth operation of our practice.",
+          "Alicia's tenure of 10 years with our company reflects her loyalty and dedication to both our team and our patients. Beyond her professional responsibilities, she is known for her compassion and patience, always willing to go the extra mile to assist patients with their inquiries and concerns.",
+          "Outside of work, Alicia enjoys spending time with her family and pursuing her interests in culinary and community volunteering. Her extensive experience, combined with her genuine care for our patients' well-being, makes her an indispensable asset to our audiology practice."
+        ]
+      },
+      {
+        ...teamMembers[8],
+        pronouns: "(she/her/hers)",
+        paragraphs: [
+          "Barbara Lawrence, Patient Care Coordinator joined Audiology Associates in December 2023 bringing many years of Outstanding Customer Service experience in Medical Offices as well as Verizon Communications. Outside of work she enjoys spending time with her five grandchildren and baking."
+        ]
+      },
+      {
+        ...teamMembers[9],
+        pronouns: "(she/her/hers)",
+        paragraphs: [
+          "Hazel Icaza is a Patient Care Coordinator here at Audiology Associates of Westchester who strives to help our patients and meet their needs. With over 6+ years of experience in the healthcare field, she is continuing to grow her knowledge in the counseling and social work field. Currently attending Lehman College, she hopes to be an asset to those who are struggling with hearing loss and help them find the resources they need to meet their wants and be a resource for people in need."
+        ]
+      }
+    ]
+  }
+];
+
 const hearingAidBrands = [
   ["Widex Hearing Aids", "Widex is a family-owned company that has been advancing the hearing aid industry since 1956. They specialize in tinnitus solutions and create high-quality hearing aids like their EVOKE™ line.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/WidexLogo-1920w.png", "Widex High Definition Hearing logo"],
   ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. They create some of the most advanced products, including ones that are smartphone compatible and have activity tracking capabilities.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/StarkeyLogo-250x131-1920w.png", "Starkey logo"],
@@ -362,9 +521,9 @@ function HomePage() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10">
-          <h1 className="text-[44px] font-black leading-tight drop-shadow-lg md:text-[58px]">
+          <h2 className="text-[44px] font-black leading-tight drop-shadow-lg md:text-[58px]">
             You&rsquo;ll Never Say &ldquo;What?&rdquo; Again!
-          </h1>
+          </h2>
           <p className="mt-7 text-[18px] font-black uppercase tracking-[0.4em] drop-shadow-md md:text-[26px]">
             Improve Your Hearing <span className="mx-3">•</span> Hearing Aids <span className="mx-3">•</span> Hearing Testing
           </p>
@@ -373,13 +532,13 @@ function HomePage() {
 
       <section className="bg-white py-12 text-center">
         <div className="mx-auto max-w-[1180px] px-5">
-          <h2 className="text-[36px] font-black leading-tight text-[#0a3d45] md:text-[48px]">
+          <h1 className="text-[36px] font-black leading-tight text-[#0a3d45] md:text-[48px]">
             Your Trusted Audiologist
             <br />
             <span className="text-[22px] font-black text-[#4f4f4f]">
               Serving Greenwich, CT; Scarsdale, Mt. Kisco, White Plains, Harrison, Rye, Somers, NY &amp; Beyond
             </span>
-          </h2>
+          </h1>
           <div className="mx-auto mt-7 max-w-[1040px] space-y-5 text-[18px] leading-8 text-[#333]">
             <p>
               Hearing loss can be frustrating and cause you to miss out on everything around you. Whether you want
@@ -403,7 +562,7 @@ function HomePage() {
               to improve your hearing, and more so you don&rsquo;t miss a sound.
             </p>
           </div>
-          <p className="mt-7 text-[22px] font-black text-[#333]">Improve your hearing and live life to the fullest. Call now.</p>
+          <h2 className="mt-7 text-[22px] font-black text-[#333]">Improve your hearing and live life to the fullest. Call now.</h2>
           <div className="mx-auto mt-7 max-w-[1040px] space-y-5 text-[18px] leading-8 text-[#333]">
             <p>
               Hearing loss is upsetting, but Audiology Associates of Westchester can help you regain control and
@@ -504,7 +663,7 @@ function HomePage() {
             </Link>
           </div>
           <div>
-            <h2 className="text-[24px] font-black text-[#333]">Get In Touch</h2>
+            <h2 className="text-[24px] font-black text-[#333]">Contact Us</h2>
             <ContactForm context="Homepage contact form" />
           </div>
         </div>
@@ -568,7 +727,9 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
     <div className="legacy-live-copy max-w-[1440px] space-y-[30px] text-left text-[24px] leading-[1.35] text-black">
       {lines.map((line, index) => {
         const isQuestion = line.endsWith("?");
-        const isHeading = line.length < 115 && !/[.!]$/.test(line) && index > 0;
+        const isLiveSubheading =
+          /^(Reason #\d+:|Misconception:|Call (Our|Us|now)|Audiology Associates of Westchester Privacy Policy|Quality Hearing Aids|Your Source of Ear Protection|Our hearing care professionals|Hearing aids, hearing protection|Initial Hearing Consultation|Types of Hearing Tests|Audiometric Test|Tympanometry|OAEs|The Effects of Hearing Loss|Types of Hearing Loss|Conductive Hearing Loss:|Sensorineural Hearing Loss:|Mixed Hearing Loss:|Central Hearing Loss:|Custom Ear Molds and Plugs|Cell Phone Accessories|Hearing Aid Accessories|FAQs$)/.test(line);
+        const isHeading = (line.length < 140 && !/[.!]$/.test(line) && index > 0) || isLiveSubheading;
         if (isHeading) {
           return (
             <h2 className="pt-[22px] text-[40px] font-normal leading-tight text-black" key={`${line}-${index}`}>
@@ -668,7 +829,7 @@ function LiveLocationPage({ page }: { page: SitePage }) {
       <Breadcrumbs page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          {content.intro ? <p className="mb-[18px] text-[24px] leading-tight text-black">{content.intro}</p> : null}
+          {content.intro ? <h2 className="mb-[18px] text-[24px] font-normal leading-tight text-black">{content.intro}</h2> : null}
           <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{content.heading}</h1>
           <LiveRule />
           {content.paragraphs.length ? <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} /> : null}
@@ -750,16 +911,6 @@ function LivePageBody({ page }: { page: SitePage }) {
       </section>
 
       {isBlog ? <BlogPostRelated page={page} /> : null}
-
-      {page.type === "service" || page.type === "hearing-aids" || page.type === "educational" ? (
-        <section className="bg-white pb-12">
-          <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-            <Link className="legacy-live-button mt-6 inline-flex" href="/contact-us">
-              MAKE AN APPOINTMENT TODAY
-            </Link>
-          </div>
-        </section>
-      ) : null}
     </>
   );
 }
@@ -773,44 +924,69 @@ function LiveContactPage({ page }: { page: SitePage }) {
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-10 text-center">
-        <div className="mx-auto max-w-[1180px] px-5">
-          <h1 className="text-[38px] font-black leading-tight text-[#333]">{page.h1}</h1>
-          <LiveTextBlock lines={intro.length ? intro : page.body.slice(0, 4)} />
-          <div className="mt-10 grid gap-8 text-left lg:grid-cols-[0.8fr_1.2fr]">
-            <div className="space-y-5 text-[17px] leading-7 text-[#333]">
-              {locations
-                .filter((location) => location.type === "office")
-                .slice(0, 2)
-                .map((location) => (
-                  <address className="not-italic" key={location.path}>
-                    <Link className="font-black text-[#005a9c] underline" href={location.path}>
-                      {location.name}
-                    </Link>
-                    <p>{location.address}</p>
-                    <a className="font-bold text-[#005a9c] underline" href={location.phoneHref}>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <LiveRule />
+          <div className="mt-[38px]">
+            <LegacyParagraphs className="max-w-none" paragraphs={intro.length ? intro : page.body.slice(0, 4)} />
+          </div>
+        </div>
+      </section>
+      <section className="bg-white pb-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Audiology Associates of Westchester</h2>
+          <LiveRule />
+          <div className="mt-[42px] grid gap-[64px] lg:grid-cols-2">
+            {[locations.find((location) => location.path === "/Somers-NY"), locations.find((location) => location.path === "/harrison-ny")]
+              .filter((location): location is (typeof locations)[number] => Boolean(location))
+              .map((location) => (
+                <address className="space-y-[10px] text-[24px] leading-[1.35] text-black not-italic" key={location.path}>
+                  <Link className="font-bold text-[#005a9c] underline" href={location.path}>
+                    {location.name}
+                  </Link>
+                  {location.path === "/Somers-NY" ? (
+                    <>
+                      <p>325 NY 100</p>
+                      <p>Somers, NY 10589</p>
+                    </>
+                  ) : (
+                    <>
+                      <p>550 Mamaroneck Ave, Suite 407 (4th floor)</p>
+                      <p>Harrison, NY 10528</p>
+                    </>
+                  )}
+                  <p>
+                    Phone:{" "}
+                    <a className="text-[#005a9c] underline" href={location.phoneHref}>
                       {location.phone}
                     </a>
-                    {location.fax ? <p>Fax: {location.fax}</p> : null}
-                    <p className="font-bold">Hours of Operation</p>
-                    {location.path === "/Somers-NY" ? (
-                      <>
-                        <p>Monday, Tuesday, Wednesday, Thursday</p>
-                        <p>8:30am – 5:00pm</p>
-                      </>
-                    ) : (
-                      <>
-                        <p>Monday-Friday</p>
-                        <p>8:30am – 5:00pm</p>
-                      </>
-                    )}
-                  </address>
-                ))}
-            </div>
-            <div>
-              <p className="mb-4 text-[20px] font-black text-[#333]">Submit This Form to Contact Us</p>
-              <ContactForm context={`Contact page: ${page.h1}`} />
-            </div>
+                  </p>
+                  {location.fax ? <p>Fax: {location.fax}</p> : null}
+                  <p className="pt-[8px] font-bold">Hours of Operation</p>
+                  {location.path === "/Somers-NY" ? (
+                    <>
+                      <p>Monday, Tuesday, Wednesday, Thursday</p>
+                      <p>8:30am – 5:00pm</p>
+                    </>
+                  ) : (
+                    <>
+                      <p>Monday-Friday</p>
+                      <p>8:30am – 5:00pm</p>
+                    </>
+                  )}
+                </address>
+              ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-white pb-[60px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Submit This Form to Contact Us</h2>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[920px]">
+            <h2 className="mb-[20px] text-[32px] font-normal leading-tight text-black">Contact Us</h2>
+            <ContactForm context={`Contact page: ${page.h1}`} />
           </div>
         </div>
       </section>
@@ -839,90 +1015,106 @@ function LivePatientFormsPage({ page }: { page: SitePage }) {
   );
 }
 
+function LiveThankYouPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <div className="legacy-live-copy max-w-[1440px] text-left text-[24px] leading-[1.35] text-black">
+            <p>{page.body[0] || "Thank you for contacting us! Your message has been received."}</p>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function LiveTeamPage({ page }: { page: SitePage }) {
   const intro = [
     page.body.find((line) => line.startsWith("We all hope") && !line.includes("With locations")),
     page.body.find((line) => line.startsWith("With locations"))
   ].filter((line): line is string => Boolean(line));
-  const introSet = new Set(intro);
-  const detailLines = page.body
-    .filter((line) => !introSet.has(line))
-    .filter((line) => !line.includes("We all hope to have great hearing") || line.length < 160)
-    .filter((line) => !line.includes("With locations in White Plains") || line.length < 160);
 
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-10 text-center">
-        <div className="mx-auto max-w-[1180px] px-5">
-          <h1 className="text-[38px] font-black leading-tight text-[#333]">{page.h1}</h1>
-          <div className="mt-7">
-            <LiveTextBlock lines={intro.length ? intro : page.body.slice(0, 2)} />
-          </div>
-          <h2 className="mt-12 text-[28px] font-black text-[#333]">Doctors of Audiology</h2>
-          <div className="mt-8 grid gap-x-10 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {teamMembers.slice(0, 6).map((person) => (
-              <article className="text-center" key={person.name}>
-                <Image
-                  alt={person.alt}
-                  className="mx-auto aspect-[4/5] w-full max-w-[290px] object-cover"
-                  height={520}
-                  src={person.image}
-                  width={420}
-                />
-                <h3 className="mt-4 text-[22px] font-black text-[#333]">{person.name}</h3>
-                {person.pronouns ? <p className="mt-1 text-[16px] leading-6 text-[#333]">{person.pronouns}</p> : null}
-                <p className="text-[16px] font-bold leading-6 text-[#333]">{person.role}</p>
-              </article>
-            ))}
-          </div>
-          <h2 className="mt-14 text-[28px] font-black text-[#333]">Executive Team</h2>
-          <div className="mt-8 grid gap-x-10 gap-y-14 md:grid-cols-2 lg:grid-cols-4">
-            {teamMembers.slice(6).map((person) => (
-              <article className="text-center" key={person.name}>
-                <Image
-                  alt={person.alt}
-                  className="mx-auto aspect-[4/5] w-full max-w-[250px] object-cover"
-                  height={500}
-                  src={person.image}
-                  width={380}
-                />
-                <h3 className="mt-4 text-[21px] font-black text-[#333]">{person.name}</h3>
-                {person.pronouns ? <p className="mt-1 text-[15px] leading-6 text-[#333]">{person.pronouns}</p> : null}
-                <p className="text-[15px] font-bold leading-6 text-[#333]">{person.role}</p>
-              </article>
-            ))}
-          </div>
-          <div className="mx-auto mt-14 max-w-[1030px] text-left text-[17px] leading-[1.75] text-[#333]">
-            <h2 className="text-center text-[28px] font-black text-[#333]">Team Backgrounds</h2>
-            <div className="mt-7 space-y-5">
-              {detailLines.map((line, index) => {
-                const isGroupHeading = ["Doctors of Audiology", "Executive Team", "Administrative Team"].includes(line);
-                const isProfileHeading =
-                  teamMembers.some((person) => line === person.name || line.startsWith(`${person.name} `)) ||
-                  /^(Jennifer Tarlton|Alicia Rivera|Barbara Lawrence|Hazel Icaza|Julia Rivera)/.test(line);
-                const isShortHeading = line.length < 85 && !/[.!?"]$/.test(line);
-
-                if (isGroupHeading) {
-                  return (
-                    <h3 className="pt-5 text-center text-[25px] font-black text-[#333]" key={`${line}-${index}`}>
-                      {line}
-                    </h3>
-                  );
-                }
-                if (isProfileHeading || isShortHeading) {
-                  return (
-                    <h4 className="pt-3 text-[21px] font-black text-[#333]" key={`${line}-${index}`}>
-                      {line}
-                    </h4>
-                  );
-                }
-                return <p key={`${line}-${index}`}>{line}</p>;
-              })}
-            </div>
+      <section className="bg-[#005a9c] py-[34px] text-center">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <p className="text-[44px] font-bold leading-tight text-white max-md:text-[36px]">Meet the Team</p>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <LiveRule />
+          <div className="mt-[38px]">
+            <LegacyParagraphs className="max-w-none" paragraphs={intro.length ? intro : page.body.slice(0, 2)} />
           </div>
         </div>
       </section>
+      {legacyTeamProfiles.map((section) => (
+        <section className="bg-white" key={section.group}>
+          <div className="bg-[#005a9c] py-[18px] text-center">
+            <h2 className="text-[36px] font-bold leading-tight text-white max-md:text-[30px]">{section.group}</h2>
+          </div>
+          <div className="mx-auto max-w-[1660px] px-[64px] pb-[20px] pt-[44px] max-md:px-5">
+            {section.profiles.map((person, index) => (
+              <article className="pb-[54px]" key={person.name}>
+                <div className="grid gap-[44px] md:grid-cols-[minmax(0,1fr)_340px] md:items-start">
+                  <div>
+                    <h3 className="text-[34px] font-bold leading-tight text-black max-md:text-[29px]">{person.name}</h3>
+                    <h2 className="mt-[8px] text-[18px] font-normal leading-tight text-black">{person.pronouns}</h2>
+                    <h3 className="mt-[8px] text-[24px] font-bold leading-tight text-black max-md:text-[21px]">{person.role}</h3>
+                    <LiveRule className="mt-[24px]" />
+                    <div className="mt-[28px] space-y-[30px] text-[24px] leading-[1.35] text-black">
+                      {person.paragraphs.map((paragraph, paragraphIndex) => (
+                        <p className={paragraph.startsWith("“") ? "italic" : undefined} key={`${person.name}-${paragraphIndex}`}>
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                  <Image
+                    alt={person.alt}
+                    className="mx-auto aspect-square w-full max-w-[330px] object-cover"
+                    height={500}
+                    src={person.image}
+                    width={500}
+                  />
+                </div>
+                {person.credentials?.length ? (
+                  <div className="mt-[28px] space-y-[8px] text-[20px] leading-[1.45] text-black">
+                    {person.credentials.map((credential) => {
+                      const [label, ...rest] = credential.split(":");
+                      return (
+                        <p key={`${person.name}-${credential}`}>
+                          {rest.length ? (
+                            <>
+                              <strong>{label}:</strong>
+                              {rest.join(":")}
+                            </>
+                          ) : (
+                            credential
+                          )}
+                        </p>
+                      );
+                    })}
+                    {person.affiliations?.length ? (
+                      <ul className="ml-[28px] list-disc space-y-[4px]">
+                        {person.affiliations.map((item) => (
+                          <li key={`${person.name}-${item}`}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </div>
+                ) : null}
+                {index < section.profiles.length - 1 ? <div className="mt-[46px] h-px w-full bg-[#d7d7d7]" /> : null}
+              </article>
+            ))}
+          </div>
+        </section>
+      ))}
     </>
   );
 }
@@ -1447,6 +1639,15 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <LiveTeamPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "thank-you") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <LiveThankYouPage page={page} />
       </>
     );
   }
