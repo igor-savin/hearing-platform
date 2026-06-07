@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
+import { productMenuCards } from "@/lib/products";
 import { logoUrl, primaryPhone, primaryPhoneHref } from "@/lib/site";
 
 const navGroups = [
@@ -30,7 +31,7 @@ const navGroups = [
     links: [
       ["HEARING AIDS 101", "/hearing-aids-101"],
       ["TYPES OF HEARING AIDS", "/types-of-hearing-aids"],
-      ["HEARING AIDS BRANDS", "/hearing-aids-brands"],
+      ["HEARING AIDS BRANDS", "/products/hearing-aids-by-brand"],
       ["BATTERIES AND ACCESSORIES", "/batteries-and-accessories"],
       ["LYRIC® INVISIBLE HEARING™", "/lyric-invisible-hearing"],
       ["INSTRUCTIONAL VIDEOS", "/instructional-videos"]
@@ -57,63 +58,6 @@ const navGroups = [
       ["MT. KISCO, NY", "/mt-kisco-ny"],
       ["HARRISON, NY", "/harrison-ny"]
     ]
-  }
-];
-
-const hearingAidProducts = [
-  {
-    title: "Oticon Intent",
-    description: "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-intent/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Oticon-Intent-scale.webp"
-  },
-  {
-    title: "Oticon Zeal",
-    description: "The world's first invisible hearing aid with complete connectivity.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-zeal/",
-    image: "https://calhearing.com/wp-content/uploads/2026/02/Oticon-Zeal.png"
-  },
-  {
-    title: "Starkey Edge AI",
-    description: "Pioneered American innovation, cutting-edge styles with AI-powered adaptive technology.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/starkey/starkey-edge-ai/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Starkey-Edge-AI.webp"
-  },
-  {
-    title: "Phonak Lyric",
-    description: "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/phonak/phonak-lyric/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Phonak-Lyric-Hearing-Aid.webp"
-  },
-  {
-    title: "Phonak Infinio",
-    description: "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/phonak/phonak-infinio/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Phonak-Infinio-copper-scale.webp"
-  },
-  {
-    title: "Signia IX",
-    description: "Innovative, rechargeable hearing aids with over a century of excellence.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/signia/signia-ix/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Signia-IX.webp"
-  },
-  {
-    title: "Widex Allure",
-    description: "Family-owned since 1956, delivering natural sound clarity with innovative technology.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/widex/widex-allure/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Widex-Allure.webp"
-  },
-  {
-    title: "ReSound Vivia",
-    description: "Pioneering award-winning hearing solutions and connectivity advancements since 1943.",
-    href: "https://calhearing.com/products/hearing-aids-by-brand/resound/resound-vivia/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/ReSound-Vivia.webp"
-  },
-  {
-    title: "Ear Gear",
-    description: "Custom earplugs and earmolds for hearing needs, inspired by our sister-site product menu.",
-    href: "https://calhearing.com/products/eargear/",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/new1.webp"
   }
 ];
 
@@ -217,8 +161,8 @@ export function Header() {
                 {group.label === "HEARING AIDS" ? (
                   <div className="legacy-dropdown legacy-hearing-aids-mega absolute left-1/2 top-full z-50 hidden w-[min(1980px,calc(100vw-46px))] -translate-x-1/2 bg-[#f3f3f3] p-[22px] text-black shadow-lg">
                     <div className="grid gap-x-[54px] gap-y-[48px] lg:grid-cols-3">
-                      {hearingAidProducts.map((product) => (
-                        <a
+                      {productMenuCards.map((product) => (
+                        <Link
                           className="focus-ring grid min-h-[130px] grid-cols-[86px_1fr] items-center gap-[28px] bg-[#f4d5cc] px-[20px] py-[10px] text-black transition hover:bg-[#efc8bf]"
                           href={product.href}
                           key={product.href}
@@ -234,7 +178,7 @@ export function Header() {
                             <span className="block text-[27px] font-black leading-tight">{product.title}</span>
                             <span className="mt-[3px] block text-[24px] font-normal leading-[1.02]">{product.description}</span>
                           </span>
-                        </a>
+                        </Link>
                       ))}
                     </div>
                     <div className="mt-[22px] flex flex-wrap justify-center gap-x-[28px] gap-y-[10px] border-t border-[#d2d2d2] pt-[16px]">

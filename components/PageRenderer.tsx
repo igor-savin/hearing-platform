@@ -3,6 +3,17 @@ import Link from "next/link";
 import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { ZocdocButton } from "@/components/ZocdocButton";
+import {
+  brandForPath,
+  brandForProduct,
+  brandPath,
+  hearingAidBrandsPath,
+  hearingAidProducts,
+  productBrands,
+  productForPath,
+  productPath,
+  productsRootPath
+} from "@/lib/products";
 import { schemaForPage } from "@/lib/schema";
 import {
   blogPosts,
@@ -683,6 +694,334 @@ function Breadcrumbs({ page }: { page: SitePage }) {
       {page.path !== "/" ? <span>{page.h1}</span> : null}
       </div>
     </nav>
+  );
+}
+
+type ProductCrumb = {
+  label: string;
+  href?: string;
+};
+
+function productCrumbsForPath(path: string): ProductCrumb[] {
+  const product = productForPath(path);
+  const brand = product ? brandForProduct(product) : brandForPath(path);
+
+  if (path === productsRootPath) return [{ label: "Home", href: "/" }, { label: "Products" }];
+  if (path === hearingAidBrandsPath) {
+    return [
+      { label: "Home", href: "/" },
+      { label: "Products", href: productsRootPath },
+      { label: "Hearing Aid Brands" }
+    ];
+  }
+  if (product?.brandSlug && brand) {
+    return [
+      { label: "Home", href: "/" },
+      { label: "Products", href: productsRootPath },
+      { label: "Hearing Aid Brands", href: hearingAidBrandsPath },
+      { label: brand.name, href: brandPath(brand.slug) },
+      { label: product.title }
+    ];
+  }
+  if (product) {
+    return [
+      { label: "Home", href: "/" },
+      { label: "Products", href: productsRootPath },
+      { label: product.title }
+    ];
+  }
+  if (brand) {
+    return [
+      { label: "Home", href: "/" },
+      { label: "Products", href: productsRootPath },
+      { label: "Hearing Aid Brands", href: hearingAidBrandsPath },
+      { label: brand.name }
+    ];
+  }
+  return [{ label: "Home", href: "/" }];
+}
+
+function ProductBreadcrumbs({ page }: { page: SitePage }) {
+  const crumbs = productCrumbsForPath(page.path);
+
+  return (
+    <nav aria-label="Breadcrumb" className="bg-white py-[22px] text-[30px] leading-tight max-md:text-[20px]">
+      <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
+        <ol className="flex flex-wrap items-center gap-x-[14px] gap-y-2">
+          {crumbs.map((crumb, index) => (
+            <li className="flex items-center gap-x-[14px]" key={`${crumb.label}-${index}`}>
+              {crumb.href ? (
+                <Link className="focus-ring text-[#c94800] hover:underline" href={crumb.href}>
+                  {crumb.label}
+                </Link>
+              ) : (
+                <span className="text-[#777]">{crumb.label}</span>
+              )}
+              {index < crumbs.length - 1 ? <span className="font-bold text-[#8b8b8b]">›</span> : null}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </nav>
+  );
+}
+
+function ProductCta() {
+  return (
+    <section className="bg-white py-[54px] text-center">
+      <div className="mx-auto max-w-[1120px] px-5">
+        <h2 className="text-[34px] font-black leading-tight text-[#333] max-md:text-[28px]">
+          Set Up Your Hearing Consultation with an Expert Today
+        </h2>
+        <p className="mx-auto mt-5 max-w-[820px] text-[22px] leading-[1.45] text-[#333] max-md:text-[18px]">
+          Product information is educational. For personalized hearing aid recommendations, schedule an appointment
+          with Audiology Associates of Westchester.
+        </p>
+        <div className="mt-7 flex flex-wrap justify-center gap-4">
+          <ZocdocButton className="legacy-live-button" label="Request an appointment" trackingId="product-page-appointment" />
+          <a className="legacy-live-button" data-track="phone-product" href={primaryPhoneHref}>
+            Call {primaryPhone}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductCardGrid({ products = hearingAidProducts }: { products?: typeof hearingAidProducts }) {
+  return (
+    <div className="grid gap-x-[34px] gap-y-[30px] md:grid-cols-2 xl:grid-cols-3">
+      {products.map((product) => (
+        <Link
+          className="focus-ring group grid min-h-[166px] grid-cols-[96px_1fr] items-center gap-5 bg-[#f4d5cc] p-5 text-black transition hover:bg-[#efc8bf]"
+          href={productPath(product)}
+          key={product.slug}
+        >
+          <Image alt={product.imageAlt} className="h-[108px] w-[96px] object-contain" height={140} src={product.image} width={140} />
+          <span>
+            <span className="block text-[28px] font-black leading-tight group-hover:underline">{product.shortTitle}</span>
+            <span className="mt-2 block text-[21px] leading-[1.08]">{product.menuDescription}</span>
+          </span>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+function ProductsIndexPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <ProductBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
+          <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">{page.h1}</h1>
+          <LiveRule />
+          <div className="mt-10 grid gap-10 md:grid-cols-2">
+            <Link className="focus-ring block bg-[#f5f5f5] p-8 text-black hover:bg-[#eeeeee]" href={hearingAidBrandsPath}>
+              <div className="relative h-[230px] overflow-hidden bg-[#dbe9f3]">
+                <Image
+                  alt="Hearing aid lineup"
+                  className="object-contain p-8"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  src="https://calhearing.com/wp-content/uploads/2025/04/Oticon-Intent-scale.webp"
+                />
+              </div>
+              <h2 className="mt-7 text-[34px] font-black">Hearing Aids</h2>
+              <p className="mt-3 text-[22px] leading-[1.35]">
+                Compare premium hearing aid brands and product families available to discuss with our audiology team.
+              </p>
+              <span className="legacy-live-button mt-6 inline-flex">View Hearing Aids</span>
+            </Link>
+            <Link className="focus-ring block bg-[#f5f5f5] p-8 text-black hover:bg-[#eeeeee]" href="/products/eargear">
+              <div className="relative h-[230px] overflow-hidden bg-[#dbe9f3]">
+                <Image
+                  alt="Custom earplugs and earmolds"
+                  className="object-contain p-8"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  src="https://calhearing.com/wp-content/uploads/2025/04/new1.webp"
+                />
+              </div>
+              <h2 className="mt-7 text-[34px] font-black">Ear Gear</h2>
+              <p className="mt-3 text-[22px] leading-[1.35]">
+                Learn about custom earmolds, earplugs, and hearing protection options for work, music, recreation, and daily life.
+              </p>
+              <span className="legacy-live-button mt-6 inline-flex">View Ear and Hearing Protection</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <ProductCta />
+    </>
+  );
+}
+
+function ProductBrandIndexPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <ProductBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
+          <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">Your Partner for Better Hearing</h1>
+          <LiveRule />
+          <div className="mt-9 max-w-[1420px] space-y-[26px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            <p>
+              At Audiology Associates of Westchester, selecting the right hearing aid starts with understanding your hearing,
+              your communication goals, and the listening situations that matter most to you.
+            </p>
+            <p>
+              Our audiologists can compare technology from leading manufacturers and explain how sound quality, comfort,
+              connectivity, rechargeability, and follow-up care affect real-world results.
+            </p>
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Our Featured Hearing Aid Brands</h2>
+          <LiveRule />
+          <div className="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+            {productBrands.map((brand) => (
+              <Link className="focus-ring block border border-[#d5d5d5] bg-white p-7 text-black hover:bg-[#f7f7f7]" href={brandPath(brand.slug)} key={brand.slug}>
+                <h3 className="text-[28px] font-black">{brand.name} Hearing Aids</h3>
+                <p className="mt-2 text-[20px] font-bold text-[#005a9c]">{brand.headline}</p>
+                <p className="mt-4 text-[19px] leading-[1.35]">{brand.summary}</p>
+                <span className="mt-6 inline-block text-[18px] font-bold text-[#005a9c] underline">Learn More</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <ProductCta />
+    </>
+  );
+}
+
+function ProductBrandPage({ page }: { page: SitePage }) {
+  const brand = brandForPath(page.path);
+  if (!brand) return <LivePageBody page={page} />;
+  const products = brand.products
+    .map((slug) => hearingAidProducts.find((product) => product.slug === slug))
+    .filter(Boolean) as typeof hearingAidProducts;
+  const otherBrands = productBrands.filter((item) => item.slug !== brand.slug);
+
+  return (
+    <>
+      <ProductBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
+          <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">{brand.name} Hearing Aids</h1>
+          <LiveRule />
+          <div className="mt-9 max-w-[1420px] space-y-[26px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            <p>{brand.legacy}</p>
+            <p>
+              At Audiology Associates of Westchester, our audiology team can help you decide whether {brand.name}
+              technology is the right match for your hearing profile, lifestyle, and communication needs.
+            </p>
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Groundbreaking {brand.name} Technology</h2>
+          <LiveRule />
+          <div className="mt-8 grid gap-7 md:grid-cols-2">
+            {brand.technology.map((item) => (
+              <article className="bg-[#dbe9f3] p-7 text-black" key={item.title}>
+                <h3 className="text-[28px] font-black">{item.title}</h3>
+                <p className="mt-3 text-[21px] leading-[1.35]">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">{brand.name} Product Families</h2>
+          <LiveRule />
+          <div className="mt-10">
+            <ProductCardGrid products={products} />
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Explore Other Premium Hearing Aid Brands</h2>
+          <LiveRule />
+          <div className="mt-8 flex flex-wrap gap-4">
+            {otherBrands.map((item) => (
+              <Link className="focus-ring legacy-live-button" href={brandPath(item.slug)} key={item.slug}>
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <ProductCta />
+    </>
+  );
+}
+
+function HearingAidProductPage({ page }: { page: SitePage }) {
+  const product = productForPath(page.path);
+  if (!product) return <LivePageBody page={page} />;
+  const brand = brandForProduct(product);
+  const otherBrands = productBrands.filter((item) => item.slug !== brand?.slug);
+
+  return (
+    <>
+      <ProductBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
+          <div className="grid gap-10 lg:grid-cols-[1fr_420px] lg:items-start">
+            <div>
+              <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">{product.title}</h1>
+              <p className="mt-4 text-[30px] font-black leading-tight text-[#333] max-md:text-[23px]">{product.subtitle}</p>
+              <LiveRule />
+              <div className="mt-9 space-y-[26px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+                {product.overview.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
+            <div className="bg-[#f4d5cc] p-8">
+              <Image
+                alt={product.imageAlt}
+                className="mx-auto h-auto max-h-[330px] w-full object-contain"
+                height={420}
+                src={product.image}
+                width={420}
+              />
+            </div>
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">At a Glance</h2>
+          <LiveRule />
+          <ul className="mt-8 grid gap-4 text-[22px] leading-[1.35] text-black md:grid-cols-2">
+            {product.highlights.map((highlight) => (
+              <li className="flex gap-3" key={highlight}>
+                <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={24} aria-hidden="true" />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">The Technology Inside {product.shortTitle}</h2>
+          <LiveRule />
+          <div className="mt-8 grid gap-7 md:grid-cols-2">
+            {product.technology.map((item) => (
+              <article className="bg-[#dbe9f3] p-7 text-black" key={item.title}>
+                <h3 className="text-[28px] font-black">{item.title}</h3>
+                <p className="mt-3 text-[21px] leading-[1.35]">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Frequently Asked Questions</h2>
+          <LiveRule />
+          <div className="mt-8 space-y-7">
+            {product.faqs.map((faq) => (
+              <article key={faq.question}>
+                <h3 className="text-[27px] font-black text-[#333]">{faq.question}</h3>
+                <p className="mt-2 text-[21px] leading-[1.35] text-black">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Explore Other Premium Hearing Aid Brands</h2>
+          <LiveRule />
+          <div className="mt-8 flex flex-wrap gap-4">
+            {otherBrands.map((item) => (
+              <Link className="focus-ring legacy-live-button" href={brandPath(item.slug)} key={item.slug}>
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <ProductCta />
+    </>
   );
 }
 
@@ -1666,6 +2005,42 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <LiveBrandsPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "products-index") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <ProductsIndexPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "product-brand-index") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <ProductBrandIndexPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "product-brand") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <ProductBrandPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "product") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <HearingAidProductPage page={page} />
       </>
     );
   }

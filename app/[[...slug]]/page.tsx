@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { PageRenderer } from "@/components/PageRenderer";
 import { buildMetadata, getPageByPath, pagePaths, toPath } from "@/lib/site";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 type PageProps = {
   params: Promise<{

@@ -1,4 +1,12 @@
 import { baseUrl, locationForPath, locations, primaryPhone, services, siteName, type SitePage } from "@/lib/site";
+import {
+  brandForPath,
+  brandForProduct,
+  brandPath,
+  hearingAidBrandsPath,
+  productForPath,
+  productsRootPath
+} from "@/lib/products";
 
 export function organizationSchema() {
   return {
@@ -37,19 +45,23 @@ export function websiteSchema() {
 }
 
 export function breadcrumbSchema(page: SitePage) {
-  const itemListElement = [
+  const crumbs = productBreadcrumbItems(page);
+  const itemListElement = (crumbs || [
     {
-      "@type": "ListItem",
-      position: 1,
       name: "Home",
       item: baseUrl
     }
-  ];
+  ]).map((crumb, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: crumb.name,
+    item: crumb.item
+  }));
 
-  if (page.path !== "/") {
+  if (!crumbs && page.path !== "/") {
     itemListElement.push({
       "@type": "ListItem",
-      position: 2,
+      position: itemListElement.length + 1,
       name: page.h1,
       item: page.canonical
     });
@@ -60,6 +72,44 @@ export function breadcrumbSchema(page: SitePage) {
     "@type": "BreadcrumbList",
     itemListElement
   };
+}
+
+function productBreadcrumbItems(page: SitePage) {
+  const product = productForPath(page.path);
+  const brand = product ? brandForProduct(product) : brandForPath(page.path);
+
+  if (
+    page.path !== productsRootPath &&
+    page.path !== hearingAidBrandsPath &&
+    page.type !== "product-brand" &&
+    page.type !== "product"
+  ) {
+    return null;
+  }
+
+  const items = [
+    { name: "Home", item: baseUrl },
+    { name: "Products", item: `${baseUrl}${productsRootPath}` }
+  ];
+
+  if (page.path === productsRootPath) return items;
+
+  if (product && !product.brandSlug) {
+    items.push({ name: product.title, item: page.canonical });
+    return items;
+  }
+
+  items.push({ name: "Hearing Aid Brands", item: `${baseUrl}${hearingAidBrandsPath}` });
+
+  if (brand) {
+    items.push({ name: brand.name, item: `${baseUrl}${brandPath(brand.slug)}` });
+  }
+
+  if (product) {
+    items.push({ name: product.title, item: page.canonical });
+  }
+
+  return items;
 }
 
 export function pageSchema(page: SitePage) {

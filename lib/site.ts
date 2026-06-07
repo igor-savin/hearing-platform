@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 import crawl from "@/data/crawl.json";
+import {
+  brandPath,
+  hearingAidBrandsPath,
+  hearingAidProducts,
+  productBrands,
+  productPath,
+  productsRootPath
+} from "@/lib/products";
 
 export const baseUrl = "https://www.audiologyassociates.org";
 export const siteName = "Audiology Associates of Westchester";
@@ -40,6 +48,10 @@ export type SitePageType =
   | "location"
   | "service-area"
   | "hearing-aids"
+  | "products-index"
+  | "product-brand-index"
+  | "product-brand"
+  | "product"
   | "educational"
   | "blog-index"
   | "blog-post"
@@ -445,6 +457,36 @@ function imageForPage(page: CrawlPage) {
 }
 
 function baseFaqs(page: SitePage) {
+  if (page.type === "product") {
+    return [
+      {
+        question: "How do I know whether this hearing aid is right for me?",
+        answer:
+          "A hearing test, listening-needs discussion, and professional fitting consultation are needed before choosing any hearing aid model."
+      },
+      {
+        question: "Does Audiology Associates of Westchester confirm availability and candidacy?",
+        answer:
+          "Yes. Product availability, candidacy, and clinical recommendations should be confirmed directly with the practice."
+      }
+    ];
+  }
+
+  if (page.type === "product-brand" || page.type === "product-brand-index" || page.type === "products-index") {
+    return [
+      {
+        question: "Which hearing aid brand is best?",
+        answer:
+          "There is no single best brand for everyone. The right choice depends on your hearing test, listening goals, comfort, handling needs, phone compatibility, and follow-up care."
+      },
+      {
+        question: "Can I compare brands during an appointment?",
+        answer:
+          "Yes. The audiology team can explain differences among hearing aid brands and recommend options based on your individual needs."
+      }
+    ];
+  }
+
   if (page.type === "service") {
     return [
       {
@@ -553,9 +595,93 @@ const generatedPages = uniqueCrawlPages
   })
   .sort((a, b) => (a.path === "/" ? -1 : b.path === "/" ? 1 : a.path.localeCompare(b.path)));
 
-export const pages: SitePage[] = generatedPages.map((page) => {
+const productHubPages: SitePage[] = [
+  {
+    path: productsRootPath,
+    url: `${baseUrl}${productsRootPath}`,
+    title: "Products",
+    metaTitle: `Products | ${siteName}`,
+    metaDescription:
+      "Explore hearing aids, hearing aid brands, custom earmolds, and hearing protection options from Audiology Associates of Westchester.",
+    h1: "Products",
+    type: "products-index",
+    lastModified: "2026-06-07",
+    canonical: `${baseUrl}${productsRootPath}`,
+    images: [],
+    sections: ["Hearing Aids", "Ear Gear"],
+    body: [
+      "Explore hearing technology and ear care products available to discuss with the audiology team at Audiology Associates of Westchester.",
+      "The right solution depends on your hearing test, communication goals, lifestyle, dexterity, comfort, and clinical recommendations."
+    ],
+    faqs: [],
+    related: []
+  },
+  {
+    path: hearingAidBrandsPath,
+    url: `${baseUrl}${hearingAidBrandsPath}`,
+    title: "Hearing Aid Brands",
+    metaTitle: `Hearing Aid Brands | ${siteName}`,
+    metaDescription:
+      "Compare premium hearing aid brands including Oticon, Phonak, Starkey, Signia, Widex, ReSound, Lyric, and custom ear protection options.",
+    h1: "Hearing Aid Brands",
+    type: "product-brand-index",
+    lastModified: "2026-06-07",
+    canonical: `${baseUrl}${hearingAidBrandsPath}`,
+    images: [],
+    sections: ["Your Partner for Better Hearing", "Our Featured Hearing Aid Brands"],
+    body: [
+      "Selecting the right hearing aid is a personal decision. Audiology Associates of Westchester works with patients to compare technology, sound quality, comfort, connectivity, and care needs.",
+      "A professional hearing aid recommendation starts with a complete hearing evaluation and a conversation about the real listening situations you want to improve."
+    ],
+    faqs: [],
+    related: []
+  },
+  ...productBrands.map((brand): SitePage => ({
+    path: brandPath(brand.slug),
+    url: `${baseUrl}${brandPath(brand.slug)}`,
+    title: `${brand.name} Hearing Aids`,
+    metaTitle: `${brand.name} Hearing Aids | ${siteName}`,
+    metaDescription: `${brand.summary} Learn about ${brand.name} options with Audiology Associates of Westchester.`,
+    h1: `${brand.name} Hearing Aids`,
+    type: "product-brand",
+    lastModified: "2026-06-07",
+    canonical: `${baseUrl}${brandPath(brand.slug)}`,
+    images: [],
+    sections: [brand.headline, `${brand.name} Product Families`, "Explore Other Premium Hearing Aid Brands"],
+    body: [brand.legacy, brand.summary, ...brand.technology.map((item) => `${item.title}: ${item.body}`)],
+    faqs: [],
+    related: []
+  })),
+  ...hearingAidProducts.map((product): SitePage => ({
+    path: productPath(product),
+    url: `${baseUrl}${productPath(product)}`,
+    title: product.title,
+    metaTitle: `${product.title} Hearing Aids | ${siteName}`,
+    metaDescription: `${product.subtitle}. Learn whether ${product.title} may be appropriate for your hearing needs with Audiology Associates of Westchester.`,
+    h1: product.title,
+    type: "product",
+    lastModified: "2026-06-07",
+    canonical: `${baseUrl}${productPath(product)}`,
+    heroImage: {
+      src: product.image,
+      alt: product.imageAlt
+    },
+    images: [
+      {
+        src: product.image,
+        alt: product.imageAlt
+      }
+    ],
+    sections: [product.subtitle, "Technology", "Frequently Asked Questions"],
+    body: [...product.overview, ...product.technology.map((item) => `${item.title}: ${item.body}`)],
+    faqs: product.faqs,
+    related: []
+  }))
+];
+
+export const pages: SitePage[] = [...generatedPages, ...productHubPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
-  withFaqs.faqs = baseFaqs(withFaqs);
+  withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
   return withFaqs;
 });
