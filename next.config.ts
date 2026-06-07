@@ -50,6 +50,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "irp-cdn.multiscreensite.com"
+      },
+      {
+        protocol: "https",
+        hostname: "calhearing.com"
       }
     ]
   }
