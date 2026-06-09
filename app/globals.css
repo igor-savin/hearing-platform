@@ -112,6 +112,10 @@ select {
   display: block;
 }
 
+.legacy-menu-suppressed .legacy-dropdown {
+  display: none !important;
+}
+
 .legacy-nav-item button {
   color: inherit;
   background: transparent;

@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { productMenuCards } from "@/lib/products";
@@ -76,17 +80,32 @@ function SocialCircle({ label, href, children }: { label: string; href: string; 
 }
 
 export function Header() {
+  const pathname = usePathname();
+  const [suppressMenus, setSuppressMenus] = useState(false);
+
+  useEffect(() => {
+    setSuppressMenus(false);
+  }, [pathname]);
+
+  function closeMenus() {
+    setSuppressMenus(true);
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  }
+
   return (
-    <header className="legacy-header bg-white">
+    <header className={`legacy-header bg-white ${suppressMenus ? "legacy-menu-suppressed" : ""}`}>
       <div className="relative mx-auto flex min-h-[171px] w-full max-w-[2048px] items-center justify-center px-5 py-4">
         <Link
           className="focus-ring legacy-why-button absolute left-[78px] top-[40px] hidden rounded-[4px] bg-[#005a9c] px-[36px] py-[13px] text-[18px] leading-none text-white lg:inline-flex"
           href="/why-choose-us"
+          onClick={closeMenus}
         >
           Why Choose Us?
         </Link>
 
-        <Link className="focus-ring block" href="/" aria-label="Audiology Associates of Westchester home">
+        <Link className="focus-ring block" href="/" aria-label="Audiology Associates of Westchester home" onClick={closeMenus}>
           <Image
             alt="Audiology Associates of Westchester logo"
             className="h-auto w-[360px] max-w-[78vw] md:w-[575px] lg:w-[700px]"
@@ -133,6 +152,7 @@ export function Header() {
               <Link
                 className="focus-ring inline-flex h-full items-center border-2 border-white px-[19px] py-[17px] text-[20px] uppercase tracking-[0.06em]"
                 href="/"
+                onClick={closeMenus}
               >
                 HOME
               </Link>
@@ -144,6 +164,7 @@ export function Header() {
                     <Link
                       className="focus-ring flex items-center gap-3 whitespace-nowrap px-[36px] py-[19px] text-[20px] uppercase tracking-[0.06em]"
                       href={group.href}
+                      onClick={closeMenus}
                     >
                       {group.label}
                       <ChevronDown size={16} aria-hidden="true" />
@@ -166,6 +187,7 @@ export function Header() {
                           className="focus-ring grid min-h-[130px] grid-cols-[86px_1fr] items-center gap-[28px] bg-[#f4d5cc] px-[20px] py-[10px] text-black transition hover:bg-[#efc8bf]"
                           href={product.href}
                           key={product.href}
+                          onClick={closeMenus}
                         >
                           <Image
                             alt={product.title}
@@ -187,6 +209,7 @@ export function Header() {
                           className="focus-ring text-[16px] font-bold uppercase tracking-[0.06em] text-[#005a9c] underline"
                           href={href}
                           key={href}
+                          onClick={closeMenus}
                         >
                           {label}
                         </Link>
@@ -200,6 +223,7 @@ export function Header() {
                         className="focus-ring block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] text-[18px] uppercase leading-tight tracking-[0.05em] last:border-b-0 hover:bg-[#005a9c]"
                         href={href}
                         key={href}
+                        onClick={closeMenus}
                       >
                         {label}
                       </Link>

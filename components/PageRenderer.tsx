@@ -808,6 +808,34 @@ function ProductCardGrid({ products = hearingAidProducts }: { products?: typeof 
   );
 }
 
+function ProductVideos({ product }: { product: NonNullable<ReturnType<typeof productForPath>> }) {
+  if (!product.videos?.length) return null;
+
+  return (
+    <>
+      <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">
+        {product.shortTitle} Video
+      </h2>
+      <LiveRule />
+      <div className={`mt-8 grid gap-7 ${product.videos.length > 1 ? "lg:grid-cols-2" : ""}`}>
+        {product.videos.map((video) => (
+          <div className="bg-black" key={video.youtubeId}>
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}`}
+              title={video.title}
+            />
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
+
 function ProductsIndexPage({ page }: { page: SitePage }) {
   return (
     <>
@@ -989,6 +1017,7 @@ function HearingAidProductPage({ page }: { page: SitePage }) {
               </li>
             ))}
           </ul>
+          <ProductVideos product={product} />
           <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">The Technology Inside {product.shortTitle}</h2>
           <LiveRule />
           <div className="mt-8 grid gap-7 md:grid-cols-2">

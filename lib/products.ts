@@ -20,6 +20,7 @@ export type HearingAidProduct = {
   overview: string[];
   highlights: string[];
   technology: Array<{ title: string; body: string }>;
+  videos?: Array<{ title: string; youtubeId: string }>;
   faqs: Array<{ question: string; answer: string }>;
 };
 
@@ -55,6 +56,12 @@ export const hearingAidProducts: HearingAidProduct[] = [
       {
         title: "User-Intent Sensors",
         body: "Intent technology uses multiple inputs, including motion and sound-scene information, to adjust support as your listening situation changes."
+      }
+    ],
+    videos: [
+      {
+        title: "Oticon Intent product video",
+        youtubeId: "gzX6A5w0ilE"
       }
     ],
     faqs: [
@@ -139,6 +146,12 @@ export const hearingAidProducts: HearingAidProduct[] = [
         body: "The right fitting balances speech clarity, sound comfort, cosmetics, connectivity, and maintenance needs."
       }
     ],
+    videos: [
+      {
+        title: "Starkey Edge AI product video",
+        youtubeId: "38q7GgjS--I"
+      }
+    ],
     faqs: [
       {
         question: "Does Starkey Edge AI require a smartphone?",
@@ -178,6 +191,12 @@ export const hearingAidProducts: HearingAidProduct[] = [
       {
         title: "Clinical Candidacy",
         body: "Ear canal shape, skin health, hearing needs, and lifestyle all influence whether Lyric is a good option."
+      }
+    ],
+    videos: [
+      {
+        title: "Phonak Lyric product video",
+        youtubeId: "OTQUD3DKXi4"
       }
     ],
     faqs: [
@@ -221,6 +240,12 @@ export const hearingAidProducts: HearingAidProduct[] = [
         body: "Phonak is known for broad wireless connectivity options that can support phone calls, media, and accessories."
       }
     ],
+    videos: [
+      {
+        title: "Phonak Infinio product video",
+        youtubeId: "Guo_O9duNz0"
+      }
+    ],
     faqs: [
       {
         question: "What makes Phonak Infinio different?",
@@ -260,6 +285,12 @@ export const hearingAidProducts: HearingAidProduct[] = [
       {
         title: "Rechargeable Convenience",
         body: "Rechargeable hearing aids can simplify daily use for patients who prefer not to change disposable batteries."
+      }
+    ],
+    videos: [
+      {
+        title: "Signia IX product video",
+        youtubeId: "0fHS3TYitA8"
       }
     ],
     faqs: [
@@ -303,6 +334,16 @@ export const hearingAidProducts: HearingAidProduct[] = [
         body: "Your audiologist can adjust settings over time as you experience the devices at home, work, and social settings."
       }
     ],
+    videos: [
+      {
+        title: "Widex Allure product video",
+        youtubeId: "-2eTLqcBUYU"
+      },
+      {
+        title: "Widex Allure receiver-in-canal video",
+        youtubeId: "SpFXfGdDb9E"
+      }
+    ],
     faqs: [
       {
         question: "Is Widex Allure good for music?",
@@ -342,6 +383,12 @@ export const hearingAidProducts: HearingAidProduct[] = [
       {
         title: "Real-World Adjustments",
         body: "A successful fitting includes both initial programming and follow-up visits based on your actual listening experiences."
+      }
+    ],
+    videos: [
+      {
+        title: "ReSound Vivia product video",
+        youtubeId: "ZZGkgKNjl3Y"
       }
     ],
     faqs: [
@@ -548,4 +595,3 @@ export function productForPath(path: string) {
 export function brandForProduct(product: HearingAidProduct) {
   return product.brandSlug ? productBrands.find((brand) => brand.slug === product.brandSlug) : undefined;
 }
-
