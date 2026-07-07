@@ -63,9 +63,6 @@ const navGroups = [
     links: [
       ["PATIENT FORMS", "/patient-forms"],
       ["SOMERS, NY OFFICE", "/Somers-NY"],
-      ["GREENWICH, CT", "/greenwich-ct"],
-      ["RYE, NY", "/rye-ny"],
-      ["MT. KISCO, NY", "/mt-kisco-ny"],
       ["HARRISON, NY", "/harrison-ny"]
     ]
   }
