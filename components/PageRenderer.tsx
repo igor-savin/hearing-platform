@@ -44,6 +44,7 @@ import {
   type AreaCity,
   type AreaCityLocalFlavor
 } from "@/lib/serviceAreas";
+import { providerForName, providerForPath, providerPath, providerProfiles, type ProviderProfile } from "@/lib/team";
 
 const patientForms = [
   {
@@ -1814,9 +1815,22 @@ function LiveTeamPage({ page }: { page: SitePage }) {
               <article className="pb-[54px]" key={person.name}>
                 <div className="grid gap-[44px] md:grid-cols-[minmax(0,1fr)_340px] md:items-start">
                   <div>
-                    <h3 className="text-[34px] font-bold leading-tight text-black max-md:text-[29px]">{person.name}</h3>
+                    <h3 className="text-[34px] font-bold leading-tight text-black max-md:text-[29px]">
+                      {providerForName(person.name) ? (
+                        <Link className="text-black underline decoration-[#005a9c] decoration-2 underline-offset-[5px]" href={providerPath(providerForName(person.name)!)}>
+                          {person.name}
+                        </Link>
+                      ) : (
+                        person.name
+                      )}
+                    </h3>
                     <h2 className="mt-[8px] text-[18px] font-normal leading-tight text-black">{person.pronouns}</h2>
                     <h3 className="mt-[8px] text-[24px] font-bold leading-tight text-black max-md:text-[21px]">{person.role}</h3>
+                    {providerForName(person.name) ? (
+                      <Link className="mt-[14px] inline-block text-[19px] font-bold text-[#005a9c] underline" href={providerPath(providerForName(person.name)!)}>
+                        View {person.name.replace(/^Dr\.\s*/, "").replace(/,\s*Au\.D\..*$/, "")}&apos;s profile
+                      </Link>
+                    ) : null}
                     <LiveRule className="mt-[24px]" />
                     <div className="mt-[28px] space-y-[30px] text-[24px] leading-[1.35] text-black">
                       {person.paragraphs.map((paragraph, paragraphIndex) => (
@@ -1866,6 +1880,147 @@ function LiveTeamPage({ page }: { page: SitePage }) {
           </div>
         </section>
       ))}
+    </>
+  );
+}
+
+function ProviderCredentialList({ provider }: { provider: ProviderProfile }) {
+  return (
+    <div className="mt-[28px] space-y-[8px] text-[20px] leading-[1.45] text-black">
+      {provider.credentials.map((credential) => {
+        const [label, ...rest] = credential.split(":");
+        return (
+          <p key={`${provider.slug}-${credential}`}>
+            {rest.length ? (
+              <>
+                <strong>{label}:</strong>
+                {rest.join(":")}
+              </>
+            ) : (
+              credential
+            )}
+          </p>
+        );
+      })}
+      {provider.affiliations?.length ? (
+        <>
+          <p className="pt-[8px] font-bold">Professional Affiliations</p>
+          <ul className="ml-[28px] list-disc space-y-[4px]">
+            {provider.affiliations.map((item) => (
+              <li key={`${provider.slug}-${item}`}>{item}</li>
+            ))}
+          </ul>
+        </>
+      ) : null}
+    </div>
+  );
+}
+
+function ProviderProfilePage({ page }: { page: SitePage }) {
+  const provider = providerForPath(page.path);
+  if (!provider) return <LivePageBody page={page} />;
+
+  const otherProviders = providerProfiles.filter((item) => item.slug !== provider.slug);
+
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <Link className="mb-[22px] inline-block text-[20px] font-bold text-[#005a9c] underline" href="/meet-the-team">
+            Meet the Team
+          </Link>
+          <div className="grid gap-[52px] lg:grid-cols-[minmax(0,1fr)_420px] lg:items-start">
+            <div>
+              <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Audiologist Profile</p>
+              <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{provider.name}</h1>
+              <h2 className="mt-[10px] text-[26px] font-bold leading-tight text-black">{provider.role}</h2>
+              <p className="mt-[8px] text-[18px] leading-tight text-black">{provider.pronouns}</p>
+              <LiveRule />
+              {provider.quote ? (
+                <blockquote className="mt-[38px] border-l-[6px] border-[#005a9c] pl-6 text-[27px] italic leading-[1.35] text-black max-md:text-[22px]">
+                  &ldquo;{provider.quote}&rdquo;
+                </blockquote>
+              ) : null}
+              <div className="mt-[38px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+                {provider.paragraphs.map((paragraph) => (
+                  <p key={`${provider.slug}-${paragraph}`}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
+            <aside>
+              <Image
+                alt={provider.alt}
+                className="mx-auto aspect-square w-full max-w-[420px] object-cover"
+                height={620}
+                priority={false}
+                src={provider.image}
+                width={620}
+              />
+              <div className="mt-7 bg-[#dbe9f3] p-7 text-black">
+                <h2 className="text-[28px] font-black leading-tight">Schedule Hearing Care</h2>
+                <p className="mt-3 text-[20px] leading-[1.35]">
+                  Call Audiology Associates of Westchester to confirm appointment availability and provider scheduling.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <a className="legacy-live-button" data-track="phone-provider" href={primaryPhoneHref}>
+                    Call {primaryPhone}
+                  </a>
+                  <ZocdocButton className="legacy-live-button" label="Book Online" trackingId={`provider-${provider.slug}-appointment`} />
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Specialties and Areas of Focus</h2>
+          <LiveRule />
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {provider.specialties.map((specialty) => (
+              <div className="flex gap-3 bg-white p-5 text-[21px] leading-[1.35] text-black" key={specialty}>
+                <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={24} aria-hidden="true" />
+                <span>{specialty}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Credentials</h2>
+          <LiveRule />
+          <ProviderCredentialList provider={provider} />
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Frequently Asked Questions About {provider.name}</h2>
+          <LiveRule />
+          <div className="mt-9 grid gap-7 lg:grid-cols-3">
+            {page.faqs.map((faq) => (
+              <article className="bg-white p-7 text-black" key={faq.question}>
+                <h3 className="text-[24px] font-black leading-tight">{faq.question}</h3>
+                <p className="mt-4 text-[19px] leading-[1.38]">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Meet More Audiologists</h2>
+          <LiveRule />
+          <div className="mt-8 flex flex-wrap gap-4">
+            {otherProviders.map((item) => (
+              <Link className="focus-ring legacy-live-button" href={providerPath(item)} key={item.slug}>
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
@@ -2390,6 +2545,15 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <LiveTeamPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "provider") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <ProviderProfilePage page={page} />
       </>
     );
   }

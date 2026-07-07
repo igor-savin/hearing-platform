@@ -14,6 +14,7 @@ import {
   countyPath,
   serviceAreasRootPath
 } from "@/lib/serviceAreas";
+import { providerForPath, providerProfiles, providerPath } from "@/lib/team";
 
 export function organizationSchema() {
   return {
@@ -241,22 +242,41 @@ export function localBusinessSchema(page: SitePage) {
 }
 
 export function personSchemas(page: SitePage) {
+  if (page.type === "provider") {
+    const provider = providerForPath(page.path);
+    if (!provider) return [];
+    return [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": `${baseUrl}${providerPath(provider)}#person`,
+        name: provider.name,
+        jobTitle: provider.role,
+        image: provider.image,
+        description: page.metaDescription,
+        worksFor: { "@id": `${baseUrl}/#organization` },
+        knowsAbout: provider.specialties,
+        alumniOf: provider.credentials
+          .filter((credential) => credential.startsWith("College:") || credential.startsWith("Graduate:"))
+          .map((credential) => ({
+            "@type": "EducationalOrganization",
+            name: credential.replace(/^(College|Graduate):\s*/, "")
+          }))
+      }
+    ];
+  }
+
   if (page.type !== "team") return [];
-  const names = [
-    "Dr. Jennifer Ratner, Au.D.",
-    "Dr. Caitlin Dold, Au.D.",
-    "Dr. Jenna M. Elias, Au.D., F-AAA",
-    "Dr. Leannmarie Senat",
-    "Julia Rivera",
-    "Dr. Kira Savin, Au.D."
-  ];
-  return names.map((name) => ({
+  return providerProfiles.map((provider) => ({
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": `${baseUrl}/meet-the-team#${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-    name,
+    "@id": `${baseUrl}${providerPath(provider)}#person`,
+    name: provider.name,
+    url: `${baseUrl}${providerPath(provider)}`,
+    jobTitle: provider.role,
+    image: provider.image,
     worksFor: { "@id": `${baseUrl}/#organization` },
-    knowsAbout: "Audiology"
+    knowsAbout: provider.specialties
   }));
 }
 

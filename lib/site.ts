@@ -22,6 +22,7 @@ import {
   officePathForCity,
   serviceAreasRootPath
 } from "@/lib/serviceAreas";
+import { providerPath, providerProfiles } from "@/lib/team";
 
 export const baseUrl = "https://www.audiologyassociates.org";
 export const siteName = "Audiology Associates of Westchester";
@@ -75,6 +76,7 @@ export type SitePageType =
   | "contact"
   | "form"
   | "team"
+  | "provider"
   | "careers"
   | "legal"
   | "thank-you"
@@ -624,6 +626,28 @@ function baseFaqs(page: SitePage) {
     ];
   }
 
+  if (page.type === "provider") {
+    const provider = providerProfiles.find((item) => providerPath(item) === page.path);
+    return [
+      {
+        question: `What does ${provider?.name || "this audiologist"} specialize in?`,
+        answer: provider
+          ? `${provider.name}'s profile highlights ${listText(provider.specialties.slice(0, 5))}. Patients should schedule an appointment for recommendations based on their hearing needs.`
+          : "This provider page summarizes audiology experience, credentials, and areas of focus using information published by Audiology Associates of Westchester."
+      },
+      {
+        question: `Can I request an appointment with ${provider?.name || "this provider"}?`,
+        answer:
+          "Patients can call Audiology Associates of Westchester or use the appointment link on the website. Provider availability and clinical recommendations should be confirmed directly with the practice."
+      },
+      {
+        question: "Where does Audiology Associates of Westchester provide care?",
+        answer:
+          "The practice serves Westchester County and nearby communities through offices including Harrison and Somers, with additional location information listed on the site."
+      }
+    ];
+  }
+
   if (page.type === "service") {
     return [
       {
@@ -871,7 +895,33 @@ const serviceAreaPages: SitePage[] = [
   }))
 ];
 
-export const pages: SitePage[] = [...generatedPages, ...productHubPages, ...serviceAreaPages].map((page) => {
+const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => ({
+  path: providerPath(provider),
+  url: `${baseUrl}${providerPath(provider)}`,
+  title: provider.name,
+  metaTitle: `${provider.name} | Audiologist at ${siteName}`,
+  metaDescription: `${provider.name} is ${provider.role.toLowerCase()} at Audiology Associates of Westchester. Learn about credentials, specialties, and audiology experience.`,
+  h1: provider.name,
+  type: "provider",
+  lastModified: "2026-07-07",
+  canonical: `${baseUrl}${providerPath(provider)}`,
+  heroImage: {
+    src: provider.image,
+    alt: provider.alt
+  },
+  images: [
+    {
+      src: provider.image,
+      alt: provider.alt
+    }
+  ],
+  sections: ["About", "Specialties", "Credentials", "Frequently Asked Questions"],
+  body: [provider.role, provider.quote || "", ...provider.paragraphs, ...provider.credentials, ...(provider.affiliations || [])].filter(Boolean),
+  faqs: [],
+  related: []
+}));
+
+export const pages: SitePage[] = [...generatedPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
