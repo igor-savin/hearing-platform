@@ -71,6 +71,9 @@ const navGroups = [
   }
 ];
 
+const navItemClass =
+  "focus-ring flex h-full items-center gap-3 whitespace-nowrap border-2 border-transparent px-[22px] py-[17px] text-[18px] uppercase tracking-[0.06em]";
+
 function SocialCircle({ label, href, children }: { label: string; href: string; children: string }) {
   return (
     <a
@@ -156,7 +159,7 @@ export function Header() {
           <ul className="flex flex-nowrap items-stretch justify-center">
             <li>
               <Link
-                className="focus-ring inline-flex h-full items-center border-2 border-white px-[19px] py-[17px] text-[20px] uppercase tracking-[0.06em]"
+                className={navItemClass}
                 href="/"
                 onClick={closeMenus}
               >
@@ -168,7 +171,7 @@ export function Header() {
               {group.label === "CONTACT US" ? (
                 <li>
                   <Link
-                    className="focus-ring flex h-full items-center whitespace-nowrap px-[22px] py-[19px] text-[19px] uppercase tracking-[0.06em]"
+                    className={navItemClass}
                     href="/areas-we-serve"
                     onClick={closeMenus}
                   >
@@ -180,7 +183,7 @@ export function Header() {
                 <div className="legacy-nav-trigger flex items-center">
                   {group.href ? (
                     <Link
-                      className="focus-ring flex items-center gap-3 whitespace-nowrap px-[22px] py-[19px] text-[19px] uppercase tracking-[0.06em]"
+                      className={navItemClass}
                       href={group.href}
                       onClick={closeMenus}
                     >
@@ -189,7 +192,7 @@ export function Header() {
                     </Link>
                   ) : (
                     <button
-                      className="focus-ring flex cursor-default items-center gap-3 whitespace-nowrap px-[22px] py-[19px] text-[19px] uppercase tracking-[0.06em]"
+                      className={`${navItemClass} cursor-default`}
                       type="button"
                     >
                       {group.label}
