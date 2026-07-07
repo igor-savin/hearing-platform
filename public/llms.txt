@@ -24,6 +24,8 @@ Primary service areas:
 - Mt. Kisco, NY
 - Greenwich, CT
 - Westchester County
+- Fairfield County, CT nearby communities
+- Putnam County, NY nearby communities
 
 Important pages:
 - Home: https://www.audiologyassociates.org/
@@ -33,6 +35,12 @@ Important pages:
 - Tinnitus Therapy: https://www.audiologyassociates.org/tinnitus-therapy
 - Hearing Protection: https://www.audiologyassociates.org/hearing-protection
 - Hearing Aid Repair: https://www.audiologyassociates.org/hearing-aid-repair
+- Areas We Serve: https://www.audiologyassociates.org/areas-we-serve
+- Westchester County Service Area: https://www.audiologyassociates.org/areas-we-serve/westchester-county-ny
+- Fairfield County CT Service Area: https://www.audiologyassociates.org/areas-we-serve/fairfield-county-ct
+- Putnam County NY Service Area: https://www.audiologyassociates.org/areas-we-serve/putnam-county-ny
+- Greenwich CT Service Area: https://www.audiologyassociates.org/areas-we-serve/fairfield-county-ct/greenwich
+- Mahopac NY Service Area: https://www.audiologyassociates.org/areas-we-serve/putnam-county-ny/mahopac
 - Patient Forms: https://www.audiologyassociates.org/patient-forms
 - Harrison Office: https://www.audiologyassociates.org/harrison-ny
 - Somers Office: https://www.audiologyassociates.org/Somers-NY

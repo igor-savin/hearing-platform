@@ -8,6 +8,13 @@ import {
   productPath,
   productsRootPath
 } from "@/lib/products";
+import {
+  areaCities,
+  areaCounties,
+  cityPath,
+  countyPath,
+  serviceAreasRootPath
+} from "@/lib/serviceAreas";
 
 export const baseUrl = "https://www.audiologyassociates.org";
 export const siteName = "Audiology Associates of Westchester";
@@ -52,6 +59,9 @@ export type SitePageType =
   | "product-brand-index"
   | "product-brand"
   | "product"
+  | "service-areas-index"
+  | "area-county"
+  | "area-city"
   | "educational"
   | "blog-index"
   | "blog-post"
@@ -472,6 +482,26 @@ function baseFaqs(page: SitePage) {
     ];
   }
 
+  if (page.type === "service-areas-index" || page.type === "area-county" || page.type === "area-city") {
+    return [
+      {
+        question: "Does Audiology Associates of Westchester serve this area?",
+        answer:
+          "Yes. The practice serves Westchester County and nearby communities through its Westchester County offices. Patients should call to confirm appointment availability and the best office for their needs."
+      },
+      {
+        question: "Which audiology services are available?",
+        answer:
+          "Core services include hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, hearing aid repair, hearing aid accessories, and hearing aid education."
+      },
+      {
+        question: "How do I schedule a visit?",
+        answer:
+          "Call the practice or use the appointment link on the website. Clinical recommendations and appointment availability should be confirmed directly with the office."
+      }
+    ];
+  }
+
   if (page.type === "product-brand" || page.type === "product-brand-index" || page.type === "products-index") {
     return [
       {
@@ -679,7 +709,62 @@ const productHubPages: SitePage[] = [
   }))
 ];
 
-export const pages: SitePage[] = [...generatedPages, ...productHubPages].map((page) => {
+const serviceAreaPages: SitePage[] = [
+  {
+    path: serviceAreasRootPath,
+    url: `${baseUrl}${serviceAreasRootPath}`,
+    title: "Areas We Serve",
+    metaTitle: `Areas We Serve | ${siteName}`,
+    metaDescription:
+      "Explore audiology service areas for Audiology Associates of Westchester, including Westchester County, nearby Fairfield County communities, and southern Putnam County.",
+    h1: "Hearing Aids & Audiology Across Westchester County",
+    type: "service-areas-index",
+    lastModified: "2026-07-06",
+    canonical: `${baseUrl}${serviceAreasRootPath}`,
+    images: [],
+    sections: ["Westchester County", "Nearby Counties", "Plan Your Visit"],
+    body: [
+      "Audiology Associates of Westchester serves patients across Westchester County and nearby communities through offices in Harrison, Somers, White Plains, and Scarsdale.",
+      "Explore county and city pages to find the most relevant office, services, and nearby communities for hearing testing, hearing aids, tinnitus therapy, hearing protection, and hearing aid repair."
+    ],
+    faqs: [],
+    related: []
+  },
+  ...areaCounties.map((county): SitePage => ({
+    path: countyPath(county.slug),
+    url: `${baseUrl}${countyPath(county.slug)}`,
+    title: `${county.name}, ${county.state}`,
+    metaTitle: `Audiologist in ${county.name}, ${county.state} | ${siteName}`,
+    metaDescription: `${county.summary} Find nearby hearing tests, hearing aids, tinnitus therapy, hearing protection, and hearing aid repair.`,
+    h1: county.headline,
+    type: "area-county",
+    lastModified: "2026-07-06",
+    canonical: `${baseUrl}${countyPath(county.slug)}`,
+    images: [],
+    sections: ["Cities and Communities", "Services", "Plan Your Visit"],
+    body: [county.summary, county.officeContext],
+    faqs: [],
+    related: []
+  })),
+  ...areaCities.map((city): SitePage => ({
+    path: cityPath(city),
+    url: `${baseUrl}${cityPath(city)}`,
+    title: `${city.name}, ${city.state}`,
+    metaTitle: `Audiologist near ${city.name}, ${city.state} | ${siteName}`,
+    metaDescription: `${city.localContext} Schedule hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, or hearing aid repair near ${city.name}.`,
+    h1: `Audiologist Near ${city.name}, ${city.state}`,
+    type: "area-city",
+    lastModified: "2026-07-06",
+    canonical: `${baseUrl}${cityPath(city)}`,
+    images: [],
+    sections: ["Local Audiology Care", "Services", "Nearby Communities", "Frequently Asked Questions"],
+    body: [city.localContext, city.travelNote, ...city.patientNeeds],
+    faqs: [],
+    related: []
+  }))
+];
+
+export const pages: SitePage[] = [...generatedPages, ...productHubPages, ...serviceAreaPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);

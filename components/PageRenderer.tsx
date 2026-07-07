@@ -26,6 +26,18 @@ import {
   splitLongText,
   type SitePage
 } from "@/lib/site";
+import {
+  areaCities,
+  areaCounties,
+  citiesForCounty,
+  cityForPath,
+  cityPath,
+  countyForCity,
+  countyForPath,
+  countyPath,
+  officePathForCity,
+  serviceAreasRootPath
+} from "@/lib/serviceAreas";
 
 const patientForms = [
   {
@@ -763,6 +775,277 @@ function ProductBreadcrumbs({ page }: { page: SitePage }) {
         </ol>
       </div>
     </nav>
+  );
+}
+
+function AreaBreadcrumbs({ page }: { page: SitePage }) {
+  const city = cityForPath(page.path);
+  const county = city ? countyForCity(city) : countyForPath(page.path);
+  const crumbs: Array<{ label: string; href?: string }> = [
+    { label: "Home", href: "/" },
+    { label: "Areas We Serve", href: page.path === serviceAreasRootPath ? undefined : serviceAreasRootPath }
+  ];
+
+  if (county) {
+    crumbs.push({
+      label: `${county.name}, ${county.state}`,
+      href: city ? countyPath(county.slug) : undefined
+    });
+  }
+
+  if (city) crumbs.push({ label: `${city.name}, ${city.state}` });
+
+  return (
+    <nav aria-label="Breadcrumb" className="bg-white py-[18px] text-[24px] leading-tight max-md:text-[18px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <ol className="flex flex-wrap items-center gap-x-[12px] gap-y-2">
+          {crumbs.map((crumb, index) => (
+            <li className="flex items-center gap-x-[12px]" key={`${crumb.label}-${index}`}>
+              {crumb.href ? (
+                <Link className="focus-ring text-[#c94800] hover:underline" href={crumb.href}>
+                  {crumb.label}
+                </Link>
+              ) : (
+                <span className="text-[#777]">{crumb.label}</span>
+              )}
+              {index < crumbs.length - 1 ? <span className="font-bold text-[#8b8b8b]">›</span> : null}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </nav>
+  );
+}
+
+function officeForAreaPath(path: string) {
+  const city = cityForPath(path);
+  if (!city) return null;
+  const officePath = officePathForCity(city);
+  return locations.find((location) => location.path === officePath) || null;
+}
+
+function AreaAppointmentCta({ cityName }: { cityName?: string }) {
+  return (
+    <section className="bg-white py-[54px] text-center">
+      <div className="mx-auto max-w-[1120px] px-5">
+        <h2 className="text-[34px] font-black leading-tight text-[#333] max-md:text-[28px]">
+          Set Up Your Hearing Consultation with an Expert Today
+        </h2>
+        <p className="mx-auto mt-5 max-w-[820px] text-[22px] leading-[1.45] text-[#333] max-md:text-[18px]">
+          {cityName
+            ? `If you live in or near ${cityName}, call Audiology Associates of Westchester to confirm appointment availability and the best office for your needs.`
+            : "Call Audiology Associates of Westchester to confirm appointment availability and the best office for your needs."}
+        </p>
+        <div className="mt-7 flex flex-wrap justify-center gap-4">
+          <ZocdocButton className="legacy-live-button" label="Request an appointment" trackingId="area-page-appointment" />
+          <a className="legacy-live-button" data-track="phone-area" href={primaryPhoneHref}>
+            Call {primaryPhone}
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AreaServicesList() {
+  return (
+    <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {services.map((service) => (
+        <Link className="focus-ring block bg-[#dbe9f3] p-6 text-black hover:bg-[#d0e3ef]" href={service.path} key={service.path}>
+          <h3 className="text-[24px] font-black">{service.title}</h3>
+          <p className="mt-2 text-[19px] leading-[1.35]">{service.description}</p>
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+function ServiceAreasIndexPage({ page }: { page: SitePage }) {
+  const featured = areaCities.filter((city) => city.countySlug === "westchester-county-ny").slice(0, 12);
+
+  return (
+    <>
+      <AreaBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Areas We Serve</p>
+          <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[1440px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            {page.body.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <ZocdocButton className="legacy-live-button" label="Book an Appointment" trackingId="areas-index-appointment" />
+            <Link className="legacy-live-button" href="/hearing-testing">
+              Hearing Tests
+            </Link>
+            <Link className="legacy-live-button" href="/hearing-aid-fitting">
+              Hearing Aid Fitting
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Explore by County</h2>
+          <LiveRule />
+          <div className="mt-9 grid gap-7 lg:grid-cols-3">
+            {areaCounties.map((county) => (
+              <article className="bg-white p-7 text-black" key={county.slug}>
+                <h3 className="text-[29px] font-black">{county.name}, {county.state}</h3>
+                <p className="mt-3 text-[20px] leading-[1.35]">{county.summary}</p>
+                <Link className="mt-5 inline-block text-[18px] font-bold text-[#005a9c] underline" href={countyPath(county.slug)}>
+                  Visit county page →
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Featured Westchester Cities and Communities</h2>
+          <LiveRule />
+          <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {featured.map((city) => (
+              <Link className="focus-ring block border border-[#d3d3d3] bg-white p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#f7f7f7]" href={cityPath(city)} key={city.slug}>
+                {city.name}, {city.state}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <AreaAppointmentCta />
+    </>
+  );
+}
+
+function AreaCountyPage({ page }: { page: SitePage }) {
+  const county = countyForPath(page.path);
+  if (!county) return <LivePageBody page={page} />;
+  const cities = citiesForCounty(county.slug);
+
+  return (
+    <>
+      <AreaBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Audiology Service Area</p>
+          <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[1440px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            <p>{county.summary}</p>
+            <p>{county.officeContext}</p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Cities and Communities We Serve</h2>
+          <LiveRule />
+          <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {cities.map((city) => (
+              <Link className="focus-ring block bg-white p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#f7f7f7]" href={cityPath(city)} key={city.slug}>
+                {city.name}, {city.state}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Audiology Services in {county.name}</h2>
+          <LiveRule />
+          <AreaServicesList />
+        </div>
+      </section>
+      <AreaAppointmentCta />
+    </>
+  );
+}
+
+function AreaCityPage({ page }: { page: SitePage }) {
+  const city = cityForPath(page.path);
+  if (!city) return <LivePageBody page={page} />;
+  const county = countyForCity(city);
+  const office = officeForAreaPath(page.path);
+  const siblingCities = county ? citiesForCounty(county.slug).filter((item) => item.slug !== city.slug).slice(0, 8) : [];
+
+  return (
+    <>
+      <AreaBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Local Hearing Care</p>
+          <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <LiveRule />
+          <div className="mt-[38px] grid gap-[48px] lg:grid-cols-[minmax(0,1fr)_420px]">
+            <div className="space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+              <p>{city.localContext}</p>
+              <p>{city.travelNote}</p>
+              <p>
+                Audiology Associates of Westchester provides educational information online, but hearing care decisions are personal.
+                Please contact the practice for appointment availability and clinical recommendations.
+              </p>
+            </div>
+            {office ? (
+              <aside className="bg-[#dbe9f3] p-7 text-black">
+                <h2 className="text-[30px] font-black leading-tight">Nearest Office</h2>
+                <Link className="mt-4 block text-[22px] font-bold text-[#005a9c] underline" href={office.path}>
+                  {office.name}
+                </Link>
+                <p className="mt-3 text-[20px] leading-[1.35]">{office.address}</p>
+                <p className="mt-3 text-[20px] leading-[1.35]">
+                  Phone:{" "}
+                  <a className="font-bold text-[#005a9c] underline" href={office.phoneHref}>
+                    {office.phone}
+                  </a>
+                </p>
+                <p className="mt-3 text-[18px] leading-[1.35]">{office.hours.join(" ")}</p>
+              </aside>
+            ) : null}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Services for {city.name} Patients</h2>
+          <LiveRule />
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {city.patientNeeds.map((need) => (
+              <div className="flex gap-3 bg-white p-5 text-[21px] leading-[1.35] text-black" key={need}>
+                <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={24} aria-hidden="true" />
+                <span>{need}</span>
+              </div>
+            ))}
+          </div>
+          <AreaServicesList />
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Nearby Communities</h2>
+          <LiveRule />
+          <div className="mt-8 flex flex-wrap gap-4">
+            {[...city.nearby, ...siblingCities.map((item) => item.name)].slice(0, 10).map((name) => {
+              const linked = areaCities.find((item) => item.name === name);
+              return linked ? (
+                <Link className="focus-ring legacy-live-button" href={cityPath(linked)} key={name}>
+                  {name}
+                </Link>
+              ) : (
+                <span className="legacy-live-button" key={name}>
+                  {name}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+      <AreaAppointmentCta cityName={`${city.name}, ${city.state}`} />
+    </>
   );
 }
 
@@ -2070,6 +2353,33 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <HearingAidProductPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "service-areas-index") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <ServiceAreasIndexPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "area-county") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <AreaCountyPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "area-city") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <AreaCityPage page={page} />
       </>
     );
   }

@@ -7,6 +7,13 @@ import {
   productForPath,
   productsRootPath
 } from "@/lib/products";
+import {
+  cityForPath,
+  countyForCity,
+  countyForPath,
+  countyPath,
+  serviceAreasRootPath
+} from "@/lib/serviceAreas";
 
 export function organizationSchema() {
   return {
@@ -45,7 +52,7 @@ export function websiteSchema() {
 }
 
 export function breadcrumbSchema(page: SitePage) {
-  const crumbs = productBreadcrumbItems(page);
+  const crumbs = productBreadcrumbItems(page) || areaBreadcrumbItems(page);
   const itemListElement = (crumbs || [
     {
       name: "Home",
@@ -72,6 +79,32 @@ export function breadcrumbSchema(page: SitePage) {
     "@type": "BreadcrumbList",
     itemListElement
   };
+}
+
+function areaBreadcrumbItems(page: SitePage) {
+  if (page.type !== "service-areas-index" && page.type !== "area-county" && page.type !== "area-city") return null;
+  const city = cityForPath(page.path);
+  const county = city ? countyForCity(city) : countyForPath(page.path);
+  const items = [
+    { name: "Home", item: baseUrl },
+    { name: "Areas We Serve", item: `${baseUrl}${serviceAreasRootPath}` }
+  ];
+
+  if (county) {
+    items.push({
+      name: `${county.name}, ${county.state}`,
+      item: `${baseUrl}${countyPath(county.slug)}`
+    });
+  }
+
+  if (city) {
+    items.push({
+      name: `${city.name}, ${city.state}`,
+      item: page.canonical
+    });
+  }
+
+  return items;
 }
 
 function productBreadcrumbItems(page: SitePage) {

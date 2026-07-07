@@ -55,6 +55,7 @@ const navGroups = [
     label: "CONTACT US",
     href: "/contact-us",
     links: [
+      ["AREAS WE SERVE", "/areas-we-serve"],
       ["PATIENT FORMS", "/patient-forms"],
       ["SOMERS, NY OFFICE", "/Somers-NY"],
       ["GREENWICH, CT", "/greenwich-ct"],
