@@ -6,6 +6,7 @@ import { Fragment, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
+import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import { productMenuCards } from "@/lib/products";
 import { logoUrl, primaryPhone, primaryPhoneHref } from "@/lib/site";
 
@@ -18,6 +19,11 @@ const navGroups = [
       ["CAREERS", "/careers"],
       ["Blog", "/blog"]
     ]
+  },
+  {
+    label: "HOW WE CAN HELP",
+    href: howWeCanHelpRootPath,
+    links: helpServices.map((service) => [service.menuTitle.toUpperCase(), helpServicePath(service)])
   },
   {
     label: "HEARING LOSS",
@@ -146,7 +152,7 @@ export function Header() {
       </div>
 
       <nav aria-label="Primary navigation" className="bg-[#005a9c] text-white">
-        <div className="mx-auto max-w-[1500px] px-4">
+        <div className="mx-auto max-w-[1760px] px-2">
           <ul className="flex flex-nowrap items-stretch justify-center">
             <li>
               <Link
@@ -162,7 +168,7 @@ export function Header() {
               {group.label === "CONTACT US" ? (
                 <li>
                   <Link
-                    className="focus-ring flex h-full items-center whitespace-nowrap px-[28px] py-[19px] text-[20px] uppercase tracking-[0.06em]"
+                    className="focus-ring flex h-full items-center whitespace-nowrap px-[22px] py-[19px] text-[19px] uppercase tracking-[0.06em]"
                     href="/areas-we-serve"
                     onClick={closeMenus}
                   >
@@ -174,7 +180,7 @@ export function Header() {
                 <div className="legacy-nav-trigger flex items-center">
                   {group.href ? (
                     <Link
-                      className="focus-ring flex items-center gap-3 whitespace-nowrap px-[28px] py-[19px] text-[20px] uppercase tracking-[0.06em]"
+                      className="focus-ring flex items-center gap-3 whitespace-nowrap px-[22px] py-[19px] text-[19px] uppercase tracking-[0.06em]"
                       href={group.href}
                       onClick={closeMenus}
                     >
@@ -183,7 +189,7 @@ export function Header() {
                     </Link>
                   ) : (
                     <button
-                      className="focus-ring flex cursor-default items-center gap-3 whitespace-nowrap px-[28px] py-[19px] text-[20px] uppercase tracking-[0.06em]"
+                      className="focus-ring flex cursor-default items-center gap-3 whitespace-nowrap px-[22px] py-[19px] text-[19px] uppercase tracking-[0.06em]"
                       type="button"
                     >
                       {group.label}

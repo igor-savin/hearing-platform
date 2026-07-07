@@ -1,4 +1,4 @@
-import { baseUrl, locationForPath, locations, primaryPhone, services, siteName, type SitePage } from "@/lib/site";
+import { allServiceLinks, baseUrl, locationForPath, locations, primaryPhone, siteName, type SitePage } from "@/lib/site";
 import {
   brandForPath,
   brandForProduct,
@@ -7,6 +7,7 @@ import {
   productForPath,
   productsRootPath
 } from "@/lib/products";
+import { helpServiceForPath, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import {
   cityForPath,
   countyForCity,
@@ -53,7 +54,7 @@ export function websiteSchema() {
 }
 
 export function breadcrumbSchema(page: SitePage) {
-  const crumbs = productBreadcrumbItems(page) || areaBreadcrumbItems(page);
+  const crumbs = productBreadcrumbItems(page) || areaBreadcrumbItems(page) || howWeCanHelpBreadcrumbItems(page);
   const itemListElement = (crumbs || [
     {
       name: "Home",
@@ -80,6 +81,19 @@ export function breadcrumbSchema(page: SitePage) {
     "@type": "BreadcrumbList",
     itemListElement
   };
+}
+
+function howWeCanHelpBreadcrumbItems(page: SitePage) {
+  if (page.path !== howWeCanHelpRootPath && !page.path.startsWith(`${howWeCanHelpRootPath}/`)) return null;
+  const items = [
+    { name: "Home", item: baseUrl },
+    { name: "How We Can Help", item: `${baseUrl}${howWeCanHelpRootPath}` }
+  ];
+  const helpService = helpServiceForPath(page.path);
+  if (helpService) {
+    items.push({ name: helpService.title, item: page.canonical });
+  }
+  return items;
 }
 
 function areaBreadcrumbItems(page: SitePage) {
@@ -197,7 +211,7 @@ export function faqSchema(page: SitePage) {
 
 export function serviceSchema(page: SitePage) {
   if (page.type !== "service") return null;
-  const service = services.find((item) => item.path === page.path);
+  const service = allServiceLinks.find((item) => item.path === page.path);
   return {
     "@context": "https://schema.org",
     "@type": "Service",

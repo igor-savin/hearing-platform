@@ -4,6 +4,14 @@ import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck } from "lucide-react
 import { ContactForm } from "@/components/ContactForm";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import {
+  coreServiceDeepDives,
+  helpServiceForPath,
+  helpServicePath,
+  helpServices,
+  howWeCanHelpRootPath,
+  type HelpService
+} from "@/lib/howWeCanHelp";
+import {
   brandForPath,
   brandForProduct,
   brandPath,
@@ -824,6 +832,37 @@ function AreaBreadcrumbs({ page }: { page: SitePage }) {
   );
 }
 
+function HowWeCanHelpBreadcrumbs({ page }: { page: SitePage }) {
+  const helpService = helpServiceForPath(page.path);
+  const crumbs: ProductCrumb[] = [
+    { label: "Home", href: "/" },
+    { label: "How We Can Help", href: page.path === howWeCanHelpRootPath ? undefined : howWeCanHelpRootPath }
+  ];
+
+  if (helpService) crumbs.push({ label: helpService.title });
+
+  return (
+    <nav aria-label="Breadcrumb" className="bg-white py-[18px] text-[24px] leading-tight max-md:text-[18px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <ol className="flex flex-wrap items-center gap-x-[12px] gap-y-2">
+          {crumbs.map((crumb, index) => (
+            <li className="flex items-center gap-x-[12px]" key={`${crumb.label}-${index}`}>
+              {crumb.href ? (
+                <Link className="focus-ring text-[#c94800] hover:underline" href={crumb.href}>
+                  {crumb.label}
+                </Link>
+              ) : (
+                <span className="text-[#777]">{crumb.label}</span>
+              )}
+              {index < crumbs.length - 1 ? <span className="font-bold text-[#8b8b8b]">›</span> : null}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </nav>
+  );
+}
+
 function officeForAreaPath(path: string) {
   const city = cityForPath(path);
   if (!city) return null;
@@ -1169,6 +1208,141 @@ function ProductCta() {
         </div>
       </div>
     </section>
+  );
+}
+
+function HelpServiceCard({ service }: { service: HelpService }) {
+  return (
+    <Link
+      className="focus-ring block border border-[#d5d5d5] bg-white p-7 text-black transition hover:bg-[#f7f7f7]"
+      href={helpServicePath(service)}
+    >
+      <h2 className="text-[28px] font-black leading-tight">{service.title}</h2>
+      <p className="mt-4 text-[20px] leading-[1.35]">{service.shortDescription}</p>
+      <span className="mt-6 inline-block text-[18px] font-bold text-[#005a9c] underline">Learn More</span>
+    </Link>
+  );
+}
+
+function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <HowWeCanHelpBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[1320px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            {page.body.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+          <div className="mt-[48px] grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+            {helpServices.map((service) => (
+              <HelpServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Choose the Right Next Step</h2>
+          <LiveRule />
+          <div className="mt-9 grid gap-7 lg:grid-cols-3">
+            {[
+              "Start with a hearing assessment if you are unsure what changed.",
+              "Schedule hearing aid service if your devices are weak, distorted, uncomfortable, or not connecting.",
+              "Ask about tinnitus, earwax, cochlear implant, cognitive screening, or executive communication support when those needs match your symptoms."
+            ].map((item) => (
+              <article className="bg-white p-7 text-[21px] leading-[1.35] text-black" key={item}>
+                <CheckCircle2 className="mb-4 text-[#005a9c]" size={28} aria-hidden="true" />
+                <p>{item}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <AreaFaqSection page={page} title="How We Can Help FAQs" />
+      <ProductCta />
+    </>
+  );
+}
+
+function HelpListSection({ title, items }: { title: string; items: string[] }) {
+  return (
+    <article className="bg-white p-7 text-black">
+      <h2 className="text-[30px] font-black leading-tight max-md:text-[25px]">{title}</h2>
+      <ul className="mt-5 space-y-4 text-[21px] leading-[1.35] max-md:text-[18px]">
+        {items.map((item) => (
+          <li className="flex gap-3" key={item}>
+            <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={22} aria-hidden="true" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </article>
+  );
+}
+
+function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
+  const service = helpServiceForPath(page.path);
+  if (!service) return <LivePageBody page={page} />;
+
+  return (
+    <>
+      <HowWeCanHelpBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h1 className="max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{service.title}</h1>
+          <p className="mt-5 max-w-[1220px] text-[28px] font-black leading-tight text-[#333] max-md:text-[22px]">
+            {service.shortDescription}
+          </p>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[1320px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            {service.intro.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <div className="grid gap-7 lg:grid-cols-2">
+            <HelpListSection items={service.whoWeHelp} title="Who This Helps" />
+            <HelpListSection items={service.signs} title="When to Schedule" />
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">What to Expect During the Appointment</h2>
+          <LiveRule />
+          <ol className="mt-9 grid gap-7 text-black md:grid-cols-2">
+            {service.appointmentSteps.map((step, index) => (
+              <li className="bg-[#f7f7f5] p-7" key={step}>
+                <p className="text-[18px] font-black text-[#005a9c]">Step {index + 1}</p>
+                <p className="mt-3 text-[22px] leading-[1.35] max-md:text-[18px]">{step}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-[48px] bg-[#dbe9f3] p-8 text-black">
+            <h2 className="text-[34px] font-black leading-tight max-md:text-[28px]">Why Professional Audiology Care Matters</h2>
+            <p className="mt-5 text-[22px] leading-[1.35] max-md:text-[18px]">{service.whyItMatters}</p>
+          </div>
+          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Related Care</h2>
+          <LiveRule />
+          <div className="mt-8 flex flex-wrap gap-4">
+            {service.relatedServices.map((link) => (
+              <Link className="focus-ring legacy-live-button" href={link.href} key={link.href}>
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <AreaFaqSection page={page} title={`${service.title} FAQs`} />
+      <ProductCta />
+    </>
   );
 }
 
@@ -1628,6 +1802,59 @@ function BlogPostRelated({ page }: { page: SitePage }) {
   );
 }
 
+function CoreServiceDetail({ page }: { page: SitePage }) {
+  const detail = coreServiceDeepDives[page.path];
+  if (!detail) return null;
+
+  return (
+    <>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{detail.title}</h2>
+          <LiveRule />
+          <p className="mt-[38px] max-w-[1320px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">{detail.intro}</p>
+          <ol className="mt-9 grid gap-7 text-black md:grid-cols-2">
+            {detail.appointmentSteps.map((step, index) => (
+              <li className="bg-white p-7" key={step}>
+                <p className="text-[18px] font-black text-[#005a9c]">Step {index + 1}</p>
+                <p className="mt-3 text-[22px] leading-[1.35] max-md:text-[18px]">{step}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.7fr]">
+            <div>
+              <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Before Your Visit</h2>
+              <LiveRule />
+              <ul className="mt-9 space-y-4 text-[22px] leading-[1.35] text-black max-md:text-[18px]">
+                {detail.practicalNotes.map((note) => (
+                  <li className="flex gap-3" key={note}>
+                    <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={24} aria-hidden="true" />
+                    <span>{note}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-[#f7f7f5] p-7 text-black">
+              <h2 className="text-[30px] font-black leading-tight">Related Care</h2>
+              <div className="mt-6 flex flex-col gap-4">
+                {detail.related.map((link) => (
+                  <Link className="focus-ring text-[20px] font-bold text-[#005a9c] underline" href={link.href} key={link.href}>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function LivePageBody({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
   const image = page.heroImage;
@@ -1662,6 +1889,7 @@ function LivePageBody({ page }: { page: SitePage }) {
         </div>
       </section>
 
+      {page.type === "service" ? <CoreServiceDetail page={page} /> : null}
       {isBlog ? <BlogPostRelated page={page} /> : null}
     </>
   );
@@ -2581,6 +2809,24 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <LiveBrandsPage page={page} />
+      </>
+    );
+  }
+
+  if (page.type === "how-we-can-help-index") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <HowWeCanHelpIndexPage page={page} />
+      </>
+    );
+  }
+
+  if (helpServiceForPath(page.path)) {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <HowWeCanHelpServicePage page={page} />
       </>
     );
   }

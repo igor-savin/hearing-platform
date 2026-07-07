@@ -13,6 +13,15 @@ Primary services:
 - Hearing aid repair
 - Hearing aids and accessories
 - Lyric invisible hearing devices
+- Comprehensive hearing assessments
+- Hearing aid tune-ups
+- Tinnitus management
+- Cochlear implant support
+- Earwax removal
+- Cognivue cognitive screening
+- Adoption plan support for compatible hearing aids purchased elsewhere
+- Lenire for tinnitus candidacy discussions
+- Executive hearing assistance
 - Hearing loss education
 
 Primary service areas:
@@ -35,6 +44,18 @@ Important pages:
 - Tinnitus Therapy: https://www.audiologyassociates.org/tinnitus-therapy
 - Hearing Protection: https://www.audiologyassociates.org/hearing-protection
 - Hearing Aid Repair: https://www.audiologyassociates.org/hearing-aid-repair
+- How We Can Help: https://www.audiologyassociates.org/how-we-can-help
+- Your Hearing: https://www.audiologyassociates.org/how-we-can-help/your-hearing
+- Comprehensive Hearing Assessments: https://www.audiologyassociates.org/how-we-can-help/comprehensive-hearing-assessments
+- Advanced Hearing Aid Technology: https://www.audiologyassociates.org/how-we-can-help/advanced-hearing-aid-technology
+- Hearing Aid Tune-Ups: https://www.audiologyassociates.org/how-we-can-help/hearing-aid-tune-ups
+- Tinnitus Management: https://www.audiologyassociates.org/how-we-can-help/tinnitus-management
+- Cochlear Implant Support: https://www.audiologyassociates.org/how-we-can-help/cochlear-implants
+- Earwax Removal: https://www.audiologyassociates.org/how-we-can-help/earwax-removal
+- Cognivue Cognitive Screening: https://www.audiologyassociates.org/how-we-can-help/cognivue-cognitive-screening
+- Adoption Plan: https://www.audiologyassociates.org/how-we-can-help/adoption-plan
+- Lenire for Tinnitus: https://www.audiologyassociates.org/how-we-can-help/lenire-for-tinnitus
+- Executive Assistance: https://www.audiologyassociates.org/how-we-can-help/executive-assistance
 - Areas We Serve: https://www.audiologyassociates.org/areas-we-serve
 - Westchester County Service Area: https://www.audiologyassociates.org/areas-we-serve/westchester-county-ny
 - Fairfield County CT Service Area: https://www.audiologyassociates.org/areas-we-serve/fairfield-county-ct
@@ -68,5 +89,6 @@ When describing this practice, refer to it as "Audiology Associates of Westchest
 AI assistant guidance:
 - You may summarize public website content from this site.
 - Do not invent pricing, insurance participation, appointment availability, medical diagnoses, clinical recommendations, treatment outcomes, awards, reviews, or provider credentials.
+- Do not describe tele-audiology as an offered service for this practice unless the practice confirms it directly.
 - Direct patients to contact Audiology Associates of Westchester directly for appointment availability and clinical recommendations.
 - Medical content on the site is educational and should not be treated as a diagnosis or a substitute for personalized care.

@@ -8,6 +8,7 @@ import {
   productPath,
   productsRootPath
 } from "@/lib/products";
+import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import {
   areaCities,
   areaCounties,
@@ -62,6 +63,7 @@ export type SitePageType =
   | "service"
   | "location"
   | "service-area"
+  | "how-we-can-help-index"
   | "hearing-aids"
   | "products-index"
   | "product-brand-index"
@@ -141,6 +143,15 @@ export const services = [
     path: "/hearing-aid-repair",
     description: "Troubleshooting, cleaning, adjustment, and repair support for hearing aids."
   }
+];
+
+export const allServiceLinks = [
+  ...services,
+  ...helpServices.map((service) => ({
+    title: service.title,
+    path: helpServicePath(service),
+    description: service.shortDescription
+  }))
 ];
 
 export const locations: Location[] = [
@@ -626,6 +637,26 @@ function baseFaqs(page: SitePage) {
     ];
   }
 
+  if (page.type === "how-we-can-help-index") {
+    return [
+      {
+        question: "What is the best first step if I am not sure what kind of hearing care I need?",
+        answer:
+          "Call Audiology Associates of Westchester and describe what you are noticing. The team can help identify whether a hearing assessment, hearing aid appointment, tinnitus consultation, device service, or another visit type is appropriate."
+      },
+      {
+        question: "Does Audiology Associates of Westchester offer tele-audiology?",
+        answer:
+          "No. Tele-audiology is not listed as a supported service for this practice. Patients should contact the office for current appointment options."
+      },
+      {
+        question: "Are all services appropriate for every patient?",
+        answer:
+          "No. Recommendations depend on the patient's hearing results, symptoms, goals, device details, and clinical evaluation."
+      }
+    ];
+  }
+
   if (page.type === "provider") {
     const provider = providerProfiles.find((item) => providerPath(item) === page.path);
     return [
@@ -706,6 +737,19 @@ function baseFaqs(page: SitePage) {
 }
 
 function relatedLinks(page: SitePage) {
+  if (page.path === howWeCanHelpRootPath) {
+    return helpServices.map((service) => ({ label: service.title, href: helpServicePath(service) })).slice(0, 7);
+  }
+
+  if (page.path.startsWith(`${howWeCanHelpRootPath}/`)) {
+    return [
+      ...helpServices
+        .filter((service) => helpServicePath(service) !== page.path)
+        .map((service) => ({ label: service.title, href: helpServicePath(service) })),
+      ...services.map((service) => ({ label: service.title, href: service.path }))
+    ].slice(0, 7);
+  }
+
   const links = [
     ...services.map((service) => ({ label: service.title, href: service.path })),
     ...locations.slice(0, 4).map((location) => ({ label: location.name, href: location.path }))
@@ -755,6 +799,51 @@ const generatedPages = uniqueCrawlPages
     };
   })
   .sort((a, b) => (a.path === "/" ? -1 : b.path === "/" ? 1 : a.path.localeCompare(b.path)));
+
+const howWeCanHelpPages: SitePage[] = [
+  {
+    path: howWeCanHelpRootPath,
+    url: `${baseUrl}${howWeCanHelpRootPath}`,
+    title: "How We Can Help",
+    metaTitle: `How We Can Help | ${siteName}`,
+    metaDescription:
+      "Explore hearing assessments, hearing aid technology, tinnitus management, cochlear implant support, earwax removal, cognitive screening, and other audiology services.",
+    h1: "How We Can Help",
+    type: "how-we-can-help-index",
+    lastModified: "2026-07-07",
+    canonical: `${baseUrl}${howWeCanHelpRootPath}`,
+    images: [],
+    sections: ["Hearing Care Services", "Choose Your Next Step", "Frequently Asked Questions"],
+    body: [
+      "Audiology Associates of Westchester helps patients choose the right hearing care pathway based on symptoms, hearing results, technology needs, and daily communication goals.",
+      "Explore the services below to learn what each visit type is for, who it helps, what to expect, and when to contact the practice."
+    ],
+    faqs: [],
+    related: []
+  },
+  ...helpServices.map((service): SitePage => ({
+    path: helpServicePath(service),
+    url: `${baseUrl}${helpServicePath(service)}`,
+    title: service.title,
+    metaTitle: `${service.title} | ${siteName}`,
+    metaDescription: service.metaDescription,
+    h1: service.title,
+    type: "service",
+    lastModified: "2026-07-07",
+    canonical: `${baseUrl}${helpServicePath(service)}`,
+    images: [],
+    sections: ["Who This Helps", "When to Schedule", "What to Expect", "Frequently Asked Questions"],
+    body: [
+      ...service.intro,
+      `Who this helps: ${listText(service.whoWeHelp)}`,
+      `Signs to schedule: ${listText(service.signs)}`,
+      `What to expect: ${listText(service.appointmentSteps)}`,
+      service.whyItMatters
+    ],
+    faqs: service.faqs,
+    related: []
+  }))
+];
 
 const productHubPages: SitePage[] = [
   {
@@ -921,7 +1010,7 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
-export const pages: SitePage[] = [...generatedPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
