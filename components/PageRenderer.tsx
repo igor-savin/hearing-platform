@@ -853,6 +853,27 @@ function AreaAppointmentCta({ cityName }: { cityName?: string }) {
   );
 }
 
+function AreaFaqSection({ page, title }: { page: SitePage; title: string }) {
+  if (!page.faqs.length) return null;
+
+  return (
+    <section className="bg-[#dbe9f3] py-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{title}</h2>
+        <LiveRule />
+        <div className="mt-9 grid gap-7 lg:grid-cols-2">
+          {page.faqs.map((faq) => (
+            <article className="bg-white p-7 text-black" key={faq.question}>
+              <h3 className="text-[26px] font-black leading-tight">{faq.question}</h3>
+              <p className="mt-4 text-[20px] leading-[1.38]">{faq.answer}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function AreaServicesList() {
   return (
     <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -989,6 +1010,7 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <AreaFaqSection page={page} title="Frequently Asked Questions About Our Service Areas" />
       <AreaAppointmentCta />
     </>
   );
@@ -1035,6 +1057,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
           <AreaServicesList />
         </div>
       </section>
+      <AreaFaqSection page={page} title={`Frequently Asked Questions About Hearing Care in ${county.name}`} />
       <AreaAppointmentCta />
     </>
   );
@@ -1120,6 +1143,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <AreaFaqSection page={page} title={`Frequently Asked Questions About Hearing Care Near ${city.name}`} />
       <AreaAppointmentCta cityName={`${city.name}, ${city.state}`} />
     </>
   );

@@ -11,8 +11,15 @@ import {
 import {
   areaCities,
   areaCounties,
+  cityForPath,
   cityPath,
+  countyForCity,
+  countyForPath,
   countyPath,
+  citiesForCounty,
+  localFlavorForCity,
+  localFlavorForCounty,
+  officePathForCity,
   serviceAreasRootPath
 } from "@/lib/serviceAreas";
 
@@ -466,6 +473,120 @@ function imageForPage(page: CrawlPage) {
   );
 }
 
+function listText(items: string[]) {
+  if (items.length <= 1) return items[0] || "";
+  if (items.length === 2) return `${items[0]} and ${items[1]}`;
+  return `${items.slice(0, -1).join(", ")}, and ${items[items.length - 1]}`;
+}
+
+function officeForAreaCityPath(path: string) {
+  const city = cityForPath(path);
+  if (!city) return null;
+  return locations.find((location) => location.path === officePathForCity(city)) || null;
+}
+
+function serviceAreaIndexFaqs() {
+  return [
+    {
+      question: "Which Westchester County communities does Audiology Associates of Westchester serve?",
+      answer:
+        "The practice serves patients across Westchester County, including Harrison, Somers, White Plains, Scarsdale, Rye, Mamaroneck, Larchmont, Port Chester, Rye Brook, Purchase, New Rochelle, Hartsdale, Mt. Kisco, Yorktown Heights, Katonah, Bedford, Chappaqua, Armonk, and Pleasantville."
+    },
+    {
+      question: "Does the practice see patients from Greenwich, CT and southern Putnam County?",
+      answer:
+        "Yes. Greenwich-area patients can often use nearby Westchester County offices, and Mahopac or southern Putnam County patients can consider the Somers office. Patients should call to confirm appointment availability and the best office for their needs."
+    },
+    {
+      question: "What hearing care services are available across the service area?",
+      answer:
+        "Core services include hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, hearing aid repair, hearing aid accessories, and hearing loss education for patients throughout Westchester County and nearby communities."
+    },
+    {
+      question: "How should I choose the right office for hearing care near me?",
+      answer:
+        "The best office depends on your town, appointment availability, and the type of care you need. The service-area pages identify nearby communities and office context, and the practice can confirm the most convenient location when you call."
+    }
+  ];
+}
+
+function countyAreaFaqs(page: SitePage) {
+  const county = countyForPath(page.path);
+  if (!county) return serviceAreaIndexFaqs();
+  const flavor = localFlavorForCounty(county);
+  const cities = citiesForCounty(county.slug);
+  const cityNames = listText(cities.slice(0, 8).map((city) => `${city.name}, ${city.state}`));
+  const regionNames = flavor ? listText(flavor.regions.map((region) => region.title.toLowerCase())) : county.name;
+  const priority = flavor?.hearingPriorities[0] || "hearing testing and hearing aid care";
+
+  return [
+    {
+      question: `Where can ${county.name}, ${county.state} patients schedule audiology care?`,
+      answer: `${county.officeContext} Patients can call Audiology Associates of Westchester to confirm appointment availability and the most convenient office for hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, or hearing aid repair.`
+    },
+    {
+      question: `Which ${county.name} cities and communities are served?`,
+      answer: `${county.name} service-area pages include ${cityNames}. Nearby communities may also be served depending on appointment needs and office availability.`
+    },
+    {
+      question: `How do local listening environments in ${county.name} affect hearing aid recommendations?`,
+      answer: flavor
+        ? `${flavor.intro} During a hearing aid consultation, the audiology team can discuss how ${regionNames} affect speech clarity, sound comfort, device care, and follow-up programming.`
+        : `Local listening environments vary across ${county.name}. A hearing aid consultation should consider restaurants, commuting, family conversations, outdoor activity, and quiet home settings.`
+    },
+    {
+      question: `Does Audiology Associates of Westchester offer hearing aid repair and tinnitus support for ${county.name} patients?`,
+      answer: `Yes. ${priority} is part of the broader care available to ${county.name} patients. The practice can confirm whether your needs are best handled through an appointment, a hearing aid service visit, or a tinnitus-focused consultation.`
+    }
+  ];
+}
+
+function cityAreaFaqs(page: SitePage) {
+  const city = cityForPath(page.path);
+  if (!city) return serviceAreaIndexFaqs();
+  const office = officeForAreaCityPath(page.path);
+  const county = countyForCity(city);
+  const flavor = localFlavorForCity(city);
+  const localEnvironment = flavor?.listeningEnvironments[0];
+  const secondEnvironment = flavor?.listeningEnvironments[1];
+  const servicesText = listText(city.patientNeeds);
+  const nearbyText = listText(city.nearby.map((name) => `${name}`));
+  const officeText = office
+    ? `${office.name} at ${office.address}`
+    : "one of the Westchester County offices";
+
+  return [
+    {
+      question: `Where can I get a hearing test near ${city.name}, ${city.state}?`,
+      answer: `${city.name} patients can contact Audiology Associates of Westchester about hearing testing through ${officeText}. ${city.travelNote} The office can confirm appointment availability and whether diagnostic testing, hearing aid support, or tinnitus care is the right next step.`
+    },
+    {
+      question: `Which audiology services are most relevant for ${city.name} patients?`,
+      answer: `Common needs for ${city.name} patients include ${servicesText}. Core services include hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, hearing aid repair, and hearing aid education.`
+    },
+    {
+      question: localEnvironment
+        ? `Can hearing aids help with ${localEnvironment.title.toLowerCase()} around ${city.name}?`
+        : `Can hearing aids help in everyday listening situations around ${city.name}?`,
+      answer: localEnvironment
+        ? `${localEnvironment.body} A professional hearing aid fitting can account for these ${city.name} listening environments through technology selection, verification, and follow-up programming.`
+        : `Many patients notice difficulty in restaurants, cars, appointments, family gatherings, or outdoor settings. A hearing evaluation can identify whether hearing aids or other support may help.`
+    },
+    {
+      question: secondEnvironment
+        ? `Do ${city.name} patients need hearing protection or tinnitus support for ${secondEnvironment.title.toLowerCase()}?`
+        : `Do ${city.name} patients have access to hearing protection and tinnitus support?`,
+      answer: secondEnvironment
+        ? `${secondEnvironment.body} Patients from ${city.name} can ask about tinnitus therapy, custom hearing protection, and hearing aid settings that match local routines.`
+        : `Yes. Patients from ${city.name} can ask about tinnitus therapy, custom hearing protection, and hearing aid settings that match local routines.`
+    },
+    {
+      question: `Does the practice serve communities near ${city.name}, ${city.state}?`,
+      answer: `Yes. Nearby communities connected to this service area include ${nearbyText}. ${county ? `${city.name} is part of the ${county.name}, ${county.state} service area.` : ""} Patients should call to confirm the best office and appointment timing.`
+    }
+  ];
+}
+
 function baseFaqs(page: SitePage) {
   if (page.type === "product") {
     return [
@@ -483,23 +604,9 @@ function baseFaqs(page: SitePage) {
   }
 
   if (page.type === "service-areas-index" || page.type === "area-county" || page.type === "area-city") {
-    return [
-      {
-        question: "Does Audiology Associates of Westchester serve this area?",
-        answer:
-          "Yes. The practice serves Westchester County and nearby communities through its Westchester County offices. Patients should call to confirm appointment availability and the best office for their needs."
-      },
-      {
-        question: "Which audiology services are available?",
-        answer:
-          "Core services include hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, hearing aid repair, hearing aid accessories, and hearing aid education."
-      },
-      {
-        question: "How do I schedule a visit?",
-        answer:
-          "Call the practice or use the appointment link on the website. Clinical recommendations and appointment availability should be confirmed directly with the office."
-      }
-    ];
+    if (page.type === "area-city") return cityAreaFaqs(page);
+    if (page.type === "area-county") return countyAreaFaqs(page);
+    return serviceAreaIndexFaqs();
   }
 
   if (page.type === "product-brand" || page.type === "product-brand-index" || page.type === "products-index") {
