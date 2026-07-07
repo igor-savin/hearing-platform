@@ -711,23 +711,38 @@ function HomePage() {
 }
 
 function Breadcrumbs({ page }: { page: SitePage }) {
-  return (
-    <nav aria-label="Breadcrumb" className="bg-[#f7f7f5] py-[13px] text-[16px] text-[#4f4f4f]">
-      <div className="mx-auto max-w-[1180px] px-5">
-      <Link className="focus-ring underline" href="/">
-        Home
-      </Link>
-      {page.path !== "/" ? <span aria-hidden="true"> / </span> : null}
-      {page.path !== "/" ? <span>{page.h1}</span> : null}
-      </div>
-    </nav>
-  );
+  const crumbs: ProductCrumb[] = [{ label: "Home", href: "/" }];
+  if (page.path !== "/") crumbs.push({ label: page.h1 });
+  return <StandardBreadcrumbs crumbs={crumbs} />;
 }
 
 type ProductCrumb = {
   label: string;
   href?: string;
 };
+
+function StandardBreadcrumbs({ crumbs }: { crumbs: ProductCrumb[] }) {
+  return (
+    <nav aria-label="Breadcrumb" className="bg-[#f7f7f5] py-[14px] text-[18px] leading-tight text-[#4f4f4f] max-md:text-[16px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <ol className="flex flex-wrap items-center gap-x-[10px] gap-y-2">
+          {crumbs.map((crumb, index) => (
+            <li className="flex items-center gap-x-[10px]" key={`${crumb.label}-${index}`}>
+              {crumb.href ? (
+                <Link className="focus-ring text-[#4f4f4f] underline hover:text-[#005a9c]" href={crumb.href}>
+                  {crumb.label}
+                </Link>
+              ) : (
+                <span className="text-[#4f4f4f]">{crumb.label}</span>
+              )}
+              {index < crumbs.length - 1 ? <span className="font-bold text-[#8b8b8b]">/</span> : null}
+            </li>
+          ))}
+        </ol>
+      </div>
+    </nav>
+  );
+}
 
 function productCrumbsForPath(path: string): ProductCrumb[] {
   const product = productForPath(path);
@@ -770,27 +785,7 @@ function productCrumbsForPath(path: string): ProductCrumb[] {
 
 function ProductBreadcrumbs({ page }: { page: SitePage }) {
   const crumbs = productCrumbsForPath(page.path);
-
-  return (
-    <nav aria-label="Breadcrumb" className="bg-white py-[22px] text-[30px] leading-tight max-md:text-[20px]">
-      <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
-        <ol className="flex flex-wrap items-center gap-x-[14px] gap-y-2">
-          {crumbs.map((crumb, index) => (
-            <li className="flex items-center gap-x-[14px]" key={`${crumb.label}-${index}`}>
-              {crumb.href ? (
-                <Link className="focus-ring text-[#c94800] hover:underline" href={crumb.href}>
-                  {crumb.label}
-                </Link>
-              ) : (
-                <span className="text-[#777]">{crumb.label}</span>
-              )}
-              {index < crumbs.length - 1 ? <span className="font-bold text-[#8b8b8b]">›</span> : null}
-            </li>
-          ))}
-        </ol>
-      </div>
-    </nav>
-  );
+  return <StandardBreadcrumbs crumbs={crumbs} />;
 }
 
 function AreaBreadcrumbs({ page }: { page: SitePage }) {
@@ -810,26 +805,7 @@ function AreaBreadcrumbs({ page }: { page: SitePage }) {
 
   if (city) crumbs.push({ label: `${city.name}, ${city.state}` });
 
-  return (
-    <nav aria-label="Breadcrumb" className="bg-white py-[18px] text-[24px] leading-tight max-md:text-[18px]">
-      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <ol className="flex flex-wrap items-center gap-x-[12px] gap-y-2">
-          {crumbs.map((crumb, index) => (
-            <li className="flex items-center gap-x-[12px]" key={`${crumb.label}-${index}`}>
-              {crumb.href ? (
-                <Link className="focus-ring text-[#c94800] hover:underline" href={crumb.href}>
-                  {crumb.label}
-                </Link>
-              ) : (
-                <span className="text-[#777]">{crumb.label}</span>
-              )}
-              {index < crumbs.length - 1 ? <span className="font-bold text-[#8b8b8b]">›</span> : null}
-            </li>
-          ))}
-        </ol>
-      </div>
-    </nav>
-  );
+  return <StandardBreadcrumbs crumbs={crumbs} />;
 }
 
 function HowWeCanHelpBreadcrumbs({ page }: { page: SitePage }) {
@@ -841,26 +817,7 @@ function HowWeCanHelpBreadcrumbs({ page }: { page: SitePage }) {
 
   if (helpService) crumbs.push({ label: helpService.title });
 
-  return (
-    <nav aria-label="Breadcrumb" className="bg-white py-[18px] text-[24px] leading-tight max-md:text-[18px]">
-      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <ol className="flex flex-wrap items-center gap-x-[12px] gap-y-2">
-          {crumbs.map((crumb, index) => (
-            <li className="flex items-center gap-x-[12px]" key={`${crumb.label}-${index}`}>
-              {crumb.href ? (
-                <Link className="focus-ring text-[#c94800] hover:underline" href={crumb.href}>
-                  {crumb.label}
-                </Link>
-              ) : (
-                <span className="text-[#777]">{crumb.label}</span>
-              )}
-              {index < crumbs.length - 1 ? <span className="font-bold text-[#8b8b8b]">›</span> : null}
-            </li>
-          ))}
-        </ol>
-      </div>
-    </nav>
-  );
+  return <StandardBreadcrumbs crumbs={crumbs} />;
 }
 
 function officeForAreaPath(path: string) {
@@ -1110,6 +1067,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
   const office = officeForAreaPath(page.path);
   const localFlavor = localFlavorForCity(city);
   const siblingCities = county ? citiesForCounty(county.slug).filter((item) => item.slug !== city.slug).slice(0, 8) : [];
+  const nearbyCommunities = Array.from(new Set([...city.nearby, ...siblingCities.map((item) => item.name)])).slice(0, 10);
 
   return (
     <>
@@ -1168,14 +1126,14 @@ function AreaCityPage({ page }: { page: SitePage }) {
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Nearby Communities</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">
-            {[...city.nearby, ...siblingCities.map((item) => item.name)].slice(0, 10).map((name) => {
+            {nearbyCommunities.map((name, index) => {
               const linked = areaCities.find((item) => item.name === name);
               return linked ? (
-                <Link className="focus-ring legacy-live-button" href={cityPath(linked)} key={name}>
+                <Link className="focus-ring legacy-live-button" href={cityPath(linked)} key={`${city.slug}-${linked.slug}-${index}`}>
                   {name}
                 </Link>
               ) : (
-                <span className="legacy-live-button" key={name}>
+                <span className="legacy-live-button" key={`${city.slug}-${name}-${index}`}>
                   {name}
                 </span>
               );

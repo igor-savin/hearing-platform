@@ -72,7 +72,7 @@ const navGroups = [
 ];
 
 const navItemClass =
-  "focus-ring flex h-full items-center gap-3 whitespace-nowrap border-2 border-transparent px-[22px] py-[17px] text-[18px] uppercase tracking-[0.06em]";
+  "focus-ring legacy-primary-nav-link flex h-full items-center justify-center gap-2 whitespace-nowrap border-2 border-transparent px-[14px] py-[16px]";
 
 function SocialCircle({ label, href, children }: { label: string; href: string; children: string }) {
   return (
@@ -154,10 +154,10 @@ export function Header() {
         </div>
       </div>
 
-      <nav aria-label="Primary navigation" className="bg-[#005a9c] text-white">
+      <nav aria-label="Primary navigation" className="legacy-primary-nav bg-[#005a9c] text-white">
         <div className="mx-auto max-w-[1760px] px-2">
           <ul className="flex flex-nowrap items-stretch justify-center">
-            <li>
+            <li className="flex">
               <Link
                 className={navItemClass}
                 href="/"
@@ -169,7 +169,7 @@ export function Header() {
             {navGroups.map((group) => (
               <Fragment key={group.label}>
               {group.label === "CONTACT US" ? (
-                <li>
+                <li className="flex">
                   <Link
                     className={navItemClass}
                     href="/areas-we-serve"
@@ -179,8 +179,8 @@ export function Header() {
                   </Link>
                 </li>
               ) : null}
-              <li className="legacy-nav-item relative">
-                <div className="legacy-nav-trigger flex items-center">
+              <li className="legacy-nav-item relative flex">
+                <div className="legacy-nav-trigger flex h-full items-stretch">
                   {group.href ? (
                     <Link
                       className={navItemClass}
@@ -201,11 +201,11 @@ export function Header() {
                   )}
                 </div>
                 {group.label === "HEARING AIDS" ? (
-                  <div className="legacy-dropdown legacy-hearing-aids-mega absolute left-1/2 top-full z-50 hidden w-[min(1980px,calc(100vw-46px))] -translate-x-1/2 bg-[#f3f3f3] p-[22px] text-black shadow-lg">
+                  <div className="legacy-dropdown legacy-hearing-aids-mega absolute left-1/2 top-full z-50 hidden w-[min(1980px,calc(100vw-46px))] -translate-x-1/2 bg-[#f7fbfd] p-[22px] text-black shadow-lg">
                     <div className="grid gap-x-[54px] gap-y-[48px] lg:grid-cols-3">
                       {productMenuCards.map((product) => (
                         <Link
-                          className="focus-ring grid min-h-[130px] grid-cols-[86px_1fr] items-center gap-[28px] bg-[#f4d5cc] px-[20px] py-[10px] text-black transition hover:bg-[#efc8bf]"
+                          className="focus-ring grid min-h-[130px] grid-cols-[86px_1fr] items-center gap-[28px] bg-[#dbe9f3] px-[20px] py-[10px] text-black transition hover:bg-[#c8deee]"
                           href={product.href}
                           key={product.href}
                           onClick={closeMenus}
@@ -241,7 +241,7 @@ export function Header() {
                   <div className="legacy-dropdown absolute left-0 top-full z-50 hidden min-w-[280px] bg-[#005a9c] text-white shadow-lg">
                     {group.links.map(([label, href]) => (
                       <Link
-                        className="focus-ring block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] text-[18px] uppercase leading-tight tracking-[0.05em] last:border-b-0 hover:bg-[#005a9c]"
+                        className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
                         href={href}
                         key={href}
                         onClick={closeMenus}
