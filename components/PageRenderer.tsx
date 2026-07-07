@@ -35,8 +35,14 @@ import {
   countyForCity,
   countyForPath,
   countyPath,
+  localFlavorForCity,
+  localFlavorForCounty,
   officePathForCity,
-  serviceAreasRootPath
+  serviceAreasRootPath,
+  type AreaCounty,
+  type AreaCountyLocalFlavor,
+  type AreaCity,
+  type AreaCityLocalFlavor
 } from "@/lib/serviceAreas";
 
 const patientForms = [
@@ -860,6 +866,72 @@ function AreaServicesList() {
   );
 }
 
+function AreaCountyLocalFlavorSection({ county, flavor }: { county: AreaCounty; flavor: AreaCountyLocalFlavor }) {
+  return (
+    <section className="bg-[#dbe9f3] py-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{flavor.heading}</h2>
+        <LiveRule />
+        <p className="mt-[38px] max-w-[1440px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+          {flavor.intro}
+        </p>
+        <div className="mt-9 grid gap-6 lg:grid-cols-3">
+          {flavor.regions.map((region) => (
+            <article className="bg-white p-7 text-black" key={region.title}>
+              <h3 className="text-[26px] font-black leading-tight">{region.title}</h3>
+              <p className="mt-4 text-[20px] leading-[1.38]">{region.body}</p>
+            </article>
+          ))}
+        </div>
+        <div className="mt-9 bg-white p-7 text-black">
+          <h3 className="text-[28px] font-black leading-tight">Common hearing priorities in {county.name}</h3>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {flavor.hearingPriorities.map((priority) => (
+              <div className="flex gap-3 text-[20px] leading-[1.35]" key={priority}>
+                <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={23} aria-hidden="true" />
+                <span>{priority}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AreaCityLocalFlavorSection({ city, flavor }: { city: AreaCity; flavor: AreaCityLocalFlavor }) {
+  return (
+    <section className="bg-[#dbe9f3] py-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{flavor.heading}</h2>
+        <LiveRule />
+        <p className="mt-[38px] max-w-[1440px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+          {flavor.intro}
+        </p>
+        <div className="mt-9 grid gap-6 lg:grid-cols-3">
+          {flavor.listeningEnvironments.map((environment) => (
+            <article className="bg-white p-7 text-black" key={environment.title}>
+              <h3 className="text-[26px] font-black leading-tight">{environment.title}</h3>
+              <p className="mt-4 text-[20px] leading-[1.38]">{environment.body}</p>
+            </article>
+          ))}
+        </div>
+        <div className="mt-9 bg-white p-7 text-black">
+          <h3 className="text-[28px] font-black leading-tight">Common hearing priorities for {city.name} patients</h3>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {flavor.hearingPriorities.map((priority) => (
+              <div className="flex gap-3 text-[20px] leading-[1.35]" key={priority}>
+                <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={23} aria-hidden="true" />
+                <span>{priority}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ServiceAreasIndexPage({ page }: { page: SitePage }) {
   const featured = areaCities.filter((city) => city.countySlug === "westchester-county-ny").slice(0, 12);
 
@@ -926,6 +998,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
   const county = countyForPath(page.path);
   if (!county) return <LivePageBody page={page} />;
   const cities = citiesForCounty(county.slug);
+  const localFlavor = localFlavorForCounty(county);
 
   return (
     <>
@@ -941,13 +1014,14 @@ function AreaCountyPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
-      <section className="bg-[#dbe9f3] py-[52px]">
+      {localFlavor ? <AreaCountyLocalFlavorSection county={county} flavor={localFlavor} /> : null}
+      <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Cities and Communities We Serve</h2>
           <LiveRule />
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {cities.map((city) => (
-              <Link className="focus-ring block bg-white p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#f7f7f7]" href={cityPath(city)} key={city.slug}>
+              <Link className="focus-ring block bg-[#dbe9f3] p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#d0e3ef]" href={cityPath(city)} key={city.slug}>
                 {city.name}, {city.state}
               </Link>
             ))}
@@ -971,6 +1045,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
   if (!city) return <LivePageBody page={page} />;
   const county = countyForCity(city);
   const office = officeForAreaPath(page.path);
+  const localFlavor = localFlavorForCity(city);
   const siblingCities = county ? citiesForCounty(county.slug).filter((item) => item.slug !== city.slug).slice(0, 8) : [];
 
   return (
@@ -1009,13 +1084,14 @@ function AreaCityPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
-      <section className="bg-[#dbe9f3] py-[52px]">
+      {localFlavor ? <AreaCityLocalFlavorSection city={city} flavor={localFlavor} /> : null}
+      <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Services for {city.name} Patients</h2>
           <LiveRule />
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {city.patientNeeds.map((need) => (
-              <div className="flex gap-3 bg-white p-5 text-[21px] leading-[1.35] text-black" key={need}>
+              <div className="flex gap-3 bg-[#dbe9f3] p-5 text-[21px] leading-[1.35] text-black" key={need}>
                 <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={24} aria-hidden="true" />
                 <span>{need}</span>
               </div>
