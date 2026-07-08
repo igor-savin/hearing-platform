@@ -4,6 +4,28 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd()
   },
+  async headers() {
+    return [
+      {
+        source: "/assets/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        source: "/google-reviews.webp",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable"
+          }
+        ]
+      }
+    ];
+  },
   async redirects() {
     return [
       {

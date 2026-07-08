@@ -3,7 +3,20 @@
 Audiology Associates of Westchester is an audiology and hearing care practice serving Westchester County, NY and nearby communities.
 
 Website URL:
-- https://www.audiologyassociates.org/
+- [Audiology Associates of Westchester](https://www.audiologyassociates.org/)
+
+Key crawl links:
+- [Home](https://www.audiologyassociates.org/)
+- [Contact](https://www.audiologyassociates.org/contact-us)
+- [How We Can Help](https://www.audiologyassociates.org/how-we-can-help)
+- [Tinnitus Management](https://www.audiologyassociates.org/how-we-can-help/tinnitus-management)
+- [Hearing Testing](https://www.audiologyassociates.org/hearing-testing)
+- [Hearing Aid Fitting](https://www.audiologyassociates.org/hearing-aid-fitting)
+- [Hearing Aid Brands](https://www.audiologyassociates.org/products/hearing-aids-by-brand)
+- [Areas We Serve](https://www.audiologyassociates.org/areas-we-serve)
+- [Meet the Team](https://www.audiologyassociates.org/meet-the-team)
+- [Harrison Office](https://www.audiologyassociates.org/harrison-ny)
+- [Somers Office](https://www.audiologyassociates.org/Somers-NY)
 
 Primary services:
 - Hearing testing
