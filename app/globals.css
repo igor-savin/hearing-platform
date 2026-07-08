@@ -103,12 +103,20 @@ select {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .legacy-nav-item:hover .legacy-dropdown {
+  .legacy-nav-item:hover > .legacy-dropdown {
+    display: block;
+  }
+
+  .legacy-submenu-item:hover > .legacy-submenu {
     display: block;
   }
 }
 
-.legacy-nav-item:focus-within .legacy-dropdown {
+.legacy-nav-item:focus-within > .legacy-dropdown {
+  display: block;
+}
+
+.legacy-submenu-item:focus-within > .legacy-submenu {
   display: block;
 }
 

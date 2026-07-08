@@ -9,6 +9,7 @@ import {
   productsRootPath
 } from "@/lib/products";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
+import { tinnitusPages, tinnitusPath, tinnitusRootPath } from "@/lib/tinnitus";
 import {
   areaCities,
   areaCounties,
@@ -741,6 +742,17 @@ function relatedLinks(page: SitePage) {
     return helpServices.map((service) => ({ label: service.title, href: helpServicePath(service) })).slice(0, 7);
   }
 
+  if (page.path.startsWith(`${tinnitusRootPath}/`)) {
+    return [
+      { label: "Tinnitus Management", href: tinnitusRootPath },
+      ...tinnitusPages
+        .filter((topic) => tinnitusPath(topic.slug) !== page.path)
+        .map((topic) => ({ label: topic.title, href: tinnitusPath(topic.slug) })),
+      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
+      { label: "Lenire for Tinnitus", href: "/how-we-can-help/lenire-for-tinnitus" }
+    ].slice(0, 7);
+  }
+
   if (page.path.startsWith(`${howWeCanHelpRootPath}/`)) {
     return [
       ...helpServices
@@ -841,6 +853,22 @@ const howWeCanHelpPages: SitePage[] = [
       service.whyItMatters
     ],
     faqs: service.faqs,
+    related: []
+  })),
+  ...tinnitusPages.map((topic): SitePage => ({
+    path: tinnitusPath(topic.slug),
+    url: `${baseUrl}${tinnitusPath(topic.slug)}`,
+    title: topic.title,
+    metaTitle: `${topic.title} | Tinnitus Help in Westchester | ${siteName}`,
+    metaDescription: topic.description,
+    h1: topic.title,
+    type: "service",
+    lastModified: "2026-07-07",
+    canonical: `${baseUrl}${tinnitusPath(topic.slug)}`,
+    images: [],
+    sections: topic.sections.map((section) => section.title),
+    body: [...topic.intro, ...topic.sections.flatMap((section) => [section.title, ...section.body])],
+    faqs: topic.faqs,
     related: []
   }))
 ];

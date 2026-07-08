@@ -8,6 +8,7 @@ import {
   productsRootPath
 } from "@/lib/products";
 import { helpServiceForPath, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
+import { tinnitusPageForPath, tinnitusRootPath } from "@/lib/tinnitus";
 import {
   cityForPath,
   countyForCity,
@@ -54,7 +55,7 @@ export function websiteSchema() {
 }
 
 export function breadcrumbSchema(page: SitePage) {
-  const crumbs = productBreadcrumbItems(page) || areaBreadcrumbItems(page) || howWeCanHelpBreadcrumbItems(page);
+  const crumbs = productBreadcrumbItems(page) || areaBreadcrumbItems(page) || tinnitusBreadcrumbItems(page) || howWeCanHelpBreadcrumbItems(page);
   const itemListElement = (crumbs || [
     {
       name: "Home",
@@ -81,6 +82,17 @@ export function breadcrumbSchema(page: SitePage) {
     "@type": "BreadcrumbList",
     itemListElement
   };
+}
+
+function tinnitusBreadcrumbItems(page: SitePage) {
+  const tinnitusPage = tinnitusPageForPath(page.path);
+  if (!tinnitusPage) return null;
+  return [
+    { name: "Home", item: baseUrl },
+    { name: "How We Can Help", item: `${baseUrl}${howWeCanHelpRootPath}` },
+    { name: "Tinnitus Management", item: `${baseUrl}${tinnitusRootPath}` },
+    { name: tinnitusPage.title, item: page.canonical }
+  ];
 }
 
 function howWeCanHelpBreadcrumbItems(page: SitePage) {

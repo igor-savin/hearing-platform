@@ -9,6 +9,8 @@ import { ZocdocButton } from "@/components/ZocdocButton";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import { productMenuCards } from "@/lib/products";
 import { logoUrl, primaryPhone, primaryPhoneHref } from "@/lib/site";
+import { providerPath, providerProfiles } from "@/lib/team";
+import { tinnitusPages, tinnitusPath, tinnitusRootPath } from "@/lib/tinnitus";
 
 const navGroups = [
   {
@@ -236,16 +238,71 @@ export function Header() {
                   </div>
                 ) : (
                   <div className="legacy-dropdown absolute left-0 top-full z-50 hidden min-w-[280px] bg-[#005a9c] text-white shadow-lg">
-                    {group.links.map(([label, href]) => (
-                      <Link
-                        className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
-                        href={href}
-                        key={href}
-                        onClick={closeMenus}
-                      >
-                        {label}
-                      </Link>
-                    ))}
+                    {group.links.map(([label, href]) =>
+                      group.label === "ABOUT US" && href === "/meet-the-team" ? (
+                        <div className="legacy-submenu-item relative border-b border-white/55 last:border-b-0" key={href}>
+                          <Link
+                            className="focus-ring legacy-primary-nav-link flex whitespace-nowrap px-[28px] py-[17px] hover:bg-[#005a9c]"
+                            href={href}
+                            onClick={closeMenus}
+                          >
+                            <span>{label}</span>
+                            <ChevronDown className="-rotate-90" size={16} aria-hidden="true" />
+                          </Link>
+                          <div className="legacy-submenu absolute left-full top-0 z-50 hidden min-w-[360px] bg-[#005a9c] text-white shadow-lg">
+                            {providerProfiles.map((provider) => (
+                              <Link
+                                className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
+                                href={providerPath(provider)}
+                                key={provider.slug}
+                                onClick={closeMenus}
+                              >
+                                {provider.name}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ) : group.label === "HOW WE CAN HELP" && href === tinnitusRootPath ? (
+                        <div className="legacy-submenu-item relative border-b border-white/55 last:border-b-0" key={href}>
+                          <Link
+                            className="focus-ring legacy-primary-nav-link flex whitespace-nowrap px-[28px] py-[17px] hover:bg-[#005a9c]"
+                            href={href}
+                            onClick={closeMenus}
+                          >
+                            <span>{label}</span>
+                            <ChevronDown className="-rotate-90" size={16} aria-hidden="true" />
+                          </Link>
+                          <div className="legacy-submenu absolute left-full top-0 z-50 hidden min-w-[370px] bg-[#005a9c] text-white shadow-lg">
+                            <Link
+                              className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] hover:bg-[#005a9c]"
+                              href={tinnitusRootPath}
+                              onClick={closeMenus}
+                            >
+                              TINNITUS KNOWLEDGE HUB
+                            </Link>
+                            {tinnitusPages.map((topic) => (
+                              <Link
+                                className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
+                                href={tinnitusPath(topic.slug)}
+                                key={topic.slug}
+                                onClick={closeMenus}
+                              >
+                                {topic.title}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <Link
+                          className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
+                          href={href}
+                          key={href}
+                          onClick={closeMenus}
+                        >
+                          {label}
+                        </Link>
+                      )
+                    )}
                   </div>
                 )}
               </li>

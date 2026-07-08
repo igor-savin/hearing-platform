@@ -34,6 +34,7 @@ import {
   splitLongText,
   type SitePage
 } from "@/lib/site";
+import { tinnitusPageForPath, tinnitusPages, tinnitusPath, tinnitusRootPath, type TinnitusPage } from "@/lib/tinnitus";
 import {
   areaCities,
   areaCounties,
@@ -810,12 +811,18 @@ function AreaBreadcrumbs({ page }: { page: SitePage }) {
 
 function HowWeCanHelpBreadcrumbs({ page }: { page: SitePage }) {
   const helpService = helpServiceForPath(page.path);
+  const tinnitusPage = tinnitusPageForPath(page.path);
   const crumbs: ProductCrumb[] = [
     { label: "Home", href: "/" },
     { label: "How We Can Help", href: page.path === howWeCanHelpRootPath ? undefined : howWeCanHelpRootPath }
   ];
 
-  if (helpService) crumbs.push({ label: helpService.title });
+  if (tinnitusPage) {
+    crumbs.push({ label: "Tinnitus Management", href: tinnitusRootPath });
+    crumbs.push({ label: tinnitusPage.title });
+  } else if (helpService) {
+    crumbs.push({ label: helpService.title });
+  }
 
   return <StandardBreadcrumbs crumbs={crumbs} />;
 }
@@ -1242,6 +1249,100 @@ function HelpListSection({ title, items }: { title: string; items: string[] }) {
   );
 }
 
+function TinnitusHubLinks() {
+  return (
+    <section className="bg-[#f7f7f5] py-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Tinnitus Knowledge Hub</h2>
+        <LiveRule />
+        <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {tinnitusPages.map((topic) => (
+            <Link
+              className="focus-ring block border border-[#c9d8e3] bg-white p-7 text-black transition hover:bg-[#dbe9f3]"
+              href={tinnitusPath(topic.slug)}
+              key={topic.slug}
+            >
+              <h3 className="text-[26px] font-black leading-tight">{topic.title}</h3>
+              <p className="mt-4 text-[19px] leading-[1.35]">{topic.description}</p>
+              <span className="mt-6 inline-block text-[17px] font-bold text-[#005a9c] underline">Read More</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TinnitusTopicPage({ page, topic }: { page: SitePage; topic: TinnitusPage }) {
+  return (
+    <>
+      <HowWeCanHelpBreadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <p className="text-[22px] font-black uppercase tracking-[0.3em] text-[#a75e22] max-md:text-[16px]">Tinnitus Knowledge Hub</p>
+          <h1 className="mt-5 max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{topic.title}</h1>
+          <p className="mt-5 max-w-[1240px] text-[28px] font-black leading-tight text-[#333] max-md:text-[22px]">
+            {topic.description}
+          </p>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[1320px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            {topic.intro.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <div className="grid gap-7 lg:grid-cols-2">
+            {topic.sections.map((section) => (
+              <article className="bg-white p-7 text-black" key={section.title}>
+                <h2 className="text-[32px] font-black leading-tight max-md:text-[26px]">{section.title}</h2>
+                <div className="mt-5 space-y-4 text-[21px] leading-[1.35] max-md:text-[18px]">
+                  {section.body.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+                {section.bullets ? (
+                  <ul className="mt-6 space-y-3 text-[20px] leading-[1.35] max-md:text-[18px]">
+                    {section.bullets.map((bullet) => (
+                      <li className="flex gap-3" key={bullet}>
+                        <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={22} aria-hidden="true" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Related Tinnitus Topics</h2>
+          <LiveRule />
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link className="focus-ring legacy-live-button" href={tinnitusRootPath}>
+              Tinnitus Management
+            </Link>
+            {tinnitusPages
+              .filter((relatedTopic) => relatedTopic.slug !== topic.slug)
+              .slice(0, 4)
+              .map((relatedTopic) => (
+                <Link className="focus-ring legacy-live-button" href={tinnitusPath(relatedTopic.slug)} key={relatedTopic.slug}>
+                  {relatedTopic.title}
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+      <AreaFaqSection page={page} title={`${topic.title} FAQs`} />
+      <ProductCta />
+    </>
+  );
+}
+
 function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
   const service = helpServiceForPath(page.path);
   if (!service) return <LivePageBody page={page} />;
@@ -1298,6 +1399,7 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      {page.path === tinnitusRootPath ? <TinnitusHubLinks /> : null}
       <AreaFaqSection page={page} title={`${service.title} FAQs`} />
       <ProductCta />
     </>
@@ -2776,6 +2878,16 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <HowWeCanHelpIndexPage page={page} />
+      </>
+    );
+  }
+
+  const tinnitusPage = tinnitusPageForPath(page.path);
+  if (tinnitusPage) {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <TinnitusTopicPage page={page} topic={tinnitusPage} />
       </>
     );
   }
