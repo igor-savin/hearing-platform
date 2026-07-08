@@ -137,10 +137,6 @@ select {
   width: 15px;
 }
 
-.legacy-menu-suppressed .legacy-dropdown {
-  display: none !important;
-}
-
 .legacy-nav-item button {
   color: inherit;
   background: transparent;

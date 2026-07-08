@@ -75,7 +75,7 @@ const patientForms = [
 ];
 
 const homeImages = {
-  banner: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/banner-1920w.jpg",
+  banner: "/assets/home-hero.jpg",
   meetTeam: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/meet-the-team-1920w.jpg",
   people: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/what-people-are-saying-1920w.jpg",
   experts: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/talk-to-experts-1920w.jpg",
@@ -555,7 +555,8 @@ function HomePage() {
           className="absolute inset-0 h-full w-full object-cover"
           fill
           priority
-          sizes="100vw"
+          quality={70}
+          sizes="(max-width: 767px) 100vw, 1600px"
           src={homeImages.banner}
         />
         <div className="absolute inset-0 bg-black/30" />

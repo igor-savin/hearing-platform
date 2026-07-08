@@ -9,6 +9,7 @@ export function AnalyticsScripts() {
     process.env.NEXT_PUBLIC_PIWIK_PRO_SITE_ID || "33153b90-8d23-4967-9b24-5a3b3f41f3f7";
   const snowplowDomain = process.env.NEXT_PUBLIC_SNOWPLOW_DOMAIN || "d32hwlnfiv2gyn.cloudfront.net";
   const snowplowAppId = process.env.NEXT_PUBLIC_SNOWPLOW_APP_ID || "d8404b56";
+  const deferredStrategy = "lazyOnload";
 
   return (
     <>
@@ -23,10 +24,10 @@ export function AnalyticsScripts() {
       />
       {gaId ? (
         <>
-          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="afterInteractive" />
+          <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy={deferredStrategy} />
           <Script
             id="ga4-init"
-            strategy="afterInteractive"
+            strategy={deferredStrategy}
             dangerouslySetInnerHTML={{
               __html: `
                 window.dataLayer = window.dataLayer || [];
@@ -42,7 +43,7 @@ export function AnalyticsScripts() {
         <>
           <Script
             id="gtm-init"
-            strategy="afterInteractive"
+            strategy={deferredStrategy}
             dangerouslySetInnerHTML={{
               __html: `
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -68,7 +69,7 @@ export function AnalyticsScripts() {
         <>
           <Script
             id="facebook-pixel-init"
-            strategy="afterInteractive"
+            strategy={deferredStrategy}
             dangerouslySetInnerHTML={{
               __html: `
                 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -95,7 +96,7 @@ export function AnalyticsScripts() {
       {piwikSiteId ? (
         <Script
           id="piwik-pro-init"
-          strategy="afterInteractive"
+          strategy={deferredStrategy}
           dangerouslySetInnerHTML={{
             __html: `
               var _paq = window._paq || [];
@@ -117,7 +118,7 @@ export function AnalyticsScripts() {
       {snowplowAppId ? (
         <Script
           id="snowplow-init"
-          strategy="afterInteractive"
+          strategy={deferredStrategy}
           dangerouslySetInnerHTML={{
             __html: `
               ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
@@ -131,13 +132,27 @@ export function AnalyticsScripts() {
           }}
         />
       ) : null}
-      <Script src="https://offsiteschedule.zocdoc.com/plugin/embed" strategy="afterInteractive" />
       <Script
         id="interaction-tracking"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
+            function loadZocdocPlugin() {
+              if (window.__zocdocPluginRequested) return;
+              window.__zocdocPluginRequested = true;
+              var script = document.createElement('script');
+              script.async = true;
+              script.src = 'https://offsiteschedule.' + 'zocdoc.com/plugin/embed';
+              document.head.appendChild(script);
+            }
+            document.addEventListener('pointerover', function(event) {
+              if (event.target && event.target.closest && event.target.closest('.zd-plugin')) loadZocdocPlugin();
+            }, { passive: true });
+            document.addEventListener('focusin', function(event) {
+              if (event.target && event.target.closest && event.target.closest('.zd-plugin')) loadZocdocPlugin();
+            });
             document.addEventListener('click', function(event) {
+              if (event.target && event.target.closest && event.target.closest('.zd-plugin')) loadZocdocPlugin();
               var target = event.target && event.target.closest ? event.target.closest('[data-track]') : null;
               if (!target) return;
               var action = target.getAttribute('data-track');

@@ -1,14 +1,11 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { Fragment } from "react";
 import { ChevronDown } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import { productMenuCards } from "@/lib/products";
-import { logoUrl, primaryPhone, primaryPhoneHref } from "@/lib/site";
+import { primaryPhone, primaryPhoneHref } from "@/lib/site";
 import { providerPath, providerProfiles } from "@/lib/team";
 import { tinnitusPages, tinnitusPath, tinnitusRootPath } from "@/lib/tinnitus";
 
@@ -88,39 +85,26 @@ function SocialCircle({ label, href, children }: { label: string; href: string; 
 }
 
 export function Header() {
-  const pathname = usePathname();
-  const [suppressMenus, setSuppressMenus] = useState(false);
-
-  useEffect(() => {
-    setSuppressMenus(false);
-  }, [pathname]);
-
-  function closeMenus() {
-    setSuppressMenus(true);
-    if (document.activeElement instanceof HTMLElement) {
-      document.activeElement.blur();
-    }
-  }
-
   return (
-    <header className={`legacy-header bg-white ${suppressMenus ? "legacy-menu-suppressed" : ""}`}>
+    <header className="legacy-header bg-white">
       <div className="relative mx-auto flex min-h-[171px] w-full max-w-[2048px] items-center justify-center px-5 py-4">
         <Link
           className="focus-ring legacy-why-button absolute left-[78px] top-[40px] hidden rounded-[4px] bg-[#005a9c] px-[36px] py-[13px] text-[18px] leading-none text-white lg:inline-flex"
           href="/why-choose-us"
-          onClick={closeMenus}
         >
           Why Choose Us?
         </Link>
 
-        <Link className="focus-ring block" href="/" aria-label="Audiology Associates of Westchester home" onClick={closeMenus}>
+        <Link className="focus-ring block" href="/" aria-label="Audiology Associates of Westchester home">
           <Image
             alt="Audiology Associates of Westchester logo"
             className="h-auto w-[360px] max-w-[78vw] md:w-[575px] lg:w-[700px]"
-            height={192}
+            height={120}
             priority
-            src={logoUrl}
-            width={1200}
+            sizes="(max-width: 767px) 78vw, (max-width: 1023px) 575px, 700px"
+            src="/assets/audiology-associates-logo.png"
+            unoptimized
+            width={584}
           />
         </Link>
 
@@ -160,7 +144,6 @@ export function Header() {
               <Link
                 className={navItemClass}
                 href="/"
-                onClick={closeMenus}
               >
                 HOME
               </Link>
@@ -172,7 +155,6 @@ export function Header() {
                   <Link
                     className={navItemClass}
                     href="/areas-we-serve"
-                    onClick={closeMenus}
                   >
                     AREAS WE SERVE
                   </Link>
@@ -184,7 +166,6 @@ export function Header() {
                     <Link
                       className={navItemClass}
                       href={group.href}
-                      onClick={closeMenus}
                     >
                       {group.label}
                       <ChevronDown size={16} aria-hidden="true" />
@@ -207,7 +188,6 @@ export function Header() {
                           className="focus-ring grid min-h-[130px] grid-cols-[86px_1fr] items-center gap-[28px] bg-[#dbe9f3] px-[20px] py-[10px] text-black transition hover:bg-[#c8deee]"
                           href={product.href}
                           key={product.href}
-                          onClick={closeMenus}
                         >
                           <Image
                             alt={product.title}
@@ -229,7 +209,6 @@ export function Header() {
                           className="focus-ring text-[16px] font-bold uppercase tracking-[0.06em] text-[#005a9c] underline"
                           href={href}
                           key={href}
-                          onClick={closeMenus}
                         >
                           {label}
                         </Link>
@@ -244,7 +223,6 @@ export function Header() {
                           <Link
                             className="focus-ring legacy-primary-nav-link flex whitespace-nowrap px-[28px] py-[17px] hover:bg-[#005a9c]"
                             href={href}
-                            onClick={closeMenus}
                           >
                             <span>{label}</span>
                             <ChevronDown className="-rotate-90" size={16} aria-hidden="true" />
@@ -255,7 +233,6 @@ export function Header() {
                                 className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
                                 href={providerPath(provider)}
                                 key={provider.slug}
-                                onClick={closeMenus}
                               >
                                 {provider.name}
                               </Link>
@@ -267,7 +244,6 @@ export function Header() {
                           <Link
                             className="focus-ring legacy-primary-nav-link flex whitespace-nowrap px-[28px] py-[17px] hover:bg-[#005a9c]"
                             href={href}
-                            onClick={closeMenus}
                           >
                             <span>{label}</span>
                             <ChevronDown className="-rotate-90" size={16} aria-hidden="true" />
@@ -276,7 +252,6 @@ export function Header() {
                             <Link
                               className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] hover:bg-[#005a9c]"
                               href={tinnitusRootPath}
-                              onClick={closeMenus}
                             >
                               TINNITUS KNOWLEDGE HUB
                             </Link>
@@ -285,7 +260,6 @@ export function Header() {
                                 className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
                                 href={tinnitusPath(topic.slug)}
                                 key={topic.slug}
-                                onClick={closeMenus}
                               >
                                 {topic.title}
                               </Link>
@@ -297,7 +271,6 @@ export function Header() {
                           className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
                           href={href}
                           key={href}
-                          onClick={closeMenus}
                         >
                           {label}
                         </Link>
