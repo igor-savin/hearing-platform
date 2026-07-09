@@ -2734,7 +2734,7 @@ function ContactSection({ page }: { page: SitePage }) {
           <SectionTitle
             eyebrow="Contact"
             title="Submit this form to contact us"
-            text="The form is backed by Firebase Firestore, with optional attachment storage in Firebase Storage."
+            text="The form sends a secure email notification to the practice team."
           />
           <div className="mt-6 space-y-3 rounded-lg bg-white p-5">
             {locations

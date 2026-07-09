@@ -787,7 +787,7 @@ const generatedPages = uniqueCrawlPages
   .map((page): SitePage => {
     const path = pathFromUrl(page.url);
     const type = determineType(path, page.type);
-    const h1 = page.h1 || (path === "/privacy" ? "" : page.title.replace(/\s*\|.*$/, ""));
+    const h1 = fixSpacing(page.h1 || (path === "/privacy" ? "" : page.title.replace(/\s*\|.*$/, "")));
     const metaDescription =
       fixSpacing(page.metaDescription) ||
       `${h1} from ${siteName}, serving Westchester County and nearby communities.`;
@@ -1060,9 +1060,12 @@ export function toPath(slug?: string[]) {
 
 export function buildMetadata(page: SitePage): Metadata {
   const image = page.heroImage?.src || "/opengraph-image";
+  const robots = page.path === "/thank-you" ? { index: true, follow: true } : undefined;
+
   return {
     title: page.metaTitle,
     description: page.metaDescription,
+    robots,
     alternates: {
       canonical: page.canonical
     },

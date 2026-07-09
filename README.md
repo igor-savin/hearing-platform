@@ -1,6 +1,6 @@
 # Audiology Associates of Westchester Rebuild
 
-Modern Next.js rebuild of the Audiology Associates of Westchester website with preserved live URLs, SEO metadata, local SEO schema, Firebase-backed contact submissions, sitemap, robots.txt, and llms.txt.
+Modern Next.js rebuild of the Audiology Associates of Westchester website with preserved live URLs, SEO metadata, local SEO schema, email-backed contact submissions, sitemap, robots.txt, and llms.txt.
 
 ## Setup
 
@@ -26,6 +26,9 @@ NEXT_PUBLIC_PIWIK_PRO_URL=
 NEXT_PUBLIC_PIWIK_PRO_SITE_ID=
 NEXT_PUBLIC_SNOWPLOW_DOMAIN=
 NEXT_PUBLIC_SNOWPLOW_APP_ID=
+RESEND_API_KEY=
+CONTACT_FORM_TO_EMAIL=
+CONTACT_FORM_FROM_EMAIL=
 ```
 
 3. Run locally:
@@ -40,19 +43,33 @@ npm run dev
 npm run build
 ```
 
+## Contact Form Email
+
+The contact form posts to `/api/contact`, validates the submission server-side, and sends an email notification through Resend.
+
+Required production variables:
+
+- `RESEND_API_KEY`
+
+Optional:
+
+- `CONTACT_FORM_TO_EMAIL`
+- `CONTACT_FORM_FROM_EMAIL`
+
+If `CONTACT_FORM_TO_EMAIL` is not set, submissions temporarily route to `igorsavin+1@gmail.com` for QA. Use a verified sending domain in Resend before launch. For testing, Resend's default sender can be used, but production email should come from an approved practice/domain address.
+
 ## Firebase
 
-The contact form writes submissions to the `contactSubmissions` Firestore collection. Optional file attachments are uploaded to Firebase Storage under `contact-attachments/`.
+Firebase remains available for future database, storage, or authentication features.
 
 Authentication is initialized in `lib/firebase.ts` but is not required for the public marketing site.
 
-Firestore and Storage rules are included:
+Firestore and Storage rules are included for future Firebase-backed features:
 
-- Public visitors can create validated contact submissions.
 - Public visitors can upload allowed attachment types up to 10 MB.
 - Public reads, edits, and deletes are blocked.
 
-For launch, add Firebase App Check to reduce automated spam against the public form endpoint.
+If public Firebase writes are re-enabled later, add Firebase App Check to reduce automated spam.
 
 ## Tracking Pixels
 

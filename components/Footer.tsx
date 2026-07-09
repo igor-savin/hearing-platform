@@ -84,6 +84,18 @@ export function Footer() {
           ) : null}
         </div>
 
+        <nav aria-label="Helpful links" className="mt-[34px] flex flex-wrap justify-center gap-x-6 gap-y-2 text-[15px] leading-tight">
+          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-aid-referral-program">
+            Hearing Aid Referral Program
+          </Link>
+          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-tips">
+            Hearing Tips
+          </Link>
+          <Link className="focus-ring text-[#005a9c] underline" href="/privacy">
+            Privacy
+          </Link>
+        </nav>
+
         <p className="mt-[42px] text-[19px] leading-tight text-[#333]">
           © 2026 {siteName}. All Rights Reserved.
         </p>

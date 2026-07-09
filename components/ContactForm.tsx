@@ -1,8 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { db, firebaseEnabled } from "@/lib/firebase";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -19,31 +17,49 @@ export function ContactForm({ context = "General contact" }: { context?: string 
     const data = new FormData(form);
 
     try {
-      if (!firebaseEnabled || !db) {
-        throw new Error("Firebase is not configured in this environment.");
-      }
-
-      await addDoc(collection(db, "contactSubmissions"), {
-        context,
-        name: String(data.get("name") || ""),
-        email: String(data.get("email") || ""),
-        phone: String(data.get("phone") || ""),
-        preferredLocation: "",
-        message: String(data.get("message") || ""),
-        attachmentPath: "",
-        source: "website",
-        createdAt: serverTimestamp()
+      const response = await fetch("/api/contact", {
+        body: JSON.stringify({
+          context,
+          email: String(data.get("email") || ""),
+          message: String(data.get("message") || ""),
+          name: String(data.get("name") || ""),
+          pageUrl: window.location.href,
+          phone: String(data.get("phone") || ""),
+          website: String(data.get("website") || "")
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        method: "POST"
       });
+
+      const result = (await response.json().catch(() => null)) as { message?: string } | null;
+
+      if (!response.ok) {
+        setStatus("error");
+        setMessage(result?.message || "The form could not send.");
+        return;
+      }
 
       form.reset();
       setStatus("success");
-      setMessage("Thank you. Your message has been saved and the practice can follow up with you.");
+      setMessage(result?.message || "Thank you. Your message has been sent and the practice can follow up with you.");
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "website_interaction",
+        interaction_action: "contact-submit-success",
+        interaction_label: context,
+        interaction_href: window.location.href
+      });
+      if (window.fbq) window.fbq("trackCustom", "contact-submit-success");
     } catch (error) {
       setStatus("error");
       setMessage(
-        "The online form could not save just now. Please call the practice directly to schedule or confirm care."
+        error instanceof Error
+          ? error.message
+          : "The online form could not send just now. Please call the practice directly to schedule or confirm care."
       );
-      console.error(error);
     }
   }
 
@@ -70,13 +86,17 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         </label>
       </div>
       <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
-          Email
-          <input
-            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
-            name="email"
-            type="email"
-          />
-        </label>
+        Email
+        <input
+          className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+          name="email"
+          type="email"
+        />
+      </label>
+      <label className="hidden">
+        Website
+        <input autoComplete="off" name="website" tabIndex={-1} type="text" />
+      </label>
       <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
         Message
         <textarea
