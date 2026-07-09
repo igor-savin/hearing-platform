@@ -41,6 +41,7 @@ const navGroups = [
   },
   {
     label: "HEARING AIDS",
+    href: "/products/hearing-aids-by-brand",
     links: [
       ["HEARING AIDS 101", "/hearing-aids-101"],
       ["TYPES OF HEARING AIDS", "/types-of-hearing-aids"],
