@@ -152,13 +152,6 @@ const teamMembers = [
     alt: "Alicia Rivera - Patient Care Coordinator Lead/ Billing Specialist"
   },
   {
-    name: "Barbara Lawrence",
-    pronouns: "",
-    role: "Patient Care Coordinator",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Barbara_19-Edit+%281%29-1920w.jpg",
-    alt: "Barbara Lawrence"
-  },
-  {
     name: "Hazel Icaza",
     pronouns: "",
     role: "Patient Care Coordinator",
@@ -310,13 +303,6 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       },
       {
         ...teamMembers[8],
-        pronouns: "(she/her/hers)",
-        paragraphs: [
-          "Barbara Lawrence, Patient Care Coordinator joined Audiology Associates in December 2023 bringing many years of Outstanding Customer Service experience in Medical Offices as well as Verizon Communications. Outside of work she enjoys spending time with her five grandchildren and baking."
-        ]
-      },
-      {
-        ...teamMembers[9],
         pronouns: "(she/her/hers)",
         paragraphs: [
           "Hazel Icaza is a Patient Care Coordinator here at Audiology Associates of Westchester who strives to help our patients and meet their needs. With over 6+ years of experience in the healthcare field, she is continuing to grow her knowledge in the counseling and social work field. Currently attending Lehman College, she hopes to be an asset to those who are struggling with hearing loss and help them find the resources they need to meet their wants and be a resource for people in need."
@@ -1832,10 +1818,9 @@ function LiveLocationPage({ page }: { page: SitePage }) {
 function BlogPostRelated({ page }: { page: SitePage }) {
   if (page.type !== "blog-post") return null;
 
-  const relatedPosts = liveBlogOrder
-    .map((path) => blogPosts.find((post) => post.path === path))
-    .filter((post): post is SitePage => Boolean(post))
-    .filter((post) => post.path !== page.path);
+  const relatedPosts = page.related
+    .map((link) => blogPosts.find((post) => post.path === link.href))
+    .filter((post): post is SitePage => Boolean(post));
 
   if (!relatedPosts.length) return null;
 
@@ -2063,6 +2048,9 @@ function LiveThankYouPage({ page }: { page: SitePage }) {
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <div className="legacy-live-copy max-w-[1440px] text-left text-[24px] leading-[1.35] text-black">
+            <h1 className="mb-[20px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
+              Thank You
+            </h1>
             <p>{page.body[0] || "Thank you for contacting us! Your message has been received."}</p>
           </div>
         </div>
@@ -2650,50 +2638,38 @@ function LocationDetails({ page }: { page: SitePage }) {
 }
 
 function BlogIndex({ page }: { page: SitePage }) {
-  const orderedPosts = liveBlogOrder
-    .map((path) => blogPosts.find((post) => post.path === path))
-    .filter((post): post is SitePage => Boolean(post));
+  const orderedPosts = [...blogPosts].sort((first, second) => (second.lastModified || "").localeCompare(first.lastModified || ""));
 
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-10 text-center">
+      <section className="bg-[#f7f7f5] py-14 text-center">
         <div className="mx-auto max-w-[1180px] px-5">
-          <h1 className="text-[38px] font-black text-[#333]">Recent Posts</h1>
-          <div className="mt-8 grid gap-8 text-left md:grid-cols-3">
-          {orderedPosts.map((post) => (
-            <Link className="focus-ring block bg-white" href={post.path} key={post.path}>
+          <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Audiology Associates of Westchester</p>
+          <h1 className="mt-3 text-[42px] font-black text-[#333] max-md:text-[34px]">Hearing Health Resources</h1>
+          <p className="mx-auto mt-4 max-w-[760px] text-[20px] leading-[1.45] text-[#555] max-md:text-[18px]">
+            Clear, practical guidance on hearing aids, tinnitus, ear care, and the moments when it is time to speak with an audiologist.
+          </p>
+          <div className="mt-10 grid gap-7 text-left md:grid-cols-2 xl:grid-cols-3">
+            {orderedPosts.map((post) => (
+            <Link className="focus-ring group flex h-full flex-col overflow-hidden border border-[#dedede] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md" href={post.path} key={post.path}>
               {post.heroImage ? (
                 <Image
                   alt={post.heroImage.alt || post.h1}
-                  className="aspect-[16/10] w-full object-cover"
+                  className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-[1.02]"
                   height={420}
                   src={post.heroImage.src}
                   width={720}
                 />
-              ) : null}
-              <h2 className="mt-4 text-[20px] font-black leading-tight text-[#333]">{post.h1}</h2>
+              ) : <div className="aspect-[16/10] bg-[#dbe9f3]" />}
+              <div className="flex flex-1 flex-col p-6">
+                <p className="text-[13px] font-black uppercase tracking-[0.14em] text-[#a75e22]">Hearing health guide</p>
+                <h2 className="mt-3 text-[24px] font-black leading-tight text-[#333] group-hover:text-[#005a9c]">{post.h1}</h2>
+                <p className="mt-3 line-clamp-3 text-[16px] leading-6 text-[#555]">{post.metaDescription}</p>
+                <span className="mt-6 inline-block text-[16px] font-bold text-[#005a9c] underline">Read article</span>
+              </div>
             </Link>
-          ))}
-          </div>
-          <div className="mx-auto mt-12 max-w-[940px] space-y-5 text-center text-[18px] leading-8 text-[#333]">
-            <h2 className="text-[28px] font-black text-[#333]">
-              Hear Clearly and Protect Your Hearing with Audiology Associates of Westchester
-            </h2>
-            <p>
-              At Audiology Associates of Westchester, we are dedicated to your hearing health. We offer a comprehensive
-              range of audiology services to address all your hearing needs, from routine hearing tests to advanced
-              hearing aid fitting and tinnitus therapy.
-            </p>
-            <p>
-              Our team of experienced audiologists can diagnose and treat various types of hearing loss, including
-              central hearing loss and sensorineural hearing loss. We understand the importance of protecting your
-              hearing, and we provide expert advice on occupational hearing protection and ear protection options.
-            </p>
-            <p>
-              Let us help you hear clearly and enjoy the sounds you love again. Contact Audiology Associates of
-              Westchester today to schedule a hearing test and discuss your hearing healthcare options.
-            </p>
+            ))}
           </div>
         </div>
       </section>
