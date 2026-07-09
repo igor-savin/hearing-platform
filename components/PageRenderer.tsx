@@ -58,19 +58,19 @@ import { providerForName, providerForPath, providerPath, providerProfiles, type 
 const patientForms = [
   {
     label: "New Adult Patient Forms",
-    href: "https://irp-cdn.multiscreensite.com/d8404b56/files/uploaded/New%20Adult%20Patient%20Forms%20-merge.pdf"
+    href: "/forms/new-adult-patient-forms.pdf"
   },
   {
     label: "New Pediatric Patient Forms",
-    href: "https://irp-cdn.multiscreensite.com/d8404b56/files/uploaded/Pediatric-Intake-Form-merge.pdf"
+    href: "/forms/new-pediatric-patient-forms.pdf"
   },
   {
     label: "Tinnitus Forms",
-    href: "https://irp-cdn.multiscreensite.com/d8404b56/files/uploaded/Tinnitus%20Forms%20-merged.pdf"
+    href: "/forms/tinnitus-forms.pdf"
   },
   {
     label: "Audiology Associates of Westchester Privacy Notice",
-    href: "https://irp-cdn.multiscreensite.com/d8404b56/files/uploaded/Audiology-Associates-of-Westchester-Privacy-Notice.pdf"
+    href: "/forms/privacy-notice.pdf"
   }
 ];
 
@@ -466,7 +466,13 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
         addressLines: ["325 NY 100, Somers, NY 10589"],
         phone: "(914) 556-6720",
         phoneHref: "tel:+19145566720",
-        hours: ["Monday, Tuesday, Wednesday, Thursday", "8:30am - 5:00pm"]
+        hours: [
+          "Monday: 8:30am - 5:00pm",
+          "Tuesday: 8:30am - 5:00pm",
+          "Wednesday: 8:30am - 5:00pm",
+          "Thursday: Closed",
+          "Friday: 8:30am - 2:30pm"
+        ]
       },
       {
         title: "Audiology Services for Somers, NY",
@@ -1742,6 +1748,9 @@ function GoogleMapEmbed({ query, title }: { query: string; title: string }) {
 function LegacyLocationSectionView({ section }: { section: LegacyLocationSection }) {
   const hasMap = Boolean(section.mapQuery);
   const hasDetails = Boolean(section.addressLines?.length || section.phone || section.hours?.length);
+  const directionsUrl = section.mapQuery
+    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(section.mapQuery)}`
+    : "";
 
   return (
     <section
@@ -1780,11 +1789,26 @@ function LegacyLocationSectionView({ section }: { section: LegacyLocationSection
           {hasMap ? (
             <div>
               <GoogleMapEmbed query={section.mapQuery!} title={section.mapCaption || section.title} />
-              {section.mapCaption ? (
-                <p className="mt-[30px] text-center text-[26px] font-bold italic leading-tight text-[#005a9c]">
-                  {section.mapCaption}
-                </p>
-              ) : null}
+              <div className="mx-auto mt-[22px] flex max-w-[560px] flex-col gap-3 sm:flex-row">
+                {section.phoneHref ? (
+                  <a
+                    className="focus-ring inline-flex flex-1 items-center justify-center gap-2 bg-[#005a9c] px-6 py-4 text-[20px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
+                    data-track="phone-location-map"
+                    href={section.phoneHref}
+                  >
+                    <Phone size={22} aria-hidden="true" />
+                    Call Now
+                  </a>
+                ) : null}
+                <a
+                  className="focus-ring inline-flex flex-1 items-center justify-center rounded-full border-2 border-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+                  href={directionsUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Get Directions
+                </a>
+              </div>
             </div>
           ) : null}
         </div>
@@ -1901,6 +1925,176 @@ function CoreServiceDetail({ page }: { page: SitePage }) {
   );
 }
 
+function HearingTestingPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h1 className="max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
+            {page.h1 || "Hearing Testing"}
+          </h1>
+          <LiveRule />
+          <p className="mt-[38px] max-w-[1320px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            Hearing testing helps us understand what you are hearing, what you may be missing, and which next steps can support clearer communication.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Initial Hearing Consultation
+          </h2>
+          <LiveRule />
+          <p className="mt-[38px] max-w-[1320px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            At the start of the appointment, one of our audiologists will learn more about you and ask questions that help us understand your needs. We will look in your ears to check for obstructions, then use testing to learn more about any hearing loss, the causes and degree of hearing loss, and the location of hearing loss. Finally, we will discuss possible treatment options.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Types of Hearing Tests
+          </h2>
+          <LiveRule />
+          <div className="mt-[38px] space-y-[34px] text-black">
+            {[
+              [
+                "Audiometric Test",
+                "An audiometric test uses tones of various intensity and speed to find out the extent of any hearing loss."
+              ],
+              [
+                "Tympanometry",
+                "Tympanometry tests the ear, eardrum, and conduction bones by putting pressure on the ear canal."
+              ],
+              [
+                "OAEs",
+                "Acoustically evoked otoacoustic emission testing (OAE) gives us a better idea of the health of the hair cells of your outer and inner ear."
+              ]
+            ].map(([title, text]) => (
+              <div key={title}>
+                <h3 className="text-[24px] font-black leading-tight">{title}</h3>
+                <p className="mt-2 text-[22px] leading-[1.35] max-md:text-[18px]">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Call Our Hearing Doctor Today for an Appointment!
+          </h2>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[1320px] space-y-6 text-[22px] leading-[1.35] text-black max-md:text-[18px]">
+            <p>
+              After your hearing test is complete, we will review your audiogram with you to show you the degree of hearing loss. We will also discuss treatments with you so that you understand all of your options and can make the decision that's best for you.
+            </p>
+            <p>
+              <a className="text-[#005a9c] underline" href={primaryPhoneHref}>
+                Call us
+              </a>{" "}
+              today to schedule a hearing test with our audiologist at Audiology Associates of Westchester.
+            </p>
+          </div>
+          <a
+            className="focus-ring mt-8 inline-flex items-center gap-2 bg-[#005a9c] px-8 py-4 text-[20px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
+            data-track="phone-hearing-testing"
+            href={primaryPhoneHref}
+          >
+            <Phone size={22} aria-hidden="true" />
+            Call Now
+          </a>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function CareersPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
+            {page.h1 || "Careers"}
+          </h1>
+          <LiveRule />
+          <p className="mt-[38px] max-w-[1320px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+            Audiology Associates of Westchester has served the tri-state community for over 30 years. We offer hearing aid fittings, hearing evaluations, hearing rehabilitation, tinnitus therapy, and more at our Somers and Harrison locations.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Audiologists
+          </h2>
+          <LiveRule />
+          <ul className="mt-[38px] max-w-[1320px] space-y-4 text-[22px] leading-[1.35] text-black max-md:text-[18px]">
+            {[
+              "Au.D., current N.Y.S. licensure for audiology and hearing aid dispensing, and board certification.",
+              "Excellent interpersonal skills for working with a diverse patient, colleague, and vendor population.",
+              "Strong listening, sales, and problem-solving skills.",
+              "Ability to organize time and prioritize numerous duties within deadlines.",
+              "Ability to work in a team environment and maintain a positive, professional attitude in a fast-paced setting."
+            ].map((item) => (
+              <li className="flex gap-3" key={item}>
+                <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={24} aria-hidden="true" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Hearing Instrument Specialists
+          </h2>
+          <LiveRule />
+          <div className="mt-[38px] max-w-[1320px] space-y-6 text-[22px] leading-[1.35] text-black max-md:text-[18px]">
+            <p>HIS, current N.Y.S. licensure for hearing aid dispensing.</p>
+            <p>Administers tests to evaluate hearing and hearing aid fittings.</p>
+            <p>
+              Hearing aid specialists require exceptional customer service and oral communication skills. They also need to be capable teachers because they educate clients on how to care for the devices they purchase.
+            </p>
+            <p>
+              Mechanical and problem-solving skills are needed to identify technical issues with a client's device and effectively repair the device.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#dbe9f3] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Interested in working with us?
+          </h2>
+          <LiveRule />
+          <p className="mt-[38px] max-w-[1320px] text-[22px] leading-[1.35] text-black max-md:text-[18px]">
+            Call today to learn more about career opportunities with Audiology Associates of Westchester.
+          </p>
+          <a
+            className="focus-ring mt-8 inline-flex items-center gap-2 bg-[#005a9c] px-8 py-4 text-[20px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
+            data-track="phone-careers"
+            href={primaryPhoneHref}
+          >
+            <Phone size={22} aria-hidden="true" />
+            Call Now
+          </a>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function LivePageBody({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
   const image = page.heroImage;
@@ -1946,6 +2140,19 @@ function LiveContactPage({ page }: { page: SitePage }) {
     page.body.find((line) => line.startsWith("When you visit") && !line.includes("With two convenient")),
     page.body.find((line) => line.startsWith("With two convenient"))
   ].filter((line): line is string => Boolean(line));
+  const officeMapLinks = {
+    "/Somers-NY": {
+      embed:
+        "https://www.google.com/maps?q=325%20NY%20100%2C%20Somers%2C%20NY%2010589&output=embed",
+      maps: "https://google.com/maps?ll=41.326271,-73.688044&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584"
+    },
+    "/harrison-ny": {
+      embed:
+        "https://www.google.com/maps?q=550%20Mamaroneck%20Ave%20Suite%20407%2C%20Harrison%2C%20NY%2010528&output=embed",
+      maps:
+        "https://www.google.com/maps/place/Audiology+Associates+of+Westchester/@40.9796102,-73.7452172,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2941f220a4edf:0x3781801f76f64a38!8m2!3d40.9796062!4d-73.7426423!16s%2Fg%2F1thvtmkc?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
+    }
+  };
 
   return (
     <>
@@ -1966,43 +2173,85 @@ function LiveContactPage({ page }: { page: SitePage }) {
           <div className="mt-[42px] grid gap-[64px] lg:grid-cols-2">
             {[locations.find((location) => location.path === "/Somers-NY"), locations.find((location) => location.path === "/harrison-ny")]
               .filter((location): location is (typeof locations)[number] => Boolean(location))
-              .map((location) => (
-                <address className="space-y-[10px] text-[24px] leading-[1.35] text-black not-italic" key={location.path}>
-                  <Link className="font-bold text-[#005a9c] underline" href={location.path}>
-                    {location.name}
-                  </Link>
-                  {location.path === "/Somers-NY" ? (
-                    <>
-                      <p>325 NY 100</p>
-                      <p>Somers, NY 10589</p>
-                    </>
-                  ) : (
-                    <>
-                      <p>550 Mamaroneck Ave, Suite 407 (4th floor)</p>
-                      <p>Harrison, NY 10528</p>
-                    </>
-                  )}
-                  <p>
-                    Phone:{" "}
-                    <a className="text-[#005a9c] underline" href={location.phoneHref}>
-                      {location.phone}
-                    </a>
-                  </p>
-                  {location.fax ? <p>Fax: {location.fax}</p> : null}
-                  <p className="pt-[8px] font-bold">Hours of Operation</p>
-                  {location.path === "/Somers-NY" ? (
-                    <>
-                      <p>Monday, Tuesday, Wednesday, Thursday</p>
-                      <p>8:30am – 5:00pm</p>
-                    </>
-                  ) : (
-                    <>
-                      <p>Monday-Friday</p>
-                      <p>8:30am – 5:00pm</p>
-                    </>
-                  )}
-                </address>
-              ))}
+              .map((location) => {
+                const mapLinks = officeMapLinks[location.path as keyof typeof officeMapLinks];
+
+                return (
+                  <div className="text-center" key={location.path}>
+                    <address className="space-y-[10px] text-[24px] leading-[1.35] text-black not-italic">
+                      <Link className="font-bold text-[#005a9c] underline" href={location.path}>
+                        {location.name}
+                      </Link>
+                      {location.path === "/Somers-NY" ? (
+                        <>
+                          <p>325 NY 100</p>
+                          <p>Somers, NY 10589</p>
+                        </>
+                      ) : (
+                        <>
+                          <p>550 Mamaroneck Ave, Suite 407 (4th floor)</p>
+                          <p>Harrison, NY 10528</p>
+                        </>
+                      )}
+                      <p>
+                        Phone:{" "}
+                        <a className="text-[#005a9c] underline" href={location.phoneHref}>
+                          {location.phone}
+                        </a>
+                      </p>
+                      <p>Fax: {location.fax || ""}</p>
+                      <p className="pt-[8px] font-bold">Hours of Operation</p>
+                      {location.path === "/Somers-NY" ? (
+                        <>
+                          <p>Monday: 8:30am - 5:00pm</p>
+                          <p>Tuesday: 8:30am - 5:00pm</p>
+                          <p>Wednesday: 8:30am - 5:00pm</p>
+                          <p>Thursday: Closed</p>
+                          <p>Friday: 8:30am - 2:30pm</p>
+                        </>
+                      ) : (
+                        <>
+                          <p>Monday-Friday</p>
+                          <p>8:30am - 5:00pm</p>
+                        </>
+                      )}
+                    </address>
+
+                    {mapLinks ? (
+                      <div className="mt-[34px] overflow-hidden border border-[#d6d6d6] bg-[#f7f7f5]">
+                        <iframe
+                          aria-label={`${location.name} map`}
+                          className="h-[300px] w-full"
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          src={mapLinks.embed}
+                        />
+                      </div>
+                    ) : null}
+
+                    <div className="mx-auto mt-[22px] flex max-w-[560px] flex-col gap-3 sm:flex-row">
+                      <a
+                        className="focus-ring inline-flex flex-1 items-center justify-center gap-2 bg-[#005a9c] px-6 py-4 text-[20px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
+                        data-track="phone-contact-location"
+                        href={location.phoneHref}
+                      >
+                        <Phone size={22} aria-hidden="true" />
+                        Call Now
+                      </a>
+                      {mapLinks ? (
+                        <a
+                          className="focus-ring inline-flex flex-1 items-center justify-center rounded-full border-2 border-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+                          href={mapLinks.maps}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          Get Directions
+                        </a>
+                      ) : null}
+                    </div>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </section>
@@ -2024,16 +2273,29 @@ function LivePatientFormsPage({ page }: { page: SitePage }) {
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-10 text-center">
-        <div className="mx-auto max-w-[980px] px-5">
-          <h1 className="text-[38px] font-black text-[#333]">{page.h1}</h1>
-          <LiveTextBlock lines={page.body.slice(0, 8)} />
-          <div className="mt-8 space-y-3 text-[18px] leading-7">
-            {patientForms.map((form) => (
-              <a className="block font-bold text-[#005a9c] underline" href={form.href} key={form.href} rel="noreferrer" target="_blank">
-                {form.label}
-              </a>
-            ))}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-[1160px] px-5">
+          <div className="text-center">
+            <h1 className="text-[38px] font-black text-[#333] max-md:text-[32px]">{page.h1}</h1>
+            <p className="mx-auto mt-6 max-w-[1020px] text-[21px] leading-[1.45] text-black max-md:text-[18px]">
+              Please take the time to download, print and fill out the following before your first office visit.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-12 max-w-[860px] rounded-2xl border border-[#d6d6d6] bg-[#fafafa] px-6 py-8 md:px-10">
+            <div className="grid gap-5">
+              {patientForms.map((form) => (
+                <a
+                  className="text-[18px] font-black leading-tight text-[#005a9c] underline underline-offset-4 transition hover:text-[#003f7a] md:text-[21px]"
+                  href={form.href}
+                  key={form.href}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {form.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -2819,6 +3081,24 @@ export function PageRenderer({ page }: { page: SitePage }) {
       <>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <ProviderProfilePage page={page} />
+      </>
+    );
+  }
+
+  if (page.path === "/hearing-testing") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <HearingTestingPage page={page} />
+      </>
+    );
+  }
+
+  if (page.path === "/careers") {
+    return (
+      <>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        <CareersPage page={page} />
       </>
     );
   }

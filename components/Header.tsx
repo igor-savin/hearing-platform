@@ -65,7 +65,7 @@ const navGroups = [
     href: "/contact-us",
     links: [
       ["PATIENT FORMS", "/patient-forms"],
-      ["SOMERS, NY OFFICE", "/Somers-NY"],
+      ["SOMERS, NY", "/Somers-NY"],
       ["HARRISON, NY", "/harrison-ny"]
     ]
   }

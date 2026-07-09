@@ -178,7 +178,13 @@ export const locations: Location[] = [
     phone: "(914) 556-6720",
     phoneHref: "tel:+19145566720",
     fax: "(914) 556-6722",
-    hours: ["Monday, Tuesday, Wednesday, Thursday: 8:30am - 5:00pm"],
+    hours: [
+      "Monday: 8:30am - 5:00pm",
+      "Tuesday: 8:30am - 5:00pm",
+      "Wednesday: 8:30am - 5:00pm",
+      "Thursday: Closed",
+      "Friday: 8:30am - 2:30pm"
+    ],
     type: "office",
     nearby: ["Mahopac", "Putnam Valley", "Mt. Kisco", "Northern Westchester"]
   },
@@ -768,7 +774,9 @@ function relatedLinks(page: SitePage) {
   ].filter((link) => link.href !== page.path);
 
   if (page.type === "blog-post") {
-    return generatedPages
+    const curatedLinks = editorialBlogRelatedLinks[page.path];
+    if (curatedLinks) return curatedLinks;
+    return [...generatedPages, ...editorialBlogPosts]
       .filter((post) => post.path !== page.path)
       .filter((post) => post.type === "blog-post")
       .map((post) => ({ label: post.h1, href: post.path }))
@@ -811,6 +819,242 @@ const generatedPages = uniqueCrawlPages
     };
   })
   .sort((a, b) => (a.path === "/" ? -1 : b.path === "/" ? 1 : a.path.localeCompare(b.path)));
+
+const editorialImages = {
+  hearingAidFit: { src: "/assets/blog-hearing-aid-fit.png", alt: "Adult adjusting a hearing aid comfortably at home" },
+  conversation: { src: "/assets/blog-conversation.png", alt: "Two adults having an easy conversation at a cafe" },
+  headphones: { src: "/assets/blog-headphones.png", alt: "Adult listening with over-ear headphones at home" },
+  earCare: { src: "/assets/blog-ear-care.png", alt: "Adult gently drying the outside of an ear with a towel" },
+  careOptions: { src: "/assets/blog-hearing-care-options.png", alt: "Adult reviewing hearing care options at home" }
+};
+
+const editorialBlogPosts: SitePage[] = [
+  {
+    path: "/how-far-do-you-push-hearing-aid-in",
+    url: `${baseUrl}/how-far-do-you-push-hearing-aid-in`,
+    title: "How Far Should a Hearing Aid Go In?",
+    metaTitle: `How Far Should a Hearing Aid Go In? | ${siteName}`,
+    metaDescription: "Learn how hearing aids should sit in the ear, why comfort and feedback matter, and when Westchester patients should schedule a fitting adjustment.",
+    h1: "How Far Should a Hearing Aid Go In?",
+    type: "blog-post",
+    lastModified: "2026-07-09",
+    canonical: `${baseUrl}/how-far-do-you-push-hearing-aid-in`, heroImage: editorialImages.hearingAidFit, images: [editorialImages.hearingAidFit], sections: [], faqs: [], related: [],
+    body: [
+      "A hearing aid should feel secure and comfortable, not forced. The right position depends on the device style, your ear anatomy, and whether you use a dome, custom mold, or an invisible device.",
+      "For receiver-in-canal devices, the dome usually sits comfortably in the ear canal while the hearing aid rests behind the ear. An in-the-ear device should sit flush enough to feel stable without creating pain or pressure.",
+      "If you hear whistling, notice soreness, feel the device working loose, or need to push it in repeatedly, do not keep forcing it. A dome, receiver length, mold, wax filter, or fit may need attention.",
+      "A fitting follow-up is the best place to resolve those questions. The audiology team can check comfort, retention, feedback, cleaning, and sound quality—and show you the placement technique that fits your specific device."
+    ]
+  },
+  {
+    path: "/understanding-hearing-loss-at-4000-hz",
+    url: `${baseUrl}/understanding-hearing-loss-at-4000-hz`,
+    title: "What Does Hearing Loss at 4,000 Hz Mean?",
+    metaTitle: `What Does Hearing Loss at 4,000 Hz Mean? | ${siteName}`,
+    metaDescription: "Understand why 4,000 Hz is an important hearing-test frequency, how high-frequency hearing loss affects speech clarity, and when to schedule testing.",
+    h1: "Understanding Hearing Loss at 4,000 Hz",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/understanding-hearing-loss-at-4000-hz`, heroImage: editorialImages.conversation, images: [editorialImages.conversation], sections: [], faqs: [], related: [],
+    body: [
+      "A 4,000 Hz finding on an audiogram refers to a high-pitched frequency tested during a hearing evaluation. Changes there are common and can make speech sound less crisp, especially in background noise.",
+      "High-frequency hearing loss can affect consonants such as s, f, th, sh, and t. That is why someone may say, ‘I can hear people talking, but I miss the words,’ particularly in restaurants, meetings, cars, and family gatherings.",
+      "Noise exposure, aging, some medications, and other factors can contribute. The audiogram pattern matters more than a single number, so results should be explained alongside speech understanding and your real listening experiences.",
+      "If hearing at 4,000 Hz has changed, an audiologist can help determine whether monitoring, hearing protection, hearing technology, or medical follow-up is appropriate."
+    ]
+  },
+  {
+    path: "/what-is-the-60-60-rule-in-audiology",
+    url: `${baseUrl}/what-is-the-60-60-rule-in-audiology`,
+    title: "The 60–60 Rule for Headphones",
+    metaTitle: `The 60–60 Rule for Headphones | ${siteName}`,
+    metaDescription: "Learn the 60–60 headphone guideline, its limits, and practical ways to protect your hearing in daily life.",
+    h1: "What Is the 60–60 Rule in Audiology?",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/what-is-the-60-60-rule-in-audiology`, heroImage: editorialImages.headphones, images: [editorialImages.headphones], sections: [], faqs: [], related: [],
+    body: [
+      "The 60–60 rule is a simple reminder: aim for no more than about 60 percent volume for about 60 minutes at a time, then give your ears a break. It is a useful starting point, not a precise medical threshold for every device or setting.",
+      "The safer listening level depends on the headphones, the recording, the environment, and your own hearing. If you need to raise volume to overcome subway noise, gym music, or a busy office, you may already be listening louder than you realize.",
+      "Noise-canceling or well-fitting headphones can help because they reduce the urge to turn volume up. A good rule of thumb is that you should still be able to notice someone speaking nearby without removing your headphones.",
+      "Ringing after listening, muffled hearing, or sensitivity to sound are signs to give your ears a break and schedule a hearing evaluation if symptoms persist."
+    ]
+  },
+  {
+    path: "/understanding-and-treating-dry-ears",
+    url: `${baseUrl}/understanding-and-treating-dry-ears`,
+    title: "Dry, Itchy Ears: Common Causes and Next Steps",
+    metaTitle: `Dry, Itchy Ears: Causes and Care | ${siteName}`,
+    metaDescription: "Learn common reasons ears can feel dry or itchy, which home habits can make irritation worse, and when to seek medical care.",
+    h1: "Understanding Dry, Itchy Ears",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/understanding-and-treating-dry-ears`, heroImage: editorialImages.earCare, images: [editorialImages.earCare], sections: [], faqs: [], related: [],
+    body: [
+      "Dry or itchy ears are common, but the cause is not always simply ‘not enough wax.’ Skin conditions, irritation from products, allergies, earbuds, hearing aids, frequent cleaning, and infection can all play a role.",
+      "Avoid putting cotton swabs, oils, or objects deeply into the ear canal. They can push wax further in, scratch delicate skin, or make an underlying problem harder to identify.",
+      "If you wear hearing aids or earbuds, regular cleaning and fit checks matter. A device that traps moisture or rubs the skin can contribute to irritation, and the solution may be as simple as a cleaning routine or fit adjustment.",
+      "Ear pain, drainage, swelling, hearing changes, fever, or persistent itching need medical assessment. An ear inspection can distinguish wax, skin irritation, infection, and other causes."
+    ]
+  },
+  {
+    path: "/what-is-the-best-hearing-aid-sold-at-costco",
+    url: `${baseUrl}/what-is-the-best-hearing-aid-sold-at-costco`,
+    title: "What Is the Best Hearing Aid at Costco?",
+    metaTitle: `Best Hearing Aid at Costco? How to Compare | ${siteName}`,
+    metaDescription: "A practical guide to comparing Costco hearing aids, professional fitting, verification, follow-up care, and the questions Westchester patients should ask.",
+    h1: "What Is the Best Hearing Aid Sold at Costco?",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/what-is-the-best-hearing-aid-sold-at-costco`, heroImage: editorialImages.careOptions, images: [editorialImages.careOptions], sections: [], faqs: [], related: [],
+    body: [
+      "There is no universally best hearing aid at Costco—or anywhere else. A good choice depends on your hearing test, speech understanding, listening environments, comfort, dexterity, phone needs, and the quality of follow-up care.",
+      "Costco can be a sensible option for some people with straightforward hearing needs and a preference for a limited selection. Before choosing, ask who will provide your care, what testing is included, how the fitting will be verified, and how adjustments will work after purchase.",
+      "For patients with tinnitus, sudden or uneven hearing changes, dizziness, complex listening concerns, or prior difficulty with hearing aids, a comprehensive audiology evaluation can help clarify what is going on before a device is selected.",
+      "The most valuable question is not which model has the most features. It is whether the device, fitting process, verification, and ongoing support match the way you actually live and communicate."
+    ]
+  },
+  {
+    path: "/how-much-does-costco-charge-for-a-hearing-test",
+    url: `${baseUrl}/how-much-does-costco-charge-for-a-hearing-test`,
+    title: "How Much Does a Costco Hearing Test Cost?",
+    metaTitle: `Costco Hearing Test Cost and What to Compare | ${siteName}`,
+    metaDescription: "Learn what to ask when comparing a retail hearing screening with a comprehensive audiology evaluation in Westchester County.",
+    h1: "How Much Does Costco Charge for a Hearing Test?",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/how-much-does-costco-charge-for-a-hearing-test`, heroImage: editorialImages.careOptions, images: [editorialImages.careOptions], sections: [], faqs: [], related: [],
+    body: [
+      "Retail hearing centers may offer a no-cost hearing test or screening, often connected to a hearing-aid consultation. Policies, membership requirements, and what is included can change, so confirm details directly with the location before scheduling.",
+      "Price alone does not show whether two appointments are comparable. Ask whether the visit includes a full case history, ear inspection, hearing thresholds, speech testing, middle-ear testing when appropriate, a review of red flags, and a clear explanation of results.",
+      "A comprehensive audiology evaluation is especially important when you have one-sided symptoms, sudden changes, tinnitus, dizziness, ear pressure, ear pain, or difficulty understanding speech despite ‘normal’ volume.",
+      "At Audiology Associates of Westchester, the goal of testing is to understand your hearing and guide the next step—not simply determine whether a device can be sold."
+    ]
+  },
+  {
+    path: "/what-are-the-red-flags-for-audiology-referrals",
+    url: `${baseUrl}/what-are-the-red-flags-for-audiology-referrals`,
+    title: "Audiology Red Flags: When Hearing Symptoms Need Prompt Care",
+    metaTitle: `Audiology Red Flags and Referrals | ${siteName}`,
+    metaDescription: "Know the hearing symptoms that may need prompt medical attention, including sudden hearing loss, one-sided changes, dizziness, and pulsatile tinnitus.",
+    h1: "What Are the Red Flags for Audiology Referrals?",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/what-are-the-red-flags-for-audiology-referrals`, heroImage: editorialImages.careOptions, images: [editorialImages.careOptions], sections: [], faqs: [], related: [],
+    body: [
+      "Most hearing changes are not emergencies, but certain symptoms should never be treated as routine. Early attention can matter when a hearing or ear problem is sudden, one-sided, painful, or accompanied by balance or neurological symptoms.",
+      "Seek prompt medical guidance for sudden hearing loss, severe spinning dizziness, facial weakness or numbness, a severe new headache, hearing changes after injury, or tinnitus that sounds like a heartbeat.",
+      "New one-sided hearing loss or tinnitus, persistent drainage, severe ear pain, significant pressure, and a major difference between ears also deserve timely evaluation. An audiologist can document hearing findings and help identify when ENT or other medical assessment is needed.",
+      "This list is educational, not a diagnosis. If symptoms feel urgent or severe, use emergency or urgent medical services rather than waiting for a routine hearing appointment."
+    ]
+  },
+  {
+    path: "/how-many-hours-a-day-should-you-wear-new-hearing-aids",
+    url: `${baseUrl}/how-many-hours-a-day-should-you-wear-new-hearing-aids`,
+    title: "How Many Hours a Day Should You Wear New Hearing Aids?",
+    metaTitle: `Wearing New Hearing Aids: A Practical Schedule | ${siteName}`,
+    metaDescription: "Learn how to build comfortable hearing-aid wear time, what adjustment feels like, and when to call your audiologist for help.",
+    h1: "How Many Hours a Day Should You Wear New Hearing Aids?",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/how-many-hours-a-day-should-you-wear-new-hearing-aids`, heroImage: editorialImages.hearingAidFit, images: [editorialImages.hearingAidFit], sections: [], faqs: [], related: [],
+    body: [
+      "Most new hearing-aid users do best by wearing their devices consistently during waking hours, following the plan set by their audiologist. Your brain needs real-world sound exposure to adapt to changes in clarity and amplification.",
+      "At first, ordinary sounds may seem unusually sharp, busy, or present. Your own voice, running water, paper, dishes, and traffic can stand out. That adjustment is common, but pain, harsh sound, feedback, or headaches are reasons to call rather than simply pushing through.",
+      "Begin in familiar settings, practice putting devices in and taking them out, and make notes about the situations that feel most successful or difficult. Those notes make follow-up programming more useful.",
+      "Do not compare your experience to someone else’s timeline. Hearing loss, device settings, listening demands, and prior sound exposure are different for every patient."
+    ]
+  },
+  {
+    path: "/how-to-get-water-out-of-your-ear",
+    url: `${baseUrl}/how-to-get-water-out-of-your-ear`,
+    title: "How to Get Water Out of Your Ear Safely",
+    metaTitle: `How to Get Water Out of Your Ear Safely | ${siteName}`,
+    metaDescription: "Safe first steps for a water-trapped ear, what to avoid, and when pain, drainage, or hearing changes need medical care.",
+    h1: "How to Get Water Out of Your Ear Safely",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/how-to-get-water-out-of-your-ear`, heroImage: editorialImages.earCare, images: [editorialImages.earCare], sections: [], faqs: [], related: [],
+    body: [
+      "Water in the ear often clears on its own, but a blocked sensation can be annoying. Start gently: tilt the affected ear downward, pull the outer ear lightly, and give gravity time to work.",
+      "Do not insert cotton swabs, hairpins, or other objects into the canal. They can scratch the skin, compact wax, or create a pathway for infection.",
+      "If water stays trapped, you have pain, drainage, fever, swelling, hearing loss, tubes, a known eardrum perforation, or a history of ear surgery, contact a medical professional for advice rather than using drops or home remedies.",
+      "Frequent swimmers and people who wear hearing aids may benefit from an ear inspection if the blocked sensation keeps returning. Wax or skin irritation can make water feel trapped more easily."
+    ]
+  },
+  {
+    path: "/how-to-relieve-ear-pressure",
+    url: `${baseUrl}/how-to-relieve-ear-pressure`,
+    title: "Ear Pressure: What May Help and When to Get Checked",
+    metaTitle: `Ear Pressure Relief and When to Seek Care | ${siteName}`,
+    metaDescription: "Understand common causes of ear pressure, safe next steps, and symptoms that require medical evaluation.",
+    h1: "How to Relieve Ear Pressure",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/how-to-relieve-ear-pressure`, heroImage: editorialImages.earCare, images: [editorialImages.earCare], sections: [], faqs: [], related: [],
+    body: [
+      "Ear pressure can happen with colds, allergies, altitude changes, congestion, jaw tension, wax, or middle-ear concerns. The right approach depends on what else you are noticing.",
+      "For mild pressure related to travel or congestion, swallowing, yawning, chewing, and staying hydrated may help. Avoid forceful pressure maneuvers if you have ear pain, infection symptoms, recent surgery, or are unsure what is causing the sensation.",
+      "Pressure paired with severe pain, drainage, fever, new hearing loss, spinning dizziness, or one-sided tinnitus should be evaluated medically. Those symptoms can point to something more than a routine altitude change.",
+      "If pressure is recurring or affecting your hearing, an ear and hearing evaluation can help distinguish wax, middle-ear changes, hearing loss, and other contributors."
+    ]
+  },
+  {
+    path: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly",
+    url: `${baseUrl}/8-expert-tips-to-conceal-your-hearing-aids-discreetly`,
+    title: "8 Ways to Wear Hearing Aids More Discreetly",
+    metaTitle: `How to Wear Hearing Aids Discreetly | ${siteName}`,
+    metaDescription: "Practical ways to choose and wear hearing aids discreetly without sacrificing comfort, fit, or sound quality.",
+    h1: "8 Ways to Wear Hearing Aids More Discreetly",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/8-expert-tips-to-conceal-your-hearing-aids-discreetly`, heroImage: editorialImages.hearingAidFit, images: [editorialImages.hearingAidFit], sections: [], faqs: [], related: [],
+    body: [
+      "Many people want hearing aids to feel private and unobtrusive. The best approach is not to hide a poorly fitting device—it is to choose a style that balances your hearing needs, comfort, handling, lifestyle, and cosmetic preferences.",
+      "Ask about small receiver-in-canal models, in-the-ear styles, color choices that work with hair or skin tone, rechargeable options, and invisible or extended-wear devices when clinically appropriate. Not every small style is right for every hearing loss or ear canal.",
+      "A well-fitted device is less noticeable because it stays in place, does not whistle, and does not require constant adjustment. If you wear glasses, masks, hats, or use a phone frequently, bring that into the fitting conversation.",
+      "Hearing aids are communication tools, not something to apologize for. The right device should help you participate more easily in the conversations and activities that matter to you."
+    ]
+  }
+];
+
+const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[]> = {
+  "/how-far-do-you-push-hearing-aid-in": [
+    { label: "Wearing New Hearing Aids", href: "/how-many-hours-a-day-should-you-wear-new-hearing-aids" },
+    { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+    { label: "Ways to Wear Hearing Aids More Discreetly", href: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly" }
+  ],
+  "/understanding-hearing-loss-at-4000-hz": [
+    { label: "The 60–60 Rule for Headphones", href: "/what-is-the-60-60-rule-in-audiology" },
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "Hearing Protection", href: "/hearing-protection" }
+  ],
+  "/what-is-the-60-60-rule-in-audiology": [
+    { label: "Understanding Hearing Loss at 4,000 Hz", href: "/understanding-hearing-loss-at-4000-hz" },
+    { label: "Hearing Protection", href: "/hearing-protection" },
+    { label: "Hearing Testing", href: "/hearing-testing" }
+  ],
+  "/understanding-and-treating-dry-ears": [
+    { label: "How to Get Water Out of Your Ear Safely", href: "/how-to-get-water-out-of-your-ear" },
+    { label: "Ear Pressure: What May Help", href: "/how-to-relieve-ear-pressure" },
+    { label: "Hearing Testing", href: "/hearing-testing" }
+  ],
+  "/what-is-the-best-hearing-aid-sold-at-costco": [
+    { label: "Costco Hearing Test Cost", href: "/how-much-does-costco-charge-for-a-hearing-test" },
+    { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+    { label: "Hearing Testing", href: "/hearing-testing" }
+  ],
+  "/how-much-does-costco-charge-for-a-hearing-test": [
+    { label: "Comparing Costco Hearing Aids", href: "/what-is-the-best-hearing-aid-sold-at-costco" },
+    { label: "Audiology Red Flags", href: "/what-are-the-red-flags-for-audiology-referrals" },
+    { label: "Hearing Testing", href: "/hearing-testing" }
+  ],
+  "/what-are-the-red-flags-for-audiology-referrals": [
+    { label: "Sudden or Worsening Tinnitus", href: "/how-we-can-help/tinnitus-management/sudden-or-worsening-tinnitus" },
+    { label: "Ear Pressure: What May Help", href: "/how-to-relieve-ear-pressure" },
+    { label: "Hearing Testing", href: "/hearing-testing" }
+  ],
+  "/how-many-hours-a-day-should-you-wear-new-hearing-aids": [
+    { label: "How Far Should a Hearing Aid Go In?", href: "/how-far-do-you-push-hearing-aid-in" },
+    { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+    { label: "Ways to Wear Hearing Aids More Discreetly", href: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly" }
+  ],
+  "/how-to-get-water-out-of-your-ear": [
+    { label: "Dry, Itchy Ears", href: "/understanding-and-treating-dry-ears" },
+    { label: "Ear Pressure: What May Help", href: "/how-to-relieve-ear-pressure" },
+    { label: "Hearing Testing", href: "/hearing-testing" }
+  ],
+  "/how-to-relieve-ear-pressure": [
+    { label: "How to Get Water Out of Your Ear Safely", href: "/how-to-get-water-out-of-your-ear" },
+    { label: "Dry, Itchy Ears", href: "/understanding-and-treating-dry-ears" },
+    { label: "Audiology Red Flags", href: "/what-are-the-red-flags-for-audiology-referrals" }
+  ],
+  "/8-expert-tips-to-conceal-your-hearing-aids-discreetly": [
+    { label: "How Far Should a Hearing Aid Go In?", href: "/how-far-do-you-push-hearing-aid-in" },
+    { label: "Wearing New Hearing Aids", href: "/how-many-hours-a-day-should-you-wear-new-hearing-aids" },
+    { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+  ]
+};
 
 const howWeCanHelpPages: SitePage[] = [
   {
@@ -1038,7 +1282,7 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
-export const pages: SitePage[] = [...generatedPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
@@ -1050,7 +1294,7 @@ export const pagePaths = pages.map((page) => page.path);
 export const blogPosts = pages.filter((page) => page.type === "blog-post");
 
 export function getPageByPath(path: string) {
-  return pages.find((page) => page.path === path);
+  return pages.find((page) => page.path === path) ?? pages.find((page) => page.path.toLowerCase() === path.toLowerCase());
 }
 
 export function toPath(slug?: string[]) {
@@ -1060,7 +1304,7 @@ export function toPath(slug?: string[]) {
 
 export function buildMetadata(page: SitePage): Metadata {
   const image = page.heroImage?.src || "/opengraph-image";
-  const robots = page.path === "/thank-you" ? { index: true, follow: true } : undefined;
+  const robots = page.path === "/thank-you" ? { index: false, follow: true } : undefined;
 
   return {
     title: page.metaTitle,
