@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
@@ -85,6 +89,28 @@ function SocialCircle({ label, href, children }: { label: string; href: string; 
 }
 
 export function Header() {
+  const pathname = usePathname();
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
+  const [dismissedMenu, setDismissedMenu] = useState<string | null>(null);
+
+  useEffect(() => {
+    setOpenMenu(null);
+    setDismissedMenu(null);
+  }, [pathname]);
+
+  function openDropdown(label: string) {
+    if (dismissedMenu !== label) setOpenMenu(label);
+  }
+
+  function closeDropdown() {
+    setOpenMenu(null);
+  }
+
+  function dismissDropdown(label?: string) {
+    setOpenMenu(null);
+    setDismissedMenu(label || null);
+  }
+
   return (
     <header className="legacy-header bg-white">
       <div className="relative mx-auto flex min-h-[171px] w-full max-w-[2048px] items-center justify-center px-5 py-4">
@@ -141,10 +167,7 @@ export function Header() {
         <div className="mx-auto max-w-[1760px] px-2">
           <ul className="flex flex-nowrap items-stretch justify-center">
             <li className="flex">
-              <Link
-                className={navItemClass}
-                href="/"
-              >
+              <Link className={navItemClass} href="/" onClick={() => dismissDropdown()}>
                 HOME
               </Link>
             </li>
@@ -155,17 +178,28 @@ export function Header() {
                   <Link
                     className={navItemClass}
                     href="/areas-we-serve"
+                    onClick={() => dismissDropdown()}
                   >
                     AREAS WE SERVE
                   </Link>
                 </li>
               ) : null}
-              <li className="legacy-nav-item relative flex">
+              <li
+                className="legacy-nav-item relative flex"
+                data-open={openMenu === group.label ? "true" : undefined}
+                onFocus={() => openDropdown(group.label)}
+                onMouseEnter={() => openDropdown(group.label)}
+                onMouseLeave={() => {
+                  closeDropdown();
+                  setDismissedMenu(null);
+                }}
+              >
                 <div className="legacy-nav-trigger flex h-full items-stretch">
                   {group.href ? (
                     <Link
                       className={navItemClass}
                       href={group.href}
+                      onClick={() => dismissDropdown(group.label)}
                     >
                       {group.label}
                       <ChevronDown size={16} aria-hidden="true" />
@@ -173,6 +207,7 @@ export function Header() {
                   ) : (
                     <button
                       className={`${navItemClass} cursor-default`}
+                      onClick={() => setOpenMenu(openMenu === group.label ? null : group.label)}
                       type="button"
                     >
                       {group.label}
@@ -188,6 +223,7 @@ export function Header() {
                           className="focus-ring grid min-h-[130px] grid-cols-[86px_1fr] items-center gap-[28px] bg-[#dbe9f3] px-[20px] py-[10px] text-black transition hover:bg-[#c8deee]"
                           href={product.href}
                           key={product.href}
+                          onClick={() => dismissDropdown(group.label)}
                         >
                           <Image
                             alt={product.title}
@@ -209,6 +245,7 @@ export function Header() {
                           className="focus-ring text-[16px] font-bold uppercase tracking-[0.06em] text-[#005a9c] underline"
                           href={href}
                           key={href}
+                          onClick={() => dismissDropdown(group.label)}
                         >
                           {label}
                         </Link>
@@ -223,6 +260,7 @@ export function Header() {
                           <Link
                             className="focus-ring legacy-primary-nav-link flex whitespace-nowrap px-[28px] py-[17px] hover:bg-[#005a9c]"
                             href={href}
+                            onClick={() => dismissDropdown(group.label)}
                           >
                             <span>{label}</span>
                             <ChevronDown className="-rotate-90" size={16} aria-hidden="true" />
@@ -233,6 +271,7 @@ export function Header() {
                                 className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
                                 href={providerPath(provider)}
                                 key={provider.slug}
+                                onClick={() => dismissDropdown(group.label)}
                               >
                                 {provider.name}
                               </Link>
@@ -244,6 +283,7 @@ export function Header() {
                           <Link
                             className="focus-ring legacy-primary-nav-link flex whitespace-nowrap px-[28px] py-[17px] hover:bg-[#005a9c]"
                             href={href}
+                            onClick={() => dismissDropdown(group.label)}
                           >
                             <span>{label}</span>
                             <ChevronDown className="-rotate-90" size={16} aria-hidden="true" />
@@ -252,6 +292,7 @@ export function Header() {
                             <Link
                               className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] hover:bg-[#005a9c]"
                               href={tinnitusRootPath}
+                              onClick={() => dismissDropdown(group.label)}
                             >
                               TINNITUS KNOWLEDGE HUB
                             </Link>
@@ -260,6 +301,7 @@ export function Header() {
                                 className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
                                 href={tinnitusPath(topic.slug)}
                                 key={topic.slug}
+                                onClick={() => dismissDropdown(group.label)}
                               >
                                 {topic.title}
                               </Link>
@@ -271,6 +313,7 @@ export function Header() {
                           className="focus-ring legacy-primary-nav-link block whitespace-nowrap border-b border-white/55 px-[28px] py-[17px] last:border-b-0 hover:bg-[#005a9c]"
                           href={href}
                           key={href}
+                          onClick={() => dismissDropdown(group.label)}
                         >
                           {label}
                         </Link>

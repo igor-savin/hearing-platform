@@ -103,7 +103,7 @@ select {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .legacy-nav-item:hover > .legacy-dropdown {
+  .legacy-nav-item[data-open="true"] > .legacy-dropdown {
     display: block;
   }
 
@@ -112,7 +112,7 @@ select {
   }
 }
 
-.legacy-nav-item:focus-within > .legacy-dropdown {
+.legacy-nav-item[data-open="true"] > .legacy-dropdown {
   display: block;
 }
 
