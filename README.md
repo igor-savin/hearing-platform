@@ -13,12 +13,6 @@ npm install --cache .npm-cache
 2. Add environment variables in `.env.local`:
 
 ```bash
-NEXT_PUBLIC_FIREBASE_API_KEY=
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
-NEXT_PUBLIC_FIREBASE_APP_ID=
 NEXT_PUBLIC_GA4_ID=
 NEXT_PUBLIC_GTM_ID=
 NEXT_PUBLIC_FACEBOOK_PIXEL_ID=
@@ -28,6 +22,7 @@ NEXT_PUBLIC_SNOWPLOW_DOMAIN=
 NEXT_PUBLIC_SNOWPLOW_APP_ID=
 RESEND_API_KEY=
 CONTACT_FORM_TO_EMAIL=
+CONTACT_FORM_BCC_EMAIL=
 CONTACT_FORM_FROM_EMAIL=
 ```
 
@@ -54,22 +49,10 @@ Required production variables:
 Optional:
 
 - `CONTACT_FORM_TO_EMAIL`
+- `CONTACT_FORM_BCC_EMAIL`
 - `CONTACT_FORM_FROM_EMAIL`
 
-If `CONTACT_FORM_TO_EMAIL` is not set, submissions temporarily route to `igorsavin+1@gmail.com` for QA. Use a verified sending domain in Resend before launch. For testing, Resend's default sender can be used, but production email should come from an approved practice/domain address.
-
-## Firebase
-
-Firebase remains available for future database, storage, or authentication features.
-
-Authentication is initialized in `lib/firebase.ts` but is not required for the public marketing site.
-
-Firestore and Storage rules are included for future Firebase-backed features:
-
-- Public visitors can upload allowed attachment types up to 10 MB.
-- Public reads, edits, and deletes are blocked.
-
-If public Firebase writes are re-enabled later, add Firebase App Check to reduce automated spam.
+If `CONTACT_FORM_TO_EMAIL` is not set, submissions route to the built-in practice recipient. Use a verified sending domain in Resend before launch. For testing, Resend's default sender can be used, but production email should come from an approved practice/domain address.
 
 ## Tracking Pixels
 
@@ -104,17 +87,7 @@ npm run build
 vercel deploy --prod
 ```
 
-After Vercel returns the production URL, add the Vercel domain to Firebase Authentication:
-
-- Firebase Console
-- Authentication
-- Settings
-- Authorized domains
-- Add domain
-
-Add only the host name, for example `your-project.vercel.app`, not `https://your-project.vercel.app`.
-
-Firebase Hosting config remains in the repo only as a fallback. Firestore and Storage rules can still be deployed separately if needed:
+Firebase Hosting config remains in the repo only as a fallback. Firestore and Storage rules are retained for historical reference and should only be deployed if Firebase-backed features are reintroduced:
 
 ```bash
 firebase deploy --only firestore:rules,storage --project audiology-associates-ca8ab

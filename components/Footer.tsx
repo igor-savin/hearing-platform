@@ -85,14 +85,11 @@ export function Footer() {
         </div>
 
         <nav aria-label="Helpful links" className="mt-[34px] flex flex-wrap justify-center gap-x-6 gap-y-2 text-[15px] leading-tight">
-          <Link className="focus-ring text-[#005a9c] underline" href="/overview">
-            Site Overview
+          <Link className="focus-ring text-[#005a9c] underline" href="/sitemap.xml">
+            Sitemap
           </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-aid-referral-program">
-            Hearing Aid Referral Program
-          </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-tips">
-            Hearing Tips
+          <Link className="focus-ring text-[#005a9c] underline" href="/llms.txt">
+            LLM
           </Link>
           <Link className="focus-ring text-[#005a9c] underline" href="/privacy">
             Privacy

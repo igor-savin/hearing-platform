@@ -421,6 +421,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
           .replace(/^\//, "")
           .replace(/-/g, " ")
           .replace(/\b\w/g, (character) => character.toUpperCase());
+  const isSomersLocation = path === "/Somers-NY";
   const titleish = new Set([page.h1, page.title, page.title.replace(/\s*\|.*$/, ""), pathLabel].map(fixSpacing));
   const sectionish = new Set((page.sections || []).map(fixSpacing).filter(Boolean));
   const isLikelyHeading = (line: string) =>
@@ -430,9 +431,16 @@ function cleanBodyText(page: CrawlPage, path: string) {
     !/^\(?\d{3}\)?/.test(line);
   const lines = page.text
     .map(fixSpacing)
+    .map((line) => (isSomersLocation ? line : line.replace(/\(914\)\s*556-6720/g, primaryPhone)))
     .flatMap(expandBodyLine)
     .filter(Boolean)
     .filter((line) => sectionish.has(line) || /^Call Us Today to Schedule/i.test(line) || !/^Call Us Today/i.test(line))
+    .filter(
+      (line) =>
+        !/We'?d also like to (announce|introduce) (the )?(upcoming )?Somers, NY office/i.test(line) &&
+        !/opening of our newest office in Somers, NY/i.test(line) &&
+        !/newest office in Somers, NY is now open/i.test(line)
+    )
     .filter((line) => line !== primaryPhone)
     .filter((line) => !/^AUDIOLOGY ASSOCIATES OF WESTCHESTER$/i.test(line))
     .filter((line) => !/^WEBSITE DESIGN BY/i.test(line))
@@ -1060,6 +1068,27 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
 };
 
 const aboutTrustPages: SitePage[] = [
+  {
+    path: "/services",
+    url: `${baseUrl}/services`,
+    title: "Services",
+    metaTitle: `Services | ${siteName}`,
+    metaDescription:
+      "Explore the main hearing services at Audiology Associates of Westchester, including hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, and hearing aid repair.",
+    h1: "Services",
+    type: "page",
+    lastModified: "2026-07-10",
+    canonical: `${baseUrl}/services`,
+    images: [],
+    sections: ["Hearing Services", "Choose the Right Next Step", "Frequently Asked Questions"],
+    body: [
+      "Audiology Associates of Westchester offers the core hearing care services patients use most often: testing, hearing aid fitting, tinnitus support, protection, and repair.",
+      "If you are not sure which visit to schedule, start with hearing testing or call the practice for help choosing the best next step.",
+      "The cards below make it easier to compare each service at a glance and move directly to the page that fits your needs."
+    ],
+    faqs: [],
+    related: []
+  },
   {
     path: "/dr-cliff-approved-provider",
     url: `${baseUrl}/dr-cliff-approved-provider`,

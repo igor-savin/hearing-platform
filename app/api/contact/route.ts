@@ -12,8 +12,9 @@ type ContactPayload = {
 
 class EmailConfigurationError extends Error {}
 
-const CONTACT_FORM_RECIPIENTS = ["admin@hearing-care.org"];
-const CONTACT_FORM_BCC_RECIPIENTS = ["igor@hearing-care.org"];
+const DEFAULT_CONTACT_FORM_FROM_EMAIL = "Audiology Associates <admin@hearing-care.org>";
+const DEFAULT_CONTACT_FORM_RECIPIENTS = ["admin@hearing-care.org"];
+const DEFAULT_CONTACT_FORM_BCC_RECIPIENTS = ["igor@hearing-care.org"];
 
 function clean(value: unknown, maxLength = 1000) {
   return String(value || "")
@@ -33,6 +34,15 @@ function escapeHtml(value: string) {
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function emailListFromEnv(value: string | undefined, fallback: string[]) {
+  const parsed = (value || "")
+    .split(",")
+    .map((email) => email.trim())
+    .filter(Boolean);
+
+  return parsed.length ? parsed : fallback;
 }
 
 function textBody(payload: Required<Omit<ContactPayload, "website">>) {
@@ -92,12 +102,16 @@ async function sendContactEmail(payload: Required<Omit<ContactPayload, "website"
     throw new EmailConfigurationError("Contact email delivery is not configured.");
   }
 
-  const from = "Audiology Associates <admin@hearing-care.org>";
-  const recipients = CONTACT_FORM_RECIPIENTS;
-  const bccRecipients = CONTACT_FORM_BCC_RECIPIENTS;
+  const from = clean(process.env.CONTACT_FORM_FROM_EMAIL, 254) || DEFAULT_CONTACT_FORM_FROM_EMAIL;
+  const recipients = emailListFromEnv(process.env.CONTACT_FORM_TO_EMAIL, DEFAULT_CONTACT_FORM_RECIPIENTS);
+  const bccRecipients = emailListFromEnv(process.env.CONTACT_FORM_BCC_EMAIL, DEFAULT_CONTACT_FORM_BCC_RECIPIENTS);
 
-  if (!recipients.length) {
-    throw new EmailConfigurationError("Contact email recipient is not configured.");
+  if (!recipients.length || recipients.some((email) => !isValidEmail(email))) {
+    throw new EmailConfigurationError("Contact email recipients are not configured correctly.");
+  }
+
+  if (bccRecipients.some((email) => !isValidEmail(email))) {
+    throw new EmailConfigurationError("Contact email BCC recipients are not configured correctly.");
   }
 
   const response = await fetch("https://api.resend.com/emails", {

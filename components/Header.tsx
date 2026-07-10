@@ -2,10 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import { productMenuCards } from "@/lib/products";
@@ -56,6 +55,7 @@ const navGroups = [
   },
   {
     label: "SERVICES",
+    href: "/services",
     links: [
       ["HEARING TESTING", "/hearing-testing"],
       ["HEARING AID FITTING", "/hearing-aid-fitting"],
@@ -96,11 +96,24 @@ export function Header() {
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [dismissedMenu, setDismissedMenu] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileOpenGroup, setMobileOpenGroup] = useState<string | null>(null);
 
   useEffect(() => {
     setOpenMenu(null);
     setDismissedMenu(null);
+    setMobileMenuOpen(false);
+    setMobileOpenGroup(null);
   }, [pathname]);
+
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [mobileMenuOpen]);
 
   function openDropdown(label: string) {
     if (dismissedMenu !== label) setOpenMenu(label);
@@ -117,7 +130,32 @@ export function Header() {
 
   return (
     <header className="legacy-header bg-white">
-      <div className="relative mx-auto flex min-h-[171px] w-full max-w-[2048px] items-center justify-center px-5 py-4">
+      <div className="flex items-center justify-between gap-4 border-b border-[#d7e2e3] px-4 py-3 lg:hidden">
+        <Link className="focus-ring block" href="/" aria-label="Audiology Associates of Westchester home">
+          <Image
+            alt="Audiology Associates of Westchester logo"
+            className="h-auto w-[270px] max-w-[68vw]"
+            height={120}
+            priority
+            sizes="68vw"
+            src="/assets/audiology-associates-logo.png"
+            unoptimized
+            width={584}
+          />
+        </Link>
+        <button
+          aria-controls="mobile-navigation"
+          aria-expanded={mobileMenuOpen}
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          className="focus-ring inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#d7e2e3] bg-white text-[#005a9c] shadow-sm"
+          onClick={() => setMobileMenuOpen((value) => !value)}
+          type="button"
+        >
+          {mobileMenuOpen ? <X size={26} aria-hidden="true" /> : <Menu size={26} aria-hidden="true" />}
+        </button>
+      </div>
+
+      <div className="relative mx-auto hidden min-h-[171px] w-full max-w-[2048px] items-center justify-center px-5 py-4 lg:flex">
         <Link
           className="focus-ring legacy-why-button absolute left-[78px] top-[40px] hidden rounded-[4px] bg-[#005a9c] px-[36px] py-[13px] text-[18px] leading-none text-white lg:inline-flex"
           href="/why-choose-us"
@@ -167,7 +205,7 @@ export function Header() {
         </div>
       </div>
 
-      <nav aria-label="Primary navigation" className="legacy-primary-nav bg-[#005a9c] text-white">
+      <nav aria-label="Primary navigation" className="legacy-primary-nav relative hidden bg-[#005a9c] text-white lg:block">
         <div className="mx-auto max-w-[1760px] px-2">
           <ul className="flex flex-nowrap items-stretch justify-center">
             <li className="flex">
@@ -178,7 +216,7 @@ export function Header() {
             {navGroups.map((group) => (
               <Fragment key={group.label}>
               <li
-                className="legacy-nav-item relative flex"
+                className={`legacy-nav-item flex ${group.label === "HEARING AIDS" ? "" : "relative"}`}
                 data-open={openMenu === group.label ? "true" : undefined}
                 onFocus={() => openDropdown(group.label)}
                 onMouseEnter={() => openDropdown(group.label)}
@@ -209,7 +247,7 @@ export function Header() {
                   )}
                 </div>
                 {group.label === "HEARING AIDS" ? (
-                  <div className="legacy-dropdown legacy-hearing-aids-mega absolute left-1/2 top-full z-50 hidden w-[min(1980px,calc(100vw-46px))] -translate-x-1/2 bg-[#f7fbfd] p-[22px] text-black shadow-lg">
+                  <div className="legacy-dropdown legacy-hearing-aids-mega absolute left-1/2 top-full z-50 hidden w-[min(1760px,calc(100vw-32px))] -translate-x-1/2 bg-[#f7fbfd] p-[22px] text-black shadow-lg">
                     <div className="grid gap-x-[54px] gap-y-[48px] lg:grid-cols-3">
                       {productMenuCards.map((product) => (
                         <Link
@@ -320,6 +358,138 @@ export function Header() {
           </ul>
         </div>
       </nav>
+
+      <div
+        aria-hidden={!mobileMenuOpen}
+        className={`fixed inset-0 z-[60] lg:hidden ${mobileMenuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
+        id="mobile-navigation"
+      >
+        <button
+          aria-label="Close menu backdrop"
+          className={`absolute inset-0 bg-black/40 transition-opacity duration-200 ${mobileMenuOpen ? "opacity-100" : "opacity-0"}`}
+          onClick={() => setMobileMenuOpen(false)}
+          type="button"
+        />
+        <div
+          className={`absolute inset-y-0 right-0 w-full max-w-[420px] overflow-hidden bg-[#f7fbfd] shadow-2xl transition-transform duration-300 ease-out ${
+            mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <div className="flex items-center justify-between border-b border-[#d7e2e3] px-5 py-4">
+            <Link className="focus-ring block" href="/" aria-label="Audiology Associates of Westchester home">
+              <Image
+                alt="Audiology Associates of Westchester logo"
+                className="h-auto w-[210px] max-w-[58vw]"
+                height={120}
+                sizes="58vw"
+                src="/assets/audiology-associates-logo.png"
+                unoptimized
+                width={584}
+              />
+            </Link>
+            <button
+              aria-label="Close menu"
+              className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#d7e2e3] bg-white text-[#005a9c]"
+              onClick={() => setMobileMenuOpen(false)}
+              type="button"
+            >
+              <X size={24} aria-hidden="true" />
+            </button>
+          </div>
+
+          <div className="max-h-[calc(100dvh-81px)] overflow-y-auto px-5 py-5">
+            <div className="space-y-3">
+              <Link
+                className="block rounded-2xl border border-[#d5e7f4] bg-white px-4 py-4 text-[17px] font-black uppercase tracking-[0.08em] text-[#003f6f]"
+                href="/"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              {navGroups.map((group) => {
+                const isOpen = mobileOpenGroup === group.label;
+                return (
+                  <div className="overflow-hidden rounded-2xl border border-[#d5e7f4] bg-white" key={group.label}>
+                    <div className="flex items-stretch">
+                      {group.href ? (
+                        <Link
+                          className="flex-1 px-4 py-4 text-[17px] font-black uppercase tracking-[0.08em] text-[#003f6f]"
+                          href={group.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {group.label}
+                        </Link>
+                      ) : (
+                        <div className="flex-1 px-4 py-4 text-[17px] font-black uppercase tracking-[0.08em] text-[#003f6f]">
+                          {group.label}
+                        </div>
+                      )}
+                      <button
+                        aria-expanded={isOpen}
+                        aria-label={`${isOpen ? "Collapse" : "Expand"} ${group.label}`}
+                        className="flex w-14 items-center justify-center border-l border-[#d5e7f4] text-[#005a9c]"
+                        onClick={() => setMobileOpenGroup(isOpen ? null : group.label)}
+                        type="button"
+                      >
+                        <ChevronDown className={`transition-transform ${isOpen ? "rotate-180" : ""}`} size={18} aria-hidden="true" />
+                      </button>
+                    </div>
+                    <div className={`grid transition-all duration-300 ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+                      <div className="overflow-hidden">
+                        <div className="border-t border-[#d5e7f4] px-4 py-3">
+                          {group.href ? (
+                            <Link
+                              className="mb-3 block rounded-xl bg-[#eaf4fb] px-4 py-3 text-sm font-black uppercase tracking-[0.08em] text-[#003f6f]"
+                              href={group.href}
+                              onClick={() => setMobileMenuOpen(false)}
+                            >
+                              View {group.label}
+                            </Link>
+                          ) : null}
+                          <div className="space-y-2">
+                            {group.links.map(([label, href]) => (
+                              <Link
+                                className="block rounded-xl px-3 py-3 text-[16px] font-bold leading-6 text-[#003f6f] hover:bg-[#f7fbfd]"
+                                href={href}
+                                key={href}
+                                onClick={() => setMobileMenuOpen(false)}
+                              >
+                                {label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="mt-5 grid gap-3">
+              <a
+                className="focus-ring inline-flex items-center justify-center gap-2 rounded-2xl bg-[#005a9c] px-5 py-4 text-center text-[16px] font-black !text-white"
+                data-track="phone-header-mobile"
+                href={primaryPhoneHref}
+              >
+                Call {primaryPhone}
+              </a>
+              <ZocdocButton
+                className="!w-full !justify-center !rounded-2xl !bg-[#005a9c] !px-5 !py-4 !text-[16px] !font-black !text-white border border-[#005a9c] shadow-none"
+                label="Request Appointment"
+                trackingId="appointment-mobile-menu"
+              />
+              <Link
+                className="focus-ring inline-flex items-center justify-center rounded-2xl border border-[#005a9c] px-5 py-4 text-[16px] font-black text-[#005a9c]"
+                href="/contact-us"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

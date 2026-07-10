@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { ZocdocButton } from "@/components/ZocdocButton";
@@ -73,6 +74,30 @@ const patientForms = [
     href: "/forms/privacy-notice.pdf"
   }
 ];
+
+const linkedLocationNames = new Map(
+  locations.map((location) => [location.name.replace(/\s+Location$/, ""), location.path])
+);
+
+const linkedPlacePattern =
+  /(Audiology Associates of Westchester|White Plains, NY|Harrison, NY|Scarsdale, NY|Rye, NY|Mt\. Kisco, NY|Greenwich, CT|Somers, NY)/g;
+
+function linkifyText(text: string) {
+  return text.split(linkedPlacePattern).map((part, index) => {
+    const href =
+      part === "Audiology Associates of Westchester"
+        ? "/"
+        : linkedLocationNames.get(part) || null;
+
+    return href ? (
+      <Link className="text-[#005a9c] underline" href={href} key={`${part}-${index}`}>
+        {part}
+      </Link>
+    ) : (
+      <span key={`${part}-${index}`}>{part}</span>
+    );
+  });
+}
 
 const homeImages = {
   banner: "/assets/home-hero.jpg",
@@ -655,7 +680,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
 function HomePage() {
   return (
     <main className="bg-[var(--background)]">
-      <section className="relative isolate min-h-[680px] overflow-hidden bg-[#003f6f] text-white">
+      <section className="relative isolate min-h-[620px] overflow-hidden bg-[#003f6f] text-white md:min-h-[680px]">
         <Image
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
@@ -667,30 +692,28 @@ function HomePage() {
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,47,84,0.90)_0%,rgba(0,90,156,0.70)_48%,rgba(0,90,156,0.16)_100%)]" />
         <div className="absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(0deg,var(--background)_0%,rgba(251,250,247,0)_100%)]" />
-        <div className="container relative z-10 flex min-h-[680px] flex-col justify-center pb-20 pt-16">
+        <div className="container relative z-10 flex min-h-[620px] flex-col justify-center pb-16 pt-10 md:min-h-[680px] md:pb-20 md:pt-16">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">
               Audiology Associates of Westchester
             </p>
-            <h1 className="mt-5 text-[46px] font-black leading-[1.03] md:text-[68px]">
+            <h1 className="mt-5 text-[40px] font-black leading-[1.04] sm:text-[46px] md:text-[68px]">
               You&rsquo;ll Never Say &ldquo;What?&rdquo; Again!
             </h1>
-            <p className="mt-6 max-w-2xl text-xl font-bold leading-8 text-white/88 md:text-2xl">
+            <div className="mt-6 flex max-w-2xl flex-wrap gap-x-4 gap-y-3 text-lg font-bold leading-8 text-white/88 md:text-2xl">
               <Link className="underline decoration-[#ffd45a] decoration-2 underline-offset-8 hover:text-[#ffd45a]" href="/improve-your-hearing">
                 Improve Your Hearing
-              </Link>{" "}
-              <span className="mx-2 text-[#ffd45a]">•</span>{" "}
+              </Link>
               <Link className="underline decoration-[#ffd45a] decoration-2 underline-offset-8 hover:text-[#ffd45a]" href="/products/hearing-aids-by-brand">
                 Hearing Aids
-              </Link>{" "}
-              <span className="mx-2 text-[#ffd45a]">•</span>{" "}
+              </Link>
               <Link className="underline decoration-[#ffd45a] decoration-2 underline-offset-8 hover:text-[#ffd45a]" href="/hearing-testing">
                 Hearing Testing
               </Link>
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            </div>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                className="focus-ring inline-flex items-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white transition hover:bg-[#004a82]"
+                className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white transition hover:bg-[#004a82] sm:w-auto"
                 data-track="phone-home-hero"
                 href={primaryPhoneHref}
               >
@@ -698,7 +721,7 @@ function HomePage() {
                 Call {primaryPhone}
               </a>
               <ZocdocButton
-                className="!bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82]"
+                className="!w-full !justify-center !bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82] sm:!w-auto"
                 label="Request Appointment"
                 trackingId="appointment-home-hero"
               />
@@ -727,7 +750,35 @@ function HomePage() {
               Your Trusted Audiologist
             </h2>
             <p className="mt-5 text-xl font-black leading-8 text-[var(--foreground)]">
-              Serving Greenwich, CT; Scarsdale, Mt. Kisco, White Plains, Harrison, Rye, Somers, NY &amp; Beyond
+              Serving{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/greenwich-ct">
+                Greenwich, CT
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Scarsdale-NY">
+                Scarsdale, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/mt-kisco-ny">
+                Mt. Kisco, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/White-Plains-NY">
+                White Plains, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/harrison-ny">
+                Harrison, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/rye-ny">
+                Rye, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Somers-NY">
+                Somers, NY
+              </Link>{" "}
+              &amp; Beyond
             </p>
             <Link className="focus-ring mt-7 inline-flex rounded-md bg-[#005a9c] px-6 py-4 font-black text-white transition hover:bg-[#004a82]" href="/contact-us">
               Call the nearest location
@@ -850,12 +901,39 @@ function HomePage() {
               appointment, so you never have to say &ldquo;What?&rdquo; again!
             </p>
             <p>
-              Our experienced audiologists care for patients throughout White Plains, Harrison, Rye, Mt. Kisco, and
-              Scarsdale, NY, as well as Greenwich, CT and the rest of Westchester County.
+              Our experienced audiologists care for patients throughout{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/White-Plains-NY">
+                White Plains, NY
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/harrison-ny">
+                Harrison, NY
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/rye-ny">
+                Rye, NY
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/mt-kisco-ny">
+                Mt. Kisco, NY
+              </Link>
+              , and{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Scarsdale-NY">
+                Scarsdale, NY
+              </Link>
+              , as well as{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/greenwich-ct">
+                Greenwich, CT
+              </Link>{" "}
+              and the rest of Westchester County.
             </p>
             <p>
               Give us a call today to schedule an appointment with our hearing doctors at one of our two convenient
-              locations. Additionally, we are proud to introduce the opening of our newest office in Somers, NY!
+              locations. Additionally, we are proud to introduce the opening of our newest office in{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Somers-NY">
+                Somers, NY
+              </Link>
+              !
             </p>
           </div>
         </div>
@@ -1157,12 +1235,12 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <ZocdocButton className="legacy-live-button" label="Book an Appointment" trackingId="areas-index-appointment" />
-            <Link className="legacy-live-button" href="/hearing-testing">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <ZocdocButton className="legacy-live-button inline-flex w-full sm:w-auto" label="Book an Appointment" trackingId="areas-index-appointment" />
+            <Link className="legacy-live-button inline-flex w-full sm:w-auto" href="/hearing-testing">
               Hearing Tests
             </Link>
-            <Link className="legacy-live-button" href="/hearing-aid-fitting">
+            <Link className="legacy-live-button inline-flex w-full sm:w-auto" href="/hearing-aid-fitting">
               Hearing Aid Fitting
             </Link>
           </div>
@@ -1417,6 +1495,96 @@ function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
   );
 }
 
+function ServicesLandingPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="relative isolate overflow-hidden bg-[#003f6f] py-20 text-white">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(255,212,90,0.2),transparent_34%),linear-gradient(90deg,rgba(0,47,84,0.96)_0%,rgba(0,63,111,0.88)_56%,rgba(0,90,156,0.52)_100%)]" />
+        <div className="mx-auto grid max-w-[1660px] gap-10 px-[64px] lg:grid-cols-[1.05fr_0.95fr] lg:items-center max-md:px-5">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Services</p>
+            <h1 className="mt-4 max-w-4xl text-[58px] font-black leading-tight max-md:text-[38px]">
+              {page.h1}
+            </h1>
+            <p className="mt-6 max-w-3xl text-[22px] leading-8 text-white/88 max-md:text-[19px]">
+              {page.metaDescription}
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82] sm:w-auto" href={primaryPhoneHref}>
+                <Phone size={19} aria-hidden="true" />
+                Call {primaryPhone}
+              </a>
+              <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10 sm:w-auto" href="/how-we-can-help">
+                How We Can Help
+              </Link>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white p-6 text-[#003f6f] shadow-[0_18px_45px_rgba(0,0,0,0.18)]">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Quick links</p>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {services.map((service) => (
+                <Link
+                  className="focus-ring rounded-xl border border-[#d5e7f4] bg-[#f7fbfd] p-4 transition hover:-translate-y-0.5 hover:bg-[#eaf4fb]"
+                  href={service.path}
+                  key={service.path}
+                >
+                  <h2 className="text-[20px] font-black leading-tight text-[#003f6f]">{service.title}</h2>
+                  <p className="mt-2 text-[15px] leading-6 text-[var(--muted)]">{service.description}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <SectionTitle
+            eyebrow="Compare services"
+            title="Choose the next step that matches your hearing needs"
+            text="Each service page explains what the visit is for, who it helps, and what to expect."
+          />
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {services.map((service, index) => (
+              <Link
+                className="focus-ring block rounded-2xl border border-[#d5e7f4] bg-[#f7fbfd] p-7 shadow-[0_18px_45px_rgba(0,90,156,0.08)] transition hover:-translate-y-1 hover:bg-white"
+                href={service.path}
+                key={service.path}
+              >
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Service {index + 1}</p>
+                <h3 className="mt-3 text-[28px] font-black leading-tight text-[#003f6f]">{service.title}</h3>
+                <p className="mt-4 text-[18px] leading-7 text-[var(--muted)]">{service.description}</p>
+                <span className="mt-6 inline-block text-[16px] font-bold text-[#005a9c] underline">Read More</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#dbe9f3] py-16">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <SectionTitle
+            eyebrow="Why patients start here"
+            title="A simple way to match symptoms to the right visit"
+            text="If you are undecided, starting with hearing testing gives the team the clearest picture of what should happen next."
+          />
+          <div className="mt-8 grid gap-4 lg:grid-cols-3">
+            {[
+              "Start with hearing testing when you are not sure what changed.",
+              "Use hearing aid fitting or repair when the issue is with a current device.",
+              "Choose tinnitus therapy or hearing protection when sound comfort is the main concern."
+            ].map((item) => (
+              <article className="rounded-2xl border border-[#d5e7f4] bg-white p-6 shadow-[0_18px_45px_rgba(0,90,156,0.08)]" key={item}>
+                <CheckCircle2 className="text-[#005a9c]" size={28} aria-hidden="true" />
+                <p className="mt-4 text-[20px] leading-8 text-[var(--foreground)]">{item}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function HelpListSection({ title, items }: { title: string; items: string[] }) {
   return (
     <article className="bg-white p-7 text-black">
@@ -1478,17 +1646,23 @@ function TinnitusTopicPage({ page, topic }: { page: SitePage; topic: TinnitusPag
       </section>
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <div className="grid gap-7 lg:grid-cols-2">
+          <div className="grid gap-7">
             {topic.sections.map((section) => (
-              <article className="bg-white p-7 text-black" key={section.title}>
-                <h2 className="text-[32px] font-black leading-tight max-md:text-[26px]">{section.title}</h2>
-                <div className="mt-5 space-y-4 text-[21px] leading-[1.35] max-md:text-[18px]">
+              <article
+                className="rounded-2xl border border-[#d5e7f4] bg-white p-7 text-black shadow-[0_18px_45px_rgba(0,90,156,0.08)]"
+                key={section.title}
+              >
+                <div className="h-1 w-full rounded-full bg-gradient-to-r from-[#005a9c] via-[#4d8fc5] to-[#ffd45a]" />
+                <h2 className="mt-6 text-[32px] font-black leading-tight text-[#003f6f] max-md:text-[26px]">
+                  {section.title}
+                </h2>
+                <div className="mt-5 space-y-4 text-[21px] leading-[1.35] text-[var(--muted)] max-md:text-[18px]">
                   {section.body.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}
                 </div>
                 {section.bullets ? (
-                  <ul className="mt-6 space-y-3 text-[20px] leading-[1.35] max-md:text-[18px]">
+                  <ul className="mt-6 space-y-3 text-[20px] leading-[1.35] text-black max-md:text-[18px]">
                     {section.bullets.map((bullet) => (
                       <li className="flex gap-3" key={bullet}>
                         <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={22} aria-hidden="true" />
@@ -1861,25 +2035,7 @@ function LiveRule({ className = "" }: { className?: string }) {
 }
 
 function LegacyParagraph({ text: paragraph }: { text: string }) {
-  const linkedPractice = paragraph.split("Audiology Associates of Westchester");
-  if (linkedPractice.length > 1) {
-    return (
-      <p>
-        {linkedPractice.map((part, index) => (
-          <span key={`${part}-${index}`}>
-            {index > 0 ? (
-              <Link className="text-[#005a9c] underline" href="/">
-                Audiology Associates of Westchester
-              </Link>
-            ) : null}
-            {part}
-          </span>
-        ))}
-      </p>
-    );
-  }
-
-  return <p>{paragraph}</p>;
+  return <p>{linkifyText(paragraph)}</p>;
 }
 
 function LegacyParagraphs({ paragraphs, className = "" }: { paragraphs: string[]; className?: string }) {
@@ -2223,13 +2379,13 @@ function WhyChooseUsPage({ page }: { page: SitePage }) {
           <p className="mt-6 max-w-3xl text-[22px] leading-8 text-white/88 max-md:text-[19px]">
             Our hearing tests are effective, our service is personal, and our team helps you make clear, confident decisions about your hearing.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a className="focus-ring inline-flex items-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82]" data-track="phone-why-choose-us" href={primaryPhoneHref}>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82] sm:w-auto" data-track="phone-why-choose-us" href={primaryPhoneHref}>
               <Phone size={19} aria-hidden="true" />
               Call {primaryPhone}
             </a>
             <ZocdocButton
-              className="!bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82]"
+              className="!w-full !justify-center !bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82] sm:!w-auto"
               label="Request Appointment"
               trackingId="appointment-why-choose-us"
             />
@@ -2297,11 +2453,11 @@ function WhyChooseUsPage({ page }: { page: SitePage }) {
             <h2 className="mt-2 text-[34px] font-black leading-tight">Schedule with a hearing doctor</h2>
             <p className="mt-3 max-w-2xl text-white/82">Call or request an appointment to talk through testing, hearing aids, tinnitus, repairs, or follow-up care.</p>
           </div>
-          <div className="flex flex-wrap gap-3">
-            <a className="focus-ring rounded-md bg-[#005a9c] px-5 py-3 font-black text-white hover:bg-[#004a82]" href={primaryPhoneHref}>
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a className="focus-ring inline-flex w-full items-center justify-center rounded-md bg-[#005a9c] px-5 py-3 font-black text-white hover:bg-[#004a82] sm:w-auto" href={primaryPhoneHref}>
               Call {primaryPhone}
             </a>
-            <Link className="focus-ring rounded-md border border-white/60 px-5 py-3 font-black text-white hover:bg-white/10" href="/contact-us">
+            <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-5 py-3 font-black text-white hover:bg-white/10 sm:w-auto" href="/contact-us">
               Contact Us
             </Link>
           </div>
@@ -2343,17 +2499,17 @@ function AboutTrustPage({ page }: { page: SitePage }) {
           <p className="mt-6 max-w-4xl text-[22px] leading-8 text-white/88 max-md:text-[19px]">
             {page.metaDescription}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link className="focus-ring rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82]" href="/contact-us">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82] sm:w-auto" href="/contact-us">
               Schedule an Appointment
             </Link>
             {isDrCliff ? (
-              <Link className="focus-ring rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10" href="/why-choose-us">
+              <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10 sm:w-auto" href="/why-choose-us">
                 Why Choose Us
               </Link>
             ) : (
               <a
-                className="focus-ring rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10"
+                className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10 sm:w-auto"
                 href="https://calhearing.com/"
                 rel="noreferrer"
                 target="_blank"
@@ -2409,9 +2565,9 @@ function AboutTrustPage({ page }: { page: SitePage }) {
                   title="Dr. Cliff hearing care video"
                 />
               </div>
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
-                  className="focus-ring rounded-md bg-[#005a9c] px-5 py-3 font-black text-white hover:bg-[#004a82]"
+                  className="focus-ring inline-flex w-full items-center justify-center rounded-md bg-[#005a9c] px-5 py-3 font-black text-white hover:bg-[#004a82] sm:w-auto"
                   href="https://hearingup.com/providers"
                   rel="noreferrer"
                   target="_blank"
@@ -2543,17 +2699,17 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
                 {visual.kicker}
               </p>
             ) : null}
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a className="focus-ring inline-flex items-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82]" href={primaryPhoneHref}>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82] sm:w-auto" href={primaryPhoneHref}>
                 <Phone size={19} aria-hidden="true" />
                 Call {primaryPhone}
               </a>
               <ZocdocButton
-                className="!bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82]"
+                className="!w-full !justify-center !bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82] sm:!w-auto"
                 label="Request Appointment"
                 trackingId={`appointment-${page.path.slice(1).replace(/\//g, "-")}`}
               />
-              <Link className="focus-ring rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10" href="/contact-us">
+              <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10 sm:w-auto" href="/contact-us">
                 Contact Us
               </Link>
             </div>
@@ -2592,7 +2748,7 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
             </h2>
             <div className="mt-6 space-y-5 text-[20px] leading-8 text-[var(--muted)]">
               {paragraphs.slice(0, 3).map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
+                <p key={paragraph}>{linkifyText(paragraph)}</p>
               ))}
             </div>
           </div>
@@ -2610,9 +2766,9 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
             </div>
             <div className="rounded-2xl border border-[#d5e7f4] bg-[#003f6f] p-6 text-white shadow-[0_18px_45px_rgba(0,90,156,0.12)]">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Related care</p>
-              <div className="mt-5 flex flex-wrap gap-3">
+              <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 {highlightedRelated.slice(0, 3).map((link) => (
-                  <Link className="focus-ring rounded-md border border-white/60 px-4 py-3 text-sm font-black text-white hover:bg-white/10" href={link.href} key={link.href}>
+                  <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-4 py-3 text-sm font-black text-white hover:bg-white/10 sm:w-auto" href={link.href} key={link.href}>
                     {link.label}
                   </Link>
                 ))}
@@ -2628,7 +2784,7 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
             <div className="grid gap-5 md:grid-cols-2">
               {paragraphs.slice(3).map((paragraph) => (
                 <article className="rounded-2xl border border-[#d5e7f4] bg-white p-6 shadow-[0_18px_45px_rgba(0,90,156,0.08)]" key={paragraph}>
-                  <p className="text-[18px] leading-8 text-[var(--muted)]">{paragraph}</p>
+                  <p className="text-[18px] leading-8 text-[var(--muted)]">{linkifyText(paragraph)}</p>
                 </article>
               ))}
             </div>
@@ -2662,11 +2818,11 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
             <h2 className="mt-2 text-[34px] font-black leading-tight">Schedule with a hearing doctor</h2>
             <p className="mt-3 max-w-2xl text-white/82">Call or request an appointment to talk through testing, hearing aids, tinnitus, repairs, or follow-up care.</p>
           </div>
-          <div className="flex flex-wrap gap-3">
-            <a className="focus-ring rounded-md bg-[#005a9c] px-5 py-3 font-black text-white hover:bg-[#004a82]" href={primaryPhoneHref}>
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a className="focus-ring inline-flex w-full items-center justify-center rounded-md bg-[#005a9c] px-5 py-3 font-black text-white hover:bg-[#004a82] sm:w-auto" href={primaryPhoneHref}>
               Call {primaryPhone}
             </a>
-            <Link className="focus-ring rounded-md border border-white/60 px-5 py-3 font-black text-white hover:bg-white/10" href="/contact-us">
+            <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-5 py-3 font-black text-white hover:bg-white/10 sm:w-auto" href="/contact-us">
               Contact Us
             </Link>
           </div>
@@ -2682,6 +2838,10 @@ function LivePageBody({ page }: { page: SitePage }) {
   const isBlog = page.type === "blog-post";
   const showImage = (isBlog || page.path === "/hearing-aid-referral-program" || page.path === "/tinnitus-therapy") && image;
   const serviceVisual = serviceVisuals[page.path as keyof typeof serviceVisuals];
+
+  if (page.path === "/services") {
+    return <ServicesLandingPage page={page} />;
+  }
 
   if (page.type === "service" && serviceVisual) {
     return <ServiceLandingPage page={page} />;
@@ -3092,11 +3252,11 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
                 <p className="mt-3 text-[20px] leading-[1.35]">
                   Call Audiology Associates of Westchester to confirm appointment availability and provider scheduling.
                 </p>
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <a className="legacy-live-button" data-track="phone-provider" href={primaryPhoneHref}>
+                <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                  <a className="legacy-live-button inline-flex w-full sm:w-auto" data-track="phone-provider" href={primaryPhoneHref}>
                     Call {primaryPhone}
                   </a>
-                  <ZocdocButton className="legacy-live-button" label="Book Online" trackingId={`provider-${provider.slug}-appointment`} />
+                  <ZocdocButton className="legacy-live-button inline-flex w-full sm:w-auto" label="Book Online" trackingId={`provider-${provider.slug}-appointment`} />
                 </div>
               </div>
             </aside>
@@ -3202,9 +3362,9 @@ function Hero({ page }: { page: SitePage }) {
           <p className="mt-5 max-w-3xl text-lg leading-8 text-[var(--foreground)]">
             {page.metaDescription}
           </p>
-          <div className="mt-7 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
-              className="focus-ring inline-flex items-center gap-2 rounded-md bg-[var(--brand)] px-5 py-3 font-black text-white"
+              className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md bg-[var(--brand)] px-5 py-3 font-black text-white sm:w-auto"
               data-track="phone-hero"
               href={primaryPhoneHref}
             >
@@ -3212,7 +3372,7 @@ function Hero({ page }: { page: SitePage }) {
               Call {primaryPhone}
             </a>
             <ZocdocButton
-              className="border border-[var(--brand)] bg-white px-5 py-3 font-black text-[var(--brand-dark)]"
+              className="!w-full !justify-center border border-[var(--brand)] bg-white px-5 py-3 font-black text-[var(--brand-dark)] sm:!w-auto"
               label="Request Appointment"
               trackingId="appointment-hero"
             />
@@ -3281,7 +3441,7 @@ function ContentText({ page }: { page: SitePage }) {
             }
             return (
               <p className="text-[var(--foreground)]" key={`${line}-${index}`}>
-                {line}
+                {linkifyText(line)}
               </p>
             );
           })}
@@ -3615,11 +3775,11 @@ function FinalCta() {
             Contact the practice for appointment availability and personalized recommendations.
           </p>
         </div>
-        <div className="flex flex-wrap gap-3">
-          <a className="focus-ring rounded-md bg-white px-5 py-3 font-black text-[var(--brand-dark)]" href={primaryPhoneHref}>
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <a className="focus-ring inline-flex w-full items-center justify-center rounded-md bg-white px-5 py-3 font-black text-[var(--brand-dark)] sm:w-auto" href={primaryPhoneHref}>
             Call {primaryPhone}
           </a>
-          <Link className="focus-ring rounded-md border border-white/60 px-5 py-3 font-black" href="/contact-us">
+          <Link className="focus-ring inline-flex w-full items-center justify-center rounded-md border border-white/60 px-5 py-3 font-black sm:w-auto" href="/contact-us">
             Contact Us
           </Link>
         </div>
@@ -3628,212 +3788,198 @@ function FinalCta() {
   );
 }
 
-export function PageRenderer({ page }: { page: SitePage }) {
+function PageWithSchema({ page, children }: { page: SitePage; children: ReactNode }) {
   const schema = schemaForPage(page);
 
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      {children}
+    </>
+  );
+}
+
+export function PageRenderer({ page }: { page: SitePage }) {
   if (page.type === "home") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <HomePage />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "contact") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <LiveContactPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "form") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <LivePatientFormsPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "team") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <LiveTeamPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "provider") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <ProviderProfilePage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.path === "/hearing-testing") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <HearingTestingPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.path === "/careers") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <CareersPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.path === "/why-choose-us") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <WhyChooseUsPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.path === "/dr-cliff-approved-provider" || page.path === "/california-hearing-center") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <AboutTrustPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "thank-you") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <LiveThankYouPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "location" || page.type === "service-area") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <LiveLocationPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.path === "/hearing-aids-brands") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <LiveBrandsPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "how-we-can-help-index") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <HowWeCanHelpIndexPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   const tinnitusPage = tinnitusPageForPath(page.path);
   if (tinnitusPage) {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <TinnitusTopicPage page={page} topic={tinnitusPage} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (helpServiceForPath(page.path)) {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <HowWeCanHelpServicePage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "products-index") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <ProductsIndexPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "product-brand-index") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <ProductBrandIndexPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "product-brand") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <ProductBrandPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "product") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <HearingAidProductPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "service-areas-index") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <ServiceAreasIndexPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "area-county") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <AreaCountyPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   if (page.type === "area-city") {
     return (
-      <>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <PageWithSchema page={page}>
         <AreaCityPage page={page} />
-      </>
+      </PageWithSchema>
     );
   }
 
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <PageWithSchema page={page}>
       {page.type === "blog-index" ? <BlogIndex page={page} /> : <LivePageBody page={page} />}
-    </>
+    </PageWithSchema>
   );
 }
