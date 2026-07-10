@@ -12,8 +12,8 @@ type ContactPayload = {
 
 class EmailConfigurationError extends Error {}
 
-const CONTACT_FORM_RECIPIENTS = ["admin@hearing-care.org"];
-const CONTACT_FORM_BCC_RECIPIENTS = ["igor@hearing-care.org"];
+const DEFAULT_CONTACT_FORM_RECIPIENTS = ["igorsavin@gmail.com"];
+const DEFAULT_CONTACT_FORM_BCC_RECIPIENTS: string[] = [];
 
 function clean(value: unknown, maxLength = 1000) {
   return String(value || "")
@@ -33,6 +33,15 @@ function escapeHtml(value: string) {
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function emailList(value: string | undefined, fallback: string[]) {
+  const recipients = value
+    ?.split(",")
+    .map((recipient) => recipient.trim())
+    .filter(Boolean);
+
+  return recipients?.length ? recipients : fallback;
 }
 
 function textBody(payload: Required<Omit<ContactPayload, "website">>) {
@@ -93,16 +102,18 @@ async function sendContactEmail(payload: Required<Omit<ContactPayload, "website"
   }
 
   const from = process.env.CONTACT_FORM_FROM_EMAIL || "Audiology Associates <onboarding@resend.dev>";
+  const recipients = emailList(process.env.CONTACT_FORM_TO_EMAIL, DEFAULT_CONTACT_FORM_RECIPIENTS);
+  const bccRecipients = emailList(process.env.CONTACT_FORM_BCC_EMAIL, DEFAULT_CONTACT_FORM_BCC_RECIPIENTS);
 
-  if (!CONTACT_FORM_RECIPIENTS.length) {
+  if (!recipients.length) {
     throw new EmailConfigurationError("Contact email recipient is not configured.");
   }
 
   const response = await fetch("https://api.resend.com/emails", {
     body: JSON.stringify({
       from,
-      to: CONTACT_FORM_RECIPIENTS,
-      bcc: CONTACT_FORM_BCC_RECIPIENTS,
+      to: recipients,
+      ...(bccRecipients.length ? { bcc: bccRecipients } : {}),
       reply_to: payload.email || undefined,
       subject: `Website contact form: ${payload.name}`,
       text: textBody(payload),
