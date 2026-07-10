@@ -94,6 +94,39 @@ const homeServiceCards = [
   ["Hearing Aid Repair", "/hearing-aid-repair", homeImages.repair, "woman handing over small hearing aid for repair"]
 ];
 
+const serviceVisuals = {
+  "/hearing-testing": {
+    image: homeImages.testing,
+    imageAlt: "doctor administering hearing test on older man",
+    eyebrow: "Diagnostic service",
+    kicker: "Clarity starts here"
+  },
+  "/hearing-aid-fitting": {
+    image: homeImages.fitting,
+    imageAlt: "hearing aid fitting appointment",
+    eyebrow: "Technology service",
+    kicker: "Personalized hearing aid care"
+  },
+  "/tinnitus-therapy": {
+    image: homeImages.tinnitus,
+    imageAlt: "sound reverberating around ear",
+    eyebrow: "Support service",
+    kicker: "Tinnitus care that feels practical"
+  },
+  "/hearing-protection": {
+    image: homeImages.protection,
+    imageAlt: "sound-cancelling earmuffs hanging up",
+    eyebrow: "Protection service",
+    kicker: "Protection for work and life"
+  },
+  "/hearing-aid-repair": {
+    image: homeImages.repair,
+    imageAlt: "woman handing over small hearing aid for repair",
+    eyebrow: "Repair service",
+    kicker: "Keep your devices working well"
+  }
+} as const;
+
 const homeHeroLocations = [
   { label: "Greenwich, CT", href: "/greenwich-ct" },
   { label: "Westchester County", href: "/areas-we-serve/westchester-county-ny" },
@@ -2084,92 +2117,7 @@ function CoreServiceDetail({ page }: { page: SitePage }) {
 }
 
 function HearingTestingPage({ page }: { page: SitePage }) {
-  return (
-    <>
-      <Breadcrumbs page={page} />
-      <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
-            {page.h1 || "Hearing Testing"}
-          </h1>
-          <LiveRule />
-          <p className="mt-[38px] max-w-[1320px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-            Hearing testing helps us understand what you are hearing, what you may be missing, and which next steps can support clearer communication.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-[#dbe9f3] py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
-            Initial Hearing Consultation
-          </h2>
-          <LiveRule />
-          <p className="mt-[38px] max-w-[1320px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-            At the start of the appointment, one of our audiologists will learn more about you and ask questions that help us understand your needs. We will look in your ears to check for obstructions, then use testing to learn more about any hearing loss, the causes and degree of hearing loss, and the location of hearing loss. Finally, we will discuss possible treatment options.
-          </p>
-        </div>
-      </section>
-
-      <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
-            Types of Hearing Tests
-          </h2>
-          <LiveRule />
-          <div className="mt-[38px] space-y-[34px] text-black">
-            {[
-              [
-                "Audiometric Test",
-                "An audiometric test uses tones of various intensity and speed to find out the extent of any hearing loss."
-              ],
-              [
-                "Tympanometry",
-                "Tympanometry tests the ear, eardrum, and conduction bones by putting pressure on the ear canal."
-              ],
-              [
-                "OAEs",
-                "Acoustically evoked otoacoustic emission testing (OAE) gives us a better idea of the health of the hair cells of your outer and inner ear."
-              ]
-            ].map(([title, text]) => (
-              <div key={title}>
-                <h3 className="text-[24px] font-black leading-tight">{title}</h3>
-                <p className="mt-2 text-[22px] leading-[1.35] max-md:text-[18px]">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#dbe9f3] py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
-            Call Our Hearing Doctor Today for an Appointment!
-          </h2>
-          <LiveRule />
-          <div className="mt-[38px] max-w-[1320px] space-y-6 text-[22px] leading-[1.35] text-black max-md:text-[18px]">
-            <p>
-              After your hearing test is complete, we will review your audiogram with you to show you the degree of hearing loss. We will also discuss treatments with you so that you understand all of your options and can make the decision that's best for you.
-            </p>
-            <p>
-              <a className="text-[#005a9c] underline" href={primaryPhoneHref}>
-                Call us
-              </a>{" "}
-              today to schedule a hearing test with our audiologist at Audiology Associates of Westchester.
-            </p>
-          </div>
-          <a
-            className="focus-ring mt-8 inline-flex items-center gap-2 bg-[#005a9c] px-8 py-4 text-[20px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
-            data-track="phone-hearing-testing"
-            href={primaryPhoneHref}
-          >
-            <Phone size={22} aria-hidden="true" />
-            Call Now
-          </a>
-        </div>
-      </section>
-    </>
-  );
+  return <ServiceLandingPage page={page} />;
 }
 
 function CareersPage({ page }: { page: SitePage }) {
@@ -2565,11 +2513,179 @@ function AboutTrustPage({ page }: { page: SitePage }) {
   );
 }
 
+function ServiceLandingPage({ page }: { page: SitePage }) {
+  const visual = serviceVisuals[page.path as keyof typeof serviceVisuals];
+  const detail = coreServiceDeepDives[page.path];
+  const service = services.find((item) => item.path === page.path);
+  const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
+  const highlightedSteps = detail?.appointmentSteps || [];
+  const highlightedNotes = detail?.practicalNotes || page.sections.slice(0, 3);
+  const highlightedRelated = detail?.related || page.related;
+
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <section className="relative isolate overflow-hidden bg-[#003f6f] py-20 text-white">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(255,212,90,0.22),transparent_38%),linear-gradient(90deg,rgba(0,47,84,0.96)_0%,rgba(0,63,111,0.88)_56%,rgba(0,90,156,0.54)_100%)]" />
+        <div className="mx-auto grid max-w-[1660px] gap-10 px-[64px] lg:grid-cols-[1.05fr_0.95fr] lg:items-center max-md:px-5">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">
+              {visual?.eyebrow || "Services"}
+            </p>
+            <h1 className="mt-4 max-w-4xl text-[58px] font-black leading-tight max-md:text-[38px]">
+              {page.h1}
+            </h1>
+            <p className="mt-6 max-w-3xl text-[22px] leading-8 text-white/88 max-md:text-[19px]">
+              {service?.description || page.metaDescription}
+            </p>
+            {visual?.kicker ? (
+              <p className="mt-5 max-w-2xl text-[18px] font-bold uppercase tracking-[0.14em] text-[#ffd45a]">
+                {visual.kicker}
+              </p>
+            ) : null}
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a className="focus-ring inline-flex items-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82]" href={primaryPhoneHref}>
+                <Phone size={19} aria-hidden="true" />
+                Call {primaryPhone}
+              </a>
+              <ZocdocButton
+                className="!bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82]"
+                label="Request Appointment"
+                trackingId={`appointment-${page.path.slice(1).replace(/\//g, "-")}`}
+              />
+              <Link className="focus-ring rounded-md border border-white/60 px-6 py-4 font-black text-white hover:bg-white/10" href="/contact-us">
+                Contact Us
+              </Link>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-white shadow-[0_18px_45px_rgba(0,0,0,0.16)]">
+            <Image
+              alt={visual?.imageAlt || page.h1}
+              className="aspect-[16/10] w-full object-cover"
+              height={760}
+              src={visual?.image || homeImages.people}
+              width={1080}
+            />
+            <div className="bg-white p-6 text-[#003f6f]">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Appointment focus</p>
+              <div className="mt-4 grid gap-3">
+                {(highlightedSteps.length ? highlightedSteps : [page.metaDescription]).slice(0, 3).map((item, index) => (
+                  <div className="flex gap-3 rounded-lg bg-[#eaf4fb] p-4" key={item}>
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#005a9c] text-sm font-black text-white">
+                      {index + 1}
+                    </span>
+                    <p className="text-[16px] leading-7 text-[#333]">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[1.02fr_0.98fr] max-md:px-5">
+          <div className="rounded-2xl border border-[#d5e7f4] bg-[#f7fbfd] p-8 shadow-[0_18px_45px_rgba(0,90,156,0.10)]">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">What to know</p>
+            <h2 className="mt-3 text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
+              A clearer look at this service
+            </h2>
+            <div className="mt-6 space-y-5 text-[20px] leading-8 text-[var(--muted)]">
+              {paragraphs.slice(0, 3).map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+          <div className="grid gap-4">
+            <div className="rounded-2xl border border-[#d5e7f4] bg-white p-6 shadow-[0_18px_45px_rgba(0,90,156,0.09)]">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Helpful notes</p>
+              <div className="mt-5 grid gap-3">
+                {highlightedNotes.slice(0, 3).map((note) => (
+                  <div className="flex gap-3 rounded-lg bg-[#eaf4fb] p-4" key={note}>
+                    <CheckCircle2 className="mt-0.5 shrink-0 text-[#005a9c]" size={20} aria-hidden="true" />
+                    <p className="text-[16px] leading-7 text-[#333]">{note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-2xl border border-[#d5e7f4] bg-[#003f6f] p-6 text-white shadow-[0_18px_45px_rgba(0,90,156,0.12)]">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Related care</p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                {highlightedRelated.slice(0, 3).map((link) => (
+                  <Link className="focus-ring rounded-md border border-white/60 px-4 py-3 text-sm font-black text-white hover:bg-white/10" href={link.href} key={link.href}>
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {paragraphs.length > 3 ? (
+        <section className="bg-[#eaf4fb] py-16">
+          <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+            <div className="grid gap-5 md:grid-cols-2">
+              {paragraphs.slice(3).map((paragraph) => (
+                <article className="rounded-2xl border border-[#d5e7f4] bg-white p-6 shadow-[0_18px_45px_rgba(0,90,156,0.08)]" key={paragraph}>
+                  <p className="text-[18px] leading-8 text-[var(--muted)]">{paragraph}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {page.faqs.length ? (
+        <section className="bg-white py-16">
+          <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Frequently asked questions</p>
+            <h2 className="mt-3 text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
+              Helpful answers before you schedule
+            </h2>
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {page.faqs.map((faq) => (
+                <article className="rounded-2xl border border-[#d5e7f4] bg-[#f7fbfd] p-6" key={faq.question}>
+                  <h3 className="text-[22px] font-black leading-tight text-[#003f6f]">{faq.question}</h3>
+                  <p className="mt-3 text-[16px] leading-7 text-[var(--muted)]">{faq.answer}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      <section className="bg-[#003f6f] py-14 text-white">
+        <div className="mx-auto flex max-w-[1660px] flex-col gap-6 px-[64px] md:flex-row md:items-center md:justify-between max-md:px-5">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Ready for next steps?</p>
+            <h2 className="mt-2 text-[34px] font-black leading-tight">Schedule with a hearing doctor</h2>
+            <p className="mt-3 max-w-2xl text-white/82">Call or request an appointment to talk through testing, hearing aids, tinnitus, repairs, or follow-up care.</p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <a className="focus-ring rounded-md bg-[#005a9c] px-5 py-3 font-black text-white hover:bg-[#004a82]" href={primaryPhoneHref}>
+              Call {primaryPhone}
+            </a>
+            <Link className="focus-ring rounded-md border border-white/60 px-5 py-3 font-black text-white hover:bg-white/10" href="/contact-us">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function LivePageBody({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
   const image = page.heroImage;
   const isBlog = page.type === "blog-post";
   const showImage = (isBlog || page.path === "/hearing-aid-referral-program" || page.path === "/tinnitus-therapy") && image;
+  const serviceVisual = serviceVisuals[page.path as keyof typeof serviceVisuals];
+
+  if (page.type === "service" && serviceVisual) {
+    return <ServiceLandingPage page={page} />;
+  }
 
   return (
     <>
