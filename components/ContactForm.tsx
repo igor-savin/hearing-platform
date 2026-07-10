@@ -114,9 +114,28 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         {status === "sending" ? "Sending..." : "Submit"}
       </button>
       {message ? (
-        <p className={status === "success" ? "text-[#333]" : "text-red-700"} role="status">
-          {message}
-        </p>
+        <div
+          className={
+            status === "success"
+              ? "mt-[8px] rounded-lg border border-[#b9dcc8] bg-[#f0fbf4] px-5 py-4 text-[#174b2a] shadow-sm"
+              : "mt-[8px] rounded-lg border border-red-200 bg-red-50 px-5 py-4 text-red-800"
+          }
+          role="status"
+        >
+          {status === "success" ? (
+            <div className="flex gap-3">
+              <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1f8f4d] text-[16px] font-black text-white">
+                ✓
+              </span>
+              <div>
+                <p className="text-[22px] font-black leading-tight">Thank you — your message was sent.</p>
+                <p className="mt-2 text-[17px] leading-7">{message}</p>
+              </div>
+            </div>
+          ) : (
+            <p className="text-[18px] font-bold leading-7">{message}</p>
+          )}
+        </div>
       ) : null}
       <p className="text-[13px] leading-5 text-[#555]">
         Do not use this form for emergencies. Appointment availability and clinical recommendations
