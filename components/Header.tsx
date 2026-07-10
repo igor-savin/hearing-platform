@@ -19,7 +19,10 @@ const navGroups = [
     links: [
       ["MEET THE TEAM", "/meet-the-team"],
       ["WHY CHOOSE US", "/why-choose-us"],
+      ["DR. CLIFF APPROVED PROVIDER", "/dr-cliff-approved-provider"],
+      ["CALIFORNIA HEARING CENTER", "/california-hearing-center"],
       ["CAREERS", "/careers"],
+      ["AREAS WE SERVE", "/areas-we-serve"],
       ["Blog", "/blog"]
     ]
   },
@@ -174,17 +177,6 @@ export function Header() {
             </li>
             {navGroups.map((group) => (
               <Fragment key={group.label}>
-              {group.label === "CONTACT US" ? (
-                <li className="flex">
-                  <Link
-                    className={navItemClass}
-                    href="/areas-we-serve"
-                    onClick={() => dismissDropdown()}
-                  >
-                    AREAS WE SERVE
-                  </Link>
-                </li>
-              ) : null}
               <li
                 className="legacy-nav-item relative flex"
                 data-open={openMenu === group.label ? "true" : undefined}

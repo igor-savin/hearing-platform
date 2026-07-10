@@ -28,8 +28,8 @@ import { providerPath, providerProfiles } from "@/lib/team";
 
 export const baseUrl = "https://www.audiologyassociates.org";
 export const siteName = "Audiology Associates of Westchester";
-export const primaryPhone = "(914) 821-6496";
-export const primaryPhoneHref = "tel:+19148216496";
+export const primaryPhone = "(914) 949-0034";
+export const primaryPhoneHref = "tel:+19149490034";
 export const zocdocUrl = "https://www.zocdoc.com/practice/audiology-associates-of-westchester-69184";
 export const zocdocPracticeId = "69184";
 export const logoUrl =
@@ -321,6 +321,9 @@ const typeOverrides = new Map<string, SitePageType>([
 function fixSpacing(value: string) {
   return value
     .replace(/AudiologistServing/g, "Audiologist Serving")
+    .replace(/\(914\)\s*821-6496/g, primaryPhone)
+    .replace(/914-821-6496/g, "914-949-0034")
+    .replace(/\+1-914-821-6496/g, "+1-914-949-0034")
     .replace(/Testfor/g, "Test for")
     .replace(/Treatmentfor/g, "Treatment for")
     .replace(/Protectionfor/g, "Protection for")
@@ -1056,6 +1059,56 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
   ]
 };
 
+const aboutTrustPages: SitePage[] = [
+  {
+    path: "/dr-cliff-approved-provider",
+    url: `${baseUrl}/dr-cliff-approved-provider`,
+    title: "Dr. Cliff Approved Provider",
+    metaTitle: `Dr. Cliff Approved Provider | ${siteName}`,
+    metaDescription:
+      "Audiology Associates of Westchester is a Dr. Cliff Approved Provider, reflecting a commitment to patient-centered audiology, best-practice hearing care, and professional hearing aid fittings.",
+    h1: "Dr. Cliff Approved Provider",
+    type: "page",
+    lastModified: "2026-07-10",
+    canonical: `${baseUrl}/dr-cliff-approved-provider`,
+    images: [],
+    sections: ["What This Means", "Best-Practice Hearing Care", "Schedule With Our Team"],
+    body: [
+      "Audiology Associates of Westchester is proud to be a Dr. Cliff Approved Provider.",
+      "Dr. Cliff Approved Providers are selected for a commitment to evidence-informed audiology, patient education, and hearing care that goes beyond simply choosing a device.",
+      "For patients, this means working with a team that emphasizes comprehensive evaluations, clear explanations, professional fittings, verification, follow-up care, and practical support for real listening environments.",
+      "The program is connected with HearingUp, an educational resource founded by Dr. Cliff Olson, Au.D., to help patients understand what high-quality hearing care should include.",
+      "Best-practice hearing care may include a detailed case history, otoscopy, diagnostic testing, speech understanding measures, hearing aid verification, real-ear measurement when appropriate, counseling, device orientation, and ongoing adjustments.",
+      "Our goal is to help patients understand not only what they hear on a test, but how hearing care can improve conversation, comfort, confidence, and participation in daily life.",
+      "If you are comparing hearing care options in Westchester County or nearby communities, this recognition offers another reason to feel confident scheduling with Audiology Associates of Westchester."
+    ],
+    faqs: [],
+    related: []
+  },
+  {
+    path: "/california-hearing-center",
+    url: `${baseUrl}/california-hearing-center`,
+    title: "California Hearing Center",
+    metaTitle: `California Hearing Center | Sister Practice of ${siteName}`,
+    metaDescription:
+      "Learn about California Hearing Center, a sister practice connected to Audiology Associates of Westchester for patients and families looking for hearing care in California.",
+    h1: "California Hearing Center",
+    type: "page",
+    lastModified: "2026-07-10",
+    canonical: `${baseUrl}/california-hearing-center`,
+    images: [],
+    sections: ["Our Sister Practice", "Connected Hearing Care", "Visit California Hearing Center"],
+    body: [
+      "California Hearing Center is a sister practice of Audiology Associates of Westchester.",
+      "Both practices share a patient-first approach to hearing care, with a focus on thoughtful evaluations, hearing technology, counseling, follow-up, and communication needs in everyday life.",
+      "This page is here for patients, relatives, and referring partners who may be looking for trusted hearing care in California.",
+      "Visit California Hearing Center to learn more about its providers, services, and locations."
+    ],
+    faqs: [],
+    related: []
+  }
+];
+
 const howWeCanHelpPages: SitePage[] = [
   {
     path: howWeCanHelpRootPath,
@@ -1282,7 +1335,7 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...aboutTrustPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
