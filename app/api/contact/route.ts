@@ -12,7 +12,8 @@ type ContactPayload = {
 
 class EmailConfigurationError extends Error {}
 
-const TEMPORARY_TEST_RECIPIENT = "igorsavin+1@gmail.com";
+const CONTACT_FORM_RECIPIENTS = ["admin@hearing-care.org"];
+const CONTACT_FORM_BCC_RECIPIENTS = ["igor@hearing-care.org"];
 
 function clean(value: unknown, maxLength = 1000) {
   return String(value || "")
@@ -86,26 +87,22 @@ function htmlBody(payload: Required<Omit<ContactPayload, "website">>) {
 
 async function sendContactEmail(payload: Required<Omit<ContactPayload, "website">>) {
   const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_FORM_TO_EMAIL || TEMPORARY_TEST_RECIPIENT;
 
   if (!apiKey) {
     throw new EmailConfigurationError("Contact email delivery is not configured.");
   }
 
   const from = process.env.CONTACT_FORM_FROM_EMAIL || "Audiology Associates <onboarding@resend.dev>";
-  const recipients = to
-    .split(",")
-    .map((recipient) => recipient.trim())
-    .filter(Boolean);
 
-  if (!recipients.length) {
+  if (!CONTACT_FORM_RECIPIENTS.length) {
     throw new EmailConfigurationError("Contact email recipient is not configured.");
   }
 
   const response = await fetch("https://api.resend.com/emails", {
     body: JSON.stringify({
       from,
-      to: recipients,
+      to: CONTACT_FORM_RECIPIENTS,
+      bcc: CONTACT_FORM_BCC_RECIPIENTS,
       reply_to: payload.email || undefined,
       subject: `Website contact form: ${payload.name}`,
       text: textBody(payload),
