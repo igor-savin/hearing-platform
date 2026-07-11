@@ -723,7 +723,11 @@ function InnerPage({ page }: { page: SitePage }) {
         <article className="copy-card">
           <p className="section-kicker">{kind === "area" ? "Local care, close by" : content.kicker}</p>
           <h2>{pageTitle}</h2>
-          {content.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          <div className="intro-copy">
+            {content.intro.map((paragraph, index) => (
+              <p className={index === 0 ? "lead-copy" : undefined} key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
           {content.takeaways && (
             <section className="answer-box">
               <p className="section-kicker">At a glance</p>
@@ -915,6 +919,39 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             </div>
           ))}
         </nav>
+        <details className="mobile-menu">
+          <summary aria-label="Open navigation menu">
+            <span />
+            <strong>Menu</strong>
+          </summary>
+          <div className="mobile-panel">
+            <a className="mobile-schedule" href={scheduleUrl} target="_blank" rel="noopener noreferrer">Schedule Now</a>
+            {nav.map((item) => (
+              <div className="mobile-nav-group" key={item.href}>
+                {item.items || item.mega ? (
+                  <details>
+                    <summary>{item.label}</summary>
+                    <a href={item.href}>Overview</a>
+                    {item.items?.map(([label, href]) => (
+                      <a href={href} key={href}>{label}</a>
+                    ))}
+                    {item.mega && hearingAidColumns.flat().map(([title, text, href, image]) => (
+                      <a className="mobile-product-link" href={href} key={href}>
+                        <img src={image} alt="" />
+                        <span>
+                          <strong>{title}</strong>
+                          <small>{text}</small>
+                        </span>
+                      </a>
+                    ))}
+                  </details>
+                ) : (
+                  <a className="mobile-top-link" href={item.href}>{item.label}</a>
+                )}
+              </div>
+            ))}
+          </div>
+        </details>
         <a className="schedule" href={scheduleUrl} target="_blank" rel="noopener noreferrer">Schedule Now</a>
       </header>
       {page ? <InnerPage page={page} /> : <HomePage />}
