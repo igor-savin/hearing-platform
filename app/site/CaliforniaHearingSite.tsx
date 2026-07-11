@@ -1,14 +1,80 @@
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 
-const nav = [
+type MenuLink = [label: string, href: string];
+type ProductMenuLink = [title: string, text: string, href: string, image: string];
+type NavItem = {
+  label: string;
+  href: string;
+  items?: MenuLink[];
+  mega?: boolean;
+};
+
+const scheduleUrl =
+  "https://www.zocdoc.com/practice/california-hearing-and-research-institute-inc-72249";
+
+const nav: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "About Us", href: "/about-us/kira-savin/" },
-  { label: "Services", href: "/services/" },
-  { label: "Hearing Aids", href: "/products/hearing-aids/" },
-  { label: "Resources", href: "/resources/" },
+  {
+    label: "About Us",
+    href: "/about-us/",
+    items: [
+      ["Kira Savin", "/about-us/kira-savin/"],
+      ["Lais Ama", "/about-us/lais-ama/"],
+      ["Giana Hatem", "/about-us/giana-hatem/"],
+      ["Jennifer Ratner", "/about-us/jennifer-ratner/"],
+      ["Darcy Benson", "/about-us/darcy-benson/"],
+      ["Emily McMahan", "/about-us/emily-mcmahan/"],
+      ["Jarna Kothari", "/about-us/jarna-kothari/"],
+      ["Career", "/about-us/career/"],
+    ],
+  },
+  {
+    label: "Services",
+    href: "/services/",
+    items: [
+      ["Hearing Testing", "/hearing-testing/"],
+      ["Hearing Aid Fitting", "/hearing-aid-fitting/"],
+      ["Tinnitus Therapy", "/services/tinnitus-therapy/"],
+      ["Tinnitus Knowledge Hub", "/tinnitus/"],
+      ["What is Tinnitus?", "/tinnitus/what-is-tinnitus/"],
+      ["Tinnitus Causes & Triggers", "/tinnitus/causes/"],
+      ["Tinnitus Treatment & Relief Options", "/tinnitus/exercises/"],
+      ["Sudden or Worsening Tinnitus", "/tinnitus/sudden-onset/"],
+      ["Pulsatile Tinnitus", "/tinnitus/pulsatile/"],
+      ["Hearing Protection", "/services/hearing-protection/"],
+      ["Hearing Aid Repair", "/services/hearing-aid-repair/"],
+      ["Hyperacusis", "/hyperacusis/"],
+    ],
+  },
+  { label: "Service Areas", href: "/areas-we-serve/" },
+  {
+    label: "Hearing Aids",
+    href: "/products/hearing-aids-by-brand/",
+    mega: true,
+  },
+  {
+    label: "Resources",
+    href: "/resources/",
+    items: [
+      ["Blog", "/the-blog/"],
+      ["Hearing Healthcare Resources", "/resources/"],
+      ["A Patient's Journey to Better Hearing", "/a-patients-journey-to-better-hearing/"],
+      ["Insurance", "/resources/insurance/"],
+      ["HearingUp Approved Provider", "/resources/hearingup-approved-provider/"],
+      ["Audiology Associates of Westchester", "/audiology-associates-of-westchester/"],
+    ],
+  },
   { label: "Reviews", href: "/reviews/" },
-  { label: "Contact", href: "/contact/" },
+  {
+    label: "Contact",
+    href: "/contact/",
+    items: [
+      ["Contact Us", "/contact/"],
+      ["San Carlos", "/contact/san-carlos/"],
+      ["San Mateo", "/contact/san-mateo/"],
+    ],
+  },
 ];
 
 const team = ["Kira Savin", "Lais Ama", "Giana Hatem", "Jennifer Ratner", "Darcy Benson", "Emily McMahan", "Jarna Kothari"];
@@ -29,6 +95,24 @@ const products = [
   ["ReSound Vivia", "Award-winning connectivity and refined everyday sound.", "/assets/resound.webp"],
   ["Starkey Edge AI", "American innovation with AI-powered adaptive listening.", "/assets/starkey.webp"],
   ["Signia IX", "Rechargeable hearing aids with over a century of engineering.", "/assets/signia.webp"],
+];
+
+const hearingAidColumns: ProductMenuLink[][] = [
+  [
+    ["Oticon Intent", "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
+    ["Phonak Lyric", "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.", "/products/hearing-aids-by-brand/phonak/phonak-lyric/", "/assets/phonak.webp"],
+    ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
+  ],
+  [
+    ["Oticon Zeal", "The world's first invisible hearing aid with complete connectivity.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
+    ["Phonak Infinio", "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.", "/products/hearing-aids-by-brand/phonak/phonak-infinio/", "/assets/phonak-infinio.webp"],
+    ["ReSound Vivia", "Pioneering award-winning hearing solutions and connectivity advancements since 1943.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
+  ],
+  [
+    ["Starkey Edge AI", "Pioneered American innovation, cutting-edge styles with AI-powered adaptive technology.", "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/", "/assets/starkey.webp"],
+    ["Signia IX", "Innovative, rechargeable hearing aids with over a century of excellence.", "/products/hearing-aids-by-brand/signia/signia-ix/", "/assets/signia.webp"],
+    ["Ear Gear", "Custom earplugs and earmolds for all your hearing needs-serving the Bay Area.", "/products/eargear/", "/assets/ear-gear.webp"],
+  ],
 ];
 
 const tinnitus = [
@@ -220,10 +304,43 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
         <a className="logo" href="/">
           <img src="/assets/logo.png" alt="California Hearing Center" />
         </a>
-        <nav>
-          {nav.map((item) => <a href={item.href} key={item.href}>{item.label}</a>)}
+        <nav className="primary-nav" aria-label="Primary navigation">
+          {nav.map((item) => (
+            <div className="nav-item" key={item.href}>
+              <a className="nav-link" href={item.href}>
+                {item.label}
+                {("items" in item || "mega" in item) && <span aria-hidden="true" />}
+              </a>
+              {item.items && (
+                <div className="dropdown-menu">
+                  {item.items.map(([label, href]) => (
+                    <a href={href} key={href}>{label}</a>
+                  ))}
+                </div>
+              )}
+              {"mega" in item && (
+                <div className="mega-menu">
+                  <div className="mega-menu-inner">
+                    {hearingAidColumns.map((column, columnIndex) => (
+                      <div className="mega-column" key={columnIndex}>
+                        {column.map(([title, text, href, image]) => (
+                          <a className="mega-product" href={href} key={href}>
+                            <img src={image} alt="" />
+                            <span>
+                              <strong>{title}</strong>
+                              <small>{text}</small>
+                            </span>
+                          </a>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
         </nav>
-        <a className="schedule" href="/contact/">Schedule Now</a>
+        <a className="schedule" href={scheduleUrl} target="_blank" rel="noopener noreferrer">Schedule Now</a>
       </header>
       {page ? <InnerPage page={page} /> : <HomePage />}
       <section className="appointment">
@@ -233,31 +350,29 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
         </div>
         <a className="button primary" href="/contact/">Request an appointment</a>
       </section>
-      <footer>
-        <div className="footer-grid">
-          <div>
-            <img src="/assets/logo-alt.png" alt="California Hearing Center" />
-            <p>California Hearing Center and Audiology Services, Inc.</p>
-          </div>
-          <div>
-            <strong>About Us</strong>
-            {team.slice(0, 5).map((person) => <a href={`/about-us/${person.toLowerCase().replaceAll(" ", "-")}/`} key={person}>{person}</a>)}
-          </div>
-          <div>
-            <strong>Locations</strong>
-            <a href="/contact/san-mateo/">San Mateo – Main Office</a>
-            <a href="/contact/san-carlos/">San Carlos</a>
-            <a href="/areas-we-serve/">Service Areas</a>
-          </div>
-          <div>
-            <strong>Care</strong>
-            <a href="/services/">Services</a>
-            <a href="/products/hearing-aids/">Hearing Aids</a>
-            <a href="/tinnitus/">Tinnitus Therapy</a>
-            <a href="/reviews/">Reviews</a>
-          </div>
+      <footer className="site-footer">
+        <div className="footer-main">
+          <section className="footer-location">
+            <h5>San Mateo - Main Office</h5>
+            <p>88 N. San Mateo Drive<br />San Mateo, CA 94401<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
+            <a className="footer-button" href="https://www.google.com/maps/dir//88+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
+          </section>
+          <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/google-reviews.webp" alt="See our Patient Reviews" />
+          </a>
+          <section className="footer-location">
+            <h5>San Carlos</h5>
+            <p>1008 Laurel Street<br />San Carlos, CA 94070<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
+            <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
+          </section>
+          <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/ida.webp" alt="Explore The Ida Institute" />
+            <span>Explore the Ida Institute</span>
+          </a>
         </div>
-        <p className="copyright">© 2026 California Hearing Center and Audiology Services, Inc. All Rights Reserved.</p>
+        <div className="footer-bottom">
+          <span>© 2026 California Hearing Center and Audiology Services, Inc. All Rights Reserved.</span>
+        </div>
       </footer>
     </main>
   );
