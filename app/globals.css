@@ -486,6 +486,68 @@ p {
   color: var(--teal-dark);
 }
 
+.copy-card h3 {
+  color: var(--teal);
+  font-size: 22px;
+}
+
+.section-stack {
+  display: grid;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.section-stack section {
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .96), rgba(237, 247, 246, .92));
+  border: 1px solid var(--line);
+  border-radius: 22px;
+}
+
+.section-stack p {
+  margin: 10px 0 0;
+}
+
+.answer-box {
+  margin-top: 30px;
+  padding: 26px;
+  background:
+    radial-gradient(circle at 0 0, rgba(224, 174, 60, .24), transparent 35%),
+    linear-gradient(135deg, #f8fbfa, #ffffff);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+}
+
+.answer-box ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.answer-box li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--teal-dark);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.answer-box li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .58em;
+  width: 10px;
+  height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(224, 174, 60, .18);
+}
+
 .feature-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -501,6 +563,38 @@ p {
   font-weight: 800;
 }
 
+.faq-block {
+  margin-top: 42px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+.faq-block h2 {
+  margin-bottom: 24px;
+  color: var(--teal-dark);
+  font-size: clamp(30px, 3vw, 42px);
+}
+
+.faq-block details {
+  margin-top: 14px;
+  padding: 20px 22px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(43, 82, 91, .06);
+}
+
+.faq-block summary {
+  cursor: pointer;
+  color: var(--teal-dark);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.faq-block p {
+  margin: 12px 0 0;
+}
+
 .sidebar-card {
   position: sticky;
   top: 112px;
@@ -508,6 +602,90 @@ p {
 
 .sidebar-card h3 {
   color: var(--teal);
+}
+
+.page-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 255px;
+  margin: -8px -8px 28px;
+  padding: 28px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(224, 174, 60, .42), transparent 30%),
+    linear-gradient(135deg, rgba(21, 95, 107, .96), rgba(12, 70, 82, .92));
+  border-radius: 28px;
+}
+
+.page-visual::before,
+.page-visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .22);
+}
+
+.page-visual::before {
+  width: 230px;
+  height: 230px;
+  right: -70px;
+  top: -60px;
+}
+
+.page-visual::after {
+  width: 150px;
+  height: 150px;
+  left: -38px;
+  bottom: -45px;
+}
+
+.page-visual img {
+  position: relative;
+  z-index: 1;
+  max-width: min(260px, 86%);
+  max-height: 185px;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 34px rgba(0, 0, 0, .24));
+}
+
+.page-visual span {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  margin-top: 18px;
+  padding: 9px 16px;
+  background: rgba(255, 255, 255, .94);
+  border-radius: 999px;
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subhero-product {
+  background:
+    linear-gradient(135deg, rgba(13, 75, 88, .96), rgba(21, 111, 131, .76)),
+    url("/assets/oticon.webp") right 12% center / min(520px, 45vw) no-repeat,
+    linear-gradient(135deg, #105966, #155f6b);
+}
+
+.subhero-team,
+.subhero-service {
+  background:
+    linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .72)),
+    url("/assets/doctor.jpg") center / cover;
+}
+
+.subhero-tinnitus,
+.subhero-area,
+.subhero-contact,
+.subhero-resource {
+  background:
+    linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .74)),
+    url("/assets/hero.webp") center / cover;
 }
 
 .sidebar-card hr {
