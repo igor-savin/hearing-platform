@@ -570,26 +570,26 @@ select {
 }
 
 @media (max-width: 767px) {
-  .aa-ear-hero,
-  .aa-ear-content {
-    min-height: 860px;
+  .aa-ear-hero {
+    min-height: 0;
   }
 
   .aa-ear-art {
     background-position: 64% top;
-    background-size: auto 54%;
+    background-size: auto 360px;
   }
 
   .aa-ear-overlay {
     background:
-      linear-gradient(0deg, rgba(0, 44, 79, 1) 26%, rgba(0, 53, 94, 0.92) 56%, rgba(0, 53, 94, 0.12) 88%),
+      linear-gradient(0deg, rgba(0, 44, 79, 1) 55%, rgba(0, 53, 94, 0.9) 70%, rgba(0, 53, 94, 0.12) 96%),
       linear-gradient(90deg, rgba(0, 43, 78, 0.25), rgba(0, 43, 78, 0.05));
   }
 
   .aa-ear-content {
-    align-items: flex-end;
-    padding-bottom: 130px;
-    padding-top: 270px;
+    align-items: flex-start;
+    min-height: 0;
+    padding-bottom: 34px;
+    padding-top: 340px;
   }
 
   .aa-ear-eyebrow {
@@ -634,17 +634,32 @@ select {
   }
 
   .aa-ear-stage-nav {
+    background: rgba(0, 43, 78, 0.82);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    bottom: auto;
+    overflow: hidden;
     left: 12px;
     right: 12px;
+    top: 256px;
   }
 
   .aa-ear-stage-nav button {
-    min-height: 96px;
-    padding: 24px 8px 14px;
+    min-height: 68px;
+    padding: 18px 5px 10px;
+    text-align: center;
   }
 
   .aa-ear-stage-nav button strong {
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 1.15;
+  }
+
+  .aa-ear-stage-nav button,
+  .aa-hearing-toggle button,
+  .aa-ear-controls button {
+    touch-action: manipulation;
   }
 }
 
