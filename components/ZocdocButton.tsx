@@ -1,5 +1,5 @@
 import { CalendarDays } from "lucide-react";
-import { zocdocPracticeId, zocdocUrl } from "@/lib/site";
+import { zocdocPracticeId, zocdocUrl } from "@/lib/siteConfig";
 
 type ZocdocButtonProps = {
   className?: string;

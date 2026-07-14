@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Pause, Phone, Play, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { ZocdocButton } from "@/components/ZocdocButton";
-import { primaryPhone, primaryPhoneHref } from "@/lib/site";
+import { primaryPhone, primaryPhoneHref } from "@/lib/siteConfig";
 
 const stages = [
   {
