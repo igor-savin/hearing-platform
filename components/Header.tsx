@@ -8,7 +8,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import { productMenuCards } from "@/lib/products";
-import { primaryPhone, primaryPhoneHref } from "@/lib/siteConfig";
+import { primaryPhone, primaryPhoneHref } from "@/lib/site";
 import { providerPath, providerProfiles } from "@/lib/team";
 import { tinnitusPages, tinnitusPath, tinnitusRootPath } from "@/lib/tinnitus";
 

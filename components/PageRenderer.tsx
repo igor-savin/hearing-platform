@@ -755,7 +755,7 @@ function HomePage() {
                 key={card.href}
               >
                 <div className="relative aspect-[16/11] overflow-hidden">
-                  <Image alt={card.alt} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" height={470} sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) 50vw, 33vw" src={card.src} width={720} />
+                  <Image alt={card.alt} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" height={470} src={card.src} width={720} />
                   <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,47,84,0.68)_0%,rgba(0,90,156,0)_58%)]" />
                   <h3 className="absolute bottom-5 left-5 text-2xl font-black text-white">{card.title}</h3>
                 </div>
@@ -810,7 +810,7 @@ function HomePage() {
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
             {homeServiceCards.map(([title, href, src, alt]) => (
               <Link className="focus-ring group block overflow-hidden rounded-md border border-[#d5e7f4] bg-[var(--background)] transition hover:-translate-y-1 hover:border-[#005a9c]" href={href} key={href}>
-                <Image alt={alt} className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" height={360} sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) 50vw, 33vw" src={src} width={360} />
+                <Image alt={alt} className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" height={360} src={src} width={360} />
                 <div className="p-4">
                   <h3 className="text-lg font-black leading-tight text-[#003f6f]">{title}</h3>
                   <p className="mt-3 text-sm font-bold uppercase tracking-[0.12em] text-[#005a9c]">Learn more</p>
