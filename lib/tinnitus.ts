@@ -623,6 +623,183 @@ export const tinnitusPages: TinnitusPage[] = [
         answer: "Schedule care if tinnitus is persistent, worsening, one-sided, pulsing, affects sleep or concentration, or occurs with hearing changes."
       }
     ]
+  },
+  {
+    title: "Tinnitus in One Ear",
+    slug: "one-ear",
+    description:
+      "Learn what one-sided tinnitus can mean, which symptoms need prompt medical attention, and how a hearing and tinnitus evaluation can help Westchester patients.",
+    intro: [
+      "Hearing ringing, buzzing, humming, or whooshing in one ear can be unsettling. One-sided tinnitus does not automatically mean something serious is wrong, but the pattern deserves closer attention than general tinnitus in both ears.",
+      "The details matter: when it began, whether hearing changed, whether the sound follows your heartbeat, and whether dizziness, pain, pressure, or neurological symptoms are also present."
+    ],
+    sections: [
+      {
+        title: "Why the side matters",
+        body: [
+          "Tinnitus in both ears is commonly associated with hearing loss, noise exposure, medications, stress, or other broad contributors. When tinnitus is new and clearly limited to one ear, an audiologist or physician may want to look more closely for an ear-specific or medical contributor.",
+          "That does not mean patients should panic. It means the right next step is an informed evaluation instead of trying to guess the cause online."
+        ]
+      },
+      {
+        title: "Possible contributors",
+        body: ["A hearing and ear evaluation can help sort through common explanations and identify when medical follow-up is appropriate."],
+        bullets: [
+          "Earwax, fluid, infection, or middle-ear pressure",
+          "A sudden or gradual hearing change in one ear",
+          "Noise exposure or ear injury",
+          "Jaw clenching, TMJ symptoms, or neck tension",
+          "Inner-ear conditions that may need ENT evaluation",
+          "Heartbeat-like tinnitus that may require medical workup"
+        ]
+      },
+      {
+        title: "When to seek urgent medical guidance",
+        body: ["Do not wait for a routine appointment if one-sided tinnitus appears with symptoms that can signal a time-sensitive medical issue."],
+        bullets: [
+          "Sudden hearing loss or a noticeably blocked, distorted ear",
+          "Severe dizziness, new imbalance, facial weakness, numbness, or vision changes",
+          "A pulse-synchronous whooshing or thumping sound",
+          "A severe headache or symptoms after a head or neck injury"
+        ]
+      },
+      {
+        title: "How an audiology evaluation helps",
+        body: [
+          "The visit starts with a careful history, ear inspection, and hearing testing in each ear. Your audiologist can document differences between ears, explain the findings in plain language, and recommend next steps.",
+          "If the pattern suggests medical assessment, the team can advise you to contact the appropriate physician or ENT. If hearing loss and tinnitus are affecting daily life, we can also discuss hearing technology, sound support, counseling, and follow-up care."
+        ]
+      },
+      {
+        title: "What to note before you call",
+        body: ["A few useful details can help the office direct you quickly."],
+        bullets: [
+          "Which ear is affected and when the sound started",
+          "Whether your hearing, balance, or ear pressure changed",
+          "Whether the sound matches your pulse",
+          "Recent illness, loud sound exposure, injury, or medication changes"
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Is tinnitus in one ear always serious?", answer: "No, but new or persistent one-sided tinnitus should be evaluated, especially when it occurs with hearing changes, dizziness, or a pulse-like sound." },
+      { question: "Can earwax cause tinnitus in one ear?", answer: "Earwax can contribute to blocked hearing and tinnitus-like symptoms. An ear inspection is the safest way to determine whether wax is involved." },
+      { question: "Should I wait to see whether it goes away?", answer: "Do not wait if symptoms started suddenly, hearing changed, or you have dizziness, neurological symptoms, injury, or heartbeat-like sound. Otherwise, schedule an evaluation if it persists or worries you." }
+    ]
+  },
+  {
+    title: "Why Is My Tinnitus Getting Louder?",
+    slug: "getting-louder",
+    description:
+      "Explore common reasons tinnitus can feel louder, the warning signs that need prompt attention, and practical next steps for Westchester patients.",
+    intro: [
+      "A tinnitus spike can feel frightening, particularly when a sound that was manageable suddenly seems louder, sharper, or harder to ignore. A louder day does not necessarily mean permanent damage, but it is worth paying attention to what changed.",
+      "Noise, poor sleep, stress, illness, ear pressure, hearing changes, and quiet surroundings can all affect how noticeable tinnitus feels. A sudden or dramatic change deserves a more careful look."
+    ],
+    sections: [
+      {
+        title: "A louder sound versus a louder experience",
+        body: [
+          "Sometimes the tinnitus signal changes. Other times, the sound is similar but your nervous system has less capacity to filter it out because you are tired, stressed, sick, or sitting in a very quiet room.",
+          "Both experiences are real. Tracking the setting and the symptoms around a spike gives your audiologist useful information."
+        ]
+      },
+      {
+        title: "Common short-term triggers",
+        body: ["Patients often notice a pattern with one or more of the following."],
+        bullets: [
+          "A loud restaurant, concert, work site, power tool, or headphone session",
+          "Poor sleep, fatigue, stress, or a demanding week",
+          "A cold, congestion, ear pressure, or a blocked-ear sensation",
+          "Changes in jaw or neck tension",
+          "New medications or a medication change that should be discussed with the prescriber",
+          "More silence than usual, especially at bedtime"
+        ]
+      },
+      {
+        title: "When louder tinnitus is a red flag",
+        body: ["Seek prompt medical guidance rather than trying home strategies if the change is accompanied by concerning symptoms."],
+        bullets: [
+          "Sudden hearing loss or a major difference between ears",
+          "A sudden one-sided spike",
+          "Severe vertigo, balance trouble, neurological symptoms, or new severe headache",
+          "A heartbeat-like or whooshing sound",
+          "Symptoms after head or neck trauma"
+        ]
+      },
+      {
+        title: "What can help during a stable spike",
+        body: [
+          "Protect your ears from further loud sound, but avoid isolating yourself in total silence. Comfortable, low-level background sound such as a fan, nature sound, or soft music can reduce the contrast that makes tinnitus stand out.",
+          "A short walk, gentle breathing, hydration, and a more consistent sleep routine can also help when the spike is tied to fatigue or stress. Keep sound at a comfortable level; louder masking is not automatically better."
+        ]
+      },
+      {
+        title: "When to schedule tinnitus care",
+        body: [
+          "Schedule an evaluation when spikes recur, affect sleep or concentration, come with hearing difficulty, or leave you worried about what is happening. We can check hearing, review the pattern, and talk through appropriate support instead of offering a one-size-fits-all answer."
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Can stress make tinnitus feel louder?", answer: "Yes. Stress and poor sleep can make tinnitus harder to filter out, even if the sound itself has not changed substantially." },
+      { question: "Can a loud event make tinnitus worse permanently?", answer: "Loud sound can cause temporary or lasting changes. If tinnitus persists after noise exposure or you notice hearing changes, schedule an evaluation." },
+      { question: "What should I do if tinnitus gets louder in one ear?", answer: "Contact a medical professional promptly, especially if hearing changed or you have dizziness, pulsatile sound, or neurological symptoms." }
+    ]
+  },
+  {
+    title: "Understanding Tinnitus Habituation",
+    slug: "habituation",
+    description:
+      "Understand tinnitus habituation, why the brain can gradually pay less attention to tinnitus, and how hearing care, sound support, and counseling can help.",
+    intro: [
+      "Habituation is the gradual process of teaching the brain that tinnitus is not an emergency signal. The sound may still be present, but it becomes less emotionally charged and less central to daily life.",
+      "It is not denial, and it is not a promise that tinnitus disappears. It is a practical, evidence-informed goal for many people who want better sleep, focus, confidence, and control."
+    ],
+    sections: [
+      {
+        title: "Why tinnitus can feel so intrusive",
+        body: [
+          "New or changing tinnitus naturally draws attention. When the brain interprets the sound as threatening, it checks for it more often, which can make the sound feel even more important.",
+          "Habituation works by interrupting that loop: understanding the symptom, addressing medical and hearing concerns, and reducing the fear and constant monitoring around the sound."
+        ]
+      },
+      {
+        title: "What habituation can look like",
+        body: ["Progress is usually gradual and personal. Patients may notice that tinnitus is no longer the first thing they hear in the morning or the last thing they check at night."],
+        bullets: [
+          "The sound triggers less fear, frustration, or urgency",
+          "Sleep and concentration improve",
+          "Quiet moments become more comfortable",
+          "A spike feels manageable instead of catastrophic",
+          "Attention returns to conversations, work, hobbies, and family"
+        ]
+      },
+      {
+        title: "Tools that can support the process",
+        body: [
+          "There is no single technique for everyone. A care plan may combine education, hearing treatment when hearing loss is present, gentle sound enrichment, sleep support, and counseling strategies that reduce distress and avoidance.",
+          "For some patients, tinnitus retraining concepts or CBT-informed support can be useful. Your audiologist can help identify which options fit your symptoms and goals."
+        ]
+      },
+      {
+        title: "What slows habituation down",
+        body: [
+          "Constantly testing the sound, using unsafe volume to cover it, avoiding every quiet setting, and searching for a guaranteed cure can keep tinnitus at the center of attention. It is more helpful to build manageable routines while still taking new or concerning symptoms seriously."
+        ]
+      },
+      {
+        title: "Start with the right evaluation",
+        body: [
+          "Before focusing on habituation, sudden hearing changes, one-sided tinnitus, pulsatile tinnitus, severe dizziness, and other red flags should be evaluated appropriately. Once urgent concerns are addressed, a patient-specific plan can focus on quality of life and resilience."
+        ]
+      }
+    ],
+    faqs: [
+      { question: "Does habituation mean giving up?", answer: "No. It is an active process of reducing tinnitus distress and helping the brain treat the sound as less important." },
+      { question: "How long does habituation take?", answer: "It varies. Some people notice early improvements with better sleep, sound support, or hearing care; for others, progress develops over weeks or months." },
+      { question: "Can I habituate if tinnitus fluctuates?", answer: "Yes. Spikes can happen. The goal is not to prevent every change, but to reduce how much the sound controls your attention and daily choices." }
+    ]
   }
 ];
 
