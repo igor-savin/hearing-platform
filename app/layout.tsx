@@ -17,8 +17,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "California Hearing Center",
     description:
-      "Turn up your life with better hearing in San Mateo and San Carlos.",
-    images: ["/assets/hero.webp"],
+      "See how sound travels through the ear—and how modern hearing technology helps every word arrive more clearly.",
+    images: ["/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hear the whole story. | California Hearing Center",
+    description: "See how sound becomes connection.",
+    images: ["/og.png"],
   },
 };
 

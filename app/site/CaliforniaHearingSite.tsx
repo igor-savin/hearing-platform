@@ -1,5 +1,6 @@
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
+import { EarJourneyHero } from "./EarJourneyHero";
 
 type MenuLink = [label: string, href: string];
 type ProductMenuLink = [title: string, text: string, href: string, image: string];
@@ -790,18 +791,7 @@ function InnerPage({ page }: { page: SitePage }) {
 function HomePage() {
   return (
     <>
-      <section className="hero">
-        <div className="hero-image" />
-        <div className="hero-panel">
-          <p className="eyebrow">San Mateo & San Carlos Audiologists</p>
-          <h1>Turn Up Your Life with Better Hearing</h1>
-          <p>For over 30 years, California Hearing Center has helped people reconnect with family, restaurants, work, music, and the everyday moments that make life feel full.</p>
-          <div className="hero-actions">
-            <a className="button primary" href="/contact/">Request an Appointment</a>
-            <a className="button ghost" href="/services/">Explore Services</a>
-          </div>
-        </div>
-      </section>
+      <EarJourneyHero />
 
       <section className="intro container">
         <div>
