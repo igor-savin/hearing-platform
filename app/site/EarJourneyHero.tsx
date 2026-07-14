@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 const stages = [
   {
@@ -40,7 +40,9 @@ const stages = [
 export function EarJourneyHero() {
   const [activeStage, setActiveStage] = useState(0);
   const [aided, setAided] = useState(true);
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(false);
+  const [soundEnabled, setSoundEnabled] = useState(false);
+  const audioContextRef = useRef<AudioContext | null>(null);
   const stage = stages[activeStage];
 
   useEffect(() => {
@@ -53,14 +55,88 @@ export function EarJourneyHero() {
     return () => window.clearInterval(timer);
   }, [playing]);
 
+  useEffect(() => {
+    return () => {
+      if (audioContextRef.current) void audioContextRef.current.close();
+    };
+  }, []);
+
+  useEffect(() => {
+    const context = audioContextRef.current;
+    if (!soundEnabled || !context || context.state === "closed") return;
+
+    const frequencies = [392, 494, 659, 784];
+    const panPositions = [-0.82, -0.28, 0.34, 0.82];
+    const now = context.currentTime;
+    const master = context.createGain();
+    const filter = context.createBiquadFilter();
+    const panner = context.createStereoPanner();
+    const primary = context.createOscillator();
+    const harmonic = context.createOscillator();
+
+    primary.type = "sine";
+    primary.frequency.setValueAtTime(frequencies[activeStage], now);
+    primary.frequency.exponentialRampToValueAtTime(frequencies[activeStage] * 1.08, now + .5);
+
+    harmonic.type = aided ? "triangle" : "sine";
+    harmonic.frequency.setValueAtTime(frequencies[activeStage] * 2, now);
+
+    filter.type = "lowpass";
+    filter.frequency.setValueAtTime(aided ? 5200 : 1250, now);
+    filter.Q.setValueAtTime(.65, now);
+    panner.pan.setValueAtTime(panPositions[activeStage], now);
+
+    master.gain.setValueAtTime(.0001, now);
+    master.gain.exponentialRampToValueAtTime(aided ? .052 : .034, now + .045);
+    master.gain.exponentialRampToValueAtTime(.0001, now + .58);
+
+    const harmonicGain = context.createGain();
+    harmonicGain.gain.setValueAtTime(aided ? .18 : .04, now);
+
+    primary.connect(filter);
+    harmonic.connect(harmonicGain);
+    harmonicGain.connect(filter);
+    filter.connect(panner);
+    panner.connect(master);
+    master.connect(context.destination);
+
+    primary.start(now);
+    harmonic.start(now);
+    primary.stop(now + .6);
+    harmonic.stop(now + .6);
+  }, [activeStage, aided, soundEnabled]);
+
+  const enableSound = () => {
+    const context = audioContextRef.current ?? new AudioContext();
+    audioContextRef.current = context;
+    if (context.state !== "running") void context.resume();
+    setSoundEnabled(true);
+  };
+
   const chooseStage = (index: number) => {
     setActiveStage(index);
     setPlaying(false);
   };
 
   const toggleJourney = () => {
-    if (!playing && activeStage === stages.length - 1) setActiveStage(0);
-    setPlaying((current) => !current);
+    if (playing) {
+      setPlaying(false);
+      return;
+    }
+
+    enableSound();
+    if (activeStage === stages.length - 1) setActiveStage(0);
+    setPlaying(true);
+  };
+
+  const toggleSound = () => {
+    if (soundEnabled) {
+      setSoundEnabled(false);
+      void audioContextRef.current?.suspend();
+      return;
+    }
+
+    enableSound();
   };
 
   const journeyStyle = {
@@ -155,9 +231,15 @@ export function EarJourneyHero() {
       <div className="journey-controls">
         <button type="button" className="journey-play" onClick={toggleJourney} aria-label={playing ? "Pause sound journey" : "Play sound journey"}>
           <span aria-hidden="true">{playing ? "Ⅱ" : "▶"}</span>
-          {playing ? "Pause journey" : "Play sound journey"}
+          {playing ? "Pause journey" : "Play journey + sound"}
         </button>
-        <span className="journey-status" aria-live="polite">Stage {activeStage + 1} of {stages.length}</span>
+        <button type="button" className={`sound-toggle ${soundEnabled ? "active" : ""}`} onClick={toggleSound} aria-pressed={soundEnabled}>
+          <span aria-hidden="true">{soundEnabled ? "♪" : "×"}</span>
+          Sound {soundEnabled ? "on" : "off"}
+        </button>
+        <span className="journey-status" aria-live="polite">
+          {playing ? "Sound moving" : soundEnabled ? "Paused" : "Tap play to listen"} · Stage {activeStage + 1} of {stages.length}
+        </span>
       </div>
     </section>
   );

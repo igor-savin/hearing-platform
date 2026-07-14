@@ -1353,6 +1353,48 @@ p {
   box-shadow: 0 0 0 4px rgba(255, 154, 87, .12);
 }
 
+.sound-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 8px 11px;
+  color: rgba(220, 238, 237, .58);
+  background: rgba(3, 25, 40, .58);
+  border: 1px solid rgba(207, 234, 232, .16);
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  font: inherit;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.sound-toggle > span {
+  display: grid;
+  place-items: center;
+  width: 19px;
+  height: 19px;
+  background: rgba(255, 255, 255, .08);
+  border-radius: 50%;
+  color: rgba(231, 243, 242, .68);
+  font-size: 12px;
+}
+
+.sound-toggle.active {
+  color: #dff8f4;
+  border-color: rgba(109, 218, 196, .5);
+  background: rgba(21, 96, 87, .55);
+}
+
+.sound-toggle.active > span {
+  color: #092b2c;
+  background: #79d6c7;
+  box-shadow: 0 0 12px rgba(121, 214, 199, .5);
+}
+
 .journey-status {
   color: rgba(224, 239, 239, .56);
   font-size: 9px;
@@ -1700,8 +1742,10 @@ p {
   }
 
   .journey-controls {
+    left: 20px;
     right: 20px;
     bottom: 108px;
+    justify-content: flex-end;
   }
 
   .ear-stage-nav {
@@ -1836,6 +1880,8 @@ p {
   .sound-source { left: 7%; top: 23%; }
   .sound-source > span { display: none; }
   .journey-controls { right: 12px; bottom: 96px; }
+  .journey-play { font-size: 9px; }
+  .sound-toggle { font-size: 8px; }
   .journey-status { display: none; }
 }
 
