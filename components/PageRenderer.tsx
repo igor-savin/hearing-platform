@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { InteractiveEarHero } from "@/components/InteractiveEarHero";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import {
   coreServiceDeepDives,
@@ -151,12 +152,6 @@ const serviceVisuals = {
     kicker: "Keep your devices working well"
   }
 } as const;
-
-const homeHeroLocations = [
-  { label: "Greenwich, CT", href: "/greenwich-ct" },
-  { label: "Westchester County", href: "/areas-we-serve/westchester-county-ny" },
-  { label: "Somers, NY", href: "/Somers-NY" }
-];
 
 const homeFeatureCards = [
   {
@@ -680,67 +675,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
 function HomePage() {
   return (
     <main className="bg-[var(--background)]">
-      <section className="relative isolate min-h-[620px] overflow-hidden bg-[#003f6f] text-white md:min-h-[680px]">
-        <Image
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-          fill
-          priority
-          quality={78}
-          sizes="(max-width: 767px) 100vw, 1600px"
-          src={homeImages.banner}
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,47,84,0.90)_0%,rgba(0,90,156,0.70)_48%,rgba(0,90,156,0.16)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(0deg,var(--background)_0%,rgba(251,250,247,0)_100%)]" />
-        <div className="container relative z-10 flex min-h-[620px] flex-col justify-center pb-16 pt-10 md:min-h-[680px] md:pb-20 md:pt-16">
-          <div className="max-w-3xl">
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">
-              Audiology Associates of Westchester
-            </p>
-            <h1 className="mt-5 text-[40px] font-black leading-[1.04] sm:text-[46px] md:text-[68px]">
-              You&rsquo;ll Never Say &ldquo;What?&rdquo; Again!
-            </h1>
-            <div className="mt-6 flex max-w-2xl flex-wrap gap-x-4 gap-y-3 text-lg font-bold leading-8 text-white/88 md:text-2xl">
-              <Link className="underline decoration-[#ffd45a] decoration-2 underline-offset-8 hover:text-[#ffd45a]" href="/improve-your-hearing">
-                Improve Your Hearing
-              </Link>
-              <Link className="underline decoration-[#ffd45a] decoration-2 underline-offset-8 hover:text-[#ffd45a]" href="/products/hearing-aids-by-brand">
-                Hearing Aids
-              </Link>
-              <Link className="underline decoration-[#ffd45a] decoration-2 underline-offset-8 hover:text-[#ffd45a]" href="/hearing-testing">
-                Hearing Testing
-              </Link>
-            </div>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white transition hover:bg-[#004a82] sm:w-auto"
-                data-track="phone-home-hero"
-                href={primaryPhoneHref}
-              >
-                <Phone size={19} aria-hidden="true" />
-                Call {primaryPhone}
-              </a>
-              <ZocdocButton
-                className="!w-full !justify-center !bg-[#005a9c] !text-white border border-[#005a9c] px-6 py-4 font-black shadow-none transition hover:!bg-[#004a82] sm:!w-auto"
-                label="Request Appointment"
-                trackingId="appointment-home-hero"
-              />
-            </div>
-          </div>
-          <div className="mt-12 grid max-w-4xl gap-3 md:grid-cols-3">
-            {homeHeroLocations.map((location) => (
-              <Link
-                className="focus-ring group border-l-2 border-[#ffd45a] bg-[#005a9c]/35 px-4 py-3 backdrop-blur-sm transition hover:bg-[#005a9c]/55"
-                href={location.href}
-                key={location.href}
-              >
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-white/68">Serving</p>
-                <p className="mt-1 font-black underline-offset-4 group-hover:underline">{location.label}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <InteractiveEarHero />
 
       <section className="section">
         <div className="container grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
