@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 
 const stages = [
   {
@@ -40,10 +40,39 @@ const stages = [
 export function EarJourneyHero() {
   const [activeStage, setActiveStage] = useState(0);
   const [aided, setAided] = useState(true);
+  const [playing, setPlaying] = useState(true);
   const stage = stages[activeStage];
 
+  useEffect(() => {
+    if (!playing) return;
+
+    const timer = window.setInterval(() => {
+      setActiveStage((current) => (current + 1) % stages.length);
+    }, 2800);
+
+    return () => window.clearInterval(timer);
+  }, [playing]);
+
+  const chooseStage = (index: number) => {
+    setActiveStage(index);
+    setPlaying(false);
+  };
+
+  const toggleJourney = () => {
+    if (!playing && activeStage === stages.length - 1) setActiveStage(0);
+    setPlaying((current) => !current);
+  };
+
+  const journeyStyle = {
+    "--journey-progress": `${15 + activeStage * 27}%`,
+  } as CSSProperties;
+
   return (
-    <section className={`ear-hero ${aided ? "is-aided" : "is-natural"}`} aria-labelledby="ear-hero-title">
+    <section
+      className={`ear-hero ${aided ? "is-aided" : "is-natural"} ${playing ? "is-playing" : "is-paused"}`}
+      style={journeyStyle}
+      aria-labelledby="ear-hero-title"
+    >
       <div className="ear-hero-art" aria-hidden="true" />
       <div className="ear-hero-shade" aria-hidden="true" />
 
@@ -71,7 +100,12 @@ export function EarJourneyHero() {
         <i /><i /><i /><i />
       </div>
 
-      <div className={`anatomy-callout callout-${stage.position}`} aria-live="polite">
+      <div className="sound-source" aria-hidden="true">
+        <span>Sound</span>
+        <div><i /><i /><i /><i /><i /></div>
+      </div>
+
+      <div key={`${stage.short}-${aided}`} className={`anatomy-callout callout-${stage.position}`} aria-live="polite">
         <div className="callout-number">{stage.short}</div>
         <div>
           <span>{stage.label}</span>
@@ -86,7 +120,7 @@ export function EarJourneyHero() {
             type="button"
             key={item.label}
             className={`hotspot hotspot-${item.position} ${activeStage === index ? "active" : ""}`}
-            onClick={() => setActiveStage(index)}
+            onClick={() => chooseStage(index)}
             aria-label={`Explore ${item.label}`}
             aria-pressed={activeStage === index}
           >
@@ -96,6 +130,8 @@ export function EarJourneyHero() {
       </div>
 
       <div className="sound-path" aria-hidden="true">
+        <span className="sound-track"><i /></span>
+        <span className="sound-runner"><i /></span>
         <span className="sound-particle p1" />
         <span className="sound-particle p2" />
         <span className="sound-particle p3" />
@@ -106,8 +142,9 @@ export function EarJourneyHero() {
           <button
             type="button"
             key={item.label}
-            className={activeStage === index ? "active" : ""}
-            onClick={() => setActiveStage(index)}
+            className={`${activeStage === index ? "active" : ""} ${index < activeStage ? "complete" : ""}`}
+            onClick={() => chooseStage(index)}
+            aria-current={activeStage === index ? "step" : undefined}
           >
             <span>{item.short}</span>
             {item.label}
@@ -115,7 +152,13 @@ export function EarJourneyHero() {
         ))}
       </nav>
 
-      <p className="ear-interaction-hint"><span aria-hidden="true">◎</span> Select a stage to explore</p>
+      <div className="journey-controls">
+        <button type="button" className="journey-play" onClick={toggleJourney} aria-label={playing ? "Pause sound journey" : "Play sound journey"}>
+          <span aria-hidden="true">{playing ? "Ⅱ" : "▶"}</span>
+          {playing ? "Pause journey" : "Play sound journey"}
+        </button>
+        <span className="journey-status" aria-live="polite">Stage {activeStage + 1} of {stages.length}</span>
+      </div>
     </section>
   );
 }
