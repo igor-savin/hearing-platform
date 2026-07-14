@@ -207,11 +207,13 @@ select {
 }
 
 .aa-ear-art {
-  background-image: url("/assets/interactive-ear-hero.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
   transform: scale(1.01);
+}
+
+.aa-ear-art img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .aa-ear-overlay {
@@ -546,8 +548,8 @@ select {
 }
 
 @media (max-width: 1024px) {
-  .aa-ear-art {
-    background-position: 58% center;
+  .aa-ear-art img {
+    object-position: 58% center;
   }
 
   .aa-ear-overlay {
@@ -575,8 +577,12 @@ select {
   }
 
   .aa-ear-art {
-    background-position: 64% top;
-    background-size: auto 360px;
+    bottom: auto;
+    height: 360px;
+  }
+
+  .aa-ear-art img {
+    object-position: 64% top;
   }
 
   .aa-ear-overlay {

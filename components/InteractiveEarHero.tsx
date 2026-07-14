@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { Pause, Phone, Play, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
@@ -159,7 +160,17 @@ export function InteractiveEarHero() {
       className={`aa-ear-hero ${playing ? "is-playing" : "is-paused"} ${aided ? "is-aided" : "is-natural"}`}
       style={heroStyle}
     >
-      <div className="aa-ear-art" aria-hidden="true" />
+      <div className="aa-ear-art" aria-hidden="true">
+        <Image
+          alt=""
+          fill
+          fetchPriority="high"
+          priority
+          quality={78}
+          sizes="100vw"
+          src="/assets/interactive-ear-hero.png"
+        />
+      </div>
       <div className="aa-ear-overlay" aria-hidden="true" />
       <div className="aa-sound-track" aria-hidden="true">
         <span className="aa-sound-runner" />
