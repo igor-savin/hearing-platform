@@ -1,4 +1,4 @@
-const DEFAULT_ADMIN_EMAILS = ["igor@hearing-care.org", "igorsavin+1@gmail.com"];
+const DEFAULT_ADMIN_EMAILS = ["igor@hearing-care.org", "igorsavin@gmail.com", "igorsavin+1@gmail.com"];
 
 function adminEmails() {
   const configured = (process.env.CMS_ADMIN_EMAILS || "")
