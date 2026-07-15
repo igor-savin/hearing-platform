@@ -18,13 +18,13 @@ export function useCmsUser() {
       validationController?.abort();
       validationController = new AbortController();
       const controller = validationController;
+      setUser(null);
+      setAuthReady(false);
 
       void (async () => {
         if (!active) return;
-        setAuthReady(false);
 
         if (!nextUser) {
-          setUser(null);
           setAuthReady(true);
           return;
         }

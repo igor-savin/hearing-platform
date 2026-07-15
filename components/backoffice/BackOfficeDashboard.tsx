@@ -81,7 +81,15 @@ export function BackOfficeDashboard() {
         setArticles(snapshot.docs.map((item) => articleFromData(item.id, item.data())).filter((item): item is DashboardArticle => Boolean(item)));
         setMessage("");
       },
-      (error) => setMessage(error.code === "permission-denied" ? "This Google account is not authorized for the publishing back office." : "The article queue could not be loaded.")
+      (error) => {
+        setArticles([]);
+        if (error.code === "permission-denied") {
+          setMessage("This Google account is not authorized for the publishing back office.");
+          void signOut(getFirebaseAuth());
+          return;
+        }
+        setMessage("The article queue could not be loaded.");
+      }
     );
   }, [user]);
 
