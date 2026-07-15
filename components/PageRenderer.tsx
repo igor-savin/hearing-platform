@@ -3123,6 +3123,20 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                   );
                 })}
               </div>
+              {meta?.sources?.length ? (
+                <section className="mt-12 border-t border-[#dedede] pt-8" aria-labelledby="article-sources">
+                  <h2 className="text-[28px] font-black leading-tight text-[#262626]" id="article-sources">Sources and further reading</h2>
+                  <ul className="mt-5 space-y-3 text-[17px] leading-6">
+                    {meta.sources.map((source) => (
+                      <li key={source.href}>
+                        <a className="focus-ring font-bold text-[#005a9c] underline" href={source.href} rel="noreferrer" target="_blank">
+                          {source.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              ) : null}
             </div>
           </div>
         </section>
@@ -4552,8 +4566,10 @@ function LocationDetails({ page }: { page: SitePage }) {
   );
 }
 
-function BlogIndex({ page }: { page: SitePage }) {
-  const orderedPosts = [...blogPosts].sort((first, second) => (second.lastModified || "").localeCompare(first.lastModified || ""));
+function BlogIndex({ page, scheduledPosts = [] }: { page: SitePage; scheduledPosts?: SitePage[] }) {
+  const orderedPosts = [...blogPosts, ...scheduledPosts]
+    .filter((post, index, posts) => posts.findIndex((candidate) => candidate.path === post.path) === index)
+    .sort((first, second) => (second.lastModified || "").localeCompare(first.lastModified || ""));
   const groupedPosts = orderedPosts.reduce<Record<string, SitePage[]>>((groups, post) => {
     const category = post.sections[0] || "Hearing Health Guide";
     groups[category] = [...(groups[category] || []), post];
@@ -4734,7 +4750,7 @@ function PageWithSchema({ page, children }: { page: SitePage; children: ReactNod
   );
 }
 
-export function PageRenderer({ page }: { page: SitePage }) {
+export function PageRenderer({ page, scheduledPosts = [] }: { page: SitePage; scheduledPosts?: SitePage[] }) {
   if (page.type === "home") {
     return (
       <PageWithSchema page={page}>
@@ -4922,7 +4938,7 @@ export function PageRenderer({ page }: { page: SitePage }) {
 
   return (
     <PageWithSchema page={page}>
-      {page.type === "blog-index" ? <BlogIndex page={page} /> : <LivePageBody page={page} />}
+      {page.type === "blog-index" ? <BlogIndex page={page} scheduledPosts={scheduledPosts} /> : <LivePageBody page={page} />}
     </PageWithSchema>
   );
 }

@@ -8,11 +8,13 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/"
+        allow: "/",
+        disallow: ["/back-office", "/api/back-office"]
       },
       {
         userAgent: ["GPTBot", "ChatGPT-User", "ClaudeBot", "PerplexityBot", "Google-Extended"],
-        allow: "/"
+        allow: "/",
+        disallow: ["/back-office", "/api/back-office"]
       }
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

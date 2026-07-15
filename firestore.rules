@@ -2,6 +2,15 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    function isCmsAdmin() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in [
+          'igor@hearing-care.org',
+          'igorsavin+1@gmail.com'
+        ];
+    }
+
     function validSubmission() {
       let data = request.resource.data;
       return data.keys().hasOnly([
@@ -39,6 +48,20 @@ service cloud.firestore {
     match /contactSubmissions/{submissionId} {
       allow create: if validSubmission();
       allow read, update, delete: if false;
+    }
+
+    match /scheduledArticles/{articleId} {
+      allow read: if isCmsAdmin()
+        || (
+          resource.data.status == 'scheduled'
+          && resource.data.publishAt is timestamp
+          && resource.data.publishAt <= request.time
+        );
+      allow create, update, delete: if isCmsAdmin()
+        && request.resource.data.path is string
+        && request.resource.data.title is string
+        && request.resource.data.publishAt is timestamp
+        && request.resource.data.status in ['draft', 'scheduled', 'archived'];
     }
 
     match /{document=**} {

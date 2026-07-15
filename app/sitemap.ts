@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
+import { getPublishedCmsArticles } from "@/lib/cms/articles";
 import { baseUrl, pages } from "@/lib/site";
 
-export const dynamic = "force-static";
+export const revalidate = 3600;
 
 const contentLastModified = new Date("2026-07-15");
 
@@ -26,7 +27,7 @@ const standalonePages: MetadataRoute.Sitemap = [
   }
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sitePages: MetadataRoute.Sitemap = pages.filter((page) => page.type !== "thank-you").map((page) => ({
     url: `${baseUrl}${page.path === "/" ? "" : page.path}`,
     lastModified: contentLastModified,
@@ -34,5 +35,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: page.path === "/" ? 1 : page.type === "blog-post" ? 0.8 : 0.9
   }));
 
-  return [...sitePages, ...standalonePages];
+  const knownUrls = new Set(sitePages.map((page) => page.url));
+  const scheduledPages: MetadataRoute.Sitemap = (await getPublishedCmsArticles())
+    .filter((page) => !knownUrls.has(page.url))
+    .map((page) => ({
+      url: page.url,
+      lastModified: page.lastModified ? new Date(page.lastModified) : contentLastModified,
+      changeFrequency: "monthly",
+      priority: 0.8
+    }));
+
+  return [...sitePages, ...scheduledPages, ...standalonePages];
 }
