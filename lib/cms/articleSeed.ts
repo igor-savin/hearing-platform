@@ -281,7 +281,7 @@ export function buildScheduledArticleSeeds(startAt: Date) {
       status: "scheduled" as const,
       publishAt: publishAt.toISOString(),
       heroImage: {
-        src: `/assets/blog-seed/photo-v1/${imageSlug}-photo-v1.webp`,
+        src: `/assets/blog-seed/photo-v2/${imageSlug}-photo-v2.webp`,
         alt: `Patient-centered ${group.category.toLowerCase()} guide for ${title}`
       },
       body: [
