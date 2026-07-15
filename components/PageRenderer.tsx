@@ -2989,6 +2989,152 @@ function BlogInternalLinks({ page }: { page: SitePage }) {
   );
 }
 
+function blogFrameClasses(frame?: string) {
+  if (frame?.includes("Family")) return { accent: "#7a4f9a", soft: "bg-[#f4eff8]", label: "text-[#7a4f9a]" };
+  if (frame?.includes("Red flag")) return { accent: "#b84a45", soft: "bg-[#fff1ef]", label: "text-[#b84a45]" };
+  if (frame?.includes("Troubleshooting")) return { accent: "#0f7a7a", soft: "bg-[#eef8f8]", label: "text-[#0f7a7a]" };
+  if (frame?.includes("Buyer")) return { accent: "#a75e22", soft: "bg-[#fff6ec]", label: "text-[#a75e22]" };
+  if (frame?.includes("Local")) return { accent: "#005a9c", soft: "bg-[#edf6fc]", label: "text-[#005a9c]" };
+  if (frame?.includes("Myth")) return { accent: "#765e00", soft: "bg-[#fff9df]", label: "text-[#765e00]" };
+  return { accent: "#005a9c", soft: "bg-[#f0f7fb]", label: "text-[#005a9c]" };
+}
+
+function blogSections(page: SitePage) {
+  const startIndex = page.blogMeta ? 2 : 0;
+  const lines = page.body.slice(startIndex).filter(Boolean);
+  const sections: { heading: string; text: string }[] = [];
+  for (let index = 0; index < lines.length; index += 2) {
+    sections.push({
+      heading: lines[index],
+      text: lines[index + 1] || ""
+    });
+  }
+  return sections.filter((section) => section.heading && section.text);
+}
+
+function BlogArticlePage({ page }: { page: SitePage }) {
+  const meta = page.blogMeta;
+  const image = page.heroImage;
+  const sections = blogSections(page);
+  const styles = blogFrameClasses(meta?.frame);
+  const intro = page.body.slice(0, 2).filter(Boolean);
+
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <article className="bg-white">
+        <section className="border-b border-[#dedede] bg-[#f7f7f5] py-[52px]">
+          <div className="mx-auto grid max-w-[1460px] gap-10 px-[64px] max-lg:px-5 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
+            <div>
+              <p className={`text-[14px] font-black uppercase tracking-[0.18em] ${styles.label}`}>{meta?.articleType || page.sections[0] || "Hearing health guide"}</p>
+              <h1 className="mt-4 text-[54px] font-black leading-[1.03] text-[#262626] max-md:text-[38px]">{page.h1}</h1>
+              <p className="mt-5 max-w-[760px] text-[22px] leading-[1.45] text-[#4b4b4b] max-md:text-[18px]">{page.metaDescription}</p>
+              <div className="mt-7 grid gap-3 text-[16px] leading-6 text-[#555] sm:grid-cols-2">
+                <p>
+                  <span className="font-black text-[#262626]">Frame:</span> {meta?.frame || page.sections[1] || "Guide"}
+                </p>
+                <p>
+                  <span className="font-black text-[#262626]">Read time:</span> {meta?.readTime || "5 min read"}
+                </p>
+                <p>
+                  <span className="font-black text-[#262626]">Byline:</span> {meta?.byline || siteName}
+                </p>
+                <p>
+                  <span className="font-black text-[#262626]">Reviewed by:</span> {meta?.reviewedBy || `${siteName} team`}
+                </p>
+              </div>
+            </div>
+            {image ? (
+              <Image
+                alt={image.alt || page.h1}
+                className="w-full border border-[#d9d9d9] bg-white object-cover shadow-sm"
+                height={675}
+                priority={false}
+                unoptimized={image.src.endsWith(".svg")}
+                src={image.src}
+                width={1200}
+              />
+            ) : null}
+          </div>
+        </section>
+
+        <section className="py-[52px]">
+          <div className="mx-auto grid max-w-[1460px] gap-10 px-[64px] max-lg:px-5 lg:grid-cols-[320px_1fr]">
+            <aside className="space-y-5 lg:sticky lg:top-6 lg:self-start">
+              <div className={`${styles.soft} border-l-4 p-6`} style={{ borderColor: styles.accent }}>
+                <p className="text-[13px] font-black uppercase tracking-[0.16em] text-[#555]">Patient question</p>
+                <p className="mt-3 text-[22px] font-black leading-tight text-[#262626]">{meta?.patientQuestion || page.h1}</p>
+              </div>
+              {meta?.keyTakeaways?.length ? (
+                <div className="border border-[#dedede] bg-white p-6 shadow-sm">
+                  <h2 className="text-[22px] font-black text-[#262626]">Key takeaways</h2>
+                  <ul className="mt-4 space-y-3 text-[16px] leading-6 text-[#444]">
+                    {meta.keyTakeaways.map((takeaway) => (
+                      <li className="flex gap-3" key={takeaway}>
+                        <span className="mt-[9px] h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: styles.accent }} />
+                        <span>{takeaway}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+              <nav className="border border-[#dedede] bg-[#fbfbfa] p-6">
+                <h2 className="text-[20px] font-black text-[#262626]">In this article</h2>
+                <ol className="mt-4 space-y-3 text-[15px] leading-5">
+                  {sections.slice(0, 7).map((section) => (
+                    <li key={section.heading}>
+                      <a className="focus-ring font-bold text-[#005a9c] underline" href={`#${anchorId(section.heading)}`}>
+                        {section.heading}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            </aside>
+
+            <div>
+              {intro.length ? (
+                <div className="mb-10 border-b border-[#dedede] pb-8">
+                  {intro.map((line) => (
+                    <p className="mb-5 text-[24px] leading-[1.45] text-[#333] max-md:text-[19px]" key={line}>
+                      {line}
+                    </p>
+                  ))}
+                </div>
+              ) : null}
+              {meta?.pullQuote ? (
+                <blockquote className={`${styles.soft} mb-10 p-8 text-[30px] font-black leading-tight text-[#262626] max-md:text-[23px]`}>
+                  “{meta.pullQuote}”
+                </blockquote>
+              ) : null}
+              <div className="space-y-10">
+                {sections.map((section, index) => {
+                  const isEmphasis = index % 4 === 1;
+                  const isSplit = index % 5 === 2;
+                  return (
+                    <section
+                      className={isEmphasis ? `${styles.soft} p-8` : isSplit ? "grid gap-6 border-y border-[#dedede] py-8 md:grid-cols-[0.38fr_0.62fr]" : ""}
+                      id={anchorId(section.heading)}
+                      key={`${section.heading}-${index}`}
+                    >
+                      <h2 className="text-[36px] font-black leading-tight text-[#262626] max-md:text-[28px]">{section.heading}</h2>
+                      <p className="mt-4 text-[22px] leading-[1.55] text-[#333] max-md:text-[18px]">{section.text}</p>
+                    </section>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <BlogPostRelated page={page} />
+      <BlogInternalLinks page={page} />
+      <AppointmentDecisionBand page={page} heading="Have symptoms like this? Choose a practical next step." />
+    </>
+  );
+}
+
 function CoreServiceDetail({ page }: { page: SitePage }) {
   const detail = coreServiceDeepDives[page.path];
   if (!detail) return null;
@@ -3618,6 +3764,10 @@ function LivePageBody({ page }: { page: SitePage }) {
 
   if (page.type === "service" && serviceVisual) {
     return <ServiceLandingPage page={page} />;
+  }
+
+  if (isBlog && page.blogMeta) {
+    return <BlogArticlePage page={page} />;
   }
 
   return (

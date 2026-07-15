@@ -118,6 +118,17 @@ export type SitePage = {
   body: string[];
   faqs: { question: string; answer: string }[];
   related: { label: string; href: string }[];
+  blogMeta?: {
+    frame: string;
+    byline: string;
+    reviewedBy: string;
+    readTime: string;
+    articleType: string;
+    pullQuote: string;
+    keyTakeaways: string[];
+    patientQuestion: string;
+    storyLead: string;
+  };
 };
 
 export const services = [
