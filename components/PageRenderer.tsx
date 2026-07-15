@@ -84,6 +84,14 @@ const patientForms = [
   }
 ];
 
+function anchorId(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 const linkedLocationNames = new Map(
   locations.map((location) => [location.name.replace(/\s+Location$/, ""), location.path])
 );
@@ -2919,8 +2927,9 @@ function BlogPostRelated({ page }: { page: SitePage }) {
 
   return (
     <section className="bg-white pb-12 text-center">
-      <div className="mx-auto max-w-[1180px] px-5">
-        <div className="mx-auto grid max-w-[900px] gap-8 text-left md:grid-cols-2">
+      <div className="mx-auto max-w-[1320px] px-5">
+        <h2 className="text-[34px] font-black leading-tight text-[#333] max-md:text-[28px]">Related articles</h2>
+        <div className="mx-auto mt-8 grid gap-8 text-left md:grid-cols-3">
           {relatedPosts.map((post) => (
             <Link className="focus-ring block bg-white" href={post.path} key={post.path}>
               {post.heroImage ? (
@@ -2928,12 +2937,51 @@ function BlogPostRelated({ page }: { page: SitePage }) {
                   alt={post.heroImage.alt || post.h1}
                   className="aspect-[16/10] w-full object-cover"
                   height={420}
+                  unoptimized={post.heroImage.src.endsWith(".svg")}
                   src={post.heroImage.src}
                   width={720}
                 />
               ) : null}
               <h2 className="mt-4 text-[20px] font-black leading-tight text-[#333]">{post.h1}</h2>
             </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BlogInternalLinks({ page }: { page: SitePage }) {
+  if (page.type !== "blog-post" || !page.related.length) return null;
+
+  const relatedBlogPaths = new Set(blogPosts.map((post) => post.path));
+  const relatedArticles = page.related.filter((link) => relatedBlogPaths.has(link.href));
+  const helpfulNextSteps = page.related.filter((link) => !relatedBlogPaths.has(link.href));
+
+  if (!relatedArticles.length && !helpfulNextSteps.length) return null;
+
+  const groups = [
+    { title: "Keep reading", links: relatedArticles },
+    { title: "Helpful next steps", links: helpfulNextSteps }
+  ].filter((group) => group.links.length);
+
+  return (
+    <section className="bg-[#f7f7f5] py-[52px]">
+      <div className="mx-auto max-w-[1180px] px-5">
+        <div className="grid gap-7 md:grid-cols-2">
+          {groups.map((group) => (
+            <div className="border border-[#dedede] bg-white p-7" key={group.title}>
+              <h2 className="text-[26px] font-black leading-tight text-[#333]">{group.title}</h2>
+              <ul className="mt-5 space-y-4">
+                {group.links.map((link) => (
+                  <li key={`${group.title}-${link.href}`}>
+                    <Link className="focus-ring font-bold leading-6 text-[#005a9c] underline" href={link.href}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
       </div>
@@ -3590,6 +3638,7 @@ function LivePageBody({ page }: { page: SitePage }) {
               className="mt-[38px] max-h-[430px] w-full max-w-[860px] object-cover"
               height={760}
               priority={false}
+              unoptimized={image.src.endsWith(".svg")}
               src={image.src}
               width={1180}
             />
@@ -3602,6 +3651,7 @@ function LivePageBody({ page }: { page: SitePage }) {
 
       {page.type === "service" ? <CoreServiceDetail page={page} /> : null}
       {isBlog ? <BlogPostRelated page={page} /> : null}
+      {isBlog ? <BlogInternalLinks page={page} /> : null}
       {isBlog ? <AppointmentDecisionBand page={page} heading="Have symptoms like this? Choose a practical next step." /> : null}
     </>
   );
@@ -4354,40 +4404,73 @@ function LocationDetails({ page }: { page: SitePage }) {
 
 function BlogIndex({ page }: { page: SitePage }) {
   const orderedPosts = [...blogPosts].sort((first, second) => (second.lastModified || "").localeCompare(first.lastModified || ""));
+  const groupedPosts = orderedPosts.reduce<Record<string, SitePage[]>>((groups, post) => {
+    const category = post.sections[0] || "Hearing Health Guide";
+    groups[category] = [...(groups[category] || []), post];
+    return groups;
+  }, {});
+  const categories = Object.keys(groupedPosts);
 
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-[#f7f7f5] py-14 text-center">
+      <section className="bg-[#f7f7f5] py-14 text-center" id="top">
         <div className="mx-auto max-w-[1180px] px-5">
           <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Audiology Associates of Westchester</p>
           <h1 className="mt-3 text-[42px] font-black text-[#333] max-md:text-[34px]">Hearing Health Resources</h1>
           <p className="mx-auto mt-4 max-w-[760px] text-[20px] leading-[1.45] text-[#555] max-md:text-[18px]">
             Clear, practical guidance on hearing aids, tinnitus, ear care, and the moments when it is time to speak with an audiologist.
           </p>
-          <div className="mt-10 grid gap-7 text-left md:grid-cols-2 xl:grid-cols-3">
-            {orderedPosts.map((post) => (
-            <Link className="focus-ring group flex h-full flex-col overflow-hidden border border-[#dedede] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md" href={post.path} key={post.path}>
-              {post.heroImage ? (
-                <Image
-                  alt={post.heroImage.alt || post.h1}
-                  className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-                  height={420}
-                  src={post.heroImage.src}
-                  width={720}
-                />
-              ) : <div className="aspect-[16/10] bg-[#dbe9f3]" />}
-              <div className="flex flex-1 flex-col p-6">
-                <p className="text-[13px] font-black uppercase tracking-[0.14em] text-[#a75e22]">Hearing health guide</p>
-                <h2 className="mt-3 text-[24px] font-black leading-tight text-[#333] group-hover:text-[#005a9c]">{post.h1}</h2>
-                <p className="mt-3 line-clamp-3 text-[16px] leading-6 text-[#555]">{post.metaDescription}</p>
-                <span className="mt-6 inline-block text-[16px] font-bold text-[#005a9c] underline">Read article</span>
-              </div>
-            </Link>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            {categories.map((category) => (
+              <a
+                className="focus-ring rounded-full border border-[#c9d6df] bg-white px-4 py-2 text-[15px] font-black text-[#005a9c] transition hover:border-[#005a9c]"
+                href={`#${anchorId(category)}`}
+                key={category}
+              >
+                {category}
+              </a>
             ))}
           </div>
         </div>
       </section>
+      {categories.map((category, index) => (
+        <section className={index % 2 === 0 ? "bg-white py-14" : "bg-[#f7f7f5] py-14"} id={anchorId(category)} key={category}>
+          <div className="mx-auto max-w-[1320px] px-5">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <p className="text-[13px] font-black uppercase tracking-[0.16em] text-[#a75e22]">Resource collection</p>
+                <h2 className="mt-2 text-[34px] font-black leading-tight text-[#333] max-md:text-[28px]">{category}</h2>
+              </div>
+              <a className="focus-ring text-[16px] font-bold text-[#005a9c] underline" href="#top">
+                Back to topics
+              </a>
+            </div>
+            <div className="mt-8 grid gap-7 text-left md:grid-cols-2 xl:grid-cols-3">
+              {groupedPosts[category].map((post) => (
+                <Link className="focus-ring group flex h-full flex-col overflow-hidden border border-[#dedede] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md" href={post.path} key={post.path}>
+                  {post.heroImage ? (
+                    <Image
+                      alt={post.heroImage.alt || post.h1}
+                      className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                      height={420}
+                      unoptimized={post.heroImage.src.endsWith(".svg")}
+                      src={post.heroImage.src}
+                      width={720}
+                    />
+                  ) : <div className="aspect-[16/10] bg-[#dbe9f3]" />}
+                  <div className="flex flex-1 flex-col p-6">
+                    <p className="text-[13px] font-black uppercase tracking-[0.14em] text-[#a75e22]">{post.sections[0] || "Hearing health guide"}</p>
+                    <h3 className="mt-3 text-[24px] font-black leading-tight text-[#333] group-hover:text-[#005a9c]">{post.h1}</h3>
+                    <p className="mt-3 line-clamp-3 text-[16px] leading-6 text-[#555]">{post.metaDescription}</p>
+                    <span className="mt-6 inline-block text-[16px] font-bold text-[#005a9c] underline">Read article</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
     </>
   );
 }
