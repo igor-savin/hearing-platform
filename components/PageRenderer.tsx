@@ -1050,6 +1050,145 @@ function officeForAreaPath(path: string) {
   return locations.find((location) => location.path === officePath) || null;
 }
 
+type LocalHeroProps = {
+  badge: string;
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  accent: string;
+  stats: string[];
+  primaryHref?: string;
+  primaryLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+};
+
+function LocalHeroArt({ accent, badge, title, stats }: Pick<LocalHeroProps, "accent" | "badge" | "title" | "stats">) {
+  return (
+    <div
+      aria-label={`${title} local hearing care graphic`}
+      className="relative min-h-[390px] overflow-hidden rounded-[28px] border border-white/25 bg-[#0a4f86] p-6 shadow-2xl max-md:min-h-[330px]"
+      role="img"
+    >
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(circle at 22% 20%, rgba(255,255,255,0.28), transparent 28%), radial-gradient(circle at 82% 22%, rgba(255,212,90,0.34), transparent 24%), linear-gradient(135deg, rgba(0,35,64,0.98), rgba(0,90,156,0.86))"
+        }}
+      />
+      <div className="absolute inset-x-8 bottom-10 top-12 rounded-[999px] border border-white/20" />
+      <div className="absolute left-[14%] top-[28%] h-[150px] w-[150px] rounded-full border-[16px] border-white/20" />
+      <div className="absolute right-[10%] top-[18%] h-[118px] w-[118px] rounded-full border-[12px] border-[#ffd45a]/40" />
+      <div className="absolute bottom-[18%] right-[20%] h-[88px] w-[88px] rounded-full border-[10px] border-white/25" />
+      <div className="absolute left-[25%] top-[42%] h-[22px] w-[52%] rounded-full bg-white/18" />
+      <div className="absolute left-[34%] top-[52%] h-[18px] w-[42%] rounded-full bg-white/14" />
+      <div className="absolute left-[42%] top-[61%] h-[14px] w-[30%] rounded-full bg-white/12" />
+
+      <div className="relative flex h-full min-h-[342px] flex-col justify-between rounded-[22px] border border-white/20 bg-white/10 p-6 backdrop-blur-[1px] max-md:min-h-[282px]">
+        <div>
+          <p className="inline-flex rounded-full bg-[#ffd45a] px-4 py-2 text-[13px] font-black uppercase tracking-[0.16em] text-[#003f6f]">
+            {badge}
+          </p>
+          <h2 className="mt-5 max-w-[520px] text-[40px] font-black leading-tight text-white max-md:text-[30px]">{title}</h2>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-3">
+          {stats.slice(0, 3).map((stat) => (
+            <div className="rounded-[18px] border border-white/20 bg-white/16 p-4 text-[15px] font-bold leading-5 text-white" key={stat}>
+              {stat}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 h-2 w-full" style={{ backgroundColor: accent }} />
+    </div>
+  );
+}
+
+function LocalHero({ accent, badge, eyebrow, primaryHref, primaryLabel, secondaryHref, secondaryLabel, stats, subtitle, title }: LocalHeroProps) {
+  return (
+    <section className="relative isolate overflow-hidden bg-[#003f6f] py-[62px] text-white">
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(0,34,61,0.98) 0%, rgba(0,63,111,0.94) 58%, rgba(0,90,156,0.72) 100%)"
+        }}
+      />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(255,212,90,0.18),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_30%)]" />
+      <div className="mx-auto grid max-w-[1660px] gap-10 px-[64px] lg:grid-cols-[0.92fr_1.08fr] lg:items-center max-md:px-5">
+        <div>
+          <p className="text-[15px] font-black uppercase tracking-[0.24em] text-[#ffd45a]">{eyebrow}</p>
+          <h1 className="mt-5 max-w-[860px] text-[58px] font-black leading-[0.98] max-md:text-[40px]">{title}</h1>
+          <p className="mt-6 max-w-[780px] text-[22px] leading-8 text-white/88 max-md:text-[19px]">{subtitle}</p>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            {primaryHref && primaryLabel ? (
+              <Link
+                className="focus-ring inline-flex items-center justify-center rounded-full bg-[#ffd45a] px-6 py-4 text-[16px] font-black uppercase tracking-[0.04em] text-[#003f6f] hover:bg-white"
+                href={primaryHref}
+              >
+                {primaryLabel}
+              </Link>
+            ) : null}
+            {secondaryHref && secondaryLabel ? (
+              <Link
+                className="focus-ring inline-flex items-center justify-center rounded-full border-2 border-white/70 px-6 py-4 text-[16px] font-black uppercase tracking-[0.04em] text-white hover:bg-white hover:text-[#003f6f]"
+                href={secondaryHref}
+              >
+                {secondaryLabel}
+              </Link>
+            ) : null}
+          </div>
+        </div>
+        <LocalHeroArt accent={accent} badge={badge} stats={stats} title={title} />
+      </div>
+    </section>
+  );
+}
+
+function countyHeroProps(county: AreaCounty, cities: AreaCity[]): LocalHeroProps {
+  const isFairfield = county.slug === "fairfield-county-ct";
+  const isPutnam = county.slug === "putnam-county-ny";
+  const featuredCity = cities[0];
+  return {
+    badge: `${county.name} ${county.state}`,
+    eyebrow: "Audiology service area",
+    title: county.headline,
+    subtitle: `${county.summary} ${county.officeContext}`,
+    accent: isFairfield ? "#ffd45a" : isPutnam ? "#9bd3f4" : "#7bdcb5",
+    stats: [
+      isFairfield ? "Greenwich + lower Fairfield County" : isPutnam ? "Mahopac + southern Putnam" : `${cities.length} Westchester communities`,
+      isFairfield ? "Nearby Harrison office access" : isPutnam ? "Nearby Somers office access" : "Multiple Westchester offices",
+      "Hearing tests, hearing aids, tinnitus care"
+    ],
+    primaryHref: featuredCity ? cityPath(featuredCity) : "/contact-us",
+    primaryLabel: featuredCity ? `Explore ${featuredCity.name}` : "Contact Us",
+    secondaryHref: "/hearing-testing",
+    secondaryLabel: "Schedule hearing testing"
+  };
+}
+
+function cityHeroProps(city: AreaCity, office: ReturnType<typeof officeForAreaPath>): LocalHeroProps {
+  const flavor = localFlavorForCity(city);
+  const officeLabel = office ? `${office.city}, ${office.state} office` : "nearby Westchester office";
+  return {
+    badge: `${city.name}, ${city.state}`,
+    eyebrow: "Local hearing care",
+    title: `Trusted hearing care near ${city.name}`,
+    subtitle: `${flavor?.intro || city.localContext} ${city.travelNote}`,
+    accent: city.state === "CT" ? "#ffd45a" : city.nearestOffice === "somers" ? "#9bd3f4" : "#7bdcb5",
+    stats: [
+      officeLabel,
+      `Nearby: ${city.nearby.slice(0, 3).join(", ")}`,
+      city.patientNeeds.slice(0, 2).join(" + ")
+    ],
+    primaryHref: office?.path || "/contact-us",
+    primaryLabel: office ? `View ${office.city} office` : "Contact Us",
+    secondaryHref: "/hearing-testing",
+    secondaryLabel: "Hearing tests"
+  };
+}
+
 function AreaAppointmentCta({ cityName }: { cityName?: string }) {
   return (
     <section className="bg-white py-[54px] text-center">
@@ -1179,27 +1318,18 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
   return (
     <>
       <AreaBreadcrumbs page={page} />
-      <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Areas We Serve</p>
-          <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
-          <LiveRule />
-          <div className="mt-[38px] max-w-[1440px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-            {page.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <ZocdocButton className="legacy-live-button inline-flex w-full sm:w-auto" label="Book an Appointment" trackingId="areas-index-appointment" />
-            <Link className="legacy-live-button inline-flex w-full sm:w-auto" href="/hearing-testing">
-              Hearing Tests
-            </Link>
-            <Link className="legacy-live-button inline-flex w-full sm:w-auto" href="/hearing-aid-fitting">
-              Hearing Aid Fitting
-            </Link>
-          </div>
-        </div>
-      </section>
+      <LocalHero
+        accent="#7bdcb5"
+        badge="Westchester + nearby communities"
+        eyebrow="Areas We Serve"
+        primaryHref="/hearing-testing"
+        primaryLabel="Start with hearing testing"
+        secondaryHref="/contact-us"
+        secondaryLabel="Find the right office"
+        stats={["Local service-area guide", "Harrison, Somers, White Plains, Scarsdale", "Hearing tests, hearing aids, tinnitus care"]}
+        subtitle={page.body.join(" ")}
+        title={page.h1}
+      />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Explore by County</h2>
@@ -1241,22 +1371,40 @@ function AreaCountyPage({ page }: { page: SitePage }) {
   if (!county) return <LivePageBody page={page} />;
   const cities = citiesForCounty(county.slug);
   const localFlavor = localFlavorForCounty(county);
+  const hero = countyHeroProps(county, cities);
 
   return (
     <>
       <AreaBreadcrumbs page={page} />
+      <LocalHero {...hero} />
+      {localFlavor ? <AreaCountyLocalFlavorSection county={county} flavor={localFlavor} /> : null}
       <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Audiology Service Area</p>
-          <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
-          <LiveRule />
-          <div className="mt-[38px] max-w-[1440px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-            <p>{county.summary}</p>
-            <p>{county.officeContext}</p>
+        <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.78fr_1.22fr] max-md:px-5">
+          <div>
+            <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">County-level planning</p>
+            <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+              Choose care based on real local routines
+            </h2>
+            <LiveRule />
+            <p className="mt-[30px] text-[21px] leading-8 text-black">
+              The right appointment should account for where patients actually listen: restaurants, offices, trains, family gatherings,
+              waterfront activity, quiet homes, and the office that is easiest to reach for follow-up.
+            </p>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {[
+              { title: "Best first step", body: "Start with a comprehensive hearing test if you are unsure whether the issue is hearing loss, device performance, tinnitus, or another concern." },
+              { title: "Nearby office fit", body: county.officeContext },
+              { title: "Follow-up matters", body: "Good hearing aid outcomes depend on fitting, verification when appropriate, cleaning, repair support, and realistic follow-up adjustments." }
+            ].map((item) => (
+              <article className="bg-[#f7fbfd] p-6 text-black" key={item.title}>
+                <h3 className="text-[24px] font-black leading-tight">{item.title}</h3>
+                <p className="mt-4 text-[18px] leading-7">{item.body}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
-      {localFlavor ? <AreaCountyLocalFlavorSection county={county} flavor={localFlavor} /> : null}
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Cities and Communities We Serve</h2>
@@ -1295,39 +1443,42 @@ function AreaCityPage({ page }: { page: SitePage }) {
   return (
     <>
       <AreaBreadcrumbs page={page} />
-      <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Local Hearing Care</p>
-          <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
-          <LiveRule />
-          <div className="mt-[38px] grid gap-[48px] lg:grid-cols-[minmax(0,1fr)_420px]">
-            <div className="space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-              <p>{city.localContext}</p>
-              <p>{city.travelNote}</p>
-              <p>
-                Audiology Associates of Westchester provides educational information online, but hearing care decisions are personal.
-                Please contact the practice for appointment availability and clinical recommendations.
-              </p>
-            </div>
-            {office ? (
-              <aside className="bg-[#dbe9f3] p-7 text-black">
-                <h2 className="text-[30px] font-black leading-tight">Nearest Office</h2>
-                <Link className="mt-4 block text-[22px] font-bold text-[#005a9c] underline" href={office.path}>
-                  {office.name}
-                </Link>
-                <p className="mt-3 text-[20px] leading-[1.35]">{office.address}</p>
-                <p className="mt-3 text-[20px] leading-[1.35]">
-                  Phone:{" "}
-                  <a className="font-bold text-[#005a9c] underline" href={office.phoneHref}>
-                    {office.phone}
-                  </a>
+      <LocalHero {...cityHeroProps(city, office)} />
+      {office ? (
+        <section className="bg-white py-[52px]">
+          <div className="mx-auto grid max-w-[1660px] gap-[48px] px-[64px] lg:grid-cols-[minmax(0,1fr)_420px] max-md:px-5">
+            <div>
+              <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Practical appointment planning</p>
+              <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+                What {city.name} patients should know before scheduling
+              </h2>
+              <LiveRule />
+              <div className="mt-[30px] space-y-[22px] text-[22px] leading-8 text-black max-md:text-[18px]">
+                <p>{city.localContext}</p>
+                <p>{city.travelNote}</p>
+                <p>
+                  Bring notes about where hearing feels hardest — restaurants, phone calls, family conversations, commuting, outdoor activity,
+                  tinnitus, or hearing aid comfort — so the visit can focus on the situations that matter most.
                 </p>
-                <p className="mt-3 text-[18px] leading-[1.35]">{office.hours.join(" ")}</p>
-              </aside>
-            ) : null}
+              </div>
+            </div>
+            <aside className="bg-[#dbe9f3] p-7 text-black">
+              <h2 className="text-[30px] font-black leading-tight">Nearest Office</h2>
+              <Link className="mt-4 block text-[22px] font-bold text-[#005a9c] underline" href={office.path}>
+                {office.name}
+              </Link>
+              <p className="mt-3 text-[20px] leading-[1.35]">{office.address}</p>
+              <p className="mt-3 text-[20px] leading-[1.35]">
+                Phone:{" "}
+                <a className="font-bold text-[#005a9c] underline" href={office.phoneHref}>
+                  {office.phone}
+                </a>
+              </p>
+              <p className="mt-3 text-[18px] leading-[1.35]">{office.hours.join(" ")}</p>
+            </aside>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
       {localFlavor ? <AreaCityLocalFlavorSection city={city} flavor={localFlavor} /> : null}
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
@@ -2412,18 +2563,42 @@ function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
 function LiveLocationPage({ page }: { page: SitePage }) {
   const content = legacyLocationContent[page.path];
   if (!content) return <LivePageBody page={page} />;
+  const legacyCity = areaCities.find((item) => item.slug === legacyAreaCitySlugs[page.path]);
+  const legacyOffice = legacyCity ? locations.find((location) => location.path === officePathForCity(legacyCity)) || null : null;
+  const legacyHero = legacyCity
+    ? {
+        ...cityHeroProps(legacyCity, legacyOffice),
+        title: content.heading,
+        subtitle: content.paragraphs.slice(0, 2).join(" ")
+      }
+    : null;
 
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          {content.intro ? <h2 className="mb-[18px] text-[24px] font-normal leading-tight text-black">{content.intro}</h2> : null}
-          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{content.heading}</h1>
-          <LiveRule />
-          {content.paragraphs.length ? <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} /> : null}
-        </div>
-      </section>
+      {legacyHero ? (
+        <LocalHero {...legacyHero} />
+      ) : (
+        <section className="bg-white py-[52px]">
+          <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+            {content.intro ? <h2 className="mb-[18px] text-[24px] font-normal leading-tight text-black">{content.intro}</h2> : null}
+            <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{content.heading}</h1>
+            <LiveRule />
+            {content.paragraphs.length ? <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} /> : null}
+          </div>
+        </section>
+      )}
+      {legacyHero && content.paragraphs.length ? (
+        <section className="bg-white py-[52px]">
+          <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+            <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+              Local audiology care for {legacyCity?.name || "this community"}
+            </h2>
+            <LiveRule />
+            <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} />
+          </div>
+        </section>
+      ) : null}
       {content.sections.map((section) => (
         <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
       ))}
