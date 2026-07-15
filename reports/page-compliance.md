@@ -61,9 +61,9 @@ Compared 38 rebuilt pages against the crawled live inventory.
 | From | Status | Location |
 | --- | --- | --- |
 /privacy-policy | 301 | /privacy
-/somers-ny | 200 | 
-/white-plains-ny | 200 | 
-/scarsdale-ny | 200 | 
+/somers-ny | 308 | /Somers-NY
+/white-plains-ny | 308 | /White-Plains-NY
+/scarsdale-ny | 308 | /Scarsdale-NY
 /hearing-aid-brands | 301 | /hearing-aids-brands
 /locations | 301 | /contact-us
 /services | 301 | /hearing-testing
