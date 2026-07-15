@@ -1,13 +1,13 @@
 # Functionality QA Report
 
 Base URL: https://audiology-associates-westchester.vercel.app
-Run date: 2026-07-15T02:24:09.664Z
+Run date: 2026-07-15T02:51:40.783Z
 
 ## Summary
 
 - Crawled rebuilt pages checked: 38
 - Page-level failures: 0
-- Internal links checked: 104
+- Internal links checked: 154
 - Broken internal links: 0
 - Redirect checks passed: 5/5
 - Sitemap/robots/llms checks passed: 3/3
