@@ -61,7 +61,7 @@ function articleFromData(id: string, data: DocumentData): DashboardArticle | nul
 }
 
 export function BackOfficeDashboard() {
-  const { user, authReady } = useCmsUser();
+  const { user, authReady, authError } = useCmsUser();
   const [articles, setArticles] = useState<DashboardArticle[]>([]);
   const [startAt, setStartAt] = useState(defaultStartValue);
   const [search, setSearch] = useState("");
@@ -159,7 +159,7 @@ export function BackOfficeDashboard() {
           <button className="focus-ring mt-8 inline-flex items-center gap-2 bg-[#115e68] px-6 py-3 font-black text-white" onClick={login} type="button">
             <LogIn size={20} /> Sign in with Google
           </button>
-          {message ? <p className="mt-5 font-bold text-[#9f2f2f]">{message}</p> : null}
+          {message || authError ? <p className="mt-5 font-bold text-[#9f2f2f]">{message || authError}</p> : null}
         </div>
       </section>
     );

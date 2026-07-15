@@ -28,7 +28,7 @@ function localInputValue(date: Date) {
 }
 
 export function ArticleEditor({ articleId }: { articleId: string }) {
-  const { user, authReady } = useCmsUser();
+  const { user, authReady, authError } = useCmsUser();
   const [article, setArticle] = useState<EditableArticle | null>(null);
   const [message, setMessage] = useState("");
   const [saving, setSaving] = useState(false);
@@ -75,7 +75,7 @@ export function ArticleEditor({ articleId }: { articleId: string }) {
   }
 
   if (!authReady) return <p className="p-8">Loading…</p>;
-  if (!user) return <div className="mx-auto max-w-lg p-10 text-center"><h1 className="text-3xl font-black">Sign in required</h1><button className="mt-6 bg-[#115e68] px-5 py-3 font-black text-white" onClick={() => signInWithPopup(getFirebaseAuth(), new GoogleAuthProvider())} type="button">Sign in with Google</button>{message ? <p className="mt-4">{message}</p> : null}</div>;
+  if (!user) return <div className="mx-auto max-w-lg p-10 text-center"><h1 className="text-3xl font-black">Sign in required</h1><button className="mt-6 bg-[#115e68] px-5 py-3 font-black text-white" onClick={() => signInWithPopup(getFirebaseAuth(), new GoogleAuthProvider())} type="button">Sign in with Google</button>{message || authError ? <p className="mt-4">{message || authError}</p> : null}</div>;
   if (!article) return <p className="p-8">{message || "Loading article…"}</p>;
 
   const set = (field: keyof EditableArticle, value: string) => setArticle((current) => current ? { ...current, [field]: value } : current);
