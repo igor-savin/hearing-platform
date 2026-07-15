@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import crawl from "@/data/crawl.json";
+import { comparisonPages } from "@/lib/conversion";
 import {
   brandPath,
   hearingAidBrandsPath,
@@ -755,6 +756,8 @@ function baseFaqs(page: SitePage) {
 }
 
 function relatedLinks(page: SitePage) {
+  if (page.related.length) return page.related;
+
   if (page.path === howWeCanHelpRootPath) {
     return helpServices.map((service) => ({ label: service.title, href: helpServicePath(service) })).slice(0, 7);
   }
@@ -787,7 +790,7 @@ function relatedLinks(page: SitePage) {
   if (page.type === "blog-post") {
     const curatedLinks = editorialBlogRelatedLinks[page.path];
     if (curatedLinks) return curatedLinks;
-    return [...generatedPages, ...editorialBlogPosts]
+    return [...generatedPages, ...editorialBlogPosts, ...comparisonPages]
       .filter((post) => post.path !== page.path)
       .filter((post) => post.type === "blog-post")
       .map((post) => ({ label: post.h1, href: post.path }))
@@ -1364,7 +1367,7 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...aboutTrustPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);

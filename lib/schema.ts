@@ -33,6 +33,13 @@ export function organizationSchema() {
       "https://twitter.com/audiologyassoci",
       "https://www.yelp.com/biz/audiology-associates-of-westchester-white-plains-2"
     ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: primaryPhone,
+      contactType: "appointments",
+      areaServed: "US",
+      availableLanguage: "English"
+    },
     department: locations
       .filter((location) => location.type === "office")
       .map((location) => ({
@@ -50,6 +57,11 @@ export function websiteSchema() {
     url: baseUrl,
     publisher: {
       "@id": `${baseUrl}/#organization`
+    },
+    potentialAction: {
+      "@type": "ContactAction",
+      target: `${baseUrl}/contact-us`,
+      name: "Request an audiology appointment"
     }
   };
 }
@@ -183,6 +195,14 @@ export function pageSchema(page: SitePage) {
     description: page.metaDescription,
     isPartOf: { "@id": `${baseUrl}/#website` },
     about: { "@id": `${baseUrl}/#organization` },
+    potentialAction:
+      page.type === "service" || page.type === "location" || page.type === "service-area"
+        ? {
+            "@type": "ReserveAction",
+            name: "Request an appointment",
+            target: `${baseUrl}/contact-us`
+          }
+        : undefined,
     primaryImageOfPage: page.heroImage
       ? {
           "@type": "ImageObject",
@@ -231,7 +251,18 @@ export function serviceSchema(page: SitePage) {
     name: service?.title || page.h1,
     description: service?.description || page.metaDescription,
     provider: { "@id": `${baseUrl}/#organization` },
+    serviceType: "Audiology",
+    category: "Hearing care",
     areaServed: ["Westchester County", "White Plains", "Harrison", "Somers", "Scarsdale", "Rye", "Mt. Kisco", "Greenwich"],
+    audience: {
+      "@type": "PeopleAudience",
+      suggestedMinAge: 18
+    },
+    potentialAction: {
+      "@type": "ReserveAction",
+      name: "Request an audiology appointment",
+      target: `${baseUrl}/contact-us`
+    },
     availableChannel: locations
       .filter((location) => location.type === "office")
       .map((location) => ({
@@ -251,6 +282,7 @@ export function localBusinessSchema(page: SitePage) {
     name: `${siteName} - ${location.city}`,
     url: `${baseUrl}${location.path}`,
     telephone: location.phone,
+    priceRange: "$$",
     parentOrganization: { "@id": `${baseUrl}/#organization` },
     medicalSpecialty: "Audiology",
     address: {
@@ -259,6 +291,21 @@ export function localBusinessSchema(page: SitePage) {
       addressLocality: location.city,
       addressRegion: location.state,
       addressCountry: "US"
+    },
+    hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`,
+    areaServed: [location.city, ...location.nearby],
+    makesOffer: allServiceLinks.slice(0, 8).map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.title,
+        url: `${baseUrl}${service.path}`
+      }
+    })),
+    potentialAction: {
+      "@type": "ReserveAction",
+      name: "Request an audiology appointment",
+      target: `${baseUrl}/contact-us`
     },
     openingHoursSpecification: location.hours.map((hours) => ({
       "@type": "OpeningHoursSpecification",
@@ -281,6 +328,15 @@ export function personSchemas(page: SitePage) {
         image: provider.image,
         description: page.metaDescription,
         worksFor: { "@id": `${baseUrl}/#organization` },
+        hasOccupation: {
+          "@type": "Occupation",
+          name: "Audiologist",
+          occupationalCategory: "29-1181.00"
+        },
+        memberOf: provider.affiliations?.map((affiliation) => ({
+          "@type": "Organization",
+          name: affiliation
+        })),
         knowsAbout: provider.specialties,
         alumniOf: provider.credentials
           .filter((credential) => credential.startsWith("College:") || credential.startsWith("Graduate:"))
@@ -302,6 +358,11 @@ export function personSchemas(page: SitePage) {
     jobTitle: provider.role,
     image: provider.image,
     worksFor: { "@id": `${baseUrl}/#organization` },
+    hasOccupation: {
+      "@type": "Occupation",
+      name: "Audiologist",
+      occupationalCategory: "29-1181.00"
+    },
     knowsAbout: provider.specialties
   }));
 }

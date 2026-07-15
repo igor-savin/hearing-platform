@@ -6,6 +6,14 @@ import { ContactForm } from "@/components/ContactForm";
 import { InteractiveEarHero } from "@/components/InteractiveEarHero";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import {
+  appointmentConversionLinks,
+  appointmentPrinciples,
+  nearestOfficeText,
+  planningGuideForLocation,
+  serviceGuideForPage,
+  trackingHref
+} from "@/lib/conversion";
+import {
   coreServiceDeepDives,
   helpServiceForPath,
   helpServicePath,
@@ -676,6 +684,7 @@ function HomePage() {
   return (
     <main className="bg-[var(--background)]">
       <InteractiveEarHero />
+      <HomeQuickActionBand />
 
       <section className="section">
         <div className="container grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
@@ -1969,6 +1978,219 @@ function LiveRule({ className = "" }: { className?: string }) {
   return <div className={`mt-[30px] h-[2px] w-full ${className}`} style={{ backgroundColor: liveBlue }} />;
 }
 
+function AppointmentDecisionBand({ page, heading = "Not sure what to schedule?" }: { page: SitePage; heading?: string }) {
+  return (
+    <section className="bg-[#003f6f] py-12 text-white">
+      <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.82fr_1.18fr] lg:items-center max-md:px-5">
+        <div>
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Appointment guidance</p>
+          <h2 className="mt-3 text-[34px] font-black leading-tight max-md:text-[28px]">{heading}</h2>
+          <p className="mt-3 text-[18px] leading-7 text-white/84">
+            Call the team and describe what you are noticing. The office can help choose the right first visit, location, and next step.
+          </p>
+        </div>
+        <div>
+          <div className="grid gap-3 sm:grid-cols-3">
+            {appointmentConversionLinks.map((link) => (
+              <Link
+                className="focus-ring inline-flex min-h-[58px] items-center justify-center rounded-md border border-white/45 px-4 py-3 text-center text-[15px] font-black text-white hover:bg-white/10"
+                data-track={trackingHref("decision-link", page.path)}
+                href={link.href}
+                key={link.href}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+            <a
+              className="focus-ring inline-flex flex-1 items-center justify-center gap-2 rounded-md bg-[#005a9c] px-5 py-4 font-black text-white hover:bg-[#004a82]"
+              data-track={trackingHref("phone-decision", page.path)}
+              href={primaryPhoneHref}
+            >
+              <Phone size={19} aria-hidden="true" />
+              Call {primaryPhone}
+            </a>
+            <Link
+              className="focus-ring inline-flex flex-1 items-center justify-center rounded-md bg-white px-5 py-4 font-black text-[#003f6f] hover:bg-[#f4fbff]"
+              data-track={trackingHref("contact-decision", page.path)}
+              href="/contact-us"
+            >
+              Request Appointment
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function HomeQuickActionBand() {
+  return (
+    <section className="bg-white py-6">
+      <div className="container">
+        <div className="grid gap-3 rounded-md border border-[#d5e7f4] bg-[#f7fbfd] p-4 shadow-[0_14px_32px_rgba(0,90,156,0.08)] md:grid-cols-[1fr_auto] md:items-center">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#005a9c]">Choose your next step</p>
+            <p className="mt-1 text-[18px] leading-7 text-[#253239]">
+              Start with a hearing evaluation, pick the nearest office, or compare hearing aid options with a professional.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap md:justify-end">
+            {appointmentConversionLinks.map((link) => (
+              <Link
+                className="focus-ring inline-flex min-h-[46px] items-center justify-center rounded-md border border-[#005a9c] px-4 py-2 text-center text-sm font-black text-[#003f6f] hover:bg-[#eaf4fb]"
+                data-track="home-next-step"
+                href={link.href}
+                key={link.href}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ServiceDecisionGuide({ page }: { page: SitePage }) {
+  const guide = serviceGuideForPage(page);
+  if (!guide) return null;
+
+  const groups = [
+    ["This is a good fit when", guide.bestFor],
+    ["This may not be the first step when", guide.notBestFor],
+    ["What the visit should clarify", guide.appointmentIncludes],
+    ["Useful questions to ask", guide.questionsToAsk]
+  ] as const;
+
+  return (
+    <section className="bg-[#f7fbfd] py-16">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Decision guide</p>
+        <h2 className="mt-3 text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
+          Choose this appointment with confidence
+        </h2>
+        <div className="mt-8 grid gap-5 lg:grid-cols-4">
+          {groups.map(([title, items]) => (
+            <article className="rounded-md border border-[#d5e7f4] bg-white p-6 shadow-[0_18px_45px_rgba(0,90,156,0.08)]" key={title}>
+              <h3 className="text-[22px] font-black leading-tight text-[#003f6f]">{title}</h3>
+              <ul className="mt-4 space-y-3 text-[16px] leading-7 text-[var(--muted)]">
+                {items.map((item) => (
+                  <li className="flex gap-3" key={item}>
+                    <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={18} aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TrustProcessSection() {
+  return (
+    <section className="bg-white py-16">
+      <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.78fr_1.22fr] max-md:px-5">
+        <div>
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">What good care includes</p>
+          <h2 className="mt-3 text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
+            A visit should end with clarity, not confusion
+          </h2>
+          <p className="mt-4 text-[18px] leading-8 text-[var(--muted)]">
+            These are the practical pieces patients should expect when comparing hearing care options.
+          </p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2">
+          {appointmentPrinciples.map((principle) => (
+            <div className="rounded-md border border-[#d5e7f4] bg-[#f7fbfd] p-5" key={principle}>
+              <CheckCircle2 className="text-[#005a9c]" size={24} aria-hidden="true" />
+              <p className="mt-3 text-[17px] font-bold leading-7 text-[#253239]">{principle}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LocationPlanningSection({ page }: { page: SitePage }) {
+  const location = locationForPath(page.path);
+  const guide = planningGuideForLocation(location);
+  if (!location || !guide) return null;
+
+  return (
+    <section className="bg-white py-[56px]">
+      <div className="mx-auto grid max-w-[1660px] gap-[40px] px-[64px] lg:grid-cols-[0.88fr_1.12fr] max-md:px-5">
+        <div>
+          <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Plan your visit</p>
+          <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Make the {location.city} office easier to choose
+          </h2>
+          <LiveRule />
+          <p className="mt-[30px] text-[22px] leading-[1.4] text-black max-md:text-[18px]">{guide.parking}</p>
+          <p className="mt-5 text-[20px] leading-8 text-[#555]">
+            Best nearby office guidance: <strong>{nearestOfficeText(location)}</strong>.
+          </p>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          <article className="bg-[#dbe9f3] p-6 text-black">
+            <h3 className="text-[24px] font-black leading-tight">Best for</h3>
+            <ul className="mt-4 space-y-3 text-[18px] leading-7">
+              {guide.bestFor.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+          <article className="bg-[#f7f7f5] p-6 text-black">
+            <h3 className="text-[24px] font-black leading-tight">Nearby landmarks</h3>
+            <ul className="mt-4 space-y-3 text-[18px] leading-7">
+              {guide.nearbyLandmarks.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+          <article className="bg-[#003f6f] p-6 text-white">
+            <h3 className="text-[24px] font-black leading-tight">Communities served</h3>
+            <ul className="mt-4 space-y-3 text-[18px] leading-7 text-white/88">
+              {guide.nearbyCommunities.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProviderTrustSection({ provider }: { provider: ProviderProfile }) {
+  return (
+    <section className="bg-white py-[52px]">
+      <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.8fr_1.2fr] max-md:px-5">
+        <div>
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            What patients can ask {provider.name.split(",")[0]}
+          </h2>
+          <LiveRule />
+          <p className="mt-[30px] text-[21px] leading-[1.4] text-black max-md:text-[18px]">
+            Provider pages should help patients prepare for a better visit, not only list credentials.
+          </p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-3">
+          {[
+            "Which hearing or tinnitus findings matter most for my daily communication?",
+            "What should I track between today and my follow-up appointment?",
+            "Which device, therapy, repair, or referral option fits my goals and symptoms?"
+          ].map((question) => (
+            <article className="bg-[#dbe9f3] p-6 text-[19px] font-bold leading-7 text-black" key={question}>
+              {question}
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function LegacyParagraph({ text: paragraph }: { text: string }) {
   return <p>{linkifyText(paragraph)}</p>;
 }
@@ -2117,6 +2339,8 @@ function LiveLocationPage({ page }: { page: SitePage }) {
       {content.sections.map((section) => (
         <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
       ))}
+      <LocationPlanningSection page={page} />
+      <AppointmentDecisionBand page={page} heading="Need help choosing the right office or appointment?" />
     </>
   );
 }
@@ -2727,6 +2951,9 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
         </section>
       ) : null}
 
+      <ServiceDecisionGuide page={page} />
+      <TrustProcessSection />
+
       {page.faqs.length ? (
         <section className="bg-white py-16">
           <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
@@ -2812,6 +3039,7 @@ function LivePageBody({ page }: { page: SitePage }) {
 
       {page.type === "service" ? <CoreServiceDetail page={page} /> : null}
       {isBlog ? <BlogPostRelated page={page} /> : null}
+      {isBlog ? <AppointmentDecisionBand page={page} heading="Have symptoms like this? Choose a practical next step." /> : null}
     </>
   );
 }
@@ -2834,6 +3062,7 @@ function LiveContactPage({ page }: { page: SitePage }) {
         "https://www.google.com/maps/place/Audiology+Associates+of+Westchester/@40.9796102,-73.7452172,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2941f220a4edf:0x3781801f76f64a38!8m2!3d40.9796062!4d-73.7426423!16s%2Fg%2F1thvtmkc?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
     }
   };
+  const officeLocations = locations.filter((location) => location.type === "office");
 
   return (
     <>
@@ -2851,29 +3080,20 @@ function LiveContactPage({ page }: { page: SitePage }) {
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Audiology Associates of Westchester</h2>
           <LiveRule />
-          <div className="mt-[42px] grid gap-[64px] lg:grid-cols-2">
-            {[locations.find((location) => location.path === "/Somers-NY"), locations.find((location) => location.path === "/harrison-ny")]
-              .filter((location): location is (typeof locations)[number] => Boolean(location))
-              .map((location) => {
+          <div className="mt-[42px] grid gap-[40px] lg:grid-cols-2 xl:grid-cols-4">
+            {officeLocations.map((location) => {
                 const mapLinks = officeMapLinks[location.path as keyof typeof officeMapLinks];
+                const mapQueryUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`;
+                const embedUrl = mapLinks?.embed || `https://www.google.com/maps?q=${encodeURIComponent(location.address)}&output=embed`;
+                const directionsUrl = mapLinks?.maps || mapQueryUrl;
 
                 return (
                   <div className="flex h-full flex-col text-center" key={location.path}>
-                    <address className="space-y-[10px] text-[24px] leading-[1.35] text-black not-italic">
+                    <address className="space-y-[10px] text-[21px] leading-[1.35] text-black not-italic">
                       <Link className="font-bold text-[#005a9c] underline" href={location.path}>
                         {location.name}
                       </Link>
-                      {location.path === "/Somers-NY" ? (
-                        <>
-                          <p>325 NY 100</p>
-                          <p>Somers, NY 10589</p>
-                        </>
-                      ) : (
-                        <>
-                          <p>550 Mamaroneck Ave, Suite 407 (4th floor)</p>
-                          <p>Harrison, NY 10528</p>
-                        </>
-                      )}
+                      <p>{location.address}</p>
                       <p>
                         Phone:{" "}
                         <a className="text-[#005a9c] underline" href={location.phoneHref}>
@@ -2883,37 +3103,22 @@ function LiveContactPage({ page }: { page: SitePage }) {
                       <p>Fax: {location.fax || ""}</p>
                     </address>
 
-                    <div className="space-y-[10px] pt-[18px] text-[24px] leading-[1.35] text-black">
+                    <div className="space-y-[10px] pt-[18px] text-[20px] leading-[1.35] text-black">
                       <p className="pt-[8px] font-bold">Hours of Operation</p>
-                      {location.path === "/Somers-NY" ? (
-                        <>
-                          <p>Monday: 8:30am - 5:00pm</p>
-                          <p>Tuesday: 8:30am - 5:00pm</p>
-                          <p>Wednesday: 8:30am - 5:00pm</p>
-                          <p>Thursday: Closed</p>
-                          <p>Friday: 8:30am - 2:30pm</p>
-                        </>
-                      ) : (
-                        <>
-                          <p>Monday-Friday</p>
-                          <p>8:30am - 5:00pm</p>
-                        </>
-                      )}
+                      {location.hours.map((hours) => <p key={hours}>{hours}</p>)}
                     </div>
 
-                    {mapLinks ? (
-                      <div className="mt-auto pt-[34px]">
-                        <div className="overflow-hidden border border-[#d6d6d6] bg-[#f7f7f5]">
+                    <div className="mt-auto pt-[34px]">
+                      <div className="overflow-hidden border border-[#d6d6d6] bg-[#f7f7f5]">
                         <iframe
                           aria-label={`${location.name} map`}
                           className="h-[300px] w-full"
                           loading="lazy"
                           referrerPolicy="no-referrer-when-downgrade"
-                          src={mapLinks.embed}
+                          src={embedUrl}
                         />
-                        </div>
                       </div>
-                    ) : null}
+                    </div>
 
                     <div className="mx-auto mt-[22px] flex max-w-[560px] flex-col gap-3 sm:flex-row">
                       <a
@@ -2924,16 +3129,14 @@ function LiveContactPage({ page }: { page: SitePage }) {
                         <Phone size={22} aria-hidden="true" />
                         Call Now
                       </a>
-                      {mapLinks ? (
-                        <a
-                          className="focus-ring inline-flex flex-1 items-center justify-center rounded-full border-2 border-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
-                          href={mapLinks.maps}
-                          rel="noreferrer"
-                          target="_blank"
-                        >
-                          Get Directions
-                        </a>
-                      ) : null}
+                      <a
+                        className="focus-ring inline-flex flex-1 items-center justify-center rounded-full border-2 border-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+                        href={directionsUrl}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        Get Directions
+                      </a>
                     </div>
                   </div>
                 );
@@ -3219,6 +3422,7 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
           <ProviderCredentialList provider={provider} />
         </div>
       </section>
+      <ProviderTrustSection provider={provider} />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Frequently Asked Questions About {provider.name}</h2>
