@@ -11,7 +11,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Symptoms & Next Steps",
     "format": "Symptom Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-test-or-earwax-removal-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-test-or-earwax-removal-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Do I Need a Hearing Test or Just Earwax Removal?"
     },
     "sections": [
@@ -106,7 +106,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Loss Basics",
     "format": "Quick Answer Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hear-people-talking-not-understand-words-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hear-people-talking-not-understand-words-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Why Can I Hear People Talking but Not Understand the Words?"
     },
     "sections": [
@@ -201,7 +201,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Testing & Diagnosis",
     "format": "Comparison",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-test-vs-hearing-screening-difference-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-test-vs-hearing-screening-difference-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Hearing Test vs Hearing Screening: What’s the Difference?"
     },
     "sections": [
@@ -296,7 +296,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Testing & Diagnosis",
     "format": "Appointment Walkthrough",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/what-happens-during-comprehensive-hearing-evaluation-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/what-happens-during-comprehensive-hearing-evaluation-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for What Happens During a Comprehensive Hearing Evaluation?"
     },
     "sections": [
@@ -391,7 +391,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Testing & Diagnosis",
     "format": "Checklist",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/how-often-should-adults-get-hearing-checked-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/how-often-should-adults-get-hearing-checked-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How Often Should Adults Get Their Hearing Checked?"
     },
     "sections": [
@@ -486,7 +486,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Family & Communication",
     "format": "Family Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/first-signs-of-hearing-loss-family-notice-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/first-signs-of-hearing-loss-family-notice-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for The First Signs of Hearing Loss Families Usually Notice"
     },
     "sections": [
@@ -581,7 +581,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Family & Communication",
     "format": "Conversation Script",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/how-to-talk-to-parent-about-hearing-help-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/how-to-talk-to-parent-about-hearing-help-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How to Talk to a Parent Who May Need Hearing Help"
     },
     "sections": [
@@ -676,7 +676,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Loss Basics",
     "format": "Myth vs Fact",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/is-hearing-loss-normal-with-age-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/is-hearing-loss-normal-with-age-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Is Hearing Loss Normal With Age? What Is and Isn’t Normal"
     },
     "sections": [
@@ -771,7 +771,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Everyday Listening",
     "format": "Real-Life Scenario",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/why-restaurants-hard-with-hearing-loss-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/why-restaurants-hard-with-hearing-loss-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Why Restaurants Are So Hard When You Have Hearing Loss"
     },
     "sections": [
@@ -866,7 +866,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Loss Basics",
     "format": "Explainer",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/what-high-frequency-hearing-loss-sounds-like-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/what-high-frequency-hearing-loss-sounds-like-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for What Does High-Frequency Hearing Loss Sound Like?"
     },
     "sections": [
@@ -961,7 +961,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Symptoms & Next Steps",
     "format": "Red Flag Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/one-ear-hearing-loss-when-to-get-checked-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/one-ear-hearing-loss-when-to-get-checked-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for One Ear Hearing Loss: When Should You Get Checked?"
     },
     "sections": [
@@ -1056,7 +1056,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Symptoms & Next Steps",
     "format": "Red Flag Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/sudden-hearing-loss-why-not-wait-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/sudden-hearing-loss-why-not-wait-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Sudden Hearing Loss: Why You Should Not Wait"
     },
     "sections": [
@@ -1151,7 +1151,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Tinnitus",
     "format": "Symptom Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/ringing-in-one-ear-red-flags-next-steps-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/ringing-in-one-ear-red-flags-next-steps-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Ringing in One Ear: Causes, Red Flags, and Next Steps"
     },
     "sections": [
@@ -1246,7 +1246,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Tinnitus",
     "format": "Red Flag Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/pulsatile-tinnitus-heartbeat-sound-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/pulsatile-tinnitus-heartbeat-sound-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Pulsatile Tinnitus: Why Heartbeat-Like Sounds Need Attention"
     },
     "sections": [
@@ -1341,7 +1341,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Tinnitus",
     "format": "Checklist",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/tinnitus-after-loud-noise-what-to-do-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/tinnitus-after-loud-noise-what-to-do-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Tinnitus After Loud Noise: What to Do Next"
     },
     "sections": [
@@ -1436,7 +1436,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Tinnitus",
     "format": "Explainer",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/can-hearing-aids-help-tinnitus-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/can-hearing-aids-help-tinnitus-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Can Hearing Aids Help Tinnitus?"
     },
     "sections": [
@@ -1531,7 +1531,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Tinnitus",
     "format": "Candidate Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/lenire-for-tinnitus-candidate-guide-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/lenire-for-tinnitus-candidate-guide-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Lenire for Tinnitus: Who Might Be a Candidate?"
     },
     "sections": [
@@ -1626,7 +1626,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Tinnitus",
     "format": "Real-Life Scenario",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/tinnitus-at-night-why-louder-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/tinnitus-at-night-why-louder-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Tinnitus at Night: Why It Feels Louder and What May Help"
     },
     "sections": [
@@ -1721,7 +1721,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Tinnitus",
     "format": "Comparison",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/sound-sensitivity-vs-tinnitus-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/sound-sensitivity-vs-tinnitus-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Sound Sensitivity vs Tinnitus: What’s the Difference?"
     },
     "sections": [
@@ -1816,7 +1816,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Ear Care",
     "format": "Symptom Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/ear-pressure-and-hearing-loss-evaluation-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/ear-pressure-and-hearing-loss-evaluation-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Ear Pressure and Hearing Loss: When to Schedule an Evaluation"
     },
     "sections": [
@@ -1911,7 +1911,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Symptoms & Next Steps",
     "format": "Decision Tree",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/dizziness-and-ringing-audiology-or-ent-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/dizziness-and-ringing-audiology-or-ent-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Dizziness and Ringing in the Ears: Audiology or ENT?"
     },
     "sections": [
@@ -2006,7 +2006,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Ear Care",
     "format": "Symptom Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/ear-fullness-no-pain-hearing-loss-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/ear-fullness-no-pain-hearing-loss-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Ear Fullness but No Pain: Could It Be Hearing Loss?"
     },
     "sections": [
@@ -2101,7 +2101,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Care",
     "format": "Troubleshooting",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/why-hearing-aids-whistle-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/why-hearing-aids-whistle-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Why Your Hearing Aids Whistle and How to Fix It"
     },
     "sections": [
@@ -2196,7 +2196,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Care",
     "format": "Troubleshooting",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-aid-not-charging-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-aid-not-charging-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Hearing Aid Not Charging? Common Causes and Next Steps"
     },
     "sections": [
@@ -2291,7 +2291,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Care",
     "format": "Troubleshooting",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-aid-sounds-weak-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-aid-sounds-weak-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Hearing Aid Sounds Weak: Is It Wax, Moisture, or Programming?"
     },
     "sections": [
@@ -2386,7 +2386,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Care",
     "format": "Checklist",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/how-often-professional-hearing-aid-cleaning-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/how-often-professional-hearing-aid-cleaning-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How Often Should Hearing Aids Be Professionally Cleaned?"
     },
     "sections": [
@@ -2481,7 +2481,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Care",
     "format": "Explainer",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-aid-domes-wax-guards-receivers-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-aid-domes-wax-guards-receivers-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Hearing Aid Domes, Wax Guards, and Receivers Explained"
     },
     "sections": [
@@ -2576,7 +2576,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Care",
     "format": "Quick Answer Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/how-long-hearing-aid-batteries-last-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/how-long-hearing-aid-batteries-last-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How Long Should Hearing Aid Batteries Last?"
     },
     "sections": [
@@ -2671,7 +2671,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Comparison",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/rechargeable-vs-battery-hearing-aids-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/rechargeable-vs-battery-hearing-aids-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Rechargeable vs Battery Hearing Aids: Which Is Better?"
     },
     "sections": [
@@ -2766,7 +2766,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Buying Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/bluetooth-hearing-aids-before-buying-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/bluetooth-hearing-aids-before-buying-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Bluetooth Hearing Aids: What Patients Should Know Before Buying"
     },
     "sections": [
@@ -2861,7 +2861,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Pros and Cons",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/invisible-hearing-aids-pros-cons-candidacy-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/invisible-hearing-aids-pros-cons-candidacy-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Invisible Hearing Aids: Pros, Cons, and Candidacy"
     },
     "sections": [
@@ -2956,7 +2956,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Candidate Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/are-otc-hearing-aids-right-for-me-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/are-otc-hearing-aids-right-for-me-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Are OTC Hearing Aids Right for Me?"
     },
     "sections": [
@@ -3051,7 +3051,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Comparison",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/otc-vs-prescription-hearing-aids-real-world-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/otc-vs-prescription-hearing-aids-real-world-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for OTC vs Prescription Hearing Aids: Real-World Differences"
     },
     "sections": [
@@ -3146,7 +3146,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Myth vs Fact",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/airpods-as-hearing-aids-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/airpods-as-hearing-aids-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for AirPods as Hearing Aids: What They Can and Can’t Do"
     },
     "sections": [
@@ -3241,7 +3241,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Comparison",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/costco-hearing-aids-vs-audiologist-care-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/costco-hearing-aids-vs-audiologist-care-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Costco Hearing Aids vs Audiologist Care: What to Compare"
     },
     "sections": [
@@ -3336,7 +3336,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Local Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-aid-cost-westchester-county-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-aid-cost-westchester-county-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How Much Do Hearing Aids Cost in Westchester County?"
     },
     "sections": [
@@ -3431,7 +3431,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Checklist",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/does-insurance-cover-hearing-aids-tests-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/does-insurance-cover-hearing-aids-tests-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Does Insurance Cover Hearing Aids or Hearing Tests?"
     },
     "sections": [
@@ -3526,7 +3526,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Buying",
     "format": "Checklist",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/questions-before-buying-hearing-aids-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/questions-before-buying-hearing-aids-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for What Questions Should You Ask Before Buying Hearing Aids?"
     },
     "sections": [
@@ -3621,7 +3621,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Fitting",
     "format": "Explainer",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/why-real-ear-verification-matters-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/why-real-ear-verification-matters-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Why Real-Ear Verification Matters in Hearing Aid Fitting"
     },
     "sections": [
@@ -3716,7 +3716,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Fitting",
     "format": "Appointment Walkthrough",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/what-to-expect-hearing-aid-fitting-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/what-to-expect-hearing-aid-fitting-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for What to Expect During a Hearing Aid Fitting Appointment"
     },
     "sections": [
@@ -3811,7 +3811,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Fitting",
     "format": "Quick Answer Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/how-many-follow-up-visits-new-hearing-aids-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/how-many-follow-up-visits-new-hearing-aids-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How Many Follow-Up Visits Do New Hearing Aids Need?"
     },
     "sections": [
@@ -3906,7 +3906,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Fitting",
     "format": "Real-Life Scenario",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/why-new-hearing-aids-sound-strange-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/why-new-hearing-aids-sound-strange-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Why New Hearing Aids Sound Strange at First"
     },
     "sections": [
@@ -4001,7 +4001,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Aid Fitting",
     "format": "Troubleshooting",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/how-to-make-hearing-aids-more-comfortable-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/how-to-make-hearing-aids-more-comfortable-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How to Make Hearing Aids More Comfortable"
     },
     "sections": [
@@ -4096,7 +4096,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Protection",
     "format": "Comparison",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-protection-concerts-musician-vs-foam-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-protection-concerts-musician-vs-foam-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Hearing Protection for Concerts: Musician Earplugs vs Foam Plugs"
     },
     "sections": [
@@ -4191,7 +4191,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Protection",
     "format": "Buying Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-protection-power-tools-yard-work-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-protection-power-tools-yard-work-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Best Hearing Protection for Power Tools, Yard Work, and DIY Projects"
     },
     "sections": [
@@ -4286,7 +4286,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Protection",
     "format": "Explainer",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/how-loud-is-too-loud-decibels-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/how-loud-is-too-loud-decibels-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for How Loud Is Too Loud? Decibels, Daily Noise, and Hearing Risk"
     },
     "sections": [
@@ -4381,7 +4381,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Protection",
     "format": "Family Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/kids-teens-ear-protection-concerts-sports-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/kids-teens-ear-protection-concerts-sports-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Should Kids and Teens Use Ear Protection at Concerts and Sports?"
     },
     "sections": [
@@ -4476,7 +4476,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Hearing Protection",
     "format": "Pillar Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/noise-induced-hearing-loss-prevention-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/noise-induced-hearing-loss-prevention-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for What Is Noise-Induced Hearing Loss and Can It Be Prevented?"
     },
     "sections": [
@@ -4571,7 +4571,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Work & Lifestyle",
     "format": "Local Guide",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-care-professionals-meetings-calls-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-care-professionals-meetings-calls-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Hearing Care for Professionals: Meetings, Calls, and Listening Fatigue"
     },
     "sections": [
@@ -4666,7 +4666,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     "category": "Work & Lifestyle",
     "format": "Explainer",
     "heroImage": {
-      "src": "/assets/blog-seed/photo-v1/hearing-loss-cognitive-effort-listening-fatigue-photo-v1.webp",
+      "src": "/assets/blog-seed/photo-v2/hearing-loss-cognitive-effort-listening-fatigue-photo-v2.webp",
       "alt": "Photorealistic lifestyle image for Hearing Loss and Cognitive Effort: Why Listening Can Feel Exhausting"
     },
     "sections": [
