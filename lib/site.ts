@@ -809,7 +809,9 @@ const generatedPages = uniqueCrawlPages
   .map((page): SitePage => {
     const path = pathFromUrl(page.url);
     const type = determineType(path, page.type);
-    const h1 = fixSpacing(page.h1 || (path === "/privacy" ? "" : page.title.replace(/\s*\|.*$/, "")));
+    const h1 = fixSpacing(
+      page.h1 || (path === "/privacy" ? "Audiology Associates of Westchester Privacy Policy" : page.title.replace(/\s*\|.*$/, ""))
+    );
     const metaDescription =
       fixSpacing(page.metaDescription) ||
       `${h1} from ${siteName}, serving Westchester County and nearby communities.`;
@@ -818,7 +820,7 @@ const generatedPages = uniqueCrawlPages
       path,
       url: `${baseUrl}${path === "/" ? "" : path}`,
       title: h1,
-      metaTitle: fixSpacing(page.title || h1),
+      metaTitle: path === "/privacy" ? `Privacy Policy | ${siteName}` : fixSpacing(page.title || h1),
       metaDescription,
       h1,
       type,

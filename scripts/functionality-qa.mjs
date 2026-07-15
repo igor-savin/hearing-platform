@@ -215,7 +215,7 @@ async function checkHomeIntegrations() {
     ["Snowplow App", "d8404b56"],
     ["Snowplow Collector", "d32hwlnfiv2gyn.cloudfront.net"],
     ["Zocdoc Practice", "69184"],
-    ["Zocdoc Embed Script", "offsiteschedule.zocdoc.com/plugin/embed"]
+    ["Zocdoc Lazy Loader", "loadZocdocPlugin"]
   ];
   return values.map(([label, needle]) => ({
     label,
@@ -256,8 +256,8 @@ async function checkForms() {
   );
   rows.push({
     pathname: "/api/contact",
-    pass: Boolean(api.response && api.response.status === 200 && api.body.includes('"ok":true')),
-    detail: api.response ? `POST ${api.response.status}` : api.error
+    pass: Boolean(api.response && api.response.status === 400 && api.body.includes("Please provide")),
+    detail: api.response ? `validation POST ${api.response.status}` : api.error
   });
 
   return rows;

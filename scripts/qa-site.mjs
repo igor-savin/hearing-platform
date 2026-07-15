@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import * as cheerio from "cheerio";
 
-const BASE = process.env.QA_BASE || "http://localhost:3000";
+const BASE = (process.env.QA_BASE || "https://audiology-associates-westchester.vercel.app").replace(/\/$/, "");
 const LIVE_BASE = "https://www.audiologyassociates.org";
 const OUT_DIR = path.join(process.cwd(), "reports");
 
@@ -120,7 +120,7 @@ async function main() {
     ["Duda/Snowplow App", "d8404b56"],
     ["Duda/Snowplow Collector", "d32hwlnfiv2gyn.cloudfront.net"],
     ["Zocdoc Practice", "69184"],
-    ["Zocdoc Script", "offsiteschedule.zocdoc.com/plugin/embed"]
+    ["Zocdoc Lazy Loader", "loadZocdocPlugin"]
   ].map(([label, value]) => ({
     label,
     value,
