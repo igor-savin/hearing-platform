@@ -255,7 +255,7 @@ select {
 }
 
 .aa-ear-lede {
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(255, 255, 255, 0.9);
   font-size: clamp(17px, 1.4vw, 21px);
   line-height: 1.55;
   margin-top: 26px;
@@ -274,7 +274,7 @@ select {
 
 .aa-hearing-toggle button {
   border-radius: 999px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   font-size: 13px;
   font-weight: 850;
@@ -347,7 +347,7 @@ select {
 
 .aa-ear-locations {
   align-items: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.88);
   display: flex;
   flex-wrap: wrap;
   font-size: 13px;
@@ -406,7 +406,7 @@ select {
 }
 
 .aa-ear-callout div > span {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 12px;
   line-height: 1.5;
   margin-top: 4px;
@@ -491,7 +491,7 @@ select {
 
 .aa-ear-stage-nav button {
   border-left: 1px solid rgba(255, 255, 255, 0.18);
-  color: rgba(255, 255, 255, 0.52);
+  color: rgba(255, 255, 255, 0.84);
   cursor: pointer;
   min-height: 94px;
   padding: 28px 22px 20px;
