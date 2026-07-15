@@ -1,13 +1,13 @@
 # Functionality QA Report
 
 Base URL: http://localhost:3004
-Run date: 2026-07-15T01:35:16.916Z
+Run date: 2026-07-15T01:40:44.778Z
 
 ## Summary
 
 - Crawled rebuilt pages checked: 38
 - Page-level failures: 0
-- Internal links checked: 96
+- Internal links checked: 104
 - Broken internal links: 0
 - Redirect checks passed: 5/5
 - Sitemap/robots/llms checks passed: 3/3

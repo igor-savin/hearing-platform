@@ -497,6 +497,16 @@ type LegacyLocationContent = {
   sections: LegacyLocationSection[];
 };
 
+const legacyAreaCitySlugs: Record<string, string> = {
+  "/greenwich-ct": "greenwich",
+  "/harrison-ny": "harrison",
+  "/mt-kisco-ny": "mount-kisco",
+  "/rye-ny": "rye",
+  "/Scarsdale-NY": "scarsdale",
+  "/Somers-NY": "somers",
+  "/White-Plains-NY": "white-plains"
+};
+
 const legacyLocationContent: Record<string, LegacyLocationContent> = {
   "/rye-ny": {
     heading: "Expert Audiologists, Just 10 Minutes Away from Rye, NY",
@@ -2321,6 +2331,84 @@ function LegacyLocationSectionView({ section }: { section: LegacyLocationSection
   );
 }
 
+function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
+  const city = areaCities.find((item) => item.slug === legacyAreaCitySlugs[page.path]);
+  if (!city) return null;
+
+  const flavor = localFlavorForCity(city);
+  const county = countyForCity(city);
+  const serviceAreaPath = cityPath(city);
+  const officePath = officePathForCity(city);
+  const officeLocation = locationForPath(officePath);
+
+  return (
+    <section className="bg-white py-[56px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <div className="grid gap-[44px] lg:grid-cols-[0.82fr_1.18fr]">
+          <div>
+            <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Local hearing care planning</p>
+            <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+              {flavor?.heading || `Plan hearing care near ${city.name}`}
+            </h2>
+            <LiveRule />
+            <div className="mt-[30px] space-y-5 text-[21px] leading-8 text-black max-md:text-[18px]">
+              <p>{flavor?.intro || city.localContext}</p>
+              <p>{city.travelNote}</p>
+              <p>
+                Nearby communities include {city.nearby.join(", ")}. The most practical office is usually{" "}
+                <Link className="font-bold text-[#005a9c] underline" href={officePath}>
+                  {officeLocation ? nearestOfficeText(officeLocation) : "nearest Westchester office"}
+                </Link>
+                .
+              </p>
+            </div>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                className="focus-ring inline-flex items-center justify-center rounded-full bg-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
+                href={serviceAreaPath}
+              >
+                View full {city.name} service area
+              </Link>
+              {county ? (
+                <Link
+                  className="focus-ring inline-flex items-center justify-center rounded-full border-2 border-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+                  href={countyPath(county.slug)}
+                >
+                  Explore {county.name}
+                </Link>
+              ) : null}
+            </div>
+          </div>
+
+          <div className="grid gap-5">
+            {flavor?.listeningEnvironments?.length ? (
+              <div className="grid gap-5 md:grid-cols-3">
+                {flavor.listeningEnvironments.map((environment) => (
+                  <article className="bg-[#dbe9f3] p-6 text-black" key={environment.title}>
+                    <h3 className="text-[23px] font-black leading-tight">{environment.title}</h3>
+                    <p className="mt-4 text-[18px] leading-7">{environment.body}</p>
+                  </article>
+                ))}
+              </div>
+            ) : null}
+            <article className="bg-[#003f6f] p-7 text-white">
+              <h3 className="text-[26px] font-black leading-tight">What to discuss during an appointment</h3>
+              <ul className="mt-5 grid gap-3 text-[18px] leading-7 text-white/90 md:grid-cols-2">
+                {(flavor?.hearingPriorities || city.patientNeeds).map((priority) => (
+                  <li className="flex gap-3" key={priority}>
+                    <CheckCircle2 className="mt-1 shrink-0 text-[#ffd45a]" size={18} aria-hidden="true" />
+                    <span>{priority}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function LiveLocationPage({ page }: { page: SitePage }) {
   const content = legacyLocationContent[page.path];
   if (!content) return <LivePageBody page={page} />;
@@ -2339,6 +2427,7 @@ function LiveLocationPage({ page }: { page: SitePage }) {
       {content.sections.map((section) => (
         <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
       ))}
+      <LegacyAreaCityPlanningSection page={page} />
       <LocationPlanningSection page={page} />
       <AppointmentDecisionBand page={page} heading="Need help choosing the right office or appointment?" />
     </>
