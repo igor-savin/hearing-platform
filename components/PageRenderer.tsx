@@ -1189,6 +1189,128 @@ function cityHeroProps(city: AreaCity, office: ReturnType<typeof officeForAreaPa
   };
 }
 
+const helpHeroAccents = ["#ffd45a", "#7bdcb5", "#9bd3f4", "#f4b6c2", "#c6b4f5"];
+
+function helpHeroProps(service: HelpService): LocalHeroProps {
+  const serviceIndex = helpServices.findIndex((item) => item.slug === service.slug);
+  return {
+    badge: service.menuTitle,
+    eyebrow: "How we can help",
+    title: service.title,
+    subtitle: service.shortDescription,
+    accent: helpHeroAccents[Math.max(serviceIndex, 0) % helpHeroAccents.length],
+    stats: [
+      service.whoWeHelp[0] || "Patient-centered guidance",
+      service.signs[0] || "Clear next steps",
+      service.relatedServices[0]?.label || "Audiology care"
+    ],
+    primaryHref: "/contact-us",
+    primaryLabel: "Ask which visit fits",
+    secondaryHref: service.relatedServices[0]?.href || "/hearing-testing",
+    secondaryLabel: service.relatedServices[0]?.label || "Hearing Testing"
+  };
+}
+
+const hearingLossEducationDetails: Record<
+  string,
+  {
+    accent: string;
+    badge: string;
+    focus: string[];
+    intro: string;
+    nextSteps: string[];
+  }
+> = {
+  "/hearing-loss-misconceptions": {
+    accent: "#ffd45a",
+    badge: "Hearing loss myths",
+    focus: ["Hearing loss can be subtle", "Speech clarity matters", "Family frustration is common"],
+    intro:
+      "Misconceptions can delay care. This page helps patients separate common hearing-loss myths from practical signs that deserve a real evaluation.",
+    nextSteps: [
+      "Schedule hearing testing if conversation clarity has changed.",
+      "Bring examples of the listening situations that feel hardest.",
+      "Ask whether hearing aids, monitoring, tinnitus support, or another recommendation fits the findings."
+    ]
+  },
+  "/improve-your-hearing": {
+    accent: "#7bdcb5",
+    badge: "Hearing improvement",
+    focus: ["Diagnostic testing first", "Technology plus follow-up", "Real-world listening goals"],
+    intro:
+      "Improving hearing usually starts with understanding the type of hearing difficulty, then matching the plan to daily communication needs.",
+    nextSteps: [
+      "Start with a comprehensive hearing assessment.",
+      "Discuss where you most want improvement: restaurants, phone calls, meetings, television, or family conversation.",
+      "Plan for fitting and follow-up if hearing technology is recommended."
+    ]
+  },
+  "/dizziness-and-ringing-in-your-ears": {
+    accent: "#9bd3f4",
+    badge: "Symptoms to clarify",
+    focus: ["Tinnitus", "Dizziness", "Ear pressure or hearing changes"],
+    intro:
+      "Dizziness and ringing can overlap with hearing concerns, tinnitus, ear conditions, or symptoms that need medical guidance. The goal is to clarify the right next step.",
+    nextSteps: [
+      "Seek prompt medical guidance for sudden hearing loss, severe dizziness, neurological symptoms, or heartbeat-like tinnitus.",
+      "Track when ringing or dizziness started and whether hearing changed.",
+      "Schedule audiology care when hearing clarity, tinnitus, or listening comfort needs evaluation."
+    ]
+  },
+  "/help-a-loved-one": {
+    accent: "#f4b6c2",
+    badge: "Family guidance",
+    focus: ["Supportive conversations", "Better appointment prep", "Shared communication goals"],
+    intro:
+      "Helping someone with hearing loss works best when the conversation is patient, specific, and focused on quality of life rather than blame.",
+    nextSteps: [
+      "Describe specific moments where communication has become harder.",
+      "Offer to attend the appointment and help remember daily listening examples.",
+      "Ask the audiologist how family members can support follow-up and communication strategies."
+    ]
+  },
+  "/prevent-hearing-loss": {
+    accent: "#c6b4f5",
+    badge: "Prevention",
+    focus: ["Noise exposure", "Custom protection", "Baseline testing"],
+    intro:
+      "Prevention is about reducing risk before damage accumulates and choosing protection patients will actually wear.",
+    nextSteps: [
+      "Consider baseline testing if you work or play in loud environments.",
+      "Ask about custom protection for music, tools, recreation, motorsports, or occupational noise.",
+      "Avoid waiting until ringing or muffled hearing becomes routine after loud sound."
+    ]
+  },
+  "/get-answers": {
+    accent: "#ffd45a",
+    badge: "Hearing FAQs",
+    focus: ["Common questions", "Clinical next steps", "No guesswork"],
+    intro:
+      "Good hearing care starts with clear answers. This page helps patients understand common questions before scheduling or comparing options.",
+    nextSteps: [
+      "Use FAQs to organize your questions before calling.",
+      "Schedule testing when symptoms, tinnitus, or communication difficulty are affecting daily life.",
+      "Use the appointment to get personalized recommendations instead of relying on generic online answers."
+    ]
+  }
+};
+
+function hearingLossEducationHeroProps(page: SitePage): LocalHeroProps {
+  const details = hearingLossEducationDetails[page.path];
+  return {
+    badge: details?.badge || "Hearing loss education",
+    eyebrow: "Hearing loss",
+    title: page.h1,
+    subtitle: details?.intro || page.metaDescription,
+    accent: details?.accent || "#9bd3f4",
+    stats: details?.focus || ["Understand symptoms", "Know when to schedule", "Choose the right next step"],
+    primaryHref: "/hearing-testing",
+    primaryLabel: "Start with hearing testing",
+    secondaryHref: "/how-we-can-help/your-hearing",
+    secondaryLabel: "Your Hearing"
+  };
+}
+
 function AreaAppointmentCta({ cityName }: { cityName?: string }) {
   return (
     <section className="bg-white py-[54px] text-center">
@@ -1556,19 +1678,69 @@ function HelpServiceCard({ service }: { service: HelpService }) {
   );
 }
 
+function HelpServiceMatrix() {
+  return (
+    <section className="bg-white py-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          Match the concern to the right hearing-care pathway
+        </h2>
+        <LiveRule />
+        <div className="mt-9 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {[
+            {
+              title: "Not sure what changed?",
+              text: "Start with Your Hearing or a comprehensive hearing assessment so the team can clarify whether testing, devices, tinnitus care, or another step fits.",
+              href: "/how-we-can-help/your-hearing"
+            },
+            {
+              title: "Current hearing aids are frustrating?",
+              text: "Tune-ups, repairs, updated programming, or new technology may help when sound is weak, distorted, uncomfortable, or not clear enough.",
+              href: "/how-we-can-help/hearing-aid-tune-ups"
+            },
+            {
+              title: "Ringing or sound sensitivity?",
+              text: "Tinnitus management and Lenire candidacy conversations should start with a personalized evaluation and realistic expectations.",
+              href: "/how-we-can-help/tinnitus-management"
+            },
+            {
+              title: "Need specialty support?",
+              text: "Cochlear implant support, cognitive screening, executive communication support, and hearing protection each have different appointment goals.",
+              href: "/how-we-can-help/cochlear-implants"
+            }
+          ].map((item) => (
+            <Link className="focus-ring block bg-[#f7fbfd] p-6 text-black transition hover:bg-[#dbe9f3]" href={item.href} key={item.title}>
+              <h3 className="text-[24px] font-black leading-tight text-[#003f6f]">{item.title}</h3>
+              <p className="mt-4 text-[18px] leading-7">{item.text}</p>
+              <span className="mt-5 inline-block text-[16px] font-bold text-[#005a9c] underline">Explore this path</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
   return (
     <>
       <HowWeCanHelpBreadcrumbs page={page} />
+      <LocalHero
+        accent="#ffd45a"
+        badge="Patient-first next steps"
+        eyebrow="How we can help"
+        primaryHref="/contact-us"
+        primaryLabel="Ask where to start"
+        secondaryHref="/hearing-testing"
+        secondaryLabel="Hearing testing"
+        stats={["Symptoms → right visit", "Hearing aids, tinnitus, protection", "Plain-language appointment guidance"]}
+        subtitle={page.body.join(" ")}
+        title={page.h1}
+      />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Explore care pathways</h2>
           <LiveRule />
-          <div className="mt-[38px] max-w-[1320px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-            {page.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
           <div className="mt-[48px] grid gap-7 md:grid-cols-2 xl:grid-cols-3">
             {helpServices.map((service) => (
               <HelpServiceCard key={service.slug} service={service} />
@@ -1576,6 +1748,7 @@ function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <HelpServiceMatrix />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Choose the Right Next Step</h2>
@@ -1706,6 +1879,47 @@ function HelpListSection({ title, items }: { title: string; items: string[] }) {
   );
 }
 
+function HelpServiceSeoSection({ service }: { service: HelpService }) {
+  return (
+    <section className="bg-[#f7f7f5] py-[52px]">
+      <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.72fr_1.28fr] max-md:px-5">
+        <div>
+          <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Before you schedule</p>
+          <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Make the appointment more useful
+          </h2>
+          <LiveRule />
+          <p className="mt-[30px] text-[21px] leading-8 text-black">
+            The most productive hearing-care visits start with specific examples. Bring the moments where listening breaks down,
+            the devices or apps you already use, and the questions you want answered.
+          </p>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          {[
+            {
+              title: "Bring real examples",
+              body: service.signs.slice(0, 2).join(" ")
+            },
+            {
+              title: "Know the likely path",
+              body: service.appointmentSteps[0]
+            },
+            {
+              title: "Ask about follow-up",
+              body: service.whyItMatters
+            }
+          ].map((item) => (
+            <article className="bg-white p-6 text-black" key={item.title}>
+              <h3 className="text-[24px] font-black leading-tight">{item.title}</h3>
+              <p className="mt-4 text-[18px] leading-7">{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function TinnitusHubLinks() {
   return (
     <section className="bg-[#f7f7f5] py-[52px]">
@@ -1813,17 +2027,34 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
   return (
     <>
       <HowWeCanHelpBreadcrumbs page={page} />
+      <LocalHero {...helpHeroProps(service)} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{service.title}</h1>
-          <p className="mt-5 max-w-[1220px] text-[28px] font-black leading-tight text-[#333] max-md:text-[22px]">
-            {service.shortDescription}
-          </p>
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            What this page helps you decide
+          </h2>
           <LiveRule />
-          <div className="mt-[38px] max-w-[1320px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-            {service.intro.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+          <div className="mt-[38px] grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+            <div className="space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+              {service.intro.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <aside className="bg-[#dbe9f3] p-7 text-black">
+              <h3 className="text-[28px] font-black leading-tight">Good starting questions</h3>
+              <ul className="mt-5 space-y-4 text-[20px] leading-7">
+                {[
+                  "What is the main listening problem I want solved?",
+                  "Which symptoms, devices, or settings should I mention?",
+                  "What should I expect after the first appointment?"
+                ].map((question) => (
+                  <li className="flex gap-3" key={question}>
+                    <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={20} aria-hidden="true" />
+                    <span>{question}</span>
+                  </li>
+                ))}
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
@@ -1862,8 +2093,76 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <HelpServiceSeoSection service={service} />
       {page.path === tinnitusRootPath ? <TinnitusHubLinks /> : null}
       <AreaFaqSection page={page} title={`${service.title} FAQs`} />
+      <ProductCta />
+    </>
+  );
+}
+
+function HearingLossEducationPage({ page }: { page: SitePage }) {
+  const details = hearingLossEducationDetails[page.path];
+  const related = page.related.filter((link) => link.href !== page.path).slice(0, 6);
+
+  return (
+    <>
+      <Breadcrumbs page={page} />
+      <LocalHero {...hearingLossEducationHeroProps(page)} />
+      <section className="bg-white py-[52px]">
+        <div className="mx-auto grid max-w-[1660px] gap-[44px] px-[64px] lg:grid-cols-[1.05fr_0.95fr] max-md:px-5">
+          <div>
+            <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+              Understand the concern before choosing a solution
+            </h2>
+            <LiveRule />
+            <div className="mt-[38px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
+              {page.body.slice(0, 5).map((paragraph) => (
+                <LegacyParagraph key={paragraph} text={paragraph} />
+              ))}
+            </div>
+          </div>
+          <aside className="bg-[#dbe9f3] p-7 text-black">
+            <h2 className="text-[30px] font-black leading-tight">What to do next</h2>
+            <ul className="mt-5 space-y-4 text-[20px] leading-7">
+              {(details?.nextSteps || [
+                "Write down what changed and when you notice it most.",
+                "Schedule hearing testing when communication or tinnitus affects daily life.",
+                "Ask the practice which appointment type fits your symptoms."
+              ]).map((step) => (
+                <li className="flex gap-3" key={step}>
+                  <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={20} aria-hidden="true" />
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </div>
+      </section>
+      <section className="bg-[#f7f7f5] py-[52px]">
+        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            Related hearing-loss resources
+          </h2>
+          <LiveRule />
+          <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {[
+              { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+              { label: "Your Hearing", href: "/how-we-can-help/your-hearing" },
+              { label: "Audiologist vs ENT", href: "/audiologist-vs-ent-for-hearing-loss" },
+              ...related
+            ]
+              .filter((link, index, all) => all.findIndex((item) => item.href === link.href) === index)
+              .slice(0, 6)
+              .map((link) => (
+                <Link className="focus-ring block bg-white p-6 text-[20px] font-bold leading-7 text-[#005a9c] underline hover:bg-[#dbe9f3]" href={link.href} key={link.href}>
+                  {link.label}
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+      <AreaFaqSection page={page} title={`${page.h1} FAQs`} />
       <ProductCta />
     </>
   );
@@ -4320,6 +4619,14 @@ export function PageRenderer({ page }: { page: SitePage }) {
     return (
       <PageWithSchema page={page}>
         <HowWeCanHelpServicePage page={page} />
+      </PageWithSchema>
+    );
+  }
+
+  if (hearingLossEducationDetails[page.path]) {
+    return (
+      <PageWithSchema page={page}>
+        <HearingLossEducationPage page={page} />
       </PageWithSchema>
     );
   }

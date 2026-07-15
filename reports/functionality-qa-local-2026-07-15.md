@@ -1,7 +1,7 @@
 # Functionality QA Report
 
 Base URL: http://localhost:3004
-Run date: 2026-07-15T01:48:43.120Z
+Run date: 2026-07-15T02:22:01.680Z
 
 ## Summary
 
@@ -30,8 +30,8 @@ No automated functionality failures found.
 | /careers | 200 | 139 | 5 | 2 |  | Pass |
 | /celebrating-pride-month-embracing-inclusivity-and-compassion | 200 | 139 | 5 | 2 |  | Pass |
 | /contact-us | 200 | 139 | 12 | 2 | 1 | Pass |
-| /dizziness-and-ringing-in-your-ears | 200 | 139 | 4 | 2 |  | Pass |
-| /get-answers | 200 | 139 | 4 | 2 |  | Pass |
+| /dizziness-and-ringing-in-your-ears | 200 | 139 | 5 | 3 |  | Pass |
+| /get-answers | 200 | 139 | 5 | 3 |  | Pass |
 | /greenwich-ct | 200 | 139 | 5 | 2 |  | Pass |
 | /harrison-ny | 200 | 139 | 7 | 2 |  | Pass |
 | /hearing-aid-fitting | 200 | 139 | 6 | 3 |  | Pass |
@@ -39,19 +39,19 @@ No automated functionality failures found.
 | /hearing-aid-repair | 200 | 139 | 6 | 3 |  | Pass |
 | /hearing-aids-101 | 200 | 139 | 4 | 2 |  | Pass |
 | /hearing-aids-brands | 200 | 139 | 4 | 2 |  | Pass |
-| /hearing-loss-misconceptions | 200 | 139 | 4 | 2 |  | Pass |
+| /hearing-loss-misconceptions | 200 | 139 | 5 | 3 |  | Pass |
 | /hearing-protection | 200 | 139 | 6 | 3 |  | Pass |
 | /hearing-testing | 200 | 139 | 6 | 3 |  | Pass |
 | /hearing-tips | 200 | 139 | 4 | 2 |  | Pass |
-| /help-a-loved-one | 200 | 139 | 4 | 2 |  | Pass |
+| /help-a-loved-one | 200 | 139 | 5 | 3 |  | Pass |
 | /how-to-take-care-of-a-blocked-ear | 200 | 139 | 5 | 2 |  | Pass |
-| /improve-your-hearing | 200 | 139 | 4 | 2 |  | Pass |
+| /improve-your-hearing | 200 | 139 | 5 | 3 |  | Pass |
 | /instructional-videos | 200 | 139 | 4 | 2 |  | Pass |
 | /lyric-invisible-hearing | 200 | 139 | 4 | 2 |  | Pass |
 | /meet-the-team | 200 | 139 | 4 | 2 |  | Pass |
 | /mt-kisco-ny | 200 | 139 | 5 | 2 |  | Pass |
 | /patient-forms | 200 | 139 | 4 | 2 |  | Pass |
-| /prevent-hearing-loss | 200 | 139 | 4 | 2 |  | Pass |
+| /prevent-hearing-loss | 200 | 139 | 5 | 3 |  | Pass |
 | /privacy | 200 | 139 | 4 | 2 |  | Pass |
 | /psoriasis-affects-more-than-your-skin | 200 | 139 | 5 | 2 |  | Pass |
 | /rye-ny | 200 | 139 | 5 | 2 |  | Pass |
