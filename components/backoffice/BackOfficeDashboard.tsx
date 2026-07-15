@@ -19,16 +19,24 @@ import {
   writeBatch,
   type DocumentData
 } from "firebase/firestore";
-import { CalendarClock, Edit3, LogIn, LogOut, Search, Sparkles } from "lucide-react";
+import { CalendarClock, Edit3, ExternalLink, LogIn, LogOut, Search, Sparkles } from "lucide-react";
 import { getFirebaseAuth, getFirestoreDb } from "@/lib/cms/firebase";
 import { useCmsUser } from "@/components/backoffice/useCmsUser";
 
 type DashboardArticle = {
   id: string;
+  path: string;
   title: string;
   category: string;
   status: "draft" | "scheduled" | "archived";
   publishAt: Date;
+};
+
+export type PublishedArticleSummary = {
+  path: string;
+  title: string;
+  category: string;
+  publishedAt: string;
 };
 
 function dateFromValue(value: unknown) {
@@ -53,6 +61,7 @@ function articleFromData(id: string, data: DocumentData): DashboardArticle | nul
   if (!data.title || Number.isNaN(publishAt.getTime())) return null;
   return {
     id,
+    path: String(data.path || `/${id}`),
     title: String(data.title),
     category: String(data.category || "Hearing Health"),
     status: data.status === "draft" || data.status === "archived" ? data.status : "scheduled",
@@ -60,13 +69,19 @@ function articleFromData(id: string, data: DocumentData): DashboardArticle | nul
   };
 }
 
-export function BackOfficeDashboard() {
+export function BackOfficeDashboard({ publishedArticles }: { publishedArticles: PublishedArticleSummary[] }) {
   const { user, authReady, authError } = useCmsUser();
   const [articles, setArticles] = useState<DashboardArticle[]>([]);
   const [startAt, setStartAt] = useState(defaultStartValue);
   const [search, setSearch] = useState("");
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
+  const [currentTime, setCurrentTime] = useState(Date.now);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setCurrentTime(Date.now()), 60_000);
+    return () => window.clearInterval(timer);
+  }, []);
 
   useEffect(() => {
     if (!user) {
@@ -93,11 +108,30 @@ export function BackOfficeDashboard() {
     );
   }, [user]);
 
-  const filteredArticles = useMemo(() => {
+  const scheduledArticles = useMemo(() => articles.filter((article) => article.status !== "scheduled" || article.publishAt.getTime() > currentTime), [articles, currentTime]);
+  const liveArticles = useMemo(() => articles.filter((article) => article.status === "scheduled" && article.publishAt.getTime() <= currentTime), [articles, currentTime]);
+  const historicalArticles = useMemo(() => {
+    const managedPaths = new Set(articles.map((article) => article.path));
+    return publishedArticles.filter((article) => !managedPaths.has(article.path));
+  }, [articles, publishedArticles]);
+
+  const filteredScheduledArticles = useMemo(() => {
     const needle = search.trim().toLowerCase();
-    if (!needle) return articles;
-    return articles.filter((article) => `${article.title} ${article.category} ${article.status}`.toLowerCase().includes(needle));
-  }, [articles, search]);
+    if (!needle) return scheduledArticles;
+    return scheduledArticles.filter((article) => `${article.title} ${article.category} ${article.status}`.toLowerCase().includes(needle));
+  }, [scheduledArticles, search]);
+
+  const filteredLiveArticles = useMemo(() => {
+    const needle = search.trim().toLowerCase();
+    if (!needle) return liveArticles;
+    return liveArticles.filter((article) => `${article.title} ${article.category} published live`.toLowerCase().includes(needle));
+  }, [liveArticles, search]);
+
+  const filteredHistoricalArticles = useMemo(() => {
+    const needle = search.trim().toLowerCase();
+    if (!needle) return historicalArticles;
+    return historicalArticles.filter((article) => `${article.title} ${article.category} already published`.toLowerCase().includes(needle));
+  }, [historicalArticles, search]);
 
   async function login() {
     setMessage("");
@@ -202,12 +236,12 @@ export function BackOfficeDashboard() {
           </div>
 
           <div className="border border-[#d7e2e3] bg-white p-6 shadow-sm">
-            <h2 className="text-2xl font-black">Queue summary</h2>
+            <h2 className="text-2xl font-black">Publishing summary</h2>
             <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-4">
-              <Metric label="All" value={articles.length} />
+              <Metric label="Total library" value={articles.length + historicalArticles.length} />
               <Metric label="Drafts" value={articles.filter((article) => article.status === "draft").length} />
-              <Metric label="Scheduled" value={articles.filter((article) => article.status === "scheduled" && article.publishAt.getTime() > Date.now()).length} />
-              <Metric label="Live" value={articles.filter((article) => article.status === "scheduled" && article.publishAt.getTime() <= Date.now()).length} />
+              <Metric label="Scheduled" value={articles.filter((article) => article.status === "scheduled" && article.publishAt.getTime() > currentTime).length} />
+              <Metric label="Published" value={liveArticles.length + historicalArticles.length} />
             </div>
             {message ? <p className="mt-5 border-l-4 border-[#c57a34] bg-[#fff7ed] p-4 font-bold">{message}</p> : null}
           </div>
@@ -215,10 +249,10 @@ export function BackOfficeDashboard() {
 
         <div className="mt-8 border border-[#d7e2e3] bg-white shadow-sm">
           <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#d7e2e3] p-5">
-            <h2 className="text-2xl font-black">Articles</h2>
+            <div><p className="text-sm font-black uppercase tracking-[0.14em] text-[#9f5c1e]">Upcoming work</p><h2 className="mt-1 text-2xl font-black">Publishing queue</h2></div>
             <label className="flex min-w-[280px] items-center gap-2 border border-[#b8c8ca] px-3 py-2">
               <Search size={18} />
-              <input className="w-full border-0 outline-none" onChange={(event) => setSearch(event.target.value)} placeholder="Search title or category" value={search} />
+              <input className="w-full border-0 outline-none" onChange={(event) => setSearch(event.target.value)} placeholder="Search all articles" value={search} />
             </label>
           </div>
           <div className="overflow-x-auto">
@@ -227,16 +261,59 @@ export function BackOfficeDashboard() {
                 <tr><th className="p-4">Article</th><th className="p-4">Status</th><th className="p-4">Publication time</th><th className="p-4">Edit</th></tr>
               </thead>
               <tbody>
-                {filteredArticles.map((article) => (
+                {filteredScheduledArticles.map((article) => (
                   <ArticleRow article={article} key={article.id} onSave={updateSchedule} />
                 ))}
               </tbody>
             </table>
           </div>
-          {!filteredArticles.length ? <p className="p-8 text-center text-[#5d6b72]">No articles match this view.</p> : null}
+          {!filteredScheduledArticles.length ? <p className="p-8 text-center text-[#5d6b72]">No upcoming articles match this view.</p> : null}
+        </div>
+
+        <div className="mt-8 border border-[#d7e2e3] bg-white shadow-sm">
+          <div className="border-b border-[#d7e2e3] p-5">
+            <p className="text-sm font-black uppercase tracking-[0.14em] text-[#28725e]">Publication history</p>
+            <h2 className="mt-1 text-2xl font-black">Published blog posts</h2>
+            <p className="mt-2 text-[#5d6b72]">These articles are already published and visible to readers on the website.</p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[780px] border-collapse text-left">
+              <thead className="bg-[#f4f7f7] text-sm uppercase tracking-wide text-[#5d6b72]">
+                <tr><th className="p-4">Article</th><th className="p-4">Status</th><th className="p-4">Published</th><th className="p-4">Actions</th></tr>
+              </thead>
+              <tbody>
+                {filteredLiveArticles.map((article) => <PublishedManagedRow article={article} key={article.id} />)}
+                {filteredHistoricalArticles.map((article) => <PublishedHistoricalRow article={article} key={article.path} />)}
+              </tbody>
+            </table>
+          </div>
+          {!filteredLiveArticles.length && !filteredHistoricalArticles.length ? <p className="p-8 text-center text-[#5d6b72]">No published articles match this view.</p> : null}
         </div>
       </div>
     </section>
+  );
+}
+
+function PublishedManagedRow({ article }: { article: DashboardArticle }) {
+  return (
+    <tr className="border-t border-[#e0e7e8] align-top">
+      <td className="p-4"><p className="font-black text-[#253239]">{article.title}</p><p className="mt-1 text-sm text-[#5d6b72]">{article.category}</p></td>
+      <td className="p-4"><span className="inline-flex bg-[#e4f3ed] px-3 py-1 text-sm font-black text-[#185c49]">Published</span></td>
+      <td className="p-4 text-[#42535a]">{article.publishAt.toLocaleDateString()}</td>
+      <td className="p-4"><div className="flex flex-wrap gap-4"><Link className="focus-ring inline-flex items-center gap-2 font-black text-[#115e68] underline" href={article.path} target="_blank"><ExternalLink size={17} /> View</Link><Link className="focus-ring inline-flex items-center gap-2 font-black text-[#115e68] underline" href={`/back-office/articles/${article.id}`}><Edit3 size={17} /> Edit</Link></div></td>
+    </tr>
+  );
+}
+
+function PublishedHistoricalRow({ article }: { article: PublishedArticleSummary }) {
+  const publishedDate = article.publishedAt ? new Date(`${article.publishedAt}T12:00:00`) : null;
+  return (
+    <tr className="border-t border-[#e0e7e8] align-top">
+      <td className="p-4"><p className="font-black text-[#253239]">{article.title}</p><p className="mt-1 text-sm text-[#5d6b72]">{article.category}</p></td>
+      <td className="p-4"><span className="inline-flex bg-[#e4f3ed] px-3 py-1 text-sm font-black text-[#185c49]">Already published</span></td>
+      <td className="p-4 text-[#42535a]">{publishedDate && !Number.isNaN(publishedDate.getTime()) ? publishedDate.toLocaleDateString() : "Previously published"}</td>
+      <td className="p-4"><Link className="focus-ring inline-flex items-center gap-2 font-black text-[#115e68] underline" href={article.path} target="_blank"><ExternalLink size={17} /> View post</Link></td>
+    </tr>
   );
 }
 

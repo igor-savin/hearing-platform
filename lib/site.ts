@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import crawl from "@/data/crawl.json";
-import { buildSeedBlogPosts } from "@/lib/blogSeed";
 import { buildNextBlogPosts } from "@/lib/blogNext";
 import { comparisonPages } from "@/lib/conversion";
 import {
@@ -805,7 +804,7 @@ function relatedLinks(page: SitePage) {
     const curatedLinks = editorialBlogRelatedLinks[page.path];
     if (curatedLinks) return curatedLinks;
     if (page.related.length) return page.related;
-    return [...generatedPages, ...editorialBlogPosts, ...seedBlogPosts, ...nextBlogPosts, ...comparisonPages]
+    return [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...comparisonPages]
       .filter((post) => post.path !== page.path)
       .filter((post) => post.type === "blog-post")
       .map((post) => ({ label: post.h1, href: post.path }))
@@ -1358,7 +1357,6 @@ const serviceAreaPages: SitePage[] = [
   }))
 ];
 
-const seedBlogPosts = buildSeedBlogPosts(baseUrl, siteName);
 const nextBlogPosts = buildNextBlogPosts(baseUrl, siteName);
 
 const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => ({
@@ -1387,7 +1385,7 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...seedBlogPosts, ...nextBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
