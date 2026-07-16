@@ -5,12 +5,6 @@ import { locations, primaryPhone, siteName } from "@/lib/site";
 const googleReviewsUrl =
   "https://www.google.com/maps/place/Audiology+Associates+of+Westchester/@40.9796102,-73.7452172,17z/data=!4m18!1m9!3m8!1s0x89c2941f220a4edf:0x3781801f76f64a38!2sAudiology+Associates+of+Westchester!8m2!3d40.9796062!4d-73.7426423!9m1!1b1!16s%2Fg%2F1thvtmkc!3m7!1s0x89c2941f220a4edf:0x3781801f76f64a38!8m2!3d40.9796062!4d-73.7426423!9m1!1b1!16s%2Fg%2F1thvtmkc?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
 
-const harrisonGoogleMapsUrl =
-  "https://www.google.com/maps/place/Audiology+Associates+of+Westchester/@40.9796102,-73.7452172,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2941f220a4edf:0x3781801f76f64a38!8m2!3d40.9796062!4d-73.7426423!16s%2Fg%2F1thvtmkc?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D";
-
-const somersGoogleMapsUrl =
-  "https://google.com/maps?ll=41.326271,-73.688044&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584";
-
 export function Footer() {
   const harrison = locations.find((location) => location.path === "/harrison-ny");
   const somers = locations.find((location) => location.path === "/Somers-NY");
@@ -33,7 +27,7 @@ export function Footer() {
               </p>
               <a
                 className="focus-ring mt-5 inline-flex rounded-full border-2 border-[#005a9c] px-7 py-3 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
-                href={harrisonGoogleMapsUrl}
+                href={harrison.directionsUrl}
                 rel="noreferrer"
                 target="_blank"
               >
@@ -74,7 +68,7 @@ export function Footer() {
               </p>
               <a
                 className="focus-ring mt-5 inline-flex rounded-full border-2 border-[#005a9c] px-7 py-3 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
-                href={somersGoogleMapsUrl}
+                href={somers.directionsUrl}
                 rel="noreferrer"
                 target="_blank"
               >

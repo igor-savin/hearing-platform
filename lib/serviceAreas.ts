@@ -23,7 +23,7 @@ export type AreaCity = {
   name: string;
   state: string;
   countySlug: string;
-  nearestOffice: "harrison" | "somers" | "white-plains" | "scarsdale";
+  nearestOffice: "harrison" | "somers";
   nearby: string[];
   localContext: string;
   travelNote: string;
@@ -49,9 +49,9 @@ export const areaCounties: AreaCounty[] = [
     state: "NY",
     headline: "Hearing aids and audiology across Westchester County",
     summary:
-      "Audiology Associates of Westchester serves patients throughout Westchester County from convenient offices in Harrison, Somers, White Plains, and Scarsdale.",
+      "Audiology Associates of Westchester serves patients throughout Westchester County from two offices in Harrison and Somers.",
     officeContext:
-      "Depending on your neighborhood, the Harrison, Somers, White Plains, or Scarsdale office may be the most convenient place to schedule a hearing test, hearing aid consultation, tinnitus visit, hearing protection appointment, or hearing aid repair.",
+      "Depending on your neighborhood, the Harrison or Somers office may be the most convenient place to schedule a hearing test, hearing aid consultation, tinnitus visit, hearing protection appointment, or hearing aid repair.",
     cities: [
       "harrison",
       "somers",
@@ -215,11 +215,11 @@ export const areaCities: AreaCity[] = [
     name: "White Plains",
     state: "NY",
     countySlug: "westchester-county-ny",
-    nearestOffice: "white-plains",
+    nearestOffice: "harrison",
     nearby: ["Hartsdale", "Scarsdale", "Harrison", "Purchase"],
     localContext:
       "White Plains is central to Westchester County and remains an important service area for hearing testing, hearing aids, tinnitus therapy, and hearing protection.",
-    travelNote: "Patients should call to confirm the most appropriate office location and appointment availability.",
+    travelNote: "The Harrison office is the nearest practice location for White Plains patients; call to confirm appointment availability.",
     patientNeeds: ["central Westchester hearing evaluations", "hearing aid technology consultations", "hearing aid repair support", "tinnitus counseling"]
   },
   {
@@ -227,11 +227,11 @@ export const areaCities: AreaCity[] = [
     name: "Scarsdale",
     state: "NY",
     countySlug: "westchester-county-ny",
-    nearestOffice: "scarsdale",
+    nearestOffice: "harrison",
     nearby: ["Hartsdale", "White Plains", "Eastchester", "New Rochelle"],
     localContext:
       "Scarsdale patients can access audiology services through nearby Westchester County offices, including hearing tests and personalized hearing aid care.",
-    travelNote: "The current site references a Scarsdale address, and patients should call to confirm appointment location details.",
+    travelNote: "The Harrison office is the nearest practice location for Scarsdale patients; call to confirm appointment availability.",
     patientNeeds: ["hearing aid consultations", "diagnostic hearing testing", "hearing protection", "follow-up programming"]
   },
   {
@@ -311,7 +311,7 @@ export const areaCities: AreaCity[] = [
     name: "New Rochelle",
     state: "NY",
     countySlug: "westchester-county-ny",
-    nearestOffice: "scarsdale",
+    nearestOffice: "harrison",
     nearby: ["Larchmont", "Mamaroneck", "Eastchester", "Scarsdale"],
     localContext:
       "New Rochelle patients can connect with Audiology Associates of Westchester for hearing testing, hearing aids, and tinnitus support through nearby offices.",
@@ -323,11 +323,11 @@ export const areaCities: AreaCity[] = [
     name: "Hartsdale",
     state: "NY",
     countySlug: "westchester-county-ny",
-    nearestOffice: "white-plains",
+    nearestOffice: "harrison",
     nearby: ["White Plains", "Scarsdale", "Ardsley", "Greenburgh"],
     localContext:
       "Hartsdale patients can access nearby Westchester audiology care for hearing tests, hearing aid fitting, and hearing protection.",
-    travelNote: "White Plains and Scarsdale-area appointments may be convenient depending on availability.",
+    travelNote: "The Harrison office is the nearest practice location for Hartsdale patients.",
     patientNeeds: ["hearing testing", "hearing aid support", "tinnitus therapy", "custom protection"]
   },
   {
@@ -383,7 +383,7 @@ export const areaCities: AreaCity[] = [
     name: "Chappaqua",
     state: "NY",
     countySlug: "westchester-county-ny",
-    nearestOffice: "white-plains",
+    nearestOffice: "somers",
     nearby: ["Pleasantville", "Mt. Kisco", "Armonk", "White Plains"],
     localContext:
       "Chappaqua patients can access Westchester audiology care for hearing testing, hearing aid fitting, and hearing aid troubleshooting.",
@@ -395,11 +395,11 @@ export const areaCities: AreaCity[] = [
     name: "Armonk",
     state: "NY",
     countySlug: "westchester-county-ny",
-    nearestOffice: "white-plains",
+    nearestOffice: "harrison",
     nearby: ["Purchase", "Chappaqua", "Bedford", "White Plains"],
     localContext:
       "Armonk patients can schedule hearing care through nearby Westchester offices for hearing tests, hearing aid technology, and follow-up care.",
-    travelNote: "White Plains and Harrison-area appointments may be convenient depending on availability.",
+    travelNote: "The Harrison office is the nearest practice location for Armonk patients.",
     patientNeeds: ["hearing testing", "hearing aids", "hearing protection", "tinnitus care"]
   },
   {
@@ -407,7 +407,7 @@ export const areaCities: AreaCity[] = [
     name: "Pleasantville",
     state: "NY",
     countySlug: "westchester-county-ny",
-    nearestOffice: "white-plains",
+    nearestOffice: "harrison",
     nearby: ["Chappaqua", "Briarcliff Manor", "Mt. Kisco", "Hawthorne"],
     localContext:
       "Pleasantville patients can connect with Audiology Associates of Westchester for diagnostic hearing care, hearing aids, and tinnitus support.",
@@ -1041,9 +1041,7 @@ export function localFlavorForCounty(county: AreaCounty) {
 
 const officePathByKey = {
   harrison: "/harrison-ny",
-  somers: "/Somers-NY",
-  "white-plains": "/White-Plains-NY",
-  scarsdale: "/Scarsdale-NY"
+  somers: "/Somers-NY"
 } as const;
 
 export function countyPath(slug: string) {

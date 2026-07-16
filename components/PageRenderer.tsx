@@ -575,7 +575,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
         background: "blue",
         paragraphs: [
           "You don't have to live with auditory issues, especially if they are causing problems in your day-to-day life. If you or a loved one are experiencing hearing loss, ringing in your ears, or other hearing problems, consult an experienced and knowledgeable professional that will work tirelessly to diagnose and treat the issue.",
-          "Audiology Associates of Westchester has convenient locations located a short drive from Mt. Kisco. Our professional audiologists will work with you to identify and treat the hearing problem you are experiencing. Contact us today to schedule an appointment with a hearing doctor or to learn more about our services!"
+          "The Somers office is a short drive from Mt. Kisco. Our professional audiologists will work with you to identify and treat the hearing problem you are experiencing. Contact us today to schedule an appointment with a hearing doctor or to learn more about our services!"
         ],
         mapQuery: "Mt. Kisco, NY",
         mapCaption: "Get Directions from the Mt. Kisco, NY Community"
@@ -646,33 +646,32 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
     ]
   },
   "/White-Plains-NY": {
-    intro: "Contact Our White Plains, NY Office",
-    heading: "Providing Quality Audiology Services to Residents of White Plains, NY",
+    intro: "Audiology Care for White Plains, NY",
+    heading: "Hearing Care Serving White Plains from Our Harrison Office",
     paragraphs: [
       "As one of the most sought-after places to live in Westchester County, White Plains, NY is well-known for its educational institutions, medical facilities, and historical points of interest. Community involvement is a hallmark of the city and with a recent focus on urban renewal, organizations and businesses throughout White Plains, NY are dedicated to providing visitors and residents alike with a high quality of life.",
-      "Audiology Associates of Westchester is just one of these businesses. When you visit our office in White Plains, NY, our team of audiologists will work closely with you to determine your level of hearing and the extent of any hearing loss. From hearing protection to hearing aids, tinnitus therapy, and more, we offer number of audiology services designed to help those who come to us maintain and improve their hearing as well as relieve any discomfort associated with hearing loss."
+      "White Plains is a service area, not a physical Audiology Associates office. Patients can visit our Harrison office at 550 Mamaroneck Ave, Suite 407 (4th floor), where our audiologists provide hearing testing, hearing aids, tinnitus therapy, hearing protection, and follow-up care."
     ],
     sections: [
       {
-        title: "Call Today to Schedule an Appointment",
+        title: "Nearest Office: Harrison, NY",
         background: "blue",
         paragraphs: [
           "If you are searching for an experienced hearing doctor in White Plains, Rye, Port Chester, or the nearby communities, we invite you to reach out to us today. Our caring and compassionate team will listen to your concerns and conduct testing based on your hearing loss symptoms. Following your diagnosis, our hearing doctor will recommend the product or therapy to help improve your hearing health or the hearing health of a loved one.",
           "If you live in White Plains, NY and have questions about your hearing, call Audiology Associates of Westchester today to schedule an appointment."
         ],
-        mapQuery: "785 Mamaroneck Ave Building 4 White Plains NY 10605",
-        mapCaption: "Get Directions to Our White Plains, NY Office",
-        addressLines: ["785 Mamaroneck Ave., Bldg. 4", "White Plains, NY 10605"],
+        mapQuery: "550 Mamaroneck Ave Suite 407 Harrison NY 10528",
+        mapCaption: "Get Directions to Our Harrison, NY Office",
+        addressLines: ["550 Mamaroneck Ave, Suite 407 (4th floor)", "Harrison, NY 10528"],
         phone: primaryPhone,
         phoneHref: primaryPhoneHref,
-        fax: "(914) 949-0717",
         hours: ["Monday-Friday: 8:30am - 5:00pm"]
       }
     ]
   },
   "/Scarsdale-NY": {
-    intro: "Contact Our Scarsdale, NY Office",
-    heading: "Hearing Doctor Proudly Serving Scarsdale, NY and Beyond",
+    intro: "Audiology Care for Scarsdale, NY",
+    heading: "Hearing Care Serving Scarsdale from Our Harrison Office",
     paragraphs: [
       "Scarsdale is a town and village in Westchester County, New York. Living in Scarsdale offers residents a suburban feel and most residents own their homes. In Scarsdale there are a lot of restaurants, coffee shops, and parks. The public schools in Scarsdale are highly rated, making this a great place to live and start a family.",
       "The scenic village is just about 35 minutes from New York City and has been ranked the richest town on the East Coast for years. If you live in the area and are noticing hearing loss symptoms, get in touch with the team at Audiology Associates of Westchester to schedule an appointment.",
@@ -680,18 +679,17 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
     ],
     sections: [
       {
-        title: "Call Today to Schedule an Appointment",
+        title: "Nearest Office: Harrison, NY",
         background: "blue",
         paragraphs: [
-          "If you are experiencing hearing loss symptoms or other auditory problems in Scarsdale, NY, the hearing doctors at our Scarsdale office are ready to help you. If you are experiencing hearing loss or discomfort related to auditory issues, reach out to our professional hearing doctors today.",
+          "If you are experiencing hearing loss symptoms or other auditory problems in Scarsdale, NY, our nearby Harrison office is ready to help. Scarsdale is a service area, not a physical Audiology Associates office.",
           "It’s important you don’t trust just anyone with your hearing aid fitting process; choose an experienced team that can perfect your customized fitting. We are proud to serve the entire Scarsdale, NY area and beyond! Contact us today to schedule an appointment!"
         ],
-        mapQuery: "259 Heathcote Road Scarsdale NY 10583",
-        mapCaption: "Get Directions to Our Scarsdale, NY Office",
-        addressLines: ["259 Heathcote Road", "Scarsdale, NY 10583"],
+        mapQuery: "550 Mamaroneck Ave Suite 407 Harrison NY 10528",
+        mapCaption: "Get Directions to Our Harrison, NY Office",
+        addressLines: ["550 Mamaroneck Ave, Suite 407 (4th floor)", "Harrison, NY 10528"],
         phone: primaryPhone,
         phoneHref: primaryPhoneHref,
-        fax: "(914) 949-0717",
         hours: ["Monday-Friday: 8:30am - 5:00pm"]
       }
     ]
@@ -1456,7 +1454,7 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
         primaryLabel="Start with hearing testing"
         secondaryHref="/contact-us"
         secondaryLabel="Find the right office"
-        stats={["Local service-area guide", "Harrison, Somers, White Plains, Scarsdale", "Hearing tests, hearing aids, tinnitus care"]}
+        stats={["Local service-area guide", "Two offices: Harrison and Somers", "Hearing tests, hearing aids, tinnitus care"]}
         subtitle={page.body.join(" ")}
         title={page.h1}
       />
@@ -1605,6 +1603,14 @@ function AreaCityPage({ page }: { page: SitePage }) {
                 </a>
               </p>
               <p className="mt-3 text-[18px] leading-[1.35]">{office.hours.join(" ")}</p>
+              <a
+                className="focus-ring mt-5 inline-flex items-center gap-2 rounded-full border-2 border-[#005a9c] px-5 py-3 text-[15px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+                href={office.directionsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(office.address)}`}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <MapPin size={18} aria-hidden="true" /> Get Directions
+              </a>
             </aside>
           </div>
         </section>
@@ -2597,7 +2603,7 @@ function LocationPlanningSection({ page }: { page: SitePage }) {
         <div>
           <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Plan your visit</p>
           <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
-            Make the {location.city} office easier to choose
+            {location.type === "office" ? `Make the ${location.city} office easier to choose` : `Plan hearing care near ${location.city}`}
           </h2>
           <LiveRule />
           <p className="mt-[30px] text-[22px] leading-[1.4] text-black max-md:text-[18px]">{guide.parking}</p>
@@ -2834,6 +2840,16 @@ function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
                 >
                   Explore {county.name}
                 </Link>
+              ) : null}
+              {officeLocation ? (
+                <a
+                  className="focus-ring inline-flex items-center justify-center gap-2 rounded-full border-2 border-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+                  href={officeLocation.directionsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(officeLocation.address)}`}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  <MapPin size={18} aria-hidden="true" /> Get Directions
+                </a>
               ) : null}
             </div>
           </div>
@@ -3857,12 +3873,12 @@ function LiveContactPage({ page }: { page: SitePage }) {
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Audiology Associates of Westchester</h2>
           <LiveRule />
-          <div className="mt-[42px] grid gap-[40px] lg:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-[42px] grid gap-[40px] lg:grid-cols-2">
             {officeLocations.map((location) => {
                 const mapLinks = officeMapLinks[location.path as keyof typeof officeMapLinks];
                 const mapQueryUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`;
                 const embedUrl = mapLinks?.embed || `https://www.google.com/maps?q=${encodeURIComponent(location.address)}&output=embed`;
-                const directionsUrl = mapLinks?.maps || mapQueryUrl;
+                const directionsUrl = location.directionsUrl || mapLinks?.maps || mapQueryUrl;
 
                 return (
                   <div className="flex h-full flex-col text-center" key={location.path}>
@@ -3877,7 +3893,7 @@ function LiveContactPage({ page }: { page: SitePage }) {
                           {location.phone}
                         </a>
                       </p>
-                      <p>Fax: {location.fax || ""}</p>
+                      {location.fax ? <p>Fax: {location.fax}</p> : null}
                     </address>
 
                     <div className="space-y-[10px] pt-[18px] text-[20px] leading-[1.35] text-black">
@@ -4429,16 +4445,17 @@ function ServicesGrid() {
 }
 
 function LocationCards() {
+  const officeLocations = locations.filter((location) => location.type === "office");
   return (
     <section className="section bg-[var(--brand-soft)]">
       <div className="container">
         <SectionTitle
           eyebrow="Locations"
-          title="Hearing care across Westchester County and nearby communities"
-          text="NAP information from the current website is preserved, with conflicts flagged in the QA report."
+          title="Two office locations serving Westchester County and nearby communities"
+          text="Visit Audiology Associates of Westchester in Harrison or Somers."
         />
-        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {locations.map((location) => (
+        <div className="mt-8 grid gap-4 md:grid-cols-2">
+          {officeLocations.map((location) => (
             <Link className="focus-ring rounded-lg bg-white p-5 medical-shadow" href={location.path} key={location.path}>
               <MapPin className="text-[var(--accent)]" size={24} aria-hidden="true" />
               <h3 className="mt-3 text-lg font-black text-[var(--brand-dark)]">{location.name}</h3>

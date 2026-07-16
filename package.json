@@ -12,7 +12,8 @@
     "lint": "tsc --noEmit",
     "crawl": "node scripts/crawl-site.mjs",
     "qa": "node scripts/qa-site.mjs",
-    "qa:functionality": "node scripts/functionality-qa.mjs"
+    "qa:functionality": "node scripts/functionality-qa.mjs",
+    "qa:locations": "node scripts/location-nap-audit.mjs"
   },
   "dependencies": {
     "cheerio": "^1.1.2",

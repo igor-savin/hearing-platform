@@ -287,12 +287,13 @@ export function localBusinessSchema(page: SitePage) {
     medicalSpecialty: "Audiology",
     address: {
       "@type": "PostalAddress",
-      streetAddress: location.address.replace(`, ${location.city}, ${location.state}`, "").replace(/, NY \d{5}|, CT \d{5}/, ""),
+      streetAddress: location.streetAddress,
       addressLocality: location.city,
       addressRegion: location.state,
+      postalCode: location.postalCode,
       addressCountry: "US"
     },
-    hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`,
+    hasMap: location.directionsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`,
     areaServed: [location.city, ...location.nearby],
     makesOffer: allServiceLinks.slice(0, 8).map((service) => ({
       "@type": "Offer",

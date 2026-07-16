@@ -93,12 +93,15 @@ export type Location = {
   city: string;
   state: string;
   address: string;
+  streetAddress?: string;
+  postalCode?: string;
   phone: string;
   phoneHref: string;
   fax?: string;
   hours: string[];
   type: "office" | "service-area";
   nearby: string[];
+  directionsUrl?: string;
   note?: string;
 };
 
@@ -176,11 +179,15 @@ export const locations: Location[] = [
     city: "Harrison",
     state: "NY",
     address: "550 Mamaroneck Ave, Suite 407 (4th floor), Harrison, NY 10528",
+    streetAddress: "550 Mamaroneck Ave, Suite 407 (4th floor)",
+    postalCode: "10528",
     phone: primaryPhone,
     phoneHref: primaryPhoneHref,
     hours: ["Monday-Friday: 8:30am - 5:00pm"],
     type: "office",
     nearby: ["Rye", "Greenwich", "Scarsdale", "White Plains"],
+    directionsUrl:
+      "https://www.google.com/maps/place/Audiology+Associates+of+Westchester/@40.9796102,-73.7452172,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2941f220a4edf:0x3781801f76f64a38!8m2!3d40.9796062!4d-73.7426423!16s%2Fg%2F1thvtmkc?entry=ttu",
     note: "The live site identifies this office as Suite 407 on the 4th floor."
   },
   {
@@ -189,6 +196,8 @@ export const locations: Location[] = [
     city: "Somers",
     state: "NY",
     address: "325 NY 100, Somers, NY 10589",
+    streetAddress: "325 NY 100",
+    postalCode: "10589",
     phone: "(914) 556-6720",
     phoneHref: "tel:+19145566720",
     fax: "(914) 556-6722",
@@ -200,35 +209,35 @@ export const locations: Location[] = [
       "Friday: 8:30am - 2:30pm"
     ],
     type: "office",
-    nearby: ["Mahopac", "Putnam Valley", "Mt. Kisco", "Northern Westchester"]
+    nearby: ["Mahopac", "Putnam Valley", "Mt. Kisco", "Northern Westchester"],
+    directionsUrl:
+      "https://google.com/maps?ll=41.326271,-73.688044&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584"
   },
   {
-    name: "White Plains, NY Location",
+    name: "White Plains, NY",
     path: "/White-Plains-NY",
     city: "White Plains",
     state: "NY",
-    address: "785 Mamaroneck Ave., Bldg. 4, White Plains, NY 10605",
+    address: "Served by the Harrison office at 550 Mamaroneck Ave, Suite 407 (4th floor), Harrison, NY 10528",
     phone: primaryPhone,
     phoneHref: primaryPhoneHref,
-    fax: "(914) 949-0717",
-    hours: ["Monday-Friday: 8:30am - 5:00pm"],
-    type: "office",
+    hours: ["Call the Harrison office for appointment availability."],
+    type: "service-area",
     nearby: ["Harrison", "Scarsdale", "Rye", "Westchester County"],
-    note: "This address appears on the live White Plains location page but not in the current footer/contact NAP."
+    note: "White Plains is a service area, not a physical office. The nearest practice location is Harrison."
   },
   {
-    name: "Scarsdale, NY Location",
+    name: "Scarsdale, NY",
     path: "/Scarsdale-NY",
     city: "Scarsdale",
     state: "NY",
-    address: "259 Heathcote Road, Scarsdale, NY 10583",
+    address: "Served by the Harrison office at 550 Mamaroneck Ave, Suite 407 (4th floor), Harrison, NY 10528",
     phone: primaryPhone,
     phoneHref: primaryPhoneHref,
-    fax: "(914) 949-0717",
-    hours: ["Monday-Friday: 8:30am - 5:00pm"],
-    type: "office",
+    hours: ["Call the Harrison office for appointment availability."],
+    type: "service-area",
     nearby: ["White Plains", "Harrison", "Rye", "Westchester County"],
-    note: "This address appears on the live Scarsdale page but not in the current footer/contact NAP."
+    note: "Scarsdale is a service area, not a physical office. The nearest practice location is Harrison."
   },
   {
     name: "Greenwich, CT",
@@ -427,6 +436,20 @@ function dedupe<T>(items: T[], key: (item: T) => string) {
   });
 }
 
+function correctOfficeClaims(value: string) {
+  return value
+    .replace(/\bWhite Plains, NY Location\b/gi, "Audiology Care for White Plains, NY")
+    .replace(/\bScarsdale, NY Location\b/gi, "Audiology Care for Scarsdale, NY")
+    .replace(/\b(?:4|Four) convenient locations\b/g, "Two office locations")
+    .replace(/\bour Two office locations\b/g, "our two office locations")
+    .replace(/\bLocations? in White Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers(?:,?\s*NY)?/g, "Offices in Harrison and Somers, NY")
+    .replace(/\b(?:our\s+)?(?:4|four)\s+convenient\s+locations\b/gi, "our two office locations")
+    .replace(/\blocations?\s+in\s+White Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers(?:,?\s*NY)?/gi, "offices in Harrison and Somers, NY")
+    .replace(/\boffices?\s+in\s+White Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers(?:,?\s*NY)?/gi, "offices in Harrison and Somers, NY")
+    .replace(/\boffices?\s+in\s+Harrison,\s*Somers,\s*White Plains,?\s*(?:and|&)\s*Scarsdale\b/gi, "offices in Harrison and Somers")
+    .replace(/\bWhite Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers\b/gi, "Harrison and Somers");
+}
+
 function cleanBodyText(page: CrawlPage, path: string) {
   const pathLabel =
     path === "/"
@@ -445,6 +468,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
     !/^\(?\d{3}\)?/.test(line);
   const lines = page.text
     .map(fixSpacing)
+    .map(correctOfficeClaims)
     .map((line) => (isSomersLocation ? line : line.replace(/\(914\)\s*556-6720/g, primaryPhone)))
     .flatMap(expandBodyLine)
     .filter(Boolean)
@@ -797,7 +821,7 @@ function relatedLinks(page: SitePage) {
 
   const links = [
     ...services.map((service) => ({ label: service.title, href: service.path })),
-    ...locations.slice(0, 4).map((location) => ({ label: location.name, href: location.path }))
+    ...locations.filter((location) => location.type === "office").map((location) => ({ label: location.name, href: location.path }))
   ].filter((link) => link.href !== page.path);
 
   if (page.type === "blog-post") {
@@ -823,18 +847,18 @@ const generatedPages = uniqueCrawlPages
   .map((page): SitePage => {
     const path = pathFromUrl(page.url);
     const type = determineType(path, page.type);
-    const h1 = fixSpacing(
+    const h1 = correctOfficeClaims(fixSpacing(
       page.h1 || (path === "/privacy" ? "Audiology Associates of Westchester Privacy Policy" : page.title.replace(/\s*\|.*$/, ""))
-    );
+    ));
     const metaDescription =
-      fixSpacing(page.metaDescription) ||
+      correctOfficeClaims(fixSpacing(page.metaDescription)) ||
       `${h1} from ${siteName}, serving Westchester County and nearby communities.`;
     const images = dedupe(page.images.filter((image) => image.src), (image) => image.src);
     return {
       path,
       url: `${baseUrl}${path === "/" ? "" : path}`,
       title: h1,
-      metaTitle: path === "/privacy" ? `Privacy Policy | ${siteName}` : fixSpacing(page.title || h1),
+      metaTitle: path === "/privacy" ? `Privacy Policy | ${siteName}` : correctOfficeClaims(fixSpacing(page.title || h1)),
       metaDescription,
       h1,
       type,
@@ -842,7 +866,7 @@ const generatedPages = uniqueCrawlPages
       canonical: `${baseUrl}${path === "/" ? "" : path}`,
       heroImage: imageForPage(page),
       images,
-      sections: page.sections.map(fixSpacing).filter(Boolean),
+      sections: page.sections.map(fixSpacing).map(correctOfficeClaims).filter(Boolean),
       body: cleanBodyText(page, path),
       faqs: [],
       related: []
@@ -1317,7 +1341,7 @@ const serviceAreaPages: SitePage[] = [
     images: [],
     sections: ["Westchester County", "Nearby Counties", "Plan Your Visit"],
     body: [
-      "Audiology Associates of Westchester serves patients across Westchester County and nearby communities through offices in Harrison, Somers, White Plains, and Scarsdale.",
+      "Audiology Associates of Westchester serves patients across Westchester County and nearby communities through two offices in Harrison and Somers.",
       "Explore county and city pages to find the most relevant office, services, and nearby communities for hearing testing, hearing aids, tinnitus therapy, hearing protection, and hearing aid repair."
     ],
     faqs: [],

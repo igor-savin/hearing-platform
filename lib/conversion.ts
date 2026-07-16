@@ -153,15 +153,15 @@ export const locationPlanningGuides: Record<string, LocationPlanningGuide> = {
     nearbyCommunities: ["Somers", "Mahopac", "Yorktown Heights", "Katonah", "Bedford", "Mt. Kisco"]
   },
   "/White-Plains-NY": {
-    parking: "Use the White Plains office page to confirm building details before visiting 785 Mamaroneck Ave., Bldg. 4. This location is positioned for central Westchester patients who want convenient diagnostic and hearing aid care.",
-    bestFor: ["Central Westchester patients", "White Plains and Scarsdale-area patients", "Diagnostic hearing testing and hearing aid care"],
-    nearbyLandmarks: ["Mamaroneck Avenue", "White Plains", "Scarsdale", "Harrison"],
+    parking: "White Plains is a service area, not a physical office. The nearest practice location is the Harrison office at 550 Mamaroneck Ave, Suite 407 (4th floor).",
+    bestFor: ["White Plains and central Westchester patients", "Planning a visit to the Harrison office", "Diagnostic hearing testing and hearing aid care"],
+    nearbyLandmarks: ["White Plains", "Mamaroneck Avenue corridor", "Purchase", "Harrison"],
     nearbyCommunities: ["White Plains", "Scarsdale", "Hartsdale", "Harrison", "Rye", "New Rochelle"]
   },
   "/Scarsdale-NY": {
-    parking: "The Scarsdale office at 259 Heathcote Road is helpful for patients near southern and central Westchester. Call before visiting to confirm appointment availability and any arrival details.",
-    bestFor: ["Scarsdale-area patients", "Families comparing nearby office options", "Hearing testing, hearing aid fitting, and follow-up care"],
-    nearbyLandmarks: ["Heathcote Road", "Scarsdale", "White Plains", "Hartsdale"],
+    parking: "Scarsdale is a service area, not a physical office. The nearest practice location is the Harrison office at 550 Mamaroneck Ave, Suite 407 (4th floor).",
+    bestFor: ["Scarsdale-area patients", "Planning a visit to the Harrison office", "Hearing testing, hearing aid fitting, and follow-up care"],
+    nearbyLandmarks: ["Scarsdale", "White Plains", "Hartsdale", "Harrison"],
     nearbyCommunities: ["Scarsdale", "Hartsdale", "White Plains", "New Rochelle", "Eastchester", "Harrison"]
   }
 };
@@ -178,7 +178,8 @@ export function serviceGuideForPage(page: SitePage) {
 export function nearestOfficeText(location: Location) {
   if (location.type === "office") return `${location.city}, ${location.state} office`;
   if (location.path === "/greenwich-ct" || location.path === "/rye-ny") return "Harrison, NY office";
-  if (location.path === "/mt-kisco-ny") return "Somers or White Plains office";
+  if (location.path === "/mt-kisco-ny") return "Somers, NY office";
+  if (location.path === "/White-Plains-NY" || location.path === "/Scarsdale-NY") return "Harrison, NY office";
   return "nearest Westchester office";
 }
 
