@@ -91,7 +91,7 @@ export function Footer() {
         </nav>
 
         <p className="mt-[42px] text-[19px] leading-tight text-[#333]">
-          © 2026 {siteName}. All Rights Reserved.
+          © {new Date().getFullYear()} {siteName}. All Rights Reserved.
         </p>
       </div>
     </footer>
