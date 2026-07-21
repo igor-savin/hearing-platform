@@ -858,7 +858,12 @@ const generatedPages = uniqueCrawlPages
       path,
       url: `${baseUrl}${path === "/" ? "" : path}`,
       title: h1,
-      metaTitle: path === "/privacy" ? `Privacy Policy | ${siteName}` : correctOfficeClaims(fixSpacing(page.title || h1)),
+      metaTitle:
+        path === "/privacy"
+          ? `Privacy Policy | ${siteName}`
+          : path === "/thank-you"
+            ? `Thank You | ${siteName}`
+            : correctOfficeClaims(fixSpacing(page.title || h1)),
       metaDescription,
       h1,
       type,
