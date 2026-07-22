@@ -872,7 +872,13 @@ p {
 
 .ear-hero-art {
   z-index: -3;
-  background: url("/assets/hearing-journey-hero.png") center / cover no-repeat;
+  background-image: url("/assets/hearing-journey-hero.webp");
+  background-image: image-set(
+    url("/assets/hearing-journey-hero.avif") type("image/avif"),
+    url("/assets/hearing-journey-hero.webp") type("image/webp"));
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   transform: scale(1.015);
   transition: filter .6s ease, transform 1.2s cubic-bezier(.2, .7, .2, 1);
 }
