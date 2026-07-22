@@ -363,6 +363,7 @@ export function Header() {
         aria-hidden={!mobileMenuOpen}
         className={`fixed inset-0 z-[60] lg:hidden ${mobileMenuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
         id="mobile-navigation"
+        inert={!mobileMenuOpen}
       >
         <button
           aria-label="Close menu backdrop"
