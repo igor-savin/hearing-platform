@@ -6,6 +6,7 @@ import { Pause, Phone, Play, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { primaryPhone, primaryPhoneHref } from "@/lib/site";
+import { HearingScene } from "@/lib/audio/hearingScene";
 
 const stages = [
   {
@@ -50,6 +51,7 @@ export function InteractiveEarHero() {
   const [soundEnabled, setSoundEnabled] = useState(false);
   const [aided, setAided] = useState(true);
   const audioContext = useRef<AudioContext | null>(null);
+  const scene = useRef<HearingScene | null>(null);
 
   useEffect(() => {
     if (!playing) return;
@@ -67,51 +69,14 @@ export function InteractiveEarHero() {
     return () => window.clearInterval(timer);
   }, [playing]);
 
+  // Keep the live soundscape in step with the natural / with-hearing-aid toggle.
   useEffect(() => {
-    if (!soundEnabled) return;
-
-    const Context = window.AudioContext || window.webkitAudioContext;
-    const context = audioContext.current ?? new Context();
-    audioContext.current = context;
-    if (context.state === "suspended") void context.resume();
-
-    const now = context.currentTime;
-    const oscillator = context.createOscillator();
-    const harmonic = context.createOscillator();
-    const filter = context.createBiquadFilter();
-    const panner = context.createStereoPanner();
-    const gain = context.createGain();
-    const harmonicGain = context.createGain();
-
-    oscillator.type = "sine";
-    harmonic.type = "triangle";
-    oscillator.frequency.value = stages[activeStage].frequency;
-    harmonic.frequency.value = stages[activeStage].frequency * 2;
-    harmonicGain.gain.value = aided ? 0.16 : 0.05;
-    filter.type = "lowpass";
-    filter.frequency.value = aided ? 5200 : 1250;
-    filter.Q.value = aided ? 0.7 : 1.8;
-    panner.pan.value = stages[activeStage].pan;
-    gain.gain.setValueAtTime(0.0001, now);
-    gain.gain.exponentialRampToValueAtTime(aided ? 0.052 : 0.026, now + 0.08);
-    gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.7);
-
-    oscillator.connect(filter);
-    harmonic.connect(harmonicGain).connect(filter);
-    filter.connect(panner).connect(gain).connect(context.destination);
-    oscillator.start(now);
-    harmonic.start(now);
-    oscillator.stop(now + 0.72);
-    harmonic.stop(now + 0.72);
-
-    return () => {
-      oscillator.disconnect();
-      harmonic.disconnect();
-    };
-  }, [activeStage, aided, soundEnabled]);
+    scene.current?.setAided(aided);
+  }, [aided]);
 
   useEffect(() => {
     return () => {
+      scene.current?.stop();
       if (audioContext.current) void audioContext.current.close();
     };
   }, []);
@@ -121,6 +86,9 @@ export function InteractiveEarHero() {
     const context = audioContext.current ?? new Context();
     audioContext.current = context;
     if (context.state === "suspended") void context.resume();
+    if (!scene.current) scene.current = new HearingScene(context);
+    scene.current.setAided(aided);
+    scene.current.start();
     setSoundEnabled(true);
   }
 
@@ -141,8 +109,8 @@ export function InteractiveEarHero() {
       return;
     }
 
+    scene.current?.stop();
     setSoundEnabled(false);
-    if (audioContext.current?.state === "running") void audioContext.current.suspend();
   }
 
   function chooseStage(index: number) {
