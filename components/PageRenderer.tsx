@@ -15,6 +15,7 @@ import {
 } from "@/lib/conversion";
 import {
   coreServiceDeepDives,
+  helpServiceEyebrows,
   helpServiceForPath,
   helpServiceImages,
   helpServicePath,
@@ -1238,7 +1239,7 @@ function helpHeroProps(service: HelpService): LocalHeroProps {
   const serviceIndex = helpServices.findIndex((item) => item.slug === service.slug);
   return {
     badge: service.menuTitle,
-    eyebrow: "How we can help",
+    eyebrow: helpServiceEyebrows[service.slug] || "How we can help",
     title: service.title,
     subtitle: service.shortDescription,
     accent: helpHeroAccents[Math.max(serviceIndex, 0) % helpHeroAccents.length],

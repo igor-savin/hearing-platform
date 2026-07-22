@@ -22,6 +22,22 @@ export function helpServicePath(service: HelpService | string) {
 
 const photo = (name: string) => `/assets/blog-seed/photo-v2/${name}-photo-v2.webp`;
 
+// Per-service eyebrow so pages don't all read "How we can help".
+export const helpServiceEyebrows: Record<string, string> = {
+  "your-hearing": "Start here",
+  "comprehensive-hearing-assessments": "Diagnostic hearing care",
+  "advanced-hearing-aid-technology": "Hearing aid technology",
+  "hearing-aid-tune-ups": "Hearing aid service",
+  "tinnitus-management": "Tinnitus care",
+  "cochlear-implants": "Cochlear implant support",
+  "earwax-removal": "Ear health",
+  "cognivue-cognitive-screening": "Hearing & cognition",
+  "adoption-plan": "New-patient support",
+  "lenire-for-tinnitus": "Tinnitus therapy",
+  "executive-assistance": "Professional hearing care",
+  "hearing-protection": "Hearing protection"
+};
+
 // Distinct, owned hero photo per service so no two pages share the same imagery.
 export const helpServiceImages: Record<string, { src: string; alt: string }> = {
   "your-hearing": {
@@ -189,7 +205,7 @@ export const helpServices: HelpService[] = [
     slug: "advanced-hearing-aid-technology",
     shortDescription: "Current hearing aid options focused on clarity, comfort, connectivity, and real-world listening.",
     metaDescription:
-      "Explore advanced hearing aid technology and professional fitting support from Audiology Associates of Westchester.",
+      "Compare advanced hearing aid technology and expert fitting at Audiology Associates of Westchester's Harrison and Somers, NY offices.",
     intro: [
       "Modern hearing aids can support clearer speech, easier listening in noise, rechargeable power, phone connectivity, discreet styles, and personalized sound settings.",
       "The best technology choice depends on the hearing test, the environments that matter most, physical handling needs, cosmetic preferences, and follow-up care."
@@ -297,7 +313,7 @@ export const helpServices: HelpService[] = [
     slug: "tinnitus-management",
     shortDescription: "Personalized strategies for patients experiencing ringing, buzzing, humming, or sound sensitivity.",
     metaDescription:
-      "Learn about tinnitus management and therapy options with Audiology Associates of Westchester.",
+      "Tinnitus management and therapy options in Westchester County, with evaluation and personalized care at our Harrison and Somers, NY offices.",
     intro: [
       "Tinnitus can sound like ringing, buzzing, humming, hissing, roaring, or another internal sound. For some people it is mild; for others it affects concentration, sleep, stress, and quality of life.",
       "Audiology Associates of Westchester helps patients understand tinnitus, hearing status, sound comfort, and management options that may be appropriate after evaluation."
@@ -351,7 +367,7 @@ export const helpServices: HelpService[] = [
     slug: "cochlear-implants",
     shortDescription: "Support for patients who may need cochlear implant candidacy guidance, programming, or follow-up care.",
     metaDescription:
-      "Learn about cochlear implant support, candidacy guidance, activation, and programming with Audiology Associates of Westchester.",
+      "Cochlear implant support in Westchester County: candidacy guidance, activation, and programming at Audiology Associates of Westchester.",
     intro: [
       "Some patients with significant hearing loss do not receive enough benefit from traditional hearing aids. Cochlear implant evaluation and support can be part of the conversation when hearing aids are not meeting communication needs.",
       "The practice can help patients understand candidacy questions, hearing aid benefit, programming needs, and appropriate next steps based on clinical findings."
@@ -459,7 +475,7 @@ export const helpServices: HelpService[] = [
     slug: "cognivue-cognitive-screening",
     shortDescription: "A digital screening option that helps connect hearing care conversations with cognitive wellness.",
     metaDescription:
-      "Learn about Cognivue cognitive screening and how hearing and cognitive wellness conversations can be part of audiology care.",
+      "Cognivue cognitive screening at Audiology Associates of Westchester in Harrison and Somers, NY, where hearing and cognitive wellness connect.",
     intro: [
       "Hearing and cognitive wellness are often discussed together because listening requires attention, memory, and processing effort. A cognitive screening can provide additional context during hearing care conversations.",
       "Cognivue is a digital screening tool. It is not a diagnosis, and results should be discussed with appropriate clinical professionals."
@@ -567,7 +583,7 @@ export const helpServices: HelpService[] = [
     slug: "lenire-for-tinnitus",
     shortDescription: "A tinnitus treatment pathway that may be discussed for appropriate candidates after evaluation.",
     metaDescription:
-      "Learn about Lenire for tinnitus and how Audiology Associates of Westchester discusses candidacy and tinnitus care options.",
+      "Lenire for tinnitus in Westchester County: candidacy and tinnitus care options at Audiology Associates of Westchester, Harrison and Somers, NY.",
     intro: [
       "Lenire is a tinnitus treatment option that may be considered for appropriate candidates as part of a tinnitus management plan.",
       "Because tinnitus experiences vary, patients need an individualized evaluation before determining whether Lenire, hearing aids, sound strategies, counseling, or another pathway is appropriate."
@@ -621,7 +637,7 @@ export const helpServices: HelpService[] = [
     slug: "executive-assistance",
     shortDescription: "Hearing care for professionals who rely on clear communication in meetings, calls, travel, and public settings.",
     metaDescription:
-      "Learn about professional and executive hearing care support from Audiology Associates of Westchester.",
+      "Executive hearing care for busy professionals in Westchester County, with discreet support at our Harrison and Somers, NY audiology offices.",
     intro: [
       "For many professionals, hearing difficulty first shows up in meetings, conference rooms, presentations, restaurants, travel, or phone calls. The issue may not be loudness; it may be clarity and listening effort.",
       "Executive assistance focuses on communication goals, discreet technology discussions, device optimization, and strategies that support demanding professional listening environments."
@@ -675,7 +691,7 @@ export const helpServices: HelpService[] = [
     slug: "hearing-protection",
     shortDescription: "Custom protection for work, music, recreation, travel, and everyday noise exposure.",
     metaDescription:
-      "Learn about custom hearing protection and ear protection options from Audiology Associates of Westchester.",
+      "Custom hearing protection and earplugs for work, music, and noise, fitted at Audiology Associates of Westchester in Harrison and Somers, NY.",
     intro: [
       "Noise exposure can affect hearing gradually, and many loud environments are part of normal life: concerts, construction, power tools, sports, commuting, music, and busy public spaces.",
       "Custom hearing protection can be selected for comfort, fit, communication needs, and the specific noise environment."
