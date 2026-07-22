@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import crawl from "@/data/crawl.json";
 import { buildNextBlogPosts } from "@/lib/blogNext";
 import { comparisonPages } from "@/lib/conversion";
+import { hearingLossPages } from "@/lib/hearingLoss";
+import { reviewsPage } from "@/lib/reviews";
 import {
   brandPath,
   hearingAidBrandsPath,
@@ -1414,7 +1416,7 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);

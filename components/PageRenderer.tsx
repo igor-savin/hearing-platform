@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck } from "lucide-react";
+import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck, Star } from "lucide-react";
+import { googleReviewsUrl, reviewAggregate, reviewThemes, testimonials } from "@/lib/reviews";
 import { ContactForm } from "@/components/ContactForm";
 import { InteractiveEarHero } from "@/components/InteractiveEarHero";
 import { ZocdocButton } from "@/components/ZocdocButton";
@@ -3821,6 +3822,131 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
   );
 }
 
+function ReviewStars({ size = 18 }: { size?: number }) {
+  return (
+    <span className="inline-flex" aria-hidden="true">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star key={i} size={size} className="fill-[#ffc60a] text-[#ffc60a]" />
+      ))}
+    </span>
+  );
+}
+
+function ReviewsPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <Breadcrumbs page={page} />
+
+      <section className="bg-[#003f6f] py-16 text-white">
+        <div className="mx-auto max-w-[1000px] px-6 text-center">
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Patient reviews</p>
+          <h1 className="mt-3 text-[44px] font-black leading-tight max-md:text-[34px]">{page.h1}</h1>
+          <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-5">
+            <span className="text-[56px] font-black leading-none">{reviewAggregate.rating.toFixed(1)}</span>
+            <span className="flex flex-col items-center sm:items-start">
+              <ReviewStars size={24} />
+              <span className="mt-1 text-[17px] text-white/85">
+                {reviewAggregate.count}+ {reviewAggregate.source} reviews
+              </span>
+            </span>
+          </div>
+          <p className="mx-auto mt-6 max-w-[720px] text-[19px] leading-8 text-white/88">{page.body[0]}</p>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              className="focus-ring inline-flex items-center justify-center gap-2 rounded-md bg-[#ffd45a] px-7 py-4 text-[16px] font-black text-[#003f6f] hover:bg-white"
+              data-track="phone-reviews-hero"
+              href={primaryPhoneHref}
+            >
+              <Phone aria-hidden="true" size={18} /> Call {primaryPhone}
+            </a>
+            <a
+              className="focus-ring inline-flex items-center justify-center rounded-md border-2 border-white/70 px-7 py-4 text-[16px] font-black text-white hover:bg-white hover:text-[#003f6f]"
+              href={googleReviewsUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Read all reviews on Google
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[var(--cream)] py-8">
+        <div className="mx-auto flex max-w-[1100px] flex-wrap items-center justify-center gap-3 px-6">
+          <span className="text-[15px] font-bold text-[var(--muted)]">Patients most often mention:</span>
+          {reviewThemes.map((theme) => (
+            <span
+              className="rounded-full border border-[var(--line)] bg-white px-4 py-2 text-[14px] font-bold text-[var(--brand-dark)]"
+              key={theme.label}
+            >
+              {theme.label} <span className="text-[var(--muted)]">· {theme.count}</span>
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-white py-14">
+        <div className="mx-auto max-w-[1100px] px-6">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((review) => (
+              <figure
+                className="flex h-full flex-col rounded-2xl border border-[var(--line)] bg-white p-6 medical-shadow"
+                key={review.author}
+              >
+                <ReviewStars />
+                <blockquote className="mt-4 flex-1 text-[17px] leading-7 text-[var(--foreground)]">
+                  “{review.quote}”
+                </blockquote>
+                <figcaption className="mt-5 border-t border-[var(--line)] pt-4">
+                  <span className="block font-black text-[var(--brand-dark)]">{review.author}</span>
+                  <span className="text-[14px] text-[var(--muted)]">
+                    {review.tag} · Verified Google review
+                  </span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-[15px] text-[var(--muted)]">
+            Reviews are drawn from our public Google Business Profile.{" "}
+            <a className="focus-ring font-bold text-[var(--brand)] underline" href={googleReviewsUrl} rel="noreferrer" target="_blank">
+              See all {reviewAggregate.count}+ reviews
+            </a>{" "}
+            or share your own.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-[#f1f5fa] py-14">
+        <div className="mx-auto max-w-[820px] px-6 text-center">
+          <h2 className="text-[30px] font-black text-[var(--brand-dark)] max-md:text-[26px]">
+            Experience the care our patients describe
+          </h2>
+          <p className="mt-4 text-[18px] leading-8 text-[var(--muted)]">
+            Schedule a hearing evaluation at our Harrison or Somers, NY office and see the difference an attentive audiologist makes.
+          </p>
+          <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link
+              className="focus-ring inline-flex items-center justify-center rounded-md bg-[#005a9c] px-7 py-4 text-[16px] font-black text-white hover:bg-[#004a82]"
+              href="/contact-us"
+            >
+              Book an Appointment
+            </Link>
+            <a
+              className="focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-[#005a9c] px-7 py-4 text-[16px] font-black text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+              data-track="phone-reviews-cta"
+              href={primaryPhoneHref}
+            >
+              <Phone aria-hidden="true" size={18} /> {primaryPhone}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <AreaFaqSection page={page} title="Reviews — frequently asked" />
+    </>
+  );
+}
+
 function LivePageBody({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
   const image = page.heroImage;
@@ -3830,6 +3956,10 @@ function LivePageBody({ page }: { page: SitePage }) {
 
   if (page.path === "/services") {
     return <ServicesLandingPage page={page} />;
+  }
+
+  if (page.path === "/reviews") {
+    return <ReviewsPage page={page} />;
   }
 
   if (page.type === "service" && serviceVisual) {
