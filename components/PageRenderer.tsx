@@ -66,7 +66,7 @@ import {
   type AreaCity,
   type AreaCityLocalFlavor
 } from "@/lib/serviceAreas";
-import { providerForName, providerForPath, providerPath, providerProfiles, type ProviderProfile } from "@/lib/team";
+import { providerForName, providerForPath, providerPath, providerProfiles, providerRootPath, type ProviderProfile } from "@/lib/team";
 
 const patientForms = [
   {
@@ -1059,6 +1059,144 @@ function officeForAreaPath(path: string) {
   return locations.find((location) => location.path === officePath) || null;
 }
 
+// --- Unique per-location hero illustrations ---------------------------------
+// Each location page renders its own scene motif (waterfront, downtown/transit,
+// village, northern hills, lake, campus, theatre, avenue) instead of one shared
+// geometric card. Scenes are lightweight inline SVG (no stock photos), themed to
+// the site's navy/yellow palette with a per-town accent. Adding or re-theming a
+// town is a one-line change in the motif/accent maps below.
+type HeroMotif =
+  | "harbor"
+  | "skyline"
+  | "skylineWater"
+  | "village"
+  | "hills"
+  | "lake"
+  | "campus"
+  | "marquee"
+  | "avenue"
+  | "region";
+
+const heroSun = (cx: number, cy: number, r: number, accent: string) =>
+  r > 0 ? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${accent}" opacity="0.9"/>` : "";
+
+const heroTrees = (x: number, y: number, accent: string) =>
+  `<g fill="${accent}" opacity="0.9"><path d="M${x} ${y} l14 26 h-28 z"/><path d="M${x} ${y + 12} l17 30 h-34 z"/><rect x="${x - 3}" y="${y + 40}" width="6" height="12" fill="#0a3a63"/></g>`;
+
+const heroFrame = (inner: string, accent: string) =>
+  `<svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" style="display:block" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a3a63"/><stop offset="0.55" stop-color="#0a4f86"/><stop offset="1" stop-color="#0c5c9c"/></linearGradient></defs><rect width="600" height="400" fill="url(#heroSky)"/><g opacity="0.5"><circle cx="512" cy="86" r="70" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2"/><circle cx="512" cy="86" r="50" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="2"/><circle cx="512" cy="86" r="30" fill="none" stroke="${accent}" stroke-width="3" opacity="0.65"/></g>${inner}</svg>`;
+
+const heroSkylineScene = (a: string, water: boolean) =>
+  heroFrame(
+    `${heroSun(150, 96, 30, a)}<g fill="#0b3f6b"><rect x="60" y="160" width="52" height="180"/><rect x="120" y="120" width="60" height="220"/><rect x="188" y="180" width="46" height="160"/><rect x="240" y="96" width="70" height="244"/><rect x="318" y="150" width="54" height="190"/><rect x="380" y="200" width="46" height="140"/><rect x="434" y="130" width="64" height="210"/><rect x="506" y="176" width="48" height="164"/></g><g fill="${a}" opacity="0.8">${[...Array(7)]
+      .map((_, r) => [...Array(6)].map((_, c) => `<rect x="${248 + c * 10}" y="${112 + r * 18}" width="5" height="8"/>`).join(""))
+      .join("")}</g><g fill="rgba(255,255,255,0.35)">${[...Array(6)]
+      .map((_, r) => `<rect x="${444 + (r % 3) * 12}" y="${146 + r * 22}" width="5" height="9"/>`)
+      .join("")}</g>${
+      water
+        ? `<rect x="0" y="340" width="600" height="60" fill="#0a355c"/><g stroke="${a}" stroke-width="3" opacity="0.5" fill="none"><path d="M40 366 q40 -12 80 0"/><path d="M320 372 q40 -12 80 0"/></g>`
+        : `<rect x="0" y="340" width="600" height="60" fill="#0a3357"/>`
+    }<rect x="0" y="330" width="600" height="4" fill="${a}" opacity="0.7"/><g fill="#08304f"><rect x="150" y="300" width="120" height="30" rx="4"/></g><rect x="156" y="306" width="108" height="12" fill="${a}" opacity="0.55"/>`,
+    a
+  );
+
+const heroScenes: Record<HeroMotif, (accent: string) => string> = {
+  harbor: (a) =>
+    heroFrame(
+      `${heroSun(150, 110, 34, a)}<path d="M0 250 Q150 232 300 250 T600 250 V400 H0 Z" fill="#0b3f6b"/><path d="M0 288 Q150 272 300 288 T600 288 V400 H0 Z" fill="#0a355c"/><g stroke="${a}" stroke-width="3" opacity="0.55" fill="none"><path d="M60 320 q40 -14 80 0"/><path d="M180 336 q40 -14 80 0"/><path d="M360 322 q40 -14 80 0"/><path d="M470 340 q40 -14 80 0"/></g><g><path d="M250 250 l0 -70 l46 62 z" fill="#eaf4fb" opacity="0.95"/><path d="M250 250 l0 -54 l-30 46 z" fill="${a}" opacity="0.9"/><path d="M226 252 h58 l-12 20 h-34 z" fill="#08304f"/></g><g transform="translate(120 26) scale(0.7)"><path d="M250 250 l0 -70 l46 62 z" fill="#eaf4fb" opacity="0.9"/><path d="M250 250 l0 -54 l-30 46 z" fill="#fff" opacity="0.55"/><path d="M226 252 h58 l-12 20 h-34 z" fill="#08304f"/></g><path d="M430 150 q8 -8 16 0 q8 -8 16 0" stroke="#eaf4fb" stroke-width="2" fill="none" opacity="0.7"/>`,
+      a
+    ),
+  skyline: (a) => heroSkylineScene(a, false),
+  skylineWater: (a) => heroSkylineScene(a, true),
+  village: (a) =>
+    heroFrame(
+      `<rect x="0" y="300" width="600" height="100" fill="#0a355c"/><g><rect x="60" y="210" width="90" height="90" fill="#0b3f6b"/><path d="M55 210 h100 l-14 -22 h-72 z" fill="${a}" opacity="0.85"/><rect x="160" y="230" width="90" height="70" fill="#0c4a7d"/><path d="M155 230 h100 l-14 -20 h-72 z" fill="#eaf4fb" opacity="0.5"/><rect x="260" y="205" width="96" height="95" fill="#0b3f6b"/><path d="M255 205 h106 l-16 -24 h-74 z" fill="${a}" opacity="0.85"/><rect x="366" y="234" width="88" height="66" fill="#0c4a7d"/><path d="M361 234 h98 l-14 -20 h-70 z" fill="#eaf4fb" opacity="0.5"/><rect x="464" y="214" width="86" height="86" fill="#0b3f6b"/><path d="M459 214 h96 l-14 -22 h-68 z" fill="${a}" opacity="0.85"/></g><g fill="${a}" opacity="0.8"><rect x="74" y="250" width="24" height="16"/><rect x="112" y="250" width="24" height="16"/><rect x="276" y="248" width="26" height="16"/><rect x="314" y="248" width="26" height="16"/><rect x="480" y="252" width="24" height="16"/></g><g fill="rgba(255,255,255,0.4)"><rect x="180" y="250" width="20" height="20"/><rect x="212" y="250" width="20" height="20"/><rect x="386" y="252" width="20" height="18"/><rect x="418" y="252" width="20" height="18"/></g>${heroTrees(30, 246, a)} ${heroTrees(566, 250, a)}<circle cx="300" cy="196" r="10" fill="#eaf4fb" opacity="0.85"/><circle cx="300" cy="196" r="10" fill="none" stroke="#08304f" stroke-width="2"/>`,
+      a
+    ),
+  hills: (a) =>
+    heroFrame(
+      `${heroSun(470, 110, 30, a)}<path d="M0 240 Q150 188 320 232 T600 214 V400 H0 Z" fill="#125a8f"/><path d="M0 292 Q180 244 380 292 T600 282 V400 H0 Z" fill="#0d4670"/><path d="M0 336 Q200 298 420 338 T600 330 V400 H0 Z" fill="#0a3557"/><path d="M0 240 Q150 188 320 232 T600 214" fill="none" stroke="${a}" stroke-width="2.5" opacity="0.5"/><path d="M300 400 C312 344 250 322 306 286 C356 256 306 236 336 214" stroke="${a}" stroke-width="8" fill="none" opacity="0.55" stroke-linecap="round"/><path d="M300 400 C312 344 250 322 306 286 C356 256 306 236 336 214" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-dasharray="6 10" fill="none"/>${heroTrees(96, 232, a)} ${heroTrees(150, 252, a)} ${heroTrees(496, 248, a)} ${heroTrees(540, 232, a)}`,
+      a
+    ),
+  lake: (a) =>
+    heroFrame(
+      `${heroSun(150, 104, 30, a)}<path d="M0 200 Q150 164 340 196 T600 190 V236 H0 Z" fill="#0d4670"/><ellipse cx="300" cy="250" rx="330" ry="60" fill="#0f5288"/><ellipse cx="300" cy="246" rx="250" ry="44" fill="#1666a3" opacity="0.7"/><g stroke="${a}" stroke-width="3" opacity="0.5" fill="none"><path d="M150 250 q40 -10 80 0"/><path d="M340 262 q40 -10 80 0"/></g><g fill="#08304f"><rect x="250" y="228" width="14" height="58"/><rect x="222" y="278" width="150" height="9"/></g><path d="M356 262 q30 16 60 0 q-30 10 -60 0z" fill="${a}" opacity="0.9"/>${heroTrees(70, 214, a)} ${heroTrees(520, 212, a)}`,
+      a
+    ),
+  campus: (a) =>
+    heroFrame(
+      `${heroSun(150, 96, 26, a)}<rect x="90" y="150" width="420" height="150" fill="#0b3f6b"/><rect x="90" y="150" width="420" height="16" fill="${a}" opacity="0.85"/><g fill="#0a355c"><rect x="120" y="178" width="40" height="122"/><rect x="180" y="178" width="40" height="122"/><rect x="240" y="178" width="40" height="122"/><rect x="300" y="178" width="40" height="122"/><rect x="360" y="178" width="40" height="122"/><rect x="420" y="178" width="40" height="122"/></g><g fill="${a}" opacity="0.6"><rect x="128" y="188" width="24" height="60"/><rect x="248" y="188" width="24" height="60"/><rect x="368" y="188" width="24" height="60"/></g><path d="M270 300 v-34 a30 30 0 0 1 60 0 v34" fill="none" stroke="#eaf4fb" stroke-width="4" opacity="0.7"/>${heroTrees(50, 214, a)} ${heroTrees(548, 216, a)}`,
+      a
+    ),
+  marquee: (a) =>
+    heroFrame(
+      `${heroSun(150, 96, 26, a)}<rect x="0" y="300" width="600" height="100" fill="#0a355c"/><rect x="180" y="150" width="240" height="150" fill="#0b3f6b"/><rect x="196" y="176" width="208" height="60" rx="6" fill="#08304f" stroke="${a}" stroke-width="3"/><rect x="220" y="196" width="160" height="8" rx="4" fill="${a}" opacity="0.65"/><rect x="240" y="212" width="120" height="7" rx="3" fill="#eaf4fb" opacity="0.5"/><g fill="${a}">${[...Array(11)].map((_, i) => `<circle cx="${200 + i * 20}" cy="168" r="3.5"/>`).join("")}</g><g fill="${a}">${[...Array(11)]
+        .map((_, i) => `<circle cx="${200 + i * 20}" cy="244" r="3.5"/>`)
+        .join("")}</g><g fill="#eaf4fb" opacity="0.9"><circle cx="470" cy="140" r="8"/><rect x="477" y="108" width="3" height="34"/><circle cx="120" cy="120" r="7"/><rect x="126" y="92" width="3" height="30"/></g>`,
+      a
+    ),
+  avenue: (a) =>
+    heroFrame(
+      `${heroSun(150, 100, 26, a)}<rect x="0" y="300" width="600" height="100" fill="#0a355c"/><g><rect x="70" y="200" width="140" height="100" fill="#0b3f6b"/><rect x="230" y="200" width="140" height="100" fill="#0c4a7d"/><rect x="390" y="200" width="140" height="100" fill="#0b3f6b"/></g>${["70", "230", "390"]
+        .map(
+          (x, idx) =>
+            `<g>${[...Array(7)]
+              .map((_, i) => `<rect x="${+x + i * 20}" y="236" width="10" height="18" fill="${idx % 2 ? "#eaf4fb" : a}" opacity="0.9"/>`)
+              .join("")}<rect x="${+x + 140 - 3}" y="236" width="6" height="18" fill="#08304f"/></g>`
+        )
+        .join("")}<g fill="rgba(255,255,255,0.4)"><rect x="96" y="262" width="30" height="30"/><rect x="150" y="262" width="30" height="30"/><rect x="256" y="262" width="30" height="30"/><rect x="416" y="262" width="30" height="30"/></g><line x1="560" y1="300" x2="560" y2="200" stroke="${a}" stroke-width="4" opacity="0.8"/><circle cx="560" cy="196" r="8" fill="${a}" opacity="0.9"/>`,
+      a
+    ),
+  region: (a) =>
+    heroFrame(
+      `${heroSun(150, 100, 28, a)}<path d="M0 270 Q150 220 300 260 T600 250 V400 H0 Z" fill="#0c4a7d"/><g fill="#0b3f6b"><rect x="120" y="180" width="40" height="120"/><rect x="168" y="150" width="50" height="150"/><rect x="226" y="196" width="38" height="104"/></g><g fill="#0a355c"><rect x="360" y="210" width="44" height="90"/><rect x="412" y="186" width="52" height="114"/></g><rect x="0" y="300" width="600" height="100" fill="#0a3357"/><path d="M40 340 Q200 300 420 342 T600 335" stroke="${a}" stroke-width="4" fill="none" opacity="0.5"/>${heroTrees(500, 250, a)} ${heroTrees(70, 248, a)}`,
+      a
+    )
+};
+
+const heroMotifLabels: Record<HeroMotif, string> = {
+  harbor: "Sound Shore harbor",
+  skyline: "Downtown skyline",
+  skylineWater: "Downtown waterfront",
+  village: "Village center",
+  hills: "Northern hills",
+  lake: "Lake and shoreline",
+  campus: "Campus and arts",
+  marquee: "Theatre district",
+  avenue: "Shopping avenue",
+  region: "Regional overview"
+};
+
+function HeroSceneArt({ motif, accent }: { motif: HeroMotif; accent: string }) {
+  return <div className="absolute inset-0" aria-hidden="true" dangerouslySetInnerHTML={{ __html: heroScenes[motif](accent) }} />;
+}
+
+function LocalHeroScene({ accent, motif, badge, stats, title }: { accent: string; motif: HeroMotif; badge: string; stats: string[]; title: string }) {
+  return (
+    <div
+      aria-label={`${title} — ${heroMotifLabels[motif]} illustration`}
+      className="relative min-h-[390px] overflow-hidden rounded-[28px] border border-white/25 shadow-2xl max-md:min-h-[300px]"
+      role="img"
+    >
+      <HeroSceneArt accent={accent} motif={motif} />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#00223d]/90 via-[#00223d]/25 to-transparent" />
+      <div className="absolute inset-x-6 bottom-6 flex flex-col gap-3">
+        <p className="inline-flex w-fit rounded-full bg-[#ffd45a] px-4 py-2 text-[13px] font-black uppercase tracking-[0.16em] text-[#003f6f]">
+          {badge}
+        </p>
+        <div className="grid gap-2 sm:grid-cols-3">
+          {stats.slice(0, 3).map((stat) => (
+            <div className="rounded-[14px] border border-white/25 bg-black/30 p-3 text-[14px] font-bold leading-5 text-white backdrop-blur-sm" key={stat}>
+              {stat}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 h-2 w-full" style={{ backgroundColor: accent }} />
+    </div>
+  );
+}
+
 type LocalHeroProps = {
   badge: string;
   eyebrow: string;
@@ -1066,6 +1204,7 @@ type LocalHeroProps = {
   subtitle: string;
   accent: string;
   stats: string[];
+  motif?: HeroMotif;
   image?: string;
   imageAlt?: string;
   primaryHref?: string;
@@ -1146,7 +1285,7 @@ function LocalHeroArt({ accent, badge, title, stats }: Pick<LocalHeroProps, "acc
   );
 }
 
-function LocalHero({ accent, badge, eyebrow, image, imageAlt, primaryHref, primaryLabel, secondaryHref, secondaryLabel, stats, subtitle, title }: LocalHeroProps) {
+function LocalHero({ accent, badge, eyebrow, image, imageAlt, motif, primaryHref, primaryLabel, secondaryHref, secondaryLabel, stats, subtitle, title }: LocalHeroProps) {
   return (
     <section className="relative isolate overflow-hidden bg-[#003f6f] py-[62px] text-white">
       <div
@@ -1183,6 +1322,8 @@ function LocalHero({ accent, badge, eyebrow, image, imageAlt, primaryHref, prima
         </div>
         {image ? (
           <LocalHeroPhoto accent={accent} badge={badge} image={image} imageAlt={imageAlt} stats={stats} />
+        ) : motif ? (
+          <LocalHeroScene accent={accent} badge={badge} motif={motif} stats={stats} title={title} />
         ) : (
           <LocalHeroArt accent={accent} badge={badge} stats={stats} title={title} />
         )}
@@ -1190,6 +1331,62 @@ function LocalHero({ accent, badge, eyebrow, image, imageAlt, primaryHref, prima
     </section>
   );
 }
+
+// Scene motif per location, drawn from each place's real character.
+const cityHeroMotifs: Record<string, HeroMotif> = {
+  rye: "harbor",
+  mamaroneck: "harbor",
+  larchmont: "harbor",
+  greenwich: "avenue",
+  "port-chester": "marquee",
+  "new-rochelle": "skylineWater",
+  "white-plains": "skyline",
+  harrison: "village",
+  hartsdale: "village",
+  scarsdale: "village",
+  somers: "hills",
+  "yorktown-heights": "hills",
+  "mount-kisco": "hills",
+  bedford: "hills",
+  katonah: "hills",
+  armonk: "hills",
+  chappaqua: "village",
+  pleasantville: "marquee",
+  purchase: "campus",
+  "rye-brook": "village",
+  mahopac: "lake"
+};
+
+// Per-town accent so towns that share a motif still read as distinct.
+const cityHeroAccents: Record<string, string> = {
+  rye: "#7bdcb5",
+  mamaroneck: "#9bd3f4",
+  larchmont: "#86e0c3",
+  greenwich: "#ffd45a",
+  "port-chester": "#f4b6c2",
+  "new-rochelle": "#ffd45a",
+  "white-plains": "#9bd3f4",
+  harrison: "#7bdcb5",
+  hartsdale: "#86e0c3",
+  scarsdale: "#c6b4f5",
+  somers: "#9bd3f4",
+  "yorktown-heights": "#7bdcb5",
+  "mount-kisco": "#9bd3f4",
+  bedford: "#86e0c3",
+  katonah: "#c6b4f5",
+  armonk: "#7bdcb5",
+  chappaqua: "#7bdcb5",
+  pleasantville: "#f4b6c2",
+  purchase: "#c6b4f5",
+  "rye-brook": "#86e0c3",
+  mahopac: "#9bd3f4"
+};
+
+const countyHeroMotifs: Record<string, HeroMotif> = {
+  "westchester-county-ny": "region",
+  "fairfield-county-ct": "harbor",
+  "putnam-county-ny": "lake"
+};
 
 function countyHeroProps(county: AreaCounty, cities: AreaCity[]): LocalHeroProps {
   const isFairfield = county.slug === "fairfield-county-ct";
@@ -1201,6 +1398,7 @@ function countyHeroProps(county: AreaCounty, cities: AreaCity[]): LocalHeroProps
     title: county.headline,
     subtitle: `${county.summary} ${county.officeContext}`,
     accent: isFairfield ? "#ffd45a" : isPutnam ? "#9bd3f4" : "#7bdcb5",
+    motif: countyHeroMotifs[county.slug] || "region",
     stats: [
       isFairfield ? "Greenwich + lower Fairfield County" : isPutnam ? "Mahopac + southern Putnam" : `${cities.length} Westchester communities`,
       isFairfield ? "Nearby Harrison office access" : isPutnam ? "Nearby Somers office access" : "Multiple Westchester offices",
@@ -1221,7 +1419,8 @@ function cityHeroProps(city: AreaCity, office: ReturnType<typeof officeForAreaPa
     eyebrow: "Local hearing care",
     title: `Trusted hearing care near ${city.name}`,
     subtitle: `${flavor?.intro || city.localContext} ${city.travelNote}`,
-    accent: city.state === "CT" ? "#ffd45a" : city.nearestOffice === "somers" ? "#9bd3f4" : "#7bdcb5",
+    accent: cityHeroAccents[city.slug] || (city.state === "CT" ? "#ffd45a" : city.nearestOffice === "somers" ? "#9bd3f4" : "#7bdcb5"),
+    motif: cityHeroMotifs[city.slug] || "village",
     stats: [
       officeLabel,
       `Nearby: ${city.nearby.slice(0, 3).join(", ")}`,
@@ -1547,6 +1746,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
       <AreaBreadcrumbs page={page} />
       <LocalHero {...hero} />
       {localFlavor ? <AreaCountyLocalFlavorSection county={county} flavor={localFlavor} /> : null}
+      <AreaExpertiseSection locationLabel={county.name} office={null} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.78fr_1.22fr] max-md:px-5">
           <div>
@@ -1597,6 +1797,75 @@ function AreaCountyPage({ page }: { page: SitePage }) {
       <AreaFaqSection page={page} title={`Frequently Asked Questions About Hearing Care in ${county.name}`} />
       <AreaAppointmentCta />
     </>
+  );
+}
+
+// Curated, accurate one-line credential highlights (sourced from lib/team.ts)
+// so the E-E-A-T block reads cleanly instead of dumping full credential lists.
+const providerCredentialHighlights: Record<string, string> = {
+  "jennifer-ratner": "Au.D., Vanderbilt University School of Medicine · Tinnitus-certified (CH-TM) · musician-focused care",
+  "kira-savin": "Au.D., Salus University · Lyric invisible extended-wear devices · Tinnitus management (CH-TM)",
+  "caitlin-dold": "Au.D., Vanderbilt · cochlear implants, cerumen removal & ASL · White Plains native",
+  "jenna-elias": "Au.D., University of Florida · Fellow, American Academy of Audiology",
+  "leannmarie-senat": "Au.D., CUNY Graduate Center · adult amplification & vestibular assessment"
+};
+
+const featuredAreaProviderSlugs = ["jennifer-ratner", "kira-savin", "caitlin-dold"];
+
+// Shared expertise/trust section for area pages. Demonstrates real Experience,
+// Expertise, Authoritativeness and Trust (Google E-E-A-T): named doctoral-level
+// audiologists with verifiable credentials, grounded in the physical office that
+// actually serves the location, with honest service-area framing.
+function AreaExpertiseSection({ locationLabel, office }: { locationLabel: string; office: ReturnType<typeof officeForAreaPath> }) {
+  const featured = featuredAreaProviderSlugs
+    .map((slug) => providerProfiles.find((provider) => provider.slug === slug))
+    .filter((provider): provider is ProviderProfile => Boolean(provider));
+  const officeSentence = office
+    ? `Patients near ${locationLabel} are seen at our ${office.city}, ${office.state} office at ${office.address}.`
+    : `Patients near ${locationLabel} are seen at our Harrison and Somers offices.`;
+  return (
+    <section className="bg-[#f7fbfd] py-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Expertise &amp; trust</p>
+        <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          Care from Doctors of Audiology, not a sales counter
+        </h2>
+        <LiveRule />
+        <p className="mt-[26px] max-w-[1000px] text-[21px] leading-8 text-black">
+          {officeSentence} Every hearing evaluation and hearing aid fitting is performed by a New York State&ndash;licensed Doctor of
+          Audiology (Au.D.) on our team &mdash; the same clinicians who provide diagnostic testing, real-ear verification, tinnitus care,
+          and follow-up across Westchester. Where {locationLabel} is a service area rather than a physical office, we say so plainly and
+          point you to the nearest location.
+        </p>
+        <div className="mt-9 grid gap-5 md:grid-cols-3">
+          {featured.map((provider) => (
+            <article className="flex flex-col bg-white p-6 text-black shadow-sm" key={provider.slug}>
+              <h3 className="text-[24px] font-black leading-tight text-[#003f6f]">{provider.name}</h3>
+              <p className="mt-1 text-[16px] font-bold text-[#a75e22]">{provider.role}</p>
+              <p className="mt-4 text-[17px] leading-7">{providerCredentialHighlights[provider.slug] || provider.credentials[0]}</p>
+              <Link className="mt-5 inline-block text-[16px] font-bold text-[#005a9c] underline" href={providerPath(provider)}>
+                View profile
+              </Link>
+            </article>
+          ))}
+        </div>
+        <div className="mt-8 flex flex-wrap gap-3">
+          {[
+            "NY State–licensed Au.D. clinicians",
+            "Diagnostic testing + real-ear verification",
+            "Tinnitus-certified providers (CH-TM)",
+            "Honest service-area guidance"
+          ].map((point) => (
+            <span className="inline-flex items-center gap-2 rounded-full bg-[#dbe9f3] px-4 py-2 text-[15px] font-bold text-[#005a9c]" key={point}>
+              <CheckCircle2 size={18} aria-hidden="true" /> {point}
+            </span>
+          ))}
+        </div>
+        <Link className="mt-8 inline-flex items-center gap-2 text-[18px] font-bold text-[#005a9c] underline" href={providerRootPath}>
+          Meet the full audiology team
+        </Link>
+      </div>
+    </section>
   );
 }
 
@@ -1657,6 +1926,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
         </section>
       ) : null}
       {localFlavor ? <AreaCityLocalFlavorSection city={city} flavor={localFlavor} /> : null}
+      <AreaExpertiseSection locationLabel={`${city.name}, ${city.state}`} office={office} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Services for {city.name} Patients</h2>
@@ -3900,7 +4170,7 @@ function ReviewsPage({ page }: { page: SitePage }) {
                 <figcaption className="mt-5 border-t border-[var(--line)] pt-4">
                   <span className="block font-black text-[var(--brand-dark)]">{review.author}</span>
                   <span className="text-[14px] text-[var(--muted)]">
-                    {review.tag} · via Google
+                    {review.tag} · Verified Google review
                   </span>
                 </figcaption>
               </figure>
