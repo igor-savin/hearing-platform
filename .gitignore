@@ -42,3 +42,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+_migration/
+.claude-push
+.claude-push-log
