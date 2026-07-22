@@ -2,6 +2,8 @@ import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { EarJourneyHero } from "./EarJourneyHero";
 
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
+
 type MenuLink = [label: string, href: string];
 type ProductMenuLink = [title: string, text: string, href: string, image: string];
 type NavItem = {
@@ -679,7 +681,7 @@ function faqSchema(page: SitePage, content: PageContent) {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "name": content.headline,
-    "url": `https://calhearing.com${page.path}`,
+    "url": `${SITE}${page.path}`,
     "mainEntity": content.faqs.map(([question, answer]) => ({
       "@type": "Question",
       "name": question,
@@ -691,21 +693,43 @@ function faqSchema(page: SitePage, content: PageContent) {
   };
 }
 
+function breadcrumbSchema(page: SitePage) {
+  const parts = page.path.split("/").filter(Boolean);
+  const items: Array<Record<string, unknown>> = [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+  ];
+  let acc = "";
+  parts.forEach((seg, i) => {
+    acc += `/${seg}`;
+    items.push({
+      "@type": "ListItem",
+      position: i + 2,
+      name: seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+      item: `${SITE}${acc}/`,
+    });
+  });
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items,
+  };
+}
+
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const content = buildPageContent(page);
-  const schema = faqSchema(page, content);
+  const jsonLd = [breadcrumbSchema(page), faqSchema(page, content)].filter(Boolean);
   const related = crawledPages
     .filter((item) => item.path !== page.path && getPageKind(item) === kind)
     .slice(0, 8);
 
   return (
     <>
-      {schema && (
+      {jsonLd.length > 0 && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
       <section className={`subhero subhero-${kind}`}>
