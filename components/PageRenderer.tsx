@@ -16,6 +16,7 @@ import {
 import {
   coreServiceDeepDives,
   helpServiceForPath,
+  helpServiceImages,
   helpServicePath,
   helpServices,
   howWeCanHelpRootPath,
@@ -1063,11 +1064,43 @@ type LocalHeroProps = {
   subtitle: string;
   accent: string;
   stats: string[];
+  image?: string;
+  imageAlt?: string;
   primaryHref?: string;
   primaryLabel?: string;
   secondaryHref?: string;
   secondaryLabel?: string;
 };
+
+function LocalHeroPhoto({ accent, image, imageAlt, badge, stats }: Pick<LocalHeroProps, "accent" | "image" | "imageAlt" | "badge" | "stats">) {
+  return (
+    <div className="relative min-h-[390px] overflow-hidden rounded-[28px] border border-white/25 shadow-2xl max-md:min-h-[300px]">
+      <Image
+        alt={imageAlt || ""}
+        className="object-cover"
+        fill
+        priority
+        quality={72}
+        sizes="(max-width: 768px) 100vw, 52vw"
+        src={image as string}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#00223d]/85 via-[#00223d]/25 to-transparent" />
+      <div className="absolute inset-x-6 bottom-6 flex flex-col gap-3">
+        <p className="inline-flex w-fit rounded-full bg-[#ffd45a] px-4 py-2 text-[13px] font-black uppercase tracking-[0.16em] text-[#003f6f]">
+          {badge}
+        </p>
+        <div className="grid gap-2 sm:grid-cols-3">
+          {stats.slice(0, 3).map((stat) => (
+            <div className="rounded-[14px] border border-white/25 bg-black/30 p-3 text-[14px] font-bold leading-5 text-white backdrop-blur-sm" key={stat}>
+              {stat}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="absolute bottom-0 left-0 h-2 w-full" style={{ backgroundColor: accent }} />
+    </div>
+  );
+}
 
 function LocalHeroArt({ accent, badge, title, stats }: Pick<LocalHeroProps, "accent" | "badge" | "title" | "stats">) {
   return (
@@ -1111,7 +1144,7 @@ function LocalHeroArt({ accent, badge, title, stats }: Pick<LocalHeroProps, "acc
   );
 }
 
-function LocalHero({ accent, badge, eyebrow, primaryHref, primaryLabel, secondaryHref, secondaryLabel, stats, subtitle, title }: LocalHeroProps) {
+function LocalHero({ accent, badge, eyebrow, image, imageAlt, primaryHref, primaryLabel, secondaryHref, secondaryLabel, stats, subtitle, title }: LocalHeroProps) {
   return (
     <section className="relative isolate overflow-hidden bg-[#003f6f] py-[62px] text-white">
       <div
@@ -1146,7 +1179,11 @@ function LocalHero({ accent, badge, eyebrow, primaryHref, primaryLabel, secondar
             ) : null}
           </div>
         </div>
-        <LocalHeroArt accent={accent} badge={badge} stats={stats} title={title} />
+        {image ? (
+          <LocalHeroPhoto accent={accent} badge={badge} image={image} imageAlt={imageAlt} stats={stats} />
+        ) : (
+          <LocalHeroArt accent={accent} badge={badge} stats={stats} title={title} />
+        )}
       </div>
     </section>
   );
@@ -1205,6 +1242,8 @@ function helpHeroProps(service: HelpService): LocalHeroProps {
     title: service.title,
     subtitle: service.shortDescription,
     accent: helpHeroAccents[Math.max(serviceIndex, 0) % helpHeroAccents.length],
+    image: helpServiceImages[service.slug]?.src,
+    imageAlt: helpServiceImages[service.slug]?.alt,
     stats: [
       service.whoWeHelp[0] || "Patient-centered guidance",
       service.signs[0] || "Clear next steps",

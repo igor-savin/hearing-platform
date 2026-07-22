@@ -20,6 +20,60 @@ export function helpServicePath(service: HelpService | string) {
   return `${howWeCanHelpRootPath}/${slug}`;
 }
 
+const photo = (name: string) => `/assets/blog-seed/photo-v2/${name}-photo-v2.webp`;
+
+// Distinct, owned hero photo per service so no two pages share the same imagery.
+export const helpServiceImages: Record<string, { src: string; alt: string }> = {
+  "your-hearing": {
+    src: photo("first-signs-of-hearing-loss-family-notice"),
+    alt: "Family member gently talking with an older adult about noticing hearing changes"
+  },
+  "comprehensive-hearing-assessments": {
+    src: photo("what-happens-during-comprehensive-hearing-evaluation"),
+    alt: "Audiologist reviewing a comprehensive hearing evaluation with a patient"
+  },
+  "advanced-hearing-aid-technology": {
+    src: photo("invisible-hearing-aids-pros-cons-candidacy"),
+    alt: "Close-up of a discreet modern hearing aid held between fingertips"
+  },
+  "hearing-aid-tune-ups": {
+    src: photo("how-often-professional-hearing-aid-cleaning"),
+    alt: "Hearing aids being professionally cleaned and serviced on a clinic bench"
+  },
+  "tinnitus-management": {
+    src: photo("can-hearing-aids-help-tinnitus"),
+    alt: "Person pressing a hand to their ear while managing ringing from tinnitus"
+  },
+  "cochlear-implants": {
+    src: photo("sudden-hearing-loss-why-not-wait"),
+    alt: "Patient consulting an audiologist about significant hearing loss and next steps"
+  },
+  "earwax-removal": {
+    src: photo("hearing-test-or-earwax-removal"),
+    alt: "Clinician examining a patient's ear canal before earwax removal"
+  },
+  "cognivue-cognitive-screening": {
+    src: photo("hearing-loss-cognitive-effort-listening-fatigue"),
+    alt: "Adult concentrating hard to follow a conversation, showing listening fatigue"
+  },
+  "adoption-plan": {
+    src: photo("costco-hearing-aids-vs-audiologist-care"),
+    alt: "Audiologist supporting a patient with hearing aids purchased elsewhere"
+  },
+  "lenire-for-tinnitus": {
+    src: photo("lenire-for-tinnitus-candidate-guide"),
+    alt: "Patient learning about Lenire bimodal neuromodulation for tinnitus relief"
+  },
+  "executive-assistance": {
+    src: photo("hearing-care-professionals-meetings-calls"),
+    alt: "Professional staying engaged in a busy meeting with clear hearing support"
+  },
+  "hearing-protection": {
+    src: photo("hearing-protection-power-tools-yard-work"),
+    alt: "Person wearing custom hearing protection while using loud power tools"
+  }
+};
+
 export const helpServices: HelpService[] = [
   {
     title: "Your Hearing",
