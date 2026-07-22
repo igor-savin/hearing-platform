@@ -2286,7 +2286,7 @@ function ProductsIndexPage({ page }: { page: SitePage }) {
                   className="object-contain p-8"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  src="https://calhearing.com/wp-content/uploads/2025/04/Oticon-Intent-scale.webp"
+                  src="/assets/brands/Oticon-Intent-scale.webp"
                 />
               </div>
               <h2 className="mt-7 text-[34px] font-black">Hearing Aids</h2>
@@ -2302,7 +2302,7 @@ function ProductsIndexPage({ page }: { page: SitePage }) {
                   className="object-contain p-8"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  src="https://calhearing.com/wp-content/uploads/2025/04/new1.webp"
+                  src="/assets/brands/earmolds-earplugs.webp"
                 />
               </div>
               <h2 className="mt-7 text-[34px] font-black">Ear Gear</h2>
@@ -3457,7 +3457,7 @@ function AboutTrustPage({ page }: { page: SitePage }) {
   const isDrCliff = page.path === "/dr-cliff-approved-provider";
   const drCliffLogo = "https://cdn.prod.website-files.com/5e727ccafd1fa831494b2e7b/5e727ccafd1fa815164b300c_dr%20cliff%20aud%20provider%20logo.png";
   const hearingUpGraphic = "https://evolutionhearing.com/wp-content/uploads/2022/09/HearingUp-White-BKGD.jpg";
-  const californiaHearingLogo = "https://calhearing.com/wp-content/uploads/2025/04/California-Hearing-Center-1.webp";
+  const californiaHearingLogo = "/assets/brands/California-Hearing-Center-1.webp";
   const kiraSavin = teamMembers.find((member) => member.name.includes("Kira Savin"));
   const cards = isDrCliff
     ? [

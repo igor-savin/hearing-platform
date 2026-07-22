@@ -35,7 +35,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Oticon Intent",
     subtitle: "Revolutionary user-intent sensors",
     menuDescription: "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Oticon-Intent-scale.webp",
+    image: "/assets/brands/Oticon-Intent-scale.webp",
     imageAlt: "Oticon Intent hearing aid",
     overview: [
       "Oticon Intent is a premium hearing aid family built around Oticon's BrainHearing™ approach and user-intent sensor technology. The goal is to support the way your brain naturally makes sense of sound, especially when your listening needs change from moment to moment.",
@@ -82,7 +82,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Oticon Zeal",
     subtitle: "The world's first invisible hearing aid with complete connectivity",
     menuDescription: "The world's first invisible hearing aid with complete connectivity.",
-    image: "https://calhearing.com/wp-content/uploads/2026/02/Oticon-Zeal.png",
+    image: "/assets/brands/Oticon-Zeal.png",
     imageAlt: "Oticon Zeal hearing aid",
     overview: [
       "Oticon Zeal introduces a new NXT in-the-ear category: a deeply discreet hearing aid designed to combine near-invisible placement with advanced sound processing, rechargeability, and wireless connectivity.",
@@ -123,7 +123,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Starkey Edge AI",
     subtitle: "AI-powered adaptive hearing technology",
     menuDescription: "Pioneered American innovation, cutting-edge styles with AI-powered adaptive technology.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Starkey-Edge-AI.webp",
+    image: "/assets/brands/Starkey-Edge-AI.webp",
     imageAlt: "Starkey Edge AI hearing aid",
     overview: [
       "Starkey Edge AI is designed around onboard artificial intelligence that adapts to real-world listening environments. It supports speech clarity, comfort, and everyday usability through modern hearing aid styles and wireless features.",
@@ -170,7 +170,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Phonak Lyric",
     subtitle: "Invisible extended-wear hearing aids",
     menuDescription: "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Phonak-Lyric-Hearing-Aid.webp",
+    image: "/assets/brands/Phonak-Lyric-Hearing-Aid.webp",
     imageAlt: "Phonak Lyric invisible hearing aid",
     overview: [
       "Phonak Lyric is an extended-wear hearing aid placed deep in the ear canal by a trained professional. It is designed to remain out of sight and can be worn continuously for long periods between office visits.",
@@ -217,7 +217,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Phonak Infinio",
     subtitle: "Swiss engineering with AI dual-chip technology",
     menuDescription: "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Phonak-Infinio-copper-scale.webp",
+    image: "/assets/brands/Phonak-Infinio-copper-scale.webp",
     imageAlt: "Phonak Infinio hearing aid",
     overview: [
       "Phonak Infinio hearing aids bring Phonak's newest platform approach to speech clarity, comfort, and connectivity. The platform is designed to support understanding in demanding listening environments while preserving ease of use.",
@@ -264,7 +264,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Signia IX",
     subtitle: "Rechargeable hearing aids for conversation in motion",
     menuDescription: "Innovative, rechargeable hearing aids with over a century of excellence.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Signia-IX.webp",
+    image: "/assets/brands/Signia-IX.webp",
     imageAlt: "Signia IX hearing aid",
     overview: [
       "Signia IX hearing aids are designed to support conversation clarity in dynamic environments, including moments when people are moving, turning, or speaking from different directions.",
@@ -311,7 +311,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Widex Allure",
     subtitle: "Natural sound clarity with modern processing",
     menuDescription: "Family-owned since 1956, delivering natural sound clarity with innovative technology.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/Widex-Allure.webp",
+    image: "/assets/brands/Widex-Allure.webp",
     imageAlt: "Widex Allure hearing aid",
     overview: [
       "Widex Allure is built for patients who value natural sound quality, comfortable listening, and modern hearing aid performance. Widex has long emphasized sound clarity and listening comfort across its technology.",
@@ -362,7 +362,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "ReSound Vivia",
     subtitle: "Connected hearing technology for everyday life",
     menuDescription: "Pioneering award-winning hearing solutions and connectivity advancements since 1943.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/ReSound-Vivia.webp",
+    image: "/assets/brands/ReSound-Vivia.webp",
     imageAlt: "ReSound Vivia hearing aid",
     overview: [
       "ReSound Vivia hearing aids continue ReSound's emphasis on connectivity, natural listening, and practical technology for daily communication.",
@@ -408,7 +408,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Ear Gear",
     subtitle: "Custom earplugs and earmolds",
     menuDescription: "Custom earplugs and earmolds for hearing needs.",
-    image: "https://calhearing.com/wp-content/uploads/2025/04/new1.webp",
+    image: "/assets/brands/earmolds-earplugs.webp",
     imageAlt: "Custom colorful earmolds",
     overview: [
       "Ear Gear includes custom earplugs, earmolds, and hearing protection options for patients who want protection, comfort, and a more precise fit than over-the-counter options.",

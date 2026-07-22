@@ -76,10 +76,6 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "calhearing.com"
-      },
-      {
-        protocol: "https",
         hostname: "cdn.prod.website-files.com"
       },
       {
