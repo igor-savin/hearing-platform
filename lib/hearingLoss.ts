@@ -473,6 +473,7 @@ const hubPage: SitePage = {
   related: [
     { label: "Sensorineural Hearing Loss", href: "/hearing-loss/sensorineural-hearing-loss" },
     { label: "Conductive Hearing Loss", href: "/hearing-loss/conductive-hearing-loss" },
+    { label: "Mixed Hearing Loss", href: "/hearing-loss/mixed-hearing-loss" },
     { label: "Age-Related Hearing Loss", href: "/hearing-loss/age-related-hearing-loss" },
     { label: "Noise-Induced Hearing Loss", href: "/hearing-loss/noise-induced-hearing-loss" },
     { label: "Sudden Hearing Loss", href: "/hearing-loss/sudden-hearing-loss" },
