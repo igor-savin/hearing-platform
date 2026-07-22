@@ -187,7 +187,7 @@ export function InteractiveEarHero() {
       <div className="aa-ear-hotspots" aria-label="Explore the hearing pathway">
         {stages.map((stage, index) => (
           <button
-            aria-label={`Explore ${stage.label}`}
+            aria-label={`Explore ${stage.label} (step ${index + 1})`}
             aria-pressed={activeStage === index}
             className={`aa-ear-hotspot aa-ear-hotspot-${index + 1}`}
             key={stage.label}
