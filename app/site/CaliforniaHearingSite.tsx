@@ -832,7 +832,7 @@ function HomePage() {
         <div className="product-grid">
           {products.map(([title, text, image]) => (
             <article className="product-card" key={title}>
-              <img src={image} alt="" />
+              <img src={image} alt="" loading="lazy" decoding="async" />
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
@@ -894,7 +894,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                       <div className="mega-column" key={columnIndex}>
                         {column.map(([title, text, href, image]) => (
                           <a className="mega-product" href={href} key={href}>
-                            <img src={image} alt="" />
+                            <img src={image} alt="" loading="lazy" decoding="async" />
                             <span>
                               <strong>{title}</strong>
                               <small>{text}</small>
@@ -927,7 +927,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                     ))}
                     {item.mega && hearingAidColumns.flat().map(([title, text, href, image]) => (
                       <a className="mobile-product-link" href={href} key={href}>
-                        <img src={image} alt="" />
+                        <img src={image} alt="" loading="lazy" decoding="async" />
                         <span>
                           <strong>{title}</strong>
                           <small>{text}</small>
@@ -960,7 +960,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//88+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/google-reviews.webp" alt="See our Patient Reviews" />
+            <img src="/assets/google-reviews.webp" alt="See our Patient Reviews" loading="lazy" decoding="async" />
           </a>
           <section className="footer-location">
             <h5>San Carlos</h5>
@@ -968,7 +968,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/ida.webp" alt="Explore The Ida Institute" />
+            <img src="/assets/ida.webp" alt="Explore The Ida Institute" loading="lazy" decoding="async" />
             <span>Explore the Ida Institute</span>
           </a>
         </div>
