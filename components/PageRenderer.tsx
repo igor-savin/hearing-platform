@@ -3900,7 +3900,7 @@ function ReviewsPage({ page }: { page: SitePage }) {
                 <figcaption className="mt-5 border-t border-[var(--line)] pt-4">
                   <span className="block font-black text-[var(--brand-dark)]">{review.author}</span>
                   <span className="text-[14px] text-[var(--muted)]">
-                    {review.tag} · Verified Google review
+                    {review.tag} · via Google
                   </span>
                 </figcaption>
               </figure>

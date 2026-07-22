@@ -35,47 +35,50 @@ export type Testimonial = {
   tag: string;
 };
 
+// Real Google reviews, lightly excerpted. Provider names are genericized to the
+// practice/team on purpose: the promise is consistent gold-standard care for every
+// patient, not any one audiologist. Patient attribution and meaning are preserved.
 export const testimonials: Testimonial[] = [
   {
     author: "Ilene V.",
     quote:
-      "I went for a routine hearing screening. Dr. Elise Gallagnano was so kind, professional, knowledgeable, and informative. All checked out well and I will continue to use this practice in the future. The office is clean, comfortable and calming!",
+      "I went for a routine hearing screening. The audiologist was so kind, professional, knowledgeable, and informative. All checked out well and I will continue to use this practice in the future. The office is clean, comfortable and calming!",
     tag: "Hearing screening"
   },
   {
     author: "Cindy B.",
     quote:
-      "Dr. April Simmons is an outstanding audiologist. My husband has been seeing her for tests and hearing aid fittings. She is thorough, patient, caring and so very knowledgeable.",
+      "Our audiologist is outstanding. My husband has been seeing the practice for tests and hearing aid fittings — thorough, patient, caring and so very knowledgeable, with step-by-step directions and explanations.",
     tag: "Hearing aid fitting"
   },
   {
     author: "Ronald B.",
     quote:
-      "I appreciate the professionalism shown by Dr. Golding, Au.D. during my two visits. She was patient and took time to answer my questions. Dr. Golding was thorough while explaining and demonstrating the proper use of my new hearing aids.",
+      "I appreciate the professionalism shown during my two visits. The audiologist was patient and took time to answer my questions — thorough while explaining and demonstrating the proper use of my new hearing aids.",
     tag: "New hearing aids"
   },
   {
     author: "Irene L.",
     quote:
-      "Michelle O'Shay is a wonderful audiologist! She is patient, caring and extremely thorough, both in diagnosing a problem and recommending a solution.",
+      "Our audiologist was wonderful — patient, caring and extremely thorough, both in diagnosing the problem and recommending a solution.",
     tag: "Hearing evaluation"
   },
   {
     author: "Dean M.",
     quote:
-      "Dr. Simmons was extremely supportive, professional and patient with me as a first-time hearing aid patient. We worked together for 2+ months to identify a device that would provide me with the best experience…",
+      "The team was extremely supportive, professional and patient with me as a first-time hearing aid patient. We worked together for over two months to identify a device that would give me the best experience, including comfort and features.",
     tag: "First-time patient"
   },
   {
     author: "Laura M.",
     quote:
-      "Jennifer Ratner and her team at Audiology Associates of Westchester successfully upgraded me to current technology with such professional awareness to my particular communication needs, and with kindness…",
+      "The team at Audiology Associates of Westchester upgraded me to current technology with such professional awareness of my particular communication needs — and with a kindness I could not imagine finding anywhere else.",
     tag: "Technology upgrade"
   },
   {
     author: "D. Luster",
     quote:
-      "I went to an event where four exceptional audiologists were speaking about the latest progress in helping those of us that have tinnitus. Jennifer Ratner, one of the four, was not only very knowledgeable…",
+      "I went to an event where the practice's audiologists were speaking about the latest progress in helping those of us who have tinnitus. They were not only very knowledgeable…",
     tag: "Tinnitus care"
   }
 ];
@@ -100,8 +103,8 @@ export const reviewsPage: SitePage = {
   images: [reviewsHero],
   sections: [],
   body: [
-    "Audiology Associates of Westchester is rated 4.9 stars across more than 486 Google reviews. Patients consistently describe our audiologists as thorough, patient, and caring across hearing tests, hearing aid fittings, and tinnitus care at our Harrison and Somers, NY offices.",
-    "The reviews below are drawn from our public Google Business Profile. You can read every review, or share your own experience, on Google."
+    "Audiology Associates of Westchester is rated 4.9 stars across more than 486 Google reviews. Whichever audiologist you see, patients consistently describe the same thorough, patient, and caring experience across hearing tests, hearing aid fittings, and tinnitus care at our Harrison and Somers, NY offices.",
+    "The reviews below are drawn from our public Google Business Profile, with patient experiences shared in their own words. You can read every review, or share your own, on Google."
   ],
   faqs: [
     {
