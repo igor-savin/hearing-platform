@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-your-grandchildren-how-hearing-aids-help-grandparents-connect-across-generations",
+  "hero": { "title": "Hearing Your Grandkids", "icon": "people", "accent": "aqua" },
+  "info": { "title": "Why Grandchildren Are Hardest to Hear", "subtitle": "High, soft voices fade first, and how hearing aids bring them back",
+    "rows": [
+      {"title": "Pitch, not volume", "desc": "High-frequency sounds fade before low ones"},
+      {"title": "Small voices first", "desc": "Kids speak high, soft, and fast"},
+      {"title": "TV turned up fails", "desc": "More volume can't sharpen missing sounds"},
+      {"title": "Noisy rooms", "desc": "Directional mics focus on the voice ahead"},
+      {"title": "Start with a test", "desc": "A hearing check maps which pitches slipped"}
+    ] }
+}

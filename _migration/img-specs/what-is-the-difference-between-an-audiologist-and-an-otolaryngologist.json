@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-the-difference-between-an-audiologist-and-an-otolaryngologist",
+  "hero": { "title": "Audiologist vs. ENT", "icon": "people", "accent": "gold" },
+  "info": { "title": "Audiologist or ENT: who does what", "subtitle": "Two roles that care for your ears, and when to see each",
+    "rows": [
+      {"title": "Audiologist", "desc": "Tests hearing, fits and tunes hearing aids"},
+      {"title": "Otolaryngologist (ENT)", "desc": "Physician treating ear disease and surgery"},
+      {"title": "Start with audiology", "desc": "Gradual loss, trouble in noise, hearing aids"},
+      {"title": "Start with an ENT", "desc": "Sudden loss, pain, drainage, or dizziness"},
+      {"title": "They work together", "desc": "Each refers to the other when needed"}
+    ] }
+}

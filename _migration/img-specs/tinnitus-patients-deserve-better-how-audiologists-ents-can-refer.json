@@ -1,0 +1,12 @@
+{
+  "slug": "tinnitus-patients-deserve-better-how-audiologists-ents-can-refer",
+  "hero": { "title": "Right Tinnitus Care", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Six Steps to Better Tinnitus Care", "subtitle": "How to reach real relief, one step at a time",
+    "rows": [
+      {"title": "Full Evaluation", "desc": "Test hearing and map your tinnitus in detail"},
+      {"title": "Rule Out Simple Causes", "desc": "Check earwax and medication side effects"},
+      {"title": "Know the Red Flags", "desc": "One-sided or pulsing tinnitus needs a doctor"},
+      {"title": "Evidence-Based Plan", "desc": "Sound therapy and support, not a false cure"},
+      {"title": "Treat Hearing Loss", "desc": "Hearing aids often push the ringing to the back"}
+    ] }
+}

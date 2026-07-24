@@ -1,0 +1,12 @@
+{
+  "slug": "why-i-chose-tinnitus-and-why-i-only-see-tinnitus-patients-now-dr-emily-mcmahan-aud",
+  "hero": { "title": "Focused Tinnitus Care", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "What a Tinnitus Visit Involves", "subtitle": "How focused care approaches the ringing",
+    "rows": [
+      {"title": "Your Story First", "desc": "We start with how tinnitus affects your daily life."},
+      {"title": "Thorough Evaluation", "desc": "Hearing and tinnitus testing to see what's driving it."},
+      {"title": "Clear Explanation", "desc": "Understanding the sound makes it far less frightening."},
+      {"title": "A Real Plan", "desc": "Sound therapy, counseling, and options matched to you."},
+      {"title": "Honest Expectations", "desc": "Relief and control, not empty promises of silence."}
+    ] }
+}

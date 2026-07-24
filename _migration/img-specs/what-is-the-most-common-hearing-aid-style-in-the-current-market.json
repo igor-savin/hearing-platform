@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-the-most-common-hearing-aid-style-in-the-current-market",
+  "hero": { "title": "Hearing Aid Styles", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "The Four Main Styles", "subtitle": "Where the electronics sit changes everything",
+    "rows": [
+      {"title": "Behind-the-ear (BTE)", "desc": "Body rests on the ear; strong amplification"},
+      {"title": "Receiver-in-canal (RIC)", "desc": "Most popular; discreet with a natural sound"},
+      {"title": "In-the-ear (ITE)", "desc": "Custom-molded; easy to handle, no over-ear piece"},
+      {"title": "Invisible (IIC)", "desc": "Sits deep in the canal; hardest to notice"},
+      {"title": "Choosing a style", "desc": "Depends on your test, ears, and priorities"}
+    ] }
+}

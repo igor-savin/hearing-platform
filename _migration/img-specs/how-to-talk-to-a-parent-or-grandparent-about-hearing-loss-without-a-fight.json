@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-talk-to-a-parent-or-grandparent-about-hearing-loss-without-a-fight",
+  "hero": { "title": "A Calmer Conversation", "icon": "people", "accent": "gold" },
+  "info": { "title": "Raising Hearing Loss Without a Fight", "subtitle": "Five habits that keep the conversation open",
+    "rows": [
+      {"title": "Name one moment", "desc": "Cite a specific time, not a diagnosis"},
+      {"title": "Invite, don't confront", "desc": "Ask a question instead of making a case"},
+      {"title": "Frame it as routine", "desc": "Treat a test like a regular eye exam"},
+      {"title": "One voice, not many", "desc": "Coordinate so no one feels ganged up on"},
+      {"title": "Aim for one yes", "desc": "A test now, devices only later"}
+    ] }
+}

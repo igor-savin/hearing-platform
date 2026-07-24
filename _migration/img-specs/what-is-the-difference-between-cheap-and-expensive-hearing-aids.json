@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-the-difference-between-cheap-and-expensive-hearing-aids",
+  "hero": { "title": "Cheap vs Expensive", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "What Drives Hearing Aid Cost", "subtitle": "The two things you're really paying for",
+    "rows": [
+      {"title": "Technology Tiers", "desc": "Essential to premium processing power"},
+      {"title": "Noise Performance", "desc": "Premium tiers shine in busy, layered settings"},
+      {"title": "Convenience Features", "desc": "Rechargeable batteries, Bluetooth, phone apps"},
+      {"title": "Bundled Care", "desc": "Evaluation, fitting, and follow-up visits"},
+      {"title": "OTC Trade-offs", "desc": "Lower cost, but you self-fit and self-adjust"}
+    ] }
+}

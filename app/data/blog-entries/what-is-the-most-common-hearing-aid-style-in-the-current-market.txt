@@ -1,0 +1,38 @@
+  "/what-is-the-most-common-hearing-aid-style-in-the-current-market/": {
+    kicker: "Hearing Aid Styles",
+    headline: "The Most Common Hearing Aid Styles Today",
+    metaTitle: "The Most Common Hearing Aid Styles Today",
+    variant: "product",
+    datePublished: "2025-07-05",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Hearing aids come in four main styles: behind-the-ear, receiver-in-canal, in-the-ear, and invisible. Here is how they differ and which one tends to fit best.",
+    intro: [
+      "Hearing aids come in a handful of physical styles, and the differences among them are simpler than the product names suggest. Most of what you will see today falls into four families: behind-the-ear, receiver-in-canal, in-the-ear, and the tiny invisible models that sit deep in the canal. Each one puts the electronics in a slightly different place, which changes how the device looks, how much amplification it can deliver, and how it feels to wear.",
+      "One style has pulled ahead of the rest. The receiver-in-canal design, often shortened to RIC, now fits the majority of people getting new [hearing aids](/products/hearing-aids/), because it pairs a discreet body behind the ear with a thin wire and a soft tip inside the canal. It covers a wide range of hearing losses, keeps the ear feeling reasonably open, and works with nearly every major brand.",
+      "Style is only part of the picture. The right choice also depends on your hearing test results, the shape of your ear, how steady your hands are, and the features you care about. A short [hearing evaluation](/hearing-testing/) at our San Mateo or San Carlos offices sorts most of that out before you ever look at a specific model.",
+    ],
+    takeaways: [
+      "Four styles cover most of the market: behind-the-ear, receiver-in-canal, in-the-ear, and invisible-in-canal.",
+      "Receiver-in-canal is the most widely fitted style today because it suits a broad range of hearing losses.",
+      "The best style for you depends on your hearing test, ear anatomy, dexterity, and the features you want.",
+    ],
+    sections: [
+      ["The four families of hearing aids", "It helps to sort the market by where the working parts sit. Behind-the-ear models rest on top of the ear with a tube or wire running into the canal. In-the-ear models are custom-molded to fill part or all of the outer ear. The smallest sit entirely inside the canal, out of sight. That single question, where the electronics live, drives most of the trade-offs in size, power, battery life, and how noticeable the device is."],
+      ["Behind-the-ear and receiver-in-canal", "These two share the same basic layout, with the main body resting behind the ear, but they split the electronics differently. A traditional behind-the-ear aid keeps everything in that body and sends sound down a clear tube. The receiver-in-canal design moves the speaker itself into the ear canal on a thin wire, which shrinks the visible part and tends to give a more natural sound. RIC models handle mild through fairly severe losses and are what most people picture when they imagine a modern, low-profile aid. Standard behind-the-ear units still earn their place for stronger amplification and for wearers who need extra durability. Both come in rechargeable versions and connect to phones, and you can compare how each maker approaches them among our [hearing aid options by brand](/products/hearing-aids-by-brand/)."],
+      ["In-the-ear styles", "In-the-ear aids are custom-built from an impression of your ear, so the whole device nests in the outer bowl or partway into the canal. Because there is no piece looping over the top, some people find them easier to manage alongside glasses or a mask. The larger sizes have room for bigger batteries and controls you can feel, which can matter if small buttons are a struggle. The trade-off is that filling the ear can make your own voice sound boomy at first, and these styles usually suit mild to moderately severe loss better than the most profound cases."],
+      ["Invisible and completely-in-canal models", "The smallest aids sit deep enough in the canal that they are hard to spot, which is the whole appeal for many first-time wearers. Completely-in-canal and invisible-in-canal models are custom-fit and use the ear's own shape to help direct sound. The catch is physical: less room means smaller batteries, fewer manual controls, and limited space for the antennas that drive wireless streaming, so features are thinner than on a RIC. Mild to moderate loss is their sweet spot, and narrow canals or heavy earwax can rule them out. Routine [cleaning and repair](/services/hearing-aid-repair/) matters more with these, since moisture and wax reach the electronics more easily."],
+      ["Matching a style to your ears", "Choosing well comes down to a few practical questions rather than one universal winner. How much amplification does your audiogram call for? How steady are your hands for a small device? Do you want rechargeable batteries, phone streaming, or the most discreet shell possible? The answers usually point clearly toward one or two styles. This is where a proper [hearing aid fitting](/services/hearing-aid-fitting/) earns its keep, and many older adults land on RIC models for their balance of comfort and simple handling. If that describes you or a family member, our notes on [hearing aids for seniors](/hearing-aids-for-seniors/) go a little deeper."],
+    ],
+    bullets: ["Behind-the-ear (BTE)", "Receiver-in-canal (RIC)", "In-the-ear (ITE)", "Invisible (IIC)", "Rechargeable options", "Bluetooth streaming"],
+    faqs: [
+      ["Which hearing aid style is the most popular?", "The receiver-in-canal style leads by a wide margin right now. It suits most degrees of hearing loss, keeps the visible part small, and supports the streaming and rechargeable features people ask for. That combination is why it is the default starting point in a lot of fittings, including many of ours."],
+      ["Are invisible hearing aids as good as larger ones?", "For the right ear and the right hearing loss, they perform well, but the tiny size means fewer features and smaller batteries. If discretion matters most and your loss is mild to moderate, they can be an excellent fit. For stronger amplification or robust wireless streaming, a slightly larger style usually serves you better."],
+      ["Can I switch to a different style later?", "In most cases, yes. Behind-the-ear and receiver-in-canal aids use standard parts that are simple to swap or refit, while custom in-the-ear models may need a fresh impression. If your hearing changes or a style is not working out, bring it up with our [team](/about-us/) and we can talk through the options."],
+    ],
+    image: "/assets/blog/what-is-the-most-common-hearing-aid-style-in-the-current-market-1.svg",
+    imageLabel: "The main hearing aid styles, shown side by side",
+    image2: "/assets/blog/what-is-the-most-common-hearing-aid-style-in-the-current-market-2.svg",
+    image2Label: "How the four styles compare on size, power, and visibility",
+    image2Caption: "RIC leads today, but the right style depends on your ears and your priorities.",
+  },

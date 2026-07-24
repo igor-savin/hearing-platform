@@ -1,0 +1,12 @@
+{
+  "slug": "earwax-vs-hearing-loss-when-a-simple-cleaning-solves-the-problem",
+  "hero": { "title": "Wax vs Hearing Loss", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Wax or Hearing Loss?", "subtitle": "How to tell, and when to get help.",
+    "rows": [
+      {"title": "Sudden and one-sided", "desc": "Wax often blocks one ear overnight"},
+      {"title": "Gradual in both ears", "desc": "Points to nerve-related hearing loss"},
+      {"title": "Skip the cotton swabs", "desc": "They push wax into a firm plug"},
+      {"title": "Soften, then rinse", "desc": "Drops loosen mild buildup over days"},
+      {"title": "Test if it lingers", "desc": "Muffling that stays needs a hearing test"}
+    ] }
+}
