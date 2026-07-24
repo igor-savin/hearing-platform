@@ -122,7 +122,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Burlingame sits just north of our San Mateo office, close enough that many patients are in and out on a lunch break. Known as the “City of Trees” for its eucalyptus-lined avenues, Burlingame runs right up to San Francisco International Airport — which is exactly why hearing matters here.",
     hook: [
       "Living under SFO's flight path and what it means for your hearing",
-      "Much of Burlingame sits beneath SFO's arrival and departure corridors, and residents near the Bayfront or Broadway know the sound of jets overhead. Repeated loud noise is a real contributor to noise-induced hearing loss over time. If you have spent years under the flight path, or work at or near the airport, a baseline hearing evaluation is worth doing even before you notice a problem — hearing loss from noise is gradual and easy to miss until conversations start slipping.",
+      "Much of Burlingame sits beneath SFO's arrival and departure corridors, and residents near the Bayfront or Broadway know the sound of jets overhead. Everyday overflight noise is usually more nuisance than hazard — but occupational exposure is different. If you work at or near the airport, in the Bayfront hotels, or around ground equipment, years on the job can quietly add up to noise-induced hearing loss. It is gradual and easy to miss until conversations start slipping, so a baseline hearing test — and custom protection where it makes sense — is simple prevention.",
     ],
     motif: "airport",
     localScene: [
@@ -134,9 +134,9 @@ export const cityProfiles: Record<string, CityProfile> = {
     landmarks:
       "We are an easy drive from Burlingame Avenue, Broadway, the Mills-Peninsula area, and the Bayfront hotels, all within roughly 10 minutes of the office.",
     faqs: [
+      ["Can airport and traffic noise really affect my hearing?", "Occupational noise can. Long-term exposure to loud sound — including work around aircraft, or heavy freeway noise — can contribute to permanent, gradual hearing loss. A baseline hearing test establishes where you stand and helps track any change over time."],
+      ["Do you offer custom hearing protection for noisy environments?", "We do. Custom-molded hearing protection is popular with patients who work near the airport, ride motorcycles, or attend loud events. It protects hearing while keeping sound natural."],
       ["How far is your office from Burlingame?", "Our San Mateo office is about 10 minutes from most of Burlingame, just south on El Camino Real or the 101. Call 650-342-9449 to schedule."],
-      ["Can airport and traffic noise really affect my hearing?", "Yes. Long-term exposure to loud noise — including aircraft and freeway noise — can contribute to permanent, gradual hearing loss. A baseline hearing test establishes where you stand and helps track any change over time."],
-      ["Do you offer custom hearing protection for noisy environments?", "We do. Custom-molded hearing protection is popular with patients who live or work near the airport, ride motorcycles, or attend loud events. It protects hearing while keeping sound natural."],
     ],
   },
   "millbrae": {
@@ -150,8 +150,8 @@ export const cityProfiles: Record<string, CityProfile> = {
     lede:
       "Millbrae sits immediately south of San Francisco International Airport and is one of the Peninsula's great transit hubs, where BART and Caltrain meet. That location makes it convenient — and it also puts Millbrae squarely under the busiest part of SFO's flight path.",
     hook: [
-      "Airport-adjacent living and noise-induced hearing loss",
-      "Few Peninsula cities sit as close to SFO as Millbrae. Residents in the neighborhoods nearest the airport, and the many people who work in airport operations, hospitality, and ground transportation, can accumulate significant noise exposure over the years. Noise-induced hearing loss builds quietly and is permanent, but it is also highly preventable. A baseline evaluation plus custom hearing protection is one of the smartest things an airport-adjacent resident can do for long-term hearing health.",
+      "A transit hub next door to SFO — and who that puts at risk",
+      "Few Peninsula cities sit as close to SFO as Millbrae, and few are as defined by movement — trains, buses, and airport traffic all day. The people most exposed to real noise here are those who work the airport and its supply chain: operations, hospitality, ramp and ground transportation. For them, years on the job can add up to permanent noise-induced hearing loss, which is why a baseline evaluation and custom hearing protection are among the smartest steps an airport worker can take. For everyone else, it's simply a good place to know your numbers.",
     ],
     motif: "transit",
     localScene: [
@@ -278,9 +278,9 @@ export const cityProfiles: Record<string, CityProfile> = {
     landmarks:
       "We are a short drive from Atherton's Lindenwood, West Atherton, and Lloyden Park areas, and from the Menlo-Atherton corridor along El Camino Real and Marsh Road.",
     faqs: [
-      ["How far is the audiologist from Atherton?", "Our San Carlos office is about 12–15 minutes from Atherton via the 101 or El Camino Real. Call 650-342-9449 to arrange a visit."],
       ["Do you offer truly invisible hearing aids?", "We fit several invisible and near-invisible styles, including deep-canal options. The right choice depends on your ear anatomy and hearing needs, which we assess during your evaluation."],
-      ["Can I see a tinnitus specialist near Atherton?", "Yes. Dr. Emily McMahan, AuD, leads our tinnitus care, including Lenire treatment, and sees patients from Atherton and throughout the mid-Peninsula at our San Carlos office."],
+      ["Can I see a tinnitus specialist near Atherton?", "Yes. Dr. Emily McMahan, AuD, focuses on tinnitus care, including Lenire, and sees patients from Atherton and throughout the mid-Peninsula at our San Carlos office."],
+      ["How far is the audiologist from Atherton?", "Our San Carlos office is about 12–15 minutes from Atherton via the 101 or El Camino Real. Call 650-342-9449 to arrange a visit."],
     ],
   },
   "menlo-park": {
@@ -307,8 +307,8 @@ export const cityProfiles: Record<string, CityProfile> = {
     landmarks:
       "We are an easy trip from downtown Menlo Park and Santa Cruz Avenue, the Sharon Heights and Allied Arts areas, and the Sand Hill Road corridor.",
     faqs: [
-      ["Which office serves Menlo Park?", "Our San Carlos office is closest, about 12 minutes from most of Menlo Park via the 101 or El Camino Real. Call 650-342-9449 to schedule."],
       ["I struggle to hear in meetings and restaurants — can you help?", "Yes. Difficulty in noise is one of the most common reasons patients come in. We test speech-in-noise, then select and precisely verify technology for those specific situations, which usually helps far more than volume alone."],
+      ["Which office serves Menlo Park?", "Our San Carlos office is closest, about 12 minutes from most of Menlo Park via the 101 or El Camino Real. Call 650-342-9449 to schedule."],
     ],
   },
 
@@ -320,7 +320,7 @@ export const cityProfiles: Record<string, CityProfile> = {
     county: "Napa County",
     region: "wine-country",
     nearestOffice: "San Mateo",
-    approxDrive: "roughly 60–90 minutes south, depending on where in the county you start",
+    approxDrive: "roughly 60–90 minutes each way, depending on where in the county you start",
     distanceTier: "far",
     geo: { lat: 38.2975, lng: -122.2869 },
     lede:

@@ -424,6 +424,81 @@ function titleCaseSlug(slug: string) {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 }
 
+// Stable per-slug hash for deterministic (build-safe) content rotation.
+function hashSlug(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+// Service-specific, city-flavored FAQs for deep /areas-we-serve/{city}/{service}
+// pages, so they don't reuse the parent city's FAQ verbatim.
+function serviceFaqs(serviceSlug: string, name: string, office: string): [string, string][] {
+  const at = `at our ${office} office`;
+  const generic: [string, string][] = [
+    [`Where do ${name} patients go for ${(AREA_SERVICE_INFO[serviceSlug]?.label || "care").toLowerCase()}?`,
+     `California Hearing Center serves ${name} ${at}. Call 650-342-9449 to schedule or ask which office is most convenient.`],
+  ];
+  switch (serviceSlug) {
+    case "dr-emily-mcmahan":
+      return [
+        [`Does Dr. Emily McMahan see patients from ${name}?`,
+         `Yes. Dr. Emily McMahan, AuD, sees patients from ${name} ${at}. Her practice is focused on tinnitus care. [Read more about Dr. McMahan](/about-us/emily-mcmahan/).`],
+        ["What does Dr. McMahan focus on?",
+         "Dr. McMahan has built her work around tinnitus — evaluation, sound therapy, counseling, and [Lenire](/tinnitus/) — spending more time on the details general appointments often skip."],
+        ["How do I book with Dr. McMahan specifically?",
+         "Call 650-342-9449 and ask for a tinnitus consultation. We'll match you with the right appointment and location."],
+      ];
+    case "lenire":
+    case "tinnitus-audiologist":
+    case "tinnitus-therapy":
+      return [
+        [`Can I get ${AREA_SERVICE_INFO[serviceSlug]?.label.toLowerCase()} near ${name}?`,
+         `Yes. We provide comprehensive tinnitus care, including [Lenire](/tinnitus/), for ${name} patients ${at}.`],
+        ["Is tinnitus treatment worth it if the ringing is mild?",
+         "Often, yes. Even mild tinnitus can affect sleep and focus. A proper evaluation clarifies the cause and whether sound therapy, counseling, or Lenire would help. [Learn what tinnitus is](/tinnitus/what-is-tinnitus/)."],
+        ["Do you rule out medical causes first?",
+         "Yes. Tinnitus can occasionally signal something treatable, so we evaluate before recommending a plan and refer for medical follow-up when the findings warrant it."],
+      ];
+    case "hearing-aids":
+    case "invisible-hearing-aids":
+    case "rechargeable-hearing-aids":
+    case "bluetooth-hearing-aids":
+    case "hearing-aid-fitting":
+      return [
+        [`Where do ${name} patients get hearing aids fit?`,
+         `California Hearing Center fits and verifies hearing aids for ${name} patients ${at}, using [real-ear measurement](/hearing-aid-fitting/) so the devices match a validated target — not a factory default.`],
+        ["Are the most expensive hearing aids always the best?",
+         "No. Higher tiers help in complex noise, but the right choice depends on your hearing test, ear anatomy, lifestyle, and budget. We recommend honestly, not by price."],
+        ["Can I try them in real environments?",
+         "Yes. Follow-up visits fine-tune the fit for the restaurants, meetings, and rooms you actually spend time in, which matters far more than the initial quiet-booth setting."],
+      ];
+    case "earwax-removal":
+      return [
+        [`Can I get earwax removal near ${name}?`,
+         `Yes. We provide safe, professional earwax removal for ${name} patients ${at} — gentler and safer than cotton swabs or at-home kits.`],
+        ["Is earwax removal covered or quick?",
+         "Most visits are quick, and it's a good time to check the health of the ear canal and eardrum. Call 650-342-9449 with coverage questions."],
+      ];
+    case "custom-hearing-protection":
+      return [
+        [`Do you make custom hearing protection for ${name} patients?`,
+         `Yes. We take ear impressions and fit custom-molded protection ${at} for musicians, shooters, motorcyclists, and anyone regularly around loud sound.`],
+        ["Why not just use foam earplugs?",
+         "Custom protection fits precisely and can keep sound natural rather than muffled, so you protect your hearing without losing the music, speech, or situational awareness you need."],
+      ];
+    case "hearing-test":
+      return [
+        [`Where can ${name} residents get a hearing test?`,
+         `California Hearing Center provides full diagnostic [hearing evaluations](/hearing-testing/) for ${name} patients ${at}, with a clear explanation of what the results mean.`],
+        ["How long does a hearing test take?",
+         "A first evaluation typically takes under an hour and includes case history, testing, speech understanding, an ear-health check, and a discussion of next steps."],
+      ];
+    default:
+      return generic;
+  }
+}
+
 // Compose a genuinely city-specific PageContent from a profile (and, on deep
 // pages, a service). Uniqueness lives in the profile's written fragments, not in
 // slotted templates, so no two cities read alike.
@@ -447,7 +522,7 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
 
   const gettingHere: [string, string] = [
     `Getting to us from ${name}`,
-    `Our ${office} office is ${profile.approxDrive}. ${profile.landmarks ?? ""} We keep visits efficient and can help you plan around parking and timing when you call 650-342-9449.`.replace(/\s+/g, " ").trim(),
+    `${cap(profile.approxDrive.replace(/\.$/, ""))}. ${profile.landmarks ?? ""} We keep visits efficient and can help you plan around parking and timing when you call 650-342-9449.`.replace(/\s+/g, " ").trim(),
   ];
 
   // Order: signature hook, then the local-scene detail, then directions.
@@ -474,12 +549,29 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
       ];
   const bullets = bulletLinks.map(([label]) => label);
 
+  const driveShort = profile.approxDrive.split(" from our ")[0].split(",")[0].trim();
+  // Second/third "At a glance" bullets: rotate deterministically per city so the
+  // list isn't byte-identical across pages (reviewers flagged this as a tell).
+  const pick = <T,>(arr: T[]) => arr[hashSlug(citySlugFromPath(page.path) || name) % arr.length];
+  const trustBullet = pick([
+    "You see the same audiologist each visit — someone who knows your history, not a rotating counter.",
+    "Every fitting is verified with real-ear measurement, so the devices are proven to hit target for your hearing.",
+    "Recommendations are honest and independent — matched to your needs and budget, not to a sales quota.",
+    "Care continues after the first visit: adjustments, cleanings, and follow-up are part of the plan.",
+  ]);
+  const scopeBullet = pick([
+    "One practice for testing, hearing aids, tinnitus and Lenire, repairs, earwax removal, and hearing protection.",
+    "From first hearing test to advanced tinnitus treatment, the full range of care is under one roof.",
+    "Diagnostics, modern hearing aids, tinnitus care, and repairs — without navigating a big hospital system.",
+  ]);
   const takeaways = [
     service
       ? `${name} patients can get ${service.label.toLowerCase().replace(/,.*/, "")} at California Hearing Center's ${office} office.`
-      : `California Hearing Center serves ${name} from our ${office} office (${profile.approxDrive.replace(/^about |^roughly |^right |^here.*?, /, "")}).`,
-    "Care is delivered by the same audiology team each visit, with real-ear verification and honest technology guidance.",
-    "We handle the full range: testing, hearing aids, tinnitus care, repairs, earwax removal, and hearing protection.",
+      : profile.distanceTier === "far"
+        ? `Patients travel to California Hearing Center from ${name} for specialized tinnitus and hearing care; our offices are in San Mateo and San Carlos.`
+        : `California Hearing Center serves ${name} from our ${office} office — ${driveShort}.`,
+    trustBullet,
+    scopeBullet,
   ];
 
   const citySlug = citySlugFromPath(page.path) || "";
@@ -491,7 +583,7 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     bullets,
     bulletLinks,
     takeaways,
-    faqs: profile.faqs,
+    faqs: serviceSlug ? serviceFaqs(serviceSlug, name, office) : profile.faqs,
     image: `/assets/areas/${citySlug}.svg`,
     imageLabel: service ? `${service.label} — ${name}` : `Hearing care for ${name}`,
     imageAlt: `California Hearing Center — audiology and hearing care serving ${name}, ${profile.county}`,
@@ -514,12 +606,16 @@ export function areaMetaDescription(path: string): string | null {
   if (!profile) return null;
   const serviceSlug = areaServiceSlugFromPath(path);
   const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  const cta = " Call 650-342-9449.";
   const lead = service
-    ? `${service.label} for ${profile.name} patients at California Hearing Center — audiologists in San Mateo & San Carlos.`
+    ? `${service.label} for ${profile.name} patients at California Hearing Center, audiologists in San Mateo & San Carlos.`
     : profile.distanceTier === "far"
       ? `Patients travel from ${profile.name} to California Hearing Center in San Mateo & San Carlos for specialized tinnitus and hearing care.`
-      : `Hearing tests, hearing aids, and tinnitus care for ${profile.name} at California Hearing Center, ${profile.approxDrive.replace(/\.$/, "")}.`;
-  return `${lead} Call 650-342-9449.`.replace(/\s+/g, " ").slice(0, 160);
+      : `Hearing tests, hearing aids & tinnitus care for ${profile.name} — California Hearing Center, ${profile.nearestOffice}.`;
+  // Keep the phone/CTA intact: trim the lead at a word boundary so lead + CTA <= 158.
+  const budget = 158 - cta.length;
+  const clean = lead.length <= budget ? lead : lead.slice(0, lead.lastIndexOf(" ", budget)).replace(/[,—\-\s]+$/, "") + ".";
+  return (clean + cta).replace(/\s+/g, " ").trim();
 }
 
 // "We serve this city" as machine-readable local relevance, tied to the real org.
@@ -1000,7 +1096,7 @@ const MONTHS = ["January", "February", "March", "April", "May", "June", "July", 
 function faqHeading(path: string, topic: string): string {
   const variants = [
     `Questions patients ask us`,
-    `Common questions about ${topic.toLowerCase()}`,
+    `Common questions about ${topic}`,
     `${topic}: questions we hear a lot`,
     `Your questions, answered`,
     `What patients often want to know`,
