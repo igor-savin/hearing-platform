@@ -1059,6 +1059,98 @@ function HomePage() {
   );
 }
 
+// ---- Blog landing page ----
+const BLOG_CATEGORY_ORDER = [
+  "Tinnitus & Sound Sensitivity",
+  "Hearing Aids & Technology",
+  "Costs, Insurance & Buying",
+  "Hearing Tests & Audiology",
+  "Ear Care & Earwax",
+  "Prevention & Protection",
+  "Families & Seniors",
+  "Hearing Loss & Your Health",
+];
+
+function blogCategory(slug: string, post: PageContent): string {
+  const s = `${slug} ${(post.kicker || "").toLowerCase()}`;
+  if (/tinnitus|ringing|hyperacusis|buzz/.test(s)) return "Tinnitus & Sound Sensitivity";
+  if (/cost|price|insuranc|medicare|medi-cal|afford|deduct|-pay|charge|money|ripped|negotiate|tax|warrant/.test(s)) return "Costs, Insurance & Buying";
+  if (/earwax|ear-wax|itch|water-out|ear-pressure|-clean/.test(s)) return "Ear Care & Earwax";
+  if (/protect|noise|earbud|concert|60-60|musician|hunting|preserve/.test(s)) return "Prevention & Protection";
+  if (/senior|grandparent|grandchild|loved-one|parent|famil|isolation|communicate|accommodate|stigma|pretend/.test(s)) return "Families & Seniors";
+  if (/hearing-test|audiogram|audiologist|otolaryngolog|real-ear|word-recognition|diagnos|checked|ent-first|red-flag|balance|vertigo|dizz/.test(s)) return "Hearing Tests & Audiology";
+  if (/hearing-aid|device|rechargeable|invisible|bluetooth|otc|over-the-counter|-style|whistle|repair|fitting|feedback|auracast|waterproof|occlusion|monitoring|lyric|iic|phone|zoom|smart|ai-power|drawer|new-rule|highest-rated|lifespan|adjust|choose/.test(s)) return "Hearing Aids & Technology";
+  return "Hearing Loss & Your Health";
+}
+
+function anchorId(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+function blogExcerpt(post: PageContent): string {
+  if (post.metaDescription) return post.metaDescription;
+  return plain(post.intro?.[0] || "").replace(/\s+/g, " ").trim().slice(0, 150);
+}
+
+function BlogIndex() {
+  const posts = Object.entries(blogPosts)
+    .map(([path, post]) => ({ path, post, slug: path.replace(/\//g, "") }))
+    .sort((a, b) => (b.post.datePublished || "").localeCompare(a.post.datePublished || ""));
+  const groups: Record<string, typeof posts> = {};
+  for (const item of posts) {
+    const cat = blogCategory(item.slug, item.post);
+    (groups[cat] = groups[cat] || []).push(item);
+  }
+  const categories = BLOG_CATEGORY_ORDER.filter((c) => groups[c]?.length);
+
+  return (
+    <>
+      <section className="blog-hero" id="top">
+        <div className="container">
+          <p className="eyebrow">California Hearing Center</p>
+          <h1>Hearing Health Resources</h1>
+          <p className="blog-hero-sub">
+            Clear, practical guidance on hearing loss, tinnitus, hearing aids, and ear care from our San Mateo and San Carlos audiologists — {posts.length} articles and counting.
+          </p>
+          <div className="blog-topic-pills">
+            {categories.map((c) => (
+              <a href={`#${anchorId(c)}`} key={c}>{c}<span className="pill-count">{groups[c].length}</span></a>
+            ))}
+          </div>
+        </div>
+      </section>
+      {categories.map((category) => (
+        <section className="blog-collection" id={anchorId(category)} key={category}>
+          <div className="container">
+            <div className="blog-collection-head">
+              <div>
+                <p className="section-kicker">Resource collection</p>
+                <h2>{category}</h2>
+              </div>
+              <a className="back-to-topics" href="#top">↑ Back to topics</a>
+            </div>
+            <div className="blog-card-grid">
+              {groups[category].map(({ path, post }) => (
+                <a className="blog-card" href={path} key={path}>
+                  <div className="blog-card-img">
+                    <img src={post.image} alt={post.imageLabel || ""} loading="lazy" decoding="async" />
+                  </div>
+                  <div className="blog-card-body">
+                    <p className="blog-card-kicker">{post.kicker}</p>
+                    <h3>{post.headline}</h3>
+                    <p className="blog-card-excerpt">{blogExcerpt(post)}</p>
+                    <span className="blog-card-read">Read article →</span>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      ))}
+    </>
+  );
+}
+
 export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
   return (
     <main>
@@ -1142,7 +1234,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
         </details>
         <a className="schedule" href={scheduleUrl} target="_blank" rel="noopener noreferrer">Schedule Now</a>
       </header>
-      {page ? <InnerPage page={page} /> : <HomePage />}
+      {page?.path === "/the-blog/" ? <BlogIndex /> : page ? <InnerPage page={page} /> : <HomePage />}
       <section className="appointment">
         <div>
           <p className="section-kicker">Set up your free hearing consultation</p>
