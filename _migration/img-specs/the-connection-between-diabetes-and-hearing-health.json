@@ -1,0 +1,12 @@
+{
+  "slug": "the-connection-between-diabetes-and-hearing-health",
+  "hero": { "title": "Diabetes & Hearing", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Diabetes and Your Hearing", "subtitle": "How the two connect, and what to do about it",
+    "rows": [
+      {"title": "Small blood vessels", "desc": "High blood sugar can affect inner-ear circulation"},
+      {"title": "Delicate nerves", "desc": "The same damage that harms eyes and kidneys"},
+      {"title": "Twice as common", "desc": "Hearing loss occurs more often with diabetes"},
+      {"title": "Set a baseline", "desc": "A first test makes future changes easy to spot"},
+      {"title": "Manage together", "desc": "Control blood sugar and monitor hearing yearly"}
+    ] }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "could-the-severity-of-tinnitus-originate-in-the-brain",
+  "hero": { "title": "Tinnitus & the Brain", "icon": "brain", "accent": "gold" },
+  "info": { "title": "Could Tinnitus Start in the Brain?", "subtitle": "Why felt severity is about more than the ear",
+    "rows": [
+      {"title": "Ear often starts it", "desc": "Hearing changes usually set off the first signal"},
+      {"title": "Brain can sustain it", "desc": "Auditory pathways keep the sound present"},
+      {"title": "Loud vs. distressing", "desc": "Felt burden differs from measured loudness"},
+      {"title": "Stress turns it up", "desc": "Attention and alarm systems amplify the signal"},
+      {"title": "Retraining can help", "desc": "Sound therapy shifts how the brain responds"}
+    ] }
+}

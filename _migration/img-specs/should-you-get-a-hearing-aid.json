@@ -1,0 +1,12 @@
+{
+  "slug": "should-you-get-a-hearing-aid",
+  "hero": { "title": "Hearing Aid?", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Do You Need a Hearing Aid?", "subtitle": "Signs, timing, and how to decide",
+    "rows": [
+      {"title": "Clarity, not volume", "desc": "You hear talking but can't sort the words"},
+      {"title": "Noise wears you out", "desc": "Restaurants and groups get exhausting fast"},
+      {"title": "Others notice first", "desc": "TV volume and 'what?' keep creeping up"},
+      {"title": "Wait or act", "desc": "Slight loss can watch; strain means act now"},
+      {"title": "Get a hearing test", "desc": "Under an hour, painless, gives a clear answer"}
+    ] }
+}

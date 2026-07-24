@@ -1,0 +1,12 @@
+{
+  "slug": "protect-your-heart-and-preserve-hearing",
+  "hero": { "title": "Heart & Hearing", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Six Habits, Two Payoffs", "subtitle": "Small daily choices that support both your heart and your hearing.",
+    "rows": [
+      {"title": "Stay active", "desc": "Exercise supports blood flow to the inner ear"},
+      {"title": "Watch blood pressure", "desc": "Keeping it in range protects delicate hair cells"},
+      {"title": "Mind cholesterol", "desc": "Healthy vessels carry oxygen to your ears"},
+      {"title": "Eat for your vessels", "desc": "Vegetable-rich meals support circulation"},
+      {"title": "Skip tobacco", "desc": "Smoking narrows the vessels that feed hearing"}
+    ] }
+}

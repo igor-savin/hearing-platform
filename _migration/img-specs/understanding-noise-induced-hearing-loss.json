@@ -1,0 +1,12 @@
+{
+  "slug": "understanding-noise-induced-hearing-loss",
+  "hero": { "title": "Noise-Induced Loss", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Protecting Against Noise Damage", "subtitle": "Five ways to keep loud sound from costing you your hearing",
+    "rows": [
+      {"title": "Know the threshold", "desc": "Sustained sound above 85 dB starts to harm hearing"},
+      {"title": "Limit exposure time", "desc": "The longer the noise lasts, the more damage it does"},
+      {"title": "Wear custom plugs", "desc": "Molded protection lowers volume without muffling"},
+      {"title": "Watch your earbuds", "desc": "Keep volume near half and take listening breaks"},
+      {"title": "Get a baseline test", "desc": "A hearing exam reveals noise damage early"}
+    ] }
+}

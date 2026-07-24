@@ -1,0 +1,12 @@
+{
+  "slug": "how-do-medications-affect-hearing-health",
+  "hero": { "title": "Medications & Hearing", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Medications and Ototoxicity", "subtitle": "How certain drugs can affect your ears",
+    "rows": [
+      {"title": "What ototoxic means", "desc": "Drugs that can harm the inner ear or nerves"},
+      {"title": "Common culprits", "desc": "Some antibiotics, chemo drugs, and diuretics"},
+      {"title": "Warning signs", "desc": "Ringing, muffled sound, or unsteady balance"},
+      {"title": "Do not stop alone", "desc": "Talk to your prescriber before any change"},
+      {"title": "Get a baseline test", "desc": "Check hearing before and during treatment"}
+    ] }
+}
