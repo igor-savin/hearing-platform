@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     description: "See how sound becomes connection.",
     images: ["/og.jpg"],
   },
+  // Google Search Console ownership verification. Set GOOGLE_SITE_VERIFICATION
+  // in the environment (Vercel project env var) to emit the meta tag.
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+    : {}),
 };
 
 const organizationSchema = {
