@@ -833,11 +833,38 @@ function fmtDate(iso?: string): string {
   return `${MONTHS[m - 1]} ${d}, ${y}`;
 }
 
+// Blog-to-blog internal linking: pick the most topically related enriched posts.
+function relatedBlogPosts(path: string, limit = 3): Array<{ path: string; headline: string }> {
+  const self = blogPosts[path];
+  if (!self) return [];
+  const words = (s: string) => new Set((s.toLowerCase().match(/[a-z]{4,}/g) || []).filter((w) => !STOPWORDS.has(w)));
+  const linksIn = (p: PageContent) =>
+    new Set(([...(p.intro || []), ...(p.sections || []).map((s) => s[1]), ...(p.faqs || []).map((f) => f[1])].join(" ").match(/\]\((\/[a-z][a-z/-]*)\)/g) || []));
+  const selfWords = words(self.headline);
+  const selfLinks = linksIn(self);
+  return Object.entries(blogPosts)
+    .filter(([p]) => p !== path)
+    .map(([p, post]) => {
+      let score = [...words(post.headline)].filter((w) => selfWords.has(w)).length * 2;
+      if (post.variant && post.variant === self.variant) score += 1;
+      score += [...linksIn(post)].filter((l) => selfLinks.has(l)).length;
+      return { path: p, headline: post.headline, score };
+    })
+    .filter((r) => r.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit);
+}
+
+const STOPWORDS = new Set(
+  "hearing loss your with what should does about from that this have when will they them your care help".split(" ")
+);
+
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
+  const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
   const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content)].filter(Boolean);
   const related = crawledPages
     .filter((item) => item.path !== page.path && getPageKind(item) === kind)
@@ -919,6 +946,16 @@ function InnerPage({ page }: { page: SitePage }) {
                   <p dangerouslySetInnerHTML={{ __html: linkify(answer) }} />
                 </details>
               ))}
+            </section>
+          )}
+          {relatedPosts.length > 0 && (
+            <section className="related-articles">
+              <p className="section-kicker">Related reading</p>
+              <ul>
+                {relatedPosts.map((r) => (
+                  <li key={r.path}><a href={r.path}>{r.headline}</a></li>
+                ))}
+              </ul>
             </section>
           )}
         </article>

@@ -41,8 +41,11 @@ const organizationSchema = {
   department: [
     {
       "@type": "MedicalClinic",
+      "@id": `${siteUrl}/#san-mateo`,
       name: "California Hearing Center \u2014 San Mateo",
       telephone: "+1-650-342-9449",
+      medicalSpecialty: "Audiology",
+      priceRange: "$$",
       address: {
         "@type": "PostalAddress",
         streetAddress: "88 N. San Mateo Drive",
@@ -51,11 +54,21 @@ const organizationSchema = {
         postalCode: "94401",
         addressCountry: "US",
       },
+      // Approximate coordinates for the street address \u2014 verify against the GBP pin.
+      geo: { "@type": "GeoCoordinates", latitude: 37.5686, longitude: -122.3245 },
+      hasMap: "https://www.google.com/maps/search/?api=1&query=88+N+San+Mateo+Drive+San+Mateo+CA+94401",
+      openingHoursSpecification: [
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "17:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "09:00", closes: "15:00" },
+      ],
     },
     {
       "@type": "MedicalClinic",
+      "@id": `${siteUrl}/#san-carlos`,
       name: "California Hearing Center \u2014 San Carlos",
       telephone: "+1-650-342-9449",
+      medicalSpecialty: "Audiology",
+      priceRange: "$$",
       address: {
         "@type": "PostalAddress",
         streetAddress: "1008 Laurel Street",
@@ -64,12 +77,34 @@ const organizationSchema = {
         postalCode: "94070",
         addressCountry: "US",
       },
+      // Approximate coordinates for the street address \u2014 verify against the GBP pin.
+      geo: { "@type": "GeoCoordinates", latitude: 37.5011, longitude: -122.2607 },
+      hasMap: "https://www.google.com/maps/search/?api=1&query=1008+Laurel+Street+San+Carlos+CA+94070",
+      // Split (lunch-break) hours.
+      openingHoursSpecification: [
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday"], opens: "09:00", closes: "13:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday"], opens: "14:00", closes: "17:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "09:00", closes: "12:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "13:00", closes: "17:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "09:00", closes: "12:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "12:30", closes: "15:00" },
+      ],
     },
   ],
   areaServed: [
     { "@type": "City", name: "San Mateo" },
     { "@type": "City", name: "San Carlos" },
     { "@type": "AdministrativeArea", name: "San Francisco Bay Area" },
+  ],
+  // Google Business Profile listings for the two offices.
+  sameAs: [
+    "https://www.google.com/search?q=California+Hearing+Center&stick=H4sIAAAAAAAAAONgU1I1qLAwsEizTDU3MbIwNEixMEuzMqhISTM3M05NNk5KNTC0NLAwXsQq6ZyYk5mWX5SXmajgkZpYlJmXruCcmleSWgQAfY_KOkUAAAA",
+    "https://www.google.com/search?q=California+Hearing+Center&stick=H4sIAAAAAAAAAONgU1I1qLAwsEhLNDK0TDY2TrRINE-zMqgwT01NSTJLNk9JMk42SUlLWcQq6ZyYk5mWX5SXmajgkZpYlJmXruCcmleSWgQAW8hyKkUAAAA",
+  ],
+  // Top-level hours reflect the San Mateo main office.
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "17:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "09:00", closes: "15:00" },
   ],
 };
 
