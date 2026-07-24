@@ -1,0 +1,12 @@
+{
+  "slug": "can-hearing-aids-take-phone-calls",
+  "hero": { "title": "Calls, Both Ears", "icon": "phone", "accent": "aqua" },
+  "info": { "title": "How Hearing Aids Take Calls", "subtitle": "From pairing to a hands-free conversation",
+    "rows": [
+      {"title": "Pair once", "desc": "Connect via Bluetooth in your phone or app"},
+      {"title": "Call rings in", "desc": "Audio streams straight to both hearing aids"},
+      {"title": "Answer with a tap", "desc": "Tap the hearing aid or the phone to pick up"},
+      {"title": "Hear in both ears", "desc": "Uses your personalized speech settings"},
+      {"title": "Talk hands-free", "desc": "On supported models, mics catch your voice"}
+    ] }
+}

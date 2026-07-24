@@ -1,0 +1,13 @@
+{
+  "slug": "how-to-read-audiogram-five-things",
+  "hero": { "title": "Reading Your Audiogram", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "The 5 Things to Look For", "subtitle": "A plain-language map of what your hearing chart is showing",
+    "rows": [
+      {"title": "Pitch, left to right", "desc": "Low tones on the left, high tones on the right."},
+      {"title": "Loudness, top to bottom", "desc": "Softer sounds up top, louder ones toward the bottom."},
+      {"title": "Right ear vs left", "desc": "O marks the right ear, X marks the left."},
+      {"title": "Degree of loss", "desc": "How far down the marks sit, mild to profound."},
+      {"title": "Shape of the line", "desc": "Flat or sloping, hinting at the pattern of loss."}
+    ]
+  }
+}

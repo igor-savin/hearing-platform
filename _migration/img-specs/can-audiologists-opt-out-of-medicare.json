@@ -1,0 +1,12 @@
+{
+  "slug": "can-audiologists-opt-out-of-medicare",
+  "hero": { "title": "Medicare & Hearing", "icon": "shield", "accent": "gold" },
+  "info": { "title": "What Medicare Covers for Hearing", "subtitle": "Where the benefit helps, and where it stops",
+    "rows": [
+      {"title": "Diagnostic testing", "desc": "Covered when medically necessary and ordered"},
+      {"title": "Hearing aids", "desc": "Not covered by Original Medicare"},
+      {"title": "Advantage plans", "desc": "May add a hearing benefit; amounts vary"},
+      {"title": "Direct access", "desc": "See an audiologist for covered testing"},
+      {"title": "Verify coverage", "desc": "Call your plan and confirm before visiting"}
+    ] }
+}

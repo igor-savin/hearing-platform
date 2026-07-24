@@ -1,0 +1,12 @@
+{
+  "slug": "can-you-negotiate-hearing-aid-prices",
+  "hero": { "title": "Hearing Aid Pricing", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Bundled vs. Unbundled Pricing", "subtitle": "What separates two very different quotes",
+    "rows": [
+      {"title": "The device", "desc": "The hardware itself, one line on the quote"},
+      {"title": "Bundled care", "desc": "Fittings and years of follow-up, priced upfront"},
+      {"title": "Unbundled care", "desc": "Lower hardware cost, pay per visit after"},
+      {"title": "Insurance & HSA", "desc": "Benefits and tax-free funds cut the total"},
+      {"title": "Trial period", "desc": "Refund terms if the devices don't work out"}
+    ] }
+}

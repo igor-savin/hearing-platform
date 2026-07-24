@@ -1,0 +1,12 @@
+{
+  "slug": "does-aarp-have-hearing-aid-benefits",
+  "hero": { "title": "AARP Hearing Benefits", "icon": "shield", "accent": "aqua" },
+  "info": { "title": "Checking Your AARP Hearing Benefit", "subtitle": "What to confirm before you count on it",
+    "rows": [
+      {"title": "Membership vs. insurance", "desc": "AARP endorses programs; it doesn't insure you directly"},
+      {"title": "Discount, not coverage", "desc": "Member programs lower the price but you still pay"},
+      {"title": "Medicare plan hearing", "desc": "Some AARP-branded Advantage plans add a benefit"},
+      {"title": "Terms change yearly", "desc": "Confirm current details with the provider"},
+      {"title": "Get tested first", "desc": "A real evaluation guides any device you buy"}
+    ] }
+}

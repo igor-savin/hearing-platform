@@ -1,0 +1,12 @@
+{
+  "slug": "why-would-you-go-to-an-audiologist",
+  "hero": { "title": "Why See an Audiologist", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Reasons to See an Audiologist", "subtitle": "It's about much more than hearing aids",
+    "rows": [
+      {"title": "Hearing changes", "desc": "Trouble following speech or asking for repeats"},
+      {"title": "Tinnitus", "desc": "Ringing or buzzing that won't settle"},
+      {"title": "Stubborn earwax", "desc": "A blockage safely removed in the office"},
+      {"title": "Dizziness and balance", "desc": "Symptoms that may start in the inner ear"},
+      {"title": "Baseline testing", "desc": "A reference reading while hearing is good"}
+    ] }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-an-audiologist-specialist",
+  "hero": { "title": "Meet Your Audiologist", "icon": "people", "accent": "gold" },
+  "info": { "title": "How an Audiologist Is Trained", "subtitle": "The path from graduate school to your hearing appointment",
+    "rows": [
+      {"title": "Doctoral Degree (AuD)", "desc": "Four years of graduate study after college"},
+      {"title": "Clinical Residency", "desc": "A full-time year seeing patients in clinic"},
+      {"title": "Boards & Licensure", "desc": "National exams plus state license to practice"},
+      {"title": "Testing & Diagnosis", "desc": "Measures hearing, balance, and ear health"},
+      {"title": "Treatment & Fitting", "desc": "Hearing aids, tinnitus care, and follow-up"}
+    ] }
+}

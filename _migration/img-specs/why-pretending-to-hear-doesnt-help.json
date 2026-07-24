@@ -1,0 +1,12 @@
+{
+  "slug": "why-pretending-to-hear-doesnt-help",
+  "hero": { "title": "Beyond the Nod", "icon": "people", "accent": "gold" },
+  "info": { "title": "The True Cost of Bluffing", "subtitle": "What nodding along really costs, and the honest fix",
+    "rows": [
+      {"title": "Missed moments", "desc": "Jokes, asides, and questions slip past unheard"},
+      {"title": "Strained relationships", "desc": "Loved ones read blank spots as disinterest"},
+      {"title": "Listening fatigue", "desc": "Guessing all day leaves you drained by evening"},
+      {"title": "Hidden hearing change", "desc": "Covering up delays care as the loss progresses"},
+      {"title": "The honest step", "desc": "A quick hearing test replaces guessing with facts"}
+    ] }
+}

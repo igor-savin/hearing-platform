@@ -1,0 +1,37 @@
+  "/how-to-get-water-out-of-your-ear/": {
+    kicker: "Ear Care",
+    headline: "How to Get Water Out of Your Ear",
+    variant: "condition",
+    datePublished: "2025-05-03",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Water trapped in your ear is usually easy to clear at home. Learn safe methods, what to avoid, and when muffled hearing or pain means it's time to call us.",
+    intro: [
+      "Water trapped in your ear after swimming or a shower is a common nuisance, and most of the time you can clear it at home within a minute or two. The blocked, muffled feeling comes from a bit of water sitting against your eardrum, and gentle movement or gravity is usually all it takes to break the seal. The trick is knowing which methods are safe and which ones can make things worse.",
+      "That said, water in the ear is not always harmless. If it lingers, it can soften the skin of the canal and set the stage for an infection swimmers know well. Sometimes what feels like trapped water is really earwax that has swelled and blocked the canal. And people who swim often can head off the whole problem with a set of custom [swim plugs](/services/hearing-protection/).",
+      "For most people the fix is simple and quick. It helps to know the difference between a passing annoyance and an early infection, because the second one is far easier to treat when you catch it soon. If pain, drainage, or muffled hearing sticks around for more than a day, that is a reason to call rather than wait it out.",
+    ],
+    takeaways: [
+      "Most trapped water clears with gravity, an earlobe tug, or gentle jaw movements.",
+      "Skip cotton swabs and anything poked into the canal — they push water deeper and can scratch the skin.",
+      "Lingering pain, drainage, or muffled hearing can signal swimmer's ear and is worth a professional look.",
+    ],
+    sections: [
+      ["Simple moves that usually clear it", "Start with gravity. Tilt your head so the blocked ear faces the floor, then gently pull the earlobe down and back to straighten the canal and let the water run out. If that alone does not do it, lie on your side on a towel for a few minutes and give the ear time to drain. Working your jaw helps too — yawn, or move it as if you were chewing — since that shifts the tissue around the canal and can loosen the water's grip. The same maneuver you use to clear your ears on a plane, pinching your nose and exhaling softly, can nudge a stubborn drop free as well. Keep it gentle; there is no need to force anything."],
+      ["Drying drops and the hair-dryer trick", "When the water will not budge, a little warmth and air can finish the job. Set a hair dryer to its lowest heat and speed, hold it a good foot from your ear, and let the warm air play across the opening for a short while. Over-the-counter drying drops, usually a blend of alcohol and vinegar, help the last bit of moisture evaporate and discourage bacteria. One firm caution: skip the drops and the dryer's heat if you have an ear tube, a known hole in your eardrum, ear pain, or any drainage. In those situations the wrong home remedy can do real harm, so check with us before trying either."],
+      ["What to leave out of your ear", "It is tempting to reach for a cotton swab, a fingertip, or a twist of tissue to soak the water up. Resist it. Anything you push into the canal tends to drive the water deeper, and it can scrape the delicate skin or pack existing wax tighter against the eardrum. That scratched, damp skin is exactly what an ear infection needs to take hold. Keep the effort outside the ear — gravity, motion, and gentle air — and let the canal handle the rest on its own."],
+      ["When it is earwax, not water", "Sometimes the blocked feeling outlasts every trick, and the culprit is not water at all. A plug of [earwax](/services/earwax-removal/) can absorb moisture, swell, and seal the canal, leaving you with the same muffled hearing you would blame on a stubborn drop. If the fullness hangs on for days, or your hearing stays dull after the ear feels dry, a quick [hearing check](/hearing-testing/) can sort out which one you are dealing with. Our team removes wax safely, without the pushing and scraping that home tools risk, and can tell in minutes whether wax is the real story."],
+      ["When water in the ear needs a professional", "Trapped water that sits too long can lead to swimmer's ear, an infection of the ear-canal skin that the [CDC](https://www.cdc.gov) links to water lingering after swimming. Watch for ear pain that grows when you tug the outer ear, along with itching, redness, swelling, or fluid draining out — and a fever with any of those is a clear signal to be seen. Muffled hearing that will not lift after a day or two deserves attention too. If that sounds familiar, [reach out](/contact/) and we will get you in; our [audiology team](/about-us/) can treat the infection or clear the blockage and suggest habits that keep it from coming back."],
+    ],
+    bullets: ["Tilt and drain", "Earlobe tug", "Gentle jaw motion", "Skip the cotton swabs", "Swim plugs prevent it", "San Mateo & San Carlos"],
+    faqs: [
+      ["How long is it safe to leave water in my ear?", "A few hours is nothing to worry about, and the ear often drains on its own by the time you notice. The concern is water that stays put for a full day or longer, since that is when the canal skin softens and infection risk climbs. If simple methods have not worked by then, move on to drying drops or give us a call."],
+      ["Can I use a cotton swab to dry my ear?", "It is better not to. Swabs push water and wax deeper and can nick the skin inside the canal, which is the opposite of what you want when moisture is already trapped. Stick with gravity, gentle jaw movement, and warm air from a distance, and keep anything solid out of the ear."],
+      ["How do I know if it is swimmer's ear and not just water?", "Plain trapped water feels full and muffled but does not usually hurt. Swimmer's ear brings pain that worsens when you tug your earlobe, along with itching, redness, or drainage, and sometimes a fever. Those symptoms mean it is time to be examined rather than to keep trying home fixes."],
+    ],
+    image: "/assets/blog/how-to-get-water-out-of-your-ear-1.svg",
+    imageLabel: "Tilt, tug, and let gravity do the work",
+    image2: "/assets/blog/how-to-get-water-out-of-your-ear-2.svg",
+    image2Label: "Safe steps to clear a blocked ear, and the signs to stop and call",
+    image2Caption: "Most blocked ears clear at home; pain or drainage is the signal to be seen.",
+  },

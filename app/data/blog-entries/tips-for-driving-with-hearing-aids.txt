@@ -1,0 +1,38 @@
+  "/tips-for-driving-with-hearing-aids/": {
+    kicker: "Hearing Aids & Driving",
+    headline: "Tips for Driving With Hearing Aids",
+    metaTitle: "Tips for Driving With Hearing Aids | CHC",
+    variant: "product",
+    datePublished: "2021-03-24",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Your hearing aids can make driving easier, from wind-noise programs to streaming GPS and hands-free calls. Practical tips for using them well on the road.",
+    intro: [
+      "Modern hearing aids are built to help you in the car, not just the living room. If you drive with them, a few settings and habits can make the ride quieter, safer, and a lot less tiring. Many of these features come standard on today's devices, so you may already own them without knowing it. A good [hearing aid fitting](/services/hearing-aid-fitting/) is where most of them get switched on and tuned to how you drive.",
+      "A car is a noisy, moving box. Wind, tires, and engine hum fill it with low, steady sound, and that background can smear the voice of a passenger or the directions coming from your phone. The right program tells your [hearing aids](/products/hearing-aids/) to hold speech steady while easing that rumble, so you are not straining to catch someone over the freeway.",
+      "This post is about the devices themselves, not general driving safety. If you want the settings dialed in for your commute, our San Mateo and San Carlos team can set up a driving program and pair your phone in one visit. You can reach us any time through our [contact page](/contact/).",
+    ],
+    takeaways: [
+      "Ask your audiologist to add a car program that softens wind and road noise while keeping speech clear.",
+      "If your aids stream over Bluetooth, route GPS directions and calls straight to your ears instead of the car speakers.",
+      "Start drives fully charged, and never leave hearing aids in a hot parked car.",
+    ],
+    sections: [
+      ["Programs made for the road", "Most current hearing aids can store more than one listening program, and one of them can be tuned for the car. In that mode the devices lean on noise reduction to soften steady wind and tire rumble while keeping voices forward. How well this works varies by brand and technology level, so it helps to know what your [particular devices](/products/hearing-aids-by-brand/) can do. If your aids do not have a car setting yet, ask us to build one; it takes only minutes, and you switch to it with a tap or through the app."],
+      ["Sending directions and calls to your ears", "Many hearing aids pair with your phone over Bluetooth, which means turn-by-turn directions and calls can play through the aids themselves rather than the car speakers. For a lot of drivers this is the single biggest change: the navigation voice arrives clearly in both ears at a level you set, and you are not cranking the stereo to hear the next turn. Phone calls route the same way, hands-free, so you keep both hands on the wheel. Hearing those cues well matters, since clear hearing also helps you notice sirens, horns, and other warning sounds around you, something the [American Speech-Language-Hearing Association](https://www.asha.org) points to as part of safe driving."],
+      ["Where you sit changes what you hear", "In a car the person talking to you usually sits beside and a little behind your ear, not in front of you. That is a problem for directional microphones, which normally focus on whatever is ahead, ideal for face-to-face talk but not for a passenger off to the side. A car program can widen that focus so the voice from the next seat comes through. Small head turns at a stoplight help too, but the right setting does most of the work for you."],
+      ["Comfortable listening on a long drive", "Long stretches of road noise can wear on your ears even with good aids. Keep the driving program at a level that is clear but not loud; pushing the volume up to beat the wind tends to tire you out faster, not less. If you stream music or a podcast, that same steady, moderate level is easier to sit with over several hours. When you park, switching back to your everyday program resets things for the walk into the store or the office."],
+      ["Keeping your devices ready for the road", "A hearing aid that dies at the on-ramp helps no one, so start longer drives with a full charge or fresh batteries. Heat is the other thing to watch: a closed car in the sun gets hot enough to harm the electronics and the batteries, so take the aids with you rather than leaving them on the dash. And if a device starts cutting out or sounding weak, do not just live with it, since a quick [repair or checkup](/services/hearing-aid-repair/) usually sorts it out."],
+    ],
+    bullets: ["Wind-noise program", "Bluetooth streaming", "GPS to both ears", "Hands-free calls", "Directional focus", "Charged and heat-safe"],
+    faqs: [
+      ["Do I need special hearing aids to use these features?", "In most cases, no. A car program and Bluetooth streaming are common on current mid-range and premium devices. Older or entry-level aids may lack streaming, though many still hold a dedicated noise program. If you are not sure what yours support, bring them in and we will check."],
+      ["Will streaming GPS drain my batteries faster?", "Streaming does use more power than everyday listening, so a full day of navigation and calls will shorten battery life somewhat. Rechargeable aids usually handle a normal commute with room to spare, and starting the day topped off keeps you covered. For very long trips, a phone car charger and a case that recharges the aids both help."],
+      ["Can my audiologist set this up, or do I do it myself?", "Either works, but a visit is the faster route. We can add a driving program, tune it to the noise you deal with, and pair your phone so it connects automatically. If you would rather learn to adjust things yourself, we will show you the app during the same appointment. You can [reach our team](/about-us/) to book a time."],
+    ],
+    image: "/assets/blog/tips-for-driving-with-hearing-aids-1.svg",
+    imageLabel: "Settings that make the drive quieter and easier",
+    image2: "/assets/blog/tips-for-driving-with-hearing-aids-2.svg",
+    image2Label: "Five ways to get more from your aids in the car",
+    image2Caption: "A short setup with your audiologist turns everyday aids into better in-car companions.",
+  },
