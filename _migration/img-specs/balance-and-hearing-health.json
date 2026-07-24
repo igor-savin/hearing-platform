@@ -1,0 +1,15 @@
+{
+  "slug": "balance-and-hearing-health",
+  "hero": { "title": "Balance & Hearing", "icon": "ear", "accent": "gold" },
+  "info": {
+    "title": "The inner-ear link",
+    "subtitle": "How the inner ear links what you hear and how you stand",
+    "rows": [
+      { "title": "Shared inner ear", "desc": "Hearing and balance organs sit side by side" },
+      { "title": "Three balance inputs", "desc": "Inner ear, eyes, and joint sensors combine" },
+      { "title": "Mixed signals", "desc": "Conflicting input can register as vertigo" },
+      { "title": "Changes travel together", "desc": "Aging softens hearing and steadiness alike" },
+      { "title": "When to get checked", "desc": "Sudden loss with dizziness needs prompt care" }
+    ]
+  }
+}

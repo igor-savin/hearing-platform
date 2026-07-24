@@ -1,0 +1,12 @@
+{
+  "slug": "do-you-know-the-less-common-causes-of-hearing-loss",
+  "hero": { "title": "Uncommon Causes", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Less Common Causes of Hearing Loss", "subtitle": "Beyond age and noise, these are worth knowing",
+    "rows": [
+      {"title": "Ototoxic medications", "desc": "Some antibiotics, chemo drugs, and high-dose aspirin"},
+      {"title": "Otosclerosis", "desc": "Abnormal middle-ear bone growth, often inherited"},
+      {"title": "Autoimmune & Ménière's", "desc": "Fluctuating or lopsided loss, sometimes with vertigo"},
+      {"title": "Earwax & infections", "desc": "Common, fast-acting, and often reversible"},
+      {"title": "Sudden hearing loss", "desc": "A sharp one-ear drop is a same-day emergency"}
+    ] }
+}

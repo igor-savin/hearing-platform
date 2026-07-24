@@ -1,0 +1,12 @@
+{
+  "slug": "hyperacusis-what-is-it-and-what-can-i-do",
+  "hero": { "title": "Sound Sensitivity", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Easing Sound Sensitivity", "subtitle": "How hyperacusis care rebuilds your tolerance",
+    "rows": [
+      {"title": "Get evaluated", "desc": "A hearing exam pinpoints what's driving it."},
+      {"title": "Skip all-day plugs", "desc": "Constant protection can deepen the sensitivity."},
+      {"title": "Reintroduce sound", "desc": "Gentle, gradual exposure rebuilds tolerance."},
+      {"title": "Try sound therapy", "desc": "Low-level sound retrains how you react."},
+      {"title": "Protect wisely", "desc": "Custom plugs for truly loud settings only."}
+    ] }
+}
