@@ -33,6 +33,19 @@ export async function generateMetadata({ params }: PageProps) {
     return {};
   }
 
+  if (path === "/the-blog/") {
+    const blogTitle = "Hearing Health Resources | California Hearing Center";
+    const blogDesc =
+      "Practical, audiologist-written guides on hearing loss, tinnitus, hearing aids, costs and insurance, ear care, and hearing tests — from California Hearing Center in San Mateo & San Carlos.";
+    return {
+      title: blogTitle,
+      description: blogDesc,
+      alternates: { canonical: path },
+      openGraph: { title: blogTitle, description: blogDesc, url: path, type: "website" },
+      twitter: { card: "summary_large_image", title: blogTitle, description: blogDesc },
+    };
+  }
+
   const desc = blogMetaDescription(path) ?? metaDescription(page);
   const title = blogMetaTitle(path, page.title);
   const ogImg = blogOgImage(path);
