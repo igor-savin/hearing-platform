@@ -32,9 +32,13 @@ export type CityProfile = {
   distanceTier: "office" | "near" | "mid" | "far";
   geo: { lat: number; lng: number };
 
+  // Visual motif for the generated hero image (see _migration/genCityImages.mjs).
+  motif: "coast" | "airport" | "bayside" | "downtown" | "estate" | "wine" | "transit" | "civic";
+
   // --- written, city-specific prose (this is where uniqueness lives) ---
   lede: string;                 // opening paragraph, specific to this city
   hook: [string, string];       // [H2, paragraph] — the signature local section
+  localScene: [string, string]; // [H2, paragraph] — real neighborhoods/streets/landmarks + a hearing tie-in (long-tail local SEO)
   whyHere: string;              // paragraph: why patients from here choose CHC
   landmarks?: string;           // one sentence naming real local reference points
   faqs: [string, string][];     // 2-3 city-specific Q&A
@@ -62,6 +66,11 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Being your neighborhood audiologist changes the care",
       "Because we are based in San Mateo, follow-up is easy: a quick hearing-aid cleaning, a fine-tuning after a noisy weekend, or a fresh set of domes rarely means rearranging your day. That proximity matters more than people expect, because hearing care is not one appointment — it is an ongoing relationship of small adjustments that add up to hearing well in real life.",
     ],
+    motif: "civic",
+    localScene: [
+      "Rooted in the neighborhoods we serve",
+      "From Baywood and San Mateo Park to Hayward Park, Bay Meadows, and the busy Hillsdale district, San Mateo is a city of distinct neighborhoods — and of distinct listening challenges, from quiet residential streets to the constant hum near the 92/101 interchange and Hillsdale Shopping Center. We know these settings because we live and work here, and we tune hearing aids for the places our patients actually spend their days, whether that's Central Park on a Saturday or a loud lunch spot downtown on B Street.",
+    ],
     whyHere:
       "San Mateo patients come to us for the full range of care under one roof — diagnostic hearing evaluations, hearing aid fittings with real-ear verification, tinnitus and Lenire treatment, earwax removal, and repairs — without navigating a large hospital system. Many were referred by a neighbor or family member who is already a patient.",
     landmarks:
@@ -84,6 +93,11 @@ export const cityProfiles: Record<string, CityProfile> = {
     hook: [
       "A downtown office built around long-term hearing care",
       "Living minutes from your audiologist makes the ongoing side of hearing care effortless. Rechargeable hearing aids that need a firmware update, a wax guard change, a tinnitus check-in, or a warranty repair are all quick visits rather than a project. For San Carlos residents, that convenience is often the difference between hearing aids that get worn every day and ones that end up in a drawer.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A San Carlos practice that knows the neighborhoods",
+      "The White Oaks and Howard Park neighborhoods, the mid-century Eichler tracts, and the hillside homes toward Crestview and Devonshire each bring their own patients through our doors. San Carlos also sits beside its own small airport and the Hiller Aviation Museum, and along the El Camino and 101 corridors — settings where a baseline hearing test and, when needed, custom protection make real sense. Being downtown on Laurel Street means we see our patients around town, which keeps care personal.",
     ],
     whyHere:
       "San Carlos patients choose us for careful, unhurried evaluations and honest technology guidance right in their own downtown. We handle everything from first-time hearing tests to complex tinnitus care and Lenire treatment, and we see patients across every stage of life, from working professionals to retirees.",
@@ -110,6 +124,11 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Living under SFO's flight path and what it means for your hearing",
       "Much of Burlingame sits beneath SFO's arrival and departure corridors, and residents near the Bayfront or Broadway know the sound of jets overhead. Repeated loud noise is a real contributor to noise-induced hearing loss over time. If you have spent years under the flight path, or work at or near the airport, a baseline hearing evaluation is worth doing even before you notice a problem — hearing loss from noise is gradual and easy to miss until conversations start slipping.",
     ],
+    motif: "airport",
+    localScene: [
+      "From Burlingame Avenue to the Bayfront",
+      "Burlingame packs a lot into a small city: the walkable Burlingame Avenue and Broadway shopping districts, the leafy Easton Addition, Washington Park, and the Bayfront hotel row that backs right up to SFO. That range matters for hearing care — a retiree strolling Burlingame Ave has very different listening needs than someone working the airport hotels or commuting the Bayshore. We fit and verify hearing aids for those specific environments, and we keep Mills-Peninsula-area patients close to home for follow-up.",
+    ],
     whyHere:
       "Burlingame patients come to us because we are the closest independent audiology practice for many of them, and because they want more than a big-box hearing aid transaction. We provide diagnostic testing, real-ear-verified fittings, tinnitus care, and repairs, with the same audiologist each visit.",
     landmarks:
@@ -134,6 +153,11 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Airport-adjacent living and noise-induced hearing loss",
       "Few Peninsula cities sit as close to SFO as Millbrae. Residents in the neighborhoods nearest the airport, and the many people who work in airport operations, hospitality, and ground transportation, can accumulate significant noise exposure over the years. Noise-induced hearing loss builds quietly and is permanent, but it is also highly preventable. A baseline evaluation plus custom hearing protection is one of the smartest things an airport-adjacent resident can do for long-term hearing health.",
     ],
+    motif: "transit",
+    localScene: [
+      "A transit hub in SFO's shadow",
+      "Millbrae's identity is tied to movement — the Millbrae Intermodal Station where BART meets Caltrain, the El Camino Real corridor, the Green Hills and Mills Estate neighborhoods climbing west into the hills, and the airport pressing in from the north. For residents near the flight path and the many who work in and around SFO, that adds up to real cumulative noise. We start airport-adjacent patients with a baseline evaluation and, where it fits, custom hearing protection, then keep devices dialed in for both quiet streets and loud terminals.",
+    ],
     whyHere:
       "Millbrae patients value that our San Mateo office is a quick, direct trip down the 101 or El Camino, with none of the parking hassle of a hospital campus. We provide complete audiology care — testing, hearing aids, tinnitus treatment, protection, and repairs — with continuity of care you rarely get at a chain.",
     landmarks:
@@ -157,6 +181,11 @@ export const cityProfiles: Record<string, CityProfile> = {
       "A bayside community, and the moisture that comes with it",
       "Life on the water is one of Foster City's pleasures, but humidity and moisture are the natural enemies of hearing aids. Sweat, marine air, and the occasional splash on the lagoon can shorten the life of a device that is not properly maintained. We fit Foster City patients with moisture-resistant options where it makes sense, teach simple drying routines, and keep rechargeable contacts clean — small habits that prevent the most common cause of hearing aid repairs.",
     ],
+    motif: "bayside",
+    localScene: [
+      "Life on the lagoons",
+      "Foster City is organized around its water — the lagoon system, the levee-top walking and biking trails, and neighborhoods like Edgewater, Sea Cloud, Mariners Island, and the areas around Leo J. Ryan Park. It draws an unusual mix of young families and active retirees, and the waterside lifestyle is exactly where hearing-aid moisture management earns its keep. We set Foster City patients up with moisture-resistant devices and simple drying habits so their hearing aids survive the humidity and the occasional splash on the water.",
+    ],
     whyHere:
       "Foster City patients appreciate that our San Mateo office is only about 10 minutes away, with easy parking and no big-medical-center maze. We serve the community's wide age range with everything from first hearing tests and modern hearing aids to tinnitus care and device repairs.",
     landmarks:
@@ -179,6 +208,11 @@ export const cityProfiles: Record<string, CityProfile> = {
     hook: [
       "A short trip for care that keeps up with you",
       "Redwood City has transformed in the last decade, from the revived downtown theaters and restaurants to the tech campuses near Seaport and the Port of Redwood City. Whether you are still working in a busy open-plan office or enjoying retirement near Roosevelt or Mount Carmel, hearing well in real environments is the goal — and being minutes from your audiologist means adjustments happen when you need them, not weeks later.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A revived downtown, right next door",
+      "Redwood City's downtown — Courthouse Square, the restored Fox Theatre, the restaurants along Broadway — has become one of the Peninsula's liveliest, while neighborhoods like Roosevelt, Mount Carmel, Emerald Hills, and the waterfront Redwood Shores each keep their own character. Whether you're catching a show downtown, working a campus near Seaport, or enjoying a quieter retirement in the hills, hearing well depends on devices tuned to your rooms, not a factory default. Being minutes away at our San Carlos office means we can adjust them whenever life changes.",
     ],
     whyHere:
       "Redwood City patients choose us for thorough testing, honest technology recommendations, and tinnitus expertise — all a few minutes from home at our San Carlos office. Continuity matters here: you see the same audiologist who knows your history and your goals.",
@@ -205,6 +239,11 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Coastal fog, humidity, and your hearing aids",
       "Half Moon Bay's marine layer means persistently high humidity, and moisture is the single most common cause of hearing aid trouble. Coastal patients see it as muffled sound, intermittent cut-outs, or corroded contacts. It is very manageable once you know how: moisture-resistant devices, a nightly drying routine, and regular professional cleaning keep coastal hearing aids working reliably. When something does go wrong, we handle repairs so you are not left without your hearing.",
     ],
+    motif: "coast",
+    localScene: [
+      "One coast, many communities",
+      "The Coastside is really a string of communities — downtown Half Moon Bay along Main Street, the harbor at Pillar Point and Princeton-by-the-Sea, El Granada, Miramar, and the surf breaks out at Mavericks. What they share is the marine layer: cool, damp air rolling in off the Pacific most mornings. That persistent humidity is hard on hearing aids, so for Coastside patients we lean into moisture-resistant technology, drying routines, and durable fittings that hold up to coastal living, over Highway 92 or up Highway 1.",
+    ],
     whyHere:
       "For most of the coast, we are the nearest full-service audiology practice — there simply is not an audiologist over the hill for many listening needs. Coastside patients make the trip over 92 for thorough testing, moisture-smart hearing aid fittings, tinnitus care, and dependable repairs, and we make each visit count so the drive is worth it.",
     landmarks:
@@ -229,6 +268,11 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Discreet technology and unhurried, private care",
       "Atherton patients often prioritize two things: hearing that keeps up with an active professional and social life, and technology that stays discreet. Modern invisible and receiver-in-canal hearing aids deliver both, and getting the most out of them depends on expert fitting and verification rather than the device alone. We take the time to program, verify, and fine-tune — and to keep it all private and unrushed.",
     ],
+    motif: "estate",
+    localScene: [
+      "A residential town that travels for its care",
+      "Atherton is almost entirely residential by design — estate lots and tree canopy across Lindenwood, West Atherton, and Lloyden Park, with Holbrook-Palmer Park at its center and no commercial strip to speak of. Residents are used to traveling a few minutes for services, and hearing care is no exception. Many are active professionals and community members who want technology that keeps up with a full calendar while staying completely discreet, and the unhurried privacy of an independent practice over a big-box counter.",
+    ],
     whyHere:
       "Atherton residents choose us for meticulous testing, premium technology matched honestly to their needs, and specialized tinnitus care — with the continuity of seeing the same audiologist each time. Many first came for tinnitus or Lenire treatment and stayed for the whole of their hearing care.",
     landmarks:
@@ -252,6 +296,11 @@ export const cityProfiles: Record<string, CityProfile> = {
     hook: [
       "Hearing well in demanding listening environments",
       "Many Menlo Park patients spend their days in exactly the situations where hearing is hardest: back-to-back meetings, open-plan offices, video calls, and busy restaurants. Success in those settings is less about buying the most expensive device and more about precise programming, real-ear verification, and features matched to your real environments. We tune hearing aids to the rooms you actually spend time in.",
+    ],
+    motif: "estate",
+    localScene: [
+      "Downtown, the venture corridor, and everything between",
+      "Menlo Park stretches from the Santa Cruz Avenue downtown and the Allied Arts district to Sharon Heights, the Sand Hill Road venture corridor, and the large campuses out toward the Bayfront. It is a city of demanding listening environments — glass-walled conference rooms, open offices, and restaurants that fill up fast. We help Menlo Park patients hear in exactly those rooms by testing speech-in-noise and verifying each fitting against a real target, so the benefit shows up where it counts, not just in a quiet booth.",
     ],
     whyHere:
       "Menlo Park patients come to us for careful diagnostics, honest technology guidance, and strong tinnitus care, all a short drive up to our San Carlos office. We focus on measurable results in the environments that matter to you, not just a passing score in a quiet booth.",
@@ -279,6 +328,11 @@ export const cityProfiles: Record<string, CityProfile> = {
     hook: [
       "Why some patients travel from wine country to the Peninsula",
       "For everyday hearing tests and routine hearing aids, we always encourage patients to consider a provider close to home. Where distance can be worth it is specialized care — stubborn tinnitus, Lenire treatment, difficult fittings, or a second opinion after a frustrating experience elsewhere. Patients who travel to us from Napa typically come for that kind of expertise, and we structure their visits to make the trip count: thorough evaluation, treatment, and a follow-up plan that minimizes repeat drives.",
+    ],
+    motif: "wine",
+    localScene: [
+      "From the valley floor to the Peninsula",
+      "Napa County spans the city of Napa, American Canyon, Yountville, St. Helena, and Calistoga — wine country, tourism, and long rural stretches. It is genuinely far from the Peninsula, and for routine hearing care we'd point you to someone closer. But for specialized tinnitus treatment and Lenire, complex fittings, or a second opinion, some Napa Valley patients decide the expertise is worth the drive south — and when they do, we make the visit count.",
     ],
     whyHere:
       "Napa County patients who come to us are usually seeking a level of tinnitus and diagnostic expertise they could not find locally. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive is the exception, not the routine.",

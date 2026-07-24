@@ -20,10 +20,12 @@ export type PageContent = {
   intro: string[];
   sections: [string, string][];
   bullets: string[];
+  bulletLinks?: [label: string, href: string][]; // clickable feature list (overrides bullets when set)
   takeaways?: string[];
   faqs?: [string, string][];
   image: string;
   imageLabel: string;
+  imageAlt?: string;       // descriptive alt text (falls back to imageLabel)
   // Enriched blog fields (optional; only set for hand-written blog posts)
   image2?: string;
   image2Label?: string;
@@ -404,17 +406,17 @@ function cityProfileForPath(path: string): CityProfile | null {
 type ServiceInfo = { label: string; angle: string; canonical: string };
 const AREA_SERVICE_INFO: Record<string, ServiceInfo> = {
   "hearing-test": { label: "Hearing Testing", angle: "a thorough diagnostic hearing evaluation — air and bone conduction, speech-in-noise testing, and a clear explanation of what the results mean for your everyday listening", canonical: "/hearing-testing/" },
-  "hearing-aids": { label: "Hearing Aids", angle: "hearing aids selected and fit for your specific hearing loss and lifestyle, with real-ear verification so the devices are proven to deliver the right sound — not just programmed to a manufacturer default", canonical: "/hearing-aids/" },
+  "hearing-aids": { label: "Hearing Aids", angle: "hearing aids selected and fit for your specific hearing loss and lifestyle, with real-ear verification so the devices are proven to deliver the right sound — not just programmed to a manufacturer default", canonical: "/hearing-aid-fitting/" },
   "tinnitus-therapy": { label: "Tinnitus Therapy", angle: "evidence-based tinnitus therapy, including sound therapy, counseling, and Lenire, aimed at reducing how intrusive the ringing feels day to day", canonical: "/tinnitus/" },
   "tinnitus-audiologist": { label: "Tinnitus Audiologist", angle: "care from an audiologist who focuses on tinnitus — a full evaluation to rule out treatable causes, then a personalized plan that may include sound therapy, counseling, and Lenire", canonical: "/tinnitus/" },
   "lenire": { label: "Lenire Tinnitus Treatment", angle: "Lenire, a bimodal (sound plus mild tongue stimulation) tinnitus treatment, delivered by an audiology team experienced in selecting the right candidates and coaching them through the protocol", canonical: "/tinnitus/" },
   "hearing-aid-fitting": { label: "Hearing Aid Fitting", angle: "a proper hearing aid fitting with real-ear measurement, so the devices match a validated target for your hearing loss rather than an out-of-the-box guess", canonical: "/hearing-aid-fitting/" },
-  "hearing-aid-repairs": { label: "Hearing Aid Repairs", angle: "hearing aid repairs and servicing for most major brands — from moisture damage and dead receivers to worn tubing and wax-blocked ports", canonical: "/hearing-aid-repair/" },
-  "custom-hearing-protection": { label: "Custom Hearing Protection", angle: "custom-molded hearing protection for musicians, shooters, motorcyclists, industrial workers, and anyone regularly around loud sound — protection that guards your hearing while keeping sound natural", canonical: "/custom-hearing-protection/" },
-  "earwax-removal": { label: "Earwax Removal", angle: "safe, professional earwax removal — far gentler and safer than cotton swabs or at-home kits, and a chance to check the health of your ear canal and eardrum", canonical: "/earwax-removal/" },
-  "invisible-hearing-aids": { label: "Invisible Hearing Aids", angle: "discreet invisible and deep-canal hearing aids for patients who want help that no one else can see, fit to your ear anatomy for comfort and performance", canonical: "/hearing-aids/" },
-  "rechargeable-hearing-aids": { label: "Rechargeable Hearing Aids", angle: "modern rechargeable hearing aids that skip the tiny disposable batteries — convenient, and often easier for anyone with dexterity or vision challenges", canonical: "/hearing-aids/" },
-  "bluetooth-hearing-aids": { label: "Bluetooth Hearing Aids", angle: "Bluetooth hearing aids that stream calls, TV, and music directly, and let you fine-tune settings from your phone", canonical: "/hearing-aids/" },
+  "hearing-aid-repairs": { label: "Hearing Aid Repairs", angle: "hearing aid repairs and servicing for most major brands — from moisture damage and dead receivers to worn tubing and wax-blocked ports", canonical: "/services/" },
+  "custom-hearing-protection": { label: "Custom Hearing Protection", angle: "custom-molded hearing protection for musicians, shooters, motorcyclists, industrial workers, and anyone regularly around loud sound — protection that guards your hearing while keeping sound natural", canonical: "/services/" },
+  "earwax-removal": { label: "Earwax Removal", angle: "safe, professional earwax removal — far gentler and safer than cotton swabs or at-home kits, and a chance to check the health of your ear canal and eardrum", canonical: "/services/" },
+  "invisible-hearing-aids": { label: "Invisible Hearing Aids", angle: "discreet invisible and deep-canal hearing aids for patients who want help that no one else can see, fit to your ear anatomy for comfort and performance", canonical: "/hearing-aid-fitting/" },
+  "rechargeable-hearing-aids": { label: "Rechargeable Hearing Aids", angle: "modern rechargeable hearing aids that skip the tiny disposable batteries — convenient, and often easier for anyone with dexterity or vision challenges", canonical: "/hearing-aid-fitting/" },
+  "bluetooth-hearing-aids": { label: "Bluetooth Hearing Aids", angle: "Bluetooth hearing aids that stream calls, TV, and music directly, and let you fine-tune settings from your phone", canonical: "/hearing-aid-fitting/" },
   "dr-emily-mcmahan": { label: "Dr. Emily McMahan, AuD", angle: "care led by Dr. Emily McMahan, AuD, whose focus is tinnitus and complex hearing needs — the reason many patients seek her out specifically", canonical: "/about-us/" },
 };
 
@@ -448,11 +450,29 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     `Our ${office} office is ${profile.approxDrive}. ${profile.landmarks ?? ""} We keep visits efficient and can help you plan around parking and timing when you call 650-342-9449.`.replace(/\s+/g, " ").trim(),
   ];
 
-  const sections: [string, string][] = [profile.hook, gettingHere];
+  // Order: signature hook, then the local-scene detail, then directions.
+  const sections: [string, string][] = [profile.hook, profile.localScene, gettingHere];
 
-  const bullets = service
-    ? [service.label, `${name} & nearby`, "Real-ear verification", "Same audiologist each visit", "San Mateo & San Carlos", "Follow-up care"]
-    : ["Hearing evaluations", "Hearing aids & fittings", "Tinnitus & Lenire", "Earwax removal", "Repairs", "Custom hearing protection"];
+  // Clickable feature list — links to the real service + office pages.
+  const officePath = office === "San Mateo" ? "/contact/san-mateo/" : "/contact/san-carlos/";
+  const bulletLinks: [string, string][] = service
+    ? [
+        [service.label, service.canonical],
+        ["Hearing testing", "/hearing-testing/"],
+        ["Tinnitus & Lenire", "/tinnitus/"],
+        [`${office} office`, officePath],
+        ["All services", "/services/"],
+        ["Patient reviews", "/reviews/"],
+      ]
+    : [
+        ["Hearing testing", "/hearing-testing/"],
+        ["Hearing aid fitting", "/hearing-aid-fitting/"],
+        ["Tinnitus & Lenire", "/tinnitus/"],
+        ["All services", "/services/"],
+        [`${office} office`, officePath],
+        ["Patient reviews", "/reviews/"],
+      ];
+  const bullets = bulletLinks.map(([label]) => label);
 
   const takeaways = [
     service
@@ -462,16 +482,19 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     "We handle the full range: testing, hearing aids, tinnitus care, repairs, earwax removal, and hearing protection.",
   ];
 
+  const citySlug = citySlugFromPath(page.path) || "";
   return {
     kicker: "Areas We Serve",
     headline,
     intro,
     sections,
     bullets,
+    bulletLinks,
     takeaways,
     faqs: profile.faqs,
-    image: "/assets/hero.webp",
+    image: `/assets/areas/${citySlug}.svg`,
     imageLabel: service ? `${service.label} — ${name}` : `Hearing care for ${name}`,
+    imageAlt: `California Hearing Center — audiology and hearing care serving ${name}, ${profile.county}`,
   };
 }
 
@@ -1097,7 +1120,9 @@ function InnerPage({ page }: { page: SitePage }) {
             ))}
           </div>
           <div className="feature-list">
-            {content.bullets.map((bullet) => <span key={bullet}>{bullet}</span>)}
+            {content.bulletLinks
+              ? content.bulletLinks.map(([label, href]) => <a key={label} href={href}>{label}</a>)
+              : content.bullets.map((bullet) => <span key={bullet}>{bullet}</span>)}
           </div>
           {content.faqs && (
             <section className="faq-block">
@@ -1124,7 +1149,7 @@ function InnerPage({ page }: { page: SitePage }) {
         </article>
         <aside className="sidebar-card">
           <div className="page-visual">
-            <img src={content.image} alt={content.imageLabel || ""} />
+            <img src={content.image} alt={content.imageAlt || content.imageLabel || ""} />
             <span>{content.imageLabel}</span>
           </div>
           <h3>Set up your FREE hearing consultation</h3>
