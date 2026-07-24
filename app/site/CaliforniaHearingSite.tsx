@@ -528,12 +528,17 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     intro.push(`For ${name} patients specifically, that means ${service.angle}. ${cta}.`);
   }
 
-  const closer = pickFrom(citySlugFromPath(page.path) || name, [
+  const closer = pickFrom((citySlugFromPath(page.path) || name) + ":closer", [
     "Call 650-342-9449 and we'll help you plan the visit around parking and timing.",
     "When you call 650-342-9449, we can suggest the easiest time to come and where to park.",
     "Reach us at 650-342-9449 to book and to sort out directions or parking ahead of time.",
     "Give us a call at 650-342-9449 and we'll make the trip as easy as possible.",
     "We keep appointments efficient — call 650-342-9449 and we'll take care of the details.",
+    "Call 650-342-9449 to find a time that fits your schedule.",
+    "Booking is simple — call 650-342-9449 and we'll handle the rest.",
+    "Call us at 650-342-9449 and we'll confirm timing, directions, and what to bring.",
+    "Reach the team at 650-342-9449 to schedule and plan your visit.",
+    "One call to 650-342-9449 sets up your appointment and answers any questions.",
   ]);
   const gettingHere: [string, string] = [
     `Getting to us from ${name}`,
@@ -578,7 +583,11 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     "An independent practice, so the advice is about your hearing — not a manufacturer's monthly target.",
     "Small enough to know you by name, equipped enough to handle complex fittings and tinnitus care.",
     "Time to explain what your results mean, in plain language, before any technology is discussed.",
-    "Real-world results matter here: we tune to the rooms you actually struggle in, then follow up.",
+    "Unhurried appointments — we would rather get the fit right than move you through a queue.",
+    "Two Peninsula offices share one set of records, so you can see whichever location is easier.",
+    "Follow-up, cleanings, and fine-tuning are included in the care, not billed as afterthoughts.",
+    "A clinical team that treats hearing care as an ongoing relationship, not a one-time sale.",
+    "Straight answers on whether you need treatment now, later, or just a baseline to track.",
   ]);
   const scopeBullet = pickFrom(seed + ":scope", [
     "One practice for testing, hearing aids, tinnitus and Lenire, repairs, earwax removal, and hearing protection.",
@@ -587,6 +596,9 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     "Testing, fittings, tinnitus care, earwax removal, and hearing protection, all in one place.",
     "Everything from your first evaluation to long-term device support lives with one team.",
     "Hearing tests, hearing aids, tinnitus and Lenire, and repairs — coordinated by one clinic.",
+    "A full-service audiology practice: evaluation, technology, tinnitus care, and ongoing support.",
+    "Comprehensive care — hearing aids, tinnitus and Lenire, earwax removal, protection, and repairs.",
+    "One team for diagnostics, fittings, tinnitus treatment, and the follow-up that keeps them working.",
   ]);
   const takeaways = [
     service
@@ -612,7 +624,7 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     faqs: serviceSlug ? serviceFaqs(serviceSlug, name, office) : profile.faqs,
     image: `/assets/areas/${citySlug}.svg`,
     imageLabel: service ? `${service.label} — ${name}` : `Hearing care for ${name}`,
-    imageAlt: `California Hearing Center — audiology and hearing care serving ${name}, ${profile.county}`,
+    imageAlt: `California Hearing Center — audiology and hearing care serving ${name}${name === profile.county ? "" : `, ${profile.county}`}`,
   };
 }
 
