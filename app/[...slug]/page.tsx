@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { crawledPages, type SitePage } from "../data/crawledPages";
-import { CaliforniaHearingSite, blogMetaDescription, blogMetaTitle, blogOgImage, areaMetaTitle, areaMetaDescription } from "../site/CaliforniaHearingSite";
+import { CaliforniaHearingSite, blogMetaDescription, blogMetaTitle, blogOgImage, areaMetaTitle, areaMetaDescription, coreMetaTitle, coreMetaDescription } from "../site/CaliforniaHearingSite";
 
 type PageProps = {
   params: Promise<{ slug: string[] }>;
@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
-  const desc = blogMetaDescription(path) ?? areaMetaDescription(path) ?? metaDescription(page);
-  const title = areaMetaTitle(path) ?? blogMetaTitle(path, page.title);
+  const desc = blogMetaDescription(path) ?? areaMetaDescription(path) ?? coreMetaDescription(path) ?? metaDescription(page);
+  const title = areaMetaTitle(path) ?? coreMetaTitle(path) ?? blogMetaTitle(path, page.title);
   const ogImg = blogOgImage(path);
   const blogImage = ogImg ? [ogImg] : undefined;
 

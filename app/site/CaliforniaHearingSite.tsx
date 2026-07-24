@@ -1,6 +1,7 @@
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
+import { corePages } from "../data/corePages";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { EarJourneyHero } from "./EarJourneyHero";
 
@@ -19,7 +20,7 @@ export type PageContent = {
   headline: string;
   intro: string[];
   sections: [string, string][];
-  bullets: string[];
+  bullets?: string[];
   bulletLinks?: [label: string, href: string][]; // clickable feature list (overrides bullets when set)
   takeaways?: string[];
   faqs?: [string, string][];
@@ -918,8 +919,28 @@ export function blogOgImage(path: string): string | null {
   return blogPosts[path]?.image ?? null;
 }
 
+// Meta title/description for enriched core (service/product/tinnitus/facility) pages.
+export function coreMetaTitle(path: string): string | null {
+  const p = corePages[path];
+  if (!p) return null;
+  const brand = " | California Hearing Center";
+  const h = p.metaTitle || p.headline;
+  return h.length + brand.length <= 62 ? h + brand : h;
+}
+
+export function coreMetaDescription(path: string): string | null {
+  const p = corePages[path];
+  if (!p) return null;
+  if (p.metaDescription) return p.metaDescription;
+  const raw = plain(p.intro[0]).replace(/\s+/g, " ").trim();
+  if (raw.length <= 158) return raw;
+  const cut = raw.slice(0, 158);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:—-]$/, "").trim() + "…";
+}
+
 function buildPageContent(page: SitePage): PageContent {
   if (blogPosts[page.path]) return blogPosts[page.path];
+  if (corePages[page.path]) return corePages[page.path];
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const city = cityFromPath(page.path);
@@ -1286,11 +1307,13 @@ function InnerPage({ page }: { page: SitePage }) {
               </section>
             ))}
           </div>
-          <div className="feature-list">
-            {content.bulletLinks
-              ? content.bulletLinks.map(([label, href]) => <a key={label} href={href}>{label}</a>)
-              : content.bullets.map((bullet) => <span key={bullet}>{bullet}</span>)}
-          </div>
+          {(content.bulletLinks || content.bullets) && (
+            <div className="feature-list">
+              {content.bulletLinks
+                ? content.bulletLinks.map(([label, href]) => <a key={label} href={href}>{label}</a>)
+                : content.bullets!.map((bullet) => <span key={bullet}>{bullet}</span>)}
+            </div>
+          )}
           {content.faqs && (
             <section className="faq-block">
               <p className="section-kicker">Frequently asked questions</p>
