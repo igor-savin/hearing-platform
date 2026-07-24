@@ -1,5 +1,6 @@
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
+import { blogPosts as pilotBlogPosts } from "../data/blogPosts";
 import { EarJourneyHero } from "./EarJourneyHero";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
@@ -12,7 +13,7 @@ type NavItem = {
   items?: MenuLink[];
   mega?: boolean;
 };
-type PageContent = {
+export type PageContent = {
   kicker: string;
   headline: string;
   intro: string[];
@@ -22,7 +23,32 @@ type PageContent = {
   faqs?: [string, string][];
   image: string;
   imageLabel: string;
+  // Enriched blog fields (optional; only set for hand-written blog posts)
+  image2?: string;
+  image2Label?: string;
+  image2Caption?: string;
+  variant?: string;        // per-archetype visual treatment
+  datePublished?: string;  // ISO date (original publish) for BlogPosting schema
+  dateModified?: string;   // ISO date of last real edit
+  metaDescription?: string; // hand-written meta description (overrides auto)
+  metaTitle?: string;      // optional shorter title tag (overrides headline)
 };
+
+// Convert author-written [label](/internal/path) markdown links into anchors.
+// Only internal links (starting with "/") are permitted. Content is author-controlled.
+function linkify(text: string): string {
+  const esc = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return esc
+    // External citations: open in new tab, no referrer leak
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener nofollow">$1</a>')
+    // Internal contextual links
+    .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, '<a href="$2">$1</a>');
+}
+
+// Strip [label](href) markdown down to plain label — for headings/hero where a link is undesirable.
+function plain(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1");
+}
 
 const scheduleUrl =
   "https://www.zocdoc.com/practice/california-hearing-and-research-institute-inc-72249";
@@ -523,7 +549,79 @@ function tinnitusGuideContent(page: SitePage, pageTitle: string): PageContent {
   };
 }
 
+// Hand-written, topic-specific blog posts. Keyed by path. Checked first in
+// buildPageContent so they override the generic keyword templates.
+const blogPosts: Record<string, PageContent> = {
+  "/drive-safely-even-with-hearing-loss/": {
+    kicker: "Hearing & Safety",
+    headline: "Driving Safely When You Have Hearing Loss",
+    variant: "guide",
+    datePublished: "2017-11-06",
+    dateModified: "2026-07-23",
+    metaDescription: "Hearing loss rarely stops anyone from driving safely. Learn the visual habits, cabin tweaks, and well-fit hearing aids that keep you confident on the road.",
+    intro: [
+      "Most of driving is visual, but your ears still do real jobs behind the wheel: they tell you a siren is approaching, a horn is warning you from a blind spot, a tire has changed pitch, or your turn signal is still clicking. As [hearing loss](/hearing-testing/) sets in gradually, many drivers never notice how much of that early-warning information has quietly faded.",
+      "For the large majority of people, driving with hearing loss stays both legal and safe, provided you adapt. The strategy is straightforward: let your eyes and your technology take over the work your ears used to do.",
+      "Adapting comes down to a few specific changes, including a well-tuned [hearing aid fitting](/services/hearing-aid-fitting/) that makes directional sound useful again.",
+    ],
+    takeaways: [
+      "Hearing loss does not disqualify you from driving. Adapting your habits does the real work.",
+      "Lean harder on mirrors, blind-spot checks, and a quieter cabin.",
+      "Well-fit hearing aids help you locate sirens, horns, and turn signals.",
+      "An annual hearing check keeps your devices matched to how you hear on the road.",
+    ],
+    sections: [
+      ["What your hearing actually does while you drive", "Sound gives you early warning that your eyes have not caught up to yet: an ambulance two blocks away, a horn from a lane you cannot see, the scrape of a curb, or the click reminding you a signal is still on. Hearing loss rarely removes your ability to drive, but it can shrink this early-warning margin. The fix is to widen what your eyes are doing."],
+      ["Widen and speed up your visual scan", "With fewer audio cues to rely on, check mirrors and blind spots more often and more deliberately. Many drivers with hearing loss build the habit of a full mirror sweep every few seconds and a quick shoulder check before every lane change, a visual replacement for the old \"I heard something beside me\" instinct."],
+      ["Quiet the cabin so your remaining hearing works", "Wind, music, and conversation all mask the sounds that matter. Closing the windows, lowering the radio, and asking passengers to pause during merges gives whatever hearing you have, aided or not, a cleaner signal. If cars and restaurants feel equally hard, that overlap is a good reason to book a [hearing evaluation](/hearing-testing/)."],
+      ["Drive with well-fit hearing aids", "Modern hearing aids restore the high-frequency detail that helps you locate a siren or place a horn left-versus-right. The key word is well-fit: devices that are correctly programmed and verified make directional sound genuinely useful, not just louder. If yours feel flat, whistle, or cut out, a [fitting check or repair](/services/hearing-aid-repair/) usually solves it."],
+      ["Let visual technology fill the gap", "Blind-spot warning lights, rear and 360° cameras, cross-traffic alerts, and dashboard chimes paired with icons all turn a missed sound into something you can see. If you are choosing a vehicle, these features matter even more for a driver with hearing loss than for the average buyer."],
+      ["What about tinnitus behind the wheel?", "Some drivers worry more about ringing in the ears than about hearing loss itself. Tinnitus rarely makes driving unsafe, but if it spikes your anxiety on long or night drives, sound-based strategies help. Our [tinnitus resources](/tinnitus/) explain approaches that reduce how much the ringing intrudes."],
+      ["When to get your hearing checked", "If family point out sirens you missed, if you get startled by cars you never heard, or if you have quietly started avoiding night driving, those signs are worth acting on. A quick [hearing test](/hearing-testing/) tells you exactly where you stand and whether hearing aids would make the road feel easier."],
+    ],
+    bullets: ["Visual scanning", "Cabin noise control", "Well-fit hearing aids", "Vehicle safety tech", "Annual hearing check", "San Mateo & San Carlos"],
+    faqs: [
+      ["Is it legal to drive with hearing loss?", "Yes. In California and across the U.S., people with hearing loss, including profoundly deaf drivers, can legally hold a standard driver's license. Safe driving depends on adapting your habits, not on passing a hearing test."],
+      ["Do hearing aids help while driving?", "When they are well fit, yes. They restore the high-pitched detail that helps you notice and locate sirens, horns, and turn-signal clicks. If your aids sound flat or cut out, have them checked before your next long drive."],
+      ["Should I wear my hearing aids in the car?", "For most people, yes. A modern, properly programmed device improves awareness without turning wind and road noise into a distraction. If the cabin feels overwhelming, a small programming adjustment usually fixes it."],
+      ["How do I know if my hearing is affecting my driving?", "Common signs include missing sirens until they are close, being startled by nearby cars, or avoiding night driving. A brief hearing evaluation clarifies whether your hearing, your devices, or neither needs attention."],
+    ],
+    image: "/assets/blog/drive-safely-cabin.svg",
+    imageLabel: "Replace missed sounds with a wider visual scan",
+    image2: "/assets/blog/drive-safely-adaptations.svg",
+    image2Label: "Five habits our audiologists recommend for drivers with hearing loss",
+    image2Caption: "A wider visual scan and well-fit hearing aids keep you confident on the road.",
+  },
+  ...pilotBlogPosts,
+};
+
+// Topic-specific meta description for enriched blog posts (used by generateMetadata).
+export function blogMetaDescription(path: string): string | null {
+  const post = blogPosts[path];
+  if (!post) return null;
+  if (post.metaDescription) return post.metaDescription;
+  // Fallback: clean word-boundary cut (never mid-word) of the first paragraph.
+  const raw = plain(post.intro[0]).replace(/\s+/g, " ").trim();
+  if (raw.length <= 158) return raw;
+  const cut = raw.slice(0, 158);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:—-]$/, "").trim() + "…";
+}
+
+export function blogMetaTitle(path: string, fallback: string): string {
+  const post = blogPosts[path];
+  if (!post) return fallback;
+  if (post.metaTitle) return post.metaTitle;
+  const brand = " | California Hearing Center";
+  const h = post.headline;
+  return h.length + brand.length <= 60 ? h + brand : h;
+}
+
+export function blogOgImage(path: string): string | null {
+  return blogPosts[path]?.image ?? null;
+}
+
 function buildPageContent(page: SitePage): PageContent {
+  if (blogPosts[page.path]) return blogPosts[page.path];
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const city = cityFromPath(page.path);
@@ -687,7 +785,7 @@ function faqSchema(page: SitePage, content: PageContent) {
       "name": question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": answer
+        "text": plain(answer)
       }
     }))
   };
@@ -715,11 +813,48 @@ function breadcrumbSchema(page: SitePage) {
   };
 }
 
+function articleSchema(page: SitePage, content: PageContent) {
+  // Only hand-written blog posts (marked by datePublished) get BlogPosting.
+  if (!content.datePublished) return null;
+  const images = [content.image, content.image2].filter(Boolean).map((src) => `${SITE}${src}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${SITE}${page.path}#article`,
+    headline: content.headline,
+    description: content.intro[0]?.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1").slice(0, 160),
+    image: images,
+    datePublished: content.datePublished,
+    dateModified: content.dateModified || content.datePublished,
+    inLanguage: "en-US",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${page.path}` },
+    author: {
+      "@type": "Organization",
+      name: "California Hearing Center Clinical Team",
+      "@id": `${SITE}/#clinical-team`,
+      url: `${SITE}/about-us/`,
+      parentOrganization: { "@id": `${SITE}/#organization` },
+    },
+    reviewedBy: { "@id": `${SITE}/#clinical-team` },
+    publisher: { "@id": `${SITE}/#organization` },
+    about: { "@type": "MedicalCondition", name: "Hearing loss" },
+  };
+}
+
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+function fmtDate(iso?: string): string {
+  if (!iso) return "";
+  const [y, m, d] = iso.split("-").map(Number);
+  if (!y || !m || !d) return "";
+  return `${MONTHS[m - 1]} ${d}, ${y}`;
+}
+
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const content = buildPageContent(page);
-  const jsonLd = [breadcrumbSchema(page), faqSchema(page, content)].filter(Boolean);
+  const isBlog = !!content.datePublished;
+  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content)].filter(Boolean);
   const related = crawledPages
     .filter((item) => item.path !== page.path && getPageKind(item) === kind)
     .slice(0, 8);
@@ -736,7 +871,7 @@ function InnerPage({ page }: { page: SitePage }) {
         <div className="container">
           <p className="eyebrow">{content.kicker}</p>
           <h1>{content.headline}</h1>
-          <p>{content.intro[0]}</p>
+          <p>{plain(content.intro[0])}</p>
           <div className="hero-actions">
             <a className="button primary" href="/contact/">Request an Appointment</a>
             <a className="button ghost" href="tel:6503429449">650-342-9449</a>
@@ -747,10 +882,18 @@ function InnerPage({ page }: { page: SitePage }) {
       <section className="content-grid container">
         <article className="copy-card">
           <p className="section-kicker">{kind === "area" ? "Local care, close by" : content.kicker}</p>
-          <h2>{pageTitle}</h2>
+          {isBlog ? (
+            <p className="post-byline">
+              Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a>
+              {content.datePublished ? <> · Published {fmtDate(content.datePublished)}</> : null}
+              {content.dateModified && content.dateModified !== content.datePublished ? <> · Updated {fmtDate(content.dateModified)}</> : null}
+            </p>
+          ) : (
+            <h2>{pageTitle}</h2>
+          )}
           <div className="intro-copy">
             {content.intro.map((paragraph, index) => (
-              <p className={index === 0 ? "lead-copy" : undefined} key={paragraph}>{paragraph}</p>
+              <p className={index === 0 ? "lead-copy" : undefined} key={paragraph} dangerouslySetInnerHTML={{ __html: linkify(paragraph) }} />
             ))}
           </div>
           {content.takeaways && (
@@ -762,10 +905,16 @@ function InnerPage({ page }: { page: SitePage }) {
             </section>
           )}
           <div className="section-stack">
-            {content.sections.map(([heading, text]) => (
+            {content.sections.map(([heading, text], index) => (
               <section key={heading}>
                 <h3>{heading}</h3>
-                <p>{text}</p>
+                <p dangerouslySetInnerHTML={{ __html: linkify(text) }} />
+                {content.image2 && index === 2 && (
+                  <figure className="body-figure">
+                    <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                    {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
+                  </figure>
+                )}
               </section>
             ))}
           </div>
@@ -779,7 +928,7 @@ function InnerPage({ page }: { page: SitePage }) {
               {content.faqs.map(([question, answer]) => (
                 <details key={question} open>
                   <summary>{question}</summary>
-                  <p>{answer}</p>
+                  <p dangerouslySetInnerHTML={{ __html: linkify(answer) }} />
                 </details>
               ))}
             </section>
@@ -787,7 +936,7 @@ function InnerPage({ page }: { page: SitePage }) {
         </article>
         <aside className="sidebar-card">
           <div className="page-visual">
-            <img src={content.image} alt="" />
+            <img src={content.image} alt={content.imageLabel || ""} />
             <span>{content.imageLabel}</span>
           </div>
           <h3>Set up your FREE hearing consultation</h3>

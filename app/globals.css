@@ -1903,3 +1903,49 @@ p {
     transition: none;
   }
 }
+
+/* Enriched blog posts: in-body figure + contextual links */
+.body-figure {
+  margin: 1.5rem 0 0.5rem;
+}
+.body-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 24px rgba(21, 95, 107, 0.08);
+}
+.body-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
+.intro-copy a,
+.section-stack a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  font-weight: 600;
+}
+.intro-copy a:hover,
+.section-stack a:hover {
+  color: var(--orange);
+}
+
+/* Blog post byline (provenance / EEAT) */
+.post-byline {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+.post-byline a {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+.post-byline a:hover { text-decoration: underline; }

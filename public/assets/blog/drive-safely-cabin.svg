@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="First-person driving view: mirrors and the road are highlighted to show how a wider visual scan replaces missed sounds for drivers with hearing loss">
+  <defs>
+    <linearGradient id="cabin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c3a42"/>
+      <stop offset="1" stop-color="#102a30"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3e6"/>
+      <stop offset="0.55" stop-color="#dff1f0"/>
+      <stop offset="1" stop-color="#eef7f4"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c3d2d1"/>
+      <stop offset="1" stop-color="#9fb3b2"/>
+    </linearGradient>
+    <linearGradient id="dashface" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#24454e"/>
+      <stop offset="1" stop-color="#16333a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e0ae3c" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#e0ae3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.2" r="0.8">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- cabin ground -->
+  <rect width="800" height="560" fill="url(#cabin)"/>
+
+  <!-- windshield opening -->
+  <path d="M96 70 H704 Q724 70 721 92 L706 356 H94 L79 92 Q76 70 96 70 Z" fill="url(#glass)"/>
+  <ellipse cx="400" cy="120" rx="260" ry="90" fill="url(#sun)"/>
+
+  <!-- road with perspective -->
+  <path d="M150 356 H650 L470 214 H330 Z" fill="url(#road)"/>
+  <path d="M400 356 L408 220 H392 Z" fill="#f6f2e6"/>
+  <path d="M300 356 L342 220 M500 356 L458 220" stroke="#eef2ee" stroke-width="7" stroke-linecap="round" stroke-dasharray="20 22" opacity="0.85"/>
+  <!-- lead car with brake lights (a visual cue) -->
+  <g>
+    <rect x="360" y="236" width="80" height="42" rx="10" fill="#7d9599"/>
+    <rect x="360" y="232" width="80" height="16" rx="8" fill="#8fa6a9"/>
+    <rect x="369" y="258" width="16" height="11" rx="4" fill="#f05a28"/>
+    <rect x="415" y="258" width="16" height="11" rx="4" fill="#f05a28"/>
+    <ellipse cx="377" cy="263" rx="16" ry="9" fill="url(#glow)" opacity="0.5"/>
+    <ellipse cx="423" cy="263" rx="16" ry="9" fill="url(#glow)" opacity="0.5"/>
+  </g>
+
+  <!-- rear-view mirror -->
+  <g>
+    <rect x="360" y="78" width="80" height="26" rx="13" fill="#0e2930" stroke="#3a5a61" stroke-width="2"/>
+    <rect x="368" y="84" width="64" height="14" rx="7" fill="#4a6b70"/>
+    <rect x="396" y="70" width="8" height="12" rx="3" fill="#0e2930"/>
+  </g>
+
+  <!-- visual-scan path: eye sweeps from mirror to mirror across the road -->
+  <path d="M150 330 Q400 150 650 330" fill="none" stroke="#e0ae3c" stroke-width="3" stroke-dasharray="3 12" stroke-linecap="round" opacity="0.9"/>
+  <!-- eye icon at apex of the scan -->
+  <g transform="translate(400 196)">
+    <path d="M-26 0 Q0 -20 26 0 Q0 20 -26 0 Z" fill="#fffdf5" stroke="#155f6b" stroke-width="2.5"/>
+    <circle cx="0" cy="0" r="8.5" fill="#155f6b"/>
+    <circle cx="3" cy="-3" r="2.6" fill="#fffdf5"/>
+  </g>
+
+  <!-- LEFT side mirror, highlighted -->
+  <g>
+    <circle cx="132" cy="330" r="72" fill="url(#glow)"/>
+    <rect x="72" y="300" width="120" height="66" rx="14" fill="#0b2429" stroke="#86d0d5" stroke-width="4"/>
+    <rect x="82" y="309" width="100" height="48" rx="8" fill="#3f6167"/>
+    <rect x="86" y="311" width="96" height="20" rx="6" fill="#7fb0b3" opacity="0.6"/>
+    <!-- approaching car in the mirror -->
+    <rect x="120" y="330" width="40" height="20" rx="5" fill="#d7e6e4"/>
+    <rect x="126" y="326" width="28" height="8" rx="4" fill="#c2d6d4"/>
+  </g>
+
+  <!-- RIGHT side mirror, highlighted with emergency-light reflection -->
+  <g>
+    <circle cx="668" cy="330" r="72" fill="url(#glow)"/>
+    <rect x="608" y="300" width="120" height="66" rx="14" fill="#0b2429" stroke="#86d0d5" stroke-width="4"/>
+    <rect x="618" y="309" width="100" height="48" rx="8" fill="#3f6167"/>
+    <!-- flashing emergency lights reflected (see them, don't rely on the siren) -->
+    <rect x="642" y="322" width="20" height="12" rx="3" fill="#f05a28"/>
+    <rect x="668" y="322" width="20" height="12" rx="3" fill="#2f7fd6"/>
+    <ellipse cx="652" cy="328" rx="16" ry="10" fill="#f05a28" opacity="0.35"/>
+    <ellipse cx="678" cy="328" rx="16" ry="10" fill="#2f7fd6" opacity="0.35"/>
+  </g>
+
+  <!-- muted-sound motif, top-left: audio you can no longer rely on -->
+  <g transform="translate(150 128)" opacity="0.9">
+    <path d="M0 0 A22 22 0 0 1 0 44" fill="none" stroke="#6b8086" stroke-width="4" stroke-linecap="round"/>
+    <path d="M14 -8 A38 38 0 0 1 14 60" fill="none" stroke="#6b8086" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-10" y1="46" x2="34" y2="-6" stroke="#f05a28" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- dashboard -->
+  <path d="M40 356 H760 V470 Q760 496 734 496 H66 Q40 496 40 470 Z" fill="url(#dashface)"/>
+  <path d="M40 356 H760 V372 H40 Z" fill="#2c525b" opacity="0.6"/>
+  <!-- instrument cluster glow -->
+  <rect x="300" y="386" width="200" height="46" rx="12" fill="#0e2930"/>
+  <circle cx="345" cy="409" r="15" fill="none" stroke="#86d0d5" stroke-width="3"/>
+  <circle cx="455" cy="409" r="15" fill="none" stroke="#86d0d5" stroke-width="3"/>
+  <rect x="378" y="401" width="44" height="16" rx="4" fill="#1c3a42" stroke="#3a5a61" stroke-width="1.5"/>
+
+  <!-- steering wheel: framed at the bottom, clear of the mirrors -->
+  <g>
+    <circle cx="400" cy="600" r="150" fill="none" stroke="#0a2127" stroke-width="30"/>
+    <circle cx="400" cy="600" r="150" fill="none" stroke="#16333a" stroke-width="10"/>
+    <circle cx="400" cy="600" r="48" fill="#0a2127"/>
+    <path d="M400 552 V648 M330 600 H470" stroke="#0a2127" stroke-width="20" stroke-linecap="round"/>
+  </g>
+
+  <!-- subtle wordmark -->
+  <text x="760" y="540" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#7fa1a6" letter-spacing="0.4">California Hearing Center</text>
+</svg>
