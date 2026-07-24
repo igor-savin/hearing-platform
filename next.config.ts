@@ -4,6 +4,7 @@ import type { NextConfig } from "next";
 // posts point to their most relevant canonical, pillar, or areas-we-serve page.
 // Regenerate via scratchpad curation flow if the keep/redirect split changes.
 const blogRedirects = [
+      { source: "/what-are-invisible-in-canal-iic-hearing-aids", destination: "/what-are-invisible-hearing-aids", permanent: true },
       { source: "/what-is-the-1-hearing-aid", destination: "/hearing-aid-care-2025", permanent: true },
       { source: "/will-hearing-aids-help-tinnitus", destination: "/can-hearing-aids-help-tinnitus", permanent: true },
       { source: "/tesla-robotaxi-hearing-loss-hearing-aids", destination: "/waymo-robotaxi-hearing-loss-hearing-aids", permanent: true },

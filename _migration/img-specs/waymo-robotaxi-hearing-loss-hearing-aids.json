@@ -1,0 +1,12 @@
+{
+  "slug": "waymo-robotaxi-hearing-loss-hearing-aids",
+  "hero": { "title": "Rides, Restored Freedom", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Hearing Through a Driverless Ride", "subtitle": "Where your ears still do the work",
+    "rows": [
+      {"title": "Summon the ride", "desc": "Set your pickup in the app, no call needed"},
+      {"title": "Pickup alert", "desc": "Notifications stream to Bluetooth hearing aids"},
+      {"title": "Support on the line", "desc": "Hear help clearly if a pickup goes sideways"},
+      {"title": "Stay aware", "desc": "Catch horns and sirens at the curb"},
+      {"title": "Arrive connected", "desc": "Move through your day on your own terms"}
+    ] }
+}

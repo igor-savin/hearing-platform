@@ -1,0 +1,38 @@
+  "/hearing-aid-warranties-repair-loss-damage/": {
+    kicker: "Hearing Aids & Care",
+    headline: "Hearing Aid Warranties: Repair, Loss, and Damage",
+    metaTitle: "Hearing Aid Warranties: Repair, Loss & Damage",
+    variant: "product",
+    datePublished: "2026-04-04",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Most hearing aid warranties cover repairs and defects, and many add loss-and-damage protection for a few years. Here is what is included and how to use it.",
+    intro: [
+      "A hearing aid warranty is a promise from the manufacturer to repair or replace your device if something goes wrong within a set window. Most new [hearing aids](/products/hearing-aids/) come with one folded into the purchase price, and the coverage is usually broader than people expect. Knowing what yours includes saves money and stress the first time a device stops working the way it should.",
+      "Two kinds of protection tend to travel together. The first is a repair warranty for defects and ordinary breakdowns; the second is loss-and-damage coverage, which steps in when a device is dropped, crushed, soaked, or misplaced. Terms and length vary by brand and by the level you bought, so the paperwork on your specific aids matters more than any general rule of thumb.",
+      "At our San Mateo and San Carlos offices we register every device we fit and keep the records on file, so when you need a [repair](/services/hearing-aid-repair/) we already know what your coverage allows. If you bought elsewhere or lost track of the terms, bring the aids in and we can help you sort out what still applies.",
+    ],
+    takeaways: [
+      "Most warranties cover manufacturer defects and repairs for a set period, commonly a few years on new devices.",
+      "Loss-and-damage coverage is usually separate and may include a one-time replacement, sometimes with a service fee.",
+      "Register your devices and keep receipts; your audiologist can handle most warranty repairs on your behalf.",
+    ],
+    sections: [
+      ["The repair warranty, in plain terms", "This is the part most people picture when they hear the word warranty. It covers manufacturer defects and the kinds of electronic or mechanical failures that are not your fault, for a defined period after purchase. When a covered device needs work, it often goes back to the manufacturer, and a good clinic sends it out, tracks it, and lends you a loaner so you are not left without sound. Booking a visit for a [professional repair](/services/hearing-aid-repair/) is usually faster and cleaner than dealing with the maker directly."],
+      ["Loss and damage: the coverage people forget they have", "Everyday accidents are exactly what this coverage exists for. Drop an aid on tile, leave one in a coat that goes through the wash, or lose one on a walk, and loss-and-damage protection can replace it. Many plans allow a single replacement per aid during the coverage term, and some apply a modest service fee. Because a hearing aid is a real investment, this piece is often worth more than the repair warranty over the life of the device. Coverage levels differ by [brand](/products/hearing-aids-by-brand/), so it pays to know which tier you have before something happens."],
+      ["Where the coverage ends", "No warranty covers everything, and the gaps are predictable. Once the coverage window closes, repairs shift to a paid basis. A second loss after you have used your one replacement usually is not covered. Consumable parts, such as wax guards, domes, and batteries, are treated as normal upkeep rather than warranty items, and damage that traces back to skipped maintenance can be excluded. Keeping ears and devices clean, including regular [earwax removal](/services/earwax-removal/), heads off a share of the problems that fall outside coverage anyway."],
+      ["Filling the gaps after the factory warranty", "When the original term runs out, you still have ways to stay protected. Some manufacturers sell renewal plans that extend repair and loss coverage for an added cost. In certain cases a homeowner's or renter's policy, or a dedicated device rider, can cover loss or accidental damage, though deductibles and terms vary widely. It is also worth checking whether any [insurance benefit](/resources/insurance/) you carry touches hearing devices at all. We can walk through which route fits your budget and how you tend to use your aids."],
+      ["How a warranty repair actually gets done", "When a device acts up, the first step is a diagnosis, not a shipment. Many issues, like a clogged port or a worn tube, are solved in the office the same day. When a device genuinely needs the manufacturer, we confirm your coverage, handle the paperwork, and manage the return so the process stays simple on your end. Our [team](/about-us/) has done this hundreds of times, and if a repair does not make sense against the cost, we will tell you plainly and talk through the alternatives. You can always [reach us](/contact/) to start that conversation."],
+    ],
+    bullets: ["Manufacturer defects", "Loss & damage", "Replacement fees", "Coverage windows", "Extended plans", "In-office repairs"],
+    faqs: [
+      ["How long does a hearing aid warranty last?", "It depends on the brand and the level you purchased. Newer, higher-tier devices generally carry a longer window than entry-level ones, and loss-and-damage coverage sometimes runs shorter than the repair portion. Check the paperwork that came with your aids, or bring them in and we will look up the terms with you."],
+      ["Is loss and damage really covered?", "In many cases, yes, at least for a first incident. A lot of warranties include one replacement per aid if it is lost or badly damaged, occasionally with a service fee. After that first claim you may need to add coverage, so it is worth confirming where you stand before anything goes wrong."],
+      ["What if my warranty has already expired?", "You still have options. Plenty of repairs can be done out of warranty for a flat fee, and some brands sell paid renewal plans. Bring the devices to our team and we will help you weigh whether a repair, a renewal, or a new [fitting](/services/hearing-aid-fitting/) makes the most sense for your situation."],
+    ],
+    image: "/assets/blog/hearing-aid-warranties-repair-loss-damage-1.svg",
+    imageLabel: "Coverage that protects your investment from day one",
+    image2: "/assets/blog/hearing-aid-warranties-repair-loss-damage-2.svg",
+    image2Label: "What warranties typically cover, and where the limits fall",
+    image2Caption: "Repair and loss-and-damage coverage overlap, but each has its own window and its own fine print.",
+  },

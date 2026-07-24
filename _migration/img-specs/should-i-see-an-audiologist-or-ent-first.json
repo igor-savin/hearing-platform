@@ -1,0 +1,13 @@
+{
+  "slug": "should-i-see-an-audiologist-or-ent-first",
+  "hero": { "title": "Audiologist or ENT?", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Who to See First", "subtitle": "Matching your symptom to the right first appointment",
+    "rows": [
+      {"title": "Gradual hearing loss", "desc": "Start with a full hearing evaluation"},
+      {"title": "Sudden hearing loss", "desc": "See a physician the same day"},
+      {"title": "Ear pain or drainage", "desc": "Needs a doctor, not a hearing test"},
+      {"title": "Ringing or fullness", "desc": "Audiologist assesses and refers if needed"},
+      {"title": "Dizziness or vertigo", "desc": "Have a physician evaluate it first"}
+    ]
+  }
+}

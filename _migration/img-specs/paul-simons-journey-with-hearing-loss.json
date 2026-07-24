@@ -1,0 +1,12 @@
+{
+  "slug": "paul-simons-journey-with-hearing-loss",
+  "hero": { "title": "Sudden Hearing Loss", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Sudden Hearing Loss: Act Fast", "subtitle": "Why a rapid change in hearing is a medical emergency",
+    "rows": [
+      {"title": "Notice a sudden drop", "desc": "Hearing fades over hours or overnight"},
+      {"title": "Watch for warning signs", "desc": "Fullness, new ringing, or dizziness"},
+      {"title": "Often just one ear", "desc": "Easy to miss until you use a phone"},
+      {"title": "Seek care within days", "desc": "The treatment window is short"},
+      {"title": "Get tested and treated", "desc": "Prompt care improves the odds of recovery"}
+    ] }
+}

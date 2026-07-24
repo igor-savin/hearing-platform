@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aids-cost-2026-otc-vs-prescription",
+  "hero": { "title": "OTC vs. Prescription", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Comparing Cost and Value", "subtitle": "What each path includes beyond the price tag",
+    "rows": [
+      {"title": "Up-front price", "desc": "OTC lower; prescription typically higher"},
+      {"title": "Hearing test", "desc": "Optional for OTC, but it prevents guesswork"},
+      {"title": "Fitting", "desc": "Self-fit vs. programming to your audiogram"},
+      {"title": "Follow-up care", "desc": "Ongoing adjustments and repair vs. app and manual"},
+      {"title": "Total value", "desc": "Weigh service and support, not price alone"}
+    ] }
+}

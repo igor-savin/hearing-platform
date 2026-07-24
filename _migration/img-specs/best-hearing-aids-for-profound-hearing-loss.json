@@ -1,0 +1,12 @@
+{
+  "slug": "best-hearing-aids-for-profound-hearing-loss",
+  "hero": { "title": "Power Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Choosing Aids for Profound Loss", "subtitle": "How power devices deliver more usable sound",
+    "rows": [
+      {"title": "Power BTE", "desc": "Larger receiver and more gain for severe loss"},
+      {"title": "Super-Power BTE", "desc": "Highest output for the deepest profound loss"},
+      {"title": "Custom Earmold", "desc": "Seals the canal and controls feedback"},
+      {"title": "Real-Ear Verified", "desc": "Fitting matched to your exact prescription"},
+      {"title": "Implant Referral", "desc": "When aids reach their limit, see a physician"}
+    ] }
+}

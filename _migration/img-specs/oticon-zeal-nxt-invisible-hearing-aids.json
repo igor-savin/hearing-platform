@@ -1,0 +1,12 @@
+{
+  "slug": "oticon-zeal-nxt-invisible-hearing-aids",
+  "hero": { "title": "Invisible Hearing Aids", "icon": "hidden", "accent": "aqua" },
+  "info": { "title": "Is an Invisible Aid Right for You?", "subtitle": "Five factors to weigh before you choose",
+    "rows": [
+      {"title": "Where it sits", "desc": "Deep in the canal, hidden from view"},
+      {"title": "Your hearing loss", "desc": "Smallest styles suit milder losses"},
+      {"title": "Ear canal shape", "desc": "Needs room for a deep, secure fit"},
+      {"title": "Size trade-offs", "desc": "Smaller battery and fewer controls"},
+      {"title": "Wax and upkeep", "desc": "Daily cleaning keeps it working well"}
+    ] }
+}

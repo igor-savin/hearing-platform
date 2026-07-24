@@ -1,0 +1,12 @@
+{
+  "slug": "how-much-are-hearing-aids-with-insurance",
+  "hero": { "title": "Hearing Aids & Insurance", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Pin Down Your Real Cost", "subtitle": "Five steps to know what you'll actually pay",
+    "rows": [
+      {"title": "Check your plan", "desc": "Coverage ranges from a full benefit to none"},
+      {"title": "Ask about Medicare", "desc": "Original Medicare excludes hearing aids"},
+      {"title": "Bundled or unbundled", "desc": "Know what the quoted price includes"},
+      {"title": "Use HSA or FSA", "desc": "Pre-tax dollars usually qualify"},
+      {"title": "Verify before buying", "desc": "We confirm your benefits first"}
+    ] }
+}

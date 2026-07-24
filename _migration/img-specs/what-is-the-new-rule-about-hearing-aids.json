@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-the-new-rule-about-hearing-aids",
+  "hero": { "title": "OTC Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "How the OTC Rule Works", "subtitle": "Who qualifies and how the devices differ from prescription",
+    "rows": [
+      {"title": "Adults 18 and up", "desc": "For self-perceived mild-to-moderate loss only"},
+      {"title": "No prescription", "desc": "Buy in stores or online, no exam required"},
+      {"title": "Self-fit by app", "desc": "You choose and tune within preset ranges"},
+      {"title": "Not amplifiers", "desc": "Real hearing aids, unlike PSAP gadgets"},
+      {"title": "Know the red flags", "desc": "Sudden, one-sided, or painful loss needs a pro"}
+    ] }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "does-social-security-pay-for-hearing-aids",
+  "hero": { "title": "Who Pays for Aids?", "icon": "shield", "accent": "aqua" },
+  "info": { "title": "Who Pays for Hearing Aids?", "subtitle": "How each program stacks up for coverage",
+    "rows": [
+      {"title": "Original Medicare", "desc": "Generally does not cover hearing aids"},
+      {"title": "Medicare Advantage", "desc": "May include a hearing aid benefit"},
+      {"title": "Social Security", "desc": "Pays income, not hearing aids"},
+      {"title": "Medicaid", "desc": "Coverage varies by state and eligibility"},
+      {"title": "VA benefits", "desc": "May cover aids for eligible veterans"}
+    ] }
+}
