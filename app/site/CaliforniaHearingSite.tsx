@@ -1242,6 +1242,9 @@ function InnerPage({ page }: { page: SitePage }) {
           ) : (
             <h2>{pageTitle}</h2>
           )}
+          {kind === "area" && (
+            <p className="post-byline">Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a></p>
+          )}
           <div className="intro-copy">
             {/* Area pages already show intro[0] in the hero — start from [1] to avoid repeating it. */}
             {(kind === "area" ? content.intro.slice(1) : content.intro).map((paragraph, index) => (
