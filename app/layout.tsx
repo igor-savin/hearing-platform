@@ -41,8 +41,11 @@ const organizationSchema = {
   department: [
     {
       "@type": "MedicalClinic",
+      "@id": `${siteUrl}/#san-mateo`,
       name: "California Hearing Center \u2014 San Mateo",
       telephone: "+1-650-342-9449",
+      medicalSpecialty: "Audiology",
+      priceRange: "$$",
       address: {
         "@type": "PostalAddress",
         streetAddress: "88 N. San Mateo Drive",
@@ -51,11 +54,17 @@ const organizationSchema = {
         postalCode: "94401",
         addressCountry: "US",
       },
+      // Approximate coordinates for the street address \u2014 verify against the GBP pin.
+      geo: { "@type": "GeoCoordinates", latitude: 37.5686, longitude: -122.3245 },
+      hasMap: "https://www.google.com/maps/search/?api=1&query=88+N+San+Mateo+Drive+San+Mateo+CA+94401",
     },
     {
       "@type": "MedicalClinic",
+      "@id": `${siteUrl}/#san-carlos`,
       name: "California Hearing Center \u2014 San Carlos",
       telephone: "+1-650-342-9449",
+      medicalSpecialty: "Audiology",
+      priceRange: "$$",
       address: {
         "@type": "PostalAddress",
         streetAddress: "1008 Laurel Street",
@@ -64,6 +73,9 @@ const organizationSchema = {
         postalCode: "94070",
         addressCountry: "US",
       },
+      // Approximate coordinates for the street address \u2014 verify against the GBP pin.
+      geo: { "@type": "GeoCoordinates", latitude: 37.5011, longitude: -122.2607 },
+      hasMap: "https://www.google.com/maps/search/?api=1&query=1008+Laurel+Street+San+Carlos+CA+94070",
     },
   ],
   areaServed: [

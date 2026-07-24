@@ -1949,3 +1949,32 @@ p {
   text-decoration: none;
 }
 .post-byline a:hover { text-decoration: underline; }
+
+/* Blog-to-blog "Related reading" module */
+.related-articles {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.related-articles ul {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.related-articles li a {
+  display: block;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f7fbfa;
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color .12s, background .12s;
+}
+.related-articles li a:hover {
+  border-color: var(--aqua);
+  background: #eef8f6;
+}
