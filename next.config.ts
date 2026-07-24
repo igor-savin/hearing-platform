@@ -4,6 +4,19 @@ import type { NextConfig } from "next";
 // posts point to their most relevant canonical, pillar, or areas-we-serve page.
 // Regenerate via scratchpad curation flow if the keep/redirect split changes.
 const blogRedirects = [
+      { source: "/sleeping-with-hearing-aids-everything-you-need-to-know", destination: "/is-it-ok-to-leave-hearing-aids-in-overnight", permanent: true },
+      { source: "/is-it-better-to-go-to-an-audiologist-for-hearing-aids", destination: "/is-it-better-to-get-a-hearing-aid-from-an-audiologist", permanent: true },
+      { source: "/hearing-aid-buying-guide-2025-expert-tips-from-california-hearing-center", destination: "/should-you-get-a-hearing-aid", permanent: true },
+      { source: "/self-driving-cars-hearing-aids-waymo-accessibility", destination: "/waymo-robotaxi-hearing-loss-hearing-aids", permanent: true },
+      { source: "/how-much-does-costco-charge-for-hearing-aids", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/what-is-the-average-cost-of-a-costco-hearing-aid", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/does-medicare-pay-for-hearing-aids-at-costco", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/why-did-costco-stop-selling-kirkland-hearing-aid", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/does-costco-only-sell-over-the-counter-hearing-aids", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/do-i-need-a-membership-to-buy-hearing-aids-from-costco", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/are-costco-hearing-tests-done-by-audiologists", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/costco-vs-audiologist-hearing-aid-care-model", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
+      { source: "/costco-hearing-aids-vs-a-private-audiologist-what-is-the-difference", destination: "/what-is-the-best-hearing-aid-sold-at-costco", permanent: true },
       { source: "/what-are-invisible-in-canal-iic-hearing-aids", destination: "/what-are-invisible-hearing-aids", permanent: true },
       { source: "/what-is-the-1-hearing-aid", destination: "/hearing-aid-care-2025", permanent: true },
       { source: "/will-hearing-aids-help-tinnitus", destination: "/can-hearing-aids-help-tinnitus", permanent: true },

@@ -1,5 +1,18 @@
 // Paths that 301-redirect (from next.config.ts); excluded from the sitemap.
 export const redirectedPaths = new Set<string>([
+  "/sleeping-with-hearing-aids-everything-you-need-to-know/",
+  "/is-it-better-to-go-to-an-audiologist-for-hearing-aids/",
+  "/hearing-aid-buying-guide-2025-expert-tips-from-california-hearing-center/",
+  "/self-driving-cars-hearing-aids-waymo-accessibility/",
+  "/how-much-does-costco-charge-for-hearing-aids/",
+  "/what-is-the-average-cost-of-a-costco-hearing-aid/",
+  "/does-medicare-pay-for-hearing-aids-at-costco/",
+  "/why-did-costco-stop-selling-kirkland-hearing-aid/",
+  "/does-costco-only-sell-over-the-counter-hearing-aids/",
+  "/do-i-need-a-membership-to-buy-hearing-aids-from-costco/",
+  "/are-costco-hearing-tests-done-by-audiologists/",
+  "/costco-vs-audiologist-hearing-aid-care-model/",
+  "/costco-hearing-aids-vs-a-private-audiologist-what-is-the-difference/",
   "/what-are-invisible-in-canal-iic-hearing-aids/",
   "/what-is-the-1-hearing-aid/",
   "/will-hearing-aids-help-tinnitus/",
