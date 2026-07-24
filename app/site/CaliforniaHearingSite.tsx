@@ -540,9 +540,16 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     "Reach the team at 650-342-9449 to schedule and plan your visit.",
     "One call to 650-342-9449 sets up your appointment and answers any questions.",
   ]);
+  // approxDrive states where the city sits relative to the offices (e.g. "40
+  // minutes south"). In the "Getting to us" heading that compass word can read as
+  // a drive instruction (you actually drive the opposite way). Strip it only when
+  // it reads that way — never when it's "north OF our office" (a position phrase).
+  const driveDesc = profile.approxDrive
+    .replace(/\.$/, "")
+    .replace(/\b(minutes?|hours?)\s+(north|south|east|west|northeast|northwest|southeast|southwest)(?=\s+(?:on|in|via|over|across|up|down)\b|,|$)/i, "$1");
   const gettingHere: [string, string] = [
     `Getting to us from ${name}`,
-    `${cap(profile.approxDrive.replace(/\.$/, ""))}. ${profile.landmarks ?? ""} ${closer}`.replace(/\s+/g, " ").trim(),
+    `${cap(driveDesc)}. ${profile.landmarks ?? ""} ${closer}`.replace(/\s+/g, " ").trim(),
   ];
 
   // Order: signature hook, then the local-scene detail, then directions.
@@ -606,7 +613,13 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
         ? `${name} patients can see ${service.label} at California Hearing Center's ${office} office.`
         : `${name} patients can get ${service.label.toLowerCase().replace(/,.*/, "")} at California Hearing Center's ${office} office.`
       : profile.distanceTier === "far"
-        ? `Patients travel to California Hearing Center from ${name} for specialized tinnitus and hearing care; our offices are in San Mateo and San Carlos.`
+        ? pickFrom(seed + ":far", [
+            `Patients travel to California Hearing Center from ${name} for specialized tinnitus and hearing care — our offices are in San Mateo and San Carlos.`,
+            `${name} patients who come to us usually want specialized tinnitus, Lenire, or complex-fitting care; our two offices are on the Peninsula.`,
+            `We see ${name} patients at our San Mateo and San Carlos offices, most often for tinnitus care or a second opinion.`,
+            `California Hearing Center is Peninsula-based (San Mateo and San Carlos); ${name} patients make the trip for care they can't find closer.`,
+            `For ${name}, we're a destination for tinnitus and difficult fittings rather than routine visits — the offices are in San Mateo and San Carlos.`,
+          ])
         : `California Hearing Center serves ${name} from our ${office} office — ${driveShort}.`,
     trustBullet,
     scopeBullet,

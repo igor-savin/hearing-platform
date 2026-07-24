@@ -142,12 +142,12 @@ export const cityProfiles: Record<string, CityProfile> = {
     county: "Contra Costa County",
     region: "east-bay",
     nearestOffice: "San Mateo",
-    approxDrive: "roughly 70 minutes northeast",
+    approxDrive: "roughly 70 minutes from our San Mateo office, west across the East Bay",
     distanceTier: "far",
     geo: { lat: 38.0049, lng: -121.8058 },
     motif: "bayside",
     lede:
-      "Antioch grew up along the San Joaquin River, its historic Rivertown waterfront looking out over the Delta at the far northeast corner of the county. That's a long way from the Peninsula — our offices are about 70 minutes northeast of here — so we're candid that we're a specialist's trip, not the corner audiologist.",
+      "Antioch grew up along the San Joaquin River, its historic Rivertown waterfront looking out over the Delta at the far northeast corner of the county. That's a long way from the Peninsula — our offices are about 70 minutes southwest of here, in San Mateo and San Carlos — so we're candid that we're a specialist's trip, not the corner audiologist.",
     hook: [
       "Rivertown roots, and where specialized care lives",
       "Out at the edge of the Delta, the options for specialized hearing care thin out. A routine hearing test you can find close to home, but complex [tinnitus care](/tinnitus/), Lenire treatment, and difficult hearing-aid fittings are another matter — those tend to require a longer trip anywhere in far East County. Antioch patients who need that depth of care are already used to traveling for it, and we make the drive worthwhile by making each visit thorough.",
@@ -262,7 +262,7 @@ export const cityProfiles: Record<string, CityProfile> = {
     distanceTier: "far",
     geo: { lat: 38.0494, lng: -122.1586 },
     lede:
-      "Benicia was California's first state capital, and its waterfront downtown along the Carquinez Strait still carries that 19th-century character. It sits well to the northeast of us — our offices are on the Peninsula in San Mateo and San Carlos, about 70 minutes away — so for routine hearing care, a Benicia-area provider will usually be more convenient.",
+      "Benicia briefly served as California's state capital in the 1850s, and its waterfront downtown along the Carquinez Strait still carries that 19th-century character. It sits well to the northeast of us — our offices are on the Peninsula in San Mateo and San Carlos, about 70 minutes away — so for routine hearing care, a Benicia-area provider will usually be more convenient.",
     hook: [
       "Care that's worth the trip from Benicia",
       "For everyday hearing tests and standard hearing aids, we'll always suggest starting with someone close to home. The drive south becomes worthwhile for specialized care — hard-to-treat [tinnitus](/tinnitus/), Lenire therapy, a fitting that hasn't gone right elsewhere, or a second opinion you want handled carefully. Benicia patients who travel to us come for that expertise, and we organize their visit so one trip covers a full evaluation, treatment, and a follow-up plan.",
@@ -737,7 +737,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Fairfield is Solano County's seat, spread between the Suisun Valley wine district, the hills toward Green Valley, and the flatlands around Travis Air Force Base. Aviation and flight-line work put a lot of local careers around powerful engines and equipment, and sustained occupational noise exposure like that can contribute to hearing loss over the years. For veterans, base personnel, and retirees around Fairfield who are dealing with hearing changes or persistent ringing, the specialized care down on the Peninsula is something some choose to travel for.",
     ],
     whyHere:
-      "Fairfield patients who come to us are typically seeking a depth of tinnitus and diagnostic care they couldn't find close by. We honor the distance by folding testing, treatment, and counseling into efficient visits and coordinating follow-up so the long drive stays rare.",
+      "Fairfield patients who come to us are typically seeking a depth of tinnitus and diagnostic care they couldn't find close by. We plan their visits to be thorough and combined from the start, so someone driving in from Solano County rarely needs a second trip for the same issue.",
     landmarks:
       "Patients reach our Peninsula offices from Fairfield, the Suisun and Green Valley areas, and near Travis Air Force Base, generally around 80 minutes southwest via I-80.",
     faqs: [
@@ -1521,7 +1521,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Orinda's character shows in the marquee of the historic Orinda Theatre at Theatre Square, the boaters and anglers at San Pablo Reservoir, the trails of Wildcat Canyon Regional Park, and the quiet homes around Lake Cascade. It's a wooded, unhurried town that values calm and quality. We match that with thorough testing, honest recommendations, and verified fittings suited to an active, outdoor life.",
     ],
     whyHere:
-      "Orinda patients choose us for meticulous diagnostics, premium technology matched honestly to their needs, and specialized tinnitus and Lenire care — with the continuity of the same audiologist each visit. We say plainly that routine care can be handled closer to home, and save the drive for the specialized work.",
+      "Orinda patients tend to come to us for a specific reason — a stubborn case of tinnitus, a Lenire evaluation, or a fitting a closer office couldn't get right. We answer routine questions honestly and point you to a nearer provider when that makes sense, reserving the drive over the hill for the work that genuinely benefits from a specialist's time.",
     landmarks:
       "We're about 50 minutes from Theatre Square, the San Pablo Reservoir, and Wildcat Canyon, taking the East Bay bridges over to our San Mateo office.",
     faqs: [
@@ -1918,7 +1918,7 @@ export const cityProfiles: Record<string, CityProfile> = {
     distanceTier: "mid",
     geo: { lat: 37.7749, lng: -122.4194 },
     lede:
-      "San Francisco packs an enormous variety of listening environments into seven square miles — echoing lobbies downtown, loud South of Market restaurants, foggy avenues out west, and quiet residential blocks in between. That range is exactly why good hearing matters here, and our San Mateo office is a straightforward 20-to-30-minute drive south on the 101 or 280, closer than many city residents expect.",
+      "San Francisco packs an enormous variety of listening environments into a compact seven-by-seven miles — echoing lobbies downtown, loud South of Market restaurants, foggy avenues out west, and quiet residential blocks in between. That range is exactly why good hearing matters here, and our San Mateo office is a straightforward 20-to-30-minute drive south on the 101 or 280, closer than many city residents expect.",
     hook: [
       "City listening, and the case for an independent audiologist",
       "A day in San Francisco can move from a noisy SoMa lunch to a conference room in the Financial District to a quiet dinner in Noe Valley — each demanding something different from your hearing. Getting that right takes more than picking a device off a shelf. We do speech-in-noise testing and real-ear verification so your [hearing aids](/hearing-aid-fitting/) are tuned to how you actually live, and as an independent practice we fit the technology that fits you, not whatever a big-box counter happens to stock.",
@@ -2392,7 +2392,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Life in Sonoma orbits the historic Plaza, the Mission San Francisco Solano, and the vineyards fanning out across the valley toward Glen Ellen and Kenwood. It is a real distance from the Peninsula, and for routine hearing care we would point you somewhere closer. But for dedicated tinnitus treatment, Lenire, or a complex fitting, some Sonoma patients decide the specialist expertise outweighs the drive south, and we make certain the visit rewards the effort.",
     ],
     whyHere:
-      "Sonoma patients who choose us are generally seeking tinnitus and diagnostic experience they could not find in the valley. We honor the eighty-minute distance by concentrating care into efficient visits and coordinating follow-up so the trip is the exception, not the routine.",
+      "Sonoma patients who choose us are generally seeking tinnitus and diagnostic experience they could not find in the valley. We make the long trip worthwhile by scheduling fuller appointments up front and handling as much follow-up as we can by phone, so repeat drives stay uncommon.",
     landmarks:
       "Patients drive south to our Peninsula offices from the Sonoma Plaza, the Mission district, and the valley toward Glen Ellen, about eighty minutes by Highways 121 and 101.",
     faqs: [
@@ -2624,7 +2624,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Vallejo grew up around the water — the ferry terminal on the Mare Island Strait, the former Mare Island Naval Shipyard across the channel, the marina and the historic downtown along Georgia Street. Generations of shipyard and maritime workers here spent careers around heavy machinery, and occupational noise exposure over the years can contribute to hearing loss later in life. For patients who suspect noise has taken a toll, or who are wrestling with tinnitus, some decide the specialized care down on the Peninsula is worth the drive around the bay.",
     ],
     whyHere:
-      "Vallejo patients who make the trip are usually after tinnitus and diagnostic expertise they couldn't find nearby. We respect the distance by consolidating everything into efficient visits and coordinating follow-up so the drive stays the exception rather than the routine.",
+      "Vallejo patients who make the trip are usually after tinnitus and diagnostic expertise they couldn't find nearby. For them we batch the testing and treatment into a small number of thorough appointments, so the bridge drive is rarely something they have to repeat.",
     landmarks:
       "Patients travel to our Peninsula offices from Vallejo's waterfront, Mare Island, and the Georgia Street downtown, generally around 70 minutes southwest via the 80 and the bridges.",
     faqs: [
@@ -2653,7 +2653,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Walnut Creek runs from the Broadway Plaza shops and Locust Street restaurants to the Iron Horse Trail and the trailheads up Mount Diablo, with the large Rossmoor community just to the south. It's a city with an active older population that wants to stay in the middle of things — theater, dining, walking groups. Getting hearing aids fit and verified for those real settings, rather than a quiet showroom, is what keeps people fully in the conversation.",
     ],
     whyHere:
-      "Walnut Creek patients choose us for careful diagnostics, premium technology matched honestly to their needs, and dedicated [tinnitus care](/tinnitus/) — with the continuity of seeing the same audiologist each visit. Many first came for tinnitus or Lenire and stayed for all of their hearing care.",
+      "Walnut Creek patients usually reach us through word of mouth — someone whose tinnitus we helped, or whose hearing aids finally sounded right after a proper [real-ear verification](/hearing-aid-fitting/). We're straightforward that everyday visits are easier handled locally; what brings people across the bridges is tinnitus care, Lenire, and complex fittings.",
     landmarks:
       "We're about 50 minutes from Broadway Plaza, the Lesher Center, and the Rossmoor area, taking the East Bay bridges over to our San Mateo office.",
     faqs: [
