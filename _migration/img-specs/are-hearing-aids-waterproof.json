@@ -1,0 +1,12 @@
+{
+  "slug": "are-hearing-aids-waterproof",
+  "hero": { "title": "Water & Hearing Aids", "icon": "shield", "accent": "aqua" },
+  "info": { "title": "Water-Resistant vs Waterproof", "subtitle": "What the ratings mean and how to protect your devices",
+    "rows": [
+      {"title": "Resistant, not waterproof", "desc": "Handles splashes and sweat, not swimming"},
+      {"title": "Read the IP rating", "desc": "Second digit rates water protection, up to 8"},
+      {"title": "Sweat is the real risk", "desc": "Salt and humidity corrode tiny electronics"},
+      {"title": "Dry them nightly", "desc": "A drying kit pulls out trapped moisture"},
+      {"title": "Skip the rice trick", "desc": "Get repair before water damage sets in"}
+    ] }
+}

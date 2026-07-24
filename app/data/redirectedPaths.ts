@@ -1,5 +1,12 @@
 // Paths that 301-redirect (from next.config.ts); excluded from the sitemap.
 export const redirectedPaths = new Set<string>([
+  "/what-is-the-1-hearing-aid/",
+  "/will-hearing-aids-help-tinnitus/",
+  "/tesla-robotaxi-hearing-loss-hearing-aids/",
+  "/how-much-does-it-cost-to-see-an-audiologist/",
+  "/why-is-hearing-loss-not-covered-by-insurance/",
+  "/accommodate-your-loved-ones-with-hearing-loss/",
+  "/what-is-real-ear-measurement-and-why-does-it-matter/",
   "/2025-guide-to-hearing-aids-in-san-mateo-san-carlos-brands-prices-and-real-life-results-2/",
   "/2025-guide-to-hearing-aids-in-san-mateo-san-carlos-brands-prices-and-real-life-results/",
   "/4124-2/",

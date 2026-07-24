@@ -4,6 +4,13 @@ import type { NextConfig } from "next";
 // posts point to their most relevant canonical, pillar, or areas-we-serve page.
 // Regenerate via scratchpad curation flow if the keep/redirect split changes.
 const blogRedirects = [
+      { source: "/what-is-the-1-hearing-aid", destination: "/hearing-aid-care-2025", permanent: true },
+      { source: "/will-hearing-aids-help-tinnitus", destination: "/can-hearing-aids-help-tinnitus", permanent: true },
+      { source: "/tesla-robotaxi-hearing-loss-hearing-aids", destination: "/waymo-robotaxi-hearing-loss-hearing-aids", permanent: true },
+      { source: "/how-much-does-it-cost-to-see-an-audiologist", destination: "/how-much-does-an-audiologist-cost", permanent: true },
+      { source: "/why-is-hearing-loss-not-covered-by-insurance", destination: "/are-hearing-aids-not-covered-by-insurance", permanent: true },
+      { source: "/accommodate-your-loved-ones-with-hearing-loss", destination: "/ways-to-accommodate-your-loved-ones-with-hearing-loss", permanent: true },
+      { source: "/what-is-real-ear-measurement-and-why-does-it-matter", destination: "/what-is-real-ear-measurement", permanent: true },
       { source: "/2025-guide-to-hearing-aids-in-san-mateo-san-carlos-brands-prices-and-real-life-results", destination: "/areas-we-serve/san-mateo", permanent: true },
       { source: "/2025-guide-to-hearing-aids-in-san-mateo-san-carlos-brands-prices-and-real-life-results-2", destination: "/products/hearing-aids", permanent: true },
       { source: "/4124-2", destination: "/the-blog", permanent: true },

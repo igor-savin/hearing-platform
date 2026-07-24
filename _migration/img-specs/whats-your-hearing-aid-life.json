@@ -1,0 +1,12 @@
+{
+  "slug": "whats-your-hearing-aid-life",
+  "hero": { "title": "Hearing Aid Lifespan", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "How Long Hearing Aids Last", "subtitle": "The factors that decide when it is time to replace them",
+    "rows": [
+      {"title": "Typical Lifespan", "desc": "Most last about three to seven years"},
+      {"title": "Moisture & Wax", "desc": "Humidity and earwax wear parts down fastest"},
+      {"title": "Device Style", "desc": "Behind-the-ear models often outlast in-canal"},
+      {"title": "Daily Care", "desc": "Cleaning and drying extend working life"},
+      {"title": "Repair or Replace", "desc": "Timely repairs delay replacement cost"}
+    ] }
+}

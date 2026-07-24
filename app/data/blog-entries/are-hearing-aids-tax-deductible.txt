@@ -1,0 +1,37 @@
+  "/are-hearing-aids-tax-deductible/": {
+    kicker: "Costs & Insurance",
+    headline: "Are Hearing Aids Tax Deductible?",
+    variant: "product",
+    datePublished: "2025-07-15",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Are hearing aids tax deductible? Usually yes, since they count as a qualified medical expense, though the benefit depends on how you file your own taxes.",
+    intro: [
+      "Hearing aids and the costs that come with them generally qualify as deductible medical expenses under federal tax rules. That does not automatically put money back in your pocket, because a deduction only helps in certain situations. Since paying for [hearing aids](/products/hearing-aids/) is a real expense for many families, it is worth understanding when the tax code lends a hand.",
+      "The plain version is this: the IRS treats hearing aids, along with batteries, repairs, and the exams tied to them, as qualified medical expenses. You can generally count them toward a medical deduction if you itemize. Whether that adds up to a benefit depends on your total medical spending for the year and how you file.",
+      "None of this is tax advice, and the rules shift from year to year. Use this as a starting point, then confirm the specifics with a qualified tax professional who knows your situation. If a [hearing evaluation](/hearing-testing/) is your next step regardless, our team can help you plan for the cost.",
+    ],
+    takeaways: [
+      "Hearing aids, batteries, repairs, and related exams generally qualify as deductible medical expenses.",
+      "You only benefit if you itemize and your total medical costs clear the income threshold for the year.",
+      "Rules change and situations differ, so confirm the specifics with a qualified tax professional.",
+    ],
+    sections: [
+      ["The short answer", "Hearing aids sit on the IRS list of qualified medical expenses, the same category as prescription glasses or a wheelchair. If you buy them for yourself, a spouse, or a dependent, the cost generally counts. It applies whether you choose a modest model or a premium one, so the device itself is rarely the sticking point."],
+      ["What else counts alongside the device", "The deduction is not limited to the hardware. Batteries, cleaning supplies, repairs, and the professional appointments that go with your aids typically qualify too, including the [fitting and follow-up visits](/services/hearing-aid-fitting/) that dial in your sound. Even mileage to and from those appointments can count. Small recurring costs add up over a year, so they are worth tracking rather than ignoring."],
+      ["Why the deduction does not help everyone", "Here is the catch that surprises people. Medical expenses are only deductible if you itemize instead of taking the standard deduction, and only the portion of your medical costs above a set percentage of your income counts. If your medical spending for the year is modest, or the standard deduction serves you better, hearing aids may not change your tax bill at all. That does not mean you did anything wrong; it means the deduction is one tool among several."],
+      ["Pre-tax accounts and insurance", "A deduction is not the only way to soften the cost. Many people use a flexible spending account or health savings account to pay for hearing aids with pre-tax dollars, which can help even if you never itemize. It is also worth checking what your plan covers before you assume you are on your own; our guide to [insurance and hearing aids](/resources/insurance/) walks through common scenarios. These routes can stack with, or stand in for, a deduction depending on your circumstances."],
+      ["Keep clean records", "Whatever path applies to you, good records make it simple. Save itemized receipts and invoices that show the date, the provider, and what you paid, and keep them with the rest of your tax documents. If you are not sure a given cost qualifies, note it anyway and let your tax preparer sort it out. When you are ready to move forward with your hearing, our [San Mateo and San Carlos team](/contact/) can give you clear, itemized paperwork you can hand straight to your accountant."],
+    ],
+    bullets: ["Qualified medical expense", "Batteries & repairs count", "Itemizing required", "Income threshold applies", "FSA & HSA options", "Keep itemized receipts"],
+    faqs: [
+      ["Are hearing aids really a qualified medical expense?", "Yes, the IRS includes them in the same medical category as items like eyeglasses and wheelchairs. The device, its batteries, and related repairs generally qualify when you buy them for yourself or a dependent. The open question is usually not whether they count, but whether your overall tax picture lets you use the deduction."],
+      ["Can I use an FSA or HSA to pay for hearing aids?", "In most cases you can, and many families find this simpler than itemizing. Flexible spending and health savings accounts let you pay with pre-tax dollars, which lowers the real cost without any deduction math at tax time. Check your specific plan's rules, since contribution limits and eligible expenses can vary."],
+      ["Do I need to itemize to benefit?", "For the medical-expense deduction, generally yes. Only the share of your medical costs above a set percentage of your income counts, and only if you itemize rather than take the standard deduction. A tax professional can tell you quickly whether itemizing makes sense in your case, which is why it is worth asking before you file."],
+    ],
+    image: "/assets/blog/are-hearing-aids-tax-deductible-1.svg",
+    imageLabel: "Hearing aids can count as a qualified medical expense",
+    image2: "/assets/blog/are-hearing-aids-tax-deductible-2.svg",
+    image2Label: "How the medical-expense deduction works, step by step",
+    image2Caption: "The device usually qualifies; whether it lowers your tax bill depends on how you file.",
+  },

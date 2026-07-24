@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-relieve-ear-pressure",
+  "hero": { "title": "Ear Pressure", "icon": "ear", "accent": "gold" },
+  "info": { "title": "What causes ear pressure", "subtitle": "Common reasons your ears feel full and blocked",
+    "rows": [
+      {"title": "Eustachian tube", "desc": "Equalizes middle-ear pressure when it opens"},
+      {"title": "Altitude and flying", "desc": "Swallow, yawn, or chew to open it"},
+      {"title": "Congestion", "desc": "Colds and allergies swell the tube shut"},
+      {"title": "Earwax buildup", "desc": "Trapped wax can cause a plugged feeling"},
+      {"title": "When to seek help", "desc": "Pain, drainage, or fullness over a week"}
+    ] }
+}
