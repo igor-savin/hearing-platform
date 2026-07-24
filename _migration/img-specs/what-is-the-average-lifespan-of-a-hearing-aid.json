@@ -1,0 +1,11 @@
+{
+  "slug": "what-is-the-average-lifespan-of-a-hearing-aid",
+  "hero": { "title": "Hearing Aid Lifespan", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Making Hearing Aids Last Longer", "subtitle": "Five habits that stretch the years between replacements",
+    "rows": [
+      {"title": "Keep Them Dry", "desc": "Dry them nightly to fight moisture damage"},
+      {"title": "Clear Earwax", "desc": "Change wax guards and book routine cleaning"},
+      {"title": "Handle With Care", "desc": "Store in a case, away from heat and drops"},
+      {"title": "Repair Early", "desc": "Fix small faults before they spread"},
+      {"title": "Recheck Hearing", "desc": "Reprogram as your hearing needs change"}
+    ] } }

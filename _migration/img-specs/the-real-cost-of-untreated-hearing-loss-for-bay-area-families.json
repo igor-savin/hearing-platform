@@ -1,0 +1,12 @@
+{
+  "slug": "the-real-cost-of-untreated-hearing-loss-for-bay-area-families",
+  "hero": { "title": "The Cost of Waiting", "icon": "people", "accent": "aqua" },
+  "info": { "title": "The Real Cost of Untreated Hearing Loss", "subtitle": "Where the price shows up beyond the audiogram",
+    "rows": [
+      {"title": "Relationships", "desc": "Strained talks and quiet distance from family"},
+      {"title": "Work and earnings", "desc": "Missed detail, drained focus, fewer chances"},
+      {"title": "Health and safety", "desc": "Higher fall risk and missed warning sounds"},
+      {"title": "Daily fatigue", "desc": "Effortful listening leaves you worn out"},
+      {"title": "The cost of waiting", "desc": "Loss widens and adjusting gets harder"}
+    ] }
+}

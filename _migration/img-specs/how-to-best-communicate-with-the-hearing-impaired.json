@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-best-communicate-with-the-hearing-impaired",
+  "hero": { "title": "Clearer Conversations", "icon": "people", "accent": "gold" },
+  "info": { "title": "How to Be Understood", "subtitle": "Six-second habits that help someone with hearing loss follow along",
+    "rows": [
+      {"title": "Get their attention", "desc": "Say their name and wait for eye contact"},
+      {"title": "Face the light", "desc": "Let them see your lips and expressions"},
+      {"title": "Slow down, don't shout", "desc": "A natural pace is clearer than volume"},
+      {"title": "Rephrase, don't repeat", "desc": "Swap in new words when a line misses"},
+      {"title": "Quiet the room", "desc": "Lower the TV and pick calmer spots"}
+    ] }
+}

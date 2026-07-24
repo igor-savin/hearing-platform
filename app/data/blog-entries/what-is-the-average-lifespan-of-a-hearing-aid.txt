@@ -1,0 +1,36 @@
+  "/what-is-the-average-lifespan-of-a-hearing-aid/": {
+    kicker: "Hearing Aids & Care",
+    headline: "What Is the Average Lifespan of a Hearing Aid?",
+    metaTitle: "Average Hearing Aid Lifespan: What to Expect",
+    variant: "product",
+    datePublished: "2021-06-15",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Most hearing aids last three to seven years, but care makes the difference. Learn what shortens their lifespan and the signs it's time to repair or replace.",
+    intro: [
+      "A common assumption is that a hearing aid is a one-time purchase — fit it once, wear it for a decade or more, and think about it again only if it stops working. In practice, most [hearing aids](/products/hearing-aids/) serve well for somewhere between three and seven years, and where a given pair lands in that range has far less to do with luck than with how it is built, worn, and cared for.",
+      "Two people can buy the same devices on the same afternoon and replace them years apart. The gap usually comes down to moisture, earwax, everyday handling, and whether small faults get addressed early through [repair](/services/hearing-aid-repair/) rather than left to compound.",
+      "If you are trying to judge whether your current pair is winding down or simply needs attention, that is a question our team hears constantly. A short check at our San Mateo or San Carlos offices can often tell you whether a [fitting adjustment](/services/hearing-aid-fitting/) buys you more time, or whether your hearing itself has shifted enough to warrant a fresh look.",
+    ],
+    sections: [
+      ["Myth: hearing aids wear out on a fixed schedule", "There is no built-in expiration date. The three-to-seven-year figure is an average, not a countdown, and plenty of well-maintained devices keep going past it while neglected ones fail early. Build and style matter here: a behind-the-ear model keeps its electronics away from the damp warmth of the canal, while smaller in-canal designs sit right in the line of moisture and wax. Differences between manufacturers play a part too, which is one reason it helps to compare [options across brands](/products/hearing-aids-by-brand/) before you buy rather than after."],
+      ["Myth: a higher price guarantees a longer life", "Paying more usually buys better sound processing, more automatic features, and stronger connectivity — not necessarily more years. Premium models tend to age the way phones do: they still work, but their technology falls behind newer releases. Durability depends more on the housing, the seals, and the wearer's habits than on the price tag. A carefully chosen mid-range aid that is dried and cleaned every day will often outlast a top-tier one that spends its nights on a humid bathroom shelf."],
+      ["Myth: moisture and wax are minor annoyances", "These are the two biggest reasons hearing aids fail before their time. Sweat, humidity, and condensation seep into the electronics and corrode them from the inside, while earwax clogs the tiny sound outlet and the protective filters. Wiping the device each night and letting it dry in an open case or a drying kit removes most of the risk. Keeping your ears clear matters just as much, and routine [earwax removal](/services/earwax-removal/) protects both your hearing and the receiver that has to push sound past any buildup."],
+      ["Myth: any repair means the device is finished", "A hearing aid that goes quiet or crackles is often far from done. Receivers, microphones, tubing, and battery doors are all serviceable parts, and a clogged filter or a worn wax guard is a five-minute fix, not a reason to start over. Before you assume the worst, it is worth having the device looked at — professional [hearing aid repair](/services/hearing-aid-repair/) resolves a large share of problems for a fraction of what a new pair costs, and it can add years to something you have already grown used to."],
+      ["Reality: your hearing can outpace the device", "Sometimes the aid is fine and your ears are the thing that changed. Hearing tends to shift gradually, and a device programmed for how you heard three years ago may no longer match how you hear today. That does not always mean replacement — many aids can be reprogrammed to a new prescription — but it does mean a periodic [hearing test](/hearing-testing/) is part of getting a full lifespan out of your investment. When the hardware can no longer be tuned to keep up, that is a genuine signal it is time to consider something new."],
+      ["Reality: daily habits decide the outcome", "The single biggest lever on lifespan is the routine you build around the device. Store it in a protective case rather than a pocket or nightstand, keep it away from heat, hairspray, and steam, and open the battery compartment overnight so moisture can escape. Handle it over a soft surface so a slip does not end in a cracked shell. None of this is complicated, but done consistently it is what separates a pair that tires out at three years from one that is still working comfortably at seven."],
+    ],
+    bullets: ["Three to seven years typical", "Moisture is a top culprit", "Earwax buildup", "Repairs often beat replacement", "Hearing can change too", "San Mateo & San Carlos"],
+    faqs: [
+      ["How long should I expect a new pair of hearing aids to last?", "Plan on roughly three to seven years for most devices, with the exact figure depending on the style, the environment they live in, and how consistently they are cleaned and dried. Behind-the-ear models often reach the longer end of that range because their electronics stay further from moisture and wax."],
+      ["How do I tell whether to repair or replace?", "Start with a professional assessment rather than a guess. If the housing is intact and the fault is a clogged filter, a worn receiver, or a failing battery door, a [repair](/services/hearing-aid-repair/) is usually the smarter spend. Replacement makes more sense when the shell is cracked, parts are no longer made, or your hearing has changed beyond what the aid can be programmed to handle."],
+      ["Does wearing them all day shorten their life?", "Not in the way people fear. Daily use is exactly what hearing aids are designed for, and consistent wear does not wear them out faster than sitting in a drawer. What actually shortens their life is neglected moisture and wax, so the goal is steady use paired with a simple nightly cleaning and drying habit."],
+      ["Can maintenance really add years?", "It can, and the difference is larger than most people expect. Wiping the device down, changing wax guards, drying it overnight, and bringing it in for occasional professional cleaning all keep the electronics healthy. If you would like a hand building that routine, our [team](/about-us/) is glad to walk you through it at either office."],
+    ],
+    image: "/assets/blog/what-is-the-average-lifespan-of-a-hearing-aid-1.svg",
+    imageLabel: "How long a hearing aid lasts is mostly up to how it is cared for",
+    image2: "/assets/blog/what-is-the-average-lifespan-of-a-hearing-aid-2.svg",
+    image2Label: "Five habits that stretch the years between replacements",
+    image2Caption: "The average is three to seven years — good habits push a pair toward the longer end.",
+  },
+

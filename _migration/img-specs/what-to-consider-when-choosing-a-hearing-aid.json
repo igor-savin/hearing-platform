@@ -1,0 +1,12 @@
+{
+  "slug": "what-to-consider-when-choosing-a-hearing-aid",
+  "hero": { "title": "Choosing a Hearing Aid", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "What Really Matters", "subtitle": "Five things to weigh before you buy a hearing aid",
+    "rows": [
+      {"title": "Start with a test", "desc": "Know exactly which sounds you are missing"},
+      {"title": "Pick a workable style", "desc": "Balance discreet size against easy handling"},
+      {"title": "Match features to life", "desc": "Pay for what your day needs, skip the rest"},
+      {"title": "Insist on a good fitting", "desc": "Programming to your loss beats brand name"},
+      {"title": "Check the support", "desc": "Follow-up, repairs, and coverage all matter"}
+    ] }
+}

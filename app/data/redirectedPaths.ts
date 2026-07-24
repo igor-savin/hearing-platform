@@ -1,5 +1,6 @@
 // Paths that 301-redirect (from next.config.ts); excluded from the sitemap.
 export const redirectedPaths = new Set<string>([
+  "/how-much-do-doctors-of-audiology-make-in-the-us/",
   "/the-critical-link-between-hearing-loss-and-dementia-new-research-offers-hope/",
   "/do-hearing-aids-help-tinnitus-what-our-patients-experience/",
   "/rechargeable-hearing-aids-the-power-of-advanced-battery-technology/",

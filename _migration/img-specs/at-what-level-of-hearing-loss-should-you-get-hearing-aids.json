@@ -1,0 +1,12 @@
+{
+  "slug": "at-what-level-of-hearing-loss-should-you-get-hearing-aids",
+  "hero": { "title": "When To Treat", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Degrees of Hearing Loss", "subtitle": "The numbers guide, but daily impact decides.",
+    "rows": [
+      {"title": "Mild loss", "desc": "Soft consonants and speech in noise slip away"},
+      {"title": "Moderate loss", "desc": "Normal conversation gets hard to follow"},
+      {"title": "Moderately severe", "desc": "You miss speech even at close range"},
+      {"title": "Severe loss", "desc": "Only loud sounds come through unaided"},
+      {"title": "Impact over numbers", "desc": "How loss affects your day guides the call"}
+    ] }
+}
