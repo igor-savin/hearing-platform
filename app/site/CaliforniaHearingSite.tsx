@@ -431,6 +431,12 @@ function hashSlug(s: string): number {
   return h;
 }
 
+// Deterministically pick one item from a pool by a seed string (salt the seed
+// per field so different rotations don't correlate to the same index).
+function pickFrom<T>(seed: string, arr: T[]): T {
+  return arr[hashSlug(seed) % arr.length];
+}
+
 // Service-specific, city-flavored FAQs for deep /areas-we-serve/{city}/{service}
 // pages, so they don't reuse the parent city's FAQ verbatim.
 function serviceFaqs(serviceSlug: string, name: string, office: string): [string, string][] {
@@ -513,16 +519,25 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     ? `${service.label} in ${name}`
     : `Audiology & Hearing Care in ${name}`;
 
+  const isProvider = serviceSlug === "dr-emily-mcmahan";
   const intro = [profile.lede, profile.whyHere];
   if (service) {
-    intro.push(
-      `For ${name} patients specifically, that means ${service.angle}. Learn more about our [${service.label.replace(/,.*/, "").toLowerCase()} approach](${service.canonical}), or read on for what makes care here worth it.`
-    );
+    const cta = isProvider
+      ? `[Read more about Dr. McMahan](/about-us/emily-mcmahan/)`
+      : `Learn more about [our ${service.label.toLowerCase()} approach](${service.canonical})`;
+    intro.push(`For ${name} patients specifically, that means ${service.angle}. ${cta}.`);
   }
 
+  const closer = pickFrom(citySlugFromPath(page.path) || name, [
+    "Call 650-342-9449 and we'll help you plan the visit around parking and timing.",
+    "When you call 650-342-9449, we can suggest the easiest time to come and where to park.",
+    "Reach us at 650-342-9449 to book and to sort out directions or parking ahead of time.",
+    "Give us a call at 650-342-9449 and we'll make the trip as easy as possible.",
+    "We keep appointments efficient — call 650-342-9449 and we'll take care of the details.",
+  ]);
   const gettingHere: [string, string] = [
     `Getting to us from ${name}`,
-    `${cap(profile.approxDrive.replace(/\.$/, ""))}. ${profile.landmarks ?? ""} We keep visits efficient and can help you plan around parking and timing when you call 650-342-9449.`.replace(/\s+/g, " ").trim(),
+    `${cap(profile.approxDrive.replace(/\.$/, ""))}. ${profile.landmarks ?? ""} ${closer}`.replace(/\s+/g, " ").trim(),
   ];
 
   // Order: signature hook, then the local-scene detail, then directions.
@@ -549,24 +564,35 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
       ];
   const bullets = bulletLinks.map(([label]) => label);
 
-  const driveShort = profile.approxDrive.split(" from our ")[0].split(",")[0].trim();
-  // Second/third "At a glance" bullets: rotate deterministically per city so the
-  // list isn't byte-identical across pages (reviewers flagged this as a tell).
-  const pick = <T,>(arr: T[]) => arr[hashSlug(citySlugFromPath(page.path) || name) % arr.length];
-  const trustBullet = pick([
+  // Strip any "... [from|of] our {Office} office ..." tail so the takeaway doesn't
+  // repeat the office name (handles "10 min from our" and "12 min north of our").
+  const driveShort = profile.approxDrive.split(/ (?:from|of) our /)[0].split(",")[0].trim();
+  // Second/third "At a glance" bullets: rotate deterministically per city (salted
+  // seeds, larger pools) so no line repeats more than ~twice across the directory.
+  const seed = citySlugFromPath(page.path) || name;
+  const trustBullet = pickFrom(seed + ":trust", [
     "You see the same audiologist each visit — someone who knows your history, not a rotating counter.",
     "Every fitting is verified with real-ear measurement, so the devices are proven to hit target for your hearing.",
     "Recommendations are honest and independent — matched to your needs and budget, not to a sales quota.",
     "Care continues after the first visit: adjustments, cleanings, and follow-up are part of the plan.",
+    "An independent practice, so the advice is about your hearing — not a manufacturer's monthly target.",
+    "Small enough to know you by name, equipped enough to handle complex fittings and tinnitus care.",
+    "Time to explain what your results mean, in plain language, before any technology is discussed.",
+    "Real-world results matter here: we tune to the rooms you actually struggle in, then follow up.",
   ]);
-  const scopeBullet = pick([
+  const scopeBullet = pickFrom(seed + ":scope", [
     "One practice for testing, hearing aids, tinnitus and Lenire, repairs, earwax removal, and hearing protection.",
-    "From first hearing test to advanced tinnitus treatment, the full range of care is under one roof.",
+    "From a first hearing test to advanced tinnitus treatment, the full range of care is under one roof.",
     "Diagnostics, modern hearing aids, tinnitus care, and repairs — without navigating a big hospital system.",
+    "Testing, fittings, tinnitus care, earwax removal, and hearing protection, all in one place.",
+    "Everything from your first evaluation to long-term device support lives with one team.",
+    "Hearing tests, hearing aids, tinnitus and Lenire, and repairs — coordinated by one clinic.",
   ]);
   const takeaways = [
     service
-      ? `${name} patients can get ${service.label.toLowerCase().replace(/,.*/, "")} at California Hearing Center's ${office} office.`
+      ? isProvider
+        ? `${name} patients can see ${service.label} at California Hearing Center's ${office} office.`
+        : `${name} patients can get ${service.label.toLowerCase().replace(/,.*/, "")} at California Hearing Center's ${office} office.`
       : profile.distanceTier === "far"
         ? `Patients travel to California Hearing Center from ${name} for specialized tinnitus and hearing care; our offices are in San Mateo and San Carlos.`
         : `California Hearing Center serves ${name} from our ${office} office — ${driveShort}.`,
@@ -588,6 +614,16 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     imageLabel: service ? `${service.label} — ${name}` : `Hearing care for ${name}`,
     imageAlt: `California Hearing Center — audiology and hearing care serving ${name}, ${profile.county}`,
   };
+}
+
+// Clean, proper-cased heading label for area pages (H2 + FAQ heading topic).
+// Avoids the slug-titleized "Dr Emily Mcmahan" mangling for multi-part names.
+function areaHeadingLabel(path: string): string | null {
+  const profile = cityProfileForPath(path);
+  if (!profile) return null;
+  const serviceSlug = areaServiceSlugFromPath(path);
+  const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  return service ? service.label : profile.name;
 }
 
 // Per-city meta title/description, exported for the metadata route.
@@ -1038,10 +1074,16 @@ function breadcrumbSchema(page: SitePage) {
   let acc = "";
   parts.forEach((seg, i) => {
     acc += `/${seg}`;
+    // Prefer proper display names for area/service segments over slug title-casing
+    // (so "dr-emily-mcmahan" renders "Dr. Emily McMahan, AuD", not "Dr Emily Mcmahan").
+    const properName =
+      cityProfiles[seg]?.name ||
+      AREA_SERVICE_INFO[seg]?.label ||
+      seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
     items.push({
       "@type": "ListItem",
       position: i + 2,
-      name: seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+      name: properName,
       item: `${SITE}${acc}/`,
     });
   });
@@ -1142,7 +1184,7 @@ const STOPWORDS = new Set(
 
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
-  const pageTitle = page.h1 || titleFromPath(page.path);
+  const pageTitle = areaHeadingLabel(page.path) ?? page.h1 ?? titleFromPath(page.path);
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
@@ -1189,7 +1231,8 @@ function InnerPage({ page }: { page: SitePage }) {
             <h2>{pageTitle}</h2>
           )}
           <div className="intro-copy">
-            {content.intro.map((paragraph, index) => (
+            {/* Area pages already show intro[0] in the hero — start from [1] to avoid repeating it. */}
+            {(kind === "area" ? content.intro.slice(1) : content.intro).map((paragraph, index) => (
               <p className={index === 0 ? "lead-copy" : undefined} key={paragraph} dangerouslySetInnerHTML={{ __html: linkify(paragraph) }} />
             ))}
           </div>
