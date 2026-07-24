@@ -1,0 +1,38 @@
+  "/can-audiologists-opt-out-of-medicare/": {
+    kicker: "Medicare & Hearing Care",
+    headline: "Audiologists and Medicare: What to Know",
+    metaTitle: "Audiologists and Medicare: What to Know",
+    variant: "condition",
+    datePublished: "2025-11-20",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Medicare Part B covers medically necessary hearing and balance tests but not hearing aids. Here is what audiologists and Medicare mean for your hearing care.",
+    intro: [
+      "Medicare and hearing care overlap less than most patients expect. Original Medicare pays for certain diagnostic testing, but it leaves much of routine hearing care, including hearing aids, to you or to other coverage. Knowing where that line sits saves you a surprise at the front desk, and our page on [insurance and coverage](/resources/insurance/) is a good place to get the short version for your own plan.",
+      "People often ask whether an audiologist can opt out of Medicare, the way some physicians do. The honest answer is that the rules governing how audiologists enroll, accept assignment, and bill Medicare are specific, federal, and revised from time to time. What matters for your appointment is simpler: what a given office bills, and what your plan will actually pay.",
+      "At our San Mateo and San Carlos offices, we are glad to walk through this before you come in, so the cost side holds no surprises. A [hearing evaluation](/hearing-testing/) is the usual starting point, and we can tell you in plain terms how it is likely to be covered.",
+    ],
+    takeaways: [
+      "Medicare Part B covers diagnostic hearing and balance testing when it is medically necessary.",
+      "Original Medicare generally does not pay for hearing aids or routine fitting exams.",
+      "Coverage rules and plans change, so verify your current benefits before your visit.",
+    ],
+    sections: [
+      ["What Medicare Part B typically covers", "Original Medicare (Part B) generally pays for diagnostic hearing and balance exams when a qualified provider orders them to guide medical care, such as sorting out dizziness, a sudden change, or a suspected medical cause. In those cases the testing counts as a medical service, and your usual Part B costs apply. The deciding phrase is medically necessary: the exam has to inform a diagnosis or a treatment decision, not simply check whether you might benefit from a device."],
+      ["Where hearing aids fall outside the benefit", "This is the part that catches people off guard. Original Medicare does not pay for hearing aids, and it usually will not cover the routine exam done to fit them. That gap is written into the program, not decided office by office. Some Medicare Advantage (Part C) plans add a hearing benefit that helps toward [hearing aids](/products/hearing-aids/) or a fitting, though the dollar amount and the approved devices vary widely from plan to plan. If a hearing benefit matters to you, read the specific plan documents rather than assume."],
+      ["Direct access to an audiologist", "One change worth knowing: Medicare now lets beneficiaries see an audiologist directly for certain non-acute diagnostic testing without a separate physician order, generally once in a twelve-month period. It is a narrower allowance than it first sounds, and it applies to covered diagnostic services rather than to hearing-aid-related visits. Because these details get adjusted over time, treat this as the shape of the rule rather than the fine print, and confirm what applies on the day of your visit."],
+      ["The participation and opt-out question", "Audiologists enroll with Medicare and decide whether to accept assignment, which affects how claims are billed and what you may owe. The formal opt-out-and-privately-contract pathway that some physicians use is governed by federal rules that do not apply the same way to every provider type, and those rules can shift. Rather than lean on a blanket statement, the reliable move is to ask any office directly how they bill Medicare, then check that against your own plan."],
+      ["How to confirm your own coverage", "A few minutes of checking beats a billing surprise. Call the number on your Medicare or Advantage card and ask specifically about diagnostic hearing testing, any physician-order requirement, and hearing-aid benefits. Then ask the audiology office the same questions so the two answers line up. Our staff is happy to help you sort this out, and you can review the basics on our [insurance](/resources/insurance/) page or reach us through the [contact page](/contact/). For older patients weighing devices, our overview of [hearing aids for seniors](/hearing-aids-for-seniors/) covers what Medicare typically leaves to you."],
+    ],
+    bullets: ["Medicare Part B", "Diagnostic testing", "Hearing aids not covered", "Advantage plans vary", "Direct access rule", "Verify your plan"],
+    faqs: [
+      ["Does Medicare cover hearing tests?", "Original Medicare covers diagnostic hearing and balance testing when it is ordered to guide medical care and considered medically necessary. Routine testing tied to buying a hearing aid is treated differently and often is not covered. Because plans and rules shift, confirm the specifics for your coverage before scheduling."],
+      ["Will Medicare pay for my hearing aids?", "Original Medicare does not pay for hearing aids or the routine exam to fit them. Some Medicare Advantage plans include a hearing benefit that helps toward the cost, but the amount and the eligible devices depend on the plan. Reading your plan's hearing benefit closely is the surest way to know what you have."],
+      ["How do I find out what my plan covers?", "Start with the phone number on your insurance card and ask about diagnostic testing and hearing-aid benefits in plain terms. Then bring those answers to the audiology office so everyone is working from the same information. Our [team](/about-us/) is glad to help you check before your visit rather than after."],
+    ],
+    image: "/assets/blog/can-audiologists-opt-out-of-medicare-1.svg",
+    imageLabel: "What Medicare does and doesn't cover for hearing care",
+    image2: "/assets/blog/can-audiologists-opt-out-of-medicare-2.svg",
+    image2Label: "A quick way to check your own hearing coverage",
+    image2Caption: "Coverage rules change, so confirming your specific plan is always the safe first step.",
+  },

@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-explain-hearing-loss-to-the-grandchildren",
+  "hero": { "title": "Telling the Grandkids", "icon": "people", "accent": "gold" },
+  "info": { "title": "Explaining Hearing Loss to Kids", "subtitle": "Simple, kind ways to help a grandchild understand",
+    "rows": [
+      {"title": "Paint a picture", "desc": "Compare it to a radio caught between stations."},
+      {"title": "Keep words plain", "desc": "\"My ears miss some words, so please face me.\""},
+      {"title": "Make aids ordinary", "desc": "Explain they work like glasses, but for sound."},
+      {"title": "Give them a job", "desc": "Ask them to face you and speak one at a time."},
+      {"title": "Book a hearing check", "desc": "A quick evaluation keeps family visits close."}
+    ] }
+}

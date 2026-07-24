@@ -1,0 +1,12 @@
+{
+  "slug": "latest-hearing-aid-technology-2025",
+  "hero": { "title": "Latest Hearing Tech", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "What's New in Hearing Aids", "subtitle": "Five capabilities defining today's devices",
+    "rows": [
+      {"title": "On-board AI", "desc": "Reads your surroundings and adjusts automatically"},
+      {"title": "Deep neural processing", "desc": "Pulls speech out of background noise"},
+      {"title": "LE Audio streaming", "desc": "Higher-quality sound using less power"},
+      {"title": "Auracast broadcast", "desc": "Public venues stream straight to your aids"},
+      {"title": "Rechargeable batteries", "desc": "A full day on one overnight charge"}
+    ] }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "how-much-does-a-hearing-test-cost-without-insurance",
+  "hero": { "title": "Hearing Test Cost", "icon": "ear", "accent": "aqua" },
+  "info": { "title": "What Affects the Price", "subtitle": "Why a hearing test costs what it does",
+    "rows": [
+      {"title": "Screening", "desc": "A quick pass-or-refer check, often free"},
+      {"title": "Diagnostic evaluation", "desc": "A full workup that costs more, tells more"},
+      {"title": "Provider & region", "desc": "Prices vary by clinic and area"},
+      {"title": "Self-pay options", "desc": "Ask about rates and payment plans up front"},
+      {"title": "The interpretation", "desc": "Expert reading of results is the real value"}
+    ] }
+}

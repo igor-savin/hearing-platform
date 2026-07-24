@@ -1,5 +1,6 @@
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
+import { blogPosts } from "../data/blogPosts";
 import { EarJourneyHero } from "./EarJourneyHero";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
@@ -12,7 +13,7 @@ type NavItem = {
   items?: MenuLink[];
   mega?: boolean;
 };
-type PageContent = {
+export type PageContent = {
   kicker: string;
   headline: string;
   intro: string[];
@@ -22,7 +23,35 @@ type PageContent = {
   faqs?: [string, string][];
   image: string;
   imageLabel: string;
+  // Enriched blog fields (optional; only set for hand-written blog posts)
+  image2?: string;
+  image2Label?: string;
+  image2Caption?: string;
+  variant?: string;        // per-archetype visual treatment
+  datePublished?: string;  // ISO date (original publish) for BlogPosting schema
+  dateModified?: string;   // ISO date of last real edit
+  metaDescription?: string; // hand-written meta description (overrides auto)
+  metaTitle?: string;      // optional shorter title tag (overrides headline)
+  authorName?: string;     // named author for signed posts (overrides generic byline)
+  authorSuffix?: string;   // e.g. "AuD"
+  authorUrl?: string;      // link to the author's bio page
 };
+
+// Convert author-written [label](/internal/path) markdown links into anchors.
+// Only internal links (starting with "/") are permitted. Content is author-controlled.
+function linkify(text: string): string {
+  const esc = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return esc
+    // External citations: open in new tab, no referrer leak
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener nofollow">$1</a>')
+    // Internal contextual links
+    .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, '<a href="$2">$1</a>');
+}
+
+// Strip [label](href) markdown down to plain label — for headings/hero where a link is undesirable.
+function plain(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1");
+}
 
 const scheduleUrl =
   "https://www.zocdoc.com/practice/california-hearing-and-research-institute-inc-72249";
@@ -523,7 +552,34 @@ function tinnitusGuideContent(page: SitePage, pageTitle: string): PageContent {
   };
 }
 
+
+// Topic-specific meta description for enriched blog posts (used by generateMetadata).
+export function blogMetaDescription(path: string): string | null {
+  const post = blogPosts[path];
+  if (!post) return null;
+  if (post.metaDescription) return post.metaDescription;
+  // Fallback: clean word-boundary cut (never mid-word) of the first paragraph.
+  const raw = plain(post.intro[0]).replace(/\s+/g, " ").trim();
+  if (raw.length <= 158) return raw;
+  const cut = raw.slice(0, 158);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:—-]$/, "").trim() + "…";
+}
+
+export function blogMetaTitle(path: string, fallback: string): string {
+  const post = blogPosts[path];
+  if (!post) return fallback;
+  if (post.metaTitle) return post.metaTitle;
+  const brand = " | California Hearing Center";
+  const h = post.headline;
+  return h.length + brand.length <= 60 ? h + brand : h;
+}
+
+export function blogOgImage(path: string): string | null {
+  return blogPosts[path]?.image ?? null;
+}
+
 function buildPageContent(page: SitePage): PageContent {
+  if (blogPosts[page.path]) return blogPosts[page.path];
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const city = cityFromPath(page.path);
@@ -687,7 +743,7 @@ function faqSchema(page: SitePage, content: PageContent) {
       "name": question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": answer
+        "text": plain(answer)
       }
     }))
   };
@@ -715,11 +771,74 @@ function breadcrumbSchema(page: SitePage) {
   };
 }
 
+function articleSchema(page: SitePage, content: PageContent) {
+  // Only hand-written blog posts (marked by datePublished) get BlogPosting.
+  if (!content.datePublished) return null;
+  const images = [content.image, content.image2].filter(Boolean).map((src) => `${SITE}${src}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${SITE}${page.path}#article`,
+    headline: content.headline,
+    description: content.intro[0]?.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1").slice(0, 160),
+    image: images,
+    datePublished: content.datePublished,
+    dateModified: content.dateModified || content.datePublished,
+    inLanguage: "en-US",
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${page.path}` },
+    author: content.authorName
+      ? {
+          "@type": "Person",
+          name: content.authorName,
+          ...(content.authorSuffix ? { honorificSuffix: content.authorSuffix } : {}),
+          jobTitle: "Audiologist",
+          ...(content.authorUrl ? { url: `${SITE}${content.authorUrl}` } : {}),
+          worksFor: { "@id": `${SITE}/#organization` },
+        }
+      : {
+          "@type": "Organization",
+          name: "California Hearing Center Clinical Team",
+          "@id": `${SITE}/#clinical-team`,
+          url: `${SITE}/about-us/`,
+          parentOrganization: { "@id": `${SITE}/#organization` },
+        },
+    reviewedBy: content.authorName
+      ? { "@type": "Person", name: content.authorName, ...(content.authorSuffix ? { honorificSuffix: content.authorSuffix } : {}) }
+      : { "@id": `${SITE}/#clinical-team` },
+    publisher: { "@id": `${SITE}/#organization` },
+    about: { "@type": "MedicalCondition", name: "Hearing loss" },
+  };
+}
+
+const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// Deterministic per-page variety for the FAQ heading (was identical on every post).
+function faqHeading(path: string, topic: string): string {
+  const variants = [
+    `Questions patients ask us`,
+    `Common questions about ${topic.toLowerCase()}`,
+    `${topic}: questions we hear a lot`,
+    `Your questions, answered`,
+    `What patients often want to know`,
+    `A few questions worth asking`,
+  ];
+  let h = 0;
+  for (let i = 0; i < path.length; i++) h = (h * 31 + path.charCodeAt(i)) >>> 0;
+  return variants[h % variants.length];
+}
+
+function fmtDate(iso?: string): string {
+  if (!iso) return "";
+  const [y, m, d] = iso.split("-").map(Number);
+  if (!y || !m || !d) return "";
+  return `${MONTHS[m - 1]} ${d}, ${y}`;
+}
+
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const content = buildPageContent(page);
-  const jsonLd = [breadcrumbSchema(page), faqSchema(page, content)].filter(Boolean);
+  const isBlog = !!content.datePublished;
+  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content)].filter(Boolean);
   const related = crawledPages
     .filter((item) => item.path !== page.path && getPageKind(item) === kind)
     .slice(0, 8);
@@ -736,7 +855,7 @@ function InnerPage({ page }: { page: SitePage }) {
         <div className="container">
           <p className="eyebrow">{content.kicker}</p>
           <h1>{content.headline}</h1>
-          <p>{content.intro[0]}</p>
+          <p>{plain(content.intro[0])}</p>
           <div className="hero-actions">
             <a className="button primary" href="/contact/">Request an Appointment</a>
             <a className="button ghost" href="tel:6503429449">650-342-9449</a>
@@ -747,10 +866,22 @@ function InnerPage({ page }: { page: SitePage }) {
       <section className="content-grid container">
         <article className="copy-card">
           <p className="section-kicker">{kind === "area" ? "Local care, close by" : content.kicker}</p>
-          <h2>{pageTitle}</h2>
+          {isBlog ? (
+            <p className="post-byline">
+              {content.authorName ? (
+                <>By <a href={content.authorUrl || "/about-us/"}>{content.authorName}{content.authorSuffix ? `, ${content.authorSuffix}` : ""}</a></>
+              ) : (
+                <>Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a></>
+              )}
+              {content.datePublished ? <> · Published {fmtDate(content.datePublished)}</> : null}
+              {content.dateModified && content.dateModified !== content.datePublished ? <> · Updated {fmtDate(content.dateModified)}</> : null}
+            </p>
+          ) : (
+            <h2>{pageTitle}</h2>
+          )}
           <div className="intro-copy">
             {content.intro.map((paragraph, index) => (
-              <p className={index === 0 ? "lead-copy" : undefined} key={paragraph}>{paragraph}</p>
+              <p className={index === 0 ? "lead-copy" : undefined} key={paragraph} dangerouslySetInnerHTML={{ __html: linkify(paragraph) }} />
             ))}
           </div>
           {content.takeaways && (
@@ -762,10 +893,16 @@ function InnerPage({ page }: { page: SitePage }) {
             </section>
           )}
           <div className="section-stack">
-            {content.sections.map(([heading, text]) => (
+            {content.sections.map(([heading, text], index) => (
               <section key={heading}>
                 <h3>{heading}</h3>
-                <p>{text}</p>
+                <p dangerouslySetInnerHTML={{ __html: linkify(text) }} />
+                {content.image2 && index === 2 && (
+                  <figure className="body-figure">
+                    <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                    {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
+                  </figure>
+                )}
               </section>
             ))}
           </div>
@@ -775,11 +912,11 @@ function InnerPage({ page }: { page: SitePage }) {
           {content.faqs && (
             <section className="faq-block">
               <p className="section-kicker">Frequently asked questions</p>
-              <h2>Questions patients ask about {pageTitle}</h2>
+              <h2>{faqHeading(page.path, pageTitle)}</h2>
               {content.faqs.map(([question, answer]) => (
                 <details key={question} open>
                   <summary>{question}</summary>
-                  <p>{answer}</p>
+                  <p dangerouslySetInnerHTML={{ __html: linkify(answer) }} />
                 </details>
               ))}
             </section>
@@ -787,7 +924,7 @@ function InnerPage({ page }: { page: SitePage }) {
         </article>
         <aside className="sidebar-card">
           <div className="page-visual">
-            <img src={content.image} alt="" />
+            <img src={content.image} alt={content.imageLabel || ""} />
             <span>{content.imageLabel}</span>
           </div>
           <h3>Set up your FREE hearing consultation</h3>

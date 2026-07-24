@@ -1,0 +1,12 @@
+{
+  "slug": "tinnitus-tech-stress-and-bay-area-life-why-your-brain-wont-switch-off",
+  "hero": { "title": "Tinnitus and Stress", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Quieting the Tinnitus Cycle", "subtitle": "How to loosen the stress-and-attention loop that keeps the ringing loud",
+    "rows": [
+      {"title": "Name the trigger", "desc": "Stress, poor sleep, and tension raise the volume"},
+      {"title": "Add gentle sound", "desc": "Background sound eases the silent contrast"},
+      {"title": "Practice relaxation", "desc": "Calming the body lowers the signal's grip"},
+      {"title": "Retrain attention", "desc": "The brain learns to file the sound as unimportant"},
+      {"title": "Get evaluated", "desc": "A hearing test rules out less common causes"}
+    ] }
+}

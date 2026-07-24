@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-the-60-60-rule-in-audiology",
+  "hero": { "title": "The 60/60 Rule", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "How the 60/60 Rule Works", "subtitle": "Two simple limits that protect your hearing",
+    "rows": [
+      {"title": "Cap the volume", "desc": "Keep it near 60% of maximum, not higher"},
+      {"title": "Watch the clock", "desc": "Rest your ears after about 60 minutes"},
+      {"title": "Mind the earbuds", "desc": "In-ear sound reaches you louder than the dial reads"},
+      {"title": "Use protection", "desc": "Custom earplugs for concerts, tools, and engines"},
+      {"title": "Get a baseline", "desc": "A hearing test shows where your ears stand"}
+    ] }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-the-best-hearing-aid-sold-at-costco",
+  "hero": { "title": "Warehouse Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "What Shapes Your Results", "subtitle": "The store matters less than the care behind the device.",
+    "rows": [
+      {"title": "Value Hardware", "desc": "Bulk pricing on capable devices"},
+      {"title": "The Fitting", "desc": "Programmed to your exact hearing"},
+      {"title": "Real-Ear Verification", "desc": "Confirms the sound delivered in your ear"},
+      {"title": "Follow-Up Care", "desc": "Cleanings, tweaks, and repairs later"},
+      {"title": "Ask Before Buying", "desc": "Test, verification, service, who you see"}
+    ] }
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "does-tinnitus-come-back-at-night-when-you-remove-hearing-aids",
+  "hero": { "title": "Tinnitus at Night", "icon": "soundwave", "accent": "aqua" },
+  "info": { "title": "Quieting Nighttime Tinnitus", "subtitle": "Why the ringing rises after dark — and what helps",
+    "rows": [
+      {"title": "Quiet room effect", "desc": "Silence removes the sounds that masked the ringing"},
+      {"title": "Add background sound", "desc": "A fan or soft noise gives your ears something to follow"},
+      {"title": "Sound machine vs. aids", "desc": "Bedside noise or streamed masking — pick by comfort"},
+      {"title": "Steady wind-down", "desc": "Consistent bedtime, less caffeine, calmer evenings"},
+      {"title": "Get evaluated", "desc": "See us if ringing costs you sleep most nights"}
+    ]
+  }
+}

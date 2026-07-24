@@ -1,0 +1,12 @@
+{
+  "slug": "tips-for-selecting-hearing-aids",
+  "hero": { "title": "Choosing Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "How to Choose Hearing Aids", "subtitle": "Six factors worth weighing before you buy",
+    "rows": [
+      {"title": "Start with a test", "desc": "Measure your loss before comparing models"},
+      {"title": "Pick the right style", "desc": "Fit your ears, vision, and dexterity"},
+      {"title": "Match your environments", "desc": "Quiet home vs. noisy restaurants and meetings"},
+      {"title": "Choose useful features", "desc": "Skip the ones you'll never turn on"},
+      {"title": "Value the follow-up", "desc": "Fitting and adjustments make it work"}
+    ] }
+}

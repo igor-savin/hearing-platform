@@ -1,0 +1,12 @@
+{
+  "slug": "what-are-the-links-between-smoking-and-hearing-loss",
+  "hero": { "title": "Smoking & Hearing", "icon": "ear", "accent": "gold" },
+  "info": { "title": "How Smoking Affects Hearing", "subtitle": "Ways tobacco exposure is linked to your ears",
+    "rows": [
+      {"title": "Reduced blood flow", "desc": "Nicotine can narrow vessels feeding the inner ear"},
+      {"title": "Less oxygen", "desc": "Carbon monoxide competes with oxygen in the blood"},
+      {"title": "Higher hearing-loss risk", "desc": "Smokers show more hearing loss in studies"},
+      {"title": "Secondhand smoke", "desc": "Passive exposure is linked to hearing risk too"},
+      {"title": "Quitting helps", "desc": "Lowering exposure protects the hearing you have"}
+    ] }
+}

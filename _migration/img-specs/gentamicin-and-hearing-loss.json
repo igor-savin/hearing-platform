@@ -1,0 +1,12 @@
+{
+  "slug": "gentamicin-and-hearing-loss",
+  "hero": { "title": "Gentamicin & Hearing", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Gentamicin and Your Hearing", "subtitle": "How a powerful antibiotic can affect the inner ear",
+    "rows": [
+      {"title": "What it is", "desc": "An aminoglycoside antibiotic for serious infections"},
+      {"title": "How it acts", "desc": "Can harm inner-ear hair cells that do not regrow"},
+      {"title": "Higher risk", "desc": "High doses, long courses, weak kidneys, genetics"},
+      {"title": "Warning signs", "desc": "New ringing, muffled hearing, dizziness, unsteadiness"},
+      {"title": "Stay protected", "desc": "Baseline test, monitoring, never stop on your own"}
+    ] }
+}

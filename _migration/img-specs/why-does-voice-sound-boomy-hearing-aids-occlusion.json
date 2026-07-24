@@ -1,0 +1,12 @@
+{
+  "slug": "why-does-voice-sound-boomy-hearing-aids-occlusion",
+  "hero": { "title": "Boomy Voice Fix", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Taming a Boomy Voice", "subtitle": "Five fitting adjustments that quiet the occlusion effect",
+    "rows": [
+      {"title": "Add a vent", "desc": "An opening lets trapped bass escape the canal."},
+      {"title": "Try an open dome", "desc": "Leaves the ear canal mostly unsealed."},
+      {"title": "Fit deeper in the canal", "desc": "Seating past the bend reduces the boom."},
+      {"title": "Adjust low-frequency gain", "desc": "Fine-tune the pitches that sound hollow."},
+      {"title": "Give it a short adjustment", "desc": "Your brain adapts as the fit is tuned."}
+    ] }
+}

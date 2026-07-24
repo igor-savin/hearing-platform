@@ -1,0 +1,12 @@
+{
+  "slug": "debunking-the-myths-of-hearing-loss",
+  "hero": { "title": "Myth vs. Fact", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Hearing Loss: Myth vs. Fact", "subtitle": "The common beliefs that keep people from getting help",
+    "rows": [
+      {"title": "Only affects the elderly", "desc": "Noise-related loss happens at every age."},
+      {"title": "It can wait", "desc": "Early care eases effort and protects connection."},
+      {"title": "Aids are big and obvious", "desc": "Today's devices are small and discreet."},
+      {"title": "My doctor would tell me", "desc": "Routine visits rarely include a hearing test."},
+      {"title": "Aids restore perfect hearing", "desc": "They improve clarity, not flawless hearing."}
+    ] }
+}

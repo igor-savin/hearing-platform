@@ -1,0 +1,41 @@
+  "/what-tools-do-audiologists-use/": {
+    kicker: "Inside a Hearing Test",
+    headline: "What Tools Does an Audiologist Use?",
+    metaTitle: "What Tools Does an Audiologist Use?",
+    variant: "condition",
+    datePublished: "2025-06-29",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "An audiologist relies on a few specialized tools during a hearing test. Learn what the otoscope, audiometer, tympanometer, and real-ear measurement reveal.",
+    intro: [
+      "Before your first appointment, the tray of instruments beside the exam chair can look more clinical than it needs to. Each tool has a plain job, and knowing what does what tends to make a [hearing evaluation](/hearing-testing/) feel less like a mystery. Audiologists lean on a compact set of devices, and none of them are uncomfortable to sit through.",
+      "The point of all this equipment is not to produce a single number. It is to build a full picture: how your outer ear looks, whether the eardrum and middle ear are moving normally, the softest sounds you can detect across pitches, and how well you make out speech. One device rarely tells the whole story, so an audiologist reads the results together.",
+      "At our San Mateo and San Carlos offices, we explain each step as it happens rather than springing it on you. Understanding the instruments ahead of time can take some of the edge off, especially if it has been years since your last check or this is your first one ever.",
+    ],
+    takeaways: [
+      "Audiologists use a handful of instruments, each testing a different part of the hearing system.",
+      "An otoscope inspects the ear canal and eardrum, while a tympanometer checks how the middle ear is moving.",
+      "The audiometer measures the softest sounds you hear across pitches, and speech testing checks word understanding.",
+      "Real-ear measurement verifies that a hearing aid delivers the sound your ears actually need.",
+    ],
+    sections: [
+      ["The otoscope: a look inside the ear", "The first tool is usually the simplest. An otoscope is a handheld light with a magnifier that lets the audiologist look down your ear canal to the eardrum. In a few seconds it can reveal a wax blockage, signs of infection, or fluid sitting behind the drum, any of which changes how the rest of the visit goes. If wax is in the way, we may pause for [earwax removal](/services/earwax-removal/) before testing, since a clogged canal can skew the results. The exam is painless, and nothing goes deeper than the outer canal."],
+      ["The audiometer and pure-tone testing", "The audiometer is the device most closely associated with a hearing test. Wearing headphones or small earphones in a quiet booth, you listen for a series of tones at different pitches and respond each time you hear one. By finding the softest level you can detect at each pitch, the audiologist maps your hearing on an audiogram, the chart that shows where your hearing is sharp and where it has slipped. This is the backbone of a [hearing evaluation](/hearing-testing/), and it takes only a few minutes per ear."],
+      ["Tympanometry and the middle ear", "Pure-tone testing shows what you hear; tympanometry shows how your middle ear is working. A soft probe in the ear canal changes the air pressure slightly and measures how your eardrum responds. It does not test hearing directly. Instead it flags problems like fluid behind the drum, a perforation, or a stiff or overly mobile eardrum, each of which affects how sound passes through. The probe feels like a light pressure change, similar to the pop you notice on a plane, and the reading takes only a moment."],
+      ["Speech testing", "Hearing a tone and understanding a word are not the same skill, so an audiologist tests both. In speech testing you repeat back words or short phrases played at different volumes, sometimes with background noise added. This measures how clearly you make out speech, not just whether you detect sound, and it often explains the familiar complaint of hearing that people are talking but not catching the words. Results here shape much of what comes next, including whether [hearing aids](/products/hearing-aids/) are likely to help and how they should be set up."],
+      ["Real-ear measurement", "Fitting a hearing aid is not finished the moment it is switched on. Real-ear measurement places a thin, soft tube alongside the hearing aid in your canal to measure the exact sound reaching your eardrum, then compares it against the targets your test results call for. It is the difference between assuming a device is set correctly and confirming it. This verification step is a recognized best practice in [hearing aid fitting](/services/hearing-aid-fitting/), and organizations such as the [American Speech-Language-Hearing Association](https://www.asha.org) describe it as central to accurate programming."],
+      ["How the tools fit together", "No single instrument decides anything on its own. The audiologist reads the otoscope, the audiogram, the tympanometry, and the speech scores side by side, because a pattern across several tests is far more telling than one result alone. That combined picture is what separates a guess from a plan you can act on. If you have been putting off a check, or want to understand what a past report meant, our [team](/about-us/) is glad to walk through the tools and what your own results show. You can [reach either office](/contact/) to set up a visit."],
+    ],
+    bullets: ["Otoscope", "Audiometer", "Tympanometer", "Speech testing", "Real-ear measurement", "San Mateo & San Carlos"],
+    faqs: [
+      ["Does any of the testing equipment hurt?", "None of it is painful. The otoscope only shines a light into the canal, the audiometer plays tones through headphones, and the tympanometer creates a brief, mild pressure change like a small pop. The whole process is easy to sit through, even for children and for people who feel anxious about medical visits."],
+      ["Why do I need so many different tests?", "Each instrument checks a different part of the hearing pathway, from the ear canal to how your brain processes speech. A single test could miss the real issue, so an audiologist combines several to see the full picture. Together they show not just whether you have hearing loss, but what kind it is and where it originates."],
+      ["What is real-ear measurement, and do I need it?", "It is a verification step used when fitting hearing aids, measuring the sound your device delivers inside your ear rather than relying on factory settings. Because every ear canal is shaped differently, this check helps ensure the aid matches your prescription. If you wear or are considering hearing aids, it is worth asking whether your provider performs it; we include it as a standard part of every fitting."],
+    ],
+    image: "/assets/blog/what-tools-do-audiologists-use-1.svg",
+    imageLabel: "The instruments behind a thorough hearing test",
+    image2: "/assets/blog/what-tools-do-audiologists-use-2.svg",
+    image2Label: "What each tool checks, from ear canal to speech",
+    image2Caption: "Each instrument checks a different part of the hearing system, and the audiologist reads them together.",
+  },
+

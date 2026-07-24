@@ -1,0 +1,12 @@
+{
+  "slug": "can-you-trust-an-audiologist",
+  "hero": { "title": "Earning Your Trust", "icon": "shield", "accent": "gold" },
+  "info": { "title": "How to Vet an Audiologist", "subtitle": "Six checks before you trust a provider with your hearing",
+    "rows": [
+      {"title": "Check the credentials", "desc": "An AuD and a current state license."},
+      {"title": "Ask who owns it", "desc": "Independent practices answer to patients."},
+      {"title": "Testing before selling", "desc": "Results should shape the recommendation."},
+      {"title": "Fitting and follow-up", "desc": "Ask what care comes after the purchase."},
+      {"title": "Read the reviews", "desc": "Look for patterns, not single ratings."}
+    ] }
+}

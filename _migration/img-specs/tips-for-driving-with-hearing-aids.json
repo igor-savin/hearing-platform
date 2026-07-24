@@ -1,0 +1,12 @@
+{
+  "slug": "tips-for-driving-with-hearing-aids",
+  "hero": { "title": "Driving With Hearing Aids", "icon": "bluetooth", "accent": "aqua" },
+  "info": { "title": "Using Hearing Aids in the Car", "subtitle": "Small setup changes make every drive quieter and clearer",
+    "rows": [
+      {"title": "Use a car program", "desc": "Softens wind and road rumble, keeps speech clear."},
+      {"title": "Stream your GPS", "desc": "Send turn-by-turn directions straight to your ears."},
+      {"title": "Take hands-free calls", "desc": "Route phone calls through your hearing aids."},
+      {"title": "Mind the seating", "desc": "A passenger's voice reaches you from the side."},
+      {"title": "Keep them ready", "desc": "Start charged; never leave aids in a hot car."}
+    ] }
+}

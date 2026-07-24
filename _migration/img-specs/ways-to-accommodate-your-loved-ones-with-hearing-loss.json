@@ -1,0 +1,12 @@
+{
+  "slug": "ways-to-accommodate-your-loved-ones-with-hearing-loss",
+  "hero": { "title": "Family & Hearing Loss", "icon": "people", "accent": "gold" },
+  "info": { "title": "Helping a Loved One Hear", "subtitle": "Small habits that keep everyone in the conversation",
+    "rows": [
+      {"title": "Talk about it plainly", "desc": "Lead with connection, not blame or complaints"},
+      {"title": "Quiet the room", "desc": "Lower the TV and cut competing background noise"},
+      {"title": "Light the face", "desc": "Good lighting lets them read lips and cues"},
+      {"title": "Rephrase, don't repeat", "desc": "A new sentence gives the ear a fresh shot"},
+      {"title": "Get evaluated", "desc": "A hearing test is the real, lasting fix"}
+    ] }
+}

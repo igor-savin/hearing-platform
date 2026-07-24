@@ -1,0 +1,12 @@
+{
+  "slug": "best-hearing-aids-for-active-grandparents-in-the-bay-area-restaurants-travel-and-grandkids",
+  "hero": { "title": "Active-Life Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Features for an active life", "subtitle": "What to look for in a busy retirement",
+    "rows": [
+      {"title": "Directional mics", "desc": "Focus on the voice across the table"},
+      {"title": "Noise reduction", "desc": "Softens restaurant and crowd clatter"},
+      {"title": "Wind handling", "desc": "Keeps outdoor sound steady on trips"},
+      {"title": "Bluetooth streaming", "desc": "Calls and announcements into your ears"},
+      {"title": "Rechargeable", "desc": "No tiny batteries to swap while traveling"}
+    ] }
+}

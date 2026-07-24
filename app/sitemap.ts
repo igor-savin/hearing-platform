@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { crawledPages } from "./data/crawledPages";
+import { redirectedPaths } from "./data/redirectedPaths";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
 
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return crawledPages
     .filter((p) => !EXCLUDE.has(p.path))
+    .filter((p) => !redirectedPaths.has(p.path))
     .map((p) => ({
       url: `${SITE}${p.path}`,
       lastModified: now,

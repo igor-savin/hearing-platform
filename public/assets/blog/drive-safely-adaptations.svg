@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Infographic: five practical adaptations that help drivers with hearing loss stay safe">
+  <defs>
+    <linearGradient id="hd" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#155f6b"/>
+      <stop offset="1" stop-color="#105966"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="520" fill="#ffffff"/>
+  <rect x="0" y="0" width="800" height="86" fill="url(#hd)"/>
+  <text x="48" y="42" font-family="Georgia, serif" font-size="26" fill="#ffffff" font-weight="bold">Driving with hearing loss</text>
+  <text x="48" y="68" font-family="Georgia, serif" font-size="15" fill="#86d0d5">Five habits our audiologists recommend</text>
+
+  <!-- rows -->
+  <g font-family="Georgia, serif">
+    <!-- 1 -->
+    <circle cx="72" cy="150" r="26" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="72" y="157" font-size="22" fill="#155f6b" text-anchor="middle" font-weight="bold">1</text>
+    <text x="118" y="144" font-size="18" fill="#21424b" font-weight="bold">Widen your visual scan</text>
+    <text x="118" y="168" font-size="14.5" fill="#6b8086">Check mirrors and blind spots more often to replace missed audio cues.</text>
+    <line x1="118" y1="188" x2="752" y2="188" stroke="#e5eceb" stroke-width="2"/>
+
+    <!-- 2 -->
+    <circle cx="72" cy="228" r="26" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="72" y="235" font-size="22" fill="#155f6b" text-anchor="middle" font-weight="bold">2</text>
+    <text x="118" y="222" font-size="18" fill="#21424b" font-weight="bold">Cut cabin noise</text>
+    <text x="118" y="246" font-size="14.5" fill="#6b8086">Lower music and close windows so remaining hearing and alerts come through.</text>
+    <line x1="118" y1="266" x2="752" y2="266" stroke="#e5eceb" stroke-width="2"/>
+
+    <!-- 3 -->
+    <circle cx="72" cy="306" r="26" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="72" y="313" font-size="22" fill="#155f6b" text-anchor="middle" font-weight="bold">3</text>
+    <text x="118" y="300" font-size="18" fill="#21424b" font-weight="bold">Wear your hearing aids</text>
+    <text x="118" y="324" font-size="14.5" fill="#6b8086">Sirens, horns and turn-signal clicks are easier to place with well-fit devices.</text>
+    <line x1="118" y1="344" x2="752" y2="344" stroke="#e5eceb" stroke-width="2"/>
+
+    <!-- 4 -->
+    <circle cx="72" cy="384" r="26" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="72" y="391" font-size="22" fill="#155f6b" text-anchor="middle" font-weight="bold">4</text>
+    <text x="118" y="378" font-size="18" fill="#21424b" font-weight="bold">Use visual tech</text>
+    <text x="118" y="402" font-size="14.5" fill="#6b8086">Dashboard alerts, blind-spot lights and a rear camera add non-audio warnings.</text>
+    <line x1="118" y1="422" x2="752" y2="422" stroke="#e5eceb" stroke-width="2"/>
+
+    <!-- 5 -->
+    <circle cx="72" cy="462" r="26" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="72" y="469" font-size="22" fill="#155f6b" text-anchor="middle" font-weight="bold">5</text>
+    <text x="118" y="456" font-size="18" fill="#21424b" font-weight="bold">Test your hearing yearly</text>
+    <text x="118" y="480" font-size="14.5" fill="#6b8086">A quick check keeps your devices matched to how you actually hear on the road.</text>
+  </g>
+</svg>

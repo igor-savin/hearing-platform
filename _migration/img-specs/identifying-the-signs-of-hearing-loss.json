@@ -1,0 +1,12 @@
+{
+  "slug": "identifying-the-signs-of-hearing-loss",
+  "hero": { "title": "Spot the Signs", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Signs of Hearing Loss", "subtitle": "Everyday clues it may be time for a hearing test",
+    "rows": [
+      {"title": "Turning Up the Volume", "desc": "TV or radio louder than others need"},
+      {"title": "\"What did you say?\"", "desc": "Asking people to repeat themselves often"},
+      {"title": "Trouble in Noise", "desc": "Struggling to follow talk in crowds"},
+      {"title": "Ringing in the Ears", "desc": "Persistent tinnitus can accompany loss"},
+      {"title": "Pulling Back Socially", "desc": "Skipping gatherings that feel like work"}
+    ] }
+}

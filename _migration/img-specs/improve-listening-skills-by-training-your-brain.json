@@ -1,0 +1,13 @@
+{
+  "slug": "improve-listening-skills-by-training-your-brain",
+  "hero": { "title": "Train Your Brain", "icon": "brain", "accent": "gold" },
+  "info": { "title": "How the Brain Relearns Sound", "subtitle": "Steps that rebuild listening after new hearing aids",
+    "rows": [
+      {"title": "Get a proper fitting", "desc": "Start with hearing aids tuned to your loss"},
+      {"title": "Expect an adjustment", "desc": "New sounds feel loud before they feel normal"},
+      {"title": "Wear them all day", "desc": "Steady input helps the brain recalibrate"},
+      {"title": "Practice listening", "desc": "Use apps, audiobooks, and real conversation"},
+      {"title": "Fine-tune with follow-ups", "desc": "Adjust settings as your brain acclimates"}
+    ]
+  }
+}

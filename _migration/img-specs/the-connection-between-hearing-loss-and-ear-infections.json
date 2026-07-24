@@ -1,0 +1,15 @@
+{
+  "slug": "the-connection-between-hearing-loss-and-ear-infections",
+  "hero": { "title": "Ear Infections & Hearing", "icon": "ear", "accent": "gold" },
+  "info": {
+    "title": "Ear infections and your hearing",
+    "subtitle": "How they dull sound, and when muffled hearing needs a look",
+    "rows": [
+      { "title": "Fluid muffles sound", "desc": "Fluid behind the eardrum blocks vibrations from passing." },
+      { "title": "Usually temporary", "desc": "Hearing typically returns as the infection clears." },
+      { "title": "Watch repeat infections", "desc": "Frequent or lingering cases can affect hearing over time." },
+      { "title": "Rule out earwax", "desc": "A wax plug can cause the same muffled, plugged feeling." },
+      { "title": "Get checked if it lingers", "desc": "Muffled hearing that stays deserves a professional look." }
+    ]
+  }
+}

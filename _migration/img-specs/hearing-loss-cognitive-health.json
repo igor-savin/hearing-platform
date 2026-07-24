@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-loss-cognitive-health",
+  "hero": { "title": "Hearing & Thinking", "icon": "brain", "accent": "gold" },
+  "info": { "title": "How Hearing Connects to Everyday Thinking", "subtitle": "Clearer sound means less mental work and more engagement",
+    "rows": [
+      {"title": "Hard listening", "desc": "Muffled speech makes the brain fill in the gaps"},
+      {"title": "Cognitive load", "desc": "Decoding words draws on your limited attention"},
+      {"title": "Attention & recall", "desc": "Effort spent decoding is effort not spent remembering"},
+      {"title": "Staying engaged", "desc": "Conversation keeps the mind active and social"},
+      {"title": "Get checked", "desc": "A hearing test shows where you stand, low risk"}
+    ] }
+}

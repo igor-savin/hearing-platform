@@ -1,0 +1,12 @@
+{
+  "slug": "can-an-audiologist-help-with-balance-problems",
+  "hero": { "title": "Balance & the Ear", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Where Dizziness Comes From", "subtitle": "How an audiologist sorts out balance problems",
+    "rows": [
+      {"title": "Inner-Ear Balance System", "desc": "Canals and sensors track how your head moves"},
+      {"title": "Vestibular Testing", "desc": "VNG and related measures check each ear"},
+      {"title": "Positional Vertigo", "desc": "Loose ear crystals cause brief spinning spells"},
+      {"title": "When to See a Doctor", "desc": "Sudden severe symptoms need urgent medical care"},
+      {"title": "Treatment and Steadiness", "desc": "Maneuvers and rehab can restore balance"}
+    ] }
+}

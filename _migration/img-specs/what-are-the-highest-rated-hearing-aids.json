@@ -1,0 +1,12 @@
+{
+  "slug": "what-are-the-highest-rated-hearing-aids",
+  "hero": { "title": "Beyond the Ratings", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Rating vs. Real Fit", "subtitle": "What top scores capture, and what they miss",
+    "rows": [
+      {"title": "Ratings are averages", "desc": "They describe the crowd, not your ears"},
+      {"title": "Brands run close", "desc": "Top models compete more than they differ"},
+      {"title": "Premium vs mid-tier", "desc": "Match the level to your noisiest hours"},
+      {"title": "Fit decides results", "desc": "Programming turns a device into a solution"},
+      {"title": "Ratings as a shortlist", "desc": "Bring the list to an evaluation, not a cart"}
+    ] }
+}

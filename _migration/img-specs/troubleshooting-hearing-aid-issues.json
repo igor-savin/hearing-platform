@@ -1,0 +1,12 @@
+{
+  "slug": "troubleshooting-hearing-aid-issues",
+  "hero": { "title": "Hearing Aid Fixes", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Troubleshooting at a Glance", "subtitle": "Simple checks to try before calling for repair",
+    "rows": [
+      {"title": "No sound", "desc": "Fresh battery, then a new wax guard"},
+      {"title": "Weak or muffled", "desc": "Clear wax on the aid and in your ear"},
+      {"title": "Whistling", "desc": "Reseat the fit; check for canal wax"},
+      {"title": "Short battery life", "desc": "Dry the aids; streaming drains faster"},
+      {"title": "Won't connect", "desc": "Forget the device, then re-pair the phone"}
+    ] }
+}

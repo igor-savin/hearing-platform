@@ -1,0 +1,12 @@
+{
+  "slug": "why-hearing-aids-fail-in-the-drawer-and-how-we-prevent-that-with-follow-up-care",
+  "hero": { "title": "Out Of The Drawer", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Why Aids Get Shelved", "subtitle": "And the quick fix behind each one",
+    "rows": [
+      {"title": "Expectations set too high", "desc": "Brains need weeks to relearn everyday sound"},
+      {"title": "Never fully fine-tuned", "desc": "An adjustment visit reshapes the sound to your week"},
+      {"title": "Uncomfortable fit", "desc": "Domes, molds and vents can be swapped or reshaped"},
+      {"title": "Quit too soon", "desc": "A few weeks of wear turns strange into normal"},
+      {"title": "Gone silent, not dead", "desc": "Often wax, a tube or a battery, not failure"}
+    ] }
+}

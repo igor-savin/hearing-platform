@@ -1,0 +1,38 @@
+  "/what-is-the-new-rule-about-hearing-aids/": {
+    kicker: "Hearing Aids",
+    headline: "OTC Hearing Aids: What the Rule Changed",
+    metaTitle: "OTC Hearing Aids: What the New Rule Means",
+    variant: "product",
+    datePublished: "2025-07-30",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "The FDA created an over-the-counter hearing aid category for adults with mild-to-moderate loss. Here's how OTC and prescription devices differ and when to see a pro.",
+    intro: [
+      "In 2022 the FDA created a class of hearing aids that adults can buy without a prescription, an exam, or a professional fitting. These over-the-counter devices reached store shelves and websites that fall, and they are meant for people 18 and older who believe they have mild-to-moderate hearing loss. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) describes the category in plain terms, and it has changed the first question many people ask us.",
+      "The goal behind the rule was reasonable: lower the cost and hassle of getting help for common, everyday hearing loss. What the rule did not do is erase the difference between a device you grab off a shelf and one an audiologist selects, programs, and adjusts to your specific ears. Both can be the right answer. They just fit different situations.",
+      "If you are weighing an OTC pair against a visit to our San Mateo or San Carlos offices, it helps to know what each path offers. Below is a straight look at how [hearing aids](/products/hearing-aids/) in the OTC category work, who they suit, and the signs that point you toward a professional evaluation first.",
+    ],
+    takeaways: [
+      "OTC hearing aids are for adults 18+ with self-perceived mild-to-moderate hearing loss, sold without a prescription or fitting.",
+      "Prescription hearing aids are chosen and programmed by an audiologist and cover any degree of loss, including severe.",
+      "Certain warning signs mean you should get a hearing test before buying anything off a shelf.",
+    ],
+    sections: [
+      ["The category, in plain terms", "An over-the-counter hearing aid is a real, FDA-regulated hearing aid you can buy directly, without seeing a clinician first. You judge your own hearing, pick a device, and set it up yourself, often through a phone app. That is a genuine shift from the older system, where every hearing aid ran through a licensed professional. It is worth separating these from personal sound amplifiers, the gadgets marketed for hunting or birdwatching. Those simply make everything louder and are not built to treat hearing loss at all."],
+      ["OTC and prescription, side by side", "The clearest way to weigh the two is by what you get for the money. OTC devices cost less and skip the appointments, but you do the choosing and tuning on your own, within preset ranges. Prescription hearing aids come after a [hearing test](/hearing-testing/) that maps exactly where your hearing has dropped, followed by a [professional fitting](/services/hearing-aid-fitting/) that programs the device to that map and fine-tunes it over follow-up visits. One trades support for savings; the other trades a higher upfront cost for precision and a person to call when something is off."],
+      ["Who OTC devices tend to fit", "These devices make the most sense for adults who notice they miss words in a noisy restaurant or keep nudging the TV louder, but who still follow one-on-one conversation in a quiet room. That describes a lot of early, even hearing loss. If that is you, an OTC pair can be a sensible, lower-cost way to start. Comfort with a smartphone helps, since setup and adjustments usually run through an app rather than a clinician's software."],
+      ["When a professional visit comes first", "OTC devices assume your loss is mild-to-moderate and roughly the same in both ears, and that assumption does not always hold. See an audiologist before buying if your hearing dropped suddenly, if one ear is clearly worse than the other, or if you have ear pain, drainage, ringing, or dizziness. Those can signal something a hearing aid will not fix and a clinician should look at. Children need professional care as well; the OTC category is for adults only."],
+      ["Starting the smart way", "You do not have to choose blindly. A baseline [hearing evaluation](/hearing-testing/) tells you the degree and shape of your loss, which is the single most useful fact for deciding whether an OTC device will actually help. Plenty of people come in, learn they are a good OTC candidate, and leave reassured. Others discover their loss is further along than they guessed. Either way, our [team](/about-us/) is glad to explain your results and your options without pressure, whether you buy from us or not. You can always [reach out](/contact/) to talk it through first."],
+    ],
+    bullets: ["FDA-regulated category", "Adults 18 and older", "Mild-to-moderate loss", "No prescription needed", "Self-fit by app", "Know the red flags"],
+    faqs: [
+      ["Are OTC hearing aids as good as prescription ones?", "For the right person they can work well, and the quality of the hardware has come a long way. The gap is less about the device and more about the fit. Prescription aids are programmed to your exact hearing test and adjusted over time, which matters more as loss gets more complex. For mild, even loss, an OTC pair may serve you nicely."],
+      ["How do I know if my hearing loss is mild-to-moderate?", "Honestly, guessing is the weak spot in the whole system. Trouble in restaurants but not in quiet rooms often points to mild-to-moderate loss, but only a hearing test measures it for certain. That is why we suggest a quick evaluation before you spend money on any device."],
+      ["Can I buy OTC hearing aids for my parent or spouse?", "You can purchase them, but the person wearing them should be an adult who has noticed their own hearing changes, since these devices rely on self-assessment and self-fitting. If your family member has more advanced loss or trouble managing an app, a [fitting](/services/hearing-aid-fitting/) with support tends to work out better than a shelf purchase."],
+    ],
+    image: "/assets/blog/what-is-the-new-rule-about-hearing-aids-1.svg",
+    imageLabel: "Two paths to better hearing, and how to choose",
+    image2: "/assets/blog/what-is-the-new-rule-about-hearing-aids-2.svg",
+    image2Label: "How the OTC category works, from eligibility to setup",
+    image2Caption: "OTC devices opened a lower-cost door for common hearing loss, but a hearing test still tells you which door to walk through.",
+  },

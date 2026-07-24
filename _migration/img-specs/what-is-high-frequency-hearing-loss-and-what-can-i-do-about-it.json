@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-high-frequency-hearing-loss-and-what-can-i-do-about-it",
+  "hero": { "title": "High-Frequency Hearing Loss", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Understanding High-Frequency Loss", "subtitle": "Why speech sounds muddy — and what actually helps",
+    "rows": [
+      {"title": "Consonants fade first", "desc": "High sounds like s, f, and th blur"},
+      {"title": "Volume isn't the fix", "desc": "Turning it up booms vowels, not clarity"},
+      {"title": "Aging and noise", "desc": "The two most common causes of the loss"},
+      {"title": "An audiogram maps it", "desc": "A sloping line reveals which pitches you lost"},
+      {"title": "Hearing aids help", "desc": "Devices lift the highs without raising lows"}
+    ] }
+}

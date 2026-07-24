@@ -1,0 +1,12 @@
+{
+  "slug": "what-tools-do-audiologists-use",
+  "hero": { "title": "Audiologist's Toolkit", "icon": "ear", "accent": "gold" },
+  "info": { "title": "The Audiologist's Toolkit", "subtitle": "Five instruments that map your hearing",
+    "rows": [
+      {"title": "Otoscope", "desc": "Inspects the ear canal and eardrum"},
+      {"title": "Audiometer", "desc": "Finds the softest tones you can hear"},
+      {"title": "Tympanometer", "desc": "Checks how the middle ear moves"},
+      {"title": "Speech testing", "desc": "Measures how clearly you understand words"},
+      {"title": "Real-ear measurement", "desc": "Verifies a hearing aid's real output"}
+    ] }
+}

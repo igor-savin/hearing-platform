@@ -1,0 +1,12 @@
+{
+  "slug": "can-hearing-aids-make-tinnitus-worse",
+  "hero": { "title": "Tinnitus & Hearing Aids", "icon": "soundwave", "accent": "aqua" },
+  "info": { "title": "Keeping Tinnitus in Check", "subtitle": "How fitting choices decide whether hearing aids soothe or aggravate the ringing",
+    "rows": [
+      {"title": "Usually helps", "desc": "Amplifying real sound makes ringing less noticeable"},
+      {"title": "Rarely worsens", "desc": "Too much volume can flare a sensitive ear"},
+      {"title": "Fit matters most", "desc": "Real-ear measurement matches sound to your ears"},
+      {"title": "Adjust gradually", "desc": "Stepping up volume slowly lets the brain adapt"},
+      {"title": "Report sharp spikes", "desc": "A lasting increase means settings need tuning"}
+    ] }
+}

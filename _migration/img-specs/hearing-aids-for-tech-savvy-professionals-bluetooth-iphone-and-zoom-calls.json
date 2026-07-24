@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aids-for-tech-savvy-professionals-bluetooth-iphone-and-zoom-calls",
+  "hero": { "title": "Connected at Work", "icon": "bluetooth", "accent": "aqua" },
+  "info": { "title": "Choosing Hearing Aids for a Working Day", "subtitle": "Five features that matter when calls fill your calendar",
+    "rows": [
+      {"title": "Direct Bluetooth streaming", "desc": "Calls and audio go straight to both ears"},
+      {"title": "Clear video calls", "desc": "Focused mics cut open-office background noise"},
+      {"title": "All-day rechargeable battery", "desc": "Holds a charge through streaming-heavy days"},
+      {"title": "Discreet office styles", "desc": "Slim receiver-in-canal fits stay unobtrusive"},
+      {"title": "Professionally tuned fit", "desc": "Custom programs for meetings and commutes"}
+    ] }
+}

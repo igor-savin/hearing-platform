@@ -1,0 +1,12 @@
+{
+  "slug": "the-science-of-hearing-loss-how-the-ear-and-brain-work-together",
+  "hero": { "title": "Ear and Brain", "icon": "ear", "accent": "gold" },
+  "info": { "title": "How You Hear", "subtitle": "The path a sound travels, from air to meaning",
+    "rows": [
+      {"title": "Outer ear", "desc": "Funnels sound and locates where it came from"},
+      {"title": "Eardrum", "desc": "Vibrates when sound waves reach it"},
+      {"title": "Middle-ear bones", "desc": "Amplify motion and pass it inward"},
+      {"title": "Cochlea", "desc": "Hair cells convert motion to nerve signals"},
+      {"title": "Auditory brain", "desc": "Turns signals into speech and meaning"}
+    ] }
+}

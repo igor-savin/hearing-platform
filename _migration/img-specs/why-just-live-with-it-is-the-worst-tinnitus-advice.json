@@ -1,0 +1,12 @@
+{
+  "slug": "why-just-live-with-it-is-the-worst-tinnitus-advice",
+  "hero": { "title": "Tinnitus Relief", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Where to Start With Tinnitus", "subtitle": "Practical steps that beat waiting it out",
+    "rows": [
+      {"title": "Get a hearing test", "desc": "Tinnitus often signals hearing change worth checking"},
+      {"title": "Rule out earwax", "desc": "Removing a wax blockage can settle the ringing"},
+      {"title": "Try sound therapy", "desc": "Gentle sound makes tinnitus less prominent over time"},
+      {"title": "Consider a therapy program", "desc": "Counseling and sound plans, sometimes Lenire"},
+      {"title": "Know the red flags", "desc": "Sudden, one-sided, or pulsing? Get seen promptly"}
+    ] }
+}

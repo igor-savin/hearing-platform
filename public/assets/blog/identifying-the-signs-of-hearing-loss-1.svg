@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Spot the Signs">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#155f6b"/><stop offset="1" stop-color="#105966"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.42" r="0.5">
+      <stop offset="0" stop-color="#e0ae3c" stop-opacity="0.5"/><stop offset="1" stop-color="#e0ae3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="560" fill="url(#bg)"/>
+  <circle cx="120" cy="120" r="240" fill="#ffffff" opacity="0.03"/>
+  <circle cx="700" cy="470" r="220" fill="#ffffff" opacity="0.03"/>
+  <ellipse cx="400" cy="238" rx="230" ry="200" fill="url(#halo)"/>
+  <circle cx="400" cy="238" r="128" fill="#ffffff" opacity="0.08"/>
+  <circle cx="400" cy="238" r="128" fill="none" stroke="#86d0d5" stroke-width="2" opacity="0.5"/>
+  <g transform="translate(320 158) scale(1.6)">
+    <path d="M35 78 C22 70 22 40 42 30 C62 20 82 34 76 54 C72 66 60 62 60 74 C60 84 50 88 43 84" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="49" cy="47" r="7" fill="none" stroke="#ffffff" stroke-width="6"/></g>
+  <text x="400" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#ffffff" font-weight="bold">Spot the Signs</text>
+  <rect x="300" y="466" width="200" height="4" rx="2" fill="#e0ae3c"/>
+  <text x="400" y="516" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#86d0d5" letter-spacing="1">California Hearing Center</text>
+</svg>

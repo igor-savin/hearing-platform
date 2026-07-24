@@ -1,0 +1,13 @@
+{
+  "slug": "why-phone-compatibility-shouldnt-drive-your-hearing-aid-decisions",
+  "hero": { "title": "Beyond the Phone", "icon": "phone", "accent": "aqua" },
+  "info": { "title": "Choosing a Hearing Aid, in Order", "subtitle": "Put your hearing needs ahead of phone features",
+    "rows": [
+      {"title": "Test your hearing", "desc": "Start with an evaluation, not a spec sheet"},
+      {"title": "Match your daily life", "desc": "Comfort, dexterity, and your listening routine"},
+      {"title": "Then weigh connectivity", "desc": "Streaming for calls, music, and podcasts"},
+      {"title": "iPhone and Android", "desc": "Most modern aids pair with both platforms"},
+      {"title": "Fit and fine-tune", "desc": "A proper fitting makes it all work"}
+    ]
+  }
+}

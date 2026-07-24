@@ -1,0 +1,12 @@
+{
+  "slug": "vertigo-balance-disorders-and-dizziness",
+  "hero": { "title": "Balance & the Inner Ear", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Common Balance Disorders", "subtitle": "How dizziness often starts in the inner ear",
+    "rows": [
+      {"title": "BPPV", "desc": "Brief spinning triggered by head movements"},
+      {"title": "Vestibular neuritis", "desc": "Inflammation, often post-virus, causing vertigo"},
+      {"title": "Ménière's disease", "desc": "Vertigo with ear fullness and hearing changes"},
+      {"title": "Vestibular migraine", "desc": "Dizziness with or without a headache"},
+      {"title": "Red-flag symptoms", "desc": "Sudden weakness or slurred speech: call 911"}
+    ] }
+}

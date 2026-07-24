@@ -1,0 +1,12 @@
+{
+  "slug": "is-it-ok-to-leave-hearing-aids-in-overnight",
+  "hero": { "title": "Overnight Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Your Nightly Hearing Aid Routine", "subtitle": "A two-minute habit that keeps aids drier and clearer",
+    "rows": [
+      {"title": "Take them out", "desc": "Give your ears a nightly break from wear"},
+      {"title": "Wipe and brush", "desc": "Clear wax and sweat from ports and shell"},
+      {"title": "Dry overnight", "desc": "A drying kit pulls out trapped moisture"},
+      {"title": "Open the battery door", "desc": "Saves power and lets condensation escape"},
+      {"title": "Check morning sound", "desc": "Muffled after drying means time for repair"}
+    ] }
+}

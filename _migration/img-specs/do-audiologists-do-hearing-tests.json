@@ -1,0 +1,12 @@
+{
+  "slug": "do-audiologists-do-hearing-tests",
+  "hero": { "title": "Who Tests Your Hearing", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Inside a Hearing Evaluation", "subtitle": "What an audiologist checks, start to finish",
+    "rows": [
+      {"title": "History & symptoms", "desc": "Your concerns, noise exposure, and any ringing"},
+      {"title": "Ear exam", "desc": "A look inside to rule out wax or blockage"},
+      {"title": "Pure-tone testing", "desc": "The softest tones you hear across pitches"},
+      {"title": "Speech testing", "desc": "How clearly you understand spoken words"},
+      {"title": "Results & plan", "desc": "Your audiogram explained and next steps"}
+    ] }
+}
