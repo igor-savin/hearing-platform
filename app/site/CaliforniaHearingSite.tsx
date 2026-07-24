@@ -797,6 +797,21 @@ function articleSchema(page: SitePage, content: PageContent) {
 }
 
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// Deterministic per-page variety for the FAQ heading (was identical on every post).
+function faqHeading(path: string, topic: string): string {
+  const variants = [
+    `Questions patients ask us`,
+    `Common questions about ${topic.toLowerCase()}`,
+    `${topic}: questions we hear a lot`,
+    `Your questions, answered`,
+    `What patients often want to know`,
+    `A few questions worth asking`,
+  ];
+  let h = 0;
+  for (let i = 0; i < path.length; i++) h = (h * 31 + path.charCodeAt(i)) >>> 0;
+  return variants[h % variants.length];
+}
+
 function fmtDate(iso?: string): string {
   if (!iso) return "";
   const [y, m, d] = iso.split("-").map(Number);
@@ -879,7 +894,7 @@ function InnerPage({ page }: { page: SitePage }) {
           {content.faqs && (
             <section className="faq-block">
               <p className="section-kicker">Frequently asked questions</p>
-              <h2>Questions patients ask about {pageTitle}</h2>
+              <h2>{faqHeading(page.path, pageTitle)}</h2>
               {content.faqs.map(([question, answer]) => (
                 <details key={question} open>
                   <summary>{question}</summary>
