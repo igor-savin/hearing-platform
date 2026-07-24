@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { crawledPages } from "./data/crawledPages";
+import { redirectedPaths } from "./data/redirectedPaths";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
 
@@ -25,8 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return crawledPages
     .filter((p) => !EXCLUDE.has(p.path))
-    // Drop WordPress duplicate copies (-2..-20 slugs); they 301 to canonicals.
-    .filter((p) => !/-([2-9]|1[0-9]|20)\/$/.test(p.path))
+    .filter((p) => !redirectedPaths.has(p.path))
     .map((p) => ({
       url: `${SITE}${p.path}`,
       lastModified: now,
