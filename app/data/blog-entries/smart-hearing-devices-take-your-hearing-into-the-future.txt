@@ -1,0 +1,42 @@
+  "/smart-hearing-devices-take-your-hearing-into-the-future/": {
+    kicker: "Hearing Technology",
+    headline: "Smart Hearing Devices: What Today's Technology Can Do",
+    variant: "product",
+    datePublished: "2017-08-07",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Modern hearing aids stream calls and TV, recharge overnight, and adjust to noisy rooms on their own. Here is what those features really do and how to choose.",
+    intro: [
+      "If your picture of a hearing aid is a beige plastic hook that whistles and makes everything louder, the current generation will surprise you. Today's [hearing aids](/products/hearing-aids/) are small computers that sit on your ear, adjusting to your surroundings many times a second and streaming sound straight from your phone or TV.",
+      "The features are genuinely useful, but none of them work on their own. A smart device helps only when it is chosen for your hearing and your life, then programmed and verified by an audiologist. Think of the technology as raw capability. What turns that capability into clearer conversations is the fitting.",
+      "The right choice still starts with a [hearing evaluation](/hearing-testing/) rather than a glossy brochure, and knowing what each feature does makes it far easier to tell which ones matter for you.",
+    ],
+    takeaways: [
+      "Modern hearing aids stream calls, TV, and music directly to your ears.",
+      "Rechargeable batteries and phone apps make daily use simpler.",
+      "Automatic noise management and directional microphones help in busy rooms.",
+      "Features only deliver when a device is properly fit and programmed.",
+    ],
+    sections: [
+      ["Bluetooth streaming for calls, TV, and music", "Many current hearing aids connect by Bluetooth to your phone, tablet, or television, so the sound arrives right in your ears instead of coming from a distant speaker. You can take a phone call, follow a favorite show, or listen to a podcast on a walk, all of it playing through the devices you are already wearing. For a lot of people this is the feature that turns hearing aids from a chore into something they genuinely want on."],
+      ["Rechargeable batteries and simpler daily care", "Fiddling with tiny disposable batteries is one of the most common frustrations, especially for anyone with less nimble fingers. Most modern models are rechargeable: you drop them in a case overnight and start the day with a full charge. Fewer small parts to handle also means fewer things to drop, lose, or replace."],
+      ["App control in your pocket", "A smartphone app lets you nudge the volume, switch settings for a restaurant versus a quiet room, and sometimes locate a misplaced device. It puts small adjustments in your hands without drawing attention. The app does not replace professional programming, though. Think of it as fine-tuning within the settings your audiologist has already dialed in during your [hearing aid fitting](/services/hearing-aid-fitting/)."],
+      ["Automatic and AI-assisted noise management", "One of the biggest advances is how devices handle noise on their own. They can sense whether you are in a quiet living room, a windy sidewalk, or a clattering restaurant, and shift their settings automatically. Some use so-called AI processing to separate speech from background sound. A loud room will not go silent, but the voice across the table gets easier to follow."],
+      ["Directional microphones and features for ringing ears", "Directional microphones focus on the person in front of you while easing sound from behind, which helps in groups. Some devices also include built-in sound options that gently mask tinnitus, layering a soft background sound over the ringing. If ringing in your ears is a daily bother, our [tinnitus care](/tinnitus/) can help you decide whether that feature is worth prioritizing."],
+      ["Health and fall-detection extras on some models", "A few premium devices add health-style features such as step tracking or fall detection that can alert a chosen contact. These can offer peace of mind, particularly for older adults living alone. They make a nice bonus rather than a reason to choose a device, and their usefulness varies from person to person."],
+      ["Why the right device still depends on you", "All of this technology comes across many [brands](/products/hearing-aids-by-brand/) and price levels, and the flashiest feature list is not always the best match. Your hearing test results, your dexterity, your budget, and where you struggle most all point toward different devices. At our San Mateo and San Carlos offices, that is exactly the conversation to have with an audiologist before you buy anything."],
+    ],
+    bullets: ["Bluetooth streaming", "Rechargeable batteries", "Smartphone app control", "Automatic noise handling", "Directional microphones", "Professional fitting"],
+    faqs: [
+      ["Do all hearing aids connect to my phone now?", "Many do, but not all, and the way they connect varies. If phone calls, streaming, or app control matter to you, say so during your evaluation so your audiologist can recommend a model that supports them."],
+      ["Are rechargeable hearing aids better than battery ones?", "For most people rechargeables are more convenient, especially if handling small batteries is hard. Some users still prefer disposable batteries for travel or backup. Both can work well; it comes down to your routine."],
+      ["Will smart features fix hearing in noisy places?", "They help, but no device makes a noisy room completely clear. Automatic noise management and directional microphones improve the odds of following speech. Realistic expectations and a proper fitting matter as much as the features themselves."],
+      ["How do I know which smart features I actually need?", "Start with a hearing evaluation and an honest look at where you struggle, whether that is phone calls, TV, restaurants, or meetings. Your audiologist matches those situations to features, so you pay for what helps rather than a long list of extras."],
+    ],
+    image: "/assets/blog/smart-hearing-devices-take-your-hearing-into-the-future-1.svg",
+    imageLabel: "Today's hearing aids stream sound straight from your phone and TV",
+    image2: "/assets/blog/smart-hearing-devices-take-your-hearing-into-the-future-2.svg",
+    image2Label: "Five features to understand before you choose a modern hearing aid",
+    image2Caption: "The best device is the one matched to your hearing and your daily life, not the longest feature list.",
+  },
+

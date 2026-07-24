@@ -1,0 +1,42 @@
+  "/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided/": {
+    kicker: "Hearing & Prevention",
+    headline: "Earbuds and Hearing Loss: How to Enjoy Your Audio Safely",
+    variant: "guide",
+    datePublished: "2017-09-07",
+    dateModified: "2026-07-23",
+    metaDescription:
+      "Earbuds can cause permanent hearing loss at high volume, but simple habits like the 60/60 rule and regular listening breaks keep your audio safe for life.",
+    intro: [
+      "Earbuds and headphones sit closer to your ears than almost any other sound in your day, and they can play far louder than the world around you. Used gently, they are harmless. Played loud for hours, they can wear down the delicate inner-ear cells that pick up sound, and once those cells are damaged, the resulting [hearing loss](/hearing-testing/) does not come back.",
+      "You do not have to give up your music, podcasts, or calls to protect them. Keeping the volume and the hours in a safe range does almost all of the work, and the habits that get you there are small enough to live with every day.",
+      "This applies at every age. Teens and young adults tend to log the most earbud hours, so the habits below are worth building into a whole family's routine.",
+    ],
+    takeaways: [
+      "Loud, long earbud use can cause permanent, noise-induced hearing loss.",
+      "The simple \"60/60\" habit — moderate volume, limited time — protects your ears.",
+      "Noise-isolating or over-ear styles stop you from cranking the volume in noisy places.",
+      "Ringing or muffled hearing after listening is a warning sign worth acting on.",
+    ],
+    sections: [
+      ["How earbuds can quietly damage your hearing", "Your inner ear relies on tiny hair cells that turn sound into signals your brain understands. Very loud sound, or moderately loud sound for a long time, can injure those cells, and they do not regrow. Because earbuds sit right in the ear canal, they deliver sound with little to spare, so volume and duration both add up faster than most people realize."],
+      ["The 60/60 habit that keeps volume safe", "A well-known rule of thumb is easy to remember: keep the volume around 60 percent of maximum, and take a real break after about 60 minutes of listening. The federal [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) offers similar safe-listening guidance. If someone an arm's length away has to shout for you to hear them over your earbuds, you are almost certainly too loud. Turning it down even a little, and giving your ears regular rest, does most of the protective work."],
+      ["Why the noisy background is the real trap", "The biggest reason people push the volume up is background noise, a bus, a gym, a busy street. To hear over that racket, you crank the audio to a level that would be painful in a quiet room. Noise-isolating earbuds that seal the canal, or over-ear headphones with good noise cancellation, let you enjoy the same music at a much lower and safer volume. If certain sounds already feel harsh or overwhelming, that is worth discussing, since [sound sensitivity](/hyperacusis/) is something we help patients manage."],
+      ["Take listening breaks and set a limit", "Your ears recover during quiet. Building in breaks, a few minutes of silence between episodes or a longer pause after a long stretch, gives those hair cells time to rest. Many phones and earbuds also have a built-in volume limit or a listening-level alert you can switch on. Setting one for yourself, and for kids and teens, turns safe listening into a habit you do not have to think about."],
+      ["Warning signs to watch for", "Pay attention to how your ears feel after you listen. Ringing, buzzing, a feeling of fullness, or muffled hearing that clears up after a while is a signal that the volume was too high. That temporary ringing can be an early form of [tinnitus](/tinnitus/what-is-tinnitus/), and if it keeps happening, the damage can become permanent. Treat these moments as a nudge to turn things down, not as something to ignore."],
+      ["Custom protection for louder situations", "Earbuds are only part of the picture. Concerts, power tools, and other loud settings can harm the same inner-ear cells, and using earbuds afterward stacks more stress on ears that are already tired. Good-fitting [custom hearing protection](/services/hearing-protection/) lets you enjoy loud events while keeping the sound at a safe level, so you protect the hearing you rely on for your music every day."],
+      ["When to get your hearing checked", "If you notice ringing that lingers, sounds that seem muffled, or that you are turning everything up more than you used to, a [hearing test](/hearing-testing/) tells you exactly where you stand. Getting a baseline while you are young is smart, and it makes any future changes easy to spot. A quick evaluation is the surest way to know your listening habits are keeping your ears safe."],
+    ],
+    bullets: ["The 60/60 habit", "Listening breaks", "Noise-isolating styles", "Volume limits", "Watch for ringing", "Baseline hearing test"],
+    faqs: [
+      ["Can earbuds really cause permanent hearing loss?", "Yes, if used at high volume for long periods. The loud sound damages the inner-ear cells that detect sound, and that damage does not reverse. Kept at a moderate volume with breaks, earbuds are safe for everyday listening."],
+      ["What is the 60/60 rule?", "It is a simple guideline: keep the volume at about 60 percent of maximum and take a break after roughly 60 minutes. If someone nearby has to shout for you to hear them, the volume is too high."],
+      ["Are noise-canceling headphones better for my ears?", "They can be. By blocking background noise, they let you hear your audio clearly at a lower volume, so you are less tempted to crank it up in noisy places. The key is still to keep the overall level moderate."],
+      ["My ears ring after using earbuds — should I worry?", "Temporary ringing or muffled hearing is a warning that the volume was too loud. Turn it down and give your ears a rest. If the ringing keeps returning or does not fully clear, it is worth having your hearing checked."],
+    ],
+    image: "/assets/blog/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided-1.svg",
+    imageLabel: "Keep the volume moderate and give your ears regular breaks",
+    image2: "/assets/blog/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided-2.svg",
+    image2Label: "Five habits our audiologists recommend for safe earbud listening",
+    image2Caption: "Keep the volume in a safe range and your ears can enjoy music for decades.",
+  },
+

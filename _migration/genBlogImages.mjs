@@ -121,7 +121,22 @@ function infographic({ title, subtitle, rows, accent = C.gold }) {
 </svg>`;
 }
 
-// --- SPECS: one per pilot post (hero icon/accent + infographic rows) ---
+// --- SPECS: pilot posts inline below; batch posts loaded from _migration/img-specs/*.json ---
+// JSON spec shape: { slug, hero:{title,icon,accent?}, info:{title,subtitle,accent?,rows:[{title,desc}]} }
+import { readdirSync as _rd, readFileSync as _rf, existsSync as _ex } from "node:fs";
+const SPEC_DIR = join(dirname(fileURLToPath(import.meta.url)), "img-specs");
+function loadJsonSpecs() {
+  if (!_ex(SPEC_DIR)) return [];
+  return _rd(SPEC_DIR).filter((f) => f.endsWith(".json")).map((f) => {
+    const s = JSON.parse(_rf(join(SPEC_DIR, f), "utf8"));
+    // resolve accent color names ("gold"/"aqua"/"blue"/"teal") to hex
+    const col = (a) => (a && C[a]) ? C[a] : (a || C.gold);
+    if (s.hero) s.hero.accent = col(s.hero.accent);
+    if (s.info) s.info.accent = col(s.info.accent);
+    return s;
+  });
+}
+
 const SPECS = [
   {
     slug: "could-there-be-a-link-between-hearing-loss-and-dementia",
@@ -224,10 +239,12 @@ const SPECS = [
   },
 ];
 
-for (const s of SPECS) {
+const ALL_SPECS = [...SPECS, ...loadJsonSpecs()];
+for (const s of ALL_SPECS) {
+  if (!s.hero || !s.info) { console.warn("skip (incomplete spec):", s.slug); continue; }
   writeFileSync(join(OUT, `${s.slug}-1.svg`), conceptHero(s.hero).trim() + "\n");
   writeFileSync(join(OUT, `${s.slug}-2.svg`), infographic(s.info).trim() + "\n");
   console.log("wrote", s.slug, "-1.svg / -2.svg");
 }
-console.log(`Done: ${SPECS.length} posts, ${SPECS.length * 2} images.`);
+console.log(`Done: ${ALL_SPECS.length} posts, ${ALL_SPECS.length * 2} images.`);
 export { conceptHero, infographic, ICONS, C };
