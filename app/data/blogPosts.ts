@@ -5391,6 +5391,9 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Why I Focus Entirely on Tinnitus Care | CHC",
     variant: "condition",
     datePublished: "2025-04-01",
+    authorName: "Emily McMahan",
+    authorSuffix: "AuD",
+    authorUrl: "/about-us/emily-mcmahan/",
     dateModified: "2026-07-23",
     metaDescription:
       "Dr. Emily McMahan, AuD explains why she devoted her practice entirely to tinnitus care and what patients can realistically expect from focused treatment.",

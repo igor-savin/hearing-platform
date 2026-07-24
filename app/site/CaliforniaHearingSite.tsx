@@ -32,6 +32,9 @@ export type PageContent = {
   dateModified?: string;   // ISO date of last real edit
   metaDescription?: string; // hand-written meta description (overrides auto)
   metaTitle?: string;      // optional shorter title tag (overrides headline)
+  authorName?: string;     // named author for signed posts (overrides generic byline)
+  authorSuffix?: string;   // e.g. "AuD"
+  authorUrl?: string;      // link to the author's bio page
 };
 
 // Convert author-written [label](/internal/path) markdown links into anchors.
@@ -783,14 +786,25 @@ function articleSchema(page: SitePage, content: PageContent) {
     dateModified: content.dateModified || content.datePublished,
     inLanguage: "en-US",
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}${page.path}` },
-    author: {
-      "@type": "Organization",
-      name: "California Hearing Center Clinical Team",
-      "@id": `${SITE}/#clinical-team`,
-      url: `${SITE}/about-us/`,
-      parentOrganization: { "@id": `${SITE}/#organization` },
-    },
-    reviewedBy: { "@id": `${SITE}/#clinical-team` },
+    author: content.authorName
+      ? {
+          "@type": "Person",
+          name: content.authorName,
+          ...(content.authorSuffix ? { honorificSuffix: content.authorSuffix } : {}),
+          jobTitle: "Audiologist",
+          ...(content.authorUrl ? { url: `${SITE}${content.authorUrl}` } : {}),
+          worksFor: { "@id": `${SITE}/#organization` },
+        }
+      : {
+          "@type": "Organization",
+          name: "California Hearing Center Clinical Team",
+          "@id": `${SITE}/#clinical-team`,
+          url: `${SITE}/about-us/`,
+          parentOrganization: { "@id": `${SITE}/#organization` },
+        },
+    reviewedBy: content.authorName
+      ? { "@type": "Person", name: content.authorName, ...(content.authorSuffix ? { honorificSuffix: content.authorSuffix } : {}) }
+      : { "@id": `${SITE}/#clinical-team` },
     publisher: { "@id": `${SITE}/#organization` },
     about: { "@type": "MedicalCondition", name: "Hearing loss" },
   };
@@ -854,7 +868,11 @@ function InnerPage({ page }: { page: SitePage }) {
           <p className="section-kicker">{kind === "area" ? "Local care, close by" : content.kicker}</p>
           {isBlog ? (
             <p className="post-byline">
-              Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a>
+              {content.authorName ? (
+                <>By <a href={content.authorUrl || "/about-us/"}>{content.authorName}{content.authorSuffix ? `, ${content.authorSuffix}` : ""}</a></>
+              ) : (
+                <>Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a></>
+              )}
               {content.datePublished ? <> · Published {fmtDate(content.datePublished)}</> : null}
               {content.dateModified && content.dateModified !== content.datePublished ? <> · Updated {fmtDate(content.dateModified)}</> : null}
             </p>
