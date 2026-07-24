@@ -25,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return crawledPages
     .filter((p) => !EXCLUDE.has(p.path))
+    // Drop WordPress duplicate copies (-2..-20 slugs); they 301 to canonicals.
+    .filter((p) => !/-([2-9]|1[0-9]|20)\/$/.test(p.path))
     .map((p) => ({
       url: `${SITE}${p.path}`,
       lastModified: now,
