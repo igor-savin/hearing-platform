@@ -11,52 +11,77 @@ const REASONS = [
   "Something else",
 ];
 
-// A deliberately minimal, non-PHI lead form: name + a way to reach back, plus
-// low-sensitivity context. It posts JSON to /api/lead, which forwards to the
-// practice's inbox (the access key stays server-side). We ask patients NOT to
-// include medical details so nothing sensitive travels through the form.
-export function LeadForm() {
-  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
-  const [error, setError] = useState("");
+type Status = "idle" | "sending" | "success" | "error";
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
-    if (data.company) {
-      setStatus("ok"); // honeypot: silently accept bots
-      return;
-    }
+// Mirrors the Audiology Associates of Westchester ContactForm flow: same
+// /api/contact endpoint contract (Resend), the same `website` honeypot, and the
+// same dataLayer/fbq success events — so both sister sites behave identically.
+// CHC keeps its own styling and adds preferred-office + reason. No PHI collected.
+export function LeadForm({ context = "Contact page" }: { context?: string }) {
+  const [status, setStatus] = useState<Status>("idle");
+  const [message, setMessage] = useState("");
+
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
     setStatus("sending");
-    setError("");
+    setMessage("");
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
     try {
-      const res = await fetch("/api/lead/", {
+      const response = await fetch("/api/contact/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          context,
+          name: String(data.get("name") || ""),
+          phone: String(data.get("phone") || ""),
+          email: String(data.get("email") || ""),
+          office: String(data.get("office") || ""),
+          reason: String(data.get("reason") || ""),
+          message: String(data.get("message") || ""),
+          pageUrl: typeof window !== "undefined" ? window.location.href : "",
+          website: String(data.get("website") || ""),
+        }),
       });
-      const json = await res.json().catch(() => ({}));
-      if (res.ok && json.ok) {
-        setStatus("ok");
-        form.reset();
-      } else {
+
+      const result = (await response.json().catch(() => null)) as { message?: string } | null;
+
+      if (!response.ok) {
         setStatus("error");
-        setError(json.error || "Something went wrong. Please call 650-342-9449.");
+        setMessage(result?.message || "The form couldn’t send. Please call 650-342-9449.");
+        return;
       }
+
+      form.reset();
+      setStatus("success");
+      setMessage(result?.message || "Thank you. Your request has been sent and our team can follow up with you.");
+
+      // Same conversion signals as the sister site (no-ops until GTM / Pixel exist).
+      const w = window as unknown as {
+        dataLayer?: unknown[];
+        fbq?: (...args: unknown[]) => void;
+      };
+      w.dataLayer = w.dataLayer || [];
+      w.dataLayer.push({
+        event: "website_interaction",
+        interaction_action: "contact-submit-success",
+        interaction_label: context,
+        interaction_href: typeof window !== "undefined" ? window.location.href : "",
+      });
+      if (w.fbq) w.fbq("trackCustom", "contact-submit-success");
     } catch {
       setStatus("error");
-      setError("We couldn’t reach the server. Please call 650-342-9449.");
+      setMessage("The online form couldn’t send just now. Please call 650-342-9449 to schedule.");
     }
   }
 
-  if (status === "ok") {
+  if (status === "success") {
     return (
       <div className="lead-form-done" role="status" aria-live="polite">
         <h3>Thank you — your request is on its way.</h3>
-        <p>
-          A member of our team will reach out within one business day to help you pick a time and the
-          right office. If it’s urgent, call <a href="tel:6503429449">650-342-9449</a>.
-        </p>
+        <p>{message} If it’s urgent, call <a href="tel:6503429449">650-342-9449</a>.</p>
       </div>
     );
   }
@@ -69,10 +94,11 @@ export function LeadForm() {
         history in person.
       </p>
 
-      {/* Honeypot: hidden from people, catches bots. */}
-      <div className="lead-hp" aria-hidden="true">
-        <label>Company<input type="text" name="company" tabIndex={-1} autoComplete="off" /></label>
-      </div>
+      {/* Honeypot — hidden from people, catches bots. Matches sister-site field name. */}
+      <label className="lead-hp" aria-hidden="true">
+        Website
+        <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+      </label>
 
       <div className="lead-grid">
         <label className="lead-field">
@@ -118,7 +144,7 @@ export function LeadForm() {
       </button>
 
       {status === "error" && (
-        <p className="lead-error" role="alert">{error}</p>
+        <p className="lead-error" role="alert">{message}</p>
       )}
     </form>
   );

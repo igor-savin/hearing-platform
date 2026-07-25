@@ -1,0 +1,221 @@
+import { NextResponse } from "next/server";
+
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
+// Mirrors the Audiology Associates of Westchester contact route so both sister
+// sites share one delivery mechanism (Resend) and the same env-var contract.
+// California Hearing Center adds two fields — preferred office and reason — since
+// the practice runs two offices. No PHI is collected.
+
+type ContactPayload = {
+  context?: string;
+  email?: string;
+  message?: string;
+  name?: string;
+  office?: string;
+  pageUrl?: string;
+  phone?: string;
+  reason?: string;
+  website?: string;
+};
+
+class EmailConfigurationError extends Error {}
+
+const DEFAULT_CONTACT_FORM_FROM_EMAIL = "California Hearing Center <admin@hearing-care.org>";
+const DEFAULT_CONTACT_FORM_RECIPIENTS = ["igorsavin@gmail.com"];
+const DEFAULT_CONTACT_FORM_BCC_RECIPIENTS: string[] = [];
+
+function clean(value: unknown, maxLength = 1000) {
+  return String(value || "")
+    .replace(/\0/g, "")
+    .trim()
+    .slice(0, maxLength);
+}
+
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function isValidEmail(email: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function emailListFromEnv(value: string | undefined, fallback: string[]) {
+  const parsed = (value || "")
+    .split(",")
+    .map((email) => email.trim())
+    .filter(Boolean);
+
+  return parsed.length ? parsed : fallback;
+}
+
+type FullPayload = Required<Omit<ContactPayload, "website">>;
+
+function textBody(payload: FullPayload) {
+  return [
+    "New website contact form submission",
+    "",
+    `Context: ${payload.context}`,
+    `Name: ${payload.name}`,
+    `Phone: ${payload.phone}`,
+    `Email: ${payload.email || "Not provided"}`,
+    `Preferred office: ${payload.office || "Not specified"}`,
+    `Reason: ${payload.reason || "Not specified"}`,
+    `Page: ${payload.pageUrl || "Not provided"}`,
+    "",
+    "Message:",
+    payload.message || "(none)",
+    "",
+    "Do not reply with clinical guidance unless the practice has confirmed the patient's identity and care context."
+  ].join("\n");
+}
+
+function htmlBody(payload: FullPayload) {
+  const rows = [
+    ["Context", payload.context],
+    ["Name", payload.name],
+    ["Phone", payload.phone],
+    ["Email", payload.email || "Not provided"],
+    ["Preferred office", payload.office || "Not specified"],
+    ["Reason", payload.reason || "Not specified"],
+    ["Page", payload.pageUrl || "Not provided"]
+  ];
+
+  return `
+    <div style="font-family:Arial,sans-serif;line-height:1.5;color:#222">
+      <h2 style="margin:0 0 16px">New website contact form submission</h2>
+      <table style="border-collapse:collapse;width:100%;max-width:680px">
+        ${rows
+          .map(
+            ([label, value]) => `
+              <tr>
+                <th style="border:1px solid #ddd;background:#f5f7f8;padding:8px;text-align:left;width:140px">${escapeHtml(label)}</th>
+                <td style="border:1px solid #ddd;padding:8px">${escapeHtml(value)}</td>
+              </tr>
+            `
+          )
+          .join("")}
+      </table>
+      <h3 style="margin:20px 0 8px">Message</h3>
+      <div style="white-space:pre-wrap;border:1px solid #ddd;padding:12px;max-width:680px">${escapeHtml(payload.message || "(none)")}</div>
+      <p style="margin-top:18px;color:#555;font-size:13px">
+        Do not reply with clinical guidance unless the practice has confirmed the patient's identity and care context.
+      </p>
+    </div>
+  `;
+}
+
+async function sendContactEmail(payload: FullPayload) {
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    throw new EmailConfigurationError("Contact email delivery is not configured.");
+  }
+
+  const from = clean(process.env.CONTACT_FORM_FROM_EMAIL, 254) || DEFAULT_CONTACT_FORM_FROM_EMAIL;
+  const recipients = emailListFromEnv(process.env.CONTACT_FORM_TO_EMAIL, DEFAULT_CONTACT_FORM_RECIPIENTS);
+  const bccRecipients = emailListFromEnv(process.env.CONTACT_FORM_BCC_EMAIL, DEFAULT_CONTACT_FORM_BCC_RECIPIENTS);
+
+  if (!recipients.length || recipients.some((email) => !isValidEmail(email))) {
+    throw new EmailConfigurationError("Contact email recipients are not configured correctly.");
+  }
+
+  if (bccRecipients.some((email) => !isValidEmail(email))) {
+    throw new EmailConfigurationError("Contact email BCC recipients are not configured correctly.");
+  }
+
+  const response = await fetch("https://api.resend.com/emails", {
+    body: JSON.stringify({
+      from,
+      to: recipients,
+      ...(bccRecipients.length ? { bcc: bccRecipients } : {}),
+      reply_to: payload.email || undefined,
+      subject: `Website contact form: ${payload.name}`,
+      text: textBody(payload),
+      html: htmlBody(payload)
+    }),
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json"
+    },
+    method: "POST",
+    signal: AbortSignal.timeout(15000)
+  });
+
+  if (!response.ok) {
+    const details = await response.text();
+    console.error("Contact email send failed", response.status, details);
+    throw new Error("Contact email send failed.");
+  }
+}
+
+export async function POST(request: Request) {
+  try {
+    const body = (await request.json()) as ContactPayload;
+
+    // Honeypot — silently accept bots.
+    if (clean(body.website, 200)) {
+      return NextResponse.json({ ok: true });
+    }
+
+    const payload: FullPayload = {
+      context: clean(body.context, 120) || "Website contact form",
+      email: clean(body.email, 254),
+      message: clean(body.message, 4000),
+      name: clean(body.name, 120),
+      office: clean(body.office, 80),
+      pageUrl: clean(body.pageUrl, 500),
+      phone: clean(body.phone, 80),
+      reason: clean(body.reason, 120)
+    };
+
+    if (!payload.name || (!payload.phone && !payload.email)) {
+      return NextResponse.json(
+        { ok: false, message: "Please provide your name and a phone number or email." },
+        { status: 400 }
+      );
+    }
+
+    if (payload.email && !isValidEmail(payload.email)) {
+      return NextResponse.json(
+        { ok: false, message: "Please enter a valid email address." },
+        { status: 400 }
+      );
+    }
+
+    await sendContactEmail(payload);
+
+    return NextResponse.json({
+      ok: true,
+      message: "Thank you. Your request has been sent and our team can follow up with you."
+    });
+  } catch (error) {
+    if (error instanceof EmailConfigurationError) {
+      console.error(error.message);
+      return NextResponse.json(
+        {
+          ok: false,
+          message:
+            "The online form isn’t configured for email delivery yet. Please call the practice at 650-342-9449."
+        },
+        { status: 503 }
+      );
+    }
+
+    console.error(error);
+    return NextResponse.json(
+      {
+        ok: false,
+        message:
+          "The online form couldn’t send just now. Please call the practice at 650-342-9449 to schedule."
+      },
+      { status: 500 }
+    );
+  }
+}

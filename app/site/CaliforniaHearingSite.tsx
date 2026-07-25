@@ -1467,7 +1467,7 @@ function InnerPage({ page }: { page: SitePage }) {
 
       {isContact && (
         <section className="container lead-form-section">
-          <LeadForm />
+          <LeadForm context={`Contact: ${plain(content.headline)}`} />
         </section>
       )}
 
