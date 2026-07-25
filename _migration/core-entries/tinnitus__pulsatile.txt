@@ -1,0 +1,37 @@
+"/tinnitus/pulsatile/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Pulsatile Tinnitus: The Heartbeat Sound in Your Ear",
+  intro: [
+    "Do you hear a rhythmic whooshing, thumping, or heartbeat sound in your ear? That pattern, especially when it keeps time with your pulse, is called pulsatile tinnitus, and it deserves careful attention.",
+    "Instead of a steady ringing or buzzing, pulsatile tinnitus often feels like a whoosh or swoosh that pulses, or a soft drumbeat that speeds up and slows down with your heart rate. Many people notice it more when lying down, after exercise, or in a quiet room. Because it is often related to blood flow near the ear, it is one of the few types of tinnitus that may have a directly identifiable physical source.",
+    "This page from our Bay Area audiologists explains what pulsatile tinnitus is, its possible causes, when it may be an emergency, and how we work with physicians to evaluate and manage it. It is educational and not a substitute for in-person medical care. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How it differs from typical tinnitus", "Most tinnitus is subjective and steady, described as ringing, hissing, buzzing, or roaring, and is usually linked to hearing loss and inner-ear changes. Pulsatile tinnitus, by contrast, has a rhythm that follows your pulse and may sometimes be heard by a clinician using a stethoscope (objective tinnitus). Both types can be distressing and can occur together. Because a physical source may be identifiable, doctors and audiologists take pulsatile tinnitus seriously and usually recommend medical evaluation."],
+    ["Possible causes and sources", "Pulsatile tinnitus is a symptom, not a diagnosis, and only a medical workup can identify the cause in your case. Possibilities include turbulent blood flow in vessels near the ear or skull, elevated blood pressure or cardiovascular changes, vessel abnormalities or malformations (such as a dural arteriovenous fistula or aneurysm), middle-ear conditions like glomus tumors or eustachian-tube problems, raised pressure inside the skull (idiopathic intracranial hypertension), and risk factors like smoking, high cholesterol, or diabetes that affect circulation."],
+    ["When pulsatile tinnitus is a red flag", "Seek urgent medical attention if pulsatile tinnitus comes with sudden or new hearing loss, dizziness or balance problems, vision changes, double vision, or frequent severe headaches, weakness, numbness, or facial drooping, or a known history of stroke, aneurysm, or significant vascular disease. These symptoms do not always mean something dangerous is happening, but they can signal conditions that need prompt evaluation. When in doubt, call your doctor, an advice nurse, or emergency services."],
+    ["How it is evaluated", "Evaluating pulsatile tinnitus is often a team effort. Your provider reviews your history (when it started, one ear or both, what makes it better or worse, whether it changes with head position or neck pressure), performs a physical exam of the ears, head, and neck, and an audiologist performs a full [hearing evaluation](/hearing-testing/) to check for hearing loss and middle-ear issues. Depending on your case, physicians may order imaging such as MRI, CT, MR angiography, or CT angiography, along with blood work or blood-pressure evaluation."],
+    ["Treatment and management", "Treatment depends heavily on the underlying cause. In some cases, addressing the medical condition, for example managing blood pressure or treating a middle-ear issue, can significantly improve or even resolve pulsatile tinnitus. When it persists or remains bothersome, many of the same tools used for other tinnitus help: sound therapy and sound machines, hearing aids if hearing loss is present, Tinnitus Retraining Therapy, cognitive strategies to reduce fear, and lifestyle support for vascular and overall health. Explore our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["Self-care while you arrange follow-up", "While arranging medical and audiology care, a few steps may help you feel calmer: keep a symptom log noting when the sound started, which ear, and whether it changes with position, exercise, or neck pressure; follow your physician's guidance on blood pressure, cholesterol, hydration, and sleep; use gentle background sound at night to reduce the contrast with silence; practice slow breathing or relaxation to lower the stress response that magnifies tinnitus; and notice whether caffeine or alcohol make it more noticeable."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["Sudden tinnitus: ER or not?", "/tinnitus/sudden-onset/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Pulsatile tinnitus beats in time with your heartbeat and is often related to blood flow near the ear.",
+    "Because it may have an identifiable physical source, it should always be medically evaluated.",
+    "Seek urgent care if it comes with hearing loss, dizziness, vision changes, severe headache, or neurological symptoms."
+  ],
+  faqs: [
+    ["What causes pulsatile tinnitus?", "It usually reflects blood flow near the ear, from turbulent flow in nearby vessels, high blood pressure, vessel abnormalities, middle-ear conditions, or raised pressure inside the skull. It is a symptom that warrants a medical workup to find the specific cause."],
+    ["Is pulsatile tinnitus dangerous?", "Most causes are not dangerous, but because some involve blood vessels or pressure inside the skull, it should always be evaluated. Seek urgent care if it comes with sudden hearing loss, dizziness, vision changes, severe headaches, or neurological symptoms."],
+    ["Can pulsatile tinnitus be treated?", "Often, yes. When an underlying cause like high blood pressure or a middle-ear issue is addressed, it may improve or resolve. When it persists, sound therapy, hearing aids, and counseling can reduce its impact. Our audiologists coordinate with your physicians, call 650-342-9449 to arrange an evaluation."]
+  ],
+  image: "/assets/core/tinnitus__pulsatile.svg",
+  imageLabel: "The rhythmic whoosh that follows your pulse"
+},

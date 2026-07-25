@@ -1,36 +1,37 @@
 "/tinnitus/can-tinnitus-go-away/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Can Tinnitus Go Away? An Honest Answer",
+  headline: "Can Tinnitus Go Away on Its Own?",
   intro: [
-    "It is the first question almost everyone asks: will this ever stop? The honest answer is that it depends on the cause. Some tinnitus is temporary and resolves once its trigger is addressed. Other tinnitus is longer-lasting, and while it may not vanish, it very often becomes something you barely notice.",
-    "It helps to separate two ideas. One is whether the sound itself disappears. The other is whether tinnitus stops bothering you. These are not the same, and for most people lasting relief comes from the second, not the first.",
-    "This page walks through the realistic possibilities. For a foundation, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) explains why the sound occurs in the first place."
+    "If you have recently noticed ringing, buzzing, or whooshing in your ears, one of the first questions is usually whether it will go away by itself. The honest answer is: sometimes yes, sometimes no, depending on what is causing it.",
+    "Tinnitus can resolve on its own, especially when it is triggered by a short-term event like a loud concert, a temporary ear infection, or a wax blockage. But it can also become long-lasting (chronic), particularly when it is related to permanent inner-ear damage, ongoing noise exposure, or certain medical conditions.",
+    "A key point runs through this whole page: even when tinnitus does not fully disappear, many people reach a place where it feels much less noticeable and upsetting. Our Bay Area audiologists explain when tinnitus is likely to fade, when it may persist, and what you can do now. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["Temporary tinnitus that often resolves", "Ringing after a loud concert, a bout of tinnitus from a cold or ear infection, or the buzzing tied to earwax buildup frequently fades once the cause clears. Tinnitus linked to a fixable issue like [earwax](/tinnitus/earwax/) may stop entirely after treatment."],
-    ["Acute versus chronic", "Tinnitus present for less than about six months is often considered acute, and a fair number of these cases settle on their own. Once tinnitus persists beyond roughly six months it is generally considered chronic and less likely to disappear completely, though it can still become far less intrusive."],
-    ["Habituation, the more common path to relief", "Even when the sound stays, the brain has a remarkable ability to reclassify it as unimportant background, a process called [habituation](/tinnitus/habituation/). Many people reach a point where tinnitus is only noticeable when they think to check for it."],
-    ["What can improve your odds", "Protecting your hearing, treating any underlying hearing loss, managing stress and sleep, and starting sound therapy early all support the brain's natural adjustment. Doing nothing and hoping is usually less effective than an active plan."],
-    ["When to seek prompt evaluation", "Tinnitus that starts suddenly, appears in only one ear, pulses like a heartbeat, or comes with dizziness or sudden hearing loss should be checked promptly. Sudden hearing loss in particular can be time-sensitive and is worth urgent attention."]
+    ["When tinnitus is likely to be temporary", "Some tinnitus is short-lived, especially when the trigger is reversible. After a loud event like a concert or fireworks, ears that were simply stunned may recover over hours to a few days. Earwax blockage often improves once wax is safely removed by a professional. Ear infections and middle-ear fluid frequently resolve once the infection clears. And some medication-related tinnitus improves when the dose is adjusted or the drug is changed under medical supervision."],
+    ["When tinnitus may become chronic", "Tinnitus is more likely to stick around when the underlying change is permanent or ongoing: age-related or noise-induced hearing loss, cumulative noise exposure from work, headphones, or loud hobbies, and longstanding medical conditions affecting hearing or blood flow. In these situations tinnitus often does not completely disappear, but it can become far more manageable with the right combination of treatment and coping strategies."],
+    ["Typical timelines: hours, weeks, months", "Every ear and brain is different, but a rough framework helps. Tinnitus after a loud event that fades over several days, while you avoid more noise, is reassuring, though it may still indicate some damage. Tinnitus from infections, fluid, or a medication change may improve over weeks. Tinnitus lasting three months or more is often called chronic, and at that point the focus shifts from will this vanish to how do we reduce its impact, where treatment and habituation become especially important."],
+    ["What influences whether it fades", "Several factors matter: the cause (reversible triggers behave differently than permanent inner-ear damage), whether hearing loss is present (treating it can significantly reduce tinnitus for many people), ongoing noise exposure that can aggravate the ear, and lifestyle factors such as stress, sleep, caffeine, and alcohol that amplify how loud tinnitus feels. Fear and constant checking of the sound also keep the brain focused on it."],
+    ["What you can do today", "Even if you are unsure whether your tinnitus will go away, practical steps help: protect your ears from further damage with lower volumes and ear protection at loud events; add gentle background sound from a fan, sound machine, or app to reduce how loud the ringing feels; improve sleep with a regular routine and relaxation techniques; and schedule a [hearing and tinnitus evaluation](/hearing-testing/) to learn the likely cause and your options."],
+    ["A different way to think about going away", "For some people tinnitus physically decreases or disappears. For many others, the sound may still be there but gradually moves into the background as the brain learns to treat it like a refrigerator hum or distant traffic, something you notice less and less. This process, called habituation, is a powerful form of getting your life back, and our [tinnitus therapy program](/services/tinnitus-therapy/) is built to help you reach it."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Habituation explained", "/tinnitus/habituation/"],
-    ["Earwax and tinnitus", "/tinnitus/earwax/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Temporary or permanent tinnitus", "/tinnitus/temporary-or-permanent/"],
+    ["Medications that cause tinnitus", "/tinnitus/medications/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Temporary tinnitus from noise, illness, or earwax often resolves once the cause is treated.",
-    "Chronic tinnitus may not disappear, but habituation lets most people stop noticing it.",
-    "Sudden, one-sided, or pulsatile tinnitus warrants prompt medical evaluation."
+    "Tinnitus from a loud event, infection, or wax blockage often fades on its own within hours to weeks.",
+    "Tinnitus tied to permanent hearing loss or ongoing noise exposure is more likely to persist.",
+    "Even when it does not disappear, most people can make tinnitus far less noticeable through treatment and habituation."
   ],
   faqs: [
-    ["How long does tinnitus usually last?", "It varies widely. Tinnitus from a loud event or a passing illness may last hours to weeks. Tinnitus that continues beyond about six months is considered chronic, though even then it commonly becomes much less noticeable over time."],
-    ["Is it bad if my tinnitus has not gone away?", "Not necessarily. Persistent tinnitus is very common and usually not dangerous on its own. What matters most is whether it is disrupting your sleep, focus, or mood, all of which can be improved with the right approach."],
-    ["Can treatment make tinnitus disappear completely?", "Sometimes, when there is a reversible cause such as earwax or a medication effect. For chronic tinnitus, treatment more reliably reduces how much it intrudes rather than erasing the sound, and for most people that is enough to feel like themselves again."]
+    ["How long does temporary tinnitus last?", "Tinnitus after a loud event often fades over hours to a few days. Tinnitus from an infection, fluid, or a medication change may take weeks. If ringing is still clearly present after a week or two, schedule a hearing evaluation."],
+    ["Will chronic tinnitus ever get better?", "Complete disappearance is less likely once tinnitus has lasted several months, but it can still change, and most people report a dramatic reduction in distress, better sleep, and improved focus with treatment and [habituation strategies](/services/tinnitus-therapy/)."],
+    ["When should I not just wait and see?", "Do not wait if tinnitus is sudden, one-sided, or pulsatile, or if it comes with hearing loss, severe dizziness, facial weakness, or a pounding headache. Those situations warrant prompt care, see [when to see a doctor](/tinnitus/when-to-see-doctor/)."]
   ],
   image: "/assets/core/tinnitus__can-tinnitus-go-away.svg",
-  imageLabel: "Realistic expectations for tinnitus relief"
+  imageLabel: "Will the ringing fade on its own?"
 },

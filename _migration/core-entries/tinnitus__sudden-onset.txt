@@ -1,0 +1,37 @@
+"/tinnitus/sudden-onset/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Sudden Tinnitus: Should I Go to the ER?",
+  intro: [
+    "If ringing, buzzing, or whooshing in your ears started suddenly, it is normal to feel anxious and to wonder whether you should head straight to the emergency room.",
+    "By sudden tinnitus we mean ringing that appears abruptly, within minutes to hours, feels noticeably different from how your ears usually feel, and may come with other symptoms like muffled hearing, dizziness, or pressure. Some people notice a high-pitched ping followed by steady ringing; others wake up with new buzzing, roaring, or whooshing.",
+    "This page from our Bay Area audiologists offers general guidance on when sudden tinnitus can be an emergency, when to call a doctor promptly, and when it is appropriate to schedule an evaluation. It is not a diagnosis or a substitute for medical care, if you are ever in doubt, seek in-person attention. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["When sudden tinnitus may be an emergency", "Seek emergency care or call 911 if sudden tinnitus occurs with sudden hearing loss in one or both ears, severe dizziness that makes it hard to stand or walk, sudden weakness, drooping, or numbness, difficulty speaking or confusion, a sudden extremely severe headache, double vision or loss of vision, or a recent head or neck injury followed by tinnitus. These can be related to conditions like stroke or acute neurological or vascular problems, which online information cannot safely rule out."],
+    ["Urgent but not 911: call a doctor soon", "Other situations call for prompt medical attention, typically same-day or within a few days. Contact your primary-care doctor or an ENT if you notice new tinnitus along with one-sided hearing changes, ear fullness, pressure, or pain, a recent ear or sinus infection or flu, a pulsatile whooshing that matches your heartbeat, or tinnitus that begins soon after starting a new medication with ear-related side effects. For one-sided or [pulsatile tinnitus](/tinnitus/pulsatile/), providers may order imaging to look for vascular or structural causes."],
+    ["When you can schedule an audiology visit", "In many cases sudden tinnitus still feels alarming but an emergency room is not the best place. It is usually reasonable to schedule a tinnitus and hearing evaluation when tinnitus started recently but you feel otherwise well with no severe symptoms, both ears are affected similarly and you do not feel acutely ill, the tinnitus followed a loud event without red-flag symptoms, or a doctor has already ruled out urgent issues and recommended follow-up."],
+    ["Common causes of sudden-onset tinnitus", "Sudden tinnitus has many possible causes. A very loud event, a concert, arena, fireworks, or headphone blast, can injure inner-ear cells and cause sudden ringing, so protect your ears afterward. Sudden sensorineural hearing loss in one ear is considered urgent, since early treatment may improve outcomes. Blocked ears from wax, infection, or fluid can trigger sudden tinnitus that resolves once treated. Circulation changes can cause pulsatile tinnitus, and jaw or neck strain, stress, illness, or a new medication can play a role too."],
+    ["How sudden tinnitus is evaluated", "Depending on your symptoms you may see an emergency provider, primary-care doctor, ENT, or audiologist. On the audiology side we take a detailed history of when and how the tinnitus started, examine your ears for wax, infection, or fluid, and perform a comprehensive [hearing test](/hearing-testing/) with pure-tone, speech, and middle-ear measurements to see whether there is new hearing loss. If medical red flags are present we encourage physician follow-up; if the pattern looks stable we outline [treatment options](/services/tinnitus-therapy/)."],
+    ["What you can do while arranging care", "While you set up medical or audiology follow-up, a few steps can help you feel calmer: protect your ears from additional loud sound, no concerts, power tools, or very loud headphones; use gentle background sound (a fan, sound machine, or soft music) to avoid total silence, especially at night; support your sleep with a calm bedtime routine; try relaxation techniques such as breathing exercises or gentle stretching; and be mindful of caffeine and alcohol if you notice they worsen the ringing. These steps do not replace medical care, but they make a stressful situation more manageable."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Pulsatile tinnitus", "/tinnitus/pulsatile/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Sudden tinnitus with hearing loss, severe dizziness, weakness, slurred speech, or a severe headache is a 911 emergency.",
+    "One-sided, pulsatile, or medication-related sudden tinnitus warrants a prompt doctor or ENT visit within a few days.",
+    "Sudden hearing loss in one ear is urgent, early treatment may improve the outcome."
+  ],
+  faqs: [
+    ["Do I need to go to the ER for sudden tinnitus?", "Go to the ER or call 911 if sudden tinnitus comes with sudden hearing loss, severe dizziness, weakness or numbness, slurred speech, a sudden severe headache, or vision loss. Without those red flags, a prompt doctor or audiology visit is usually appropriate."],
+    ["Is sudden hearing loss with tinnitus an emergency?", "Yes. Sudden sensorineural hearing loss in one ear, often with fullness and new tinnitus, is treated as urgent because early medical treatment may improve the chance of recovery. Seek care right away."],
+    ["Can sudden tinnitus go away on its own?", "Sometimes. Tinnitus after a loud event or a temporary blockage may fade over hours to days. If it persists beyond a day or two, or if you have any red-flag symptoms, get evaluated rather than waiting. See our page on [when to see a doctor](/tinnitus/when-to-see-doctor/)."]
+  ],
+  image: "/assets/core/tinnitus__sudden-onset.svg",
+  imageLabel: "New ringing: when it is an emergency"
+},

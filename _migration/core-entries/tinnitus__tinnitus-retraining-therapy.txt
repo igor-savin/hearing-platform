@@ -1,35 +1,37 @@
 "/tinnitus/tinnitus-retraining-therapy/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Tinnitus Retraining Therapy (TRT) Explained",
+  headline: "Tinnitus Retraining Therapy (TRT) in the Bay Area",
   intro: [
-    "Tinnitus retraining therapy, usually shortened to TRT, is a structured approach that combines low-level sound therapy with directive counseling. Rather than trying to erase the sound, TRT aims to help the brain reclassify tinnitus as a neutral signal it can safely ignore, a process clinicians call habituation.",
-    "The method grew out of a neurophysiological model of tinnitus and is described by organizations such as the American Tinnitus Association and ASHA. It is not a quick fix; it is a gradual retraining process that typically unfolds over many months rather than a few visits.",
-    "At California Hearing Center, we apply TRT principles as part of an individualized plan, alongside well-fit hearing aids and other strategies where they help. Where a more intensive option is appropriate, we can also discuss Lenire bimodal neuromodulation for candidates who qualify."
+    "Tinnitus Retraining Therapy is an evidence-based approach that combines sound therapy and counseling to help your brain reclassify tinnitus as a neutral, background sound. Over time, this can dramatically reduce how much ringing in the ears affects your day-to-day life.",
+    "Rather than chasing a quick cure, TRT focuses on changing how your auditory system and emotional centers respond to the noise. It was originally developed by Dr. Pawel Jastreboff and has been used worldwide for decades.",
+    "This page is from the audiologists at California Hearing Center in San Mateo and San Carlos. If tinnitus is new to you, start with [what tinnitus is](/tinnitus/what-is-tinnitus/), then return here for a deeper dive into TRT specifically."
   ],
   sections: [
-    ["The two pillars: sound plus counseling", "TRT rests on two components used together. Sound therapy provides gentle, enriched background sound so tinnitus stands out less against silence, while directive counseling reframes what the sound means so it stops triggering a stress response. Neither pillar works as well alone."],
-    ["Why habituation is the goal", "The aim is not to make the sound louder or quieter but to change your reaction to it. Over time, many people stop consciously noticing tinnitus for long stretches, much as you stop noticing a refrigerator hum. This is a realistic target for a large share of motivated patients, though timelines vary."],
-    ["The role of sound enrichment", "Avoiding silence is central. Constant quiet tends to make tinnitus more prominent, so TRT encourages a comfortable, non-intrusive sound environment using ambient noise, sound generators, or hearing aids that both amplify speech and add gentle background sound when hearing loss is present."],
-    ["Directive counseling in practice", "Counseling explains how hearing and the auditory brain generate and sustain tinnitus, which reduces the fear and catastrophic thinking that make it worse. Understanding the mechanism is itself therapeutic, and it makes the sound feel less threatening."],
-    ["Setting honest expectations", "TRT asks for patience and consistency. Progress is gradual and not guaranteed for everyone, and results depend on your hearing, the nature of your tinnitus, and how consistently the plan is followed. We favor realistic expectations over marketing promises."]
+    ["What TRT is", "TRT is a structured program that aims to help you stop reacting to tinnitus as a threat so your brain can gradually tune it out. Its goal is habituation, the point at which your brain no longer treats tinnitus as important and it fades into the background like a refrigerator hum. For many people, tinnitus eventually becomes barely noticeable except in very quiet moments."],
+    ["Sound therapy plus counseling", "TRT looks at tinnitus through two lenses: the auditory system and the emotional system. On the sound side, we use low-level sound through hearing aids, sound generators, or bedside devices to reduce the contrast between tinnitus and silence. On the counseling side, we explain how tinnitus works, why your brain reacts the way it does, and how to gradually de-threaten the sound, often using strategies similar to Cognitive Behavioral Therapy. Daily habits around sleep, stress, and sound support the process."],
+    ["Who is a good candidate", "TRT may fit if you have had persistent tinnitus for more than six months, if ringing is affecting your sleep, focus, or mood, if you feel you cannot stop listening to the noise, if you worry it signals something dangerous even after serious causes have been ruled out, and if you are open to a structured program and willing to give it time. If your tinnitus is sudden, in one ear only, or comes with sudden hearing loss, dizziness, or neurologic symptoms, it is important to be medically evaluated first."],
+    ["What TRT looks like step by step", "While every plan is personalized, a typical journey starts with a comprehensive evaluation including [hearing tests](/hearing-testing/) and tinnitus history, followed by an individualized treatment plan. From there we hold an initial counseling session explaining how tinnitus is generated and why habituation is possible, set up sound therapy on your devices, and continue with regular follow-up visits to adjust the sound, revisit counseling topics, and make sure the plan is working in real life."],
+    ["How long TRT takes", "TRT is a gradual process. Most structured programs are designed to last roughly 12 to 24 months, with the most noticeable improvements often appearing within the first 6 to 12 months. People with very high stress or long-standing tinnitus may need more time. Progress moves through phases: understanding tinnitus and reducing fear, habituation beginning so tinnitus feels less urgent, and finally tinnitus being present but rarely bothersome as your brain mostly ignores it."],
+    ["TRT, Lenire, and advanced options", "TRT is one tool in a full toolbox and works especially well combined with hearing aids for tinnitus, day and night sound therapy, and CBT-based counseling. Some patients are also candidates for Lenire, an FDA-cleared bimodal neuromodulation device that pairs sound with gentle tongue stimulation, offered through a candidacy-gated tinnitus therapy program. Not everyone needs Lenire or full TRT; some do well with targeted counseling, sound therapy, and lifestyle changes alone. Your plan is always individualized within our [tinnitus therapy program](/services/tinnitus-therapy/)."]
   ],
   bulletLinks: [
-    ["Start with a hearing evaluation", "/hearing-testing/"],
-    ["Hearing aids for tinnitus", "/products/hearing-aids-by-brand/"],
-    ["Tinnitus knowledge hub", "/tinnitus/"],
-    ["What tinnitus is", "/tinnitus/what-is-tinnitus/"],
-    ["What relief typically looks like", "/tinnitus/success-stories/"],
-    ["Book a tinnitus visit", "/contact/"]
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Understanding habituation", "/tinnitus/habituation/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
-    "TRT combines low-level sound enrichment with directive counseling to promote habituation over time.",
-    "The goal is a changed reaction to tinnitus, not elimination of the sound itself.",
-    "It is a gradual, months-long process whose results vary and depend on consistency."
+    "TRT pairs low-level sound therapy with counseling to help the brain reclassify tinnitus as neutral background sound.",
+    "It is a gradual program, often 12 to 24 months, aimed at habituation rather than an instant cure.",
+    "TRT works best combined with hearing aids, CBT-based counseling, and, for select candidates, advanced options like Lenire."
   ],
   faqs: [
-    ["How long does TRT take to work?", "TRT is a gradual process, and meaningful habituation often develops over many months rather than weeks. Consistency with sound enrichment and follow-up counseling tends to matter more than speed."],
-    ["Do I need special equipment for TRT?", "Not always. Some people use ambient sound or sound generators, while those with hearing loss often benefit from hearing aids that amplify and can add gentle background sound. We match the tools to your hearing and tinnitus."],
-    ["Is TRT the same as just masking the sound?", "No. Masking tries to cover tinnitus with louder sound, while TRT deliberately uses low-level sound below the tinnitus so the brain can learn to tune it out. The counseling component is what distinguishes true retraining from simple masking."]
+    ["Is TRT a cure for tinnitus?", "TRT is not a cure in the sense of turning tinnitus off, but it can drastically reduce how much it bothers you day to day. Many patients reach a point where they rarely think about it, even if a faint sound remains in very quiet settings."],
+    ["How is TRT different from just using sound therapy?", "Sound therapy is one ingredient; TRT combines it with structured directive counseling and education specifically designed to change your emotional response and guide habituation over months."],
+    ["Can TRT help with stress-related tinnitus?", "Yes. Stress and tinnitus are closely linked, and TRT specifically addresses the emotional alarm system around the sound. We often pair it with anxiety-management strategies."],
+    ["Does TRT work for tinnitus in one ear?", "It can. We first make sure one-sided tinnitus has been properly evaluated, then design sound and counseling strategies that fit your specific situation."]
   ],
   image: "/assets/core/tinnitus__tinnitus-retraining-therapy.svg",
   imageLabel: "Sound therapy and directive counseling"

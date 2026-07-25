@@ -1,0 +1,38 @@
+"/tinnitus/sleep-strategies/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Managing Tinnitus at Night: Sleep Strategies That Actually Help",
+  intro: [
+    "Nighttime is when tinnitus often feels loudest. The world gets quiet, your brain has fewer distractions, and the ringing, buzzing, or hissing can take center stage. The encouraging news is that there are practical, science-based ways to make it easier to fall asleep and stay asleep.",
+    "You do not have to wait for tinnitus to disappear before you sleep better. With the right sound environment, bedtime routine, and coping tools, most people see meaningful improvement, often before the tinnitus itself changes at all.",
+    "This guide comes from the tinnitus-focused audiologists at California Hearing Center in San Mateo and San Carlos. For the bigger picture, start with [what tinnitus is](/tinnitus/what-is-tinnitus/) and our [tinnitus hub](/tinnitus/)."
+  ],
+  sections: [
+    ["Why tinnitus feels worse at night", "Many people can manage during the day but feel that as soon as they lie down in a quiet bedroom the sound doubles. That usually is not the tinnitus getting worse, it is about contrast and attention: less background noise means tinnitus has no competition, your brain has fewer distractions, and worry about sleep can make the sound feel more intense. Elevated stress hormones from the day can add to it."],
+    ["Creating a sleep-friendly sound environment", "The goal at night is not to blast tinnitus away but to gently blend it with other sounds so your brain has something more pleasant to focus on. Use soft, consistent background sound such as a fan, white noise, or ocean waves. Aim for a volume just slightly above or below your tinnitus level, not so loud it becomes another irritant. Choose looping sounds without sudden changes in tempo, which is why many bedside devices and apps are designed specifically for sleep."],
+    ["Devices and apps that help at night", "Several options can make nights easier: hearing aids with tinnitus programs for people who also have hearing loss, dedicated bedside sound generators, extended-wear devices like Lyric that can provide round-the-clock sound support, and smartphone apps with customizable soundscapes and timers. Most people should not wear traditional hearing aids all night due to comfort, skin health, and moisture concerns, so a common plan is [hearing aids](/hearing-aid-fitting/) by day plus bedside sound therapy at night."],
+    ["Building a tinnitus-friendly bedtime routine", "What you do in the 60 to 90 minutes before bed strongly shapes how your brain responds to tinnitus at night. Wind down on purpose with one or two relaxing activities like stretching, reading, or a warm shower. Set your sound environment before you lie down so you enter a room that already feels calm. Use CBT-inspired tools to slow racing thoughts, and keep reassuring reminders nearby to counter late-night catastrophic thinking such as it will always be like this."],
+    ["What to avoid before bed", "Some habits make both tinnitus and sleep worse. Common culprits include late-night doomscrolling about tinnitus, which raises anxiety and hyper-focus; caffeine and alcohol close to bedtime; very loud evening environments without hearing protection; and going to bed wired without any wind-down time. If you have had a particularly loud evening, your ears may need extra quiet recovery time."],
+    ["When nighttime tinnitus needs professional help", "Some scenarios warrant a closer look: tinnitus that starts suddenly or changes dramatically, tinnitus in one ear only, tinnitus with sudden hearing loss, dizziness, or neurologic symptoms, and severe insomnia, panic, or depression related to tinnitus. A comprehensive tinnitus evaluation, including [hearing testing](/hearing-testing/), helps us determine whether sound therapy, hearing aids, TRT, or advanced options are appropriate."]
+  ],
+  bulletLinks: [
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Tinnitus relief apps", "/tinnitus/apps/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "Tinnitus usually feels louder at night because of contrast and attention, not because it has actually worsened.",
+    "A steady, gentle sound environment plus a consistent wind-down routine helps most people sleep better before tinnitus itself changes.",
+    "Sudden, one-sided, or dizziness-related tinnitus deserves prompt professional evaluation."
+  ],
+  faqs: [
+    ["Will I ever be able to sleep in silence again?", "Not necessarily right away, but as you build better sleep habits and use the right sound therapy, many people find their brain becomes less alarmed by tinnitus at night. Over time, sleep can improve even if the tinnitus is still present."],
+    ["Should I take a sleep medication for tinnitus?", "Some medications can influence tinnitus, while others may help in the short term. It is important to talk with your physician before starting or changing any sleep medication, and we can coordinate with your medical team as part of a full plan."],
+    ["Do I need special hearing aids just for sleep?", "Not always. Many patients do well with standard daytime hearing aids plus bedside sound therapy at night. In some cases, extended-wear or tinnitus-specific devices may be recommended."],
+    ["Is it safe to play sound all night?", "Generally, low-level, comfortable sound is safe and often helpful. We recommend moderate volumes and steady sounds, and we tailor the plan if you have specific ear or sleep conditions."]
+  ],
+  image: "/assets/core/tinnitus__sleep-strategies.svg",
+  imageLabel: "Calmer nights with the right sound environment"
+},

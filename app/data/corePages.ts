@@ -329,72 +329,76 @@ export const corePages: Record<string, PageContent> = {
 },
   "/hyperacusis/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Hyperacusis: When Everyday Sounds Feel Too Loud",
+  headline: "Hyperacusis (Sound Sensitivity) Help in the Bay Area",
   intro: [
-    "Hyperacusis is a reduced tolerance to ordinary sounds, so that noises most people find comfortable, running water, dishes, traffic, or a conversation, feel uncomfortably or even painfully loud. It is different from simply disliking noise; the sounds genuinely register as too intense.",
-    "Sound sensitivity can range from mild annoyance to a condition that reshapes daily life, and it frequently overlaps with tinnitus and with hearing loss. Because the causes and severity vary widely, a careful evaluation matters before deciding on any approach.",
-    "At California Hearing Center, we assess sound tolerance alongside your hearing and, where appropriate, use gradual sound-based therapy to help rebuild comfort. Reputable sources such as the American Tinnitus Association and ASHA describe hyperacusis and its management, and our approach follows that evidence-informed thinking."
+    "When everyday sounds feel uncomfortably loud, sharp, or even painful, it can quickly affect sleep, work, relationships, and your willingness to leave the house. California Hearing Center helps Bay Area patients understand what is driving sound sensitivity and build an evidence-based plan to rebuild comfort with sound, at your pace.",
+    "Many people feel stuck between avoiding sound because it hurts and needing sound because silence can make tinnitus or anxiety feel worse. That is why we focus on a plan that is both safe and realistic for daily life.",
+    "We serve San Mateo, San Carlos, San Francisco, the Peninsula, the South Bay, and the East Bay. If tinnitus is also part of your picture, our [tinnitus resources](/tinnitus/) work hand in hand with this page."
   ],
   sections: [
-    ["What hyperacusis is, and is not", "Hyperacusis is a lowered tolerance to sound levels that do not bother most people. It differs from recruitment, a rapid growth of loudness tied to hearing loss, and from misophonia, a strong emotional reaction to specific sounds. Distinguishing these matters because they are managed differently."],
-    ["Common causes and triggers", "Sound sensitivity can follow noise exposure, head injury, certain medications or medical conditions, and often accompanies tinnitus. Sometimes no single cause is found. Identifying contributing factors is part of a thorough evaluation and guides what to do next."],
-    ["How we evaluate it", "Assessment typically includes a full [hearing test](/hearing-testing/), a history of your symptoms and triggers, and measures of how you tolerate different sound levels. Screening also looks for red flags that call for medical referral before therapy begins."],
-    ["Sound desensitization therapy", "For many people, carefully graded exposure to sound, rather than avoidance, gradually rebuilds tolerance. This is done at comfortable levels and increased slowly over time, often paired with counseling so the process feels controlled and safe."],
-    ["Why silence usually backfires", "It is tempting to retreat into quiet and constant ear protection, but persistent silence can make the auditory system even more sensitive, worsening the problem over time. A balanced, gradual return to normal sound is usually the healthier path, guided by a professional."]
+    ["What hyperacusis is", "Hyperacusis is a type of decreased sound tolerance. It can make ordinary sounds, such as dishes clinking, a child's voice, a coffee grinder, traffic, or transit announcements, feel disproportionately intense, uncomfortable, or painful. It is not the same as simply disliking noise; the volume that most people tolerate easily can feel like too much."],
+    ["Hyperacusis, misophonia, and phonophobia", "These related terms describe different experiences. Hyperacusis is mainly about volume tolerance. Misophonia is a strong emotional reaction to specific trigger sounds. Phonophobia is fear-based avoidance that can develop when sound feels threatening. Sorting out which pattern fits you, sometimes more than one, helps shape the right plan."],
+    ["Can you have it with normal hearing?", "Yes. Some people have normal hearing thresholds but reduced sound tolerance. Others have hearing loss, tinnitus, migraine patterns, or stress physiology contributing to their sensitivity. A careful [hearing evaluation](/hearing-testing/) helps separate the sound-tolerance problem from other factors that can amplify it."],
+    ["Common symptoms", "People describe sound sensitivity in different ways. Some feel pain, some feel overwhelm, and some feel a fight-or-flight response to sound. Common experiences include everyday sounds feeling too loud or physically uncomfortable, fatigue or irritability after restaurants, meetings, or errands, avoiding social settings, open offices, or transit, feeling anxious about unpredictable sound environments, and sensitivity alongside tinnitus, jaw and neck tension, or migraine patterns."],
+    ["Why sound sensitivity happens", "Hyperacusis is not one single diagnosis with one single cause. It can follow noise exposure or acoustic shock, develop alongside tinnitus, appear with migraine patterns, or become reinforced by stress and avoidance. Tinnitus and hyperacusis often occur together, and when your nervous system is on high alert, sound can feel more threatening. The most helpful next step is a careful evaluation that separates the tolerance problem from the factors amplifying it."],
+    ["What actually helps", "Evidence-based hyperacusis care typically combines education, counseling, and a structured plan to rebuild tolerance using sound enrichment and gradual exposure, without pushing you into painful spikes. The goal is not to tough it out but to use repeatable, safe exposure that steadily improves comfort with everyday sound. We tailor the plan to your triggers, your daily environments, and your goals for sleep, work, social life, and commuting."]
   ],
   bulletLinks: [
-    ["Coping strategies for sound sensitivity", "/hyperacusis/coping/"],
-    ["The hyperacusis and tinnitus overlap", "/hyperacusis/tinnitus/"],
-    ["When to seek professional help", "/hyperacusis/when-to-seek-help/"],
-    ["Start with a hearing evaluation", "/hearing-testing/"],
-    ["Custom hearing protection", "/services/hearing-protection/"],
-    ["Tinnitus knowledge hub", "/tinnitus/"]
+    ["Coping and gradual exposure", "/hyperacusis/coping/"],
+    ["When to seek help (red flags)", "/hyperacusis/when-to-seek-help/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Tinnitus and sound sensitivity", "/tinnitus/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Hyperacusis is a genuinely reduced tolerance to everyday sound, not just a dislike of noise.",
-    "It often overlaps with tinnitus and hearing loss, so evaluation should look at all three.",
-    "Gradual sound-based therapy tends to help, while constant silence often makes it worse."
+    "Hyperacusis is reduced tolerance to everyday sound, and it can occur with or without measurable hearing loss.",
+    "It often overlaps with tinnitus, and treatment frequently needs to address both sides.",
+    "The most effective care rebuilds tolerance gradually with sound enrichment and counseling, not silence or toughing it out."
   ],
   faqs: [
-    ["What is the difference between hyperacusis and just being sensitive to noise?", "Hyperacusis means sounds at levels most people find comfortable register as too loud or even painful. It is a measurable reduction in sound tolerance, which is why a professional evaluation helps distinguish it from ordinary noise dislike."],
-    ["Can hyperacusis be treated?", "Many people improve. Gradual sound desensitization at comfortable levels, often combined with counseling and treatment of any related tinnitus or hearing loss, can rebuild tolerance over time. Results vary and depend on the underlying cause."],
-    ["Should I wear earplugs all the time to protect my ears?", "Generally no. Constant ear protection in ordinary environments can make hyperacusis worse by increasing sensitivity. Reserve protection for genuinely loud settings, and let a professional guide a gradual return to normal sound."]
+    ["Is hyperacusis the same as just not liking loud noise?", "No. Hyperacusis is a genuine decrease in sound tolerance, where sounds most people handle easily feel disproportionately intense, uncomfortable, or painful. It is different from a preference for quiet."],
+    ["Do earplugs help or hurt?", "Hearing protection is appropriate for truly loud environments, but wearing earplugs all day in ordinary settings can backfire for some people by increasing sensitivity over time. We help you find the right balance."],
+    ["Can hyperacusis get better?", "Many people improve with a gentle, consistent plan that gradually rebuilds tolerance while managing tinnitus, stress, and avoidance. Progress tends to come from small, repeatable wins rather than dramatic challenges."],
+    ["Should I see a doctor or an audiologist first?", "If symptoms are building gradually without red flags, starting with an audiology evaluation is often the right first step. Sudden hearing loss, severe vertigo, or neurologic symptoms need urgent medical care first."]
   ],
   image: "/assets/core/hyperacusis.svg",
   imageLabel: "Understanding and managing sound sensitivity"
 },
   "/hyperacusis/coping/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Coping Strategies for Sound Sensitivity",
+  headline: "Coping With Hyperacusis: Gradual Exposure Without Major Setbacks",
   intro: [
-    "Living with hyperacusis can make the everyday world feel hostile, from a clattering kitchen to a busy street. The good news is that practical coping strategies, used alongside professional guidance, can make daily life more comfortable and support genuine recovery of sound tolerance.",
-    "The single most important idea in coping with hyperacusis is counterintuitive: the goal is usually to rebuild your tolerance to sound gradually, not to eliminate sound from your life. Strategies that lean too hard on silence and constant ear protection often backfire over time.",
-    "The suggestions below reflect widely recommended, evidence-informed approaches. They work best as part of a plan built with an audiologist who has evaluated your hearing and sound tolerance, because the right pace is individual."
+    "When sound sensitivity flares, it is normal to protect your ears and avoid noisy places. But many people get stuck in a loop where avoidance grows, tolerance shrinks, and everyday sound feels even worse. This guide shares practical steps to rebuild comfort with sound safely, without toughing it out.",
+    "Most people improve with a plan that is gentle, repeatable, and progressive rather than dramatic. Think small wins every day instead of big challenges once in a while.",
+    "If you have sudden hearing changes, severe vertigo, or new neurologic symptoms, review the [red flags](/hyperacusis/when-to-seek-help/) first. Otherwise, this page pairs well with our [hyperacusis overview](/hyperacusis/)."
   ],
   sections: [
-    ["Use ear protection selectively, not constantly", "Reserve earplugs and earmuffs for genuinely loud environments such as concerts or power tools. Wearing protection in ordinary settings, or all day, can increase sensitivity and make hyperacusis worse. This is one of the most common and understandable mistakes people make."],
-    ["Add gentle sound rather than seeking silence", "A quiet, sound-enriched environment, soft background noise, nature sounds, or a fan, is usually more helpful than total silence. Persistent quiet tends to sharpen the auditory system's sensitivity, so gentle, comfortable sound helps recalibrate it."],
-    ["Increase exposure gradually", "Rebuilding tolerance works like rebuilding fitness: slow, steady, and within comfort. Reintroduce everyday sounds at levels you can manage and expand gradually. Pushing into pain is counterproductive, but so is avoidance, so aim for a comfortable, sustainable middle."],
-    ["Manage stress and protect sleep", "Stress and fatigue can heighten sound sensitivity, creating a cycle that feels worse. Relaxation techniques, steady routines, and good sleep habits support tolerance and make daily coping easier. Emotional and auditory factors are closely linked in hyperacusis."],
-    ["Plan challenging situations in advance", "For unavoidable loud events, plan ahead: sit farther from speakers, take quiet breaks, and carry protection for truly loud moments only. Having a plan reduces the anxiety that itself amplifies sound sensitivity, which helps you stay engaged in normal life."]
+    ["The goal: safety plus consistency", "Coping works best when it balances two needs: protecting your ears from truly loud noise and maintaining enough everyday sound exposure so your system does not become more sensitive over time. What helps most is a steady baseline of comfortable sound plus gradual increases in tolerance. What often backfires is all-day silence, all-day earplugs, and unpredictable push-through-it exposures. What you are aiming for is confidence: being around sound without bracing for impact, even if you still prefer calmer environments."],
+    ["Earplugs: when they help and when they backfire", "Earplugs and earmuffs are important tools, but only when used strategically. If you wear protection everywhere, your brain can start treating normal sound as too much, which can increase sensitivity. A simple rule of thumb is to use protection for truly loud situations like concerts, power tools, loud transit, and sporting events, and to avoid constant protection in ordinary day-to-day settings unless your clinician specifically recommends it."],
+    ["Sound enrichment you can start today", "Many people with hyperacusis do better with a gentle baseline of sound rather than total quiet. This is not about blasting noise; it is about reducing the contrast between silence and sudden sound. At home, try a fan, air purifier, low music, or nature sounds at a comfortable level, especially during quiet times of day. Gentle means noticeable but not irritating. If you find yourself tensing or counting the minutes, it is too much. The best level is the one you can repeat daily without spikes."],
+    ["A simple gradual exposure plan", "Your plan should be tailored, but the framework is to increase tolerance slowly and consistently using exposures that are challenging but not painful. Pick one or two starter sounds that are slightly uncomfortable but manageable, keep each exposure short enough to complete calmly, and repeat it daily until it feels easier for several days in a row. Increase only one variable at a time, whether that is duration, environment complexity, or volume, and track your recovery time. A good exposure is one you bounce back from quickly."],
+    ["Graduating to real-life settings", "Once a starter exposure feels comfortable, step it up gradually toward real environments. A typical path might run from a quiet cafe to a slightly busier cafe, then a short restaurant visit, then a longer one. In the Bay Area, have a plan for restaurants, open offices, transit, and busy streets: choose quieter timing, better seating, and quick outdoor breaks instead of white-knuckling indoors. Progress usually looks like handling normal sound without bracing, not everything becoming quiet."],
+    ["What to do after a spike", "Spikes happen; the goal is to recover and return to your baseline plan, not to panic and restart from zero. Reduce sound temporarily but avoid total silence for long periods if silence worsens tinnitus or anxiety. Use gentle background sound and keep your environment predictable for a day or two, then scale back to the last exposure level that felt manageable and rebuild gradually. Prioritize sleep and lower your overall stress load, since spikes are more common when you are exhausted."]
   ],
   bulletLinks: [
-    ["What hyperacusis is", "/hyperacusis/"],
-    ["When to seek professional help", "/hyperacusis/when-to-seek-help/"],
-    ["The hyperacusis and tinnitus overlap", "/hyperacusis/tinnitus/"],
-    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["Hyperacusis overview", "/hyperacusis/"],
+    ["When to seek help (red flags)", "/hyperacusis/when-to-seek-help/"],
+    ["Tinnitus and sound sensitivity", "/tinnitus/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Talk to our team", "/contact/"]
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Use ear protection only for genuinely loud settings, not throughout ordinary daily life.",
-    "Gentle background sound and gradual exposure usually rebuild tolerance better than silence.",
-    "Managing stress and sleep supports sound tolerance and makes coping easier."
+    "Rebuild tolerance with small, repeatable exposures that are challenging but never painful, changing one variable at a time.",
+    "Use hearing protection for genuinely loud settings only; constant everyday protection can increase sensitivity.",
+    "After a spike, recover with gentle background sound and rest, then return to your baseline rather than starting over."
   ],
   faqs: [
-    ["Isn't it safer to avoid loud sounds and wear earplugs all day?", "For dangerously loud environments, protection is smart. But wearing earplugs in ordinary settings, or constantly, tends to increase sensitivity and worsen hyperacusis over time. The aim is selective protection plus a gradual return to normal sound."],
-    ["Will these strategies cure my hyperacusis?", "Coping strategies can meaningfully improve comfort and support recovery, but they are not a guaranteed cure and work best within a professional plan. Outcomes depend on the cause and severity, so an evaluation helps set the right approach and pace."],
-    ["How do I know if I'm pushing too hard or not enough?", "Sound exposure should feel challenging but not painful, and it should not leave lasting distress afterward. Because that balance is individual, working with an audiologist helps you calibrate the pace and adjust as your tolerance improves."]
+    ["Should I just avoid loud places until my ears feel better?", "Long-term avoidance and constant silence often make sensitivity worse. A gentle baseline of comfortable sound plus gradual, planned exposure usually rebuilds tolerance more effectively than hiding from sound."],
+    ["How do I know if an exposure was too much?", "A good exposure is one you recover from quickly and do not feel wrecked by afterward. If you find yourself bracing, tensing, or counting the minutes, or if a spike lingers, scale back to the last comfortable level."],
+    ["What if tinnitus is part of the picture?", "Your plan may need to manage the quiet-makes-tinnitus-louder effect while still rebuilding sound tolerance, often using gentle background sound rather than total silence."],
+    ["When should I stop DIY and get help?", "If spikes are frequent, painful, or your tolerance is rapidly worsening, or your world is shrinking, schedule an evaluation. You should not have to guess your way through this."]
   ],
   image: "/assets/core/hyperacusis__coping.svg",
   imageLabel: "Practical, gradual coping strategies"
@@ -437,36 +441,38 @@ export const corePages: Record<string, PageContent> = {
 },
   "/hyperacusis/when-to-seek-help/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "When Sound Sensitivity Warrants Professional Help",
+  headline: "When to Seek Help for Hyperacusis: Red Flags to Take Seriously",
   intro: [
-    "Almost everyone finds some sounds unpleasant, so it can be hard to know when sound sensitivity crosses from normal into something worth evaluating. A useful rule of thumb: if sensitivity to everyday sound is changing how you live, work, or sleep, it is worth a professional look.",
-    "Some situations call for prompt or even urgent attention, especially when sound sensitivity appears suddenly or arrives with other symptoms. This page lays out the signs that suggest you should seek help and the red flags that mean you should not wait.",
-    "Getting evaluated early tends to make management easier, and it rules out causes that need medical rather than audiological care. When in doubt, it is reasonable to ask."
+    "Hyperacusis, or sound sensitivity, is often manageable, but some symptoms need urgent medical attention. This page helps you recognize red flags so you can take the right next step quickly and safely.",
+    "If you believe you are having a medical emergency, call 911 or go to the nearest emergency room. The guidance below is educational and does not replace an in-person evaluation.",
+    "If your symptoms have been building gradually without red flags, starting with an audiology evaluation is often the right first step. Our [hyperacusis overview](/hyperacusis/) and [coping guide](/hyperacusis/coping/) can help you plan from there."
   ],
   sections: [
-    ["When it is affecting daily life", "If you are avoiding restaurants, gatherings, work settings, or activities you value because ordinary sounds feel too loud, that functional impact is a clear reason to seek evaluation. Sound sensitivity that shrinks your world deserves attention rather than endurance."],
-    ["When it is getting worse or spreading", "Sensitivity that steadily intensifies, extends to more and more sounds, or drives you toward constant ear protection and silence should be assessed. Early guidance can interrupt patterns, such as over-protecting the ears, that tend to make hyperacusis worse."],
-    ["When sound causes actual pain", "Sound that produces genuine pain, sometimes called noxacusis, rather than mere discomfort is a stronger reason to be seen. Painful reactions to ordinary sound warrant professional evaluation to understand the cause and to guide safe, gradual therapy."],
-    ["Red flags that need prompt medical care", "Some symptoms point beyond routine audiology. Seek prompt medical evaluation for sound sensitivity that begins suddenly, affects only one ear, or comes with sudden hearing loss, ear pain or drainage, dizziness or balance problems, facial weakness, or severe headache."],
-    ["What an evaluation involves", "A visit typically includes a full [hearing test](/hearing-testing/), a detailed history, and sound-tolerance measures, with referral for medical assessment when red flags are present. From there we can outline a gradual, individualized plan rather than leaving you to guess."]
+    ["Red flags that need urgent evaluation", "If any of the following are happening now, do not wait for a routine appointment; seek urgent medical care. These include sudden hearing loss or a sudden major change in hearing, especially over hours to a couple of days or when one ear suddenly feels blocked with a real hearing drop. Sudden hearing loss can be time-sensitive, so prompt care matters."],
+    ["Vertigo, neurologic, and trauma warning signs", "Seek urgent evaluation for severe vertigo or new trouble walking, such as spinning, falling, or vomiting with dizziness. New neurologic symptoms like facial weakness, new numbness, a severe headache unlike your usual, confusion, difficulty speaking, or vision changes also need urgent assessment. And after any head or ear trauma, a fall, accident, or blast exposure, a new hearing change, intense sound sensitivity, or dizziness should be checked urgently."],
+    ["Infection signs", "Fever, severe ear pain, or ear drainage can signal an infection or another issue that requires medical treatment rather than self-management. If you notice these alongside sound sensitivity, arrange to be seen promptly rather than waiting to see whether they pass on their own."],
+    ["Symptoms to evaluate soon", "Some symptoms warrant prompt attention without necessarily being emergencies, especially if they are worsening, persistent, or one-sided. These include new one-sided sound sensitivity, tinnitus, or hearing changes; a persistent pulsatile sound, a rhythmic whooshing in time with your heartbeat, which can require medical workup particularly if new or worsening; and rapidly worsening tolerance where you notice more triggers, less tolerance, and frequent spikes."],
+    ["When to start with an audiologist", "If your symptoms have built gradually and you do not have urgent red flags, an audiology evaluation is often the right starting point. This suits gradual-onset sound sensitivity that grows over weeks or months in restaurants, transit, or busy rooms; hyperacusis that shows up together with tinnitus, where the plan often needs to address both sides; and situations where you simply want a safe coping plan and are unsure about earplugs, avoidance, and gradual exposure. A [hearing test](/hearing-testing/) helps clarify what is going on."],
+    ["If you are not sure what category you are in", "That uncertainty is common. If you are unsure whether symptoms are urgent, start with the safest option for your situation: seek urgent care if you have sudden hearing loss, severe vertigo, or neurologic symptoms. Otherwise, schedule an evaluation and we will help triage the next steps, coordinating referrals to ENT or other specialists if anything looks medically concerning."]
   ],
   bulletLinks: [
     ["Hyperacusis overview", "/hyperacusis/"],
-    ["Coping strategies", "/hyperacusis/coping/"],
-    ["The tinnitus overlap", "/hyperacusis/tinnitus/"],
-    ["Book a hearing evaluation", "/hearing-testing/"],
-    ["Contact our offices", "/contact/"],
-    ["Areas we serve", "/areas-we-serve/"]
+    ["Coping and gradual exposure", "/hyperacusis/coping/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Tinnitus and sound sensitivity", "/tinnitus/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Seek evaluation when sound sensitivity changes how you live, work, or sleep, or keeps worsening.",
-    "Sound that causes genuine pain, not just discomfort, is a stronger reason to be seen.",
-    "Sudden, one-sided, or symptom-accompanied sensitivity needs prompt medical attention."
+    "Sudden hearing loss, severe vertigo, new neurologic symptoms, trauma-related changes, or infection signs need urgent care.",
+    "New one-sided symptoms and pulsatile whooshing deserve prompt evaluation even when not an emergency.",
+    "Gradual-onset sound sensitivity without red flags is usually well suited to starting with an audiology evaluation."
   ],
   faqs: [
-    ["How do I know if my sound sensitivity is serious enough to get checked?", "If it is limiting your activities, steadily worsening, spreading to more sounds, or causing genuine pain, it is worth a professional evaluation. You do not need to wait until it is severe; earlier assessment usually makes management easier."],
-    ["When is sound sensitivity a medical emergency?", "Treat it urgently if it starts suddenly, affects only one ear, or comes with sudden hearing loss, ear pain or drainage, dizziness, facial weakness, or severe headache. These signs call for prompt medical evaluation rather than a routine appointment."],
-    ["What happens at a sound-sensitivity evaluation?", "Expect a hearing test, a detailed history of your symptoms and triggers, and measures of your sound tolerance, plus medical referral if red flags appear. We then discuss a gradual, individualized plan. Call 650-342-9449 to arrange a visit."]
+    ["What counts as a hyperacusis emergency?", "Sudden hearing loss, severe vertigo with falling or vomiting, new neurologic symptoms, hearing changes after head or ear trauma, and signs of infection like fever, severe pain, or drainage all warrant urgent medical care rather than a routine appointment."],
+    ["Is pulsatile whooshing serious?", "A rhythmic whooshing in time with your heartbeat can require medical workup, especially if it is new or worsening. It is worth being evaluated soon even if it is not an emergency."],
+    ["My sound sensitivity is only in one ear. Should I worry?", "New one-sided sound sensitivity, tinnitus, or hearing change should be evaluated. One-sided symptoms are an important clue that deserves prompt professional attention."],
+    ["I do not have red flags but sound bothers me more each week. What now?", "Gradually worsening sensitivity without urgent red flags is a good reason to schedule an audiology evaluation, where we assess your hearing and sound tolerance and build a safe coping plan."]
   ],
   image: "/assets/core/hyperacusis__when-to-seek-help.svg",
   imageLabel: "Knowing when to ask for help"
@@ -1605,35 +1611,36 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Tinnitus Therapy in San Mateo & San Carlos",
   intro: [
-    "Tinnitus, the perception of ringing, buzzing, hissing, or humming without an outside source, is one of the reasons patients travel from across the Peninsula to see us. It is common, it is rarely dangerous on its own, and, importantly, it is manageable. Our tinnitus program is built to move you from uncertainty and internet overwhelm toward a clear, structured plan.",
-    "There is no single pill or switch that erases tinnitus for everyone, but that does not mean nothing can be done. Most people who feel controlled by their tinnitus can reach a point where it fades into the background, stops disrupting sleep, and no longer dominates their attention. Getting there usually combines several complementary approaches rather than one quick fix.",
-    "This page explains the services we offer. If you are still learning what tinnitus is and why it happens, start with [what is tinnitus](/tinnitus/what-is-tinnitus/)."
+    "Ringing in the ears, also known as tinnitus, is more than an occasional nuisance after a loud concert. For millions of people it is a daily struggle that affects concentration, sleep, and quality of life. Some experience constant ringing or buzzing in both ears, while others notice it comes and goes or affects only one ear.",
+    "At California Hearing Center we know how frustrating tinnitus can be, and how lack of sleep and heightened stress can make symptoms worse. The encouraging news is that you do not have to suffer in silence. Our Doctors of Audiology bring more than 20 years of experience helping patients manage tinnitus using advanced testing, evidence-based therapies, and modern sound technologies.",
+    "Several of our audiologists are Certificate Holders in Tinnitus Management, a credential recognized by the American Board of Audiology. To understand the condition itself first, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["A thorough evaluation comes first", "Every plan begins with listening to your history and testing your hearing. Because tinnitus and hearing loss so often travel together, a full [hearing evaluation](/hearing-testing/) helps us understand what may be driving the sound and rules out reversible causes such as earwax. We also screen for the red flags that warrant medical referral."],
-    ["Sound therapy", "Low-level background sound, from a tabletop generator, an app, or hearing aids with a built-in tinnitus feature, can make the contrast between silence and tinnitus less jarring. Used consistently, sound enrichment supports the brain's natural process of tuning the signal out over time."],
-    ["Counseling and CBT-informed strategies", "Much of tinnitus distress comes from the alarm and worry the sound triggers, not the sound itself. Education and counseling informed by cognitive behavioral therapy help reframe those reactions. Some patients also benefit from a referral to a psychologist for structured CBT, which has strong research support for reducing tinnitus-related distress."],
-    ["Hearing aids and Tinnitus Retraining Therapy (TRT)", "When hearing loss is present, well-fit hearing aids often ease tinnitus by restoring the everyday sound the brain is missing. Tinnitus Retraining Therapy combines directive counseling with sustained sound enrichment over months, with the goal of habituation, the point where tinnitus stops registering as a threat."],
-    ["Lenire and advanced options", "Lenire is an FDA-cleared bimodal neuromodulation device that pairs sound with mild electrical stimulation of the tongue. It is not right for everyone, and candidacy depends on your hearing, tinnitus profile, and medical history. We can discuss whether it fits your situation as part of a broader plan."],
-    ["When tinnitus needs urgent care", "Tinnitus that begins suddenly, affects only one ear, pulses in time with your heartbeat, or comes with dizziness, sudden hearing loss, or neurological symptoms should be evaluated promptly rather than managed as routine."]
+    ["What tinnitus is", "Tinnitus is the perception of sound in the ears or head without an external source. It is most commonly described as ringing, buzzing, hissing, or roaring, and the loudness and pitch vary from person to person and may change with your environment. Because it can stem from many causes, a comprehensive evaluation by a Doctor of Audiology is an essential first step toward relief."],
+    ["Common causes and triggers", "Tinnitus has many possible triggers, including hearing loss from loud noise exposure, age-related hearing decline, nervous-system or circulatory issues, TMJ (jaw joint) or cervical spine problems, and head trauma or concussion. Identifying the underlying cause helps us focus your care, which is why every plan begins with a careful history and hearing evaluation."],
+    ["Is there a cure?", "Currently there is no single cure for tinnitus, but there are proven, effective ways to manage and reduce symptoms. Many patients find lasting relief through sound therapy and Tinnitus Retraining Therapy, hearing aids with tinnitus features, stress and sleep management, and lifestyle adjustments tailored to their health. With the right combination, you can minimize the impact of tinnitus and regain control over your daily life."],
+    ["Our evidence-based approach", "We build individualized plans rather than one-size-fits-all advice. Depending on your needs, that may include [sound therapy](/tinnitus/sound-therapy/), directive counseling, TRT, hearing aids programmed for tinnitus, and coaching on sleep, stress, and daily habits. Every plan starts with comprehensive [hearing testing](/hearing-testing/) and a tinnitus assessment so we understand what is driving your symptoms and how much they affect your life."],
+    ["Lenire and advanced options", "For select patients we also offer access to Lenire, an FDA-cleared bimodal neuromodulation device that pairs sound with gentle tongue stimulation. Because Lenire is candidacy-gated, eligibility is determined through a structured process. We periodically host a Lenire field clinic with Dr. Emily McMahan, one of the first Lenire providers in the U.S. and a widely recognized tinnitus expert. Getting started typically requires a hearing test completed within the past six months, a telehealth eligibility consultation reviewing your medical and audiological history, and, if you qualify, an in-person fitting at our California clinic."],
+    ["What to expect from care", "Tinnitus care is a process, not a single visit. After your evaluation we review your results, explain the likely type of tinnitus, and recommend a plan matched to your goals and budget. Follow-up visits let us fine-tune sound therapy and hearing aid settings, track progress, and coordinate with other providers such as ENT, TMJ specialists, or mental-health professionals when appropriate. Many patients gradually reach habituation, where the brain learns to tune the sound out."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Tinnitus Retraining Therapy", "/tinnitus/tinnitus-retraining-therapy/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Hearing aid fitting", "/hearing-aid-fitting/"],
-    ["Sound sensitivity (hyperacusis)", "/hyperacusis/"],
-    ["Book at San Mateo", "/contact/san-mateo/"],
-    ["Book at San Carlos", "/contact/san-carlos/"]
+    ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
-    "Tinnitus is common and manageable, even though there is no universal cure.",
-    "Effective care usually blends evaluation, sound therapy, counseling, hearing aids, and sometimes Lenire or TRT.",
-    "Sudden, one-sided, or pulsatile tinnitus deserves prompt medical attention."
+    "Our Doctors of Audiology bring 20-plus years of tinnitus experience, and several hold the American Board of Audiology tinnitus-management certificate.",
+    "There is no single cure, but sound therapy, TRT, hearing aids, and lifestyle strategies bring many patients lasting relief.",
+    "Select candidates can access Lenire, an FDA-cleared bimodal neuromodulation device, through a structured eligibility process."
   ],
   faqs: [
-    ["Can tinnitus therapy actually help if there is no cure?", "Yes. The aim of therapy is not always to silence the sound but to reduce its intrusiveness and the distress it causes. Many people reach a point where tinnitus no longer disrupts sleep, focus, or mood, even if it is still technically present."],
-    ["How long does tinnitus treatment take?", "It varies. Some patients feel calmer within a few visits simply from a clear explanation and a plan, while approaches built around habituation, such as TRT or Lenire, are designed to work gradually over months of consistent use."],
-    ["How do I get started?", "Call 650-342-9449 to schedule a tinnitus evaluation at our San Mateo or San Carlos office. We begin with your history and a hearing test, then build a plan around what we find."]
+    ["Can tinnitus be cured?", "There is currently no single cure, but proven treatments can substantially reduce how much tinnitus affects you. Many patients reach a point where the sound fades into the background and no longer rules their day."],
+    ["How do I get started?", "The first step is a comprehensive tinnitus and hearing evaluation so we can identify likely causes and match you with the right tools. You can schedule at our San Mateo or San Carlos offices by calling 650-342-9449."],
+    ["Am I a candidate for Lenire?", "Lenire is candidacy-gated. Eligibility is determined through a structured process that includes a recent hearing test and a telehealth consultation reviewing your medical and audiological history. Not everyone qualifies, and many patients do well with sound therapy, TRT, and hearing aids instead."],
+    ["Do stress and sleep really affect tinnitus?", "Yes. Poor sleep and heightened stress can make tinnitus feel worse, which is why stress and sleep management are built into our treatment plans rather than treated as afterthoughts."]
   ],
   image: "/assets/core/services__tinnitus-therapy.svg",
   imageLabel: "Structured, evidence-based tinnitus care"
@@ -1778,181 +1785,227 @@ export const corePages: Record<string, PageContent> = {
 },
   "/tinnitus/anxiety-management/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Managing Tinnitus-Related Anxiety",
+  headline: "Coping With Tinnitus Anxiety: Calmer, More in Control",
   intro: [
-    "For many people, the hardest part of tinnitus is not the sound itself but the anxiety that grows around it. The mind reads a persistent, unexplained noise as a possible threat, and that alarm keeps attention locked onto the very thing you want to ignore. Understanding this loop is the first step toward loosening its grip.",
-    "Anxiety and tinnitus feed each other. Worry heightens the nervous system's arousal, which can make tinnitus seem louder and more constant, which in turn fuels more worry. Breaking the cycle rarely means forcing the sound away. More often it means changing how your brain and body respond to it.",
-    "The good news is that this reaction is learned, which means it can be unlearned. If you are new to the topic, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) offers helpful grounding."
+    "If tinnitus makes you feel anxious, on edge, or afraid of the future, you are not alone. The sound itself is only part of the problem; how your brain reacts to it can make tinnitus feel overwhelming. The good news is that anxiety around tinnitus is treatable, and there are concrete steps you can take to feel calmer.",
+    "Tinnitus is real, and so is the anxiety it causes. Feeling overwhelmed does not mean you are weak or overreacting. It simply means your nervous system is on high alert, and with the right tools and support, that can change.",
+    "This guide is from the tinnitus-focused audiologists at California Hearing Center in San Mateo and San Carlos. For background, see [what tinnitus is](/tinnitus/what-is-tinnitus/) and our [tinnitus hub](/tinnitus/)."
   ],
   sections: [
-    ["Why tinnitus triggers anxiety", "The brain is wired to flag anything novel and unexplained as potentially important. A new or intrusive sound recruits the same threat-detection circuitry that responds to danger, which is why tinnitus can spark a genuine fight-or-flight response even though the sound itself is harmless."],
-    ["The attention trap", "The more you monitor tinnitus, the more neural resources you devote to it, and the louder it can seem. This is not imagination; attention genuinely amplifies perception. Learning to redirect attention, rather than fight the sound, is a cornerstone of relief."],
-    ["Evidence-based approaches", "Cognitive behavioral therapy has some of the strongest research support of any tinnitus intervention for reducing distress. Mindfulness-based approaches, paced breathing, and relaxation training can also calm the arousal that magnifies the sound."],
-    ["Sound as a comfort, not a mask", "Gentle background sound at night or during quiet, anxious moments reduces the stark contrast that makes tinnitus stand out. The goal is soothing enrichment, not blasting the sound into silence."],
-    ["Sleep, and why it matters", "Anxiety and tinnitus both worsen with poor sleep, and quiet bedrooms make tinnitus more noticeable. A consistent wind-down routine and low-level bedside sound often improve both."],
-    ["When to seek more support", "If anxiety, panic, or low mood is significant or persistent, please reach out to your physician or a mental health professional. Tinnitus care and mental health care work best together, and there is no reason to manage severe distress alone."]
+    ["The link between tinnitus and anxiety", "Tinnitus and anxiety often travel together. The sound triggers worry, the worry increases your attention to the sound, and the cycle continues. Over time many people notice racing thoughts about what this means for their future, persistent scanning for changes in loudness or pitch, fear of silence or bedtime, and physical symptoms like a tight chest, shallow breathing, or feeling on edge."],
+    ["Breaking the fight-or-flight loop", "When your brain labels tinnitus a threat, it can activate the body's fight-or-flight response through three habits. Threat interpretation, thoughts like this will ruin my life, makes tinnitus feel more dangerous than it is. Hypervigilance, constantly checking whether it is louder, keeps your brain locked onto the sound. Avoidance of quiet places or social activities gives short-term relief but often worsens anxiety long term. Approaches like CBT and TRT are designed to break this loop and support habituation."],
+    ["Practical tools to calm anxiety", "While lasting change comes from a full plan, some tools help right away. Ground your body with slow breathing, for example inhaling through your nose for four seconds and exhaling gently for six, repeated for a few minutes. Name the thought, not the truth, by silently prefacing a fearful thought with I'm having the thought that. Set aside a brief, planned worry window once a day instead of wrestling with fears all day. And use gentle movement or stretching to reduce muscle tension and stress hormones."],
+    ["Daytime versus nighttime strategies", "Anxiety often feels different by day and night. During the day, keep a reasonable level of background sound, stay engaged with meaningful activities, and limit how often you check your tinnitus. At night, combine gentle sound therapy, breathing exercises, and a consistent routine. In quiet moments, rather than avoiding silence entirely, practice brief, planned exposures with supportive tools like background sound and grounding techniques."],
+    ["Therapy and treatment options", "Anxiety management is most effective as part of a comprehensive plan rather than something you handle alone. Depending on your situation, that may include Cognitive Behavioral Therapy to reframe thoughts, Tinnitus Retraining Therapy combining sound and counseling for habituation, [sound therapy](/tinnitus/sound-therapy/) and hearing aids to reduce the contrast between tinnitus and silence, advanced options like Lenire for select candidates, and support or community connection so you feel less alone."],
+    ["When to seek additional help", "Reach out for professional support if you feel anxious or on edge most days because of tinnitus, if tinnitus-related worry is affecting your sleep, work, or relationships, if you are avoiding activities you used to enjoy, or if you feel stuck even after trying apps and basic tips. If tinnitus and anxiety ever make you feel hopeless or like you might hurt yourself, this is an emergency; contact your local emergency number or a crisis hotline right away."]
   ],
   bulletLinks: [
-    ["Understanding stress and tinnitus", "/tinnitus/stress/"],
-    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Stress and tinnitus", "/tinnitus/stress/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Tinnitus relief exercises", "/tinnitus/exercises/"],
     ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
-    ["Sound sensitivity (hyperacusis)", "/hyperacusis/"],
-    ["Start with a hearing test", "/hearing-testing/"],
-    ["Contact our team", "/contact/"]
+    ["Start with a hearing test", "/hearing-testing/"]
   ],
   takeaways: [
-    "Tinnitus and anxiety reinforce each other, but the loop can be interrupted.",
-    "CBT, mindfulness, and relaxation have real research support for easing tinnitus distress.",
-    "Persistent or severe anxiety deserves support from a physician or mental health professional."
+    "Anxiety amplifies tinnitus by locking your brain's attention onto the sound and interpreting it as a threat.",
+    "Simple tools like slow breathing, planned worry time, and gentle exposure can start calming the loop today.",
+    "Lasting relief usually combines these tools with sound therapy and counseling-based approaches like CBT or TRT."
   ],
   faqs: [
-    ["Does anxiety make tinnitus louder?", "It can make tinnitus seem louder. Anxiety heightens the nervous system's arousal and pulls attention toward the sound, both of which increase how prominent tinnitus feels, even when nothing has changed in the ear."],
-    ["Will my tinnitus go away if my anxiety improves?", "Reducing anxiety often makes tinnitus far less intrusive and easier to ignore, and some people find it fades into the background. Whether the underlying sound disappears depends on its cause, which is worth evaluating."],
-    ["Should I see a therapist for tinnitus anxiety?", "If tinnitus is driving significant worry, panic, or low mood, a therapist trained in CBT can be very helpful. We are glad to coordinate care alongside mental health support."]
+    ["Will my anxiety go away if my tinnitus improves?", "Sometimes tinnitus improves and anxiety fades with it. In other cases anxiety lingers even when tinnitus is less noticeable, which is why plans often combine sound therapy or devices with CBT and other anxiety tools."],
+    ["Can caffeine or alcohol make tinnitus anxiety worse?", "Some people notice increased tinnitus or anxiety after caffeine or alcohol, while others do not. It helps to experiment safely and track your own response, and always check with your physician about big changes."],
+    ["Do I need a therapist, or can an audiologist help?", "Many patients benefit from a team approach. Our audiologists can evaluate your tinnitus, hearing, and sound environment, while a mental health professional can provide in-depth CBT. We are happy to coordinate care."],
+    ["Can I still habituate if my anxiety is high?", "Yes. Habituation is still possible even when anxiety is high right now. In fact, reducing anxiety is often what makes habituation possible."]
   ],
   image: "/assets/core/tinnitus__anxiety-management.svg",
   imageLabel: "Calming the tinnitus-anxiety cycle"
 },
   "/tinnitus/apps/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Tinnitus & Sound Therapy Apps: What They Do",
+  headline: "Best Tinnitus Relief Apps: Sound, Sleep & Relaxation Tools",
   intro: [
-    "Smartphone apps have become one of the most accessible tools for living more comfortably with tinnitus. They will not cure it, and no app can substitute for a proper evaluation, but the right one can make quiet moments easier, support better sleep, and reinforce the strategies you build with a clinician.",
-    "The market is crowded, and it helps to think in terms of categories rather than brand names. Most tinnitus-related apps fall into a few broad types, each serving a different purpose. Knowing what each type is for makes it easier to choose, and to avoid paying for features you do not need.",
-    "Below we describe how these tools generally work. For the bigger picture on why sound helps, see our [tinnitus therapy overview](/services/tinnitus-therapy/)."
+    "Tinnitus relief apps can be powerful tools, especially for sound masking, sleep, relaxation, and stress management, when they are used in a smart, safe way as part of a broader treatment plan.",
+    "On this page, our Bay Area audiologists explain how tinnitus apps work, the main types to consider, what features to look for, how to use them safely with headphones or hearing aids, and how to combine apps with evidence-based treatments for better long-term results.",
+    "It is important to remember that no app cures tinnitus, but the right ones can still provide real relief and support habituation. Think of apps as tools in a toolbox alongside [sound therapy](/tinnitus/sound-therapy/), hearing aids, and counseling. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["Sound generators and soundscapes", "These play customizable background sounds, white noise, rain, ocean, fans, or shaped noise you can tune to sit comfortably around your tinnitus. The idea is gentle enrichment that softens the contrast between silence and the sound, not drowning it out at high volume."],
-    ["Relaxation and sleep tools", "Guided breathing, meditation, and sleep-focused programs target the arousal and attention that make tinnitus feel louder. Because tinnitus is often most intrusive in a quiet bedroom, apps that combine a timer, soothing sound, and relaxation can be especially useful at night."],
-    ["Structured, CBT-based programs", "Some apps deliver education and cognitive behavioral therapy exercises designed specifically for tinnitus distress. These aim to change the way you react to the sound over weeks of consistent use, mirroring the counseling approach used in clinic."],
-    ["Hearing aid companion apps", "If you wear hearing aids with a tinnitus feature, the manufacturer's app usually lets you adjust the built-in sound generator and volume. These work in tandem with amplification and are set up as part of your [fitting](/hearing-aid-fitting/)."],
-    ["Choosing wisely", "Look for adjustable sound, an offline mode, and a sleep timer, and try free versions before subscribing. Be skeptical of any app promising to cure or permanently eliminate tinnitus; that claim is not supported by evidence, whatever the marketing says."]
+    ["What tinnitus relief apps are", "Tinnitus relief apps are mobile applications designed to make tinnitus easier to live with. They usually focus on providing soothing or masking sounds, helping you relax or fall asleep, teaching coping and mindset skills, or tracking tinnitus severity and triggers over time. The right combination, chosen for you, matters far more than any single app."],
+    ["Types of apps to consider", "Most helpful apps fall into a few categories, and many combine several. Sound masking and sound therapy apps provide white, pink, or nature sounds that partially cover tinnitus. Sleep and bedtime apps pair soft soundscapes with timers or sleep stories. Relaxation and mindfulness apps offer guided breathing and body scans. CBT-based apps provide education and thought-reframing exercises. Tinnitus trackers help you log loudness and triggers. And hearing-aid companion apps let you adjust programs and sound generators directly."],
+    ["Benefits and limitations", "Apps are easy to access at home, work, or while traveling, helpful during difficult moments and bedtime, customizable, low cost, and supportive of habituation and coping skills. But they also have real limits: they do not replace a proper tinnitus and hearing evaluation, they may encourage chasing short-term relief instead of long-term strategies, too-loud use can worsen tinnitus or hearing, and not every app is evidence-based or designed by clinicians."],
+    ["How to choose an app", "When browsing the App Store or Google Play, consider your main purpose, whether that is sleep support, daytime masking, relaxation, or education. Check that sounds are smooth and loop well over long listening, that you can blend and save custom mixes, and that timer options exist for overnight use. Look at whether the interface makes it easy to adjust volume quickly, whether the app was created with input from audiologists or tinnitus specialists, and how it is priced."],
+    ["Safe volume and headphone use", "It is possible to overdo sound, even soothing sounds. Keep app volume at the lowest level that feels helpful, not the loudest you can tolerate. Aim for sound that blends with tinnitus rather than blasting it away. Be cautious with in-ear headphones or earbuds during long sessions, and consider speakers or bedside sound machines at night. If you feel discomfort, pain, or a tinnitus spike after listening, reduce the volume, shorten the time, and schedule an evaluation if symptoms persist."],
+    ["How apps fit into your treatment plan", "Apps are one part of a comprehensive approach. We often integrate them with hearing aids and built-in sound generators when hearing loss is present, structured [sound therapy](/tinnitus/sound-therapy/) programs, CBT-based counseling and anxiety management, TRT and habituation protocols, and medical workup when needed. Bay Area patients commonly use apps to mask tinnitus in quiet home offices, wind down after busy workdays, build calming bedtime routines, and track how caffeine, alcohol, and sleep affect their tinnitus."]
   ],
   bulletLinks: [
-    ["Tinnitus therapy program", "/services/tinnitus-therapy/"],
-    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Habituation explained", "/tinnitus/habituation/"],
-    ["Hearing aid fitting", "/hearing-aid-fitting/"],
-    ["Sleep and anxiety support", "/tinnitus/anxiety-management/"],
-    ["Contact our team", "/contact/"]
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
-    "Apps can support sleep, relaxation, and sound enrichment, but they are a tool, not a cure.",
-    "Think in categories: soundscapes, relaxation, CBT programs, and hearing aid companions.",
-    "Be wary of any app that claims to eliminate tinnitus."
+    "Apps do not cure tinnitus, but they can provide genuine relief and support habituation when used strategically.",
+    "Choose apps by purpose, sound quality, timer options, and clinical credibility, and keep the volume gentle.",
+    "Apps work best inside a full plan alongside hearing technology, counseling, and lifestyle changes."
   ],
   faqs: [
-    ["Can a tinnitus app cure my tinnitus?", "No app can cure tinnitus, and you should be cautious of any that claims to. Well-designed apps can make the sound less intrusive, support better sleep, and reinforce clinical strategies, which is a meaningful benefit for many people."],
-    ["Are free tinnitus apps good enough?", "Often yes, at least to start. Many people do well with a free soundscape or relaxation app. Paid programs may add structured CBT content or extra features, but it is worth trying free options before committing to a subscription."],
-    ["Should I use an app instead of seeing an audiologist?", "An app is a helpful complement, not a replacement. A proper evaluation can identify reversible causes and red flags an app cannot, so it is best to pair self-help tools with professional guidance."]
+    ["Can a tinnitus app cure my tinnitus?", "No app can cure tinnitus, but many can reduce how intrusive it feels and support habituation. A proper evaluation is still essential to rule out treatable causes and build a complete plan."],
+    ["Do I need a tinnitus-specific app, or is any sound app fine?", "Both can help. Tinnitus-specific apps may offer educational content and tracking, but many patients do well with high-quality general sound or relaxation apps, especially when guided by their audiologist."],
+    ["Should I use sound all day?", "Not usually. The goal is to help your brain learn that tinnitus is not a threat, so strategic use during difficult moments, quiet times, or bedtime often works better than constant sound exposure."],
+    ["What if an app makes my tinnitus worse?", "Turn the volume down or try a different type of sound. If tinnitus consistently feels worse after sound exposure, schedule an evaluation so we can explore whether sound sensitivity or another issue is present."]
   ],
   image: "/assets/core/tinnitus__apps.svg",
   imageLabel: "Sound therapy in your pocket"
 },
   "/tinnitus/can-tinnitus-go-away/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Can Tinnitus Go Away? An Honest Answer",
+  headline: "Can Tinnitus Go Away on Its Own?",
   intro: [
-    "It is the first question almost everyone asks: will this ever stop? The honest answer is that it depends on the cause. Some tinnitus is temporary and resolves once its trigger is addressed. Other tinnitus is longer-lasting, and while it may not vanish, it very often becomes something you barely notice.",
-    "It helps to separate two ideas. One is whether the sound itself disappears. The other is whether tinnitus stops bothering you. These are not the same, and for most people lasting relief comes from the second, not the first.",
-    "This page walks through the realistic possibilities. For a foundation, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) explains why the sound occurs in the first place."
+    "If you have recently noticed ringing, buzzing, or whooshing in your ears, one of the first questions is usually whether it will go away by itself. The honest answer is: sometimes yes, sometimes no, depending on what is causing it.",
+    "Tinnitus can resolve on its own, especially when it is triggered by a short-term event like a loud concert, a temporary ear infection, or a wax blockage. But it can also become long-lasting (chronic), particularly when it is related to permanent inner-ear damage, ongoing noise exposure, or certain medical conditions.",
+    "A key point runs through this whole page: even when tinnitus does not fully disappear, many people reach a place where it feels much less noticeable and upsetting. Our Bay Area audiologists explain when tinnitus is likely to fade, when it may persist, and what you can do now. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["Temporary tinnitus that often resolves", "Ringing after a loud concert, a bout of tinnitus from a cold or ear infection, or the buzzing tied to earwax buildup frequently fades once the cause clears. Tinnitus linked to a fixable issue like [earwax](/tinnitus/earwax/) may stop entirely after treatment."],
-    ["Acute versus chronic", "Tinnitus present for less than about six months is often considered acute, and a fair number of these cases settle on their own. Once tinnitus persists beyond roughly six months it is generally considered chronic and less likely to disappear completely, though it can still become far less intrusive."],
-    ["Habituation, the more common path to relief", "Even when the sound stays, the brain has a remarkable ability to reclassify it as unimportant background, a process called [habituation](/tinnitus/habituation/). Many people reach a point where tinnitus is only noticeable when they think to check for it."],
-    ["What can improve your odds", "Protecting your hearing, treating any underlying hearing loss, managing stress and sleep, and starting sound therapy early all support the brain's natural adjustment. Doing nothing and hoping is usually less effective than an active plan."],
-    ["When to seek prompt evaluation", "Tinnitus that starts suddenly, appears in only one ear, pulses like a heartbeat, or comes with dizziness or sudden hearing loss should be checked promptly. Sudden hearing loss in particular can be time-sensitive and is worth urgent attention."]
+    ["When tinnitus is likely to be temporary", "Some tinnitus is short-lived, especially when the trigger is reversible. After a loud event like a concert or fireworks, ears that were simply stunned may recover over hours to a few days. Earwax blockage often improves once wax is safely removed by a professional. Ear infections and middle-ear fluid frequently resolve once the infection clears. And some medication-related tinnitus improves when the dose is adjusted or the drug is changed under medical supervision."],
+    ["When tinnitus may become chronic", "Tinnitus is more likely to stick around when the underlying change is permanent or ongoing: age-related or noise-induced hearing loss, cumulative noise exposure from work, headphones, or loud hobbies, and longstanding medical conditions affecting hearing or blood flow. In these situations tinnitus often does not completely disappear, but it can become far more manageable with the right combination of treatment and coping strategies."],
+    ["Typical timelines: hours, weeks, months", "Every ear and brain is different, but a rough framework helps. Tinnitus after a loud event that fades over several days, while you avoid more noise, is reassuring, though it may still indicate some damage. Tinnitus from infections, fluid, or a medication change may improve over weeks. Tinnitus lasting three months or more is often called chronic, and at that point the focus shifts from will this vanish to how do we reduce its impact, where treatment and habituation become especially important."],
+    ["What influences whether it fades", "Several factors matter: the cause (reversible triggers behave differently than permanent inner-ear damage), whether hearing loss is present (treating it can significantly reduce tinnitus for many people), ongoing noise exposure that can aggravate the ear, and lifestyle factors such as stress, sleep, caffeine, and alcohol that amplify how loud tinnitus feels. Fear and constant checking of the sound also keep the brain focused on it."],
+    ["What you can do today", "Even if you are unsure whether your tinnitus will go away, practical steps help: protect your ears from further damage with lower volumes and ear protection at loud events; add gentle background sound from a fan, sound machine, or app to reduce how loud the ringing feels; improve sleep with a regular routine and relaxation techniques; and schedule a [hearing and tinnitus evaluation](/hearing-testing/) to learn the likely cause and your options."],
+    ["A different way to think about going away", "For some people tinnitus physically decreases or disappears. For many others, the sound may still be there but gradually moves into the background as the brain learns to treat it like a refrigerator hum or distant traffic, something you notice less and less. This process, called habituation, is a powerful form of getting your life back, and our [tinnitus therapy program](/services/tinnitus-therapy/) is built to help you reach it."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Habituation explained", "/tinnitus/habituation/"],
-    ["Earwax and tinnitus", "/tinnitus/earwax/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Temporary or permanent tinnitus", "/tinnitus/temporary-or-permanent/"],
+    ["Medications that cause tinnitus", "/tinnitus/medications/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Temporary tinnitus from noise, illness, or earwax often resolves once the cause is treated.",
-    "Chronic tinnitus may not disappear, but habituation lets most people stop noticing it.",
-    "Sudden, one-sided, or pulsatile tinnitus warrants prompt medical evaluation."
+    "Tinnitus from a loud event, infection, or wax blockage often fades on its own within hours to weeks.",
+    "Tinnitus tied to permanent hearing loss or ongoing noise exposure is more likely to persist.",
+    "Even when it does not disappear, most people can make tinnitus far less noticeable through treatment and habituation."
   ],
   faqs: [
-    ["How long does tinnitus usually last?", "It varies widely. Tinnitus from a loud event or a passing illness may last hours to weeks. Tinnitus that continues beyond about six months is considered chronic, though even then it commonly becomes much less noticeable over time."],
-    ["Is it bad if my tinnitus has not gone away?", "Not necessarily. Persistent tinnitus is very common and usually not dangerous on its own. What matters most is whether it is disrupting your sleep, focus, or mood, all of which can be improved with the right approach."],
-    ["Can treatment make tinnitus disappear completely?", "Sometimes, when there is a reversible cause such as earwax or a medication effect. For chronic tinnitus, treatment more reliably reduces how much it intrudes rather than erasing the sound, and for most people that is enough to feel like themselves again."]
+    ["How long does temporary tinnitus last?", "Tinnitus after a loud event often fades over hours to a few days. Tinnitus from an infection, fluid, or a medication change may take weeks. If ringing is still clearly present after a week or two, schedule a hearing evaluation."],
+    ["Will chronic tinnitus ever get better?", "Complete disappearance is less likely once tinnitus has lasted several months, but it can still change, and most people report a dramatic reduction in distress, better sleep, and improved focus with treatment and [habituation strategies](/services/tinnitus-therapy/)."],
+    ["When should I not just wait and see?", "Do not wait if tinnitus is sudden, one-sided, or pulsatile, or if it comes with hearing loss, severe dizziness, facial weakness, or a pounding headache. Those situations warrant prompt care, see [when to see a doctor](/tinnitus/when-to-see-doctor/)."]
   ],
   image: "/assets/core/tinnitus__can-tinnitus-go-away.svg",
-  imageLabel: "Realistic expectations for tinnitus relief"
+  imageLabel: "Will the ringing fade on its own?"
+},
+  "/tinnitus/causes/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Causes & Triggers: Why Your Ears Are Ringing",
+  intro: [
+    "Tinnitus rarely appears out of nowhere. It is a symptom, your body's way of signaling that something in your hearing system, or elsewhere in your body, needs attention. For some people the cause is obvious, like a loud concert; for others it is more complex and involves several factors at once.",
+    "Common underlying causes include hearing loss, noise exposure, earwax, ear infections, jaw or neck problems, circulatory changes, certain medications, and stress. Understanding why your tinnitus started, or what keeps it going, is the first step toward relief.",
+    "This page from our San Mateo and San Carlos audiologists walks through the most common causes and day-to-day triggers, plus the red flags that warrant prompt medical attention. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How tinnitus develops in the ear and brain", "For many people tinnitus begins when the delicate hair cells inside the inner ear are damaged by aging, noise, illness, or injury. Once those cells are affected, the brain receives less input and may turn up its internal gain to compensate, creating phantom sound to fill in the missing information. This is why tinnitus is so often linked with hearing loss, and why treating hearing loss can be so effective."],
+    ["Hearing loss and noise exposure", "Repeated exposure to loud sound, from concerts, clubs, power tools, or headphones, can permanently damage inner-ear cells. Many people notice temporary ringing after loud events; over time those episodes can become chronic tinnitus. Age-related hearing loss also plays a major role, as the inner ear becomes less sensitive to high-pitched sounds and the brain fills in the gaps."],
+    ["Earwax, infections, and middle-ear problems", "Excess earwax can block the canal and press on the eardrum, causing tinnitus and muffled hearing, and this is usually very treatable. Fluid behind the eardrum, middle-ear infections, and eustachian-tube problems can all create fullness, muffled hearing, and temporary tinnitus that often clears once the underlying issue is treated."],
+    ["Medical and neurological conditions", "Tinnitus can accompany broader conditions affecting the ear, circulation, or nervous system, including Meniere's disease (which can cause roaring tinnitus and vertigo), hyperacusis, jaw and neck problems (TMJ, muscle tension, poor desk posture), and cardiovascular changes. When ringing beats in time with your heartbeat, it is called pulsatile tinnitus and can involve high blood pressure, narrowed vessels, diabetes, or structural variations near the ear."],
+    ["Medications that contribute", "Certain drugs are ototoxic, meaning they can affect the inner ear or hearing nerve and lead to tinnitus, hearing loss, or both. Examples include very high doses of aspirin or other salicylates, certain antibiotics (especially aminoglycosides), some chemotherapy agents, and some diuretics and heart medications. Never stop a prescribed medication on your own; instead ask your physician whether a different drug or dose is appropriate."],
+    ["Lifestyle triggers that make it worse", "Even when the underlying cause is stable, everyday triggers can turn the volume up. Many people report flares with stress, poor or fragmented sleep, excess caffeine or alcohol, high salt intake (especially with Meniere's), and loud environments like crowded restaurants or concerts. Working on these areas can reduce flare-ups and help your brain adapt."],
+    ["Can tinnitus be prevented or reduced?", "Not every cause is preventable, but you can lower your risk: use ear protection at concerts, events, and when using power tools; follow 60/60 headphone guidelines (60% volume, 60 minutes max); rest your ears after loud exposure; manage blood pressure, diabetes, and cardiovascular risk; keep good sleep habits; and limit nicotine, excess caffeine, and heavy alcohol use."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Medications that cause tinnitus", "/tinnitus/medications/"],
+    ["TMJ and jaw-related tinnitus", "/tinnitus/tmj/"],
+    ["Pulsatile tinnitus", "/tinnitus/pulsatile/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "Tinnitus is a symptom with many possible causes, and often more than one factor is involved.",
+    "Hearing loss and noise exposure are the most common contributors, but medications, jaw problems, and circulation matter too.",
+    "Even when no single cause is found, contributing factors are usually treatable and the impact can be reduced."
+  ],
+  faqs: [
+    ["What is the most common cause of tinnitus?", "Hearing loss, particularly from noise exposure and aging, is the most common contributor. When the ear sends less sound to the brain, the brain often generates phantom ringing to fill the gap, which is why treating hearing loss frequently helps."],
+    ["Which causes of tinnitus are red flags?", "Seek prompt evaluation if tinnitus appears suddenly, is only in one ear, is clearly pulsatile, or occurs with sudden hearing loss, severe dizziness, facial weakness, or an intense headache. See our guide on [when to see a doctor](/tinnitus/when-to-see-doctor/)."],
+    ["Can stress and lifestyle really cause tinnitus?", "Stress, poor sleep, caffeine, and alcohol rarely cause tinnitus outright, but they are powerful amplifiers that make an existing sound louder and more noticeable. Managing them is an important part of any [tinnitus care plan](/services/tinnitus-therapy/)."]
+  ],
+  image: "/assets/core/tinnitus__causes.svg",
+  imageLabel: "The many reasons ears ring"
 },
   "/tinnitus/diet-lifestyle/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Diet & Lifestyle Changes for Tinnitus",
+  headline: "Lifestyle & Diet Tips for Tinnitus",
   intro: [
-    "Many people want to know whether changing what they eat, drink, or do each day can quiet their tinnitus. It is a reasonable hope, and lifestyle does matter, but it helps to set expectations honestly: the research on specific foods is mixed, and triggers vary a great deal from person to person.",
-    "Rather than chasing a strict tinnitus diet, most people benefit more from a steady, sensible approach: reduce the things that reliably ramp up your nervous system, support good sleep and circulation, and pay attention to your own patterns. What bothers one person may not affect another at all.",
-    "Below are the factors most often discussed. None is a cure, and this is general information, not personal medical advice. Speak with your physician before making significant changes, especially to diet or exercise."
+    "There is no magic food or supplement that cures tinnitus. But everyday choices, from sleep and stress to caffeine, alcohol, movement, and sound exposure, can influence how loud or bothersome tinnitus feels. Small, sustainable changes can add up to fewer spikes and calmer days.",
+    "These recommendations are based on current research and the clinical experience of our Bay Area audiologists at California Hearing Center in San Mateo and San Carlos. While lifestyle rarely eliminates tinnitus completely, it can reduce how often it spikes, lower reactivity, support better sleep and mood, and protect your hearing.",
+    "For the bigger picture, start with [what tinnitus is](/tinnitus/what-is-tinnitus/), then use these habits alongside treatments like sound therapy or hearing aids."
   ],
   sections: [
-    ["Caffeine and alcohol", "Both are frequently blamed, but the evidence is inconsistent. Some people notice their tinnitus is more prominent after coffee or a drink, likely tied to arousal, dehydration, or sleep disruption rather than a direct effect. If you suspect a link, try reducing one at a time and observe."],
-    ["Salt and circulation", "For people with blood pressure concerns or conditions like Ménière's, high salt intake may worsen symptoms, and moderating it is often advised. For tinnitus generally, the connection is less clear, but a heart-healthy, lower-sodium diet is rarely a bad idea."],
-    ["Sleep is the quiet lever", "Poor sleep makes tinnitus feel louder, and loud tinnitus disrupts sleep, a cycle worth breaking. A consistent bedtime, a dark room, low-level background sound, and limited late-night screens tend to help more than any single food change."],
-    ["Exercise and stress", "Regular movement supports circulation, mood, and sleep, and helps discharge the stress that magnifies tinnitus. It does not need to be intense; consistency matters more than intensity."],
-    ["Keep a simple journal", "Because triggers are so individual, a brief daily note of what you ate, how you slept, your stress level, and how your tinnitus felt can reveal patterns no generic list can. Look for repeatable connections before overhauling your routine."]
+    ["What lifestyle can and cannot do", "It is natural to ask what you should eat or avoid so the ringing goes away. No single food, drink, or supplement has been proven to cure tinnitus. But many patients feel better when they support their body with good sleep, balanced nutrition, stress management, and hearing protection, especially when combined with sound therapy, hearing aids for tinnitus, or TRT. Think of lifestyle as a powerful support rather than a stand-alone cure."],
+    ["Caffeine, alcohol, and common triggers", "Two of the most common questions are whether caffeine makes tinnitus worse and whether alcohol is bad for your ears. The answer is often that it depends on your body. Some people notice temporary spikes after coffee, tea, or energy drinks, while others feel worse when they suddenly stop caffeine. Alcohol can affect blood flow, fluid balance, and sleep. High-sodium, heavily processed foods may worsen symptoms for some inner-ear conditions. Rather than cutting everything at once, change one variable at a time and keep a short symptom journal."],
+    ["Diet ideas that support ear and brain health", "There is no single tinnitus diet, but patterns that support heart, blood vessel, and brain health also help the auditory system. In general, favor colorful fruits and vegetables, lean proteins, healthy fats like olive oil and nuts, and whole grains over refined carbohydrates, while limiting added sugar and highly processed foods. Staying well-hydrated supports circulation, avoiding big blood-sugar swings reduces jitters and anxiety, and a short food-and-symptom diary can reveal individual sensitivities."],
+    ["Stress, sleep, and relaxation", "Lifestyle for tinnitus is not just about food. Stress and sleep are often bigger drivers of how loud tinnitus feels day to day. Stress hormones keep your nervous system on high alert, so relaxation tools like breathing exercises, progressive muscle relaxation, and gentle stretching all help. A consistent bedtime, a wind-down routine, and a sound-rich sleep environment can reduce nighttime spikes. For many people, working on [anxiety](/tinnitus/anxiety-management/) and sleep alongside diet creates the biggest improvements."],
+    ["Noise protection and sound habits", "One of the most powerful lifestyle choices is how you treat your ears in loud environments. Use earplugs or musician's plugs at concerts, clubs, and loud restaurants, turn down headphone volume for long listening, take quiet breaks from loud sound, and be cautious with power tools and machinery. That said, wearing earplugs constantly in normal settings can backfire by making your auditory system more sensitive, so a tinnitus-focused audiologist can help you find the right balance."],
+    ["Movement, exercise, and a simple daily plan", "Regular gentle activity supports cardiovascular health, mood, and sleep, all of which can indirectly improve how you experience tinnitus. Aim for consistent movement most days, and add light strength training if your physician approves. You do not need a perfect routine: a tinnitus-friendly day might mean hydrating and a balanced breakfast, a midday walk to keep stress and blood sugar stable, mindful evening choices around alcohol and heavy late meals, and a consistent wind-down with sound at night."]
   ],
   bulletLinks: [
-    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Stress and tinnitus", "/tinnitus/stress/"],
-    ["Ménière's disease", "/tinnitus/menieres/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Anxiety management", "/tinnitus/anxiety-management/"],
-    ["Contact our team", "/contact/"]
+    ["Tinnitus relief exercises", "/tinnitus/exercises/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
-    "The evidence on specific foods is mixed, and tinnitus triggers are highly individual.",
-    "Sleep, stress, and regular exercise often influence tinnitus more than any single food.",
-    "A short daily journal helps you find your own patterns before making big changes."
+    "No food or supplement cures tinnitus, but consistent lifestyle habits can reduce spikes and reactivity.",
+    "Caffeine and alcohol affect people differently, so change one variable at a time and track your own response.",
+    "Sleep, stress management, and sensible hearing protection often matter more than any single dietary tweak."
   ],
   faqs: [
-    ["Does cutting caffeine help tinnitus?", "For some people it seems to, though studies are inconsistent and caffeine does not appear to worsen tinnitus for everyone. If you suspect a link, reducing it gradually and tracking the effect is a reasonable, low-risk experiment."],
-    ["Is there a special tinnitus diet?", "There is no proven diet that cures or reliably reduces tinnitus. A balanced, heart-healthy eating pattern supports the circulation and sleep that indirectly affect tinnitus, but beware of programs promising a dietary cure."],
-    ["Can dehydration affect tinnitus?", "Staying well hydrated is sensible general health advice, and some people feel tinnitus is more noticeable when tired or dehydrated. Water alone is not a treatment, but good hydration fits naturally into an overall healthy routine."]
+    ["Is there a special diet that cures tinnitus?", "No specific diet has been proven to cure tinnitus. However, eating in a way that supports cardiovascular and brain health, similar to a Mediterranean-style pattern, may support better overall function and reduce tinnitus-related distress when combined with other treatments."],
+    ["Should I quit caffeine completely?", "Not always. Some people are more sensitive than others. Instead of quitting abruptly, test gradual changes while tracking symptoms, and check with your physician first, since sudden caffeine withdrawal can sometimes make tinnitus feel worse."],
+    ["Can lifestyle changes replace treatment?", "Lifestyle changes are a powerful support, but they rarely replace a full evaluation and structured treatment plan. For many people the best results come from combining lifestyle changes with sound therapy, hearing aids, or CBT."],
+    ["How do I know which habits affect my tinnitus?", "Keeping a short daily log of sleep, stress, diet, and tinnitus loudness for one to two weeks can reveal patterns. Bring that log to your appointment so we can review it alongside a full hearing evaluation."]
   ],
   image: "/assets/core/tinnitus__diet-lifestyle.svg",
   imageLabel: "Everyday habits and tinnitus"
 },
   "/tinnitus/earwax/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Earwax and Tinnitus: A Reversible Cause",
+  headline: "Can Earwax Cause Tinnitus? A Treatable Cause Worth Checking",
   intro: [
-    "Not all tinnitus is permanent, and earwax is one of the most satisfying causes to find, because it can often be fixed. When wax builds up and blocks the ear canal, it can muffle hearing and, for some people, bring on or worsen ringing, buzzing, or a sense of fullness. Clear the blockage and the tinnitus may ease or disappear.",
-    "Earwax, or cerumen, is normal and healthy in the right amount. It protects and cleans the ear canal and usually migrates out on its own. Problems start when it accumulates faster than it clears, or when attempts to remove it push it deeper.",
-    "This page explains how earwax and tinnitus connect and how to address it safely. Our [earwax removal service](/services/earwax-removal/) is available at both Peninsula offices."
+    "If your ears feel clogged and you hear ringing, buzzing, or whooshing, you might wonder whether it is just earwax or something more serious. The answer is that yes, earwax can cause tinnitus, but it is not the only possible reason for those sounds.",
+    "On this page, our Bay Area audiologists explain how earwax buildup can trigger tinnitus, what symptoms suggest a simple blockage, when it may point to a more complex issue, and why safe ear cleaning matters for protecting your hearing.",
+    "Earwax-related tinnitus is often temporary and improves once the blockage is safely removed. For a broader overview, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["How a blockage can cause tinnitus", "A canal packed with wax dampens the outside sounds that normally keep the auditory system busy. Much as tinnitus often accompanies hearing loss, this reduced input can let internal sound become more noticeable. A blockage may also press on the canal or eardrum, which some people perceive as ringing or fullness."],
-    ["Signs wax may be the culprit", "Suspect earwax when tinnitus arrives alongside a plugged or muffled feeling, mild hearing loss on one side, itchiness, or the sense that your own voice sounds different. These clues do not confirm it, but they make professional examination worthwhile."],
-    ["Why cotton swabs make it worse", "Cotton swabs, ear candles, and other DIY tools tend to pack wax deeper against the eardrum rather than remove it, which can worsen both the blockage and the tinnitus, and occasionally injure the canal or eardrum. It is best to leave removal to a professional."],
-    ["Professional removal", "An audiologist can look directly into the canal and remove wax safely using appropriate methods, then confirm the ear is clear. If tinnitus persists after the wax is gone, a full [hearing evaluation](/hearing-testing/) helps identify what else may be contributing."],
-    ["When it is not just wax", "If your ears are clear and tinnitus continues, or if it started suddenly, affects one ear only, or pulses with your heartbeat, wax is not the whole story and further evaluation is warranted."]
+    ["What earwax does and why you need it", "Earwax, or cerumen, is not dirt; it is your ear's natural cleaning and protection system. It traps dust and debris before they reach the eardrum, helps protect against bacteria and irritation, and keeps the delicate skin of the canal from drying out. In most people wax slowly moves outward on its own. Problems begin only when wax becomes impacted or pushed deep into the canal, often from aggressive cleaning or naturally narrow canals."],
+    ["How buildup can cause tinnitus", "Earwax can contribute to tinnitus in a few ways. A physical blockage changes how sound and vibration reach the eardrum. When sound is blocked, the brain receives less input and may turn up its internal volume, producing ringing, buzzing, or roaring. And wax pressed against the eardrum can create a sensation of pressure or fullness that may come with echoing or a hollow sound. This kind of tinnitus often improves significantly once the wax is cleared."],
+    ["Signs your tinnitus might be earwax-related", "Only an in-person exam can confirm the cause, but some clues point toward wax: clogged or muffled hearing in one ear, especially if tinnitus is stronger on that side; a feeling of fullness or water in the ear; tinnitus that began or worsened after frequent cotton-swab, earbud, or earplug use; hearing your own voice as unusually loud or echoing; and occasional sharp discomfort when chewing, yawning, or inserting earbuds. If both ears feel plugged, tinnitus may simply be more noticeable because everything else sounds quieter."],
+    ["When it is probably not just earwax", "Even if you have wax, it might not be the whole story. Seek prompt or urgent care if you also have sudden tinnitus with noticeable hearing loss in one ear, tinnitus plus spinning vertigo or severe imbalance, tinnitus that sounds like a heartbeat or whooshing in time with your pulse, significant ear pain, drainage, or fever, or tinnitus following a head or neck injury. These patterns can point to conditions like sudden hearing loss, Meniere's disease, pulsatile tinnitus, or infection."],
+    ["Earwax don'ts and safe removal", "Aggressive home cleaning is one of the most common ways wax gets pushed deeper. Do not insert cotton swabs, hairpins, or other objects; do not attempt ear candling, which has no proven benefit and carries burn risk; and do not use high-pressure irrigation without medical guidance. At California Hearing Center we focus on safe, gentle removal tailored to your ears, sometimes softening wax with drops first when appropriate, always protecting the eardrum. A [hearing test](/hearing-testing/) during the same visit can screen for other causes."],
+    ["If tinnitus stays after wax is removed", "Many patients hope tinnitus will vanish the moment wax is cleared. Sometimes it does, but not always. Earwax and hearing loss can coexist, so removing wax may reveal underlying hearing changes that were already there. The brain may stay on high alert after a period of blockage, keeping tinnitus pathways active. And other factors like noise exposure, stress, medications, or TMJ may be contributing. If tinnitus persists, a fuller workup helps identify patterns and options."]
   ],
   bulletLinks: [
-    ["Earwax removal service", "/services/earwax-removal/"],
-    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Can tinnitus go away", "/tinnitus/can-tinnitus-go-away/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Contact our team", "/contact/"]
+    ["What to expect at your visit", "/tinnitus/what-to-expect/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
-    "Earwax buildup is a common and often reversible contributor to tinnitus.",
-    "Cotton swabs and ear candles tend to worsen blockages; professional removal is safer.",
-    "If tinnitus persists after the ears are clear, a full hearing evaluation is the next step."
+    "Impacted earwax can cause tinnitus, and this type often improves once the blockage is safely removed.",
+    "Never dig at wax with swabs or attempt ear candling, which can push wax deeper and worsen symptoms.",
+    "Sudden, one-sided, pulsatile, or pain-related tinnitus warrants prompt medical evaluation, not just wax removal."
   ],
   faqs: [
-    ["Can earwax really cause tinnitus?", "Yes. A wax blockage can muffle outside sound and create pressure in the canal, both of which can bring on or intensify ringing and fullness for some people. Removing the blockage sometimes resolves the tinnitus entirely."],
-    ["Should I try to remove the wax myself?", "It is best not to dig at it with cotton swabs or ear candles, which often push wax deeper and can injure the ear. If home softening drops do not help, have it removed professionally so the canal can be checked at the same time."],
-    ["Will my tinnitus go away after wax removal?", "It may, if wax was the cause. When tinnitus continues after the ear is confirmed clear, other factors such as hearing loss are likely involved, and a hearing evaluation helps pinpoint them."]
+    ["Will removing earwax get rid of my tinnitus?", "Sometimes it does, especially when a blockage is the main cause. But earwax and hearing loss can coexist, and the brain may stay on high alert, so tinnitus does not always disappear the moment wax is cleared."],
+    ["Is it safe to remove earwax at home?", "Gentle over-the-counter softening drops can help some people, but avoid cotton swabs, ear candling, and high-pressure irrigation. When in doubt, let a professional evaluate your ears, especially if you have had ear surgery, tubes, or eardrum issues."],
+    ["Why do my ears build up so much wax?", "Some people are simply more prone to it, including those who use earbuds or earplugs for many hours, have naturally narrow or curved canals, or have tried to clean their ears with swabs, which often pushes wax deeper."],
+    ["When should earwax with tinnitus be treated urgently?", "Seek prompt care if tinnitus comes with sudden hearing loss, severe dizziness, a pulsing whooshing sound, significant pain, drainage, or fever, or follows a head injury."]
   ],
   image: "/assets/core/tinnitus__earwax.svg",
   imageLabel: "A treatable cause of tinnitus"
@@ -1993,41 +2046,80 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/tinnitus__east-bay-tinnitus.svg",
   imageLabel: "Peninsula tinnitus care for East Bay patients"
 },
-  "/tinnitus/getting-louder/": {
+  "/tinnitus/exercises/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Why Does My Tinnitus Seem to Be Getting Louder?",
+  headline: "Tinnitus Relief Exercises: Gentle Movement to Calm the Ringing",
   intro: [
-    "Few things are more unsettling than the feeling that your tinnitus is climbing. Before you assume the worst, it helps to know that perceived loudness fluctuates for almost everyone, and a louder-seeming day rarely means something is actually wrong. Much of the time, the change is in attention and context rather than the sound itself.",
-    "That said, tinnitus that is genuinely and persistently worsening, or that changes in specific ways, does deserve a closer look. The goal of this page is to help you tell the ordinary ups and downs from the patterns that warrant evaluation.",
-    "If tinnitus is new to you, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) provides useful background on why it varies."
+    "Gentle movement and relaxation exercises cannot erase tinnitus, but they can calm your nervous system, reduce tension around the ears and jaw, and make the sound easier to live with. Even a few minutes a day can help, especially over time.",
+    "Tinnitus is generated in the auditory system and brain, but the rest of your body plays a major role in how it feels. Exercises help by reducing muscle tension, lowering stress, improving circulation to the head and ears, supporting better posture and breathing, and helping your brain shift attention away from the sound.",
+    "This guide comes from the audiologists at California Hearing Center in San Mateo and San Carlos. These ideas work best alongside a broader plan, so consider exploring our [tinnitus therapy program](/services/tinnitus-therapy/) and the wider [tinnitus hub](/tinnitus/) as well."
   ],
   sections: [
-    ["Perception versus a real change", "Tinnitus loudness is subjective and shifts with your state of mind and surroundings. Stress, fatigue, poor sleep, and simply focusing on the sound can all make it seem louder without any change in the underlying signal, a bit like noticing a clock ticking only once you listen for it."],
-    ["Quiet makes it louder", "In a silent room there is little outside sound to compete with tinnitus, so it naturally stands out more. This is why many people find it most intrusive at bedtime and why gentle background sound helps."],
-    ["Everyday amplifiers", "Recent noise exposure, caffeine, alcohol, dehydration, a cold or sinus congestion, certain medications, and high-stress stretches can all nudge tinnitus upward temporarily. These fluctuations usually settle as the trigger passes."],
-    ["When worsening warrants evaluation", "See a professional if tinnitus steadily and lastingly increases, if it becomes noticeably worse in one ear, if it starts pulsing in time with your heartbeat, or if it is accompanied by new hearing loss, dizziness, or ear fullness. Sudden hearing loss with worsening tinnitus should be treated as time-sensitive."],
-    ["What a check-up can clarify", "A [hearing evaluation](/hearing-testing/) can show whether hearing has changed, whether earwax has built up, or whether another factor is at play. Often the reassurance itself lowers the anxiety that was amplifying the sound."]
+    ["Before you start: safety first", "These exercises are general suggestions and do not replace medical advice. Stop immediately if you feel pain, dizziness, or worsening symptoms, and skip any movement that does not feel safe for your body. Talk with your physician first if you have neck, jaw, spine, heart, or balance issues, and seek emergency care for sudden hearing loss, severe vertigo, or neurologic symptoms."],
+    ["Relaxation and breathing", "Calming your nervous system is one of the most powerful exercises you can do for tinnitus. Try slow belly breathing with slightly longer exhales than inhales, for example four seconds in and six seconds out, for three to five minutes. Progressive muscle relaxation, gently tensing and releasing each muscle group from your feet upward, pairs well with sound therapy. A simple body scan before bed can help you notice and soften areas of tension."],
+    ["Gentle neck and shoulder exercises", "Many people hold tension in the neck and shoulders, especially with long hours at computers or on phones, and in some cases this tension can make tinnitus feel more intrusive. A posture check, slow shoulder rolls, and gentle neck range-of-motion movements can all help. Keep everything smooth and comfortable, and stop if you feel pain, dizziness, or strong pulling. If your tinnitus started after a neck injury or changes when you move your neck, mention that at your appointment."],
+    ["Jaw and TMJ-friendly exercises", "For some people, tinnitus is linked to the jaw joint. If your tinnitus changes when you move your jaw, clench, or chew, notice whether your teeth are touching during the day; ideally they rest slightly apart with lips together. Practice small, comfortable jaw movements without forcing, and stop for any pain, clicking, or locking. Because the neck and jaw are closely connected, pairing light jaw awareness with the neck exercises above often helps."],
+    ["Balance and body awareness", "Some people with tinnitus also experience imbalance, especially with inner-ear conditions like Meniere's disease. If you have significant dizziness or a history of falls, check with your physician first. Grounding through your feet near a sturdy surface and slow, mindful walking, paying attention to each step rather than the tinnitus, can help train your brain to focus outward instead of inward."],
+    ["Building a simple daily routine", "You do not need to do every exercise on this page. Start small: a brief posture check and a minute of belly breathing in the morning, a short walk and body scan midday, and progressive muscle relaxation or gentle stretching as part of your evening wind-down. Pairing movement with gentle background sound and a consistent bedtime routine tends to work better than pushing hard once in a while."]
+  ],
+  bulletLinks: [
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Lifestyle and diet tips", "/tinnitus/diet-lifestyle/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "Exercises do not cure tinnitus, but they reduce tension, improve circulation, and calm the nervous system so the sound feels less intrusive.",
+    "Short, consistent practice a few minutes a day works better than occasional intense sessions.",
+    "Tinnitus that changes with jaw or neck movement is an important clue worth mentioning to your care team."
+  ],
+  faqs: [
+    ["Can exercises really reduce my tinnitus?", "Exercises alone do not cure tinnitus, but they can make it less intrusive by reducing tension, improving blood flow, and calming the nervous system. The best results usually come from combining exercises with sound therapy, hearing technology, and counseling."],
+    ["My tinnitus changes when I move my jaw or head. Is that normal?", "Tinnitus that changes with head or jaw movement may have a somatic or TMJ component. This is a useful clue for your care team, and you may benefit from coordinated care with a TMJ specialist or physical therapist."],
+    ["How often should I do these exercises?", "Many people benefit from short, consistent practice, just a few minutes one to three times per day. It is better to do a small amount regularly than to push too hard occasionally."],
+    ["Do I need special equipment?", "No. Most tinnitus-friendly exercises use only your body, a chair, and a quiet space. If you use hearing aids or sound therapy devices, you can combine your exercises with them."]
+  ],
+  image: "/assets/core/tinnitus__exercises.svg",
+  imageLabel: "Gentle movement and relaxation for tinnitus relief"
+},
+  "/tinnitus/getting-louder/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Why Is My Tinnitus Getting Louder?",
+  intro: [
+    "It can be frightening when tinnitus that was background noise suddenly feels louder, harsher, or more constant. The reassuring news is that a spike does not always mean permanent damage, but it is a sign that something in your ears, brain, or lifestyle has changed.",
+    "When patients tell us their tinnitus is getting louder, they usually mean one of three things: the sound itself has changed, the sound feels louder because they are paying more attention to it, or other factors like stress, poor sleep, or illness are amplifying how noticeable it is.",
+    "This page from our Bay Area audiologists explains the common reasons tinnitus gets louder, when a spike is a red flag, and what you can do right now to calm things down and protect your hearing. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["Common reasons tinnitus spikes", "Frequent triggers include recent loud-noise exposure (concerts, sporting events, power tools, or cranked-up headphones can temporarily inflame the auditory system), stress and anxiety that put the nervous system on high alert, poor sleep or fatigue that reduces the brain's ability to filter background sensations, illness such as colds, sinus infections, or allergies that cause ear pressure and fluid, earwax buildup, and certain medications. Hormonal shifts and blood-pressure changes can play a role too."],
+    ["Why tinnitus changes through the day", "Many people notice patterns, such as louder tinnitus at night or spikes in the afternoon at work. At night, when the house is quiet, tinnitus has less competition and feels louder. After a long day of mental effort, the brain has fewer resources to filter it. Caffeine, energy drinks, or alcohol can increase sensitivity, and tight deadlines or constant notifications ramp up nervous-system arousal. Jaw clenching during the day can also change loudness."],
+    ["True worsening versus perceived loudness", "As audiologists we look at two related questions. Is your auditory system actually changing, for example with new or worsening hearing loss or a recent ear injury or illness? Or is your brain reacting differently, with stress, anxiety, or sleep problems making tinnitus feel louder even when the actual sound level has not changed much? A [hearing test](/hearing-testing/) and detailed history help us tell the difference."],
+    ["When a spike is a red flag", "Call a doctor or seek urgent care if your tinnitus suddenly gets much louder in one ear, or if a spike is accompanied by sudden hearing loss, vertigo or severe dizziness, a pulsatile whooshing in time with your heartbeat, or a severe headache, facial weakness, or vision changes. These can signal medical conditions that need prompt attention; our guides on [sudden tinnitus](/tinnitus/sudden-onset/) and [when to see a doctor](/tinnitus/when-to-see-doctor/) give more detail."],
+    ["What you can do right now", "During a spike it is easy to panic and focus on the sound. A few steps reduce distress: if the spike followed a noisy event, give your ears a rest and avoid testing them with loud music; add gentle background sound from a fan, sound machine, or app to soften the contrast; use slow breathing or brief relaxation to interrupt the fight-or-flight response; and review the last 24 to 48 hours for louder environments, extra caffeine or alcohol, high stress, congestion, or medication changes. If louder tinnitus lasts more than a few days, book an evaluation."],
+    ["How treatment helps when tinnitus gets louder", "Tinnitus care aims not only to shrink the sound but also to shrink the fear and distress around it. Effective plans often combine a [hearing and tinnitus evaluation](/services/tinnitus-therapy/) to rule out red flags, TRT-style counseling and sound enrichment, and cognitive strategies to reframe thoughts like it is getting louder, I cannot cope. Many patients tell us their tinnitus still spikes sometimes, but it no longer scares them the way it used to, and spikes become shorter and easier to ride out."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Stress and tinnitus", "/tinnitus/stress/"],
-    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Sudden tinnitus: ER or not?", "/tinnitus/sudden-onset/"],
+    ["Medications that cause tinnitus", "/tinnitus/medications/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Perceived tinnitus loudness naturally fluctuates with stress, fatigue, quiet, and attention.",
-    "Temporary spikes from noise, caffeine, or illness usually settle on their own.",
-    "Steady worsening, one-sided change, or pulsatile tinnitus deserves prompt evaluation."
+    "A tinnitus spike usually reflects a temporary trigger, noise, stress, poor sleep, illness, or earwax, not permanent damage.",
+    "Tinnitus often feels louder at night and after long, tiring, or stressful days.",
+    "A sudden loud spike in one ear, or with dizziness, pulsing, or headache, is a red flag that needs prompt care."
   ],
   faqs: [
-    ["Is it normal for tinnitus to get louder some days?", "Yes. Day-to-day and even hour-to-hour fluctuation is very common. Stress, tiredness, quiet environments, and simply paying attention to the sound can all make it seem louder without any real change in your ears."],
-    ["Does louder tinnitus mean my hearing is getting worse?", "Not necessarily. Perceived loudness and hearing status do not move in lockstep. Still, if you notice a lasting increase or new hearing difficulty, a hearing test is a sensible way to check."],
-    ["When should I worry about worsening tinnitus?", "Seek evaluation if tinnitus steadily worsens, becomes one-sided, pulses with your heartbeat, or comes with new hearing loss or dizziness. These patterns are worth checking rather than waiting out."]
+    ["Does louder tinnitus mean my hearing is getting worse?", "Not necessarily. Sometimes the auditory system has changed, but often the brain is simply turning up the volume on how tinnitus feels because of stress, fatigue, or a noisy day. A hearing test helps distinguish true worsening from heightened sensitivity."],
+    ["Why is my tinnitus louder at night?", "At night the house is quiet, so tinnitus has less external sound to compete with and stands out more. Adding gentle background sound, like a fan or sound machine, reduces the contrast and often helps you fall asleep."],
+    ["When should a tinnitus spike worry me?", "Seek prompt care if the spike is sudden and one-sided, or comes with dizziness, a heartbeat-like pulsing, severe headache, facial weakness, or vision changes. Otherwise, if louder tinnitus persists more than a few days, schedule a hearing and tinnitus evaluation."]
   ],
   image: "/assets/core/tinnitus__getting-louder.svg",
-  imageLabel: "Understanding tinnitus fluctuations"
+  imageLabel: "When the ringing turns up the volume"
 },
   "/tinnitus/habituation/": {
   kicker: "Tinnitus & Sound Sensitivity",
@@ -2038,11 +2130,13 @@ export const corePages: Record<string, PageContent> = {
     "This page explains how habituation works and how to support it. For the science behind the sound, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["What habituation actually means", "Habituation does not silence tinnitus; it changes your relationship to it. The sound stops triggering an alarm and stops commanding attention, so it recedes into the background. Many people describe reaching a point where they only hear their tinnitus when they deliberately check for it."],
-    ["Why worry blocks it", "The brain will not habituate to a sound it believes is threatening. When tinnitus is tied to fear, frustration, or constant monitoring, the nervous system keeps flagging it as important. Reducing that emotional charge is what clears the path to habituation."],
-    ["Sound enrichment helps", "A quiet environment makes tinnitus stand out and slows habituation, while gentle, consistent background sound gives the brain something else to attend to and softens the contrast. This is why sound therapy, and often hearing aids, are central tools."],
-    ["Tinnitus Retraining Therapy", "TRT is a structured program that combines directive counseling with sustained low-level sound enrichment, deliberately guiding the brain toward habituation over a period of months. It is one of several evidence-informed approaches we can discuss as part of [tinnitus therapy](/services/tinnitus-therapy/)."],
-    ["Patience and consistency", "Habituation is gradual and rarely linear; good days and setbacks are both normal. Progress tends to come from steady daily habits, protecting your hearing, managing stress and sleep, and consistent sound enrichment, rather than from any single quick intervention."]
+    ["What habituation actually means", "Habituation does not silence tinnitus; it changes your relationship to it. The sound stops triggering an alarm and stops commanding attention, so it recedes into the background, similar to how you stop noticing a refrigerator hum or traffic outside. Many people reach a point where they still hear tinnitus if they look for it, but most of the day they are focused on other things. That shift from constant monitoring to mostly ignoring is the heart of habituation, and it is more than simply putting up with the sound."],
+    ["How the brain learns to tune it out", "Your brain constantly filters sensory information, and most of what your ears pick up never reaches conscious awareness because your brain decides it is not important. With tinnitus, two systems are involved: the auditory system, which generates and transmits the internal signal, and the limbic and autonomic systems, which process emotion, threat, and arousal. When tinnitus is labeled dangerous, those emotional systems stay activated and the sound feels front-and-center. Habituation happens as the brain reclassifies the signal as neutral."],
+    ["Typical stages of habituation", "Everyone's journey is unique, but many patients describe a recognizable pattern: an early alarm and hyperfocus phase where tinnitus feels new and threatening; a learning phase where you understand more and start using coping tools; a good-days and bad-days phase where the sound begins fading during meaningful activity; longer periods of not noticing it, with a milder emotional reaction; and finally stable habituation, where tinnitus is still there if you search for it but rarely dominates your day. Many people recognize themselves partway along and are already moving forward."],
+    ["Common myths", "Misunderstandings create unnecessary fear. Habituation does not mean giving up; it is an active process of helping your brain stop treating tinnitus as a threat, and it restores control and quality of life. It does not mean you will ignore something dangerous, because medically urgent causes are ruled out first. It is not all in your head in a dismissive sense; therapy works by changing how real neural signals are processed. And a temporary spike does not mean failure, since stress, sleep, diet, and noise can all cause normal fluctuations."],
+    ["What helps or hinders it", "Several factors influence the pace. Habituation tends to be supported by steady sound enrichment, engaging activity, good sleep, managed stress, protected hearing, and treating any underlying hearing loss. It tends to be slowed by long stretches of silence, constant monitoring of the sound, high untreated anxiety, poor sleep, and social withdrawal. This is why sound therapy and often hearing aids are central tools, and why [managing stress and anxiety](/tinnitus/anxiety-management/) matters as much as the sound itself."],
+    ["The role of treatment", "Habituation can happen naturally over time, but structured treatment often makes it smoother and faster. TRT combines directive counseling with sustained low-level sound enrichment to guide the brain toward habituation over months, CBT reframes the fearful thoughts that keep the sound threatening, and sound therapy plus hearing aids reduce the contrast between tinnitus and silence. These are among the evidence-informed approaches we combine within [tinnitus therapy](/services/tinnitus-therapy/)."],
+    ["Are you already habituating?", "Many patients are further along than they realize. Ask whether you sometimes go minutes or hours without noticing the sound, whether your emotional reaction has softened from panic to mere frustration, whether you are still working, socializing, and enjoying hobbies despite some discomfort, and whether you are using coping tools even imperfectly. Even a few tinnitus-free minutes show your brain can shift attention away from the sound, and a drop from panic to frustration is real progress. Habituation is often a series of small emotional steps rather than one big leap."]
   ],
   bulletLinks: [
     ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
@@ -2060,10 +2154,49 @@ export const corePages: Record<string, PageContent> = {
   faqs: [
     ["How long does tinnitus habituation take?", "It differs from person to person and typically unfolds over months rather than days. Consistent sound enrichment, stress and sleep management, and reduced worry all tend to speed the process, though progress is rarely a straight line."],
     ["Does habituation mean the tinnitus is gone?", "Not exactly. The sound is usually still present if you listen for it, but it no longer captures your attention or triggers distress. For most people that shift is what real relief feels like."],
-    ["Can I habituate on my own, or do I need help?", "Some people habituate naturally over time, but structured guidance, sound therapy, and counseling can make the process faster and more reliable, especially when tinnitus is causing significant distress."]
+    ["Can I habituate on my own, or do I need help?", "Some people habituate naturally over time, but structured guidance, sound therapy, and counseling can make the process faster and more reliable, especially when tinnitus is causing significant distress."],
+    ["If my tinnitus spikes, does that mean I have failed?", "No. Flare-ups during stress, illness, travel, or poor sleep are normal, even after considerable progress. Habituation is about how your reaction changes and how quickly you can return to your baseline using tools you have practiced, not about eliminating every up and down."]
   ],
   image: "/assets/core/tinnitus__habituation.svg",
   imageLabel: "How the brain adapts to tinnitus"
+},
+  "/tinnitus/hearing-aids/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Hearing Aids for Tinnitus: How Technology Helps Quiet the Ringing",
+  intro: [
+    "Modern hearing aids do far more than make things louder. For many Bay Area patients, they are the single most effective tool for reducing tinnitus, improving hearing, and helping the brain tune out constant noise.",
+    "For most people, tinnitus and hearing loss are closely linked. When your ears stop sending a full, clear signal, your brain turns up its internal volume and may start generating phantom sound, which you hear as ringing, buzzing, or hissing. Hearing aids help by restoring that missing input.",
+    "Hearing aids are not a cure for tinnitus, but they are often the foundation of an effective plan, especially when combined with sound therapy, counseling, and lifestyle changes. This page is from the audiologists at California Hearing Center in San Mateo and San Carlos. To learn more, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["Why hearing aids help with tinnitus", "Amplification puts more real sound into your ears, giving your brain something better to listen to than the internal noise. Many devices also include built-in sound therapy that gently masks or blends the ringing. When you are not straining to hear, tinnitus often feels softer, and over time your brain can learn to reclassify it as unimportant background sound, which supports long-term habituation."],
+    ["Who is a good candidate", "You may benefit from tinnitus-focused hearing aids if your tinnitus comes with any degree of hearing loss, even if you only notice it in noise; if voices sound muffled in groups or restaurants; if you turn up the TV more than others need; if tinnitus gets louder when things are quiet; or if you feel exhausted from straining to hear during the day. If you are not sure whether you have hearing loss, a [baseline hearing test](/hearing-testing/) is the best starting point."],
+    ["Key features for tinnitus patients", "Not every hearing aid has the same tools. For tinnitus we look for integrated tinnitus programs or sound generators, advanced noise management that separates speech from background noise, precise frequency shaping that targets both your hearing loss and your tinnitus pitch, comfort for all-day wear so devices stay in during quiet times, and app control with rechargeable, connected options that make daily sound therapy easy."],
+    ["Choosing among the brands", "California Hearing Center partners with leading manufacturers so we can match you with the right tools rather than the brand of the month. Widex is known worldwide for tinnitus solutions and natural sound; Oticon's BrainHearing approach focuses on how your brain processes sound in real situations; Phonak offers strong speech clarity plus the extended-wear, 24/7 Lyric option; ReSound and Starkey bring deep neural-network processing and wellness features; and Signia rounds out a wide menu. The best device for you may differ from a friend's choice."],
+    ["Invisible, rechargeable, and 24/7 options", "Style matters when you wear devices all day for tinnitus. Common options include receiver-in-canal styles that are comfortable and discreet, custom in-the-ear styles, nearly invisible deep-fit options, rechargeable styles with charging cases, and extended-wear Lyric devices placed deep in the canal and worn for months at a time. If tinnitus bothers you most at night, an extended-wear device can help because it stays in during sleep."],
+    ["What a tinnitus-focused fitting involves", "A tinnitus fitting is more than a quick device handoff. Your visit typically includes comprehensive hearing and tinnitus assessment, a discussion of your triggers and hardest times of day, selection of the right style and technology level for your goals and budget, precise [fitting and verification](/hearing-aid-fitting/) including real-ear measurements when appropriate, programming of tinnitus and sound therapy options, coaching on use in quiet and noisy settings, and follow-up visits to fine-tune."]
+  ],
+  bulletLinks: [
+    ["Hearing aid fitting and verification", "/hearing-aid-fitting/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["What to expect at your visit", "/tinnitus/what-to-expect/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
+  ],
+  takeaways: [
+    "Because tinnitus and hearing loss are usually linked, hearing aids are often the foundation of effective tinnitus care.",
+    "Look for devices with integrated tinnitus programs, precise frequency shaping, and easy daily sound therapy control.",
+    "The best brand and style depend on your hearing profile, tinnitus pattern, and lifestyle, verified through careful fitting."
+  ],
+  faqs: [
+    ["Will hearing aids make my tinnitus go away completely?", "Some patients experience near-complete relief, especially when tinnitus is driven by untreated hearing loss. For others, hearing aids significantly reduce the loudness and impact even if they do not erase it. Many people say the ringing fades into the background and stops ruling their day."],
+    ["Does any hearing aid work, or do I need a specific kind?", "Not all devices are equal. We often recommend premium or mid-level technology with robust tinnitus and noise processing, programmed specifically for your hearing and tinnitus profile. The best device for you may differ from a family member's choice."],
+    ["What if my hearing test is normal but I still have tinnitus?", "Some patients with normal tests still benefit from sound therapy or mild amplification. In these cases we may put more emphasis on anxiety management, sleep strategies, and counseling-based approaches."],
+    ["How quickly will I notice a difference?", "Some patients notice a change within days or weeks; for others it builds gradually over months as the brain adapts. We set realistic expectations and schedule follow-ups to support you through the adjustment period."]
+  ],
+  image: "/assets/core/tinnitus__hearing-aids.svg",
+  imageLabel: "Hearing technology that helps the brain tune out tinnitus"
 },
   "/tinnitus/hyperacusis/": {
   kicker: "Tinnitus & Sound Sensitivity",
@@ -2103,111 +2236,114 @@ export const corePages: Record<string, PageContent> = {
 },
   "/tinnitus/medications/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Medications and Tinnitus: What to Know",
+  headline: "Medications That Cause Tinnitus (Ototoxic Drugs)",
   intro: [
-    "Certain medications can cause or worsen tinnitus, a property clinicians call ototoxicity. If you noticed ringing after starting a new drug, you are right to be curious, and it is a good thing to raise with your prescriber. What you should not do is stop or change any medication on your own based on something you read online, including this page.",
-    "That caution matters, because many of the drugs linked to tinnitus treat serious conditions, and stopping them abruptly can be far more dangerous than the tinnitus itself. The right move is always a conversation with the professional who prescribed it.",
-    "This page offers general, educational information about the medication-tinnitus connection. It is not medical advice and not a reason to alter treatment without guidance."
+    "Some prescription and over-the-counter medications can cause or worsen tinnitus. That does not mean you should stop taking them, but it does mean that ringing in the ears is a side effect worth discussing with your care team.",
+    "Drugs that can affect the ears are called ototoxic, meaning they may harm the cochlea (hearing) or the vestibular system (balance). In some people they lead to tinnitus, hearing changes, or a sense of imbalance, though not everyone who takes them is affected, and often the benefits of the drug clearly outweigh the risks.",
+    "This page from our San Mateo and San Carlos audiologists explains what ototoxic means, which categories of medication are commonly associated with tinnitus, and how to protect your hearing. It is educational only and is not medical advice, never stop, start, or change a prescription without talking to the clinician who prescribed it. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["What ototoxicity means", "Ototoxic substances can affect the inner ear or auditory pathway, sometimes producing tinnitus, hearing changes, or dizziness. The effect may be temporary or, less often, lasting, and it frequently depends on the dose and duration."],
-    ["Drug classes sometimes associated with tinnitus", "Groups that have been linked to tinnitus include high doses of aspirin and some other NSAIDs, certain antibiotics such as the aminoglycosides, loop diuretics, some chemotherapy agents, and a number of other medications. Being on one of these does not mean it is causing your tinnitus, and most people take them without ear effects."],
-    ["Dose and reversibility", "For some medications, such as high-dose aspirin, tinnitus tends to fade once the dose is lowered or the drug is stopped under medical supervision. For others the picture is more variable. Only your prescriber can weigh these tradeoffs for your situation."],
-    ["Never stop a medication on your own", "This is the most important point on the page. Do not discontinue, reduce, or switch a prescribed medication because of tinnitus without talking to the prescribing clinician. Ask them whether your medication could be a factor and what the safest options are."],
-    ["How we can help", "We do not adjust medications, but a [hearing evaluation](/hearing-testing/) can document your hearing and tinnitus, which gives your physician useful information. We can also support you with sound therapy and other tinnitus strategies regardless of the underlying cause."]
+    ["How medications can trigger or worsen tinnitus", "Medications influence tinnitus in several ways. Some have direct effects on the tiny hair cells of the inner ear. Others change blood flow to the ear, altering how the auditory nerve functions. Some act on the brain or nerves and change how sound signals are processed. And in people who already have hearing loss, certain drugs can make existing tinnitus more noticeable."],
+    ["Common categories linked to tinnitus", "Many medications have been associated with tinnitus in the audiology literature. Broad categories often discussed include high doses of aspirin and certain NSAIDs, some strong antibiotics (especially aminoglycosides, used for serious infections), certain chemotherapy agents, some loop diuretics and heart medications, and, in some reports, particular antidepressants and anti-anxiety medications. Blood pressure and cholesterol drugs appear in some cases too. Your physician or pharmacist is the best source for medication-specific information."],
+    ["Temporary versus permanent effects", "A common question is whether drug-related tinnitus will fade once the medication stops. It depends on the specific drug and dose, how long you took it, other risk factors such as age and noise exposure, and whether you had tinnitus or hearing loss beforehand. Ringing may improve or disappear after the drug is stopped or adjusted, remain but become less noticeable as the brain adapts, or persist, especially when inner-ear damage or existing hearing loss is present."],
+    ["When to call your doctor", "Contact your prescribing clinician promptly if you notice new tinnitus soon after a medication change, sudden or rapidly worsening ringing in one or both ears, new hearing loss, dizziness or balance changes, or a significant impact on sleep, mood, or daily function. These do not automatically mean the medication must stop, but they warrant a conversation about whether tinnitus is a known side effect and whether a dose change or alternative is appropriate."],
+    ["Why you should not stop on your own", "Some medications must be tapered slowly to avoid withdrawal or rebound effects, and suddenly stopping heart, blood pressure, seizure, or psychiatric drugs can be dangerous. Your doctor may have chosen a medication precisely because its benefits outweigh known risks. The safest approach is to note your symptoms, contact your prescriber, ask whether tinnitus is a recognized side effect, and consider a baseline hearing test to monitor any changes."],
+    ["How audiologists help", "At California Hearing Center we frequently support patients starting or taking potentially ototoxic medications, especially during cancer treatment or complex care. We establish a baseline with a [hearing test](/hearing-testing/), monitor for measurable changes over time, document your tinnitus, and, with your permission, share results with your oncologist, cardiologist, or primary-care doctor. We also help you explore [sound therapy and coping tools](/services/tinnitus-therapy/) whether or not a medication is changed."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["What causes tinnitus", "/tinnitus/causes/"],
+    ["Can tinnitus go away?", "/tinnitus/can-tinnitus-go-away/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Can tinnitus go away", "/tinnitus/can-tinnitus-go-away/"],
-    ["One-sided tinnitus", "/tinnitus/one-ear/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Some medications can cause or worsen tinnitus, an effect called ototoxicity.",
-    "Never stop or change a prescribed medication on your own; talk to your prescriber first.",
-    "A hearing evaluation can document your tinnitus and give your physician useful information."
+    "Ototoxic drugs can affect the inner ear and trigger or worsen tinnitus, but not everyone is affected.",
+    "Categories often linked to tinnitus include high-dose aspirin/NSAIDs, some antibiotics, certain chemo drugs, and some diuretics.",
+    "Never stop a prescribed medication on your own, talk to your prescriber and consider a baseline hearing test."
   ],
   faqs: [
-    ["Which medications are linked to tinnitus?", "Groups sometimes associated with tinnitus include high-dose aspirin and some NSAIDs, certain antibiotics, loop diuretics, and some chemotherapy drugs, among others. Association is not the same as cause, and most people tolerate these medications without ear effects."],
-    ["Should I stop my medication if it might be causing tinnitus?", "No, not on your own. Many of these medications treat important conditions, and stopping abruptly can be harmful. Raise your concern with the prescribing clinician, who can decide whether any change is safe and appropriate."],
-    ["Will tinnitus from medication go away?", "Sometimes. Tinnitus tied to certain drugs, such as high-dose aspirin, often eases when the dose is reduced under medical supervision. Other cases are more variable, and your prescriber is the right person to advise you."]
+    ["Which medications are most likely to cause tinnitus?", "High doses of aspirin and some NSAIDs, certain strong antibiotics (aminoglycosides), some chemotherapy agents, and certain loop diuretics are among the categories most often associated with tinnitus. Effects vary widely from person to person."],
+    ["Will the tinnitus go away if I stop the drug?", "Sometimes. Aspirin-related tinnitus, for example, is often reversible when the dose is lowered under medical guidance. Other cases may persist, particularly when inner-ear damage or pre-existing hearing loss is involved. Never adjust a prescription without your doctor."],
+    ["Should I get my hearing checked before starting an ototoxic medication?", "Yes, when practical. A baseline [hearing test](/hearing-testing/) before or early in treatment lets us monitor for changes and coordinate with your medical team. Call us at 650-342-9449 to arrange baseline and follow-up testing."]
   ],
   image: "/assets/core/tinnitus__medications.svg",
-  imageLabel: "Medications and ear health"
+  imageLabel: "When medications ring in your ears"
 },
   "/tinnitus/menieres/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Ménière's Disease and Tinnitus",
+  headline: "Meniere's Disease and Tinnitus",
   intro: [
-    "Ménière's disease is a disorder of the inner ear that can make tinnitus part of a larger, more disruptive picture. Unlike tinnitus that stays fairly steady, the tinnitus of Ménière's often fluctuates and travels alongside episodes of vertigo, changing hearing, and a feeling of fullness in the affected ear.",
-    "Ménière's is a medical condition that requires diagnosis and management by a physician, typically an ear, nose, and throat specialist. Audiology plays an important supporting role, but this page is educational and not a substitute for medical evaluation.",
-    "If you are learning the basics, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) offers helpful context for how tinnitus relates to inner-ear health."
+    "Meniere's disease often brings a difficult combination of symptoms: spinning vertigo, fluctuating hearing loss, ear fullness, and loud, intrusive tinnitus. If you have heard this diagnosis, or suspect it, it is normal to feel overwhelmed.",
+    "Meniere's is a chronic inner-ear condition that typically affects one ear at first. It is thought to involve an abnormal fluid balance in the inner ear (endolymphatic hydrops), which affects both the hearing and balance structures, though the exact cause is not always clear and may differ from person to person.",
+    "On this page our Bay Area audiologists explain how Meniere's relates to tinnitus, its symptoms and diagnosis, and how we help patients in San Mateo, San Carlos, and across the Peninsula manage ringing alongside balance and hearing changes. For a general overview, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["The classic pattern", "Ménière's is usually described by a cluster of symptoms: episodes of spinning vertigo, fluctuating hearing loss, tinnitus, and a sensation of pressure or fullness in one ear. Symptoms tend to come in attacks that can last from minutes to hours, often with symptom-free stretches in between."],
-    ["How its tinnitus differs", "The tinnitus of Ménière's is frequently low-pitched, described as a roaring, rumbling, or ocean-like sound, and it may intensify before or during an attack. It commonly affects one ear, at least in the early stages."],
-    ["Why medical diagnosis matters", "Several conditions can imitate Ménière's, so a proper diagnosis is essential. An ENT can evaluate your history and examination, and a [hearing evaluation](/hearing-testing/) documenting fluctuating, often low-frequency hearing loss is an important piece of that workup."],
-    ["Management approaches", "Care is directed by your physician and may include dietary changes such as reducing salt, addressing triggers, medications, and other measures. Because Ménière's often involves hearing loss and bothersome tinnitus, audiology support with hearing aids and sound therapy can be valuable alongside medical treatment."],
-    ["When to seek prompt care", "Sudden severe vertigo, sudden hearing loss, or new one-sided symptoms should be evaluated promptly. Any new neurological symptoms, such as weakness, double vision, or trouble speaking, are an emergency and warrant immediate medical attention."]
+    ["The four classic symptoms", "Meniere's is usually recognized by a pattern: recurrent episodes of spinning vertigo (which may include nausea and vomiting), fluctuating hearing loss that is usually worse in the lower frequencies, a feeling of fullness or pressure in the ear, and tinnitus that is often a loud roaring, rushing, or ringing. Episodes, sometimes called attacks, can last from about 20 minutes to several hours, followed by periods of relative calm."],
+    ["How Meniere's causes tinnitus", "In Meniere's, tinnitus usually results from three things working together. Pressure and fluid imbalance can alter how the inner ear sends sound signals. As hearing shifts, the brain may fill in missing sound information with ringing, roaring, or buzzing. And heightened nervous-system sensitivity from the stress and uncertainty of vertigo attacks can make the tinnitus more noticeable and distressing."],
+    ["What the tinnitus feels like", "Patients often describe Meniere's-related tinnitus as intermittent but intense, with a low-pitched roaring or rushing quality, often louder in the ear that has hearing loss and fullness, and frequently stronger during or just before a vertigo attack. Because it usually starts on one side, understanding one-sided versus two-sided patterns can help; see our page on [tinnitus in one ear](/tinnitus/one-ear/)."],
+    ["How Meniere's is diagnosed", "There isn't a single Meniere's test, so diagnosis is typically made by an ENT or neurotologist using a combination of findings, with critical input from detailed hearing tests. Providers review your symptom history (a symptom journal helps), perform a comprehensive [hearing evaluation](/hearing-testing/) looking for fluctuating low-frequency hearing loss in one ear, may order balance and vestibular testing, and sometimes use MRI or blood work to rule out other conditions."],
+    ["Treatment and tinnitus management", "Meniere's is usually managed rather than cured, with a plan tailored to you. Medical management, guided by your ENT, may include dietary adjustments (often lower sodium), fluid management, and medications to reduce vertigo or nausea. On the hearing side, hearing aids, sound therapy, and Tinnitus Retraining Therapy can soften the contrast with tinnitus, while stress management, good sleep, and hearing protection round out the plan. See our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["Living with fluctuating symptoms", "One of the hardest parts of Meniere's is its unpredictability: some days feel stable, others bring sudden vertigo, fullness, and louder tinnitus. Patients often find it helpful to keep a symptom journal, build a nighttime tinnitus toolkit of sound apps and relaxation techniques, plan ahead with their providers for flare-ups, and seek support from others who understand inner-ear conditions. Many people reach a point where, with the right support, tinnitus fades into the background."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["Types of tinnitus sounds", "/tinnitus/types-of-tinnitus-sounds/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Diet and lifestyle", "/tinnitus/diet-lifestyle/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Ménière's pairs tinnitus with vertigo, fluctuating hearing loss, and ear fullness, usually in one ear.",
-    "Its tinnitus is often low-pitched and roaring, and may flare with attacks.",
-    "Diagnosis and management belong with a physician; audiology supports hearing and tinnitus care."
+    "Meniere's is a chronic inner-ear condition marked by vertigo, fluctuating hearing loss, ear fullness, and roaring tinnitus.",
+    "Its tinnitus is often low-pitched, one-sided, and stronger around vertigo attacks.",
+    "It is managed rather than cured, with ENT-led medical care plus audiology support for hearing and sound therapy."
   ],
   faqs: [
-    ["How is Ménière's tinnitus different from ordinary tinnitus?", "It tends to be low-pitched and roaring rather than a high ring, often affects one ear, and typically comes bundled with vertigo, fluctuating hearing, and ear fullness. It may also worsen around an attack, then settle."],
-    ["Can Ménière's disease be cured?", "There is no cure, but many people manage it well. Physician-directed strategies, sometimes including dietary changes, medications, and other measures, can reduce the frequency and severity of attacks, and audiology support can help with hearing and tinnitus."],
-    ["Should I see a doctor if I think I have Ménière's?", "Yes. Because other conditions can mimic it and because prompt care matters for symptoms like sudden hearing loss or severe vertigo, an ENT evaluation is important. A hearing test is a valuable part of that assessment."]
+    ["Why is Meniere's tinnitus so loud and roaring?", "Fluid pressure changes in the inner ear alter how sound is transmitted, and the accompanying low-frequency hearing loss prompts the brain to fill in with roaring or rushing sound. It often intensifies just before or during a vertigo attack."],
+    ["Can anything reduce Meniere's-related tinnitus?", "Yes. Medical management of the disease (often lower-sodium diet and vertigo medications through your ENT) may reduce episodes, while hearing aids, sound therapy, and habituation strategies help make the tinnitus less intrusive day to day."],
+    ["When should Meniere's symptoms be treated as urgent?", "Seek urgent care for sudden hearing loss with loud new tinnitus, severe new vertigo with neurological symptoms like weakness or facial drooping, persistent vomiting, or any dramatic change from your usual pattern. Our [when-to-see-a-doctor guide](/tinnitus/when-to-see-doctor/) has more detail."]
   ],
   image: "/assets/core/tinnitus__menieres.svg",
-  imageLabel: "Inner-ear disease and tinnitus"
+  imageLabel: "Vertigo, hearing loss, and roaring tinnitus"
 },
   "/tinnitus/one-ear/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Tinnitus in One Ear: Why It Deserves a Closer Look",
+  headline: "Tinnitus in One Ear vs Both Ears: What It Means",
   intro: [
-    "Most tinnitus is felt in both ears or in the middle of the head, and is usually benign. Tinnitus in a single ear, called unilateral tinnitus, is different in one important respect: it is more likely to have a specific underlying cause, so it is generally worth having evaluated rather than simply monitored.",
-    "This is not a reason to panic. Many cases of one-sided tinnitus turn out to have straightforward, treatable explanations. But because the list of possible causes includes conditions best caught early, one-sided tinnitus earns a medical and audiological workup that two-sided ringing often does not.",
-    "This page explains why, and what evaluation typically involves. For background, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "Do you hear ringing, buzzing, or whooshing in just one ear, or in both? The side, or sides, where you hear tinnitus can offer important clues about what is going on and how urgently you should seek help.",
+    "When patients come to our San Mateo or San Carlos offices, one of the first questions we ask is whether they hear tinnitus in one ear, both ears, or in the middle of the head. Bilateral (both-ear) tinnitus is often tied to more generalized issues like hearing loss or noise exposure. Unilateral (one-ear) tinnitus is more likely to be linked to a specific medical or structural condition and may warrant faster follow-up.",
+    "This page from our Bay Area audiologists explains the difference between unilateral and bilateral tinnitus, common causes of each, and when a one-sided sound is a warning sign. For the fundamentals, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["Why one ear raises the priority", "Symmetric hearing systems tend to produce symmetric symptoms. When tinnitus is confined to one ear, it suggests something specific to that side, which is exactly the kind of asymmetry clinicians want to understand rather than assume away."],
-    ["Common and treatable causes", "Frequently the explanation is benign: earwax blocking one canal, a one-sided ear infection or fluid, noise damage weighted to one ear, or asymmetric hearing loss. Several of these, like [earwax](/tinnitus/earwax/), are readily addressed."],
-    ["Causes that make evaluation important", "Less commonly, unilateral tinnitus can accompany conditions such as Ménière's disease or, rarely, a benign growth on the hearing and balance nerve known as an acoustic neuroma. These are uncommon, but they are precisely why one-sided tinnitus should be checked rather than ignored."],
-    ["What a workup involves", "Evaluation usually starts with a [hearing test](/hearing-testing/) to compare the two ears and look for asymmetry. Depending on the findings and your history, your clinician may recommend medical evaluation or imaging. Documenting the difference between ears is the key first step."],
-    ["Red flags that warrant prompt care", "Seek care promptly for one-sided tinnitus that begins suddenly, comes with sudden or worsening hearing loss on that side, pulses with your heartbeat, or is joined by dizziness, imbalance, or facial numbness or weakness."]
+    ["The terms audiologists use", "Unilateral tinnitus is heard in one ear only. Bilateral tinnitus is heard in both ears, either equally or with one side slightly more noticeable. Some people do not localize the sound to either ear; it feels centered in the head. All of these patterns are common, and the key is what else is happening at the same time, such as changes in hearing, balance, or general health."],
+    ["Why one-sided tinnitus gets more attention", "One-sided tinnitus does not automatically mean something serious is wrong, but it is uncommon enough that we pay close attention, especially if it comes with hearing loss, ear fullness or pressure, dizziness or imbalance, or a pulsatile (heartbeat-like) quality. Because the stakes can be higher, one-sided tinnitus should never simply be ignored."],
+    ["Common causes of unilateral tinnitus", "One-sided tinnitus can stem from earwax, fluid, or a middle-ear infection (often reversible with treatment); sudden sensorineural hearing loss (considered urgent, since early treatment may improve outcomes); inner-ear disorders such as Meniere's; a benign tumor on the hearing nerve called an acoustic neuroma (rare but important to rule out with MRI); a vascular cause when the sound beats with your pulse; or jaw and neck (somatosensory) issues that feel stronger on one side."],
+    ["Common causes of bilateral tinnitus", "Tinnitus in both ears, or centered in the head, is extremely common and usually relates to age-related or noise-induced hearing loss, cumulative noise exposure from work, music, or daily headphone use, systemic factors like blood pressure or medications, and stress or sleep problems that make the sound more noticeable. When the brain receives less input from both ears, it may fill the gap with ringing, which is one reason hearing aids can help so many people."],
+    ["Tinnitus that switches sides or moves", "Some people notice tinnitus that seems to move between ears, gets louder when they turn the head or clench the jaw, or feels centered until they focus on one side. These patterns are often part of somatosensory tinnitus, in which signals from muscles, joints, and nerves in the head and neck interact with the auditory system. Jaw-related tinnitus is covered on our [TMJ page](/tinnitus/tmj/). Because the sound is generated by the brain, stress, attention, and movement can all make it feel louder or shifted."],
+    ["How we evaluate side-specific tinnitus", "A tinnitus evaluation at California Hearing Center includes a detailed history (when it started, which ear, whether it changes with movement), an ear exam to check for wax, infection, or fluid, and a comprehensive [hearing test](/hearing-testing/) that measures each ear separately and looks for asymmetries. When appropriate we match tinnitus pitch and loudness, and if your pattern suggests a need for imaging or specialist care, we recommend ENT or physician follow-up while offering [sound therapy and other tools](/services/tinnitus-therapy/)."]
   ],
   bulletLinks: [
-    ["Start with a hearing test", "/hearing-testing/"],
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Earwax and tinnitus", "/tinnitus/earwax/"],
-    ["Ménière's disease", "/tinnitus/menieres/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Contact our team", "/contact/"]
+    ["Pulsatile tinnitus", "/tinnitus/pulsatile/"],
+    ["Sudden tinnitus: ER or not?", "/tinnitus/sudden-onset/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "One-sided tinnitus is more likely than two-sided tinnitus to have a specific cause.",
-    "Many causes are benign and treatable, but evaluation is recommended rather than watchful waiting.",
-    "Sudden onset, one-sided hearing loss, pulsatile quality, or dizziness warrants prompt care."
+    "Bilateral tinnitus usually reflects hearing loss or noise exposure; one-sided tinnitus warrants closer attention.",
+    "Red flags with one-sided tinnitus include sudden hearing loss, dizziness, a pulsatile quality, or neurological symptoms.",
+    "Evaluation measures each ear separately and looks for asymmetry, with imaging or ENT referral when needed."
   ],
   faqs: [
-    ["Is tinnitus in one ear dangerous?", "Usually not, and many causes are benign and treatable. However, one-sided tinnitus is more likely to have a specific underlying cause, some of which are best identified early, so it is worth having evaluated rather than ignored."],
-    ["What could cause tinnitus in just one ear?", "Possibilities range from earwax, an ear infection, or asymmetric noise damage and hearing loss, to less common conditions such as Ménière's disease or, rarely, a benign nerve growth. A hearing test comparing both ears is the usual starting point."],
-    ["When should I see someone about one-sided tinnitus?", "Fairly soon, and promptly if it started suddenly, comes with hearing loss on that side, pulses like a heartbeat, or is joined by dizziness or facial weakness. A hearing evaluation helps determine the next step."]
+    ["Is tinnitus in one ear more serious than in both?", "Not always, but it deserves closer attention. One-sided tinnitus is more often linked to a specific structural or medical cause, so we look carefully for asymmetry and, when indicated, recommend imaging or ENT follow-up."],
+    ["When is one-sided tinnitus an emergency?", "Seek urgent care if one-sided tinnitus comes with sudden hearing loss, severe dizziness or imbalance, a pulsatile heartbeat sound, or neurological symptoms such as facial weakness or vision changes. See our guides on [sudden tinnitus](/tinnitus/sudden-onset/) and [when to see a doctor](/tinnitus/when-to-see-doctor/)."],
+    ["Why do I hear tinnitus in both ears?", "Bilateral tinnitus most often reflects age-related or noise-induced hearing loss affecting both ears, sometimes amplified by stress, sleep loss, or systemic factors. Treating any underlying hearing loss frequently reduces it."]
   ],
   image: "/assets/core/tinnitus__one-ear.svg",
-  imageLabel: "When tinnitus affects one side"
+  imageLabel: "One ear or both: what the side tells us"
 },
   "/tinnitus/peninsula-tinnitus/": {
   kicker: "Tinnitus & Sound Sensitivity",
@@ -2244,6 +2380,43 @@ export const corePages: Record<string, PageContent> = {
   ],
   image: "/assets/core/tinnitus__peninsula-tinnitus.svg",
   imageLabel: "Local tinnitus care across the Peninsula"
+},
+  "/tinnitus/pulsatile/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Pulsatile Tinnitus: The Heartbeat Sound in Your Ear",
+  intro: [
+    "Do you hear a rhythmic whooshing, thumping, or heartbeat sound in your ear? That pattern, especially when it keeps time with your pulse, is called pulsatile tinnitus, and it deserves careful attention.",
+    "Instead of a steady ringing or buzzing, pulsatile tinnitus often feels like a whoosh or swoosh that pulses, or a soft drumbeat that speeds up and slows down with your heart rate. Many people notice it more when lying down, after exercise, or in a quiet room. Because it is often related to blood flow near the ear, it is one of the few types of tinnitus that may have a directly identifiable physical source.",
+    "This page from our Bay Area audiologists explains what pulsatile tinnitus is, its possible causes, when it may be an emergency, and how we work with physicians to evaluate and manage it. It is educational and not a substitute for in-person medical care. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How it differs from typical tinnitus", "Most tinnitus is subjective and steady, described as ringing, hissing, buzzing, or roaring, and is usually linked to hearing loss and inner-ear changes. Pulsatile tinnitus, by contrast, has a rhythm that follows your pulse and may sometimes be heard by a clinician using a stethoscope (objective tinnitus). Both types can be distressing and can occur together. Because a physical source may be identifiable, doctors and audiologists take pulsatile tinnitus seriously and usually recommend medical evaluation."],
+    ["Possible causes and sources", "Pulsatile tinnitus is a symptom, not a diagnosis, and only a medical workup can identify the cause in your case. Possibilities include turbulent blood flow in vessels near the ear or skull, elevated blood pressure or cardiovascular changes, vessel abnormalities or malformations (such as a dural arteriovenous fistula or aneurysm), middle-ear conditions like glomus tumors or eustachian-tube problems, raised pressure inside the skull (idiopathic intracranial hypertension), and risk factors like smoking, high cholesterol, or diabetes that affect circulation."],
+    ["When pulsatile tinnitus is a red flag", "Seek urgent medical attention if pulsatile tinnitus comes with sudden or new hearing loss, dizziness or balance problems, vision changes, double vision, or frequent severe headaches, weakness, numbness, or facial drooping, or a known history of stroke, aneurysm, or significant vascular disease. These symptoms do not always mean something dangerous is happening, but they can signal conditions that need prompt evaluation. When in doubt, call your doctor, an advice nurse, or emergency services."],
+    ["How it is evaluated", "Evaluating pulsatile tinnitus is often a team effort. Your provider reviews your history (when it started, one ear or both, what makes it better or worse, whether it changes with head position or neck pressure), performs a physical exam of the ears, head, and neck, and an audiologist performs a full [hearing evaluation](/hearing-testing/) to check for hearing loss and middle-ear issues. Depending on your case, physicians may order imaging such as MRI, CT, MR angiography, or CT angiography, along with blood work or blood-pressure evaluation."],
+    ["Treatment and management", "Treatment depends heavily on the underlying cause. In some cases, addressing the medical condition, for example managing blood pressure or treating a middle-ear issue, can significantly improve or even resolve pulsatile tinnitus. When it persists or remains bothersome, many of the same tools used for other tinnitus help: sound therapy and sound machines, hearing aids if hearing loss is present, Tinnitus Retraining Therapy, cognitive strategies to reduce fear, and lifestyle support for vascular and overall health. Explore our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["Self-care while you arrange follow-up", "While arranging medical and audiology care, a few steps may help you feel calmer: keep a symptom log noting when the sound started, which ear, and whether it changes with position, exercise, or neck pressure; follow your physician's guidance on blood pressure, cholesterol, hydration, and sleep; use gentle background sound at night to reduce the contrast with silence; practice slow breathing or relaxation to lower the stress response that magnifies tinnitus; and notice whether caffeine or alcohol make it more noticeable."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["Sudden tinnitus: ER or not?", "/tinnitus/sudden-onset/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Pulsatile tinnitus beats in time with your heartbeat and is often related to blood flow near the ear.",
+    "Because it may have an identifiable physical source, it should always be medically evaluated.",
+    "Seek urgent care if it comes with hearing loss, dizziness, vision changes, severe headache, or neurological symptoms."
+  ],
+  faqs: [
+    ["What causes pulsatile tinnitus?", "It usually reflects blood flow near the ear, from turbulent flow in nearby vessels, high blood pressure, vessel abnormalities, middle-ear conditions, or raised pressure inside the skull. It is a symptom that warrants a medical workup to find the specific cause."],
+    ["Is pulsatile tinnitus dangerous?", "Most causes are not dangerous, but because some involve blood vessels or pressure inside the skull, it should always be evaluated. Seek urgent care if it comes with sudden hearing loss, dizziness, vision changes, severe headaches, or neurological symptoms."],
+    ["Can pulsatile tinnitus be treated?", "Often, yes. When an underlying cause like high blood pressure or a middle-ear issue is addressed, it may improve or resolve. When it persists, sound therapy, hearing aids, and counseling can reduce its impact. Our audiologists coordinate with your physicians, call 650-342-9449 to arrange an evaluation."]
+  ],
+  image: "/assets/core/tinnitus__pulsatile.svg",
+  imageLabel: "The rhythmic whoosh that follows your pulse"
 },
   "/tinnitus/san-francisco-tinnitus/": {
   kicker: "Tinnitus & Sound Sensitivity",
@@ -2317,38 +2490,116 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/tinnitus__san-jose-tinnitus.svg",
   imageLabel: "South Bay patients weigh distance against specialized care"
 },
-  "/tinnitus/stress/": {
+  "/tinnitus/sleep-strategies/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Stress and Tinnitus: Breaking the Cycle",
+  headline: "Managing Tinnitus at Night: Sleep Strategies That Actually Help",
   intro: [
-    "Ask people when their tinnitus is at its worst and many will point to their most stressful stretches: a demanding week at work, a family crisis, a poor night's sleep. That pattern is not a coincidence. Stress and tinnitus are closely linked, and understanding the connection is one of the most practical ways to gain relief.",
-    "Stress rarely creates tinnitus out of nowhere, but it reliably turns up the volume on tinnitus that already exists, and then tinnitus adds to the stress. The result is a self-reinforcing loop that can feel impossible to escape from the inside.",
-    "The encouraging part is that this loop has handles you can grab. This page focuses on the stress side; our companion page on [anxiety management](/tinnitus/anxiety-management/) goes deeper on the mental-health tools."
+    "Nighttime is when tinnitus often feels loudest. The world gets quiet, your brain has fewer distractions, and the ringing, buzzing, or hissing can take center stage. The encouraging news is that there are practical, science-based ways to make it easier to fall asleep and stay asleep.",
+    "You do not have to wait for tinnitus to disappear before you sleep better. With the right sound environment, bedtime routine, and coping tools, most people see meaningful improvement, often before the tinnitus itself changes at all.",
+    "This guide comes from the tinnitus-focused audiologists at California Hearing Center in San Mateo and San Carlos. For the bigger picture, start with [what tinnitus is](/tinnitus/what-is-tinnitus/) and our [tinnitus hub](/tinnitus/)."
   ],
   sections: [
-    ["The stress response and your ears", "Stress activates the body's fight-or-flight system, raising arousal, muscle tension, and vigilance. That heightened state sharpens your sensitivity to internal signals like tinnitus and keeps the brain primed to notice it, which is why stressful periods so often coincide with louder-seeming tinnitus."],
-    ["A two-way street", "Tinnitus is itself a stressor, especially when it disrupts sleep or concentration. Stress amplifies tinnitus, tinnitus adds stress, and the cycle tightens. Interrupting it at any point, calming the body, improving sleep, or reducing the sound's emotional charge, tends to loosen the whole loop."],
-    ["Practical ways to lower arousal", "Paced breathing, regular exercise, time outdoors, and relaxation practices all lower baseline arousal. Even a few minutes of slow breathing during a tinnitus spike can signal safety to the nervous system and take the edge off."],
-    ["Protect your sleep", "Because stress and tinnitus both sabotage sleep, and poor sleep worsens both, a steady bedtime routine and gentle background sound at night are high-value habits worth prioritizing."],
-    ["When to reach for more help", "If stress tips into persistent anxiety, panic, or low mood, please involve your physician or a mental health professional. Structured approaches like cognitive behavioral therapy can address both the stress and the tinnitus distress together."]
+    ["Why tinnitus feels worse at night", "Many people can manage during the day but feel that as soon as they lie down in a quiet bedroom the sound doubles. That usually is not the tinnitus getting worse, it is about contrast and attention: less background noise means tinnitus has no competition, your brain has fewer distractions, and worry about sleep can make the sound feel more intense. Elevated stress hormones from the day can add to it."],
+    ["Creating a sleep-friendly sound environment", "The goal at night is not to blast tinnitus away but to gently blend it with other sounds so your brain has something more pleasant to focus on. Use soft, consistent background sound such as a fan, white noise, or ocean waves. Aim for a volume just slightly above or below your tinnitus level, not so loud it becomes another irritant. Choose looping sounds without sudden changes in tempo, which is why many bedside devices and apps are designed specifically for sleep."],
+    ["Devices and apps that help at night", "Several options can make nights easier: hearing aids with tinnitus programs for people who also have hearing loss, dedicated bedside sound generators, extended-wear devices like Lyric that can provide round-the-clock sound support, and smartphone apps with customizable soundscapes and timers. Most people should not wear traditional hearing aids all night due to comfort, skin health, and moisture concerns, so a common plan is [hearing aids](/hearing-aid-fitting/) by day plus bedside sound therapy at night."],
+    ["Building a tinnitus-friendly bedtime routine", "What you do in the 60 to 90 minutes before bed strongly shapes how your brain responds to tinnitus at night. Wind down on purpose with one or two relaxing activities like stretching, reading, or a warm shower. Set your sound environment before you lie down so you enter a room that already feels calm. Use CBT-inspired tools to slow racing thoughts, and keep reassuring reminders nearby to counter late-night catastrophic thinking such as it will always be like this."],
+    ["What to avoid before bed", "Some habits make both tinnitus and sleep worse. Common culprits include late-night doomscrolling about tinnitus, which raises anxiety and hyper-focus; caffeine and alcohol close to bedtime; very loud evening environments without hearing protection; and going to bed wired without any wind-down time. If you have had a particularly loud evening, your ears may need extra quiet recovery time."],
+    ["When nighttime tinnitus needs professional help", "Some scenarios warrant a closer look: tinnitus that starts suddenly or changes dramatically, tinnitus in one ear only, tinnitus with sudden hearing loss, dizziness, or neurologic symptoms, and severe insomnia, panic, or depression related to tinnitus. A comprehensive tinnitus evaluation, including [hearing testing](/hearing-testing/), helps us determine whether sound therapy, hearing aids, TRT, or advanced options are appropriate."]
   ],
   bulletLinks: [
-    ["Anxiety management", "/tinnitus/anxiety-management/"],
-    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Why tinnitus seems louder", "/tinnitus/getting-louder/"],
-    ["Diet and lifestyle", "/tinnitus/diet-lifestyle/"],
-    ["Contact our team", "/contact/"]
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Tinnitus relief apps", "/tinnitus/apps/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"]
   ],
   takeaways: [
-    "Stress rarely causes tinnitus but reliably makes existing tinnitus more prominent.",
-    "Tinnitus and stress reinforce each other; interrupting the loop at any point helps.",
-    "Persistent anxiety or low mood deserves support from a physician or mental health professional."
+    "Tinnitus usually feels louder at night because of contrast and attention, not because it has actually worsened.",
+    "A steady, gentle sound environment plus a consistent wind-down routine helps most people sleep better before tinnitus itself changes.",
+    "Sudden, one-sided, or dizziness-related tinnitus deserves prompt professional evaluation."
   ],
   faqs: [
-    ["Can stress cause tinnitus?", "Stress is more likely to worsen existing tinnitus than to create it from nothing. By raising the body's arousal and sharpening your attention to internal sounds, stress can make tinnitus seem noticeably louder during difficult periods."],
-    ["Why does my tinnitus flare when I am stressed?", "Stress puts the nervous system on high alert, which increases sensitivity to signals like tinnitus and keeps the brain focused on it. As arousal settles, the tinnitus often recedes again."],
-    ["What is the fastest way to calm a stress-driven flare?", "In the moment, slow paced breathing and a few minutes of relaxation can lower arousal and ease the spike. Over the longer term, regular exercise, better sleep, and stress-reduction habits make flares less frequent and less intense."]
+    ["Will I ever be able to sleep in silence again?", "Not necessarily right away, but as you build better sleep habits and use the right sound therapy, many people find their brain becomes less alarmed by tinnitus at night. Over time, sleep can improve even if the tinnitus is still present."],
+    ["Should I take a sleep medication for tinnitus?", "Some medications can influence tinnitus, while others may help in the short term. It is important to talk with your physician before starting or changing any sleep medication, and we can coordinate with your medical team as part of a full plan."],
+    ["Do I need special hearing aids just for sleep?", "Not always. Many patients do well with standard daytime hearing aids plus bedside sound therapy at night. In some cases, extended-wear or tinnitus-specific devices may be recommended."],
+    ["Is it safe to play sound all night?", "Generally, low-level, comfortable sound is safe and often helpful. We recommend moderate volumes and steady sounds, and we tailor the plan if you have specific ear or sleep conditions."]
+  ],
+  image: "/assets/core/tinnitus__sleep-strategies.svg",
+  imageLabel: "Calmer nights with the right sound environment"
+},
+  "/tinnitus/sound-therapy/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Sound Therapy for Tinnitus in San Mateo & San Carlos",
+  intro: [
+    "Sound therapy does not try to drown out tinnitus with louder noise. Instead, it adds gentle, comfortable sound that helps your brain relax, makes the ringing less noticeable, and supports long-term habituation. Many people describe it simply as taking the edge off.",
+    "The goal is not to blast the tinnitus away. It is to give your brain a steady, neutral background so the sound becomes less front-and-center, and over time less emotionally charged. Sound therapy can be delivered through hearing aids, bedside devices, small speakers, or apps, and it is a key pillar of most tinnitus programs.",
+    "This page explains how our Bay Area audiologists use sound therapy with real patients. If you are just starting out, it helps to read [what tinnitus is](/tinnitus/what-is-tinnitus/) first, then return here for the deeper detail."
+  ],
+  sections: [
+    ["What sound therapy actually is", "Sound therapy is any deliberate use of external sound to change how you perceive and react to tinnitus. Instead of listening to an isolated ringing in a silent room, you hear a more comfortable, blended sound environment. It is a core part of Tinnitus Retraining Therapy, hearing aids for tinnitus, and the protocols we build inside our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["How it helps your brain", "Tinnitus is most distressing when the brain labels it a threat and pays constant attention to it. Sound therapy works on several levels at once: masking partially covers the tinnitus so it feels quieter, sound enrichment reduces the contrast between tinnitus and silence, an external sound gives your brain something else to attend to, and over time habituation helps your brain learn that the tinnitus is not dangerous. Because it touches both the auditory and emotional sides, sound therapy pairs well with anxiety-management and CBT-style strategies."],
+    ["Types of sound we use", "There is no single best sound. We often combine broadband noise (white, pink, or brown), nature and environmental sounds like rain or ocean waves, hearing-aid-based sound generators when hearing loss is also present, notched or tailored sound shaped around your tinnitus pitch, and combination approaches within TRT. We adjust the mix over time based on your feedback and progress rather than setting it once and forgetting it."],
+    ["Daytime versus nighttime strategies", "Tinnitus often behaves differently by day and night, so we design separate strategies. During the day we might use hearing aids with tinnitus programs, low-level background sound in quiet offices, and short sound breaks during spikes. Quiet nights are often the hardest, so at night we lean on bedside sound machines with timers, gentle looping soundscapes, or night-specific hearing aid programs when appropriate."],
+    ["Choosing the right sounds", "Patients often ask what the best sound for tinnitus is. The honest answer: the one you can comfortably listen to, consistently, without irritation or boredom. Start with sounds you find neutral to pleasant, keep the volume below your tinnitus level at first, avoid anything too sharp or busy, and expect to fine-tune your favorites as your brain adapts. Sound therapy should never be uncomfortably loud."],
+    ["How we build your plan", "At California Hearing Center, sound therapy is tailored to your tinnitus pattern, lifestyle, and goals. A typical plan starts with a comprehensive [hearing test](/hearing-testing/) and tinnitus history, moves into strategy design where we select sound types and delivery methods that fit your routine, and continues with coaching and follow-up so we can adjust as your tinnitus changes and coordinate with CBT or TRT when needed."]
+  ],
+  bulletLinks: [
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Explore the tinnitus hub", "/tinnitus/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Hearing aid fitting for tinnitus", "/hearing-aid-fitting/"],
+    ["Sound sensitivity and hyperacusis", "/hyperacusis/"]
+  ],
+  takeaways: [
+    "Sound therapy softens the contrast between tinnitus and silence rather than trying to cover it completely.",
+    "The best sound is one you can listen to comfortably and consistently, kept at a gentle, safe volume.",
+    "It works best inside a full plan alongside hearing technology, counseling, and lifestyle support."
+  ],
+  faqs: [
+    ["How long before I notice a difference?", "Some people feel calmer within days or weeks; for others, improvement builds gradually over several months. Remember, sound therapy is training your brain, not just covering a noise, so consistency matters more than intensity."],
+    ["Will sound therapy work if my tinnitus is very loud?", "Many patients with severe tinnitus still benefit, especially when sound therapy is paired with anxiety management and counseling. We often start slowly and adjust the plan as you build tolerance and familiarity."],
+    ["Can I do sound therapy on my own?", "There are plenty of do-it-yourself tools, but working with an audiologist helps you avoid common pitfalls such as too-loud volumes, the wrong sounds, or inconsistent use, and ensures sound therapy is integrated with a complete plan rather than used in isolation."],
+    ["Does it help if my tinnitus is only in one ear?", "Yes, though the approach may differ. We may use asymmetrical hearing aid fittings, directional sound sources, or customized programs, and we always make sure one-sided tinnitus has been properly evaluated first."]
+  ],
+  image: "/assets/core/tinnitus__sound-therapy.svg",
+  imageLabel: "Gentle sound that helps the brain tune out tinnitus"
+},
+  "/tinnitus/stress/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Stress and Tinnitus: Breaking the Vicious Cycle",
+  intro: [
+    "Stress can make tinnitus louder, sharper, and harder to ignore, and tinnitus itself can create more stress, worry, and exhaustion. If you feel stuck in this loop, you are not alone, and there are ways to change how your brain and body respond to the sound.",
+    "On this page, our Bay Area audiologists explain how stress and tinnitus interact, why your fight-or-flight system matters, and how patients in San Mateo, San Carlos, and across the Peninsula can use practical tools to reduce distress, even if the sound does not completely disappear.",
+    "While you may not be able to flip a switch and turn tinnitus off, you can change how your brain reacts to it. For the underlying science, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How stress and tinnitus are connected", "Stress does not cause tinnitus on its own in most people, but it can trigger tinnitus to appear in someone already at risk, make existing tinnitus sound louder or more intrusive, and increase how much attention and emotion your brain gives to the sound. Over time, the brain can start to link tinnitus with danger or frustration, keeping your nervous system on high alert and making the sound feel bigger than it is."],
+    ["What stress does in the body", "When you are stressed, your fight-or-flight system activates, producing a faster heart rate and breathing, muscle tension in the jaw, neck, and shoulders, and higher levels of stress hormones like adrenaline and cortisol. For someone with tinnitus, these changes can increase how much you notice the sound, make it feel louder even when the physical signal has not changed, amplify anxious thoughts, and make quiet environments like bedtime feel more uncomfortable. Sleep disruption is especially common."],
+    ["The vicious cycle", "Many patients describe a repeating pattern. First stress rises from work, family, or cost-of-living pressures. Then tinnitus gets louder, or feels louder, because your alert nervous system turns up the internal volume, especially in quiet moments. Distress increases with thoughts like I can't live like this or what if something is seriously wrong. Finally the loop reinforces itself: the more distressed you feel, the more your brain scans for tinnitus. Counseling-based approaches help you step out of this loop."],
+    ["Recognizing your personal patterns", "It helps to track when tinnitus feels louder, your stress level before and during spikes, and how sleep, caffeine, and alcohol affect your perception. Common patterns include evening and bedtime spikes when the day quiets down, work and commute stress that leaves you tense, harsher tinnitus after coffee or energy drinks, and quiet thinky time bringing the sound front-and-center if your brain pairs silence with worry."],
+    ["When stress around tinnitus is a sign to seek help", "It is reasonable to feel frustrated when tinnitus first appears, but reach out if you notice persistent trouble sleeping, increasing irritability or hopelessness, avoiding social or quiet situations, worsening anxiety or panic, or using alcohol or medications in risky ways to escape the noise. If tinnitus distress ever makes you feel unsafe or like you might harm yourself, please contact emergency services or a crisis hotline right away. Support is available even when it does not feel that way."],
+    ["Treatment and everyday self-care", "Most patients do best with a combination of approaches: addressing underlying contributors like hearing loss or TMJ, improving the sound environment with hearing aids and [sound therapy](/tinnitus/sound-therapy/), changing your relationship to the sound through CBT-based counseling and habituation, and supporting the nervous system with lifestyle and relaxation tools. Small daily habits help too, including gentle background sound, short relaxation breaks, regular movement, sensible hearing protection, and connection with others rather than facing tinnitus alone."]
+  ],
+  bulletLinks: [
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Tinnitus relief exercises", "/tinnitus/exercises/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "Stress rarely causes tinnitus by itself, but it can make the sound feel louder and more threatening.",
+    "The stress-tinnitus loop is self-reinforcing, and breaking it means calming both the nervous system and the thoughts about tinnitus.",
+    "Persistent low mood, panic, or risky coping deserve professional support alongside audiology care."
+  ],
+  faqs: [
+    ["Can stress alone cause tinnitus?", "In most people stress does not cause tinnitus on its own, but it can trigger it in someone already at risk and make existing tinnitus feel louder and more intrusive. That is why stress management is part of treatment, not a side note."],
+    ["Why does my tinnitus spike in the evening?", "As the day quiets down and your mind slows, there is less background sound to compete with tinnitus, and worries about the next day or about sleep itself can ramp up how loud it feels."],
+    ["Will reducing stress make my tinnitus quieter?", "It can reduce how loud and bothersome tinnitus feels, even if the underlying signal does not change. Calming the nervous system and reframing anxious thoughts are central to most tinnitus management plans."],
+    ["When should I get professional help?", "If tinnitus-related stress is disrupting sleep, mood, work, or relationships, or you are avoiding activities you used to enjoy, a combination of audiology care and mental health support can make a significant difference. You can reach our team at 650-342-9449."]
   ],
   image: "/assets/core/tinnitus__stress.svg",
   imageLabel: "The stress-tinnitus connection"
@@ -2389,6 +2640,43 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/tinnitus__success-stories.svg",
   imageLabel: "Realistic patterns of tinnitus relief"
 },
+  "/tinnitus/sudden-onset/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Sudden Tinnitus: Should I Go to the ER?",
+  intro: [
+    "If ringing, buzzing, or whooshing in your ears started suddenly, it is normal to feel anxious and to wonder whether you should head straight to the emergency room.",
+    "By sudden tinnitus we mean ringing that appears abruptly, within minutes to hours, feels noticeably different from how your ears usually feel, and may come with other symptoms like muffled hearing, dizziness, or pressure. Some people notice a high-pitched ping followed by steady ringing; others wake up with new buzzing, roaring, or whooshing.",
+    "This page from our Bay Area audiologists offers general guidance on when sudden tinnitus can be an emergency, when to call a doctor promptly, and when it is appropriate to schedule an evaluation. It is not a diagnosis or a substitute for medical care, if you are ever in doubt, seek in-person attention. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["When sudden tinnitus may be an emergency", "Seek emergency care or call 911 if sudden tinnitus occurs with sudden hearing loss in one or both ears, severe dizziness that makes it hard to stand or walk, sudden weakness, drooping, or numbness, difficulty speaking or confusion, a sudden extremely severe headache, double vision or loss of vision, or a recent head or neck injury followed by tinnitus. These can be related to conditions like stroke or acute neurological or vascular problems, which online information cannot safely rule out."],
+    ["Urgent but not 911: call a doctor soon", "Other situations call for prompt medical attention, typically same-day or within a few days. Contact your primary-care doctor or an ENT if you notice new tinnitus along with one-sided hearing changes, ear fullness, pressure, or pain, a recent ear or sinus infection or flu, a pulsatile whooshing that matches your heartbeat, or tinnitus that begins soon after starting a new medication with ear-related side effects. For one-sided or [pulsatile tinnitus](/tinnitus/pulsatile/), providers may order imaging to look for vascular or structural causes."],
+    ["When you can schedule an audiology visit", "In many cases sudden tinnitus still feels alarming but an emergency room is not the best place. It is usually reasonable to schedule a tinnitus and hearing evaluation when tinnitus started recently but you feel otherwise well with no severe symptoms, both ears are affected similarly and you do not feel acutely ill, the tinnitus followed a loud event without red-flag symptoms, or a doctor has already ruled out urgent issues and recommended follow-up."],
+    ["Common causes of sudden-onset tinnitus", "Sudden tinnitus has many possible causes. A very loud event, a concert, arena, fireworks, or headphone blast, can injure inner-ear cells and cause sudden ringing, so protect your ears afterward. Sudden sensorineural hearing loss in one ear is considered urgent, since early treatment may improve outcomes. Blocked ears from wax, infection, or fluid can trigger sudden tinnitus that resolves once treated. Circulation changes can cause pulsatile tinnitus, and jaw or neck strain, stress, illness, or a new medication can play a role too."],
+    ["How sudden tinnitus is evaluated", "Depending on your symptoms you may see an emergency provider, primary-care doctor, ENT, or audiologist. On the audiology side we take a detailed history of when and how the tinnitus started, examine your ears for wax, infection, or fluid, and perform a comprehensive [hearing test](/hearing-testing/) with pure-tone, speech, and middle-ear measurements to see whether there is new hearing loss. If medical red flags are present we encourage physician follow-up; if the pattern looks stable we outline [treatment options](/services/tinnitus-therapy/)."],
+    ["What you can do while arranging care", "While you set up medical or audiology follow-up, a few steps can help you feel calmer: protect your ears from additional loud sound, no concerts, power tools, or very loud headphones; use gentle background sound (a fan, sound machine, or soft music) to avoid total silence, especially at night; support your sleep with a calm bedtime routine; try relaxation techniques such as breathing exercises or gentle stretching; and be mindful of caffeine and alcohol if you notice they worsen the ringing. These steps do not replace medical care, but they make a stressful situation more manageable."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Pulsatile tinnitus", "/tinnitus/pulsatile/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Sudden tinnitus with hearing loss, severe dizziness, weakness, slurred speech, or a severe headache is a 911 emergency.",
+    "One-sided, pulsatile, or medication-related sudden tinnitus warrants a prompt doctor or ENT visit within a few days.",
+    "Sudden hearing loss in one ear is urgent, early treatment may improve the outcome."
+  ],
+  faqs: [
+    ["Do I need to go to the ER for sudden tinnitus?", "Go to the ER or call 911 if sudden tinnitus comes with sudden hearing loss, severe dizziness, weakness or numbness, slurred speech, a sudden severe headache, or vision loss. Without those red flags, a prompt doctor or audiology visit is usually appropriate."],
+    ["Is sudden hearing loss with tinnitus an emergency?", "Yes. Sudden sensorineural hearing loss in one ear, often with fullness and new tinnitus, is treated as urgent because early medical treatment may improve the chance of recovery. Seek care right away."],
+    ["Can sudden tinnitus go away on its own?", "Sometimes. Tinnitus after a loud event or a temporary blockage may fade over hours to days. If it persists beyond a day or two, or if you have any red-flag symptoms, get evaluated rather than waiting. See our page on [when to see a doctor](/tinnitus/when-to-see-doctor/)."]
+  ],
+  image: "/assets/core/tinnitus__sudden-onset.svg",
+  imageLabel: "New ringing: when it is an emergency"
+},
   "/tinnitus/support-groups/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Tinnitus Support Groups & Peer Resources",
@@ -2425,149 +2713,268 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/tinnitus__support-groups.svg",
   imageLabel: "Peer support alongside clinical care"
 },
-  "/tinnitus/tinnitus-retraining-therapy/": {
+  "/tinnitus/temporary-or-permanent/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Tinnitus Retraining Therapy (TRT) Explained",
+  headline: "Is Tinnitus Temporary or Permanent?",
   intro: [
-    "Tinnitus retraining therapy, usually shortened to TRT, is a structured approach that combines low-level sound therapy with directive counseling. Rather than trying to erase the sound, TRT aims to help the brain reclassify tinnitus as a neutral signal it can safely ignore, a process clinicians call habituation.",
-    "The method grew out of a neurophysiological model of tinnitus and is described by organizations such as the American Tinnitus Association and ASHA. It is not a quick fix; it is a gradual retraining process that typically unfolds over many months rather than a few visits.",
-    "At California Hearing Center, we apply TRT principles as part of an individualized plan, alongside well-fit hearing aids and other strategies where they help. Where a more intensive option is appropriate, we can also discuss Lenire bimodal neuromodulation for candidates who qualify."
+    "One of the most common questions we hear is whether the ringing will ever go away. Tinnitus can behave very differently from person to person. For some it is a short-term buzz after a loud concert; for others it becomes a daily companion.",
+    "Understanding the difference between temporary and long-term (chronic) tinnitus can help set realistic expectations and reduce some of the fear around the unknown. There is no single expiration date that applies to everyone, some tinnitus fades within hours or days, some improves over months, and some becomes long-term.",
+    "Written by our Bay Area audiologists in San Mateo and San Carlos, this page explains how long temporary tinnitus usually lasts, the signs it may be long-term, and why even chronic tinnitus can become much easier to live with. If you are not sure what you are hearing is tinnitus, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["The two pillars: sound plus counseling", "TRT rests on two components used together. Sound therapy provides gentle, enriched background sound so tinnitus stands out less against silence, while directive counseling reframes what the sound means so it stops triggering a stress response. Neither pillar works as well alone."],
-    ["Why habituation is the goal", "The aim is not to make the sound louder or quieter but to change your reaction to it. Over time, many people stop consciously noticing tinnitus for long stretches, much as you stop noticing a refrigerator hum. This is a realistic target for a large share of motivated patients, though timelines vary."],
-    ["The role of sound enrichment", "Avoiding silence is central. Constant quiet tends to make tinnitus more prominent, so TRT encourages a comfortable, non-intrusive sound environment using ambient noise, sound generators, or hearing aids that both amplify speech and add gentle background sound when hearing loss is present."],
-    ["Directive counseling in practice", "Counseling explains how hearing and the auditory brain generate and sustain tinnitus, which reduces the fear and catastrophic thinking that make it worse. Understanding the mechanism is itself therapeutic, and it makes the sound feel less threatening."],
-    ["Setting honest expectations", "TRT asks for patience and consistency. Progress is gradual and not guaranteed for everyone, and results depend on your hearing, the nature of your tinnitus, and how consistently the plan is followed. We favor realistic expectations over marketing promises."]
+    ["How long temporary tinnitus lasts", "Temporary tinnitus is often linked to a specific trigger, and the sound tends to fade as your ears and brain recover. After a loud event, a high-pitched ring or muffled hearing often improves over hours to a few days. With an ear infection or fluid, tinnitus frequently eases as the problem resolves. With a temporary earwax blockage, ringing often disappears once the wax is removed. And some medications cause reversible tinnitus that improves after the drug is stopped or adjusted under a doctor's guidance."],
+    ["Signs your tinnitus may be long-term", "Tinnitus is more likely to be long-lasting when it occurs alongside permanent hearing loss, when it has persisted for several months even if it fluctuates, or when several factors combine, longstanding noise exposure, age-related changes, stress, jaw or neck tension, and certain medical conditions. High anxiety also plays a role: the more frightening tinnitus feels, the more the brain focuses on it, creating a cycle where tinnitus and worry feed each other. Conditions like Meniere's disease and TMJ disorders can be associated with chronic tinnitus."],
+    ["What affects whether tinnitus fades", "Tinnitus is influenced by both the ear and the brain. Untreated hearing loss can keep the brain on high alert, while addressing it can shift attention back to real-world sound. Ongoing loud noise can re-trigger or worsen tinnitus. High stress makes the brain more sensitive to internal signals, and poor sleep makes tinnitus seem louder the next day. Even understanding what tinnitus is, and is not, often reduces the fear that drives how loud it seems."],
+    ["Can chronic tinnitus still improve?", "Yes. Even when tinnitus has been present for years, many people experience major improvements in how loud, intrusive, or bothersome it feels. There are two paths: reducing the sound source (treating earwax, infections, blood pressure, or TMJ, addressing hearing loss with [hearing aids and sound therapy](/services/tinnitus-therapy/), and exploring advanced options like Lenire where appropriate) and changing how the brain responds through habituation, Tinnitus Retraining Therapy, and cognitive behavioral techniques."],
+    ["Tinnitus after noise or medications", "If tinnitus started after a loud event, there is a chance it will improve over days to weeks, especially if it was a one-time exposure and you protect your ears going forward. But if it remains clearly noticeable after a week, schedule a [hearing evaluation](/hearing-testing/), and remember that repeated noise exposure increases the odds of permanent change. Some medications are ototoxic; the ringing may improve after the drug is stopped or changed, or it may linger, so never stop a prescribed medication without talking to your doctor."],
+    ["When to see a doctor or audiologist", "If you are worried about whether your tinnitus is permanent, that alone is a good reason to get it checked, you do not have to wait until it feels bad enough. Sudden hearing loss, one-sided tinnitus with severe dizziness, facial weakness, or a pounding headache should prompt urgent care. For most ongoing tinnitus, especially with possible hearing loss or noise exposure, an audiologist is the best starting point; see our guide on [when to see a doctor](/tinnitus/when-to-see-doctor/)."]
   ],
   bulletLinks: [
-    ["Start with a hearing evaluation", "/hearing-testing/"],
-    ["Hearing aids for tinnitus", "/products/hearing-aids-by-brand/"],
-    ["Tinnitus knowledge hub", "/tinnitus/"],
-    ["What tinnitus is", "/tinnitus/what-is-tinnitus/"],
-    ["What relief typically looks like", "/tinnitus/success-stories/"],
-    ["Book a tinnitus visit", "/contact/"]
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Can tinnitus go away?", "/tinnitus/can-tinnitus-go-away/"],
+    ["Medications that cause tinnitus", "/tinnitus/medications/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "TRT combines low-level sound enrichment with directive counseling to promote habituation over time.",
-    "The goal is a changed reaction to tinnitus, not elimination of the sound itself.",
-    "It is a gradual, months-long process whose results vary and depend on consistency."
+    "Temporary tinnitus, from a loud event, infection, wax, or a medication, often fades over hours to weeks.",
+    "Tinnitus lasting several months, especially with hearing loss, is more likely to be long-term.",
+    "Even chronic tinnitus can become far less loud and intrusive through treatment and habituation."
   ],
   faqs: [
-    ["How long does TRT take to work?", "TRT is a gradual process, and meaningful habituation often develops over many months rather than weeks. Consistency with sound enrichment and follow-up counseling tends to matter more than speed."],
-    ["Do I need special equipment for TRT?", "Not always. Some people use ambient sound or sound generators, while those with hearing loss often benefit from hearing aids that amplify and can add gentle background sound. We match the tools to your hearing and tinnitus."],
-    ["Is TRT the same as just masking the sound?", "No. Masking tries to cover tinnitus with louder sound, while TRT deliberately uses low-level sound below the tinnitus so the brain can learn to tune it out. The counseling component is what distinguishes true retraining from simple masking."]
+    ["How do I know if my tinnitus is permanent?", "There is no exact cutoff, but tinnitus lasting three months or more, especially alongside hearing loss, is more likely long-term. Even then it can change, and most people make it far less bothersome with the right plan."],
+    ["My tinnitus started after a concert, will it go away?", "It may. Tinnitus after a one-time loud event often fades over days to weeks if you protect your ears afterward. If it is still clearly noticeable after about a week, book a hearing evaluation, and take it as a signal to protect your hearing going forward."],
+    ["Is there any hope if my tinnitus has lasted years?", "Yes. Long-standing tinnitus rarely disappears completely, but many people report dramatic improvements in loudness, intrusiveness, and distress through hearing care, sound therapy, and counseling. Our [tinnitus therapy program](/services/tinnitus-therapy/) is built around exactly this."]
+  ],
+  image: "/assets/core/tinnitus__temporary-or-permanent.svg",
+  imageLabel: "Short-lived spike or lasting companion?"
+},
+  "/tinnitus/tinnitus-retraining-therapy/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Retraining Therapy (TRT) in the Bay Area",
+  intro: [
+    "Tinnitus Retraining Therapy is an evidence-based approach that combines sound therapy and counseling to help your brain reclassify tinnitus as a neutral, background sound. Over time, this can dramatically reduce how much ringing in the ears affects your day-to-day life.",
+    "Rather than chasing a quick cure, TRT focuses on changing how your auditory system and emotional centers respond to the noise. It was originally developed by Dr. Pawel Jastreboff and has been used worldwide for decades.",
+    "This page is from the audiologists at California Hearing Center in San Mateo and San Carlos. If tinnitus is new to you, start with [what tinnitus is](/tinnitus/what-is-tinnitus/), then return here for a deeper dive into TRT specifically."
+  ],
+  sections: [
+    ["What TRT is", "TRT is a structured program that aims to help you stop reacting to tinnitus as a threat so your brain can gradually tune it out. Its goal is habituation, the point at which your brain no longer treats tinnitus as important and it fades into the background like a refrigerator hum. For many people, tinnitus eventually becomes barely noticeable except in very quiet moments."],
+    ["Sound therapy plus counseling", "TRT looks at tinnitus through two lenses: the auditory system and the emotional system. On the sound side, we use low-level sound through hearing aids, sound generators, or bedside devices to reduce the contrast between tinnitus and silence. On the counseling side, we explain how tinnitus works, why your brain reacts the way it does, and how to gradually de-threaten the sound, often using strategies similar to Cognitive Behavioral Therapy. Daily habits around sleep, stress, and sound support the process."],
+    ["Who is a good candidate", "TRT may fit if you have had persistent tinnitus for more than six months, if ringing is affecting your sleep, focus, or mood, if you feel you cannot stop listening to the noise, if you worry it signals something dangerous even after serious causes have been ruled out, and if you are open to a structured program and willing to give it time. If your tinnitus is sudden, in one ear only, or comes with sudden hearing loss, dizziness, or neurologic symptoms, it is important to be medically evaluated first."],
+    ["What TRT looks like step by step", "While every plan is personalized, a typical journey starts with a comprehensive evaluation including [hearing tests](/hearing-testing/) and tinnitus history, followed by an individualized treatment plan. From there we hold an initial counseling session explaining how tinnitus is generated and why habituation is possible, set up sound therapy on your devices, and continue with regular follow-up visits to adjust the sound, revisit counseling topics, and make sure the plan is working in real life."],
+    ["How long TRT takes", "TRT is a gradual process. Most structured programs are designed to last roughly 12 to 24 months, with the most noticeable improvements often appearing within the first 6 to 12 months. People with very high stress or long-standing tinnitus may need more time. Progress moves through phases: understanding tinnitus and reducing fear, habituation beginning so tinnitus feels less urgent, and finally tinnitus being present but rarely bothersome as your brain mostly ignores it."],
+    ["TRT, Lenire, and advanced options", "TRT is one tool in a full toolbox and works especially well combined with hearing aids for tinnitus, day and night sound therapy, and CBT-based counseling. Some patients are also candidates for Lenire, an FDA-cleared bimodal neuromodulation device that pairs sound with gentle tongue stimulation, offered through a candidacy-gated tinnitus therapy program. Not everyone needs Lenire or full TRT; some do well with targeted counseling, sound therapy, and lifestyle changes alone. Your plan is always individualized within our [tinnitus therapy program](/services/tinnitus-therapy/)."]
+  ],
+  bulletLinks: [
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Understanding habituation", "/tinnitus/habituation/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
+  ],
+  takeaways: [
+    "TRT pairs low-level sound therapy with counseling to help the brain reclassify tinnitus as neutral background sound.",
+    "It is a gradual program, often 12 to 24 months, aimed at habituation rather than an instant cure.",
+    "TRT works best combined with hearing aids, CBT-based counseling, and, for select candidates, advanced options like Lenire."
+  ],
+  faqs: [
+    ["Is TRT a cure for tinnitus?", "TRT is not a cure in the sense of turning tinnitus off, but it can drastically reduce how much it bothers you day to day. Many patients reach a point where they rarely think about it, even if a faint sound remains in very quiet settings."],
+    ["How is TRT different from just using sound therapy?", "Sound therapy is one ingredient; TRT combines it with structured directive counseling and education specifically designed to change your emotional response and guide habituation over months."],
+    ["Can TRT help with stress-related tinnitus?", "Yes. Stress and tinnitus are closely linked, and TRT specifically addresses the emotional alarm system around the sound. We often pair it with anxiety-management strategies."],
+    ["Does TRT work for tinnitus in one ear?", "It can. We first make sure one-sided tinnitus has been properly evaluated, then design sound and counseling strategies that fit your specific situation."]
   ],
   image: "/assets/core/tinnitus__tinnitus-retraining-therapy.svg",
   imageLabel: "Sound therapy and directive counseling"
 },
   "/tinnitus/tmj/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "TMJ and Somatosensory Tinnitus",
+  headline: "TMJ and Tinnitus: The Jaw-Ear Connection",
   intro: [
-    "Not all tinnitus comes from the ear itself. For some people the source, or a major contributor, is the jaw. The temporomandibular joint, or TMJ, sits just in front of the ear, and problems there can produce or worsen tinnitus, a link that surprises many patients but is well recognized in clinical practice.",
-    "This kind of tinnitus belongs to a broader category called somatosensory tinnitus, in which signals from muscles, joints, and nerves of the head and neck influence the auditory system. Its hallmark is that the tinnitus can change when you move, and that clue often points the way to the cause.",
-    "This page explains the connection and where to turn. For the underlying mechanism, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "Not all tinnitus comes from the ear itself. If you notice jaw pain, clicking, or tightness, and you also hear ringing, buzzing, or fullness in your ears, you may be wondering whether your jaw is affecting your tinnitus. In many people, the answer is yes.",
+    "The temporomandibular joint, or TMJ, is the hinge that connects your lower jaw to your skull, sitting just in front of each ear. Problems with this joint and the surrounding muscles, often called TMD (temporomandibular disorders), can produce or worsen tinnitus, a link that surprises many patients but is well recognized in clinical practice.",
+    "This page explains how TMJ problems can influence tinnitus, which signs suggest a jaw-related component, and how our Bay Area audiologists collaborate with dentists and TMJ specialists. For the underlying mechanism of ear noise, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["How the jaw and ear connect", "The TMJ and the ear share close anatomy and overlapping nerve pathways. When the joint or the muscles around it are strained, inflamed, or misaligned, those signals can spill over into the auditory system and be perceived as tinnitus, along with ear fullness or discomfort."],
-    ["Signs your tinnitus may be TMJ-related", "Suspect a jaw connection if your tinnitus changes when you clench, chew, or move your jaw, if you have jaw pain, clicking, or popping, if you grind your teeth, or if you have frequent facial, temple, or neck tension and headaches."],
-    ["What somatosensory tinnitus means", "In somatosensory tinnitus, movements or pressure, such as clenching the jaw or turning the head, can make the sound louder, softer, or shift in pitch. The ability to modulate tinnitus this way is a strong hint that the head and neck are involved."],
-    ["Where to turn for care", "Because the root issue is dental and musculoskeletal, care often involves a dentist experienced in TMJ disorders, and sometimes physical therapy, bite appliances, or stress-related jaw-tension management. Treating the jaw problem can ease the associated tinnitus."],
-    ["How audiology fits in", "We can document your hearing and tinnitus with a [hearing evaluation](/hearing-testing/), help rule out other contributors, and support you with sound therapy while the jaw issue is addressed. Coordinated care across disciplines tends to work best."]
+    ["How the jaw and ear connect", "The relationship is complex, but several factors help explain it. The TMJ sits right next to the ear canal and middle ear, and muscles, ligaments, and nerves in the area interact closely. Sensory nerves from the jaw and neck feed into some of the same brain centers that process sound, so when TMJ structures are irritated, those signals can influence how tinnitus is perceived. Tight jaw and neck muscles can also change pressure around the ear and alter how you hear your own tinnitus."],
+    ["This is somatosensory tinnitus", "Tinnitus that changes when you move your jaw, neck, or head is called somatosensory tinnitus, and TMJ-related tinnitus is one example. The hallmark is that the sound can shift with movement or pressure, and that clue often points the way to the cause. Many people also clench or grind their teeth when stressed, which can raise tinnitus intensity at the same time."],
+    ["Signs your tinnitus may be TMJ-related", "Suspect a jaw connection if your tinnitus gets louder, softer, higher, or lower when you open wide, clench, or move your jaw side to side; if ear fullness, pressure, or mild ear pain arrive alongside jaw pain, clicking, morning soreness, or temple headaches; if tinnitus, fullness, and jaw pain are all stronger on the same side; or if you clench during the day, grind at night, and notice the sound is louder during stressful periods."],
+    ["When it is likely not just TMJ", "Even with jaw symptoms, tinnitus is not always primarily TMJ-related. Red flags that suggest a broader problem include sudden hearing loss, a heartbeat or whooshing sound in time with your pulse, severe vertigo or balance changes, neurological symptoms such as facial weakness or numbness, or persistent ear pain or drainage. These can overlap with sudden hearing loss, Meniere's disease, or vascular tinnitus, so do not assume it is just TMJ, seek prompt care."],
+    ["Who to see and how it is evaluated", "TMJ-related tinnitus is usually managed by a team: an audiologist evaluates hearing, tinnitus, and ear health; a dentist or TMJ specialist assesses the jaw joint, bite, and muscle tension; and sometimes a physical therapist addresses neck and posture issues. At California Hearing Center we begin with a full [hearing and tinnitus evaluation](/hearing-testing/), ask how the sound changes with jaw movement, document your baseline, and coordinate with your TMJ providers."],
+    ["Treatment and tinnitus management", "TMJ-focused treatment is typically guided by a dentist, oral surgeon, or TMJ specialist and may include night guards or bite splints, jaw exercises and physical therapy, posture and ergonomics coaching, and short-term medication for pain or muscle tension. On the audiology side we support you with sound therapy, hearing aids when hearing loss is present, counseling to reduce fear and frustration, and strategies that help the brain move tinnitus into the background. Explore our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["Simple self-care that often helps", "While not a substitute for evaluation, many patients benefit from a keep-your-teeth-apart habit: check in through the day and gently let your jaw relax with teeth slightly apart and tongue resting lightly on the roof of your mouth. TMJ-friendly stretches and posture exercises ease muscular tension, stress-reduction practices calm both clenching and tinnitus distress, and hearing protection in loud settings prevents further sensitization."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
     ["Types of tinnitus sounds", "/tinnitus/types-of-tinnitus-sounds/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Stress and tinnitus", "/tinnitus/stress/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Jaw and TMJ problems can cause or worsen tinnitus through shared anatomy and nerve pathways.",
-    "Tinnitus that changes when you clench, chew, or move your jaw suggests a somatosensory link.",
-    "Care often involves a TMJ-experienced dentist, with audiology supporting hearing and sound therapy."
+    "The jaw joint sits right next to the ear and shares nerve pathways, so TMJ problems can cause or worsen tinnitus.",
+    "Tinnitus that changes when you clench, chew, or move your jaw suggests a somatosensory, jaw-related link.",
+    "Care usually combines a TMJ-experienced dentist with audiology support for hearing and sound therapy."
   ],
   faqs: [
     ["Can TMJ problems really cause tinnitus?", "Yes. The jaw joint sits right next to the ear and shares nerve pathways with the auditory system, so TMJ strain or dysfunction can produce or intensify tinnitus, often alongside jaw pain, clicking, or ear fullness."],
-    ["How do I know if my tinnitus is from my jaw?", "A telling sign is that the tinnitus changes when you clench, chew, or move your jaw, or that you also have jaw pain, teeth grinding, or facial and neck tension. This modulation points toward a somatosensory, jaw-related cause."],
-    ["Who treats TMJ-related tinnitus?", "The underlying jaw problem is usually managed by a dentist experienced in TMJ disorders, sometimes with physical therapy or a bite appliance. Audiology complements that care by documenting your hearing and offering sound therapy for the tinnitus itself."]
+    ["How do I know if my tinnitus is from my jaw?", "A telling sign is that the sound changes when you clench, chew, or move your jaw, or that jaw pain, teeth grinding, and temple headaches occur on the same side. This modulation points toward a somatosensory, jaw-related cause."],
+    ["Who treats TMJ-related tinnitus?", "The jaw problem itself is usually managed by a dentist experienced in TMJ disorders, sometimes with physical therapy or a bite splint. Audiology complements that care by documenting your hearing and offering [sound therapy](/services/tinnitus-therapy/) for the tinnitus."]
   ],
   image: "/assets/core/tinnitus__tmj.svg",
   imageLabel: "When the jaw drives tinnitus"
 },
   "/tinnitus/types-of-tinnitus-sounds/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Types of Tinnitus Sounds and What They Suggest",
+  headline: "Types of Tinnitus Sounds: Ringing, Buzzing, Whooshing & More",
   intro: [
-    "Tinnitus does not sound the same to everyone. People describe ringing, buzzing, hissing, humming, whistling, clicking, roaring, and more, and the quality of the sound can offer clues about what is going on. While the specific sound alone does not diagnose a cause, it is a useful part of the picture your clinician builds.",
-    "Describing your tinnitus as precisely as you can, its pitch, character, whether it is steady or pulsing, and whether it is in one ear or both, genuinely helps. This page walks through the common types and what each may hint at.",
-    "For the underlying biology, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) explains why these sounds arise."
+    "Not all tinnitus sounds the same. Tinnitus is the perception of sound when no external sound is present, and while many people describe it as ringing, the reality is far more varied. Patients describe sharp high-pitched ringing or whistling, low rumbling or roaring, soft hissing or static, buzzing and electrical noises, pulsing that matches the heartbeat, and occasionally musical tones.",
+    "The specific quality of your tinnitus can give your audiologist important clues about possible causes and the most helpful treatment approach. That is why we ask detailed questions about what you hear.",
+    "This page from our Bay Area audiologists breaks down the main types of tinnitus sounds, what each might mean, and when a particular sound should be evaluated promptly. For the fundamentals, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["Ringing, hissing, and buzzing", "These high-pitched, steady tones are the most common form of tinnitus and are frequently associated with hearing loss, often from age or noise exposure. A high ring or hiss that sits in the background is the classic presentation many people picture."],
-    ["Roaring, humming, and low tones", "Lower-pitched sounds, described as roaring, rumbling, or ocean-like, can accompany conditions affecting the inner ear, including Ménière's disease, especially when paired with ear fullness and fluctuating hearing. See our page on [Ménière's disease](/tinnitus/menieres/) for more."],
-    ["Pulsatile tinnitus", "If your tinnitus pulses or throbs in time with your heartbeat, that is pulsatile tinnitus, and it is worth flagging. Because it can relate to blood flow near the ear, it should be evaluated by a physician rather than assumed to be ordinary tinnitus."],
-    ["Clicking and rhythmic sounds", "Rhythmic clicking or fluttering that is not in sync with the heartbeat may come from tiny muscle contractions in the middle ear or nearby. This is uncommon and, if persistent, is worth having examined."],
-    ["Musical tinnitus", "Rarely, people hear tunes, melodies, or musical fragments, sometimes called musical ear syndrome, more often in those with significant hearing loss. It is generally not a sign of a psychiatric condition, though it can be distressing and is worth discussing."]
+    ["High-pitched ringing or whistling", "This is the most common type. People describe a constant or fluctuating high-pitched tone, a whistling or tea-kettle sound, or ringing that gets louder in quiet rooms. It is frequently associated with hearing loss from aging or noise exposure. When hearing loss is present, the brain receives less input in certain frequencies and may generate a phantom tone in those same regions, which is why hearing aids that restore missing sound often help."],
+    ["Buzzing, humming, and electrical sounds", "Some people hear no pure tone at all, but rather a constant low or mid-pitched hum, an electrical buzzing like a power line or fluorescent light, or an engine idling in the distance. This can occur with noise exposure, machinery or engine noise, or earwax and middle-ear issues. Because these sounds are broad and fuzzy, many patients benefit from sound enrichment such as soft fan noise, gentle rain, or ocean waves."],
+    ["Hissing, static, and white-noise tinnitus", "Another very common description is hissing, static, or a gentle air-leak sound, like a shower running in the next room. Hissing tinnitus is frequently linked with high-frequency hearing loss, and many patients first notice it at bedtime when the house is quiet, in quiet offices, or after long days of listening effort. This type tends to blend well with soft background sound, which makes sleep strategies and sound enrichment especially useful."],
+    ["Roaring and low-frequency tinnitus", "Less commonly, tinnitus sounds like a low-frequency roar, rushing, or ocean noise, sometimes described as a deep rumble, sea-shell sound, or low vibration and pressure. This pattern can be associated with fluctuating inner-ear conditions such as Meniere's or with middle-ear fluid and pressure. Because roaring tinnitus can sometimes signal a medical condition, it is important to have a [hearing evaluation](/hearing-testing/) and, when appropriate, an ENT consultation."],
+    ["Pulsatile and somatic tinnitus", "Pulsatile tinnitus is a rhythmic whooshing, thumping, or swooshing that matches your heartbeat and changes when you turn your head or lie down; it is often related to blood flow near the ear and should be evaluated, so see our focused [pulsatile tinnitus page](/tinnitus/pulsatile/). Somatic tinnitus changes when you move your body, especially the jaw, neck, or eyes, and is commonly tied to TMJ disorders, neck tension, or posture, often responding best to a combination of musculoskeletal care and sound therapy."],
+    ["Musical and tonal tinnitus", "Musical tinnitus, sometimes called musical ear syndrome, is a rarer form in which people perceive melodies, songs, or repeating tunes rather than simple noise. Tonal tinnitus may present as one or more distinct tones at different pitches, or several tones like a chord. Musical tinnitus is more common in older adults with significant hearing loss and often improves with a combination of hearing care and counseling."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Ménière's disease", "/tinnitus/menieres/"],
-    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Pulsatile tinnitus", "/tinnitus/pulsatile/"],
+    ["TMJ and jaw-related tinnitus", "/tinnitus/tmj/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "High-pitched ringing and hissing are the most common types and often link to hearing loss.",
-    "Pulsatile tinnitus that beats with your heartbeat should be evaluated by a physician.",
-    "The sound's quality is a helpful clue, not a diagnosis; describe it fully to your clinician."
+    "High-pitched ringing is the most common tinnitus sound and is often tied to hearing loss.",
+    "The quality of the sound, ringing, hissing, roaring, or pulsing, gives clues to the likely cause.",
+    "Pulsatile tinnitus that beats with your heart should always be evaluated promptly."
   ],
   faqs: [
-    ["Does the type of sound tell me what is causing my tinnitus?", "It offers clues but is not a diagnosis on its own. High-pitched ringing often relates to hearing loss, low roaring may point toward inner-ear conditions, and pulsatile tinnitus suggests a blood-flow-related cause worth medical evaluation."],
-    ["Is pulsatile tinnitus serious?", "It deserves attention. Because a heartbeat-synced sound can relate to blood flow near the ear, pulsatile tinnitus should be evaluated by a physician rather than treated as routine tinnitus, even though many cases turn out to be manageable."],
-    ["Why does my tinnitus sound change over time?", "The perceived pitch and character of tinnitus can shift with your hearing, stress, fatigue, and attention. A change in sound is common, but a distinctly new pattern, especially pulsatile or one-sided, is worth mentioning to a clinician."]
+    ["Does the type of sound tell you the cause?", "It offers clues. High-pitched ringing and hissing often accompany hearing loss, roaring can point to inner-ear or pressure changes, and pulsatile whooshing suggests a vascular source. We combine the sound description with a hearing test and history to narrow things down."],
+    ["I hear more than one kind of tinnitus, is that normal?", "Yes. Many people do not fit neatly into one category, hearing high-pitched ringing plus a low hum, or a steady tone with occasional pulsatile overlay. The sound can also change over time with stress, illness, or new medications."],
+    ["Which tinnitus sounds should be checked right away?", "Pulsatile tinnitus that beats with your heartbeat, and any new one-sided or roaring tinnitus, deserve prompt evaluation. See our guide on [when to see a doctor](/tinnitus/when-to-see-doctor/) for the full list of red flags."]
   ],
   image: "/assets/core/tinnitus__types-of-tinnitus-sounds.svg",
-  imageLabel: "Ringing, roaring, buzzing, and more"
+  imageLabel: "Ringing, buzzing, hissing, whooshing"
+},
+  "/tinnitus/what-is-tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "What Is Tinnitus? Understanding Ringing in the Ears",
+  intro: [
+    "Tinnitus, pronounced tin-NY-tus or TIN-ih-tus, is the perception of sound when no external sound is actually present. Most people describe it as ringing in the ears, but it can take many forms: buzzing, hissing, whistling, roaring, clicking, or even musical tones. In most cases only you can hear it, which is what makes tinnitus such a deeply personal experience.",
+    "Tinnitus is not a disease in itself. It is a symptom of an underlying condition affecting the auditory system, much like a check-engine light signaling that something needs attention, whether that is hearing loss, ear damage, a circulatory issue, or another health condition.",
+    "This page from our Bay Area audiologists explains what tinnitus is, its main types and causes, how it is diagnosed, and what relief looks like. If you are unsure whether what you hear counts as tinnitus, this is the right place to start, then explore the rest of our [tinnitus resources](/tinnitus/)."
+  ],
+  sections: [
+    ["The two main categories", "Clinicians classify tinnitus as subjective or objective. Subjective tinnitus, by far the most common, can only be heard by you and usually reflects auditory-system changes from noise exposure, aging, or inner-ear problems. Objective tinnitus is rare: a clinician can actually hear it with a stethoscope, and it is often caused by blood-vessel or muscle conditions, which sometimes makes it more treatable."],
+    ["Common symptoms beyond the sound", "Tinnitus rarely travels alone. Many people also notice difficulty concentrating, disrupted sleep, anxiety or low mood tied to the constant noise, trouble following conversations in noisy places, mental fatigue from coping with the sound, and heightened sensitivity to loud sounds (hyperacusis). Understanding your specific symptoms helps guide diagnosis and treatment."],
+    ["What causes tinnitus", "There are many possible causes. Frequent contributors include noise-induced hearing loss, age-related hearing decline (presbycusis), earwax blockage, ear infections, head or neck injury, and over 200 medications that can trigger or worsen ringing. It can also accompany conditions such as Meniere's disease, TMJ disorders, high blood pressure, thyroid problems, and diabetes."],
+    ["The hearing-loss connection", "The large majority of people with tinnitus also have some degree of hearing loss, even if they are unaware of it. When the ear delivers less input, the brain may turn up its internal gain and generate phantom sound to fill the gap. This is why a comprehensive [hearing evaluation](/hearing-testing/) is essential for anyone with tinnitus, and why treating hearing loss often reduces the ringing."],
+    ["How tinnitus is diagnosed", "Evaluation starts with a detailed history: when the tinnitus started, what it sounds like, what makes it better or worse, your medications, and your noise-exposure history. Your audiologist then examines your ears and performs pure-tone audiometry, speech testing, tympanometry, and often tinnitus pitch and loudness matching. Additional blood tests or imaging may be ordered when a specific concern, such as one-sided or pulsatile tinnitus, is present."],
+    ["Treatment and relief", "While there is no universal cure, tinnitus is highly manageable. Some causes can be resolved outright, such as earwax removal, treating an infection, or adjusting an ototoxic medication under medical supervision. For chronic tinnitus, effective options include hearing aids, sound therapy, Tinnitus Retraining Therapy, and cognitive behavioral strategies. Our [tinnitus therapy program](/services/tinnitus-therapy/) combines these tools into a personalized plan."],
+    ["Habituation: learning to tune it out", "Many people with chronic tinnitus experience habituation over time, a process in which the brain learns to classify the sound as unimportant background noise, the way you tune out a refrigerator hum or distant traffic. With the right treatment and coping strategies, most people reach a point where tinnitus no longer significantly disrupts daily life."]
+  ],
+  bulletLinks: [
+    ["Types of tinnitus sounds", "/tinnitus/types-of-tinnitus-sounds/"],
+    ["What causes tinnitus", "/tinnitus/causes/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Can tinnitus go away?", "/tinnitus/can-tinnitus-go-away/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Tinnitus is a symptom, not a disease, most often reflecting changes in the auditory system.",
+    "The majority of people with tinnitus also have some hearing loss, which is why a hearing test matters.",
+    "There is no universal cure, but tinnitus is highly manageable, and most people habituate over time."
+  ],
+  faqs: [
+    ["Is tinnitus a sign of something serious?", "Usually not. Most tinnitus reflects hearing loss or noise exposure. However, seek prompt evaluation if it comes on suddenly, is only in one ear, pulses in time with your heartbeat, or occurs with dizziness or sudden hearing loss. Our guide on [when to see a doctor](/tinnitus/when-to-see-doctor/) explains the red flags."],
+    ["Will my tinnitus ever go away?", "It depends on the cause. Tinnitus from a loud event or temporary blockage often fades within hours to weeks, while tinnitus tied to permanent inner-ear changes may persist. Even then, most people find it becomes far less noticeable and distressing with treatment and habituation."],
+    ["Can hearing aids help tinnitus?", "For many people, yes, especially when hearing loss is present. By restoring missing sound, hearing aids reduce the contrast between silence and the ringing and give the brain real input to focus on, which often makes tinnitus far less prominent."]
+  ],
+  image: "/assets/core/tinnitus__what-is-tinnitus.svg",
+  imageLabel: "Understanding the sound only you can hear"
 },
   "/tinnitus/what-to-expect/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "What to Expect at a Tinnitus Appointment",
+  headline: "What to Expect at Your Tinnitus Appointment",
   intro: [
-    "Booking a tinnitus appointment can feel uncertain when you do not know what will happen. The reassuring reality is that it is a calm, thorough, conversation-driven visit, not a procedure to fear. The aim is to understand your tinnitus, rule out anything that needs medical attention, and give you a clear plan instead of internet-fueled worry.",
-    "Every person's tinnitus is a little different, so the visit is tailored to you. Still, most tinnitus appointments at our San Mateo and San Carlos offices follow a similar arc, and knowing it in advance helps you prepare and get the most from your time.",
-    "For background before you come in, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) is a helpful starting point."
+    "Feeling nervous about your first tinnitus visit is completely normal. Many people worry, what if there is nothing they can do, or what if they don't believe me. This guide walks you through exactly what happens at a tinnitus appointment at California Hearing Center so you know what to expect before you arrive.",
+    "Our Bay Area clinics in San Mateo and San Carlos focus on listening to your story, running the right tests, and building a personalized plan, not just telling you to learn to live with it.",
+    "If you hear ringing, buzzing, or other sounds that others cannot hear and it has lasted more than a few days, it is a good idea to get evaluated. For background first, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["A detailed conversation first", "We begin by listening. Expect questions about when your tinnitus started, what it sounds like, whether it is in one ear or both, how it affects your sleep, focus, and mood, your noise exposure and health history, and any medications. This history often reveals the most important clues."],
-    ["A hearing evaluation", "Because tinnitus and hearing loss so often go together, a full [hearing test](/hearing-testing/) is usually part of the visit. It measures your hearing across pitches and compares your two ears, which helps identify contributors and rules out issues like earwax."],
-    ["Measuring the tinnitus itself", "In many cases we can characterize your tinnitus, estimating its pitch and loudness and how much sound it takes to cover it. These measures help us describe what you are experiencing and track it over time, and they make the invisible feel more concrete."],
-    ["Screening for red flags", "Part of the visit is checking for patterns that call for medical referral, such as sudden onset, one-sided symptoms, pulsatile tinnitus, dizziness, or accompanying hearing loss. If we find one, we will guide you to the right next step."],
-    ["Building your plan", "You leave with an explanation in plain language and a personalized plan, which may include sound therapy, hearing aids if appropriate, counseling strategies, sleep and stress support, and follow-up. See our [tinnitus therapy](/services/tinnitus-therapy/) page for the options we offer."]
+    ["Who should schedule a visit", "Getting evaluated is especially important if the sound is bothering your sleep, focus, or mood, if the tinnitus is in one ear only, if you have noticed changes in your hearing, if you have had significant noise exposure from concerts, loud work, or firearms, or if you feel anxious or overwhelmed by the sound. Sudden or one-sided tinnitus, or tinnitus with dizziness, deserves prompt attention."],
+    ["How to prepare", "A little preparation makes your appointment smoother. Make a symptom list noting when your tinnitus started, what it sounds like, whether it is constant or comes and goes, and what makes it better or worse. Gather medical information including a list of medications and supplements, major health conditions, and any recent illnesses, injuries, or noise exposure, since some medications and conditions can contribute to tinnitus. And think about your goals, whether that is sleeping better, hearing conversations more clearly, or reducing anxiety."],
+    ["Check-in and first conversation", "When you arrive, you will check in, complete any remaining forms, and meet your audiologist. We start by talking, no tests yet. Your audiologist asks when and how your tinnitus started, what the sound is like and which ears are affected, how it affects your sleep, concentration, and mood, your noise exposure history, and your medical history including jaw, neck, dizziness, or balance issues. We then gently examine your ears for earwax, signs of infection or fluid, and clues pointing toward conditions like Meniere's."],
+    ["Hearing and tinnitus testing", "Next we perform a set of painless, non-invasive tests in a sound-treated room. A comprehensive [hearing test](/hearing-testing/) has you listen for tones and words at different pitches and volumes to show whether you have hearing loss and how it lines up with your tinnitus. Middle-ear tests like tympanometry check how your eardrum moves and help rule out certain middle-ear causes. Tinnitus pitch and loudness matching, where we play tones and ask which most closely match your tinnitus, helps us characterize it and tailor sound therapy, hearing aid programming, or TRT."],
+    ["Reviewing results and building your plan", "After testing, your audiologist explains whether you have hearing loss and how it relates to your tinnitus, which type of tinnitus you likely have, whether other medical evaluations are recommended, and how severe your tinnitus appears. We then talk through options matched to your goals, lifestyle, and budget. These may include hearing aids for tinnitus, [sound therapy](/tinnitus/sound-therapy/), CBT and counseling, Tinnitus Retraining Therapy, advanced options like Lenire for select candidates, and lifestyle and home strategies."],
+    ["After the appointment", "Tinnitus care is a process, not a one-time event. Your plan may include follow-up visits to fine-tune hearing aid or sound therapy settings, check-ins to track progress with CBT, TRT, or anxiety management, adjustments based on what you notice, and referrals to other providers like ENT, a TMJ specialist, or a mental-health professional when appropriate. With the right tools and time, many people experience habituation, where the brain gradually learns to tune out the sound. Your first appointment is the starting line, not the finish."]
   ],
   bulletLinks: [
-    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Book at San Mateo", "/contact/san-mateo/"],
-    ["Book at San Carlos", "/contact/san-carlos/"],
-    ["Contact our team", "/contact/"]
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
-    "A tinnitus appointment is a calm, conversation-driven visit, not a procedure.",
-    "Expect a detailed history, a hearing test, tinnitus measurement, and red-flag screening.",
-    "You leave with a plain-language explanation and a personalized management plan."
+    "A full tinnitus evaluation combines your history, an ear exam, and painless hearing and tinnitus testing.",
+    "The goal is a personalized plan matched to your goals, not a generic tell you to live with it response.",
+    "Tinnitus care continues with follow-ups, fine-tuning, and referrals as needed over time."
   ],
   faqs: [
-    ["What should I bring to a tinnitus appointment?", "Bring a list of your medications, any relevant medical or hearing history, and notes on when your tinnitus started, what it sounds like, and how it affects your daily life. The more detail you can share, the more useful the visit."],
-    ["Will I get a hearing test at a tinnitus appointment?", "Usually yes. Because tinnitus and hearing loss are closely linked, a hearing evaluation is typically part of the visit. It helps identify contributors and rules out simple causes like earwax."],
-    ["How do I schedule a tinnitus evaluation?", "Call 650-342-9449 to book at our San Mateo or San Carlos office. Let us know it is a tinnitus concern so we can plan enough time for a thorough history, testing, and a discussion of your options."]
+    ["How long does a tinnitus appointment take?", "Plan for about 60 to 90 minutes for a full evaluation, including history, hearing tests, tinnitus measurements, and time to review results and next steps. Appointments may run a bit longer if we are also fitting or adjusting hearing aids."],
+    ["Do I need to change my routine before the appointment?", "You do not need to drastically change your routine, but it helps to notice how caffeine or alcohol affect your tinnitus in daily life so you can share that with us."],
+    ["Will I get treatment on the first visit?", "In many cases we can start parts of your plan right away, such as beginning sound therapy, discussing sleep strategies, or starting a hearing aid trial. More complex cases may involve coordinating with other specialists or scheduling follow-ups."],
+    ["What if I feel anxious about the appointment?", "It is completely understandable. We take time to answer your questions and move at your pace. Many patients find it helpful to bring a written list of concerns, and you can reach our team at 650-342-9449."]
   ],
   image: "/assets/core/tinnitus__what-to-expect.svg",
   imageLabel: "Your first tinnitus visit, step by step"
+},
+  "/tinnitus/when-to-see-doctor/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "When to See a Doctor About Tinnitus",
+  intro: [
+    "Tinnitus, ringing, buzzing, whooshing, or humming in the ears, is very common. For many people it is a minor, temporary nuisance. For others, it can be an early warning sign of a more serious medical or hearing issue that needs prompt attention.",
+    "The challenge is knowing which category you fall into. It helps to understand the difference between emergencies (go to the ER right away), urgent situations (call your doctor or ENT within 24 to 72 hours), and non-urgent tinnitus (schedule an appointment with an audiologist).",
+    "This page from our Bay Area audiologists explains when tinnitus is serious, who to see first, and how our San Mateo and San Carlos clinics evaluate it. If you are unsure whether what you are hearing counts as tinnitus, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["When it is an emergency", "Call 911 or go to the ER immediately if you have sudden hearing loss in one or both ears with a plugged or different-sounding feeling, tinnitus plus severe dizziness, trouble walking, or balance problems, facial weakness, slurred speech, or confusion, a recent head injury followed by intense pain and ringing, or a sudden severe headache with tinnitus or hearing changes. These can be associated with sudden sensorineural hearing loss, stroke, or serious inner-ear disorders. If you are actively experiencing any of these, treat it as an emergency."],
+    ["Urgent: call your doctor promptly", "Some situations should not be ignored even if they are not ER-level, call your doctor, ENT, or audiologist within a few days. These include tinnitus clearly in one ear (unilateral), which can relate to asymmetrical hearing loss or, rarely, growths on the hearing nerve; [pulsatile tinnitus](/tinnitus/pulsatile/) that matches your heartbeat, which can indicate a blood-flow issue; tinnitus after a loud event that does not fade within a day or two; tinnitus that is getting louder over time; and tinnitus with ear fullness or pain, which often points to treatable wax, fluid, or infection."],
+    ["When to see an audiologist first", "In many non-emergency cases, an audiologist is the best starting point. Book an audiology appointment if tinnitus has lasted more than a week and is not fading, you notice difficulty hearing conversations, TV, or high-pitched sounds, you have had long-term noise exposure, you already wear hearing aids and your tinnitus seems different or louder, or you are simply not sure whether to see an ENT, primary-care doctor, or audiologist first. Our clinicians can manage many cases directly and coordinate with ENTs when needed."],
+    ["Audiologist vs ENT vs primary care", "A simple way to think about it: an audiologist is best for tinnitus with possible hearing loss, noise exposure, age-related changes, or long-term symptoms, and we assess hearing, measure tinnitus, and design [management plans](/services/tinnitus-therapy/). An ENT is best for red-flag features like one-sided or pulsatile tinnitus, ear pain, drainage, or repeated infections. Your primary-care doctor is best if you suspect medication side effects, blood pressure issues, or systemic health concerns, and can review medications, order labs, and coordinate referrals."],
+    ["What happens if you wait too long", "Many people try to wait out tinnitus. Sometimes it does fade, especially with short-term noise exposure or temporary ear conditions. But waiting too long can mean a missed window to treat sudden hearing loss more effectively, ongoing sleep disruption and rising stress, strain on work and relationships, and increased awareness as the brain learns to focus on the sound. A [hearing evaluation](/hearing-testing/) and tinnitus consult are low-risk, high-value steps that either rule out serious issues or give you a clear plan."],
+    ["How our clinic evaluates tinnitus", "When you schedule a tinnitus evaluation at California Hearing Center, we work to answer three questions: is anything medically urgent, what is the most likely cause, and which management options fit you best. Your visit typically includes a detailed history of your tinnitus, health, medications, and noise exposure, otoscopy to check for wax or infection, a comprehensive hearing test to look for changes or asymmetry, and tinnitus pitch and loudness matching when appropriate. To book, call us at 650-342-9449."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Sudden tinnitus: ER or not?", "/tinnitus/sudden-onset/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["Pulsatile tinnitus", "/tinnitus/pulsatile/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Sudden hearing loss, severe dizziness, facial weakness, slurred speech, or a severe headache with tinnitus is an ER emergency.",
+    "One-sided or pulsatile tinnitus, or ringing that keeps worsening, warrants a prompt doctor or ENT visit.",
+    "For most ongoing tinnitus, an audiologist is the best starting point, and waiting too long has real downsides."
+  ],
+  faqs: [
+    ["When is tinnitus a medical emergency?", "Treat it as an emergency and call 911 or go to the ER if tinnitus comes with sudden hearing loss, severe dizziness or trouble walking, facial weakness, slurred speech, confusion, or a sudden severe headache. These can signal stroke or serious inner-ear conditions."],
+    ["Should I see an audiologist or an ENT for tinnitus?", "An audiologist is the best starting point for most tinnitus, especially with possible hearing loss or noise exposure. An ENT is better for red flags like one-sided or pulsatile tinnitus, ear pain, or drainage. We often work together and can refer when needed."],
+    ["How long should I wait before getting tinnitus checked?", "If tinnitus lasts more than a week, is getting louder, or affects your sleep or mood, schedule an evaluation, you do not have to wait for it to feel bad enough. Any red-flag symptom means you should be seen sooner. Call 650-342-9449."]
+  ],
+  image: "/assets/core/tinnitus__when-to-see-doctor.svg",
+  imageLabel: "Emergency, urgent, or routine?"
 },
   "/tinnitus/why-choose-us/": {
   kicker: "Tinnitus & Sound Sensitivity",

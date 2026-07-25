@@ -1,0 +1,38 @@
+"/tinnitus/what-is-tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "What Is Tinnitus? Understanding Ringing in the Ears",
+  intro: [
+    "Tinnitus, pronounced tin-NY-tus or TIN-ih-tus, is the perception of sound when no external sound is actually present. Most people describe it as ringing in the ears, but it can take many forms: buzzing, hissing, whistling, roaring, clicking, or even musical tones. In most cases only you can hear it, which is what makes tinnitus such a deeply personal experience.",
+    "Tinnitus is not a disease in itself. It is a symptom of an underlying condition affecting the auditory system, much like a check-engine light signaling that something needs attention, whether that is hearing loss, ear damage, a circulatory issue, or another health condition.",
+    "This page from our Bay Area audiologists explains what tinnitus is, its main types and causes, how it is diagnosed, and what relief looks like. If you are unsure whether what you hear counts as tinnitus, this is the right place to start, then explore the rest of our [tinnitus resources](/tinnitus/)."
+  ],
+  sections: [
+    ["The two main categories", "Clinicians classify tinnitus as subjective or objective. Subjective tinnitus, by far the most common, can only be heard by you and usually reflects auditory-system changes from noise exposure, aging, or inner-ear problems. Objective tinnitus is rare: a clinician can actually hear it with a stethoscope, and it is often caused by blood-vessel or muscle conditions, which sometimes makes it more treatable."],
+    ["Common symptoms beyond the sound", "Tinnitus rarely travels alone. Many people also notice difficulty concentrating, disrupted sleep, anxiety or low mood tied to the constant noise, trouble following conversations in noisy places, mental fatigue from coping with the sound, and heightened sensitivity to loud sounds (hyperacusis). Understanding your specific symptoms helps guide diagnosis and treatment."],
+    ["What causes tinnitus", "There are many possible causes. Frequent contributors include noise-induced hearing loss, age-related hearing decline (presbycusis), earwax blockage, ear infections, head or neck injury, and over 200 medications that can trigger or worsen ringing. It can also accompany conditions such as Meniere's disease, TMJ disorders, high blood pressure, thyroid problems, and diabetes."],
+    ["The hearing-loss connection", "The large majority of people with tinnitus also have some degree of hearing loss, even if they are unaware of it. When the ear delivers less input, the brain may turn up its internal gain and generate phantom sound to fill the gap. This is why a comprehensive [hearing evaluation](/hearing-testing/) is essential for anyone with tinnitus, and why treating hearing loss often reduces the ringing."],
+    ["How tinnitus is diagnosed", "Evaluation starts with a detailed history: when the tinnitus started, what it sounds like, what makes it better or worse, your medications, and your noise-exposure history. Your audiologist then examines your ears and performs pure-tone audiometry, speech testing, tympanometry, and often tinnitus pitch and loudness matching. Additional blood tests or imaging may be ordered when a specific concern, such as one-sided or pulsatile tinnitus, is present."],
+    ["Treatment and relief", "While there is no universal cure, tinnitus is highly manageable. Some causes can be resolved outright, such as earwax removal, treating an infection, or adjusting an ototoxic medication under medical supervision. For chronic tinnitus, effective options include hearing aids, sound therapy, Tinnitus Retraining Therapy, and cognitive behavioral strategies. Our [tinnitus therapy program](/services/tinnitus-therapy/) combines these tools into a personalized plan."],
+    ["Habituation: learning to tune it out", "Many people with chronic tinnitus experience habituation over time, a process in which the brain learns to classify the sound as unimportant background noise, the way you tune out a refrigerator hum or distant traffic. With the right treatment and coping strategies, most people reach a point where tinnitus no longer significantly disrupts daily life."]
+  ],
+  bulletLinks: [
+    ["Types of tinnitus sounds", "/tinnitus/types-of-tinnitus-sounds/"],
+    ["What causes tinnitus", "/tinnitus/causes/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Can tinnitus go away?", "/tinnitus/can-tinnitus-go-away/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Tinnitus is a symptom, not a disease, most often reflecting changes in the auditory system.",
+    "The majority of people with tinnitus also have some hearing loss, which is why a hearing test matters.",
+    "There is no universal cure, but tinnitus is highly manageable, and most people habituate over time."
+  ],
+  faqs: [
+    ["Is tinnitus a sign of something serious?", "Usually not. Most tinnitus reflects hearing loss or noise exposure. However, seek prompt evaluation if it comes on suddenly, is only in one ear, pulses in time with your heartbeat, or occurs with dizziness or sudden hearing loss. Our guide on [when to see a doctor](/tinnitus/when-to-see-doctor/) explains the red flags."],
+    ["Will my tinnitus ever go away?", "It depends on the cause. Tinnitus from a loud event or temporary blockage often fades within hours to weeks, while tinnitus tied to permanent inner-ear changes may persist. Even then, most people find it becomes far less noticeable and distressing with treatment and habituation."],
+    ["Can hearing aids help tinnitus?", "For many people, yes, especially when hearing loss is present. By restoring missing sound, hearing aids reduce the contrast between silence and the ringing and give the brain real input to focus on, which often makes tinnitus far less prominent."]
+  ],
+  image: "/assets/core/tinnitus__what-is-tinnitus.svg",
+  imageLabel: "Understanding the sound only you can hear"
+},

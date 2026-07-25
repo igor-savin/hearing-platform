@@ -1,35 +1,37 @@
 "/tinnitus/earwax/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Earwax and Tinnitus: A Reversible Cause",
+  headline: "Can Earwax Cause Tinnitus? A Treatable Cause Worth Checking",
   intro: [
-    "Not all tinnitus is permanent, and earwax is one of the most satisfying causes to find, because it can often be fixed. When wax builds up and blocks the ear canal, it can muffle hearing and, for some people, bring on or worsen ringing, buzzing, or a sense of fullness. Clear the blockage and the tinnitus may ease or disappear.",
-    "Earwax, or cerumen, is normal and healthy in the right amount. It protects and cleans the ear canal and usually migrates out on its own. Problems start when it accumulates faster than it clears, or when attempts to remove it push it deeper.",
-    "This page explains how earwax and tinnitus connect and how to address it safely. Our [earwax removal service](/services/earwax-removal/) is available at both Peninsula offices."
+    "If your ears feel clogged and you hear ringing, buzzing, or whooshing, you might wonder whether it is just earwax or something more serious. The answer is that yes, earwax can cause tinnitus, but it is not the only possible reason for those sounds.",
+    "On this page, our Bay Area audiologists explain how earwax buildup can trigger tinnitus, what symptoms suggest a simple blockage, when it may point to a more complex issue, and why safe ear cleaning matters for protecting your hearing.",
+    "Earwax-related tinnitus is often temporary and improves once the blockage is safely removed. For a broader overview, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["How a blockage can cause tinnitus", "A canal packed with wax dampens the outside sounds that normally keep the auditory system busy. Much as tinnitus often accompanies hearing loss, this reduced input can let internal sound become more noticeable. A blockage may also press on the canal or eardrum, which some people perceive as ringing or fullness."],
-    ["Signs wax may be the culprit", "Suspect earwax when tinnitus arrives alongside a plugged or muffled feeling, mild hearing loss on one side, itchiness, or the sense that your own voice sounds different. These clues do not confirm it, but they make professional examination worthwhile."],
-    ["Why cotton swabs make it worse", "Cotton swabs, ear candles, and other DIY tools tend to pack wax deeper against the eardrum rather than remove it, which can worsen both the blockage and the tinnitus, and occasionally injure the canal or eardrum. It is best to leave removal to a professional."],
-    ["Professional removal", "An audiologist can look directly into the canal and remove wax safely using appropriate methods, then confirm the ear is clear. If tinnitus persists after the wax is gone, a full [hearing evaluation](/hearing-testing/) helps identify what else may be contributing."],
-    ["When it is not just wax", "If your ears are clear and tinnitus continues, or if it started suddenly, affects one ear only, or pulses with your heartbeat, wax is not the whole story and further evaluation is warranted."]
+    ["What earwax does and why you need it", "Earwax, or cerumen, is not dirt; it is your ear's natural cleaning and protection system. It traps dust and debris before they reach the eardrum, helps protect against bacteria and irritation, and keeps the delicate skin of the canal from drying out. In most people wax slowly moves outward on its own. Problems begin only when wax becomes impacted or pushed deep into the canal, often from aggressive cleaning or naturally narrow canals."],
+    ["How buildup can cause tinnitus", "Earwax can contribute to tinnitus in a few ways. A physical blockage changes how sound and vibration reach the eardrum. When sound is blocked, the brain receives less input and may turn up its internal volume, producing ringing, buzzing, or roaring. And wax pressed against the eardrum can create a sensation of pressure or fullness that may come with echoing or a hollow sound. This kind of tinnitus often improves significantly once the wax is cleared."],
+    ["Signs your tinnitus might be earwax-related", "Only an in-person exam can confirm the cause, but some clues point toward wax: clogged or muffled hearing in one ear, especially if tinnitus is stronger on that side; a feeling of fullness or water in the ear; tinnitus that began or worsened after frequent cotton-swab, earbud, or earplug use; hearing your own voice as unusually loud or echoing; and occasional sharp discomfort when chewing, yawning, or inserting earbuds. If both ears feel plugged, tinnitus may simply be more noticeable because everything else sounds quieter."],
+    ["When it is probably not just earwax", "Even if you have wax, it might not be the whole story. Seek prompt or urgent care if you also have sudden tinnitus with noticeable hearing loss in one ear, tinnitus plus spinning vertigo or severe imbalance, tinnitus that sounds like a heartbeat or whooshing in time with your pulse, significant ear pain, drainage, or fever, or tinnitus following a head or neck injury. These patterns can point to conditions like sudden hearing loss, Meniere's disease, pulsatile tinnitus, or infection."],
+    ["Earwax don'ts and safe removal", "Aggressive home cleaning is one of the most common ways wax gets pushed deeper. Do not insert cotton swabs, hairpins, or other objects; do not attempt ear candling, which has no proven benefit and carries burn risk; and do not use high-pressure irrigation without medical guidance. At California Hearing Center we focus on safe, gentle removal tailored to your ears, sometimes softening wax with drops first when appropriate, always protecting the eardrum. A [hearing test](/hearing-testing/) during the same visit can screen for other causes."],
+    ["If tinnitus stays after wax is removed", "Many patients hope tinnitus will vanish the moment wax is cleared. Sometimes it does, but not always. Earwax and hearing loss can coexist, so removing wax may reveal underlying hearing changes that were already there. The brain may stay on high alert after a period of blockage, keeping tinnitus pathways active. And other factors like noise exposure, stress, medications, or TMJ may be contributing. If tinnitus persists, a fuller workup helps identify patterns and options."]
   ],
   bulletLinks: [
-    ["Earwax removal service", "/services/earwax-removal/"],
-    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["Can tinnitus go away", "/tinnitus/can-tinnitus-go-away/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Contact our team", "/contact/"]
+    ["What to expect at your visit", "/tinnitus/what-to-expect/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
-    "Earwax buildup is a common and often reversible contributor to tinnitus.",
-    "Cotton swabs and ear candles tend to worsen blockages; professional removal is safer.",
-    "If tinnitus persists after the ears are clear, a full hearing evaluation is the next step."
+    "Impacted earwax can cause tinnitus, and this type often improves once the blockage is safely removed.",
+    "Never dig at wax with swabs or attempt ear candling, which can push wax deeper and worsen symptoms.",
+    "Sudden, one-sided, pulsatile, or pain-related tinnitus warrants prompt medical evaluation, not just wax removal."
   ],
   faqs: [
-    ["Can earwax really cause tinnitus?", "Yes. A wax blockage can muffle outside sound and create pressure in the canal, both of which can bring on or intensify ringing and fullness for some people. Removing the blockage sometimes resolves the tinnitus entirely."],
-    ["Should I try to remove the wax myself?", "It is best not to dig at it with cotton swabs or ear candles, which often push wax deeper and can injure the ear. If home softening drops do not help, have it removed professionally so the canal can be checked at the same time."],
-    ["Will my tinnitus go away after wax removal?", "It may, if wax was the cause. When tinnitus continues after the ear is confirmed clear, other factors such as hearing loss are likely involved, and a hearing evaluation helps pinpoint them."]
+    ["Will removing earwax get rid of my tinnitus?", "Sometimes it does, especially when a blockage is the main cause. But earwax and hearing loss can coexist, and the brain may stay on high alert, so tinnitus does not always disappear the moment wax is cleared."],
+    ["Is it safe to remove earwax at home?", "Gentle over-the-counter softening drops can help some people, but avoid cotton swabs, ear candling, and high-pressure irrigation. When in doubt, let a professional evaluate your ears, especially if you have had ear surgery, tubes, or eardrum issues."],
+    ["Why do my ears build up so much wax?", "Some people are simply more prone to it, including those who use earbuds or earplugs for many hours, have naturally narrow or curved canals, or have tried to clean their ears with swabs, which often pushes wax deeper."],
+    ["When should earwax with tinnitus be treated urgently?", "Seek prompt care if tinnitus comes with sudden hearing loss, severe dizziness, a pulsing whooshing sound, significant pain, drainage, or fever, or follows a head injury."]
   ],
   image: "/assets/core/tinnitus__earwax.svg",
   imageLabel: "A treatable cause of tinnitus"

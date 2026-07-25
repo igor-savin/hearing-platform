@@ -1,36 +1,37 @@
 "/tinnitus/menieres/": {
   kicker: "Tinnitus & Sound Sensitivity",
-  headline: "Ménière's Disease and Tinnitus",
+  headline: "Meniere's Disease and Tinnitus",
   intro: [
-    "Ménière's disease is a disorder of the inner ear that can make tinnitus part of a larger, more disruptive picture. Unlike tinnitus that stays fairly steady, the tinnitus of Ménière's often fluctuates and travels alongside episodes of vertigo, changing hearing, and a feeling of fullness in the affected ear.",
-    "Ménière's is a medical condition that requires diagnosis and management by a physician, typically an ear, nose, and throat specialist. Audiology plays an important supporting role, but this page is educational and not a substitute for medical evaluation.",
-    "If you are learning the basics, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) offers helpful context for how tinnitus relates to inner-ear health."
+    "Meniere's disease often brings a difficult combination of symptoms: spinning vertigo, fluctuating hearing loss, ear fullness, and loud, intrusive tinnitus. If you have heard this diagnosis, or suspect it, it is normal to feel overwhelmed.",
+    "Meniere's is a chronic inner-ear condition that typically affects one ear at first. It is thought to involve an abnormal fluid balance in the inner ear (endolymphatic hydrops), which affects both the hearing and balance structures, though the exact cause is not always clear and may differ from person to person.",
+    "On this page our Bay Area audiologists explain how Meniere's relates to tinnitus, its symptoms and diagnosis, and how we help patients in San Mateo, San Carlos, and across the Peninsula manage ringing alongside balance and hearing changes. For a general overview, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
-    ["The classic pattern", "Ménière's is usually described by a cluster of symptoms: episodes of spinning vertigo, fluctuating hearing loss, tinnitus, and a sensation of pressure or fullness in one ear. Symptoms tend to come in attacks that can last from minutes to hours, often with symptom-free stretches in between."],
-    ["How its tinnitus differs", "The tinnitus of Ménière's is frequently low-pitched, described as a roaring, rumbling, or ocean-like sound, and it may intensify before or during an attack. It commonly affects one ear, at least in the early stages."],
-    ["Why medical diagnosis matters", "Several conditions can imitate Ménière's, so a proper diagnosis is essential. An ENT can evaluate your history and examination, and a [hearing evaluation](/hearing-testing/) documenting fluctuating, often low-frequency hearing loss is an important piece of that workup."],
-    ["Management approaches", "Care is directed by your physician and may include dietary changes such as reducing salt, addressing triggers, medications, and other measures. Because Ménière's often involves hearing loss and bothersome tinnitus, audiology support with hearing aids and sound therapy can be valuable alongside medical treatment."],
-    ["When to seek prompt care", "Sudden severe vertigo, sudden hearing loss, or new one-sided symptoms should be evaluated promptly. Any new neurological symptoms, such as weakness, double vision, or trouble speaking, are an emergency and warrant immediate medical attention."]
+    ["The four classic symptoms", "Meniere's is usually recognized by a pattern: recurrent episodes of spinning vertigo (which may include nausea and vomiting), fluctuating hearing loss that is usually worse in the lower frequencies, a feeling of fullness or pressure in the ear, and tinnitus that is often a loud roaring, rushing, or ringing. Episodes, sometimes called attacks, can last from about 20 minutes to several hours, followed by periods of relative calm."],
+    ["How Meniere's causes tinnitus", "In Meniere's, tinnitus usually results from three things working together. Pressure and fluid imbalance can alter how the inner ear sends sound signals. As hearing shifts, the brain may fill in missing sound information with ringing, roaring, or buzzing. And heightened nervous-system sensitivity from the stress and uncertainty of vertigo attacks can make the tinnitus more noticeable and distressing."],
+    ["What the tinnitus feels like", "Patients often describe Meniere's-related tinnitus as intermittent but intense, with a low-pitched roaring or rushing quality, often louder in the ear that has hearing loss and fullness, and frequently stronger during or just before a vertigo attack. Because it usually starts on one side, understanding one-sided versus two-sided patterns can help; see our page on [tinnitus in one ear](/tinnitus/one-ear/)."],
+    ["How Meniere's is diagnosed", "There isn't a single Meniere's test, so diagnosis is typically made by an ENT or neurotologist using a combination of findings, with critical input from detailed hearing tests. Providers review your symptom history (a symptom journal helps), perform a comprehensive [hearing evaluation](/hearing-testing/) looking for fluctuating low-frequency hearing loss in one ear, may order balance and vestibular testing, and sometimes use MRI or blood work to rule out other conditions."],
+    ["Treatment and tinnitus management", "Meniere's is usually managed rather than cured, with a plan tailored to you. Medical management, guided by your ENT, may include dietary adjustments (often lower sodium), fluid management, and medications to reduce vertigo or nausea. On the hearing side, hearing aids, sound therapy, and Tinnitus Retraining Therapy can soften the contrast with tinnitus, while stress management, good sleep, and hearing protection round out the plan. See our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["Living with fluctuating symptoms", "One of the hardest parts of Meniere's is its unpredictability: some days feel stable, others bring sudden vertigo, fullness, and louder tinnitus. Patients often find it helpful to keep a symptom journal, build a nighttime tinnitus toolkit of sound apps and relaxation techniques, plan ahead with their providers for flare-ups, and seek support from others who understand inner-ear conditions. Many people reach a point where, with the right support, tinnitus fades into the background."]
   ],
   bulletLinks: [
     ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
-    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["Types of tinnitus sounds", "/tinnitus/types-of-tinnitus-sounds/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
     ["Start with a hearing test", "/hearing-testing/"],
-    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
-    ["Diet and lifestyle", "/tinnitus/diet-lifestyle/"],
-    ["Contact our team", "/contact/"]
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
   takeaways: [
-    "Ménière's pairs tinnitus with vertigo, fluctuating hearing loss, and ear fullness, usually in one ear.",
-    "Its tinnitus is often low-pitched and roaring, and may flare with attacks.",
-    "Diagnosis and management belong with a physician; audiology supports hearing and tinnitus care."
+    "Meniere's is a chronic inner-ear condition marked by vertigo, fluctuating hearing loss, ear fullness, and roaring tinnitus.",
+    "Its tinnitus is often low-pitched, one-sided, and stronger around vertigo attacks.",
+    "It is managed rather than cured, with ENT-led medical care plus audiology support for hearing and sound therapy."
   ],
   faqs: [
-    ["How is Ménière's tinnitus different from ordinary tinnitus?", "It tends to be low-pitched and roaring rather than a high ring, often affects one ear, and typically comes bundled with vertigo, fluctuating hearing, and ear fullness. It may also worsen around an attack, then settle."],
-    ["Can Ménière's disease be cured?", "There is no cure, but many people manage it well. Physician-directed strategies, sometimes including dietary changes, medications, and other measures, can reduce the frequency and severity of attacks, and audiology support can help with hearing and tinnitus."],
-    ["Should I see a doctor if I think I have Ménière's?", "Yes. Because other conditions can mimic it and because prompt care matters for symptoms like sudden hearing loss or severe vertigo, an ENT evaluation is important. A hearing test is a valuable part of that assessment."]
+    ["Why is Meniere's tinnitus so loud and roaring?", "Fluid pressure changes in the inner ear alter how sound is transmitted, and the accompanying low-frequency hearing loss prompts the brain to fill in with roaring or rushing sound. It often intensifies just before or during a vertigo attack."],
+    ["Can anything reduce Meniere's-related tinnitus?", "Yes. Medical management of the disease (often lower-sodium diet and vertigo medications through your ENT) may reduce episodes, while hearing aids, sound therapy, and habituation strategies help make the tinnitus less intrusive day to day."],
+    ["When should Meniere's symptoms be treated as urgent?", "Seek urgent care for sudden hearing loss with loud new tinnitus, severe new vertigo with neurological symptoms like weakness or facial drooping, persistent vomiting, or any dramatic change from your usual pattern. Our [when-to-see-a-doctor guide](/tinnitus/when-to-see-doctor/) has more detail."]
   ],
   image: "/assets/core/tinnitus__menieres.svg",
-  imageLabel: "Inner-ear disease and tinnitus"
+  imageLabel: "Vertigo, hearing loss, and roaring tinnitus"
 },
