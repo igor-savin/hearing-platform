@@ -2,28 +2,29 @@
   kicker: "Assistive Listening Technology",
   headline: "CaptionCall Captioned Phones for the Hard of Hearing",
   intro: [
-    "CaptionCall is a captioned telephone designed for people with hearing loss. Like other captioned phones, it works as an ordinary phone while adding a large screen that displays written captions of what the person on the other end is saying.",
-    "Reading along as you listen takes much of the strain out of phone calls. Instead of straining to catch every word or asking callers to repeat themselves, you can follow the conversation with the captions as a backup.",
-    "As part of your broader hearing care, California Hearing Center can help you understand how a captioned phone works alongside hearing aids and other tools to keep you connected."
+    "CaptionCall is a captioned telephone designed for people with hearing loss, not a hearing aid. It works like an ordinary phone while adding a large, easy-to-read screen that displays written captions of what the person on the other end is saying, in near real time.",
+    "Reading along as you listen takes much of the strain out of phone calls. Instead of straining to catch every word or asking callers to repeat themselves, you can follow the conversation with the captions as a dependable backup, which makes long or important calls far less stressful.",
+    "As part of your broader hearing care, California Hearing Center can help you understand how a captioned phone works alongside hearing aids and other tools, and we can help determine whether you qualify for the service and assist with getting set up."
   ],
   sections: [
-    ["Captions on a familiar phone", "CaptionCall pairs a normal calling experience with real-time captions on a built-in display. You speak as usual and read the captions of the caller's words, which is especially helpful on long or important calls."],
-    ["A good fit for many older adults", "Phone calls with family, physicians, pharmacies, and services matter a great deal, and they are often where hearing loss is most frustrating. Captioned phones like CaptionCall are frequently a welcome help for older adults who want to stay independent by phone."],
-    ["Frequently available at no cost to those who qualify", "Captioned telephones are commonly provided at no cost to individuals with hearing loss who qualify, generally through a certification process that documents the need. Requirements and paperwork can change, so ask about the current steps when you are ready."],
-    ["Works with, not instead of, hearing aids", "A captioned phone helps with one situation. [Hearing aids](/products/hearing-aids-by-brand/) help across conversations, television, restaurants, and more. Many people use both, and we can help you understand the right combination."],
-    ["A sensible first step", "If the phone has become a source of stress, start with a [hearing evaluation](/hearing-testing/). Understanding your hearing helps us recommend the right blend of devices and communication strategies."]
+    ["Captions on a familiar phone", "CaptionCall pairs a normal calling experience with real-time captions on a bright, built-in display. You speak as usual and read the captions of the caller's words, and the text size can be adjusted so it is comfortable to read. It is especially helpful on the calls that matter most, from family check-ins to appointments."],
+    ["How the captions are produced", "CaptionCall combines advanced voice recognition with human captioning support to transcribe the caller's speech quickly and accurately. Captions appear as the other person speaks, and many models let you save conversations so you can look back at details you might otherwise forget."],
+    ["Works with your existing phone service", "You keep your own telephone number, and the phone is designed to work with familiar features like call waiting, call forwarding, and caller ID. It also offers powerful amplification and speakerphone use, and a mobile app option makes captioned calls available on a smartphone as well."],
+    ["A good fit for many older adults", "Phone calls with family, physicians, pharmacies, and services matter a great deal, and they are often where hearing loss is most frustrating. Captioned phones like CaptionCall are frequently a welcome help for older adults who want to stay independent and confident by phone."],
+    ["Frequently available at no cost to those who qualify", "Captioned telephones are commonly provided at no cost to individuals with hearing loss who qualify, generally through a certification process that documents the need. Requirements and paperwork can change, so ask about the current steps when you are ready, and we can guide you through them."],
+    ["Works with, not instead of, hearing aids", "A captioned phone helps with one situation. [Hearing aids](/products/hearing-aids-by-brand/) help across conversations, television, restaurants, and more. Many people use both, and starting with a [hearing evaluation](/hearing-testing/) helps us recommend the right combination for you."]
   ],
   bulletLinks: [
     ["Schedule a hearing test", "/hearing-testing/"],
     ["Learn about hearing aids", "/products/hearing-aids-by-brand/"],
+    ["Compare CapTel captioned phones", "/products/hearing-aids-by-brand/captel/"],
     ["Browse our services", "/services/"],
     ["About California Hearing Center", "/about-us/"],
-    ["Contact us", "/contact/"],
-    ["San Mateo office", "/contact/san-mateo/"]
+    ["Contact us", "/contact/"]
   ],
   takeaways: [
-    "CaptionCall is a captioned telephone that displays written captions of the caller's speech.",
-    "It is assistive technology for phone calls, not a hearing aid.",
+    "CaptionCall is a captioned telephone that displays written captions of the caller's speech in near real time.",
+    "It works with your existing phone number and features, offers amplification and a mobile app, and is assistive technology for phone calls, not a hearing aid.",
     "Captioned phones are often available at no cost to qualifying individuals through a certification process."
   ],
   faqs: [

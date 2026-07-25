@@ -2,15 +2,16 @@
   kicker: "Hearing Aid Brands",
   headline: "Starkey Hearing Aids on the Peninsula",
   intro: [
-    "Starkey is a major American hearing aid manufacturer that has leaned hard into artificial intelligence and health-tracking features. Alongside conventional amplification, several Starkey devices incorporate sensors and app features that can track activity, and some models offer fall-detection alerts and other wellness tools, reframing the hearing aid as a broader health device.",
-    "Starkey is also known for its custom and in-the-ear expertise. California Hearing Center fits Starkey at both the San Mateo and San Carlos offices as one of several strong options.",
-    "Whether Starkey is right for you depends on your hearing loss and how much you value its health and AI features, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+    "Founded by Bill Austin in 1967 and headquartered in Eden Prairie, Minnesota, Starkey is the only American-owned major hearing aid manufacturer in the world. It has built a global reputation for innovation and quality, and a humanitarian mission carried out through the Starkey Hearing Foundation, which has helped people around the world hear better.",
+    "Starkey stands out for pushing hearing aids beyond simple amplification, integrating artificial intelligence, health monitoring, and connectivity so devices help patients not only hear better but live better. California Hearing Center fits Starkey at both the San Mateo and San Carlos offices as one of several strong options.",
+    "Whether Starkey is right for you depends on your hearing loss and how much you value its health and AI features, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["AI and health features", "Starkey has positioned itself around AI-driven sound processing and integrated health tracking. Certain models can monitor activity and offer wellness features through the companion app."],
-    ["Fall detection and alerts", "Some Starkey devices include fall-detection that can send alerts to chosen contacts, a feature that appeals to many older adults and their families for added peace of mind."],
-    ["Custom and in-the-ear strength", "Starkey has deep experience with custom, in-the-ear devices, which can be a good route for patients who prefer that style for comfort or cosmetics."],
-    ["Who Starkey may suit", "People who want their hearing aids to double as a wellness and safety tool, or who prefer custom in-the-ear designs, often find Starkey appealing."],
+    ["Edge AI and the G2 Neuro Processor", "Starkey's flagship Edge AI is built around its G2 Neuro Processor with an integrated neural processing unit. It analyzes and adapts to your environment in real time, targeting enhanced speech clarity, improved noise reduction, and natural sound quality with long battery life."],
+    ["Fall detection and alerts", "Starkey pioneered built-in fall detection in hearing aids. Using integrated sensors, it can automatically detect a fall and send an alert to designated emergency contacts, with manual alerts and location sharing, offering peace of mind for older adults and their families."],
+    ["Activity and engagement tracking", "Through the My Starkey app, Starkey devices use sensors to track physical activity, social engagement, and overall wellness. Step counting, conversation-time tracking, and activity reminders let users set and pursue personal health goals."],
+    ["Balance assessment", "The latest Starkey devices add a balance assessment tool that uses the same sensors to evaluate balance and stability. Self-guided exercises with real-time feedback can help identify fall risk and support better coordination over time."],
+    ["Who Starkey may suit", "People who want their hearing aids to double as a wellness and safety tool, or who prefer custom in-the-ear designs, often find Starkey appealing. Its health features make it a common choice for active older adults."],
     ["Fit, measured, and confirmed", "Health features are a bonus, not a substitute for accurate amplification. We verify each device with real-ear measurement so it performs correctly for your hearing."]
   ],
   bulletLinks: [
@@ -27,9 +28,10 @@
     "Any of these brands can perform beautifully when correctly selected and verified for your hearing."
   ],
   faqs: [
-    ["What is Starkey known for?", "Starkey, a major American manufacturer, is recognized for AI-driven sound processing and integrated health features, including activity tracking and fall-detection alerts on some models, along with strong custom in-the-ear expertise."],
-    ["Can Starkey hearing aids detect falls?", "Some Starkey models include fall-detection that can send an alert to designated contacts. Many older adults and their families value this for added safety. We can review which models offer it during your consultation."],
-    ["Do I need the health features to benefit from Starkey?", "No. The health and activity features are optional extras on top of quality amplification. If you do not want them, Starkey still functions as a capable hearing aid, and we help decide whether the extras are worthwhile for you."]
+    ["What is Starkey known for?", "Starkey, the only American-owned major manufacturer, is recognized for AI-driven sound processing in its Edge AI line and for integrated health features, including activity tracking, fall detection, and balance assessment, along with strong custom in-the-ear expertise."],
+    ["What is Starkey Edge AI?", "Edge AI is Starkey's flagship, built around the G2 Neuro Processor with an integrated neural processing unit. It analyzes and adapts to your listening environment in real time for clearer speech, better noise reduction, and natural sound quality."],
+    ["Can Starkey hearing aids detect falls?", "Yes. Starkey pioneered built-in fall detection that can send an alert to designated contacts, with manual alerts and location sharing. Many older adults and their families value this for added safety. We can review which models offer it during your consultation."],
+    ["Do I need the health features to benefit from Starkey?", "No. The health, activity, and balance features are optional extras on top of quality amplification. If you do not want them, Starkey still functions as a capable hearing aid, and we help decide whether the extras are worthwhile for you."]
   ],
   image: "/assets/starkey.webp",
   imageLabel: "Starkey AI and health features"

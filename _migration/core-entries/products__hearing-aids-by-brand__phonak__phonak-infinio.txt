@@ -2,34 +2,34 @@
   kicker: "Hearing Aid Technology",
   headline: "Phonak Infinio Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Phonak Infinio is a premium hearing aid platform from one of the most established names in hearing technology. Phonak has built its reputation on strong performance in noise and reliable connectivity, and Infinio is positioned as a flagship generation of that work.",
-    "For many patients, the single hardest listening situation is a busy restaurant or a group conversation with competing voices. Premium platforms like Infinio are engineered with those exact moments in mind.",
-    "California Hearing Center fits Phonak Infinio for Peninsula patients and, just as importantly, verifies and fine-tunes the fitting so the technology delivers in real life rather than just on a spec sheet."
+    "Phonak Infinio is Phonak's premium platform, engineered to make conversation clearer in the kinds of settings people find hardest, from crowded restaurants to lively family gatherings. It combines advanced AI-driven sound processing with Phonak's long heritage of Swiss engineering.",
+    "The headline of the range is the Infinio Sphere model, which uses a dual-chip architecture. One processor handles everyday hearing while a second chip is dedicated to real-time AI processing, giving the device more computational power to separate speech from noise as conditions change around you.",
+    "At California Hearing Center, we fit and optimize Phonak Infinio for patients across the Peninsula. As with any premium device, the technology is only part of the story, so we program these hearing aids to your prescription and verify the result before you count on them day to day."
   ],
   sections: [
-    ["Built for speech in noise", "Phonak's premium platforms focus heavily on helping you follow speech when the background is loud. Whether a given model is right for you depends on your hearing profile and how often you face those demanding environments."],
-    ["Who tends to benefit", "Infinio can be a strong option for active people who spend time in noisy settings, want robust streaming, and prioritize clarity. We confirm the fit against your [hearing test results](/hearing-testing/) and daily listening goals."],
-    ["The fitting is where it comes together", "We program Infinio to your prescription and use real-ear measurement to verify the output at your eardrum. Even flagship hearing aids underperform when they are not verified and adjusted to the individual."],
-    ["Connectivity and rechargeability", "Modern Phonak devices generally offer smartphone and device streaming plus rechargeable options. During your fitting we set up pairing and walk through charging, cleaning, and handling."],
-    ["Follow-up and adaptation", "Expect a period of adjustment as your brain relearns everyday sound. Follow-up visits let us refine loudness, comfort, and clarity in the specific places you care about."]
+    ["Dual-chip processing in the Sphere model", "At the heart of the Infinio Sphere is a dual-chip design that separates tasks for better performance. Dedicating one chip to real-time AI processing frees up capacity to enhance speech in complex, shifting environments, which is where many people struggle most with hearing loss."],
+    ["Speech clarity in noise", "Infinio's sound processing is built to lift speech out of background noise while keeping it sounding natural. The aim is to make conversations easier to follow in busy rooms and to reduce the listening effort that leaves people tired after a noisy evening out."],
+    ["AutoSense OS and automatic adaptation", "Infinio runs on Phonak's AutoSense operating system, which recognizes your surroundings and adjusts settings automatically as you move between quiet and noisy places. Features like Speech Enhancer and dynamic noise cancellation work in the background so you are not constantly reaching for controls."],
+    ["Connectivity and accessories", "Infinio offers universal Bluetooth connectivity for direct streaming and hands-free calls from both iOS and Android phones, with adjustments and programs available through the myPhonak app. Optional accessories such as the TV Connector and Roger microphones can extend performance for television and challenging group settings like meetings."],
+    ["Fitting and real-ear verification", "The features only help if the sound is set correctly for your ears. We use [real-ear measurement](/hearing-aid-fitting/) to confirm amplification meets your prescribed targets, then fine-tune clarity, comfort, and loudness over follow-up visits as your brain adapts."]
   ],
   bulletLinks: [
-    ["Get your hearing tested", "/hearing-testing/"],
-    ["Fitting and verification", "/hearing-aid-fitting/"],
-    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"],
-    ["Custom hearing protection", "/services/hearing-protection/"],
-    ["Repairs and adjustments", "/services/hearing-aid-repair/"],
-    ["Contact our team", "/contact/"]
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all Phonak models", "/products/hearing-aids-by-brand/phonak/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [
-    "Phonak Infinio is a premium platform focused on clarity in noisy, demanding environments.",
-    "Suitability depends on your hearing, lifestyle, and how often you face difficult listening situations.",
-    "Real-ear verification and follow-up care are what make a flagship device perform for you."
+    "Phonak Infinio is a premium platform, with the Sphere model using a dual-chip design that dedicates a processor to real-time AI for speech in noise.",
+    "AutoSense OS adapts automatically as your environment changes, with universal Bluetooth streaming and myPhonak app control.",
+    "Verified fitting and follow-up care determine how well the technology performs for your specific hearing."
   ],
   faqs: [
-    ["Is Phonak Infinio good for noisy restaurants?", "Phonak's premium platforms are designed with challenging, noisy environments in mind, which is one reason many patients consider them. We confirm whether it is the right match for your specific hearing and lifestyle during your consultation."],
-    ["Are Phonak Infinio hearing aids rechargeable?", "Phonak generally offers rechargeable options across its premium range. We help you choose between rechargeable and battery styles based on your dexterity, travel habits, and preferences."],
-    ["How is Infinio different from a basic hearing aid?", "Premium platforms typically offer more advanced processing for difficult listening and fuller connectivity. A basic device may suit a quieter lifestyle. We explain the tradeoffs so the choice fits your needs and budget."]
+    ["What is the dual-chip design in Phonak Infinio?", "The Infinio Sphere model uses two processors: one for general hearing and one dedicated to real-time AI sound processing. Splitting the work gives the device more capacity to separate speech from noise in demanding environments."],
+    ["Will Infinio work with my phone?", "Infinio supports direct Bluetooth streaming and hands-free calls from both iOS and Android smartphones, and you can make adjustments through the myPhonak app. We set up pairing during your fitting so you leave comfortable using it."],
+    ["Is Infinio worth it over a basic hearing aid?", "Premium platforms like Infinio generally offer more sophisticated processing for noisy, changing environments and fuller connectivity. If your lifestyle is quieter, a more modest device may serve you well. We weigh the trade-offs honestly during your consultation."]
   ],
   image: "/assets/phonak-infinio.webp",
   imageLabel: "Phonak Infinio premium platform"

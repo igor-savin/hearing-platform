@@ -1,17 +1,19 @@
 "/products/hearing-aids/": {
   kicker: "Hearing Aids",
-  headline: "Understanding Today's Hearing Aids Before You Buy",
+  headline: "Hearing Aids & Hearing Technology for San Mateo & San Carlos",
   intro: [
-    "Modern hearing aids are small, connected, and surprisingly capable, but the features that matter depend entirely on your ears and your daily life. This page walks through the styles, technology levels, and options so you can arrive at your appointment with real questions rather than sales pressure.",
-    "California Hearing Center serves the Peninsula from San Mateo and San Carlos, and we fit devices across the major manufacturers. Our aim is to explain the tradeoffs plainly, then help you pick technology you will actually wear and enjoy.",
-    "Everything below is easier to decide once you have current [hearing test](/hearing-testing/) results, which tell us how much power, what kind of sound processing, and which style your hearing loss calls for."
+    "No two ears are alike, so at California Hearing Center each hearing solution is individualized and customized to the person wearing it, whether the goal is hearing improvement or tinnitus sound therapy. We invite you to try a set of hearing aids risk-free and experience them for yourself in the real world.",
+    "Hearing clearly involves far more than making sounds louder. Your ears, hearing nerve, and brain work together to form a 360-degree soundscape from sounds that are dynamic, complex, and constantly changing. Today's best hearing technology is designed to understand that complexity and work more like the brain works, and we offer the latest devices available, including AI-driven hearing aids.",
+    "Everything is easier to decide once you have current [hearing test](/hearing-testing/) results, which tell us how much power, what kind of sound processing, and which style your hearing loss calls for."
   ],
   sections: [
-    ["Receiver-in-canal (RIC)", "The most commonly fit style today. A slim wire carries sound to a receiver in the ear canal, keeping the device discreet while supporting a wide range of hearing losses. RIC devices are usually easy to service and often rechargeable."],
-    ["Behind-the-ear (BTE)", "A durable, powerful option that suits more significant hearing loss and can be easier to handle. BTE devices work well for those who want robust amplification, longer battery life, or a design that stands up to daily wear."],
-    ["In-the-ear, CIC, and invisible styles", "Custom in-the-ear, completely-in-canal, and invisible options sit within the ear for cosmetic discretion. They favor mild-to-moderate losses and adequate canal size, and involve tradeoffs in battery life, features, and ease of handling."],
-    ["Technology levels", "Within a model line, premium levels typically add faster automatic adjustment and stronger performance in restaurants, groups, and other complex noise. Entry levels can serve quieter lifestyles well. We help you spend where it earns its keep."],
-    ["Rechargeable and Bluetooth features", "Many current devices recharge overnight and stream calls, music, and television directly. These conveniences suit most people, but dexterity, travel habits, and phone type all factor into whether they are right for you."]
+    ["A new experience in hearing", "Our devices can provide a revived experience of hearing. We base the best recommendation on your personal hearing profile, style preferences, manual dexterity, visual abilities, and cosmetic appearance, and we carry products to fit every budget."],
+    ["Brain-first sound processing", "The newest approaches are unlike anything before. Platforms such as Oticon's built-in intelligence, Widex's PureSound with near-instant processing, and learning systems that improve over time aim to deliver clearer, more natural sound with less listening effort, especially in noise."],
+    ["Hearing aid styles", "With advances in digital technology and miniaturization, devices now come in many shapes and sizes to suit your style and comfort, from discreet receiver-in-canal and behind-the-ear designs to custom in-the-ear and completely invisible options. The right style balances power, battery life, handling, and cosmetics."],
+    ["Connect to your world through Bluetooth", "Connecting to your world is key to better hearing today. Modern devices allow easy, direct, wireless access to TVs, iPhones, and iPads so you can watch television, listen to music and podcasts, and video chat with clarity and convenience."],
+    ["Smartphone apps and smart-home control", "Companion smartphone apps add functionality and ease of use, letting you adjust settings on the go. Some devices even connect to internet services so you can integrate hearing into the other smart devices you use every day."],
+    ["Support for tinnitus relief", "In addition to supplying quality hearing aids, we perform tinnitus therapy for those seeking relief in daily life. Many devices double as sound therapy tools, and we tailor them as part of a broader [tinnitus](/tinnitus/) care plan."],
+    ["Fitted and verified for you", "No matter which technology is used, the goal is to amplify and process sound so you hear clearly and naturally. A device only performs when it is programmed correctly, so our [fitting process](/hearing-aid-fitting/) confirms output with real-ear measurement."]
   ],
   bulletLinks: [
     ["Compare brands", "/products/hearing-aids-by-brand/"],
@@ -22,14 +24,14 @@
     ["Repairs and adjustments", "/services/hearing-aid-repair/"]
   ],
   takeaways: [
-    "Style, technology level, and connectivity should be matched to your hearing loss and lifestyle, not chosen from a chart.",
-    "Rechargeable and Bluetooth features suit most people but are not universally right; dexterity and habits matter.",
-    "A device's real-world performance depends heavily on programming and verification at fitting."
+    "Every hearing solution is individualized to your hearing profile, dexterity, vision, budget, and cosmetics.",
+    "Modern devices stream from TVs and phones and pair with smartphone apps for easy control.",
+    "Real-world performance depends on programming and real-ear verification at the fitting."
   ],
   faqs: [
-    ["What is the difference between RIC and BTE hearing aids?", "Both sit behind the ear, but a RIC places the receiver down in the canal for a slimmer, more discreet look, while a BTE routes sound through tubing and generally offers more power and durability for greater hearing loss."],
-    ["Are invisible hearing aids as good as larger ones?", "Invisible and in-canal styles are excellent for discretion and suit many mild-to-moderate losses, but their small size limits battery life and some features. We help weigh cosmetics against performance for your specific hearing."],
-    ["Do I need premium technology to hear well?", "Not always. Premium levels shine in noisy, demanding environments. If your days are mostly quiet, a mid-level device may serve you just as well, and we will tell you honestly where the extra investment pays off."]
+    ["Can I try hearing aids before I commit?", "Yes. We invite you to try a set risk-free and experience them in your own real-world environments. Because we fit across the major brands, we can match you to devices that genuinely suit your hearing and lifestyle."],
+    ["What hearing aid styles are available?", "Styles range from receiver-in-canal and behind-the-ear designs to custom in-the-ear and completely invisible options. The right choice balances power, battery life, ease of handling, and cosmetics, which we weigh against your hearing loss together."],
+    ["Do modern hearing aids connect to my phone and TV?", "Most current devices offer Bluetooth streaming for direct, wireless access to TVs, iPhones, and iPads, plus smartphone apps that let you adjust volume and programs. We help decide whether these features suit your dexterity and daily routine."]
   ],
   image: "/assets/core/products__hearing-aids.svg",
   imageLabel: "Hearing aid styles and technology"

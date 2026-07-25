@@ -2,15 +2,16 @@
   kicker: "Hearing Aid Brands",
   headline: "ReSound Hearing Aids for Peninsula Patients",
   intro: [
-    "ReSound, a Danish manufacturer, built an early reputation for connectivity and was among the first to offer direct streaming to iPhone. That heritage continues: ReSound is often a strong match for people deep in the Apple ecosystem who want calls, music, and audio to flow directly to their ears, along with capable app control.",
-    "Beyond streaming, ReSound is known for a natural, organic approach to sound and a full range of styles. California Hearing Center fits ReSound at both the San Mateo and San Carlos offices as one option among several.",
+    "ReSound, part of the Danish GN group, has led the hearing industry with a string of firsts since introducing the world's first Wide Dynamic Range Compression hearing aid in the early 1990s. It went on to create the first Made for iPhone hearing aids and, more recently, the first hearing aids to support Auracast streaming. That heritage makes ReSound a strong match for people who want calls, music, and audio to flow directly to their ears with capable app control.",
+    "Beyond connectivity, ReSound is known for a natural, organic approach to sound and a full range of styles. California Hearing Center is proud to offer ReSound's lineup at both the San Mateo and San Carlos offices, and our audiologists are trained to help you experience its smart connectivity features.",
     "Whether ReSound suits you comes down to your hearing loss, your devices, and your listening priorities, which we confirm through testing and [expert fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["A connectivity heritage", "ReSound was a pioneer in direct-to-iPhone streaming and continues to emphasize seamless smartphone integration, appealing to people who want their hearing aids to double as wireless earbuds for calls and media."],
-    ["Apple and Android friendly", "ReSound supports direct streaming and app control across many phones. For iPhone users in particular, the integration tends to be smooth and intuitive."],
-    ["Natural sound approach", "ReSound aims for an open, natural sound quality that many listeners find comfortable in everyday environments, balancing clarity with a realistic sense of surroundings."],
-    ["Full range of styles", "Receiver-in-canal, behind-the-ear, and custom options are available, with rechargeable models across much of the lineup so connectivity does not force a compromise on style."],
+    ["A pioneering connectivity heritage", "ReSound helped invent modern hearing-aid connectivity, from the first direct-to-iPhone streaming to leadership in Auracast, and continues to emphasize seamless smartphone integration for people who want their hearing aids to double as wireless earbuds."],
+    ["Auracast: the future of connectivity", "ReSound was first to bring Auracast Bluetooth LE to hearing aids. This lets you connect directly to public audio systems in theaters, airports, and lecture halls without extra receivers, stream from multiple devices, and enjoy better sound with lower power use as Auracast rolls out more widely."],
+    ["AI-powered sound processing", "ReSound's Vivia platform features a deep-neural-network AI system trained on huge amounts of real speech. It targets enhanced speech understanding in noise, an Intelligent Focus that prioritizes sound from where you are looking, and real-time adaptation to changing environments."],
+    ["The ReSound Vivia family", "Vivia is ReSound's flagship: a very small receiver-in-ear device with long battery life, Intelligent Focus, and Auracast connectivity for a vivid, enhanced hearing experience. We help match the right style and technology level to your needs."],
+    ["Apple and Android friendly", "ReSound supports direct streaming and app control across many phones. For iPhone users in particular the integration tends to be smooth and intuitive, and many Android devices are supported too."],
     ["Programmed and verified", "The streaming features are only part of the picture. We verify amplification with real-ear measurement so the device performs correctly for your hearing, not just as a headset."]
   ],
   bulletLinks: [
@@ -27,9 +28,10 @@
     "No manufacturer suits everyone; results come from the fitting and verification, not the logo."
   ],
   faqs: [
-    ["What is ReSound known for?", "ReSound is recognized for connectivity, including its early leadership in direct-to-iPhone streaming, along with a natural sound approach and capable smartphone app control across a full range of styles."],
-    ["Are ReSound hearing aids good for iPhone users?", "ReSound has a strong track record with Apple integration, and many iPhone users find streaming calls and audio smooth and intuitive. We confirm compatibility with your specific phone during the consultation."],
-    ["Do ReSound hearing aids work with Android phones?", "Yes, many ReSound models support direct streaming and app control on compatible Android devices as well as iPhones. We check your phone's compatibility and set everything up during the fitting."]
+    ["What is ReSound known for?", "ReSound, part of the GN group, is recognized for pioneering connectivity, including the first Made for iPhone hearing aids and the first with Auracast, along with a natural sound approach, AI-powered processing in its Vivia platform, and capable app control across a full range of styles."],
+    ["What is Auracast and why does it matter?", "Auracast is a Bluetooth broadcast technology that lets hearing aids connect directly to public audio systems, in theaters, airports, and lecture halls, without extra equipment. ReSound was the first to offer it, which can future-proof your hearing investment as venues adopt it."],
+    ["Are ReSound hearing aids good for iPhone users?", "ReSound has a strong track record with Apple integration, and many iPhone users find streaming calls and audio smooth and intuitive. Many Android phones are supported too. We confirm compatibility with your specific phone during the consultation."],
+    ["What is ReSound Vivia?", "Vivia is ReSound's flagship platform, featuring AI-powered sound processing, Intelligent Focus that prioritizes speech from where you're looking, long battery life, and Auracast connectivity in a very compact receiver-in-ear design."]
   ],
   image: "/assets/resound.webp",
   imageLabel: "ReSound connectivity and natural sound"

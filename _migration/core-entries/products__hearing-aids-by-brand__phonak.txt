@@ -2,16 +2,17 @@
   kicker: "Hearing Aid Brands",
   headline: "Phonak Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Phonak, part of the Swiss Sonova group, is one of the largest and most versatile hearing aid manufacturers. It is especially well known for connectivity, a broad product lineup, its Roger remote-microphone system for difficult listening situations, and Lyric, an extended-wear device placed deep in the canal that can be worn continuously for months at a time.",
-    "That range makes Phonak a frequent match for people with demanding work, social, or classroom environments, as well as those seeking a truly invisible, worn-around-the-clock option. California Hearing Center fits Phonak across our San Mateo and San Carlos offices.",
-    "As with any manufacturer, the right Phonak device and whether Phonak is the right brand at all depends on your hearing loss and lifestyle, confirmed through [professional fitting](/hearing-aid-fitting/)."
+    "Founded in Switzerland more than 75 years ago and now part of the Sonova group, Phonak has spent decades at the forefront of hearing technology, pairing Swiss precision engineering with cutting-edge research. It is especially well known for connectivity, a broad product lineup, its Roger remote-microphone system for difficult listening situations, and Lyric, an extended-wear device placed deep in the canal that can be worn continuously for months at a time.",
+    "That range makes Phonak a frequent match for people with demanding work, social, or classroom environments, as well as those seeking a truly invisible, worn-around-the-clock option. California Hearing Center partnered with Phonak for its commitment to innovation and quality, and we fit the full lineup across our San Mateo and San Carlos offices.",
+    "As with any manufacturer, the right Phonak device, and whether Phonak is the right brand at all, depends on your hearing loss and lifestyle, confirmed through [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["A broad, flexible lineup", "Phonak spans receiver-in-canal, behind-the-ear, custom, and power styles, supporting mild through profound hearing loss with rechargeable options across much of the range."],
-    ["Connectivity and streaming", "Phonak is recognized for versatile Bluetooth connectivity, including direct calls and streaming from many phones, which appeals to people who spend their days on calls and media."],
-    ["Roger for tough situations", "The Roger microphone system can transmit a speaker's voice directly to the hearing aids across a noisy room, restaurant, meeting, or lecture hall, helping in situations where any hearing aid alone struggles."],
-    ["Lyric extended-wear", "Lyric sits deep in the ear canal and is worn continuously for extended periods, offering an invisible, hassle-free option for suitable candidates. Candidacy depends on ear anatomy, hearing loss, and lifestyle."],
-    ["Programmed and verified for your ears", "Whichever Phonak model suits you, we program and confirm it with real-ear measurement so the output truly matches your prescription."]
+    ["A broad, flexible lineup", "Phonak spans receiver-in-canal, behind-the-ear, custom, and power styles, supporting mild through profound hearing loss with rechargeable options across much of the range, so we can match the technology to your dexterity and cosmetic goals."],
+    ["SmartSpeech and AutoSense OS", "Phonak's SmartSpeech Technology works with its AutoSense operating system to analyze your listening environment and adapt automatically. Features such as StereoZoom for focusing on a single voice in noise, a Speech Enhancer for soft speech, and dynamic noise cancellation target better speech understanding without manual fiddling."],
+    ["Roger for tough situations", "Roger is Phonak's wireless remote-microphone system, designed for the hardest listening situations, background noise and distance. With RogerDirect it can transmit a speaker's voice straight to your hearing aids across a noisy restaurant, meeting, or lecture hall, helping where any hearing aid alone struggles."],
+    ["AI-driven Infinio platform", "Phonak's newest platform, Infinio, introduces a dual-chip architecture, one chip for core functions and a dedicated AI chip that processes sound through a deep neural network. The goal is real-time separation of speech from noise and reduced listening effort in challenging environments."],
+    ["Lyric extended-wear", "Lyric is the world's only 100% invisible hearing aid, placed deep in the ear canal by a trained professional and worn around the clock for months at a time, with no batteries to change. It offers an invisible, hassle-free option, and even tinnitus relief day and night, for suitable candidates. Candidacy depends on ear anatomy, hearing loss, and lifestyle."],
+    ["Programmed and verified for your ears", "Whichever Phonak model suits you, results depend on the fitting. We program and confirm every device with real-ear measurement so the output truly matches your prescription across pitches."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -27,9 +28,10 @@
     "Which brand wins for you comes down to your test results and daily listening, plus precise, verified programming."
   ],
   faqs: [
-    ["What is Phonak best known for?", "Phonak is widely recognized for connectivity, a broad range of styles from mild to profound loss, the Roger remote-microphone system for noisy environments, and Lyric, an extended-wear device worn deep in the canal."],
-    ["What is a Phonak Lyric and who is it for?", "Lyric is placed deep in the ear canal and worn continuously for extended periods, making it invisible and low-maintenance. It suits certain candidates depending on ear anatomy, hearing loss, and lifestyle, which we evaluate during a consultation."],
-    ["Can Phonak help me hear in noisy restaurants?", "Phonak devices include noise-management features, and the optional Roger microphone can send a companion's voice directly to your hearing aids across a loud room. We help determine whether these tools fit your needs."]
+    ["What is Phonak best known for?", "Phonak is widely recognized for Swiss engineering and connectivity, a broad range of styles from mild to profound loss, the Roger remote-microphone system for noisy environments, the AI-driven Infinio platform, and Lyric, an extended-wear device worn deep in the canal."],
+    ["What is a Phonak Lyric and who is it for?", "Lyric is the only 100% invisible hearing aid, placed deep in the ear canal by a professional and worn continuously for months at a time with no battery changes. It suits certain candidates depending on ear anatomy, hearing loss, and lifestyle, which we evaluate during a consultation."],
+    ["Can Phonak help me hear in noisy restaurants?", "Yes. Phonak's SmartSpeech and AutoSense features manage noise automatically, and the optional Roger microphone can send a companion's voice directly to your hearing aids across a loud room. We help determine whether these tools fit your needs."],
+    ["What is the Phonak Infinio platform?", "Infinio is Phonak's newest platform, built on a dual-chip design that adds a dedicated AI chip to process sound through a deep neural network. It aims to separate speech from noise in real time and reduce listening effort in demanding settings."]
   ],
   image: "/assets/phonak.webp",
   imageLabel: "Phonak connectivity and Roger technology"

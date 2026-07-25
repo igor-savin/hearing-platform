@@ -9,27 +9,27 @@ export const corePages: Record<string, PageContent> = {
   kicker: "What to Expect",
   headline: "A Patient's Journey to Better Hearing, Step by Step",
   intro: [
-    "Deciding to do something about your hearing can feel bigger than it needs to. People often imagine an overwhelming process, when in reality it unfolds as a series of clear, manageable steps, each one building on the last. Knowing what those steps look like ahead of time takes much of the anxiety out of the first phone call.",
-    "This is the path most patients at California Hearing Center follow, from the moment they reach out through the ongoing care that keeps them hearing their best. Not every journey is identical; some people need only reassurance and monitoring, while others move through the full arc into hearing technology. But the shape is consistent, and you are guided at every stage.",
+    "Improving your hearing is a journey, one that begins with awareness of a difficulty and follows a customized path toward a successful outcome. People often imagine an overwhelming process, when in reality it unfolds as a series of clear, manageable steps, each building on the last. Knowing what those steps look like ahead of time takes much of the anxiety out of the first phone call.",
+    "This is the path most patients at California Hearing Center follow, from the moment they reach out through the ongoing care and training that keep them hearing their best. We warmly encourage your family to join you along the way, both to support you and because a hearing deficit affects the people around you, too. Not every journey is identical; some people need only reassurance and monitoring, while others move through the full arc into hearing technology and beyond.",
     "Here is what the journey typically looks like across our San Mateo and San Carlos offices."
   ],
   sections: [
-    ["Step one: the first call", "It starts with a conversation. When you contact us, we listen to what prompted the call, whether it is a specific struggle in restaurants, a family member's concern, or ringing in your ears, and help you choose the right kind of appointment and the most convenient office. There is no obligation, just a plan for the first visit."],
-    ["Step two: the hearing evaluation", "At your appointment we take a history, examine your ears, and complete a [hearing evaluation](/hearing-testing/) that measures not just the softest sounds you can detect but how well you understand speech, including in background noise. This is the foundation for everything that follows."],
-    ["Step three: discussing your results", "We walk you through your results in plain language, showing you your audiogram and explaining what it means for the situations you care about. If hearing loss is present, we talk about its type and degree; if something needs medical attention, we guide you toward the right referral. You leave understanding your own hearing."],
-    ["Step four: choosing technology", "If hearing aids make sense, we match options to your hearing, your lifestyle, your dexterity, and your budget rather than pushing a single product. We explain the trade-offs among styles and features so the choice is genuinely yours. Explore the range of [hearing aids](/products/) to see what is possible."],
-    ["Step five: fitting and verification", "At the [fitting](/hearing-aid-fitting/), we program the devices to your prescription and use real-ear verification to confirm they are delivering the right sound in your actual ears, not just in theory. We also teach you to wear, charge, clean, and handle them with confidence."],
-    ["Step six: follow-up and adjustments", "Your brain needs time to readjust to a fuller range of sound, and the first weeks matter. Follow-up visits let us fine-tune comfort and clarity, solve real-world listening problems, and keep your devices performing. Better hearing is an ongoing relationship, not a one-time purchase."]
+    ["Step one: the first call", "It starts with a conversation. When you contact us, we listen to what prompted the call, whether it is a struggle in restaurants, a family member's concern, or ringing in your ears, and help you choose the right kind of appointment and the most convenient office. There is no obligation, just a plan for the first visit."],
+    ["Step two: the hearing evaluation", "At your appointment we take a history, examine your ears, and complete a [hearing evaluation](/hearing-testing/) that builds a specific profile of your hearing, measuring not just the softest sounds you detect but how much speech you catch, how much you miss, and how you do against background noise. It also tells us whether you should be referred to a physician for medical follow-up."],
+    ["Step three: discussing your results", "Our hearing doctor walks you through your results in plain language, shows you your audiogram, and talks through the specific situations where you struggle and what matters most to you. From there we recommend a plan. You leave understanding your own hearing, and if something needs medical attention, we guide you to the right referral."],
+    ["Step four: choosing technology", "If hearing aids make sense, we match options to your hearing profile, lifestyle, dexterity, cosmetic preferences, and budget rather than pushing a single product. We also explain devices and accessories that connect directly to your phone or television for streaming and adjustment. Explore the range of [hearing aids](/products/) to see what is possible."],
+    ["Step five: fitting and verification", "At the [fitting](/hearing-aid-fitting/), we program the devices to your prescription and use real-ear verification to confirm they deliver the right sound in your actual ears, not just in theory. Well-fitted devices make soft speech audible, keep conversation clear, and ease the strain of hearing in noise, which supports overall cognitive health."],
+    ["Step six: follow-up, classes, and training", "Your brain needs time to readjust to a fuller range of sound, so the first weeks matter. Beyond fine-tuning appointments, we offer informal Listen Up Now education classes on hearing health, device care, and practical communication, plus interactive auditory training such as LACE and cLEAR and our 5 Keys Communication program. These tools help your brain make sense of new sound and sharpen real-world listening. Better hearing is an ongoing relationship, not a one-time purchase."]
   ],
-  bullets: ["First call & planning", "Comprehensive evaluation", "Results in plain language", "Technology matched to you", "Verified fitting", "Ongoing follow-up"],
+  bullets: ["First call & planning", "Comprehensive evaluation", "Results in plain language", "Technology matched to you", "Verified fitting", "Classes & auditory training"],
   takeaways: [
     "The journey is a series of clear, guided steps, not a single overwhelming decision.",
     "Everything is built on a thorough evaluation and results you actually understand.",
-    "Follow-up and fine-tuning are a normal, expected part of hearing better over time."
+    "Education classes and auditory training make adapting to better hearing easier and more successful."
   ],
   faqs: [
     ["Do I have to buy hearing aids if I come in?", "No. The first steps are about understanding your hearing and your options. Many people come in for answers and monitoring, and hearing technology is only recommended when it genuinely fits your needs and goals."],
-    ["How long does the whole process take?", "The initial evaluation and results discussion often happen in a single visit. If you move forward with hearing aids, fitting follows, and adjustment usually unfolds over the following weeks as your brain adapts and we fine-tune the devices."],
+    ["How long does the whole process take?", "The initial evaluation and results discussion often happen in a single visit. If you move forward with hearing aids, fitting follows, and adjustment usually unfolds over the following weeks as your brain adapts, supported by follow-up visits, classes, and auditory training."],
     ["What if my results show I do not need hearing aids?", "That is a good outcome. We will explain what we found, offer guidance or monitoring if appropriate, and make sure you know what signs to watch for. You leave with clarity either way."]
   ],
   image: "/assets/hearing-journey-hero.webp",
@@ -303,25 +303,25 @@ export const corePages: Record<string, PageContent> = {
   headline: "Refer Someone You Care About to Better Hearing",
   intro: [
     "Some of the most meaningful referrals we receive come from patients who finally addressed their own hearing and then recognized the same struggles in someone they love: a spouse who keeps the television too loud, a parent who has stopped joining conversations, a friend who nods along but clearly is not catching much. If you have benefited from care here, you are in a unique position to help someone else take that first step.",
-    "California Hearing Center welcomes patient referrals through our hearing aid referral program. It is our way of saying thank you when you point a friend or family member toward the help they have been putting off, and of making it a little easier for them to walk through the door.",
-    "If you would like to refer someone, or you were referred by an existing patient, just let us know. Ask us for the current details and we will walk you through how it works."
+    "California Hearing Center welcomes patient referrals through our hearing aid referral program. When you point a friend or family member toward the help they have been putting off, it is our way of saying thank you, and of making it a little easier for them to walk through the door. Our team then helps them find the right solution for their hearing.",
+    "If you would like to refer someone, or you were referred by an existing patient, just let us know. Program terms can change over time, so ask us for the current details and we will walk you through exactly how it works today."
   ],
   sections: [
-    ["Why referrals matter in hearing care", "People wait an average of years before acting on hearing loss, often because they do not realize how much they are missing or feel unsure about seeking help. A trusted nudge from someone who has been through it themselves is frequently what finally moves a person to schedule that first appointment."],
-    ["Who you might refer", "Think of the people who ask you to repeat yourself, struggle in restaurants, avoid phone calls, or seem to withdraw in group settings. A spouse, sibling, parent, neighbor, or coworker who shows these signs could benefit from a simple [hearing evaluation](/hearing-testing/) to understand where they stand."],
-    ["How to refer someone", "The easiest way is to have them mention your name when they contact us, or to let our team know you would like to refer someone. We will make sure both of you are taken care of. Because program specifics can change, we will confirm the current terms with you directly."],
+    ["Why referrals matter in hearing care", "People often wait years before acting on hearing loss, sometimes because they do not realize how much they are missing, sometimes because they feel unsure about seeking help. A trusted nudge from someone who has been through it themselves is frequently what finally moves a person to schedule that first appointment."],
+    ["Who you might refer", "Think of the people who ask you to repeat yourself, struggle in restaurants, avoid phone calls, or seem to withdraw in group settings. A spouse, sibling, parent, neighbor, or coworker who shows these signs could benefit from a simple [hearing evaluation](/hearing-testing/) to understand where they stand. There is no limit on how many people you can refer."],
+    ["How to refer someone", "The easiest way is to have them mention your name when they contact us, or to let our team know you would like to refer someone. Referrals are for people who are new to the practice. Because the program's specifics can change and cannot be combined with other promotions, we will confirm the current terms with you directly."],
     ["A no-pressure first visit", "Referring someone does not commit them to anything. A first appointment is about understanding their hearing and answering questions, not a sales pitch. Many people are relieved simply to get clear answers, whether or not hearing technology turns out to be the right next step."],
-    ["Ask us about the details", "We keep the program straightforward and are happy to explain how it currently works, what a referred friend can expect, and any thank-you we extend to you. Reach out and we will fill you in."]
+    ["Ask us about the details", "We keep the program straightforward and are happy to explain how it currently works, what a referred friend can expect, and any thank-you we extend to you once they complete their care. Reach out and we will fill you in."]
   ],
-  bullets: ["Refer friends & family", "A trusted first step", "No pressure for referrals", "We handle the details", "Ask us how it works", "Two Peninsula offices"],
+  bullets: ["Refer friends & family", "A trusted first step", "No limit on referrals", "No pressure for referrals", "Ask us how it works", "Two Peninsula offices"],
   takeaways: [
     "Patients are often the best people to encourage a loved one to address hearing loss.",
     "Referring someone commits them to nothing beyond a first conversation.",
-    "Ask our team for the current program details rather than assuming specifics."
+    "Ask our team for the current program details rather than assuming specifics, since terms can change."
   ],
   faqs: [
-    ["How does the hearing aid referral program work?", "In short, you point a friend or family member to our practice and let us know, and we take care of both of you. The specifics can change over time, so ask our team for the current details and we will explain everything."],
-    ["Who should I refer?", "Anyone showing signs of hearing difficulty: turning up the volume, asking for repetition, struggling in noisy rooms, or withdrawing from conversation. A first hearing evaluation is a low-pressure way for them to find out where they stand."],
+    ["How does the hearing aid referral program work?", "In short, you point a friend or family member who is new to the practice toward us and let us know, and we take care of both of you once they complete their care. The specifics can change over time, so ask our team for the current details and we will explain everything."],
+    ["Is there a limit to how many people I can refer?", "No. There is no limit to the number of friends or family members you can refer. Each referral simply needs to be someone new to the practice, and any thank-you cannot be combined with other promotions."],
     ["What does a referred friend need to do?", "They can simply contact us and mention your name, or you can let us know you would like to refer them. Call 650-342-9449 and we will make it easy for both of you."]
   ],
   image: "/assets/core/hearing-aid-referral-program.svg",
@@ -478,73 +478,76 @@ export const corePages: Record<string, PageContent> = {
   imageLabel: "Knowing when to ask for help"
 },
   "/products/": {
-  kicker: "Hearing Aid Technology",
-  headline: "Hearing Technology Chosen for You, Not the Brochure",
+  kicker: "Products",
+  headline: "Hearing Aids & Hearing Protection in San Mateo & San Carlos",
   intro: [
-    "The hearing aid market can feel overwhelming: dozens of models, a handful of major manufacturers, competing marketing claims, and price ranges that seem to defy explanation. This section of our site is meant to cut through that noise. It explains how modern hearing technology actually works, which brands California Hearing Center carries, and why the device you choose matters far less than how it is fit and supported.",
-    "At our San Mateo and San Carlos offices, we are not tied to a single manufacturer. That independence lets us compare styles, technology levels, and features honestly, and match them to your hearing, your hands, your phone, and the places you most want to hear well.",
-    "Use these pages to learn the landscape, then let us translate it into a specific recommendation built on your [hearing test](/hearing-testing/) results."
+    "California Hearing Center offers a full range of hearing technology and protective products at our San Mateo and San Carlos offices. No two ears are alike, which is why every solution we recommend is individualized and customized to the person in front of us, whether the goal is clearer hearing, tinnitus sound therapy, or protecting healthy ears from noise.",
+    "Our products fall into two families: hearing aids and Ear Gear. On the hearing aid side we work independently across the major manufacturers rather than pushing a single brand, we carry products to fit every budget, and we can arrange a risk-free trial so you experience devices in the real world before deciding. On the protection side we make custom earplugs and earmolds for work, music, swimming, sleeping, and more.",
+    "Whatever your needs, the starting point is a conversation and a [hearing test](/hearing-testing/). From there we match technology to your hearing profile, dexterity, visual abilities, budget, and cosmetic preferences."
   ],
   sections: [
-    ["Start with the hearing loss, not the device", "The right technology depends on the shape and degree of your hearing loss, your speech understanding, and the listening situations that matter most. That is why every recommendation begins with a full evaluation rather than a catalog."],
-    ["Styles and how they differ", "Receiver-in-canal, behind-the-ear, in-the-ear, completely-in-canal, and invisible options each trade off size, power, battery life, and ease of handling. Our [hearing aids overview](/products/hearing-aids/) explains which situations favor which style."],
-    ["Brands we carry", "We work with Oticon, Phonak, ReSound, Widex, Signia, Starkey, Rexton, and Unitron. Each has genuine strengths, and none is best for every ear, which is why we compare rather than promote."],
-    ["Technology levels and budget", "Within a single model line, higher technology levels generally add automatic adjustment and better performance in complex noise. We help you decide where added cost delivers real benefit for your lifestyle and where it does not."],
-    ["Fitting is where results are made", "Even excellent hardware underperforms without careful programming and verification. Our [fitting process](/hearing-aid-fitting/) uses real-ear measurement to confirm each device is doing what your prescription requires."]
+    ["Hearing aids for every profile", "We fit devices from all the leading brands and base each recommendation on your personal hearing profile, style preferences, manual dexterity, visual abilities, and cosmetic goals. Because we carry products across price points, we can fit nearly every budget."],
+    ["Hearing aids that work like the brain hears", "Hearing clearly involves more than making sounds louder. The ear, hearing nerve, and brain work together to form a full soundscape from dynamic, constantly changing sound. Today's technology, including AI-driven devices, is designed to handle that complexity so you hear more naturally wherever you are."],
+    ["Hearing protection and Ear Gear", "Beyond amplification, we make custom-molded earplugs and earmolds that guard against irreversible noise damage. Options include musician earplugs, in-ear monitors, and molds for pilot headsets, swimming, sleeping, and hunting. See our [hearing protection](/services/hearing-protection/) options."],
+    ["Independent, brand-agnostic advice", "We are not tied to one manufacturer. That freedom lets us compare platforms honestly and choose the one that genuinely fits you, rather than the one a single supplier wants us to sell. Browse our [hearing aid brands](/products/hearing-aids-by-brand/)."],
+    ["Fitted and verified, not just sold", "A product is only as good as its programming. We use real-ear measurement during the [fitting](/hearing-aid-fitting/) to confirm each device delivers the right output across pitches for your specific ears."],
+    ["Support for tinnitus, too", "Many patients come to us not only for hearing loss but for tinnitus relief. Several of the devices we carry double as sound therapy tools, and we tailor them as part of a broader tinnitus care plan."],
+    ["Serving the Peninsula", "We are proud to see patients throughout San Mateo, San Carlos, Burlingame, Belmont, and Millbrae. Both offices offer the same technology and the same personalized approach."]
   ],
   bulletLinks: [
     ["Hearing aids overview", "/products/hearing-aids/"],
-    ["Compare brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids by brand", "/products/hearing-aids-by-brand/"],
+    ["Ear Gear & hearing protection", "/products/eargear/"],
     ["The fitting process", "/hearing-aid-fitting/"],
-    ["Start with a hearing test", "/hearing-testing/"],
-    ["Ear Gear protection", "/products/eargear/"],
-    ["Repairs and service", "/services/hearing-aid-repair/"]
+    ["Book a hearing test", "/hearing-testing/"],
+    ["All services", "/services/"]
   ],
   takeaways: [
-    "Choosing hearing aids well means matching technology to your hearing, dexterity, and lifestyle, not chasing a brand name.",
-    "California Hearing Center is independent and carries several major manufacturers so comparison stays honest.",
-    "Professional fitting and verification usually influence results more than the logo on the device."
+    "Two product families: hearing aids from every major brand, and custom hearing protection.",
+    "Recommendations are individualized and verified with real-ear measurement, not one-size-fits-all.",
+    "Risk-free trials let you experience hearing aids in the real world before you decide."
   ],
   faqs: [
-    ["How do I choose the right hearing aid?", "Start with a hearing evaluation, then weigh style, technology level, connectivity, and comfort against your daily listening needs. We narrow the field to devices that genuinely suit your hearing rather than presenting the entire catalog."],
-    ["Does the brand really matter?", "Brand matters less than most people expect. The major manufacturers all make capable devices, and differences in sound processing are real but subtle. Fitting quality, follow-up, and the match to your hearing loss usually matter more."],
-    ["Can I compare several brands before deciding?", "Yes. Because we are independent, we can discuss and, where appropriate, trial options across manufacturers so your choice is based on how a device performs for you rather than on what a single company sells."]
+    ["What products does California Hearing Center offer?", "Two main categories: hearing aids from all the major manufacturers, and custom hearing protection (Ear Gear) such as musician earplugs, in-ear monitors, and molds for swimming, sleeping, and pilot headsets. We also provide tinnitus sound therapy solutions."],
+    ["Can I try hearing aids before buying?", "Yes. We can arrange a risk-free trial so you can experience a set of hearing aids in your own daily life and hear the difference for yourself before making a commitment."],
+    ["How do you decide which product is right for me?", "We start with a hearing test and a discussion of your goals, then weigh your hearing profile, dexterity, vision, budget, and cosmetic preferences to match you with the right technology, and verify the fit with real-ear measurement."]
   ],
   image: "/assets/core/products.svg",
   imageLabel: "Independent hearing technology guidance"
 },
   "/products/eargear/": {
-  kicker: "Hearing Aid Accessories",
-  headline: "Ear Gear: Protecting Your Hearing Aids from Moisture and Loss",
+  kicker: "Ear & Hearing Protection",
+  headline: "Ear Gear & Custom Hearing Protection for San Mateo & San Carlos",
   intro: [
-    "Hearing aids are a significant investment, and everyday hazards, sweat, moisture, dust, wind, and accidental loss, are among the most common reasons they need repair or replacement. Ear Gear is a simple, effective solution: a soft protective sleeve that slips over behind-the-ear and receiver-in-canal devices to shield them from these threats without interfering with sound.",
-    "The sleeves come in sizes and colors to fit different devices, and many include a small cord that clips to clothing so a dislodged hearing aid stays with you rather than falling to the ground. California Hearing Center offers Ear Gear to patients at both the San Mateo and San Carlos offices.",
-    "If you are active, work outdoors, live in a humid setting, or simply want peace of mind, Ear Gear is an inexpensive way to protect devices you rely on every day."
+    "If you are exposed to a high-noise environment and need hearing protection, California Hearing Center has a variety of custom options for you. Noise-induced hearing damage is irreversible, but it is also preventable, and custom-molded ear gear offers protection and comfort that off-the-shelf foam plugs cannot match.",
+    "We make custom earplugs and earmolds for all kinds of needs, from everyday noise protection to specialized molds for pilot headsets and for swimming, sleeping, and hunting. Because each piece is molded to your ear, it seals better, stays comfortable for longer wear, and lets us tune the level of protection to the situation.",
+    "Our team is proud to serve patients across San Mateo, San Carlos, Burlingame, Belmont, and Millbrae. To discuss your ear gear needs, we invite you to [contact us](/contact/) or book a consultation."
   ],
   sections: [
-    ["What Ear Gear does", "Ear Gear is a spandex-style sleeve that fits over the body of a hearing aid, creating a barrier against sweat, moisture, dirt, and wind while leaving the microphones and sound path clear."],
-    ["Protection against loss", "Many Ear Gear models include a cord and clip that attach to clothing, so if a device slips off during exercise, play, or a busy day, it stays tethered rather than lost."],
-    ["Who benefits most", "Active adults, outdoor workers, children, and anyone in a humid or dusty environment gain the most, but any wearer who wants to reduce moisture-related repairs can benefit."],
-    ["Sizes and fit", "Ear Gear comes in different sizes to match behind-the-ear and receiver-in-canal devices. We help confirm the right size so the sleeve fits snugly without affecting comfort or sound."],
-    ["Part of caring for your devices", "Ear Gear complements good habits like nightly drying and routine cleaning. Combined with periodic service, it helps your hearing aids last and perform reliably."]
+    ["Custom earplugs for noise protection", "For workshops, concerts, motorsports, firearms, and other loud settings, custom-molded earplugs protect your ears from irreversible damage while fitting securely and comfortably. A precise mold means a better seal and consistent, reliable protection."],
+    ["Specialty earmolds", "Beyond general noise protection, we make custom earmolds for pilot headsets and for activities like swimming, sleeping, and hunting. Each is shaped to your ear so it seals out water or noise and stays put through the activity."],
+    ["Musician hearing protection", "As a musician, you need to protect your ears while still hearing the fidelity of the sounds you create. We provide both custom and non-custom musician earplugs and in-ear monitors for creating and listening to music, so you can turn life up without sacrificing sound quality."],
+    ["Audio enhancement for audiophiles", "If you have high standards for how music sounds, you need a higher level of audio equipment and earmold customization. Because the possibilities are nearly limitless, we offer a broad selection to satisfy demanding tastes for great-quality sound."],
+    ["Why custom fit matters", "A custom impression captures the unique shape of your ear canal, producing protection that seals better, feels more comfortable during long wear, and delivers a more even, natural sound than generic plugs, whether the goal is safety or fidelity."],
+    ["Getting started", "The process begins with a quick appointment to take ear impressions and discuss how and where you will use your ear gear. From there we recommend the right style and level of protection, and pair it with any [hearing protection](/services/hearing-protection/) guidance you need."]
   ],
   bulletLinks: [
+    ["Custom hearing protection", "/services/hearing-protection/"],
     ["Hearing aids overview", "/products/hearing-aids/"],
     ["Hearing aid repair", "/services/hearing-aid-repair/"],
-    ["The fitting process", "/hearing-aid-fitting/"],
-    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["Book a hearing test", "/hearing-testing/"],
     ["All products", "/products/"],
     ["Contact us", "/contact/"]
   ],
   takeaways: [
-    "Ear Gear is a protective sleeve that shields hearing aids from sweat, moisture, dust, and wind.",
-    "Many models include a cord and clip to prevent accidental loss.",
-    "It is an inexpensive way to reduce moisture-related repairs and protect your investment."
+    "Custom-molded earplugs and earmolds protect against irreversible, preventable noise damage.",
+    "Options include musician earplugs, in-ear monitors, and molds for pilot headsets, swimming, sleeping, and hunting.",
+    "A custom fit seals better, stays comfortable longer, and preserves natural sound quality."
   ],
   faqs: [
-    ["What is Ear Gear and how does it work?", "Ear Gear is a soft, sweat-resistant sleeve that slips over behind-the-ear or receiver-in-canal hearing aids. It blocks moisture, dust, and wind while keeping the microphones and sound path clear, and many versions add a cord to prevent loss."],
-    ["Will Ear Gear affect how my hearing aids sound?", "Ear Gear is designed to protect the device without blocking the microphones or sound outlet, so it should not meaningfully change how you hear. Proper sizing matters, and we help make sure it fits correctly."],
-    ["Do I need Ear Gear if I already dry my hearing aids at night?", "Nightly drying is excellent, and Ear Gear adds daytime protection against sweat, rain, dust, and accidental loss. The two work well together, especially for active people or humid environments."]
+    ["What kinds of custom ear gear do you offer?", "We make custom earplugs for high-noise environments, specialty earmolds for pilot headsets, swimming, sleeping, and hunting, plus musician earplugs, in-ear monitors, and audio-enhancement solutions for audiophiles."],
+    ["Why choose custom earplugs over foam ones?", "Custom plugs are molded to your ear canal, so they seal more reliably, stay comfortable during long wear, and can be tuned to protect while preserving sound quality, which matters especially for musicians and audiophiles."],
+    ["Do you offer hearing protection for musicians?", "Yes. We provide both custom and non-custom musician earplugs and in-ear monitors that guard your hearing while preserving the fidelity of the music you create and enjoy."]
   ],
   image: "/assets/ear-gear.webp",
   imageLabel: "Ear Gear protective sleeves"
@@ -558,11 +561,12 @@ export const corePages: Record<string, PageContent> = {
     "These brand pages describe each manufacturer's reputation and typical strengths so you can understand the landscape. What ultimately determines how well you hear is the match to your hearing loss plus careful [fitting and verification](/hearing-aid-fitting/)."
   ],
   sections: [
-    ["Why brand matters less than people think", "Sound-processing differences between top manufacturers exist, but they are refinements rather than night-and-day gaps. A well-fit mid-tier device from one brand often outperforms a poorly fit premium device from another."],
-    ["What each brand is known for", "Broadly: Phonak for connectivity and its Roger and Lyric lines, Oticon for open, natural BrainHearing sound, ReSound for Apple-friendly streaming, Widex for natural sound quality, Signia for own-voice processing, and Starkey for AI and health features. Rexton and Unitron offer strong value."],
-    ["Matching brand to person", "Someone who lives on video calls may lean toward strong connectivity; a music lover may prioritize natural sound; a person wanting truly invisible, extended-wear devices has specific options. We map these preferences onto real candidates."],
-    ["The role of professional fitting", "Whichever brand you choose, results come from programming to your prescription and confirming output with real-ear measurement. Our [fitting process](/hearing-aid-fitting/) treats the device as a starting point, not the finish line."],
-    ["Comparing before you commit", "Because we are not locked to one company, we can discuss and, where appropriate, trial options so your decision reflects how a device performs for you rather than a marketing claim."]
+    ["Your partner for better hearing", "Selecting the right hearing aid is a deeply personal decision, so we partner with the leading manufacturers to offer the most advanced, reliable, and comfortable solutions available. Our audiologists are trained in fitting and programming devices from all major brands, ensuring personalized care and optimal performance whichever you choose."],
+    ["Oticon and Widex", "Oticon leads with BrainHearing technology that supports how the brain naturally processes sound, so you can follow conversation even in noise; its lineup includes the Zeal and Intent families. Widex, family-owned since the 1950s, is a natural-sound specialist known for tinnitus solutions and its Allure platform with PureSound technology."],
+    ["Phonak, Lyric, and ReSound", "Phonak is renowned for Swiss engineering and connectivity, with its Infinio platform and the Roger wireless system. The Lyric is the only 100% invisible, extended-wear device, worn around the clock for months at a time. ReSound pioneers connectivity, including Auracast streaming in public spaces, and its award-winning Vivia platform."],
+    ["Signia, Starkey, Unitron, and Rexton", "Signia carries over a century of audiology heritage into modern, stylish designs and its Integrated Xperience (IX) conversation technology. Starkey, the major American-owned manufacturer, leads on AI and health features. Unitron is known for award-winning, user-focused design, and Rexton for dependable, value-focused reliability."],
+    ["Phone-communication solutions", "For patients who struggle on the telephone, we also offer CaptionCall and CapTel captioning phones. These create real-time transcripts of conversations and amplify desired sounds while reducing unwanted noise, adding confidence and clarity to phone calls."],
+    ["The role of professional fitting", "Whichever brand you choose, results come from programming to your prescription and confirming output with real-ear measurement. Our [fitting process](/hearing-aid-fitting/) treats the device as a starting point, not the finish line, and because we are independent we can compare or trial options before you commit."]
   ],
   bulletLinks: [
     ["Oticon", "/products/hearing-aids-by-brand/oticon/"],
@@ -590,27 +594,28 @@ export const corePages: Record<string, PageContent> = {
   headline: "CapTel Captioned Phones for Hard-of-Hearing Peninsula Residents",
   intro: [
     "CapTel is a captioned telephone, not a hearing aid. It looks much like a regular phone but adds a built-in screen that displays written captions of everything the caller says, so you can both listen and read along during a conversation.",
-    "For people with hearing loss who find phone calls stressful or hard to follow, that combination can make a real difference. You still use your voice normally, but the captions fill in the words you might otherwise miss.",
-    "California Hearing Center can help you understand how captioned phones fit alongside hearing aids and other communication strategies as part of your overall hearing care."
+    "For people with hearing loss who find phone calls stressful or hard to follow, that combination can make a real difference. You still use your voice normally and hear what you can, and the captions fill in the words you might otherwise miss.",
+    "California Hearing Center can help you understand how captioned phones fit alongside hearing aids and other communication strategies as part of your overall hearing care, and we can point you toward the process for obtaining one."
   ],
   sections: [
-    ["How a captioned phone works", "As the other person speaks, their words are transcribed into captions that appear on the phone's display in near real time. You listen to whatever you can and read the rest, which reduces the guesswork that makes phone calls tiring with hearing loss."],
-    ["Who it can help", "Captioned phones are often useful for people with moderate to more significant hearing loss who still want to stay connected by phone, including many older adults who rely on calls with family, doctors, and services."],
-    ["Often available at no cost to qualifying users", "Captioned telephones like CapTel are frequently provided at no cost to individuals who have hearing loss and qualify, typically through a certification process that confirms the need. The exact requirements and paperwork vary, so it is worth asking about the current process."],
-    ["A complement to hearing aids, not a replacement", "A captioned phone addresses one specific situation, phone calls, while [hearing aids](/products/hearing-aids-by-brand/) support hearing across all of daily life. Many people benefit from both. We can help you see where each one fits."],
-    ["Where to start", "If phone conversations are a frequent frustration, a [hearing evaluation](/hearing-testing/) is a sensible first step. It clarifies your hearing and helps us recommend the right mix of technology and strategies."]
+    ["How a captioned phone works", "As the other person speaks, a captioning service transcribes their words into text that appears on the phone's display in near real time. You listen to whatever you can and read the rest, which reduces the guesswork that makes phone calls tiring when you have hearing loss. The text size on the screen can typically be adjusted for comfortable reading."],
+    ["Built-in amplification and easy reading", "Beyond captions, CapTel phones generally include adjustable amplification to make the caller's voice louder and clearer, along with a large, well-lit display. The aim is a phone that supports both your ears and your eyes, so you are not depending on hearing alone to follow the call."],
+    ["Who it can help", "Captioned phones are often useful for people with moderate to more significant hearing loss who still want to stay connected by phone, including many older adults who rely on calls with family, doctors, pharmacies, and services. It is a practical way to keep important conversations independent and low-stress."],
+    ["Often available at no cost to qualifying users", "Captioned telephones like CapTel are frequently provided at no cost to individuals who have hearing loss and qualify, typically through a certification process that documents the need. The exact requirements and paperwork can vary and change over time, so it is worth asking about the current process before you begin."],
+    ["A complement to hearing aids, not a replacement", "A captioned phone addresses one specific situation, phone calls, while [hearing aids](/products/hearing-aids-by-brand/) support hearing across all of daily life, from conversations to television to restaurants. Many people benefit from using both together, and we can help you see where each one fits."],
+    ["Where to start", "If phone conversations are a frequent frustration, a [hearing evaluation](/hearing-testing/) is a sensible first step. It clarifies exactly where your hearing needs support and helps us recommend the right mix of technology and communication strategies, which may include a captioned phone like CapTel or CaptionCall."]
   ],
   bulletLinks: [
     ["Get your hearing evaluated", "/hearing-testing/"],
     ["Explore hearing aids", "/products/hearing-aids-by-brand/"],
+    ["Compare CaptionCall captioned phones", "/products/hearing-aids-by-brand/caption-call/"],
     ["See all our services", "/services/"],
-    ["Tinnitus and hearing support", "/tinnitus/"],
     ["Contact our team", "/contact/"],
     ["Areas we serve", "/areas-we-serve/"]
   ],
   takeaways: [
-    "CapTel is a captioned telephone that shows written captions of what the caller says.",
-    "It is assistive technology for phone calls, not a hearing aid.",
+    "CapTel is a captioned telephone that shows written captions of what the caller says, alongside adjustable amplification.",
+    "It is assistive technology for phone calls, not a hearing aid, and works best as a complement to hearing aids.",
     "Captioned phones are often available at no cost to qualifying individuals through a certification process."
   ],
   faqs: [
@@ -625,28 +630,29 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Assistive Listening Technology",
   headline: "CaptionCall Captioned Phones for the Hard of Hearing",
   intro: [
-    "CaptionCall is a captioned telephone designed for people with hearing loss. Like other captioned phones, it works as an ordinary phone while adding a large screen that displays written captions of what the person on the other end is saying.",
-    "Reading along as you listen takes much of the strain out of phone calls. Instead of straining to catch every word or asking callers to repeat themselves, you can follow the conversation with the captions as a backup.",
-    "As part of your broader hearing care, California Hearing Center can help you understand how a captioned phone works alongside hearing aids and other tools to keep you connected."
+    "CaptionCall is a captioned telephone designed for people with hearing loss, not a hearing aid. It works like an ordinary phone while adding a large, easy-to-read screen that displays written captions of what the person on the other end is saying, in near real time.",
+    "Reading along as you listen takes much of the strain out of phone calls. Instead of straining to catch every word or asking callers to repeat themselves, you can follow the conversation with the captions as a dependable backup, which makes long or important calls far less stressful.",
+    "As part of your broader hearing care, California Hearing Center can help you understand how a captioned phone works alongside hearing aids and other tools, and we can help determine whether you qualify for the service and assist with getting set up."
   ],
   sections: [
-    ["Captions on a familiar phone", "CaptionCall pairs a normal calling experience with real-time captions on a built-in display. You speak as usual and read the captions of the caller's words, which is especially helpful on long or important calls."],
-    ["A good fit for many older adults", "Phone calls with family, physicians, pharmacies, and services matter a great deal, and they are often where hearing loss is most frustrating. Captioned phones like CaptionCall are frequently a welcome help for older adults who want to stay independent by phone."],
-    ["Frequently available at no cost to those who qualify", "Captioned telephones are commonly provided at no cost to individuals with hearing loss who qualify, generally through a certification process that documents the need. Requirements and paperwork can change, so ask about the current steps when you are ready."],
-    ["Works with, not instead of, hearing aids", "A captioned phone helps with one situation. [Hearing aids](/products/hearing-aids-by-brand/) help across conversations, television, restaurants, and more. Many people use both, and we can help you understand the right combination."],
-    ["A sensible first step", "If the phone has become a source of stress, start with a [hearing evaluation](/hearing-testing/). Understanding your hearing helps us recommend the right blend of devices and communication strategies."]
+    ["Captions on a familiar phone", "CaptionCall pairs a normal calling experience with real-time captions on a bright, built-in display. You speak as usual and read the captions of the caller's words, and the text size can be adjusted so it is comfortable to read. It is especially helpful on the calls that matter most, from family check-ins to appointments."],
+    ["How the captions are produced", "CaptionCall combines advanced voice recognition with human captioning support to transcribe the caller's speech quickly and accurately. Captions appear as the other person speaks, and many models let you save conversations so you can look back at details you might otherwise forget."],
+    ["Works with your existing phone service", "You keep your own telephone number, and the phone is designed to work with familiar features like call waiting, call forwarding, and caller ID. It also offers powerful amplification and speakerphone use, and a mobile app option makes captioned calls available on a smartphone as well."],
+    ["A good fit for many older adults", "Phone calls with family, physicians, pharmacies, and services matter a great deal, and they are often where hearing loss is most frustrating. Captioned phones like CaptionCall are frequently a welcome help for older adults who want to stay independent and confident by phone."],
+    ["Frequently available at no cost to those who qualify", "Captioned telephones are commonly provided at no cost to individuals with hearing loss who qualify, generally through a certification process that documents the need. Requirements and paperwork can change, so ask about the current steps when you are ready, and we can guide you through them."],
+    ["Works with, not instead of, hearing aids", "A captioned phone helps with one situation. [Hearing aids](/products/hearing-aids-by-brand/) help across conversations, television, restaurants, and more. Many people use both, and starting with a [hearing evaluation](/hearing-testing/) helps us recommend the right combination for you."]
   ],
   bulletLinks: [
     ["Schedule a hearing test", "/hearing-testing/"],
     ["Learn about hearing aids", "/products/hearing-aids-by-brand/"],
+    ["Compare CapTel captioned phones", "/products/hearing-aids-by-brand/captel/"],
     ["Browse our services", "/services/"],
     ["About California Hearing Center", "/about-us/"],
-    ["Contact us", "/contact/"],
-    ["San Mateo office", "/contact/san-mateo/"]
+    ["Contact us", "/contact/"]
   ],
   takeaways: [
-    "CaptionCall is a captioned telephone that displays written captions of the caller's speech.",
-    "It is assistive technology for phone calls, not a hearing aid.",
+    "CaptionCall is a captioned telephone that displays written captions of the caller's speech in near real time.",
+    "It works with your existing phone number and features, offers amplification and a mobile app, and is assistive technology for phone calls, not a hearing aid.",
     "Captioned phones are often available at no cost to qualifying individuals through a certification process."
   ],
   faqs: [
@@ -662,15 +668,16 @@ export const corePages: Record<string, PageContent> = {
   headline: "Lyric Extended-Wear Hearing Aids in San Mateo & San Carlos",
   intro: [
     "Lyric is the only hearing aid designed to be worn 24 hours a day for months at a time. Made by Phonak, it is placed deep in the ear canal by a trained provider, remains completely invisible, and is replaced periodically rather than removed each night.",
-    "That single difference changes the whole experience. There is no charging, no fumbling with tiny batteries, and nothing to insert or take out in the morning. Many people who choose Lyric say they simply forget they are wearing anything.",
-    "California Hearing Center offers the Lyric program to Peninsula patients whose ears and hearing loss make them good candidates. It is a distinctive option, and we help you understand whether it is the right one for you."
+    "That single difference changes the whole experience. There is no charging, no fumbling with tiny batteries, and nothing to insert or take out in the morning. Many people who choose Lyric say they simply forget they are wearing anything, and the people around them never know it is there.",
+    "California Hearing Center is a certified Lyric provider, offering the program to Peninsula patients whose ears and hearing loss make them good candidates. It is a distinctive option, and we help you understand whether it is the right one for you before recommending it."
   ],
   sections: [
-    ["A different category of device", "Most hearing aids are removed and stored each night. Lyric stays in the canal continuously, working with your ear's natural anatomy to help direct sound. It is a subscription-style program because the devices are replaced on an ongoing basis."],
-    ["The appeal of always-on hearing", "Because Lyric is worn around the clock, you can hear on the phone, while sleeping, and during exercise without ever handling a device. For people who dislike daily maintenance or want true invisibility, that convenience is the main draw."],
-    ["Candidacy comes first", "Not everyone is a Lyric candidate. Suitability depends on your ear canal size and shape, the type and degree of your [hearing loss](/hearing-testing/), and having a healthy ear canal. We assess this before recommending the program."],
-    ["Weighing Lyric against alternatives", "Lyric suits certain hearing losses and lifestyles, but a rechargeable or behind-the-ear device may offer better performance or value for others. We compare options honestly so you choose with a full picture. See the [Phonak Lyric model details](/products/hearing-aids-by-brand/phonak/phonak-lyric/) for more."],
-    ["Care tied to regular visits", "Because a provider places and replaces the devices, your hearing care naturally includes periodic appointments where we check ear health, comfort, and sound quality."]
+    ["A different category of device", "Most hearing aids are removed and stored each night. Lyric stays deep in the canal continuously, positioned close to the eardrum where it uses your ear's natural anatomy to help direct sound. Because the devices are replaced on an ongoing basis, Lyric is offered as a program rather than a one-time purchase."],
+    ["The appeal of always-on hearing", "Since Lyric is worn around the clock, you can hear on the phone, while you sleep, in the shower, and during exercise without ever handling a device. For people who dislike daily maintenance or want true invisibility, that continuous convenience is the main draw."],
+    ["Natural sound from deep placement", "Sitting deep in the canal gives Lyric some acoustic advantages that larger devices cannot match. Letting your outer ear gather and funnel sound can help reduce wind noise outdoors, lessen the hollow occlusion effect that distorts your own voice, and cut down on the feedback some traditional hearing aids produce."],
+    ["Candidacy comes first", "Not everyone is a Lyric candidate. Suitability depends on your ear canal size and shape, the type and degree of your [hearing loss](/hearing-testing/), and having a healthy ear canal free of excessive wax or other issues. We assess all of this carefully before we recommend the program."],
+    ["Weighing Lyric against alternatives", "Lyric suits certain hearing losses and lifestyles beautifully, but a rechargeable or behind-the-ear device may offer better performance or value for others. We compare options honestly so you choose with a full picture, and you can review the [Phonak Lyric model details](/products/hearing-aids-by-brand/phonak/phonak-lyric/) or [browse all brands](/products/hearing-aids-by-brand/) alongside it."],
+    ["Care tied to regular visits", "Because a provider places and replaces the devices, your hearing care naturally includes periodic appointments. At those visits we check your ear health, comfort, and sound quality, which keeps your hearing on track throughout the year."]
   ],
   bulletLinks: [
     ["Check your candidacy", "/hearing-testing/"],
@@ -681,14 +688,14 @@ export const corePages: Record<string, PageContent> = {
     ["San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "Lyric is a 100% invisible, extended-wear hearing aid worn continuously for months.",
-    "It is placed and replaced by a provider, with no daily charging or battery changes.",
-    "Candidacy depends on ear anatomy, hearing loss, and ear health, so evaluation comes first."
+    "Lyric is a 100% invisible, extended-wear hearing aid worn continuously for months, placed and replaced by a provider.",
+    "It requires no daily charging or battery changes, and its deep-canal placement supports a natural, feedback-resistant sound.",
+    "Candidacy depends on ear anatomy, hearing loss, and ear health, so evaluation always comes first."
   ],
   faqs: [
-    ["What makes Lyric different from other hearing aids?", "Lyric is worn 24 hours a day for months at a time, sits invisibly deep in the ear canal, and is replaced by a provider rather than removed each night. There is no daily charging or battery swapping."],
+    ["What makes Lyric different from other hearing aids?", "Lyric is worn 24 hours a day for months at a time, sits invisibly deep in the ear canal, and is replaced by a provider rather than removed each night. There is no daily charging or battery swapping to do yourself."],
     ["Is Lyric right for everyone?", "No. Candidacy depends on your ear canal shape and size, your hearing loss, and your ear health. We evaluate whether Lyric is appropriate and recommend alternatives when it is not the best fit."],
-    ["How is Lyric paid for?", "Because the devices are replaced on an ongoing basis, Lyric is typically offered as a subscription-style program. We can explain how it works during your consultation so you know what to expect."]
+    ["How is Lyric provided?", "Because the devices are replaced on an ongoing basis, Lyric is offered as a subscription-style program that covers replacements and servicing through the year. We explain how it works during your consultation so you know what to expect."]
   ],
   image: "/assets/phonak.webp",
   imageLabel: "Lyric extended-wear hearing"
@@ -697,15 +704,16 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Oticon Hearing Aids on the Peninsula",
   intro: [
-    "Oticon is a Danish manufacturer known for a distinctive design philosophy it calls BrainHearing: the idea that the brain, not just the ear, does the work of making sense of sound. Rather than aggressively narrowing focus to one speaker, many Oticon devices aim to deliver a fuller, more open soundscape so the brain has the information it needs to orient and follow conversation.",
-    "That open-sound approach appeals to people who dislike the closed-in feeling some directional systems create, and who want a natural sense of their surroundings. California Hearing Center fits Oticon at our San Mateo and San Carlos offices as one of several strong options.",
+    "Founded in 1904, Oticon is a Danish manufacturer that has consistently led the industry with a design philosophy it calls BrainHearing: the idea that the brain, not just the ear, does the work of making sense of sound. Rather than aggressively narrowing focus to one speaker, many Oticon devices aim to deliver a fuller, more open soundscape so the brain has the information it needs to orient and follow conversation.",
+    "That open-sound approach appeals to people who dislike the closed-in feeling some directional systems create, and who want a natural sense of their surroundings. California Hearing Center has partnered with Oticon for over 20 years, and we fit it at our San Mateo and San Carlos offices as one of several strong options.",
     "Whether Oticon is right for you depends on your hearing loss and preferences, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["The BrainHearing philosophy", "Oticon's design leans toward preserving a natural, panoramic sound picture rather than isolating a single voice, which many users find comfortable and orienting in real-world settings."],
+    ["The BrainHearing philosophy", "Oticon's technology acknowledges that hearing happens in the brain, not just the ears. Instead of only making sounds louder, it aims to reduce cognitive load and give the brain clearer signals, targeting less listening effort, better speech recognition in noise, and reduced fatigue after long conversations."],
+    ["Oticon Intent and user-intent sensors", "Oticon's Intent family introduced user-intent sensors that recognize when your listening needs change and adapt automatically, detecting when you are in conversation, listening to music, or moving between environments, and adjusting for seamless transitions. It comes in rechargeable and battery options across multiple technology levels."],
+    ["Oticon Zeal invisible-yet-capable design", "The Oticon Zeal created a new in-the-ear category that pairs a discreet, near-invisible fit with the connectivity, rechargeability, and AI-powered sound of a premium behind-the-ear device. It brings Bluetooth streaming and future-ready Auracast into a design many wearers find barely visible."],
+    ["A full lineup of styles", "Beyond Zeal and Intent, Oticon's Own custom in-ear devices and its receiver-in-canal and behind-the-ear models offer rechargeable and Bluetooth options, so the BrainHearing philosophy can be matched to different needs, dexterity, and cosmetic goals."],
     ["Who Oticon may suit", "People who value spatial awareness, a natural sense of environment, and open sound quality often respond well to Oticon's approach, particularly if they found narrower directional systems fatiguing."],
-    ["A full lineup of styles", "Oticon offers receiver-in-canal, behind-the-ear, and custom in-the-ear options, along with rechargeable models and Bluetooth streaming, so the philosophy can be matched to different needs and dexterity."],
-    ["Where it fits among the brands", "Oticon is one philosophy among several. A person who prefers a more focused, noise-suppressing sound may lean elsewhere, which is exactly why we compare options rather than assume one fits all."],
     ["Verified to your hearing", "Any Oticon device is only as good as its programming. We use real-ear measurement to confirm the output matches your prescription across pitches."]
   ],
   bulletLinks: [
@@ -723,8 +731,9 @@ export const corePages: Record<string, PageContent> = {
   ],
   faqs: [
     ["What makes Oticon different from other brands?", "Oticon emphasizes an open, natural soundscape based on its BrainHearing philosophy, aiming to give the brain a fuller picture of the environment rather than isolating a single speaker. Some listeners find this more comfortable and orienting."],
+    ["What is Oticon Intent?", "Intent is Oticon's flagship family, notable for user-intent sensors that recognize when your listening needs change, such as moving from quiet to conversation to music, and adapt automatically. It is offered in rechargeable and battery versions across several technology levels."],
     ["Is Oticon better than Phonak or ReSound?", "Not better or worse, just different in approach. Oticon leans toward open sound, while other brands emphasize connectivity or focused noise handling. The right choice depends on your hearing and preferences, which we assess together."],
-    ["Do Oticon hearing aids come in rechargeable and Bluetooth models?", "Yes, Oticon offers rechargeable options and Bluetooth streaming across much of its lineup. We help you decide whether those features suit your dexterity, phone, and daily routine."]
+    ["Do Oticon hearing aids come in rechargeable and Bluetooth models?", "Yes, Oticon offers rechargeable options and Bluetooth streaming across much of its lineup, including invisible-style options like the Zeal. We help you decide whether those features suit your dexterity, phone, and daily routine."]
   ],
   image: "/assets/oticon.webp",
   imageLabel: "Oticon open-sound technology"
@@ -733,70 +742,70 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Oticon Intent Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Oticon Intent is a premium hearing aid platform built around the idea that what you are trying to listen to should guide how the device behaves. Rather than assuming everyone in a noisy room wants the same thing, this generation of Oticon technology reads subtle cues about your listening situation and adjusts accordingly.",
-    "At California Hearing Center, we fit and verify Oticon Intent for patients across the Peninsula who want a natural, open sound with strong support in complex environments like restaurants, meetings, and family gatherings.",
-    "The technology is impressive, but the outcome still depends on the fitting. We program these devices to your specific hearing prescription and confirm the results before you rely on them in daily life."
+    "Oticon Intent is Oticon's flagship platform, built around a simple idea: what you are trying to listen to should guide how the hearing aid behaves. Rather than assuming everyone in a busy room wants the same thing, Intent reads subtle cues about your situation and adjusts to support the conversation or sound you are focused on.",
+    "It runs on Oticon's Sirius platform and introduces what the company calls 4D user-intent sensors, which draw on cues like your conversation activity, head and body movement, and the surrounding acoustics to understand where your attention is going. Paired with the second-generation Deep Neural Network, the goal is a full, natural sound scene rather than a single narrow beam of speech.",
+    "At California Hearing Center, we fit and verify Oticon Intent for patients across the Peninsula who want an open, natural sound with strong support in complex places like restaurants, meetings, and family gatherings. The technology is impressive, but the outcome still depends on the fitting, so we program these devices to your prescription and confirm the results before you rely on them."
   ],
   sections: [
-    ["What the platform is designed to do", "Oticon has long favored an approach that keeps more of the surrounding soundscape available to the brain rather than aggressively narrowing to a single speaker. Intent builds on that philosophy with sensor and processing technology aimed at supporting you in shifting, real-world environments."],
-    ["Who it may suit", "Intent is often a good match for active listeners who move between quiet and noisy settings, value connectivity, and want premium speech support. Whether it is right for you depends on your audiogram, speech-in-noise results, dexterity, and listening goals."],
-    ["Fitting and real-ear verification", "We use [real-ear measurement during the fitting](/hearing-aid-fitting/) to confirm that amplified sound reaches your eardrum at prescribed targets. This step matters far more to your everyday experience than any single headline feature."],
-    ["Connectivity and daily use", "Modern Oticon devices typically support smartphone streaming and app-based control. During your fitting we set up pairing, walk through charging and cleaning, and make sure you are comfortable handling the devices."],
-    ["Trial, follow-up, and adjustment", "Your brain needs time to adapt to hearing more sound again. We schedule follow-up visits to fine-tune clarity, comfort, and loudness in the places that matter most to you."]
+    ["The BrainHearing philosophy", "Oticon has long favored keeping more of the surrounding soundscape available to the brain rather than aggressively narrowing to one speaker. Intent continues that BrainHearing approach, aiming to give your brain access to a balanced, complete sound picture so listening feels more natural and takes less effort."],
+    ["Sirius platform and 4D sensors", "Intent is built on Oticon's Sirius platform, which supports the 4D user-intent sensor technology. By combining information about conversation, movement, and the acoustic environment, the device adapts to what you appear to be listening to and shifts its support as you move between quiet and noisy settings."],
+    ["Deep Neural Network sound processing", "The onboard Deep Neural Network has been trained on a large library of real-world sound scenes, which helps the hearing aid separate speech from noise while preserving the natural character of sound. In practice, this is aimed at clearer conversation in difficult rooms without stripping away the spatial cues your brain relies on."],
+    ["Fitting and real-ear verification", "Headline features only matter if the sound reaching your eardrum is correct. We use [real-ear measurement during the fitting](/hearing-aid-fitting/) to confirm that amplification meets your prescribed targets. This step influences your everyday experience far more than any single spec on a brochure."],
+    ["Connectivity, daily use, and follow-up", "Modern Oticon devices support smartphone streaming and app-based control through the Oticon Companion app. During your fitting we set up pairing, review charging and cleaning, and make sure you can handle the devices comfortably. Because your brain needs time to adapt to hearing more sound again, we schedule follow-up visits to fine-tune clarity and comfort in the places that matter most to you."]
   ],
   bulletLinks: [
     ["Start with a hearing evaluation", "/hearing-testing/"],
     ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore other Oticon models", "/products/hearing-aids-by-brand/oticon/"],
     ["Compare other brands", "/products/hearing-aids-by-brand/"],
     ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
-    ["Tinnitus support features", "/tinnitus/"],
     ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [
-    "Oticon Intent is a premium platform designed to support you across changing, real-world listening situations.",
-    "The right choice depends on your hearing, lifestyle, and goals, not the brand name alone.",
-    "Verified fitting and follow-up care determine how well any premium device performs for you."
+    "Oticon Intent runs on the Sirius platform with 4D user-intent sensors and a Deep Neural Network, designed to support you across changing listening situations.",
+    "Its BrainHearing approach aims to give your brain a full, natural sound scene rather than a single narrow beam of speech.",
+    "The right choice depends on your hearing, lifestyle, and goals, and verified fitting plus follow-up care determine how well it performs for you."
   ],
   faqs: [
-    ["Is Oticon Intent right for me?", "It may be, but that depends on your hearing test results, how you spend your day, your dexterity, and your priorities. We compare Oticon Intent against other options during your consultation so the recommendation fits your needs rather than a single brand."],
-    ["What makes premium hearing aids different from basic models?", "Premium platforms generally offer more sophisticated processing for difficult environments like noisy restaurants, along with fuller connectivity. Basic models can still work well in quieter lifestyles. We help you weigh the tradeoffs honestly."],
-    ["Do you verify the fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription, then adjust over follow-up visits as your brain adapts."]
+    ["What are the 4D user-intent sensors in Oticon Intent?", "They are sensors that draw on cues such as your conversation activity, head and body movement, and the acoustic environment to estimate what you are trying to listen to. The hearing aid then adapts its support to match, which is meant to help most in shifting, real-world settings."],
+    ["Is Oticon Intent right for me?", "It may be, but that depends on your hearing test results, how you spend your day, your dexterity, and your priorities. We compare Intent against other options during your consultation so the recommendation fits your needs rather than a single brand name."],
+    ["Do you verify the fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription, then adjust over follow-up visits as your brain adapts to hearing more sound."]
   ],
   image: "/assets/oticon.webp",
   imageLabel: "Oticon Intent premium platform"
 },
   "/products/hearing-aids-by-brand/oticon/oticon-zeal/": {
   kicker: "Hearing Aid Technology",
-  headline: "Oticon Zeal Hearing Aids on the Peninsula",
+  headline: "Oticon Zeal Invisible Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Oticon Zeal is part of Oticon's hearing aid lineup, offered to California Hearing Center patients who want dependable, well-supported technology from a manufacturer known for a natural, brain-friendly approach to sound.",
-    "Choosing a hearing aid is less about memorizing a model name and more about matching the device to your hearing loss, your ears, and the situations where listening feels hardest. That is where our fitting process comes in.",
-    "We fit Oticon devices in San Mateo and San Carlos, program them precisely to your prescription, and support them over time so the technology keeps working the way it should."
+    "Oticon Zeal is Oticon's take on a long-standing wish among hearing aid wearers: a device that sits discreetly in the ear yet still offers the performance, rechargeability, and connectivity people expect from a modern premium hearing aid. It is an in-the-ear design meant to be invisible or barely visible in everyday wear.",
+    "For years, people faced a trade-off. A tiny in-the-ear device usually meant giving up streaming and rechargeable batteries, while the fuller-featured behind-the-ear styles were more visible. Zeal is built to narrow that gap, pairing a very discreet fit with the kind of features that used to require a larger device.",
+    "At California Hearing Center, we fit Oticon Zeal for Peninsula patients who want maximum discretion without stepping down to basic technology. Because a deep in-ear device depends heavily on your ear anatomy, the evaluation and fitting matter as much as the hardware itself."
   ],
   sections: [
-    ["Where Oticon Zeal fits in", "Oticon offers a range of technology levels and styles so that people with different hearing needs, budgets, and lifestyles can find an appropriate match. We help you understand where a given model sits and whether it aligns with your goals."],
-    ["Selection starts with your hearing", "Before recommending any device, we complete a [thorough hearing evaluation](/hearing-testing/) that looks at your thresholds, speech understanding, and the everyday moments you find most challenging. Those results drive the recommendation."],
-    ["Programming and verification", "We program the devices to your specific hearing prescription and use real-ear measurement to confirm the output at your eardrum. This verification step is what turns good hardware into a genuinely useful hearing solution."],
-    ["Comfort, handling, and connectivity", "At your fitting we check physical comfort, set up any smartphone connectivity, and practice charging, cleaning, and troubleshooting so you leave confident about daily use."],
-    ["Ongoing care", "Follow-up visits let us fine-tune the sound as your brain adapts, and our team is here for [adjustments and repairs](/services/hearing-aid-repair/) down the road."]
+    ["A discreet in-the-ear design", "Zeal is a completely-in-canal style intended to be invisible or nearly invisible in most ears. It is aimed at people who want the confidence of a device others do not notice, while still keeping the everyday conveniences that make hearing aids easy to live with."],
+    ["Built on the Sirius platform", "Zeal uses the same Sirius platform found in Oticon Intent, which brings Oticon's BrainHearing approach and its Deep Neural Network sound processing into a much smaller shell. The intent is a full, natural sound scene and clearer speech in noise, delivered from a device that stays out of sight."],
+    ["Rechargeable and connected", "Unlike older invisible custom devices that relied on tiny disposable batteries and offered little connectivity, Zeal is designed as a rechargeable device with Bluetooth streaming, including support for newer standards like Bluetooth LE Audio and Auracast broadcast audio through the Oticon Companion app. It also carries a strong moisture and dust resistance rating for everyday durability."],
+    ["Fitting a deep in-ear device", "Because Zeal sits deep in the canal, performance depends on a precise fit. We can fit many patients with medical-grade silicone domes, or take impressions for custom micro-molds when more amplification or a more secure fit is needed. We then confirm the result with [real-ear verification](/hearing-aid-fitting/) so the sound in your ear matches your prescription."],
+    ["Is Zeal the right invisible option?", "Zeal is generally suited to milder-to-moderate hearing losses and to people who prioritize discretion. Availability, candidacy, and whether an invisible style will meet your needs are all things we confirm during your consultation, and we will say plainly when a different style would serve you better."]
   ],
   bulletLinks: [
-    ["Book a hearing evaluation", "/hearing-testing/"],
-    ["How fitting works", "/hearing-aid-fitting/"],
-    ["Explore all brands", "/products/hearing-aids-by-brand/"],
-    ["Repairs and maintenance", "/services/hearing-aid-repair/"],
-    ["San Carlos office", "/contact/san-carlos/"],
-    ["Read patient reviews", "/reviews/"]
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Compare Oticon Intent", "/products/hearing-aids-by-brand/oticon/oticon-intent/"],
+    ["Explore all Oticon models", "/products/hearing-aids-by-brand/oticon/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Visit our San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "Oticon Zeal is one option within Oticon's broader hearing aid lineup.",
-    "The best model for you depends on your hearing test, ears, and listening priorities.",
-    "Verified fitting and follow-up support matter more than any single feature."
+    "Oticon Zeal is a discreet, in-the-ear design intended to be invisible or barely visible while keeping modern features.",
+    "It runs on the Sirius platform with BrainHearing processing, rechargeability, and Bluetooth connectivity.",
+    "A deep in-ear fit depends on your ear anatomy, so candidacy, fitting, and verification are essential."
   ],
   faqs: [
-    ["How do I know which Oticon model is right for me?", "We match the technology to your hearing evaluation, lifestyle, dexterity, and budget. Rather than steering you toward one device, we explain the tradeoffs so you can choose with confidence."],
-    ["Can I try hearing aids before committing?", "Hearing aids are fit and adjusted over an initial period so you can experience them in real life. We talk through the process, follow-up schedule, and what to expect during your consultation."],
-    ["Do you service the devices after purchase?", "Yes. We provide cleanings, adjustments, reprogramming, and repair support so your hearing aids keep performing over time."]
+    ["How is Zeal different from older invisible hearing aids?", "Traditional completely-in-canal devices often required disposable batteries and offered little or no wireless streaming. Zeal is designed as a rechargeable, Bluetooth-connected invisible device built on Oticon's Sirius platform, so you get discretion without giving up modern conveniences."],
+    ["Am I a candidate for an invisible in-ear device?", "It depends on the size and shape of your ear canal and the type and degree of your hearing loss. We evaluate your ears and your hearing test, then recommend Zeal only if a discreet in-ear style is a good fit for you."],
+    ["Do you verify how it sounds in my ear?", "Yes. After fitting with a dome or a custom mold, we use real-ear measurement to confirm the sound reaching your eardrum matches your prescription, and we fine-tune it over follow-up visits."]
   ],
   image: "/assets/oticon-zeal.png",
   imageLabel: "Oticon hearing technology"
@@ -805,16 +814,17 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Phonak Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Phonak, part of the Swiss Sonova group, is one of the largest and most versatile hearing aid manufacturers. It is especially well known for connectivity, a broad product lineup, its Roger remote-microphone system for difficult listening situations, and Lyric, an extended-wear device placed deep in the canal that can be worn continuously for months at a time.",
-    "That range makes Phonak a frequent match for people with demanding work, social, or classroom environments, as well as those seeking a truly invisible, worn-around-the-clock option. California Hearing Center fits Phonak across our San Mateo and San Carlos offices.",
-    "As with any manufacturer, the right Phonak device and whether Phonak is the right brand at all depends on your hearing loss and lifestyle, confirmed through [professional fitting](/hearing-aid-fitting/)."
+    "Founded in Switzerland more than 75 years ago and now part of the Sonova group, Phonak has spent decades at the forefront of hearing technology, pairing Swiss precision engineering with cutting-edge research. It is especially well known for connectivity, a broad product lineup, its Roger remote-microphone system for difficult listening situations, and Lyric, an extended-wear device placed deep in the canal that can be worn continuously for months at a time.",
+    "That range makes Phonak a frequent match for people with demanding work, social, or classroom environments, as well as those seeking a truly invisible, worn-around-the-clock option. California Hearing Center partnered with Phonak for its commitment to innovation and quality, and we fit the full lineup across our San Mateo and San Carlos offices.",
+    "As with any manufacturer, the right Phonak device, and whether Phonak is the right brand at all, depends on your hearing loss and lifestyle, confirmed through [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["A broad, flexible lineup", "Phonak spans receiver-in-canal, behind-the-ear, custom, and power styles, supporting mild through profound hearing loss with rechargeable options across much of the range."],
-    ["Connectivity and streaming", "Phonak is recognized for versatile Bluetooth connectivity, including direct calls and streaming from many phones, which appeals to people who spend their days on calls and media."],
-    ["Roger for tough situations", "The Roger microphone system can transmit a speaker's voice directly to the hearing aids across a noisy room, restaurant, meeting, or lecture hall, helping in situations where any hearing aid alone struggles."],
-    ["Lyric extended-wear", "Lyric sits deep in the ear canal and is worn continuously for extended periods, offering an invisible, hassle-free option for suitable candidates. Candidacy depends on ear anatomy, hearing loss, and lifestyle."],
-    ["Programmed and verified for your ears", "Whichever Phonak model suits you, we program and confirm it with real-ear measurement so the output truly matches your prescription."]
+    ["A broad, flexible lineup", "Phonak spans receiver-in-canal, behind-the-ear, custom, and power styles, supporting mild through profound hearing loss with rechargeable options across much of the range, so we can match the technology to your dexterity and cosmetic goals."],
+    ["SmartSpeech and AutoSense OS", "Phonak's SmartSpeech Technology works with its AutoSense operating system to analyze your listening environment and adapt automatically. Features such as StereoZoom for focusing on a single voice in noise, a Speech Enhancer for soft speech, and dynamic noise cancellation target better speech understanding without manual fiddling."],
+    ["Roger for tough situations", "Roger is Phonak's wireless remote-microphone system, designed for the hardest listening situations, background noise and distance. With RogerDirect it can transmit a speaker's voice straight to your hearing aids across a noisy restaurant, meeting, or lecture hall, helping where any hearing aid alone struggles."],
+    ["AI-driven Infinio platform", "Phonak's newest platform, Infinio, introduces a dual-chip architecture, one chip for core functions and a dedicated AI chip that processes sound through a deep neural network. The goal is real-time separation of speech from noise and reduced listening effort in challenging environments."],
+    ["Lyric extended-wear", "Lyric is the world's only 100% invisible hearing aid, placed deep in the ear canal by a trained professional and worn around the clock for months at a time, with no batteries to change. It offers an invisible, hassle-free option, and even tinnitus relief day and night, for suitable candidates. Candidacy depends on ear anatomy, hearing loss, and lifestyle."],
+    ["Programmed and verified for your ears", "Whichever Phonak model suits you, results depend on the fitting. We program and confirm every device with real-ear measurement so the output truly matches your prescription across pitches."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -830,9 +840,10 @@ export const corePages: Record<string, PageContent> = {
     "Which brand wins for you comes down to your test results and daily listening, plus precise, verified programming."
   ],
   faqs: [
-    ["What is Phonak best known for?", "Phonak is widely recognized for connectivity, a broad range of styles from mild to profound loss, the Roger remote-microphone system for noisy environments, and Lyric, an extended-wear device worn deep in the canal."],
-    ["What is a Phonak Lyric and who is it for?", "Lyric is placed deep in the ear canal and worn continuously for extended periods, making it invisible and low-maintenance. It suits certain candidates depending on ear anatomy, hearing loss, and lifestyle, which we evaluate during a consultation."],
-    ["Can Phonak help me hear in noisy restaurants?", "Phonak devices include noise-management features, and the optional Roger microphone can send a companion's voice directly to your hearing aids across a loud room. We help determine whether these tools fit your needs."]
+    ["What is Phonak best known for?", "Phonak is widely recognized for Swiss engineering and connectivity, a broad range of styles from mild to profound loss, the Roger remote-microphone system for noisy environments, the AI-driven Infinio platform, and Lyric, an extended-wear device worn deep in the canal."],
+    ["What is a Phonak Lyric and who is it for?", "Lyric is the only 100% invisible hearing aid, placed deep in the ear canal by a professional and worn continuously for months at a time with no battery changes. It suits certain candidates depending on ear anatomy, hearing loss, and lifestyle, which we evaluate during a consultation."],
+    ["Can Phonak help me hear in noisy restaurants?", "Yes. Phonak's SmartSpeech and AutoSense features manage noise automatically, and the optional Roger microphone can send a companion's voice directly to your hearing aids across a loud room. We help determine whether these tools fit your needs."],
+    ["What is the Phonak Infinio platform?", "Infinio is Phonak's newest platform, built on a dual-chip design that adds a dedicated AI chip to process sound through a deep neural network. It aims to separate speech from noise in real time and reduce listening effort in demanding settings."]
   ],
   image: "/assets/phonak.webp",
   imageLabel: "Phonak connectivity and Roger technology"
@@ -841,34 +852,34 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Phonak Infinio Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Phonak Infinio is a premium hearing aid platform from one of the most established names in hearing technology. Phonak has built its reputation on strong performance in noise and reliable connectivity, and Infinio is positioned as a flagship generation of that work.",
-    "For many patients, the single hardest listening situation is a busy restaurant or a group conversation with competing voices. Premium platforms like Infinio are engineered with those exact moments in mind.",
-    "California Hearing Center fits Phonak Infinio for Peninsula patients and, just as importantly, verifies and fine-tunes the fitting so the technology delivers in real life rather than just on a spec sheet."
+    "Phonak Infinio is Phonak's premium platform, engineered to make conversation clearer in the kinds of settings people find hardest, from crowded restaurants to lively family gatherings. It combines advanced AI-driven sound processing with Phonak's long heritage of Swiss engineering.",
+    "The headline of the range is the Infinio Sphere model, which uses a dual-chip architecture. One processor handles everyday hearing while a second chip is dedicated to real-time AI processing, giving the device more computational power to separate speech from noise as conditions change around you.",
+    "At California Hearing Center, we fit and optimize Phonak Infinio for patients across the Peninsula. As with any premium device, the technology is only part of the story, so we program these hearing aids to your prescription and verify the result before you count on them day to day."
   ],
   sections: [
-    ["Built for speech in noise", "Phonak's premium platforms focus heavily on helping you follow speech when the background is loud. Whether a given model is right for you depends on your hearing profile and how often you face those demanding environments."],
-    ["Who tends to benefit", "Infinio can be a strong option for active people who spend time in noisy settings, want robust streaming, and prioritize clarity. We confirm the fit against your [hearing test results](/hearing-testing/) and daily listening goals."],
-    ["The fitting is where it comes together", "We program Infinio to your prescription and use real-ear measurement to verify the output at your eardrum. Even flagship hearing aids underperform when they are not verified and adjusted to the individual."],
-    ["Connectivity and rechargeability", "Modern Phonak devices generally offer smartphone and device streaming plus rechargeable options. During your fitting we set up pairing and walk through charging, cleaning, and handling."],
-    ["Follow-up and adaptation", "Expect a period of adjustment as your brain relearns everyday sound. Follow-up visits let us refine loudness, comfort, and clarity in the specific places you care about."]
+    ["Dual-chip processing in the Sphere model", "At the heart of the Infinio Sphere is a dual-chip design that separates tasks for better performance. Dedicating one chip to real-time AI processing frees up capacity to enhance speech in complex, shifting environments, which is where many people struggle most with hearing loss."],
+    ["Speech clarity in noise", "Infinio's sound processing is built to lift speech out of background noise while keeping it sounding natural. The aim is to make conversations easier to follow in busy rooms and to reduce the listening effort that leaves people tired after a noisy evening out."],
+    ["AutoSense OS and automatic adaptation", "Infinio runs on Phonak's AutoSense operating system, which recognizes your surroundings and adjusts settings automatically as you move between quiet and noisy places. Features like Speech Enhancer and dynamic noise cancellation work in the background so you are not constantly reaching for controls."],
+    ["Connectivity and accessories", "Infinio offers universal Bluetooth connectivity for direct streaming and hands-free calls from both iOS and Android phones, with adjustments and programs available through the myPhonak app. Optional accessories such as the TV Connector and Roger microphones can extend performance for television and challenging group settings like meetings."],
+    ["Fitting and real-ear verification", "The features only help if the sound is set correctly for your ears. We use [real-ear measurement](/hearing-aid-fitting/) to confirm amplification meets your prescribed targets, then fine-tune clarity, comfort, and loudness over follow-up visits as your brain adapts."]
   ],
   bulletLinks: [
-    ["Get your hearing tested", "/hearing-testing/"],
-    ["Fitting and verification", "/hearing-aid-fitting/"],
-    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"],
-    ["Custom hearing protection", "/services/hearing-protection/"],
-    ["Repairs and adjustments", "/services/hearing-aid-repair/"],
-    ["Contact our team", "/contact/"]
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all Phonak models", "/products/hearing-aids-by-brand/phonak/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [
-    "Phonak Infinio is a premium platform focused on clarity in noisy, demanding environments.",
-    "Suitability depends on your hearing, lifestyle, and how often you face difficult listening situations.",
-    "Real-ear verification and follow-up care are what make a flagship device perform for you."
+    "Phonak Infinio is a premium platform, with the Sphere model using a dual-chip design that dedicates a processor to real-time AI for speech in noise.",
+    "AutoSense OS adapts automatically as your environment changes, with universal Bluetooth streaming and myPhonak app control.",
+    "Verified fitting and follow-up care determine how well the technology performs for your specific hearing."
   ],
   faqs: [
-    ["Is Phonak Infinio good for noisy restaurants?", "Phonak's premium platforms are designed with challenging, noisy environments in mind, which is one reason many patients consider them. We confirm whether it is the right match for your specific hearing and lifestyle during your consultation."],
-    ["Are Phonak Infinio hearing aids rechargeable?", "Phonak generally offers rechargeable options across its premium range. We help you choose between rechargeable and battery styles based on your dexterity, travel habits, and preferences."],
-    ["How is Infinio different from a basic hearing aid?", "Premium platforms typically offer more advanced processing for difficult listening and fuller connectivity. A basic device may suit a quieter lifestyle. We explain the tradeoffs so the choice fits your needs and budget."]
+    ["What is the dual-chip design in Phonak Infinio?", "The Infinio Sphere model uses two processors: one for general hearing and one dedicated to real-time AI sound processing. Splitting the work gives the device more capacity to separate speech from noise in demanding environments."],
+    ["Will Infinio work with my phone?", "Infinio supports direct Bluetooth streaming and hands-free calls from both iOS and Android smartphones, and you can make adjustments through the myPhonak app. We set up pairing during your fitting so you leave comfortable using it."],
+    ["Is Infinio worth it over a basic hearing aid?", "Premium platforms like Infinio generally offer more sophisticated processing for noisy, changing environments and fuller connectivity. If your lifestyle is quieter, a more modest device may serve you well. We weigh the trade-offs honestly during your consultation."]
   ],
   image: "/assets/phonak-infinio.webp",
   imageLabel: "Phonak Infinio premium platform"
@@ -877,34 +888,34 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Invisible Hearing Aids",
   headline: "Phonak Lyric: 100% Invisible, Extended-Wear Hearing in San Mateo & San Carlos",
   intro: [
-    "Phonak Lyric is unlike any other hearing aid we fit. It is placed deep inside the ear canal by a trained provider, sits completely out of sight, and is worn continuously, day and night, for months at a time before it is replaced.",
-    "Because Lyric stays in the canal around the clock, there are no batteries to change, no nightly charging, and nothing to put in or take out each day. For the right candidate, it is the closest thing to simply hearing better without thinking about a device at all.",
-    "Lyric is not for everyone, and candidacy depends on the size and shape of your ear canal, your hearing loss, and your ear health. California Hearing Center evaluates whether you are a good fit before recommending it."
+    "Phonak Lyric is a genuinely different kind of hearing aid. It is 100% invisible, placed deep in the ear canal by a trained provider, and worn continuously for months at a time. A helpful comparison is contact lenses, which correct vision without changing how you look, and Lyric aims to do the same for hearing.",
+    "Because it stays in place around the clock, there is nothing to insert or remove each morning, no batteries to change, and no nightly charging. Many people who wear Lyric say they simply forget it is there, and no one around them realizes they are wearing anything at all.",
+    "California Hearing Center is a certified Lyric provider, and our specially trained audiologists place and tune each device for your individual ears. Lyric is a distinctive option that suits some people beautifully and is not right for others, so candidacy always comes first."
   ],
   sections: [
-    ["How Lyric works", "Lyric is positioned deep in the ear canal close to the eardrum, which allows it to use your ear's natural anatomy to help direct and shape sound. It remains in place continuously rather than being removed each night."],
-    ["The extended-wear experience", "Because you wear Lyric 24 hours a day for an extended period, you can hear on the phone, in the shower's environment, while sleeping, and while exercising without handling a device. When the device reaches the end of its wear cycle, your provider replaces it."],
-    ["Who is a candidate", "Candidacy depends on ear canal anatomy, the degree and type of your hearing loss, and a healthy ear canal free of certain conditions. A [hearing evaluation](/hearing-testing/) and an ear exam help us determine whether Lyric is appropriate for you."],
-    ["What it does not replace", "Lyric suits certain hearing losses and lifestyles but is not the right answer for every situation. For some patients, a rechargeable or behind-the-ear style offers better performance or value. We compare honestly."],
-    ["Placement and follow-up", "Because Lyric is placed and replaced by a provider, your care is naturally tied to regular visits, where we check comfort, ear health, and sound quality."]
+    ["A completely invisible placement", "Lyric is positioned deep within the ear canal, just millimeters from the eardrum, which keeps it entirely out of sight. Soft, biocompatible seals hold it comfortably in place and let it work with your ear's natural anatomy to direct sound where it needs to go."],
+    ["Around-the-clock hearing", "Because Lyric is worn continuously, you can hear on the phone, while you sleep, in the shower, and during exercise without ever handling a device. For people who dislike daily maintenance or want true invisibility, that always-on convenience is the main appeal."],
+    ["Natural sound by design", "Sitting deep in the canal gives Lyric some acoustic advantages. Using your outer ear to gather and direct sound can help reduce wind noise, lessen the hollow occlusion effect that distorts your own voice, and cut down on the feedback and whistling that some traditional devices produce."],
+    ["A subscription-based program", "Unlike hearing aids you buy outright, Lyric is offered through an annual subscription. Each device runs for months and is replaced by your provider when needed, and the subscription covers replacements and servicing through the year, so there is nothing for you to clean, charge, or repair yourself."],
+    ["Candidacy and honest comparison", "Lyric works for many people with mild to moderately severe hearing loss, but certain ear canal shapes or ear-health issues can rule it out. We evaluate your [hearing](/hearing-testing/) and your ears first, and if a rechargeable or behind-the-ear device would serve you better, we will tell you plainly. You can also see our [Lyric program overview](/products/hearing-aids-by-brand/lyric/) for more."]
   ],
   bulletLinks: [
-    ["Check your candidacy with a hearing test", "/hearing-testing/"],
-    ["Learn about the Lyric program", "/products/hearing-aids-by-brand/lyric/"],
+    ["Check your candidacy", "/hearing-testing/"],
+    ["Lyric program overview", "/products/hearing-aids-by-brand/lyric/"],
+    ["Explore all Phonak models", "/products/hearing-aids-by-brand/phonak/"],
     ["Compare other brands", "/products/hearing-aids-by-brand/"],
-    ["Earwax removal before fitting", "/services/earwax-removal/"],
-    ["Book at San Mateo", "/contact/san-mateo/"],
-    ["Book at San Carlos", "/contact/san-carlos/"]
+    ["Earwax removal", "/services/earwax-removal/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [
-    "Phonak Lyric is a 100% invisible, extended-wear hearing aid placed deep in the canal by a provider.",
-    "It is worn continuously for months with no daily charging or battery changes.",
-    "Candidacy depends on ear canal anatomy, hearing loss, and ear health, so an evaluation comes first."
+    "Phonak Lyric is a 100% invisible hearing aid worn continuously for months, placed and replaced by a provider.",
+    "There is no daily insertion, removal, charging, or battery changing, and its deep-canal placement supports a natural sound.",
+    "Lyric is offered as an annual subscription, and candidacy depends on your ear anatomy, hearing loss, and ear health."
   ],
   faqs: [
-    ["Can other people see Lyric in my ear?", "No. Lyric sits deep in the ear canal and is designed to be completely invisible from the outside, which is one of the main reasons patients ask about it."],
-    ["Do I take Lyric out at night?", "No. Lyric is an extended-wear device meant to stay in the canal continuously, including during sleep, until your provider replaces it at the end of its wear period."],
-    ["Is everyone a candidate for Lyric?", "No. Candidacy depends on your ear canal size and shape, your hearing loss, and your ear health. We evaluate this before recommending Lyric and will suggest alternatives if it is not a good fit."]
+    ["How is Lyric different from other hearing aids?", "Lyric is worn 24 hours a day for months at a time, sits invisibly deep in the ear canal, and is placed and replaced by a certified provider rather than removed each night. There is no daily charging, cleaning, or battery swapping to do yourself."],
+    ["Does Lyric require a subscription?", "Yes. Because the devices are replaced on an ongoing basis, Lyric is offered as an annual subscription that covers replacement devices and servicing for the year. We explain how it works during your consultation so you know what to expect."],
+    ["Is Lyric right for everyone?", "No. It works well for many people with mild to moderately severe hearing loss, but certain ear canal shapes or medical conditions can make someone an unsuitable candidate. We evaluate your situation first and recommend alternatives when Lyric is not the best fit."]
   ],
   image: "/assets/phonak.webp",
   imageLabel: "Phonak Lyric invisible hearing"
@@ -913,15 +924,16 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "ReSound Hearing Aids for Peninsula Patients",
   intro: [
-    "ReSound, a Danish manufacturer, built an early reputation for connectivity and was among the first to offer direct streaming to iPhone. That heritage continues: ReSound is often a strong match for people deep in the Apple ecosystem who want calls, music, and audio to flow directly to their ears, along with capable app control.",
-    "Beyond streaming, ReSound is known for a natural, organic approach to sound and a full range of styles. California Hearing Center fits ReSound at both the San Mateo and San Carlos offices as one option among several.",
+    "ReSound, part of the Danish GN group, has led the hearing industry with a string of firsts since introducing the world's first Wide Dynamic Range Compression hearing aid in the early 1990s. It went on to create the first Made for iPhone hearing aids and, more recently, the first hearing aids to support Auracast streaming. That heritage makes ReSound a strong match for people who want calls, music, and audio to flow directly to their ears with capable app control.",
+    "Beyond connectivity, ReSound is known for a natural, organic approach to sound and a full range of styles. California Hearing Center is proud to offer ReSound's lineup at both the San Mateo and San Carlos offices, and our audiologists are trained to help you experience its smart connectivity features.",
     "Whether ReSound suits you comes down to your hearing loss, your devices, and your listening priorities, which we confirm through testing and [expert fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["A connectivity heritage", "ReSound was a pioneer in direct-to-iPhone streaming and continues to emphasize seamless smartphone integration, appealing to people who want their hearing aids to double as wireless earbuds for calls and media."],
-    ["Apple and Android friendly", "ReSound supports direct streaming and app control across many phones. For iPhone users in particular, the integration tends to be smooth and intuitive."],
-    ["Natural sound approach", "ReSound aims for an open, natural sound quality that many listeners find comfortable in everyday environments, balancing clarity with a realistic sense of surroundings."],
-    ["Full range of styles", "Receiver-in-canal, behind-the-ear, and custom options are available, with rechargeable models across much of the lineup so connectivity does not force a compromise on style."],
+    ["A pioneering connectivity heritage", "ReSound helped invent modern hearing-aid connectivity, from the first direct-to-iPhone streaming to leadership in Auracast, and continues to emphasize seamless smartphone integration for people who want their hearing aids to double as wireless earbuds."],
+    ["Auracast: the future of connectivity", "ReSound was first to bring Auracast Bluetooth LE to hearing aids. This lets you connect directly to public audio systems in theaters, airports, and lecture halls without extra receivers, stream from multiple devices, and enjoy better sound with lower power use as Auracast rolls out more widely."],
+    ["AI-powered sound processing", "ReSound's Vivia platform features a deep-neural-network AI system trained on huge amounts of real speech. It targets enhanced speech understanding in noise, an Intelligent Focus that prioritizes sound from where you are looking, and real-time adaptation to changing environments."],
+    ["The ReSound Vivia family", "Vivia is ReSound's flagship: a very small receiver-in-ear device with long battery life, Intelligent Focus, and Auracast connectivity for a vivid, enhanced hearing experience. We help match the right style and technology level to your needs."],
+    ["Apple and Android friendly", "ReSound supports direct streaming and app control across many phones. For iPhone users in particular the integration tends to be smooth and intuitive, and many Android devices are supported too."],
     ["Programmed and verified", "The streaming features are only part of the picture. We verify amplification with real-ear measurement so the device performs correctly for your hearing, not just as a headset."]
   ],
   bulletLinks: [
@@ -938,45 +950,46 @@ export const corePages: Record<string, PageContent> = {
     "No manufacturer suits everyone; results come from the fitting and verification, not the logo."
   ],
   faqs: [
-    ["What is ReSound known for?", "ReSound is recognized for connectivity, including its early leadership in direct-to-iPhone streaming, along with a natural sound approach and capable smartphone app control across a full range of styles."],
-    ["Are ReSound hearing aids good for iPhone users?", "ReSound has a strong track record with Apple integration, and many iPhone users find streaming calls and audio smooth and intuitive. We confirm compatibility with your specific phone during the consultation."],
-    ["Do ReSound hearing aids work with Android phones?", "Yes, many ReSound models support direct streaming and app control on compatible Android devices as well as iPhones. We check your phone's compatibility and set everything up during the fitting."]
+    ["What is ReSound known for?", "ReSound, part of the GN group, is recognized for pioneering connectivity, including the first Made for iPhone hearing aids and the first with Auracast, along with a natural sound approach, AI-powered processing in its Vivia platform, and capable app control across a full range of styles."],
+    ["What is Auracast and why does it matter?", "Auracast is a Bluetooth broadcast technology that lets hearing aids connect directly to public audio systems, in theaters, airports, and lecture halls, without extra equipment. ReSound was the first to offer it, which can future-proof your hearing investment as venues adopt it."],
+    ["Are ReSound hearing aids good for iPhone users?", "ReSound has a strong track record with Apple integration, and many iPhone users find streaming calls and audio smooth and intuitive. Many Android phones are supported too. We confirm compatibility with your specific phone during the consultation."],
+    ["What is ReSound Vivia?", "Vivia is ReSound's flagship platform, featuring AI-powered sound processing, Intelligent Focus that prioritizes speech from where you're looking, long battery life, and Auracast connectivity in a very compact receiver-in-ear design."]
   ],
   image: "/assets/resound.webp",
   imageLabel: "ReSound connectivity and natural sound"
 },
   "/products/hearing-aids-by-brand/resound/resound-vivia/": {
   kicker: "Hearing Aid Technology",
-  headline: "ReSound Vivia Hearing Aids for Peninsula Patients",
+  headline: "ReSound Vivia Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "ReSound Vivia is a current premium hearing aid line from ReSound, a manufacturer known for natural sound quality and strong smartphone connectivity. It represents the kind of flagship technology California Hearing Center offers patients who want a modern, well-connected hearing solution.",
-    "As with any hearing aid, the model name is only part of the story. What determines your everyday experience is how well the device is matched to your hearing loss and how carefully it is programmed and verified.",
-    "We fit ReSound Vivia in our San Mateo and San Carlos offices and support it with the follow-up care that turns premium hardware into reliable, comfortable hearing."
+    "ReSound Vivia is ReSound's premium platform, built around artificial intelligence and a dedicated processing chip that work together to make conversation easier to follow, even when several people are talking and there is noise in the background.",
+    "The idea behind Vivia is to mimic the way the brain naturally separates and focuses on sound. Rather than simply amplifying everything, it aims to lift the speech you want to hear out of the surrounding noise while keeping the overall sound natural.",
+    "At California Hearing Center, we fit the ReSound Vivia family for patients across the Peninsula. Our audiologists help you choose the right model and calibrate it precisely to your hearing profile, because a premium chip only pays off when the fitting is done well and verified."
   ],
   sections: [
-    ["A premium, connected platform", "ReSound's flagship lines emphasize clear, natural sound and robust connectivity with smartphones and accessories. Whether Vivia is right for you depends on your audiogram, listening needs, and preferences."],
-    ["Selecting the right technology level", "Premium platforms tend to offer the most support in challenging environments, but a mid-tier device may be plenty for a quieter lifestyle. We help you weigh performance, features, and budget honestly, using your [hearing test results](/hearing-testing/) as the starting point."],
-    ["Fitting and verification", "We program Vivia to your prescription and confirm the output with real-ear measurement so the amplification reaching your eardrum matches your targets. This step is central to how well the device performs day to day."],
-    ["Connectivity and streaming", "Modern ReSound devices generally support streaming and app-based control. At your fitting we set up pairing and make sure you are comfortable with charging, cleaning, and everyday handling."],
-    ["Support after the fitting", "Follow-up visits let us fine-tune the sound as your brain adapts, and our team handles adjustments and [repairs](/services/hearing-aid-repair/) as needed."]
+    ["Deep Neural Network processing", "Vivia includes a dedicated Deep Neural Network chip trained on a very large library of spoken sentences. This AI processing is designed to separate speech from background noise while preserving natural sound quality, with the goal of reducing the mental effort it takes to listen in challenging rooms."],
+    ["Intelligent Focus that follows your attention", "One of Vivia's distinctive features is Intelligent Focus, which adapts to your listening intentions rather than just facing forward. It aims to prioritize the speech coming from where your attention is directed, which can help in demanding settings like restaurants and family gatherings, and it adjusts as you move through different environments."],
+    ["Rechargeable, all-day power", "Vivia is a rechargeable platform designed to last through a full day of typical use, including streaming, with a quick top-up charge available when you are short on time. Several charging options are offered, so you can pick one that fits how and where you like to charge."],
+    ["Modern connectivity", "Vivia supports high-quality wireless streaming, including newer standards like Bluetooth LE Audio and Auracast broadcast audio for venues such as theaters and conference rooms. It streams from both Apple and Android devices, with control and Auracast access handled through the ReSound Smart 3D app."],
+    ["Fitting and verification", "Choosing the model is only the start. We calibrate Vivia to your prescription and confirm it with [real-ear measurement](/hearing-aid-fitting/), then fine-tune clarity and comfort over follow-up visits so the technology actually delivers in the places you spend your time."]
   ],
   bulletLinks: [
-    ["Schedule a hearing evaluation", "/hearing-testing/"],
-    ["Professional fitting", "/hearing-aid-fitting/"],
-    ["See all hearing aid brands", "/products/hearing-aids-by-brand/"],
-    ["Hearing aid repair", "/services/hearing-aid-repair/"],
-    ["About California Hearing Center", "/about-us/"],
-    ["Contact us", "/contact/"]
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all ReSound models", "/products/hearing-aids-by-brand/resound/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "ReSound Vivia is a current premium line emphasizing natural sound and connectivity.",
-    "The right technology level depends on your hearing, lifestyle, and budget.",
-    "Verified fitting and follow-up care shape your real-world results."
+    "ReSound Vivia is a premium platform with a dedicated Deep Neural Network chip aimed at clearer speech in noise.",
+    "Intelligent Focus adapts to where your attention is directed, and the rechargeable design supports all-day use with modern Bluetooth streaming.",
+    "The right model and a verified fitting, not the chip alone, determine how well it performs for you."
   ],
   faqs: [
-    ["What is ReSound known for?", "ReSound is well regarded for natural sound quality and strong smartphone and accessory connectivity. Its premium lines, including Vivia, build on those strengths. We help you decide whether it matches your needs."],
-    ["Do I need the most premium model?", "Not necessarily. Premium platforms offer the most support in difficult, noisy settings, but a mid-level device may be ideal for a quieter lifestyle. We recommend based on your hearing and how you spend your day."],
-    ["Will you verify my fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription and adjust them over follow-up visits as you adapt."]
+    ["What does the Deep Neural Network in Vivia do?", "It is a dedicated AI chip trained on a large set of spoken sentences to separate speech from background noise while keeping sound natural. The goal is clearer conversation and less listening effort in difficult environments."],
+    ["How is Intelligent Focus different from ordinary directional hearing?", "Traditional directionality tends to focus on whatever is in front of you. Vivia's Intelligent Focus is designed to follow your listening intentions and prioritize the speech you are attending to, adjusting as you move through different settings."],
+    ["Does Vivia connect to my phone and other devices?", "Yes. Vivia streams from both Apple and Android devices and supports newer standards like Bluetooth LE Audio and Auracast, with control through the ReSound Smart 3D app. We set this up during your fitting."]
   ],
   image: "/assets/resound.webp",
   imageLabel: "ReSound Vivia premium line"
@@ -985,16 +998,17 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Rexton Hearing Aids: Dependable Value on the Peninsula",
   intro: [
-    "Rexton is a value-oriented hearing aid brand that shares engineering roots with Signia and the broader WS Audiology group. That connection means Rexton devices benefit from established, proven technology while typically sitting at a more accessible price point, making them a practical choice for patients who want reliable performance without paying for the newest premium features.",
-    "Rexton is often chosen for durability and straightforward, dependable operation. California Hearing Center fits Rexton at our San Mateo and San Carlos offices as one of several options across the price spectrum.",
-    "Whether Rexton is the right fit depends on your hearing loss, lifestyle, and budget, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+    "Founded in 1955, Rexton has built a solid reputation for dependable hearing aids that users can rely on in any situation. Now part of the WS Audiology group, one of the world's largest hearing aid manufacturers, Rexton combines German engineering with modern technology to deliver solutions that are durable, practical, and easy to use, and it shares engineering roots with Signia.",
+    "Rexton emphasizes reliability, durability, natural sound, and value, which makes it a practical choice for patients who want proven performance without paying for the newest premium features. California Hearing Center fits Rexton at our San Mateo and San Carlos offices as one of several options across the price spectrum.",
+    "Whether Rexton is the right fit depends on your hearing loss, lifestyle, and budget, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["Value without cutting corners", "Rexton delivers solid, proven hearing aid technology at a generally more affordable price, which suits patients who want dependable help without premium-tier cost."],
-    ["Shared engineering heritage", "Rexton draws on technology from the same group behind Signia, so its devices benefit from established platforms and reliability rather than untested designs."],
-    ["Practical, durable design", "Rexton is often valued for rugged, straightforward devices, including options suited to active lifestyles and challenging conditions."],
+    ["The BiCore speech-focused platform", "Rexton's BiCore platform was designed with Speech Preservation Technology to help you focus effortlessly on conversation while filtering out background noise. Its Multi-Voice Focus scans your surroundings many times per second, with adaptive directional microphones and automatic adjustments for more natural listening."],
+    ["Rexton Assist and app control", "Rexton's app brings AI-powered support to everyday use: on-the-go assistance, easy volume and program control from your smartphone, and remote support from your provider without an in-office appointment, plus audio streaming with compatible devices."],
+    ["Value without cutting corners", "Rexton delivers solid, proven technology at a generally more affordable price, which suits patients who want dependable help without premium-tier cost, backed by the resources of a major manufacturer."],
+    ["Practical, durable design", "Rexton is valued for rugged, straightforward devices, including options suited to active lifestyles and challenging conditions, reflecting its long focus on reliability."],
     ["Who Rexton may suit", "Budget-conscious patients, first-time hearing aid users, and those who want proven technology without paying for the latest premium extras often find Rexton a sensible match."],
-    ["Proven on your ears, not just the box", "A value device still deserves precise programming. We confirm output with real-ear measurement so your Rexton devices match your prescription."]
+    ["Proven on your ears, not just the box", "A value device still deserves precise programming. We confirm output with real-ear measurement so your Rexton devices match your prescription across pitches."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -1010,7 +1024,8 @@ export const corePages: Record<string, PageContent> = {
     "Brand matters less than fit: we verify every device against your prescription with real-ear measurement."
   ],
   faqs: [
-    ["What is Rexton known for?", "Rexton is known as a value-oriented brand offering dependable, proven hearing aid technology at a more accessible price. It shares engineering heritage with Signia, so its devices draw on established, reliable platforms."],
+    ["What is Rexton known for?", "Rexton, founded in 1955 and now part of the WS Audiology group, is known for dependable, durable hearing aids at a more accessible price. It combines German engineering with its speech-focused BiCore platform and shares engineering heritage with Signia."],
+    ["What is the Rexton BiCore platform?", "BiCore is Rexton's sound platform, built with Speech Preservation Technology and Multi-Voice Focus to help you follow conversation while filtering background noise. It uses adaptive directional microphones and automatic adjustments for a more natural listening experience."],
     ["Are value hearing aids like Rexton worth it?", "For many patients, yes. Rexton delivers solid, reliable performance without paying for the newest premium features. Whether it is the right choice depends on your hearing loss and listening needs, which we assess together."],
     ["Will a Rexton hearing aid last?", "Rexton devices are generally regarded as durable and dependable. As with any hearing aid, proper fitting, routine cleaning, and periodic service help them perform well over their lifespan."]
   ],
@@ -1021,16 +1036,17 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Signia Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Signia, which carries the heritage of the former Siemens hearing aid business, is a large manufacturer known for polished styling and its own-voice processing. A common frustration for new hearing aid users is that their own voice suddenly sounds strange or booming; Signia developed technology specifically to make the wearer's own voice sound more natural, which can ease that early adjustment.",
-    "Signia also offers distinctive styles, including slim, contemporary designs, along with strong connectivity and rechargeable options. California Hearing Center fits Signia at our San Mateo and San Carlos offices among several capable brands.",
+    "Signia carries a remarkable heritage: its roots reach back to Siemens' early work on clearer telephone voice quality in the 1800s, and in 2016 Siemens' hearing aid division became Signia. That century-plus of audiology experience now sits behind modern, stylish designs that challenge old ideas of what a hearing aid should look like, and it reaches over 120 countries.",
+    "Signia is known for polished styling, own-voice comfort, and its conversation-focused sound processing. California Hearing Center is proud to offer Signia's cutting-edge solutions at our San Mateo and San Carlos offices, and our audiologists are trained to fit and optimize them to your unique hearing profile.",
     "Whether Signia suits you depends on your hearing loss and preferences, confirmed through testing and [expert fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["Own-voice processing", "Signia is well known for technology that processes the wearer's own voice separately, aiming to keep it natural. This can smooth one of the most common complaints during the first weeks of wearing hearing aids."],
-    ["Modern styling", "Signia offers sleek, contemporary designs, including slim receiver styles that some patients find more discreet and appealing than traditional shapes."],
-    ["Connectivity and rechargeability", "Signia supports Bluetooth streaming, app control, and rechargeable batteries across much of its lineup, fitting people who want both technology and convenience."],
-    ["Who Signia may suit", "People bothered by how their own voice sounds through hearing aids, and those who value styling and connectivity, often find Signia a comfortable match."],
-    ["Verified to your prescription", "Own-voice comfort still needs accurate amplification behind it. We program and confirm output with real-ear measurement so the device fits your hearing, not just your ear."]
+    ["Integrated Xperience (IX) conversation technology", "Signia's latest platform, Integrated Xperience, is built for real conversations. Rather than locking onto one direction, its multi-stream architecture can identify, enhance, and track multiple speakers as they move, creating a clear contrast between speech and background noise and reducing listening effort in busy settings."],
+    ["My WellBeing health features", "Signia extends hearing care into wellness with My WellBeing in the Signia app. Using the hearing aids' built-in motion sensors, it can track daily steps and activity, how much you wear your devices, and even conversation time, helping you set and meet personal health goals."],
+    ["A century of audiology heritage", "Signia continues the engineering legacy of Siemens, combining German precision with modern innovation. That long track record informs devices that balance advanced sound processing with refined, everyday reliability."],
+    ["Own-voice comfort and modern styling", "A common frustration for new users is that their own voice sounds strange or booming. Signia's processing aims to keep the wearer's own voice natural, and its sleek, slim designs, including discreet receiver styles, appeal to patients who want a contemporary look."],
+    ["The Signia IX family", "Signia IX delivers clear conversations even in loud settings with easy all-day charging. The lineup includes the Pure Charge&Go IX for active users and the ultra-discreet Silk Charge&Go IX, offering customized solutions across different needs and preferences."],
+    ["Verified to your prescription", "Own-voice comfort and smart processing still need accurate amplification behind them. We program and confirm output with real-ear measurement so the device fits your hearing, not just your ear."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -1046,9 +1062,10 @@ export const corePages: Record<string, PageContent> = {
     "The right brand is the one that measures and sounds best for your ears after professional fitting."
   ],
   faqs: [
-    ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for own-voice processing that keeps the wearer's own voice sounding natural, along with sleek styling, connectivity, and rechargeable options."],
-    ["Why does my own voice sound strange with hearing aids?", "Amplification can make your own voice sound booming or unnatural at first. Signia developed processing to address this, and thoughtful fitting and a short adjustment period also help most people adapt comfortably."],
-    ["Is Signia related to Siemens?", "Yes. Signia grew out of the former Siemens hearing aid division and continues much of that engineering heritage under the Signia name today."]
+    ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for its Integrated Xperience (IX) conversation technology, own-voice comfort, My WellBeing health tracking, and sleek, modern styling with rechargeable options."],
+    ["What is Signia Integrated Xperience (IX)?", "IX is Signia's latest platform. Its multi-stream design can pinpoint and track multiple moving speakers in a conversation, sharpening speech against background noise and reducing listening effort in noisy environments."],
+    ["Why does my own voice sound strange with hearing aids?", "Amplification can make your own voice sound booming or unnatural at first. Signia's processing is designed to keep your own voice natural, and thoughtful fitting plus a short adjustment period help most people adapt comfortably."],
+    ["Is Signia related to Siemens?", "Yes. Signia grew out of the former Siemens hearing aid division in 2016 and continues that century-plus of engineering heritage under the Signia name today."]
   ],
   image: "/assets/signia.webp",
   imageLabel: "Signia own-voice processing"
@@ -1057,34 +1074,34 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Signia IX Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Signia IX is a premium hearing aid platform built around the challenges of real conversation. Signia's technology has long emphasized handling your own voice comfortably and following speech when several people are talking, and the IX generation continues that focus.",
-    "Group conversations are one of the most common frustrations people report with hearing loss, because speakers move, overlap, and compete with background noise. Platforms like IX are designed with those dynamic exchanges in mind.",
-    "California Hearing Center fits Signia IX for patients across the Peninsula and verifies each fitting so the technology performs where it counts."
+    "Signia IX is Signia's premium platform, pairing sophisticated sound processing with the refined, discreet styling the brand is known for. It is built to deliver clear, comfortable hearing that adapts to your surroundings and your lifestyle.",
+    "Signia designed the IX generation with conversation in mind, particularly the fast back-and-forth of group settings where several people talk over one another. The platform aims to help you keep up with dynamic conversations rather than locking onto a single voice.",
+    "At California Hearing Center, we fit the full Signia IX family for patients across the Peninsula. Our audiologists help you choose the right model and program it precisely to your hearing, then verify the result so you experience the benefit the technology is meant to provide."
   ],
   sections: [
-    ["Focused on conversation", "Signia's premium platforms aim to keep dynamic, multi-speaker conversations easier to follow. Whether IX is the right choice for you depends on your hearing test, your typical listening settings, and your priorities."],
-    ["Comfort with your own voice", "Signia has put particular emphasis on making the wearer's own voice sound natural, a detail that affects daily comfort for many new hearing aid users. We take own-voice comfort seriously during fitting and follow-up."],
-    ["Matching technology to your life", "Premium features shine most in busy, changing environments. If your days are quieter, a mid-tier device may serve you just as well. We base the recommendation on your [evaluation](/hearing-testing/) and goals rather than defaulting to the top model."],
-    ["Verified fitting", "We program IX to your prescription and use real-ear measurement to confirm the sound reaching your eardrum. Verification is what keeps a premium device from being under- or over-amplified."],
-    ["Connectivity and follow-up", "Modern Signia devices generally support streaming and app control. We set up pairing, review charging and cleaning, and schedule follow-up visits to refine the sound as you adapt."]
+    ["Sound processing built for conversation", "At the core of Signia IX is advanced processing aimed at speech clarity in noisy, real-world settings like restaurants and gatherings. It uses precise directional focus and dynamic noise reduction to help you zero in on the people you are talking with while keeping the fuller sound picture natural."],
+    ["Support for group conversations", "The IX platform is engineered to handle the shifting nature of group talk, where the person speaking changes moment to moment. The goal is to follow those changes so you can take part in lively conversations more comfortably and with less effort."],
+    ["All-day rechargeable convenience", "Signia IX hearing aids use rechargeable batteries that are designed to last through a full day, even with streaming, and to top up quickly when you are on the go. The charging cases both power and protect the devices, and they remove the hassle of handling tiny disposable batteries."],
+    ["Connectivity and elegant design", "IX offers direct streaming and hands-free calls from both iOS and Android phones, with personalized control through the Signia app. The devices are styled to be sleek and discreet, with moisture and dust resistance for durability and an easy, comfortable fit for all-day wear."],
+    ["Fitting and verification", "Choosing a model is only part of the process. We program Signia IX to your prescription and confirm it with [real-ear measurement](/hearing-aid-fitting/), then fine-tune clarity and comfort over follow-up visits so the technology delivers in the environments that matter to you."]
   ],
   bulletLinks: [
-    ["Book a hearing test", "/hearing-testing/"],
-    ["How fitting and verification work", "/hearing-aid-fitting/"],
-    ["Explore all brands", "/products/hearing-aids-by-brand/"],
-    ["Tinnitus care", "/tinnitus/"],
-    ["San Mateo office", "/contact/san-mateo/"],
-    ["Patient reviews", "/reviews/"]
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all Signia models", "/products/hearing-aids-by-brand/signia/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [
-    "Signia IX is a premium platform focused on natural own-voice sound and dynamic conversation.",
-    "The right model depends on your hearing, your environments, and your priorities.",
-    "Verified fitting and follow-up care determine your real-world experience."
+    "Signia IX is a premium platform with sound processing built around clear, dynamic conversation in noisy settings.",
+    "It is rechargeable, connects to both iOS and Android phones, and is styled to be sleek and discreet.",
+    "The right model plus a verified fitting determine how well it performs for your specific hearing."
   ],
   faqs: [
-    ["What is Signia known for?", "Signia is recognized for technology that emphasizes conversation and making the wearer's own voice sound natural. The IX platform continues that focus. We help you decide whether it fits your needs."],
-    ["Will my own voice sound strange with hearing aids?", "New users sometimes notice their own voice at first. Signia devotes attention to own-voice comfort, and we also address it through careful fitting and follow-up adjustments regardless of brand."],
-    ["Is a premium platform worth it for me?", "It depends on how often you face noisy, changing environments. Premium platforms offer the most support there, while a mid-level device may be ideal for a quieter routine. We recommend based on your hearing and lifestyle."]
+    ["What makes Signia IX good for conversation in groups?", "The IX platform is designed to keep up with group talk, where the speaker changes quickly. It combines directional focus and noise reduction to help you follow shifting conversations more comfortably in busy settings."],
+    ["Are Signia IX hearing aids rechargeable?", "Yes. The IX family uses rechargeable batteries designed to last through a full day, including streaming, with quick top-up charging. The charging case powers and protects the devices, so there are no tiny batteries to change."],
+    ["Do you verify the fitting?", "Yes. We program Signia IX to your prescription and use real-ear measurement to confirm the sound reaching your eardrum matches your targets, then adjust over follow-up visits as you adapt."]
   ],
   image: "/assets/signia.webp",
   imageLabel: "Signia IX conversation-focused platform"
@@ -1093,15 +1110,16 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Starkey Hearing Aids on the Peninsula",
   intro: [
-    "Starkey is a major American hearing aid manufacturer that has leaned hard into artificial intelligence and health-tracking features. Alongside conventional amplification, several Starkey devices incorporate sensors and app features that can track activity, and some models offer fall-detection alerts and other wellness tools, reframing the hearing aid as a broader health device.",
-    "Starkey is also known for its custom and in-the-ear expertise. California Hearing Center fits Starkey at both the San Mateo and San Carlos offices as one of several strong options.",
-    "Whether Starkey is right for you depends on your hearing loss and how much you value its health and AI features, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+    "Founded by Bill Austin in 1967 and headquartered in Eden Prairie, Minnesota, Starkey is the only American-owned major hearing aid manufacturer in the world. It has built a global reputation for innovation and quality, and a humanitarian mission carried out through the Starkey Hearing Foundation, which has helped people around the world hear better.",
+    "Starkey stands out for pushing hearing aids beyond simple amplification, integrating artificial intelligence, health monitoring, and connectivity so devices help patients not only hear better but live better. California Hearing Center fits Starkey at both the San Mateo and San Carlos offices as one of several strong options.",
+    "Whether Starkey is right for you depends on your hearing loss and how much you value its health and AI features, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["AI and health features", "Starkey has positioned itself around AI-driven sound processing and integrated health tracking. Certain models can monitor activity and offer wellness features through the companion app."],
-    ["Fall detection and alerts", "Some Starkey devices include fall-detection that can send alerts to chosen contacts, a feature that appeals to many older adults and their families for added peace of mind."],
-    ["Custom and in-the-ear strength", "Starkey has deep experience with custom, in-the-ear devices, which can be a good route for patients who prefer that style for comfort or cosmetics."],
-    ["Who Starkey may suit", "People who want their hearing aids to double as a wellness and safety tool, or who prefer custom in-the-ear designs, often find Starkey appealing."],
+    ["Edge AI and the G2 Neuro Processor", "Starkey's flagship Edge AI is built around its G2 Neuro Processor with an integrated neural processing unit. It analyzes and adapts to your environment in real time, targeting enhanced speech clarity, improved noise reduction, and natural sound quality with long battery life."],
+    ["Fall detection and alerts", "Starkey pioneered built-in fall detection in hearing aids. Using integrated sensors, it can automatically detect a fall and send an alert to designated emergency contacts, with manual alerts and location sharing, offering peace of mind for older adults and their families."],
+    ["Activity and engagement tracking", "Through the My Starkey app, Starkey devices use sensors to track physical activity, social engagement, and overall wellness. Step counting, conversation-time tracking, and activity reminders let users set and pursue personal health goals."],
+    ["Balance assessment", "The latest Starkey devices add a balance assessment tool that uses the same sensors to evaluate balance and stability. Self-guided exercises with real-time feedback can help identify fall risk and support better coordination over time."],
+    ["Who Starkey may suit", "People who want their hearing aids to double as a wellness and safety tool, or who prefer custom in-the-ear designs, often find Starkey appealing. Its health features make it a common choice for active older adults."],
     ["Fit, measured, and confirmed", "Health features are a bonus, not a substitute for accurate amplification. We verify each device with real-ear measurement so it performs correctly for your hearing."]
   ],
   bulletLinks: [
@@ -1118,45 +1136,46 @@ export const corePages: Record<string, PageContent> = {
     "Any of these brands can perform beautifully when correctly selected and verified for your hearing."
   ],
   faqs: [
-    ["What is Starkey known for?", "Starkey, a major American manufacturer, is recognized for AI-driven sound processing and integrated health features, including activity tracking and fall-detection alerts on some models, along with strong custom in-the-ear expertise."],
-    ["Can Starkey hearing aids detect falls?", "Some Starkey models include fall-detection that can send an alert to designated contacts. Many older adults and their families value this for added safety. We can review which models offer it during your consultation."],
-    ["Do I need the health features to benefit from Starkey?", "No. The health and activity features are optional extras on top of quality amplification. If you do not want them, Starkey still functions as a capable hearing aid, and we help decide whether the extras are worthwhile for you."]
+    ["What is Starkey known for?", "Starkey, the only American-owned major manufacturer, is recognized for AI-driven sound processing in its Edge AI line and for integrated health features, including activity tracking, fall detection, and balance assessment, along with strong custom in-the-ear expertise."],
+    ["What is Starkey Edge AI?", "Edge AI is Starkey's flagship, built around the G2 Neuro Processor with an integrated neural processing unit. It analyzes and adapts to your listening environment in real time for clearer speech, better noise reduction, and natural sound quality."],
+    ["Can Starkey hearing aids detect falls?", "Yes. Starkey pioneered built-in fall detection that can send an alert to designated contacts, with manual alerts and location sharing. Many older adults and their families value this for added safety. We can review which models offer it during your consultation."],
+    ["Do I need the health features to benefit from Starkey?", "No. The health, activity, and balance features are optional extras on top of quality amplification. If you do not want them, Starkey still functions as a capable hearing aid, and we help decide whether the extras are worthwhile for you."]
   ],
   image: "/assets/starkey.webp",
   imageLabel: "Starkey AI and health features"
 },
   "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/": {
   kicker: "Hearing Aid Technology",
-  headline: "Starkey Edge AI Hearing Aids on the Peninsula",
+  headline: "Starkey Edge AI Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Starkey Edge AI is a premium hearing aid platform from Starkey, a manufacturer that has leaned heavily into on-device artificial intelligence. The Edge AI name reflects that emphasis: processing designed to analyze and adapt to your sound environment.",
-    "Artificial intelligence in hearing aids is not magic, but it can help devices respond more quickly and naturally to shifting environments like a quiet office giving way to a loud lobby. California Hearing Center helps patients understand what that means in practice.",
-    "We fit Starkey Edge AI in San Mateo and San Carlos, then verify and fine-tune the fitting so the technology helps you in the moments that matter."
+    "Starkey Edge AI is Starkey's flagship platform, bringing powerful sound processing and neural technology together in a device that adapts to your environment in real time. Starkey is one of the long-standing American names in hearing technology, and Edge AI is its most advanced work to date.",
+    "The platform is built on Starkey's G2 processor with integrated neural processing, which is designed to analyze the sounds around you and adjust automatically as conditions change, so conversation stays clearer without you having to fiddle with settings.",
+    "At California Hearing Center, we fit and optimize Starkey Edge AI for patients across the Peninsula. As with every premium device, the fitting is what turns capable hardware into a good daily experience, so we program these hearing aids to your prescription and verify the result."
   ],
   sections: [
-    ["What the AI focus means", "Starkey's premium platforms use on-device processing intended to adapt to your surroundings and support clearer listening. Whether Edge AI suits you depends on your hearing loss, your environments, and your goals rather than the marketing alone."],
-    ["Features beyond hearing", "Starkey has also built health and activity features into some of its devices. These can be a nice bonus for the right patient, but the core question remains how well the device helps you hear."],
-    ["Choosing the right level", "Premium platforms provide the most support in demanding, noisy settings. If your lifestyle is quieter, a mid-tier device may be a better value. We base recommendations on your [hearing evaluation](/hearing-testing/) and daily needs."],
-    ["Fitting and verification", "We program Edge AI to your prescription and confirm the output with real-ear measurement. Verified fitting is what ensures the device is amplifying appropriately for your specific hearing."],
-    ["Connectivity and ongoing care", "Modern Starkey devices generally support streaming and app control. At your fitting we handle pairing and daily-use training, then schedule follow-ups to refine comfort and clarity."]
+    ["The G2 neural processor", "Edge AI runs on Starkey's G2 processor with integrated neural processing, an approach meant to mimic how natural hearing works. It maps and manages your listening environment continuously in the background while still letting you take control through the My Starkey app when you want to."],
+    ["Clearer speech in noise", "The platform's processing is aimed at making speech easier to identify and follow in challenging environments, while lowering distracting background sound. The intent is to make busy conversations less tiring and reduce the listening fatigue that noisy settings can cause."],
+    ["Durable, all-day rechargeable design", "Edge AI is a rechargeable platform designed to last through a full day of typical use, so you are not managing disposable batteries. Certain rechargeable models are also built to resist water and sweat for everyday reliability, in a sleek and comfortable modern design."],
+    ["Health and connectivity features", "Beyond hearing, the My Starkey app is designed to support wellness and everyday convenience, and the devices connect to your phone for streaming and adjustments. We set up the app and pairing during your visit and make sure you are comfortable using them."],
+    ["Fitting and verification", "Choosing Edge AI is only the beginning. We program the devices to your prescription and confirm the sound with [real-ear measurement](/hearing-aid-fitting/), then fine-tune clarity, comfort, and loudness over follow-up visits so the technology performs where you actually spend your time."]
   ],
   bulletLinks: [
     ["Start with a hearing evaluation", "/hearing-testing/"],
-    ["Fitting and verification", "/hearing-aid-fitting/"],
-    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"],
-    ["Repairs and service", "/services/hearing-aid-repair/"],
-    ["San Carlos office", "/contact/san-carlos/"],
-    ["Areas we serve", "/areas-we-serve/"]
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all Starkey models", "/products/hearing-aids-by-brand/starkey/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "Starkey Edge AI is a premium platform built around on-device artificial intelligence.",
-    "AI and health features can help, but hearing performance and fit come first.",
-    "Verified fitting and follow-up care shape your real-world outcome."
+    "Starkey Edge AI is a premium platform built on the G2 processor with integrated neural processing that adapts in real time.",
+    "It is rechargeable and durable, with health and connectivity features managed through the My Starkey app.",
+    "A verified fitting and follow-up care determine how well the technology performs for your hearing."
   ],
   faqs: [
-    ["What does AI actually do in a hearing aid?", "On-device processing analyzes your sound environment and adjusts settings to support clearer listening as conditions change. It works best when the device is properly fit and verified to your hearing, which is where our care comes in."],
-    ["Do Starkey hearing aids track health?", "Some Starkey devices include health and activity features. These can be a useful bonus, but we recommend a device primarily based on how well it addresses your hearing needs."],
-    ["How do I know if Edge AI is right for me?", "We compare it against other options during your consultation, weighing your hearing test, lifestyle, and budget so the recommendation fits you rather than a single brand."]
+    ["What is the G2 neural processor in Starkey Edge AI?", "It is Starkey's processing platform with integrated neural technology, designed to analyze your surroundings and adjust automatically in real time. The aim is clearer speech and easier listening as your environment changes, with manual control available through the My Starkey app."],
+    ["Are Starkey Edge AI hearing aids rechargeable and durable?", "Yes. Edge AI is a rechargeable platform meant to last through a full day of typical use, and select rechargeable models are built to resist water and sweat for everyday reliability."],
+    ["Do you verify the fitting?", "Yes. We program Edge AI to your prescription and confirm the sound reaching your eardrum with real-ear measurement, then adjust over follow-up visits as your brain adapts to hearing more."]
   ],
   image: "/assets/starkey.webp",
   imageLabel: "Starkey Edge AI platform"
@@ -1165,14 +1184,15 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Unitron Hearing Aids for Peninsula Patients",
   intro: [
-    "Unitron is a Canadian hearing aid brand, part of the same Sonova group as Phonak, that focuses on approachable, value-conscious technology and a patient-friendly experience. Unitron has been known for flexible trial and upgrade approaches that let patients experience how they hear in real life before fully committing, which can make the decision less daunting for first-time users.",
-    "Because Unitron shares a technology platform with Phonak, its devices benefit from mature engineering while typically sitting at a more accessible price. California Hearing Center fits Unitron at our San Mateo and San Carlos offices among several options.",
-    "Whether Unitron is right for you depends on your hearing loss, lifestyle, and budget, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+    "Founded in Canada in 1964, Unitron has built a reputation for hearing aids designed around the wearer's experience and quality of life. Now part of the Sonova group, alongside Phonak, it combines Swiss precision with Canadian innovation to deliver technology that is both advanced and genuinely user-friendly, and its designs have earned numerous Red Dot awards.",
+    "Because Unitron shares platform engineering with Phonak, its devices benefit from mature, proven technology while emphasizing personalization, comfort, and natural sound. California Hearing Center is proud to offer Unitron at our San Mateo and San Carlos offices among several options.",
+    "Whether Unitron is right for you depends on your hearing loss, lifestyle, and budget, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["Value with proven engineering", "Unitron shares a platform with Phonak through the Sonova group, so patients get established, reliable technology at a generally more accessible price point."],
-    ["A patient-friendly approach", "Unitron has emphasized flexible trials and upgrade paths, giving patients a chance to experience real-world hearing before fully committing to a technology level."],
-    ["A full range of styles", "Receiver-in-canal, behind-the-ear, and custom options are available, with rechargeable and connectivity features across much of the lineup."],
+    ["The Vivante conversation-focused platform", "Unitron's Vivante platform is designed to help you focus effortlessly on speech while intuitively sensing where conversation is coming from. Features like HyperFocus for clarity in noise and a 360-degree Conversation in Car mode, plus adaptive directional microphones, aim for natural listening in both busy and quiet settings."],
+    ["FLEX trial and upgrade programs", "Unitron's FLEX programs make trying and upgrading technology unusually easy. FLEX:TRIAL lets you experience different technology levels in your own environments before deciding, while FLEX:UPGRADE lets you move up a level without buying new devices as your needs change, with no hardware swap required."],
+    ["Log It All personalization", "Unitron's Log It All feature tracks the unique mix of sound environments you spend time in. That real-world data helps personalize your hearing solution and lets experience ratings fine-tune the devices to your preferences."],
+    ["Value with proven engineering", "Sharing a platform with Phonak through the Sonova group, Unitron gives patients established, reliable technology at a generally accessible price point, with a user-first focus on comfort and simplicity."],
     ["Who Unitron may suit", "First-time users, value-focused patients, and those who like the reassurance of trying technology in daily life before deciding often find Unitron a comfortable choice."],
     ["Real-ear verification is the difference", "Whatever level you choose, we program and confirm the devices with real-ear measurement so they match your hearing prescription."]
   ],
@@ -1190,9 +1210,10 @@ export const corePages: Record<string, PageContent> = {
     "Your best brand is decided at the fitting — by measurement and your own listening, not by marketing."
   ],
   faqs: [
-    ["What is Unitron known for?", "Unitron is a Canadian brand, part of the Sonova group alongside Phonak, known for approachable, value-conscious technology and a patient-friendly experience with flexible trial and upgrade options."],
+    ["What is Unitron known for?", "Unitron, founded in Canada in 1964 and part of the Sonova group alongside Phonak, is known for award-winning, user-focused design, its Vivante conversation platform, and patient-friendly FLEX trial and upgrade programs."],
+    ["What are Unitron's FLEX programs?", "FLEX:TRIAL lets you experience different technology levels in your own environments before you buy, and FLEX:UPGRADE lets you step up a level later without replacing the devices. It takes much of the guesswork out of choosing technology."],
     ["Is Unitron related to Phonak?", "Yes. Both are part of the Sonova group and share technology platforms, so Unitron devices draw on mature, proven engineering, typically at a more accessible price point."],
-    ["Can I try Unitron hearing aids before committing?", "Unitron has emphasized flexible trials that let patients experience real-world hearing before deciding on a technology level. We can explain the trial and follow-up options available during your consultation."]
+    ["Can I try Unitron hearing aids before committing?", "Yes. Through FLEX:TRIAL, Unitron lets patients experience real-world hearing across technology levels before deciding. We can explain the trial and follow-up options available during your consultation."]
   ],
   image: "/assets/core/products__hearing-aids-by-brand__unitron.svg",
   imageLabel: "Unitron value-focused technology"
@@ -1201,15 +1222,16 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Widex Hearing Aids: Natural Sound on the Peninsula",
   intro: [
-    "Widex, a Danish manufacturer, has long been associated with natural, high-fidelity sound. Many musicians and people who are particular about sound quality gravitate toward Widex for its clean, realistic reproduction, and its PureSound approach is designed to deliver an especially natural, low-distortion listening experience with minimal artificial processing delay.",
-    "That focus makes Widex a frequent match for people who prioritize how music and voices actually sound, not just intelligibility in noise. California Hearing Center fits Widex at both San Mateo and San Carlos as one of several options.",
-    "Whether Widex is the right choice depends on your hearing loss and what you value most in sound, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+    "Founded in Denmark by the Tøpholm and Westermann families in the 1950s, Widex has spent more than 65 years advancing hearing technology, and remains family-owned. It has long been associated with exceptional, natural sound quality, which is why musicians and people with discerning ears so often gravitate toward the brand for its clean, realistic reproduction.",
+    "That focus makes Widex a frequent match for people who prioritize how music and voices actually sound, not just intelligibility in noise. California Hearing Center chose to partner with Widex because its commitment to sound purity aligns with our mission, and we fit it at both San Mateo and San Carlos as one of several options.",
+    "Whether Widex is the right choice depends on your hearing loss and what you value most in sound, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["A reputation for natural sound", "Widex is widely regarded for clean, realistic sound reproduction that many listeners describe as natural and pleasant, particularly for music and voices."],
-    ["The PureSound approach", "Widex's PureSound aims for a very natural listening experience with minimal processing delay, which can reduce the artificial or tinny quality some people notice with amplification."],
-    ["Who Widex may suit", "Music lovers, audiophiles, and anyone who finds heavily processed sound unnatural often respond well to Widex's emphasis on fidelity and realism."],
-    ["Styles and features", "Widex offers receiver-in-canal, behind-the-ear, and custom styles, with rechargeable options and smartphone connectivity so its sound philosophy pairs with modern convenience."],
+    ["A legacy of natural sound", "Widex is widely regarded for clean, realistic sound reproduction that many listeners describe as natural and pleasant, particularly for music and voices, a reputation built over decades of family ownership and Danish engineering."],
+    ["PureSound with ZeroDelay", "Traditional hearing aids process sound with a slight delay, which can create an artificial or tinny quality. Widex's PureSound technology with ZeroDelay processing delivers sound to the ear with unusually low delay, aiming to eliminate that artificial quality and reduce listening fatigue through the day."],
+    ["AI-powered personalization", "Widex uses artificial intelligence to personalize your hearing experience. Its MySound and SoundSense Learn features use real-time feedback and machine learning to fine-tune settings to your preferences, and adjust automatically as you move between environments."],
+    ["The Widex Allure family", "Allure is Widex's most advanced platform to date. Built around its W1 chip and combining Speech Enhancer Pro with PureSound technology, it aims for an immersive listening experience while preserving natural environmental awareness."],
+    ["Who Widex may suit", "Music lovers, audiophiles, and anyone who finds heavily processed sound unnatural often respond well to Widex's emphasis on fidelity and realism. Widex is also well known for its tinnitus solutions."],
     ["Tuned to your prescription, then checked", "Natural sound still has to match your prescription. We use real-ear measurement to confirm the amplification is correct across the frequencies you need."]
   ],
   bulletLinks: [
@@ -1226,9 +1248,10 @@ export const corePages: Record<string, PageContent> = {
     "We fit across the field because the ideal brand varies person to person, confirmed by verification."
   ],
   faqs: [
-    ["What is Widex known for?", "Widex is recognized for natural, high-fidelity sound reproduction. Its PureSound approach aims to minimize processing delay for an especially realistic listening experience, which appeals to people who care about sound quality."],
+    ["What is Widex known for?", "Widex, family-owned since the 1950s, is recognized for natural, high-fidelity sound and for tinnitus solutions. Its PureSound technology with ZeroDelay processing minimizes delay for an especially realistic listening experience, which appeals to people who care about sound quality."],
+    ["What is PureSound and ZeroDelay?", "PureSound is Widex's approach to natural sound, and ZeroDelay refers to processing that delivers sound to the ear with very little delay. Together they aim to remove the tinny, artificial quality some people notice with hearing aids and reduce listening fatigue."],
     ["Are Widex hearing aids good for musicians?", "Many musicians and audiophiles favor Widex for its clean, natural sound. That said, the right device depends on your specific hearing loss and goals, which we assess during your evaluation."],
-    ["Does natural sound mean better hearing in noise?", "Natural sound and noise performance are related but distinct. Widex balances fidelity with noise management; if difficult noisy environments are your main concern, we compare how each brand handles them for your hearing."]
+    ["What is Widex Allure?", "Allure is Widex's most advanced platform, built on its W1 chip and combining Speech Enhancer Pro with PureSound technology to deliver an immersive listening experience while keeping you aware of your surroundings."]
   ],
   image: "/assets/widex.webp",
   imageLabel: "Widex natural sound quality"
@@ -1237,52 +1260,54 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Widex Allure Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Widex Allure is a current premium line from Widex, a manufacturer with a long-standing reputation for natural, clear sound. Patients who prioritize sound quality, especially for music and speech that sounds true to life, often ask about Widex specifically.",
-    "Every hearing aid involves tradeoffs between clarity, comfort, connectivity, and cost. Our job at California Hearing Center is to help you understand where a device like Allure fits and whether it aligns with what you value most.",
-    "We fit Widex Allure in our San Mateo and San Carlos offices, verify the fitting, and support it over time so the sound quality Widex is known for translates into your everyday listening."
+    "Widex Allure is Widex's most advanced hearing platform, combining innovative processing with the refined design and famously natural sound the brand is known for. Widex has been family-owned since the 1950s, and its engineering has long focused on making amplified sound feel authentic rather than artificial.",
+    "Allure is built to keep speech crystal clear while preserving a natural sense of the world around you, so you stay connected to your environment instead of feeling closed off. That balance between clarity and naturalness is central to the Widex philosophy.",
+    "At California Hearing Center, we fit and optimize Widex Allure for patients across the Peninsula. As with any premium device, the fitting is what makes the difference, so we program these hearing aids to your prescription and verify the result before you rely on them daily."
   ],
   sections: [
-    ["Known for natural sound", "Widex has built its reputation on a natural, undistorted sound signature that many patients and musicians appreciate. Whether Allure is the right fit for you depends on your hearing loss and listening priorities."],
-    ["Who tends to prefer Widex", "People who care deeply about music, tone, and a natural listening experience often gravitate toward Widex. We confirm the match against your [hearing test](/hearing-testing/) and the environments you spend time in."],
-    ["Selecting the right level", "As with any brand, premium platforms offer the most support in noisy, demanding settings, while a mid-tier model may suit a quieter routine. We recommend based on your needs and budget, not just the flagship label."],
-    ["Verified fitting", "We program Allure to your prescription and confirm the output with real-ear measurement. This verification is essential to getting the clarity and comfort the technology is capable of."],
-    ["Connectivity and follow-up", "Modern Widex devices generally support streaming and app control. We set up pairing, review charging and cleaning, and fine-tune the sound over follow-up visits as your brain adapts."]
+    ["The W1 chip", "At the heart of Allure is Widex's W1 chip, the brand's fastest processor to date. Its single-chip architecture offers substantially faster processing and more memory than previous generations, which supports more sophisticated sound handling and more precise adjustments to your individual hearing needs."],
+    ["Speech Enhancer Pro", "Allure manages noise through Speech Enhancer Pro, which is designed to soften distracting background sound while keeping speech clear and intelligible. By dynamically adjusting to changing environments, it aims to reduce the listening fatigue that busy, noisy settings can bring on."],
+    ["PureSound and natural low-latency sound", "Building on Widex's ZeroDelay technology, the Allure PureSound program processes sound with extremely low latency, which helps speech and music sound natural and distortion-free. This is especially valuable for new hearing aid users, people with milder hearing loss, and music lovers who want authentic sound."],
+    ["Connectivity and daily use", "Allure connects to your phone for streaming and offers app-based control so you can personalize your listening. During your fitting we set up pairing, walk through charging and cleaning, and make sure you can handle the devices comfortably."],
+    ["Fitting and verification", "The W1 chip and its features only help if the sound is set correctly for your ears. We use [real-ear measurement](/hearing-aid-fitting/) to confirm amplification meets your prescribed targets, then fine-tune clarity and comfort over follow-up visits as your brain adapts to hearing more sound."]
   ],
   bulletLinks: [
-    ["Book a hearing evaluation", "/hearing-testing/"],
-    ["Fitting and verification", "/hearing-aid-fitting/"],
-    ["Browse all brands", "/products/hearing-aids-by-brand/"],
-    ["Custom hearing protection for musicians", "/services/hearing-protection/"],
-    ["Repairs and service", "/services/hearing-aid-repair/"],
-    ["Contact our team", "/contact/"]
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all Widex models", "/products/hearing-aids-by-brand/widex/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [
-    "Widex Allure is a current premium line known for a natural, clear sound.",
-    "It often appeals to patients who prioritize music and true-to-life listening.",
-    "Verified fitting and follow-up care determine how well the sound quality carries into daily life."
+    "Widex Allure is the brand's most advanced platform, built on the fast W1 chip and known for natural sound.",
+    "Speech Enhancer Pro targets clarity in noise, while PureSound and low-latency processing keep sound natural for music and new users.",
+    "A verified fitting and follow-up care determine how well the technology performs for your hearing."
   ],
   faqs: [
-    ["What is Widex known for?", "Widex is widely respected for natural, undistorted sound, which many patients and musicians value. The Allure line continues that focus. We help you decide whether it matches your listening priorities."],
-    ["Are Widex hearing aids good for music?", "Patients who care about music often prefer Widex for its natural sound signature. If music matters to you, mention it during your consultation so we can factor it into the recommendation and settings."],
-    ["Do you verify the fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription and refine them over follow-up visits as you adapt."]
+    ["What is the W1 chip in Widex Allure?", "It is Widex's fastest processor to date, with a single-chip design that offers faster processing and more memory than earlier generations. That extra capability supports more sophisticated sound handling and finer adjustments to your hearing."],
+    ["Why is Widex known for natural sound?", "Widex has long prioritized authentic, low-distortion sound. Allure builds on the brand's ZeroDelay technology with its PureSound program, which processes sound with very low latency so speech and music sound natural, something many music lovers and new users especially appreciate."],
+    ["Do you verify the fitting?", "Yes. We program Allure to your prescription and confirm the sound reaching your eardrum with real-ear measurement, then fine-tune it over follow-up visits as you adapt."]
   ],
   image: "/assets/widex.webp",
   imageLabel: "Widex Allure premium line"
 },
   "/products/hearing-aids/": {
   kicker: "Hearing Aids",
-  headline: "Understanding Today's Hearing Aids Before You Buy",
+  headline: "Hearing Aids & Hearing Technology for San Mateo & San Carlos",
   intro: [
-    "Modern hearing aids are small, connected, and surprisingly capable, but the features that matter depend entirely on your ears and your daily life. This page walks through the styles, technology levels, and options so you can arrive at your appointment with real questions rather than sales pressure.",
-    "California Hearing Center serves the Peninsula from San Mateo and San Carlos, and we fit devices across the major manufacturers. Our aim is to explain the tradeoffs plainly, then help you pick technology you will actually wear and enjoy.",
-    "Everything below is easier to decide once you have current [hearing test](/hearing-testing/) results, which tell us how much power, what kind of sound processing, and which style your hearing loss calls for."
+    "No two ears are alike, so at California Hearing Center each hearing solution is individualized and customized to the person wearing it, whether the goal is hearing improvement or tinnitus sound therapy. We invite you to try a set of hearing aids risk-free and experience them for yourself in the real world.",
+    "Hearing clearly involves far more than making sounds louder. Your ears, hearing nerve, and brain work together to form a 360-degree soundscape from sounds that are dynamic, complex, and constantly changing. Today's best hearing technology is designed to understand that complexity and work more like the brain works, and we offer the latest devices available, including AI-driven hearing aids.",
+    "Everything is easier to decide once you have current [hearing test](/hearing-testing/) results, which tell us how much power, what kind of sound processing, and which style your hearing loss calls for."
   ],
   sections: [
-    ["Receiver-in-canal (RIC)", "The most commonly fit style today. A slim wire carries sound to a receiver in the ear canal, keeping the device discreet while supporting a wide range of hearing losses. RIC devices are usually easy to service and often rechargeable."],
-    ["Behind-the-ear (BTE)", "A durable, powerful option that suits more significant hearing loss and can be easier to handle. BTE devices work well for those who want robust amplification, longer battery life, or a design that stands up to daily wear."],
-    ["In-the-ear, CIC, and invisible styles", "Custom in-the-ear, completely-in-canal, and invisible options sit within the ear for cosmetic discretion. They favor mild-to-moderate losses and adequate canal size, and involve tradeoffs in battery life, features, and ease of handling."],
-    ["Technology levels", "Within a model line, premium levels typically add faster automatic adjustment and stronger performance in restaurants, groups, and other complex noise. Entry levels can serve quieter lifestyles well. We help you spend where it earns its keep."],
-    ["Rechargeable and Bluetooth features", "Many current devices recharge overnight and stream calls, music, and television directly. These conveniences suit most people, but dexterity, travel habits, and phone type all factor into whether they are right for you."]
+    ["A new experience in hearing", "Our devices can provide a revived experience of hearing. We base the best recommendation on your personal hearing profile, style preferences, manual dexterity, visual abilities, and cosmetic appearance, and we carry products to fit every budget."],
+    ["Brain-first sound processing", "The newest approaches are unlike anything before. Platforms such as Oticon's built-in intelligence, Widex's PureSound with near-instant processing, and learning systems that improve over time aim to deliver clearer, more natural sound with less listening effort, especially in noise."],
+    ["Hearing aid styles", "With advances in digital technology and miniaturization, devices now come in many shapes and sizes to suit your style and comfort, from discreet receiver-in-canal and behind-the-ear designs to custom in-the-ear and completely invisible options. The right style balances power, battery life, handling, and cosmetics."],
+    ["Connect to your world through Bluetooth", "Connecting to your world is key to better hearing today. Modern devices allow easy, direct, wireless access to TVs, iPhones, and iPads so you can watch television, listen to music and podcasts, and video chat with clarity and convenience."],
+    ["Smartphone apps and smart-home control", "Companion smartphone apps add functionality and ease of use, letting you adjust settings on the go. Some devices even connect to internet services so you can integrate hearing into the other smart devices you use every day."],
+    ["Support for tinnitus relief", "In addition to supplying quality hearing aids, we perform tinnitus therapy for those seeking relief in daily life. Many devices double as sound therapy tools, and we tailor them as part of a broader [tinnitus](/tinnitus/) care plan."],
+    ["Fitted and verified for you", "No matter which technology is used, the goal is to amplify and process sound so you hear clearly and naturally. A device only performs when it is programmed correctly, so our [fitting process](/hearing-aid-fitting/) confirms output with real-ear measurement."]
   ],
   bulletLinks: [
     ["Compare brands", "/products/hearing-aids-by-brand/"],
@@ -1293,14 +1318,14 @@ export const corePages: Record<string, PageContent> = {
     ["Repairs and adjustments", "/services/hearing-aid-repair/"]
   ],
   takeaways: [
-    "Style, technology level, and connectivity should be matched to your hearing loss and lifestyle, not chosen from a chart.",
-    "Rechargeable and Bluetooth features suit most people but are not universally right; dexterity and habits matter.",
-    "A device's real-world performance depends heavily on programming and verification at fitting."
+    "Every hearing solution is individualized to your hearing profile, dexterity, vision, budget, and cosmetics.",
+    "Modern devices stream from TVs and phones and pair with smartphone apps for easy control.",
+    "Real-world performance depends on programming and real-ear verification at the fitting."
   ],
   faqs: [
-    ["What is the difference between RIC and BTE hearing aids?", "Both sit behind the ear, but a RIC places the receiver down in the canal for a slimmer, more discreet look, while a BTE routes sound through tubing and generally offers more power and durability for greater hearing loss."],
-    ["Are invisible hearing aids as good as larger ones?", "Invisible and in-canal styles are excellent for discretion and suit many mild-to-moderate losses, but their small size limits battery life and some features. We help weigh cosmetics against performance for your specific hearing."],
-    ["Do I need premium technology to hear well?", "Not always. Premium levels shine in noisy, demanding environments. If your days are mostly quiet, a mid-level device may serve you just as well, and we will tell you honestly where the extra investment pays off."]
+    ["Can I try hearing aids before I commit?", "Yes. We invite you to try a set risk-free and experience them in your own real-world environments. Because we fit across the major brands, we can match you to devices that genuinely suit your hearing and lifestyle."],
+    ["What hearing aid styles are available?", "Styles range from receiver-in-canal and behind-the-ear designs to custom in-the-ear and completely invisible options. The right choice balances power, battery life, ease of handling, and cosmetics, which we weigh against your hearing loss together."],
+    ["Do modern hearing aids connect to my phone and TV?", "Most current devices offer Bluetooth streaming for direct, wireless access to TVs, iPhones, and iPads, plus smartphone apps that let you adjust volume and programs. We help decide whether these features suit your dexterity and daily routine."]
   ],
   image: "/assets/core/products__hearing-aids.svg",
   imageLabel: "Hearing aid styles and technology"
@@ -1309,27 +1334,27 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Patient Resources",
   headline: "A HearingUp Approved Provider Committed to Best Practices",
   intro: [
-    "Not all hearing aid fittings are done the same way, and the difference shows up in how well people actually hear. HearingUp, the provider network associated with Dr. Cliff Olson, AuD, was created to help patients find hearing care practices that follow evidence-based Best Practices rather than shortcuts. California Hearing Center is a HearingUp approved provider.",
-    "For a patient, that designation is a shorthand for something important: a commitment to fitting hearing aids the right way, including real-ear verification, thorough evaluation, and structured follow-up, rather than simply programming devices to a manufacturer's default and sending you out the door.",
+    "Not all hearing aid fittings are done the same way, and the difference shows up in how well people actually hear. Choosing an audiologist who follows evidence-based best practices is one of the most important factors in a life-changing result, because effective treatment takes a provider willing to invest the time and tools to optimize your hearing rather than settle for a quick default. HearingUp, the provider network associated with Dr. Cliff Olson, AuD, was created to help patients find practices that do exactly that. California Hearing Center is a HearingUp approved provider.",
+    "For a patient, that designation is a shorthand for something important: a commitment to fitting hearing aids the right way, including real-ear verification, thorough evaluation, and structured follow-up, rather than simply programming devices to a manufacturer's default and sending you out the door. By some estimates, only a minority of hearing care providers consistently follow this full set of best practices, so it is worth seeking out those who do.",
     "This page explains what the designation signifies and why it should matter when you choose where to receive hearing care."
   ],
   sections: [
-    ["What HearingUp is", "HearingUp is a provider directory and standard associated with audiologist Dr. Cliff Olson, AuD, aimed at helping consumers identify practices that commit to comprehensive, evidence-based hearing care. Approved providers agree to follow a defined set of Best Practices in how they evaluate hearing and fit hearing aids."],
-    ["The role of real-ear verification", "A cornerstone of these Best Practices is real-ear measurement, sometimes called real-ear verification. Instead of trusting that a hearing aid delivers the prescribed sound, the clinician places a tiny probe microphone in your ear and measures what actually reaches your eardrum, then adjusts the device to match your prescription. Research has long shown this step improves fitting accuracy, yet it is not performed everywhere."],
-    ["Why best practices matter for outcomes", "Two people can receive the same hearing aids and have very different experiences depending on how carefully the devices are evaluated for, programmed, verified, and followed up. Best-practice protocols are designed to close that gap, giving you a fitting matched to your ears and your hearing rather than a generic setting."],
-    ["What it means for you as a patient", "Choosing a HearingUp approved provider is a way to seek out a practice that has publicly committed to doing hearing care thoroughly. It aligns with how we already work: careful [evaluation](/hearing-testing/), verified [fitting](/hearing-aid-fitting/), and ongoing adjustment. The designation is a signal of process and philosophy, not a promise about any specific product."],
+    ["What HearingUp is", "HearingUp, sometimes referred to as the Dr. Cliff Approved Provider Network, is a provider directory and standard associated with audiologist Dr. Cliff Olson, AuD, aimed at helping consumers identify practices that commit to comprehensive, evidence-based hearing care. Approved providers agree to follow a defined set of best practices in how they evaluate hearing and fit hearing aids, and to keep the interests of people with hearing loss at the center of care."],
+    ["The role of real-ear verification", "A cornerstone of these best practices is real-ear measurement, sometimes called real-ear verification, widely regarded as the gold standard for hearing aid fitting. Instead of trusting that a hearing aid delivers the prescribed sound, the clinician places a tiny probe microphone in your ear and measures what actually reaches your eardrum, then adjusts the device to match your prescription. Research has long shown this step improves fitting accuracy, yet it is not performed everywhere. We never simply guess at your settings."],
+    ["Why best practices matter for outcomes", "Two people can receive the same hearing aids and have very different experiences depending on how carefully the devices are evaluated for, programmed, verified, and followed up. Best-practice protocols are designed to close that gap, giving you a fitting matched to your ears and your hearing rather than a generic setting, which is what turns technology into real-world benefit."],
+    ["What it means for you as a patient", "Choosing a HearingUp approved provider is a way to seek out a practice that has publicly committed to doing hearing care thoroughly. It aligns with how we already work: careful [evaluation](/hearing-testing/), verified [fitting](/hearing-aid-fitting/), and ongoing adjustment. The designation is a signal of process and philosophy, not a promise about any specific product or brand of hearing aid."],
     ["Learn more from us directly", "We are happy to explain exactly what our best-practice process looks like and to answer questions about what to expect at a fitting. If you would like the details, reach out through our [contact page](/contact/) and we will walk you through it."]
   ],
   bullets: ["HearingUp approved", "Real-ear verification", "Evidence-based fittings", "Thorough evaluation", "Structured follow-up", "Process you can trust"],
   takeaways: [
-    "The HearingUp designation signals a commitment to evidence-based Best Practices.",
-    "Real-ear verification measures what actually reaches your eardrum and improves fitting accuracy.",
+    "The HearingUp designation signals a commitment to evidence-based best practices.",
+    "Real-ear verification, the gold standard for fitting, measures what actually reaches your eardrum.",
     "It reflects how care is delivered, not a claim about any particular hearing aid brand."
   ],
   faqs: [
-    ["What does it mean that you are a HearingUp approved provider?", "It means our practice has committed to following the evidence-based Best Practices that HearingUp promotes, including real-ear verification and comprehensive evaluation and follow-up, rather than default programming. It reflects our process and philosophy of care."],
-    ["What is real-ear verification and why does it matter?", "Real-ear measurement uses a small probe microphone in your ear to measure the sound a hearing aid actually delivers to your eardrum, so the device can be adjusted to match your prescription. It is a well-established step for improving fitting accuracy."],
-    ["Who is Dr. Cliff, and is HearingUp a brand of hearing aid?", "Dr. Cliff Olson, AuD, is an audiologist behind the HearingUp network, which is a directory and standard for best-practice hearing care, not a brand of hearing aid. The designation is about how care is delivered, not which devices are used."]
+    ["What does it mean that you are a HearingUp approved provider?", "It means our practice has committed to following the evidence-based best practices that HearingUp promotes, including real-ear verification and comprehensive evaluation and follow-up, rather than default programming. It reflects our process and philosophy of care."],
+    ["What is real-ear verification and why does it matter?", "Real-ear measurement uses a small probe microphone in your ear to measure the sound a hearing aid actually delivers to your eardrum, so the device can be adjusted to match your prescription. It is a well-established, gold-standard step for improving fitting accuracy."],
+    ["Who is Dr. Cliff, and is HearingUp a brand of hearing aid?", "Dr. Cliff Olson, AuD, is the audiologist behind the HearingUp network, which is a directory and standard for best-practice hearing care, not a brand of hearing aid. The designation is about how care is delivered, not which devices are used."]
   ],
   image: "/assets/core/resources__hearingup-approved-provider.svg",
   imageLabel: "Committed to hearing care best practices",
@@ -1338,27 +1363,28 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Patient Resources",
   headline: "Hearing Care, Hearing Aids & Insurance: What to Know",
   intro: [
-    "Insurance is one of the most common sources of confusion in hearing care, partly because coverage varies so widely from plan to plan. Some plans cover diagnostic hearing tests but not hearing aids; others include a hearing aid benefit, an allowance, or a discount program; and coverage for the same service can differ between two people at the same employer. Because of that, the honest answer to 'is it covered?' almost always starts with checking your specific plan.",
-    "This page explains, in general terms, how hearing services and hearing aids tend to interact with insurance and Medicare, and how California Hearing Center helps you understand your own benefits before you make any decisions. We cannot promise what any particular plan will pay, but we can help you get clear answers.",
-    "When in doubt, the most reliable path is to let us help verify your benefits directly with your carrier."
+    "Insurance is one of the most common sources of confusion in hearing care, partly because coverage varies so widely from plan to plan. Some plans cover diagnostic hearing tests but not hearing aids; others include a hearing aid benefit, an allowance, or a discount program; and coverage for the same service can differ between two people at the same employer. Many patients delay getting the help they need simply because of that uncertainty. The honest answer to 'is it covered?' almost always starts with checking your specific plan.",
+    "This page explains, in general terms, how hearing services and hearing aids tend to interact with insurance and Medicare, and how California Hearing Center helps you understand your own benefits before you make any decisions. We offer courtesy insurance billing as a service, and our team works to clarify your deductibles, co-pays, and coverage limits specifically for hearing devices. We cannot promise what any particular plan will pay, but we can help you get clear answers.",
+    "When in doubt, the most reliable path is to let us help verify your benefits directly with your carrier so you can move forward with confidence and no surprises."
   ],
   sections: [
     ["Diagnostic testing vs. hearing aids", "Insurers often treat a diagnostic hearing evaluation differently from hearing aids themselves. A medically indicated hearing test may be covered when a hearing aid benefit is not, since many plans historically classified hearing aids separately. Knowing this distinction helps set realistic expectations before your visit."],
     ["Original Medicare and hearing", "Original Medicare (Parts A and B) generally does not cover routine hearing exams or hearing aids, though it may cover a diagnostic hearing and balance exam when a physician orders it to help with medical treatment. Because rules and interpretations can change, it is worth confirming current specifics rather than relying on general memory."],
     ["Medicare Advantage and other plans", "Some Medicare Advantage plans and private plans add hearing benefits that Original Medicare does not include, such as an allowance toward hearing aids or access to a discount network. These benefits differ significantly by plan and can carry their own rules, provider requirements, and limits, so the details matter."],
+    ["Questions worth asking your plan", "Before you buy, it helps to ask a handful of specific questions: Does my plan include a hearing aid benefit at all? What amount or percentage does it put toward devices? Do deductibles or out-of-pocket maximums apply first? How often will it help replace devices (often every three to seven years)? Can I use my own audiologist or must I stay in-network? Are diagnostic hearing evaluations covered, and do they need a physician referral? The answers shape your realistic options."],
     ["Allowances, discounts, and out-of-pocket costs", "A hearing benefit might take the form of a fixed dollar allowance, a discount program, or partial coverage rather than full payment, which means most people should expect some out-of-pocket cost. Understanding the structure of your benefit up front helps you compare technology options realistically."],
-    ["How our office helps", "We are glad to help you understand and verify your benefits, gather the information carriers ask for, and explain what your plan indicates before you commit to anything. Our goal is that you make a decision with clear numbers in front of you. If you would like help getting started, visit our [contact page](/contact/)."]
+    ["How our office helps", "Our insurance support is a courtesy service: we help you understand and verify your benefits, gather the information carriers ask for, clarify deductibles and co-pays, and explain what your plan indicates before you commit to anything. Our goal is that you decide with clear numbers in front of you. If you would like help getting started, visit our [contact page](/contact/)."]
   ],
-  bullets: ["Coverage varies by plan", "Testing vs. aids differ", "Medicare specifics differ", "Allowances & discounts", "We help verify benefits", "No surprises up front"],
+  bullets: ["Coverage varies by plan", "Testing vs. aids differ", "Medicare specifics differ", "Courtesy benefit verification", "Questions to ask upfront", "No surprises up front"],
   takeaways: [
     "Hearing coverage varies widely, so the answer usually depends on your specific plan.",
     "Diagnostic testing and hearing aids are often covered differently.",
-    "We help you verify your benefits so you can decide with real numbers in hand."
+    "We offer courtesy billing and benefit verification so you can decide with real numbers in hand."
   ],
   faqs: [
     ["Does insurance cover hearing aids?", "Some plans do, in whole or in part, and some do not. Benefits range from a fixed allowance to a discount program to no coverage at all, so it depends on your specific plan. We can help you check what yours includes."],
     ["Does Medicare pay for hearing aids?", "Original Medicare generally does not cover routine hearing aids, though it may cover a physician-ordered diagnostic exam in certain situations. Some Medicare Advantage plans add a hearing benefit. Confirming your particular plan's current terms is the reliable path."],
-    ["How do I find out what my plan covers?", "The best step is to verify benefits directly with your carrier, which we are happy to help with. Call 650-342-9449 and our team can walk you through gathering the information your plan needs."]
+    ["How do I find out what my plan covers?", "The best step is to verify benefits directly with your carrier, which we are happy to help with as a courtesy. Call 650-342-9449 and our team can walk you through the questions to ask and gather the information your plan needs."]
   ],
   image: "/assets/core/resources__insurance.svg",
   imageLabel: "Understanding your hearing benefits",
@@ -1437,26 +1463,27 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Audiology Services",
   headline: "Professional Earwax Removal in San Mateo & San Carlos",
   intro: [
-    "Earwax, or cerumen, is normal and healthy. It traps dust, protects delicate ear canal skin, and usually works its way out on its own. Trouble starts when wax builds up faster than it clears, hardens against the eardrum, or gets pushed deeper by a cotton swab. At that point it can muffle hearing, cause a plugged or full feeling, trigger or worsen tinnitus, and make hearing aids whistle or stop working.",
-    "At California Hearing Center, wax is removed under direct visualization by clinicians who examine the canal and eardrum first. That matters: a blockage that looks like simple wax can sometimes hide an ear infection, a perforation, or other issues that change how removal should be done, or whether it should be done at all.",
-    "Our San Mateo and San Carlos offices handle routine buildup and stubborn, impacted wax that at-home kits could not clear."
+    "Earwax, or cerumen, is normal and healthy. Specialized glands in the ear canal produce it for a reason: this slightly oily substance is your ears' own self-cleaning mechanism, trapping dust, dead skin cells, debris, and bacteria and then migrating outward on its own as you talk and chew. Trouble starts only when wax builds up faster than it clears, hardens against the eardrum, or gets pushed deeper by a cotton swab. At that point it can muffle hearing, cause a plugged or full feeling, contribute to a sense of imbalance, trigger or worsen tinnitus, and make hearing aids whistle or stop working.",
+    "Some people simply produce more wax than their ears can expel, and that overproduction is what leads to buildup and impaction. At California Hearing Center, wax is removed under direct visualization by clinicians who examine the canal and eardrum first. That matters: a blockage that looks like simple wax can sometimes hide an ear infection, a perforation, or other issues that change how removal should be done, or whether it should be done at all.",
+    "Our San Mateo and San Carlos offices handle routine buildup and the stubborn, impacted wax that at-home kits could not clear, using professional-grade equipment so the canal is cleared completely without risking damage."
   ],
   sections: [
+    ["Signs your ears may be blocked", "The classic clues are a sudden drop in hearing, a muffled or underwater quality to sound, a plugged or full sensation, an earache, or ringing that seems louder. Because a fully occluded canal can also leave you feeling slightly off balance, wax is worth ruling out when these symptoms appear together. Many patients are relieved to learn the cause was simply cerumen."],
     ["How professional removal works", "Depending on the wax and your ear health, we may use curettage (gentle lifting with a small instrument), irrigation (warm-water flushing), or microsuction (low-pressure vacuum). Microsuction and curettage let the clinician watch the canal the entire time, which is safer for narrow canals, prior surgery, or a history of perforation."],
     ["Why cotton swabs backfire", "Swabs remove a little wax from the opening while packing the rest deeper against the eardrum. Over time that creates the exact impaction people are trying to prevent, and it risks scratching the canal or damaging the eardrum. The old advice holds: nothing smaller than your elbow in your ear."],
     ["Why we advise against ear candling", "Ear candling is not supported by evidence and carries real risks, including burns, wax from the candle dripping into the canal, and eardrum injury. It does not create meaningful suction or pull wax out. We do not offer it and gently steer patients away from it."],
-    ["When wax is behind hearing loss or tinnitus", "A full canal can reduce hearing by blocking sound and can make ringing or a blocked sensation more noticeable. Many patients are relieved to learn a sudden muffling was simply wax. Because wax is a reversible cause, we often check for it as part of a [hearing evaluation](/hearing-testing/) before assuming the loss is permanent."],
+    ["When wax is behind hearing loss or tinnitus", "A full canal can reduce hearing by blocking sound and can make ringing or a blocked sensation more noticeable. Because wax is a reversible cause, we often check for it as part of a [hearing evaluation](/hearing-testing/) before assuming the loss is permanent."],
     ["Wax and hearing aids", "Wax is the leading cause of hearing aid malfunction. It clogs receivers and blocks the tiny sound ports and vents. Keeping the canal clear protects your devices and keeps them sounding right, which is why we combine wax care with [repairs and servicing](/services/hearing-aid-repair/) when needed."]
   ],
   bullets: ["Curettage removal", "Warm-water irrigation", "Gentle microsuction", "Ear canal exam first", "Impacted wax relief", "Hearing aid users welcome"],
   takeaways: [
-    "Wax is normal; only buildup or impaction needs professional removal.",
+    "Wax is normal and self-clearing; only buildup or impaction needs professional removal.",
     "Cotton swabs and ear candling can make things worse and cause injury.",
     "Because wax is a reversible cause of muffled hearing and fullness, it is worth checking before assuming permanent loss."
   ],
   faqs: [
     ["Is professional earwax removal safe?", "When performed by a trained clinician who examines the ear first, removal is safe and comfortable for most people. Watching the canal directly during curettage or microsuction lowers the risk of injury compared with blind at-home tools."],
-    ["Can earwax really cause hearing loss?", "Yes. A canal fully blocked by wax can noticeably reduce hearing and create a plugged, full feeling. This type of loss is usually temporary and improves once the blockage is cleared."],
+    ["Can earwax really cause hearing loss?", "Yes. A canal fully blocked by wax can noticeably reduce hearing and create a plugged, full feeling, and it can even affect your sense of balance. This type of loss is usually temporary and improves once the blockage is cleared."],
     ["Should I use at-home wax removal kits?", "Softening drops help some people, but irrigation kits and swabs can push wax deeper or irritate the canal, especially with narrow canals, prior ear surgery, or a perforation. If home care is not clearing it, call 650-342-9449 to have it looked at."]
   ],
   image: "/assets/service-2.png",
@@ -1466,27 +1493,28 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Audiology Services",
   headline: "Hearing Aid Repair & Servicing on the Peninsula",
   intro: [
-    "A hearing aid that has gone quiet, weak, or scratchy is not always broken. Many problems come down to wax, moisture, or a worn part, and a lot of them can be solved the same day in our office. California Hearing Center services hearing aids from most major manufacturers, whether or not the device was originally purchased here.",
-    "When a device fails, we start by diagnosing the real cause rather than guessing. A dead-sounding aid might have a clogged receiver, a spent battery contact, a torn wax guard, or moisture trapped inside. Sorting that out quickly gets you hearing again and often saves the cost of an unnecessary factory repair.",
-    "For issues that do need the manufacturer's lab, we handle the paperwork, warranty check, and shipping so you are not left to navigate it alone."
+    "A hearing aid that has gone quiet, weak, scratchy, or full of feedback is not always broken. Many problems come down to wax, moisture, or a worn part, and a lot of them can be solved the same day in our office. A hearing aid you cannot rely on is frustrating and can feel almost worthless, and everyone deserves comfortable, functional devices, so California Hearing Center services hearing aids from most major manufacturers, whether or not the device was originally purchased here.",
+    "When a device fails, we start by diagnosing the real cause rather than guessing. A dead-sounding aid might have a clogged receiver, a spent battery contact, a torn wax guard, or moisture trapped inside. If you are hearing whistling, interference, or distortion, or the device simply needs a thorough cleaning, we sort that out quickly to get you hearing again and often save the cost of an unnecessary factory repair. We complete most simple repairs right in the office.",
+    "For issues that do need the manufacturer's lab, we handle the paperwork, warranty check, and shipping so you are not left to navigate it alone, and we can loan you a device while yours is away. A loaner will not be tuned to you as finely as your own aids, but it keeps you hearing until yours come back."
   ],
   sections: [
-    ["In-office repairs we handle", "Common fixes include replacing wax guards and domes, retubing behind-the-ear devices, clearing clogged sound ports and receivers, swapping receivers, cleaning corroded battery contacts, and drying out moisture. Many visits end with a working device in hand."],
+    ["In-office repairs we handle", "Common fixes include replacing wax guards and domes, retubing behind-the-ear devices, clearing clogged sound ports and receivers, swapping receivers, cleaning corroded battery contacts, and drying out moisture. Many visits end with a working device in hand the same day."],
     ["Moisture damage", "Sweat, humidity, and rain are hard on the electronics inside a hearing aid. We can deep-dry devices with professional dehumidifiers and advise on daily drying habits and covers so it does not keep happening. Custom moisture guards such as sleeves are an option for active or heavy-sweat users."],
+    ["Feedback, interference, and distortion", "Whistling, buzzing, or a scratchy signal often points to a cracked tube, a loose receiver, a poor seal, or a failing component rather than a device that is truly finished. We track down the source and correct it, restoring clean, stable sound."],
     ["Dead or distorted receivers", "The receiver is the tiny speaker that delivers sound into your ear, and it is one of the first parts to fail from wax and moisture. Replacing a receiver in a receiver-in-canal device is usually quick and far cheaper than a full lab repair."],
     ["Retubing and earmold care", "On behind-the-ear aids, the clear tubing stiffens, yellows, and cracks over time, which changes the sound and can cause feedback. Fresh tubing and clean earmolds restore comfort and clarity."],
-    ["Warranties and lab repairs", "If your device is still under manufacturer warranty, a covered repair may cost little or nothing. When a repair is beyond in-office work, we coordinate the send-out and keep you informed. Once repairs are done, we verify the fit and programming so the device performs the way it should, tying back into [hearing aid fitting](/hearing-aid-fitting/)."]
+    ["Warranties and lab repairs", "If your device is still under manufacturer warranty, a covered repair may cost little or nothing. When a repair is beyond in-office work, we coordinate the send-out, provide a loaner, and keep you informed. Once repairs are done, we verify the fit and programming so the device performs the way it should, tying back into [hearing aid fitting](/hearing-aid-fitting/)."]
   ],
-  bullets: ["Most major brands", "Same-day fixes", "Moisture drying", "Receiver replacement", "Retubing & earmolds", "Warranty coordination"],
+  bullets: ["Most major brands", "Same-day fixes", "Moisture drying", "Receiver replacement", "Retubing & earmolds", "Loaner while yours ships"],
   takeaways: [
     "Many 'dead' hearing aids are just clogged, damp, or due for a small part, and are fixable in-office.",
     "We service most brands, including devices bought elsewhere.",
-    "For warranty or lab-level repairs we manage the process end to end."
+    "For warranty or lab-level repairs we manage the process end to end and can loan you a device."
   ],
   faqs: [
     ["Do you repair hearing aids not purchased from you?", "Yes. We service devices from most major manufacturers regardless of where they were bought, though the specific repair and any charges depend on the brand, model, and warranty status."],
     ["My hearing aid suddenly stopped working. What should I try first?", "Check the battery or charger, look for wax on the wax guard and receiver, and make sure the sound outlet is not blocked. If a fresh wax guard and clean device do not help, bring it in and we will diagnose it."],
-    ["Is it worth repairing an older hearing aid?", "Sometimes. If the device otherwise suits your hearing and lifestyle, a small repair can extend its life for years. If it is aging out of support or your hearing has changed, we will talk honestly about repair versus replacement."]
+    ["Will I be without my hearing aids if you send them to the manufacturer?", "Usually not. When a device has to go to the lab, we can loan you a device to use in the meantime. It will not be tuned to you as precisely as your own, but it keeps you hearing until your repaired aids return."]
   ],
   image: "/assets/service-3.png",
   imageLabel: "In-office hearing aid diagnostics and repair",
@@ -1524,27 +1552,27 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Protection",
   headline: "Electronic Hearing Protection for Hunting & Shooting",
   intro: [
-    "A single gunshot can exceed the level at which hearing damage happens instantly, and impulse noise like this is especially harmful because it is so sudden and intense. Yet standard plugs and muffs create a real problem for hunters and shooters: block enough of the blast and you can no longer hear game, range commands, or the person next to you. Electronic protection is designed to give you both.",
-    "California Hearing Center fits electronic and sound-suppression protection that lets normal, quieter sounds through, or even amplifies them, while clamping down instantly on the dangerous peak of a gunshot. You keep your situational awareness and conversation, and your ears are shielded the moment the shot goes off.",
-    "We fit hunters, sport and competitive shooters, range officers, and firearms instructors across the Bay Area."
+    "A single gunshot typically exceeds 140 decibels, a level at which hearing damage can happen instantly, and impulse noise like this is especially harmful because it is so sudden and intense. Even one unprotected shot can cause permanent damage and set off ringing. Yet standard plugs and muffs create a real problem for hunters and shooters: block enough of the blast and you can no longer hear game, range commands, or the person next to you. Electronic protection is designed to give you both.",
+    "California Hearing Center fits electronic, level-dependent protection that lets normal, quieter sounds through, or even amplifies them, while clamping down instantly on the dangerous peak of a gunshot. Microphones pick up ambient sound, digital processing enhances the frequencies most important for detecting game, and the circuitry compresses harmful impulses to safe levels the moment they occur. Between shots you hear normally, and often better than normal; at the shot, the peak is suppressed. For many hunters, detecting subtle sound is the difference between success and going home empty-handed.",
+    "We fit hunters, sport and competitive shooters, range officers, and firearms instructors across the Bay Area, tailoring the solution to how and what you hunt."
   ],
   sections: [
-    ["Why impulse noise is different", "Gunfire is impulse noise: an extremely loud, near-instant spike. Unlike a steady factory hum, a single unprotected shot can cause immediate, permanent damage and set off ringing. Because the danger is in that split-second peak, protection has to react fast, which is where digital suppression earns its place."],
-    ["How electronic (digital) protection works", "Electronic ear protection uses microphones and fast circuitry to pass through or amplify ordinary sounds, then compress or cut the sound the instant a loud impulse is detected. Between shots you hear normally; at the shot, the peak is suppressed. This lets you converse, hear approaching game, and follow range commands while staying protected."],
-    ["Custom molded electronic options", "Beyond over-the-ear muffs, we fit custom in-ear electronic protectors molded to your canal. They are low-profile, comfortable under a hat or when shouldering a firearm, and they seal reliably. The custom fit keeps them from loosening as you move through the field or between shooting positions."],
-    ["Awareness in the field", "For hunting, hearing matters as much as protection: footsteps, calls, wind, and a companion's voice all feed your awareness and safety. Electronic protection preserves those quiet sounds instead of sealing you off, so you stay connected to your surroundings while your hearing is guarded from the shot."],
-    ["Protect what you have", "Many longtime shooters already carry some high-frequency loss or tinnitus from years of exposure. A baseline [hearing test](/hearing-testing/) shows where you stand, and consistent protection helps prevent further loss. If ringing lingers after range days, our [tinnitus resources](/tinnitus/) can help."]
+    ["Why impulse noise is different", "Gunfire is impulse noise: an extremely loud, near-instant spike. Unlike a steady factory hum, it can cause immediate, permanent damage from a single unprotected shot. Because the danger lives in that split-second peak, protection has to react in milliseconds, which is exactly where digital suppression earns its place."],
+    ["How electronic protection works", "Level-dependent electronic protectors use microphones and fast circuitry to pass through or amplify ordinary sounds, then compress or cut the level the instant a loud impulse is detected. You converse, hear approaching game, and follow range commands between shots, and are protected automatically the moment you fire. Advanced units also add wind-noise reduction, a common problem for outdoor devices, and directional microphones that help you place the source of a sound."],
+    ["Matched to how you hunt", "Different pursuits ask different things of your ears. Waterfowl hunters need call recognition and waterproof durability while enduring repetitive shotgun fire in a confined blind. Big game hunters want to catch subtle movement at distance, with protection that activates for a larger-caliber rifle. Turkey hunters depend on hearing distant gobbles and pinpointing their direction. Upland hunters need all-day comfort to hear flushing birds and dog bells across many shots. We match the technology and the fit to your field."],
+    ["Custom molded electronic options", "Beyond over-the-ear muffs, we fit custom in-ear electronic protectors molded to your canal. They are low-profile, comfortable under a hat or when shouldering a firearm, and they seal reliably. For dedicated hunters, that custom fit means all-day comfort and consistent protection as you move through the field or between shooting positions, advantages basic over-the-counter plugs cannot match."],
+    ["Protecting, and compensating for, your hearing", "Many longtime shooters already carry high-frequency loss or tinnitus from years of exposure. For hunters with existing loss, we can provide devices that both protect your remaining hearing and compensate for the loss, with settings tuned for different environments. A baseline [hearing test](/hearing-testing/) shows where you stand, and if ringing lingers after range days, our [tinnitus resources](/tinnitus/) can help."]
   ],
-  bullets: ["Suppresses gunshot peaks", "Hear speech & game", "Digital electronic circuits", "Custom in-ear or muff", "For range & field", "Preserves awareness"],
+  bullets: ["Suppresses gunshot peaks", "Hear speech & game", "Level-dependent circuits", "Wind-noise reduction", "Custom in-ear or muff", "Tuned to your hunt"],
   takeaways: [
-    "Gunfire is impulse noise that can damage hearing from a single unprotected shot.",
-    "Electronic protection passes quiet sound through but clamps the dangerous peak instantly.",
-    "You keep situational awareness and conversation while staying protected."
+    "Gunfire is impulse noise that can damage hearing from a single unprotected shot above roughly 140 dB.",
+    "Electronic protection passes quiet sound through, and can enhance it, while clamping the dangerous peak instantly.",
+    "Custom solutions add all-day comfort, a reliable seal, and programming matched to your type of hunting."
   ],
   faqs: [
-    ["How can electronic ear protection let me hear but still block gunshots?", "It uses microphones and fast circuitry to pass through or amplify normal sounds, then suppress the sound the instant a loud impulse like a gunshot is detected. You hear conversation and the environment between shots and are protected at the shot."],
-    ["Do I really need protection if I only shoot occasionally?", "Yes. Impulse noise from firearms can cause permanent damage from even a single unprotected shot. Occasional shooters still benefit from consistent protection every time they are near gunfire."],
-    ["Is custom in-ear protection better than muffs for hunting?", "Both work. Custom in-ear protectors are lower profile, comfortable under hats, and do not interfere with shouldering a firearm, while muffs are easy to share and remove. Many shooters choose based on comfort, fit, and how they hunt or compete."]
+    ["How can electronic ear protection let me hear but still block gunshots?", "It uses microphones and fast circuitry to pass through or amplify normal sounds, then compress the sound the instant a loud impulse like a gunshot is detected. You hear conversation, calls, and game between shots, and are protected within milliseconds at the shot."],
+    ["I already have hearing loss from years of hunting. Can you still help?", "Yes. Many hunters come to us after years of unprotected shooting. We can fit devices that compensate for your existing loss while protecting what remains, programmed with settings for different hunting environments so you may actually hear game better than before."],
+    ["Is custom in-ear protection better than over-the-counter muffs?", "For occasional shooters, quality over-the-counter products can be adequate. For dedicated hunters, custom in-ear protectors add all-day comfort, a consistent seal, a low profile under hats and while shouldering a firearm, and programming tuned to your hearing and your hunt."]
   ],
   image: "/assets/core/services__hearing-protection__hunting.svg",
   imageLabel: "Electronic protection for shooting and hunting",
@@ -1553,27 +1581,27 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Protection",
   headline: "Hearing Protection & Situational Awareness for Law Enforcement",
   intro: [
-    "For officers, hearing protection cannot come at the cost of hearing. On the range, in training, and on duty, you have to catch a partner's call, a suspect's movement, or a radio transmission at the same time your ears need shielding from gunfire and other sudden noise. Ordinary plugs force a choice between protection and awareness; purpose-built electronic protection removes that choice.",
-    "California Hearing Center fits hearing protection designed for law enforcement, range, and tactical use: solutions that preserve or even enhance low-level sound and communication while instantly suppressing the peak of a gunshot or other impulse noise. The aim is protection that supports the mission rather than getting in its way.",
-    "We work with local officers, range personnel, and tactical teams to fit protection that fits the job and gets worn."
+    "For officers, hearing protection cannot come at the cost of hearing. On the range, in training, and on duty, you have to catch a partner's call, a suspect's movement, or a radio transmission at the same time your ears need shielding from gunfire and other sudden noise. The sources add up fast: firearms discharge can reach 140 to 175 dB, sirens 110 to 130 dB, and flash-bangs even higher, all well above the levels that cause cumulative damage over a career. Ordinary plugs force a choice between protection and awareness; purpose-built electronic protection removes that choice.",
+    "California Hearing Center fits hearing protection designed for law enforcement, range, and tactical use: level-dependent solutions that preserve or even enhance low-level sound and communication while instantly suppressing the peak of a gunshot or other impulse noise. Because traditional passive plugs can dull the very sounds an officer's safety depends on, our tactical electronic options compress harmful peaks in milliseconds while keeping speech, footsteps, and radio traffic audible. The aim is protection that supports the mission rather than getting in its way.",
+    "We work with local officers, sheriff's deputies and corrections staff, state troopers, federal agents, tactical units, and firearms instructors to fit protection that fits the job and actually gets worn."
   ],
   sections: [
-    ["The awareness problem", "Blocking enough sound to guard against gunfire can also block the sounds an officer's safety depends on: verbal commands, footsteps, a drawn weapon, radio traffic. Electronic protection is built to keep those sounds available, so situational awareness stays intact while the ears are still protected from dangerous peaks."],
-    ["How the technology helps", "Digital electronic protectors use microphones to pass through or amplify quieter environmental sounds, then compress or cut the level the instant a loud impulse is detected. Officers can communicate and stay oriented between shots, with the gunshot peak suppressed automatically the moment it occurs."],
-    ["Range and training use", "High-volume range days mean repeated impulse exposure, which adds up over a career. Consistent, comfortable protection during qualification and training is one of the most important habits for preserving long-term hearing, and comfortable custom fits make it far more likely protection is worn every session."],
-    ["Custom-fit and communication", "We fit custom-molded in-ear options that seal reliably, stay comfortable during long shifts, and sit low enough to work with a firearm, radio earpiece, and other gear. A secure custom seal is what makes the protection consistent as you move and reposition."],
-    ["Baseline and monitoring", "Because occupational noise exposure accumulates, a baseline [hearing evaluation](/hearing-testing/) and periodic monitoring help catch changes early. If exposure has already caused ringing, our [tinnitus care](/tinnitus/) can help you manage it."]
+    ["The awareness problem", "Blocking enough sound to guard against gunfire can also block the sounds an officer's safety depends on: verbal commands, footsteps, a drawn weapon, radio traffic. Level-dependent electronic protection is built to keep those sounds available, and can even improve your ability to locate them, so situational awareness stays intact while the ears are still protected from dangerous peaks."],
+    ["How the technology helps", "Digital electronic protectors use microphones to pass through or amplify quieter environmental sounds, then compress or cut the level the instant a loud impulse is detected. Directional microphones help you place the source of a voice, vehicle, or potential threat, and many solutions can integrate with department radio systems so transmissions stay clear during extended shifts and tactical operations."],
+    ["Fitted to the assignment", "Duty environments differ, and so should the solution. Patrol officers contend with sirens and daily radio traffic; corrections staff work in high-reverberation facilities; highway patrol face prolonged roadway noise; tactical teams deal with breaching, flash-bangs, and firearms. We tailor protection and, where appropriate, discreet devices to the specific acoustic demands of each role rather than issuing one generic plug."],
+    ["Range, training, and instructors", "Firearms instructors and trainers carry some of the highest cumulative noise exposures in the profession. High-volume qualification and scenario training mean repeated impulse exposure that adds up over a career. Consistent, comfortable custom protection during every session, protection that still lets an instructor communicate clearly with trainees, is one of the most important habits for preserving long-term hearing."],
+    ["Baseline, monitoring, and conservation", "Because occupational noise accumulates, a baseline [hearing evaluation](/hearing-testing/) and periodic monitoring help catch changes early, and support agency hearing conservation efforts under standards like OSHA's 85 dB threshold. Custom-molded in-ear options seal reliably, stay comfortable through long shifts, and sit low enough to work with a firearm, radio earpiece, and other gear. If exposure has already caused ringing, our [tinnitus care](/tinnitus/) can help you manage it."]
   ],
-  bullets: ["Situational awareness kept", "Suppresses gunshot peaks", "Radio & command audible", "Custom tactical fit", "Range & duty use", "Comfortable for shifts"],
+  bullets: ["Situational awareness kept", "Suppresses gunshot peaks", "Radio & command audible", "Directional sound cues", "Custom tactical fit", "Comfortable for shifts"],
   takeaways: [
     "Officers need protection that preserves communication and awareness, not just noise blocking.",
-    "Electronic protection passes low-level sound through while suppressing impulse peaks.",
-    "Comfortable custom fits get worn consistently, which is what protects hearing over a career."
+    "Level-dependent electronic protection passes low-level sound through while suppressing impulse peaks in milliseconds.",
+    "Comfortable custom fits get worn consistently, which is what protects hearing across a career of cumulative exposure."
   ],
   faqs: [
-    ["Can hearing protection keep me aware of my surroundings on duty?", "Yes. Electronic protection is designed to pass through or amplify normal-level sounds like speech, footsteps, and radio traffic while instantly suppressing the peak of gunfire, so awareness is preserved during protection."],
-    ["Why not just use standard earplugs at the range?", "Standard plugs can block the sounds you need to hear, including range commands and a partner's voice, so they get taken out, leaving ears unprotected. Electronic protection lets you stay aware and protected at the same time."],
-    ["Will custom protection work with a radio earpiece and other gear?", "Custom in-ear protectors are low profile and molded to your ear, so they generally integrate with duty gear and stay comfortable through long shifts. We fit the solution around how you actually work."]
+    ["Can hearing protection keep me aware of my surroundings on duty?", "Yes. Level-dependent electronic protection is designed to pass through or amplify normal-level sounds like speech, footsteps, and radio traffic, and can help you locate them, while instantly suppressing the peak of gunfire. Awareness is preserved during protection."],
+    ["Why not just use standard earplugs at the range?", "Passive plugs can dull the sounds you need, including range commands and a partner's voice, so they get taken out, leaving ears unprotected. Electronic tactical protection lets you stay aware and protected at the same time, which is why it gets worn every session."],
+    ["Will custom protection work with a radio earpiece and other gear?", "Custom in-ear protectors are low profile and molded to your ear, so they generally integrate with duty gear and stay comfortable through long shifts, and many can enhance radio and command audio. We fit the solution around how you actually work."]
   ],
   image: "/assets/core/services__hearing-protection__law-enforcement.svg",
   imageLabel: "Tactical hearing protection with awareness",
@@ -1582,27 +1610,28 @@ export const corePages: Record<string, PageContent> = {
   kicker: "Hearing Protection",
   headline: "Musician's Earplugs & In-Ear Monitors on the Peninsula",
   intro: [
-    "Musicians face a hard trade-off with ordinary earplugs: foam blocks the high frequencies far more than the lows, so the music turns dull and boomy and pitch becomes hard to judge. Many players give up and go unprotected, which is exactly how careers-worth of hearing damage happens. Musician's earplugs are built to solve this specific problem.",
-    "California Hearing Center fits custom musician's plugs designed for flat, uniform attenuation, meaning they turn the whole sound down evenly, like a volume knob, instead of smothering the treble. You still hear the music accurately, just at a safer level, so your ears are protected without changing the mix you rely on.",
-    "We work with performers, band members, DJs, sound engineers, teachers, students, and dedicated concertgoers across San Mateo, San Carlos, and the wider Bay Area."
+    "For a musician, hearing is not just a sense; it is your livelihood and your passion, and it does not regenerate. Yet ordinary earplugs create a hard trade-off: foam blocks the high frequencies far more than the lows, so the music turns dull and boomy and pitch becomes hard to judge. Many players give up and go unprotected, which is exactly how careers-worth of hearing damage happens. Musician's earplugs are built to solve this specific problem.",
+    "California Hearing Center fits custom musician's plugs designed for flat, even attenuation, meaning they turn the whole sound down uniformly, like a volume knob, instead of smothering the treble. You still hear the music accurately, just at a safer level. Most musicians find that after a short adjustment period they actually hear more detail with proper plugs, because their ears are no longer overwhelmed by excessive volume.",
+    "We work with performers, band members, DJs, sound engineers, teachers, students, and dedicated concertgoers across San Mateo, San Carlos, and the wider Bay Area, matching the solution to your instrument and your stage."
   ],
   sections: [
     ["Flat, even attenuation", "Standard foam can cut highs far more than lows, so cymbals and vocals disappear while bass thumps through. Musician's plugs use a precision acoustic filter that lowers all frequencies by a similar amount, preserving timbre, balance, and the ability to hear yourself and the rest of the ensemble."],
-    ["Interchangeable filter levels", "Custom musician's plugs typically accept filters offering different amounts of reduction, so you can choose more protection for a loud rock set and less for an acoustic gig or rehearsal. Your audiologist helps you pick a starting level based on your instrument and typical exposure."],
-    ["Custom in-ear monitors", "For performers using monitor systems, custom in-ear monitors seal to your ear and let you hear a clean personal mix at lower overall volume than stage wedges. Because they block outside noise, they reduce the temptation to crank levels, protecting your hearing while improving what you hear on stage."],
-    ["Protecting the ears your craft depends on", "Hearing is a musician's most important tool, and it does not regenerate. Tinnitus and high-frequency loss are common in music careers and can affect pitch perception and enjoyment. If you already notice ringing after gigs, consider a baseline [hearing evaluation](/hearing-testing/) and learn about [tinnitus care](/tinnitus/)."],
-    ["Getting fitted", "We take a detailed ear impression so the plug or monitor seals correctly, which is essential for both protection and accurate sound. A poor seal lets bass leak and changes the tuning, so the custom fit is doing acoustic work, not just comfort."]
+    ["Interchangeable filter levels", "Custom musician's plugs typically accept filters offering different amounts of reduction, commonly around 9, 15, or 25 dB, using precision filters from makers such as Etymotic and Westone. That lets you choose more protection for a loud rock set and less for an acoustic gig or rehearsal, and your audiologist helps you pick a starting level based on your instrument and typical exposure."],
+    ["Matched to your instrument", "Sound exposure varies enormously by role: a drum kit can reach 125 to 140 dB at the player's position, while a string quartet sits closer to 90 to 105 dB. Drummers and amplified guitarists often want higher attenuation with preserved low-end feel; orchestral players need filters that protect against the brass and percussion behind them without dulling intonation; vocalists and DJs have their own priorities. We tune the choice to what you play."],
+    ["Custom in-ear monitors", "For performers using monitor systems, custom in-ear monitors seal to your ear and deliver a clean personal mix at a lower overall volume than stage wedges, typically isolating you from 25 to 30 dB of ambient sound. Because they block outside noise, they reduce the temptation to crank levels, protecting your hearing while improving what you hear on stage. Options range from single-driver monitors to multi-driver systems with ambient microphones."],
+    ["Music-friendly hearing help, and tinnitus care", "For musicians who already have some loss, we can fit instruments programmed specifically for music, with extended frequency response, higher sampling rates, and reduced compression that preserve tonal nuance. Tinnitus and high-frequency loss are common in music careers; if you notice ringing after gigs, consider a baseline [hearing evaluation](/hearing-testing/) and learn about [tinnitus care](/tinnitus/)."],
+    ["Getting fitted", "Fitting begins with precise impressions of your ear canals and outer ears in medical-grade silicone, so the plug or monitor seals correctly, which is essential for both protection and accurate sound. A poor seal lets bass leak and changes the tuning. Finished custom products typically take about two to three weeks, with rush service available for touring musicians on tight schedules."]
   ],
-  bullets: ["Flat, natural sound", "Custom-molded fit", "Interchangeable filters", "In-ear monitor options", "For stage & studio", "Preserves the mix"],
+  bullets: ["Flat, natural sound", "Custom-molded fit", "9/15/25 dB filters", "In-ear monitor options", "For stage & studio", "Preserves the mix"],
   takeaways: [
     "Musician's plugs lower volume evenly so music still sounds natural and accurate.",
-    "Interchangeable filters let you match protection to the gig.",
-    "Custom in-ear monitors protect hearing while giving a cleaner personal mix."
+    "Interchangeable filters (around 9, 15, or 25 dB) let you match protection to the gig.",
+    "Custom in-ear monitors isolate 25 to 30 dB, protecting hearing while giving a cleaner personal mix."
   ],
   faqs: [
-    ["Will musician's earplugs make the music sound muffled?", "No. Unlike foam, they are engineered for flat attenuation, lowering all frequencies fairly evenly. The music sounds the same, just quieter and safer, which is why performers actually keep them in."],
-    ["What is the difference between musician's earplugs and in-ear monitors?", "Earplugs reduce the sound reaching your ears to protect you from loud environments. In-ear monitors are earpieces that play a personal audio mix while sealing out stage noise, letting you monitor at a lower, safer volume."],
-    ["How much protection do I need as a musician?", "It depends on your instrument, venue, and exposure time. Many players start with a moderate filter and adjust. We help you choose a level that protects you without cutting you off from the ensemble."]
+    ["Will musician's earplugs make the music sound muffled?", "No. Unlike foam, they are engineered for flat attenuation, lowering all frequencies fairly evenly. The music sounds the same, just quieter and safer. Many players report hearing more detail once their ears are no longer overwhelmed, which is why they actually keep them in."],
+    ["What is the difference between musician's earplugs and in-ear monitors?", "Earplugs attenuate environmental sound evenly to protect you in loud settings while preserving natural tone. In-ear monitors are custom earpieces that seal the canal and play a personal audio mix from a monitor source, letting you hear a clean mix at a lower, safer volume. Many pros use both."],
+    ["How much protection do I need as a musician?", "It depends on your instrument, venue, and exposure time; a drummer's needs differ from an acoustic guitarist's. Many players start with a moderate filter and adjust. We help you choose a level that protects you without cutting you off from the ensemble."]
   ],
   image: "/assets/core/services__hearing-protection__musicians.svg",
   imageLabel: "Custom musician's earplugs and monitors",

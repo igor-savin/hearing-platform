@@ -2,16 +2,17 @@
   kicker: "Hearing Aid Brands",
   headline: "Signia Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Signia, which carries the heritage of the former Siemens hearing aid business, is a large manufacturer known for polished styling and its own-voice processing. A common frustration for new hearing aid users is that their own voice suddenly sounds strange or booming; Signia developed technology specifically to make the wearer's own voice sound more natural, which can ease that early adjustment.",
-    "Signia also offers distinctive styles, including slim, contemporary designs, along with strong connectivity and rechargeable options. California Hearing Center fits Signia at our San Mateo and San Carlos offices among several capable brands.",
+    "Signia carries a remarkable heritage: its roots reach back to Siemens' early work on clearer telephone voice quality in the 1800s, and in 2016 Siemens' hearing aid division became Signia. That century-plus of audiology experience now sits behind modern, stylish designs that challenge old ideas of what a hearing aid should look like, and it reaches over 120 countries.",
+    "Signia is known for polished styling, own-voice comfort, and its conversation-focused sound processing. California Hearing Center is proud to offer Signia's cutting-edge solutions at our San Mateo and San Carlos offices, and our audiologists are trained to fit and optimize them to your unique hearing profile.",
     "Whether Signia suits you depends on your hearing loss and preferences, confirmed through testing and [expert fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["Own-voice processing", "Signia is well known for technology that processes the wearer's own voice separately, aiming to keep it natural. This can smooth one of the most common complaints during the first weeks of wearing hearing aids."],
-    ["Modern styling", "Signia offers sleek, contemporary designs, including slim receiver styles that some patients find more discreet and appealing than traditional shapes."],
-    ["Connectivity and rechargeability", "Signia supports Bluetooth streaming, app control, and rechargeable batteries across much of its lineup, fitting people who want both technology and convenience."],
-    ["Who Signia may suit", "People bothered by how their own voice sounds through hearing aids, and those who value styling and connectivity, often find Signia a comfortable match."],
-    ["Verified to your prescription", "Own-voice comfort still needs accurate amplification behind it. We program and confirm output with real-ear measurement so the device fits your hearing, not just your ear."]
+    ["Integrated Xperience (IX) conversation technology", "Signia's latest platform, Integrated Xperience, is built for real conversations. Rather than locking onto one direction, its multi-stream architecture can identify, enhance, and track multiple speakers as they move, creating a clear contrast between speech and background noise and reducing listening effort in busy settings."],
+    ["My WellBeing health features", "Signia extends hearing care into wellness with My WellBeing in the Signia app. Using the hearing aids' built-in motion sensors, it can track daily steps and activity, how much you wear your devices, and even conversation time, helping you set and meet personal health goals."],
+    ["A century of audiology heritage", "Signia continues the engineering legacy of Siemens, combining German precision with modern innovation. That long track record informs devices that balance advanced sound processing with refined, everyday reliability."],
+    ["Own-voice comfort and modern styling", "A common frustration for new users is that their own voice sounds strange or booming. Signia's processing aims to keep the wearer's own voice natural, and its sleek, slim designs, including discreet receiver styles, appeal to patients who want a contemporary look."],
+    ["The Signia IX family", "Signia IX delivers clear conversations even in loud settings with easy all-day charging. The lineup includes the Pure Charge&Go IX for active users and the ultra-discreet Silk Charge&Go IX, offering customized solutions across different needs and preferences."],
+    ["Verified to your prescription", "Own-voice comfort and smart processing still need accurate amplification behind them. We program and confirm output with real-ear measurement so the device fits your hearing, not just your ear."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -27,9 +28,10 @@
     "The right brand is the one that measures and sounds best for your ears after professional fitting."
   ],
   faqs: [
-    ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for own-voice processing that keeps the wearer's own voice sounding natural, along with sleek styling, connectivity, and rechargeable options."],
-    ["Why does my own voice sound strange with hearing aids?", "Amplification can make your own voice sound booming or unnatural at first. Signia developed processing to address this, and thoughtful fitting and a short adjustment period also help most people adapt comfortably."],
-    ["Is Signia related to Siemens?", "Yes. Signia grew out of the former Siemens hearing aid division and continues much of that engineering heritage under the Signia name today."]
+    ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for its Integrated Xperience (IX) conversation technology, own-voice comfort, My WellBeing health tracking, and sleek, modern styling with rechargeable options."],
+    ["What is Signia Integrated Xperience (IX)?", "IX is Signia's latest platform. Its multi-stream design can pinpoint and track multiple moving speakers in a conversation, sharpening speech against background noise and reducing listening effort in noisy environments."],
+    ["Why does my own voice sound strange with hearing aids?", "Amplification can make your own voice sound booming or unnatural at first. Signia's processing is designed to keep your own voice natural, and thoughtful fitting plus a short adjustment period help most people adapt comfortably."],
+    ["Is Signia related to Siemens?", "Yes. Signia grew out of the former Siemens hearing aid division in 2016 and continues that century-plus of engineering heritage under the Signia name today."]
   ],
   image: "/assets/signia.webp",
   imageLabel: "Signia own-voice processing"

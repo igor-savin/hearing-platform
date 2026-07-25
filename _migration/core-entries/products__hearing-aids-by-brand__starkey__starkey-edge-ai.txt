@@ -1,35 +1,35 @@
 "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/": {
   kicker: "Hearing Aid Technology",
-  headline: "Starkey Edge AI Hearing Aids on the Peninsula",
+  headline: "Starkey Edge AI Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Starkey Edge AI is a premium hearing aid platform from Starkey, a manufacturer that has leaned heavily into on-device artificial intelligence. The Edge AI name reflects that emphasis: processing designed to analyze and adapt to your sound environment.",
-    "Artificial intelligence in hearing aids is not magic, but it can help devices respond more quickly and naturally to shifting environments like a quiet office giving way to a loud lobby. California Hearing Center helps patients understand what that means in practice.",
-    "We fit Starkey Edge AI in San Mateo and San Carlos, then verify and fine-tune the fitting so the technology helps you in the moments that matter."
+    "Starkey Edge AI is Starkey's flagship platform, bringing powerful sound processing and neural technology together in a device that adapts to your environment in real time. Starkey is one of the long-standing American names in hearing technology, and Edge AI is its most advanced work to date.",
+    "The platform is built on Starkey's G2 processor with integrated neural processing, which is designed to analyze the sounds around you and adjust automatically as conditions change, so conversation stays clearer without you having to fiddle with settings.",
+    "At California Hearing Center, we fit and optimize Starkey Edge AI for patients across the Peninsula. As with every premium device, the fitting is what turns capable hardware into a good daily experience, so we program these hearing aids to your prescription and verify the result."
   ],
   sections: [
-    ["What the AI focus means", "Starkey's premium platforms use on-device processing intended to adapt to your surroundings and support clearer listening. Whether Edge AI suits you depends on your hearing loss, your environments, and your goals rather than the marketing alone."],
-    ["Features beyond hearing", "Starkey has also built health and activity features into some of its devices. These can be a nice bonus for the right patient, but the core question remains how well the device helps you hear."],
-    ["Choosing the right level", "Premium platforms provide the most support in demanding, noisy settings. If your lifestyle is quieter, a mid-tier device may be a better value. We base recommendations on your [hearing evaluation](/hearing-testing/) and daily needs."],
-    ["Fitting and verification", "We program Edge AI to your prescription and confirm the output with real-ear measurement. Verified fitting is what ensures the device is amplifying appropriately for your specific hearing."],
-    ["Connectivity and ongoing care", "Modern Starkey devices generally support streaming and app control. At your fitting we handle pairing and daily-use training, then schedule follow-ups to refine comfort and clarity."]
+    ["The G2 neural processor", "Edge AI runs on Starkey's G2 processor with integrated neural processing, an approach meant to mimic how natural hearing works. It maps and manages your listening environment continuously in the background while still letting you take control through the My Starkey app when you want to."],
+    ["Clearer speech in noise", "The platform's processing is aimed at making speech easier to identify and follow in challenging environments, while lowering distracting background sound. The intent is to make busy conversations less tiring and reduce the listening fatigue that noisy settings can cause."],
+    ["Durable, all-day rechargeable design", "Edge AI is a rechargeable platform designed to last through a full day of typical use, so you are not managing disposable batteries. Certain rechargeable models are also built to resist water and sweat for everyday reliability, in a sleek and comfortable modern design."],
+    ["Health and connectivity features", "Beyond hearing, the My Starkey app is designed to support wellness and everyday convenience, and the devices connect to your phone for streaming and adjustments. We set up the app and pairing during your visit and make sure you are comfortable using them."],
+    ["Fitting and verification", "Choosing Edge AI is only the beginning. We program the devices to your prescription and confirm the sound with [real-ear measurement](/hearing-aid-fitting/), then fine-tune clarity, comfort, and loudness over follow-up visits so the technology performs where you actually spend your time."]
   ],
   bulletLinks: [
     ["Start with a hearing evaluation", "/hearing-testing/"],
-    ["Fitting and verification", "/hearing-aid-fitting/"],
-    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"],
-    ["Repairs and service", "/services/hearing-aid-repair/"],
-    ["San Carlos office", "/contact/san-carlos/"],
-    ["Areas we serve", "/areas-we-serve/"]
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all Starkey models", "/products/hearing-aids-by-brand/starkey/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "Starkey Edge AI is a premium platform built around on-device artificial intelligence.",
-    "AI and health features can help, but hearing performance and fit come first.",
-    "Verified fitting and follow-up care shape your real-world outcome."
+    "Starkey Edge AI is a premium platform built on the G2 processor with integrated neural processing that adapts in real time.",
+    "It is rechargeable and durable, with health and connectivity features managed through the My Starkey app.",
+    "A verified fitting and follow-up care determine how well the technology performs for your hearing."
   ],
   faqs: [
-    ["What does AI actually do in a hearing aid?", "On-device processing analyzes your sound environment and adjusts settings to support clearer listening as conditions change. It works best when the device is properly fit and verified to your hearing, which is where our care comes in."],
-    ["Do Starkey hearing aids track health?", "Some Starkey devices include health and activity features. These can be a useful bonus, but we recommend a device primarily based on how well it addresses your hearing needs."],
-    ["How do I know if Edge AI is right for me?", "We compare it against other options during your consultation, weighing your hearing test, lifestyle, and budget so the recommendation fits you rather than a single brand."]
+    ["What is the G2 neural processor in Starkey Edge AI?", "It is Starkey's processing platform with integrated neural technology, designed to analyze your surroundings and adjust automatically in real time. The aim is clearer speech and easier listening as your environment changes, with manual control available through the My Starkey app."],
+    ["Are Starkey Edge AI hearing aids rechargeable and durable?", "Yes. Edge AI is a rechargeable platform meant to last through a full day of typical use, and select rechargeable models are built to resist water and sweat for everyday reliability."],
+    ["Do you verify the fitting?", "Yes. We program Edge AI to your prescription and confirm the sound reaching your eardrum with real-ear measurement, then adjust over follow-up visits as your brain adapts to hearing more."]
   ],
   image: "/assets/starkey.webp",
   imageLabel: "Starkey Edge AI platform"

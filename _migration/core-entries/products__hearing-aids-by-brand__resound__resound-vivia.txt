@@ -1,35 +1,35 @@
 "/products/hearing-aids-by-brand/resound/resound-vivia/": {
   kicker: "Hearing Aid Technology",
-  headline: "ReSound Vivia Hearing Aids for Peninsula Patients",
+  headline: "ReSound Vivia Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "ReSound Vivia is a current premium hearing aid line from ReSound, a manufacturer known for natural sound quality and strong smartphone connectivity. It represents the kind of flagship technology California Hearing Center offers patients who want a modern, well-connected hearing solution.",
-    "As with any hearing aid, the model name is only part of the story. What determines your everyday experience is how well the device is matched to your hearing loss and how carefully it is programmed and verified.",
-    "We fit ReSound Vivia in our San Mateo and San Carlos offices and support it with the follow-up care that turns premium hardware into reliable, comfortable hearing."
+    "ReSound Vivia is ReSound's premium platform, built around artificial intelligence and a dedicated processing chip that work together to make conversation easier to follow, even when several people are talking and there is noise in the background.",
+    "The idea behind Vivia is to mimic the way the brain naturally separates and focuses on sound. Rather than simply amplifying everything, it aims to lift the speech you want to hear out of the surrounding noise while keeping the overall sound natural.",
+    "At California Hearing Center, we fit the ReSound Vivia family for patients across the Peninsula. Our audiologists help you choose the right model and calibrate it precisely to your hearing profile, because a premium chip only pays off when the fitting is done well and verified."
   ],
   sections: [
-    ["A premium, connected platform", "ReSound's flagship lines emphasize clear, natural sound and robust connectivity with smartphones and accessories. Whether Vivia is right for you depends on your audiogram, listening needs, and preferences."],
-    ["Selecting the right technology level", "Premium platforms tend to offer the most support in challenging environments, but a mid-tier device may be plenty for a quieter lifestyle. We help you weigh performance, features, and budget honestly, using your [hearing test results](/hearing-testing/) as the starting point."],
-    ["Fitting and verification", "We program Vivia to your prescription and confirm the output with real-ear measurement so the amplification reaching your eardrum matches your targets. This step is central to how well the device performs day to day."],
-    ["Connectivity and streaming", "Modern ReSound devices generally support streaming and app-based control. At your fitting we set up pairing and make sure you are comfortable with charging, cleaning, and everyday handling."],
-    ["Support after the fitting", "Follow-up visits let us fine-tune the sound as your brain adapts, and our team handles adjustments and [repairs](/services/hearing-aid-repair/) as needed."]
+    ["Deep Neural Network processing", "Vivia includes a dedicated Deep Neural Network chip trained on a very large library of spoken sentences. This AI processing is designed to separate speech from background noise while preserving natural sound quality, with the goal of reducing the mental effort it takes to listen in challenging rooms."],
+    ["Intelligent Focus that follows your attention", "One of Vivia's distinctive features is Intelligent Focus, which adapts to your listening intentions rather than just facing forward. It aims to prioritize the speech coming from where your attention is directed, which can help in demanding settings like restaurants and family gatherings, and it adjusts as you move through different environments."],
+    ["Rechargeable, all-day power", "Vivia is a rechargeable platform designed to last through a full day of typical use, including streaming, with a quick top-up charge available when you are short on time. Several charging options are offered, so you can pick one that fits how and where you like to charge."],
+    ["Modern connectivity", "Vivia supports high-quality wireless streaming, including newer standards like Bluetooth LE Audio and Auracast broadcast audio for venues such as theaters and conference rooms. It streams from both Apple and Android devices, with control and Auracast access handled through the ReSound Smart 3D app."],
+    ["Fitting and verification", "Choosing the model is only the start. We calibrate Vivia to your prescription and confirm it with [real-ear measurement](/hearing-aid-fitting/), then fine-tune clarity and comfort over follow-up visits so the technology actually delivers in the places you spend your time."]
   ],
   bulletLinks: [
-    ["Schedule a hearing evaluation", "/hearing-testing/"],
-    ["Professional fitting", "/hearing-aid-fitting/"],
-    ["See all hearing aid brands", "/products/hearing-aids-by-brand/"],
-    ["Hearing aid repair", "/services/hearing-aid-repair/"],
-    ["About California Hearing Center", "/about-us/"],
-    ["Contact us", "/contact/"]
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all ReSound models", "/products/hearing-aids-by-brand/resound/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "ReSound Vivia is a current premium line emphasizing natural sound and connectivity.",
-    "The right technology level depends on your hearing, lifestyle, and budget.",
-    "Verified fitting and follow-up care shape your real-world results."
+    "ReSound Vivia is a premium platform with a dedicated Deep Neural Network chip aimed at clearer speech in noise.",
+    "Intelligent Focus adapts to where your attention is directed, and the rechargeable design supports all-day use with modern Bluetooth streaming.",
+    "The right model and a verified fitting, not the chip alone, determine how well it performs for you."
   ],
   faqs: [
-    ["What is ReSound known for?", "ReSound is well regarded for natural sound quality and strong smartphone and accessory connectivity. Its premium lines, including Vivia, build on those strengths. We help you decide whether it matches your needs."],
-    ["Do I need the most premium model?", "Not necessarily. Premium platforms offer the most support in difficult, noisy settings, but a mid-level device may be ideal for a quieter lifestyle. We recommend based on your hearing and how you spend your day."],
-    ["Will you verify my fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription and adjust them over follow-up visits as you adapt."]
+    ["What does the Deep Neural Network in Vivia do?", "It is a dedicated AI chip trained on a large set of spoken sentences to separate speech from background noise while keeping sound natural. The goal is clearer conversation and less listening effort in difficult environments."],
+    ["How is Intelligent Focus different from ordinary directional hearing?", "Traditional directionality tends to focus on whatever is in front of you. Vivia's Intelligent Focus is designed to follow your listening intentions and prioritize the speech you are attending to, adjusting as you move through different settings."],
+    ["Does Vivia connect to my phone and other devices?", "Yes. Vivia streams from both Apple and Android devices and supports newer standards like Bluetooth LE Audio and Auracast, with control through the ReSound Smart 3D app. We set this up during your fitting."]
   ],
   image: "/assets/resound.webp",
   imageLabel: "ReSound Vivia premium line"

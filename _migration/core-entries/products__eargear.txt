@@ -1,35 +1,36 @@
 "/products/eargear/": {
-  kicker: "Hearing Aid Accessories",
-  headline: "Ear Gear: Protecting Your Hearing Aids from Moisture and Loss",
+  kicker: "Ear & Hearing Protection",
+  headline: "Ear Gear & Custom Hearing Protection for San Mateo & San Carlos",
   intro: [
-    "Hearing aids are a significant investment, and everyday hazards, sweat, moisture, dust, wind, and accidental loss, are among the most common reasons they need repair or replacement. Ear Gear is a simple, effective solution: a soft protective sleeve that slips over behind-the-ear and receiver-in-canal devices to shield them from these threats without interfering with sound.",
-    "The sleeves come in sizes and colors to fit different devices, and many include a small cord that clips to clothing so a dislodged hearing aid stays with you rather than falling to the ground. California Hearing Center offers Ear Gear to patients at both the San Mateo and San Carlos offices.",
-    "If you are active, work outdoors, live in a humid setting, or simply want peace of mind, Ear Gear is an inexpensive way to protect devices you rely on every day."
+    "If you are exposed to a high-noise environment and need hearing protection, California Hearing Center has a variety of custom options for you. Noise-induced hearing damage is irreversible, but it is also preventable, and custom-molded ear gear offers protection and comfort that off-the-shelf foam plugs cannot match.",
+    "We make custom earplugs and earmolds for all kinds of needs, from everyday noise protection to specialized molds for pilot headsets and for swimming, sleeping, and hunting. Because each piece is molded to your ear, it seals better, stays comfortable for longer wear, and lets us tune the level of protection to the situation.",
+    "Our team is proud to serve patients across San Mateo, San Carlos, Burlingame, Belmont, and Millbrae. To discuss your ear gear needs, we invite you to [contact us](/contact/) or book a consultation."
   ],
   sections: [
-    ["What Ear Gear does", "Ear Gear is a spandex-style sleeve that fits over the body of a hearing aid, creating a barrier against sweat, moisture, dirt, and wind while leaving the microphones and sound path clear."],
-    ["Protection against loss", "Many Ear Gear models include a cord and clip that attach to clothing, so if a device slips off during exercise, play, or a busy day, it stays tethered rather than lost."],
-    ["Who benefits most", "Active adults, outdoor workers, children, and anyone in a humid or dusty environment gain the most, but any wearer who wants to reduce moisture-related repairs can benefit."],
-    ["Sizes and fit", "Ear Gear comes in different sizes to match behind-the-ear and receiver-in-canal devices. We help confirm the right size so the sleeve fits snugly without affecting comfort or sound."],
-    ["Part of caring for your devices", "Ear Gear complements good habits like nightly drying and routine cleaning. Combined with periodic service, it helps your hearing aids last and perform reliably."]
+    ["Custom earplugs for noise protection", "For workshops, concerts, motorsports, firearms, and other loud settings, custom-molded earplugs protect your ears from irreversible damage while fitting securely and comfortably. A precise mold means a better seal and consistent, reliable protection."],
+    ["Specialty earmolds", "Beyond general noise protection, we make custom earmolds for pilot headsets and for activities like swimming, sleeping, and hunting. Each is shaped to your ear so it seals out water or noise and stays put through the activity."],
+    ["Musician hearing protection", "As a musician, you need to protect your ears while still hearing the fidelity of the sounds you create. We provide both custom and non-custom musician earplugs and in-ear monitors for creating and listening to music, so you can turn life up without sacrificing sound quality."],
+    ["Audio enhancement for audiophiles", "If you have high standards for how music sounds, you need a higher level of audio equipment and earmold customization. Because the possibilities are nearly limitless, we offer a broad selection to satisfy demanding tastes for great-quality sound."],
+    ["Why custom fit matters", "A custom impression captures the unique shape of your ear canal, producing protection that seals better, feels more comfortable during long wear, and delivers a more even, natural sound than generic plugs, whether the goal is safety or fidelity."],
+    ["Getting started", "The process begins with a quick appointment to take ear impressions and discuss how and where you will use your ear gear. From there we recommend the right style and level of protection, and pair it with any [hearing protection](/services/hearing-protection/) guidance you need."]
   ],
   bulletLinks: [
+    ["Custom hearing protection", "/services/hearing-protection/"],
     ["Hearing aids overview", "/products/hearing-aids/"],
     ["Hearing aid repair", "/services/hearing-aid-repair/"],
-    ["The fitting process", "/hearing-aid-fitting/"],
-    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["Book a hearing test", "/hearing-testing/"],
     ["All products", "/products/"],
     ["Contact us", "/contact/"]
   ],
   takeaways: [
-    "Ear Gear is a protective sleeve that shields hearing aids from sweat, moisture, dust, and wind.",
-    "Many models include a cord and clip to prevent accidental loss.",
-    "It is an inexpensive way to reduce moisture-related repairs and protect your investment."
+    "Custom-molded earplugs and earmolds protect against irreversible, preventable noise damage.",
+    "Options include musician earplugs, in-ear monitors, and molds for pilot headsets, swimming, sleeping, and hunting.",
+    "A custom fit seals better, stays comfortable longer, and preserves natural sound quality."
   ],
   faqs: [
-    ["What is Ear Gear and how does it work?", "Ear Gear is a soft, sweat-resistant sleeve that slips over behind-the-ear or receiver-in-canal hearing aids. It blocks moisture, dust, and wind while keeping the microphones and sound path clear, and many versions add a cord to prevent loss."],
-    ["Will Ear Gear affect how my hearing aids sound?", "Ear Gear is designed to protect the device without blocking the microphones or sound outlet, so it should not meaningfully change how you hear. Proper sizing matters, and we help make sure it fits correctly."],
-    ["Do I need Ear Gear if I already dry my hearing aids at night?", "Nightly drying is excellent, and Ear Gear adds daytime protection against sweat, rain, dust, and accidental loss. The two work well together, especially for active people or humid environments."]
+    ["What kinds of custom ear gear do you offer?", "We make custom earplugs for high-noise environments, specialty earmolds for pilot headsets, swimming, sleeping, and hunting, plus musician earplugs, in-ear monitors, and audio-enhancement solutions for audiophiles."],
+    ["Why choose custom earplugs over foam ones?", "Custom plugs are molded to your ear canal, so they seal more reliably, stay comfortable during long wear, and can be tuned to protect while preserving sound quality, which matters especially for musicians and audiophiles."],
+    ["Do you offer hearing protection for musicians?", "Yes. We provide both custom and non-custom musician earplugs and in-ear monitors that guard your hearing while preserving the fidelity of the music you create and enjoy."]
   ],
   image: "/assets/ear-gear.webp",
   imageLabel: "Ear Gear protective sleeves"

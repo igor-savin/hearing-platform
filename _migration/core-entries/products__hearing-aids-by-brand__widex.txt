@@ -2,15 +2,16 @@
   kicker: "Hearing Aid Brands",
   headline: "Widex Hearing Aids: Natural Sound on the Peninsula",
   intro: [
-    "Widex, a Danish manufacturer, has long been associated with natural, high-fidelity sound. Many musicians and people who are particular about sound quality gravitate toward Widex for its clean, realistic reproduction, and its PureSound approach is designed to deliver an especially natural, low-distortion listening experience with minimal artificial processing delay.",
-    "That focus makes Widex a frequent match for people who prioritize how music and voices actually sound, not just intelligibility in noise. California Hearing Center fits Widex at both San Mateo and San Carlos as one of several options.",
-    "Whether Widex is the right choice depends on your hearing loss and what you value most in sound, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+    "Founded in Denmark by the Tøpholm and Westermann families in the 1950s, Widex has spent more than 65 years advancing hearing technology, and remains family-owned. It has long been associated with exceptional, natural sound quality, which is why musicians and people with discerning ears so often gravitate toward the brand for its clean, realistic reproduction.",
+    "That focus makes Widex a frequent match for people who prioritize how music and voices actually sound, not just intelligibility in noise. California Hearing Center chose to partner with Widex because its commitment to sound purity aligns with our mission, and we fit it at both San Mateo and San Carlos as one of several options.",
+    "Whether Widex is the right choice depends on your hearing loss and what you value most in sound, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["A reputation for natural sound", "Widex is widely regarded for clean, realistic sound reproduction that many listeners describe as natural and pleasant, particularly for music and voices."],
-    ["The PureSound approach", "Widex's PureSound aims for a very natural listening experience with minimal processing delay, which can reduce the artificial or tinny quality some people notice with amplification."],
-    ["Who Widex may suit", "Music lovers, audiophiles, and anyone who finds heavily processed sound unnatural often respond well to Widex's emphasis on fidelity and realism."],
-    ["Styles and features", "Widex offers receiver-in-canal, behind-the-ear, and custom styles, with rechargeable options and smartphone connectivity so its sound philosophy pairs with modern convenience."],
+    ["A legacy of natural sound", "Widex is widely regarded for clean, realistic sound reproduction that many listeners describe as natural and pleasant, particularly for music and voices, a reputation built over decades of family ownership and Danish engineering."],
+    ["PureSound with ZeroDelay", "Traditional hearing aids process sound with a slight delay, which can create an artificial or tinny quality. Widex's PureSound technology with ZeroDelay processing delivers sound to the ear with unusually low delay, aiming to eliminate that artificial quality and reduce listening fatigue through the day."],
+    ["AI-powered personalization", "Widex uses artificial intelligence to personalize your hearing experience. Its MySound and SoundSense Learn features use real-time feedback and machine learning to fine-tune settings to your preferences, and adjust automatically as you move between environments."],
+    ["The Widex Allure family", "Allure is Widex's most advanced platform to date. Built around its W1 chip and combining Speech Enhancer Pro with PureSound technology, it aims for an immersive listening experience while preserving natural environmental awareness."],
+    ["Who Widex may suit", "Music lovers, audiophiles, and anyone who finds heavily processed sound unnatural often respond well to Widex's emphasis on fidelity and realism. Widex is also well known for its tinnitus solutions."],
     ["Tuned to your prescription, then checked", "Natural sound still has to match your prescription. We use real-ear measurement to confirm the amplification is correct across the frequencies you need."]
   ],
   bulletLinks: [
@@ -27,9 +28,10 @@
     "We fit across the field because the ideal brand varies person to person, confirmed by verification."
   ],
   faqs: [
-    ["What is Widex known for?", "Widex is recognized for natural, high-fidelity sound reproduction. Its PureSound approach aims to minimize processing delay for an especially realistic listening experience, which appeals to people who care about sound quality."],
+    ["What is Widex known for?", "Widex, family-owned since the 1950s, is recognized for natural, high-fidelity sound and for tinnitus solutions. Its PureSound technology with ZeroDelay processing minimizes delay for an especially realistic listening experience, which appeals to people who care about sound quality."],
+    ["What is PureSound and ZeroDelay?", "PureSound is Widex's approach to natural sound, and ZeroDelay refers to processing that delivers sound to the ear with very little delay. Together they aim to remove the tinny, artificial quality some people notice with hearing aids and reduce listening fatigue."],
     ["Are Widex hearing aids good for musicians?", "Many musicians and audiophiles favor Widex for its clean, natural sound. That said, the right device depends on your specific hearing loss and goals, which we assess during your evaluation."],
-    ["Does natural sound mean better hearing in noise?", "Natural sound and noise performance are related but distinct. Widex balances fidelity with noise management; if difficult noisy environments are your main concern, we compare how each brand handles them for your hearing."]
+    ["What is Widex Allure?", "Allure is Widex's most advanced platform, built on its W1 chip and combining Speech Enhancer Pro with PureSound technology to deliver an immersive listening experience while keeping you aware of your surroundings."]
   ],
   image: "/assets/widex.webp",
   imageLabel: "Widex natural sound quality"

@@ -2,34 +2,34 @@
   kicker: "Hearing Aid Technology",
   headline: "Oticon Intent Hearing Aids in San Mateo & San Carlos",
   intro: [
-    "Oticon Intent is a premium hearing aid platform built around the idea that what you are trying to listen to should guide how the device behaves. Rather than assuming everyone in a noisy room wants the same thing, this generation of Oticon technology reads subtle cues about your listening situation and adjusts accordingly.",
-    "At California Hearing Center, we fit and verify Oticon Intent for patients across the Peninsula who want a natural, open sound with strong support in complex environments like restaurants, meetings, and family gatherings.",
-    "The technology is impressive, but the outcome still depends on the fitting. We program these devices to your specific hearing prescription and confirm the results before you rely on them in daily life."
+    "Oticon Intent is Oticon's flagship platform, built around a simple idea: what you are trying to listen to should guide how the hearing aid behaves. Rather than assuming everyone in a busy room wants the same thing, Intent reads subtle cues about your situation and adjusts to support the conversation or sound you are focused on.",
+    "It runs on Oticon's Sirius platform and introduces what the company calls 4D user-intent sensors, which draw on cues like your conversation activity, head and body movement, and the surrounding acoustics to understand where your attention is going. Paired with the second-generation Deep Neural Network, the goal is a full, natural sound scene rather than a single narrow beam of speech.",
+    "At California Hearing Center, we fit and verify Oticon Intent for patients across the Peninsula who want an open, natural sound with strong support in complex places like restaurants, meetings, and family gatherings. The technology is impressive, but the outcome still depends on the fitting, so we program these devices to your prescription and confirm the results before you rely on them."
   ],
   sections: [
-    ["What the platform is designed to do", "Oticon has long favored an approach that keeps more of the surrounding soundscape available to the brain rather than aggressively narrowing to a single speaker. Intent builds on that philosophy with sensor and processing technology aimed at supporting you in shifting, real-world environments."],
-    ["Who it may suit", "Intent is often a good match for active listeners who move between quiet and noisy settings, value connectivity, and want premium speech support. Whether it is right for you depends on your audiogram, speech-in-noise results, dexterity, and listening goals."],
-    ["Fitting and real-ear verification", "We use [real-ear measurement during the fitting](/hearing-aid-fitting/) to confirm that amplified sound reaches your eardrum at prescribed targets. This step matters far more to your everyday experience than any single headline feature."],
-    ["Connectivity and daily use", "Modern Oticon devices typically support smartphone streaming and app-based control. During your fitting we set up pairing, walk through charging and cleaning, and make sure you are comfortable handling the devices."],
-    ["Trial, follow-up, and adjustment", "Your brain needs time to adapt to hearing more sound again. We schedule follow-up visits to fine-tune clarity, comfort, and loudness in the places that matter most to you."]
+    ["The BrainHearing philosophy", "Oticon has long favored keeping more of the surrounding soundscape available to the brain rather than aggressively narrowing to one speaker. Intent continues that BrainHearing approach, aiming to give your brain access to a balanced, complete sound picture so listening feels more natural and takes less effort."],
+    ["Sirius platform and 4D sensors", "Intent is built on Oticon's Sirius platform, which supports the 4D user-intent sensor technology. By combining information about conversation, movement, and the acoustic environment, the device adapts to what you appear to be listening to and shifts its support as you move between quiet and noisy settings."],
+    ["Deep Neural Network sound processing", "The onboard Deep Neural Network has been trained on a large library of real-world sound scenes, which helps the hearing aid separate speech from noise while preserving the natural character of sound. In practice, this is aimed at clearer conversation in difficult rooms without stripping away the spatial cues your brain relies on."],
+    ["Fitting and real-ear verification", "Headline features only matter if the sound reaching your eardrum is correct. We use [real-ear measurement during the fitting](/hearing-aid-fitting/) to confirm that amplification meets your prescribed targets. This step influences your everyday experience far more than any single spec on a brochure."],
+    ["Connectivity, daily use, and follow-up", "Modern Oticon devices support smartphone streaming and app-based control through the Oticon Companion app. During your fitting we set up pairing, review charging and cleaning, and make sure you can handle the devices comfortably. Because your brain needs time to adapt to hearing more sound again, we schedule follow-up visits to fine-tune clarity and comfort in the places that matter most to you."]
   ],
   bulletLinks: [
     ["Start with a hearing evaluation", "/hearing-testing/"],
     ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore other Oticon models", "/products/hearing-aids-by-brand/oticon/"],
     ["Compare other brands", "/products/hearing-aids-by-brand/"],
     ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
-    ["Tinnitus support features", "/tinnitus/"],
     ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [
-    "Oticon Intent is a premium platform designed to support you across changing, real-world listening situations.",
-    "The right choice depends on your hearing, lifestyle, and goals, not the brand name alone.",
-    "Verified fitting and follow-up care determine how well any premium device performs for you."
+    "Oticon Intent runs on the Sirius platform with 4D user-intent sensors and a Deep Neural Network, designed to support you across changing listening situations.",
+    "Its BrainHearing approach aims to give your brain a full, natural sound scene rather than a single narrow beam of speech.",
+    "The right choice depends on your hearing, lifestyle, and goals, and verified fitting plus follow-up care determine how well it performs for you."
   ],
   faqs: [
-    ["Is Oticon Intent right for me?", "It may be, but that depends on your hearing test results, how you spend your day, your dexterity, and your priorities. We compare Oticon Intent against other options during your consultation so the recommendation fits your needs rather than a single brand."],
-    ["What makes premium hearing aids different from basic models?", "Premium platforms generally offer more sophisticated processing for difficult environments like noisy restaurants, along with fuller connectivity. Basic models can still work well in quieter lifestyles. We help you weigh the tradeoffs honestly."],
-    ["Do you verify the fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription, then adjust over follow-up visits as your brain adapts."]
+    ["What are the 4D user-intent sensors in Oticon Intent?", "They are sensors that draw on cues such as your conversation activity, head and body movement, and the acoustic environment to estimate what you are trying to listen to. The hearing aid then adapts its support to match, which is meant to help most in shifting, real-world settings."],
+    ["Is Oticon Intent right for me?", "It may be, but that depends on your hearing test results, how you spend your day, your dexterity, and your priorities. We compare Intent against other options during your consultation so the recommendation fits your needs rather than a single brand name."],
+    ["Do you verify the fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription, then adjust over follow-up visits as your brain adapts to hearing more sound."]
   ],
   image: "/assets/oticon.webp",
   imageLabel: "Oticon Intent premium platform"

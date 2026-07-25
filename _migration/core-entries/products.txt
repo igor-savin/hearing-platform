@@ -1,35 +1,37 @@
 "/products/": {
-  kicker: "Hearing Aid Technology",
-  headline: "Hearing Technology Chosen for You, Not the Brochure",
+  kicker: "Products",
+  headline: "Hearing Aids & Hearing Protection in San Mateo & San Carlos",
   intro: [
-    "The hearing aid market can feel overwhelming: dozens of models, a handful of major manufacturers, competing marketing claims, and price ranges that seem to defy explanation. This section of our site is meant to cut through that noise. It explains how modern hearing technology actually works, which brands California Hearing Center carries, and why the device you choose matters far less than how it is fit and supported.",
-    "At our San Mateo and San Carlos offices, we are not tied to a single manufacturer. That independence lets us compare styles, technology levels, and features honestly, and match them to your hearing, your hands, your phone, and the places you most want to hear well.",
-    "Use these pages to learn the landscape, then let us translate it into a specific recommendation built on your [hearing test](/hearing-testing/) results."
+    "California Hearing Center offers a full range of hearing technology and protective products at our San Mateo and San Carlos offices. No two ears are alike, which is why every solution we recommend is individualized and customized to the person in front of us, whether the goal is clearer hearing, tinnitus sound therapy, or protecting healthy ears from noise.",
+    "Our products fall into two families: hearing aids and Ear Gear. On the hearing aid side we work independently across the major manufacturers rather than pushing a single brand, we carry products to fit every budget, and we can arrange a risk-free trial so you experience devices in the real world before deciding. On the protection side we make custom earplugs and earmolds for work, music, swimming, sleeping, and more.",
+    "Whatever your needs, the starting point is a conversation and a [hearing test](/hearing-testing/). From there we match technology to your hearing profile, dexterity, visual abilities, budget, and cosmetic preferences."
   ],
   sections: [
-    ["Start with the hearing loss, not the device", "The right technology depends on the shape and degree of your hearing loss, your speech understanding, and the listening situations that matter most. That is why every recommendation begins with a full evaluation rather than a catalog."],
-    ["Styles and how they differ", "Receiver-in-canal, behind-the-ear, in-the-ear, completely-in-canal, and invisible options each trade off size, power, battery life, and ease of handling. Our [hearing aids overview](/products/hearing-aids/) explains which situations favor which style."],
-    ["Brands we carry", "We work with Oticon, Phonak, ReSound, Widex, Signia, Starkey, Rexton, and Unitron. Each has genuine strengths, and none is best for every ear, which is why we compare rather than promote."],
-    ["Technology levels and budget", "Within a single model line, higher technology levels generally add automatic adjustment and better performance in complex noise. We help you decide where added cost delivers real benefit for your lifestyle and where it does not."],
-    ["Fitting is where results are made", "Even excellent hardware underperforms without careful programming and verification. Our [fitting process](/hearing-aid-fitting/) uses real-ear measurement to confirm each device is doing what your prescription requires."]
+    ["Hearing aids for every profile", "We fit devices from all the leading brands and base each recommendation on your personal hearing profile, style preferences, manual dexterity, visual abilities, and cosmetic goals. Because we carry products across price points, we can fit nearly every budget."],
+    ["Hearing aids that work like the brain hears", "Hearing clearly involves more than making sounds louder. The ear, hearing nerve, and brain work together to form a full soundscape from dynamic, constantly changing sound. Today's technology, including AI-driven devices, is designed to handle that complexity so you hear more naturally wherever you are."],
+    ["Hearing protection and Ear Gear", "Beyond amplification, we make custom-molded earplugs and earmolds that guard against irreversible noise damage. Options include musician earplugs, in-ear monitors, and molds for pilot headsets, swimming, sleeping, and hunting. See our [hearing protection](/services/hearing-protection/) options."],
+    ["Independent, brand-agnostic advice", "We are not tied to one manufacturer. That freedom lets us compare platforms honestly and choose the one that genuinely fits you, rather than the one a single supplier wants us to sell. Browse our [hearing aid brands](/products/hearing-aids-by-brand/)."],
+    ["Fitted and verified, not just sold", "A product is only as good as its programming. We use real-ear measurement during the [fitting](/hearing-aid-fitting/) to confirm each device delivers the right output across pitches for your specific ears."],
+    ["Support for tinnitus, too", "Many patients come to us not only for hearing loss but for tinnitus relief. Several of the devices we carry double as sound therapy tools, and we tailor them as part of a broader tinnitus care plan."],
+    ["Serving the Peninsula", "We are proud to see patients throughout San Mateo, San Carlos, Burlingame, Belmont, and Millbrae. Both offices offer the same technology and the same personalized approach."]
   ],
   bulletLinks: [
     ["Hearing aids overview", "/products/hearing-aids/"],
-    ["Compare brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids by brand", "/products/hearing-aids-by-brand/"],
+    ["Ear Gear & hearing protection", "/products/eargear/"],
     ["The fitting process", "/hearing-aid-fitting/"],
-    ["Start with a hearing test", "/hearing-testing/"],
-    ["Ear Gear protection", "/products/eargear/"],
-    ["Repairs and service", "/services/hearing-aid-repair/"]
+    ["Book a hearing test", "/hearing-testing/"],
+    ["All services", "/services/"]
   ],
   takeaways: [
-    "Choosing hearing aids well means matching technology to your hearing, dexterity, and lifestyle, not chasing a brand name.",
-    "California Hearing Center is independent and carries several major manufacturers so comparison stays honest.",
-    "Professional fitting and verification usually influence results more than the logo on the device."
+    "Two product families: hearing aids from every major brand, and custom hearing protection.",
+    "Recommendations are individualized and verified with real-ear measurement, not one-size-fits-all.",
+    "Risk-free trials let you experience hearing aids in the real world before you decide."
   ],
   faqs: [
-    ["How do I choose the right hearing aid?", "Start with a hearing evaluation, then weigh style, technology level, connectivity, and comfort against your daily listening needs. We narrow the field to devices that genuinely suit your hearing rather than presenting the entire catalog."],
-    ["Does the brand really matter?", "Brand matters less than most people expect. The major manufacturers all make capable devices, and differences in sound processing are real but subtle. Fitting quality, follow-up, and the match to your hearing loss usually matter more."],
-    ["Can I compare several brands before deciding?", "Yes. Because we are independent, we can discuss and, where appropriate, trial options across manufacturers so your choice is based on how a device performs for you rather than on what a single company sells."]
+    ["What products does California Hearing Center offer?", "Two main categories: hearing aids from all the major manufacturers, and custom hearing protection (Ear Gear) such as musician earplugs, in-ear monitors, and molds for swimming, sleeping, and pilot headsets. We also provide tinnitus sound therapy solutions."],
+    ["Can I try hearing aids before buying?", "Yes. We can arrange a risk-free trial so you can experience a set of hearing aids in your own daily life and hear the difference for yourself before making a commitment."],
+    ["How do you decide which product is right for me?", "We start with a hearing test and a discussion of your goals, then weigh your hearing profile, dexterity, vision, budget, and cosmetic preferences to match you with the right technology, and verify the fit with real-ear measurement."]
   ],
   image: "/assets/core/products.svg",
   imageLabel: "Independent hearing technology guidance"
