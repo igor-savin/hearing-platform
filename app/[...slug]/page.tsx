@@ -17,6 +17,9 @@ export function generateStaticParams() {
 const GENERIC_DESC =
   "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.";
 
+// Default social-share image for pages without their own (blog posts supply one).
+const DEFAULT_OG_IMAGE = "/og.jpg";
+
 function metaDescription(page: SitePage): string {
   if (page.desc && page.desc !== GENERIC_DESC) return page.desc.slice(0, 160);
   if (page.paragraphs && page.paragraphs.length) return page.paragraphs[0].slice(0, 158);
@@ -41,8 +44,8 @@ export async function generateMetadata({ params }: PageProps) {
       title: blogTitle,
       description: blogDesc,
       alternates: { canonical: path },
-      openGraph: { title: blogTitle, description: blogDesc, url: path, type: "website" },
-      twitter: { card: "summary_large_image", title: blogTitle, description: blogDesc },
+      openGraph: { title: blogTitle, description: blogDesc, url: path, type: "website", images: [DEFAULT_OG_IMAGE] },
+      twitter: { card: "summary_large_image", title: blogTitle, description: blogDesc, images: [DEFAULT_OG_IMAGE] },
     };
   }
 
@@ -53,15 +56,14 @@ export async function generateMetadata({ params }: PageProps) {
       title: rTitle,
       description: rDesc,
       alternates: { canonical: path },
-      openGraph: { title: rTitle, description: rDesc, url: path, type: "website" },
-      twitter: { card: "summary_large_image", title: rTitle, description: rDesc },
+      openGraph: { title: rTitle, description: rDesc, url: path, type: "website", images: [DEFAULT_OG_IMAGE] },
+      twitter: { card: "summary_large_image", title: rTitle, description: rDesc, images: [DEFAULT_OG_IMAGE] },
     };
   }
 
   const desc = blogMetaDescription(path) ?? areaMetaDescription(path) ?? coreMetaDescription(path) ?? metaDescription(page);
   const title = areaMetaTitle(path) ?? coreMetaTitle(path) ?? blogMetaTitle(path, page.title);
-  const ogImg = blogOgImage(path);
-  const blogImage = ogImg ? [ogImg] : undefined;
+  const ogImg = blogOgImage(path) ?? DEFAULT_OG_IMAGE;
 
   return {
     title,
@@ -72,12 +74,13 @@ export async function generateMetadata({ params }: PageProps) {
       description: desc,
       url: path,
       type: "article",
-      ...(blogImage ? { images: blogImage } : {}),
+      images: [ogImg],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: desc,
+      images: [ogImg],
     },
   };
 }

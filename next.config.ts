@@ -338,6 +338,19 @@ const nextConfig: NextConfig = {
   async redirects() {
     return blogRedirects;
   },
+  async headers() {
+    // Static assets under /public/assets are content-stable (we rename on change),
+    // so cache them hard instead of Vercel's default max-age=0, must-revalidate,
+    // which forced a revalidation round-trip on every image, on every visit.
+    return [
+      {
+        source: "/assets/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

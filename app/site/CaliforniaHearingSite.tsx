@@ -132,8 +132,6 @@ const nav: NavItem[] = [
   },
 ];
 
-const team = ["Kira Savin", "Lais Ama", "Giana Hatem", "Jennifer Ratner", "Darcy Benson", "Emily McMahan", "Jarna Kothari"];
-
 const services = [
   ["Hearing Testing", "/hearing-testing/", "Thorough evaluations built around your lifestyle, communication goals, and listening environments."],
   ["Hearing Aid Fitting", "/hearing-aid-fitting/", "Personalized fittings, real-ear verification, adjustments, and ongoing support."],
@@ -316,8 +314,8 @@ const bespokeContent: Record<string, PageContent> = {
       "Our team will help you choose the right office and next step."
     ],
     sections: [
-      ["San Mateo – Main Office", "88 N. San Mateo Drive, San Mateo, CA 94401. Call 650-342-9449 for appointments and questions."],
-      ["San Carlos", "1008 Laurel Street, San Carlos, CA 94070. The same phone number connects you with our team."],
+      ["San Mateo – Main Office", "88 N. San Mateo Drive, San Mateo, CA 94401. Call 650-342-9449 for appointments and questions. Office hours: Monday–Thursday 9am–5pm, Friday 9am–3pm."],
+      ["San Carlos", "1008 Laurel Street, San Carlos, CA 94070. The same phone number connects you with our team. Office hours: Monday–Wednesday 9am–1pm and 2–5pm, Thursday 9am–12pm and 1–5pm, Friday 9am–12pm and 12:30–3pm."],
       ["Schedule online", "Use the Schedule Now button for online appointment scheduling through Zocdoc."]
     ],
     bullets: ["San Mateo", "San Carlos", "650-342-9449", "Online scheduling", "Directions", "Appointment help"],
@@ -428,10 +426,6 @@ const AREA_SERVICE_INFO: Record<string, ServiceInfo> = {
   "bluetooth-hearing-aids": { label: "Bluetooth Hearing Aids", angle: "Bluetooth hearing aids that stream calls, TV, and music directly, and let you fine-tune settings from your phone", canonical: "/hearing-aid-fitting/" },
   "dr-emily-mcmahan": { label: "Dr. Emily McMahan, AuD", angle: "care led by Dr. Emily McMahan, AuD, whose focus is tinnitus and complex hearing needs — the reason many patients seek her out specifically", canonical: "/about-us/" },
 };
-
-function titleCaseSlug(slug: string) {
-  return slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
-}
 
 // Stable per-slug hash for deterministic (build-safe) content rotation.
 function hashSlug(s: string): number {
@@ -1832,6 +1826,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
           <section className="footer-location">
             <h5>San Mateo - Main Office</h5>
             <p>88 N. San Mateo Drive<br />San Mateo, CA 94401<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
+            <p className="footer-hours">Mon–Thu 9am–5pm · Fri 9am–3pm</p>
             <a className="footer-button" href="https://www.google.com/maps/dir//88+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
@@ -1840,6 +1835,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
           <section className="footer-location">
             <h5>San Carlos</h5>
             <p>1008 Laurel Street<br />San Carlos, CA 94070<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
+            <p className="footer-hours">Mon–Wed 9am–1pm, 2–5pm · Thu 9am–12pm, 1–5pm · Fri 9am–12pm, 12:30–3pm</p>
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">

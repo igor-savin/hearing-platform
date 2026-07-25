@@ -2349,3 +2349,11 @@ p {
 @media (max-width: 560px) {
   .lead-grid { grid-template-columns: 1fr; }
 }
+
+/* Office hours in the footer location blocks */
+.footer-hours {
+  font-size: 0.82rem;
+  opacity: 0.85;
+  margin: 4px 0 0;
+  line-height: 1.5;
+}
