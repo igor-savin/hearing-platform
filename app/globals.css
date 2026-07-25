@@ -644,6 +644,19 @@ p {
   box-shadow: 0 0 0 5px rgba(224, 174, 60, .18);
 }
 
+/* ---- Embedded video ---- */
+.page-video {
+  margin: 26px 0 8px;
+}
+.page-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(33, 66, 75, 0.12);
+}
+
 /* ---- Reviews page ---- */
 .reviews-hero {
   background: linear-gradient(135deg, var(--teal), var(--teal-dark));

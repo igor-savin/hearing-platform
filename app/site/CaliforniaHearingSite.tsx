@@ -2,6 +2,7 @@ import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
 import { blogPhotos } from "../data/blogPhotos";
+import { pageVideos } from "../data/pageVideos";
 import { corePages } from "../data/corePages";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
@@ -1167,6 +1168,21 @@ function personSchema(page: SitePage, content: PageContent): object | null {
   };
 }
 
+// VideoObject schema for pages with an embedded manufacturer/product video.
+function videoSchema(page: SitePage, content: PageContent): object | null {
+  const id = pageVideos[page.path];
+  if (!id) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: content.headline,
+    description: plain(content.intro[0] || content.headline).slice(0, 200),
+    thumbnailUrl: [`https://i.ytimg.com/vi/${id}/hqdefault.jpg`],
+    embedUrl: `https://www.youtube.com/embed/${id}`,
+    contentUrl: `https://www.youtube.com/watch?v=${id}`,
+  };
+}
+
 function breadcrumbSchema(page: SitePage) {
   const parts = page.path.split("/").filter(Boolean);
   const items: Array<Record<string, unknown>> = [
@@ -1291,7 +1307,8 @@ function InnerPage({ page }: { page: SitePage }) {
   const isBlog = !!content.datePublished;
   const isCore = !!corePages[page.path];
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
-  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page), personSchema(page, content)].filter(Boolean);
+  const videoId = pageVideos[page.path];
+  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page), personSchema(page, content), videoSchema(page, content)].filter(Boolean);
   const areaLinks = kind === "area" ? relatedAreaLinks(page) : [];
   const related = crawledPages
     .filter((item) => item.path !== page.path && getPageKind(item) === kind)
@@ -1359,6 +1376,18 @@ function InnerPage({ page }: { page: SitePage }) {
               <p className={index === 0 ? "lead-copy" : undefined} key={paragraph} dangerouslySetInnerHTML={{ __html: linkify(paragraph) }} />
             ))}
           </div>
+          {videoId && (
+            <figure className="page-video">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+                title={`${plain(content.headline)} — video`}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </figure>
+          )}
           {content.takeaways && (
             <section className="answer-box">
               <p className="section-kicker">At a glance</p>
