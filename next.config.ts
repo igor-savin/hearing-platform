@@ -4,6 +4,9 @@ import type { NextConfig } from "next";
 // posts point to their most relevant canonical, pillar, or areas-we-serve page.
 // Regenerate via scratchpad curation flow if the keep/redirect split changes.
 const blogRedirects = [
+  // WordPress draft/duplicate cruft → homepage.
+  { source: "/home-new", destination: "/", permanent: true },
+  { source: "/california-hearing-center-4", destination: "/", permanent: true },
       { source: "/how-much-do-doctors-of-audiology-make-in-the-us", destination: "/about-us", permanent: true },
       { source: "/the-critical-link-between-hearing-loss-and-dementia-new-research-offers-hope", destination: "/could-there-be-a-link-between-hearing-loss-and-dementia", permanent: true },
       { source: "/do-hearing-aids-help-tinnitus-what-our-patients-experience", destination: "/can-hearing-aids-help-tinnitus", permanent: true },

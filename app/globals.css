@@ -612,12 +612,25 @@ p {
   margin-top: 28px;
 }
 
-.feature-list span {
+.feature-list span,
+.feature-list a {
+  display: block;
   padding: 14px;
   background: #edf7f6;
   border-radius: 14px;
   color: var(--teal-dark);
   font-weight: 800;
+}
+
+.feature-list a {
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.feature-list a:hover,
+.feature-list a:focus-visible {
+  background: var(--aqua);
+  transform: translateY(-1px);
 }
 
 .faq-block {

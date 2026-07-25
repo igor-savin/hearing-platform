@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="California Hearing Center serving Hercules">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7ef"/><stop offset="1" stop-color="#dff0f1"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="0" y="0" width="900" height="540" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="900" height="540" fill="url(#sky)"/>
+    
+    <rect x="0" y="380" width="900" height="160" fill="#7cc0c6"/>
+    <path d="M0 380 h900" stroke="#ffffff" stroke-width="3" opacity="0.5"/>
+    <g fill="none" stroke="#105966" stroke-width="6"><path d="M120 380 L120 300 L118 300"/></g>
+    <path d="M120 300 L200 372 L120 372 Z" fill="#ffffff"/>
+    <path d="M128 300 L128 372 L188 372 Z" fill="#86d0d5"/>
+    <g stroke="#ffffff" stroke-width="5" fill="none" opacity="0.75"><path d="M520 300 h300"/><path d="M560 300 v18"/><path d="M600 300 v18"/><path d="M640 300 v18"/><path d="M680 300 v18"/><path d="M720 300 v18"/><path d="M760 300 v18"/></g>
+    <g stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.8"><path d="M150 440 q40 -22 80 0 t80 0 t80 0"/></g>
+    <!-- unifying hearing motif: soundwave arcs radiating from a listening point -->
+    <g transform="translate(96 150)" fill="none" stroke="#155f6b" stroke-width="6" stroke-linecap="round" opacity="0.55">
+      <circle cx="0" cy="0" r="7" fill="#155f6b" stroke="none"/>
+      <path d="M18 -20 a30 30 0 0 1 0 40"/>
+      <path d="M34 -34 a52 52 0 0 1 0 68"/>
+      <path d="M50 -48 a74 74 0 0 1 0 96"/>
+    </g>
+    <!-- title band -->
+    <rect x="0" y="0" width="900" height="118" fill="#155f6b"/>
+    <text x="60" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#ffffff">Hercules</text>
+    <text x="60" y="88" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#86d0d5" letter-spacing="1.5">CALIFORNIA HEARING CENTER · AREAS WE SERVE</text>
+    <rect x="0" y="118" width="900" height="5" fill="#e0ae3c"/>
+  </g>
+</svg>

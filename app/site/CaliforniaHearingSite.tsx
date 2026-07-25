@@ -1,6 +1,8 @@
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
+import { corePages } from "../data/corePages";
+import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { EarJourneyHero } from "./EarJourneyHero";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
@@ -18,11 +20,13 @@ export type PageContent = {
   headline: string;
   intro: string[];
   sections: [string, string][];
-  bullets: string[];
+  bullets?: string[];
+  bulletLinks?: [label: string, href: string][]; // clickable feature list (overrides bullets when set)
   takeaways?: string[];
   faqs?: [string, string][];
   image: string;
   imageLabel: string;
+  imageAlt?: string;       // descriptive alt text (falls back to imageLabel)
   // Enriched blog fields (optional; only set for hand-written blog posts)
   image2?: string;
   image2Label?: string;
@@ -147,7 +151,7 @@ const hearingAidColumns: ProductMenuLink[][] = [
     ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
   ],
   [
-    ["Oticon Zeal", "The world's first invisible hearing aid with complete connectivity.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
+    ["Oticon Zeal", "Discreet Oticon hearing technology, fit and verified for your hearing.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
     ["Phonak Infinio", "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.", "/products/hearing-aids-by-brand/phonak/phonak-infinio/", "/assets/phonak-infinio.webp"],
     ["ReSound Vivia", "Pioneering award-winning hearing solutions and connectivity advancements since 1943.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
   ],
@@ -376,6 +380,343 @@ function cityFromPath(path: string) {
   return raw?.replace(/-/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase()) || "the Bay Area";
 }
 
+// The city slug segment of an /areas-we-serve/{city}[/{service}] path.
+function citySlugFromPath(path: string): string | null {
+  const parts = path.split("/").filter(Boolean);
+  const areaIndex = parts.indexOf("areas-we-serve");
+  if (areaIndex < 0) return null;
+  return parts[areaIndex + 1] || null;
+}
+
+// The optional service segment of a deep /areas-we-serve/{city}/{service} page.
+function areaServiceSlugFromPath(path: string): string | null {
+  const parts = path.split("/").filter(Boolean);
+  const areaIndex = parts.indexOf("areas-we-serve");
+  if (areaIndex < 0) return null;
+  return parts[areaIndex + 2] || null;
+}
+
+function cityProfileForPath(path: string): CityProfile | null {
+  const slug = citySlugFromPath(path);
+  return (slug && cityProfiles[slug]) || null;
+}
+
+// Deep city×service pages: label + a genuine service-specific angle + the
+// canonical service page to link back to (so a city page never orphans the
+// real service page it supports).
+type ServiceInfo = { label: string; angle: string; canonical: string };
+const AREA_SERVICE_INFO: Record<string, ServiceInfo> = {
+  "hearing-test": { label: "Hearing Testing", angle: "a thorough diagnostic hearing evaluation — air and bone conduction, speech-in-noise testing, and a clear explanation of what the results mean for your everyday listening", canonical: "/hearing-testing/" },
+  "hearing-aids": { label: "Hearing Aids", angle: "hearing aids selected and fit for your specific hearing loss and lifestyle, with real-ear verification so the devices are proven to deliver the right sound — not just programmed to a manufacturer default", canonical: "/hearing-aid-fitting/" },
+  "tinnitus-therapy": { label: "Tinnitus Therapy", angle: "evidence-based tinnitus therapy, including sound therapy, counseling, and Lenire, aimed at reducing how intrusive the ringing feels day to day", canonical: "/tinnitus/" },
+  "tinnitus-audiologist": { label: "Tinnitus Audiologist", angle: "care from an audiologist who focuses on tinnitus — a full evaluation to rule out treatable causes, then a personalized plan that may include sound therapy, counseling, and Lenire", canonical: "/tinnitus/" },
+  "lenire": { label: "Lenire Tinnitus Treatment", angle: "Lenire, a bimodal (sound plus mild tongue stimulation) tinnitus treatment, delivered by an audiology team experienced in selecting the right candidates and coaching them through the protocol", canonical: "/tinnitus/" },
+  "hearing-aid-fitting": { label: "Hearing Aid Fitting", angle: "a proper hearing aid fitting with real-ear measurement, so the devices match a validated target for your hearing loss rather than an out-of-the-box guess", canonical: "/hearing-aid-fitting/" },
+  "hearing-aid-repairs": { label: "Hearing Aid Repairs", angle: "hearing aid repairs and servicing for most major brands — from moisture damage and dead receivers to worn tubing and wax-blocked ports", canonical: "/services/" },
+  "custom-hearing-protection": { label: "Custom Hearing Protection", angle: "custom-molded hearing protection for musicians, shooters, motorcyclists, industrial workers, and anyone regularly around loud sound — protection that guards your hearing while keeping sound natural", canonical: "/services/" },
+  "earwax-removal": { label: "Earwax Removal", angle: "safe, professional earwax removal — far gentler and safer than cotton swabs or at-home kits, and a chance to check the health of your ear canal and eardrum", canonical: "/services/" },
+  "invisible-hearing-aids": { label: "Invisible Hearing Aids", angle: "discreet invisible and deep-canal hearing aids for patients who want help that no one else can see, fit to your ear anatomy for comfort and performance", canonical: "/hearing-aid-fitting/" },
+  "rechargeable-hearing-aids": { label: "Rechargeable Hearing Aids", angle: "modern rechargeable hearing aids that skip the tiny disposable batteries — convenient, and often easier for anyone with dexterity or vision challenges", canonical: "/hearing-aid-fitting/" },
+  "bluetooth-hearing-aids": { label: "Bluetooth Hearing Aids", angle: "Bluetooth hearing aids that stream calls, TV, and music directly, and let you fine-tune settings from your phone", canonical: "/hearing-aid-fitting/" },
+  "dr-emily-mcmahan": { label: "Dr. Emily McMahan, AuD", angle: "care led by Dr. Emily McMahan, AuD, whose focus is tinnitus and complex hearing needs — the reason many patients seek her out specifically", canonical: "/about-us/" },
+};
+
+function titleCaseSlug(slug: string) {
+  return slug.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
+}
+
+// Stable per-slug hash for deterministic (build-safe) content rotation.
+function hashSlug(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h;
+}
+
+// Deterministically pick one item from a pool by a seed string (salt the seed
+// per field so different rotations don't correlate to the same index).
+function pickFrom<T>(seed: string, arr: T[]): T {
+  return arr[hashSlug(seed) % arr.length];
+}
+
+// Service-specific, city-flavored FAQs for deep /areas-we-serve/{city}/{service}
+// pages, so they don't reuse the parent city's FAQ verbatim.
+function serviceFaqs(serviceSlug: string, name: string, office: string): [string, string][] {
+  const at = `at our ${office} office`;
+  const generic: [string, string][] = [
+    [`Where do ${name} patients go for ${(AREA_SERVICE_INFO[serviceSlug]?.label || "care").toLowerCase()}?`,
+     `California Hearing Center serves ${name} ${at}. Call 650-342-9449 to schedule or ask which office is most convenient.`],
+  ];
+  switch (serviceSlug) {
+    case "dr-emily-mcmahan":
+      return [
+        [`Does Dr. Emily McMahan see patients from ${name}?`,
+         `Yes. Dr. Emily McMahan, AuD, sees patients from ${name} ${at}. Her practice is focused on tinnitus care. [Read more about Dr. McMahan](/about-us/emily-mcmahan/).`],
+        ["What does Dr. McMahan focus on?",
+         "Dr. McMahan has built her work around tinnitus — evaluation, sound therapy, counseling, and [Lenire](/tinnitus/) — spending more time on the details general appointments often skip."],
+        ["How do I book with Dr. McMahan specifically?",
+         "Call 650-342-9449 and ask for a tinnitus consultation. We'll match you with the right appointment and location."],
+      ];
+    case "lenire":
+    case "tinnitus-audiologist":
+    case "tinnitus-therapy":
+      return [
+        [`Can I get ${AREA_SERVICE_INFO[serviceSlug]?.label.toLowerCase()} near ${name}?`,
+         `Yes. We provide comprehensive tinnitus care, including [Lenire](/tinnitus/), for ${name} patients ${at}.`],
+        ["Is tinnitus treatment worth it if the ringing is mild?",
+         "Often, yes. Even mild tinnitus can affect sleep and focus. A proper evaluation clarifies the cause and whether sound therapy, counseling, or Lenire would help. [Learn what tinnitus is](/tinnitus/what-is-tinnitus/)."],
+        ["Do you rule out medical causes first?",
+         "Yes. Tinnitus can occasionally signal something treatable, so we evaluate before recommending a plan and refer for medical follow-up when the findings warrant it."],
+      ];
+    case "hearing-aids":
+    case "invisible-hearing-aids":
+    case "rechargeable-hearing-aids":
+    case "bluetooth-hearing-aids":
+    case "hearing-aid-fitting":
+      return [
+        [`Where do ${name} patients get hearing aids fit?`,
+         `California Hearing Center fits and verifies hearing aids for ${name} patients ${at}, using [real-ear measurement](/hearing-aid-fitting/) so the devices match a validated target — not a factory default.`],
+        ["Are the most expensive hearing aids always the best?",
+         "No. Higher tiers help in complex noise, but the right choice depends on your hearing test, ear anatomy, lifestyle, and budget. We recommend honestly, not by price."],
+        ["Can I try them in real environments?",
+         "Yes. Follow-up visits fine-tune the fit for the restaurants, meetings, and rooms you actually spend time in, which matters far more than the initial quiet-booth setting."],
+      ];
+    case "earwax-removal":
+      return [
+        [`Can I get earwax removal near ${name}?`,
+         `Yes. We provide safe, professional earwax removal for ${name} patients ${at} — gentler and safer than cotton swabs or at-home kits.`],
+        ["Is earwax removal covered or quick?",
+         "Most visits are quick, and it's a good time to check the health of the ear canal and eardrum. Call 650-342-9449 with coverage questions."],
+      ];
+    case "custom-hearing-protection":
+      return [
+        [`Do you make custom hearing protection for ${name} patients?`,
+         `Yes. We take ear impressions and fit custom-molded protection ${at} for musicians, shooters, motorcyclists, and anyone regularly around loud sound.`],
+        ["Why not just use foam earplugs?",
+         "Custom protection fits precisely and can keep sound natural rather than muffled, so you protect your hearing without losing the music, speech, or situational awareness you need."],
+      ];
+    case "hearing-test":
+      return [
+        [`Where can ${name} residents get a hearing test?`,
+         `California Hearing Center provides full diagnostic [hearing evaluations](/hearing-testing/) for ${name} patients ${at}, with a clear explanation of what the results mean.`],
+        ["How long does a hearing test take?",
+         "A first evaluation typically takes under an hour and includes case history, testing, speech understanding, an ear-health check, and a discussion of next steps."],
+      ];
+    default:
+      return generic;
+  }
+}
+
+// Compose a genuinely city-specific PageContent from a profile (and, on deep
+// pages, a service). Uniqueness lives in the profile's written fragments, not in
+// slotted templates, so no two cities read alike.
+function cityContent(page: SitePage, profile: CityProfile): PageContent {
+  const serviceSlug = areaServiceSlugFromPath(page.path);
+  const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  const name = profile.name;
+  const office = profile.nearestOffice;
+  const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+  const headline = service
+    ? `${service.label} in ${name}`
+    : `Audiology & Hearing Care in ${name}`;
+
+  const isProvider = serviceSlug === "dr-emily-mcmahan";
+  const intro = [profile.lede, profile.whyHere];
+  if (service) {
+    const cta = isProvider
+      ? `[Read more about Dr. McMahan](/about-us/emily-mcmahan/)`
+      : `Learn more about [our ${service.label.toLowerCase()} approach](${service.canonical})`;
+    intro.push(`For ${name} patients specifically, that means ${service.angle}. ${cta}.`);
+  }
+
+  const closer = pickFrom((citySlugFromPath(page.path) || name) + ":closer", [
+    "Call 650-342-9449 and we'll help you plan the visit around parking and timing.",
+    "When you call 650-342-9449, we can suggest the easiest time to come and where to park.",
+    "Reach us at 650-342-9449 to book and to sort out directions or parking ahead of time.",
+    "Give us a call at 650-342-9449 and we'll make the trip as easy as possible.",
+    "We keep appointments efficient — call 650-342-9449 and we'll take care of the details.",
+    "Call 650-342-9449 to find a time that fits your schedule.",
+    "Booking is simple — call 650-342-9449 and we'll handle the rest.",
+    "Call us at 650-342-9449 and we'll confirm timing, directions, and what to bring.",
+    "Reach the team at 650-342-9449 to schedule and plan your visit.",
+    "One call to 650-342-9449 sets up your appointment and answers any questions.",
+  ]);
+  // approxDrive states where the city sits relative to the offices (e.g. "40
+  // minutes south"). In the "Getting to us" heading that compass word can read as
+  // a drive instruction (you actually drive the opposite way). Strip it only when
+  // it reads that way — never when it's "north OF our office" (a position phrase).
+  const driveDesc = profile.approxDrive
+    .replace(/\.$/, "")
+    .replace(/\b(minutes?|hours?)\s+(north|south|east|west|northeast|northwest|southeast|southwest)(?=\s+(?:on|in|via|over|across|up|down)\b|,|$)/i, "$1");
+  const gettingHere: [string, string] = [
+    `Getting to us from ${name}`,
+    `${cap(driveDesc)}. ${profile.landmarks ?? ""} ${closer}`.replace(/\s+/g, " ").trim(),
+  ];
+
+  // Order: signature hook, then the local-scene detail, then directions.
+  const sections: [string, string][] = [profile.hook, profile.localScene, gettingHere];
+
+  // Clickable feature list — links to the real service + office pages.
+  const officePath = office === "San Mateo" ? "/contact/san-mateo/" : "/contact/san-carlos/";
+  const bulletLinks: [string, string][] = service
+    ? [
+        [service.label, service.canonical],
+        ["Hearing testing", "/hearing-testing/"],
+        ["Tinnitus & Lenire", "/tinnitus/"],
+        [`${office} office`, officePath],
+        ["All services", "/services/"],
+        ["Patient reviews", "/reviews/"],
+      ]
+    : [
+        ["Hearing testing", "/hearing-testing/"],
+        ["Hearing aid fitting", "/hearing-aid-fitting/"],
+        ["Tinnitus & Lenire", "/tinnitus/"],
+        ["All services", "/services/"],
+        [`${office} office`, officePath],
+        ["Patient reviews", "/reviews/"],
+      ];
+  const bullets = bulletLinks.map(([label]) => label);
+
+  // Strip any "... [from|of] our {Office} office ..." tail so the takeaway doesn't
+  // repeat the office name (handles "10 min from our" and "12 min north of our").
+  const driveShort = profile.approxDrive.split(/ (?:from|of) our /)[0].split(",")[0].trim();
+  // Second/third "At a glance" bullets: rotate deterministically per city (salted
+  // seeds, larger pools) so no line repeats more than ~twice across the directory.
+  const seed = citySlugFromPath(page.path) || name;
+  const trustBullet = pickFrom(seed + ":trust", [
+    "You see the same audiologist each visit — someone who knows your history, not a rotating counter.",
+    "Every fitting is verified with real-ear measurement, so the devices are proven to hit target for your hearing.",
+    "Recommendations are honest and independent — matched to your needs and budget, not to a sales quota.",
+    "Care continues after the first visit: adjustments, cleanings, and follow-up are part of the plan.",
+    "An independent practice, so the advice is about your hearing — not a manufacturer's monthly target.",
+    "Small enough to know you by name, equipped enough to handle complex fittings and tinnitus care.",
+    "Time to explain what your results mean, in plain language, before any technology is discussed.",
+    "Unhurried appointments — we would rather get the fit right than move you through a queue.",
+    "Two Peninsula offices share one set of records, so you can see whichever location is easier.",
+    "Follow-up, cleanings, and fine-tuning are included in the care, not billed as afterthoughts.",
+    "A clinical team that treats hearing care as an ongoing relationship, not a one-time sale.",
+    "Straight answers on whether you need treatment now, later, or just a baseline to track.",
+  ]);
+  const scopeBullet = pickFrom(seed + ":scope", [
+    "One practice for testing, hearing aids, tinnitus and Lenire, repairs, earwax removal, and hearing protection.",
+    "From a first hearing test to advanced tinnitus treatment, the full range of care is under one roof.",
+    "Diagnostics, modern hearing aids, tinnitus care, and repairs — without navigating a big hospital system.",
+    "Testing, fittings, tinnitus care, earwax removal, and hearing protection, all in one place.",
+    "Everything from your first evaluation to long-term device support lives with one team.",
+    "Hearing tests, hearing aids, tinnitus and Lenire, and repairs — coordinated by one clinic.",
+    "A full-service audiology practice: evaluation, technology, tinnitus care, and ongoing support.",
+    "Comprehensive care — hearing aids, tinnitus and Lenire, earwax removal, protection, and repairs.",
+    "One team for diagnostics, fittings, tinnitus treatment, and the follow-up that keeps them working.",
+  ]);
+  const takeaways = [
+    service
+      ? isProvider
+        ? `${name} patients can see ${service.label} at California Hearing Center's ${office} office.`
+        : `${name} patients can get ${service.label.toLowerCase().replace(/,.*/, "")} at California Hearing Center's ${office} office.`
+      : profile.distanceTier === "far"
+        ? pickFrom(seed + ":far", [
+            `Patients travel to California Hearing Center from ${name} for specialized tinnitus and hearing care — our offices are in San Mateo and San Carlos.`,
+            `${name} patients who come to us usually want specialized tinnitus, Lenire, or complex-fitting care; our two offices are on the Peninsula.`,
+            `We see ${name} patients at our San Mateo and San Carlos offices, most often for tinnitus care or a second opinion.`,
+            `California Hearing Center is Peninsula-based (San Mateo and San Carlos); ${name} patients make the trip for care they can't find closer.`,
+            `For ${name}, we're a destination for tinnitus and difficult fittings rather than routine visits — the offices are in San Mateo and San Carlos.`,
+          ])
+        : `California Hearing Center serves ${name} from our ${office} office — ${driveShort}.`,
+    trustBullet,
+    scopeBullet,
+  ];
+
+  const citySlug = citySlugFromPath(page.path) || "";
+  return {
+    kicker: "Areas We Serve",
+    headline,
+    intro,
+    sections,
+    bullets,
+    bulletLinks,
+    takeaways,
+    faqs: serviceSlug ? serviceFaqs(serviceSlug, name, office) : profile.faqs,
+    image: `/assets/areas/${citySlug}.svg`,
+    imageLabel: service ? `${service.label} — ${name}` : `Hearing care for ${name}`,
+    imageAlt: `California Hearing Center — audiology and hearing care serving ${name}${name === profile.county ? "" : `, ${profile.county}`}`,
+  };
+}
+
+// Clean, proper-cased heading label for area pages (H2 + FAQ heading topic).
+// Avoids the slug-titleized "Dr Emily Mcmahan" mangling for multi-part names.
+function areaHeadingLabel(path: string): string | null {
+  const profile = cityProfileForPath(path);
+  if (!profile) return null;
+  const serviceSlug = areaServiceSlugFromPath(path);
+  const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  return service ? service.label : profile.name;
+}
+
+// Per-city meta title/description, exported for the metadata route.
+export function areaMetaTitle(path: string): string | null {
+  const profile = cityProfileForPath(path);
+  if (!profile) return null;
+  const serviceSlug = areaServiceSlugFromPath(path);
+  const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  const brand = " | California Hearing Center";
+  const core = service ? `${service.label} in ${profile.name}` : `Audiologist in ${profile.name}`;
+  return core.length + brand.length <= 62 ? core + brand : core;
+}
+
+export function areaMetaDescription(path: string): string | null {
+  const profile = cityProfileForPath(path);
+  if (!profile) return null;
+  const serviceSlug = areaServiceSlugFromPath(path);
+  const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  const cta = " Call 650-342-9449.";
+  const lead = service
+    ? `${service.label} for ${profile.name} patients at California Hearing Center, audiologists in San Mateo & San Carlos.`
+    : profile.distanceTier === "far"
+      ? `Patients travel from ${profile.name} to California Hearing Center in San Mateo & San Carlos for specialized tinnitus and hearing care.`
+      : `Hearing tests, hearing aids & tinnitus care for ${profile.name} — California Hearing Center, ${profile.nearestOffice}.`;
+  // Keep the phone/CTA intact: trim the lead at a word boundary so lead + CTA <= 158.
+  const budget = 158 - cta.length;
+  const clean = lead.length <= budget ? lead : lead.slice(0, lead.lastIndexOf(" ", budget)).replace(/[,—\-\s]+$/, "") + ".";
+  return (clean + cta).replace(/\s+/g, " ").trim();
+}
+
+// "We serve this city" as machine-readable local relevance, tied to the real org.
+// Honest: a Service provided by the clinic, areaServed = this city (no fake clinic).
+function areaServedSchema(page: SitePage): object | null {
+  const profile = cityProfileForPath(page.path);
+  if (!profile) return null;
+  const serviceSlug = areaServiceSlugFromPath(page.path);
+  const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  const isCounty = /\bcounty$/i.test(profile.name);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE}${page.path}#service`,
+    serviceType: service ? service.label : "Audiology",
+    name: service ? `${service.label} in ${profile.name}` : `Audiology and hearing care in ${profile.name}`,
+    provider: { "@id": `${SITE}/#organization` },
+    areaServed: {
+      "@type": isCounty ? "AdministrativeArea" : "City",
+      name: profile.name,
+      geo: { "@type": "GeoCoordinates", latitude: profile.geo.lat, longitude: profile.geo.lng },
+    },
+    url: `${SITE}${page.path}`,
+  };
+}
+
+// Proximity-aware related links for an area page: nearby cities in the same
+// county/region (not the alphabetical first 8), plus the two office cities.
+function relatedAreaLinks(page: SitePage): { path: string; label: string }[] {
+  const profile = cityProfileForPath(page.path);
+  if (!profile) return [];
+  const here = citySlugFromPath(page.path);
+  const neighbors = Object.entries(cityProfiles)
+    .filter(([slug, p]) => slug !== here && (p.county === profile.county || p.region === profile.region))
+    .slice(0, 6)
+    .map(([slug, p]) => ({ path: `/areas-we-serve/${slug}/`, label: p.name }));
+  return neighbors;
+}
+
 function productImage(pageTitle: string) {
   const title = pageTitle.toLowerCase();
   if (title.includes("phonak") || title.includes("lyric")) return "/assets/phonak.webp";
@@ -578,8 +919,28 @@ export function blogOgImage(path: string): string | null {
   return blogPosts[path]?.image ?? null;
 }
 
+// Meta title/description for enriched core (service/product/tinnitus/facility) pages.
+export function coreMetaTitle(path: string): string | null {
+  const p = corePages[path];
+  if (!p) return null;
+  const brand = " | California Hearing Center";
+  const h = p.metaTitle || p.headline;
+  return h.length + brand.length <= 62 ? h + brand : h;
+}
+
+export function coreMetaDescription(path: string): string | null {
+  const p = corePages[path];
+  if (!p) return null;
+  if (p.metaDescription) return p.metaDescription;
+  const raw = plain(p.intro[0]).replace(/\s+/g, " ").trim();
+  if (raw.length <= 158) return raw;
+  const cut = raw.slice(0, 158);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:—-]$/, "").trim() + "…";
+}
+
 function buildPageContent(page: SitePage): PageContent {
   if (blogPosts[page.path]) return blogPosts[page.path];
+  if (corePages[page.path]) return corePages[page.path];
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const city = cityFromPath(page.path);
@@ -588,6 +949,8 @@ function buildPageContent(page: SitePage): PageContent {
   if (bespokeContent[page.path]) return bespokeContent[page.path];
 
   if (kind === "area") {
+    const profile = cityProfileForPath(page.path);
+    if (profile) return cityContent(page, profile);
     const service = page.path.includes("/hearing-test/") ? "hearing testing" :
       page.path.includes("/hearing-aids/") ? "hearing aids" :
       page.path.includes("/tinnitus") ? "tinnitus therapy" :
@@ -757,10 +1120,16 @@ function breadcrumbSchema(page: SitePage) {
   let acc = "";
   parts.forEach((seg, i) => {
     acc += `/${seg}`;
+    // Prefer proper display names for area/service segments over slug title-casing
+    // (so "dr-emily-mcmahan" renders "Dr. Emily McMahan, AuD", not "Dr Emily Mcmahan").
+    const properName =
+      cityProfiles[seg]?.name ||
+      AREA_SERVICE_INFO[seg]?.label ||
+      seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
     items.push({
       "@type": "ListItem",
       position: i + 2,
-      name: seg.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+      name: properName,
       item: `${SITE}${acc}/`,
     });
   });
@@ -813,13 +1182,14 @@ function articleSchema(page: SitePage, content: PageContent) {
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 // Deterministic per-page variety for the FAQ heading (was identical on every post).
 function faqHeading(path: string, topic: string): string {
+  // Topic-free variants are always safe; topic-embedding ones only when `topic`
+  // is a clean display label (empty string is passed for slug-derived titles).
   const variants = [
     `Questions patients ask us`,
-    `Common questions about ${topic.toLowerCase()}`,
-    `${topic}: questions we hear a lot`,
     `Your questions, answered`,
     `What patients often want to know`,
     `A few questions worth asking`,
+    ...(topic ? [`Common questions about ${topic}`, `${topic}: questions we hear a lot`] : []),
   ];
   let h = 0;
   for (let i = 0; i < path.length; i++) h = (h * 31 + path.charCodeAt(i)) >>> 0;
@@ -861,11 +1231,13 @@ const STOPWORDS = new Set(
 
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
-  const pageTitle = page.h1 || titleFromPath(page.path);
+  const pageTitle = areaHeadingLabel(page.path) ?? page.h1 ?? titleFromPath(page.path);
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
+  const isCore = !!corePages[page.path];
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
-  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content)].filter(Boolean);
+  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page)].filter(Boolean);
+  const areaLinks = kind === "area" ? relatedAreaLinks(page) : [];
   const related = crawledPages
     .filter((item) => item.path !== page.path && getPageKind(item) === kind)
     .slice(0, 8);
@@ -903,11 +1275,15 @@ function InnerPage({ page }: { page: SitePage }) {
               {content.datePublished ? <> · Published {fmtDate(content.datePublished)}</> : null}
               {content.dateModified && content.dateModified !== content.datePublished ? <> · Updated {fmtDate(content.dateModified)}</> : null}
             </p>
-          ) : (
+          ) : isCore ? null : (
             <h2>{pageTitle}</h2>
           )}
+          {kind === "area" && (
+            <p className="post-byline">Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a></p>
+          )}
           <div className="intro-copy">
-            {content.intro.map((paragraph, index) => (
+            {/* Area pages already show intro[0] in the hero — start from [1] to avoid repeating it. */}
+            {(kind === "area" ? content.intro.slice(1) : content.intro).map((paragraph, index) => (
               <p className={index === 0 ? "lead-copy" : undefined} key={paragraph} dangerouslySetInnerHTML={{ __html: linkify(paragraph) }} />
             ))}
           </div>
@@ -933,13 +1309,17 @@ function InnerPage({ page }: { page: SitePage }) {
               </section>
             ))}
           </div>
-          <div className="feature-list">
-            {content.bullets.map((bullet) => <span key={bullet}>{bullet}</span>)}
-          </div>
+          {(content.bulletLinks || content.bullets) && (
+            <div className="feature-list">
+              {content.bulletLinks
+                ? content.bulletLinks.map(([label, href]) => <a key={label} href={href}>{label}</a>)
+                : content.bullets!.map((bullet) => <span key={bullet}>{bullet}</span>)}
+            </div>
+          )}
           {content.faqs && (
             <section className="faq-block">
               <p className="section-kicker">Frequently asked questions</p>
-              <h2>{faqHeading(page.path, pageTitle)}</h2>
+              <h2>{faqHeading(page.path, isCore ? "" : pageTitle)}</h2>
               {content.faqs.map(([question, answer]) => (
                 <details key={question} open>
                   <summary>{question}</summary>
@@ -961,7 +1341,7 @@ function InnerPage({ page }: { page: SitePage }) {
         </article>
         <aside className="sidebar-card">
           <div className="page-visual">
-            <img src={content.image} alt={content.imageLabel || ""} />
+            <img src={content.image} alt={content.imageAlt || content.imageLabel || ""} />
             <span>{content.imageLabel}</span>
           </div>
           <h3>Set up your FREE hearing consultation</h3>
@@ -979,7 +1359,9 @@ function InnerPage({ page }: { page: SitePage }) {
         <p className="section-kicker">Explore related pages</p>
         <h2>Keep exploring {kind === "area" ? "local hearing care" : kind === "product" ? "hearing technology" : kind === "tinnitus" ? "tinnitus resources" : "California Hearing Center"}</h2>
         <div className="pill-grid">
-          {related.map((item) => <a key={item.path} href={item.path}>{item.h1 || titleFromPath(item.path)}</a>)}
+          {areaLinks.length > 0
+            ? areaLinks.map((item) => <a key={item.path} href={item.path}>{item.label}</a>)
+            : related.map((item) => <a key={item.path} href={item.path}>{item.h1 || titleFromPath(item.path)}</a>)}
         </div>
       </section>
     </>
