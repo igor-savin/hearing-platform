@@ -8,7 +8,7 @@ import { EarJourneyHero } from "./EarJourneyHero";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
 
-type MenuLink = [label: string, href: string];
+type MenuLink = [label: string, href: string, children?: [label: string, href: string][]];
 type ProductMenuLink = [title: string, text: string, href: string, image: string];
 type NavItem = {
   label: string;
@@ -83,13 +83,14 @@ const nav: NavItem[] = [
     items: [
       ["Hearing Testing", "/hearing-testing/"],
       ["Hearing Aid Fitting", "/hearing-aid-fitting/"],
-      ["Tinnitus Therapy", "/services/tinnitus-therapy/"],
-      ["Tinnitus Knowledge Hub", "/tinnitus/"],
-      ["What is Tinnitus?", "/tinnitus/what-is-tinnitus/"],
-      ["Tinnitus Causes & Triggers", "/tinnitus/causes/"],
-      ["Tinnitus Treatment & Relief Options", "/tinnitus/exercises/"],
-      ["Sudden or Worsening Tinnitus", "/tinnitus/sudden-onset/"],
-      ["Pulsatile Tinnitus", "/tinnitus/pulsatile/"],
+      ["Tinnitus Therapy", "/services/tinnitus-therapy/", [
+        ["Tinnitus Knowledge Hub", "/tinnitus/"],
+        ["What is Tinnitus?", "/tinnitus/what-is-tinnitus/"],
+        ["Tinnitus Causes & Triggers", "/tinnitus/causes/"],
+        ["Tinnitus Treatment & Relief Options", "/tinnitus/exercises/"],
+        ["Sudden or Worsening Tinnitus", "/tinnitus/sudden-onset/"],
+        ["Pulsatile Tinnitus", "/tinnitus/pulsatile/"],
+      ]],
       ["Hearing Protection", "/services/hearing-protection/"],
       ["Hearing Aid Repair", "/services/hearing-aid-repair/"],
       ["Hyperacusis", "/hyperacusis/"],
@@ -1691,9 +1692,20 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
               </a>
               {item.items && (
                 <div className="dropdown-menu">
-                  {item.items.map(([label, href]) => (
-                    <a href={href} key={href}>{label}</a>
-                  ))}
+                  {item.items.map(([label, href, children]) =>
+                    children ? (
+                      <div className="dropdown-parent" key={href}>
+                        <a href={href}>{label}<span className="submenu-caret" aria-hidden="true">›</span></a>
+                        <div className="submenu">
+                          {children.map(([clabel, chref]) => (
+                            <a href={chref} key={chref}>{clabel}</a>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <a href={href} key={href}>{label}</a>
+                    )
+                  )}
                 </div>
               )}
               {"mega" in item && (
@@ -1731,8 +1743,13 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                   <details>
                     <summary>{item.label}</summary>
                     <a href={item.href}>Overview</a>
-                    {item.items?.map(([label, href]) => (
-                      <a href={href} key={href}>{label}</a>
+                    {item.items?.map(([label, href, children]) => (
+                      <span className="mobile-sub" key={href}>
+                        <a href={href}>{label}</a>
+                        {children?.map(([clabel, chref]) => (
+                          <a className="mobile-subchild" href={chref} key={chref}>{clabel}</a>
+                        ))}
+                      </span>
                     ))}
                     {item.mega && hearingAidColumns.flat().map(([title, text, href, image]) => (
                       <a className="mobile-product-link" href={href} key={href}>

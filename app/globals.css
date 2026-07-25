@@ -157,6 +157,45 @@ img {
   color: white;
 }
 
+/* Second-level flyout (e.g. Services › Tinnitus Therapy › …) */
+.dropdown-parent { position: relative; }
+.dropdown-parent > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.submenu-caret { font-size: 1.15rem; line-height: 1; color: var(--muted); }
+.dropdown-parent:hover > a,
+.dropdown-parent:focus-within > a {
+  background: var(--orange);
+  color: #fff;
+}
+.dropdown-parent:hover > a .submenu-caret,
+.dropdown-parent:focus-within > a .submenu-caret { color: #fff; }
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 260px;
+  background: #f1f1f1;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .16);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(6px);
+  transition: opacity .16s ease, transform .16s ease, visibility .16s ease;
+  z-index: 40;
+}
+.dropdown-parent:hover > .submenu,
+.dropdown-parent:focus-within > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+/* Mobile: indent grouped children under their parent */
+.mobile-sub { display: contents; }
+.mobile-subchild { padding-left: 34px !important; font-size: 0.95em; opacity: 0.92; }
+
 .mega-menu {
   left: 0;
   width: 100%;
