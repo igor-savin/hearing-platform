@@ -579,7 +579,7 @@ export const corePages: Record<string, PageContent> = {
     ["Connectivity and streaming", "Phonak is recognized for versatile Bluetooth connectivity, including direct calls and streaming from many phones, which appeals to people who spend their days on calls and media."],
     ["Roger for tough situations", "The Roger microphone system can transmit a speaker's voice directly to the hearing aids across a noisy room, restaurant, meeting, or lecture hall, helping in situations where any hearing aid alone struggles."],
     ["Lyric extended-wear", "Lyric sits deep in the ear canal and is worn continuously for extended periods, offering an invisible, hassle-free option for suitable candidates. Candidacy depends on ear anatomy, hearing loss, and lifestyle."],
-    ["Fit and verified for you", "Whichever Phonak model suits you, we program and confirm it with real-ear measurement so the output truly matches your prescription."]
+    ["Programmed and verified for your ears", "Whichever Phonak model suits you, we program and confirm it with real-ear measurement so the output truly matches your prescription."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -759,7 +759,7 @@ export const corePages: Record<string, PageContent> = {
     ["Shared engineering heritage", "Rexton draws on technology from the same group behind Signia, so its devices benefit from established platforms and reliability rather than untested designs."],
     ["Practical, durable design", "Rexton is often valued for rugged, straightforward devices, including options suited to active lifestyles and challenging conditions."],
     ["Who Rexton may suit", "Budget-conscious patients, first-time hearing aid users, and those who want proven technology without paying for the latest premium extras often find Rexton a sensible match."],
-    ["Fit and verified for you", "A value device still deserves precise programming. We confirm output with real-ear measurement so your Rexton devices match your prescription."]
+    ["Proven on your ears, not just the box", "A value device still deserves precise programming. We confirm output with real-ear measurement so your Rexton devices match your prescription."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -867,7 +867,7 @@ export const corePages: Record<string, PageContent> = {
     ["Fall detection and alerts", "Some Starkey devices include fall-detection that can send alerts to chosen contacts, a feature that appeals to many older adults and their families for added peace of mind."],
     ["Custom and in-the-ear strength", "Starkey has deep experience with custom, in-the-ear devices, which can be a good route for patients who prefer that style for comfort or cosmetics."],
     ["Who Starkey may suit", "People who want their hearing aids to double as a wellness and safety tool, or who prefer custom in-the-ear designs, often find Starkey appealing."],
-    ["Fit and verified for you", "Health features are a bonus, not a substitute for accurate amplification. We verify each device with real-ear measurement so it performs correctly for your hearing."]
+    ["Fit, measured, and confirmed", "Health features are a bonus, not a substitute for accurate amplification. We verify each device with real-ear measurement so it performs correctly for your hearing."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -939,7 +939,7 @@ export const corePages: Record<string, PageContent> = {
     ["A patient-friendly approach", "Unitron has emphasized flexible trials and upgrade paths, giving patients a chance to experience real-world hearing before fully committing to a technology level."],
     ["A full range of styles", "Receiver-in-canal, behind-the-ear, and custom options are available, with rechargeable and connectivity features across much of the lineup."],
     ["Who Unitron may suit", "First-time users, value-focused patients, and those who like the reassurance of trying technology in daily life before deciding often find Unitron a comfortable choice."],
-    ["Fit and verified for you", "Whatever level you choose, we program and confirm the devices with real-ear measurement so they match your hearing prescription."]
+    ["Real-ear verification is the difference", "Whatever level you choose, we program and confirm the devices with real-ear measurement so they match your hearing prescription."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
@@ -975,7 +975,7 @@ export const corePages: Record<string, PageContent> = {
     ["The PureSound approach", "Widex's PureSound aims for a very natural listening experience with minimal processing delay, which can reduce the artificial or tinny quality some people notice with amplification."],
     ["Who Widex may suit", "Music lovers, audiophiles, and anyone who finds heavily processed sound unnatural often respond well to Widex's emphasis on fidelity and realism."],
     ["Styles and features", "Widex offers receiver-in-canal, behind-the-ear, and custom styles, with rechargeable options and smartphone connectivity so its sound philosophy pairs with modern convenience."],
-    ["Fit and verified for you", "Natural sound still has to match your prescription. We use real-ear measurement to confirm the amplification is correct across the frequencies you need."]
+    ["Tuned to your prescription, then checked", "Natural sound still has to match your prescription. We use real-ear measurement to confirm the amplification is correct across the frequencies you need."]
   ],
   bulletLinks: [
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
