@@ -35,6 +35,45 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/hearing-journey-hero.webp",
   imageLabel: "The path to hearing your best",
 },
+  "/about-us/": {
+  kicker: "About Our Practice",
+  headline: "About California Hearing Center in San Mateo & San Carlos",
+  intro: [
+    "The quality of your hearing touches nearly every part of your life, from the conversations at your dinner table to your confidence at work. California Hearing Center exists to protect and restore that connection. We are an independent audiology practice serving the Peninsula from two offices, in San Mateo and San Carlos, and our focus is straightforward: accurate diagnosis, honest guidance, and hearing solutions built around the individual rather than the sale.",
+    "What sets a practice apart is not the equipment on the shelf but the experience and commitment of the people using it. Our team is made up of doctors of audiology and a hearing instrument specialist who take the time to understand your hearing, your lifestyle, and your goals before recommending anything. We believe every set of ears is unique, and the right solution is the one tailored to yours.",
+    "We serve patients throughout San Mateo, San Carlos, Burlingame, Belmont, Millbrae, and the surrounding Peninsula communities. Whether you are here for a first evaluation, tinnitus relief, or ongoing care, our aim is that you leave understanding your hearing and confident in the path forward."
+  ],
+  sections: [
+    ["Patient-centered care", "We practice person-centered care, which means the plan is shaped with you, not handed to you. We explain your results plainly, lay out realistic options with their trade-offs, and respect that the decision is yours. This philosophy runs through every appointment, from how we describe an audiogram to how we set expectations for new hearing aids."],
+    ["Evidence-based methods", "Good outcomes come from doing the fundamentals well. We rely on established, evidence-based methods, comprehensive diagnostic testing, prescriptive programming, and objective verification with real-ear measurement, rather than shortcuts. Our [hearing testing](/hearing-testing/) and [hearing aid fitting](/hearing-aid-fitting/) follow best practices because that is what reliably delivers clear, comfortable hearing."],
+    ["An experienced team", "Our clinicians bring decades of combined experience across diagnostic evaluation, amplification, and tinnitus management, and they stay current as hearing technology evolves. You can read each provider's background on their individual bio pages to learn about their training, focus areas, and what they care about most in patient care."],
+    ["Two convenient Peninsula offices", "We see patients at 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos, making it easy to find care close to home or work. Both offices offer our full range of [services](/services/), so you can choose whichever location is more convenient for you."],
+    ["Care for the whole hearing journey", "Hearing care is not a single visit. We support you from the first evaluation through fitting, follow-up adjustments, cleaning and repairs, and rechecks as your hearing changes over time. That continuity is part of the value of choosing an independent local practice; the people who fit your devices are the same people who help you keep them working."],
+    ["A specialty in tinnitus", "Ringing, buzzing, or hissing in the ears is one of the most common reasons people find us, and it is an area we focus on. Our [tinnitus](/tinnitus/) care includes evaluation, counseling, and sound-based approaches, and we look for any red flags that call for a medical referral so you get the right kind of help."],
+    ["Rooted in the community", "We are proud to be a local, independent practice on the Peninsula. Our patients come from across the [areas we serve](/areas-we-serve/), and much of our growth comes from their referrals. You can read what patients say about their experience on our [reviews](/reviews/) page."]
+  ],
+  bulletLinks: [
+    ["Our services", "/services/"],
+    ["Hearing testing", "/hearing-testing/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Tinnitus care", "/tinnitus/"],
+    ["Areas we serve", "/areas-we-serve/"],
+    ["Patient reviews", "/reviews/"]
+  ],
+  takeaways: [
+    "An independent Peninsula audiology practice with offices in San Mateo and San Carlos.",
+    "A team of doctors of audiology and a hearing instrument specialist practicing patient-centered, evidence-based care.",
+    "Support across the whole journey, from first evaluation to follow-up, repairs, and tinnitus care."
+  ],
+  faqs: [
+    ["Where are your offices located?", "We have two Peninsula locations: 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos. Both offer our full range of services, so you can choose whichever is more convenient. Reach either office at 650-342-9449."],
+    ["Who will I see at my appointment?", "You will be seen by a member of our clinical team, which includes doctors of audiology and a hearing instrument specialist. You can read more about each provider's training and focus on their individual bio pages."],
+    ["What areas do you serve?", "We care for patients across the Peninsula, including San Mateo, San Carlos, Burlingame, Belmont, Millbrae, and nearby communities. See our areas we serve page for more on the neighborhoods we reach."],
+    ["What makes California Hearing Center different?", "We are an independent, local practice focused on patient-centered, evidence-based care. That means thorough diagnostics, objective verification of your hearing aids, plain-language explanations, and continuity of care from the same team over time, rather than a one-size-fits-all approach."]
+  ],
+  image: "/assets/core/about-us.svg",
+  imageLabel: "Independent Peninsula audiology practice",
+},
   "/about-us/darcy-benson/": {
   kicker: "Meet the Team",
   headline: "Darcy Benson, AuD",
@@ -298,6 +337,45 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/atria-park-of-san-mateo.svg",
   imageLabel: "Hearing care for Atria Park of San Mateo residents"
 },
+  "/hearing-aid-fitting/": {
+  kicker: "Hearing Aid Fitting & Verification",
+  headline: "Hearing Aid Fitting in San Mateo & San Carlos",
+  intro: [
+    "Choosing the right hearing aid is only half of the equation. A device that suits your hearing loss on paper still has to be programmed to your exact ears, seated comfortably, and verified with objective measurement before it can do its job. At California Hearing Center, the fitting is where a hearing aid stops being a product and becomes a solution shaped around you.",
+    "Two people with identical audiograms can need very different settings, because ear canals differ in size and shape and because everyone's brain adapts to sound in its own way. That is why a good fitting is a process rather than a single handover. We program the aids to a prescriptive target based on your test results, fine-tune them to your preferences, confirm the sound with measurement, and adjust again after you have lived with them for a week or two.",
+    "The payoff of doing this carefully is comfort and clarity you actually keep wearing. Hearing aids left at factory defaults or fitted by feel are a common reason devices end up in a drawer; a verified, well-adjusted fitting is a common reason they stay in your ears."
+  ],
+  sections: [
+    ["Why a professional fitting matters", "Amplifying every sound equally would be loud and unhelpful. A proper fitting shapes the amplification to your specific hearing loss, boosting the pitches you have lost while leaving the ones you hear well alone. Getting that balance right is what separates hearing aids that clarify speech from ones that simply make everything louder, and it depends on precise programming rather than a one-size setting."],
+    ["Programming to your prescription", "Your audiogram generates a hearing prescription that we load into the devices using the manufacturer's software. From there we fine-tune. Because the aids are digital, this prescription can be adjusted as often as needed, and if your hearing changes in the future the same devices can be reprogrammed rather than replaced. We also set up the features and programs you will actually use day to day."],
+    ["Real-ear measurement and live speech mapping", "We verify the fitting objectively rather than by ear alone. A tiny probe microphone placed in your ear canal measures the sound the hearing aid is actually delivering next to your eardrum, and we adjust until it matches your prescriptive target. Live speech mapping lets you and anyone with you watch this in real time. Verification like this is a hallmark of best-practice fitting and is far more reliable than turning knobs until it sounds about right."],
+    ["A comfortable physical fit", "Sound aside, the device has to feel right. We make sure the aid or its dome or earmold rests securely and comfortably, does not whistle from feedback, and stays put when you talk and chew. An aid that pinches, slips, or squeals is one you will not wear, so physical comfort is part of the fitting, not an afterthought."],
+    ["Learning your devices", "Before you leave, we walk you through the practical side: inserting and removing the aids, changing or charging batteries, cleaning the wax guards and ports, connecting to your phone, and switching programs. We give you clear care instructions so small maintenance never becomes a reason to stop wearing them, and we handle [cleaning, servicing, and repairs](/services/hearing-aid-repair/) down the road."],
+    ["Adapting to new hearing takes time", "New hearing aids rarely feel perfect on day one. Your brain has grown used to a quieter world, and sounds you have not heard clearly in years, from footsteps to your own voice, can seem sharp at first. This settles. We encourage you to wear the aids as much as possible, be patient over the first weeks, and keep a simple log of moments when hearing was difficult so we can target the next adjustment."],
+    ["Follow-up and fine-tuning", "About a week or two after the fitting you return so we can refine the settings against your real-world experience and repeat verification. This follow-up is where good hearing aids become great, because it uses what you have learned in actual conversations, restaurants, and meetings rather than the quiet of the booth. Ongoing adjustments remain available whenever your needs change."]
+  ],
+  bulletLinks: [
+    ["Prescriptive programming", "/hearing-aid-fitting/"],
+    ["Real-ear measurement (REM)", "/hearing-aid-fitting/"],
+    ["Live speech mapping", "/hearing-aid-fitting/"],
+    ["Comfort and feedback check", "/hearing-aid-fitting/"],
+    ["Care and cleaning guidance", "/services/hearing-aid-repair/"],
+    ["Follow-up fine-tuning", "/contact/"]
+  ],
+  takeaways: [
+    "A fitting programs the device to your prescription and verifies it with real-ear measurement, not by ear alone.",
+    "Physical comfort and feedback-free fit matter as much as the sound settings.",
+    "Adapting takes a few weeks; follow-up appointments are where the fitting is refined to real life."
+  ],
+  faqs: [
+    ["Do I need a fitting, or can I just wear the hearing aids?", "You need a fitting. Out of the box, hearing aids are not matched to your hearing loss or your ear canals. Programming them to your prescription and verifying the result is what makes speech clear and comfortable rather than simply loud."],
+    ["What is real-ear measurement?", "Real-ear measurement, or REM, uses a thin probe microphone in your ear canal to measure the exact sound the hearing aid delivers near your eardrum. We compare it to your prescriptive target and adjust to match. It is an objective way to confirm the aids are set correctly for you."],
+    ["How long does it take to get used to new hearing aids?", "Usually a few weeks to a couple of months. The more hearing you have lost, the longer your brain takes to readjust to sounds it has been missing. Wearing the aids consistently and returning for follow-up adjustments speeds the process."],
+    ["Can my hearing aids be adjusted if my hearing changes?", "Yes. The devices are digital and can be reprogrammed as your hearing evolves, so a change in your hearing does not necessarily mean new hardware. Regular follow-up lets us keep them tuned to your current needs. To schedule, call 650-342-9449."]
+  ],
+  image: "/assets/core/hearing-aid-fitting.svg",
+  imageLabel: "Verified, real-ear hearing aid fitting",
+},
   "/hearing-aid-referral-program/": {
   kicker: "For Our Patients",
   headline: "Refer Someone You Care About to Better Hearing",
@@ -326,6 +404,46 @@ export const corePages: Record<string, PageContent> = {
   ],
   image: "/assets/core/hearing-aid-referral-program.svg",
   imageLabel: "Help someone you love hear better",
+},
+  "/hearing-testing/": {
+  kicker: "Diagnostic Hearing Evaluations",
+  headline: "Hearing Testing in San Mateo & San Carlos",
+  intro: [
+    "A hearing test is where better hearing begins. Before anyone can recommend a device, a therapy, or even reassurance, they need an accurate picture of how well you hear, what kind of hearing loss you have, and where along the pathway from ear canal to brain the trouble lies. At California Hearing Center, a diagnostic hearing evaluation answers those questions with objective measurements rather than guesswork, so any next step is built on real data about your ears.",
+    "Hearing rarely fades all at once. For most people it slips gradually, and the brain quietly compensates until conversations in restaurants, the television volume, or a spouse's comments make the change hard to ignore. Testing turns that vague sense of missing words into a clear profile: which pitches you struggle with, how well you understand speech, and whether the cause is something reversible like earwax or a permanent change in the inner ear.",
+    "Our audiologists have provided evaluations on the Peninsula for over two decades. Whether you are noticing a first change, following up on tinnitus, or rechecking a known loss, we walk you through every result so you leave understanding your own hearing and your options."
+  ],
+  sections: [
+    ["Your initial hearing consultation", "Every evaluation starts with a conversation, not a machine. One of our audiologists asks about when you first noticed a change, where listening is hardest for you, your medical and noise-exposure history, any tinnitus or balance symptoms, and the medications you take. This case history frequently points to the cause before a single tone is played, and it helps us tailor the testing that follows to your specific concerns."],
+    ["Looking inside the ear first", "Next we examine your ear canals and eardrums with an otoscope. This simple step rules out obstructions such as impacted earwax, which is a common and fully reversible cause of muffled hearing. If wax is blocking the canal, clearing it may resolve the problem on its own, which is why we check before assuming a loss is permanent. Our [earwax removal](/services/earwax-removal/) is available in the same visit when needed."],
+    ["Pure-tone audiometry", "The core of the evaluation is audiometric testing. In a quiet booth you listen for tones across a range of pitches and volumes, signaling each time you hear one. This maps the softest sound you can detect at each frequency and defines the degree of your hearing loss, from mild to profound. Comparing air-conducted and bone-conducted results also tells us whether the loss is conductive, sensorineural, or a mix, which shapes the treatment path."],
+    ["Speech testing", "Detecting a tone is not the same as understanding words, so we also measure how clearly you recognize speech and at what volume it becomes comfortable. Because real conversations happen against background noise, speech-in-noise measures are especially telling. They often explain the classic complaint of hearing that people are talking but not being able to follow them in a crowded room."],
+    ["Tympanometry and middle-ear checks", "Tympanometry gently varies air pressure in the ear canal to see how your eardrum and the tiny middle-ear bones move. It helps identify fluid, pressure problems, or issues with the eardrum itself, distinguishing a middle-ear cause from an inner-ear one and adding context to the audiogram."],
+    ["Otoacoustic emissions (OAE)", "Otoacoustic emission testing measures the faint sounds healthy outer hair cells produce in response to stimulation. Because it reflects the health of the inner ear's sensory cells, OAE testing gives us a finer read on cochlear function and can flag early changes, which makes it useful for monitoring noise or medication exposure over time."],
+    ["Reviewing your audiogram together", "When testing is complete we sit down with your audiogram, the chart that plots your results. We show you exactly which pitches are affected, what your speech scores mean, and how your profile compares to normal hearing. Understanding the picture is what lets you make an informed decision, so we take the time to explain it plainly rather than hand you a printout."],
+    ["From results to a plan", "The evaluation defines the destination; the treatment defines the route. Depending on what we find, the next step might be nothing more than monitoring, wax management, a referral, a [hearing aid fitting](/hearing-aid-fitting/), or a [tinnitus](/tinnitus/) consultation. Whatever the result, we lay out your realistic options so the choice stays yours."]
+  ],
+  bulletLinks: [
+    ["Case history and consultation", "/contact/"],
+    ["Otoscopy and earwax check", "/services/earwax-removal/"],
+    ["Pure-tone audiometry", "/hearing-testing/"],
+    ["Tympanometry and OAE", "/hearing-testing/"],
+    ["Audiogram review", "/hearing-testing/"],
+    ["Next-step planning", "/hearing-aid-fitting/"]
+  ],
+  takeaways: [
+    "A diagnostic evaluation identifies the degree, type, and likely cause of hearing loss with objective measurements.",
+    "We check for reversible causes like earwax before assuming a loss is permanent.",
+    "You leave understanding your own audiogram and your realistic options, whatever they are."
+  ],
+  faqs: [
+    ["How long does a hearing test take?", "A full diagnostic evaluation, including the case history, ear exam, testing, and a review of your results, typically takes about an hour. We would rather take the time to explain your audiogram than rush you out with numbers you do not understand."],
+    ["Does a hearing test hurt?", "No. Hearing testing is painless and non-invasive. You will listen for tones and repeat words, and tympanometry involves only a brief, gentle change in air pressure that feels like a slight fullness in the ear."],
+    ["When should I get my hearing checked?", "Consider an evaluation if you turn the television up more than others prefer, ask people to repeat themselves, struggle to follow conversation in restaurants, or notice new ringing in your ears. If a hearing change comes on suddenly, especially in one ear, treat it as urgent and seek care right away."],
+    ["Will I need hearing aids after the test?", "Not necessarily. Many evaluations lead to monitoring, wax removal, or simple reassurance. If the results do point toward amplification, we explain why and walk you through the options; the decision is always yours to make."]
+  ],
+  image: "/assets/core/hearing-testing.svg",
+  imageLabel: "Comprehensive diagnostic hearing evaluation",
 },
   "/hyperacusis/": {
   kicker: "Tinnitus & Sound Sensitivity",
@@ -1458,6 +1576,45 @@ export const corePages: Record<string, PageContent> = {
   ],
   image: "/assets/core/senior-living.svg",
   imageLabel: "Hearing care for seniors across the Peninsula"
+},
+  "/services/": {
+  kicker: "Audiology Services",
+  headline: "Comprehensive Audiology Services in San Mateo & San Carlos",
+  intro: [
+    "California Hearing Center provides a full range of diagnostic and treatment services for hearing and the ears. From the first evaluation through fitting, follow-up, tinnitus care, and hearing protection, our audiologists support you at every stage rather than at a single appointment. This page is an overview; each service below has its own page with the detail you need.",
+    "Hearing is not just about the ears. It is an interplay between your ears, your brain, and the world around you, and its reach is wide. Research links untreated hearing loss to effects on physical and emotional health, relationships, and everyday performance, which is why addressing it well tends to improve more than just how clearly you hear. Hearing difficulty is also more common than many assume; the National Institute on Deafness and Other Communication Disorders estimates that roughly one in three adults between 65 and 74 has some hearing loss, and we regularly see patients decades younger.",
+    "Whether you are noticing a first change, managing tinnitus, protecting your hearing at work or play, or caring for existing devices, our two Peninsula offices are here to help. Explore the services below to find the right starting point."
+  ],
+  sections: [
+    ["Diagnostic hearing evaluations", "Everything starts with an accurate picture of your hearing. Our [hearing testing](/hearing-testing/) uses pure-tone audiometry, speech testing, tympanometry, and otoacoustic emissions to define the degree, type, and likely cause of any loss. We review your audiogram with you and check for reversible causes before assuming anything is permanent."],
+    ["Hearing aids and fitting", "Choosing a device is only the beginning; the [hearing aid fitting](/hearing-aid-fitting/) is what makes it work. We program the aids to your prescription, verify them with real-ear measurement and live speech mapping, confirm a comfortable fit, and fine-tune at follow-up. We fit and verify current technology from the major manufacturers you can browse [by brand](/products/hearing-aids-by-brand/)."],
+    ["Tinnitus consultation and sound therapy", "Tinnitus, the perception of ringing, buzzing, or hissing with no external source, often accompanies hearing loss but can occur on its own. Our [tinnitus](/tinnitus/) care includes evaluation, counseling, and sound-based approaches. For many patients, well-fitted hearing aids ease tinnitus by restoring ambient sound, and many devices include built-in sound therapy your audiologist can enable."],
+    ["Earwax removal", "Impacted cerumen is one of the most common and most reversible causes of muffled hearing and a plugged sensation. Our [earwax removal](/services/earwax-removal/) is performed under direct visualization after an exam of the canal and eardrum, safely clearing buildup that at-home kits cannot, including for hearing aid wearers whose devices clog with wax."],
+    ["Hearing aid repair and maintenance", "Devices need care to keep performing. We provide cleaning, maintenance, and [repairs](/services/hearing-aid-repair/) for most major brands, and when a problem cannot be solved in the office we coordinate manufacturer service. Regular cleaning visits keep receivers and ports clear so your aids sound the way they should."],
+    ["Hearing protection", "Preserving the hearing you have matters as much as treating what you have lost. We offer custom [hearing protection](/services/hearing-protection/) for noisy work, music, shooting, and other high-noise settings, made to fit your ears so protection is comfortable enough to actually use."],
+    ["Follow-up care and communication skills", "Better hearing is a process, not a purchase. Beyond fitting, we provide ongoing follow-up and support communication strategies, so devices and habits work together. Small, practical skills often make the difference between hearing well and merely wearing hearing aids."]
+  ],
+  bulletLinks: [
+    ["Hearing testing", "/hearing-testing/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Tinnitus care", "/tinnitus/"],
+    ["Earwax removal", "/services/earwax-removal/"],
+    ["Hearing aid repair", "/services/hearing-aid-repair/"],
+    ["Hearing protection", "/services/hearing-protection/"]
+  ],
+  takeaways: [
+    "We cover the full path: evaluation, fitting and verification, tinnitus care, wax removal, repairs, and protection.",
+    "Each service has its own detailed page; this is the overview to help you start in the right place.",
+    "Two Peninsula offices in San Mateo and San Carlos support you at every stage, not just one appointment."
+  ],
+  faqs: [
+    ["Where do I start if I think I have hearing loss?", "Start with a diagnostic hearing evaluation. It defines whether you have a loss, its degree and type, and its likely cause, and it rules out reversible issues like earwax. Everything else, from hearing aids to tinnitus care, follows from that picture."],
+    ["Do you service hearing aids I bought elsewhere?", "In many cases, yes. We clean, maintain, and repair most major brands, and we can help with programming and verification. Bring your devices in and we will let you know what we can do in-office versus what needs manufacturer service."],
+    ["Do you treat tinnitus even without hearing loss?", "Yes. Tinnitus can occur with or without measurable hearing loss. We evaluate it, look for any red flags that warrant a medical referral, and discuss counseling and sound-therapy options suited to your situation."],
+    ["Which office should I visit?", "We see patients at both our San Mateo and San Carlos locations on the Peninsula. Choose whichever is more convenient; you can reach either office through our [contact page](/contact/) or by calling 650-342-9449."]
+  ],
+  image: "/assets/core/services.svg",
+  imageLabel: "Full-service Peninsula audiology care",
 },
   "/services/earwax-removal/": {
   kicker: "Audiology Services",

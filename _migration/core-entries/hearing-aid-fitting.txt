@@ -1,0 +1,39 @@
+"/hearing-aid-fitting/": {
+  kicker: "Hearing Aid Fitting & Verification",
+  headline: "Hearing Aid Fitting in San Mateo & San Carlos",
+  intro: [
+    "Choosing the right hearing aid is only half of the equation. A device that suits your hearing loss on paper still has to be programmed to your exact ears, seated comfortably, and verified with objective measurement before it can do its job. At California Hearing Center, the fitting is where a hearing aid stops being a product and becomes a solution shaped around you.",
+    "Two people with identical audiograms can need very different settings, because ear canals differ in size and shape and because everyone's brain adapts to sound in its own way. That is why a good fitting is a process rather than a single handover. We program the aids to a prescriptive target based on your test results, fine-tune them to your preferences, confirm the sound with measurement, and adjust again after you have lived with them for a week or two.",
+    "The payoff of doing this carefully is comfort and clarity you actually keep wearing. Hearing aids left at factory defaults or fitted by feel are a common reason devices end up in a drawer; a verified, well-adjusted fitting is a common reason they stay in your ears."
+  ],
+  sections: [
+    ["Why a professional fitting matters", "Amplifying every sound equally would be loud and unhelpful. A proper fitting shapes the amplification to your specific hearing loss, boosting the pitches you have lost while leaving the ones you hear well alone. Getting that balance right is what separates hearing aids that clarify speech from ones that simply make everything louder, and it depends on precise programming rather than a one-size setting."],
+    ["Programming to your prescription", "Your audiogram generates a hearing prescription that we load into the devices using the manufacturer's software. From there we fine-tune. Because the aids are digital, this prescription can be adjusted as often as needed, and if your hearing changes in the future the same devices can be reprogrammed rather than replaced. We also set up the features and programs you will actually use day to day."],
+    ["Real-ear measurement and live speech mapping", "We verify the fitting objectively rather than by ear alone. A tiny probe microphone placed in your ear canal measures the sound the hearing aid is actually delivering next to your eardrum, and we adjust until it matches your prescriptive target. Live speech mapping lets you and anyone with you watch this in real time. Verification like this is a hallmark of best-practice fitting and is far more reliable than turning knobs until it sounds about right."],
+    ["A comfortable physical fit", "Sound aside, the device has to feel right. We make sure the aid or its dome or earmold rests securely and comfortably, does not whistle from feedback, and stays put when you talk and chew. An aid that pinches, slips, or squeals is one you will not wear, so physical comfort is part of the fitting, not an afterthought."],
+    ["Learning your devices", "Before you leave, we walk you through the practical side: inserting and removing the aids, changing or charging batteries, cleaning the wax guards and ports, connecting to your phone, and switching programs. We give you clear care instructions so small maintenance never becomes a reason to stop wearing them, and we handle [cleaning, servicing, and repairs](/services/hearing-aid-repair/) down the road."],
+    ["Adapting to new hearing takes time", "New hearing aids rarely feel perfect on day one. Your brain has grown used to a quieter world, and sounds you have not heard clearly in years, from footsteps to your own voice, can seem sharp at first. This settles. We encourage you to wear the aids as much as possible, be patient over the first weeks, and keep a simple log of moments when hearing was difficult so we can target the next adjustment."],
+    ["Follow-up and fine-tuning", "About a week or two after the fitting you return so we can refine the settings against your real-world experience and repeat verification. This follow-up is where good hearing aids become great, because it uses what you have learned in actual conversations, restaurants, and meetings rather than the quiet of the booth. Ongoing adjustments remain available whenever your needs change."]
+  ],
+  bulletLinks: [
+    ["Prescriptive programming", "/hearing-aid-fitting/"],
+    ["Real-ear measurement (REM)", "/hearing-aid-fitting/"],
+    ["Live speech mapping", "/hearing-aid-fitting/"],
+    ["Comfort and feedback check", "/hearing-aid-fitting/"],
+    ["Care and cleaning guidance", "/services/hearing-aid-repair/"],
+    ["Follow-up fine-tuning", "/contact/"]
+  ],
+  takeaways: [
+    "A fitting programs the device to your prescription and verifies it with real-ear measurement, not by ear alone.",
+    "Physical comfort and feedback-free fit matter as much as the sound settings.",
+    "Adapting takes a few weeks; follow-up appointments are where the fitting is refined to real life."
+  ],
+  faqs: [
+    ["Do I need a fitting, or can I just wear the hearing aids?", "You need a fitting. Out of the box, hearing aids are not matched to your hearing loss or your ear canals. Programming them to your prescription and verifying the result is what makes speech clear and comfortable rather than simply loud."],
+    ["What is real-ear measurement?", "Real-ear measurement, or REM, uses a thin probe microphone in your ear canal to measure the exact sound the hearing aid delivers near your eardrum. We compare it to your prescriptive target and adjust to match. It is an objective way to confirm the aids are set correctly for you."],
+    ["How long does it take to get used to new hearing aids?", "Usually a few weeks to a couple of months. The more hearing you have lost, the longer your brain takes to readjust to sounds it has been missing. Wearing the aids consistently and returning for follow-up adjustments speeds the process."],
+    ["Can my hearing aids be adjusted if my hearing changes?", "Yes. The devices are digital and can be reprogrammed as your hearing evolves, so a change in your hearing does not necessarily mean new hardware. Regular follow-up lets us keep them tuned to your current needs. To schedule, call 650-342-9449."]
+  ],
+  image: "/assets/core/hearing-aid-fitting.svg",
+  imageLabel: "Verified, real-ear hearing aid fitting",
+},
