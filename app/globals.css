@@ -605,6 +605,43 @@ p {
   box-shadow: 0 0 0 5px rgba(224, 174, 60, .18);
 }
 
+.breadcrumbs {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+  font-size: 0.95rem;
+}
+.breadcrumbs ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 0;
+}
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+}
+.breadcrumbs a {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus-visible {
+  text-decoration: underline;
+}
+.breadcrumbs .crumb-sep {
+  color: var(--muted);
+  margin: 0 10px;
+}
+.breadcrumbs [aria-current="page"] {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .feature-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

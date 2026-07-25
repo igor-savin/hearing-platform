@@ -1112,6 +1112,54 @@ function faqSchema(page: SitePage, content: PageContent) {
   };
 }
 
+// Human-readable breadcrumb labels for path segments.
+const CRUMB_LABELS: Record<string, string> = {
+  "areas-we-serve": "Service Areas", products: "Products", "hearing-aids-by-brand": "Hearing Aid Brands",
+  "hearing-aids": "Hearing Aids", tinnitus: "Tinnitus", hyperacusis: "Hyperacusis", services: "Services",
+  "about-us": "About Us", "the-blog": "Blog", resources: "Resources", contact: "Contact",
+  "hearing-testing": "Hearing Testing", "hearing-aid-fitting": "Hearing Aid Fitting",
+  "hearing-protection": "Hearing Protection", "senior-living": "Senior Living",
+  tmj: "TMJ", menieres: "Ménière's", "tinnitus-retraining-therapy": "TRT",
+  captel: "CapTel", "caption-call": "CaptionCall", eargear: "Ear Gear",
+};
+const CRUMB_SMALL = new Set(["of", "and", "the", "in", "for", "to", "a", "by", "with", "vs", "on"]);
+function crumbTitleCase(slug: string): string {
+  return slug.split("-").map((w, i) => (CRUMB_SMALL.has(w) && i > 0 ? w : w.charAt(0).toUpperCase() + w.slice(1))).join(" ");
+}
+function crumbLabel(seg: string): string {
+  return CRUMB_LABELS[seg] || cityProfiles[seg]?.name || AREA_SERVICE_INFO[seg]?.label || crumbTitleCase(seg);
+}
+// Ordered breadcrumb trail for a path; last item is the current page (no link).
+function breadcrumbTrail(path: string): { label: string; href: string }[] {
+  const parts = path.split("/").filter(Boolean);
+  const items = [{ label: "Home", href: "/" }];
+  let acc = "";
+  parts.forEach((seg) => {
+    acc += `/${seg}`;
+    items.push({ label: crumbLabel(seg), href: `${acc}/` });
+  });
+  return items;
+}
+
+// Person schema for staff bio pages (/about-us/{slug}/ enriched with a team
+// portrait) — an EEAT signal. Name/credential come from the page headline.
+function personSchema(page: SitePage, content: PageContent): object | null {
+  if (!/^\/about-us\/[a-z-]+\/$/.test(page.path)) return null;
+  if (!content.image || !content.image.includes("/assets/team/")) return null;
+  const [namePart, credPart] = content.headline.split(",").map((s) => s.trim());
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE}${page.path}#person`,
+    name: namePart,
+    ...(credPart ? { honorificSuffix: credPart } : {}),
+    jobTitle: credPart && /aud|audiolog/i.test(credPart) ? "Audiologist" : credPart || "Team Member",
+    image: `${SITE}${content.image}`,
+    url: `${SITE}${page.path}`,
+    worksFor: { "@id": `${SITE}/#organization` },
+  };
+}
+
 function breadcrumbSchema(page: SitePage) {
   const parts = page.path.split("/").filter(Boolean);
   const items: Array<Record<string, unknown>> = [
@@ -1236,7 +1284,7 @@ function InnerPage({ page }: { page: SitePage }) {
   const isBlog = !!content.datePublished;
   const isCore = !!corePages[page.path];
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
-  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page)].filter(Boolean);
+  const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page), personSchema(page, content)].filter(Boolean);
   const areaLinks = kind === "area" ? relatedAreaLinks(page) : [];
   const related = crawledPages
     .filter((item) => item.path !== page.path && getPageKind(item) === kind)
@@ -1249,6 +1297,23 @@ function InnerPage({ page }: { page: SitePage }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+      )}
+      {page.path !== "/" && (
+        <nav className="breadcrumbs" aria-label="Breadcrumb">
+          <div className="container">
+            <ol>
+              {breadcrumbTrail(page.path).map((c, i, arr) => (
+                <li key={c.href}>
+                  {i < arr.length - 1 ? (
+                    <><a href={c.href}>{c.label}</a><span className="crumb-sep" aria-hidden="true">›</span></>
+                  ) : (
+                    <span aria-current="page">{c.label}</span>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </nav>
       )}
       <section className={`subhero subhero-${kind}`}>
         <div className="container">

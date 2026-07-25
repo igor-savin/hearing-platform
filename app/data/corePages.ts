@@ -35,6 +35,235 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/hearing-journey-hero.webp",
   imageLabel: "The path to hearing your best",
 },
+  "/about-us/darcy-benson/": {
+  kicker: "Meet the Team",
+  headline: "Darcy Benson, AuD",
+  intro: [
+    "Dr. Darcy Benson is the founder of California Hearing Center and believes that \"regaining the ability to hear brings people back into the world around them.\" With over 30 years of experience, she brings a dedication to hearing care that stretches far beyond her practice into her daily interactions with the patients she sees.",
+    "Dr. Benson's focus is on providing evidence-based practice in a patient-centered care environment. She is passionate about her work and about improving the lives of her patients through better hearing."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Benson received her clinical doctorate in Audiology in 2006. She is board certified by the American Board of Audiology and is licensed in California as a dispensing audiologist. Her work has been published in professional journals and audiology textbooks. In 2018, she was awarded the Inspired-by-Ida label, a benchmark of quality of care."],
+    ["Focus & approach", "Dr. Benson is active in the field of audiology and is a consultant for companies carrying out research on new technology and fitting systems. As a member of the advisory board of the Ida Institute, she worked with an international team of audiologists to integrate person-centered care into hearing care around the world. She is native to the Bay Area and lives on the peninsula."]
+  ],
+  bullets: [
+    "Founder of California Hearing Center",
+    "Over 30 years of experience in hearing care",
+    "Board certified by the American Board of Audiology",
+    "Ida Institute advisory board member",
+    "Evidence-based, patient-centered care"
+  ],
+  takeaways: [
+    "Founder of the practice with 30+ years of experience and a clinical doctorate earned in 2006.",
+    "Board certified by the American Board of Audiology and licensed in California as a dispensing audiologist."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Benson?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/darcy-benson.jpeg",
+  imageLabel: "Darcy Benson, AuD",
+  imageAlt: "Dr. Darcy Benson, audiologist at California Hearing Center",
+},
+  "/about-us/emily-mcmahan/": {
+  kicker: "Meet the Team",
+  headline: "Emily McMahan, AuD",
+  intro: [
+    "Dr. Emily McMahan is a highly respected audiologist, recognized nationally for her expertise in tinnitus management, hearing care innovation, and advancements in telehealth audiology.",
+    "She is the founder and owner of the Alaska Hearing & Tinnitus Center, a leading practice serving Alaska and the western United States that is especially recognized for its focus on [tinnitus](/tinnitus/) management. Based in Anchorage, Alaska, she is committed to expanding audiological care through remote and field clinics across multiple states."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. McMahan earned her Bachelor of Science in Communication Sciences and Disorders from the University of Cincinnati and her Doctorate of Audiology from Salus University in Philadelphia. She completed her residency in Anchorage, Alaska, where she continues to be based. She is certified by the American Board of Audiology and is a Fellow of both the American Academy of Audiology and the Academy of Doctors of Audiology. She was named Alumna of the Year by Salus University's George S. Osborne College of Audiology."],
+    ["Focus & approach", "Her clinical expertise includes diagnostic hearing evaluations, tinnitus assessment and management, and telehealth service delivery, caring for both pediatric and geriatric populations. Dr. McMahan is among the first U.S. clinicians to implement Lenire, the FDA-approved bimodal neuromodulation device for tinnitus, and co-authored a real-world outcomes study on its effectiveness published in Nature Communications Medicine. Her mission centers on helping patients \"hear the life they love\" through individualized care."],
+    ["Leadership & advocacy", "Dr. McMahan holds a board position in the Audiology Practice Standards Organization (APSO), helping to set national standards for audiological care, and is an adjunct professor at the University of Alaska, mentoring audiology students and externs at her clinic. She is a frequent speaker on tinnitus and hearing healthcare innovations and has been featured in publications such as the Washington Post."]
+  ],
+  bullets: [
+    "Founder and owner of the Alaska Hearing & Tinnitus Center",
+    "Tinnitus management specialist",
+    "Telehealth audiology",
+    "Among the first U.S. clinicians to implement Lenire",
+    "Board member of the Audiology Practice Standards Organization (APSO)"
+  ],
+  takeaways: [
+    "Nationally recognized for tinnitus management, telehealth, and pioneering clinical work with the Lenire device.",
+    "Anchorage, Alaska-based founder of the Alaska Hearing & Tinnitus Center, serving patients across the western U.S."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. McMahan?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/emily-mcmahan.webp",
+  imageLabel: "Emily McMahan, AuD",
+  imageAlt: "Dr. Emily McMahan, audiologist at California Hearing Center",
+},
+  "/about-us/giana-hatem/": {
+  kicker: "Meet the Team",
+  headline: "Giana Hatem, AuD",
+  intro: [
+    "Dr. Giana Hatem graduated from University of the Pacific with her Doctor of Audiology. She has specialized in adult diagnostic evaluations, pediatric diagnostic evaluations, tinnitus evaluations, and amplification device/hearing aid programming.",
+    "Dr. Hatem has a passion for helping others and strives to make improvement in patients' lives by addressing hearing loss, tinnitus, and communication-based needs."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Hatem is licensed in audiology and hearing device dispensing by the state of California. She also holds certification by the National Council of Certified Dementia Practitioners as a Certified Dementia Practitioner. She completed her B.A. in Speech and Hearing at Cleveland State University in Cleveland, Ohio, and her Au.D. at the University of the Pacific in San Francisco, California. Her research includes Spectral Analysis of Arabic Speech Sounds and Normative Values for Repeat-Recall Test (RRT) in Young Native English Speakers."],
+    ["Focus & approach", "Dr. Hatem is a first generation American and is fluent in Lebanese Arabic. She is a San Mateo local and is excited to once again call the area home. She also enjoys being outdoors, hiking, and photography."]
+  ],
+  bullets: [
+    "Adult and pediatric diagnostic evaluations",
+    "Tinnitus evaluations",
+    "Hearing aid programming and amplification",
+    "Certified Dementia Practitioner",
+    "Fluent in Lebanese Arabic"
+  ],
+  takeaways: [
+    "Doctor of Audiology from University of the Pacific, licensed in California for audiology and hearing device dispensing.",
+    "First generation American, fluent in Lebanese Arabic, and a Certified Dementia Practitioner."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Hatem?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/giana-hatem.png",
+  imageLabel: "Giana Hatem, AuD",
+  imageAlt: "Dr. Giana Hatem, audiologist at California Hearing Center",
+},
+  "/about-us/jarna-kothari/": {
+  kicker: "Meet the Team",
+  headline: "Jarna Kothari, Practice Administrator",
+  intro: [
+    "Jarna Kothari serves as Practice Administrator at California Hearing Center, where she is focused on enhancing the patient experience, supporting quality care delivery, and helping improve patients' lives through better hearing health outcomes. She is passionate about creating a welcoming, efficient, and patient-centered environment that enables individuals and families to access the care and support they need with confidence.",
+    "Jarna brings more than 10 years of healthcare experience across patient services, medical billing, health information management, medical records, referrals, and practice operations. Her background reflects a strong commitment to accuracy, compassion, and service excellence, with extensive experience supporting both patients and clinical teams in fast-paced healthcare settings."
+  ],
+  sections: [
+    ["Background & experience", "She holds a Bachelor's degree in Speech Language Pathology and Audiology, which further strengthens her connection to the field of hearing and communication care. Jarna combines her clinical foundation with operational expertise to help ensure patients receive a seamless experience and high-quality support throughout their care journey."]
+  ],
+  bullets: [
+    "More than 10 years of healthcare experience",
+    "Patient services and practice operations",
+    "Medical billing and health information management",
+    "Bachelor's degree in Speech Language Pathology and Audiology"
+  ],
+  takeaways: [
+    "Practice Administrator with 10+ years of healthcare experience across patient services and operations.",
+    "Holds a Bachelor's degree in Speech Language Pathology and Audiology."
+  ],
+  faqs: [
+    ["How do I reach the practice?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/jarna-kothari.jpg",
+  imageLabel: "Jarna Kothari, Practice Administrator",
+  imageAlt: "Jarna Kothari, Practice Administrator at California Hearing Center",
+},
+  "/about-us/jennifer-ratner/": {
+  kicker: "Meet the Team",
+  headline: "Jennifer Ratner, AuD",
+  intro: [
+    "Dr. Jennifer Ratner was awarded her doctorate in audiology from Vanderbilt University School of Medicine. She worked as a research assistant in the Dan Maddox Hearing Aid Research Laboratory at Vanderbilt University and completed her externship at the Veterans Affairs Medical Center in Nashville, TN.",
+    "Dr. Ratner went on to work at a private practice in Manhattan prior to joining our staff. As a music lover and former musician, she enjoys meeting the unique needs of musicians with hearing loss."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Ratner earned her B.A. in Communication Sciences and Disorders, Magna Cum Laude, from Florida State University in 2008, and her Au.D. in Audiology from Vanderbilt University School of Medicine in 2012. She is board certified by the American Academy of Audiology and holds the Tinnitus Management (CH-TM) certificate. She is licensed in New York State and as a New York State Hearing Aid Dispenser, and received the American Academy of Audiology 2013-2014 Scholar Award. In 2017, she was awarded the Rising Stars Top 40 Under 40 award from the Business Council of Westchester."],
+    ["Focus & approach", "She has a strong background in diagnostic testing, fitting and verification of hearing aids, counseling and orientation, and auditory rehabilitation. Dr. Ratner is a member of the American Academy of Audiology, accredited by the American Speech-Language-Hearing Association, and a fellow of the Tinnitus Practitioners Association."]
+  ],
+  bullets: [
+    "Diagnostic testing and hearing aid fitting and verification",
+    "Counseling, orientation, and auditory rehabilitation",
+    "Tinnitus Management (CH-TM) certificate holder",
+    "Special focus on musicians with hearing loss",
+    "Member, American Academy of Audiology"
+  ],
+  takeaways: [
+    "Doctorate in audiology from Vanderbilt University School of Medicine, with an externship at the VA Medical Center in Nashville.",
+    "Board certified by the American Academy of Audiology and licensed in New York State."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Ratner?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/jennifer-ratner.jpg",
+  imageLabel: "Jennifer Ratner, AuD",
+  imageAlt: "Dr. Jennifer Ratner, audiologist at California Hearing Center",
+},
+  "/about-us/kira-savin/": {
+  kicker: "Meet the Team",
+  headline: "Kira Savin, AuD",
+  intro: [
+    "Dr. Kira Savin believes that \"there is nothing more rewarding than helping a patient achieve better hearing.\" She feels that everyone's hearing needs are unique, like a fingerprint, and it is her goal to find a customized solution for each patient she sees.",
+    "Dr. Savin specializes in providing personalized hearing solutions using the latest and most discreet technology available, including the [Lyric invisible extended-wear hearing device](/products/hearing-aids-by-brand/lyric/). Her areas of expertise include hearing rehabilitation, auditory counseling, tinnitus management and retraining therapy, and dispensing of hearing devices and other assistive listening technologies."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Savin is licensed in Audiology and Hearing Aid Dispensing in both California and New York State. She earned her B.A. in Communication Sciences and Disorders from Pace University in 2005 and her Au.D. from Salus University, George S. Osborne College of Audiology, in 2013. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology, and she holds the Tinnitus Management (CH-TM) certificate. She completed her residency at SUNY Downstate Medical Center in Brooklyn, N.Y. In 2018, she received the Business Council of Westchester's Top 40 under 40 award."],
+    ["Focus & approach", "After practicing in New York City, Dr. Savin continued her career in Westchester County, where she co-purchased Audiology Associates of Westchester and remains a co-owner of that practice and its satellite offices. She is thrilled to now call the Bay Area her home."]
+  ],
+  bullets: [
+    "Personalized hearing solutions with discreet technology",
+    "Lyric invisible extended-wear device expertise",
+    "Hearing rehabilitation and auditory counseling",
+    "Tinnitus management and retraining therapy",
+    "Co-owner of Audiology Associates of Westchester"
+  ],
+  takeaways: [
+    "Licensed in Audiology and Hearing Aid Dispensing in both California and New York State.",
+    "Co-owner of Audiology Associates of Westchester, with expertise in the Lyric invisible hearing device."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/kira-savin.jpg",
+  imageLabel: "Kira Savin, AuD",
+  imageAlt: "Dr. Kira Savin, audiologist at California Hearing Center",
+},
+  "/about-us/lais-ama/": {
+  kicker: "Meet the Team",
+  headline: "Lais Ama, B.S., Hearing Instrument Specialist",
+  intro: [
+    "Lais Ama, hearing specialist, brings to the practice 17 years of experience in providing hearing care from her native country of Brazil. There she worked with the Pontificia Universidade Catholica in Sao Paolo, providing clinical services and presenting research papers on vestibular rehabilitation and the effects of ototoxic drugs on the auditory system.",
+    "She also completed an internship at the University of Bordeaux, France, where she was involved with clinical audiology services, hearing aids, and vestibular rehabilitation."
+  ],
+  sections: [
+    ["Credentials & training", "Lais holds a Bachelor of Science degree in Audiology and Speech Pathology from the Pontificia Universidade Catolica de Sao Paulo and has taken courses in physiotherapy from the Universidade de Sao Paulo – Faculdade de Medicina. She is licensed in California as a hearing aid dispenser."],
+    ["Focus & approach", "After moving to the U.S., Lais worked for many years in Palo Alto at a large medical clinic providing hearing services to children and adults. She currently lives in Palo Alto."]
+  ],
+  bullets: [
+    "17 years of experience in hearing care",
+    "Licensed in California as a hearing aid dispenser",
+    "Background in vestibular rehabilitation",
+    "Experience serving both children and adults"
+  ],
+  takeaways: [
+    "Hearing Instrument Specialist with 17 years of experience, originally from Brazil.",
+    "Holds a B.S. in Audiology and Speech Pathology and is licensed in California as a hearing aid dispenser."
+  ],
+  faqs: [
+    ["How do I schedule with Lais?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/lais-ama.jpg",
+  imageLabel: "Lais Ama, Hearing Instrument Specialist",
+  imageAlt: "Lais Ama, Hearing Instrument Specialist at California Hearing Center",
+},
+  "/about-us/sierra-melendez/": {
+  kicker: "Meet the Team",
+  headline: "Sierra Melendez, Doctorate of Audiology Extern",
+  intro: [
+    "Sierra earned her Bachelor of Science in Communication Sciences and Disorders from California State University, Sacramento. She is currently in her final year of graduate school at the University of the Pacific, where she is pursuing her Doctorate of Audiology (Au.D.) and is expected to graduate in July 2026.",
+    "Sierra has a strong interest in adult diagnostic testing, tinnitus management, and the personalized selection and fitting of hearing devices. Having a hearing loss herself, she brings a unique and empathetic perspective to her work, striving to connect with patients on both a professional and personal level."
+  ],
+  sections: [
+    ["Education & training", "Sierra completed AA degrees in Psychology and in Interdisciplinary Studies: Social and Behavioral Sciences at Sacramento City College, followed by her B.S. in Communication Sciences and Disorders at California State University, Sacramento. She is now completing her Doctorate of Audiology as an extern, expected to graduate in July 2026."],
+    ["Focus & approach", "She is passionate about helping others improve their communication and enhance their overall quality of life. Outside of audiology, Sierra loves the outdoors, from kayaking to hiking scenic trails, and enjoys exploring new cities, traveling, photography, painting, and working with ceramics."]
+  ],
+  bullets: [
+    "Adult diagnostic testing",
+    "Tinnitus management",
+    "Personalized selection and fitting of hearing devices",
+    "Brings personal, empathetic perspective as someone with hearing loss"
+  ],
+  takeaways: [
+    "Doctorate of Audiology extern at the University of the Pacific, expected to graduate July 2026.",
+    "Brings an empathetic, first-hand perspective as someone with hearing loss herself."
+  ],
+  faqs: [
+    ["How do I schedule an appointment?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/sierra-melendez.png",
+  imageLabel: "Sierra Melendez, Doctorate of Audiology Extern",
+  imageAlt: "Sierra Melendez, Doctorate of Audiology extern at California Hearing Center",
+},
   "/atria-park-of-san-mateo/": {
   kicker: "Hearing Care for Seniors",
   headline: "Hearing Care for Atria Park of San Mateo Residents & Families",
