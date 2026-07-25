@@ -151,7 +151,7 @@ const hearingAidColumns: ProductMenuLink[][] = [
     ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
   ],
   [
-    ["Oticon Zeal", "The world's first invisible hearing aid with complete connectivity.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
+    ["Oticon Zeal", "Discreet Oticon hearing technology, fit and verified for your hearing.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
     ["Phonak Infinio", "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.", "/products/hearing-aids-by-brand/phonak/phonak-infinio/", "/assets/phonak-infinio.webp"],
     ["ReSound Vivia", "Pioneering award-winning hearing solutions and connectivity advancements since 1943.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
   ],
@@ -1233,6 +1233,7 @@ function InnerPage({ page }: { page: SitePage }) {
   const pageTitle = areaHeadingLabel(page.path) ?? page.h1 ?? titleFromPath(page.path);
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
+  const isCore = !!corePages[page.path];
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
   const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page)].filter(Boolean);
   const areaLinks = kind === "area" ? relatedAreaLinks(page) : [];
@@ -1273,7 +1274,7 @@ function InnerPage({ page }: { page: SitePage }) {
               {content.datePublished ? <> · Published {fmtDate(content.datePublished)}</> : null}
               {content.dateModified && content.dateModified !== content.datePublished ? <> · Updated {fmtDate(content.dateModified)}</> : null}
             </p>
-          ) : (
+          ) : isCore ? null : (
             <h2>{pageTitle}</h2>
           )}
           {kind === "area" && (

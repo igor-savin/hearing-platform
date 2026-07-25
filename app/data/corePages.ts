@@ -45,7 +45,7 @@ export const corePages: Record<string, PageContent> = {
   sections: [
     ["Why hearing loss deserves attention in assisted living", "Research from institutions such as Johns Hopkins has found that untreated hearing loss is associated with a higher risk of social isolation, falls, and cognitive decline in older adults. It is an association, not proof of cause, but it is a strong reason to treat hearing loss rather than let a resident quietly withdraw from conversation and activity."],
     ["Hearing aids suited to older adults", "For residents with limited dexterity or vision, we lean toward rechargeable hearing aids with no tiny batteries to change, larger or simpler controls, and automatic programs that adjust on their own. The goal is a device someone will actually wear and a caregiver can help manage without frustration."],
-    ["Helping families and caregivers communicate", "Hearing loss affects the whole circle of care. We coach families and Atria staff on simple habits — facing the person, reducing background noise, speaking clearly rather than loudly — that make visits and daily care far easier for everyone."],
+    ["Helping families and caregivers communicate", "Hearing loss affects the whole circle of care. We coach families and caregivers on simple habits — facing the person, reducing background noise, speaking clearly rather than loudly — that make visits and daily care far easier for everyone."],
     ["Why a nearby independent audiologist matters", "Hearing aids are not a one-time purchase; they need cleaning, reprogramming, and fine-tuning as hearing changes. Being a short drive from Atria Park means residents and families can get those adjustments without a long trip, and see the same clinician who knows their history."]
   ],
   bulletLinks: [
@@ -66,7 +66,7 @@ export const corePages: Record<string, PageContent> = {
     ["Can hearing aids help someone with memory issues?", "They can. Better hearing reduces confusion and helps a person stay engaged, which supports memory-care goals. We choose simple, automatic devices and involve family or caregivers so the aids are used consistently."],
     ["Do you help set up hearing aids for someone who can't manage tiny controls?", "Yes. We favor rechargeable devices with easy controls, program them to adjust automatically, and show a family member or caregiver how to clean and manage them day to day."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/atria-park-of-san-mateo.svg",
   imageLabel: "Hearing care for Atria Park of San Mateo residents"
 },
   "/hearing-aid-referral-program/": {
@@ -95,7 +95,7 @@ export const corePages: Record<string, PageContent> = {
     ["Who should I refer?", "Anyone showing signs of hearing difficulty: turning up the volume, asking for repetition, struggling in noisy rooms, or withdrawing from conversation. A first hearing evaluation is a low-pressure way for them to find out where they stand."],
     ["What does a referred friend need to do?", "They can simply contact us and mention your name, or you can let us know you would like to refer them. Call 650-342-9449 and we will make it easy for both of you."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/hearing-aid-referral-program.svg",
   imageLabel: "Help someone you love hear better",
 },
   "/hyperacusis/": {
@@ -131,7 +131,7 @@ export const corePages: Record<string, PageContent> = {
     ["Can hyperacusis be treated?", "Many people improve. Gradual sound desensitization at comfortable levels, often combined with counseling and treatment of any related tinnitus or hearing loss, can rebuild tolerance over time. Results vary and depend on the underlying cause."],
     ["Should I wear earplugs all the time to protect my ears?", "Generally no. Constant ear protection in ordinary environments can make hyperacusis worse by increasing sensitivity. Reserve protection for genuinely loud settings, and let a professional guide a gradual return to normal sound."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/hyperacusis.svg",
   imageLabel: "Understanding and managing sound sensitivity"
 },
   "/hyperacusis/coping/": {
@@ -167,7 +167,7 @@ export const corePages: Record<string, PageContent> = {
     ["Will these strategies cure my hyperacusis?", "Coping strategies can meaningfully improve comfort and support recovery, but they are not a guaranteed cure and work best within a professional plan. Outcomes depend on the cause and severity, so an evaluation helps set the right approach and pace."],
     ["How do I know if I'm pushing too hard or not enough?", "Sound exposure should feel challenging but not painful, and it should not leave lasting distress afterward. Because that balance is individual, working with an audiologist helps you calibrate the pace and adjust as your tolerance improves."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/hyperacusis__coping.svg",
   imageLabel: "Practical, gradual coping strategies"
 },
   "/hyperacusis/tinnitus/": {
@@ -203,7 +203,7 @@ export const corePages: Record<string, PageContent> = {
     ["Does treating hyperacusis help my tinnitus too?", "It can. Because both respond to carefully graded sound therapy and to reducing the stress-and-silence cycle, an approach aimed at rebuilding sound tolerance frequently eases tinnitus as well, though results vary by individual."],
     ["Will avoiding sound protect me from both?", "Usually the opposite. Persistent silence tends to make tinnitus more noticeable and the auditory system more sensitive, worsening both. A balanced, gradual return to comfortable sound, guided by a professional, is generally healthier."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/hyperacusis__tinnitus.svg",
   imageLabel: "Where sound sensitivity and tinnitus meet"
 },
   "/hyperacusis/when-to-seek-help/": {
@@ -239,7 +239,7 @@ export const corePages: Record<string, PageContent> = {
     ["When is sound sensitivity a medical emergency?", "Treat it urgently if it starts suddenly, affects only one ear, or comes with sudden hearing loss, ear pain or drainage, dizziness, facial weakness, or severe headache. These signs call for prompt medical evaluation rather than a routine appointment."],
     ["What happens at a sound-sensitivity evaluation?", "Expect a hearing test, a detailed history of your symptoms and triggers, and measures of your sound tolerance, plus medical referral if red flags appear. We then discuss a gradual, individualized plan. Call 650-342-9449 to arrange a visit."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/hyperacusis__when-to-seek-help.svg",
   imageLabel: "Knowing when to ask for help"
 },
   "/products/": {
@@ -275,7 +275,7 @@ export const corePages: Record<string, PageContent> = {
     ["Does the brand really matter?", "Brand matters less than most people expect. The major manufacturers all make capable devices, and differences in sound processing are real but subtle. Fitting quality, follow-up, and the match to your hearing loss usually matter more."],
     ["Can I compare several brands before deciding?", "Yes. Because we are independent, we can discuss and, where appropriate, trial options across manufacturers so your choice is based on how a device performs for you rather than on what a single company sells."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/products.svg",
   imageLabel: "Independent hearing technology guidance"
 },
   "/products/eargear/": {
@@ -339,7 +339,7 @@ export const corePages: Record<string, PageContent> = {
   ],
   takeaways: [
     "Every major manufacturer makes capable devices; differences are real but usually subtle.",
-    "No single brand is best for everyone, which is why we fit across the field.",
+    "The best brand for you depends on your hearing, ears, and lifestyle — confirmed by fitting and real-ear verification.",
     "The match to your hearing loss plus expert fitting outweigh the brand name."
   ],
   faqs: [
@@ -347,7 +347,7 @@ export const corePages: Record<string, PageContent> = {
     ["Why does California Hearing Center carry so many brands?", "Independence lets us match technology to the patient instead of the patient to whatever one manufacturer sells. It also means we can compare options and choose what genuinely fits your needs."],
     ["Will a more expensive brand mean I hear better?", "Not necessarily. Price often reflects features and technology level rather than a guarantee of better hearing for you. A well-fit device suited to your loss frequently outperforms a pricier one that is not."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/products__hearing-aids-by-brand.svg",
   imageLabel: "Independent across every major brand"
 },
   "/products/hearing-aids-by-brand/captel/": {
@@ -383,7 +383,7 @@ export const corePages: Record<string, PageContent> = {
     ["Do captioned phones cost money?", "Captioned telephones are frequently provided at no cost to people with hearing loss who qualify, usually through a certification process that confirms eligibility. Because programs and requirements change, it is best to ask about the current process."],
     ["Should I get a captioned phone or hearing aids?", "They solve different problems and many people use both. Hearing aids support everyday listening, while a captioned phone targets phone calls. A hearing evaluation helps us recommend the right combination for you."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/products__hearing-aids-by-brand__captel.svg",
   imageLabel: "CapTel captioned telephone"
 },
   "/products/hearing-aids-by-brand/caption-call/": {
@@ -419,7 +419,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is there a cost for a captioned phone?", "Captioned telephones are often provided at no cost to people with hearing loss who qualify, typically through a certification process that confirms the need. Because programs change over time, it is best to ask about the current requirements."],
     ["Can I use CaptionCall with my hearing aids?", "Many people use captioned phones and hearing aids together, since they address different needs. A hearing evaluation helps us recommend the right combination of technology for your situation."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/products__hearing-aids-by-brand__caption-call.svg",
   imageLabel: "CaptionCall captioned telephone"
 },
   "/products/hearing-aids-by-brand/lyric/": {
@@ -484,7 +484,7 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "Oticon is known for open, natural sound built around its BrainHearing philosophy.",
     "It often suits people who value spatial awareness over aggressive noise suppression.",
-    "No brand is best for everyone; results depend on fitting and verification at California Hearing Center."
+    "There is no universally best brand; the right match is proven at the fitting, not on a spec sheet."
   ],
   faqs: [
     ["What makes Oticon different from other brands?", "Oticon emphasizes an open, natural soundscape based on its BrainHearing philosophy, aiming to give the brain a fuller picture of the environment rather than isolating a single speaker. Some listeners find this more comfortable and orienting."],
@@ -592,7 +592,7 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "Phonak is known for a broad lineup, strong connectivity, the Roger system, and Lyric extended-wear devices.",
     "It often suits busy, connected lifestyles and those seeking invisible, continuous-wear options.",
-    "No brand is best for everyone; the right fit is confirmed through testing and verification with us."
+    "Which brand wins for you comes down to your test results and daily listening, plus precise, verified programming."
   ],
   faqs: [
     ["What is Phonak best known for?", "Phonak is widely recognized for connectivity, a broad range of styles from mild to profound loss, the Roger remote-microphone system for noisy environments, and Lyric, an extended-wear device worn deep in the canal."],
@@ -700,7 +700,7 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "ReSound is known for connectivity, especially smooth iPhone streaming, and natural sound.",
     "It often suits Apple users and anyone who wants strong smartphone integration.",
-    "No brand is best for everyone; fitting and verification with us determine real-world results."
+    "No manufacturer suits everyone; results come from the fitting and verification, not the logo."
   ],
   faqs: [
     ["What is ReSound known for?", "ReSound is recognized for connectivity, including its early leadership in direct-to-iPhone streaming, along with a natural sound approach and capable smartphone app control across a full range of styles."],
@@ -772,14 +772,14 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "Rexton is a value-oriented brand built on proven technology shared with Signia's group.",
     "It often suits budget-conscious patients who want dependable, straightforward devices.",
-    "No brand is best for everyone; the right match is confirmed through fitting and verification with us."
+    "Brand matters less than fit: we verify every device against your prescription with real-ear measurement."
   ],
   faqs: [
     ["What is Rexton known for?", "Rexton is known as a value-oriented brand offering dependable, proven hearing aid technology at a more accessible price. It shares engineering heritage with Signia, so its devices draw on established, reliable platforms."],
     ["Are value hearing aids like Rexton worth it?", "For many patients, yes. Rexton delivers solid, reliable performance without paying for the newest premium features. Whether it is the right choice depends on your hearing loss and listening needs, which we assess together."],
     ["Will a Rexton hearing aid last?", "Rexton devices are generally regarded as durable and dependable. As with any hearing aid, proper fitting, routine cleaning, and periodic service help them perform well over their lifespan."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/products__hearing-aids-by-brand__rexton.svg",
   imageLabel: "Rexton dependable value technology"
 },
   "/products/hearing-aids-by-brand/signia/": {
@@ -808,7 +808,7 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "Signia is known for own-voice processing, modern styling, and strong connectivity.",
     "It often suits people bothered by how their own voice sounds through hearing aids.",
-    "No brand is best for everyone; the right match is confirmed through fitting and verification with us."
+    "The right brand is the one that measures and sounds best for your ears after professional fitting."
   ],
   faqs: [
     ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for own-voice processing that keeps the wearer's own voice sounding natural, along with sleek styling, connectivity, and rechargeable options."],
@@ -880,7 +880,7 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "Starkey is known for AI sound processing and integrated health and wellness features.",
     "It often suits people who want fall detection, activity tracking, or custom in-the-ear styles.",
-    "No brand is best for everyone; results depend on fitting and verification with us."
+    "Any of these brands can perform beautifully when correctly selected and verified for your hearing."
   ],
   faqs: [
     ["What is Starkey known for?", "Starkey, a major American manufacturer, is recognized for AI-driven sound processing and integrated health features, including activity tracking and fall-detection alerts on some models, along with strong custom in-the-ear expertise."],
@@ -952,14 +952,14 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "Unitron is a value-focused, patient-friendly brand sharing Phonak's engineering platform.",
     "It often suits first-time users who value flexible trials and proven technology at an accessible price.",
-    "No brand is best for everyone; results depend on fitting and verification with us."
+    "Your best brand is decided at the fitting — by measurement and your own listening, not by marketing."
   ],
   faqs: [
     ["What is Unitron known for?", "Unitron is a Canadian brand, part of the Sonova group alongside Phonak, known for approachable, value-conscious technology and a patient-friendly experience with flexible trial and upgrade options."],
     ["Is Unitron related to Phonak?", "Yes. Both are part of the Sonova group and share technology platforms, so Unitron devices draw on mature, proven engineering, typically at a more accessible price point."],
     ["Can I try Unitron hearing aids before committing?", "Unitron has emphasized flexible trials that let patients experience real-world hearing before deciding on a technology level. We can explain the trial and follow-up options available during your consultation."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/products__hearing-aids-by-brand__unitron.svg",
   imageLabel: "Unitron value-focused technology"
 },
   "/products/hearing-aids-by-brand/widex/": {
@@ -988,7 +988,7 @@ export const corePages: Record<string, PageContent> = {
   takeaways: [
     "Widex is known for natural, high-fidelity sound and its PureSound approach.",
     "It often suits musicians and people who prioritize realistic sound quality.",
-    "No brand is best for everyone; verification and fitting with us shape the final result."
+    "We fit across the field because the ideal brand varies person to person, confirmed by verification."
   ],
   faqs: [
     ["What is Widex known for?", "Widex is recognized for natural, high-fidelity sound reproduction. Its PureSound approach aims to minimize processing delay for an especially realistic listening experience, which appeals to people who care about sound quality."],
@@ -1067,7 +1067,7 @@ export const corePages: Record<string, PageContent> = {
     ["Are invisible hearing aids as good as larger ones?", "Invisible and in-canal styles are excellent for discretion and suit many mild-to-moderate losses, but their small size limits battery life and some features. We help weigh cosmetics against performance for your specific hearing."],
     ["Do I need premium technology to hear well?", "Not always. Premium levels shine in noisy, demanding environments. If your days are mostly quiet, a mid-level device may serve you just as well, and we will tell you honestly where the extra investment pays off."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/products__hearing-aids.svg",
   imageLabel: "Hearing aid styles and technology"
 },
   "/resources/hearingup-approved-provider/": {
@@ -1096,7 +1096,7 @@ export const corePages: Record<string, PageContent> = {
     ["What is real-ear verification and why does it matter?", "Real-ear measurement uses a small probe microphone in your ear to measure the sound a hearing aid actually delivers to your eardrum, so the device can be adjusted to match your prescription. It is a well-established step for improving fitting accuracy."],
     ["Who is Dr. Cliff, and is HearingUp a brand of hearing aid?", "Dr. Cliff Olson, AuD, is an audiologist behind the HearingUp network, which is a directory and standard for best-practice hearing care, not a brand of hearing aid. The designation is about how care is delivered, not which devices are used."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/resources__hearingup-approved-provider.svg",
   imageLabel: "Committed to hearing care best practices",
 },
   "/resources/insurance/": {
@@ -1125,7 +1125,7 @@ export const corePages: Record<string, PageContent> = {
     ["Does Medicare pay for hearing aids?", "Original Medicare generally does not cover routine hearing aids, though it may cover a physician-ordered diagnostic exam in certain situations. Some Medicare Advantage plans add a hearing benefit. Confirming your particular plan's current terms is the reliable path."],
     ["How do I find out what my plan covers?", "The best step is to verify benefits directly with your carrier, which we are happy to help with. Call 650-342-9449 and our team can walk you through gathering the information your plan needs."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/resources__insurance.svg",
   imageLabel: "Understanding your hearing benefits",
 },
   "/san-mateo-county-senior-living/": {
@@ -1160,7 +1160,7 @@ export const corePages: Record<string, PageContent> = {
     ["How do I choose care for an aging parent in the county?", "Start with a thorough hearing test so decisions rest on facts, then look for an independent audiologist close enough for easy follow-up. We are glad to talk through options and involve the whole family."],
     ["What makes an independent practice better for seniors?", "Independence means our recommendations are not tied to one manufacturer, and local ownership means continuity of care — the same clinician over the years, which matters a great deal for older adults."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/san-mateo-county-senior-living.svg",
   imageLabel: "Hearing care for seniors across San Mateo County"
 },
   "/senior-living/": {
@@ -1195,7 +1195,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is it worth treating hearing loss in someone quite elderly?", "In most cases, very much so. Better hearing keeps an older adult connected to family and community, which supports mood, engagement, and daily wellbeing at any age."],
     ["Can family members be involved in the appointments?", "We encourage it. Family and caregivers help with decisions, remember instructions, and support daily use of the devices, so a resident gets the full benefit of their hearing aids."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/senior-living.svg",
   imageLabel: "Hearing care for seniors across the Peninsula"
 },
   "/services/earwax-removal/": {
@@ -1282,7 +1282,7 @@ export const corePages: Record<string, PageContent> = {
     ["Does a higher NRR always mean better protection?", "Not necessarily. Over-attenuating can leave you unable to hear speech or safety cues, so you take the plugs out. The goal is enough reduction for your environment while keeping what you need to hear, which is why fit is chosen per activity."],
     ["How long do custom earplugs last?", "With proper care, custom plugs typically last for years. Fit can change over time or with weight and anatomy changes, so we can check the seal and remake them if needed."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/services__hearing-protection.svg",
   imageLabel: "Custom-molded hearing protection",
 },
   "/services/hearing-protection/hunting/": {
@@ -1311,7 +1311,7 @@ export const corePages: Record<string, PageContent> = {
     ["Do I really need protection if I only shoot occasionally?", "Yes. Impulse noise from firearms can cause permanent damage from even a single unprotected shot. Occasional shooters still benefit from consistent protection every time they are near gunfire."],
     ["Is custom in-ear protection better than muffs for hunting?", "Both work. Custom in-ear protectors are lower profile, comfortable under hats, and do not interfere with shouldering a firearm, while muffs are easy to share and remove. Many shooters choose based on comfort, fit, and how they hunt or compete."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/services__hearing-protection__hunting.svg",
   imageLabel: "Electronic protection for shooting and hunting",
 },
   "/services/hearing-protection/law-enforcement/": {
@@ -1340,7 +1340,7 @@ export const corePages: Record<string, PageContent> = {
     ["Why not just use standard earplugs at the range?", "Standard plugs can block the sounds you need to hear, including range commands and a partner's voice, so they get taken out, leaving ears unprotected. Electronic protection lets you stay aware and protected at the same time."],
     ["Will custom protection work with a radio earpiece and other gear?", "Custom in-ear protectors are low profile and molded to your ear, so they generally integrate with duty gear and stay comfortable through long shifts. We fit the solution around how you actually work."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/services__hearing-protection__law-enforcement.svg",
   imageLabel: "Tactical hearing protection with awareness",
 },
   "/services/hearing-protection/musicians/": {
@@ -1369,7 +1369,7 @@ export const corePages: Record<string, PageContent> = {
     ["What is the difference between musician's earplugs and in-ear monitors?", "Earplugs reduce the sound reaching your ears to protect you from loud environments. In-ear monitors are earpieces that play a personal audio mix while sealing out stage noise, letting you monitor at a lower, safer volume."],
     ["How much protection do I need as a musician?", "It depends on your instrument, venue, and exposure time. Many players start with a moderate filter and adjust. We help you choose a level that protects you without cutting you off from the ensemble."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/services__hearing-protection__musicians.svg",
   imageLabel: "Custom musician's earplugs and monitors",
 },
   "/services/tinnitus-therapy/": {
@@ -1406,7 +1406,7 @@ export const corePages: Record<string, PageContent> = {
     ["How long does tinnitus treatment take?", "It varies. Some patients feel calmer within a few visits simply from a clear explanation and a plan, while approaches built around habituation, such as TRT or Lenire, are designed to work gradually over months of consistent use."],
     ["How do I get started?", "Call 650-342-9449 to schedule a tinnitus evaluation at our San Mateo or San Carlos office. We begin with your history and a hearing test, then build a plan around what we find."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/services__tinnitus-therapy.svg",
   imageLabel: "Structured, evidence-based tinnitus care"
 },
   "/sunrise-of-san-mateo/": {
@@ -1440,7 +1440,7 @@ export const corePages: Record<string, PageContent> = {
     ["Will new hearing aids really change day-to-day life in the community?", "For many residents, yes. Hearing conversations at meals and activities again often brings people back into community life, which supports mood, engagement, and connection with staff and neighbors."],
     ["What if a resident tried hearing aids before and gave up on them?", "That is common, and usually fixable. Poor fit or programming is often the culprit. We re-evaluate, adjust, and choose easier-to-use devices so they are worn and genuinely helpful this time."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/sunrise-of-san-mateo.svg",
   imageLabel: "Hearing care for Sunrise of San Mateo residents"
 },
   "/the-peninsula-regent/": {
@@ -1474,7 +1474,7 @@ export const corePages: Record<string, PageContent> = {
     ["Can I get hearing aids that no one will notice?", "Often yes. Receiver-in-canal and custom in-canal styles are very discreet. We will be candid about any tradeoff between size and power so your choice looks good and works well."],
     ["How do I get started as a Peninsula Regent resident?", "Just reach out to arrange an evaluation at our nearby San Mateo office or in San Carlos. We will review your hearing, your lifestyle, and your goals before recommending anything."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/the-peninsula-regent.svg",
   imageLabel: "Hearing care for The Peninsula Regent residents"
 },
   "/the-stratford/": {
@@ -1508,7 +1508,7 @@ export const corePages: Record<string, PageContent> = {
     ["Are hearing aids hard for an older person to manage?", "They do not have to be. We choose rechargeable models with simple, automatic operation and show the resident and a family member exactly how to use and clean them, so there is little to remember."],
     ["Do you see residents who already have hearing aids that aren't working well?", "Yes, often. Many hearing aids underperform simply because of fit or programming. We are glad to reassess devices from elsewhere and get them dialed in properly."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/the-stratford.svg",
   imageLabel: "Hearing care for The Stratford residents"
 },
   "/tinnitus/": {
@@ -1544,7 +1544,7 @@ export const corePages: Record<string, PageContent> = {
     ["Do I need a hearing test if my main concern is tinnitus?", "Yes, in nearly every case. Tinnitus is closely tied to hearing, and a current [hearing evaluation](/hearing-testing/) helps identify contributing factors and shapes which therapies are likely to help you."],
     ["When should I treat tinnitus as urgent?", "Seek prompt medical care for tinnitus that begins suddenly, affects only one ear, pulses in time with your heartbeat, or comes with hearing loss, dizziness, or neurological symptoms."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus.svg",
   imageLabel: "Structured tinnitus care on the Peninsula"
 },
   "/tinnitus/anxiety-management/": {
@@ -1581,7 +1581,7 @@ export const corePages: Record<string, PageContent> = {
     ["Will my tinnitus go away if my anxiety improves?", "Reducing anxiety often makes tinnitus far less intrusive and easier to ignore, and some people find it fades into the background. Whether the underlying sound disappears depends on its cause, which is worth evaluating."],
     ["Should I see a therapist for tinnitus anxiety?", "If tinnitus is driving significant worry, panic, or low mood, a therapist trained in CBT can be very helpful. We are glad to coordinate care alongside mental health support."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__anxiety-management.svg",
   imageLabel: "Calming the tinnitus-anxiety cycle"
 },
   "/tinnitus/apps/": {
@@ -1617,7 +1617,7 @@ export const corePages: Record<string, PageContent> = {
     ["Are free tinnitus apps good enough?", "Often yes, at least to start. Many people do well with a free soundscape or relaxation app. Paid programs may add structured CBT content or extra features, but it is worth trying free options before committing to a subscription."],
     ["Should I use an app instead of seeing an audiologist?", "An app is a helpful complement, not a replacement. A proper evaluation can identify reversible causes and red flags an app cannot, so it is best to pair self-help tools with professional guidance."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__apps.svg",
   imageLabel: "Sound therapy in your pocket"
 },
   "/tinnitus/can-tinnitus-go-away/": {
@@ -1630,7 +1630,7 @@ export const corePages: Record<string, PageContent> = {
   ],
   sections: [
     ["Temporary tinnitus that often resolves", "Ringing after a loud concert, a bout of tinnitus from a cold or ear infection, or the buzzing tied to earwax buildup frequently fades once the cause clears. Tinnitus linked to a fixable issue like [earwax](/tinnitus/earwax/) may stop entirely after treatment."],
-    ["Acute versus chronic", "Tinnitus present for less than a few months is considered acute, and a fair number of these cases settle on their own. Once tinnitus persists beyond about six months it is generally considered chronic and less likely to disappear completely, though it can still become far less intrusive."],
+    ["Acute versus chronic", "Tinnitus present for less than about six months is often considered acute, and a fair number of these cases settle on their own. Once tinnitus persists beyond roughly six months it is generally considered chronic and less likely to disappear completely, though it can still become far less intrusive."],
     ["Habituation, the more common path to relief", "Even when the sound stays, the brain has a remarkable ability to reclassify it as unimportant background, a process called [habituation](/tinnitus/habituation/). Many people reach a point where tinnitus is only noticeable when they think to check for it."],
     ["What can improve your odds", "Protecting your hearing, treating any underlying hearing loss, managing stress and sleep, and starting sound therapy early all support the brain's natural adjustment. Doing nothing and hoping is usually less effective than an active plan."],
     ["When to seek prompt evaluation", "Tinnitus that starts suddenly, appears in only one ear, pulses like a heartbeat, or comes with dizziness or sudden hearing loss should be checked promptly. Sudden hearing loss in particular can be time-sensitive and is worth urgent attention."]
@@ -1653,7 +1653,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is it bad if my tinnitus has not gone away?", "Not necessarily. Persistent tinnitus is very common and usually not dangerous on its own. What matters most is whether it is disrupting your sleep, focus, or mood, all of which can be improved with the right approach."],
     ["Can treatment make tinnitus disappear completely?", "Sometimes, when there is a reversible cause such as earwax or a medication effect. For chronic tinnitus, treatment more reliably reduces how much it intrudes rather than erasing the sound, and for most people that is enough to feel like themselves again."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__can-tinnitus-go-away.svg",
   imageLabel: "Realistic expectations for tinnitus relief"
 },
   "/tinnitus/diet-lifestyle/": {
@@ -1689,7 +1689,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is there a special tinnitus diet?", "There is no proven diet that cures or reliably reduces tinnitus. A balanced, heart-healthy eating pattern supports the circulation and sleep that indirectly affect tinnitus, but beware of programs promising a dietary cure."],
     ["Can dehydration affect tinnitus?", "Staying well hydrated is sensible general health advice, and some people feel tinnitus is more noticeable when tired or dehydrated. Water alone is not a treatment, but good hydration fits naturally into an overall healthy routine."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__diet-lifestyle.svg",
   imageLabel: "Everyday habits and tinnitus"
 },
   "/tinnitus/earwax/": {
@@ -1725,7 +1725,7 @@ export const corePages: Record<string, PageContent> = {
     ["Should I try to remove the wax myself?", "It is best not to dig at it with cotton swabs or ear candles, which often push wax deeper and can injure the ear. If home softening drops do not help, have it removed professionally so the canal can be checked at the same time."],
     ["Will my tinnitus go away after wax removal?", "It may, if wax was the cause. When tinnitus continues after the ear is confirmed clear, other factors such as hearing loss are likely involved, and a hearing evaluation helps pinpoint them."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__earwax.svg",
   imageLabel: "A treatable cause of tinnitus"
 },
   "/tinnitus/east-bay-tinnitus/": {
@@ -1752,7 +1752,7 @@ export const corePages: Record<string, PageContent> = {
     ["Book an appointment", "/contact/"]
   ],
   takeaways: [
-    "Our offices are on the Peninsula in San Mateo and San Carlos, not in the East Bay.",
+    "Both offices sit mid-Peninsula, roughly 30 to 45 minutes from much of the East Bay depending on which bridge you take and the time of day.",
     "East Bay patients travel across the bridges for specialized tinnitus evaluation and Lenire.",
     "Emergencies and sudden or one-sided tinnitus should be handled locally and promptly."
   ],
@@ -1761,7 +1761,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is the drive worth it for tinnitus care?", "That is your call. Many East Bay patients feel a dedicated tinnitus focus, real-ear-verified hearing aids, and access to Lenire justify the trip, especially since a tinnitus program involves relatively few in-person visits over several months."],
     ["What if my tinnitus started suddenly?", "Do not wait for a cross-bridge appointment. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, should be evaluated promptly by the nearest appropriate provider, then followed up for longer-term management."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__east-bay-tinnitus.svg",
   imageLabel: "Peninsula tinnitus care for East Bay patients"
 },
   "/tinnitus/getting-louder/": {
@@ -1797,7 +1797,7 @@ export const corePages: Record<string, PageContent> = {
     ["Does louder tinnitus mean my hearing is getting worse?", "Not necessarily. Perceived loudness and hearing status do not move in lockstep. Still, if you notice a lasting increase or new hearing difficulty, a hearing test is a sensible way to check."],
     ["When should I worry about worsening tinnitus?", "Seek evaluation if tinnitus steadily worsens, becomes one-sided, pulses with your heartbeat, or comes with new hearing loss or dizziness. These patterns are worth checking rather than waiting out."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__getting-louder.svg",
   imageLabel: "Understanding tinnitus fluctuations"
 },
   "/tinnitus/habituation/": {
@@ -1833,7 +1833,7 @@ export const corePages: Record<string, PageContent> = {
     ["Does habituation mean the tinnitus is gone?", "Not exactly. The sound is usually still present if you listen for it, but it no longer captures your attention or triggers distress. For most people that shift is what real relief feels like."],
     ["Can I habituate on my own, or do I need help?", "Some people habituate naturally over time, but structured guidance, sound therapy, and counseling can make the process faster and more reliable, especially when tinnitus is causing significant distress."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__habituation.svg",
   imageLabel: "How the brain adapts to tinnitus"
 },
   "/tinnitus/hyperacusis/": {
@@ -1869,7 +1869,7 @@ export const corePages: Record<string, PageContent> = {
     ["Should I start wearing earplugs more to cope?", "Usually not in ordinary settings. Constant protection can make both tinnitus and sound sensitivity worse over time. Reserve protection for genuinely loud environments, and ask your audiologist about a gradual, balanced approach instead."],
     ["Can my current tinnitus treatment be adjusted for this?", "Often, yes. Sound enrichment and hearing aids used for tinnitus can frequently be tuned to accommodate new sensitivity, helping both at once. Let your provider know about the change so the plan can be adapted appropriately."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__hyperacusis.svg",
   imageLabel: "Sound sensitivity in tinnitus patients"
 },
   "/tinnitus/medications/": {
@@ -1905,7 +1905,7 @@ export const corePages: Record<string, PageContent> = {
     ["Should I stop my medication if it might be causing tinnitus?", "No, not on your own. Many of these medications treat important conditions, and stopping abruptly can be harmful. Raise your concern with the prescribing clinician, who can decide whether any change is safe and appropriate."],
     ["Will tinnitus from medication go away?", "Sometimes. Tinnitus tied to certain drugs, such as high-dose aspirin, often eases when the dose is reduced under medical supervision. Other cases are more variable, and your prescriber is the right person to advise you."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__medications.svg",
   imageLabel: "Medications and ear health"
 },
   "/tinnitus/menieres/": {
@@ -1941,7 +1941,7 @@ export const corePages: Record<string, PageContent> = {
     ["Can Ménière's disease be cured?", "There is no cure, but many people manage it well. Physician-directed strategies, sometimes including dietary changes, medications, and other measures, can reduce the frequency and severity of attacks, and audiology support can help with hearing and tinnitus."],
     ["Should I see a doctor if I think I have Ménière's?", "Yes. Because other conditions can mimic it and because prompt care matters for symptoms like sudden hearing loss or severe vertigo, an ENT evaluation is important. A hearing test is a valuable part of that assessment."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__menieres.svg",
   imageLabel: "Inner-ear disease and tinnitus"
 },
   "/tinnitus/one-ear/": {
@@ -1977,7 +1977,7 @@ export const corePages: Record<string, PageContent> = {
     ["What could cause tinnitus in just one ear?", "Possibilities range from earwax, an ear infection, or asymmetric noise damage and hearing loss, to less common conditions such as Ménière's disease or, rarely, a benign nerve growth. A hearing test comparing both ears is the usual starting point."],
     ["When should I see someone about one-sided tinnitus?", "Fairly soon, and promptly if it started suddenly, comes with hearing loss on that side, pulses like a heartbeat, or is joined by dizziness or facial weakness. A hearing evaluation helps determine the next step."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__one-ear.svg",
   imageLabel: "When tinnitus affects one side"
 },
   "/tinnitus/peninsula-tinnitus/": {
@@ -2013,7 +2013,7 @@ export const corePages: Record<string, PageContent> = {
     ["Why does being local help with tinnitus?", "Tinnitus care works best with consistent follow-up, whether adjusting sound enrichment or fine-tuning hearing aids. Living nearby removes the travel friction that often causes people to abandon a plan too early."],
     ["Can I be seen quickly if my tinnitus is new?", "Yes, and you should be. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, warrants prompt attention. Contact us and we will help you understand the appropriate urgent step."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__peninsula-tinnitus.svg",
   imageLabel: "Local tinnitus care across the Peninsula"
 },
   "/tinnitus/san-francisco-tinnitus/": {
@@ -2049,7 +2049,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is it worth leaving the city for tinnitus care?", "For many people, yes. A short drive south brings a dedicated tinnitus focus, real-ear-verified hearing aids, and access to Lenire for candidates, and a tinnitus program involves only a handful of in-person visits over time."],
     ["What if my tinnitus started suddenly?", "Do not drive down for an emergency. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, should be evaluated promptly by the nearest appropriate provider in the city, then followed up for ongoing management."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__san-francisco-tinnitus.svg",
   imageLabel: "A short drive south for specialized tinnitus care"
 },
   "/tinnitus/san-jose-tinnitus/": {
@@ -2085,7 +2085,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is the drive from the South Bay worthwhile?", "It depends on your priorities. A tinnitus program uses relatively few in-person visits, so some South Bay patients accept the commute for a dedicated focus, verified hearing aids, and access to Lenire; others prefer a closer provider."],
     ["What should I do if my tinnitus is sudden?", "Do not drive up for an emergency. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, should be evaluated promptly by the nearest appropriate South Bay provider, then followed up for ongoing care."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__san-jose-tinnitus.svg",
   imageLabel: "South Bay patients weigh distance against specialized care"
 },
   "/tinnitus/stress/": {
@@ -2121,7 +2121,7 @@ export const corePages: Record<string, PageContent> = {
     ["Why does my tinnitus flare when I am stressed?", "Stress puts the nervous system on high alert, which increases sensitivity to signals like tinnitus and keeps the brain focused on it. As arousal settles, the tinnitus often recedes again."],
     ["What is the fastest way to calm a stress-driven flare?", "In the moment, slow paced breathing and a few minutes of relaxation can lower arousal and ease the spike. Over the longer term, regular exercise, better sleep, and stress-reduction habits make flares less frequent and less intense."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__stress.svg",
   imageLabel: "The stress-tinnitus connection"
 },
   "/tinnitus/success-stories/": {
@@ -2157,7 +2157,7 @@ export const corePages: Record<string, PageContent> = {
     ["How will I know the plan is working?", "Progress often appears as sleeping better, noticing the sound less often, and reacting to it more calmly, rather than the tinnitus disappearing outright. These small shifts usually add up over weeks and months."],
     ["Is improvement guaranteed?", "No responsible provider can guarantee results, because outcomes depend on your hearing, tinnitus profile, and consistency with the plan. Many motivated patients do achieve meaningful, lasting relief."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__success-stories.svg",
   imageLabel: "Realistic patterns of tinnitus relief"
 },
   "/tinnitus/support-groups/": {
@@ -2193,7 +2193,7 @@ export const corePages: Record<string, PageContent> = {
     ["Can a support group replace treatment?", "No. Support groups are a helpful complement, but they do not evaluate your hearing or diagnose causes. Pairing peer support with a professional [tinnitus assessment](/tinnitus/) gives you both understanding and a plan."],
     ["How do I avoid tinnitus scams online?", "Be wary of anyone promising a guaranteed cure or selling miracle supplements. Stick with established organizations like the American Tinnitus Association and ASHA, and bring questions to a qualified provider."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__support-groups.svg",
   imageLabel: "Peer support alongside clinical care"
 },
   "/tinnitus/tinnitus-retraining-therapy/": {
@@ -2229,7 +2229,7 @@ export const corePages: Record<string, PageContent> = {
     ["Do I need special equipment for TRT?", "Not always. Some people use ambient sound or sound generators, while those with hearing loss often benefit from hearing aids that amplify and can add gentle background sound. We match the tools to your hearing and tinnitus."],
     ["Is TRT the same as just masking the sound?", "No. Masking tries to cover tinnitus with louder sound, while TRT deliberately uses low-level sound below the tinnitus so the brain can learn to tune it out. The counseling component is what distinguishes true retraining from simple masking."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__tinnitus-retraining-therapy.svg",
   imageLabel: "Sound therapy and directive counseling"
 },
   "/tinnitus/tmj/": {
@@ -2265,7 +2265,7 @@ export const corePages: Record<string, PageContent> = {
     ["How do I know if my tinnitus is from my jaw?", "A telling sign is that the tinnitus changes when you clench, chew, or move your jaw, or that you also have jaw pain, teeth grinding, or facial and neck tension. This modulation points toward a somatosensory, jaw-related cause."],
     ["Who treats TMJ-related tinnitus?", "The underlying jaw problem is usually managed by a dentist experienced in TMJ disorders, sometimes with physical therapy or a bite appliance. Audiology complements that care by documenting your hearing and offering sound therapy for the tinnitus itself."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__tmj.svg",
   imageLabel: "When the jaw drives tinnitus"
 },
   "/tinnitus/types-of-tinnitus-sounds/": {
@@ -2301,7 +2301,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is pulsatile tinnitus serious?", "It deserves attention. Because a heartbeat-synced sound can relate to blood flow near the ear, pulsatile tinnitus should be evaluated by a physician rather than treated as routine tinnitus, even though many cases turn out to be manageable."],
     ["Why does my tinnitus sound change over time?", "The perceived pitch and character of tinnitus can shift with your hearing, stress, fatigue, and attention. A change in sound is common, but a distinctly new pattern, especially pulsatile or one-sided, is worth mentioning to a clinician."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__types-of-tinnitus-sounds.svg",
   imageLabel: "Ringing, roaring, buzzing, and more"
 },
   "/tinnitus/what-to-expect/": {
@@ -2337,7 +2337,7 @@ export const corePages: Record<string, PageContent> = {
     ["Will I get a hearing test at a tinnitus appointment?", "Usually yes. Because tinnitus and hearing loss are closely linked, a hearing evaluation is typically part of the visit. It helps identify contributors and rules out simple causes like earwax."],
     ["How do I schedule a tinnitus evaluation?", "Call 650-342-9449 to book at our San Mateo or San Carlos office. Let us know it is a tinnitus concern so we can plan enough time for a thorough history, testing, and a discussion of your options."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__what-to-expect.svg",
   imageLabel: "Your first tinnitus visit, step by step"
 },
   "/tinnitus/why-choose-us/": {
@@ -2373,7 +2373,7 @@ export const corePages: Record<string, PageContent> = {
     ["Is Lenire right for me?", "It depends. Lenire is FDA-cleared for tinnitus and helps some patients, but suitability rests on your hearing history, tinnitus profile, and a clinical evaluation. We will tell you candidly whether it is a reasonable option for you."],
     ["Do I need a referral to be seen for tinnitus?", "In most cases you can contact us directly to arrange a tinnitus evaluation. If we identify signs that call for medical assessment, we will guide you on the right next step. Call 650-342-9449 to get started."]
   ],
-  image: "/assets/hero.webp",
+  image: "/assets/core/tinnitus__why-choose-us.svg",
   imageLabel: "Dedicated, honest tinnitus care"
 },
 };
