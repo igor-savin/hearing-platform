@@ -1,6 +1,7 @@
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
+import { blogPhotos } from "../data/blogPhotos";
 import { corePages } from "../data/corePages";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
@@ -918,7 +919,7 @@ export function blogMetaTitle(path: string, fallback: string): string {
 }
 
 export function blogOgImage(path: string): string | null {
-  return blogPosts[path]?.image ?? null;
+  return blogPhotos[path] ?? blogPosts[path]?.image ?? null;
 }
 
 // Meta title/description for enriched core (service/product/tinnitus/facility) pages.
@@ -941,7 +942,11 @@ export function coreMetaDescription(path: string): string | null {
 }
 
 function buildPageContent(page: SitePage): PageContent {
-  if (blogPosts[page.path]) return blogPosts[page.path];
+  if (blogPosts[page.path]) {
+    const post = blogPosts[page.path];
+    // Prefer the real featured photo harvested from calhearing.com when available.
+    return blogPhotos[page.path] ? { ...post, image: blogPhotos[page.path] } : post;
+  }
   if (corePages[page.path]) return corePages[page.path];
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
@@ -1653,7 +1658,7 @@ function BlogIndex() {
               {groups[category].map(({ path, post }) => (
                 <a className="blog-card" href={path} key={path}>
                   <div className="blog-card-img">
-                    <img src={post.image} alt={post.imageLabel || ""} loading="lazy" decoding="async" />
+                    <img src={blogPhotos[path] ?? post.image} alt={post.imageLabel || ""} loading="lazy" decoding="async" />
                   </div>
                   <div className="blog-card-body">
                     <p className="blog-card-kicker">{post.kicker}</p>
