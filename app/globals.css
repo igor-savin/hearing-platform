@@ -605,6 +605,59 @@ p {
   box-shadow: 0 0 0 5px rgba(224, 174, 60, .18);
 }
 
+/* ---- Reviews page ---- */
+.reviews-hero {
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  color: #fff;
+  padding: 56px 0 48px;
+  text-align: center;
+}
+.reviews-hero .section-kicker { color: var(--aqua); }
+.reviews-hero h1 { color: #fff; margin: 6px 0 14px; font-size: clamp(2rem, 4vw, 2.8rem); }
+.reviews-hero-sub { max-width: 720px; margin: 0 auto; color: #eaf5f5; font-size: 1.05rem; line-height: 1.6; }
+.reviews-hero-actions {
+  display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; align-items: center; margin-top: 26px;
+}
+.reviews-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 9px 16px; border-radius: 999px; color: #fff;
+}
+.reviews-wall {
+  columns: 3 320px;
+  column-gap: 22px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.review-card {
+  break-inside: avoid;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(33, 66, 75, 0.06);
+  padding: 20px 20px 22px;
+  margin-bottom: 22px;
+}
+.review-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.review-avatar {
+  flex: 0 0 auto; width: 42px; height: 42px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 800; font-size: 1.1rem;
+}
+.review-meta { flex: 1 1 auto; min-width: 0; line-height: 1.3; }
+.review-meta strong { display: block; color: var(--ink); font-size: 1rem; }
+.review-meta span { color: var(--muted); font-size: 0.85rem; }
+.review-stars {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--gold); font-size: 1.05rem; letter-spacing: 1px; margin-bottom: 10px;
+}
+.review-verified { flex: 0 0 auto; }
+.review-text { color: var(--ink); font-size: 0.97rem; line-height: 1.6; margin: 0; }
+.reviews-cta {
+  text-align: center; padding: 10px 0 60px;
+}
+.reviews-cta p { color: var(--muted); margin-bottom: 18px; }
+
 .breadcrumbs {
   background: var(--paper);
   border-bottom: 1px solid var(--line);

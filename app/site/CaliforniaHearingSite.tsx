@@ -3,6 +3,7 @@ import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
 import { corePages } from "../data/corePages";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
+import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
@@ -1539,6 +1540,77 @@ function blogExcerpt(post: PageContent): string {
   return plain(post.intro?.[0] || "").replace(/\s+/g, " ").trim().slice(0, 150);
 }
 
+const REVIEW_AVATAR_COLORS = ["#155f6b", "#e0ae3c", "#f05a28", "#2f7fd6", "#5a8f3c", "#8a4fb0", "#c0407a", "#0f8a7e"];
+
+function GoogleG() {
+  return (
+    <svg viewBox="0 0 48 48" width="20" height="20" aria-label="Google" role="img">
+      <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z" />
+      <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z" />
+      <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z" />
+      <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z" />
+    </svg>
+  );
+}
+
+function ReviewStars() {
+  return (
+    <span className="review-stars" aria-label="5 out of 5 stars">
+      {"★★★★★"}
+      <svg className="review-verified" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
+        <path fill="#2f7fd6" d="M12 1l2.4 2.1 3.2-.3 1 3 3 1-1.4 2.9 1.4 2.9-3 1-1 3-3.2-.3L12 22l-2.4-2.1-3.2.3-1-3-3-1L3.8 12 2.4 9.1l3-1 1-3 3.2.3z" />
+        <path fill="#fff" d="M10.6 14.6l-2.3-2.3 1.1-1.1 1.2 1.2 3.3-3.3 1.1 1.1z" />
+      </svg>
+    </span>
+  );
+}
+
+function ReviewsPage() {
+  return (
+    <>
+      <section className="reviews-hero">
+        <div className="container">
+          <p className="section-kicker">Patient Reviews</p>
+          <h1>What our patients say</h1>
+          <p className="reviews-hero-sub">
+            Real reviews from our patients on Google. Across the San Mateo and San Carlos offices, people come to
+            California Hearing Center for careful testing, honest guidance, and hearing care that keeps up with their lives.
+          </p>
+          <div className="reviews-hero-actions">
+            <span className="reviews-badge"><GoogleG /> <strong>Google reviews</strong></span>
+            <a className="button primary" href={googleReviewsUrl} target="_blank" rel="noopener noreferrer">Read &amp; write reviews on Google</a>
+            <a className="button ghost" href="/contact/">Book an appointment</a>
+          </div>
+        </div>
+      </section>
+      <section className="reviews-wall container">
+        {reviews.map((r, i) => {
+          const initial = r.name.replace(/[^A-Za-z]/g, "").charAt(0).toUpperCase() || "G";
+          const color = REVIEW_AVATAR_COLORS[i % REVIEW_AVATAR_COLORS.length];
+          return (
+            <article className="review-card" key={r.name + i}>
+              <div className="review-head">
+                <span className="review-avatar" style={{ background: color }}>{initial}</span>
+                <div className="review-meta">
+                  <strong>{r.name}</strong>
+                  <span>{r.when}</span>
+                </div>
+                <GoogleG />
+              </div>
+              <ReviewStars />
+              <p className="review-text">{r.text}</p>
+            </article>
+          );
+        })}
+      </section>
+      <section className="reviews-cta container">
+        <p>These are a selection of our reviews. See all of them — or share your own experience — on our Google listing.</p>
+        <a className="button primary" href={googleReviewsUrl} target="_blank" rel="noopener noreferrer">View all Google reviews</a>
+      </section>
+    </>
+  );
+}
+
 function BlogIndex() {
   const posts = Object.entries(blogPosts)
     .map(([path, post]) => ({ path, post, slug: path.replace(/\//g, "") }))
@@ -1681,7 +1753,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
         </details>
         <a className="schedule" href={scheduleUrl} target="_blank" rel="noopener noreferrer">Schedule Now</a>
       </header>
-      {page?.path === "/the-blog/" ? <BlogIndex /> : page ? <InnerPage page={page} /> : <HomePage />}
+      {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
       <section className="appointment">
         <div>
           <p className="section-kicker">Set up your free hearing consultation</p>

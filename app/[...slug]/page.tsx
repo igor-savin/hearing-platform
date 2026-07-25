@@ -46,6 +46,18 @@ export async function generateMetadata({ params }: PageProps) {
     };
   }
 
+  if (path === "/reviews/") {
+    const rTitle = "Patient Reviews | California Hearing Center";
+    const rDesc = "Read real Google reviews from California Hearing Center patients in San Mateo & San Carlos — careful testing, honest guidance, and hearing care people trust.";
+    return {
+      title: rTitle,
+      description: rDesc,
+      alternates: { canonical: path },
+      openGraph: { title: rTitle, description: rDesc, url: path, type: "website" },
+      twitter: { card: "summary_large_image", title: rTitle, description: rDesc },
+    };
+  }
+
   const desc = blogMetaDescription(path) ?? areaMetaDescription(path) ?? coreMetaDescription(path) ?? metaDescription(page);
   const title = areaMetaTitle(path) ?? coreMetaTitle(path) ?? blogMetaTitle(path, page.title);
   const ogImg = blogOgImage(path);
