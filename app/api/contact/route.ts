@@ -151,8 +151,7 @@ async function sendContactEmail(payload: FullPayload) {
   if (!response.ok) {
     const details = await response.text();
     console.error("Contact email send failed", response.status, details);
-    // TEMP DEBUG: surface the Resend status + detail so we can diagnose from curl.
-    throw new Error(`Resend ${response.status}: ${details.slice(0, 300)}`);
+    throw new Error("Contact email send failed.");
   }
 }
 
@@ -214,9 +213,7 @@ export async function POST(request: Request) {
       {
         ok: false,
         message:
-          "The online form couldn’t send just now. Please call the practice at 650-342-9449 to schedule.",
-        // TEMP DEBUG: remove after diagnosing delivery.
-        debug: error instanceof Error ? error.message : String(error)
+          "The online form couldn’t send just now. Please call the practice at 650-342-9449 to schedule."
       },
       { status: 500 }
     );
