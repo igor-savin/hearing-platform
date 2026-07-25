@@ -1,0 +1,29 @@
+  "emeryville": {
+    name: "Emeryville",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 40 minutes across the bay",
+    distanceTier: "far",
+    geo: { lat: 37.8313, lng: -122.2852 },
+    lede:
+      "Emeryville is a compact city that reinvented itself from industry into a hub of biotech, studios, and shopping between Oakland and the Bay Bridge. It is dense, modern, and workplace-driven. To be clear, our offices are across the water on the Peninsula, so Emeryville patients typically come to us for specialized hearing work rather than the closest routine appointment.",
+    hook: [
+      "Open offices, labs, and hearing in demanding rooms",
+      "Emeryville runs on workplaces — biotech labs, tech offices, and the busy retail around Bay Street and the Public Market. Open-plan offices and noisy, reverberant rooms are some of the toughest places to follow speech, and that is where mild hearing loss becomes a daily frustration. We test speech-in-noise and verify fittings so hearing keeps up with meetings and lab benches; for that focused approach, or for [tinnitus care](/tinnitus/), some Emeryville professionals make the drive, while simpler needs may be met closer to home.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A small city built around work and retail",
+      "Emeryville is easy to picture — the shops and cinema at Bay Street, the Public Market food stalls, the studios and offices along Hollis Street, and the mudflat sculptures out by the marina. It is a place people come to work as much as to live, and workplace listening is where hearing problems tend to surface first. Those who seek us out from Emeryville usually want careful, workplace-realistic testing rather than a quick screening.",
+    ],
+    whyHere:
+      "Emeryville patients choose California Hearing Center for real-ear-verified fittings tuned to demanding listening environments, plus a genuine specialty in tinnitus and Lenire. They come for expertise and honest technology guidance, and for the steadiness of working with the same audiologist across every visit.",
+    landmarks:
+      "From Bay Street, the Public Market, Hollis Street, or the Emeryville marina, our San Mateo office is roughly 40 minutes across the bay.",
+    faqs: [
+      ["Why travel from Emeryville instead of staying local?", "Routine care is fine to keep close to home. Patients cross the bay to us for specialized tinnitus treatment, Lenire, and precise, workplace-focused fittings where our concentration pays off."],
+      ["I struggle to hear in open-plan meetings — can you help?", "Yes. We measure how well you understand speech in background noise and program hearing aids for those exact settings, verifying the result with real-ear measurement rather than assuming the default fits."],
+      ["How long is the trip from Emeryville?", "Roughly 40 minutes to San Mateo, traffic permitting. Call 650-342-9449 and we will arrange visits to reduce how often you make the drive."],
+    ],
+  },

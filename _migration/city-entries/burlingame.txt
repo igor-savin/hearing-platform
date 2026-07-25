@@ -1,0 +1,29 @@
+  "burlingame": {
+    name: "Burlingame",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 10 minutes from our San Mateo office, straight up El Camino or the 101",
+    distanceTier: "near",
+    geo: { lat: 37.5841, lng: -122.3661 },
+    lede:
+      "Burlingame sits just north of our San Mateo office, close enough that many patients are in and out on a lunch break. Known as the “City of Trees” for its eucalyptus-lined avenues, Burlingame runs right up to San Francisco International Airport — which is exactly why hearing matters here.",
+    hook: [
+      "Living under SFO's flight path and what it means for your hearing",
+      "Much of Burlingame sits beneath SFO's arrival and departure corridors, and residents near the Bayfront or Broadway know the sound of jets overhead. Everyday overflight noise is usually more nuisance than hazard — but occupational exposure is different. If you work at or near the airport, in the Bayfront hotels, or around ground equipment, years on the job can quietly add up to noise-induced hearing loss. It is gradual and easy to miss until conversations start slipping, so a baseline hearing test — and custom protection where it makes sense — is simple prevention.",
+    ],
+    motif: "airport",
+    localScene: [
+      "From Burlingame Avenue to the Bayfront",
+      "Burlingame packs a lot into a small city: the walkable Burlingame Avenue and Broadway shopping districts, the leafy Easton Addition, Washington Park, and the Bayfront hotel row that backs right up to SFO. That range matters for hearing care — a retiree strolling Burlingame Ave has very different listening needs than someone working the airport hotels or commuting the Bayshore. We fit and verify hearing aids for those specific environments, and we keep Mills-Peninsula-area patients close to home for follow-up.",
+    ],
+    whyHere:
+      "Burlingame patients come to us because we are the closest independent audiology practice for many of them, and because they want more than a big-box hearing aid transaction. We provide diagnostic testing, real-ear-verified fittings, tinnitus care, and repairs, with the same audiologist each visit.",
+    landmarks:
+      "We are an easy drive from Burlingame Avenue, Broadway, the Mills-Peninsula area, and the Bayfront hotels, all within roughly 10 minutes of the office.",
+    faqs: [
+      ["Can airport and traffic noise really affect my hearing?", "Occupational noise can. Long-term exposure to loud sound — including work around aircraft, or heavy freeway noise — can contribute to permanent, gradual hearing loss. A baseline hearing test establishes where you stand and helps track any change over time."],
+      ["Do you offer custom hearing protection for noisy environments?", "We do. Custom-molded hearing protection is popular with patients who work near the airport, ride motorcycles, or attend loud events. It protects hearing while keeping sound natural."],
+      ["How far is your office from Burlingame?", "Our San Mateo office is about 10 minutes from most of Burlingame, just south on El Camino Real or the 101. Call 650-342-9449 to schedule."],
+    ],
+  },

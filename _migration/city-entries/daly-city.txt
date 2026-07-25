@@ -1,0 +1,29 @@
+  "daly-city": {
+    name: "Daly City",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 18-20 minutes north of our San Mateo office",
+    distanceTier: "mid",
+    geo: { lat: 37.6879, lng: -122.4702 },
+    lede:
+      "Daly City is the gateway to the Peninsula — a big, diverse city spilling across the hills where the Pacific meets the bay. It is famous for one thing above all: fog. The marine layer pours over Daly City more often than almost anywhere in the Bay Area, and that persistent damp has a real, specific effect on hearing devices. Our San Mateo office is about twenty minutes south.",
+    hook: [
+      "Fog, damp air, and your hearing aids",
+      "Daly City's fog belt means cool, humid air much of the year, and moisture is the single most common cause of hearing aid trouble. Residents notice it as muffled sound, intermittent cut-outs, or corroded contacts. It is very manageable once you know how: moisture-resistant devices, a nightly drying routine, and regular professional cleaning keep hearing aids reliable in a damp climate. When something does go wrong, we handle repairs so you are not left without your hearing.",
+    ],
+    motif: "coast",
+    localScene: [
+      "From Westlake to the ocean's edge",
+      "Daly City stretches from the Westlake and Serramonte neighborhoods across the ridge to Skyline and the dramatic bluffs above Mussel Rock, with its large, close-knit Filipino community giving the city much of its character along Mission Street and John Daly Boulevard. What ties these neighborhoods together is the fog and wind off the ocean. For that damp climate we lean into moisture-resistant technology, drying habits, and durable fittings that hold up, a straightforward drive south on the 280 or the 101.",
+    ],
+    whyHere:
+      "Daly City patients choose us for climate-smart fittings, thorough testing, and dependable repairs — care that accounts for the fog belt rather than ignoring it. They also come for specialized tinnitus treatment and the continuity of one audiologist who knows their history.",
+    landmarks:
+      "We are about eighteen to twenty minutes from Daly City's Westlake, Serramonte, and Skyline neighborhoods, heading south on the 280 or 101 to our San Mateo office.",
+    faqs: [
+      ["Why do my hearing aids act up in Daly City's damp weather?", "Persistent fog and humidity let moisture build up inside the devices, causing muffled or intermittent sound. Moisture-resistant models, nightly drying, and regular cleaning prevent most problems, and we help you set up a routine that works."],
+      ["Do you repair hearing aids damaged by moisture?", "Yes. Moisture-related issues are among the most common repairs we handle, and many can be resolved the same day with professional cleaning and drying."],
+      ["How far is your office from Daly City?", "Our San Mateo office is about eighteen to twenty minutes south. Call 650-342-9449 to schedule a visit."],
+    ],
+  },

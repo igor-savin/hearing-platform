@@ -1,0 +1,29 @@
+  "concord": {
+    name: "Concord",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly an hour northeast",
+    distanceTier: "far",
+    geo: { lat: 37.9780, lng: -122.0311 },
+    motif: "downtown",
+    lede:
+      "Concord is Contra Costa County's largest city, anchored by the plane trees and summer concerts of Todos Santos Plaza. It sits well east of the Peninsula, though — our offices are in San Mateo and San Carlos, roughly an hour northeast by car — so we're upfront that we're not the closest choice for routine visits.",
+    hook: [
+      "From Todos Santos Plaza to a quiet listening booth",
+      "Concord packs in a lot of different listening environments — the summer crowds and live music at Todos Santos Plaza, big shows at the Concord Pavilion, busy restaurants along Willow Pass Road, and quiet rooms at home. Hearing well across all of them takes more than an off-the-shelf device. [Speech-in-noise testing](/hearing-testing/) and careful real-ear verification tune your hearing aids for the noisy places, not just the silent exam room — the kind of fitting patients are willing to travel for.",
+    ],
+    localScene: [
+      "A big city with many soundscapes",
+      "Concord spreads from the fountains and farmers market at Todos Santos Plaza out to the shops of The Veranda, the amphitheater lawn at the Concord Pavilion, and the trails around the old Naval Weapons Station. Each is a different hearing challenge — a loud concert, a crowded patio, a chat across the kitchen table. We fit and verify hearing aids so they hold up in the demanding spaces, and we build in the follow-up that keeps them working over the years.",
+    ],
+    whyHere:
+      "Concord patients generally have plenty of routine options nearby, so the ones who come to us are looking for something specific: meticulous diagnostics, honest technology recommendations, and focused [tinnitus care](/tinnitus/) including Lenire. We aim to make each longer visit thorough enough to be worth the drive.",
+    landmarks:
+      "We're roughly an hour northeast of Todos Santos Plaza, The Veranda, and the Concord Pavilion, reached by way of the East Bay bridges to our San Mateo office.",
+    faqs: [
+      ["Is it worth driving to the Peninsula from Concord?", "For a routine hearing test, a Concord-area provider may serve you just fine. Patients tend to make the trip to us for complex tinnitus care, Lenire, or a difficult fitting that hasn't gone well elsewhere — and we make those visits count."],
+      ["Can hearing aids keep up with places like the Concord Pavilion or a noisy restaurant?", "Yes, when they're fit and verified properly. We use speech-in-noise testing and real-ear measurement to program hearing aids for real, loud settings rather than only the quiet booth."],
+      ["Do you offer specialized tinnitus treatment?", "We do. Our practice is tinnitus-focused, including Lenire, and sees patients from across the East Bay. Call 650-342-9449 to ask whether it's a fit for you."],
+    ],
+  },

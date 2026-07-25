@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/": {
+  kicker: "Hearing Aid Brands",
+  headline: "How Hearing Aid Brand Choice Really Works",
+  intro: [
+    "Patients often arrive convinced that one manufacturer is simply the best. The honest truth is more nuanced: the major hearing aid companies all make capable, reliable devices, and each has a genuine philosophy and a few areas where it tends to excel. The differences are real but usually subtle, and none is best for every ear.",
+    "California Hearing Center is independent, so we fit across Oticon, Phonak, ReSound, Widex, Signia, Starkey, Rexton, and Unitron. That freedom lets us start from your hearing and lifestyle rather than from a company we are obligated to promote.",
+    "These brand pages describe each manufacturer's reputation and typical strengths so you can understand the landscape. What ultimately determines how well you hear is the match to your hearing loss plus careful [fitting and verification](/hearing-aid-fitting/)."
+  ],
+  sections: [
+    ["Why brand matters less than people think", "Sound-processing differences between top manufacturers exist, but they are refinements rather than night-and-day gaps. A well-fit mid-tier device from one brand often outperforms a poorly fit premium device from another."],
+    ["What each brand is known for", "Broadly: Phonak for connectivity and its Roger and Lyric lines, Oticon for open, natural BrainHearing sound, ReSound for Apple-friendly streaming, Widex for natural sound quality, Signia for own-voice processing, and Starkey for AI and health features. Rexton and Unitron offer strong value."],
+    ["Matching brand to person", "Someone who lives on video calls may lean toward strong connectivity; a music lover may prioritize natural sound; a person wanting truly invisible, extended-wear devices has specific options. We map these preferences onto real candidates."],
+    ["The role of professional fitting", "Whichever brand you choose, results come from programming to your prescription and confirming output with real-ear measurement. Our [fitting process](/hearing-aid-fitting/) treats the device as a starting point, not the finish line."],
+    ["Comparing before you commit", "Because we are not locked to one company, we can discuss and, where appropriate, trial options so your decision reflects how a device performs for you rather than a marketing claim."]
+  ],
+  bulletLinks: [
+    ["Oticon", "/products/hearing-aids-by-brand/oticon/"],
+    ["Phonak", "/products/hearing-aids-by-brand/phonak/"],
+    ["ReSound", "/products/hearing-aids-by-brand/resound/"],
+    ["Widex", "/products/hearing-aids-by-brand/widex/"],
+    ["Signia", "/products/hearing-aids-by-brand/signia/"],
+    ["Starkey", "/products/hearing-aids-by-brand/starkey/"]
+  ],
+  takeaways: [
+    "Every major manufacturer makes capable devices; differences are real but usually subtle.",
+    "The best brand for you depends on your hearing, ears, and lifestyle — confirmed by fitting and real-ear verification.",
+    "The match to your hearing loss plus expert fitting outweigh the brand name."
+  ],
+  faqs: [
+    ["Which hearing aid brand is the best?", "There is no single best brand. Each of the major manufacturers has strengths, and the right choice depends on your hearing loss, lifestyle, and preferences. We help you compare rather than steer you to one company."],
+    ["Why does California Hearing Center carry so many brands?", "Independence lets us match technology to the patient instead of the patient to whatever one manufacturer sells. It also means we can compare options and choose what genuinely fits your needs."],
+    ["Will a more expensive brand mean I hear better?", "Not necessarily. Price often reflects features and technology level rather than a guarantee of better hearing for you. A well-fit device suited to your loss frequently outperforms a pricier one that is not."]
+  ],
+  image: "/assets/core/products__hearing-aids-by-brand.svg",
+  imageLabel: "Independent across every major brand"
+},

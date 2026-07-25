@@ -1,0 +1,32 @@
+  "menlo-park": {
+    name: "Menlo Park",
+    county: "San Mateo County",
+    region: "peninsula-south",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 12 minutes from our San Carlos office up the 101 or El Camino",
+    distanceTier: "near",
+    geo: { lat: 37.453, lng: -122.1817 },
+    lede:
+      "Menlo Park spans a lot of worlds — the Santa Cruz Avenue downtown, the Sand Hill Road venture corridor, the neighborhoods near Stanford, and the large tech campuses toward the Bayfront. That mix means we see everyone here, from young professionals in loud open offices to longtime residents managing hearing change.",
+    hook: [
+      "Hearing well in demanding listening environments",
+      "Many Menlo Park patients spend their days in exactly the situations where hearing is hardest: back-to-back meetings, open-plan offices, video calls, and busy restaurants. Success in those settings is less about buying the most expensive device and more about precise programming, real-ear verification, and features matched to your real environments. We tune hearing aids to the rooms you actually spend time in.",
+    ],
+    motif: "estate",
+    localScene: [
+      "Downtown, the venture corridor, and everything between",
+      "Menlo Park stretches from the Santa Cruz Avenue downtown and the Allied Arts district to Sharon Heights, the Sand Hill Road venture corridor, and the large campuses out toward the Bayfront. It is a city of demanding listening environments — glass-walled conference rooms, open offices, and restaurants that fill up fast. We help Menlo Park patients hear in exactly those rooms by testing speech-in-noise and verifying each fitting against a real target, so the benefit shows up where it counts, not just in a quiet booth.",
+    ],
+    whyHere:
+      "Menlo Park patients come to us for careful diagnostics, honest technology guidance, and strong tinnitus care, all a short drive up to our San Carlos office. We focus on measurable results in the environments that matter to you, not just a passing score in a quiet booth.",
+    landmarks:
+      "We are an easy trip from downtown Menlo Park and Santa Cruz Avenue, the Sharon Heights and Allied Arts areas, and the Sand Hill Road corridor.",
+    faqs: [
+      ["I struggle to hear in meetings and restaurants — can you help?", "Yes. Difficulty in noise is one of the most common reasons patients come in. We test speech-in-noise, then select and precisely verify technology for those specific situations, which usually helps far more than volume alone."],
+      ["Which office serves Menlo Park?", "Our San Carlos office is closest, about 12 minutes from most of Menlo Park via the 101 or El Camino Real. Call 650-342-9449 to schedule."],
+    ],
+  },
+
+  // ---------------------------------------------------------------- FAR / REGIONAL
+  // The "premier practice, patients travel to us" positioning. Honest: we say plainly
+  // there is no office here, and frame the page around patients who choose the drive.

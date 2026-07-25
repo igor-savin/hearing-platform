@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/rexton/": {
+  kicker: "Hearing Aid Brands",
+  headline: "Rexton Hearing Aids: Dependable Value on the Peninsula",
+  intro: [
+    "Rexton is a value-oriented hearing aid brand that shares engineering roots with Signia and the broader WS Audiology group. That connection means Rexton devices benefit from established, proven technology while typically sitting at a more accessible price point, making them a practical choice for patients who want reliable performance without paying for the newest premium features.",
+    "Rexton is often chosen for durability and straightforward, dependable operation. California Hearing Center fits Rexton at our San Mateo and San Carlos offices as one of several options across the price spectrum.",
+    "Whether Rexton is the right fit depends on your hearing loss, lifestyle, and budget, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+  ],
+  sections: [
+    ["Value without cutting corners", "Rexton delivers solid, proven hearing aid technology at a generally more affordable price, which suits patients who want dependable help without premium-tier cost."],
+    ["Shared engineering heritage", "Rexton draws on technology from the same group behind Signia, so its devices benefit from established platforms and reliability rather than untested designs."],
+    ["Practical, durable design", "Rexton is often valued for rugged, straightforward devices, including options suited to active lifestyles and challenging conditions."],
+    ["Who Rexton may suit", "Budget-conscious patients, first-time hearing aid users, and those who want proven technology without paying for the latest premium extras often find Rexton a sensible match."],
+    ["Proven on your ears, not just the box", "A value device still deserves precise programming. We confirm output with real-ear measurement so your Rexton devices match your prescription."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Signia", "/products/hearing-aids-by-brand/signia/"],
+    ["Unitron", "/products/hearing-aids-by-brand/unitron/"]
+  ],
+  takeaways: [
+    "Rexton is a value-oriented brand built on proven technology shared with Signia's group.",
+    "It often suits budget-conscious patients who want dependable, straightforward devices.",
+    "Brand matters less than fit: we verify every device against your prescription with real-ear measurement."
+  ],
+  faqs: [
+    ["What is Rexton known for?", "Rexton is known as a value-oriented brand offering dependable, proven hearing aid technology at a more accessible price. It shares engineering heritage with Signia, so its devices draw on established, reliable platforms."],
+    ["Are value hearing aids like Rexton worth it?", "For many patients, yes. Rexton delivers solid, reliable performance without paying for the newest premium features. Whether it is the right choice depends on your hearing loss and listening needs, which we assess together."],
+    ["Will a Rexton hearing aid last?", "Rexton devices are generally regarded as durable and dependable. As with any hearing aid, proper fitting, routine cleaning, and periodic service help them perform well over their lifespan."]
+  ],
+  image: "/assets/core/products__hearing-aids-by-brand__rexton.svg",
+  imageLabel: "Rexton dependable value technology"
+},

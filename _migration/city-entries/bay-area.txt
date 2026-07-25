@@ -1,0 +1,29 @@
+  "bay-area": {
+    name: "the Bay Area",
+    county: "San Francisco Bay Area",
+    region: "sf",
+    nearestOffice: "San Mateo",
+    approxDrive: "central to the Peninsula, within reach of the whole Bay Area",
+    distanceTier: "far",
+    geo: { lat: 37.7, lng: -122.2 },
+    lede:
+      "The San Francisco Bay Area is nine counties and dozens of cities wrapped around the bay, and California Hearing Center draws patients from across all of it. Our two offices sit centrally on the Peninsula, in San Mateo and San Carlos — well placed for the whole region — and while most patients live nearby, some travel from as far as Napa for care they want done right.",
+    hook: [
+      "A premier practice patients travel to reach",
+      "Most of our patients come from the Peninsula and the cities just north and south of us. But a fair number make longer drives — from the East Bay, the North Bay, wine country, and Solano — because they're after something specific: complex [tinnitus](/tinnitus/) care, Lenire treatment, a fitting that's been difficult elsewhere, or a thorough second opinion. For routine care we always encourage patients to consider someone close to home; where distance is worth it is specialized expertise, and we structure longer visits to make every trip count.",
+    ],
+    motif: "civic",
+    localScene: [
+      "Serving patients from across the region",
+      "The Bay Area's hearing needs are as varied as its geography. Coastal and bayside communities from Half Moon Bay to the Sunset contend with marine humidity that's hard on hearing aids; office and tech hubs from San Francisco down through Silicon Valley bring demanding, noisy listening environments; and inland and wine-country areas send patients who've decided specialized care is worth a longer drive. Centrally located on the Peninsula, we see people from all of it — and we tailor each fitting to the environments a patient actually lives and works in.",
+    ],
+    whyHere:
+      "Across the Bay Area, patients choose us for meticulous diagnostics, honest technology recommendations, and specialized tinnitus expertise, with the continuity of seeing the same audiologist every visit. It's why some are willing to drive well past a dozen closer options to reach us.",
+    landmarks:
+      "Our San Mateo and San Carlos offices sit centrally on the Peninsula, within reach of San Francisco, Silicon Valley, the East Bay, and the North Bay — patients travel to us from across the region, some from as far as Napa.",
+    faqs: [
+      ["Do patients really travel from across the Bay Area to see you?", "Yes. While most come from the Peninsula, patients travel from San Francisco, the South Bay, the East Bay, and the North Bay — some from as far as Napa — mainly for specialized tinnitus care and complex cases."],
+      ["Should I travel to you or find someone closer?", "For routine hearing tests and standard hearing aids, a local provider is usually the practical choice. The drive to us tends to be worth it for specialized tinnitus treatment, Lenire, difficult fittings, or a careful second opinion."],
+      ["Where are your offices located?", "We have two Peninsula offices — San Mateo at 88 N. San Mateo Drive and San Carlos at 1008 Laurel Street, about eight minutes apart. Call 650-342-9449 to find the one that's most convenient."],
+    ],
+  },

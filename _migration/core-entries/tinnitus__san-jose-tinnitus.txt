@@ -1,0 +1,36 @@
+"/tinnitus/san-jose-tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Care for San Jose & the South Bay",
+  intro: [
+    "San Jose and South Bay patients often ask whether it makes sense to come north for tinnitus care, and we would rather be candid than coy. Our offices are up the Peninsula in San Mateo and San Carlos, roughly 30 to 45 minutes from much of the South Bay depending on where you start and on traffic, which around here can be significant.",
+    "For a dedicated tinnitus focus and options like Lenire, some South Bay residents decide the drive is worthwhile, particularly because a structured tinnitus program is built around a thorough first evaluation and a modest number of follow-ups rather than weekly visits.",
+    "This page is honest about distance so you can weigh it sensibly. If proximity is your priority, a closer provider may serve you well; if specialized tinnitus evaluation and advanced therapy matter more, we are happy to plan around the commute."
+  ],
+  sections: [
+    ["Being honest about the distance", "The South Bay is a real drive from the mid-Peninsula, commonly 30 to 45 minutes and longer at peak times. We would rather set that expectation clearly than have you discover it on the 101. Both offices sit in San Mateo and San Carlos."],
+    ["Why some South Bay patients still come", "People travel north for a sustained tinnitus focus, thorough evaluation, real-ear-verified hearing aids, and Lenire bimodal neuromodulation for suitable candidates. When these matter to you, the drive can be a reasonable trade for specialized care."],
+    ["Structuring care around a longer commute", "For South Bay patients we aim to make visits count, investing in a comprehensive first evaluation and spacing follow-ups thoughtfully. Much of a tinnitus plan is carried out at home, so in-person time can stay limited even with a longer trip."],
+    ["Prepare before you drive up", "Get oriented from home first. Our [tinnitus knowledge hub](/tinnitus/) and the [why-choose-us page](/tinnitus/why-choose-us/) explain our approach, so your appointment time goes toward your specific tinnitus rather than groundwork you could cover beforehand."],
+    ["Do not commute for an emergency", "Urgent symptoms belong close to home and soon. Sudden hearing loss, sudden or one-sided tinnitus, pulsatile tinnitus, or tinnitus with dizziness or neurological symptoms should be evaluated promptly by the nearest appropriate provider, then followed up for management."]
+  ],
+  bulletLinks: [
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["Why choose our tinnitus care", "/tinnitus/why-choose-us/"],
+    ["San Carlos office", "/contact/san-carlos/"],
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["Areas we serve", "/areas-we-serve/"],
+    ["Book an appointment", "/contact/"]
+  ],
+  takeaways: [
+    "Our offices are up the Peninsula, roughly 30 to 45 minutes from much of the South Bay.",
+    "South Bay patients travel for specialized tinnitus evaluation and Lenire when it matters to them.",
+    "Sudden or one-sided tinnitus should be handled promptly near home, not by commuting."
+  ],
+  faqs: [
+    ["How far is San Jose from your offices?", "Depending on your starting point and traffic, expect roughly 30 to 45 minutes or more to reach San Mateo or San Carlos on the Peninsula. We would rather be upfront about that than surprise you."],
+    ["Is the drive from the South Bay worthwhile?", "It depends on your priorities. A tinnitus program uses relatively few in-person visits, so some South Bay patients accept the commute for a dedicated focus, verified hearing aids, and access to Lenire; others prefer a closer provider."],
+    ["What should I do if my tinnitus is sudden?", "Do not drive up for an emergency. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, should be evaluated promptly by the nearest appropriate South Bay provider, then followed up for ongoing care."]
+  ],
+  image: "/assets/core/tinnitus__san-jose-tinnitus.svg",
+  imageLabel: "South Bay patients weigh distance against specialized care"
+},

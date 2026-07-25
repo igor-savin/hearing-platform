@@ -1,0 +1,29 @@
+"/services/earwax-removal/": {
+  kicker: "Audiology Services",
+  headline: "Professional Earwax Removal in San Mateo & San Carlos",
+  intro: [
+    "Earwax, or cerumen, is normal and healthy. It traps dust, protects delicate ear canal skin, and usually works its way out on its own. Trouble starts when wax builds up faster than it clears, hardens against the eardrum, or gets pushed deeper by a cotton swab. At that point it can muffle hearing, cause a plugged or full feeling, trigger or worsen tinnitus, and make hearing aids whistle or stop working.",
+    "At California Hearing Center, wax is removed under direct visualization by clinicians who examine the canal and eardrum first. That matters: a blockage that looks like simple wax can sometimes hide an ear infection, a perforation, or other issues that change how removal should be done, or whether it should be done at all.",
+    "Our San Mateo and San Carlos offices handle routine buildup and stubborn, impacted wax that at-home kits could not clear."
+  ],
+  sections: [
+    ["How professional removal works", "Depending on the wax and your ear health, we may use curettage (gentle lifting with a small instrument), irrigation (warm-water flushing), or microsuction (low-pressure vacuum). Microsuction and curettage let the clinician watch the canal the entire time, which is safer for narrow canals, prior surgery, or a history of perforation."],
+    ["Why cotton swabs backfire", "Swabs remove a little wax from the opening while packing the rest deeper against the eardrum. Over time that creates the exact impaction people are trying to prevent, and it risks scratching the canal or damaging the eardrum. The old advice holds: nothing smaller than your elbow in your ear."],
+    ["Why we advise against ear candling", "Ear candling is not supported by evidence and carries real risks, including burns, wax from the candle dripping into the canal, and eardrum injury. It does not create meaningful suction or pull wax out. We do not offer it and gently steer patients away from it."],
+    ["When wax is behind hearing loss or tinnitus", "A full canal can reduce hearing by blocking sound and can make ringing or a blocked sensation more noticeable. Many patients are relieved to learn a sudden muffling was simply wax. Because wax is a reversible cause, we often check for it as part of a [hearing evaluation](/hearing-testing/) before assuming the loss is permanent."],
+    ["Wax and hearing aids", "Wax is the leading cause of hearing aid malfunction. It clogs receivers and blocks the tiny sound ports and vents. Keeping the canal clear protects your devices and keeps them sounding right, which is why we combine wax care with [repairs and servicing](/services/hearing-aid-repair/) when needed."]
+  ],
+  bullets: ["Curettage removal", "Warm-water irrigation", "Gentle microsuction", "Ear canal exam first", "Impacted wax relief", "Hearing aid users welcome"],
+  takeaways: [
+    "Wax is normal; only buildup or impaction needs professional removal.",
+    "Cotton swabs and ear candling can make things worse and cause injury.",
+    "Because wax is a reversible cause of muffled hearing and fullness, it is worth checking before assuming permanent loss."
+  ],
+  faqs: [
+    ["Is professional earwax removal safe?", "When performed by a trained clinician who examines the ear first, removal is safe and comfortable for most people. Watching the canal directly during curettage or microsuction lowers the risk of injury compared with blind at-home tools."],
+    ["Can earwax really cause hearing loss?", "Yes. A canal fully blocked by wax can noticeably reduce hearing and create a plugged, full feeling. This type of loss is usually temporary and improves once the blockage is cleared."],
+    ["Should I use at-home wax removal kits?", "Softening drops help some people, but irrigation kits and swabs can push wax deeper or irritate the canal, especially with narrow canals, prior ear surgery, or a perforation. If home care is not clearing it, call 650-342-9449 to have it looked at."]
+  ],
+  image: "/assets/service-2.png",
+  imageLabel: "Safe, clinician-performed cerumen removal",
+},

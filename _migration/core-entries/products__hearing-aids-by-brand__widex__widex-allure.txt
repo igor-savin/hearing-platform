@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/widex/widex-allure/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Widex Allure Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Widex Allure is a current premium line from Widex, a manufacturer with a long-standing reputation for natural, clear sound. Patients who prioritize sound quality, especially for music and speech that sounds true to life, often ask about Widex specifically.",
+    "Every hearing aid involves tradeoffs between clarity, comfort, connectivity, and cost. Our job at California Hearing Center is to help you understand where a device like Allure fits and whether it aligns with what you value most.",
+    "We fit Widex Allure in our San Mateo and San Carlos offices, verify the fitting, and support it over time so the sound quality Widex is known for translates into your everyday listening."
+  ],
+  sections: [
+    ["Known for natural sound", "Widex has built its reputation on a natural, undistorted sound signature that many patients and musicians appreciate. Whether Allure is the right fit for you depends on your hearing loss and listening priorities."],
+    ["Who tends to prefer Widex", "People who care deeply about music, tone, and a natural listening experience often gravitate toward Widex. We confirm the match against your [hearing test](/hearing-testing/) and the environments you spend time in."],
+    ["Selecting the right level", "As with any brand, premium platforms offer the most support in noisy, demanding settings, while a mid-tier model may suit a quieter routine. We recommend based on your needs and budget, not just the flagship label."],
+    ["Verified fitting", "We program Allure to your prescription and confirm the output with real-ear measurement. This verification is essential to getting the clarity and comfort the technology is capable of."],
+    ["Connectivity and follow-up", "Modern Widex devices generally support streaming and app control. We set up pairing, review charging and cleaning, and fine-tune the sound over follow-up visits as your brain adapts."]
+  ],
+  bulletLinks: [
+    ["Book a hearing evaluation", "/hearing-testing/"],
+    ["Fitting and verification", "/hearing-aid-fitting/"],
+    ["Browse all brands", "/products/hearing-aids-by-brand/"],
+    ["Custom hearing protection for musicians", "/services/hearing-protection/"],
+    ["Repairs and service", "/services/hearing-aid-repair/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Widex Allure is a current premium line known for a natural, clear sound.",
+    "It often appeals to patients who prioritize music and true-to-life listening.",
+    "Verified fitting and follow-up care determine how well the sound quality carries into daily life."
+  ],
+  faqs: [
+    ["What is Widex known for?", "Widex is widely respected for natural, undistorted sound, which many patients and musicians value. The Allure line continues that focus. We help you decide whether it matches your listening priorities."],
+    ["Are Widex hearing aids good for music?", "Patients who care about music often prefer Widex for its natural sound signature. If music matters to you, mention it during your consultation so we can factor it into the recommendation and settings."],
+    ["Do you verify the fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription and refine them over follow-up visits as you adapt."]
+  ],
+  image: "/assets/widex.webp",
+  imageLabel: "Widex Allure premium line"
+},

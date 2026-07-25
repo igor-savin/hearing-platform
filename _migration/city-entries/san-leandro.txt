@@ -1,0 +1,29 @@
+  "san-leandro": {
+    name: "San Leandro",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 30-35 minutes across the San Mateo Bridge",
+    distanceTier: "far",
+    geo: { lat: 37.7249, lng: -122.1561 },
+    lede:
+      "San Leandro sits just south of Oakland along the East Bay shoreline, a working, family-oriented city with a long industrial and manufacturing tradition. Its position near the foot of the San Mateo Bridge actually makes us a more reachable choice than for cities further north. Still, our offices are on the Peninsula, so San Leandro patients most often come our way for specialized care.",
+    hook: [
+      "A manufacturing city and occupational noise",
+      "San Leandro has deep roots in manufacturing, warehousing, and the trades, and years of on-the-job noise exposure can contribute to hearing loss and tinnitus over a career. Ringing in the ears after a long shift, or trouble following speech in a loud shop, are common reasons people first look into their hearing. For baseline testing a local provider works well; for persistent tinnitus, Lenire, or a hearing aid fitting that never sat right, San Leandro patients do make the manageable drive to us.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "From downtown to the shoreline",
+      "San Leandro spreads from its downtown around East 14th Street and the historic Casa Peralta to the marina and shoreline trails, with the Bal Theatre and the neighborhoods of Broadmoor and Estudillo in between. It is a hard-working, unpretentious community where many careers have involved noisy environments. Those who come to us usually want a thorough look at hearing that noise may have affected, and a plan they can trust.",
+    ],
+    whyHere:
+      "San Leandro patients choose California Hearing Center for careful diagnostic testing, honest recommendations rather than upsells, and a real focus on tinnitus and Lenire treatment. The relative closeness of the San Mateo Bridge, plus continuity with one dedicated audiologist, makes the trip an easy call for those seeking specialized care.",
+    landmarks:
+      "From downtown San Leandro, the marina, or the Estudillo and Broadmoor neighborhoods, our San Mateo office is roughly 30-35 minutes over the San Mateo Bridge.",
+    faqs: [
+      ["Could my old job have affected my hearing?", "Long-term exposure to loud machinery, tools, or engines can contribute to hearing loss and tinnitus over time. A full evaluation shows what has changed and whether hearing aids or tinnitus therapy would help."],
+      ["Why come to you rather than a closer clinic?", "For routine care, staying local is reasonable. San Leandro patients travel to us mainly for specialized tinnitus treatment, Lenire, and complex fittings — and the San Mateo Bridge keeps that trip relatively short."],
+      ["How far is your office from San Leandro?", "Roughly 30-35 minutes to San Mateo via the bridge. Call 650-342-9449 to set up a visit that fits your schedule."],
+    ],
+  },

@@ -1,0 +1,36 @@
+"/tinnitus/types-of-tinnitus-sounds/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Types of Tinnitus Sounds and What They Suggest",
+  intro: [
+    "Tinnitus does not sound the same to everyone. People describe ringing, buzzing, hissing, humming, whistling, clicking, roaring, and more, and the quality of the sound can offer clues about what is going on. While the specific sound alone does not diagnose a cause, it is a useful part of the picture your clinician builds.",
+    "Describing your tinnitus as precisely as you can, its pitch, character, whether it is steady or pulsing, and whether it is in one ear or both, genuinely helps. This page walks through the common types and what each may hint at.",
+    "For the underlying biology, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) explains why these sounds arise."
+  ],
+  sections: [
+    ["Ringing, hissing, and buzzing", "These high-pitched, steady tones are the most common form of tinnitus and are frequently associated with hearing loss, often from age or noise exposure. A high ring or hiss that sits in the background is the classic presentation many people picture."],
+    ["Roaring, humming, and low tones", "Lower-pitched sounds, described as roaring, rumbling, or ocean-like, can accompany conditions affecting the inner ear, including Ménière's disease, especially when paired with ear fullness and fluctuating hearing. See our page on [Ménière's disease](/tinnitus/menieres/) for more."],
+    ["Pulsatile tinnitus", "If your tinnitus pulses or throbs in time with your heartbeat, that is pulsatile tinnitus, and it is worth flagging. Because it can relate to blood flow near the ear, it should be evaluated by a physician rather than assumed to be ordinary tinnitus."],
+    ["Clicking and rhythmic sounds", "Rhythmic clicking or fluttering that is not in sync with the heartbeat may come from tiny muscle contractions in the middle ear or nearby. This is uncommon and, if persistent, is worth having examined."],
+    ["Musical tinnitus", "Rarely, people hear tunes, melodies, or musical fragments, sometimes called musical ear syndrome, more often in those with significant hearing loss. It is generally not a sign of a psychiatric condition, though it can be distressing and is worth discussing."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Ménière's disease", "/tinnitus/menieres/"],
+    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "High-pitched ringing and hissing are the most common types and often link to hearing loss.",
+    "Pulsatile tinnitus that beats with your heartbeat should be evaluated by a physician.",
+    "The sound's quality is a helpful clue, not a diagnosis; describe it fully to your clinician."
+  ],
+  faqs: [
+    ["Does the type of sound tell me what is causing my tinnitus?", "It offers clues but is not a diagnosis on its own. High-pitched ringing often relates to hearing loss, low roaring may point toward inner-ear conditions, and pulsatile tinnitus suggests a blood-flow-related cause worth medical evaluation."],
+    ["Is pulsatile tinnitus serious?", "It deserves attention. Because a heartbeat-synced sound can relate to blood flow near the ear, pulsatile tinnitus should be evaluated by a physician rather than treated as routine tinnitus, even though many cases turn out to be manageable."],
+    ["Why does my tinnitus sound change over time?", "The perceived pitch and character of tinnitus can shift with your hearing, stress, fatigue, and attention. A change in sound is common, but a distinctly new pattern, especially pulsatile or one-sided, is worth mentioning to a clinician."]
+  ],
+  image: "/assets/core/tinnitus__types-of-tinnitus-sounds.svg",
+  imageLabel: "Ringing, roaring, buzzing, and more"
+},

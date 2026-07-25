@@ -1,0 +1,29 @@
+  "santa-clara": {
+    name: "Santa Clara",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 35 minutes south",
+    distanceTier: "far",
+    geo: { lat: 37.3541, lng: -121.9552 },
+    lede:
+      "Santa Clara wraps history and spectacle together — the old Mission and university at its heart, Levi's Stadium and Great America out toward the bay. It sits well down in the South Bay from our Peninsula offices, roughly 35 minutes away, yet patients here travel to us when they need care beyond the routine.",
+    hook: [
+      "Specialized hearing and tinnitus care worth the trip",
+      "Santa Clara is well served for everyday needs, so the patients who come to us are usually looking for something particular: relief from persistent [tinnitus](/tinnitus/), a fitting that finally works after others failed, or a rigorous second opinion. Our practice is built around exactly that kind of problem-solving — thorough diagnostics, real-ear-verified fittings, and tinnitus-focused treatment including Lenire — which is what makes the drive up the Peninsula pay off.",
+    ],
+    motif: "civic",
+    localScene: [
+      "A city of landmarks, from the Mission to the stadium",
+      "Santa Clara stretches from Mission Santa Clara and the university campus through the civic core near the Caltrain station out to Levi's Stadium, Great America, and the convention center. Between game days, big events, and busy neighborhoods like Old Quad and Rivermark, it is a lively, noisy place to live. For the Santa Clara patients who make the trip, we concentrate on the harder cases — tinnitus, complex fittings, and clarity in the noise that fills a city like this.",
+    ],
+    whyHere:
+      "Patients choose us over closer options when the problem is specialized: intractable tinnitus, a device that never sounded right, or a careful reassessment they could not get elsewhere. We are candid that everyday maintenance may be easier handled nearby.",
+    landmarks:
+      "We are about 35 minutes from Santa Clara University, the Mission, and the Levi's Stadium area, north up the 101 or 280 to our San Carlos office.",
+    faqs: [
+      ["What makes the drive from Santa Clara worthwhile?", "Our practice concentrates on tinnitus and complex hearing care, with thorough testing and verified fittings. When a problem has resisted easier fixes, that focus is usually what makes the trip up the Peninsula worth it."],
+      ["Do you offer Lenire for tinnitus?", "Yes. We provide Lenire alongside a broader set of tinnitus management approaches, chosen to fit your specific situation after a full evaluation."],
+      ["How far is your office from Santa Clara?", "About 35 minutes north via the 101 or 280 to San Carlos. Call 650-342-9449 to arrange a visit built around one efficient trip."],
+    ],
+  },

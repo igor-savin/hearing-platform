@@ -1,0 +1,29 @@
+  "novato": {
+    name: "Novato",
+    county: "Marin County",
+    region: "north-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 70 minutes north",
+    distanceTier: "far",
+    geo: { lat: 38.1074, lng: -122.5697 },
+    lede:
+      "Novato is Marin's northernmost city — more spread-out and suburban than its neighbors down the 101, with an Old Town core along Grant Avenue and the redeveloped Hamilton district on the site of the former airfield. It sits at the far end of the county from us; our Peninsula offices are roughly 70 minutes south. So we are straightforward about it: Novato patients who come our way are usually after care they can't easily find closer to home.",
+    hook: [
+      "Specialized care that justifies the miles",
+      "For everyday hearing needs, Novato residents have options nearer at hand, and we will happily say so. Where we tend to help is the harder stuff: stubborn [tinnitus](/tinnitus/), Lenire treatment, ringing that hasn't responded to anything else, or a hearing aid fitting that has never quite sounded right. That kind of work rewards a thorough evaluation and an audiologist who sticks with it — and it is why patients make the longer drive from northern Marin.",
+    ],
+    motif: "civic",
+    localScene: [
+      "Northern Marin, at its own pace",
+      "Novato is a city of neighborhoods more than a single downtown — Old Town's shops along Grant Avenue, the newer Hamilton community, Indian Valley and Bel Marin Keys, and the open space around Stafford Lake and Mount Burdell. It runs quieter and more residential than the towns closer to the bridge. People here are practical about travel; when they choose a practice an hour-plus away, it is because the specific care matters more than the convenience, and we try to honor that by making each visit thorough.",
+    ],
+    whyHere:
+      "Novato patients generally choose us for a reason a nearer office couldn't cover — advanced [tinnitus care](/tinnitus/), Lenire, a second opinion, or a fitting that needed real expertise. They come for the depth of the workup and stay for the continuity of one audiologist over time. For routine visits, we are honest that somewhere closer may serve you just as well.",
+    landmarks:
+      "We are roughly 70 minutes south of Novato's Old Town along Grant Avenue, the Hamilton district, and the Stafford Lake area, down Highway 101 and over the Golden Gate to our San Mateo office.",
+    faqs: [
+      ["Novato is a long way from the Peninsula — is it really worth it?", "For routine hearing care, probably not; a closer Marin provider will save you the drive. For specialized tinnitus or Lenire treatment, a tricky fitting, or a second opinion, the patients who make the trip generally feel it pays off."],
+      ["What actually happens at a first tinnitus appointment?", "We take a careful history, test your hearing and how you process sound, and rule out issues that need medical attention, then talk through options — which may include sound therapy or Lenire. The goal of the first visit is a clear picture and a real plan, not a rushed sales pitch."],
+      ["How long should I budget to reach your office from Novato?", "About 70 minutes down Highway 101 and across the Golden Gate to San Mateo. Call 650-342-9449 and we will schedule enough time to make the trip count."],
+    ],
+  },

@@ -1,0 +1,29 @@
+  "los-altos": {
+    name: "Los Altos",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 25 minutes from our San Carlos office",
+    distanceTier: "mid",
+    geo: { lat: 37.3852, lng: -122.1141 },
+    lede:
+      "Los Altos keeps a village feel that its old apricot orchards would still recognize — a walkable downtown triangle, leafy streets, and no rush. Residents here expect care that is personal and unhurried, and our San Carlos office is a manageable 25-minute drive up the Peninsula.",
+    hook: [
+      "Unhurried, personal hearing care that fits the details",
+      "Los Altos patients often want two things at once: hearing that keeps pace with an active social and professional life, and technology discreet enough to forget they are wearing. Both come down to the fitting, not just the device. We take the time to verify each program, match technology honestly to how you actually live, and fine-tune until it disappears into the background — the kind of attention an independent practice can give and a big-box counter cannot.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A downtown triangle built for conversation",
+      "Downtown Los Altos is made for lingering — the triangle of Main Street, State Street, and First Street, the Rancho Shopping Center, and shaded neighborhoods like Country Club and North Los Altos. It is a town of face-to-face conversation, farmers-market chatter, and long lunches, all of which depend on clear hearing. For Los Altos patients we emphasize discreet, well-verified fittings that hold up across exactly these everyday settings, so the social life the town is built around stays effortless.",
+    ],
+    whyHere:
+      "Los Altos residents choose us for meticulous testing, premium technology matched to real needs rather than upsold, and the continuity of one familiar audiologist over time. Many first came for [tinnitus care](/tinnitus/) or a difficult fitting elsewhere and stayed for everything after.",
+    landmarks:
+      "We are about 25 minutes from downtown Los Altos, the Rancho Shopping Center, and the First Street district by way of El Camino and the 101 to our San Carlos office.",
+    faqs: [
+      ["Do you fit discreet, nearly invisible hearing aids?", "Yes. We fit several near-invisible and receiver-in-canal styles. The right one depends on your ear anatomy and hearing needs, which we assess carefully before recommending anything."],
+      ["Why see an independent audiologist instead of a big retailer?", "An independent practice can spend the time that verified, comfortable fittings require, and you see the same audiologist for follow-ups and adjustments rather than whoever is on shift."],
+      ["How far is the audiologist from Los Altos?", "Our San Carlos office is about 25 minutes north via El Camino and the 101. Call 650-342-9449 to arrange a visit."],
+    ],
+  },

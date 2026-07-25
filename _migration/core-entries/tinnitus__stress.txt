@@ -1,0 +1,36 @@
+"/tinnitus/stress/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Stress and Tinnitus: Breaking the Cycle",
+  intro: [
+    "Ask people when their tinnitus is at its worst and many will point to their most stressful stretches: a demanding week at work, a family crisis, a poor night's sleep. That pattern is not a coincidence. Stress and tinnitus are closely linked, and understanding the connection is one of the most practical ways to gain relief.",
+    "Stress rarely creates tinnitus out of nowhere, but it reliably turns up the volume on tinnitus that already exists, and then tinnitus adds to the stress. The result is a self-reinforcing loop that can feel impossible to escape from the inside.",
+    "The encouraging part is that this loop has handles you can grab. This page focuses on the stress side; our companion page on [anxiety management](/tinnitus/anxiety-management/) goes deeper on the mental-health tools."
+  ],
+  sections: [
+    ["The stress response and your ears", "Stress activates the body's fight-or-flight system, raising arousal, muscle tension, and vigilance. That heightened state sharpens your sensitivity to internal signals like tinnitus and keeps the brain primed to notice it, which is why stressful periods so often coincide with louder-seeming tinnitus."],
+    ["A two-way street", "Tinnitus is itself a stressor, especially when it disrupts sleep or concentration. Stress amplifies tinnitus, tinnitus adds stress, and the cycle tightens. Interrupting it at any point, calming the body, improving sleep, or reducing the sound's emotional charge, tends to loosen the whole loop."],
+    ["Practical ways to lower arousal", "Paced breathing, regular exercise, time outdoors, and relaxation practices all lower baseline arousal. Even a few minutes of slow breathing during a tinnitus spike can signal safety to the nervous system and take the edge off."],
+    ["Protect your sleep", "Because stress and tinnitus both sabotage sleep, and poor sleep worsens both, a steady bedtime routine and gentle background sound at night are high-value habits worth prioritizing."],
+    ["When to reach for more help", "If stress tips into persistent anxiety, panic, or low mood, please involve your physician or a mental health professional. Structured approaches like cognitive behavioral therapy can address both the stress and the tinnitus distress together."]
+  ],
+  bulletLinks: [
+    ["Anxiety management", "/tinnitus/anxiety-management/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Why tinnitus seems louder", "/tinnitus/getting-louder/"],
+    ["Diet and lifestyle", "/tinnitus/diet-lifestyle/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Stress rarely causes tinnitus but reliably makes existing tinnitus more prominent.",
+    "Tinnitus and stress reinforce each other; interrupting the loop at any point helps.",
+    "Persistent anxiety or low mood deserves support from a physician or mental health professional."
+  ],
+  faqs: [
+    ["Can stress cause tinnitus?", "Stress is more likely to worsen existing tinnitus than to create it from nothing. By raising the body's arousal and sharpening your attention to internal sounds, stress can make tinnitus seem noticeably louder during difficult periods."],
+    ["Why does my tinnitus flare when I am stressed?", "Stress puts the nervous system on high alert, which increases sensitivity to signals like tinnitus and keeps the brain focused on it. As arousal settles, the tinnitus often recedes again."],
+    ["What is the fastest way to calm a stress-driven flare?", "In the moment, slow paced breathing and a few minutes of relaxation can lower arousal and ease the spike. Over the longer term, regular exercise, better sleep, and stress-reduction habits make flares less frequent and less intense."]
+  ],
+  image: "/assets/core/tinnitus__stress.svg",
+  imageLabel: "The stress-tinnitus connection"
+},

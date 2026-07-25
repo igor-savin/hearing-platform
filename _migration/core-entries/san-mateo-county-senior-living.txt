@@ -1,0 +1,35 @@
+"/san-mateo-county-senior-living/": {
+  kicker: "Hearing Care for Seniors",
+  headline: "Hearing Care for Seniors Across San Mateo County",
+  intro: [
+    "San Mateo County is home to a large and growing population of older adults, many living in senior communities from San Mateo and San Carlos down through the Peninsula. Age-related hearing loss touches most of them at some point, and how it is handled shapes how connected and independent they stay. California Hearing Center serves seniors and their families countywide from two offices — San Mateo at 88 N. San Mateo Drive and San Carlos.",
+    "As a locally owned, independent audiology practice, we offer county residents unhurried care and honest guidance rather than a one-size-fits-all sales pitch. This hub explains senior hearing care across the county and points to the individual communities we serve."
+  ],
+  sections: [
+    ["Hearing care where county seniors live", "From assisted living and memory care to active retirement communities, older residents across San Mateo County share the same core need: to keep hearing the people around them. We bring the same standard of diagnostic testing, thoughtful device selection, and follow-up care to residents wherever they are on the Peninsula."],
+    ["The stakes of untreated hearing loss", "Major research, including work from Johns Hopkins and the Lancet Commission, associates untreated hearing loss with greater risk of social isolation, falls, and cognitive decline in older adults. We describe these as associations, not settled cause and effect, but they make hearing care an important part of healthy aging."],
+    ["Devices and care built around seniors", "Across the county we fit hearing aids chosen for real life in later years: rechargeable batteries, simple and automatic operation, and comfortable, easy-to-handle designs. Just as important is what comes after the fitting — the cleaning, tuning, and reprogramming that keep devices useful for years."],
+    ["Two convenient Peninsula offices", "With locations in both San Mateo and San Carlos, most county seniors and their families are a manageable drive from ongoing care. Staying with one local, independent audiologist means continuity — the same clinician who knows a resident's history and preferences."],
+    ["Communities across the county", "We care for residents and families from senior communities throughout San Mateo, including Atria Park of San Mateo, Sunrise of San Mateo, The Peninsula Regent, and The Stratford, along with others across the county."]
+  ],
+  bulletLinks: [
+    ["Senior-living hearing care overview", "/senior-living/"],
+    ["Atria Park of San Mateo", "/atria-park-of-san-mateo/"],
+    ["Sunrise of San Mateo", "/sunrise-of-san-mateo/"],
+    ["The Peninsula Regent", "/the-peninsula-regent/"],
+    ["The Stratford", "/the-stratford/"],
+    ["Schedule a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "We serve seniors and families across San Mateo County from our San Mateo and San Carlos offices.",
+    "Untreated hearing loss is associated with isolation, falls, and cognitive decline as we age.",
+    "Local, independent, ongoing audiology care keeps senior-friendly hearing aids working over time."
+  ],
+  faqs: [
+    ["Which parts of San Mateo County do you serve?", "We care for seniors and families across the Peninsula from our San Mateo and San Carlos offices, including the many senior communities in and around San Mateo and neighboring cities."],
+    ["How do I choose care for an aging parent in the county?", "Start with a thorough hearing test so decisions rest on facts, then look for an independent audiologist close enough for easy follow-up. We are glad to talk through options and involve the whole family."],
+    ["What makes an independent practice better for seniors?", "Independence means our recommendations are not tied to one manufacturer, and local ownership means continuity of care — the same clinician over the years, which matters a great deal for older adults."]
+  ],
+  image: "/assets/core/san-mateo-county-senior-living.svg",
+  imageLabel: "Hearing care for seniors across San Mateo County"
+},

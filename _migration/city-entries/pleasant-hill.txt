@@ -1,0 +1,29 @@
+  "pleasant-hill": {
+    name: "Pleasant Hill",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 55 minutes east",
+    distanceTier: "far",
+    geo: { lat: 37.9480, lng: -122.0608 },
+    motif: "downtown",
+    lede:
+      "Pleasant Hill built itself a genuine downtown — the open-air district of restaurants, plaza, and cinema — alongside the campus bustle of Diablo Valley College. It sits about 55 minutes east of our Peninsula offices, so we won't pretend to be the closest audiologist, though patients here do travel to us for specialized care.",
+    hook: [
+      "An independent practice, not a big-box counter",
+      "From noisy dinners downtown to a lecture hall at DVC, following speech across those settings takes a fitting done right — programmed and verified with real-ear measurement, not a device grabbed off a chain-store shelf. Patients who want that methodical, independent approach are the ones who seek us out. We focus on [speech-in-noise testing](/hearing-testing/) and careful verification so hearing aids work where you actually struggle.",
+    ],
+    localScene: [
+      "Downtown, campus, and the trail",
+      "Pleasant Hill centers on the walkable Downtown Pleasant Hill district with its plaza and cinema, the busy campus of Diablo Valley College, the greenery of Pleasant Hill Park, and the neighborhoods of Gregory Gardens and Poets Corner along the Iron Horse Trail. It's a city full of everyday listening challenges. We fit and verify hearing aids to hold up in the loud spots, and build in the follow-up that keeps them performing.",
+    ],
+    whyHere:
+      "Pleasant Hill patients choose us for careful diagnostics, honest technology guidance, and dedicated [tinnitus care](/tinnitus/) including Lenire — with the same audiologist each visit. We're clear that routine testing can be handled closer to home, and focus the drive on the specialized work.",
+    landmarks:
+      "We're about 55 minutes from Downtown Pleasant Hill, Diablo Valley College, and Pleasant Hill Park, taking the East Bay bridges over to our San Mateo office.",
+    faqs: [
+      ["What's different about an independent practice versus a big-box store?", "We're not tied to one manufacturer, so we recommend technology honestly and take time to verify every fitting with real-ear measurement. You also see the same audiologist for follow-up, not a rotating counter."],
+      ["Will hearing aids work in a loud restaurant?", "They can, when programmed and verified for noise. We use speech-in-noise testing and real-ear measurement so devices perform in demanding settings, not only the quiet booth."],
+      ["Why travel to the Peninsula from Pleasant Hill?", "For routine care, a nearer provider is reasonable. Patients come to us for specialized tinnitus treatment, Lenire, and complex fittings worth the drive."],
+    ],
+  },

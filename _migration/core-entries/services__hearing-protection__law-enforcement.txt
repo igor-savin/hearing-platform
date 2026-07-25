@@ -1,0 +1,29 @@
+"/services/hearing-protection/law-enforcement/": {
+  kicker: "Hearing Protection",
+  headline: "Hearing Protection & Situational Awareness for Law Enforcement",
+  intro: [
+    "For officers, hearing protection cannot come at the cost of hearing. On the range, in training, and on duty, you have to catch a partner's call, a suspect's movement, or a radio transmission at the same time your ears need shielding from gunfire and other sudden noise. Ordinary plugs force a choice between protection and awareness; purpose-built electronic protection removes that choice.",
+    "California Hearing Center fits hearing protection designed for law enforcement, range, and tactical use: solutions that preserve or even enhance low-level sound and communication while instantly suppressing the peak of a gunshot or other impulse noise. The aim is protection that supports the mission rather than getting in its way.",
+    "We work with local officers, range personnel, and tactical teams to fit protection that fits the job and gets worn."
+  ],
+  sections: [
+    ["The awareness problem", "Blocking enough sound to guard against gunfire can also block the sounds an officer's safety depends on: verbal commands, footsteps, a drawn weapon, radio traffic. Electronic protection is built to keep those sounds available, so situational awareness stays intact while the ears are still protected from dangerous peaks."],
+    ["How the technology helps", "Digital electronic protectors use microphones to pass through or amplify quieter environmental sounds, then compress or cut the level the instant a loud impulse is detected. Officers can communicate and stay oriented between shots, with the gunshot peak suppressed automatically the moment it occurs."],
+    ["Range and training use", "High-volume range days mean repeated impulse exposure, which adds up over a career. Consistent, comfortable protection during qualification and training is one of the most important habits for preserving long-term hearing, and comfortable custom fits make it far more likely protection is worn every session."],
+    ["Custom-fit and communication", "We fit custom-molded in-ear options that seal reliably, stay comfortable during long shifts, and sit low enough to work with a firearm, radio earpiece, and other gear. A secure custom seal is what makes the protection consistent as you move and reposition."],
+    ["Baseline and monitoring", "Because occupational noise exposure accumulates, a baseline [hearing evaluation](/hearing-testing/) and periodic monitoring help catch changes early. If exposure has already caused ringing, our [tinnitus care](/tinnitus/) can help you manage it."]
+  ],
+  bullets: ["Situational awareness kept", "Suppresses gunshot peaks", "Radio & command audible", "Custom tactical fit", "Range & duty use", "Comfortable for shifts"],
+  takeaways: [
+    "Officers need protection that preserves communication and awareness, not just noise blocking.",
+    "Electronic protection passes low-level sound through while suppressing impulse peaks.",
+    "Comfortable custom fits get worn consistently, which is what protects hearing over a career."
+  ],
+  faqs: [
+    ["Can hearing protection keep me aware of my surroundings on duty?", "Yes. Electronic protection is designed to pass through or amplify normal-level sounds like speech, footsteps, and radio traffic while instantly suppressing the peak of gunfire, so awareness is preserved during protection."],
+    ["Why not just use standard earplugs at the range?", "Standard plugs can block the sounds you need to hear, including range commands and a partner's voice, so they get taken out, leaving ears unprotected. Electronic protection lets you stay aware and protected at the same time."],
+    ["Will custom protection work with a radio earpiece and other gear?", "Custom in-ear protectors are low profile and molded to your ear, so they generally integrate with duty gear and stay comfortable through long shifts. We fit the solution around how you actually work."]
+  ],
+  image: "/assets/core/services__hearing-protection__law-enforcement.svg",
+  imageLabel: "Tactical hearing protection with awareness",
+},

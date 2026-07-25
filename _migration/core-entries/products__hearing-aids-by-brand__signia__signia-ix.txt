@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/signia/signia-ix/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Signia IX Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Signia IX is a premium hearing aid platform built around the challenges of real conversation. Signia's technology has long emphasized handling your own voice comfortably and following speech when several people are talking, and the IX generation continues that focus.",
+    "Group conversations are one of the most common frustrations people report with hearing loss, because speakers move, overlap, and compete with background noise. Platforms like IX are designed with those dynamic exchanges in mind.",
+    "California Hearing Center fits Signia IX for patients across the Peninsula and verifies each fitting so the technology performs where it counts."
+  ],
+  sections: [
+    ["Focused on conversation", "Signia's premium platforms aim to keep dynamic, multi-speaker conversations easier to follow. Whether IX is the right choice for you depends on your hearing test, your typical listening settings, and your priorities."],
+    ["Comfort with your own voice", "Signia has put particular emphasis on making the wearer's own voice sound natural, a detail that affects daily comfort for many new hearing aid users. We take own-voice comfort seriously during fitting and follow-up."],
+    ["Matching technology to your life", "Premium features shine most in busy, changing environments. If your days are quieter, a mid-tier device may serve you just as well. We base the recommendation on your [evaluation](/hearing-testing/) and goals rather than defaulting to the top model."],
+    ["Verified fitting", "We program IX to your prescription and use real-ear measurement to confirm the sound reaching your eardrum. Verification is what keeps a premium device from being under- or over-amplified."],
+    ["Connectivity and follow-up", "Modern Signia devices generally support streaming and app control. We set up pairing, review charging and cleaning, and schedule follow-up visits to refine the sound as you adapt."]
+  ],
+  bulletLinks: [
+    ["Book a hearing test", "/hearing-testing/"],
+    ["How fitting and verification work", "/hearing-aid-fitting/"],
+    ["Explore all brands", "/products/hearing-aids-by-brand/"],
+    ["Tinnitus care", "/tinnitus/"],
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["Patient reviews", "/reviews/"]
+  ],
+  takeaways: [
+    "Signia IX is a premium platform focused on natural own-voice sound and dynamic conversation.",
+    "The right model depends on your hearing, your environments, and your priorities.",
+    "Verified fitting and follow-up care determine your real-world experience."
+  ],
+  faqs: [
+    ["What is Signia known for?", "Signia is recognized for technology that emphasizes conversation and making the wearer's own voice sound natural. The IX platform continues that focus. We help you decide whether it fits your needs."],
+    ["Will my own voice sound strange with hearing aids?", "New users sometimes notice their own voice at first. Signia devotes attention to own-voice comfort, and we also address it through careful fitting and follow-up adjustments regardless of brand."],
+    ["Is a premium platform worth it for me?", "It depends on how often you face noisy, changing environments. Premium platforms offer the most support there, while a mid-level device may be ideal for a quieter routine. We recommend based on your hearing and lifestyle."]
+  ],
+  image: "/assets/signia.webp",
+  imageLabel: "Signia IX conversation-focused platform"
+},

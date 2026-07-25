@@ -1,0 +1,36 @@
+"/hyperacusis/when-to-seek-help/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "When Sound Sensitivity Warrants Professional Help",
+  intro: [
+    "Almost everyone finds some sounds unpleasant, so it can be hard to know when sound sensitivity crosses from normal into something worth evaluating. A useful rule of thumb: if sensitivity to everyday sound is changing how you live, work, or sleep, it is worth a professional look.",
+    "Some situations call for prompt or even urgent attention, especially when sound sensitivity appears suddenly or arrives with other symptoms. This page lays out the signs that suggest you should seek help and the red flags that mean you should not wait.",
+    "Getting evaluated early tends to make management easier, and it rules out causes that need medical rather than audiological care. When in doubt, it is reasonable to ask."
+  ],
+  sections: [
+    ["When it is affecting daily life", "If you are avoiding restaurants, gatherings, work settings, or activities you value because ordinary sounds feel too loud, that functional impact is a clear reason to seek evaluation. Sound sensitivity that shrinks your world deserves attention rather than endurance."],
+    ["When it is getting worse or spreading", "Sensitivity that steadily intensifies, extends to more and more sounds, or drives you toward constant ear protection and silence should be assessed. Early guidance can interrupt patterns, such as over-protecting the ears, that tend to make hyperacusis worse."],
+    ["When sound causes actual pain", "Sound that produces genuine pain, sometimes called noxacusis, rather than mere discomfort is a stronger reason to be seen. Painful reactions to ordinary sound warrant professional evaluation to understand the cause and to guide safe, gradual therapy."],
+    ["Red flags that need prompt medical care", "Some symptoms point beyond routine audiology. Seek prompt medical evaluation for sound sensitivity that begins suddenly, affects only one ear, or comes with sudden hearing loss, ear pain or drainage, dizziness or balance problems, facial weakness, or severe headache."],
+    ["What an evaluation involves", "A visit typically includes a full [hearing test](/hearing-testing/), a detailed history, and sound-tolerance measures, with referral for medical assessment when red flags are present. From there we can outline a gradual, individualized plan rather than leaving you to guess."]
+  ],
+  bulletLinks: [
+    ["Hyperacusis overview", "/hyperacusis/"],
+    ["Coping strategies", "/hyperacusis/coping/"],
+    ["The tinnitus overlap", "/hyperacusis/tinnitus/"],
+    ["Book a hearing evaluation", "/hearing-testing/"],
+    ["Contact our offices", "/contact/"],
+    ["Areas we serve", "/areas-we-serve/"]
+  ],
+  takeaways: [
+    "Seek evaluation when sound sensitivity changes how you live, work, or sleep, or keeps worsening.",
+    "Sound that causes genuine pain, not just discomfort, is a stronger reason to be seen.",
+    "Sudden, one-sided, or symptom-accompanied sensitivity needs prompt medical attention."
+  ],
+  faqs: [
+    ["How do I know if my sound sensitivity is serious enough to get checked?", "If it is limiting your activities, steadily worsening, spreading to more sounds, or causing genuine pain, it is worth a professional evaluation. You do not need to wait until it is severe; earlier assessment usually makes management easier."],
+    ["When is sound sensitivity a medical emergency?", "Treat it urgently if it starts suddenly, affects only one ear, or comes with sudden hearing loss, ear pain or drainage, dizziness, facial weakness, or severe headache. These signs call for prompt medical evaluation rather than a routine appointment."],
+    ["What happens at a sound-sensitivity evaluation?", "Expect a hearing test, a detailed history of your symptoms and triggers, and measures of your sound tolerance, plus medical referral if red flags appear. We then discuss a gradual, individualized plan. Call 650-342-9449 to arrange a visit."]
+  ],
+  image: "/assets/core/hyperacusis__when-to-seek-help.svg",
+  imageLabel: "Knowing when to ask for help"
+},

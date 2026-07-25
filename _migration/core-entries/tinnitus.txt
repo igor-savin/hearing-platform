@@ -1,0 +1,36 @@
+"/tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "The Tinnitus Knowledge Hub for San Mateo & San Carlos",
+  intro: [
+    "Tinnitus, the perception of ringing, buzzing, hissing, or pulsing sound with no external source, is one of the most common reasons people come to California Hearing Center. This hub gathers what we have learned helping Peninsula patients live better with it: how tinnitus is evaluated, which therapies actually help, and how to tell everyday tinnitus from the kind that deserves prompt medical attention.",
+    "Tinnitus is a symptom rather than a disease, and it is frequently linked to hearing loss, noise exposure, earwax, certain medications, or stress. For many people the sound becomes far less intrusive once it is explained clearly and paired with a structured plan instead of internet guesswork.",
+    "Use the pages below to go deeper on any subtopic. If you are just getting oriented, start with [what tinnitus is](/tinnitus/what-is-tinnitus/), then explore the therapy and support pages that match your situation."
+  ],
+  sections: [
+    ["What we evaluate first", "A tinnitus visit usually begins with a full [hearing test](/hearing-testing/), a symptom history, and a description of the sound and its impact on sleep and concentration. Understanding the whole picture is what makes any later therapy effective rather than generic."],
+    ["A dedicated tinnitus focus", "Tinnitus care is a genuine specialty for our practice, not an afterthought bolted onto a hearing aid sale. That focus is why we invest in structured therapy, sound strategies, and advanced options like Lenire bimodal neuromodulation for candidates who qualify."],
+    ["Therapies that help", "Depending on your profile, a plan may combine sound therapy, well-fit hearing aids, tinnitus retraining principles, sleep and stress strategies, and directive counseling. Our page on [tinnitus retraining therapy](/tinnitus/tinnitus-retraining-therapy/) explains one structured approach in detail."],
+    ["Sound sensitivity often travels with tinnitus", "Some people with tinnitus also notice that ordinary sounds feel uncomfortably loud, a condition called hyperacusis. If that describes you, our [hyperacusis section](/hyperacusis/) covers evaluation and desensitization, and there is a tinnitus-focused overview at [tinnitus and sound sensitivity](/tinnitus/hyperacusis/)."],
+    ["When tinnitus needs prompt medical care", "Most tinnitus is not dangerous, but sudden tinnitus with sudden hearing loss, tinnitus in only one ear, a pulsing sound that matches your heartbeat, or tinnitus with dizziness or neurological symptoms should be evaluated promptly. The American Tinnitus Association and NIDCD both emphasize timely assessment for these red flags."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus?", "/tinnitus/what-is-tinnitus/"],
+    ["Tinnitus retraining therapy", "/tinnitus/tinnitus-retraining-therapy/"],
+    ["What relief typically looks like", "/tinnitus/success-stories/"],
+    ["Support and peer resources", "/tinnitus/support-groups/"],
+    ["Why patients choose us", "/tinnitus/why-choose-us/"],
+    ["Sound sensitivity & hyperacusis", "/hyperacusis/"]
+  ],
+  takeaways: [
+    "Tinnitus is a symptom with many causes, and it is far more manageable once it is properly evaluated and explained.",
+    "Effective plans usually combine hearing care, sound therapy, counseling, and lifestyle strategies rather than a single fix.",
+    "Certain patterns, especially sudden, one-sided, or pulsatile tinnitus, warrant prompt medical attention."
+  ],
+  faqs: [
+    ["Is tinnitus something I just have to live with?", "Not passively. While there is no universal cure, most people can substantially reduce how intrusive tinnitus feels through evidence-based management that improves sleep, lowers distress, and makes the sound fade into the background."],
+    ["Do I need a hearing test if my main concern is tinnitus?", "Yes, in nearly every case. Tinnitus is closely tied to hearing, and a current [hearing evaluation](/hearing-testing/) helps identify contributing factors and shapes which therapies are likely to help you."],
+    ["When should I treat tinnitus as urgent?", "Seek prompt medical care for tinnitus that begins suddenly, affects only one ear, pulses in time with your heartbeat, or comes with hearing loss, dizziness, or neurological symptoms."]
+  ],
+  image: "/assets/core/tinnitus.svg",
+  imageLabel: "Structured tinnitus care on the Peninsula"
+},

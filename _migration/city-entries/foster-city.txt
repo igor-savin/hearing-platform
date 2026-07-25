@@ -1,0 +1,28 @@
+  "foster-city": {
+    name: "Foster City",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 10 minutes from our San Mateo office across or along the water",
+    distanceTier: "near",
+    geo: { lat: 37.5585, lng: -122.2711 },
+    lede:
+      "Foster City is unlike anywhere else on the Peninsula — a planned community built on engineered fill, laced with lagoons and levees, right at the western foot of the San Mateo Bridge. It is flat, walkable, and home to a large population of both families and active retirees, which shapes the hearing care people here look for.",
+    hook: [
+      "A bayside community, and the moisture that comes with it",
+      "Life on the water is one of Foster City's pleasures, but humidity and moisture are the natural enemies of hearing aids. Sweat, marine air, and the occasional splash on the lagoon can shorten the life of a device that is not properly maintained. We fit Foster City patients with moisture-resistant options where it makes sense, teach simple drying routines, and keep rechargeable contacts clean — small habits that prevent the most common cause of hearing aid repairs.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "Life on the lagoons",
+      "Foster City is organized around its water — the lagoon system, the levee-top walking and biking trails, and neighborhoods like Edgewater, Sea Cloud, Mariners Island, and the areas around Leo J. Ryan Park. It draws an unusual mix of young families and active retirees, and the waterside lifestyle is exactly where hearing-aid moisture management earns its keep. We set Foster City patients up with moisture-resistant devices and simple drying habits so their hearing aids survive the humidity and the occasional splash on the water.",
+    ],
+    whyHere:
+      "Foster City patients appreciate that our San Mateo office is only about 10 minutes away, with easy parking and no big-medical-center maze. We serve the community's wide age range with everything from first hearing tests and modern hearing aids to tinnitus care and device repairs.",
+    landmarks:
+      "We are a short drive from the Foster City lagoons, Edgewater and Metro Center, and the western approach to the San Mateo–Hayward Bridge (Highway 92).",
+    faqs: [
+      ["Does living near the water affect hearing aids?", "It can. Humidity and moisture are a leading cause of hearing aid problems. We recommend moisture-resistant devices and simple drying routines for patients in bayside communities like Foster City, and we service devices that have taken on moisture."],
+      ["How close is your office to Foster City?", "Our San Mateo office is about 10 minutes from Foster City. Call 650-342-9449 to book a visit."],
+    ],
+  },

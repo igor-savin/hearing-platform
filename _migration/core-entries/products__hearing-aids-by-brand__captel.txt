@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/captel/": {
+  kicker: "Assistive Listening Technology",
+  headline: "CapTel Captioned Phones for Hard-of-Hearing Peninsula Residents",
+  intro: [
+    "CapTel is a captioned telephone, not a hearing aid. It looks much like a regular phone but adds a built-in screen that displays written captions of everything the caller says, so you can both listen and read along during a conversation.",
+    "For people with hearing loss who find phone calls stressful or hard to follow, that combination can make a real difference. You still use your voice normally, but the captions fill in the words you might otherwise miss.",
+    "California Hearing Center can help you understand how captioned phones fit alongside hearing aids and other communication strategies as part of your overall hearing care."
+  ],
+  sections: [
+    ["How a captioned phone works", "As the other person speaks, their words are transcribed into captions that appear on the phone's display in near real time. You listen to whatever you can and read the rest, which reduces the guesswork that makes phone calls tiring with hearing loss."],
+    ["Who it can help", "Captioned phones are often useful for people with moderate to more significant hearing loss who still want to stay connected by phone, including many older adults who rely on calls with family, doctors, and services."],
+    ["Often available at no cost to qualifying users", "Captioned telephones like CapTel are frequently provided at no cost to individuals who have hearing loss and qualify, typically through a certification process that confirms the need. The exact requirements and paperwork vary, so it is worth asking about the current process."],
+    ["A complement to hearing aids, not a replacement", "A captioned phone addresses one specific situation, phone calls, while [hearing aids](/products/hearing-aids-by-brand/) support hearing across all of daily life. Many people benefit from both. We can help you see where each one fits."],
+    ["Where to start", "If phone conversations are a frequent frustration, a [hearing evaluation](/hearing-testing/) is a sensible first step. It clarifies your hearing and helps us recommend the right mix of technology and strategies."]
+  ],
+  bulletLinks: [
+    ["Get your hearing evaluated", "/hearing-testing/"],
+    ["Explore hearing aids", "/products/hearing-aids-by-brand/"],
+    ["See all our services", "/services/"],
+    ["Tinnitus and hearing support", "/tinnitus/"],
+    ["Contact our team", "/contact/"],
+    ["Areas we serve", "/areas-we-serve/"]
+  ],
+  takeaways: [
+    "CapTel is a captioned telephone that shows written captions of what the caller says.",
+    "It is assistive technology for phone calls, not a hearing aid.",
+    "Captioned phones are often available at no cost to qualifying individuals through a certification process."
+  ],
+  faqs: [
+    ["Is CapTel a hearing aid?", "No. CapTel is a captioned telephone, an assistive device that displays written captions of the caller's speech. It helps specifically with phone calls and does not replace hearing aids, which support hearing throughout daily life."],
+    ["Do captioned phones cost money?", "Captioned telephones are frequently provided at no cost to people with hearing loss who qualify, usually through a certification process that confirms eligibility. Because programs and requirements change, it is best to ask about the current process."],
+    ["Should I get a captioned phone or hearing aids?", "They solve different problems and many people use both. Hearing aids support everyday listening, while a captioned phone targets phone calls. A hearing evaluation helps us recommend the right combination for you."]
+  ],
+  image: "/assets/core/products__hearing-aids-by-brand__captel.svg",
+  imageLabel: "CapTel captioned telephone"
+},

@@ -1,0 +1,36 @@
+"/hyperacusis/coping/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Coping Strategies for Sound Sensitivity",
+  intro: [
+    "Living with hyperacusis can make the everyday world feel hostile, from a clattering kitchen to a busy street. The good news is that practical coping strategies, used alongside professional guidance, can make daily life more comfortable and support genuine recovery of sound tolerance.",
+    "The single most important idea in coping with hyperacusis is counterintuitive: the goal is usually to rebuild your tolerance to sound gradually, not to eliminate sound from your life. Strategies that lean too hard on silence and constant ear protection often backfire over time.",
+    "The suggestions below reflect widely recommended, evidence-informed approaches. They work best as part of a plan built with an audiologist who has evaluated your hearing and sound tolerance, because the right pace is individual."
+  ],
+  sections: [
+    ["Use ear protection selectively, not constantly", "Reserve earplugs and earmuffs for genuinely loud environments such as concerts or power tools. Wearing protection in ordinary settings, or all day, can increase sensitivity and make hyperacusis worse. This is one of the most common and understandable mistakes people make."],
+    ["Add gentle sound rather than seeking silence", "A quiet, sound-enriched environment, soft background noise, nature sounds, or a fan, is usually more helpful than total silence. Persistent quiet tends to sharpen the auditory system's sensitivity, so gentle, comfortable sound helps recalibrate it."],
+    ["Increase exposure gradually", "Rebuilding tolerance works like rebuilding fitness: slow, steady, and within comfort. Reintroduce everyday sounds at levels you can manage and expand gradually. Pushing into pain is counterproductive, but so is avoidance, so aim for a comfortable, sustainable middle."],
+    ["Manage stress and protect sleep", "Stress and fatigue can heighten sound sensitivity, creating a cycle that feels worse. Relaxation techniques, steady routines, and good sleep habits support tolerance and make daily coping easier. Emotional and auditory factors are closely linked in hyperacusis."],
+    ["Plan challenging situations in advance", "For unavoidable loud events, plan ahead: sit farther from speakers, take quiet breaks, and carry protection for truly loud moments only. Having a plan reduces the anxiety that itself amplifies sound sensitivity, which helps you stay engaged in normal life."]
+  ],
+  bulletLinks: [
+    ["What hyperacusis is", "/hyperacusis/"],
+    ["When to seek professional help", "/hyperacusis/when-to-seek-help/"],
+    ["The hyperacusis and tinnitus overlap", "/hyperacusis/tinnitus/"],
+    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Talk to our team", "/contact/"]
+  ],
+  takeaways: [
+    "Use ear protection only for genuinely loud settings, not throughout ordinary daily life.",
+    "Gentle background sound and gradual exposure usually rebuild tolerance better than silence.",
+    "Managing stress and sleep supports sound tolerance and makes coping easier."
+  ],
+  faqs: [
+    ["Isn't it safer to avoid loud sounds and wear earplugs all day?", "For dangerously loud environments, protection is smart. But wearing earplugs in ordinary settings, or constantly, tends to increase sensitivity and worsen hyperacusis over time. The aim is selective protection plus a gradual return to normal sound."],
+    ["Will these strategies cure my hyperacusis?", "Coping strategies can meaningfully improve comfort and support recovery, but they are not a guaranteed cure and work best within a professional plan. Outcomes depend on the cause and severity, so an evaluation helps set the right approach and pace."],
+    ["How do I know if I'm pushing too hard or not enough?", "Sound exposure should feel challenging but not painful, and it should not leave lasting distress afterward. Because that balance is individual, working with an audiologist helps you calibrate the pace and adjust as your tolerance improves."]
+  ],
+  image: "/assets/core/hyperacusis__coping.svg",
+  imageLabel: "Practical, gradual coping strategies"
+},

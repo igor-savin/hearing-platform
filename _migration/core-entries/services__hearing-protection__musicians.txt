@@ -1,0 +1,29 @@
+"/services/hearing-protection/musicians/": {
+  kicker: "Hearing Protection",
+  headline: "Musician's Earplugs & In-Ear Monitors on the Peninsula",
+  intro: [
+    "Musicians face a hard trade-off with ordinary earplugs: foam blocks the high frequencies far more than the lows, so the music turns dull and boomy and pitch becomes hard to judge. Many players give up and go unprotected, which is exactly how careers-worth of hearing damage happens. Musician's earplugs are built to solve this specific problem.",
+    "California Hearing Center fits custom musician's plugs designed for flat, uniform attenuation, meaning they turn the whole sound down evenly, like a volume knob, instead of smothering the treble. You still hear the music accurately, just at a safer level, so your ears are protected without changing the mix you rely on.",
+    "We work with performers, band members, DJs, sound engineers, teachers, students, and dedicated concertgoers across San Mateo, San Carlos, and the wider Bay Area."
+  ],
+  sections: [
+    ["Flat, even attenuation", "Standard foam can cut highs far more than lows, so cymbals and vocals disappear while bass thumps through. Musician's plugs use a precision acoustic filter that lowers all frequencies by a similar amount, preserving timbre, balance, and the ability to hear yourself and the rest of the ensemble."],
+    ["Interchangeable filter levels", "Custom musician's plugs typically accept filters offering different amounts of reduction, so you can choose more protection for a loud rock set and less for an acoustic gig or rehearsal. Your audiologist helps you pick a starting level based on your instrument and typical exposure."],
+    ["Custom in-ear monitors", "For performers using monitor systems, custom in-ear monitors seal to your ear and let you hear a clean personal mix at lower overall volume than stage wedges. Because they block outside noise, they reduce the temptation to crank levels, protecting your hearing while improving what you hear on stage."],
+    ["Protecting the ears your craft depends on", "Hearing is a musician's most important tool, and it does not regenerate. Tinnitus and high-frequency loss are common in music careers and can affect pitch perception and enjoyment. If you already notice ringing after gigs, consider a baseline [hearing evaluation](/hearing-testing/) and learn about [tinnitus care](/tinnitus/)."],
+    ["Getting fitted", "We take a detailed ear impression so the plug or monitor seals correctly, which is essential for both protection and accurate sound. A poor seal lets bass leak and changes the tuning, so the custom fit is doing acoustic work, not just comfort."]
+  ],
+  bullets: ["Flat, natural sound", "Custom-molded fit", "Interchangeable filters", "In-ear monitor options", "For stage & studio", "Preserves the mix"],
+  takeaways: [
+    "Musician's plugs lower volume evenly so music still sounds natural and accurate.",
+    "Interchangeable filters let you match protection to the gig.",
+    "Custom in-ear monitors protect hearing while giving a cleaner personal mix."
+  ],
+  faqs: [
+    ["Will musician's earplugs make the music sound muffled?", "No. Unlike foam, they are engineered for flat attenuation, lowering all frequencies fairly evenly. The music sounds the same, just quieter and safer, which is why performers actually keep them in."],
+    ["What is the difference between musician's earplugs and in-ear monitors?", "Earplugs reduce the sound reaching your ears to protect you from loud environments. In-ear monitors are earpieces that play a personal audio mix while sealing out stage noise, letting you monitor at a lower, safer volume."],
+    ["How much protection do I need as a musician?", "It depends on your instrument, venue, and exposure time. Many players start with a moderate filter and adjust. We help you choose a level that protects you without cutting you off from the ensemble."]
+  ],
+  image: "/assets/core/services__hearing-protection__musicians.svg",
+  imageLabel: "Custom musician's earplugs and monitors",
+},

@@ -1,0 +1,29 @@
+  "san-francisco-county": {
+    name: "San Francisco",
+    county: "San Francisco County",
+    region: "sf",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 20-30 minutes north",
+    distanceTier: "mid",
+    geo: { lat: 37.7749, lng: -122.4194 },
+    lede:
+      "San Francisco is both a city and a county — a single dense square of hills, neighborhoods, and microclimates that changes character block to block. Patients come to us from every corner of it, from Bernal Heights to the Presidio, and our San Mateo office sits just 20-30 minutes south, an easy reach for the whole city-and-county.",
+    hook: [
+      "One county, many microclimates — and what that means for hearing aids",
+      "Few places pack as many climates into as small an area as San Francisco. The western avenues live under fog and marine damp, while the sheltered eastern neighborhoods stay warmer and drier. That matters more than most people realize: humidity is the leading cause of hearing aid trouble, so patients on the foggy side of the county benefit from moisture-resistant technology and a drying routine, while everyone benefits from fittings that are verified and maintained rather than sold and forgotten.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "Care across the whole city",
+      "Because it's a consolidated city-and-county, San Francisco has no suburbs of its own — just neighborhoods, and we see patients from across all of them. Professionals downtown and in the Financial District navigate loud, reverberant rooms all day; families out in the Sunset, the Richmond, and along the coast contend with fog and damp; and residents in the Mission, Bernal Heights, and the southern districts of Excelsior and Visitacion Valley are the quickest drive to us. We tailor each fitting to the neighborhoods and rooms a patient actually spends time in.",
+    ],
+    whyHere:
+      "Across the whole of San Francisco, patients choose us for careful diagnostics, technology matched honestly to their needs, and a level of [tinnitus](/tinnitus/) and diagnostic expertise that's the exception, not the rule. The continuity of seeing the same audiologist every visit is a big part of why city patients keep making the short trip south.",
+    landmarks:
+      "From anywhere in the city-and-county — the Marina and Pacific Heights, the Mission and Bernal Heights, the Sunset and the southern districts — we're roughly 20-30 minutes south to our San Mateo office.",
+    faqs: [
+      ["You cover the whole city and county of San Francisco?", "Yes. San Francisco is a single city-and-county with no separate towns, and we see patients from neighborhoods across all of it. Our San Mateo office is about 20-30 minutes south of most of the city."],
+      ["Does the neighborhood I live in change what hearing aids I need?", "It can. Patients in the foggy western districts get more value from moisture-resistant devices and drying routines, while those in noisy central neighborhoods benefit most from speech-in-noise tuning. We fit for your specific environment."],
+      ["Can I get specialized tinnitus care coming from the city?", "Yes. Comprehensive tinnitus care, including Lenire, is one of the main reasons San Francisco patients travel to us. Call 650-342-9449 to arrange an evaluation."],
+    ],
+  },

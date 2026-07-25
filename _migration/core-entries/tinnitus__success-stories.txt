@@ -1,0 +1,36 @@
+"/tinnitus/success-stories/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "What Tinnitus Improvement Typically Looks Like",
+  intro: [
+    "People often arrive fearing that tinnitus will only get worse, so it helps to know what realistic improvement actually looks like. Rather than dramatic before-and-after stories, meaningful progress usually shows up as small, cumulative changes: sleeping through the night, forgetting the sound for hours, or no longer bracing every time a quiet room reveals it.",
+    "Below we describe the common patterns of relief we see, drawn from how habituation and tinnitus management typically unfold. These are general expectations, not promises, because results depend on your hearing, the nature of your tinnitus, and how consistently a plan is followed.",
+    "We would rather show you honest patterns than invent testimonials. If you would like to read what real patients say about our care, please visit our [reviews page](/reviews/)."
+  ],
+  sections: [
+    ["Relief usually arrives gradually", "Habituation is rarely a single moment. More often, people notice the sound less frequently and react to it less strongly over weeks and months. Many describe realizing, well into the process, that they had stopped checking whether the tinnitus was still there."],
+    ["Sleep is often the first thing to improve", "Because tinnitus tends to be loudest in quiet, bedtime is a common flashpoint. Sound enrichment and a calmer relationship with the sound frequently ease falling asleep first, and better sleep then makes daytime tinnitus feel more manageable."],
+    ["Hearing aids can change the experience", "When tinnitus accompanies hearing loss, restoring everyday sound often reduces the contrast that makes tinnitus stand out. People commonly report that the sound recedes into a fuller, more natural background once amplification is fit and verified."],
+    ["A calmer reaction, not necessarily a quieter sound", "A frequent and realistic outcome is that the tinnitus itself has not vanished, but it no longer commands attention or triggers anxiety. Reducing the emotional charge is often what returns quality of life, even when the signal is unchanged."],
+    ["Setbacks are normal", "Stress, fatigue, illness, or loud environments can make tinnitus temporarily more noticeable. Understanding that these fluctuations are expected, rather than signs of failure, helps people stay with a plan long enough for habituation to take hold."]
+  ],
+  bulletLinks: [
+    ["Read real patient reviews", "/reviews/"],
+    ["How TRT promotes habituation", "/tinnitus/tinnitus-retraining-therapy/"],
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["Hearing aids and tinnitus", "/products/hearing-aids-by-brand/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Book a tinnitus visit", "/contact/"]
+  ],
+  takeaways: [
+    "Improvement usually looks like gradual, cumulative change rather than a sudden cure.",
+    "Better sleep and a calmer reaction to the sound are common early wins.",
+    "Outcomes vary by person, and honest reviews are available on our reviews page."
+  ],
+  faqs: [
+    ["Can you share specific patient success stories?", "We choose not to publish invented or embellished testimonials. Instead we describe the realistic patterns of relief people tend to experience, and we invite you to read genuine, unedited feedback on our [reviews page](/reviews/)."],
+    ["How will I know the plan is working?", "Progress often appears as sleeping better, noticing the sound less often, and reacting to it more calmly, rather than the tinnitus disappearing outright. These small shifts usually add up over weeks and months."],
+    ["Is improvement guaranteed?", "No responsible provider can guarantee results, because outcomes depend on your hearing, tinnitus profile, and consistency with the plan. Many motivated patients do achieve meaningful, lasting relief."]
+  ],
+  image: "/assets/core/tinnitus__success-stories.svg",
+  imageLabel: "Realistic patterns of tinnitus relief"
+},

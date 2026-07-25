@@ -1,0 +1,28 @@
+  "millbrae": {
+    name: "Millbrae",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 12–15 minutes north of our San Mateo office on the 101",
+    distanceTier: "near",
+    geo: { lat: 37.5985, lng: -122.3872 },
+    lede:
+      "Millbrae sits immediately south of San Francisco International Airport and is one of the Peninsula's great transit hubs, where BART and Caltrain meet. That location makes it convenient — and it also puts Millbrae squarely under the busiest part of SFO's flight path.",
+    hook: [
+      "A transit hub next door to SFO — and who that puts at risk",
+      "Few Peninsula cities sit as close to SFO as Millbrae, and few are as defined by movement — trains, buses, and airport traffic all day. The people most exposed to real noise here are those who work the airport and its supply chain: operations, hospitality, ramp and ground transportation. For them, years on the job can add up to permanent noise-induced hearing loss, which is why a baseline evaluation and custom hearing protection are among the smartest steps an airport worker can take. For everyone else, it's simply a good place to know your numbers.",
+    ],
+    motif: "transit",
+    localScene: [
+      "A transit hub in SFO's shadow",
+      "Millbrae's identity is tied to movement — the Millbrae Intermodal Station where BART meets Caltrain, the El Camino Real corridor, the Green Hills and Mills Estate neighborhoods climbing west into the hills, and the airport pressing in from the north. For residents near the flight path and the many who work in and around SFO, that adds up to real cumulative noise. We start airport-adjacent patients with a baseline evaluation and, where it fits, custom hearing protection, then keep devices dialed in for both quiet streets and loud terminals.",
+    ],
+    whyHere:
+      "Millbrae patients value that our San Mateo office is a quick, direct trip down the 101 or El Camino, with none of the parking hassle of a hospital campus. We provide complete audiology care — testing, hearing aids, tinnitus treatment, protection, and repairs — with continuity of care you rarely get at a chain.",
+    landmarks:
+      "We are a straight shot from the Millbrae BART/Caltrain station, El Camino Real, and the Green Hills area, generally 12–15 minutes to the office.",
+    faqs: [
+      ["I live near SFO — should I be worried about my hearing?", "Living near the airport does not guarantee hearing loss, but chronic loud-noise exposure is a known risk factor. A baseline hearing test is a simple way to know where you stand and to catch gradual change early."],
+      ["How do I get to your office from Millbrae?", "Most Millbrae patients reach our San Mateo office in about 12–15 minutes via the 101 or El Camino Real. Call 650-342-9449 for directions."],
+    ],
+  },

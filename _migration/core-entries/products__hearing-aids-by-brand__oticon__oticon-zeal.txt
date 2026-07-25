@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/oticon/oticon-zeal/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Oticon Zeal Hearing Aids on the Peninsula",
+  intro: [
+    "Oticon Zeal is part of Oticon's hearing aid lineup, offered to California Hearing Center patients who want dependable, well-supported technology from a manufacturer known for a natural, brain-friendly approach to sound.",
+    "Choosing a hearing aid is less about memorizing a model name and more about matching the device to your hearing loss, your ears, and the situations where listening feels hardest. That is where our fitting process comes in.",
+    "We fit Oticon devices in San Mateo and San Carlos, program them precisely to your prescription, and support them over time so the technology keeps working the way it should."
+  ],
+  sections: [
+    ["Where Oticon Zeal fits in", "Oticon offers a range of technology levels and styles so that people with different hearing needs, budgets, and lifestyles can find an appropriate match. We help you understand where a given model sits and whether it aligns with your goals."],
+    ["Selection starts with your hearing", "Before recommending any device, we complete a [thorough hearing evaluation](/hearing-testing/) that looks at your thresholds, speech understanding, and the everyday moments you find most challenging. Those results drive the recommendation."],
+    ["Programming and verification", "We program the devices to your specific hearing prescription and use real-ear measurement to confirm the output at your eardrum. This verification step is what turns good hardware into a genuinely useful hearing solution."],
+    ["Comfort, handling, and connectivity", "At your fitting we check physical comfort, set up any smartphone connectivity, and practice charging, cleaning, and troubleshooting so you leave confident about daily use."],
+    ["Ongoing care", "Follow-up visits let us fine-tune the sound as your brain adapts, and our team is here for [adjustments and repairs](/services/hearing-aid-repair/) down the road."]
+  ],
+  bulletLinks: [
+    ["Book a hearing evaluation", "/hearing-testing/"],
+    ["How fitting works", "/hearing-aid-fitting/"],
+    ["Explore all brands", "/products/hearing-aids-by-brand/"],
+    ["Repairs and maintenance", "/services/hearing-aid-repair/"],
+    ["San Carlos office", "/contact/san-carlos/"],
+    ["Read patient reviews", "/reviews/"]
+  ],
+  takeaways: [
+    "Oticon Zeal is one option within Oticon's broader hearing aid lineup.",
+    "The best model for you depends on your hearing test, ears, and listening priorities.",
+    "Verified fitting and follow-up support matter more than any single feature."
+  ],
+  faqs: [
+    ["How do I know which Oticon model is right for me?", "We match the technology to your hearing evaluation, lifestyle, dexterity, and budget. Rather than steering you toward one device, we explain the tradeoffs so you can choose with confidence."],
+    ["Can I try hearing aids before committing?", "Hearing aids are fit and adjusted over an initial period so you can experience them in real life. We talk through the process, follow-up schedule, and what to expect during your consultation."],
+    ["Do you service the devices after purchase?", "Yes. We provide cleanings, adjustments, reprogramming, and repair support so your hearing aids keep performing over time."]
+  ],
+  image: "/assets/oticon-zeal.png",
+  imageLabel: "Oticon hearing technology"
+},

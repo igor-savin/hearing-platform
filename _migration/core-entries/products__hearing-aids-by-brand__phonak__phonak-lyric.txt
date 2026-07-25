@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/phonak/phonak-lyric/": {
+  kicker: "Invisible Hearing Aids",
+  headline: "Phonak Lyric: 100% Invisible, Extended-Wear Hearing in San Mateo & San Carlos",
+  intro: [
+    "Phonak Lyric is unlike any other hearing aid we fit. It is placed deep inside the ear canal by a trained provider, sits completely out of sight, and is worn continuously, day and night, for months at a time before it is replaced.",
+    "Because Lyric stays in the canal around the clock, there are no batteries to change, no nightly charging, and nothing to put in or take out each day. For the right candidate, it is the closest thing to simply hearing better without thinking about a device at all.",
+    "Lyric is not for everyone, and candidacy depends on the size and shape of your ear canal, your hearing loss, and your ear health. California Hearing Center evaluates whether you are a good fit before recommending it."
+  ],
+  sections: [
+    ["How Lyric works", "Lyric is positioned deep in the ear canal close to the eardrum, which allows it to use your ear's natural anatomy to help direct and shape sound. It remains in place continuously rather than being removed each night."],
+    ["The extended-wear experience", "Because you wear Lyric 24 hours a day for an extended period, you can hear on the phone, in the shower's environment, while sleeping, and while exercising without handling a device. When the device reaches the end of its wear cycle, your provider replaces it."],
+    ["Who is a candidate", "Candidacy depends on ear canal anatomy, the degree and type of your hearing loss, and a healthy ear canal free of certain conditions. A [hearing evaluation](/hearing-testing/) and an ear exam help us determine whether Lyric is appropriate for you."],
+    ["What it does not replace", "Lyric suits certain hearing losses and lifestyles but is not the right answer for every situation. For some patients, a rechargeable or behind-the-ear style offers better performance or value. We compare honestly."],
+    ["Placement and follow-up", "Because Lyric is placed and replaced by a provider, your care is naturally tied to regular visits, where we check comfort, ear health, and sound quality."]
+  ],
+  bulletLinks: [
+    ["Check your candidacy with a hearing test", "/hearing-testing/"],
+    ["Learn about the Lyric program", "/products/hearing-aids-by-brand/lyric/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Earwax removal before fitting", "/services/earwax-removal/"],
+    ["Book at San Mateo", "/contact/san-mateo/"],
+    ["Book at San Carlos", "/contact/san-carlos/"]
+  ],
+  takeaways: [
+    "Phonak Lyric is a 100% invisible, extended-wear hearing aid placed deep in the canal by a provider.",
+    "It is worn continuously for months with no daily charging or battery changes.",
+    "Candidacy depends on ear canal anatomy, hearing loss, and ear health, so an evaluation comes first."
+  ],
+  faqs: [
+    ["Can other people see Lyric in my ear?", "No. Lyric sits deep in the ear canal and is designed to be completely invisible from the outside, which is one of the main reasons patients ask about it."],
+    ["Do I take Lyric out at night?", "No. Lyric is an extended-wear device meant to stay in the canal continuously, including during sleep, until your provider replaces it at the end of its wear period."],
+    ["Is everyone a candidate for Lyric?", "No. Candidacy depends on your ear canal size and shape, your hearing loss, and your ear health. We evaluate this before recommending Lyric and will suggest alternatives if it is not a good fit."]
+  ],
+  image: "/assets/phonak.webp",
+  imageLabel: "Phonak Lyric invisible hearing"
+},

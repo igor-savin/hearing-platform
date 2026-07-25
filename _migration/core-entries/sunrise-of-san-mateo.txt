@@ -1,0 +1,34 @@
+"/sunrise-of-san-mateo/": {
+  kicker: "Hearing Care for Seniors",
+  headline: "Hearing Care for Sunrise of San Mateo Residents & Families",
+  intro: [
+    "Sunrise of San Mateo is a Sunrise Senior Living assisted-living and memory-care community, home to older adults who deserve to stay part of every conversation. California Hearing Center sees residents and their families from Sunrise at our San Mateo office nearby, and at our San Carlos location, for testing, fittings, and the ongoing care hearing aids require.",
+    "We are an independent, locally run audiology practice. That means unhurried appointments, honest recommendations, and a clinician who follows a resident over time rather than selling a device and moving on. Below is what senior hearing care actually involves and how we support Sunrise families."
+  ],
+  sections: [
+    ["Hearing loss and staying connected in community living", "One of the quiet costs of hearing loss is withdrawal — a resident stops joining meals, activities, and chats because following them has become exhausting. Treating hearing loss is often the difference between a full social life inside the community and a shrinking one, which matters for mood and wellbeing."],
+    ["Choosing the right hearing aids for an older adult", "We match technology to the person, not the price tag. For seniors that usually means rechargeable batteries, larger controls, and automatic sound adjustment so there is nothing complicated to fiddle with. A device that is comfortable and easy to use is a device that gets worn."],
+    ["The link between hearing, falls, and thinking", "Studies associated with the Lancet Commission and Johns Hopkins point to untreated hearing loss as a risk factor associated with falls and cognitive decline. We are careful to say associated, not caused — but it is a compelling reason to act early rather than wait."],
+    ["Working alongside families and Sunrise caregivers", "Good hearing care in a senior community is a team effort. We are happy to explain a resident's hearing needs to family members and coach caregivers on clear-communication techniques so daily support and visits go more smoothly."]
+  ],
+  bulletLinks: [
+    ["Book a senior hearing evaluation", "/hearing-testing/"],
+    ["Directions to our San Mateo office", "/contact/san-mateo/"],
+    ["Senior-living hearing care overview", "/senior-living/"],
+    ["Atria Park of San Mateo residents", "/atria-park-of-san-mateo/"],
+    ["The Peninsula Regent residents", "/the-peninsula-regent/"],
+    ["The Stratford residents", "/the-stratford/"]
+  ],
+  takeaways: [
+    "We serve Sunrise of San Mateo residents and their families from our nearby San Mateo and San Carlos offices.",
+    "Untreated hearing loss is associated with social withdrawal, falls, and cognitive decline in seniors.",
+    "Simple, rechargeable, automatic hearing aids and a nearby audiologist make ongoing care manageable."
+  ],
+  faqs: [
+    ["Can you help a family member arrange hearing care for a Sunrise resident?", "Absolutely. Families often make the first call for a loved one. We can walk you through testing, device options, and how our San Mateo and San Carlos offices work with a senior's schedule and mobility."],
+    ["Will new hearing aids really change day-to-day life in the community?", "For many residents, yes. Hearing conversations at meals and activities again often brings people back into community life, which supports mood, engagement, and connection with staff and neighbors."],
+    ["What if a resident tried hearing aids before and gave up on them?", "That is common, and usually fixable. Poor fit or programming is often the culprit. We re-evaluate, adjust, and choose easier-to-use devices so they are worn and genuinely helpful this time."]
+  ],
+  image: "/assets/core/sunrise-of-san-mateo.svg",
+  imageLabel: "Hearing care for Sunrise of San Mateo residents"
+},

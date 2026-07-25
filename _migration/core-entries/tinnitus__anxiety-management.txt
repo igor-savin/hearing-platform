@@ -1,0 +1,37 @@
+"/tinnitus/anxiety-management/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Managing Tinnitus-Related Anxiety",
+  intro: [
+    "For many people, the hardest part of tinnitus is not the sound itself but the anxiety that grows around it. The mind reads a persistent, unexplained noise as a possible threat, and that alarm keeps attention locked onto the very thing you want to ignore. Understanding this loop is the first step toward loosening its grip.",
+    "Anxiety and tinnitus feed each other. Worry heightens the nervous system's arousal, which can make tinnitus seem louder and more constant, which in turn fuels more worry. Breaking the cycle rarely means forcing the sound away. More often it means changing how your brain and body respond to it.",
+    "The good news is that this reaction is learned, which means it can be unlearned. If you are new to the topic, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) offers helpful grounding."
+  ],
+  sections: [
+    ["Why tinnitus triggers anxiety", "The brain is wired to flag anything novel and unexplained as potentially important. A new or intrusive sound recruits the same threat-detection circuitry that responds to danger, which is why tinnitus can spark a genuine fight-or-flight response even though the sound itself is harmless."],
+    ["The attention trap", "The more you monitor tinnitus, the more neural resources you devote to it, and the louder it can seem. This is not imagination; attention genuinely amplifies perception. Learning to redirect attention, rather than fight the sound, is a cornerstone of relief."],
+    ["Evidence-based approaches", "Cognitive behavioral therapy has some of the strongest research support of any tinnitus intervention for reducing distress. Mindfulness-based approaches, paced breathing, and relaxation training can also calm the arousal that magnifies the sound."],
+    ["Sound as a comfort, not a mask", "Gentle background sound at night or during quiet, anxious moments reduces the stark contrast that makes tinnitus stand out. The goal is soothing enrichment, not blasting the sound into silence."],
+    ["Sleep, and why it matters", "Anxiety and tinnitus both worsen with poor sleep, and quiet bedrooms make tinnitus more noticeable. A consistent wind-down routine and low-level bedside sound often improve both."],
+    ["When to seek more support", "If anxiety, panic, or low mood is significant or persistent, please reach out to your physician or a mental health professional. Tinnitus care and mental health care work best together, and there is no reason to manage severe distress alone."]
+  ],
+  bulletLinks: [
+    ["Understanding stress and tinnitus", "/tinnitus/stress/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Sound sensitivity (hyperacusis)", "/hyperacusis/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Tinnitus and anxiety reinforce each other, but the loop can be interrupted.",
+    "CBT, mindfulness, and relaxation have real research support for easing tinnitus distress.",
+    "Persistent or severe anxiety deserves support from a physician or mental health professional."
+  ],
+  faqs: [
+    ["Does anxiety make tinnitus louder?", "It can make tinnitus seem louder. Anxiety heightens the nervous system's arousal and pulls attention toward the sound, both of which increase how prominent tinnitus feels, even when nothing has changed in the ear."],
+    ["Will my tinnitus go away if my anxiety improves?", "Reducing anxiety often makes tinnitus far less intrusive and easier to ignore, and some people find it fades into the background. Whether the underlying sound disappears depends on its cause, which is worth evaluating."],
+    ["Should I see a therapist for tinnitus anxiety?", "If tinnitus is driving significant worry, panic, or low mood, a therapist trained in CBT can be very helpful. We are glad to coordinate care alongside mental health support."]
+  ],
+  image: "/assets/core/tinnitus__anxiety-management.svg",
+  imageLabel: "Calming the tinnitus-anxiety cycle"
+},

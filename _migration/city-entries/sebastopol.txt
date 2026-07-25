@@ -1,0 +1,29 @@
+  "sebastopol": {
+    name: "Sebastopol",
+    county: "Sonoma County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 90 minutes north",
+    distanceTier: "far",
+    geo: { lat: 38.4021, lng: -122.8239 },
+    lede:
+      "Sebastopol grew up around apples long before grapes, and the Gravenstein orchards, the arts scene, and the offbeat sculpture along the Laguna still give it a character all its own in west Sonoma County. It is about ninety minutes north of us, and we will not pretend otherwise: our offices are down on the Peninsula. A few Sebastopol patients drive that stretch anyway, when the care they want is worth going out of their way for.",
+    hook: [
+      "Reserving the drive for the difficult cases",
+      "A routine hearing check or an ordinary pair of hearing aids is best handled close to home, and we would gladly point a Sebastopol patient to someone nearby for that. Where the trip south starts to make sense is the stubborn stuff: tinnitus that has resisted every attempt, Lenire treatment, a fitting that never quite worked, or a second opinion after a disappointing experience. Those are the visits we build carefully, with a full evaluation and a plan designed to keep you from driving back repeatedly.",
+    ],
+    motif: "wine",
+    localScene: [
+      "Apple country to the bay",
+      "Sebastopol runs from its walkable downtown and the Barlow arts-and-food district out through Gravenstein apple country and the wetlands of the Laguna de Santa Rosa. It sits a real distance from the Peninsula, and for routine hearing needs we would encourage you to look locally first. For focused tinnitus treatment, Lenire, or a tricky fitting, some Sebastopol patients decide the specialist experience justifies the drive south, and we make sure the visit is worth the effort.",
+    ],
+    whyHere:
+      "Sebastopol patients who come our way are typically seeking tinnitus and diagnostic expertise they could not assemble nearby. We respect the ninety-minute distance by packing care into efficient visits and coordinating follow-up so the drive stays occasional.",
+    landmarks:
+      "Patients travel south to our Peninsula offices from downtown Sebastopol, the Barlow, and the Laguna de Santa Rosa area, roughly ninety minutes by way of Highway 101.",
+    faqs: [
+      ["Is the drive from Sebastopol really worth it?", "For everyday care, a closer provider usually makes more sense. Sebastopol patients come to us mainly for specialized [tinnitus care](/tinnitus/), Lenire, and complex fittings, where the expertise justifies the trip, and we plan visits to minimize how often you return."],
+      ["Do you offer Lenire tinnitus treatment?", "Yes. Lenire and comprehensive tinnitus management are among the main reasons patients travel to us from across the North Bay, including Sebastopol."],
+      ["Can you consolidate my care into fewer trips?", "Yes. For patients driving a distance we combine testing, treatment, and counseling into focused visits and set up follow-up so the drive is a rare event."],
+    ],
+  },

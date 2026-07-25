@@ -1,0 +1,29 @@
+  "napa-county": {
+    name: "Napa County",
+    county: "Napa County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 60–90 minutes each way, depending on where in the county you start",
+    distanceTier: "far",
+    geo: { lat: 38.2975, lng: -122.2869 },
+    lede:
+      "Napa County is a real drive from the Peninsula — and yet patients make it. We are candid that our offices are in San Mateo and San Carlos, not in the North Bay. But some Napa Valley patients choose to travel to us for specialized care they want done right, particularly complex tinnitus treatment.",
+    hook: [
+      "Why some patients travel from wine country to the Peninsula",
+      "For everyday hearing tests and routine hearing aids, we always encourage patients to consider a provider close to home. Where distance can be worth it is specialized care — stubborn tinnitus, Lenire treatment, difficult fittings, or a second opinion after a frustrating experience elsewhere. Patients who travel to us from Napa typically come for that kind of expertise, and we structure their visits to make the trip count: thorough evaluation, treatment, and a follow-up plan that minimizes repeat drives.",
+    ],
+    motif: "wine",
+    localScene: [
+      "From the valley floor to the Peninsula",
+      "Napa County spans the city of Napa, American Canyon, Yountville, St. Helena, and Calistoga — wine country, tourism, and long rural stretches. It is genuinely far from the Peninsula, and for routine hearing care we'd point you to someone closer. But for specialized tinnitus treatment and Lenire, complex fittings, or a second opinion, some Napa Valley patients decide the expertise is worth the drive south — and when they do, we make the visit count.",
+    ],
+    whyHere:
+      "Napa County patients who come to us are usually seeking a level of tinnitus and diagnostic expertise they could not find locally. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive is the exception, not the routine.",
+    landmarks:
+      "Patients travel to our Peninsula offices from Napa, American Canyon, Yountville, St. Helena, and across the valley, generally an hour or more each way.",
+    faqs: [
+      ["You're far from Napa — why would I travel to you?", "For routine care, a local provider often makes sense. Patients travel to us from Napa mainly for specialized tinnitus treatment, Lenire, and complex cases, where the expertise justifies the drive. We plan visits to minimize repeat trips."],
+      ["Do you offer Lenire tinnitus treatment?", "Yes. We provide Lenire and comprehensive tinnitus care, which is one of the main reasons patients travel to us from farther parts of the Bay Area, including Napa County."],
+      ["Can you coordinate care so I don't have to drive down often?", "Yes. For patients traveling a distance, we consolidate testing, treatment, and counseling into efficient visits and build a follow-up plan that limits how often you need to make the trip."],
+    ],
+  },

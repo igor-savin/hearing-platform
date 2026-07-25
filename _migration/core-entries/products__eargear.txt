@@ -1,0 +1,36 @@
+"/products/eargear/": {
+  kicker: "Hearing Aid Accessories",
+  headline: "Ear Gear: Protecting Your Hearing Aids from Moisture and Loss",
+  intro: [
+    "Hearing aids are a significant investment, and everyday hazards, sweat, moisture, dust, wind, and accidental loss, are among the most common reasons they need repair or replacement. Ear Gear is a simple, effective solution: a soft protective sleeve that slips over behind-the-ear and receiver-in-canal devices to shield them from these threats without interfering with sound.",
+    "The sleeves come in sizes and colors to fit different devices, and many include a small cord that clips to clothing so a dislodged hearing aid stays with you rather than falling to the ground. California Hearing Center offers Ear Gear to patients at both the San Mateo and San Carlos offices.",
+    "If you are active, work outdoors, live in a humid setting, or simply want peace of mind, Ear Gear is an inexpensive way to protect devices you rely on every day."
+  ],
+  sections: [
+    ["What Ear Gear does", "Ear Gear is a spandex-style sleeve that fits over the body of a hearing aid, creating a barrier against sweat, moisture, dirt, and wind while leaving the microphones and sound path clear."],
+    ["Protection against loss", "Many Ear Gear models include a cord and clip that attach to clothing, so if a device slips off during exercise, play, or a busy day, it stays tethered rather than lost."],
+    ["Who benefits most", "Active adults, outdoor workers, children, and anyone in a humid or dusty environment gain the most, but any wearer who wants to reduce moisture-related repairs can benefit."],
+    ["Sizes and fit", "Ear Gear comes in different sizes to match behind-the-ear and receiver-in-canal devices. We help confirm the right size so the sleeve fits snugly without affecting comfort or sound."],
+    ["Part of caring for your devices", "Ear Gear complements good habits like nightly drying and routine cleaning. Combined with periodic service, it helps your hearing aids last and perform reliably."]
+  ],
+  bulletLinks: [
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["Hearing aid repair", "/services/hearing-aid-repair/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["All products", "/products/"],
+    ["Contact us", "/contact/"]
+  ],
+  takeaways: [
+    "Ear Gear is a protective sleeve that shields hearing aids from sweat, moisture, dust, and wind.",
+    "Many models include a cord and clip to prevent accidental loss.",
+    "It is an inexpensive way to reduce moisture-related repairs and protect your investment."
+  ],
+  faqs: [
+    ["What is Ear Gear and how does it work?", "Ear Gear is a soft, sweat-resistant sleeve that slips over behind-the-ear or receiver-in-canal hearing aids. It blocks moisture, dust, and wind while keeping the microphones and sound path clear, and many versions add a cord to prevent loss."],
+    ["Will Ear Gear affect how my hearing aids sound?", "Ear Gear is designed to protect the device without blocking the microphones or sound outlet, so it should not meaningfully change how you hear. Proper sizing matters, and we help make sure it fits correctly."],
+    ["Do I need Ear Gear if I already dry my hearing aids at night?", "Nightly drying is excellent, and Ear Gear adds daytime protection against sweat, rain, dust, and accidental loss. The two work well together, especially for active people or humid environments."]
+  ],
+  image: "/assets/ear-gear.webp",
+  imageLabel: "Ear Gear protective sleeves"
+},

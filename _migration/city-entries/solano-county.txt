@@ -1,0 +1,29 @@
+  "solano-county": {
+    name: "Solano County",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "northeast of the bay",
+    distanceTier: "far",
+    geo: { lat: 38.25, lng: -122.0 },
+    lede:
+      "Solano County stretches from the waterfront cities of the Carquinez Strait out to the farmland bordering Sacramento — Vallejo, Benicia, Fairfield, Suisun City, Vacaville, Dixon, and Rio Vista. It sits well to the northeast of the bay, a real distance from us: our offices are on the San Mateo Peninsula, so for routine hearing care, most Solano residents will find a closer provider more practical.",
+    hook: [
+      "Why some Solano patients travel to the Peninsula",
+      "We're candid about the drive. For standard hearing tests and everyday hearing aids, a provider close to home is the sensible choice. Where the distance can be worth it is specialized care — complex [tinnitus](/tinnitus/), Lenire treatment, difficult fittings, or a second opinion after a frustrating experience elsewhere. Solano patients who come to us come for that kind of expertise, and we design their visits to make the trip count with a thorough evaluation, treatment, and a follow-up plan that limits repeat drives.",
+    ],
+    motif: "civic",
+    localScene: [
+      "From the strait to the Delta",
+      "Solano County packs a lot of variety into its borders — the naval and maritime history of Vallejo and Mare Island, historic Benicia on the Carquinez Strait, the county seat at Fairfield near Travis Air Force Base, marsh-side Suisun City, growing Vacaville, and the farm and Delta towns of Dixon and Rio Vista. Between the marine and Delta humidity along the water and the industrial and agricultural noise inland, county residents face a real mix of hearing challenges — and a few decide the specialized care down on the Peninsula is worth the drive.",
+    ],
+    whyHere:
+      "Solano County patients who travel to us are usually seeking a depth of tinnitus and diagnostic expertise they couldn't find locally. We respect the distance by consolidating testing, treatment, and counseling into efficient visits and coordinating follow-up so the long drive stays the exception.",
+    landmarks:
+      "Patients reach our Peninsula offices from across Solano County — Vallejo, Benicia, Fairfield, Suisun City, Vacaville, Dixon, and Rio Vista — generally an hour or more to the southwest via I-80 and the bridges.",
+    faqs: [
+      ["Solano's a long way from the Peninsula — why come to you?", "For routine care, a local provider usually makes more sense. Solano patients travel to us mainly for specialized tinnitus treatment, Lenire, and complex cases where the expertise justifies the drive. We plan visits to minimize repeat trips."],
+      ["Which Solano cities do you see patients from?", "From all of them — Vallejo, Benicia, Fairfield, Suisun City, Vacaville, Dixon, and Rio Vista. Each has its own drive to the Peninsula, generally an hour or more."],
+      ["Do you offer Lenire and comprehensive tinnitus care?", "Yes. Tinnitus care, including Lenire, is one of the main reasons patients travel to us from farther parts of the Bay Area, Solano County included. Call 650-342-9449 to learn more."],
+    ],
+  },

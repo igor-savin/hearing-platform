@@ -1,0 +1,36 @@
+"/tinnitus/menieres/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Ménière's Disease and Tinnitus",
+  intro: [
+    "Ménière's disease is a disorder of the inner ear that can make tinnitus part of a larger, more disruptive picture. Unlike tinnitus that stays fairly steady, the tinnitus of Ménière's often fluctuates and travels alongside episodes of vertigo, changing hearing, and a feeling of fullness in the affected ear.",
+    "Ménière's is a medical condition that requires diagnosis and management by a physician, typically an ear, nose, and throat specialist. Audiology plays an important supporting role, but this page is educational and not a substitute for medical evaluation.",
+    "If you are learning the basics, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) offers helpful context for how tinnitus relates to inner-ear health."
+  ],
+  sections: [
+    ["The classic pattern", "Ménière's is usually described by a cluster of symptoms: episodes of spinning vertigo, fluctuating hearing loss, tinnitus, and a sensation of pressure or fullness in one ear. Symptoms tend to come in attacks that can last from minutes to hours, often with symptom-free stretches in between."],
+    ["How its tinnitus differs", "The tinnitus of Ménière's is frequently low-pitched, described as a roaring, rumbling, or ocean-like sound, and it may intensify before or during an attack. It commonly affects one ear, at least in the early stages."],
+    ["Why medical diagnosis matters", "Several conditions can imitate Ménière's, so a proper diagnosis is essential. An ENT can evaluate your history and examination, and a [hearing evaluation](/hearing-testing/) documenting fluctuating, often low-frequency hearing loss is an important piece of that workup."],
+    ["Management approaches", "Care is directed by your physician and may include dietary changes such as reducing salt, addressing triggers, medications, and other measures. Because Ménière's often involves hearing loss and bothersome tinnitus, audiology support with hearing aids and sound therapy can be valuable alongside medical treatment."],
+    ["When to seek prompt care", "Sudden severe vertigo, sudden hearing loss, or new one-sided symptoms should be evaluated promptly. Any new neurological symptoms, such as weakness, double vision, or trouble speaking, are an emergency and warrant immediate medical attention."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Diet and lifestyle", "/tinnitus/diet-lifestyle/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Ménière's pairs tinnitus with vertigo, fluctuating hearing loss, and ear fullness, usually in one ear.",
+    "Its tinnitus is often low-pitched and roaring, and may flare with attacks.",
+    "Diagnosis and management belong with a physician; audiology supports hearing and tinnitus care."
+  ],
+  faqs: [
+    ["How is Ménière's tinnitus different from ordinary tinnitus?", "It tends to be low-pitched and roaring rather than a high ring, often affects one ear, and typically comes bundled with vertigo, fluctuating hearing, and ear fullness. It may also worsen around an attack, then settle."],
+    ["Can Ménière's disease be cured?", "There is no cure, but many people manage it well. Physician-directed strategies, sometimes including dietary changes, medications, and other measures, can reduce the frequency and severity of attacks, and audiology support can help with hearing and tinnitus."],
+    ["Should I see a doctor if I think I have Ménière's?", "Yes. Because other conditions can mimic it and because prompt care matters for symptoms like sudden hearing loss or severe vertigo, an ENT evaluation is important. A hearing test is a valuable part of that assessment."]
+  ],
+  image: "/assets/core/tinnitus__menieres.svg",
+  imageLabel: "Inner-ear disease and tinnitus"
+},

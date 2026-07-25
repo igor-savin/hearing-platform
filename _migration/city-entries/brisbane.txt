@@ -1,0 +1,29 @@
+  "brisbane": {
+    name: "Brisbane",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 15 minutes north of our San Mateo office on the 101",
+    distanceTier: "mid",
+    geo: { lat: 37.6805, lng: -122.3999 },
+    lede:
+      "Brisbane is a small, tight-knit hillside town tucked against San Bruno Mountain at the north edge of the county, looking out over the bay and its own lagoon. Known for the string of holiday stars residents light on the mountainside each winter, it has a village feel — and our San Mateo office is a straightforward fifteen minutes south on the 101.",
+    hook: [
+      "Small-town living, big-city listening",
+      "Brisbane residents live in a quiet pocket but rarely stay put — the city sits between San Francisco and the Peninsula, and daily life means the bustle of both. Modern hearing aids are built for exactly that range of settings, shifting automatically from a hushed home on the hill to a loud restaurant, a crowded event, or a windy walk along the marina. Getting that performance depends on a careful fitting verified with real-ear measurement, so speech stays clear wherever your day takes you.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "Between the mountain and the bay",
+      "Brisbane runs from the trails of San Bruno Mountain State Park down through the neighborhoods off Old County Road and Visitacion Avenue to the Brisbane Lagoon, the marina, and the newer development out at Sierra Point. It is compact and neighborly, the kind of place where people know their audiologist by name. For that community we offer thorough testing, honest technology, and dependable follow-up, an easy drive down the bayside 101 to San Mateo.",
+    ],
+    whyHere:
+      "Brisbane patients choose us for the personal, independent care that suits a small town — real time with the same audiologist, straightforward advice, and specialized tinnitus expertise. We make the short trip down the 101 worthwhile with testing and fittings done thoroughly, the first time.",
+    landmarks:
+      "We are about fifteen minutes from Brisbane's Old County Road, the Brisbane Lagoon, and Sierra Point, straight down the 101 to our San Mateo office.",
+    faqs: [
+      ["Where is the nearest audiologist to Brisbane?", "Our San Mateo office is about fifteen minutes south of Brisbane on the 101, one of the closer full-service audiology practices to the north county."],
+      ["Will my hearing aids handle both quiet and noisy places?", "Yes. Today's devices adapt automatically between settings, and we verify performance with real-ear measurement so speech stays clear from a quiet home to a loud restaurant."],
+      ["Do you treat tinnitus as well as fit hearing aids?", "We do. Alongside comprehensive testing and fittings, we offer focused [tinnitus care](/tinnitus/), including Lenire, for patients across Brisbane and the north Peninsula."],
+    ],
+  },

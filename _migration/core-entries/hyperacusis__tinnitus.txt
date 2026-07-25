@@ -1,0 +1,36 @@
+"/hyperacusis/tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "The Overlap Between Hyperacusis and Tinnitus",
+  intro: [
+    "Hyperacusis and tinnitus are distinct conditions that frequently travel together. Many people who experience reduced sound tolerance also perceive ringing or buzzing with no external source, and the two can reinforce each other in ways that make either feel worse.",
+    "Understanding the overlap matters because it shapes treatment. A plan that addresses only one when both are present tends to underperform, while an approach that accounts for the shared mechanisms often helps both at once.",
+    "This page looks at why the two conditions co-occur, how they interact, and how evaluation and therapy can address them together. Organizations such as the American Tinnitus Association discuss both conditions and their frequent connection."
+  ],
+  sections: [
+    ["Why they often occur together", "Both hyperacusis and tinnitus involve changes in how the auditory system processes sound, and both are commonly linked to hearing loss and noise exposure. Shared underlying mechanisms are part of why one so often accompanies the other."],
+    ["How each can amplify the other", "Sound sensitivity can lead people to seek silence, and quiet tends to make tinnitus more prominent, which raises stress, which in turn heightens sound sensitivity. Recognizing this loop is the first step to interrupting it rather than feeding it."],
+    ["Evaluating both at once", "A combined assessment covers hearing thresholds, tinnitus characteristics, and sound-tolerance measures together, usually starting with a full [hearing test](/hearing-testing/). Looking at the whole picture prevents a plan that inadvertently worsens one condition while treating the other."],
+    ["Sound therapy that serves both", "Carefully chosen sound enrichment can help both conditions: it gives tinnitus a gentler background to fade into while gradually rebuilding tolerance for hyperacusis. Levels are set comfortably and adjusted slowly, which is why professional guidance is important."],
+    ["Avoiding the silence trap", "The instinct to protect the ears and avoid noise can worsen both conditions at the same time, making tinnitus louder against silence and the auditory system more sensitive. A balanced, gradual approach to sound usually serves both better than avoidance."]
+  ],
+  bulletLinks: [
+    ["Hyperacusis overview", "/hyperacusis/"],
+    ["Coping strategies", "/hyperacusis/coping/"],
+    ["When to seek professional help", "/hyperacusis/when-to-seek-help/"],
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["What tinnitus is", "/tinnitus/what-is-tinnitus/"],
+    ["Start with a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "Hyperacusis and tinnitus are separate conditions that frequently occur together.",
+    "They can reinforce each other, especially when silence and avoidance take over.",
+    "Evaluating and treating both together usually works better than addressing one alone."
+  ],
+  faqs: [
+    ["If I have both tinnitus and hyperacusis, which should I treat first?", "Often they are best addressed together, because they share mechanisms and can worsen each other. A combined evaluation lets us build one plan that improves sound tolerance while helping tinnitus fade, rather than treating them in isolation."],
+    ["Does treating hyperacusis help my tinnitus too?", "It can. Because both respond to carefully graded sound therapy and to reducing the stress-and-silence cycle, an approach aimed at rebuilding sound tolerance frequently eases tinnitus as well, though results vary by individual."],
+    ["Will avoiding sound protect me from both?", "Usually the opposite. Persistent silence tends to make tinnitus more noticeable and the auditory system more sensitive, worsening both. A balanced, gradual return to comfortable sound, guided by a professional, is generally healthier."]
+  ],
+  image: "/assets/core/hyperacusis__tinnitus.svg",
+  imageLabel: "Where sound sensitivity and tinnitus meet"
+},

@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/signia/": {
+  kicker: "Hearing Aid Brands",
+  headline: "Signia Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Signia, which carries the heritage of the former Siemens hearing aid business, is a large manufacturer known for polished styling and its own-voice processing. A common frustration for new hearing aid users is that their own voice suddenly sounds strange or booming; Signia developed technology specifically to make the wearer's own voice sound more natural, which can ease that early adjustment.",
+    "Signia also offers distinctive styles, including slim, contemporary designs, along with strong connectivity and rechargeable options. California Hearing Center fits Signia at our San Mateo and San Carlos offices among several capable brands.",
+    "Whether Signia suits you depends on your hearing loss and preferences, confirmed through testing and [expert fitting](/hearing-aid-fitting/) with real-ear verification."
+  ],
+  sections: [
+    ["Own-voice processing", "Signia is well known for technology that processes the wearer's own voice separately, aiming to keep it natural. This can smooth one of the most common complaints during the first weeks of wearing hearing aids."],
+    ["Modern styling", "Signia offers sleek, contemporary designs, including slim receiver styles that some patients find more discreet and appealing than traditional shapes."],
+    ["Connectivity and rechargeability", "Signia supports Bluetooth streaming, app control, and rechargeable batteries across much of its lineup, fitting people who want both technology and convenience."],
+    ["Who Signia may suit", "People bothered by how their own voice sounds through hearing aids, and those who value styling and connectivity, often find Signia a comfortable match."],
+    ["Verified to your prescription", "Own-voice comfort still needs accurate amplification behind it. We program and confirm output with real-ear measurement so the device fits your hearing, not just your ear."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Rexton", "/products/hearing-aids-by-brand/rexton/"],
+    ["Widex", "/products/hearing-aids-by-brand/widex/"]
+  ],
+  takeaways: [
+    "Signia is known for own-voice processing, modern styling, and strong connectivity.",
+    "It often suits people bothered by how their own voice sounds through hearing aids.",
+    "The right brand is the one that measures and sounds best for your ears after professional fitting."
+  ],
+  faqs: [
+    ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for own-voice processing that keeps the wearer's own voice sounding natural, along with sleek styling, connectivity, and rechargeable options."],
+    ["Why does my own voice sound strange with hearing aids?", "Amplification can make your own voice sound booming or unnatural at first. Signia developed processing to address this, and thoughtful fitting and a short adjustment period also help most people adapt comfortably."],
+    ["Is Signia related to Siemens?", "Yes. Signia grew out of the former Siemens hearing aid division and continues much of that engineering heritage under the Signia name today."]
+  ],
+  image: "/assets/signia.webp",
+  imageLabel: "Signia own-voice processing"
+},

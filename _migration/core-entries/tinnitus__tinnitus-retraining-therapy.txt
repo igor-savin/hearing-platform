@@ -1,0 +1,36 @@
+"/tinnitus/tinnitus-retraining-therapy/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Retraining Therapy (TRT) Explained",
+  intro: [
+    "Tinnitus retraining therapy, usually shortened to TRT, is a structured approach that combines low-level sound therapy with directive counseling. Rather than trying to erase the sound, TRT aims to help the brain reclassify tinnitus as a neutral signal it can safely ignore, a process clinicians call habituation.",
+    "The method grew out of a neurophysiological model of tinnitus and is described by organizations such as the American Tinnitus Association and ASHA. It is not a quick fix; it is a gradual retraining process that typically unfolds over many months rather than a few visits.",
+    "At California Hearing Center, we apply TRT principles as part of an individualized plan, alongside well-fit hearing aids and other strategies where they help. Where a more intensive option is appropriate, we can also discuss Lenire bimodal neuromodulation for candidates who qualify."
+  ],
+  sections: [
+    ["The two pillars: sound plus counseling", "TRT rests on two components used together. Sound therapy provides gentle, enriched background sound so tinnitus stands out less against silence, while directive counseling reframes what the sound means so it stops triggering a stress response. Neither pillar works as well alone."],
+    ["Why habituation is the goal", "The aim is not to make the sound louder or quieter but to change your reaction to it. Over time, many people stop consciously noticing tinnitus for long stretches, much as you stop noticing a refrigerator hum. This is a realistic target for a large share of motivated patients, though timelines vary."],
+    ["The role of sound enrichment", "Avoiding silence is central. Constant quiet tends to make tinnitus more prominent, so TRT encourages a comfortable, non-intrusive sound environment using ambient noise, sound generators, or hearing aids that both amplify speech and add gentle background sound when hearing loss is present."],
+    ["Directive counseling in practice", "Counseling explains how hearing and the auditory brain generate and sustain tinnitus, which reduces the fear and catastrophic thinking that make it worse. Understanding the mechanism is itself therapeutic, and it makes the sound feel less threatening."],
+    ["Setting honest expectations", "TRT asks for patience and consistency. Progress is gradual and not guaranteed for everyone, and results depend on your hearing, the nature of your tinnitus, and how consistently the plan is followed. We favor realistic expectations over marketing promises."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Hearing aids for tinnitus", "/products/hearing-aids-by-brand/"],
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["What tinnitus is", "/tinnitus/what-is-tinnitus/"],
+    ["What relief typically looks like", "/tinnitus/success-stories/"],
+    ["Book a tinnitus visit", "/contact/"]
+  ],
+  takeaways: [
+    "TRT combines low-level sound enrichment with directive counseling to promote habituation over time.",
+    "The goal is a changed reaction to tinnitus, not elimination of the sound itself.",
+    "It is a gradual, months-long process whose results vary and depend on consistency."
+  ],
+  faqs: [
+    ["How long does TRT take to work?", "TRT is a gradual process, and meaningful habituation often develops over many months rather than weeks. Consistency with sound enrichment and follow-up counseling tends to matter more than speed."],
+    ["Do I need special equipment for TRT?", "Not always. Some people use ambient sound or sound generators, while those with hearing loss often benefit from hearing aids that amplify and can add gentle background sound. We match the tools to your hearing and tinnitus."],
+    ["Is TRT the same as just masking the sound?", "No. Masking tries to cover tinnitus with louder sound, while TRT deliberately uses low-level sound below the tinnitus so the brain can learn to tune it out. The counseling component is what distinguishes true retraining from simple masking."]
+  ],
+  image: "/assets/core/tinnitus__tinnitus-retraining-therapy.svg",
+  imageLabel: "Sound therapy and directive counseling"
+},

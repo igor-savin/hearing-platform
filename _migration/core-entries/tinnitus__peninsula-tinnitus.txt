@@ -1,0 +1,36 @@
+"/tinnitus/peninsula-tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Peninsula Tinnitus Care in San Mateo & San Carlos",
+  intro: [
+    "The Peninsula is our home. Both California Hearing Center offices sit here, one at 88 N. San Mateo Drive in San Mateo and one at 1008 Laurel Street in San Carlos, which means Peninsula patients get dedicated tinnitus care close by rather than as a long-distance errand.",
+    "For neighbors in San Mateo, San Carlos, Belmont, Redwood City, Foster City, Burlingame, and the surrounding communities, that proximity makes a real difference. A tinnitus program benefits from convenient follow-up, and being minutes away removes a common barrier to sticking with the plan.",
+    "This is the practice's core service area, so it is where we can offer the fullest, most convenient tinnitus experience: thorough evaluation, structured therapy, verified hearing aids, and Lenire for suitable candidates."
+  ],
+  sections: [
+    ["Two convenient Peninsula offices", "Our [San Mateo office](/contact/san-mateo/) and [San Carlos office](/contact/san-carlos/) are only a few miles apart, so most Peninsula patients can pick whichever is easier and switch if their schedule changes. Short drives make the follow-up visits that tinnitus care relies on far easier to keep."],
+    ["Care built around your neighborhood", "Living nearby lets us schedule the periodic check-ins that help a tinnitus plan take hold, from fine-tuning sound enrichment to adjusting hearing aids. Convenience is not a luxury here; consistency is part of what makes habituation work."],
+    ["The full range of options, close to home", "Peninsula patients have local access to everything we offer for tinnitus: a full [hearing evaluation](/hearing-testing/), tinnitus retraining principles, real-ear-verified amplification, and Lenire bimodal neuromodulation for those who qualify after assessment."],
+    ["Familiar with local hearing demands", "The Peninsula mixes quiet neighborhoods with busy restaurants, commutes, and tech-workplace noise. We tailor tinnitus and hearing plans to the environments you actually spend time in, so relief holds up in real Peninsula life rather than only in a quiet booth."],
+    ["When to be seen right away", "Even close by, some symptoms cannot wait for a routine slot. Sudden hearing loss, sudden or one-sided tinnitus, pulsatile tinnitus, or tinnitus with dizziness should be evaluated promptly, and we can help you understand the right urgent step."]
+  ],
+  bulletLinks: [
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["San Carlos office", "/contact/san-carlos/"],
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["Why choose our tinnitus care", "/tinnitus/why-choose-us/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Areas we serve", "/areas-we-serve/"]
+  ],
+  takeaways: [
+    "Both offices are on the Peninsula, in San Mateo and San Carlos, close to most local patients.",
+    "Proximity makes the follow-up visits that tinnitus care depends on easy to keep.",
+    "Peninsula patients have local access to evaluation, verified hearing aids, and Lenire."
+  ],
+  faqs: [
+    ["Which office should Peninsula patients choose?", "Whichever is more convenient. Our San Mateo and San Carlos offices are only a few miles apart, and you can start at one and follow up at the other if that suits your schedule better."],
+    ["Why does being local help with tinnitus?", "Tinnitus care works best with consistent follow-up, whether adjusting sound enrichment or fine-tuning hearing aids. Living nearby removes the travel friction that often causes people to abandon a plan too early."],
+    ["Can I be seen quickly if my tinnitus is new?", "Yes, and you should be. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, warrants prompt attention. Contact us and we will help you understand the appropriate urgent step."]
+  ],
+  image: "/assets/core/tinnitus__peninsula-tinnitus.svg",
+  imageLabel: "Local tinnitus care across the Peninsula"
+},

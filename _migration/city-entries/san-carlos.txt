@@ -1,0 +1,30 @@
+  "san-carlos": {
+    name: "San Carlos",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Carlos",
+    approxDrive: "right in town on Laurel Street, in the heart of downtown",
+    distanceTier: "office",
+    geo: { lat: 37.5072, lng: -122.2605 },
+    lede:
+      "San Carlos — the “City of Good Living” — is one of our two home offices. We see patients at 1008 Laurel Street, in the middle of the downtown Laurel Street district, so a hearing appointment fits easily around lunch, errands, or a stop at the farmers' market.",
+    hook: [
+      "A downtown office built around long-term hearing care",
+      "Living minutes from your audiologist makes the ongoing side of hearing care effortless. Rechargeable hearing aids that need a firmware update, a wax guard change, a tinnitus check-in, or a warranty repair are all quick visits rather than a project. For San Carlos residents, that convenience is often the difference between hearing aids that get worn every day and ones that end up in a drawer.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A San Carlos practice that knows the neighborhoods",
+      "The White Oaks and Howard Park neighborhoods, the mid-century Eichler tracts, and the hillside homes toward Crestview and Devonshire each bring their own patients through our doors. San Carlos also sits beside its own small airport and the Hiller Aviation Museum, and along the El Camino and 101 corridors — settings where a baseline hearing test and, when needed, custom protection make real sense. Being downtown on Laurel Street means we see our patients around town, which keeps care personal.",
+    ],
+    whyHere:
+      "San Carlos patients choose us for careful, unhurried evaluations and honest technology guidance right in their own downtown. We handle everything from first-time hearing tests to complex tinnitus care and Lenire treatment, and we see patients across every stage of life, from working professionals to retirees.",
+    landmarks:
+      "The office is walkable from the Laurel Street shops and a short drive from White Oaks, Howard Park, and the Eichler neighborhoods, with San Carlos Airport and the 101 just to the east.",
+    faqs: [
+      ["Where is your San Carlos office located?", "We are at 1008 Laurel Street, 94070, in downtown San Carlos. Reach us at 650-342-9449 for hours and parking."],
+      ["Can I be seen at either the San Mateo or San Carlos office?", "Yes. Many patients pick whichever office is more convenient on a given day. Your records and hearing aid settings are shared between both locations."],
+    ],
+  },
+
+  // ---------------------------------------------------------------- CORE PENINSULA

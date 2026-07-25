@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/widex/": {
+  kicker: "Hearing Aid Brands",
+  headline: "Widex Hearing Aids: Natural Sound on the Peninsula",
+  intro: [
+    "Widex, a Danish manufacturer, has long been associated with natural, high-fidelity sound. Many musicians and people who are particular about sound quality gravitate toward Widex for its clean, realistic reproduction, and its PureSound approach is designed to deliver an especially natural, low-distortion listening experience with minimal artificial processing delay.",
+    "That focus makes Widex a frequent match for people who prioritize how music and voices actually sound, not just intelligibility in noise. California Hearing Center fits Widex at both San Mateo and San Carlos as one of several options.",
+    "Whether Widex is the right choice depends on your hearing loss and what you value most in sound, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+  ],
+  sections: [
+    ["A reputation for natural sound", "Widex is widely regarded for clean, realistic sound reproduction that many listeners describe as natural and pleasant, particularly for music and voices."],
+    ["The PureSound approach", "Widex's PureSound aims for a very natural listening experience with minimal processing delay, which can reduce the artificial or tinny quality some people notice with amplification."],
+    ["Who Widex may suit", "Music lovers, audiophiles, and anyone who finds heavily processed sound unnatural often respond well to Widex's emphasis on fidelity and realism."],
+    ["Styles and features", "Widex offers receiver-in-canal, behind-the-ear, and custom styles, with rechargeable options and smartphone connectivity so its sound philosophy pairs with modern convenience."],
+    ["Tuned to your prescription, then checked", "Natural sound still has to match your prescription. We use real-ear measurement to confirm the amplification is correct across the frequencies you need."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Signia", "/products/hearing-aids-by-brand/signia/"],
+    ["ReSound", "/products/hearing-aids-by-brand/resound/"]
+  ],
+  takeaways: [
+    "Widex is known for natural, high-fidelity sound and its PureSound approach.",
+    "It often suits musicians and people who prioritize realistic sound quality.",
+    "We fit across the field because the ideal brand varies person to person, confirmed by verification."
+  ],
+  faqs: [
+    ["What is Widex known for?", "Widex is recognized for natural, high-fidelity sound reproduction. Its PureSound approach aims to minimize processing delay for an especially realistic listening experience, which appeals to people who care about sound quality."],
+    ["Are Widex hearing aids good for musicians?", "Many musicians and audiophiles favor Widex for its clean, natural sound. That said, the right device depends on your specific hearing loss and goals, which we assess during your evaluation."],
+    ["Does natural sound mean better hearing in noise?", "Natural sound and noise performance are related but distinct. Widex balances fidelity with noise management; if difficult noisy environments are your main concern, we compare how each brand handles them for your hearing."]
+  ],
+  image: "/assets/widex.webp",
+  imageLabel: "Widex natural sound quality"
+},

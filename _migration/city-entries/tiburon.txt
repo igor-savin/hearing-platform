@@ -1,0 +1,29 @@
+  "tiburon": {
+    name: "Tiburon",
+    county: "Marin County",
+    region: "north-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly an hour north",
+    distanceTier: "far",
+    geo: { lat: 37.8735, lng: -122.4566 },
+    lede:
+      "Tiburon occupies a slender peninsula reaching into the bay, with some of the finest water views in Marin — across to Angel Island, Belvedere, and the San Francisco skyline beyond. Its downtown gathers along Main Street and the historic Ark Row near the ferry landing. We are candid that our offices are on the far side of the bay, about an hour south, so Tiburon patients generally travel to us for a specific reason rather than convenience.",
+    hook: [
+      "Salt air, bay views, and hearing that keeps up",
+      "Life in Tiburon plays out along the water — ferry rides, waterfront dining, walks out to Blackie's Pasture — and two things follow from that. The damp bay air is hard on hearing aids, so moisture-resistant devices and a drying routine matter; and the settings you care about, from a breezy deck to a lively restaurant, demand hearing that performs in real conditions. We verify each fitting and tune it for the environments you actually live in, then keep it maintained against the salt air.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A peninsula town with the water on three sides",
+      "Tiburon's landmarks trace its shoreline: the Main Street and Ark Row shops by the ferry, the path out to Blackie's Pasture and Richardson Bay, the hilltop chapel at Old St. Hilary's, and neighboring Belvedere's island lanes. Bay breezes and marine moisture are part of daily life here, and both influence how hearing technology holds up. For patients from Tiburon we favor durable, moisture-smart fittings, careful verification, and technology matched honestly to a life spent near the water.",
+    ],
+    whyHere:
+      "Patients from Tiburon usually come to us for the specialized work — complex [tinnitus care](/tinnitus/) and Lenire, difficult fittings, moisture-related repairs, or a trusted second opinion — with the continuity of one audiologist over time. Many first arrived for ringing or a fitting that hadn't gone right elsewhere. For routine maintenance, we are the first to say a closer Marin office may be more practical.",
+    landmarks:
+      "We are about an hour south of Tiburon's Main Street and Ark Row, Blackie's Pasture, and neighboring Belvedere, down Highway 101 and over the Golden Gate to our San Mateo office.",
+    faqs: [
+      ["Why travel from Tiburon when there are closer options?", "For everyday care, convenience is a fair reason to stay local. People make the drive to us for specialized tinnitus and Lenire treatment, hard fittings, and second opinions — where expertise and time outweigh the distance."],
+      ["Does living by the bay affect my hearing aids?", "Salt air and humidity can let moisture collect inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices, nightly drying, and regular cleaning prevent most of it, and we help waterfront patients set up a routine that holds."],
+      ["How long is the drive from Tiburon to your office?", "Roughly an hour down Highway 101 and across the Golden Gate to San Mateo. Call 650-342-9449 and we will set aside time so one visit accomplishes as much as possible."],
+    ],
+  },

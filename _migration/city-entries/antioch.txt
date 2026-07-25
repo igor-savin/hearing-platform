@@ -1,0 +1,29 @@
+  "antioch": {
+    name: "Antioch",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 70 minutes from our San Mateo office, west across the East Bay",
+    distanceTier: "far",
+    geo: { lat: 38.0049, lng: -121.8058 },
+    motif: "bayside",
+    lede:
+      "Antioch grew up along the San Joaquin River, its historic Rivertown waterfront looking out over the Delta at the far northeast corner of the county. That's a long way from the Peninsula — our offices are about 70 minutes southwest of here, in San Mateo and San Carlos — so we're candid that we're a specialist's trip, not the corner audiologist.",
+    hook: [
+      "Rivertown roots, and where specialized care lives",
+      "Out at the edge of the Delta, the options for specialized hearing care thin out. A routine hearing test you can find close to home, but complex [tinnitus care](/tinnitus/), Lenire treatment, and difficult hearing-aid fittings are another matter — those tend to require a longer trip anywhere in far East County. Antioch patients who need that depth of care are already used to traveling for it, and we make the drive worthwhile by making each visit thorough.",
+    ],
+    localScene: [
+      "River town at the county's edge",
+      "Antioch stretches from the old brick storefronts of Rivertown along the San Joaquin River out past Contra Loma Regional Park, the trails of Black Diamond Mines, and the fields of the far East County. It's a spread-out, riverside city where getting to specialized services often means driving. For patients dealing with persistent tinnitus or hearing aids that never fit right, that longer trip to a focused practice is one many decide is worth making.",
+    ],
+    whyHere:
+      "Antioch patients come to us for the things that are hard to find nearby — a meticulous diagnostic evaluation, honest device guidance, and dedicated tinnitus and Lenire care. For everyday needs we'll gladly say a closer provider may suit you; we're here for the complex cases.",
+    landmarks:
+      "We're about 70 minutes from Rivertown, Contra Loma Regional Park, and the Antioch riverfront, heading west across the East Bay to our San Mateo office.",
+    faqs: [
+      ["That's a long drive — why come to you from Antioch?", "Honestly, for a routine test it may not make sense. Patients make the trip for specialized tinnitus care, Lenire, second opinions, and fittings that need extra expertise. We plan visits so the drive accomplishes as much as possible."],
+      ["Can you help with ringing in the ears (tinnitus)?", "Yes — our practice is tinnitus-focused, including the Lenire device for suitable candidates. We evaluate the cause and build a management plan around your specific case."],
+      ["Can you bundle testing and fitting into fewer trips?", "We try to. For patients traveling from far East County, we often combine evaluation, fitting, and follow-up efficiently. Call 650-342-9449 and we'll plan around the distance."],
+    ],
+  },

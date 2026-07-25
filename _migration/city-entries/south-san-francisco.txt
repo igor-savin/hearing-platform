@@ -1,0 +1,29 @@
+  "south-san-francisco": {
+    name: "South San Francisco",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 15 minutes north of our San Mateo office on the 101",
+    distanceTier: "mid",
+    geo: { lat: 37.6547, lng: -122.4077 },
+    lede:
+      "South San Francisco wears its identity on the hillside — the giant \"The Industrial City\" letters on Sign Hill say it plainly. Once a manufacturing town, it is now the birthplace of biotech, home to Genentech and a dense cluster of labs and offices out at Oyster Point, layered over its historic Grand Avenue downtown. Our San Mateo office is about fifteen minutes south on the 101.",
+    hook: [
+      "Hearing clearly across very different workdays",
+      "South San Francisco packs a lot of listening environments into one city — busy labs and open-plan offices, industrial floors, warehouses, and the everyday hum of a working downtown. Following speech in those settings is demanding, and it is where hearing loss shows up first: you hear, but you cannot quite make out the words over background noise. We use speech-in-noise testing and real-ear verified fittings so conversation stays clear in the exact settings you spend your days in, not just in a quiet booth.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "From Grand Avenue to Oyster Point",
+      "South City runs from the shops and restaurants of historic Grand Avenue up under Sign Hill, through the neighborhoods off El Camino, and out to the biotech campuses and marina at Oyster Point, with Orange Memorial Park at its heart. It is a city of scientists, tradespeople, and lifelong families, each with their own listening demands. For all of them we offer thorough testing, honest technology, and the personal attention of an independent practice, a short drive south on the 101.",
+    ],
+    whyHere:
+      "South San Francisco patients choose us over a big-box counter for real diagnostic depth, unbiased technology recommendations, and specialized tinnitus care — with the same audiologist at every visit. We tune hearing aids to your actual work and life, and stand behind the fitting.",
+    landmarks:
+      "We are about fifteen minutes from South San Francisco's Grand Avenue, Sign Hill, and the Oyster Point biotech campuses, straight down the 101 to our San Mateo office.",
+    faqs: [
+      ["I hear fine one-on-one but struggle in meetings and noise. Why?", "That is a classic early sign of hearing loss — the ability to separate speech from background noise fades first. We test specifically for speech-in-noise and fit technology that helps in exactly those settings."],
+      ["Why choose an independent audiologist over a big-box store?", "You get comprehensive diagnostic testing, technology chosen for your needs rather than a limited lineup, verified fittings, and continuity of care with one audiologist who knows your history."],
+      ["How far is your office from South San Francisco?", "Our San Mateo office is about fifteen minutes south on the 101. Call 650-342-9449 to book an appointment."],
+    ],
+  },

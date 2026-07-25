@@ -1,0 +1,29 @@
+  "alameda": {
+    name: "Alameda",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 40 minutes across the San Mateo Bridge",
+    distanceTier: "far",
+    geo: { lat: 37.7652, lng: -122.2416 },
+    lede:
+      "Alameda is an island city — a quiet grid of Victorian and Craftsman homes ringed by water, connected to Oakland by bridge and tube. Its calm, small-town feel is part of the appeal. We will be candid that our offices are across the bay on the Peninsula, so Alamedans who come to us are usually looking for specialized tinnitus or complex hearing care rather than the nearest audiology desk.",
+    hook: [
+      "Island calm, salt air, and steady hearing care",
+      "Alameda's charm is its stillness — tree-lined streets, the beach at Crown Memorial, the old Victorians of the Gold Coast. That same waterfront setting means damp, salt-tinged air, which is hard on hearing aids over time and worth planning around with moisture-smart devices and regular servicing. For that everyday upkeep a closer provider works well; for stubborn ringing or a fitting that never felt right, some islanders choose the deeper focus we offer in [tinnitus care](/tinnitus/).",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A walkable island of neighborhoods",
+      "Alameda invites walking — the shops and theater along Park Street, the antique stores and cafes on Webster, the Victorian Gold Coast, and the shoreline out at Crown Memorial State Beach. It is a community where neighbors talk on porches and follow conversation over coffee, and where clear hearing keeps that easygoing social life intact. Patients from the island who make their way to us tend to do so for a specific reason rather than convenience.",
+    ],
+    whyHere:
+      "Alameda patients pick California Hearing Center for concentrated expertise — thorough diagnostic testing, honest device recommendations, and a real specialty in tinnitus and Lenire treatment. The continuity of one dedicated audiologist, visit after visit, is a large part of why they are willing to cross the bay.",
+    landmarks:
+      "From Park Street, Webster Street, the Gold Coast, or Crown Beach, our San Mateo office is roughly 40 minutes over the San Mateo Bridge.",
+    faqs: [
+      ["Is the drive from Alameda really worth it?", "For basic testing and maintenance, a nearer audiologist is sensible. Islanders travel to us mainly for specialized tinnitus care, Lenire, and difficult fittings — the situations where a focused practice earns the trip."],
+      ["Does Alameda's waterfront air affect hearing aids?", "Damp, salty coastal air can let moisture build inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices, nightly drying, and regular cleaning prevent most trouble, and we help patients set up a routine that lasts."],
+      ["How far are you from the island?", "Roughly 40 minutes to San Mateo across the San Mateo Bridge, traffic depending. Call 650-342-9449 and we will schedule East Bay visits to minimize repeat trips."],
+    ],
+  },

@@ -1,0 +1,36 @@
+"/tinnitus/can-tinnitus-go-away/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Can Tinnitus Go Away? An Honest Answer",
+  intro: [
+    "It is the first question almost everyone asks: will this ever stop? The honest answer is that it depends on the cause. Some tinnitus is temporary and resolves once its trigger is addressed. Other tinnitus is longer-lasting, and while it may not vanish, it very often becomes something you barely notice.",
+    "It helps to separate two ideas. One is whether the sound itself disappears. The other is whether tinnitus stops bothering you. These are not the same, and for most people lasting relief comes from the second, not the first.",
+    "This page walks through the realistic possibilities. For a foundation, our page on [what tinnitus is](/tinnitus/what-is-tinnitus/) explains why the sound occurs in the first place."
+  ],
+  sections: [
+    ["Temporary tinnitus that often resolves", "Ringing after a loud concert, a bout of tinnitus from a cold or ear infection, or the buzzing tied to earwax buildup frequently fades once the cause clears. Tinnitus linked to a fixable issue like [earwax](/tinnitus/earwax/) may stop entirely after treatment."],
+    ["Acute versus chronic", "Tinnitus present for less than about six months is often considered acute, and a fair number of these cases settle on their own. Once tinnitus persists beyond roughly six months it is generally considered chronic and less likely to disappear completely, though it can still become far less intrusive."],
+    ["Habituation, the more common path to relief", "Even when the sound stays, the brain has a remarkable ability to reclassify it as unimportant background, a process called [habituation](/tinnitus/habituation/). Many people reach a point where tinnitus is only noticeable when they think to check for it."],
+    ["What can improve your odds", "Protecting your hearing, treating any underlying hearing loss, managing stress and sleep, and starting sound therapy early all support the brain's natural adjustment. Doing nothing and hoping is usually less effective than an active plan."],
+    ["When to seek prompt evaluation", "Tinnitus that starts suddenly, appears in only one ear, pulses like a heartbeat, or comes with dizziness or sudden hearing loss should be checked promptly. Sudden hearing loss in particular can be time-sensitive and is worth urgent attention."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Habituation explained", "/tinnitus/habituation/"],
+    ["Earwax and tinnitus", "/tinnitus/earwax/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Temporary tinnitus from noise, illness, or earwax often resolves once the cause is treated.",
+    "Chronic tinnitus may not disappear, but habituation lets most people stop noticing it.",
+    "Sudden, one-sided, or pulsatile tinnitus warrants prompt medical evaluation."
+  ],
+  faqs: [
+    ["How long does tinnitus usually last?", "It varies widely. Tinnitus from a loud event or a passing illness may last hours to weeks. Tinnitus that continues beyond about six months is considered chronic, though even then it commonly becomes much less noticeable over time."],
+    ["Is it bad if my tinnitus has not gone away?", "Not necessarily. Persistent tinnitus is very common and usually not dangerous on its own. What matters most is whether it is disrupting your sleep, focus, or mood, all of which can be improved with the right approach."],
+    ["Can treatment make tinnitus disappear completely?", "Sometimes, when there is a reversible cause such as earwax or a medication effect. For chronic tinnitus, treatment more reliably reduces how much it intrudes rather than erasing the sound, and for most people that is enough to feel like themselves again."]
+  ],
+  image: "/assets/core/tinnitus__can-tinnitus-go-away.svg",
+  imageLabel: "Realistic expectations for tinnitus relief"
+},

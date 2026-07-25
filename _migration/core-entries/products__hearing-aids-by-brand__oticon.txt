@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/oticon/": {
+  kicker: "Hearing Aid Brands",
+  headline: "Oticon Hearing Aids on the Peninsula",
+  intro: [
+    "Oticon is a Danish manufacturer known for a distinctive design philosophy it calls BrainHearing: the idea that the brain, not just the ear, does the work of making sense of sound. Rather than aggressively narrowing focus to one speaker, many Oticon devices aim to deliver a fuller, more open soundscape so the brain has the information it needs to orient and follow conversation.",
+    "That open-sound approach appeals to people who dislike the closed-in feeling some directional systems create, and who want a natural sense of their surroundings. California Hearing Center fits Oticon at our San Mateo and San Carlos offices as one of several strong options.",
+    "Whether Oticon is right for you depends on your hearing loss and preferences, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
+  ],
+  sections: [
+    ["The BrainHearing philosophy", "Oticon's design leans toward preserving a natural, panoramic sound picture rather than isolating a single voice, which many users find comfortable and orienting in real-world settings."],
+    ["Who Oticon may suit", "People who value spatial awareness, a natural sense of environment, and open sound quality often respond well to Oticon's approach, particularly if they found narrower directional systems fatiguing."],
+    ["A full lineup of styles", "Oticon offers receiver-in-canal, behind-the-ear, and custom in-the-ear options, along with rechargeable models and Bluetooth streaming, so the philosophy can be matched to different needs and dexterity."],
+    ["Where it fits among the brands", "Oticon is one philosophy among several. A person who prefers a more focused, noise-suppressing sound may lean elsewhere, which is exactly why we compare options rather than assume one fits all."],
+    ["Verified to your hearing", "Any Oticon device is only as good as its programming. We use real-ear measurement to confirm the output matches your prescription across pitches."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Phonak", "/products/hearing-aids-by-brand/phonak/"],
+    ["ReSound", "/products/hearing-aids-by-brand/resound/"]
+  ],
+  takeaways: [
+    "Oticon is known for open, natural sound built around its BrainHearing philosophy.",
+    "It often suits people who value spatial awareness over aggressive noise suppression.",
+    "There is no universally best brand; the right match is proven at the fitting, not on a spec sheet."
+  ],
+  faqs: [
+    ["What makes Oticon different from other brands?", "Oticon emphasizes an open, natural soundscape based on its BrainHearing philosophy, aiming to give the brain a fuller picture of the environment rather than isolating a single speaker. Some listeners find this more comfortable and orienting."],
+    ["Is Oticon better than Phonak or ReSound?", "Not better or worse, just different in approach. Oticon leans toward open sound, while other brands emphasize connectivity or focused noise handling. The right choice depends on your hearing and preferences, which we assess together."],
+    ["Do Oticon hearing aids come in rechargeable and Bluetooth models?", "Yes, Oticon offers rechargeable options and Bluetooth streaming across much of its lineup. We help you decide whether those features suit your dexterity, phone, and daily routine."]
+  ],
+  image: "/assets/oticon.webp",
+  imageLabel: "Oticon open-sound technology"
+},

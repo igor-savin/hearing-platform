@@ -1,0 +1,29 @@
+  "yountville": {
+    name: "Yountville",
+    county: "Napa County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 80 minutes north in the Napa Valley",
+    distanceTier: "far",
+    geo: { lat: 38.4016, lng: -122.3608 },
+    lede:
+      "Yountville is a small Napa Valley town with an outsized reputation for food, home to The French Laundry and a walkable Washington Street packed with celebrated kitchens. It is about eighty minutes north of the Peninsula, and we will be candid: our offices are down in San Mateo and San Carlos, not in the valley. The Yountville patients who travel to us are choosing a specialist for care they want done well.",
+    hook: [
+      "Why some Napa Valley patients drive south",
+      "For everyday hearing tests and standard hearing aids, a provider nearer to Yountville is the sensible pick, and we would happily point you there. The drive to the Peninsula makes sense for the harder problems — tinnitus that has not quieted, Lenire treatment, a fitting that never worked out, or a second opinion after care that let you down. Those are the visits we build deliberately, with a full evaluation and a plan aimed at keeping return drives to a minimum.",
+    ],
+    motif: "wine",
+    localScene: [
+      "A small valley town to the Peninsula",
+      "Yountville is compact and easy to know — Washington Street's restaurants and tasting rooms, the old Veterans Home grounds, and the vineyards stretching north toward Oakville and south toward Napa. It sits a genuine distance from the Peninsula, and for routine hearing care we would encourage you to look closer to home. For focused tinnitus treatment, Lenire, or a complex fitting, some Yountville patients decide the specialist expertise justifies the drive south, and we make the visit worth the trip.",
+    ],
+    whyHere:
+      "Yountville patients who come to us are usually seeking tinnitus and diagnostic experience they could not find nearby. We honor the eighty-minute distance by concentrating care into efficient visits and coordinating follow-up so the drive stays occasional rather than routine.",
+    landmarks:
+      "Patients drive south to our Peninsula offices from Washington Street and the vineyards around Yountville, about eighty minutes down through the valley to Highway 101.",
+    faqs: [
+      ["Why travel from Yountville when closer options exist?", "For routine care, a nearby provider usually makes more sense. Yountville patients come to us mainly for specialized [tinnitus treatment](/tinnitus/), Lenire, and difficult fittings, where the expertise justifies the drive. We plan visits to minimize repeat trips."],
+      ["Do you offer Lenire tinnitus therapy?", "Yes. Lenire and full tinnitus care are among the main reasons patients travel to us from the Napa Valley, Yountville included."],
+      ["Can you handle everything in fewer visits since I'm driving far?", "Yes. For distance patients we consolidate the [evaluation](/hearing-testing/), treatment, and follow-up so the drive accomplishes as much as possible each time. Call 650-342-9449 to arrange a visit."],
+    ],
+  },

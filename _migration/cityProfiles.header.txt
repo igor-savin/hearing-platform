@@ -1,0 +1,52 @@
+// Per-city local facts for the /areas-we-serve/ pages.
+//
+// The whole point of this file: uniqueness must be STRUCTURAL, not cosmetic.
+// The reviewers found the old pages were one template with the city name swapped
+// in (~97% identical), which reads as doorway / scaled content to Google. The fix
+// is genuinely city-true prose — real geography, climate, flight-path noise,
+// landmarks, drive context — so each page says something a human who knows the
+// city would recognize as true. Every fragment below is written per city.
+//
+// All facts here are well-established, verifiable geography. No invented
+// statistics, testimonials, or specific patient claims (YMYL medical site).
+//
+// Coordinates are approximate city centroids, used only for areaServed schema.
+
+export type CityRegion =
+  | "peninsula-core"   // close to one of the two offices
+  | "peninsula-coast"  // over the hill, coastal / foggy
+  | "peninsula-south"  // lower Peninsula edge
+  | "sf"               // San Francisco
+  | "south-bay"
+  | "east-bay"
+  | "north-bay"
+  | "wine-country"
+  | "solano";
+
+export type CityProfile = {
+  name: string;                 // display name, e.g. "Half Moon Bay"
+  county: string;               // e.g. "San Mateo County"
+  region: CityRegion;
+  nearestOffice: "San Mateo" | "San Carlos";
+  approxDrive: string;          // soft, honest, e.g. "about 10 minutes up the 101"
+  distanceTier: "office" | "near" | "mid" | "far";
+  geo: { lat: number; lng: number };
+
+  // Visual motif for the generated hero image (see _migration/genCityImages.mjs).
+  motif: "coast" | "airport" | "bayside" | "downtown" | "estate" | "wine" | "transit" | "civic";
+
+  // --- written, city-specific prose (this is where uniqueness lives) ---
+  lede: string;                 // opening paragraph, specific to this city
+  hook: [string, string];       // [H2, paragraph] — the signature local section
+  localScene: [string, string]; // [H2, paragraph] — real neighborhoods/streets/landmarks + a hearing tie-in (long-tail local SEO)
+  whyHere: string;              // paragraph: why patients from here choose CHC
+  landmarks?: string;           // one sentence naming real local reference points
+  faqs: [string, string][];     // 2-3 city-specific Q&A
+};
+
+// Two office anchors, referenced in copy + schema.
+export const OFFICES = {
+  "San Mateo": { street: "88 N. San Mateo Drive", zip: "94401" },
+  "San Carlos": { street: "1008 Laurel Street", zip: "94070" },
+} as const;
+

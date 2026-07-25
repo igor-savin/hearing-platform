@@ -1,0 +1,29 @@
+  "santa-rosa": {
+    name: "Santa Rosa",
+    county: "Sonoma County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 90 minutes north",
+    distanceTier: "far",
+    geo: { lat: 38.4404, lng: -122.7141 },
+    lede:
+      "Santa Rosa is the largest city in the North Bay and the hub of Sonoma County, with the walkable brick blocks of Railroad Square and Luther Burbank's old home and gardens at its center. It is a good ninety minutes north of us, so we will say it plainly: our offices sit down on the Peninsula, in San Mateo and San Carlos. What brings some Santa Rosa patients south is specialized care they would rather have done right the first time.",
+    hook: [
+      "When a long drive buys the right expertise",
+      "If you need a standard hearing screening or an everyday pair of hearing aids, a Santa Rosa provider is the sensible choice, and we will tell you so. The trip to the Peninsula tends to pay off in the harder cases: persistent tinnitus that has not responded to anything, Lenire treatment, a fitting that never sat right, or a second opinion after care that disappointed. Patients who drive down for that kind of work get a full evaluation and a plan built to spare them repeat trips.",
+    ],
+    motif: "wine",
+    localScene: [
+      "From the Sonoma County seat to the bay",
+      "Santa Rosa stretches from historic Railroad Square and Old Courthouse Square through Rincon Valley, Bennett Valley, and out toward the vineyards of the Russian River corridor. It is a real city with real distance between it and the Peninsula, and for routine hearing needs someone closer to home makes sense. For focused tinnitus treatment, Lenire, or a complex fitting, though, some Santa Rosa patients decide the expertise is worth the drive south, and we build the visit around making that trip count.",
+    ],
+    whyHere:
+      "Santa Rosa patients who come to us are usually after a depth of tinnitus and diagnostic experience they could not line up locally. We honor the distance by folding testing, treatment, and counseling into efficient visits and coordinating follow-up so the ninety-minute drive stays a rare event.",
+    landmarks:
+      "Patients head south to our Peninsula offices from Railroad Square, Rincon Valley, and Bennett Valley, generally about ninety minutes down Highway 101.",
+    faqs: [
+      ["Ninety minutes is a long way — why travel to you from Santa Rosa?", "For routine care, a Sonoma County provider is usually the better call. Patients come to us from Santa Rosa mainly for specialized [tinnitus care](/tinnitus/), Lenire, and difficult fittings, where the added expertise justifies the drive. We plan visits to keep repeat trips to a minimum."],
+      ["Do you offer Lenire for tinnitus?", "Yes. We provide Lenire alongside comprehensive tinnitus evaluation and management, and it is one of the main reasons patients travel to us from the North Bay, Santa Rosa included."],
+      ["Can you handle everything in fewer visits since I'm driving far?", "That is how we prefer to work it for distant patients — consolidating [testing](/hearing-testing/), treatment, and follow-up so the drive accomplishes as much as possible each time."],
+    ],
+  },

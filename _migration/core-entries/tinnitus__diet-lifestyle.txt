@@ -1,0 +1,36 @@
+"/tinnitus/diet-lifestyle/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Diet & Lifestyle Changes for Tinnitus",
+  intro: [
+    "Many people want to know whether changing what they eat, drink, or do each day can quiet their tinnitus. It is a reasonable hope, and lifestyle does matter, but it helps to set expectations honestly: the research on specific foods is mixed, and triggers vary a great deal from person to person.",
+    "Rather than chasing a strict tinnitus diet, most people benefit more from a steady, sensible approach: reduce the things that reliably ramp up your nervous system, support good sleep and circulation, and pay attention to your own patterns. What bothers one person may not affect another at all.",
+    "Below are the factors most often discussed. None is a cure, and this is general information, not personal medical advice. Speak with your physician before making significant changes, especially to diet or exercise."
+  ],
+  sections: [
+    ["Caffeine and alcohol", "Both are frequently blamed, but the evidence is inconsistent. Some people notice their tinnitus is more prominent after coffee or a drink, likely tied to arousal, dehydration, or sleep disruption rather than a direct effect. If you suspect a link, try reducing one at a time and observe."],
+    ["Salt and circulation", "For people with blood pressure concerns or conditions like Ménière's, high salt intake may worsen symptoms, and moderating it is often advised. For tinnitus generally, the connection is less clear, but a heart-healthy, lower-sodium diet is rarely a bad idea."],
+    ["Sleep is the quiet lever", "Poor sleep makes tinnitus feel louder, and loud tinnitus disrupts sleep, a cycle worth breaking. A consistent bedtime, a dark room, low-level background sound, and limited late-night screens tend to help more than any single food change."],
+    ["Exercise and stress", "Regular movement supports circulation, mood, and sleep, and helps discharge the stress that magnifies tinnitus. It does not need to be intense; consistency matters more than intensity."],
+    ["Keep a simple journal", "Because triggers are so individual, a brief daily note of what you ate, how you slept, your stress level, and how your tinnitus felt can reveal patterns no generic list can. Look for repeatable connections before overhauling your routine."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Stress and tinnitus", "/tinnitus/stress/"],
+    ["Ménière's disease", "/tinnitus/menieres/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Anxiety management", "/tinnitus/anxiety-management/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "The evidence on specific foods is mixed, and tinnitus triggers are highly individual.",
+    "Sleep, stress, and regular exercise often influence tinnitus more than any single food.",
+    "A short daily journal helps you find your own patterns before making big changes."
+  ],
+  faqs: [
+    ["Does cutting caffeine help tinnitus?", "For some people it seems to, though studies are inconsistent and caffeine does not appear to worsen tinnitus for everyone. If you suspect a link, reducing it gradually and tracking the effect is a reasonable, low-risk experiment."],
+    ["Is there a special tinnitus diet?", "There is no proven diet that cures or reliably reduces tinnitus. A balanced, heart-healthy eating pattern supports the circulation and sleep that indirectly affect tinnitus, but beware of programs promising a dietary cure."],
+    ["Can dehydration affect tinnitus?", "Staying well hydrated is sensible general health advice, and some people feel tinnitus is more noticeable when tired or dehydrated. Water alone is not a treatment, but good hydration fits naturally into an overall healthy routine."]
+  ],
+  image: "/assets/core/tinnitus__diet-lifestyle.svg",
+  imageLabel: "Everyday habits and tinnitus"
+},

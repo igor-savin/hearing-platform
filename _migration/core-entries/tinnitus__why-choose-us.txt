@@ -1,0 +1,36 @@
+"/tinnitus/why-choose-us/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Why Choose California Hearing Center for Tinnitus",
+  intro: [
+    "Tinnitus is easy to mismanage, either dismissed with a shrug of just live with it, or oversold with products that promise a cure. Our approach sits between those extremes: careful evaluation, honest expectations, and a genuine investment in the therapies that have evidence behind them.",
+    "Tinnitus care is a real focus for our practice, not a line item. That focus shows up in the time we spend on evaluation, the structured therapy we offer, and our ability to discuss advanced options like Lenire bimodal neuromodulation for patients who are appropriate candidates.",
+    "Below are the concrete, verifiable reasons Peninsula patients choose us for tinnitus, described without inflated statistics or manufactured awards."
+  ],
+  sections: [
+    ["A dedicated tinnitus focus", "We treat tinnitus as its own clinical area, with time set aside for the history-taking, sound description, and impact screening that generic appointments often skip. That depth is what lets us build a plan around your specific tinnitus rather than a template."],
+    ["Thorough evaluation first", "Every tinnitus plan starts with a full [hearing evaluation](/hearing-testing/) and a review of contributing factors such as noise exposure, medications, and earwax. We also screen for the red flags that call for medical referral before management begins."],
+    ["Lenire for suitable candidates", "We offer Lenire, a bimodal neuromodulation device that pairs sound with gentle tongue stimulation and is FDA-cleared for tinnitus treatment. It is not right for everyone, and candidacy depends on evaluation, but having it available means more paths for people who need them."],
+    ["Real-ear-verified amplification", "When hearing aids are part of the plan, we verify the fit with real-ear measurement rather than trusting factory settings. Verified amplification tends to deliver more consistent tinnitus benefit because the device is actually meeting your prescription."],
+    ["Honesty over hype", "We will not promise a cure or push a product that does not fit your situation. If the most useful step is education, sound enrichment, and follow-up, we will say so, and we will explain when tinnitus warrants prompt medical attention."]
+  ],
+  bulletLinks: [
+    ["Our tinnitus knowledge hub", "/tinnitus/"],
+    ["How TRT works", "/tinnitus/tinnitus-retraining-therapy/"],
+    ["The fitting and verification process", "/hearing-aid-fitting/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Read patient reviews", "/reviews/"],
+    ["Contact our offices", "/contact/"]
+  ],
+  takeaways: [
+    "Tinnitus is a genuine clinical focus here, with dedicated time for evaluation and planning.",
+    "We offer Lenire for suitable candidates and verify hearing aids with real-ear measurement.",
+    "We favor honest expectations and clear red-flag guidance over cure claims."
+  ],
+  faqs: [
+    ["What makes your tinnitus care different?", "A dedicated focus, a thorough evaluation before any recommendation, real-ear-verified hearing aids, and advanced options like Lenire for candidates who qualify. Just as important, we set honest expectations instead of promising a cure."],
+    ["Is Lenire right for me?", "It depends. Lenire is FDA-cleared for tinnitus and helps some patients, but suitability rests on your hearing history, tinnitus profile, and a clinical evaluation. We will tell you candidly whether it is a reasonable option for you."],
+    ["Do I need a referral to be seen for tinnitus?", "In most cases you can contact us directly to arrange a tinnitus evaluation. If we identify signs that call for medical assessment, we will guide you on the right next step. Call 650-342-9449 to get started."]
+  ],
+  image: "/assets/core/tinnitus__why-choose-us.svg",
+  imageLabel: "Dedicated, honest tinnitus care"
+},

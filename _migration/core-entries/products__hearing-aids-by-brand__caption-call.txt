@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/caption-call/": {
+  kicker: "Assistive Listening Technology",
+  headline: "CaptionCall Captioned Phones for the Hard of Hearing",
+  intro: [
+    "CaptionCall is a captioned telephone designed for people with hearing loss. Like other captioned phones, it works as an ordinary phone while adding a large screen that displays written captions of what the person on the other end is saying.",
+    "Reading along as you listen takes much of the strain out of phone calls. Instead of straining to catch every word or asking callers to repeat themselves, you can follow the conversation with the captions as a backup.",
+    "As part of your broader hearing care, California Hearing Center can help you understand how a captioned phone works alongside hearing aids and other tools to keep you connected."
+  ],
+  sections: [
+    ["Captions on a familiar phone", "CaptionCall pairs a normal calling experience with real-time captions on a built-in display. You speak as usual and read the captions of the caller's words, which is especially helpful on long or important calls."],
+    ["A good fit for many older adults", "Phone calls with family, physicians, pharmacies, and services matter a great deal, and they are often where hearing loss is most frustrating. Captioned phones like CaptionCall are frequently a welcome help for older adults who want to stay independent by phone."],
+    ["Frequently available at no cost to those who qualify", "Captioned telephones are commonly provided at no cost to individuals with hearing loss who qualify, generally through a certification process that documents the need. Requirements and paperwork can change, so ask about the current steps when you are ready."],
+    ["Works with, not instead of, hearing aids", "A captioned phone helps with one situation. [Hearing aids](/products/hearing-aids-by-brand/) help across conversations, television, restaurants, and more. Many people use both, and we can help you understand the right combination."],
+    ["A sensible first step", "If the phone has become a source of stress, start with a [hearing evaluation](/hearing-testing/). Understanding your hearing helps us recommend the right blend of devices and communication strategies."]
+  ],
+  bulletLinks: [
+    ["Schedule a hearing test", "/hearing-testing/"],
+    ["Learn about hearing aids", "/products/hearing-aids-by-brand/"],
+    ["Browse our services", "/services/"],
+    ["About California Hearing Center", "/about-us/"],
+    ["Contact us", "/contact/"],
+    ["San Mateo office", "/contact/san-mateo/"]
+  ],
+  takeaways: [
+    "CaptionCall is a captioned telephone that displays written captions of the caller's speech.",
+    "It is assistive technology for phone calls, not a hearing aid.",
+    "Captioned phones are often available at no cost to qualifying individuals through a certification process."
+  ],
+  faqs: [
+    ["Is CaptionCall a hearing aid?", "No. CaptionCall is a captioned telephone. It shows written captions of what the caller says so you can read along while you listen. It targets phone calls and does not replace hearing aids, which help with hearing throughout the day."],
+    ["Is there a cost for a captioned phone?", "Captioned telephones are often provided at no cost to people with hearing loss who qualify, typically through a certification process that confirms the need. Because programs change over time, it is best to ask about the current requirements."],
+    ["Can I use CaptionCall with my hearing aids?", "Many people use captioned phones and hearing aids together, since they address different needs. A hearing evaluation helps us recommend the right combination of technology for your situation."]
+  ],
+  image: "/assets/core/products__hearing-aids-by-brand__caption-call.svg",
+  imageLabel: "CaptionCall captioned telephone"
+},

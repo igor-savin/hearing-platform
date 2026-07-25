@@ -1,0 +1,29 @@
+  "san-ramon": {
+    name: "San Ramon",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 50 minutes east",
+    distanceTier: "far",
+    geo: { lat: 37.7799, lng: -121.9780 },
+    motif: "downtown",
+    lede:
+      "San Ramon is built around Bishop Ranch, the sprawling business park home to corporate headquarters and thousands of office workers, with the newer City Center giving the city a walkable downtown. It sits about 50 minutes east of our Peninsula offices, so we're honest that we're a bit of a haul — but professionals here do make the drive for focused care.",
+    hook: [
+      "Hearing at work in Bishop Ranch",
+      "Days full of meetings, conference calls, and open-plan offices are demanding listening environments, and missing words there carries a real professional cost. This is where an off-the-shelf device tends to fall short. We focus on [speech-in-noise testing](/hearing-testing/) and real-ear verification so hearing aids perform in the conference room and the crowded lunch spot — not just in a quiet booth — with discreet styles that suit a corporate setting.",
+    ],
+    localScene: [
+      "A business hub with a new downtown",
+      "San Ramon runs from the office towers and campuses of Bishop Ranch to the shops and plaza of City Center Bishop Ranch, the historic Forest Home Farms, and the greens of Central Park along the Iron Horse Trail. It's a working, professional city where a lot of hearing happens in busy offices and restaurants. We fit and verify for exactly those settings, so you stay sharp in the rooms where it counts.",
+    ],
+    whyHere:
+      "San Ramon patients come to us for careful diagnostics, technology tuned to demanding work environments, and specialized [tinnitus care](/tinnitus/) including Lenire. We're candid that routine testing can be handled closer to home, and focus the longer trip on the care that benefits from our depth.",
+    landmarks:
+      "We're about 50 minutes from Bishop Ranch, City Center, and Central Park, taking the East Bay bridges over to our San Mateo office.",
+    faqs: [
+      ["Can hearing aids really help in open-plan offices and meetings?", "Yes, when they're fit for noise. We use speech-in-noise testing and real-ear measurement to program devices for demanding work settings, and choose directional features that help you follow conversation."],
+      ["Why travel from San Ramon instead of going local?", "For a routine test, local is fine. Patients make the trip for specialized tinnitus treatment, Lenire, and precise fittings — the depth of care worth the drive."],
+      ["Are there discreet hearing aids suited to a professional setting?", "Yes. We fit several low-profile and in-canal styles that stay unobtrusive in meetings; the best fit depends on your ears and hearing, which we assess in your evaluation."],
+    ],
+  },

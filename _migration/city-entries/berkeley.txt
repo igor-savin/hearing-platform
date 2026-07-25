@@ -1,0 +1,29 @@
+  "berkeley": {
+    name: "Berkeley",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 45 minutes across the bay",
+    distanceTier: "far",
+    geo: { lat: 37.8715, lng: -122.2730 },
+    lede:
+      "Berkeley is a university town at heart, shaped by UC Berkeley and a culture that takes ideas — and second opinions — seriously. In fairness, our offices are on the Peninsula in San Mateo and San Carlos, a good drive across the bay, so we are not the closest option for a routine hearing check. Berkeley patients tend to seek us out for the specialized, research-minded side of hearing care.",
+    hook: [
+      "A questioning town that values a thorough answer",
+      "Lectures, seminars, crowded cafes off Telegraph, and a lifelong habit of learning all put a premium on clear hearing and speech understanding. Berkeley residents often arrive already well-read on their own hearing, wanting evidence-based testing and honest technology recommendations rather than a sales pitch. For that kind of unhurried, thorough evaluation — or for persistent [tinnitus](/tinnitus/) that deserves a specialist's attention — some make the trip to us; for simpler needs, a nearer audiologist may serve just as well.",
+    ],
+    motif: "civic",
+    localScene: [
+      "From campus to the hills",
+      "Berkeley runs from the flats up into the hills — the UC campus and Sproul Plaza, the shops along Shattuck in the Gourmet Ghetto, College Avenue in Elmwood, and the views from Tilden and the Berkeley Hills. It is a walking, talking, seminar-going city where following conversation matters, whether that is a graduate lecture or dinner with old friends. Patients who come to us from Berkeley usually want the same rigor they expect of everything else: careful measurement and a plan they understand.",
+    ],
+    whyHere:
+      "Berkeley patients choose California Hearing Center for depth rather than proximity — comprehensive testing, real-ear verification, and a genuine focus on tinnitus and Lenire treatment. They value seeing the same audiologist over time and getting straight, well-explained recommendations, which is worth a longer drive to the people who make it.",
+    landmarks:
+      "From the UC campus, Shattuck Avenue, Elmwood, or the Berkeley Hills, our San Mateo office is roughly 45 minutes across the bay.",
+    faqs: [
+      ["Why would I drive from Berkeley when there are closer audiologists?", "For everyday hearing care, staying local is reasonable. People come across the bay to us for specialized tinnitus treatment, Lenire, and thorough second opinions on complex hearing or fitting problems, where a focused practice makes a real difference."],
+      ["I follow lectures and meetings closely — can testing reflect that?", "Yes. We test speech understanding in background noise, not just tones in a quiet booth, so results reflect real listening. That helps us tune hearing aids for lecture halls, seminars, and busy rooms rather than ideal conditions."],
+      ["How far is your office from Berkeley?", "Roughly 45 minutes to San Mateo depending on bridge traffic. We try to make each visit count for East Bay patients by grouping testing and follow-up efficiently."],
+    ],
+  },

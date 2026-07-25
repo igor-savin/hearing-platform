@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/starkey/": {
+  kicker: "Hearing Aid Brands",
+  headline: "Starkey Hearing Aids on the Peninsula",
+  intro: [
+    "Starkey is a major American hearing aid manufacturer that has leaned hard into artificial intelligence and health-tracking features. Alongside conventional amplification, several Starkey devices incorporate sensors and app features that can track activity, and some models offer fall-detection alerts and other wellness tools, reframing the hearing aid as a broader health device.",
+    "Starkey is also known for its custom and in-the-ear expertise. California Hearing Center fits Starkey at both the San Mateo and San Carlos offices as one of several strong options.",
+    "Whether Starkey is right for you depends on your hearing loss and how much you value its health and AI features, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+  ],
+  sections: [
+    ["AI and health features", "Starkey has positioned itself around AI-driven sound processing and integrated health tracking. Certain models can monitor activity and offer wellness features through the companion app."],
+    ["Fall detection and alerts", "Some Starkey devices include fall-detection that can send alerts to chosen contacts, a feature that appeals to many older adults and their families for added peace of mind."],
+    ["Custom and in-the-ear strength", "Starkey has deep experience with custom, in-the-ear devices, which can be a good route for patients who prefer that style for comfort or cosmetics."],
+    ["Who Starkey may suit", "People who want their hearing aids to double as a wellness and safety tool, or who prefer custom in-the-ear designs, often find Starkey appealing."],
+    ["Fit, measured, and confirmed", "Health features are a bonus, not a substitute for accurate amplification. We verify each device with real-ear measurement so it performs correctly for your hearing."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Oticon", "/products/hearing-aids-by-brand/oticon/"],
+    ["Phonak", "/products/hearing-aids-by-brand/phonak/"]
+  ],
+  takeaways: [
+    "Starkey is known for AI sound processing and integrated health and wellness features.",
+    "It often suits people who want fall detection, activity tracking, or custom in-the-ear styles.",
+    "Any of these brands can perform beautifully when correctly selected and verified for your hearing."
+  ],
+  faqs: [
+    ["What is Starkey known for?", "Starkey, a major American manufacturer, is recognized for AI-driven sound processing and integrated health features, including activity tracking and fall-detection alerts on some models, along with strong custom in-the-ear expertise."],
+    ["Can Starkey hearing aids detect falls?", "Some Starkey models include fall-detection that can send an alert to designated contacts. Many older adults and their families value this for added safety. We can review which models offer it during your consultation."],
+    ["Do I need the health features to benefit from Starkey?", "No. The health and activity features are optional extras on top of quality amplification. If you do not want them, Starkey still functions as a capable hearing aid, and we help decide whether the extras are worthwhile for you."]
+  ],
+  image: "/assets/starkey.webp",
+  imageLabel: "Starkey AI and health features"
+},

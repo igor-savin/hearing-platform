@@ -1,0 +1,30 @@
+  "redwood-city": {
+    name: "Redwood City",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 8 minutes from our San Carlos office, just down the 101 or El Camino",
+    distanceTier: "near",
+    geo: { lat: 37.4852, lng: -122.2364 },
+    lede:
+      "Redwood City — whose old slogan, “Climate Best by Government Test,” still appears on the downtown arch — sits directly next to our San Carlos office. For most Redwood City residents we are the closest independent audiology practice, just minutes down Laurel Street's extension into town.",
+    hook: [
+      "A short trip for care that keeps up with you",
+      "Redwood City has transformed in the last decade, from the revived downtown theaters and restaurants to the tech campuses near Seaport and the Port of Redwood City. Whether you are still working in a busy open-plan office or enjoying retirement near Roosevelt or Mount Carmel, hearing well in real environments is the goal — and being minutes from your audiologist means adjustments happen when you need them, not weeks later.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A revived downtown, right next door",
+      "Redwood City's downtown — Courthouse Square, the restored Fox Theatre, the restaurants along Broadway — has become one of the Peninsula's liveliest, while neighborhoods like Roosevelt, Mount Carmel, Emerald Hills, and the waterfront Redwood Shores each keep their own character. Whether you're catching a show downtown, working a campus near Seaport, or enjoying a quieter retirement in the hills, hearing well depends on devices tuned to your rooms, not a factory default. Being minutes away at our San Carlos office means we can adjust them whenever life changes.",
+    ],
+    whyHere:
+      "Redwood City patients choose us for thorough testing, honest technology recommendations, and tinnitus expertise — all a few minutes from home at our San Carlos office. Continuity matters here: you see the same audiologist who knows your history and your goals.",
+    landmarks:
+      "We are an easy drive from downtown Redwood City, Roosevelt, Mount Carmel, and the Seaport/Port area, generally under 10 minutes to the San Carlos office.",
+    faqs: [
+      ["Which office is closest to Redwood City?", "Our San Carlos office at 1008 Laurel Street is closest — about 8 minutes for most Redwood City residents. Call 650-342-9449 to schedule."],
+      ["Do you treat tinnitus in Redwood City?", "Yes. We provide comprehensive tinnitus evaluation and treatment, including Lenire, for patients throughout Redwood City and the mid-Peninsula."],
+    ],
+  },
+
+  // ---------------------------------------------------------------- COAST / SOUTH

@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/unitron/": {
+  kicker: "Hearing Aid Brands",
+  headline: "Unitron Hearing Aids for Peninsula Patients",
+  intro: [
+    "Unitron is a Canadian hearing aid brand, part of the same Sonova group as Phonak, that focuses on approachable, value-conscious technology and a patient-friendly experience. Unitron has been known for flexible trial and upgrade approaches that let patients experience how they hear in real life before fully committing, which can make the decision less daunting for first-time users.",
+    "Because Unitron shares a technology platform with Phonak, its devices benefit from mature engineering while typically sitting at a more accessible price. California Hearing Center fits Unitron at our San Mateo and San Carlos offices among several options.",
+    "Whether Unitron is right for you depends on your hearing loss, lifestyle, and budget, confirmed through testing and [professional fitting](/hearing-aid-fitting/)."
+  ],
+  sections: [
+    ["Value with proven engineering", "Unitron shares a platform with Phonak through the Sonova group, so patients get established, reliable technology at a generally more accessible price point."],
+    ["A patient-friendly approach", "Unitron has emphasized flexible trials and upgrade paths, giving patients a chance to experience real-world hearing before fully committing to a technology level."],
+    ["A full range of styles", "Receiver-in-canal, behind-the-ear, and custom options are available, with rechargeable and connectivity features across much of the lineup."],
+    ["Who Unitron may suit", "First-time users, value-focused patients, and those who like the reassurance of trying technology in daily life before deciding often find Unitron a comfortable choice."],
+    ["Real-ear verification is the difference", "Whatever level you choose, we program and confirm the devices with real-ear measurement so they match your hearing prescription."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Phonak", "/products/hearing-aids-by-brand/phonak/"],
+    ["Rexton", "/products/hearing-aids-by-brand/rexton/"]
+  ],
+  takeaways: [
+    "Unitron is a value-focused, patient-friendly brand sharing Phonak's engineering platform.",
+    "It often suits first-time users who value flexible trials and proven technology at an accessible price.",
+    "Your best brand is decided at the fitting — by measurement and your own listening, not by marketing."
+  ],
+  faqs: [
+    ["What is Unitron known for?", "Unitron is a Canadian brand, part of the Sonova group alongside Phonak, known for approachable, value-conscious technology and a patient-friendly experience with flexible trial and upgrade options."],
+    ["Is Unitron related to Phonak?", "Yes. Both are part of the Sonova group and share technology platforms, so Unitron devices draw on mature, proven engineering, typically at a more accessible price point."],
+    ["Can I try Unitron hearing aids before committing?", "Unitron has emphasized flexible trials that let patients experience real-world hearing before deciding on a technology level. We can explain the trial and follow-up options available during your consultation."]
+  ],
+  image: "/assets/core/products__hearing-aids-by-brand__unitron.svg",
+  imageLabel: "Unitron value-focused technology"
+},

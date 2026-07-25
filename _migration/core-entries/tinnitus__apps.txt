@@ -1,0 +1,36 @@
+"/tinnitus/apps/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus & Sound Therapy Apps: What They Do",
+  intro: [
+    "Smartphone apps have become one of the most accessible tools for living more comfortably with tinnitus. They will not cure it, and no app can substitute for a proper evaluation, but the right one can make quiet moments easier, support better sleep, and reinforce the strategies you build with a clinician.",
+    "The market is crowded, and it helps to think in terms of categories rather than brand names. Most tinnitus-related apps fall into a few broad types, each serving a different purpose. Knowing what each type is for makes it easier to choose, and to avoid paying for features you do not need.",
+    "Below we describe how these tools generally work. For the bigger picture on why sound helps, see our [tinnitus therapy overview](/services/tinnitus-therapy/)."
+  ],
+  sections: [
+    ["Sound generators and soundscapes", "These play customizable background sounds, white noise, rain, ocean, fans, or shaped noise you can tune to sit comfortably around your tinnitus. The idea is gentle enrichment that softens the contrast between silence and the sound, not drowning it out at high volume."],
+    ["Relaxation and sleep tools", "Guided breathing, meditation, and sleep-focused programs target the arousal and attention that make tinnitus feel louder. Because tinnitus is often most intrusive in a quiet bedroom, apps that combine a timer, soothing sound, and relaxation can be especially useful at night."],
+    ["Structured, CBT-based programs", "Some apps deliver education and cognitive behavioral therapy exercises designed specifically for tinnitus distress. These aim to change the way you react to the sound over weeks of consistent use, mirroring the counseling approach used in clinic."],
+    ["Hearing aid companion apps", "If you wear hearing aids with a tinnitus feature, the manufacturer's app usually lets you adjust the built-in sound generator and volume. These work in tandem with amplification and are set up as part of your [fitting](/hearing-aid-fitting/)."],
+    ["Choosing wisely", "Look for adjustable sound, an offline mode, and a sleep timer, and try free versions before subscribing. Be skeptical of any app promising to cure or permanently eliminate tinnitus; that claim is not supported by evidence, whatever the marketing says."]
+  ],
+  bulletLinks: [
+    ["Tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Habituation explained", "/tinnitus/habituation/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Sleep and anxiety support", "/tinnitus/anxiety-management/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Apps can support sleep, relaxation, and sound enrichment, but they are a tool, not a cure.",
+    "Think in categories: soundscapes, relaxation, CBT programs, and hearing aid companions.",
+    "Be wary of any app that claims to eliminate tinnitus."
+  ],
+  faqs: [
+    ["Can a tinnitus app cure my tinnitus?", "No app can cure tinnitus, and you should be cautious of any that claims to. Well-designed apps can make the sound less intrusive, support better sleep, and reinforce clinical strategies, which is a meaningful benefit for many people."],
+    ["Are free tinnitus apps good enough?", "Often yes, at least to start. Many people do well with a free soundscape or relaxation app. Paid programs may add structured CBT content or extra features, but it is worth trying free options before committing to a subscription."],
+    ["Should I use an app instead of seeing an audiologist?", "An app is a helpful complement, not a replacement. A proper evaluation can identify reversible causes and red flags an app cannot, so it is best to pair self-help tools with professional guidance."]
+  ],
+  image: "/assets/core/tinnitus__apps.svg",
+  imageLabel: "Sound therapy in your pocket"
+},

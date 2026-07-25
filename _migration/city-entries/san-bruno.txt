@@ -1,0 +1,29 @@
+  "san-bruno": {
+    name: "San Bruno",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 12 minutes north of our San Mateo office on the 101",
+    distanceTier: "near",
+    geo: { lat: 37.6305, lng: -122.4111 },
+    lede:
+      "San Bruno sits right at the edge of San Francisco International Airport, tucked between San Bruno Mountain and the bay. It is a working, family-rooted city — and for a lot of residents, work has meant years around aircraft, ground equipment, and industrial noise. Our San Mateo office is about twelve minutes south on the 101.",
+    hook: [
+      "Occupational noise and protecting the hearing you rely on",
+      "SFO and its surrounding operations employ thousands of San Bruno-area residents, and jobs on the ramp, in maintenance, or around ground equipment can involve significant noise exposure over a career. Prolonged occupational noise can contribute to hearing loss, which is why baseline testing and custom hearing protection matter for people who work in loud environments. If you have spent years around aircraft or machinery, a thorough [hearing evaluation](/hearing-testing/) establishes where you stand and helps you protect what you have.",
+    ],
+    motif: "airport",
+    localScene: [
+      "A city between the mountain and the runways",
+      "San Bruno runs from the trails of San Bruno Mountain State Park down through the neighborhoods off San Bruno Avenue and Cherry, past Skyline College and out toward the airport. It is a city of shift workers, tradespeople, and longtime families — many with a real occupational-noise history. For those patients we focus on honest testing, custom noise protection for the job, and hearing aids fine-tuned for busy, noisy surroundings, an easy drive down the 101 to San Mateo.",
+    ],
+    whyHere:
+      "San Bruno patients come to us for careful, no-pressure testing and for real expertise in noise-related hearing concerns and tinnitus — not a quick sale. We take the time to explain your results, recommend protection that fits your work, and match technology honestly to how and where you listen.",
+    landmarks:
+      "We are a short drive from San Bruno's Skyline College, San Bruno Avenue, and the neighborhoods below San Bruno Mountain, straight down the 101 to our San Mateo office.",
+    faqs: [
+      ["I worked around aircraft and machinery for years. Should I get tested?", "Yes. Long-term occupational noise can contribute to gradual hearing loss and tinnitus, often before you notice it in conversation. A baseline evaluation shows where you stand and guides protection going forward."],
+      ["Do you make custom hearing protection?", "We do. Custom earplugs and protection are shaped to your ears for jobs, music, and other loud settings, and they are far more effective and comfortable than generic foam plugs."],
+      ["How close is your office to San Bruno?", "Our San Mateo office is about twelve minutes south of San Bruno on the 101. Call 650-342-9449 to schedule."],
+    ],
+  },

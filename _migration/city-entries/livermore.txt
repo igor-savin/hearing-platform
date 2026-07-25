@@ -1,0 +1,29 @@
+  "livermore": {
+    name: "Livermore",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly an hour east",
+    distanceTier: "far",
+    geo: { lat: 37.6819, lng: -121.7680 },
+    lede:
+      "Livermore anchors the eastern edge of the Bay Area, a Tri-Valley city of vineyards, ranchland, and a science-and-tech heritage from its national laboratory. It is the farthest east of the cities we serve, and we will not pretend otherwise: our offices are a solid hour west on the Peninsula. Livermore patients who come to us are choosing a premier, tinnitus-focused practice on purpose.",
+    hook: [
+      "Wine country distance, and why some still travel",
+      "Livermore is genuinely wine country — dozens of wineries spread across the valley, a lifestyle of tastings and long outdoor afternoons. It is also an hour from our offices, so for everyday hearing care a Tri-Valley provider is the sensible choice. What draws a Livermore patient this far west is the specialization: complex [tinnitus care](/tinnitus/) and Lenire, difficult fittings that other clinics could not resolve, and second opinions worth the trip. We are honest that the distance only makes sense for that focused need.",
+    ],
+    motif: "wine",
+    localScene: [
+      "Vineyards, downtown, and open valley",
+      "Livermore stretches from a revitalized downtown around First Street and the Bankhead Theater out to the vineyards of the Livermore Valley — Wente and Concannon among the oldest — with ranch country and the lab shaping the city's edges. It is a community that blends agricultural roots, wine tourism, and scientific work. The patients who make the long drive to us do so because they want a practice that concentrates on the tinnitus and complex-hearing problems general clinics rarely specialize in.",
+    ],
+    whyHere:
+      "Livermore patients who choose California Hearing Center are seeking depth that justifies an hour's drive — focused tinnitus and Lenire treatment, meticulous testing, and honest technology guidance. They value one consistent audiologist who knows their history, and they accept the distance because the specialization is what they came for.",
+    landmarks:
+      "From downtown Livermore, the Bankhead Theater, or the Livermore Valley wineries, our San Mateo office is roughly an hour west.",
+    faqs: [
+      ["An hour is a long way — why come to you?", "For routine hearing care, we would point you to a closer Tri-Valley provider. Livermore patients travel to us specifically for specialized tinnitus treatment, Lenire, and complex fittings where a dedicated, focused practice is worth the drive."],
+      ["Do you have real experience with difficult tinnitus?", "Yes. Tinnitus is a central focus of our practice, including Lenire therapy for suitable patients. If ringing is disrupting your sleep or concentration, call 650-342-9449 to talk it through before committing to the trip."],
+      ["Can you make one visit accomplish more, given the distance?", "We try to. For patients traveling from as far as Livermore, we group testing, fitting, and follow-up where clinically sensible so fewer long drives are needed."],
+    ],
+  },

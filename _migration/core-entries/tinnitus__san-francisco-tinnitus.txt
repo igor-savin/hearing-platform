@@ -1,0 +1,36 @@
+"/tinnitus/san-francisco-tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Care for San Francisco Patients",
+  intro: [
+    "San Francisco patients are well positioned for our tinnitus care. Our offices are a short drive south on the Peninsula, in San Mateo and San Carlos, typically about 20 to 30 minutes from the city depending on where you start and on traffic.",
+    "That closeness makes a difference. A structured tinnitus program relies on periodic follow-up, and a manageable trip down the 101 or 280 means the visits after your first evaluation stay realistic rather than daunting.",
+    "For city residents who want a dedicated tinnitus focus, verified hearing aids, and options such as Lenire, the modest drive south often buys a level of specialized attention that is worth the trip."
+  ],
+  sections: [
+    ["A short drive south", "From most San Francisco neighborhoods, our San Mateo and San Carlos offices are roughly 20 to 30 minutes away by car via the 101 or 280. Compared with the cross-bridge trips some patients make, this is an easy commute for specialized tinnitus care."],
+    ["Why city patients come to us", "San Francisco has excellent medical resources, and we complement them with a specific, sustained tinnitus focus: thorough evaluation, tinnitus retraining principles, real-ear-verified amplification, and Lenire bimodal neuromodulation for suitable candidates."],
+    ["Fitting visits into a city schedule", "Because the drive is short, we can schedule your evaluation and the follow-ups a tinnitus plan needs without turning each into a major outing. Off-peak appointments can further shrink the trip for those with flexibility."],
+    ["Do your homework before the first visit", "You can prepare from home. Reading our [tinnitus knowledge hub](/tinnitus/) and [what tinnitus is](/tinnitus/what-is-tinnitus/) beforehand means your appointment focuses on your particular situation rather than covering the fundamentals."],
+    ["Urgent symptoms should be handled in the city", "For anything sudden or alarming, stay local and act fast. Sudden hearing loss, sudden or one-sided tinnitus, pulsatile tinnitus, or tinnitus with dizziness deserves prompt evaluation at the nearest appropriate provider, with follow-up care afterward."]
+  ],
+  bulletLinks: [
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["Why choose our tinnitus care", "/tinnitus/why-choose-us/"],
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["San Carlos office", "/contact/san-carlos/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Areas we serve", "/areas-we-serve/"]
+  ],
+  takeaways: [
+    "Our Peninsula offices are roughly 20 to 30 minutes south of San Francisco.",
+    "The short drive makes the follow-up visits of a tinnitus program practical.",
+    "Sudden or one-sided tinnitus should be handled promptly and locally in the city."
+  ],
+  faqs: [
+    ["How far are your offices from San Francisco?", "Usually about 20 to 30 minutes by car via the 101 or 280, depending on your neighborhood and traffic. Both offices are on the Peninsula, in San Mateo and San Carlos."],
+    ["Is it worth leaving the city for tinnitus care?", "For many people, yes. A short drive south brings a dedicated tinnitus focus, real-ear-verified hearing aids, and access to Lenire for candidates, and a tinnitus program involves only a handful of in-person visits over time."],
+    ["What if my tinnitus started suddenly?", "Do not drive down for an emergency. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, should be evaluated promptly by the nearest appropriate provider in the city, then followed up for ongoing management."]
+  ],
+  image: "/assets/core/tinnitus__san-francisco-tinnitus.svg",
+  imageLabel: "A short drive south for specialized tinnitus care"
+},

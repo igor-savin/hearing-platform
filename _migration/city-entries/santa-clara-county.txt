@@ -1,0 +1,29 @@
+  "santa-clara-county": {
+    name: "Santa Clara County",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "south of our San Carlos office, across the South Bay",
+    distanceTier: "far",
+    geo: { lat: 37.35, lng: -121.95 },
+    lede:
+      "Santa Clara County is the heart of Silicon Valley — a broad expanse from Palo Alto and Mountain View through San Jose and out to Gilroy, holding tech campuses, foothill towns, and farm country all at once. Our two offices sit just north of the county line on the Peninsula, and patients travel here from across the South Bay for specialized hearing and tinnitus care.",
+    hook: [
+      "A specialized practice patients travel across the county to reach",
+      "The county is well supplied with everyday audiology, so the people who come to us from across it are usually seeking something more focused: relief from persistent [tinnitus](/tinnitus/) that has resisted other approaches, fittings that finally perform in noise, Lenire treatment, or a rigorous second opinion. Our practice is built around exactly that kind of problem-solving, with deep diagnostics and real-ear-verified fittings. For routine testing and maintenance, a provider in your own city is often the practical choice, and we will say so.",
+    ],
+    motif: "civic",
+    localScene: [
+      "From the Peninsula's edge to the southern valley",
+      "Santa Clara County spans a remarkable range — the tech corridors of Palo Alto, Mountain View, and Cupertino; the affluent foothill towns of Los Altos Hills, Saratoga, and Los Gatos; the big-city neighborhoods of San Jose; and the farm country around Morgan Hill and Gilroy. Listening challenges shift across that map, from demanding open offices to noisy job sites to lively downtowns. Whichever corner you are in, we focus on the harder cases: tinnitus, complex fittings, and verified clarity in real-world noise.",
+    ],
+    whyHere:
+      "Patients across Santa Clara County choose us for depth rather than proximity — a tinnitus-focused practice with meticulous, verified fittings and the continuity of one familiar audiologist. Many first traveled up the Peninsula for a problem no nearer office had solved, and stayed for the rest of their care.",
+    landmarks:
+      "We draw patients from Palo Alto and Mountain View in the north to San Jose, Los Gatos, Morgan Hill, and Gilroy in the south, all reached via the 101 and 280 to our San Carlos office.",
+    faqs: [
+      ["Do you serve the whole of Santa Clara County?", "Yes. Patients come to us from across the county — the Peninsula-adjacent cities, the South Bay, the foothill towns, and the southern valley — most often for specialized tinnitus and complex hearing care."],
+      ["It's a long way from parts of the county. Is it worth it?", "For routine hearing checks, a provider in your own area may be more practical. People travel to us for specialized care — persistent tinnitus, difficult fittings, Lenire, or a thorough second opinion — where our focus makes the distance worthwhile."],
+      ["How do I reach your office from the South Bay?", "Our San Carlos office is north on the 101 or 280, from roughly 20 minutes in the northern county to about an hour from the far south. Call 650-342-9449 and we will schedule an efficient, comprehensive visit."],
+    ],
+  },

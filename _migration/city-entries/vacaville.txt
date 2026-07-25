@@ -1,0 +1,29 @@
+  "vacaville": {
+    name: "Vacaville",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 90 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.3566, lng: -121.9877 },
+    lede:
+      "Vacaville sits in the rolling country between the Bay Area and Sacramento, a growing city known for its outlet shopping, its biotech corridor, and the surrounding Vaca Valley farmland. It's a long way from the coast — our offices are on the San Mateo Peninsula, around 90 minutes southwest — so for routine hearing care, a provider nearer Vacaville will almost always be the practical choice.",
+    hook: [
+      "The kind of care that justifies a longer drive",
+      "We're upfront about distance: for standard testing and everyday hearing aids, stay close to home. The trip to the Peninsula tends to make sense only for specialized needs — complex [tinnitus](/tinnitus/), Lenire treatment, a fitting that's proven difficult, or a second opinion you want handled meticulously. Vacaville patients who travel to us come for that level of care, and we design their visits so one trip covers evaluation, treatment, and a clear follow-up plan.",
+    ],
+    motif: "civic",
+    localScene: [
+      "Between the valley towns and the hills",
+      "Vacaville stretches from its historic downtown along the creek out to the Nut Tree area, the outlet centers off I-80, and the biotech and manufacturing plants that anchor much of the local economy. Plenty of residents have spent careers in industrial and plant settings where sustained noise exposure can, over time, contribute to hearing loss. For those noticing hearing changes or living with tinnitus, the specialized care down on the Peninsula is a trip some are willing to make, even from this far inland.",
+    ],
+    whyHere:
+      "Vacaville patients who come to us are generally after tinnitus and diagnostic expertise they couldn't locate nearby. We respect the long haul by consolidating care into thorough, efficient visits and mapping out follow-up so repeat drives stay uncommon.",
+    landmarks:
+      "Patients travel to our Peninsula offices from Vacaville's downtown, the Nut Tree area, and the surrounding Vaca Valley, generally around 90 minutes southwest along I-80.",
+    faqs: [
+      ["That's a real drive from Vacaville — is it worth it?", "For routine care, a nearby provider is usually the better call. Vacaville patients come to us mainly for specialized tinnitus care, Lenire, and complex fittings where the expertise earns the drive. We plan visits to keep repeat trips low."],
+      ["Can years of factory or plant noise cause hearing loss?", "Sustained occupational noise exposure can contribute to hearing loss over time. A comprehensive evaluation shows whether noise is a factor and what will help most. Call 650-342-9449 to book."],
+      ["How do you make a long trip worthwhile?", "For distant patients, we combine testing, treatment, and counseling into one efficient visit and set up a follow-up plan that limits how often you need to come to the Peninsula."],
+    ],
+  },

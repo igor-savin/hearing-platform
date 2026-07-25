@@ -1,0 +1,29 @@
+"/resources/insurance/": {
+  kicker: "Patient Resources",
+  headline: "Hearing Care, Hearing Aids & Insurance: What to Know",
+  intro: [
+    "Insurance is one of the most common sources of confusion in hearing care, partly because coverage varies so widely from plan to plan. Some plans cover diagnostic hearing tests but not hearing aids; others include a hearing aid benefit, an allowance, or a discount program; and coverage for the same service can differ between two people at the same employer. Because of that, the honest answer to 'is it covered?' almost always starts with checking your specific plan.",
+    "This page explains, in general terms, how hearing services and hearing aids tend to interact with insurance and Medicare, and how California Hearing Center helps you understand your own benefits before you make any decisions. We cannot promise what any particular plan will pay, but we can help you get clear answers.",
+    "When in doubt, the most reliable path is to let us help verify your benefits directly with your carrier."
+  ],
+  sections: [
+    ["Diagnostic testing vs. hearing aids", "Insurers often treat a diagnostic hearing evaluation differently from hearing aids themselves. A medically indicated hearing test may be covered when a hearing aid benefit is not, since many plans historically classified hearing aids separately. Knowing this distinction helps set realistic expectations before your visit."],
+    ["Original Medicare and hearing", "Original Medicare (Parts A and B) generally does not cover routine hearing exams or hearing aids, though it may cover a diagnostic hearing and balance exam when a physician orders it to help with medical treatment. Because rules and interpretations can change, it is worth confirming current specifics rather than relying on general memory."],
+    ["Medicare Advantage and other plans", "Some Medicare Advantage plans and private plans add hearing benefits that Original Medicare does not include, such as an allowance toward hearing aids or access to a discount network. These benefits differ significantly by plan and can carry their own rules, provider requirements, and limits, so the details matter."],
+    ["Allowances, discounts, and out-of-pocket costs", "A hearing benefit might take the form of a fixed dollar allowance, a discount program, or partial coverage rather than full payment, which means most people should expect some out-of-pocket cost. Understanding the structure of your benefit up front helps you compare technology options realistically."],
+    ["How our office helps", "We are glad to help you understand and verify your benefits, gather the information carriers ask for, and explain what your plan indicates before you commit to anything. Our goal is that you make a decision with clear numbers in front of you. If you would like help getting started, visit our [contact page](/contact/)."]
+  ],
+  bullets: ["Coverage varies by plan", "Testing vs. aids differ", "Medicare specifics differ", "Allowances & discounts", "We help verify benefits", "No surprises up front"],
+  takeaways: [
+    "Hearing coverage varies widely, so the answer usually depends on your specific plan.",
+    "Diagnostic testing and hearing aids are often covered differently.",
+    "We help you verify your benefits so you can decide with real numbers in hand."
+  ],
+  faqs: [
+    ["Does insurance cover hearing aids?", "Some plans do, in whole or in part, and some do not. Benefits range from a fixed allowance to a discount program to no coverage at all, so it depends on your specific plan. We can help you check what yours includes."],
+    ["Does Medicare pay for hearing aids?", "Original Medicare generally does not cover routine hearing aids, though it may cover a physician-ordered diagnostic exam in certain situations. Some Medicare Advantage plans add a hearing benefit. Confirming your particular plan's current terms is the reliable path."],
+    ["How do I find out what my plan covers?", "The best step is to verify benefits directly with your carrier, which we are happy to help with. Call 650-342-9449 and our team can walk you through gathering the information your plan needs."]
+  ],
+  image: "/assets/core/resources__insurance.svg",
+  imageLabel: "Understanding your hearing benefits",
+},

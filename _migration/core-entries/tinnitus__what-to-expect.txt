@@ -1,0 +1,36 @@
+"/tinnitus/what-to-expect/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "What to Expect at a Tinnitus Appointment",
+  intro: [
+    "Booking a tinnitus appointment can feel uncertain when you do not know what will happen. The reassuring reality is that it is a calm, thorough, conversation-driven visit, not a procedure to fear. The aim is to understand your tinnitus, rule out anything that needs medical attention, and give you a clear plan instead of internet-fueled worry.",
+    "Every person's tinnitus is a little different, so the visit is tailored to you. Still, most tinnitus appointments at our San Mateo and San Carlos offices follow a similar arc, and knowing it in advance helps you prepare and get the most from your time.",
+    "For background before you come in, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) is a helpful starting point."
+  ],
+  sections: [
+    ["A detailed conversation first", "We begin by listening. Expect questions about when your tinnitus started, what it sounds like, whether it is in one ear or both, how it affects your sleep, focus, and mood, your noise exposure and health history, and any medications. This history often reveals the most important clues."],
+    ["A hearing evaluation", "Because tinnitus and hearing loss so often go together, a full [hearing test](/hearing-testing/) is usually part of the visit. It measures your hearing across pitches and compares your two ears, which helps identify contributors and rules out issues like earwax."],
+    ["Measuring the tinnitus itself", "In many cases we can characterize your tinnitus, estimating its pitch and loudness and how much sound it takes to cover it. These measures help us describe what you are experiencing and track it over time, and they make the invisible feel more concrete."],
+    ["Screening for red flags", "Part of the visit is checking for patterns that call for medical referral, such as sudden onset, one-sided symptoms, pulsatile tinnitus, dizziness, or accompanying hearing loss. If we find one, we will guide you to the right next step."],
+    ["Building your plan", "You leave with an explanation in plain language and a personalized plan, which may include sound therapy, hearing aids if appropriate, counseling strategies, sleep and stress support, and follow-up. See our [tinnitus therapy](/services/tinnitus-therapy/) page for the options we offer."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Book at San Mateo", "/contact/san-mateo/"],
+    ["Book at San Carlos", "/contact/san-carlos/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "A tinnitus appointment is a calm, conversation-driven visit, not a procedure.",
+    "Expect a detailed history, a hearing test, tinnitus measurement, and red-flag screening.",
+    "You leave with a plain-language explanation and a personalized management plan."
+  ],
+  faqs: [
+    ["What should I bring to a tinnitus appointment?", "Bring a list of your medications, any relevant medical or hearing history, and notes on when your tinnitus started, what it sounds like, and how it affects your daily life. The more detail you can share, the more useful the visit."],
+    ["Will I get a hearing test at a tinnitus appointment?", "Usually yes. Because tinnitus and hearing loss are closely linked, a hearing evaluation is typically part of the visit. It helps identify contributors and rules out simple causes like earwax."],
+    ["How do I schedule a tinnitus evaluation?", "Call 650-342-9449 to book at our San Mateo or San Carlos office. Let us know it is a tinnitus concern so we can plan enough time for a thorough history, testing, and a discussion of your options."]
+  ],
+  image: "/assets/core/tinnitus__what-to-expect.svg",
+  imageLabel: "Your first tinnitus visit, step by step"
+},

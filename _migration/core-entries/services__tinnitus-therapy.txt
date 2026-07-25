@@ -1,0 +1,37 @@
+"/services/tinnitus-therapy/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Therapy in San Mateo & San Carlos",
+  intro: [
+    "Tinnitus, the perception of ringing, buzzing, hissing, or humming without an outside source, is one of the reasons patients travel from across the Peninsula to see us. It is common, it is rarely dangerous on its own, and, importantly, it is manageable. Our tinnitus program is built to move you from uncertainty and internet overwhelm toward a clear, structured plan.",
+    "There is no single pill or switch that erases tinnitus for everyone, but that does not mean nothing can be done. Most people who feel controlled by their tinnitus can reach a point where it fades into the background, stops disrupting sleep, and no longer dominates their attention. Getting there usually combines several complementary approaches rather than one quick fix.",
+    "This page explains the services we offer. If you are still learning what tinnitus is and why it happens, start with [what is tinnitus](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["A thorough evaluation comes first", "Every plan begins with listening to your history and testing your hearing. Because tinnitus and hearing loss so often travel together, a full [hearing evaluation](/hearing-testing/) helps us understand what may be driving the sound and rules out reversible causes such as earwax. We also screen for the red flags that warrant medical referral."],
+    ["Sound therapy", "Low-level background sound, from a tabletop generator, an app, or hearing aids with a built-in tinnitus feature, can make the contrast between silence and tinnitus less jarring. Used consistently, sound enrichment supports the brain's natural process of tuning the signal out over time."],
+    ["Counseling and CBT-informed strategies", "Much of tinnitus distress comes from the alarm and worry the sound triggers, not the sound itself. Education and counseling informed by cognitive behavioral therapy help reframe those reactions. Some patients also benefit from a referral to a psychologist for structured CBT, which has strong research support for reducing tinnitus-related distress."],
+    ["Hearing aids and Tinnitus Retraining Therapy (TRT)", "When hearing loss is present, well-fit hearing aids often ease tinnitus by restoring the everyday sound the brain is missing. Tinnitus Retraining Therapy combines directive counseling with sustained sound enrichment over months, with the goal of habituation, the point where tinnitus stops registering as a threat."],
+    ["Lenire and advanced options", "Lenire is an FDA-cleared bimodal neuromodulation device that pairs sound with mild electrical stimulation of the tongue. It is not right for everyone, and candidacy depends on your hearing, tinnitus profile, and medical history. We can discuss whether it fits your situation as part of a broader plan."],
+    ["When tinnitus needs urgent care", "Tinnitus that begins suddenly, affects only one ear, pulses in time with your heartbeat, or comes with dizziness, sudden hearing loss, or neurological symptoms should be evaluated promptly rather than managed as routine."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Sound sensitivity (hyperacusis)", "/hyperacusis/"],
+    ["Book at San Mateo", "/contact/san-mateo/"],
+    ["Book at San Carlos", "/contact/san-carlos/"]
+  ],
+  takeaways: [
+    "Tinnitus is common and manageable, even though there is no universal cure.",
+    "Effective care usually blends evaluation, sound therapy, counseling, hearing aids, and sometimes Lenire or TRT.",
+    "Sudden, one-sided, or pulsatile tinnitus deserves prompt medical attention."
+  ],
+  faqs: [
+    ["Can tinnitus therapy actually help if there is no cure?", "Yes. The aim of therapy is not always to silence the sound but to reduce its intrusiveness and the distress it causes. Many people reach a point where tinnitus no longer disrupts sleep, focus, or mood, even if it is still technically present."],
+    ["How long does tinnitus treatment take?", "It varies. Some patients feel calmer within a few visits simply from a clear explanation and a plan, while approaches built around habituation, such as TRT or Lenire, are designed to work gradually over months of consistent use."],
+    ["How do I get started?", "Call 650-342-9449 to schedule a tinnitus evaluation at our San Mateo or San Carlos office. We begin with your history and a hearing test, then build a plan around what we find."]
+  ],
+  image: "/assets/core/services__tinnitus-therapy.svg",
+  imageLabel: "Structured, evidence-based tinnitus care"
+},

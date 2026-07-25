@@ -1,0 +1,29 @@
+"/about-us/kira-savin/": {
+  kicker: "Meet the Team",
+  headline: "Kira Savin, AuD",
+  intro: [
+    "Dr. Kira Savin believes that \"there is nothing more rewarding than helping a patient achieve better hearing.\" She feels that everyone's hearing needs are unique, like a fingerprint, and it is her goal to find a customized solution for each patient she sees.",
+    "Dr. Savin specializes in providing personalized hearing solutions using the latest and most discreet technology available, including the [Lyric invisible extended-wear hearing device](/products/hearing-aids-by-brand/lyric/). Her areas of expertise include hearing rehabilitation, auditory counseling, tinnitus management and retraining therapy, and dispensing of hearing devices and other assistive listening technologies."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Savin is licensed in Audiology and Hearing Aid Dispensing in both California and New York State. She earned her B.A. in Communication Sciences and Disorders from Pace University in 2005 and her Au.D. from Salus University, George S. Osborne College of Audiology, in 2013. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology, and she holds the Tinnitus Management (CH-TM) certificate. She completed her residency at SUNY Downstate Medical Center in Brooklyn, N.Y. In 2018, she received the Business Council of Westchester's Top 40 under 40 award."],
+    ["Focus & approach", "After practicing in New York City, Dr. Savin continued her career in Westchester County, where she co-purchased Audiology Associates of Westchester and remains a co-owner of that practice and its satellite offices. She is thrilled to now call the Bay Area her home."]
+  ],
+  bullets: [
+    "Personalized hearing solutions with discreet technology",
+    "Lyric invisible extended-wear device expertise",
+    "Hearing rehabilitation and auditory counseling",
+    "Tinnitus management and retraining therapy",
+    "Co-owner of Audiology Associates of Westchester"
+  ],
+  takeaways: [
+    "Licensed in Audiology and Hearing Aid Dispensing in both California and New York State.",
+    "Co-owner of Audiology Associates of Westchester, with expertise in the Lyric invisible hearing device."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/kira-savin.jpg",
+  imageLabel: "Kira Savin, AuD",
+  imageAlt: "Dr. Kira Savin, audiologist at California Hearing Center",
+},

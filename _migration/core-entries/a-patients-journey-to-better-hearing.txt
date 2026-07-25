@@ -1,0 +1,30 @@
+"/a-patients-journey-to-better-hearing/": {
+  kicker: "What to Expect",
+  headline: "A Patient's Journey to Better Hearing, Step by Step",
+  intro: [
+    "Deciding to do something about your hearing can feel bigger than it needs to. People often imagine an overwhelming process, when in reality it unfolds as a series of clear, manageable steps, each one building on the last. Knowing what those steps look like ahead of time takes much of the anxiety out of the first phone call.",
+    "This is the path most patients at California Hearing Center follow, from the moment they reach out through the ongoing care that keeps them hearing their best. Not every journey is identical; some people need only reassurance and monitoring, while others move through the full arc into hearing technology. But the shape is consistent, and you are guided at every stage.",
+    "Here is what the journey typically looks like across our San Mateo and San Carlos offices."
+  ],
+  sections: [
+    ["Step one: the first call", "It starts with a conversation. When you contact us, we listen to what prompted the call, whether it is a specific struggle in restaurants, a family member's concern, or ringing in your ears, and help you choose the right kind of appointment and the most convenient office. There is no obligation, just a plan for the first visit."],
+    ["Step two: the hearing evaluation", "At your appointment we take a history, examine your ears, and complete a [hearing evaluation](/hearing-testing/) that measures not just the softest sounds you can detect but how well you understand speech, including in background noise. This is the foundation for everything that follows."],
+    ["Step three: discussing your results", "We walk you through your results in plain language, showing you your audiogram and explaining what it means for the situations you care about. If hearing loss is present, we talk about its type and degree; if something needs medical attention, we guide you toward the right referral. You leave understanding your own hearing."],
+    ["Step four: choosing technology", "If hearing aids make sense, we match options to your hearing, your lifestyle, your dexterity, and your budget rather than pushing a single product. We explain the trade-offs among styles and features so the choice is genuinely yours. Explore the range of [hearing aids](/products/) to see what is possible."],
+    ["Step five: fitting and verification", "At the [fitting](/hearing-aid-fitting/), we program the devices to your prescription and use real-ear verification to confirm they are delivering the right sound in your actual ears, not just in theory. We also teach you to wear, charge, clean, and handle them with confidence."],
+    ["Step six: follow-up and adjustments", "Your brain needs time to readjust to a fuller range of sound, and the first weeks matter. Follow-up visits let us fine-tune comfort and clarity, solve real-world listening problems, and keep your devices performing. Better hearing is an ongoing relationship, not a one-time purchase."]
+  ],
+  bullets: ["First call & planning", "Comprehensive evaluation", "Results in plain language", "Technology matched to you", "Verified fitting", "Ongoing follow-up"],
+  takeaways: [
+    "The journey is a series of clear, guided steps, not a single overwhelming decision.",
+    "Everything is built on a thorough evaluation and results you actually understand.",
+    "Follow-up and fine-tuning are a normal, expected part of hearing better over time."
+  ],
+  faqs: [
+    ["Do I have to buy hearing aids if I come in?", "No. The first steps are about understanding your hearing and your options. Many people come in for answers and monitoring, and hearing technology is only recommended when it genuinely fits your needs and goals."],
+    ["How long does the whole process take?", "The initial evaluation and results discussion often happen in a single visit. If you move forward with hearing aids, fitting follows, and adjustment usually unfolds over the following weeks as your brain adapts and we fine-tune the devices."],
+    ["What if my results show I do not need hearing aids?", "That is a good outcome. We will explain what we found, offer guidance or monitoring if appropriate, and make sure you know what signs to watch for. You leave with clarity either way."]
+  ],
+  image: "/assets/hearing-journey-hero.webp",
+  imageLabel: "The path to hearing your best",
+},

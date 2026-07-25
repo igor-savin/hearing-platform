@@ -1,0 +1,27 @@
+"/about-us/jarna-kothari/": {
+  kicker: "Meet the Team",
+  headline: "Jarna Kothari, Practice Administrator",
+  intro: [
+    "Jarna Kothari serves as Practice Administrator at California Hearing Center, where she is focused on enhancing the patient experience, supporting quality care delivery, and helping improve patients' lives through better hearing health outcomes. She is passionate about creating a welcoming, efficient, and patient-centered environment that enables individuals and families to access the care and support they need with confidence.",
+    "Jarna brings more than 10 years of healthcare experience across patient services, medical billing, health information management, medical records, referrals, and practice operations. Her background reflects a strong commitment to accuracy, compassion, and service excellence, with extensive experience supporting both patients and clinical teams in fast-paced healthcare settings."
+  ],
+  sections: [
+    ["Background & experience", "She holds a Bachelor's degree in Speech Language Pathology and Audiology, which further strengthens her connection to the field of hearing and communication care. Jarna combines her clinical foundation with operational expertise to help ensure patients receive a seamless experience and high-quality support throughout their care journey."]
+  ],
+  bullets: [
+    "More than 10 years of healthcare experience",
+    "Patient services and practice operations",
+    "Medical billing and health information management",
+    "Bachelor's degree in Speech Language Pathology and Audiology"
+  ],
+  takeaways: [
+    "Practice Administrator with 10+ years of healthcare experience across patient services and operations.",
+    "Holds a Bachelor's degree in Speech Language Pathology and Audiology."
+  ],
+  faqs: [
+    ["How do I reach the practice?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+  ],
+  image: "/assets/team/jarna-kothari.jpg",
+  imageLabel: "Jarna Kothari, Practice Administrator",
+  imageAlt: "Jarna Kothari, Practice Administrator at California Hearing Center",
+},

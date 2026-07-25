@@ -1,0 +1,36 @@
+"/products/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Hearing Technology Chosen for You, Not the Brochure",
+  intro: [
+    "The hearing aid market can feel overwhelming: dozens of models, a handful of major manufacturers, competing marketing claims, and price ranges that seem to defy explanation. This section of our site is meant to cut through that noise. It explains how modern hearing technology actually works, which brands California Hearing Center carries, and why the device you choose matters far less than how it is fit and supported.",
+    "At our San Mateo and San Carlos offices, we are not tied to a single manufacturer. That independence lets us compare styles, technology levels, and features honestly, and match them to your hearing, your hands, your phone, and the places you most want to hear well.",
+    "Use these pages to learn the landscape, then let us translate it into a specific recommendation built on your [hearing test](/hearing-testing/) results."
+  ],
+  sections: [
+    ["Start with the hearing loss, not the device", "The right technology depends on the shape and degree of your hearing loss, your speech understanding, and the listening situations that matter most. That is why every recommendation begins with a full evaluation rather than a catalog."],
+    ["Styles and how they differ", "Receiver-in-canal, behind-the-ear, in-the-ear, completely-in-canal, and invisible options each trade off size, power, battery life, and ease of handling. Our [hearing aids overview](/products/hearing-aids/) explains which situations favor which style."],
+    ["Brands we carry", "We work with Oticon, Phonak, ReSound, Widex, Signia, Starkey, Rexton, and Unitron. Each has genuine strengths, and none is best for every ear, which is why we compare rather than promote."],
+    ["Technology levels and budget", "Within a single model line, higher technology levels generally add automatic adjustment and better performance in complex noise. We help you decide where added cost delivers real benefit for your lifestyle and where it does not."],
+    ["Fitting is where results are made", "Even excellent hardware underperforms without careful programming and verification. Our [fitting process](/hearing-aid-fitting/) uses real-ear measurement to confirm each device is doing what your prescription requires."]
+  ],
+  bulletLinks: [
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["Compare brands", "/products/hearing-aids-by-brand/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Ear Gear protection", "/products/eargear/"],
+    ["Repairs and service", "/services/hearing-aid-repair/"]
+  ],
+  takeaways: [
+    "Choosing hearing aids well means matching technology to your hearing, dexterity, and lifestyle, not chasing a brand name.",
+    "California Hearing Center is independent and carries several major manufacturers so comparison stays honest.",
+    "Professional fitting and verification usually influence results more than the logo on the device."
+  ],
+  faqs: [
+    ["How do I choose the right hearing aid?", "Start with a hearing evaluation, then weigh style, technology level, connectivity, and comfort against your daily listening needs. We narrow the field to devices that genuinely suit your hearing rather than presenting the entire catalog."],
+    ["Does the brand really matter?", "Brand matters less than most people expect. The major manufacturers all make capable devices, and differences in sound processing are real but subtle. Fitting quality, follow-up, and the match to your hearing loss usually matter more."],
+    ["Can I compare several brands before deciding?", "Yes. Because we are independent, we can discuss and, where appropriate, trial options across manufacturers so your choice is based on how a device performs for you rather than on what a single company sells."]
+  ],
+  image: "/assets/core/products.svg",
+  imageLabel: "Independent hearing technology guidance"
+},

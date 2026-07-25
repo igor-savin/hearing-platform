@@ -1,0 +1,29 @@
+"/resources/hearingup-approved-provider/": {
+  kicker: "Patient Resources",
+  headline: "A HearingUp Approved Provider Committed to Best Practices",
+  intro: [
+    "Not all hearing aid fittings are done the same way, and the difference shows up in how well people actually hear. HearingUp, the provider network associated with Dr. Cliff Olson, AuD, was created to help patients find hearing care practices that follow evidence-based Best Practices rather than shortcuts. California Hearing Center is a HearingUp approved provider.",
+    "For a patient, that designation is a shorthand for something important: a commitment to fitting hearing aids the right way, including real-ear verification, thorough evaluation, and structured follow-up, rather than simply programming devices to a manufacturer's default and sending you out the door.",
+    "This page explains what the designation signifies and why it should matter when you choose where to receive hearing care."
+  ],
+  sections: [
+    ["What HearingUp is", "HearingUp is a provider directory and standard associated with audiologist Dr. Cliff Olson, AuD, aimed at helping consumers identify practices that commit to comprehensive, evidence-based hearing care. Approved providers agree to follow a defined set of Best Practices in how they evaluate hearing and fit hearing aids."],
+    ["The role of real-ear verification", "A cornerstone of these Best Practices is real-ear measurement, sometimes called real-ear verification. Instead of trusting that a hearing aid delivers the prescribed sound, the clinician places a tiny probe microphone in your ear and measures what actually reaches your eardrum, then adjusts the device to match your prescription. Research has long shown this step improves fitting accuracy, yet it is not performed everywhere."],
+    ["Why best practices matter for outcomes", "Two people can receive the same hearing aids and have very different experiences depending on how carefully the devices are evaluated for, programmed, verified, and followed up. Best-practice protocols are designed to close that gap, giving you a fitting matched to your ears and your hearing rather than a generic setting."],
+    ["What it means for you as a patient", "Choosing a HearingUp approved provider is a way to seek out a practice that has publicly committed to doing hearing care thoroughly. It aligns with how we already work: careful [evaluation](/hearing-testing/), verified [fitting](/hearing-aid-fitting/), and ongoing adjustment. The designation is a signal of process and philosophy, not a promise about any specific product."],
+    ["Learn more from us directly", "We are happy to explain exactly what our best-practice process looks like and to answer questions about what to expect at a fitting. If you would like the details, reach out through our [contact page](/contact/) and we will walk you through it."]
+  ],
+  bullets: ["HearingUp approved", "Real-ear verification", "Evidence-based fittings", "Thorough evaluation", "Structured follow-up", "Process you can trust"],
+  takeaways: [
+    "The HearingUp designation signals a commitment to evidence-based Best Practices.",
+    "Real-ear verification measures what actually reaches your eardrum and improves fitting accuracy.",
+    "It reflects how care is delivered, not a claim about any particular hearing aid brand."
+  ],
+  faqs: [
+    ["What does it mean that you are a HearingUp approved provider?", "It means our practice has committed to following the evidence-based Best Practices that HearingUp promotes, including real-ear verification and comprehensive evaluation and follow-up, rather than default programming. It reflects our process and philosophy of care."],
+    ["What is real-ear verification and why does it matter?", "Real-ear measurement uses a small probe microphone in your ear to measure the sound a hearing aid actually delivers to your eardrum, so the device can be adjusted to match your prescription. It is a well-established step for improving fitting accuracy."],
+    ["Who is Dr. Cliff, and is HearingUp a brand of hearing aid?", "Dr. Cliff Olson, AuD, is an audiologist behind the HearingUp network, which is a directory and standard for best-practice hearing care, not a brand of hearing aid. The designation is about how care is delivered, not which devices are used."]
+  ],
+  image: "/assets/core/resources__hearingup-approved-provider.svg",
+  imageLabel: "Committed to hearing care best practices",
+},

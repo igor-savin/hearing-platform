@@ -1,0 +1,29 @@
+  "east-palo-alto": {
+    name: "East Palo Alto",
+    county: "San Mateo County",
+    region: "peninsula-south",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 12 minutes from our San Carlos office on the 101",
+    distanceTier: "near",
+    geo: { lat: 37.4688, lng: -122.1411 },
+    lede:
+      "East Palo Alto sits along the bay at the southern edge of San Mateo County, a proud, close-knit community with deep roots and a fast-changing skyline of new offices and housing near the water. Good hearing care should be straightforward to reach here — and it is, with our San Carlos office about twelve minutes up the 101.",
+    hook: [
+      "Full-service hearing care within easy reach",
+      "Everyone deserves thorough, professional hearing care close to home, and East Palo Alto residents have it just up the freeway. Whether it is a first hearing test, help for a parent who has started asking people to repeat themselves, ringing in the ears, or hearing aids that need fitting and follow-up, we provide the complete range under one roof. We explain results in plain language, recommend honestly, and never pressure — the goal is hearing that fits your life and your budget.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A bayside community, close to real care",
+      "East Palo Alto runs from the neighborhoods off University Avenue and Bay Road out to the shoreline at Cooley Landing and the Ravenswood Open Space Preserve, with newer development rising near the bay. It is a community that values respect and straight talk, and that is how we work: careful [hearing evaluations](/hearing-testing/), clear explanations, and honest technology recommendations, a short and easy drive up the 101 to San Carlos.",
+    ],
+    whyHere:
+      "East Palo Alto patients choose us for genuine, unhurried attention and real expertise — comprehensive testing, honest guidance across every price point, and specialized tinnitus care — delivered by the same audiologist each visit. Quality care, close by, without the runaround.",
+    landmarks:
+      "We are about twelve minutes from East Palo Alto's University Avenue, Bay Road, and Cooley Landing, straight up the 101 to our San Carlos office.",
+    faqs: [
+      ["Is there a full-service audiologist near East Palo Alto?", "Yes — our San Carlos office is about twelve minutes north on the 101, offering complete testing, fittings, tinnitus care, and repairs all in one place."],
+      ["Do you offer hearing aids at different price points?", "We do. We carry a range of technology levels and recommend honestly based on your hearing needs and budget, never pushing the most expensive option."],
+      ["How do I set up a first hearing test?", "Just call 650-342-9449. A comprehensive evaluation is the starting point, and we will walk you through the results in plain language."],
+    ],
+  },

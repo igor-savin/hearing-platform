@@ -1,0 +1,29 @@
+  "gilroy": {
+    name: "Gilroy",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 60 minutes south",
+    distanceTier: "far",
+    geo: { lat: 37.0058, lng: -121.5683 },
+    lede:
+      "Gilroy is the self-styled Garlic Capital of the World — a farming town at the rural southern end of the county, with a historic Monterey Street downtown and fields and vineyards spreading out around it. It is a full hour south of our Peninsula offices, so the Gilroy patients who come to us are clearly choosing specialized care over the nearest clinic.",
+    hook: [
+      "Farm-country hearing care and the reasons people travel for it",
+      "Agriculture and food processing run on loud machinery, and years of that kind of occupational exposure can contribute to hearing loss and tinnitus. Rural south county also has fewer specialized audiology options, so when a Gilroy patient needs more than routine care — stubborn [tinnitus](/tinnitus/), a fitting that never worked, a thorough reassessment — the search often leads up the Peninsula. Our practice is built around exactly those harder problems, which is what justifies the longer drive.",
+    ],
+    motif: "civic",
+    localScene: [
+      "A working town at the county's rural edge",
+      "Gilroy centers on the old downtown along Monterey Street, with the premium outlets off the 101, Gilroy Gardens to the west, and garlic fields and wineries filling the valley around it. It is a hard-working, agricultural community where quiet is the norm but loud equipment is a daily reality on farms and in processing plants. For Gilroy patients who make the trip, we concentrate on occupational hearing changes, tinnitus, and carefully verified fittings.",
+    ],
+    whyHere:
+      "Gilroy patients travel to us because specialized hearing and tinnitus care is scarce in south county, and because our focus — deep diagnostics, verified fittings, and Lenire for tinnitus — is worth a real drive. For routine testing, we are honest that something closer to home makes more sense.",
+    landmarks:
+      "We are about 60 minutes from downtown Gilroy, the Gilroy outlets, and Gilroy Gardens, north up the 101 to our San Carlos office.",
+    faqs: [
+      ["It's a long way from Gilroy — is it worth it?", "For everyday hearing checks, a closer clinic is more practical. Patients make the drive to us for specialized care — persistent tinnitus, difficult fittings, Lenire, or a rigorous second opinion — where our expertise earns the distance."],
+      ["Can farm and plant noise affect my hearing?", "Yes. Sustained occupational noise from machinery can contribute to hearing loss and tinnitus over time. A baseline evaluation shows where you stand and what protection helps going forward."],
+      ["How far is your office from Gilroy?", "About an hour north on the 101 to San Carlos. Call 650-342-9449 and we will schedule a full visit so one trip covers everything you need."],
+    ],
+  },

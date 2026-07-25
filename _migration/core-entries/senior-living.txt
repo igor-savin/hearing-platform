@@ -1,0 +1,35 @@
+"/senior-living/": {
+  kicker: "Hearing Care for Seniors",
+  headline: "Hearing Care for Seniors in Peninsula Senior-Living Communities",
+  intro: [
+    "Hearing loss is one of the most common health conditions of later life, and it affects far more than the ears. For older adults living in senior communities across the Peninsula, staying able to hear means staying part of meals, activities, family visits, and everyday life. California Hearing Center provides that care from two nearby offices — San Mateo at 88 N. San Mateo Drive and San Carlos — and we regularly see residents and families from senior-living communities throughout the area.",
+    "We are an independent audiology practice, so our advice is not tied to a single brand or a hard sell. This page is an overview of what senior hearing care involves, why it matters so much, and how to arrange it for a loved one or for yourself."
+  ],
+  sections: [
+    ["Why hearing loss matters more as we age", "Untreated hearing loss is associated in research from Johns Hopkins and the Lancet Commission on dementia with a higher risk of social isolation, falls, and cognitive decline. These are associations, not proof of cause, but together they make a strong case for treating hearing loss rather than letting it quietly narrow someone's world."],
+    ["Hearing aids that suit older adults", "The best hearing aid for a senior is the one they will comfortably wear. That usually means rechargeable devices with no tiny batteries, larger or simpler controls for limited dexterity or vision, and automatic programs that adjust to each room on their own. We fit for ease of use, not just audiogram numbers."],
+    ["Supporting families and caregivers", "Hearing care in a senior setting works best as a team effort. We explain a resident's needs to family members, coach caregivers on clear-communication habits, and make sure someone knows how to keep the devices clean and charged."],
+    ["The value of a nearby, independent audiologist", "Hearing aids need ongoing tuning as hearing changes. Having an audiologist a short drive away means residents keep seeing the same clinician for adjustments, repairs, and questions, without a difficult or distant trip."],
+    ["Communities we serve", "We care for residents and families from senior communities across San Mateo, including Atria Park of San Mateo, Sunrise of San Mateo, The Peninsula Regent, and The Stratford, among others throughout the Peninsula."]
+  ],
+  bulletLinks: [
+    ["Atria Park of San Mateo", "/atria-park-of-san-mateo/"],
+    ["Sunrise of San Mateo", "/sunrise-of-san-mateo/"],
+    ["The Peninsula Regent", "/the-peninsula-regent/"],
+    ["The Stratford", "/the-stratford/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Our San Mateo office", "/contact/san-mateo/"]
+  ],
+  takeaways: [
+    "We serve seniors and families from senior-living communities across the Peninsula, from San Mateo and San Carlos.",
+    "Untreated hearing loss is associated with isolation, falls, and cognitive decline in older adults.",
+    "Rechargeable, simple hearing aids plus a nearby independent audiologist make senior hearing care sustainable."
+  ],
+  faqs: [
+    ["Do you work with residents of senior-living communities?", "Yes. We regularly care for residents and their families from communities across San Mateo and the Peninsula. Call 650-342-9449 and we can arrange testing and fittings at whichever of our offices is most convenient."],
+    ["Is it worth treating hearing loss in someone quite elderly?", "In most cases, very much so. Better hearing keeps an older adult connected to family and community, which supports mood, engagement, and daily wellbeing at any age."],
+    ["Can family members be involved in the appointments?", "We encourage it. Family and caregivers help with decisions, remember instructions, and support daily use of the devices, so a resident gets the full benefit of their hearing aids."]
+  ],
+  image: "/assets/core/senior-living.svg",
+  imageLabel: "Hearing care for seniors across the Peninsula"
+},

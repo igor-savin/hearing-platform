@@ -1,0 +1,29 @@
+"/hearing-aid-referral-program/": {
+  kicker: "For Our Patients",
+  headline: "Refer Someone You Care About to Better Hearing",
+  intro: [
+    "Some of the most meaningful referrals we receive come from patients who finally addressed their own hearing and then recognized the same struggles in someone they love: a spouse who keeps the television too loud, a parent who has stopped joining conversations, a friend who nods along but clearly is not catching much. If you have benefited from care here, you are in a unique position to help someone else take that first step.",
+    "California Hearing Center welcomes patient referrals through our hearing aid referral program. It is our way of saying thank you when you point a friend or family member toward the help they have been putting off, and of making it a little easier for them to walk through the door.",
+    "If you would like to refer someone, or you were referred by an existing patient, just let us know. Ask us for the current details and we will walk you through how it works."
+  ],
+  sections: [
+    ["Why referrals matter in hearing care", "People wait an average of years before acting on hearing loss, often because they do not realize how much they are missing or feel unsure about seeking help. A trusted nudge from someone who has been through it themselves is frequently what finally moves a person to schedule that first appointment."],
+    ["Who you might refer", "Think of the people who ask you to repeat yourself, struggle in restaurants, avoid phone calls, or seem to withdraw in group settings. A spouse, sibling, parent, neighbor, or coworker who shows these signs could benefit from a simple [hearing evaluation](/hearing-testing/) to understand where they stand."],
+    ["How to refer someone", "The easiest way is to have them mention your name when they contact us, or to let our team know you would like to refer someone. We will make sure both of you are taken care of. Because program specifics can change, we will confirm the current terms with you directly."],
+    ["A no-pressure first visit", "Referring someone does not commit them to anything. A first appointment is about understanding their hearing and answering questions, not a sales pitch. Many people are relieved simply to get clear answers, whether or not hearing technology turns out to be the right next step."],
+    ["Ask us about the details", "We keep the program straightforward and are happy to explain how it currently works, what a referred friend can expect, and any thank-you we extend to you. Reach out and we will fill you in."]
+  ],
+  bullets: ["Refer friends & family", "A trusted first step", "No pressure for referrals", "We handle the details", "Ask us how it works", "Two Peninsula offices"],
+  takeaways: [
+    "Patients are often the best people to encourage a loved one to address hearing loss.",
+    "Referring someone commits them to nothing beyond a first conversation.",
+    "Ask our team for the current program details rather than assuming specifics."
+  ],
+  faqs: [
+    ["How does the hearing aid referral program work?", "In short, you point a friend or family member to our practice and let us know, and we take care of both of you. The specifics can change over time, so ask our team for the current details and we will explain everything."],
+    ["Who should I refer?", "Anyone showing signs of hearing difficulty: turning up the volume, asking for repetition, struggling in noisy rooms, or withdrawing from conversation. A first hearing evaluation is a low-pressure way for them to find out where they stand."],
+    ["What does a referred friend need to do?", "They can simply contact us and mention your name, or you can let us know you would like to refer them. Call 650-342-9449 and we will make it easy for both of you."]
+  ],
+  image: "/assets/core/hearing-aid-referral-program.svg",
+  imageLabel: "Help someone you love hear better",
+},

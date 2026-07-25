@@ -1,0 +1,36 @@
+"/hyperacusis/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Hyperacusis: When Everyday Sounds Feel Too Loud",
+  intro: [
+    "Hyperacusis is a reduced tolerance to ordinary sounds, so that noises most people find comfortable, running water, dishes, traffic, or a conversation, feel uncomfortably or even painfully loud. It is different from simply disliking noise; the sounds genuinely register as too intense.",
+    "Sound sensitivity can range from mild annoyance to a condition that reshapes daily life, and it frequently overlaps with tinnitus and with hearing loss. Because the causes and severity vary widely, a careful evaluation matters before deciding on any approach.",
+    "At California Hearing Center, we assess sound tolerance alongside your hearing and, where appropriate, use gradual sound-based therapy to help rebuild comfort. Reputable sources such as the American Tinnitus Association and ASHA describe hyperacusis and its management, and our approach follows that evidence-informed thinking."
+  ],
+  sections: [
+    ["What hyperacusis is, and is not", "Hyperacusis is a lowered tolerance to sound levels that do not bother most people. It differs from recruitment, a rapid growth of loudness tied to hearing loss, and from misophonia, a strong emotional reaction to specific sounds. Distinguishing these matters because they are managed differently."],
+    ["Common causes and triggers", "Sound sensitivity can follow noise exposure, head injury, certain medications or medical conditions, and often accompanies tinnitus. Sometimes no single cause is found. Identifying contributing factors is part of a thorough evaluation and guides what to do next."],
+    ["How we evaluate it", "Assessment typically includes a full [hearing test](/hearing-testing/), a history of your symptoms and triggers, and measures of how you tolerate different sound levels. Screening also looks for red flags that call for medical referral before therapy begins."],
+    ["Sound desensitization therapy", "For many people, carefully graded exposure to sound, rather than avoidance, gradually rebuilds tolerance. This is done at comfortable levels and increased slowly over time, often paired with counseling so the process feels controlled and safe."],
+    ["Why silence usually backfires", "It is tempting to retreat into quiet and constant ear protection, but persistent silence can make the auditory system even more sensitive, worsening the problem over time. A balanced, gradual return to normal sound is usually the healthier path, guided by a professional."]
+  ],
+  bulletLinks: [
+    ["Coping strategies for sound sensitivity", "/hyperacusis/coping/"],
+    ["The hyperacusis and tinnitus overlap", "/hyperacusis/tinnitus/"],
+    ["When to seek professional help", "/hyperacusis/when-to-seek-help/"],
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["Tinnitus knowledge hub", "/tinnitus/"]
+  ],
+  takeaways: [
+    "Hyperacusis is a genuinely reduced tolerance to everyday sound, not just a dislike of noise.",
+    "It often overlaps with tinnitus and hearing loss, so evaluation should look at all three.",
+    "Gradual sound-based therapy tends to help, while constant silence often makes it worse."
+  ],
+  faqs: [
+    ["What is the difference between hyperacusis and just being sensitive to noise?", "Hyperacusis means sounds at levels most people find comfortable register as too loud or even painful. It is a measurable reduction in sound tolerance, which is why a professional evaluation helps distinguish it from ordinary noise dislike."],
+    ["Can hyperacusis be treated?", "Many people improve. Gradual sound desensitization at comfortable levels, often combined with counseling and treatment of any related tinnitus or hearing loss, can rebuild tolerance over time. Results vary and depend on the underlying cause."],
+    ["Should I wear earplugs all the time to protect my ears?", "Generally no. Constant ear protection in ordinary environments can make hyperacusis worse by increasing sensitivity. Reserve protection for genuinely loud settings, and let a professional guide a gradual return to normal sound."]
+  ],
+  image: "/assets/core/hyperacusis.svg",
+  imageLabel: "Understanding and managing sound sensitivity"
+},

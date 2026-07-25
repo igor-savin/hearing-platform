@@ -1,0 +1,36 @@
+"/tinnitus/medications/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Medications and Tinnitus: What to Know",
+  intro: [
+    "Certain medications can cause or worsen tinnitus, a property clinicians call ototoxicity. If you noticed ringing after starting a new drug, you are right to be curious, and it is a good thing to raise with your prescriber. What you should not do is stop or change any medication on your own based on something you read online, including this page.",
+    "That caution matters, because many of the drugs linked to tinnitus treat serious conditions, and stopping them abruptly can be far more dangerous than the tinnitus itself. The right move is always a conversation with the professional who prescribed it.",
+    "This page offers general, educational information about the medication-tinnitus connection. It is not medical advice and not a reason to alter treatment without guidance."
+  ],
+  sections: [
+    ["What ototoxicity means", "Ototoxic substances can affect the inner ear or auditory pathway, sometimes producing tinnitus, hearing changes, or dizziness. The effect may be temporary or, less often, lasting, and it frequently depends on the dose and duration."],
+    ["Drug classes sometimes associated with tinnitus", "Groups that have been linked to tinnitus include high doses of aspirin and some other NSAIDs, certain antibiotics such as the aminoglycosides, loop diuretics, some chemotherapy agents, and a number of other medications. Being on one of these does not mean it is causing your tinnitus, and most people take them without ear effects."],
+    ["Dose and reversibility", "For some medications, such as high-dose aspirin, tinnitus tends to fade once the dose is lowered or the drug is stopped under medical supervision. For others the picture is more variable. Only your prescriber can weigh these tradeoffs for your situation."],
+    ["Never stop a medication on your own", "This is the most important point on the page. Do not discontinue, reduce, or switch a prescribed medication because of tinnitus without talking to the prescribing clinician. Ask them whether your medication could be a factor and what the safest options are."],
+    ["How we can help", "We do not adjust medications, but a [hearing evaluation](/hearing-testing/) can document your hearing and tinnitus, which gives your physician useful information. We can also support you with sound therapy and other tinnitus strategies regardless of the underlying cause."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Can tinnitus go away", "/tinnitus/can-tinnitus-go-away/"],
+    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Some medications can cause or worsen tinnitus, an effect called ototoxicity.",
+    "Never stop or change a prescribed medication on your own; talk to your prescriber first.",
+    "A hearing evaluation can document your tinnitus and give your physician useful information."
+  ],
+  faqs: [
+    ["Which medications are linked to tinnitus?", "Groups sometimes associated with tinnitus include high-dose aspirin and some NSAIDs, certain antibiotics, loop diuretics, and some chemotherapy drugs, among others. Association is not the same as cause, and most people tolerate these medications without ear effects."],
+    ["Should I stop my medication if it might be causing tinnitus?", "No, not on your own. Many of these medications treat important conditions, and stopping abruptly can be harmful. Raise your concern with the prescribing clinician, who can decide whether any change is safe and appropriate."],
+    ["Will tinnitus from medication go away?", "Sometimes. Tinnitus tied to certain drugs, such as high-dose aspirin, often eases when the dose is reduced under medical supervision. Other cases are more variable, and your prescriber is the right person to advise you."]
+  ],
+  image: "/assets/core/tinnitus__medications.svg",
+  imageLabel: "Medications and ear health"
+},

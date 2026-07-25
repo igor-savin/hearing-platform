@@ -1,0 +1,36 @@
+"/tinnitus/getting-louder/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Why Does My Tinnitus Seem to Be Getting Louder?",
+  intro: [
+    "Few things are more unsettling than the feeling that your tinnitus is climbing. Before you assume the worst, it helps to know that perceived loudness fluctuates for almost everyone, and a louder-seeming day rarely means something is actually wrong. Much of the time, the change is in attention and context rather than the sound itself.",
+    "That said, tinnitus that is genuinely and persistently worsening, or that changes in specific ways, does deserve a closer look. The goal of this page is to help you tell the ordinary ups and downs from the patterns that warrant evaluation.",
+    "If tinnitus is new to you, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) provides useful background on why it varies."
+  ],
+  sections: [
+    ["Perception versus a real change", "Tinnitus loudness is subjective and shifts with your state of mind and surroundings. Stress, fatigue, poor sleep, and simply focusing on the sound can all make it seem louder without any change in the underlying signal, a bit like noticing a clock ticking only once you listen for it."],
+    ["Quiet makes it louder", "In a silent room there is little outside sound to compete with tinnitus, so it naturally stands out more. This is why many people find it most intrusive at bedtime and why gentle background sound helps."],
+    ["Everyday amplifiers", "Recent noise exposure, caffeine, alcohol, dehydration, a cold or sinus congestion, certain medications, and high-stress stretches can all nudge tinnitus upward temporarily. These fluctuations usually settle as the trigger passes."],
+    ["When worsening warrants evaluation", "See a professional if tinnitus steadily and lastingly increases, if it becomes noticeably worse in one ear, if it starts pulsing in time with your heartbeat, or if it is accompanied by new hearing loss, dizziness, or ear fullness. Sudden hearing loss with worsening tinnitus should be treated as time-sensitive."],
+    ["What a check-up can clarify", "A [hearing evaluation](/hearing-testing/) can show whether hearing has changed, whether earwax has built up, or whether another factor is at play. Often the reassurance itself lowers the anxiety that was amplifying the sound."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Stress and tinnitus", "/tinnitus/stress/"],
+    ["One-sided tinnitus", "/tinnitus/one-ear/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Perceived tinnitus loudness naturally fluctuates with stress, fatigue, quiet, and attention.",
+    "Temporary spikes from noise, caffeine, or illness usually settle on their own.",
+    "Steady worsening, one-sided change, or pulsatile tinnitus deserves prompt evaluation."
+  ],
+  faqs: [
+    ["Is it normal for tinnitus to get louder some days?", "Yes. Day-to-day and even hour-to-hour fluctuation is very common. Stress, tiredness, quiet environments, and simply paying attention to the sound can all make it seem louder without any real change in your ears."],
+    ["Does louder tinnitus mean my hearing is getting worse?", "Not necessarily. Perceived loudness and hearing status do not move in lockstep. Still, if you notice a lasting increase or new hearing difficulty, a hearing test is a sensible way to check."],
+    ["When should I worry about worsening tinnitus?", "Seek evaluation if tinnitus steadily worsens, becomes one-sided, pulses with your heartbeat, or comes with new hearing loss or dizziness. These patterns are worth checking rather than waiting out."]
+  ],
+  image: "/assets/core/tinnitus__getting-louder.svg",
+  imageLabel: "Understanding tinnitus fluctuations"
+},

@@ -1,0 +1,29 @@
+  "cupertino": {
+    name: "Cupertino",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 35 minutes south",
+    distanceTier: "far",
+    geo: { lat: 37.3230, lng: -122.0322 },
+    lede:
+      "Cupertino is best known as Apple's hometown, but it is also De Anza College, the Stevens Creek foothills, and quiet, well-kept neighborhoods. It lies deep in the South Bay from our Peninsula offices — around 35 minutes away — and residents make that drive when they want specialized care rather than the nearest option.",
+    hook: [
+      "Verified fittings for a life spent listening hard",
+      "Many Cupertino patients live and work in demanding audio environments: long meetings, video calls, lectures at De Anza, and busy restaurants along Stevens Creek. The common thread is following speech when the room is not quiet, which depends far more on how a hearing aid is fitted than on which one you buy. We use speech-in-noise testing and real-ear verification to program devices for those exact settings, and that rigor is what draws patients from Cupertino our way.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "From Main Street to the Stevens Creek foothills",
+      "Cupertino gathers around Main Street Cupertino and Cupertino Village, the De Anza College campus, and neighborhoods like Rancho Rinconada and Monta Vista, with the Stevens Creek corridor climbing toward the hills. It is a studious, screen-and-conversation kind of city where clear speech matters all day. For the Cupertino patients who travel to us, we focus on speech-in-noise clarity and precisely verified fittings, plus specialized tinnitus help that is harder to find close to home.",
+    ],
+    whyHere:
+      "Cupertino patients tend to be careful and evidence-minded, and they come to us for measured, verified fittings and focused [tinnitus care](/tinnitus/) rather than a fast transaction. For routine adjustments, we are honest that somewhere nearer may be more convenient.",
+    landmarks:
+      "We are about 35 minutes from Main Street Cupertino, De Anza College, and the Stevens Creek foothills, north via the 280 to our San Carlos office.",
+    faqs: [
+      ["I do fine in quiet but lose people in noise — can that be fixed?", "Often, yes. That pattern points to speech-in-noise difficulty, which we measure directly and then target with the right technology and real-ear-verified programming rather than a generic setting."],
+      ["Why travel from Cupertino instead of going local?", "For simple upkeep, local is easier. Patients drive to us for specialized problems — persistent tinnitus, difficult fittings, Lenire, or a thorough reassessment — where our focus justifies the distance."],
+      ["How far is your office from Cupertino?", "About 35 minutes north on the 280 to San Carlos. Call 650-342-9449 and we will schedule a full visit so the trip accomplishes plenty."],
+    ],
+  },

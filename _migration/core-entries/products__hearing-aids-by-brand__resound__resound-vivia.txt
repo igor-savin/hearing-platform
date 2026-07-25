@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/resound/resound-vivia/": {
+  kicker: "Hearing Aid Technology",
+  headline: "ReSound Vivia Hearing Aids for Peninsula Patients",
+  intro: [
+    "ReSound Vivia is a current premium hearing aid line from ReSound, a manufacturer known for natural sound quality and strong smartphone connectivity. It represents the kind of flagship technology California Hearing Center offers patients who want a modern, well-connected hearing solution.",
+    "As with any hearing aid, the model name is only part of the story. What determines your everyday experience is how well the device is matched to your hearing loss and how carefully it is programmed and verified.",
+    "We fit ReSound Vivia in our San Mateo and San Carlos offices and support it with the follow-up care that turns premium hardware into reliable, comfortable hearing."
+  ],
+  sections: [
+    ["A premium, connected platform", "ReSound's flagship lines emphasize clear, natural sound and robust connectivity with smartphones and accessories. Whether Vivia is right for you depends on your audiogram, listening needs, and preferences."],
+    ["Selecting the right technology level", "Premium platforms tend to offer the most support in challenging environments, but a mid-tier device may be plenty for a quieter lifestyle. We help you weigh performance, features, and budget honestly, using your [hearing test results](/hearing-testing/) as the starting point."],
+    ["Fitting and verification", "We program Vivia to your prescription and confirm the output with real-ear measurement so the amplification reaching your eardrum matches your targets. This step is central to how well the device performs day to day."],
+    ["Connectivity and streaming", "Modern ReSound devices generally support streaming and app-based control. At your fitting we set up pairing and make sure you are comfortable with charging, cleaning, and everyday handling."],
+    ["Support after the fitting", "Follow-up visits let us fine-tune the sound as your brain adapts, and our team handles adjustments and [repairs](/services/hearing-aid-repair/) as needed."]
+  ],
+  bulletLinks: [
+    ["Schedule a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting", "/hearing-aid-fitting/"],
+    ["See all hearing aid brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repair", "/services/hearing-aid-repair/"],
+    ["About California Hearing Center", "/about-us/"],
+    ["Contact us", "/contact/"]
+  ],
+  takeaways: [
+    "ReSound Vivia is a current premium line emphasizing natural sound and connectivity.",
+    "The right technology level depends on your hearing, lifestyle, and budget.",
+    "Verified fitting and follow-up care shape your real-world results."
+  ],
+  faqs: [
+    ["What is ReSound known for?", "ReSound is well regarded for natural sound quality and strong smartphone and accessory connectivity. Its premium lines, including Vivia, build on those strengths. We help you decide whether it matches your needs."],
+    ["Do I need the most premium model?", "Not necessarily. Premium platforms offer the most support in difficult, noisy settings, but a mid-level device may be ideal for a quieter lifestyle. We recommend based on your hearing and how you spend your day."],
+    ["Will you verify my fitting?", "Yes. We use real-ear measurement to confirm the devices match your prescription and adjust them over follow-up visits as you adapt."]
+  ],
+  image: "/assets/resound.webp",
+  imageLabel: "ReSound Vivia premium line"
+},

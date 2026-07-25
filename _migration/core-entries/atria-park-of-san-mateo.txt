@@ -1,0 +1,34 @@
+"/atria-park-of-san-mateo/": {
+  kicker: "Hearing Care for Seniors",
+  headline: "Hearing Care for Atria Park of San Mateo Residents & Families",
+  intro: [
+    "Atria Park of San Mateo is an assisted-living and memory-care community, and many of the people who live there — and the families who visit them — are navigating age-related hearing loss. California Hearing Center cares for residents and loved ones from Atria Park at our nearby San Mateo office, just a short drive away at 88 N. San Mateo Drive.",
+    "We are an independent audiology practice, not a device kiosk, so our focus is what actually helps an older adult hear and stay connected: a careful diagnosis, realistic technology, and ongoing adjustments over time. This page explains why hearing matters so much in a senior-living setting and how a local audiologist can help."
+  ],
+  sections: [
+    ["Why hearing loss deserves attention in assisted living", "Research from institutions such as Johns Hopkins has found that untreated hearing loss is associated with a higher risk of social isolation, falls, and cognitive decline in older adults. It is an association, not proof of cause, but it is a strong reason to treat hearing loss rather than let a resident quietly withdraw from conversation and activity."],
+    ["Hearing aids suited to older adults", "For residents with limited dexterity or vision, we lean toward rechargeable hearing aids with no tiny batteries to change, larger or simpler controls, and automatic programs that adjust on their own. The goal is a device someone will actually wear and a caregiver can help manage without frustration."],
+    ["Helping families and caregivers communicate", "Hearing loss affects the whole circle of care. We coach families and caregivers on simple habits — facing the person, reducing background noise, speaking clearly rather than loudly — that make visits and daily care far easier for everyone."],
+    ["Why a nearby independent audiologist matters", "Hearing aids are not a one-time purchase; they need cleaning, reprogramming, and fine-tuning as hearing changes. Being a short drive from Atria Park means residents and families can get those adjustments without a long trip, and see the same clinician who knows their history."]
+  ],
+  bulletLinks: [
+    ["Schedule a hearing test", "/hearing-testing/"],
+    ["Our San Mateo office", "/contact/san-mateo/"],
+    ["Hearing care across senior living", "/senior-living/"],
+    ["Sunrise of San Mateo residents", "/sunrise-of-san-mateo/"],
+    ["The Peninsula Regent residents", "/the-peninsula-regent/"],
+    ["The Stratford residents", "/the-stratford/"]
+  ],
+  takeaways: [
+    "We care for residents and visiting families from Atria Park of San Mateo at our nearby San Mateo and San Carlos offices.",
+    "Untreated hearing loss is associated with isolation, falls, and cognitive decline in older adults.",
+    "Rechargeable, simple, automatic hearing aids suit seniors best, and a nearby audiologist keeps them working."
+  ],
+  faqs: [
+    ["How far is your office from Atria Park of San Mateo?", "Our San Mateo office at 88 N. San Mateo Drive is a short drive away, and we also have a San Carlos location. Call 650-342-9449 and we can talk through the easiest option for a resident or family member."],
+    ["Can hearing aids help someone with memory issues?", "They can. Better hearing reduces confusion and helps a person stay engaged, which supports memory-care goals. We choose simple, automatic devices and involve family or caregivers so the aids are used consistently."],
+    ["Do you help set up hearing aids for someone who can't manage tiny controls?", "Yes. We favor rechargeable devices with easy controls, program them to adjust automatically, and show a family member or caregiver how to clean and manage them day to day."]
+  ],
+  image: "/assets/core/atria-park-of-san-mateo.svg",
+  imageLabel: "Hearing care for Atria Park of San Mateo residents"
+},

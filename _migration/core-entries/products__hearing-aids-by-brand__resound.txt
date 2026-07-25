@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/resound/": {
+  kicker: "Hearing Aid Brands",
+  headline: "ReSound Hearing Aids for Peninsula Patients",
+  intro: [
+    "ReSound, a Danish manufacturer, built an early reputation for connectivity and was among the first to offer direct streaming to iPhone. That heritage continues: ReSound is often a strong match for people deep in the Apple ecosystem who want calls, music, and audio to flow directly to their ears, along with capable app control.",
+    "Beyond streaming, ReSound is known for a natural, organic approach to sound and a full range of styles. California Hearing Center fits ReSound at both the San Mateo and San Carlos offices as one option among several.",
+    "Whether ReSound suits you comes down to your hearing loss, your devices, and your listening priorities, which we confirm through testing and [expert fitting](/hearing-aid-fitting/) with real-ear verification."
+  ],
+  sections: [
+    ["A connectivity heritage", "ReSound was a pioneer in direct-to-iPhone streaming and continues to emphasize seamless smartphone integration, appealing to people who want their hearing aids to double as wireless earbuds for calls and media."],
+    ["Apple and Android friendly", "ReSound supports direct streaming and app control across many phones. For iPhone users in particular, the integration tends to be smooth and intuitive."],
+    ["Natural sound approach", "ReSound aims for an open, natural sound quality that many listeners find comfortable in everyday environments, balancing clarity with a realistic sense of surroundings."],
+    ["Full range of styles", "Receiver-in-canal, behind-the-ear, and custom options are available, with rechargeable models across much of the lineup so connectivity does not force a compromise on style."],
+    ["Programmed and verified", "The streaming features are only part of the picture. We verify amplification with real-ear measurement so the device performs correctly for your hearing, not just as a headset."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Widex", "/products/hearing-aids-by-brand/widex/"],
+    ["Starkey", "/products/hearing-aids-by-brand/starkey/"]
+  ],
+  takeaways: [
+    "ReSound is known for connectivity, especially smooth iPhone streaming, and natural sound.",
+    "It often suits Apple users and anyone who wants strong smartphone integration.",
+    "No manufacturer suits everyone; results come from the fitting and verification, not the logo."
+  ],
+  faqs: [
+    ["What is ReSound known for?", "ReSound is recognized for connectivity, including its early leadership in direct-to-iPhone streaming, along with a natural sound approach and capable smartphone app control across a full range of styles."],
+    ["Are ReSound hearing aids good for iPhone users?", "ReSound has a strong track record with Apple integration, and many iPhone users find streaming calls and audio smooth and intuitive. We confirm compatibility with your specific phone during the consultation."],
+    ["Do ReSound hearing aids work with Android phones?", "Yes, many ReSound models support direct streaming and app control on compatible Android devices as well as iPhones. We check your phone's compatibility and set everything up during the fitting."]
+  ],
+  image: "/assets/resound.webp",
+  imageLabel: "ReSound connectivity and natural sound"
+},

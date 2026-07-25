@@ -1,0 +1,29 @@
+  "fairfield": {
+    name: "Fairfield",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 80 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.2494, lng: -122.0400 },
+    lede:
+      "Fairfield sits midway between San Francisco and Sacramento, best known as home to Travis Air Force Base and the Jelly Belly factory. It's genuinely far from us — our offices are on the Peninsula in San Mateo and San Carlos, roughly 80 minutes southwest — so for everyday hearing care, a provider closer to Fairfield will generally serve you better.",
+    hook: [
+      "Specialized care worth the trip from Fairfield",
+      "We always encourage patients to weigh distance honestly. For routine tests and standard hearing aids, closer is better. But for stubborn [tinnitus](/tinnitus/), Lenire therapy, complex fittings, or a careful second opinion, some Fairfield patients decide the specialized expertise is worth the drive to the Peninsula. When they come, we structure the day around one thorough visit — evaluation, treatment, and a plan — so the trip accomplishes as much as possible.",
+    ],
+    motif: "civic",
+    localScene: [
+      "The county seat between two valleys",
+      "Fairfield is Solano County's seat, spread between the Suisun Valley wine district, the hills toward Green Valley, and the flatlands around Travis Air Force Base. Aviation and flight-line work put a lot of local careers around powerful engines and equipment, and sustained occupational noise exposure like that can contribute to hearing loss over the years. For veterans, base personnel, and retirees around Fairfield who are dealing with hearing changes or persistent ringing, the specialized care down on the Peninsula is something some choose to travel for.",
+    ],
+    whyHere:
+      "Fairfield patients who come to us are typically seeking a depth of tinnitus and diagnostic care they couldn't find close by. We plan their visits to be thorough and combined from the start, so someone driving in from Solano County rarely needs a second trip for the same issue.",
+    landmarks:
+      "Patients reach our Peninsula offices from Fairfield, the Suisun and Green Valley areas, and near Travis Air Force Base, generally around 80 minutes southwest via I-80.",
+    faqs: [
+      ["Why travel from Fairfield when there are closer options?", "For routine care, closer usually wins. Fairfield patients travel to us mainly for specialized tinnitus treatment, Lenire, and difficult cases where the expertise makes the drive worthwhile. We plan visits to minimize repeat trips."],
+      ["I spent years around aircraft — should I get my hearing checked?", "Yes. Prolonged exposure to flight-line and engine noise can contribute to hearing loss, and a full diagnostic evaluation will show where things stand and what helps. Call 650-342-9449 to set one up."],
+      ["Do you offer Lenire tinnitus treatment?", "We do. Lenire and comprehensive tinnitus care are among the main reasons patients travel to us from farther corners of the Bay Area, Fairfield included."],
+    ],
+  },

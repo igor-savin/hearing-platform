@@ -1,0 +1,29 @@
+  "colma": {
+    name: "Colma",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 15 minutes north of our San Mateo office",
+    distanceTier: "mid",
+    geo: { lat: 37.6769, lng: -122.4553 },
+    lede:
+      "Colma is a singular little town: home to more than a dozen historic cemeteries and a small resident population, it is where much of the Bay Area comes to remember and to visit. It is also a busy commercial hub, with auto row, big-box shops, and the families and workers who keep it all running. Our San Mateo office is about fifteen minutes south.",
+    hook: [
+      "Care for the people who care for others",
+      "Behind Colma's famous memorial grounds is a working community — florists, groundskeepers, monument makers, funeral and cemetery staff, retail workers, and the visiting families they serve every day. Good hearing is central to that work and to comforting others well: catching a quiet question, following a phone call, hearing clearly across a busy showroom or office. We help Colma's residents and workers keep hearing sharp with thorough testing and technology tuned to their daily surroundings.",
+    ],
+    motif: "civic",
+    localScene: [
+      "A community woven through Colma",
+      "Colma is compact and distinctive — the tree-lined cemetery districts and Cypress Lawn, alongside the shops and dealerships of Colma's auto row and the retail off Serramonte Boulevard near the BART station. Its living community may be small, but it is close and hardworking. For residents and the many people who spend their days here, we provide careful, unhurried hearing care and dependable follow-up, a short drive south to our San Mateo office.",
+    ],
+    whyHere:
+      "Colma patients choose us for genuine, personal attention — thorough evaluations, honest recommendations, and the same audiologist each visit — plus specialized tinnitus care that is hard to find nearby. We treat every appointment with patience and respect.",
+    landmarks:
+      "We are about fifteen minutes from Colma's cemetery districts, auto row, and the shops near Serramonte and the BART station, an easy drive south to our San Mateo office.",
+    faqs: [
+      ["Is there an audiologist near Colma?", "Yes — our San Mateo office is about fifteen minutes south of Colma. It offers full-service testing, fittings, and repairs for residents and the many people who work in town."],
+      ["Can better hearing help me at work?", "Very much so. Clear hearing helps you follow phone calls, quiet conversations, and busy showrooms or offices. We tune technology to your specific work and listening environments."],
+      ["Do you offer tinnitus treatment?", "Yes. We provide dedicated tinnitus care, including Lenire, alongside comprehensive hearing services. Call 650-342-9449 to learn more."],
+    ],
+  },

@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/lyric/": {
+  kicker: "Invisible Hearing Aids",
+  headline: "Lyric Extended-Wear Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Lyric is the only hearing aid designed to be worn 24 hours a day for months at a time. Made by Phonak, it is placed deep in the ear canal by a trained provider, remains completely invisible, and is replaced periodically rather than removed each night.",
+    "That single difference changes the whole experience. There is no charging, no fumbling with tiny batteries, and nothing to insert or take out in the morning. Many people who choose Lyric say they simply forget they are wearing anything.",
+    "California Hearing Center offers the Lyric program to Peninsula patients whose ears and hearing loss make them good candidates. It is a distinctive option, and we help you understand whether it is the right one for you."
+  ],
+  sections: [
+    ["A different category of device", "Most hearing aids are removed and stored each night. Lyric stays in the canal continuously, working with your ear's natural anatomy to help direct sound. It is a subscription-style program because the devices are replaced on an ongoing basis."],
+    ["The appeal of always-on hearing", "Because Lyric is worn around the clock, you can hear on the phone, while sleeping, and during exercise without ever handling a device. For people who dislike daily maintenance or want true invisibility, that convenience is the main draw."],
+    ["Candidacy comes first", "Not everyone is a Lyric candidate. Suitability depends on your ear canal size and shape, the type and degree of your [hearing loss](/hearing-testing/), and having a healthy ear canal. We assess this before recommending the program."],
+    ["Weighing Lyric against alternatives", "Lyric suits certain hearing losses and lifestyles, but a rechargeable or behind-the-ear device may offer better performance or value for others. We compare options honestly so you choose with a full picture. See the [Phonak Lyric model details](/products/hearing-aids-by-brand/phonak/phonak-lyric/) for more."],
+    ["Care tied to regular visits", "Because a provider places and replaces the devices, your hearing care naturally includes periodic appointments where we check ear health, comfort, and sound quality."]
+  ],
+  bulletLinks: [
+    ["Check your candidacy", "/hearing-testing/"],
+    ["Phonak Lyric model details", "/products/hearing-aids-by-brand/phonak/phonak-lyric/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Earwax removal", "/services/earwax-removal/"],
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["San Carlos office", "/contact/san-carlos/"]
+  ],
+  takeaways: [
+    "Lyric is a 100% invisible, extended-wear hearing aid worn continuously for months.",
+    "It is placed and replaced by a provider, with no daily charging or battery changes.",
+    "Candidacy depends on ear anatomy, hearing loss, and ear health, so evaluation comes first."
+  ],
+  faqs: [
+    ["What makes Lyric different from other hearing aids?", "Lyric is worn 24 hours a day for months at a time, sits invisibly deep in the ear canal, and is replaced by a provider rather than removed each night. There is no daily charging or battery swapping."],
+    ["Is Lyric right for everyone?", "No. Candidacy depends on your ear canal shape and size, your hearing loss, and your ear health. We evaluate whether Lyric is appropriate and recommend alternatives when it is not the best fit."],
+    ["How is Lyric paid for?", "Because the devices are replaced on an ongoing basis, Lyric is typically offered as a subscription-style program. We can explain how it works during your consultation so you know what to expect."]
+  ],
+  image: "/assets/phonak.webp",
+  imageLabel: "Lyric extended-wear hearing"
+},

@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/phonak/phonak-infinio/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Phonak Infinio Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Phonak Infinio is a premium hearing aid platform from one of the most established names in hearing technology. Phonak has built its reputation on strong performance in noise and reliable connectivity, and Infinio is positioned as a flagship generation of that work.",
+    "For many patients, the single hardest listening situation is a busy restaurant or a group conversation with competing voices. Premium platforms like Infinio are engineered with those exact moments in mind.",
+    "California Hearing Center fits Phonak Infinio for Peninsula patients and, just as importantly, verifies and fine-tunes the fitting so the technology delivers in real life rather than just on a spec sheet."
+  ],
+  sections: [
+    ["Built for speech in noise", "Phonak's premium platforms focus heavily on helping you follow speech when the background is loud. Whether a given model is right for you depends on your hearing profile and how often you face those demanding environments."],
+    ["Who tends to benefit", "Infinio can be a strong option for active people who spend time in noisy settings, want robust streaming, and prioritize clarity. We confirm the fit against your [hearing test results](/hearing-testing/) and daily listening goals."],
+    ["The fitting is where it comes together", "We program Infinio to your prescription and use real-ear measurement to verify the output at your eardrum. Even flagship hearing aids underperform when they are not verified and adjusted to the individual."],
+    ["Connectivity and rechargeability", "Modern Phonak devices generally offer smartphone and device streaming plus rechargeable options. During your fitting we set up pairing and walk through charging, cleaning, and handling."],
+    ["Follow-up and adaptation", "Expect a period of adjustment as your brain relearns everyday sound. Follow-up visits let us refine loudness, comfort, and clarity in the specific places you care about."]
+  ],
+  bulletLinks: [
+    ["Get your hearing tested", "/hearing-testing/"],
+    ["Fitting and verification", "/hearing-aid-fitting/"],
+    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"],
+    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["Repairs and adjustments", "/services/hearing-aid-repair/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Phonak Infinio is a premium platform focused on clarity in noisy, demanding environments.",
+    "Suitability depends on your hearing, lifestyle, and how often you face difficult listening situations.",
+    "Real-ear verification and follow-up care are what make a flagship device perform for you."
+  ],
+  faqs: [
+    ["Is Phonak Infinio good for noisy restaurants?", "Phonak's premium platforms are designed with challenging, noisy environments in mind, which is one reason many patients consider them. We confirm whether it is the right match for your specific hearing and lifestyle during your consultation."],
+    ["Are Phonak Infinio hearing aids rechargeable?", "Phonak generally offers rechargeable options across its premium range. We help you choose between rechargeable and battery styles based on your dexterity, travel habits, and preferences."],
+    ["How is Infinio different from a basic hearing aid?", "Premium platforms typically offer more advanced processing for difficult listening and fuller connectivity. A basic device may suit a quieter lifestyle. We explain the tradeoffs so the choice fits your needs and budget."]
+  ],
+  image: "/assets/phonak-infinio.webp",
+  imageLabel: "Phonak Infinio premium platform"
+},

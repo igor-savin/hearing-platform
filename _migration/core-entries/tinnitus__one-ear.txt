@@ -1,0 +1,36 @@
+"/tinnitus/one-ear/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus in One Ear: Why It Deserves a Closer Look",
+  intro: [
+    "Most tinnitus is felt in both ears or in the middle of the head, and is usually benign. Tinnitus in a single ear, called unilateral tinnitus, is different in one important respect: it is more likely to have a specific underlying cause, so it is generally worth having evaluated rather than simply monitored.",
+    "This is not a reason to panic. Many cases of one-sided tinnitus turn out to have straightforward, treatable explanations. But because the list of possible causes includes conditions best caught early, one-sided tinnitus earns a medical and audiological workup that two-sided ringing often does not.",
+    "This page explains why, and what evaluation typically involves. For background, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["Why one ear raises the priority", "Symmetric hearing systems tend to produce symmetric symptoms. When tinnitus is confined to one ear, it suggests something specific to that side, which is exactly the kind of asymmetry clinicians want to understand rather than assume away."],
+    ["Common and treatable causes", "Frequently the explanation is benign: earwax blocking one canal, a one-sided ear infection or fluid, noise damage weighted to one ear, or asymmetric hearing loss. Several of these, like [earwax](/tinnitus/earwax/), are readily addressed."],
+    ["Causes that make evaluation important", "Less commonly, unilateral tinnitus can accompany conditions such as Ménière's disease or, rarely, a benign growth on the hearing and balance nerve known as an acoustic neuroma. These are uncommon, but they are precisely why one-sided tinnitus should be checked rather than ignored."],
+    ["What a workup involves", "Evaluation usually starts with a [hearing test](/hearing-testing/) to compare the two ears and look for asymmetry. Depending on the findings and your history, your clinician may recommend medical evaluation or imaging. Documenting the difference between ears is the key first step."],
+    ["Red flags that warrant prompt care", "Seek care promptly for one-sided tinnitus that begins suddenly, comes with sudden or worsening hearing loss on that side, pulses with your heartbeat, or is joined by dizziness, imbalance, or facial numbness or weakness."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Earwax and tinnitus", "/tinnitus/earwax/"],
+    ["Ménière's disease", "/tinnitus/menieres/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "One-sided tinnitus is more likely than two-sided tinnitus to have a specific cause.",
+    "Many causes are benign and treatable, but evaluation is recommended rather than watchful waiting.",
+    "Sudden onset, one-sided hearing loss, pulsatile quality, or dizziness warrants prompt care."
+  ],
+  faqs: [
+    ["Is tinnitus in one ear dangerous?", "Usually not, and many causes are benign and treatable. However, one-sided tinnitus is more likely to have a specific underlying cause, some of which are best identified early, so it is worth having evaluated rather than ignored."],
+    ["What could cause tinnitus in just one ear?", "Possibilities range from earwax, an ear infection, or asymmetric noise damage and hearing loss, to less common conditions such as Ménière's disease or, rarely, a benign nerve growth. A hearing test comparing both ears is the usual starting point."],
+    ["When should I see someone about one-sided tinnitus?", "Fairly soon, and promptly if it started suddenly, comes with hearing loss on that side, pulses like a heartbeat, or is joined by dizziness or facial weakness. A hearing evaluation helps determine the next step."]
+  ],
+  image: "/assets/core/tinnitus__one-ear.svg",
+  imageLabel: "When tinnitus affects one side"
+},

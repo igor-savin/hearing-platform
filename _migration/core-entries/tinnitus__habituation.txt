@@ -1,0 +1,36 @@
+"/tinnitus/habituation/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Habituation: Teaching Your Brain to Tune It Out",
+  intro: [
+    "Habituation is the single most important idea in tinnitus care, and also the most hopeful. It is the brain's natural ability to stop noticing a constant, unimportant signal, the same way you no longer feel your clothes against your skin or hear the hum of a refrigerator until someone points it out.",
+    "The encouraging news is that the brain can learn to treat tinnitus this way too. When tinnitus is filed away as neutral and unimportant, it fades from conscious awareness for long stretches, even though the underlying signal has not changed. This is how most people who once felt overwhelmed by tinnitus eventually reach peace with it.",
+    "This page explains how habituation works and how to support it. For the science behind the sound, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["What habituation actually means", "Habituation does not silence tinnitus; it changes your relationship to it. The sound stops triggering an alarm and stops commanding attention, so it recedes into the background. Many people describe reaching a point where they only hear their tinnitus when they deliberately check for it."],
+    ["Why worry blocks it", "The brain will not habituate to a sound it believes is threatening. When tinnitus is tied to fear, frustration, or constant monitoring, the nervous system keeps flagging it as important. Reducing that emotional charge is what clears the path to habituation."],
+    ["Sound enrichment helps", "A quiet environment makes tinnitus stand out and slows habituation, while gentle, consistent background sound gives the brain something else to attend to and softens the contrast. This is why sound therapy, and often hearing aids, are central tools."],
+    ["Tinnitus Retraining Therapy", "TRT is a structured program that combines directive counseling with sustained low-level sound enrichment, deliberately guiding the brain toward habituation over a period of months. It is one of several evidence-informed approaches we can discuss as part of [tinnitus therapy](/services/tinnitus-therapy/)."],
+    ["Patience and consistency", "Habituation is gradual and rarely linear; good days and setbacks are both normal. Progress tends to come from steady daily habits, protecting your hearing, managing stress and sleep, and consistent sound enrichment, rather than from any single quick intervention."]
+  ],
+  bulletLinks: [
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Can tinnitus go away", "/tinnitus/can-tinnitus-go-away/"],
+    ["Anxiety management", "/tinnitus/anxiety-management/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Contact our team", "/contact/"]
+  ],
+  takeaways: [
+    "Habituation lets the brain stop noticing tinnitus, even though the sound is still there.",
+    "Fear and constant monitoring block habituation; easing the emotional charge helps it along.",
+    "Sound enrichment and structured programs like TRT are designed to support the process over months."
+  ],
+  faqs: [
+    ["How long does tinnitus habituation take?", "It differs from person to person and typically unfolds over months rather than days. Consistent sound enrichment, stress and sleep management, and reduced worry all tend to speed the process, though progress is rarely a straight line."],
+    ["Does habituation mean the tinnitus is gone?", "Not exactly. The sound is usually still present if you listen for it, but it no longer captures your attention or triggers distress. For most people that shift is what real relief feels like."],
+    ["Can I habituate on my own, or do I need help?", "Some people habituate naturally over time, but structured guidance, sound therapy, and counseling can make the process faster and more reliable, especially when tinnitus is causing significant distress."]
+  ],
+  image: "/assets/core/tinnitus__habituation.svg",
+  imageLabel: "How the brain adapts to tinnitus"
+},
