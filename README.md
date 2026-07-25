@@ -92,6 +92,40 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 - `npm test`: build the starter and verify its rendered loading skeleton
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
+## California Hearing Center — Environment & Cutover
+
+All integrations are **off until their env var is set**, so the code is safe to
+deploy before the domain moves. Set these in the Vercel project (Settings →
+Environment Variables). Scope analytics to **Production only** so the preview
+deployment never sends staging traffic to the live GA4 property.
+
+### Analytics (match calhearing.com)
+
+| Variable | Value | Scope | Notes |
+|---|---|---|---|
+| `NEXT_PUBLIC_GTM_ID` | `GTM-M9CDTZP` | Production | **Recommended.** Same GTM container as calhearing.com — fires GA4 and everything configured in the container. |
+| `GOOGLE_SITE_VERIFICATION` | `WBZFrlITOmQaGoGa30a3lDHt6muz2pp_U7k-Pvb8sQ4` | Production | Google Search Console ownership meta (matches calhearing.com). |
+| `NEXT_PUBLIC_GA4_ID` | `G-XN799HLKX5` | Production | **Only if GA4 is not already inside GTM.** Do not set alongside GTM for the same property, or hits double-count. |
+
+- Universal Analytics (`UA-100763869-1`) is intentionally **not** carried over — Google stopped processing UA in 2023.
+- The contact form already pushes a `contact-submit-success` event to `dataLayer`. To count it as a GA4 conversion, add a Custom Event trigger (`website_interaction` / `contact-submit-success`) + a GA4 event tag inside the GTM container.
+- Third-party tools on the legacy site (WhatConverts, DataFast, VisibilityKit) are not included — add only if still in active use.
+
+### Contact form (Resend — shared with the Westchester site)
+
+| Variable | Value | Notes |
+|---|---|---|
+| `RESEND_API_KEY` | *(your Resend key)* | Reuse the Audiology Associates of Westchester account so `hearing-care.org` is already a verified sender — or verify `calhearing.com` in Resend. |
+| `CONTACT_FORM_TO_EMAIL` | *(practice inbox)* | Where lead submissions are delivered. |
+| `CONTACT_FORM_FROM_EMAIL` | `California Hearing Center <noreply@calhearing.com>` | Only needed if sending from the calhearing.com domain (must be verified in Resend). Defaults to the shared hearing-care.org sender. |
+| `CONTACT_FORM_BCC_EMAIL` | *(optional)* | Optional BCC copy. |
+
+### Site domain
+
+| Variable | Value | Notes |
+|---|---|---|
+| `NEXT_PUBLIC_SITE_URL` | `https://calhearing.com` | Drives canonicals, sitemap, robots, and `metadataBase`. Already defaults to this. |
+
 ## Learn More
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)
