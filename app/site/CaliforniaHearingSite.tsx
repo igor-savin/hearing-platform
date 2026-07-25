@@ -4,6 +4,7 @@ import { blogPosts } from "../data/blogPosts";
 import { blogPhotos } from "../data/blogPhotos";
 import { pageVideos } from "../data/pageVideos";
 import { corePages } from "../data/corePages";
+import { corePhotos } from "../data/corePhotos";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
@@ -948,7 +949,11 @@ function buildPageContent(page: SitePage): PageContent {
     // Prefer the real featured photo harvested from calhearing.com when available.
     return blogPhotos[page.path] ? { ...post, image: blogPhotos[page.path] } : post;
   }
-  if (corePages[page.path]) return corePages[page.path];
+  if (corePages[page.path]) {
+    const c = corePages[page.path];
+    // Prefer a real photo over the generated SVG card when we have one.
+    return corePhotos[page.path] ? { ...c, image: corePhotos[page.path] } : c;
+  }
   const kind = getPageKind(page);
   const pageTitle = page.h1 || titleFromPath(page.path);
   const city = cityFromPath(page.path);
