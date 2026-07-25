@@ -1,0 +1,37 @@
+"/hearing-aid-cost/": {
+  kicker: "Costs & Insurance",
+  headline: "How Much Do Hearing Aids Cost?",
+  intro: [
+    "It is the first question almost everyone asks, and the honest answer is that hearing aids cover a wide range — roughly $1,000 to more than $4,000 per device — depending on the technology inside and the care that comes with them. What you are really paying for is two things at once: a tiny, sophisticated computer for your ear, and the professional expertise that programs it to your exact hearing and keeps it working for years.",
+    "This page explains what drives the price, what a fair quote actually includes, and the ways patients make hearing care affordable — from insurance benefits to [CareCredit financing](/hearing-aid-financing/). The numbers here are typical U.S. market ranges to set expectations; your own price depends on your [hearing evaluation](/hearing-testing/) and the devices that fit your life.",
+    "At California Hearing Center we give you clear numbers before you commit to anything. You will know what a device costs, what is bundled with it, and what your insurance is likely to contribute — no pressure and no surprises."
+  ],
+  sections: [
+    ["What actually drives the price", "Two factors move the number most: the technology level of the device and how many ears you are treating. Higher-priced hearing aids process sound in more channels, separate speech from background noise more aggressively, and add features like rechargeable batteries, Bluetooth streaming to your phone and TV, and automatic program switching. Basic models handle quiet, predictable settings well; premium models are built for restaurants, meetings, and busy rooms. Treating both ears roughly doubles the device cost but is what most people with hearing loss in both ears need to hear clearly and locate sound."],
+    ["Typical price ranges by technology level", "As a general guide to the market, entry-level hearing aids commonly run about $1,000 to $2,000 per device, mid-range devices about $2,000 to $3,000, and premium devices $3,000 to $4,000 or more each. A pair of mid-range hearing aids therefore often lands in the low-to-mid four figures. These are industry-typical figures, not a quote — the right number for you comes out of your evaluation, your degree of loss, and the settings you spend your day in."],
+    ["What is included in the price", "With an audiology practice, the sticker price is rarely just the hardware. A bundled price typically covers the fitting, real-ear measurement to verify the device is set correctly for your ears, follow-up adjustments as your brain adapts, routine cleanings and maintenance, the manufacturer warranty, and counseling on how to get the most from your devices. That ongoing care is a large part of the long-term value — a well-fitted, regularly tuned hearing aid outperforms a better device left unadjusted."],
+    ["Bundled vs. unbundled pricing", "Some providers bundle the device and all professional services into one price; others itemize them, charging separately for the hardware and each visit. Unbundled pricing can look cheaper up front but adds costs over the years of follow-up that hearing aids need. When you compare quotes, ask what is and is not included so you are comparing the same thing — the cheapest device is not always the cheapest to own."],
+    ["OTC vs. prescription cost", "Over-the-counter hearing aids, legal for adults with perceived mild-to-moderate loss, typically cost about $200 to $1,000 and can be a reasonable entry point for the right person. The trade-off is that you become your own fitter, with no professional testing, programming, or follow-up. Prescription hearing aids cost more because they include the evaluation, custom programming, and ongoing care — the parts that most determine whether people actually keep wearing and benefiting from them."],
+    ["How patients make it affordable", "Cost should not be the reason you keep straining to hear. Most people combine a few paths: we verify your [insurance benefits](/resources/insurance/) first to see what your plan contributes; [CareCredit financing](/hearing-aid-financing/) spreads the remaining cost into manageable monthly payments; and many patients use HSA or FSA funds, since hearing aids are typically an eligible expense. If the ideal device is a stretch, we can also stage the investment sensibly rather than push you toward technology that will not serve you."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Explore hearing aids", "/products/hearing-aids/"],
+    ["Insurance & Medicare", "/resources/insurance/"],
+    ["Financing options", "/hearing-aid-financing/"],
+    ["Get a personalized quote", "/contact/"]
+  ],
+  takeaways: [
+    "Hearing aids typically range from about $1,000 to $4,000+ per device, driven by technology level and treating one or both ears.",
+    "A fair price usually bundles the fitting, real-ear verification, follow-ups, warranty, and ongoing care — not just the hardware.",
+    "Insurance benefits, CareCredit financing, and HSA/FSA funds make the real out-of-pocket cost far more manageable than the sticker price."
+  ],
+  faqs: [
+    ["How much do hearing aids cost?", "Most prescription hearing aids run about $1,000 to $4,000 or more per device, depending on the technology and features. A pair of mid-range devices often lands in the low-to-mid four figures. Your exact price comes from your [evaluation](/hearing-testing/); we give you clear numbers before you decide."],
+    ["Why do hearing aids cost so much?", "You are paying for a sophisticated miniature computer plus the professional care that makes it work — testing, custom programming, real-ear verification, and years of follow-up. That bundled care is a big part of why professionally fitted devices outperform self-fitted ones."],
+    ["Does insurance cover hearing aids?", "Sometimes, in whole or in part — it depends entirely on your plan. We offer courtesy [benefit verification](/resources/insurance/) so you know what yours contributes before you buy."],
+    ["Can I finance hearing aids?", "Yes. We offer [CareCredit financing](/hearing-aid-financing/) to spread the cost into monthly payments, and it can be combined with any insurance benefit."]
+  ],
+  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  imageLabel: "Clear numbers before you commit",
+},

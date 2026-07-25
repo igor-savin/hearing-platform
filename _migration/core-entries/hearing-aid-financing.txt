@@ -1,0 +1,36 @@
+"/hearing-aid-financing/": {
+  kicker: "Costs & Insurance",
+  headline: "Financing Your Hearing Aids with CareCredit",
+  intro: [
+    "Better hearing is an investment in your relationships, your work, and your long-term health — and it should not have to happen all at once. California Hearing Center offers CareCredit financing so you can get the hearing aids that genuinely fit your needs and pay for them over time, in predictable monthly amounts.",
+    "This page explains how CareCredit works, how it fits alongside your insurance benefits, and the other ways patients manage the [cost of hearing aids](/hearing-aid-cost/). The goal is simple: make sure budget decides the timeline, not the quality of your care.",
+    "If you would like help understanding your options, our team will walk you through them at your consultation — no obligation."
+  ],
+  sections: [
+    ["What CareCredit is", "CareCredit is a healthcare credit card used by millions of people for medical, dental, vision, and hearing expenses. Instead of paying the full cost up front, you spread it across monthly payments, often with promotional financing periods. It is designed specifically for health and wellness care, which is why so many audiology and medical practices — including ours — accept it."],
+    ["How financing works here", "Once you and your audiologist have chosen the right hearing aids, we help you apply for CareCredit and apply the financing to your purchase. Approval is typically quick, and you choose a payment plan that fits your monthly budget. You leave with the devices you need and a clear, manageable payment schedule rather than a single large bill."],
+    ["Use your insurance benefit first", "Financing works best on top of any coverage you already have. Before you finance anything, we verify your [insurance and Medicare benefits](/resources/insurance/) as a courtesy, so any allowance or contribution from your plan reduces the amount you finance. Many patients cover part of the cost with insurance and finance only the remainder."],
+    ["HSA and FSA funds", "Hearing aids are typically an eligible expense under Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA), which let you pay with pre-tax dollars. If you have one of these accounts, bring the card to your appointment — many patients combine HSA or FSA funds with financing to lower their real out-of-pocket cost further."],
+    ["Get the right device, not just the cheapest", "The most expensive mistake in hearing care is buying technology that does not match your life because it was all that fit the budget that month. Financing exists precisely so you can choose the device that suits how and where you actually need to hear, and spread the cost sensibly — rather than settling for less and struggling in the settings that matter most to you."],
+    ["How we help", "Tell us your situation and we will lay out the numbers honestly: what your insurance is likely to contribute, what CareCredit can cover, and what a comfortable monthly payment looks like. You decide with the full picture in front of you. Start by [contacting our team](/contact/) or calling 650-342-9449."]
+  ],
+  bulletLinks: [
+    ["What hearing aids cost", "/hearing-aid-cost/"],
+    ["Insurance & Medicare", "/resources/insurance/"],
+    ["Explore hearing aids", "/products/hearing-aids/"],
+    ["Book a consultation", "/contact/"]
+  ],
+  takeaways: [
+    "California Hearing Center offers CareCredit financing so you can pay for hearing aids in manageable monthly amounts.",
+    "Financing pairs with your insurance benefit and HSA/FSA funds to lower what you finance.",
+    "The point of financing is to let you choose the right device for your life, not settle for less."
+  ],
+  faqs: [
+    ["Do you offer financing for hearing aids?", "Yes. We offer CareCredit, a healthcare financing option that lets you spread the cost of hearing aids into monthly payments, often with promotional periods. We help you apply during your visit."],
+    ["What is CareCredit?", "CareCredit is a healthcare credit card accepted for medical, dental, vision, and hearing care. It lets you finance out-of-pocket costs over time instead of paying all at once."],
+    ["Can I use insurance and financing together?", "Yes — and it is the smart approach. We verify your [insurance benefits](/resources/insurance/) first so any coverage reduces the amount you finance, then CareCredit can cover the remainder."],
+    ["Can I pay with an HSA or FSA?", "Hearing aids are typically an eligible HSA/FSA expense, so many patients pay with those pre-tax funds. Bring your card and we will help you apply it, alone or alongside financing."]
+  ],
+  image: "/assets/core-photos/hearing-aid-financing.jpg",
+  imageLabel: "Spread the cost, keep the care",
+},

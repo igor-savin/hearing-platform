@@ -337,6 +337,79 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/atria-park-of-san-mateo.svg",
   imageLabel: "Hearing care for Atria Park of San Mateo residents"
 },
+  "/hearing-aid-cost/": {
+  kicker: "Costs & Insurance",
+  headline: "How Much Do Hearing Aids Cost?",
+  intro: [
+    "It is the first question almost everyone asks, and the honest answer is that hearing aids cover a wide range — roughly $1,000 to more than $4,000 per device — depending on the technology inside and the care that comes with them. What you are really paying for is two things at once: a tiny, sophisticated computer for your ear, and the professional expertise that programs it to your exact hearing and keeps it working for years.",
+    "This page explains what drives the price, what a fair quote actually includes, and the ways patients make hearing care affordable — from insurance benefits to [CareCredit financing](/hearing-aid-financing/). The numbers here are typical U.S. market ranges to set expectations; your own price depends on your [hearing evaluation](/hearing-testing/) and the devices that fit your life.",
+    "At California Hearing Center we give you clear numbers before you commit to anything. You will know what a device costs, what is bundled with it, and what your insurance is likely to contribute — no pressure and no surprises."
+  ],
+  sections: [
+    ["What actually drives the price", "Two factors move the number most: the technology level of the device and how many ears you are treating. Higher-priced hearing aids process sound in more channels, separate speech from background noise more aggressively, and add features like rechargeable batteries, Bluetooth streaming to your phone and TV, and automatic program switching. Basic models handle quiet, predictable settings well; premium models are built for restaurants, meetings, and busy rooms. Treating both ears roughly doubles the device cost but is what most people with hearing loss in both ears need to hear clearly and locate sound."],
+    ["Typical price ranges by technology level", "As a general guide to the market, entry-level hearing aids commonly run about $1,000 to $2,000 per device, mid-range devices about $2,000 to $3,000, and premium devices $3,000 to $4,000 or more each. A pair of mid-range hearing aids therefore often lands in the low-to-mid four figures. These are industry-typical figures, not a quote — the right number for you comes out of your evaluation, your degree of loss, and the settings you spend your day in."],
+    ["What is included in the price", "With an audiology practice, the sticker price is rarely just the hardware. A bundled price typically covers the fitting, real-ear measurement to verify the device is set correctly for your ears, follow-up adjustments as your brain adapts, routine cleanings and maintenance, the manufacturer warranty, and counseling on how to get the most from your devices. That ongoing care is a large part of the long-term value — a well-fitted, regularly tuned hearing aid outperforms a better device left unadjusted."],
+    ["Bundled vs. unbundled pricing", "Some providers bundle the device and all professional services into one price; others itemize them, charging separately for the hardware and each visit. Unbundled pricing can look cheaper up front but adds costs over the years of follow-up that hearing aids need. When you compare quotes, ask what is and is not included so you are comparing the same thing — the cheapest device is not always the cheapest to own."],
+    ["OTC vs. prescription cost", "Over-the-counter hearing aids, legal for adults with perceived mild-to-moderate loss, typically cost about $200 to $1,000 and can be a reasonable entry point for the right person. The trade-off is that you become your own fitter, with no professional testing, programming, or follow-up. Prescription hearing aids cost more because they include the evaluation, custom programming, and ongoing care — the parts that most determine whether people actually keep wearing and benefiting from them."],
+    ["How patients make it affordable", "Cost should not be the reason you keep straining to hear. Most people combine a few paths: we verify your [insurance benefits](/resources/insurance/) first to see what your plan contributes; [CareCredit financing](/hearing-aid-financing/) spreads the remaining cost into manageable monthly payments; and many patients use HSA or FSA funds, since hearing aids are typically an eligible expense. If the ideal device is a stretch, we can also stage the investment sensibly rather than push you toward technology that will not serve you."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Explore hearing aids", "/products/hearing-aids/"],
+    ["Insurance & Medicare", "/resources/insurance/"],
+    ["Financing options", "/hearing-aid-financing/"],
+    ["Get a personalized quote", "/contact/"]
+  ],
+  takeaways: [
+    "Hearing aids typically range from about $1,000 to $4,000+ per device, driven by technology level and treating one or both ears.",
+    "A fair price usually bundles the fitting, real-ear verification, follow-ups, warranty, and ongoing care — not just the hardware.",
+    "Insurance benefits, CareCredit financing, and HSA/FSA funds make the real out-of-pocket cost far more manageable than the sticker price."
+  ],
+  faqs: [
+    ["How much do hearing aids cost?", "Most prescription hearing aids run about $1,000 to $4,000 or more per device, depending on the technology and features. A pair of mid-range devices often lands in the low-to-mid four figures. Your exact price comes from your [evaluation](/hearing-testing/); we give you clear numbers before you decide."],
+    ["Why do hearing aids cost so much?", "You are paying for a sophisticated miniature computer plus the professional care that makes it work — testing, custom programming, real-ear verification, and years of follow-up. That bundled care is a big part of why professionally fitted devices outperform self-fitted ones."],
+    ["Does insurance cover hearing aids?", "Sometimes, in whole or in part — it depends entirely on your plan. We offer courtesy [benefit verification](/resources/insurance/) so you know what yours contributes before you buy."],
+    ["Can I finance hearing aids?", "Yes. We offer [CareCredit financing](/hearing-aid-financing/) to spread the cost into monthly payments, and it can be combined with any insurance benefit."]
+  ],
+  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  imageLabel: "Clear numbers before you commit",
+},
+  "/hearing-aid-financing/": {
+  kicker: "Costs & Insurance",
+  headline: "Financing Your Hearing Aids with CareCredit",
+  intro: [
+    "Better hearing is an investment in your relationships, your work, and your long-term health — and it should not have to happen all at once. California Hearing Center offers CareCredit financing so you can get the hearing aids that genuinely fit your needs and pay for them over time, in predictable monthly amounts.",
+    "This page explains how CareCredit works, how it fits alongside your insurance benefits, and the other ways patients manage the [cost of hearing aids](/hearing-aid-cost/). The goal is simple: make sure budget decides the timeline, not the quality of your care.",
+    "If you would like help understanding your options, our team will walk you through them at your consultation — no obligation."
+  ],
+  sections: [
+    ["What CareCredit is", "CareCredit is a healthcare credit card used by millions of people for medical, dental, vision, and hearing expenses. Instead of paying the full cost up front, you spread it across monthly payments, often with promotional financing periods. It is designed specifically for health and wellness care, which is why so many audiology and medical practices — including ours — accept it."],
+    ["How financing works here", "Once you and your audiologist have chosen the right hearing aids, we help you apply for CareCredit and apply the financing to your purchase. Approval is typically quick, and you choose a payment plan that fits your monthly budget. You leave with the devices you need and a clear, manageable payment schedule rather than a single large bill."],
+    ["Use your insurance benefit first", "Financing works best on top of any coverage you already have. Before you finance anything, we verify your [insurance and Medicare benefits](/resources/insurance/) as a courtesy, so any allowance or contribution from your plan reduces the amount you finance. Many patients cover part of the cost with insurance and finance only the remainder."],
+    ["HSA and FSA funds", "Hearing aids are typically an eligible expense under Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA), which let you pay with pre-tax dollars. If you have one of these accounts, bring the card to your appointment — many patients combine HSA or FSA funds with financing to lower their real out-of-pocket cost further."],
+    ["Get the right device, not just the cheapest", "The most expensive mistake in hearing care is buying technology that does not match your life because it was all that fit the budget that month. Financing exists precisely so you can choose the device that suits how and where you actually need to hear, and spread the cost sensibly — rather than settling for less and struggling in the settings that matter most to you."],
+    ["How we help", "Tell us your situation and we will lay out the numbers honestly: what your insurance is likely to contribute, what CareCredit can cover, and what a comfortable monthly payment looks like. You decide with the full picture in front of you. Start by [contacting our team](/contact/) or calling 650-342-9449."]
+  ],
+  bulletLinks: [
+    ["What hearing aids cost", "/hearing-aid-cost/"],
+    ["Insurance & Medicare", "/resources/insurance/"],
+    ["Explore hearing aids", "/products/hearing-aids/"],
+    ["Book a consultation", "/contact/"]
+  ],
+  takeaways: [
+    "California Hearing Center offers CareCredit financing so you can pay for hearing aids in manageable monthly amounts.",
+    "Financing pairs with your insurance benefit and HSA/FSA funds to lower what you finance.",
+    "The point of financing is to let you choose the right device for your life, not settle for less."
+  ],
+  faqs: [
+    ["Do you offer financing for hearing aids?", "Yes. We offer CareCredit, a healthcare financing option that lets you spread the cost of hearing aids into monthly payments, often with promotional periods. We help you apply during your visit."],
+    ["What is CareCredit?", "CareCredit is a healthcare credit card accepted for medical, dental, vision, and hearing care. It lets you finance out-of-pocket costs over time instead of paying all at once."],
+    ["Can I use insurance and financing together?", "Yes — and it is the smart approach. We verify your [insurance benefits](/resources/insurance/) first so any coverage reduces the amount you finance, then CareCredit can cover the remainder."],
+    ["Can I pay with an HSA or FSA?", "Hearing aids are typically an eligible HSA/FSA expense, so many patients pay with those pre-tax funds. Bring your card and we will help you apply it, alone or alongside financing."]
+  ],
+  image: "/assets/core-photos/hearing-aid-financing.jpg",
+  imageLabel: "Spread the cost, keep the care",
+},
   "/hearing-aid-fitting/": {
   kicker: "Hearing Aid Fitting & Verification",
   headline: "Hearing Aid Fitting in San Mateo & San Carlos",
@@ -1429,10 +1502,11 @@ export const corePages: Record<string, PageContent> = {
   ],
   bulletLinks: [
     ["Compare brands", "/products/hearing-aids-by-brand/"],
+    ["What hearing aids cost", "/hearing-aid-cost/"],
+    ["Financing (CareCredit)", "/hearing-aid-financing/"],
     ["The fitting process", "/hearing-aid-fitting/"],
     ["Book a hearing test", "/hearing-testing/"],
     ["Tinnitus support features", "/tinnitus/"],
-    ["Protect your investment with Ear Gear", "/products/eargear/"],
     ["Repairs and adjustments", "/services/hearing-aid-repair/"]
   ],
   takeaways: [
@@ -1491,7 +1565,7 @@ export const corePages: Record<string, PageContent> = {
     ["Medicare Advantage and other plans", "Some Medicare Advantage plans and private plans add hearing benefits that Original Medicare does not include, such as an allowance toward hearing aids or access to a discount network. These benefits differ significantly by plan and can carry their own rules, provider requirements, and limits, so the details matter."],
     ["Questions worth asking your plan", "Before you buy, it helps to ask a handful of specific questions: Does my plan include a hearing aid benefit at all? What amount or percentage does it put toward devices? Do deductibles or out-of-pocket maximums apply first? How often will it help replace devices (often every three to seven years)? Can I use my own audiologist or must I stay in-network? Are diagnostic hearing evaluations covered, and do they need a physician referral? The answers shape your realistic options."],
     ["Allowances, discounts, and out-of-pocket costs", "A hearing benefit might take the form of a fixed dollar allowance, a discount program, or partial coverage rather than full payment, which means most people should expect some out-of-pocket cost. Understanding the structure of your benefit up front helps you compare technology options realistically."],
-    ["How our office helps", "Our insurance support is a courtesy service: we help you understand and verify your benefits, gather the information carriers ask for, clarify deductibles and co-pays, and explain what your plan indicates before you commit to anything. Our goal is that you decide with clear numbers in front of you. If you would like help getting started, visit our [contact page](/contact/)."]
+    ["How our office helps", "Our insurance support is a courtesy service: we help you understand and verify your benefits, gather the information carriers ask for, clarify deductibles and co-pays, and explain what your plan indicates before you commit to anything. Our goal is that you decide with clear numbers in front of you. Once you know your coverage, see [what hearing aids cost](/hearing-aid-cost/) and how [CareCredit financing](/hearing-aid-financing/) can spread any remaining balance. If you would like help getting started, visit our [contact page](/contact/)."]
   ],
   bullets: ["Coverage varies by plan", "Testing vs. aids differ", "Medicare specifics differ", "Courtesy benefit verification", "Questions to ask upfront", "No surprises up front"],
   takeaways: [

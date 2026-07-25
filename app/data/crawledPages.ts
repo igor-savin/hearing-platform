@@ -5415,5 +5415,21 @@ export const crawledPages: SitePage[] = [
     "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
     "h2": [],
     "paragraphs": []
+  },
+  {
+    "path": "/hearing-aid-cost/",
+    "title": "How Much Do Hearing Aids Cost? | California Hearing Center",
+    "h1": "How Much Do Hearing Aids Cost?",
+    "desc": "Hearing aids typically cost about $1,000–$4,000+ per device. See what drives the price, what's included, and how insurance, CareCredit financing & HSA/FSA make it affordable.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/hearing-aid-financing/",
+    "title": "Hearing Aid Financing with CareCredit | California Hearing Center",
+    "h1": "Financing Your Hearing Aids with CareCredit",
+    "desc": "California Hearing Center offers CareCredit financing so you can pay for hearing aids in manageable monthly payments — combined with your insurance benefit and HSA/FSA funds.",
+    "h2": [],
+    "paragraphs": []
   }
 ];

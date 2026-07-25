@@ -8,6 +8,7 @@ import { corePhotos } from "../data/corePhotos";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
+import { LeadForm } from "./LeadForm";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
 
@@ -113,6 +114,8 @@ const nav: NavItem[] = [
       ["Hearing Healthcare Resources", "/resources/"],
       ["A Patient's Journey to Better Hearing", "/a-patients-journey-to-better-hearing/"],
       ["Insurance", "/resources/insurance/"],
+      ["Hearing Aid Cost", "/hearing-aid-cost/"],
+      ["Financing (CareCredit)", "/hearing-aid-financing/"],
       ["HearingUp Approved Provider", "/resources/hearingup-approved-provider/"],
       ["Audiology Associates of Westchester", "/audiology-associates-of-westchester/"],
     ],
@@ -1311,6 +1314,7 @@ function InnerPage({ page }: { page: SitePage }) {
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
   const isCore = !!corePages[page.path];
+  const isContact = page.path.includes("/contact/");
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
   const videoId = pageVideos[page.path];
   const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page), personSchema(page, content), videoSchema(page, content)].filter(Boolean);
@@ -1460,6 +1464,12 @@ function InnerPage({ page }: { page: SitePage }) {
           <p>1008 Laurel Street<br />San Carlos, CA 94070</p>
         </aside>
       </section>
+
+      {isContact && (
+        <section className="container lead-form-section">
+          <LeadForm />
+        </section>
+      )}
 
       <section className="container route-index">
         <p className="section-kicker">Explore related pages</p>

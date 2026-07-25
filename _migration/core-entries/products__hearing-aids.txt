@@ -17,10 +17,11 @@
   ],
   bulletLinks: [
     ["Compare brands", "/products/hearing-aids-by-brand/"],
+    ["What hearing aids cost", "/hearing-aid-cost/"],
+    ["Financing (CareCredit)", "/hearing-aid-financing/"],
     ["The fitting process", "/hearing-aid-fitting/"],
     ["Book a hearing test", "/hearing-testing/"],
     ["Tinnitus support features", "/tinnitus/"],
-    ["Protect your investment with Ear Gear", "/products/eargear/"],
     ["Repairs and adjustments", "/services/hearing-aid-repair/"]
   ],
   takeaways: [
