@@ -594,8 +594,8 @@ export const crawledPages: SitePage[] = [
   },
   {
     "path": "/audiology-associates-of-westchester/",
-    "title": "Audiology Associates Of Westchester | California Hearing Center",
-    "h1": "Audiology Associates Of Westchester",
+    "title": "Audiology Associates of Westchester | California Hearing Center",
+    "h1": "Audiology Associates of Westchester",
     "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
     "h2": [],
     "paragraphs": []
