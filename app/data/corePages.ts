@@ -1671,6 +1671,39 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/products__hearing-aids.svg",
   imageLabel: "Hearing aid styles and technology"
 },
+  "/resources/": {
+  kicker: "Patient Resources",
+  headline: "Hearing Healthcare Resources",
+  intro: [
+    "As a patient of our practice, your hearing is our primary concern. Of all the five senses, hearing is perhaps the most precious — it connects us with the people we love and the world around us. No one hears perfectly all the time, even people with normal hearing.",
+    "When hearing deteriorates, it matters that you have the resources to be an equal and active partner in managing it. That includes helping us understand your individual needs, learning communication skills that help you hear better, finding support from others who also live with hearing loss, and strengthening your listening with auditory brain training.",
+    "These are the programs and organizations we point our patients to. Several are things we can sign you up for — just ask."
+  ],
+  sections: [
+    ["The Ida Institute", "The Ida Institute is an independent, non-profit organization working to build a community that embraces person-centered care. Together with clinicians, academics, and people with hearing loss around the world, Ida helps people develop the knowledge, skills, and confidence to better manage hearing loss. California Hearing Center was the first clinic in the world to receive the Inspired by Ida label. Learn more at [idainstitute.com](https://idainstitute.com/)."],
+    ["We're all ears", "Helping people hear starts with knowing how to listen. We work to understand your individual needs and make recommendations based on them — that is what person-centered care means in practice. Ida's We're All Ears resources explain what you can do to help us help you manage your hearing loss better."],
+    ["Hearing Loss Association of America (HLAA)", "As the leading organization in the U.S. representing consumers with hearing loss, HLAA gives people the tools to live more successfully with hearing loss and shows them they do not have to face it alone. HLAA educates people with hearing loss along with their families, friends, coworkers, teachers, and providers; offers self-help tools for adults and children; and promotes understanding of the nature, causes, and remedies of hearing loss. Learn more at [hearingloss.org](https://www.hearingloss.org/)."],
+    ["5 Keys to Communication Success", "Effective communication skills are crucial to quality of life, so we offer a program called 5 Keys Communication. It is designed to help you overcome the frustrations that come with hearing loss, and it teaches communication strategies in a way that is easy to understand and easy to fold into daily life. The program includes a communication handbook and weekly eLessons covering strategies, hearing aid tips, other hearing-enhancement technologies, activities, and links to consumer organizations. Patients who have gone through it consistently tell us it helped. Ask us how to sign you up."],
+    ["clEAR auditory training", "clEAR is computer-game-based listening training you do at home. According to research from Washington University in St. Louis cited by the program, clEAR improves speech discrimination — your ability to recognize words accurately — and reduces the mental effort listening takes, so it becomes less exhausting. Every subscription includes ongoing contact and guidance from a clEAR hearing healthcare professional. Because untreated hearing loss is associated with cognitive decline, social isolation, and depression, keeping your listening and mental skills exercised is worthwhile. Ask us about signing up."],
+    ["LACE by Neurotone", "LACE (Listening and Communication Enhancement) is a web-based auditory training program developed by audiologists. The program reports that it retrains the brain to comprehend speech substantially better in difficult listening situations. The idea is similar to physical therapy: hearing aids detect sound, but they do not by themselves change listening, communication, and comprehension. LACE's modules cover speech-in-noise (picking a voice out of a noisy room), rapid speech (understanding fast talkers), competing speakers (locking on to the voice you want), and word memory (training your brain to fill in the blanks). Ask us about signing up."],
+    ["How to get started with any of these", "Several of these programs are ones we enroll patients in directly. The simplest route is to mention it at your next appointment, or call us on 650-342-9449 and say which program you are interested in. If you are not sure which would help most, we will talk it through against how and where you actually struggle to hear."]
+  ],
+  bulletLinks: [
+    ["A patient's journey to better hearing", "/a-patients-journey-to-better-hearing/"],
+    ["Insurance & Medicare", "/resources/insurance/"],
+    ["What hearing aids cost", "/hearing-aid-cost/"],
+    ["Financing (CareCredit)", "/hearing-aid-financing/"],
+    ["HearingUp approved provider", "/resources/hearingup-approved-provider/"],
+    ["Contact us to sign up", "/contact/"]
+  ],
+  takeaways: [
+    "We can enroll patients in communication and auditory-training programs — 5 Keys, clEAR, and LACE — not just fit devices.",
+    "The Ida Institute and HLAA offer free, independent education and peer support for people living with hearing loss.",
+    "Ask at your appointment or call 650-342-9449 and we will help you pick the program that fits how you struggle to hear."
+  ],
+  image: "/assets/core-photos/about-us.webp",
+  imageLabel: "Programs and support beyond the fitting",
+},
   "/resources/hearingup-approved-provider/": {
   kicker: "Patient Resources",
   headline: "A HearingUp Approved Provider Committed to Best Practices",
