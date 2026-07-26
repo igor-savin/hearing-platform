@@ -53,10 +53,26 @@ const organizationSchema = {
   name: "California Hearing Center",
   url: siteUrl,
   telephone: "+1-650-342-9449",
+  faxNumber: "+1-650-342-4435",
+  email: "info@calhearing.com",
   image: `${siteUrl}/assets/logo.png`,
   logo: `${siteUrl}/assets/logo.png`,
   medicalSpecialty: "Audiology",
   priceRange: "$$",
+  foundingDate: "1996",
+  award: "Inspired by Ida Quality Benchmark — first clinic worldwide to receive the label",
+  hasCredential: [
+    "California Licensed Audiology and Hearing Aid Dispensing Practice",
+    "American Speech-Language-Hearing Association Accredited",
+    "American Academy of Audiology Member Practice",
+  ],
+  // Languages spoken by current clinical staff (per their bios): Lebanese Arabic
+  // (Dr. Hatem) and Portuguese (Lais Ama, who practiced in Brazil).
+  knowsLanguage: ["English", "Arabic", "Portuguese"],
+  paymentAccepted: ["Cash", "Check", "Credit Card", "Insurance", "CareCredit financing"],
+  // NOTE: deliberately no aggregateRating/Review markup. The practice's reviews
+  // are collected on Google, and Google's structured-data policy disallows
+  // marking up third-party reviews as your own first-party ratings.
   department: [
     {
       "@type": "MedicalClinic",

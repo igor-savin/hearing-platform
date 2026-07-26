@@ -369,6 +369,66 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/atria-park-of-san-mateo.svg",
   imageLabel: "Hearing care for Atria Park of San Mateo residents"
 },
+  "/contact/san-carlos/": {
+  kicker: "San Carlos Office",
+  headline: "See a Hearing Doctor in San Carlos",
+  intro: [
+    "Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070, on the city's main street. We see patients here for hearing evaluations, hearing aid consultations and fittings, adjustments and repairs, tinnitus appointments, and earwax removal.",
+    "Call 650-342-9449 to book, or send an appointment request through this site and we will call you back.",
+    "Office hours: Monday through Wednesday 9am to 1pm and 2pm to 5pm; Thursday 9am to 12pm and 1pm to 5pm; Friday 9am to 12pm and 12:30pm to 3pm."
+  ],
+  sections: [
+    ["Where we are", "1008 Laurel Street puts us in the middle of downtown San Carlos, a few minutes from the San Carlos Caltrain station and quick to reach from Highway 101 or El Camino Real. Patients from Belmont, Redwood City, San Mateo, and Menlo Park are typically here in well under fifteen minutes."],
+    ["Please note our midday break", "Unlike our San Mateo office, the San Carlos schedule includes a midday break, and it shifts slightly later in the week. Monday through Wednesday we break from 1pm to 2pm, Thursday from 12pm to 1pm, and Friday from 12pm to 12:30pm. When you call, our team will book you around it so there are no surprises."],
+    ["Parking and access", "There is street parking along Laurel Street and in the nearby public lots just off it. Downtown San Carlos is flat and walkable, which many of our patients appreciate. If parking or mobility is a concern, tell us when you book and we will point you to the easiest option."],
+    ["What happens at your visit", "Plan on about an hour for a first appointment. We take a history of what you are noticing and where it bothers you most, examine the ears, and complete a full diagnostic evaluation. We then walk you through the audiogram in plain language and discuss the realistic options."],
+    ["Our main office", "Our main office is in San Mateo at 88 N. San Mateo Drive, about ten minutes north, with longer uninterrupted hours. See the [San Mateo office page](/contact/san-mateo/) if that suits your schedule better."]
+  ],
+  bulletLinks: [
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Hearing aid repair", "/services/hearing-aid-repair/"],
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["Meet the team", "/about-us/"]
+  ],
+  faqs: [
+    ["What are your San Carlos office hours?", "Monday through Wednesday 9am to 1pm and 2pm to 5pm; Thursday 9am to 12pm and 1pm to 5pm; Friday 9am to 12pm and 12:30pm to 3pm. The schedule includes a midday break, so calling ahead on 650-342-9449 is the surest way to get the time you want."],
+    ["Is the San Carlos office the same practice as San Mateo?", "Yes. Both offices are California Hearing Center, share the same phone number, and share the same clinical team and records, so you can be seen at whichever location is more convenient."],
+    ["Where do I park?", "There is street parking on Laurel Street and public lots just off it. Downtown San Carlos is flat and walkable; tell us when you book if you would like the closest possible option."]
+  ],
+  image: "/assets/core-photos/about-us.webp",
+  imageLabel: "1008 Laurel Street, San Carlos",
+},
+  "/contact/san-mateo/": {
+  kicker: "San Mateo Office",
+  headline: "See a Hearing Doctor in San Mateo",
+  intro: [
+    "Our main office is at 88 N. San Mateo Drive, San Mateo, CA 94401. This is where most new patients start: full diagnostic hearing evaluations, hearing aid consultations and fittings, tinnitus appointments, earwax removal, and repairs all happen here.",
+    "Call 650-342-9449 to book, or send us an appointment request and we will call you back to find a time that works.",
+    "Office hours: Monday through Thursday 9am to 5pm, and Friday 9am to 3pm."
+  ],
+  sections: [
+    ["Where we are", "88 N. San Mateo Drive sits just off downtown San Mateo, a short distance from the San Mateo Caltrain station and easily reached from Highway 101 or El Camino Real. If you are coming from Burlingame, Hillsborough, Foster City, or Belmont, the drive is usually well under fifteen minutes outside of commute hours."],
+    ["Parking and access", "There is street parking on N. San Mateo Drive plus nearby public lots and garages in the downtown core. If mobility or parking is a concern, mention it when you book and our front desk will talk you through the easiest approach and the closest place to leave the car."],
+    ["What happens at your visit", "A first appointment usually runs about an hour. We take a history of what you are noticing and where, look in the ears, and complete a full diagnostic evaluation. Then we go through the results with you while they are fresh, in plain language, and talk through options — including doing nothing yet, if that is the honest recommendation."],
+    ["Booking your appointment", "Call 650-342-9449 during office hours and our team will find you a time. You can also request an appointment through this site and we will follow up, or schedule online through Zocdoc if you prefer to pick a slot yourself. Referring physicians can fax records to 650-342-4435."],
+    ["Our other office", "We also see patients in San Carlos at 1008 Laurel Street, about ten minutes south. If that is closer to you, see the [San Carlos office page](/contact/san-carlos/) for its hours, which differ from San Mateo's."]
+  ],
+  bulletLinks: [
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Tinnitus care", "/services/tinnitus-therapy/"],
+    ["San Carlos office", "/contact/san-carlos/"],
+    ["Meet the team", "/about-us/"]
+  ],
+  faqs: [
+    ["What are your San Mateo office hours?", "Monday through Thursday 9am to 5pm, and Friday 9am to 3pm. Call 650-342-9449 to book a time."],
+    ["Where do I park?", "There is street parking on N. San Mateo Drive and nearby public lots and garages downtown. Tell us when you book if parking or mobility is a concern and we will help you plan the easiest route in."],
+    ["Do I need a physician referral?", "Usually no — most patients book a hearing evaluation directly. Some insurance plans require a referral for coverage, so it is worth checking your plan. Referring offices can fax records to 650-342-4435."]
+  ],
+  image: "/assets/core-photos/about-us.webp",
+  imageLabel: "88 N. San Mateo Drive, San Mateo",
+},
   "/hearing-aid-cost/": {
   kicker: "Costs & Insurance",
   headline: "How Much Do Hearing Aids Cost?",
