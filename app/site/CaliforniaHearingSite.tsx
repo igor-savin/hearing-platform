@@ -182,6 +182,13 @@ const featuredRoutes = [
   "/areas-we-serve/", "/tinnitus/", "/resources/", "/reviews/",
 ];
 
+// WordPress migration cruft that still lives in crawledPages (so the paths keep
+// resolving) but must never be surfaced as a link to a visitor. Mirrors the
+// EXCLUDE set in app/sitemap.ts.
+const NON_CONTENT_ROUTES = new Set([
+  "/test/", "/home-new/", "/archive/", "/california-hearing-center-4/", "/4124-2/", "/napa-2/", "/napa/",
+]);
+
 const bespokeContent: Record<string, PageContent> = {
   "/services/": {
     kicker: "Services",
@@ -314,8 +321,8 @@ const bespokeContent: Record<string, PageContent> = {
       "Our team will help you choose the right office and next step."
     ],
     sections: [
-      ["San Mateo – Main Office", "88 N. San Mateo Drive, San Mateo, CA 94401. Call 650-342-9449 for appointments and questions. Office hours: Monday–Thursday 9am–5pm, Friday 9am–3pm."],
-      ["San Carlos", "1008 Laurel Street, San Carlos, CA 94070. The same phone number connects you with our team. Office hours: Monday–Wednesday 9am–1pm and 2–5pm, Thursday 9am–12pm and 1–5pm, Friday 9am–12pm and 12:30–3pm."],
+      ["San Mateo – Main Office", "88 N. San Mateo Drive, San Mateo, CA 94401. Call 650-342-9449 for appointments and questions. Fax: 650-342-4435. Office hours: Monday–Thursday 9am–5pm, Friday 9am–3pm."],
+      ["San Carlos", "1008 Laurel Street, San Carlos, CA 94070. The same phone number connects you with our team. Fax: 650-342-4435. Office hours: Monday–Wednesday 9am–1pm and 2–5pm, Thursday 9am–12pm and 1–5pm, Friday 9am–12pm and 12:30–3pm."],
       ["Schedule online", "Use the Schedule Now button for online appointment scheduling through Zocdoc."]
     ],
     bullets: ["San Mateo", "San Carlos", "650-342-9449", "Online scheduling", "Directions", "Appointment help"],
@@ -1314,7 +1321,7 @@ function InnerPage({ page }: { page: SitePage }) {
   const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page), personSchema(page, content), videoSchema(page, content)].filter(Boolean);
   const areaLinks = kind === "area" ? relatedAreaLinks(page) : [];
   const related = crawledPages
-    .filter((item) => item.path !== page.path && getPageKind(item) === kind)
+    .filter((item) => item.path !== page.path && !NON_CONTENT_ROUTES.has(item.path) && getPageKind(item) === kind)
     .slice(0, 8);
 
   return (
@@ -1541,8 +1548,8 @@ function HomePage() {
       </section>
 
       <section className="container route-index">
-        <p className="section-kicker">Site inventory</p>
-        <h2>Core pages copied into the new stack</h2>
+        <p className="section-kicker">Explore the practice</p>
+        <h2>Where would you like to start?</h2>
         <div className="pill-grid">
           {featuredRoutes.map((path) => <a href={path} key={path}>{titleFromPath(path)}</a>)}
         </div>
@@ -1773,6 +1780,16 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             </div>
           ))}
         </nav>
+        {/* Mobile-only click-to-call. Below 980px the topbar (which holds the phone
+            number) and the Schedule button are hidden, which left the mobile header
+            with no way to contact the practice — the primary conversion for an
+            audiology patient. This keeps calling one tap away. */}
+        <a className="header-call" href="tel:6503429449" aria-label="Call California Hearing Center at 650-342-9449">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z"/>
+          </svg>
+          <strong>Call</strong>
+        </a>
         <details className="mobile-menu">
           <summary aria-label="Open navigation menu">
             <span />

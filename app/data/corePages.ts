@@ -74,6 +74,38 @@ export const corePages: Record<string, PageContent> = {
   image: "/assets/core/about-us.svg",
   imageLabel: "Independent Peninsula audiology practice",
 },
+  "/about-us/career/": {
+  kicker: "Careers",
+  headline: "Looking for Your Next Career Move?",
+  intro: [
+    "Join California Hearing Center — more than 30 years of excellence in Bay Area hearing care. We provide comprehensive hearing services including hearing aid fittings, evaluations, rehabilitation, and tinnitus therapy across our San Mateo and San Carlos locations.",
+    "Our mission is to help people achieve better hearing outcomes while building a supportive, growth-oriented workplace where exceptional professionals can thrive.",
+    "We are looking for passionate healthcare providers who put patient care first, are eager to build lasting relationships, and want to make a real difference in people's lives. If you are ready to go beyond expectations and help others hear better, you are in the right place."
+  ],
+  sections: [
+    ["Why join our team", "For over 30 years, California Hearing Center has been transforming lives through professional hearing care on the Peninsula. You would join a practice that invests in diagnostics, verification, and follow-up care rather than volume — where doing the job properly is the business model, not an aspiration. Our two offices give clinicians variety in caseload while keeping the team small enough that everyone knows the patients."],
+    ["Compensation and growth", "We offer a generous commission structure, with the ability to double or even triple compensation based on clear sales goals, plus clear advancement paths so you can grow your skillset and take on new responsibilities. Ongoing education is covered, including association memberships and conferences, to keep you at the forefront of hearing care."],
+    ["Health, retirement, and time off", "We cover 99% of your health insurance premiums, plus 99% of dental and vision coverage. There is a competitive 401k plan with company matching, a generous PTO program with paid time off and sick leave for everyone, and volunteer time off so you can give back to the community."],
+    ["Life at the practice", "A wellness credit covers gym membership or fitness reimbursement. There is an employee discount on products, a stocked fridge and pantry, and company-sponsored social events and team-building outings. We are also a pet-friendly workplace — well-behaved furry friends are welcome in the office."],
+    ["Open role: Audiologist", "We are looking for an Au.D. with current California licensure for audiology and hearing aid dispensing, and board certification. You should bring excellent interpersonal skills that build effective relationships with diverse patients, colleagues, and vendors; strong listening, sales, and problem-solving skills; the ability to organize your time and prioritize numerous duties within deadlines; and a team-oriented, positive, professional attitude in a fast-paced setting."],
+    ["Open role: Hearing Instrument Specialist", "We are looking for an HIS with current California licensure for hearing aid dispensing. You should have experience administering tests to evaluate hearing and to fit hearing aids, exceptional customer service and oral communication skills, teaching ability to educate patients on device care and maintenance, and strong mechanical and problem-solving skills for device troubleshooting and repair."],
+    ["Our core values", "Evidence-based practice: we base treatment decisions on the latest research and proven methodologies. Patient-centered care: every plan is tailored to the individual. Compassion: we treat every patient with the care we would want for our own loved ones. Integrity: we operate with honesty and transparency. Excellence: we hold the highest standards and keep improving. Teamwork: we collaborate across disciplines and locations. Community: as a Bay Area institution for over 30 years, we are committed to the families we serve."],
+    ["Ready to join our team?", "We are always looking for exceptional professionals who share our commitment to transforming lives through better hearing. To apply or to introduce yourself, email us at infochc@hearing-care.org and tell us which role interests you."]
+  ],
+  bulletLinks: [
+    ["Meet the clinical team", "/about-us/"],
+    ["About the practice", "/about-us/"],
+    ["Our services", "/services/"],
+    ["Contact us", "/contact/"]
+  ],
+  takeaways: [
+    "California Hearing Center is hiring Audiologists (Au.D.) and Hearing Instrument Specialists across our San Mateo and San Carlos offices.",
+    "Benefits include 99% covered health, dental, and vision premiums, 401k with matching, generous PTO, and a wellness credit.",
+    "To apply, email infochc@hearing-care.org."
+  ],
+  image: "/assets/core-photos/about-us.webp",
+  imageLabel: "Join the California Hearing Center team",
+},
   "/about-us/darcy-benson/": {
   kicker: "Meet the Team",
   headline: "Darcy Benson, AuD",
@@ -667,6 +699,33 @@ export const corePages: Record<string, PageContent> = {
   ],
   image: "/assets/core/hyperacusis__when-to-seek-help.svg",
   imageLabel: "Knowing when to ask for help"
+},
+  "/privacy-policy/": {
+  kicker: "Legal",
+  headline: "Privacy Policy",
+  intro: [
+    "This privacy policy explains the privacy practices of California Hearing Center and Audiology Services, Inc. for this website. It applies solely to information collected by this website, except where stated otherwise.",
+    "It tells you what personally identifiable information we collect, with whom it is shared, how it can be corrected, how it is secured, how changes to this policy are communicated, and how to raise a concern about the use of your personal data.",
+    "This website policy is separate from the Notice of Privacy Practices that governs your protected health information as a patient of the practice. Ask our front desk for that notice, or call 650-342-9449."
+  ],
+  sections: [
+    ["Information we collect, use, and share", "We are the sole owners of the information collected on this site. That information may include personally identifiable information such as your name, telephone number, and email address, and it may include technical information such as your IP address, browser type, device type, access times, and referring website. We only collect information that you give us voluntarily, such as when you complete the appointment request form or contact us by phone or email. We use your information to respond to you about the reason you contacted us. We do not sell or rent your information, and we do not disclose it to outside parties except as necessary to fulfill your request or as required by law."],
+    ["The appointment request form", "When you submit the appointment request form, the details you enter (your name, phone number, email address, preferred office, the reason for your visit, and any message you add) are delivered by email to our practice so a team member can follow up. The form is deliberately not intended for medical details, test results, or any description of a health condition, and we ask you not to include them. If you need to share clinical information, please call the office so we can collect it through a channel appropriate for protected health information."],
+    ["Cookies and website analytics", "This site uses cookies and similar technologies to understand how visitors find and use our pages so we can improve them. We use Google Analytics, deployed through Google Tag Manager, which sets cookies and processes information such as pages viewed, approximate location, device and browser type, and how you arrived at the site. This measurement data is used in aggregate to improve the website; it is not used to identify you personally. You can block or delete cookies in your browser settings, and you may opt out of Google Analytics using Google's browser add-on. Pages that embed video use YouTube's privacy-enhanced mode."],
+    ["Third-party services", "Some features are provided by third parties who handle your information under their own privacy policies. Online appointment scheduling is provided by Zocdoc; when you book through it you are interacting with Zocdoc's platform. Videos are embedded from YouTube, and maps and directions link to Google Maps. We encourage you to review the privacy policy of any third-party service you choose to use."],
+    ["Your access to and control over your information", "You may opt out of future contact from us at any time. By contacting us at the phone number or address on this site you can, at any time: see what data we hold about you, if any; correct any data we hold about you; ask us to delete any data we hold about you; unsubscribe from future emails; and raise any concern about our use of your data. California residents may have additional rights regarding personal information under California law, and we honor those requests through the same contact channels."],
+    ["Security", "We take precautions to protect your information both online and offline. Information submitted through this site is transmitted over an encrypted connection. Offline, only employees who need the information to perform a specific job are granted access to personally identifiable information, and the systems on which that information is stored are kept in a secure environment."],
+    ["California Online Privacy Protection Act (CalOPPA)", "In accordance with CalOPPA: we do not sell personally identifiable information to third parties; we do not permit third parties to collect personally identifiable information about visitors from this website for their own independent purposes; and we disclose above the analytics technologies this site uses, so you can make an informed choice about cookies through your browser settings."],
+    ["Children under thirteen", "We do not knowingly collect personally identifiable information from children under the age of thirteen through this website. If you are under thirteen, please ask a parent or guardian for permission before using this website. Children are of course welcome as patients of the practice; this provision concerns information collected through the website."],
+    ["Notification of changes", "This privacy notice may be revised periodically to reflect changes in applicable law or in the business practices of California Hearing Center. We will post any significant change on this page and update the effective date shown below."],
+    ["Contact us about this policy", "We welcome your questions or comments about this privacy policy. California Hearing Center, 88 N. San Mateo Drive, San Mateo, CA 94401. Phone 650-342-9449. Fax 650-342-4435. You can also reach us through our [contact page](/contact/). Effective date: July 25, 2026."]
+  ],
+  bulletLinks: [
+    ["Contact the practice", "/contact/"],
+    ["About California Hearing Center", "/about-us/"]
+  ],
+  image: "/assets/logo-alt.png",
+  imageLabel: "How we handle your information",
 },
   "/products/": {
   kicker: "Products",

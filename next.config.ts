@@ -7,6 +7,11 @@ const blogRedirects = [
   // WordPress draft/duplicate cruft → homepage.
   { source: "/home-new/", destination: "/", permanent: true },
   { source: "/california-hearing-center-4/", destination: "/", permanent: true },
+  // Dead WooCommerce scaffolding on the legacy site (plugin installed, no storefront:
+  // /shop/ 404s and there is no product sitemap). Redirect so old links don't 404.
+  { source: "/cart/", destination: "/products/hearing-aids/", permanent: true },
+  { source: "/checkout/", destination: "/products/hearing-aids/", permanent: true },
+  { source: "/my-account/", destination: "/contact/", permanent: true },
       { source: "/how-much-do-doctors-of-audiology-make-in-the-us/", destination: "/about-us/", permanent: true },
       { source: "/the-critical-link-between-hearing-loss-and-dementia-new-research-offers-hope/", destination: "/could-there-be-a-link-between-hearing-loss-and-dementia/", permanent: true },
       { source: "/do-hearing-aids-help-tinnitus-what-our-patients-experience/", destination: "/can-hearing-aids-help-tinnitus/", permanent: true },
