@@ -1531,7 +1531,14 @@ function HomePage() {
           <p className="section-kicker">Combining expertise with personal care</p>
           <h2>We listen because we care.</h2>
         </div>
-        <p>Helping people hear starts with knowing how to listen. We take time to understand your needs, your routines, and the hearing moments you most want back.</p>
+        <p><strong>For over 30 years,</strong> California Hearing Center has helped people on the Peninsula improve their lives through better hearing. Whether it is a conversation with family, a meal at a restaurant, a meeting at work, or a walk in the park, hearing well is an essential part of turning up the enjoyment of life.</p>
+      </section>
+
+      <section className="container trust-bar" aria-label="Why patients choose California Hearing Center">
+        <div className="trust-item"><strong>30+</strong><span>years serving the Peninsula</span></div>
+        <div className="trust-item"><strong>2</strong><span>offices: San Mateo &amp; San Carlos</span></div>
+        <div className="trust-item"><strong>1st</strong><span>clinic worldwide with the Ida label</span></div>
+        <div className="trust-item"><strong>Doctors</strong><span>of audiology on staff</span></div>
       </section>
 
       <section className="service-band">
@@ -1554,9 +1561,33 @@ function HomePage() {
         <div>
           <p className="section-kicker">Person-centered care</p>
           <h2>We’re all ears</h2>
-          <p>The Inspired by Ida label recognizes clinics dedicated to person-centered care. California Hearing Center is proud to pair advanced audiology with a warm, collaborative approach.</p>
-          <div className="quote">“I feel much more comfortable at work meetings and restaurants — I’m able to hear over the background noise.”<strong>Bob F.</strong></div>
+          <p>The Inspired by Ida label is a benchmark of quality awarded to clinics dedicated to providing person-centered care. California Hearing Center is proud to be <strong>the first clinic in the world</strong> to receive this prestigious label, demonstrating our commitment to you and to high-quality hearing healthcare.</p>
+          <p>We take the time to discover what you need, what fits the way you live, and what matters to you most.</p>
+          <a className="ida-inline" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/ida.webp" alt="Inspired by Ida — person-centered care label" loading="lazy" decoding="async" />
+            <span>Learn how person-centered care leads to better hearing care</span>
+          </a>
         </div>
+      </section>
+
+      <section className="container testimonials">
+        <p className="section-kicker">What they’re saying</p>
+        <h2>In our patients’ words</h2>
+        <div className="testimonial-grid">
+          <blockquote>
+            <p>“I feel much more comfortable at work meetings and restaurants — I’m able to hear over the background noises.”</p>
+            <cite>Bob F.</cite>
+          </blockquote>
+          <blockquote>
+            <p>“I wanted to write to tell you how much I am enjoying my hearing aids. I have been out to lunch and dinner about six times and I have no problem. I hear the conversation at the table and no loud background noise. Thank you for all your help.”</p>
+            <cite>Lois S.</cite>
+          </blockquote>
+          <blockquote>
+            <p>“I’ve regained the confidence in my life after being fit with the new hearing devices. I am a much happier and confident person. Thank you.”</p>
+            <cite>Emma L.</cite>
+          </blockquote>
+        </div>
+        <a className="button ghost" href="/reviews/">Read more reviews</a>
       </section>
 
       <section className="products container">
