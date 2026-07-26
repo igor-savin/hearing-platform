@@ -182,6 +182,40 @@ const featuredRoutes = [
   "/areas-we-serve/", "/tinnitus/", "/resources/", "/reviews/",
 ];
 
+// The clinical team, surfaced as a roster on /about-us/. Credentials and hooks
+// are drawn from each person's own bio page — the strongest trust signal the
+// practice has, and previously only reachable via a bare list of names.
+const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: string; image: string }[] = [
+  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD · Founder", hook: "More than 30 years of evidence-based hearing care on the Peninsula.", image: "/assets/team/darcy-benson.jpeg" },
+  { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/kira-savin.jpg" },
+  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/emily-mcmahan.webp" },
+  { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/jennifer-ratner.jpg" },
+  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/giana-hatem.png" },
+  { slug: "lais-ama", name: "Lais Ama", credential: "B.S., Hearing Instrument Specialist", hook: "17 years of hearing care, beginning in her native Brazil.", image: "/assets/team/lais-ama.jpg" },
+  { slug: "sierra-melendez", name: "Sierra Melendez", credential: "Doctor of Audiology Extern", hook: "Final-year AuD candidate at the University of the Pacific.", image: "/assets/team/sierra-melendez.png" },
+  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/jarna-kothari.jpg" },
+];
+
+function TeamRoster() {
+  return (
+    <section className="container team-roster">
+      <p className="section-kicker">Meet the team</p>
+      <h2>The people who will care for your hearing</h2>
+      <div className="team-grid">
+        {TEAM_ROSTER.map((m) => (
+          <a className="team-card" href={`/about-us/${m.slug}/`} key={m.slug}>
+            <img src={m.image} alt={`${m.name}, ${m.credential}`} loading="lazy" decoding="async" width="160" height="160" />
+            <strong>{m.name}</strong>
+            <span className="team-cred">{m.credential}</span>
+            <p>{m.hook}</p>
+            <span className="team-more">Read full bio<span aria-hidden="true"> →</span></span>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 // WordPress migration cruft that still lives in crawledPages (so the paths keep
 // resolving) but must never be surfaced as a link to a visitor. Mirrors the
 // EXCLUDE set in app/sitemap.ts.
@@ -1465,6 +1499,8 @@ function InnerPage({ page }: { page: SitePage }) {
           <p>1008 Laurel Street<br />San Carlos, CA 94070</p>
         </aside>
       </section>
+
+      {page.path === "/about-us/" && <TeamRoster />}
 
       {isContact && (
         <section className="container lead-form-section">
