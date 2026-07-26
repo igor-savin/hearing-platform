@@ -186,14 +186,14 @@ const featuredRoutes = [
 // are drawn from each person's own bio page — the strongest trust signal the
 // practice has, and previously only reachable via a bare list of names.
 const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: string; image: string }[] = [
-  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD · Founder", hook: "More than 30 years of evidence-based hearing care on the Peninsula.", image: "/assets/team/darcy-benson.jpeg" },
-  { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/kira-savin.jpg" },
-  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/emily-mcmahan.webp" },
-  { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/jennifer-ratner.jpg" },
-  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/giana-hatem.png" },
-  { slug: "lais-ama", name: "Lais Ama", credential: "B.S., Hearing Instrument Specialist", hook: "17 years of hearing care, beginning in her native Brazil.", image: "/assets/team/lais-ama.jpg" },
-  { slug: "sierra-melendez", name: "Sierra Melendez", credential: "Doctor of Audiology Extern", hook: "Final-year AuD candidate at the University of the Pacific.", image: "/assets/team/sierra-melendez.png" },
-  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/jarna-kothari.jpg" },
+  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD · Founder", hook: "More than 30 years of evidence-based hearing care on the Peninsula.", image: "/assets/team/thumb/darcy-benson.webp" },
+  { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/thumb/kira-savin.webp" },
+  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
+  { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/jennifer-ratner.webp" },
+  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem.webp" },
+  { slug: "lais-ama", name: "Lais Ama", credential: "B.S., Hearing Instrument Specialist", hook: "17 years of hearing care, beginning in her native Brazil.", image: "/assets/team/thumb/lais-ama.webp" },
+  { slug: "sierra-melendez", name: "Sierra Melendez", credential: "Doctor of Audiology Extern", hook: "Final-year AuD candidate at the University of the Pacific.", image: "/assets/team/thumb/sierra-melendez.webp" },
+  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari.webp" },
 ];
 
 // Full service-area directory for /areas-we-serve/, grouped by county and
@@ -1511,7 +1511,7 @@ function InnerPage({ page }: { page: SitePage }) {
           <div className="section-stack">
             {content.sections.map(([heading, text], index) => (
               <section key={heading}>
-                <h3>{heading}</h3>
+                <h2>{heading}</h2>
                 <p dangerouslySetInnerHTML={{ __html: linkify(text) }} />
                 {content.image2 && index === 2 && (
                   <figure className="body-figure">
@@ -1656,7 +1656,7 @@ function HomePage() {
             <cite>Emma L.</cite>
           </blockquote>
         </div>
-        <a className="button ghost" href="/reviews/">Read more reviews</a>
+        <a className="button outline" href="/reviews/">Read more reviews</a>
       </section>
 
       <section className="products container">
@@ -1977,7 +1977,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
       <footer className="site-footer">
         <div className="footer-main">
           <section className="footer-location">
-            <h5>San Mateo - Main Office</h5>
+            <h2 className="footer-heading">San Mateo - Main Office</h2>
             <p>88 N. San Mateo Drive<br />San Mateo, CA 94401<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
             <p className="footer-hours">Mon–Thu 9am–5pm · Fri 9am–3pm</p>
             <a className="footer-button" href="https://www.google.com/maps/dir//88+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
@@ -1986,13 +1986,13 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <img src="/assets/google-reviews.webp" alt="See our Patient Reviews" loading="lazy" decoding="async" />
           </a>
           <section className="footer-location">
-            <h5>San Carlos</h5>
+            <h2 className="footer-heading">San Carlos</h2>
             <p>1008 Laurel Street<br />San Carlos, CA 94070<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
             <p className="footer-hours">Mon–Wed 9am–1pm, 2–5pm · Thu 9am–12pm, 1–5pm · Fri 9am–12pm, 12:30–3pm</p>
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/ida.webp" alt="Explore The Ida Institute" loading="lazy" decoding="async" />
+            <img src="/assets/ida.webp" alt="" loading="lazy" decoding="async" />
             <span>Explore the Ida Institute</span>
           </a>
         </div>

@@ -229,7 +229,7 @@ export function EarJourneyHero() {
       </nav>
 
       <div className="journey-controls">
-        <button type="button" className="journey-play" onClick={toggleJourney} aria-label={playing ? "Pause sound journey" : "Play sound journey"}>
+        <button type="button" className="journey-play" onClick={toggleJourney}>
           <span aria-hidden="true">{playing ? "Ⅱ" : "▶"}</span>
           {playing ? "Pause journey" : "Play journey + sound"}
         </button>
