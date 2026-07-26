@@ -2434,6 +2434,41 @@ p {
 .ida-inline img { width: 54px; height: auto; flex: 0 0 auto; }
 .ida-inline:hover { background: #f3ece0; }
 
+/* ---- Service-area directory on /areas-we-serve/ ---------------------- */
+.areas-directory { margin: 8px auto 44px; }
+.areas-directory .section-kicker { color: var(--teal); }
+.areas-directory > h2 {
+  color: var(--teal-dark);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  margin: 6px 0 10px;
+}
+.areas-lede {
+  color: var(--muted);
+  max-width: 68ch;
+  margin: 0 0 26px;
+}
+.area-county { margin-bottom: 26px; }
+.area-county h3 {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1.05rem;
+  color: var(--teal-dark);
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.area-county h3 a { color: var(--teal-dark); text-decoration: none; }
+.area-county h3 a:hover { text-decoration: underline; }
+.area-count {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
 /* ---- Team roster on /about-us/ --------------------------------------- */
 .team-roster { margin: 8px auto 40px; }
 .team-roster .section-kicker { color: var(--teal); }

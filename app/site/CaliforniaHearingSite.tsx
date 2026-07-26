@@ -196,6 +196,74 @@ const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: strin
   { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/jarna-kothari.jpg" },
 ];
 
+// Full service-area directory for /areas-we-serve/, grouped by county and
+// generated from cityProfiles so it can never drift from the pages that exist.
+// The legacy site had this directory; the migrated hub had shrunk to 8 links.
+const COUNTY_ORDER = [
+  "San Mateo County",
+  "Santa Clara County",
+  "San Francisco County",
+  "Alameda County",
+  "Contra Costa County",
+  "Marin County",
+  "Sonoma County",
+  "Napa County",
+  "Solano County",
+];
+
+function AreasDirectory() {
+  const groups = new Map<string, { label: string; slug: string }[]>();
+  const countyHubs = new Map<string, string>();
+  const seen = new Set<string>();
+
+  for (const [slug, profile] of Object.entries(cityProfiles)) {
+    const county = profile.county;
+    if (!county || county === "San Francisco Bay Area") continue;
+    // A profile whose name is the county itself is that county's hub page.
+    if (/county$/i.test(profile.name)) {
+      countyHubs.set(county, slug);
+      continue;
+    }
+    const key = `${county}|${profile.name}`;
+    if (seen.has(key)) continue; // guard against duplicate city entries
+    seen.add(key);
+    if (!groups.has(county)) groups.set(county, []);
+    groups.get(county)!.push({ label: profile.name, slug });
+  }
+
+  const counties = [...groups.keys()].sort(
+    (a, b) => (COUNTY_ORDER.indexOf(a) + 1 || 99) - (COUNTY_ORDER.indexOf(b) + 1 || 99)
+  );
+
+  return (
+    <section className="container areas-directory">
+      <p className="section-kicker">Service areas</p>
+      <h2>Find hearing care near you</h2>
+      <p className="areas-lede">
+        Patients travel to our San Mateo and San Carlos offices from across the Bay Area. Choose your
+        city for local details, travel time, and the services we see patients for most.
+      </p>
+      {counties.map((county) => {
+        const cities = groups.get(county)!.sort((a, b) => a.label.localeCompare(b.label));
+        const hub = countyHubs.get(county);
+        return (
+          <div className="area-county" key={county}>
+            <h3>
+              {hub ? <a href={`/areas-we-serve/${hub}/`}>{county}</a> : county}
+              <span className="area-count">{cities.length} {cities.length === 1 ? "city" : "cities"}</span>
+            </h3>
+            <div className="pill-grid">
+              {cities.map((c) => (
+                <a href={`/areas-we-serve/${c.slug}/`} key={c.slug}>{c.label}</a>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </section>
+  );
+}
+
 function TeamRoster() {
   return (
     <section className="container team-roster">
@@ -1501,6 +1569,7 @@ function InnerPage({ page }: { page: SitePage }) {
       </section>
 
       {page.path === "/about-us/" && <TeamRoster />}
+      {page.path === "/areas-we-serve/" && <AreasDirectory />}
 
       {isContact && (
         <section className="container lead-form-section">

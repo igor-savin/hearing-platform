@@ -335,6 +335,36 @@ export const corePages: Record<string, PageContent> = {
   imageLabel: "Sierra Melendez, Doctorate of Audiology Extern",
   imageAlt: "Sierra Melendez, Doctorate of Audiology extern at California Hearing Center",
 },
+  "/areas-we-serve/": {
+  kicker: "Areas We Serve",
+  headline: "Hearing Care Across the Bay Area",
+  intro: [
+    "California Hearing Center sees patients from across the San Francisco Bay Area at our two Peninsula offices — San Mateo at 88 N. San Mateo Drive and San Carlos at 1008 Laurel Street.",
+    "Many patients are local. Others drive in from Marin, the East Bay, the South Bay, and as far as Napa and Sonoma, usually because they want a specific kind of care: unhurried diagnostics, real-ear verification, and an audiologist who will keep adjusting until it is right.",
+    "Choose your city below for local details — typical travel time, the routes patients use, and the services we see people from your area for most."
+  ],
+  sections: [
+    ["Fitted for how you actually listen", "We tailor fittings to local realities: BART and Caltrain announcements, windy coastlines, lively Peninsula restaurants, open-plan offices, and time spent outdoors. Technology options include Bluetooth streaming, telecoil and loop compatibility, wind-noise reduction, and dedicated table-conversation programs."],
+    ["Plan your visit", "If you are travelling any distance, tell us when you book. Where possible we combine your hearing test and consultation into a single visit so one trip covers both, and we will help you choose a time that avoids the worst of the commute. You will get parking and transit tips with your confirmation."],
+    ["Local follow-up matters", "Hearing care does not end at the fitting. Adjustments, cleanings, troubleshooting, tinnitus follow-up, and communication coaching all work better when the office is reachable. That is a reason to weigh travel time honestly — and a reason many patients from farther out schedule several needs into one appointment."],
+    ["Two offices, one team", "Both locations share the same clinical team, the same records, and the same phone number, so you can be seen at whichever is more convenient. San Mateo is our main office with longer uninterrupted hours; San Carlos runs a midday break. See the [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/) pages for hours and directions."]
+  ],
+  bulletLinks: [
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Tinnitus therapy", "/services/tinnitus-therapy/"],
+    ["All services", "/services/"],
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["San Carlos office", "/contact/san-carlos/"]
+  ],
+  faqs: [
+    ["Do you see patients from outside San Mateo County?", "Yes. Patients travel to us from across the Bay Area — Santa Clara, San Francisco, Alameda, Contra Costa, Marin, Sonoma, Napa, and Solano counties — and we plan those visits so a single trip covers as much as possible."],
+    ["Which office should I choose?", "Whichever is easier to reach. San Mateo is our main office and has longer uninterrupted hours; San Carlos includes a midday break. Both share the same team and records, so your care is identical either way."],
+    ["Can you combine my test and consultation into one visit?", "Usually yes, and we recommend it if you are driving in from a distance. Mention it when you book on 650-342-9449 and we will schedule enough time."]
+  ],
+  image: "/assets/core-photos/about-us.webp",
+  imageLabel: "Serving the Peninsula and the wider Bay Area",
+},
   "/atria-park-of-san-mateo/": {
   kicker: "Hearing Care for Seniors",
   headline: "Hearing Care for Atria Park of San Mateo Residents & Families",
