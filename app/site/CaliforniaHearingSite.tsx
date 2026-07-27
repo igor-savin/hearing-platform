@@ -196,6 +196,59 @@ const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: strin
   { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari.webp" },
 ];
 
+// Embedded office maps. Uses the keyless Google Maps embed (no API key needed)
+// and lazy-loads the iframe so it costs nothing until scrolled into view — the
+// legacy site had maps on every contact page and the migration dropped them.
+const OFFICES: { key: string; name: string; street: string; cityLine: string; hours: string; q: string }[] = [
+  {
+    key: "san-mateo",
+    name: "San Mateo — Main Office",
+    street: "88 N. San Mateo Drive",
+    cityLine: "San Mateo, CA 94401",
+    hours: "Mon–Thu 9am–5pm · Fri 9am–3pm",
+    q: "88+N+San+Mateo+Drive,+San+Mateo,+CA+94401",
+  },
+  {
+    key: "san-carlos",
+    name: "San Carlos",
+    street: "1008 Laurel Street",
+    cityLine: "San Carlos, CA 94070",
+    hours: "Mon–Wed 9am–1pm, 2–5pm · Thu 9am–12pm, 1–5pm · Fri 9am–12pm, 12:30–3pm",
+    q: "1008+Laurel+Street,+San+Carlos,+CA+94070",
+  },
+];
+
+function OfficeMaps({ only }: { only?: string }) {
+  const list = only ? OFFICES.filter((o) => o.key === only) : OFFICES;
+  return (
+    <section className="container office-maps">
+      <p className="section-kicker">Find us</p>
+      <h2>{only ? "Where to find this office" : "Both Peninsula offices"}</h2>
+      <div className={`office-grid${list.length === 1 ? " single" : ""}`}>
+        {list.map((o) => (
+          <article className="office-card" key={o.key}>
+            <iframe
+              title={`Map to California Hearing Center, ${o.name}`}
+              src={`https://www.google.com/maps?q=${o.q}&output=embed`}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <div className="office-body">
+              <h3>{o.name}</h3>
+              <p className="office-addr">{o.street}<br />{o.cityLine}</p>
+              <p className="office-hours">{o.hours}</p>
+              <div className="office-actions">
+                <a className="button primary" href="tel:6503429449">Call 650-342-9449</a>
+                <a className="button outline" href={`https://www.google.com/maps/dir/?api=1&destination=${o.q}`} target="_blank" rel="noopener noreferrer">Get directions</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 // Full service-area directory for /areas-we-serve/, grouped by county and
 // generated from cityProfiles so it can never drift from the pages that exist.
 // The legacy site had this directory; the migrated hub had shrunk to 8 links.
@@ -784,7 +837,17 @@ export function areaMetaDescription(path: string): string | null {
     ? `${service.label} for ${profile.name} patients at California Hearing Center, audiologists in San Mateo & San Carlos.`
     : profile.distanceTier === "far"
       ? `Patients travel from ${profile.name} to California Hearing Center in San Mateo & San Carlos for specialized tinnitus and hearing care.`
-      : `Hearing tests, hearing aids & tinnitus care for ${profile.name} — California Hearing Center, ${profile.nearestOffice}.`;
+      // The 12 "near" cities previously shared one identical description.
+      // Rotate deterministically per city so each snippet reads as written for
+      // that city rather than templated.
+      : pickFrom(profile.name, [
+          `Hearing tests, hearing aids & tinnitus care for ${profile.name} — California Hearing Center, minutes away in ${profile.nearestOffice}.`,
+          `Looking for an audiologist near ${profile.name}? Our ${profile.nearestOffice} office offers hearing evaluations, hearing aids, and tinnitus care.`,
+          `${profile.name} patients get diagnostic hearing testing, expert hearing aid fittings, and tinnitus support at our ${profile.nearestOffice} office.`,
+          `Doctors of audiology serving ${profile.name} from ${profile.nearestOffice} — hearing tests, hearing aids, earwax removal, and tinnitus treatment.`,
+          `Independent audiology practice close to ${profile.name}: hearing evaluations, fittings verified with real-ear measurement, and tinnitus care.`,
+          `Hearing care for ${profile.name}, a short drive from our ${profile.nearestOffice} office — testing, hearing aids, repairs, and tinnitus help.`,
+        ]);
   // Keep the phone/CTA intact: trim the lead at a word boundary so lead + CTA <= 158.
   const budget = 158 - cta.length;
   const clean = lead.length <= budget ? lead : lead.slice(0, lead.lastIndexOf(" ", budget)).replace(/[,—\-\s]+$/, "") + ".";
@@ -1570,6 +1633,16 @@ function InnerPage({ page }: { page: SitePage }) {
 
       {page.path === "/about-us/" && <TeamRoster />}
       {page.path === "/areas-we-serve/" && <AreasDirectory />}
+
+      {isContact && (
+        <OfficeMaps
+          only={
+            page.path === "/contact/san-mateo/" ? "san-mateo"
+            : page.path === "/contact/san-carlos/" ? "san-carlos"
+            : undefined
+          }
+        />
+      )}
 
       {isContact && (
         <section className="container lead-form-section">

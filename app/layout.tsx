@@ -89,8 +89,9 @@ const organizationSchema = {
         postalCode: "94401",
         addressCountry: "US",
       },
-      // Approximate coordinates for the street address \u2014 verify against the GBP pin.
-      geo: { "@type": "GeoCoordinates", latitude: 37.5686, longitude: -122.3245 },
+      // Geocoded to the exact street address (OpenStreetMap exact-match on
+      // "88, North San Mateo Drive"); the previous pin was ~300m off.
+      geo: { "@type": "GeoCoordinates", latitude: 37.568109, longitude: -122.327851 },
       hasMap: "https://www.google.com/maps/search/?api=1&query=88+N+San+Mateo+Drive+San+Mateo+CA+94401",
       openingHoursSpecification: [
         { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "17:00" },
@@ -112,8 +113,9 @@ const organizationSchema = {
         postalCode: "94070",
         addressCountry: "US",
       },
-      // Approximate coordinates for the street address \u2014 verify against the GBP pin.
-      geo: { "@type": "GeoCoordinates", latitude: 37.5011, longitude: -122.2607 },
+      // Geocoded to the exact street address (OpenStreetMap exact-match on
+      // "1008, Laurel Street"); the previous pin was ~530m off.
+      geo: { "@type": "GeoCoordinates", latitude: 37.501047, longitude: -122.254690 },
       hasMap: "https://www.google.com/maps/search/?api=1&query=1008+Laurel+Street+San+Carlos+CA+94070",
       // Split (lunch-break) hours.
       openingHoursSpecification: [
