@@ -8,7 +8,7 @@
     metaDescription:
       "Your hearing aids can make driving easier, from wind-noise programs to streaming GPS and hands-free calls. Practical tips for using them well on the road.",
     intro: [
-      "Modern hearing aids are built to help you in the car, not just the living room. If you drive with them, a few settings and habits can make the ride quieter, safer, and a lot less tiring. Many of these features come standard on today's devices, so you may already own them without knowing it. A good [hearing aid fitting](/services/hearing-aid-fitting/) is where most of them get switched on and tuned to how you drive.",
+      "Modern hearing aids are built to help you in the car, not just the living room. If you drive with them, a few settings and habits can make the ride quieter, safer, and a lot less tiring. Many of these features come standard on today's devices, so you may already own them without knowing it. A good [hearing aid fitting](/hearing-aid-fitting/) is where most of them get switched on and tuned to how you drive.",
       "A car is a noisy, moving box. Wind, tires, and engine hum fill it with low, steady sound, and that background can smear the voice of a passenger or the directions coming from your phone. The right program tells your [hearing aids](/products/hearing-aids/) to hold speech steady while easing that rumble, so you are not straining to catch someone over the freeway.",
       "This post is about the devices themselves, not general driving safety. If you want the settings dialed in for your commute, our San Mateo and San Carlos team can set up a driving program and pair your phone in one visit. You can reach us any time through our [contact page](/contact/).",
     ],

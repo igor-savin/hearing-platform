@@ -8,7 +8,7 @@
     intro: [
       "You get home from an ordinary day, a couple of meetings, lunch with friends, a quick stop at a crowded grocery store, and you are wiped out. Not sleepy exactly, just drained, a little foggy, ready to skip whatever you had planned for the evening. Age, stress, and a rough night's sleep all take the blame. Yet if your hearing has slipped, some of that fatigue may be coming from your ears working overtime.",
       "There is a name for it: listening fatigue. Reduced hearing pushes your brain to do extra work, piecing together half-heard words from context, watching lips for clues, and holding the start of a sentence in memory until the rest arrives and the meaning finally lands. All of that runs quietly in the background, hour after hour, and by evening the tank is empty.",
-      "Plenty of people notice the exhaustion long before they ever suspect their ears. It also happens to respond well to the right help. A clear picture from a [hearing evaluation](/hearing-testing/), and often a well-tuned [hearing aid fitting](/services/hearing-aid-fitting/), can hand back a noticeable share of your energy.",
+      "Plenty of people notice the exhaustion long before they ever suspect their ears. It also happens to respond well to the right help. A clear picture from a [hearing evaluation](/hearing-testing/), and often a well-tuned [hearing aid fitting](/hearing-aid-fitting/), can hand back a noticeable share of your energy.",
     ],
     takeaways: [
       "Straining to follow speech is genuine cognitive work that tires you out.",

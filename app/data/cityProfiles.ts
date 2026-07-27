@@ -1881,7 +1881,7 @@ export const cityProfiles: Record<string, CityProfile> = {
 
   // ---------------------------------------------------------------- CORE PENINSULA,
   "san-francisco-county": {
-    name: "San Francisco",
+    name: "San Francisco County",
     county: "San Francisco County",
     region: "sf",
     nearestOffice: "San Mateo",

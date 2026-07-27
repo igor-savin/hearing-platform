@@ -28,7 +28,7 @@
     faqs: [
       ["How long does a hearing aid warranty last?", "It depends on the brand and the level you purchased. Newer, higher-tier devices generally carry a longer window than entry-level ones, and loss-and-damage coverage sometimes runs shorter than the repair portion. Check the paperwork that came with your aids, or bring them in and we will look up the terms with you."],
       ["Is loss and damage really covered?", "In many cases, yes, at least for a first incident. A lot of warranties include one replacement per aid if it is lost or badly damaged, occasionally with a service fee. After that first claim you may need to add coverage, so it is worth confirming where you stand before anything goes wrong."],
-      ["What if my warranty has already expired?", "You still have options. Plenty of repairs can be done out of warranty for a flat fee, and some brands sell paid renewal plans. Bring the devices to our team and we will help you weigh whether a repair, a renewal, or a new [fitting](/services/hearing-aid-fitting/) makes the most sense for your situation."],
+      ["What if my warranty has already expired?", "You still have options. Plenty of repairs can be done out of warranty for a flat fee, and some brands sell paid renewal plans. Bring the devices to our team and we will help you weigh whether a repair, a renewal, or a new [fitting](/hearing-aid-fitting/) makes the most sense for your situation."],
     ],
     image: "/assets/blog/hearing-aid-warranties-repair-loss-damage-1.svg",
     imageLabel: "Coverage that protects your investment from day one",

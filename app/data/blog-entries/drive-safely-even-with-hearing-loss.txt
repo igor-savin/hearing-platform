@@ -8,7 +8,7 @@
     intro: [
       "Most of driving is visual, but your ears still do real jobs behind the wheel: they tell you a siren is approaching, a horn is warning you from a blind spot, a tire has changed pitch, or your turn signal is still clicking. As [hearing loss](/hearing-testing/) sets in gradually, many drivers never notice how much of that early-warning information has quietly faded.",
       "For the large majority of people, driving with hearing loss stays both legal and safe, provided you adapt. The strategy is straightforward: let your eyes and your technology take over the work your ears used to do.",
-      "Adapting comes down to a few specific changes, including a well-tuned [hearing aid fitting](/services/hearing-aid-fitting/) that makes directional sound useful again.",
+      "Adapting comes down to a few specific changes, including a well-tuned [hearing aid fitting](/hearing-aid-fitting/) that makes directional sound useful again.",
     ],
     takeaways: [
       "Hearing loss does not disqualify you from driving. Adapting your habits does the real work.",

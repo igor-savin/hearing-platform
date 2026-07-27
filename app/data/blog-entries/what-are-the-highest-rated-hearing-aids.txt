@@ -10,7 +10,7 @@
     intro: [
       "Ask two friends to name the best hearing aid and you may get two different brands, and both could be right. Ratings roundups make it sound like one model wins outright, but the device that earns top marks in a lab or a magazine is not automatically the one that will serve your ears. The better question is which [hearing aid](/products/hearing-aids/) fits your hearing, your daily routine, and how you like to listen.",
       "The well-known names have earned their reputations. Across the [major brands](/products/hearing-aids-by-brand/) we fit, the top-tier models are genuinely excellent, and the differences between them are smaller than the marketing suggests. Where outcomes really diverge is in how carefully the device is programmed to your specific loss and how much support you get afterward.",
-      "So a rating is a useful starting point, not a verdict. What turns a highly rated device into a good outcome is a careful [fitting](/services/hearing-aid-fitting/) tuned to your hearing, plus the follow-up that comes after, at one of our San Mateo or San Carlos offices.",
+      "So a rating is a useful starting point, not a verdict. What turns a highly rated device into a good outcome is a careful [fitting](/hearing-aid-fitting/) tuned to your hearing, plus the follow-up that comes after, at one of our San Mateo or San Carlos offices.",
     ],
     takeaways: [
       "Ratings reflect group averages; the best hearing aid is the one matched to your hearing, ears, and lifestyle.",
@@ -28,7 +28,7 @@
     faqs: [
       ["Which brand makes the highest-rated hearing aids?", "No single brand wins across the board. The established manufacturers all make excellent premium devices, and rating lists tend to shuffle them from year to year. What matters more than the logo is matching the device to your hearing and getting it fitted well, which is where the real difference in results shows up."],
       ["Are the most expensive hearing aids always the best?", "Not for everyone. Premium models earn their price in noisy, demanding settings, but if your days are mostly quiet, a mid-tier device can serve you nearly as well for less. The best value is the level that matches how and where you listen, not the top of the price list."],
-      ["Can I just buy a top-rated model online and skip the fitting?", "You can, but it is usually a false economy. A hearing aid is only as good as its programming, and online purchases skip the [fitting](/services/hearing-aid-fitting/) that tunes the device to your specific loss. Plenty of drawer-bound aids were bought this way. Professional adjustment is what turns a capable device into one you will keep wearing."],
+      ["Can I just buy a top-rated model online and skip the fitting?", "You can, but it is usually a false economy. A hearing aid is only as good as its programming, and online purchases skip the [fitting](/hearing-aid-fitting/) that tunes the device to your specific loss. Plenty of drawer-bound aids were bought this way. Professional adjustment is what turns a capable device into one you will keep wearing."],
       ["How do I find the right hearing aid for me?", "Start with a hearing evaluation so you know the shape of your loss, then talk through your daily routine and budget with an audiologist. Together those two things narrow the field faster than any ratings chart. Our [team](/about-us/) can walk you through the options and help you compare them honestly."],
     ],
     image: "/assets/blog/what-are-the-highest-rated-hearing-aids-1.svg",

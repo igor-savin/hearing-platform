@@ -10,7 +10,7 @@
     intro: [
       "If you have been fitted for [hearing aids](/products/hearing-aids/), or you are still weighing whether to try a pair, it is fair to want to know what happens inside that small shell before it sits behind your ear. The device looks simple. What it does in the space of a heartbeat is not.",
       "Strip away the styling and every modern hearing aid runs the same short relay: a microphone catches sound from the room, a tiny processor decides what to do with it, and a receiver delivers the reworked sound into your ear canal. All of that repeats continuously, thousands of times a second, while you simply carry on with the conversation.",
-      "None of it helps much without one more piece: a fitting matched to your own hearing. That is why a [hearing test](/hearing-testing/) and a careful [hearing aid fitting](/services/hearing-aid-fitting/) matter as much as the electronics inside, and why our team in San Mateo and San Carlos spends real time on that step.",
+      "None of it helps much without one more piece: a fitting matched to your own hearing. That is why a [hearing test](/hearing-testing/) and a careful [hearing aid fitting](/hearing-aid-fitting/) matter as much as the electronics inside, and why our team in San Mateo and San Carlos spends real time on that step.",
     ],
     takeaways: [
       "A hearing aid is a small computer: a microphone hears, a processor decides, and a receiver sends sound to your ear.",

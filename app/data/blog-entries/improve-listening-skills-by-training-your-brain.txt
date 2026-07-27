@@ -10,7 +10,7 @@
     intro: [
       "A man picks up his first pair of hearing aids, thrilled, then calls a week later frustrated that voices sound tinny and the refrigerator hum is driving him up the wall. He is not broken, and neither are his devices — his brain is simply hearing sounds it filed away years ago.",
       "The ears gather sound, but hearing itself is finished in the brain. When [hearing loss](/hearing-testing/) sets in slowly, the brain loses practice with the softer, higher notes it stops receiving, and it learns to get by without them. Fresh [hearing aids](/products/hearing-aids/) hand all of that back at once, which is why the early days can feel loud and strange before they feel natural.",
-      "Brains stay adaptable well into later life, and yours can relearn these sounds with a little help. Structured listening practice, known as auditory training or aural rehabilitation, gives those pathways the repetition they need, while a careful [hearing aid fitting](/services/hearing-aid-fitting/) makes sure the sound reaching them is worth practicing on.",
+      "Brains stay adaptable well into later life, and yours can relearn these sounds with a little help. Structured listening practice, known as auditory training or aural rehabilitation, gives those pathways the repetition they need, while a careful [hearing aid fitting](/hearing-aid-fitting/) makes sure the sound reaching them is worth practicing on.",
     ],
     takeaways: [
       "Hearing is finished in the brain; the ears only gather the sound.",

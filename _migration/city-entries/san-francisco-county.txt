@@ -1,5 +1,5 @@
   "san-francisco-county": {
-    name: "San Francisco",
+    name: "San Francisco County",
     county: "San Francisco County",
     region: "sf",
     nearestOffice: "San Mateo",
