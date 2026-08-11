@@ -2,6 +2,11 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    // Keep this list identical to DEFAULT_ADMIN_EMAILS in lib/cms/auth.ts.
+    // scripts/check-admin-allowlist.mjs fails the build if they disagree.
+    // This function is the real security boundary: the back office writes to
+    // Firestore from the browser, so these rules are what actually stop
+    // anyone else, not the application code.
     function isCmsAdmin() {
       return request.auth != null
         && request.auth.token.email_verified == true

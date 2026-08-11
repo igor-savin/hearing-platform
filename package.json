@@ -7,13 +7,14 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
+    "build": "node scripts/check-admin-allowlist.mjs && next build --webpack",
     "start": "next start",
-    "lint": "tsc --noEmit",
+    "lint": "tsc --noEmit && node scripts/check-admin-allowlist.mjs",
     "crawl": "node scripts/crawl-site.mjs",
     "qa": "node scripts/qa-site.mjs",
     "qa:functionality": "node scripts/functionality-qa.mjs",
-    "qa:locations": "node scripts/location-nap-audit.mjs"
+    "qa:locations": "node scripts/location-nap-audit.mjs",
+    "check:admins": "node scripts/check-admin-allowlist.mjs"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
