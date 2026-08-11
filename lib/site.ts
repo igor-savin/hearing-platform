@@ -1189,6 +1189,19 @@ const aboutTrustPages: SitePage[] = [
   }
 ];
 
+// A few topics exist at both a short legacy URL carried over from the Duda
+// site and a newer /how-we-can-help/* URL. Both pages are real and stay
+// reachable, but only one should be the indexed target. The legacy URL wins:
+// reports/redirect-map.md treats those as preserved live URLs, and they hold
+// the search equity we are trying not to lose in the domain cutover.
+const canonicalOverrides = new Map<string, string>([
+  ["/how-we-can-help/hearing-protection", "/hearing-protection"]
+]);
+
+function canonicalPathFor(path: string) {
+  return canonicalOverrides.get(path) ?? path;
+}
+
 const howWeCanHelpPages: SitePage[] = [
   {
     path: howWeCanHelpRootPath,
@@ -1219,7 +1232,7 @@ const howWeCanHelpPages: SitePage[] = [
     h1: service.title,
     type: "service",
     lastModified: "2026-07-07",
-    canonical: `${baseUrl}${helpServicePath(service)}`,
+    canonical: `${baseUrl}${canonicalPathFor(helpServicePath(service))}`,
     images: [],
     sections: ["Who This Helps", "When to Schedule", "What to Expect", "Frequently Asked Questions"],
     body: [

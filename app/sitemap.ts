@@ -23,13 +23,22 @@ const standalonePages: MetadataRoute.Sitemap = [
   }
 ];
 
+function canonicalUrlFor(path: string) {
+  return `${baseUrl}${path === "/" ? "" : path}`;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const sitePages: MetadataRoute.Sitemap = pages.filter((page) => page.type !== "thank-you").map((page) => ({
-    url: `${baseUrl}${page.path === "/" ? "" : page.path}`,
-    lastModified: contentLastModified,
-    changeFrequency: page.type === "blog-post" ? "monthly" : "weekly",
-    priority: page.path === "/" ? 1 : page.type === "blog-post" ? 0.8 : 0.9
-  }));
+  const sitePages: MetadataRoute.Sitemap = pages
+    .filter((page) => page.type !== "thank-you")
+    // Skip pages that canonicalize elsewhere. They stay reachable, but a
+    // sitemap should only advertise the URL we actually want indexed.
+    .filter((page) => page.canonical === canonicalUrlFor(page.path))
+    .map((page) => ({
+      url: canonicalUrlFor(page.path),
+      lastModified: contentLastModified,
+      changeFrequency: page.type === "blog-post" ? "monthly" : "weekly",
+      priority: page.path === "/" ? 1 : page.type === "blog-post" ? 0.8 : 0.9
+    }));
 
   const knownUrls = new Set(sitePages.map((page) => page.url));
   const scheduledPages: MetadataRoute.Sitemap = (await getPublishedCmsArticles())
