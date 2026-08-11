@@ -60,22 +60,6 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "irp.cdn-website.com"
-      },
-      {
-        protocol: "https",
-        hostname: "lirp.cdn-website.com"
-      },
-      {
-        protocol: "https",
-        hostname: "static.cdn-website.com"
-      },
-      {
-        protocol: "https",
-        hostname: "irp-cdn.multiscreensite.com"
-      },
-      {
-        protocol: "https",
         hostname: "cdn.prod.website-files.com"
       },
       {

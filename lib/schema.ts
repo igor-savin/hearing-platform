@@ -18,6 +18,12 @@ import {
 } from "@/lib/serviceAreas";
 import { providerForPath, providerProfiles, providerPath } from "@/lib/team";
 
+// JSON-LD requires absolute URLs. Local assets are stored as root-relative
+// paths so next/image can optimize them; absolutize them here.
+function absoluteImageUrl(src: string) {
+  return src.startsWith("/") ? `${baseUrl}${src}` : src;
+}
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -206,7 +212,7 @@ export function pageSchema(page: SitePage) {
     primaryImageOfPage: page.heroImage
       ? {
           "@type": "ImageObject",
-          url: page.heroImage.src,
+          url: absoluteImageUrl(page.heroImage.src),
           caption: page.heroImage.alt || page.h1
         }
       : undefined
@@ -326,7 +332,7 @@ export function personSchemas(page: SitePage) {
         "@id": `${baseUrl}${providerPath(provider)}#person`,
         name: provider.name,
         jobTitle: provider.role,
-        image: provider.image,
+        image: absoluteImageUrl(provider.image),
         description: page.metaDescription,
         worksFor: { "@id": `${baseUrl}/#organization` },
         hasOccupation: {
@@ -357,7 +363,7 @@ export function personSchemas(page: SitePage) {
     name: provider.name,
     url: `${baseUrl}${providerPath(provider)}`,
     jobTitle: provider.role,
-    image: provider.image,
+    image: absoluteImageUrl(provider.image),
     worksFor: { "@id": `${baseUrl}/#organization` },
     hasOccupation: {
       "@type": "Occupation",

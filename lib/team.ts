@@ -20,7 +20,7 @@ export const providerProfiles: ProviderProfile[] = [
     name: "Dr. Jennifer Ratner, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Partner, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Jen-Ratner-img-1920w.jpg",
+    image: "/assets/duda/jen-ratner-img.jpg",
     alt: "Jennifer Ratner, Au.D. - Doctor of Audiology - Audiology Associates of Westchester",
     quote:
       "I consider it an absolute privilege to re-connect my patients to their loved ones and surroundings through better hearing. I find such joy in helping my patients and cherish the connection I make with each and every one of them.",
@@ -55,7 +55,7 @@ export const providerProfiles: ProviderProfile[] = [
     name: "Dr. Caitlin Dold, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Lead Audiologist, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0255MFox9-2021-Edit-368076c6-1920w.jpg",
+    image: "/assets/duda/0255mfox9-2021-edit.jpg",
     alt: "Caitlin Dold, Au.D. - Doctor of Audiology at Audiology Associates of Westchester",
     paragraphs: [
       "Dr. Dold is a White Plains native who received her doctorate from Vanderbilt University School of Medicine. While at Vanderbilt, she worked as a research assistant in a collaboration between the Hearing and Communication Research Lab and Listening and Learning Lab examining listening-related fatigue.",
@@ -90,7 +90,7 @@ export const providerProfiles: ProviderProfile[] = [
     name: "Dr. Jenna M. Elias, Au.D., F-AAA",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Untitled-3-1920w.jpg",
+    image: "/assets/duda/untitled-3.jpg",
     alt: "Dr. Jenna Elias",
     quote:
       "Hearing loss can really affect people's lives especially if it goes untreated. I became an audiologist as I love reconnecting my patients to their surrounding environments and to what they love. I find it truly rewarding to put hearing aids on my patients and see their eyes light up at how well they are hearing.",
@@ -120,7 +120,7 @@ export const providerProfiles: ProviderProfile[] = [
     name: "Dr. Leannmarie Senat",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Leannmarie-Senat-img-1920w.jpg",
+    image: "/assets/duda/leannmarie-senat-img.jpg",
     alt: "Dr. Leannmarie Senat",
     paragraphs: [
       "Leannmarie Senat earned her Doctorate of Audiology from The City University of New York Graduate Center.",
@@ -144,7 +144,7 @@ export const providerProfiles: ProviderProfile[] = [
     name: "Dr. Kira Savin, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Partner, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0422MFox9-2021-Edit-489c6f34-1920w.jpg",
+    image: "/assets/duda/0422mfox9-2021-edit.jpg",
     alt: "Kira Savin, Au.D. - Doctor of Audiology at Audiology Associates of Westchester",
     quote:
       "There is nothing more rewarding than helping a patient achieve better hearing. I believe that everyone's hearing needs are unique, like a fingerprint, and my goal is to find customized solutions for all populations.",

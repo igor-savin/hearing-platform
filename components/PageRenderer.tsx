@@ -121,14 +121,14 @@ function linkifyText(text: string) {
 
 const homeImages = {
   banner: "/assets/home-hero.jpg",
-  meetTeam: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/meet-the-team-1920w.jpg",
-  people: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/what-people-are-saying-1920w.jpg",
-  experts: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/talk-to-experts-1920w.jpg",
-  testing: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/w2-1920w.jpg",
-  fitting: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/AdobeStock_232317406-1920w.jpg",
-  tinnitus: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/w4-1920w.jpg",
-  protection: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/w1-1920w.jpg",
-  repair: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Hearst+Widex+photo-1920w.png"
+  meetTeam: "/assets/duda/meet-the-team.jpg",
+  people: "/assets/duda/what-people-are-saying.jpg",
+  experts: "/assets/duda/talk-to-experts.jpg",
+  testing: "/assets/duda/w2.jpg",
+  fitting: "/assets/duda/adobestock-232317406.jpg",
+  tinnitus: "/assets/duda/w4.jpg",
+  protection: "/assets/duda/w1.jpg",
+  repair: "/assets/duda/hearst-widex-photo.png"
 };
 
 const homeServiceCards = [
@@ -252,63 +252,63 @@ const teamMembers = [
     name: "Dr. Jennifer Ratner, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Partner, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Jen-Ratner-img-1920w.jpg",
+    image: "/assets/duda/jen-ratner-img.jpg",
     alt: "Jennifer Ratner, Au.D. - Doctor of Audiology - Audiology Associates of Westchester"
   },
   {
     name: "Dr. Caitlin Dold, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Lead Audiologist, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0255MFox9-2021-Edit-368076c6-1920w.jpg",
+    image: "/assets/duda/0255mfox9-2021-edit.jpg",
     alt: "Caitlin Dold, Au.D. - Doctor of Audiology at Audiology Associates of Westchester"
   },
   {
     name: "Dr. Jenna M. Elias, Au.D., F-AAA",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Untitled-3-1920w.jpg",
+    image: "/assets/duda/untitled-3.jpg",
     alt: "Dr. Jenna Elias"
   },
   {
     name: "Dr. Leannmarie Senat",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Leannmarie-Senat-img-1920w.jpg",
+    image: "/assets/duda/leannmarie-senat-img.jpg",
     alt: "Dr. Leannmarie Senat"
   },
   {
     name: "Julia Rivera",
     pronouns: "(she/her/hers)",
     role: "Doctorate of Audiology Extern",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/IMG_6425-1920w.jpg",
+    image: "/assets/duda/img-6425.jpg",
     alt: "Julia Rivera"
   },
   {
     name: "Dr. Kira Savin, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Partner, Doctor of Audiology",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0422MFox9-2021-Edit-489c6f34-1920w.jpg",
+    image: "/assets/duda/0422mfox9-2021-edit.jpg",
     alt: "Kira Savin, Au.D. - Doctor of Audiology at Audiology Associates of Westchester"
   },
   {
     name: "Jennifer Tarlton",
     pronouns: "(she/her/hers)",
     role: "Practice Administrator",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Jennifer-Tarlton-img-1920w.jpg",
+    image: "/assets/duda/jennifer-tarlton-img.jpg",
     alt: "Jennifer Tarlton"
   },
   {
     name: "Alicia Rivera",
     pronouns: "",
     role: "Patient Care Coordinator Lead / Billing Specialist",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/0643MFox9-2021-Edit-fb1663ce-1920w.jpg",
+    image: "/assets/duda/0643mfox9-2021-edit.jpg",
     alt: "Alicia Rivera - Patient Care Coordinator Lead/ Billing Specialist"
   },
   {
     name: "Hazel Icaza",
     pronouns: "",
     role: "Patient Care Coordinator",
-    image: "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Hazel_26-Edit-1920w.jpg",
+    image: "/assets/duda/hazel-26-edit.jpg",
     alt: "Hazel Icaza"
   }
 ];
@@ -466,17 +466,17 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
 ];
 
 const hearingAidBrands = [
-  ["Widex Hearing Aids", "Widex is a family-owned company that has been advancing the hearing aid industry since 1956. They specialize in tinnitus solutions and create high-quality hearing aids like their EVOKE™ line.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/WidexLogo-1920w.png", "Widex High Definition Hearing logo"],
-  ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. They create some of the most advanced products, including ones that are smartphone compatible and have activity tracking capabilities.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/StarkeyLogo-250x131-1920w.png", "Starkey logo"],
-  ["Phonak Hearing Aids", "Phonak hearing aids offer new solutions to hearing loss problems. Their products are continually changed to meet hearing loss problems. Their products include Phonak Audéo™ Marvel, Phonak Bolero™ Marvel, Phonak Sky™ Marvel, and many others.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/PhonakLogo-250x53-1920w.png", "Phonak logo"],
-  ["Lyric Hearing Aids", "Lyric creates extended wear, nearly invisible hearing aids. In fact, they created the Phonak Lyric™, touted as the world’s only 100% invisible hearing aid. All of their products are designed to provide superb sound quality.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/LyricLogo-250x128-1920w.png", "Lyric logo"],
-  ["Unitron Hearing Aids", "Unitron creates simple yet effective hearing aids that have won numerous Red Dot awards. Some of their products include Moxi Now, Stride M, Stride P, Moxi Fit, and Moxi Kiss.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/UnitronLogo-250x64-1920w.png", "Unitron Connect logo"],
-  ["Signia & Siemens Hearing Aids", "Signia has provided over 120 countries with high-quality hearing aids that deliver crystal-clear results. Siemens, under the Signia name, has provided customized audiology solutions for more than 100 years.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/Signia_logo-1920w.png", "Signia logo"],
-  ["Rexton Hearing Aids", "Rexton offers hearing aids and accessories to improve your quality of life. Their focus is on accessibility and personalization to make sure everyone in need of a hearing aid finds what they need.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/RextonLogo-250x47-1920w.png", "Rexton logo"],
-  ["Oticon Hearing Aids", "Oticon has led the way for many changes in the hearing aid industry, recently with their Oticon Opn S™ and Oticon Opn Play™. These products can be used by children and adults who wish to hear clearly while enjoying an active life.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/oticon-hearing-aids-logo-1920w.png", "Oticon logo"],
-  ["Resound Hearing Aids", "ReSound has been offering hearing loss solutions to people of all ages since 1943. They provide advanced, cutting edge technology, earning them the CES Innovation Award, the Die Goldene Concha award, the Golden Lobe Award, and more.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/ResoundLogo-250x102-1920w.png", "ReSound logo"],
-  ["Caption Call", "CaptionCall makes a transcript of phone conversations so you can see what the other person is saying. This is a real-time solution for those with hearing loss who have trouble using a phone.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/caption-call-trans-bg1-1920w.png", "Caption Call logo"],
-  ["CapTel", "CapTel is a phone that amplifies the noise you want while reducing the noise you don’t want. It also provides a caption and transcript of the conversation.", "https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/CapTel_logo-1920w.png", "CapTel logo"]
+  ["Widex Hearing Aids", "Widex is a family-owned company that has been advancing the hearing aid industry since 1956. They specialize in tinnitus solutions and create high-quality hearing aids like their EVOKE™ line.", "/assets/duda/widexlogo.png", "Widex High Definition Hearing logo"],
+  ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. They create some of the most advanced products, including ones that are smartphone compatible and have activity tracking capabilities.", "/assets/duda/starkeylogo-250x131.png", "Starkey logo"],
+  ["Phonak Hearing Aids", "Phonak hearing aids offer new solutions to hearing loss problems. Their products are continually changed to meet hearing loss problems. Their products include Phonak Audéo™ Marvel, Phonak Bolero™ Marvel, Phonak Sky™ Marvel, and many others.", "/assets/duda/phonaklogo-250x53.png", "Phonak logo"],
+  ["Lyric Hearing Aids", "Lyric creates extended wear, nearly invisible hearing aids. In fact, they created the Phonak Lyric™, touted as the world’s only 100% invisible hearing aid. All of their products are designed to provide superb sound quality.", "/assets/duda/lyriclogo-250x128.png", "Lyric logo"],
+  ["Unitron Hearing Aids", "Unitron creates simple yet effective hearing aids that have won numerous Red Dot awards. Some of their products include Moxi Now, Stride M, Stride P, Moxi Fit, and Moxi Kiss.", "/assets/duda/unitronlogo-250x64.png", "Unitron Connect logo"],
+  ["Signia & Siemens Hearing Aids", "Signia has provided over 120 countries with high-quality hearing aids that deliver crystal-clear results. Siemens, under the Signia name, has provided customized audiology solutions for more than 100 years.", "/assets/duda/signia-logo.png", "Signia logo"],
+  ["Rexton Hearing Aids", "Rexton offers hearing aids and accessories to improve your quality of life. Their focus is on accessibility and personalization to make sure everyone in need of a hearing aid finds what they need.", "/assets/duda/rextonlogo-250x47.png", "Rexton logo"],
+  ["Oticon Hearing Aids", "Oticon has led the way for many changes in the hearing aid industry, recently with their Oticon Opn S™ and Oticon Opn Play™. These products can be used by children and adults who wish to hear clearly while enjoying an active life.", "/assets/duda/oticon-hearing-aids-logo.png", "Oticon logo"],
+  ["Resound Hearing Aids", "ReSound has been offering hearing loss solutions to people of all ages since 1943. They provide advanced, cutting edge technology, earning them the CES Innovation Award, the Die Goldene Concha award, the Golden Lobe Award, and more.", "/assets/duda/resoundlogo-250x102.png", "ReSound logo"],
+  ["Caption Call", "CaptionCall makes a transcript of phone conversations so you can see what the other person is saying. This is a real-time solution for those with hearing loss who have trouble using a phone.", "/assets/duda/caption-call-trans-bg1.png", "Caption Call logo"],
+  ["CapTel", "CapTel is a phone that amplifies the noise you want while reducing the noise you don’t want. It also provides a caption and transcript of the conversation.", "/assets/duda/captel-logo.png", "CapTel logo"]
 ];
 
 const liveBlogOrder = [
@@ -4704,7 +4704,7 @@ function LiveBrandsPage({ page }: { page: SitePage }) {
                       alt="Siemens logo"
                       className="max-h-[52px] w-auto object-contain"
                       height={80}
-                      src="https://lirp.cdn-website.com/d8404b56/dms3rep/multi/opt/SiemensLogo-250x40-1920w.png"
+                      src="/assets/duda/siemenslogo-250x40.png"
                       width={250}
                     />
                   ) : null}
