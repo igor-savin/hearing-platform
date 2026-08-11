@@ -24,6 +24,56 @@ function absoluteImageUrl(src: string) {
   return src.startsWith("/") ? `${baseUrl}${src}` : src;
 }
 
+// Directory listings and profiles that describe this same practice. `sameAs` is
+// how we tell search engines that this website and those listings are one
+// entity, which is a cheap and durable local-SEO signal.
+//
+// Recovered on 2026-08-11 from the JSON-LD on the live Duda homepage, which was
+// the only place the list was written down. It was split across that site's two
+// MedicalClinic blocks (White Plains and Harrison); both describe this one
+// organization, so they are merged here.
+//
+// Every entry must be a profile OF this practice. Do not add press coverage,
+// articles, or individual clinicians' profiles — those are different entities
+// and weaken the signal.
+const entityCitations = [
+  // Social
+  "https://www.facebook.com/AAofW",
+  "https://twitter.com/audiologyassoci",
+  "https://foursquare.com/v/audiology-associates-of-westchester/4fdf8720e4b044e8239b27c7",
+
+  // Review and healthcare directories
+  "https://www.yelp.com/biz/audiology-associates-of-westchester-white-plains-2",
+  "https://www.yelp.com/biz/audiology-associates-of-westchester-harrison",
+  "https://www.healthgrades.com/group-directory/ny-new-york/white-plains/audiology-associates-of-westchester-oy56cmg",
+  "https://www.healthyhearing.com/hearing-aids/26654-audiology-associates-of-westchester",
+  "https://www.healthcare4ppl.com/medical-group/new-york/white-plains/audiology-associates-of-westchester-llc-5496050254.html",
+
+  // NPI registries
+  "https://npino.com/audiologist/1801251699-audiology-associates-of-westchester%2C-llc/",
+  "https://npidb.org/organizations/speech_language_hearing/audiologist_231h00000x/1801251699.aspx",
+
+  // General business directories
+  "https://www.yellowpages.com/white-plains-ny/mip/audiology-associates-of-westchester-472805248",
+  "https://www.yellowpages.com/harrison-ny/mip/audiology-associates-of-westchester-at-scarsdale-medical-group-546541162",
+  "https://www.superpages.com/bp/white-plains-ny/audiology-associates-of-westchester-L2251951863.htm",
+  "https://www.superpages.com/bp/harrison-ny/sensible-hearing-solutions-L2097124629.htm",
+  "https://www.dexknows.com/business_profiles/audiology_associates_of_westchester-b901902168",
+  "https://www.dexknows.com/business_profiles/audiology_associates_of_westchester-b2200053408",
+  "https://www.whitepages.com/business/NY/Harrison/Audiology-Associates-Of-Westchester/b-1mnh6i4",
+  "https://find-open.com/white-plains/audiology-associates-of-westchester-at-the-burke-rehabilitation-hospital-2013362",
+  "https://verview.com/biz/9759121-audiology-associates-of-westchester-at-scarsdale-medical-group-harrison-new-york",
+
+  // Maps
+  "https://www.mapquest.com/us/new-york/audiology-associates-of-westchester-266045933",
+  "https://www.mapquest.com/us/new-york/audiology-associates-of-westchester-375968230",
+  "https://www.mapquest.com/us/new-york/audiology-associates-of-westchester-388226481",
+
+  // Industry locators
+  "https://locations.starkey.com/ny/whiteplains/hearing-aids_white-plains_ny_704741.html",
+  "https://audiologists.cmac.ws/audiology-associates-of-westchester-at-the-burke-rehabilitation-hospital/6135/"
+];
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -34,11 +84,7 @@ export function organizationSchema() {
     telephone: primaryPhone,
     medicalSpecialty: "Audiology",
     areaServed: ["Westchester County", "White Plains", "Harrison", "Somers", "Scarsdale", "Rye", "Mt. Kisco", "Greenwich"],
-    sameAs: [
-      "https://www.facebook.com/AAofW",
-      "https://twitter.com/audiologyassoci",
-      "https://www.yelp.com/biz/audiology-associates-of-westchester-white-plains-2"
-    ],
+    sameAs: entityCitations,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: primaryPhone,

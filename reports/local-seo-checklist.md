@@ -9,6 +9,7 @@
 - [x] Service pages reference the organization and office locations.
 - [x] Footer includes NAP details and key services.
 - [x] Internal links connect service pages to location pages.
+- [x] Organization schema carries the full directory citation list. Recovered from the live Duda JSON-LD on 2026-08-11; see `local-seo-citations.md`.
 - [x] Confirmed 2026-08-11 by the practice owner: Harrison and Somers are the only physical offices. White Plains and Scarsdale are service areas, not staffed locations.
 
 ## Two-office claim
