@@ -43,11 +43,11 @@ const navGroups = [
   },
   {
     label: "HEARING AIDS",
-    href: "/products/hearing-aids-by-brand",
+    href: "/hearing-aids-brands",
     links: [
       ["HEARING AIDS 101", "/hearing-aids-101"],
       ["TYPES OF HEARING AIDS", "/types-of-hearing-aids"],
-      ["HEARING AIDS BRANDS", "/products/hearing-aids-by-brand"],
+      ["HEARING AIDS BRANDS", "/hearing-aids-brands"],
       ["BATTERIES AND ACCESSORIES", "/batteries-and-accessories"],
       ["LYRIC® INVISIBLE HEARING™", "/lyric-invisible-hearing"],
       ["INSTRUCTIONAL VIDEOS", "/instructional-videos"]

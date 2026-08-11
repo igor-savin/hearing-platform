@@ -418,7 +418,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing Care for Professionals", href: "/hearing-care-professionals-meetings-calls" },
-      { label: "Hearing Aid Brands", href: "/products/hearing-aids-by-brand" }
+      { label: "Hearing Aid Brands", href: "/hearing-aids-brands" }
     ],
     blogMeta: {
       frame: "Buyer decision guide",

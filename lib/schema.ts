@@ -1,4 +1,4 @@
-import { allServiceLinks, baseUrl, locationForPath, locations, primaryPhone, siteName, type SitePage } from "@/lib/site";
+import { allServiceLinks, baseUrl, locationForPath, locations, logoUrl, primaryPhone, siteName, type SitePage } from "@/lib/site";
 import {
   brandForPath,
   brandForProduct,
@@ -74,6 +74,70 @@ const entityCitations = [
   "https://audiologists.cmac.ws/audiology-associates-of-westchester-at-the-burke-rehabilitation-hospital/6135/"
 ];
 
+type Office = (typeof locations)[number];
+
+// The office the brand's main phone number rings at. Used as the organization's
+// postal address so every page carries a machine-readable NAP, which the
+// homepage lost when the site moved off Duda.
+const primaryOffice = locations.find((location) => location.type === "office");
+
+function postalAddress(location: Office) {
+  return {
+    "@type": "PostalAddress",
+    streetAddress: location.streetAddress,
+    addressLocality: location.city,
+    addressRegion: location.state,
+    postalCode: location.postalCode,
+    addressCountry: "US"
+  };
+}
+
+// schema.org expects dayOfWeek/opens/closes. Emitting the human display string
+// as a `description` produced markup no parser could read, which is what the
+// site was doing. Days absent from the list read as closed.
+function openingHours(location: Office) {
+  if (location.hoursSpec?.length) {
+    return location.hoursSpec.map((spec) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: spec.days.map((day) => `https://schema.org/${day}`),
+      opens: spec.opens,
+      closes: spec.closes
+    }));
+  }
+  return undefined;
+}
+
+export function officeBusinessSchema(location: Office) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "@id": `${baseUrl}${location.path}/#localbusiness`,
+    name: `${siteName} - ${location.city}`,
+    url: `${baseUrl}${location.path}`,
+    telephone: location.phone,
+    priceRange: "$$",
+    parentOrganization: { "@id": `${baseUrl}/#organization` },
+    medicalSpecialty: "Audiology",
+    address: postalAddress(location),
+    hasMap: location.directionsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`,
+    areaServed: [location.city, ...location.nearby],
+    makesOffer: allServiceLinks.slice(0, 8).map((service) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: service.title,
+        url: `${baseUrl}${service.path}`
+      }
+    })),
+    potentialAction: {
+      "@type": "ReserveAction",
+      name: "Request an audiology appointment",
+      target: `${baseUrl}/contact-us`
+    },
+    openingHoursSpecification: openingHours(location)
+  };
+}
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -81,7 +145,10 @@ export function organizationSchema() {
     "@id": `${baseUrl}/#organization`,
     name: siteName,
     url: baseUrl,
+    logo: logoUrl,
+    image: logoUrl,
     telephone: primaryPhone,
+    address: primaryOffice ? postalAddress(primaryOffice) : undefined,
     medicalSpecialty: "Audiology",
     areaServed: ["Westchester County", "White Plains", "Harrison", "Somers", "Scarsdale", "Rye", "Mt. Kisco", "Greenwich"],
     sameAs: entityCitations,
@@ -327,44 +394,7 @@ export function serviceSchema(page: SitePage) {
 export function localBusinessSchema(page: SitePage) {
   const location = locationForPath(page.path);
   if (!location || location.type !== "office") return null;
-  return {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "@id": `${baseUrl}${location.path}/#localbusiness`,
-    name: `${siteName} - ${location.city}`,
-    url: `${baseUrl}${location.path}`,
-    telephone: location.phone,
-    priceRange: "$$",
-    parentOrganization: { "@id": `${baseUrl}/#organization` },
-    medicalSpecialty: "Audiology",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: location.streetAddress,
-      addressLocality: location.city,
-      addressRegion: location.state,
-      postalCode: location.postalCode,
-      addressCountry: "US"
-    },
-    hasMap: location.directionsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`,
-    areaServed: [location.city, ...location.nearby],
-    makesOffer: allServiceLinks.slice(0, 8).map((service) => ({
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: service.title,
-        url: `${baseUrl}${service.path}`
-      }
-    })),
-    potentialAction: {
-      "@type": "ReserveAction",
-      name: "Request an audiology appointment",
-      target: `${baseUrl}/contact-us`
-    },
-    openingHoursSpecification: location.hours.map((hours) => ({
-      "@type": "OpeningHoursSpecification",
-      description: hours
-    }))
-  };
+  return officeBusinessSchema(location);
 }
 
 export function personSchemas(page: SitePage) {
@@ -427,6 +457,10 @@ export function schemaForPage(page: SitePage) {
     faqSchema(page),
     serviceSchema(page),
     localBusinessSchema(page),
+    // The homepage is where Google looks for the practice's NAP. Each office
+    // node is emitted here as well as on its own location page; they share an
+    // @id, so this is one entity described twice, not two entities.
+    ...(page.path === "/" ? locations.filter((location) => location.type === "office").map(officeBusinessSchema) : []),
     ...personSchemas(page)
   ].filter(Boolean);
 }

@@ -231,7 +231,7 @@ export const helpServices: HelpService[] = [
     whyItMatters:
       "Technology alone does not create better hearing. Professional selection, verification, counseling, and follow-up programming are what help hearing aids work in daily life.",
     relatedServices: [
-      { label: "Hearing Aid Brands", href: "/products/hearing-aids-by-brand" },
+      { label: "Hearing Aid Brands", href: "/hearing-aids-brands" },
       { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
     ],

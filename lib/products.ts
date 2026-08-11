@@ -25,7 +25,10 @@ export type HearingAidProduct = {
 };
 
 export const productsRootPath = "/products";
-export const hearingAidBrandsPath = "/products/hearing-aids-by-brand";
+// The brand hub lives on the legacy URL. That path carries the practice's
+// existing search authority, so the newer product tree is parented onto it
+// rather than competing with it from /products/hearing-aids-by-brand.
+export const hearingAidBrandsPath = "/hearing-aids-brands";
 
 export const hearingAidProducts: HearingAidProduct[] = [
   {

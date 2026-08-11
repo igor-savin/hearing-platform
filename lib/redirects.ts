@@ -49,8 +49,21 @@ export const permanentRedirects: SiteRedirect[] = [
   // pages instead of letting them 404.
   {
     source: "/products/hearing-aid-brands",
-    destination: "/products/hearing-aids-by-brand",
+    destination: "/hearing-aids-brands",
     reason: "Corrected internal link target"
+  },
+  // The brand tree used to hang off /products. It now hangs off the legacy
+  // /hearing-aids-brands URL, which holds the search authority. The exact
+  // source must precede the wildcard so it is not swallowed by it.
+  {
+    source: "/products/hearing-aids-by-brand",
+    destination: "/hearing-aids-brands",
+    reason: "Brand hub consolidated onto the legacy URL"
+  },
+  {
+    source: "/products/hearing-aids-by-brand/:path*",
+    destination: "/hearing-aids-brands/:path*",
+    reason: "Brand and product children re-parented onto the legacy brand hub"
   },
   {
     source: "/tinnitus/:slug",

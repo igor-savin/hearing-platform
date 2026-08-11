@@ -102,6 +102,9 @@ export type Location = {
   phoneHref: string;
   fax?: string;
   hours: string[];
+  // Machine-readable opening hours for JSON-LD. `hours` above is the
+  // human-facing display string; schema.org needs dayOfWeek/opens/closes.
+  hoursSpec?: Array<{ days: string[]; opens: string; closes: string }>;
   type: "office" | "service-area";
   nearby: string[];
   directionsUrl?: string;
@@ -187,6 +190,9 @@ export const locations: Location[] = [
     phone: primaryPhone,
     phoneHref: primaryPhoneHref,
     hours: ["Monday-Friday: 8:30am - 5:00pm"],
+    hoursSpec: [
+      { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:30", closes: "17:00" }
+    ],
     type: "office",
     nearby: ["Rye", "Greenwich", "Scarsdale", "White Plains"],
     directionsUrl:
@@ -210,6 +216,10 @@ export const locations: Location[] = [
       "Wednesday: 8:30am - 5:00pm",
       "Thursday: Closed",
       "Friday: 8:30am - 2:30pm"
+    ],
+    hoursSpec: [
+      { days: ["Monday", "Tuesday", "Wednesday"], opens: "08:30", closes: "17:00" },
+      { days: ["Friday"], opens: "08:30", closes: "14:30" }
     ],
     type: "office",
     nearby: ["Mahopac", "Putnam Valley", "Mt. Kisco", "Northern Westchester"],
@@ -1284,26 +1294,10 @@ const productHubPages: SitePage[] = [
     faqs: [],
     related: []
   },
-  {
-    path: hearingAidBrandsPath,
-    url: `${baseUrl}${hearingAidBrandsPath}`,
-    title: "Hearing Aid Brands",
-    metaTitle: `Hearing Aid Brands | ${siteName}`,
-    metaDescription:
-      "Compare premium hearing aid brands including Oticon, Phonak, Starkey, Signia, Widex, ReSound, Lyric, and custom ear protection options.",
-    h1: "Hearing Aid Brands",
-    type: "product-brand-index",
-    lastModified: "2026-06-07",
-    canonical: `${baseUrl}${hearingAidBrandsPath}`,
-    images: [],
-    sections: ["Your Partner for Better Hearing", "Our Featured Hearing Aid Brands"],
-    body: [
-      "Selecting the right hearing aid is a personal decision. Audiology Associates of Westchester works with patients to compare technology, sound quality, comfort, connectivity, and care needs.",
-      "A professional hearing aid recommendation starts with a complete hearing evaluation and a conversation about the real listening situations you want to improve."
-    ],
-    faqs: [],
-    related: []
-  },
+  // No generated page for hearingAidBrandsPath: that path is the legacy
+  // /hearing-aids-brands page from the crawl, which already renders the brand
+  // grid and links to each brand child. Emitting a second page object here
+  // would duplicate the URL in pagePaths and in the sitemap.
   ...productBrands.map((brand): SitePage => ({
     path: brandPath(brand.slug),
     url: `${baseUrl}${brandPath(brand.slug)}`,
