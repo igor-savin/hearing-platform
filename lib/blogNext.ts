@@ -309,8 +309,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     related: [
       { label: "Tinnitus Management", href: "/how-we-can-help/tinnitus-management" },
       { label: "Lenire for Tinnitus", href: "/how-we-can-help/lenire-for-tinnitus" },
-      { label: "Tinnitus Treatment and Relief Options", href: "/tinnitus/treatment-and-relief-options" },
-      { label: "Sudden or Worsening Tinnitus", href: "/tinnitus/sudden-or-worsening-tinnitus" },
+      { label: "Tinnitus Treatment and Relief Options", href: "/how-we-can-help/tinnitus-management/treatment-and-relief-options" },
+      { label: "Sudden or Worsening Tinnitus", href: "/how-we-can-help/tinnitus-management/sudden-or-worsening-tinnitus" },
       { label: "Harrison office", href: "/harrison-ny" }
     ],
     blogMeta: {
@@ -418,7 +418,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing Care for Professionals", href: "/hearing-care-professionals-meetings-calls" },
-      { label: "Hearing Aid Brands", href: "/products/hearing-aid-brands" }
+      { label: "Hearing Aid Brands", href: "/products/hearing-aids-by-brand" }
     ],
     blogMeta: {
       frame: "Buyer decision guide",

@@ -46,7 +46,11 @@ const highlights = [
 export const metadata: Metadata = {
   title: "Site Overview",
   description:
-    "A fast-read overview of the Audiology Associates of Westchester website architecture, content flow, and publishing structure."
+    "A fast-read overview of the Audiology Associates of Westchester website architecture, content flow, and publishing structure.",
+  // Internal architecture reference, not patient-facing content. Keep it
+  // reachable for the team but out of the index so it cannot compete with
+  // clinical pages in search results.
+  robots: { index: false, follow: true }
 };
 
 export default function OverviewPage() {

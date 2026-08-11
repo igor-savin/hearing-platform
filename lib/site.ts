@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import crawl from "@/data/crawl.json";
 import { buildNextBlogPosts } from "@/lib/blogNext";
+import { buildSeedBlogPosts } from "@/lib/blogSeed";
 import { comparisonPages } from "@/lib/conversion";
 import { hearingLossPages } from "@/lib/hearingLoss";
 import { reviewsPage } from "@/lib/reviews";
@@ -830,7 +831,7 @@ function relatedLinks(page: SitePage) {
     const curatedLinks = editorialBlogRelatedLinks[page.path];
     if (curatedLinks) return curatedLinks;
     if (page.related.length) return page.related;
-    return [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...comparisonPages]
+    return [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages]
       .filter((post) => post.path !== page.path)
       .filter((post) => post.type === "blog-post")
       .map((post) => ({ label: post.h1, href: post.path }))
@@ -1389,6 +1390,7 @@ const serviceAreaPages: SitePage[] = [
 ];
 
 const nextBlogPosts = buildNextBlogPosts(baseUrl, siteName);
+const seedBlogPosts = buildSeedBlogPosts(baseUrl, siteName);
 
 const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => ({
   path: providerPath(provider),
@@ -1416,7 +1418,7 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...page, faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);

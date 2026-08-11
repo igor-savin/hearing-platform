@@ -6,13 +6,9 @@ export const revalidate = 3600;
 
 const contentLastModified = new Date("2026-07-15");
 
+// `/overview` is deliberately absent: it is an internal architecture summary,
+// marked noindex, so it should not be advertised to crawlers here.
 const standalonePages: MetadataRoute.Sitemap = [
-  {
-    url: `${baseUrl}/overview`,
-    lastModified: contentLastModified,
-    changeFrequency: "monthly",
-    priority: 0.7
-  },
   {
     url: `${baseUrl}/llms.txt`,
     lastModified: contentLastModified,

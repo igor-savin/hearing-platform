@@ -52,6 +52,19 @@ const nextConfig: NextConfig = {
         source: "/null",
         destination: "/",
         statusCode: 301
+      },
+      // These paths were never published, but internal links pointed at them
+      // for long enough that crawlers may have queued them. Send them to the
+      // real pages instead of letting them 404.
+      {
+        source: "/products/hearing-aid-brands",
+        destination: "/products/hearing-aids-by-brand",
+        statusCode: 301
+      },
+      {
+        source: "/tinnitus/:slug",
+        destination: "/how-we-can-help/tinnitus-management/:slug",
+        statusCode: 301
       }
     ];
   },
