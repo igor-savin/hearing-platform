@@ -397,6 +397,14 @@ export function localBusinessSchema(page: SitePage) {
   return officeBusinessSchema(location);
 }
 
+// Providers who work from more than one office get workLocation links to those
+// offices. The @ids match the MedicalBusiness nodes emitted on the location
+// pages and the homepage, so this is the same entity referenced, not a copy.
+function providerWorkLocations(officePaths?: string[]) {
+  if (!officePaths?.length) return undefined;
+  return officePaths.map((path) => ({ "@id": `${baseUrl}${path}/#localbusiness` }));
+}
+
 export function personSchemas(page: SitePage) {
   if (page.type === "provider") {
     const provider = providerForPath(page.path);
@@ -411,6 +419,7 @@ export function personSchemas(page: SitePage) {
         image: absoluteImageUrl(provider.image),
         description: page.metaDescription,
         worksFor: { "@id": `${baseUrl}/#organization` },
+        workLocation: providerWorkLocations(provider.officePaths),
         hasOccupation: {
           "@type": "Occupation",
           name: "Audiologist",
@@ -441,6 +450,7 @@ export function personSchemas(page: SitePage) {
     jobTitle: provider.role,
     image: absoluteImageUrl(provider.image),
     worksFor: { "@id": `${baseUrl}/#organization` },
+    workLocation: providerWorkLocations(provider.officePaths),
     hasOccupation: {
       "@type": "Occupation",
       name: "Audiologist",

@@ -10,6 +10,10 @@ export type ProviderProfile = {
   credentials: string[];
   affiliations?: string[];
   specialties: string[];
+  // Location paths this provider sees patients at, when it is more than the
+  // main Harrison office. Drives the phone numbers shown on their profile and
+  // the workLocation links in their Person schema. Omit for Harrison-only.
+  officePaths?: string[];
 };
 
 export const providerRootPath = "/meet-the-team";
@@ -74,6 +78,7 @@ export const providerProfiles: ProviderProfile[] = [
       "American Academy of Audiology - Academy Fellow",
       "American Speech-Language-Hearing Association - Certificate of Clinical Competence"
     ],
+    officePaths: ["/harrison-ny", "/Somers-NY"],
     specialties: [
       "Comprehensive diagnostic testing",
       "Hearing aid fitting and verification",
@@ -120,7 +125,7 @@ export const providerProfiles: ProviderProfile[] = [
     name: "Dr. Leannmarie Senat",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "/assets/duda/leannmarie-senat-img.jpg",
+    image: "/assets/team/leannmarie-senat.jpg",
     alt: "Dr. Leannmarie Senat",
     paragraphs: [
       "Leannmarie Senat earned her Doctorate of Audiology from The City University of New York Graduate Center.",
@@ -158,6 +163,7 @@ export const providerProfiles: ProviderProfile[] = [
       "College: Pace University, B.A., Communication Sciences and Disorders",
       "Graduate: Montclair State University, Doctor of Audiology; May 2026"
     ],
+    officePaths: ["/harrison-ny", "/Somers-NY"],
     specialties: [
       "Pediatric and adult diagnostic audiology",
       "Vestibular assessment",

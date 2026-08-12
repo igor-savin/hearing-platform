@@ -13,6 +13,10 @@ export type HelpService = {
   whyItMatters: string;
   relatedServices: Array<{ label: string; href: string }>;
   faqs: Array<{ question: string; answer: string }>;
+  // Kept out of the header dropdown to keep that menu to a scannable length.
+  // The page stays published, in the sitemap, and linked from the
+  // /how-we-can-help hub -- this hides it from the nav, it does not retire it.
+  hideFromMenu?: boolean;
 };
 
 export function helpServicePath(service: HelpService | string) {
@@ -473,6 +477,7 @@ export const helpServices: HelpService[] = [
     title: "Cognivue Cognitive Screening",
     menuTitle: "Cognivue Cognitive Screening",
     slug: "cognivue-cognitive-screening",
+    hideFromMenu: true,
     shortDescription: "A digital screening option that helps connect hearing care conversations with cognitive wellness.",
     metaDescription:
       "Cognivue cognitive screening at Audiology Associates of Westchester in Harrison and Somers, NY, where hearing and cognitive wellness connect.",

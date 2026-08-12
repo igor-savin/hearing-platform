@@ -29,7 +29,9 @@ const navGroups = [
   {
     label: "HOW WE CAN HELP",
     href: howWeCanHelpRootPath,
-    links: helpServices.map((service) => [service.menuTitle.toUpperCase(), canonicalPathFor(helpServicePath(service))])
+    links: helpServices
+      .filter((service) => !service.hideFromMenu)
+      .map((service) => [service.menuTitle.toUpperCase(), canonicalPathFor(helpServicePath(service))])
   },
   {
     label: "HEARING LOSS",

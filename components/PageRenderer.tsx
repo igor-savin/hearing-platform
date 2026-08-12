@@ -274,7 +274,7 @@ const teamMembers = [
     name: "Dr. Leannmarie Senat",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "/assets/duda/leannmarie-senat-img.jpg",
+    image: "/assets/team/leannmarie-senat.jpg",
     alt: "Dr. Leannmarie Senat"
   },
   {
@@ -1801,6 +1801,15 @@ function AreaCountyPage({ page }: { page: SitePage }) {
 
 // Curated, accurate one-line credential highlights (sourced from lib/team.ts)
 // so the E-E-A-T block reads cleanly instead of dumping full credential lists.
+// Offices a provider works from. Empty unless the profile lists more than the
+// main Harrison office, in which case the CTA shows one number per location so
+// patients call the right front desk.
+function providerOffices(provider: ProviderProfile) {
+  return (provider.officePaths || [])
+    .map((path) => locationForPath(path))
+    .filter((location): location is NonNullable<typeof location> => Boolean(location));
+}
+
 const providerCredentialHighlights: Record<string, string> = {
   "jennifer-ratner": "Au.D., Vanderbilt University School of Medicine · Tinnitus-certified (CH-TM) · musician-focused care",
   "kira-savin": "Au.D., Salus University · Lyric invisible extended-wear devices · Tinnitus management (CH-TM)",
@@ -4621,12 +4630,27 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
               <div className="mt-7 bg-[#dbe9f3] p-7 text-black">
                 <h2 className="text-[28px] font-black leading-tight">Schedule Hearing Care</h2>
                 <p className="mt-3 text-[20px] leading-[1.35]">
-                  Call Audiology Associates of Westchester to confirm appointment availability and provider scheduling.
+                  {providerOffices(provider).length > 1
+                    ? `${provider.name} sees patients at both offices. Call the location that suits you to confirm appointment availability and provider scheduling.`
+                    : "Call Audiology Associates of Westchester to confirm appointment availability and provider scheduling."}
                 </p>
                 <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                  <a className="legacy-live-button inline-flex w-full sm:w-auto" data-track="phone-provider" href={primaryPhoneHref}>
-                    Call {primaryPhone}
-                  </a>
+                  {providerOffices(provider).length > 1 ? (
+                    providerOffices(provider).map((office) => (
+                      <a
+                        className="legacy-live-button inline-flex w-full sm:w-auto"
+                        data-track="phone-provider"
+                        href={office.phoneHref}
+                        key={office.path}
+                      >
+                        Call {office.city} {office.phone}
+                      </a>
+                    ))
+                  ) : (
+                    <a className="legacy-live-button inline-flex w-full sm:w-auto" data-track="phone-provider" href={primaryPhoneHref}>
+                      Call {primaryPhone}
+                    </a>
+                  )}
                   <ZocdocButton className="legacy-live-button inline-flex w-full sm:w-auto" label="Book Online" trackingId={`provider-${provider.slug}-appointment`} />
                 </div>
               </div>
