@@ -32,6 +32,53 @@ export const hearingAidBrandsPath = "/hearing-aids-brands";
 
 export const hearingAidProducts: HearingAidProduct[] = [
   {
+    slug: "oticon-reveal",
+    brandSlug: "oticon",
+    title: "Oticon Reveal",
+    shortTitle: "Oticon Reveal",
+    subtitle: "The world's first hearing aid powered by Dual AI",
+    menuDescription: "Speech AI and Context AI running together on Oticon's newest platform.",
+    image: "/assets/brands/Oticon-Reveal.webp",
+    imageAlt: "Oticon Reveal miniRITE R hearing aid",
+    overview: [
+      "Oticon Reveal is Oticon's newest hearing aid family, introduced in August 2026 and built on the Reveal AI™ platform. Where earlier Oticon technology used a single neural network, Reveal runs two AI systems at the same time: Speech AI, which identifies and enhances the voices around you, and Context AI, which preserves the surrounding sounds that tell your brain where you are and what is happening.",
+      "Oticon reports that this produces a measurably stronger brain response than its previous generation. Whether that translates into a better outcome for you specifically depends on your hearing test results, your listening environments, and how you use your hearing day to day — which is exactly what a consultation at Audiology Associates of Westchester is for."
+    ],
+    highlights: [
+      "Dual AI processing: Speech AI enhances voices while Context AI preserves the surrounding sound scene",
+      "Built on the Reveal AI™ platform, Oticon's third generation of AI sound processing",
+      "Rechargeable miniRITE R style designed for a full day of use on a single charge",
+      "Bluetooth® LE Audio with Auracast™ broadcast support, hands-free calls, Made for iPhone and optimized for Android",
+      "Four technology levels, so the platform can be matched to your hearing needs and budget"
+    ],
+    technology: [
+      {
+        title: "Two AI Systems, Working at Once",
+        body: "Speech AI and Context AI run simultaneously rather than trading off against each other. The intent is to sharpen speech without stripping away the environmental cues — footsteps, traffic, a room's acoustics — that help your brain orient itself. Oticon cites a 60% stronger brain response than Oticon Intent, along with feedback management that reacts 30% faster with four times greater fitting precision. These are the manufacturer's figures from its own research."
+      },
+      {
+        title: "Professional Fitting Matters",
+        body: "A new platform only helps if it is programmed to your hearing loss. Real-ear measurement, verification, and follow-up visits are what turn the technology into everyday benefit, and our audiologists will compare Reveal against other current platforms rather than assuming the newest option is the right one for you."
+      }
+    ],
+    videos: [
+      {
+        title: "Oticon Reveal product video",
+        youtubeId: "79BU3IIjKrY"
+      }
+    ],
+    faqs: [
+      {
+        question: "How is Oticon Reveal different from Oticon Intent?",
+        answer: "Intent is built around user-intent sensors that read your movement and listening behavior. Reveal is built around Dual AI — two neural networks handling speech and surrounding sound at the same time. Both are premium platforms, and the better choice depends on your hearing profile and priorities rather than on which launched more recently."
+      },
+      {
+        question: "Is Oticon Reveal available now?",
+        answer: "Oticon began releasing Reveal in August 2026, with a wider rollout through the second half of the year. Please contact Audiology Associates of Westchester to confirm current availability, technology levels, and whether it is an appropriate match for your hearing needs."
+      }
+    ]
+  },
+  {
     slug: "oticon-intent",
     brandSlug: "oticon",
     title: "Oticon Intent",
@@ -116,53 +163,6 @@ export const hearingAidProducts: HearingAidProduct[] = [
       {
         question: "Who is a good candidate for Oticon Zeal?",
         answer: "It may be considered for people who want a discreet in-ear solution, but candidacy depends on hearing level, ear canal anatomy, comfort, and clinical recommendations."
-      }
-    ]
-  },
-  {
-    slug: "starkey-edge-ai",
-    brandSlug: "starkey",
-    title: "Starkey Edge AI",
-    shortTitle: "Starkey Edge AI",
-    subtitle: "AI-powered adaptive hearing technology",
-    menuDescription: "Pioneered American innovation, cutting-edge styles with AI-powered adaptive technology.",
-    image: "/assets/brands/Starkey-Edge-AI.webp",
-    imageAlt: "Starkey Edge AI hearing aid",
-    overview: [
-      "Starkey Edge AI is designed around onboard artificial intelligence that adapts to real-world listening environments. It supports speech clarity, comfort, and everyday usability through modern hearing aid styles and wireless features.",
-      "Our audiologists can compare Starkey technology with other hearing aid platforms and help you choose based on your hearing test, listening environments, phone needs, and care preferences."
-    ],
-    highlights: [
-      "AI-driven processing for changing environments",
-      "Multiple hearing aid styles depending on hearing needs",
-      "Rechargeable options and wireless accessories",
-      "Designed for daily comfort and practical use",
-      "Personalized programming and follow-up care"
-    ],
-    technology: [
-      {
-        title: "Adaptive Sound Processing",
-        body: "AI-assisted processing helps the devices respond to changing sound scenes, from quiet rooms to busier social settings."
-      },
-      {
-        title: "Everyday Support",
-        body: "The right fitting balances speech clarity, sound comfort, cosmetics, connectivity, and maintenance needs."
-      }
-    ],
-    videos: [
-      {
-        title: "Starkey Edge AI product video",
-        youtubeId: "38q7GgjS--I"
-      }
-    ],
-    faqs: [
-      {
-        question: "Does Starkey Edge AI require a smartphone?",
-        answer: "A smartphone may unlock additional controls and features, but your audiologist can review what is needed for your preferred setup."
-      },
-      {
-        question: "Can Starkey hearing aids be adjusted after fitting?",
-        answer: "Yes. Follow-up appointments allow the audiologist to fine-tune settings as you adapt to everyday listening."
       }
     ]
   },
@@ -444,6 +444,53 @@ export const hearingAidProducts: HearingAidProduct[] = [
         answer: "No. Custom earplugs are protective or comfort devices, while hearing aids are programmed amplification devices for hearing loss."
       }
     ]
+  },
+  {
+    slug: "starkey-edge-ai",
+    brandSlug: "starkey",
+    title: "Starkey Edge AI",
+    shortTitle: "Starkey Edge AI",
+    subtitle: "AI-powered adaptive hearing technology",
+    menuDescription: "Pioneered American innovation, cutting-edge styles with AI-powered adaptive technology.",
+    image: "/assets/brands/Starkey-Edge-AI.webp",
+    imageAlt: "Starkey Edge AI hearing aid",
+    overview: [
+      "Starkey Edge AI is designed around onboard artificial intelligence that adapts to real-world listening environments. It supports speech clarity, comfort, and everyday usability through modern hearing aid styles and wireless features.",
+      "Our audiologists can compare Starkey technology with other hearing aid platforms and help you choose based on your hearing test, listening environments, phone needs, and care preferences."
+    ],
+    highlights: [
+      "AI-driven processing for changing environments",
+      "Multiple hearing aid styles depending on hearing needs",
+      "Rechargeable options and wireless accessories",
+      "Designed for daily comfort and practical use",
+      "Personalized programming and follow-up care"
+    ],
+    technology: [
+      {
+        title: "Adaptive Sound Processing",
+        body: "AI-assisted processing helps the devices respond to changing sound scenes, from quiet rooms to busier social settings."
+      },
+      {
+        title: "Everyday Support",
+        body: "The right fitting balances speech clarity, sound comfort, cosmetics, connectivity, and maintenance needs."
+      }
+    ],
+    videos: [
+      {
+        title: "Starkey Edge AI product video",
+        youtubeId: "38q7GgjS--I"
+      }
+    ],
+    faqs: [
+      {
+        question: "Does Starkey Edge AI require a smartphone?",
+        answer: "A smartphone may unlock additional controls and features, but your audiologist can review what is needed for your preferred setup."
+      },
+      {
+        question: "Can Starkey hearing aids be adjusted after fitting?",
+        answer: "Yes. Follow-up appointments allow the audiologist to fine-tune settings as you adapt to everyday listening."
+      }
+    ]
   }
 ];
 
@@ -463,10 +510,10 @@ export const productBrands: ProductBrand[] = [
       },
       {
         title: "Premium product families",
-        body: "Oticon Intent and Oticon Zeal represent two different directions: advanced user-intent sensing and deeply discreet in-ear design."
+        body: "Oticon Reveal, Oticon Intent, and Oticon Zeal represent three different directions: Dual AI sound processing, user-intent sensing, and deeply discreet in-ear design."
       }
     ],
-    products: ["oticon-zeal", "oticon-intent"]
+    products: ["oticon-reveal", "oticon-intent", "oticon-zeal"]
   },
   {
     slug: "phonak",
