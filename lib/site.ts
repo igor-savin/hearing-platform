@@ -1448,14 +1448,26 @@ export function toPath(slug?: string[]) {
   return `/${slug.join("/")}`;
 }
 
+// Bing Webmaster Tools site verification. Bing reads this only on the site
+// root, so it is scoped to the homepage rather than emitted on all 180 pages.
+// Safe to keep in source: it is a public token that appears in the served HTML,
+// and it proves nothing on its own without control of this domain.
+export const bingSiteVerification =
+  process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "D9DA69251B598DFCE6D72A6402D17438";
+
 export function buildMetadata(page: SitePage): Metadata {
   const image = page.heroImage?.src || "/opengraph-image";
   const robots = page.path === "/thank-you" ? { index: false, follow: true } : undefined;
+  const verification =
+    page.path === "/" && bingSiteVerification
+      ? { other: { "msvalidate.01": bingSiteVerification } }
+      : undefined;
 
   return {
     title: page.metaTitle,
     description: page.metaDescription,
     robots,
+    verification,
     alternates: {
       canonical: page.canonical
     },
