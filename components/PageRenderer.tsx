@@ -281,7 +281,7 @@ const teamMembers = [
     name: "Dr. Julia Rivera, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "/assets/duda/img-6425.jpg",
+    image: "/assets/team/julia-rivera.jpg",
     alt: "Dr. Julia Rivera, Au.D."
   },
   {

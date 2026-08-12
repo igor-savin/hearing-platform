@@ -149,7 +149,7 @@ export const providerProfiles: ProviderProfile[] = [
     name: "Dr. Julia Rivera, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "/assets/duda/img-6425.jpg",
+    image: "/assets/team/julia-rivera.jpg",
     alt: "Dr. Julia Rivera, Au.D.",
     // Single source of truth for her bio. The meet-the-team roster reads these
     // paragraphs from here rather than keeping its own copy.
