@@ -278,11 +278,11 @@ const teamMembers = [
     alt: "Dr. Leannmarie Senat"
   },
   {
-    name: "Julia Rivera",
+    name: "Dr. Julia Rivera, Au.D.",
     pronouns: "(she/her/hers)",
-    role: "Doctorate of Audiology Extern",
+    role: "Audiology Staff, Doctor of Audiology",
     image: "/assets/duda/img-6425.jpg",
-    alt: "Julia Rivera"
+    alt: "Dr. Julia Rivera, Au.D."
   },
   {
     name: "Dr. Kira Savin, Au.D.",
@@ -400,10 +400,10 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       {
         ...teamMembers[4],
         paragraphs: [
-          "Julia Rivera is a Doctor of Audiology (Au.D.) candidate at Montclair State University, where she is expected to graduate in May 2026. She earned her Bachelor of Arts in Communication Sciences and Disorders from Pace University.",
-          "Before beginning her doctoral studies, Julia gained over 150 hours of experience in speech and language therapy, working with children aged 4 to 21 in school-based settings. This background strengthened her understanding of communication development and deepened her commitment to interdisciplinary, patient-centered care",
-          "Her clinical training includes experience across private practice, hospital, and ENT settings, where she has developed a strong foundation in diagnostic audiology, vestibular assessment, hearing aid technology, and patient counseling. Julia is passionate about providing person and family centered care that empowers individuals to improve their communication and quality of life.",
-          "Julia’s doctoral research examines how structural racism and social determinants of health influence follow-up adherence within Early Hearing Detection and Intervention (EHDI) programs, reflecting her passion for promoting equity and access in hearing healthcare."
+          "Julia Rivera earned her Doctor of Audiology degree from Montclair State University in May 2026. She earned her Bachelor of Arts in Communication Sciences and Disorders from Pace University.",
+          "Before beginning her doctoral studies, Julia gained more than 150 hours of experience in speech and language therapy, working with individuals ages 4 to 21 in school-based settings. She worked with individuals with a variety of developmental, intellectual, physical, and communication disabilities. This background strengthened her understanding of communication development and deepened her commitment to interdisciplinary, patient-centered care.",
+          "Her clinical training includes experience across private practice, hospital, and ENT settings, where she developed a strong foundation in pediatric and adult diagnostic audiology, vestibular assessment, tinnitus evaluation, cerumen removal, hearing aid technology, and patient counseling. She also has experience with Lyric hearing aids, custom hearing protection and musician’s earplugs, as well as the selection, orientation, fitting, verification, and ongoing management of hearing aids. Julia is passionate about providing person- and family-centered care that empowers individuals to improve their communication and overall quality of life.",
+          "Julia’s doctoral research examined how structural racism and social determinants of health influence follow-up adherence within Early Hearing Detection and Intervention programs, reflecting her commitment to promoting equity and access in hearing healthcare."
         ]
       }
     ]
