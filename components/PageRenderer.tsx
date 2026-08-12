@@ -399,12 +399,10 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       },
       {
         ...teamMembers[4],
-        paragraphs: [
-          "Julia Rivera earned her Doctor of Audiology degree from Montclair State University in May 2026. She earned her Bachelor of Arts in Communication Sciences and Disorders from Pace University.",
-          "Before beginning her doctoral studies, Julia gained more than 150 hours of experience in speech and language therapy, working with individuals ages 4 to 21 in school-based settings. She worked with individuals with a variety of developmental, intellectual, physical, and communication disabilities. This background strengthened her understanding of communication development and deepened her commitment to interdisciplinary, patient-centered care.",
-          "Her clinical training includes experience across private practice, hospital, and ENT settings, where she developed a strong foundation in pediatric and adult diagnostic audiology, vestibular assessment, tinnitus evaluation, cerumen removal, hearing aid technology, and patient counseling. She also has experience with Lyric hearing aids, custom hearing protection and musician’s earplugs, as well as the selection, orientation, fitting, verification, and ongoing management of hearing aids. Julia is passionate about providing person- and family-centered care that empowers individuals to improve their communication and overall quality of life.",
-          "Julia’s doctoral research examined how structural racism and social determinants of health influence follow-up adherence within Early Hearing Detection and Intervention programs, reflecting her commitment to promoting equity and access in hearing healthcare."
-        ]
+        // Her bio lives in her provider profile (lib/team.ts) so the roster
+        // and the profile page cannot drift. The other profiles in this list
+        // still carry their own copy.
+        paragraphs: providerForName(teamMembers[4].name)?.paragraphs ?? []
       }
     ]
   },
@@ -1808,7 +1806,8 @@ const providerCredentialHighlights: Record<string, string> = {
   "kira-savin": "Au.D., Salus University · Lyric invisible extended-wear devices · Tinnitus management (CH-TM)",
   "caitlin-dold": "Au.D., Vanderbilt · cochlear implants, cerumen removal & ASL · White Plains native",
   "jenna-elias": "Au.D., University of Florida · Fellow, American Academy of Audiology",
-  "leannmarie-senat": "Au.D., CUNY Graduate Center · adult amplification & vestibular assessment"
+  "leannmarie-senat": "Au.D., CUNY Graduate Center · adult amplification & vestibular assessment",
+  "julia-rivera": "Au.D., Montclair State University · pediatric & adult diagnostics · tinnitus evaluation & cerumen removal"
 };
 
 const featuredAreaProviderSlugs = ["jennifer-ratner", "kira-savin", "caitlin-dold"];
