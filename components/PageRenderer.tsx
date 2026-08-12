@@ -477,18 +477,21 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
   }
 ];
 
-const hearingAidBrands = [
-  ["Widex Hearing Aids", "Widex is a family-owned company that has been advancing the hearing aid industry since 1956. They specialize in tinnitus solutions and create high-quality hearing aids like their EVOKE™ line.", "/assets/duda/widexlogo.png", "Widex High Definition Hearing logo"],
-  ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. They create some of the most advanced products, including ones that are smartphone compatible and have activity tracking capabilities.", "/assets/duda/starkeylogo-250x131.png", "Starkey logo"],
-  ["Phonak Hearing Aids", "Phonak hearing aids offer new solutions to hearing loss problems. Their products are continually changed to meet hearing loss problems. Their products include Phonak Audéo™ Marvel, Phonak Bolero™ Marvel, Phonak Sky™ Marvel, and many others.", "/assets/duda/phonaklogo-250x53.png", "Phonak logo"],
-  ["Lyric Hearing Aids", "Lyric creates extended wear, nearly invisible hearing aids. In fact, they created the Phonak Lyric™, touted as the world’s only 100% invisible hearing aid. All of their products are designed to provide superb sound quality.", "/assets/duda/lyriclogo-250x128.png", "Lyric logo"],
-  ["Unitron Hearing Aids", "Unitron creates simple yet effective hearing aids that have won numerous Red Dot awards. Some of their products include Moxi Now, Stride M, Stride P, Moxi Fit, and Moxi Kiss.", "/assets/duda/unitronlogo-250x64.png", "Unitron Connect logo"],
-  ["Signia & Siemens Hearing Aids", "Signia has provided over 120 countries with high-quality hearing aids that deliver crystal-clear results. Siemens, under the Signia name, has provided customized audiology solutions for more than 100 years.", "/assets/duda/signia-logo.png", "Signia logo"],
-  ["Rexton Hearing Aids", "Rexton offers hearing aids and accessories to improve your quality of life. Their focus is on accessibility and personalization to make sure everyone in need of a hearing aid finds what they need.", "/assets/duda/rextonlogo-250x47.png", "Rexton logo"],
-  ["Oticon Hearing Aids", "Oticon has led the way for many changes in the hearing aid industry, recently with their Oticon Opn S™ and Oticon Opn Play™. These products can be used by children and adults who wish to hear clearly while enjoying an active life.", "/assets/duda/oticon-hearing-aids-logo.png", "Oticon logo"],
-  ["Resound Hearing Aids", "ReSound has been offering hearing loss solutions to people of all ages since 1943. They provide advanced, cutting edge technology, earning them the CES Innovation Award, the Die Goldene Concha award, the Golden Lobe Award, and more.", "/assets/duda/resoundlogo-250x102.png", "ReSound logo"],
-  ["Caption Call", "CaptionCall makes a transcript of phone conversations so you can see what the other person is saying. This is a real-time solution for those with hearing loss who have trouble using a phone.", "/assets/duda/caption-call-trans-bg1.png", "Caption Call logo"],
-  ["CapTel", "CapTel is a phone that amplifies the noise you want while reducing the noise you don’t want. It also provides a caption and transcript of the conversation.", "/assets/duda/captel-logo.png", "CapTel logo"]
+// [title, description, logo, logo alt, destination]. The destination is the
+// brand page we maintain for that manufacturer; an empty string means we carry
+// the brand but have no page for it yet, so that card renders unlinked.
+const hearingAidBrands: Array<[string, string, string, string, string]> = [
+  ["Widex Hearing Aids", "Widex is a family-owned company that has been advancing the hearing aid industry since 1956. They specialize in tinnitus solutions and create high-quality hearing aids like their EVOKE™ line.", "/assets/duda/widexlogo.png", "Widex High Definition Hearing logo", brandPath("widex")],
+  ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. They create some of the most advanced products, including ones that are smartphone compatible and have activity tracking capabilities.", "/assets/duda/starkeylogo-250x131.png", "Starkey logo", brandPath("starkey")],
+  ["Phonak Hearing Aids", "Phonak hearing aids offer new solutions to hearing loss problems. Their products are continually changed to meet hearing loss problems. Their products include Phonak Audéo™ Marvel, Phonak Bolero™ Marvel, Phonak Sky™ Marvel, and many others.", "/assets/duda/phonaklogo-250x53.png", "Phonak logo", brandPath("phonak")],
+  ["Lyric Hearing Aids", "Lyric creates extended wear, nearly invisible hearing aids. In fact, they created the Phonak Lyric™, touted as the world’s only 100% invisible hearing aid. All of their products are designed to provide superb sound quality.", "/assets/duda/lyriclogo-250x128.png", "Lyric logo", "/lyric-invisible-hearing"],
+  ["Unitron Hearing Aids", "Unitron creates simple yet effective hearing aids that have won numerous Red Dot awards. Some of their products include Moxi Now, Stride M, Stride P, Moxi Fit, and Moxi Kiss.", "/assets/duda/unitronlogo-250x64.png", "Unitron Connect logo", ""],
+  ["Signia & Siemens Hearing Aids", "Signia has provided over 120 countries with high-quality hearing aids that deliver crystal-clear results. Siemens, under the Signia name, has provided customized audiology solutions for more than 100 years.", "/assets/duda/signia-logo.png", "Signia logo", brandPath("signia")],
+  ["Rexton Hearing Aids", "Rexton offers hearing aids and accessories to improve your quality of life. Their focus is on accessibility and personalization to make sure everyone in need of a hearing aid finds what they need.", "/assets/duda/rextonlogo-250x47.png", "Rexton logo", ""],
+  ["Oticon Hearing Aids", "Oticon has led the way for many changes in the hearing aid industry, recently with their Oticon Opn S™ and Oticon Opn Play™. These products can be used by children and adults who wish to hear clearly while enjoying an active life.", "/assets/duda/oticon-hearing-aids-logo.png", "Oticon logo", brandPath("oticon")],
+  ["Resound Hearing Aids", "ReSound has been offering hearing loss solutions to people of all ages since 1943. They provide advanced, cutting edge technology, earning them the CES Innovation Award, the Die Goldene Concha award, the Golden Lobe Award, and more.", "/assets/duda/resoundlogo-250x102.png", "ReSound logo", brandPath("resound")],
+  ["Caption Call", "CaptionCall makes a transcript of phone conversations so you can see what the other person is saying. This is a real-time solution for those with hearing loss who have trouble using a phone.", "/assets/duda/caption-call-trans-bg1.png", "Caption Call logo", ""],
+  ["CapTel", "CapTel is a phone that amplifies the noise you want while reducing the noise you don’t want. It also provides a caption and transcript of the conversation.", "/assets/duda/captel-logo.png", "CapTel logo", ""]
 ];
 
 const liveBlogOrder = [
@@ -2667,8 +2670,8 @@ function ProductBrandPage({ page }: { page: SitePage }) {
           <div className="mt-9 max-w-[1420px] space-y-[26px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
             <p>{brand.legacy}</p>
             <p>
-              At Audiology Associates of Westchester, our audiology team can help you decide whether {brand.name}
-              technology is the right match for your hearing profile, lifestyle, and communication needs.
+              At Audiology Associates of Westchester, our audiology team can help you decide whether{" "}
+              {brand.name} technology is the right match for your hearing profile, lifestyle, and communication needs.
             </p>
           </div>
           <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Groundbreaking {brand.name} Technology</h2>
@@ -4732,24 +4735,50 @@ function LiveBrandsPage({ page }: { page: SitePage }) {
         <div className="mx-auto max-w-[1180px] px-5">
           <h1 className="text-[38px] font-black text-[#333]">{page.h1}</h1>
           <div className="mt-10 grid gap-x-12 gap-y-10 text-left md:grid-cols-2">
-            {hearingAidBrands.map(([title, text, src, alt]) => (
-              <article className="border-b border-[#d3d3d3] pb-8" key={title}>
-                <div className="flex min-h-[86px] flex-wrap items-center gap-5">
-                  <Image alt={alt} className="max-h-[72px] w-auto object-contain" height={120} src={src} width={270} />
-                  {title === "Signia & Siemens Hearing Aids" ? (
-                    <Image
-                      alt="Siemens logo"
-                      className="max-h-[52px] w-auto object-contain"
-                      height={80}
-                      src="/assets/duda/siemenslogo-250x40.png"
-                      width={250}
-                    />
+            {hearingAidBrands.map(([title, text, src, alt, href]) => {
+              // Brands we have a page for get a clickable logo/title plus an
+              // explicit text link. The four we carry without a page of their
+              // own (Unitron, Rexton, CaptionCall, CapTel) render unlinked
+              // rather than pointing somewhere that would dead-end the visitor.
+              const shortName = title.replace(" Hearing Aids", "");
+              const masthead = (
+                <>
+                  <div className="flex min-h-[86px] flex-wrap items-center gap-5">
+                    <Image alt={alt} className="max-h-[72px] w-auto object-contain" height={120} src={src} width={270} />
+                    {title === "Signia & Siemens Hearing Aids" ? (
+                      <Image
+                        alt="Siemens logo"
+                        className="max-h-[52px] w-auto object-contain"
+                        height={80}
+                        src="/assets/duda/siemenslogo-250x40.png"
+                        width={250}
+                      />
+                    ) : null}
+                  </div>
+                  <h2 className="mt-3 text-[24px] font-black text-[#333]">{title}</h2>
+                </>
+              );
+              return (
+                <article className="border-b border-[#d3d3d3] pb-8" key={title}>
+                  {href ? (
+                    <Link className="focus-ring block transition hover:opacity-75" href={href}>
+                      {masthead}
+                    </Link>
+                  ) : (
+                    masthead
+                  )}
+                  <p className="mt-3 text-[17px] leading-7 text-[#333]">{text}</p>
+                  {href ? (
+                    <Link
+                      className="focus-ring mt-4 inline-block text-[17px] font-bold text-[#005a9c] underline underline-offset-4 hover:text-[#003f7a]"
+                      href={href}
+                    >
+                      Learn More About {shortName}
+                    </Link>
                   ) : null}
-                </div>
-                <h2 className="mt-3 text-[24px] font-black text-[#333]">{title}</h2>
-                <p className="mt-3 text-[17px] leading-7 text-[#333]">{text}</p>
-              </article>
-            ))}
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
