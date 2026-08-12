@@ -311,6 +311,13 @@ const teamMembers = [
     role: "Patient Care Coordinator",
     image: "/assets/duda/hazel-26-edit.jpg",
     alt: "Hazel Icaza"
+  },
+  {
+    name: "Francheska Cotto",
+    pronouns: "(she/her/hers)",
+    role: "Patient Care Coordinator",
+    image: "/assets/team/francheska-cotto.jpg",
+    alt: "Francheska Cotto"
   }
 ];
 
@@ -432,8 +439,7 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       {
         ...teamMembers[6],
         paragraphs: [
-          "Jennifer Tarlton joined Audiology Associates of Westchester in December 2022. She brings a multi-faceted knowledge in both management and administrative support fields. Jennifer provides the practice with financial, insurance administration and personnel management. She is charged with onboarding the new employees and ensuring the staff has what they need to provide the care and attention for all the patients. Jennifer also assists in establishing efficient and effective systems and processes, which result in patient satisfaction, employee and provider engagement and strong financial performance. Jennifer was drawn to a career in healthcare because both of her parents had successful and satisfying careers within the medical and mental healthcare industry. She is dedicated to bringing her knowledge and skills to a practice that truly enhances and makes a difference in its patients' lives.",
-          "Outside of work, Jennifer enjoys travel and is an avid runner."
+          "Jennifer Tarlton joined Audiology Associates of Westchester in December 2022. She brings a multi-faceted knowledge in both management and administrative support fields. Jennifer provides the practice with financial, insurance administration and personnel management. She is charged with onboarding the new employees and ensuring the staff has what they need to provide the care and attention for all the patients. Jennifer also assists in establishing efficient and effective systems and processes, which result in patient satisfaction, employee and provider engagement and strong financial performance. Jennifer was drawn to a career in healthcare because both of her parents had successful and satisfying careers within the medical and mental healthcare industry. She is dedicated to bringing her knowledge and skills to a practice that truly enhances and makes a difference in its patients' lives."
         ]
       }
     ]
@@ -459,6 +465,13 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
         paragraphs: [
           "Hazel Icaza is a Patient Care Coordinator here at Audiology Associates of Westchester who strives to help our patients and meet their needs. With over 6+ years of experience in the healthcare field, she is continuing to grow her knowledge in the counseling and social work field. Currently attending Lehman College, she hopes to be an asset to those who are struggling with hearing loss and help them find the resources they need to meet their wants and be a resource for people in need."
         ]
+      },
+      {
+        ...teamMembers[9],
+        pronouns: "(she/her/hers)",
+        // No bio supplied yet; the renderer maps over paragraphs, so an empty
+        // array simply omits the body copy.
+        paragraphs: []
       }
     ]
   }
