@@ -1381,7 +1381,7 @@ const serviceAreaPages: SitePage[] = [
     faqs: [],
     related: []
   })),
-  ...areaCities.map((city): SitePage => ({
+  ...areaCities.filter((city) => !city.legacyPath).map((city): SitePage => ({
     path: cityPath(city),
     url: `${baseUrl}${cityPath(city)}`,
     title: `${city.name}, ${city.state}`,

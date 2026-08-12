@@ -53,6 +53,7 @@ import {
   areaCounties,
   citiesForCounty,
   cityForPath,
+  cityLinkPath,
   cityPath,
   countyForCity,
   countyForPath,
@@ -1404,7 +1405,7 @@ function countyHeroProps(county: AreaCounty, cities: AreaCity[]): LocalHeroProps
       isFairfield ? "Nearby Harrison office access" : isPutnam ? "Nearby Somers office access" : "Multiple Westchester offices",
       "Hearing tests, hearing aids, tinnitus care"
     ],
-    primaryHref: featuredCity ? cityPath(featuredCity) : "/contact-us",
+    primaryHref: featuredCity ? cityLinkPath(featuredCity) : "/contact-us",
     primaryLabel: featuredCity ? `Explore ${featuredCity.name}` : "Contact Us",
     secondaryHref: "/hearing-testing",
     secondaryLabel: "Schedule hearing testing"
@@ -1721,7 +1722,7 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
           <LiveRule />
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {featured.map((city) => (
-              <Link className="focus-ring block border border-[#d3d3d3] bg-white p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#f7f7f7]" href={cityPath(city)} key={city.slug}>
+              <Link className="focus-ring block border border-[#d3d3d3] bg-white p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#f7f7f7]" href={cityLinkPath(city)} key={city.slug}>
                 {city.name}, {city.state}
               </Link>
             ))}
@@ -1780,7 +1781,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
           <LiveRule />
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {cities.map((city) => (
-              <Link className="focus-ring block bg-[#dbe9f3] p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#d0e3ef]" href={cityPath(city)} key={city.slug}>
+              <Link className="focus-ring block bg-[#dbe9f3] p-5 text-[20px] font-bold text-[#005a9c] underline hover:bg-[#d0e3ef]" href={cityLinkPath(city)} key={city.slug}>
                 {city.name}, {city.state}
               </Link>
             ))}
@@ -1950,7 +1951,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
             {nearbyCommunities.map((name, index) => {
               const linked = areaCities.find((item) => item.name === name);
               return linked ? (
-                <Link className="focus-ring legacy-live-button" href={cityPath(linked)} key={`${city.slug}-${linked.slug}-${index}`}>
+                <Link className="focus-ring legacy-live-button" href={cityLinkPath(linked)} key={`${city.slug}-${linked.slug}-${index}`}>
                   {name}
                 </Link>
               ) : (
@@ -3112,7 +3113,7 @@ function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
 
   const flavor = localFlavorForCity(city);
   const county = countyForCity(city);
-  const serviceAreaPath = cityPath(city);
+  const serviceAreaPath = cityLinkPath(city);
   const officePath = officePathForCity(city);
   const officeLocation = locationForPath(officePath);
 

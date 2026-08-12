@@ -28,6 +28,11 @@ export type AreaCity = {
   localContext: string;
   travelNote: string;
   patientNeeds: string[];
+  // Some towns already had a bespoke page on the live Duda site. Those URLs
+  // hold the search equity, so we do not also publish a generated
+  // /areas-we-serve/* page for them -- two indexable pages chasing the same
+  // local intent split the signal. The generated path 301s to this one.
+  legacyPath?: string;
 };
 
 export type AreaCityLocalFlavor = {
@@ -188,6 +193,7 @@ export const countyLocalFlavorBySlug: Record<string, AreaCountyLocalFlavor> = {
 export const areaCities: AreaCity[] = [
   {
     slug: "harrison",
+    legacyPath: "/harrison-ny",
     name: "Harrison",
     state: "NY",
     countySlug: "westchester-county-ny",
@@ -200,6 +206,7 @@ export const areaCities: AreaCity[] = [
   },
   {
     slug: "somers",
+    legacyPath: "/Somers-NY",
     name: "Somers",
     state: "NY",
     countySlug: "westchester-county-ny",
@@ -212,6 +219,7 @@ export const areaCities: AreaCity[] = [
   },
   {
     slug: "white-plains",
+    legacyPath: "/White-Plains-NY",
     name: "White Plains",
     state: "NY",
     countySlug: "westchester-county-ny",
@@ -224,6 +232,7 @@ export const areaCities: AreaCity[] = [
   },
   {
     slug: "scarsdale",
+    legacyPath: "/Scarsdale-NY",
     name: "Scarsdale",
     state: "NY",
     countySlug: "westchester-county-ny",
@@ -236,6 +245,7 @@ export const areaCities: AreaCity[] = [
   },
   {
     slug: "rye",
+    legacyPath: "/rye-ny",
     name: "Rye",
     state: "NY",
     countySlug: "westchester-county-ny",
@@ -416,6 +426,7 @@ export const areaCities: AreaCity[] = [
   },
   {
     slug: "greenwich",
+    legacyPath: "/greenwich-ct",
     name: "Greenwich",
     state: "CT",
     countySlug: "fairfield-county-ct",
@@ -1051,6 +1062,18 @@ export function countyPath(slug: string) {
 export function cityPath(city: AreaCity) {
   return `${countyPath(city.countySlug)}/${city.slug}`;
 }
+
+// Where a link to this town should actually point. For towns with a legacy
+// page that is the legacy URL; for everyone else it is the generated path.
+export function cityLinkPath(city: AreaCity) {
+  return city.legacyPath ?? cityPath(city);
+}
+
+// Towns whose generated page is not published because a legacy page owns the
+// intent. Consumed by lib/redirects.ts so the old generated URL 301s.
+export const supersededCityPaths = areaCities
+  .filter((city) => Boolean(city.legacyPath))
+  .map((city) => ({ source: cityPath(city), destination: city.legacyPath as string, name: city.name }));
 
 export function countyForPath(path: string) {
   return areaCounties.find((county) => countyPath(county.slug) === path);
