@@ -318,7 +318,7 @@ const conditions: Condition[] = [
       }
     ],
     related: [
-      { label: "Hearing Protection", href: "/how-we-can-help/hearing-protection" },
+      { label: "Hearing Protection", href: "/hearing-protection" },
       { label: "Prevent Hearing Loss", href: "/prevent-hearing-loss" },
       { label: "Understanding Hearing Loss at 4,000 Hz", href: "/understanding-hearing-loss-at-4000-hz" },
       { label: "Hearing Testing", href: "/hearing-testing" }

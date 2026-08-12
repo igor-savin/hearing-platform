@@ -1,12 +1,12 @@
-import { primaryPhone, primaryPhoneHref, pages, siteName, type SitePage } from "@/lib/site";
+import { baseUrl, primaryPhone, primaryPhoneHref, pages, siteName, type SitePage } from "@/lib/site";
+import { redirectedPaths } from "@/lib/redirects";
 
 const priorityPaths = [
   "/",
-  "/services",
+  "/hearing-testing",
   "/how-we-can-help",
   "/areas-we-serve",
   "/contact-us",
-  "/hearing-testing",
   "/hearing-aid-fitting",
   "/tinnitus-therapy",
   "/audiologist-vs-ent-for-hearing-loss",
@@ -51,7 +51,14 @@ const typeLabels: Record<SitePage["type"], string> = {
 };
 
 function publicPages() {
-  return pages.filter((page) => page.type !== "thank-you");
+  // Same rule app/sitemap.ts applies. The guide claims to list "every
+  // crawlable public page", so it must not advertise a path that redirects
+  // or one that canonicalizes somewhere else -- both send readers and
+  // crawlers to a URL we have already decided is not the indexed one.
+  return pages
+    .filter((page) => page.type !== "thank-you")
+    .filter((page) => !redirectedPaths.has(page.path))
+    .filter((page) => page.canonical === `${baseUrl}${page.path === "/" ? "" : page.path}`);
 }
 
 function pageBullet(page: SitePage) {

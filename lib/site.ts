@@ -1208,7 +1208,10 @@ const canonicalOverrides = new Map<string, string>([
   ["/how-we-can-help/hearing-protection", "/hearing-protection"]
 ]);
 
-function canonicalPathFor(path: string) {
+// Exported so navigation and the LLM guide can point at the indexed URL
+// rather than the duplicate. A menu link to a non-canonical path spends
+// link equity on a page we have already told Google to ignore.
+export function canonicalPathFor(path: string) {
   return canonicalOverrides.get(path) ?? path;
 }
 

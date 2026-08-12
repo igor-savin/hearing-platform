@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
+import { canonicalPathFor } from "@/lib/site";
 import { productMenuCards } from "@/lib/products";
 import { primaryPhone, primaryPhoneHref } from "@/lib/site";
 import { providerPath, providerProfiles } from "@/lib/team";
@@ -28,7 +29,7 @@ const navGroups = [
   {
     label: "HOW WE CAN HELP",
     href: howWeCanHelpRootPath,
-    links: helpServices.map((service) => [service.menuTitle.toUpperCase(), helpServicePath(service)])
+    links: helpServices.map((service) => [service.menuTitle.toUpperCase(), canonicalPathFor(helpServicePath(service))])
   },
   {
     label: "HEARING LOSS",
@@ -55,7 +56,9 @@ const navGroups = [
   },
   {
     label: "SERVICES",
-    href: "/services",
+    // /services 301s to /hearing-testing. Linking the redirect from every page
+    // in the site nav wasted crawl budget on all 186 pages.
+    href: "/hearing-testing",
     links: [
       ["HEARING TESTING", "/hearing-testing"],
       ["HEARING AID FITTING", "/hearing-aid-fitting"],

@@ -830,7 +830,7 @@ export const coreServiceDeepDives: Record<string, CoreServiceDeepDive> = {
       "Ask about musician plugs, swim molds, sleep plugs, and occupational options if relevant."
     ],
     related: [
-      { label: "Hearing Protection", href: "/how-we-can-help/hearing-protection" },
+      { label: "Hearing Protection", href: "/hearing-protection" },
       { label: "Hearing Testing", href: "/hearing-testing" }
     ]
   },
