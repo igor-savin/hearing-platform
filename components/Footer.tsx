@@ -78,7 +78,16 @@ export function Footer() {
           ) : null}
         </div>
 
+        {/* Hearing Tips and the Referral Program had zero inbound internal links
+            anywhere on the site -- reachable only via the sitemap. The footer is
+            the right home for evergreen resources like these. */}
         <nav aria-label="Helpful links" className="mt-[34px] flex flex-wrap justify-center gap-x-6 gap-y-2 text-[15px] leading-tight">
+          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-tips">
+            Hearing Tips
+          </Link>
+          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-aid-referral-program">
+            Referral Program
+          </Link>
           <Link className="focus-ring text-[#005a9c] underline" href="/sitemap.xml">
             Sitemap
           </Link>
