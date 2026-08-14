@@ -152,6 +152,7 @@ const products = [
 
 const hearingAidColumns: ProductMenuLink[][] = [
   [
+    ["Oticon Reveal", "The world's first Dual AI hearing aid \u2014 Speech and Context AI deliver crystal-clear speech.", "/products/hearing-aids-by-brand/oticon/oticon-reveal/", "/assets/oticon-reveal.webp"],
     ["Oticon Intent", "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
     ["Phonak Lyric", "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.", "/products/hearing-aids-by-brand/phonak/phonak-lyric/", "/assets/phonak.webp"],
     ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
@@ -899,6 +900,7 @@ function productImage(pageTitle: string) {
   if (title.includes("starkey")) return "/assets/starkey.webp";
   if (title.includes("signia")) return "/assets/signia.webp";
   if (title.includes("eargear") || title.includes("ear gear")) return "/assets/ear-gear.webp";
+  if (title.includes("reveal")) return "/assets/oticon-reveal.webp";
   if (title.includes("zeal")) return "/assets/oticon-zeal.png";
   return "/assets/oticon.webp";
 }
