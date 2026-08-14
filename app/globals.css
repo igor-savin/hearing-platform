@@ -41,12 +41,14 @@
 
   /* Frosted surfaces. These are genuinely translucent because the blur below
      does the work of separating the bar from the content moving under it.
-     Measured on the deployed page: at .78 opacity WITH blur the ghost of the
-     text passing beneath reads 94.8/100 at its darkest; at .96 opacity with
-     blur missing it was 91.7, and at .90 it was 83.1 and plainly legible.
-     More opacity is not a substitute for the blur.
-
-     Original note retained:
+     Measured on the DEPLOYED page, sampling the darkest pixel of body copy
+     ghosting under the sticky header (0-100, higher is cleaner):
+        .90 opacity, blur dropped by the build  83.1  plainly legible
+        .70 opacity, blur working               88.8
+        .80 opacity, blur working               90.4  <- chosen
+     More opacity is not a substitute for the blur: .96 with the blur missing
+     still measured only 91.7, worse than .80 with it. Verify any change to
+     these on the deployed preview, not locally.
 
      The bar/nav fills are HIGH on purpose. At the .72/.70 first chosen, real
      page content bled through the sticky header badly enough that the nav
@@ -55,8 +57,8 @@
      and without content behind it. At .92/.90 that drops below 1.5. Increasing
      --blur-nav does NOT fix this (40px scored 1.80 vs 30px at 1.84) — opacity
      is the only lever that works. Lower these and the defect returns. */
-  --glass-bar: rgba(255, 255, 255, .72);
-  --glass-nav: rgba(255, 255, 255, .70);
+  --glass-bar: rgba(255, 255, 255, .82);
+  --glass-nav: rgba(255, 255, 255, .80);
   --glass-menu: rgba(255, 255, 255, .92);
   --glass-foot: rgba(255, 255, 255, .68);
   --glass-line: rgba(21, 95, 107, .11);
