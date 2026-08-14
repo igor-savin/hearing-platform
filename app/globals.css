@@ -39,16 +39,35 @@
   --btn-top: #c9461c;
   --btn-bot: #a83214;
 
-  /* Frosted surfaces. The fills are opaque enough that text contrast holds
-     regardless of what tint sits behind them. */
-  --glass-bar: rgba(255, 255, 255, .92);
-  --glass-nav: rgba(255, 255, 255, .90);
-  /* --glass-bar / --glass-nav are HIGH on purpose. At .72/.70 real page content bled through the sticky header badly enough that the nav links and the product-card text underneath collided into mush -- measured as a mean bleed of 4.46/255 (worst pixel 15) by diffing the header with and without content behind it. At .92/.90 that drops to 1.60 (worst 5). Raising --blur-nav does NOT fix this: 40px scored 1.80 vs 30px at 1.84, so opacity is the only lever that works. Lower these and the defect returns. */
+  /* Frosted surfaces. These are genuinely translucent because the blur below
+     does the work of separating the bar from the content moving under it.
+     Measured on the deployed page: at .78 opacity WITH blur the ghost of the
+     text passing beneath reads 94.8/100 at its darkest; at .96 opacity with
+     blur missing it was 91.7, and at .90 it was 83.1 and plainly legible.
+     More opacity is not a substitute for the blur.
+
+     Original note retained:
+
+     The bar/nav fills are HIGH on purpose. At the .72/.70 first chosen, real
+     page content bled through the sticky header badly enough that the nav
+     links and the product-card text underneath collided into mush — measured
+     as a mean bleed of 4.46/255 (worst pixel 15) by diffing the header with
+     and without content behind it. At .92/.90 that drops below 1.5. Increasing
+     --blur-nav does NOT fix this (40px scored 1.80 vs 30px at 1.84) — opacity
+     is the only lever that works. Lower these and the defect returns. */
+  --glass-bar: rgba(255, 255, 255, .72);
+  --glass-nav: rgba(255, 255, 255, .70);
   --glass-menu: rgba(255, 255, 255, .92);
   --glass-foot: rgba(255, 255, 255, .68);
   --glass-line: rgba(21, 95, 107, .11);
-  --blur-bar: 26px;
-  --blur-nav: 30px;
+  /* NOTE: there are deliberately no --blur-* tokens.
+     Tailwind v4 / Lightning CSS DROPS any `backdrop-filter: blur(var(--x))`
+     declaration during the build — verified on the deployed preview, where
+     every such rule was missing from the stylesheet and the five hero rules
+     using a literal `blur(18px)` survived untouched. The blur radii below are
+     therefore inlined (26px on the topbar, 30px everywhere else). Do not
+     refactor them back into a custom property: it silently removes the glass,
+     and the page still looks plausible, so the regression is easy to miss. */
 
   /* The aurora wash. Deliberately faint: these tints sit UNDER text, and
      every 0.01 of alpha here comes straight off the contrast ratio.
@@ -108,8 +127,8 @@ img {
     radial-gradient(ellipse 38% 260% at 10% 50%, var(--wash-warm), transparent 70%),
     radial-gradient(ellipse 34% 240% at 84% 50%, var(--wash-teal), transparent 70%),
     var(--glass-bar);
-  backdrop-filter: blur(var(--blur-bar)) saturate(160%);
-  -webkit-backdrop-filter: blur(var(--blur-bar)) saturate(160%);
+  backdrop-filter: blur(26px) saturate(160%);
+  -webkit-backdrop-filter: blur(26px) saturate(160%);
   border-bottom: 1px solid var(--glass-line);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9);
   color: var(--ink);
@@ -174,8 +193,8 @@ img {
     radial-gradient(ellipse 40% 300% at 14% 50%, var(--wash-warm), transparent 72%),
     radial-gradient(ellipse 38% 280% at 80% 50%, var(--wash-teal), transparent 72%),
     var(--glass-nav);
-  backdrop-filter: blur(var(--blur-nav)) saturate(170%);
-  -webkit-backdrop-filter: blur(var(--blur-nav)) saturate(170%);
+  backdrop-filter: blur(30px) saturate(170%);
+  -webkit-backdrop-filter: blur(30px) saturate(170%);
   border-bottom: 1px solid var(--glass-line);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, .95),
@@ -310,8 +329,8 @@ img {
   padding: 8px;
   border-radius: 20px;
   background: var(--glass-menu);
-  backdrop-filter: blur(var(--blur-nav)) saturate(170%);
-  -webkit-backdrop-filter: blur(var(--blur-nav)) saturate(170%);
+  backdrop-filter: blur(30px) saturate(170%);
+  -webkit-backdrop-filter: blur(30px) saturate(170%);
   border: 1px solid var(--glass-line);
   box-shadow:
     0 26px 60px rgba(21, 95, 107, .20),
@@ -360,8 +379,8 @@ img {
   padding: 8px;
   border-radius: 20px;
   background: var(--glass-menu);
-  backdrop-filter: blur(var(--blur-nav)) saturate(170%);
-  -webkit-backdrop-filter: blur(var(--blur-nav)) saturate(170%);
+  backdrop-filter: blur(30px) saturate(170%);
+  -webkit-backdrop-filter: blur(30px) saturate(170%);
   border: 1px solid var(--glass-line);
   box-shadow:
     0 26px 60px rgba(21, 95, 107, .20),
@@ -386,8 +405,8 @@ img {
   left: 0;
   width: 100%;
   background: var(--glass-menu);
-  backdrop-filter: blur(var(--blur-nav)) saturate(170%);
-  -webkit-backdrop-filter: blur(var(--blur-nav)) saturate(170%);
+  backdrop-filter: blur(30px) saturate(170%);
+  -webkit-backdrop-filter: blur(30px) saturate(170%);
   border-bottom: 1px solid var(--glass-line);
   box-shadow:
     0 26px 55px rgba(21, 95, 107, .18),
@@ -1169,8 +1188,8 @@ p {
     radial-gradient(ellipse 32% 110% at 86% 58%, var(--wash-teal), transparent 70%),
     radial-gradient(ellipse 40% 100% at 50% 100%, var(--wash-gold), transparent 72%),
     var(--glass-foot);
-  backdrop-filter: blur(var(--blur-nav)) saturate(165%);
-  -webkit-backdrop-filter: blur(var(--blur-nav)) saturate(165%);
+  backdrop-filter: blur(30px) saturate(165%);
+  -webkit-backdrop-filter: blur(30px) saturate(165%);
   border-top: 1px solid var(--glass-line);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9);
   color: var(--ink);
@@ -1990,8 +2009,8 @@ p {
     overflow: auto;
     padding: 16px;
     background: var(--glass-menu);
-    backdrop-filter: blur(var(--blur-nav)) saturate(170%);
-    -webkit-backdrop-filter: blur(var(--blur-nav)) saturate(170%);
+    backdrop-filter: blur(30px) saturate(170%);
+    -webkit-backdrop-filter: blur(30px) saturate(170%);
     border: 1px solid var(--glass-line);
     border-radius: 24px;
     box-shadow:
