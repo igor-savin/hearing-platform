@@ -609,6 +609,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/products/hearing-aids-by-brand/oticon/oticon-reveal/",
+    "title": "Oticon Reveal | California Hearing Center",
+    "h1": "Oticon Reveal",
+    "desc": "Oticon Reveal runs two AI systems at once. Fit and verified at California Hearing Center in San Mateo and San Carlos. Call 650-342-9449.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/products/hearing-aids-by-brand/oticon/oticon-intent/",
     "title": "Oticon Intent | California Hearing Center",
     "h1": "Oticon Intent",
