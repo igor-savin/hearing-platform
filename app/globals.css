@@ -41,8 +41,9 @@
 
   /* Frosted surfaces. The fills are opaque enough that text contrast holds
      regardless of what tint sits behind them. */
-  --glass-bar: rgba(255, 255, 255, .72);
-  --glass-nav: rgba(255, 255, 255, .70);
+  --glass-bar: rgba(255, 255, 255, .92);
+  --glass-nav: rgba(255, 255, 255, .90);
+  /* --glass-bar / --glass-nav are HIGH on purpose. At .72/.70 real page content bled through the sticky header badly enough that the nav links and the product-card text underneath collided into mush -- measured as a mean bleed of 4.46/255 (worst pixel 15) by diffing the header with and without content behind it. At .92/.90 that drops to 1.60 (worst 5). Raising --blur-nav does NOT fix this: 40px scored 1.80 vs 30px at 1.84, so opacity is the only lever that works. Lower these and the defect returns. */
   --glass-menu: rgba(255, 255, 255, .92);
   --glass-foot: rgba(255, 255, 255, .68);
   --glass-line: rgba(21, 95, 107, .11);
