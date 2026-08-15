@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FOUNDED } from "./data/practice";
 import Script from "next/script";
 import "./globals.css";
 
@@ -59,7 +60,18 @@ const organizationSchema = {
   logo: `${siteUrl}/assets/logo.png`,
   medicalSpecialty: "Audiology",
   priceRange: "$$",
-  foundingDate: "1996",
+  // Google requires address on LocalBusiness. Both offices carry their own
+  // under `department`; this top-level one is the San Mateo main office.
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "88 N. San Mateo Drive",
+    addressLocality: "San Mateo",
+    addressRegion: "CA",
+    postalCode: "94401",
+    addressCountry: "US",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: 37.568109, longitude: -122.327851 },
+  foundingDate: String(FOUNDED.year),
   award: "Inspired by Ida Quality Benchmark — first clinic worldwide to receive the label",
   hasCredential: [
     "California Licensed Audiology and Hearing Aid Dispensing Practice",
