@@ -601,6 +601,47 @@ const rawCorePages: Record<string, PageContent> = {
   image: "/assets/core/hearing-aid-referral-program.svg",
   imageLabel: "Help someone you love hear better",
 },
+  "/hearing-aid-second-opinion/": {
+  kicker: "Free Service",
+  headline: "Free Second Opinion on Your Hearing Aid Quote",
+  intro: [
+    "Hearing aids are one of the largest purchases most people make without ever getting a second opinion. A pair commonly lands somewhere between four and eight thousand dollars, insurance rarely covers all of it, and the decision usually gets made in a single appointment on the strength of a single recommendation. Nobody buys a car that way.",
+    "So we offer this: bring us the quote you were given and a copy of your audiogram, and we will go through both with you. It is free, there is no obligation, and there is no expectation that you buy anything here. If what you were offered is right for your hearing, we will say so and send you back to finish the job.",
+    "It takes about thirty minutes, at either our San Mateo or San Carlos office. Call 650-342-9449 and say you would like a second opinion."
+  ],
+  sections: [
+    ["Two questions, and a quote usually answers neither", "A second opinion is really two separate questions. First: do these devices match your hearing — the shape of your loss, the ears you have, the rooms you actually spend time in? Second: what does the price cover? A quote is normally a make, a model, a technology level, and a number. It tells you almost nothing about either question, which is why a higher price is not reliably a better deal and a lower one is not reliably a bargain."],
+    ["We read your audiogram with you", "Most people leave a hearing test holding a printout they cannot interpret, and are then asked to make a five-figure decision based on it. We will walk through your own chart: where your hearing sits at each pitch, which speech sounds you are likely missing, whether the two ears differ, and whether the pattern is one that calls for a physician rather than a hearing aid. That last point matters — sudden loss, one-sided loss, and loss with certain other symptoms are medical questions first. You should understand your own audiogram before anyone sells you anything."],
+    ["We read the quote line by line", "The number on a hearing aid quote is not the price of the hardware. It bundles a package of care, and packages vary enormously between practices — which is most of why two quotes for the same device can differ by thousands. We check what yours actually includes: how many follow-up visits are covered and for how long, whether the fitting includes [real-ear verification](/hearing-aid-fitting/), the length of the trial period and the restocking fee if you return them, the manufacturer warranty and whether loss-and-damage cover is included, whether remote adjustments are supported, and what happens in year four when the devices need service. Then we tell you where it sits against what the same package costs on the Peninsula."],
+    ["The question almost nobody asks: was it verified?", "Real-ear measurement is the step where a clinician puts a thin probe microphone in your ear canal and measures what the hearing aid is actually delivering to your eardrum, then adjusts it to your prescription. Without it, the device is running the manufacturer's guess at your ear rather than a measurement of it — and ear canals differ enough that the guess is often several decibels out. It is the single strongest predictor of whether you end up happy. If your quote does not mention verification, that is worth asking about before you sign, wherever you buy."],
+    ["What to bring", "Three things, and none of them are mandatory. Your quote, invoice, or purchase agreement — whatever paperwork you were handed. Your audiogram, if you were given a copy; if not, tell us where you were tested and we can request the records, or simply repeat the test here. And your current hearing aids, if you already wear a pair, so we can see what you have been living with."],
+    ["Why we do this for free", "Partly because we think it is how the purchase should work. Mostly because we would rather be the practice that told someone the truth about a quote from down the road than the one that quietly outbid it. Some people we see this way go back and buy elsewhere. Some come back years later. We are fine with both."],
+    ["If you have already bought them", "It is often not too late. Hearing aid purchases in California come with a written cancellation period, and the length of yours will be stated on your purchase agreement — bring it and we will read it with you. Even past the return window, a device that is not verified to your prescription can usually be reprogrammed rather than replaced, which costs a great deal less than starting over."]
+  ],
+  bulletLinks: [
+    ["Book a free second opinion", "/contact/"],
+    ["What a hearing test actually measures", "/hearing-testing/"],
+    ["How fitting and verification work", "/hearing-aid-fitting/"],
+    ["What hearing aids cost on the Peninsula", "/hearing-aid-cost/"],
+    ["Insurance and coverage", "/resources/insurance/"],
+    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"]
+  ],
+  takeaways: [
+    "Bring your quote and your audiogram and we will go through both with you, free, with no obligation to buy anything here.",
+    "We check two things a quote does not tell you: whether the devices fit your hearing, and what the price actually covers in follow-up care, verification, trial period, and warranty.",
+    "If the offer you have is a good one, we will tell you so \\u2014 that is the point of a second opinion."
+  ],
+  faqs: [
+    ["Do I have to buy hearing aids from you?", "No, and we will not ask. The point of a second opinion is that it is independent. If the quote you have is right for your hearing and fairly priced, the useful thing we can do is confirm that and let you go finish the purchase where you started."],
+    ["What if I do not have a copy of my audiogram?", "That is common. Tell us where you were tested and we can request the records for you, or we can simply repeat the test here so you have your own copy either way. You are entitled to your results."],
+    ["Are you just going to tell me my quote is too expensive?", "Not necessarily. Price differences between practices are usually differences in the care package rather than markup on the same thing, and sometimes a higher quote is the better value because it includes verification and years of follow-up that a cheaper one does not. What we can tell you is exactly what you are paying for."],
+    ["How long does the appointment take?", "About thirty minutes. If you want a full hearing evaluation as well, allow an hour."],
+    ["Can you help if I bought hearing aids somewhere that has closed?", "Usually, yes. We service and reprogram most major brands regardless of where they were purchased. Bring the devices and any paperwork you still have."]
+  ],
+  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  imageLabel: "Bring your quote and your audiogram",
+  imageAlt: "Audiologist reviewing a hearing aid quote with a patient"
+},
   "/hearing-testing/": {
   kicker: "Diagnostic Hearing Evaluations",
   headline: "Hearing Testing in San Mateo & San Carlos",

@@ -7,6 +7,43 @@
 export const googleReviewsUrl =
   "https://www.google.com/maps/place/California+Hearing+Center/@37.5681951,-122.4039485,13z/data=!4m8!3m7!1s0x808f9e742810d86f:0xdf763ec3be019083!8m2!3d37.5681951!4d-122.3277308!9m1!1b1!16s%2Fg%2F1thk8_03";
 
+/**
+ * The two offices keep separate Google Business Profiles, so they carry separate
+ * ratings and counts. These seed values were verified against the live listings
+ * on 15 Aug 2026 and are what the site renders when no GOOGLE_PLACES_API_KEY is
+ * configured, or when a lookup fails — see app/lib/reviewStats.ts.
+ *
+ * `query` is what we hand to the Places text search; `expectStreetNumber` is the
+ * guard that rejects a result which resolved to the wrong business.
+ */
+export type OfficeReviewSeed = {
+  key: string;
+  label: string;
+  query: string;
+  expectStreetNumber: string;
+  rating: number;
+  count: number;
+};
+
+export const officeReviewSeeds: OfficeReviewSeed[] = [
+  {
+    key: "san-mateo",
+    label: "San Mateo",
+    query: "California Hearing Center, 88 N San Mateo Drive, San Mateo, CA 94401",
+    expectStreetNumber: "88",
+    rating: 5.0,
+    count: 189,
+  },
+  {
+    key: "san-carlos",
+    label: "San Carlos",
+    query: "California Hearing Center, 1008 Laurel Street, San Carlos, CA 94070",
+    expectStreetNumber: "1008",
+    rating: 5.0,
+    count: 14,
+  },
+];
+
 export type Review = {
   name: string;
   when: string;   // e.g. "a month ago", "2 years ago"
