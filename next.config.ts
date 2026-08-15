@@ -330,6 +330,22 @@ const blogRedirects = [
       { source: "/your-hearing-what-you-dont-know/", destination: "/the-blog/", permanent: true }
 ];
 
+// WordPress archive URLs. These never appeared in any sitemap, which is why the
+// earlier redirect pass missed them — but they are real, indexed pages on the
+// live site, linked from every post: four category archives, 267 tag archives,
+// five author archives, and the paginated blog. Without these they all 404 the
+// day the domain moves.
+const wordpressArchiveRedirects = [
+  { source: "/category/:slug*", destination: "/the-blog/", permanent: true },
+  { source: "/tag/:slug*", destination: "/the-blog/", permanent: true },
+  { source: "/author/:slug*", destination: "/about-us/", permanent: true },
+  { source: "/the-blog/page/:page*", destination: "/the-blog/", permanent: true },
+  { source: "/page/:page*", destination: "/", permanent: true },
+  { source: "/feed/", destination: "/the-blog/", permanent: true },
+  { source: "/comments/feed/", destination: "/the-blog/", permanent: true },
+  { source: "/:path*/feed/", destination: "/the-blog/", permanent: true },
+];
+
 const nextConfig: NextConfig = {
   // Serve every URL WITH a trailing slash, matching the migrated WordPress URLs,
   // the sitemap, the per-page canonicals, and all internal links. Without this,
@@ -341,13 +357,30 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
   async redirects() {
-    return blogRedirects;
+    return [...blogRedirects, ...wordpressArchiveRedirects];
   },
   async headers() {
     // Static assets under /public/assets are content-stable (we rename on change),
     // so cache them hard instead of Vercel's default max-age=0, must-revalidate,
     // which forced a revalidation round-trip on every image, on every visit.
     return [
+      {
+        // Keep every *.vercel.app copy of the site out of the index. Until the
+        // domain is cut over, that deployment is fully crawlable AND emits
+        // canonicals pointing at calhearing.com — which is still the WordPress
+        // site. Google is being handed two different pages claiming the same
+        // URL. X-Robots-Tag is better than a robots.txt Disallow here: a
+        // disallowed page can still be indexed from inbound links, because the
+        // crawler never fetches it and so never sees the noindex.
+        //
+        // Matched positively on vercel.app rather than negatively on the
+        // production host, deliberately. If this rule ever stops matching, the
+        // failure is "preview gets indexed again" — not "calhearing.com gets
+        // noindexed", which is what a `missing`-based rule would risk.
+        source: "/:path*",
+        has: [{ type: "host", value: "(.*\\.)?vercel\\.app" }],
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow" }],
+      },
       {
         source: "/assets/:path*",
         headers: [
