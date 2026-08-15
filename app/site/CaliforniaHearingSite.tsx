@@ -4,6 +4,7 @@ import { blogPosts } from "../data/blogPosts";
 import { blogPhotos } from "../data/blogPhotos";
 import { pageVideos } from "../data/pageVideos";
 import { corePages } from "../data/corePages";
+import { YEARS_IN_PRACTICE, YEARS_DARCY, YEARS_LAIS } from "../data/practice";
 import { corePhotos } from "../data/corePhotos";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
@@ -187,12 +188,12 @@ const featuredRoutes = [
 // are drawn from each person's own bio page — the strongest trust signal the
 // practice has, and previously only reachable via a bare list of names.
 const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: string; image: string }[] = [
-  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD · Founder", hook: "More than 30 years of evidence-based hearing care on the Peninsula.", image: "/assets/team/thumb/darcy-benson.webp" },
+  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD · Founder", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/darcy-benson.webp" },
   { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/thumb/kira-savin.webp" },
   { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
   { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/jennifer-ratner.webp" },
   { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem.webp" },
-  { slug: "lais-ama", name: "Lais Ama", credential: "B.S., Hearing Instrument Specialist", hook: "17 years of hearing care, beginning in her native Brazil.", image: "/assets/team/thumb/lais-ama.webp" },
+  { slug: "lais-ama", name: "Lais Ama", credential: "B.S., Hearing Instrument Specialist", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama.webp" },
   { slug: "sierra-melendez", name: "Sierra Melendez", credential: "Doctor of Audiology Extern", hook: "Final-year AuD candidate at the University of the Pacific.", image: "/assets/team/thumb/sierra-melendez.webp" },
   { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari.webp" },
 ];
@@ -506,7 +507,7 @@ const bespokeContent: Record<string, PageContent> = {
     kicker: "About Us",
     headline: "Audiology care built around listening",
     intro: [
-      "California Hearing Center has helped Bay Area patients improve life through better hearing for more than 30 years. The practice combines experienced audiologists, modern hearing technology, and a warm person-centered approach.",
+      `California Hearing Center has helped Bay Area patients improve life through better hearing for ${YEARS_IN_PRACTICE} years. The practice combines experienced audiologists, modern hearing technology, and a warm person-centered approach.`,
       "The team believes hearing care should begin with the patient’s story: where communication breaks down, what relationships matter most, and what kind of support will make treatment successful.",
       "That philosophy shapes every hearing test, fitting, tinnitus visit, repair appointment, and follow-up conversation."
     ],
@@ -515,7 +516,7 @@ const bespokeContent: Record<string, PageContent> = {
       ["Person-centered approach", "Care is guided by what matters to the patient, not only what appears on an audiogram."],
       ["Local commitment", "With San Mateo and San Carlos offices, the practice serves patients across the Peninsula and Bay Area."]
     ],
-    bullets: ["Over 30 years", "Doctor-level care", "Ida-inspired values", "Bay Area roots", "Modern technology", "Warm follow-up"],
+    bullets: [`${YEARS_IN_PRACTICE} years`, "Doctor-level care", "Ida-inspired values", "Bay Area roots", "Modern technology", "Warm follow-up"],
     image: "/assets/doctor.jpg",
     imageLabel: "Meet the team"
   }
@@ -1675,11 +1676,11 @@ function HomePage() {
           <p className="section-kicker">Combining expertise with personal care</p>
           <h2>We listen because we care.</h2>
         </div>
-        <p><strong>For over 30 years,</strong> California Hearing Center has helped people on the Peninsula improve their lives through better hearing. Whether it is a conversation with family, a meal at a restaurant, a meeting at work, or a walk in the park, hearing well is an essential part of turning up the enjoyment of life.</p>
+        <p><strong>For {YEARS_IN_PRACTICE} years,</strong> California Hearing Center has helped people on the Peninsula improve their lives through better hearing. Whether it is a conversation with family, a meal at a restaurant, a meeting at work, or a walk in the park, hearing well is an essential part of turning up the enjoyment of life.</p>
       </section>
 
       <section className="container trust-bar" aria-label="Why patients choose California Hearing Center">
-        <div className="trust-item"><strong>30+</strong><span>years serving the Peninsula</span></div>
+        <div className="trust-item"><strong>{YEARS_IN_PRACTICE}</strong><span>years serving the Peninsula</span></div>
         <div className="trust-item"><strong>2</strong><span>offices: San Mateo &amp; San Carlos</span></div>
         <div className="trust-item"><strong>1st</strong><span>clinic worldwide with the Ida label</span></div>
         <div className="trust-item"><strong>Doctors</strong><span>of audiology on staff</span></div>
