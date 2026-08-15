@@ -5,6 +5,7 @@ import { blogPhotos } from "../data/blogPhotos";
 import { pageVideos } from "../data/pageVideos";
 import { corePages } from "../data/corePages";
 import { YEARS_IN_PRACTICE, YEARS_DARCY, YEARS_LAIS } from "../data/practice";
+import { ReviewBadge, ReviewPanel } from "./ReviewBadge";
 import { corePhotos } from "../data/corePhotos";
 import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
@@ -88,6 +89,7 @@ const nav: NavItem[] = [
     items: [
       ["Hearing Testing", "/hearing-testing/"],
       ["Hearing Aid Fitting", "/hearing-aid-fitting/"],
+      ["Free Second Opinion", "/hearing-aid-second-opinion/"],
       ["Tinnitus Therapy", "/services/tinnitus-therapy/", [
         ["Tinnitus Knowledge Hub", "/tinnitus/"],
         ["What is Tinnitus?", "/tinnitus/what-is-tinnitus/"],
@@ -1718,6 +1720,9 @@ function HomePage() {
       <section className="container testimonials">
         <p className="section-kicker">What they’re saying</p>
         <h2>In our patients’ words</h2>
+        <div style={{ display: "flex", justifyContent: "center", margin: "0 0 26px" }}>
+          <ReviewPanel />
+        </div>
         <div className="testimonial-grid">
           <blockquote>
             <p>“I feel much more comfortable at work meetings and restaurants — I’m able to hear over the background noises.”</p>
@@ -1840,7 +1845,7 @@ function ReviewsPage() {
             California Hearing Center for careful testing, honest guidance, and hearing care that keeps up with their lives.
           </p>
           <div className="reviews-hero-actions">
-            <span className="reviews-badge"><GoogleG /> <strong>Google reviews</strong></span>
+            <ReviewBadge />
             <a className="button primary" href={googleReviewsUrl} target="_blank" rel="noopener noreferrer">Read &amp; write reviews on Google</a>
             <a className="button ghost" href="/contact/">Book an appointment</a>
           </div>
