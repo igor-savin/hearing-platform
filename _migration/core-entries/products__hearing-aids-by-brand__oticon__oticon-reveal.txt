@@ -1,0 +1,37 @@
+"/products/hearing-aids-by-brand/oticon/oticon-reveal/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Oticon Reveal Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Oticon Reveal is the newest family from Oticon, introduced in August 2026 on a platform the company calls Reveal AI. Its defining idea is that two things happen at once when you listen: you follow the voice in front of you, and you stay oriented to everything else in the room. Reveal runs a separate AI system for each.",
+    "Oticon describes these as Speech AI, which identifies and lifts voices, and Context AI, which preserves the surrounding sounds that tell your brain where you are \u2014 footsteps, room acoustics, a door closing behind you. Running them together is meant to sharpen conversation without flattening the world around it, which is the trade-off many people dislike in aggressively directional hearing aids.",
+    "At California Hearing Center we fit and verify Oticon Reveal at both our San Mateo and San Carlos offices. Whether it is the right choice for you depends on your audiogram, the rooms you spend time in, and what you want back \u2014 not on how recently a platform launched. We will tell you honestly if something else in our range suits you better."
+  ],
+  sections: [
+    ["Two AI systems, running at the same time", "Previous generations used a single neural network to separate speech from noise. Reveal splits that work: Speech AI concentrates on voices while Context AI holds onto the ambient detail your brain uses to build a picture of the space. Oticon's argument is that suppressing the room to chase the voice costs you orientation, and that keeping both is what makes listening feel less effortful over a long evening."],
+    ["What Oticon reports about performance", "According to Oticon, Reveal produces a 60% stronger brain response than Oticon Intent, with feedback management reacting 30% faster and at four times the precision. These are the manufacturer's own measurements under laboratory conditions, not a promise about your living room. We share them because they explain the design intent, not because they predict your result."],
+    ["Rechargeable, connected, and built for a full day", "Reveal comes in a rechargeable miniRITE R style intended to run a full day on a charge. It supports Bluetooth LE Audio with Auracast, so it can receive broadcast audio in venues that offer it, along with hands-free calling and direct smartphone streaming. We set up pairing during your fitting and make sure you can charge, clean, and handle the devices comfortably before you leave."],
+    ["Four technology levels", "Reveal is offered in four tiers. The differences show up mainly in complex, moving environments \u2014 a busy restaurant, a crowded family gathering \u2014 rather than in a quiet one-to-one conversation. We walk through what each tier actually changes for the situations you described in your consultation, so you are choosing against your own life rather than a feature grid."],
+    ["Verified to your prescription", "No platform performs on specification alone. We use [real-ear measurement during the fitting](/hearing-aid-fitting/) to confirm the sound reaching your eardrum matches your prescribed targets across pitches. This step shapes your day-to-day experience more than any headline feature, and we schedule follow-up visits to fine-tune as your brain adapts to hearing more again."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Compare Oticon Reveal and Oticon Intent", "/products/hearing-aids-by-brand/oticon/oticon-intent/"],
+    ["Explore other Oticon models", "/products/hearing-aids-by-brand/oticon/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
+  ],
+  takeaways: [
+    "Oticon Reveal runs Speech AI and Context AI simultaneously, aiming to clarify voices while keeping the ambient cues that orient you in a room.",
+    "Oticon reports a 60% stronger brain response than Oticon Intent; that is a manufacturer measurement, and your own result depends on your hearing and how the devices are programmed.",
+    "It arrives in a rechargeable miniRITE R with Bluetooth LE Audio and Auracast, across four technology levels, fit and verified at our San Mateo and San Carlos offices."
+  ],
+  faqs: [
+    ["How is Oticon Reveal different from Oticon Intent?", "Intent uses 4D user-intent sensors that read your movement and listening behavior to work out what you are trying to hear. Reveal instead runs two AI systems at once, one for speech and one for context. Both are premium platforms, and the better choice depends on your hearing profile and listening environments rather than which launched more recently."],
+    ["Is Oticon Reveal available now?", "Oticon began rolling Reveal out in August 2026, with wider availability through the rest of the year. Call us at 650-342-9449 to check current stock and whether it suits your hearing."],
+    ["Will it work better than my current hearing aids?", "Possibly, but not automatically. A newer platform helps most when it is matched to your audiogram and verified on your ear. If your current devices were never verified with real-ear measurement, that alone may account for more of the difference than the technology does. We can measure both during your appointment."]
+  ],
+  image: "/assets/oticon-reveal.webp",
+  imageLabel: "Oticon Reveal Dual AI platform",
+  imageAlt: "Oticon Reveal rechargeable hearing aid"
+},

@@ -2,7 +2,7 @@
   kicker: "Meet the Team",
   headline: "Darcy Benson, AuD",
   intro: [
-    "Dr. Darcy Benson is the founder of California Hearing Center and believes that \"regaining the ability to hear brings people back into the world around them.\" With over 30 years of experience, she brings a dedication to hearing care that stretches far beyond her practice into her daily interactions with the patients she sees.",
+    "Dr. Darcy Benson is the founder of California Hearing Center and believes that \"regaining the ability to hear brings people back into the world around them.\" With {{yearsDarcy}} years of experience, she brings a dedication to hearing care that stretches far beyond her practice into her daily interactions with the patients she sees.",
     "Dr. Benson's focus is on providing evidence-based practice in a patient-centered care environment. She is passionate about her work and about improving the lives of her patients through better hearing."
   ],
   sections: [
@@ -11,13 +11,13 @@
   ],
   bullets: [
     "Founder of California Hearing Center",
-    "Over 30 years of experience in hearing care",
+    "{{yearsDarcy}} years of experience in hearing care",
     "Board certified by the American Board of Audiology",
     "Ida Institute advisory board member",
     "Evidence-based, patient-centered care"
   ],
   takeaways: [
-    "Founder of the practice with 30+ years of experience and a clinical doctorate earned in 2006.",
+    "Founder of the practice with {{yearsDarcy}} years of experience and a clinical doctorate earned in 2006.",
     "Board certified by the American Board of Audiology and licensed in California as a dispensing audiologist."
   ],
   faqs: [

@@ -3,7 +3,7 @@
   headline: "Oticon Hearing Aids on the Peninsula",
   intro: [
     "Founded in 1904, Oticon is a Danish manufacturer that has consistently led the industry with a design philosophy it calls BrainHearing: the idea that the brain, not just the ear, does the work of making sense of sound. Rather than aggressively narrowing focus to one speaker, many Oticon devices aim to deliver a fuller, more open soundscape so the brain has the information it needs to orient and follow conversation.",
-    "That open-sound approach appeals to people who dislike the closed-in feeling some directional systems create, and who want a natural sense of their surroundings. California Hearing Center has partnered with Oticon for over 20 years, and we fit it at our San Mateo and San Carlos offices as one of several strong options.",
+    "That open-sound approach appeals to people who dislike the closed-in feeling some directional systems create, and who want a natural sense of their surroundings. California Hearing Center has partnered with Oticon for {{yearsWithOticon}} years, and we fit it at our San Mateo and San Carlos offices as one of several strong options.",
     "Whether Oticon is right for you depends on your hearing loss and preferences, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [

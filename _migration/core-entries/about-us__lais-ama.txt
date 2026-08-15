@@ -2,7 +2,7 @@
   kicker: "Meet the Team",
   headline: "Lais Ama, B.S., Hearing Instrument Specialist",
   intro: [
-    "Lais Ama, hearing specialist, brings to the practice 17 years of experience in providing hearing care from her native country of Brazil. There she worked with the Pontificia Universidade Catholica in Sao Paolo, providing clinical services and presenting research papers on vestibular rehabilitation and the effects of ototoxic drugs on the auditory system.",
+    "Lais Ama, hearing specialist, brings to the practice {{yearsLais}} years of experience in providing hearing care from her native country of Brazil. There she worked with the Pontificia Universidade Catholica in Sao Paolo, providing clinical services and presenting research papers on vestibular rehabilitation and the effects of ototoxic drugs on the auditory system.",
     "She also completed an internship at the University of Bordeaux, France, where she was involved with clinical audiology services, hearing aids, and vestibular rehabilitation."
   ],
   sections: [
@@ -10,13 +10,13 @@
     ["Focus & approach", "After moving to the U.S., Lais worked for many years in Palo Alto at a large medical clinic providing hearing services to children and adults. She currently lives in Palo Alto."]
   ],
   bullets: [
-    "17 years of experience in hearing care",
+    "{{yearsLais}} years of experience in hearing care",
     "Licensed in California as a hearing aid dispenser",
     "Background in vestibular rehabilitation",
     "Experience serving both children and adults"
   ],
   takeaways: [
-    "Hearing Instrument Specialist with 17 years of experience, originally from Brazil.",
+    "Hearing Instrument Specialist with {{yearsLais}} years of experience, originally from Brazil.",
     "Holds a B.S. in Audiology and Speech Pathology and is licensed in California as a hearing aid dispenser."
   ],
   faqs: [
