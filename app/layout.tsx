@@ -7,9 +7,20 @@ const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").r
 
 // Analytics are OFF until these env vars are set — scope them to the Production
 // environment in Vercel so the preview deployment never sends staging traffic to
-// the live GA4 property. Reuse the same IDs as calhearing.com for continuity:
-//   NEXT_PUBLIC_GTM_ID = GTM-M9CDTZP   (recommended — fires GA4 + everything in the container)
-//   NEXT_PUBLIC_GA4_ID = G-XN799HLKX5  (only if GA4 is NOT already inside GTM — don't set both for one property)
+// the live GA4 property.
+//
+// calhearing.com runs TWO DISTINCT GA4 properties, which is why both vars below
+// are wanted (the usual "don't set both" advice only applies when they would
+// double-count a single property):
+//   NEXT_PUBLIC_GTM_ID = GTM-M9CDTZP   container; carries G-XN799HLKX5 plus the
+//                                      eight conversion tags (Click_to_Call,
+//                                      Contact_Form_Submission, Get_Directions,
+//                                      Schedule_Appointment, Facebook_Click, …)
+//   NEXT_PUBLIC_GA4_ID = G-3KT4C16M4V  the second property, injected directly on
+//                                      the legacy pages and NOT present in the
+//                                      container — set it here or it is lost at
+//                                      cutover.
+// UA-100763869-1 also runs on the legacy site; it is dead (UA sunset) — do not carry it.
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
 

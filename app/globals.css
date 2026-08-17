@@ -1304,6 +1304,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
   min-height: 48px;
   padding: 14px 20px;
   background: transparent;
@@ -1311,6 +1313,24 @@ p {
   color: var(--muted);
   text-align: center;
   font-size: 14px;
+}
+
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-social:hover,
+.footer-social:focus-visible {
+  text-decoration: underline;
+}
+
+.footer-social svg {
+  flex: none;
 }
 
 /* Interactive hearing journey hero */
