@@ -388,6 +388,16 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        // Mirrored legacy WordPress media. These paths exist only to keep the
+        // pre-migration image URLs resolving after the domain moves — Google
+        // Images equity plus whatever external sites hot-link. The filenames are
+        // frozen by definition, so they cache exactly like /assets.
+        source: "/wp-content/uploads/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
         // Baseline security headers. HSTS is already supplied by the host.
         // Deliberately no CSP here: the site embeds YouTube and loads GTM/GA4,
         // so a CSP needs to be authored and tested against those or it will
