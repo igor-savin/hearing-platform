@@ -2061,7 +2061,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <h2 className="footer-heading">San Mateo - Main Office</h2>
             <p>88 N. San Mateo Drive<br />San Mateo, CA 94401<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
             <p className="footer-hours">Mon–Thu 9am–5pm · Fri 9am–3pm</p>
-            <a className="footer-button" href="https://www.google.com/maps/dir//88+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
+            <a className="footer-button" href="https://www.google.com/maps/dir//88+N.+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
             <img src="/assets/google-reviews.webp" alt="See our Patient Reviews" loading="lazy" decoding="async" />
