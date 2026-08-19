@@ -335,6 +335,16 @@ const blogRedirects = [
 // live site, linked from every post: four category archives, 267 tag archives,
 // five author archives, and the paginated blog. Without these they all 404 the
 // day the domain moves.
+// Yoast's sitemap paths. Search Console has /sitemap_index.xml on file and
+// crawlers have the child sitemaps cached, so all four would 404 the moment the
+// domain moves. Next's own sitemap lives at /sitemap.xml.
+const legacySitemapRedirects = [
+  { source: "/sitemap_index.xml", destination: "/sitemap.xml", permanent: true },
+  { source: "/post-sitemap.xml", destination: "/sitemap.xml", permanent: true },
+  { source: "/page-sitemap.xml", destination: "/sitemap.xml", permanent: true },
+  { source: "/author-sitemap.xml", destination: "/sitemap.xml", permanent: true },
+];
+
 const wordpressArchiveRedirects = [
   { source: "/category/:slug*", destination: "/the-blog/", permanent: true },
   { source: "/tag/:slug*", destination: "/the-blog/", permanent: true },
@@ -357,7 +367,7 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
   async redirects() {
-    return [...blogRedirects, ...wordpressArchiveRedirects];
+    return [...blogRedirects, ...wordpressArchiveRedirects, ...legacySitemapRedirects];
   },
   async headers() {
     // Static assets under /public/assets are content-stable (we rename on change),
