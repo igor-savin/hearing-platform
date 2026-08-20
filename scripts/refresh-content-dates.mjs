@@ -97,10 +97,22 @@ function blocksFor(text, key) {
   const hits = [];
   let match;
   while ((match = marker.exec(text))) hits.push({ value: match[1], start: match.index });
-  return hits.map((hit, index) => ({
-    key: hit.value,
-    body: text.slice(hit.start, index + 1 < hits.length ? hits[index + 1].start : text.length)
-  }));
+
+  // The last block would otherwise run to end of file and swallow the helper
+  // functions these modules declare after their data. Editing a helper would
+  // then read as an edit to whichever page happened to be declared last, which
+  // is how `providerForSlug` briefly made Dr. Savin's profile look revised.
+  // Stop at the first top-level declaration after the final marker instead.
+  const tail = /^(export |function |const |type )/m;
+  return hits.map((hit, index) => {
+    let end = index + 1 < hits.length ? hits[index + 1].start : text.length;
+    if (index + 1 === hits.length) {
+      const rest = text.slice(hit.start, end);
+      const stop = rest.search(tail);
+      if (stop > 0) end = hit.start + stop;
+    }
+    return { key: hit.value, body: text.slice(hit.start, end) };
+  });
 }
 
 const hash = (value) => createHash("sha1").update(value).digest("hex");
