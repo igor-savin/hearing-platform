@@ -1,12 +1,17 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { AI_REFERRAL_SOURCE, REFERRAL_SOURCES } from "@/lib/contactForm";
 
 type Status = "idle" | "sending" | "success" | "error";
 
 export function ContactForm({ context = "General contact" }: { context?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
+  // Drives the follow-up question below. Kept in state rather than toggled with
+  // CSS so the prompt field is genuinely absent from the form -- and from the
+  // submission -- for the patients it does not apply to.
+  const [referralSource, setReferralSource] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -19,12 +24,14 @@ export function ContactForm({ context = "General contact" }: { context?: string 
     try {
       const response = await fetch("/api/contact", {
         body: JSON.stringify({
+          aiPrompt: String(data.get("aiPrompt") || ""),
           context,
           email: String(data.get("email") || ""),
           message: String(data.get("message") || ""),
           name: String(data.get("name") || ""),
           pageUrl: window.location.href,
           phone: String(data.get("phone") || ""),
+          referralSource: String(data.get("referralSource") || ""),
           website: String(data.get("website") || "")
         }),
         headers: {
@@ -42,6 +49,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
       }
 
       form.reset();
+      setReferralSource("");
       setStatus("success");
       setMessage(result?.message || "Thank you. Your message has been sent and the practice can follow up with you.");
 
@@ -97,6 +105,36 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         Website
         <input autoComplete="off" name="website" tabIndex={-1} type="text" />
       </label>
+      <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
+        How did you find us? <span className="font-normal text-[#666]">(optional)</span>
+        <select
+          className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+          name="referralSource"
+          onChange={(event) => setReferralSource(event.target.value)}
+          value={referralSource}
+        >
+          <option value="">Prefer not to say</option>
+          {REFERRAL_SOURCES.map((source) => (
+            <option key={source} value={source}>
+              {source}
+            </option>
+          ))}
+        </select>
+      </label>
+      {referralSource === AI_REFERRAL_SOURCE ? (
+        <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
+          What did you ask it? <span className="font-normal text-[#666]">(optional)</span>
+          <input
+            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+            name="aiPrompt"
+            placeholder="e.g. best audiologist near White Plains for tinnitus"
+            type="text"
+          />
+          <span className="text-[13px] font-normal leading-5 text-[#666]">
+            Knowing the exact wording helps us make sure these tools point people to accurate hearing-care information.
+          </span>
+        </label>
+      ) : null}
       <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
         Message
         <textarea

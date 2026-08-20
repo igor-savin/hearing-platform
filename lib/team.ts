@@ -14,6 +14,18 @@ export type ProviderProfile = {
   // main Harrison office. Drives the phone numbers shown on their profile and
   // the workLocation links in their Person schema. Omit for Harrison-only.
   officePaths?: string[];
+  // National Provider Identifier. The canonical public key for a US clinician:
+  // it is what lets a search engine or model tell this Dr. Rivera from every
+  // other one, and ties the profile to the NPPES record those systems already
+  // hold. Emitted as schema.org `identifier`. Left unset until the practice
+  // confirms each number -- an NPI guessed from a name match is worse than
+  // none, because it asserts an identity.
+  npi?: string;
+  // Languages the clinician can actually practise in, beyond English. Recorded
+  // explicitly rather than parsed out of the credential prose so the claim is
+  // deliberate: it tells a patient who needs it that the appointment can happen
+  // in that language.
+  knowsLanguage?: string[];
 };
 
 export const providerRootPath = "/meet-the-team";
@@ -74,6 +86,9 @@ export const providerProfiles: ProviderProfile[] = [
       "Certificate Holder: Tinnitus Management (CH-TM); Auditory Preceptor (CH-AP)",
       "Professional Proficiency in American Sign Language"
     ],
+    // Stated in her bio and credentials: professional proficiency, not a
+    // courtesy phrase.
+    knowsLanguage: ["English", "American Sign Language"],
     affiliations: [
       "American Academy of Audiology - Academy Fellow",
       "American Speech-Language-Hearing Association - Certificate of Clinical Competence"
@@ -216,6 +231,53 @@ export const providerProfiles: ProviderProfile[] = [
 
 export function providerPath(provider: ProviderProfile) {
   return `${providerRootPath}/${provider.slug}`;
+}
+
+// `credentials` is a flat list of display strings with a label prefix. Only the
+// College/Graduate entries were ever read, as alumniOf; the licences, board
+// certifications, certificates, and awards were rendered on the page and then
+// discarded before the schema saw them. Split them here so each lands on the
+// property that actually means it.
+//
+// An entry with no recognised prefix stays out of the structured data rather
+// than being forced into a category: `hasCredential` is a claim about a formal
+// qualification, and "Professional Proficiency in American Sign Language" is
+// not one -- it is carried by `knowsLanguage` instead.
+export type ParsedCredentials = {
+  alumniOf: string[];
+  credentials: { category: "license" | "certification" | "certificate"; name: string }[];
+  awards: string[];
+};
+
+const credentialCategories: { prefix: string; category: "license" | "certification" | "certificate" }[] = [
+  { prefix: "Audiology Licensure:", category: "license" },
+  { prefix: "Board Certification:", category: "certification" },
+  { prefix: "Certification:", category: "certification" },
+  { prefix: "Certificate Holder:", category: "certificate" }
+];
+
+export function parseCredentials(provider: ProviderProfile): ParsedCredentials {
+  const parsed: ParsedCredentials = { alumniOf: [], credentials: [], awards: [] };
+
+  for (const entry of provider.credentials) {
+    if (entry.startsWith("College:") || entry.startsWith("Graduate:")) {
+      parsed.alumniOf.push(entry.replace(/^(College|Graduate):\s*/, ""));
+      continue;
+    }
+    if (entry.startsWith("Awards:")) {
+      // One string can hold several awards separated by semicolons.
+      parsed.awards.push(...entry.replace(/^Awards:\s*/, "").split(";").map((award) => award.trim()).filter(Boolean));
+      continue;
+    }
+    const match = credentialCategories.find((candidate) => entry.startsWith(candidate.prefix));
+    if (!match) continue;
+    const value = entry.slice(match.prefix.length).trim();
+    for (const name of value.split(";").map((item) => item.trim()).filter(Boolean)) {
+      parsed.credentials.push({ category: match.category, name });
+    }
+  }
+
+  return parsed;
 }
 
 // Resolve a provider slug recorded on an article's blogMeta. Returns undefined

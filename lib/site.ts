@@ -106,6 +106,11 @@ export type Location = {
   // Machine-readable opening hours for JSON-LD. `hours` above is the
   // human-facing display string; schema.org needs dayOfWeek/opens/closes.
   hoursSpec?: Array<{ days: string[]; opens: string; closes: string }>;
+  // Verified from the place marker in each office's own directionsUrl below,
+  // not geocoded from the street address: the Harrison office is a suite on the
+  // fourth floor, and address geocoders routinely land on the wrong side of a
+  // building. Offices only -- service areas are not places we occupy.
+  geo?: { latitude: number; longitude: number };
   type: "office" | "service-area";
   nearby: string[];
   directionsUrl?: string;
@@ -213,6 +218,7 @@ export const locations: Location[] = [
     hoursSpec: [
       { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:30", closes: "17:00" }
     ],
+    geo: { latitude: 40.9796062, longitude: -73.7426423 },
     type: "office",
     nearby: ["Rye", "Greenwich", "Scarsdale", "White Plains"],
     directionsUrl:
@@ -241,6 +247,7 @@ export const locations: Location[] = [
       { days: ["Monday", "Tuesday", "Wednesday"], opens: "08:30", closes: "17:00" },
       { days: ["Friday"], opens: "08:30", closes: "14:30" }
     ],
+    geo: { latitude: 41.326271, longitude: -73.688044 },
     type: "office",
     nearby: ["Mahopac", "Putnam Valley", "Mt. Kisco", "Northern Westchester"],
     directionsUrl:

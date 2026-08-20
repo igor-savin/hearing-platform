@@ -34,7 +34,7 @@ for (const name of readdirSync("lib")) {
   );
 }
 
-const { schemaForPage } = require(join(OUT, "lib/schema.js"));
+const { organizationSchema, schemaForPage } = require(join(OUT, "lib/schema.js"));
 const { pages } = require(join(OUT, "lib/site.js"));
 
 const samples = [
@@ -100,6 +100,45 @@ console.log(`distinct dateModified      ${modifiedDates.size}`);
 if (missingModified.length) {
   console.log(`\nmissing dateModified (${missingModified.length}):`);
   for (const path of missingModified.slice(0, 40)) console.log(`  ${path}`);
+}
+
+// Coverage for the entity work: citations on articles, credentials and
+// identifiers on clinicians, and the completed office nodes.
+{
+  const nodesFor = (page) => schemaForPage(page);
+  let withCitation = 0;
+  let citations = 0;
+  for (const page of pages) {
+    const web = nodesFor(page).find((n) => String(n["@type"]).includes("WebPage") || String(n["@type"]).includes("BlogPosting"));
+    if (web?.citation?.length) {
+      withCitation += 1;
+      citations += web.citation.length;
+    }
+  }
+  console.log("\n=== citations ===");
+  console.log(`pages citing sources       ${withCitation}`);
+  console.log(`total citation nodes       ${citations}`);
+
+  console.log("\n=== clinicians ===");
+  for (const page of pages.filter((entry) => entry.type === "provider")) {
+    const person = nodesFor(page).find((n) => n["@type"] === "Person");
+    const creds = (person.hasCredential || []).map((c) => `${c.credentialCategory}`).join(",") || "none";
+    console.log(
+      `  ${person.name}\n    credentials ${person.hasCredential?.length ?? 0} (${creds})  awards ${person.award?.length ?? 0}  alumniOf ${person.alumniOf?.length ?? 0}  languages ${person.knowsLanguage?.join("/") ?? "-"}  NPI ${person.identifier?.value ?? "(unset)"}  specialty ${person.medicalSpecialty ? "yes" : "no"}`
+    );
+  }
+
+  console.log("\n=== offices ===");
+  for (const page of pages.filter((entry) => entry.type === "location")) {
+    const biz = nodesFor(page).find((n) => n["@type"] === "MedicalBusiness");
+    if (!biz) continue;
+    console.log(
+      `  ${biz.name}\n    geo ${biz.geo ? `${biz.geo.latitude},${biz.geo.longitude}` : "(none)"}  offerCatalog ${biz.hasOfferCatalog?.itemListElement?.length ?? 0} services  makesOffer ${biz.makesOffer ? "STILL PRESENT" : "removed"}  containedInPlace ${biz.containedInPlace ? "yes" : "no"}  branchCode ${biz.branchCode ?? "-"}`
+    );
+  }
+
+  const org = organizationSchema();
+  console.log(`\norganization NPI            ${org.identifier?.value ?? "(unset)"}`);
 }
 
 // The reviewer mechanism ships dormant: no article names a clinician yet, so

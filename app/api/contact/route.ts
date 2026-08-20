@@ -1,16 +1,24 @@
 import { NextResponse } from "next/server";
+import { AI_REFERRAL_SOURCE, REFERRAL_SOURCES } from "@/lib/contactForm";
 
 type ContactPayload = {
+  // Optional, self-reported, and deliberately not tied to anything clinical:
+  // how the patient found the practice, and -- when that was an AI assistant --
+  // what they actually typed. Analytics cannot recover either, because a
+  // referral that came through a conversation carries no search terms.
+  aiPrompt?: string;
   context?: string;
   email?: string;
   message?: string;
   name?: string;
   pageUrl?: string;
   phone?: string;
+  referralSource?: string;
   website?: string;
 };
 
 class EmailConfigurationError extends Error {}
+
 
 const DEFAULT_CONTACT_FORM_FROM_EMAIL = "Audiology Associates <admin@hearing-care.org>";
 const DEFAULT_CONTACT_FORM_RECIPIENTS = ["admin@hearing-care.org"];
@@ -54,6 +62,8 @@ function textBody(payload: Required<Omit<ContactPayload, "website">>) {
     `Phone: ${payload.phone}`,
     `Email: ${payload.email || "Not provided"}`,
     `Page: ${payload.pageUrl || "Not provided"}`,
+    `Found us via: ${payload.referralSource || "Not provided"}`,
+    ...(payload.aiPrompt ? [`AI prompt used: ${payload.aiPrompt}`] : []),
     "",
     "Message:",
     payload.message,
@@ -68,7 +78,9 @@ function htmlBody(payload: Required<Omit<ContactPayload, "website">>) {
     ["Name", payload.name],
     ["Phone", payload.phone],
     ["Email", payload.email || "Not provided"],
-    ["Page", payload.pageUrl || "Not provided"]
+    ["Page", payload.pageUrl || "Not provided"],
+    ["Found us via", payload.referralSource || "Not provided"],
+    ...(payload.aiPrompt ? [["AI prompt used", payload.aiPrompt]] : [])
   ];
 
   return `
@@ -146,13 +158,23 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true });
     }
 
+    // Accept only the options the form actually offers. A free-text referral
+    // field on a healthcare form is an invitation to paste things that should
+    // not land in an inbox.
+    const submittedSource = clean(body.referralSource, 120);
+    const referralSource = REFERRAL_SOURCES.includes(submittedSource) ? submittedSource : "";
+
     const payload = {
+      // Only kept when the patient said they came from an AI assistant, so a
+      // stray value on any other path is dropped rather than recorded.
+      aiPrompt: referralSource === AI_REFERRAL_SOURCE ? clean(body.aiPrompt, 500) : "",
       context: clean(body.context, 120) || "Website contact form",
       email: clean(body.email, 254),
       message: clean(body.message, 4000),
       name: clean(body.name, 120),
       pageUrl: clean(body.pageUrl, 500),
-      phone: clean(body.phone, 80)
+      phone: clean(body.phone, 80),
+      referralSource
     };
 
     if (!payload.name || !payload.phone || !payload.message) {

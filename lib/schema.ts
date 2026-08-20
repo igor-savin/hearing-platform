@@ -16,7 +16,7 @@ import {
   countyPath,
   serviceAreasRootPath
 } from "@/lib/serviceAreas";
-import { providerForPath, providerForSlug, providerProfiles, providerPath } from "@/lib/team";
+import { parseCredentials, providerForPath, providerForSlug, providerProfiles, providerPath, type ProviderProfile } from "@/lib/team";
 
 // JSON-LD requires absolute URLs. Local assets are stored as root-relative
 // paths so next/image can optimize them; absolutize them here.
@@ -119,16 +119,41 @@ export function officeBusinessSchema(location: Office) {
     parentOrganization: { "@id": `${baseUrl}/#organization` },
     medicalSpecialty: "Audiology",
     address: postalAddress(location),
+    geo: location.geo
+      ? {
+          "@type": "GeoCoordinates",
+          latitude: location.geo.latitude,
+          longitude: location.geo.longitude
+        }
+      : undefined,
     hasMap: location.directionsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`,
     areaServed: [location.city, ...location.nearby],
-    makesOffer: allServiceLinks.slice(0, 8).map((service) => ({
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: service.title,
-        url: `${baseUrl}${service.path}`
-      }
-    })),
+    logo: logoUrl,
+    branchCode: location.city.toLowerCase(),
+    currenciesAccepted: "USD",
+    // Both offices are in Westchester County. Stated rather than left to be
+    // inferred from the postal code, because the county is how patients and
+    // search engines actually scope "near me" for this practice.
+    containedInPlace: {
+      "@type": "AdministrativeArea",
+      name: "Westchester County, New York"
+    },
+    // Was `makesOffer` truncated at the first eight services, for no reason
+    // anyone recorded. hasOfferCatalog is the property that means "here is
+    // everything this location offers", and it can hold all of them.
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Audiology services at the ${location.city} office`,
+      itemListElement: allServiceLinks.map((service, index) => ({
+        "@type": "Offer",
+        position: index + 1,
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          url: `${baseUrl}${service.path}`
+        }
+      }))
+    },
     potentialAction: {
       "@type": "ReserveAction",
       name: "Request an audiology appointment",
@@ -150,6 +175,14 @@ export function organizationSchema() {
     telephone: primaryPhone,
     address: primaryOffice ? postalAddress(primaryOffice) : undefined,
     medicalSpecialty: "Audiology",
+    // The group NPI. Already implicit in the npino and npidb entries in
+    // entityCitations above; stated here as an identifier so it does not have
+    // to be scraped out of a directory URL to be used.
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "NPI",
+      value: "1801251699"
+    },
     areaServed: ["Westchester County", "White Plains", "Harrison", "Somers", "Scarsdale", "Rye", "Mt. Kisco", "Greenwich"],
     sameAs: entityCitations,
     contactPoint: {
@@ -386,6 +419,18 @@ export function pageSchema(page: SitePage) {
             target: `${baseUrl}/contact-us`
           }
         : undefined,
+    // The sources these articles were written from are already curated in
+    // blogMeta -- FDA, NIDCD, and similar. They were rendered for readers and
+    // then dropped. `citation` is where a parser looks for them, and on health
+    // content the difference between an assertion and a sourced assertion is
+    // most of the value.
+    citation: page.blogMeta?.sources?.length
+      ? page.blogMeta.sources.map((source) => ({
+          "@type": "WebPage",
+          name: source.label,
+          url: source.href
+        }))
+      : undefined,
     primaryImageOfPage: page.heroImage
       ? {
           "@type": "ImageObject",
@@ -479,43 +524,14 @@ function providerWorkLocations(officePaths?: string[]) {
   return officePaths.map((path) => ({ "@id": `${baseUrl}${path}/#localbusiness` }));
 }
 
-export function personSchemas(page: SitePage) {
-  if (page.type === "provider") {
-    const provider = providerForPath(page.path);
-    if (!provider) return [];
-    return [
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": `${baseUrl}${providerPath(provider)}#person`,
-        name: provider.name,
-        jobTitle: provider.role,
-        image: absoluteImageUrl(provider.image),
-        description: page.metaDescription,
-        worksFor: { "@id": `${baseUrl}/#organization` },
-        workLocation: providerWorkLocations(provider.officePaths),
-        hasOccupation: {
-          "@type": "Occupation",
-          name: "Audiologist",
-          occupationalCategory: "29-1181.00"
-        },
-        memberOf: provider.affiliations?.map((affiliation) => ({
-          "@type": "Organization",
-          name: affiliation
-        })),
-        knowsAbout: provider.specialties,
-        alumniOf: provider.credentials
-          .filter((credential) => credential.startsWith("College:") || credential.startsWith("Graduate:"))
-          .map((credential) => ({
-            "@type": "EducationalOrganization",
-            name: credential.replace(/^(College|Graduate):\s*/, "")
-          }))
-      }
-    ];
-  }
+// One builder for both places a Person node is emitted -- the provider's own
+// page and the team roster. They had drifted: the roster omitted the
+// description, memberOf, and alumniOf the profile carried, so the same @id
+// described a different person depending on which page a crawler read first.
+function personSchema(provider: ProviderProfile, description?: string) {
+  const parsed = parseCredentials(provider);
 
-  if (page.type !== "team") return [];
-  return providerProfiles.map((provider) => ({
+  return {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": `${baseUrl}${providerPath(provider)}#person`,
@@ -523,15 +539,54 @@ export function personSchemas(page: SitePage) {
     url: `${baseUrl}${providerPath(provider)}`,
     jobTitle: provider.role,
     image: absoluteImageUrl(provider.image),
+    description,
     worksFor: { "@id": `${baseUrl}/#organization` },
     workLocation: providerWorkLocations(provider.officePaths),
+    // schema.org has no Audiology specialty; Otolaryngologic is the enum value
+    // for ear, nose, and throat care and matches what the practice's
+    // MedicalBusiness nodes already declare.
+    medicalSpecialty: "https://schema.org/Otolaryngologic",
+    identifier: provider.npi
+      ? { "@type": "PropertyValue", propertyID: "NPI", value: provider.npi }
+      : undefined,
     hasOccupation: {
       "@type": "Occupation",
       name: "Audiologist",
       occupationalCategory: "29-1181.00"
     },
-    knowsAbout: provider.specialties
-  }));
+    // Licences, board certifications, and certificates were being rendered on
+    // the page and then thrown away. They are the substance of a clinician's
+    // authority, and the part a health search engine is looking for.
+    hasCredential: parsed.credentials.length
+      ? parsed.credentials.map((credential) => ({
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: credential.category,
+          name: credential.name,
+          ...(credential.category === "license" ? { recognizedBy: { "@type": "GovernmentOrganization", name: "New York State" } } : {})
+        }))
+      : undefined,
+    award: parsed.awards.length ? parsed.awards : undefined,
+    knowsLanguage: provider.knowsLanguage,
+    memberOf: provider.affiliations?.map((affiliation) => ({
+      "@type": "Organization",
+      name: affiliation
+    })),
+    knowsAbout: provider.specialties,
+    alumniOf: parsed.alumniOf.map((name) => ({
+      "@type": "EducationalOrganization",
+      name
+    }))
+  };
+}
+
+export function personSchemas(page: SitePage) {
+  if (page.type === "provider") {
+    const provider = providerForPath(page.path);
+    return provider ? [personSchema(provider, page.metaDescription)] : [];
+  }
+
+  if (page.type !== "team") return [];
+  return providerProfiles.map((provider) => personSchema(provider));
 }
 
 export function schemaForPage(page: SitePage) {
