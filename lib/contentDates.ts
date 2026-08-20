@@ -81,7 +81,7 @@ export const contentDates: Record<string, ContentDate> = {
   "age-related-hearing-loss": { published: "2026-07-21", modified: "2026-07-21" },
   "armonk": { published: "2026-07-06", modified: "2026-07-15" },
   "bedford": { published: "2026-07-06", modified: "2026-07-06" },
-  "caitlin-dold": { published: "2026-07-07", modified: "2026-08-12" },
+  "caitlin-dold": { published: "2026-07-07", modified: "2026-08-20" },
   "causes-and-triggers": { published: "2026-07-07", modified: "2026-07-07" },
   "chappaqua": { published: "2026-07-06", modified: "2026-07-15" },
   "cochlear-implants": { published: "2026-07-07", modified: "2026-07-21" },
