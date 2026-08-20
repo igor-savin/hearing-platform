@@ -64,10 +64,30 @@ export const metadata: Metadata = {
     description: "See how sound becomes connection.",
     images: ["/og.jpg"],
   },
-  // Google Search Console ownership verification. Set GOOGLE_SITE_VERIFICATION
-  // in the environment (Vercel project env var) to emit the meta tag.
-  ...(process.env.GOOGLE_SITE_VERIFICATION
-    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+  // Search-engine ownership verification, carried over from the legacy site.
+  //
+  // calhearing.com is verified in Search Console THREE ways: two DNS TXT
+  // records and one meta tag, all with different tokens — so more than one
+  // account holds verification. The DNS records survive the cutover untouched
+  // and are the durable ones; this meta tag covers whoever verified that way.
+  //   GOOGLE_SITE_VERIFICATION = WBZFrlITOmQaGoGa30a3lDHt6muz2pp_U7k-Pvb8sQ4
+  //
+  // Bing Webmaster Tools is verified by meta tag only — there is no DNS
+  // fallback — so without this the practice loses Bing verification at
+  // cutover. Bing is also what backs several AI answer engines now, which
+  // makes it worth more to a local practice than its search share suggests.
+  //   BING_SITE_VERIFICATION = CEFD93DA081A53DA60065D3F4F62C073
+  ...(process.env.GOOGLE_SITE_VERIFICATION || process.env.BING_SITE_VERIFICATION
+    ? {
+        verification: {
+          ...(process.env.GOOGLE_SITE_VERIFICATION
+            ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+            : {}),
+          ...(process.env.BING_SITE_VERIFICATION
+            ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } }
+            : {}),
+        },
+      }
     : {}),
 };
 
