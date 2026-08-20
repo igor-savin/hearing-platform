@@ -71,6 +71,41 @@ export const metadata: Metadata = {
     : {}),
 };
 
+// Booking runs through Zocdoc; the practice has no first-party scheduler.
+const ZOCDOC_URL =
+  "https://www.zocdoc.com/practice/california-hearing-and-research-institute-inc-72249";
+
+// The services each office actually provides, each pointing at its own page.
+// Modelled on the sister practice's markup, which lists services as Offers so
+// Google can associate them with the location rather than just the domain.
+const SERVICE_OFFERS = [
+  ["Hearing Testing", "/hearing-testing/"],
+  ["Hearing Aid Fitting", "/hearing-aid-fitting/"],
+  ["Hearing Aid Second Opinion", "/hearing-aid-second-opinion/"],
+  ["Tinnitus Therapy", "/services/tinnitus-therapy/"],
+  ["Hyperacusis Treatment", "/hyperacusis/"],
+  ["Hearing Protection", "/services/hearing-protection/"],
+  ["Hearing Aid Repair", "/services/hearing-aid-repair/"],
+  ["Hearing Aids", "/products/hearing-aids/"],
+].map(([name, path]) => ({
+  "@type": "Offer",
+  itemOffered: { "@type": "Service", name, url: `${siteUrl}${path}` },
+}));
+
+const RESERVE_ACTION = {
+  "@type": "ReserveAction",
+  name: "Book an audiology appointment",
+  target: ZOCDOC_URL,
+};
+
+const APPOINTMENTS_CONTACT = {
+  "@type": "ContactPoint",
+  telephone: "+1-650-342-9449",
+  contactType: "appointments",
+  areaServed: "US",
+  availableLanguage: ["English", "Arabic", "Portuguese"],
+};
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": ["MedicalClinic", "LocalBusiness"],
@@ -84,6 +119,9 @@ const organizationSchema = {
   logo: `${siteUrl}/assets/logo.png`,
   medicalSpecialty: "Audiology",
   priceRange: "$$",
+  contactPoint: APPOINTMENTS_CONTACT,
+  makesOffer: SERVICE_OFFERS,
+  potentialAction: RESERVE_ACTION,
   // Google requires address on LocalBusiness. Both offices carry their own
   // under `department`; this top-level one is the San Mateo main office.
   address: {
@@ -117,6 +155,8 @@ const organizationSchema = {
       telephone: "+1-650-342-9449",
       medicalSpecialty: "Audiology",
       priceRange: "$$",
+      makesOffer: SERVICE_OFFERS,
+      potentialAction: RESERVE_ACTION,
       address: {
         "@type": "PostalAddress",
         streetAddress: "88 N. San Mateo Drive",
@@ -141,6 +181,8 @@ const organizationSchema = {
       telephone: "+1-650-342-9449",
       medicalSpecialty: "Audiology",
       priceRange: "$$",
+      makesOffer: SERVICE_OFFERS,
+      potentialAction: RESERVE_ACTION,
       address: {
         "@type": "PostalAddress",
         streetAddress: "1008 Laurel Street",
@@ -188,6 +230,11 @@ const websiteSchema = {
   url: siteUrl,
   name: "California Hearing Center",
   publisher: { "@id": `${siteUrl}/#organization` },
+  potentialAction: {
+    "@type": "ContactAction",
+    name: "Request a hearing appointment",
+    target: `${siteUrl}/contact/`,
+  },
 };
 
 export default function RootLayout({
