@@ -12,7 +12,7 @@ import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
 import { LeadForm } from "./LeadForm";
 
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.calhearing.com").replace(/\/$/, "");
 
 type MenuLink = [label: string, href: string, children?: [label: string, href: string][]];
 type ProductMenuLink = [title: string, text: string, href: string, image: string];

@@ -3,7 +3,7 @@ import { crawledPages } from "./data/crawledPages";
 import { redirectedPaths } from "./data/redirectedPaths";
 import { contentDates } from "./data/contentDates";
 
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.calhearing.com").replace(/\/$/, "");
 
 // Non-content / test / placeholder pages kept out of the sitemap.
 const EXCLUDE = new Set<string>([

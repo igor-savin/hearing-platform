@@ -3,7 +3,16 @@ import { FOUNDED } from "./data/practice";
 import Script from "next/script";
 import "./globals.css";
 
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
+// Canonical host is www, matching the sister practice's site so both properties
+// are configured the same way. The legacy WordPress site was non-www, so every
+// currently-indexed URL will take one 301 to its www equivalent at cutover —
+// a normal canonical consolidation, but it lands at the same moment as the
+// platform move, which is worth remembering if rankings wobble and you are
+// trying to attribute it.
+//
+// Vercel serves that redirect once www is set as the primary domain; nothing in
+// the app performs it.
+const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.calhearing.com").replace(/\/$/, "");
 
 // Analytics are OFF until these env vars are set — scope them to the Production
 // environment in Vercel so the preview deployment never sends staging traffic to
