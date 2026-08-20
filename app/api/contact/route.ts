@@ -27,8 +27,18 @@ type ContactPayload = {
 
 class EmailConfigurationError extends Error {}
 
+// Sending identity. hearing-care.org is the domain verified in Resend (it
+// carries the resend._domainkey DKIM record), which is why mail leaves from
+// there rather than from calhearing.com — that domain is not set up in Resend.
 const DEFAULT_CONTACT_FORM_FROM_EMAIL = "California Hearing Center <admin@hearing-care.org>";
-const DEFAULT_CONTACT_FORM_RECIPIENTS = ["igorsavin@gmail.com"];
+
+// Where enquiries land. The practice inbox, already published on the careers
+// page, so it is a monitored address rather than a new one. Recipients need no
+// setup in Resend — only the *sending* domain is verified there.
+//
+// CONTACT_FORM_TO_EMAIL overrides this and accepts a comma-separated list, so
+// adding a second reader is an environment change, not a deploy.
+const DEFAULT_CONTACT_FORM_RECIPIENTS = ["infochc@hearing-care.org"];
 const DEFAULT_CONTACT_FORM_BCC_RECIPIENTS: string[] = [];
 
 function clean(value: unknown, maxLength = 1000) {
