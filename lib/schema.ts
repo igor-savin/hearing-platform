@@ -16,7 +16,7 @@ import {
   countyPath,
   serviceAreasRootPath
 } from "@/lib/serviceAreas";
-import { providerForPath, providerProfiles, providerPath } from "@/lib/team";
+import { providerForPath, providerForSlug, providerProfiles, providerPath } from "@/lib/team";
 
 // JSON-LD requires absolute URLs. Local assets are stored as root-relative
 // paths so next/image can optimize them; absolutize them here.
@@ -303,10 +303,67 @@ function productBreadcrumbItems(page: SitePage) {
   return items;
 }
 
+// Pages that describe hearing, hearing loss, tinnitus, or the appointments that
+// address them are health content, and schema.org has a type that says so.
+// MedicalWebPage tells a parser that the page is about a medical subject, who
+// it is written for, and -- once reviewers are assigned -- who checked it.
+//
+// The list below is an opt-out rather than an opt-in because nearly everything
+// on this site is clinical. These are the pages that are not: marking a Pride
+// Month post as otolaryngology content would be false, and false precision is
+// worse for a health site than no markup.
+const nonClinicalPaths = new Set([
+  "/celebrating-pride-month-embracing-inclusivity-and-compassion",
+  "/careers",
+  "/privacy",
+  "/patient-forms",
+  "/reviews",
+  "/hearing-aid-referral-program",
+  "/california-hearing-center",
+  "/instructional-videos"
+]);
+
+const clinicalPageTypes = new Set<SitePage["type"]>(["blog-post", "educational", "service", "hearing-aids"]);
+
+function isClinicalPage(page: SitePage) {
+  return clinicalPageTypes.has(page.type) && !nonClinicalPaths.has(page.path);
+}
+
+// schema.org has no `Audiology` MedicalSpecialty. Otolaryngologic is the
+// accepted enum value for ear, nose, and throat care and is what the two
+// MedicalBusiness nodes already imply.
+const clinicalSpecialty = "https://schema.org/Otolaryngologic";
+
+// No `aspect`. MedicalWebPage.aspect names the part of a condition a page
+// covers -- Symptoms, Diagnosis, Treatment, Prevention -- but the labels the
+// content modules record are editorial framings ("Buying lens", "Clinic note",
+// "Real-life scenario"), not clinical ones. Only a handful would map without
+// inventing a claim about what the page is, so none are mapped. If an aspect
+// is wanted later, add it as its own reviewed field on the page rather than
+// inferring it from an editorial label.
+
+// Resolve an optional provider slug on blogMeta to that clinician's Person
+// node. Until reviewers are assigned (see blogMeta.authorSlug in lib/site.ts)
+// every article returns undefined here and falls back to the organization,
+// which is the behaviour the site has today.
+function providerRef(slug?: string) {
+  if (!slug) return undefined;
+  const provider = providerForSlug(slug);
+  if (!provider) return undefined;
+  return { "@id": `${baseUrl}${providerPath(provider)}#person` };
+}
+
 export function pageSchema(page: SitePage) {
+  const clinical = isClinicalPage(page);
+  const author = providerRef(page.blogMeta?.authorSlug);
+  const reviewer = providerRef(page.blogMeta?.reviewedBySlug);
+
+  const type: string[] = [page.type === "blog-post" ? "BlogPosting" : "WebPage"];
+  if (clinical) type.push("MedicalWebPage");
+
   const base = {
     "@context": "https://schema.org",
-    "@type": page.type === "blog-post" ? "BlogPosting" : "WebPage",
+    "@type": type.length === 1 ? type[0] : type,
     "@id": `${page.canonical}#webpage`,
     url: page.canonical,
     name: page.h1,
@@ -314,6 +371,13 @@ export function pageSchema(page: SitePage) {
     description: page.metaDescription,
     isPartOf: { "@id": `${baseUrl}/#website` },
     about: { "@id": `${baseUrl}/#organization` },
+    // Every page type carries its date now, not just articles. Service,
+    // location, product, provider, and service-area pages previously emitted
+    // no date at all, so a crawler had no way to tell a page revised last week
+    // from one untouched for two years.
+    dateModified: page.lastModified,
+    datePublished: page.datePublished,
+    publisher: { "@id": `${baseUrl}/#organization` },
     potentialAction:
       page.type === "service" || page.type === "location" || page.type === "service-area"
         ? {
@@ -331,17 +395,27 @@ export function pageSchema(page: SitePage) {
       : undefined
   };
 
+  const medical = clinical
+    ? {
+        specialty: clinicalSpecialty,
+        medicalAudience: { "@type": "MedicalAudience", audienceType: "Patient" },
+        // reviewedBy and lastReviewed are emitted together or not at all. A
+        // review date with nobody attached to it asserts a process the page
+        // cannot evidence.
+        reviewedBy: reviewer,
+        lastReviewed: reviewer ? page.lastModified : undefined
+      }
+    : {};
+
   if (page.type === "blog-post") {
     return {
       ...base,
-      author: { "@id": `${baseUrl}/#organization` },
-      publisher: { "@id": `${baseUrl}/#organization` },
-      dateModified: page.lastModified,
-      datePublished: page.lastModified
+      ...medical,
+      author: author || { "@id": `${baseUrl}/#organization` }
     };
   }
 
-  return base;
+  return { ...base, ...medical };
 }
 
 export function faqSchema(page: SitePage) {

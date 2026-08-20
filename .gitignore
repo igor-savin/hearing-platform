@@ -16,3 +16,7 @@ coverage
 firebase-debug.log
 .vercel
 .git-ssh
+
+# Scratch output from scripts/verify-schema.mjs and the workspace mount, which
+# cannot delete files.
+_to_delete/

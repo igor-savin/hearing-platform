@@ -218,6 +218,13 @@ export function providerPath(provider: ProviderProfile) {
   return `${providerRootPath}/${provider.slug}`;
 }
 
+// Resolve a provider slug recorded on an article's blogMeta. Returns undefined
+// for an unknown slug so a typo degrades to organization-level attribution
+// rather than throwing during the build.
+export function providerForSlug(slug: string) {
+  return providerProfiles.find((provider) => provider.slug === slug);
+}
+
 export function providerForPath(path: string) {
   return providerProfiles.find((provider) => providerPath(provider) === path);
 }

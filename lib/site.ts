@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import crawl from "@/data/crawl.json";
 import { buildNextBlogPosts } from "@/lib/blogNext";
 import { buildSeedBlogPosts } from "@/lib/blogSeed";
+import { contentDateFor, contentDates } from "@/lib/contentDates";
 import { comparisonPages } from "@/lib/conversion";
 import { hearingLossPages } from "@/lib/hearingLoss";
 import { reviewsPage } from "@/lib/reviews";
@@ -120,6 +121,13 @@ export type SitePage = {
   h1: string;
   type: SitePageType;
   lastModified?: string;
+  // First publication, kept distinct from lastModified. The two used to carry
+  // the same value on every article, which told crawlers that nothing on the
+  // site had ever been revised. Absent for pages carried over from the
+  // pre-2026 site, whose original publication date is not recoverable here;
+  // omitting it is more honest than claiming the date this repo happened to
+  // start.
+  datePublished?: string;
   canonical: string;
   heroImage?: CrawlImage;
   images: CrawlImage[];
@@ -131,6 +139,18 @@ export type SitePage = {
     frame: string;
     byline: string;
     reviewedBy: string;
+    // Provider slugs from lib/team.ts. When set, the article is attributed to
+    // that named clinician in the rendered byline and in the JSON-LD `author`
+    // and `reviewedBy`. When absent -- which is currently every article --
+    // attribution falls back to the organization and the free-text `byline` /
+    // `reviewedBy` strings above, exactly as before.
+    //
+    // These are deliberately separate from those strings rather than parsed
+    // out of them: naming a clinician as the reviewer of medical content is a
+    // factual claim about who reviewed what, so it should be set explicitly,
+    // per article, by someone who knows it is true.
+    authorSlug?: string;
+    reviewedBySlug?: string;
     readTime: string;
     articleType: string;
     pullQuote: string;
@@ -1428,8 +1448,36 @@ const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => (
   related: []
 }));
 
+// Each content module used to hard-code one date for its whole group: all 25
+// service pages shared "2026-07-07", all 16 product pages "2026-06-07". A page
+// could not report a date of its own, so editing one page moved the date on
+// every page beside it -- or, more often, on none of them.
+//
+// lib/contentDates.ts carries a per-page date derived from git history
+// (regenerate with `npm run dates`). Applying it here, at the one point every
+// page passes through, gives all 182 pages real dates without a date field
+// having to be threaded through nine content modules.
+//
+// The group constants stay as the fallback: a page the registry does not know
+// about is no worse off than it was.
+function withContentDates(page: SitePage): SitePage {
+  // Pages recovered from the pre-2026 crawl already carry a true modification
+  // date in `lastModifiedByPath`. The registry is keyed by slug for some
+  // modules, so a legacy path could otherwise pick up the date of an unrelated
+  // page that happens to end in the same segment.
+  const dates = lastModifiedByPath.has(page.path) ? contentDates[page.path] : contentDateFor(page.path);
+
+  if (!dates) return page;
+  return {
+    ...page,
+    lastModified: dates.modified || page.lastModified,
+    // Only claim a publication date the registry actually established.
+    datePublished: dates.published ?? page.datePublished
+  };
+}
+
 export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
-  const withFaqs: SitePage = { ...page, faqs: [] };
+  const withFaqs: SitePage = { ...withContentDates(page), faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
   return withFaqs;

@@ -67,7 +67,21 @@ import {
   type AreaCity,
   type AreaCityLocalFlavor
 } from "@/lib/serviceAreas";
-import { providerForName, providerForPath, providerPath, providerProfiles, providerRootPath, type ProviderProfile } from "@/lib/team";
+import { providerForName, providerForPath, providerForSlug, providerPath, providerProfiles, providerRootPath, type ProviderProfile } from "@/lib/team";
+
+// An article's byline and reviewer are free text today. When an article records
+// a provider slug on its blogMeta, the clinician's name is shown instead and
+// links to their profile, matching the Person node the JSON-LD emits. An
+// unknown slug falls back to the text, so a typo cannot blank out a credit.
+function ProviderCredit({ fallback, slug }: { fallback: string; slug?: string }) {
+  const provider = slug ? providerForSlug(slug) : undefined;
+  if (!provider) return <>{fallback}</>;
+  return (
+    <Link className="underline underline-offset-2" href={providerPath(provider)}>
+      {provider.name}
+    </Link>
+  );
+}
 
 const patientForms = [
   {
@@ -3389,10 +3403,12 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                   <span className="font-black text-[#262626]">Read time:</span> {meta?.readTime || "5 min read"}
                 </p>
                 <p>
-                  <span className="font-black text-[#262626]">Byline:</span> {meta?.byline || siteName}
+                  <span className="font-black text-[#262626]">Byline:</span>{" "}
+                  <ProviderCredit fallback={meta?.byline || siteName} slug={meta?.authorSlug} />
                 </p>
                 <p>
-                  <span className="font-black text-[#262626]">Reviewed by:</span> {meta?.reviewedBy || `${siteName} team`}
+                  <span className="font-black text-[#262626]">Reviewed by:</span>{" "}
+                  <ProviderCredit fallback={meta?.reviewedBy || `${siteName} team`} slug={meta?.reviewedBySlug} />
                 </p>
               </div>
             </div>

@@ -9,12 +9,14 @@
     "dev": "next dev",
     "build": "node scripts/check-admin-allowlist.mjs && next build --webpack",
     "start": "next start",
-    "lint": "tsc --noEmit && node scripts/check-admin-allowlist.mjs",
+    "lint": "tsc --noEmit && node scripts/check-admin-allowlist.mjs && node scripts/refresh-content-dates.mjs --check",
     "crawl": "node scripts/crawl-site.mjs",
     "qa": "node scripts/qa-site.mjs",
     "qa:functionality": "node scripts/functionality-qa.mjs",
     "qa:locations": "node scripts/location-nap-audit.mjs",
-    "check:admins": "node scripts/check-admin-allowlist.mjs"
+    "check:admins": "node scripts/check-admin-allowlist.mjs",
+    "dates": "node scripts/refresh-content-dates.mjs",
+    "check:dates": "node scripts/refresh-content-dates.mjs --check"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
