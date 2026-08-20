@@ -24,6 +24,19 @@ const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").r
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
 
+// Three third-party trackers carried over from the legacy WordPress site by
+// explicit decision. Each is off unless its env var is set, same as GTM/GA4, so
+// preview deployments never pollute the vendors' data. Legacy values:
+//   NEXT_PUBLIC_WHATCONVERTS_ID  = 90165
+//   NEXT_PUBLIC_DATAFAST_ID      = dfid_jRAMAdrt7rJeDVkOBcUJc
+//   NEXT_PUBLIC_VISIBILITYKIT_ID = 38a9f2e12389d095
+// WhatConverts also swaps the displayed phone number to its tracking line, so
+// what a visitor sees will stop matching the number in the markup — that is the
+// product working as intended, not a NAP bug.
+const WHATCONVERTS_ID = process.env.NEXT_PUBLIC_WHATCONVERTS_ID;
+const DATAFAST_ID = process.env.NEXT_PUBLIC_DATAFAST_ID;
+const VISIBILITYKIT_ID = process.env.NEXT_PUBLIC_VISIBILITYKIT_ID;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
@@ -207,6 +220,38 @@ export default function RootLayout({
               {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');`}
             </Script>
           </>
+        )}
+        {WHATCONVERTS_ID && (
+          <>
+            {/* $wc_leads must exist before the tracker loads — it snapshots the
+                landing URL and referrer, which is how WhatConverts attributes a
+                call to its source. Loading the tracker without it loses that. */}
+            <Script id="whatconverts-init" strategy="afterInteractive">
+              {`var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};`}
+            </Script>
+            <Script
+              id="whatconverts-tracking-script"
+              src={`https://s.ksrndkehqnwntyxlhgto.com/${WHATCONVERTS_ID}.js`}
+              strategy="afterInteractive"
+            />
+          </>
+        )}
+        {DATAFAST_ID && (
+          <Script
+            id="datafast-tracking"
+            data-website-id={DATAFAST_ID}
+            data-domain={siteUrl}
+            data-disable-payments="true"
+            src="https://datafa.st/js/script.js"
+            strategy="afterInteractive"
+          />
+        )}
+        {VISIBILITYKIT_ID && (
+          <Script
+            id="vk-core"
+            src={`https://cdn.visibilitykit.ai/t/${VISIBILITYKIT_ID}/vk.js`}
+            strategy="afterInteractive"
+          />
         )}
         <script
           type="application/ld+json"
