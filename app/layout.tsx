@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { FOUNDED } from "./data/practice";
 import Script from "next/script";
 import "./globals.css";
@@ -37,6 +37,16 @@ const WHATCONVERTS_ID = process.env.NEXT_PUBLIC_WHATCONVERTS_ID;
 const DATAFAST_ID = process.env.NEXT_PUBLIC_DATAFAST_ID;
 const VISIBILITYKIT_ID = process.env.NEXT_PUBLIC_VISIBILITYKIT_ID;
 
+// Tints the browser chrome on mobile — a small brand cue on the device most
+// patients arrive on. Both values come from the existing palette in globals.css
+// (--teal / --teal-dark) rather than introducing a new colour.
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#155f6b" },
+    { media: "(prefers-color-scheme: dark)", color: "#105966" },
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
@@ -53,42 +63,46 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "California Hearing Center",
+    // type/url/siteName/locale were on the legacy site and were missing here.
+    // og:url in particular matters: without it a share of calhearing.com/?utm=...
+    // is treated by some platforms as a distinct object from the clean URL, so
+    // likes and shares scatter across variants instead of accumulating.
+    type: "website",
+    url: siteUrl,
+    siteName: "California Hearing Center",
+    locale: "en_US",
+    title: "California Hearing Center | Turn Up Your Life with Better Hearing",
     description:
       "See how sound travels through the ear—and how modern hearing technology helps every word arrive more clearly.",
-    images: ["/og.jpg"],
+    // Explicit dimensions let Facebook and LinkedIn lay the card out on first
+    // scrape instead of rendering a blank box until they fetch the image.
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "California Hearing Center" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hear the whole story. | California Hearing Center",
+    title: "California Hearing Center | Turn Up Your Life with Better Hearing",
     description: "See how sound becomes connection.",
     images: ["/og.jpg"],
   },
   // Search-engine ownership verification, carried over from the legacy site.
   //
-  // calhearing.com is verified in Search Console THREE ways: two DNS TXT
-  // records and one meta tag, all with different tokens — so more than one
-  // account holds verification. The DNS records survive the cutover untouched
-  // and are the durable ones; this meta tag covers whoever verified that way.
-  //   GOOGLE_SITE_VERIFICATION = WBZFrlITOmQaGoGa30a3lDHt6muz2pp_U7k-Pvb8sQ4
+  // These are deliberately HARDCODED rather than env-gated. Unlike the analytics
+  // IDs, a verification token is not a secret and carries no risk on a preview
+  // deployment — it is a public string, readable in view-source on the live site
+  // right now, and it only ever proves ownership of a domain the preview is not
+  // served on. Gating them behind env vars bought nothing and added two more
+  // ways to arrive at cutover unverified. An env var still overrides, for the
+  // case where a token is ever reissued.
   //
-  // Bing Webmaster Tools is verified by meta tag only — there is no DNS
-  // fallback — so without this the practice loses Bing verification at
-  // cutover. Bing is also what backs several AI answer engines now, which
-  // makes it worth more to a local practice than its search share suggests.
-  //   BING_SITE_VERIFICATION = CEFD93DA081A53DA60065D3F4F62C073
-  ...(process.env.GOOGLE_SITE_VERIFICATION || process.env.BING_SITE_VERIFICATION
-    ? {
-        verification: {
-          ...(process.env.GOOGLE_SITE_VERIFICATION
-            ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-            : {}),
-          ...(process.env.BING_SITE_VERIFICATION
-            ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } }
-            : {}),
-        },
-      }
-    : {}),
+  // Search Console is belt-and-braces: calhearing.com is ALSO verified by two
+  // DNS TXT records with different tokens, which a cutover cannot disturb.
+  // Bing has no DNS fallback — this tag is the only thing proving ownership.
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION || "WBZFrlITOmQaGoGa30a3lDHt6muz2pp_U7k-Pvb8sQ4",
+    other: {
+      "msvalidate.01": process.env.BING_SITE_VERIFICATION || "CEFD93DA081A53DA60065D3F4F62C073",
+    },
+  },
 };
 
 // Booking runs through Zocdoc; the practice has no first-party scheduler.

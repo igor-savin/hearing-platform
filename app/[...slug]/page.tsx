@@ -20,6 +20,14 @@ const GENERIC_DESC =
 // Default social-share image for pages without their own (blog posts supply one).
 const DEFAULT_OG_IMAGE = "/og.jpg";
 
+// Shared across every page's Open Graph block. Next replaces the parent
+// openGraph object wholesale when a page defines its own, so siteName/locale
+// set in the root layout never reach these pages unless repeated here.
+const OG_SITE = { siteName: "California Hearing Center", locale: "en_US" } as const;
+// og.jpg is 1200x630. Declaring it lets Facebook and LinkedIn lay the card out
+// on first scrape instead of showing a blank box until they fetch the file.
+const DEFAULT_OG_IMAGE_SIZED = { url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "California Hearing Center" };
+
 function metaDescription(page: SitePage): string {
   if (page.desc && page.desc !== GENERIC_DESC) return page.desc.slice(0, 160);
   if (page.paragraphs && page.paragraphs.length) return page.paragraphs[0].slice(0, 158);
@@ -44,7 +52,7 @@ export async function generateMetadata({ params }: PageProps) {
       title: blogTitle,
       description: blogDesc,
       alternates: { canonical: path },
-      openGraph: { title: blogTitle, description: blogDesc, url: path, type: "website", images: [DEFAULT_OG_IMAGE] },
+      openGraph: { ...OG_SITE, title: blogTitle, description: blogDesc, url: path, type: "website", images: [DEFAULT_OG_IMAGE_SIZED] },
       twitter: { card: "summary_large_image", title: blogTitle, description: blogDesc, images: [DEFAULT_OG_IMAGE] },
     };
   }
@@ -56,25 +64,33 @@ export async function generateMetadata({ params }: PageProps) {
       title: rTitle,
       description: rDesc,
       alternates: { canonical: path },
-      openGraph: { title: rTitle, description: rDesc, url: path, type: "website", images: [DEFAULT_OG_IMAGE] },
+      openGraph: { ...OG_SITE, title: rTitle, description: rDesc, url: path, type: "website", images: [DEFAULT_OG_IMAGE_SIZED] },
       twitter: { card: "summary_large_image", title: rTitle, description: rDesc, images: [DEFAULT_OG_IMAGE] },
     };
   }
 
   const desc = blogMetaDescription(path) ?? areaMetaDescription(path) ?? coreMetaDescription(path) ?? metaDescription(page);
   const title = areaMetaTitle(path) ?? coreMetaTitle(path) ?? blogMetaTitle(path, page.title);
-  const ogImg = blogOgImage(path) ?? DEFAULT_OG_IMAGE;
+  const blogImg = blogOgImage(path);
+  const ogImg = blogImg ?? DEFAULT_OG_IMAGE;
+  // og:type "article" belongs to the blog posts, which have an author and a
+  // publish date. A service or location page is not an article; saying so was
+  // simply inaccurate. Everything non-editorial is a website page.
+  const isArticle = blogMetaDescription(path) != null;
 
   return {
     title,
     description: desc,
     alternates: { canonical: path },
     openGraph: {
+      ...OG_SITE,
       title,
       description: desc,
       url: path,
-      type: "article",
-      images: [ogImg],
+      type: isArticle ? "article" : "website",
+      // Only the shared default has known dimensions; per-post photos vary, so
+      // they are passed as a bare URL for the platform to measure.
+      images: [blogImg ? ogImg : DEFAULT_OG_IMAGE_SIZED],
     },
     twitter: {
       card: "summary_large_image",
