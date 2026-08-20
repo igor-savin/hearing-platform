@@ -149,6 +149,28 @@ export function EarJourneyHero() {
       style={journeyStyle}
       aria-labelledby="ear-hero-title"
     >
+      {/* The hero art is a CSS background, which means the browser cannot
+          discover it until the stylesheet has been fetched and parsed —
+          Lighthouse reports it as the LCP element with
+          "requestDiscoverable: false" and no priority hint. Preloading it here
+          makes it visible to the preload scanner in the initial document.
+
+          Deliberately only the AVIF: a browser that supports both AVIF and
+          WebP would honour two preloads and download the image twice. Browsers
+          without AVIF support ignore this and still get the WebP through the
+          image-set() in CSS, exactly as before.
+
+          This lives inside the hero rather than in the layout so it stays
+          scoped to the homepage — the only page that renders this component.
+          Preloading it site-wide would pull a 70KB image into 361 pages that
+          never display it. */}
+      <link
+        rel="preload"
+        as="image"
+        href="/assets/hearing-journey-hero.avif"
+        type="image/avif"
+        fetchPriority="high"
+      />
       <div className="ear-hero-art" aria-hidden="true" />
       <div className="ear-hero-shade" aria-hidden="true" />
 

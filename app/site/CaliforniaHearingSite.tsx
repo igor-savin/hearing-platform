@@ -1711,7 +1711,7 @@ function HomePage() {
           <p>The Inspired by Ida label is a benchmark of quality awarded to clinics dedicated to providing person-centered care. California Hearing Center is proud to be <strong>the first clinic in the world</strong> to receive this prestigious label, demonstrating our commitment to you and to high-quality hearing healthcare.</p>
           <p>We take the time to discover what you need, what fits the way you live, and what matters to you most.</p>
           <a className="ida-inline" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/ida.webp" alt="Inspired by Ida — person-centered care label" loading="lazy" decoding="async" />
+            <img src="/assets/ida.webp" width={680} height={680} alt="Inspired by Ida — person-centered care label" loading="lazy" decoding="async" />
             <span>Learn how person-centered care leads to better hearing care</span>
           </a>
         </div>
@@ -1948,7 +1948,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
       </div>
       <header className="site-header">
         <a className="logo" href="/">
-          <img src="/assets/logo.png" alt="California Hearing Center" />
+          <img src="/assets/logo.png" width={586} height={148} alt="California Hearing Center" />
         </a>
         <nav className="primary-nav" aria-label="Primary navigation">
           {nav.map((item) => (
@@ -2064,7 +2064,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//88+N.+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/google-reviews.webp" alt="See our Patient Reviews" loading="lazy" decoding="async" />
+            <img src="/assets/google-reviews.webp" width={1024} height={639} alt="See our Patient Reviews" loading="lazy" decoding="async" />
           </a>
           <section className="footer-location">
             <h2 className="footer-heading">San Carlos</h2>
@@ -2073,7 +2073,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/ida.webp" alt="" loading="lazy" decoding="async" />
+            <img src="/assets/ida.webp" width={680} height={680} alt="" loading="lazy" decoding="async" />
             <span>Explore the Ida Institute</span>
           </a>
         </div>
