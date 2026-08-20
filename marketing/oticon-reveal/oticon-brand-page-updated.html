@@ -1,0 +1,712 @@
+<p><style>
+/* Reset any potential margin/padding causing the extra space */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+/* Fixed breadcrumb navigation */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    list-style: none;
+}
+.breadcrumbs li {
+    display: inline;
+}
+.breadcrumbs a {
+    color: #d35400;
+    text-decoration: none;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.breadcrumbs .separator {
+    margin: 0 8px;
+    color: #777;
+}
+.breadcrumbs .current {
+    color: #777;
+}
+/* Banner section styling */
+.header-section {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    border-radius: 0;
+    padding: 60px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.header-section h1 {
+    font-size: 3.2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.header-section p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.manufacturer-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto 25px;
+    display: block;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+/* Content sections */
+section {
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+h2 {
+    color: #d35400;
+    border-bottom: 4px solid #d35400;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+h3 {
+    color: #d35400;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+p {
+    margin-bottom: 22px;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+.intro-section {
+    margin-bottom: 50px;
+}
+.brand-stats-box {
+    background-color: #f0f7ff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.brand-stats-box h3 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+.brand-stats-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.brand-stats-box ul li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+.brand-stats-box ul li:before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    color: #d35400;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+.highlight-box {
+    background-color: #fff3cd;
+    border-left: 5px solid #d35400;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+.highlight-box h3 {
+    margin-top: 0;
+    color: #d35400;
+}
+.product-section {
+    margin-bottom: 50px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+.product-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-8px);
+}
+.product-card h3 {
+    color: #d35400;
+    margin-bottom: 20px;
+}
+.product-card p {
+    margin-bottom: 25px;
+}
+.product-card .highlight {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #d35400;
+}
+.product-card .card-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.product-card .card-link:hover {
+    background-color: #b24700;
+}
+.product-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #d35400;
+}
+.product-card .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.product-card .new-badge {
+    position: absolute;
+    top: 18px;
+    right: -34px;
+    background-color: #ff6b35;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 6px 40px;
+    transform: rotate(45deg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.features-section {
+    margin-bottom: 50px;
+    background-color: #f0f7ff;
+    padding: 50px;
+    border-radius: 15px;
+}
+.features-section h2 {
+    color: #d35400;
+    border-bottom: 4px solid #d35400;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e3f1ff;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #d35400;
+}
+.feature-item h3 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+.tech-section {
+    margin-bottom: 50px;
+}
+.tech-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 40px;
+}
+.tech-image {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.comparison-table th {
+    background-color: #d35400;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+.comparison-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+.testimonial-section {
+    margin-bottom: 50px;
+}
+.testimonial-item {
+    background-color: #f0f7ff;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.testimonial-content {
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+.testimonial-content::before {
+    content: "\201C";
+    font-size: 60px;
+    color: #d35400;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    opacity: 0.3;
+}
+.testimonial-author {
+    font-weight: bold;
+    color: #d35400;
+}
+.testimonial-meta {
+    color: #777;
+    font-size: 0.9em;
+}
+.faqs-section {
+    margin-bottom: 50px;
+}
+.faq-item {
+    margin-bottom: 25px;
+    background-color: #f0f7ff;
+    padding: 30px;
+    border-radius: 12px;
+}
+.faq-item h3 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+.faq-item p {
+    line-height: 1.8;
+}
+.cta-section {
+    background-color: #d35400;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.cta-section h2 {
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    color: white;
+    border-bottom: none;
+}
+.cta-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 18px 35px;
+    background-color: #ff6b35;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #e85a2a;
+    transform: translateY(-5px);
+}
+.related-brands {
+    margin-bottom: 50px;
+}
+.brand-logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.brand-logo-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    max-width: 150px;
+}
+.brand-logo-item:hover {
+    transform: translateY(-5px);
+}
+.brand-logo-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.brand-logo-item a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+}
+.schema-data {
+    display: none;
+}
+@media (max-width: 768px) {
+    .header-section {
+        padding: 40px 25px;
+    }
+    .header-section h1 {
+        font-size: 2.5em;
+    }
+    .tech-columns,
+    .product-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .comparison-table {
+        font-size: 0.9em;
+    }
+    .features-section {
+        padding: 30px 20px;
+    }
+}
+</style></p>
+
+<div class="container">
+<p><!-- Breadcrumbs for SEO and navigation --></p>
+
+<ul class="breadcrumbs">
+  <li><a href="https://calhearing.com/">Home</a><span class="separator">›</span></li>
+  <li><a href="https://calhearing.com/products/">Products</a><span class="separator">›</span></li>
+  <li><a href="https://calhearing.com/products/hearing-aids-by-brand/">Hearing Aid Brands</a><span class="separator">›</span></li>
+  <li class="current">Oticon Hearing Aids</li>
+</ul>
+<p><!-- Introduction Section --></p>
+
+<section class="intro-section">
+<h2>A Legacy of Innovation in Hearing Technology</h2>
+<p>Founded in 1904, Oticon has consistently led the hearing industry with pioneering technologies that focus on how the brain processes sound. Their groundbreaking research into brain-hearing connections has revolutionized hearing aid design, moving beyond simple amplification to create devices that work in harmony with your brain's natural hearing process.</p>
+<p>At California Hearing Center, we've partnered with Oticon for over 20 years because their commitment to innovation and user-centered design aligns perfectly with our mission to provide personalized hearing solutions that transform lives. Our audiologists have specialized training in fitting and optimizing Oticon's advanced technology to match your unique hearing profile and lifestyle needs.</p>
+<p>Oticon's current lineup includes three distinct flagships, each solving a different problem: the brand-new <strong>Oticon Reveal</strong> with the industry's first Dual AI sound processing, the remarkably discreet <strong>Oticon Zeal</strong>, and the proven <strong>Oticon Intent</strong> with user-intent sensors. Below, we explain what separates them so you can walk into your appointment already knowing the right questions to ask.</p>
+
+</section>
+<p><!-- NEW PRODUCT ANNOUNCEMENT --></p>
+
+<div class="highlight-box">
+<h3>Now Available: Oticon Reveal™ — The World's First Dual AI Hearing Aid</h3>
+<p>Announced by Oticon in August 2026, the Reveal is the first hearing aid to run two dedicated AI systems at the same time, and it delivers a 60% stronger brain response than Oticon Intent. California Hearing Center is among the first Bay Area practices offering it.</p>
+<p><strong>Call (650) 342-9449 or <a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-reveal/">learn more about Oticon Reveal</a>.</strong></p>
+
+</div>
+<p><!-- Technology Section --></p>
+
+<section class="tech-section">
+<h2>Groundbreaking Oticon Technology</h2>
+<div class="tech-columns">
+<div>
+<h3>BrainHearing™: A Revolutionary Approach</h3>
+<p>Oticon's philosophy centers around their proprietary BrainHearing™ approach, which acknowledges that hearing happens in the brain, not just the ears. Traditional hearing aids focus primarily on making sounds louder, but Oticon's technology is designed to reduce cognitive load and provide the brain with clearer sound signals.</p>
+<p>This brain-first approach means you'll experience:</p>
+
+<ul>
+  <li>Less listening effort in complex sound environments</li>
+  <li>Better speech recognition, even with background noise</li>
+  <li>More natural sound quality that preserves important details</li>
+  <li>Reduced listening fatigue after long conversations</li>
+</ul>
+</div>
+<div><img src="https://assets-ue.cas.dgs.com/-/media/oticon-us/main/your-hearing/hearing-health/brainhearing-technology/how-hearing-works-in-the-brain---960x800.gif?h=800&amp;la=en&amp;w=960&amp;rev=B16E&amp;hash=2F53D53A8A44C73BED04E2EDD2954B77" alt="Oticon BrainHearing Technology Diagram" class="tech-image" /></div>
+</div>
+</section>
+<p><!-- Oticon Reveal Detailed Section --></p>
+
+<section class="tech-section">
+<h2>Oticon Reveal™: The World's First Hearing Aid Powered by Dual AI</h2>
+<p>For years, the entire hearing industry has taken one approach to noisy rooms: find the speech, then aggressively suppress everything else. It demonstrates beautifully in a quiet clinic. In a real restaurant, it strips away the sounds that tell your brain where you are.</p>
+<p>Oticon Reveal, announced in August 2026, does something no hearing aid has done before. It runs <strong>two dedicated AI systems simultaneously</strong>. A <strong>Speech AI</strong> continuously identifies and enhances the speech of the people around you. At the same time, a <strong>Context AI</strong> recognizes and balances the meaningful sounds that give a room its shape. Neither waits for the other, and both run all day in every environment.</p>
+<p>Built on the all-new Reveal AI™ platform — Oticon's third-generation AI sound processing system — the Reveal delivers a <strong>60% stronger brain response than Oticon Intent</strong>, the company's previous flagship and one of the most respected hearing aids on the market.</p>
+
+<div class="brand-stats-box">
+<h3>What Makes Reveal Different</h3>
+<ul>
+  <li>Dual AI: dedicated Speech AI and Context AI working together in real time</li>
+  <li>Built on the new Reveal AI™ platform, Oticon's third-generation AI sound processing</li>
+  <li>60% stronger brain response compared to Oticon Intent</li>
+  <li>All-new connectivity platform with Oticon's best-ever streaming stability and range</li>
+  <li>Bluetooth® LE Audio with Auracast™ broadcast technology built in</li>
+  <li>Hands-free calling and direct audio streaming</li>
+  <li>Compact, rechargeable miniRITE design with all-day power</li>
+  <li>Feedback prevention 30% faster with four times the fitting precision of previous Oticon technology</li>
+  <li>A new CROS solution for single-sided deafness launching alongside Reveal</li>
+</ul>
+</div>
+<p><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-reveal/" class="cta-button">Explore Oticon Reveal</a></p>
+
+</section>
+<p><!-- Oticon Zeal Detailed Section --></p>
+
+<section class="tech-section">
+<h2>Oticon Zeal™: The World's First "Unseen" Hearing Aid to Do It All</h2>
+<p>The Oticon Zeal represents a design revolution, creating a brand-new category known as NXT In-the-Ear technology. For the first time ever, you don't have to choose between invisibility and performance. The Zeal delivers the complete connectivity, rechargeability, and AI-powered sound processing of a premium behind-the-ear device—all in a size so discreet it's invisible or barely visible in 94% of users.</p>
+
+<div class="brand-stats-box">
+<h3>Groundbreaking Features</h3>
+<ul>
+  <li>Completely-in-canal design that's truly invisible in most users</li>
+  <li>AI-powered Deep Neural Network 2.0 for superior sound processing</li>
+  <li>Up to 20 hours of rechargeable battery life, including streaming</li>
+  <li>Bluetooth LE Audio with future-ready Auracast™ technology</li>
+  <li>First "instant-fit" in-ear device with same-day fitting options</li>
+  <li>IP68-rated pacemaker-grade encapsulation for exceptional durability</li>
+  <li>Motion sensor with tap controls for answering calls</li>
+</ul>
+</div>
+</section>
+<p><!-- Oticon Intent Detailed Section --></p>
+
+<section class="tech-section">
+<h2>Oticon Intent™: Revolutionary User-Intent Sensors</h2>
+<p>The Intent™ family features the world's first user-intent sensors—a groundbreaking technology that recognizes when your listening needs change and adapts automatically. These intelligent devices can:</p>
+
+<ul>
+  <li>Detect when you're having a conversation and enhance speech clarity</li>
+  <li>Recognize when you're listening to music and optimize sound quality</li>
+  <li>Automatically adjust settings based on your environment</li>
+  <li>Provide seamless transitions between different listening situations</li>
+</ul>
+<p>Intent remains an outstanding choice, and it is available across a wider range of styles and technology levels than the newer models—which makes it the most flexible option for many budgets.</p>
+
+</section>
+<p><!-- Which Oticon Comparison --></p>
+
+<section>
+<h2>Which Oticon Is Right for You?</h2>
+<p>All three of Oticon's current flagships offer Bluetooth LE Audio and Auracast. They differ in what they prioritize. Here is the honest comparison our audiologists walk patients through.</p>
+
+<table class="comparison-table">
+<thead>
+<tr>
+<th>Feature</th>
+<th>Oticon Reveal</th>
+<th>Oticon Zeal</th>
+<th>Oticon Intent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Core strength</td>
+<td>Most advanced sound processing</td>
+<td>Most discreet</td>
+<td>Proven all-rounder</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>Reveal AI (3rd-generation AI)</td>
+<td>Sirius</td>
+<td>Sirius</td>
+</tr>
+<tr>
+<td>AI processing</td>
+<td>Dual AI (Speech AI + Context AI)</td>
+<td>Deep Neural Network 2.0</td>
+<td>Deep Neural Network 2.0</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Compact rechargeable miniRITE</td>
+<td>Invisible in-the-ear (NXT CIC)</td>
+<td>miniRITE and additional styles</td>
+</tr>
+<tr>
+<td>Visibility</td>
+<td>Discreet behind the ear</td>
+<td>Invisible in 94% of users</td>
+<td>Discreet behind the ear</td>
+</tr>
+<tr>
+<td>Bluetooth LE Audio + Auracast</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>CROS option (single-sided deafness)</td>
+<td>Yes — new CROS at launch</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Best suited to</td>
+<td>Patients who want the strongest speech-in-noise performance available</td>
+<td>Patients for whom discretion is the deciding factor</td>
+<td>Patients wanting proven technology across more price points</td>
+</tr>
+</tbody>
+</table>
+<p>The simplest way to think about it: <strong>Zeal</strong> answers "I don't want anyone to see it." <strong>Reveal</strong> answers "I want the best hearing I can get." <strong>Intent</strong> answers "I want proven technology that fits my budget." They aren't competing with each other—they answer three different first questions.</p>
+
+</section>
+<p><!-- Product Section --></p>
+
+<section class="product-section">
+<h2>Oticon Product Families</h2>
+<p>California Hearing Center offers Oticon's complete lineup of hearing solutions, each designed to address specific hearing needs and preferences. Our audiologists will help you select and customize the perfect Oticon technology for your lifestyle.</p>
+
+<div class="product-grid">
+<div class="product-card"><span class="new-badge">NEW</span>
+<p><img src="https://calhearing.com/wp-content/uploads/2026/08/Oticon-Reveal.png" alt="Oticon Reveal miniRITE rechargeable hearing aid in plum with receiver wire and open dome" class="product-image" /></p>
+
+<h3>Oticon Reveal™</h3>
+<p class="highlight">Newest Flagship: World's First Dual AI Hearing Aid</p>
+<p>Two dedicated AI systems running at once—one for speech, one for context—on the all-new Reveal AI platform. Delivers a 60% stronger brain response than Oticon Intent, with Bluetooth LE Audio, Auracast, hands-free calling, and all-day rechargeability. Available now.</p>
+<p><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-reveal/" class="card-link">Learn More</a></p>
+
+</div>
+<div class="product-card">
+<p><img src="https://calhearing.com/wp-content/uploads/2026/02/Oticon-Zeal.jpg" alt="Oticon Zeal invisible in-the-ear hearing aid" class="product-image" /></p>
+
+<h3>Oticon Zeal™</h3>
+<p class="highlight">The World's First "Unseen" Hearing Aid to Do It All</p>
+<p>Groundbreaking NXT In-the-Ear technology that's invisible or barely visible in 94% of users. Features AI-powered sound, Bluetooth connectivity, rechargeable batteries, and Auracast—all in a completely invisible design.</p>
+<p><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-zeal/" class="card-link">Learn More</a></p>
+
+</div>
+<div class="product-card">
+<p><img src="https://assets-ue.cas.dgs.com/-/media/oticon-us/main/homepage/obhc-intent-introbanner-1200x500.jpg" alt="Oticon Intent hearing aid with user-intent sensors" class="product-image" /></p>
+
+<h3>Oticon Intent™</h3>
+<p class="highlight">Proven Technology: User-Intent Sensors</p>
+<p>The product line featuring revolutionary sensors that deliver personalized sound in real-time. Available in rechargeable and battery options with multiple technology levels to fit different budgets and hearing needs.</p>
+<p><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-intent/" class="card-link">Learn More</a></p>
+
+</div>
+<div class="product-card">
+<p><img src="https://calhearing.com/wp-content/uploads/2026/08/Oticon-Own-SI.jpg" alt="Oticon Own SI custom in-the-ear hearing aid" class="product-image" /></p>
+
+<h3>Oticon Own SI™</h3>
+<p class="highlight">Custom In-Ear Design with Advanced Features</p>
+<p>Discreet custom hearing aids with the latest Oticon technology built right into a shell designed specifically for your ear. Available in multiple styles from completely-in-canal to in-the-ear.</p>
+<p><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-own/" class="card-link">Learn More</a></p>
+
+</div>
+</div>
+</section>
+<p><!-- CTA Section --></p>
+
+<section class="cta-section">
+<h2>Turning Life up Through Better Hearing</h2>
+<p>For over 30 years, California Hearing Center has been helping people improve their lives through better hearing. Whether you are having a conversation with your family, enjoying a meal at a restaurant, meeting with people at work, out shopping with friends, or taking a walk in the park, hearing well is an essential part in turning up the enjoyment of life.</p>
+<p><a href="https://calhearing.com/contact" class="cta-button">Schedule an Appointment</a></p>
+<p style="margin-top: 20px;">Or call us at (650) 342-9449</p>
+
+</section>
+<p><!-- Related Brands Section --></p>
+
+<section class="related-brands">
+<h2>Explore Other Premium Hearing Aid Brands</h2>
+<p>At California Hearing Center, we offer a comprehensive selection of hearing aid brands to ensure you find the perfect match for your hearing needs, preferences, and budget.</p>
+
+<div class="brand-logo-grid">
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/widex/">Widex</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/starkey/">Starkey</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/phonak/">Phonak</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/resound/">ReSound</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/signia/">Signia</a></div>
+</div>
+</section>
+<p><!-- Schema Markup for SEO --></p>
+
+<div class="schema-data"><script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Oticon Hearing Aids at California Hearing Center",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Oticon Reveal",
+                  "url": "https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-reveal/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Oticon Zeal",
+                  "url": "https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-zeal/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Oticon Intent",
+                  "url": "https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-intent/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Oticon Own SI",
+                  "url": "https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-own/"
+                }
+              ]
+            }
+            </script></div>
+</div>

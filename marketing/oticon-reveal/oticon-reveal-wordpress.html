@@ -1,0 +1,893 @@
+<p>
+<style>
+/* Reset any potential margin/padding causing the extra space */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+/* Fixed breadcrumb navigation */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    list-style: none;
+}
+.breadcrumbs li {
+    display: inline;
+}
+.breadcrumbs a {
+    color: #d35400;
+    text-decoration: none;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.breadcrumbs .separator {
+    margin: 0 8px;
+    color: #777;
+}
+.breadcrumbs .current {
+    color: #777;
+}
+/* Banner section styling */
+.header-section {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    border-radius: 0;
+    padding: 60px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.header-section h1 {
+    font-size: 3.2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.header-section p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.header-section .subtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff3cd;
+}
+.manufacturer-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto 25px;
+    display: block;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+/* Content sections */
+section {
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+h2 {
+    color: #d35400;
+    border-bottom: 4px solid #d35400;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+h3 {
+    color: #d35400;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+p {
+    margin-bottom: 22px;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+.intro-section {
+    margin-bottom: 50px;
+}
+.brand-stats-box {
+    background-color: #f0f7ff;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.brand-stats-box h3 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+.brand-stats-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.brand-stats-box ul li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+}
+.brand-stats-box ul li:before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    color: #d35400;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+}
+.highlight-box {
+    background-color: #fff3cd;
+    border-left: 5px solid #d35400;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+.highlight-box h3 {
+    margin-top: 0;
+    color: #d35400;
+}
+.product-section {
+    margin-bottom: 50px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+.product-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-8px);
+}
+.product-card h3 {
+    color: #d35400;
+    margin-bottom: 20px;
+}
+.product-card p {
+    margin-bottom: 25px;
+}
+.product-card .highlight {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #d35400;
+}
+.product-card .card-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d35400;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.product-card .card-link:hover {
+    background-color: #b24700;
+}
+.product-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #d35400;
+}
+.product-card .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.features-section {
+    margin-bottom: 50px;
+    background-color: #f0f7ff;
+    padding: 50px;
+    border-radius: 15px;
+}
+.features-section h2 {
+    color: #d35400;
+    border-bottom: 4px solid #d35400;
+    padding-bottom: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.feature-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e3f1ff;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #d35400;
+}
+.feature-item h3 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+.tech-section {
+    margin-bottom: 50px;
+}
+.tech-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 40px;
+}
+.tech-image {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+/* Responsive video embed */
+.video-section {
+    margin-bottom: 50px;
+}
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    background: #000;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.video-caption {
+    text-align: center;
+    color: #777;
+    font-size: 0.95em;
+    margin-top: 15px;
+}
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.comparison-table th {
+    background-color: #d35400;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+.comparison-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+.testimonial-section {
+    margin-bottom: 50px;
+}
+.testimonial-item {
+    background-color: #f0f7ff;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.testimonial-content {
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+.testimonial-content::before {
+    content: '"';
+    font-size: 60px;
+    color: #d35400;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    opacity: 0.3;
+}
+.testimonial-author {
+    font-weight: bold;
+    color: #d35400;
+}
+.testimonial-meta {
+    color: #777;
+    font-size: 0.9em;
+}
+.faqs-section {
+    margin-bottom: 50px;
+}
+.faq-item {
+    margin-bottom: 25px;
+    background-color: #f0f7ff;
+    padding: 30px;
+    border-radius: 12px;
+}
+.faq-item h3 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+.faq-item p {
+    line-height: 1.8;
+}
+.cta-section {
+    background-color: #d35400;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.cta-section h2 {
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    color: white;
+    border-bottom: none;
+}
+.cta-section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 18px 35px;
+    background-color: #ff6b35;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #e85a2a;
+    transform: translateY(-5px);
+}
+.related-brands {
+    margin-bottom: 50px;
+}
+.brand-logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.brand-logo-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    max-width: 150px;
+}
+.brand-logo-item:hover {
+    transform: translateY(-5px);
+}
+.brand-logo-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.brand-logo-item a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+}
+.source-note {
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.source-note a {
+    color: #d35400;
+}
+.schema-data {
+    display: none;
+}
+@media (max-width: 768px) {
+    .header-section {
+        padding: 40px 25px;
+    }
+    .header-section h1 {
+        font-size: 2.5em;
+    }
+    .tech-columns,
+    .product-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .comparison-table {
+        font-size: 0.9em;
+    }
+    .features-section {
+        padding: 30px 20px;
+    }
+}
+    </style></p>
+
+<div class="container"><!-- Breadcrumbs for SEO and navigation -->
+<ul class="breadcrumbs">
+  <li><a href="https://calhearing.com/">Home</a><span class="separator">›</span></li>
+  <li><a href="https://calhearing.com/products/">Products</a><span class="separator">›</span></li>
+  <li><a href="https://calhearing.com/products/hearing-aids-by-brand/">Hearing Aid Brands</a><span class="separator">›</span></li>
+  <li><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/">Oticon</a><span class="separator">›</span></li>
+  <li class="current">Oticon Reveal</li>
+</ul>
+<p><!-- Header Section --></p>
+
+<div class="header-section">
+<h1>Oticon Reveal™</h1>
+<p class="subtitle">The World's First Hearing Aid Powered by Dual AI</p>
+<p>Two dedicated AI systems working together in real time. One brings you crystal-clear speech. The other keeps the world around you intact.</p>
+
+</div>
+<p><!-- Introduction Section --></p>
+
+<section class="intro-section">
+<h2>Two AI Systems. One Complete Sound Picture.</h2>
+<p>Announced by Oticon on August 11, 2026, the Oticon Reveal represents a fundamental rethink of what artificial intelligence should do inside a hearing aid. For years, the industry has taken a single approach to difficult listening environments: identify speech, then aggressively suppress everything else. It makes for an impressive demonstration in a quiet clinic. In real life, it strips away the sounds that tell your brain where you are.</p>
+<p>Oticon Reveal takes a different path. It runs <strong>two dedicated AI systems simultaneously</strong>. A <strong>Speech AI</strong> continuously identifies and enhances the speech of people around you. At the same time, a <strong>Context AI</strong> recognizes and balances the meaningful sounds that give a room its shape — footsteps, a door, traffic, the ambient life of a restaurant. Neither one waits for the other. Both run all day, in every environment, in real time.</p>
+<p>The result, according to Oticon's research, is a <strong>60% stronger brain response</strong> than Oticon Intent — the company's previous flagship and one of the most respected hearing aids on the market. At California Hearing Center in San Mateo, we are among the first practices in the Bay Area to offer this technology to our patients.</p>
+
+<div class="brand-stats-box">
+<h3>Oticon Reveal at a Glance</h3>
+<ul>
+  <li>World's first hearing aid powered by Dual AI — Speech AI and Context AI running together</li>
+  <li>Built on the all-new Reveal AI™ platform, Oticon's third-generation AI sound processing system</li>
+  <li>60% stronger brain response compared to Oticon Intent</li>
+  <li>All-new connectivity platform with Oticon's best-ever streaming stability and range</li>
+  <li>Bluetooth® LE Audio with Auracast™ broadcast technology built in</li>
+  <li>Hands-free calling and direct audio streaming</li>
+  <li>Compact, rechargeable miniRITE design with all-day power</li>
+  <li>Feedback prevention that is 30% faster with four times the fitting precision of previous Oticon technology</li>
+  <li>A new CROS solution for single-sided deafness launching alongside Reveal</li>
+</ul>
+</div>
+</section>
+<p><!-- Highlight Box for Availability --></p>
+
+<div class="highlight-box">
+<h3>Now Arriving at California Hearing Center</h3>
+<p>Oticon Reveal became available in August 2026 and is rolling out across all four technology levels in major markets through the third quarter of 2026. Because Reveal is a brand-new platform, an expert fitting matters more than ever — the Dual AI system needs to be verified against your specific hearing profile to deliver what it promises.</p>
+<p><strong>Call us at (650) 342-9449 or schedule a consultation to be among the first to hear the difference Dual AI makes.</strong></p>
+
+</div>
+<p><!-- Video Section --></p>
+
+<section class="video-section">
+<h2>See and Hear Oticon Reveal</h2>
+<p>Watch Oticon's official introduction to the Reveal and its Dual AI sound processing system.</p>
+
+<div class="video-wrapper"><iframe src="https://www.youtube.com/embed/79BU3IIjKrY" title="Highlights of Oticon Reveal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<p class="video-caption">Highlights of Oticon Reveal — courtesy of Oticon Professionals</p>
+
+</section>
+<p><!-- Technology Section --></p>
+
+<section class="tech-section">
+<h2>Advanced Technology: The Reveal AI™ Platform</h2>
+<p>Oticon Reveal is built on an entirely new foundation. The <strong>Reveal AI platform</strong> is the company's third-generation AI-powered sound processing system, and it is what makes running two independent AI engines at once possible without draining the battery or growing the device. Alongside it, Oticon introduced a <strong>separate, all-new connectivity platform</strong> — a genuine redesign rather than an incremental update.</p>
+
+<div class="tech-columns">
+<div>
+<h3>Speech AI: Access to the Voices That Matter</h3>
+<p>The Speech AI works continuously to identify and enhance the speech of the people around you. Oticon describes it as offering industry-leading access to speech compared to the top three competing manufacturers.</p>
+<p>Crucially, it does this without shutting the rest of the world down. Speech is brought forward, not carved out of silence — which is what allows your brain to keep track of who is speaking, from where, and what else is happening while they do.</p>
+
+<h3>Context AI: The World Stays Where It Belongs</h3>
+<p>Running in parallel, the Context AI recognizes and balances the surrounding contextual sounds that most hearing aids treat as noise to be eliminated. Your brain relies on these cues constantly and unconsciously — to orient you in a space, to track movement behind you, and to reduce the effort of listening.</p>
+<p>This is BrainHearing™ thinking taken a step further: support the brain with a complete, balanced sound scene rather than an artificially narrowed one.</p>
+
+</div>
+<div>
+<h3>A 60% Stronger Brain Response</h3>
+<p>Oticon's clinical research found that Reveal delivers a <strong>60% stronger brain response</strong> than Oticon Intent, attributing the result to what the company calls the world's best combination of the fastest and most precise AI sound processing available.</p>
+<p>In practical terms, a stronger brain response means your auditory system is receiving a clearer, more complete signal to work with — which is what reduces listening fatigue over a long day of conversation.</p>
+
+<h3>Smarter Feedback Prevention</h3>
+<p>Reveal's feedback management system is <strong>30% faster</strong> than previous Oticon technology and delivers <strong>four times the fitting precision</strong>. For your audiologist, that extra precision means more usable gain can be prescribed before feedback becomes a limitation — which directly benefits patients with more significant hearing loss or open fittings.</p>
+
+<h3>Best-Ever Streaming Stability</h3>
+<p>The new connectivity platform provides enhanced signal strength and Oticon's best-ever streaming stability and range for hands-free calls and audio streaming — addressing one of the most common day-to-day frustrations hearing aid wearers report.</p>
+
+</div>
+</div>
+</section>
+<p><!-- Features Section --></p>
+
+<section class="features-section">
+<h2>Key Features That Set Oticon Reveal Apart</h2>
+<div class="features-grid">
+<div class="feature-item">
+<div class="feature-icon">🧠</div>
+<h3>Dual AI System</h3>
+<p>The world's first hearing aid with two dedicated AI systems — one for speech, one for context — working together in real time.</p>
+
+</div>
+<div class="feature-item">
+<div class="feature-icon">📈</div>
+<h3>60% Stronger Brain Response</h3>
+<p>Clinically measured improvement over Oticon Intent, powered by the fastest and most precise AI sound processing available.</p>
+
+</div>
+<div class="feature-item">
+<div class="feature-icon">🎯</div>
+<h3>Auracast™ Built In</h3>
+<p>Tap into public audio broadcasts at theaters, airports, museums, and places of worship through Bluetooth LE Audio.</p>
+
+</div>
+<div class="feature-item">
+<div class="feature-icon">📱</div>
+<h3>Hands-Free Calling</h3>
+<p>Take calls without reaching for your phone, with Oticon's best-ever streaming stability and range.</p>
+
+</div>
+<div class="feature-item">
+<div class="feature-icon">🔋</div>
+<h3>All-Day Rechargeable</h3>
+<p>A compact rechargeable miniRITE design that delivers full-day power on a single charge, even with AI running continuously.</p>
+
+</div>
+<div class="feature-item">
+<div class="feature-icon">👂</div>
+<h3>New CROS Solution</h3>
+<p>A new CROS device launches alongside Reveal, bringing Dual AI performance to patients with single-sided deafness.</p>
+
+</div>
+</div>
+</section>
+<p><!-- Connectivity Section --></p>
+
+<section class="product-section">
+<h2>Future-Ready Connectivity</h2>
+<p>Oticon rebuilt Reveal's wireless system from the ground up on a dedicated new connectivity platform. The goal was straightforward: make streaming something you stop thinking about.</p>
+
+<div class="product-grid">
+<div class="product-card">
+<h3>Bluetooth® LE Audio</h3>
+<p>The current Bluetooth Low Energy Audio standard delivers efficient, high-quality streaming while conserving battery life — and it is the foundation that makes Auracast possible.</p>
+
+</div>
+<div class="product-card">
+<h3>Auracast™ Broadcast</h3>
+<p>Auracast lets you connect directly to public audio broadcasts in theaters, airports, lecture halls, museums, and places of worship. Instead of straining to hear a PA system across a room, the audio arrives straight in your ears.</p>
+
+</div>
+<div class="product-card">
+<h3>Hands-Free Calls &amp; Streaming</h3>
+<p>Enhanced signal strength and Oticon's best-ever streaming stability and range mean fewer dropouts, a longer working distance from your phone, and calls you can take without holding anything.</p>
+
+</div>
+</div>
+</section>
+<p><!-- CROS Section --></p>
+
+<section class="tech-section">
+<h2>A New CROS Solution for Single-Sided Deafness</h2>
+<p>Alongside Reveal, Oticon is introducing a new CROS device. CROS systems are designed for people with little or no usable hearing in one ear: a discreet transmitter worn on the non-hearing side picks up sound and routes it wirelessly to a hearing aid on the better ear, restoring awareness of an entire side of your world.</p>
+<p>Pairing a new CROS with Reveal's Dual AI is a meaningful step for these patients, because context and spatial awareness are exactly what single-sided deafness takes away. If you have been told a CROS system was your only option — or that it would not help much — this is worth a fresh conversation with our audiologists.</p>
+
+</section>
+<p><!-- Fitting Section --></p>
+
+<section class="tech-section">
+<h2>Personalized Fitting at California Hearing Center</h2>
+<p>A brand-new AI platform only performs as well as the fitting behind it. Reveal's Dual AI makes real-time decisions based on the prescription your audiologist programs into it, which means verification is not optional — it is the difference between a hearing aid that sounds impressive in the office and one that works in a crowded restaurant.</p>
+
+<div class="brand-stats-box">
+<h3>Our Expert Fitting Process</h3>
+<ul>
+  <li><strong>Comprehensive Diagnostic Evaluation:</strong> We start by mapping your hearing across the full frequency range, including speech-in-noise testing that reflects the situations you actually struggle with</li>
+  <li><strong>Real Ear Measurement (REM):</strong> We verify that your Reveal devices hit exact prescriptive targets inside your ear canal, rather than relying on manufacturer first-fit assumptions</li>
+  <li><strong>Precision Feedback Calibration:</strong> Reveal's four-times-more-precise feedback system lets us prescribe more usable gain — but only if it is calibrated properly at the fitting</li>
+  <li><strong>Real-World Fine-Tuning:</strong> We adjust based on how the devices perform in your life, not just how they measure in our office</li>
+  <li><strong>Ongoing Support:</strong> Comprehensive training on the app, streaming, and Auracast, plus follow-up care for the life of your devices</li>
+</ul>
+</div>
+<p>Our audiologists have specialized training across Oticon's full product line and will help you determine whether Reveal, Zeal, or Intent is the right match for your hearing profile, your lifestyle, and your budget.</p>
+
+</section>
+<p><!-- Comparison Table --></p>
+
+<section>
+<h2>Oticon Reveal vs. Oticon Zeal vs. Oticon Intent</h2>
+<p>California Hearing Center now offers three current Oticon flagships. They are not competing with each other — they answer three different questions.</p>
+
+<table class="comparison-table">
+<thead>
+<tr>
+<th>Feature</th>
+<th>Oticon Reveal</th>
+<th>Oticon Zeal</th>
+<th>Oticon Intent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The core strength</td>
+<td>Most advanced sound processing</td>
+<td>Most discreet</td>
+<td>Proven all-rounder</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>Reveal AI (3rd-generation AI)</td>
+<td>Sirius</td>
+<td>Sirius</td>
+</tr>
+<tr>
+<td>AI processing</td>
+<td>Dual AI (Speech AI + Context AI)</td>
+<td>Deep Neural Network 2.0</td>
+<td>Deep Neural Network 2.0</td>
+</tr>
+<tr>
+<td>Style</td>
+<td>Compact rechargeable miniRITE</td>
+<td>Invisible in-the-ear (NXT CIC)</td>
+<td>miniRITE and additional styles</td>
+</tr>
+<tr>
+<td>Visibility</td>
+<td>Discreet behind the ear</td>
+<td>Invisible in 94% of users</td>
+<td>Discreet behind the ear</td>
+</tr>
+<tr>
+<td>Bluetooth LE Audio + Auracast</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>CROS option</td>
+<td>Yes — new CROS at launch</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Best suited to</td>
+<td>Patients who want the strongest speech-in-noise performance available</td>
+<td>Patients for whom discretion is the deciding factor</td>
+<td>Patients wanting proven technology across more price points</td>
+</tr>
+</tbody>
+</table>
+</section>
+<p><!-- FAQs Section --></p>
+
+<section class="faqs-section">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<h3>What is Dual AI, and why does it matter?</h3>
+<p>Dual AI means Oticon Reveal runs two dedicated artificial intelligence systems at the same time instead of one. The Speech AI continuously identifies and enhances the speech of people around you, while the Context AI recognizes and balances the meaningful sounds that make up your surroundings. Most hearing aids use a single AI focused on isolating speech and aggressively suppressing everything else. Reveal is the first to give context its own dedicated processing, so your brain receives a complete sound picture rather than a narrowed one.</p>
+
+</div>
+<div class="faq-item">
+<h3>How is Oticon Reveal different from Oticon Intent?</h3>
+<p>Reveal is built on an entirely new platform — the Reveal AI platform, Oticon's third-generation AI sound processing system — while Intent uses the Sirius platform with Deep Neural Network 2.0. Oticon's research measured a 60% stronger brain response with Reveal compared to Intent. Reveal also adds an all-new connectivity platform with improved streaming stability and range, and faster, far more precise feedback prevention.</p>
+
+</div>
+<div class="faq-item">
+<h3>What does "60% stronger brain response" actually mean?</h3>
+<p>Oticon measures brain response using research that observes how clearly and completely the brain receives and processes the sound signal a hearing aid delivers. A stronger response indicates the auditory system is getting a richer, more usable signal to work with. Practically, patients tend to experience this as less listening effort and less fatigue at the end of a long day of conversation. This figure compares Reveal to Oticon Intent.</p>
+
+</div>
+<div class="faq-item">
+<h3>Does Oticon Reveal support Auracast?</h3>
+<p>Yes. Auracast broadcast technology is built into Oticon Reveal through Bluetooth LE Audio. Auracast allows you to connect directly to public audio broadcasts in venues like theaters, airports, lecture halls, museums, and places of worship — the audio streams straight to your hearing aids instead of competing with room noise. Auracast venues are expanding steadily across the U.S., and the Bay Area is among the earlier adopters.</p>
+
+</div>
+<div class="faq-item">
+<h3>Can I take phone calls hands-free with Reveal?</h3>
+<p>Yes. Oticon Reveal supports hands-free calling and direct audio streaming, and its new connectivity platform delivers Oticon's best-ever streaming stability and range. That means you can leave your phone on the table and still take the call clearly.</p>
+
+</div>
+<div class="faq-item">
+<h3>Is Oticon Reveal rechargeable, and how long does the battery last?</h3>
+<p>Yes, Reveal uses a rechargeable battery designed to deliver full-day power on a single charge, even with the Dual AI system running continuously. Oticon notes that actual battery performance varies based on usage, particularly how much you stream. We will confirm exact runtime figures for your specific configuration at your fitting appointment.</p>
+
+</div>
+<div class="faq-item">
+<h3>What style does Oticon Reveal come in?</h3>
+<p>Oticon Reveal launched in a compact, rechargeable miniRITE style — a discreet receiver-in-the-ear design worn behind the ear. A new CROS device for single-sided deafness is launching alongside it. If additional styles become available, we will update this page and our patients accordingly.</p>
+
+</div>
+<div class="faq-item">
+<h3>How much does Oticon Reveal cost?</h3>
+<p>Oticon is releasing Reveal across four technology levels, so pricing varies with the level of processing you need. The right level depends on how demanding your listening environments are — someone who works in open offices and eats out frequently benefits from a higher level than someone in quieter surroundings. We discuss pricing transparently at your consultation and will help you find the level that gives you the most benefit for your budget. Call (650) 342-9449 for current pricing.</p>
+
+</div>
+<div class="faq-item">
+<h3>Should I choose Oticon Reveal or Oticon Zeal?</h3>
+<p>It comes down to your first priority. Zeal is the answer when discretion is the deciding factor — it is invisible or barely visible in 94% of users. Reveal is the answer when you want the most advanced sound processing available and you are comfortable with a discreet behind-the-ear design. Both offer Bluetooth LE Audio and Auracast. Our audiologists will help you weigh the trade-off during your consultation.</p>
+
+</div>
+<div class="faq-item">
+<h3>I have hearing in only one ear. Can Reveal help?</h3>
+<p>Possibly, yes. Oticon is launching a new CROS device alongside Reveal, designed specifically for single-sided deafness. A CROS system captures sound from your non-hearing side and routes it wirelessly to a device on your better ear, restoring awareness of a side of the world you have been missing. Schedule an evaluation and we will assess whether a CROS configuration is appropriate for you.</p>
+
+</div>
+</section>
+<p><!-- CTA Section --></p>
+
+<section class="cta-section">
+<h2>Experience Dual AI for Yourself</h2>
+<p>Oticon Reveal is one of the most significant advances in hearing technology in years — but the only measure that matters is how it sounds in your ears, in your life. For over 30 years, California Hearing Center has helped thousands of Bay Area patients hear better through expert fitting and honest guidance.</p>
+<p><a href="https://calhearing.com/contact" class="cta-button">Schedule Your Consultation</a></p>
+<p style="margin-top: 20px;">Or call us at (650) 342-9449</p>
+
+</section>
+<p><!-- Related Brands Section --></p>
+
+<section class="related-brands">
+<h2>Explore Other Premium Hearing Aid Brands</h2>
+<p>At California Hearing Center, we offer a comprehensive selection of hearing aid brands to ensure you find the perfect match for your hearing needs, preferences, and budget.</p>
+
+<div class="brand-logo-grid">
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/oticon-zeal/">Oticon Zeal</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/oticon/">Oticon Intent</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/widex/">Widex</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/starkey/">Starkey</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/phonak/">Phonak</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/resound/">ReSound</a></div>
+<div class="brand-logo-item"><a href="https://calhearing.com/products/hearing-aids-by-brand/signia/">Signia</a></div>
+</div>
+</section>
+<p><!-- Source Note --></p>
+
+<section>
+<p class="source-note">Product information on this page reflects Oticon's official announcement of August 11, 2026. Performance claims are Oticon's own and are supported by the company's published research: brain response findings per Zapata-Rodríguez et al. (2026); speech access per Denker (2026), compared to the top three competitors; contextual sound findings per Man &amp; With (2026); streaming performance per Brændgaard &amp; Wassard (2026). Rechargeable battery performance varies based on usage. Individual results vary. This page will be updated as Oticon publishes additional specifications.</p>
+
+</section>
+<p><!-- Schema Markup for SEO --></p>
+
+<div class="schema-data"><script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "Oticon Reveal",
+              "description": "The world's first hearing aid powered by Dual AI, combining a dedicated Speech AI and Context AI on the new Reveal AI platform, with Bluetooth LE Audio, Auracast, hands-free calling, and all-day rechargeability.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Oticon"
+              },
+              "category": "Hearing Aids",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "availabilityStarts": "2026-08-11",
+                "seller": {
+                  "@type": "LocalBusiness",
+                  "name": "California Hearing Center",
+                  "telephone": "+1-650-342-9449",
+                  "url": "https://calhearing.com/"
+                }
+              }
+            }
+            </script><script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Dual AI, and why does it matter?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dual AI means Oticon Reveal runs two dedicated artificial intelligence systems at the same time instead of one. The Speech AI continuously identifies and enhances the speech of people around you, while the Context AI recognizes and balances the meaningful sounds that make up your surroundings. Most hearing aids use a single AI focused on isolating speech and aggressively suppressing everything else. Reveal is the first to give context its own dedicated processing, so your brain receives a complete sound picture rather than a narrowed one."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How is Oticon Reveal different from Oticon Intent?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Reveal is built on an entirely new platform, the Reveal AI platform, Oticon's third-generation AI sound processing system, while Intent uses the Sirius platform with Deep Neural Network 2.0. Oticon's research measured a 60% stronger brain response with Reveal compared to Intent. Reveal also adds an all-new connectivity platform with improved streaming stability and range, and faster, far more precise feedback prevention."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Does Oticon Reveal support Auracast?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Auracast broadcast technology is built into Oticon Reveal through Bluetooth LE Audio. Auracast allows you to connect directly to public audio broadcasts in venues like theaters, airports, lecture halls, museums, and places of worship."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is Oticon Reveal rechargeable, and how long does the battery last?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Reveal uses a rechargeable battery designed to deliver full-day power on a single charge, even with the Dual AI system running continuously. Oticon notes that actual battery performance varies based on usage, particularly how much you stream."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What style does Oticon Reveal come in?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oticon Reveal launched in a compact, rechargeable miniRITE style, a discreet receiver-in-the-ear design worn behind the ear. A new CROS device for single-sided deafness is launching alongside it."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Should I choose Oticon Reveal or Oticon Zeal?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "It comes down to your first priority. Zeal is the answer when discretion is the deciding factor, as it is invisible or barely visible in 94% of users. Reveal is the answer when you want the most advanced sound processing available and you are comfortable with a discreet behind-the-ear design. Both offer Bluetooth LE Audio and Auracast."
+                  }
+                }
+              ]
+            }
+            </script><script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "VideoObject",
+              "name": "Highlights of Oticon Reveal",
+              "description": "Oticon's official introduction to the Oticon Reveal hearing aid and its Dual AI sound processing system.",
+              "uploadDate": "2026-08-11",
+              "embedUrl": "https://www.youtube.com/embed/79BU3IIjKrY",
+              "thumbnailUrl": "https://i.ytimg.com/vi/79BU3IIjKrY/hqdefault.jpg"
+            }
+            </script></div>
+</div>

@@ -44,3 +44,13 @@ next-env.d.ts
 /work/
 .claude-push
 .claude-push-log
+
+# TypeScript incremental build cache — regenerated on every build, so tracking
+# it just produces a dirty working tree and noise in every diff.
+tsconfig.tsbuildinfo
+
+# Local scratch: stale git lock files and old working copies. Not part of the
+# site, kept out of the repo rather than deleted so nothing is lost by accident.
+# matches at any depth: there is a superseded-drafts folder inside marketing/ too
+_to_delete/
+_migration/.*-tmp.txt
