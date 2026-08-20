@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { crawledPages } from "./data/crawledPages";
 import { redirectedPaths } from "./data/redirectedPaths";
-import { blogPosts } from "./data/blogPosts";
+import { contentDates } from "./data/contentDates";
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
 
@@ -23,14 +23,15 @@ function priorityFor(path: string): number {
   return 0.5;
 }
 
-// lastmod is only emitted where we have a real editorial date. Stamping every
-// URL with the build time — which is what this did — tells Google that all 362
-// pages changed on every deploy. That is false, and a lastmod that is provably
-// unreliable is a signal Google learns to discount entirely. The 138 enriched
-// blog posts carry genuine dates; everything else is better off saying nothing.
+// Every URL gets a real lastmod, from app/data/contentDates.ts — blog posts use
+// their editorial dateModified, every other page uses the git commit date of the
+// content fragment it is built from. Two things this deliberately avoids: the
+// build timestamp (which claimed all 362 pages changed on every deploy, and a
+// provably wrong lastmod is one Google discounts site-wide), and omitting the
+// field (which throws away information that genuinely exists).
+// Regenerate with: node _migration/genContentDates.mjs
 function lastModifiedFor(path: string): Date | undefined {
-  const post = blogPosts[path];
-  const date = post?.dateModified || post?.datePublished;
+  const date = contentDates[path];
   return date ? new Date(date) : undefined;
 }
 
