@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { AI_REFERRAL_SOURCE, OFFICES, REASONS, REFERRAL_SOURCES, allowed } from "../../lib/contactForm";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -9,6 +10,10 @@ export const dynamic = "force-dynamic";
 // the practice runs two offices. No PHI is collected.
 
 type ContactPayload = {
+  // Optional and self-reported: how the patient found the practice, and — when
+  // that was an AI assistant — what they actually typed. Neither is clinical.
+  aiPrompt?: string;
+  referralSource?: string;
   context?: string;
   email?: string;
   message?: string;
@@ -68,6 +73,8 @@ function textBody(payload: FullPayload) {
     `Preferred office: ${payload.office || "Not specified"}`,
     `Reason: ${payload.reason || "Not specified"}`,
     `Page: ${payload.pageUrl || "Not provided"}`,
+    `Found us via: ${payload.referralSource || "Not provided"}`,
+    ...(payload.aiPrompt ? [`AI prompt used: ${payload.aiPrompt}`] : []),
     "",
     "Message:",
     payload.message || "(none)",
@@ -84,7 +91,9 @@ function htmlBody(payload: FullPayload) {
     ["Email", payload.email || "Not provided"],
     ["Preferred office", payload.office || "Not specified"],
     ["Reason", payload.reason || "Not specified"],
-    ["Page", payload.pageUrl || "Not provided"]
+    ["Page", payload.pageUrl || "Not provided"],
+    ["Found us via", payload.referralSource || "Not provided"],
+    ...(payload.aiPrompt ? [["AI prompt used", payload.aiPrompt]] : [])
   ];
 
   return `
@@ -164,15 +173,24 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true });
     }
 
+    // Accept only values the form actually offers. The selects stop a person
+    // sending anything else, but this endpoint is public and a direct POST is
+    // not bound by the markup.
+    const referralSource = allowed(clean(body.referralSource, 120), REFERRAL_SOURCES);
+
     const payload: FullPayload = {
+      // Kept only when the patient said they came from an AI assistant, so a
+      // stray value on any other path is dropped rather than recorded.
+      aiPrompt: referralSource === AI_REFERRAL_SOURCE ? clean(body.aiPrompt, 500) : "",
       context: clean(body.context, 120) || "Website contact form",
       email: clean(body.email, 254),
       message: clean(body.message, 4000),
       name: clean(body.name, 120),
-      office: clean(body.office, 80),
+      office: allowed(clean(body.office, 80), OFFICES),
       pageUrl: clean(body.pageUrl, 500),
       phone: clean(body.phone, 80),
-      reason: clean(body.reason, 120)
+      reason: allowed(clean(body.reason, 120), REASONS),
+      referralSource
     };
 
     if (!payload.name || (!payload.phone && !payload.email)) {

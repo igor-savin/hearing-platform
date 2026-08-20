@@ -1,25 +1,21 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-
-const REASONS = [
-  "Hearing test / evaluation",
-  "Hearing aids",
-  "Tinnitus or sound sensitivity",
-  "Hearing aid repair",
-  "Insurance or cost question",
-  "Something else",
-];
+import { AI_REFERRAL_SOURCE, REASONS, REFERRAL_SOURCES } from "../lib/contactForm";
 
 type Status = "idle" | "sending" | "success" | "error";
 
 // Mirrors the Audiology Associates of Westchester ContactForm flow: same
 // /api/contact endpoint contract (Resend), the same `website` honeypot, and the
 // same dataLayer/fbq success events — so both sister sites behave identically.
-// CHC keeps its own styling and adds preferred-office + reason. No PHI collected.
+// CHC keeps its own styling and adds preferred-office + reason. It also carries
+// Westchester's referral question, including the follow-up that captures what a
+// patient typed into an AI assistant — that traffic arrives with no referrer
+// and no search terms, so asking is the only way to measure it. No PHI collected.
 export function LeadForm({ context = "Contact page" }: { context?: string }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
+  const [referralSource, setReferralSource] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -40,6 +36,8 @@ export function LeadForm({ context = "Contact page" }: { context?: string }) {
           email: String(data.get("email") || ""),
           office: String(data.get("office") || ""),
           reason: String(data.get("reason") || ""),
+          referralSource: String(data.get("referralSource") || ""),
+          aiPrompt: String(data.get("aiPrompt") || ""),
           message: String(data.get("message") || ""),
           pageUrl: typeof window !== "undefined" ? window.location.href : "",
           website: String(data.get("website") || ""),
@@ -128,6 +126,28 @@ export function LeadForm({ context = "Contact page" }: { context?: string }) {
             {REASONS.map((r) => <option key={r} value={r}>{r}</option>)}
           </select>
         </label>
+        <label className="lead-field lead-span">
+          <span>How did you find us? <em className="lead-optional">(optional)</em></span>
+          <select
+            name="referralSource"
+            value={referralSource}
+            onChange={(event) => setReferralSource(event.target.value)}
+          >
+            <option value="">Prefer not to say</option>
+            {REFERRAL_SOURCES.map((r) => <option key={r} value={r}>{r}</option>)}
+          </select>
+        </label>
+        {referralSource === AI_REFERRAL_SOURCE ? (
+          <label className="lead-field lead-span">
+            <span>What did you ask it? <em className="lead-optional">(optional — helps us a lot)</em></span>
+            <input
+              type="text"
+              name="aiPrompt"
+              maxLength={500}
+              placeholder="e.g. best audiologist near San Mateo for tinnitus"
+            />
+          </label>
+        ) : null}
         <label className="lead-field lead-span">
           <span>Anything else? <em className="lead-optional">(optional — please don’t include medical details)</em></span>
           <textarea name="message" rows={3} maxLength={600} />
