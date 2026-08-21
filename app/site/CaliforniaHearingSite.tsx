@@ -38,6 +38,7 @@ export type PageContent = {
   image2?: string;
   image2Label?: string;
   image2Caption?: string;
+  image2Href?: string;      // makes image2 clickable — opens the full-size asset in a new tab
   variant?: string;        // per-archetype visual treatment
   datePublished?: string;  // ISO date (original publish) for BlogPosting schema
   dateModified?: string;   // ISO date of last real edit
@@ -1610,7 +1611,19 @@ function InnerPage({ page }: { page: SitePage }) {
                 <p dangerouslySetInnerHTML={{ __html: linkify(text) }} />
                 {content.image2 && index === 2 && (
                   <figure className="body-figure">
-                    <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                    {content.image2Href ? (
+                      <a
+                        href={content.image2Href}
+                        target="_blank"
+                        rel="noopener"
+                        aria-label={`${content.image2Label || "Figure"} — open the full-size version`}
+                        style={{ display: "block", cursor: "zoom-in" }}
+                      >
+                        <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                      </a>
+                    ) : (
+                      <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                    )}
                     {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
                   </figure>
                 )}
