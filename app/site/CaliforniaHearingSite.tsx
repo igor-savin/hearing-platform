@@ -100,6 +100,7 @@ const nav: NavItem[] = [
       ["Free Second Opinion", "/hearing-aid-second-opinion/"],
       ["Senior Living Outreach", "/senior-living/", [
         ["Community Hearing Program", "/senior-living/"],
+        ["Request a Visit", "/senior-living/request-a-visit/"],
         ["For Families in San Mateo County", "/san-mateo-county-senior-living/"],
       ]],
       ["Tinnitus Therapy", "/services/tinnitus-therapy/", [
@@ -1513,7 +1514,9 @@ function InnerPage({ page }: { page: SitePage }) {
   const isCore = !!corePages[page.path];
   // The careers page is the one page whose calls to action are not for patients.
   const isCareer = page.path === "/about-us/career/";
-  const isContact = page.path.includes("/contact/");
+  // Pages where someone gets in touch: the contact pages, plus the senior-living
+  // visit request. Gates the office maps and the lead form.
+  const isContact = page.path.includes("/contact/") || page.path === "/senior-living/request-a-visit/";
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
   const videoId = pageVideos[page.path];
   const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page), personSchema(page, content), videoSchema(page, content)].filter(Boolean);

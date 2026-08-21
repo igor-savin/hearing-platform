@@ -1769,6 +1769,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+  "path": "/senior-living/request-a-visit/",
+  "title": "Request a Community Hearing Visit | California Hearing Center",
+  "h1": "Request a Visit for Your Community",
+  "desc": "Book a free hearing care visit for your Peninsula senior living community. Send two or three dates; no fee, no contract, no minimum number of residents.",
+  "h2": [],
+  "paragraphs": []
+  },
+  {
     "path": "/products/hearing-aids-by-brand/oticon/oticon-zeal/",
     "title": "Oticon Zeal | California Hearing Center",
     "h1": "Oticon Zeal",

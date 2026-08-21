@@ -485,6 +485,7 @@ export const contentDates: Record<string, string> = {
   "/san-mateo-county-senior-living/": "2026-08-21",
   "/self-driving-cars-hearing-aids-waymo-accessibility/": "2026-08-19",
   "/senior-living/": "2026-08-21",
+  "/senior-living/request-a-visit/": "2026-08-21",
   "/services/": "2026-07-25",
   "/services/earwax-removal/": "2026-07-25",
   "/services/hearing-aid-repair/": "2026-07-25",

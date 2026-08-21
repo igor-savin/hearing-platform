@@ -16,6 +16,7 @@
     ["Communities we already serve", "We care for residents and families from senior communities throughout San Mateo and the wider Peninsula, including [Atria Park of San Mateo](/atria-park-of-san-mateo/), [Sunrise of San Mateo](/sunrise-of-san-mateo/), [The Peninsula Regent](/the-peninsula-regent/), and [The Stratford](/the-stratford/), among others across [San Mateo County](/san-mateo-county-senior-living/). If your community is not on that list, that is not a reason to hesitate — most of the communities we visit reached out to us first."]
   ],
   bulletLinks: [
+    ["Request a visit for your community", "/senior-living/request-a-visit/"],
     ["Download the one-page program summary (PDF)", "/assets/senior-living-handout.pdf"],
     ["Book a hearing test", "/hearing-testing/"],
     ["Free second opinion on hearing aids", "/hearing-aid-second-opinion/"],
@@ -26,7 +27,7 @@
   takeaways: [
     "We serve Peninsula senior living communities two ways — an on-site visit at your community, or a dedicated group clinic day when your bus brings residents to us.",
     "Both are free to the community and to residents, we work on any brand from any provider, and we do not sell anything on site.",
-    "To arrange a visit, call 650-342-9449 or email infochc@hearing-care.org with two or three dates that fit your activities calendar."
+    "To arrange a visit, use the [request form](/senior-living/request-a-visit/), call 650-342-9449, or email infochc@hearing-care.org with two or three dates that fit your activities calendar."
   ],
   faqs: [
     ["What does the program cost our community?", "Nothing. There is no fee, no contract, no minimum number of residents, and no obligation to continue after a first visit. We ask for a common room, about 45 minutes on your calendar, and a mention in your resident newsletter."],

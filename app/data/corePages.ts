@@ -2160,6 +2160,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Communities we already serve", "We care for residents and families from senior communities throughout San Mateo and the wider Peninsula, including [Atria Park of San Mateo](/atria-park-of-san-mateo/), [Sunrise of San Mateo](/sunrise-of-san-mateo/), [The Peninsula Regent](/the-peninsula-regent/), and [The Stratford](/the-stratford/), among others across [San Mateo County](/san-mateo-county-senior-living/). If your community is not on that list, that is not a reason to hesitate — most of the communities we visit reached out to us first."]
   ],
   bulletLinks: [
+    ["Request a visit for your community", "/senior-living/request-a-visit/"],
     ["Download the one-page program summary (PDF)", "/assets/senior-living-handout.pdf"],
     ["Book a hearing test", "/hearing-testing/"],
     ["Free second opinion on hearing aids", "/hearing-aid-second-opinion/"],
@@ -2170,7 +2171,7 @@ const rawCorePages: Record<string, PageContent> = {
   takeaways: [
     "We serve Peninsula senior living communities two ways — an on-site visit at your community, or a dedicated group clinic day when your bus brings residents to us.",
     "Both are free to the community and to residents, we work on any brand from any provider, and we do not sell anything on site.",
-    "To arrange a visit, call 650-342-9449 or email infochc@hearing-care.org with two or three dates that fit your activities calendar."
+    "To arrange a visit, use the [request form](/senior-living/request-a-visit/), call 650-342-9449, or email infochc@hearing-care.org with two or three dates that fit your activities calendar."
   ],
   faqs: [
     ["What does the program cost our community?", "Nothing. There is no fee, no contract, no minimum number of residents, and no obligation to continue after a first visit. We ask for a common room, about 45 minutes on your calendar, and a mention in your resident newsletter."],
@@ -2187,6 +2188,42 @@ const rawCorePages: Record<string, PageContent> = {
   image2Label: "California Hearing Center community hearing program summary",
   image2Href: "/assets/senior-living-handout.webp",
   image2Caption: "The one-page summary we send to activity and wellness directors — click it to open the full-size version, or download the PDF from the links above."
+},
+  "/senior-living/request-a-visit/": {
+  kicker: "Community Hearing Program",
+  headline: "Request a Visit for Your Community",
+  intro: [
+    "Send us two or three dates that fit your activities calendar and we will take it from there. There is no fee, no contract, no minimum number of residents, and no obligation to continue after a first visit. Use the form at the bottom of this page, or call 650-342-9449 and ask for the community hearing program.",
+    "This page is for activity, wellness, and executive directors arranging a visit for a senior living community on the Peninsula. If you are a family member trying to get help for a parent, you want [choosing hearing care for an older parent](/san-mateo-county-senior-living/) instead — or simply call us."
+  ],
+  sections: [
+    ["What happens after you send us dates", "We reply within one business day and confirm one of your dates. You then get a print-ready flyer and a short blurb for your resident newsletter, so people know to bring their devices, and one named contact to text or email rather than a general phone line. On the day we arrive early, set up in whatever space you have given us, and leave it as we found it. Afterwards we send you a short note on what we saw — how many residents came, how many devices needed real service, and whether a group clinic day would be worth scheduling."],
+    ["What we will need from you", "Very little. A common room or activity space, roughly 45 to 60 minutes on your calendar, and a mention in your newsletter or on your activity board. It helps enormously if residents are told to bring their hearing aids, chargers, and any spare domes or filters they have, because a great deal of what we fix is fixed on the spot. If you would like us to see care staff as well as residents, say so when you write and we will add a short in-service session."],
+    ["Paperwork, insurance, and credentials", "We carry professional liability insurance and can send a certificate of insurance, W-9, and clinician licences before the visit — just tell us what your vendor process requires and who it should go to. If your community is part of a larger group with a corporate approval process, we are happy to go through it; it is routine and we would rather do it properly than turn up and be turned away at reception."],
+    ["What it will and will not be", "It will be a talk residents enjoy, hearing aid cleaning and function checks, and honest troubleshooting on any brand from any provider. It will not be a sales presentation. Nothing is sold on site, and no resident is put under any pressure. If someone turns out to need testing or a repair that cannot be done in a community room, we tell them plainly and they decide what they want to do — including doing nothing."]
+  ],
+  bulletLinks: [
+    ["About the community hearing program", "/senior-living/"],
+    ["Download the one-page summary (PDF)", "/assets/senior-living-handout.pdf"],
+    ["For families of a resident", "/san-mateo-county-senior-living/"],
+    ["Our San Mateo office", "/contact/san-mateo/"],
+    ["Our San Carlos office", "/contact/san-carlos/"]
+  ],
+  takeaways: [
+    "Send two or three dates that fit your activities calendar — by the form below, by email to infochc@hearing-care.org, or by calling 650-342-9449.",
+    "No fee, no contract, no minimum number of residents, and no obligation after a first visit.",
+    "Certificate of insurance, W-9, and clinician licences are available before the visit for any vendor approval process."
+  ],
+  faqs: [
+    ["How far ahead do we need to book?", "Two to four weeks is comfortable, mostly so your newsletter can carry the notice and residents remember to bring their devices. If you have a gap to fill sooner, write to us anyway — we can sometimes move quickly."],
+    ["How many residents should we expect?", "It varies widely, and it does not matter much to us. We have run sessions for six residents and for thirty. What we ask is that the time is on your published calendar, because turnout is far better when it is a scheduled activity than when it is announced on the day."],
+    ["Do you need anything special in the room?", "A table, a few chairs, decent light, and a power outlet if one is handy. We bring everything else. A quieter room is better than a large one, because much of the value is in conversation with individual residents."],
+    ["What if our residents use hearing aids from many different providers?", "That is the normal case and it is not a problem. We work on any brand from any provider, including devices bought from a big-box retailer, ordered online, or fitted somewhere the resident has since moved away from."],
+    ["Can you come back regularly?", "Yes, and most communities end up wanting that. Quarterly suits many; some prefer monthly. We would rather you try one visit first and decide afterwards than commit to a schedule before you have seen what it is like."]
+  ],
+  image: "/assets/core/senior-living.svg",
+  imageLabel: "Request a community hearing visit",
+  imageAlt: "Arranging a California Hearing Center visit for a Peninsula senior living community"
 },
   "/services/": {
   kicker: "Audiology Services",

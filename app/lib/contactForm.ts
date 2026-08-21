@@ -25,6 +25,7 @@ export const REASONS = [
   "Hearing aids",
   "Tinnitus or sound sensitivity",
   "Hearing aid repair",
+  "Senior living community visit",
   "Insurance or cost question",
   "Something else",
 ];
