@@ -76,8 +76,8 @@ const nav: NavItem[] = [
       ["Kira Savin", "/about-us/kira-savin/"],
       ["Lais Ama", "/about-us/lais-ama/"],
       ["Giana Hatem", "/about-us/giana-hatem/"],
-      ["Jennifer Ratner", "/about-us/jennifer-ratner/"],
       ["Darcy Benson", "/about-us/darcy-benson/"],
+      ["Jennifer Ratner", "/about-us/jennifer-ratner/"],
       ["Emily McMahan", "/about-us/emily-mcmahan/"],
       ["Jarna Kothari", "/about-us/jarna-kothari/"],
       ["Career", "/about-us/career/"],
@@ -190,13 +190,12 @@ const featuredRoutes = [
 // are drawn from each person's own bio page — the strongest trust signal the
 // practice has, and previously only reachable via a bare list of names.
 const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: string; image: string }[] = [
-  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD · Founder", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/darcy-benson.webp" },
   { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/thumb/kira-savin.webp" },
-  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
-  { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/jennifer-ratner.webp" },
+  { slug: "lais-ama", name: "Lais Ama", credential: "Director of Hearing Aid Services", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama.webp" },
   { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem.webp" },
-  { slug: "lais-ama", name: "Lais Ama", credential: "B.S., Hearing Instrument Specialist", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama.webp" },
-  { slug: "sierra-melendez", name: "Sierra Melendez", credential: "Doctor of Audiology Extern", hook: "Final-year AuD candidate at the University of the Pacific.", image: "/assets/team/thumb/sierra-melendez.webp" },
+  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/darcy-benson.webp" },
+  { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/jennifer-ratner.webp" },
+  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
   { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari.webp" },
 ];
 

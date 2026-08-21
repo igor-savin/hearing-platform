@@ -1,6 +1,6 @@
 "/about-us/lais-ama/": {
   kicker: "Meet the Team",
-  headline: "Lais Ama, B.S., Hearing Instrument Specialist",
+  headline: "Lais Ama, Director of Hearing Aid Services",
   intro: [
     "Lais Ama, hearing specialist, brings to the practice {{yearsLais}} years of experience in providing hearing care from her native country of Brazil. There she worked with the Pontificia Universidade Catholica in Sao Paolo, providing clinical services and presenting research papers on vestibular rehabilitation and the effects of ototoxic drugs on the auditory system.",
     "She also completed an internship at the University of Bordeaux, France, where she was involved with clinical audiology services, hearing aids, and vestibular rehabilitation."
@@ -16,13 +16,13 @@
     "Experience serving both children and adults"
   ],
   takeaways: [
-    "Hearing Instrument Specialist with {{yearsLais}} years of experience, originally from Brazil.",
+    "Director of Hearing Aid Services with {{yearsLais}} years of experience, originally from Brazil.",
     "Holds a B.S. in Audiology and Speech Pathology and is licensed in California as a hearing aid dispenser."
   ],
   faqs: [
     ["How do I schedule with Lais?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
   image: "/assets/team/lais-ama.jpg",
-  imageLabel: "Lais Ama, Hearing Instrument Specialist",
-  imageAlt: "Lais Ama, Hearing Instrument Specialist at California Hearing Center",
+  imageLabel: "Lais Ama, Director of Hearing Aid Services",
+  imageAlt: "Lais Ama, Director of Hearing Aid Services at California Hearing Center",
 },

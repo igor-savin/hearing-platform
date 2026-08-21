@@ -7,6 +7,8 @@ const blogRedirects = [
   // WordPress draft/duplicate cruft → homepage.
   { source: "/home-new/", destination: "/", permanent: true },
   { source: "/california-hearing-center-4/", destination: "/", permanent: true },
+  // Sierra Melendez departed the practice (Aug 2026); her bio page is retired.
+  { source: "/about-us/sierra-melendez/", destination: "/about-us/", permanent: true },
   // Dead WooCommerce scaffolding on the legacy site (plugin installed, no storefront:
   // /shop/ 404s and there is no product sitemap). Redirect so old links don't 404.
   { source: "/cart/", destination: "/products/hearing-aids/", permanent: true },
@@ -414,6 +416,18 @@ const nextConfig: NextConfig = {
         // silently break video and analytics.
         source: "/:path*",
         headers: [
+          // HSTS matches the sister practice (Audiology Associates of
+          // Westchester). Vercel sends this automatically on *.vercel.app but
+          // NOT on custom domains, so it has to be set here for calhearing.com.
+          // includeSubDomains is safe: the pre-cutover zone
+          // (_migration/cutover/zone-calhearing-pre-cutover.txt) contains only
+          // the apex and www as web hosts, both served over HTTPS by Vercel.
+          // Mail is Google Workspace on external hostnames, which HSTS does
+          // not touch. Two years, preload-eligible.
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },

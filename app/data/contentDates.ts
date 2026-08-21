@@ -21,7 +21,6 @@ export const contentDates: Record<string, string> = {
   "/about-us/jennifer-ratner/": "2026-07-24",
   "/about-us/kira-savin/": "2026-07-24",
   "/about-us/lais-ama/": "2026-08-15",
-  "/about-us/sierra-melendez/": "2026-07-24",
   "/accommodate-your-loved-ones-with-hearing-loss/": "2026-08-19",
   "/adjusting-to-new-hearing-aids/": "2026-07-23",
   "/age-related-hearing-loss-understanding-managing-and-preventing-it/": "2026-07-23",

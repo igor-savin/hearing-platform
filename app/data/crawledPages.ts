@@ -665,14 +665,6 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
-    "path": "/about-us/sierra-melendez/",
-    "title": "Sierra Melendez | California Hearing Center",
-    "h1": "Sierra Melendez",
-    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
-    "h2": [],
-    "paragraphs": []
-  },
-  {
     "path": "/about-us/darcy-benson/",
     "title": "Darcy Benson | California Hearing Center",
     "h1": "Darcy Benson",
