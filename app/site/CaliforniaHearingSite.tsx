@@ -720,8 +720,23 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     `${cap(driveDesc)}. ${profile.landmarks ?? ""} ${closer}`.replace(/\s+/g, " ").trim(),
   ];
 
-  // Order: signature hook, then the local-scene detail, then directions.
-  const sections: [string, string][] = [profile.hook, profile.localScene, gettingHere];
+  // What technology we actually fit, rotated per city so 40+ area pages do not
+  // share one identical block (the doorway-content risk this file exists to avoid).
+  // Six genuinely different angles rather than six rewordings of one.
+  const latestTech: [string, string] = [
+    "The hearing aids we fit",
+    pickFrom((citySlugFromPath(page.path) || name) + ":tech", [
+      `2026 has been an unusually busy year for hearing aid platforms, and we fit the current flagship from every major manufacturer at our ${office} office — including [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/), which launched in August running two AI systems at once. New is not the same as better, and we will say so if an older platform or a lower technology tier suits your hearing and your budget more honestly.`,
+      `We are an independent practice, which means no manufacturer sets our recommendations. Patients from ${name} get a real [comparison across brands](/products/hearing-aids-by-brand/) — Oticon, Phonak, Starkey, ReSound, Widex, Signia — matched to the rooms you actually struggle in rather than to whichever supplier has a target this quarter. If you want to hear the newest [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/) against something else, we will set both up in one visit.`,
+      `Nearly every premium hearing aid now advertises artificial intelligence, and the word means five different things depending on who is using it. We [explain what is actually inside them](/what-is-dual-ai-in-hearing-aids/) rather than repeating the brochure, and we will show you the independent laboratory measurements for anything we recommend — including where the newest device has not been measured at all yet.`,
+      `Bluetooth has finally moved on. The newest devices, [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/) among them, support LE Audio and Auracast broadcast audio, which lets you receive sound directly in venues that offer it. Several competing flagships still list it as pending a firmware update. If loops, theatres or lecture halls matter to your week, that difference is worth getting right before you buy, and we will check it against where you actually go.`,
+      `If tinnitus is part of why you are looking, technology choice narrows quickly — one current flagship has no tinnitus program at all, while others build in configurable sound therapy. Our ${office} office covers both the devices and the wider [tinnitus care](/services/tinnitus-therapy/) around them, so the conversation is not only about which hearing aid.`,
+      `We keep demonstration units of the current platforms at our ${office} office, so patients from ${name} can hear the difference rather than read about it. A demonstration takes about half an hour and costs nothing. Bring a recent audiogram if you have one, or we can test first — and whatever you choose, the fitting is verified with [real-ear measurement](/hearing-aid-fitting/), which usually changes your result more than the platform does.`,
+    ]),
+  ];
+
+  // Order: signature hook, local-scene detail, what we fit, then directions.
+  const sections: [string, string][] = [profile.hook, profile.localScene, latestTech, gettingHere];
 
   // Clickable feature list — links to the real service + office pages.
   const officePath = office === "San Mateo" ? "/contact/san-mateo/" : "/contact/san-carlos/";
