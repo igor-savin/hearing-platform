@@ -697,6 +697,38 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-phonak-sphere-infinio/",
+    "title": "Oticon Reveal vs Phonak Sphere Infinio Ultra | California Hearing Center",
+    "h1": "Oticon Reveal vs Phonak Sphere Infinio Ultra",
+    "desc": "Phonak's AI flagship holds the highest independent speech-in-noise score on record. Reveal has not been measured at all. An honest comparison.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-widex-allure/",
+    "title": "Oticon Reveal vs Widex Allure | California Hearing Center",
+    "h1": "Oticon Reveal vs Widex Allure",
+    "desc": "Widex Allure has no neural network in its sound path and still outscores several AI flagships. But it has no tinnitus program. An honest comparison.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-starkey-omega-ai/",
+    "title": "Oticon Reveal vs Starkey Omega AI | California Hearing Center",
+    "h1": "Oticon Reveal vs Starkey Omega AI",
+    "desc": "Starkey Omega AI ranks second of thirty-six prescription hearing aids independently tested, and comes in custom styles Reveal does not offer.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-resound-sensia/",
+    "title": "Oticon Reveal vs ReSound Sensia | California Hearing Center",
+    "h1": "Oticon Reveal vs ReSound Sensia",
+    "desc": "Two premium hearing aids launched eleven days apart, and neither has been independently measured. What is actually known, and how to choose.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/about-us/darcy-benson/",
     "title": "Darcy Benson | California Hearing Center",
     "h1": "Darcy Benson",
