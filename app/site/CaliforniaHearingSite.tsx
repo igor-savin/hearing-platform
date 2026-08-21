@@ -38,6 +38,7 @@ export type PageContent = {
   image2?: string;
   image2Label?: string;
   image2Caption?: string;
+  image2Href?: string;      // makes image2 clickable — opens the full-size asset in a new tab
   variant?: string;        // per-archetype visual treatment
   datePublished?: string;  // ISO date (original publish) for BlogPosting schema
   dateModified?: string;   // ISO date of last real edit
@@ -67,6 +68,13 @@ function plain(text: string): string {
 const scheduleUrl =
   "https://www.zocdoc.com/practice/california-hearing-and-research-institute-inc-72249";
 
+// Careers enquiries go to the practice inbox, not through the patient booking
+// flow. mailto opens whatever mail client the visitor actually uses (Gmail
+// included, when it is registered as the handler) — no form to maintain.
+const careersEmail = "infochc@hearing-care.org";  // used to build careersMailto; the buttons read "Email us about a role"
+const careersMailto =
+  `mailto:${careersEmail}?subject=${encodeURIComponent("Career enquiry — California Hearing Center")}`;
+
 const nav: NavItem[] = [
   { label: "Home", href: "/" },
   {
@@ -76,8 +84,8 @@ const nav: NavItem[] = [
       ["Kira Savin", "/about-us/kira-savin/"],
       ["Lais Ama", "/about-us/lais-ama/"],
       ["Giana Hatem", "/about-us/giana-hatem/"],
-      ["Jennifer Ratner", "/about-us/jennifer-ratner/"],
       ["Darcy Benson", "/about-us/darcy-benson/"],
+      ["Jennifer Ratner", "/about-us/jennifer-ratner/"],
       ["Emily McMahan", "/about-us/emily-mcmahan/"],
       ["Jarna Kothari", "/about-us/jarna-kothari/"],
       ["Career", "/about-us/career/"],
@@ -190,14 +198,13 @@ const featuredRoutes = [
 // are drawn from each person's own bio page — the strongest trust signal the
 // practice has, and previously only reachable via a bare list of names.
 const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: string; image: string }[] = [
-  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD · Founder", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/darcy-benson.webp" },
   { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/thumb/kira-savin.webp" },
-  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
+  { slug: "lais-ama", name: "Lais Ama", credential: "Director of Hearing Aid Services", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama.webp" },
+  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem-v2.webp" },
+  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/darcy-benson.webp" },
   { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/jennifer-ratner.webp" },
-  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem.webp" },
-  { slug: "lais-ama", name: "Lais Ama", credential: "B.S., Hearing Instrument Specialist", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama.webp" },
-  { slug: "sierra-melendez", name: "Sierra Melendez", credential: "Doctor of Audiology Extern", hook: "Final-year AuD candidate at the University of the Pacific.", image: "/assets/team/thumb/sierra-melendez.webp" },
-  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari.webp" },
+  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
+  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari-v2.webp" },
 ];
 
 // Embedded office maps. Uses the keyless Google Maps embed (no API key needed)
@@ -721,8 +728,23 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     `${cap(driveDesc)}. ${profile.landmarks ?? ""} ${closer}`.replace(/\s+/g, " ").trim(),
   ];
 
-  // Order: signature hook, then the local-scene detail, then directions.
-  const sections: [string, string][] = [profile.hook, profile.localScene, gettingHere];
+  // What technology we actually fit, rotated per city so 40+ area pages do not
+  // share one identical block (the doorway-content risk this file exists to avoid).
+  // Six genuinely different angles rather than six rewordings of one.
+  const latestTech: [string, string] = [
+    "The hearing aids we fit",
+    pickFrom((citySlugFromPath(page.path) || name) + ":tech", [
+      `2026 has been an unusually busy year for hearing aid platforms, and we fit the current flagship from every major manufacturer at our ${office} office — including [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/), which launched in August running two AI systems at once. New is not the same as better, and we will say so if an older platform or a lower technology tier suits your hearing and your budget more honestly.`,
+      `We are an independent practice, which means no manufacturer sets our recommendations. Patients from ${name} get a real [comparison across brands](/products/hearing-aids-by-brand/) — Oticon, Phonak, Starkey, ReSound, Widex, Signia — matched to the rooms you actually struggle in rather than to whichever supplier has a target this quarter. If you want to hear the newest [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/) against something else, we will set both up in one visit.`,
+      `Nearly every premium hearing aid now advertises artificial intelligence, and the word means five different things depending on who is using it. We [explain what is actually inside them](/what-is-dual-ai-in-hearing-aids/) rather than repeating the brochure, and we will show you the independent laboratory measurements for anything we recommend — including where the newest device has not been measured at all yet.`,
+      `Bluetooth has finally moved on. The newest devices, [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/) among them, support LE Audio and Auracast broadcast audio, which lets you receive sound directly in venues that offer it. Several competing flagships still list it as pending a firmware update. If loops, theatres or lecture halls matter to your week, that difference is worth getting right before you buy, and we will check it against where you actually go.`,
+      `If tinnitus is part of why you are looking, technology choice narrows quickly — one current flagship has no tinnitus program at all, while others build in configurable sound therapy. Our ${office} office covers both the devices and the wider [tinnitus care](/services/tinnitus-therapy/) around them, so the conversation is not only about which hearing aid.`,
+      `We keep demonstration units of the current platforms at our ${office} office, so patients from ${name} can hear the difference rather than read about it. A demonstration takes about half an hour and costs nothing. Bring a recent audiogram if you have one, or we can test first — and whatever you choose, the fitting is verified with [real-ear measurement](/hearing-aid-fitting/), which usually changes your result more than the platform does.`,
+    ]),
+  ];
+
+  // Order: signature hook, local-scene detail, what we fit, then directions.
+  const sections: [string, string][] = [profile.hook, profile.localScene, latestTech, gettingHere];
 
   // Clickable feature list — links to the real service + office pages.
   const officePath = office === "San Mateo" ? "/contact/san-mateo/" : "/contact/san-carlos/";
@@ -1485,6 +1507,8 @@ function InnerPage({ page }: { page: SitePage }) {
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
   const isCore = !!corePages[page.path];
+  // The careers page is the one page whose calls to action are not for patients.
+  const isCareer = page.path === "/about-us/career/";
   const isContact = page.path.includes("/contact/");
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
   const videoId = pageVideos[page.path];
@@ -1525,7 +1549,11 @@ function InnerPage({ page }: { page: SitePage }) {
           <h1>{content.headline}</h1>
           <p>{plain(content.intro[0])}</p>
           <div className="hero-actions">
-            <a className="button primary" href="/contact/">Request an Appointment</a>
+            {isCareer ? (
+              <a className="button primary" href={careersMailto}>Email us about a role</a>
+            ) : (
+              <a className="button primary" href="/contact/">Request an Appointment</a>
+            )}
             <a className="button ghost" href="tel:6503429449">650-342-9449</a>
           </div>
         </div>
@@ -1583,7 +1611,19 @@ function InnerPage({ page }: { page: SitePage }) {
                 <p dangerouslySetInnerHTML={{ __html: linkify(text) }} />
                 {content.image2 && index === 2 && (
                   <figure className="body-figure">
-                    <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                    {content.image2Href ? (
+                      <a
+                        href={content.image2Href}
+                        target="_blank"
+                        rel="noopener"
+                        aria-label={`${content.image2Label || "Figure"} — open the full-size version`}
+                        style={{ display: "block", cursor: "zoom-in" }}
+                      >
+                        <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                      </a>
+                    ) : (
+                      <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
+                    )}
                     {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
                   </figure>
                 )}
@@ -1625,9 +1665,19 @@ function InnerPage({ page }: { page: SitePage }) {
             <img src={content.image} alt={content.imageAlt || content.imageLabel || ""} />
             <span>{content.imageLabel}</span>
           </div>
-          <h3>Set up your FREE hearing consultation</h3>
-          <p>Tell us what you’re noticing. We’ll help you understand your options and build a plan around your life.</p>
-          <a className="button primary wide" href="/contact/">Request an appointment</a>
+          {isCareer ? (
+            <>
+              <h3>Interested in joining us?</h3>
+              <p>Tell us which role interests you and a little about yourself. We read every message.</p>
+              <a className="button primary wide" href={careersMailto}>Email us about a role</a>
+            </>
+          ) : (
+            <>
+              <h3>Set up your FREE hearing consultation</h3>
+              <p>Tell us what you’re noticing. We’ll help you understand your options and build a plan around your life.</p>
+              <a className="button primary wide" href="/contact/">Request an appointment</a>
+            </>
+          )}
           <hr />
           <strong>San Mateo – Main Office</strong>
           <p>88 N. San Mateo Drive<br />San Mateo, CA 94401</p>
@@ -2070,11 +2120,23 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
         {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
       </div>
       <section className="appointment">
-        <div>
-          <p className="section-kicker">Set up your free hearing consultation</p>
-          <h2>Turn life up with better hearing.</h2>
-        </div>
-        <a className="button primary" href="/contact/">Request an appointment</a>
+        {page?.path === "/about-us/career/" ? (
+          <>
+            <div>
+              <p className="section-kicker">Now hiring on the Peninsula</p>
+              <h2>Come and do the job properly.</h2>
+            </div>
+            <a className="button primary" href={careersMailto}>Email us about a role</a>
+          </>
+        ) : (
+          <>
+            <div>
+              <p className="section-kicker">Set up your free hearing consultation</p>
+              <h2>Turn life up with better hearing.</h2>
+            </div>
+            <a className="button primary" href="/contact/">Request an appointment</a>
+          </>
+        )}
       </section>
       <footer className="site-footer">
         <div className="footer-main">
