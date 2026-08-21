@@ -98,6 +98,10 @@ const nav: NavItem[] = [
       ["Hearing Testing", "/hearing-testing/"],
       ["Hearing Aid Fitting", "/hearing-aid-fitting/"],
       ["Free Second Opinion", "/hearing-aid-second-opinion/"],
+      ["Senior Living Outreach", "/senior-living/", [
+        ["Community Hearing Program", "/senior-living/"],
+        ["For Families in San Mateo County", "/san-mateo-county-senior-living/"],
+      ]],
       ["Tinnitus Therapy", "/services/tinnitus-therapy/", [
         ["Tinnitus Knowledge Hub", "/tinnitus/"],
         ["What is Tinnitus?", "/tinnitus/what-is-tinnitus/"],

@@ -2106,74 +2106,87 @@ const rawCorePages: Record<string, PageContent> = {
   imageLabel: "Understanding your hearing benefits",
 },
   "/san-mateo-county-senior-living/": {
-  kicker: "Hearing Care for Seniors",
-  headline: "Hearing Care for Seniors Across San Mateo County",
+  kicker: "For Families",
+  headline: "Choosing Hearing Care for an Older Parent in San Mateo County",
   intro: [
-    "San Mateo County is home to a large and growing population of older adults, many living in senior communities from San Mateo and San Carlos down through the Peninsula. Age-related hearing loss touches most of them at some point, and how it is handled shapes how connected and independent they stay. California Hearing Center serves seniors and their families countywide from two offices — San Mateo at 88 N. San Mateo Drive and San Carlos.",
-    "As a locally owned, independent audiology practice, we offer county residents unhurried care and honest guidance rather than a one-size-fits-all sales pitch. This hub explains senior hearing care across the county and points to the individual communities we serve."
+    "This page is written for the adult children and family members who end up managing a parent's hearing — booking the appointment, sitting in on it, and being the one who notices the hearing aids are back in the drawer. It covers how to tell whether hearing is the real problem, what a first visit actually involves, which devices suit an older adult, and how to keep them working once the fitting is over.",
+    "California Hearing Center is an independent, locally owned practice with offices in San Mateo and San Carlos, caring for Peninsula patients for {{yearsInPractice}} years. If your parent lives in a senior community and travel is the obstacle, see our [community hearing program](/senior-living/) — we visit communities across the Peninsula, and we hold group clinic days for residents who come to us together by community bus."
   ],
   sections: [
-    ["Hearing care where county seniors live", "From assisted living and memory care to active retirement communities, older residents across San Mateo County share the same core need: to keep hearing the people around them. We bring the same standard of diagnostic testing, thoughtful device selection, and follow-up care to residents wherever they are on the Peninsula."],
-    ["The stakes of untreated hearing loss", "Major research, including work from Johns Hopkins and the Lancet Commission, associates untreated hearing loss with greater risk of social isolation, falls, and cognitive decline in older adults. We describe these as associations, not settled cause and effect, but they make hearing care an important part of healthy aging."],
-    ["Devices and care built around seniors", "Across the county we fit hearing aids chosen for real life in later years: rechargeable batteries, simple and automatic operation, and comfortable, easy-to-handle designs. Just as important is what comes after the fitting — the cleaning, tuning, and reprogramming that keep devices useful for years."],
-    ["Two convenient Peninsula offices", "With locations in both San Mateo and San Carlos, most county seniors and their families are a manageable drive from ongoing care. Staying with one local, independent audiologist means continuity — the same clinician who knows a resident's history and preferences."],
-    ["Communities across the county", "We care for residents and families from senior communities throughout San Mateo, including Atria Park of San Mateo, Sunrise of San Mateo, The Peninsula Regent, and The Stratford, along with others across the county."]
+    ["How to tell whether hearing is the problem", "Families usually notice the pattern before the person does. The television creeps louder. Phone calls get shorter. Your parent answers a question slightly beside the one you asked, agrees with things they have not heard, or begins declining invitations to restaurants and family gatherings without quite saying why. What is often read as memory trouble, stubbornness, or withdrawal turns out to be a person who has stopped catching consonants in a noisy room. A hearing test settles the question in about an hour, and it is worth doing before you conclude anything about memory."],
+    ["What a first appointment involves", "We take a history, look in the ears, and run a full evaluation — not just the softest tones your parent can detect, but how much speech they actually catch, how much they miss, and how they perform against background noise. Then we go through the results in plain language, with the audiogram in front of you. If something needs a physician rather than an audiologist, we say so and help with the referral. Nobody is sold anything on a first visit. Come along if you can: families remember instructions the patient does not."],
+    ["Devices that suit an older adult", "The best hearing aid for an older adult is the one they will actually wear, which is a different question from which one performs best in a lab. In practice that usually means rechargeable devices with no tiny batteries to fumble with, larger or simpler controls where dexterity or eyesight is limited, and automatic programs that adjust to each room without anyone pressing anything. Where a resident depends on a caregiver, we also fit for who has to clean and charge the device, not only for who wears it. We fit any major brand, so the recommendation follows the person rather than a supplier."],
+    ["Keeping the aids working, which is where most of this is won or lost", "Hearing aids are not a one-time purchase. They need cleaning, new domes and filters, and reprogramming as hearing changes, and an aid that gets none of that quietly stops helping within a year or two. This is the single most common thing we see: a device written off as broken that turns out to be blocked with wax or simply not charging. We service any brand from any provider, including devices bought from a big-box retailer, ordered online, or fitted by a practice your parent has since moved away from. If you are unsure whether the current aids are right, our [free second opinion](/hearing-aid-second-opinion/) is exactly that, with nothing to buy."],
+    ["Where we are, and communities across the county", "Our offices are at 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos, which puts most of the county within a manageable drive. We care for residents and families from senior communities throughout San Mateo, including [Atria Park of San Mateo](/atria-park-of-san-mateo/), [Sunrise of San Mateo](/sunrise-of-san-mateo/), [The Peninsula Regent](/the-peninsula-regent/), and [The Stratford](/the-stratford/). Staying with one local practice matters more in later years than it does earlier — the same clinician, the same records, and someone who knows what has already been tried."]
   ],
   bulletLinks: [
-    ["Senior-living hearing care overview", "/senior-living/"],
-    ["Atria Park of San Mateo", "/atria-park-of-san-mateo/"],
-    ["Sunrise of San Mateo", "/sunrise-of-san-mateo/"],
-    ["The Peninsula Regent", "/the-peninsula-regent/"],
-    ["The Stratford", "/the-stratford/"],
-    ["Schedule a hearing test", "/hearing-testing/"]
+    ["Our community hearing program for senior living", "/senior-living/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Free second opinion on hearing aids", "/hearing-aid-second-opinion/"],
+    ["Hearing aid repair", "/services/hearing-aid-repair/"],
+    ["Our San Mateo office", "/contact/san-mateo/"],
+    ["Our San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "We serve seniors and families across San Mateo County from our San Mateo and San Carlos offices.",
-    "Untreated hearing loss is associated with isolation, falls, and cognitive decline as we age.",
-    "Local, independent, ongoing audiology care keeps senior-friendly hearing aids working over time."
+    "What families read as memory trouble or withdrawal is often untreated hearing loss, and a test settles it in about an hour.",
+    "For an older adult, choose the device they will wear — rechargeable, simple controls, automatic programs — and fit for the caregiver too.",
+    "Most hearing aids written off as broken are blocked with wax or not charging; we service any brand from any provider."
   ],
   faqs: [
-    ["Which parts of San Mateo County do you serve?", "We care for seniors and families across the Peninsula from our San Mateo and San Carlos offices, including the many senior communities in and around San Mateo and neighboring cities."],
-    ["How do I choose care for an aging parent in the county?", "Start with a thorough hearing test so decisions rest on facts, then look for an independent audiologist close enough for easy follow-up. We are glad to talk through options and involve the whole family."],
-    ["What makes an independent practice better for seniors?", "Independence means our recommendations are not tied to one manufacturer, and local ownership means continuity of care — the same clinician over the years, which matters a great deal for older adults."]
+    ["How do I persuade a parent who insists their hearing is fine?", "Ask for a test rather than a hearing aid. Most people will agree to have something measured when they will not agree to being fitted with anything, and a great many are more willing once they see the audiogram and understand it is speech clarity rather than volume that has changed. There is nothing to buy at a hearing test."],
+    ["Is it worth treating hearing loss in someone quite elderly?", "In most cases, very much so. Better hearing keeps an older adult in the conversation, which supports mood, engagement, and daily wellbeing at any age. Untreated hearing loss is also associated with a higher risk of falls and of cognitive decline, so it tends to be worth addressing rather than waiting."],
+    ["Can I come to the appointment with my parent?", "We encourage it. Families help with decisions, remember instructions afterwards, and are usually the ones who notice whether the aids are actually being worn. If your parent would rather come alone, we are glad to talk with you afterwards with their permission."],
+    ["My parent's hearing aids came from somewhere else and stopped working. Will you look at them?", "Yes. We service any brand from any provider, however and wherever they were bought. Bring them in even if they have not been worn in months — a device that seems dead is very often just blocked with wax or holding no charge."],
+    ["My parent cannot travel easily. What are the options?", "Ask their senior community whether they would like us to visit. Our [community hearing program](/senior-living/) brings cleaning, checks, and troubleshooting into the community itself, and we hold group clinic days for residents who come to us together by community bus. The request often lands better with a community coming from a resident's family than from us."]
   ],
   image: "/assets/core/san-mateo-county-senior-living.svg",
-  imageLabel: "Hearing care for seniors across San Mateo County"
+  imageLabel: "Choosing hearing care for an older parent in San Mateo County"
 },
   "/senior-living/": {
-  kicker: "Hearing Care for Seniors",
-  headline: "Hearing Care for Seniors in Peninsula Senior-Living Communities",
+  kicker: "Community Hearing Program",
+  headline: "Hearing Care for Senior Living Communities on the Peninsula",
   intro: [
-    "Hearing loss is one of the most common health conditions of later life, and it affects far more than the ears. For older adults living in senior communities across the Peninsula, staying able to hear means staying part of meals, activities, family visits, and everyday life. California Hearing Center provides that care from two nearby offices — San Mateo at 88 N. San Mateo Drive and San Carlos — and we regularly see residents and families from senior-living communities throughout the area.",
-    "We are an independent audiology practice, so our advice is not tied to a single brand or a hard sell. This page is an overview of what senior hearing care involves, why it matters so much, and how to arrange it for a loved one or for yourself."
+    "California Hearing Center runs a community hearing program for senior living communities across the Peninsula, and it works two ways. We come to you — a talk for residents, hearing aid cleaning, and function checks in your activity room. Or your residents come to us as a group, brought by the community bus, for a clinic day where we block dedicated time so everyone is seen in a single trip. Both are free to the community and to the residents.",
+    "We have cared for Peninsula patients for {{yearsInPractice}} years from two independent offices, in San Mateo and San Carlos. This page is written for the activity, wellness, and executive directors who arrange programming for residents, and for the families of someone living in a senior community. If you are a director, the short version is at the bottom: send us two or three dates and we will take it from there."
   ],
   sections: [
-    ["Why hearing loss matters more as we age", "Untreated hearing loss is associated in research from Johns Hopkins and the Lancet Commission on dementia with a higher risk of social isolation, falls, and cognitive decline. These are associations, not proof of cause, but together they make a strong case for treating hearing loss rather than letting it quietly narrow someone's world."],
-    ["Hearing aids that suit older adults", "The best hearing aid for a senior is the one they will comfortably wear. That usually means rechargeable devices with no tiny batteries, larger or simpler controls for limited dexterity or vision, and automatic programs that adjust to each room on their own. We fit for ease of use, not just audiogram numbers."],
-    ["Supporting families and caregivers", "Hearing care in a senior setting works best as a team effort. We explain a resident's needs to family members, coach caregivers on clear-communication habits, and make sure someone knows how to keep the devices clean and charged."],
-    ["The value of a nearby, independent audiologist", "Hearing aids need ongoing tuning as hearing changes. Having an audiologist a short drive away means residents keep seeing the same clinician for adjustments, repairs, and questions, without a difficult or distant trip."],
-    ["Communities we serve", "We care for residents and families from senior communities across San Mateo, including Atria Park of San Mateo, Sunrise of San Mateo, The Peninsula Regent, and The Stratford, among others throughout the Peninsula."]
+    ["Why hearing deserves attention on your floor", "In most senior communities a meaningful share of residents own hearing aids that no longer work — blocked with wax, out of battery, or never fitted properly in the first place. The aids end up in a drawer. The resident stops joining conversations, stops coming to activities, and starts being described as withdrawn or confused. It is rarely reported to staff, because residents do not experience it as a medical problem; they experience it as everyone else mumbling. The research points the same direction. [A 2012 study by Lin and Ferrucci in Archives of Internal Medicine](https://pubmed.ncbi.nlm.nih.gov/22371929/) associated every 10 decibels of hearing loss with roughly 1.4 times the odds of falling, with a mild loss carrying close to three times the odds. [The ACHIEVE randomized trial, published in The Lancet in 2023](https://www.achievestudy.org/key-findings), found 48% less cognitive decline over three years among participants already at higher risk who were treated for hearing loss — a result from one group within the trial rather than the trial as a whole, so a signal worth acting on rather than a settled conclusion."],
+    ["Option one: we come to you", "An on-site visit runs 45 to 60 minutes in your activity room or common space. It usually opens with a short talk residents genuinely enjoy — why hearing aids stop working and what to do about it — and then becomes a working clinic: cleaning, wax removal from the device, dome, tube, and filter changes, and function checks. We troubleshoot aids a resident has given up on. We work on any brand from any provider, including devices that were never purchased from us. We do not sell anything on site, which is the part most directors ask about first."],
+    ["Option two: your residents come to us", "The second model is a group clinic day at our San Mateo or San Carlos office. Your community bus brings a group; we block dedicated time so nobody sits in a waiting room. Because it happens in the clinic rather than a community room, we can do the things a portable kit cannot: full diagnostic testing in a sound booth, real-ear verification, repairs, and reprogramming. Everyone is seen by a clinician rather than a technician — an audiologist or our Director of Hearing Aid Services. It doubles as an outing on your activities calendar, and it solves the transportation barrier that is the most common reason a resident quietly stops getting hearing care at all."],
+    ["The visit finds the problem, the clinic day fixes it", "The two options are not really a menu. On site we can triage — we can tell you which residents have a device that is simply dirty, which have one that needs real service, and which have never been tested. What we cannot do in a community room is a proper diagnostic or a verified fitting. That is what the clinic day is for, and the community bus is what makes it possible. Most communities start with a single on-site visit and add clinic days once they see how many residents turn out to have a fixable problem."],
+    ["What it costs, and what we need from you", "There is no fee, no contract, no minimum number of residents, and no obligation to continue after a first visit. What we need is a common room, roughly 45 minutes on your calendar, and a line in your resident newsletter so people know to bring their devices. We provide a print-ready flyer and a newsletter blurb, our certificate of insurance and vendor credentials on request, and one named contact for scheduling rather than a general phone tree."],
+    ["Training for your care staff", "We also run short in-service sessions for care staff and aides — how to tell a dead hearing aid from a wax-blocked one, how to change a dome, how to charge and store devices overnight, and what it may mean when a resident stops joining activities. Hearing problems are usually noticed by the people doing daily care rather than reported by the resident, so a half hour with your team often does more good than an hour with the residents."],
+    ["If a parent of yours lives in a senior community", "Families find this page too, and the practical advice is short. Bring the hearing aids, even if they have not been worn in months, and even if you do not know where they came from. A device that has been written off as broken is very often just blocked with wax or holding no charge. Bring whatever paperwork exists, but do not delay the visit hunting for it. And come along to the appointment if you can — families remember instructions the patient does not, and they are the ones who notice whether the aids are actually being worn afterwards. If your parent cannot travel easily, ask their community whether they would like us to visit; a great many are glad to have the programming, and the request often lands better coming from a resident's family than from us."],
+    ["Communities we already serve", "We care for residents and families from senior communities throughout San Mateo and the wider Peninsula, including [Atria Park of San Mateo](/atria-park-of-san-mateo/), [Sunrise of San Mateo](/sunrise-of-san-mateo/), [The Peninsula Regent](/the-peninsula-regent/), and [The Stratford](/the-stratford/), among others across [San Mateo County](/san-mateo-county-senior-living/). If your community is not on that list, that is not a reason to hesitate — most of the communities we visit reached out to us first."]
   ],
   bulletLinks: [
-    ["Atria Park of San Mateo", "/atria-park-of-san-mateo/"],
-    ["Sunrise of San Mateo", "/sunrise-of-san-mateo/"],
-    ["The Peninsula Regent", "/the-peninsula-regent/"],
-    ["The Stratford", "/the-stratford/"],
+    ["Download the one-page program summary (PDF)", "/assets/senior-living-handout.pdf"],
     ["Book a hearing test", "/hearing-testing/"],
-    ["Our San Mateo office", "/contact/san-mateo/"]
+    ["Free second opinion on hearing aids", "/hearing-aid-second-opinion/"],
+    ["Hearing aid repair", "/services/hearing-aid-repair/"],
+    ["Our San Mateo office", "/contact/san-mateo/"],
+    ["Our San Carlos office", "/contact/san-carlos/"]
   ],
   takeaways: [
-    "We serve seniors and families from senior-living communities across the Peninsula, from San Mateo and San Carlos.",
-    "Untreated hearing loss is associated with isolation, falls, and cognitive decline in older adults.",
-    "Rechargeable, simple hearing aids plus a nearby independent audiologist make senior hearing care sustainable."
+    "We serve Peninsula senior living communities two ways — an on-site visit at your community, or a dedicated group clinic day when your bus brings residents to us.",
+    "Both are free to the community and to residents, we work on any brand from any provider, and we do not sell anything on site.",
+    "To arrange a visit, call 650-342-9449 or email infochc@hearing-care.org with two or three dates that fit your activities calendar."
   ],
   faqs: [
-    ["Do you work with residents of senior-living communities?", "Yes. We regularly care for residents and their families from communities across San Mateo and the Peninsula. Call 650-342-9449 and we can arrange testing and fittings at whichever of our offices is most convenient."],
-    ["Is it worth treating hearing loss in someone quite elderly?", "In most cases, very much so. Better hearing keeps an older adult connected to family and community, which supports mood, engagement, and daily wellbeing at any age."],
-    ["Can family members be involved in the appointments?", "We encourage it. Family and caregivers help with decisions, remember instructions, and support daily use of the devices, so a resident gets the full benefit of their hearing aids."]
+    ["What does the program cost our community?", "Nothing. There is no fee, no contract, no minimum number of residents, and no obligation to continue after a first visit. We ask for a common room, about 45 minutes on your calendar, and a mention in your resident newsletter."],
+    ["Will you be selling hearing aids to our residents?", "No. We do not sell anything during an on-site visit. The visit is cleaning, checks, troubleshooting, and education. If a resident turns out to need a diagnostic test or a repair we cannot do in your building, we explain that and they decide what they want to do next."],
+    ["Do you help residents whose hearing aids came from somewhere else?", "Yes, and this is most of the work. We clean, check, and troubleshoot any brand from any provider, including devices bought from a big-box retailer, ordered online, or fitted by a practice the resident has since moved away from."],
+    ["How does a group clinic day work?", "Your community brings a group of residents by bus to our San Mateo or San Carlos office, and we hold dedicated appointment time so nobody waits. In the clinic we can do the things a portable kit cannot — sound-booth testing, real-ear verification, repairs, and reprogramming. Communities usually schedule these monthly or quarterly."],
+    ["What do we need to do to get started?", "Call 650-342-9449 or email infochc@hearing-care.org with two or three dates that work for your activities calendar. We confirm one, send you a print-ready flyer and a blurb for your newsletter, and handle the rest. Certificate of insurance and vendor credentials are available on request."],
+    ["Can you train our care staff as well as see residents?", "Yes. We run short in-service sessions for aides and care staff covering how to spot a hearing problem, how to tell a dead device from a wax-blocked one, dome changes, and overnight charging. It can be added to a resident visit or scheduled on its own."]
   ],
   image: "/assets/core/senior-living.svg",
-  imageLabel: "Hearing care for seniors across the Peninsula"
+  imageLabel: "Hearing care for senior living communities across the Peninsula",
+  imageAlt: "California Hearing Center clinicians visiting a Peninsula senior living community",
+  image2: "/assets/senior-living-handout.webp",
+  image2Label: "California Hearing Center community hearing program summary",
+  image2Href: "/assets/senior-living-handout.webp",
+  image2Caption: "The one-page summary we send to activity and wellness directors — click it to open the full-size version, or download the PDF from the links above."
 },
   "/services/": {
   kicker: "Audiology Services",

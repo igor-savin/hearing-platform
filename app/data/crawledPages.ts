@@ -1722,9 +1722,9 @@ export const crawledPages: SitePage[] = [
   },
   {
     "path": "/san-mateo-county-senior-living/",
-    "title": "San Mateo County Senior Living | California Hearing Center",
-    "h1": "San Mateo County Senior Living",
-    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "title": "Hearing Care for an Older Parent in San Mateo County | California Hearing Center",
+    "h1": "Choosing Hearing Care for an Older Parent in San Mateo County",
+    "desc": "A family guide to hearing care for an older parent in San Mateo County: spotting the signs, what a first visit involves, devices that suit seniors, and keeping the aids working.",
     "h2": [],
     "paragraphs": []
   },
@@ -1762,9 +1762,9 @@ export const crawledPages: SitePage[] = [
   },
   {
     "path": "/senior-living/",
-    "title": "Senior Living | California Hearing Center",
-    "h1": "Senior Living",
-    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "title": "Senior Living Community Hearing Program | California Hearing Center",
+    "h1": "Hearing Care for Senior Living Communities on the Peninsula",
+    "desc": "Free hearing care for Peninsula senior living communities: on-site cleaning, checks and resident talks, plus dedicated group clinic days when your bus brings residents to us.",
     "h2": [],
     "paragraphs": []
   },
