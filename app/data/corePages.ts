@@ -1417,7 +1417,8 @@ const rawCorePages: Record<string, PageContent> = {
   imageAlt: "Oticon Reveal rechargeable miniRITE R hearing aid",
   image2: "/assets/oticon-reveal-flyer.webp",
   image2Label: "Experience The Reveal — California Hearing Center patient handout",
-  image2Caption: "Our one-page Reveal handout, free to take from either office — or download it below to print or share."
+  image2Href: "/assets/oticon-reveal-flyer.webp",
+  image2Caption: "Our one-page Reveal handout — click it to open the full-size version. Free to take from either office, and downloadable as a PDF below."
 },
   "/products/hearing-aids-by-brand/oticon/oticon-intent/": {
   kicker: "Hearing Aid Technology",
