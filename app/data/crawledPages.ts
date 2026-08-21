@@ -665,6 +665,38 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-oticon-intent/",
+    "title": "Oticon Reveal vs Oticon Intent | California Hearing Center",
+    "h1": "Oticon Reveal vs Oticon Intent: Should You Upgrade?",
+    "desc": "Reveal replaces Intent as Oticon's flagship. What actually changed, what stayed the same, where Intent still wins, and who should upgrade.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/oticon/oticon-reveal-cost/",
+    "title": "How Much Does Oticon Reveal Cost? | California Hearing Center",
+    "h1": "How Much Does Oticon Reveal Cost?",
+    "desc": "Oticon has not published US pricing for Reveal. What determines the price, what a fitting includes, and how insurance and financing apply.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/what-is-dual-ai-in-hearing-aids/",
+    "title": "What Is Dual AI in Hearing Aids? | California Hearing Center",
+    "h1": "What Is Dual AI in Hearing Aids?",
+    "desc": "Every hearing aid brand advertises AI and the word means five different things. What Dual AI is, who has real neural processing, and how to judge the claims.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/oticon-reveal-what-we-know/",
+    "title": "Oticon Reveal: What We Actually Know So Far | California Hearing Center",
+    "h1": "Oticon Reveal: What We Actually Know So Far",
+    "desc": "Oticon Reveal launched August 2026 with a Dual AI system. What is confirmed, which claims come from Oticon's own lab, and what nobody knows yet.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/about-us/darcy-benson/",
     "title": "Darcy Benson | California Hearing Center",
     "h1": "Darcy Benson",
