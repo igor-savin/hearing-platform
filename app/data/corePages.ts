@@ -282,7 +282,7 @@ const rawCorePages: Record<string, PageContent> = {
 },
   "/about-us/lais-ama/": {
   kicker: "Meet the Team",
-  headline: "Lais Ama, B.S., Hearing Instrument Specialist",
+  headline: "Lais Ama, Director of Hearing Aid Services",
   intro: [
     "Lais Ama, hearing specialist, brings to the practice {{yearsLais}} years of experience in providing hearing care from her native country of Brazil. There she worked with the Pontificia Universidade Catholica in Sao Paolo, providing clinical services and presenting research papers on vestibular rehabilitation and the effects of ototoxic drugs on the auditory system.",
     "She also completed an internship at the University of Bordeaux, France, where she was involved with clinical audiology services, hearing aids, and vestibular rehabilitation."
@@ -298,43 +298,15 @@ const rawCorePages: Record<string, PageContent> = {
     "Experience serving both children and adults"
   ],
   takeaways: [
-    "Hearing Instrument Specialist with {{yearsLais}} years of experience, originally from Brazil.",
+    "Director of Hearing Aid Services with {{yearsLais}} years of experience, originally from Brazil.",
     "Holds a B.S. in Audiology and Speech Pathology and is licensed in California as a hearing aid dispenser."
   ],
   faqs: [
     ["How do I schedule with Lais?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
   image: "/assets/team/lais-ama.jpg",
-  imageLabel: "Lais Ama, Hearing Instrument Specialist",
-  imageAlt: "Lais Ama, Hearing Instrument Specialist at California Hearing Center",
-},
-  "/about-us/sierra-melendez/": {
-  kicker: "Meet the Team",
-  headline: "Sierra Melendez, Doctorate of Audiology Extern",
-  intro: [
-    "Sierra earned her Bachelor of Science in Communication Sciences and Disorders from California State University, Sacramento. She is currently in her final year of graduate school at the University of the Pacific, where she is pursuing her Doctorate of Audiology (Au.D.) and is expected to graduate in July 2026.",
-    "Sierra has a strong interest in adult diagnostic testing, tinnitus management, and the personalized selection and fitting of hearing devices. Having a hearing loss herself, she brings a unique and empathetic perspective to her work, striving to connect with patients on both a professional and personal level."
-  ],
-  sections: [
-    ["Education & training", "Sierra completed AA degrees in Psychology and in Interdisciplinary Studies: Social and Behavioral Sciences at Sacramento City College, followed by her B.S. in Communication Sciences and Disorders at California State University, Sacramento. She is now completing her Doctorate of Audiology as an extern, expected to graduate in July 2026."],
-    ["Focus & approach", "She is passionate about helping others improve their communication and enhance their overall quality of life. Outside of audiology, Sierra loves the outdoors, from kayaking to hiking scenic trails, and enjoys exploring new cities, traveling, photography, painting, and working with ceramics."]
-  ],
-  bullets: [
-    "Adult diagnostic testing",
-    "Tinnitus management",
-    "Personalized selection and fitting of hearing devices",
-    "Brings personal, empathetic perspective as someone with hearing loss"
-  ],
-  takeaways: [
-    "Doctorate of Audiology extern at the University of the Pacific, expected to graduate July 2026.",
-    "Brings an empathetic, first-hand perspective as someone with hearing loss herself."
-  ],
-  faqs: [
-    ["How do I schedule an appointment?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
-  ],
-  image: "/assets/team/sierra-melendez.png",
-  imageLabel: "Sierra Melendez, Doctorate of Audiology Extern",
-  imageAlt: "Sierra Melendez, Doctorate of Audiology extern at California Hearing Center",
+  imageLabel: "Lais Ama, Director of Hearing Aid Services",
+  imageAlt: "Lais Ama, Director of Hearing Aid Services at California Hearing Center",
 },
   "/areas-we-serve/": {
   kicker: "Areas We Serve",
