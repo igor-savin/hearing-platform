@@ -2019,35 +2019,56 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                 {item.items || item.mega ? (
                   <details>
                     <summary>{item.label}</summary>
-                    <a href={item.href}>Overview</a>
-                    {item.items?.map(([label, href, children]) => (
-                      <span className="mobile-sub" key={href}>
-                        <a href={href}>{label}</a>
-                        {children?.map(([clabel, chref]) => (
-                          <a className="mobile-subchild" href={chref} key={chref}>{clabel}</a>
-                        ))}
-                      </span>
-                    ))}
-                    {item.mega && hearingAidColumns.flat().map(([title, text, href, image]) => (
-                      <a className="mobile-product-link" href={href} key={href}>
-                        <img src={image} alt="" loading="lazy" decoding="async" />
-                        <span>
-                          <strong>{title}</strong>
-                          <small>{text}</small>
+                    {/* Every child link carries .mobile-sublink explicitly.
+                        This used to lean on a `details > a` CHILD selector,
+                        which by definition could not see the links nested
+                        inside .mobile-sub — those fell back to display:inline
+                        and ran together as one paragraph of text on mobile.
+                        display:contents on .mobile-sub flattens the BOX tree,
+                        not the DOM tree, so it never rescued the selector. */}
+                    <div className="mobile-sublist">
+                      <a className="mobile-sublink" href={item.href}>Overview</a>
+                      {item.items?.map(([label, href, children]) => (
+                        <span className="mobile-sub" key={href}>
+                          <a className="mobile-sublink" href={href}>{label}</a>
+                          {children?.map(([clabel, chref]) => (
+                            <a className="mobile-sublink mobile-subchild" href={chref} key={chref}>{clabel}</a>
+                          ))}
                         </span>
-                      </a>
-                    ))}
+                      ))}
+                      {item.mega && hearingAidColumns.flat().map(([title, text, href, image]) => (
+                        <a className="mobile-sublink mobile-product-link" href={href} key={href}>
+                          <img src={image} alt="" loading="lazy" decoding="async" />
+                          <span>
+                            <strong>{title}</strong>
+                            <small>{text}</small>
+                          </span>
+                        </a>
+                      ))}
+                    </div>
                   </details>
                 ) : (
                   <a className="mobile-top-link" href={item.href}>{item.label}</a>
                 )}
               </div>
             ))}
+            {/* Contact block, mirroring the sister practice's mobile drawer.
+                Schedule Now sits at the top of the panel; these close it out so
+                the two next-best actions are reachable without scrolling back. */}
+            <div className="mobile-cta">
+              <a className="mobile-cta-call" href="tel:6503429449">Call (650) 342-9449</a>
+              <a className="mobile-cta-contact" href="/contact/">Contact Us</a>
+            </div>
           </div>
         </details>
         <a className="schedule" href={scheduleUrl} target="_blank" rel="noopener noreferrer">Schedule Now</a>
       </header>
-      {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
+      {/* Skip-link target. tabIndex -1 so the browser moves keyboard focus here
+          rather than just scrolling, which is the half of the pattern that is
+          usually missed. Matches the sister practice's #main-content anchor. */}
+      <div id="main-content" tabIndex={-1}>
+        {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
+      </div>
       <section className="appointment">
         <div>
           <p className="section-kicker">Set up your free hearing consultation</p>
