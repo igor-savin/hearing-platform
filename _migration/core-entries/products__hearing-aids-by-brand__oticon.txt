@@ -8,6 +8,7 @@
   ],
   sections: [
     ["The BrainHearing philosophy", "Oticon's technology acknowledges that hearing happens in the brain, not just the ears. Instead of only making sounds louder, it aims to reduce cognitive load and give the brain clearer signals, targeting less listening effort, better speech recognition in noise, and reduced fatigue after long conversations."],
+    ["Oticon Reveal and the Dual AI system", "Reveal is Oticon's newest platform, announced in August 2026. It is the first hearing aid to run two AI systems at the same time: a Speech AI that identifies and lifts voices, and a Context AI that preserves the surrounding sound most noise reduction removes. That second half is the Oticon idea in a nutshell — clarity that does not cost you your sense of the room. It launches as a rechargeable miniRITE R with Bluetooth LE Audio, Auracast, telecoil and tinnitus support across four technology levels. Every performance figure published so far comes from Oticon's own laboratory, and no independent lab has measured it yet, which we say plainly on our [Oticon Reveal page](/products/hearing-aids-by-brand/oticon/oticon-reveal/)."],
     ["Oticon Intent and user-intent sensors", "Oticon's Intent family introduced user-intent sensors that recognize when your listening needs change and adapt automatically, detecting when you are in conversation, listening to music, or moving between environments, and adjusting for seamless transitions. It comes in rechargeable and battery options across multiple technology levels."],
     ["Oticon Zeal invisible-yet-capable design", "The Oticon Zeal created a new in-the-ear category that pairs a discreet, near-invisible fit with the connectivity, rechargeability, and AI-powered sound of a premium behind-the-ear device. It brings Bluetooth streaming and future-ready Auracast into a design many wearers find barely visible."],
     ["A full lineup of styles", "Beyond Zeal and Intent, Oticon's Own custom in-ear devices and its receiver-in-canal and behind-the-ear models offer rechargeable and Bluetooth options, so the BrainHearing philosophy can be matched to different needs, dexterity, and cosmetic goals."],
@@ -15,6 +16,8 @@
     ["Verified to your hearing", "Any Oticon device is only as good as its programming. We use real-ear measurement to confirm the output matches your prescription across pitches."]
   ],
   bulletLinks: [
+    ["Oticon Reveal — the new Dual AI platform", "/products/hearing-aids-by-brand/oticon/oticon-reveal/"],
+    ["Oticon Reveal vs Oticon Intent", "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-oticon-intent/"],
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
     ["Hearing aids overview", "/products/hearing-aids/"],
     ["The fitting process", "/hearing-aid-fitting/"],
