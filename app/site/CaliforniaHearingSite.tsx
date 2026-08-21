@@ -67,6 +67,13 @@ function plain(text: string): string {
 const scheduleUrl =
   "https://www.zocdoc.com/practice/california-hearing-and-research-institute-inc-72249";
 
+// Careers enquiries go to the practice inbox, not through the patient booking
+// flow. mailto opens whatever mail client the visitor actually uses (Gmail
+// included, when it is registered as the handler) — no form to maintain.
+const careersEmail = "infochc@hearing-care.org";
+const careersMailto =
+  `mailto:${careersEmail}?subject=${encodeURIComponent("Career enquiry — California Hearing Center")}`;
+
 const nav: NavItem[] = [
   { label: "Home", href: "/" },
   {
@@ -1499,6 +1506,8 @@ function InnerPage({ page }: { page: SitePage }) {
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
   const isCore = !!corePages[page.path];
+  // The careers page is the one page whose calls to action are not for patients.
+  const isCareer = page.path === "/about-us/career/";
   const isContact = page.path.includes("/contact/");
   const relatedPosts = isBlog ? relatedBlogPosts(page.path) : [];
   const videoId = pageVideos[page.path];
@@ -1539,7 +1548,11 @@ function InnerPage({ page }: { page: SitePage }) {
           <h1>{content.headline}</h1>
           <p>{plain(content.intro[0])}</p>
           <div className="hero-actions">
-            <a className="button primary" href="/contact/">Request an Appointment</a>
+            {isCareer ? (
+              <a className="button primary" href={careersMailto}>Email us about a role</a>
+            ) : (
+              <a className="button primary" href="/contact/">Request an Appointment</a>
+            )}
             <a className="button ghost" href="tel:6503429449">650-342-9449</a>
           </div>
         </div>
@@ -1639,9 +1652,19 @@ function InnerPage({ page }: { page: SitePage }) {
             <img src={content.image} alt={content.imageAlt || content.imageLabel || ""} />
             <span>{content.imageLabel}</span>
           </div>
-          <h3>Set up your FREE hearing consultation</h3>
-          <p>Tell us what you’re noticing. We’ll help you understand your options and build a plan around your life.</p>
-          <a className="button primary wide" href="/contact/">Request an appointment</a>
+          {isCareer ? (
+            <>
+              <h3>Interested in joining us?</h3>
+              <p>Tell us which role interests you and a little about yourself. We read every message.</p>
+              <a className="button primary wide" href={careersMailto}>Email {careersEmail}</a>
+            </>
+          ) : (
+            <>
+              <h3>Set up your FREE hearing consultation</h3>
+              <p>Tell us what you’re noticing. We’ll help you understand your options and build a plan around your life.</p>
+              <a className="button primary wide" href="/contact/">Request an appointment</a>
+            </>
+          )}
           <hr />
           <strong>San Mateo – Main Office</strong>
           <p>88 N. San Mateo Drive<br />San Mateo, CA 94401</p>
@@ -2084,11 +2107,23 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
         {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
       </div>
       <section className="appointment">
-        <div>
-          <p className="section-kicker">Set up your free hearing consultation</p>
-          <h2>Turn life up with better hearing.</h2>
-        </div>
-        <a className="button primary" href="/contact/">Request an appointment</a>
+        {page?.path === "/about-us/career/" ? (
+          <>
+            <div>
+              <p className="section-kicker">Now hiring on the Peninsula</p>
+              <h2>Come and do the job properly.</h2>
+            </div>
+            <a className="button primary" href={careersMailto}>Email us about a role</a>
+          </>
+        ) : (
+          <>
+            <div>
+              <p className="section-kicker">Set up your free hearing consultation</p>
+              <h2>Turn life up with better hearing.</h2>
+            </div>
+            <a className="button primary" href="/contact/">Request an appointment</a>
+          </>
+        )}
       </section>
       <footer className="site-footer">
         <div className="footer-main">
