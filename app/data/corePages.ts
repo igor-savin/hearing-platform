@@ -191,7 +191,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I schedule with Dr. Hatem?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/giana-hatem.jpg",
+  image: "/assets/team/giana-hatem-v2.jpg",
   imageLabel: "Giana Hatem, AuD",
   imageAlt: "Dr. Giana Hatem, audiologist at California Hearing Center",
 },
@@ -218,7 +218,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I reach the practice?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/jarna-kothari.jpg",
+  image: "/assets/team/jarna-kothari-v2.jpg",
   imageLabel: "Jarna Kothari, Practice Administrator",
   imageAlt: "Jarna Kothari, Practice Administrator at California Hearing Center",
 },
