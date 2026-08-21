@@ -70,7 +70,7 @@ const scheduleUrl =
 // Careers enquiries go to the practice inbox, not through the patient booking
 // flow. mailto opens whatever mail client the visitor actually uses (Gmail
 // included, when it is registered as the handler) — no form to maintain.
-const careersEmail = "infochc@hearing-care.org";
+const careersEmail = "infochc@hearing-care.org";  // used to build careersMailto; the buttons read "Email us about a role"
 const careersMailto =
   `mailto:${careersEmail}?subject=${encodeURIComponent("Career enquiry — California Hearing Center")}`;
 
@@ -199,11 +199,11 @@ const featuredRoutes = [
 const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: string; image: string }[] = [
   { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/thumb/kira-savin.webp" },
   { slug: "lais-ama", name: "Lais Ama", credential: "Director of Hearing Aid Services", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama.webp" },
-  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem.webp" },
+  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem-v2.webp" },
   { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/darcy-benson.webp" },
   { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/jennifer-ratner.webp" },
   { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
-  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari.webp" },
+  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari-v2.webp" },
 ];
 
 // Embedded office maps. Uses the keyless Google Maps embed (no API key needed)
@@ -1656,7 +1656,7 @@ function InnerPage({ page }: { page: SitePage }) {
             <>
               <h3>Interested in joining us?</h3>
               <p>Tell us which role interests you and a little about yourself. We read every message.</p>
-              <a className="button primary wide" href={careersMailto}>Email {careersEmail}</a>
+              <a className="button primary wide" href={careersMailto}>Email us about a role</a>
             </>
           ) : (
             <>
