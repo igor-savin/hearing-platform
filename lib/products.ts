@@ -159,6 +159,90 @@ export const hearingAidProducts: HearingAidProduct[] = [
     ]
   },
   {
+    slug: "phonak-eon",
+    brandSlug: "phonak",
+    title: "Phonak EON",
+    shortTitle: "Phonak EON",
+    subtitle: "A smaller chip, and the AI finally reaches further down the range",
+    menuDescription: "Phonak's 2026 platform, with Auracast live from day one and Roger support carried over.",
+    image: "/assets/brands/Phonak-EON-Sphere-device.webp",
+    imageAlt: "Phonak Audéo EON Sphere rechargeable receiver-in-canal hearing aid in Sienna Red, shown with receiver wire",
+    overview: [
+      "Phonak released EON from Stäfa on 24 August 2026 and American dispensers could order it the same afternoon. Three receiver-in-canal models make up the range — Audéo EON Sphere, Audéo EON R, and CROS EON for hearing that has gone on one side only. Our Harrison and Somers audiologists fit all three.",
+      "What changed is the processor. Phonak's previous flagship carried two chips, the second existing purely to run a neural network that pulls voices out of surrounding noise. EON does that work on one chip, called HYPERSONIC, and the saving shows up as a shell Phonak puts at 25 per cent smaller and 20 per cent lighter, drawing 37 per cent less current. The consequence that matters to patients is less obvious: because the network is cheaper to run, Phonak has extended it to a third performance level rather than restricting it to the two dearest.",
+      "We have read the reference list behind this launch rather than the headline, and the two do not say quite the same thing. Below is what Phonak has demonstrated, what it has asserted, and what nobody yet knows — kept separate, because at four weeks old that distinction is the whole of the useful information."
+    ],
+    highlights: [
+      "Spheric Speech Clarity 3.0 runs at three performance tiers — 90, 70 and 50 — where the network previously stopped after the top two",
+      "Auracast broadcast audio is switched on and working, joined by scanning a code in the myPhonak app rather than waiting for a firmware release",
+      "RogerDirect carries over, so an existing Roger clip, pen, or table microphone pairs straight to the new aids",
+      "Quoted at up to 38 hours between charges, with a portable case that holds a charge of its own; eight finishes",
+      "No telecoil on any model, and nothing custom, pediatric, or high-power on the platform — those fittings stay on Infinio and Lumity"
+    ],
+    technology: [
+      {
+        title: "Follow the Reference, Not the Headline",
+        body: "One sentence is doing most of the work in the coverage of this launch: that wearers are twice as likely to catch every word, whichever direction it comes from. It carries a reference marker, so we followed it. It leads to a Phonak field study published in 2024 — written about the previous platform's version of the same feature — and the comparison it describes is that feature running against the identical aid with the feature disabled. That is a sound finding and we have no quarrel with it. It is simply not a statement about EON, nor about the aid you are wearing today, and if you already own an Infinio Sphere it describes a benefit you have had for two years. The competitive claim, that EON Sphere beat four rival devices for clarity in loud noise, comes from a Phonak-authored paper in 2026 which never identifies the four."
+      },
+      {
+        title: "What Phonak Is Careful Not to Claim",
+        body: "Read the launch material closely and an absence stands out. Nowhere does Phonak argue that EON hears more clearly in a noisy room than Infinio Ultra already did. For a company that has spent two years building its reputation on precisely that measure, the restraint is striking, and we read it as honest rather than evasive. It does reshape the upgrade question, though. If you are considering a move from a working Infinio fitting, you are buying a smaller and lighter aid with broadcast audio that functions today — not, on the manufacturer's own account, better hearing in a restaurant."
+      },
+      {
+        title: "Auracast That Actually Runs",
+        body: "Broadcast audio is being advertised across the whole industry this year, and much of what is advertised is hardware waiting on a firmware release. Phonak's is live: you point the myPhonak app at a code and the broadcast arrives. Set against that, EON has no telecoil, and neither did the Audéo line before it. Loops remain how most theatres, halls, and houses of worship in Westchester actually transmit, so the practical question is what your particular venue runs. Tell us which one and we will establish it before you commit to a manufacturer — the answer occasionally points somewhere other than Phonak, and we would rather say so."
+      },
+      {
+        title: "Eight Finishes, and Why We Raise It",
+        body: "EON is produced in Sienna Red, Sand Beige, Sandalwood, Chestnut, Champagne, Silver Grey, Graphite Gray and Velvet Black. The electronics are identical in every one. We mention it because it is among the few parts of this decision that rest entirely with you, and because it bears on outcome more than a specification sheet suggests: hours worn per day remains the strongest predictor of benefit that anyone has measured, and an aid its owner is content to be seen wearing gets worn. Patients hoping it will disappear against hair or skin tend towards Sand Beige, Sandalwood or Champagne. Those who would rather it read as a piece of equipment than a medical device generally choose Graphite Gray or Velvet Black. Sienna Red is new to this platform and chosen more often than you might expect. We hold the actual finishes against your hair at the fitting rather than asking you to judge from a screen."
+      },
+      {
+        title: "What Is Not Available, and What Is Not Yet Known",
+        body: "Every EON is a receiver-in-canal aid. There is no custom in-the-ear shell, no titanium in-the-canal model, no high-power behind-the-ear instrument and nothing for children on this platform; all of those sit on Phonak's older platforms, which remain in the catalogue and in service. No independent laboratory has assessed EON — testing is said to be under way, and on past form the results are months rather than weeks away. Phonak has published no price at any tier, and stated no ingress rating for dust or moisture in the launch documents. Tinnitus goes unmentioned throughout, which is peculiar — Tinnitus Balance has shipped as standard on Audéo aids for a long while. Our expectation is that nothing has changed, but an expectation is not a confirmation, and we will look in the fitting software before putting it in writing."
+      },
+      {
+        title: "The Fitting Still Decides the Outcome",
+        body: "There is a number in the independent testing of the outgoing platform that is worth more to you than anything in this launch. Assessed on the manufacturer's own default settings, Phonak's Sphere Infinio Ultra scored 3.1 out of 5 for speech in noise. Assessed again after being properly adjusted, the same aid on the same equipment scored 5.0. The average across all thirty-six prescription aids the laboratory has tested is 1.96. Adjustment moved that aid further than the whole distance separating a typical device from a strong one. Nothing else about the test changed. Every device we dispense is set to your prescription and then measured in your own ear canal with a probe microphone, and adjusted again over subsequent visits."
+      }
+    ],
+    videos: [
+      {
+        title: "Meet Phonak EON — the manufacturer's introduction",
+        youtubeId: "c69B0hGHoqg"
+      },
+      {
+        title: "An independent review from Dr. Cliff Olson, AuD",
+        youtubeId: "cdkj1EevZGs"
+      }
+    ],
+    faqs: [
+      {
+        question: "When did Phonak EON become available?",
+        answer: "Phonak announced it on 24 August 2026 and it went on sale in the United States that day, Germany, France, the UK and Australia are scheduled for September. What any individual practice can fit depends on stock and on fitting software updates — call either office and we will tell you where we actually stand."
+      },
+      {
+        question: "Is EON worth moving to from Phonak Infinio?",
+        answer: "For most Infinio wearers, not for the sound — on Phonak's own account this is not an aid that hears better in noise than the one it replaces. It is worth considering if working Auracast matters to you, or if the size and weight of your present aids are the reason they spend time in a drawer. If your Infinio fitting has never been verified in your ear canal, we would rather measure it than replace it."
+      },
+      {
+        question: "Does Phonak EON have a telecoil?",
+        answer: "No, and no model in the Audéo line has offered one for several years. EON supports Auracast instead, which is the technology intended to succeed loop systems and which works on EON now rather than later. Westchester venues have largely stayed with loops, so if one hall or congregation is the reason you are buying, name it and we will check what that building actually transmits."
+      },
+      {
+        question: "Will my Roger microphone still work?",
+        answer: "Yes. RogerDirect carries across to EON, so an existing Roger clip, pen or table microphone pairs to the new aids without an additional receiver. Bring it along and we will pair it in front of you, so none of that is left to be discovered at home."
+      },
+      {
+        question: "Has anyone outside Phonak tested it?",
+        answer: "Not yet. Every figure presently circulating originates with the manufacturer's own field studies and insight papers. The platform EON replaces has been through independent assessment and performed near the top of its category, so if measured evidence weighs more with you than release date, that comparison is the relevant one."
+      },
+      {
+        question: "Does EON come in a custom shell?",
+        answer: "Not on this platform. All three EON models sit behind the ear with the receiver in the canal. Custom shells, titanium in-the-canal aids, high-power behind-the-ear instruments and children's fittings are all built on earlier Phonak platforms that remain available. For a patient who needs one of those, it is the right aid rather than second best."
+      }
+    ]
+  },
+  {
     slug: "oticon-intent",
     brandSlug: "oticon",
     title: "Oticon Intent",
@@ -298,29 +382,46 @@ export const hearingAidProducts: HearingAidProduct[] = [
     brandSlug: "phonak",
     title: "Phonak Infinio",
     shortTitle: "Phonak Infinio",
-    subtitle: "Swiss engineering with AI dual-chip technology",
-    menuDescription: "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.",
+    subtitle: "Measured by an outside laboratory, and available in shapes EON is not",
+    menuDescription: "The Phonak with independent test results behind it, plus the custom and titanium shells.",
     image: "/assets/brands/Phonak-Infinio-copper-scale.webp",
-    imageAlt: "Phonak Infinio hearing aid",
+    imageAlt: "Phonak Audeo Infinio Ultra rechargeable receiver-in-canal hearing aid",
     overview: [
-      "Phonak Infinio hearing aids bring Phonak's newest platform approach to speech clarity, comfort, and connectivity. The platform is designed to support understanding in demanding listening environments while preserving ease of use.",
-      "Audiology Associates of Westchester can help determine whether Infinio, Lyric, or another hearing aid family best matches your communication needs."
+      "August 2026 moved Infinio down a rung when EON appeared above it. Phonak kept it in production, and we go on recommending it — often in preference to the newer platform. That is an unusual position to take, so the argument for it is laid out below rather than simply announced.",
+      "The flagship of the family, Audéo Infinio Ultra Sphere, carries two processors: one for ordinary listening and a second doing nothing but running a neural network that separates voices from the noise around them. Beneath it sit the Infinio Ultra R, the rechargeable custom Virto R Infinio, the titanium in-the-canal Virto models, and a CROS version for hearing that has gone on one side.",
+      "Our Harrison and Somers audiologists fit and verify the whole family. Whether Infinio or EON suits you is a question about your ears, your budget and how much weight you put on published evidence — not about which launched more recently."
     ],
     highlights: [
-      "AI-assisted speech-in-noise processing on select models",
-      "Universal Bluetooth connectivity goals across many devices",
-      "Rechargeable styles depending on model",
-      "Compatible accessories for challenging listening situations",
-      "Personalized fitting, verification, and support"
+      "An outside laboratory has assessed it: grade A, 4.9 out of 5 overall, second in its category among the thirty-six prescription aids tested — EON has no such result and will not for months",
+      "Available as a rechargeable custom in-the-ear shell and as a titanium in-the-canal aid; EON is receiver-in-canal only",
+      "Still catalogued, still serviced, still supplied with receivers, filters and firmware — being replaced at the top of the range is not the same as being discontinued",
+      "RogerDirect throughout, so a Roger clip, pen or table microphone works without an extra receiver",
+      "As the outgoing flagship it is getting cheaper, which for anyone paying out of pocket is a real part of the calculation"
     ],
     technology: [
       {
-        title: "SmartSpeech™ and AutoSense",
-        body: "Phonak technology is designed to analyze the listening environment and adjust automatically for improved comfort and speech access."
+        title: "The Independent Result, and the Number Inside It",
+        body: "Nearly every performance figure attached to a hearing aid was produced by the firm selling it. Infinio is an exception, having been through a standardised assessment run by neither Phonak nor us: grade A, 4.9 of a possible 5, ranked second in its class out of thirty-six prescription devices. The grade is not the interesting part. Further into the report the same aid is measured twice — once as the manufacturer's software configured it, once after a clinician had adjusted it. Speech in noise went from 3.1 to 5.0. Thirty-six devices averaged 1.96. Nothing about the equipment changed between those two readings."
       },
       {
-        title: "Connectivity Focus",
-        body: "Phonak is known for broad wireless connectivity options that can support phone calls, media, and accessories."
+        title: "Two Chips, and What the Second One Is For",
+        body: "The Sphere model splits its work. One processor handles everyday amplification while a second is given over entirely to real-time neural processing, which frees enough capacity to pull speech out of shifting, crowded environments — the situation in which most people with hearing loss actually struggle, and the one the laboratory measurement above was taken in. Around that sit Phonak's automatic scene detection, so the aid adjusts as you move between rooms without asking anything of you."
+      },
+      {
+        title: "The Shapes EON Cannot Be Made In",
+        body: "EON exists in exactly one form: behind the ear, receiver in the canal. Infinio was built out far wider. Virto R Infinio is a rechargeable device moulded to a scan of the ear itself, which suits people who find a fine wire awkward to manage and anyone who wears spectacles or ear defenders daily. The titanium Virto models are pushed further down the canal in a casing thin enough that most people never notice them. A CROS variant handles hearing lost on one side. Where anatomy or dexterity calls for one of these, no EON can substitute — the older platform is simply the one that fits, and that is a matter of clinical suitability, not budget."
+      },
+      {
+        title: "Not Discontinued",
+        body: "Patients tend to hear superseded as meaning about to be abandoned. Phonak's own catalogue says otherwise: Infinio Ultra R, Infinio Ultra Sphere, Virto R Infinio, the titanium Virto models and CROS Infinio all remain listed beside EON. Servicing, software updates, replacement receivers and wax guards carry on unchanged, and a Roger microphone works with either generation. Nobody buying today is buying into a dead end. Current wearers need nothing more elaborate than a yearly check and a re-measurement whenever their hearing moves."
+      },
+      {
+        title: "Connectivity, and the Telecoil Question",
+        body: "Calls and media stream in from either iPhone or Android, the app handles day-to-day adjustment, and a Roger microphone connects without a receiver bolted on. The omission to be aware of is the telecoil, absent here and absent from EON — Phonak stopped fitting them to the Audéo line some years ago. Auracast, the intended successor to loop systems, runs on EON alone. Given that broadcasting in this county still overwhelmingly means a loop, that omission deserves real thought. Where a single venue is the reason you are buying, tell us which and we will find out what it uses before steering you towards any manufacturer."
+      },
+      {
+        title: "What It Costs to Be Second-Newest",
+        body: "Prices soften once a platform stops being the newest thing, and that works in your favour. The trade is a previous-generation processor, a marginally larger casing, and no broadcast audio. Against that you get a device rated near the top of its field by an outside assessor, a far wider choice of shapes, and enough fitting history among clinicians that its awkward corners are documented. Relevant here: a randomised study of 245 adults, published in 2025, set devices around $4,400 against devices around $1,100 and could find no meaningful difference in how people fared. Putting less into the hardware and refusing to compromise on the verification is a coherent strategy, and discounted Infinio executes it about as well as anything on the market."
       }
     ],
     videos: [
@@ -331,12 +432,20 @@ export const hearingAidProducts: HearingAidProduct[] = [
     ],
     faqs: [
       {
-        question: "What makes Phonak Infinio different?",
-        answer: "Infinio focuses on speech clarity, adaptive processing, and connectivity. The best comparison depends on your hearing test and real-world listening priorities."
+        question: "Has Phonak discontinued Infinio now that EON is out?",
+        answer: "No. Infinio Ultra R, Infinio Ultra Sphere, Virto R Infinio, the titanium Virto models and CROS Infinio are all still catalogued alongside EON, and repairs, firmware, receivers and Roger compatibility continue as before."
+      },
+      {
+        question: "Should I buy Infinio rather than EON?",
+        answer: "Often, yes. It is the generation with an outside grade attached, it exists in custom, titanium and CROS forms that EON does not, and its price is falling. Set against that: no working broadcast audio, and a slightly bigger casing. Come in and we will say which of those matters in your case."
+      },
+      {
+        question: "Can I get Infinio as a custom in-the-ear aid?",
+        answer: "Yes. Virto R Infinio is moulded from a scan of your own ear and recharges overnight; the titanium versions go further into the canal in a casing most people never spot. EON offers nothing comparable. Where handling a fine wire is difficult, or spectacles and hearing protection are worn daily, or discretion simply matters, a custom device usually wins."
       },
       {
         question: "Can Phonak Infinio help in restaurants?",
-        answer: "Advanced hearing aids may help in noise, but benefit varies. A professional fitting and follow-up programming are important for difficult listening environments."
+        answer: "Crowded rooms are precisely what the second processor was added for, and the outside measurement in noise bore that out. Whether the benefit reaches your ears is a separate question, decided by the fitting: the identical device read 3.1 as shipped and 5.0 once adjusted. We take that measurement in your own canal and keep adjusting until it matches your prescription."
       }
     ]
   },
@@ -626,11 +735,15 @@ export const productBrands: ProductBrand[] = [
         body: "Phonak platforms emphasize automatic environmental adaptation and wireless connection to phones, accessories, and remote microphones."
       },
       {
-        title: "Multiple product pathways",
-        body: "Phonak Infinio focuses on advanced daily amplification, while Lyric offers a deep-canal extended-wear option for appropriate candidates."
+        title: "Two current platforms, not one",
+        body: "EON arrived in August 2026 and now heads the range, but Phonak has not retired Infinio and continues to sell and service it. The distinction matters when choosing: EON is smaller and lighter and its Auracast works today, while Infinio covers the custom, titanium and higher-power shapes EON does not offer and has been through independent laboratory assessment that EON has not."
+      },
+      {
+        title: "Roger, and Lyric",
+        body: "Two Phonak capabilities have no real equivalent elsewhere. Roger is a remote microphone that sends a talker's voice straight into the aids across distance and noise, which is a different order of help from anything a hearing aid manages alone. Lyric sits deep in the canal and is worn continuously for months at a time, invisible and needing nothing from the wearer, for candidates whose ear anatomy suits it."
       }
     ],
-    products: ["phonak-infinio", "phonak-lyric"]
+    products: ["phonak-eon", "phonak-infinio", "phonak-lyric"]
   },
   {
     slug: "starkey",
