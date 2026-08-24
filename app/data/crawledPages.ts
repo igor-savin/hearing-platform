@@ -241,6 +241,38 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/products/hearing-aids-by-brand/signia/signia-max/",
+    "title": "Signia MaX (Multi-adaptive Xperience) | California Hearing Center",
+    "h1": "Signia MaX",
+    "desc": "Signia MaX launched August 24, 2026 with four neural networks. What is confirmed, which claims come from Signia own white papers, and what is still unknown.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/signia/signia-max-vs-signia-ix/",
+    "title": "Signia MaX vs Signia IX — Should You Upgrade? | California Hearing Center",
+    "h1": "Signia MaX vs Signia IX",
+    "desc": "What actually changed between Signia IX and MaX, what IX still does better, and who should wait. An independent audiologist comparison.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/signia/signia-max-cost/",
+    "title": "How Much Does Signia MaX Cost? | California Hearing Center",
+    "h1": "How Much Does Signia MaX Cost?",
+    "desc": "Signia has not published US pricing for MaX. What determines the price, what a fitting includes, and how insurance and financing apply.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/signia/signia-max-vs-oticon-reveal/",
+    "title": "Signia MaX vs Oticon Reveal | California Hearing Center",
+    "h1": "Signia MaX vs Oticon Reveal",
+    "desc": "Two flagships launched two weeks apart in August 2026. Four neural networks versus two AI systems — and what neither can prove yet.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/products/hearing-aids-by-brand/signia/signia-ix/",
     "title": "Signia Ix | California Hearing Center",
     "h1": "Signia Ix",
@@ -685,6 +717,14 @@ export const crawledPages: SitePage[] = [
     "title": "What Is Dual AI in Hearing Aids? | California Hearing Center",
     "h1": "What Is Dual AI in Hearing Aids?",
     "desc": "Every hearing aid brand advertises AI and the word means five different things. What Dual AI is, who has real neural processing, and how to judge the claims.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/signia-max-what-we-know/",
+    "title": "Signia MaX: What We Actually Know So Far | California Hearing Center",
+    "h1": "Signia MaX: What We Actually Know So Far",
+    "desc": "Signia MaX launched August 24, 2026 with four neural networks. What is confirmed, which claims come from Signia own white papers, and what nobody knows yet.",
     "h2": [],
     "paragraphs": []
   },

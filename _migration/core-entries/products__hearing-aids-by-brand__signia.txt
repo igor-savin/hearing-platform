@@ -1,36 +1,45 @@
 "/products/hearing-aids-by-brand/signia/": {
   kicker: "Hearing Aid Brands",
   headline: "Signia Hearing Aids in San Mateo & San Carlos",
+  metaTitle: "Signia Hearing Aids | MaX, IX & Fitting | California Hearing Center",
+  metaDescription: "Signia MaX launched August 2026 as the new flagship, with the full Signia IX range still current. What each platform does, who each suits, and how we verify the fitting in San Mateo and San Carlos.",
   intro: [
     "Signia carries a remarkable heritage: its roots reach back to Siemens' early work on clearer telephone voice quality in the 1800s, and in 2016 Siemens' hearing aid division became Signia. That century-plus of audiology experience now sits behind modern, stylish designs that challenge old ideas of what a hearing aid should look like, and it reaches over 120 countries.",
+    "Signia's newest platform, [MaX — Multi-adaptive Xperience](/products/hearing-aids-by-brand/signia/signia-max/) — launched on August 24, 2026 and is the current flagship. It runs four deep neural networks together under a system Signia calls Acoustic Intelligence, and it is the most connected device the company has made. The previous platform, [Signia IX](/products/hearing-aids-by-brand/signia/signia-ix/), remains current, fully supported, and considerably wider — it covers custom, instant-fit, slim, behind-the-ear and CROS styles that MaX does not yet offer, and it has independent laboratory scores that MaX does not.",
     "Signia is known for polished styling, own-voice comfort, and its conversation-focused sound processing. California Hearing Center is proud to offer Signia's cutting-edge solutions at our San Mateo and San Carlos offices, and our audiologists are trained to fit and optimize them to your unique hearing profile.",
     "Whether Signia suits you depends on your hearing loss and preferences, confirmed through testing and [expert fitting](/hearing-aid-fitting/) with real-ear verification."
   ],
   sections: [
-    ["Integrated Xperience (IX) conversation technology", "Signia's latest platform, Integrated Xperience, is built for real conversations. Rather than locking onto one direction, its multi-stream architecture can identify, enhance, and track multiple speakers as they move, creating a clear contrast between speech and background noise and reducing listening effort in busy settings."],
+    ["Signia MaX — the 2026 flagship", "Multi-adaptive Xperience is Signia's current top platform. Where most hearing aids that advertise artificial intelligence run one neural network trained to separate speech from noise, MaX runs four — speech detection, own-voice detection, scene analysis and noise processing — coordinated as a single adaptive system. Signia's argument is that a device which separately understands the room you are in, whether the voice it has found is your own, and whether you are actually in a conversation will make better decisions than one that only knows how to reduce noise. It launched as a single model, the rechargeable Pure Charge&Go MaX, with a new connectivity package that puts Bluetooth Classic, LE Audio, a telecoil and Auracast hardware into one device. We set out what is confirmed, what Signia claims and who measured it, and what is still unknown on our [Signia MaX page](/products/hearing-aids-by-brand/signia/signia-max/)."],
+    ["Signia IX — still the wider family", "Integrated Xperience arrived in 2023 and built its reputation on RealTime Conversation Enhancement, a multi-stream design that identifies and tracks several speakers as they move around a group. It measured well: HearAdvisor scored the Pure Charge&Go BCT IX at 4.4 out of 5 and placed the Active Pro IX in the top five percent of everything the laboratory has tested. IX is not being discontinued — Signia still catalogues the full range and added a new model, the Active Mini IX, in July 2026. It remains the platform to choose if you need a custom in-the-ear device, a powerful behind-the-ear fitting, an instant-fit tip, the slim Styletto styling, or a CROS solution for single-sided deafness. Our [MaX versus IX comparison](/products/hearing-aids-by-brand/signia/signia-max-vs-signia-ix/) explains which suits whom."],
+    ["Own-voice comfort and modern styling", "A common frustration for new users is that their own voice sounds strange or booming. Signia has worked on this longer than most manufacturers, and on MaX the own-voice processing no longer requires the in-clinic calibration step earlier platforms needed — it works accurately from the moment the device goes on. Signia's sleek, slim designs, including discreet receiver styles and the earbud-shaped Active range, also appeal to patients who want a contemporary look rather than something that reads as a medical device."],
     ["My WellBeing health features", "Signia extends hearing care into wellness with My WellBeing in the Signia app. Using the hearing aids' built-in motion sensors, it can track daily steps and activity, how much you wear your devices, and even conversation time, helping you set and meet personal health goals."],
     ["A century of audiology heritage", "Signia continues the engineering legacy of Siemens, combining German precision with modern innovation. That long track record informs devices that balance advanced sound processing with refined, everyday reliability."],
-    ["Own-voice comfort and modern styling", "A common frustration for new users is that their own voice sounds strange or booming. Signia's processing aims to keep the wearer's own voice natural, and its sleek, slim designs, including discreet receiver styles, appeal to patients who want a contemporary look."],
-    ["The Signia IX family", "Signia IX delivers clear conversations even in loud settings with easy all-day charging. The lineup includes the Pure Charge&Go IX for active users and the ultra-discreet Silk Charge&Go IX, offering customized solutions across different needs and preferences."],
-    ["Verified to your prescription", "Own-voice comfort and smart processing still need accurate amplification behind them. We program and confirm output with real-ear measurement so the device fits your hearing, not just your ear."]
+    ["Verified to your prescription", "Own-voice comfort and smart processing still need accurate amplification behind them. We program and confirm output with real-ear measurement so the device fits your hearing, not just your ear. This matters more than the choice between platforms — manufacturer first-fit settings routinely fall short of prescriptive targets, and a verified Signia IX will outperform an unverified Signia MaX in the rooms you actually live in."]
   ],
   bulletLinks: [
+    ["Signia MaX — the 2026 flagship", "/products/hearing-aids-by-brand/signia/signia-max/"],
+    ["Signia MaX vs Signia IX", "/products/hearing-aids-by-brand/signia/signia-max-vs-signia-ix/"],
+    ["Signia MaX vs Oticon Reveal", "/products/hearing-aids-by-brand/signia/signia-max-vs-oticon-reveal/"],
+    ["Signia IX models and technology", "/products/hearing-aids-by-brand/signia/signia-ix/"],
+    ["What Signia MaX costs", "/products/hearing-aids-by-brand/signia/signia-max-cost/"],
     ["Compare all brands", "/products/hearing-aids-by-brand/"],
-    ["Hearing aids overview", "/products/hearing-aids/"],
     ["The fitting process", "/hearing-aid-fitting/"],
-    ["Book a hearing test", "/hearing-testing/"],
-    ["Rexton", "/products/hearing-aids-by-brand/rexton/"],
-    ["Widex", "/products/hearing-aids-by-brand/widex/"]
+    ["Book a hearing test", "/hearing-testing/"]
   ],
   takeaways: [
-    "Signia is known for own-voice processing, modern styling, and strong connectivity.",
-    "It often suits people bothered by how their own voice sounds through hearing aids.",
-    "The right brand is the one that measures and sounds best for your ears after professional fitting."
+    "Signia MaX, launched August 2026, is the current flagship — four neural networks running together, with telecoil and Auracast hardware built into the standard device.",
+    "Signia IX is still current and much wider, covering custom, instant-fit, slim, behind-the-ear and CROS styles that MaX does not yet offer.",
+    "IX has independent laboratory scores; MaX has none yet from anyone outside Signia.",
+    "Signia is known for own-voice processing, modern styling, and strong connectivity, and often suits people bothered by how their own voice sounds.",
+    "The right platform is the one that measures and sounds best for your ears after professional fitting."
   ],
   faqs: [
-    ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for its Integrated Xperience (IX) conversation technology, own-voice comfort, My WellBeing health tracking, and sleek, modern styling with rechargeable options."],
-    ["What is Signia Integrated Xperience (IX)?", "IX is Signia's latest platform. Its multi-stream design can pinpoint and track multiple moving speakers in a conversation, sharpening speech against background noise and reducing listening effort in noisy environments."],
-    ["Why does my own voice sound strange with hearing aids?", "Amplification can make your own voice sound booming or unnatural at first. Signia's processing is designed to keep your own voice natural, and thoughtful fitting plus a short adjustment period help most people adapt comfortably."],
+    ["What is Signia's newest hearing aid?", "Signia MaX — Multi-adaptive Xperience — announced on August 24, 2026. It is the successor to Signia IX and runs four deep neural networks together under a system Signia calls Acoustic Intelligence. It launched with a single model, the rechargeable Pure Charge&Go MaX."],
+    ["Is Signia IX being discontinued?", "No. Signia still catalogues the full IX family alongside MaX, and released a new IX model — the Active Mini IX — in July 2026. Firmware, repairs, accessories and fitting support all continue, and IX still covers styles MaX does not offer."],
+    ["Should I buy Signia MaX or Signia IX?", "It depends on what you need. MaX has the newer architecture and the better connectivity package, but exists in one receiver-in-canal style and has no independent test data. IX comes in custom, instant-fit, slim, powerful and CROS forms, has strong independent laboratory scores, and is likely to become better value as MaX rolls out. We go through it on our [MaX versus IX page](/products/hearing-aids-by-brand/signia/signia-max-vs-signia-ix/)."],
+    ["What is Signia known for?", "Signia, which carries the Siemens hearing aid heritage, is recognized for its conversation-focused processing, own-voice comfort, My WellBeing health tracking, and sleek, modern styling with rechargeable options."],
+    ["Why does my own voice sound strange with hearing aids?", "Amplification can make your own voice sound booming or unnatural at first. Signia's processing is designed to keep your own voice natural — on MaX it works without any calibration step at the fitting — and thoughtful fitting plus a short adjustment period help most people adapt comfortably."],
     ["Is Signia related to Siemens?", "Yes. Signia grew out of the former Siemens hearing aid division in 2016 and continues that century-plus of engineering heritage under the Signia name today."]
   ],
   image: "/assets/signia.webp",

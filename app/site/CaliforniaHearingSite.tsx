@@ -163,24 +163,25 @@ const products = [
   ["Widex Allure", "Natural clarity from a family-owned innovator.", "/assets/widex.webp"],
   ["ReSound Vivia", "Award-winning connectivity and refined everyday sound.", "/assets/resound.webp"],
   ["Starkey Edge AI", "American innovation with AI-powered adaptive listening.", "/assets/starkey.webp"],
-  ["Signia IX", "Rechargeable hearing aids with over a century of engineering.", "/assets/signia.webp"],
+  ["Signia MaX", "Four neural networks working together, from a century-old engineering house.", "/assets/signia.webp"],
 ];
 
 const hearingAidColumns: ProductMenuLink[][] = [
   [
     ["Oticon Reveal", "The world's first Dual AI hearing aid \u2014 Speech and Context AI deliver crystal-clear speech.", "/products/hearing-aids-by-brand/oticon/oticon-reveal/", "/assets/oticon-reveal.webp"],
+    ["Signia MaX", "Signia's 2026 flagship \u2014 four neural networks running together as one adaptive system.", "/products/hearing-aids-by-brand/signia/signia-max/", "/assets/signia.webp"],
     ["Oticon Intent", "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
     ["Phonak Lyric", "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.", "/products/hearing-aids-by-brand/phonak/phonak-lyric/", "/assets/phonak.webp"],
-    ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
   ],
   [
+    ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
     ["Oticon Zeal", "Discreet Oticon hearing technology, fit and verified for your hearing.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
     ["Phonak Infinio", "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.", "/products/hearing-aids-by-brand/phonak/phonak-infinio/", "/assets/phonak-infinio.webp"],
     ["ReSound Vivia", "Pioneering award-winning hearing solutions and connectivity advancements since 1943.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
   ],
   [
     ["Starkey Edge AI", "Pioneered American innovation, cutting-edge styles with AI-powered adaptive technology.", "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/", "/assets/starkey.webp"],
-    ["Signia IX", "Innovative, rechargeable hearing aids with over a century of excellence.", "/products/hearing-aids-by-brand/signia/signia-ix/", "/assets/signia.webp"],
+    ["Signia IX", "The wider Signia family \u2014 custom, instant-fit, slim and CROS styles, independently tested.", "/products/hearing-aids-by-brand/signia/signia-ix/", "/assets/signia.webp"],
     ["Ear Gear", "Custom earplugs and earmolds for all your hearing needs-serving the Bay Area.", "/products/eargear/", "/assets/ear-gear.webp"],
   ],
 ];

@@ -27,7 +27,7 @@
   takeaways: [
     "We serve Peninsula senior living communities two ways — an on-site visit at your community, or a dedicated group clinic day when your bus brings residents to us.",
     "Both are free to the community and to residents, we work on any brand from any provider, and we do not sell anything on site.",
-    "To arrange a visit, use the [request form](/senior-living/request-a-visit/), call 650-342-9449, or email infochc@hearing-care.org with two or three dates that fit your activities calendar."
+    "To arrange a visit, use the request form linked above, call 650-342-9449, or email infochc@hearing-care.org with two or three dates that fit your activities calendar."
   ],
   faqs: [
     ["What does the program cost our community?", "Nothing. There is no fee, no contract, no minimum number of residents, and no obligation to continue after a first visit. We ask for a common room, about 45 minutes on your calendar, and a mention in your resident newsletter."],

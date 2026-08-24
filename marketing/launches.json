@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "launches": {
+    "oticon-reveal": {
+      "name": "Oticon Reveal",
+      "launched": "2026-08-11",
+      "open": {
+        "price": {
+          "what": "US pricing at any technology level",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tiers": {
+          "what": "the technology tier structure",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "independent-lab": {
+          "what": "independent measurement (HearAdvisor or equivalent)",
+          "chase_after_days": 120,
+          "status": "open",
+          "resolved_on": null
+        },
+        "ip-rating": {
+          "what": "the IP dust and moisture rating",
+          "chase_after_days": 30,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "fitting-range": {
+          "what": "fitting range and receiver powers",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "styles": {
+          "what": "custom, BTE, instant-fit or CROS versions",
+          "chase_after_days": 180,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "tinnitus": {
+          "what": "whether the tinnitus programs carry over",
+          "chase_after_days": 30,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "tier-table": {
+          "what": "the confirmed US level-by-level specification table",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        }
+      }
+    },
+    "signia-max": {
+      "name": "Signia MaX",
+      "launched": "2026-08-24",
+      "open": {
+        "price": {
+          "what": "US pricing at any technology level",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tiers": {
+          "what": "the technology tier structure",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "independent-lab": {
+          "what": "independent measurement (HearAdvisor or equivalent)",
+          "chase_after_days": 120,
+          "status": "open",
+          "resolved_on": null
+        },
+        "ip-rating": {
+          "what": "the IP dust and moisture rating",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "fitting-range": {
+          "what": "fitting range and receiver powers",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "styles": {
+          "what": "custom, BTE, instant-fit or CROS versions",
+          "chase_after_days": 180,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tinnitus": {
+          "what": "whether the tinnitus programs carry over",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "auracast": {
+          "what": "whether the March 2027 Auracast firmware actually shipped",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "app-name": {
+          "what": "whether the app is called Signia One or Signia",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        }
+      }
+    }
+  }
+}

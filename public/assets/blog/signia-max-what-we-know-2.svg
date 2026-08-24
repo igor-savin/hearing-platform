@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 637" role="img" aria-label="Confirmed, Claimed, and Unknown">
+  <defs><linearGradient id="hd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#155f6b"/><stop offset="1" stop-color="#105966"/></linearGradient></defs>
+  <rect width="800" height="637" fill="#ffffff"/>
+  <rect x="0" y="0" width="800" height="90" fill="url(#hd)"/>
+  <rect x="0" y="86" width="800" height="4" fill="#e0ae3c"/>
+  <text x="44" y="44" font-family="Georgia, serif" font-size="25" fill="#ffffff" font-weight="bold">Confirmed, Claimed, and Unknown</text>
+  <text x="44" y="70" font-family="Georgia, serif" font-size="15" fill="#86d0d5">Signia MaX, on the day it launched</text>
+
+    <circle cx="66" cy="156.2" r="24" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="66" y="163.2" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">1</text>
+    <text x="108" y="151.2" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Confirmed</text>
+    <text x="108" y="174.2" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">Pure Charge&amp;Go MaX, RIC only, eight colours</text>
+    <line x1="108" y1="194.4" x2="756" y2="194.4" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="232.6" r="24" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="66" y="239.6" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">2</text>
+    <text x="108" y="227.6" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Confirmed</text>
+    <text x="108" y="250.6" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">Telecoil + LE Audio + Auracast hardware in one device</text>
+    <line x1="108" y1="270.8" x2="756" y2="270.8" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="309.0" r="24" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="66" y="316.0" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">3</text>
+    <text x="108" y="304.0" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Claimed by Signia</text>
+    <text x="108" y="327.0" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">97% of wearers, No. 1 SNR — own white papers</text>
+    <line x1="108" y1="347.2" x2="756" y2="347.2" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="385.4" r="24" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="66" y="392.4" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">4</text>
+    <text x="108" y="380.4" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Claimed by Signia</text>
+    <text x="108" y="403.4" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">54x processing power — footnote reads “vs Signia IX”</text>
+    <line x1="108" y1="423.6" x2="756" y2="423.6" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="461.8" r="24" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="66" y="468.8" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">5</text>
+    <text x="108" y="456.8" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Not yet known</text>
+    <text x="108" y="479.8" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">No independent lab measurement of any kind</text>
+    <line x1="108" y1="500.0" x2="756" y2="500.0" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="538.2" r="24" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="66" y="545.2" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">6</text>
+    <text x="108" y="533.2" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Not yet known</text>
+    <text x="108" y="556.2" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">No price, no tiers, no IP rating published</text>
+    <line x1="108" y1="576.4" x2="756" y2="576.4" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="614.6" r="24" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="3"/>
+    <text x="66" y="621.6" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">7</text>
+    <text x="108" y="609.6" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Not available</text>
+    <text x="108" y="632.6" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">No custom, BTE, instant-fit or CROS style</text>
+    <line x1="108" y1="652.8" x2="756" y2="652.8" stroke="#e5eceb" stroke-width="2"/>
+</svg>
