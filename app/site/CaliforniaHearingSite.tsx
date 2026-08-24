@@ -161,13 +161,14 @@ const products = [
   ["Oticon Intent", "BrainHearing™ technology for natural, effortless hearing in noise.", "/assets/oticon.webp"],
   ["Phonak Lyric", "Invisible extended-wear hearing with total discretion.", "/assets/phonak.webp"],
   ["Widex Allure", "Natural clarity from a family-owned innovator.", "/assets/widex.webp"],
-  ["ReSound Vivia", "Award-winning connectivity and refined everyday sound.", "/assets/resound.webp"],
+  ["Phonak EON", "Swiss engineering, a new HYPERSONIC chip, and Auracast that works today.", "/assets/phonak.webp"],
   ["Starkey Edge AI", "American innovation with AI-powered adaptive listening.", "/assets/starkey.webp"],
   ["Signia MaX", "Four neural networks working together, from a century-old engineering house.", "/assets/signia.webp"],
 ];
 
 const hearingAidColumns: ProductMenuLink[][] = [
   [
+    ["Phonak EON", "Phonak's 2026 flagship \u2014 a new HYPERSONIC chip, and Auracast working on day one.", "/products/hearing-aids-by-brand/phonak/phonak-eon/", "/assets/phonak.webp"],
     ["Oticon Reveal", "The world's first Dual AI hearing aid \u2014 Speech and Context AI deliver crystal-clear speech.", "/products/hearing-aids-by-brand/oticon/oticon-reveal/", "/assets/oticon-reveal.webp"],
     ["Signia MaX", "Signia's 2026 flagship \u2014 four neural networks running together as one adaptive system.", "/products/hearing-aids-by-brand/signia/signia-max/", "/assets/signia.webp"],
     ["Oticon Intent", "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
@@ -176,7 +177,7 @@ const hearingAidColumns: ProductMenuLink[][] = [
   [
     ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
     ["Oticon Zeal", "Discreet Oticon hearing technology, fit and verified for your hearing.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
-    ["Phonak Infinio", "Swiss engineering, AI dual-chip technology, and universal connectivity ensure unmatched clarity.", "/products/hearing-aids-by-brand/phonak/phonak-infinio/", "/assets/phonak-infinio.webp"],
+    ["Phonak Infinio", "The measured Phonak \u2014 an A grade from HearAdvisor, plus custom, titanium and CROS styles.", "/products/hearing-aids-by-brand/phonak/phonak-infinio/", "/assets/phonak-infinio.webp"],
     ["ReSound Vivia", "Pioneering award-winning hearing solutions and connectivity advancements since 1943.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
   ],
   [

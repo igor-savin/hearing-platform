@@ -5551,5 +5551,45 @@ export const crawledPages: SitePage[] = [
     "desc": "California Hearing Center offers CareCredit financing so you can pay for hearing aids in manageable monthly payments — combined with your insurance benefit and HSA/FSA funds.",
     "h2": [],
     "paragraphs": []
-  }
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/phonak/phonak-eon/",
+    "title": "Phonak EON (Audéo EON Sphere) | Specs, Claims & Fitting | California Hearing Center",
+    "h1": "Phonak EON",
+    "desc": "Phonak EON launched August 24, 2026 with the HYPERSONIC chip. What is confirmed, what the footnotes behind the headline claims actually say, and what nobody has measured yet.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/phonak/phonak-eon-vs-phonak-infinio/",
+    "title": "Phonak EON vs Phonak Infinio | Should You Upgrade? | California Hearing Center",
+    "h1": "Phonak EON vs Phonak Infinio",
+    "desc": "Phonak EON replaced Infinio Ultra on August 24, 2026. What genuinely changed, what Infinio still does better, and why we would leave most Infinio wearers exactly where they are.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/phonak/phonak-eon-cost/",
+    "title": "Phonak EON Cost | What Drives the Price | California Hearing Center",
+    "h1": "How Much Does Phonak EON Cost?",
+    "desc": "Phonak has published no price for EON. Here is what genuinely determines what you pay, why the new technology levels change the calculation, and what our fee includes.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/products/hearing-aids-by-brand/phonak/phonak-eon-vs-signia-max/",
+    "title": "Phonak EON vs Signia MaX | Two Flagships, One Launch Day | California Hearing Center",
+    "h1": "Phonak EON vs Signia MaX",
+    "desc": "Phonak EON and Signia MaX both launched on August 24, 2026. Where each one wins, where each one loses, and why neither has been independently measured yet.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/phonak-eon-what-we-know/",
+    "title": "Phonak EON: What We Actually Know So Far | California Hearing Center",
+    "h1": "Phonak EON: What We Actually Know So Far",
+    "desc": "Phonak launched EON on August 24, 2026. What is confirmed, what the footnote behind the headline claim actually says, what nobody has measured, and who it suits.",
+    "h2": [],
+    "paragraphs": []
+  },
 ];
