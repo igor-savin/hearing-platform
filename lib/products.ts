@@ -85,8 +85,8 @@ export const hearingAidProducts: HearingAidProduct[] = [
     shortTitle: "Signia MaX",
     subtitle: "Four neural networks reading the room together",
     menuDescription: "Signia's 2026 flagship, with telecoil and Auracast built into one device.",
-    image: "/assets/brands/Signia-MaX.webp",
-    imageAlt: "Signia Pure Charge&Go MaX rechargeable hearing aid",
+    image: "/assets/brands/Signia-MaX-device.webp",
+    imageAlt: "Signia Pure Charge&Go MaX rechargeable hearing aid in beige, shown with receiver and dome",
     overview: [
       "Multi-adaptive Xperience, shortened to MaX, arrived on 24 August 2026 and now heads the Signia range. It reached American dispensers on announcement day, which is unusually fast, and our Harrison and Somers audiologists are fitting it.",
       "The engineering idea is worth understanding before the marketing around it. Rival platforms lean on a single trained network whose job is to lift voices out of background sound. Signia has split that work four ways: one network decides whether it is hearing speech, a second recognises the wearer's own voice, a third reads the acoustics of the space, and a fourth decides how the remaining noise should be handled. Under the banner Acoustic Intelligence, the four run in concert.",
@@ -117,8 +117,22 @@ export const hearingAidProducts: HearingAidProduct[] = [
         body: "Outside testing: none, from any laboratory. Pricing: unannounced at every level. Also missing are the performance-tier breakdown, the fitting range, receiver strengths, and an ingress rating for dust and water. One absence stands out to us — tinnitus. Signia equips the IX family with tinnitus therapy as a matter of course, yet none of the MaX material refers to it. The likeliest explanation is that it simply carries over, but we would rather open the fitting software and check than print an assumption."
       },
       {
+        title: "Eight Finishes, and Why It Is Not a Trivial Choice",
+        body: "MaX is made in eight colours — Beige, Black, Chestnut Brown, Dark Champagne, Honey Blonde, Rose Gold, Silver and Titanium Grey. The finish alters nothing about the sound; the hardware underneath is identical. We mention it because it is one of the few parts of this decision that belongs entirely to you, and because it counts for more than specification sheets imply. Hearing aids only help while they are being worn, and hours per day is the strongest single predictor of benefit anyone has measured. Patients hoping the device will vanish against hair or skin generally settle on Beige, Honey Blonde or Chestnut Brown. Those who would rather it look like a piece of technology than a medical appliance usually prefer Black, Titanium Grey or Silver. At the fitting we hold the real finishes against your hair rather than asking you to pick from a screen."
+      },
+      {
         title: "The Fitting Decides More Than the Platform",
         body: "Specifications describe potential, not outcome. Every device we dispense is set to your prescription and then measured in your own ear canal with a probe microphone, and adjusted again over subsequent appointments as your hearing settles. Out-of-the-box manufacturer settings commonly land under target, which is how a thoroughly verified mid-tier aid ends up outperforming a premium one nobody checked. No amount of neural processing rescues amplification set wrong at the frequencies that matter to you."
+      }
+    ],
+    videos: [
+      {
+        title: "Signia Pure Charge&Go MaX",
+        youtubeId: "oGWxYOMZoGc"
+      },
+      {
+        title: "Acoustic Intelligence: the four neural networks explained",
+        youtubeId: "yjJOhxOC1r0"
       }
     ],
     faqs: [
