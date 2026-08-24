@@ -79,6 +79,72 @@ export const hearingAidProducts: HearingAidProduct[] = [
     ]
   },
   {
+    slug: "signia-max",
+    brandSlug: "signia",
+    title: "Signia MaX",
+    shortTitle: "Signia MaX",
+    subtitle: "Four neural networks reading the room together",
+    menuDescription: "Signia's 2026 flagship, with telecoil and Auracast built into one device.",
+    image: "/assets/brands/Signia-MaX.webp",
+    imageAlt: "Signia Pure Charge&Go MaX rechargeable hearing aid",
+    overview: [
+      "Multi-adaptive Xperience, shortened to MaX, arrived on 24 August 2026 and now heads the Signia range. It reached American dispensers on announcement day, which is unusually fast, and our Harrison and Somers audiologists are fitting it.",
+      "The engineering idea is worth understanding before the marketing around it. Rival platforms lean on a single trained network whose job is to lift voices out of background sound. Signia has split that work four ways: one network decides whether it is hearing speech, a second recognises the wearer's own voice, a third reads the acoustics of the space, and a fourth decides how the remaining noise should be handled. Under the banner Acoustic Intelligence, the four run in concert.",
+      "Because the platform is barely a week old, we have written this page differently from most of what is circulating. Nothing has been through an outside laboratory, the price list is unpublished, and there is exactly one model. Below we separate the specification from the sales figures, and say which is which."
+    ],
+    highlights: [
+      "Speech, own-voice, scene, and noise each handled by a dedicated neural network rather than one general-purpose model",
+      "A single connectivity package — OneConnect — covering Bluetooth Classic, LE Audio, telecoil, and Auracast without picking a special variant",
+      "Own-voice tuning happens automatically, removing a step that used to be done in the clinic",
+      "Pure Charge&Go MaX, rechargeable, eight finishes; half an hour in the case buys roughly six hours, and the case itself stores four complete charges",
+      "Receiver-in-canal only for now — anyone needing a custom shell, an earbud shape, a power BTE, or a CROS setup should look at Signia IX"
+    ],
+    technology: [
+      {
+        title: "Why Four Networks and Not One",
+        body: "Splitting the task is the substantive change. A single model tuned to suppress background sound has no way of knowing whether you are mid-conversation, whether the voice it just found belongs to you, or whether you have walked from a quiet corridor into a crowded hall. Miss any of those and the aid helps in the wrong direction — flattening a room you were listening to, or dipping your voice the instant you start talking. Dedicated networks are Signia's answer. Whether four beats one for your particular hearing is not something the published record can settle today."
+      },
+      {
+        title: "Reading the Manufacturer's Numbers",
+        body: "Two headline results accompany the launch: that MaX beat unnamed rival devices for 97 per cent of wearers in noisy group settings, and that it leads on signal-to-noise performance in the same conditions. Trace either back and you arrive at in-house Signia white papers from 2026 that have not been released, with no disclosed protocol or sample. A third figure — a 54-fold gain in processing capacity, half again the energy efficiency, double the memory — is supported by a footnote whose entire content is that the yardstick was Signia IX. We are not suggesting the engineering is overstated; internal validation is normal and necessary. We are pointing out that nobody independent has looked, and that silicon capacity is a poor proxy for what a patient notices in a crowded room."
+      },
+      {
+        title: "Ask Specifically About Auracast",
+        body: "Every summary of MaX lists Auracast, and the chip does support it. What the summaries omit is Signia's own timetable: the feature is switched on by a firmware release due before March 2027. Today the aid is prepared for broadcast audio rather than able to use it. Given how hard the whole industry is promoting Auracast at the moment, that gap is worth naming. The built-in telecoil is live now and handles most loop-equipped theatres, halls, and houses of worship in Westchester."
+      },
+      {
+        title: "The Gaps, Stated Plainly",
+        body: "Outside testing: none, from any laboratory. Pricing: unannounced at every level. Also missing are the performance-tier breakdown, the fitting range, receiver strengths, and an ingress rating for dust and water. One absence stands out to us — tinnitus. Signia equips the IX family with tinnitus therapy as a matter of course, yet none of the MaX material refers to it. The likeliest explanation is that it simply carries over, but we would rather open the fitting software and check than print an assumption."
+      },
+      {
+        title: "The Fitting Decides More Than the Platform",
+        body: "Specifications describe potential, not outcome. Every device we dispense is set to your prescription and then measured in your own ear canal with a probe microphone, and adjusted again over subsequent appointments as your hearing settles. Out-of-the-box manufacturer settings commonly land under target, which is how a thoroughly verified mid-tier aid ends up outperforming a premium one nobody checked. No amount of neural processing rescues amplification set wrong at the frequencies that matter to you."
+      }
+    ],
+    faqs: [
+      {
+        question: "What does MaX stand for?",
+        answer: "Multi-adaptive Xperience. Signia names its platforms this way — AX was Augmented Xperience, IX was Integrated Xperience. MaX is the 2026 generation and the current top of the range."
+      },
+      {
+        question: "How does Signia MaX differ from Signia IX?",
+        answer: "Three things, practically speaking. The processing is rebuilt around four specialised networks on a faster chip. Own-voice setup no longer needs a calibration step during your appointment. And telecoil plus Auracast hardware come as standard rather than requiring a particular model. Against that, IX is available in shapes MaX is not — custom, earbud, slim, power BTE, and CROS."
+      },
+      {
+        question: "Has anyone outside Signia tested it?",
+        answer: "No. As of late August 2026 every published figure originates with the manufacturer. Signia IX has been through independent laboratory assessment and performed strongly, so if verified measurement carries more weight with you than platform age, that comparison matters."
+      },
+      {
+        question: "Can I get Signia MaX as a custom in-the-ear aid?",
+        answer: "Not currently. The launch line-up is one device, the rechargeable Pure Charge&Go MaX, which rests behind the ear with the receiver seated in the canal. Custom shells, instant-fit tips, power behind-the-ear models, and CROS fittings are all available on Signia IX."
+      },
+      {
+        question: "Is it worth holding out for, or should I be fitted now?",
+        answer: "If hearing is a daily struggle, a properly verified fitting today will serve you better than waiting on a platform whose real-world results are still unmeasured. If your present aids are doing their job, nothing about this launch obliges you to move. Come in to either office and we will give you a straight answer."
+      }
+    ]
+  },
+  {
     slug: "oticon-intent",
     brandSlug: "oticon",
     title: "Oticon Intent",
@@ -265,29 +331,38 @@ export const hearingAidProducts: HearingAidProduct[] = [
     brandSlug: "signia",
     title: "Signia IX",
     shortTitle: "Signia IX",
-    subtitle: "Rechargeable hearing aids for conversation in motion",
-    menuDescription: "Innovative, rechargeable hearing aids with over a century of excellence.",
+    subtitle: "The broad Signia range, and the one with laboratory results behind it",
+    menuDescription: "Custom, instant-fit, slim, and CROS styles, independently measured.",
     image: "/assets/brands/Signia-IX.webp",
     imageAlt: "Signia IX hearing aid",
     overview: [
-      "Signia IX hearing aids are designed to support conversation clarity in dynamic environments, including moments when people are moving, turning, or speaking from different directions.",
-      "Our team can review Signia IX alongside other premium hearing aid options and help you decide what fits your hearing, comfort, and technology preferences."
+      "Integrated Xperience reached the market in 2023, engineered around conversations that will not sit still — several people talking, heads turning, the speaker changing every few seconds. Signia introduced a successor in August 2026, but IX has not been retired. The catalogue still lists it in full, and a fresh IX model shipped as recently as July 2026.",
+      "We continue to recommend it often, and not as a fallback. Two reasons. It exists in almost every shape Signia manufactures, whereas the newer platform currently ships in one. And its performance has been assessed by laboratories with no stake in the answer, which is not yet true of anything newer.",
+      "Both the Harrison and the Somers office fit the whole IX family. If you would like to hear it against Signia MaX, or against another manufacturer entirely, we can arrange that within a single appointment."
     ],
     highlights: [
-      "Rechargeable options",
-      "Speech-focused processing for group settings",
-      "Multiple styles depending on clinical needs",
-      "App-based controls with compatible devices",
-      "Personalized programming and counseling"
+      "Assessed by independent laboratory testing, with the Pure Charge&Go BCT IX rated 4.4 out of 5 and the Active Pro IX landing in the leading five per cent of devices examined",
+      "Available as a custom shell, an instant-fit tip, a slim profile, a power behind-the-ear, an earbud shape, or a CROS pairing for one-sided hearing",
+      "Tinnitus therapy is included throughout the family — something the newer platform's launch material never mentions",
+      "Rechargeable across most of the line, with cases that charge and protect at the same time",
+      "Actively supported: fitting software, firmware, servicing, and accessories all ongoing"
     ],
     technology: [
       {
-        title: "Conversation Support",
-        body: "Signia IX is built to help speech remain accessible in real-world conversations, including noisier and more active environments."
+        title: "Conversations That Will Not Hold Still",
+        body: "IX was designed for the situation patients describe most often as impossible — a table of people where whoever is talking keeps changing. Instead of committing to one direction and holding it, the platform can pick out several voices at once and follow them as they move around you."
       },
       {
-        title: "Rechargeable Convenience",
-        body: "Rechargeable hearing aids can simplify daily use for patients who prefer not to change disposable batteries."
+        title: "What Outside Testing Showed",
+        body: "Here IX has something its successor cannot yet claim. Independent laboratory assessment, carried out by an organisation that gains nothing from the verdict, rated the Pure Charge&Go BCT IX at 4.4 out of 5 and put the Active Pro IX inside the leading five per cent of every hearing aid it has examined. Those are genuinely strong marks. Signia MaX has not been through any comparable process, and previous launches suggest that will remain the case for some months."
+      },
+      {
+        title: "A Shape for Nearly Every Fitting",
+        body: "The breadth is the point. Pure Charge&Go is the everyday rechargeable, with a telecoil-equipped sibling for loop systems. Silk seats itself in the canal with no impression taken and is close to undetectable. Styletto reads as a piece of consumer electronics rather than a medical device. Motion handles substantial hearing losses from behind the ear. Active and Active Mini borrow the earbud silhouette. Insio is made from a mould of your own ear. Several of these also come in CROS form where hearing is limited to one side."
+      },
+      {
+        title: "Everyday Rechargeability",
+        body: "Most IX models charge overnight and run a full day with streaming included, topping up quickly when needed. Patients who find tiny disposable cells awkward to handle often rate this above any processing specification, and we think that judgement is sound."
       }
     ],
     videos: [
@@ -298,12 +373,20 @@ export const hearingAidProducts: HearingAidProduct[] = [
     ],
     faqs: [
       {
-        question: "Are Signia IX hearing aids rechargeable?",
-        answer: "Many Signia IX options are rechargeable. The exact style and charger depend on the model selected with your audiologist."
+        question: "Now that MaX exists, can I still get Signia IX?",
+        answer: "Yes. The complete IX family remains in Signia's catalogue next to MaX, and a new IX model was released in July 2026, a month ahead of the MaX announcement. Servicing, repairs, firmware, and accessories all carry on, and we dispense IX from both locations."
       },
       {
-        question: "Does Signia IX work for group conversations?",
-        answer: "The platform is designed with conversation support in mind, but results depend on hearing needs, fit, and programming."
+        question: "Which should I choose, IX or MaX?",
+        answer: "If the right device for your ears is a custom shell, an instant-fit, a power BTE, a slim model, or a CROS pairing, only IX offers it. If a receiver-in-canal aid suits you, then weigh the newer architecture against laboratory results and probable pricing. We are glad to demonstrate the two together."
+      },
+      {
+        question: "Will Signia IX help with tinnitus?",
+        answer: "Tinnitus therapy signals come as standard across IX and we configure them during your fitting. It is worth noting that MaX's launch documentation is silent on tinnitus altogether; we anticipate the features transfer, but IX is the one we can presently stand behind on this. Sound delivered through hearing aids is one element of tinnitus care, and rarely the entire answer on its own."
+      },
+      {
+        question: "Are they rechargeable?",
+        answer: "The majority are. Which charger and which style depends on the model you and your audiologist settle on — a few of the very smallest custom devices still take a disposable cell, simply because there is no room for a rechargeable one."
       }
     ]
   },
@@ -558,22 +641,30 @@ export const productBrands: ProductBrand[] = [
   {
     slug: "signia",
     name: "Signia",
-    headline: "Conversation-focused rechargeable hearing aids",
+    headline: "Two current Signia platforms, suited to different patients",
     summary:
-      "Signia hearing aids emphasize speech understanding, rechargeable convenience, and modern features for active conversations.",
+      "Signia concentrates on speech clarity in demanding rooms, comfortable own-voice sound, and rechargeable convenience. MaX, released in 2026, distributes its processing across four neural networks; IX, the preceding platform, is still sold and reaches far more device shapes.",
     legacy:
-      "With roots connected to more than a century of hearing technology, Signia offers modern hearing aid platforms for many lifestyles.",
+      "The brand descends from Siemens' hearing division, renamed Signia in 2016 — better than a hundred years of work on intelligible speech, now expressed through contemporary platforms and understated industrial design.",
     technology: [
       {
-        title: "Conversation in motion",
-        body: "Signia IX is designed to help keep conversations accessible in dynamic settings where people and sound sources move."
+        title: "Signia MaX, released 2026",
+        body: "Where most AI-branded hearing aids depend on one trained model, MaX divides the job among four, and folds Bluetooth, a telecoil, and Auracast circuitry into a single unit. It launched in August 2026 as one rechargeable style, and each performance claim published so far traces back to Signia's own research rather than an outside assessor."
       },
       {
-        title: "Rechargeable convenience",
-        body: "Rechargeable styles can reduce daily battery handling and simplify the routine for many patients."
+        title: "Signia IX, still sold and far broader",
+        body: "The earlier platform continues in production. Custom shells, instant-fit tips, slim profiles, power behind-the-ear models, earbud shapes, and CROS pairings are all IX and none are MaX. Tinnitus therapy is standard on IX, and independent laboratories have measured it."
+      },
+      {
+        title: "How your own voice sounds",
+        body: "New wearers frequently complain that their own speech comes back boomy or hollow. Signia has invested in this problem for longer than most of its rivals, and on MaX the correction applies itself from first fit, with no calibration routine to sit through in the clinic."
+      },
+      {
+        title: "Measured on your ear, not on paper",
+        body: "The platform matters less than the fitting. We check what actually reaches your eardrum against your prescription, because factory defaults regularly undershoot it — and a properly verified IX will beat an unchecked MaX in the rooms where you actually need to hear."
       }
     ],
-    products: ["signia-ix"]
+    products: ["signia-max", "signia-ix"]
   },
   {
     slug: "widex",
