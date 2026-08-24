@@ -10,6 +10,8 @@ export const pageVideos: Record<string, string> = {
   "/products/hearing-aids-by-brand/resound/resound-vivia/": "ZZGkgKNjl3Y",
   "/products/hearing-aids-by-brand/rexton/": "iYCF9mHtVJ0",
   "/products/hearing-aids-by-brand/signia/signia-ix/": "0fHS3TYitA8",
+  "/products/hearing-aids-by-brand/signia/signia-max-vs-signia-ix/": "yjJOhxOC1r0",
+  "/products/hearing-aids-by-brand/signia/signia-max/": "oGWxYOMZoGc",
   "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/": "38q7GgjS--I",
   "/products/hearing-aids-by-brand/widex/widex-allure/": "SpFXfGdDb9E",
   "/resources/hearingup-approved-provider/": "4F1pkDhb8ys",

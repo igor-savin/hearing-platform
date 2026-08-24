@@ -163,14 +163,14 @@ const products = [
   ["Widex Allure", "Natural clarity from a family-owned innovator.", "/assets/widex.webp"],
   ["Phonak EON", "Swiss engineering, a new HYPERSONIC chip, and Auracast that works today.", "/assets/phonak.webp"],
   ["Starkey Edge AI", "American innovation with AI-powered adaptive listening.", "/assets/starkey.webp"],
-  ["Signia MaX", "Four neural networks working together, from a century-old engineering house.", "/assets/signia.webp"],
+  ["Signia MaX", "Four neural networks working together, from a century-old engineering house.", "/assets/signia-max.webp"],
 ];
 
 const hearingAidColumns: ProductMenuLink[][] = [
   [
     ["Phonak EON", "Phonak's 2026 flagship \u2014 a new HYPERSONIC chip, and Auracast working on day one.", "/products/hearing-aids-by-brand/phonak/phonak-eon/", "/assets/phonak.webp"],
     ["Oticon Reveal", "The world's first Dual AI hearing aid \u2014 Speech and Context AI deliver crystal-clear speech.", "/products/hearing-aids-by-brand/oticon/oticon-reveal/", "/assets/oticon-reveal.webp"],
-    ["Signia MaX", "Signia's 2026 flagship \u2014 four neural networks running together as one adaptive system.", "/products/hearing-aids-by-brand/signia/signia-max/", "/assets/signia.webp"],
+    ["Signia MaX", "Signia's 2026 flagship \u2014 four neural networks running together as one adaptive system.", "/products/hearing-aids-by-brand/signia/signia-max/", "/assets/signia-max.webp"],
     ["Oticon Intent", "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
     ["Phonak Lyric", "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.", "/products/hearing-aids-by-brand/phonak/phonak-lyric/", "/assets/phonak.webp"],
   ],
@@ -930,6 +930,7 @@ function productImage(pageTitle: string) {
   if (title.includes("widex")) return "/assets/widex.webp";
   if (title.includes("resound")) return "/assets/resound.webp";
   if (title.includes("starkey")) return "/assets/starkey.webp";
+  if (title.includes("signia max")) return "/assets/signia-max.webp";
   if (title.includes("signia")) return "/assets/signia.webp";
   if (title.includes("eargear") || title.includes("ear gear")) return "/assets/ear-gear.webp";
   if (title.includes("reveal")) return "/assets/oticon-reveal.webp";
