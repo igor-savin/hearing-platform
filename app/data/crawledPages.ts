@@ -211,7 +211,7 @@ export const crawledPages: SitePage[] = [
   {
     "path": "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/",
     "title": "Starkey Edge Ai | California Hearing Center",
-    "h1": "Starkey Edge Ai",
+    "h1": "Starkey Edge AI",
     "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
     "h2": [],
     "paragraphs": []
@@ -275,7 +275,7 @@ export const crawledPages: SitePage[] = [
   {
     "path": "/products/hearing-aids-by-brand/signia/signia-ix/",
     "title": "Signia Ix | California Hearing Center",
-    "h1": "Signia Ix",
+    "h1": "Signia IX",
     "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
     "h2": [],
     "paragraphs": []
@@ -291,7 +291,7 @@ export const crawledPages: SitePage[] = [
   {
     "path": "/products/hearing-aids-by-brand/resound/resound-vivia/",
     "title": "Resound Vivia | California Hearing Center",
-    "h1": "Resound Vivia",
+    "h1": "ReSound Vivia",
     "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
     "h2": [],
     "paragraphs": []

@@ -1702,6 +1702,8 @@ function InnerPage({ page }: { page: SitePage }) {
         </aside>
       </section>
 
+      <BrandProductGrid page={page} />
+
       {page.path === "/about-us/" && <TeamRoster />}
       {page.path === "/areas-we-serve/" && <AreasDirectory />}
 
@@ -1731,6 +1733,63 @@ function InnerPage({ page }: { page: SitePage }) {
         </div>
       </section>
     </>
+  );
+}
+
+// Brand hub pages carry an ecommerce-style grid of the products we fit for that
+// brand. The source is hearingAidColumns -- the same array that builds the
+// mega-menu -- so the menu and the grid cannot drift apart, and adding a
+// product to the menu adds its card here automatically. Everything under a
+// brand that is NOT in that array is a comparison or cost page; those get a
+// secondary row, because nothing else on the site links to them.
+const BRAND_HUB = /^\/products\/hearing-aids-by-brand\/([^/]+)\/$/;
+
+function brandFamily(brandSlug: string) {
+  const prefix = `/products/hearing-aids-by-brand/${brandSlug}/`;
+  const products = hearingAidColumns.flat().filter(([, , href]) => href.startsWith(prefix));
+  const productHrefs = new Set(products.map(([, , href]) => href));
+  const extras = crawledPages
+    .filter((item) => item.path.startsWith(prefix) && item.path !== prefix && !productHrefs.has(item.path))
+    .map((item) => ({ path: item.path, label: item.h1 || titleFromPath(item.path) }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+  // "Phonak EON" -> "Phonak", "ReSound Vivia" -> "ReSound". Taking it from the
+  // product title keeps the manufacturer's own capitalisation, which titleising
+  // the slug would destroy.
+  const brandName = products.length ? products[0][0].split(" ")[0] : "";
+  return { products, extras, brandName };
+}
+
+function BrandProductGrid({ page }: { page: SitePage }) {
+  const match = page.path.match(BRAND_HUB);
+  if (!match) return null;
+  const { products, extras, brandName } = brandFamily(match[1]);
+  // CapTel, CaptionCall, Lyric, Rexton and Unitron have brand hubs but no
+  // product pages. Render nothing rather than an empty grid.
+  if (products.length === 0) return null;
+
+  return (
+    <section className="container brand-family">
+      <p className="section-kicker">The range we fit</p>
+      <h2>{brandName} hearing aids we fit and verify</h2>
+      <div className="product-grid">
+        {products.map(([title, text, href, image]) => (
+          <a className="product-card brand-family-card" href={href} key={href}>
+            <img src={image} alt="" loading="lazy" decoding="async" width="150" height="110" />
+            <h3>{title}</h3>
+            <p>{text}</p>
+            <span className="brand-family-more">Read more<span aria-hidden="true"> →</span></span>
+          </a>
+        ))}
+      </div>
+      {extras.length > 0 && (
+        <div className="brand-family-extras">
+          <p className="section-kicker">Compare and cost</p>
+          <div className="pill-grid">
+            {extras.map((item) => <a key={item.path} href={item.path}>{item.label}</a>)}
+          </div>
+        </div>
+      )}
+    </section>
   );
 }
 
