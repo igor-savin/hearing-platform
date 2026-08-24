@@ -2,7 +2,8 @@ import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
 import { blogPhotos } from "../data/blogPhotos";
-import { pageVideos } from "../data/pageVideos";
+import { pageVideos as harvestedVideos } from "../data/pageVideos";
+import { pageVideosManual } from "../data/pageVideosManual";
 import { corePages } from "../data/corePages";
 import { YEARS_IN_PRACTICE, YEARS_DARCY, YEARS_LAIS } from "../data/practice";
 import { ReviewBadge, ReviewPanel } from "./ReviewBadge";
@@ -11,6 +12,10 @@ import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
 import { LeadForm } from "./LeadForm";
+
+// pageVideos.ts is regenerated from the legacy crawl and would drop any
+// hand-added entry, so manual ones are kept separately and merged here.
+const pageVideos: Record<string, string> = { ...harvestedVideos, ...pageVideosManual };
 
 const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://calhearing.com").replace(/\/$/, "");
 
@@ -161,14 +166,14 @@ const products = [
   ["Oticon Intent", "BrainHearing™ technology for natural, effortless hearing in noise.", "/assets/oticon.webp"],
   ["Phonak Lyric", "Invisible extended-wear hearing with total discretion.", "/assets/phonak.webp"],
   ["Widex Allure", "Natural clarity from a family-owned innovator.", "/assets/widex.webp"],
-  ["Phonak EON", "Swiss engineering, a new HYPERSONIC chip, and Auracast that works today.", "/assets/phonak.webp"],
+  ["Phonak EON", "Swiss engineering, a new HYPERSONIC chip, and Auracast that works today.", "/assets/phonak-eon.webp"],
   ["Starkey Edge AI", "American innovation with AI-powered adaptive listening.", "/assets/starkey.webp"],
   ["Signia MaX", "Four neural networks working together, from a century-old engineering house.", "/assets/signia-max.webp"],
 ];
 
 const hearingAidColumns: ProductMenuLink[][] = [
   [
-    ["Phonak EON", "Phonak's 2026 flagship \u2014 a new HYPERSONIC chip, and Auracast working on day one.", "/products/hearing-aids-by-brand/phonak/phonak-eon/", "/assets/phonak.webp"],
+    ["Phonak EON", "Phonak's 2026 flagship \u2014 a new HYPERSONIC chip, and Auracast working on day one.", "/products/hearing-aids-by-brand/phonak/phonak-eon/", "/assets/phonak-eon.webp"],
     ["Oticon Reveal", "The world's first Dual AI hearing aid \u2014 Speech and Context AI deliver crystal-clear speech.", "/products/hearing-aids-by-brand/oticon/oticon-reveal/", "/assets/oticon-reveal.webp"],
     ["Signia MaX", "Signia's 2026 flagship \u2014 four neural networks running together as one adaptive system.", "/products/hearing-aids-by-brand/signia/signia-max/", "/assets/signia-max.webp"],
     ["Oticon Intent", "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
@@ -926,6 +931,7 @@ function relatedAreaLinks(page: SitePage): { path: string; label: string }[] {
 
 function productImage(pageTitle: string) {
   const title = pageTitle.toLowerCase();
+  if (title.includes("phonak eon")) return "/assets/phonak-eon.webp";
   if (title.includes("phonak") || title.includes("lyric")) return "/assets/phonak.webp";
   if (title.includes("widex")) return "/assets/widex.webp";
   if (title.includes("resound")) return "/assets/resound.webp";

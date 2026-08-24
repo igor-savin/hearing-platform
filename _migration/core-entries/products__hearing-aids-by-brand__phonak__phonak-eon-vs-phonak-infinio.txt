@@ -42,7 +42,7 @@
     ["I bought Infinio last year. Did I buy at the wrong time?", "No. Phonak is not claiming EON hears better than Infinio Ultra, and Infinio Ultra is the platform with an independent laboratory score — an A grade and 4.9 out of 5 from HearAdvisor. What we would suggest instead is bringing them in for verification if that was never done. The measured difference between an unverified and a verified fitting on that exact device was larger than the difference between an average hearing aid and a good one."],
     ["How much will upgrading cost?", "Phonak has not published pricing for EON at any technology level, and we will not invent a figure. What we can tell you is what drives the number and what our fee includes — see [what Phonak EON costs](/products/hearing-aids-by-brand/phonak/phonak-eon-cost/). We will quote you something real once we can stand behind it."]
   ],
-  image: "/assets/phonak.webp",
+  image: "/assets/phonak-eon.webp",
   imageLabel: "Phonak EON and Phonak Infinio compared",
-  imageAlt: "Phonak Audéo rechargeable receiver-in-canal hearing aids"
+  imageAlt: "Phonak Audéo EON Sphere rechargeable receiver-in-canal hearing aid in Sienna Red, shown with its receiver wire"
 },
