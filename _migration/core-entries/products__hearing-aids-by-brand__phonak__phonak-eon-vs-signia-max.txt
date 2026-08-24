@@ -42,7 +42,7 @@
     ["Has either been independently tested?", "Not as of late August 2026. HearAdvisor, the laboratory whose standardised measurements are the closest thing the industry has to a neutral referee, has published nothing on either device. Every performance figure in circulation for both platforms comes from documents the manufacturers wrote. The platforms they replace have both been measured and both scored well, which is worth weighing if evidence matters to you."],
     ["Do either of them help with tinnitus?", "Neither company mentions tinnitus in its launch materials, which is unusual for both — Phonak's Tinnitus Balance and Signia's Notch Therapy have been standard on the outgoing platforms for years. We expect both features carry forward and we will confirm it in the fitting software rather than assume it. If tinnitus is your main reason for seeking help, our [tinnitus service](/services/tinnitus-therapy/) explains how we approach it."]
   ],
-  image: "/assets/phonak.webp",
+  image: "/assets/phonak-eon.webp",
   imageLabel: "Phonak EON and Signia MaX, launched the same day",
-  imageAlt: "Phonak Audéo rechargeable receiver-in-canal hearing aid"
+  imageAlt: "Phonak Audéo EON Sphere rechargeable receiver-in-canal hearing aid in Sienna Red, shown with its receiver wire"
 },

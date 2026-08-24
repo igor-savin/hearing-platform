@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-label="The eight finishes of the Phonak Audeo EON Sphere">
+  <defs><linearGradient id="hd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#155f6b"/><stop offset="1" stop-color="#105966"/></linearGradient></defs>
+  <rect width="800" height="380" fill="#ffffff"/>
+  <rect x="0" y="0" width="800" height="90" fill="url(#hd)"/>
+  <rect x="0" y="86" width="800" height="4" fill="#e0ae3c"/>
+  <text x="44" y="44" font-family="Georgia, serif" font-size="25" fill="#ffffff" font-weight="bold">Eight finishes</text>
+  <text x="44" y="70" font-family="Georgia, serif" font-size="15" fill="#86d0d5">Phonak Audéo EON Sphere</text>
+  <circle cx="70" cy="150" r="30" fill="#8b483e" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="70" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Sienna Red</text>
+  <circle cx="255" cy="150" r="30" fill="#ad8f83" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="255" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Sand Beige</text>
+  <circle cx="440" cy="150" r="30" fill="#7a635b" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="440" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Sandalwood</text>
+  <circle cx="625" cy="150" r="30" fill="#3f2728" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="625" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Chestnut</text>
+  <circle cx="70" cy="255" r="30" fill="#afa09a" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="70" y="313" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Champagne</text>
+  <circle cx="255" cy="255" r="30" fill="#b1aaac" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="255" y="313" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Silver Grey</text>
+  <circle cx="440" cy="255" r="30" fill="#60575a" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="440" y="313" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Graphite Gray</text>
+  <circle cx="625" cy="255" r="30" fill="#2d262b" stroke="#e5eceb" stroke-width="1.5"/>
+  <text x="625" y="313" text-anchor="middle" font-family="Georgia, serif" font-size="14.5" fill="#21424b">Velvet Black</text>
+  <line x1="44" y1="322" x2="756" y2="322" stroke="#e5eceb" stroke-width="2"/>
+  <text x="44" y="352" font-family="Georgia, serif" font-size="14" fill="#6b8086">All eight run identical hardware — the finish changes nothing but how visible it is.</text>
+</svg>

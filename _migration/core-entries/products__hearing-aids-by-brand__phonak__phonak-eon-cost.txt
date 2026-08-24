@@ -42,6 +42,6 @@
     ["Can I use HSA or FSA funds for hearing aids?", "Generally yes — hearing aids are an eligible medical expense for HSA and FSA purposes, and they are frequently deductible as a medical expense too. Our [guide to hearing aid tax deductions](/are-hearing-aids-tax-deductible/) goes through the detail, and we are happy to provide whatever documentation your plan administrator asks for."],
     ["Is the top technology level worth paying for?", "Sometimes, and less often than you would guess from the price list. It is worth it if you spend a lot of time in genuinely difficult listening — restaurants, meetings, large family gatherings — and want the device making those adjustments automatically. If your days are mostly quiet, the extra money buys capability you will not use. Since EON puts the neural network at the Standard 50 level, that decision is more comfortable than it used to be. We would rather you spent the difference on making sure the fitting is verified."]
   ],
-  image: "/assets/phonak.webp",
+  image: "/assets/phonak-eon.webp",
   imageLabel: "What determines the price of Phonak EON"
 },
