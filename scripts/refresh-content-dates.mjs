@@ -62,6 +62,7 @@ const SOURCES = [
   { file: "lib/howWeCanHelp.ts", key: "slug" },
   { file: "lib/tinnitus.ts", key: "slug" },
   { file: "lib/products.ts", key: "slug" },
+  { file: "lib/productGuides.ts", key: "path" },
   { file: "lib/serviceAreas.ts", key: "slug" },
   { file: "lib/team.ts", key: "slug" },
   { file: "lib/reviews.ts", key: "path" }

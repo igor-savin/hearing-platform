@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 import crawl from "@/data/crawl.json";
+import {
+  baseUrl,
+  canonicalPathFor,
+  primaryPhone,
+  primaryPhoneHref,
+  siteName
+} from "@/lib/siteBasics";
 import { buildNextBlogPosts } from "@/lib/blogNext";
 import { buildSeedBlogPosts } from "@/lib/blogSeed";
 import { contentDateFor, contentDates } from "@/lib/contentDates";
 import { comparisonPages } from "@/lib/conversion";
+import { productGuides } from "@/lib/productGuides";
 import { hearingLossPages } from "@/lib/hearingLoss";
 import { reviewsPage } from "@/lib/reviews";
 import {
@@ -32,14 +40,20 @@ import {
 } from "@/lib/serviceAreas";
 import { providerPath, providerProfiles } from "@/lib/team";
 
-export const baseUrl = "https://www.audiologyassociates.org";
-export const siteName = "Audiology Associates of Westchester";
-export const primaryPhone = "(914) 949-0034";
-export const primaryPhoneHref = "tel:+19149490034";
-export const zocdocUrl = "https://www.zocdoc.com/practice/audiology-associates-of-westchester-69184";
-export const zocdocPracticeId = "69184";
-export const logoPath = "/assets/duda/audiologoy-associates-of-west-chester-logo.png";
-export const logoUrl = `${baseUrl}${logoPath}`;
+// Identity constants and canonicalPathFor live in lib/siteBasics.ts so client
+// components can import them without dragging data/crawl.json into the browser
+// bundle. Re-exported here so every existing server-side import keeps working.
+export {
+  baseUrl,
+  siteName,
+  primaryPhone,
+  primaryPhoneHref,
+  zocdocUrl,
+  zocdocPracticeId,
+  logoPath,
+  logoUrl,
+  canonicalPathFor
+} from "@/lib/siteBasics";
 
 type CrawlImage = {
   src: string;
@@ -1226,22 +1240,6 @@ const aboutTrustPages: SitePage[] = [
   }
 ];
 
-// A few topics exist at both a short legacy URL carried over from the Duda
-// site and a newer /how-we-can-help/* URL. Both pages are real and stay
-// reachable, but only one should be the indexed target. The legacy URL wins:
-// reports/redirect-map.md treats those as preserved live URLs, and they hold
-// the search equity we are trying not to lose in the domain cutover.
-const canonicalOverrides = new Map<string, string>([
-  ["/how-we-can-help/hearing-protection", "/hearing-protection"]
-]);
-
-// Exported so navigation and the LLM guide can point at the indexed URL
-// rather than the duplicate. A menu link to a non-canonical path spends
-// link equity on a page we have already told Google to ignore.
-export function canonicalPathFor(path: string) {
-  return canonicalOverrides.get(path) ?? path;
-}
-
 const howWeCanHelpPages: SitePage[] = [
   {
     path: howWeCanHelpRootPath,
@@ -1483,7 +1481,7 @@ function withContentDates(page: SitePage): SitePage {
   };
 }
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...productGuides, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...withContentDates(page), faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);

@@ -35,6 +35,7 @@ import {
   productPath,
   productsRootPath
 } from "@/lib/products";
+import { productGuides } from "@/lib/productGuides";
 import { schemaForPage } from "@/lib/schema";
 import {
   blogPosts,
@@ -2673,6 +2674,10 @@ function ProductBrandPage({ page }: { page: SitePage }) {
     .map((slug) => hearingAidProducts.find((product) => product.slug === slug))
     .filter(Boolean) as typeof hearingAidProducts;
   const otherBrands = productBrands.filter((item) => item.slug !== brand.slug);
+  // Comparison and cost pages for this brand, from lib/productGuides.ts. They are
+  // deliberately not in brand.products, so they never appear as product cards --
+  // but nothing else on the site links to them, so they get their own row.
+  const brandGuides = productGuides.filter((guide) => guide.path.startsWith(`${brandPath(brand.slug)}/`));
 
   return (
     <>
@@ -2703,6 +2708,19 @@ function ProductBrandPage({ page }: { page: SitePage }) {
           <div className="mt-10">
             <ProductCardGrid products={products} />
           </div>
+          {brandGuides.length > 0 && (
+            <>
+              <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Compare and Cost</h2>
+              <LiveRule />
+              <div className="mt-8 flex flex-wrap gap-4">
+                {brandGuides.map((guide) => (
+                  <Link className="focus-ring legacy-live-button" href={guide.path} key={guide.path}>
+                    {guide.title}
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
           <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Explore Other Premium Hearing Aid Brands</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">

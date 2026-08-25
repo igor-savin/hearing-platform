@@ -6,6 +6,62 @@ const reviewedBy = "Audiology Associates of Westchester clinical team";
 
 const nextBlogBlueprints: NextBlogBlueprint[] = [
   {
+    path: "/signia-max-what-we-know",
+    title: "Signia MaX: What Is Actually Known",
+    metaTitle: "Signia MaX: What Is Actually Known | Audiology Associates of Westchester",
+    metaDescription: "Signia released MaX on 24 August 2026. What is confirmed, which figures come from Signia's own unpublished papers, and what nobody has measured.",
+    h1: "Signia MaX: What Is Actually Known So Far",
+    heroImage: { src: "/assets/brands/Signia-MaX-device.webp", alt: "Signia Pure Charge and Go MaX rechargeable hearing aid" },
+    sections: ["The idea", "Where the numbers come from", "The Auracast caveat", "What is missing", "Who it suits"],
+    body: [
+      "Signia announced MaX on 24 August 2026 and American dispensers could order it the same day. It now sits above Signia IX at the head of the range, and the pitch behind it is unusual: rather than a single trained system doing everything, four of them, each given a narrower job.",
+      "The idea. The industry standard is a lone network trained to pull conversation clear of everything else. Signia's argument is that this asks a single system to settle several unrelated questions simultaneously — is anyone actually talking, is that the wearer's own voice, has the acoustic environment changed underfoot — and that a wrong answer to any of them sends the aid off in the wrong direction. MaX therefore distributes those judgements across four separately trained networks running in concert, badged Acoustic Intelligence. It is a real engineering stance, not a slogan bolted onto last year's silicon.",
+      "Where the numbers come from. Signia reports that 97 per cent of wearers do better in noisy group conversation than with unnamed competitors, and that MaX leads on signal-to-noise performance in the same conditions. Both cite white papers written by Signia in 2026 that we have not been able to find published anywhere, with no stated protocol, sample size or comparator. A third figure — 54 times the processing power — carries a footnote whose entire content is that the yardstick was Signia IX. That is a baseline, not a study. That is not an accusation. Manufacturers validate their own designs because that is how devices get built, and the company has been publishing hearing research for decades. It does mean no outside party has verified any of it, and that the figures doing the heaviest persuasive work describe the chip rather than what a patient experiences across a dinner table.",
+      "The Auracast caveat almost nobody is printing. Every summary of this device lists Auracast, and the hardware genuinely supports it. What the summaries leave out sits in Signia's own small print: the capability is enabled by a software release scheduled before March 2027. Buy today and you own a device built for broadcast audio that cannot yet receive any. With the entire industry marketing this technology at once, the distinction deserves stating plainly. Meanwhile the built-in telecoil is working, and around here that still reaches more venues than Auracast does.",
+      "What is missing. No outside laboratory has measured MaX, and none will for months. There is no published price at any level, no performance-tier breakdown, no fitting range, no receiver strengths and no ingress rating. The platform comes in exactly one form: rechargeable, worn behind the ear with the receiver in the canal, offered in eight colours. Nothing custom, nothing instant-fit, no slim or powerful variant, and no CROS option. And nothing in the launch material refers to tinnitus, although notch therapy and the relief signals have been standard across Signia IX for years. We expect they carry forward and will confirm it in the fitting software before saying so.",
+      "Who it suits. Crowded rooms full of overlapping voices are the situation this design targets most directly — and also the one where the supporting evidence is thinnest, so ask for a demonstration instead of accepting the figure. If your ears need a form MaX is not made in, choosing IX is not settling for less; it is the only Signia that physically fits the brief, and it carries external test results the newer platform lacks. And if your current IX aids have been verified and are doing their job, our advice is to leave them alone. Our Harrison and Somers audiologists will set MaX beside whatever you wear now, in a noisy room rather than a quiet booth, and you can decide with your own ears."
+    ],
+    faqs: [
+      { question: "What does MaX stand for?", answer: "Multi-adaptive Xperience. Signia names platforms this way: AX was Augmented Xperience, IX was Integrated Xperience. MaX is the 2026 generation and now sits at the top of the range." },
+      { question: "Has anyone independent tested Signia MaX?", answer: "Not as of late August 2026. Every published figure originates with Signia. Signia IX has been externally measured and performed strongly, which is the relevant comparison if evidence matters more to you than release date." },
+      { question: "Does MaX support Auracast?", answer: "The chip does. Switching it on waits for a software release Signia has put before March 2027. In the meantime the built-in telecoil is live, and locally that reaches more venues than Auracast currently does anyway." },
+      { question: "Should I wait for it or be fitted now?", answer: "If hearing is a daily struggle, a properly verified fitting today will serve you better than waiting on a platform whose real-world performance nobody has measured. If your present aids work, nothing about this launch obliges you to move." }
+    ],
+    related: [
+      { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
+      { label: "Signia MaX vs Signia IX", href: "/hearing-aids-brands/signia/signia-max-vs-signia-ix" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+    ]
+  },
+  {
+    path: "/phonak-eon-what-we-know",
+    title: "Phonak EON: What Is Actually Known",
+    metaTitle: "Phonak EON: What Is Actually Known | Audiology Associates of Westchester",
+    metaDescription: "Phonak released EON on 24 August 2026. What the reference behind the headline claim actually says, and what Phonak is careful not to claim at all.",
+    h1: "Phonak EON: What Is Actually Known So Far",
+    heroImage: { src: "/assets/brands/Phonak-EON-Sphere-device.webp", alt: "Phonak Audeo EON Sphere rechargeable receiver-in-canal hearing aid" },
+    sections: ["What changed", "Following the reference", "What Phonak will not claim", "What is missing", "Who it suits"],
+    body: [
+      "Phonak released EON from Staefa on 24 August 2026, on sale in the United States the same afternoon — the same day Signia released its own flagship, which is not something that happens often. Three receiver-in-canal models make up the range: Audeo EON Sphere, Audeo EON R, and a CROS version for hearing lost on one side.",
+      "What changed is the processor. The previous flagship carried two chips, the second doing nothing but running a neural network that separates voices from noise. EON does that on one chip, called HYPERSONIC, and the efficiency saving becomes a shell Phonak puts at 25 per cent smaller and 20 per cent lighter drawing 37 per cent less current. The consequence that matters most is indirect: because the network costs less to run, it now operates at three performance levels rather than being confined to the two most expensive. For a practice that fits plenty of people who cannot justify a top-tier device, that is the most significant thing in the launch.",
+      "Following the reference. One sentence is doing most of the work in the coverage: that wearers are twice as likely to catch every word, from any direction. It carries a reference marker, so we followed it. It leads to a Phonak field study from 2024, about the previous platform's version of the same feature, and the comparison described is that feature running against the identical aid with the feature disabled. That is a sound result and we have no argument with it — but it is not a measurement of EON, not a comparison with the platform EON replaces, and not a comparison with whatever you wear now. Anyone already in an Infinio Sphere has had that benefit since 2024. A second claim, that EON Sphere beat four rival devices for clarity in loud noise, comes from a 2026 paper Phonak wrote which never names the four.",
+      "What Phonak will not claim. Read the material closely and an absence stands out: nowhere does Phonak argue that EON hears more clearly in a noisy room than the previous flagship did. From a company that has built its reputation on precisely that measure, the restraint is striking, and we read it as honesty rather than evasion. It also reframes the upgrade question entirely. Moving from a working Infinio fitting buys a smaller, lighter aid with broadcast audio that functions — not, on the manufacturer's own account, better hearing in a restaurant.",
+      "What is missing. No independent laboratory has assessed EON; testing is said to be under way and on past form will take months. There is no published price at any level, and no ingress rating in the launch documents. Every EON is receiver-in-canal, so there is no custom shell, no titanium in-the-canal model, no powerful behind-the-ear instrument and nothing for children. And there is no telecoil on any model, which is not new for this line but matters here, because loops remain how most Westchester venues broadcast. Tinnitus goes unmentioned throughout, despite Tinnitus Balance having shipped as standard on these aids for years.",
+      "Who it suits. Anyone for whom Auracast is already real, because a venue they attend has installed it. Anyone with hearing lost on one side, since EON launched with a CROS model and Signia's flagship did not. Anyone who would benefit from a Roger microphone, which carries across and still has no equivalent from another manufacturer. Anyone whose aids sit in a drawer because of their size. And anyone previously priced out of the speech network. If you are wearing verified Infinio aids that work, we would not move you, and we will say so at the appointment rather than afterwards."
+    ],
+    faqs: [
+      { question: "When did Phonak EON become available?", answer: "Announced and on sale in the United States on 24 August 2026, with Germany, France, the UK and Australia scheduled for September. What any practice can fit depends on stock and fitting software updates." },
+      { question: "Does Phonak EON have a telecoil?", answer: "No, and no model in this line has for several years. EON supports Auracast instead, and unlike some devices launched the same month it works now rather than later. Most looped venues locally are still loops, so name the venue that matters to you and we will check what it uses." },
+      { question: "Is EON better than Phonak Infinio in noise?", answer: "Phonak does not claim that it is. The gains claimed are size, weight, efficiency, working Auracast, and the speech network reaching a third performance level." },
+      { question: "Has anyone independent measured it?", answer: "Not yet. Every figure in circulation comes from Phonak's own field studies and insight papers. The platform EON replaces has been externally assessed and scored near the top of its category." }
+    ],
+    related: [
+      { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
+      { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+    ]
+  },
+  {
     path: "/can-an-audiologist-remove-earwax-westchester",
     title: "Can an Audiologist Remove Earwax?",
     metaTitle: "Earwax Removal by an Audiologist | Westchester",
