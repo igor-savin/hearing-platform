@@ -3177,7 +3177,10 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
 }
 
 function GoogleMapEmbed({ query, title }: { query: string; title: string }) {
-  const src = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
+  // z=17 frames a single building; without it a bare coordinate pair zooms out
+  // far enough that the pin is not obviously on the office.
+  const isLatLng = /^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/.test(query);
+  const src = `https://www.google.com/maps?q=${encodeURIComponent(query)}${isLatLng ? "&z=17" : ""}&output=embed`;
 
   return (
     <iframe
@@ -3216,9 +3219,12 @@ function LegacyLocationSectionView({ section }: { section: LegacyLocationSection
   const directionsUrl =
     office?.directionsUrl ||
     (section.mapQuery ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(section.mapQuery)}` : "");
-  // Qualify the embed with the business name so the pin is the practice and
-  // not whatever Google decides the street number means.
-  const mapQuery = office ? `${siteName}, ${office.address}` : section.mapQuery;
+  // Drop the pin on the office's own verified coordinates. A name-and-address
+  // string looks like it should work and does not: the keyless embed endpoint
+  // returns a blank frame for it, which is how this shipped with an empty map
+  // for a few minutes. Coordinates always resolve, and they are exact.
+  const mapQuery =
+    office?.geo ? `${office.geo.latitude},${office.geo.longitude}` : section.mapQuery;
 
   return (
     <section
