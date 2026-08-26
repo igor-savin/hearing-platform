@@ -4,12 +4,12 @@
     metaTitle: "How Modern Hearing Aids Handle Noisy Rooms",
     variant: "product",
     datePublished: "2026-01-10",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Modern hearing aids use directional mics and noise processing to help you follow speech in busy rooms. Here is how the technology works and its limits.",
     intro: [
       "You can follow a friend across a quiet kitchen table without much effort, then lose half of what they say the moment you both move to a busy restaurant. That gap between the quiet room and the crowded one is the frustration we hear about most, and it is the exact problem today's [hearing aids](/products/hearing-aids/) are built to work on.",
-      "Difficulty understanding speech against background noise is one of the most common reasons people look for help, a pattern the [American Speech-Language-Hearing Association](https://www.asha.org) treats as central to how hearing loss shows up in daily life. Research and device design over the past decade have both aimed squarely at this, and the tools inside a current hearing aid look nothing like the simple amplifiers of years past.",
+      "Difficulty understanding speech against background noise is one of the most common reasons people look for help. Research and device design over the past decade have both aimed squarely at this, and the tools inside a current hearing aid look nothing like the simple amplifiers of years past.",
       "If busy rooms have started to wear you down, a conversation with an audiologist is worth more than another online spec comparison. Our team in San Mateo and San Carlos can show you what these features do in the rooms that matter to you, so reach out through our [contact page](/contact/) whenever you are ready.",
     ],
     takeaways: [

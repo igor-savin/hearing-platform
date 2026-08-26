@@ -4,12 +4,12 @@
     metaTitle: "Do Audiologists Do Hearing Tests? | CA Hearing Center",
     variant: "condition",
     datePublished: "2025-08-05",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Yes, audiologists perform hearing tests, and it is central to what they do. Here is what a diagnostic hearing evaluation includes and who to book with.",
     intro: [
       "You have decided your hearing deserves a proper look, and now you are sorting through job titles, wondering who really sits you down and runs the test. The plain answer is that audiologists do perform hearing tests, and diagnostic testing sits at the center of what they do.",
-      "A licensed audiologist usually holds a clinical doctoral degree and is trained to evaluate, diagnose, and manage hearing and balance conditions. When you book a [hearing evaluation](/hearing-testing/), the audiologist is the one who administers the tests, interprets the numbers, and explains what they mean for your daily listening. The [American Speech-Language-Hearing Association](https://www.asha.org) frames that scope in much the same way.",
+      "A licensed audiologist usually holds a clinical doctoral degree and is trained to evaluate, diagnose, and manage hearing and balance conditions. When you book a [hearing evaluation](/hearing-testing/), the audiologist is the one who administers the tests, interprets the numbers, and explains what they mean for your daily listening. [ASHA's description of the audiologist's role](https://www.asha.org/public/who-are-audiologists/) frames that scope in much the same way.",
       "Knowing who does what can spare you a wrong turn and a wasted copay. At our practice, the [audiologist you meet](/about-us/) handles the full evaluation from start to finish, then talks through your options in plain language instead of handing over a printout of numbers.",
     ],
     takeaways: [

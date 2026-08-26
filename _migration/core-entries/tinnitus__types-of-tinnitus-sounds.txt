@@ -1,10 +1,11 @@
 "/tinnitus/types-of-tinnitus-sounds/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Types of Tinnitus Sounds: Ringing, Buzzing, Whooshing & More",
+  metaDescription: "Ringing, hissing, buzzing, clicking, roaring, whooshing. What each sound tends to point to, and which of them we want to look at promptly.",
   intro: [
     "Not all tinnitus sounds the same. Tinnitus is the perception of sound when no external sound is present, and while many people describe it as ringing, the reality is far more varied. Patients describe sharp high-pitched ringing or whistling, low rumbling or roaring, soft hissing or static, buzzing and electrical noises, pulsing that matches the heartbeat, and occasionally musical tones.",
     "The specific quality of your tinnitus can give your audiologist important clues about possible causes and the most helpful treatment approach. That is why we ask detailed questions about what you hear.",
-    "This page from our Bay Area audiologists breaks down the main types of tinnitus sounds, what each might mean, and when a particular sound should be evaluated promptly. For the fundamentals, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "Each sound is taken in turn below, with what it tends to point to and which ones are worth an appointment sooner rather than later. For the fundamentals, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
     ["High-pitched ringing or whistling", "This is the most common type. People describe a constant or fluctuating high-pitched tone, a whistling or tea-kettle sound, or ringing that gets louder in quiet rooms. It is frequently associated with hearing loss from aging or noise exposure. When hearing loss is present, the brain receives less input in certain frequencies and may generate a phantom tone in those same regions, which is why hearing aids that restore missing sound often help."],

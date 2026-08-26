@@ -1,19 +1,21 @@
 "/services/": {
   kicker: "Audiology Services",
-  headline: "Comprehensive Audiology Services in San Mateo & San Carlos",
+  headline: "Audiology Services in San Mateo & San Carlos",
+  metaTitle: "Audiology Services | Testing, Fitting, Tinnitus, Wax, Repairs | California Hearing Center",
+  metaDescription: "What we actually do at our two Peninsula offices: diagnostic hearing tests, verified hearing aid fittings, tinnitus care, earwax removal, repairs and custom hearing protection. Call 650-342-9449.",
   intro: [
-    "California Hearing Center provides a full range of diagnostic and treatment services for hearing and the ears. From the first evaluation through fitting, follow-up, tinnitus care, and hearing protection, our audiologists support you at every stage rather than at a single appointment. This page is an overview; each service below has its own page with the detail you need.",
-    "Hearing is not just about the ears. It is an interplay between your ears, your brain, and the world around you, and its reach is wide. Research links untreated hearing loss to effects on physical and emotional health, relationships, and everyday performance, which is why addressing it well tends to improve more than just how clearly you hear. Hearing difficulty is also more common than many assume; the National Institute on Deafness and Other Communication Disorders estimates that roughly one in three adults between 65 and 74 has some hearing loss, and we regularly see patients decades younger.",
-    "Whether you are noticing a first change, managing tinnitus, protecting your hearing at work or play, or caring for existing devices, our two Peninsula offices are here to help. Explore the services below to find the right starting point."
+    "This page is the index. Every service below has its own page with the detail, and this is the short version so you can work out which appointment to book.",
+    "If you are not sure, book the hearing test. Almost everything else follows from the audiogram, and it also rules out the reversible causes before anyone starts talking about devices. Roughly one in three adults between 65 and 74 has some [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss), by the NIDCD's estimate. We see patients decades younger than that most weeks.",
+    "Both offices, San Mateo and San Carlos, do all of it. Call 650-342-9449 and say what is going on, and whoever answers will tell you which appointment you need and how long it takes."
   ],
   sections: [
-    ["Diagnostic hearing evaluations", "Everything starts with an accurate picture of your hearing. Our [hearing testing](/hearing-testing/) uses pure-tone audiometry, speech testing, tympanometry, and otoacoustic emissions to define the degree, type, and likely cause of any loss. We review your audiogram with you and check for reversible causes before assuming anything is permanent."],
-    ["Hearing aids and fitting", "Choosing a device is only the beginning; the [hearing aid fitting](/hearing-aid-fitting/) is what makes it work. We program the aids to your prescription, verify them with real-ear measurement and live speech mapping, confirm a comfortable fit, and fine-tune at follow-up. We fit and verify current technology from the major manufacturers you can browse [by brand](/products/hearing-aids-by-brand/)."],
-    ["Tinnitus consultation and sound therapy", "Tinnitus, the perception of ringing, buzzing, or hissing with no external source, often accompanies hearing loss but can occur on its own. Our [tinnitus](/tinnitus/) care includes evaluation, counseling, and sound-based approaches. For many patients, well-fitted hearing aids ease tinnitus by restoring ambient sound, and many devices include built-in sound therapy your audiologist can enable."],
-    ["Earwax removal", "Impacted cerumen is one of the most common and most reversible causes of muffled hearing and a plugged sensation. Our [earwax removal](/services/earwax-removal/) is performed under direct visualization after an exam of the canal and eardrum, safely clearing buildup that at-home kits cannot, including for hearing aid wearers whose devices clog with wax."],
-    ["Hearing aid repair and maintenance", "Devices need care to keep performing. We provide cleaning, maintenance, and [repairs](/services/hearing-aid-repair/) for most major brands, and when a problem cannot be solved in the office we coordinate manufacturer service. Regular cleaning visits keep receivers and ports clear so your aids sound the way they should."],
-    ["Hearing protection", "Preserving the hearing you have matters as much as treating what you have lost. We offer custom [hearing protection](/services/hearing-protection/) for noisy work, music, shooting, and other high-noise settings, made to fit your ears so protection is comfortable enough to actually use."],
-    ["Follow-up care and communication skills", "Better hearing is a process, not a purchase. Beyond fitting, we provide ongoing follow-up and support communication strategies, so devices and habits work together. Small, practical skills often make the difference between hearing well and merely wearing hearing aids."]
+    ["Diagnostic hearing evaluations", "The starting point. Our [hearing testing](/hearing-testing/) uses pure-tone audiometry, speech testing, tympanometry and otoacoustic emissions to establish the degree, the type and the likely cause of any loss. We go through the audiogram with you on screen, and we check for reversible causes before assuming anything is permanent. Allow about an hour."],
+    ["Hearing aids and fitting", "Choosing the device is the easy half. The [hearing aid fitting](/hearing-aid-fitting/) is where the result is decided: we program the aids to your prescription, then confirm with real-ear measurement and live speech mapping that what reaches your eardrum matches your targets across pitches, check the physical fit, and fine-tune at follow-up as you adapt. Manufacturer first-fit settings routinely fall short of prescriptive targets. That is the most consistent finding in the fitting literature and the reason we measure. We fit and verify current technology from every major manufacturer, which you can browse [by brand](/products/hearing-aids-by-brand/)."],
+    ["Tinnitus consultation and sound therapy", "Tinnitus is the perception of ringing, buzzing or hissing with no external source. It often accompanies hearing loss and it can occur on its own. Our [tinnitus](/tinnitus/) care covers evaluation, counselling and sound-based approaches, and several of our audiologists hold the American Board of Audiology certificate in tinnitus management. For many patients, well-fitted hearing aids reduce tinnitus simply by restoring ambient sound, and most current devices carry sound therapy your audiologist can enable."],
+    ["Earwax removal", "Impacted cerumen is the most common reversible cause of muffled hearing and a plugged ear. Our [earwax removal](/services/earwax-removal/) is performed under direct visualisation after an examination of the canal and eardrum, which clears buildup that at-home kits cannot reach and that they often push deeper. We also do it for hearing aid wearers whose receivers keep clogging."],
+    ["Hearing aid repair and maintenance", "We clean, maintain and [repair](/services/hearing-aid-repair/) most major brands in-house, whether or not you bought them from us. Receivers, wax filters, tubing, microphone ports and battery contacts are usually same-visit work. When a fault has to go back to the manufacturer we handle the paperwork and tell you what it will cost before it goes. Regular cleaning visits prevent most of the failures we see."],
+    ["Hearing protection", "Preserving the hearing you have is worth as much as treating what you have lost, and noise damage does not come back. We make custom [hearing protection](/services/hearing-protection/) for noisy work, music, shooting and other high-noise settings, moulded to your ears so it is comfortable enough that you actually wear it. Off-the-shelf foam only works when it is in."],
+    ["Follow-up and communication strategies", "Fitting hearing aids is the beginning of the work. We schedule follow-up visits to adjust as your brain adapts, and we teach the practical communication skills that devices do not cover: where to sit in a restaurant, how to set up a room, what to ask other people to do. Our [resources page](/resources/) lists the training programmes we enrol patients in."]
   ],
   bulletLinks: [
     ["Hearing testing", "/hearing-testing/"],
@@ -21,19 +23,23 @@
     ["Tinnitus care", "/tinnitus/"],
     ["Earwax removal", "/services/earwax-removal/"],
     ["Hearing aid repair", "/services/hearing-aid-repair/"],
-    ["Hearing protection", "/services/hearing-protection/"]
+    ["Hearing protection", "/services/hearing-protection/"],
+    ["Free second opinion on a quote", "/hearing-aid-second-opinion/"],
+    ["Contact either office", "/contact/"]
   ],
   takeaways: [
-    "We cover the full path: evaluation, fitting and verification, tinnitus care, wax removal, repairs, and protection.",
-    "Each service has its own detailed page; this is the overview to help you start in the right place.",
-    "Two Peninsula offices in San Mateo and San Carlos support you at every stage, not just one appointment."
+    "If you are not sure what to book, book the hearing test. The audiogram decides everything after it.",
+    "We verify every hearing aid fitting with real-ear measurement, because manufacturer first-fit settings routinely miss prescriptive targets.",
+    "We repair and service most major brands in-house, whether or not the devices were bought here.",
+    "San Mateo and San Carlos both offer the full list. Call 650-342-9449 and we will tell you which appointment you need."
   ],
   faqs: [
-    ["Where do I start if I think I have hearing loss?", "Start with a diagnostic hearing evaluation. It defines whether you have a loss, its degree and type, and its likely cause, and it rules out reversible issues like earwax. Everything else, from hearing aids to tinnitus care, follows from that picture."],
-    ["Do you service hearing aids I bought elsewhere?", "In many cases, yes. We clean, maintain, and repair most major brands, and we can help with programming and verification. Bring your devices in and we will let you know what we can do in-office versus what needs manufacturer service."],
-    ["Do you treat tinnitus even without hearing loss?", "Yes. Tinnitus can occur with or without measurable hearing loss. We evaluate it, look for any red flags that warrant a medical referral, and discuss counseling and sound-therapy options suited to your situation."],
-    ["Which office should I visit?", "We see patients at both our San Mateo and San Carlos locations on the Peninsula. Choose whichever is more convenient; you can reach either office through our [contact page](/contact/) or by calling 650-342-9449."]
+    ["Where do I start if I think I have hearing loss?", "With a diagnostic hearing evaluation. It establishes whether there is a loss, its degree and type, and its likely cause, and it rules out reversible problems like impacted wax. Everything else, hearing aids and tinnitus care included, follows from that picture."],
+    ["Do you service hearing aids I bought elsewhere?", "In most cases, yes. We clean, maintain and repair most major brands, and we can reprogram and verify them. Bring the devices in and we will tell you what we can do in the office and what has to go back to the manufacturer, with the cost before we send it."],
+    ["Do you treat tinnitus even without hearing loss?", "Yes. Tinnitus occurs with or without measurable hearing loss. We evaluate it, check for the red flags that warrant a medical referral, and discuss counselling and sound-therapy options that suit your situation."],
+    ["Which office should I visit?", "Both San Mateo and San Carlos offer the same services. Choose whichever is easier to reach. You can book at either through our [contact page](/contact/) or by calling 650-342-9449."],
+    ["I have a quote from another clinic. Will you look at it?", "Yes, free of charge and with no obligation to buy from us. Our [second opinion on a hearing aid quote](/hearing-aid-second-opinion/) tells you what technology level you are being sold, what is bundled into the price, and whether the fitting includes verification."]
   ],
   image: "/assets/core/services.svg",
-  imageLabel: "Full-service Peninsula audiology care",
+  imageLabel: "What we do at both Peninsula offices",
 },

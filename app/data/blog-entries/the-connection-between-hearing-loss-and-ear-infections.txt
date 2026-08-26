@@ -4,12 +4,12 @@
     metaTitle: "Ear Infections and Hearing Loss: What to Know",
     variant: "condition",
     datePublished: "2019-09-04",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Ear infections often muffle your hearing for a while, and most cases ease as they clear. Learn the warning signs and when a hearing test is a smart next step.",
     intro: [
       "You catch a cold, and a few days later one ear feels plugged, as if you're listening through a pillow. Sounds go flat, your own voice booms inside your head, and conversation takes more effort than it should. That stuffy, muffled feeling is one of the most common ways an ear infection announces itself, and it is a real, if usually temporary, drop in [hearing](/hearing-testing/).",
-      "Most ear infections settle in the middle ear, the small air-filled space behind the eardrum. When it fills with fluid, the eardrum and tiny bones can't move as freely, so less sound energy passes through. That is called conductive hearing loss, and the good news is that it typically lifts as the infection clears. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) notes that ear infections are among the most common reasons people, especially children, see a doctor.",
+      "Most ear infections settle in the middle ear, the small air-filled space behind the eardrum. When it fills with fluid, the eardrum and tiny bones can't move as freely, so less sound energy passes through. That is called conductive hearing loss, and it typically lifts as the infection clears. Ear infections are among the most common reasons people, especially children, see a doctor, and the federal overview of [ear infections and hearing](https://www.nidcd.nih.gov/health/hearing-ear-infections-deafness) covers what happens while one clears.",
       "The part worth watching is what happens when infections keep coming back, linger, or leave symptoms behind after the pain is gone. If your hearing hasn't bounced back the way you expected, a [hearing evaluation](/hearing-testing/) at our San Mateo or San Carlos office can tell you whether anything is still holding it down.",
     ],
     takeaways: [

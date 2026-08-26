@@ -4,12 +4,12 @@
     metaTitle: "Hearing Aids and Speech in Noise: What to Expect",
     variant: "product",
     datePublished: "2025-07-24",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Can hearing aids help you follow a conversation in a noisy room? Here is what directional microphones and noise management do, and where they fall short.",
     intro: [
       "One belief comes up more than almost any other about hearing aids: that the right pair will let you lift a single voice out of a loud restaurant as cleanly as you would in a quiet kitchen. It is an understandable hope, and it sets up a lot of disappointment. Today's [hearing aids](/products/hearing-aids/) genuinely help in background noise, but they assist your ears rather than rebuild them.",
-      "Following speech in a crowd is the single hardest job any listener faces, and it is [the difficulty people with hearing loss report most often](https://www.asha.org). Directional microphones and noise-management software were built for exactly this problem. They can turn a wall of clatter into something you can work with. What they cannot do is switch the room off. Understanding where that line sits is the difference between loving your hearing aids and feeling let down by them.",
+      "Following speech in a crowd is the single hardest job any listener faces, and it is the difficulty patients bring to us more than any other. Directional microphones and noise-management software were built for exactly this problem. They can turn a wall of clatter into something you can work with. What they cannot do is switch the room off. Understanding where that line sits is the difference between loving your hearing aids and feeling let down by them.",
       "So it helps to separate what these devices really do from what people assume they do. A careful [hearing evaluation](/hearing-testing/) and a well-matched fitting matter far more here than any single feature on a spec sheet.",
     ],
     sections: [

@@ -1,10 +1,11 @@
 "/tinnitus/pulsatile/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Pulsatile Tinnitus: The Heartbeat Sound in Your Ear",
+  metaDescription: "A whoosh that keeps time with your pulse is not ordinary tinnitus. What causes it, when it is an emergency, and how we work with your physician on it.",
   intro: [
     "Do you hear a rhythmic whooshing, thumping, or heartbeat sound in your ear? That pattern, especially when it keeps time with your pulse, is called pulsatile tinnitus, and it deserves careful attention.",
     "Instead of a steady ringing or buzzing, pulsatile tinnitus often feels like a whoosh or swoosh that pulses, or a soft drumbeat that speeds up and slows down with your heart rate. Many people notice it more when lying down, after exercise, or in a quiet room. Because it is often related to blood flow near the ear, it is one of the few types of tinnitus that may have a directly identifiable physical source.",
-    "This page from our Bay Area audiologists explains what pulsatile tinnitus is, its possible causes, when it may be an emergency, and how we work with physicians to evaluate and manage it. It is educational and not a substitute for in-person medical care. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "The likely causes are set out below, along with the versions that are an emergency and how we work alongside your physician on the rest. It is educational and not a substitute for in-person medical care. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
     ["How it differs from typical tinnitus", "Most tinnitus is subjective and steady, described as ringing, hissing, buzzing, or roaring, and is usually linked to hearing loss and inner-ear changes. Pulsatile tinnitus, by contrast, has a rhythm that follows your pulse and may sometimes be heard by a clinician using a stethoscope (objective tinnitus). Both types can be distressing and can occur together. Because a physical source may be identifiable, doctors and audiologists take pulsatile tinnitus seriously and usually recommend medical evaluation."],

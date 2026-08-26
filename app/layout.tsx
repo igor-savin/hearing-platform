@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { FOUNDED } from "./data/practice";
 import Script from "next/script";
+import { ConversionTracking } from "./site/ConversionTracking";
 import "./globals.css";
 
 // Canonical host is www, matching the sister practice's site so both properties
@@ -288,6 +289,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* The subhero background art is the largest-contentful-paint element on
+            almost every page: at 390x844 it covers 236,767 px against the h1's
+            50,160. It is a CSS background behind a media query and an @supports
+            block, so the preload scanner cannot see it and the browser only
+            discovers it after CSSOM and layout. These two links are the whole
+            point — nothing else on the page needs preloading, and until now the
+            only images being preloaded were the header logo and a sidebar
+            decoration 5,249 px down the page.
+
+            Kept in sync by hand with the .subhero rules at the end of
+            globals.css. AVIF only: every browser that supports image-set here
+            supports AVIF, and the WebP fallback path is discovered normally. */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/hero-1600.avif"
+          type="image/avif"
+          fetchPriority="high"
+          media="(min-width: 761px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/hero-900.avif"
+          type="image/avif"
+          fetchPriority="high"
+          media="(max-width: 760px)"
+        />
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
@@ -353,6 +382,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <ConversionTracking />
       </body>
     </html>
   );

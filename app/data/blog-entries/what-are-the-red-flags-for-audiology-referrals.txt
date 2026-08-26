@@ -4,12 +4,12 @@
     metaTitle: "Ear Warning Signs That Need Prompt Care",
     variant: "condition",
     datePublished: "2022-01-15",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Some ear symptoms can wait for a routine visit; others need prompt medical care. Learn the red flags: sudden loss, one-sided change, pain, or dizziness.",
     intro: [
       "Most hearing changes come on gradually and can wait comfortably for a routine [hearing evaluation](/hearing-testing/). A smaller group of symptoms behaves differently: they show up suddenly, affect just one ear, or arrive alongside pain, drainage, or a spinning sensation. Those deserve prompt medical attention rather than a wait-and-see approach.",
-      "Knowing which is which spares you both needless worry and dangerous delay. Sudden hearing loss, in particular, is [treated as a medical emergency](https://www.mayoclinic.org), because the window for effective treatment can be short. The red flags here are the ones that warrant a same-day or next-day call rather than a routine booking.",
+      "Knowing which is which spares you both needless worry and dangerous delay. Sudden hearing loss, in particular, is treated as a medical emergency, because the window for effective treatment can be short. The red flags here are the ones that warrant a same-day or next-day call rather than a routine booking.",
       "If any of them sound familiar, our audiologists in San Mateo and San Carlos can see you quickly, sort out what is happening, and refer you on to a physician or ENT when that is the right call. You can [reach the office](/contact/) directly, and it is always reasonable to start there when you are unsure.",
     ],
     takeaways: [

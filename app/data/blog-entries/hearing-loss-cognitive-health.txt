@@ -9,7 +9,7 @@
       "Straining to hear taxes your attention and memory in daily life. Learn how hearing loss connects to everyday thinking and why a hearing check can help.",
     intro: [
       "Following a conversation in a noisy restaurant takes real mental work, and it takes more of it when your hearing has slipped. That extra effort is the thread tying hearing to how sharp you feel day to day. Long before anyone worries about serious memory problems, softened hearing can leave you tired after a dinner out or a step behind in a fast group chat.",
-      "Researchers have noticed that people with untreated [hearing loss](/hearing-testing/) tend to score differently on tests of attention and recall, and the pattern holds across a good number of studies. That is an association, not a verdict: it shows the two things travel together, not that one causes the other. Johns Hopkins Medicine, which has done much of this work, frames the relationship in those same careful terms.",
+      "Researchers have noticed that people with untreated [hearing loss](/hearing-testing/) tend to score differently on tests of attention and recall, and the pattern holds across a good number of studies. That is an association, not a verdict: it shows the two things travel together, not that one causes the other.",
       "What this means for you is practical rather than alarming. Caring for your hearing lightens the daily mental load and keeps you in the conversations that keep your mind busy. A [hearing evaluation](/hearing-testing/) is a straightforward place to start, and our team can walk you through what your results actually mean for you.",
     ],
     takeaways: [

@@ -3,7 +3,50 @@ import type { NextConfig } from "next";
 // 301 redirects from the blog-curation pass: thin/duplicate/hyperlocal/dated
 // posts point to their most relevant canonical, pillar, or areas-we-serve page.
 // Regenerate via scratchpad curation flow if the keep/redirect split changes.
+//
+// 25 Aug 2026 — FOUR SOURCES REMOVED, TWO RETARGETED. Search Console showed the
+// curation had redirected away the four highest-earning URLs on the site:
+//   /how-far-do-you-push-hearing-aid-in/            1,415 clicks / 90 days, pos 5.4
+//   /understanding-hearing-loss-at-4000-hz/           914 clicks, 65k impressions
+//   /understanding-and-treating-dry-ears-.../          892 clicks, 182k impressions
+//   /how-many-hours-a-day-...-a-complete-guide/        476 clicks, pos 3.3
+// Three of the four pointed at /the-blog/, an index that answers none of those
+// queries. Each now has a written article again. Before adding a redirect here,
+// check the page's clicks in Search Console: a redirect to a hub page throws
+// away the demand rather than consolidating it.
 const blogRedirects = [
+      // 25 Aug 2026 — per-city service sub-pages consolidated into their city
+      // page. Thirteen of these were Atherton alone, with a median pairwise
+      // similarity of 0.83; /atherton/lenire/ shared 18 of its 30 body
+      // sentences with /atherton/. The whole /areas-we-serve/ family earned 80
+      // clicks in 90 days and 158 of its pages sit in Google's "Discovered,
+      // currently not indexed" bucket, so there is no traffic to lose and a
+      // scaled-content signal to stop sending.
+      { source: "/areas-we-serve/atherton/hearing-test/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/hearing-aids/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/tinnitus-therapy/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/hearing-aid-fitting/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/hearing-aid-repairs/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/custom-hearing-protection/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/earwax-removal/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/invisible-hearing-aids/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/rechargeable-hearing-aids/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/bluetooth-hearing-aids/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/tinnitus-audiologist/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/lenire/", destination: "/areas-we-serve/atherton/", permanent: true },
+      { source: "/areas-we-serve/atherton/dr-emily-mcmahan/", destination: "/about-us/emily-mcmahan/", permanent: true },
+      { source: "/areas-we-serve/san-mateo/lenire/", destination: "/areas-we-serve/san-mateo/", permanent: true },
+      { source: "/areas-we-serve/san-mateo/tinnitus-audiologist/", destination: "/areas-we-serve/san-mateo/", permanent: true },
+      { source: "/areas-we-serve/san-mateo/dr-emily-mcmahan/", destination: "/about-us/emily-mcmahan/", permanent: true },
+      { source: "/areas-we-serve/berkeley/lenire/", destination: "/areas-we-serve/berkeley/", permanent: true },
+      { source: "/areas-we-serve/berkeley/tinnitus-audiologist/", destination: "/areas-we-serve/berkeley/", permanent: true },
+      { source: "/areas-we-serve/berkeley/dr-emily-mcmahan/", destination: "/about-us/emily-mcmahan/", permanent: true },
+      { source: "/areas-we-serve/palo-alto/tinnitus-audiologist/", destination: "/areas-we-serve/palo-alto/", permanent: true },
+      { source: "/areas-we-serve/palo-alto/lenire/", destination: "/areas-we-serve/palo-alto/", permanent: true },
+      { source: "/areas-we-serve/palo-alto/dr-emily-mcmahan/", destination: "/about-us/emily-mcmahan/", permanent: true },
+      { source: "/areas-we-serve/burlingame/tinnitus-audiologist/", destination: "/areas-we-serve/burlingame/", permanent: true },
+      { source: "/areas-we-serve/burlingame/lenire/", destination: "/areas-we-serve/burlingame/", permanent: true },
+      { source: "/areas-we-serve/burlingame/dr-emily-mcmahan/", destination: "/about-us/emily-mcmahan/", permanent: true },
   // WordPress draft/duplicate cruft → homepage.
   { source: "/home-new/", destination: "/", permanent: true },
   { source: "/california-hearing-center-4/", destination: "/", permanent: true },
@@ -27,8 +70,8 @@ const blogRedirects = [
       { source: "/how-to-choose-the-right-audiologist-in-palo-altos-california-avenue-district/", destination: "/areas-we-serve/palo-alto/", permanent: true },
       { source: "/the-real-cost-of-hearing-aids-in-athertons-luxury-communities-and-how-to-save/", destination: "/areas-we-serve/atherton/", permanent: true },
       { source: "/what-is-the-best-test-to-see-about-hearing-loss/", destination: "/different-ways-to-test-for-hearing-loss/", permanent: true },
-      { source: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly/", destination: "/what-is-the-cost-of-good-quality-hearing-aid/", permanent: true },
-      { source: "/how-many-hours-a-day-should-you-wear-new-hearing-aids/", destination: "/products/hearing-aids/", permanent: true },
+      { source: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly/", destination: "/what-are-invisible-hearing-aids/", permanent: true },
+      { source: "/how-many-hours-a-day-should-you-wear-new-hearing-aids/", destination: "/how-many-hours-a-day-should-you-wear-new-hearing-aids-a-complete-guide/", permanent: true },
       { source: "/do-i-need-a-hearing-test-signs-adults-should-not-ignore/", destination: "/hearing-testing/", permanent: true },
       { source: "/how-long-does-it-take-to-get-hearing-aids-from-an-audiologist/", destination: "/about-us/", permanent: true },
       { source: "/what-is-the-difference-between-a-hearing-aid-and-an-audiologist/", destination: "/about-us/", permanent: true },
@@ -162,14 +205,12 @@ const blogRedirects = [
       { source: "/how-burlingame-employers-can-support-workers-with-hearing-loss/", destination: "/areas-we-serve/burlingame/", permanent: true },
       { source: "/how-diabetes-and-hearing-loss-are-linked-in-burlingame-residents/", destination: "/areas-we-serve/burlingame/", permanent: true },
       { source: "/how-dr-emily-mcmahan-brings-advanced-tinnitus-care-to-the-bay-area-without-you-flying-to-alaska/", destination: "/tinnitus/", permanent: true },
-      { source: "/how-far-do-you-push-hearing-aid-in/", destination: "/products/hearing-aids/", permanent: true },
-      { source: "/how-far-should-you-push-a-hearing-aid-in-tips-from-california-hearing-center/", destination: "/products/hearing-aids/", permanent: true },
+      { source: "/how-far-should-you-push-a-hearing-aid-in-tips-from-california-hearing-center/", destination: "/how-far-do-you-push-hearing-aid-in/", permanent: true },
       { source: "/how-long-do-hearing-aid-batteries-last-size-10-vs-312-vs-13-vs-675/", destination: "/products/hearing-aids/", permanent: true },
       { source: "/how-long-does-it-take-to-become-a-hearing-aid-specialist/", destination: "/products/hearing-aids/", permanent: true },
       { source: "/how-long-does-it-take-to-become-an-audiology-technician/", destination: "/about-us/", permanent: true },
       { source: "/how-long-to-get-used-to-hearing-aids/", destination: "/products/hearing-aids/", permanent: true },
       { source: "/how-loud-is-too-loud-noise-exposure-in-atherton-workplaces/", destination: "/areas-we-serve/atherton/", permanent: true },
-      { source: "/how-many-hours-a-day-should-you-wear-new-hearing-aids-a-complete-guide/", destination: "/products/hearing-aids/", permanent: true },
       { source: "/how-minerals-can-protect-your-hearing/", destination: "/services/hearing-protection/", permanent: true },
       { source: "/how-modern-hearing-tests-work-inside-the-audiology-booth/", destination: "/hearing-testing/", permanent: true },
       { source: "/how-much-do-audiologists-make-their-money/", destination: "/about-us/", permanent: true },
@@ -283,8 +324,6 @@ const blogRedirects = [
       { source: "/try-these-tips-to-avoid-swimmers-ear/", destination: "/the-blog/", permanent: true },
       { source: "/understanding-age-related-hearing-loss-in-palo-altos-94301-zip-code/", destination: "/the-blog/", permanent: true },
       { source: "/understanding-age-related-hearing-loss-presbycusis-in-burlingame/", destination: "/areas-we-serve/burlingame/", permanent: true },
-      { source: "/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/", destination: "/the-blog/", permanent: true },
-      { source: "/understanding-hearing-loss-at-4000-hz/", destination: "/the-blog/", permanent: true },
       { source: "/vertigo-vs-balance-disorders-understanding-symptoms-in-palo-alto/", destination: "/areas-we-serve/palo-alto/", permanent: true },
       { source: "/welcome-spring-prepare-your-ears/", destination: "/the-blog/", permanent: true },
       { source: "/what-are-the-disadvantages-of-an-audiologist/", destination: "/about-us/", permanent: true },
@@ -313,7 +352,7 @@ const blogRedirects = [
       { source: "/when-to-upgrade-your-hearing-aids-in-burlingame/", destination: "/areas-we-serve/burlingame/", permanent: true },
       { source: "/where-can-i-get-my-hearing-checked/", destination: "/the-blog/", permanent: true },
       { source: "/which-doctor-is-best-for-the-ears/", destination: "/about-us/", permanent: true },
-      { source: "/whoopi-goldbergs-inspiring-journey-with-hearing-loss-breaking-barriers-and-raising-awareness/", destination: "/the-blog/", permanent: true },
+      { source: "/whoopi-goldbergs-inspiring-journey-with-hearing-loss-breaking-barriers-and-raising-awareness/", destination: "/the-stigma-of-hearing-loss/", permanent: true },
       { source: "/whooshing-sound/", destination: "/the-blog/", permanent: true },
       { source: "/why-just-turning-up-the-tv-isnt-a-long-term-hearing-solution/", destination: "/the-blog/", permanent: true },
       { source: "/why-patients-drive-from-lafayette-walnut-creek-san-ramon-to-our-san-mateo-clinic/", destination: "/areas-we-serve/san-mateo/", permanent: true },
@@ -359,6 +398,25 @@ const wordpressArchiveRedirects = [
 ];
 
 const nextConfig: NextConfig = {
+  // Kept identical to the sister practice (Audiology Associates of
+  // Westchester): both properties are the same business with the same image
+  // problem, and this pair should never drift between them. Everything the
+  // site renders goes through app/site/SiteImage.tsx, which hands local raster
+  // images to the optimizer with their real intrinsic dimensions.
+  images: {
+    formats: ["image/avif", "image/webp"],
+    // deviceSizes stays at Next's default. Trimming it was the wrong lever:
+    // srcset length was driven by passing a fixed-pixel `sizes` string, which
+    // makes next/image emit deviceSizes UNION imageSizes. SiteImage now hands
+    // fixed-box images their display size and omits `sizes` entirely, so those
+    // get 1x/2x and only the genuinely fluid images use the width list.
+    //
+    // Every filename under /assets and /wp-content is content-stable and gets
+    // a one-year immutable header below, but headers() does not apply to
+    // /_next/image, whose default cache TTL is four hours. Optimized output of
+    // an immutable source should be equally immutable.
+    minimumCacheTTL: 31536000,
+  },
   // Serve every URL WITH a trailing slash, matching the migrated WordPress URLs,
   // the sitemap, the per-page canonicals, and all internal links. Without this,
   // Next served the no-slash form and 308-redirected the slash form, contradicting

@@ -4,7 +4,7 @@
     metaTitle: "When Do You Need Hearing Aids? | California Hearing Center",
     variant: "product",
     datePublished: "2025-09-01",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "There is no single decibel cutoff that decides when you need hearing aids. What matters far more is how the loss affects your everyday life and conversations.",
     intro: [
@@ -13,7 +13,7 @@
       "If you are trying to figure out whether it is time, the clearest next step is an evaluation at our San Mateo or San Carlos office, where we measure your hearing and, just as important, talk through how it is shaping your days.",
     ],
     sections: [
-      ["The myth of a magic number", "It is easy to picture hearing loss as a needle that eventually crosses a red line, after which aids become mandatory. Audiologists do sort results into ranges — the [American Speech-Language-Hearing Association](https://www.asha.org) uses the familiar labels of mild, moderate, moderately severe, severe, and profound — but those categories mark points along a spectrum, not an on-off switch. A hearing test tells you where you land on that spectrum. It does not, on its own, announce the morning you should start wearing devices."],
+      ["The myth of a magic number", "It is easy to picture hearing loss as a needle that eventually crosses a red line, after which aids become mandatory. Audiologists do sort results into ranges, using the familiar labels of mild, moderate, moderately severe, severe, and profound, but those categories mark points along a spectrum, not an on-off switch. A hearing test tells you where you land on that spectrum. It does not, on its own, announce the morning you should start wearing devices."],
       ["'Mild' loss is easy to underrate", "The label 'mild' can be misleading, because it sounds like a problem too small to bother with. In practice, even mild loss tends to blur the softer consonants that carry meaning — the s, f, and th sounds — and it makes following a conversation in a busy restaurant genuinely tiring. Plenty of people benefit from [hearing aids](/products/hearing-aids/) while their loss is still classified as mild, precisely because addressing it early keeps ordinary conversation from turning into daily effort."],
       ["The audiogram is a starting point, not a verdict", "Here is where the numbers-only view falls apart. The chart measures the softest sounds you can detect at each pitch, which is useful, but it says little about how well you separate speech from background noise or how much strain you feel by evening. Someone with a modest-looking result who struggles constantly in meetings may have a stronger case for treatment than someone with a steeper chart who spends their days in quiet. The audiogram opens the conversation. It does not close it."],
       ["Impact is the real threshold", "If a single test result will not tell you when to act, what will? Your own experience. When you find yourself asking people to repeat themselves, nudging the television louder than others prefer, dreading group dinners, or missing half of a phone call, those are the signals that the loss has begun to cost you something. That cost — not a decibel figure — is the honest measure of when hearing aids are worth it, and it is what we weigh together during a [fitting consultation](/hearing-aid-fitting/)."],

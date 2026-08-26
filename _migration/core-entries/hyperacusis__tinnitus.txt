@@ -4,7 +4,7 @@
   intro: [
     "Hyperacusis and tinnitus are distinct conditions that frequently travel together. Many people who experience reduced sound tolerance also perceive ringing or buzzing with no external source, and the two can reinforce each other in ways that make either feel worse.",
     "Understanding the overlap matters because it shapes treatment. A plan that addresses only one when both are present tends to underperform, while an approach that accounts for the shared mechanisms often helps both at once.",
-    "This page looks at why the two conditions co-occur, how they interact, and how evaluation and therapy can address them together. Organizations such as the American Tinnitus Association discuss both conditions and their frequent connection."
+    "This page looks at why the two conditions co-occur, how they interact, and how evaluation and therapy can address them together."
   ],
   sections: [
     ["Why they often occur together", "Both hyperacusis and tinnitus involve changes in how the auditory system processes sound, and both are commonly linked to hearing loss and noise exposure. Shared underlying mechanisms are part of why one so often accompanies the other."],

@@ -4,13 +4,13 @@
     metaTitle: "Accommodating a Loved One With Hearing Loss",
     variant: "condition",
     datePublished: "2021-03-23",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Simple, practical ways to help a loved one with hearing loss communicate and stay connected, plus signs it may be time for a professional hearing test.",
     intro: [
-      "When someone close to you has trouble hearing, the strain rarely stays on their side. Repeating yourself, watching a conversation go sideways, feeling shut out at the dinner table — it wears on the whole family. The good news is that most of what helps costs nothing and takes only a little practice. A few changes in how you speak and how you set up a room can make the person you love feel included again.",
+      "When someone close to you has trouble hearing, the strain rarely stays on their side. Repeating yourself, watching a conversation go sideways, feeling shut out at the dinner table — it wears on the whole family. Most of what helps costs nothing and takes only a little practice. A few changes in how you speak and how you set up a room can make the person you love feel included again.",
       "None of this replaces treatment, and it isn't meant to. If your family member hasn't had their hearing checked in a while, a [hearing evaluation](/hearing-testing/) is still the foundation everything else rests on. But accommodation and treatment work best together, and there is plenty you can do at home starting today.",
-      "Hearing loss is one of the most common health conditions among older adults, and it often goes untreated for years, according to the [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov). That gap is exactly where family members can help — by making everyday communication easier while encouraging a real fix.",
+      "Hearing loss is one of the most common health conditions among older adults, and it often goes untreated for years; the federal NIDCD puts numbers to [how common age-related hearing loss is](https://www.nidcd.nih.gov/health/age-related-hearing-loss). That gap is exactly where family members can help — by making everyday communication easier while encouraging a real fix.",
     ],
     takeaways: [
       "Face the person, keep your face visible, and speak clearly rather than loudly.",

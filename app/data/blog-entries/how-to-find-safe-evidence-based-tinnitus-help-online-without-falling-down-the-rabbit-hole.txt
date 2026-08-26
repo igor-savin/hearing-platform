@@ -4,12 +4,12 @@
     metaTitle: "Finding Trustworthy Tinnitus Help Online",
     variant: "condition",
     datePublished: "2025-03-18",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Not every tinnitus cure online is real. Learn how to spot credible, evidence-based help, avoid miracle-cure marketing, and know when to ask an audiologist.",
     intro: [
       "Type \"tinnitus cure\" into a search bar and you will get millions of results, and a good share of them exist to sell you something. That ringing or buzzing in your ears is real and often draining, which is exactly what makes it a target for supplements, gadgets, and one-click programs that promise to make it vanish. Sorting credible information from the noise is a skill worth building before you spend money or hope on the wrong thing. If the topic is new to you, our plain-language overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) is a steadier place to start than a sponsored ad.",
-      "The honest picture is less dramatic than the marketing. For most people tinnitus has no single switch that turns it off, but it can very often be managed so it fades into the background and stops running the day. Groups like the [American Speech-Language-Hearing Association](https://www.asha.org) describe evidence-based care in those terms, as relief and management rather than a guaranteed cure. Anyone claiming a permanent fix for all tinnitus is running ahead of what the science supports.",
+      "The honest picture is less dramatic than the marketing. For most people tinnitus has no single switch that turns it off, but it can very often be managed so it fades into the background and stops running the day. [ASHA's write-up on managing tinnitus](https://www.asha.org/public/hearing/tinnitus/) describes evidence-based care in those terms, as relief and management rather than a guaranteed cure. Anyone claiming a permanent fix for all tinnitus is running ahead of what the science supports.",
       "You do not need a medical degree to tell a trustworthy source from a sales pitch. A few habits, like checking who is behind the information, watching for pressure and absolute promises, and bringing what you find to a professional, will keep you out of most rabbit holes. Our [tinnitus care team](/tinnitus/) can help you make sense of what you have read and point you toward options with genuine support behind them.",
     ],
     takeaways: [

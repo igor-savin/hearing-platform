@@ -4,7 +4,7 @@
     metaTitle: "Hearing Loss Risk Factors | California Hearing Center",
     variant: "condition",
     datePublished: "2019-06-04",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Noise, aging, genetics, and certain health conditions all raise hearing loss risk. Learn which factors you can change and when to get your hearing tested.",
     intro: [
@@ -19,7 +19,7 @@
       "Mapping your own risk factors makes a baseline hearing evaluation far more worthwhile.",
     ],
     sections: [
-      ["Noise, the part you can control", "Loud sound is the risk factor you have the most power over, which is why it is worth naming first. Damage tends to build gradually from years of exposure, whether that is machinery, power tools, concerts, or earbuds turned up to drown out a commute. The reassuring flip side is that noise-induced hearing loss is largely preventable, a point the [CDC](https://www.cdc.gov) makes plainly. If loud environments are part of your work or your hobbies, [custom hearing protection](/services/hearing-protection/) that actually fits is one of the highest-value moves you can make."],
+      ["Noise, the part you can control", "Loud sound is the risk factor you have the most power over, which is why it is worth naming first. Damage tends to build gradually from years of exposure, whether that is machinery, power tools, concerts, or earbuds turned up to drown out a commute. Noise-induced hearing loss is largely preventable, a point the [CDC](https://www.cdc.gov/niosh/noise/about/noise.html) makes plainly. If loud environments are part of your work or your hobbies, [custom hearing protection](/services/hearing-protection/) that actually fits is one of the highest-value moves you can make."],
       ["Age, and why it sneaks up", "Hearing usually shifts with age, often starting with the high pitches that carry consonants, which is why speech can sound present but muddy. This kind of loss is common and gradual, and it is nothing to feel embarrassed about. It also responds well to treatment. Many people wait years longer than they need to, and modern [hearing aids for seniors](/hearing-aids-for-seniors/) are far more discreet and capable than the ones a parent may have owned. Age is not a factor you can change, but the response to it is entirely in your hands."],
       ["What your family history tells you", "Genetics play a real role. If close relatives lost hearing earlier than you would expect, or wore aids in their fifties and sixties, that pattern is worth mentioning to whoever tests your ears. Family history will not decide your future by itself, and it does not mean the same path is fixed for you. What it does is raise the value of testing earlier and checking in more regularly, so any change is caught while it is small."],
       ["When your health shows up in your ears", "The ear depends on healthy blood flow and steady nerves, so several whole-body conditions leave a mark on hearing. Diabetes and cardiovascular disease have both been associated with hearing changes, and smoking is another recognized contributor. This is one reason we ask about general health during an evaluation rather than looking at the ears in isolation. Managing those conditions is good for your whole body, and your hearing quietly benefits alongside everything else."],

@@ -2,23 +2,23 @@
   kicker: "What to Expect",
   headline: "A Patient's Journey to Better Hearing, Step by Step",
   intro: [
-    "Improving your hearing is a journey, one that begins with awareness of a difficulty and follows a customized path toward a successful outcome. People often imagine an overwhelming process, when in reality it unfolds as a series of clear, manageable steps, each building on the last. Knowing what those steps look like ahead of time takes much of the anxiety out of the first phone call.",
-    "This is the path most patients at California Hearing Center follow, from the moment they reach out through the ongoing care and training that keep them hearing their best. We warmly encourage your family to join you along the way, both to support you and because a hearing deficit affects the people around you, too. Not every journey is identical; some people need only reassurance and monitoring, while others move through the full arc into hearing technology and beyond.",
-    "Here is what the journey typically looks like across our San Mateo and San Carlos offices."
+    "Six steps, from the first phone call to the follow-up visits. Most people who ring us have been putting it off for a year or two, and what they want to know before they book is what actually happens in the room. So here it is, in order.",
+    "This is the path most patients at California Hearing Center follow, from the moment they reach out through the ongoing care and training that keep them hearing their best. We encourage your family to come along, both to support you and because a hearing loss affects the people around you too. Not everyone goes through all six. Some people need reassurance and monitoring and nothing more.",
+    "Both offices, San Mateo and San Carlos, run it the same way."
   ],
   sections: [
     ["Step one: the first call", "It starts with a conversation. When you contact us, we listen to what prompted the call, whether it is a struggle in restaurants, a family member's concern, or ringing in your ears, and help you choose the right kind of appointment and the most convenient office. There is no obligation, just a plan for the first visit."],
     ["Step two: the hearing evaluation", "At your appointment we take a history, examine your ears, and complete a [hearing evaluation](/hearing-testing/) that builds a specific profile of your hearing, measuring not just the softest sounds you detect but how much speech you catch, how much you miss, and how you do against background noise. It also tells us whether you should be referred to a physician for medical follow-up."],
     ["Step three: discussing your results", "Our hearing doctor walks you through your results in plain language, shows you your audiogram, and talks through the specific situations where you struggle and what matters most to you. From there we recommend a plan. You leave understanding your own hearing, and if something needs medical attention, we guide you to the right referral."],
     ["Step four: choosing technology", "If hearing aids make sense, we match options to your hearing profile, lifestyle, dexterity, cosmetic preferences, and budget rather than pushing a single product. We also explain devices and accessories that connect directly to your phone or television for streaming and adjustment. Explore the range of [hearing aids](/products/) to see what is possible."],
-    ["Step five: fitting and verification", "At the [fitting](/hearing-aid-fitting/), we program the devices to your prescription and use real-ear verification to confirm they deliver the right sound in your actual ears, not just in theory. Well-fitted devices make soft speech audible, keep conversation clear, and ease the strain of hearing in noise, which supports overall cognitive health."],
-    ["Step six: follow-up, classes, and training", "Your brain needs time to readjust to a fuller range of sound, so the first weeks matter. Beyond fine-tuning appointments, we offer informal Listen Up Now education classes on hearing health, device care, and practical communication, plus interactive auditory training such as LACE and cLEAR and our 5 Keys Communication program. These tools help your brain make sense of new sound and sharpen real-world listening. Better hearing is an ongoing relationship, not a one-time purchase."]
+    ["Step five: fitting and verification", "At the [fitting](/hearing-aid-fitting/), we program the devices to your prescription and use real-ear verification to confirm they deliver the right sound in your actual ears, not just in theory. Well-fitted devices make soft speech audible and take some of the strain out of hearing in noise."],
+    ["Step six: follow-up, classes, and training", "Your brain needs time to readjust to a fuller range of sound, so the first weeks matter. Beyond fine-tuning appointments, we offer informal Listen Up Now education classes on hearing health, device care, and practical communication, plus auditory training through LACE, clEAR and our 5 Keys Communication program. Adjustments stay available for as long as you wear the devices."]
   ],
   bullets: ["First call & planning", "Comprehensive evaluation", "Results in plain language", "Technology matched to you", "Verified fitting", "Classes & auditory training"],
   takeaways: [
-    "The journey is a series of clear, guided steps, not a single overwhelming decision.",
-    "Everything is built on a thorough evaluation and results you actually understand.",
-    "Education classes and auditory training make adapting to better hearing easier and more successful."
+    "Nothing is decided at the first visit. The evaluation and the results discussion usually fit into one appointment, and you can stop there.",
+    "Every recommendation rests on your audiogram, and we go through the audiogram with you before recommending anything.",
+    "After the fitting we run Listen Up Now classes and enroll patients in LACE, clEAR and 5 Keys Communication."
   ],
   faqs: [
     ["Do I have to buy hearing aids if I come in?", "No. The first steps are about understanding your hearing and your options. Many people come in for answers and monitoring, and hearing technology is only recommended when it genuinely fits your needs and goals."],

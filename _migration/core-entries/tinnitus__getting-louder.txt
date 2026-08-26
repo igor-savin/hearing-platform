@@ -1,10 +1,11 @@
 "/tinnitus/getting-louder/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Why Is My Tinnitus Getting Louder?",
+  metaDescription: "A spike usually traces back to noise, stress, poor sleep, wax or illness. Which changes are red flags, which are not, and what to do about it tonight.",
   intro: [
     "It can be frightening when tinnitus that was background noise suddenly feels louder, harsher, or more constant. The reassuring news is that a spike does not always mean permanent damage, but it is a sign that something in your ears, brain, or lifestyle has changed.",
     "When patients tell us their tinnitus is getting louder, they usually mean one of three things: the sound itself has changed, the sound feels louder because they are paying more attention to it, or other factors like stress, poor sleep, or illness are amplifying how noticeable it is.",
-    "This page from our Bay Area audiologists explains the common reasons tinnitus gets louder, when a spike is a red flag, and what you can do right now to calm things down and protect your hearing. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "What follows is why tinnitus spikes, which spikes we want to see quickly, and what you can do this evening to settle one. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
     ["Common reasons tinnitus spikes", "Frequent triggers include recent loud-noise exposure (concerts, sporting events, power tools, or cranked-up headphones can temporarily inflame the auditory system), stress and anxiety that put the nervous system on high alert, poor sleep or fatigue that reduces the brain's ability to filter background sensations, illness such as colds, sinus infections, or allergies that cause ear pressure and fluid, earwax buildup, and certain medications. Hormonal shifts and blood-pressure changes can play a role too."],

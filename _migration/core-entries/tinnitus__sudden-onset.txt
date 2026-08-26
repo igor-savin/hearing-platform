@@ -1,10 +1,11 @@
 "/tinnitus/sudden-onset/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Sudden Tinnitus: Should I Go to the ER?",
+  metaDescription: "Tinnitus that appeared within hours, especially alongside muffled hearing in one ear, is treated as urgent. What to do today, and who to call first.",
   intro: [
     "If ringing, buzzing, or whooshing in your ears started suddenly, it is normal to feel anxious and to wonder whether you should head straight to the emergency room.",
     "By sudden tinnitus we mean ringing that appears abruptly, within minutes to hours, feels noticeably different from how your ears usually feel, and may come with other symptoms like muffled hearing, dizziness, or pressure. Some people notice a high-pitched ping followed by steady ringing; others wake up with new buzzing, roaring, or whooshing.",
-    "This page from our Bay Area audiologists offers general guidance on when sudden tinnitus can be an emergency, when to call a doctor promptly, and when it is appropriate to schedule an evaluation. It is not a diagnosis or a substitute for medical care, if you are ever in doubt, seek in-person attention. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "Three categories follow: sudden tinnitus that is an emergency, sudden tinnitus that needs a call within a day or two, and sudden tinnitus that can wait for a scheduled evaluation. It is not a diagnosis or a substitute for medical care, if you are ever in doubt, seek in-person attention. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
     ["When sudden tinnitus may be an emergency", "Seek emergency care or call 911 if sudden tinnitus occurs with sudden hearing loss in one or both ears, severe dizziness that makes it hard to stand or walk, sudden weakness, drooping, or numbness, difficulty speaking or confusion, a sudden extremely severe headache, double vision or loss of vision, or a recent head or neck injury followed by tinnitus. These can be related to conditions like stroke or acute neurological or vascular problems, which online information cannot safely rule out."],

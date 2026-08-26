@@ -4,13 +4,13 @@
     metaTitle: "The Benefits of Treating Hearing Loss",
     variant: "condition",
     datePublished: "2021-03-24",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Treating hearing loss brings clearer conversation, less listening fatigue, stronger connection, and better safety. Here's what to expect and how to begin.",
     intro: [
       "Most people who finally treat their hearing tell us afterward that they wish they had done it sooner. The distance between straining to keep up and hearing comfortably turns out to be wider than they expected, and it shows up in small moments: catching a grandchild's question, following the whole table at dinner, hearing your own name from across a room. A [hearing evaluation](/hearing-testing/) is where that shift begins.",
       "The benefits reach well past volume. Treating hearing loss tends to sharpen how you follow a conversation, how connected you feel to the people around you, and how much energy you have left at the end of a long day of listening. Today's [hearing aids](/products/hearing-aids/) are small, comfortable, and far more capable than the devices many people picture from a parent or grandparent.",
-      "There is a health case as well. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) counts untreated hearing loss among the factors linked to cognitive decline, and it is one of the few you can act on. Caring for your hearing at one of our San Mateo or San Carlos offices is a low-risk step with returns you tend to notice right away.",
+      "There is a health case as well. The Lancet Commission on dementia prevention counts untreated hearing loss among the risks associated with cognitive decline. That is an association rather than proof of cause, and it is one of the few risks on the list you can act on. Caring for your hearing at one of our San Mateo or San Carlos offices is a low-risk step with returns you tend to notice right away.",
     ],
     takeaways: [
       "Treating hearing loss improves communication, relationships, and day-to-day confidence.",

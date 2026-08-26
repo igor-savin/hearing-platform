@@ -3,7 +3,7 @@
   headline: "About California Hearing Center in San Mateo & San Carlos",
   intro: [
     "The quality of your hearing touches nearly every part of your life, from the conversations at your dinner table to your confidence at work. California Hearing Center exists to protect and restore that connection. We are an independent audiology practice serving the Peninsula from two offices, in San Mateo and San Carlos, and our focus is straightforward: accurate diagnosis, honest guidance, and hearing solutions built around the individual rather than the sale.",
-    "What sets a practice apart is not the equipment on the shelf but the experience and commitment of the people using it. Our team is made up of doctors of audiology and a hearing instrument specialist who take the time to understand your hearing, your lifestyle, and your goals before recommending anything. We believe every set of ears is unique, and the right solution is the one tailored to yours.",
+    "The team is doctors of audiology and a hearing instrument specialist. Their training is on their own pages: where each took their degree, which states they are licensed in, which certificates they hold. Every hearing aid we fit is verified with real-ear measurement, and that is the part of the job that most reliably separates a device you keep wearing from one that ends up in a drawer.",
     "We serve patients throughout San Mateo, San Carlos, Burlingame, Belmont, Millbrae, and the surrounding Peninsula communities. Whether you are here for a first evaluation, tinnitus relief, or ongoing care, our aim is that you leave understanding your hearing and confident in the path forward."
   ],
   sections: [

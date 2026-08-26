@@ -4,12 +4,12 @@
     metaTitle: "Vertigo & Balance Disorders | California Hearing Center",
     variant: "condition",
     datePublished: "2018-10-18",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Vertigo, unsteadiness, and dizziness can start in the inner ear. Learn the common balance disorders, how an audiologist evaluates them, and the red flags.",
     intro: [
       "The room tilts when you roll over in bed. Or you stand up and the floor seems to drift for a second. Or you just feel off, as if you were walking on a boat that isn't there. People tend to file all of these under 'dizziness,' but they are not the same experience, and the differences are the first clue to what is going on. Sorting them out is where a good [hearing and balance evaluation](/hearing-testing/) begins.",
-      "Balance is a team effort. Your eyes, the sensors in your muscles and joints, and the vestibular organs of the inner ear all report to the brain, which blends the signals into a steady sense of where you are. When one source sends bad information, often the inner ear, the result can be spinning, swaying, or a lightheaded haze. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) groups these under balance disorders, and several of the most common ones trace back to the same ear that handles hearing.",
+      "Balance is a team effort. Your eyes, the sensors in your muscles and joints, and the vestibular organs of the inner ear all report to the brain, which blends the signals into a steady sense of where you are. When one source sends bad information, often the inner ear, the result can be spinning, swaying, or a lightheaded haze. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/balance-disorders) groups these under balance disorders, and several of the most common ones trace back to the same ear that handles hearing.",
       "That overlap is why an audiologist belongs in the conversation. At our San Mateo and San Carlos offices we test how well the hearing and balance systems are working, help rule things in or out, and coordinate with your physician when a symptom points somewhere else. If dizziness has become part of your week, [reach out](/contact/) and let's find out why.",
     ],
     takeaways: [
