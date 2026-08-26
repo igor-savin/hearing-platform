@@ -128,7 +128,8 @@ export const helpServices: HelpService[] = [
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" }
+      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
+      { label: "LGBTQ+ Affirming Hearing Care", href: "/lgbtq-affirming-hearing-care" }
     ],
     faqs: [
       {
@@ -180,7 +181,8 @@ export const helpServices: HelpService[] = [
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Types of Hearing Loss", href: "/hearing-loss" }
+      { label: "Types of Hearing Loss", href: "/hearing-loss" },
+      { label: "LGBTQ+ Affirming Hearing Care", href: "/lgbtq-affirming-hearing-care" }
     ],
     faqs: [
       {
