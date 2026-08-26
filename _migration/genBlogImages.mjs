@@ -139,6 +139,18 @@ function loadJsonSpecs() {
 
 const SPECS = [
   {
+    slug: "fortell-hearing-aids-what-we-know",
+    hero: { title: "Fortell: What We Know", icon: "soundwave", accent: C.blue },
+    info: { title: "Fortell at a glance", subtitle: "A competitor's read, as of 26 August 2026", accent: C.blue, rows: [
+      { title: "$6,800 a pair", desc: "Bundled: five years of care, three-year warranty, 100-day trial." },
+      { title: "Own clinics only", desc: "No independent practice can supply or service it." },
+      { title: "Out-of-network everywhere", desc: "No insurer contracts. You submit the claim yourself." },
+      { title: "No telecoil, iPhone only", desc: "Rules it out for loop users and Android users outright." },
+      { title: "Evidence is company-published", desc: "No independent lab measurement has been released." },
+      { title: "SF and Palo Alto not open", desc: "Waitlists with no address and no date announced." },
+    ] },
+  },
+  {
     slug: "could-there-be-a-link-between-hearing-loss-and-dementia",
     hero: { title: "Hearing & Brain Health", icon: "brain", accent: C.gold },
     info: { title: "Hearing and Brain Health", subtitle: "What experts study — and why an evaluation helps regardless", accent: C.gold, rows: [

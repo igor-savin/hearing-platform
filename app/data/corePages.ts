@@ -534,7 +534,8 @@ const rawCorePages: Record<string, PageContent> = {
     ["Live speech mapping", "/hearing-aid-fitting/"],
     ["Comfort and feedback check", "/hearing-aid-fitting/"],
     ["Care and cleaning guidance", "/services/hearing-aid-repair/"],
-    ["Follow-up fine-tuning", "/contact/"]
+    ["Follow-up fine-tuning", "/contact/"],
+    ["Fitted somewhere else? We will verify it", "/fortell-hearing-aids-what-we-know/"]
   ],
   takeaways: [
     "A fitting programs the device to your prescription and verifies it with real-ear measurement, not by ear alone.",
@@ -602,7 +603,8 @@ const rawCorePages: Record<string, PageContent> = {
     ["How fitting and verification work", "/hearing-aid-fitting/"],
     ["What hearing aids cost on the Peninsula", "/hearing-aid-cost/"],
     ["Insurance and coverage", "/resources/insurance/"],
-    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"]
+    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"],
+    ["Considering Fortell? What we actually know", "/fortell-hearing-aids-what-we-know/"]
   ],
   takeaways: [
     "Bring your quote and your audiogram and we will go through both with you, free, with no obligation to buy anything here.",

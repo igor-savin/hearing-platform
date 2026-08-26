@@ -21,7 +21,8 @@
     ["How fitting and verification work", "/hearing-aid-fitting/"],
     ["What hearing aids cost on the Peninsula", "/hearing-aid-cost/"],
     ["Insurance and coverage", "/resources/insurance/"],
-    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"]
+    ["Compare hearing aid brands", "/products/hearing-aids-by-brand/"],
+    ["Considering Fortell? What we actually know", "/fortell-hearing-aids-what-we-know/"]
   ],
   takeaways: [
     "Bring your quote and your audiogram and we will go through both with you, free, with no obligation to buy anything here.",

@@ -721,6 +721,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/fortell-hearing-aids-what-we-know/",
+    "title": "Fortell Hearing Aids: What We Actually Know So Far | California Hearing Center",
+    "h1": "Fortell Hearing Aids: What We Actually Know So Far",
+    "desc": "Fortell raised $163M and sells $6,800 AI hearing aids only through its own clinics. What is confirmed, what its studies actually show, and what to check before you join the San Francisco or Palo Alto waitlist.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/signia-max-what-we-know/",
     "title": "Signia MaX: What We Actually Know So Far | California Hearing Center",
     "h1": "Signia MaX: What We Actually Know So Far",
