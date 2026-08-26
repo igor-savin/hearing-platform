@@ -4,7 +4,7 @@
     metaTitle: "Why \"Just Live With It\" Is Bad Tinnitus Advice",
     variant: "condition",
     datePublished: "2025-03-01",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Told to just live with tinnitus? That advice no longer holds. Learn the evidence-based steps, from hearing tests to sound therapy, that genuinely help.",
     intro: [
@@ -24,7 +24,7 @@
       ["Ask specifically about sound therapy", "One of the better-established tools is [sound therapy](/tinnitus/sound-therapy/), which uses gentle background sound so the tinnitus becomes less prominent and your brain stops straining to track it. This is not about drowning the ringing out. With steady, low-level sound, the tinnitus tends to sink into the background of your attention over time, the way a refrigerator hum stops registering. Options range from bedside players to hearing aids with built-in sound generators."],
       ["Look into a structured tinnitus program", "When the ringing is cutting into your sleep, focus, or mood, a structured program usually does more than any single gadget. [Tinnitus therapy](/services/tinnitus-therapy/) combines counseling, sound strategies, and sometimes newer options such as Lenire, which pairs sound with mild stimulation of the tongue. The aim of a program is to retrain how you respond to the sound and to hand you a plan instead of a shrug. Our team can walk you through which approach fits your situation."],
       ["Break the sleep-and-stress loop", "Tinnitus and stress feed each other: the noise frays your nerves, and a tired, tense mind hears it more loudly. That loop is one reason 'just live with it' backfires, since living with it often means white-knuckling through it. Small footholds help — a little background sound at bedtime, a regular wind-down routine, easing off late caffeine. If anxiety or sleeplessness has dug in, mention it, because those are treatable on their own and often loosen the tinnitus in the bargain."],
-      ["Know when to call sooner rather than later", "A few patterns deserve prompt attention rather than patience. Ringing that comes on suddenly, sits in only one ear, pulses in time with your heartbeat, or arrives with dizziness or new hearing loss should be looked at without delay, since these can point to something that needs timely care. The [American Speech-Language-Hearing Association](https://www.asha.org) frames tinnitus as a symptom worth evaluating rather than dismissing. When you are unsure, a call to our office beats waiting it out."],
+      ["Know when to call sooner rather than later", "A few patterns deserve prompt attention rather than patience. Ringing that comes on suddenly, sits in only one ear, pulses in time with your heartbeat, or arrives with dizziness or new hearing loss should be looked at without delay, since these can point to something that needs timely care. [ASHA treats tinnitus as a symptom worth evaluating](https://www.asha.org/public/hearing/tinnitus/) rather than dismissing. When you are unsure, a call to our office beats waiting it out."],
     ],
     bullets: ["Tinnitus is treatable", "Start with a hearing test", "Rule out earwax", "Sound therapy", "Structured programs", "San Mateo & San Carlos"],
     faqs: [

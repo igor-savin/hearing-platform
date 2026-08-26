@@ -4,11 +4,11 @@
     metaTitle: "OTC Hearing Aids: What the New Rule Means",
     variant: "product",
     datePublished: "2025-07-30",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "The FDA created an over-the-counter hearing aid category for adults with mild-to-moderate loss. Here's how OTC and prescription devices differ and when to see a pro.",
     intro: [
-      "In 2022 the FDA created a class of hearing aids that adults can buy without a prescription, an exam, or a professional fitting. These over-the-counter devices reached store shelves and websites that fall, and they are meant for people 18 and older who believe they have mild-to-moderate hearing loss. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) describes the category in plain terms, and it has changed the first question many people ask us.",
+      "In 2022 the FDA created a class of hearing aids that adults can buy without a prescription, an exam, or a professional fitting. These over-the-counter devices reached store shelves and websites that fall, and they are meant for people 18 and older who believe they have mild-to-moderate hearing loss. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/hearing-aids) describes the category in plain terms, and it has changed the first question many people ask us.",
       "The goal behind the rule was reasonable: lower the cost and hassle of getting help for common, everyday hearing loss. What the rule did not do is erase the difference between a device you grab off a shelf and one an audiologist selects, programs, and adjusts to your specific ears. Both can be the right answer. They just fit different situations.",
       "If you are weighing an OTC pair against a visit to our San Mateo or San Carlos offices, it helps to know what each path offers. Below is a straight look at how [hearing aids](/products/hearing-aids/) in the OTC category work, who they suit, and the signs that point you toward a professional evaluation first.",
     ],

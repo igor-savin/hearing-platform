@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { AI_REFERRAL_SOURCE, REASONS, REFERRAL_SOURCES } from "../lib/contactForm";
+import { trackConversion } from "./conversions";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -69,6 +70,14 @@ export function LeadForm({ context = "Contact page" }: { context?: string }) {
         interaction_href: typeof window !== "undefined" ? window.location.href : "",
       });
       if (w.fbq) w.fbq("trackCustom", "contact-submit-success");
+
+      // The one event on this site that means a patient actually asked for
+      // something. It fires only after the API has accepted the submission, so
+      // it counts sent enquiries rather than attempts.
+      trackConversion("contact_form_submit", {
+        form_context: context,
+        page_path: typeof window !== "undefined" ? window.location.pathname : "",
+      });
     } catch {
       setStatus("error");
       setMessage("The online form couldn’t send just now. Please call 650-342-9449 to schedule.");

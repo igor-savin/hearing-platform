@@ -8,7 +8,7 @@
   sections: [
     ["Hearing loss and staying connected in community living", "One of the quiet costs of hearing loss is withdrawal — a resident stops joining meals, activities, and chats because following them has become exhausting. Treating hearing loss is often the difference between a full social life inside the community and a shrinking one, which matters for mood and wellbeing."],
     ["Choosing the right hearing aids for an older adult", "We match technology to the person, not the price tag. For seniors that usually means rechargeable batteries, larger controls, and automatic sound adjustment so there is nothing complicated to fiddle with. A device that is comfortable and easy to use is a device that gets worn."],
-    ["The link between hearing, falls, and thinking", "Studies associated with the Lancet Commission and Johns Hopkins point to untreated hearing loss as a risk factor associated with falls and cognitive decline. We are careful to say associated, not caused — but it is a compelling reason to act early rather than wait."],
+    ["The link between hearing, falls, and thinking", "The Lancet Commission on dementia prevention lists untreated hearing loss as the largest modifiable risk factor in midlife. That is a population-level association, not proof that hearing aids prevent dementia, and anyone who tells a family otherwise is selling something. The falls evidence is more direct. [Lin and Ferrucci, Archives of Internal Medicine, 2012](https://pubmed.ncbi.nlm.nih.gov/22371929/) associated every 10 decibels of hearing loss with roughly 1.4 times the odds of a fall. Both are reasons to check a resident's hearing aids rather than reasons to panic."],
     ["Working alongside families and Sunrise caregivers", "Good hearing care in a senior community is a team effort. We are happy to explain a resident's hearing needs to family members and coach caregivers on clear-communication techniques so daily support and visits go more smoothly."]
   ],
   bulletLinks: [
@@ -21,7 +21,7 @@
   ],
   takeaways: [
     "We serve Sunrise of San Mateo residents and their families from our nearby San Mateo and San Carlos offices.",
-    "Untreated hearing loss is associated with social withdrawal, falls, and cognitive decline in seniors.",
+    "Untreated hearing loss is associated with social withdrawal and with a higher risk of falls. Association, not proven cause.",
     "Simple, rechargeable, automatic hearing aids and a nearby audiologist make ongoing care manageable."
   ],
   faqs: [

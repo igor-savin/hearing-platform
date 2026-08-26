@@ -4,12 +4,12 @@
     metaTitle: "Explaining Hearing Loss to Your Grandchildren",
     variant: "condition",
     datePublished: "2017-11-23",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Simple, kind ways to explain your hearing loss to young grandchildren, so visits feel easier and closer. Practical tips from California Hearing Center.",
     intro: [
-      "A four-year-old will ask the blunt question the adults have been tiptoeing around: why didn't you answer me, Grandpa? Small children read a missed reply as being ignored, not as a hearing problem, and that little sting can build up over years of birthdays and Sunday dinners. The good news is that kids are quick to understand once someone explains things in their language, and they tend to be more patient than the grown-ups once they know what is going on.",
-      "You do not need a medical lecture for this. What helps a child is a short, honest picture of what your ears do and do not catch, plus one or two small jobs they can do to help. Age-related hearing loss is one of the most common conditions among older adults, according to the [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov), so millions of grandparents are having some version of this exact talk.",
+      "A four-year-old will ask the blunt question the adults have been tiptoeing around: why didn't you answer me, Grandpa? Small children read a missed reply as being ignored, not as a hearing problem, and that little sting can build up over years of birthdays and Sunday dinners. Kids are quick to understand once someone explains things in their language, and they tend to be more patient than the grown-ups once they know what is going on.",
+      "You do not need a medical lecture for this. What helps a child is a short, honest picture of what your ears do and do not catch, plus one or two small jobs they can do to help. Age-related hearing loss is one of the most common conditions among older adults, according to the [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/age-related-hearing-loss), so millions of grandparents are having some version of this exact talk.",
       "If your own hearing has slipped enough that family visits feel like hard work, that is worth acting on too. A [hearing evaluation](/hearing-testing/) at our San Mateo or San Carlos office gives you a clear starting point, and it often makes these conversations easier because you can tell the kids what you are doing about it.",
     ],
     takeaways: [

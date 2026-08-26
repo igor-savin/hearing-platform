@@ -4,13 +4,13 @@
     metaTitle: "Does Medicare Cover Hearing Aids? What to Know",
     variant: "product",
     datePublished: "2025-07-13",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Original Medicare does not cover hearing aids, but Medicare Advantage, Medicaid, and VA benefits sometimes help. Here is how to check what your plan covers.",
     intro: [
       "You searched for free hearing aids through Medicare, and you deserve a straight answer before you spend an afternoon on hold. The short version: Original Medicare does not pay for hearing aids, but that is not the whole story, and a few other routes are worth knowing about.",
       "Original Medicare, meaning Part A and Part B, was built around hospital and physician care, and hearing aids fall outside what it was designed to buy. Part B can help with a diagnostic hearing or balance exam when a doctor orders one to guide medical treatment, so the testing side sometimes has coverage even when the devices do not. Our page on [insurance and coverage](/resources/insurance/) lays out that distinction in plain terms.",
-      "The good news is that Medicare is not the only door. Depending on the plan you carry, the state you live in, and whether you served in the military, some or all of the cost of [hearing aids](/products/hearing-aids/) may be offset. It pays to check each one rather than assume the answer is no.",
+      "Medicare is not the only door. Depending on the plan you carry, the state you live in, and whether you served in the military, some or all of the cost of [hearing aids](/products/hearing-aids/) may be offset. It pays to check each one rather than assume the answer is no.",
     ],
     takeaways: [
       "Original Medicare (Part A and Part B) does not cover hearing aids themselves.",

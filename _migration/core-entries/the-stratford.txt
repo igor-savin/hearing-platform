@@ -3,12 +3,12 @@
   headline: "Hearing Care for The Stratford Senior Community in San Mateo",
   intro: [
     "The Stratford is a senior-living community in San Mateo, and its residents are exactly the people who benefit most from attentive, local hearing care. California Hearing Center welcomes Stratford residents and their families to our San Mateo office at 88 N. San Mateo Drive and our San Carlos location for hearing tests, fittings, and the follow-up care that keeps hearing aids working.",
-    "We are an independent audiology practice run by clinicians, not salespeople. For an older adult, that shows up as patient appointments, plain-language explanations, and technology chosen for how someone actually lives — not for what is easiest to sell."
+    "We are an independent audiology practice run by clinicians, not salespeople. For an older adult, that shows up as patient appointments, plain-language explanations, and technology chosen for how someone actually lives, not for what is easiest to sell."
   ],
   sections: [
     ["Recognizing hearing loss in a loved one", "Hearing loss often creeps in gradually. Turning the TV up, asking people to repeat themselves, trouble on the phone, or pulling back from group conversation are common early signs. A simple hearing test tells us clearly where things stand and what, if anything, to do."],
     ["Hearing aids designed for ease of use", "For many Stratford residents, the best hearing aid is the simplest one to live with: rechargeable so there are no fiddly batteries, with larger controls and automatic settings that adjust on their own. Comfort and simplicity are what turn a device into one that is worn every day."],
-    ["Hearing, safety, and staying sharp", "Untreated hearing loss is associated in major research with a higher risk of falls and with cognitive decline over time. These are associations rather than proven cause, but for an older adult they are a good reason to treat hearing loss instead of waiting."],
+    ["Hearing and the risk of falling", "[Lin and Ferrucci, in Archives of Internal Medicine in 2012](https://pubmed.ncbi.nlm.nih.gov/22371929/), associated every 10 decibels of hearing loss with roughly 1.4 times the odds of falling. Separately, the Lancet Commission on dementia prevention lists untreated hearing loss as the largest modifiable risk factor in midlife. Both are associations measured across groups of people rather than proof of cause in any one person. They are a reason to have a resident's hearing checked, not a reason to be frightened."],
     ["A partner for families over the long term", "Hearing needs change, and hearing aids need periodic cleaning and reprogramming. Being close to The Stratford means residents and families can rely on the same audiologist for ongoing adjustments, and we are glad to keep caregivers in the loop."]
   ],
   bulletLinks: [
@@ -21,7 +21,7 @@
   ],
   takeaways: [
     "We care for The Stratford residents and families from our nearby San Mateo and San Carlos offices.",
-    "Early signs of hearing loss — louder TV, repeated requests, phone trouble — are worth a simple test.",
+    "Early signs of hearing loss are worth a simple test: a louder TV, repeated requests, trouble on the phone.",
     "Rechargeable, easy-to-use hearing aids and steady local follow-up work best for seniors."
   ],
   faqs: [

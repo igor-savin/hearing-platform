@@ -4,7 +4,7 @@
     metaTitle: "Is Tinnitus Severity Rooted in the Brain?",
     variant: "condition",
     datePublished: "2018-06-05",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Many assume tinnitus is made by the ears, yet research points to the brain shaping how loud and distressing it feels. Here is what that means for care.",
     intro: [
@@ -18,7 +18,7 @@
       ["When the brain turns up its own volume", "One leading idea is that when the ear delivers less input, the brain compensates by boosting its own sensitivity, a bit like raising the gain on a microphone. Push the gain up and ordinary background neural activity can become audible as ringing or hissing. It is an appealing explanation for why hearing loss and tinnitus travel together so often. It also hints at why restoring input can help: well-fit [hearing aids](/products/hearing-aids/) feed the brain more real sound, which for many people makes the internal signal easier to set aside."],
       ["Attention, stress, and the feedback loop", "Notice a sound, read it as a threat, and the brain's alarm and attention systems lock on, which makes the sound feel louder and harder to tune out, which fuels more worry. That loop helps explain why tinnitus tends to spike during stress or in a silent room, and why a rough night makes it worse the next day. It also points toward a way out, since interrupting the loop matters more than chasing the sound itself."],
       ["Why this reframes treatment", "If tinnitus is sustained by how the brain processes and reacts to sound, then care can work on those reactions instead of demanding silence from the ear. [Sound therapy](/tinnitus/sound-therapy/) uses gentle, controlled sound to soften the contrast between the tinnitus and its surroundings, so the brain gradually files it as unimportant background. Structured [tinnitus therapy](/services/tinnitus-therapy/) adds guidance for the attention and stress side. Neither erases the signal on command, but together they can shrink how much space it takes up in your day."],
-      ["When ringing deserves a prompt look", "Most tinnitus is not dangerous, but a few patterns call for timely attention: ringing that comes on suddenly, sits in only one ear, pulses in time with your heartbeat, or arrives alongside dizziness or a sudden change in hearing. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) advises having these evaluated rather than waiting them out. Booking a [hearing test](/hearing-testing/) is a sensible first step, and our team can explain what your results point to."],
+      ["When ringing deserves a prompt look", "Most tinnitus is not dangerous, but a few patterns call for timely attention: ringing that comes on suddenly, sits in only one ear, pulses in time with your heartbeat, or arrives alongside dizziness or a sudden change in hearing. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/tinnitus) advises having these evaluated rather than waiting them out. Booking a [hearing test](/hearing-testing/) is a sensible first step, and our team can explain what your results point to."],
     ],
     bullets: ["Ear starts it", "Brain sustains it", "Loudness vs. distress", "Neural gain", "Retraining the response", "Get evaluated"],
     faqs: [

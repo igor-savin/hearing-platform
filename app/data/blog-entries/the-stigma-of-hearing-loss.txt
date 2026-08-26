@@ -4,13 +4,13 @@
     metaTitle: "The Stigma of Hearing Loss | California Hearing Center",
     variant: "condition",
     datePublished: "2018-10-03",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Hearing loss still carries an unfair stigma that keeps people waiting to act. Here's where it comes from, why it fades once you act, and how to move past it.",
     intro: [
       "Ask people why they put off doing something about their hearing, and the honest answers rarely have much to do with the ears. They talk about looking older, seeming less sharp, or being pitied. Hearing loss carries a stigma that hearing itself never earned, and that stigma is often the real reason a [hearing test](/hearing-testing/) waits years longer than it should.",
-      "It helps to know how ordinary this is. Hearing loss is one of the most common health conditions people live with, and the [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) notes that most people who could benefit from treatment take a long time to seek it. You are not an outlier for feeling self-conscious. You are having a very normal reaction to an old set of ideas that no longer fit.",
-      "The good news is that almost every piece of the stigma buckles under a closer look. Devices are smaller and smarter than the memory most people carry. The people around you tend to respond with relief, not judgment. And once you can follow a conversation again, the thing you were embarrassed about quietly stops being the thing anyone notices. At our San Mateo and San Carlos offices, we see that shift happen all the time.",
+      "It helps to know how ordinary this is. Hearing loss is one of the most common health conditions people live with, and most people who could benefit from treatment take years to get around to it. You are not an outlier for feeling self-conscious. You are having a very normal reaction to an old set of ideas that no longer fit.",
+      "Almost every piece of the stigma buckles under a closer look. Devices are smaller and smarter than the memory most people carry. The people around you tend to respond with relief, not judgment. And once you can follow a conversation again, the thing you were embarrassed about quietly stops being the thing anyone notices. At our San Mateo and San Carlos offices, we see that shift happen all the time.",
     ],
     takeaways: [
       "The stigma around hearing loss is mostly outdated, and it costs people years of easier hearing.",

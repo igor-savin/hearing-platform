@@ -4,7 +4,7 @@
     metaTitle: "Why See an Audiologist? | California Hearing Center",
     variant: "condition",
     datePublished: "2025-06-27",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "An audiologist treats far more than hearing loss. Here are the real reasons to book a visit, from tinnitus and earwax to balance problems and baseline tests.",
     intro: [
@@ -21,7 +21,7 @@
       ["More than fitting hearing aids", "It helps to know what an audiologist actually does before you decide whether you need one. We test how well you hear across pitches and in background noise, trace where a change is coming from, and explain the results in plain terms. When a device makes sense, we fit and program [hearing aids](/products/hearing-aids/) to your specific loss. When it doesn't, we say so. The goal of the visit is an accurate picture of your hearing, not a sale."],
       ["Ringing or buzzing that won't quit", "Tinnitus sends a lot of people to us, and it is a valid reason on its own. That ringing, hissing, or buzzing with no outside source can fray your focus and your sleep, and it sometimes points to an underlying issue worth checking. An audiologist can measure your hearing, look for a treatable cause, and walk you through ways to make the sound less intrusive. Our [tinnitus care](/tinnitus/) starts with understanding what you are hearing and why."],
       ["Earwax you shouldn't dig at yourself", "Wax is normal and usually clears on its own, but sometimes it hardens and blocks the canal, muffling sound or causing pressure. Cotton swabs and home tools tend to push it deeper or scratch the canal. An audiologist can look inside with proper lighting and remove a blockage safely. If your hearing dropped suddenly and one ear feels full, [earwax removal](/services/earwax-removal/) is a quick thing to rule out first."],
-      ["Dizziness that starts in the ear", "Your inner ear does more than hear; it helps you keep your balance. When it misfires, the world can spin, tilt, or feel unsteady. Audiologists are trained to assess balance and dizziness that originate in the ear and to coordinate with your physician when another cause is likely, a scope the [American Speech-Language-Hearing Association](https://www.asha.org) describes as central to the profession. If unexplained dizziness has become a pattern, it is worth mentioning at your visit."],
+      ["Dizziness that starts in the ear", "Your inner ear does more than hear; it helps you keep your balance. When it misfires, the world can spin, tilt, or feel unsteady. Audiologists are trained to assess balance and dizziness that originate in the ear and to coordinate with your physician when another cause is likely, a scope [ASHA lists among the core duties of an audiologist](https://www.asha.org/public/who-are-audiologists/). If unexplained dizziness has become a pattern, it is worth mentioning at your visit."],
       ["A baseline reading while your hearing is good", "You don't have to wait for a problem. A baseline test captures where your hearing sits now, which gives you and your audiologist a real reference point if anything shifts later. It is especially useful if your work or hobbies expose you to loud sound, or if hearing loss runs in your family. Booking a [hearing test](/hearing-testing/) when nothing feels wrong is one of the more level-headed things you can do for your ears."],
     ],
     bullets: ["Tinnitus care", "Earwax removal", "Balance concerns", "Baseline testing", "Hearing protection", "San Mateo & San Carlos"],

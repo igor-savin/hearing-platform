@@ -4,12 +4,12 @@
     metaTitle: "Why Tinnitus Feels Worse at Night",
     variant: "product",
     datePublished: "2025-10-20",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Tinnitus can seem to roar the moment your hearing aids come out and the bedroom falls silent. Here is why the quiet turns it up and how to sleep better.",
     intro: [
       "All day your [hearing aids](/products/hearing-aids/) push a steady wash of sound past your ears, and the ringing sits somewhere behind it. Take them out at bedtime, let the house go still, and the same sound seems to rise up and fill the room. That swing from day to night is one of the most common things people mention when they call us about [tinnitus](/tinnitus/).",
-      "The tone itself has not grown louder. What changed is the room around it. During the day, traffic, voices, appliances, and the hum of your hearing aids all give your ears something else to land on. At night that cover falls away, and with fewer competing sounds the brain has an easier time picking out the ringing. The American Speech-Language-Hearing Association notes that tinnitus is often [most noticeable in quiet surroundings](https://www.asha.org), which is exactly what a dark, silent bedroom provides.",
+      "The tone itself has not grown louder. What changed is the room around it. During the day, traffic, voices, appliances, and the hum of your hearing aids all give your ears something else to land on. At night that cover falls away, and with fewer competing sounds the brain has an easier time picking out the ringing. Tinnitus is often most noticeable in quiet surroundings, which is exactly what a dark, silent bedroom provides, and [ASHA's primer on tinnitus](https://www.asha.org/public/hearing/tinnitus/) makes the same point.",
       "Knowing why it happens does not silence the sound, but it points toward what helps. Most of the relief people find at night comes from deliberately replacing that missing background sound, an approach [sound therapy](/tinnitus/sound-therapy/) is built around.",
     ],
     takeaways: [

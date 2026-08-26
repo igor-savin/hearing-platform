@@ -1,10 +1,11 @@
 "/tinnitus/when-to-see-doctor/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "When to See a Doctor About Tinnitus",
+  metaDescription: "Most tinnitus is not urgent and some of it is. The red flags, who to call first, and how our San Mateo and San Carlos clinics evaluate it.",
   intro: [
     "Tinnitus, ringing, buzzing, whooshing, or humming in the ears, is very common. For many people it is a minor, temporary nuisance. For others, it can be an early warning sign of a more serious medical or hearing issue that needs prompt attention.",
     "The challenge is knowing which category you fall into. It helps to understand the difference between emergencies (go to the ER right away), urgent situations (call your doctor or ENT within 24 to 72 hours), and non-urgent tinnitus (schedule an appointment with an audiologist).",
-    "This page from our Bay Area audiologists explains when tinnitus is serious, who to see first, and how our San Mateo and San Carlos clinics evaluate it. If you are unsure whether what you are hearing counts as tinnitus, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "The red flags are listed below, along with who to call first and how we evaluate tinnitus at our San Mateo and San Carlos offices. If you are unsure whether what you are hearing counts as tinnitus, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
     ["When it is an emergency", "Call 911 or go to the ER immediately if you have sudden hearing loss in one or both ears with a plugged or different-sounding feeling, tinnitus plus severe dizziness, trouble walking, or balance problems, facial weakness, slurred speech, or confusion, a recent head injury followed by intense pain and ringing, or a sudden severe headache with tinnitus or hearing changes. These can be associated with sudden sensorineural hearing loss, stroke, or serious inner-ear disorders. If you are actively experiencing any of these, treat it as an emergency."],

@@ -4,12 +4,12 @@
     metaTitle: "How Medications Can Affect Your Hearing",
     variant: "condition",
     datePublished: "2018-04-15",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Some medications are ototoxic and can affect hearing, cause ringing, or upset balance. Learn the warning signs and why to talk to your doctor before stopping.",
     intro: [
       "Can a medicine that treats one problem create another in your ears? For a handful of common drugs, the answer is yes. Some medications are ototoxic, meaning they can injure the inner ear or the hearing and balance nerves, and the effect can surface as hearing loss, ringing, or unsteadiness. It is not common, and for most people the benefit of the drug far outweighs the risk. Even so, if you take one of these medicines, knowing what to watch for and getting a [hearing test](/hearing-testing/) when something changes can make a real difference.",
-      "The list of drugs that can affect hearing is longer than most people expect, running from powerful antibiotics and cancer treatments to something as everyday as high-dose aspirin. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) counts more than 200 medicines known to be ototoxic. Some cause changes that fade once you stop; others can leave lasting damage. Which category a drug falls into depends on the medication, the dose, and how long you take it.",
+      "The list of drugs that can affect hearing is longer than most people expect, running from powerful antibiotics and cancer treatments to something as everyday as high-dose aspirin. More than 200 medicines are known to be ototoxic. Some cause changes that fade once you stop; others can leave lasting damage. Which category a drug falls into depends on the medication, the dose, and how long you take it.",
       "One thing to settle up front: this is not a reason to quit a prescription on your own. Several of these drugs treat serious, sometimes life-threatening conditions, and stopping abruptly can be far more dangerous than the hearing risk. The right move is to talk with the doctor who prescribed it and to bring in an audiologist if you notice a change. Our team in San Mateo and San Carlos can check your hearing before, during, or after a course of treatment so you and your prescriber are working from real information.",
     ],
     takeaways: [

@@ -1,10 +1,11 @@
 "/tinnitus/what-is-tinnitus/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "What Is Tinnitus? Understanding Ringing in the Ears",
+  metaDescription: "Tinnitus is sound with no source outside your ear. What causes it, how it is diagnosed, and what relief looks like when there is no universal cure.",
   intro: [
     "Tinnitus, pronounced tin-NY-tus or TIN-ih-tus, is the perception of sound when no external sound is actually present. Most people describe it as ringing in the ears, but it can take many forms: buzzing, hissing, whistling, roaring, clicking, or even musical tones. In most cases only you can hear it, which is what makes tinnitus such a deeply personal experience.",
     "Tinnitus is not a disease in itself. It is a symptom of an underlying condition affecting the auditory system, much like a check-engine light signaling that something needs attention, whether that is hearing loss, ear damage, a circulatory issue, or another health condition.",
-    "This page from our Bay Area audiologists explains what tinnitus is, its main types and causes, how it is diagnosed, and what relief looks like. If you are unsure whether what you hear counts as tinnitus, this is the right place to start, then explore the rest of our [tinnitus resources](/tinnitus/)."
+    "What follows is the main types and causes, how it is diagnosed, and what relief realistically looks like. If you are unsure whether what you hear counts as tinnitus, this is the right place to start, then explore the rest of our [tinnitus resources](/tinnitus/)."
   ],
   sections: [
     ["The two main categories", "Clinicians classify tinnitus as subjective or objective. Subjective tinnitus, by far the most common, can only be heard by you and usually reflects auditory-system changes from noise exposure, aging, or inner-ear problems. Objective tinnitus is rare: a clinician can actually hear it with a stethoscope, and it is often caused by blood-vessel or muscle conditions, which sometimes makes it more treatable."],

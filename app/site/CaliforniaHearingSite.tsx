@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
@@ -12,6 +13,10 @@ import { cityProfiles, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
 import { LeadForm } from "./LeadForm";
+import { SiteImage } from "./SiteImage";
+import { AudiogramFigure, ClinicianCard, RedFlagPanel, SpecTable, VisitSteps } from "./CareBlocks";
+import { TINNITUS_RED_FLAGS, TINNITUS_VISIT_STEPS, TINNITUS_LEAD_CLINICIAN, AUDIOGRAM_PAGES } from "./carePageData";
+import { specTableFor } from "./productSpecs";
 
 // pageVideos.ts is regenerated from the legacy crawl and would drop any
 // hand-added entry, so manual ones are kept separately and merged here.
@@ -52,6 +57,14 @@ export type PageContent = {
   authorName?: string;     // named author for signed posts (overrides generic byline)
   authorSuffix?: string;   // e.g. "AuD"
   authorUrl?: string;      // link to the author's bio page
+  /**
+   * Set this ONLY when a named clinician has actually reviewed the page. Both
+   * the visible byline and the schema reviewer key off it, so an unset value
+   * means the page claims no clinical review — which is the honest default and
+   * the reason the old "reviewed by the clinical team" line was removed from
+   * 261 pages. `slug` must match a bio under /about-us/.
+   */
+  reviewedBy?: { slug: string; name: string; credential: string };
 };
 
 // Convert author-written [label](/internal/path) markdown links into anchors.
@@ -163,32 +176,32 @@ const services = [
 ];
 
 const products = [
-  ["Oticon Intent", "BrainHearing™ technology for natural, effortless hearing in noise.", "/assets/oticon.webp"],
-  ["Phonak Lyric", "Invisible extended-wear hearing with total discretion.", "/assets/phonak.webp"],
-  ["Widex Allure", "Natural clarity from a family-owned innovator.", "/assets/widex.webp"],
+  ["Oticon Intent", "BrainHearing™ processing, aimed at following speech in noisy rooms.", "/assets/oticon.webp"],
+  ["Phonak Lyric", "Sits deep in the canal and stays in for months at a time.", "/assets/phonak.webp"],
+  ["Widex Allure", "Family-owned since 1956, and voiced for natural sound.", "/assets/widex.webp"],
   ["Phonak EON", "Swiss engineering, a new HYPERSONIC chip, and Auracast that works today.", "/assets/phonak-eon.webp"],
-  ["Starkey Edge AI", "American innovation with AI-powered adaptive listening.", "/assets/starkey.webp"],
+  ["Starkey Edge AI", "American-made, with the widest range of custom in-the-ear styles.", "/assets/starkey.webp"],
   ["Signia MaX", "Four neural networks working together, from a century-old engineering house.", "/assets/signia-max.webp"],
 ];
 
 const hearingAidColumns: ProductMenuLink[][] = [
   [
     ["Phonak EON", "Phonak's 2026 flagship \u2014 a new HYPERSONIC chip, and Auracast working on day one.", "/products/hearing-aids-by-brand/phonak/phonak-eon/", "/assets/phonak-eon.webp"],
-    ["Oticon Reveal", "The world's first Dual AI hearing aid \u2014 Speech and Context AI deliver crystal-clear speech.", "/products/hearing-aids-by-brand/oticon/oticon-reveal/", "/assets/oticon-reveal.webp"],
+    ["Oticon Reveal", "The first hearing aid running two AI systems: one for speech, one for the room.", "/products/hearing-aids-by-brand/oticon/oticon-reveal/", "/assets/oticon-reveal.webp"],
     ["Signia MaX", "Signia's 2026 flagship \u2014 four neural networks running together as one adaptive system.", "/products/hearing-aids-by-brand/signia/signia-max/", "/assets/signia-max.webp"],
-    ["Oticon Intent", "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
-    ["Phonak Lyric", "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.", "/products/hearing-aids-by-brand/phonak/phonak-lyric/", "/assets/phonak.webp"],
+    ["Oticon Intent", "Oticon's BrainHearing™ processing, aimed at following speech in noisy rooms.", "/products/hearing-aids-by-brand/oticon/oticon-intent/", "/assets/oticon.webp"],
+    ["Phonak Lyric", "Sits deep in the ear canal and stays in for months at a time. Nobody sees it.", "/products/hearing-aids-by-brand/phonak/phonak-lyric/", "/assets/phonak.webp"],
   ],
   [
-    ["Widex Allure", "Family-owned since 1956, delivering natural sound clarity with innovative technology.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
-    ["Oticon Zeal", "Discreet Oticon hearing technology, fit and verified for your hearing.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
+    ["Widex Allure", "Family-owned since 1956, and voiced for natural sound. No tinnitus programme on Allure.", "/products/hearing-aids-by-brand/widex/widex-allure/", "/assets/widex.webp"],
+    ["Oticon Zeal", "Oticon's deepest-fitting in-the-ear model, verified with real-ear measurement.", "/products/hearing-aids-by-brand/oticon/oticon-zeal/", "/assets/oticon-zeal.png"],
     ["Phonak Infinio", "The measured Phonak \u2014 an A grade from HearAdvisor, plus custom, titanium and CROS styles.", "/products/hearing-aids-by-brand/phonak/phonak-infinio/", "/assets/phonak-infinio.webp"],
-    ["ReSound Vivia", "Pioneering award-winning hearing solutions and connectivity advancements since 1943.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
+    ["ReSound Vivia", "Making hearing aids since 1943. Sensia is the current platform; Vivia is still sold.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
   ],
   [
-    ["Starkey Edge AI", "Pioneered American innovation, cutting-edge styles with AI-powered adaptive technology.", "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/", "/assets/starkey.webp"],
+    ["Starkey Edge AI", "Omega AI is now the flagship: grade A, second of the 36 devices HearAdvisor has tested.", "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/", "/assets/starkey.webp"],
     ["Signia IX", "The wider Signia family \u2014 custom, instant-fit, slim and CROS styles, independently tested.", "/products/hearing-aids-by-brand/signia/signia-ix/", "/assets/signia.webp"],
-    ["Ear Gear", "Custom earplugs and earmolds for all your hearing needs-serving the Bay Area.", "/products/eargear/", "/assets/ear-gear.webp"],
+    ["Ear Gear", "Custom earplugs and earmolds, made from impressions of your own ears.", "/products/eargear/", "/assets/ear-gear.webp"],
   ],
 ];
 
@@ -348,7 +361,7 @@ function TeamRoster() {
       <div className="team-grid">
         {TEAM_ROSTER.map((m) => (
           <a className="team-card" href={`/about-us/${m.slug}/`} key={m.slug}>
-            <img src={m.image} alt={`${m.name}, ${m.credential}`} loading="lazy" decoding="async" width="160" height="160" />
+            <SiteImage src={m.image} alt={`${m.name}, ${m.credential}`} box={{ width: 128, height: 128 }} />
             <strong>{m.name}</strong>
             <span className="team-cred">{m.credential}</span>
             <p>{m.hook}</p>
@@ -790,24 +803,24 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     "Every fitting is verified with real-ear measurement, so the devices are proven to hit target for your hearing.",
     "Recommendations are honest and independent — matched to your needs and budget, not to a sales quota.",
     "Care continues after the first visit: adjustments, cleanings, and follow-up are part of the plan.",
-    "An independent practice, so the advice is about your hearing — not a manufacturer's monthly target.",
-    "Small enough to know you by name, equipped enough to handle complex fittings and tinnitus care.",
+    "An independent practice, so no manufacturer sets a quota on what we recommend.",
+    "The same audiologist handles your fitting, your follow-ups and your tinnitus care.",
     "Time to explain what your results mean, in plain language, before any technology is discussed.",
-    "Unhurried appointments — we would rather get the fit right than move you through a queue.",
+    "The first appointment runs close to an hour: history, testing, speech in noise, and time to go through the results.",
     "Two Peninsula offices share one set of records, so you can see whichever location is easier.",
     "Follow-up, cleanings, and fine-tuning are included in the care, not billed as afterthoughts.",
-    "A clinical team that treats hearing care as an ongoing relationship, not a one-time sale.",
+    "Your file stays with one audiologist across follow-ups, cleanings and refits.",
     "Straight answers on whether you need treatment now, later, or just a baseline to track.",
   ]);
   const scopeBullet = pickFrom(seed + ":scope", [
     "One practice for testing, hearing aids, tinnitus and Lenire, repairs, earwax removal, and hearing protection.",
     "From a first hearing test to advanced tinnitus treatment, the full range of care is under one roof.",
-    "Diagnostics, modern hearing aids, tinnitus care, and repairs — without navigating a big hospital system.",
+    "Diagnostics, hearing aids, tinnitus care and repairs, without navigating a hospital system.",
     "Testing, fittings, tinnitus care, earwax removal, and hearing protection, all in one place.",
     "Everything from your first evaluation to long-term device support lives with one team.",
-    "Hearing tests, hearing aids, tinnitus and Lenire, and repairs — coordinated by one clinic.",
-    "A full-service audiology practice: evaluation, technology, tinnitus care, and ongoing support.",
-    "Comprehensive care — hearing aids, tinnitus and Lenire, earwax removal, protection, and repairs.",
+    "If a repair or a Lenire fitting is needed, it happens here. You are not referred out.",
+    "Testing, fitting and tinnitus care all happen in the same two rooms, with the same team.",
+    "Hearing aids, tinnitus and Lenire, earwax removal, protection and repairs, all at one office.",
     "One team for diagnostics, fittings, tinnitus treatment, and the follow-up that keeps them working.",
   ]);
   const takeaways = [
@@ -818,10 +831,10 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
       : profile.distanceTier === "far"
         ? pickFrom(seed + ":far", [
             `Patients travel to California Hearing Center from ${name} for specialized tinnitus and hearing care — our offices are in San Mateo and San Carlos.`,
-            `${name} patients who come to us usually want specialized tinnitus, Lenire, or complex-fitting care; our two offices are on the Peninsula.`,
+            `${name} patients usually come to us for tinnitus care or Lenire. Both offices are on the Peninsula, in San Mateo and San Carlos.`,
             `We see ${name} patients at our San Mateo and San Carlos offices, most often for tinnitus care or a second opinion.`,
             `California Hearing Center is Peninsula-based (San Mateo and San Carlos); ${name} patients make the trip for care they can't find closer.`,
-            `For ${name}, we're a destination for tinnitus and difficult fittings rather than routine visits — the offices are in San Mateo and San Carlos.`,
+            `Routine hearing care belongs near home. ${name} patients travel to San Mateo or San Carlos for the tinnitus work, and that is the honest reason to make the trip.`,
           ])
         : `California Hearing Center serves ${name} from our ${office} office — ${driveShort}.`,
     trustBullet,
@@ -1450,16 +1463,26 @@ function articleSchema(page: SitePage, content: PageContent) {
           ...(content.authorUrl ? { url: `${SITE}${content.authorUrl}` } : {}),
           worksFor: { "@id": `${SITE}/#organization` },
         }
-      : {
-          "@type": "Organization",
-          name: "California Hearing Center Clinical Team",
-          "@id": `${SITE}/#clinical-team`,
-          url: `${SITE}/about-us/`,
-          parentOrganization: { "@id": `${SITE}/#organization` },
-        },
-    reviewedBy: content.authorName
-      ? { "@type": "Person", name: content.authorName, ...(content.authorSuffix ? { honorificSuffix: content.authorSuffix } : {}) }
-      : { "@id": `${SITE}/#clinical-team` },
+      // The practice itself, not a phantom "Clinical Team" sub-entity that
+      // exists nowhere else in the graph and that nobody can check.
+      : { "@id": `${SITE}/#organization` },
+    // Only claim a reviewer the page can actually name. A named clinical
+    // reviewer wins; a signed author is the next best thing; otherwise the
+    // property is omitted rather than pointing at a team nobody can check.
+    ...(content.reviewedBy
+      ? {
+          reviewedBy: {
+            "@type": "Person",
+            name: content.reviewedBy.name,
+            honorificSuffix: content.reviewedBy.credential,
+            url: `${SITE}/about-us/${content.reviewedBy.slug}/`,
+            worksFor: { "@id": `${SITE}/#organization` },
+          },
+        }
+      // No fallback to the author: a person reviewing their own article is not
+      // a review, and asserting it in schema while the page shows no reviewer
+      // line makes the markup say something the page does not.
+      : {}),
     publisher: { "@id": `${SITE}/#organization` },
     about: { "@type": "MedicalCondition", name: "Hearing loss" },
   };
@@ -1521,6 +1544,14 @@ function InnerPage({ page }: { page: SitePage }) {
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
   const isCore = !!corePages[page.path];
+  // The spec table for the product and comparison pages. Null on every other
+  // page, which is nearly all of them, so nothing renders.
+  const specTable = specTableFor(page.path);
+  // Placed after the third section: by then the reader has the framing —
+  // which device is which, and what the evidence behind each one is worth —
+  // and wants the summary. Before the framing it is a wall of numbers; after
+  // the FAQs nobody scrolls to it. Clamped so a short page still gets one.
+  const specTableAfter = Math.min(2, content.sections.length - 1);
   // The careers page is the one page whose calls to action are not for patients.
   const isCareer = page.path === "/about-us/career/";
   // Pages where someone gets in touch: the contact pages, plus the senior-living
@@ -1563,7 +1594,11 @@ function InnerPage({ page }: { page: SitePage }) {
         <div className="container">
           <p className="eyebrow">{content.kicker}</p>
           <h1>{content.headline}</h1>
-          <p>{plain(content.intro[0])}</p>
+          {/* linkify, not plain: this paragraph used to render twice — once
+              here stripped of its links, and again as the first paragraph of
+              the body. The body now starts at intro[1], so this is the only
+              place intro[0] appears and it has to carry its own links. */}
+          <p dangerouslySetInnerHTML={{ __html: linkify(content.intro[0] || "") }} />
           <div className="hero-actions">
             {isCareer ? (
               <a className="button primary" href={careersMailto}>Email us about a role</a>
@@ -1578,13 +1613,19 @@ function InnerPage({ page }: { page: SitePage }) {
       <section className="content-grid container">
         <article className="copy-card">
           <p className="section-kicker">{kind === "area" ? "Local care, close by" : content.kicker}</p>
+          {/* A medical-review credit that names nobody is an authority claim
+              with no referent, and it was on 261 pages. The byline now names a
+              person when the page has one, states the practice when it does
+              not, and claims a clinical review only where content.reviewedBy
+              records who actually did it. */}
           {isBlog ? (
             <p className="post-byline">
               {content.authorName ? (
                 <>By <a href={content.authorUrl || "/about-us/"}>{content.authorName}{content.authorSuffix ? `, ${content.authorSuffix}` : ""}</a></>
               ) : (
-                <>Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a></>
+                <>From the audiologists at <a href="/about-us/">California Hearing Center</a></>
               )}
+              {content.reviewedBy ? <> · Clinically reviewed by <a href={`/about-us/${content.reviewedBy.slug}/`}>{content.reviewedBy.name}, {content.reviewedBy.credential}</a></> : null}
               {content.datePublished ? <> · Published {fmtDate(content.datePublished)}</> : null}
               {content.dateModified && content.dateModified !== content.datePublished ? <> · Updated {fmtDate(content.dateModified)}</> : null}
             </p>
@@ -1592,11 +1633,20 @@ function InnerPage({ page }: { page: SitePage }) {
             <h2>{pageTitle}</h2>
           )}
           {kind === "area" && (
-            <p className="post-byline">Reviewed by the <a href="/about-us/">California Hearing Center clinical team</a></p>
+            <p className="post-byline">From the audiologists at <a href="/about-us/">California Hearing Center</a>, San Mateo and San Carlos</p>
+          )}
+          {kind === "tinnitus" && (
+            <RedFlagPanel
+              intro="Most tinnitus is not an emergency, and most of it is manageable. These are the exceptions, and they are time-critical."
+              flags={TINNITUS_RED_FLAGS}
+            />
           )}
           <div className="intro-copy">
-            {/* Area pages already show intro[0] in the hero — start from [1] to avoid repeating it. */}
-            {(kind === "area" ? content.intro.slice(1) : content.intro).map((paragraph, index) => (
+            {/* The hero shows intro[0] on every page kind, so the body always
+                starts at intro[1]. Restricting this to area pages was why bios,
+                product pages and service pages printed their opening paragraph
+                twice. */}
+            {content.intro.slice(1).map((paragraph, index) => (
               <p className={index === 0 ? "lead-copy" : undefined} key={paragraph} dangerouslySetInnerHTML={{ __html: linkify(paragraph) }} />
             ))}
           </div>
@@ -1622,30 +1672,44 @@ function InnerPage({ page }: { page: SitePage }) {
           )}
           <div className="section-stack">
             {content.sections.map(([heading, text], index) => (
-              <section key={heading}>
-                <h2>{heading}</h2>
-                <p dangerouslySetInnerHTML={{ __html: linkify(text) }} />
-                {content.image2 && index === 2 && (
-                  <figure className="body-figure">
-                    {content.image2Href ? (
-                      <a
-                        href={content.image2Href}
-                        target="_blank"
-                        rel="noopener"
-                        aria-label={`${content.image2Label || "Figure"} — open the full-size version`}
-                        style={{ display: "block", cursor: "zoom-in" }}
-                      >
-                        <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
-                      </a>
-                    ) : (
-                      <img src={content.image2} alt={content.image2Label || ""} loading="lazy" decoding="async" />
-                    )}
-                    {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
-                  </figure>
-                )}
-              </section>
+              <Fragment key={heading}>
+                <section>
+                  <h2>{heading}</h2>
+                  <p dangerouslySetInnerHTML={{ __html: linkify(text) }} />
+                  {content.image2 && index === 2 && (
+                    <figure className="body-figure">
+                      {content.image2Href ? (
+                        <a
+                          href={content.image2Href}
+                          target="_blank"
+                          rel="noopener"
+                          aria-label={`${content.image2Label || "Figure"} — open the full-size version`}
+                          style={{ display: "block", cursor: "zoom-in" }}
+                        >
+                          <SiteImage src={content.image2} alt={content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
+                        </a>
+                      ) : (
+                        <SiteImage src={content.image2} alt={content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
+                      )}
+                      {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
+                    </figure>
+                  )}
+                </section>
+                {specTable && index === specTableAfter && <SpecTable {...specTable} />}
+              </Fragment>
             ))}
           </div>
+          {kind === "tinnitus" && (
+            <>
+              <VisitSteps
+                heading="What a tinnitus appointment actually involves"
+                steps={TINNITUS_VISIT_STEPS}
+                footnote="A tinnitus evaluation is a diagnostic appointment, so it is billed to your medical insurance in the same way a hearing test is. We check your benefits before the visit and tell you what your plan covers."
+              />
+              <ClinicianCard {...TINNITUS_LEAD_CLINICIAN} />
+            </>
+          )}
+          {AUDIOGRAM_PAGES.has(page.path) && <AudiogramFigure />}
           {(content.bulletLinks || content.bullets) && (
             <div className="feature-list">
               {content.bulletLinks
@@ -1678,7 +1742,7 @@ function InnerPage({ page }: { page: SitePage }) {
         </article>
         <aside className="sidebar-card">
           <div className="page-visual">
-            <img src={content.image} alt={content.imageAlt || content.imageLabel || ""} />
+            <SiteImage src={content.image} alt={content.imageAlt || content.imageLabel || ""} box={{ width: 260, height: 185 }} />
             <span>{content.imageLabel}</span>
           </div>
           {isCareer ? (
@@ -1774,7 +1838,7 @@ function BrandProductGrid({ page }: { page: SitePage }) {
       <div className="product-grid">
         {products.map(([title, text, href, image]) => (
           <a className="product-card brand-family-card" href={href} key={href}>
-            <img src={image} alt="" loading="lazy" decoding="async" width="150" height="110" />
+            <SiteImage src={image} alt="" box={{ width: 150, height: 110 }} />
             <h3>{title}</h3>
             <p>{text}</p>
             <span className="brand-family-more">Read more<span aria-hidden="true"> →</span></span>
@@ -1836,7 +1900,7 @@ function HomePage() {
           <p>The Inspired by Ida label is a benchmark of quality awarded to clinics dedicated to providing person-centered care. California Hearing Center is proud to be <strong>the first clinic in the world</strong> to receive this prestigious label, demonstrating our commitment to you and to high-quality hearing healthcare.</p>
           <p>We take the time to discover what you need, what fits the way you live, and what matters to you most.</p>
           <a className="ida-inline" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/ida.webp" width={680} height={680} alt="Inspired by Ida — person-centered care label" loading="lazy" decoding="async" />
+            <SiteImage src="/assets/ida.webp" alt="Inspired by Ida — person-centered care label" box={{ width: 54, height: 54 }} />
             <span>Learn how person-centered care leads to better hearing care</span>
           </a>
         </div>
@@ -1871,7 +1935,7 @@ function HomePage() {
         <div className="product-grid">
           {products.map(([title, text, image]) => (
             <article className="product-card" key={title}>
-              <img src={image} alt="" loading="lazy" decoding="async" />
+              <SiteImage src={image} alt="" box={{ width: 150, height: 110 }} />
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
@@ -2045,7 +2109,7 @@ function BlogIndex() {
               {groups[category].map(({ path, post }) => (
                 <a className="blog-card" href={path} key={path}>
                   <div className="blog-card-img">
-                    <img src={blogPhotos[path] ?? post.image} alt={post.imageLabel || ""} loading="lazy" decoding="async" />
+                    <SiteImage src={blogPhotos[path] ?? post.image} alt={post.imageLabel || ""} sizes="(max-width: 700px) 100vw, 380px" />
                   </div>
                   <div className="blog-card-body">
                     <p className="blog-card-kicker">{post.kicker}</p>
@@ -2065,7 +2129,13 @@ function BlogIndex() {
 
 export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
   return (
-    <main>
+    // The page shell is a plain div, not <main>. It used to be <main>, which
+    // put the header, the mega-menu product strip, the site-wide CTA and the
+    // whole footer inside the main landmark — about 650 words and 24 images of
+    // navigation chrome counted as page content on all 380 pages, for screen
+    // readers and for anything extracting the main content. <main> now wraps
+    // only the part of the page that differs between URLs.
+    <div className="site-shell">
       <div className="topbar">
         <a href="https://www.google.com/maps/search/?api=1&query=1008+Laurel+Street+San+Carlos+CA">SAN CARLOS: 1008 Laurel Street</a>
         <a href="https://www.google.com/maps/search/?api=1&query=88+N.+San+Mateo+Drive+San+Mateo+CA">SAN MATEO: 88 N. San Mateo Drive</a>
@@ -2073,7 +2143,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
       </div>
       <header className="site-header">
         <a className="logo" href="/">
-          <img src="/assets/logo.png" width={586} height={148} alt="California Hearing Center" />
+          <SiteImage src="/assets/logo.png" alt="California Hearing Center" box={{ width: 285, height: 72 }} eager />
         </a>
         <nav className="primary-nav" aria-label="Primary navigation">
           {nav.map((item) => (
@@ -2107,7 +2177,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                       <div className="mega-column" key={columnIndex}>
                         {column.map(([title, text, href, image]) => (
                           <a className="mega-product" href={href} key={href}>
-                            <img src={image} alt="" loading="lazy" decoding="async" />
+                            <SiteImage src={image} alt="" box={{ width: 60, height: 60 }} />
                             <span>
                               <strong>{title}</strong>
                               <small>{text}</small>
@@ -2163,7 +2233,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                       ))}
                       {item.mega && hearingAidColumns.flat().map(([title, text, href, image]) => (
                         <a className="mobile-sublink mobile-product-link" href={href} key={href}>
-                          <img src={image} alt="" loading="lazy" decoding="async" />
+                          <SiteImage src={image} alt="" box={{ width: 46, height: 46 }} />
                           <span>
                             <strong>{title}</strong>
                             <small>{text}</small>
@@ -2191,9 +2261,9 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
       {/* Skip-link target. tabIndex -1 so the browser moves keyboard focus here
           rather than just scrolling, which is the half of the pattern that is
           usually missed. Matches the sister practice's #main-content anchor. */}
-      <div id="main-content" tabIndex={-1}>
+      <main id="main-content" tabIndex={-1}>
         {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
-      </div>
+      </main>
       <section className="appointment">
         {page?.path === "/about-us/career/" ? (
           <>
@@ -2222,7 +2292,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//88+N.+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/google-reviews.webp" width={1024} height={639} alt="See our Patient Reviews" loading="lazy" decoding="async" />
+            <SiteImage src="/assets/google-reviews.webp" alt="See our Patient Reviews" box={{ width: 142, height: 89 }} />
           </a>
           <section className="footer-location">
             <h2 className="footer-heading">San Carlos</h2>
@@ -2231,7 +2301,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <img src="/assets/ida.webp" width={680} height={680} alt="" loading="lazy" decoding="async" />
+            <SiteImage src="/assets/ida.webp" alt="" box={{ width: 96, height: 96 }} />
             <span>Explore the Ida Institute</span>
           </a>
         </div>
@@ -2253,6 +2323,6 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
           <span>© 2026 California Hearing Center and Audiology Services, Inc. All Rights Reserved.</span>
         </div>
       </footer>
-    </main>
+    </div>
   );
 }

@@ -361,6 +361,10 @@ img {
     inset 0 1px 0 rgba(255, 255, 255, .30);
 }
 
+/* content-visibility, not just visibility. A `visibility: hidden` element still
+   generates layout boxes, so Chrome's lazy-load heuristic decided the 12
+   mega-menu product icons were in the viewport and fetched all twelve on every
+   desktop page load, at the top of the document, competing with the hero. */
 .dropdown-menu,
 .mega-menu {
   position: absolute;
@@ -368,8 +372,16 @@ img {
   z-index: 30;
   opacity: 0;
   visibility: hidden;
+  content-visibility: hidden;
   transform: translateY(10px);
   transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu,
+.nav-item:hover .mega-menu,
+.nav-item:focus-within .mega-menu {
+  content-visibility: visible;
 }
 
 .nav-item:hover .dropdown-menu,
@@ -3224,4 +3236,238 @@ p {
 
 .brand-family-extras {
   margin-top: 44px;
+}
+
+/* The subhero lede carries its own contextual links now that it is the only
+   place intro[0] renders. White text on a photographic band, so the link needs
+   an underline to be visible at all. */
+.subhero p a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.subhero p a:hover { text-decoration-thickness: 2px; }
+
+/* ==========================================================================
+   CARE BLOCKS — the panels and figures in app/site/CareBlocks.tsx.
+   Built for the tinnitus hub, which pulled 1,645 sessions a month and
+   converted at 0.7% against 6.2% for the rest of the article library. The
+   pages answered the question and offered no way to act on the answer.
+   ========================================================================== */
+
+.red-flag-panel {
+  margin: 34px 0;
+  padding: 26px 28px;
+  background: #fff6f2;
+  border: 1px solid #f4cdbc;
+  border-radius: 16px;
+}
+.red-flag-kicker {
+  margin: 0 0 6px;
+  color: var(--orange-text);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.red-flag-panel h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  line-height: 1.2;
+  color: var(--ink);
+}
+.red-flag-intro { margin: 0 0 14px; color: var(--muted); }
+.red-flag-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.red-flag-panel li {
+  display: grid;
+  gap: 2px;
+  padding-left: 26px;
+  position: relative;
+}
+/* A shape, not just a colour: the panel has to work in greyscale and for the
+   8% of men who cannot rely on the red. */
+.red-flag-panel li::before {
+  content: "!";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--orange-text);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 18px;
+  text-align: center;
+}
+.red-flag-panel li strong { color: var(--ink); }
+.red-flag-panel li span { color: var(--muted); }
+.red-flag-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin: 20px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid #f4cdbc;
+}
+.red-flag-action span {
+  flex: 1 1 260px;
+  font-size: .92rem;
+  color: var(--muted);
+}
+
+.visit-steps { margin: 40px 0; }
+.visit-steps h2 { margin: 0 0 18px; }
+.visit-steps ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+.visit-steps li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+.visit-step-n {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.visit-steps li strong { color: var(--ink); }
+.visit-step-time {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.visit-steps li p { margin: 4px 0 0; color: var(--muted); }
+.visit-steps-footnote {
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+  font-size: .93rem;
+}
+
+.clinician-card {
+  margin: 32px 0;
+  padding: 22px 24px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.clinician-card-body {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.clinician-card-body img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex: 0 0 auto;
+}
+.clinician-card-body strong { display: block; color: var(--ink); }
+.clinician-card-body p { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
+
+/* ── the comparison table the product pages never had ───────────────────── */
+.spec-table-wrap { margin: 34px 0; }
+.spec-table-scroll { overflow-x: auto; }
+.spec-table-scroll:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .95rem;
+  /* Figures in a column have to line up to be comparable at a glance. */
+  font-variant-numeric: tabular-nums;
+}
+.spec-table caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 12px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.spec-table th,
+.spec-table td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.spec-table thead th {
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--teal);
+  white-space: nowrap;
+}
+.spec-table tbody th {
+  color: var(--ink);
+  font-weight: 700;
+  min-width: 190px;
+}
+.spec-note {
+  display: block;
+  margin-top: 3px;
+  font-weight: 400;
+  font-size: .85rem;
+  color: var(--muted);
+}
+.spec-table tbody tr:last-child th,
+.spec-table tbody tr:last-child td { border-bottom: none; }
+.spec-table-wrap figcaption {
+  margin-top: 12px;
+  font-size: .9rem;
+  color: var(--muted);
+}
+
+/* ── audiogram ──────────────────────────────────────────────────────────── */
+.audiogram-figure { margin: 34px 0; }
+.audiogram-figure svg { width: 100%; height: auto; display: block; }
+.audiogram-figure figcaption {
+  margin-top: 12px;
+  font-size: .92rem;
+  color: var(--muted);
+}
+.ag-grid { stroke: var(--line); stroke-width: 1; }
+.ag-frame { fill: none; stroke: var(--ink); stroke-width: 1.5; }
+.ag-banana { fill: rgba(134, 208, 213, .38); stroke: var(--teal); stroke-width: 1.5; }
+.ag-axis { fill: var(--muted); font-size: 12px; font-family: inherit; }
+.ag-axis-title {
+  fill: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  font-family: inherit;
+}
+.ag-label { fill: var(--teal-dark); font-size: 12px; font-weight: 700; font-family: inherit; }
+
+@media (max-width: 640px) {
+  .red-flag-panel { padding: 20px 18px; }
+  .clinician-card-body { flex-direction: column; align-items: flex-start; }
 }

@@ -1,10 +1,11 @@
 "/tinnitus/one-ear/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Tinnitus in One Ear vs Both Ears: What It Means",
+  metaDescription: "Tinnitus in one ear points somewhere different from tinnitus in both. What each pattern suggests, and when a one-sided sound needs seeing quickly.",
   intro: [
     "Do you hear ringing, buzzing, or whooshing in just one ear, or in both? The side, or sides, where you hear tinnitus can offer important clues about what is going on and how urgently you should seek help.",
     "When patients come to our San Mateo or San Carlos offices, one of the first questions we ask is whether they hear tinnitus in one ear, both ears, or in the middle of the head. Bilateral (both-ear) tinnitus is often tied to more generalized issues like hearing loss or noise exposure. Unilateral (one-ear) tinnitus is more likely to be linked to a specific medical or structural condition and may warrant faster follow-up.",
-    "This page from our Bay Area audiologists explains the difference between unilateral and bilateral tinnitus, common causes of each, and when a one-sided sound is a warning sign. For the fundamentals, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+    "What follows is what causes each pattern, and the one-sided signs that should not wait. For the fundamentals, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [
     ["The terms audiologists use", "Unilateral tinnitus is heard in one ear only. Bilateral tinnitus is heard in both ears, either equally or with one side slightly more noticeable. Some people do not localize the sound to either ear; it feels centered in the head. All of these patterns are common, and the key is what else is happening at the same time, such as changes in hearing, balance, or general health."],

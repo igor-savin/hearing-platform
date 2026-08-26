@@ -4,12 +4,12 @@
     metaTitle: "Diabetes and Hearing Loss: What You Should Know",
     variant: "condition",
     datePublished: "2018-02-06",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Diabetes is linked to a higher rate of hearing loss, though the link is an association, not a certainty. A baseline hearing test is a low-risk first step.",
     intro: [
       "A man who has managed type 2 diabetes for a decade mentions, almost as an aside, that his family keeps asking him to turn the television down. He had chalked it up to age, and his diabetes care team had never brought up his ears. That pairing comes up often enough that it is worth spelling out plainly: your blood sugar and your [hearing](/hearing-testing/) may have more to do with each other than most people expect.",
-      "The relationship is real, but it is an association rather than a guaranteed cause. The National Institute on Deafness and Other Communication Disorders reports that hearing loss is about twice as common in adults with diabetes as in those of similar age without it. That is a meaningful pattern, not a verdict on any one person, and it is the kind of thing worth keeping an eye on.",
+      "The relationship is real, but it is an association rather than a guaranteed cause. Hearing loss is about twice as common in adults with diabetes as in those of similar age without it. That is a meaningful pattern, not a verdict on any one person, and it is the kind of thing worth keeping an eye on.",
       "If you are living with diabetes or prediabetes, adding a [hearing evaluation](/hearing-testing/) to your regular health routine is a small, low-risk step. Our team sees patients from across the Peninsula, and a baseline reading gives you a clear starting point to measure against later.",
     ],
     takeaways: [
@@ -31,7 +31,7 @@
     faqs: [
       ["Can diabetes cause hearing loss?", "The honest answer is that diabetes is strongly associated with hearing loss, but association is not the same as proof of cause. High blood sugar is believed to affect the small vessels and nerves in the inner ear over time, which is a plausible pathway. Because hearing can decline for several reasons at once, no test can single out diabetes as the lone culprit for one person."],
       ["My blood sugar is well controlled. Am I still at risk?", "Good control is genuinely protective for your whole body, and it is one of the best things you can do for your ears as well. It lowers risk rather than erasing it, so a periodic hearing check is still worthwhile. Think of it the way you already think of your regular eye exams, as sensible monitoring rather than a sign anything is wrong."],
-      ["I have prediabetes, not diabetes. Should I bother getting my hearing checked?", "It is a reasonable time to establish a baseline. Some research has found hearing differences even at the prediabetes stage, and having an early measurement makes any future change far easier to spot. A [baseline test](/hearing-testing/) is quick and gives you a clear reference point to return to."],
+      ["I have prediabetes, not diabetes. Should I bother getting my hearing checked?", "It is a reasonable time to establish a baseline. An early measurement makes any future change far easier to spot. A [baseline test](/hearing-testing/) is quick and gives you a clear reference point to return to."],
       ["If diabetes affected my hearing, will hearing aids help?", "In most cases, yes. Hearing loss connected to diabetes is typically sensorineural, the kind that responds well to modern hearing aids. The devices will not reverse the underlying loss, but a proper fitting can restore a great deal of clarity and ease. Our team will walk you through what a realistic result looks like for your specific hearing."],
       ["How often should someone with diabetes have a hearing test?", "For many adults, checking every year or two is a comfortable rhythm, and your audiologist may suggest a different pace based on your results and history. If you notice a change between visits, do not wait for the next scheduled test. Bring it up sooner so we can see whether anything needs attention."],
     ],

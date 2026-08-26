@@ -2,16 +2,16 @@
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "What Tinnitus Improvement Typically Looks Like",
   intro: [
-    "People often arrive fearing that tinnitus will only get worse, so it helps to know what realistic improvement actually looks like. Rather than dramatic before-and-after stories, meaningful progress usually shows up as small, cumulative changes: sleeping through the night, forgetting the sound for hours, or no longer bracing every time a quiet room reveals it.",
-    "Below we describe the common patterns of relief we see, drawn from how habituation and tinnitus management typically unfold. These are general expectations, not promises, because results depend on your hearing, the nature of your tinnitus, and how consistently a plan is followed.",
+    "This page has no testimonials on it. It is a description of what improvement actually looks like in our clinic, because most people arrive expecting either a cure or nothing, and it is usually neither.",
+    "What we see is small and cumulative. Sleeping through the night. Getting to four in the afternoon and realising you have not thought about it since breakfast. Not bracing when a room goes quiet. We cannot promise you any of it. It depends on your hearing, on what is driving the tinnitus, and on whether the plan actually gets followed.",
     "We would rather show you honest patterns than invent testimonials. If you would like to read what real patients say about our care, please visit our [reviews page](/reviews/)."
   ],
   sections: [
-    ["Relief usually arrives gradually", "Habituation is rarely a single moment. More often, people notice the sound less frequently and react to it less strongly over weeks and months. Many describe realizing, well into the process, that they had stopped checking whether the tinnitus was still there."],
-    ["Sleep is often the first thing to improve", "Because tinnitus tends to be loudest in quiet, bedtime is a common flashpoint. Sound enrichment and a calmer relationship with the sound frequently ease falling asleep first, and better sleep then makes daytime tinnitus feel more manageable."],
-    ["Hearing aids can change the experience", "When tinnitus accompanies hearing loss, restoring everyday sound often reduces the contrast that makes tinnitus stand out. People commonly report that the sound recedes into a fuller, more natural background once amplification is fit and verified."],
-    ["A calmer reaction, not necessarily a quieter sound", "A frequent and realistic outcome is that the tinnitus itself has not vanished, but it no longer commands attention or triggers anxiety. Reducing the emotional charge is often what returns quality of life, even when the signal is unchanged."],
-    ["Setbacks are normal", "Stress, fatigue, illness, or loud environments can make tinnitus temporarily more noticeable. Understanding that these fluctuations are expected, rather than signs of failure, helps people stay with a plan long enough for habituation to take hold."]
+    ["Relief arrives gradually, and you tend to notice it late", "Habituation is not a moment. What comes up in follow-up appointments is that the sound registers less often and matters less when it does. Almost nobody notices this while it is happening. They notice it when we ask at a review visit and they work out that they stopped checking whether the tinnitus was still there."],
+    ["Sleep usually moves first", "Tinnitus is loudest in a quiet room, so bedtime is where most people struggle and where we usually see the first change. Sound enrichment at night is a small thing to set up and it earns its keep. When sleep improves, daytime tinnitus becomes easier to carry. It tends to happen in that order rather than the reverse."],
+    ["When there is hearing loss too, hearing aids do a lot of the work", "A great many of the tinnitus patients we see also have some hearing loss. Putting back the everyday sound their ears have stopped delivering reduces the contrast that makes the tinnitus stand out. We verify those fittings with [real-ear measurement](/hearing-aid-fitting/), because an under-amplified hearing aid will not do this. If your hearing is normal, hearing aids are not the answer for you and we will say so at the first visit."],
+    ["The sound often stays. The reaction changes.", "This is the outcome we see most, and the one people are least prepared for. The tinnitus is still there if you go looking for it. It has stopped being the first thing you notice in the morning and the thing you go to bed dreading. That is a real result, and it is the one people undersell to themselves, because they came in wanting silence."],
+    ["Setbacks happen, and they are not failure", "Stress, a bad night, a virus, a loud evening. Any of those can push tinnitus back up for a few days. We say this at the first appointment precisely so the first bad week does not end the plan. It is a fluctuation, not a relapse."]
   ],
   bulletLinks: [
     ["Read real patient reviews", "/reviews/"],
@@ -22,14 +22,15 @@
     ["Book a tinnitus visit", "/contact/"]
   ],
   takeaways: [
-    "Improvement usually looks like gradual, cumulative change rather than a sudden cure.",
-    "Better sleep and a calmer reaction to the sound are common early wins.",
-    "Outcomes vary by person, and honest reviews are available on our reviews page."
+    "Improvement is gradual and cumulative. Nobody in this clinic wakes up cured.",
+    "Sleep normally moves first, and better sleep makes the daytime easier to carry.",
+    "The most common good outcome is that the sound is still there and no longer runs your day.",
+    "We do not publish testimonials. Unedited patient reviews are on our reviews page."
   ],
   faqs: [
     ["Can you share specific patient success stories?", "We choose not to publish invented or embellished testimonials. Instead we describe the realistic patterns of relief people tend to experience, and we invite you to read genuine, unedited feedback on our [reviews page](/reviews/)."],
-    ["How will I know the plan is working?", "Progress often appears as sleeping better, noticing the sound less often, and reacting to it more calmly, rather than the tinnitus disappearing outright. These small shifts usually add up over weeks and months."],
-    ["Is improvement guaranteed?", "No responsible provider can guarantee results, because outcomes depend on your hearing, tinnitus profile, and consistency with the plan. Many motivated patients do achieve meaningful, lasting relief."]
+    ["How will I know the plan is working?", "You sleep better first. Then the sound comes up less often, and it stops landing as hard when it does. It rarely disappears outright. We ask about all three at your review appointments, because people are poor judges of their own progress here and usually underestimate it."],
+    ["Is improvement guaranteed?", "No. Outcomes depend on your hearing, on your tinnitus profile, and on whether the plan gets followed. Plenty of the people we work with reach a point where the tinnitus no longer shapes their day. We cannot tell you in advance whether you will be one of them, and anyone who does tell you that is guessing."]
   ],
   image: "/assets/core/tinnitus__success-stories.svg",
   imageLabel: "Realistic patterns of tinnitus relief"

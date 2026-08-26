@@ -4,12 +4,12 @@
     metaTitle: "Heart Health & Your Hearing | California Hearing Center",
     variant: "condition",
     datePublished: "2018-05-21",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Your heart and your hearing share the same blood vessels, so heart-healthy habits help protect your ears too. Here are six simple ones worth building on.",
     intro: [
       "If you already watch your blood pressure or lace up for a daily walk, you are doing more for your ears than you might realize. The inner ear depends on a steady supply of blood carried through some of the tiniest vessels in the body. When that circulation falters, the delicate structures that turn sound into signals your brain understands can be affected too.",
-      "Heart health and hearing health tend to move together. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov) notes that conditions affecting the cardiovascular system can also affect hearing. This is an association rather than a guarantee, and no habit undoes hearing loss that has already set in. Even so, the overlap is consistent enough that caring for your heart is a reasonable way to look after your hearing.",
+      "Heart health and hearing health tend to move together. Conditions that affect the cardiovascular system can affect hearing too. This is an association rather than a guarantee, and no habit undoes hearing loss that has already set in. Even so, the overlap is consistent enough that caring for your heart is a reasonable way to look after your hearing.",
       "None of this replaces a proper [hearing evaluation](/hearing-testing/), which gives you a clear baseline to measure against as the years pass. Our team in San Mateo and San Carlos is glad to help you start there, and to fit you with well-tuned [hearing aids](/products/hearing-aids/) if a test shows you need them.",
     ],
     takeaways: [

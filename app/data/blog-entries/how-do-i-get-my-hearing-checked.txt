@@ -3,7 +3,7 @@
     headline: "How Do I Get My Hearing Checked?",
     variant: "condition",
     datePublished: "2025-09-22",
-    dateModified: "2026-07-23",
+    dateModified: "2026-08-25",
     metaDescription:
       "Wondering how to get your hearing checked? Here's what a hearing evaluation involves, when to book one, what your results mean, and how to take the next step.",
     intro: [
@@ -18,7 +18,7 @@
       "Getting a baseline checked early makes any future changes far easier to track.",
     ],
     sections: [
-      ["When it is worth getting checked", "You do not need a dramatic moment to justify a test. Trouble following conversation in a noisy restaurant, a phone that seems quieter than it used to, or relatives commenting on the television volume are all reasonable prompts. The [American Speech-Language-Hearing Association](https://www.asha.org) suggests adults have their hearing screened periodically, and more regularly once you pass your mid-fifties. One exception deserves urgency: if hearing drops suddenly in one ear, or arrives with pain, drainage, or dizziness, be seen promptly rather than waiting for a routine visit."],
+      ["When it is worth getting checked", "You do not need a dramatic moment to justify a test. Trouble following conversation in a noisy restaurant, a phone that seems quieter than it used to, or relatives commenting on the television volume are all reasonable prompts. [ASHA's page on hearing screening and testing](https://www.asha.org/public/hearing/hearing-testing/) suggests adults have their hearing screened periodically, and more regularly once you pass your mid-fifties. One exception deserves urgency: if hearing drops suddenly in one ear, or arrives with pain, drainage, or dizziness, be seen promptly rather than waiting for a routine visit."],
       ["Booking the appointment", "In most cases you can see an audiologist directly, without a physician's referral, though some insurance plans still ask for one, so it is worth a quick check first. Booking is usually a short phone call or online request: you pick a time, share a little history, and that is about it. If you are helping an older parent arrange the visit, our [team](/about-us/) is used to making the process feel unhurried, and you can [reach the office](/contact/) to find a time that works."],
       ["Inside the appointment", "Plan on roughly an hour. The audiologist will ask about your history and take a quick look in your ears to rule out something as simple as [earwax](/services/earwax-removal/). Then you sit in a quiet booth, wear headphones, and respond to tones and words at different pitches and volumes. None of it is uncomfortable, and there is no way to pass or fail. You are only mapping what you hear so it can be compared against normal ranges."],
       ["Reading your results", "Your results arrive as an audiogram, a simple graph that plots the softest sounds you can detect across low to high pitches. The audiologist reviews it with you the same day, in plain language, pointing out where your hearing sits comfortably and where it dips. You leave understanding not just whether there is a loss, but its shape and degree, which is what any sensible plan is built on."],
