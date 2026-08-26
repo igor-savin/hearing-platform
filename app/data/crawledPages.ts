@@ -724,7 +724,7 @@ export const crawledPages: SitePage[] = [
     "path": "/fortell-hearing-aids-what-we-know/",
     "title": "Fortell Hearing Aids: What We Actually Know So Far | California Hearing Center",
     "h1": "Fortell Hearing Aids: What We Actually Know So Far",
-    "desc": "Fortell raised $163M and sells $6,800 AI hearing aids only through its own clinics. What is confirmed, what its studies actually show, and what to check before you join the San Francisco or Palo Alto waitlist.",
+    "desc": "Fortell is not open in San Francisco or Palo Alto yet. An independent Bay Area practice on what its $6,800 AI hearing aids are, what the studies actually show, and what to ask.",
     "h2": [],
     "paragraphs": []
   },
