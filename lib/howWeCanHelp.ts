@@ -10,6 +10,9 @@ export type HelpService = {
   whoWeHelp: string[];
   signs: string[];
   appointmentSteps: string[];
+  /** Section heading for whyItMatters. Twelve services making twelve
+   *  different arguments should not share one hardcoded heading. */
+  whyItMattersTitle?: string;
   whyItMatters: string;
   relatedServices: Array<{ label: string; href: string }>;
   faqs: Array<{ question: string; answer: string }>;
@@ -99,33 +102,29 @@ export const helpServices: HelpService[] = [
     title: "Your Hearing",
     menuTitle: "Your Hearing",
     slug: "your-hearing",
-    shortDescription: "A practical starting point for understanding hearing changes, communication needs, and next steps.",
+    shortDescription: "Not sure which appointment you need? Start here, then call.",
     metaDescription:
-      "Learn when to schedule hearing care, what hearing changes can feel like, and how Audiology Associates of Westchester helps patients choose next steps.",
+      "Not sure which hearing appointment to book? A short guide to the three reasons people call Audiology Associates of Westchester, and how to pick the right visit.",
     intro: [
-      "Hearing care starts with understanding what has changed in daily life. Some patients notice that conversations sound less clear, others feel more tired after listening, and some first come in because family members are concerned.",
-      "Audiology Associates of Westchester helps patients connect those everyday experiences to a clear clinical next step, whether that is a hearing evaluation, hearing aid discussion, tinnitus consultation, device service, or another recommendation."
+      "Most people who call arrive with one of three things. Conversation has got harder. A hearing aid is not doing its job. Or a family member kept asking until they picked up the phone. Any of those is a reason to book, and the front desk can tell you which visit fits before you drive to Harrison or Somers."
     ],
     whoWeHelp: [
-      "Adults who ask others to repeat themselves more often",
-      "Patients who feel conversations are clearer one-on-one than in background noise",
-      "Families who want a loved one to understand hearing care options",
-      "Hearing aid users who are not getting the clarity or comfort they expected"
+      "Adults who are asking people to repeat themselves",
+      "Hearing aid wearers whose devices are not performing the way they used to",
+      "Families who want a relative's hearing looked at and do not know where to start"
     ],
     signs: [
-      "Speech sounds muffled or soft even when volume seems loud enough",
-      "Restaurants, meetings, cars, and family gatherings feel harder than they used to",
-      "Tinnitus, blocked ears, dizziness, or listening fatigue is affecting daily routines",
-      "Existing hearing aids need cleaning, adjustment, repair, or a second opinion"
+      "You follow one person fine and a table of four defeats you",
+      "The TV is louder than anyone else in the house wants it",
+      "Ringing, fullness, or dizziness has started and has not settled"
     ],
     appointmentSteps: [
-      "The team listens to your main hearing and communication concerns.",
-      "Your audiologist recommends the appropriate evaluation or service pathway.",
-      "Results and next steps are explained in plain language.",
-      "You leave with guidance that fits your hearing needs, lifestyle, and appointment findings."
+      "You describe what has changed and where it bothers you most.",
+      "We book the visit that answers it: a hearing evaluation, a device appointment, or a tinnitus consultation.",
+      "You leave knowing what was found and what happens next."
     ],
     whyItMatters:
-      "Hearing care is not only about volume. It is about communication, confidence, safety, family connection, and choosing technology or treatment options that match the way you live.",
+      "This page is a signpost, not a service. Nobody is diagnosed from a website. One phone call gets you to the right appointment faster than an hour of reading.",
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
@@ -133,19 +132,14 @@ export const helpServices: HelpService[] = [
     ],
     faqs: [
       {
-        question: "How do I know which hearing service to schedule first?",
+        question: "How do I know which appointment to book?",
         answer:
-          "If you are unsure, call the practice and describe what you are noticing. The team can help determine whether a hearing evaluation, device service appointment, tinnitus consultation, or another visit type is appropriate."
+          "Call and describe what you have noticed. The team books hearing evaluations, device service visits, and tinnitus consultations, and they will tell you which one your description fits."
       },
       {
-        question: "Can a family member come to the appointment?",
+        question: "Can I bring my daughter or my husband?",
         answer:
-          "Yes. Many patients find it helpful to bring someone who understands their everyday listening needs and communication goals."
-      },
-      {
-        question: "Will the website information diagnose my hearing problem?",
-        answer:
-          "No. Website content is educational. Personalized recommendations require an appointment with an audiologist or appropriate clinical professional."
+          "Yes, and it helps. The person who sits across from you at dinner usually describes the problem more accurately than you can."
       }
     ]
   },
@@ -153,53 +147,61 @@ export const helpServices: HelpService[] = [
     title: "Comprehensive Hearing Assessments",
     menuTitle: "Comprehensive Hearing Assessments",
     slug: "comprehensive-hearing-assessments",
-    shortDescription: "Full diagnostic hearing evaluations to understand hearing health and guide personalized care.",
+    shortDescription: "A full diagnostic evaluation: thresholds at every pitch, word understanding, and an ear examination.",
     metaDescription:
-      "Schedule a comprehensive hearing assessment in Westchester County with Audiology Associates of Westchester.",
+      "A comprehensive hearing assessment in Westchester County measures thresholds at each pitch and how clearly you understand words. Harrison and Somers, NY.",
     intro: [
-      "A comprehensive hearing assessment helps identify how well you hear different pitches, how clearly you understand speech, and which listening situations may need support.",
-      "The evaluation gives your audiologist the foundation for recommending hearing aids, medical follow-up, tinnitus support, hearing protection, or monitoring when appropriate."
+      "A comprehensive hearing assessment measures two different things: the softest sounds you can hear at each pitch, and how well you make out words. They are not the same measurement, and the gap between them is why someone can insist the room is loud enough and still miss half of what was said.",
+      "The appointment also includes looking in both ears and, when the picture calls for it, a middle-ear test (tympanometry) that shows whether the eardrum and the space behind it are moving normally.",
+      "What comes out is an audiogram and a recommendation. That may be hearing aids. It may be a medical referral, wax management first, or nothing yet except a baseline to measure against in a few years."
     ],
     whoWeHelp: [
-      "Adults noticing gradual hearing changes",
-      "Patients who struggle in background noise",
-      "People with tinnitus, fullness, dizziness, or communication fatigue",
-      "Current hearing aid users who need updated testing"
+      "Adults who have noticed hearing changes over the last few years",
+      "People who hear fine one to one and lose the thread in noise",
+      "Patients with tinnitus, fullness, or dizziness alongside hearing changes",
+      "Hearing aid wearers whose test results are years older than their devices"
     ],
     signs: [
-      "You can hear people talking but miss words",
-      "TV or phone volume has increased",
-      "You avoid noisy restaurants or group conversations",
-      "Family members have raised concerns about your hearing"
+      "You hear that someone is speaking but cannot make out the words",
+      "The TV volume has crept up and somebody else has mentioned it",
+      "You skip restaurants and large gatherings because following them is work",
+      "One ear seems worse than the other",
+      "Your family has raised your hearing more than once"
     ],
     appointmentSteps: [
-      "Your hearing history, symptoms, communication goals, and listening environments are reviewed.",
-      "The audiologist performs appropriate diagnostic testing for your concerns.",
-      "Your results are explained clearly, including what they mean for daily communication.",
-      "The team discusses next steps, which may include hearing aids, monitoring, tinnitus support, or referral if needed."
+      "We take the history: what changed, when, noise exposure, medications, ear surgery, and where listening breaks down.",
+      "We look in both ears before any testing, because wax in the canal changes the result.",
+      "You listen for tones through headphones across the pitch range, then repeat back words at conversational levels.",
+      "Middle-ear testing is added when the pattern suggests a blockage rather than an inner-ear loss.",
+      "We go through the audiogram with you, say what it means for restaurants and phones and the people you live with, and agree the next step."
     ],
     whyItMatters:
-      "A hearing test should do more than produce a chart. It should help connect clinical results to real-life communication needs and a plan that makes sense for the patient.",
+      "Half the value of the audiogram is what it rules out: wax, a middle-ear problem, a one-sided loss that belongs with an ENT. Bring someone who talks to you every day. Their account of what you miss is information the test cannot produce.",
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" }
+      { label: "Types of Hearing Loss", href: "/hearing-loss" }
     ],
     faqs: [
       {
-        question: "Is a comprehensive hearing assessment the same as a hearing screening?",
+        question: "Is this the same as a hearing screening?",
         answer:
-          "No. A screening is usually a quick pass/fail check. A comprehensive assessment is more detailed and helps guide clinical recommendations."
+          "No. A screening gives a pass or a fail. An assessment measures thresholds at each pitch, measures word understanding, and ends in a plan."
       },
       {
-        question: "How often should adults have their hearing checked?",
+        question: "How often should I have one?",
         answer:
-          "Patients should schedule testing when they notice hearing changes, tinnitus, communication difficulty, or hearing aid concerns. Your audiologist can suggest an appropriate follow-up interval after reviewing your results."
+          "Book one when you notice a change. After that, your audiologist will suggest an interval based on your results, your noise exposure, and whether you wear hearing aids."
       },
       {
-        question: "Will I be pressured to buy hearing aids?",
+        question: "Will I be pushed to buy hearing aids?",
         answer:
-          "The purpose of the evaluation is to understand your hearing and explain appropriate options. Hearing aid recommendations depend on your test results, goals, and clinical needs."
+          "No. Some assessments end in monitoring, some in a wax appointment, some in a referral. Hearing aids are recommended when the results and your daily listening call for them."
+      },
+      {
+        question: "Should I bring my current hearing aids?",
+        answer:
+          "Yes, with the charger and the phone app if you use one. Whether your existing devices still match your hearing is part of the answer."
       }
     ]
   },
@@ -207,53 +209,65 @@ export const helpServices: HelpService[] = [
     title: "Advanced Hearing Aid Technology",
     menuTitle: "Advanced Hearing Aid Technology",
     slug: "advanced-hearing-aid-technology",
-    shortDescription: "Current hearing aid options focused on clarity, comfort, connectivity, and real-world listening.",
+    shortDescription: "Choosing between brands, styles, and technology levels, and having the result verified in your ear.",
     metaDescription:
-      "Compare advanced hearing aid technology and expert fitting at Audiology Associates of Westchester's Harrison and Somers, NY offices.",
+      "Compare hearing aid brands, styles, and technology levels with an independent audiologist, and have the fitting verified with real-ear measurement. Harrison and Somers, NY.",
     intro: [
-      "Modern hearing aids can support clearer speech, easier listening in noise, rechargeable power, phone connectivity, discreet styles, and personalized sound settings.",
-      "The best technology choice depends on the hearing test, the environments that matter most, physical handling needs, cosmetic preferences, and follow-up care."
+      "The practice fits Oticon, Phonak, ReSound, Signia, Starkey, Widex, Unitron, Rexton, and Lyric. The range is wide on purpose: what we recommend is not limited to what we happen to stock.",
+      "Technology level changes how a hearing aid behaves in noise, how it handles calls and streaming, whether it recharges, and how small it can be. It does not change how well the device is fitted, and the fitting is where most of the benefit is won or lost."
     ],
     whoWeHelp: [
-      "Patients comparing hearing aid brands and technology levels",
-      "Experienced hearing aid users ready for updated features",
-      "People who want better speech clarity in restaurants, meetings, or family events",
-      "Patients interested in rechargeable, Bluetooth, invisible, or app-connected options"
+      "Patients comparing brands and technology tiers before committing",
+      "Long-time wearers ready to replace aging devices",
+      "People who want phone calls and TV audio going straight to their hearing aids",
+      "Patients asking about custom, invisible, or extended-wear styles"
     ],
     signs: [
-      "Older hearing aids no longer perform well in common listening situations",
-      "Phone calls, media streaming, or work communication would be easier with connectivity",
-      "You want a more discreet or comfortable hearing aid style",
-      "You need help deciding which brand or product family fits your needs"
+      "Your hearing aids cope with the kitchen and fail in the restaurant",
+      "Phone calls are the part of the day you dread",
+      "You take the devices out for meetings because they are not helping there",
+      "You were told a style was impossible for your hearing and want a second view"
     ],
     appointmentSteps: [
-      "Your audiologist reviews your hearing results and listening priorities.",
-      "Different hearing aid styles, brands, and features are explained in patient-friendly terms.",
-      "The team discusses fit, handling, connectivity, battery options, and follow-up expectations.",
-      "A recommendation is made based on clinical findings and real-world communication goals."
+      "We start from your audiogram and the situations you named, not from a brochure.",
+      "We narrow the field to the styles your hearing level and ear anatomy actually allow.",
+      "We talk through handling: rechargeable or batteries, dexterity, who will clean them, and which phone you carry.",
+      "At the fitting we run real-ear measurement, so what the device delivers at your eardrum is measured against the prescription rather than assumed.",
+      "You come back after living with them, and the settings are adjusted from what happened in real rooms."
     ],
     whyItMatters:
-      "Technology alone does not create better hearing. Professional selection, verification, counseling, and follow-up programming are what help hearing aids work in daily life.",
+      "Two people with the same audiogram often need different devices, and the same device set two ways performs differently. A verified mid-tier hearing aid beats an unverified premium one. If your listening is quiet rooms and one-to-one conversation, we will tell you that the top tier is not worth your money.",
     relatedServices: [
       { label: "Hearing Aid Brands", href: "/hearing-aids-brands" },
       { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
-      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Lyric Invisible Hearing", href: "/lyric-invisible-hearing" }
     ],
     faqs: [
       {
-        question: "Which hearing aid technology is best?",
+        question: "Which brand is best?",
         answer:
-          "There is no single best device for every patient. The right option depends on your hearing test, communication goals, comfort, handling needs, and follow-up care."
+          "None of them, universally. The platforms differ in how they process noise, what they connect to, and which custom styles they offer. The right one depends on your audiogram, your ears, your hands, and your phone."
       },
       {
-        question: "Can I compare hearing aid brands at the practice?",
+        question: "Do I need the top technology level?",
         answer:
-          "Yes. The team can explain differences among hearing aid brands and product families during a consultation."
+          "Not always. The higher tiers mostly buy performance in noisy and complicated places. If the hard listening in your week happens twice a year, that money is better kept."
       },
       {
-        question: "Do advanced hearing aids still need professional fitting?",
+        question: "What is real-ear measurement?",
         answer:
-          "Yes. Even sophisticated devices need proper selection, fitting, verification, orientation, and follow-up adjustments."
+          "A thin probe microphone sits in your ear canal while the hearing aid plays, so the output at your eardrum can be measured and matched to the prescription for your hearing loss. Manufacturer first-fit settings routinely fall short of those targets, which is why the measurement is worth the extra minutes."
+      },
+      {
+        question: "Can I hear one before I decide?",
+        answer:
+          "Ask the office what demonstration and trial arrangements currently apply. Those terms change, so we will not quote them on a web page."
+      },
+      {
+        question: "Are invisible hearing aids an option for me?",
+        answer:
+          "Sometimes. Lyric sits deep in the ear canal, is placed by a clinician, and stays in for months at a time between visits. Candidacy depends on the shape of your canal, your hearing level, and the health of the skin in the ear."
       }
     ]
   },
@@ -261,53 +275,58 @@ export const helpServices: HelpService[] = [
     title: "Hearing Aid Tune-Ups",
     menuTitle: "Hearing Aid Tune-Ups",
     slug: "hearing-aid-tune-ups",
-    shortDescription: "Cleaning, troubleshooting, and adjustments to help hearing devices perform at their best.",
+    shortDescription: "Cleaning, parts, and troubleshooting for hearing aids that have gone weak, whistly, or intermittent.",
     metaDescription:
-      "Get hearing aid cleaning, tune-ups, troubleshooting, and adjustment support in Westchester County.",
+      "Hearing aid cleaning, wax filters, receivers, domes, and troubleshooting in Westchester County. Bring the devices, the charger, and the app.",
     intro: [
-      "Hearing aids are small medical devices that work in a demanding environment. Moisture, earwax, debris, aging parts, software settings, and changes in hearing can all affect performance.",
-      "A tune-up visit helps identify whether the device needs cleaning, replacement parts, reprogramming, repair, or updated hearing testing."
+      "Hearing aids sit all day in a warm, humid, waxy place. Sound goes weak, one side cuts out, a receiver clogs. Most of it is fixable at the bench in the office.",
+      "A tune-up separates the three usual causes: the device needs cleaning or a part, the programming no longer matches your hearing, or your hearing itself has changed and needs retesting."
     ],
     whoWeHelp: [
-      "Current hearing aid users with weak, distorted, intermittent, or uncomfortable sound",
-      "Patients whose hearing aids are whistling or not holding a charge",
-      "People who have not had their devices professionally cleaned recently",
-      "Patients who need help with domes, filters, receivers, molds, batteries, or apps"
+      "Wearers whose sound has gone weak, distorted, or intermittent",
+      "Anyone whose hearing aids whistle or will not hold a charge",
+      "Patients who need domes, wax filters, receivers, or earmolds replaced"
     ],
     signs: [
-      "Sound is softer than usual or cutting in and out",
-      "The device whistles, feels uncomfortable, or seems blocked",
-      "The battery drains quickly or rechargeable devices are not lasting",
-      "Phone pairing or app settings are no longer working correctly"
+      "One side is quieter than the other",
+      "The device cuts in and out through the day",
+      "It whistles when you put on a hat or hug someone",
+      "A full charge no longer lasts the evening",
+      "The phone pairing drops and will not come back"
     ],
     appointmentSteps: [
-      "The team reviews what has changed with the device or your hearing.",
-      "Hearing aids are inspected, cleaned, and checked for common performance issues.",
-      "Replaceable parts may be reviewed when appropriate.",
-      "Your audiologist can determine whether programming, repair, or updated testing is needed."
+      "We ask when it started, which ear, and what you have already tried.",
+      "The device is examined and cleaned: wax filter, receiver, dome, microphone ports, battery contacts.",
+      "Worn parts are replaced from what we hold for that manufacturer.",
+      "If cleaning does not bring it back, we check the programming and tell you whether this is a manufacturer repair, a retest, or a device at the end of its life."
     ],
     whyItMatters:
-      "Routine device care protects the investment patients have made in better hearing and can prevent small issues from becoming bigger frustrations.",
+      "A lot of the hearing aids people have given up on are not broken. They are blocked. Bring them in before the wax reaches the receiver, and say which ear and which situation, because that is what shortens the visit.",
     relatedServices: [
       { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
-      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Batteries and Accessories", href: "/batteries-and-accessories" }
+      { label: "Batteries and Accessories", href: "/batteries-and-accessories" },
+      { label: "Adoption Plan", href: "/how-we-can-help/adoption-plan" }
     ],
     faqs: [
       {
-        question: "How often should hearing aids be cleaned professionally?",
+        question: "How often should hearing aids be cleaned here?",
         answer:
-          "The right interval depends on the device, earwax, moisture, and daily use. Many patients benefit from periodic professional cleaning and performance checks."
+          "It depends on how much wax you produce, how dusty or humid your days are, and the device itself. Ask at your next visit what interval makes sense for yours."
       },
       {
-        question: "Can the practice service hearing aids bought somewhere else?",
+        question: "Can you service hearing aids I bought somewhere else?",
         answer:
-          "The practice may be able to help depending on the device, manufacturer, condition, and compatibility. Call to confirm before scheduling."
+          "Often, but it depends on the brand, the model, the age, and whether we have the fitting software. Call with the make and model before you drive over."
       },
       {
         question: "Is a tune-up the same as a repair?",
         answer:
-          "Not always. A tune-up may involve cleaning, troubleshooting, and adjustment. A repair may be needed if a component has failed or manufacturer service is required."
+          "No. A tune-up is cleaning, parts, and adjustment done here. A repair means the device goes back to the manufacturer because a component has failed."
+      },
+      {
+        question: "What should I bring?",
+        answer:
+          "Everything: both devices even if only one is misbehaving, the charger and cable, spare domes and filters, and your phone with the app on it."
       }
     ]
   },
@@ -315,33 +334,34 @@ export const helpServices: HelpService[] = [
     title: "Tinnitus Management",
     menuTitle: "Tinnitus Management",
     slug: "tinnitus-management",
-    shortDescription: "Personalized strategies for patients experiencing ringing, buzzing, humming, or sound sensitivity.",
+    shortDescription: "Evaluation and management for ringing, buzzing, humming, and sound sensitivity.",
     metaDescription:
-      "Tinnitus management and therapy options in Westchester County, with evaluation and personalized care at our Harrison and Somers, NY offices.",
+      "Tinnitus evaluation and management in Westchester County: hearing testing, counseling, sound strategies, and hearing aids where hearing loss is part of it.",
     intro: [
-      "Tinnitus can sound like ringing, buzzing, humming, hissing, roaring, or another internal sound. For some people it is mild; for others it affects concentration, sleep, stress, and quality of life.",
-      "Audiology Associates of Westchester helps patients understand tinnitus, hearing status, sound comfort, and management options that may be appropriate after evaluation."
+      "Tinnitus is sound you hear that has no source outside your head: ringing, buzzing, hissing, a hum, sometimes a roar. For some people it stays in the background. For others it owns the evening and the first hour of the night.",
+      "The first job is finding out what sits underneath it. Tinnitus commonly arrives alongside hearing loss, so the work starts with a hearing test and a look in the ears.",
+      "Dr. Ratner and Dr. Savin both hold the CH-TM certificate in tinnitus management, and Dr. Dold does tinnitus testing and treatment. Care here means counseling, sound strategies, hearing aids where there is hearing loss to treat, and the Lenire pathway for patients who meet its candidacy criteria."
     ],
     whoWeHelp: [
-      "Patients with new or long-standing tinnitus",
-      "People whose tinnitus is more noticeable in quiet settings",
-      "Hearing aid users who need tinnitus-related programming support",
-      "Patients seeking education, counseling, sound strategies, or technology options"
+      "People whose tinnitus started recently and want to know what it is",
+      "Long-term sufferers who were told nothing could be done",
+      "Hearing aid wearers who want the tinnitus features in their devices set up properly",
+      "People whose sound sensitivity makes ordinary rooms hard to sit in"
     ],
     signs: [
-      "Ringing, buzzing, hissing, or humming is distracting or stressful",
-      "Tinnitus affects sleep, concentration, or relaxation",
-      "Sound sensitivity makes normal environments uncomfortable",
-      "Hearing changes and tinnitus are occurring together"
+      "The ringing follows you into bed and delays sleep",
+      "You cannot hold your concentration through it at work",
+      "Quiet rooms have become the hardest rooms",
+      "The tinnitus started around the same time your hearing changed"
     ],
     appointmentSteps: [
-      "Your audiologist reviews your tinnitus history, hearing concerns, and daily impact.",
-      "Appropriate hearing and tinnitus-related testing is discussed or completed.",
-      "The team explains management options, which may include counseling, sound strategies, hearing aids, or other treatment pathways.",
-      "Recommendations are personalized to your results and symptoms."
+      "We take the history: when it started, one ear or both, what makes it worse, what it costs you in sleep and concentration.",
+      "We test your hearing, because tinnitus and hearing loss usually travel together.",
+      "We explain the findings and what a realistic target looks like for your case.",
+      "We agree a plan: counseling and sound strategies, hearing aids where there is loss to treat, tinnitus programming in your devices, or a Lenire candidacy discussion."
     ],
     whyItMatters:
-      "Tinnitus care should be grounded in education and realistic strategies. The goal is to reduce the burden of tinnitus and help patients understand their options.",
+      "Some tinnitus belongs with a physician first: tinnitus that pulses with your heartbeat, or that is new in one ear alongside a drop in hearing. For everyone else, understand what management means here. Nobody will promise to switch the sound off.",
     relatedServices: [
       { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
       { label: "Lenire for Tinnitus", href: "/how-we-can-help/lenire-for-tinnitus" },
@@ -349,19 +369,24 @@ export const helpServices: HelpService[] = [
     ],
     faqs: [
       {
-        question: "Can tinnitus be evaluated by an audiologist?",
+        question: "Will it ever go away?",
         answer:
-          "Yes. Audiologists often evaluate hearing and tinnitus-related concerns and can explain management options based on the appointment findings."
+          "For some people it fades. For many it stays and takes up less of the day than it used to, which is what management aims at. Anyone promising a cure is selling something."
       },
       {
-        question: "Does tinnitus always mean hearing loss?",
+        question: "Does tinnitus mean I am going deaf?",
         answer:
-          "Not always, but tinnitus and hearing changes commonly occur together. A hearing evaluation can clarify what is happening."
+          "Not on its own. Tinnitus and hearing changes commonly occur together, which is why a hearing test comes first."
       },
       {
-        question: "Will tinnitus treatment make the sound disappear?",
+        question: "Do hearing aids help tinnitus?",
         answer:
-          "Outcomes vary. Tinnitus care focuses on education, management strategies, sound support, and personalized recommendations rather than guaranteed results."
+          "When hearing loss is present, treating it is the first step and often changes how intrusive the tinnitus is. Most current platforms also carry tinnitus sound programs that we can set up during the fitting."
+      },
+      {
+        question: "What should I bring to the appointment?",
+        answer:
+          "Any previous hearing tests, ENT or imaging reports, your medication list, and a note of when the tinnitus is at its worst."
       }
     ]
   },
@@ -369,53 +394,74 @@ export const helpServices: HelpService[] = [
     title: "Cochlear Implant Support",
     menuTitle: "Cochlear Implants",
     slug: "cochlear-implants",
-    shortDescription: "Support for patients who may need cochlear implant candidacy guidance, programming, or follow-up care.",
+    shortDescription: "Candidacy testing before the referral, activation and mapping after the surgery.",
     metaDescription:
-      "Cochlear implant support in Westchester County: candidacy guidance, activation, and programming at Audiology Associates of Westchester.",
+      "Cochlear implant candidacy testing, activation, and mapping with Dr. Caitlin Dold at Audiology Associates of Westchester in Harrison and Somers, NY.",
     intro: [
-      "Some patients with significant hearing loss do not receive enough benefit from traditional hearing aids. Cochlear implant evaluation and support can be part of the conversation when hearing aids are not meeting communication needs.",
-      "The practice can help patients understand candidacy questions, hearing aid benefit, programming needs, and appropriate next steps based on clinical findings."
+      "A cochlear implant works differently from a hearing aid. A hearing aid makes sound louder and clearer for an ear that still works. An implant bypasses the damaged inner ear and stimulates the hearing nerve directly, and it is placed surgically.",
+      "The question that brings most people to this page is simpler than the technology: my hearing aids are turned up and I still cannot understand my grandchildren. That is the point at which candidacy is worth testing.",
+      "Dr. Caitlin Dold does the cochlear implant work at this practice. Candidacy testing before, activation and programming after. The surgery itself is done by an implant surgeon at a hospital, not here."
     ],
     whoWeHelp: [
-      "Patients with hearing aids who still struggle to understand speech",
-      "Adults exploring whether cochlear implant evaluation may be appropriate",
-      "Patients needing cochlear implant activation, mapping, or programming support when available",
-      "Families trying to understand the difference between hearing aids and cochlear implants"
+      "Hearing aid wearers who still cannot follow speech with well-fitted devices",
+      "Adults whose word understanding has dropped while the audiogram looked stable",
+      "Patients whose ENT or audiologist told them to ask about candidacy",
+      "Implant recipients who want mapping and follow-up closer to home",
+      "Families trying to understand what an implant would and would not change"
     ],
     signs: [
-      "Speech remains unclear even with appropriately fitted hearing aids",
-      "Phone conversations or group settings are still very difficult",
-      "Hearing aid benefit has declined or no longer meets daily needs",
-      "You were advised to ask about cochlear implant candidacy"
+      "Speech is still unclear through hearing aids that have been verified in your ears",
+      "The phone has become unusable even with streaming",
+      "You are relying on captions and lipreading for most conversation",
+      "The hearing aids were turned up again and clarity did not improve"
     ],
     appointmentSteps: [
-      "The audiologist reviews hearing history, hearing aid use, and communication needs.",
-      "Testing and device information are used to discuss whether additional evaluation may be appropriate.",
-      "If relevant, cochlear implant programming or follow-up needs are reviewed.",
-      "The team explains next steps and any needed coordination."
+      "We check what your current hearing aids are actually delivering, with real-ear measurement. An implant conversation that starts from underfitted hearing aids starts in the wrong place.",
+      "We test hearing and word understanding, with and without your devices. That measurement is what candidacy turns on.",
+      "We explain where your results sit against candidacy criteria, including the possibility that you are not a candidate and better-fitted hearing aids are the answer.",
+      "If an implant evaluation is appropriate, we refer you to an implant surgeon and send the testing with you.",
+      "Coverage and cost are worked out between you, the implant program, and your insurer. We do not quote either on this site.",
+      "After surgery and healing, activation happens here with Dr. Dold: the processor is programmed and switched on for the first time.",
+      "Mapping continues over a series of follow-up visits, and the settings keep being adjusted for as long as you wear the implant."
     ],
     whyItMatters:
-      "Cochlear implant decisions require careful evaluation and counseling. Patients need clear guidance about candidacy, expectations, follow-up, and how implant technology differs from hearing aids.",
+      "Two expectations are worth setting early. An implant delivers a different kind of signal, and the first days rarely sound like the hearing anyone remembers, so the early weeks take practice. And the decision is a surgical one made with a surgeon. What audiology owns is the testing that gets you there and the programming you come back for.",
     relatedServices: [
+      { label: "Dr. Caitlin Dold", href: "/meet-the-team/caitlin-dold" },
       { label: "Hearing Testing", href: "/hearing-testing" },
-      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Meet the Team", href: "/meet-the-team" }
+      { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
+      { label: "Sensorineural Hearing Loss", href: "/hearing-loss/sensorineural-hearing-loss" }
     ],
     faqs: [
       {
-        question: "Are cochlear implants the same as hearing aids?",
+        question: "Is a cochlear implant the same as a hearing aid?",
         answer:
-          "No. Hearing aids amplify sound through the ear, while cochlear implants are surgically implanted devices that stimulate the auditory nerve. Candidacy requires clinical evaluation."
+          "No. Hearing aids amplify sound into an ear that still works. A cochlear implant is placed surgically and stimulates the hearing nerve directly. Candidacy is decided by testing."
       },
       {
-        question: "Can an audiologist help decide whether to consider a cochlear implant?",
+        question: "Do you do the surgery here?",
         answer:
-          "An audiologist can evaluate hearing, hearing aid benefit, and communication needs, then discuss whether cochlear implant evaluation or support may be appropriate."
+          "No. Surgery is done by an implant surgeon at a hospital. The testing before it and the programming after it happen at this practice with Dr. Dold."
       },
       {
-        question: "Does everyone with hearing loss need a cochlear implant?",
+        question: "Am I too old for one?",
         answer:
-          "No. Many patients benefit from hearing aids or other support. Cochlear implant candidacy depends on hearing levels, speech understanding, medical factors, and individual goals."
+          "That question is answered by the evaluation rather than by a birth year. Candidacy rests on your test results, your word understanding with well-fitted hearing aids, medical factors, and what you want to be able to do again."
+      },
+      {
+        question: "Will insurance cover it?",
+        answer:
+          "Coverage is settled between you, the implant program, and your plan, and the criteria differ from plan to plan. The implant program's coordinator handles that process. We do not quote coverage or cost here."
+      },
+      {
+        question: "What happens at activation?",
+        answer:
+          "The processor is programmed and switched on, and you hear through the implant for the first time. Follow-up mapping sessions come after it, and the settings are refined across that series."
+      },
+      {
+        question: "What will an implant not do?",
+        answer:
+          "It will not give you back the hearing you had, and it will not make a loud restaurant easy on day one. It also does not end the appointments: the mapping is adjusted for as long as you use it."
       }
     ]
   },
@@ -423,53 +469,49 @@ export const helpServices: HelpService[] = [
     title: "Earwax Removal",
     menuTitle: "Earwax Removal",
     slug: "earwax-removal",
-    shortDescription: "Cerumen management support when earwax affects hearing, comfort, testing, or hearing aid performance.",
+    shortDescription: "Cerumen management when wax is blocking hearing, a hearing test, or a hearing aid.",
     metaDescription:
-      "Schedule earwax removal and cerumen management support with Audiology Associates of Westchester when clinically appropriate.",
+      "Earwax removal and cerumen management at Audiology Associates of Westchester, when it is clinically appropriate. Harrison and Somers, NY.",
     intro: [
-      "Earwax can block sound, create fullness, interfere with hearing testing, and prevent hearing aids from working properly. Some patients notice a sudden change in hearing when wax blocks the ear canal or a device component.",
-      "Audiology Associates of Westchester can evaluate earwax-related concerns and provide or recommend appropriate cerumen management when clinically appropriate."
+      "Wax is normal and most ears clear it on their own. It matters when it blocks the canal, clogs a hearing aid, or stops a hearing test from being accurate.",
+      "We look first. If the canal is blocked and it is safe to clear, cerumen management is done in the office. If what we see is a perforation, an infection, drainage, or an ear that has had surgery, you go to a physician instead."
     ],
     whoWeHelp: [
-      "Patients with ear fullness or muffled hearing that may be related to wax",
-      "Hearing aid users whose devices clog frequently",
-      "Patients who need wax addressed before accurate hearing testing",
-      "People who should avoid unsafe at-home ear cleaning methods"
+      "People whose ear has gone blocked and muffled",
+      "Hearing aid wearers whose devices clog again and again",
+      "Patients whose hearing test could not be completed because of wax"
     ],
     signs: [
-      "The ear feels blocked or hearing seems suddenly reduced",
-      "Hearing aids sound weak because filters or receivers clog with wax",
-      "There is feedback, discomfort, or poor physical fit related to wax buildup",
-      "A prior appointment could not be completed because the canal was blocked"
+      "One ear feels plugged and everything through it sounds dull",
+      "Your hearing aid sounds weak within days of being cleaned",
+      "You have been using cotton swabs and it has got worse"
     ],
     appointmentSteps: [
-      "The ear canal is inspected as part of the appointment.",
-      "The team determines whether wax may be affecting hearing, testing, or device performance.",
-      "Cerumen management is discussed or provided when appropriate for the patient.",
-      "If the situation requires another type of medical care, the patient is directed accordingly."
+      "We look into the canal before anything is touched.",
+      "If the wax is safe to remove, it is removed here and the eardrum is checked afterwards.",
+      "If it is not safe, or something else is going on, you leave with a referral rather than a procedure."
     ],
     whyItMatters:
-      "Safe earwax care protects the ear canal and helps hearing tests and hearing aids work as intended. Patients should avoid inserting cotton swabs or tools deep into the ear canal.",
+      "A fully blocked canal can drop hearing enough to be mistaken for hearing loss, and wax under a receiver makes a working hearing aid sound broken. Keep cotton swabs out of the canal: they push wax deeper.",
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
-      { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
-      { label: "Hearing Aid Tune-Ups", href: "/how-we-can-help/hearing-aid-tune-ups" }
+      { label: "Conductive Hearing Loss", href: "/hearing-loss/conductive-hearing-loss" }
     ],
     faqs: [
       {
-        question: "Can earwax make hearing aids stop working?",
+        question: "Can earwax stop a hearing aid working?",
         answer:
-          "Yes. Wax can clog filters, receivers, earmolds, or domes and make hearing aids sound weak or distorted."
+          "Yes. Wax clogs filters, receivers, domes, and earmolds, and the device goes weak or distorted."
       },
       {
-        question: "Is earwax removal always appropriate at an audiology appointment?",
+        question: "Will you always remove it?",
         answer:
-          "Not always. The team must inspect the ear and determine whether cerumen management is appropriate or whether another medical referral is needed."
+          "No. If the ear is not safe to work in, or the picture suggests infection, perforation, or a surgical history, the right answer is a physician rather than a suction tip."
       },
       {
-        question: "Should I use cotton swabs to remove wax?",
+        question: "Should I use drops first?",
         answer:
-          "Patients should avoid pushing cotton swabs or tools into the ear canal because wax can be pushed deeper or the ear can be irritated."
+          "Ask before you do. What softens wax in a healthy ear is the wrong thing for an ear with a perforation, which is one reason we look before anything else."
       }
     ]
   },
@@ -478,53 +520,51 @@ export const helpServices: HelpService[] = [
     menuTitle: "Cognivue Cognitive Screening",
     slug: "cognivue-cognitive-screening",
     hideFromMenu: true,
-    shortDescription: "A digital screening option that helps connect hearing care conversations with cognitive wellness.",
+    shortDescription: "A computer-based screening that gives you and your physician something written down.",
     metaDescription:
-      "Cognivue cognitive screening at Audiology Associates of Westchester in Harrison and Somers, NY, where hearing and cognitive wellness connect.",
+      "Cognivue cognitive screening at Audiology Associates of Westchester in Harrison and Somers, NY. A screening tool, not a diagnosis.",
     intro: [
-      "Hearing and cognitive wellness are often discussed together because listening requires attention, memory, and processing effort. A cognitive screening can provide additional context during hearing care conversations.",
-      "Cognivue is a digital screening tool. It is not a diagnosis, and results should be discussed with appropriate clinical professionals."
+      "Following a conversation takes attention and memory as well as hearing. Cognivue is a computer-based screening that gives a snapshot of that side of listening, offered here alongside hearing care.",
+      "It is a screening, not a diagnosis. It cannot tell you that you have dementia and it cannot tell you that you do not. What it gives you is a written result to take to your physician."
     ],
     whoWeHelp: [
-      "Adults who want a broader view of hearing, listening effort, and cognitive wellness",
-      "Patients who feel listening takes more concentration than it used to",
-      "Families who want structured information to discuss with healthcare providers",
-      "Patients whose hearing care plan may benefit from additional context"
+      "Patients who find listening has become mentally tiring",
+      "People whose hearing concerns overlap with worries about memory or attention",
+      "Families who want something concrete to bring to a physician"
     ],
     signs: [
-      "Listening feels mentally exhausting",
-      "Hearing concerns overlap with attention, memory, or processing concerns",
-      "Family members want a more complete wellness conversation",
-      "A provider suggested discussing hearing and cognitive screening"
+      "A long conversation leaves you drained rather than just deaf",
+      "You lose the thread when several people talk at once",
+      "A physician or a relative has raised memory alongside hearing"
     ],
     appointmentSteps: [
-      "The team explains what the screening does and does not measure.",
-      "The screening is completed when appropriate and available.",
-      "Results are reviewed as screening information, not a diagnosis.",
-      "Patients are encouraged to discuss medical or cognitive concerns with their physician or appropriate provider."
+      "We explain what the screening measures and what it cannot tell you.",
+      "You complete it on the device at your own pace.",
+      "We go through the result as screening information.",
+      "Anything medical goes to your physician, and the result goes with you."
     ],
     whyItMatters:
-      "A screening can help organize a conversation, but it should never replace medical diagnosis. Hearing care recommendations still depend on hearing test results and patient needs.",
+      "The reason this sits in an audiology office is practical. Straining to hear makes listening effortful, and effort can look like a memory problem from the outside. Sorting out the hearing part first makes the rest of the picture easier to read.",
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
-      { label: "Your Hearing", href: "/how-we-can-help/your-hearing" },
+      { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
       { label: "Meet the Team", href: "/meet-the-team" }
     ],
     faqs: [
       {
         question: "Is Cognivue a diagnosis?",
         answer:
-          "No. Cognivue is a screening tool. Patients should discuss medical, cognitive, or diagnostic concerns with the appropriate healthcare provider."
+          "No. It is a screening tool. Diagnosis belongs with a physician, and a screening result is something to bring to that appointment."
       },
       {
-        question: "Why discuss cognition at a hearing care appointment?",
+        question: "Why is a hearing practice asking about cognition?",
         answer:
-          "Listening uses attention and processing. A broader conversation can help patients understand listening effort and coordinate care when needed."
+          "Because listening uses attention and processing, and untreated hearing loss makes both harder to judge. The two questions get tangled together, and it helps to separate them."
       },
       {
-        question: "Can hearing aids treat cognitive concerns?",
+        question: "Do hearing aids treat memory problems?",
         answer:
-          "Hearing aids are prescribed for hearing needs. They do not diagnose or treat cognitive conditions, but better access to sound may support communication and listening participation for appropriate patients."
+          "No. Hearing aids are fitted for hearing loss. They do not diagnose or treat cognitive conditions."
       }
     ]
   },
@@ -532,33 +572,33 @@ export const helpServices: HelpService[] = [
     title: "Adoption Plan",
     menuTitle: "Adoption Plan",
     slug: "adoption-plan",
-    shortDescription: "Care and support for hearing aids purchased elsewhere, when the devices can be serviced by the practice.",
+    shortDescription: "Taking over care of hearing aids bought elsewhere, when the brand and software allow it.",
     metaDescription:
-      "Audiology Associates of Westchester can discuss support for hearing aids purchased elsewhere through an adoption plan when appropriate.",
+      "Local care for hearing aids purchased elsewhere: cleaning, parts, programming, and honest limits. Call with the make and model first.",
     intro: [
-      "Some patients move to Westchester, change providers, inherit devices, buy hearing aids elsewhere, or need local support for technology they already own.",
-      "An adoption plan gives patients a path to professional hearing aid care when the devices, manufacturer, condition, and clinical needs can be supported by the practice."
+      "You bought hearing aids somewhere else and now you need someone here. People moved, the clinic closed, the online seller has no clinic, or the follow-up they were promised never materialized.",
+      "An adoption plan is this practice taking over care of devices it did not sell, where the brand, the model, and the fitting software allow. Call with the make, model, and rough age before you book, because that is what decides whether we can help."
     ],
     whoWeHelp: [
-      "Patients who purchased hearing aids at another clinic",
-      "People who moved and need a local audiology team",
-      "Hearing aid users who need cleaning, programming, troubleshooting, or counseling",
-      "Patients unsure whether their current devices still match their hearing needs"
+      "Patients who moved to Westchester with hearing aids fitted elsewhere",
+      "People whose original clinic has closed or changed hands",
+      "Buyers of online or big-box devices who need in-person programming",
+      "Anyone unsure whether the hearing aids they own still match their hearing"
     ],
     signs: [
-      "You like your hearing aids but need local follow-up care",
-      "Your devices are working but settings no longer feel right",
-      "You need help with cleaning, parts, apps, or connectivity",
-      "You want an audiologist to review whether your current devices are still appropriate"
+      "You like the hearing aids but have nobody local to adjust them",
+      "The settings have not been touched since the day you got them",
+      "You need parts, cleaning, or app help and have no clinic to call"
     ],
     appointmentSteps: [
-      "The team confirms the device brand, model, age, and serviceability when possible.",
-      "Your hearing history and current concerns are reviewed.",
-      "The devices are inspected and care options are discussed.",
-      "The audiologist explains what the practice can support and whether testing, programming, repair, or replacement should be considered."
+      "You call with brand, model, and approximate age, and we check serviceability before you come in.",
+      "We review your hearing history and what is not working now.",
+      "The devices are inspected and cleaned, and we check whether the physical fit is still right.",
+      "Where we hold the manufacturer's software, we check the settings against your hearing rather than trusting the previous programming.",
+      "We tell you what the practice can support, and where a manufacturer repair or a replacement is the honest answer."
     ],
     whyItMatters:
-      "Hearing aid ownership works best with ongoing care. Patients deserve clear guidance even when their devices came from another source.",
+      "Hearing aids need somebody to adjust them, and devices with nobody behind them end up in a drawer. There is a real limit worth knowing: some brands lock their fitting software to their own channel, and goodwill does not get around that. Better to hear it on the phone than after the drive.",
     relatedServices: [
       { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
       { label: "Hearing Aid Tune-Ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
@@ -566,19 +606,24 @@ export const helpServices: HelpService[] = [
     ],
     faqs: [
       {
-        question: "Can Audiology Associates of Westchester program hearing aids bought elsewhere?",
+        question: "Can you program hearing aids bought elsewhere?",
         answer:
-          "Possibly. It depends on the brand, model, software access, device condition, and clinical needs. Patients should call with device details before scheduling."
+          "Often, but not always. It depends on the brand, the model, and whether we hold the manufacturer's fitting software. Call with those details first."
       },
       {
-        question: "What if my current hearing aids cannot be serviced?",
+        question: "What if mine cannot be serviced here?",
         answer:
-          "The team can explain what options are available, which may include manufacturer repair, replacement parts, updated testing, or discussion of newer technology."
+          "We say so, and explain what is left: manufacturer repair, replacement parts, or a conversation about newer devices."
       },
       {
-        question: "Do adoption plans include warranties or pricing?",
+        question: "What does an adoption plan cost?",
         answer:
-          "Patients should contact the practice directly for current availability, policies, pricing, and warranty details. The website should not be used as a quote."
+          "Contact the office for current fees and what is included. Pricing is not published on this site, and a page is a bad place to quote it."
+      },
+      {
+        question: "Are online or warehouse-club hearing aids covered?",
+        answer:
+          "It depends entirely on the model and the software behind it. Some are supportable here, some are locked to the seller. The phone call takes two minutes."
       }
     ]
   },
@@ -586,53 +631,63 @@ export const helpServices: HelpService[] = [
     title: "Lenire for Tinnitus",
     menuTitle: "Lenire for Tinnitus",
     slug: "lenire-for-tinnitus",
-    shortDescription: "A tinnitus treatment pathway that may be discussed for appropriate candidates after evaluation.",
+    shortDescription: "A prescribed bimodal neuromodulation pathway, assessed after testing rather than ordered online.",
     metaDescription:
-      "Lenire for tinnitus in Westchester County: candidacy and tinnitus care options at Audiology Associates of Westchester, Harrison and Somers, NY.",
+      "Lenire for tinnitus in Westchester County: what the candidacy assessment involves at Audiology Associates of Westchester, Harrison and Somers, NY.",
     intro: [
-      "Lenire is a tinnitus treatment option that may be considered for appropriate candidates as part of a tinnitus management plan.",
-      "Because tinnitus experiences vary, patients need an individualized evaluation before determining whether Lenire, hearing aids, sound strategies, counseling, or another pathway is appropriate."
+      "Lenire is a bimodal neuromodulation device for tinnitus. It pairs sound through headphones with mild electrical stimulation, used in daily sessions across a course of treatment.",
+      "It is a prescribed pathway rather than something to order online. Candidacy is assessed after a hearing test and a tinnitus evaluation, and part of that assessment is ruling out what belongs with a physician instead."
     ],
     whoWeHelp: [
-      "Patients whose tinnitus affects focus, sleep, stress, or quality of life",
-      "People looking for a structured tinnitus management conversation",
-      "Patients who want to understand whether Lenire may be an option",
-      "Individuals who need realistic expectations and professional guidance"
+      "People whose tinnitus is affecting sleep, focus, or mood",
+      "Patients who have worked through sound apps and general advice without enough relief",
+      "Anyone who has read about Lenire and wants a straight answer on whether they qualify"
     ],
     signs: [
-      "Tinnitus is persistent or distressing",
-      "You have tried general strategies without enough relief",
-      "Tinnitus is paired with hearing difficulty or sound sensitivity",
-      "You want to discuss candidacy for a specific tinnitus treatment pathway"
+      "The tinnitus is persistent rather than occasional",
+      "General strategies have not moved it enough",
+      "It comes with hearing difficulty or sound sensitivity",
+      "You want a specific pathway assessed rather than more advice"
     ],
     appointmentSteps: [
-      "The audiologist reviews tinnitus history, hearing status, goals, and daily impact.",
-      "Tinnitus-related evaluation and counseling are discussed.",
-      "Lenire candidacy and availability are reviewed when appropriate.",
-      "The team explains realistic expectations and next steps."
+      "We take the tinnitus history and measure your hearing.",
+      "We look for the findings that change the plan: pulsatile tinnitus, one-sided symptoms, sudden change, dizziness.",
+      "Where there is hearing loss, that is addressed on its own merits before any device pathway is considered.",
+      "If Lenire is appropriate, we go through what the treatment course involves and what follow-up it needs.",
+      "You decide with the expectations spelled out, including the possibility that this is not the right tool for your tinnitus."
     ],
     whyItMatters:
-      "Tinnitus treatment should be individualized and evidence-informed. Patients should not have to guess which products or therapies apply to their specific symptoms.",
+      "Tinnitus attracts more marketing than almost anything else in hearing care. The value of a candidacy appointment is partly the assessment and partly the filter: an honest answer about whether this device has anything to offer your particular tinnitus.",
     relatedServices: [
-      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
       { label: "Tinnitus Management", href: "/how-we-can-help/tinnitus-management" },
+      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
       { label: "Hearing Testing", href: "/hearing-testing" }
     ],
     faqs: [
       {
-        question: "Is Lenire right for every tinnitus patient?",
+        question: "Can I just buy Lenire myself?",
         answer:
-          "No. Candidacy depends on the patient's tinnitus profile, hearing status, medical history, goals, and clinical evaluation."
+          "No. It is a prescribed pathway. Candidacy is assessed after testing, and other causes are looked at first."
       },
       {
-        question: "Can I schedule directly for Lenire?",
+        question: "Does it cure tinnitus?",
         answer:
-          "Patients should contact the practice to confirm availability, candidacy steps, and whether a tinnitus evaluation should be scheduled first."
+          "No tinnitus treatment should be presented as a cure, and this one is no exception. The conversation is about how much of your day the tinnitus takes up, not about switching it off."
       },
       {
-        question: "Does Lenire guarantee tinnitus relief?",
+        question: "Do I need a hearing test first?",
         answer:
-          "No treatment should be presented as a guarantee. The audiology team can explain expectations, candidacy, and alternatives during an appointment."
+          "Yes. Your hearing status and your tinnitus profile are the facts a candidacy discussion runs on."
+      },
+      {
+        question: "What does it cost?",
+        answer:
+          "Call the office. Pricing, availability, and what a course includes all change, and a web page is the wrong place to quote them."
+      },
+      {
+        question: "What if I am not a candidate?",
+        answer:
+          "Then we say so, and the plan goes back to what does apply: counseling, sound strategies, hearing aids where there is hearing loss, or a medical referral."
       }
     ]
   },
@@ -640,53 +695,44 @@ export const helpServices: HelpService[] = [
     title: "Executive Assistance",
     menuTitle: "Executive Assistance",
     slug: "executive-assistance",
-    shortDescription: "Hearing care for professionals who rely on clear communication in meetings, calls, travel, and public settings.",
+    shortDescription: "Ordinary hearing care aimed at meetings, calls, and conference rooms.",
     metaDescription:
-      "Executive hearing care for busy professionals in Westchester County, with discreet support at our Harrison and Somers, NY audiology offices.",
+      "Hearing care for professionals in Westchester County: discreet devices, programs built for meeting rooms and calls, and follow-up after a real working week.",
     intro: [
-      "For many professionals, hearing difficulty first shows up in meetings, conference rooms, presentations, restaurants, travel, or phone calls. The issue may not be loudness; it may be clarity and listening effort.",
-      "Executive assistance focuses on communication goals, discreet technology discussions, device optimization, and strategies that support demanding professional listening environments."
+      "This is ordinary hearing care aimed at a specific room: the conference call, the boardroom, the restaurant where the business actually gets discussed. The test is the same test and the devices are the same devices. What changes is which environments we optimize for, and how discreet the fitting has to be."
     ],
     whoWeHelp: [
-      "Professionals who need clarity in meetings, calls, and presentations",
-      "Patients who want discreet hearing technology options",
-      "Hearing aid users who need workplace-specific programming support",
-      "Executives, attorneys, physicians, educators, consultants, and frequent travelers"
+      "Professionals losing detail in meetings and on calls",
+      "Patients who want the least visible device their hearing allows",
+      "Wearers who need a program set up for conference rooms and headsets"
     ],
     signs: [
-      "You miss details in meetings or group conversations",
-      "Video calls, phones, and conference rooms are harder than expected",
-      "You leave workdays feeling drained from listening effort",
-      "You want technology that fits professional and personal settings"
+      "You miss the quiet person at the far end of the table",
+      "Video calls take more concentration than the meeting itself",
+      "You are worn out by the end of a day of listening"
     ],
     appointmentSteps: [
-      "Your audiologist reviews the communication environments that matter most.",
-      "Hearing results, technology options, and practical listening goals are discussed.",
-      "Programming and accessory options may be considered for work-specific challenges.",
-      "Follow-up care helps refine settings after real-world use."
+      "We map the week: which rooms, which calls, which devices you already carry.",
+      "We fit and verify to your hearing, then build a program for the rooms that matter.",
+      "You come back after a real week of meetings and we adjust from that."
     ],
     whyItMatters:
-      "Professional communication depends on confidence and precision. Hearing care should account for the specific environments where the patient needs to perform.",
+      "The honest limit: no hearing aid turns a bad conference-room speakerphone into a good one. A remote microphone on the table, or streaming straight from your laptop, usually does more for meetings than paying up a technology tier.",
     relatedServices: [
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Hearing Protection", href: "/hearing-protection" }
+      { label: "Batteries and Accessories", href: "/batteries-and-accessories" }
     ],
     faqs: [
       {
-        question: "Can hearing aids be programmed for work settings?",
+        question: "Can hearing aids be set up for work specifically?",
         answer:
-          "Many modern hearing aids can be adjusted for different listening environments. Your audiologist can discuss realistic options based on the device and your hearing needs."
+          "Yes. Most current platforms hold several programs, and one can be built for meeting rooms and calls. How much it helps depends on the room and on the device."
       },
       {
-        question: "Are there discreet hearing aid options?",
+        question: "What are the most discreet options?",
         answer:
-          "Yes. Discreet options may include small receiver-in-canal devices, custom styles, or invisible extended-wear options for appropriate candidates."
-      },
-      {
-        question: "Can accessories help with meetings or phone calls?",
-        answer:
-          "In some cases, phone connectivity, remote microphones, or app settings can help. Recommendations depend on device compatibility and communication goals."
+          "Small receiver-in-canal devices, custom in-the-ear styles, and Lyric, which sits in the canal and is placed by a clinician. Which of those your hearing allows is decided by the audiogram."
       }
     ]
   },
@@ -694,53 +740,53 @@ export const helpServices: HelpService[] = [
     title: "Hearing Protection",
     menuTitle: "Hearing Protection",
     slug: "hearing-protection",
-    shortDescription: "Custom protection for work, music, recreation, travel, and everyday noise exposure.",
+    shortDescription: "Custom plugs and molds for music, work, shooting, sleep, and water.",
     metaDescription:
-      "Custom hearing protection and earplugs for work, music, and noise, fitted at Audiology Associates of Westchester in Harrison and Somers, NY.",
+      "Custom hearing protection fitted from ear impressions: musician's plugs, occupational protection, sleep plugs, and swim molds. Harrison and Somers, NY.",
     intro: [
-      "Noise exposure can affect hearing gradually, and many loud environments are part of normal life: concerts, construction, power tools, sports, commuting, music, and busy public spaces.",
-      "Custom hearing protection can be selected for comfort, fit, communication needs, and the specific noise environment."
+      "Custom protection is made from an impression of your ear, so it seals without being jammed in, and it can be built with filters that lower the level while leaving speech and music intelligible.",
+      "The practice makes musician's plugs, protection for loud work and machinery, sleep plugs, and swim molds. Which style and which filter depend on what you still need to hear while you are protected."
     ],
     whoWeHelp: [
-      "Musicians and concertgoers",
-      "Workers exposed to occupational noise",
-      "People using power tools, motorcycles, or recreational equipment",
-      "Patients who want custom plugs, molds, or sound-sensitive support"
+      "Musicians, sound engineers, and regular concertgoers",
+      "Workers around machinery, saws, and compressed air",
+      "Shooters, motorcyclists, and people running loud yard equipment",
+      "Patients who find foam plugs uncomfortable or useless"
     ],
     signs: [
-      "Your ears ring after loud activities",
-      "Disposable earplugs feel uncomfortable or do not fit well",
-      "You need protection without overly muffling speech or music",
-      "You want custom earmolds or musician-style protection"
+      "Your ears ring or sound dull after a gig, a shift, or an afternoon with the mower",
+      "Foam plugs fall out, hurt, or turn everything to mush",
+      "You need to hear speech or music clearly while still protected",
+      "Your job requires protection and nobody has ever fitted it to your ears"
     ],
     appointmentSteps: [
-      "The team reviews the noise environments where protection is needed.",
-      "Ear anatomy, fit needs, and product options are discussed.",
-      "Impressions or measurements may be taken when custom products are appropriate.",
-      "Care instructions and follow-up needs are reviewed."
+      "We go through the exposure: how loud, how long, how often, and what you need to hear through it.",
+      "The ears are checked and impressions are taken when a custom product is the right answer.",
+      "The order goes to the manufacturer, and we fit it when it arrives and check the seal.",
+      "We show you how to insert, clean, and store them, and when filters or molds need replacing."
     ],
     whyItMatters:
-      "The best hearing protection is protection patients will actually wear. Comfort, fit, and the right attenuation level matter.",
+      "Noise damage is permanent and it is one of the few kinds you can prevent outright. The protection that works is the protection you will keep in your ears, which is why comfort and the right filter matter more than the biggest number on the packet.",
     relatedServices: [
       { label: "Hearing Protection", href: "/hearing-protection" },
-      { label: "Batteries and Accessories", href: "/batteries-and-accessories" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Prevent Hearing Loss", href: "/prevent-hearing-loss" },
+      { label: "Noise-Induced Hearing Loss", href: "/hearing-loss/noise-induced-hearing-loss" }
     ],
     faqs: [
       {
-        question: "Are custom earplugs better than disposable earplugs?",
+        question: "Are custom plugs worth it over foam?",
         answer:
-          "Custom plugs can improve comfort, fit, and consistency for many patients, but the right choice depends on the activity and protection needs."
+          "For repeated exposure, usually. They seal reliably and they are comfortable enough that people keep them in. For one afternoon with a leaf blower, foam is fine."
       },
       {
-        question: "Can musicians protect hearing without ruining sound quality?",
+        question: "Will musician's plugs ruin how music sounds?",
         answer:
-          "Musician-style protection may reduce loudness while preserving more natural sound balance than standard foam plugs for appropriate users."
+          "That is what the filters are there to avoid. They reduce level fairly evenly across pitches instead of taking the highs out the way foam does."
       },
       {
-        question: "Should I schedule testing if I have noise exposure?",
+        question: "Do I need a hearing test first?",
         answer:
-          "A hearing evaluation can establish a baseline and help guide prevention and protection strategies."
+          "Not necessarily, but a baseline is worth having if you are around noise regularly. It is the only way to see damage before it reaches conversation."
       }
     ]
   }
@@ -762,12 +808,12 @@ export const coreServiceDeepDives: Record<string, CoreServiceDeepDive> = {
   "/hearing-testing": {
     title: "What happens during a hearing testing appointment",
     intro:
-      "A hearing test should connect clinical results to daily listening needs, not just produce a chart. The appointment helps identify whether hearing loss, tinnitus, wax, device issues, or another concern may be affecting communication.",
+      "A hearing test produces a chart, and the chart is the least useful part of it. What the appointment is for is finding out whether hearing loss, tinnitus, wax, or a device problem is what is getting in the way of conversation.",
     appointmentSteps: [
       "The audiologist reviews your hearing history, symptoms, and communication goals.",
       "Testing is selected based on your concerns and what needs to be measured.",
       "Results are explained in plain language, including how they may affect speech clarity.",
-      "Next steps may include monitoring, hearing aids, tinnitus support, medical referral, or additional services when appropriate."
+      "You leave with a next step: a date to be retested, a hearing aid discussion, tinnitus care, or a referral to a physician."
     ],
     practicalNotes: [
       "Bring current hearing aids if you use them.",
@@ -782,17 +828,19 @@ export const coreServiceDeepDives: Record<string, CoreServiceDeepDive> = {
   "/hearing-aid-fitting": {
     title: "What happens during a hearing aid fitting",
     intro:
-      "A professional fitting turns hearing aid technology into a personalized hearing plan. The process should account for your test results, listening goals, ear shape, comfort, handling needs, and follow-up care.",
+      "A fitting is where the devices are matched to your ears and to your hearing. It covers physical fit, programming, verification in the ear canal, and how you will handle and clean them.",
     appointmentSteps: [
-      "Your audiologist confirms the selected devices and physical fit.",
-      "The hearing aids are programmed for your hearing profile.",
-      "Verification, orientation, and listening goals are reviewed when appropriate.",
-      "Follow-up visits help refine comfort, clarity, and real-world performance."
+      "Your audiologist confirms the devices and checks the physical fit in both ears.",
+      "The hearing aids are programmed to the prescription for your hearing loss.",
+      "Real-ear measurement checks what the devices deliver at your eardrum against that prescription.",
+      "You are shown insertion, cleaning, charging, and phone pairing before you leave.",
+      "Follow-up visits refine comfort and clarity once you have worn them in real rooms."
     ],
     practicalNotes: [
       "Make a list of the situations where you most want improvement.",
-      "Ask about phone compatibility, rechargeable options, care steps, and accessories.",
-      "Plan for follow-up adjustments after real-world listening."
+      "Bring your phone, and its passcode, if you want streaming set up.",
+      "Ask what follow-up visits are included and over what period.",
+      "Plan for an adjustment visit after a week or two of real-world listening."
     ],
     related: [
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
@@ -806,7 +854,7 @@ export const coreServiceDeepDives: Record<string, CoreServiceDeepDive> = {
     appointmentSteps: [
       "The audiologist reviews tinnitus history and related hearing concerns.",
       "Hearing and tinnitus-related findings are discussed in clear language.",
-      "Management options may include education, sound strategies, hearing aids, Lenire candidacy discussion, or other recommendations.",
+      "Management is discussed: counseling and sound strategies, hearing aids where there is hearing loss, tinnitus programming, or Lenire candidacy.",
       "The plan is adjusted to your symptoms, goals, and clinical findings."
     ],
     practicalNotes: [
@@ -824,10 +872,9 @@ export const coreServiceDeepDives: Record<string, CoreServiceDeepDive> = {
     intro:
       "Hearing protection works best when it matches the exact listening environment. Musicians, workers, commuters, hunters, athletes, and frequent concertgoers may all need different solutions.",
     appointmentSteps: [
-      "The team reviews noise exposure, comfort needs, and communication requirements.",
-      "Protection options are matched to the activity and desired sound reduction.",
-      "Custom impressions or fittings may be completed when appropriate.",
-      "Care instructions and replacement expectations are reviewed."
+      "The team reviews the exposure, the comfort needs, and what you must still be able to hear through the protection.",
+      "Impressions are taken when a custom product is the right answer.",
+      "Care, storage, and replacement expectations are covered when the product is fitted."
     ],
     practicalNotes: [
       "Think about whether you need to hear speech, music, alerts, or environmental sound while protected.",
@@ -845,8 +892,8 @@ export const coreServiceDeepDives: Record<string, CoreServiceDeepDive> = {
       "A repair visit starts by identifying whether the problem is the device, the fit, wax or moisture, a replaceable part, a programming issue, or a change in hearing.",
     appointmentSteps: [
       "The team reviews the symptoms and when they began.",
-      "Devices are inspected and cleaned when appropriate.",
-      "Common parts such as filters, domes, receivers, batteries, or molds may be checked.",
+      "Devices are inspected and cleaned at the bench.",
+      "Wax filters, domes, receivers, batteries, and molds are checked and replaced where they have failed.",
       "If more support is needed, the audiologist explains repair, reprogramming, testing, or replacement options."
     ],
     practicalNotes: [

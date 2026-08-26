@@ -3,6 +3,16 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck, Star } from "lucide-react";
 import { googleReviewsUrl, reviewAggregate, reviewThemes, testimonials } from "@/lib/reviews";
+import { AudiogramFigure, ClinicianCard, RedFlagPanel, SpecTable, VisitSteps } from "@/components/CareBlocks";
+import {
+  AUDIOGRAM_PAGES,
+  TINNITUS_CARE_PAGES,
+  TINNITUS_LEAD_CLINICIAN,
+  TINNITUS_RED_FLAGS,
+  TINNITUS_VISIT_FOOTNOTE,
+  TINNITUS_VISIT_STEPS,
+  specTableFor
+} from "@/lib/carePageData";
 import { ContactForm } from "@/components/ContactForm";
 import { InteractiveEarHero } from "@/components/InteractiveEarHero";
 import { ZocdocButton } from "@/components/ZocdocButton";
@@ -228,38 +238,44 @@ const homeTrustReasons = [
   "We’re dedicated to your full satisfaction."
 ];
 
+// The eight reasons render on /why-choose-us. They used to be generic
+// reassurance any practice could have written — "We understand that hearing
+// loss can affect every area of your life", "You deserve nothing but the best
+// care" — plus an unbounded satisfaction guarantee with no stated terms and an
+// unfalsifiable "best in the area". Each one now names something this practice
+// actually does that a patient could check.
 const whyChooseReasons = [
   {
-    title: "Our hearing doctors take your health and safety seriously.",
-    text: "We understand that hearing loss can affect every area of your life, from your relationships to your daily activities. Our audiologists will help you get these areas of your life back by providing the professional hearing solutions you need and deserve."
+    title: "Every fitting is measured in your own ear.",
+    text: "Manufacturer default settings routinely land below prescriptive targets in the high frequencies, which is where consonants live. We put a probe microphone in your ear canal and measure what the hearing aid is actually delivering at your eardrum, then correct it. That is real-ear measurement, and it happens at every fitting."
   },
   {
-    title: "We’ll help you understand your options.",
-    text: "Whether the process of hearing loss has occurred quickly or gradually, it can be a confusing time. Our audiologists will keep you updated every step of the way, helping you understand your health and equipping you to make the best decisions."
+    title: "You leave understanding your own audiogram.",
+    text: "We go through the chart with you and translate it into the rooms you actually sit in: the restaurant, the meeting, the car, the phone. Then we tell you what technology will and will not change about each of them."
   },
   {
-    title: "We have the experience you expect.",
-    text: "You deserve nothing but the best care, and that’s what our hearing doctors provide. We are certified audiologists with expertise in hearing aids. We can also refer you to ENT doctors, should you need further help with ear, nose, and throat conditions."
+    title: "Doctors of Audiology, and the referral when you need one.",
+    text: "Our audiologists hold doctorates in audiology and are licensed in New York. When something needs a physician rather than an audiologist, we say so and refer you to an ENT rather than fitting around it."
   },
   {
-    title: "We offer effective hearing tests.",
-    text: "Great health care begins with a thorough exam and well-informed diagnosis by an experienced hearing doctor, which is why we offer professional hearing tests at the start of every new appointment."
+    title: "A full diagnostic battery, not a screening.",
+    text: "A screening tells you whether to look further. A diagnostic evaluation is what we run: case history, otoscopy, air and bone thresholds, speech testing, and middle-ear measures where they are indicated. You get the results and the explanation in the same visit."
   },
   {
-    title: "We guarantee patient satisfaction.",
-    text: "From the level of service to the price of hearing aids, we will make sure you’re 100% satisfied with your experience at Audiology Associates of Westchester."
+    title: "Every hearing aid comes with a trial period.",
+    text: "You wear the devices in your own life before you commit. We go through the length of the trial and the return terms in writing first, and the follow-up visits inside it are already covered by the fitting fee."
   },
   {
-    title: "We utilize the best brands.",
-    text: "At Audiology Associates of Westchester, our hearing aid options will be the best in the area. We use only top hearing aids and batteries to bring you a wide range of premium choices."
+    title: "We fit every major manufacturer.",
+    text: "What we recommend is not constrained by what we happen to stock. If a different brand suits your hearing, your ears and your hands better, that is the one we fit."
   },
   {
-    title: "We offer personalized service.",
-    text: "At Audiology Associates of Westchester, we don’t consider ourselves your hearing doctors only while you’re here; we provide the personalized service you need during your examination, testing, hearing aid fitting, and after your visit."
+    title: "The same audiologist, across the whole course of care.",
+    text: "Your file stays with one clinician through the fitting, the follow-ups, the adjustments and the repairs. You are not starting the conversation again every visit."
   },
   {
-    title: "We keep hearing aids working well.",
-    text: "A high-quality hearing aid will inevitably require cleaning and tweaks as time goes by. We offer clean and check service to help you make the most of your hearing device. If you need repairs, we can help with those, as well."
+    title: "Cleaning, checks and repairs are part of the deal.",
+    text: "Wax guards clog, domes perish, receivers fail. We clean and check hearing aids here, and we handle repairs rather than posting you back to the manufacturer and leaving you without them."
   }
 ];
 
@@ -347,16 +363,19 @@ type LegacyTeamProfile = {
   affiliations?: string[];
 };
 
+// The bios here used to be a second copy of the text in lib/team.ts, and the
+// two had already drifted: this file still said "the top graduate audiology
+// program in the country" months after lib/team.ts stopped. Every profile now
+// reads its paragraphs from lib/team.ts, which is the single source, exactly as
+// the Rivera entry always did. Credentials and photos stay local because the
+// roster renders them differently from the bio pages.
 const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }> = [
   {
     group: "Doctors of Audiology",
     profiles: [
       {
         ...teamMembers[0],
-        paragraphs: [
-          "“I consider it an absolute privilege to re-connect my patients to their loved ones and surroundings through better hearing. I find such joy in helping my patients and cherish the connection I make with each and every one of them.”",
-          "Dr. Ratner was awarded her doctorate in audiology from the top graduate audiology program in the country, Vanderbilt University School of Medicine. She has worked as a research assistant in the Dan Maddox Hearing Aid Research Laboratory at Vanderbilt University, and she completed her externship at the renowned Veterans Affairs Medical Center in Nashville, TN. Dr. Ratner went on to work at a private practice in Manhattan prior to joining our staff. She is a member of the American Academy of Audiology, accredited by the American Speech-Language-Hearing Association, and a fellow of the Tinnitus Practitioners Association. She has a strong background in diagnostic testing, fitting and verification of hearing aids, counseling and orientation and auditory rehabilitation. As a music lover and former musician, she enjoys meeting the unique needs of musicians with hearing loss. In 2017, she was awarded the Rising Stars Top 40 Under 40 award from the Business Council of Westchester."
-        ],
+        paragraphs: providerForName(teamMembers[0].name)?.paragraphs ?? [],
         credentials: [
           "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
           "College: B.A. Communication Sciences and Disorders, Magna Cum Laude; Florida State University, 2008",
@@ -374,11 +393,7 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       },
       {
         ...teamMembers[1],
-        paragraphs: [
-          "Dr. Dold is a White Plains native who received her doctorate from Vanderbilt University School of Medicine. While at Vanderbilt, she worked as a research assistant in a collaboration between the Hearing and Communication Research Lab and Listening and Learning Lab examining listening-related fatigue. She was awarded a T-35 Traineeship from the NIH and was subsequently published and completed a traineeship with the U.S. Department of Veteran Affairs. She completed her externship at Audiology Associates of Westchester and runs the Practice’s clinical education program for Audiology students in training.",
-          "Her areas of expertise include comprehensive diagnostic testing, counseling, and orientation, fitting and verification of hearing aids, testing for cochlear implant candidacy, activation and programming of cochlear implants, tinnitus testing and treatment, cerumen removal, Lyric® invisible extended-wear hearing devices, custom fit hearing protection and musician’s plugs, and auditory rehabilitation. She has worked with special populations including veterans, individuals with disabilities, and D/deaf individuals. She is highly proficient in American Sign Language and holds a New York State license in Audiology, is accredited by the American Speech-Language-Hearing Association and is a member of the American Academy of Audiology.",
-          "In 2024, she was awarded the Rising Stars Top 40 Under 40 Award from the Business Council of Westchester."
-        ],
+        paragraphs: providerForName(teamMembers[1].name)?.paragraphs ?? [],
         credentials: [
           "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
           "College: B.A., Sociology; Self-Designed Second Major: Learning and Culture in the Deaf Community, College of the Holy Cross, 2010",
@@ -394,10 +409,7 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       },
       {
         ...teamMembers[2],
-        paragraphs: [
-          "“Hearing loss can really affect people’s lives especially if it goes untreated. I became an audiologist as I love reconnecting my patients to their surrounding environments and to what they love. I find it truly rewarding to put hearing aids on my patients and see their eyes light up at how well they are hearing.”",
-          "Jenna M. Elias received her Doctor of Audiology degree at the University of Florida and her master’s degree at Hofstra University. She is licensed in New York State as an audiologist and hearing aid dispenser. Dr. Elias worked in various clinical settings including a large ENT practice and Bellevue Hospital in New York City prior to joining the Audiology Associates of Westchester team. Dr. Elias is a fellow of the American Academy of Audiology and Sigma Pi honor society. She has extensive training in hearing aid dispensing and diagnostic audiology."
-        ],
+        paragraphs: providerForName(teamMembers[2].name)?.paragraphs ?? [],
         credentials: [
           "Audiology Licensure: New York State and NYS Hearing Aid Dispenser",
           "College: M.A. Audiology, Hofstra University, 2015",
@@ -411,9 +423,7 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       },
       {
         ...teamMembers[3],
-        paragraphs: [
-          "Leannmarie Senat earned her Doctorate of Audiology from The City University of New York Graduate Center. Her clinical training included placements at the Brooklyn Veterans Affairs Medical Center, with a focus on adult amplification, and at the Long Island Jewish (LIJ) Medical Center, where she concentrated on vestibular assessment as well as pediatric and adult diagnostics. She completed her residency at the LIJ Hearing and Speech Center, gaining extensive experience in diagnostic audiology and hearing aid services for patients across the lifespan."
-        ],
+        paragraphs: providerForName(teamMembers[3].name)?.paragraphs ?? [],
         credentials: [
           "College: CUNY Queens College, B.A., Communication Science and Disorders, Spring 2021",
           "Graduate: CUNY Graduate Center, Doctor of Audiology; Spring 2025"
@@ -433,10 +443,7 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
     profiles: [
       {
         ...teamMembers[5],
-        paragraphs: [
-          "“There is nothing more rewarding than helping a patient achieve better hearing. I believe that everyone’s hearing needs are unique, like a fingerprint, and my goal is to find customized solutions for all populations.”",
-          "Dr. Kira Savin specializes in providing personalized hearing solutions using the latest and most discreet technology available, including the Lyric® invisible extended-wear hearing device. Dr. Savin's areas of expertise include hearing rehabilitation, auditory counseling and retraining therapy, tinnitus management, and dispensing hearing aids and assistive listening technologies for adults. She holds a New York State license in audiology, as well as hearing aid dispensing. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology. Dr. Savin completed her residency at SUNY Downstate Medical Center in Brooklyn, NY. She previously worked at a private practice in New York City where she dispensed hearing aids and provided hearing care solutions, including customized musicians’ devices for all populations."
-        ],
+        paragraphs: providerForName(teamMembers[5].name)?.paragraphs ?? [],
         credentials: [
           "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
           "College: B.A., Communication Sciences and Disorders, Pace University, 2005",
@@ -453,9 +460,7 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
       },
       {
         ...teamMembers[6],
-        paragraphs: [
-          "Jennifer Tarlton joined Audiology Associates of Westchester in December 2022. She brings a multi-faceted knowledge in both management and administrative support fields. Jennifer provides the practice with financial, insurance administration and personnel management. She is charged with onboarding the new employees and ensuring the staff has what they need to provide the care and attention for all the patients. Jennifer also assists in establishing efficient and effective systems and processes, which result in patient satisfaction, employee and provider engagement and strong financial performance. Jennifer was drawn to a career in healthcare because both of her parents had successful and satisfying careers within the medical and mental healthcare industry. She is dedicated to bringing her knowledge and skills to a practice that truly enhances and makes a difference in its patients' lives."
-        ]
+        paragraphs: providerForName(teamMembers[6].name)?.paragraphs ?? [],
       }
     ]
   },
@@ -496,15 +501,15 @@ const legacyTeamProfiles: Array<{ group: string; profiles: LegacyTeamProfile[] }
 // brand page we maintain for that manufacturer; an empty string means we carry
 // the brand but have no page for it yet, so that card renders unlinked.
 const hearingAidBrands: Array<[string, string, string, string, string]> = [
-  ["Widex Hearing Aids", "Widex is a family-owned company that has been advancing the hearing aid industry since 1956. They specialize in tinnitus solutions and create high-quality hearing aids like their EVOKE™ line.", "/assets/duda/widexlogo.png", "Widex High Definition Hearing logo", brandPath("widex")],
-  ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. They create some of the most advanced products, including ones that are smartphone compatible and have activity tracking capabilities.", "/assets/duda/starkeylogo-250x131.png", "Starkey logo", brandPath("starkey")],
-  ["Phonak Hearing Aids", "Phonak hearing aids offer new solutions to hearing loss problems. Their products are continually changed to meet hearing loss problems. Their products include Phonak Audéo™ Marvel, Phonak Bolero™ Marvel, Phonak Sky™ Marvel, and many others.", "/assets/duda/phonaklogo-250x53.png", "Phonak logo", brandPath("phonak")],
-  ["Lyric Hearing Aids", "Lyric creates extended wear, nearly invisible hearing aids. In fact, they created the Phonak Lyric™, touted as the world’s only 100% invisible hearing aid. All of their products are designed to provide superb sound quality.", "/assets/duda/lyriclogo-250x128.png", "Lyric logo", "/lyric-invisible-hearing"],
-  ["Unitron Hearing Aids", "Unitron creates simple yet effective hearing aids that have won numerous Red Dot awards. Some of their products include Moxi Now, Stride M, Stride P, Moxi Fit, and Moxi Kiss.", "/assets/duda/unitronlogo-250x64.png", "Unitron Connect logo", ""],
-  ["Signia & Siemens Hearing Aids", "Signia has provided over 120 countries with high-quality hearing aids that deliver crystal-clear results. Siemens, under the Signia name, has provided customized audiology solutions for more than 100 years.", "/assets/duda/signia-logo.png", "Signia logo", brandPath("signia")],
+  ["Widex Hearing Aids", "Widex has been family-owned since 1956 and is known for very low processing latency and natural sound. Their current platform is Widex Allure. Worth knowing before you choose it: the Zen tinnitus programme is not available on Allure.", "/assets/duda/widexlogo.png", "Widex High Definition Hearing logo", brandPath("widex")],
+  ["Starkey Hearing Aids", "Starkey Hearing Technologies was established back in 1964. They design all kinds of hearing aids, including ones that are receiver in canal, completely in canal, behind the ear, in the canal, and in the ear. Their current platform is Starkey Omega AI, which HearAdvisor grades A and ranks second of the thirty-six prescription hearing aids it has tested. Starkey also offers the widest range of custom in-the-ear styles on this list.", "/assets/duda/starkeylogo-250x131.png", "Starkey logo", brandPath("starkey")],
+  ["Phonak Hearing Aids", "Phonak's current line is the Audéo Infinio Ultra Sphere and the new Audéo EON, alongside the rechargeable custom Virto R Infinio, the titanium in-the-canal models and CROS Infinio. Infinio Ultra Sphere is one of the few platforms with substantial independent measurement behind it.", "/assets/duda/phonaklogo-250x53.png", "Phonak logo", brandPath("phonak")],
+  ["Lyric Hearing Aids", "Lyric creates extended wear, nearly invisible hearing aids. Phonak describes the Lyric™ as fully invisible: it sits deep in the ear canal, is placed by a trained professional, and stays in for months at a time between visits.", "/assets/duda/lyriclogo-250x128.png", "Lyric logo", "/lyric-invisible-hearing"],
+  ["Unitron Hearing Aids", "Unitron makes straightforward hearing aids across receiver-in-canal and behind-the-ear styles. Ask us which of their current models we fit, and what they cost against the equivalent tier from the larger brands.", "/assets/duda/unitronlogo-250x64.png", "Unitron Connect logo", ""],
+  ["Signia & Siemens Hearing Aids", "Signia's current flagship is MaX, released in August 2026, which runs four neural networks together. The wider Signia IX range covers custom, instant-fit, slim and CROS styles, and carries Notch Therapy and tinnitus signals as standard.", "/assets/duda/signia-logo.png", "Signia logo", brandPath("signia")],
   ["Rexton Hearing Aids", "Rexton offers hearing aids and accessories to improve your quality of life. Their focus is on accessibility and personalization to make sure everyone in need of a hearing aid finds what they need.", "/assets/duda/rextonlogo-250x47.png", "Rexton logo", ""],
-  ["Oticon Hearing Aids", "Oticon has led the way for many changes in the hearing aid industry, recently with their Oticon Opn S™ and Oticon Opn Play™. These products can be used by children and adults who wish to hear clearly while enjoying an active life.", "/assets/duda/oticon-hearing-aids-logo.png", "Oticon logo", brandPath("oticon")],
-  ["Resound Hearing Aids", "ReSound has been offering hearing loss solutions to people of all ages since 1943. They provide advanced, cutting edge technology, earning them the CES Innovation Award, the Die Goldene Concha award, the Golden Lobe Award, and more.", "/assets/duda/resoundlogo-250x102.png", "ReSound logo", brandPath("resound")],
+  ["Oticon Hearing Aids", "Oticon's current platform is Oticon Reveal, with Oticon Intent still in the range. Reveal ships Bluetooth LE Audio, Auracast and a telecoil working from day one, and carries Tinnitus SoundSupport on all four technology levels.", "/assets/duda/oticon-hearing-aids-logo.png", "Oticon logo", brandPath("oticon")],
+  ["Resound Hearing Aids", "ReSound has been making hearing aids since 1943 and has a long track record on wireless connectivity. Their current platforms are Vivia and Sensia, with a wide style range including bimodal and CROS fittings.", "/assets/duda/resoundlogo-250x102.png", "ReSound logo", brandPath("resound")],
   ["Caption Call", "CaptionCall makes a transcript of phone conversations so you can see what the other person is saying. This is a real-time solution for those with hearing loss who have trouble using a phone.", "/assets/duda/caption-call-trans-bg1.png", "Caption Call logo", ""],
   ["CapTel", "CapTel is a phone that amplifies the noise you want while reducing the noise you don’t want. It also provides a caption and transcript of the conversation.", "/assets/duda/captel-logo.png", "CapTel logo", ""]
 ];
@@ -580,7 +585,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
         title: "Quality Audiology Services for All of Greenwich, CT!",
         background: "blue",
         paragraphs: [
-          "If you are experiencing hearing loss or other auditory problems in Greenwich, CT, help is a short trip away. Located an easy 15-minute drive away in Harrison, NY, Audiology Associates of Westchester is your source for comprehensive hearing protection treatments and products that will help restore your hearing and reduce discomfort from hearing loss, tinnitus, or other conditions.",
+          "Greenwich patients cross the state line to our Harrison office, about fifteen minutes away on Mamaroneck Avenue. Hearing aids do not restore hearing, and we will not tell you otherwise. What a well-verified fitting does is give you back speech clarity in the rooms where you are currently losing it, and there is a measurable difference between a device set to the manufacturer default and one measured in your own ear.",
           "If you are experiencing hearing loss or discomfort related to auditory issues, reach out to our professional audiologists today. Our hearing doctors are here to help you manage your symptoms and regain some control over your condition. Our hearing doctors are proud to serve the entire Greenwich, CT area!"
         ],
         mapQuery: "Greenwich, CT",
@@ -620,7 +625,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
     heading: "Audiologist in Harrison, NY",
     paragraphs: [
       "Approximately twenty two miles north of Manhattan lies the coterminous town-village of Harrison, NY. Considered one of the most affluent suburbs in Westchester County, Harrison is home primarily to families and many individuals commute to New York City for work. About twenty percent of the population includes children under the age of eighteen.",
-      "Regardless of your age, hearing loss and audiology issues can arise and make every day tasks a bit more difficult. Whether you are experiencing early signs of hearing loss or you need your hearing aid fitted to make it more comfortable, Audiology Associates of Westchester can help! Our audiology services cover everything from your initial hearing tests to tinnitus therapy and more. If you are experiencing any hearing loss symptoms, don't hesitate to schedule an appointment with our experienced team."
+      "Harrison is our main office, on Mamaroneck Avenue. Most people arrive because one room has become hard: a restaurant, a conference call, a car with the radio on. The first appointment is a full diagnostic evaluation, and we go through the results with you the same day. Tinnitus care, hearing protection, fittings and repairs all run out of this office."
     ],
     sections: [
       {
@@ -672,7 +677,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
         background: "blue",
         paragraphs: [
           "If you live in Somers, Mahopac, Putnam Valley, or the surrounding areas and are experiencing hearing loss symptoms, be sure to reach out to us today. Our caring team will work with you to find a solution that takes into consideration your personal circumstance and comfort. Make an appointment to meet with our audiologist in Somers, NY today. We look forward to working with you.",
-          "At Audiology Associates of Westchester, we are proud to announce our newest office in Somers, NY is now open. This location allows our talented hearing doctors and staff to better serve patients throughout Westchester County. Whether you are looking for tinnitus therapy, hearing protection, or have a question about hearing aids and would like to schedule a hearing test before going through with a fitting, we offer a number of dedicated audiology services to meet your needs.",
+          "Our Somers office has served northern Westchester and Putnam since 2021. Dr. Caitlin Dold and Dr. Julia Rivera both see patients here as well as at Harrison, so you can usually keep the same audiologist whichever office is easier for you. Hearing tests, fittings, tinnitus care, hearing protection and repairs all happen at this location.",
           "We are proud to offer hearing aids and accessories from top-rated brands in the industry including Lyric®, Oticon, Phonak, and more."
         ]
       }
@@ -708,7 +713,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
     paragraphs: [
       "Scarsdale is a town and village in Westchester County, New York. Living in Scarsdale offers residents a suburban feel and most residents own their homes. In Scarsdale there are a lot of restaurants, coffee shops, and parks. The public schools in Scarsdale are highly rated, making this a great place to live and start a family.",
       "The scenic village is just about 35 minutes from New York City and has been ranked the richest town on the East Coast for years. If you live in the area and are noticing hearing loss symptoms, get in touch with the team at Audiology Associates of Westchester to schedule an appointment.",
-      "It is our pleasure to offer hearing aid fittings and other audiology services to residents in Scarsdale, NY and the surrounding areas. Our hearing doctors take your health and safety seriously. We understand that hearing loss can affect every area of your life, from relations to daily activities. We want you to understand all of your options and be able to pick the treatment that best fits your lifestyle."
+      "Scarsdale patients are seen at our Harrison office on Mamaroneck Avenue. A first visit is a full diagnostic evaluation rather than a screening, and you leave the same appointment knowing what your audiogram says and what it means for the rooms you actually struggle in. If hearing aids are the answer, every fitting is verified with a probe microphone in your own ear."
     ],
     sections: [
       {
@@ -731,7 +736,10 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
 
 function HomePage() {
   return (
-    <main className="bg-[var(--background)]">
+    // A <div>, not <main>: app/layout.tsx already wraps every page in
+    // <main id="main-content">, and a second nested landmark leaves screen
+    // readers with two "main" regions on the home page.
+    <div className="bg-[var(--background)]">
       <InteractiveEarHero />
       <HomeQuickActionBand />
 
@@ -779,9 +787,9 @@ function HomePage() {
           </div>
           <div className="space-y-5 text-lg leading-8 text-[var(--foreground)]">
             <p>
-              Hearing loss can be frustrating and cause you to miss out on everything around you. Whether you want
-              to watch TV without turning the volume all the way up, you want to hear your grandchildren, or you
-              want to have a conversation with a friend, hearing impairment can get in the way.
+              Most people do not notice hearing loss as silence. They notice that the television is louder than
+              anyone else in the house wants it, that a grandchild has to repeat themselves twice, that a
+              restaurant has become work rather than dinner.
             </p>
             <p>
               Fortunately, the audiologist at Audiology Associates of Westchester can help you regain quality of life
@@ -921,8 +929,7 @@ function HomePage() {
               and the rest of Westchester County.
             </p>
             <p>
-              Give us a call today to schedule an appointment with our hearing doctors at one of our two convenient
-              locations. Additionally, we are proud to introduce the opening of our newest office in{" "}
+              Call to book with one of our audiologists at either office: Harrison, on Mamaroneck Avenue, or{" "}
               <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Somers-NY">
                 Somers, NY
               </Link>
@@ -962,7 +969,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
@@ -1447,8 +1454,15 @@ function cityHeroProps(city: AreaCity, office: ReturnType<typeof officeForAreaPa
   return {
     badge: `${city.name}, ${city.state}`,
     eyebrow: "Local hearing care",
-    title: `Trusted hearing care near ${city.name}`,
-    subtitle: `${flavor?.intro || city.localContext} ${city.travelNote}`,
+    // "Trusted" is the practice awarding itself an adjective; "audiologist"
+    // is the word people actually search for, and lib/site.ts already builds
+    // exactly this string for the <title>.
+    title: `Audiologists near ${city.name}, ${city.state}`,
+    // The hero carries the listening problem; the body below carries the
+    // office and the travel note. This used to concatenate both, so the first
+    // thing a visitor read was the same 38 words that appeared again 400px
+    // down the page — the clearest doorway-page tell a human reader registers.
+    subtitle: flavor?.intro || city.localContext,
     accent: cityHeroAccents[city.slug] || (city.state === "CT" ? "#ffd45a" : city.nearestOffice === "somers" ? "#9bd3f4" : "#7bdcb5"),
     motif: cityHeroMotifs[city.slug] || "village",
     stats: [
@@ -1697,7 +1711,7 @@ function AreaCityLocalFlavorSection({ city, flavor }: { city: AreaCity; flavor: 
         <div className="mt-9 bg-white p-7 text-black">
           <h3 className="text-[28px] font-black leading-tight">Common hearing priorities for {city.name} patients</h3>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {flavor.hearingPriorities.map((priority) => (
+            {(flavor.hearingPriorities || city.patientNeeds).map((priority) => (
               <div className="flex gap-3 text-[20px] leading-[1.35]" key={priority}>
                 <CheckCircle2 className="mt-1 shrink-0 text-[#005a9c]" size={23} aria-hidden="true" />
                 <span>{priority}</span>
@@ -2263,7 +2277,7 @@ function HelpServiceSeoSection({ service }: { service: HelpService }) {
           {[
             {
               title: "Bring real examples",
-              body: service.signs.slice(0, 2).join(" ")
+              body: service.signs.slice(0, 2).map((sign) => sign.replace(/[.\s]*$/, ".")).join(" ")
             },
             {
               title: "Know the likely path",
@@ -2283,6 +2297,66 @@ function HelpServiceSeoSection({ service }: { service: HelpService }) {
       </div>
     </section>
   );
+}
+
+// ── care blocks, wired by path ──────────────────────────────────────────────
+//
+// The tinnitus hub is the site's second-biggest traffic source and its worst
+// converter: the pages answer the question and then hand the reader nowhere to
+// go. These three wrappers are the answer to that, and they are lookups rather
+// than layout decisions so the same block can be dropped into the four
+// different page templates the hub is spread across without drifting.
+
+function TinnitusRedFlags({ page }: { page: SitePage }) {
+  if (!TINNITUS_CARE_PAGES.has(page.path)) return null;
+
+  return (
+    <section className="bg-white pt-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <RedFlagPanel
+          flags={TINNITUS_RED_FLAGS}
+          intro="Most tinnitus is not an emergency, and most of it is manageable. These are the exceptions, and they are the ones not to sit on."
+        />
+      </div>
+    </section>
+  );
+}
+
+function TinnitusVisitAndClinician({ page }: { page: SitePage }) {
+  if (!TINNITUS_CARE_PAGES.has(page.path)) return null;
+
+  return (
+    <>
+      <VisitSteps
+        footnote={TINNITUS_VISIT_FOOTNOTE}
+        heading="What a tinnitus appointment actually involves"
+        steps={TINNITUS_VISIT_STEPS}
+      />
+      <ClinicianCard {...TINNITUS_LEAD_CLINICIAN} />
+    </>
+  );
+}
+
+// `inline` for the templates that already have a container around the body
+// column; the banded default for the ones where this sits between full-width
+// sections.
+function PageAudiogram({ inline = false, page }: { inline?: boolean; page: SitePage }) {
+  if (!AUDIOGRAM_PAGES.has(page.path)) return null;
+  if (inline) return <AudiogramFigure />;
+
+  return (
+    <section className="bg-white py-[52px]">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <AudiogramFigure />
+      </div>
+    </section>
+  );
+}
+
+function PageSpecTable({ page }: { page: SitePage }) {
+  const specTable = specTableFor(page.path);
+  if (!specTable) return null;
+  return <SpecTable {...specTable} />;
 }
 
 function TinnitusHubLinks() {
@@ -2328,6 +2402,7 @@ function TinnitusTopicPage({ page, topic }: { page: SitePage; topic: TinnitusPag
           </div>
         </div>
       </section>
+      <TinnitusRedFlags page={page} />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <div className="grid gap-7">
@@ -2360,6 +2435,7 @@ function TinnitusTopicPage({ page, topic }: { page: SitePage; topic: TinnitusPag
           </div>
         </div>
       </section>
+      <TinnitusVisitAndClinician page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Related Tinnitus Topics</h2>
@@ -2393,6 +2469,7 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
     <>
       <HowWeCanHelpBreadcrumbs page={page} />
       <LocalHero {...helpHeroProps(service)} />
+      <TinnitusRedFlags page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
@@ -2444,7 +2521,7 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
             ))}
           </ol>
           <div className="mt-[48px] bg-[#dbe9f3] p-8 text-black">
-            <h2 className="text-[34px] font-black leading-tight max-md:text-[28px]">Why Professional Audiology Care Matters</h2>
+            <h2 className="text-[34px] font-black leading-tight max-md:text-[28px]">{service.whyItMattersTitle ?? "Why Professional Audiology Care Matters"}</h2>
             <p className="mt-5 text-[22px] leading-[1.35] max-md:text-[18px]">{service.whyItMatters}</p>
           </div>
           <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Related Care</h2>
@@ -2458,7 +2535,9 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageAudiogram page={page} />
       <HelpServiceSeoSection service={service} />
+      <TinnitusVisitAndClinician page={page} />
       {page.path === tinnitusRootPath ? <TinnitusHubLinks /> : null}
       <AreaFaqSection page={page} title={`${service.title} FAQs`} />
       <ProductCta />
@@ -2482,7 +2561,11 @@ function HearingLossEducationPage({ page }: { page: SitePage }) {
             </h2>
             <LiveRule />
             <div className="mt-[38px] space-y-[30px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
-              {page.body.slice(0, 5).map((paragraph) => (
+              {/* No slice. This used to cap at five paragraphs, which meant
+                  /get-answers rendered 2 of its 18 answers and
+                  /hearing-loss-misconceptions rendered 2 of its 8. The rest was
+                  written, shipped and invisible. */}
+              {page.body.map((paragraph) => (
                 <LegacyParagraph key={paragraph} text={paragraph} />
               ))}
             </div>
@@ -2828,7 +2911,7 @@ function AppointmentDecisionBand({ page, heading = "Not sure what to schedule?" 
           <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Appointment guidance</p>
           <h2 className="mt-3 text-[34px] font-black leading-tight max-md:text-[28px]">{heading}</h2>
           <p className="mt-3 text-[18px] leading-7 text-white/84">
-            Call the team and describe what you are noticing. The office can help choose the right first visit, location, and next step.
+            Call (914) 949-0034 and describe what you are noticing. We will tell you which appointment to book and which office is the shorter drive.
           </p>
         </div>
         <div>
@@ -3053,7 +3136,7 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
       {lines.map((line, index) => {
         const isQuestion = line.endsWith("?");
         const isLiveSubheading =
-          /^(Reason #\d+:|Misconception:|Call (Our|Us|now)|Audiology Associates of Westchester Privacy Policy|Quality Hearing Aids|Your Source of Ear Protection|Our hearing care professionals|Hearing aids, hearing protection|Initial Hearing Consultation|Types of Hearing Tests|Audiometric Test|Tympanometry|OAEs|The Effects of Hearing Loss|Types of Hearing Loss|Conductive Hearing Loss:|Sensorineural Hearing Loss:|Mixed Hearing Loss:|Central Hearing Loss:|Custom Ear Molds and Plugs|Cell Phone Accessories|Hearing Aid Accessories|FAQs$)/.test(line);
+          /^(Reason #\d+:|Misconception:|Call (Our|Us|now)|Audiology Associates of Westchester Privacy Policy|Quality Hearing Aids|Your Source of Ear Protection|Our hearing care professionals|Hearing aids, hearing protection|Initial Hearing Consultation|Types of Hearing Tests|Audiometric Test|Tympanometry|OAEs|The Effects of Hearing Loss|Types of Hearing Loss|Conductive Hearing Loss:|Sensorineural Hearing Loss:|Mixed Hearing Loss:|Custom Ear Molds and Plugs|Cell Phone Accessories|Hearing Aid Accessories|FAQs$)/.test(line);
         const isHeading = (line.length < 140 && !/[.!]$/.test(line) && index > 0) || isLiveSubheading;
         if (isHeading) {
           return (
@@ -3184,8 +3267,8 @@ function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
             </h2>
             <LiveRule />
             <div className="mt-[30px] space-y-5 text-[21px] leading-8 text-black max-md:text-[18px]">
-              <p>{flavor?.intro || city.localContext}</p>
-              <p>{city.travelNote}</p>
+              <p>{flavor ? city.localContext : city.travelNote}</p>
+              {flavor ? <p>{city.travelNote}</p> : null}
               <p>
                 Nearby communities include {city.nearby.join(", ")}. The most practical office is usually{" "}
                 <Link className="font-bold text-[#005a9c] underline" href={officePath}>
@@ -3413,21 +3496,31 @@ function BlogArticlePage({ page }: { page: SitePage }) {
               <p className={`text-[14px] font-black uppercase tracking-[0.18em] ${styles.label}`}>{meta?.articleType || page.sections[0] || "Hearing health guide"}</p>
               <h1 className="mt-4 text-[54px] font-black leading-[1.03] text-[#262626] max-md:text-[38px]">{page.h1}</h1>
               <p className="mt-5 max-w-[760px] text-[22px] leading-[1.45] text-[#4b4b4b] max-md:text-[18px]">{page.metaDescription}</p>
+              {/* Three things a reader can use, and nothing else. "Frame" was an
+                  internal editorial taxonomy ("Buyer advisor") printed to
+                  patients on 65 pages, and "Read time" fell back to a hard-coded
+                  "5 min read" that was wrong by roughly 2x on every article that
+                  hit it. A byline that reads "Smart shopping without the hype"
+                  is a tagline, not a person, so it only renders when a real
+                  clinician is attached. */}
               <div className="mt-7 grid gap-3 text-[16px] leading-6 text-[#555] sm:grid-cols-2">
-                <p>
-                  <span className="font-black text-[#262626]">Frame:</span> {meta?.frame || page.sections[1] || "Guide"}
-                </p>
-                <p>
-                  <span className="font-black text-[#262626]">Read time:</span> {meta?.readTime || "5 min read"}
-                </p>
-                <p>
-                  <span className="font-black text-[#262626]">Byline:</span>{" "}
-                  <ProviderCredit fallback={meta?.byline || siteName} slug={meta?.authorSlug} />
-                </p>
-                <p>
-                  <span className="font-black text-[#262626]">Reviewed by:</span>{" "}
-                  <ProviderCredit fallback={meta?.reviewedBy || `${siteName} team`} slug={meta?.reviewedBySlug} />
-                </p>
+                {meta?.readTime ? (
+                  <p>
+                    <span className="font-black text-[#262626]">Read time:</span> {meta.readTime}
+                  </p>
+                ) : null}
+                {meta?.authorSlug ? (
+                  <p>
+                    <span className="font-black text-[#262626]">Written by:</span>{" "}
+                    <ProviderCredit fallback={siteName} slug={meta.authorSlug} />
+                  </p>
+                ) : null}
+                {meta?.reviewedBySlug ? (
+                  <p>
+                    <span className="font-black text-[#262626]">Medically reviewed by:</span>{" "}
+                    <ProviderCredit fallback={`${siteName} team`} slug={meta.reviewedBySlug} />
+                  </p>
+                ) : null}
               </div>
             </div>
             {image ? (
@@ -3509,6 +3602,25 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                   );
                 })}
               </div>
+              <PageAudiogram inline page={page} />
+              {/* These answers were being emitted as FAQPage JSON-LD while
+                  appearing nowhere in the visible HTML. Google's structured-data
+                  policy requires the content to be on the page, and three useful
+                  answers per article were being withheld from readers for no
+                  reason. */}
+              {page.faqs.length ? (
+                <section className="mt-12 border-t border-[#dedede] pt-8" aria-labelledby="article-faqs">
+                  <h2 className="text-[28px] font-black leading-tight text-[#262626]" id="article-faqs">Common questions</h2>
+                  <div className="mt-6 space-y-6">
+                    {page.faqs.map((faq) => (
+                      <article key={faq.question}>
+                        <h3 className="text-[21px] font-black leading-tight text-[#262626]">{faq.question}</h3>
+                        <p className="mt-3 text-[19px] leading-[1.5] text-[#333]">{faq.answer}</p>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              ) : null}
               {meta?.sources?.length ? (
                 <section className="mt-12 border-t border-[#dedede] pt-8" aria-labelledby="article-sources">
                   <h2 className="text-[28px] font-black leading-tight text-[#262626]" id="article-sources">Sources and further reading</h2>
@@ -3530,7 +3642,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
 
       <BlogPostRelated page={page} />
       <BlogInternalLinks page={page} />
-      <AppointmentDecisionBand page={page} heading="Have symptoms like this? Choose a practical next step." />
+      <AppointmentDecisionBand page={page} heading="Not sure whether to book a hearing test or an ear check?" />
     </>
   );
 }
@@ -3693,7 +3805,7 @@ function WhyChooseUsPage({ page }: { page: SitePage }) {
             Why Choose the Hearing Doctors at Audiology Associates of Westchester?
           </h1>
           <p className="mt-6 max-w-3xl text-[22px] leading-8 text-white/88 max-md:text-[19px]">
-            Our hearing tests are effective, our service is personal, and our team helps you make clear, confident decisions about your hearing.
+            A full diagnostic evaluation, results explained the same visit, and every hearing aid fitting measured in your own ear.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 font-black text-white hover:bg-[#004a82] sm:w-auto" data-track="phone-why-choose-us" href={primaryPhoneHref}>
@@ -3714,10 +3826,10 @@ function WhyChooseUsPage({ page }: { page: SitePage }) {
           <div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">A patient-first practice</p>
             <h2 className="mt-3 text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
-              Hearing care should feel clear, careful, and personal.
+              What the first appointment actually settles.
             </h2>
             <p className="mt-5 text-[20px] leading-8 text-[var(--muted)]">
-              Hearing loss can affect relationships, daily activities, confidence, and connection. Our role is to explain what is happening, offer practical solutions, and support you before, during, and after your appointment.
+              We test, we explain what the test found, and we tell you what technology will and will not change about the rooms you named. If the answer is that you do not need hearing aids yet, that is what you will hear.
             </p>
             <div className="mt-7 grid gap-3 sm:grid-cols-3">
               {["Testing", "Fitting", "Follow-up"].map((item) => (
@@ -4055,6 +4167,8 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
         </div>
       </section>
 
+      <TinnitusRedFlags page={page} />
+
       <section className="bg-white py-16">
         <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[1.02fr_0.98fr] max-md:px-5">
           <div className="rounded-2xl border border-[#d5e7f4] bg-[#f7fbfd] p-8 shadow-[0_18px_45px_rgba(0,90,156,0.10)]">
@@ -4107,6 +4221,9 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
           </div>
         </section>
       ) : null}
+
+      <PageAudiogram page={page} />
+      <TinnitusVisitAndClinician page={page} />
 
       <ServiceDecisionGuide page={page} />
       <TrustProcessSection />
@@ -4325,13 +4442,21 @@ function LivePageBody({ page }: { page: SitePage }) {
           <div className="mt-[38px]">
             <LiveTextBlock lines={paragraphs.length ? paragraphs : [page.metaDescription]} />
           </div>
+          <PageSpecTable page={page} />
+          <PageAudiogram inline page={page} />
         </div>
       </section>
+
+      {/* This is the fallback body, used by blog posts with no blogMeta and by
+          the comparison pages. BlogArticlePage renders its own FAQ block; this
+          branch did not, so five pages emitted FAQPage data for answers that
+          appeared nowhere. */}
+      <FaqSection page={page} />
 
       {page.type === "service" ? <CoreServiceDetail page={page} /> : null}
       {isBlog ? <BlogPostRelated page={page} /> : null}
       {isBlog ? <BlogInternalLinks page={page} /> : null}
-      {isBlog ? <AppointmentDecisionBand page={page} heading="Have symptoms like this? Choose a practical next step." /> : null}
+      {isBlog ? <AppointmentDecisionBand page={page} heading="Not sure whether to book a hearing test or an ear check?" /> : null}
     </>
   );
 }
@@ -5296,13 +5421,37 @@ function FinalCta() {
   );
 }
 
+// Page types whose own template already renders page.faqs somewhere. Every
+// other type gets the shared section below, so the FAQPage structured data can
+// never describe content that is not on the page — which is what was happening
+// on 57 pages, including seven location pages and every product comparison.
+const TEMPLATES_WITH_OWN_FAQ_SECTION = new Set([
+  "area-city",
+  "area-county",
+  "service-areas-index",
+  "service",
+  "how-we-can-help-index",
+  "blog-post",
+  "team",
+  "provider",
+  "contact",
+  "home",
+  // Product detail pages render their own FAQ block, and /reviews renders its
+  // questions inline. Verified empirically: every question in each page's
+  // FAQPage node appears exactly once in the rendered HTML.
+  "product",
+  "reviews"
+]);
+
 function PageWithSchema({ page, children }: { page: SitePage; children: ReactNode }) {
   const schema = schemaForPage(page);
+  const needsSharedFaqs = page.faqs.length > 0 && !TEMPLATES_WITH_OWN_FAQ_SECTION.has(page.type);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       {children}
+      {needsSharedFaqs ? <FaqSection page={page} /> : null}
     </>
   );
 }

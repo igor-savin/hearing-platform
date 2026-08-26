@@ -66,7 +66,7 @@ export const serviceDecisionGuides: Record<string, ServiceDecisionGuide> = {
     appointmentIncludes: [
       "Review of hearing results, dexterity, lifestyle, phone needs, and cosmetic preferences.",
       "Device selection based on clinical findings and real listening priorities.",
-      "Orientation, verification when appropriate, and follow-up planning."
+      "Orientation, real-ear verification, and follow-up planning."
     ],
     questionsToAsk: [
       "How will this recommendation help in restaurants, meetings, cars, or family gatherings?",

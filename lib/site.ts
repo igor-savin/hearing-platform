@@ -681,7 +681,7 @@ function cityAreaFaqs(page: SitePage) {
   return [
     {
       question: `Where can I get a hearing test near ${city.name}, ${city.state}?`,
-      answer: `${city.name} patients can contact Audiology Associates of Westchester about hearing testing through ${officeText}. ${city.travelNote} The office can confirm appointment availability and whether diagnostic testing, hearing aid support, or tinnitus care is the right next step.`
+      answer: `At ${officeText}. A first appointment is a full diagnostic evaluation rather than a screening: case history, otoscopy, air and bone thresholds, and speech testing, with the results explained to you in the same visit. Call (914) 949-0034 to book one.`
     },
     {
       question: `Which audiology services are most relevant for ${city.name} patients?`,
@@ -691,21 +691,27 @@ function cityAreaFaqs(page: SitePage) {
       question: localEnvironment
         ? `Can hearing aids help with ${localEnvironment.title.toLowerCase()} around ${city.name}?`
         : `Can hearing aids help in everyday listening situations around ${city.name}?`,
+      // Answer the question that was asked. This used to reprint
+      // localEnvironment.body, which already appears in the section above and
+      // in the FAQPage JSON-LD, so ~52 words of every city page rendered three
+      // times. The first rewrite fixed the duplication but made the answer
+      // generic, so a question about tinnitus at night was answered with a
+      // remote microphone. The environment now has to appear in the answer.
       answer: localEnvironment
-        ? `${localEnvironment.body} A professional hearing aid fitting can account for these ${city.name} listening environments through technology selection, verification, and follow-up programming.`
-        : `Many patients notice difficulty in restaurants, cars, appointments, family gatherings, or outdoor settings. A hearing evaluation can identify whether hearing aids or other support may help.`
+        ? `Yes, though the setting decides how. For ${localEnvironment.title.toLowerCase()} we build a dedicated program around that situation rather than turning everything up, verify it against your own ear with a probe microphone, and adjust it at the follow-up once you have lived with it. If it still is not working then, we change it.`
+        : `Yes. We build the fitting around the two or three rooms where you are actually losing words, verify it in your ear, and adjust it at follow-up once you have lived with it.`
     },
     {
       question: secondEnvironment
         ? `Do ${city.name} patients need hearing protection or tinnitus support for ${secondEnvironment.title.toLowerCase()}?`
         : `Do ${city.name} patients have access to hearing protection and tinnitus support?`,
       answer: secondEnvironment
-        ? `${secondEnvironment.body} Patients from ${city.name} can ask about tinnitus therapy, custom hearing protection, and hearing aid settings that match local routines.`
-        : `Yes. Patients from ${city.name} can ask about tinnitus therapy, custom hearing protection, and hearing aid settings that match local routines.`
+        ? `Yes, and ${secondEnvironment.title.toLowerCase()} is exactly the case custom protection is made for. Plugs are taken from impressions of your own ears, so musicians, shooters, swimmers and people working around machinery each get a different filter. Tinnitus care runs out of the Harrison office, where several of our audiologists hold the American Board of Audiology's tinnitus certificate.`
+        : `Yes. Custom hearing protection is taken from impressions of your own ears, so musicians, shooters, swimmers and people working around machinery each get a different filter. Tinnitus care runs out of the Harrison office, where several of our audiologists hold the American Board of Audiology's tinnitus certificate.`
     },
     {
       question: `Does the practice serve communities near ${city.name}, ${city.state}?`,
-      answer: `Yes. Nearby communities connected to this service area include ${nearbyText}. ${county ? `${city.name} is part of the ${county.name}, ${county.state} service area.` : ""} Patients should call to confirm the best office and appointment timing.`
+      answer: `Yes. Nearby communities connected to this service area include ${nearbyText}. ${county ? `${city.name} is part of the ${county.name}, ${county.state} service area.` : ""} Both offices see patients from across the county, so book whichever is the easier drive for you.`
     }
   ];
 }
@@ -832,18 +838,13 @@ function baseFaqs(page: SitePage) {
     ];
   }
 
-  return [
-    {
-      question: "How can I get personalized hearing care advice?",
-      answer:
-        "The educational information on this site is general. For personalized recommendations, schedule an appointment with Audiology Associates of Westchester."
-    },
-    {
-      question: "Which locations does the practice serve?",
-      answer:
-        "The practice serves Westchester County and nearby communities including Harrison, Somers, White Plains, Scarsdale, Rye, Mt. Kisco, and Greenwich."
-    }
-  ];
+  // No generic fallback. These two questions were being emitted as FAQPage
+  // structured data on 38 pages that render neither of them, including /,
+  // /blog, /careers, /patient-forms and /privacy. Google's structured-data
+  // policy requires the content to be visible on the page, and a FAQPage on a
+  // privacy policy is not defensible under any reading of it. A page with no
+  // real questions now emits no FAQ markup.
+  return [];
 }
 
 function relatedLinks(page: SitePage) {
@@ -1209,9 +1210,9 @@ const aboutTrustPages: SitePage[] = [
       "Dr. Cliff Approved Providers are selected for a commitment to evidence-informed audiology, patient education, and hearing care that goes beyond simply choosing a device.",
       "For patients, this means working with a team that emphasizes comprehensive evaluations, clear explanations, professional fittings, verification, follow-up care, and practical support for real listening environments.",
       "The program is connected with HearingUp, an educational resource founded by Dr. Cliff Olson, Au.D., to help patients understand what high-quality hearing care should include.",
-      "Best-practice hearing care may include a detailed case history, otoscopy, diagnostic testing, speech understanding measures, hearing aid verification, real-ear measurement when appropriate, counseling, device orientation, and ongoing adjustments.",
-      "Our goal is to help patients understand not only what they hear on a test, but how hearing care can improve conversation, comfort, confidence, and participation in daily life.",
-      "If you are comparing hearing care options in Westchester County or nearby communities, this recognition offers another reason to feel confident scheduling with Audiology Associates of Westchester."
+      "Best-practice hearing care means a detailed case history, otoscopy, diagnostic testing, speech understanding measures, real-ear measurement at every hearing aid fitting, counseling, device orientation, and ongoing adjustments. Not when convenient — every fitting. That is what this recognition is for.",
+      "We explain what the audiogram actually means for the rooms you are in — the restaurant, the meeting, the car — not just where the line sits on the chart.",
+      "If you are comparing providers, the question worth asking each of them is whether they measure the fitting in your ear with a probe microphone, at every fitting. We do."
     ],
     faqs: [],
     related: []
@@ -1411,7 +1412,11 @@ const serviceAreaPages: SitePage[] = [
     url: `${baseUrl}${cityPath(city)}`,
     title: `${city.name}, ${city.state}`,
     metaTitle: `Audiologist near ${city.name}, ${city.state} | ${siteName}`,
-    metaDescription: `${city.localContext} Schedule hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, or hearing aid repair near ${city.name}.`,
+    // The old tail ("Schedule hearing testing, hearing aid fitting, tinnitus
+    // therapy, hearing protection, or hearing aid repair near X") ate 118 of
+    // the ~160 characters a searcher ever sees, and repeated "hearing" five
+    // times. localContext already names the office and what happens there.
+    metaDescription: city.localContext,
     h1: `Audiologist Near ${city.name}, ${city.state}`,
     type: "area-city",
     lastModified: "2026-07-06",

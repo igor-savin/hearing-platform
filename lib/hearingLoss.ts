@@ -40,7 +40,7 @@ const conditions: Condition[] = [
     title: "Sensorineural Hearing Loss",
     metaTitle: "Sensorineural Hearing Loss | Audiology Associates of Westchester",
     metaDescription:
-      "What sensorineural hearing loss is, what causes it, and how it is evaluated and managed — from Audiology Associates of Westchester in Harrison and Somers, NY.",
+      "What sensorineural hearing loss is, what causes it, and how it is evaluated and managed, from Audiology Associates of Westchester in Harrison and Somers, NY.",
     pullQuote:
       "Sensorineural hearing loss is the most common permanent type, and hearing aids are the most common way to restore access to sound.",
     patientQuestion: "Is sensorineural hearing loss permanent, and can it be treated?",
@@ -49,15 +49,16 @@ const conditions: Condition[] = [
       "Adult straining to follow speech that sounds muffled from sensorineural hearing loss"
     ),
     body: [
-      "Sensorineural hearing loss is the most common type of permanent hearing loss. It happens when the tiny hair cells in the inner ear (the cochlea) or the auditory nerve that carries sound to the brain are damaged. Because these structures do not regenerate, this type of loss is usually permanent — but it is very often manageable.",
+      "Sensorineural hearing loss is the most common type of permanent hearing loss. It happens when the tiny hair cells in the inner ear (the cochlea) or the auditory nerve that carries sound to the brain are damaged.",
+      "Those structures do not regenerate, so this type of loss is usually permanent. It is also very often manageable, and for most people that means hearing aids.",
       "What it feels like",
-      "Many people describe sounds as present but unclear: you can hear that someone is talking, but individual words blur, especially in background noise. High-pitched sounds — children's voices, consonants like s, f, and th — are often the first to fade.",
+      "Many people describe sounds as present but unclear: you can hear that someone is talking, but individual words blur, especially in background noise. The high pitches fade first: children's voices, and consonants like s, f, and th.",
       "Common causes",
       "The most frequent contributors are aging and cumulative noise exposure. Genetics, certain medications that can affect the ear (ototoxic drugs), viral illness, and medical conditions can also play a role. Often more than one factor is involved.",
       "How it is evaluated",
       "A comprehensive hearing evaluation measures the softest sounds you can hear across pitches and how clearly you understand speech. Those results show the pattern and degree of loss and guide the recommendation, whether that is hearing aids, medical referral, or monitoring.",
       "How it is managed",
-      "Because the loss is in the inner ear, sound needs to be made clearer and better organized rather than simply louder. Well-fit hearing aids are the most common solution. For severe or profound loss where hearing aids no longer provide enough clarity, a cochlear implant evaluation may be appropriate.",
+      "Because the loss is in the inner ear, volume alone does not fix it. Sound has to be made clearer and better organized. Well-fit hearing aids are the most common solution. For severe or profound loss where hearing aids no longer provide enough clarity, a cochlear implant evaluation may be appropriate.",
       "When to move faster",
       SAFETY,
       "A practical next step",
@@ -65,14 +66,14 @@ const conditions: Condition[] = [
     ],
     keyTakeaways: [
       "Sensorineural loss involves the inner ear or hearing nerve and is usually permanent.",
-      "It typically makes speech unclear rather than simply quiet, especially in noise.",
+      "It usually makes speech unclear rather than quiet, and background noise makes that worse.",
       "Hearing aids are the most common treatment; cochlear implants help when loss is severe."
     ],
     faqs: [
       {
         question: "Can sensorineural hearing loss be reversed?",
         answer:
-          "In most cases it is permanent because inner-ear hair cells do not regrow. Sudden sensorineural hearing loss is the important exception — it is a medical urgency, and prompt treatment can sometimes recover hearing."
+          "In most cases it is permanent because inner-ear hair cells do not regrow. Sudden sensorineural hearing loss is the important exception. It is a medical emergency, and prompt treatment can sometimes recover hearing."
       },
       {
         question: "Will hearing aids help sensorineural hearing loss?",
@@ -100,22 +101,23 @@ const conditions: Condition[] = [
     title: "Conductive Hearing Loss",
     metaTitle: "Conductive Hearing Loss | Audiology Associates of Westchester",
     metaDescription:
-      "Conductive hearing loss explained — outer- and middle-ear causes, why it is often treatable, and how it is evaluated in Harrison and Somers, NY.",
+      "Conductive hearing loss explained: outer- and middle-ear causes, why it is often treatable, and how it is evaluated in Harrison and Somers, NY.",
     pullQuote:
-      "Conductive hearing loss is a blockage of sound in the outer or middle ear — and unlike most hearing loss, it is often reversible.",
-    patientQuestion: "My ear feels blocked and sounds are muffled — is that conductive hearing loss?",
+      "Conductive hearing loss is a blockage of sound in the outer or middle ear. Unlike most hearing loss, it is often reversible.",
+    patientQuestion: "My ear feels blocked and sounds are muffled. Is that conductive hearing loss?",
     hero: photo(
       "ear-fullness-no-pain-hearing-loss",
       "Adult touching the ear while sound feels blocked from conductive hearing loss"
     ),
     body: [
-      "Conductive hearing loss happens when something keeps sound from passing efficiently through the outer or middle ear to the inner ear. Sounds seem muffled or quiet, as if your ears are plugged. Unlike sensorineural loss, conductive loss is frequently treatable — and sometimes fully reversible.",
+      "Conductive hearing loss happens when something keeps sound from passing efficiently through the outer or middle ear to the inner ear. Sounds seem muffled or quiet, as if your ears are plugged.",
+      "Unlike sensorineural loss, conductive loss is frequently treatable, and sometimes fully reversible.",
       "Common causes",
       "Earwax buildup, fluid or infection in the middle ear, a perforated eardrum, otosclerosis (abnormal bone growth), or a problem with the tiny middle-ear bones can all block sound. In children, middle-ear fluid is especially common.",
       "What it feels like",
       "People often describe fullness or pressure, their own voice sounding louder or hollow, and speech that is soft but not necessarily unclear once it is loud enough. Symptoms may come and go if the cause is fluid or wax.",
       "How it is evaluated",
-      "An ear examination plus a hearing test and middle-ear (tympanometry) testing show whether sound is being blocked and where. This helps separate a conductive problem from an inner-ear one — and points to whether medical treatment, cerumen management, or a device is the right path.",
+      "An ear examination plus a hearing test and middle-ear (tympanometry) testing show whether sound is being blocked and where. This separates a conductive problem from an inner-ear one, and it points to whether medical treatment, cerumen management, or a device is the right path.",
       "How it is managed",
       "Because the issue is a blockage, treatment targets the cause: removing wax, treating an infection, or a medical or surgical referral when appropriate. When a conductive component is permanent, hearing aids or other devices can help.",
       "When to move faster",
@@ -125,14 +127,14 @@ const conditions: Condition[] = [
     ],
     keyTakeaways: [
       "Conductive loss is a blockage in the outer or middle ear, so sound is muffled or quiet.",
-      "Common causes — wax, fluid, infection — are often treatable or reversible.",
+      "Wax, fluid, and infection are the common causes, and each is often treatable.",
       "An exam plus hearing and middle-ear testing pinpoints the cause and the fix."
     ],
     faqs: [
       {
         question: "Is conductive hearing loss permanent?",
         answer:
-          "Often not. Many causes, such as earwax or middle-ear fluid, can be treated. Some causes are longer lasting and may need medical care or a device — an evaluation clarifies which applies."
+          "Often not. Many causes, such as earwax or middle-ear fluid, can be treated. Some causes are longer lasting and need medical care or a device. An evaluation clarifies which applies."
       },
       {
         question: "Can earwax really cause hearing loss?",
@@ -162,18 +164,19 @@ const conditions: Condition[] = [
     metaDescription:
       "Mixed hearing loss combines conductive and sensorineural components. Learn how it is identified and managed at Audiology Associates of Westchester.",
     pullQuote:
-      "Mixed hearing loss has two parts — a treatable blockage layered on top of a permanent inner-ear loss.",
+      "Mixed hearing loss has two parts: a treatable blockage layered on top of a permanent inner-ear loss.",
     patientQuestion: "What does it mean to have both conductive and sensorineural hearing loss?",
     hero: photo(
       "one-ear-hearing-loss-when-to-get-checked",
       "Adult discussing a combined hearing loss pattern with an audiologist"
     ),
     body: [
-      "Mixed hearing loss means both a conductive problem (a blockage in the outer or middle ear) and a sensorineural problem (inner-ear or nerve involvement) are present at the same time. In practice, a treatable component sits on top of a more permanent one.",
+      "Mixed hearing loss means both a conductive problem (a blockage in the outer or middle ear) and a sensorineural problem (inner-ear or nerve involvement) are present at the same time.",
+      "In practice, a treatable component sits on top of a more permanent one. That is why the order of treatment matters.",
       "Why it happens",
       "A person with long-standing age- or noise-related inner-ear loss might also develop earwax, an ear infection, or middle-ear fluid. The result is a hearing loss with two contributors that each need attention.",
       "How it is evaluated",
-      "The same comprehensive testing used for other hearing loss — thresholds, speech understanding, and middle-ear measures — reveals the mixed pattern by showing both a blockage and inner-ear involvement.",
+      "The same comprehensive testing used for other hearing loss reveals the mixed pattern. Thresholds, speech understanding, and middle-ear measures together show both a blockage and inner-ear involvement.",
       "How it is managed",
       "Care often addresses the conductive part first, since it may be reversible, and then supports the remaining sensorineural loss with well-fit hearing aids. Sequencing matters, which is why a clear evaluation is the starting point.",
       "When to move faster",
@@ -214,14 +217,15 @@ const conditions: Condition[] = [
     metaDescription:
       "Age-related hearing loss (presbycusis) is gradual and common. Learn the signs and what helps, from Audiology Associates of Westchester in Harrison and Somers, NY.",
     pullQuote:
-      "Age-related hearing loss is gradual and easy to miss — which is exactly why a baseline hearing test matters.",
+      "Age-related hearing loss is gradual and easy to miss. That is exactly why a baseline hearing test matters.",
     patientQuestion: "Is it normal to lose some hearing as I get older, and should I do anything about it?",
     hero: photo(
       "is-hearing-loss-normal-with-age",
       "Older adult enjoying a conversation with family after addressing age-related hearing loss"
     ),
     body: [
-      "Age-related hearing loss, or presbycusis, is the gradual reduction in hearing that develops over years. It is one of the most common conditions affecting older adults, and because it comes on slowly and usually affects both ears equally, many people do not notice it at first — friends and family often do.",
+      "Age-related hearing loss, or presbycusis, is the gradual reduction in hearing that develops over years. It is one of the most common conditions affecting older adults.",
+      "It comes on slowly and usually affects both ears equally, so many people do not notice it at first. Friends and family often do.",
       "What it feels like",
       "High-pitched sounds fade first, so speech can seem mumbled and hard to follow in restaurants or group conversations even when quiet listening feels fine. Turning up the TV, asking for repeats, and listening fatigue are common early signs.",
       "Why it happens",
@@ -272,16 +276,17 @@ const conditions: Condition[] = [
     title: "Noise-Induced Hearing Loss",
     metaTitle: "Noise-Induced Hearing Loss | Audiology Associates of Westchester",
     metaDescription:
-      "How loud noise damages hearing, the warning signs, and how to prevent noise-induced hearing loss — from Audiology Associates of Westchester.",
+      "How loud noise damages hearing, the warning signs, and how to prevent noise-induced hearing loss, from Audiology Associates of Westchester.",
     pullQuote:
-      "Noise-induced hearing loss is almost entirely preventable — and the damage it causes is permanent.",
+      "Noise-induced hearing loss is almost entirely preventable. The damage it causes is permanent.",
     patientQuestion: "Can loud noise permanently damage my hearing, and how do I protect it?",
     hero: photo(
       "noise-induced-hearing-loss-prevention",
       "Person wearing hearing protection near loud equipment to prevent noise-induced hearing loss"
     ),
     body: [
-      "Noise-induced hearing loss is caused by exposure to loud sound — either a single intense blast or, more often, repeated exposure over months and years. It is one of the few types of hearing loss that is largely preventable, yet the damage, once done, is permanent.",
+      "Noise-induced hearing loss is caused by exposure to loud sound. That can be one intense blast, but more often it is repeated exposure over months and years.",
+      "It is one of the few types of hearing loss that is largely preventable. Once the damage is done, it is permanent.",
       "How loud is too loud",
       "Sound is measured in decibels, and risk rises quickly as levels climb. Extended exposure to power tools, loud music, firearms, motorcycles, or industrial equipment can all contribute. A useful rule of thumb: if you must raise your voice to be heard an arm's length away, the environment is loud enough to matter.",
       "What it feels like",
@@ -309,7 +314,7 @@ const conditions: Condition[] = [
       {
         question: "Are custom earplugs worth it?",
         answer:
-          "For regular exposure — work, music, shooting — custom protection is more comfortable and preserves sound quality better than foam, so people are more likely to wear it consistently."
+          "For regular exposure at work, at gigs, or on the range, custom protection is more comfortable and preserves sound quality better than foam, so people are more likely to wear it consistently."
       },
       {
         question: "Can one loud event cause lasting damage?",
@@ -332,18 +337,19 @@ const conditions: Condition[] = [
     title: "Sudden Hearing Loss",
     metaTitle: "Sudden Hearing Loss: Why Not to Wait | Audiology Associates",
     metaDescription:
-      "Sudden hearing loss is a medical urgency. Learn the warning signs and why fast evaluation matters — Audiology Associates of Westchester, Harrison & Somers, NY.",
+      "Sudden hearing loss is a medical emergency and the treatment window is measured in days. The warning signs and what to do, from Audiology Associates of Westchester, Harrison & Somers, NY.",
     pullQuote:
-      "Sudden hearing loss is a medical urgency: the sooner it is evaluated, the better the chance of recovery.",
-    patientQuestion: "I lost hearing in one ear quickly — is that an emergency?",
+      "Sudden hearing loss is a medical emergency. The treatment window is measured in days, so it is not a wait-and-see problem.",
+    patientQuestion: "I lost hearing in one ear quickly. Is that an emergency?",
     hero: photo(
       "sudden-hearing-loss-why-not-wait",
       "Person seeking prompt care after a rapid drop in hearing in one ear"
     ),
     body: [
-      "Sudden sensorineural hearing loss is a rapid drop in hearing — usually in one ear, often noticed on waking or over a few hours to a few days. Unlike gradual hearing loss, it is treated as a medical urgency, because prompt care can meaningfully improve the odds of recovery.",
+      "Sudden sensorineural hearing loss is treated as a medical emergency. The treatment window is measured in days. If your hearing drops rapidly, get it evaluated today rather than next week.",
+      "It is a rapid drop in hearing, usually in one ear, often noticed on waking or over a few hours to a few days. Gradual hearing loss can wait for an appointment. This cannot.",
       "Why timing matters",
-      "Treatment, when appropriate, is most effective when it begins quickly — generally within the first days to a couple of weeks. Waiting to 'see if it comes back' can reduce the chance of regaining hearing.",
+      "Treatment, when appropriate, is most effective when it begins quickly, generally within the first days to a couple of weeks. Waiting to see if it comes back can reduce the chance of regaining hearing.",
       "Signs to take seriously",
       "A clear, sudden reduction in one ear, a feeling of fullness, new ringing, or dizziness that accompanies the change all warrant urgent evaluation. It is easy to mistake sudden loss for a plugged ear or wax, which is one reason a professional assessment is important.",
       "What to do",
@@ -354,15 +360,15 @@ const conditions: Condition[] = [
       LOCAL_CTA
     ],
     keyTakeaways: [
-      "Sudden hearing loss — often in one ear — is a medical urgency, not a wait-and-see issue.",
-      "Prompt treatment, ideally within days, improves the chance of recovery.",
+      "Sudden hearing loss, usually in one ear, is a medical emergency, not a wait-and-see issue.",
+      "The treatment window is measured in days. Treatment generally begins within the first days to a couple of weeks.",
       "New one-sided loss, fullness, ringing, or dizziness should be evaluated right away."
     ],
     faqs: [
       {
         question: "Is sudden hearing loss an emergency?",
         answer:
-          "It should be treated as urgent. Seek care right away rather than waiting, because time-sensitive treatment can improve recovery when it is started early."
+          "Yes. Treat it as one. Seek care the same day rather than waiting, because the treatment window is measured in days and treatment started early has the best chance of recovering hearing."
       },
       {
         question: "Could it just be earwax?",
@@ -372,11 +378,11 @@ const conditions: Condition[] = [
       {
         question: "Can sudden hearing loss be treated?",
         answer:
-          "In many cases, yes — especially when addressed early. A prompt evaluation determines the cause and whether time-sensitive treatment is appropriate."
+          "In many cases, yes, especially when it is addressed early. A prompt evaluation determines the cause and whether time-sensitive treatment is appropriate."
       }
     ],
     related: [
-      { label: "Sudden Hearing Loss — Why Not to Wait", href: "/sudden-hearing-loss-why-not-wait" },
+      { label: "Sudden Hearing Loss: Why You Should Not Wait", href: "/sudden-hearing-loss-why-not-wait" },
       { label: "Audiologist vs ENT for Hearing Loss", href: "/audiologist-vs-ent-for-hearing-loss" },
       { label: "Hearing Testing", href: "/hearing-testing" }
     ],
@@ -430,7 +436,7 @@ const hubPage: SitePage = {
   title: "Types of Hearing Loss",
   metaTitle: "Types of Hearing Loss: Causes & Next Steps | Audiology Associates",
   metaDescription:
-    "A clear guide to the types and causes of hearing loss — sensorineural, conductive, mixed, age-related, noise-induced, and sudden — from Audiology Associates of Westchester.",
+    "A clear guide to the types and causes of hearing loss: sensorineural, conductive, mixed, age-related, noise-induced, and sudden. From Audiology Associates of Westchester.",
   h1: "Understanding Hearing Loss",
   type: "blog-post",
   lastModified: "2026-07-21",
@@ -439,15 +445,16 @@ const hubPage: SitePage = {
   images: [hubHero],
   sections: [],
   body: [
-    "Hearing loss is not one condition — it is a family of them, and the right next step depends on which type you have. Some kinds are permanent but very manageable with hearing aids; others are a blockage that can be treated or even reversed; and one, sudden hearing loss, is a medical urgency. This guide explains the main types so you can recognize what you are noticing and know when to act.",
-    "The two main categories",
-    "Most hearing loss is either sensorineural (a permanent inner-ear or nerve loss, the most common type) or conductive (a blockage in the outer or middle ear that is often treatable). When both are present at once, it is called mixed hearing loss.",
+    "Hearing loss is a family of conditions, and the right next step depends on which one you have. Some kinds are permanent and very manageable with hearing aids. Others are a blockage that can be treated, sometimes reversed. One of them, sudden hearing loss, is a medical emergency.",
+    "This guide covers six: the three types named for where sound stops, and the three named for what caused them. Read the one that matches what you are noticing.",
+    "The two main types, and the one that combines them",
+    "Most hearing loss is either sensorineural (a permanent inner-ear or nerve loss, and the most common type) or conductive (a blockage in the outer or middle ear that is often treatable). When both are present at once, it is called mixed hearing loss. Those three names describe where sound stops, and a hearing test is what tells them apart.",
     "By cause",
-    "Hearing loss is also described by what caused it. Age-related hearing loss (presbycusis) develops gradually over years. Noise-induced hearing loss comes from loud-sound exposure and is largely preventable. Sudden hearing loss appears rapidly, usually in one ear, and should be evaluated right away.",
-    "Explore each type",
-    "Sensorineural hearing loss is the most common permanent type and is usually managed with hearing aids. Conductive hearing loss is a blockage in the outer or middle ear that is often treatable, and mixed hearing loss combines the two. Age-related hearing loss (presbycusis) develops gradually with aging, noise-induced hearing loss is preventable damage from loud sound, and sudden hearing loss is a rapid drop that should be treated as a medical urgency. You can open any of these guides from the related links on this page.",
+    "Hearing loss is also described by what caused it. Age-related hearing loss (presbycusis) develops gradually over years. Noise-induced hearing loss comes from loud-sound exposure and is largely preventable. Sudden hearing loss appears rapidly, usually in one ear, and is a medical emergency: it needs to be evaluated the same day.",
+    "If you have read about a fourth, central type",
+    "Older material, on this site and elsewhere, sometimes listed a fourth type called central hearing loss and defined it by stroke. Conductive, sensorineural, and mixed are the three the audiogram sorts hearing loss into, and they are the ones used here. Difficulty making sense of speech when the ears themselves test normally is a separate question, assessed separately. If a report you were given uses the word central, bring it to the appointment.",
     "How any hearing loss is evaluated",
-    "Whatever the type, the starting point is the same: a comprehensive hearing evaluation that measures what you can hear across pitches and how clearly you understand speech, along with an ear examination. Those findings identify the type and degree of loss and point to the right plan — treatment, a hearing aid fitting, medical referral, or monitoring.",
+    "Whatever the type, the starting point is the same: a comprehensive hearing evaluation that measures what you can hear across pitches and how clearly you understand speech, along with an ear examination. Those findings identify the type and degree of loss and point to the right plan, whether that is treatment, a hearing aid fitting, medical referral, or monitoring.",
     "When to move faster",
     SAFETY,
     "A practical next step",
@@ -457,12 +464,17 @@ const hubPage: SitePage = {
     {
       question: "What are the main types of hearing loss?",
       answer:
-        "The two main types are sensorineural (inner ear or nerve, usually permanent) and conductive (a treatable blockage in the outer or middle ear). Mixed hearing loss involves both. Hearing loss is also described by cause — age-related, noise-induced, or sudden."
+        "The two main types are sensorineural (inner ear or nerve, usually permanent) and conductive (a treatable blockage in the outer or middle ear). Mixed hearing loss involves both. Hearing loss is also described by cause: age-related, noise-induced, or sudden."
     },
     {
       question: "Which type of hearing loss is most common?",
       answer:
         "Sensorineural hearing loss is the most common permanent type, frequently from aging and noise exposure. It is usually managed effectively with hearing aids."
+    },
+    {
+      question: "Is there a fourth type called central hearing loss?",
+      answer:
+        "Some older material lists one, defined by stroke. The three types a hearing test sorts loss into are conductive, sensorineural, and mixed, and those are the ones used across this site. Trouble understanding speech when hearing itself tests normally is a separate question and is assessed separately."
     },
     {
       question: "How do I find out which type I have?",
@@ -486,11 +498,11 @@ const hubPage: SitePage = {
     readTime: "6 min read",
     articleType: "Condition hub",
     pullQuote:
-      "The right next step for hearing loss depends on its type — and identifying the type is what a hearing evaluation is for.",
+      "The right next step for hearing loss depends on its type. Identifying the type is what a hearing evaluation is for.",
     keyTakeaways: [
-      "Hearing loss is sensorineural, conductive, or mixed — and described by cause (age, noise, sudden).",
+      "Hearing loss is sensorineural, conductive, or mixed, and it is also described by cause: age, noise, or sudden onset.",
       "Sensorineural loss is most common and usually managed with hearing aids.",
-      "Sudden hearing loss is a medical urgency; get it evaluated right away."
+      "Sudden hearing loss is a medical emergency. Get it evaluated the same day."
     ],
     patientQuestion: "What kind of hearing loss do I have, and what should I do about it?",
     storyLead: "Knowing the type of hearing loss turns a vague worry into a clear next step.",

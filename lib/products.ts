@@ -248,7 +248,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     title: "Oticon Intent",
     shortTitle: "Oticon Intent",
     subtitle: "Revolutionary user-intent sensors",
-    menuDescription: "Oticon's BrainHearing™ technology enables natural, effortless hearing even in noisy settings.",
+    menuDescription: "Oticon's BrainHearing™ processing, aimed at following speech in noisy rooms.",
     image: "/assets/brands/Oticon-Intent-scale.webp",
     imageAlt: "Oticon Intent hearing aid",
     overview: [
@@ -294,8 +294,8 @@ export const hearingAidProducts: HearingAidProduct[] = [
     brandSlug: "oticon",
     title: "Oticon Zeal",
     shortTitle: "Oticon Zeal",
-    subtitle: "The world's first invisible hearing aid with complete connectivity",
-    menuDescription: "The world's first invisible hearing aid with complete connectivity.",
+    subtitle: "Oticon's deepest-fitting in-the-ear aid, with LE Audio",
+    menuDescription: "Oticon's deepest-fitting in-the-ear aid, with LE Audio connectivity.",
     image: "/assets/brands/Oticon-Zeal.png",
     imageAlt: "Oticon Zeal hearing aid",
     overview: [
@@ -336,7 +336,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     title: "Phonak Lyric",
     shortTitle: "Phonak Lyric",
     subtitle: "Invisible extended-wear hearing aids",
-    menuDescription: "Invisible, extended-wear Lyric Hearing Aids deliver exceptional sound with total discretion.",
+    menuDescription: "Sits deep in the ear canal and stays in for months at a time. Nobody sees it.",
     image: "/assets/brands/Phonak-Lyric-Hearing-Aid.webp",
     imageAlt: "Phonak Lyric invisible hearing aid",
     overview: [

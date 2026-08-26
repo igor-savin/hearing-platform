@@ -41,9 +41,9 @@ export const providerProfiles: ProviderProfile[] = [
     quote:
       "I consider it an absolute privilege to re-connect my patients to their loved ones and surroundings through better hearing. I find such joy in helping my patients and cherish the connection I make with each and every one of them.",
     paragraphs: [
-      "Dr. Ratner was awarded her doctorate in audiology from the top graduate audiology program in the country, Vanderbilt University School of Medicine. She has worked as a research assistant in the Dan Maddox Hearing Aid Research Laboratory at Vanderbilt University, and she completed her externship at the renowned Veterans Affairs Medical Center in Nashville, TN.",
-      "Dr. Ratner went on to work at a private practice in Manhattan prior to joining our staff. She is a member of the American Academy of Audiology, accredited by the American Speech-Language-Hearing Association, and a fellow of the Tinnitus Practitioners Association.",
-      "She has a strong background in diagnostic testing, fitting and verification of hearing aids, counseling and orientation and auditory rehabilitation. As a music lover and former musician, she enjoys meeting the unique needs of musicians with hearing loss. In 2017, she was awarded the Rising Stars Top 40 Under 40 award from the Business Council of Westchester."
+      "Dr. Ratner earned her Au.D. at Vanderbilt University School of Medicine in 2012, after a B.A. in communication sciences and disorders at Florida State University. At Vanderbilt she worked as a research assistant in the Dan Maddox Hearing Aid Research Laboratory. She completed her externship at the Veterans Affairs Medical Center in Nashville, Tennessee, and then practiced at a private office in Manhattan before joining this practice, where she is now a partner.",
+      "She is licensed in New York State as an audiologist and as a hearing aid dispenser, board certified by the American Academy of Audiology, a member of the American Speech-Language-Hearing Association, and a fellow of the Tinnitus Practitioners Association. She holds the CH-TM certificate in tinnitus management.",
+      "Her clinical work is diagnostic testing, hearing aid fitting and verification, and the counseling and auditory rehabilitation that follow a fitting. She is a former musician, and musicians are the patients she seeks out. She sees patients at the Harrison office. In 2017 the Business Council of Westchester gave her its Rising Stars Top 40 Under 40 award."
     ],
     credentials: [
       "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
@@ -74,10 +74,10 @@ export const providerProfiles: ProviderProfile[] = [
     image: "/assets/duda/0255mfox9-2021-edit.jpg",
     alt: "Caitlin Dold, Au.D. - Doctor of Audiology at Audiology Associates of Westchester",
     paragraphs: [
-      "Dr. Dold is a White Plains native who received her doctorate from Vanderbilt University School of Medicine. While at Vanderbilt, she worked as a research assistant in a collaboration between the Hearing and Communication Research Lab and Listening and Learning Lab examining listening-related fatigue.",
-      "She was awarded a T-35 Traineeship from the NIH and was subsequently published and completed a traineeship with the U.S. Department of Veteran Affairs. She completed her externship at Audiology Associates of Westchester and runs the Practice's clinical education program for Audiology students in training.",
-      "Her areas of expertise include comprehensive diagnostic testing, counseling and orientation, fitting and verification of hearing aids, testing for cochlear implant candidacy, activation and programming of cochlear implants, tinnitus testing and treatment, cerumen removal, Lyric invisible extended-wear hearing devices, custom fit hearing protection and musician's plugs, and auditory rehabilitation.",
-      "She has worked with special populations including veterans, individuals with disabilities, and D/deaf individuals. She is highly proficient in American Sign Language and holds a New York State license in Audiology, is accredited by the American Speech-Language-Hearing Association and is a member of the American Academy of Audiology. In 2024, she was awarded the Rising Stars Top 40 Under 40 Award from the Business Council of Westchester."
+      "Dr. Dold grew up in White Plains and earned her Au.D. at Vanderbilt University School of Medicine in 2020. At Vanderbilt she was a research assistant on a collaboration between the Hearing and Communication Research Lab and the Listening and Learning Lab studying listening-related fatigue. She held a T-35 traineeship from the NIH, was published from that work, and completed a traineeship with the U.S. Department of Veterans Affairs.",
+      "She did her externship at Audiology Associates of Westchester and stayed. She now runs the practice's clinical education program for audiology students in training, and she sees patients at both the Harrison and Somers offices.",
+      "Cochlear implant work is hers: candidacy testing, activation, and programming. She also does comprehensive diagnostic testing, hearing aid fitting and verification, tinnitus testing and treatment, cerumen removal, Lyric extended-wear devices, custom hearing protection and musician's plugs, and auditory rehabilitation.",
+      "She has worked with veterans, people with disabilities, and D/deaf patients. Her American Sign Language is at professional proficiency, so an appointment can be conducted in ASL. She holds a New York State license in audiology, holds ASHA's Certificate of Clinical Competence, and is a fellow of the American Academy of Audiology. In 2024 the Business Council of Westchester gave her its Rising Stars Top 40 Under 40 award."
     ],
     credentials: [
       "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
@@ -115,9 +115,9 @@ export const providerProfiles: ProviderProfile[] = [
     quote:
       "Hearing loss can really affect people's lives especially if it goes untreated. I became an audiologist as I love reconnecting my patients to their surrounding environments and to what they love. I find it truly rewarding to put hearing aids on my patients and see their eyes light up at how well they are hearing.",
     paragraphs: [
-      "Jenna M. Elias received her Doctor of Audiology degree at the University of Florida and her master's degree at Hofstra University. She is licensed in New York State as an audiologist and hearing aid dispenser.",
-      "Dr. Elias worked in various clinical settings including a large ENT practice and Bellevue Hospital in New York City prior to joining the Audiology Associates of Westchester team.",
-      "Dr. Elias is a fellow of the American Academy of Audiology and Sigma Pi honor society. She has extensive training in hearing aid dispensing and diagnostic audiology."
+      "Dr. Elias earned her Doctor of Audiology at the University of Florida in 2018, after a master's in audiology at Hofstra University in 2015. She is licensed in New York State as an audiologist and as a hearing aid dispenser.",
+      "Before joining this practice she worked in a large ENT practice and at Bellevue Hospital in New York City. She is a fellow of the American Academy of Audiology, holds ASHA's Certificate of Clinical Competence, and is a member of the Sigma Pi honor society.",
+      "She sees patients at the Harrison office for diagnostic audiology, hearing aid consultations, dispensing, and counseling."
     ],
     credentials: [
       "Audiology Licensure: New York State and NYS Hearing Aid Dispenser",
@@ -143,9 +143,9 @@ export const providerProfiles: ProviderProfile[] = [
     image: "/assets/team/leannmarie-senat.jpg",
     alt: "Dr. Leannmarie Senat",
     paragraphs: [
-      "Leannmarie Senat earned her Doctorate of Audiology from The City University of New York Graduate Center.",
-      "Her clinical training included placements at the Brooklyn Veterans Affairs Medical Center, with a focus on adult amplification, and at the Long Island Jewish (LIJ) Medical Center, where she concentrated on vestibular assessment as well as pediatric and adult diagnostics.",
-      "She completed her residency at the LIJ Hearing and Speech Center, gaining extensive experience in diagnostic audiology and hearing aid services for patients across the lifespan."
+      "Dr. Senat earned her Doctor of Audiology at the CUNY Graduate Center in 2025, after a B.A. in communication science and disorders at CUNY Queens College.",
+      "Her clinical placements were at the Brooklyn Veterans Affairs Medical Center, where she worked on adult amplification, and at Long Island Jewish Medical Center, where she worked on vestibular assessment and on pediatric and adult diagnostics. She completed her residency at the LIJ Hearing and Speech Center.",
+      "She sees patients at the Harrison office for diagnostic audiology and hearing aid care."
     ],
     credentials: [
       "College: CUNY Queens College, B.A., Communication Science and Disorders, Spring 2021",
@@ -169,10 +169,10 @@ export const providerProfiles: ProviderProfile[] = [
     // Single source of truth for her bio. The meet-the-team roster reads these
     // paragraphs from here rather than keeping its own copy.
     paragraphs: [
-      "Julia Rivera earned her Doctor of Audiology degree from Montclair State University in May 2026. She earned her Bachelor of Arts in Communication Sciences and Disorders from Pace University.",
-      "Before beginning her doctoral studies, Julia gained more than 150 hours of experience in speech and language therapy, working with individuals ages 4 to 21 in school-based settings. She worked with individuals with a variety of developmental, intellectual, physical, and communication disabilities. This background strengthened her understanding of communication development and deepened her commitment to interdisciplinary, patient-centered care.",
-      "Her clinical training includes experience across private practice, hospital, and ENT settings, where she developed a strong foundation in pediatric and adult diagnostic audiology, vestibular assessment, tinnitus evaluation, cerumen removal, hearing aid technology, and patient counseling. She also has experience with Lyric hearing aids, custom hearing protection and musician’s earplugs, as well as the selection, orientation, fitting, verification, and ongoing management of hearing aids. Julia is passionate about providing person- and family-centered care that empowers individuals to improve their communication and overall quality of life.",
-      "Julia’s doctoral research examined how structural racism and social determinants of health influence follow-up adherence within Early Hearing Detection and Intervention programs, reflecting her commitment to promoting equity and access in hearing healthcare."
+      "Dr. Rivera earned her Doctor of Audiology at Montclair State University in May 2026, after a B.A. in communication sciences and disorders at Pace University.",
+      "Before her doctoral studies she spent more than 150 hours in school-based speech and language therapy with students aged 4 to 21, many of them with developmental, intellectual, physical, or communication disabilities.",
+      "Her clinical training ran through private practice, hospital, and ENT settings: pediatric and adult diagnostic audiology, vestibular assessment, tinnitus evaluation, cerumen removal, Lyric hearing aids, custom hearing protection and musician’s earplugs, and the selection, orientation, fitting, verification, and ongoing management of hearing aids. She sees patients at both the Harrison and Somers offices.",
+      "Her doctoral research examined how structural racism and social determinants of health influence follow-up adherence within Early Hearing Detection and Intervention programs."
     ],
     credentials: [
       "College: Pace University, B.A., Communication Sciences and Disorders",
@@ -200,10 +200,10 @@ export const providerProfiles: ProviderProfile[] = [
     quote:
       "There is nothing more rewarding than helping a patient achieve better hearing. I believe that everyone's hearing needs are unique, like a fingerprint, and my goal is to find customized solutions for all populations.",
     paragraphs: [
-      "Dr. Kira Savin specializes in providing personalized hearing solutions using the latest and most discreet technology available, including the Lyric invisible extended-wear hearing device.",
-      "Dr. Savin's areas of expertise include hearing rehabilitation, auditory counseling and retraining therapy, tinnitus management, and dispensing hearing aids and assistive listening technologies for adults.",
-      "She holds a New York State license in audiology, as well as hearing aid dispensing. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology.",
-      "Dr. Savin completed her residency at SUNY Downstate Medical Center in Brooklyn, NY. She previously worked at a private practice in New York City where she dispensed hearing aids and provided hearing care solutions, including customized musicians' devices for all populations."
+      "Dr. Savin is a partner in the practice. She earned her Au.D. at Salus University's George S. Osborne College of Audiology in 2013, after a B.A. in communication sciences and disorders at Pace University, and completed her residency at SUNY Downstate Medical Center in Brooklyn.",
+      "She then worked at a private practice in New York City, dispensing hearing aids and making customized musicians' devices, before joining this practice.",
+      "She holds a New York State license in audiology and in hearing aid dispensing, is a fellow of the American Academy of Audiology, is a member of the American Speech-Language-Hearing Association and the Long Island Speech and Hearing Association, and holds the CH-TM certificate in tinnitus management.",
+      "Her work is with adults: hearing rehabilitation, auditory counseling and retraining therapy, tinnitus management, and hearing aids and assistive listening technology. She fits Lyric, the extended-wear device a clinician places in the ear canal and that stays in for months at a time between visits. She sees patients at the Harrison office."
     ],
     credentials: [
       "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",

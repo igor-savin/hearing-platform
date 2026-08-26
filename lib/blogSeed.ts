@@ -6,7 +6,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-test-or-earwax-removal",
     "title": "Do I Need a Hearing Test or Just Earwax Removal?",
-    "metaDescription": "Clarify whether muffled hearing may be wax, hearing loss, or device-related and guide readers toward safe next steps.",
+    "metaDescription": "Muffled hearing can be wax, a middle-ear problem, or hearing loss in the inner ear. Here is how an ear exam and a hearing test tell those three apart.",
     "h1": "Do I Need a Hearing Test or Just Earwax Removal?",
     "category": "Symptoms & Next Steps",
     "format": "Symptom Guide",
@@ -22,34 +22,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "In clinic, this question usually starts with a story rather than a test result.",
-      "Clarify whether muffled hearing may be wax, hearing loss, or device-related and guide readers toward safe next steps.",
+      "Wax and hearing loss can feel identical from the inside. They are told apart by looking, not by guessing.",
       "What I listen for first",
       "When someone asks this question, the first clue is usually not the symptom name. It is the timeline: when it started, whether it changed suddenly, and whether one ear behaves differently than the other.",
       "The pattern matters more than the label",
       "A patient trying to decide whether a symptom is routine, device-related, wax-related, or urgent may describe missed words, louder volume, ringing, plugged ears, device frustration, listening fatigue, or avoiding noisy places. Those details are clinically useful because hearing concerns rarely show up the same way in every room.",
       "What testing can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation. A good evaluation turns a vague worry into a set of findings you can act on.",
+      "An ear exam and a hearing test settle whether the muffling is wax sitting against the eardrum, a middle-ear problem, or a change in the inner ear. A good evaluation turns a vague worry into a set of findings you can act on.",
       "When I would not wait",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "How to make the visit more useful",
-      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Can I book earwax removal and skip the hearing test?",
+        "answer": "You can book the ear check first. If the canal turns out to be clear, the muffling has another cause, and a hearing test is the next thing to do."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, how much the symptom interrupts conversation or safety, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I have ready when I call?",
+        "answer": "How long the ear has felt blocked, whether it is one ear or both, any pain, drainage or dizziness, and whether you have used drops or swabs recently."
       }
     ],
     "related": [
@@ -86,11 +86,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Audiologist perspective",
       "byline": "From the audiology desk",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Clinical lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Wax you can see. Hearing loss you cannot. That is why the ear exam comes before the hearing test.",
       "keyTakeaways": [
-        "Track the pattern: when the symptom started and whether one ear or both ears are involved are often more useful than a single symptom label.",
+        "Note whether the muffling arrived over hours or over months, and whether it is one ear or both.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
       ],
@@ -101,7 +102,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hear-people-talking-not-understand-words",
     "title": "Why Can I Hear People Talking but Not Understand the Words?",
-    "metaDescription": "Explain speech clarity problems and why volume is not the same as understanding.",
+    "metaDescription": "Voices sound loud enough but the words blur together. Here is why clarity and volume are separate problems, and which part of a hearing test measures each.",
     "h1": "Why Can I Hear People Talking but Not Understand the Words?",
     "category": "Hearing Loss Basics",
     "format": "Quick Answer Guide",
@@ -117,34 +118,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Imagine the moment this concern usually shows up in real life.",
-      "Explain speech clarity problems and why volume is not the same as understanding.",
+      "Volume and clarity are two different measurements. A hearing test reports both.",
       "A common version of this story",
       "Picture a family dinner where the person hears voices but misses the words. The first instinct is often to search, wait, or try one quick fix. That is understandable, but the pattern underneath the symptom is what matters.",
       "What the patient notices",
       "Someone who suspects hearing has changed but is not sure how to interpret everyday listening problems may describe missed words, louder volume, ringing, plugged ears, device frustration, listening fatigue, or avoiding noisy places. Those details are clinically useful because hearing concerns rarely show up the same way in every room.",
       "What is worth writing down",
-      "The most helpful details are speech clarity, background noise, phone and television volume, listening fatigue, and family observations. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are speech clarity, background noise, phone and television volume, listening fatigue, and family observations.",
       "What the appointment is meant to answer",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
+      "A hearing test measures both: how much sound reaches the inner ear, and how well words are recognised once they are loud enough. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
       "When the story changes",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "A practical next step",
-      "The best next step is baseline testing that separates volume, clarity, ear health, and communication needs. The goal is to understand what is happening and choose a plan that improves daily life.",
+      "The best next step is baseline testing that separates volume, clarity, ear health, and communication needs.",
       "Why local follow-up helps",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Is it worth being tested if I can still hear that people are speaking?",
+        "answer": "Yes. Volume and clarity are measured separately, and volume being fine while words are not is exactly what word-recognition testing is for."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about speech clarity, background noise, phone and television volume, listening fatigue, family observations, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I have ready for the appointment?",
+        "answer": "The rooms and the voices that give you trouble, how loud the television sits compared with the rest of the house, and whether the phone is harder than face to face."
       }
     ],
     "related": [
@@ -181,11 +182,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Patient scenario",
       "byline": "A patient-centered guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Real-life scenario",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Turning the television up makes speech louder. It does not make consonants any easier to tell apart.",
       "keyTakeaways": [
-        "Track the pattern: speech clarity and background noise are often more useful than a single symptom label.",
+        "Note which rooms the words disappear in, and whether it helps when someone repeats themselves louder.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is baseline testing that separates volume, clarity, ear health, and communication needs."
       ],
@@ -196,7 +198,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-test-vs-hearing-screening-difference",
     "title": "Hearing Test vs Hearing Screening: What’s the Difference?",
-    "metaDescription": "Compare screenings and comprehensive evaluations so patients choose the right appointment.",
+    "metaDescription": "A screening gives a pass or a refer. A full evaluation gives an audiogram, word scores and middle-ear results. Here is which appointment you actually need.",
     "h1": "Hearing Test vs Hearing Screening: What’s the Difference?",
     "category": "Testing & Diagnosis",
     "format": "Comparison",
@@ -212,7 +214,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The goal is to choose the safest next step without overreacting or waiting too long.",
-      "Compare screenings and comprehensive evaluations so patients choose the right appointment.",
+      "A screening asks one question. A comprehensive evaluation answers several.",
       "The decision in plain English",
       "The question is not “Is this serious?” in the abstract. The question is whether the pattern calls for home observation, audiology care, device support, or medical guidance.",
       "Choose audiology care when",
@@ -220,26 +222,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Choose faster medical guidance when",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Use these details to decide",
-      "The most helpful details are audiogram shape, word understanding, middle-ear measures, medical red flags, and communication goals. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are audiogram shape, word understanding, middle-ear measures, medical red flags, and communication goals.",
       "What testing adds",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A comprehensive evaluation puts numbers on how much hearing has changed, at which pitches, in which ear, and how clearly words are recognised.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a comprehensive test plan and a plain-language explanation of what the results mean. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a comprehensive test plan and a plain-language explanation of what the results mean."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "I passed a screening last year. Do I still need a full test?",
+        "answer": "If nothing has changed, no. If people have started repeating themselves, or a screening came back as refer, book the comprehensive evaluation rather than another screening."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about audiogram shape, word understanding, middle-ear measures, medical red flags, communication goals, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a comprehensive evaluation?",
+        "answer": "Any earlier audiograms, your medication list, and a note of the situations you want to hear better in. Bring someone who talks with you often if you can."
       }
     ],
     "related": [
@@ -276,11 +278,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Decision guide",
       "byline": "A practical decision guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Decision points",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A screening can tell you something is off. It cannot tell you how much, in which ear, or at which pitches.",
       "keyTakeaways": [
-        "Track the pattern: audiogram shape and word understanding are often more useful than a single symptom label.",
+        "If a screening at a health fair or a doctor's office came back as refer, the next appointment is a full evaluation.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a comprehensive test plan and a plain-language explanation of what the results mean."
       ],
@@ -291,7 +294,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/what-happens-during-comprehensive-hearing-evaluation",
     "title": "What Happens During a Comprehensive Hearing Evaluation?",
-    "metaDescription": "Reduce appointment anxiety and explain the value of diagnostic testing.",
+    "metaDescription": "An ear exam, tones in a sound booth, word recognition and middle-ear testing, then the results explained in plain language. Here is how the appointment runs.",
     "h1": "What Happens During a Comprehensive Hearing Evaluation?",
     "category": "Testing & Diagnosis",
     "format": "Appointment Walkthrough",
@@ -307,13 +310,13 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Here is how this topic tends to get sorted out during a well-run appointment.",
-      "Reduce appointment anxiety and explain the value of diagnostic testing.",
+      "Nothing in the appointment hurts. Most of it is listening and answering.",
       "Before the test starts",
       "A strong appointment starts with history: what changed, when it changed, where listening breaks down, and what the patient wants to improve.",
       "What the clinician is sorting",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "The evaluation shows how much hearing you have at each pitch, how clearly you understand words, and whether the eardrum is moving normally.",
       "What patients should bring",
-      "The most helpful details are audiogram shape, word understanding, middle-ear measures, medical red flags, and communication goals. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are audiogram shape, word understanding, middle-ear measures, medical red flags, and communication goals.",
       "What would change the plan",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "What happens after results",
@@ -321,20 +324,20 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is a comprehensive test plan and a plain-language explanation of what the results mean. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a comprehensive test plan and a plain-language explanation of what the results mean."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "How long does the appointment take, and does any of it hurt?",
+        "answer": "Nothing in it hurts. Expect an ear examination, tones in a booth, word testing, middle-ear testing, and time at the end to go through the results."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about audiogram shape, word understanding, middle-ear measures, medical red flags, communication goals, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring on the day?",
+        "answer": "Prior test results if you have them, your medication list, your hearing aids and charger if you wear any, and examples of where listening breaks down."
       }
     ],
     "related": [
@@ -371,11 +374,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Clinic note",
       "byline": "Notes from a hearing-care visit",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Clinic note",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "You will hear tones right at the edge of what you can detect. Pressing the button when you are not sure is the right thing to do.",
       "keyTakeaways": [
-        "Track the pattern: audiogram shape and word understanding are often more useful than a single symptom label.",
+        "Bring whoever repeats themselves for you most often. Their examples fill in what an audiogram cannot show.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a comprehensive test plan and a plain-language explanation of what the results mean."
       ],
@@ -386,7 +390,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-often-should-adults-get-hearing-checked",
     "title": "How Often Should Adults Get Their Hearing Checked?",
-    "metaDescription": "Help adults understand when to schedule baseline and follow-up testing.",
+    "metaDescription": "How often adults should have hearing tested, why a baseline matters before anything changes, and what should bring you in sooner than planned.",
     "h1": "How Often Should Adults Get Their Hearing Checked?",
     "category": "Testing & Diagnosis",
     "format": "Checklist",
@@ -402,13 +406,13 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Here is how this topic tends to get sorted out during a well-run appointment.",
-      "Help adults understand when to schedule baseline and follow-up testing.",
+      "A baseline is only useful if it exists before something changes.",
       "Before the test starts",
       "A strong appointment starts with history: what changed, when it changed, where listening breaks down, and what the patient wants to improve.",
       "What the clinician is sorting",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Repeat testing shows whether your hearing has genuinely shifted since the last visit, or whether the room, the speaker, or the device changed.",
       "What patients should bring",
-      "The most helpful details are audiogram shape, word understanding, middle-ear measures, medical red flags, and communication goals. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are audiogram shape, word understanding, middle-ear measures, medical red flags, and communication goals.",
       "What would change the plan",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "What happens after results",
@@ -416,20 +420,20 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a comprehensive test plan and a plain-language explanation of what the results mean. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a comprehensive test plan and a plain-language explanation of what the results mean."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "I have no symptoms. Is there any point in being tested?",
+        "answer": "A first test with no symptoms gives you a baseline. Without one there is nothing to compare against later, which is when the comparison matters."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about audiogram shape, word understanding, middle-ear measures, medical red flags, communication goals, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a routine hearing check?",
+        "answer": "Any earlier audiograms, your noise history at work and at home, and a note of anything that has changed since the last test."
       }
     ],
     "related": [
@@ -466,11 +470,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Clinic note",
       "byline": "Notes from a hearing-care visit",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "leannmarie-senat",
+      "readTime": "3 min read",
       "articleType": "Clinic note",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A test you took ten years ago is not a baseline any more. It is a memory.",
       "keyTakeaways": [
-        "Track the pattern: audiogram shape and word understanding are often more useful than a single symptom label.",
+        "Anyone working around loud noise, or already straining in restaurants, should be tested sooner than a routine interval.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a comprehensive test plan and a plain-language explanation of what the results mean."
       ],
@@ -481,7 +486,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/first-signs-of-hearing-loss-family-notice",
     "title": "The First Signs of Hearing Loss Families Usually Notice",
-    "metaDescription": "Reach family members who notice communication changes before the patient does.",
+    "metaDescription": "Families notice hearing loss first: the television volume, the repeated questions, the missed doorbell. Here is what those signs usually mean.",
     "h1": "The First Signs of Hearing Loss Families Usually Notice",
     "category": "Family & Communication",
     "format": "Family Guide",
@@ -497,34 +502,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The most useful hearing conversations are specific, kind, and grounded in examples.",
-      "Reach family members who notice communication changes before the patient does.",
+      "The person with hearing loss is often the last to notice it. That is not denial. It is how gradual change works.",
       "Start with one specific moment",
       "Instead of saying “you never hear me,” start with a concrete example: a missed doorbell, a repeated dinner question, a television volume change, or a conversation that became tiring.",
       "Keep the tone collaborative",
       "The best family conversations sound like teamwork: “Can we understand what is happening?” not “Can you admit you have a problem?”",
       "What to observe together",
-      "The most helpful details are who notices the problem, where misunderstandings happen, how often repetition is needed, and what the person with hearing loss wants to protect. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are who notices the problem, where misunderstandings happen, how often repetition is needed, and what the person with hearing loss wants to protect.",
       "What an evaluation can settle",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test settles whether the repeated questions come from hearing, from the room, or from how fast everyone is talking.",
       "When to move faster",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is a conversation-focused plan that may include testing, hearing aids, communication strategies, and follow-up. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a conversation-focused plan that may include testing, hearing aids, communication strategies, and follow-up."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "They say their hearing is fine. Should I push it?",
+        "answer": "Raise it once, with specific examples, and offer to come along. Push harder if the pattern is sudden, one-sided, or paired with dizziness or pain."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about who notices the problem, where misunderstandings happen, how often repetition is needed, what the person with hearing loss wants to protect, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should we bring to the first appointment?",
+        "answer": "The examples you have written down, who noticed what and when, and any medication or medical history that could bear on hearing."
       }
     ],
     "related": [
@@ -561,11 +566,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Family conversation",
       "byline": "For families and caregivers",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "julia-rivera",
+      "readTime": "3 min read",
       "articleType": "Conversation frame",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Nobody notices their own hearing fading. They notice everyone else mumbling.",
       "keyTakeaways": [
-        "Track the pattern: who notices the problem and where misunderstandings happen are often more useful than a single symptom label.",
+        "Write down three specific moments from the past month before you raise it. Examples land better than a general worry.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a conversation-focused plan that may include testing, hearing aids, communication strategies, and follow-up."
       ],
@@ -576,7 +582,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-to-talk-to-parent-about-hearing-help",
     "title": "How to Talk to a Parent Who May Need Hearing Help",
-    "metaDescription": "Give families a compassionate script for starting a hearing-care conversation.",
+    "metaDescription": "How to raise hearing with a parent without a row: one specific example, a shared goal, and an appointment they agree to rather than one you book.",
     "h1": "How to Talk to a Parent Who May Need Hearing Help",
     "category": "Family & Communication",
     "format": "Conversation Script",
@@ -592,34 +598,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The most useful hearing conversations are specific, kind, and grounded in examples.",
-      "Give families a compassionate script for starting a hearing-care conversation.",
+      "Start with one moment you both remember. Not a list of everything they have missed.",
       "Start with one specific moment",
       "Instead of saying “you never hear me,” start with a concrete example: a missed doorbell, a repeated dinner question, a television volume change, or a conversation that became tiring.",
       "Keep the tone collaborative",
       "The best family conversations sound like teamwork: “Can we understand what is happening?” not “Can you admit you have a problem?”",
       "What to observe together",
-      "The most helpful details are who notices the problem, where misunderstandings happen, how often repetition is needed, and what the person with hearing loss wants to protect. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are who notices the problem, where misunderstandings happen, how often repetition is needed, and what the person with hearing loss wants to protect.",
       "What an evaluation can settle",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test settles the thing you are both guessing about: whether the words are getting through, and how clearly.",
       "When to move faster",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a conversation-focused plan that may include testing, hearing aids, communication strategies, and follow-up. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a conversation-focused plan that may include testing, hearing aids, communication strategies, and follow-up."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "What if my parent gets angry when I raise it?",
+        "answer": "Drop it for that conversation and come back later to one concrete moment. Anger usually means the subject landed as criticism rather than as a shared problem."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about who notices the problem, where misunderstandings happen, how often repetition is needed, what the person with hearing loss wants to protect, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should we bring if they agree to go?",
+        "answer": "Examples of conversations that went wrong, a medication list, any earlier hearing tests, and a clear idea of what they most want to hear again."
       }
     ],
     "related": [
@@ -656,11 +662,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Family conversation",
       "byline": "For families and caregivers",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Conversation frame",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Say what the two of you missed at the table on Sunday. Do not open with what they are failing to do.",
       "keyTakeaways": [
-        "Track the pattern: who notices the problem and where misunderstandings happen are often more useful than a single symptom label.",
+        "Offer to come along. Going with them is usually what turns later into yes.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a conversation-focused plan that may include testing, hearing aids, communication strategies, and follow-up."
       ],
@@ -671,7 +678,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/is-hearing-loss-normal-with-age",
     "title": "Is Hearing Loss Normal With Age? What Is and Isn’t Normal",
-    "metaDescription": "Explain age-related hearing change without normalizing avoidable communication strain.",
+    "metaDescription": "Age-related hearing change is common. Struggling through every family dinner is not something you have to accept. Here is where the line falls.",
     "h1": "Is Hearing Loss Normal With Age? What Is and Isn’t Normal",
     "category": "Hearing Loss Basics",
     "format": "Myth vs Fact",
@@ -687,34 +694,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "A lot of hearing advice sounds confident while skipping the details that actually matter.",
-      "Explain age-related hearing change without normalizing avoidable communication strain.",
+      "Common and harmless are not the same thing.",
       "Myth: if it is common, it is harmless",
-      "Many people normalize hearing loss normal with age what is and isn’t normal because a friend, parent, or online forum had a similar experience. Common does not always mean unimportant.",
+      "Many people normalize age-related hearing loss because a friend, parent, or online forum had a similar experience. Common does not always mean unimportant.",
       "Fact: the pattern changes the answer",
-      "The most helpful details are speech clarity, background noise, phone and television volume, listening fatigue, and family observations. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are speech clarity, background noise, phone and television volume, listening fatigue, and family observations.",
       "Myth: louder is the whole solution",
       "Hearing is not only volume. Speech clarity, background noise, ear health, tinnitus, and device fit can all change the plan.",
       "Fact: evaluation prevents wrong turns",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test tells you whether the change follows the gradual high-pitch pattern of ageing or something that needs a medical look.",
       "Red flags still matter",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is baseline testing that separates volume, clarity, ear health, and communication needs. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is baseline testing that separates volume, clarity, ear health, and communication needs."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Everyone in my family lost hearing with age. Is testing worth it?",
+        "answer": "A family pattern does not tell you which pitches have changed or how clearly you understand words. A test does, and it shows whether the two ears match."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about speech clarity, background noise, phone and television volume, listening fatigue, family observations, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to the appointment?",
+        "answer": "Any earlier audiograms, your medication list, and examples of where conversation has become work rather than easy."
       }
     ],
     "related": [
@@ -751,11 +758,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Myth-busting guide",
       "byline": "Myths, facts, and next steps",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Myth vs fact",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Hearing loss being common at seventy does not make it untreatable at seventy.",
       "keyTakeaways": [
-        "Track the pattern: speech clarity and background noise are often more useful than a single symptom label.",
+        "One ear changing faster than the other is not part of ordinary ageing. Have that checked.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is baseline testing that separates volume, clarity, ear health, and communication needs."
       ],
@@ -766,7 +774,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/why-restaurants-hard-with-hearing-loss",
     "title": "Why Restaurants Are So Hard When You Have Hearing Loss",
-    "metaDescription": "Capture relatable speech-in-noise searches and connect to testing and hearing aid programming.",
+    "metaDescription": "Hard floors, background chatter and a face across a wide table make restaurants the first place hearing loss shows. Here is what actually helps.",
     "h1": "Why Restaurants Are So Hard When You Have Hearing Loss",
     "category": "Everyday Listening",
     "format": "Real-Life Scenario",
@@ -782,34 +790,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Imagine the moment this concern usually shows up in real life.",
-      "Capture relatable speech-in-noise searches and connect to testing and hearing aid programming.",
+      "Home is quiet, close and predictable. A restaurant is none of those things.",
       "A common version of this story",
       "Picture a noisy restaurant or meeting where context disappears. The first instinct is often to search, wait, or try one quick fix. That is understandable, but the pattern underneath the symptom is what matters.",
       "What the patient notices",
       "Someone whose hearing feels manageable at home but breaks down in restaurants, meetings, cars, television, or social settings may describe missed words, louder volume, ringing, plugged ears, device frustration, listening fatigue, or avoiding noisy places. Those details are clinically useful because hearing concerns rarely show up the same way in every room.",
       "What is worth writing down",
-      "The most helpful details are room noise, speaker distance, lighting and visual cues, device settings, and fatigue by the end of the day. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are room noise, speaker distance, lighting and visual cues, device settings, and fatigue by the end of the day.",
       "What the appointment is meant to answer",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
+      "Speech-in-noise testing settles how much of the trouble is the room and how much is the hearing itself. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
       "When the story changes",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "A practical next step",
-      "The best next step is a practical plan for the specific environments that matter most. The goal is to understand what is happening and choose a plan that improves daily life.",
+      "The best next step is a practical plan for the specific environments that matter most.",
       "Why local follow-up helps",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Should I be tested if I only struggle in noisy places?",
+        "answer": "Yes. Restaurant trouble is often the earliest thing people notice, and speech-in-noise testing measures it directly rather than leaving you to describe it."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about room noise, speaker distance, lighting and visual cues, device settings, fatigue by the end of the day, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I note before the visit?",
+        "answer": "The specific places it goes wrong, whether certain voices are harder, and whether you have started declining invitations. Bring your hearing aids if you wear them."
       }
     ],
     "related": [
@@ -846,11 +854,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Patient scenario",
       "byline": "A patient-centered guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Real-life scenario",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Sit with your back to the wall and the noise behind you. It costs nothing and it works better than most settings changes.",
       "keyTakeaways": [
-        "Track the pattern: room noise and speaker distance are often more useful than a single symptom label.",
+        "Name the restaurants where it goes wrong. Hard floors and music overhead are a different problem from a table of ten.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a practical plan for the specific environments that matter most."
       ],
@@ -861,7 +870,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/what-high-frequency-hearing-loss-sounds-like",
     "title": "What Does High-Frequency Hearing Loss Sound Like?",
-    "metaDescription": "Explain high-frequency hearing loss in patient language and link to testing.",
+    "metaDescription": "High-frequency hearing loss leaves voices audible while s, f and th disappear. Here is what that sounds like and what an audiogram actually shows.",
     "h1": "What Does High-Frequency Hearing Loss Sound Like?",
     "category": "Hearing Loss Basics",
     "format": "Explainer",
@@ -877,7 +886,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Most hearing concerns are routine, but a few patterns deserve faster attention.",
-      "Explain high-frequency hearing loss in patient language and link to testing.",
+      "Vowels carry the volume. Consonants carry the meaning.",
       "The short version",
       "Do not let a search result talk you out of timely care if the symptom is sudden, one-sided, severe, painful, or paired with dizziness or neurological symptoms.",
       "Red flags that change the timeline",
@@ -885,26 +894,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "If none of those are present",
       "If the issue is gradual or situational, audiology care can still be important because it clarifies what is changing and what can be improved.",
       "What to document",
-      "The most helpful details are speech clarity, background noise, phone and television volume, listening fatigue, and family observations. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are speech clarity, background noise, phone and television volume, listening fatigue, and family observations.",
       "What evaluation can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An audiogram shows which pitches have changed. Word testing shows what that has cost you in clarity.",
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is baseline testing that separates volume, clarity, ear health, and communication needs. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is baseline testing that separates volume, clarity, ear health, and communication needs."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Should I wait, or book a test, if only certain sounds are unclear?",
+        "answer": "Book it. Losing the high pitches shows up as unclear words rather than quiet ones, and an audiogram is the only way to see the shape of it."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about speech clarity, background noise, phone and television volume, listening fatigue, family observations, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I note before the appointment?",
+        "answer": "Which voices are hardest, which words get mistaken for others, and whether the television is set louder than everyone else in the house wants."
       }
     ],
     "related": [
@@ -941,11 +950,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Red flag memo",
       "byline": "What to watch, what to do next",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "leannmarie-senat",
+      "readTime": "3 min read",
       "articleType": "Red flags",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Speech does not go quiet. It goes blurry, because s, f and th are the first sounds to fade.",
       "keyTakeaways": [
-        "Track the pattern: speech clarity and background noise are often more useful than a single symptom label.",
+        "Children's voices, and the ends of words, are usually the first things to go.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is baseline testing that separates volume, clarity, ear health, and communication needs."
       ],
@@ -956,7 +966,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/one-ear-hearing-loss-when-to-get-checked",
     "title": "One Ear Hearing Loss: When Should You Get Checked?",
-    "metaDescription": "Explain unilateral hearing changes and red flags that should not wait.",
+    "metaDescription": "Hearing that drops in one ear is worth a prompt appointment. Here is what one-sided change can mean and which symptoms should not wait at all.",
     "h1": "One Ear Hearing Loss: When Should You Get Checked?",
     "category": "Symptoms & Next Steps",
     "format": "Red Flag Guide",
@@ -972,7 +982,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Most hearing concerns are routine, but a few patterns deserve faster attention.",
-      "Explain unilateral hearing changes and red flags that should not wait.",
+      "Two ears give you a built-in comparison. Use it.",
       "The short version",
       "Do not let a search result talk you out of timely care if the symptom is sudden, one-sided, severe, painful, or paired with dizziness or neurological symptoms.",
       "Red flags that change the timeline",
@@ -980,26 +990,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "If none of those are present",
       "If the issue is gradual or situational, audiology care can still be important because it clarifies what is changing and what can be improved.",
       "What to document",
-      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety.",
       "What evaluation can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing each ear separately settles whether one side has genuinely changed or whether both have drifted together.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "One ear has felt worse for a while. Is that urgent?",
+        "answer": "A gradual difference should be tested soon rather than urgently. A drop that happened over hours or days should be treated as urgent and reported the same day."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, how much the symptom interrupts conversation or safety, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What details matter most when I book?",
+        "answer": "Which ear, when the difference started, whether it came on suddenly, and whether there is ringing, fullness, drainage, pain or dizziness with it."
       }
     ],
     "related": [
@@ -1036,11 +1046,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Red flag memo",
       "byline": "What to watch, what to do next",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Red flags",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A hearing change in one ear only is the pattern audiologists take seriously fastest.",
       "keyTakeaways": [
-        "Track the pattern: when the symptom started and whether one ear or both ears are involved are often more useful than a single symptom label.",
+        "Hold the phone to each ear in turn. A clear difference between the sides is worth reporting today.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
       ],
@@ -1051,7 +1062,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/sudden-hearing-loss-why-not-wait",
     "title": "Sudden Hearing Loss: Why You Should Not Wait",
-    "metaDescription": "Provide safety-first urgent guidance for sudden hearing loss searches.",
+    "metaDescription": "Hearing that drops suddenly in one ear is treated as urgent. Here is why the first few days matter, and who to call before you decide to wait it out.",
     "h1": "Sudden Hearing Loss: Why You Should Not Wait",
     "category": "Symptoms & Next Steps",
     "format": "Red Flag Guide",
@@ -1067,7 +1078,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Most hearing concerns are routine, but a few patterns deserve faster attention.",
-      "Provide safety-first urgent guidance for sudden hearing loss searches.",
+      "Sudden hearing loss is one of the few things in audiology with a clock attached to it.",
       "The short version",
       "Do not let a search result talk you out of timely care if the symptom is sudden, one-sided, severe, painful, or paired with dizziness or neurological symptoms.",
       "Red flags that change the timeline",
@@ -1075,26 +1086,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "If none of those are present",
       "If the issue is gradual or situational, audiology care can still be important because it clarifies what is changing and what can be improved.",
       "What to document",
-      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety.",
       "What evaluation can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing sorts out quickly whether sound is being blocked on its way in, by wax or fluid, or whether the inner ear itself has changed.",
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "It happened yesterday. Should I wait to see whether it clears?",
+        "answer": "No. Sudden hearing loss in one ear is treated as urgent. Call today, and say the words sudden hearing loss when you do."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, how much the symptom interrupts conversation or safety, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I tell whoever I call?",
+        "answer": "When it started, which ear, whether it came with ringing, fullness or dizziness, and whether you have had any recent illness, injury or air travel."
       }
     ],
     "related": [
@@ -1131,11 +1142,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Red flag memo",
       "byline": "What to watch, what to do next",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Red flags",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Hearing that vanishes overnight in one ear is a same-day phone call, not a wait-and-see.",
       "keyTakeaways": [
-        "Track the pattern: when the symptom started and whether one ear or both ears are involved are often more useful than a single symptom label.",
+        "Do not wait to find out whether it clears on its own. Call, and use the words sudden hearing loss.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
       ],
@@ -1146,7 +1158,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/ringing-in-one-ear-red-flags-next-steps",
     "title": "Ringing in One Ear: Causes, Red Flags, and Next Steps",
-    "metaDescription": "Help readers distinguish common tinnitus concerns from symptoms needing prompt guidance.",
+    "metaDescription": "Ringing in one ear only is worth checking rather than waiting out. Here is what one-sided tinnitus can mean and what an evaluation looks at.",
     "h1": "Ringing in One Ear: Causes, Red Flags, and Next Steps",
     "category": "Tinnitus",
     "format": "Symptom Guide",
@@ -1162,7 +1174,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Most hearing concerns are routine, but a few patterns deserve faster attention.",
-      "Help readers distinguish common tinnitus concerns from symptoms needing prompt guidance.",
+      "Ringing in both ears is common. Ringing in one ear gets looked at sooner.",
       "The short version",
       "Do not let a search result talk you out of timely care if the symptom is sudden, one-sided, severe, painful, or paired with dizziness or neurological symptoms.",
       "Red flags that change the timeline",
@@ -1170,26 +1182,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "If none of those are present",
       "If the issue is gradual or situational, audiology care can still be important because it clarifies what is changing and what can be improved.",
       "What to document",
-      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms.",
       "What evaluation can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An evaluation settles whether hearing has changed in the ringing ear, and that finding shapes everything that happens next.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "The ringing comes and goes. Is that worth an appointment?",
+        "answer": "Ringing that comes and goes in both ears is common. Ringing that stays in one ear, or that arrives with a hearing change, should be evaluated rather than watched."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about sound quality, sleep impact, stress patterns, hearing changes, one-sided or pulsatile symptoms, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I track before the tinnitus appointment?",
+        "answer": "Which ear, what the sound is like, whether it pulses, whether it stops you sleeping, and whether hearing on that side has changed."
       }
     ],
     "related": [
@@ -1226,11 +1238,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Red flag memo",
       "byline": "What to watch, what to do next",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Red flags",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Ringing in both ears after a loud weekend is one story. Ringing in one ear that stays is another.",
       "keyTakeaways": [
-        "Track the pattern: sound quality and sleep impact are often more useful than a single symptom label.",
+        "Note which ear, whether the sound pulses, and whether hearing on that side changed alongside it.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
       ],
@@ -1241,7 +1254,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/pulsatile-tinnitus-heartbeat-sound",
     "title": "Pulsatile Tinnitus: Why Heartbeat-Like Sounds Need Attention",
-    "metaDescription": "Explain heartbeat-like tinnitus with appropriate medical caution.",
+    "metaDescription": "Tinnitus that keeps time with your pulse is handled differently from ordinary ringing. Here is why heartbeat-like sound gets a medical look first.",
     "h1": "Pulsatile Tinnitus: Why Heartbeat-Like Sounds Need Attention",
     "category": "Tinnitus",
     "format": "Red Flag Guide",
@@ -1257,7 +1270,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Most hearing concerns are routine, but a few patterns deserve faster attention.",
-      "Explain heartbeat-like tinnitus with appropriate medical caution.",
+      "Most tinnitus has no rhythm. This kind does.",
       "The short version",
       "Do not let a search result talk you out of timely care if the symptom is sudden, one-sided, severe, painful, or paired with dizziness or neurological symptoms.",
       "Red flags that change the timeline",
@@ -1265,26 +1278,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "If none of those are present",
       "If the issue is gradual or situational, audiology care can still be important because it clarifies what is changing and what can be improved.",
       "What to document",
-      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms.",
       "What evaluation can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing shows whether hearing has changed in that ear, while the pulsing quality itself is what points toward medical evaluation.",
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Is heartbeat-like sound in the ear an emergency?",
+        "answer": "Treat it as something to have assessed promptly rather than watched. Say clearly when you book that the sound keeps time with your pulse."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about sound quality, sleep impact, stress patterns, hearing changes, one-sided or pulsatile symptoms, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I describe at the appointment?",
+        "answer": "Which ear, whether the sound matches your pulse, when it started, your blood pressure history if you know it, and any medication changes."
       }
     ],
     "related": [
@@ -1321,11 +1334,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Red flag memo",
       "byline": "What to watch, what to do next",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Red flags",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "If the sound in your ear keeps time with your pulse, say so when you book. It changes the appointment.",
       "keyTakeaways": [
-        "Track the pattern: sound quality and sleep impact are often more useful than a single symptom label.",
+        "Time the sound against the pulse in your wrist. Whether the two match is the detail to lead with.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
       ],
@@ -1336,7 +1350,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/tinnitus-after-loud-noise-what-to-do",
     "title": "Tinnitus After Loud Noise: What to Do Next",
-    "metaDescription": "Guide patients after concerts, tools, or sudden loud exposure.",
+    "metaDescription": "Ringing after a concert or a power tool is common. Here is what to do in the days that follow, and when that ringing should be tested properly.",
     "h1": "Tinnitus After Loud Noise: What to Do Next",
     "category": "Tinnitus",
     "format": "Checklist",
@@ -1352,34 +1366,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "A lot of hearing advice sounds confident while skipping the details that actually matter.",
-      "Guide patients after concerts, tools, or sudden loud exposure.",
+      "Ringing after loud noise is the ear reporting the exposure.",
       "Myth: if it is common, it is harmless",
       "Many people normalize tinnitus after loud noise because a friend, parent, or online forum had a similar experience. Common does not always mean unimportant.",
       "Fact: the pattern changes the answer",
-      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms.",
       "Myth: louder is the whole solution",
       "Hearing is not only volume. Speech clarity, background noise, ear health, tinnitus, and device fit can all change the plan.",
       "Fact: evaluation prevents wrong turns",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test settles whether the exposure left a measurable change at the high pitches, or whether the ringing is the only sign of it.",
       "Red flags still matter",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "The ringing started after a concert. Do I need to be seen?",
+        "answer": "If it settles and hearing feels normal again, note the exposure and protect your ears next time. If it persists, or hearing feels dull, book a hearing test."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about sound quality, sleep impact, stress patterns, hearing changes, one-sided or pulsatile symptoms, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I tell the audiologist?",
+        "answer": "What the exposure was and how long it lasted, which ear rings, whether hearing felt dull afterwards, and whether this has happened before."
       }
     ],
     "related": [
@@ -1416,11 +1430,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Myth-busting guide",
       "byline": "Myths, facts, and next steps",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Myth vs fact",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Ringing that outlasts the noise that caused it deserves a hearing test rather than another week of waiting.",
       "keyTakeaways": [
-        "Track the pattern: sound quality and sleep impact are often more useful than a single symptom label.",
+        "Note the exposure, the ear, and how long the ringing lasted. Give the ears quiet afterwards rather than more noise.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
       ],
@@ -1431,7 +1446,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/can-hearing-aids-help-tinnitus",
     "title": "Can Hearing Aids Help Tinnitus?",
-    "metaDescription": "Explain how amplification may support some tinnitus patients without promising a cure.",
+    "metaDescription": "Hearing aids are fitted for hearing loss, and some patients find the ringing less prominent afterwards. Here is who that applies to, and who it does not.",
     "h1": "Can Hearing Aids Help Tinnitus?",
     "category": "Tinnitus",
     "format": "Explainer",
@@ -1447,13 +1462,13 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Here is how this topic tends to get sorted out during a well-run appointment.",
-      "Explain how amplification may support some tinnitus patients without promising a cure.",
+      "Hearing aids treat hearing loss first. Whether tinnitus recedes as well is discussed honestly, and it is not promised.",
       "Before the test starts",
       "A strong appointment starts with history: what changed, when it changed, where listening breaks down, and what the patient wants to improve.",
       "What the clinician is sorting",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test settles whether there is hearing loss to treat, which is what decides whether hearing aids belong in the tinnitus plan at all.",
       "What patients should bring",
-      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms.",
       "What would change the plan",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "What happens after results",
@@ -1461,20 +1476,20 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Will hearing aids make my tinnitus go away?",
+        "answer": "Nobody can promise that. Hearing aids are fitted for hearing loss, and any change in the tinnitus is discussed as a possibility rather than as what you are paying for."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about sound quality, sleep impact, stress patterns, hearing changes, one-sided or pulsatile symptoms, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a tinnitus appointment?",
+        "answer": "Any earlier hearing tests, a note of when the tinnitus is worst, what you have already tried, and your hearing aids if you wear them."
       }
     ],
     "related": [
@@ -1511,11 +1526,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Clinic note",
       "byline": "Notes from a hearing-care visit",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Clinic note",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Nobody here will promise a hearing aid stops tinnitus. What it can do is bring back the quiet sounds the ringing had to itself.",
       "keyTakeaways": [
-        "Track the pattern: sound quality and sleep impact are often more useful than a single symptom label.",
+        "If your hearing test comes back normal, amplification is not the tool. Ask about sound therapy and counselling instead.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
       ],
@@ -1526,7 +1542,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/lenire-for-tinnitus-candidate-guide",
     "title": "Lenire for Tinnitus: Who Might Be a Candidate?",
-    "metaDescription": "Support Lenire interest with candidacy and expectation-setting.",
+    "metaDescription": "Lenire is one device-based option some tinnitus patients ask about. Here is what candidacy depends on and what gets checked before it is discussed.",
     "h1": "Lenire for Tinnitus: Who Might Be a Candidate?",
     "category": "Tinnitus",
     "format": "Candidate Guide",
@@ -1542,34 +1558,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "When the problem is frustrating, the trick is to isolate one variable at a time.",
-      "Support Lenire interest with candidacy and expectation-setting.",
+      "Lenire is a device-based tinnitus pathway, and it is not right for everyone who asks about it.",
       "Step 1: isolate the problem",
       "Write down whether it happens in one ear, one room, one app, one device, or one kind of listening environment.",
       "Step 2: check the simple variables",
-      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms.",
       "Step 3: stop troubleshooting when symptoms are medical",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Step 4: let testing narrow it down",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing establishes your hearing status and your tinnitus profile, and a candidacy conversation runs on those facts.",
       "Step 5: bring the evidence",
       "Bring devices, chargers, domes, wax guards, app access, prior test results, and examples from real life.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Can I order Lenire and try it myself?",
+        "answer": "It is a prescribed pathway rather than an online purchase. Candidacy is assessed after testing, and other causes are looked at first."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about sound quality, sleep impact, stress patterns, hearing changes, one-sided or pulsatile symptoms, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a candidacy discussion?",
+        "answer": "Your tinnitus history, any earlier hearing tests, ENT or imaging reports, your medication list, and what you want the treatment to change."
       }
     ],
     "related": [
@@ -1606,11 +1622,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Troubleshooting log",
       "byline": "Step-by-step troubleshooting",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Troubleshooting",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Candidacy depends on your tinnitus profile, medical history and hearing status. That is a conversation after testing, not before it.",
       "keyTakeaways": [
-        "Track the pattern: sound quality and sleep impact are often more useful than a single symptom label.",
+        "Bring your tinnitus history and any earlier hearing tests. Candidacy is judged from those, not from a website.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
       ],
@@ -1621,7 +1638,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/tinnitus-at-night-why-louder",
     "title": "Tinnitus at Night: Why It Feels Louder and What May Help",
-    "metaDescription": "Address sleep and quiet-room tinnitus searches with practical guidance.",
+    "metaDescription": "Tinnitus feels louder at night because the room around it goes quiet. Here is why that happens and which sound and sleep options are worth trying.",
     "h1": "Tinnitus at Night: Why It Feels Louder and What May Help",
     "category": "Tinnitus",
     "format": "Real-Life Scenario",
@@ -1637,34 +1654,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Imagine the moment this concern usually shows up in real life.",
-      "Address sleep and quiet-room tinnitus searches with practical guidance.",
+      "The ringing did not get louder. The room got quieter.",
       "A common version of this story",
       "Picture a quiet bedroom where tinnitus suddenly feels louder. The first instinct is often to search, wait, or try one quick fix. That is understandable, but the pattern underneath the symptom is what matters.",
       "What the patient notices",
       "A person dealing with ringing, buzzing, hissing, sound sensitivity, or tinnitus-related sleep stress may describe missed words, louder volume, ringing, plugged ears, device frustration, listening fatigue, or avoiding noisy places. Those details are clinically useful because hearing concerns rarely show up the same way in every room.",
       "What is worth writing down",
-      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms.",
       "What the appointment is meant to answer",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
+      "A hearing test settles whether hearing loss sits underneath the tinnitus, and that changes which options are worth trying. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
       "When the story changes",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "A practical next step",
-      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags. The goal is to understand what is happening and choose a plan that improves daily life.",
+      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags.",
       "Why local follow-up helps",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Is tinnitus that only bothers me at night worth an appointment?",
+        "answer": "Yes, if it is costing you sleep. Sleep disruption is one of the things tinnitus care is most able to work on."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about sound quality, sleep impact, stress patterns, hearing changes, one-sided or pulsatile symptoms, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What is worth writing down about the nights?",
+        "answer": "How long it takes you to fall asleep, whether the sound wakes you, what you already use in the room at night, and whether hearing has changed."
       }
     ],
     "related": [
@@ -1701,11 +1718,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Patient scenario",
       "byline": "A patient-centered guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Real-life scenario",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Tinnitus is loudest in a silent bedroom because there is nothing else left for your hearing to do.",
       "keyTakeaways": [
-        "Track the pattern: sound quality and sleep impact are often more useful than a single symptom label.",
+        "A low sound in the room at night, a fan or a sound machine, gives the ringing something to compete with.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
       ],
@@ -1716,7 +1734,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/sound-sensitivity-vs-tinnitus",
     "title": "Sound Sensitivity vs Tinnitus: What’s the Difference?",
-    "metaDescription": "Clarify sound sensitivity, tinnitus, and when audiology care may help.",
+    "metaDescription": "Tinnitus is sound you hear with no source. Sound sensitivity is ordinary sound that feels too loud. They are tested and managed differently.",
     "h1": "Sound Sensitivity vs Tinnitus: What’s the Difference?",
     "category": "Tinnitus",
     "format": "Comparison",
@@ -1732,7 +1750,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The goal is to choose the safest next step without overreacting or waiting too long.",
-      "Clarify sound sensitivity, tinnitus, and when audiology care may help.",
+      "One is a sound nobody else can hear. The other is everyone's sound, felt too strongly.",
       "The decision in plain English",
       "The question is not “Is this serious?” in the abstract. The question is whether the pattern calls for home observation, audiology care, device support, or medical guidance.",
       "Choose audiology care when",
@@ -1740,26 +1758,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Choose faster medical guidance when",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Use these details to decide",
-      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are sound quality, sleep impact, stress patterns, hearing changes, and one-sided or pulsatile symptoms.",
       "What testing adds",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing measures your hearing levels and the point at which ordinary sound starts to feel too loud, which is what separates the two.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "How do I tell which of the two I have?",
+        "answer": "Tinnitus is a sound present when the room is silent. Sound sensitivity is ordinary sound feeling too loud. People can have both, and testing separates them."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about sound quality, sleep impact, stress patterns, hearing changes, one-sided or pulsatile symptoms, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I describe to the audiologist?",
+        "answer": "Which sounds are hard to tolerate, at what point they become uncomfortable, whether you also hear a sound with no source, and whether you have begun avoiding places."
       }
     ],
     "related": [
@@ -1796,11 +1814,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Decision guide",
       "byline": "A practical decision guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Decision points",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Tinnitus is a sound that is there when the room is silent. Sound sensitivity is the room being unbearable when it is not.",
       "keyTakeaways": [
-        "Track the pattern: sound quality and sleep impact are often more useful than a single symptom label.",
+        "Note whether the trouble is a sound only you hear, sounds that feel too loud, or both. People have either or both.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is tinnitus counseling, hearing testing, sound therapy options, Lenire discussion when appropriate, or medical referral for red flags."
       ],
@@ -1811,7 +1830,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/ear-pressure-and-hearing-loss-evaluation",
     "title": "Ear Pressure and Hearing Loss: When to Schedule an Evaluation",
-    "metaDescription": "Connect ear pressure symptoms to hearing testing and red flags.",
+    "metaDescription": "Ear pressure with muffled hearing can be wax, fluid behind the eardrum, or hearing change. Tympanometry and a hearing test tell you which one it is.",
     "h1": "Ear Pressure and Hearing Loss: When to Schedule an Evaluation",
     "category": "Ear Care",
     "format": "Symptom Guide",
@@ -1827,7 +1846,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Most hearing concerns are routine, but a few patterns deserve faster attention.",
-      "Connect ear pressure symptoms to hearing testing and red flags.",
+      "Pressure is a symptom, not a diagnosis.",
       "The short version",
       "Do not let a search result talk you out of timely care if the symptom is sudden, one-sided, severe, painful, or paired with dizziness or neurological symptoms.",
       "Red flags that change the timeline",
@@ -1835,26 +1854,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "If none of those are present",
       "If the issue is gradual or situational, audiology care can still be important because it clarifies what is changing and what can be improved.",
       "What to document",
-      "The most helpful details are wax history, cotton swab use, pain or drainage, hearing aid dome or filter changes, and recurring blockage. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are wax history, cotton swab use, pain or drainage, hearing aid dome or filter changes, and recurring blockage.",
       "What evaluation can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An ear examination plus a hearing test and middle-ear (tympanometry) testing settle whether sound is being blocked, and where.",
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is safe ear-care guidance and referral when symptoms suggest medical evaluation. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is safe ear-care guidance and referral when symptoms suggest medical evaluation."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "The pressure comes and goes with a cold. Do I need to be seen?",
+        "answer": "Pressure that clears along with the cold can be watched. Pressure that stays for weeks, or arrives with a hearing drop, should be examined and tested."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about wax history, cotton swab use, pain or drainage, hearing aid dome or filter changes, recurring blockage, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I record before the ear appointment?",
+        "answer": "How long the pressure has lasted, whether it shifts with altitude or a cold, whether hearing dips with it, and any pain or drainage."
       }
     ],
     "related": [
@@ -1891,11 +1910,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Red flag memo",
       "byline": "What to watch, what to do next",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "julia-rivera",
+      "readTime": "3 min read",
       "articleType": "Red flags",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "The eardrum either moves normally or it does not. Tympanometry answers that directly, and it explains a lot of what pressure feels like.",
       "keyTakeaways": [
-        "Track the pattern: wax history and cotton swab use are often more useful than a single symptom label.",
+        "Note whether the pressure shifts with altitude, a cold, or blowing your nose, and whether hearing dips along with it.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is safe ear-care guidance and referral when symptoms suggest medical evaluation."
       ],
@@ -1906,7 +1926,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/dizziness-and-ringing-audiology-or-ent",
     "title": "Dizziness and Ringing in the Ears: Audiology or ENT?",
-    "metaDescription": "Help patients choose the right first step for dizziness plus tinnitus.",
+    "metaDescription": "Dizziness with ringing can start with audiology or with a doctor, depending on the pattern. Here is how to work out which call to make first.",
     "h1": "Dizziness and Ringing in the Ears: Audiology or ENT?",
     "category": "Symptoms & Next Steps",
     "format": "Decision Tree",
@@ -1922,7 +1942,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The goal is to choose the safest next step without overreacting or waiting too long.",
-      "Help patients choose the right first step for dizziness plus tinnitus.",
+      "Dizziness and tinnitus together change the order of the appointments.",
       "The decision in plain English",
       "The question is not “Is this serious?” in the abstract. The question is whether the pattern calls for home observation, audiology care, device support, or medical guidance.",
       "Choose audiology care when",
@@ -1930,26 +1950,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Choose faster medical guidance when",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Use these details to decide",
-      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, and how much the symptom interrupts conversation or safety.",
       "What testing adds",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Hearing and middle-ear testing settle whether the ear is involved at all, and that is what tells you who should see you next.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Which should I call first, audiology or my doctor?",
+        "answer": "Severe dizziness with a new hearing change goes to medical care first. Milder, settled symptoms can start with a hearing test that shows whether the ear is involved."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about when the symptom started, whether one ear or both ears are involved, pain, pressure, dizziness, drainage, or sudden change, how much the symptom interrupts conversation or safety, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I write down before either appointment?",
+        "answer": "Whether the room spins or you feel unsteady, how long each episode lasts, what brings it on, and whether hearing or ringing changes with it."
       }
     ],
     "related": [
@@ -1986,11 +2006,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Decision guide",
       "byline": "A practical decision guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "leannmarie-senat",
+      "readTime": "3 min read",
       "articleType": "Decision points",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Severe dizziness alongside a new hearing change is not a scheduling question. That combination gets medical attention first.",
       "keyTakeaways": [
-        "Track the pattern: when the symptom started and whether one ear or both ears are involved are often more useful than a single symptom label.",
+        "Write down whether the room spins or you feel unsteady, how long each episode lasts, and whether hearing changes with it.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a hearing evaluation, ear check, device check, or medical referral when the pattern suggests something beyond routine audiology troubleshooting."
       ],
@@ -2001,7 +2022,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/ear-fullness-no-pain-hearing-loss",
     "title": "Ear Fullness but No Pain: Could It Be Hearing Loss?",
-    "metaDescription": "Capture common fullness searches and explain wax, pressure, and hearing loss possibilities.",
+    "metaDescription": "A blocked, full ear with no pain is often wax or fluid behind the eardrum, but it can be hearing change. Here is how it gets sorted out safely.",
     "h1": "Ear Fullness but No Pain: Could It Be Hearing Loss?",
     "category": "Ear Care",
     "format": "Symptom Guide",
@@ -2017,34 +2038,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Imagine the moment this concern usually shows up in real life.",
-      "Capture common fullness searches and explain wax, pressure, and hearing loss possibilities.",
+      "Fullness without pain is common, and it still deserves a look.",
       "A common version of this story",
       "Picture a bathroom mirror moment after water, wax, or pressure becomes hard to ignore. The first instinct is often to search, wait, or try one quick fix. That is understandable, but the pattern underneath the symptom is what matters.",
       "What the patient notices",
       "Someone worried about blocked ears, wax, infection-like symptoms, or safe at-home ear care may describe missed words, louder volume, ringing, plugged ears, device frustration, listening fatigue, or avoiding noisy places. Those details are clinically useful because hearing concerns rarely show up the same way in every room.",
       "What is worth writing down",
-      "The most helpful details are wax history, cotton swab use, pain or drainage, hearing aid dome or filter changes, and recurring blockage. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are wax history, cotton swab use, pain or drainage, hearing aid dome or filter changes, and recurring blockage.",
       "What the appointment is meant to answer",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
+      "An ear exam shows whether wax is the cause. Tympanometry shows whether there is fluid sitting behind the eardrum. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
       "When the story changes",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "A practical next step",
-      "The best next step is safe ear-care guidance and referral when symptoms suggest medical evaluation. The goal is to understand what is happening and choose a plan that improves daily life.",
+      "The best next step is safe ear-care guidance and referral when symptoms suggest medical evaluation.",
       "Why local follow-up helps",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "It does not hurt. Can I leave it a few weeks?",
+        "answer": "Fullness that clears on its own within a few days is usually fine to watch. Fullness that persists, or that comes with a hearing drop, is worth an ear examination."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about wax history, cotton swab use, pain or drainage, hearing aid dome or filter changes, recurring blockage, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I mention when I book the ear check?",
+        "answer": "How long the ear has felt full, whether it is one side, whether hearing has dropped, and whether you have used swabs, drops or headphones heavily."
       }
     ],
     "related": [
@@ -2081,11 +2102,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Patient scenario",
       "byline": "A patient-centered guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Real-life scenario",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Nothing you put down your own ear canal will tell you whether the fullness is wax or fluid behind the drum. A light and a look will.",
       "keyTakeaways": [
-        "Track the pattern: wax history and cotton swab use are often more useful than a single symptom label.",
+        "Cotton swabs push wax further in. Note how long the fullness has lasted and whether hearing dropped with it.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is safe ear-care guidance and referral when symptoms suggest medical evaluation."
       ],
@@ -2096,7 +2118,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/why-hearing-aids-whistle",
     "title": "Why Your Hearing Aids Whistle and How to Fix It",
-    "metaDescription": "Drive tune-up visits by explaining feedback causes and fixes.",
+    "metaDescription": "A whistling hearing aid usually means sound is leaking back to the microphone. Here is what to check at home and what a fit adjustment fixes.",
     "h1": "Why Your Hearing Aids Whistle and How to Fix It",
     "category": "Hearing Aid Care",
     "format": "Troubleshooting",
@@ -2112,34 +2134,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "When the problem is frustrating, the trick is to isolate one variable at a time.",
-      "Drive tune-up visits by explaining feedback causes and fixes.",
+      "Feedback means sound is escaping the ear and finding the microphone again.",
       "Step 1: isolate the problem",
       "Write down whether it happens in one ear, one room, one app, one device, or one kind of listening environment.",
       "Step 2: check the simple variables",
-      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound.",
       "Step 3: stop troubleshooting when symptoms are medical",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Step 4: let testing narrow it down",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An office check settles whether the whistling comes from wax, a loose dome, or a fitting whose gain needs reshaping.",
       "Step 5: bring the evidence",
       "Bring devices, chargers, domes, wax guards, app access, prior test results, and examples from real life.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Can I stop the whistling myself?",
+        "answer": "Reseating the dome and cleaning the device is worth trying. Whistling that continues all day usually needs the fit or the programming changed in the office."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about which ear or device is affected, when the issue started, cleaning habits, charger behavior, feedback or weak sound, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a tune-up?",
+        "answer": "Both hearing aids, the charger, spare domes and wax guards, and a note of when the whistling happens: on insertion, under a hat, or all day."
       }
     ],
     "related": [
@@ -2176,11 +2198,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Troubleshooting log",
       "byline": "Step-by-step troubleshooting",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Troubleshooting",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A hearing aid that whistles when you hug someone is telling you the seal is loose, not that the device is broken.",
       "keyTakeaways": [
-        "Track the pattern: which ear or device is affected and when the issue started are often more useful than a single symptom label.",
+        "Note whether the whistle happens on insertion, under a hat, or all day long. All day means the fit is wrong.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
       ],
@@ -2191,7 +2214,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-aid-not-charging",
     "title": "Hearing Aid Not Charging? Common Causes and Next Steps",
-    "metaDescription": "Answer rechargeable hearing aid troubleshooting searches.",
+    "metaDescription": "A hearing aid that will not charge is often the case, the cable or the contacts rather than the device. Here is what to check before booking.",
     "h1": "Hearing Aid Not Charging? Common Causes and Next Steps",
     "category": "Hearing Aid Care",
     "format": "Troubleshooting",
@@ -2207,34 +2230,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "When the problem is frustrating, the trick is to isolate one variable at a time.",
-      "Answer rechargeable hearing aid troubleshooting searches.",
+      "A charging failure is often in the case or the contacts rather than the hearing aid itself.",
       "Step 1: isolate the problem",
       "Write down whether it happens in one ear, one room, one app, one device, or one kind of listening environment.",
       "Step 2: check the simple variables",
-      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound.",
       "Step 3: stop troubleshooting when symptoms are medical",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Step 4: let testing narrow it down",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A bench check finds whether the fault sits in the charger, the contacts or the device, before anything is sent away for repair.",
       "Step 5: bring the evidence",
       "Bring devices, chargers, domes, wax guards, app access, prior test results, and examples from real life.",
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Should I try a different cable before booking?",
+        "answer": "Yes. Try another cable and socket, clean the contacts, and swap the two hearing aids between slots. Book if it still will not charge after that."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about which ear or device is affected, when the issue started, cleaning habits, charger behavior, feedback or weak sound, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a charging appointment?",
+        "answer": "Both hearing aids, the charging case, the cable and plug you use, and a note of which side and which slot fails."
       }
     ],
     "related": [
@@ -2271,11 +2294,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Troubleshooting log",
       "byline": "Step-by-step troubleshooting",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Troubleshooting",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Put the other hearing aid in the same slot. If that one fails too, the problem is the charger, not the device.",
       "keyTakeaways": [
-        "Track the pattern: which ear or device is affected and when the issue started are often more useful than a single symptom label.",
+        "Note which side, which slot, and whether the light behaves differently from the other ear.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
       ],
@@ -2286,7 +2310,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-aid-sounds-weak",
     "title": "Hearing Aid Sounds Weak: Is It Wax, Moisture, or Programming?",
-    "metaDescription": "Explain common causes of weak sound and when to schedule service.",
+    "metaDescription": "Weak hearing aid sound is usually a blocked wax guard, moisture, or a programming change. Here is how each one gets ruled out, in that order.",
     "h1": "Hearing Aid Sounds Weak: Is It Wax, Moisture, or Programming?",
     "category": "Hearing Aid Care",
     "format": "Troubleshooting",
@@ -2302,34 +2326,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "When the problem is frustrating, the trick is to isolate one variable at a time.",
-      "Explain common causes of weak sound and when to schedule service.",
+      "Weak sound has a short list of causes, and wax is at the top of it.",
       "Step 1: isolate the problem",
       "Write down whether it happens in one ear, one room, one app, one device, or one kind of listening environment.",
       "Step 2: check the simple variables",
-      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound.",
       "Step 3: stop troubleshooting when symptoms are medical",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Step 4: let testing narrow it down",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing settles whether the device output has dropped or your hearing has, because from the inside those two feel identical.",
       "Step 5: bring the evidence",
       "Bring devices, chargers, domes, wax guards, app access, prior test results, and examples from real life.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Does weak sound mean my hearing has got worse?",
+        "answer": "It can, but a blocked wax guard is more common and quicker to check. Change the guard and clean the device first, then book if the sound is still thin."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about which ear or device is affected, when the issue started, cleaning habits, charger behavior, feedback or weak sound, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring or note?",
+        "answer": "Both devices, the charger, spare wax guards and domes, and whether the weakness came on gradually or overnight, in one ear or both."
       }
     ],
     "related": [
@@ -2366,11 +2390,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Troubleshooting log",
       "byline": "Step-by-step troubleshooting",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Troubleshooting",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Before you assume your hearing has dropped, change the wax guard. A blocked filter sounds exactly like a worse ear.",
       "keyTakeaways": [
-        "Track the pattern: which ear or device is affected and when the issue started are often more useful than a single symptom label.",
+        "Note whether it is one ear or both, and whether it faded slowly or stopped between one day and the next.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
       ],
@@ -2381,7 +2406,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-often-professional-hearing-aid-cleaning",
     "title": "How Often Should Hearing Aids Be Professionally Cleaned?",
-    "metaDescription": "Support routine clean-and-check appointments.",
+    "metaDescription": "Wiping the devices at home is not the same as a professional clean and check. Here is what the office visit does and how often it is worth booking.",
     "h1": "How Often Should Hearing Aids Be Professionally Cleaned?",
     "category": "Hearing Aid Care",
     "format": "Checklist",
@@ -2397,13 +2422,13 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Here is how this topic tends to get sorted out during a well-run appointment.",
-      "Support routine clean-and-check appointments.",
+      "Home cleaning keeps wax off the outside. A clean and check reaches what you cannot see.",
       "Before the test starts",
       "A strong appointment starts with history: what changed, when it changed, where listening breaks down, and what the patient wants to improve.",
       "What the clinician is sorting",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "The visit settles whether the devices are still performing the way they were set to, and clears the parts home care cannot reach.",
       "What patients should bring",
-      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound.",
       "What would change the plan",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "What happens after results",
@@ -2411,20 +2436,20 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "How do I know when a clean and check is due?",
+        "answer": "Book when sound goes dull, when a wax guard blocks more often than usual, or before a trip you need the devices for. Otherwise keep to the interval agreed at your fitting."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about which ear or device is affected, when the issue started, cleaning habits, charger behavior, feedback or weak sound, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a clean and check?",
+        "answer": "Both hearing aids, the charger, any domes and wax guards you keep at home, and a note of anything that has been intermittent."
       }
     ],
     "related": [
@@ -2461,11 +2486,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Clinic note",
       "byline": "Notes from a hearing-care visit",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "julia-rivera",
+      "readTime": "3 min read",
       "articleType": "Clinic note",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A clean and check finds the wax guard you cannot see, the receiver you cannot open, and the drift you stopped noticing.",
       "keyTakeaways": [
-        "Track the pattern: which ear or device is affected and when the issue started are often more useful than a single symptom label.",
+        "Book a clean and check when sound goes dull, when wax has been a problem before, or ahead of a trip you rely on them for.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
       ],
@@ -2476,7 +2502,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-aid-domes-wax-guards-receivers",
     "title": "Hearing Aid Domes, Wax Guards, and Receivers Explained",
-    "metaDescription": "Teach ownership basics that reduce frustration and repairs.",
+    "metaDescription": "Domes, wax guards and receivers are the three parts that fail most often. Here is what each one does and which of them you can change yourself.",
     "h1": "Hearing Aid Domes, Wax Guards, and Receivers Explained",
     "category": "Hearing Aid Care",
     "format": "Explainer",
@@ -2492,34 +2518,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "When the problem is frustrating, the trick is to isolate one variable at a time.",
-      "Teach ownership basics that reduce frustration and repairs.",
+      "Three small parts do most of the failing. Knowing their names shortens every phone call.",
       "Step 1: isolate the problem",
       "Write down whether it happens in one ear, one room, one app, one device, or one kind of listening environment.",
       "Step 2: check the simple variables",
-      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound.",
       "Step 3: stop troubleshooting when symptoms are medical",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Step 4: let testing narrow it down",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An office check finds which of the three parts has failed, and whether the size fitted to you is still the right one.",
       "Step 5: bring the evidence",
       "Bring devices, chargers, domes, wax guards, app access, prior test results, and examples from real life.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Which of these parts can I change myself?",
+        "answer": "Domes and wax guards are made to be changed by the wearer on many models, following the instructions for yours. Receivers are fitted and measured in the office."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about which ear or device is affected, when the issue started, cleaning habits, charger behavior, feedback or weak sound, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring so the right parts are on hand?",
+        "answer": "Both devices, the charger, and the packet your domes or wax guards came in. The packet carries the size and type, which saves guesswork."
       }
     ],
     "related": [
@@ -2556,11 +2582,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Troubleshooting log",
       "byline": "Step-by-step troubleshooting",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "julia-rivera",
+      "readTime": "3 min read",
       "articleType": "Troubleshooting",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "The dome seals the ear, the wax guard protects the receiver, and the receiver makes the sound. Two of the three are consumables.",
       "keyTakeaways": [
-        "Track the pattern: which ear or device is affected and when the issue started are often more useful than a single symptom label.",
+        "Keep spare domes and wax guards at home, and bring the packet in so the size and type stay recorded correctly.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
       ],
@@ -2571,7 +2598,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-long-hearing-aid-batteries-last",
     "title": "How Long Should Hearing Aid Batteries Last?",
-    "metaDescription": "Answer battery-life questions and connect to troubleshooting.",
+    "metaDescription": "Hearing aid battery and charge life depend on streaming, device size and settings. Here is what shortens it and when short runtime means service.",
     "h1": "How Long Should Hearing Aid Batteries Last?",
     "category": "Hearing Aid Care",
     "format": "Quick Answer Guide",
@@ -2587,34 +2614,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Local follow-up matters because hearing care improves through real-world feedback.",
-      "Answer battery-life questions and connect to troubleshooting.",
+      "Runtime is a symptom too. It changes when something else has.",
       "Why local care changes the experience",
       "Local care matters because hearing needs become clearer after you return to real restaurants, meetings, family rooms, cars, and phone calls.",
       "What local follow-up can adjust",
       "Follow-up can refine comfort, own-voice sound, background noise settings, Bluetooth behavior, maintenance routines, tinnitus support, and communication strategies.",
       "What to bring from daily life",
-      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are which ear or device is affected, when the issue started, cleaning habits, charger behavior, and feedback or weak sound.",
       "What a local evaluation can separate",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A check tells you whether runtime dropped because of streaming and settings or because the battery or the charger is failing.",
       "When not to wait",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Service-area note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "My runtime dropped. Is the battery failing?",
+        "answer": "Not always. Streaming, a new program, or cold weather can each shorten a day. Book if runtime falls sharply on one side while your habits have stayed the same."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about which ear or device is affected, when the issue started, cleaning habits, charger behavior, feedback or weak sound, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I note before calling?",
+        "answer": "How many hours you get on each side, how much of the day is streaming, how old the devices are, and whether the charger has changed."
       }
     ],
     "related": [
@@ -2651,11 +2678,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Local care guide",
       "byline": "For Westchester and nearby Connecticut patients",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Local care lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Streaming calls and television all day pulls more power than plain listening does. Runtime falls first when your habits change.",
       "keyTakeaways": [
-        "Track the pattern: which ear or device is affected and when the issue started are often more useful than a single symptom label.",
+        "Track how many hours you get, how much of that was streaming, and whether the two ears differ.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a device clean-and-check, repair triage, reprogramming, or fit adjustment."
       ],
@@ -2666,7 +2694,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/rechargeable-vs-battery-hearing-aids",
     "title": "Rechargeable vs Battery Hearing Aids: Which Is Better?",
-    "metaDescription": "Compare power options and match them to lifestyle and dexterity.",
+    "metaDescription": "Choosing between rechargeable and disposable batteries comes down to dexterity, travel, streaming, and what happens the night you forget to dock them.",
     "h1": "Rechargeable vs Battery Hearing Aids: Which Is Better?",
     "category": "Hearing Aid Buying",
     "format": "Comparison",
@@ -2682,34 +2710,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Compare power options and match them to lifestyle and dexterity.",
+      "This is a question about your hands and your routine more than about the technology.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "The fitting appointment settles which power option suits your hands and your day, alongside what the hearing test shows.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "What happens if I forget to charge them overnight?",
+        "answer": "You start the day without hearing aids, which is the main practical argument for disposables. Ask about charging time and whether a short top-up gives you a usable day."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to the consultation?",
+        "answer": "Any earlier hearing tests, a sense of your daily routine and travel, and an honest account of how you manage small parts."
       }
     ],
     "related": [
@@ -2746,11 +2774,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Rechargeables ask you to remember the dock every night. Disposables ask your fingertips to handle something the size of a lentil.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Think about travel, power cuts, and how your fingers manage small parts before you compare specifications.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -2761,7 +2790,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/bluetooth-hearing-aids-before-buying",
     "title": "Bluetooth Hearing Aids: What Patients Should Know Before Buying",
-    "metaDescription": "Explain streaming, compatibility, phone calls, and realistic expectations.",
+    "metaDescription": "Bluetooth hearing aids stream calls, television and music, but compatibility varies by phone and by model. Here is what to check before buying.",
     "h1": "Bluetooth Hearing Aids: What Patients Should Know Before Buying",
     "category": "Hearing Aid Buying",
     "format": "Buying Guide",
@@ -2777,34 +2806,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Explain streaming, compatibility, phone calls, and realistic expectations.",
+      "Streaming quality depends on your phone as much as on the hearing aids.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A demonstration in the office settles whether your phone and the hearing aids work together the way you need them to.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Will they work with my phone?",
+        "answer": "That depends on the exact handset and the exact model. Bring the phone you actually use and ask for the connection to be demonstrated before you commit."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a streaming demonstration?",
+        "answer": "Your phone and its passcode, any streaming accessory small enough to carry, and a list of the calls and programmes you most want to hear."
       }
     ],
     "related": [
@@ -2841,11 +2870,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Bring the phone you actually use to the appointment. Compatibility is decided by that handset, not by the brochure.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Check which phone you own, whether both ears stream, and whether hands-free calling is supported before you choose a model.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -2856,7 +2886,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/invisible-hearing-aids-pros-cons-candidacy",
     "title": "Invisible Hearing Aids: Pros, Cons, and Candidacy",
-    "metaDescription": "Capture discreet hearing aid intent and explain candidacy limits.",
+    "metaDescription": "Invisible hearing aids depend on ear canal size, hearing level and dexterity. Here is who is a candidate and what discretion costs in practice.",
     "h1": "Invisible Hearing Aids: Pros, Cons, and Candidacy",
     "category": "Hearing Aid Buying",
     "format": "Pros and Cons",
@@ -2872,34 +2902,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Capture discreet hearing aid intent and explain candidacy limits.",
+      "Not every ear canal and not every audiogram can take a device that small.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An ear exam and your audiogram settle whether a device that small can deliver the amplification your hearing actually needs.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Can anyone wear the invisible ones?",
+        "answer": "No. Canal size, how much amplification you need, and how well you handle small parts all decide it. An ear examination and your audiogram settle candidacy."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a candidacy appointment?",
+        "answer": "Any earlier hearing tests, and a clear sense of where discretion matters most to you and what you are willing to trade for it."
       }
     ],
     "related": [
@@ -2936,11 +2966,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "The smaller the device, the less room there is for battery, microphones and power. Discretion is always bought with something.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Candidacy comes down to canal size, how much amplification you need, and how well you handle very small parts.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -2951,7 +2982,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/are-otc-hearing-aids-right-for-me",
     "title": "Are OTC Hearing Aids Right for Me?",
-    "metaDescription": "Use FDA/NIDCD-informed guidance for OTC hearing aid searches.",
+    "metaDescription": "Over-the-counter hearing aids are made for adults with perceived mild to moderate hearing loss. Here is how to tell whether that describes you.",
     "h1": "Are OTC Hearing Aids Right for Me?",
     "category": "Hearing Aid Buying",
     "format": "Candidate Guide",
@@ -2967,34 +2998,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Use FDA/NIDCD-informed guidance for OTC hearing aid searches.",
+      "The over-the-counter category has a defined audience, and it does not include everyone.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test shows whether your hearing sits in the range the over-the-counter category was written for.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Do I need a hearing test before buying over the counter?",
+        "answer": "Not legally, as an adult. A test is what tells you whether your loss sits in the range the category was written for, and whether one ear differs from the other."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring if I want an OTC device reviewed?",
+        "answer": "The device, its box and labelling, the app if there is one, and a note of the situations where it has and has not helped."
       }
     ],
     "related": [
@@ -3031,11 +3062,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Over-the-counter devices are for adults who believe their hearing loss is mild to moderate. Without a test, that is a guess.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "The category is not intended for children, or for hearing loss that is severe, sudden, or in one ear only.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -3046,7 +3078,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/otc-vs-prescription-hearing-aids-real-world",
     "title": "OTC vs Prescription Hearing Aids: Real-World Differences",
-    "metaDescription": "Support comparison intent and link to professional fitting value.",
+    "metaDescription": "The real difference between OTC and prescription hearing aids is who sets them, who verifies them, and who adjusts them when they are wrong.",
     "h1": "OTC vs Prescription Hearing Aids: Real-World Differences",
     "category": "Hearing Aid Buying",
     "format": "Comparison",
@@ -3062,34 +3094,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Support comparison intent and link to professional fitting value.",
+      "Both categories make sound louder. They differ in who tunes it to your ears.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test and real-ear measurement settle whether a device is actually delivering what your ears need at each pitch.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Can I start over the counter and move to prescription later?",
+        "answer": "People do. Keep the receipt and the return window in mind, and have a hearing test at some point so you know what you are actually working with."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to compare the two?",
+        "answer": "Any over-the-counter device you already own, your hearing test if you have one, and the listening situations you want judged against both."
       }
     ],
     "related": [
@@ -3126,11 +3158,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A prescription fitting is measured in your own ear canal against a target. An over-the-counter device is set by you, from a menu.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Ask who adjusts the device when it is not right, and what that costs, before you compare the sticker prices.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -3141,7 +3174,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/airpods-as-hearing-aids",
     "title": "AirPods as Hearing Aids: What They Can and Can’t Do",
-    "metaDescription": "Address consumer-tech interest safely and explain limitations.",
+    "metaDescription": "AirPods can amplify, and in a quiet room that is worth something. They are not a hearing test and not a fitted hearing aid. Here is where the line falls.",
     "h1": "AirPods as Hearing Aids: What They Can and Can’t Do",
     "category": "Hearing Aid Buying",
     "format": "Myth vs Fact",
@@ -3157,34 +3190,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Address consumer-tech interest safely and explain limitations.",
+      "Consumer earbuds can amplify. Amplifying is not the same as being fitted.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test gives you a figure at each pitch, which is the one thing no earbud can tell you.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Is it safe to use earbuds this way?",
+        "answer": "Using them at a sensible volume is fine. The risk is a hearing change going unexamined because the earbuds are taking the edge off it."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring if I want a proper comparison?",
+        "answer": "The earbuds and your phone, and a note of which rooms they help in and which they do not. A hearing test gives that comparison something to sit against."
       }
     ],
     "related": [
@@ -3221,11 +3254,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Earbuds you already own are a reasonable thing to try. They are not a reason to skip finding out what your hearing measures.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "If earbuds help in one room and nowhere else, bring that to a hearing test rather than treating it as the answer.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -3236,7 +3270,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/costco-hearing-aids-vs-audiologist-care",
     "title": "Costco Hearing Aids vs Audiologist Care: What to Compare",
-    "metaDescription": "Capture retail comparison searches and differentiate clinical follow-up.",
+    "metaDescription": "Comparing a warehouse hearing aid with private practice care comes down to follow-up, verification, and who you see when the sound is not right.",
     "h1": "Costco Hearing Aids vs Audiologist Care: What to Compare",
     "category": "Hearing Aid Buying",
     "format": "Comparison",
@@ -3252,34 +3286,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Capture retail comparison searches and differentiate clinical follow-up.",
+      "The device is one line on the invoice. The care around it is the rest.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Real-ear verification is what shows whether a device is hitting prescriptive targets for your hearing. It is the same measurement wherever the device was bought.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Is the same device cheaper somewhere else?",
+        "answer": "Sometimes. Compare what is bundled with it: the fitting, the verification, the follow-up visits, the repairs, and who you see when the sound is wrong."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a second look?",
+        "answer": "The written quote, the device model and technology level, your hearing test, and the list of what the price includes after the sale."
       }
     ],
     "related": [
@@ -3316,11 +3350,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Ask both places the same question. How many follow-up visits are included, and who do I see when the sound is wrong.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Compare what comes after the sale, meaning visits, adjustments and repairs, not only the price of the devices.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -3331,7 +3366,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-aid-cost-westchester-county",
     "title": "How Much Do Hearing Aids Cost in Westchester County?",
-    "metaDescription": "Address local commercial-intent searches without unsupported price claims.",
+    "metaDescription": "Hearing aid pricing varies by technology level and by how much care is bundled with it. Here is how to read a quote before you sign anything.",
     "h1": "How Much Do Hearing Aids Cost in Westchester County?",
     "category": "Hearing Aid Buying",
     "format": "Local Guide",
@@ -3347,34 +3382,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Address local commercial-intent searches without unsupported price claims.",
+      "Two quotes can name the same figure and include very different amounts of care.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test and a fitting plan settle which technology level your listening calls for, which is what makes two quotes comparable.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Why will nobody quote a price over the phone?",
+        "answer": "Because the technology level depends on your hearing test and your listening goals. Ask instead for the price of each level and what care is included at each."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a pricing conversation?",
+        "answer": "Any quotes you already have in writing, your hearing test, and your insurance card so you can weigh your own benefits alongside the quote."
       }
     ],
     "related": [
@@ -3411,11 +3446,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Ask what the price includes. The fitting, the verification, the follow-up visits, the trial terms, the repairs. Then compare.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Get any quote in writing with the technology level and the included visits named, then compare them line by line.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -3426,7 +3462,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/does-insurance-cover-hearing-aids-tests",
     "title": "Does Insurance Cover Hearing Aids or Hearing Tests?",
-    "metaDescription": "Answer coverage questions and encourage benefit verification.",
+    "metaDescription": "Coverage for hearing tests and for hearing aids often works differently, even on the same plan. Here is what to ask your insurer before you come in.",
     "h1": "Does Insurance Cover Hearing Aids or Hearing Tests?",
     "category": "Hearing Aid Buying",
     "format": "Checklist",
@@ -3442,34 +3478,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Answer coverage questions and encourage benefit verification.",
+      "Testing and hearing aids are often handled as separate benefits, so ask about each of them.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An audiologist tells you what your hearing measures and what would help. What a plan pays for is a separate answer, from your insurer.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "My plan covers the test. Does that mean it covers hearing aids?",
+        "answer": "Often not. They are usually separate benefits, so ask about each one by name when you call the number on your card."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I have ready when I call my insurer?",
+        "answer": "Your member number, the plan year, and two questions written down: is diagnostic hearing testing covered, and is there a hearing aid benefit."
       }
     ],
     "related": [
@@ -3506,11 +3542,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jenna-elias",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Call the number on your card and ask two questions, separately. Is the hearing test covered, and is there a hearing aid benefit.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Write down the reference number for the call, the benefit amount quoted, and any renewal interval the insurer names.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -3521,7 +3558,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/questions-before-buying-hearing-aids",
     "title": "What Questions Should You Ask Before Buying Hearing Aids?",
-    "metaDescription": "Create a practical buying checklist that supports consultations.",
+    "metaDescription": "The questions worth asking before buying hearing aids are about verification, follow-up, trial terms and repairs, not only about features and price.",
     "h1": "What Questions Should You Ask Before Buying Hearing Aids?",
     "category": "Hearing Aid Buying",
     "format": "Checklist",
@@ -3537,34 +3574,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Create a practical buying checklist that supports consultations.",
+      "The useful questions are all about what happens after the sale.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are hearing test results, lifestyle needs, service model, trial and follow-up, and connectivity and comfort.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test pins down which technology level your listening calls for, so a feature list can be judged against something real.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is a recommendation that connects technology level to real-world listening goals. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a recommendation that connects technology level to real-world listening goals."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "How many places should I visit before deciding?",
+        "answer": "One is enough if you get straight answers about verification, follow-up and the trial terms. Visit another if any of those three stay vague."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about hearing test results, lifestyle needs, service model, trial and follow-up, connectivity and comfort, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I take in with me?",
+        "answer": "The question list, something to write the answers on, your hearing test if you have one, and any quote you have already been given."
       }
     ],
     "related": [
@@ -3601,11 +3638,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Ask whether the fitting is verified in your ear, how many follow-ups are included, and what the trial period actually allows.",
       "keyTakeaways": [
-        "Track the pattern: hearing test results and lifestyle needs are often more useful than a single symptom label.",
+        "Take the list in with you and write the answers down. Verbal promises are hard to compare a week later.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a recommendation that connects technology level to real-world listening goals."
       ],
@@ -3616,7 +3654,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/why-real-ear-verification-matters",
     "title": "Why Real-Ear Verification Matters in Hearing Aid Fitting",
-    "metaDescription": "Build authority around evidence-informed fitting and verification.",
+    "metaDescription": "Real-ear measurement checks what a hearing aid actually delivers inside your ear canal against prescriptive targets. Here is why that step matters.",
     "h1": "Why Real-Ear Verification Matters in Hearing Aid Fitting",
     "category": "Hearing Aid Fitting",
     "format": "Explainer",
@@ -3632,34 +3670,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Build authority around evidence-informed fitting and verification.",
+      "Two ears with the same audiogram do not get the same sound from the same device.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Real-ear measurement settles whether the device is hitting target in your ear canal rather than in a manufacturer's average one.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a fitting and verification process that improves comfort and performance over time. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a fitting and verification process that improves comfort and performance over time."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "How do I know whether my fitting was verified?",
+        "answer": "You would have had a thin probe tube placed in the ear alongside the hearing aid, and a screen showing your curves against a target. Ask directly if you are unsure."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about physical fit, feedback, speech clarity, own-voice comfort, follow-up adjustments, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring if I want my current aids checked?",
+        "answer": "Both devices, the charger, your most recent hearing test, and a note of the listening situations that are still not working."
       }
     ],
     "related": [
@@ -3696,11 +3734,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Manufacturer first-fit settings routinely fall short of prescriptive targets. Real-ear measurement is how anyone finds out.",
       "keyTakeaways": [
-        "Track the pattern: physical fit and feedback are often more useful than a single symptom label.",
+        "Ask whether your fitting includes real-ear measurement, and ask to see the screen while it is run.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a fitting and verification process that improves comfort and performance over time."
       ],
@@ -3711,7 +3750,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/what-to-expect-hearing-aid-fitting",
     "title": "What to Expect During a Hearing Aid Fitting Appointment",
-    "metaDescription": "Reduce friction for patients considering devices.",
+    "metaDescription": "A fitting covers physical fit, real-ear verification, streaming setup, and how to insert and clean the devices. Here is how the appointment runs.",
     "h1": "What to Expect During a Hearing Aid Fitting Appointment",
     "category": "Hearing Aid Fitting",
     "format": "Appointment Walkthrough",
@@ -3727,13 +3766,13 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Here is how this topic tends to get sorted out during a well-run appointment.",
-      "Reduce friction for patients considering devices.",
+      "The fitting is a working appointment. Expect to practise things.",
       "Before the test starts",
       "A strong appointment starts with history: what changed, when it changed, where listening breaks down, and what the patient wants to improve.",
       "What the clinician is sorting",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Real-ear measurement at the fitting settles whether what reaches your eardrum matches the prescription your hearing test produced.",
       "What patients should bring",
-      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments.",
       "What would change the plan",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "What happens after results",
@@ -3741,20 +3780,20 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is a fitting and verification process that improves comfort and performance over time. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a fitting and verification process that improves comfort and performance over time."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Will I hear normally as soon as they are fitted?",
+        "answer": "No. The first day is about comfort, insertion and a verified starting setting. Speech in a loud restaurant is a later appointment, not a first-day result."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about physical fit, feedback, speech clarity, own-voice comfort, follow-up adjustments, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to the fitting?",
+        "answer": "Your phone and its passcode, and someone whose voice you want to hear clearly. Allow more time than you think the appointment will take."
       }
     ],
     "related": [
@@ -3791,11 +3830,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Clinic note",
       "byline": "Notes from a hearing-care visit",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "julia-rivera",
+      "readTime": "3 min read",
       "articleType": "Clinic note",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "You will put the hearing aids in and take them out yourself before you leave. That part matters more than it sounds.",
       "keyTakeaways": [
-        "Track the pattern: physical fit and feedback are often more useful than a single symptom label.",
+        "Bring your phone, the charger, and someone whose voice you particularly want to hear clearly.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a fitting and verification process that improves comfort and performance over time."
       ],
@@ -3806,7 +3846,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-many-follow-up-visits-new-hearing-aids",
     "title": "How Many Follow-Up Visits Do New Hearing Aids Need?",
-    "metaDescription": "Set expectations for long-term follow-up and adjustments.",
+    "metaDescription": "New hearing aids take more than one visit. Here is what the follow-up appointments adjust and why the first fitting is rarely the final setting.",
     "h1": "How Many Follow-Up Visits Do New Hearing Aids Need?",
     "category": "Hearing Aid Fitting",
     "format": "Quick Answer Guide",
@@ -3822,34 +3862,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "In clinic, this question usually starts with a story rather than a test result.",
-      "Set expectations for long-term follow-up and adjustments.",
+      "The first setting is a starting point, and it is meant to change.",
       "What I listen for first",
       "When someone asks this question, the first clue is usually not the symptom name. It is the timeline: when it started, whether it changed suddenly, and whether one ear behaves differently than the other.",
       "The pattern matters more than the label",
       "A new or current hearing aid wearer who wants the devices to feel comfortable and sound natural in daily life may describe missed words, louder volume, ringing, plugged ears, device frustration, listening fatigue, or avoiding noisy places. Those details are clinically useful because hearing concerns rarely show up the same way in every room.",
       "What testing can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation. A good evaluation turns a vague worry into a set of findings you can act on.",
+      "Follow-up testing and adjustment settle whether the settings hold up in your rooms, not only in a quiet office. A good evaluation turns a vague worry into a set of findings you can act on.",
       "When I would not wait",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "How to make the visit more useful",
-      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a fitting and verification process that improves comfort and performance over time. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a fitting and verification process that improves comfort and performance over time."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Is it normal to need several visits?",
+        "answer": "Yes. The first setting is a starting point and gets adjusted from what you notice at home. Most of the useful information arrives after the first week."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about physical fit, feedback, speech clarity, own-voice comfort, follow-up adjustments, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to each follow-up?",
+        "answer": "Both devices, the charger, and your notes: which room, whose voice, what went wrong, and at what time of day."
       }
     ],
     "related": [
@@ -3886,11 +3926,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Audiologist perspective",
       "byline": "From the audiology desk",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Clinical lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "What you notice in your own kitchen and your own car is what shapes the next setting. That is what follow-up visits are for.",
       "keyTakeaways": [
-        "Track the pattern: physical fit and feedback are often more useful than a single symptom label.",
+        "Keep a short list between visits. Which room, which voice, what went wrong. Bring it in.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a fitting and verification process that improves comfort and performance over time."
       ],
@@ -3901,7 +3942,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/why-new-hearing-aids-sound-strange",
     "title": "Why New Hearing Aids Sound Strange at First",
-    "metaDescription": "Normalize acclimatization and explain when to call for help.",
+    "metaDescription": "New hearing aids sound sharp, hollow or too bright at first while you readjust to sounds you had stopped hearing. Here is what to expect in the first weeks.",
     "h1": "Why New Hearing Aids Sound Strange at First",
     "category": "Hearing Aid Fitting",
     "format": "Real-Life Scenario",
@@ -3917,34 +3958,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Imagine the moment this concern usually shows up in real life.",
-      "Normalize acclimatization and explain when to call for help.",
+      "Your own voice will sound strange first. That is the usual order.",
       "A common version of this story",
       "Picture a fitting appointment where small adjustments make a big difference. The first instinct is often to search, wait, or try one quick fix. That is understandable, but the pattern underneath the symptom is what matters.",
       "What the patient notices",
       "A new or current hearing aid wearer who wants the devices to feel comfortable and sound natural in daily life may describe missed words, louder volume, ringing, plugged ears, device frustration, listening fatigue, or avoiding noisy places. Those details are clinically useful because hearing concerns rarely show up the same way in every room.",
       "What is worth writing down",
-      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments.",
       "What the appointment is meant to answer",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
+      "A verified fitting settles whether the brightness is the prescription doing its job or a setting that needs to come down. The point is not to make the concern sound bigger than it is; it is to stop guessing.",
       "When the story changes",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "A practical next step",
-      "The best next step is a fitting and verification process that improves comfort and performance over time. The goal is to understand what is happening and choose a plan that improves daily life.",
+      "The best next step is a fitting and verification process that improves comfort and performance over time.",
       "Why local follow-up helps",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "How long before they stop sounding odd?",
+        "answer": "It eases as wearing time builds up. Anything sharp, painful or distorted should be reported rather than waited out."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about physical fit, feedback, speech clarity, own-voice comfort, follow-up adjustments, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I note for the follow-up?",
+        "answer": "Which sounds are too bright, whether your own voice is the problem, how many hours a day you are wearing them, and where you have stopped wearing them."
       }
     ],
     "related": [
@@ -3981,11 +4022,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Patient scenario",
       "byline": "A patient-centered guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Real-life scenario",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Paper rustling, your own footsteps, the refrigerator. Those sounds were always there. You are hearing them again.",
       "keyTakeaways": [
-        "Track the pattern: physical fit and feedback are often more useful than a single symptom label.",
+        "Start in quiet rooms and build up. Report anything sharp or painful rather than pushing through it.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a fitting and verification process that improves comfort and performance over time."
       ],
@@ -3996,7 +4038,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-to-make-hearing-aids-more-comfortable",
     "title": "How to Make Hearing Aids More Comfortable",
-    "metaDescription": "Answer comfort concerns and route to fitting/tune-up support.",
+    "metaDescription": "Sore ears, a plugged feeling, or devices that slip usually come down to dome size, receiver length or shell fit. Each of those has its own fix.",
     "h1": "How to Make Hearing Aids More Comfortable",
     "category": "Hearing Aid Fitting",
     "format": "Troubleshooting",
@@ -4012,34 +4054,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "When the problem is frustrating, the trick is to isolate one variable at a time.",
-      "Answer comfort concerns and route to fitting/tune-up support.",
+      "Discomfort is a fitting problem, and fitting problems can be adjusted.",
       "Step 1: isolate the problem",
       "Write down whether it happens in one ear, one room, one app, one device, or one kind of listening environment.",
       "Step 2: check the simple variables",
-      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are physical fit, feedback, speech clarity, own-voice comfort, and follow-up adjustments.",
       "Step 3: stop troubleshooting when symptoms are medical",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Step 4: let testing narrow it down",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An office check shows whether it is the dome size, the receiver length or the shell that is pressing.",
       "Step 5: bring the evidence",
       "Bring devices, chargers, domes, wax guards, app access, prior test results, and examples from real life.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is a fitting and verification process that improves comfort and performance over time. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a fitting and verification process that improves comfort and performance over time."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Should sore ears settle by themselves?",
+        "answer": "Give a new fitting a few days. Soreness that arrives within an hour, or a spot that stays red, means the fit needs changing rather than more perseverance."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about physical fit, feedback, speech clarity, own-voice comfort, follow-up adjustments, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a comfort appointment?",
+        "answer": "Both devices, spare domes, and a note of where it hurts, how long it takes to start, and whether one ear is worse than the other."
       }
     ],
     "related": [
@@ -4076,11 +4118,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Troubleshooting log",
       "byline": "Step-by-step troubleshooting",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "julia-rivera",
+      "readTime": "3 min read",
       "articleType": "Troubleshooting",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A hearing aid should be unnoticeable by the end of the day. Soreness after an hour means the fit is wrong.",
       "keyTakeaways": [
-        "Track the pattern: physical fit and feedback are often more useful than a single symptom label.",
+        "Note where it hurts, how long it takes to start, and whether it is one ear. A photograph of the sore spot helps.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a fitting and verification process that improves comfort and performance over time."
       ],
@@ -4091,7 +4134,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-protection-concerts-musician-vs-foam",
     "title": "Hearing Protection for Concerts: Musician Earplugs vs Foam Plugs",
-    "metaDescription": "Compare protection options for music and concertgoers.",
+    "metaDescription": "Foam plugs cut the high notes hardest and muddy the music. Musician earplugs reduce the level more evenly. Here is when each one is the right choice.",
     "h1": "Hearing Protection for Concerts: Musician Earplugs vs Foam Plugs",
     "category": "Hearing Protection",
     "format": "Comparison",
@@ -4107,7 +4150,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The goal is to choose the safest next step without overreacting or waiting too long.",
-      "Compare protection options for music and concertgoers.",
+      "Both protect. Only one of them keeps music sounding like music.",
       "The decision in plain English",
       "The question is not “Is this serious?” in the abstract. The question is whether the pattern calls for home observation, audiology care, device support, or medical guidance.",
       "Choose audiology care when",
@@ -4115,26 +4158,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Choose faster medical guidance when",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Use these details to decide",
-      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability.",
       "What testing adds",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "An ear impression and a fitting settle which filter and shape you will keep in, because a plug left in a pocket protects nothing.",
       "Local care note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is custom or situational hearing protection matched to the sound environment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is custom or situational hearing protection matched to the sound environment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Are custom plugs worth it for one concert a year?",
+        "answer": "Probably not. Foam or a filtered off-the-shelf plug will cover it. Custom plugs earn their cost when you are in loud rooms regularly, or you play."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about noise level, exposure duration, fit and comfort, communication needs, reusability, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What happens at an appointment for custom plugs?",
+        "answer": "An ear impression is taken, so the canal needs to be clear of wax first. Bring a note of the venues and the instruments involved."
       }
     ],
     "related": [
@@ -4171,11 +4214,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Decision guide",
       "byline": "A practical decision guide",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Decision points",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Foam plugs take the treble first, which is why music through them sounds like it is coming from the next room.",
       "keyTakeaways": [
-        "Track the pattern: noise level and exposure duration are often more useful than a single symptom label.",
+        "For one loud night, foam works. For repeated exposure, a fitted plug you will actually wear is the better buy.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is custom or situational hearing protection matched to the sound environment."
       ],
@@ -4186,7 +4230,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-protection-power-tools-yard-work",
     "title": "Best Hearing Protection for Power Tools, Yard Work, and DIY Projects",
-    "metaDescription": "Capture prevention searches for home and hobby noise.",
+    "metaDescription": "Leaf blowers, saws and mowers are loud enough to matter over a single weekend. Here is how to choose muffs or plugs you will actually keep on.",
     "h1": "Best Hearing Protection for Power Tools, Yard Work, and DIY Projects",
     "category": "Hearing Protection",
     "format": "Buying Guide",
@@ -4202,34 +4246,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "The best choice is rarely the loudest advertisement or the cheapest device.",
-      "Capture prevention searches for home and hobby noise.",
+      "The protection that works is the pair you can put on in five seconds.",
       "Start with the problem, not the product",
       "Begin with hearing goals, lifestyle, test results, comfort needs, and follow-up expectations before comparing devices or prices.",
       "What shopping pages often miss",
       "A device is only part of the outcome. Testing, fitting, verification, counseling, maintenance, and adjustment determine whether technology actually helps in daily life.",
       "Questions worth asking",
-      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability.",
       "What an audiologist can add",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test gives you a baseline to compare against, so exposure over years can be measured rather than guessed at.",
       "When buying should pause",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Local care note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is custom or situational hearing protection matched to the sound environment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is custom or situational hearing protection matched to the sound environment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Are the cheap muffs from the hardware store good enough?",
+        "answer": "For occasional yard work, yes, provided they seal and you actually wear them. Regular exposure is where a plug you can tolerate for hours starts to matter."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about noise level, exposure duration, fit and comfort, communication needs, reusability, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I know before choosing?",
+        "answer": "Which tools you use and for how long at a time, whether you need to hear speech while working, and whether you wear glasses or a hat with them."
       }
     ],
     "related": [
@@ -4266,11 +4310,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Buyer advisor",
       "byline": "Smart shopping without the hype",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Buying lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Keep the muffs hanging with the mower, not in a drawer indoors. Protection that takes a trip to fetch does not get worn.",
       "keyTakeaways": [
-        "Track the pattern: noise level and exposure duration are often more useful than a single symptom label.",
+        "Match the protection to the tool and the hours, and keep a pair wherever the loud job actually happens.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is custom or situational hearing protection matched to the sound environment."
       ],
@@ -4281,7 +4326,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-loud-is-too-loud-decibels",
     "title": "How Loud Is Too Loud? Decibels, Daily Noise, and Hearing Risk",
-    "metaDescription": "Explain 85 dBA and practical noise risk in everyday life.",
+    "metaDescription": "Risk rises with both level and time, which is why 85 dBA is the figure that gets quoted. Here is how that applies to the noise in an ordinary week.",
     "h1": "How Loud Is Too Loud? Decibels, Daily Noise, and Hearing Risk",
     "category": "Hearing Protection",
     "format": "Explainer",
@@ -4297,13 +4342,13 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Here is how this topic tends to get sorted out during a well-run appointment.",
-      "Explain 85 dBA and practical noise risk in everyday life.",
+      "Loudness and duration work together. Neither figure means much on its own.",
       "Before the test starts",
       "A strong appointment starts with history: what changed, when it changed, where listening breaks down, and what the patient wants to improve.",
       "What the clinician is sorting",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A baseline hearing test records where your hearing sits now, which is the only way to watch noise damage accumulate.",
       "What patients should bring",
-      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability.",
       "What would change the plan",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "What happens after results",
@@ -4311,20 +4356,20 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is custom or situational hearing protection matched to the sound environment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is custom or situational hearing protection matched to the sound environment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "How do I tell whether a room is too loud without a meter?",
+        "answer": "If you have to raise your voice to be heard at arm's length, treat the room as loud. Phone sound-level apps are approximate, and better than a guess."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about noise level, exposure duration, fit and comfort, communication needs, reusability, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a noise-related appointment?",
+        "answer": "A description of your exposure: the tools, venues or machinery, how many hours, and whether your ears ring or feel dull afterwards."
       }
     ],
     "related": [
@@ -4361,11 +4406,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Clinic note",
       "byline": "Notes from a hearing-care visit",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Clinic note",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "If you have to raise your voice to be heard by someone an arm's length away, the room is loud enough to protect against.",
       "keyTakeaways": [
-        "Track the pattern: noise level and exposure duration are often more useful than a single symptom label.",
+        "85 dBA is where exposure time starts to matter. Above it, the safe time gets shorter as the sound gets louder.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is custom or situational hearing protection matched to the sound environment."
       ],
@@ -4376,7 +4422,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/kids-teens-ear-protection-concerts-sports",
     "title": "Should Kids and Teens Use Ear Protection at Concerts and Sports?",
-    "metaDescription": "Reach families with prevention content.",
+    "metaDescription": "Concerts, stadiums and band practice are just as loud for children. Here is what protection suits which age and how to get it actually worn.",
     "h1": "Should Kids and Teens Use Ear Protection at Concerts and Sports?",
     "category": "Hearing Protection",
     "format": "Family Guide",
@@ -4392,34 +4438,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "When the problem is frustrating, the trick is to isolate one variable at a time.",
-      "Reach families with prevention content.",
+      "Children take the same noise dose as the adult beside them, in smaller ears.",
       "Step 1: isolate the problem",
       "Write down whether it happens in one ear, one room, one app, one device, or one kind of listening environment.",
       "Step 2: check the simple variables",
-      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability.",
       "Step 3: stop troubleshooting when symptoms are medical",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Step 4: let testing narrow it down",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A hearing test gives a child a baseline, so any change after years of concerts or band practice can be measured rather than argued about.",
       "Step 5: bring the evidence",
       "Bring devices, chargers, domes, wax guards, app access, prior test results, and examples from real life.",
       "Local care note",
       "Many Westchester and lower Fairfield County patients split time between home, work, restaurants, worship, fitness, and family gatherings, so hearing care should be tuned for more than one environment.",
       "Bottom line",
-      "The best next step is custom or situational hearing protection matched to the sound environment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is custom or situational hearing protection matched to the sound environment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "At what age should a child start wearing ear protection?",
+        "answer": "As soon as they are going anywhere loud. A stadium, a concert or band practice is as loud for a child as for the adult beside them."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about noise level, exposure duration, fit and comfort, communication needs, reusability, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should we bring to an appointment for a child?",
+        "answer": "Any school hearing screening results, a note of the venues and activities involved, and the child, since fit and willingness to wear it decide everything."
       }
     ],
     "related": [
@@ -4456,11 +4502,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Troubleshooting log",
       "byline": "Step-by-step troubleshooting",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "julia-rivera",
+      "readTime": "3 min read",
       "articleType": "Troubleshooting",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "A teenager will wear plugs that let them hear their friends. They will not wear the ones that make everything sound dead.",
       "keyTakeaways": [
-        "Track the pattern: noise level and exposure duration are often more useful than a single symptom label.",
+        "Muffs suit young children and filtered plugs suit teenagers. Both need to be in the bag before you leave the house.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is custom or situational hearing protection matched to the sound environment."
       ],
@@ -4471,7 +4518,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/noise-induced-hearing-loss-prevention",
     "title": "What Is Noise-Induced Hearing Loss and Can It Be Prevented?",
-    "metaDescription": "Create a core prevention pillar article.",
+    "metaDescription": "Noise damages hearing gradually and permanently, and that damage is preventable. Here is how exposure adds up and what actually protects you.",
     "h1": "What Is Noise-Induced Hearing Loss and Can It Be Prevented?",
     "category": "Hearing Protection",
     "format": "Pillar Guide",
@@ -4487,34 +4534,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Local follow-up matters because hearing care improves through real-world feedback.",
-      "Create a core prevention pillar article.",
+      "Noise-induced hearing loss is the kind you can do something about before it arrives.",
       "Why local care changes the experience",
       "Local care matters because hearing needs become clearer after you return to real restaurants, meetings, family rooms, cars, and phone calls.",
       "What local follow-up can adjust",
       "Follow-up can refine comfort, own-voice sound, background noise settings, Bluetooth behavior, maintenance routines, tinnitus support, and communication strategies.",
       "What to bring from daily life",
-      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are noise level, exposure duration, fit and comfort, communication needs, and reusability.",
       "What a local evaluation can separate",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "A baseline hearing test settles where you are starting from, and repeat testing shows whether the exposure is costing you anything.",
       "When not to wait",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Service-area note",
       "Local follow-up is valuable because the first appointment answers the big question, while later adjustments refine comfort, clarity, and confidence.",
       "Bottom line",
-      "The best next step is custom or situational hearing protection matched to the sound environment. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is custom or situational hearing protection matched to the sound environment."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "If damage has already happened, is there any point protecting now?",
+        "answer": "Yes. Protection does not undo what is gone, and it does keep what remains. That is the argument for starting today rather than later."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about noise level, exposure duration, fit and comfort, communication needs, reusability, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a baseline appointment?",
+        "answer": "Your noise history at work and at home, any earlier hearing tests or workplace screenings, and any protection you already own."
       }
     ],
     "related": [
@@ -4551,11 +4598,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Local care guide",
       "byline": "For Westchester and nearby Connecticut patients",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "jennifer-ratner",
+      "readTime": "3 min read",
       "articleType": "Local care lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Noise damage does not repair itself. Whatever you protect today, you keep.",
       "keyTakeaways": [
-        "Track the pattern: noise level and exposure duration are often more useful than a single symptom label.",
+        "Level and hours both count. A short very loud exposure and a long moderately loud one can each do damage.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is custom or situational hearing protection matched to the sound environment."
       ],
@@ -4566,7 +4614,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-care-professionals-meetings-calls",
     "title": "Hearing Care for Professionals: Meetings, Calls, and Listening Fatigue",
-    "metaDescription": "Support executive assistance and professional communication searches.",
+    "metaDescription": "Back-to-back calls and open-plan rooms make hearing loss expensive at work. Here is what helps with meetings, headsets and end-of-day fatigue.",
     "h1": "Hearing Care for Professionals: Meetings, Calls, and Listening Fatigue",
     "category": "Work & Lifestyle",
     "format": "Local Guide",
@@ -4582,34 +4630,34 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Local follow-up matters because hearing care improves through real-world feedback.",
-      "Support executive assistance and professional communication searches.",
+      "A day of meetings is a hard listening environment, and it is one you cannot walk out of.",
       "Why local care changes the experience",
       "Local care matters because hearing needs become clearer after you return to real restaurants, meetings, family rooms, cars, and phone calls.",
       "What local follow-up can adjust",
       "Follow-up can refine comfort, own-voice sound, background noise settings, Bluetooth behavior, maintenance routines, tinnitus support, and communication strategies.",
       "What to bring from daily life",
-      "The most helpful details are meeting format, Bluetooth use, background noise, visibility preferences, and schedule constraints. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are meeting format, Bluetooth use, background noise, visibility preferences, and schedule constraints.",
       "What a local evaluation can separate",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing shows what you are working with, and the streaming setup can then be built around the calls you actually take.",
       "When not to wait",
       "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus.",
       "Service-area note",
       "At Audiology Associates of Westchester, those details help the team connect testing, counseling, fitting, repair, and referral guidance to the way you actually live.",
       "Bottom line",
-      "The best next step is a discreet, practical care plan that fits work and lifestyle demands. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a discreet, practical care plan that fits work and lifestyle demands."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Will anyone at work notice?",
+        "answer": "Many current devices are small enough to go unremarked. Say so at the appointment if discretion is the deciding factor, because it changes which styles suit."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about meeting format, Bluetooth use, background noise, visibility preferences, schedule constraints, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What should I bring to a work-focused appointment?",
+        "answer": "Your phone and laptop, the headset you use, a description of your meeting rooms, and the calls that matter most in your week."
       }
     ],
     "related": [
@@ -4646,11 +4694,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Local care guide",
       "byline": "For Westchester and nearby Connecticut patients",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "kira-savin",
+      "readTime": "3 min read",
       "articleType": "Local care lens",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "Nine hours of meetings is nine hours of concentrated listening. The tiredness at six o'clock is the cost of that.",
       "keyTakeaways": [
-        "Track the pattern: meeting format and Bluetooth use are often more useful than a single symptom label.",
+        "Name the formats that matter. Video calls, conference rooms, phone, open-plan. Each needs different settings.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a discreet, practical care plan that fits work and lifestyle demands."
       ],
@@ -4661,7 +4710,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-loss-cognitive-effort-listening-fatigue",
     "title": "Hearing Loss and Cognitive Effort: Why Listening Can Feel Exhausting",
-    "metaDescription": "Support cognitive-screening topic without overclaiming.",
+    "metaDescription": "When hearing is harder, listening takes more effort and tiredness follows. Here is what listening fatigue feels like and what actually reduces it.",
     "h1": "Hearing Loss and Cognitive Effort: Why Listening Can Feel Exhausting",
     "category": "Work & Lifestyle",
     "format": "Explainer",
@@ -4677,7 +4726,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "body": [
       "Most hearing concerns are routine, but a few patterns deserve faster attention.",
-      "Support cognitive-screening topic without overclaiming.",
+      "Effort spent working out the words is effort not spent remembering them.",
       "The short version",
       "Do not let a search result talk you out of timely care if the symptom is sudden, one-sided, severe, painful, or paired with dizziness or neurological symptoms.",
       "Red flags that change the timeline",
@@ -4685,26 +4734,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "If none of those are present",
       "If the issue is gradual or situational, audiology care can still be important because it clarifies what is changing and what can be improved.",
       "What to document",
-      "The most helpful details are meeting format, Bluetooth use, background noise, visibility preferences, and schedule constraints. If you can describe those clearly, the appointment becomes much more productive.",
+      "The most helpful details are meeting format, Bluetooth use, background noise, visibility preferences, and schedule constraints.",
       "What evaluation can clarify",
-      "Audiology care can help separate earwax, middle-ear function, sensorineural hearing change, speech clarity, tinnitus patterns, hearing aid fit, programming, accessories, and situations that should be referred for medical evaluation.",
+      "Testing settles how much of the effort comes from hearing itself, including how you manage once there is noise in the room.",
       "Local care note",
       "For Greenwich, Rye, Scarsdale, White Plains, Mt. Kisco, Somers, Harrison, and nearby Fairfield County families, the most useful plan is one that fits daily routines instead of only looking good on a test report.",
       "Bottom line",
-      "The best next step is a discreet, practical care plan that fits work and lifestyle demands. The goal is to understand what is happening and choose a plan that improves daily life."
+      "The best next step is a discreet, practical care plan that fits work and lifestyle demands."
     ],
     "faqs": [
       {
-        "question": "Is this something to watch or schedule for?",
-        "answer": "If it is mild, gradual, and not disruptive, it may be reasonable to observe briefly while noting patterns. Schedule when it affects communication, comfort, sleep, work, confidence, or device performance."
+        "question": "Is being tired after meetings a hearing problem or just a long day?",
+        "answer": "Tiredness that lands after listening in particular, rather than after work in general, is worth testing. That pattern is what listening fatigue looks like."
       },
       {
         "question": "What symptoms should make me act faster?",
         "answer": "Seek prompt medical guidance for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant pain, facial weakness, head injury, or heartbeat-like tinnitus."
       },
       {
-        "question": "What should I bring to an audiology visit?",
-        "answer": "Bring notes about meeting format, Bluetooth use, background noise, visibility preferences, schedule constraints, plus current hearing aids, chargers, domes, filters, app access, prior test results, and examples of real listening situations you want to improve."
+        "question": "What is worth tracking before the visit?",
+        "answer": "When the tiredness arrives, what you were doing beforehand, and whether quiet one-to-one conversation costs you less than a meeting or a restaurant."
       }
     ],
     "related": [
@@ -4741,11 +4790,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       "frame": "Red flag memo",
       "byline": "What to watch, what to do next",
       "reviewedBy": "Audiology Associates of Westchester clinical team",
-      "readTime": "5 min read",
+      "reviewedBySlug": "caitlin-dold",
+      "readTime": "3 min read",
       "articleType": "Red flags",
-      "pullQuote": "The useful question is not just what the symptom is. It is what the pattern means for your next safest step.",
+      "pullQuote": "By the time you have worked out what was said, the next sentence has already gone past.",
       "keyTakeaways": [
-        "Track the pattern: meeting format and Bluetooth use are often more useful than a single symptom label.",
+        "Notice when the tiredness lands. After meetings, after dinner out, at the end of the working day.",
         "Move faster for sudden, one-sided, painful, draining, dizzy, or neurological symptoms.",
         "A good next step is a discreet, practical care plan that fits work and lifestyle demands."
       ],

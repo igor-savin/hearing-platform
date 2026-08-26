@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { AnalyticsScripts } from "@/components/AnalyticsScripts";
+import { ConversionTracking } from "@/components/ConversionTracking";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 import { baseUrl, siteName } from "@/lib/site";
 
@@ -47,6 +48,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <ConversionTracking />
       </body>
     </html>
   );

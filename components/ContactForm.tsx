@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { AI_REFERRAL_SOURCE, REFERRAL_SOURCES } from "@/lib/contactForm";
+import { trackConversion } from "@/lib/conversions";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -61,6 +62,14 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         interaction_href: window.location.href
       });
       if (window.fbq) window.fbq("trackCustom", "contact-submit-success");
+
+      // The one event on this site that means a patient actually asked for
+      // something. It fires only after the API has accepted the submission, so
+      // it counts sent enquiries rather than attempts.
+      trackConversion("contact_form_submit", {
+        form_context: context,
+        page_path: window.location.pathname
+      });
     } catch (error) {
       setStatus("error");
       setMessage(
@@ -88,7 +97,6 @@ export function ContactForm({ context = "General contact" }: { context?: string 
           <input
             className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
             name="phone"
-            required
             type="tel"
           />
         </label>
@@ -100,6 +108,9 @@ export function ContactForm({ context = "General contact" }: { context?: string 
           name="email"
           type="email"
         />
+        <span className="text-[13px] font-normal leading-5 text-[#666]">
+          A phone number or an email address is enough — whichever you prefer we use.
+        </span>
       </label>
       <label className="hidden">
         Website
@@ -136,11 +147,10 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         </label>
       ) : null}
       <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
-        Message
+        Message <span className="font-normal text-[#666]">(optional)</span>
         <textarea
           className="focus-ring min-h-[118px] border border-[#bcbcbc] bg-white px-[10px] py-[9px] text-[16px] font-normal text-[#333]"
           name="message"
-          required
         />
       </label>
       <button
