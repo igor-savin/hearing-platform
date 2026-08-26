@@ -50,6 +50,13 @@ export type CityProfile = {
   // /areas-we-serve/ when the value is null, which is only the Bay Area entry).
   // The page URL 301s to that hub. Keeping the prose is the point: the pages
   // failed for want of demand, not for want of quality.
+  // True only for cities with their own Caltrain station, which makes the
+  // journey to either office station-to-station on one line. Both offices are a
+  // short walk from theirs. Not set for BART-served cities: BART reaches neither
+  // office without a Caltrain transfer at Millbrae, so offering it as a route
+  // would mislead rather than help.
+  onCaltrain?: boolean;
+
   consolidatedInto?: string | null;
 };
 

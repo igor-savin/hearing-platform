@@ -25,6 +25,7 @@
       ["Where is your San Carlos office located?", "We are at 1008 Laurel Street, 94070, in downtown San Carlos. Reach us at 650-342-9449 for hours and parking."],
       ["Can I be seen at either the San Mateo or San Carlos office?", "Yes. Many patients pick whichever office is more convenient on a given day. Your records and hearing aid settings are shared between both locations."],
     ],
+    onCaltrain: true,
   },
 
   // ---------------------------------------------------------------- CORE PENINSULA

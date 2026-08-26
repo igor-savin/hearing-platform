@@ -25,6 +25,7 @@
       ["I struggle to hear in meetings and restaurants — can you help?", "Yes. Difficulty in noise is one of the most common reasons patients come in. We test speech-in-noise, then select and precisely verify technology for those specific situations, which usually helps far more than volume alone."],
       ["Which office serves Menlo Park?", "Our San Carlos office is closest, about 12 minutes from most of Menlo Park via the 101 or El Camino Real. Call 650-342-9449 to schedule."],
     ],
+    onCaltrain: true,
   },
 
   // ---------------------------------------------------------------- FAR / REGIONAL

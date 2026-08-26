@@ -26,4 +26,5 @@
       ["Why choose an independent audiologist over a big-box store?", "You get comprehensive diagnostic testing, technology chosen for your needs rather than a limited lineup, verified fittings, and continuity of care with one audiologist who knows your history."],
       ["How far is your office from South San Francisco?", "Our San Mateo office is about fifteen minutes south on the 101. Call 650-342-9449 to book an appointment."],
     ],
+    onCaltrain: true,
   },

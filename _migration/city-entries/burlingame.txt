@@ -26,4 +26,5 @@
       ["Do you offer custom hearing protection for noisy environments?", "We do. Custom-molded hearing protection is popular with patients who work near the airport, ride motorcycles, or attend loud events. It protects hearing while keeping sound natural."],
       ["How far is your office from Burlingame?", "Our San Mateo office is about 10 minutes from most of Burlingame, just south on El Camino Real or the 101. Call 650-342-9449 to schedule."],
     ],
+    onCaltrain: true,
   },

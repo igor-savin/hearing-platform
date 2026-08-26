@@ -89,6 +89,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/lgbtq-affirming-hearing-care/",
+    "title": "LGBTQ+ Affirming Hearing Care in San Mateo & San Carlos | California Hearing Center",
+    "h1": "LGBTQ+ Affirming Hearing Care in San Mateo & San Carlos",
+    "desc": "What affirming care means in an audiology clinic specifically: chosen name in the chart, how speech testing is handled, hearing after long-term HIV treatment, and hearing aids after voice training.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/hearing-aid-second-opinion/",
     "title": "Free Second Opinion on Your Hearing Aid Quote | California Hearing Center",
     "h1": "Free Second Opinion on Your Hearing Aid Quote",
@@ -537,7 +545,7 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
-    "path": "/areas-we-serve/portolo-valley/",
+    "path": "/areas-we-serve/portola-valley/",
     "title": "Portolo Valley | California Hearing Center",
     "h1": "Portolo Valley",
     "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
@@ -5130,9 +5138,9 @@ export const crawledPages: SitePage[] = [
   },
   {
     "path": "/celebrating-pride-month-a-month-of-diversity-equality-and-acceptance/",
-    "title": "Celebrating Pride Month A Month Of Diversity Equality And Acceptance | California Hearing Center",
-    "h1": "Celebrating Pride Month A Month Of Diversity Equality And Acceptance",
-    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "title": "When Is Pride Month? Dates, Origins, and Bay Area Events | California Hearing Center",
+    "h1": "When Is Pride Month? Dates, Origins, and Bay Area Events",
+    "desc": "Pride Month is June, marking the Stonewall uprising of 28 June 1969. San Francisco Pride 2027 is 26-27 June. Dates, origins, and what is happening on the Peninsula.",
     "h2": [],
     "paragraphs": []
   },

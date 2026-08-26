@@ -25,4 +25,5 @@
       ["Where exactly is your San Mateo office?", "Our San Mateo office is at 88 N. San Mateo Drive, 94401, near downtown and Central Park. Call 650-342-9449 for directions or parking details."],
       ["Do I need a referral to be seen in San Mateo?", "Most hearing evaluations and hearing aid consultations do not require a physician referral. If your insurance plan requires one, our team can walk you through it before your visit."],
     ],
+    onCaltrain: true,
   },

@@ -26,4 +26,5 @@
       ["Can I come in quickly for a hearing aid cleaning or adjustment?", "Absolutely. Because Belmont is so close, many patients pop in for cleanings, adjustments, and supplies between longer appointments. Call 650-342-9449 and we will find a time."],
       ["Do you help with tinnitus, not just hearing aids?", "Yes. We offer dedicated [tinnitus care](/tinnitus/), including Lenire, alongside comprehensive hearing testing and fittings for patients throughout Belmont and the mid-Peninsula."],
     ],
+    onCaltrain: true,
   },

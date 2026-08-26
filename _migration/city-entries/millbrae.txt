@@ -25,4 +25,5 @@
       ["I live near SFO — should I be worried about my hearing?", "Living near the airport does not guarantee hearing loss, but chronic loud-noise exposure is a known risk factor. A baseline hearing test is a simple way to know where you stand and to catch gradual change early."],
       ["How do I get to your office from Millbrae?", "Most Millbrae patients reach our San Mateo office in about 12–15 minutes via the 101 or El Camino Real. Call 650-342-9449 for directions."],
     ],
+    onCaltrain: true,
   },

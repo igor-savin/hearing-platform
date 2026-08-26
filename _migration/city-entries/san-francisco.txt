@@ -26,4 +26,5 @@
       ["Is it worth driving down from the city instead of finding someone in San Francisco?", "For routine care, plenty of city residents make the short trip south for our testing standards and tinnitus focus. It's 20-30 minutes down the 101 or 280, and we make each visit thorough so it's worth the drive."],
       ["Do you test hearing for noisy restaurants and meetings?", "Yes. We do speech-in-noise testing and real-ear verification specifically so your hearing aids perform where San Franciscans struggle most — loud restaurants, open offices, and busy rooms. Call 650-342-9449 to book."],
     ],
+    onCaltrain: true,
   },

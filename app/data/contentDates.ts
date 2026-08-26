@@ -114,7 +114,7 @@ export const contentDates: Record<string, string> = {
   "/areas-we-serve/pittsburg/": "2026-07-24",
   "/areas-we-serve/pleasant-hill/": "2026-07-24",
   "/areas-we-serve/pleasanton/": "2026-07-24",
-  "/areas-we-serve/portolo-valley/": "2026-07-24",
+  "/areas-we-serve/portola-valley/": "2026-07-24",
   "/areas-we-serve/redwood-city/": "2026-07-24",
   "/areas-we-serve/richmond/": "2026-07-24",
   "/areas-we-serve/rio-vista/": "2026-07-24",

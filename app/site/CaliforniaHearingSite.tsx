@@ -9,7 +9,7 @@ import { corePages } from "../data/corePages";
 import { YEARS_IN_PRACTICE, YEARS_DARCY, YEARS_LAIS } from "../data/practice";
 import { ReviewBadge, ReviewPanel } from "./ReviewBadge";
 import { corePhotos } from "../data/corePhotos";
-import { cityProfiles, type CityProfile } from "../data/cityProfiles";
+import { cityProfiles, OFFICES as OFFICE_ADDRESSES, type CityProfile } from "../data/cityProfiles";
 import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
 import { LeadForm } from "./LeadForm";
@@ -58,6 +58,22 @@ export type PageContent = {
    * the right part of the hub rather than the top of it.
    */
   consolidatedCities?: { slug: string; name: string; heading: string; body: string }[];
+  /**
+   * Catchment city pages only. These pages exist for the patients who actually
+   * drive in, not to win a query the map pack already answers, so what belongs
+   * on them is the practical detail someone needs to turn up: which office,
+   * how to get there, where to park, and a map. Judge them on appointments.
+   */
+  visit?: {
+    city: string;
+    office: "San Mateo" | "San Carlos";
+    street: string;
+    zip: string;
+    drive: string;
+    onCaltrain: boolean;
+    mapsHref: string;
+    directionsHref: string;
+  };
   metaDescription?: string; // hand-written meta description (overrides auto)
   metaTitle?: string;      // optional shorter title tag (overrides headline)
   authorName?: string;     // named author for signed posts (overrides generic byline)
@@ -861,6 +877,22 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
   // names. Each was written to be city-true — the Oakland entry says outright
   // that the practice is not the corner audiologist for most Oaklanders — and
   // that honesty is worth more on the hub than another block of filler.
+  // The office address is the single source of truth for both the map and the
+  // directions link, so a change of premises cannot leave one of them stale.
+  const officeAddress = `${OFFICE_ADDRESSES[office].street}, ${office}, CA ${OFFICE_ADDRESSES[office].zip}`;
+  const visit = (!service && !isCounty(profile) && KEEP_TIERS.has(profile.distanceTier))
+    ? {
+        city: name,
+        office,
+        street: OFFICE_ADDRESSES[office].street,
+        zip: OFFICE_ADDRESSES[office].zip,
+        drive: profile.approxDrive,
+        onCaltrain: profile.onCaltrain === true,
+        mapsHref: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(officeAddress)}`,
+        directionsHref: `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(name + ", CA")}&destination=${encodeURIComponent(officeAddress)}`,
+      }
+    : undefined;
+
   const consolidatedCities = (!service && /\bcounty$/i.test(profile.name))
     ? Object.entries(cityProfiles)
         .filter(([, p]) => isConsolidated(p) && p.consolidatedInto === citySlug)
@@ -878,6 +910,7 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     takeaways,
     faqs: serviceSlug ? serviceFaqs(serviceSlug, name, office) : profile.faqs,
     consolidatedCities: consolidatedCities.length ? consolidatedCities : undefined,
+    visit,
     image: `/assets/areas/${citySlug}.svg`,
     imageLabel: service ? `${service.label} — ${name}` : `Hearing care for ${name}`,
     imageAlt: `California Hearing Center — audiology and hearing care serving ${name}${name === profile.county ? "" : `, ${profile.county}`}`,
@@ -1701,6 +1734,8 @@ function InnerPage({ page }: { page: SitePage }) {
             </section>
           )}
           <div className="section-stack">
+            {content.visit && <VisitPanel visit={content.visit} />}
+            {content.visit && <PracticeReviews slug={page.path} />}
             {content.consolidatedCities && (
               <div className="consolidated-cities">
                 <h2>Cities we see patients from across this county</h2>
@@ -2039,8 +2074,123 @@ function blogCategory(slug: string, post: PageContent): string {
 // A city is folded when the key exists at all — the value may legitimately be
 // null (only the Bay Area entry, which has no county hub and folds into the
 // /areas-we-serve/ index), so a truthiness test would misread that one.
+// Office, near and mid: the tiers a patient realistically travels from.
+const KEEP_TIERS = new Set(["office", "near", "mid"]);
+
+function isCounty(p: CityProfile): boolean {
+  return /\bcounty$/i.test(p.name);
+}
+
 function isConsolidated(p: CityProfile): boolean {
   return "consolidatedInto" in p;
+}
+
+function VisitPanel({ visit }: { visit: NonNullable<PageContent["visit"]> }) {
+  return (
+    <aside className="visit-panel" aria-labelledby="visit-heading">
+      <h2 id="visit-heading">Coming to us from {visit.city}</h2>
+      <dl className="visit-facts">
+        <div>
+          <dt>Your nearest office</dt>
+          <dd>
+            <a href={visit.office === "San Mateo" ? "/contact/san-mateo/" : "/contact/san-carlos/"}>
+              {visit.office}
+            </a>
+            <br />
+            {visit.street}, {visit.office}, CA {visit.zip}
+          </dd>
+        </div>
+        <div>
+          <dt>By car</dt>
+          <dd>{visit.drive.charAt(0).toUpperCase() + visit.drive.slice(1)}.</dd>
+        </div>
+        {visit.onCaltrain && (
+          <div>
+            <dt>By train</dt>
+            <dd>
+              {visit.city} and {visit.office} are both on the Caltrain line, and our office is a
+              short walk from the {visit.office} station — so the journey is station to station
+              without changing.
+            </dd>
+          </div>
+        )}
+        <div>
+          <dt>Parking</dt>
+          <dd>
+            {visit.office === "San Mateo"
+              ? "Street parking on N. San Mateo Drive and a public garage close by."
+              : "Street parking along Laurel Street and public lots just off it."}{" "}
+            Tell us when you book if parking or mobility is a concern and the front desk will
+            talk you through the easiest approach.
+          </dd>
+        </div>
+      </dl>
+      <div className="visit-actions">
+        <a className="button primary" href="/contact/">Request an appointment</a>
+        <a className="button ghost" href="tel:6503429449">650-342-9449</a>
+        <a className="button ghost" href={visit.directionsHref} target="_blank" rel="noopener">
+          Directions from {visit.city}
+        </a>
+      </div>
+      <p className="visit-map-note">
+        <a href={visit.mapsHref} target="_blank" rel="noopener">
+          Open our {visit.office} office in Google Maps
+        </a>
+      </p>
+    </aside>
+  );
+}
+
+/**
+ * Practice-wide patient reviews on a catchment city page.
+ *
+ * DELIBERATE DESIGN NOTE, so nobody "improves" this later: these reviews are
+ * NOT attributed to the city whose page they appear on, and they never should
+ * be. The 56 reviews in app/data/reviews.ts are real, verbatim, and carry no
+ * city of their own — inventing one would be fabricating a record. They are
+ * reviews of California Hearing Center, which is the level the practice
+ * actually operates at: clinicians rotate between the two offices, so the
+ * brand is what a patient is choosing. The heading says so in as many words.
+ *
+ * The three shown are picked deterministically from the page path, so each
+ * city page carries a different trio (no 24 pages of identical copy) and the
+ * same city always shows the same three (stable across builds and diffs).
+ */
+function PracticeReviews({ slug }: { slug: string }) {
+  let hash = 0;
+  for (let i = 0; i < slug.length; i += 1) {
+    hash = (hash * 31 + slug.charCodeAt(i)) >>> 0;
+  }
+  const start = hash % reviews.length;
+  // Stride by a number coprime with 56 so the three never sit adjacent and
+  // every offset is reachable.
+  const picks = [0, 1, 2].map((n) => reviews[(start + n * 19) % reviews.length]);
+
+  return (
+    <aside className="practice-reviews" aria-labelledby="practice-reviews-heading">
+      <h2 id="practice-reviews-heading">What patients say about California Hearing Center</h2>
+      <p className="practice-reviews-lede">
+        These are verbatim Google reviews of the practice as a whole, across both offices —
+        not of any one location. Our audiologists rotate between San Mateo and San Carlos,
+        so the care you get is the practice&rsquo;s, wherever you are seen.
+      </p>
+      <ReviewBadge />
+      <div className="practice-review-grid">
+        {picks.map((review) => (
+          <blockquote key={review.name + review.when}>
+            <ReviewStars />
+            <p>{review.text}</p>
+            <cite>
+              {review.name} <span>· {review.when}</span>
+            </cite>
+          </blockquote>
+        ))}
+      </div>
+      <p className="practice-reviews-more">
+        <a href="/reviews/">Read more patient reviews</a>
+      </p>
+    </aside>
+  );
 }
 
 function anchorId(s: string): string {

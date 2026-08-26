@@ -1,4 +1,4 @@
-  "portolo-valley": {
+  "portola-valley": {
     name: "Portola Valley",
     county: "San Mateo County",
     region: "peninsula-south",

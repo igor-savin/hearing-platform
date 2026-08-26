@@ -26,4 +26,5 @@
       ["Do you treat tinnitus as well as fit hearing aids?", "We do. Tinnitus care is a core focus of our practice, including options like Lenire, alongside comprehensive hearing testing and fittings."],
       ["How far is your office from Mountain View?", "Our San Carlos office is about 25 minutes north up the 101. Call 650-342-9449 and we will find a convenient time."],
     ],
+    onCaltrain: true,
   },

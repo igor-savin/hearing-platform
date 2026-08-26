@@ -25,6 +25,7 @@
       ["Which office is closest to Redwood City?", "Our San Carlos office at 1008 Laurel Street is closest — about 8 minutes for most Redwood City residents. Call 650-342-9449 to schedule."],
       ["Do you treat tinnitus in Redwood City?", "Yes. We provide comprehensive tinnitus evaluation and treatment, including Lenire, for patients throughout Redwood City and the mid-Peninsula."],
     ],
+    onCaltrain: true,
   },
 
   // ---------------------------------------------------------------- COAST / SOUTH

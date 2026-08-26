@@ -145,7 +145,6 @@ const blogRedirects = [
       { source: "/can-stress-make-tinnitus-worse-what-atherton-patients-should-know-2/", destination: "/tinnitus/", permanent: true },
       { source: "/can-you-sleep-with-hearing-aids-advice-for-burlingame-patients/", destination: "/areas-we-serve/burlingame/", permanent: true },
       { source: "/can-you-sleep-with-hearing-aids-advice-for-hillsborough-patients/", destination: "/areas-we-serve/hillsborough/", permanent: true },
-      { source: "/celebrating-pride-month-a-month-of-diversity-equality-and-acceptance/", destination: "/the-blog/", permanent: true },
       { source: "/communication-at-work-may-is-better-hearing-and-speech-month/", destination: "/the-blog/", permanent: true },
       { source: "/concerns-over-headphone-use-in-young-people-what-parents-and-teens-need-to-know/", destination: "/the-blog/", permanent: true },
       { source: "/could-drinking-alcohol-affect-your-hearing/", destination: "/the-blog/", permanent: true },
@@ -416,6 +415,14 @@ const wordpressArchiveRedirects = [
 //
 // The writing is not lost. Each city's prose renders as a section of its hub,
 // anchored on the city slug, which is what these redirects point at.
+// 26 Aug 2026 — the Portola Valley page had shipped under a misspelled slug,
+// /areas-we-serve/portolo-valley/. The page name and body were always correct;
+// only the URL was wrong. It earned 0 clicks on 2 impressions in 90 days, so the
+// correction costs nothing and stops the typo being the canonical.
+const slugCorrectionRedirects = [
+      { source: "/areas-we-serve/portolo-valley/", destination: "/areas-we-serve/portola-valley/", permanent: true },
+];
+
 const cityConsolidationRedirects = [
       { source: "/areas-we-serve/alameda/", destination: "/areas-we-serve/alameda-county/#alameda", permanent: true }, // 0 clicks, 0 impr
       { source: "/areas-we-serve/albany/", destination: "/areas-we-serve/alameda-county/#albany", permanent: true }, // 0 clicks, 18 impr
@@ -501,7 +508,7 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
   async redirects() {
-    return [...blogRedirects, ...cityConsolidationRedirects, ...wordpressArchiveRedirects, ...legacySitemapRedirects];
+    return [...blogRedirects, ...cityConsolidationRedirects, ...slugCorrectionRedirects, ...wordpressArchiveRedirects, ...legacySitemapRedirects];
   },
   async headers() {
     // Static assets under /public/assets are content-stable (we rename on change),

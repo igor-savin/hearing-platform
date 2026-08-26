@@ -26,4 +26,5 @@
       ["Do you offer speech-in-noise testing?", "We do. A standard audiogram measures soft tones in quiet, but real life is noisier. Speech-in-noise testing shows how you perform in realistic conditions and guides both technology choice and fine-tuning."],
       ["How far is your office from Palo Alto?", "Our San Carlos office is about 15-20 minutes north on the 101. Call 650-342-9449 to find a time that fits around your schedule."],
     ],
+    onCaltrain: true,
   },

@@ -50,6 +50,13 @@ export type CityProfile = {
   // /areas-we-serve/ when the value is null, which is only the Bay Area entry).
   // The page URL 301s to that hub. Keeping the prose is the point: the pages
   // failed for want of demand, not for want of quality.
+  // True only for cities with their own Caltrain station, which makes the
+  // journey to either office station-to-station on one line. Both offices are a
+  // short walk from theirs. Not set for BART-served cities: BART reaches neither
+  // office without a Caltrain transfer at Millbrae, so offering it as a route
+  // would mislead rather than help.
+  onCaltrain?: boolean;
+
   consolidatedInto?: string | null;
 };
 
@@ -265,6 +272,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Can I come in quickly for a hearing aid cleaning or adjustment?", "Absolutely. Because Belmont is so close, many patients pop in for cleanings, adjustments, and supplies between longer appointments. Call 650-342-9449 and we will find a time."],
       ["Do you help with tinnitus, not just hearing aids?", "Yes. We offer dedicated [tinnitus care](/tinnitus/), including Lenire, alongside comprehensive hearing testing and fittings for patients throughout Belmont and the mid-Peninsula."],
     ],
+    onCaltrain: true,
   },
   "benicia": {
     name: "Benicia",
@@ -413,6 +421,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Do you offer custom hearing protection for noisy environments?", "We do. Custom-molded hearing protection is popular with patients who work near the airport, ride motorcycles, or attend loud events. It protects hearing while keeping sound natural."],
       ["How far is your office from Burlingame?", "Our San Mateo office is about 10 minutes from most of Burlingame, just south on El Camino Real or the 101. Call 650-342-9449 to schedule."],
     ],
+    onCaltrain: true,
   },
   "campbell": {
     name: "Campbell",
@@ -1236,6 +1245,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["I struggle to hear in meetings and restaurants — can you help?", "Yes. Difficulty in noise is one of the most common reasons patients come in. We test speech-in-noise, then select and precisely verify technology for those specific situations, which usually helps far more than volume alone."],
       ["Which office serves Menlo Park?", "Our San Carlos office is closest, about 12 minutes from most of Menlo Park via the 101 or El Camino Real. Call 650-342-9449 to schedule."],
     ],
+    onCaltrain: true,
   },
 
   // ---------------------------------------------------------------- FAR / REGIONAL
@@ -1298,6 +1308,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["I live near SFO — should I be worried about my hearing?", "Living near the airport does not guarantee hearing loss, but chronic loud-noise exposure is a known risk factor. A baseline hearing test is a simple way to know where you stand and to catch gradual change early."],
       ["How do I get to your office from Millbrae?", "Most Millbrae patients reach our San Mateo office in about 12–15 minutes via the 101 or El Camino Real. Call 650-342-9449 for directions."],
     ],
+    onCaltrain: true,
   },
   "milpitas": {
     name: "Milpitas",
@@ -1416,6 +1427,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Do you treat tinnitus as well as fit hearing aids?", "We do. Tinnitus care is a core focus of our practice, including options like Lenire, alongside comprehensive hearing testing and fittings."],
       ["How far is your office from Mountain View?", "Our San Carlos office is about 25 minutes north up the 101. Call 650-342-9449 and we will find a convenient time."],
     ],
+    onCaltrain: true,
   },
   "napa-county": {
     name: "Napa County",
@@ -1623,6 +1635,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Do you offer speech-in-noise testing?", "We do. A standard audiogram measures soft tones in quiet, but real life is noisier. Speech-in-noise testing shows how you perform in realistic conditions and guides both technology choice and fine-tuning."],
       ["How far is your office from Palo Alto?", "Our San Carlos office is about 15-20 minutes north on the 101. Call 650-342-9449 to find a time that fits around your schedule."],
     ],
+    onCaltrain: true,
   },
   "petaluma": {
     name: "Petaluma",
@@ -1744,7 +1757,7 @@ export const cityProfiles: Record<string, CityProfile> = {
     ],
     consolidatedInto: "alameda-county",
   },
-  "portolo-valley": {
+  "portola-valley": {
     name: "Portola Valley",
     county: "San Mateo County",
     region: "peninsula-south",
@@ -1800,6 +1813,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Which office is closest to Redwood City?", "Our San Carlos office at 1008 Laurel Street is closest — about 8 minutes for most Redwood City residents. Call 650-342-9449 to schedule."],
       ["Do you treat tinnitus in Redwood City?", "Yes. We provide comprehensive tinnitus evaluation and treatment, including Lenire, for patients throughout Redwood City and the mid-Peninsula."],
     ],
+    onCaltrain: true,
   },
 
   // ---------------------------------------------------------------- COAST / SOUTH,
@@ -1891,6 +1905,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Do you make custom hearing protection?", "We do. Custom earplugs and protection are shaped to your ears for jobs, music, and other loud settings, and they are far more effective and comfortable than generic foam plugs."],
       ["How close is your office to San Bruno?", "Our San Mateo office is about twelve minutes south of San Bruno on the 101. Call 650-342-9449 to schedule."],
     ],
+    onCaltrain: true,
   },
   "san-carlos": {
     name: "San Carlos",
@@ -1919,6 +1934,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Where is your San Carlos office located?", "We are at 1008 Laurel Street, 94070, in downtown San Carlos. Reach us at 650-342-9449 for hours and parking."],
       ["Can I be seen at either the San Mateo or San Carlos office?", "Yes. Many patients pick whichever office is more convenient on a given day. Your records and hearing aid settings are shared between both locations."],
     ],
+    onCaltrain: true,
   },
 
   // ---------------------------------------------------------------- CORE PENINSULA,
@@ -1979,6 +1995,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Is it worth driving down from the city instead of finding someone in San Francisco?", "For routine care, plenty of city residents make the short trip south for our testing standards and tinnitus focus. It's 20-30 minutes down the 101 or 280, and we make each visit thorough so it's worth the drive."],
       ["Do you test hearing for noisy restaurants and meetings?", "Yes. We do speech-in-noise testing and real-ear verification specifically so your hearing aids perform where San Franciscans struggle most — loud restaurants, open offices, and busy rooms. Call 650-342-9449 to book."],
     ],
+    onCaltrain: true,
   },
   "san-jose": {
     name: "San Jose",
@@ -2096,6 +2113,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Where exactly is your San Mateo office?", "Our San Mateo office is at 88 N. San Mateo Drive, 94401, near downtown and Central Park. Call 650-342-9449 for directions or parking details."],
       ["Do I need a referral to be seen in San Mateo?", "Most hearing evaluations and hearing aid consultations do not require a physician referral. If your insurance plan requires one, our team can walk you through it before your visit."],
     ],
+    onCaltrain: true,
   },
   "san-pablo": {
     name: "San Pablo",
@@ -2481,6 +2499,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Why choose an independent audiologist over a big-box store?", "You get comprehensive diagnostic testing, technology chosen for your needs rather than a limited lineup, verified fittings, and continuity of care with one audiologist who knows your history."],
       ["How far is your office from South San Francisco?", "Our San Mateo office is about fifteen minutes south on the 101. Call 650-342-9449 to book an appointment."],
     ],
+    onCaltrain: true,
   },
   "st-helena": {
     name: "St. Helena",

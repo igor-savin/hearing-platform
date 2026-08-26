@@ -3515,3 +3515,135 @@ p {
 @media (prefers-reduced-motion: no-preference) {
   .consolidated-city:target { transition: border-color 240ms ease; }
 }
+
+/* --- Catchment city pages: the visit panel (26 Aug 2026) -------------------
+   These 24 pages exist for patients who actually drive in, not to win a query
+   the map pack already answers. So the panel carries what someone needs to turn
+   up — office, route, parking, map — and sits above the prose rather than under
+   it, because a patient checking how to get here should not have to read an
+   essay first. */
+.visit-panel {
+  margin: 0 0 2rem;
+  padding: 1.5rem 1.6rem 1.4rem;
+  background: var(--tint, #f2f7f7);
+  border-left: 3px solid var(--teal, #155f6b);
+}
+
+.visit-panel h2 {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.visit-facts {
+  margin: 0 0 1.25rem;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.visit-facts > div {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 0 1rem;
+}
+
+.visit-facts dt {
+  font-weight: 700;
+  font-size: 0.87rem;
+  letter-spacing: 0.01em;
+  color: var(--teal-dark, #105966);
+  padding-top: 0.12rem;
+}
+
+.visit-facts dd {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.5;
+}
+
+.visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.85rem;
+}
+
+.visit-map-note {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 640px) {
+  .visit-facts > div { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+  .visit-facts dt { padding-top: 0; }
+  .visit-actions .button { flex: 1 1 100%; text-align: center; }
+}
+
+/* Practice-wide reviews on catchment city pages. Brand level, never attributed
+   to the city the page is about — see PracticeReviews in
+   app/site/CaliforniaHearingSite.tsx for why. */
+.practice-reviews {
+  margin: 0 0 2rem;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--line, #e2e6e6);
+}
+
+.practice-reviews h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.practice-reviews-lede {
+  margin: 0 0 1.1rem;
+  font-size: 0.93rem;
+  line-height: 1.55;
+  color: var(--muted, #5c6a6a);
+  max-width: 46rem;
+}
+
+.practice-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1rem;
+}
+
+.practice-review-grid blockquote {
+  margin: 0;
+  padding: 1.05rem 1.1rem;
+  background: var(--tint, #f2f7f7);
+  border: 0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.practice-review-grid blockquote p {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.55;
+}
+
+.practice-review-grid cite {
+  margin-top: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.87rem;
+  color: var(--teal-dark, #105966);
+}
+
+.practice-review-grid cite span {
+  font-weight: 400;
+  color: var(--muted, #5c6a6a);
+}
+
+.practice-reviews-more {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 860px) {
+  .practice-review-grid { grid-template-columns: minmax(0, 1fr); }
+}

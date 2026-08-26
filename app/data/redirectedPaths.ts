@@ -116,7 +116,6 @@ export const redirectedPaths = new Set<string>([
   "/can-stress-make-tinnitus-worse-what-atherton-patients-should-know/",
   "/can-you-sleep-with-hearing-aids-advice-for-burlingame-patients/",
   "/can-you-sleep-with-hearing-aids-advice-for-hillsborough-patients/",
-  "/celebrating-pride-month-a-month-of-diversity-equality-and-acceptance/",
   "/communication-at-work-may-is-better-hearing-and-speech-month/",
   "/concerns-over-headphone-use-in-young-people-what-parents-and-teens-need-to-know/",
   "/could-drinking-alcohol-affect-your-hearing/",
@@ -394,4 +393,6 @@ export const redirectedPaths = new Set<string>([
   "/areas-we-serve/walnut-creek/",
   "/areas-we-serve/windsor/",
   "/areas-we-serve/yountville/",
+  // 26 Aug 2026 — misspelled slug corrected to /portola-valley/.
+  "/areas-we-serve/portolo-valley/",
 ]);

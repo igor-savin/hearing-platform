@@ -26,4 +26,5 @@
       ["Do you make custom hearing protection?", "We do. Custom earplugs and protection are shaped to your ears for jobs, music, and other loud settings, and they are far more effective and comfortable than generic foam plugs."],
       ["How close is your office to San Bruno?", "Our San Mateo office is about twelve minutes south of San Bruno on the 101. Call 650-342-9449 to schedule."],
     ],
+    onCaltrain: true,
   },
