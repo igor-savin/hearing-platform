@@ -527,6 +527,18 @@ type LegacyLocationSection = {
   title: string;
   paragraphs: string[];
   background?: "blue" | "white";
+  // Path of the office in lib/site.ts that this section is about. SET THIS on
+  // every section showing one of our offices.
+  //
+  // Why it exists: a bare address in `mapQuery` becomes
+  // `maps/search/?api=1&query=<address>`, which Google resolves to its own
+  // ADDRESS pin rather than to our Business Profile marker. At 325 NY-100 that
+  // pin sits in the plaza next door, so "Get Directions" sent Somers patients
+  // to the wrong unit, and the embedded map showed the wrong spot. With
+  // `officePath` set, the button uses the office's verified `directionsUrl`
+  // (a place/CID link) and the embed is queried by business name, both of
+  // which land on the practice itself.
+  officePath?: string;
   mapQuery?: string;
   mapCaption?: string;
   addressLines?: string[];
@@ -635,6 +647,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
           "In order to best serve you, Audiology Associates of Westchester has an office on Mamaroneck Avenue in Harrison, NY. We offer the same array of professional audiology services at all of our locations. If you are experiencing any hearing loss symptoms or other auditory problems, our team of knowledgeable audiologists can help find the right solution for your specific needs, helping you hear more clearly.",
           "Our services include hearing aid fitting, repair, and service that helps your device fit more comfortably and operate correctly. In addition, we offer occupational hearing protection for those who work in loud environments. For more information about the audiology services we offer the Harrison, NY area, please don't hesitate to contact us today!"
         ],
+        officePath: "/harrison-ny",
         mapQuery: "550 Mamaroneck Ave Suite 407 Harrison NY 10528",
         mapCaption: "Get Directions to Our Harrison, NY Office",
         addressLines: ["550 Mamaroneck Ave, Suite 407 (4th floor)", "Harrison, NY 10528"],
@@ -659,6 +672,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
         title: "Call Now to Request an Appointment",
         background: "white",
         paragraphs: [],
+        officePath: "/Somers-NY",
         mapQuery: "325 NY 100 Somers NY 10589",
         mapCaption: "Get Directions to Our Somers, NY Office",
         addressLines: ["325 NY 100, Somers, NY 10589"],
@@ -698,6 +712,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
           "If you are searching for an experienced hearing doctor in White Plains, Rye, Port Chester, or the nearby communities, we invite you to reach out to us today. Our caring and compassionate team will listen to your concerns and conduct testing based on your hearing loss symptoms. Following your diagnosis, our hearing doctor will recommend the product or therapy to help improve your hearing health or the hearing health of a loved one.",
           "If you live in White Plains, NY and have questions about your hearing, call Audiology Associates of Westchester today to schedule an appointment."
         ],
+        officePath: "/harrison-ny",
         mapQuery: "550 Mamaroneck Ave Suite 407 Harrison NY 10528",
         mapCaption: "Get Directions to Our Harrison, NY Office",
         addressLines: ["550 Mamaroneck Ave, Suite 407 (4th floor)", "Harrison, NY 10528"],
@@ -723,6 +738,7 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
           "If you are experiencing hearing loss symptoms or other auditory problems in Scarsdale, NY, our nearby Harrison office is ready to help. Scarsdale is a service area, not a physical Audiology Associates office.",
           "It’s important you don’t trust just anyone with your hearing aid fitting process; choose an experienced team that can perfect your customized fitting. We are proud to serve the entire Scarsdale, NY area and beyond! Contact us today to schedule an appointment!"
         ],
+        officePath: "/harrison-ny",
         mapQuery: "550 Mamaroneck Ave Suite 407 Harrison NY 10528",
         mapCaption: "Get Directions to Our Harrison, NY Office",
         addressLines: ["550 Mamaroneck Ave, Suite 407 (4th floor)", "Harrison, NY 10528"],
@@ -3174,12 +3190,35 @@ function GoogleMapEmbed({ query, title }: { query: string; title: string }) {
   );
 }
 
+/**
+ * How an article image should sit in its box.
+ *
+ * Manufacturer device shots under /assets/brands/ are SQUARE cut-outs on white,
+ * 540-640px on a side. Rendering them with `object-cover` into a 16:9 hero or a
+ * 16:10 card upscales them by roughly 1.9x and crops the top and bottom off the
+ * device -- which is how /signia-max-what-we-know and /phonak-eon-what-we-know
+ * ended up leading with a giant blurry fragment of a hearing aid, and why the
+ * related-article thumbnails looked oversized.
+ *
+ * Contain those on white with a little padding. Photographs are shot to be
+ * cropped and keep `object-cover`, so this only changes the product cut-outs.
+ */
+function imageFitClass(src: string) {
+  return src.includes("/assets/brands/") ? "object-contain bg-white p-4" : "object-cover";
+}
+
 function LegacyLocationSectionView({ section }: { section: LegacyLocationSection }) {
   const hasMap = Boolean(section.mapQuery);
   const hasDetails = Boolean(section.addressLines?.length || section.phone || section.hours?.length);
-  const directionsUrl = section.mapQuery
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(section.mapQuery)}`
-    : "";
+  const office = section.officePath ? locationForPath(section.officePath) : undefined;
+  // Verified place link first; the address query is only a fallback for
+  // sections that are about a town rather than one of our offices.
+  const directionsUrl =
+    office?.directionsUrl ||
+    (section.mapQuery ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(section.mapQuery)}` : "");
+  // Qualify the embed with the business name so the pin is the practice and
+  // not whatever Google decides the street number means.
+  const mapQuery = office ? `${siteName}, ${office.address}` : section.mapQuery;
 
   return (
     <section
@@ -3217,7 +3256,7 @@ function LegacyLocationSectionView({ section }: { section: LegacyLocationSection
 
           {hasMap ? (
             <div>
-              <GoogleMapEmbed query={section.mapQuery!} title={section.mapCaption || section.title} />
+              <GoogleMapEmbed query={mapQuery!} title={section.mapCaption || section.title} />
               <div className="mx-auto mt-[22px] flex max-w-[560px] flex-col gap-3 sm:flex-row">
                 {section.phoneHref ? (
                   <a
@@ -3402,7 +3441,7 @@ function BlogPostRelated({ page }: { page: SitePage }) {
               {post.heroImage ? (
                 <Image
                   alt={post.heroImage.alt || post.h1}
-                  className="aspect-[16/10] w-full object-cover"
+                  className={`aspect-[16/10] w-full ${imageFitClass(post.heroImage.src)}`}
                   height={420}
                   unoptimized={post.heroImage.src.endsWith(".svg")}
                   src={post.heroImage.src}
@@ -3526,7 +3565,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
             {image ? (
               <Image
                 alt={image.alt || page.h1}
-                className="w-full border border-[#d9d9d9] bg-white object-cover shadow-sm"
+                className={`w-full border border-[#d9d9d9] bg-white shadow-sm ${imageFitClass(image.src)}`}
                 height={675}
                 priority={false}
                 unoptimized={image.src.endsWith(".svg")}
@@ -4431,7 +4470,7 @@ function LivePageBody({ page }: { page: SitePage }) {
           {showImage ? (
             <Image
               alt={image.alt || page.h1}
-              className="mt-[38px] max-h-[430px] w-full max-w-[860px] object-cover"
+              className={`mt-[38px] max-h-[430px] w-full max-w-[860px] ${imageFitClass(image.src)}`}
               height={760}
               priority={false}
               unoptimized={image.src.endsWith(".svg")}
@@ -5300,7 +5339,7 @@ function BlogIndex({ page, scheduledPosts = [] }: { page: SitePage; scheduledPos
                   {post.heroImage ? (
                     <Image
                       alt={post.heroImage.alt || post.h1}
-                      className="aspect-[16/10] w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                      className={`aspect-[16/10] w-full transition duration-300 group-hover:scale-[1.02] ${imageFitClass(post.heroImage.src)}`}
                       height={420}
                       unoptimized={post.heroImage.src.endsWith(".svg")}
                       src={post.heroImage.src}
