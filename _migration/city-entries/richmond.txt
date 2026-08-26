@@ -26,4 +26,5 @@
       ["Do you make custom hearing protection for people still working?", "Yes. We fit custom-molded protection for industrial and trade workers, which fits better and protects more reliably than generic foam plugs."],
       ["Is the drive across the bay worth it from Richmond?", "For routine care, a local option may be simpler. Patients travel to us for specialized tinnitus treatment, Lenire, and complex fittings — the depth of care that justifies the trip."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

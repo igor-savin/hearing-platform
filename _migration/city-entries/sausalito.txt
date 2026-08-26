@@ -26,4 +26,5 @@
       ["Is it worth driving from Sausalito to the Peninsula for care?", "For specialized tinnitus or Lenire treatment, tricky fittings, or moisture repairs, most patients feel the trip pays off. For a simple check or cleaning, a nearer Marin provider may make more sense — we would rather be honest than have you drive for something routine."],
       ["Do you repair hearing aids damaged by moisture?", "Yes. Moisture-related issues are among the most common repairs we see, and many are resolved same-day with professional cleaning and drying. Call 650-342-9449 to arrange a visit."],
     ],
+    consolidatedInto: "marin-county",
   },

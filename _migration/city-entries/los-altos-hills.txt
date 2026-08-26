@@ -26,4 +26,5 @@
       ["Can you keep my care completely discreet and private?", "Yes. We fit several invisible and near-invisible styles and keep every visit unhurried and confidential, which is a large part of why Los Altos Hills patients choose us."],
       ["How far is your office from Los Altos Hills?", "Our San Carlos office is about 28 minutes north on the 280. Call 650-342-9449 and we can plan a longer, efficient visit to make the drive count."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

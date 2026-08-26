@@ -3471,3 +3471,47 @@ p {
   .red-flag-panel { padding: 20px 18px; }
   .clinician-card-body { flex-direction: column; align-items: flex-start; }
 }
+
+/* --- County hub: the cities folded into it (26 Aug 2026) ------------------
+   Fifty-two city pages earning six clicks a quarter between them now render as
+   sections of their county hub instead of standing alone. Visually they sit
+   between a section and a card: separated enough to scan as a list of places,
+   quiet enough that a hub with fourteen of them does not read as a directory
+   dump. The id on each is the 301 target, so :target gets a marker to confirm
+   the reader landed where the old link promised. */
+.consolidated-cities {
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--rule, #d8dfe2);
+}
+
+.consolidated-lede {
+  max-width: 60ch;
+  color: var(--muted-text, #5a6a70);
+}
+
+.consolidated-city {
+  padding: 1.1rem 0 0.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--rule, #d8dfe2) 55%, transparent);
+  scroll-margin-top: 6rem;
+}
+
+.consolidated-city:first-of-type { border-top: none; }
+
+.consolidated-city h3 {
+  font-size: 1.05rem;
+  line-height: 1.3;
+  margin: 0 0 0.4rem;
+}
+
+.consolidated-city p { margin: 0; }
+
+.consolidated-city:target {
+  border-left: 3px solid var(--teal, #155f6b);
+  padding-left: 1rem;
+  margin-left: -1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .consolidated-city:target { transition: border-color 240ms ease; }
+}

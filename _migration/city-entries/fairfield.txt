@@ -26,4 +26,5 @@
       ["I spent years around aircraft — should I get my hearing checked?", "Yes. Prolonged exposure to flight-line and engine noise can contribute to hearing loss, and a full diagnostic evaluation will show where things stand and what helps. Call 650-342-9449 to set one up."],
       ["Do you offer Lenire tinnitus treatment?", "We do. Lenire and comprehensive tinnitus care are among the main reasons patients travel to us from farther corners of the Bay Area, Fairfield included."],
     ],
+    consolidatedInto: "solano-county",
   },

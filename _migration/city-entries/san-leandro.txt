@@ -26,4 +26,5 @@
       ["Why come to you rather than a closer clinic?", "For routine care, staying local is reasonable. San Leandro patients travel to us mainly for specialized tinnitus treatment, Lenire, and complex fittings — and the San Mateo Bridge keeps that trip relatively short."],
       ["How far is your office from San Leandro?", "Roughly 30-35 minutes to San Mateo via the bridge. Call 650-342-9449 to set up a visit that fits your schedule."],
     ],
+    consolidatedInto: "alameda-county",
   },

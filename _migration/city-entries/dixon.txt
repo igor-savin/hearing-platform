@@ -26,4 +26,5 @@
       ["Can years of farm and equipment noise damage hearing?", "Long-term exposure to loud machinery can contribute to hearing loss over time. A full diagnostic evaluation will show whether noise is part of the picture and what will help. Call 650-342-9449 to book."],
       ["How do you make a trip from this far worthwhile?", "For distant patients, we fold testing, treatment, and counseling into one efficient visit and set up a follow-up plan that limits how often you need to drive down to the Peninsula."],
     ],
+    consolidatedInto: "solano-county",
   },

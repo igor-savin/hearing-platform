@@ -38,8 +38,8 @@ const blogRedirects = [
       { source: "/areas-we-serve/san-mateo/lenire/", destination: "/areas-we-serve/san-mateo/", permanent: true },
       { source: "/areas-we-serve/san-mateo/tinnitus-audiologist/", destination: "/areas-we-serve/san-mateo/", permanent: true },
       { source: "/areas-we-serve/san-mateo/dr-emily-mcmahan/", destination: "/about-us/emily-mcmahan/", permanent: true },
-      { source: "/areas-we-serve/berkeley/lenire/", destination: "/areas-we-serve/berkeley/", permanent: true },
-      { source: "/areas-we-serve/berkeley/tinnitus-audiologist/", destination: "/areas-we-serve/berkeley/", permanent: true },
+      { source: "/areas-we-serve/berkeley/lenire/", destination: "/areas-we-serve/alameda-county/#berkeley", permanent: true },
+      { source: "/areas-we-serve/berkeley/tinnitus-audiologist/", destination: "/areas-we-serve/alameda-county/#berkeley", permanent: true },
       { source: "/areas-we-serve/berkeley/dr-emily-mcmahan/", destination: "/about-us/emily-mcmahan/", permanent: true },
       { source: "/areas-we-serve/palo-alto/tinnitus-audiologist/", destination: "/areas-we-serve/palo-alto/", permanent: true },
       { source: "/areas-we-serve/palo-alto/lenire/", destination: "/areas-we-serve/palo-alto/", permanent: true },
@@ -272,7 +272,7 @@ const blogRedirects = [
       { source: "/pediatric-hearing-tests-in-san-mateo-a-parents-step-by-step-guide/", destination: "/areas-we-serve/san-mateo/", permanent: true },
       { source: "/police-officers-guide-to-hearing-aids-protecting-your-hearing-in-the-line-of-duty/", destination: "/services/hearing-protection/", permanent: true },
       { source: "/pool-time-avoid-swimmers-ear-with-these-tips/", destination: "/the-blog/", permanent: true },
-      { source: "/port-of-oakland-longshoremen-comprehensive-hearing-healthcare-guide/", destination: "/areas-we-serve/oakland/", permanent: true },
+      { source: "/port-of-oakland-longshoremen-comprehensive-hearing-healthcare-guide/", destination: "/areas-we-serve/alameda-county/#oakland", permanent: true },
       { source: "/preparing-for-a-big-life-event-with-new-hearing-aids-weddings-travel-reunions/", destination: "/hearing-aid-fitting/", permanent: true },
       { source: "/protect-your-hearing/", destination: "/services/hearing-protection/", permanent: true },
       { source: "/protect-your-hearing-and-still-enjoy-concerts/", destination: "/services/hearing-protection/", permanent: true },
@@ -397,6 +397,80 @@ const wordpressArchiveRedirects = [
   { source: "/:path*/feed/", destination: "/the-blog/", permanent: true },
 ];
 
+
+// 26 Aug 2026 — FIFTY-TWO CITY PAGES CONSOLIDATED INTO THEIR COUNTY HUB.
+//
+// The rule is demand, not distance. The first cut of this was going to retire
+// every city too far to drive from, and the per-page Search Console data killed
+// that: six of the ten best-performing city pages were far-tier (Gilroy 8
+// clicks, Fremont 7, Concord 5), while San Mateo, San Carlos, Mountain View and
+// Menlo Park — the office and near cities — earned nothing at all. Near an
+// office Google answers with the map pack, which the practice is already in, so
+// the page adds nothing; far away there is no pack slot to lose and a page
+// catches a trickle.
+//
+// So: every office/near/mid city keeps its page for catchment reasons, every
+// far-tier page earning 2+ clicks in 90 days keeps its page because it works,
+// and the 52 below — one click or none, 21 of them without a single impression
+// — fold into the county hub. Six clicks in 90 days between all 52.
+//
+// The writing is not lost. Each city's prose renders as a section of its hub,
+// anchored on the city slug, which is what these redirects point at.
+const cityConsolidationRedirects = [
+      { source: "/areas-we-serve/alameda/", destination: "/areas-we-serve/alameda-county/#alameda", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/albany/", destination: "/areas-we-serve/alameda-county/#albany", permanent: true }, // 0 clicks, 18 impr
+      { source: "/areas-we-serve/antioch/", destination: "/areas-we-serve/contra-costa-county/#antioch", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/bay-area/", destination: "/areas-we-serve/", permanent: true }, // 1 clicks, 215 impr
+      { source: "/areas-we-serve/benicia/", destination: "/areas-we-serve/solano-county/#benicia", permanent: true }, // 1 clicks, 159 impr
+      { source: "/areas-we-serve/berkeley/", destination: "/areas-we-serve/alameda-county/#berkeley", permanent: true }, // 0 clicks, 20 impr
+      { source: "/areas-we-serve/brentwood/", destination: "/areas-we-serve/contra-costa-county/#brentwood", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/cupertino/", destination: "/areas-we-serve/santa-clara-county/#cupertino", permanent: true }, // 0 clicks, 113 impr
+      { source: "/areas-we-serve/danville/", destination: "/areas-we-serve/contra-costa-county/#danville", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/dixon/", destination: "/areas-we-serve/solano-county/#dixon", permanent: true }, // 0 clicks, 3 impr
+      { source: "/areas-we-serve/emeryville/", destination: "/areas-we-serve/alameda-county/#emeryville", permanent: true }, // 0 clicks, 11 impr
+      { source: "/areas-we-serve/fairfield/", destination: "/areas-we-serve/solano-county/#fairfield", permanent: true }, // 0 clicks, 8 impr
+      { source: "/areas-we-serve/hayward/", destination: "/areas-we-serve/alameda-county/#hayward", permanent: true }, // 1 clicks, 117 impr
+      { source: "/areas-we-serve/hercules/", destination: "/areas-we-serve/contra-costa-county/#hercules", permanent: true }, // 0 clicks, 15 impr
+      { source: "/areas-we-serve/lafayette/", destination: "/areas-we-serve/contra-costa-county/#lafayette", permanent: true }, // 0 clicks, 9 impr
+      { source: "/areas-we-serve/larkspur/", destination: "/areas-we-serve/marin-county/#larkspur", permanent: true }, // 0 clicks, 15 impr
+      { source: "/areas-we-serve/livermore/", destination: "/areas-we-serve/alameda-county/#livermore", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/los-altos-hills/", destination: "/areas-we-serve/santa-clara-county/#los-altos-hills", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/los-gatos/", destination: "/areas-we-serve/santa-clara-county/#los-gatos", permanent: true }, // 0 clicks, 15 impr
+      { source: "/areas-we-serve/martinez/", destination: "/areas-we-serve/contra-costa-county/#martinez", permanent: true }, // 0 clicks, 5 impr
+      { source: "/areas-we-serve/mill-valley/", destination: "/areas-we-serve/marin-county/#mill-valley", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/monte-sereno/", destination: "/areas-we-serve/santa-clara-county/#monte-sereno", permanent: true }, // 0 clicks, 6 impr
+      { source: "/areas-we-serve/morgan-hill/", destination: "/areas-we-serve/santa-clara-county/#morgan-hill", permanent: true }, // 0 clicks, 8 impr
+      { source: "/areas-we-serve/novato/", destination: "/areas-we-serve/marin-county/#novato", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/oakland/", destination: "/areas-we-serve/alameda-county/#oakland", permanent: true }, // 1 clicks, 122 impr
+      { source: "/areas-we-serve/oakley/", destination: "/areas-we-serve/contra-costa-county/#oakley", permanent: true }, // 0 clicks, 166 impr
+      { source: "/areas-we-serve/orinda/", destination: "/areas-we-serve/contra-costa-county/#orinda", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/petaluma/", destination: "/areas-we-serve/sonoma-county/#petaluma", permanent: true }, // 0 clicks, 1257 impr
+      { source: "/areas-we-serve/pittsburg/", destination: "/areas-we-serve/contra-costa-county/#pittsburg", permanent: true }, // 1 clicks, 641 impr
+      { source: "/areas-we-serve/pleasant-hill/", destination: "/areas-we-serve/contra-costa-county/#pleasant-hill", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/pleasanton/", destination: "/areas-we-serve/alameda-county/#pleasanton", permanent: true }, // 1 clicks, 809 impr
+      { source: "/areas-we-serve/richmond/", destination: "/areas-we-serve/contra-costa-county/#richmond", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/rio-vista/", destination: "/areas-we-serve/solano-county/#rio-vista", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/san-jose/", destination: "/areas-we-serve/santa-clara-county/#san-jose", permanent: true }, // 0 clicks, 26 impr
+      { source: "/areas-we-serve/san-leandro/", destination: "/areas-we-serve/alameda-county/#san-leandro", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/san-pablo/", destination: "/areas-we-serve/contra-costa-county/#san-pablo", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/san-rafael/", destination: "/areas-we-serve/marin-county/#san-rafael", permanent: true }, // 0 clicks, 42 impr
+      { source: "/areas-we-serve/san-ramon/", destination: "/areas-we-serve/contra-costa-county/#san-ramon", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/santa-clara/", destination: "/areas-we-serve/santa-clara-county/#santa-clara", permanent: true }, // 0 clicks, 4 impr
+      { source: "/areas-we-serve/santa-rosa/", destination: "/areas-we-serve/sonoma-county/#santa-rosa", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/saratoga/", destination: "/areas-we-serve/santa-clara-county/#saratoga", permanent: true }, // 0 clicks, 3 impr
+      { source: "/areas-we-serve/sausalito/", destination: "/areas-we-serve/marin-county/#sausalito", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/sonoma/", destination: "/areas-we-serve/sonoma-county/#sonoma", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/st-helena/", destination: "/areas-we-serve/napa-county/#st-helena", permanent: true }, // 0 clicks, 183 impr
+      { source: "/areas-we-serve/suisun-city/", destination: "/areas-we-serve/solano-county/#suisun-city", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/tiburon/", destination: "/areas-we-serve/marin-county/#tiburon", permanent: true }, // 0 clicks, 7 impr
+      { source: "/areas-we-serve/union-city/", destination: "/areas-we-serve/alameda-county/#union-city", permanent: true }, // 0 clicks, 151 impr
+      { source: "/areas-we-serve/vacaville/", destination: "/areas-we-serve/solano-county/#vacaville", permanent: true }, // 0 clicks, 0 impr
+      { source: "/areas-we-serve/vallejo/", destination: "/areas-we-serve/solano-county/#vallejo", permanent: true }, // 0 clicks, 147 impr
+      { source: "/areas-we-serve/walnut-creek/", destination: "/areas-we-serve/contra-costa-county/#walnut-creek", permanent: true }, // 0 clicks, 451 impr
+      { source: "/areas-we-serve/windsor/", destination: "/areas-we-serve/sonoma-county/#windsor", permanent: true }, // 0 clicks, 10 impr
+      { source: "/areas-we-serve/yountville/", destination: "/areas-we-serve/napa-county/#yountville", permanent: true }, // 0 clicks, 0 impr
+];
+
 const nextConfig: NextConfig = {
   // Kept identical to the sister practice (Audiology Associates of
   // Westchester): both properties are the same business with the same image
@@ -427,7 +501,7 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
   async redirects() {
-    return [...blogRedirects, ...wordpressArchiveRedirects, ...legacySitemapRedirects];
+    return [...blogRedirects, ...cityConsolidationRedirects, ...wordpressArchiveRedirects, ...legacySitemapRedirects];
   },
   async headers() {
     // Static assets under /public/assets are content-stable (we rename on change),

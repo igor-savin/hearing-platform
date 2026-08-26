@@ -26,4 +26,5 @@
       ["Do you provide Lenire tinnitus treatment?", "Yes. Lenire and full tinnitus management are among the main reasons North Bay patients, including from Windsor, decide the drive is worthwhile."],
       ["Can you handle testing and fitting in one trip?", "Where possible, yes. For distance patients we combine the [evaluation](/hearing-testing/) and [fitting](/hearing-aid-fitting/) and build follow-up so you drive down as seldom as we can manage."],
     ],
+    consolidatedInto: "sonoma-county",
   },

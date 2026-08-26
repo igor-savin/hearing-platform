@@ -26,4 +26,5 @@
       ["Why travel from Danville when there are closer options?", "For routine care, staying local is reasonable. Patients come to us for specialized tinnitus treatment, Lenire, and the unhurried, meticulous fitting that's harder to find nearby."],
       ["Can I see a tinnitus specialist?", "Yes. Our practice is tinnitus-focused, including Lenire, and sees patients from throughout the San Ramon Valley. Call 650-342-9449 to arrange a visit."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

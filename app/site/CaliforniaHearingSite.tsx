@@ -52,6 +52,12 @@ export type PageContent = {
   variant?: string;        // per-archetype visual treatment
   datePublished?: string;  // ISO date (original publish) for BlogPosting schema
   dateModified?: string;   // ISO date of last real edit
+  /**
+   * County hub pages only. Each entry is a city that no longer has its own
+   * page; the section id matches the slug so the 301 from the old URL lands on
+   * the right part of the hub rather than the top of it.
+   */
+  consolidatedCities?: { slug: string; name: string; heading: string; body: string }[];
   metaDescription?: string; // hand-written meta description (overrides auto)
   metaTitle?: string;      // optional shorter title tag (overrides headline)
   authorName?: string;     // named author for signed posts (overrides generic byline)
@@ -301,7 +307,7 @@ const COUNTY_ORDER = [
 ];
 
 function AreasDirectory() {
-  const groups = new Map<string, { label: string; slug: string }[]>();
+  const groups = new Map<string, { label: string; slug: string; folded: boolean }[]>();
   const countyHubs = new Map<string, string>();
   const seen = new Set<string>();
 
@@ -317,7 +323,10 @@ function AreasDirectory() {
     if (seen.has(key)) continue; // guard against duplicate city entries
     seen.add(key);
     if (!groups.has(county)) groups.set(county, []);
-    groups.get(county)!.push({ label: profile.name, slug });
+    // A consolidated city still belongs in the directory — patients search for
+    // it — but its link has to go where its writing now lives, not to a URL
+    // that 301s away.
+    groups.get(county)!.push({ label: profile.name, slug, folded: isConsolidated(profile) });
   }
 
   const counties = [...groups.keys()].sort(
@@ -342,9 +351,14 @@ function AreasDirectory() {
               <span className="area-count">{cities.length} {cities.length === 1 ? "city" : "cities"}</span>
             </h3>
             <div className="pill-grid">
-              {cities.map((c) => (
-                <a href={`/areas-we-serve/${c.slug}/`} key={c.slug}>{c.label}</a>
-              ))}
+              {cities.map((c) => {
+                const target = c.folded
+                  ? (cityProfiles[c.slug].consolidatedInto
+                      ? `/areas-we-serve/${cityProfiles[c.slug].consolidatedInto}/#${c.slug}`
+                      : "/areas-we-serve/")
+                  : `/areas-we-serve/${c.slug}/`;
+                return <a href={target} key={c.slug}>{c.label}</a>;
+              })}
             </div>
           </div>
         );
@@ -842,6 +856,18 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
   ];
 
   const citySlug = citySlugFromPath(page.path) || "";
+
+  // On a county hub, carry the folded cities' own writing rather than a list of
+  // names. Each was written to be city-true — the Oakland entry says outright
+  // that the practice is not the corner audiologist for most Oaklanders — and
+  // that honesty is worth more on the hub than another block of filler.
+  const consolidatedCities = (!service && /\bcounty$/i.test(profile.name))
+    ? Object.entries(cityProfiles)
+        .filter(([, p]) => isConsolidated(p) && p.consolidatedInto === citySlug)
+        .sort((a, b) => a[1].name.localeCompare(b[1].name))
+        .map(([slug, p]) => ({ slug, name: p.name, heading: p.hook[0], body: p.hook[1] }))
+    : [];
+
   return {
     kicker: "Areas We Serve",
     headline,
@@ -851,6 +877,7 @@ function cityContent(page: SitePage, profile: CityProfile): PageContent {
     bulletLinks,
     takeaways,
     faqs: serviceSlug ? serviceFaqs(serviceSlug, name, office) : profile.faqs,
+    consolidatedCities: consolidatedCities.length ? consolidatedCities : undefined,
     image: `/assets/areas/${citySlug}.svg`,
     imageLabel: service ? `${service.label} — ${name}` : `Hearing care for ${name}`,
     imageAlt: `California Hearing Center — audiology and hearing care serving ${name}${name === profile.county ? "" : `, ${profile.county}`}`,
@@ -936,7 +963,10 @@ function relatedAreaLinks(page: SitePage): { path: string; label: string }[] {
   if (!profile) return [];
   const here = citySlugFromPath(page.path);
   const neighbors = Object.entries(cityProfiles)
-    .filter(([slug, p]) => slug !== here && (p.county === profile.county || p.region === profile.region))
+    // consolidatedInto pages 301 elsewhere — linking to them would build a
+    // redirect hop into the internal link graph on every remaining area page.
+    .filter(([slug, p]) => slug !== here && !isConsolidated(p)
+      && (p.county === profile.county || p.region === profile.region))
     .slice(0, 6)
     .map(([slug, p]) => ({ path: `/areas-we-serve/${slug}/`, label: p.name }));
   return neighbors;
@@ -1671,6 +1701,24 @@ function InnerPage({ page }: { page: SitePage }) {
             </section>
           )}
           <div className="section-stack">
+            {content.consolidatedCities && (
+              <div className="consolidated-cities">
+                <h2>Cities we see patients from across this county</h2>
+                <p className="consolidated-lede">
+                  These communities don&rsquo;t have a page of their own — the practice is on the
+                  Peninsula and, for routine care, an audiologist nearer home is usually the better
+                  choice. What we can say about each one honestly is here.
+                </p>
+                {content.consolidatedCities.map((city) => (
+                  <section id={city.slug} key={city.slug} className="consolidated-city">
+                    <h3>
+                      {city.name}: {city.heading}
+                    </h3>
+                    <p dangerouslySetInnerHTML={{ __html: linkify(city.body) }} />
+                  </section>
+                ))}
+              </div>
+            )}
             {content.sections.map(([heading, text], index) => (
               <Fragment key={heading}>
                 <section>
@@ -1986,6 +2034,13 @@ function blogCategory(slug: string, post: PageContent): string {
   if (/hearing-test|audiogram|audiologist|otolaryngolog|real-ear|word-recognition|diagnos|checked|ent-first|red-flag|balance|vertigo|dizz/.test(s)) return "Hearing Tests & Audiology";
   if (/hearing-aid|device|rechargeable|invisible|bluetooth|otc|over-the-counter|-style|whistle|repair|fitting|feedback|auracast|waterproof|occlusion|monitoring|lyric|iic|phone|zoom|smart|ai-power|drawer|new-rule|highest-rated|lifespan|adjust|choose/.test(s)) return "Hearing Aids & Technology";
   return "Hearing Loss & Your Health";
+}
+
+// A city is folded when the key exists at all — the value may legitimately be
+// null (only the Bay Area entry, which has no county hub and folds into the
+// /areas-we-serve/ index), so a truthiness test would misread that one.
+function isConsolidated(p: CityProfile): boolean {
+  return "consolidatedInto" in p;
 }
 
 function anchorId(s: string): string {

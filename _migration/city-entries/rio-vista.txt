@@ -26,4 +26,5 @@
       ["Does the Delta's damp climate affect hearing aids?", "Yes. The constant river and Delta humidity lets moisture build up inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices and nightly drying prevent most of the trouble."],
       ["Can you make one long trip accomplish more?", "For distant patients, we combine testing, treatment, and counseling into a single efficient visit and build a follow-up plan that limits how often you need to come down. Call 650-342-9449 to arrange it."],
     ],
+    consolidatedInto: "solano-county",
   },

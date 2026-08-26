@@ -26,4 +26,5 @@
       ["Is it worth the drive from Los Gatos?", "For routine visits, a local provider may be more practical. Patients come to us for specialized care — stubborn tinnitus, difficult fittings, Lenire, or a detailed second opinion — where our expertise is worth the trip."],
       ["How far is your office from Los Gatos?", "About 40 minutes north via the 280 to San Carlos. Call 650-342-9449 to arrange a thorough visit built around the drive."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

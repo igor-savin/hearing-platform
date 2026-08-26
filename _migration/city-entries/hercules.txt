@@ -26,4 +26,5 @@
       ["Is the drive across the bay worth it from Hercules?", "For routine care, a local provider may be simpler. Patients travel to us for specialized tinnitus treatment, Lenire, and complex fittings — care worth the trip."],
       ["Do you repair hearing aids damaged by moisture?", "Yes. Moisture-related issues are among the most common repairs we handle, and many can be resolved with professional cleaning and drying."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

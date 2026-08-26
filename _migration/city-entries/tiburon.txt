@@ -26,4 +26,5 @@
       ["Does living by the bay affect my hearing aids?", "Salt air and humidity can let moisture collect inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices, nightly drying, and regular cleaning prevent most of it, and we help waterfront patients set up a routine that holds."],
       ["How long is the drive from Tiburon to your office?", "Roughly an hour down Highway 101 and across the Golden Gate to San Mateo. Call 650-342-9449 and we will set aside time so one visit accomplishes as much as possible."],
     ],
+    consolidatedInto: "marin-county",
   },

@@ -26,4 +26,5 @@
       ["Can years of factory or plant noise cause hearing loss?", "Sustained occupational noise exposure can contribute to hearing loss over time. A comprehensive evaluation shows whether noise is a factor and what will help most. Call 650-342-9449 to book."],
       ["How do you make a long trip worthwhile?", "For distant patients, we combine testing, treatment, and counseling into one efficient visit and set up a follow-up plan that limits how often you need to come to the Peninsula."],
     ],
+    consolidatedInto: "solano-county",
   },

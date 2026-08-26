@@ -26,4 +26,5 @@
       ["Can you fit truly discreet hearing aids?", "Yes. We fit several invisible and near-invisible styles, choosing the right one for your ear anatomy and hearing needs, then verifying performance with real-ear measurement so discretion never costs you clarity."],
       ["How far is your office from Pleasanton?", "Roughly 45 minutes west via the bridges to San Mateo. We group testing and follow-up where possible so the drive accomplishes more each visit."],
     ],
+    consolidatedInto: "alameda-county",
   },

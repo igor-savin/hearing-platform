@@ -26,4 +26,5 @@
       ["Do you treat tinnitus and offer Lenire?", "Yes. Our practice focuses on tinnitus, including Lenire for suitable candidates. We first evaluate what's driving it, then build a plan around your case."],
       ["Can you make the trip efficient with fewer visits?", "We try to combine testing, fitting, and follow-up for patients coming from the Delta. Call 650-342-9449 and we'll plan around the drive."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

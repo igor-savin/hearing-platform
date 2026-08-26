@@ -26,4 +26,5 @@
       ["Can you help if my hearing aids sound fine in quiet but not in restaurants?", "Yes — that is one of the most common reasons people see us. We test your speech understanding in background noise and use real-ear measurement to verify the settings, then fine-tune for the noisy rooms you actually spend time in."],
       ["How long is the drive from San Rafael?", "Plan on about an hour down Highway 101 and over the Golden Gate to our San Mateo office. Call 650-342-9449 and we will schedule enough time so one visit accomplishes as much as possible."],
     ],
+    consolidatedInto: "marin-county",
   },

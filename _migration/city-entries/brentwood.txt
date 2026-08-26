@@ -26,4 +26,5 @@
       ["I've worked around farm and shop equipment for years — should I be tested?", "It's worth doing. Prolonged equipment noise can contribute to gradual hearing loss and tinnitus. A baseline evaluation gives you a clear starting point."],
       ["Can you handle fitting and follow-up in fewer trips?", "Yes. For patients coming from far East County, we combine steps where we can. Call 650-342-9449 and we'll build a plan around the drive."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

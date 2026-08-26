@@ -26,4 +26,5 @@
       ["Is the drive from Mill Valley worth it for hearing care?", "If you need specialized tinnitus or Lenire care, a second opinion, or a difficult fitting solved, most patients feel it is. For routine maintenance, a nearer Marin office may be the practical choice — we would rather tell you honestly than waste your trip."],
       ["How far is your office from Mill Valley?", "About 55 minutes down Highway 101 and over the Golden Gate to our San Mateo office. Call 650-342-9449 and we will build in time so a single visit covers testing, fitting, and follow-up where possible."],
     ],
+    consolidatedInto: "marin-county",
   },

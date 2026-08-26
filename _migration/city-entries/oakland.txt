@@ -26,4 +26,5 @@
       ["Do you treat tinnitus for East Bay patients?", "Yes. Tinnitus care is a core focus of our practice, and we see patients from across the East Bay. If ringing or buzzing is affecting your sleep or concentration, call 650-342-9449 to talk through the options."],
       ["How long is the drive from Oakland?", "Plan on roughly 35-45 minutes to our San Mateo office depending on which bridge you take and traffic. We schedule East Bay patients with that trip in mind, often combining testing and follow-up into fewer visits."],
     ],
+    consolidatedInto: "alameda-county",
   },

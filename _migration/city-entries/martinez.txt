@@ -26,4 +26,5 @@
       ["Do you make custom hearing protection?", "We do. Custom-molded protection fits better and shields more reliably than generic plugs, which matters for anyone still working around loud equipment."],
       ["Why come to the Peninsula from Martinez?", "For routine care, a closer provider may be simpler. Patients travel to us for specialized tinnitus treatment, Lenire, and difficult fittings. Call 650-342-9449 to talk it through."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

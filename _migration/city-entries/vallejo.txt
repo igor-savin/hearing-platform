@@ -26,4 +26,5 @@
       ["I worked at the shipyard for years — could that have affected my hearing?", "Long-term occupational noise exposure can contribute to hearing loss over time. A thorough diagnostic evaluation can show whether noise is part of the picture and what will help. Call 650-342-9449 to arrange one."],
       ["Can you make one long trip count for more?", "Yes. For patients driving from a distance, we consolidate testing, fitting, and counseling into efficient visits and build a follow-up plan that limits how often you need to come down."],
     ],
+    consolidatedInto: "solano-county",
   },

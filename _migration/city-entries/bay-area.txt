@@ -26,4 +26,5 @@
       ["Should I travel to you or find someone closer?", "For routine hearing tests and standard hearing aids, a local provider is usually the practical choice. The drive to us tends to be worth it for specialized tinnitus treatment, Lenire, difficult fittings, or a careful second opinion."],
       ["Where are your offices located?", "We have two Peninsula offices — San Mateo at 88 N. San Mateo Drive and San Carlos at 1008 Laurel Street, about eight minutes apart. Call 650-342-9449 to find the one that's most convenient."],
     ],
+    consolidatedInto: null,
   },

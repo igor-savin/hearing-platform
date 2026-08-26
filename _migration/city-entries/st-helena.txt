@@ -26,4 +26,5 @@
       ["Do you offer Lenire tinnitus treatment?", "Yes. Lenire and comprehensive tinnitus management are among the main reasons patients travel to us from the Napa Valley, including St. Helena."],
       ["Can you consolidate my care into fewer visits?", "Yes. For patients driving a distance we combine [testing](/hearing-testing/) and treatment where possible and set up follow-up so the drive is the exception, not the routine."],
     ],
+    consolidatedInto: "napa-county",
   },

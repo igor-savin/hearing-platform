@@ -26,4 +26,5 @@
       ["Do you offer Lenire for tinnitus?", "Yes. We provide Lenire alongside a broader set of tinnitus management approaches, chosen to fit your specific situation after a full evaluation."],
       ["How far is your office from Santa Clara?", "About 35 minutes north via the 101 or 280 to San Carlos. Call 650-342-9449 to arrange a visit built around one efficient trip."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

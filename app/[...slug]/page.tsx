@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { crawledPages, type SitePage } from "../data/crawledPages";
+import { redirectedPaths } from "../data/redirectedPaths";
 import { CaliforniaHearingSite, blogMetaDescription, blogMetaTitle, blogOgImage, areaMetaTitle, areaMetaDescription, coreMetaTitle, coreMetaDescription } from "../site/CaliforniaHearingSite";
 
 type PageProps = {
@@ -8,7 +9,10 @@ type PageProps = {
 
 export function generateStaticParams() {
   return crawledPages
-    .filter((page) => page.path !== "/")
+    // A path that 301s in next.config.ts never renders, so prerendering it is
+    // pure build cost. Before this filter the build was still producing the 25
+    // consolidated service sub-pages; it now also skips the 52 folded cities.
+    .filter((page) => page.path !== "/" && !redirectedPaths.has(page.path))
     .map((page) => ({
       slug: page.path.split("/").filter(Boolean),
     }));

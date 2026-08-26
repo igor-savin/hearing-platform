@@ -26,4 +26,5 @@
       ["Does Alameda's waterfront air affect hearing aids?", "Damp, salty coastal air can let moisture build inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices, nightly drying, and regular cleaning prevent most trouble, and we help patients set up a routine that lasts."],
       ["How far are you from the island?", "Roughly 40 minutes to San Mateo across the San Mateo Bridge, traffic depending. Call 650-342-9449 and we will schedule East Bay visits to minimize repeat trips."],
     ],
+    consolidatedInto: "alameda-county",
   },

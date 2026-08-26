@@ -26,4 +26,5 @@
       ["Can you help if my hearing aids never sounded right?", "Often, yes. Poor fit or unverified programming is a common reason devices disappoint, and we use real-ear measurement to check that what your ears receive matches your prescription."],
       ["How far is your practice from Albany?", "About 45 minutes to San Mateo depending on bridge traffic. We plan East Bay visits to accomplish more per trip so the distance is less of a burden."],
     ],
+    consolidatedInto: "alameda-county",
   },

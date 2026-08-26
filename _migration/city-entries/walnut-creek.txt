@@ -26,4 +26,5 @@
       ["Will hearing aids work in a busy Broadway Plaza restaurant?", "They can, when they're programmed and verified for noise. We use real-ear measurement and speech-in-noise testing so devices perform where you actually struggle, not only in the exam room."],
       ["Do you offer discreet, nearly invisible hearing aids?", "Yes. We fit several discreet and in-canal styles; the right one depends on your ear anatomy and hearing, which we assess during your evaluation."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

@@ -26,4 +26,5 @@
       ["Can you keep everything private and unrushed?", "Yes. We keep visits confidential and unhurried and fit discreet, near-invisible devices, which is a large part of why patients from quiet communities like Monte Sereno choose us."],
       ["How far is your office from Monte Sereno?", "About 42 minutes north on the 280 to San Carlos. Call 650-342-9449 and we will plan one efficient, comprehensive visit."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

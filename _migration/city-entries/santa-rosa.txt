@@ -26,4 +26,5 @@
       ["Do you offer Lenire for tinnitus?", "Yes. We provide Lenire alongside comprehensive tinnitus evaluation and management, and it is one of the main reasons patients travel to us from the North Bay, Santa Rosa included."],
       ["Can you handle everything in fewer visits since I'm driving far?", "That is how we prefer to work it for distant patients — consolidating [testing](/hearing-testing/), treatment, and follow-up so the drive accomplishes as much as possible each time."],
     ],
+    consolidatedInto: "sonoma-county",
   },

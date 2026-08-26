@@ -26,4 +26,5 @@
       ["Does living by the marsh affect my hearing aids?", "The damp, marine air around the marsh and waterfront lets moisture build up inside hearing aids, which can cause muffled or intermittent sound. Moisture-resistant devices and a nightly drying routine prevent most of it."],
       ["Can you make one visit count when I'm coming from a distance?", "Yes. We consolidate testing, treatment, and counseling into a single efficient visit and build a follow-up plan that limits how often you need to travel down. Call 650-342-9449 to arrange it."],
     ],
+    consolidatedInto: "solano-county",
   },

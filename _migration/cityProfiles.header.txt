@@ -42,6 +42,15 @@ export type CityProfile = {
   whyHere: string;              // paragraph: why patients from here choose CHC
   landmarks?: string;           // one sentence naming real local reference points
   faqs: [string, string][];     // 2-3 city-specific Q&A
+
+  // Set when this city no longer has its own page. Search Console showed the
+  // 52 cities carrying this field earned six clicks between them in ninety days,
+  // and forty-two of them had never been clicked at all. Their writing is good
+  // and stays — it renders as a section of the county hub named here (or of
+  // /areas-we-serve/ when the value is null, which is only the Bay Area entry).
+  // The page URL 301s to that hub. Keeping the prose is the point: the pages
+  // failed for want of demand, not for want of quality.
+  consolidatedInto?: string | null;
 };
 
 // Two office anchors, referenced in copy + schema.

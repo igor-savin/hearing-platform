@@ -26,4 +26,5 @@
       ["Does Benicia's waterfront climate affect hearing aids?", "The damp marine air along the strait lets moisture build up inside hearing aids, which can cause muffled or cutting-out sound. Moisture-resistant devices and a drying routine prevent most of it."],
       ["Do you provide Lenire and comprehensive tinnitus care?", "Yes. Tinnitus care, including Lenire, is one of the main reasons patients travel to us from around the Bay Area, Benicia included. Call 650-342-9449 to arrange an evaluation."],
     ],
+    consolidatedInto: "solano-county",
   },

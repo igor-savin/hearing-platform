@@ -26,4 +26,5 @@
       ["Do you offer Lenire tinnitus therapy?", "Yes. Lenire and comprehensive tinnitus care are among the main reasons patients travel to us from the wine country, Sonoma included."],
       ["Can you fit everything into fewer visits?", "Yes. For distance patients we consolidate [testing](/hearing-testing/) and treatment where possible and build follow-up so the drive stays infrequent. Call 650-342-9449 to plan a visit."],
     ],
+    consolidatedInto: "sonoma-county",
   },

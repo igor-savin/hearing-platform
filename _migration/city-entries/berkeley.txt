@@ -26,4 +26,5 @@
       ["I follow lectures and meetings closely — can testing reflect that?", "Yes. We test speech understanding in background noise, not just tones in a quiet booth, so results reflect real listening. That helps us tune hearing aids for lecture halls, seminars, and busy rooms rather than ideal conditions."],
       ["How far is your office from Berkeley?", "Roughly 45 minutes to San Mateo depending on bridge traffic. We try to make each visit count for East Bay patients by grouping testing and follow-up efficiently."],
     ],
+    consolidatedInto: "alameda-county",
   },

@@ -26,4 +26,5 @@
       ["Do you treat tinnitus and offer Lenire?", "We do. Tinnitus is a core focus of the practice, including Lenire therapy, and Hayward's easy bridge access makes the follow-up visits Lenire involves very manageable. Call 650-342-9449 to learn more."],
       ["Should I still consider a local Hayward provider?", "For simple hearing tests and maintenance, a nearby clinic is reasonable. But given how short the 92 crossing is, many Hayward patients find it easy to come to us for both routine and specialized care."],
     ],
+    consolidatedInto: "alameda-county",
   },

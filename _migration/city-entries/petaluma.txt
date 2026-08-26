@@ -26,4 +26,5 @@
       ["Do you provide Lenire tinnitus therapy?", "Yes. Lenire and full tinnitus care are among the main reasons North Bay patients, including from Petaluma, choose to travel to us."],
       ["Can one visit cover testing and fitting so I'm not driving back often?", "Yes. For distance patients we bundle the [evaluation](/hearing-testing/) and [fitting](/hearing-aid-fitting/) where we can, then build follow-up so you make the drive as seldom as possible."],
     ],
+    consolidatedInto: "sonoma-county",
   },

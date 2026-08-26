@@ -26,4 +26,5 @@
       ["Do you offer Lenire tinnitus therapy?", "Yes. Lenire and full tinnitus care are among the main reasons patients travel to us from the Napa Valley, Yountville included."],
       ["Can you handle everything in fewer visits since I'm driving far?", "Yes. For distance patients we consolidate the [evaluation](/hearing-testing/), treatment, and follow-up so the drive accomplishes as much as possible each time. Call 650-342-9449 to arrange a visit."],
     ],
+    consolidatedInto: "napa-county",
   },

@@ -26,4 +26,5 @@
       ["Do you treat tinnitus?", "Yes. Our practice is tinnitus-focused, including Lenire for suitable candidates. We evaluate what's driving the ringing, then build a management plan around it. Call 650-342-9449 to learn more."],
       ["Will hearing aids help in noisy, everyday settings?", "They can, when they're fit and verified properly. We use speech-in-noise testing and real-ear measurement so devices perform in busy places, not just the exam room."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

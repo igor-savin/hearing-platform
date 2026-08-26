@@ -26,4 +26,5 @@
       ["Do you offer specialized tinnitus treatment?", "Yes. Tinnitus care is a core focus of our practice, from thorough evaluation through management options including Lenire, tailored to your situation."],
       ["How far is your office from Morgan Hill?", "About 55 minutes north on the 101 to San Carlos. Call 650-342-9449 and we will arrange a comprehensive visit so the trip is well spent."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

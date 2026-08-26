@@ -26,4 +26,5 @@
       ["Can you help with ringing in the ears (tinnitus)?", "Yes — our practice is tinnitus-focused, including the Lenire device for suitable candidates. We evaluate the cause and build a management plan around your specific case."],
       ["Can you bundle testing and fitting into fewer trips?", "We try to. For patients traveling from far East County, we often combine evaluation, fitting, and follow-up efficiently. Call 650-342-9449 and we'll plan around the distance."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

@@ -26,4 +26,5 @@
       ["Will hearing aids work in a loud restaurant?", "They can, when programmed and verified for noise. We use speech-in-noise testing and real-ear measurement so devices perform in demanding settings, not only the quiet booth."],
       ["Why travel to the Peninsula from Pleasant Hill?", "For routine care, a nearer provider is reasonable. Patients come to us for specialized tinnitus treatment, Lenire, and complex fittings worth the drive."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

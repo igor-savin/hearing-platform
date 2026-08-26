@@ -26,4 +26,5 @@
       ["My tinnitus hasn't improved with other treatments. Can you help?", "Often, yes. Tinnitus is a central focus of our practice, and we tailor management — including options like Lenire — to your specific situation after a full evaluation."],
       ["How far is your office from San Jose?", "Roughly 40 minutes north on the 101 or 280 to San Carlos, depending on your neighborhood. Call 650-342-9449 and we will schedule a comprehensive visit."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

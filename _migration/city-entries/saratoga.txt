@@ -26,4 +26,5 @@
       ["Can I get hearing aids that stay truly discreet?", "Yes. We fit several invisible and near-invisible styles and take the time to verify each one, keeping both the technology and the visits private and unhurried."],
       ["How far is your office from Saratoga?", "About 40 minutes north on the 280 to San Carlos. Call 650-342-9449 and we can arrange a longer, thorough visit to make the drive count."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

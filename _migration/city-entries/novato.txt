@@ -26,4 +26,5 @@
       ["What actually happens at a first tinnitus appointment?", "We take a careful history, test your hearing and how you process sound, and rule out issues that need medical attention, then talk through options — which may include sound therapy or Lenire. The goal of the first visit is a clear picture and a real plan, not a rushed sales pitch."],
       ["How long should I budget to reach your office from Novato?", "About 70 minutes down Highway 101 and across the Golden Gate to San Mateo. Call 650-342-9449 and we will schedule enough time to make the trip count."],
     ],
+    consolidatedInto: "marin-county",
   },

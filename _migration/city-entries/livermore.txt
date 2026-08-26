@@ -26,4 +26,5 @@
       ["Do you have real experience with difficult tinnitus?", "Yes. Tinnitus is a central focus of our practice, including Lenire therapy for suitable patients. If ringing is disrupting your sleep or concentration, call 650-342-9449 to talk it through before committing to the trip."],
       ["Can you make one visit accomplish more, given the distance?", "We try to. For patients traveling from as far as Livermore, we group testing, fitting, and follow-up where clinically sensible so fewer long drives are needed."],
     ],
+    consolidatedInto: "alameda-county",
   },

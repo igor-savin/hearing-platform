@@ -26,4 +26,5 @@
       ["Why choose you over a closer audiologist?", "For routine care, local is often easier. Union City patients come to us for specialized tinnitus treatment, Lenire, and complex second opinions, where a focused practice is worth the short bridge drive."],
       ["Do you see patients from the southern East Bay regularly?", "Yes, regularly. We schedule around the commute and often group testing and follow-up together. Call 650-342-9449 to arrange a visit."],
     ],
+    consolidatedInto: "alameda-county",
   },

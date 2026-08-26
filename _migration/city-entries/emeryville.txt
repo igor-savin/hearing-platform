@@ -26,4 +26,5 @@
       ["I struggle to hear in open-plan meetings — can you help?", "Yes. We measure how well you understand speech in background noise and program hearing aids for those exact settings, verifying the result with real-ear measurement rather than assuming the default fits."],
       ["How long is the trip from Emeryville?", "Roughly 40 minutes to San Mateo, traffic permitting. Call 650-342-9449 and we will arrange visits to reduce how often you make the drive."],
     ],
+    consolidatedInto: "alameda-county",
   },

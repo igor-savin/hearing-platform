@@ -26,4 +26,5 @@
       ["Why choose a practice an hour away over one in Marin?", "For everyday care, we would not argue with convenience. People choose us for specialized tinnitus and Lenire treatment, difficult fittings, and careful second opinions — situations where expertise and time matter more than the miles."],
       ["How far is your office from Larkspur?", "Roughly an hour south via Highway 101 and the Golden Gate to San Mateo. Call 650-342-9449 to arrange a visit with enough time set aside to make the drive worthwhile."],
     ],
+    consolidatedInto: "marin-county",
   },

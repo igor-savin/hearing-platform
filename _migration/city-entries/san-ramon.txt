@@ -26,4 +26,5 @@
       ["Why travel from San Ramon instead of going local?", "For a routine test, local is fine. Patients make the trip for specialized tinnitus treatment, Lenire, and precise fittings — the depth of care worth the drive."],
       ["Are there discreet hearing aids suited to a professional setting?", "Yes. We fit several low-profile and in-canal styles that stay unobtrusive in meetings; the best fit depends on your ears and hearing, which we assess in your evaluation."],
     ],
+    consolidatedInto: "contra-costa-county",
   },

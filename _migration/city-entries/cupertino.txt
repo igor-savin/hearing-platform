@@ -26,4 +26,5 @@
       ["Why travel from Cupertino instead of going local?", "For simple upkeep, local is easier. Patients drive to us for specialized problems — persistent tinnitus, difficult fittings, Lenire, or a thorough reassessment — where our focus justifies the distance."],
       ["How far is your office from Cupertino?", "About 35 minutes north on the 280 to San Carlos. Call 650-342-9449 and we will schedule a full visit so the trip accomplishes plenty."],
     ],
+    consolidatedInto: "santa-clara-county",
   },

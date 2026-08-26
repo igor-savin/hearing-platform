@@ -26,4 +26,5 @@
       ["Do you fit hearing protection for people still working?", "We do. Custom-molded protection seals better and is more comfortable for all-day wear than generic plugs, which matters for workers around ongoing noise."],
       ["Why travel all the way to the Peninsula from Pittsburg?", "For routine care, a nearer provider may be the practical choice. Patients come to us for specialized tinnitus treatment, Lenire, and difficult fittings — care worth the drive."],
     ],
+    consolidatedInto: "contra-costa-county",
   },
