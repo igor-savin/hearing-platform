@@ -71,6 +71,7 @@ export const contentDates: Record<string, ContentDate> = {
   "/rechargeable-vs-battery-hearing-aids": { published: "2026-07-14", modified: "2026-08-25" },
   "/reviews": { published: "2026-07-21", modified: "2026-07-21" },
   "/ringing-in-one-ear-red-flags-next-steps": { published: "2026-07-14", modified: "2026-08-25" },
+  "/fortell-hearing-aids-what-we-know": { published: "2026-08-26", modified: "2026-08-26" },
   "/signia-max-what-we-know": { published: "2026-08-24", modified: "2026-08-24" },
   "/sound-sensitivity-vs-tinnitus": { published: "2026-07-14", modified: "2026-08-25" },
   "/sudden-hearing-loss-why-not-wait": { published: "2026-07-14", modified: "2026-08-25" },
