@@ -28,6 +28,7 @@ export const contentDates: Record<string, ContentDate> = {
   "/ear-fullness-no-pain-hearing-loss": { published: "2026-07-14", modified: "2026-08-25" },
   "/ear-pressure-and-hearing-loss-evaluation": { published: "2026-07-14", modified: "2026-08-25" },
   "/first-signs-of-hearing-loss-family-notice": { published: "2026-07-14", modified: "2026-08-25" },
+  "/fortell-hearing-aids-what-we-know": { published: "2026-08-26", modified: "2026-08-26" },
   "/hear-people-talking-not-understand-words": { published: "2026-07-14", modified: "2026-08-25" },
   "/hearing-aid-cost-westchester-county": { published: "2026-07-14", modified: "2026-08-25" },
   "/hearing-aid-domes-wax-guards-receivers": { published: "2026-07-14", modified: "2026-08-25" },
@@ -61,18 +62,18 @@ export const contentDates: Record<string, ContentDate> = {
   "/is-hearing-loss-normal-with-age": { published: "2026-07-14", modified: "2026-08-25" },
   "/kids-teens-ear-protection-concerts-sports": { published: "2026-07-14", modified: "2026-08-25" },
   "/lenire-for-tinnitus-candidate-guide": { published: "2026-07-14", modified: "2026-08-25" },
+  "/lgbtq-affirming-hearing-care": { published: "2026-08-26", modified: "2026-08-26" },
   "/noise-induced-hearing-loss-prevention": { published: "2026-07-14", modified: "2026-08-25" },
   "/one-ear-hearing-loss-when-to-get-checked": { published: "2026-07-14", modified: "2026-08-25" },
   "/otc-vs-prescription-hearing-aids-real-world": { published: "2026-07-14", modified: "2026-08-25" },
-  "/phonak-eon-what-we-know": { published: "2026-08-24", modified: "2026-08-24" },
+  "/phonak-eon-what-we-know": { published: "2026-08-24", modified: "2026-08-26" },
   "/prescription-vs-otc-hearing-aids": { published: "2026-07-14", modified: "2026-07-14" },
   "/pulsatile-tinnitus-heartbeat-sound": { published: "2026-07-14", modified: "2026-08-25" },
   "/questions-before-buying-hearing-aids": { published: "2026-07-14", modified: "2026-08-25" },
   "/rechargeable-vs-battery-hearing-aids": { published: "2026-07-14", modified: "2026-08-25" },
   "/reviews": { published: "2026-07-21", modified: "2026-07-21" },
   "/ringing-in-one-ear-red-flags-next-steps": { published: "2026-07-14", modified: "2026-08-25" },
-  "/fortell-hearing-aids-what-we-know": { published: "2026-08-26", modified: "2026-08-26" },
-  "/signia-max-what-we-know": { published: "2026-08-24", modified: "2026-08-24" },
+  "/signia-max-what-we-know": { published: "2026-08-24", modified: "2026-08-26" },
   "/sound-sensitivity-vs-tinnitus": { published: "2026-07-14", modified: "2026-08-25" },
   "/sudden-hearing-loss-why-not-wait": { published: "2026-07-14", modified: "2026-08-25" },
   "/tinnitus-after-loud-noise-what-to-do": { published: "2026-07-14", modified: "2026-08-25" },
@@ -95,7 +96,7 @@ export const contentDates: Record<string, ContentDate> = {
   "chappaqua": { published: "2026-07-06", modified: "2026-08-25" },
   "cochlear-implants": { published: "2026-07-07", modified: "2026-08-25" },
   "cognivue-cognitive-screening": { published: "2026-07-07", modified: "2026-08-25" },
-  "comprehensive-hearing-assessments": { published: "2026-07-07", modified: "2026-08-25" },
+  "comprehensive-hearing-assessments": { published: "2026-07-07", modified: "2026-08-26" },
   "conductive-hearing-loss": { published: "2026-07-21", modified: "2026-08-25" },
   "eargear": { published: "2026-06-07", modified: "2026-08-12" },
   "earwax-removal": { published: "2026-07-07", modified: "2026-08-25" },
@@ -159,7 +160,7 @@ export const contentDates: Record<string, ContentDate> = {
   "widex": { published: "2026-06-07", modified: "2026-06-07" },
   "widex-allure": { published: "2026-06-07", modified: "2026-07-21" },
   "yorktown-heights": { published: "2026-07-06", modified: "2026-08-25" },
-  "your-hearing": { published: "2026-07-07", modified: "2026-08-25" }
+  "your-hearing": { published: "2026-07-07", modified: "2026-08-26" }
 };
 
 // Pages are keyed by URL path in some modules and by slug in others. Try the
