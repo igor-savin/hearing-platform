@@ -3215,7 +3215,7 @@ function GoogleMapEmbed({
   return (
     <iframe
       className={className}
-      loading="lazy"
+      loading="eager"
       referrerPolicy="no-referrer-when-downgrade"
       src={src}
       title={title}
@@ -4176,6 +4176,40 @@ function AboutTrustPage({ page }: { page: SitePage }) {
   );
 }
 
+// The legacy service pages arrive as a flat list of lines -- a section title, a
+// test name, that test's definition, a call to action, another paragraph -- and
+// the grid below used to render every one of them as the same card. On the
+// practice's primary service page that made a heading, a CTA and a definition
+// visually identical, and left each test name sitting alone in an empty box.
+type LabelledEntry = { key: string; label?: string; text?: string; kind: "pair" | "prose" | "heading" | "cta" };
+
+function pairLabelledParagraphs(lines: string[]): LabelledEntry[] {
+  const isLabel = (line: string) => line.length <= 48 && !/[.!?:,]$/.test(line);
+  const isCta = (line: string) => /^call\b.{0,70}(appointment|today)!?$/i.test(line);
+  const entries: LabelledEntry[] = [];
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    if (isCta(line)) {
+      entries.push({ key: line, label: line, kind: "cta" });
+      continue;
+    }
+    const next = lines[index + 1];
+    if (isLabel(line)) {
+      if (next && !isLabel(next) && !isCta(next)) {
+        entries.push({ key: line, label: line, text: next, kind: "pair" });
+        index += 1;
+      } else {
+        entries.push({ key: line, label: line, kind: "heading" });
+      }
+      continue;
+    }
+    entries.push({ key: line, text: line, kind: "prose" });
+  }
+
+  return entries;
+}
+
 function ServiceLandingPage({ page }: { page: SitePage }) {
   const visual = serviceVisuals[page.path as keyof typeof serviceVisuals];
   const detail = coreServiceDeepDives[page.path];
@@ -4291,11 +4325,46 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
         <section className="bg-[#eaf4fb] py-16">
           <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
             <div className="grid gap-5 md:grid-cols-2">
-              {paragraphs.slice(3).map((paragraph) => (
-                <article className="rounded-2xl border border-[#d5e7f4] bg-white p-6 shadow-[0_18px_45px_rgba(0,90,156,0.08)]" key={paragraph}>
-                  <p className="text-[18px] leading-8 text-[var(--muted)]">{linkifyText(paragraph)}</p>
-                </article>
-              ))}
+              {pairLabelledParagraphs(paragraphs.slice(3)).map((entry) => {
+                if (entry.kind === "heading") {
+                  return (
+                    <h2
+                      className="text-[30px] font-black leading-tight text-[#003f6f] md:col-span-2 max-md:text-[25px]"
+                      key={entry.key}
+                    >
+                      {entry.label}
+                    </h2>
+                  );
+                }
+
+                if (entry.kind === "cta") {
+                  return (
+                    <div className="md:col-span-2" key={entry.key}>
+                      <a
+                        className="focus-ring inline-flex min-h-[52px] items-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 text-[18px] font-black text-white transition hover:bg-[#004a82]"
+                        data-track="phone-service-body"
+                        href={primaryPhoneHref}
+                      >
+                        <Phone aria-hidden="true" size={20} />
+                        {entry.label}
+                      </a>
+                    </div>
+                  );
+                }
+
+                return (
+                  <article className="rounded-2xl border border-[#d5e7f4] bg-white p-6 shadow-[0_18px_45px_rgba(0,90,156,0.08)]" key={entry.key}>
+                    {entry.label ? (
+                      <h3 className="text-[22px] font-black leading-tight text-[#003f6f]">{entry.label}</h3>
+                    ) : null}
+                    {entry.text ? (
+                      <p className={`text-[18px] leading-8 text-[var(--muted)]${entry.label ? " mt-3" : ""}`}>
+                        {linkifyText(entry.text)}
+                      </p>
+                    ) : null}
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
