@@ -1446,143 +1446,13 @@ function officeForAreaPath(path: string) {
   return locations.find((location) => location.path === officePath) || null;
 }
 
-// --- Unique per-location hero illustrations ---------------------------------
-// Each location page renders its own scene motif (waterfront, downtown/transit,
-// village, northern hills, lake, campus, theatre, avenue) instead of one shared
-// geometric card. Scenes are lightweight inline SVG (no stock photos), themed to
-// the site's navy/yellow palette with a per-town accent. Adding or re-theming a
-// town is a one-line change in the motif/accent maps below.
-type HeroMotif =
-  | "harbor"
-  | "skyline"
-  | "skylineWater"
-  | "village"
-  | "hills"
-  | "lake"
-  | "campus"
-  | "marquee"
-  | "avenue"
-  | "region";
-
-const heroSun = (cx: number, cy: number, r: number, accent: string) =>
-  r > 0 ? `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${accent}" opacity="0.9"/>` : "";
-
-const heroTrees = (x: number, y: number, accent: string) =>
-  `<g fill="${accent}" opacity="0.9"><path d="M${x} ${y} l14 26 h-28 z"/><path d="M${x} ${y + 12} l17 30 h-34 z"/><rect x="${x - 3}" y="${y + 40}" width="6" height="12" fill="#0a3a63"/></g>`;
-
-const heroFrame = (inner: string, accent: string) =>
-  `<svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" style="display:block" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a3a63"/><stop offset="0.55" stop-color="#0a4f86"/><stop offset="1" stop-color="#0c5c9c"/></linearGradient></defs><rect width="600" height="400" fill="url(#heroSky)"/><g opacity="0.5"><circle cx="512" cy="86" r="70" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="2"/><circle cx="512" cy="86" r="50" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="2"/><circle cx="512" cy="86" r="30" fill="none" stroke="${accent}" stroke-width="3" opacity="0.65"/></g>${inner}</svg>`;
-
-const heroSkylineScene = (a: string, water: boolean) =>
-  heroFrame(
-    `${heroSun(150, 96, 30, a)}<g fill="#0b3f6b"><rect x="60" y="160" width="52" height="180"/><rect x="120" y="120" width="60" height="220"/><rect x="188" y="180" width="46" height="160"/><rect x="240" y="96" width="70" height="244"/><rect x="318" y="150" width="54" height="190"/><rect x="380" y="200" width="46" height="140"/><rect x="434" y="130" width="64" height="210"/><rect x="506" y="176" width="48" height="164"/></g><g fill="${a}" opacity="0.8">${[...Array(7)]
-      .map((_, r) => [...Array(6)].map((_, c) => `<rect x="${248 + c * 10}" y="${112 + r * 18}" width="5" height="8"/>`).join(""))
-      .join("")}</g><g fill="rgba(255,255,255,0.35)">${[...Array(6)]
-      .map((_, r) => `<rect x="${444 + (r % 3) * 12}" y="${146 + r * 22}" width="5" height="9"/>`)
-      .join("")}</g>${
-      water
-        ? `<rect x="0" y="340" width="600" height="60" fill="#0a355c"/><g stroke="${a}" stroke-width="3" opacity="0.5" fill="none"><path d="M40 366 q40 -12 80 0"/><path d="M320 372 q40 -12 80 0"/></g>`
-        : `<rect x="0" y="340" width="600" height="60" fill="#0a3357"/>`
-    }<rect x="0" y="330" width="600" height="4" fill="${a}" opacity="0.7"/><g fill="#08304f"><rect x="150" y="300" width="120" height="30" rx="4"/></g><rect x="156" y="306" width="108" height="12" fill="${a}" opacity="0.55"/>`,
-    a
-  );
-
-const heroScenes: Record<HeroMotif, (accent: string) => string> = {
-  harbor: (a) =>
-    heroFrame(
-      `${heroSun(150, 110, 34, a)}<path d="M0 250 Q150 232 300 250 T600 250 V400 H0 Z" fill="#0b3f6b"/><path d="M0 288 Q150 272 300 288 T600 288 V400 H0 Z" fill="#0a355c"/><g stroke="${a}" stroke-width="3" opacity="0.55" fill="none"><path d="M60 320 q40 -14 80 0"/><path d="M180 336 q40 -14 80 0"/><path d="M360 322 q40 -14 80 0"/><path d="M470 340 q40 -14 80 0"/></g><g><path d="M250 250 l0 -70 l46 62 z" fill="#eaf4fb" opacity="0.95"/><path d="M250 250 l0 -54 l-30 46 z" fill="${a}" opacity="0.9"/><path d="M226 252 h58 l-12 20 h-34 z" fill="#08304f"/></g><g transform="translate(120 26) scale(0.7)"><path d="M250 250 l0 -70 l46 62 z" fill="#eaf4fb" opacity="0.9"/><path d="M250 250 l0 -54 l-30 46 z" fill="#fff" opacity="0.55"/><path d="M226 252 h58 l-12 20 h-34 z" fill="#08304f"/></g><path d="M430 150 q8 -8 16 0 q8 -8 16 0" stroke="#eaf4fb" stroke-width="2" fill="none" opacity="0.7"/>`,
-      a
-    ),
-  skyline: (a) => heroSkylineScene(a, false),
-  skylineWater: (a) => heroSkylineScene(a, true),
-  village: (a) =>
-    heroFrame(
-      `<rect x="0" y="300" width="600" height="100" fill="#0a355c"/><g><rect x="60" y="210" width="90" height="90" fill="#0b3f6b"/><path d="M55 210 h100 l-14 -22 h-72 z" fill="${a}" opacity="0.85"/><rect x="160" y="230" width="90" height="70" fill="#0c4a7d"/><path d="M155 230 h100 l-14 -20 h-72 z" fill="#eaf4fb" opacity="0.5"/><rect x="260" y="205" width="96" height="95" fill="#0b3f6b"/><path d="M255 205 h106 l-16 -24 h-74 z" fill="${a}" opacity="0.85"/><rect x="366" y="234" width="88" height="66" fill="#0c4a7d"/><path d="M361 234 h98 l-14 -20 h-70 z" fill="#eaf4fb" opacity="0.5"/><rect x="464" y="214" width="86" height="86" fill="#0b3f6b"/><path d="M459 214 h96 l-14 -22 h-68 z" fill="${a}" opacity="0.85"/></g><g fill="${a}" opacity="0.8"><rect x="74" y="250" width="24" height="16"/><rect x="112" y="250" width="24" height="16"/><rect x="276" y="248" width="26" height="16"/><rect x="314" y="248" width="26" height="16"/><rect x="480" y="252" width="24" height="16"/></g><g fill="rgba(255,255,255,0.4)"><rect x="180" y="250" width="20" height="20"/><rect x="212" y="250" width="20" height="20"/><rect x="386" y="252" width="20" height="18"/><rect x="418" y="252" width="20" height="18"/></g>${heroTrees(30, 246, a)} ${heroTrees(566, 250, a)}<circle cx="300" cy="196" r="10" fill="#eaf4fb" opacity="0.85"/><circle cx="300" cy="196" r="10" fill="none" stroke="#08304f" stroke-width="2"/>`,
-      a
-    ),
-  hills: (a) =>
-    heroFrame(
-      `${heroSun(470, 110, 30, a)}<path d="M0 240 Q150 188 320 232 T600 214 V400 H0 Z" fill="#125a8f"/><path d="M0 292 Q180 244 380 292 T600 282 V400 H0 Z" fill="#0d4670"/><path d="M0 336 Q200 298 420 338 T600 330 V400 H0 Z" fill="#0a3557"/><path d="M0 240 Q150 188 320 232 T600 214" fill="none" stroke="${a}" stroke-width="2.5" opacity="0.5"/><path d="M300 400 C312 344 250 322 306 286 C356 256 306 236 336 214" stroke="${a}" stroke-width="8" fill="none" opacity="0.55" stroke-linecap="round"/><path d="M300 400 C312 344 250 322 306 286 C356 256 306 236 336 214" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-dasharray="6 10" fill="none"/>${heroTrees(96, 232, a)} ${heroTrees(150, 252, a)} ${heroTrees(496, 248, a)} ${heroTrees(540, 232, a)}`,
-      a
-    ),
-  lake: (a) =>
-    heroFrame(
-      `${heroSun(150, 104, 30, a)}<path d="M0 200 Q150 164 340 196 T600 190 V236 H0 Z" fill="#0d4670"/><ellipse cx="300" cy="250" rx="330" ry="60" fill="#0f5288"/><ellipse cx="300" cy="246" rx="250" ry="44" fill="#1666a3" opacity="0.7"/><g stroke="${a}" stroke-width="3" opacity="0.5" fill="none"><path d="M150 250 q40 -10 80 0"/><path d="M340 262 q40 -10 80 0"/></g><g fill="#08304f"><rect x="250" y="228" width="14" height="58"/><rect x="222" y="278" width="150" height="9"/></g><path d="M356 262 q30 16 60 0 q-30 10 -60 0z" fill="${a}" opacity="0.9"/>${heroTrees(70, 214, a)} ${heroTrees(520, 212, a)}`,
-      a
-    ),
-  campus: (a) =>
-    heroFrame(
-      `${heroSun(150, 96, 26, a)}<rect x="90" y="150" width="420" height="150" fill="#0b3f6b"/><rect x="90" y="150" width="420" height="16" fill="${a}" opacity="0.85"/><g fill="#0a355c"><rect x="120" y="178" width="40" height="122"/><rect x="180" y="178" width="40" height="122"/><rect x="240" y="178" width="40" height="122"/><rect x="300" y="178" width="40" height="122"/><rect x="360" y="178" width="40" height="122"/><rect x="420" y="178" width="40" height="122"/></g><g fill="${a}" opacity="0.6"><rect x="128" y="188" width="24" height="60"/><rect x="248" y="188" width="24" height="60"/><rect x="368" y="188" width="24" height="60"/></g><path d="M270 300 v-34 a30 30 0 0 1 60 0 v34" fill="none" stroke="#eaf4fb" stroke-width="4" opacity="0.7"/>${heroTrees(50, 214, a)} ${heroTrees(548, 216, a)}`,
-      a
-    ),
-  marquee: (a) =>
-    heroFrame(
-      `${heroSun(150, 96, 26, a)}<rect x="0" y="300" width="600" height="100" fill="#0a355c"/><rect x="180" y="150" width="240" height="150" fill="#0b3f6b"/><rect x="196" y="176" width="208" height="60" rx="6" fill="#08304f" stroke="${a}" stroke-width="3"/><rect x="220" y="196" width="160" height="8" rx="4" fill="${a}" opacity="0.65"/><rect x="240" y="212" width="120" height="7" rx="3" fill="#eaf4fb" opacity="0.5"/><g fill="${a}">${[...Array(11)].map((_, i) => `<circle cx="${200 + i * 20}" cy="168" r="3.5"/>`).join("")}</g><g fill="${a}">${[...Array(11)]
-        .map((_, i) => `<circle cx="${200 + i * 20}" cy="244" r="3.5"/>`)
-        .join("")}</g><g fill="#eaf4fb" opacity="0.9"><circle cx="470" cy="140" r="8"/><rect x="477" y="108" width="3" height="34"/><circle cx="120" cy="120" r="7"/><rect x="126" y="92" width="3" height="30"/></g>`,
-      a
-    ),
-  avenue: (a) =>
-    heroFrame(
-      `${heroSun(150, 100, 26, a)}<rect x="0" y="300" width="600" height="100" fill="#0a355c"/><g><rect x="70" y="200" width="140" height="100" fill="#0b3f6b"/><rect x="230" y="200" width="140" height="100" fill="#0c4a7d"/><rect x="390" y="200" width="140" height="100" fill="#0b3f6b"/></g>${["70", "230", "390"]
-        .map(
-          (x, idx) =>
-            `<g>${[...Array(7)]
-              .map((_, i) => `<rect x="${+x + i * 20}" y="236" width="10" height="18" fill="${idx % 2 ? "#eaf4fb" : a}" opacity="0.9"/>`)
-              .join("")}<rect x="${+x + 140 - 3}" y="236" width="6" height="18" fill="#08304f"/></g>`
-        )
-        .join("")}<g fill="rgba(255,255,255,0.4)"><rect x="96" y="262" width="30" height="30"/><rect x="150" y="262" width="30" height="30"/><rect x="256" y="262" width="30" height="30"/><rect x="416" y="262" width="30" height="30"/></g><line x1="560" y1="300" x2="560" y2="200" stroke="${a}" stroke-width="4" opacity="0.8"/><circle cx="560" cy="196" r="8" fill="${a}" opacity="0.9"/>`,
-      a
-    ),
-  region: (a) =>
-    heroFrame(
-      `${heroSun(150, 100, 28, a)}<path d="M0 270 Q150 220 300 260 T600 250 V400 H0 Z" fill="#0c4a7d"/><g fill="#0b3f6b"><rect x="120" y="180" width="40" height="120"/><rect x="168" y="150" width="50" height="150"/><rect x="226" y="196" width="38" height="104"/></g><g fill="#0a355c"><rect x="360" y="210" width="44" height="90"/><rect x="412" y="186" width="52" height="114"/></g><rect x="0" y="300" width="600" height="100" fill="#0a3357"/><path d="M40 340 Q200 300 420 342 T600 335" stroke="${a}" stroke-width="4" fill="none" opacity="0.5"/>${heroTrees(500, 250, a)} ${heroTrees(70, 248, a)}`,
-      a
-    )
-};
-
-const heroMotifLabels: Record<HeroMotif, string> = {
-  harbor: "Sound Shore harbor",
-  skyline: "Downtown skyline",
-  skylineWater: "Downtown waterfront",
-  village: "Village center",
-  hills: "Northern hills",
-  lake: "Lake and shoreline",
-  campus: "Campus and arts",
-  marquee: "Theatre district",
-  avenue: "Shopping avenue",
-  region: "Regional overview"
-};
-
-function HeroSceneArt({ motif, accent }: { motif: HeroMotif; accent: string }) {
-  return <div className="absolute inset-0" aria-hidden="true" dangerouslySetInnerHTML={{ __html: heroScenes[motif](accent) }} />;
-}
-
-function LocalHeroScene({ accent, motif, badge, stats, title }: { accent: string; motif: HeroMotif; badge: string; stats: string[]; title: string }) {
-  return (
-    <div
-      aria-label={`${title} — ${heroMotifLabels[motif]} illustration`}
-      className="relative min-h-[390px] overflow-hidden rounded-[28px] border border-white/25 shadow-2xl max-md:min-h-[300px]"
-      role="img"
-    >
-      <HeroSceneArt accent={accent} motif={motif} />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#00223d]/90 via-[#00223d]/25 to-transparent" />
-      <div className="absolute inset-x-6 bottom-6 flex flex-col gap-3">
-        <p className="inline-flex w-fit rounded-full bg-[#ffd45a] px-4 py-2 text-[13px] font-black uppercase tracking-[0.16em] text-[#003f6f]">
-          {badge}
-        </p>
-        <div className="grid gap-2 sm:grid-cols-3">
-          {stats.slice(0, 3).map((stat) => (
-            <div className="rounded-[14px] border border-white/25 bg-black/30 p-3 text-[14px] font-bold leading-5 text-white backdrop-blur-sm" key={stat}>
-              {stat}
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="absolute bottom-0 left-0 h-2 w-full" style={{ backgroundColor: accent }} />
-    </div>
-  );
-}
+// The SVG "scene" system that used to fill the hero's right-hand panel --
+// ten hand-drawn motifs (harbor, village, skyline, region...), their
+// per-town and per-county lookup tables, and their aria labels -- came out
+// with the panel itself. It drew a green circle for Westchester County and
+// cartoon houses for Harrison, told a reader nothing, and sometimes failed
+// to render at all. Deleted rather than left dormant: a hero slot that
+// silently falls back to decoration is how it got filled with decoration.
 
 type LocalHeroProps = {
   badge: string;
@@ -1590,8 +1460,6 @@ type LocalHeroProps = {
   title: string;
   subtitle: string;
   accent: string;
-  stats: string[];
-  motif?: HeroMotif;
   image?: string;
   imageAlt?: string;
   primaryHref?: string;
@@ -1600,7 +1468,7 @@ type LocalHeroProps = {
   secondaryLabel?: string;
 };
 
-function LocalHeroPhoto({ accent, image, imageAlt, badge, stats }: Pick<LocalHeroProps, "accent" | "image" | "imageAlt" | "badge" | "stats">) {
+function LocalHeroPhoto({ accent, image, imageAlt, badge }: Pick<LocalHeroProps, "accent" | "image" | "imageAlt" | "badge">) {
   return (
     <div className="relative min-h-[390px] overflow-hidden rounded-[28px] border border-white/25 shadow-2xl max-md:min-h-[300px]">
       <Image
@@ -1617,62 +1485,22 @@ function LocalHeroPhoto({ accent, image, imageAlt, badge, stats }: Pick<LocalHer
         <p className="inline-flex w-fit rounded-full bg-[#ffd45a] px-4 py-2 text-[13px] font-black uppercase tracking-[0.16em] text-[#003f6f]">
           {badge}
         </p>
-        <div className="grid gap-2 sm:grid-cols-3">
-          {stats.slice(0, 3).map((stat) => (
-            <div className="rounded-[14px] border border-white/25 bg-black/30 p-3 text-[14px] font-bold leading-5 text-white backdrop-blur-sm" key={stat}>
-              {stat}
-            </div>
-          ))}
-        </div>
       </div>
       <div className="absolute bottom-0 left-0 h-2 w-full" style={{ backgroundColor: accent }} />
     </div>
   );
 }
 
-function LocalHeroArt({ accent, badge, title, stats }: Pick<LocalHeroProps, "accent" | "badge" | "title" | "stats">) {
-  return (
-    <div
-      aria-label={`${title} local hearing care graphic`}
-      className="relative min-h-[390px] overflow-hidden rounded-[28px] border border-white/25 bg-[#0a4f86] p-6 shadow-2xl max-md:min-h-[330px]"
-      role="img"
-    >
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 22% 20%, rgba(255,255,255,0.28), transparent 28%), radial-gradient(circle at 82% 22%, rgba(255,212,90,0.34), transparent 24%), linear-gradient(135deg, rgba(0,35,64,0.98), rgba(0,90,156,0.86))"
-        }}
-      />
-      <div className="absolute inset-x-8 bottom-10 top-12 rounded-[999px] border border-white/20" />
-      <div className="absolute left-[14%] top-[28%] h-[150px] w-[150px] rounded-full border-[16px] border-white/20" />
-      <div className="absolute right-[10%] top-[18%] h-[118px] w-[118px] rounded-full border-[12px] border-[#ffd45a]/40" />
-      <div className="absolute bottom-[18%] right-[20%] h-[88px] w-[88px] rounded-full border-[10px] border-white/25" />
-      <div className="absolute left-[25%] top-[42%] h-[22px] w-[52%] rounded-full bg-white/18" />
-      <div className="absolute left-[34%] top-[52%] h-[18px] w-[42%] rounded-full bg-white/14" />
-      <div className="absolute left-[42%] top-[61%] h-[14px] w-[30%] rounded-full bg-white/12" />
-
-      <div className="relative flex h-full min-h-[342px] flex-col justify-between rounded-[22px] border border-white/20 bg-white/10 p-6 backdrop-blur-[1px] max-md:min-h-[282px]">
-        <div>
-          <p className="inline-flex rounded-full bg-[#ffd45a] px-4 py-2 text-[13px] font-black uppercase tracking-[0.16em] text-[#003f6f]">
-            {badge}
-          </p>
-          <h2 className="mt-5 max-w-[520px] text-[40px] font-black leading-tight text-white max-md:text-[30px]">{title}</h2>
-        </div>
-        <div className="grid gap-3 sm:grid-cols-3">
-          {stats.slice(0, 3).map((stat) => (
-            <div className="rounded-[18px] border border-white/20 bg-white/16 p-4 text-[15px] font-bold leading-5 text-white" key={stat}>
-              {stat}
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="absolute bottom-0 left-0 h-2 w-full" style={{ backgroundColor: accent }} />
-    </div>
-  );
-}
-
-function LocalHero({ accent, badge, eyebrow, image, imageAlt, motif, primaryHref, primaryLabel, secondaryHref, secondaryLabel, stats, subtitle, title }: LocalHeroProps) {
+// The right-hand panel used to hold, in order of preference: a photograph, an
+// abstract SVG "scene", or a card of concentric circles. The latter two carried
+// a yellow pill and three small chips whose text was scraped from further down
+// the same page -- and the circles version reprinted the page's own H1 as an H2
+// underneath it, which is what /get-answers was doing. None of it told a reader
+// anything they were not about to read anyway.
+//
+// So: a photograph where one exists, and where none does, a single full-width
+// column. A wide headline with nothing beside it beats a box with nothing in it.
+function LocalHero({ accent, badge, eyebrow, image, imageAlt, primaryHref, primaryLabel, secondaryHref, secondaryLabel, subtitle, title }: LocalHeroProps) {
   return (
     <section className="relative isolate overflow-hidden bg-[#003f6f] py-[62px] text-white">
       <div
@@ -1683,7 +1511,7 @@ function LocalHero({ accent, badge, eyebrow, image, imageAlt, motif, primaryHref
         }}
       />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(255,212,90,0.18),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.12),transparent_30%)]" />
-      <div className="mx-auto grid max-w-[1660px] gap-10 px-[64px] lg:grid-cols-[0.92fr_1.08fr] lg:items-center max-md:px-5">
+      <div className={`mx-auto grid max-w-[1660px] gap-10 px-[64px] max-md:px-5 ${image ? "lg:grid-cols-[0.92fr_1.08fr] lg:items-center" : ""}`}>
         <div>
           <p className="text-[15px] font-black uppercase tracking-[0.24em] text-[#ffd45a]">{eyebrow}</p>
           <h1 className="mt-5 max-w-[860px] text-[58px] font-black leading-[0.98] max-md:text-[40px]">{title}</h1>
@@ -1708,43 +1536,14 @@ function LocalHero({ accent, badge, eyebrow, image, imageAlt, motif, primaryHref
           </div>
         </div>
         {image ? (
-          <LocalHeroPhoto accent={accent} badge={badge} image={image} imageAlt={imageAlt} stats={stats} />
-        ) : motif ? (
-          <LocalHeroScene accent={accent} badge={badge} motif={motif} stats={stats} title={title} />
-        ) : (
-          <LocalHeroArt accent={accent} badge={badge} stats={stats} title={title} />
-        )}
+          <LocalHeroPhoto accent={accent} badge={badge} image={image} imageAlt={imageAlt} />
+        ) : null}
       </div>
     </section>
   );
 }
 
-// Scene motif per location, drawn from each place's real character.
-const cityHeroMotifs: Record<string, HeroMotif> = {
-  rye: "harbor",
-  mamaroneck: "harbor",
-  larchmont: "harbor",
-  greenwich: "avenue",
-  "port-chester": "marquee",
-  "new-rochelle": "skylineWater",
-  "white-plains": "skyline",
-  harrison: "village",
-  hartsdale: "village",
-  scarsdale: "village",
-  somers: "hills",
-  "yorktown-heights": "hills",
-  "mount-kisco": "hills",
-  bedford: "hills",
-  katonah: "hills",
-  armonk: "hills",
-  chappaqua: "village",
-  pleasantville: "marquee",
-  purchase: "campus",
-  "rye-brook": "village",
-  mahopac: "lake"
-};
-
-// Per-town accent so towns that share a motif still read as distinct.
+// Per-town accent, still used for the rule under a hero photograph.
 const cityHeroAccents: Record<string, string> = {
   rye: "#7bdcb5",
   mamaroneck: "#9bd3f4",
@@ -1769,12 +1568,6 @@ const cityHeroAccents: Record<string, string> = {
   mahopac: "#9bd3f4"
 };
 
-const countyHeroMotifs: Record<string, HeroMotif> = {
-  "westchester-county-ny": "region",
-  "fairfield-county-ct": "harbor",
-  "putnam-county-ny": "lake"
-};
-
 function countyHeroProps(county: AreaCounty, cities: AreaCity[]): LocalHeroProps {
   const isFairfield = county.slug === "fairfield-county-ct";
   const isPutnam = county.slug === "putnam-county-ny";
@@ -1785,12 +1578,6 @@ function countyHeroProps(county: AreaCounty, cities: AreaCity[]): LocalHeroProps
     title: county.headline,
     subtitle: `${county.summary} ${county.officeContext}`,
     accent: isFairfield ? "#ffd45a" : isPutnam ? "#9bd3f4" : "#7bdcb5",
-    motif: countyHeroMotifs[county.slug] || "region",
-    stats: [
-      isFairfield ? "Greenwich + lower Fairfield County" : isPutnam ? "Mahopac + southern Putnam" : `${cities.length} Westchester communities`,
-      isFairfield ? "Nearby Harrison office access" : isPutnam ? "Nearby Somers office access" : "Multiple Westchester offices",
-      "Hearing tests, hearing aids, tinnitus care"
-    ],
     primaryHref: featuredCity ? cityLinkPath(featuredCity) : "/contact-us",
     primaryLabel: featuredCity ? `Explore ${featuredCity.name}` : "Contact Us",
     secondaryHref: "/hearing-testing",
@@ -1814,12 +1601,6 @@ function cityHeroProps(city: AreaCity, office: ReturnType<typeof officeForAreaPa
     // down the page — the clearest doorway-page tell a human reader registers.
     subtitle: flavor?.intro || city.localContext,
     accent: cityHeroAccents[city.slug] || (city.state === "CT" ? "#ffd45a" : city.nearestOffice === "somers" ? "#9bd3f4" : "#7bdcb5"),
-    motif: cityHeroMotifs[city.slug] || "village",
-    stats: [
-      officeLabel,
-      `Nearby: ${city.nearby.slice(0, 3).join(", ")}`,
-      city.patientNeeds.slice(0, 2).join(" + ")
-    ],
     primaryHref: office?.path || "/contact-us",
     primaryLabel: office ? `View ${office.city} office` : "Contact Us",
     secondaryHref: "/hearing-testing",
@@ -1839,11 +1620,6 @@ function helpHeroProps(service: HelpService): LocalHeroProps {
     accent: helpHeroAccents[Math.max(serviceIndex, 0) % helpHeroAccents.length],
     image: helpServiceImages[service.slug]?.src,
     imageAlt: helpServiceImages[service.slug]?.alt,
-    stats: [
-      service.whoWeHelp[0] || "Patient-centered guidance",
-      service.signs[0] || "Clear next steps",
-      service.relatedServices[0]?.label || "Audiology care"
-    ],
     primaryHref: "/contact-us",
     primaryLabel: "Ask which visit fits",
     secondaryHref: service.relatedServices[0]?.href || "/hearing-testing",
@@ -1943,7 +1719,6 @@ function hearingLossEducationHeroProps(page: SitePage): LocalHeroProps {
     title: page.h1,
     subtitle: details?.intro || page.metaDescription,
     accent: details?.accent || "#9bd3f4",
-    stats: details?.focus || ["Understand symptoms", "Know when to schedule", "Choose the right next step"],
     primaryHref: "/hearing-testing",
     primaryLabel: "Start with hearing testing",
     secondaryHref: "/how-we-can-help/your-hearing",
@@ -2088,7 +1863,6 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
         primaryLabel="Start with hearing testing"
         secondaryHref="/contact-us"
         secondaryLabel="Find the right office"
-        stats={["Local service-area guide", "Two offices: Harrison and Somers", "Hearing tests, hearing aids, tinnitus care"]}
         subtitle={page.body.join(" ")}
         title={page.h1}
       />
@@ -2462,7 +2236,6 @@ function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
         primaryLabel="Ask where to start"
         secondaryHref="/hearing-testing"
         secondaryLabel="Hearing testing"
-        stats={["Symptoms → right visit", "Hearing aids, tinnitus, protection", "Plain-language appointment guidance"]}
         subtitle={page.body.join(" ")}
         title={page.h1}
       />
