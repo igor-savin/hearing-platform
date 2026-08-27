@@ -59,13 +59,18 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
-    // Measured against this deployment: /_next/image answers 200 for q=75 and
-    // 400 for every other quality asked of it, so any <Image quality={n}> where
-    // n is not in this list fails to render at all. Two components set one:
-    // LocalHeroPhoto at 72 (the hero photograph on all twelve /how-we-can-help
-    // pages) and InteractiveEarHero at 78. Declaring them here is the fix that
-    // keeps the authored values; the alternative is deleting the props and
-    // living with 75 everywhere.
+    // The two qualities this codebase actually asks for, plus the default:
+    // LocalHeroPhoto sets 72, InteractiveEarHero sets 78.
+    //
+    // Added on a wrong diagnosis, kept on its own merits. The story, so nobody
+    // repeats it: /_next/image answers 400 for any quality it has not been told
+    // about, which is easy to confirm by requesting an arbitrary one. I took
+    // that to mean the service-page hero photographs were failing, because they
+    // looked absent in every screenshot I could take. They were not absent --
+    // they render correctly for a real visitor, and the fault was in my capture,
+    // not the site. Next collects the qualities used in the source at build
+    // time, so this line was very probably a no-op. It stays because being
+    // explicit is cheap and stops a future refactor silently breaking an image.
     qualities: [72, 75, 78],
     remotePatterns: [
       {
