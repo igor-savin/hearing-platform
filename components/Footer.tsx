@@ -88,11 +88,11 @@ export function Footer() {
           <Link className="focus-ring text-[#005a9c] underline" href="/hearing-aid-referral-program">
             Referral Program
           </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/sitemap.xml">
-            Sitemap
+          <Link className="focus-ring text-[#005a9c] underline" href="/reviews">
+            Patient Reviews
           </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/llms.txt">
-            LLM
+          <Link className="focus-ring text-[#005a9c] underline" href="/patient-forms">
+            Patient Forms
           </Link>
           <Link className="focus-ring text-[#005a9c] underline" href="/privacy">
             Privacy

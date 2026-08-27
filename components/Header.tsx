@@ -7,9 +7,8 @@ import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { helpServicePath, helpServices, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
-import { canonicalPathFor } from "@/lib/site";
 import { productMenuCards } from "@/lib/products";
-import { primaryPhone, primaryPhoneHref } from "@/lib/site";
+import { canonicalPathFor, primaryPhone, primaryPhoneHref } from "@/lib/siteBasics";
 import { providerPath, providerProfiles } from "@/lib/team";
 import { tinnitusPages, tinnitusPath, tinnitusRootPath } from "@/lib/tinnitus";
 
@@ -20,7 +19,6 @@ const navGroups = [
       ["MEET THE TEAM", "/meet-the-team"],
       ["WHY CHOOSE US", "/why-choose-us"],
       ["DR. CLIFF APPROVED PROVIDER", "/dr-cliff-approved-provider"],
-      ["CALIFORNIA HEARING CENTER", "/california-hearing-center"],
       ["CAREERS", "/careers"],
       ["AREAS WE SERVE", "/areas-we-serve"],
       ["Blog", "/blog"]
@@ -190,7 +188,7 @@ export function Header() {
               X
             </SocialCircle>
             <SocialCircle href="https://www.yelp.com/biz/audiology-associates-of-westchester-white-plains-2" label="Yelp">
-              *
+              Y
             </SocialCircle>
           </div>
           <p className="text-[16px] leading-tight text-black">Call Us Today</p>

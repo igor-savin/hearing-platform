@@ -420,9 +420,20 @@ function expandBodyLine(line: string) {
     .replace(/(You may request to:)\s+Receive/g, "$1|Receive")
     .replace(/Custom Ear Molds and PlugsWe provide/g, "Custom Ear Molds and Plugs|We provide")
     .replace(/Cell Phone AccessoriesWe offer/g, "Cell Phone Accessories|We offer")
-    .replace(/Audiometric TestAn audiometric test/g, "Audiometric Test|An audiometric test")
-    .replace(/TympanometryTympanometry tests/g, "Tympanometry|Tympanometry tests")
-    .replace(/OAEsAcoustically evoked/g, "OAEs|Acoustically evoked")
+    .replace(/Audiometric TestAn audiometric test/g, "|Audiometric Test|An audiometric test")
+    .replace(/\s*TympanometryTympanometry tests/g, "|Tympanometry|Tympanometry tests")
+    .replace(/\s*OAEsAcoustically evoked/g, "|OAEs|Acoustically evoked")
+    // /types-of-hearing-aids shipped six device headings with nothing under them,
+    // because the crawl stored the headings as bare strings and welded all six
+    // descriptions into one twelve-line paragraph above them. The copy is right
+    // and in the right order -- it just needs breaking at each label, the same
+    // way the hearing-test names are handled above. The now-duplicate bare
+    // headings further down are removed by the existing dedupe pass.
+    .replace(/\s*Behind the Ear \(BTE\) Hearing Aids Behind the ear/g, "|Behind the Ear (BTE) Hearing Aids|Behind the ear")
+    .replace(/\s*In the Canal \(IC\) Hearing Aids In the canal/g, "|In the Canal (IC) Hearing Aids|In the canal")
+    .replace(/\s*In the Ear \(ITE\) Hearing Aids In the ear/g, "|In the Ear (ITE) Hearing Aids|In the ear")
+    .replace(/\s*Extended Wear Hearing Aids If you need/g, "|Extended Wear Hearing Aids|If you need")
+    .replace(/\s*Receiver in the Ear \(RIC\) Hearing Aids Receiver in the ear/g, "|Receiver in the Ear (RIC) Hearing Aids|Receiver in the ear")
     .replace(/Maskers – A tinnitus masker/g, "|Maskers – A tinnitus masker")
     .replace(/Allergy Treatment – Allergy symptoms/g, "|Allergy Treatment – Allergy symptoms")
     .replace(/Avoid heat, moisture, and hair products\.Follow/g, "Avoid heat, moisture, and hair products.|Follow")
@@ -501,7 +512,16 @@ function correctOfficeClaims(value: string) {
     .replace(/\blocations?\s+in\s+White Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers(?:,?\s*NY)?/gi, "offices in Harrison and Somers, NY")
     .replace(/\boffices?\s+in\s+White Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers(?:,?\s*NY)?/gi, "offices in Harrison and Somers, NY")
     .replace(/\boffices?\s+in\s+Harrison,\s*Somers,\s*White Plains,?\s*(?:and|&)\s*Scarsdale\b/gi, "offices in Harrison and Somers")
-    .replace(/\bWhite Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers\b/gi, "Harrison and Somers");
+    .replace(/\bWhite Plains,\s*Harrison,\s*Scarsdale\s*(?:&|and|or)\s*Somers\b/gi, "Harrison and Somers")
+    // The live sentence on /meet-the-team read "locations in White Plains,
+    // Harrison, Scarsdale, and our newest office in Somers, NY, which opened in
+    // 2021". Every rule above requires Scarsdale to be followed immediately by
+    // "and Somers", so eight intervening words let a four-office claim through
+    // on a top-level trust page. This one tolerates whatever sits between.
+    .replace(
+      /\blocations?\s+in\s+White Plains,\s*Harrison,\s*Scarsdale,?\s*(?:&|and|or)?[^.]{0,80}?Somers,?\s*NY(?:,\s*which opened in \d{4})?/gi,
+      "offices in Harrison and Somers, NY"
+    );
 }
 
 function cleanBodyText(page: CrawlPage, path: string) {
@@ -534,6 +554,7 @@ function cleanBodyText(page: CrawlPage, path: string) {
         !/newest office in Somers, NY is now open/i.test(line)
     )
     .filter((line) => line !== primaryPhone)
+    .filter((line) => !/^Phone:\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}\.?$/.test(line))
     .filter((line) => !/^AUDIOLOGY ASSOCIATES OF WESTCHESTER$/i.test(line))
     .filter((line) => !/^WEBSITE DESIGN BY/i.test(line))
     .filter((line) => line !== "Privacy Policy")

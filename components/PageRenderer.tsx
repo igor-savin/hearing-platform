@@ -750,6 +750,29 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
   }
 };
 
+// Two offices, two numbers. The homepage used to carry a navy button labelled
+// "Call the nearest location" whose href was /contact-us, so a patient who tapped
+// a button that said "call" got a web page instead of the dialler. There is no
+// single "nearest" office to link to, so both are offered by name.
+function OfficeCallButtons({ className = "" }: { className?: string }) {
+  const offices = locations.filter((location) => location.type === "office");
+  return (
+    <div className={`flex flex-wrap gap-3 ${className}`}>
+      {offices.map((office) => (
+        <a
+          className="focus-ring inline-flex min-h-[52px] items-center gap-2 rounded-md bg-[#005a9c] px-6 py-4 text-[18px] font-black text-white transition hover:bg-[#004a82]"
+          data-track="phone-home-office"
+          href={office.phoneHref}
+          key={office.path}
+        >
+          <Phone aria-hidden="true" size={20} />
+          Call {office.city} {office.phone}
+        </a>
+      ))}
+    </div>
+  );
+}
+
 function HomePage() {
   return (
     // A <div>, not <main>: app/layout.tsx already wraps every page in
@@ -797,9 +820,7 @@ function HomePage() {
               </Link>{" "}
               &amp; Beyond
             </p>
-            <Link className="focus-ring mt-7 inline-flex rounded-md bg-[#005a9c] px-6 py-4 font-black text-white transition hover:bg-[#004a82]" href="/contact-us">
-              Call the nearest location
-            </Link>
+            <OfficeCallButtons className="mt-7" />
           </div>
           <div className="space-y-5 text-lg leading-8 text-[var(--foreground)]">
             <p>
@@ -859,9 +880,7 @@ function HomePage() {
               The knowledgeable and experienced hearing doctors here at Audiology Associates of Westchester can help you
               enhance all these areas of your life and more - contact us today!
             </p>
-            <Link className="focus-ring mt-7 inline-flex rounded-md bg-[#005a9c] px-6 py-4 font-black text-white transition hover:bg-[#004a82]" href="/contact-us">
-              Call the nearest location
-            </Link>
+            <OfficeCallButtons className="mt-7" />
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {homeHearingBenefits.map(([title, text]) => (
@@ -910,6 +929,7 @@ function HomePage() {
             <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f]">
               Live life to the fullest. Call now.
             </h2>
+            <OfficeCallButtons className="mt-7" />
           </div>
           <div className="space-y-5 text-lg leading-8 text-[var(--foreground)]">
             <p>
@@ -1646,7 +1666,7 @@ function AreaFaqSection({ page, title }: { page: SitePage; title: string }) {
   return (
     <section className="bg-[#dbe9f3] py-[52px]">
       <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{title}</h2>
+        <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">{title}</h2>
         <LiveRule />
         <div className="mt-9 grid gap-7 lg:grid-cols-2">
           {page.faqs.map((faq) => (
@@ -1678,7 +1698,7 @@ function AreaCountyLocalFlavorSection({ county, flavor }: { county: AreaCounty; 
   return (
     <section className="bg-[#dbe9f3] py-[52px]">
       <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{flavor.heading}</h2>
+        <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">{flavor.heading}</h2>
         <LiveRule />
         <p className="mt-[38px] max-w-[1440px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
           {flavor.intro}
@@ -1711,7 +1731,7 @@ function AreaCityLocalFlavorSection({ city, flavor }: { city: AreaCity; flavor: 
   return (
     <section className="bg-[#dbe9f3] py-[52px]">
       <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{flavor.heading}</h2>
+        <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">{flavor.heading}</h2>
         <LiveRule />
         <p className="mt-[38px] max-w-[1440px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
           {flavor.intro}
@@ -1760,7 +1780,7 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
       />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Explore by County</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Explore by County</h2>
           <LiveRule />
           <div className="mt-9 grid gap-7 lg:grid-cols-3">
             {areaCounties.map((county) => (
@@ -1777,7 +1797,7 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Featured Westchester Cities and Communities</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Featured Westchester Cities and Communities</h2>
           <LiveRule />
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {featured.map((city) => (
@@ -1811,7 +1831,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
         <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.78fr_1.22fr] max-md:px-5">
           <div>
             <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">County-level planning</p>
-            <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            <h2 className="mt-3 text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
               Choose care based on real local routines
             </h2>
             <LiveRule />
@@ -1836,7 +1856,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Cities and Communities We Serve</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Cities and Communities We Serve</h2>
           <LiveRule />
           <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {cities.map((city) => (
@@ -1849,7 +1869,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Audiology Services in {county.name}</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Audiology Services in {county.name}</h2>
           <LiveRule />
           <AreaServicesList />
         </div>
@@ -1897,7 +1917,7 @@ function AreaExpertiseSection({ locationLabel, office }: { locationLabel: string
     <section className="bg-[#f7fbfd] py-[52px]">
       <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
         <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Expertise &amp; trust</p>
-        <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+        <h2 className="mt-3 text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
           Care from Doctors of Audiology, not a sales counter
         </h2>
         <LiveRule />
@@ -1957,7 +1977,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
           <div className="mx-auto grid max-w-[1660px] gap-[48px] px-[64px] lg:grid-cols-[minmax(0,1fr)_420px] max-md:px-5">
             <div>
               <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Practical appointment planning</p>
-              <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+              <h2 className="mt-3 text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
                 What {city.name} patients should know before scheduling
               </h2>
               <LiveRule />
@@ -1999,7 +2019,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
       <AreaExpertiseSection locationLabel={`${city.name}, ${city.state}`} office={office} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Services for {city.name} Patients</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Services for {city.name} Patients</h2>
           <LiveRule />
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {city.patientNeeds.map((need) => (
@@ -2014,7 +2034,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Nearby Communities</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Nearby Communities</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">
             {nearbyCommunities.map((name, index) => {
@@ -2077,7 +2097,7 @@ function HelpServiceMatrix() {
   return (
     <section className="bg-white py-[52px]">
       <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+        <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
           Match the concern to the right hearing-care pathway
         </h2>
         <LiveRule />
@@ -2134,7 +2154,7 @@ function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
       />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Explore care pathways</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Explore care pathways</h2>
           <LiveRule />
           <div className="mt-[48px] grid gap-7 md:grid-cols-2 xl:grid-cols-3">
             {helpServices.map((service) => (
@@ -2146,7 +2166,7 @@ function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
       <HelpServiceMatrix />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Choose the Right Next Step</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Choose the Right Next Step</h2>
           <LiveRule />
           <div className="mt-9 grid gap-7 lg:grid-cols-3">
             {[
@@ -2280,7 +2300,7 @@ function HelpServiceSeoSection({ service }: { service: HelpService }) {
       <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.72fr_1.28fr] max-md:px-5">
         <div>
           <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Before you schedule</p>
-          <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="mt-3 text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             Make the appointment more useful
           </h2>
           <LiveRule />
@@ -2379,7 +2399,7 @@ function TinnitusHubLinks() {
   return (
     <section className="bg-[#f7f7f5] py-[52px]">
       <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Tinnitus Knowledge Hub</h2>
+        <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Tinnitus Knowledge Hub</h2>
         <LiveRule />
         <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {tinnitusPages.map((topic) => (
@@ -2406,7 +2426,7 @@ function TinnitusTopicPage({ page, topic }: { page: SitePage; topic: TinnitusPag
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <p className="text-[22px] font-black uppercase tracking-[0.3em] text-[#a75e22] max-md:text-[16px]">Tinnitus Knowledge Hub</p>
-          <h1 className="mt-5 max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{topic.title}</h1>
+          <h1 className="mt-5 max-w-[1440px] text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{topic.title}</h1>
           <p className="mt-5 max-w-[1240px] text-[28px] font-black leading-tight text-[#333] max-md:text-[22px]">
             {topic.description}
           </p>
@@ -2454,7 +2474,7 @@ function TinnitusTopicPage({ page, topic }: { page: SitePage; topic: TinnitusPag
       <TinnitusVisitAndClinician page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Related Tinnitus Topics</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Related Tinnitus Topics</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">
             <Link className="focus-ring legacy-live-button" href={tinnitusRootPath}>
@@ -2488,7 +2508,7 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
       <TinnitusRedFlags page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             What this page helps you decide
           </h2>
           <LiveRule />
@@ -2526,7 +2546,7 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">What to Expect During the Appointment</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">What to Expect During the Appointment</h2>
           <LiveRule />
           <ol className="mt-9 grid gap-7 text-black md:grid-cols-2">
             {service.appointmentSteps.map((step, index) => (
@@ -2540,7 +2560,7 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
             <h2 className="text-[34px] font-black leading-tight max-md:text-[28px]">{service.whyItMattersTitle ?? "Why Professional Audiology Care Matters"}</h2>
             <p className="mt-5 text-[22px] leading-[1.35] max-md:text-[18px]">{service.whyItMatters}</p>
           </div>
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Related Care</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">Related Care</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">
             {service.relatedServices.map((link) => (
@@ -2572,7 +2592,7 @@ function HearingLossEducationPage({ page }: { page: SitePage }) {
       <section className="bg-white py-[52px]">
         <div className="mx-auto grid max-w-[1660px] gap-[44px] px-[64px] lg:grid-cols-[1.05fr_0.95fr] max-md:px-5">
           <div>
-            <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
               Understand the concern before choosing a solution
             </h2>
             <LiveRule />
@@ -2605,7 +2625,7 @@ function HearingLossEducationPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-[#f7f7f5] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             Related hearing-loss resources
           </h2>
           <LiveRule />
@@ -2657,7 +2677,7 @@ function ProductVideos({ product }: { product: NonNullable<ReturnType<typeof pro
 
   return (
     <>
-      <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">
+      <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">
         {product.shortTitle} Video
       </h2>
       <LiveRule />
@@ -2686,16 +2706,17 @@ function ProductsIndexPage({ page }: { page: SitePage }) {
       <ProductBreadcrumbs page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
-          <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">{page.h1}</h1>
+          <h1 className="text-[44px] font-black leading-tight text-[#003f6f] max-md:text-[34px]">{page.h1}</h1>
           <LiveRule />
           <div className="mt-10 grid gap-10 md:grid-cols-2">
             <Link className="focus-ring block bg-[#f5f5f5] p-8 text-black hover:bg-[#eeeeee]" href={hearingAidBrandsPath}>
-              <div className="relative h-[230px] overflow-hidden bg-[#dbe9f3]">
+              <div className="relative mx-auto h-[230px] w-full max-w-[300px] overflow-hidden bg-[#dbe9f3]">
                 <Image
                   alt="Hearing aid lineup"
-                  className="object-contain p-8"
+                  className="object-contain p-6"
                   fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                  sizes="300px"
                   src="/assets/brands/Oticon-Intent-scale.webp"
                 />
               </div>
@@ -2706,12 +2727,13 @@ function ProductsIndexPage({ page }: { page: SitePage }) {
               <span className="legacy-live-button mt-6 inline-flex">View Hearing Aids</span>
             </Link>
             <Link className="focus-ring block bg-[#f5f5f5] p-8 text-black hover:bg-[#eeeeee]" href="/products/eargear">
-              <div className="relative h-[230px] overflow-hidden bg-[#dbe9f3]">
+              <div className="relative mx-auto h-[230px] w-full max-w-[300px] overflow-hidden bg-[#dbe9f3]">
                 <Image
                   alt="Custom earplugs and earmolds"
-                  className="object-contain p-8"
+                  className="object-contain p-6"
                   fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                  sizes="300px"
                   src="/assets/brands/earmolds-earplugs.webp"
                 />
               </div>
@@ -2735,7 +2757,7 @@ function ProductBrandIndexPage({ page }: { page: SitePage }) {
       <ProductBreadcrumbs page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
-          <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">Your Partner for Better Hearing</h1>
+          <h1 className="text-[44px] font-black leading-tight text-[#003f6f] max-md:text-[34px]">Your Partner for Better Hearing</h1>
           <LiveRule />
           <div className="mt-9 max-w-[1420px] space-y-[26px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
             <p>
@@ -2747,7 +2769,7 @@ function ProductBrandIndexPage({ page }: { page: SitePage }) {
               connectivity, rechargeability, and follow-up care affect real-world results.
             </p>
           </div>
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Our Featured Hearing Aid Brands</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">Our Featured Hearing Aid Brands</h2>
           <LiveRule />
           <div className="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             {productBrands.map((brand) => (
@@ -2783,7 +2805,7 @@ function ProductBrandPage({ page }: { page: SitePage }) {
       <ProductBreadcrumbs page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
-          <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">{brand.name} Hearing Aids</h1>
+          <h1 className="text-[44px] font-black leading-tight text-[#003f6f] max-md:text-[34px]">{brand.name} Hearing Aids</h1>
           <LiveRule />
           <div className="mt-9 max-w-[1420px] space-y-[26px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
             <p>{brand.legacy}</p>
@@ -2792,7 +2814,7 @@ function ProductBrandPage({ page }: { page: SitePage }) {
               {brand.name} technology is the right match for your hearing profile, lifestyle, and communication needs.
             </p>
           </div>
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Groundbreaking {brand.name} Technology</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">Groundbreaking {brand.name} Technology</h2>
           <LiveRule />
           <div className="mt-8 grid gap-7 md:grid-cols-2">
             {brand.technology.map((item) => (
@@ -2802,14 +2824,14 @@ function ProductBrandPage({ page }: { page: SitePage }) {
               </article>
             ))}
           </div>
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">{brand.name} Product Families</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">{brand.name} Product Families</h2>
           <LiveRule />
           <div className="mt-10">
             <ProductCardGrid products={products} />
           </div>
           {brandGuides.length > 0 && (
             <>
-              <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Compare and Cost</h2>
+              <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">Compare and Cost</h2>
               <LiveRule />
               <div className="mt-8 flex flex-wrap gap-4">
                 {brandGuides.map((guide) => (
@@ -2820,7 +2842,7 @@ function ProductBrandPage({ page }: { page: SitePage }) {
               </div>
             </>
           )}
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Explore Other Premium Hearing Aid Brands</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">Explore Other Premium Hearing Aid Brands</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">
             {otherBrands.map((item) => (
@@ -2849,7 +2871,7 @@ function HearingAidProductPage({ page }: { page: SitePage }) {
         <div className="mx-auto max-w-[1780px] px-8 max-md:px-5">
           <div className="grid gap-10 lg:grid-cols-[1fr_420px] lg:items-start">
             <div>
-              <h1 className="text-[44px] font-normal leading-tight text-black max-md:text-[34px]">{product.title}</h1>
+              <h1 className="text-[44px] font-black leading-tight text-[#003f6f] max-md:text-[34px]">{product.title}</h1>
               <p className="mt-4 text-[30px] font-black leading-tight text-[#333] max-md:text-[23px]">{product.subtitle}</p>
               <LiveRule />
               <div className="mt-9 space-y-[26px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">
@@ -2868,7 +2890,7 @@ function HearingAidProductPage({ page }: { page: SitePage }) {
               />
             </div>
           </div>
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">At a Glance</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">At a Glance</h2>
           <LiveRule />
           <ul className="mt-8 grid gap-4 text-[22px] leading-[1.35] text-black md:grid-cols-2">
             {product.highlights.map((highlight) => (
@@ -2879,7 +2901,7 @@ function HearingAidProductPage({ page }: { page: SitePage }) {
             ))}
           </ul>
           <ProductVideos product={product} />
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">The Technology Inside {product.shortTitle}</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">The Technology Inside {product.shortTitle}</h2>
           <LiveRule />
           <div className="mt-8 grid gap-7 md:grid-cols-2">
             {product.technology.map((item) => (
@@ -2889,7 +2911,7 @@ function HearingAidProductPage({ page }: { page: SitePage }) {
               </article>
             ))}
           </div>
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Frequently Asked Questions</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">Frequently Asked Questions</h2>
           <LiveRule />
           <div className="mt-8 space-y-7">
             {product.faqs.map((faq) => (
@@ -2899,7 +2921,7 @@ function HearingAidProductPage({ page }: { page: SitePage }) {
               </article>
             ))}
           </div>
-          <h2 className="mt-[58px] text-[40px] font-normal leading-tight text-black max-md:text-[30px]">Explore Other Premium Hearing Aid Brands</h2>
+          <h2 className="mt-[58px] text-[40px] font-black leading-tight text-[#003f6f] max-md:text-[30px]">Explore Other Premium Hearing Aid Brands</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">
             {otherBrands.map((item) => (
@@ -3069,7 +3091,7 @@ function LocationPlanningSection({ page }: { page: SitePage }) {
       <div className="mx-auto grid max-w-[1660px] gap-[40px] px-[64px] lg:grid-cols-[0.88fr_1.12fr] max-md:px-5">
         <div>
           <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Plan your visit</p>
-          <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="mt-3 text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             {location.type === "office" ? `Make the ${location.city} office easier to choose` : `Plan hearing care near ${location.city}`}
           </h2>
           <LiveRule />
@@ -3108,7 +3130,7 @@ function ProviderTrustSection({ provider }: { provider: ProviderProfile }) {
     <section className="bg-white py-[52px]">
       <div className="mx-auto grid max-w-[1660px] gap-8 px-[64px] lg:grid-cols-[0.8fr_1.2fr] max-md:px-5">
         <div>
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             What patients can ask {provider.name.split(",")[0]}
           </h2>
           <LiveRule />
@@ -3156,7 +3178,7 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
         const isHeading = (line.length < 140 && !/[.!]$/.test(line) && index > 0) || isLiveSubheading;
         if (isHeading) {
           return (
-            <h2 className="pt-[22px] text-[40px] font-normal leading-tight text-black" key={`${line}-${index}`}>
+            <h2 className="pt-[22px] text-[40px] font-black leading-tight text-[#003f6f]" key={`${line}-${index}`}>
               {line}
               <LiveRule />
             </h2>
@@ -3164,7 +3186,7 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
         }
         if (isQuestion) {
           return (
-            <h2 className="pt-[22px] text-[36px] font-normal leading-tight text-black" key={`${line}-${index}`}>
+            <h2 className="pt-[22px] text-[36px] font-black leading-tight text-[#003f6f]" key={`${line}-${index}`}>
               {line}
               <LiveRule />
             </h2>
@@ -3176,7 +3198,15 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
   );
 }
 
-function GoogleMapEmbed({ query, title }: { query: string; title: string }) {
+function GoogleMapEmbed({
+  query,
+  title,
+  className = "h-[320px] w-full border border-[#555]"
+}: {
+  query: string;
+  title: string;
+  className?: string;
+}) {
   // z=17 frames a single building; without it a bare coordinate pair zooms out
   // far enough that the pin is not obviously on the office.
   const isLatLng = /^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/.test(query);
@@ -3184,7 +3214,7 @@ function GoogleMapEmbed({ query, title }: { query: string; title: string }) {
 
   return (
     <iframe
-      className="h-[320px] w-full border border-[#555]"
+      className={className}
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
       src={src}
@@ -3232,7 +3262,7 @@ function LegacyLocationSectionView({ section }: { section: LegacyLocationSection
       style={{ backgroundColor: section.background === "blue" ? liveSoftBlue : "#ffffff" }}
     >
       <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-        <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{section.title}</h2>
+        <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">{section.title}</h2>
         <LiveRule />
 
         <div className={hasMap || hasDetails ? "mt-[48px] grid gap-[64px] lg:grid-cols-[0.9fr_1fr]" : "mt-[48px]"}>
@@ -3307,7 +3337,7 @@ function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
         <div className="grid gap-[44px] lg:grid-cols-[0.82fr_1.18fr]">
           <div>
             <p className="text-[15px] font-black uppercase tracking-[0.2em] text-[#a75e22]">Local hearing care planning</p>
-            <h2 className="mt-3 text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            <h2 className="mt-3 text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
               {flavor?.heading || `Plan hearing care near ${city.name}`}
             </h2>
             <LiveRule />
@@ -3400,8 +3430,8 @@ function LiveLocationPage({ page }: { page: SitePage }) {
       ) : (
         <section className="bg-white py-[52px]">
           <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-            {content.intro ? <h2 className="mb-[18px] text-[24px] font-normal leading-tight text-black">{content.intro}</h2> : null}
-            <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{content.heading}</h1>
+            {content.intro ? <h2 className="mb-[18px] text-[24px] font-black leading-tight text-[#003f6f]">{content.intro}</h2> : null}
+            <h1 className="text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{content.heading}</h1>
             <LiveRule />
             {content.paragraphs.length ? <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} /> : null}
           </div>
@@ -3410,7 +3440,7 @@ function LiveLocationPage({ page }: { page: SitePage }) {
       {legacyHero && content.paragraphs.length ? (
         <section className="bg-white py-[52px]">
           <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-            <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+            <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
               Local audiology care for {legacyCity?.name || "this community"}
             </h2>
             <LiveRule />
@@ -3573,7 +3603,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                 alt={image.alt || page.h1}
                 className={`w-full border border-[#d9d9d9] bg-white shadow-sm ${imageFitClass(image.src)}`}
                 height={675}
-                priority={false}
+                priority
                 unoptimized={image.src.endsWith(".svg")}
                 src={image.src}
                 width={1200}
@@ -3700,7 +3730,7 @@ function CoreServiceDetail({ page }: { page: SitePage }) {
     <>
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">{detail.title}</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">{detail.title}</h2>
           <LiveRule />
           <p className="mt-[38px] max-w-[1320px] text-[24px] leading-[1.35] text-black max-md:text-[19px]">{detail.intro}</p>
           <ol className="mt-9 grid gap-7 text-black md:grid-cols-2">
@@ -3717,7 +3747,7 @@ function CoreServiceDetail({ page }: { page: SitePage }) {
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.7fr]">
             <div>
-              <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Before Your Visit</h2>
+              <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Before Your Visit</h2>
               <LiveRule />
               <ul className="mt-9 space-y-4 text-[22px] leading-[1.35] text-black max-md:text-[18px]">
                 {detail.practicalNotes.map((note) => (
@@ -3755,7 +3785,7 @@ function CareersPage({ page }: { page: SitePage }) {
       <Breadcrumbs page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
+          <h1 className="text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">
             {page.h1 || "Careers"}
           </h1>
           <LiveRule />
@@ -3767,7 +3797,7 @@ function CareersPage({ page }: { page: SitePage }) {
 
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             Audiologists
           </h2>
           <LiveRule />
@@ -3790,7 +3820,7 @@ function CareersPage({ page }: { page: SitePage }) {
 
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             Hearing Instrument Specialists
           </h2>
           <LiveRule />
@@ -3809,7 +3839,7 @@ function CareersPage({ page }: { page: SitePage }) {
 
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">
             Interested in working with us?
           </h2>
           <LiveRule />
@@ -3839,7 +3869,7 @@ function WhyChooseUsPage({ page }: { page: SitePage }) {
           alt=""
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-24"
           fill
-          priority={false}
+          priority
           sizes="100vw"
           src={homeImages.people}
         />
@@ -3877,10 +3907,14 @@ function WhyChooseUsPage({ page }: { page: SitePage }) {
               We test, we explain what the test found, and we tell you what technology will and will not change about the rooms you named. If the answer is that you do not need hearing aids yet, that is what you will hear.
             </p>
             <div className="mt-7 grid gap-3 sm:grid-cols-3">
-              {["Testing", "Fitting", "Follow-up"].map((item) => (
-                <div className="border-l-2 border-[#ffd45a] bg-[#eaf4fb] p-4" key={item}>
-                  <p className="text-sm font-black uppercase tracking-[0.14em] text-[#005a9c]">{item}</p>
-                  <p className="mt-1 font-black text-[#003f6f]">Built around you</p>
+              {[
+                ["Testing", "A full diagnostic battery, not a screening."],
+                ["Fitting", "Measured in your own ear, not left on a default."],
+                ["Follow-up", "Checks, cleaning and adjustments for as long as you wear them."]
+              ].map(([label, blurb]) => (
+                <div className="border-l-2 border-[#ffd45a] bg-[#eaf4fb] p-4" key={label}>
+                  <p className="text-sm font-black uppercase tracking-[0.14em] text-[#005a9c]">{label}</p>
+                  <p className="mt-1 font-black text-[#003f6f]">{blurb}</p>
                 </div>
               ))}
             </div>
@@ -4469,7 +4503,7 @@ function LivePageBody({ page }: { page: SitePage }) {
           {isBlog ? (
             <p className="mb-3 text-[15px] text-[#555]">Audiology Associates of Westchester</p>
           ) : null}
-          <h1 className="max-w-[1440px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
+          <h1 className="max-w-[1440px] text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">
             {page.h1 || page.title}
           </h1>
           <LiveRule />
@@ -4478,7 +4512,7 @@ function LivePageBody({ page }: { page: SitePage }) {
               alt={image.alt || page.h1}
               className={`mt-[38px] max-h-[430px] w-full max-w-[860px] ${imageFitClass(image.src)}`}
               height={760}
-              priority={false}
+              priority
               unoptimized={image.src.endsWith(".svg")}
               src={image.src}
               width={1180}
@@ -4511,19 +4545,6 @@ function LiveContactPage({ page }: { page: SitePage }) {
     page.body.find((line) => line.startsWith("When you visit") && !line.includes("With two convenient")),
     page.body.find((line) => line.startsWith("With two convenient"))
   ].filter((line): line is string => Boolean(line));
-  const officeMapLinks = {
-    "/Somers-NY": {
-      embed:
-        "https://www.google.com/maps?q=325%20NY%20100%2C%20Somers%2C%20NY%2010589&output=embed",
-      maps: "https://google.com/maps?ll=41.326271,-73.688044&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584"
-    },
-    "/harrison-ny": {
-      embed:
-        "https://www.google.com/maps?q=550%20Mamaroneck%20Ave%20Suite%20407%2C%20Harrison%2C%20NY%2010528&output=embed",
-      maps:
-        "https://www.google.com/maps/place/Audiology+Associates+of+Westchester/@40.9796102,-73.7452172,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2941f220a4edf:0x3781801f76f64a38!8m2!3d40.9796062!4d-73.7426423!16s%2Fg%2F1thvtmkc?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"
-    }
-  };
   const officeLocations = locations.filter((location) => location.type === "office");
 
   return (
@@ -4531,7 +4552,7 @@ function LiveContactPage({ page }: { page: SitePage }) {
       <Breadcrumbs page={page} />
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <h1 className="text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{page.h1}</h1>
           <LiveRule />
           <div className="mt-[38px]">
             <LegacyParagraphs className="max-w-none" paragraphs={intro.length ? intro : page.body.slice(0, 4)} />
@@ -4540,14 +4561,17 @@ function LiveContactPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white pb-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Audiology Associates of Westchester</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Audiology Associates of Westchester</h2>
           <LiveRule />
           <div className="mt-[42px] grid gap-[40px] lg:grid-cols-2">
             {officeLocations.map((location) => {
-                const mapLinks = officeMapLinks[location.path as keyof typeof officeMapLinks];
                 const mapQueryUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`;
-                const embedUrl = mapLinks?.embed || `https://www.google.com/maps?q=${encodeURIComponent(location.address)}&output=embed`;
-                const directionsUrl = location.directionsUrl || mapLinks?.maps || mapQueryUrl;
+                // Coordinates, not the address string: "550 Mamaroneck Ave Suite 407"
+                // geocodes to a frame with no marker on it.
+                const mapQuery = location.geo
+                  ? `${location.geo.latitude},${location.geo.longitude}`
+                  : location.address;
+                const directionsUrl = location.directionsUrl || mapQueryUrl;
 
                 return (
                   <div className="flex h-full flex-col text-center" key={location.path}>
@@ -4572,13 +4596,7 @@ function LiveContactPage({ page }: { page: SitePage }) {
 
                     <div className="mt-auto pt-[34px]">
                       <div className="overflow-hidden border border-[#d6d6d6] bg-[#f7f7f5]">
-                        <iframe
-                          aria-label={`${location.name} map`}
-                          className="h-[300px] w-full"
-                          loading="lazy"
-                          referrerPolicy="no-referrer-when-downgrade"
-                          src={embedUrl}
-                        />
+                        <GoogleMapEmbed className="h-[300px] w-full" query={mapQuery} title={`${location.name} map`} />
                       </div>
                     </div>
 
@@ -4608,10 +4626,10 @@ function LiveContactPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white pb-[60px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Submit This Form to Contact Us</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Submit This Form to Contact Us</h2>
           <LiveRule />
           <div className="mt-[38px] max-w-[920px]">
-            <h2 className="mb-[20px] text-[32px] font-normal leading-tight text-black">Contact Us</h2>
+            <h2 className="mb-[20px] text-[32px] font-black leading-tight text-[#003f6f]">Contact Us</h2>
             <ContactForm context={`Contact page: ${page.h1}`} />
           </div>
         </div>
@@ -4629,7 +4647,7 @@ function LivePatientFormsPage({ page }: { page: SitePage }) {
           <div className="text-center">
             <h1 className="text-[38px] font-black text-[#333] max-md:text-[32px]">{page.h1}</h1>
             <p className="mx-auto mt-6 max-w-[1020px] text-[21px] leading-[1.45] text-black max-md:text-[18px]">
-              Please take the time to download, print and fill out the following before your first office visit.
+              Download and fill these in before your first visit if that suits you. If it does not, call the office and we will post them to you, or arrive fifteen minutes early and we will fill them in together.
             </p>
           </div>
 
@@ -4661,7 +4679,7 @@ function LiveThankYouPage({ page }: { page: SitePage }) {
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <div className="legacy-live-copy max-w-[1440px] text-left text-[24px] leading-[1.35] text-black">
-            <h1 className="mb-[20px] text-[50px] font-normal leading-tight text-black max-md:text-[36px]">
+            <h1 className="mb-[20px] text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">
               Thank You
             </h1>
             <p>{page.body[0] || "Thank you for contacting us! Your message has been received."}</p>
@@ -4688,7 +4706,7 @@ function LiveTeamPage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{page.h1}</h1>
+          <h1 className="text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{page.h1}</h1>
           <LiveRule />
           <div className="mt-[38px]">
             <LegacyParagraphs className="max-w-none" paragraphs={intro.length ? intro : page.body.slice(0, 2)} />
@@ -4714,7 +4732,7 @@ function LiveTeamPage({ page }: { page: SitePage }) {
                         person.name
                       )}
                     </h3>
-                    <h2 className="mt-[8px] text-[18px] font-normal leading-tight text-black">{person.pronouns}</h2>
+                    <h2 className="mt-[8px] text-[18px] font-black leading-tight text-[#003f6f]">{person.pronouns}</h2>
                     <h3 className="mt-[8px] text-[24px] font-bold leading-tight text-black max-md:text-[21px]">{person.role}</h3>
                     {providerForName(person.name) ? (
                       <Link className="mt-[14px] inline-block text-[19px] font-bold text-[#005a9c] underline" href={providerPath(providerForName(person.name)!)}>
@@ -4806,6 +4824,17 @@ function ProviderCredentialList({ provider }: { provider: ProviderProfile }) {
   );
 }
 
+// Which offices a clinician actually sees patients at. lib/team.ts documents
+// officePaths as "omit for Harrison-only", so an absent list means Harrison.
+// This was previously only discoverable in the third paragraph of a bio, which
+// is not where someone booking on a parent's behalf will find it.
+function providerOfficeNames(officePaths?: string[]) {
+  const paths = officePaths?.length ? officePaths : ["/harrison-ny"];
+  return paths
+    .map((path) => locations.find((location) => location.path === path)?.city)
+    .filter((city): city is string => Boolean(city));
+}
+
 function ProviderProfilePage({ page }: { page: SitePage }) {
   const provider = providerForPath(page.path);
   if (!provider) return <LivePageBody page={page} />;
@@ -4823,9 +4852,13 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
           <div className="grid gap-[52px] lg:grid-cols-[minmax(0,1fr)_420px] lg:items-start">
             <div>
               <p className="text-[18px] font-bold uppercase tracking-[0.28em] text-[#a45e1b]">Audiologist Profile</p>
-              <h1 className="mt-5 text-[50px] font-normal leading-tight text-black max-md:text-[36px]">{provider.name}</h1>
+              <h1 className="mt-5 text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{provider.name}</h1>
               <h2 className="mt-[10px] text-[26px] font-bold leading-tight text-black">{provider.role}</h2>
               <p className="mt-[8px] text-[18px] leading-tight text-black">{provider.pronouns}</p>
+              <p className="mt-[14px] text-[20px] leading-tight text-black">
+                <span className="font-bold">Sees patients at:</span>{" "}
+                {providerOfficeNames(provider.officePaths).join(" and ")}
+              </p>
               <LiveRule />
               {provider.quote ? (
                 <blockquote className="mt-[38px] border-l-[6px] border-[#005a9c] pl-6 text-[27px] italic leading-[1.35] text-black max-md:text-[22px]">
@@ -4843,7 +4876,7 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
                 alt={provider.alt}
                 className="mx-auto aspect-square w-full max-w-[420px] object-cover"
                 height={620}
-                priority={false}
+                priority
                 src={provider.image}
                 width={620}
               />
@@ -4880,7 +4913,7 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Specialties and Areas of Focus</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Specialties and Areas of Focus</h2>
           <LiveRule />
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {provider.specialties.map((specialty) => (
@@ -4894,7 +4927,7 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Credentials</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Credentials</h2>
           <LiveRule />
           <ProviderCredentialList provider={provider} />
         </div>
@@ -4902,7 +4935,7 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
       <ProviderTrustSection provider={provider} />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Frequently Asked Questions About {provider.name}</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Frequently Asked Questions About {provider.name}</h2>
           <LiveRule />
           <div className="mt-9 grid gap-7 lg:grid-cols-3">
             {page.faqs.map((faq) => (
@@ -4916,7 +4949,7 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
       </section>
       <section className="bg-white py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h2 className="text-[42px] font-normal leading-tight text-black max-md:text-[32px]">Meet More Audiologists</h2>
+          <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Meet More Audiologists</h2>
           <LiveRule />
           <div className="mt-8 flex flex-wrap gap-4">
             {otherProviders.map((item) => (
@@ -5293,12 +5326,28 @@ function LocationDetails({ page }: { page: SitePage }) {
   );
 }
 
+// sections[0] is an article's first H2, not a taxonomy field. For posts that came
+// out of the old-site crawl and for a few of the generated ones it is a sentence,
+// which put strays like "You Can Try Putting Hydrogen Peroxide Drops in Your Ear"
+// in the topic list of a clinical practice, reading as practice advice.
+const nonCategorySections = new Set([
+  "The idea",
+  "What changed",
+  "Following the evidence",
+  "Why this concerns Westchester now",
+  "You Can Try Putting Hydrogen Peroxide Drops in Your Ear",
+  "Psoriasis Affects More Than Your Skin",
+  "Pride Month: Celebrating Diversity and Equality"
+]);
+
 function BlogIndex({ page, scheduledPosts = [] }: { page: SitePage; scheduledPosts?: SitePage[] }) {
   const orderedPosts = [...blogPosts, ...scheduledPosts]
     .filter((post, index, posts) => posts.findIndex((candidate) => candidate.path === post.path) === index)
     .sort((first, second) => (second.lastModified || "").localeCompare(first.lastModified || ""));
   const groupedPosts = orderedPosts.reduce<Record<string, SitePage[]>>((groups, post) => {
-    const category = post.sections[0] || "Hearing Health Guide";
+    const rawCategory = post.sections[0];
+    const category =
+      rawCategory && !nonCategorySections.has(rawCategory) ? rawCategory : "Hearing Health Guide";
     groups[category] = [...(groups[category] || []), post];
     return groups;
   }, {});
