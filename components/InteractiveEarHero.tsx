@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Pause, Phone, Play, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { ZocdocButton } from "@/components/ZocdocButton";
-import { primaryPhone, primaryPhoneHref } from "@/lib/site";
+import { primaryPhone, primaryPhoneHref } from "@/lib/siteBasics";
 import { HearingScene } from "@/lib/audio/hearingScene";
 
 const stages = [
@@ -39,10 +39,15 @@ const stages = [
   }
 ];
 
+// Offices first, then the service area. This row used to read
+// "Greenwich, Westchester County, Somers" -- three entries, none of them
+// Harrison, which is the main office. A visitor reading it could reasonably
+// conclude the practice was in Greenwich.
 const locations = [
-  { label: "Greenwich", href: "/greenwich-ct" },
+  { label: "Harrison, NY", href: "/harrison-ny" },
+  { label: "Somers, NY", href: "/Somers-NY" },
   { label: "Westchester County", href: "/areas-we-serve/westchester-county-ny" },
-  { label: "Somers", href: "/Somers-NY" }
+  { label: "Greenwich, CT", href: "/greenwich-ct" }
 ];
 
 export function InteractiveEarHero() {
