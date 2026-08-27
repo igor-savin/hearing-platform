@@ -54,7 +54,7 @@ export const homepageVariants: HomepageVariant[] = [
   }
 ];
 
-export const activeHomepageVariantId: HomepageVariantId = "aug-2026-original";
+export const activeHomepageVariantId: HomepageVariantId = "proof-first";
 
 export function homepageVariantFor(id: string): HomepageVariant | undefined {
   return homepageVariants.find((variant) => variant.id === id);
