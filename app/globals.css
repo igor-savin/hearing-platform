@@ -11,6 +11,25 @@
   --cream: #fff7ed;
   --muted: #5d6b72;
   --line: #d7e2e3;
+
+  /* ==========================================================================
+     SHARED TOKEN VOCABULARY
+     The role-based names above (--brand, --accent, --foreground, --background,
+     --muted, --line) are the shared vocabulary for both practices: the sister
+     site (California Hearing Center) defines the same names as aliases over its
+     own palette, so a component written against them renders correctly on
+     either property.
+
+     Two additions below complete the set on this side. Values only, no
+     restyling.
+
+     RULE: anything written to be shared between the two sites uses these names.
+     ========================================================================== */
+  /* Card / panel ground, as distinct from the page ground in --background. */
+  --surface: #ffffff;
+  /* NOTE: --accent-dark is already defined above and is the AA-safe accent for
+     text and small controls (the brand --accent reaches only ~3.1:1 on white).
+     It is part of the shared set; it just did not need redefining here. */
 }
 
 * {
@@ -675,5 +694,13 @@ select {
   .aa-sound-runner {
     animation: none !important;
     transition: none;
+  }
+}
+
+/* Room for the fixed mobile call bar (components/MobileCallBar.tsx) so it never
+   covers the last line of the footer. Desktop is untouched. */
+@media (max-width: 1023px) {
+  body {
+    padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px));
   }
 }
