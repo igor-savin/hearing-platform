@@ -128,6 +128,9 @@ export type Location = {
   type: "office" | "service-area";
   nearby: string[];
   directionsUrl?: string;
+  // What a patient needs to know between parking the car and sitting down:
+  // where to leave the car, and what floor the office is on. Offices only.
+  arrival?: string;
   note?: string;
 };
 
@@ -228,7 +231,17 @@ export const locations: Location[] = [
     postalCode: "10528",
     phone: primaryPhone,
     phoneHref: primaryPhoneHref,
-    hours: ["Monday-Friday: 8:30am - 5:00pm"],
+    // One line per day, the same shape as Somers below. The single compressed
+    // "Monday-Friday" line left a patient unable to tell whether any one day
+    // was actually a full day, and read as less considered beside the Somers
+    // list on the contact page.
+    hours: [
+      "Monday: 8:30am - 5:00pm",
+      "Tuesday: 8:30am - 5:00pm",
+      "Wednesday: 8:30am - 5:00pm",
+      "Thursday: 8:30am - 5:00pm",
+      "Friday: 8:30am - 5:00pm"
+    ],
     hoursSpec: [
       { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:30", closes: "17:00" }
     ],
@@ -237,6 +250,7 @@ export const locations: Location[] = [
     nearby: ["Rye", "Greenwich", "Scarsdale", "White Plains"],
     directionsUrl:
       "https://www.google.com/maps/place/Audiology+Associates+of+Westchester/@40.9796102,-73.7452172,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2941f220a4edf:0x3781801f76f64a38!8m2!3d40.9796062!4d-73.7426423!16s%2Fg%2F1thvtmkc?entry=ttu",
+    arrival: "Plenty of parking in the lot. Our office is Suite 407, on the fourth floor.",
     note: "The live site identifies this office as Suite 407 on the 4th floor."
   },
   {
@@ -265,7 +279,8 @@ export const locations: Location[] = [
     type: "office",
     nearby: ["Mahopac", "Putnam Valley", "Mt. Kisco", "Northern Westchester"],
     directionsUrl:
-      "https://google.com/maps?ll=41.326271,-73.688044&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584"
+      "https://google.com/maps?ll=41.326271,-73.688044&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584",
+    arrival: "Plenty of parking in the lot. Our office is at ground level, with no stairs to climb."
   },
   {
     name: "White Plains, NY",

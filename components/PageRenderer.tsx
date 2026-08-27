@@ -46,6 +46,10 @@ import {
   productsRootPath
 } from "@/lib/products";
 import { productGuides } from "@/lib/productGuides";
+import {
+  activeHomepageVariantId,
+  type HomepageVariantId
+} from "@/lib/homepageVariants";
 import { schemaForPage } from "@/lib/schema";
 import {
   blogPosts,
@@ -227,6 +231,16 @@ const homeHearingBenefits = [
   ["Confidence", "Boost your confidence in every area of your life with improved hearing."],
   ["Communication", "Missing out on the conversations around you can be hard on your relationships. Hearing solutions can ease the difficulties you have with speaking with family and friends."],
   ["Connection", "Those with hearing loss tend to avoid social situations altogether. Improve your hearing, and you’ll want to connect with others once again."]
+];
+
+// Three things the practice can actually prove, each linking to the page that
+// substantiates it. No average rating here: lib/reviews.ts holds 4.9 while the
+// footer badge image reads 5.0, and until those agree the honest figure to lead
+// with is the review count, which nobody disputes.
+const homeProofPoints = [
+  { figure: "486+", label: "Google reviews", href: "/reviews" },
+  { figure: "6", label: "Doctors of Audiology on staff", href: "/meet-the-team" },
+  { figure: "Dr. Cliff", label: "Approved Provider", href: "/dr-cliff-approved-provider" }
 ];
 
 const homeTrustReasons = [
@@ -773,7 +787,25 @@ function OfficeCallButtons({ className = "" }: { className?: string }) {
   );
 }
 
-function HomePage() {
+// Homepage versions live here, one component each, and lib/homepageVariants.ts
+// decides which one is live. See that file for why. Never edit a version in
+// place to try an idea -- copy it to a new one, so the old homepage is always
+// one line away from coming back.
+function HomepageVariant({ variantId }: { variantId: HomepageVariantId }) {
+  switch (variantId) {
+    case "proof-first":
+      return <HomepageProofFirst />;
+    case "aug-2026-original":
+    default:
+      return <HomepageOriginal />;
+  }
+}
+
+function HomePage({ variantId = activeHomepageVariantId }: { variantId?: HomepageVariantId }) {
+  return <HomepageVariant variantId={variantId} />;
+}
+
+function HomepageOriginal() {
   return (
     // A <div>, not <main>: app/layout.tsx already wraps every page in
     // <main id="main-content">, and a second nested landmark leaves screen
@@ -987,6 +1019,288 @@ function HomePage() {
                 <div className="flex gap-3 border-l-2 border-[#ffd45a] bg-[#005a9c]/28 p-4" key={reason}>
                   <CheckCircle2 className="mt-1 shrink-0 text-[#ffd45a]" size={21} aria-hidden="true" />
                   <p className="leading-7 text-white/88">{reason}</p>
+                </div>
+              ))}
+            </div>
+            <Link className="focus-ring mt-7 inline-flex rounded-md bg-[#005a9c] px-6 py-4 font-black text-white transition hover:bg-[#004a82]" href="/contact-us">
+              Make an appointment today
+            </Link>
+          </div>
+          <div className="rounded-md bg-white p-5 text-[var(--foreground)] shadow-[0_24px_60px_rgba(0,0,0,0.22)] md:p-7">
+            <h2 className="text-2xl font-black text-[#003f6f]">Contact Us</h2>
+            <p className="mt-2 text-[15px] leading-6 text-[var(--muted)]">
+              Tell us what you are noticing and the team will help you find the right next step.
+            </p>
+            <div className="mt-5">
+              <ContactForm context="Homepage contact form" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function HomepageProofFirst() {
+  return (
+    // A <div>, not <main>: app/layout.tsx already wraps every page in
+    // <main id="main-content">, and a second nested landmark leaves screen
+    // readers with two "main" regions on the home page.
+    <div className="bg-[var(--background)]">
+      <InteractiveEarHero />
+      <HomeQuickActionBand />
+
+      <section className="border-y border-[#dbe9f3] bg-white py-9">
+        <div className="container grid gap-7 text-center sm:grid-cols-3">
+          {homeProofPoints.map((point) => (
+            <Link className="focus-ring block rounded-md px-3 py-2 hover:bg-[#f7fbfd]" href={point.href} key={point.label}>
+              <p className="text-[34px] font-black leading-none text-[#003f6f]">{point.figure}</p>
+              <p className="mt-2 text-[17px] leading-6 text-[var(--muted)]">{point.label}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Trusted audiologist</p>
+            <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f] md:text-5xl">
+              Your Trusted Audiologist
+            </h2>
+            <p className="mt-5 text-xl font-black leading-8 text-[var(--foreground)]">
+              Serving{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/greenwich-ct">
+                Greenwich, CT
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Scarsdale-NY">
+                Scarsdale, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/mt-kisco-ny">
+                Mt. Kisco, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/White-Plains-NY">
+                White Plains, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/harrison-ny">
+                Harrison, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/rye-ny">
+                Rye, NY
+              </Link>
+              ;{" "}
+              <Link className="text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Somers-NY">
+                Somers, NY
+              </Link>{" "}
+              &amp; Beyond
+            </p>
+            <OfficeCallButtons className="mt-7" />
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-[var(--foreground)]">
+            <p>
+              Most people do not notice hearing loss as silence. They notice that the television is louder than
+              anyone else in the house wants it, that a grandchild has to repeat themselves twice, that a
+              restaurant has become work rather than dinner.
+            </p>
+            <p>
+              Fortunately, the audiologist at Audiology Associates of Westchester can help you regain quality of life
+              and hear the world around you. We offer a variety of audiology services like{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/hearing-testing">
+                hearing tests
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/hearing-aid-fitting">
+                hearing aid fitting
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/tinnitus-therapy">
+                tinnitus therapy
+              </Link>{" "}
+              to improve your hearing, and more so you don&rsquo;t miss a sound.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="container">
+          <div className="grid gap-5 lg:grid-cols-3">
+            {homeFeatureCards.map((card) => (
+              <Link
+                className="focus-ring group overflow-hidden rounded-md border border-[#d5e7f4] bg-white shadow-[0_18px_45px_rgba(0,90,156,0.10)] transition hover:-translate-y-1 hover:border-[#005a9c]"
+                href={card.href}
+                key={card.href}
+              >
+                <div className="relative aspect-[16/11] overflow-hidden">
+                  <Image alt={card.alt} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" height={470} src={card.src} width={720} />
+                  <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(0,47,84,0.68)_0%,rgba(0,90,156,0)_58%)]" />
+                  <h3 className="absolute bottom-5 left-5 text-2xl font-black text-white">{card.title}</h3>
+                </div>
+                <p className="p-5 text-[17px] leading-7 text-[var(--muted)]">{card.text}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-[#eaf4fb]">
+        <div className="container grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Quality of life</p>
+            <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f]">
+              How Hearing Aids Help You Live a More Fulfilling Life
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-[var(--foreground)]">
+              The knowledgeable and experienced hearing doctors here at Audiology Associates of Westchester can help you
+              enhance all these areas of your life and more - contact us today!
+            </p>
+            <OfficeCallButtons className="mt-7" />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {homeHearingBenefits.map(([title, text]) => (
+              <article className="rounded-md border border-white bg-white/85 p-5 shadow-[0_14px_32px_rgba(0,90,156,0.09)]" key={title}>
+                <CheckCircle2 className="text-[#005a9c]" size={26} aria-hidden="true" />
+                <h3 className="mt-4 text-xl font-black text-[#003f6f]">{title}</h3>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--muted)]">{text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-white">
+        <div className="container">
+          <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Our audiology services</p>
+              <h2 className="mt-2 text-3xl font-black leading-tight text-[#003f6f]">Clear next steps for better hearing</h2>
+              <p className="mt-3 text-lg leading-8 text-[var(--muted)]">
+                Choose the service that best matches what you are noticing today.
+              </p>
+            </div>
+            <Link className="focus-ring inline-flex rounded-md border border-[#005a9c] px-5 py-3 font-black text-[#003f6f] transition hover:bg-[#eaf4fb]" href="/hearing-testing">
+              Read more +
+            </Link>
+          </div>
+          <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+            {homeServiceCards.map(([title, href, src, alt]) => (
+              <Link className="focus-ring group block overflow-hidden rounded-md border border-[#d5e7f4] bg-[var(--background)] transition hover:-translate-y-1 hover:border-[#005a9c]" href={href} key={href}>
+                <Image alt={alt} className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" height={360} src={src} width={360} />
+                <div className="p-4">
+                  <h3 className="text-lg font-black leading-tight text-[#003f6f]">{title}</h3>
+                  <p className="mt-3 text-sm font-bold uppercase tracking-[0.12em] text-[#005a9c]">Learn more</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">Improve your hearing</p>
+            <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f]">
+              Live life to the fullest. Call now.
+            </h2>
+            <OfficeCallButtons className="mt-7" />
+          </div>
+          <div className="space-y-5 text-lg leading-8 text-[var(--foreground)]">
+            <p>
+              Hearing loss is upsetting, but Audiology Associates of Westchester can help you regain control and
+              communicate with family and friends once again. Call our professional hearing doctors today to schedule an
+              appointment, so you never have to say &ldquo;What?&rdquo; again!
+            </p>
+            <p>
+              Our experienced audiologists care for patients throughout{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/White-Plains-NY">
+                White Plains, NY
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/harrison-ny">
+                Harrison, NY
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/rye-ny">
+                Rye, NY
+              </Link>
+              ,{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/mt-kisco-ny">
+                Mt. Kisco, NY
+              </Link>
+              , and{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Scarsdale-NY">
+                Scarsdale, NY
+              </Link>
+              , as well as{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/greenwich-ct">
+                Greenwich, CT
+              </Link>{" "}
+              and the rest of Westchester County.
+            </p>
+            <p>
+              Call to book with one of our audiologists at either office: Harrison, on Mamaroneck Avenue, or{" "}
+              <Link className="font-bold text-[#005a9c] underline decoration-[#ffd45a] decoration-2 underline-offset-4" href="/Somers-NY">
+                Somers, NY
+              </Link>
+              !
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-[#f7fbfd]">
+        <div className="container">
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">What patients say</p>
+          <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f]">In our patients&rsquo; words</h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {testimonials.slice(0, 3).map((testimonial) => (
+              <article
+                className="rounded-md border border-[#d5e7f4] bg-white p-6 shadow-[0_14px_32px_rgba(0,90,156,0.08)]"
+                key={testimonial.author}
+              >
+                <div aria-hidden="true" className="flex gap-1 text-[#ffd45a]">
+                  {[0, 1, 2, 3, 4].map((star) => (
+                    <Star fill="currentColor" key={star} size={18} strokeWidth={0} />
+                  ))}
+                </div>
+                <p className="mt-4 text-[17px] leading-7 text-[var(--foreground)]">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
+                <p className="mt-5 font-black text-[#003f6f]">{testimonial.author}</p>
+                <p className="text-[15px] text-[var(--muted)]">{testimonial.tag} &middot; Verified Google review</p>
+              </article>
+            ))}
+          </div>
+          <Link
+            className="focus-ring mt-8 inline-flex rounded-md border-2 border-[#005a9c] px-6 py-3 font-black text-[#005a9c] transition hover:bg-[#eaf4fb]"
+            href="/reviews"
+          >
+            Read more patient reviews
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-[#003f6f] py-16 text-white">
+        <div className="container grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Why choose us</p>
+            <h2 className="mt-3 text-4xl font-black leading-tight">
+              Why Choose Audiology Associates of Westchester?
+            </h2>
+            <div className="mt-7 grid gap-3">
+              {whyChooseReasons.slice(0, 4).map((reason) => (
+                <div className="flex gap-3 border-l-2 border-[#ffd45a] bg-[#005a9c]/28 p-4" key={reason.title}>
+                  <CheckCircle2 className="mt-1 shrink-0 text-[#ffd45a]" size={21} aria-hidden="true" />
+                  <div>
+                    <p className="font-black leading-6 text-white">{reason.title}</p>
+                    <p className="mt-1 leading-7 text-white/88">{reason.text}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -3286,6 +3600,12 @@ function LegacyLocationSectionView({ section }: { section: LegacyLocationSection
                     {section.hours.map((line) => <p key={line}>{line}</p>)}
                   </>
                 ) : null}
+                {office?.arrival ? (
+                  <>
+                    <p className="pt-[14px] font-bold">When you arrive</p>
+                    <p>{office.arrival}</p>
+                  </>
+                ) : null}
               </address>
             ) : null}
           </div>
@@ -4663,6 +4983,13 @@ function LiveContactPage({ page }: { page: SitePage }) {
                       {location.hours.map((hours) => <p key={hours}>{hours}</p>)}
                     </div>
 
+                    {location.arrival ? (
+                      <div className="mx-auto mt-[18px] max-w-[420px] border-l-2 border-[#ffd45a] bg-[#f7fbfd] px-5 py-4 text-left text-[18px] leading-[1.4] text-black">
+                        <p className="font-bold">When you arrive</p>
+                        <p className="mt-1">{location.arrival}</p>
+                      </div>
+                    ) : null}
+
                     <div className="mt-auto pt-[34px]">
                       <div className="overflow-hidden border border-[#d6d6d6] bg-[#f7f7f5]">
                         <GoogleMapEmbed className="h-[300px] w-full" query={mapQuery} title={`${location.name} map`} />
@@ -5619,11 +5946,21 @@ function PageWithSchema({ page, children }: { page: SitePage; children: ReactNod
   );
 }
 
-export function PageRenderer({ page, scheduledPosts = [] }: { page: SitePage; scheduledPosts?: SitePage[] }) {
+export function PageRenderer({
+  page,
+  scheduledPosts = [],
+  homepageVariantId
+}: {
+  page: SitePage;
+  scheduledPosts?: SitePage[];
+  // Only set by /homepage-preview/<id>. Live traffic leaves it undefined and
+  // gets whichever version lib/homepageVariants.ts has made active.
+  homepageVariantId?: HomepageVariantId;
+}) {
   if (page.type === "home") {
     return (
       <PageWithSchema page={page}>
-        <HomePage />
+        <HomePage variantId={homepageVariantId} />
       </PageWithSchema>
     );
   }

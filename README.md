@@ -124,3 +124,28 @@ Deploy the CMS rules and index before using the back office:
 ```bash
 firebase deploy --only firestore:rules,firestore:indexes --project audiology-associates-ca8ab
 ```
+
+## Homepage versions
+
+The homepage can exist in more than one version at a time. Every version stays in
+the codebase as its own component; `lib/homepageVariants.ts` decides which one
+visitors see.
+
+- **Swap the live homepage** — change `activeHomepageVariantId` in
+  `lib/homepageVariants.ts`, then push. That is the whole operation.
+- **Look at a version without shipping it** — `/homepage-preview/<id>`, or
+  `/homepage-preview` for the list. These are `noindex`, disallowed in
+  `robots.txt` and absent from the sitemap, so the only way in is the link.
+- **Add a version** — copy `HomepageOriginal` in `components/PageRenderer.tsx` to
+  a new component, add a case to `HomepageVariant`, register it in
+  `lib/homepageVariants.ts`, preview it, then switch when you are happy.
+
+This is not an A/B test. There is no traffic splitting, no cookie and no
+analytics dependency: every visitor sees the same homepage. Splitting traffic on
+a two-office practice would take months to produce a result worth acting on, and
+would double what has to be kept working. This is the ability to keep several
+homepages and choose which is live.
+
+Never edit an existing version to try an idea. Copy it. The reason the registry
+exists is that "put the old homepage back" should be one line, not an
+archaeology exercise.
