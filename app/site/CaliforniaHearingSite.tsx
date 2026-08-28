@@ -307,6 +307,93 @@ function OfficeMaps({ only }: { only?: string }) {
   );
 }
 
+/**
+ * The arrival walkthrough on /contact/san-mateo/.
+ *
+ * WHY THIS EXISTS: until August 2026 every photograph on this site was stock or
+ * borrowed, including the one captioned "88 N. San Mateo Drive, San Mateo" —
+ * which was a picture of nobody who works here, in a room that is not ours. The
+ * only real photography of the practice was 44 phone shots sitting in
+ * gbp-photo-queue/, being drip-fed to Google Business Profile one per week.
+ * These five come from that set. The queue is untouched: the files were copied,
+ * not moved, so the drip still has all 44.
+ *
+ * WHY ARRIVAL, of everything the photos could have illustrated: our patients
+ * skew old, most drive, and the single most useful thing a first-time visitor
+ * can be told is where to put the car and which door to use. The photographs
+ * also corrected the copy — the site had been sending people to hunt for street
+ * parking downtown when there is a signposted lot behind the building and a
+ * ramp from it that avoids the front steps.
+ *
+ * EVERY CAPTION BELOW IS A DESCRIPTION OF WHAT IS VISIBLE IN ITS PHOTOGRAPH.
+ * Nothing here asserts a fact the picture does not carry: not that the lot is
+ * free, not that it is reserved for patients, not which door the ramp reaches.
+ * Those may all be true — confirm them with the practice before writing them
+ * down, and keep the habit, because a confident invented detail about parking
+ * is exactly the kind of thing a patient discovers is wrong while circling the
+ * block at ten to nine.
+ */
+const SAN_MATEO_ARRIVAL: { src: string; step: string; alt: string; caption: string }[] = [
+  {
+    src: "/assets/office/san-mateo__01-sign.jpg",
+    step: "Look for the sign",
+    alt: "A red-and-white California Hearing Center sign reading 88, standing on a lawn beside the sidewalk on N. San Mateo Drive.",
+    caption: "Our sign stands on the lawn right at the sidewalk, so you can pick it out from the road.",
+  },
+  {
+    src: "/assets/office/san-mateo__02-driveway.jpg",
+    step: "Turn up the driveway",
+    alt: "A driveway running alongside the office building, with a banner on the fence reading California Hearing Center Parking and an arrow.",
+    caption: "A driveway runs up the side of the building. A banner with our logo points the way in.",
+  },
+  {
+    src: "/assets/office/san-mateo__03-parking.jpg",
+    step: "Park at the top",
+    alt: "An open parking lot behind the office building with marked spaces and a few parked cars.",
+    caption: "The lot sits behind the building, off the street and out of the downtown traffic.",
+  },
+  {
+    src: "/assets/office/san-mateo__04-ramp.jpg",
+    step: "A step-free way in",
+    alt: "A concrete ramp with a metal handrail running from the parking lot along the side of the office building.",
+    caption: "A ramp with a handrail runs from the lot along the side of the building. If steps are difficult, tell us when you book and we will meet you at whichever door is easiest.",
+  },
+  {
+    src: "/assets/office/san-mateo__05-entrance.jpg",
+    step: "Or come in from the front",
+    alt: "The front of the office building, number 88, with a brick path leading to a short flight of steps and a handrail.",
+    caption: "From the sidewalk, a brick path leads to the front door up a short flight of steps with a handrail.",
+  },
+];
+
+function ArrivalWalkthrough() {
+  return (
+    <section className="container arrival" aria-labelledby="arrival-heading">
+      <p className="section-kicker">Getting here</p>
+      <h2 id="arrival-heading">What it looks like when you arrive</h2>
+      <p className="arrival-lede">
+        First visit? These are photographs of our San Mateo office, taken from the street in,
+        so you know what you are looking for before you set off.
+      </p>
+      <ol className="arrival-grid">
+        {SAN_MATEO_ARRIVAL.map((s, i) => (
+          <li className="arrival-card" key={s.src}>
+            <SiteImage
+              src={s.src}
+              alt={s.alt}
+              sizes="(max-width: 640px) 92vw, (max-width: 1020px) 46vw, 340px"
+            />
+            <div className="arrival-body">
+              <h3><span className="arrival-num" aria-hidden="true">{i + 1}</span>{s.step}</h3>
+              <p>{s.caption}</p>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
 // Full service-area directory for /areas-we-serve/, grouped by county and
 // generated from cityProfiles so it can never drift from the pages that exist.
 // The legacy site had this directory; the migrated hub had shrunk to 8 links.
@@ -1854,6 +1941,8 @@ function InnerPage({ page }: { page: SitePage }) {
       {page.path === "/about-us/" && <TeamRoster />}
       {page.path === "/areas-we-serve/" && <AreasDirectory />}
 
+      {page.path === "/contact/san-mateo/" && <ArrivalWalkthrough />}
+
       {isContact && (
         <OfficeMaps
           only={
@@ -2118,7 +2207,7 @@ function VisitPanel({ visit }: { visit: NonNullable<PageContent["visit"]> }) {
           <dt>Parking</dt>
           <dd>
             {visit.office === "San Mateo"
-              ? "Street parking on N. San Mateo Drive and a public garage close by."
+              ? "A signposted lot behind the building — turn up the driveway alongside the office. Street parking on N. San Mateo Drive as well."
               : "Street parking along Laurel Street and public lots just off it."}{" "}
             Tell us when you book if parking or mobility is a concern and the front desk will
             talk you through the easiest approach.

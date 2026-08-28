@@ -27,5 +27,6 @@
     ["Where do I park?", "There is street parking on Laurel Street and public lots just off it. Downtown San Carlos is flat and walkable; tell us when you book if you would like the closest possible option."]
   ],
   image: "/assets/core-photos/about-us.webp",
-  imageLabel: "1008 Laurel Street, San Carlos",
+  imageLabel: "Hearing care in downtown San Carlos",
+  imageAlt: "An audiologist showing a hearing aid to a couple during a consultation.",
 },

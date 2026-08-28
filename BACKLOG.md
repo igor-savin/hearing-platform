@@ -4,63 +4,76 @@ Shared running list for both practices. **Add anything here yourself** — a lin
 "Igor's inbox" is enough, however rough. Claude reads this file at the start of a
 session and keeps the rest of it current.
 
-Last updated: 26 August 2026 (GBP products live; three new bugs logged)
+Last updated: 28 August 2026 (real office photography on the San Mateo page)
 
 ---
 
 ## Igor's inbox — unsorted, add freely
 
-- **AAW article hero images are cropped and blown up** (raised 26 Aug). Root cause found,
-  fix is small. `components/PageRenderer.tsx` renders every article image with
-  `object-cover` into a 16:9 / 16:10 box — line **3529** (article hero, 1200×675),
-  line **3405** (Related articles thumbs), line **5302** (blog index cards). The
-  manufacturer device shots are *square* cutouts (Signia MaX and Phonak EON are 640×640,
-  Oticon Reveal 540×540), so `object-cover` upscales them ~1.9× and slices the top and
-  bottom off the device. That is exactly the giant blurry half-a-hearing-aid on
-  `/signia-max-what-we-know` and `/phonak-eon-what-we-know`, and the oversized thumbs at
-  the foot of `/fortell-hearing-aids-what-we-know`.
-  Fix: add a `fit?: "cover" | "contain"` hint to the image type, default `cover` so
-  photographs are unaffected, and set `contain` (on white, with padding) for the device
-  cutouts. Three render sites, one flag. Do CHC at the same time — same asset shape.
-- **Somers "Get directions" points at the wrong pin** (raised 26 Aug). Diagnosed; the
-  correct link is already in the repo. See "Bugs with a known fix" below.
+- **Two arrival facts only you can confirm** (raised 28 Aug). The new walkthrough on
+  `/contact/san-mateo/` describes exactly what the photographs show and no more, because
+  I could not confirm either of these: (a) is the lot behind the building free, and is it
+  ours or shared with the neighbouring buildings? (b) the ramp from the lot runs to a red
+  door at the back — is that a patient entrance, or staff only? Both answers make the
+  page more useful and neither can be inferred from a photograph. Tell me and I will
+  tighten the copy.
+- **San Carlos has no photography at all** (raised 28 Aug). Same shoot, same phone,
+  fifteen minutes: the sign, the door, where to park on Laurel Street. Until then
+  `/contact/san-carlos/` runs on the same stock consultation photo as five other pages —
+  it no longer *claims* to be 1008 Laurel Street, but it is still not the office.
+- **The other 39 photos are exteriors too** (raised 28 Aug). The whole set is the outside
+  of the building. Nothing of the waiting room, the booth, a fitting, or a person. That
+  is the gap for the next shoot, at both practices — and it is what the service pages
+  actually need.
+- **GBP photos for AAW Harrison** (raised 26 Aug, in progress). Logo and cover photo
+  built to Google's sizes and handed over: cover 1920×1080, and the logo square at
+  720×720 in two versions — the ear mark alone, and the full wordmark. The rejections
+  were a sizing problem: a 584×120 wordmark cannot satisfy a 250×250 square minimum at
+  any scale. Igor uploads them; then set one of his newly uploaded interior photos as
+  the cover in the GBP photo manager and check how it renders.
 - **GBP Q&A — mine competitor reviews first** (raised 26 Aug). Google Business Profile
   has a Q&A section, and an owner may post a question and answer it themselves, so this
   is a real surface we are not using on any listing. Igor's ordering, which is the right
   one: analyse sentiment and recurring keywords/phrases in *competitors'* customer
   reviews first, then let what patients actually complain about and praise decide which
-  questions get seeded. Deliverable: a phrase-frequency and sentiment read across the
-  competitor set for each market, then a seeded Q&A set per listing. Constraint: answers
-  must be true of the practice — Google removes Q&A that reads as a keyword dump.
+  questions get seeded. Constraint: answers must be true of the practice — Google
+  removes Q&A that reads as a keyword dump.
 - Recheck blog functionality on both sites (raised 26 Aug, not yet scoped)
 - Scheduling for Threads posts — finish out the Meta brands (raised 26 Aug)
 - Scheduling for Instagram posts — finish out the Meta brands (raised 26 Aug)
 
 ---
 
-## Bugs with a known fix, ready to do
+## Needs Igor, not code
 
-**1. Somers "Get directions" resolves to the building next door.**
-`components/PageRenderer.tsx:3180`, in `LegacyLocationSectionView`, builds the button
-from a plain address string (`mapQuery: "325 NY 100 Somers NY 10589"`, line 662) and
-never consults `directionsUrl`. A bare address query resolves to Google's *address pin*,
-not the Business Profile marker.
-The correct link already exists at `lib/site.ts:267` — `cid=16978045113785245584`, which
-decodes to the exact same business ID (`0xeb9e2213d3b9df90`) Igor identified. Nothing
-needs looking up.
-Also affected and not yet reported by anyone: **Harrison has the identical bug on three
-sections** (lines 638, 701, 726), and the *embedded map* on those pages uses the same
-query string, so the pin inside the map is wrong too — not just the button. The three
-remaining `mapQuery` values are town names (Rye, Greenwich, Mt. Kisco) and are correct
-as they stand. The footer is right because it uses `somers.directionsUrl` directly.
+**Getting access to the Somers Business Profile.** This is the blocker, not the
+duplicate cleanup — Igor is not posting to the duplicates and does not care about them.
 
-**2. Two duplicate Google Business Profiles.** The Business Profile Manager lists six
-businesses at 67% verified. **AAW Somers is marked Duplicate and unverified** — a
-management request was declined, it has no Products section, and it cannot be edited
-from this account. Worth establishing whether the monthly GBP posts have actually been
-reaching Somers at all, because it is the same profile. Separately there is a **duplicate
-CHC San Mateo** (no store code) alongside the verified one (`349732a`). Duplicates split
-reviews and ranking signals.
+What the screens actually say, checked 26 Aug:
+
+- The Somers profile is real and distinct: 325 NY-100, its own phone (914) 556-6720,
+  its own hours, **14 of its own reviews**, and "Located in: Towne Centre at Somers".
+  It is not plausibly a duplicate of Harrison, which is a different address, a different
+  phone number and 486 separate reviews.
+- Business Profile Manager lists it as **Duplicate**, unverified, with a *Manage profile*
+  button rather than the owner toolbar.
+- On the profile itself: *"Your request to manage an existing profile was declined. To
+  manage a new profile, you need to be verified."* No Products section, and
+  *Suggest an edit* where *Edit your business information* would be.
+
+So the request was submitted and refused, and the "Duplicate" classification is the most
+likely reason. The case to make to support is that this is a misclassification: two
+locations, two addresses, two phone numbers, two independent review sets.
+
+**Do not click "Get verified" on that banner without thinking.** It offers to verify a
+*new* profile. Creating a second Somers listing is the one outcome worse than the
+current state — it would make the duplicate real and split the 14 reviews.
+
+**Operational consequence worth connecting.** `aaw-gbp-monthly` writes eight topics a
+month twice, once for Harrison and once for Somers, each with its own office's phone
+number. Harrison's Posts list shows single posts with no paired Somers equivalents, so
+half of every month's output has had nowhere to go for as long as this has been true.
+Worth deciding whether to keep producing the Somers half while it cannot be published.
 
 ---
 
@@ -168,6 +181,7 @@ Nothing. Both repos are clean and level with their remotes.
 | `b10eada` | CHC Fortell reference page |
 | `3968c6a` | AAW Fortell reference page |
 | `3ebb545` + `a4c973f` | **CHC: 24 catchment city pages, Portola Valley slug fix, affirming-care page, Pride post restored.** Visit panel (office, drive, parking, Caltrain where a station exists, booking CTA) plus a practice-level reviews block on all 24 — 5.0/203 combined across both offices, three verbatim reviews per page chosen by path hash, never attributed to the city. Portola Valley slug, hero image filename and redirect all corrected. `/lgbtq-affirming-hearing-care/` published. The Pride post — 716,336 impressions, 301'd to `/the-blog/` with its content deleted — restored at its original URL and rewritten to answer its own question in the first sentence. 0 of 9,035 rendered images missing dimensions. |
+| `933dc0a`, `d08a05b` | **AAW: office map links and product images.** "Get Directions" on both office pages was built from a plain address string, which Google resolves to its address pin — next door at 325 NY-100. It now uses each office's verified place link, and the embedded map its verified coordinates at z=17. Harrison had the same defect on three sections. Separately, square manufacturer device shots were rendered `object-cover` into 16:9 and 16:10 boxes, upscaling ~1.9× and cropping the device; assets under `/assets/brands/` now render `object-contain`. Four render sites, 2,432 image renders, 0 still cropping. **A mistake worth remembering: the first attempt queried the embed by business name and address, which returns a blank frame from the keyless endpoint — both office pages went live with an empty map for a few minutes, because the HTML was verified and the rendered page was not.** |
 | GBP | **Three new products across the Google Business Profiles.** Signia MaX and Phonak EON added to San Mateo, San Carlos and Harrison — six entries, all approved or pending review. Oticon Reveal turned out to be on all three already. No price on any (none is published, and inventing one is a false claim on a medical profile); descriptions match the house pattern set by the existing Oticon Reveal entry; each button links to that practice's own product page. Somers got nothing — it is an unverified duplicate this account cannot edit. |
 | `38ca2b2` | **AAW: `/lgbtq-affirming-hearing-care`**, the New York version — Gender Recognition Act, and 104,000 New Yorkers living with diagnosed HIV with 57% aged 50+. Linked from two service hubs. |
 
