@@ -1551,17 +1551,30 @@ export const bingSiteVerification =
 
 export function buildMetadata(page: SitePage): Metadata {
   const image = page.heroImage?.src || "/opengraph-image";
-  const robots = page.path === "/thank-you" ? { index: false, follow: true } : undefined;
-  const verification =
+
+  // DO NOT reintroduce `robots: undefined` / `verification: undefined` here.
+  // Next resolves metadata by walking layout -> page and letting the closest
+  // value win PER KEY — but a key that is merely PRESENT with the value
+  // undefined counts as the closest value and overrides the parent with
+  // nothing. It does not fall back. Because every page on this site goes
+  // through buildMetadata, that one word silently stripped the root layout's
+  // robots directive from all 147 pages: max-image-preview:large was set,
+  // typechecked, built and deployed, and appeared on exactly zero of them.
+  // The sister site got the identical change on the same day and it worked,
+  // because CHC has no equivalent helper. Spread the key in only when there
+  // is something to say, so inheritance survives.
+  const robotsOverride =
+    page.path === "/thank-you" ? { robots: { index: false, follow: true } } : {};
+  const verificationOverride =
     page.path === "/" && bingSiteVerification
-      ? { other: { "msvalidate.01": bingSiteVerification } }
-      : undefined;
+      ? { verification: { other: { "msvalidate.01": bingSiteVerification } } }
+      : {};
 
   return {
     title: page.metaTitle,
     description: page.metaDescription,
-    robots,
-    verification,
+    ...robotsOverride,
+    ...verificationOverride,
     alternates: {
       canonical: page.canonical
     },
