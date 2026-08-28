@@ -4767,15 +4767,24 @@ function LiveContactPage({ page }: { page: SitePage }) {
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{page.h1}</h1>
-          <LiveRule />
-          <div className="mt-[38px]">
-            <LegacyParagraphs className="max-w-none" paragraphs={intro.length ? intro : page.body.slice(0, 4)} />
+      <LocalHero
+        accent="#7bdcb5"
+        badge="Contact"
+        eyebrow="Contact us"
+        primaryHref={officeLocations[0]?.phoneHref}
+        primaryLabel={officeLocations[0] ? `Call ${officeLocations[0].city} ${officeLocations[0].phone}` : undefined}
+        secondaryHref={officeLocations[1]?.phoneHref}
+        secondaryLabel={officeLocations[1] ? `Call ${officeLocations[1].city} ${officeLocations[1].phone}` : undefined}
+        subtitle={intro[0] || page.body[0] || ""}
+        title={page.h1}
+      />
+      {intro.slice(1).length || page.body.length > 1 ? (
+        <section className="bg-white py-[52px]">
+          <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+            <LegacyParagraphs className="max-w-none" paragraphs={intro.slice(1).length ? intro.slice(1) : page.body.slice(1, 4)} />
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
       <section className="bg-white pb-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Audiology Associates of Westchester</h2>
@@ -4923,18 +4932,38 @@ function LiveTeamPage({ page }: { page: SitePage }) {
   return (
     <>
       <Breadcrumbs page={page} />
-      <section className="bg-[#005a9c] py-[34px] text-center">
+      <LocalHero
+        accent="#9bd3f4"
+        badge="Our audiologists"
+        eyebrow="About us"
+        primaryHref={primaryPhoneHref}
+        primaryLabel={`Call ${primaryPhone}`}
+        secondaryHref="/contact-us"
+        secondaryLabel="Contact us"
+        subtitle={intro[0] || page.body[0] || ""}
+        title={page.h1}
+      />
+      <section className="bg-white py-[46px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <p className="text-[44px] font-bold leading-tight text-white max-md:text-[36px]">Meet the Team</p>
-        </div>
-      </section>
-      <section className="bg-white py-[52px]">
-        <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-          <h1 className="text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{page.h1}</h1>
-          <LiveRule />
-          <div className="mt-[38px]">
-            <LegacyParagraphs className="max-w-none" paragraphs={intro.length ? intro : page.body.slice(0, 2)} />
-          </div>
+          {intro.slice(1).length ? (
+            <LegacyParagraphs className="max-w-none" paragraphs={intro.slice(1)} />
+          ) : null}
+          {/* This page runs to 21,000px on a phone -- twenty-six screens of
+              stacked bios. The credential wall stays, because it is the most
+              persuasive content on the site for the person doing the choosing.
+              What it needed was a way to reach the fifth audiologist without
+              scrolling past the first four. */}
+          <nav aria-label="Jump to an audiologist" className="mt-8 flex flex-wrap gap-3">
+            {legacyTeamProfiles.flatMap((section) => section.profiles).map((person) => (
+              <a
+                className="focus-ring inline-flex min-h-[44px] items-center rounded-md border border-[#d5e7f4] bg-[#f7fbfd] px-4 text-[16px] font-bold text-[#005a9c] hover:bg-[#eaf4fb]"
+                href={`#${anchorId(person.name)}`}
+                key={person.name}
+              >
+                {person.name.replace(/^Dr\.\s*/, "").replace(/,.*$/, "")}
+              </a>
+            ))}
+          </nav>
         </div>
       </section>
       {legacyTeamProfiles.map((section) => (
@@ -4944,7 +4973,7 @@ function LiveTeamPage({ page }: { page: SitePage }) {
           </div>
           <div className="mx-auto max-w-[1660px] px-[64px] pb-[20px] pt-[44px] max-md:px-5">
             {section.profiles.map((person, index) => (
-              <article className="pb-[54px]" key={person.name}>
+              <article className="scroll-mt-[90px] pb-[54px]" id={anchorId(person.name)} key={person.name}>
                 <div className="grid gap-[44px] md:grid-cols-[minmax(0,1fr)_340px] md:items-start">
                   <div>
                     <h3 className="text-[34px] font-bold leading-tight text-black max-md:text-[29px]">
@@ -4958,6 +4987,10 @@ function LiveTeamPage({ page }: { page: SitePage }) {
                     </h3>
                     <h2 className="mt-[8px] text-[18px] font-black leading-tight text-[#003f6f]">{person.pronouns}</h2>
                     <h3 className="mt-[8px] text-[24px] font-bold leading-tight text-black max-md:text-[21px]">{person.role}</h3>
+                    <p className="mt-[8px] text-[19px] leading-tight text-black">
+                      <span className="font-bold">Sees patients at:</span>{" "}
+                      {providerOfficeNames(providerForName(person.name)?.officePaths).join(" and ")}
+                    </p>
                     {providerForName(person.name) ? (
                       <Link className="mt-[14px] inline-block text-[19px] font-bold text-[#005a9c] underline" href={providerPath(providerForName(person.name)!)}>
                         View {person.name.replace(/^Dr\.\s*/, "").replace(/,\s*Au\.D\..*$/, "")}&apos;s profile
