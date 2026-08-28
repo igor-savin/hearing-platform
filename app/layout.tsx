@@ -63,6 +63,18 @@ export const metadata: Metadata = {
   title: "California Hearing Center | Turn Up Your Life with Better Hearing",
   description:
     "Patient-centered audiology care, hearing aids, tinnitus therapy, and hearing protection in San Mateo and San Carlos, CA.",
+  // VS-01. Without max-image-preview:large, Google is free to hold every image
+  // on this site to a small thumbnail in Images, Discover and the AI surfaces.
+  // It is a meta/X-Robots-Tag directive, NOT a robots.txt one — putting it in
+  // robots.txt does nothing, which is worth knowing before someone "fixes" it
+  // there. Set at the root so every page inherits it.
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
   icons: {
     icon: [
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
