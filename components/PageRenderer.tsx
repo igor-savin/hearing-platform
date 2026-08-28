@@ -4953,7 +4953,7 @@ function LiveTeamPage({ page }: { page: SitePage }) {
               persuasive content on the site for the person doing the choosing.
               What it needed was a way to reach the fifth audiologist without
               scrolling past the first four. */}
-          <nav aria-label="Jump to an audiologist" className="mt-8 flex flex-wrap gap-3">
+          <nav aria-label="Jump to a team member" className="mt-8 flex flex-wrap gap-3">
             {legacyTeamProfiles.flatMap((section) => section.profiles).map((person) => (
               <a
                 className="focus-ring inline-flex min-h-[44px] items-center rounded-md border border-[#d5e7f4] bg-[#f7fbfd] px-4 text-[16px] font-bold text-[#005a9c] hover:bg-[#eaf4fb]"
@@ -4987,10 +4987,12 @@ function LiveTeamPage({ page }: { page: SitePage }) {
                     </h3>
                     <h2 className="mt-[8px] text-[18px] font-black leading-tight text-[#003f6f]">{person.pronouns}</h2>
                     <h3 className="mt-[8px] text-[24px] font-bold leading-tight text-black max-md:text-[21px]">{person.role}</h3>
-                    <p className="mt-[8px] text-[19px] leading-tight text-black">
-                      <span className="font-bold">Sees patients at:</span>{" "}
-                      {providerOfficeNames(providerForName(person.name)?.officePaths).join(" and ")}
-                    </p>
+                    {providerForName(person.name) ? (
+                      <p className="mt-[8px] text-[19px] leading-tight text-black">
+                        <span className="font-bold">Sees patients at:</span>{" "}
+                        {providerOfficeNames(providerForName(person.name)?.officePaths).join(" and ")}
+                      </p>
+                    ) : null}
                     {providerForName(person.name) ? (
                       <Link className="mt-[14px] inline-block text-[19px] font-bold text-[#005a9c] underline" href={providerPath(providerForName(person.name)!)}>
                         View {person.name.replace(/^Dr\.\s*/, "").replace(/,\s*Au\.D\..*$/, "")}&apos;s profile
