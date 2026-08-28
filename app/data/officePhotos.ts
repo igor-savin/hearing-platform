@@ -18,6 +18,12 @@ export type OfficePhoto = { src: string; step: string; alt: string; caption: str
 
 export const sanMateoArrival: OfficePhoto[] = [
   {
+    src: "/assets/office/san-mateo__00-building.jpg",
+    step: "This is the building",
+    alt: "The California Hearing Center office at 88 N. San Mateo Drive seen from across the street: a long single-storey building with a bright red roofline, a lawn, a brick path to the front steps, and the driveway running down its right-hand side.",
+    caption: "A single-storey building with a red roofline, set back behind a lawn. The driveway you want is on the right-hand side.",
+  },
+  {
     src: "/assets/office/san-mateo__01-sign.jpg",
     step: "Look for the sign",
     alt: "A red-and-white California Hearing Center sign reading 88, standing on a lawn beside the sidewalk on N. San Mateo Drive.",
@@ -49,7 +55,16 @@ export const sanMateoArrival: OfficePhoto[] = [
   },
 ];
 
-/** Photographs that belong to a given page, for the sitemap's image entries. */
+/** Photographs that belong to a given page, for the sitemap's image entries.
+ *
+ * These are images a page renders from a component rather than from its page
+ * data, so nothing in corePages/blogPosts knows they exist and app/sitemap.ts
+ * cannot find them on its own. Add a page here when you put a photograph on it
+ * in JSX. */
 export const officePhotosByPath: Record<string, string[]> = {
   "/contact/san-mateo/": sanMateoArrival.map((p) => p.src),
+  // VS-19: the homepage office band. The same building shot the San Mateo
+  // contact page uses as its hero -- one file, two pages, which is fine: both
+  // pages genuinely show it.
+  "/": ["/assets/core-photos/contact__san-mateo.jpg"],
 };

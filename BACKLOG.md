@@ -4,12 +4,39 @@ Shared running list for both practices. **Add anything here yourself** — a lin
 "Igor's inbox" is enough, however rough. Claude reads this file at the start of a
 session and keeps the rest of it current.
 
-Last updated: 28 August 2026 (real office photography on the San Mateo page)
+Last updated: 28 August 2026 (visual-search backlog opened; VS-01, VS-02, VS-03 shipped)
 
 ---
 
 ## Igor's inbox — unsorted, add freely
 
+- **The San Mateo front door advertises a lunch closure that does not exist**
+  (raised 28 Aug, needs a person not code). The entrance decal reads "Closed for lunch
+  12:00pm - 1:00pm". Igor confirmed 28 Aug that this is stale: there is no lunch
+  closure, and the website and Google Business Profile are both correct at Mon-Thu
+  9-5, Fri 9-3. Two things follow. (1) The decal should be replaced -- it is the last
+  thing a patient reads before pulling on the door. (2) More urgently, **a photograph
+  of that door is the second most-viewed image on the San Mateo Business Profile at
+  1,670 views**, so Google is showing 1,670 people a year hours the practice does not
+  keep. Worth deleting or replacing that photo in the GBP photo manager now, well
+  before the decal itself gets changed. It is also why that photo, which is otherwise
+  a good one, is not being used on the website.
+- **Visual Search Backlog lives in an artifact, not here** (raised 28 Aug). 20 items
+  scored against the AWR images and visual-search guide, tick boxes saving to the page:
+  https://claude.ai/code/artifact/b0bc18c9-6a80-49cf-9dcc-837385ec21e7
+  Done so far: VS-01 max-image-preview:large (both sites, verified on all 194 AAW and
+  310 CHC sitemap URLs), VS-02 sitemap image entries (261 on CHC, 133 on AAW, every
+  URL resolving), VS-03 the AAW homepage hero alt. Next two worth doing: VS-05 pull
+  office photography from the CHC Google Business Profile library, and VS-19 the CHC
+  homepage, which still has no photograph of the practice on it.
+- **Reading artifacts from a cloud session is blocked** (raised 28 Aug). The Artifact
+  read tool cannot fetch *.frame.claudeusercontent.com under this environment's network
+  allowlist, so I had to read the backlog through your browser a screenshot at a time.
+  Adding that domain under environment settings -> Code -> Network access would fix it.
+- **12 brand device shots render on the AAW homepage but are listed only on their own
+  product pages** (raised 28 Aug). Not a defect -- every one of them is in the sitemap,
+  and the product page is the better page for Google to associate a device shot with.
+  Noted so nobody "fixes" it by duplicating them onto the homepage entry.
 - **Two arrival facts only you can confirm** (raised 28 Aug). The new walkthrough on
   `/contact/san-mateo/` describes exactly what the photographs show and no more, because
   I could not confirm either of these: (a) is the lot behind the building free, and is it

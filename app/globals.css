@@ -3721,3 +3721,62 @@ p {
   font-size: 0.97rem;
   line-height: 1.62;
 }
+
+/* ---- Homepage office band (VS-19) --------------------------------------
+   The first photograph of the actual practice to appear on the homepage.
+   Rendered as a real <img> through SiteImage rather than a CSS background --
+   the stock doctor panel further down uses `background: url(...)`, which is
+   why that image has no alt text and cannot appear in the image sitemap. */
+.office-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 540px) minmax(0, 1fr);
+  gap: 44px;
+  align-items: center;
+  padding: 20px 0 70px;
+}
+.office-showcase-media {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 52px rgba(25, 70, 80, .16);
+  background: var(--cream);
+}
+.office-showcase-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.office-showcase .section-kicker { color: var(--teal); }
+.office-showcase h2 {
+  color: var(--teal-dark);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  margin: 6px 0 14px;
+}
+.office-showcase p {
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.65;
+  margin: 0 0 14px;
+  max-width: 56ch;
+}
+.office-showcase-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  margin: 0;
+}
+.office-showcase-links a {
+  color: var(--teal);
+  font-weight: 600;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .office-showcase {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 12px 0 52px;
+  }
+}

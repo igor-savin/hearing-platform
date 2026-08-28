@@ -669,6 +669,7 @@ export const imageDimensions: Record<string, readonly [number, number]> = {
   "/assets/ida.webp": [680, 680],
   "/assets/logo-alt.png": [185, 80],
   "/assets/logo.png": [586, 148],
+  "/assets/office/san-mateo__00-building.jpg": [765, 510],
   "/assets/office/san-mateo__01-sign.jpg": [1200, 800],
   "/assets/office/san-mateo__02-driveway.jpg": [1200, 800],
   "/assets/office/san-mateo__03-parking.jpg": [1200, 800],

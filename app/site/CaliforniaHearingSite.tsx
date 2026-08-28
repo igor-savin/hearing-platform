@@ -2017,6 +2017,43 @@ function HomePage() {
         <div className="trust-item"><strong>Doctors</strong><span>of audiology on staff</span></div>
       </section>
 
+      {/* VS-19. Until now the homepage carried no photograph of the practice at
+          all: a stock clinician on the Ida panel, and otherwise illustration.
+          The trust bar directly above claims two offices; this is the first
+          time the page shows one of them. Real photograph, real address, and a
+          real alt attribute -- a CSS background (which is how the stock doctor
+          image is loaded) would be invisible to Google Images and unable to
+          carry alt text, which rather defeats the point.
+
+          San Carlos is deliberately not shown rather than illustrated with
+          stock: there is no photography of that office yet. Saying "our San
+          Mateo office" and linking to San Carlos is honest; a stock storefront
+          captioned 1008 Laurel Street would not be, and the site has already
+          made that mistake once. */}
+      <section className="container office-showcase">
+        <div className="office-showcase-media">
+          <SiteImage
+            src="/assets/core-photos/contact__san-mateo.jpg"
+            alt="The California Hearing Center office at 88 N. San Mateo Drive: a single-storey building with a red roofline, and a red-and-white sign on the lawn at the sidewalk."
+            sizes="(max-width: 900px) 92vw, 540px"
+          />
+        </div>
+        <div>
+          <p className="section-kicker">Our offices</p>
+          <h2>Come and see us</h2>
+          <p>
+            Our main office is at <strong>88 N. San Mateo Drive</strong>, a few minutes off
+            downtown San Mateo, with a parking lot behind the building and a ramp from the lot
+            that avoids the front steps. We also see patients in San Carlos, about ten minutes
+            south, and both offices share one clinical team and one set of records.
+          </p>
+          <p className="office-showcase-links">
+            <a href="/contact/san-mateo/">See what it looks like when you arrive</a>
+            <a href="/contact/san-carlos/">San Carlos office</a>
+          </p>
+        </div>
+      </section>
+
       <section className="service-band">
         <div className="container">
           <p className="section-kicker">Services</p>
