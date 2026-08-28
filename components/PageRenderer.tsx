@@ -3507,11 +3507,36 @@ function LiveLocationPage({ page }: { page: SitePage }) {
   if (!content) return <LivePageBody page={page} />;
   const legacyCity = areaCities.find((item) => item.slug === legacyAreaCitySlugs[page.path]);
   const legacyOffice = legacyCity ? locations.find((location) => location.path === officePathForCity(legacyCity)) || null : null;
+
+  // Is this page one of the two offices, rather than a town we serve?
+  const thisOffice = locations.find((location) => location.path === page.path && location.type === "office");
+
+  // The sections that actually carry the address, phone, hours, arrival note
+  // and map. On the office pages these were rendering LAST, so /harrison-ny --
+  // a page titled "Audiologist in Harrison, NY" -- opened with a paragraph
+  // about Harrison being a commuter suburb where twenty percent of the
+  // population is under eighteen, and put the address four sections down.
+  const detailSections = content.sections.filter(
+    (section) => Boolean(section.addressLines?.length || section.phone || section.hours?.length || section.mapQuery)
+  );
+  const proseSections = content.sections.filter((section) => !detailSections.includes(section));
+
+  // Lead with the paragraph about the practice, not the one about the census.
+  const officeParagraph = content.paragraphs.find((paragraph) => /\bour (main )?office\b|out of this office/i.test(paragraph));
+  const heroSubtitle = thisOffice
+    ? officeParagraph || content.paragraphs[0] || ""
+    : content.paragraphs.slice(0, 2).join(" ");
+
   const legacyHero = legacyCity
     ? {
         ...cityHeroProps(legacyCity, legacyOffice),
         title: content.heading,
-        subtitle: content.paragraphs.slice(0, 2).join(" ")
+        subtitle: heroSubtitle,
+        // On the Harrison office page the primary button read "View Harrison
+        // office". It linked to the page you were already on.
+        ...(thisOffice
+          ? { primaryHref: thisOffice.phoneHref, primaryLabel: `Call ${thisOffice.phone}` }
+          : {})
       }
     : null;
 
@@ -3530,6 +3555,12 @@ function LiveLocationPage({ page }: { page: SitePage }) {
           </div>
         </section>
       )}
+      {/* Address, hours, arrival note and map come first on an office page. */}
+      {thisOffice
+        ? detailSections.map((section) => (
+            <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
+          ))
+        : null}
       {legacyHero && content.paragraphs.length ? (
         <section className="bg-white py-[52px]">
           <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
@@ -3541,7 +3572,7 @@ function LiveLocationPage({ page }: { page: SitePage }) {
           </div>
         </section>
       ) : null}
-      {content.sections.map((section) => (
+      {(thisOffice ? proseSections : content.sections).map((section) => (
         <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
       ))}
       <LegacyAreaCityPlanningSection page={page} />
