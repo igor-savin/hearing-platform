@@ -768,6 +768,58 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
 // "Call the nearest location" whose href was /contact-us, so a patient who tapped
 // a button that said "call" got a web page instead of the dialler. There is no
 // single "nearest" office to link to, so both are offered by name.
+// Patient reviews, wherever they are worth showing. Lifted out of the homepage
+// so /hearing-testing and /how-we-can-help can carry the same block: those are
+// the two other pages a patient reads before deciding, and 486 reviews were
+// sitting on /reviews, which nothing links to prominently.
+//
+// No average rating here on purpose. lib/reviews.ts holds 4.9 while the footer
+// badge image reads 5.0, and until those agree the count is the figure nobody
+// disputes. When the rating is settled this is the one place to add it.
+function PatientReviewsBand({
+  heading = "In our patients\u2019 words",
+  className = "section bg-[#f7fbfd]"
+}: {
+  heading?: string;
+  className?: string;
+}) {
+  return (
+    <section className={className}>
+      <div className="container">
+        <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">
+          What patients say &middot; {reviewAggregate.count}+ {reviewAggregate.source} reviews
+        </p>
+        <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f]">{heading}</h2>
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          {testimonials.slice(0, 3).map((testimonial) => (
+            <article
+              className="rounded-md border border-[#d5e7f4] bg-white p-6 shadow-[0_14px_32px_rgba(0,90,156,0.08)]"
+              key={testimonial.author}
+            >
+              <div aria-hidden="true" className="flex gap-1 text-[#ffd45a]">
+                {[0, 1, 2, 3, 4].map((star) => (
+                  <Star fill="currentColor" key={star} size={18} strokeWidth={0} />
+                ))}
+              </div>
+              <p className="mt-4 text-[17px] leading-7 text-[var(--foreground)]">
+                &ldquo;{testimonial.quote}&rdquo;
+              </p>
+              <p className="mt-5 font-black text-[#003f6f]">{testimonial.author}</p>
+              <p className="text-[15px] text-[var(--muted)]">{testimonial.tag} &middot; Verified Google review</p>
+            </article>
+          ))}
+        </div>
+        <Link
+          className="focus-ring mt-8 inline-flex min-h-[44px] items-center rounded-md border-2 border-[#005a9c] px-6 py-3 font-black text-[#005a9c] transition hover:bg-[#eaf4fb]"
+          href="/reviews"
+        >
+          Read more patient reviews
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 function OfficeCallButtons({ className = "" }: { className?: string }) {
   const offices = locations.filter((location) => location.type === "office");
   return (
@@ -1254,37 +1306,7 @@ function HomepageProofFirst() {
         </div>
       </section>
 
-      <section className="section bg-[#f7fbfd]">
-        <div className="container">
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">What patients say</p>
-          <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f]">In our patients&rsquo; words</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            {testimonials.slice(0, 3).map((testimonial) => (
-              <article
-                className="rounded-md border border-[#d5e7f4] bg-white p-6 shadow-[0_14px_32px_rgba(0,90,156,0.08)]"
-                key={testimonial.author}
-              >
-                <div aria-hidden="true" className="flex gap-1 text-[#ffd45a]">
-                  {[0, 1, 2, 3, 4].map((star) => (
-                    <Star fill="currentColor" key={star} size={18} strokeWidth={0} />
-                  ))}
-                </div>
-                <p className="mt-4 text-[17px] leading-7 text-[var(--foreground)]">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </p>
-                <p className="mt-5 font-black text-[#003f6f]">{testimonial.author}</p>
-                <p className="text-[15px] text-[var(--muted)]">{testimonial.tag} &middot; Verified Google review</p>
-              </article>
-            ))}
-          </div>
-          <Link
-            className="focus-ring mt-8 inline-flex rounded-md border-2 border-[#005a9c] px-6 py-3 font-black text-[#005a9c] transition hover:bg-[#eaf4fb]"
-            href="/reviews"
-          >
-            Read more patient reviews
-          </Link>
-        </div>
-      </section>
+      <PatientReviewsBand />
 
       <section className="bg-[#003f6f] py-16 text-white">
         <div className="container grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
@@ -2269,6 +2291,7 @@ function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PatientReviewsBand />
       <AreaFaqSection page={page} title="How We Can Help FAQs" />
       <ProductCta />
     </>
@@ -4498,6 +4521,7 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
       <TinnitusVisitAndClinician page={page} />
 
       <ServiceDecisionGuide page={page} />
+      <PatientReviewsBand />
       <TrustProcessSection />
 
       {page.faqs.length ? (
