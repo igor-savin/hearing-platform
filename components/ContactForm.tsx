@@ -86,7 +86,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
           Name
           <input
-            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+            className="focus-ring h-[48px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
             name="name"
             required
             type="text"
@@ -95,7 +95,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
           Phone
           <input
-            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+            className="focus-ring h-[48px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
             name="phone"
             type="tel"
           />
@@ -104,7 +104,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
       <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
         Email
         <input
-          className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+          className="focus-ring h-[48px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
           name="email"
           type="email"
         />
@@ -119,7 +119,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
       <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
         How did you find us? <span className="font-normal text-[#666]">(optional)</span>
         <select
-          className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+          className="focus-ring h-[48px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
           name="referralSource"
           onChange={(event) => setReferralSource(event.target.value)}
           value={referralSource}
@@ -136,7 +136,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         <label className="grid gap-[6px] text-[15px] font-bold text-[#333]">
           What did you ask it? <span className="font-normal text-[#666]">(optional)</span>
           <input
-            className="focus-ring h-[42px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
+            className="focus-ring h-[48px] border border-[#bcbcbc] bg-white px-[10px] text-[16px] font-normal text-[#333]"
             name="aiPrompt"
             placeholder="e.g. best audiologist near White Plains for tinnitus"
             type="text"
@@ -154,7 +154,7 @@ export function ContactForm({ context = "General contact" }: { context?: string 
         />
       </label>
       <button
-        className="focus-ring mt-[4px] inline-flex min-h-[42px] w-fit items-center justify-center bg-[#005a9c] px-[30px] py-[12px] text-[15px] font-bold uppercase tracking-[0.04em] text-white disabled:cursor-not-allowed disabled:opacity-70"
+        className="focus-ring mt-[4px] inline-flex min-h-[48px] w-fit items-center justify-center bg-[#005a9c] px-[30px] py-[14px] text-[16px] font-bold uppercase tracking-[0.04em] text-white disabled:cursor-not-allowed disabled:opacity-70"
         data-track="contact-submit"
         disabled={status === "sending"}
         type="submit"

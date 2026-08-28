@@ -26,19 +26,19 @@ export function OfficesStrip() {
 
   return (
     <div className="sticky top-0 z-40 bg-[#003f6f] text-white">
-      <div className="mx-auto flex max-w-[1760px] flex-wrap items-center justify-center gap-x-9 gap-y-1 px-4 py-[7px] text-[15px] leading-tight max-lg:gap-x-5 max-lg:text-[13px]">
+      <div className="mx-auto flex max-w-[1760px] flex-wrap items-center justify-center gap-x-9 gap-y-0 px-4 py-0 text-[15px] leading-tight max-lg:gap-x-6 max-lg:text-[15px]">
         <MapPin aria-hidden="true" className="shrink-0 text-[#ffd45a] max-lg:hidden" size={16} />
         {offices.map((office) => (
           <p className="flex items-center gap-2 max-lg:gap-1.5" key={office.path}>
             <Link
-              className="focus-ring font-black underline-offset-2 hover:underline"
+              className="focus-ring inline-flex min-h-[40px] items-center font-black underline-offset-2 hover:underline max-lg:min-h-[44px]"
               href={office.path}
             >
               {office.city}
             </Link>
             <span className="text-white/75 max-lg:hidden">{office.streetAddress}</span>
             <a
-              className="focus-ring font-bold underline decoration-[#ffd45a] decoration-2 underline-offset-2 max-lg:no-underline"
+              className="focus-ring inline-flex min-h-[40px] items-center font-bold underline decoration-[#ffd45a] decoration-2 underline-offset-2 max-lg:hidden"
               data-track="phone-offices-strip"
               href={office.phoneHref}
             >

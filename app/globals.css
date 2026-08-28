@@ -297,9 +297,11 @@ select {
   border-radius: 999px;
   color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 850;
-  padding: 10px 15px;
+  /* 44px minimum: this is a real control, not a link in a sentence. */
+  min-height: 44px;
+  padding: 11px 18px;
   transition: background 180ms ease, color 180ms ease;
 }
 

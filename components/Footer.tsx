@@ -21,7 +21,7 @@ export function Footer() {
               <p className="mt-2 text-[21px] leading-[1.25]">{harrison.address}</p>
               <p className="text-[21px] leading-[1.25]">
                 Phone:{" "}
-                <a className="focus-ring text-[#005a9c] underline" href={harrison.phoneHref}>
+                <a className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href={harrison.phoneHref}>
                   {harrison.phone}
                 </a>
               </p>
@@ -62,7 +62,7 @@ export function Footer() {
               <p className="mt-2 text-[21px] leading-[1.25]">{somers.address}</p>
               <p className="text-[21px] leading-[1.25]">
                 Phone:{" "}
-                <a className="focus-ring text-[#005a9c] underline" href={somers.phoneHref}>
+                <a className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href={somers.phoneHref}>
                   {somers.phone}
                 </a>
               </p>
@@ -81,20 +81,20 @@ export function Footer() {
         {/* Hearing Tips and the Referral Program had zero inbound internal links
             anywhere on the site -- reachable only via the sitemap. The footer is
             the right home for evergreen resources like these. */}
-        <nav aria-label="Helpful links" className="mt-[34px] flex flex-wrap justify-center gap-x-6 gap-y-2 text-[15px] leading-tight">
-          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-tips">
+        <nav aria-label="Helpful links" className="mt-[34px] flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[16px] leading-tight">
+          <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/hearing-tips">
             Hearing Tips
           </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/hearing-aid-referral-program">
+          <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/hearing-aid-referral-program">
             Referral Program
           </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/reviews">
+          <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/reviews">
             Patient Reviews
           </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/patient-forms">
+          <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/patient-forms">
             Patient Forms
           </Link>
-          <Link className="focus-ring text-[#005a9c] underline" href="/privacy">
+          <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/privacy">
             Privacy
           </Link>
         </nav>
