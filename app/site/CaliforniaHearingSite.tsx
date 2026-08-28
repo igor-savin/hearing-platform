@@ -3,6 +3,7 @@ import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
 import { blogPhotos } from "../data/blogPhotos";
+import { sanMateoArrival } from "../data/officePhotos";
 import { pageVideos as harvestedVideos } from "../data/pageVideos";
 import { pageVideosManual } from "../data/pageVideosManual";
 import { corePages } from "../data/corePages";
@@ -333,39 +334,6 @@ function OfficeMaps({ only }: { only?: string }) {
  * is exactly the kind of thing a patient discovers is wrong while circling the
  * block at ten to nine.
  */
-const SAN_MATEO_ARRIVAL: { src: string; step: string; alt: string; caption: string }[] = [
-  {
-    src: "/assets/office/san-mateo__01-sign.jpg",
-    step: "Look for the sign",
-    alt: "A red-and-white California Hearing Center sign reading 88, standing on a lawn beside the sidewalk on N. San Mateo Drive.",
-    caption: "Our sign stands on the lawn right at the sidewalk, so you can pick it out from the road.",
-  },
-  {
-    src: "/assets/office/san-mateo__02-driveway.jpg",
-    step: "Turn up the driveway",
-    alt: "A driveway running alongside the office building, with a banner on the fence reading California Hearing Center Parking and an arrow.",
-    caption: "A driveway runs up the side of the building. A banner with our logo points the way in.",
-  },
-  {
-    src: "/assets/office/san-mateo__03-parking.jpg",
-    step: "Park at the top",
-    alt: "An open parking lot behind the office building with marked spaces and a few parked cars.",
-    caption: "The lot sits behind the building, off the street and out of the downtown traffic.",
-  },
-  {
-    src: "/assets/office/san-mateo__04-ramp.jpg",
-    step: "A step-free way in",
-    alt: "A concrete ramp with a metal handrail running from the parking lot along the side of the office building.",
-    caption: "A ramp with a handrail runs from the lot along the side of the building. If steps are difficult, tell us when you book and we will meet you at whichever door is easiest.",
-  },
-  {
-    src: "/assets/office/san-mateo__05-entrance.jpg",
-    step: "Or come in from the front",
-    alt: "The front of the office building, number 88, with a brick path leading to a short flight of steps and a handrail.",
-    caption: "From the sidewalk, a brick path leads to the front door up a short flight of steps with a handrail.",
-  },
-];
-
 function ArrivalWalkthrough() {
   return (
     <section className="container arrival" aria-labelledby="arrival-heading">
@@ -376,7 +344,7 @@ function ArrivalWalkthrough() {
         so you know what you are looking for before you set off.
       </p>
       <ol className="arrival-grid">
-        {SAN_MATEO_ARRIVAL.map((s, i) => (
+        {sanMateoArrival.map((s, i) => (
           <li className="arrival-card" key={s.src}>
             <SiteImage
               src={s.src}
