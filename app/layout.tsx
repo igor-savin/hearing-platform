@@ -17,6 +17,18 @@ export const metadata: Metadata = {
   },
   description:
     "Audiology Associates of Westchester provides hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, and hearing aid repair for Westchester County and nearby communities.",
+  // VS-01. Without max-image-preview:large, Google is free to hold every image
+  // on this site to a small thumbnail in Images, Discover and the AI surfaces.
+  // It is a meta/X-Robots-Tag directive, NOT a robots.txt one — putting it in
+  // robots.txt does nothing, which is worth knowing before someone "fixes" it
+  // there. Set at the root so every page inherits it.
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

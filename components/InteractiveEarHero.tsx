@@ -133,9 +133,16 @@ export function InteractiveEarHero() {
       className={`aa-ear-hero ${playing ? "is-playing" : "is-paused"} ${aided ? "is-aided" : "is-natural"}`}
       style={heroStyle}
     >
-      <div className="aa-ear-art" aria-hidden="true">
+      {/* VS-03. This was alt="" inside an aria-hidden wrapper — declared pure
+          decoration on both axes. It is not: it is a detailed anatomical
+          cutaway (canal, drum, ossicles, cochlea) with a behind-the-ear aid
+          fitted, and it is the largest, highest-priority image on the site's
+          most important page. Empty alt told Google to ignore our single best
+          image-search asset. The overlay and the sound runner below ARE
+          decoration and keep their aria-hidden. */}
+      <div className="aa-ear-art">
         <Image
-          alt=""
+          alt="Cutaway illustration of the human ear showing the ear canal, eardrum, ossicles and cochlea, with a behind-the-ear hearing aid in place and a sound wave entering from the left."
           fill
           fetchPriority="high"
           priority
