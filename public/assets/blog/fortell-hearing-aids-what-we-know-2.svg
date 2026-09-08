@@ -4,7 +4,7 @@
   <rect x="0" y="0" width="800" height="90" fill="url(#hd)"/>
   <rect x="0" y="86" width="800" height="4" fill="#2f7fd6"/>
   <text x="44" y="44" font-family="Georgia, serif" font-size="25" fill="#ffffff" font-weight="bold">Fortell at a glance</text>
-  <text x="44" y="70" font-family="Georgia, serif" font-size="15" fill="#86d0d5">A competitor's read, as of 26 August 2026</text>
+  <text x="44" y="70" font-family="Georgia, serif" font-size="15" fill="#86d0d5">A competitor's read, as of 8 September 2026</text>
   
     <circle cx="66" cy="149.83333333333334" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
     <text x="66" y="156.83333333333334" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">1</text>
@@ -28,8 +28,8 @@
     <line x1="108" y1="372.66666666666663" x2="756" y2="372.66666666666663" stroke="#e5eceb" stroke-width="2"/>
     <circle cx="66" cy="404.49999999999994" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
     <text x="66" y="411.49999999999994" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">5</text>
-    <text x="108" y="399.49999999999994" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Evidence is company-published</text>
-    <text x="108" y="422.49999999999994" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">No independent lab measurement has been released.</text>
+    <text x="108" y="399.49999999999994" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Evidence is company-funded</text>
+    <text x="108" y="422.49999999999994" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">Both studies funded and authored by Fortell.</text>
     <line x1="108" y1="436.33333333333326" x2="756" y2="436.33333333333326" stroke="#e5eceb" stroke-width="2"/>
     <circle cx="66" cy="468.16666666666663" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
     <text x="66" y="475.16666666666663" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">6</text>
