@@ -132,7 +132,27 @@ const linkedLocationNames = new Map(
 const linkedPlacePattern =
   /(Audiology Associates of Westchester|White Plains, NY|Harrison, NY|Scarsdale, NY|Rye, NY|Mt\. Kisco, NY|Greenwich, CT|Somers, NY)/g;
 
+const urlPattern = /(https?:\/\/[^\s<>"')\]]+[^\s<>"')\].,;:])/g;
+
 function linkifyText(text: string) {
+  return text.split(urlPattern).map((chunk, chunkIndex) =>
+    /^https?:\/\//.test(chunk) ? (
+      <a
+        className="text-[#005a9c] underline break-words"
+        href={chunk}
+        key={`url-${chunkIndex}`}
+        rel="noopener"
+        target="_blank"
+      >
+        {chunk}
+      </a>
+    ) : (
+      <span key={`chunk-${chunkIndex}`}>{linkifyPlaces(chunk)}</span>
+    )
+  );
+}
+
+function linkifyPlaces(text: string) {
   return text.split(linkedPlacePattern).map((part, index) => {
     const href =
       part === "Audiology Associates of Westchester"
