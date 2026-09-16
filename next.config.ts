@@ -378,6 +378,27 @@ const blogRedirects = [
 // Yoast's sitemap paths. Search Console has /sitemap_index.xml on file and
 // crawlers have the child sitemaps cached, so all four would 404 the moment the
 // domain moves. Next's own sitemap lives at /sitemap.xml.
+// Legacy WordPress pages that Search Console still reports as 404 (Page
+// indexing report, 16 Sep 2026). Several are the old office and booking pages,
+// which directories and old bookmarks still point at. The rest are recurring
+// mistyped URLs that were earning impressions.
+const legacyPageRedirects = [
+  { source: "/home/", destination: "/", permanent: true },
+  { source: "/schedule-an-appointment/", destination: "/contact/", permanent: true },
+  { source: "/san-mateo-main-office/", destination: "/contact/san-mateo/", permanent: true },
+  { source: "/san-carlos/", destination: "/contact/san-carlos/", permanent: true },
+  { source: "/online-hearing-test/", destination: "/hearing-testing/", permanent: true },
+  { source: "/hearing-test/", destination: "/hearing-testing/", permanent: true },
+  { source: "/best-hearing-aids-to-buy-in-2025/", destination: "/products/hearing-aids/", permanent: true },
+  { source: "/study-shows-exercise-improves-hearing/", destination: "/the-blog/", permanent: true },
+  { source: "/understanding-and-treating-dry-ears/", destination: "/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/", permanent: true },
+  { source: "/understanding-and-treating-dry-ears-causes-solutions/", destination: "/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/", permanent: true },
+  { source: "/one-ear/", destination: "/tinnitus/one-ear/", permanent: true },
+  { source: "/why-does-hawkeye-have-hearing-aid/", destination: "/why-does-hawkeye-have-hearing-aids/", permanent: true },
+  { source: "/why-does-hawkeye-have-a-hearing-aid/", destination: "/why-does-hawkeye-have-hearing-aids/", permanent: true },
+  { source: "/the-60-60-rule-in-audiology/", destination: "/what-is-the-60-60-rule-in-audiology/", permanent: true },
+];
+
 const legacySitemapRedirects = [
   { source: "/sitemap_index.xml", destination: "/sitemap.xml", permanent: true },
   { source: "/post-sitemap.xml", destination: "/sitemap.xml", permanent: true },
@@ -509,7 +530,7 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
   async redirects() {
-    return [...blogRedirects, ...cityConsolidationRedirects, ...slugCorrectionRedirects, ...wordpressArchiveRedirects, ...legacySitemapRedirects];
+    return [...blogRedirects, ...cityConsolidationRedirects, ...slugCorrectionRedirects, ...wordpressArchiveRedirects, ...legacyPageRedirects, ...legacySitemapRedirects];
   },
   async headers() {
     // Static assets under /public/assets are content-stable (we rename on change),

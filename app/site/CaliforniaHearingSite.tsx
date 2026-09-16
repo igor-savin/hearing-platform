@@ -6,11 +6,13 @@ import { blogPhotos } from "../data/blogPhotos";
 import { sanMateoArrival } from "../data/officePhotos";
 import { pageVideos as harvestedVideos } from "../data/pageVideos";
 import { pageVideosManual } from "../data/pageVideosManual";
+import { videoUploadDates } from "../data/videoUploadDates";
 import { corePages } from "../data/corePages";
 import { YEARS_IN_PRACTICE, YEARS_DARCY, YEARS_LAIS } from "../data/practice";
 import { ReviewBadge, ReviewPanel } from "./ReviewBadge";
 import { corePhotos } from "../data/corePhotos";
 import { cityProfiles, OFFICES as OFFICE_ADDRESSES, type CityProfile } from "../data/cityProfiles";
+import { LOCATIONS, LOCATION_LIST, hoursShort, hoursLong, cityLine } from "../data/locations";
 import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
 import { LeadForm } from "./LeadForm";
@@ -258,24 +260,14 @@ const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: strin
 // Embedded office maps. Uses the keyless Google Maps embed (no API key needed)
 // and lazy-loads the iframe so it costs nothing until scrolled into view — the
 // legacy site had maps on every contact page and the migration dropped them.
-const OFFICES: { key: string; name: string; street: string; cityLine: string; hours: string; q: string }[] = [
-  {
-    key: "san-mateo",
-    name: "San Mateo — Main Office",
-    street: "88 N. San Mateo Drive",
-    cityLine: "San Mateo, CA 94401",
-    hours: "Mon–Thu 9am–5pm · Fri 9am–3pm",
-    q: "88+N+San+Mateo+Drive,+San+Mateo,+CA+94401",
-  },
-  {
-    key: "san-carlos",
-    name: "San Carlos",
-    street: "1008 Laurel Street",
-    cityLine: "San Carlos, CA 94070",
-    hours: "Mon–Wed 9am–1pm, 2–5pm · Thu 9am–12pm, 1–5pm · Fri 9am–12pm, 12:30–3pm",
-    q: "1008+Laurel+Street,+San+Carlos,+CA+94070",
-  },
-];
+const OFFICES: { key: string; name: string; street: string; cityLine: string; hours: string; q: string }[] = LOCATION_LIST.map((loc) => ({
+  key: loc.id,
+  name: loc.id === "san-mateo" ? `${loc.name} — Main Office` : loc.name,
+  street: loc.street,
+  cityLine: cityLine(loc),
+  hours: hoursShort(loc),
+  q: `${loc.street.replace(/\./g, "")}, ${cityLine(loc)}`.replace(/ /g, "+"),
+}));
 
 function OfficeMaps({ only }: { only?: string }) {
   const list = only ? OFFICES.filter((o) => o.key === only) : OFFICES;
@@ -597,8 +589,8 @@ const bespokeContent: Record<string, PageContent> = {
       "Our team will help you choose the right office and next step."
     ],
     sections: [
-      ["San Mateo – Main Office", "88 N. San Mateo Drive, San Mateo, CA 94401. Call 650-342-9449 for appointments and questions. Fax: 650-342-4435. Office hours: Monday–Thursday 9am–5pm, Friday 9am–3pm."],
-      ["San Carlos", "1008 Laurel Street, San Carlos, CA 94070. The same phone number connects you with our team. Fax: 650-342-4435. Office hours: Monday–Wednesday 9am–1pm and 2–5pm, Thursday 9am–12pm and 1–5pm, Friday 9am–12pm and 12:30–3pm."],
+      [LOCATIONS["san-mateo"].label, `${LOCATIONS["san-mateo"].street}, ${cityLine(LOCATIONS["san-mateo"])}. Call ${LOCATIONS["san-mateo"].phoneDisplay} for appointments and questions. Fax: 650-342-4435. Office hours: ${hoursLong(LOCATIONS["san-mateo"])}.`],
+      [LOCATIONS["san-carlos"].label, `${LOCATIONS["san-carlos"].street}, ${cityLine(LOCATIONS["san-carlos"])}. The same phone number connects you with our team. Fax: 650-342-4435. Office hours: ${hoursLong(LOCATIONS["san-carlos"])}.`],
       ["Schedule online", "Use the Schedule Now button for online appointment scheduling through Zocdoc."]
     ],
     bullets: ["San Mateo", "San Carlos", "650-342-9449", "Online scheduling", "Directions", "Appointment help"],
@@ -1518,10 +1510,14 @@ function personSchema(page: SitePage, content: PageContent): object | null {
 function videoSchema(page: SitePage, content: PageContent): object | null {
   const id = pageVideos[page.path];
   if (!id) return null;
+  // Google rejects a VideoObject without uploadDate, so no date means no schema.
+  const uploadDate = videoUploadDates[id];
+  if (!uploadDate) return null;
   return {
     "@context": "https://schema.org",
     "@type": "VideoObject",
     name: content.headline,
+    uploadDate,
     description: plain(content.intro[0] || content.headline).slice(0, 200),
     thumbnailUrl: [`https://i.ytimg.com/vi/${id}/hqdefault.jpg`],
     embedUrl: `https://www.youtube.com/embed/${id}`,
@@ -1903,10 +1899,12 @@ function InnerPage({ page }: { page: SitePage }) {
             </>
           )}
           <hr />
-          <strong>San Mateo – Main Office</strong>
-          <p>88 N. San Mateo Drive<br />San Mateo, CA 94401</p>
-          <strong>San Carlos</strong>
-          <p>1008 Laurel Street<br />San Carlos, CA 94070</p>
+          {LOCATION_LIST.map((loc) => (
+            <Fragment key={loc.id}>
+              <strong>{loc.label}</strong>
+              <p>{loc.street}<br />{cityLine(loc)}</p>
+            </Fragment>
+          ))}
         </aside>
       </section>
 
@@ -2592,8 +2590,8 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
         <div className="footer-main">
           <section className="footer-location">
             <h2 className="footer-heading">San Mateo - Main Office</h2>
-            <p>88 N. San Mateo Drive<br />San Mateo, CA 94401<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
-            <p className="footer-hours">Mon–Thu 9am–5pm · Fri 9am–3pm</p>
+            <p>{LOCATIONS["san-mateo"].street}<br />{cityLine(LOCATIONS["san-mateo"])}<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
+            <p className="footer-hours">{hoursShort(LOCATIONS["san-mateo"])}</p>
             <a className="footer-button" href="https://www.google.com/maps/dir//88+N.+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
@@ -2601,8 +2599,8 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
           </a>
           <section className="footer-location">
             <h2 className="footer-heading">San Carlos</h2>
-            <p>1008 Laurel Street<br />San Carlos, CA 94070<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
-            <p className="footer-hours">Mon–Wed 9am–1pm, 2–5pm · Thu 9am–12pm, 1–5pm · Fri 9am–12pm, 12:30–3pm</p>
+            <p>{LOCATIONS["san-carlos"].street}<br />{cityLine(LOCATIONS["san-carlos"])}<br />Phone: <a href="tel:+16503429449">650-342-9449</a></p>
+            <p className="footer-hours">{hoursShort(LOCATIONS["san-carlos"])}</p>
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">

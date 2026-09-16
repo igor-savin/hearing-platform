@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { FOUNDED } from "./data/practice";
+import { LOCATIONS, postalAddress, schemaHours, type Location } from "./data/locations";
 import Script from "next/script";
 import { ConversionTracking } from "./site/ConversionTracking";
 import "./globals.css";
@@ -162,6 +163,25 @@ const APPOINTMENTS_CONTACT = {
   availableLanguage: ["English", "Arabic", "Portuguese"],
 };
 
+function departmentNode(loc: Location) {
+  return {
+    "@type": "MedicalClinic",
+    "@id": `${siteUrl}/#${loc.id}`,
+    name: loc.schemaName,
+    url: `${siteUrl}${loc.pagePath}`,
+    telephone: loc.phone,
+    medicalSpecialty: "Audiology",
+    priceRange: "$$",
+    makesOffer: SERVICE_OFFERS,
+    potentialAction: RESERVE_ACTION,
+    address: postalAddress(loc),
+    geo: { "@type": "GeoCoordinates", latitude: loc.geo.lat, longitude: loc.geo.lng },
+    hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${loc.street} ${loc.locality} ${loc.region} ${loc.postalCode}`).replace(/%20/g, "+")}`,
+    openingHoursSpecification: schemaHours(loc),
+    parentOrganization: { "@id": `${siteUrl}/#organization` },
+  };
+}
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": ["MedicalClinic", "LocalBusiness"],
@@ -180,15 +200,8 @@ const organizationSchema = {
   potentialAction: RESERVE_ACTION,
   // Google requires address on LocalBusiness. Both offices carry their own
   // under `department`; this top-level one is the San Mateo main office.
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "88 N. San Mateo Drive",
-    addressLocality: "San Mateo",
-    addressRegion: "CA",
-    postalCode: "94401",
-    addressCountry: "US",
-  },
-  geo: { "@type": "GeoCoordinates", latitude: 37.568109, longitude: -122.327851 },
+  address: postalAddress(LOCATIONS["san-mateo"]),
+  geo: { "@type": "GeoCoordinates", latitude: LOCATIONS["san-mateo"].geo.lat, longitude: LOCATIONS["san-mateo"].geo.lng },
   foundingDate: String(FOUNDED.year),
   award: "Inspired by Ida Quality Benchmark — first clinic worldwide to receive the label",
   hasCredential: [
@@ -203,65 +216,9 @@ const organizationSchema = {
   // NOTE: deliberately no aggregateRating/Review markup. The practice's reviews
   // are collected on Google, and Google's structured-data policy disallows
   // marking up third-party reviews as your own first-party ratings.
-  department: [
-    {
-      "@type": "MedicalClinic",
-      "@id": `${siteUrl}/#san-mateo`,
-      name: "California Hearing Center \u2014 San Mateo",
-      telephone: "+1-650-342-9449",
-      medicalSpecialty: "Audiology",
-      priceRange: "$$",
-      makesOffer: SERVICE_OFFERS,
-      potentialAction: RESERVE_ACTION,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "88 N. San Mateo Drive",
-        addressLocality: "San Mateo",
-        addressRegion: "CA",
-        postalCode: "94401",
-        addressCountry: "US",
-      },
-      // Geocoded to the exact street address (OpenStreetMap exact-match on
-      // "88, North San Mateo Drive"); the previous pin was ~300m off.
-      geo: { "@type": "GeoCoordinates", latitude: 37.568109, longitude: -122.327851 },
-      hasMap: "https://www.google.com/maps/search/?api=1&query=88+N+San+Mateo+Drive+San+Mateo+CA+94401",
-      openingHoursSpecification: [
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "17:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "09:00", closes: "15:00" },
-      ],
-    },
-    {
-      "@type": "MedicalClinic",
-      "@id": `${siteUrl}/#san-carlos`,
-      name: "California Hearing Center \u2014 San Carlos",
-      telephone: "+1-650-342-9449",
-      medicalSpecialty: "Audiology",
-      priceRange: "$$",
-      makesOffer: SERVICE_OFFERS,
-      potentialAction: RESERVE_ACTION,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "1008 Laurel Street",
-        addressLocality: "San Carlos",
-        addressRegion: "CA",
-        postalCode: "94070",
-        addressCountry: "US",
-      },
-      // Geocoded to the exact street address (OpenStreetMap exact-match on
-      // "1008, Laurel Street"); the previous pin was ~530m off.
-      geo: { "@type": "GeoCoordinates", latitude: 37.501047, longitude: -122.254690 },
-      hasMap: "https://www.google.com/maps/search/?api=1&query=1008+Laurel+Street+San+Carlos+CA+94070",
-      // Split (lunch-break) hours.
-      openingHoursSpecification: [
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday"], opens: "09:00", closes: "13:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday"], opens: "14:00", closes: "17:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "09:00", closes: "12:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "13:00", closes: "17:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "09:00", closes: "12:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "12:30", closes: "15:00" },
-      ],
-    },
-  ],
+  // One node per office, built from app/data/locations.ts so the schema can
+  // never disagree with the hours and address printed on the page.
+  department: [LOCATIONS["san-mateo"], LOCATIONS["san-carlos"]].map(departmentNode),
   areaServed: [
     { "@type": "City", name: "San Mateo" },
     { "@type": "City", name: "San Carlos" },
@@ -272,11 +229,9 @@ const organizationSchema = {
     "https://www.google.com/search?q=California+Hearing+Center&stick=H4sIAAAAAAAAAONgU1I1qLAwsEizTDU3MbIwNEixMEuzMqhISTM3M05NNk5KNTC0NLAwXsQq6ZyYk5mWX5SXmajgkZpYlJmXruCcmleSWgQAfY_KOkUAAAA",
     "https://www.google.com/search?q=California+Hearing+Center&stick=H4sIAAAAAAAAAONgU1I1qLAwsEhLNDK0TDY2TrRINE-zMqgwT01NSTJLNk9JMk42SUlLWcQq6ZyYk5mWX5SXmajgkZpYlJmXruCcmleSWgQAW8hyKkUAAAA",
   ],
-  // Top-level hours reflect the San Mateo main office.
-  openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "17:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "09:00", closes: "15:00" },
-  ],
+  // No top-level openingHoursSpecification: the two offices keep different
+  // hours, and a parent-level schedule showed San Mateo's hours on San Carlos
+  // pages (strategy audit ENT-001). Hours live on each department node.
 };
 
 const websiteSchema = {
