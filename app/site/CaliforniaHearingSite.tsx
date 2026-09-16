@@ -203,7 +203,7 @@ const products = [
   ["Phonak Lyric", "Sits deep in the canal and stays in for months at a time.", "/assets/phonak.webp"],
   ["Widex Allure", "Family-owned since 1956, and voiced for natural sound.", "/assets/widex.webp"],
   ["Phonak EON", "Swiss engineering, a new HYPERSONIC chip, and Auracast that works today.", "/assets/phonak-eon.webp"],
-  ["Starkey Edge AI", "American-made, with the widest range of custom in-the-ear styles.", "/assets/starkey.webp"],
+  ["Starkey Omega AI", "American-made, with the widest range of custom in-the-ear styles.", "/assets/starkey.webp"],
   ["Signia MaX", "Four neural networks working together, from a century-old engineering house.", "/assets/signia-max.webp"],
 ];
 
@@ -222,7 +222,7 @@ const hearingAidColumns: ProductMenuLink[][] = [
     ["ReSound Vivia", "Making hearing aids since 1943. Sensia is the current platform; Vivia is still sold.", "/products/hearing-aids-by-brand/resound/resound-vivia/", "/assets/resound.webp"],
   ],
   [
-    ["Starkey Edge AI", "Omega AI is now the flagship: grade A, second of the 36 devices HearAdvisor has tested.", "/products/hearing-aids-by-brand/starkey/starkey-edge-ai/", "/assets/starkey.webp"],
+    ["Starkey Omega AI", "Starkey's flagship since October 2025: grade A, second of the 36 devices HearAdvisor has tested.", "/products/hearing-aids-by-brand/starkey/", "/assets/starkey.webp"],
     ["Signia IX", "The wider Signia family \u2014 custom, instant-fit, slim and CROS styles, independently tested.", "/products/hearing-aids-by-brand/signia/signia-ix/", "/assets/signia.webp"],
     ["Ear Gear", "Custom earplugs and earmolds, made from impressions of your own ears.", "/products/eargear/", "/assets/ear-gear.webp"],
   ],
@@ -735,11 +735,11 @@ function serviceFaqs(serviceSlug: string, name: string, office: string): [string
     case "dr-emily-mcmahan":
       return [
         [`Does Dr. Emily McMahan see patients from ${name}?`,
-         `Yes. Dr. Emily McMahan, AuD, sees patients from ${name} ${at}. Her practice is focused on tinnitus care. [Read more about Dr. McMahan](/about-us/emily-mcmahan/).`],
+         `Yes. Dr. Emily McMahan, AuD, sees patients from ${name} when she visits California Hearing Center, every six to eight weeks. Her work is focused on tinnitus care. [Read more about Dr. McMahan](/about-us/emily-mcmahan/).`],
         ["What does Dr. McMahan focus on?",
          "Dr. McMahan has built her work around tinnitus — evaluation, sound therapy, counseling, and [Lenire](/tinnitus/) — spending more time on the details general appointments often skip."],
         ["How do I book with Dr. McMahan specifically?",
-         "Call 650-342-9449 and ask for a tinnitus consultation. We'll match you with the right appointment and location."],
+         "Call 650-342-9449 and ask to be booked into Dr. McMahan's next visit. She is with us every six to eight weeks and her appointments fill quickly, so it is worth calling early."],
       ];
     case "lenire":
     case "tinnitus-audiologist":
@@ -1658,6 +1658,12 @@ const STOPWORDS = new Set(
 
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
+  // Hyperacusis shares the tinnitus page kind for routing and related links,
+  // but the tinnitus red flags, visit steps and lead-clinician card describe a
+  // tinnitus appointment. They must not render on /hyperacusis/ pages until a
+  // clinician-approved hyperacusis equivalent exists (strategy audit MED-001).
+  const isHyperacusis = page.path.startsWith("/hyperacusis/");
+  const showTinnitusBlocks = kind === "tinnitus" && !isHyperacusis;
   const pageTitle = areaHeadingLabel(page.path) ?? page.h1 ?? titleFromPath(page.path);
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
@@ -1753,7 +1759,7 @@ function InnerPage({ page }: { page: SitePage }) {
           {kind === "area" && (
             <p className="post-byline">From the audiologists at <a href="/about-us/">California Hearing Center</a>, San Mateo and San Carlos</p>
           )}
-          {kind === "tinnitus" && (
+          {showTinnitusBlocks && (
             <RedFlagPanel
               intro="Most tinnitus is not an emergency, and most of it is manageable. These are the exceptions, and they are time-critical."
               flags={TINNITUS_RED_FLAGS}
@@ -1837,7 +1843,7 @@ function InnerPage({ page }: { page: SitePage }) {
               </Fragment>
             ))}
           </div>
-          {kind === "tinnitus" && (
+          {showTinnitusBlocks && (
             <>
               <VisitSteps
                 heading="What a tinnitus appointment actually involves"
@@ -1929,7 +1935,7 @@ function InnerPage({ page }: { page: SitePage }) {
 
       <section className="container route-index">
         <p className="section-kicker">Explore related pages</p>
-        <h2>Keep exploring {kind === "area" ? "local hearing care" : kind === "product" ? "hearing technology" : kind === "tinnitus" ? "tinnitus resources" : "California Hearing Center"}</h2>
+        <h2>Keep exploring {kind === "area" ? "local hearing care" : kind === "product" ? "hearing technology" : kind === "tinnitus" ? (isHyperacusis ? "sound sensitivity and tinnitus resources" : "tinnitus resources") : "California Hearing Center"}</h2>
         <div className="pill-grid">
           {areaLinks.length > 0
             ? areaLinks.map((item) => <a key={item.path} href={item.path}>{item.label}</a>)

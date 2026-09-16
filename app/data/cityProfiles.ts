@@ -210,7 +210,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "We are a short drive from Atherton's Lindenwood, West Atherton, and Lloyden Park areas, and from the Menlo-Atherton corridor along El Camino Real and Marsh Road.",
     faqs: [
       ["Do you offer truly invisible hearing aids?", "We fit several invisible and near-invisible styles, including deep-canal options. The right choice depends on your ear anatomy and hearing needs, which we assess during your evaluation."],
-      ["Can I see a tinnitus specialist near Atherton?", "Yes. Dr. Emily McMahan, AuD, focuses on tinnitus care, including Lenire, and sees patients from Atherton and throughout the mid-Peninsula at our San Carlos office."],
+      ["Can I see a tinnitus specialist near Atherton?", "Yes. Dr. Emily McMahan, AuD, focuses on tinnitus care, including Lenire, and sees patients from Atherton and throughout the mid-Peninsula when she visits our practice, every six to eight weeks. Her appointments fill quickly, so call early."],
       ["How far is the audiologist from Atherton?", "Our San Carlos office is about 12–15 minutes from Atherton via the 101 or El Camino Real. Call 650-342-9449 to arrange a visit."],
     ],
   },

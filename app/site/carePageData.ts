@@ -63,7 +63,7 @@ export const TINNITUS_LEAD_CLINICIAN = {
   slug: "emily-mcmahan",
   name: "Dr. Emily McMahan",
   credential: "AuD",
-  line: "Leads tinnitus care at both offices, and is nationally recognised for tinnitus management and telehealth audiology.",
+  line: "Nationally recognised for tinnitus management. She visits our practice every six to eight weeks, and her appointments book up quickly, so call 650-342-9449 to get on her next visit.",
   image: "/assets/team/thumb/emily-mcmahan.webp",
 };
 

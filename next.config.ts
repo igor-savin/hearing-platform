@@ -421,6 +421,7 @@ const wordpressArchiveRedirects = [
 // correction costs nothing and stops the typo being the canonical.
 const slugCorrectionRedirects = [
       { source: "/areas-we-serve/portolo-valley/", destination: "/areas-we-serve/portola-valley/", permanent: true },
+      { source: "/areas-we-serve/santa-clara-country/", destination: "/areas-we-serve/santa-clara-county/", permanent: true },
 ];
 
 const cityConsolidationRedirects = [

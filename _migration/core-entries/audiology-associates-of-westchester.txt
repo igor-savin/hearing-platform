@@ -1,0 +1,34 @@
+"/audiology-associates-of-westchester/": {
+  kicker: "Our Sister Practice",
+  headline: "Audiology Associates of Westchester, Our Sister Practice in New York",
+  metaTitle: "Audiology Associates of Westchester | Our East Coast Sister Practice",
+  metaDescription: "Audiology Associates of Westchester is California Hearing Center's sister practice, with offices in Harrison and Somers, New York. Travelling east? They are happy to see you.",
+  intro: [
+    "Audiology Associates of Westchester is our sister practice on the East Coast. It has its own offices in Harrison and Somers, New York, its own phone numbers, and its own team of doctors of audiology. Care in the Bay Area stays with us, at our San Mateo and San Carlos offices.",
+    "The two practices share the same approach to hearing care, and two of our audiologists, [Dr. Kira Savin](/about-us/kira-savin/) and [Dr. Jennifer Ratner](/about-us/jennifer-ratner/), are also partners there. So if you are travelling to the New York area, spending part of the year there, or moving east, you will be in familiar hands. They are happy to see you."
+  ],
+  sections: [
+    ["Two offices in Westchester County", "Harrison: 550 Mamaroneck Ave, Suite 407 (4th floor), Harrison, NY 10528, phone (914) 949-0034. Somers: 325 NY 100, Somers, NY 10589, phone (914) 556-6720. Current office hours and online booking are on the practice's [contact page](https://www.audiologyassociates.org/contact-us)."],
+    ["What they offer", "Hearing testing and comprehensive hearing assessments, hearing aid fitting, tune-ups and repair, tinnitus therapy including Lenire, Lyric invisible hearing aids, cochlear implant services, earwax removal, and custom hearing protection. The clinical team includes six doctors of audiology."],
+    ["If you are travelling", "Hearing aids have a way of failing on a trip. If you are visiting the New York area and your hearing aids need a repair, a cleaning, or an adjustment, call the Westchester office nearest you and mention that you are a California Hearing Center patient."],
+    ["If you are moving east", "Audiology Associates of Westchester sees patients from across Westchester and Putnam counties in New York and Fairfield County in Connecticut. If you are relocating to that area, they can pick up your hearing care there."],
+    ["Appointments in California", "For care in the Bay Area, book with us at [San Mateo](/contact/san-mateo/) or [San Carlos](/contact/san-carlos/), or call 650-342-9449."]
+  ],
+  bulletLinks: [
+    ["Visit audiologyassociates.org", "https://www.audiologyassociates.org/"],
+    ["Meet our team", "/about-us/"],
+    ["Contact California Hearing Center", "/contact/"]
+  ],
+  takeaways: [
+    "Audiology Associates of Westchester is California Hearing Center's sister practice, with offices in Harrison and Somers, New York.",
+    "Dr. Kira Savin and Dr. Jennifer Ratner are audiologists at California Hearing Center and partners at Audiology Associates of Westchester.",
+    "California Hearing Center patients who travel to or move to the New York area can be seen there."
+  ],
+  faqs: [
+    ["Is Audiology Associates of Westchester part of California Hearing Center?", "It is our sister practice. It has its own offices, phone numbers and team in New York, and two of our audiologists are partners there. Appointments in California are with us; appointments in New York are with them."],
+    ["Can I be seen in New York if I am a California Hearing Center patient?", "Yes. If you are travelling or spending time on the East Coast, call the Harrison office on (914) 949-0034 or the Somers office on (914) 556-6720."],
+    ["Does Audiology Associates of Westchester have an office in California?", "No. Its offices are in Harrison and Somers, New York. Our offices are in San Mateo and San Carlos."]
+  ],
+  image: "/assets/core-photos/about-us.webp",
+  imageLabel: "Audiology Associates of Westchester, our sister practice",
+},

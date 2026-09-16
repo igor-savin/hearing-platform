@@ -593,14 +593,6 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
-    "path": "/areas-we-serve/santa-clara-country/",
-    "title": "Santa Clara Country | California Hearing Center",
-    "h1": "Santa Clara Country",
-    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
-    "h2": [],
-    "paragraphs": []
-  },
-  {
     "path": "/areas-we-serve/saratoga/",
     "title": "Saratoga | California Hearing Center",
     "h1": "Saratoga",

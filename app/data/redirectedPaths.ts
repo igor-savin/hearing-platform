@@ -395,4 +395,5 @@ export const redirectedPaths = new Set<string>([
   "/areas-we-serve/yountville/",
   // 26 Aug 2026 — misspelled slug corrected to /portola-valley/.
   "/areas-we-serve/portolo-valley/",
+  "/areas-we-serve/santa-clara-country/",
 ]);

@@ -141,7 +141,8 @@ const rawCorePages: Record<string, PageContent> = {
   headline: "Emily McMahan, AuD",
   intro: [
     "Dr. Emily McMahan is a highly respected audiologist, recognized nationally for her expertise in tinnitus management, hearing care innovation, and advancements in telehealth audiology.",
-    "She is the founder and owner of the Alaska Hearing & Tinnitus Center, a leading practice serving Alaska and the western United States that is especially recognized for its focus on [tinnitus](/tinnitus/) management. Based in Anchorage, Alaska, she is committed to expanding audiological care through remote and field clinics across multiple states."
+    "She is the founder and owner of the Alaska Hearing & Tinnitus Center, a leading practice serving Alaska and the western United States that is especially recognized for its focus on [tinnitus](/tinnitus/) management. Based in Anchorage, Alaska, she is committed to expanding audiological care through remote and field clinics across multiple states.",
+    "Dr. McMahan runs her own practice in Alaska and travels to see patients elsewhere. She comes to California Hearing Center every six to eight weeks, and because she is so well known for tinnitus care, her appointments here book up quickly. Call 650-342-9449 and we will book you into her next visit."
   ],
   sections: [
     ["Credentials & training", "Dr. McMahan earned her Bachelor of Science in Communication Sciences and Disorders from the University of Cincinnati and her Doctorate of Audiology from Salus University in Philadelphia. She completed her residency in Anchorage, Alaska, where she continues to be based. She is certified by the American Board of Audiology and is a Fellow of both the American Academy of Audiology and the Academy of Doctors of Audiology. She was named Alumna of the Year by Salus University's George S. Osborne College of Audiology."],
@@ -157,14 +158,16 @@ const rawCorePages: Record<string, PageContent> = {
   ],
   takeaways: [
     "Nationally recognized for tinnitus management, telehealth, and pioneering clinical work with the Lenire device.",
-    "Anchorage, Alaska-based founder of the Alaska Hearing & Tinnitus Center, serving patients across the western U.S."
+    "Anchorage, Alaska-based founder of the Alaska Hearing & Tinnitus Center, serving patients across the western U.S.",
+    "Sees patients at California Hearing Center every six to eight weeks; her appointments book up quickly."
   ],
   faqs: [
-    ["How do I schedule with Dr. McMahan?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+    ["How often is Dr. McMahan at California Hearing Center?", "She visits every six to eight weeks. Between visits she runs her own practice in Alaska, and the rest of our [team](/about-us/) sees patients here every week."],
+    ["How do I schedule with Dr. McMahan?", "Call 650-342-9449 and ask to be booked into her next visit. Her appointments fill quickly, so it is worth calling early."]
   ],
   image: "/assets/team/emily-mcmahan.webp",
   imageLabel: "Emily McMahan, AuD",
-  imageAlt: "Dr. Emily McMahan, audiologist at California Hearing Center",
+  imageAlt: "Dr. Emily McMahan, visiting audiologist at California Hearing Center",
 },
   "/about-us/giana-hatem/": {
   kicker: "Meet the Team",
@@ -371,6 +374,40 @@ const rawCorePages: Record<string, PageContent> = {
   ],
   image: "/assets/core/atria-park-of-san-mateo.svg",
   imageLabel: "Hearing care for Atria Park of San Mateo residents"
+},
+  "/audiology-associates-of-westchester/": {
+  kicker: "Our Sister Practice",
+  headline: "Audiology Associates of Westchester, Our Sister Practice in New York",
+  metaTitle: "Audiology Associates of Westchester | Our East Coast Sister Practice",
+  metaDescription: "Audiology Associates of Westchester is California Hearing Center's sister practice, with offices in Harrison and Somers, New York. Travelling east? They are happy to see you.",
+  intro: [
+    "Audiology Associates of Westchester is our sister practice on the East Coast. It has its own offices in Harrison and Somers, New York, its own phone numbers, and its own team of doctors of audiology. Care in the Bay Area stays with us, at our San Mateo and San Carlos offices.",
+    "The two practices share the same approach to hearing care, and two of our audiologists, [Dr. Kira Savin](/about-us/kira-savin/) and [Dr. Jennifer Ratner](/about-us/jennifer-ratner/), are also partners there. So if you are travelling to the New York area, spending part of the year there, or moving east, you will be in familiar hands. They are happy to see you."
+  ],
+  sections: [
+    ["Two offices in Westchester County", "Harrison: 550 Mamaroneck Ave, Suite 407 (4th floor), Harrison, NY 10528, phone (914) 949-0034. Somers: 325 NY 100, Somers, NY 10589, phone (914) 556-6720. Current office hours and online booking are on the practice's [contact page](https://www.audiologyassociates.org/contact-us)."],
+    ["What they offer", "Hearing testing and comprehensive hearing assessments, hearing aid fitting, tune-ups and repair, tinnitus therapy including Lenire, Lyric invisible hearing aids, cochlear implant services, earwax removal, and custom hearing protection. The clinical team includes six doctors of audiology."],
+    ["If you are travelling", "Hearing aids have a way of failing on a trip. If you are visiting the New York area and your hearing aids need a repair, a cleaning, or an adjustment, call the Westchester office nearest you and mention that you are a California Hearing Center patient."],
+    ["If you are moving east", "Audiology Associates of Westchester sees patients from across Westchester and Putnam counties in New York and Fairfield County in Connecticut. If you are relocating to that area, they can pick up your hearing care there."],
+    ["Appointments in California", "For care in the Bay Area, book with us at [San Mateo](/contact/san-mateo/) or [San Carlos](/contact/san-carlos/), or call 650-342-9449."]
+  ],
+  bulletLinks: [
+    ["Visit audiologyassociates.org", "https://www.audiologyassociates.org/"],
+    ["Meet our team", "/about-us/"],
+    ["Contact California Hearing Center", "/contact/"]
+  ],
+  takeaways: [
+    "Audiology Associates of Westchester is California Hearing Center's sister practice, with offices in Harrison and Somers, New York.",
+    "Dr. Kira Savin and Dr. Jennifer Ratner are audiologists at California Hearing Center and partners at Audiology Associates of Westchester.",
+    "California Hearing Center patients who travel to or move to the New York area can be seen there."
+  ],
+  faqs: [
+    ["Is Audiology Associates of Westchester part of California Hearing Center?", "It is our sister practice. It has its own offices, phone numbers and team in New York, and two of our audiologists are partners there. Appointments in California are with us; appointments in New York are with them."],
+    ["Can I be seen in New York if I am a California Hearing Center patient?", "Yes. If you are travelling or spending time on the East Coast, call the Harrison office on (914) 949-0034 or the Somers office on (914) 556-6720."],
+    ["Does Audiology Associates of Westchester have an office in California?", "No. Its offices are in Harrison and Somers, New York. Our offices are in San Mateo and San Carlos."]
+  ],
+  image: "/assets/core-photos/about-us.webp",
+  imageLabel: "Audiology Associates of Westchester, our sister practice",
 },
   "/contact/san-carlos/": {
   kicker: "San Carlos Office",
