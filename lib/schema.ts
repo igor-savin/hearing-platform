@@ -9,6 +9,7 @@ import {
 } from "@/lib/products";
 import { helpServiceForPath, howWeCanHelpRootPath } from "@/lib/howWeCanHelp";
 import { tinnitusPageForPath, tinnitusRootPath } from "@/lib/tinnitus";
+import { pressFeatureForPath, pressRootPath } from "@/lib/press";
 import {
   cityForPath,
   countyForCity,
@@ -219,7 +220,12 @@ export function websiteSchema() {
 }
 
 export function breadcrumbSchema(page: SitePage) {
-  const crumbs = productBreadcrumbItems(page) || areaBreadcrumbItems(page) || tinnitusBreadcrumbItems(page) || howWeCanHelpBreadcrumbItems(page);
+  const crumbs =
+    productBreadcrumbItems(page) ||
+    areaBreadcrumbItems(page) ||
+    tinnitusBreadcrumbItems(page) ||
+    howWeCanHelpBreadcrumbItems(page) ||
+    pressBreadcrumbItems(page);
   const itemListElement = (crumbs || [
     {
       name: "Home",
@@ -256,6 +262,18 @@ function tinnitusBreadcrumbItems(page: SitePage) {
     { name: "How We Can Help", item: `${baseUrl}${howWeCanHelpRootPath}` },
     { name: "Tinnitus Management", item: `${baseUrl}${tinnitusRootPath}` },
     { name: tinnitusPage.title, item: page.canonical }
+  ];
+}
+
+// Home > In the News > <article>. Must match PressBreadcrumbs in
+// components/PageRenderer.tsx.
+function pressBreadcrumbItems(page: SitePage) {
+  const feature = pressFeatureForPath(page.path);
+  if (!feature) return null;
+  return [
+    { name: "Home", item: baseUrl },
+    { name: "In the News", item: `${baseUrl}${pressRootPath}` },
+    { name: page.h1, item: page.canonical }
   ];
 }
 

@@ -19,6 +19,7 @@ const navGroups = [
       ["MEET THE TEAM", "/meet-the-team"],
       ["WHY CHOOSE US", "/why-choose-us"],
       ["DR. CLIFF APPROVED PROVIDER", "/dr-cliff-approved-provider"],
+      ["IN THE NEWS", "/in-the-news"],
       ["CAREERS", "/careers"],
       ["AREAS WE SERVE", "/areas-we-serve"],
       ["Blog", "/blog"]

@@ -1,8 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { CheckCircle2, FileText, MapPin, Phone, ShieldCheck, Star } from "lucide-react";
+import { CalendarDays, CheckCircle2, ExternalLink, FileText, MapPin, Newspaper, Phone, Quote, ShieldCheck, Star } from "lucide-react";
 import { googleReviewsUrl, reviewAggregate, reviewThemes, testimonials } from "@/lib/reviews";
+import {
+  pressEventIsUpcoming,
+  pressFeatureForPath,
+  pressFeaturePath,
+  pressFeatures,
+  pressRootPath,
+  type PressFeature
+} from "@/lib/press";
 import { AudiogramFigure, ClinicianCard, RedFlagPanel, SpecTable, VisitSteps } from "@/components/CareBlocks";
 import {
   AUDIOGRAM_PAGES,
@@ -3604,6 +3612,7 @@ function LiveLocationPage({ page }: { page: SitePage }) {
             <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
           ))
         : null}
+      {thisOffice?.path === "/Somers-NY" ? <PressStrip /> : null}
       {legacyHero && content.paragraphs.length ? (
         <section className="bg-white py-[52px]">
           <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
@@ -4709,6 +4718,317 @@ function ReviewsPage({ page }: { page: SitePage }) {
   );
 }
 
+// ─── In the News ────────────────────────────────────────────────────────────
+// /in-the-news and one page per clipping. Data lives in lib/press.ts. The
+// printed article is shown as an image only; the Q&A below it is our own
+// summary, not a transcript of the paper's text.
+
+function PressBreadcrumbs({ page }: { page: SitePage }) {
+  const crumbs: ProductCrumb[] = [{ label: "Home", href: "/" }];
+  if (page.path === pressRootPath) {
+    crumbs.push({ label: "In the News" });
+  } else {
+    crumbs.push({ label: "In the News", href: pressRootPath }, { label: page.h1 });
+  }
+  return <StandardBreadcrumbs crumbs={crumbs} />;
+}
+
+function PressEventCallout({ feature, office }: { feature: PressFeature; office?: (typeof locations)[number] }) {
+  const event = feature.event;
+  if (!event || !pressEventIsUpcoming(feature)) return null;
+  return (
+    <aside
+      aria-labelledby="press-event-heading"
+      className="rounded-2xl border-2 border-[#ffd45a] bg-[#fffbeb] p-6 text-left shadow-[0_18px_45px_rgba(0,63,111,0.10)]"
+    >
+      <p className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.16em] text-[#9f5c1e]">
+        <CalendarDays aria-hidden="true" size={18} /> Come say hello
+      </p>
+      <h2 className="mt-2 text-[26px] font-black leading-tight text-[#003f6f]" id="press-event-heading">
+        Visit our table at {event.name}
+      </h2>
+      <p className="mt-2 text-[18px] font-bold text-[#253239]">{event.dateLabel}</p>
+      <p className="mt-1 text-[17px] text-[#5d6b72]">
+        {event.venue}, {event.address}
+      </p>
+      <p className="mt-3 text-[17px] leading-7 text-[#253239]">{event.note}</p>
+      <p className="mt-3 text-[15px] text-[#5d6b72]">
+        Hosted by the{" "}
+        <a className="focus-ring font-bold text-[#005a9c] underline" href={event.organizerUrl} rel="noreferrer" target="_blank">
+          {event.organizer}
+        </a>
+        .
+      </p>
+      {office ? (
+        <a
+          className="focus-ring mt-5 inline-flex min-h-[44px] items-center gap-2 rounded-md bg-[#005a9c] px-5 py-3 text-[16px] font-black text-white hover:bg-[#003f6f]"
+          data-track="phone-press-event"
+          href={office.phoneHref}
+        >
+          <Phone aria-hidden="true" size={18} /> Somers office {office.phone}
+        </a>
+      ) : null}
+    </aside>
+  );
+}
+
+// A one-line pointer from the Somers office page to the press feature that
+// is about Somers. Links the newest feature only.
+function PressStrip() {
+  const feature = pressFeatures[0];
+  if (!feature) return null;
+  return (
+    <section className="bg-[#fff7ed] py-6">
+      <div className="mx-auto flex max-w-[1660px] flex-wrap items-center gap-x-4 gap-y-2 px-[64px] max-md:px-5">
+        <Newspaper aria-hidden="true" className="text-[#9f5c1e]" size={22} />
+        <p className="text-[18px] font-bold text-[#253239]">
+          As featured in <span className="text-[#003f6f]">{feature.publication}</span>
+          {pressEventIsUpcoming(feature) && feature.event ? ` · See us at the festival, ${feature.event.dateLabel}` : ""}
+        </p>
+        <Link className="focus-ring text-[17px] font-black text-[#005a9c] underline" href={pressFeaturePath(feature)}>
+          Read the feature &rarr;
+        </Link>
+      </div>
+    </section>
+  );
+}
+
+function PressIndexPage({ page }: { page: SitePage }) {
+  return (
+    <>
+      <PressBreadcrumbs page={page} />
+      <section className="bg-[#003f6f] py-16 text-white">
+        <div className="mx-auto max-w-[1100px] px-6">
+          <p className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">
+            <Newspaper aria-hidden="true" size={18} /> Press
+          </p>
+          <h1 className="mt-3 text-[48px] font-black leading-tight max-md:text-[36px]">{page.h1}</h1>
+          <p className="mt-5 max-w-[720px] text-[19px] leading-8 text-white/88">{page.body[0]}</p>
+        </div>
+      </section>
+      <section className="bg-white py-14">
+        <div className="mx-auto grid max-w-[1100px] gap-6 px-6">
+          {pressFeatures.map((feature) => (
+            <Link
+              className="focus-ring group grid overflow-hidden rounded-2xl border border-[var(--line)] bg-white medical-shadow md:grid-cols-[320px_minmax(0,1fr)]"
+              href={pressFeaturePath(feature)}
+              key={feature.slug}
+            >
+              <Image
+                alt={feature.cover.alt}
+                className="h-full max-h-[360px] w-full object-cover object-top"
+                height={feature.cover.height}
+                sizes="(max-width: 768px) 100vw, 320px"
+                src={feature.cover.src}
+                width={feature.cover.width}
+              />
+              <div className="flex flex-col justify-center p-8 max-md:p-6">
+                <p className="text-sm font-black uppercase tracking-[0.16em] text-[#9f5c1e]">
+                  {feature.publication} · {feature.issue}
+                </p>
+                <h2 className="mt-2 text-[30px] font-black leading-tight text-[#003f6f] group-hover:underline max-md:text-[26px]">
+                  {feature.headline}
+                </h2>
+                <p className="mt-3 text-[18px] leading-8 text-[var(--muted)]">{feature.summary}</p>
+                <span className="mt-5 text-[16px] font-black text-[#005a9c]">Read the feature &rarr;</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
+
+function PressFeaturePage({ page, feature }: { page: SitePage; feature: PressFeature }) {
+  const somers = locations.find((location) => location.path === "/Somers-NY");
+  const interviewee = providerForSlug(feature.interviewee);
+  const featured = feature.featuredProviderSlugs
+    .map((slug) => providerForSlug(slug))
+    .filter((provider): provider is ProviderProfile => Boolean(provider));
+
+  return (
+    <>
+      <PressBreadcrumbs page={page} />
+
+      <section className="bg-[#003f6f] py-14 text-white">
+        <div className="mx-auto grid max-w-[1200px] items-center gap-10 px-6 lg:grid-cols-[minmax(0,1fr)_380px]">
+          <div>
+            <p className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">
+              <Newspaper aria-hidden="true" size={18} /> In the news · {feature.issue}
+            </p>
+            <h1 className="mt-3 text-[48px] font-black leading-tight max-md:text-[34px]">{page.h1}</h1>
+            <p className="mt-5 max-w-[680px] text-[19px] leading-8 text-white/88">{feature.summary}</p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                className="focus-ring inline-flex items-center justify-center rounded-md bg-[#ffd45a] px-7 py-4 text-[16px] font-black text-[#003f6f] hover:bg-white"
+                href="#the-article"
+              >
+                Read the article
+              </a>
+              {somers ? (
+                <a
+                  className="focus-ring inline-flex items-center justify-center gap-2 rounded-md border-2 border-white/70 px-7 py-4 text-[16px] font-black text-white hover:bg-white hover:text-[#003f6f]"
+                  data-track="phone-press-hero"
+                  href={somers.phoneHref}
+                >
+                  <Phone aria-hidden="true" size={18} /> Call Somers {somers.phone}
+                </a>
+              ) : null}
+            </div>
+          </div>
+          <PressEventCallout feature={feature} office={somers} />
+          {!pressEventIsUpcoming(feature) ? (
+            <Image
+              alt={feature.cover.alt}
+              className="mx-auto w-full max-w-[340px] rotate-[2deg] rounded-md border-4 border-white shadow-2xl max-lg:hidden"
+              height={feature.cover.height}
+              priority
+              sizes="340px"
+              src={feature.cover.src}
+              width={feature.cover.width}
+            />
+          ) : null}
+        </div>
+      </section>
+
+      <section className="scroll-mt-[90px] bg-[#f7f7f5] py-14" id="the-article">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <h2 className="text-[34px] font-black leading-tight text-[#003f6f] max-md:text-[28px]">The article</h2>
+          <LiveRule />
+          <figure className="mt-8">
+            <a className="focus-ring block" href={feature.clipping.src} rel="noreferrer" target="_blank">
+              <Image
+                alt={feature.clipping.alt}
+                className="h-auto w-full rounded-lg border border-[#d7e2e3] bg-white shadow-[0_18px_45px_rgba(0,63,111,0.12)]"
+                height={feature.clipping.height}
+                priority
+                sizes="(max-width: 1248px) 100vw, 1152px"
+                src={feature.clipping.src}
+                width={feature.clipping.width}
+              />
+            </a>
+            <figcaption className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[16px] text-[#5d6b72]">
+              <span>
+                As printed in the <strong className="text-[#253239]">{feature.publication}</strong> edition, {feature.issue}.
+                {interviewee ? (
+                  <>
+                    {" "}
+                    Interview with{" "}
+                    <Link className="focus-ring font-bold text-[#005a9c] underline" href={providerPath(interviewee)}>
+                      {interviewee.name}
+                    </Link>
+                    .
+                  </>
+                ) : null}
+              </span>
+              <a className="focus-ring inline-flex items-center gap-1 font-bold text-[#005a9c] underline" href={feature.clipping.src} rel="noreferrer" target="_blank">
+                Open full size <ExternalLink aria-hidden="true" size={15} />
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {featured.length ? (
+        <section className="bg-white py-14">
+          <div className="mx-auto max-w-[1200px] px-6">
+            <h2 className="text-[34px] font-black leading-tight text-[#003f6f] max-md:text-[28px]">Who you will meet</h2>
+            <LiveRule />
+            <p className="mt-6 max-w-[760px] text-[18px] leading-8 text-[#5d6b72]">
+              The doctors of audiology in the article photo. Each one has a full profile with training and specialties.
+            </p>
+            <div className="mt-8 grid gap-6 md:grid-cols-3">
+              {featured.map((provider) => (
+                <Link
+                  className="focus-ring group flex flex-col items-center rounded-2xl border border-[var(--line)] bg-white p-6 text-center medical-shadow"
+                  href={providerPath(provider)}
+                  key={provider.slug}
+                >
+                  <Image
+                    alt={provider.alt}
+                    className="h-[150px] w-[150px] rounded-full border border-[#dbe9f3] object-cover object-top"
+                    height={300}
+                    sizes="150px"
+                    src={provider.image}
+                    width={300}
+                  />
+                  <span className="mt-4 text-[21px] font-black leading-tight text-[#003f6f] group-hover:underline">{provider.name}</span>
+                  <span className="mt-1 text-[16px] text-[#5d6b72]">{provider.role}</span>
+                  <span className="mt-2 text-[15px] font-bold text-[#115e68]">{providerOfficeNames(provider.officePaths).join(" & ")}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      <section className="bg-[#f1f5fa] py-14">
+        <div className="mx-auto max-w-[1000px] px-6">
+          <h2 className="text-[34px] font-black leading-tight text-[#003f6f] max-md:text-[28px]">What we talked about</h2>
+          <LiveRule />
+          <p className="mt-6 text-[18px] leading-8 text-[#5d6b72]">The main points from the interview, in our own words.</p>
+          <div className="mt-8 grid gap-5">
+            {feature.questions.map((item) => (
+              <article className="rounded-2xl border border-[#d5e7f4] bg-white p-6" key={item.question}>
+                <h3 className="flex items-start gap-3 text-[22px] font-black leading-snug text-[#003f6f] max-md:text-[20px]">
+                  <Quote aria-hidden="true" className="mt-1 shrink-0 text-[#c57a34]" size={20} />
+                  {item.question}
+                </h3>
+                <p className="mt-3 text-[18px] leading-8 text-[#253239]">{item.answer}</p>
+                <Link className="focus-ring mt-3 inline-block text-[16px] font-black text-[#005a9c] underline" href={item.link.href}>
+                  {item.link.label} &rarr;
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {somers ? (
+        <section className="bg-white py-14">
+          <div className="mx-auto grid max-w-[1100px] gap-8 px-6 md:grid-cols-2 md:items-center">
+            <div>
+              <h2 className="text-[34px] font-black leading-tight text-[#003f6f] max-md:text-[28px]">Visit us in Somers</h2>
+              <LiveRule />
+              <p className="mt-6 text-[18px] leading-8 text-[#253239]">
+                Our Somers office is in Somers Towne Centre. We also see patients in Harrison.
+              </p>
+              <p className="mt-4 flex items-start gap-2 text-[18px] font-bold text-[#253239]">
+                <MapPin aria-hidden="true" className="mt-1 shrink-0 text-[#005a9c]" size={20} /> {somers.address}
+              </p>
+              <ul className="mt-3 text-[16px] leading-7 text-[#5d6b72]">
+                {somers.hours.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col gap-3">
+              <a
+                className="focus-ring inline-flex items-center justify-center gap-2 rounded-md bg-[#005a9c] px-7 py-4 text-[17px] font-black text-white hover:bg-[#004a82]"
+                data-track="phone-press-somers"
+                href={somers.phoneHref}
+              >
+                <Phone aria-hidden="true" size={18} /> Call {somers.phone}
+              </a>
+              <Link
+                className="focus-ring inline-flex items-center justify-center rounded-md border border-[#005a9c] px-7 py-4 text-[17px] font-black text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
+                href="/contact-us"
+              >
+                Book an appointment
+              </Link>
+              <Link className="focus-ring text-center text-[16px] font-bold text-[#005a9c] underline" href={somers.path}>
+                Somers office details and directions
+              </Link>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+    </>
+  );
+}
+
 function LivePageBody({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
   const image = page.heroImage;
@@ -4722,6 +5042,15 @@ function LivePageBody({ page }: { page: SitePage }) {
 
   if (page.path === "/reviews") {
     return <ReviewsPage page={page} />;
+  }
+
+  if (page.path === pressRootPath) {
+    return <PressIndexPage page={page} />;
+  }
+
+  const pressFeature = pressFeatureForPath(page.path);
+  if (pressFeature) {
+    return <PressFeaturePage feature={pressFeature} page={page} />;
   }
 
   if (page.type === "service" && serviceVisual) {

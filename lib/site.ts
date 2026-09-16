@@ -13,6 +13,7 @@ import { contentDateFor, contentDates } from "@/lib/contentDates";
 import { comparisonPages } from "@/lib/conversion";
 import { productGuides } from "@/lib/productGuides";
 import { hearingLossPages } from "@/lib/hearingLoss";
+import { pressPages } from "@/lib/press";
 import { reviewsPage } from "@/lib/reviews";
 import {
   brandPath,
@@ -1522,7 +1523,7 @@ function withContentDates(page: SitePage): SitePage {
   };
 }
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...productGuides, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...productGuides, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...pressPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
   const withFaqs: SitePage = { ...withContentDates(page), faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);

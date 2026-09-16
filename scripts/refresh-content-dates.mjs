@@ -65,7 +65,8 @@ const SOURCES = [
   { file: "lib/productGuides.ts", key: "path" },
   { file: "lib/serviceAreas.ts", key: "slug" },
   { file: "lib/team.ts", key: "slug" },
-  { file: "lib/reviews.ts", key: "path" }
+  { file: "lib/reviews.ts", key: "path" },
+  { file: "lib/press.ts", key: "path" }
 ];
 
 function git(args) {
