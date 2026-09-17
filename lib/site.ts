@@ -6,6 +6,7 @@ import {
   primaryPhone,
   primaryPhoneHref,
   siteName,
+  TITLE_MAX,
   titleWithBrand
 } from "@/lib/siteBasics";
 import { buildNextBlogPosts } from "@/lib/blogNext";
@@ -932,6 +933,18 @@ function relatedLinks(page: SitePage) {
   return links.slice(0, 7);
 }
 
+// Titles recovered from the pre-2026 Duda crawl are used as they were written,
+// brand suffix and all, so a few arrive over Bing's 70-character limit with no
+// way for titleWithBrand() to see them. Drop the trailing brand segment and
+// rebuild it at a width that fits; anything already short enough is untouched,
+// because a legacy title that works is not worth rewording.
+function refitLegacyTitle(title: string): string {
+  if (title.length <= TITLE_MAX) return title;
+  const segments = title.split(" | ");
+  if (segments.length < 2) return title;
+  return titleWithBrand(segments.slice(0, -1).join(" | "));
+}
+
 const uniqueCrawlPages = dedupe(
   (crawl as CrawlPage[]).filter((page) => page.status === 200),
   (page) => pathFromUrl(page.url)
@@ -954,10 +967,10 @@ const generatedPages = uniqueCrawlPages
       title: h1,
       metaTitle:
         path === "/privacy"
-          ? `Privacy Policy | ${siteName}`
+          ? titleWithBrand("Privacy Policy")
           : path === "/thank-you"
-            ? `Thank You | ${siteName}`
-            : correctOfficeClaims(fixSpacing(page.title || h1)),
+            ? titleWithBrand("Thank You")
+            : refitLegacyTitle(correctOfficeClaims(fixSpacing(page.title || h1))),
       metaDescription,
       h1,
       type,
