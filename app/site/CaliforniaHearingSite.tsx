@@ -1982,7 +1982,7 @@ function BrandProductGrid({ page }: { page: SitePage }) {
       <div className="product-grid">
         {products.map(([title, text, href, image]) => (
           <a className="product-card brand-family-card" href={href} key={href}>
-            <SiteImage src={image} alt="" box={{ width: 150, height: 110 }} />
+            <SiteImage src={image} alt={`${title} hearing aid`} box={{ width: 150, height: 110 }} />
             <h3>{title}</h3>
             <p>{text}</p>
             <span className="brand-family-more">Read more<span aria-hidden="true"> →</span></span>
@@ -2116,7 +2116,7 @@ function HomePage() {
         <div className="product-grid">
           {products.map(([title, text, image]) => (
             <article className="product-card" key={title}>
-              <SiteImage src={image} alt="" box={{ width: 150, height: 110 }} />
+              <SiteImage src={image} alt={`${title} hearing aid`} box={{ width: 150, height: 110 }} />
               <h3>{title}</h3>
               <p>{text}</p>
             </article>
@@ -2480,7 +2480,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                       <div className="mega-column" key={columnIndex}>
                         {column.map(([title, text, href, image]) => (
                           <a className="mega-product" href={href} key={href}>
-                            <SiteImage src={image} alt="" box={{ width: 60, height: 60 }} />
+                            <SiteImage src={image} alt={title} box={{ width: 60, height: 60 }} />
                             <span>
                               <strong>{title}</strong>
                               <small>{text}</small>
@@ -2536,7 +2536,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
                       ))}
                       {item.mega && hearingAidColumns.flat().map(([title, text, href, image]) => (
                         <a className="mobile-sublink mobile-product-link" href={href} key={href}>
-                          <SiteImage src={image} alt="" box={{ width: 46, height: 46 }} />
+                          <SiteImage src={image} alt={title} box={{ width: 46, height: 46 }} />
                           <span>
                             <strong>{title}</strong>
                             <small>{text}</small>
@@ -2604,7 +2604,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <SiteImage src="/assets/ida.webp" alt="" box={{ width: 96, height: 96 }} />
+            <SiteImage src="/assets/ida.webp" alt="Ida Institute" box={{ width: 96, height: 96 }} />
             <span>Explore the Ida Institute</span>
           </a>
         </div>
