@@ -189,7 +189,7 @@ export function EarJourneyHero() {
         </div>
 
         <div className="ear-hero-actions">
-          <a className="button primary" href="/contact/">Request an appointment</a>
+          <a className="button primary" href="/contact/#request-appointment">Request an appointment</a>
           <a className="ear-text-link" href="/hearing-aid-fitting/">How fittings work <span aria-hidden="true">↗</span></a>
         </div>
       </div>

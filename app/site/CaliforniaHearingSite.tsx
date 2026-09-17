@@ -1723,7 +1723,7 @@ function InnerPage({ page }: { page: SitePage }) {
             {isCareer ? (
               <a className="button primary" href={careersMailto}>Email us about a role</a>
             ) : (
-              <a className="button primary" href="/contact/">Request an Appointment</a>
+              <a className="button primary" href="/contact/#request-appointment">Request an Appointment</a>
             )}
             <a className="button ghost" href="tel:6503429449">650-342-9449</a>
           </div>
@@ -1895,7 +1895,7 @@ function InnerPage({ page }: { page: SitePage }) {
             <>
               <h3>Set up your FREE hearing consultation</h3>
               <p>Tell us what you’re noticing. We’ll help you understand your options and build a plan around your life.</p>
-              <a className="button primary wide" href="/contact/">Request an appointment</a>
+              <a className="button primary wide" href="/contact/#request-appointment">Request an appointment</a>
             </>
           )}
           <hr />
@@ -1926,7 +1926,7 @@ function InnerPage({ page }: { page: SitePage }) {
       )}
 
       {isContact && (
-        <section className="container lead-form-section">
+        <section id="request-appointment" className="container lead-form-section">
           <LeadForm context={`Contact: ${plain(content.headline)}`} />
         </section>
       )}
@@ -2224,7 +2224,7 @@ function VisitPanel({ visit }: { visit: NonNullable<PageContent["visit"]> }) {
         </div>
       </dl>
       <div className="visit-actions">
-        <a className="button primary" href="/contact/">Request an appointment</a>
+        <a className="button primary" href="/contact/#request-appointment">Request an appointment</a>
         <a className="button ghost" href="tel:6503429449">650-342-9449</a>
         <a className="button ghost" href={visit.directionsHref} target="_blank" rel="noopener">
           Directions from {visit.city}
@@ -2339,7 +2339,7 @@ function ReviewsPage() {
           <div className="reviews-hero-actions">
             <ReviewBadge />
             <a className="button primary" href={googleReviewsUrl} target="_blank" rel="noopener noreferrer">Read &amp; write reviews on Google</a>
-            <a className="button ghost" href="/contact/">Book an appointment</a>
+            <a className="button ghost" href="/contact/#request-appointment">Book an appointment</a>
           </div>
         </div>
       </section>
@@ -2582,7 +2582,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
               <p className="section-kicker">Set up your free hearing consultation</p>
               <h2>Turn life up with better hearing.</h2>
             </div>
-            <a className="button primary" href="/contact/">Request an appointment</a>
+            <a className="button primary" href="/contact/#request-appointment">Request an appointment</a>
           </>
         )}
       </section>
