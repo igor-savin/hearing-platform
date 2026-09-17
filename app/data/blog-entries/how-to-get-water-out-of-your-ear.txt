@@ -1,11 +1,12 @@
   "/how-to-get-water-out-of-your-ear/": {
     kicker: "Ear Care",
     headline: "How to Get Water Out of Your Ear",
+    metaTitle: "How to Get Water Out of Your Ear Safely (and What Not to Use)",
     variant: "condition",
     datePublished: "2025-05-03",
     dateModified: "2026-08-25",
     metaDescription:
-      "Water trapped in your ear is usually easy to clear at home. Learn safe methods, what to avoid, and when muffled hearing or pain means it's time to call us.",
+      "Tilt, tug and gravity clear most trapped water in a minute. The safe home methods, why a cotton swab makes it worse, and when pain or muffled hearing means it is swimmer's ear.",
     intro: [
       "Water trapped in your ear after swimming or a shower is a common nuisance, and most of the time you can clear it at home within a minute or two. The blocked, muffled feeling comes from a bit of water sitting against your eardrum, and gentle movement or gravity is usually all it takes to break the seal. The trick is knowing which methods are safe and which ones can make things worse.",
       "That said, water in the ear is not always harmless. If it lingers, it can soften the skin of the canal and set the stage for an infection swimmers know well. Sometimes what feels like trapped water is really earwax that has swelled and blocked the canal. And people who swim often can head off the whole problem with a set of custom [swim plugs](/services/hearing-protection/).",

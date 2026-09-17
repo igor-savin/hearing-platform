@@ -1,6 +1,8 @@
 "/contact/san-mateo/": {
   kicker: "San Mateo Office",
   headline: "See a Hearing Doctor in San Mateo",
+  metaTitle: "San Mateo Audiologist: Hearing Tests & Hearing Aids | California Hearing Center",
+  metaDescription: "Hearing tests, hearing aid fittings verified with real-ear measurement, tinnitus care, earwax removal and repairs at 88 N. San Mateo Drive, San Mateo. Call 650-342-9449.",
   intro: [
     "Our main office is at 88 N. San Mateo Drive, San Mateo, CA 94401. This is where most new patients start: full diagnostic hearing evaluations, hearing aid consultations and fittings, tinnitus appointments, earwax removal, and repairs all happen here.",
     "Call 650-342-9449 to book, or send us an appointment request and we will call you back to find a time that works.",
@@ -11,11 +13,14 @@
     ["Parking and access", "There is a parking lot behind the building. Turn up the driveway that runs alongside the office — a banner with our logo marks it — and the lot is at the top, off the street and out of downtown traffic. There is street parking on N. San Mateo Drive as well, plus public lots and garages in the downtown core. A ramp with a handrail runs from the lot along the side of the building, so there is a way in that avoids the front steps. If mobility or parking is a concern, mention it when you book and our front desk will talk you through the easiest approach and meet you at whichever door suits you best."],
     ["What happens at your visit", "A first appointment usually runs about an hour. We take a history of what you are noticing and where, look in the ears, and complete a full diagnostic evaluation. Then we go through the results with you while they are fresh, in plain language, and talk through options, including doing nothing yet, if that is the honest recommendation."],
     ["Booking your appointment", "Call 650-342-9449 during office hours and our team will find you a time. You can also request an appointment through this site and we will follow up, or schedule online through Zocdoc if you prefer to pick a slot yourself. Referring physicians can fax records to 650-342-4435."],
+    ["Hearing aids in San Mateo", "We fit [hearing aids](/products/hearing-aids/) from every major manufacturer at this office, and we are not tied to any one brand. Every fitting is programmed to your hearing and checked with real-ear measurement, and you try the aids in your own daily life before you commit, with the trial terms given to you in writing. If you already have a quote from somewhere else, bring it in for a [free second opinion](/hearing-aid-second-opinion/)."],
+    ["Hearing tests in San Mateo", "A full [diagnostic hearing test](/hearing-testing/) is done by an audiologist, in a sound booth, and we go through the results with you at the same visit. It is the right first appointment if you are noticing a change, if a family member has mentioned it, or if you are thinking about hearing aids."],
     ["The technology we fit here", "San Mateo is our main office and it is where new platforms land first. We fit the current 2026 flagships from every major manufacturer, including [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/), which launched in August 2026 with two AI systems running at once, alongside the newest devices from Phonak, Starkey, ReSound, Widex and Signia. Being independent means we can [compare brands](/products/hearing-aids-by-brand/) honestly rather than pushing whichever one a supplier wants moved this quarter, and we keep demonstration units here so you can hear the difference instead of reading about it. Newest is not automatically best: every fitting is verified with [real-ear measurement](/hearing-aid-fitting/), which usually changes your result more than the choice of platform does."],
     ["Our other office", "We also see patients in San Carlos at 1008 Laurel Street, about ten minutes south. If that is closer to you, see the [San Carlos office page](/contact/san-carlos/) for its hours, which differ from San Mateo's."]
   ],
   bulletLinks: [
     ["Book a hearing test", "/hearing-testing/"],
+    ["Hearing aids", "/products/hearing-aids/"],
     ["Hearing aid fitting", "/hearing-aid-fitting/"],
     ["Tinnitus care", "/services/tinnitus-therapy/"],
     ["San Carlos office", "/contact/san-carlos/"],

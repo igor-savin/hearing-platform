@@ -61,7 +61,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
-  title: "California Hearing Center | Turn Up Your Life with Better Hearing",
+  title: "Audiologists & Hearing Aids in San Mateo & San Carlos | California Hearing Center",
   description:
     "Patient-centered audiology care, hearing aids, tinnitus therapy, and hearing protection in San Mateo and San Carlos, CA.",
   // VS-01. Without max-image-preview:large, Google is free to hold every image
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "California Hearing Center",
     locale: "en_US",
-    title: "California Hearing Center | Turn Up Your Life with Better Hearing",
+    title: "Audiologists & Hearing Aids in San Mateo & San Carlos | California Hearing Center",
     description:
       "See how sound travels through the ear—and how modern hearing technology helps every word arrive more clearly.",
     // Explicit dimensions let Facebook and LinkedIn lay the card out on first
@@ -103,7 +103,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "California Hearing Center | Turn Up Your Life with Better Hearing",
+    title: "Audiologists & Hearing Aids in San Mateo & San Carlos | California Hearing Center",
     description: "See how sound becomes connection.",
     images: ["/og.jpg"],
   },

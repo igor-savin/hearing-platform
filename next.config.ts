@@ -397,6 +397,9 @@ const legacyPageRedirects = [
   { source: "/why-does-hawkeye-have-hearing-aid/", destination: "/why-does-hawkeye-have-hearing-aids/", permanent: true },
   { source: "/why-does-hawkeye-have-a-hearing-aid/", destination: "/why-does-hawkeye-have-hearing-aids/", permanent: true },
   { source: "/the-60-60-rule-in-audiology/", destination: "/what-is-the-60-60-rule-in-audiology/", permanent: true },
+  // Duplicate of the tinnitus hub page: 370 impressions at position 45 and no
+  // clicks in the 28 days to 16 Sep 2026, while /tinnitus/one-ear/ ranks ~7.
+  { source: "/tinnitus-in-one-ear/", destination: "/tinnitus/one-ear/", permanent: true },
 ];
 
 const legacySitemapRedirects = [

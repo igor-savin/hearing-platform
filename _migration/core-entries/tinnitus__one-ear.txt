@@ -1,6 +1,7 @@
 "/tinnitus/one-ear/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Tinnitus in One Ear vs Both Ears: What It Means",
+  metaTitle: "Ringing in One Ear: Causes and When to Get It Checked",
   metaDescription: "Tinnitus in one ear points somewhere different from tinnitus in both. What each pattern suggests, and when a one-sided sound needs seeing quickly.",
   intro: [
     "Do you hear ringing, buzzing, or whooshing in just one ear, or in both? The side, or sides, where you hear tinnitus can offer important clues about what is going on and how urgently you should seek help.",

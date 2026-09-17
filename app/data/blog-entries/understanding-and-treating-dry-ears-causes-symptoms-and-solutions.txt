@@ -1,6 +1,7 @@
   "/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/": {
     kicker: "Ear Health",
     headline: "Dry Ears: Why Canals Get Flaky and What Actually Helps",
+    metaTitle: "Dry, Flaky Skin in Your Ears: Causes and What Actually Helps",
     variant: "condition",
     datePublished: "2026-08-25",
     dateModified: "2026-08-25",

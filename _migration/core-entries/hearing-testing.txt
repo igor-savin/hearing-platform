@@ -1,6 +1,8 @@
 "/hearing-testing/": {
   kicker: "Diagnostic Hearing Evaluations",
   headline: "Hearing Testing in San Mateo & San Carlos",
+  metaTitle: "Hearing Test in San Mateo & San Carlos | Audiologist-Led | California Hearing Center",
+  metaDescription: "A full diagnostic hearing test with an audiologist at our San Mateo or San Carlos office, with the results explained at the same visit. Call 650-342-9449.",
   intro: [
     "A hearing test is where better hearing begins. Before anyone can recommend a device, a therapy, or even reassurance, they need an accurate picture of how well you hear, what kind of hearing loss you have, and where along the pathway from ear canal to brain the trouble lies. At California Hearing Center, a diagnostic hearing evaluation answers those questions with objective measurements rather than guesswork, so any next step is built on real data about your ears.",
     "Hearing rarely fades all at once. For most people it slips gradually, and the brain quietly compensates until conversations in restaurants, the television volume, or a spouse's comments make the change hard to ignore. Testing turns that vague sense of missing words into a clear profile: which pitches you struggle with, how well you understand speech, and whether the cause is something reversible like earwax or a permanent change in the inner ear.",

@@ -396,4 +396,6 @@ export const redirectedPaths = new Set<string>([
   // 26 Aug 2026 — misspelled slug corrected to /portola-valley/.
   "/areas-we-serve/portolo-valley/",
   "/areas-we-serve/santa-clara-country/",
+  // 16 Sep 2026 — duplicate of /tinnitus/one-ear/.
+  "/tinnitus-in-one-ear/",
 ]);
