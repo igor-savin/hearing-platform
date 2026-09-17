@@ -20,7 +20,7 @@ export const productGuides: SitePage[] = [
     path: "/hearing-aids-brands/signia/signia-max-vs-signia-ix",
     url: `${baseUrl}/hearing-aids-brands/signia/signia-max-vs-signia-ix`,
     title: "Signia MaX vs Signia IX",
-    metaTitle: "Signia MaX vs Signia IX | Should You Upgrade? | Audiology Associates of Westchester",
+    metaTitle: "Signia MaX vs Signia IX: Should You Upgrade? | Westchester",
     metaDescription:
       "MaX replaced IX in August 2026. What actually changed, the styles and lab results IX still holds, and why we leave most IX wearers where they are.",
     h1: "Signia MaX vs Signia IX: Is the Upgrade Worth It?",
@@ -55,7 +55,7 @@ export const productGuides: SitePage[] = [
     path: "/hearing-aids-brands/signia/signia-max-cost",
     url: `${baseUrl}/hearing-aids-brands/signia/signia-max-cost`,
     title: "What Signia MaX Costs",
-    metaTitle: "Signia MaX Cost | What Drives the Price | Audiology Associates of Westchester",
+    metaTitle: "Signia MaX Cost: What Drives the Price | Audiology Associates",
     metaDescription:
       "Signia has published no MaX pricing. What actually determines what you pay in Westchester, what our fee includes, and how to read a quote from anywhere else.",
     h1: "What Does Signia MaX Cost?",
@@ -90,7 +90,7 @@ export const productGuides: SitePage[] = [
     path: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal",
     url: `${baseUrl}/hearing-aids-brands/signia/signia-max-vs-oticon-reveal`,
     title: "Signia MaX vs Oticon Reveal",
-    metaTitle: "Signia MaX vs Oticon Reveal | Two 2026 Flagships Compared | Audiology Associates of Westchester",
+    metaTitle: "Signia MaX vs Oticon Reveal Compared | Audiology Associates",
     metaDescription:
       "Two flagships two weeks apart. Where Reveal is genuinely ahead, where MaX answers back, and why neither has been independently measured yet.",
     h1: "Signia MaX vs Oticon Reveal",
@@ -125,7 +125,7 @@ export const productGuides: SitePage[] = [
     path: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio",
     url: `${baseUrl}/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio`,
     title: "Phonak EON vs Phonak Infinio",
-    metaTitle: "Upgrading from Phonak Infinio to EON | Audiology Associates of Westchester",
+    metaTitle: "Upgrading from Phonak Infinio to EON | Audiology Associates",
     metaDescription:
       "Phonak does not claim EON hears better in noise than Infinio Ultra. What that means for the upgrade decision, and what Infinio still does that EON cannot.",
     h1: "Phonak EON vs Phonak Infinio: Should You Upgrade?",
@@ -194,7 +194,7 @@ export const productGuides: SitePage[] = [
     path: "/hearing-aids-brands/phonak/phonak-eon-vs-signia-max",
     url: `${baseUrl}/hearing-aids-brands/phonak/phonak-eon-vs-signia-max`,
     title: "Phonak EON vs Signia MaX",
-    metaTitle: "Phonak EON or Signia MaX? | Westchester Audiologists Compare | Audiology Associates of Westchester",
+    metaTitle: "Phonak EON or Signia MaX? Compared | Audiology Associates",
     metaDescription:
       "Both flagships arrived on 24 August 2026. Which one suits you usually comes down to the buildings you sit in, not the processing inside them.",
     h1: "Phonak EON vs Signia MaX",

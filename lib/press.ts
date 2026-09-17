@@ -1,5 +1,5 @@
 import type { SitePage } from "@/lib/site";
-import { baseUrl, siteName } from "@/lib/siteBasics";
+import { baseUrl, siteName, titleWithBrand } from "@/lib/siteBasics";
 
 // Press coverage of the practice. One entry per article, plus the /in-the-news
 // index that lists them. lib/site.ts adds every page here to the route table,
@@ -132,7 +132,7 @@ const pressIndexPage: SitePage = {
   path: "/in-the-news",
   url: `${baseUrl}/in-the-news`,
   title: "In the News",
-  metaTitle: `In the News | ${siteName}`,
+  metaTitle: titleWithBrand("In the News"),
   metaDescription:
     "Press coverage of Audiology Associates of Westchester, including our feature in the Celebrate Somers 2026 edition. Hearing care in Somers and Harrison, NY.",
   h1: "In the news",
@@ -166,7 +166,7 @@ const celebrateSomersPage: SitePage = {
   path: "/in-the-news/celebrate-somers-2026",
   url: `${baseUrl}/in-the-news/celebrate-somers-2026`,
   title: "Featured in Celebrate Somers 2026",
-  metaTitle: `Featured in Celebrate Somers 2026 | ${siteName}`,
+  metaTitle: titleWithBrand("Featured in Celebrate Somers 2026"),
   metaDescription:
     "Dr. Jennifer Ratner talks hearing loss, hearing tests, real-ear hearing aid fitting and tinnitus care in the Celebrate Somers 2026 edition. See the article and visit us in Somers, NY.",
   h1: "As featured in Celebrate Somers 2026",

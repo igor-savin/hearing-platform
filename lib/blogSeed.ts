@@ -1,4 +1,5 @@
 import type { SitePage } from "@/lib/site";
+import { titleWithBrand } from "@/lib/siteBasics";
 
 type SeedBlogBlueprint = { path: string; title: string; metaDescription: string; h1: string; category: string; format: string; heroImage: { src: string; alt: string }; sections: string[]; body: string[]; faqs: { question: string; answer: string }[]; related: { label: string; href: string }[]; blogMeta: NonNullable<SitePage["blogMeta"]>; };
 
@@ -198,7 +199,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-test-vs-hearing-screening-difference",
     "title": "Hearing Test vs Hearing Screening: What’s the Difference?",
-    "metaDescription": "A screening gives a pass or a refer. A full evaluation gives an audiogram, word scores and middle-ear results. Here is which appointment you actually need.",
+    "metaDescription": "A screening gives a pass or a refer. A full evaluation gives an audiogram, word scores and middle-ear results. Here is which appointment you need, and why.",
     "h1": "Hearing Test vs Hearing Screening: What’s the Difference?",
     "category": "Testing & Diagnosis",
     "format": "Comparison",
@@ -1158,7 +1159,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/ringing-in-one-ear-red-flags-next-steps",
     "title": "Ringing in One Ear: Causes, Red Flags, and Next Steps",
-    "metaDescription": "Ringing in one ear only is worth checking rather than waiting out. Here is what one-sided tinnitus can mean and what an evaluation looks at.",
+    "metaDescription": "Ringing in one ear only is worth checking rather than waiting out. Here is what one-sided tinnitus can mean, and what a full evaluation looks at first.",
     "h1": "Ringing in One Ear: Causes, Red Flags, and Next Steps",
     "category": "Tinnitus",
     "format": "Symptom Guide",
@@ -1350,7 +1351,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/tinnitus-after-loud-noise-what-to-do",
     "title": "Tinnitus After Loud Noise: What to Do Next",
-    "metaDescription": "Ringing after a concert or a power tool is common. Here is what to do in the days that follow, and when that ringing should be tested properly.",
+    "metaDescription": "Ringing after a concert or a power tool is common. Here is what to do in the days that follow, and when that ringing should be tested by an audiologist.",
     "h1": "Tinnitus After Loud Noise: What to Do Next",
     "category": "Tinnitus",
     "format": "Checklist",
@@ -1542,7 +1543,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/lenire-for-tinnitus-candidate-guide",
     "title": "Lenire for Tinnitus: Who Might Be a Candidate?",
-    "metaDescription": "Lenire is one device-based option some tinnitus patients ask about. Here is what candidacy depends on and what gets checked before it is discussed.",
+    "metaDescription": "Lenire is one device-based option that tinnitus patients ask about. Here is what candidacy depends on, and what our audiologists check before discussing it.",
     "h1": "Lenire for Tinnitus: Who Might Be a Candidate?",
     "category": "Tinnitus",
     "format": "Candidate Guide",
@@ -1734,7 +1735,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/sound-sensitivity-vs-tinnitus",
     "title": "Sound Sensitivity vs Tinnitus: What’s the Difference?",
-    "metaDescription": "Tinnitus is sound you hear with no source. Sound sensitivity is ordinary sound that feels too loud. They are tested and managed differently.",
+    "metaDescription": "Tinnitus is sound you hear with no source. Sound sensitivity is ordinary sound that feels too loud. The two are tested, explained and managed differently.",
     "h1": "Sound Sensitivity vs Tinnitus: What’s the Difference?",
     "category": "Tinnitus",
     "format": "Comparison",
@@ -2118,7 +2119,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/why-hearing-aids-whistle",
     "title": "Why Your Hearing Aids Whistle and How to Fix It",
-    "metaDescription": "A whistling hearing aid usually means sound is leaking back to the microphone. Here is what to check at home and what a fit adjustment fixes.",
+    "metaDescription": "A whistling hearing aid usually means sound is leaking back to the microphone. Here is what to check at home, and what a fit adjustment in the office fixes.",
     "h1": "Why Your Hearing Aids Whistle and How to Fix It",
     "category": "Hearing Aid Care",
     "format": "Troubleshooting",
@@ -3366,7 +3367,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/hearing-aid-cost-westchester-county",
     "title": "How Much Do Hearing Aids Cost in Westchester County?",
-    "metaDescription": "Hearing aid pricing varies by technology level and by how much care is bundled with it. Here is how to read a quote before you sign anything.",
+    "metaDescription": "Hearing aid pricing varies by technology level and by how much care is bundled in. Here is how to read a quote in Westchester before you sign anything.",
     "h1": "How Much Do Hearing Aids Cost in Westchester County?",
     "category": "Hearing Aid Buying",
     "format": "Local Guide",
@@ -3462,7 +3463,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/does-insurance-cover-hearing-aids-tests",
     "title": "Does Insurance Cover Hearing Aids or Hearing Tests?",
-    "metaDescription": "Coverage for hearing tests and for hearing aids often works differently, even on the same plan. Here is what to ask your insurer before you come in.",
+    "metaDescription": "Coverage for hearing tests and for hearing aids often works differently, even on the same plan. Here is what to ask your insurer before your first visit.",
     "h1": "Does Insurance Cover Hearing Aids or Hearing Tests?",
     "category": "Hearing Aid Buying",
     "format": "Checklist",
@@ -3558,7 +3559,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/questions-before-buying-hearing-aids",
     "title": "What Questions Should You Ask Before Buying Hearing Aids?",
-    "metaDescription": "The questions worth asking before buying hearing aids are about verification, follow-up, trial terms and repairs, not only about features and price.",
+    "metaDescription": "The questions worth asking before you buy hearing aids are about verification, follow-up care, trial terms and repairs, not only about features and price.",
     "h1": "What Questions Should You Ask Before Buying Hearing Aids?",
     "category": "Hearing Aid Buying",
     "format": "Checklist",
@@ -3846,7 +3847,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/how-many-follow-up-visits-new-hearing-aids",
     "title": "How Many Follow-Up Visits Do New Hearing Aids Need?",
-    "metaDescription": "New hearing aids take more than one visit. Here is what the follow-up appointments adjust and why the first fitting is rarely the final setting.",
+    "metaDescription": "New hearing aids take more than one visit. Here is what each follow-up appointment adjusts, and why the first fitting is rarely the final setting for you.",
     "h1": "How Many Follow-Up Visits Do New Hearing Aids Need?",
     "category": "Hearing Aid Fitting",
     "format": "Quick Answer Guide",
@@ -4422,7 +4423,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/kids-teens-ear-protection-concerts-sports",
     "title": "Should Kids and Teens Use Ear Protection at Concerts and Sports?",
-    "metaDescription": "Concerts, stadiums and band practice are just as loud for children. Here is what protection suits which age and how to get it actually worn.",
+    "metaDescription": "Concerts, stadiums and band practice are just as loud for children. Here is what protection suits which age, and how to get a child to actually wear it.",
     "h1": "Should Kids and Teens Use Ear Protection at Concerts and Sports?",
     "category": "Hearing Protection",
     "format": "Family Guide",
@@ -4518,7 +4519,7 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
   {
     "path": "/noise-induced-hearing-loss-prevention",
     "title": "What Is Noise-Induced Hearing Loss and Can It Be Prevented?",
-    "metaDescription": "Noise damages hearing gradually and permanently, and that damage is preventable. Here is how exposure adds up and what actually protects you.",
+    "metaDescription": "Noise damages hearing gradually and permanently, and that damage is preventable. Here is how exposure adds up, and what genuinely protects your hearing.",
     "h1": "What Is Noise-Induced Hearing Loss and Can It Be Prevented?",
     "category": "Hearing Protection",
     "format": "Pillar Guide",
@@ -4810,7 +4811,7 @@ export function buildSeedBlogPosts(baseUrl: string, siteName: string): SitePage[
     path: post.path,
     url: `${baseUrl}${post.path}`,
     title: post.title,
-    metaTitle: `${post.title} | ${siteName}`,
+    metaTitle: titleWithBrand(post.title),
     metaDescription: post.metaDescription,
     h1: post.h1,
     canonical: `${baseUrl}${post.path}`,
