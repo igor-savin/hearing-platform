@@ -400,6 +400,31 @@ const legacyPageRedirects = [
   // Duplicate of the tinnitus hub page: 370 impressions at position 45 and no
   // clicks in the 28 days to 16 Sep 2026, while /tinnitus/one-ear/ ranks ~7.
   { source: "/tinnitus-in-one-ear/", destination: "/tinnitus/one-ear/", permanent: true },
+
+  // 17 Sep 2026 — legacy WordPress URLs Google still holds but that 404ed with
+  // no redirect at all. Found by walking the "Excluded by 'noindex' tag" bucket
+  // in Search Console (74 URLs) and fetching every one against production:
+  // 25 tag archives and 2 feeds already redirected correctly, 15 were wp-admin
+  // and wp-login paths, 5 were robots.txt patterns rather than URLs, and these
+  // were the real pages with an equivalent still on the site.
+  { source: "/contact-us/", destination: "/contact/", permanent: true },
+  { source: "/book-appointment/", destination: "/contact/#request-appointment", permanent: true },
+  { source: "/hearing-services/", destination: "/services/", permanent: true },
+  { source: "/services/hearing-tests/", destination: "/hearing-testing/", permanent: true },
+  { source: "/services/custom-earplugs/", destination: "/services/hearing-protection/", permanent: true },
+  { source: "/hearing-aid-troubleshooting/", destination: "/services/hearing-aid-repair/", permanent: true },
+  { source: "/shop/", destination: "/products/hearing-aids/", permanent: true },
+  { source: "/tinnitus/assessment/", destination: "/tinnitus/", permanent: true },
+  { source: "/products/hearing-aids-by-brand/oticon/oticon-own/", destination: "/products/hearing-aids-by-brand/oticon/", permanent: true },
+  // Atherton kept its city page and most of its service sub-pages; these four
+  // were dropped without a redirect. Parent city page is the closest match.
+  { source: "/areas-we-serve/atherton/hearing-tests/", destination: "/areas-we-serve/atherton/", permanent: true },
+  { source: "/areas-we-serve/atherton/hearing-aid-fittings/", destination: "/areas-we-serve/atherton/", permanent: true },
+  { source: "/areas-we-serve/atherton/hearing-aid-brands/", destination: "/areas-we-serve/atherton/", permanent: true },
+  { source: "/areas-we-serve/atherton/tele-audiology/", destination: "/areas-we-serve/atherton/", permanent: true },
+  // Malformed inbound links. The real pages are fine; only the suffix is junk.
+  { source: "/what-is-the-60-60-rule-in-audiology-complete-/", destination: "/what-is-the-60-60-rule-in-audiology-complete-guide/", permanent: true },
+  { source: "/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided/Links/", destination: "/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided/", permanent: true },
 ];
 
 const legacySitemapRedirects = [
@@ -418,6 +443,11 @@ const wordpressArchiveRedirects = [
   { source: "/feed/", destination: "/the-blog/", permanent: true },
   { source: "/comments/feed/", destination: "/the-blog/", permanent: true },
   { source: "/:path*/feed/", destination: "/the-blog/", permanent: true },
+  // WordPress date archives (/2018/06/, /2020/05/ ...). Matched as a pattern
+  // rather than one by one, because Google holds more of these than it shows.
+  // Two segments of exactly four then two digits cannot collide with a real
+  // route: no path in crawledPages starts with a bare four-digit segment.
+  { source: "/:year(\\d{4})/:month(\\d{2})/", destination: "/the-blog/", permanent: true },
 ];
 
 
@@ -501,6 +531,21 @@ const cityConsolidationRedirects = [
       { source: "/areas-we-serve/walnut-creek/", destination: "/areas-we-serve/contra-costa-county/#walnut-creek", permanent: true }, // 0 clicks, 451 impr
       { source: "/areas-we-serve/windsor/", destination: "/areas-we-serve/sonoma-county/#windsor", permanent: true }, // 0 clicks, 10 impr
       { source: "/areas-we-serve/yountville/", destination: "/areas-we-serve/napa-county/#yountville", permanent: true }, // 0 clicks, 0 impr
+      // 17 Sep 2026 — ten more city pages the old WordPress site had that were
+      // never migrated and never redirected. None of them exist in cityProfiles,
+      // so there is no prose to anchor at; the county hub is the closest parent.
+      // Davis, Woodland and Winters are Yolo County, which has no hub, so they
+      // go to the areas directory like /areas-we-serve/bay-area/ does.
+      { source: "/areas-we-serve/rodeo/", destination: "/areas-we-serve/contra-costa-county/", permanent: true },
+      { source: "/areas-we-serve/crockett/", destination: "/areas-we-serve/contra-costa-county/", permanent: true },
+      { source: "/areas-we-serve/discovery-bay/", destination: "/areas-we-serve/contra-costa-county/", permanent: true },
+      { source: "/areas-we-serve/healdsburg/", destination: "/areas-we-serve/sonoma-county/", permanent: true },
+      { source: "/areas-we-serve/rohnert-park/", destination: "/areas-we-serve/sonoma-county/", permanent: true },
+      { source: "/areas-we-serve/american-canyon/", destination: "/areas-we-serve/napa-county/", permanent: true },
+      { source: "/areas-we-serve/castro-valley/", destination: "/areas-we-serve/alameda-county/", permanent: true },
+      { source: "/areas-we-serve/davis/", destination: "/areas-we-serve/", permanent: true },
+      { source: "/areas-we-serve/woodland/", destination: "/areas-we-serve/", permanent: true },
+      { source: "/areas-we-serve/winters/", destination: "/areas-we-serve/", permanent: true },
 ];
 
 const nextConfig: NextConfig = {
