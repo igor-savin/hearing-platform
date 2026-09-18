@@ -215,7 +215,7 @@ const conditions: Condition[] = [
     title: "Age-Related Hearing Loss (Presbycusis)",
     metaTitle: "Age-Related Hearing Loss (Presbycusis) | Audiology Associates",
     metaDescription:
-      "Age-related hearing loss (presbycusis) is gradual and common. Learn the signs and what helps, from Audiology Associates of Westchester in Harrison and Somers, NY.",
+      "Age-related hearing loss (presbycusis) is gradual and common. The signs to watch for and what helps, from our audiologists in Harrison and Somers, New York.",
     pullQuote:
       "Age-related hearing loss is gradual and easy to miss. That is exactly why a baseline hearing test matters.",
     patientQuestion: "Is it normal to lose some hearing as I get older, and should I do anything about it?",
@@ -337,7 +337,7 @@ const conditions: Condition[] = [
     title: "Sudden Hearing Loss",
     metaTitle: "Sudden Hearing Loss: Why Not to Wait | Audiology Associates",
     metaDescription:
-      "Sudden hearing loss is a medical emergency and the treatment window is measured in days. The warning signs and what to do, from Audiology Associates of Westchester, Harrison & Somers, NY.",
+      "Sudden hearing loss is a medical emergency, and the treatment window is measured in days. The warning signs and what to do, from our Westchester audiologists.",
     pullQuote:
       "Sudden hearing loss is a medical emergency. The treatment window is measured in days, so it is not a wait-and-see problem.",
     patientQuestion: "I lost hearing in one ear quickly. Is that an emergency?",
@@ -436,7 +436,7 @@ const hubPage: SitePage = {
   title: "Types of Hearing Loss",
   metaTitle: "Types of Hearing Loss: Causes & Next Steps | Audiology Associates",
   metaDescription:
-    "A clear guide to the types and causes of hearing loss: sensorineural, conductive, mixed, age-related, noise-induced, and sudden. From Audiology Associates of Westchester.",
+    "A clear guide to the types and causes of hearing loss: sensorineural, conductive, mixed, age-related, noise-induced and sudden. Explained by our audiologists.",
   h1: "Understanding Hearing Loss",
   type: "blog-post",
   lastModified: "2026-07-21",

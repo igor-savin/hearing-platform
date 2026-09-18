@@ -5,6 +5,7 @@ import {
   canonicalPathFor,
   primaryPhone,
   primaryPhoneHref,
+  fitDescription,
   siteName,
   TITLE_MAX,
   titleWithBrand
@@ -1229,7 +1230,7 @@ const aboutTrustPages: SitePage[] = [
     title: "Services",
     metaTitle: titleWithBrand("Services"),
     metaDescription:
-      "Explore the main hearing services at Audiology Associates of Westchester, including hearing testing, hearing aid fitting, tinnitus therapy, hearing protection, and hearing aid repair.",
+      "The main services at Audiology Associates of Westchester: hearing testing, hearing aid fitting, tinnitus therapy, hearing protection and hearing aid repair.",
     h1: "Services",
     type: "page",
     lastModified: "2026-07-10",
@@ -1250,7 +1251,7 @@ const aboutTrustPages: SitePage[] = [
     title: "Dr. Cliff Approved Provider",
     metaTitle: titleWithBrand("Dr. Cliff Approved Provider"),
     metaDescription:
-      "Audiology Associates of Westchester is a Dr. Cliff Approved Provider, reflecting a commitment to patient-centered audiology, best-practice hearing care, and professional hearing aid fittings.",
+      "Audiology Associates of Westchester is a Dr. Cliff Approved Provider: patient-centered audiology, best-practice hearing care and verified hearing aid fittings.",
     h1: "Dr. Cliff Approved Provider",
     type: "page",
     lastModified: "2026-07-10",
@@ -1275,7 +1276,7 @@ const aboutTrustPages: SitePage[] = [
     title: "California Hearing Center",
     metaTitle: titleWithBrand("California Hearing Center: Our Sister Practice"),
     metaDescription:
-      "Learn about California Hearing Center, a sister practice connected to Audiology Associates of Westchester for patients and families looking for hearing care in California.",
+      "California Hearing Center is our sister practice, in San Mateo and San Carlos, California. Worth knowing if you or your family spend time on the West Coast.",
     h1: "California Hearing Center",
     type: "page",
     lastModified: "2026-07-10",
@@ -1300,7 +1301,7 @@ const howWeCanHelpPages: SitePage[] = [
     title: "How We Can Help",
     metaTitle: titleWithBrand("How We Can Help"),
     metaDescription:
-      "Explore hearing assessments, hearing aid technology, tinnitus management, cochlear implant support, earwax removal, cognitive screening, and other audiology services.",
+      "Hearing assessments, hearing aid technology, tinnitus management, cochlear implant support, earwax removal, cognitive screening and other audiology services.",
     h1: "How We Can Help",
     type: "how-we-can-help-index",
     lastModified: "2026-07-07",
@@ -1429,7 +1430,7 @@ const serviceAreaPages: SitePage[] = [
     title: "Areas We Serve",
     metaTitle: titleWithBrand("Areas We Serve"),
     metaDescription:
-      "Explore audiology service areas for Audiology Associates of Westchester, including Westchester County, nearby Fairfield County communities, and southern Putnam County.",
+      "Where we see patients: Westchester County, nearby Fairfield County communities in Connecticut, and southern Putnam County. Offices in Harrison and Somers, NY.",
     h1: "Hearing Aids & Audiology Across Westchester County",
     type: "service-areas-index",
     lastModified: "2026-07-06",
@@ -1562,8 +1563,14 @@ export function toPath(slug?: string[]) {
 // root, so it is scoped to the homepage rather than emitted on all 180 pages.
 // Safe to keep in source: it is a public token that appears in the served HTML,
 // and it proves nothing on its own without control of this domain.
+//
+// The token here used to be D9DA6925..., which belongs to somebody else's Bing
+// account - almost certainly the agency that ran the Duda site - and it was
+// still granting them this site's Bing search data in September 2026. This is
+// our own token. Our property is verified through the Search Console import as
+// well, so the tag is a second proof of ownership rather than the only one.
 export const bingSiteVerification =
-  process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "D9DA69251B598DFCE6D72A6402D17438";
+  process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "CEFD93DA081A53DA60065D3F4F62C073";
 
 export function buildMetadata(page: SitePage): Metadata {
   const image = page.heroImage?.src || "/opengraph-image";
@@ -1588,7 +1595,7 @@ export function buildMetadata(page: SitePage): Metadata {
 
   return {
     title: page.metaTitle,
-    description: page.metaDescription,
+    description: fitDescription(page.metaDescription),
     ...robotsOverride,
     ...verificationOverride,
     alternates: {
@@ -1596,7 +1603,7 @@ export function buildMetadata(page: SitePage): Metadata {
     },
     openGraph: {
       title: page.metaTitle,
-      description: page.metaDescription,
+      description: fitDescription(page.metaDescription),
       url: page.canonical,
       siteName,
       type: page.type === "blog-post" ? "article" : "website",
@@ -1605,7 +1612,7 @@ export function buildMetadata(page: SitePage): Metadata {
     twitter: {
       card: "summary_large_image",
       title: page.metaTitle,
-      description: page.metaDescription,
+      description: fitDescription(page.metaDescription),
       images: [image]
     }
   };
