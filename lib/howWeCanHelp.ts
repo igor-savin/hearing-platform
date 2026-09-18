@@ -213,7 +213,7 @@ export const helpServices: HelpService[] = [
     slug: "advanced-hearing-aid-technology",
     shortDescription: "Choosing between brands, styles, and technology levels, and having the result verified in your ear.",
     metaDescription:
-      "Compare hearing aid brands, styles, and technology levels with an independent audiologist, and have the fitting verified with real-ear measurement. Harrison and Somers, NY.",
+      "Compare hearing aid brands, styles and technology levels with an independent audiologist, then have the fitting verified with real-ear measurement.",
     intro: [
       "The practice fits Oticon, Phonak, ReSound, Signia, Starkey, Widex, Unitron, Rexton, and Lyric. The range is wide on purpose: what we recommend is not limited to what we happen to stock.",
       "Technology level changes how a hearing aid behaves in noise, how it handles calls and streaming, whether it recharges, and how small it can be. It does not change how well the device is fitted, and the fitting is where most of the benefit is won or lost."

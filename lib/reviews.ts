@@ -94,7 +94,7 @@ export const reviewsPage: SitePage = {
   title: "Patient Reviews & Testimonials",
   metaTitle: "Patient Reviews — 4.9★ on Google | Audiology Associates of Westchester",
   metaDescription:
-    "Read what patients say about Audiology Associates of Westchester — rated 4.9 stars across 486+ Google reviews for hearing tests, hearing aids, and tinnitus care in Harrison & Somers, NY.",
+    "Read what patients say about us: 4.9 stars across 486+ Google reviews for hearing tests, hearing aids and tinnitus care in Harrison and Somers, New York.",
   h1: "What our patients say",
   type: "educational",
   lastModified: "2026-07-21",

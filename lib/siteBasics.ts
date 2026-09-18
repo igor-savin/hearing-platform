@@ -50,6 +50,28 @@ export function titleWithBrand(base: string, qualifier?: string): string {
   return base;
 }
 
+// Bing wants a meta description of 150-160 characters and truncates past that.
+// Most pages are written to fit, but the ~35 recovered from the pre-2026 Duda
+// crawl carry whatever the old site had, and a few ran past 190. Rather than
+// rewrite copy nobody is maintaining, buildMetadata() passes every description
+// through here: a description that already fits is untouched, and a long one is
+// cut at the last sentence that still leaves a useful snippet, or at a word
+// boundary with an ellipsis when it is one long sentence. Never mid-word.
+export const DESCRIPTION_MAX = 160;
+
+export function fitDescription(text: string): string {
+  const description = text.trim();
+  if (description.length <= DESCRIPTION_MAX) return description;
+
+  const head = description.slice(0, DESCRIPTION_MAX);
+  const lastSentence = Math.max(head.lastIndexOf(". "), head.lastIndexOf("! "), head.lastIndexOf("? "));
+  if (lastSentence >= 120) return description.slice(0, lastSentence + 1);
+
+  const lastSpace = description.slice(0, DESCRIPTION_MAX - 1).lastIndexOf(" ");
+  const cut = lastSpace > 0 ? lastSpace : DESCRIPTION_MAX - 1;
+  return description.slice(0, cut).replace(/[,;:\u2014-]$/, "").trim() + "\u2026";
+}
+
 export const primaryPhone = "(914) 949-0034";
 export const primaryPhoneHref = "tel:+19149490034";
 export const zocdocUrl = "https://www.zocdoc.com/practice/audiology-associates-of-westchester-69184";

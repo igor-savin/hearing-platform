@@ -168,7 +168,7 @@ const celebrateSomersPage: SitePage = {
   title: "Featured in Celebrate Somers 2026",
   metaTitle: titleWithBrand("Featured in Celebrate Somers 2026"),
   metaDescription:
-    "Dr. Jennifer Ratner talks hearing loss, hearing tests, real-ear hearing aid fitting and tinnitus care in the Celebrate Somers 2026 edition. See the article and visit us in Somers, NY.",
+    "Dr. Jennifer Ratner on hearing loss, hearing tests, real-ear fitting and tinnitus care in the Celebrate Somers 2026 edition. Read it, then visit us in Somers.",
   h1: "As featured in Celebrate Somers 2026",
   type: "educational",
   // Fallback only. lib/contentDates.ts replaces these once the page is committed.
