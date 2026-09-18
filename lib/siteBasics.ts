@@ -22,6 +22,34 @@
 
 export const baseUrl = "https://www.audiologyassociates.org";
 export const siteName = "Audiology Associates of Westchester";
+// Bing marks a title over 70 characters as too long, and truncates it in the
+// SERP either way. The full practice name is 35 characters, so any title built
+// as `<page> | Audiology Associates of Westchester` blew that budget the moment
+// the page part passed 32 — which was most of the site (98 of 196 pages in the
+// September 2026 audit). Rather than hand-trimming every string, titles go
+// through here: the full name is used when it fits, then the shorter practice
+// name, then the region, which is what the newer blog entries already did by
+// hand. A base that is itself over 70 is returned unbranded and shows up in
+// `npm run check:titles`, because only a human can shorten the words.
+export const titleBrandFull = siteName;
+export const titleBrandShort = "Audiology Associates";
+export const titleBrandRegion = "Westchester";
+export const TITLE_MAX = 70;
+
+// `qualifier` is an optional extra phrase ("Tinnitus Help in Westchester") that
+// is worth having when there is room and is the first thing dropped when there
+// is not.
+export function titleWithBrand(base: string, qualifier?: string): string {
+  const bases = qualifier ? [`${base} | ${qualifier}`, base] : [base];
+  for (const candidateBase of bases) {
+    for (const brand of [titleBrandFull, titleBrandShort, titleBrandRegion]) {
+      const candidate = `${candidateBase} | ${brand}`;
+      if (candidate.length <= TITLE_MAX) return candidate;
+    }
+  }
+  return base;
+}
+
 export const primaryPhone = "(914) 949-0034";
 export const primaryPhoneHref = "tel:+19149490034";
 export const zocdocUrl = "https://www.zocdoc.com/practice/audiology-associates-of-westchester-69184";

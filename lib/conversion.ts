@@ -188,7 +188,7 @@ export const comparisonPages: SitePage[] = [
     path: "/audiologist-vs-ent-for-hearing-loss",
     url: `${baseUrl}/audiologist-vs-ent-for-hearing-loss`,
     title: "Audiologist vs ENT for Hearing Loss",
-    metaTitle: "Audiologist vs ENT for Hearing Loss | Audiology Associates of Westchester",
+    metaTitle: "Audiologist vs ENT for Hearing Loss | Audiology Associates",
     metaDescription:
       "Learn when to schedule with an audiologist, when ENT medical care may be needed, and how Westchester patients can choose the right first step.",
     h1: "Audiologist vs ENT: Who Should You See for Hearing Loss?",
@@ -223,7 +223,7 @@ export const comparisonPages: SitePage[] = [
     path: "/hearing-screening-vs-hearing-test",
     url: `${baseUrl}/hearing-screening-vs-hearing-test`,
     title: "Hearing Screening vs Hearing Test",
-    metaTitle: "Hearing Screening vs Hearing Test | Audiology Associates of Westchester",
+    metaTitle: "Hearing Screening vs Hearing Test | Audiology Associates",
     metaDescription:
       "Compare quick hearing screenings with comprehensive hearing evaluations and learn which appointment is better for real communication concerns.",
     h1: "Hearing Screening vs Hearing Test: What Is the Difference?",

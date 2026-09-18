@@ -66,7 +66,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
   {
     path: "/fortell-hearing-aids-what-we-know",
     title: "Fortell Hearing Aids: What Is Actually Known",
-    metaTitle: "Fortell Hearing Aids: What Is Actually Known | Audiology Associates of Westchester",
+    metaTitle: "Fortell Hearing Aids: What Is Actually Known | Audiology Associates",
     metaDescription: "Fortell fits only in its own clinics, at $6,800 a pair, out of network with every insurer. What the evidence shows, and what to ask before Park Avenue or Greenwich.",
     h1: "Fortell Hearing Aids: What Is Actually Known So Far",
     heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Weighing hearing aid options before committing to a purchase" },
@@ -103,7 +103,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
   {
     path: "/signia-max-what-we-know",
     title: "Signia MaX: What Is Actually Known",
-    metaTitle: "Signia MaX: What Is Actually Known | Audiology Associates of Westchester",
+    metaTitle: "Signia MaX: What Is Actually Known | Audiology Associates",
     metaDescription: "Signia released MaX on 24 August 2026. What is confirmed, which figures come from Signia's own unpublished papers, and what nobody has measured.",
     h1: "Signia MaX: What Is Actually Known So Far",
     heroImage: { src: "/assets/brands/Signia-MaX-device.webp", alt: "Signia Pure Charge and Go MaX rechargeable hearing aid" },
@@ -132,7 +132,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
   {
     path: "/phonak-eon-what-we-know",
     title: "Phonak EON: What Is Actually Known",
-    metaTitle: "Phonak EON: What Is Actually Known | Audiology Associates of Westchester",
+    metaTitle: "Phonak EON: What Is Actually Known | Audiology Associates",
     metaDescription: "Phonak released EON on 24 August 2026. What the reference behind the headline claim actually says, and what Phonak is careful not to claim at all.",
     h1: "Phonak EON: What Is Actually Known So Far",
     heroImage: { src: "/assets/brands/Phonak-EON-Sphere-device.webp", alt: "Phonak Audeo EON Sphere rechargeable receiver-in-canal hearing aid" },

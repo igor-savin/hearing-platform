@@ -4042,7 +4042,7 @@ function WhyChooseUsPage({ page }: { page: SitePage }) {
       <Breadcrumbs page={page} />
       <section className="relative isolate overflow-hidden bg-[#003f6f] py-20 text-white">
         <Image
-          alt=""
+          alt="Patients and staff at Audiology Associates of Westchester"
           className="absolute inset-0 -z-10 h-full w-full object-cover opacity-24"
           fill
           priority
