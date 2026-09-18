@@ -61,7 +61,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
-  title: "Audiologists & Hearing Aids in San Mateo & San Carlos | California Hearing Center",
+  // 18 Sep 2026 — 81 characters, the longest title on the site and over Bing's
+  // 70-character limit. The cf13d08 sweep read corePages.ts and never saw this
+  // one. San Carlos keeps its own office page, so the city drops here first.
+  // openGraph.title and twitter.title below stay long on purpose: social cards
+  // are not search results and both offices are worth naming when shared.
+  title: "Audiologists & Hearing Aids in San Mateo | California Hearing Center",
   description:
     "Patient-centered audiology care, hearing aids, tinnitus therapy, and hearing protection in San Mateo and San Carlos, CA.",
   // VS-01. Without max-image-preview:large, Google is free to hold every image

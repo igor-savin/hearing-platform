@@ -423,7 +423,9 @@ const legacyPageRedirects = [
   { source: "/areas-we-serve/atherton/hearing-aid-brands/", destination: "/areas-we-serve/atherton/", permanent: true },
   { source: "/areas-we-serve/atherton/tele-audiology/", destination: "/areas-we-serve/atherton/", permanent: true },
   // Malformed inbound links. The real pages are fine; only the suffix is junk.
-  { source: "/what-is-the-60-60-rule-in-audiology-complete-/", destination: "/what-is-the-60-60-rule-in-audiology-complete-guide/", permanent: true },
+  // Straight to the final page: -complete-guide/ is itself redirected, and a
+  // two-hop chain is a hop Google does not have to make.
+  { source: "/what-is-the-60-60-rule-in-audiology-complete-/", destination: "/what-is-the-60-60-rule-in-audiology/", permanent: true },
   { source: "/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided/Links/", destination: "/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided/", permanent: true },
 ];
 
