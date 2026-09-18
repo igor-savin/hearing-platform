@@ -7,7 +7,7 @@
     image: "/assets/blog/celebrating-pride-month-a-month-of-diversity-equality-and-acceptance-1.svg",
     imageLabel: "The date most people come here for: June, after 28 June 1969",
     metaDescription:
-      "Pride Month is June, marking the Stonewall uprising of 28 June 1969. San Francisco Pride 2027 is 26-27 June. Dates, origins, and what is happening on the Peninsula.",
+      "Pride Month is June, marking the Stonewall uprising of 28 June 1969. San Francisco Pride 2027 is 26-27 June. Dates, origins, and what is on locally.",
     intro: [
       "Pride Month is June. It is June because the Stonewall uprising began in the early hours of 28 June 1969, when police raided the Stonewall Inn in New York, and because the first march — Christopher Street Liberation Day — was held on the anniversary, Sunday 28 June 1970. That is the whole answer to the question most people arrive here asking, and it is why so many Pride events still land on the last weekend of June.",
       "In the United States it is recognised by presidential proclamation rather than by statute. President Clinton issued the first, Proclamation 7203, on 11 June 1999. President Obama's 2009 proclamation broadened the name, and a 2022 proclamation broadened it again. The Stonewall Inn itself became a national monument on 24 June 2016, the first in the United States dedicated to LGBTQ history.",

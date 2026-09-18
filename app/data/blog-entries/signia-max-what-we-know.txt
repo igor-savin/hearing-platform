@@ -5,7 +5,7 @@
     datePublished: "2026-08-24",
     dateModified: "2026-08-25",
     metaDescription:
-      "Signia MaX launched August 24, 2026 with four neural networks. What is confirmed, which claims come from Signia's own white papers, what nobody knows yet, and who it suits.",
+      "Signia MaX launched 24 August 2026 with four neural networks. What is confirmed, which claims come from Signia's own white papers, and who the device suits.",
     intro: [
       "Signia announced MaX, short for Multi-adaptive Xperience, on August 24, 2026, and released it in the United States the same day. It is the company's new flagship, taking over from Signia IX, and it arrived with a specific and unusual pitch: not one artificial intelligence but four, each trained on a different part of the problem, running together.",
       "Signia's own launch footnote says full Auracast does not switch on until a firmware update due by March 2027, and the feature lists we have read today print Auracast without that qualification. The rest of the launch material runs the same way. Every performance number attached to MaX came from Signia, no independent laboratory has measured it, no price has been published, and the platform launched in one style out of the dozen Signia makes. None of that means it is a bad device. It means the evidence base on launch day is thin, and you deserve to know that before you make a decision costing thousands of dollars. We fit Signia at both our offices and have done for years.",

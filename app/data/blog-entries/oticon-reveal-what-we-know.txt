@@ -5,7 +5,7 @@
     datePublished: "2026-08-21",
     dateModified: "2026-08-25",
     metaDescription:
-      "Oticon Reveal launched in August 2026 with a Dual AI system. What is confirmed, which claims come from Oticon's own lab, what nobody knows yet, and who it suits.",
+      "Oticon Reveal launched in August 2026 with a Dual AI system. What is confirmed, which claims come from Oticon's own lab, and who the device suits.",
     intro: [
       "Oticon announced Reveal on August 11, 2026, and opened it for ordering on August 24. It is the company's new flagship, replacing Oticon Intent, and it launched with an unusually loud set of numbers attached: a 60% stronger brain response, up to 25 decibels more gain than top competitors, 91% predicted speech access, feedback management four times more precise than before.",
       "The loudest of those numbers, the 60% stronger brain response, cites a 2026 reference by Zapata-Rodríguez and colleagues. We went looking for it. There is no published title, no journal, no sample size and no peer-review status, and it does not appear on the publication list of Oticon's own research centre. The other figures came from Oticon too, no independent laboratory has measured the device, and no US price has been published at any technology level. That is not a criticism of Oticon. It is what the evidence base looks like ten days after an announcement, and you deserve to know it before you make a decision that costs thousands of dollars. We fit Oticon at both our offices and we have Reveal coming in.",

@@ -5,7 +5,7 @@
     datePublished: "2026-08-21",
     dateModified: "2026-08-25",
     metaDescription:
-      "Every hearing aid brand now advertises AI, and the word means five different things. What Dual AI actually is, which devices have real neural processing, and how to judge the claims.",
+      "Every hearing aid brand now advertises AI, and the word means five things. What Dual AI is, which devices have real neural processing, and how to judge claims.",
     intro: [
       "In August 2026 Oticon launched Reveal and called it the world's first hearing aid powered by a Dual AI system. It is a real distinction, and it is also arriving into a market where every manufacturer has put the letters A and I on the box. Phonak, Starkey, ReSound, Signia and Widex all advertise AI. They do not mean the same thing by it, and in two cases they do not mean a neural network at all.",
       "This matters because AI is currently the main thing hearing aids are sold on, and because the claims are almost impossible to compare from the outside. A device with a dedicated neural processing chip can measure worse in background noise than one without. A device that never uses the phrase \"deep neural network\" can outperform one that builds its entire campaign around it. The label is not the result.",

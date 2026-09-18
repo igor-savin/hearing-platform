@@ -5,7 +5,7 @@
     datePublished: "2026-08-24",
     dateModified: "2026-08-25",
     metaDescription:
-      "Phonak launched EON on August 24, 2026. What is confirmed, what the footnote behind the headline claim actually says, what nobody has measured, and who it suits.",
+      "Phonak launched EON on 24 August 2026. What is confirmed, what the footnote behind the headline claim says, what nobody has measured, and who it suits.",
     intro: [
       "Phonak announced EON on August 24, 2026 from Stäfa, Switzerland, and put it on sale in the United States the same day. It is the company's new flagship platform, taking over from Infinio Ultra, and it arrived in three models: the Audéo EON Sphere, the Audéo EON R, and a CROS EON for people who hear from one side only.",
       "It also arrived on the same morning as Signia's new flagship, which is not something that happens often. Two of the biggest manufacturers in hearing released their best work within hours of each other, and the trade press has spent the day republishing both press releases.",

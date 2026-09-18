@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (path === "/the-blog/") {
     const blogTitle = "Hearing Health Resources | California Hearing Center";
     const blogDesc =
-      "Practical, audiologist-written guides on hearing loss, tinnitus, hearing aids, costs and insurance, ear care, and hearing tests — from California Hearing Center in San Mateo & San Carlos.";
+      "Practical, audiologist-written guides on hearing loss, tinnitus, hearing aids, costs and insurance, ear care and hearing tests, from our Peninsula practice.";
     return {
       title: blogTitle,
       description: blogDesc,
