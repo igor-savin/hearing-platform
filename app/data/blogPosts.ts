@@ -766,7 +766,7 @@ export const blogPosts: Record<string, PageContent> = {
     image: "/assets/blog/celebrating-pride-month-a-month-of-diversity-equality-and-acceptance-1.svg",
     imageLabel: "The date most people come here for: June, after 28 June 1969",
     metaDescription:
-      "Pride Month is June, marking the Stonewall uprising of 28 June 1969. San Francisco Pride 2027 is 26-27 June. Dates, origins, and what is happening on the Peninsula.",
+      "Pride Month is June, marking the Stonewall uprising of 28 June 1969. San Francisco Pride 2027 is 26-27 June. Dates, origins, and what is on locally.",
     intro: [
       "Pride Month is June. It is June because the Stonewall uprising began in the early hours of 28 June 1969, when police raided the Stonewall Inn in New York, and because the first march — Christopher Street Liberation Day — was held on the anniversary, Sunday 28 June 1970. That is the whole answer to the question most people arrive here asking, and it is why so many Pride events still land on the last weekend of June.",
       "In the United States it is recognised by presidential proclamation rather than by statute. President Clinton issued the first, Proclamation 7203, on 11 June 1999. President Obama's 2009 proclamation broadened the name, and a 2022 proclamation broadened it again. The Stonewall Inn itself became a national monument on 24 June 2016, the first in the United States dedicated to LGBTQ history.",
@@ -1585,7 +1585,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2026-08-26",
     dateModified: "2026-09-08",
     metaDescription:
-      "Fortell is not open in San Francisco or Palo Alto yet. An independent Bay Area practice on what its $6,800 AI hearing aids are, what the studies actually show, and what to ask.",
+      "Fortell is not open in San Francisco or Palo Alto yet. An independent Bay Area practice on what its $6,800 AI hearing aids are and what the studies show.",
     intro: [
       "Fortell is a New York hearing aid company that has had a remarkable nine months. It launched in December 2025, was profiled by Wired and the New York Times the same week, has raised $163 million at a $740 million valuation from Founders Fund and Thrive Capital, and in July 2026 made the Forbes Next Billion-Dollar Startups list. Its founders came from Butterfly Network, the handheld-ultrasound company, and the idea they brought with them was to run the kind of source-separation AI that cleans up a video call on a custom chip small enough to sit behind an ear.",
       "We should be direct about our position, because you should weigh what follows accordingly. Fortell does not sell through independent practices. It employs its own audiologists and fits only in its own clinics, so we are not a dealer for it and never will be. That makes us a competitor writing about a competitor. We have tried to write this the way we would want someone to write about us: what is confirmed, what is claimed and by whom, what nobody outside the company has checked, and where we think it is genuinely good.",
@@ -2438,7 +2438,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2026-08-25",
     dateModified: "2026-08-25",
     metaDescription:
-      "All your waking hours is the destination, not the starting point. How wearing time builds over the first weeks, what normal fatigue feels like, and when to call.",
+      "All-day wear is the destination, not the starting point. How wearing time builds over the first weeks, what normal fatigue feels like, and when to call us.",
     intro: [
       "The honest answer is all your waking hours. From the time you get up until the time you go to bed, out for showering, swimming and sleeping, in for everything else. That is the target, and most people reach it inside a few weeks. It is not necessarily where you start, and anyone who hands you a pair of hearing aids without saying so has set you up to be disappointed on a Tuesday afternoon in week one.",
       "Here is why the number matters. Hearing loss usually arrives slowly enough that the brain adapts to a quieter, blunter version of the world and files it as normal. Amplification hands back frequencies it has not had to sort in years, and sorting is work. That work is what changes over the first weeks, not the devices, and the brain only does it with the sound it gets most often. Hours are the raw material. This is the same ground our page on [adjusting to new hearing aids](/adjusting-to-new-hearing-aids/) covers from the other direction.",
@@ -2856,7 +2856,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2025-05-03",
     dateModified: "2026-08-25",
     metaDescription:
-      "Tilt, tug and gravity clear most trapped water in a minute. The safe home methods, why a cotton swab makes it worse, and when pain or muffled hearing means it is swimmer's ear.",
+      "Tilt, tug and gravity clear most trapped water in a minute. The safe home methods, why a cotton swab makes it worse, and when pain means it is swimmer's ear.",
     intro: [
       "Water trapped in your ear after swimming or a shower is a common nuisance, and most of the time you can clear it at home within a minute or two. The blocked, muffled feeling comes from a bit of water sitting against your eardrum, and gentle movement or gravity is usually all it takes to break the seal. The trick is knowing which methods are safe and which ones can make things worse.",
       "That said, water in the ear is not always harmless. If it lingers, it can soften the skin of the canal and set the stage for an infection swimmers know well. Sometimes what feels like trapped water is really earwax that has swelled and blocked the canal. And people who swim often can head off the whole problem with a set of custom [swim plugs](/services/hearing-protection/).",
@@ -3309,7 +3309,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2026-08-21",
     dateModified: "2026-08-25",
     metaDescription:
-      "Oticon Reveal launched in August 2026 with a Dual AI system. What is confirmed, which claims come from Oticon's own lab, what nobody knows yet, and who it suits.",
+      "Oticon Reveal launched in August 2026 with a Dual AI system. What is confirmed, which claims come from Oticon's own lab, and who the device suits.",
     intro: [
       "Oticon announced Reveal on August 11, 2026, and opened it for ordering on August 24. It is the company's new flagship, replacing Oticon Intent, and it launched with an unusually loud set of numbers attached: a 60% stronger brain response, up to 25 decibels more gain than top competitors, 91% predicted speech access, feedback management four times more precise than before.",
       "The loudest of those numbers, the 60% stronger brain response, cites a 2026 reference by Zapata-Rodríguez and colleagues. We went looking for it. There is no published title, no journal, no sample size and no peer-review status, and it does not appear on the publication list of Oticon's own research centre. The other figures came from Oticon too, no independent laboratory has measured the device, and no US price has been published at any technology level. That is not a criticism of Oticon. It is what the evidence base looks like ten days after an announcement, and you deserve to know it before you make a decision that costs thousands of dollars. We fit Oticon at both our offices and we have Reveal coming in.",
@@ -3438,7 +3438,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2026-08-24",
     dateModified: "2026-08-25",
     metaDescription:
-      "Phonak launched EON on August 24, 2026. What is confirmed, what the footnote behind the headline claim actually says, what nobody has measured, and who it suits.",
+      "Phonak launched EON on 24 August 2026. What is confirmed, what the footnote behind the headline claim says, what nobody has measured, and who it suits.",
     intro: [
       "Phonak announced EON on August 24, 2026 from Stäfa, Switzerland, and put it on sale in the United States the same day. It is the company's new flagship platform, taking over from Infinio Ultra, and it arrived in three models: the Audéo EON Sphere, the Audéo EON R, and a CROS EON for people who hear from one side only.",
       "It also arrived on the same morning as Signia's new flagship, which is not something that happens often. Two of the biggest manufacturers in hearing released their best work within hours of each other, and the trade press has spent the day republishing both press releases.",
@@ -3682,7 +3682,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2026-08-24",
     dateModified: "2026-08-25",
     metaDescription:
-      "Signia MaX launched August 24, 2026 with four neural networks. What is confirmed, which claims come from Signia's own white papers, what nobody knows yet, and who it suits.",
+      "Signia MaX launched 24 August 2026 with four neural networks. What is confirmed, which claims come from Signia's own white papers, and who the device suits.",
     intro: [
       "Signia announced MaX, short for Multi-adaptive Xperience, on August 24, 2026, and released it in the United States the same day. It is the company's new flagship, taking over from Signia IX, and it arrived with a specific and unusual pitch: not one artificial intelligence but four, each trained on a different part of the problem, running together.",
       "Signia's own launch footnote says full Auracast does not switch on until a firmware update due by March 2027, and the feature lists we have read today print Auracast without that qualification. The rest of the launch material runs the same way. Every performance number attached to MaX came from Signia, no independent laboratory has measured it, no price has been published, and the platform launched in one style out of the dozen Signia makes. None of that means it is a bad device. It means the evidence base on launch day is thin, and you deserve to know that before you make a decision costing thousands of dollars. We fit Signia at both our offices and have done for years.",
@@ -4747,7 +4747,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2019-05-07",
     dateModified: "2026-08-25",
     metaDescription:
-      "Untreated hearing loss is linked to isolation, falls, and cognitive decline, but association isn't proof. Here's what the evidence supports and why a test helps.",
+      "Untreated hearing loss is linked to isolation, falls and cognitive decline, but association isn't proof. What the evidence supports, and why a test helps.",
     intro: [
       "People tend to treat hearing as a standalone sense: it works, or it needs a little help, and either way it feels separate from the rest of the body. That instinct is understandable and mostly wrong. Hearing is wired into balance, attention, mood, and the daily business of staying connected to other people. When it goes untreated, the effects rarely stay confined to the ears, and booking a [hearing test](/hearing-testing/) is how you find out what is really happening.",
       "None of this means untreated hearing loss dooms anyone to a specific outcome. Much of what researchers have found is a matter of association: people with untreated loss show higher rates of certain problems, but the studies cannot always say hearing loss caused them. We will keep that distinction honest throughout. Where the evidence is strong, we will say so; where it is only suggestive, we will call it that.",
@@ -4829,7 +4829,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2018-03-09",
     dateModified: "2026-08-25",
     metaDescription:
-      "Smoking is linked to a higher risk of hearing loss and tinnitus. Learn how tobacco may affect your ears, why quitting helps, and when to get your hearing tested.",
+      "Smoking is linked to a higher risk of hearing loss and tinnitus. How tobacco may affect your ears, why quitting helps, and when to get your hearing tested.",
     intro: [
       "Most people who smoke know it strains the heart and lungs. Fewer expect it to reach the ears. Yet when patients ask what they can do to protect their hearing, tobacco comes up more often than they anticipate, because smokers, as a group, tend to show more [hearing loss](/hearing-testing/) than people who have never smoked.",
       "The relationship is an association rather than a proven cause, and no clinician can tell you exactly how much your own hearing is affected. Secondhand smoke appears to matter too, which means the people around a smoker share some of the exposure. The Centers for Disease Control and Prevention lists smoking among the risk factors tied to hearing loss, so it is worth taking seriously even while the science keeps filling in the details.",
@@ -4992,7 +4992,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2026-08-21",
     dateModified: "2026-08-25",
     metaDescription:
-      "Every hearing aid brand now advertises AI, and the word means five different things. What Dual AI actually is, which devices have real neural processing, and how to judge the claims.",
+      "Every hearing aid brand now advertises AI, and the word means five things. What Dual AI is, which devices have real neural processing, and how to judge claims.",
     intro: [
       "In August 2026 Oticon launched Reveal and called it the world's first hearing aid powered by a Dual AI system. It is a real distinction, and it is also arriving into a market where every manufacturer has put the letters A and I on the box. Phonak, Starkey, ReSound, Signia and Widex all advertise AI. They do not mean the same thing by it, and in two cases they do not mean a neural network at all.",
       "This matters because AI is currently the main thing hearing aids are sold on, and because the claims are almost impossible to compare from the outside. A device with a dedicated neural processing chip can measure worse in background noise than one without. A device that never uses the phrase \"deep neural network\" can outperform one that builds its entire campaign around it. The label is not the result.",
@@ -5402,7 +5402,7 @@ export const blogPosts: Record<string, PageContent> = {
     datePublished: "2025-07-30",
     dateModified: "2026-08-25",
     metaDescription:
-      "The FDA created an over-the-counter hearing aid category for adults with mild-to-moderate loss. Here's how OTC and prescription devices differ and when to see a pro.",
+      "The FDA created an over-the-counter hearing aid category for adults with mild-to-moderate loss. How OTC and prescription devices differ, and when to see a pro.",
     intro: [
       "In 2022 the FDA created a class of hearing aids that adults can buy without a prescription, an exam, or a professional fitting. These over-the-counter devices reached store shelves and websites that fall, and they are meant for people 18 and older who believe they have mild-to-moderate hearing loss. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/hearing-aids) describes the category in plain terms, and it has changed the first question many people ask us.",
       "The goal behind the rule was reasonable: lower the cost and hassle of getting help for common, everyday hearing loss. What the rule did not do is erase the difference between a device you grab off a shelf and one an audiologist selects, programs, and adjusts to your specific ears. Both can be the right answer. They just fit different situations.",
