@@ -379,7 +379,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Our Sister Practice",
   headline: "Audiology Associates of Westchester, Our Sister Practice in New York",
   metaTitle: "Audiology Associates of Westchester | Our East Coast Sister Practice",
-  metaDescription: "Audiology Associates of Westchester is California Hearing Center's sister practice, with offices in Harrison and Somers, New York. Travelling east? They are happy to see you.",
+  metaDescription: "Audiology Associates of Westchester is our sister practice, with offices in Harrison and Somers, New York. Travelling east? They are happy to see you.",
   intro: [
     "Audiology Associates of Westchester is our sister practice on the East Coast. It has its own offices in Harrison and Somers, New York, its own phone numbers, and its own team of doctors of audiology. Care in the Bay Area stays with us, at our San Mateo and San Carlos offices.",
     "The two practices share the same approach to hearing care, and two of our audiologists, [Dr. Kira Savin](/about-us/kira-savin/) and [Dr. Jennifer Ratner](/about-us/jennifer-ratner/), are also partners there. So if you are travelling to the New York area, spending part of the year there, or moving east, you will be in familiar hands. They are happy to see you."
@@ -413,7 +413,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "San Carlos Office",
   headline: "See a Hearing Doctor in San Carlos",
   metaTitle: "San Carlos Hearing Tests & Hearing Aids | California Hearing Center",
-  metaDescription: "Hearing tests, hearing aid fittings verified with real-ear measurement, adjustments, repairs and tinnitus care at 1008 Laurel Street, San Carlos. Call 650-342-9449.",
+  metaDescription: "Hearing tests, fittings verified with real-ear measurement, adjustments, repairs and tinnitus care at 1008 Laurel Street, San Carlos. Call 650-342-9449.",
   intro: [
     "Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070, on the city's main street. We see patients here for hearing evaluations, hearing aid consultations and fittings, adjustments and repairs, tinnitus appointments, and earwax removal.",
     "Call 650-342-9449 to book, or send an appointment request through this site and we will call you back.",
@@ -450,7 +450,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "San Mateo Office",
   headline: "See a Hearing Doctor in San Mateo",
   metaTitle: "San Mateo Hearing Tests & Hearing Aids | California Hearing Center",
-  metaDescription: "Hearing tests, hearing aid fittings verified with real-ear measurement, tinnitus care, earwax removal and repairs at 88 N. San Mateo Drive, San Mateo. Call 650-342-9449.",
+  metaDescription: "Hearing tests, fittings verified with real-ear measurement, tinnitus care, earwax removal and repairs at 88 N. San Mateo Drive, San Mateo. Call 650-342-9449.",
   intro: [
     "Our main office is at 88 N. San Mateo Drive, San Mateo, CA 94401. This is where most new patients start: full diagnostic hearing evaluations, hearing aid consultations and fittings, tinnitus appointments, earwax removal, and repairs all happen here.",
     "Call 650-342-9449 to book, or send us an appointment request and we will call you back to find a time that works.",
@@ -867,7 +867,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Our Practice",
   headline: "LGBTQ+ Affirming Hearing Care in San Mateo & San Carlos",
   metaTitle: "LGBTQ+ Affirming Hearing Care | San Mateo | California Hearing Center",
-  metaDescription: "What affirming care means in an audiology clinic specifically: chosen name in the chart, how speech testing is handled, hearing after long-term HIV treatment, and hearing aids after voice training.",
+  metaDescription: "What affirming care means in an audiology clinic: chosen name in the chart, how speech testing is handled, hearing after long-term HIV care, voice training.",
   intro: [
     "Most pages like this say a practice is welcoming and stop there. Welcome is the floor, not the service. What follows is the specific, practical difference affirming care makes in an audiology clinic: what goes in your chart, how the tests are chosen and recorded, and the two clinical situations where being LGBTQ+ changes what your audiologist should actually be doing.",
     "We have tried to be honest about the evidence throughout. Two of the four topics below are well studied. Two of them are not studied at all, and where that is the case we say so rather than dressing up an educated guess as established practice. You are entitled to know which is which.",
@@ -974,7 +974,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Ear & Hearing Protection",
   headline: "Ear Gear & Custom Hearing Protection for San Mateo & San Carlos",
   metaTitle: "Custom Earplugs & Earmolds | Music, Sleep | California Hearing Center",
-  metaDescription: "Custom-molded earplugs and earmolds made from impressions of your own ears: musician plugs, in-ear monitors, pilot headset molds, swim, sleep and shooting. San Mateo and San Carlos.",
+  metaDescription: "Custom-molded earplugs and earmolds taken from impressions of your own ears: musician plugs, in-ear monitors, pilot molds, swim, sleep and shooting. San Mateo.",
   intro: [
     "Noise damage does not come back. That is the whole argument for this page, and it is why we spend an appointment on ear impressions for people whose hearing is currently fine.",
     "Foam plugs work when they are in and rolled correctly, which in practice means they are often working at a fraction of their rating. A custom plug is molded from an impression of your own canal, so it seals the same way every time, and it stays comfortable long enough that you keep it in through the whole shift or the whole set. Comfort is not a luxury here. It is what makes the protection happen.",
@@ -1016,7 +1016,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "How Hearing Aid Brand Choice Really Works",
   metaTitle: "Hearing Aid Brands Compared | California Hearing Center",
-  metaDescription: "We fit Oticon, Phonak, ReSound, Widex, Signia, Starkey, Rexton and Unitron. Where each one is currently strong, where it is not, and what independent testing shows. San Mateo and San Carlos.",
+  metaDescription: "We fit Oticon, Phonak, ReSound, Widex, Signia, Starkey, Rexton and Unitron. Where each one is strong, where it is not, and what independent testing shows.",
   intro: [
     "Patients arrive convinced one manufacturer is best. They all make capable devices, each has a genuine design philosophy, and none of them is right for every ear. Where the differences bite is narrower and more practical than the marketing suggests: which styles a platform comes in, whether it has a tinnitus program, whether its broadcast audio works today or next year, and whether any independent laboratory has measured it.",
     "California Hearing Center is independent. We fit Oticon, Phonak, ReSound, Widex, Signia, Starkey, Rexton and Unitron, which means we can start from your ears instead of from a supply agreement.",
@@ -1172,7 +1172,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Oticon Hearing Aids on the Peninsula",
   metaTitle: "Oticon Hearing Aids: Reveal, Intent, Zeal | California Hearing Center",
-  metaDescription: "Oticon keeps more of the room than most competitors do, and Reveal ships LE Audio, Auracast and a telecoil on day one. What that means in practice, fitted and verified in San Mateo and San Carlos.",
+  metaDescription: "Oticon keeps more of the room than most rivals, and Reveal ships LE Audio, Auracast and a telecoil on day one. What that means in practice, fitted in San Mateo.",
   intro: [
     "Oticon is a Danish manufacturer founded in 1904, and it has spent the last two decades arguing a specific position: the brain does the work of making sense of sound, so a hearing aid should hand it a full scene rather than a louder one. Most competitors narrow hard onto the talker in front of you. Oticon keeps more of the room.",
     "That difference is audible, and it splits patients. People who dislike the closed-in feeling of aggressive directional systems often prefer Oticon immediately. People who want one voice pulled out of four at a crowded table sometimes prefer a competitor. We can put both in front of you in one appointment, which is the only way to settle it.",
@@ -1218,7 +1218,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Oticon Intent Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Oticon Intent: 4D Sensors, Styles & Price | California Hearing Center",
-  metaDescription: "Oticon Intent held the flagship position from February 2024 until Reveal. It still offers a behind-the-ear model Reveal does not, and its price is easing. Fitted and verified in San Mateo and San Carlos.",
+  metaDescription: "Oticon Intent was the flagship from February 2024 until Reveal. It still offers a behind-the-ear model Reveal does not, and the price is easing. Fitted here.",
   intro: [
     "Oticon Intent held the top of the Oticon range from February 2024 until [Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/) arrived in August 2026. It is still on our price list, and for a fair number of the people we see it is still the right recommendation.",
     "The reason is practical rather than sentimental. Intent includes a miniBTE R behind-the-ear model and Reveal, at launch, does not. If you need a behind-the-ear device for a powerful fitting, for a custom earmould, or because that is the shape your hands have got on with for years, Intent is the correct device and Reveal is not yet an option for you. Intent also has two and a half years of clinical use behind it, and as the previous generation its pricing tends to soften, which often buys a higher technology tier for the same money.",
@@ -1264,7 +1264,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Costs",
   headline: "How Much Does Oticon Reveal Cost?",
   metaTitle: "Oticon Reveal Cost: What Drives It | California Hearing Center",
-  metaDescription: "Oticon has not published US pricing for Reveal. Here is what actually determines the price, what is included in a fitting, how insurance and financing apply, and what the research says about paying more.",
+  metaDescription: "Oticon has published no US price for Reveal. Here is what sets the price, what a fitting includes, how insurance applies, and whether paying more pays off.",
   intro: [
     "The short answer, as of today: Oticon has not published US pricing for Reveal at any technology level. It was announced on August 11, 2026 and opened for ordering on August 24, 2026. Anyone quoting you a specific Reveal figure right now is estimating from the previous generation.",
     "We would rather tell you that than invent a number. What this page can do is explain exactly what determines the price of a hearing aid like this one, what a fee at a practice like ours actually buys, how insurance and financing usually work, and what the research says about whether paying more produces a better result. That last part is uncomfortable for our industry and we think you should read it anyway.",
@@ -1353,7 +1353,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Compare Hearing Aids",
   headline: "Oticon Reveal vs Phonak Sphere Infinio Ultra",
   metaTitle: "Oticon Reveal vs Phonak Infinio Ultra | California Hearing Center",
-  metaDescription: "Phonak's AI flagship has been measured by an independent laboratory. Reveal has not been measured at all. An honest comparison from a Bay Area audiology practice.",
+  metaDescription: "Phonak's AI flagship has been measured by an independent lab. Reveal has not been measured at all. An honest comparison from a Bay Area audiology practice.",
   intro: [
     "These are the two most talked-about hearing aids of the moment, and they are genuinely different arguments about what artificial intelligence should do in your ear. Oticon Reveal, launched August 2026, runs two AI systems at once: one lifting speech, one preserving the sound of the room around you. Phonak's Audéo Infinio Ultra Sphere, launched October 2025, runs one very large network on a dedicated second chip whose only job is pulling voices out of noise.",
     "There is one fact that shapes this comparison more than any other: Phonak's platform has been independently measured and Reveal has not. Nobody outside Oticon has tested Reveal, because it is days old. If your priority is the best documented performance in background noise available today, that is not a close call, and we would rather tell you so than sell you the newer box.",
@@ -1399,7 +1399,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Compare Hearing Aids",
   headline: "Oticon Reveal vs ReSound Sensia",
   metaTitle: "Oticon Reveal vs ReSound Sensia | California Hearing Center",
-  metaDescription: "Two premium hearing aids launched eleven days apart, and neither has been independently measured. What is actually known, what the ReSound Vivia test results suggest, and how to choose.",
+  metaDescription: "Two premium hearing aids launched eleven days apart, neither independently measured. What is known, what the ReSound Vivia results suggest, and how to choose.",
   intro: [
     "These two arrived almost together. ReSound Sensia reached US clinics on 20 August 2026; Oticon Reveal was announced on 11 August and opened for ordering on the 24th. Both are premium platforms, both put a neural network in the sound path, and neither has been measured by any independent laboratory. Anyone telling you which one performs better in noise is guessing.",
     "What we can do is set out what each actually is, where the two genuinely differ, and what the independent test data on ReSound's previous flagship suggests you should ask about. That last part is uncomfortable for ReSound and we are going to include it anyway, because it also happens to be the strongest argument for the way we fit hearing aids.",
@@ -1444,7 +1444,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Compare Hearing Aids",
   headline: "Oticon Reveal vs Starkey Omega AI",
   metaTitle: "Oticon Reveal vs Starkey Omega AI | California Hearing Center",
-  metaDescription: "Starkey Omega AI ranks second of thirty-six prescription hearing aids independently tested, and comes in custom styles Reveal does not offer. An honest comparison from a Bay Area practice.",
+  metaDescription: "Starkey Omega AI ranks second of thirty-six prescription hearing aids independently tested, and comes in custom styles Reveal does not. An honest comparison.",
   intro: [
     "Starkey Omega AI arrived in October 2025 and Oticon Reveal in August 2026, and on paper they are aimed at the same patient. In practice they are built on different bets. Reveal runs two AI systems at once, one lifting speech and one preserving the surrounding sound. Starkey points its neural network at a different problem entirely, deciding where to listen, and then wraps the whole thing in the broadest range of styles and the most health monitoring anyone currently offers.",
     "This is the comparison where we have to be most careful not to sell the newer device. Omega AI has been independently measured and Reveal has not. Omega AI comes in custom in-the-ear styles and with disposable batteries; Reveal comes one way only. For a meaningful number of our patients, Starkey is simply the better answer, and we would rather say that than pretend otherwise.",
@@ -1490,7 +1490,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Compare Hearing Aids",
   headline: "Oticon Reveal vs Widex Allure",
   metaTitle: "Oticon Reveal vs Widex Allure Compared | California Hearing Center",
-  metaDescription: "Widex Allure has no neural network in its sound path and still outscores several AI flagships in independent testing. But it has no tinnitus program. An honest comparison.",
+  metaDescription: "Widex Allure has no neural network in its sound path and still outscores several AI flagships in independent testing. But it has no tinnitus program.",
   intro: [
     "This comparison is more interesting than the marketing makes it look, because the two devices disagree about the premise. Oticon Reveal, launched August 2026, is built around two artificial-intelligence systems running at once. Widex Allure, the version you can buy in the United States today, has no deep neural network in its sound-processing path at all, and it still outperforms several AI flagships on the independent bench.",
     "Widex has spent years arguing that the most important number in a hearing aid is not how clever the processing is but how fast it happens. Allure moves sound from microphone to receiver in under half a millisecond, which is why people often describe Widex devices as sounding unusually natural, particularly for music and for the sound of their own voice.",
@@ -1536,7 +1536,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Oticon Reveal Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Oticon Reveal: Specs, Claims & Fitting | California Hearing Center",
-  metaDescription: "Oticon Reveal launched August 2026 with a Dual AI system. What is confirmed, what Oticon claims and who measured it, and what is still unknown. From an independent Bay Area audiology practice.",
+  metaDescription: "Oticon Reveal launched August 2026 with a Dual AI system. What is confirmed, what Oticon claims and who measured it, and what nobody has tested yet.",
   intro: [
     "Oticon Reveal is the newest hearing aid family from Oticon, announced on August 11, 2026 and available to order from August 24, 2026. It runs on a new platform the company calls Reveal AI, and its defining idea is that two things happen at once when you listen: you follow the voice in front of you, and you stay oriented to everything else in the room. Reveal runs a separate AI system for each.",
     "Oticon calls these Speech AI, which identifies and lifts voices, and Context AI, which preserves the surrounding sounds that tell your brain where you are. Footsteps, room acoustics, a door closing behind you. Running them together is meant to sharpen conversation without flattening the world around it, which is the trade-off many people dislike in aggressively directional hearing aids.",
@@ -1624,7 +1624,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Phonak Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Phonak Hearing Aids: EON, Infinio & Lyric | California Hearing Center",
-  metaDescription: "Phonak now runs two platforms side by side — the new EON and the independently measured Infinio. Which one suits you, plus Roger and Lyric, from an independent Bay Area practice.",
+  metaDescription: "Phonak now runs two platforms side by side: the new EON and the independently measured Infinio. Which suits you, plus Roger and Lyric, from a Bay Area practice.",
   intro: [
     "Founded in Switzerland more than 75 years ago and now part of the Sonova group, Phonak pairs Swiss engineering with one of the broadest product ranges in hearing. It is best known for three things that no other manufacturer quite matches: connectivity, the Roger remote-microphone system for the listening situations no hearing aid can solve on its own, and Lyric, an extended-wear device placed deep in the canal and worn continuously for months at a time.",
     "As of August 2026, Phonak runs two current platforms side by side, and which one is right for you is a real decision rather than a formality. [EON](/products/hearing-aids-by-brand/phonak/phonak-eon/) is the new flagship, launched on August 24, 2026. It is smaller and lighter, Auracast works from day one, and for the first time the speech-in-noise neural network is available at three technology levels instead of two. [Infinio](/products/hearing-aids-by-brand/phonak/phonak-infinio/) is the platform it replaced, and it is the one with an independent laboratory score, a much wider choice of styles, and a falling price.",
@@ -1667,7 +1667,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Costs",
   headline: "How Much Does Phonak EON Cost?",
   metaTitle: "Phonak EON Cost | What Drives the Price | California Hearing Center",
-  metaDescription: "Phonak has published no price for EON. Here is what genuinely determines what you pay, why the new technology levels change the calculation, and what our fee includes.",
+  metaDescription: "Phonak has published no price for EON. Here is what determines what you pay, why the new technology levels change the maths, and what our fee includes.",
   intro: [
     "Phonak has not published a price for EON at any technology level, and we are not going to invent one. Any figure you find online this month is either a guess, a price for a different platform, or an advertisement.",
     "What we can do is more useful than a number would be. We can explain what actually determines what you pay for a hearing aid in the Bay Area, why EON's launch changes that calculation in one specific and unusually concrete way, and exactly what is inside our fee so that when you do get a quote, from us or from anywhere else, you can tell whether you are comparing like with like.",
@@ -1714,7 +1714,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Comparison",
   headline: "Phonak EON vs Phonak Infinio: Should You Upgrade?",
   metaTitle: "Phonak EON vs Phonak Infinio: Upgrade? | California Hearing Center",
-  metaDescription: "Phonak EON replaced Infinio Ultra on August 24, 2026. What genuinely changed, what Infinio still does better, and why we would leave most Infinio wearers exactly where they are.",
+  metaDescription: "Phonak EON replaced Infinio Ultra on 24 August 2026. What genuinely changed, what Infinio still does better, and why most Infinio wearers should stay put.",
   intro: [
     "If you are wearing Phonak Infinio or Infinio Ultra, this is the question you came here with, so here is the answer before the detail: for most people the honest recommendation is to stay where you are.",
     "That is not a reflexively conservative answer. It follows from what Phonak itself is and is not claiming. EON is smaller, lighter and far more efficient than the platform it replaces, and it brings the neural network down to a technology level where more people can afford it. What Phonak is not claiming, and this is unusual for a Phonak launch, is that EON understands speech in noise better than Infinio Ultra does. In the one area where the company has spent two years building a lead, the launch material is notably careful.",
@@ -1810,7 +1810,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Phonak EON Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Phonak EON: Specs, Claims & Fitting | California Hearing Center",
-  metaDescription: "Phonak EON launched August 24, 2026 with the HYPERSONIC chip. What is confirmed, what the footnotes behind the headline claims actually say, and what nobody has measured yet.",
+  metaDescription: "Phonak EON launched 24 August 2026 with the HYPERSONIC chip. What is confirmed, what the footnotes behind the headline claims say, and what nobody has measured.",
   intro: [
     "Phonak EON is the platform Phonak launched on August 24, 2026 from its headquarters in Stäfa, Switzerland, on sale in the United States the same day. It takes over from Infinio Ultra at the top of the range, and it arrives in three models: the Audéo EON Sphere, the Audéo EON R, and a CROS EON for people who hear from only one side.",
     "The engineering story is a new processor called HYPERSONIC. Phonak's argument is not that it hears better than the platform before it, which is worth noticing, because Phonak is usually happy to argue exactly that. The argument this time is efficiency: the same real-time neural-network speech processing in a shell that is a quarter smaller and a fifth lighter, drawing a third less power. And, importantly for anyone who is not buying at the top of the price list, it runs at three technology levels instead of two.",
@@ -1866,7 +1866,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Phonak Infinio Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Phonak Infinio & Infinio Ultra: Lab Data | California Hearing Center",
-  metaDescription: "Phonak Infinio is the platform EON replaced. It is also the one with an A grade from HearAdvisor, custom and titanium styles, and a falling price. Fitted and verified in San Mateo and San Carlos.",
+  metaDescription: "Phonak Infinio is the platform EON replaced. It is also the one with an A grade from HearAdvisor, custom and titanium styles, and a falling price. Fitted here.",
   intro: [
     "Phonak Infinio is the platform that sat at the top of the Phonak range until August 2026, when [Phonak EON](/products/hearing-aids-by-brand/phonak/phonak-eon/) took over. It has not been discontinued, and for a good number of the people we see it remains the better recommendation. That is not a polite thing to say about an outgoing platform, so here is why.",
     "Infinio has been measured independently and EON has not. It comes in styles EON does not offer and will not for some time, including custom in-the-ear and titanium in-the-canal devices. And as dispensers clear stock, it gets cheaper. A well-measured hearing aid at a falling price is a serious recommendation rather than a consolation prize.",
@@ -1990,7 +1990,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "ReSound Vivia Hearing Aids in San Mateo & San Carlos",
   metaTitle: "ReSound Vivia: What the Lab Measured | California Hearing Center",
-  metaDescription: "ReSound Vivia has a dedicated neural chip and a below-average independent speech-in-noise score. It also carries the clearest argument for verified fitting we know of. Fitted in San Mateo and San Carlos.",
+  metaDescription: "ReSound Vivia pairs a dedicated neural chip with a below-average independent speech-in-noise score: the clearest case for verified fitting we know of.",
   intro: [
     "ReSound Vivia launched in February 2025 as ReSound's premium platform, built around a dedicated deep-neural-network chip and marketed heavily on it. ReSound has since launched [Sensia](/products/hearing-aids-by-brand/resound/), which reached US clinics on 20 August 2026. Sources disagree about whether Sensia replaces Vivia, and ReSound has not said Vivia is discontinued, so we are not going to tell you it is.",
     "What we can tell you is what an independent laboratory measured, because Vivia is one of the few platforms that has been measured at all. The results are not flattering, and they are also the reason this page is worth your time. The most useful number on it has nothing to do with which ReSound you buy.",
@@ -2075,7 +2075,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Signia Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Signia Hearing Aids | MaX, IX & Fitting | California Hearing Center",
-  metaDescription: "Signia MaX launched August 2026 as the new flagship, with the full Signia IX range still current. What each platform does, who each suits, and how we verify the fitting in San Mateo and San Carlos.",
+  metaDescription: "Signia MaX arrived August 2026 as the flagship, with the full Signia IX range still current. What each platform does, who each suits, and how we verify the fit.",
   intro: [
     "Signia's roots reach back to Siemens' early work on clearer telephone voice quality in the 1800s. In 2016 the Siemens hearing aid division became Signia. The company now sells in over 120 countries, and the styling is deliberately modern. Several models read more like consumer earbuds than hearing aids.",
     "Signia's newest platform is [MaX, or Multi-adaptive Xperience](/products/hearing-aids-by-brand/signia/signia-max/). It launched on August 24, 2026 and is the current flagship. It runs four deep neural networks together under a system Signia calls Acoustic Intelligence, and it is the most connected device the company has made. The previous platform, [Signia IX](/products/hearing-aids-by-brand/signia/signia-ix/), remains current, fully supported, and considerably wider. It covers custom, instant-fit, slim, behind-the-ear and CROS styles that MaX does not yet offer, and it has independent laboratory scores that MaX does not.",
@@ -2122,7 +2122,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Signia IX Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Signia IX: Models, Lab Scores & Fitting | California Hearing Center",
-  metaDescription: "Signia IX remains current after the MaX launch, and still covers custom, instant-fit, slim, powerful and CROS styles MaX does not. Independent lab scores, the full model range, and verified fitting in San Mateo and San Carlos.",
+  metaDescription: "Signia IX stays current after MaX, and still covers custom, instant-fit, slim, power and CROS styles MaX does not. Lab scores and verified fitting in San Mateo.",
   intro: [
     "Signia IX, or Integrated Xperience, is Signia's 2023 platform, pairing sophisticated sound processing with the refined, discreet styling the brand is known for. Signia launched a newer flagship, [MaX](/products/hearing-aids-by-brand/signia/signia-max/), in August 2026, and IX has not been discontinued: Signia still catalogues the full range and added a new IX model as recently as July 2026.",
     "For a lot of patients IX is still the right answer, and not as a consolation. It comes in almost every style Signia makes: custom in-the-ear, instant-fit, slim, powerful behind-the-ear, earbud-shaped and CROS. MaX currently exists in one. It has been independently measured and scored well, where MaX has not been measured by anyone. And as a new flagship rolls out, the outgoing platform tends to become better value.",
@@ -2170,7 +2170,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Costs",
   headline: "How Much Does Signia MaX Cost?",
   metaTitle: "Signia MaX Cost | What Drives the Price | California Hearing Center",
-  metaDescription: "Signia has not published US pricing for MaX. What actually drives the number, what should be included in the fee, and how to read a Signia MaX quote. From an independent Bay Area practice.",
+  metaDescription: "Signia has published no US price for MaX. What actually drives the number, what should be included in the fee, and how to read a Signia MaX quote here.",
   intro: [
     "Signia has not published United States pricing for MaX at any technology level. That is normal in the first weeks after a platform launch, and it means any figure you see quoted online this month is somebody's estimate extrapolated from Signia IX.",
     "We are not going to add another estimate to the pile. What we can do is explain honestly what determines the number, what should and should not be inside it, and how to tell a fair Signia MaX quote from an inflated one. That is more useful than a range we would have to revise.",
@@ -2214,7 +2214,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Comparison",
   headline: "Signia MaX vs Oticon Reveal: The Two August 2026 Flagships",
   metaTitle: "Signia MaX vs Oticon Reveal Compared | California Hearing Center",
-  metaDescription: "Signia MaX and Oticon Reveal launched two weeks apart in August 2026, both built around AI. Four neural networks versus two AI systems. What each does well, and what neither can prove yet.",
+  metaDescription: "Signia MaX and Oticon Reveal launched two weeks apart in 2026, both built on AI. Four neural networks versus two, what each does well, and what neither proves.",
   intro: [
     "Two flagship hearing aids launched in August 2026 within a fortnight of each other, and both built their announcements around artificial intelligence. Oticon Reveal arrived on August 11 running two AI systems with deliberately opposing objectives. Signia MaX arrived on August 24 running four deep neural networks under a single coordinating system.",
     "They are the two newest prescription hearing aids you can be fitted with today, and they are more similar than the marketing suggests: both are rechargeable receiver-in-canal devices, both launched in one style, both arrived with performance figures generated entirely in their own manufacturers' laboratories, and neither has been measured by anyone independent.",
@@ -2303,7 +2303,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Signia MaX Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Signia MaX: Specs, Claims & Fitting | California Hearing Center",
-  metaDescription: "Signia MaX launched August 24, 2026 with four deep neural networks. What is confirmed, which claims come from Signia's own white papers, and what is still unknown. From an independent Bay Area audiology practice.",
+  metaDescription: "Signia MaX launched 24 August 2026 with four neural networks. What is confirmed, which claims come from Signia's own white papers, and what is still unknown.",
   intro: [
     "Signia MaX, the full name being Multi-adaptive Xperience, is Signia's new flagship platform, announced on August 24, 2026 and available in the United States from that same day. It replaces Signia IX at the top of the range, and its defining idea is that hearing in a noisy room is not one problem but four.",
     "Most hearing aids that advertise artificial intelligence run a single neural network trained to pull speech out of noise. MaX runs four, each trained on a different job: detecting speech, recognising your own voice, reading the acoustic scene you are standing in, and deciding how to handle the noise. Signia calls the combination Acoustic Intelligence, and the argument is that a system which understands all four dimensions at once behaves more sensibly than one that only knows how to make voices louder.",
@@ -2360,7 +2360,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Brands",
   headline: "Starkey Hearing Aids on the Peninsula",
   metaTitle: "Starkey Hearing Aids: Omega AI & Fitting | California Hearing Center",
-  metaDescription: "Starkey's current flagship is Omega AI: grade A and second of thirty-six devices independently tested, with the widest style range we fit. Fitted and verified in San Mateo and San Carlos.",
+  metaDescription: "Starkey's flagship is Omega AI: grade A and second of thirty-six devices tested independently, with the widest style range we fit. Fitted in San Mateo.",
   intro: [
     "Starkey was founded by Bill Austin in 1967 and is headquartered in Eden Prairie, Minnesota. It is the only American-owned major hearing aid manufacturer. Two things about it are worth a patient's attention: it puts more sensors in a hearing aid than anyone else, and it builds its current platform into more shapes of device than any competitor we fit.",
     "The current flagship is Starkey Omega AI, released on 9 October 2025. It replaced Edge AI, and it is the platform we quote when a patient asks for Starkey today.",
@@ -2407,7 +2407,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Hearing Aid Technology",
   headline: "Starkey Edge AI Hearing Aids in San Mateo & San Carlos",
   metaTitle: "Starkey Edge AI: Replaced by Omega AI | California Hearing Center",
-  metaDescription: "Starkey Edge AI is the platform Omega AI replaced in October 2025. What changed, what did not, and why a verified Edge AI fitting still beats an unverified newer device. San Mateo and San Carlos.",
+  metaDescription: "Starkey Edge AI is the platform Omega AI replaced in October 2025. What changed, what did not, and why a verified Edge AI fitting beats an unverified newer one.",
   intro: [
     "Starkey Edge AI sat at the top of the Starkey range until October 2025, when [Starkey Omega AI](/products/hearing-aids-by-brand/starkey/) took over as the flagship. If you are reading this because you already wear Edge AI, or because someone has quoted you for a pair, the useful question is not which platform is newer. It is whether the gap between them is worth what it would cost you.",
     "Omega AI is the stronger device on paper and the only one of the two with independent test data behind it. Where Edge AI holds up is in the hands of somebody already wearing a pair that was fitted properly. Reviewers who have compared the two describe the improvement as noticeable rather than dramatic, and that is a reasonable argument against replacing hearing aids that are working.",
@@ -2826,7 +2826,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Audiology Services",
   headline: "Audiology Services in San Mateo & San Carlos",
   metaTitle: "Audiology Services: Testing & Fitting | California Hearing Center",
-  metaDescription: "What we actually do at our two Peninsula offices: diagnostic hearing tests, verified hearing aid fittings, tinnitus care, earwax removal, repairs and custom hearing protection. Call 650-342-9449.",
+  metaDescription: "What we actually do at our two Peninsula offices: diagnostic hearing tests, verified fittings, tinnitus care, earwax removal and repairs. Call 650-342-9449.",
   intro: [
     "This page is the index. Every service below has its own page with the detail, and this is the short version so you can work out which appointment to book.",
     "If you are not sure, book the hearing test. Almost everything else follows from the audiogram, and it also rules out the reversible causes before anyone starts talking about devices. Roughly one in three adults between 65 and 74 has some [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss), by the NIDCD's estimate. We see patients decades younger than that most weeks.",
@@ -3048,7 +3048,7 @@ const rawCorePages: Record<string, PageContent> = {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Tinnitus Therapy in San Mateo & San Carlos",
   metaTitle: "Tinnitus Therapy: TRT, Sound & Lenire | California Hearing Center",
-  metaDescription: "Tinnitus evaluation and treatment from Doctors of Audiology with 20-plus years in it, several holding the American Board of Audiology tinnitus certificate. Sound therapy, TRT, hearing aids and Lenire. Call 650-342-9449.",
+  metaDescription: "Tinnitus evaluation and treatment from Doctors of Audiology, several certified in tinnitus. Sound therapy, TRT, hearing aids and Lenire. Call 650-342-9449.",
   intro: [
     "Tinnitus is the perception of ringing, buzzing, hissing or roaring with no external source. Some people hear it constantly in both ears, some only in one, some only at night. What sends people to us is rarely the sound itself. It is the sleep, the concentration and the dread of a quiet room.",
     "Our Doctors of Audiology have more than 20 years of experience treating it, and several hold the Certificate Holder in Tinnitus Management credential recognised by the American Board of Audiology. There is no cure. There are treatments that work well enough that many of our patients stop tracking the sound day to day, and that is the outcome we aim for.",
