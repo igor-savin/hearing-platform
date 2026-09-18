@@ -412,7 +412,7 @@ const rawCorePages: Record<string, PageContent> = {
   "/contact/san-carlos/": {
   kicker: "San Carlos Office",
   headline: "See a Hearing Doctor in San Carlos",
-  metaTitle: "San Carlos Audiologist & Hearing Aids | California Hearing Center",
+  metaTitle: "San Carlos Hearing Tests & Hearing Aids | California Hearing Center",
   metaDescription: "Hearing tests, hearing aid fittings verified with real-ear measurement, adjustments, repairs and tinnitus care at 1008 Laurel Street, San Carlos. Call 650-342-9449.",
   intro: [
     "Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070, on the city's main street. We see patients here for hearing evaluations, hearing aid consultations and fittings, adjustments and repairs, tinnitus appointments, and earwax removal.",
@@ -449,7 +449,7 @@ const rawCorePages: Record<string, PageContent> = {
   "/contact/san-mateo/": {
   kicker: "San Mateo Office",
   headline: "See a Hearing Doctor in San Mateo",
-  metaTitle: "San Mateo Audiologist & Hearing Aids | California Hearing Center",
+  metaTitle: "San Mateo Hearing Tests & Hearing Aids | California Hearing Center",
   metaDescription: "Hearing tests, hearing aid fittings verified with real-ear measurement, tinnitus care, earwax removal and repairs at 88 N. San Mateo Drive, San Mateo. Call 650-342-9449.",
   intro: [
     "Our main office is at 88 N. San Mateo Drive, San Mateo, CA 94401. This is where most new patients start: full diagnostic hearing evaluations, hearing aid consultations and fittings, tinnitus appointments, earwax removal, and repairs all happen here.",
