@@ -6,7 +6,7 @@
     datePublished: "2018-03-09",
     dateModified: "2026-08-25",
     metaDescription:
-      "Smoking is linked to a higher risk of hearing loss and tinnitus. Learn how tobacco may affect your ears, why quitting helps, and when to get your hearing tested.",
+      "Smoking is linked to a higher risk of hearing loss and tinnitus. How tobacco may affect your ears, why quitting helps, and when to get your hearing tested.",
     intro: [
       "Most people who smoke know it strains the heart and lungs. Fewer expect it to reach the ears. Yet when patients ask what they can do to protect their hearing, tobacco comes up more often than they anticipate, because smokers, as a group, tend to show more [hearing loss](/hearing-testing/) than people who have never smoked.",
       "The relationship is an association rather than a proven cause, and no clinician can tell you exactly how much your own hearing is affected. Secondhand smoke appears to matter too, which means the people around a smoker share some of the exposure. The Centers for Disease Control and Prevention lists smoking among the risk factors tied to hearing loss, so it is worth taking seriously even while the science keeps filling in the details.",

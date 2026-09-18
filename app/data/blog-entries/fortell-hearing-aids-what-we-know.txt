@@ -5,7 +5,7 @@
     datePublished: "2026-08-26",
     dateModified: "2026-09-08",
     metaDescription:
-      "Fortell is not open in San Francisco or Palo Alto yet. An independent Bay Area practice on what its $6,800 AI hearing aids are, what the studies actually show, and what to ask.",
+      "Fortell is not open in San Francisco or Palo Alto yet. An independent Bay Area practice on what its $6,800 AI hearing aids are and what the studies show.",
     intro: [
       "Fortell is a New York hearing aid company that has had a remarkable nine months. It launched in December 2025, was profiled by Wired and the New York Times the same week, has raised $163 million at a $740 million valuation from Founders Fund and Thrive Capital, and in July 2026 made the Forbes Next Billion-Dollar Startups list. Its founders came from Butterfly Network, the handheld-ultrasound company, and the idea they brought with them was to run the kind of source-separation AI that cleans up a video call on a custom chip small enough to sit behind an ear.",
       "We should be direct about our position, because you should weigh what follows accordingly. Fortell does not sell through independent practices. It employs its own audiologists and fits only in its own clinics, so we are not a dealer for it and never will be. That makes us a competitor writing about a competitor. We have tried to write this the way we would want someone to write about us: what is confirmed, what is claimed and by whom, what nobody outside the company has checked, and where we think it is genuinely good.",

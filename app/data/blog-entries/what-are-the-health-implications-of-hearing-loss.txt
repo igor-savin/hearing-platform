@@ -6,7 +6,7 @@
     datePublished: "2019-05-07",
     dateModified: "2026-08-25",
     metaDescription:
-      "Untreated hearing loss is linked to isolation, falls, and cognitive decline, but association isn't proof. Here's what the evidence supports and why a test helps.",
+      "Untreated hearing loss is linked to isolation, falls and cognitive decline, but association isn't proof. What the evidence supports, and why a test helps.",
     intro: [
       "People tend to treat hearing as a standalone sense: it works, or it needs a little help, and either way it feels separate from the rest of the body. That instinct is understandable and mostly wrong. Hearing is wired into balance, attention, mood, and the daily business of staying connected to other people. When it goes untreated, the effects rarely stay confined to the ears, and booking a [hearing test](/hearing-testing/) is how you find out what is really happening.",
       "None of this means untreated hearing loss dooms anyone to a specific outcome. Much of what researchers have found is a matter of association: people with untreated loss show higher rates of certain problems, but the studies cannot always say hearing loss caused them. We will keep that distinction honest throughout. Where the evidence is strong, we will say so; where it is only suggestive, we will call it that.",
