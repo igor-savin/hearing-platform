@@ -280,12 +280,22 @@ export const locations: Location[] = [
       { days: ["Monday", "Tuesday", "Wednesday"], opens: "08:30", closes: "17:00" },
       { days: ["Friday"], opens: "08:30", closes: "14:30" }
     ],
-    geo: { latitude: 41.326271, longitude: -73.688044 },
+    // Interim coordinates, set 2026-09-18, pending a surveyed pin from the
+    // Somers office. The previous value (41.326271, -73.688044) was copied from
+    // Google's own marker for the listing, and that marker is wrong: its plus
+    // code 88G6+GQ puts the practice on the CVS Pharmacy building, roughly 47 m
+    // from the suite. New patients were following it and walking into the wrong
+    // end of the plaza. This value is the midpoint between the two neighbours
+    // the office actually sits between -- the post office (88G6+CJ) and
+    // Oscar's II (88G6+8P). Replace it once the office sends its own dropped pin.
+    geo: { latitude: 41.325938, longitude: -73.688312 },
     type: "office",
     nearby: ["Mahopac", "Putnam Valley", "Mt. Kisco", "Northern Westchester"],
     directionsUrl:
-      "https://google.com/maps?ll=41.326271,-73.688044&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584",
-    arrival: "Plenty of parking in the lot. Our office is at ground level, with no stairs to climb."
+      "https://google.com/maps?ll=41.325938,-73.688312&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=16978045113785245584",
+    arrival:
+      "Plenty of parking in the lot. We are in Towne Centre at Somers, on the strip between the post office and Oscar's II. Our office is at ground level, with no stairs to climb.",
+    note: "Google's map pin for this listing still points at the wrong building. The pin itself has to be moved in Google Business Profile; correcting geo here only fixes the map and the schema on our own pages."
   },
   {
     name: "White Plains, NY",
