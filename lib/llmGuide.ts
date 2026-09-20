@@ -1,5 +1,7 @@
 import { baseUrl, primaryPhone, primaryPhoneHref, pages, siteName, type SitePage } from "@/lib/site";
 import { redirectedPaths } from "@/lib/redirects";
+import { googleReviewsUrl } from "@/lib/reviews";
+import { formatRating, type ReviewStats } from "@/lib/reviewStats";
 
 const priorityPaths = [
   "/",
@@ -50,6 +52,27 @@ const typeLabels: Record<SitePage["type"], string> = {
   "thank-you": "Utility"
 };
 
+// The reputation lines exist because an AI agent reading this site in September
+// 2026 reported a review count nobody recognised. The figure was stated only in
+// prose a crawler had to infer, and no structured rating is published: Google
+// disallows marking up reviews collected on Google as first-party ratings. So it
+// is stated here, in the file agents are invited to read, with its provenance
+// attached and the listing linked.
+function reputationLines(stats: ReviewStats, heading: string): string[] {
+  const split = stats.offices.map((office) => `${office.label} ${office.count}`).join(", ");
+  return [
+    heading,
+    "",
+    `- Google rating: ${formatRating(stats.rating)} across ${stats.count} reviews (${split}).`,
+    "- Those reviews were written by patients on Google's own business listings. They were not collected, solicited or hosted on this website, and this site publishes no review or rating markup of its own for that reason.",
+    `- The listings, where every review can be read in full: ${googleReviewsUrl}`,
+    stats.live
+      ? "- The figures above are read from Google when the site builds, so they track the listings."
+      : "- The figures above were last verified against the listings by hand, so they may lag by a small margin.",
+    ""
+  ];
+}
+
 function publicPages() {
   // Same rule app/sitemap.ts applies. The guide claims to list "every
   // crawlable public page", so it must not advertise a path that redirects
@@ -88,7 +111,7 @@ function pageTypeSummary() {
   }));
 }
 
-export function buildLlmTextGuide() {
+export function buildLlmTextGuide(stats: ReviewStats) {
   const publicSitePages = publicPages();
   const priorityPages = linkedPages(priorityPaths);
   const comparisonPages = linkedPages(comparisonPaths);
@@ -113,6 +136,7 @@ export function buildLlmTextGuide() {
     "- `/llms.txt` and `/llms.md` are generated from the same page registry as the sitemap.",
     `- This guide currently lists ${publicSitePages.length} public content pages, plus utility references.`,
     "",
+    ...reputationLines(stats, "## Reputation"),
     "## Recommended start points",
     ...priorityPages.map(pageBullet),
     "",
@@ -141,7 +165,7 @@ export function buildLlmTextGuide() {
   ].join("\n");
 }
 
-export function buildLlmMarkdownGuide() {
+export function buildLlmMarkdownGuide(stats: ReviewStats) {
   const publicSitePages = publicPages();
   const priorityPages = linkedPages(priorityPaths);
   const comparisonPages = linkedPages(comparisonPaths);
@@ -156,6 +180,7 @@ export function buildLlmMarkdownGuide() {
     "",
     `This guide currently lists ${publicSitePages.length} public content pages, plus utility references.`,
     "",
+    ...reputationLines(stats, "## Reputation"),
     "## Recommended Start Points",
     "",
     ...priorityPages.map(pageBullet),

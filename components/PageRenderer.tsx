@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { CalendarDays, CheckCircle2, ExternalLink, FileText, MapPin, Newspaper, Phone, Quote, ShieldCheck, Star } from "lucide-react";
 import { googleReviewsUrl, reviewAggregate, reviewThemes, testimonials } from "@/lib/reviews";
+import { ReviewCount, ReviewRating } from "@/components/ReviewStats";
 import {
   pressEventIsUpcoming,
   pressFeatureForPath,
@@ -262,11 +263,11 @@ const homeHearingBenefits = [
 ];
 
 // Three things the practice can actually prove, each linking to the page that
-// substantiates it. No average rating here: lib/reviews.ts holds 4.9 while the
-// footer badge image reads 5.0, and until those agree the honest figure to lead
-// with is the review count, which nobody disputes.
+// substantiates it. The count is rendered live rather than typed: it was frozen
+// at "486+" for months while Google kept adding reviews, which is how a figure
+// nobody had updated ended up being quoted back at us.
 const homeProofPoints = [
-  { figure: "486+", label: "Google reviews", href: "/reviews" },
+  { figure: <ReviewCount />, label: "Google reviews", href: "/reviews" },
   { figure: "6", label: "Doctors of Audiology on staff", href: "/meet-the-team" },
   { figure: "Dr. Cliff", label: "Approved Provider", href: "/dr-cliff-approved-provider" }
 ];
@@ -801,9 +802,8 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
 // the two other pages a patient reads before deciding, and 486 reviews were
 // sitting on /reviews, which nothing links to prominently.
 //
-// No average rating here on purpose. lib/reviews.ts holds 4.9 while the footer
-// badge image reads 5.0, and until those agree the count is the figure nobody
-// disputes. When the rating is settled this is the one place to add it.
+// The count is rendered live from lib/reviewStats.ts rather than typed in, so
+// this band and the reviews page can never quote two different totals.
 function PatientReviewsBand({
   heading = "In our patients\u2019 words",
   className = "section bg-[#f7fbfd]"
@@ -815,7 +815,7 @@ function PatientReviewsBand({
     <section className={className}>
       <div className="container">
         <p className="text-sm font-black uppercase tracking-[0.18em] text-[#005a9c]">
-          What patients say &middot; {reviewAggregate.count}+ {reviewAggregate.source} reviews
+          What patients say &middot; <ReviewCount /> reviews on {reviewAggregate.source}
         </p>
         <h2 className="mt-3 text-4xl font-black leading-tight text-[#003f6f]">{heading}</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -4613,11 +4613,11 @@ function ReviewsPage({ page }: { page: SitePage }) {
           <p className="text-sm font-black uppercase tracking-[0.18em] text-[#ffd45a]">Patient reviews</p>
           <h1 className="mt-3 text-[44px] font-black leading-tight max-md:text-[34px]">{page.h1}</h1>
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-5">
-            <span className="text-[56px] font-black leading-none">{reviewAggregate.rating.toFixed(1)}</span>
+            <span className="text-[56px] font-black leading-none"><ReviewRating /></span>
             <span className="flex flex-col items-center sm:items-start">
               <ReviewStars size={24} />
               <span className="mt-1 text-[17px] text-white/85">
-                {reviewAggregate.count}+ {reviewAggregate.source} reviews
+                from <ReviewCount /> reviews left on {reviewAggregate.source}
               </span>
             </span>
           </div>
@@ -4680,7 +4680,7 @@ function ReviewsPage({ page }: { page: SitePage }) {
           <p className="mt-8 text-center text-[15px] text-[var(--muted)]">
             Reviews are drawn from our public Google Business Profile.{" "}
             <a className="focus-ring font-bold text-[var(--brand)] underline" href={googleReviewsUrl} rel="noreferrer" target="_blank">
-              See all {reviewAggregate.count}+ reviews
+              See all <ReviewCount /> reviews
             </a>{" "}
             or share your own.
           </p>
