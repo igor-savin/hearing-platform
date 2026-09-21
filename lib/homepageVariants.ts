@@ -48,7 +48,7 @@ export const homepageVariants: HomepageVariant[] = [
     id: "proof-first",
     label: "Proof first",
     summary:
-      "The same page with three changes: a row of three checkable facts under the hero (486+ Google reviews, six Doctors of Audiology, Dr. Cliff Approved Provider), three patient reviews above the Why Choose band, and the eight generic reasons replaced by the four specific ones from /why-choose-us -- real-ear measurement, understanding your own audiogram, Doctors of Audiology and the referral, a full diagnostic battery rather than a screening.",
+      "The same page with three changes: a row of three checkable facts under the hero (the live Google review count, six Doctors of Audiology, Dr. Cliff Approved Provider), three patient reviews above the Why Choose band, and the eight generic reasons replaced by the four specific ones from /why-choose-us -- real-ear measurement, understanding your own audiogram, Doctors of Audiology and the referral, a full diagnostic battery rather than a screening.",
     notes:
       "Built from the site review's finding that the practice's strongest proof and its only real differentiation both sit on pages nobody navigates to, while the homepage runs weaker versions of each. Preview it beside Original before deciding; the only way to know which reads better to a patient is to look at them one after the other."
   }
