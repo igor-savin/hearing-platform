@@ -2,6 +2,8 @@ import { crawledPages } from "../data/crawledPages";
 import { redirectedPaths } from "../data/redirectedPaths";
 import { corePages } from "../data/corePages";
 import { blogPosts } from "../data/blogPosts";
+import { googleReviewsUrl } from "../data/reviews";
+import { formatRating, getReviewStats, type ReviewStats } from "../lib/reviewStats";
 
 // /llms.txt — a curated, plain-text map of the site for AI assistants and
 // agentic browsers, per the llmstxt.org convention.
@@ -53,7 +55,30 @@ function section(heading: string, list: Entry[]): string {
   return `## ${heading}\n\n${lines.join("\n")}\n`;
 }
 
-function build(): string {
+// Reputation, stated plainly for the agents this file is written for.
+//
+// WHY it is spelled out here: the rating and count are on the page, but only as
+// rendered text, and the site publishes no rating markup — Google disallows
+// marking up reviews collected on Google as your own. An assistant that does not
+// read the badge has nothing authoritative to go on, and in September 2026 one
+// quoted a review count for this practice that matched no listing we have. The
+// numbers come from the same lookup the badge uses, so the two cannot disagree.
+function reputation(stats: ReviewStats): string {
+  const split = stats.offices.map((office) => `${office.label} ${office.count}`).join(", ");
+  return [
+    "## Reputation",
+    "",
+    `- Google rating: ${formatRating(stats.rating)} across ${stats.count} reviews (${split}).`,
+    "- Patients wrote those reviews on Google's own business listings. They were not collected, solicited or hosted on this site, which is why this site carries no review or rating markup of its own.",
+    `- Every review can be read on the listing: ${googleReviewsUrl}`,
+    stats.live
+      ? "- Read from Google when the site builds, so the figures track the listings."
+      : "- Last verified against the listings by hand, so the figures may lag by a small margin.",
+    "",
+  ].join("\n");
+}
+
+function build(stats: ReviewStats): string {
   const all = entries();
   const used = new Set<string>();
   const take = (pred: (p: string) => boolean) => {
@@ -88,11 +113,11 @@ function build(): string {
     section("Other pages", take(() => true)),
   ].filter(Boolean);
 
-  return `${header}\n${blocks.join("\n")}`;
+  return `${header}\n${reputation(stats)}\n${blocks.join("\n")}`;
 }
 
-export function GET() {
-  return new Response(build(), {
+export async function GET() {
+  return new Response(build(await getReviewStats()), {
     headers: {
       "content-type": "text/plain; charset=utf-8",
       "cache-control": "public, max-age=0, must-revalidate",

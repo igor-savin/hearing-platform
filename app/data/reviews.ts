@@ -10,7 +10,8 @@ export const googleReviewsUrl =
 /**
  * The two offices keep separate Google Business Profiles, so they carry separate
  * ratings and counts. These seed values were verified against the live listings
- * on 15 Aug 2026 and are what the site renders when no GOOGLE_PLACES_API_KEY is
+ * on 19 Sep 2026 — San Mateo 5.0 from 189, San Carlos 5.0 from 14, unchanged
+ * since August — and are what the site renders when no GOOGLE_PLACES_API_KEY is
  * configured, or when a lookup fails — see app/lib/reviewStats.ts.
  *
  * `query` is what we hand to the Places text search; `expectStreetNumber` is the
