@@ -1,0 +1,13 @@
+{
+  "slug": "travel-with-hearing-aids",
+  "hero": { "title": "Traveling With Hearing Aids", "icon": "calendar", "accent": "blue" },
+  "info": { "title": "Before You Fly", "subtitle": "What to pack, and what security actually asks",
+    "rows": [
+      {"title": "Keep them in", "desc": "TSA does not require you to remove hearing aids"},
+      {"title": "Wear them gate to gate", "desc": "Airlines do not ask you to switch them off"},
+      {"title": "Spares in the carry-on", "desc": "Charger, domes, wax guards, drying kit"},
+      {"title": "Adapter, not converter", "desc": "Most chargers already handle 100-240 volts"},
+      {"title": "Photograph the serials", "desc": "A clinic abroad will ask for model and number"},
+      {"title": "Come in before a long trip", "desc": "A clean, new guards, and the right spares"}
+    ] }
+}

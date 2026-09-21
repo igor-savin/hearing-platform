@@ -5600,4 +5600,36 @@ export const crawledPages: SitePage[] = [
     "h2": [],
     "paragraphs": []
   },
+  {
+    "path": "/travel-with-hearing-aids/",
+    "title": "Traveling With Hearing Aids: Planes, Security & Charging Abroad | California Hearing Center",
+    "h1": "Traveling With Hearing Aids: Planes, Security, and Charging Abroad",
+    "desc": "You can keep hearing aids in through airport security and wear them on the plane. What to pack, how TSA screening works, charging abroad, and what to do if one fails.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/locked-and-used-hearing-aids/",
+    "title": "Locked, Used & Discontinued Hearing Aids | California Hearing Center",
+    "h1": "Locked, Used and Discontinued Hearing Aids: What You Can Still Service",
+    "desc": "Some hearing aids are locked so only the original seller can adjust them. What locking means, whether used or discontinued aids can be reprogrammed, and what to ask.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/services/cochlear-implants/",
+    "title": "Cochlear Implant Evaluation & Programming | California Hearing Center",
+    "h1": "Cochlear Implant Evaluation and Programming in San Mateo & San Carlos",
+    "desc": "Cochlear implant candidacy evaluation and post-activation programming in San Mateo and San Carlos. When hearing aids are no longer enough, and what the criteria say.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/services/single-sided-hearing-loss/",
+    "title": "Single-Sided Deafness & CROS Hearing Aids | California Hearing Center",
+    "h1": "Single-Sided Deafness and CROS Hearing Aids in San Mateo & San Carlos",
+    "desc": "Hearing loss in one ear: how CROS and BiCROS systems work, how they compare with bone-anchored devices and cochlear implants, and how we evaluate which suits you.",
+    "h2": [],
+    "paragraphs": []
+  }
 ];

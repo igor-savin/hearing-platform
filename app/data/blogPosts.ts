@@ -354,6 +354,49 @@ export const blogPosts: Record<string, PageContent> = {
     image2Caption: "For severe-to-profound loss, the right device and a verified fit matter far more than size.",
   },
 
+  "/california-hearing-aid-return-rights/": {
+    kicker: "Costs & Buying",
+    headline: "Your Right to Return Hearing Aids in California",
+    variant: "product",
+    datePublished: "2026-09-21",
+    dateModified: "2026-09-21",
+    metaDescription:
+      "California law gives you 45 days to return hearing aids for a full refund, and bars return fees when you cancel. What the statute says, how the trial works, and what to ask before you buy.",
+    intro: [
+      "California gives hearing aid buyers a stronger protection than most people realise, and stronger than most of the advice you will find online. Under [California Civil Code section 1793.02](https://codes.findlaw.com/ca/civil-code/civ-sect-1793-02/), a hearing aid may be returned to the seller within 45 days of the initial date of delivery, and the seller must adjust it, replace it, or promptly refund the total amount paid.",
+      "The part that gets missed is the fee language. The statute says that where the purchase is rescinded, no charge, penalty, or other fee may be imposed in connection with the purchase, fitting, financing, or return of the device. So a restocking fee is not simply a matter of shop policy in this state, and a quote that mentions one is worth a question before you sign rather than after.",
+      "Our own trial is the full 45 days with no restocking fee. We would rather you use the time properly than hand it back early out of politeness, and we would rather fit you with something cheaper that you keep wearing than something premium that comes back. If you are weighing a quote from somewhere else, bring it in — our [second opinion](/hearing-aid-second-opinion/) on an outside quote is free.",
+    ],
+    takeaways: [
+      "California law allows a hearing aid to be returned within 45 days of delivery for a refund of the total amount paid.",
+      "Where the purchase is rescinded, the statute bars charges, penalties and fees connected with the purchase, fitting, financing or return.",
+      "California Hearing Center runs the full 45 days with no restocking fee.",
+      "Use the trial in real life — restaurants, meetings, the car — not just in quiet rooms at home.",
+    ],
+    sections: [
+      ["What the statute actually says", "Civil Code section 1793.02 is the provision that matters, and it is short. A hearing aid may be returned within 45 days of the initial date of delivery to the buyer. On return, the seller must adjust or replace the device, or promptly refund the total amount paid, without charge and within a reasonable time. Where the sale is rescinded, the seller must return all payments and any device or other consideration exchanged. The law also requires the written warranty to carry the date the device was delivered to you and the date the warranty expires, which is the detail to check on your own paperwork before you leave the office."],
+      ["Restocking fees, and why the answer is not simple", "Clinics in other states routinely charge a restocking fee, often a few hundred dollars per device, to cover the earmold, the fitting time and the manufacturer's own handling charge. Those are real costs. But California's statute is explicit that no charge, penalty, or other fee may be imposed in connection with the purchase, fitting, financing, or return of the device where the purchase is rescinded. If a California provider quotes you a restocking fee, ask them to point to where it sits alongside that language. We do not charge one, which makes this an easy paragraph for us to write and a fair question for you to ask anywhere else."],
+      ["How to actually use a 45-day trial", "Wear them everywhere that matters, early. The mistake people make is to test new hearing aids in the living room for a month and then discover in week six that restaurants are still hard. Take them to the noisy places in the first fortnight: the restaurant you avoid, the family gathering, the car, the meeting room, the place of worship. Those are the environments worth tuning for, and they are the ones that need a follow-up visit or two to get right. A trial spent in quiet is a trial wasted, and it is why we book the follow-ups rather than waiting for you to call."],
+      ["Returning is not a failure of the fitting", "Sometimes the honest answer is that a device is not right, and we would rather hear it in week three than have you quietly stop wearing them in month four. What usually happens first is an adjustment: the great majority of complaints in a trial — too sharp, too tinny, own voice too loud, whistling, not enough in noise — are programming matters rather than the wrong device. That is what the follow-up visits are for, and it is why [real-ear verification](/hearing-aid-fitting/) at the fitting matters so much, since it removes the largest single source of a bad first impression. If adjustment does not do it, we try something else or we return them."],
+      ["What to ask before you sign anywhere", "Five questions, in writing. What is the trial length, and does the clock start at delivery? Is there any restocking or return fee, and under what conditions? What is included in the price — how many follow-up visits, for how long, and what happens after that? How long is the manufacturer warranty, and does it include loss and damage? And: are these devices locked to your software, or can another clinic program them? That last one catches people out years later, and we wrote about it separately on [locked and used hearing aids](/locked-and-used-hearing-aids/)."],
+      ["If you already bought elsewhere and regret it", "Check the delivery date first, because the 45 days runs from when the device was delivered to you and not from when you ordered or paid. If you are inside that window, the statute is on your side and the conversation with your provider should be a short one. If you are outside it, you are not without options: the devices may be adjustable to something you can live with, and a second opinion will tell you whether the fitting was ever verified against prescriptive targets in the first place. Call us at 650-342-9449 — San Mateo at 88 N. San Mateo Drive, San Carlos at 1008 Laurel Street. Bring the aids, the audiogram and the paperwork, and the review of an outside quote or fitting costs you nothing."],
+    ],
+    bullets: ["45 days by statute", "Refund of the total paid", "No fee on rescission", "Our trial: 45 days, no fee", "Test in noise early", "Free second opinion"],
+    faqs: [
+      ["How long is the hearing aid trial period in California?", "California Civil Code section 1793.02 allows a hearing aid to be returned to the seller within 45 days of the initial date of delivery, and requires the seller to adjust, replace, or promptly refund the total amount paid. California Hearing Center runs the full 45 days."],
+      ["Can a California clinic charge me a restocking fee?", "The statute states that where the purchase is rescinded, no charge, penalty, or other fee may be imposed in connection with the purchase, fitting, financing, or return of the device. Restocking fees are common practice in other states; if you are quoted one here, ask the provider to explain it against that language. We do not charge one."],
+      ["Does the 45 days start when I order or when I collect?", "From the initial date of delivery to you, which is the day you walk out wearing them rather than the day you paid a deposit. The statute also requires that delivery date to appear on your written warranty, so check that it is there and that it is correct."],
+      ["What happens to my financing if I return the hearing aids?", "The statute requires the seller to return all payments and any consideration exchanged when a purchase is rescinded, which includes sorting out a financed balance rather than leaving you paying for devices you no longer have. Ask your provider to confirm in writing how the financing is unwound before you sign."],
+      ["Should I return them if they do not sound right?", "Not as a first step. Most trial-period complaints — sharpness, tinniness, your own voice booming, whistling, struggling in noise — are programming issues that a follow-up visit fixes. Tell us what is wrong and let us adjust before you decide. If adjustment does not solve it, returning is a normal outcome and not a failure."],
+      ["How many hours a day should I wear them during the trial?", "As many as you comfortably can, and in the places that actually give you trouble. Steady daily wear is what lets the brain adapt, and testing in noise early is what gives us something useful to tune. Our guide to [wearing time](/how-many-hours-a-day-should-you-wear-new-hearing-aids-a-complete-guide/) goes into the detail."],
+    ],
+    image: "/assets/blog/california-hearing-aid-return-rights-1.svg",
+    imageLabel: "45 days from delivery, and no fee on rescission",
+    image2: "/assets/blog/california-hearing-aid-return-rights-2.svg",
+    image2Label: "What the statute gives you",
+    image2Caption: "California allows 45 days from delivery, and bars fees where the purchase is rescinded.",
+  },
+
   "/can-an-audiologist-help-with-balance-problems/": {
     kicker: "Balance & the Inner Ear",
     headline: "Can an Audiologist Help With Balance Problems?",
@@ -3302,6 +3345,49 @@ export const blogPosts: Record<string, PageContent> = {
     image2Caption: "Two systems, one goal: less effort spent decoding speech, more attention left for the conversation.",
   },
 
+  "/locked-and-used-hearing-aids/": {
+    kicker: "Costs & Buying",
+    headline: "Locked, Used and Discontinued Hearing Aids: What You Can Still Service",
+    variant: "product",
+    datePublished: "2026-09-21",
+    dateModified: "2026-09-21",
+    metaDescription:
+      "Some hearing aids are locked so only the original seller can adjust them. What locking means, whether a used or discontinued aid can be reprogrammed, and the questions to ask before buying.",
+    intro: [
+      "There is one question worth asking before you buy any hearing aid, and hardly anyone asks it: are these locked to your software? A locked hearing aid can only be programmed by the company that sold it. The hardware may be excellent and the fitting may be fine, but if you move house, fall out with the provider, or the branch closes, your options collapse to one.",
+      "The same question sits underneath two others that people bring us regularly — whether a used pair found online can be made to work, and whether a discontinued model can still be serviced. All three come down to the same thing: who is allowed to talk to the chip, and does anyone still make the parts.",
+      "We are an independent practice fitting standard manufacturer platforms, so nothing we sell is locked. That is not a boast so much as a structural fact about how we buy, and it is the reason we can take over care for devices bought elsewhere. What follows is the honest version of each case, including where the answer is no.",
+    ],
+    takeaways: [
+      "A locked hearing aid can only be programmed by the seller that dispensed it, usually because it was private-labelled for that chain.",
+      "Ask in writing whether devices are locked before you buy — it is the single question most likely to matter years later.",
+      "Behind-the-ear aids bought used can often be reprogrammed for a new wearer; custom in-the-ear devices usually cannot.",
+      "Discontinued models stay serviceable for a period after discontinuation, then become limited by parts and fitting software.",
+    ],
+    sections: [
+      ["What locking actually is", "A manufacturer builds a platform. A retail chain buys that platform, puts its own name on the case, and asks for the programming interface to be restricted to the chain's own fitting software. The result is a device that is technically a known manufacturer's hearing aid but that no unaffiliated clinic can adjust, because the software that would open it is not sold to anyone outside that network. The audiologist Cliff Olson has documented the practice in detail, and the names that recur in patient forums are the large retail chains rather than the manufacturers themselves. The hardware is often good. The constraint is commercial, not technical."],
+      ["Why it matters later rather than now", "On the day you buy, a locked device behaves exactly like an unlocked one, which is why the question rarely comes up in the room. It matters at the point where something changes. You retire and move to another state. The branch that fit you closes or the clinician leaves. You are travelling and a device fails. You simply want a second opinion on a fitting that has never felt right. In each of those situations an unlocked device can be handed to any competent audiologist, and a locked one cannot. We see the consequence most often as a patient arriving with aids we would happily adjust and cannot."],
+      ["How to ask, and what a good answer sounds like", "Ask it plainly: are these hearing aids locked to your fitting software, and can another clinic program them? Get the answer in writing, alongside the manufacturer and model. A provider fitting standard platforms will say no without hesitating and will be able to name the manufacturer's own model designation. An evasive answer — that any of their locations can help you, that the question does not really arise, that all hearing aids work this way — is itself the answer. It is a fair question and nobody reputable minds it."],
+      ["Buying used: when it works and when it does not", "The shape of the device decides most of it. A behind-the-ear aid sits behind the ear rather than inside it, so a new dome or a new earmold makes it wearable by someone else, and if the platform is unlocked it can be reprogrammed to a different prescription. A custom in-the-ear device is moulded to one person's canal and generally cannot be recased economically. Beyond fit, three things catch people out: manufacturer warranty usually does not transfer, the remaining service life may be short given a typical five to seven years, and a used aid still needs a current audiogram and a proper verified fitting to do anything useful. Savings are real but smaller than the sticker difference suggests once the fitting is paid for."],
+      ["Discontinued models", "Manufacturers support repairs for a period after a model is retired, so a discontinued aid is usually serviceable for several more years rather than instantly obsolete. What degrades first is not the device but the surroundings: older fitting software versions stop being distributed, replacement receivers and shells get harder to source, and at some point a repair costs more than the device is worth. Keep your purchase paperwork, because warranty coverage follows the serial number rather than the model name. If you are being told your model can no longer be touched, it is worth a second opinion — sometimes that means genuinely unsupported and sometimes it means unsupported by that particular provider."],
+      ["What we can do with aids we did not sell", "We take over care for hearing aids bought elsewhere, including devices from other clinics, from online sellers and bought used, provided the platform is not locked. That covers cleaning and servicing, wax guards, domes and receivers, reprogramming to your current audiogram, and real-ear verification so we can show you what the devices are actually delivering rather than what the software predicts. There is a fee for taking on outside devices, which we will quote before you commit. [NEEDS OWNER INPUT: the transfer-of-care and reprogramming fee for patient-supplied devices, and whether it differs for used aids bought online.] Call 650-342-9449 — 88 N. San Mateo Drive in San Mateo, or 1008 Laurel Street in San Carlos — and bring the aids and any audiogram you have.",],
+    ],
+    bullets: ["Ask if they are locked", "Get it in writing", "BTE resells, ITE usually not", "Warranty rarely transfers", "Discontinued is not dead", "We service outside devices"],
+    faqs: [
+      ["Are some hearing aids locked so only the seller can adjust them?", "Yes. Some retail chains sell private-labelled versions of major manufacturers' platforms with the programming restricted to their own software, so no unaffiliated clinic can adjust them. Ask in writing before you buy whether the devices are locked and which manufacturer and model they actually are."],
+      ["How do I find out whether my current hearing aids are locked?", "Bring them in. We can usually tell from the model and the branding whether the device is a private-labelled platform, and connecting it to standard fitting software settles it quickly. If your aids turn out to be unlocked, we can adjust and verify them regardless of where you bought them."],
+      ["Should I buy refurbished or used hearing aids?", "It can work for behind-the-ear styles, which can be re-tipped and reprogrammed for a new wearer. Custom in-the-ear devices are moulded to one person's ear and usually cannot be reused economically. Factor in that the manufacturer warranty generally does not transfer, that the remaining life may be short, and that a professional fitting is still required and still costs money."],
+      ["My hearing aid model was discontinued. Can it still be repaired?", "Usually yes for several years after discontinuation, though it gets harder over time as fitting software versions and spare parts become scarce. Keep your paperwork, since warranty follows the serial number. When a repair starts costing more than the device is worth, that is the point to talk about replacement rather than before."],
+      ["Can you adjust hearing aids I bought online?", "If the platform is unlocked, yes — we can reprogram them to your audiogram and verify the result with real-ear measurement, which is the step that decides whether they work for you. There is a fee for taking on devices we did not dispense, quoted before you commit. What we cannot do is program a device locked to another company's software."],
+      ["Are Costco hearing aids locked?", "Costco's devices have not been locked for many years, which is one of the genuine advantages of buying there and something we say plainly. The brands most often described as locked in patient forums are other retail chains. Our comparison of [Costco and private-clinic care](/what-is-the-best-hearing-aid-sold-at-costco/) goes through the rest of the trade-offs."],
+    ],
+    image: "/assets/blog/locked-and-used-hearing-aids-1.svg",
+    imageLabel: "Who is allowed to program your hearing aids",
+    image2: "/assets/blog/locked-and-used-hearing-aids-2.svg",
+    image2Label: "The questions to ask before you buy",
+    image2Caption: "Ask in writing whether the devices are locked, and which manufacturer actually made them.",
+  },
+
   "/oticon-reveal-what-we-know/": {
     kicker: "Hearing Aid Technology",
     headline: "Oticon Reveal: What We Actually Know So Far",
@@ -4284,6 +4370,49 @@ export const blogPosts: Record<string, PageContent> = {
     image2: "/assets/blog/tips-for-selecting-hearing-aids-2.svg",
     image2Label: "Six things to weigh before you buy",
     image2Caption: "The right hearing aid fits your ears, your routine, and your budget, not just the ad.",
+  },
+
+  "/travel-with-hearing-aids/": {
+    kicker: "Living With Hearing Aids",
+    headline: "Traveling With Hearing Aids: Planes, Security, and Charging Abroad",
+    variant: "product",
+    datePublished: "2026-09-21",
+    dateModified: "2026-09-21",
+    metaDescription:
+      "You can keep hearing aids in through airport security and wear them on the plane. What to pack, how TSA screening works, charging abroad, and what to do if one fails away from home.",
+    intro: [
+      "The short version, because it is the part people actually want: keep your hearing aids in. You do not take them off for airport security, you do not switch them off for takeoff, and you do not need a doctor's note to travel with them. Almost everything that goes wrong on a trip is a packing problem rather than a rules problem.",
+      "The packing problem is real, though. A charger left on the nightstand turns a rechargeable pair into two silent lumps of plastic by dinnertime on day one, and a wax guard that fails in a hotel room in another country is a different kind of problem from one that fails ten minutes from our office. Most of this page is about the small things that prevent that.",
+      "If a trip is coming up and you are unsure about your particular devices, bring them in beforehand. A clean-and-check and a spare-parts top-up before you fly is far easier than troubleshooting by email from abroad, and it is the kind of visit we would rather do early. Our [repair and service](/services/hearing-aid-repair/) team handles it at either office.",
+    ],
+    takeaways: [
+      "TSA does not require you to remove hearing aids or cochlear implant processors at screening.",
+      "Hearing aids are not the kind of electronic device airlines ask you to switch off, so you can wear them gate to gate.",
+      "Pack the charger, a backup power source, spare domes and wax guards, and a drying container — in your carry-on, never the hold.",
+      "Modern chargers handle overseas voltage; what you need abroad is usually a plug adapter, not a voltage converter.",
+    ],
+    sections: [
+      ["Getting through airport security", "You keep them in. The Transportation Security Administration states plainly that [you are not required to remove any hearing aids or cochlear implants](https://www.tsa.gov/travel/tsa-cares/disabilities-and-medical-conditions) for screening. Hearing aids are far too small to trigger a walk-through metal detector, and the body scanners used at most checkpoints do not react to them either. If a device does alarm, TSA notes that additional screening such as a pat-down or an inspection of the device may follow — which is a normal outcome, not a problem. Tell the officer you are deaf or hard of hearing and need help with instructions, because the one genuine difficulty at a checkpoint is missing a spoken direction with your back turned and a noisy hall behind you."],
+      ["On the plane", "Wear them. The switch-off instruction for takeoff and landing applies to devices that transmit on their own, and hearing aids do not fall into that group in any airline's rules. The Bluetooth connection between your two aids, or between your aids and your phone, is very low power and stays within a couple of feet of your head. If you want to stream from the seatback entertainment system, the practical obstacle is the armrest jack, not permission: a small transmitter that plugs into the headphone socket and sends audio to your aids solves it, and it is worth testing at home before you rely on it at 35,000 feet. Cabin pressure does not damage hearing aids. If your ears feel blocked on descent, that is your middle ear rather than your devices."],
+      ["What to pack, and where", "Everything for your ears goes in the carry-on. Hold luggage gets cold, gets lost, and gets delayed, and none of those are things you want between you and hearing. Pack the charger and its cable, a plug adapter for the country you are going to, spare domes and wax guards, a cleaning brush, a drying container or dry-aid kit, and — if you wear disposables — more batteries than the trip should need. A power bank earns its place on long travel days. Take a photo of your devices' make, model and serial numbers before you leave and keep it on your phone, because that information is what a clinic in another city will ask for first."],
+      ["Charging abroad", "Check the charger, not the aids. Nearly every current hearing aid charger is rated for 100 to 240 volts, which covers both North American and European supply, so what you need is a plug adapter that changes the shape of the pins rather than a voltage converter that changes the electricity. The rating is printed in small type on the charger itself or its power brick — read it before you buy anything. Two habits save trips: charge overnight every night rather than topping up when you notice the battery falling, and carry a power bank so a long flight or a hotel room with two accessible sockets behind the bed does not become the reason you cannot hear at dinner."],
+      ["If a hearing aid fails while you are away", "Work through the cheap causes first, because they account for most failures: change the wax guard, change the dome, dry the device overnight in your drying container, and make sure the charger contacts are clean. That sequence fixes the majority of sudden losses of sound, and it is why the spares belong in the carry-on. If it is genuinely broken, most manufacturers have service networks worldwide and most independent clinics will help a visitor with a clean, a re-tube or a loaner, though what they can program depends on the brand. Call us at 650-342-9449 either way — knowing your model and settings, we can often tell you over the phone whether this is a five-minute fix or something that waits until you are home."],
+      ["Before a long trip, come in", "The visit that prevents the problem takes about twenty minutes. We clean the devices properly, replace wax guards and domes, check the receivers, confirm the charger is behaving, and send you off with the spares you will need rather than the ones you happen to have. If you are traveling somewhere genuinely remote or for a long stretch, say so and we will pack you more thoroughly. Call 650-342-9449 for either office — 88 N. San Mateo Drive in San Mateo, or 1008 Laurel Street in San Carlos — and if you are not yet a patient here, a pre-travel check is a reasonable first visit and costs you nothing to ask about."],
+    ],
+    bullets: ["Keep them in at security", "Wear them on the plane", "Spares in the carry-on", "Plug adapter, not converter", "Photograph your serial numbers", "Pre-trip clean and check"],
+    faqs: [
+      ["Do I have to take my hearing aids out for airport security?", "No. TSA states that you are not required to remove hearing aids or cochlear implants at screening, and hearing aids are too small to set off a walk-through metal detector in any case. Keep them in, and tell the officer if you need spoken instructions repeated or facing you."],
+      ["Do hearing aids set off airport scanners?", "Almost never. The metal in a hearing aid is a fraction of what a detector is calibrated to find, and body scanners do not typically react to them either. If a device does alarm, the officer may ask to inspect it or perform a pat-down, which is routine and does not mean anything is wrong with your devices."],
+      ["Can I wear hearing aids during takeoff and landing?", "Yes. The instruction to switch off electronics is aimed at devices that transmit, and hearing aids are not treated that way by airlines. Leave them in for the whole flight — you will want them for the safety briefing and the announcements, which are exactly the moments that are hardest to catch."],
+      ["How do I charge my hearing aids in another country?", "Read the small print on the charger. Most are rated 100 to 240 volts, which means a simple plug adapter is enough and no voltage converter is needed. Carry a power bank as well, because hotel sockets have a way of being in the wrong place."],
+      ["What should I pack for my hearing aids?", "Charger and cable, plug adapter, spare domes, spare wax guards, a cleaning brush, a drying container, and batteries if yours are disposable. All of it in the carry-on. Add a photo of your model and serial numbers on your phone."],
+      ["What if I lose or break a hearing aid on holiday?", "Try a new wax guard, a new dome and an overnight dry first, since those account for most sudden failures. If it is truly dead, call us at 650-342-9449 — we can usually tell from the model and the symptom whether a local clinic can help you now, and we will have a repair or a loss-and-damage claim ready to start when you land."],
+    ],
+    image: "/assets/blog/travel-with-hearing-aids-1.svg",
+    imageLabel: "What to pack, and what security actually asks of you",
+    image2: "/assets/blog/travel-with-hearing-aids-2.svg",
+    image2Label: "A pre-flight checklist for your ears",
+    image2Caption: "Spares and the charger belong in the carry-on, never in checked luggage.",
   },
 
   "/troubleshooting-hearing-aid-issues/": {

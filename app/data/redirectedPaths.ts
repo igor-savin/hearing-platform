@@ -104,7 +104,6 @@ export const redirectedPaths = new Set<string>([
   "/breakthrough-research-senolytic-treatment-shows-promise-in-delaying-age-related-hearing-loss/",
   "/bryan-johnsons-bold-vision-for-hearing-health-what-it-means-for-you/",
   "/bryan-johnsons-dont-die-blueprint-a-new-vision-for-hearing-health-and-longevity/",
-  "/california-hearing-aid-return-rights/",
   "/can-an-audiologist-help-with-balance-problems-2/",
   "/can-audiologists-diagnose-ear-problems-2/",
   "/can-audiologists-diagnose-ear-problems-3/",

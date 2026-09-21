@@ -1,0 +1,13 @@
+{
+  "slug": "california-hearing-aid-return-rights",
+  "hero": { "title": "Your Right to Return", "icon": "shield", "accent": "gold" },
+  "info": { "title": "California Trial Rights", "subtitle": "Civil Code section 1793.02, in plain terms",
+    "rows": [
+      {"title": "45 days from delivery", "desc": "The clock starts the day you take them home"},
+      {"title": "Refund of the total paid", "desc": "Adjust, replace, or refund without charge"},
+      {"title": "No fee on rescission", "desc": "No charge or penalty for purchase, fitting or return"},
+      {"title": "Our trial", "desc": "The full 45 days, with no restocking fee"},
+      {"title": "Test in noise early", "desc": "Restaurants and meetings, not just quiet rooms"},
+      {"title": "Adjust before you return", "desc": "Most complaints are programming, not the device"}
+    ] }
+}

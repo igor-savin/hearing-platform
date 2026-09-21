@@ -133,7 +133,6 @@ const blogRedirects = [
       { source: "/breakthrough-research-senolytic-treatment-shows-promise-in-delaying-age-related-hearing-loss/", destination: "/the-blog/", permanent: true },
       { source: "/bryan-johnsons-bold-vision-for-hearing-health-what-it-means-for-you/", destination: "/the-blog/", permanent: true },
       { source: "/bryan-johnsons-dont-die-blueprint-a-new-vision-for-hearing-health-and-longevity/", destination: "/the-blog/", permanent: true },
-      { source: "/california-hearing-aid-return-rights/", destination: "/products/hearing-aids/", permanent: true },
       { source: "/can-an-audiologist-help-with-balance-problems-2/", destination: "/about-us/", permanent: true },
       { source: "/can-audiologists-diagnose-ear-problems-2/", destination: "/hearing-testing/", permanent: true },
       { source: "/can-audiologists-diagnose-ear-problems-3/", destination: "/hearing-testing/", permanent: true },
