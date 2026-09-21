@@ -5346,9 +5346,9 @@ export const crawledPages: SitePage[] = [
   },
   {
     "path": "/hearing-aid-replacement-intervals-domes-wax-guards-receivers/",
-    "title": "Hearing Aid Replacement Intervals Domes Wax Guards Receivers | California Hearing Center",
-    "h1": "Hearing Aid Replacement Intervals Domes Wax Guards Receivers",
-    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "title": "Hearing Aid Maintenance: When to Replace Domes, Wax Guards & Receivers | California Hearing Center",
+    "h1": "Hearing Aid Maintenance: When to Replace Domes, Wax Guards & Receivers",
+    "desc": "Wax guards monthly, domes every two to three months, tubing every four to six. The actual intervals for hearing aid parts and how to change them.",
     "h2": [],
     "paragraphs": []
   },

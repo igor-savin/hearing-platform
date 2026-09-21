@@ -1602,17 +1602,34 @@ function articleSchema(page: SitePage, content: PageContent) {
   };
 }
 
+// A headline is only fit to sit inside "Common questions about <topic>" if it
+// reads as a noun phrase. Colons and question marks both produce nonsense there
+// ("Common questions about Audiologists and Medicare: What to Know"), and a long
+// headline makes the heading longer than the questions under it.
+function isEmbeddableTopic(headline?: string): boolean {
+  if (!headline) return false;
+  if (headline.length > 45) return false;
+  return !/[:?]/.test(headline);
+}
+
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 // Deterministic per-page variety for the FAQ heading (was identical on every post).
 function faqHeading(path: string, topic: string): string {
   // Topic-free variants are always safe; topic-embedding ones only when `topic`
   // is a clean display label (empty string is passed for slug-derived titles).
-  const variants = [
+  // Fixed length of six, so the hash below picks the same slot whether or not a
+  // topic is available. A variable-length array meant that giving one page a
+  // topic silently reshuffled the heading on every other page.
+  const generic = [
     `Questions patients ask us`,
     `Your questions, answered`,
     `What patients often want to know`,
     `A few questions worth asking`,
-    ...(topic ? [`Common questions about ${topic}`, `${topic}: questions we hear a lot`] : []),
+  ];
+  const variants = [
+    ...generic,
+    topic ? `Common questions about ${topic}` : generic[0],
+    topic ? `${topic}: questions we hear a lot` : generic[1],
   ];
   let h = 0;
   for (let i = 0; i < path.length; i++) h = (h * 31 + path.charCodeAt(i)) >>> 0;
@@ -1664,6 +1681,14 @@ function InnerPage({ page }: { page: SitePage }) {
   const content = buildPageContent(page);
   const isBlog = !!content.datePublished;
   const isCore = !!corePages[page.path];
+  // The FAQ heading may embed the page's topic. It must come from the editorial
+  // headline, never from `page.h1` — 143 live pages carry a crawl-era h1 that is
+  // just the slug title-cased ("What Is The Difference Between Cheap And
+  // Expensive Hearing Aids"), and feeding that in produced headings that read
+  // like a machine wrote them. Long headlines are rejected too: anything that
+  // does not sit comfortably inside "<topic>: questions we hear a lot" falls
+  // back to a topic-free variant.
+  const faqTopic = !isCore && isEmbeddableTopic(content.headline) ? content.headline! : "";
   // The spec table for the product and comparison pages. Null on every other
   // page, which is nearly all of them, so nothing renders.
   const specTable = specTableFor(page.path);
@@ -1860,7 +1885,7 @@ function InnerPage({ page }: { page: SitePage }) {
           {content.faqs && (
             <section className="faq-block">
               <p className="section-kicker">Frequently asked questions</p>
-              <h2>{faqHeading(page.path, isCore ? "" : pageTitle)}</h2>
+              <h2>{faqHeading(page.path, faqTopic)}</h2>
               {content.faqs.map(([question, answer]) => (
                 <details key={question} open>
                   <summary>{question}</summary>
