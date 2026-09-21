@@ -5631,5 +5631,13 @@ export const crawledPages: SitePage[] = [
     "desc": "Hearing loss in one ear: how CROS and BiCROS systems work, how they compare with bone-anchored devices and cochlear implants, and how we evaluate which suits you.",
     "h2": [],
     "paragraphs": []
+  },
+  {
+    "path": "/rechargeable-hearing-aid-battery-life-and-charging/",
+    "title": "Rechargeable Hearing Aids: Battery Life & Charging | California Hearing Center",
+    "h1": "Rechargeable Hearing Aids: Battery Life, Charging, and What to Do When the Power Goes Out",
+    "desc": "How long a charge really lasts, whether overnight charging is safe, what happens in a power cut, and how many years before the built-in cell needs replacing.",
+    "h2": [],
+    "paragraphs": []
   }
 ];

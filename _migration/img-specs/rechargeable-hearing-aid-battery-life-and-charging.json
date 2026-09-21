@@ -1,0 +1,13 @@
+{
+  "slug": "rechargeable-hearing-aid-battery-life-and-charging",
+  "hero": { "title": "Battery Life and Charging", "icon": "battery", "accent": "aqua" },
+  "info": { "title": "Rechargeables, Day to Year", "subtitle": "What to expect, and what to do when it slips",
+    "rows": [
+      {"title": "18-22 hours a charge", "desc": "A normal waking day, with room to spare"},
+      {"title": "Streaming is the big draw", "desc": "Long calls and TV shorten the day noticeably"},
+      {"title": "Charge overnight", "desc": "Designed for it — the circuit stops when full"},
+      {"title": "Power cut? Use a power bank", "desc": "Or a case with its own internal battery"},
+      {"title": "Cell lasts about 3 years", "desc": "It fades gradually rather than failing"},
+      {"title": "Cases are replaceable", "desc": "A failed case is not a reason for new aids"}
+    ] }
+}

@@ -152,7 +152,6 @@ export const redirectedPaths = new Set<string>([
   "/hearing-aid-friendly-activities-for-families-in-hillsborough-2/",
   "/hearing-aid-friendly-activities-for-families-in-hillsborough/",
   "/hearing-aid-maintenance-tips-for-hillsborough-homes/",
-  "/hearing-aid-replacement-intervals-domes-wax-guards-receivers/",
   "/hearing-aid-support-groups-in-atherton-and-menlo-park/",
   "/hearing-aids-and-smartphones-a-simple-guide-to-pairing-apps-and-troubleshooting/",
   "/hearing-aids-near-burlingame-avenue-for-hillsborough-residents/",
