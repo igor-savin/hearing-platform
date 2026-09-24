@@ -1,0 +1,12 @@
+{
+  "slug": "meta-glasses-hearing-aid-feature-explained",
+  "hero": { "title": "Meta Glasses: Hearing Feature", "icon": "bluetooth", "accent": "blue" },
+  "info": { "title": "Meta's Hearing Enhancement, at a glance", "subtitle": "Announced at Meta Connect, September 23, 2026",
+    "rows": [
+      {"title": "FDA-cleared, not approved", "desc": "Met the OTC hearing aid category's requirements."},
+      {"title": "Same 2022 OTC rule", "desc": "The category that already covers shelf devices."},
+      {"title": "Self-assessed, self-fit", "desc": "No exam or prescription required to set it up."},
+      {"title": "Mild-to-moderate loss only", "desc": "Assumes fairly even hearing between both ears."},
+      {"title": "US launch later in 2026", "desc": "$149.99 one-time, or with a Meta One subscription."}
+    ] }
+}

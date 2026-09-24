@@ -5639,5 +5639,13 @@ export const crawledPages: SitePage[] = [
     "desc": "How long a charge really lasts, whether overnight charging is safe, what happens in a power cut, and how many years before the built-in cell needs replacing.",
     "h2": [],
     "paragraphs": []
+  },
+  {
+    "path": "/meta-glasses-hearing-aid-feature-explained/",
+    "title": "Meta Glasses Hearing Feature: What It Actually Is | California Hearing Center",
+    "h1": "Meta's Glasses Now Include a Hearing Aid Feature. Here's What That Means",
+    "desc": "Meta announced an FDA-cleared hearing enhancement feature for its AI glasses at Meta Connect 2026. What it does, who it fits, and where a real hearing test still matters.",
+    "h2": [],
+    "paragraphs": []
   }
 ];
