@@ -597,7 +597,65 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
         { label: "Bluetooth SIG: Find an Auracast Product", href: "https://www.bluetooth.com/auracast/find-a-product/" }
       ]
     }
-  }
+  },
+  {
+    path: "/meta-glasses-hearing-aid-feature",
+    title: "Meta's New Glasses Include a Hearing Aid Feature. Should You Try It?",
+    metaTitle: "Meta Glasses Hearing Aid Feature | Westchester",
+    metaDescription: "Meta announced an FDA-cleared hearing aid feature for its AI glasses at Meta Connect 2026. What it does, how it compares to AirPods, and when to get tested.",
+    h1: "Meta's New Glasses Include a Hearing Aid Feature. Should You Try It Instead of a Hearing Aid?",
+    heroImage: { src: "/assets/blog-headphones.png", alt: "Adult wearing consumer audio glasses, representing new self-fit hearing technology" },
+    sections: ["Hearing Technology", "Buyer decision guide", "Audiologist perspective", "Frequently asked questions"],
+    body: [
+      "A patient forwarded us a headline within an hour of Meta's keynote ending: their glasses can now work as a hearing aid. The short answer is yes, in a specific, regulated sense, and the longer answer is the more useful one.",
+      "Meta's \"Hearing Enhancement\" is a real, FDA-cleared over-the-counter hearing aid feature, not a gimmick and not a general medical device. It sits inside a category we already help patients navigate every week, just with a new pair of glasses attached to it.",
+      "What Meta actually announced",
+      "At Meta Connect on September 23, 2026, Meta said its newer Meta Glasses models will offer a software feature called Hearing Enhancement, cleared by the FDA for adults with self-assessed mild-to-moderate hearing loss. It sets up at home with no exam or prescription, adjusts each ear separately, and turns on with a voice command. Meta is launching it in the US later this year, starting on select Meta Glasses rather than the Ray-Ban Meta line, with a 30-day free trial and a $149.99 one-time cost afterward, or inclusion with a Meta One subscription.",
+      "It's the same OTC category you may already know",
+      "Nothing about the regulatory ground here is new. The FDA created the over-the-counter hearing aid category in 2022 for adults with mild-to-moderate, fairly symmetric hearing loss, and we've written before about how [OTC and prescription hearing aids differ in real-world use](/otc-vs-prescription-hearing-aids-real-world) and about [who OTC devices actually suit](/are-otc-hearing-aids-right-for-me). Meta's glasses meet that same bar. \"FDA-cleared\" is worth being precise about, too: it is a narrower claim than \"FDA-approved,\" and it means this software met the OTC category's requirements, not that the glasses were reviewed as a general medical device.",
+      "Where this sits next to AirPods and other consumer options",
+      "Patients have been asking us a version of this question since Apple added a hearing aid feature to AirPods Pro, and we wrote about [what AirPods can and can't do as a hearing aid](/airpods-as-hearing-aids) at the time. Meta's feature is a step further than that, in that it is built and cleared specifically as an OTC hearing aid rather than a general amplification mode, but the underlying trade-off is the same one we describe there: a self-assessed, self-fit device can be a reasonable low-cost entry point for the right listener, and it is not a substitute for a measured fitting when your hearing picture is more complicated than mild and even.",
+      "When a self-fit device isn't enough",
+      "OTC hearing aids, in any form factor, assume your loss is mild-to-moderate and roughly balanced between your ears. That assumption fails for a meaningful share of the patients we see. Seek prompt medical guidance rather than a self-fit device for sudden hearing loss, severe dizziness, new one-sided symptoms, drainage, significant ear pain, facial weakness, head injury, or heartbeat-like tinnitus. Outside those red flags, a self-assessment still can't tell you the shape of your loss the way an audiogram and real-ear verification can, which matters more the longer you plan to rely on the device.",
+      "Our answer, plainly",
+      "Try it if you want, once it's available, provided none of the warning signs above apply to you. But you do not have to guess which category you're in. A hearing evaluation gives you an actual measurement to judge any device against, glasses included, and takes well under an hour. Our team sees patients at both our Harrison and Somers offices, and we're glad to talk through your results and your options either way, with no pressure toward a purchase from us specifically."
+    ],
+    faqs: [
+      { question: "Is Meta's hearing glasses feature a real hearing aid?", answer: "Yes, in the regulatory sense that matters. It falls under the FDA's over-the-counter hearing aid category created in 2022, the same one behind other self-fit devices, including AirPods Pro's hearing aid feature. \"FDA-cleared\" is a specific, narrower claim than \"FDA-approved,\" and it applies to adults with self-assessed mild-to-moderate hearing loss." },
+      { question: "How is this different from getting hearing aids fitted here?", answer: "The main difference is measurement and follow-up. A professional fitting starts with a hearing test that maps your loss precisely, uses real-ear measurement to confirm the device is delivering the right output at each pitch, and continues with adjustments as your needs change. A self-fit device, including this one, sets up within preset ranges based on how you describe your own hearing, with no measurement checking that description." },
+      { question: "Should I wait for this instead of getting a hearing test now?", answer: "There's no real reason to. A hearing evaluation takes under an hour and gives you a concrete answer regardless of what device you eventually choose, including this one once it launches. Knowing your actual results means you can judge any product against your hearing rather than a guess." },
+      { question: "When should I skip OTC options entirely and come in?", answer: "Sudden hearing loss, severe dizziness, a new one-sided symptom, drainage, significant ear pain, facial weakness, a recent head injury, or heartbeat-like tinnitus are reasons to be seen rather than to try a self-fit device first, glasses or otherwise." }
+    ],
+    related: [
+      { label: "OTC vs Prescription Hearing Aids: Real-World Differences", href: "/otc-vs-prescription-hearing-aids-real-world" },
+      { label: "Are OTC Hearing Aids Right for Me?", href: "/are-otc-hearing-aids-right-for-me" },
+      { label: "AirPods as Hearing Aids: What They Can and Can't Do", href: "/airpods-as-hearing-aids" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Buyer decision guide",
+      byline: "A same-day read on Meta Connect's hearing news",
+      reviewedBy,
+      reviewedBySlug: "caitlin-dold",
+      readTime: "4 min read",
+      articleType: "Buyer decision guide",
+      pullQuote: "Meta's glasses meet the same 2022 OTC bar as every other self-fit hearing aid. The form factor changed. The question you still have to answer for yourself didn't.",
+      keyTakeaways: [
+        "Meta's Hearing Enhancement is an FDA-cleared OTC hearing aid feature, not a new device category — the same 2022 rule covers it as other self-fit devices.",
+        "It suits the same listener OTC devices generally suit: adults with mild-to-moderate, fairly even hearing loss, comfortable managing a self-assessed setup.",
+        "Sudden, one-sided, painful, draining, or dizzy symptoms call for an evaluation, not a self-fit device — and a hearing test beats guessing either way."
+      ],
+      patientQuestion: "Should I try Meta's new hearing glasses instead of a hearing aid?",
+      storyLead: "A patient forwarded us the headline within an hour of the keynote ending. Here is the straight answer.",
+      sources: [
+        { label: "Meta: Everything We Announced at Connect 2026", href: "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/" },
+        { label: "FDA: Over-the-Counter Hearing Aids", href: "https://www.fda.gov/medical-devices/hearing-aids/otc-hearing-aids" }
+      ]
+    }
+  },
 ];
 
 export function buildNextBlogPosts(baseUrl: string, _siteName: string): SitePage[] {
