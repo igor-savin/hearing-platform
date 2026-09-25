@@ -28,7 +28,7 @@ export const contentDates: Record<string, ContentDate> = {
   "/ear-fullness-no-pain-hearing-loss": { published: "2026-07-14", modified: "2026-08-25" },
   "/ear-pressure-and-hearing-loss-evaluation": { published: "2026-07-14", modified: "2026-08-25" },
   "/first-signs-of-hearing-loss-family-notice": { published: "2026-07-14", modified: "2026-08-25" },
-  "/fortell-hearing-aids-what-we-know": { published: "2026-08-26", modified: "2026-09-18" },
+  "/fortell-hearing-aids-what-we-know": { published: "2026-08-26", modified: "2026-09-25" },
   "/hear-people-talking-not-understand-words": { published: "2026-07-14", modified: "2026-08-25" },
   "/hearing-aid-cost-westchester-county": { published: "2026-07-14", modified: "2026-09-17" },
   "/hearing-aid-domes-wax-guards-receivers": { published: "2026-07-14", modified: "2026-08-25" },
