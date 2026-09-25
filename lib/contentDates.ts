@@ -74,7 +74,7 @@ export const contentDates: Record<string, ContentDate> = {
   "/pulsatile-tinnitus-heartbeat-sound": { published: "2026-07-14", modified: "2026-08-25" },
   "/questions-before-buying-hearing-aids": { published: "2026-07-14", modified: "2026-09-17" },
   "/rechargeable-vs-battery-hearing-aids": { published: "2026-07-14", modified: "2026-08-25" },
-  "/reviews": { published: "2026-07-21", modified: "2026-09-18" },
+  "/reviews": { published: "2026-07-21", modified: "2026-09-20" },
   "/ringing-in-one-ear-red-flags-next-steps": { published: "2026-07-14", modified: "2026-09-17" },
   "/signia-max-what-we-know": { published: "2026-08-24", modified: "2026-09-17" },
   "/sound-sensitivity-vs-tinnitus": { published: "2026-07-14", modified: "2026-09-17" },
