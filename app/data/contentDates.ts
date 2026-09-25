@@ -265,7 +265,7 @@ export const contentDates: Record<string, string> = {
   "/first-hearing-test-step-by-step-guide-for-adults-in-san-mateo-san-carlos/": "2026-09-21",
   "/five-myths-about-hearing-aids-that-stop-people-from-getting-help/": "2026-09-21",
   "/five-shocking-links-to-hearing-damage/": "2026-09-21",
-  "/fortell-hearing-aids-what-we-know/": "2026-09-08",
+  "/fortell-hearing-aids-what-we-know/": "2026-09-25",
   "/from-faqs-to-ai-overviews-turning-your-front-desk-questions-into-ai-friendly-content/": "2026-09-21",
   "/game-changing-hearing-solutions-for-tennis-golf-pickleball-players/": "2026-09-21",
   "/gene-therapy-may-be-the-answer-to-hearing-loss/": "2026-08-25",
