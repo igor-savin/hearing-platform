@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "key": "aaw",
+  "generated": "2026-09-28",
+  "source_note": "Built from the Audiology-Associates repo and the three AAW channel skills (aaw-gbp-monthly, aaw-fb-monthly, aaw-ig-products) on 2026-09-28. Nothing was copied from the CHC pack. Every value here was read out of AAW's own repo or its own skills; anything that could not be verified is null with a note rather than guessed.",
+  "identity": {
+    "name": "Audiology Associates of Westchester",
+    "short_name": "Audiology Associates",
+    "site": "https://www.audiologyassociates.org",
+    "site_display": "audiologyassociates.org",
+    "canonical_host": "www.audiologyassociates.org",
+    "founded": null,
+    "founded_note": "Not recorded anywhere in the repo. CHC keeps its founding year in app/data/practice.ts; AAW has no equivalent. Do not write any 'N years' copy until Igor supplies the year.",
+    "kind": "Independent audiology practice",
+    "timezone": "America/New_York",
+    "timezone_label": "Eastern",
+    "operator_browser_tz_matches": false,
+    "operator_browser_tz_note": "Igor's browser runs Pacific and the practice is Eastern, so every scheduler entry is three hours out. This is why the Facebook rule is to enter 8:30 to publish at 11:30 Eastern. Any artifact that prints a time must print the Eastern label, and any scheduler entry must be converted.",
+    "repo_folder": "Audiology-Associates",
+    "sister_brand": "chc"
+  },
+  "offices": [
+    {
+      "key": "ha",
+      "office": "Harrison",
+      "street_phrase": "Harrison, on Mamaroneck Avenue.",
+      "address": "550 Mamaroneck Ave, Suite 407 (4th floor), Harrison, NY 10528",
+      "phone": "(914) 949-0034",
+      "hours": "Mon–Fri 8:30am–5:00pm",
+      "dark_weekdays": [],
+      "gbp_start_day": 1,
+      "geo": {
+        "latitude": 40.9796062,
+        "longitude": -73.7426423
+      },
+      "arrival": "Plenty of parking in the lot. Suite 407, fourth floor.",
+      "gbp_status": "Verified"
+    },
+    {
+      "key": "so",
+      "office": "Somers",
+      "street_phrase": "Somers, on Route 100.",
+      "address": "325 NY 100, Somers, NY 10589",
+      "phone": "(914) 556-6720",
+      "fax": "(914) 556-6722",
+      "hours": "Mon–Wed 8:30am–5:00pm · Thu closed · Fri 8:30am–2:30pm",
+      "dark_weekdays": [
+        "Thursday"
+      ],
+      "gbp_start_day": 2,
+      "geo": {
+        "latitude": 41.325938,
+        "longitude": -73.688312
+      },
+      "geo_note": "Interim coordinates set 2026-09-18. Google's own marker for this listing sits on the CVS building roughly 47m away and has been sending patients to the wrong end of the plaza. The pin must be moved in GBP; correcting geo here only fixes our own pages.",
+      "arrival": "Towne Centre at Somers, on the strip between the post office and Oscar's II. Ground level, no stairs.",
+      "gbp_status": "Verification required",
+      "gbp_status_note": "As of 2026-09-28 this listing reads 'Verification required' in Business Profile Manager, which means it cannot appear in the local pack at all. It previously read 'Duplicate'. Until it is verified, GBP posts for 'so' may not surface."
+    }
+  ],
+  "offices_share_phone": false,
+  "offices_share_phone_note": "Unlike CHC, each AAW office has its own number. A card or post carrying the wrong office's number is the specific failure aaw-gbp-monthly guards against.",
+  "palette": {
+    "source": "app/globals.css (.aa-ear-hero custom properties) and hex usage across app/ and components/, verified against the live repo 2026-09-28. Cross-checked against the card grounds in the three AAW channel skills.",
+    "primary": "#003f6f",
+    "primary_dark": "#002b4d",
+    "blue": "#005a9c",
+    "accent": "#39a9d0",
+    "gold": "#ffd45a",
+    "pale": "#dbe9f3",
+    "pale_alt": "#d5e7f4",
+    "cream": "#fff7ed",
+    "ink": "#253239",
+    "ink_strong": "#262626",
+    "muted": "#5d6b72",
+    "paper": "#ffffff",
+    "line": "#d7e2e3",
+    "category_rust": "#a75e22",
+    "category_green": "#1c7a52",
+    "category_purple": "#6b3f8f",
+    "naming_note": "primary, accent and gold are the names scripts/brandpack.py reads. On this site primary is the navy the hero and headings use, blue is the interactive colour for links and buttons, and accent is the cyan. Nothing is listed twice; use these names rather than reintroducing 'navy' or 'cyan' as separate keys.",
+    "rules": [
+      "primary #003f6f is the brand surface. blue #005a9c is the interactive colour: links, buttons, icons. pale #dbe9f3 is the standard panel ground.",
+      "gold #ffd45a is 1.42:1 on white. It is a ground and an accent, never text on a light surface.",
+      "accent #39a9d0 is 2.71:1 on white and fails WCAG AA for body text. Use primary or blue for anything a patient has to read.",
+      "primary is 10.82:1 on white and blue is 7.14:1. Both are safe for text. Patients skew older; contrast is not cosmetic here.",
+      "category_rust, category_green and category_purple are per-category card accents used by the channel builders, not site colours. Do not introduce them into site UI."
+    ],
+    "retired": {
+      "note": "app/globals.css also defines a teal-and-gold set at :root (--brand #115e68, --brand-dark #0a3d45, --brand-soft #e5f3f4, --accent #c57a34, --accent-dark #9f5c1e). Those variables are referenced only by app/overview/page.tsx, an internal architecture page that is not part of the public site. They are NOT the AAW brand palette. Sampling :root from this file without checking usage is exactly how the CHC cards ended up off-brand.",
+      "hexes": [
+        "#115e68",
+        "#0a3d45",
+        "#e5f3f4",
+        "#c57a34",
+        "#9f5c1e"
+      ]
+    }
+  },
+  "typography": {
+    "display": "Inter",
+    "fallback": "DejaVuSans",
+    "site_face": "Arial, Helvetica, sans-serif",
+    "note": "The site itself sets no webfont and renders in the system stack. Cards render with Inter and fall back to DejaVuSans; both are referenced by the AAW channel skills' render scripts. If a build reports NONE for the resolved face, stop and fix the font path rather than shipping a fallback render."
+  },
+  "card_system": {
+    "dimensions": "1200x1200",
+    "dimensions_note": "GBP, Facebook and Instagram all use 1200x1200 for AAW. CHC uses 1200x900 for GBP; do not carry that across.",
+    "grounds": [
+      "primary",
+      "cream",
+      "pale"
+    ],
+    "ground_rule": "Grounds alternate across a month so a run of posts does not read as one block.",
+    "phone_on_cards": true,
+    "phone_on_cards_note": "Each GBP card carries its own office's number, and they differ. This is the check most worth running twice.",
+    "no_phone_in_body": true
+  },
+  "voice": {
+    "posture": "education_only",
+    "summary": "Blunt, practical, second person. Tells the patient what to do and why, and says plainly when something will not work.",
+    "rules": [
+      "Short declaratives. Fragments are fine when they carry a specific image.",
+      "Give one instruction per sentence and make it actionable: what to say when you book, what to bring, which day to pick.",
+      "Name the real room rather than the audiogram: a table on Mamaroneck Avenue, a gym with a high ceiling, a car on the Taconic.",
+      "Be honest about limits. 'Hearing aids have limits outdoors that nobody selling them enjoys mentioning' is the register.",
+      "No exclamation marks, no emoji, no stock enthusiasm.",
+      "Address the adult child as often as the patient. A good share of the calls are made by somebody else."
+    ],
+    "forbidden": [
+      "offers",
+      "pricing",
+      "patient stories",
+      "emoji",
+      "exclamation marks",
+      "before-and-after claims"
+    ],
+    "audience": "Westchester and southern Putnam, skews older and affluent, often arrives via an adult child"
+  },
+  "differentiators": [
+    "Two offices, Harrison and Somers, with genuinely different hours; Harrison covers the Thursday that Somers does not.",
+    "Tinnitus certification: Dr. Ratner and Dr. Savin both hold the American Board of Audiology tinnitus certificate.",
+    "Dr. Ratner is a former musician and fits musician's plugs and musician-focused fittings.",
+    "Dr. Dold is proficient in American Sign Language.",
+    "Real-ear verified fittings rather than manufacturer first-fit.",
+    "Member of the HearingUp network founded by Dr. Cliff Olson, Au.D."
+  ],
+  "claims_guardrail": [
+    "HSA money does not expire. Only FSA balances are use-it-or-lose-it, and even then some plans allow a carryover or grace period.",
+    "Original Medicare does not cover hearing aids. Part B covers a physician-ordered diagnostic test.",
+    "The Lancet dementia finding is 'among the largest modifiable risk factors', never 'hearing aids prevent dementia'.",
+    "The seven-to-ten year delay figure is survey data, not clinical.",
+    "Review counts come from lib/reviewStats.ts, which reads Google with the hand-verified seeds as a floor. Never type a review count into copy by hand; it goes stale and it has already caused one wrong number to sit on the site for months.",
+    "Do not state a founding year or any 'N years serving Westchester' claim until identity.founded is filled in."
+  ],
+  "entity": {
+    "legal_name": "Audiology Associates of Westchester, LLC",
+    "legal_name_source": "NPI registry listings carried in lib/schema.ts entityCitations (NPI 1801251699).",
+    "same_as_policy": "Every profile must carry the identical practice name, the site URL, and its own office address. The site's LocalBusiness schema carries sameAs pointing at all of them. Spokes link to the site; spokes never link to each other. Do not add press coverage, articles, or individual clinicians' profiles — those are different entities and weaken the signal.",
+    "same_as_source": "lib/schema.ts entityCitations, recovered 2026-08-11 from the JSON-LD on the live Duda homepage."
+  },
+  "tiers": {
+    "1": "Purpose-written, branded imagery, reviewed by Igor before it goes live",
+    "2": "Adapted for a different reader, or a canonical-safe republish",
+    "3": "One line and a link. Entity corroboration, not engagement"
+  },
+  "channels": {
+    "article": {
+      "tier": 1,
+      "status": "active",
+      "family": "owned",
+      "surface": "https://www.audiologyassociates.org",
+      "role": "The hub. Every other channel points here. The only place the full text lives.",
+      "repo_path": "app/ and lib/ (pages are data-driven; see lib/site.ts and lib/serviceAreas.ts)",
+      "deploy": "GitHub then Vercel. Build locally first: node_modules in this repo are macOS binaries, so a Linux shell cannot run next build.",
+      "posting": {
+        "mode": "repo",
+        "api_status": "own repo",
+        "cost": "free"
+      },
+      "scheduling": {
+        "native_scheduler": false,
+        "window": null,
+        "note": "Deploys when merged."
+      }
+    },
+    "gbp": {
+      "tier": 1,
+      "status": "active",
+      "family": "local_discovery",
+      "listings": [
+        "ha",
+        "so"
+      ],
+      "listing_ids": {
+        "ha": {
+          "store_code": "18119015847043262812",
+          "profile": "https://business.google.com/n/14614074996591687368/profile?fid=3999618816709904952",
+          "status": "Verified"
+        },
+        "so": {
+          "store_code": "15036639576050036302",
+          "profile": null,
+          "status": "Verification required"
+        }
+      },
+      "posts_per_month": 8,
+      "variants_per_topic": 2,
+      "cadence_days": 4,
+      "post_time": "9:15 AM",
+      "post_time_zone": "Eastern",
+      "post_time_entry": "Igor's browser is Pacific. 9:15 AM Eastern must be entered as 6:15 AM in the scheduler unless the browser timezone is changed. Check the confirmed time after saving.",
+      "post_type": "What's new",
+      "button": "Call",
+      "image": "1200x1200",
+      "body_chars": [
+        700,
+        900
+      ],
+      "hard_rules": [
+        "No phone number in post body text. Google auto-rejects it silently: the post submits clean, then sits marked Rejected with no reason given. Numbers printed on the image are fine.",
+        "A post that submitted is not a post that was accepted. Re-open the Posts list and read the status after every submission.",
+        "The two listing variants must genuinely differ, not the same paragraphs with the street swapped.",
+        "Only ~200 characters show before Read more. The first sentence is the post.",
+        "Each office has its own phone number. Carrying Harrison's number onto a Somers card is the specific failure this skill guards against.",
+        "The Somers listing currently reads 'Verification required' and cannot appear in the local pack. Posts scheduled to it may not surface until that is resolved."
+      ],
+      "posting": {
+        "mode": "browser",
+        "api_status": "not applied",
+        "cost": "free",
+        "note": "Business Profile API needs approved Basic API Access. Somers is not currently verified, which is likely to block an application covering both listings."
+      },
+      "scheduling": {
+        "native_scheduler": true,
+        "window": "native GBP scheduler",
+        "note": "In use. Call button, 9:15 AM Eastern."
+      }
+    },
+    "facebook": {
+      "tier": 1,
+      "status": "active",
+      "family": "social",
+      "page_url": "https://www.facebook.com/AAofW",
+      "asset_id": null,
+      "asset_id_note": "The numeric Page id was not recorded anywhere in the repo or the skills. Read it from Meta Business Suite and fill it in; do not guess it.",
+      "page_covers": "both offices",
+      "posts_per_month": 8,
+      "post_time": "11:30 AM",
+      "post_time_zone": "Eastern",
+      "post_time_entry": "literal 8:30 in Meta Business Suite. Igor's browser is Pacific and the Planner uses the browser timezone, so 8:30 entered publishes at 11:30 Eastern. This is the opposite of the CHC rule, where the two agree.",
+      "image": "1200x1200",
+      "body_chars": [
+        450,
+        850
+      ],
+      "first_para_max": 300,
+      "link_required": true,
+      "similarity_max_vs_gbp": 0.2,
+      "hard_rules": [
+        "One Page covers both offices. A topic makes one post, not two.",
+        "The link is the call to action. There is no Call button on Facebook, so every post carries an https link to the matching article.",
+        "Similarity against BOTH Google office variants must stay at or below 0.20.",
+        "The similarity check must match on office keys 'ha' and 'so'. A check written against another practice's keys matches nothing and reports clean."
+      ],
+      "posting": {
+        "mode": "browser",
+        "api_status": "free, app review",
+        "cost": "free"
+      },
+      "scheduling": {
+        "native_scheduler": true,
+        "window": "Meta Business Suite Planner"
+      }
+    },
+    "instagram": {
+      "tier": 1,
+      "status": "active",
+      "family": "social",
+      "account": null,
+      "account_note": "Handle not recorded in the repo or the skill. Read it from the profile and fill it in.",
+      "format": "product cards, one per hearing aid in the range",
+      "image": "1200x1200",
+      "known_issues": [
+        "The link in bio is not set, and the posts published so far lead nowhere. Fix this before scheduling more; a product card with no route to the product page is wasted work."
+      ],
+      "bottleneck": "Captions, not rendering. The build reports which slugs still need a caption.",
+      "posting": {
+        "mode": "browser",
+        "api_status": "needs business account link",
+        "cost": "free"
+      },
+      "scheduling": {
+        "native_scheduler": true,
+        "window": "Meta Business Suite Planner"
+      }
+    },
+    "linkedin": {
+      "tier": 2,
+      "status": "needs_setup",
+      "family": "social",
+      "note": "No account details recorded. Tier 2 is a different cut for a different reader, never a copy of the article."
+    },
+    "medium": {
+      "tier": 2,
+      "status": "needs_setup",
+      "family": "syndication",
+      "note": "Medium's import tool sets a canonical. Never republish without one."
+    },
+    "substack": {
+      "tier": 2,
+      "status": "needs_setup",
+      "family": "syndication",
+      "note": "Cannot set a canonical, so this gets a different cut rather than a copy."
+    },
+    "x": {
+      "tier": 3,
+      "status": "needs_setup",
+      "family": "microblog"
+    },
+    "threads": {
+      "tier": 3,
+      "status": "needs_setup",
+      "family": "microblog"
+    },
+    "bluesky": {
+      "tier": 3,
+      "status": "needs_setup",
+      "family": "microblog"
+    },
+    "tumblr": {
+      "tier": 3,
+      "status": "needs_setup",
+      "family": "microblog"
+    }
+  }
+}

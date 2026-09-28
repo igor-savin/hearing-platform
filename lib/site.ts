@@ -721,6 +721,10 @@ function cityAreaFaqs(page: SitePage) {
   const office = officeForAreaCityPath(page.path);
   const county = countyForCity(city);
   const flavor = localFlavorForCity(city);
+  // A town that has had its FAQs written by hand uses them. The generated set
+  // below substitutes the town name into shared templates, which reads as
+  // scaled content once a crawler sees twenty of them side by side.
+  if (flavor?.faqs?.length) return flavor.faqs;
   const localEnvironment = flavor?.listeningEnvironments[0];
   const secondEnvironment = flavor?.listeningEnvironments[1];
   const servicesText = listText(city.patientNeeds);

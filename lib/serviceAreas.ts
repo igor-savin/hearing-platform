@@ -42,6 +42,14 @@ export type AreaCityLocalFlavor = {
     title: string;
     body: string;
   }>;
+  // Hand-written, town-specific Q&A. When present these replace the
+  // generated set in lib/site.ts cityAreaFaqs(). The generated questions are
+  // built from templates with the town name substituted in, which is the
+  // doorway-content failure mode the California site was rebuilt to avoid:
+  // there, every city page carries its own written FAQs. Towns without this
+  // field keep the generated set, which is still better than nothing.
+  faqs?: { question: string; answer: string }[];
+
   // Kept required only because components/PageRenderer.tsx renders
   // flavor.hearingPriorities unguarded. Towns whose priorities would just
   // restate the listening environments above carry a short list instead of a
@@ -728,43 +736,76 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
   mamaroneck: {
     heading: "Hearing Solutions for Mamaroneck Harbor, the Sound Shore, and Village Life",
     intro:
-      "Ask a Mamaroneck patient where hearing is hardest and the answer is usually one specific table at one specific restaurant on Mamaroneck Avenue. That is more useful than an audiogram on its own. The audiologist writes the room down and checks the fitting against it.",
+      "Ask a Mamaroneck patient where hearing is hardest and the answer is usually one specific table at one specific restaurant on Mamaroneck Avenue. That is more useful than an audiogram on its own. The audiologist writes the room down and checks the fitting against it. Worth knowing before you call: the same avenue runs north into Harrison, and the office is at number 550, so for most of the village it is the nearer of the two.",
     listeningEnvironments: [
       {
         title: "Village restaurants",
         body:
-          "Background music and close tables turn one conversation into four. A hearing aid program set for this room is a different setting from the one you wear at home, and switching between them should be automatic."
+          "Background music and close tables turn one conversation into four. A hearing aid program set for this room is a different setting from the one you wear at home, and switching between them should be automatic. Name the restaurant at the fitting, so the program is built against a room you actually sit in rather than against a category."
       },
       {
         title: "Boats, docks, and salt air",
         body:
-          "Harbor Island in July is wind, engines, and humidity. Ask about moisture-resistant models and drying routines at the consultation instead of after the first failure."
+          "Harbor Island in July is wind, engines, and humidity. Ask about moisture-resistant models and drying routines at the consultation instead of after the first failure. Salt air works on receivers and microphones from the inside, and moisture is one of the most common reasons a hearing aid stops working. It is manageable rather than disqualifying, but it should shape which model gets recommended."
       },
       {
         title: "The train and the car",
         body:
-          "Announcements and car conversation share one problem, which is that the talker is never facing you."
+          "Announcements and car conversation share one problem, which is that the talker is never facing you. Platform announcements on the New Haven Line are compressed and said once, and the thruway lays a constant low band of noise across the south of the village. Neither stops you hearing outright, which is why people discount them, and both make listening tiring by the end of the day."
+      },
+      {
+        title: "The Emelin, and anywhere you sit still and listen",
+        body:
+          "A seated auditorium is a different problem from a restaurant and often has a different solution. Many venues run an assistive listening system that sends sound to a receiver at the door or, if your hearing aids have a telecoil, straight to your ears. Ask what the venue offers and whether your aids can use it. That is the difference between following a performance and reconstructing it on the drive home."
       }
     ],
     hearingPriorities: [
       "restaurant and group conversation clarity",
-      "moisture care for devices used near the harbor"
+      "moisture care for devices used near the harbor",
+      "custom ear protection for time on the water"
+    ],
+    faqs: [
+      {
+        question: "Is the Harrison office really on Mamaroneck Avenue?",
+        answer:
+          "Yes, at 550 Mamaroneck Avenue, Suite 407, a few minutes north of the village end of the same road. For most Mamaroneck patients it is the nearer of the practice's two offices. It books weekdays from 8:30 to 5:00 on (914) 949-0034."
+      },
+      {
+        question: "Does living near the water shorten the life of hearing aids?",
+        answer:
+          "It can. Salt air and humidity are hard on receivers and microphones, and moisture is one of the most common reasons a device stops working. A drying kit, a consistent storage habit, and regular cleaning at the office handle most of it. Say where you keep them at the fitting, because it affects which model is worth recommending."
+      },
+      {
+        question: "Can I get earplugs made for swimming or boating?",
+        answer:
+          "Yes. They are taken from an impression of your own ear so they seal instead of working loose, and they are a different product from musician or shooting filters. If you spend the summer on the water, mention it when you book and the impression can be taken at the same appointment."
+      }
     ]
   },
   larchmont: {
     heading: "Hearing Care for Larchmont Harbor, Manor Park, and Village Conversations",
     intro:
-      "Larchmont hearing complaints tend to be quiet ones. A voice on a walk by the water that keeps getting lost in the wind. A grandchild's voice, which sits high and soft, right where age-related hearing loss usually starts. Both ends of that range get tested.",
+      "Larchmont hearing complaints tend to be quiet ones. A voice on a walk by the water that keeps getting lost in the wind. A grandchild's voice, which sits high and soft, right where age-related hearing loss usually starts. Both ends of that range get tested. Come with two or three specific moments rather than a general sense that things have got harder, because the audiogram measures the ear and the fitting gets built against the rooms you name.",
     listeningEnvironments: [
       {
         title: "Soft, high voices",
         body:
-          "Children's voices and consonants like s, f, and th live in the high frequencies, which is where age-related hearing loss starts. Losing them feels like people are mumbling rather than like the world got quiet. That distinction is what the audiogram is for."
+          "Children's voices and consonants like s, f, and th live in the high frequencies, which is where age-related hearing loss starts. Losing them feels like people are mumbling rather than like the world got quiet. That distinction is what the audiogram is for. It is also why people arrive convinced their own hearing is fine and the problem is everyone else's diction."
       },
       {
         title: "Wind on the walks by the water",
         body:
-          "Wind across a microphone is a roar. Models differ enormously in how well they suppress it, and that difference is worth asking about directly."
+          "Wind across a microphone is a roar. Models differ enormously in how well they suppress it, and that difference is worth asking about directly. If a walk along the shore is part of most days, treat wind handling as a feature you are choosing for rather than one you find out you lack."
+      },
+      {
+        title: "Palmer Avenue and the village rooms",
+        body:
+          "A short row of shops and restaurants means hard surfaces and short distances, which sounds like it should be easy and is not. Close tables put three conversations inside the same few feet. Name the room at the fitting and the program is built against that room rather than against a category."
+      },
+      {
+        title: "Salt air, and the drawer",
+        body:
+          "Larchmont sits on the Sound, and humidity is one of the most common reasons a hearing aid stops working, so a drying routine matters more here than it does inland. The other common reason is simpler. A device that never quite got comfortable ends up in a drawer. Say so early, because the follow-up visit exists to fix exactly that."
       }
     ],
     hearingPriorities: [
@@ -772,27 +813,44 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "wind handling for waterfront walks",
       "cafe and family conversation settings",
       "cleaning and maintenance for humidity exposure"
+    ],
+    faqs: [
+      {
+        question: "Which office do Larchmont patients use?",
+        answer:
+          "Harrison, at 550 Mamaroneck Avenue, Suite 407. It is a short drive up through Mamaroneck and it is the nearer of the practice's two offices. Appointments run weekdays from 8:30 to 5:00 on (914) 949-0034."
+      },
+      {
+        question: "My grandchildren sound like they are mumbling. Is that a hearing problem?",
+        answer:
+          "Often, yes, and it is a specific one. Children's voices and the consonants that carry meaning sit in the high frequencies, which is where age-related loss begins. The result is speech you can hear but cannot resolve. A diagnostic test shows whether that is what is happening rather than leaving it a matter of opinion at the dinner table."
+      },
+      {
+        question: "Do I leave the first appointment with hearing aids?",
+        answer:
+          "No, and you should be wary of anywhere that says otherwise. The first visit is diagnostic: history, otoscopy, air and bone thresholds, and speech testing, with the results explained to you the same day. Whether hearing aids are the right answer is a conversation that happens after there is something to look at."
+      }
     ]
   },
   "port-chester": {
     heading: "Hearing Care for Port Chester's Restaurants, Music Venues, and Border-Area Commutes",
     intro:
-      "Port Chester is loud in a way the rest of the Sound Shore is not. The Capitol Theatre puts amplified music into the middle of the village, and the restaurants around it run full rooms and hard surfaces. A good half of the hearing conversations here are about protecting what you have rather than amplifying it.",
+      "Port Chester is loud in a way the rest of the Sound Shore is not. The Capitol Theatre puts amplified music into the middle of the village, and the restaurants around it run full rooms and hard surfaces. A good half of the hearing conversations here are about protecting what you have rather than amplifying it. That is a better conversation to have at forty than at seventy.",
     listeningEnvironments: [
       {
         title: "Restaurant rooms and street noise",
         body:
-          "A busy dining room defeats more hearing aids than any other everyday setting. Speech-in-noise testing at the evaluation predicts how you will actually do there, which a tone test cannot."
+          "A busy dining room defeats more hearing aids than any other everyday setting. Speech-in-noise testing at the evaluation predicts how you will actually do there, which a tone test cannot. Ask for that result in plain words rather than as a score, because what you want to know is whether the room will be manageable."
       },
       {
         title: "Live music and the ringing that follows it",
         body:
-          "Ringing or muffled hearing the morning after a show is a warning, not a souvenir. Custom musician's plugs lower the whole level evenly so the music still sounds like music. If you work the room rather than visit it, get the impression taken this month."
+          "Ringing or muffled hearing the morning after a show is a warning, not a souvenir. Custom musician's plugs lower the whole level evenly so the music still sounds like music, which is why they get worn and foam ends up in a pocket. If you work the room rather than visit it, get the impression taken this month."
       },
       {
         title: "I-95 and the New Haven Line",
         body:
-          "Traffic and platform noise are constant and low, and adaptive settings cut the fatigue they cause more than they improve the words."
+          "Traffic and platform noise are constant and low, and adaptive settings cut the fatigue they cause more than they improve the words. That tiredness is a real symptom rather than something to absorb, and it is worth raising at the appointment."
       },
       {
         title: "Two languages in one conversation",
@@ -805,22 +863,49 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "speech-in-noise testing before a hearing aid decision",
       "tinnitus appointments after loud exposure",
       "repair and cleaning for devices worn in dusty, loud work"
+    ],
+    faqs: [
+      {
+        question: "I work shows at the Capitol Theatre. What protection do I actually need?",
+        answer:
+          "Custom musician's plugs rather than foam. They are molded from an impression of your own ear and use a filter that drops the whole level evenly, so the mix still sounds like the mix and you can still talk to the person next to you. Foam muffles the top end, which is why people take it out halfway through a set. Dr. Ratner is a former musician and fits these regularly."
+      },
+      {
+        question: "My ears ring the morning after a loud night. Is that damage?",
+        answer:
+          "It is a signal that the exposure was enough to matter. Ringing and muffled hearing often settle within a day, but repeated episodes are associated with permanent change, and the ones that do not settle need looking at sooner rather than later. If it is happening regularly, book a hearing test and get protection made."
+      },
+      {
+        question: "Does hearing loss make a second language harder to follow?",
+        answer:
+          "Yes, noticeably. Understanding speech in a language you learned later relies more on catching every sound, because you have less practice filling in gaps from context. The same degree of hearing loss therefore costs you more in that language than in your first. Mention which languages you use day to day when you book, because it affects what gets tested and how the fitting is checked."
+      }
     ]
   },
   "rye-brook": {
     heading: "Hearing Support for Rye Brook Families, Parks, and Nearby Office Corridors",
     intro:
-      "Nobody in Rye Brook books a hearing test because of a road. They book it after a table of ten at a holiday dinner, or because somebody else finally said something out loud. That is the normal way this starts, and it is a reasonable reason to call.",
+      "Nobody in Rye Brook books a hearing test because of a road. They book it after a table of ten at a holiday dinner, or because somebody else finally said something out loud. That is the normal way this starts, and it is a reasonable reason to call. It is also worth bringing the person who said it.",
     listeningEnvironments: [
       {
         title: "Big tables and family gatherings",
         body:
-          "Group conversation is where hearing loss shows first, because you cannot ask ten people to repeat themselves. Bring the family member who noticed. Their account of what you miss is usually more accurate than yours."
+          "Group conversation is where hearing loss shows first, because you cannot ask ten people to repeat themselves. Bring the family member who noticed. Their account of what you miss is usually more accurate than yours, and the audiologist will ask them directly."
       },
       {
         title: "Meetings, calls, and headsets",
         body:
-          "Conference audio is compressed and often bad to begin with. Hearing aids that stream the call directly cut out the room entirely, and the audiologist will pair them with your phone in the office rather than leaving you to the manual."
+          "Conference audio is compressed and often bad to begin with. Hearing aids that stream the call directly cut out the room entirely, and the audiologist will pair them with your phone in the office rather than leaving you to the manual. Bring the phone and laptop you actually use."
+      },
+      {
+        title: "The airport a few minutes north",
+        body:
+          "Westchester County Airport sits just up the road, and people who live under the pattern stop registering it within a year of moving in. Not noticing noise is not the same as not being exposed to it. A baseline test gives you a number, and every later test is read against that number rather than against an assumption."
+      },
+      {
+        title: "The follow-up, which is where fittings get fixed",
+        body:
+          "Nobody walks out of a first fitting with it right. The settings are a starting point, checked against your own rooms once you have lived in them for a week or two. The visit where you say what is still wrong is the one that does most of the work, so book it rather than deciding to see how it goes."
       }
     ],
     hearingPriorities: [
@@ -829,6 +914,23 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "phone and Bluetooth pairing done in the office",
       "custom hearing protection",
       "repairs without a long drive"
+    ],
+    faqs: [
+      {
+        question: "My family says I have a hearing problem and I do not think I do. Who is right?",
+        answer:
+          "That disagreement is common and a test settles it in an afternoon. People with early high-frequency loss genuinely do hear speech; what they lose is the clarity that separates similar words, so it feels like everyone else has started mumbling. Bring whoever raised it. Their description of when you miss things is part of the assessment."
+      },
+      {
+        question: "How far is the Harrison office from Rye Brook?",
+        answer:
+          "A few minutes down through Port Chester or Rye, and it is the closer of the practice's two offices. Harrison books weekdays from 8:30 to 5:00 on (914) 949-0034. Somers, the northern office, is a considerably longer drive and is rarely the easier choice from here."
+      },
+      {
+        question: "Will hearing aids help with conference calls?",
+        answer:
+          "Usually more than they help in a restaurant. A call streamed straight into both hearing aids skips the room, so air conditioning and keyboard noise stop competing with the talker. The pairing is worth setting up and testing in the office with your own devices rather than at your desk on a Monday morning."
+      }
     ]
   },
   purchase: {
@@ -839,44 +941,67 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       {
         title: "Lecture halls and performance spaces",
         body:
-          "Distance and reverberation beat hearing aids more reliably than noise does. A microphone on the speaker is the fix. Programming alone will not get you there."
+          "Distance and reverberation beat hearing aids more reliably than noise does. A microphone on the speaker is the fix. Programming alone will not get you there, and no amount of paying more for a device changes the physics of sitting twelve rows back."
       },
       {
         title: "Conference rooms and video calls",
         body:
-          "Hybrid meetings mix a bad room microphone with a compressed connection. Streaming the call straight into both ears removes the room from the equation."
+          "Hybrid meetings mix a bad room microphone with a compressed connection. Streaming the call straight into both ears removes the room from the equation. Bring the hardware you actually work on so the pairing is tested here rather than discovered to be awkward later."
       },
       {
         title: "The drive on I-684 and I-287",
         body:
-          "Road noise makes listening tiring even when you follow every word, and that fatigue is worth raising at the appointment."
+          "Road noise makes listening tiring even when you follow every word, and that fatigue is worth raising at the appointment. A passenger facing forward at speed is one of the harder everyday listening tasks there is, and a remote microphone solves it more completely than any program change."
+      },
+      {
+        title: "Open floors and the end of the day",
+        body:
+          "Open-plan offices run a low continuous background that never quite stops, and the cost usually shows up as tiredness rather than as missed words. If you arrive home with nothing left for conversation, say so at the appointment. That is a symptom of effortful listening, not a personality trait."
       }
     ],
     hearingPriorities: [
       "remote microphones for lectures and meetings",
       "Bluetooth and computer audio set up in the office",
-      "custom hearing protection for performance and rehearsal spaces"
+      "custom hearing protection for performance and rehearsal spaces",
+      "tinnitus appointments"
+    ],
+    faqs: [
+      {
+        question: "Is the Harrison office far from Purchase?",
+        answer:
+          "No. Purchase sits inside the Town of Harrison, and the office at 550 Mamaroneck Avenue, Suite 407 is the one Purchase patients are booked into. It runs weekdays from 8:30 to 5:00 on (914) 949-0034."
+      },
+      {
+        question: "I struggle in lecture halls. Will better hearing aids fix that?",
+        answer:
+          "Usually not on their own. Past a few feet, a hearing aid microphone collects as much room as it does speaker, and reverberation does the rest. The reliable fix is a remote microphone worn by or placed near the person talking, which sends their voice straight to your ears. Ask to try one before spending money on a device upgrade that will not address the distance."
+      },
+      {
+        question: "Can hearing aids connect to a laptop for video calls?",
+        answer:
+          "Most current models can, either directly or through a small transmitter, and it makes a larger difference than people expect. Bring the laptop and phone you use for work to the appointment. Getting it paired and tested in the office is the difference between a feature you own and one you actually use."
+      }
     ]
   },
   "new-rochelle": {
     heading: "Hearing Care for New Rochelle's Downtown, Waterfront, and Commuter Routes",
     intro:
-      "New Rochelle packs a downtown, a waterfront, and I-95 into a few square miles, and a hearing aid behaves differently in each of them. Closing that gap is what the follow-up appointments are for. It is normal to need more than one.",
+      "New Rochelle packs a downtown, a waterfront, and I-95 into a few square miles, and a hearing aid behaves differently in each of them. Closing that gap is what the follow-up appointments are for. It is normal to need more than one. Come to the first appointment with two or three rooms in mind rather than a general complaint, because those rooms are what the fitting gets built and checked against.",
     listeningEnvironments: [
       {
         title: "Downtown restaurants and bars",
         body:
-          "Hard rooms, close tables, music. This is the setting people judge their hearing aids by, so it belongs in the conversation before you choose them, not after."
+          "Hard rooms, close tables, music. This is the setting people judge their hearing aids by, so it belongs in the conversation before you choose them, not after. Speech-in-noise testing at the evaluation gives an honest forecast of how that room will go, which is better than finding out on a Friday night."
       },
       {
         title: "Loud work and loud nights",
         body:
-          "Construction, kitchens, and live music all leave ringing behind. Custom protection is molded from an ear impression taken in the office, and a tinnitus appointment starts with a hearing test rather than a product."
+          "Construction, kitchens, and live music all leave ringing behind. Custom protection is molded from an ear impression taken in the office, and a tinnitus appointment starts with a hearing test rather than a product. If the ringing outlasts the shift by a day or more, that is the point to book rather than wait it out again."
       },
       {
         title: "The waterfront and the wind",
         body:
-          "Open air near the Sound puts wind straight across the microphones, and models differ enormously in how they handle it."
+          "Open air near the Sound puts wind straight across the microphones, and models differ enormously in how they handle it. If you walk, run, or fish along the water most days, say so at the fitting. Wind management is a feature worth choosing for rather than discovering you lack."
       },
       {
         title: "I-95 and the New Haven Line",
@@ -886,28 +1011,51 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
     ],
     hearingPriorities: [
       "hearing tests for downtown and commuter listening",
-      "follow-up programming after the fitting, more than once if needed"
+      "follow-up programming after the fitting, more than once if needed",
+      "custom hearing protection for loud work"
+    ],
+    faqs: [
+      {
+        question: "Which office do New Rochelle patients use?",
+        answer:
+          "Harrison, at 550 Mamaroneck Avenue, Suite 407. It is a short drive up from New Rochelle and books weekdays from 8:30 to 5:00 on (914) 949-0034. Somers is the practice's other office and sits considerably further north, so it is rarely the easier choice from here."
+      },
+      {
+        question: "How many appointments does getting hearing aids actually take?",
+        answer:
+          "More than one, and that is by design. The evaluation comes first, then the fitting, then at least one follow-up once you have worn them in your own rooms. The follow-up is where most of the real improvement happens, because it is the first visit where you can say what is still not working."
+      },
+      {
+        question: "I am worn out by the end of my commute. Is that related to my hearing?",
+        answer:
+          "It can be. Listening with untreated hearing loss means your brain spends the trip reconstructing what it missed, and that is genuinely tiring. It is worth raising at the appointment as a symptom in its own right rather than as an aside at the end."
+      }
     ]
   },
   hartsdale: {
     heading: "Hearing Solutions for Hartsdale, Central Avenue, and Greenburgh Routines",
     intro:
-      "Central Avenue is where a lot of Hartsdale patients first notice something. A big store, a wide counter, a cashier behind glass and to one side. That is a genuinely hard listening situation, and it is also a fixable one.",
+      "Central Avenue is where a lot of Hartsdale patients first notice something. A big store, a wide counter, a cashier behind glass and to one side. That is a genuinely hard listening situation, and it is also a fixable one. What it is not is a reason to conclude the problem is the shop.",
     listeningEnvironments: [
       {
         title: "Store counters and checkout lines",
         body:
-          "Distance, background music, and a talker who is not facing you. Hearing aids can be set for exactly this, and it is worth naming the shop at the fitting."
+          "Distance, background music, and a talker who is not facing you. Hearing aids can be set for exactly this, and it is worth naming the shop at the fitting. Glass partitions make it worse again, because they reflect the voice away from you before it arrives."
       },
       {
         title: "Power tools and the ringing after",
         body:
-          "Leaf blowers, saws, and shop vacuums all clear the level where protection matters. Custom plugs are molded from an impression in the office. Ringing that hangs around after the tool is off is worth a tinnitus appointment."
+          "Leaf blowers, saws, and shop vacuums all clear the level where protection matters. Custom plugs are molded from an impression in the office. Ringing that hangs around after the tool is off is worth a tinnitus appointment, and repeated episodes matter more than any single loud afternoon."
       },
       {
         title: "The Harlem Line platform",
         body:
-          "Announcements arrive compressed and echoing and are never repeated. Streaming to your phone catches the ones the speakers lose."
+          "Announcements arrive compressed and echoing and are never repeated. Streaming to your phone catches the ones the speakers lose. If you commute daily, that is a feature worth choosing for rather than a nicety."
+      },
+      {
+        title: "Apartment and co-op living",
+        body:
+          "A lot of Hartsdale sits in buildings near the station, which changes two things. Neighbours mean the television volume is not only your business, and a doorbell or intercom you cannot hear is a practical problem rather than a social one. Both are worth naming at the fitting, because there are specific settings and alerting options for them."
       }
     ],
     hearingPriorities: [
@@ -915,6 +1063,23 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "settings for shops, counters, and restaurants",
       "cleaning and repair at the Harrison office",
       "tinnitus appointments"
+    ],
+    faqs: [
+      {
+        question: "Which office do Hartsdale patients use, and how do I get there?",
+        answer:
+          "Harrison, at 550 Mamaroneck Avenue, Suite 407, on (914) 949-0034, weekdays from 8:30 to 5:00. It is a straightforward run east across the county. Bring your current hearing aids and their chargers even if you think they are finished, because some of what looks like device failure is wax in the receiver."
+      },
+      {
+        question: "I keep missing what the cashier says. Is that really hearing loss?",
+        answer:
+          "It is one of the most common first signs, and it is not about volume. Distance, a talker who is not facing you, background music, and often a glass partition remove most of the cues you rely on without noticing. A diagnostic test shows whether the underlying clarity is the problem, which is what decides whether a hearing aid would help there."
+      },
+      {
+        question: "My neighbours can hear my television. What can be done?",
+        answer:
+          "Quite a lot, and it is a common reason people finally book. Turning the set up adds loudness without adding clarity, which is why it stops working. Hearing aids that stream the television audio directly to your ears let you set your own level independently of the room. Say at the appointment that this is the problem you want solved."
+      }
     ]
   },
   "mount-kisco": {
@@ -925,39 +1090,72 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       {
         title: "Medical appointments and caregiver conversations",
         body:
-          "Bring a second person and bring your hearing aids working. If you have missed something important at an appointment before, say so at the hearing test, because it changes what gets prioritised in the fitting."
+          "Bring a second person and bring your hearing aids working. If you have missed something important at an appointment before, say so at the hearing test, because it changes what gets prioritised in the fitting. A consulting room is a small hard space with one quiet talker who is often looking at a screen, which is a harder listening task than it looks."
       },
       {
         title: "Village restaurants and shops",
         body:
-          "A full dining room is the standard test everyone applies to a new hearing aid. Speech-in-noise testing at the evaluation predicts how that will go before you spend anything."
+          "A full dining room is the standard test everyone applies to a new hearing aid. Speech-in-noise testing at the evaluation predicts how that will go before you spend anything, and it gives the audiologist something honest to say about what to expect rather than a promise."
       },
       {
         title: "The Saw Mill and the Harlem Line",
         body:
-          "Road and platform noise are constant and low, and they wear you out rather than block you outright."
+          "Road and platform noise are constant and low, and they wear you out rather than block you outright. The tiredness that comes from a day of effortful listening is a symptom in its own right and belongs in the conversation."
+      },
+      {
+        title: "Arranging it for a parent",
+        body:
+          "A good share of the calls about Mt. Kisco appointments are made by an adult child rather than the patient. That is fine, and it works better when the person who booked it comes along. Book Monday or Tuesday, when the Somers office runs a full day, and bring any hearing aids they already own even if nobody has worn them for a year."
       }
     ],
     hearingPriorities: [
       "hearing tests at the Somers office",
       "hearing aid repairs and cleanings without driving south",
-      "tinnitus appointments for quiet evenings"
+      "tinnitus appointments for quiet evenings",
+      "appointments arranged by a family member"
+    ],
+    faqs: [
+      {
+        question: "Which office is nearer to Mt. Kisco, and when is it open?",
+        answer:
+          "Somers, at 325 NY 100. It runs Monday through Wednesday and Friday morning, is closed Thursday, and closes at 2:30 on Friday, on (914) 556-6720. Harrison is open five weekdays if the only slot you have is a Thursday."
+      },
+      {
+        question: "I am booking this for my mother. What should I do to make it useful?",
+        answer:
+          "Come with her, book Monday or Tuesday when Somers runs a full day, and bring any hearing aids she already owns along with their chargers. Write down two or three situations where she misses things, because the fitting gets built against real rooms. If she has missed instructions at a medical appointment, say so; it changes what the audiologist prioritises."
+      },
+      {
+        question: "I missed what my doctor told me. Is that worth mentioning at a hearing test?",
+        answer:
+          "Yes, and it is one of the more useful things you can say. A consulting room is small and hard-surfaced, the talker is often quiet and looking away, and the words carry more weight than usual. Naming that as the situation you want to fix changes which settings get built and checked first."
+      }
     ]
   },
   "yorktown-heights": {
     heading: "Hearing Solutions for Yorktown Heights, Taconic Travel, and Outdoor Living",
     intro:
-      "Two things bring Yorktown Heights patients down to Somers. Conversation in the car, where the talker faces forward and the road covers the consonants. And the tools, none of which anyone wears protection for. Both have straightforward answers.",
+      "Two things bring Yorktown Heights patients down to Somers. Conversation in the car, where the talker faces forward and the road covers the consonants. And the tools, none of which anyone wears protection for. Both have straightforward answers, and neither requires buying the most expensive device in the cabinet.",
     listeningEnvironments: [
       {
         title: "Car conversation on the Taconic",
         body:
-          "The passenger faces away, the road noise sits right on top of speech, and you cannot lip-read while driving. A remote microphone on the passenger fixes this better than any program change does."
+          "The passenger faces away, the road noise sits right on top of speech, and you cannot lip-read while driving. A remote microphone on the passenger fixes this better than any program change does. It is a small clip-on device, and it is the single most underused accessory in hearing care."
       },
       {
         title: "Chainsaws, mowers, and the ringing after",
         body:
           "A gas mower runs near 90 decibels and a chainsaw well past that. Custom plugs are made from an impression taken in the office and they let a shout through, which is why they get worn and foam does not. Ringing that outlasts the job is worth a tinnitus appointment."
+      },
+      {
+        title: "Spread-out errands and a long drive to anywhere",
+        body:
+          "Yorktown is not walkable in the way a village centre is, so more of the day happens in the car and on the phone. Hearing aids that take a call straight into both ears turn the hardest of those conversations into one of the easiest, and it is worth setting the pairing up in the office."
+      },
+      {
+        title: "Quiet evenings and the ringing that fills them",
+        body:
+          "Northern Westchester goes properly quiet after dark, and quiet is when tinnitus is loudest, because there is nothing left to mask it. The hearing test comes first: it shows whether hearing loss is feeding the ringing, which changes what is worth trying."
       }
     ],
     hearingPriorities: [
@@ -966,6 +1164,23 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "custom protection for tools and yard work",
       "tinnitus appointments",
       "repairs and cleanings in northern Westchester"
+    ],
+    faqs: [
+      {
+        question: "What are the Somers office hours, and where is it?",
+        answer:
+          "325 NY 100, on (914) 556-6720. Monday through Wednesday all day, Friday until 2:30, closed Thursday. Repairs and cleanings are shorter visits than fittings, so say which one you need when you call and the slot can be sized to match."
+      },
+      {
+        question: "I cannot hear my wife in the car. Is that a hearing aid problem?",
+        answer:
+          "It is a geometry problem that hearing aids alone handle badly. She is facing forward, the road noise sits in the same frequency range as speech, and you cannot use her face to fill the gaps. A remote microphone clipped to her collar sends her voice straight to your ears and skips the car entirely. Ask to try one at the appointment."
+      },
+      {
+        question: "Do I really need custom earplugs for mowing the lawn?",
+        answer:
+          "For an hour behind a gas mower, yes, it is worth it. The level is high enough to matter and the exposure repeats every week through the summer. Custom plugs are molded from an impression of your ear and use a filter that still lets a shout or an engine change through, which is precisely why people keep them in and take foam out."
+      }
     ]
   },
   katonah: {
@@ -976,23 +1191,45 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       {
         title: "Quiet houses and tinnitus at night",
         body:
-          "The quieter the room, the louder the ringing, because there is nothing left to mask it. The hearing test comes first: it tells the audiologist whether hearing loss is feeding the tinnitus, which changes what is worth trying."
+          "The quieter the room, the louder the ringing, because there is nothing left to mask it. The hearing test comes first: it tells the audiologist whether hearing loss is feeding the tinnitus, which changes what is worth trying. Anyone who offers a cure before testing is selling something."
       },
       {
         title: "Concerts and rehearsals",
         body:
-          "Custom musician's plugs drop the level evenly instead of muffling the top end, so a string quartet still sounds like a string quartet. They are molded from an impression taken in the office. Dr. Ratner is a former musician and works with musicians' hearing needs."
+          "Custom musician's plugs drop the level evenly instead of muffling the top end, so a string quartet still sounds like a string quartet. They are molded from an impression taken in the office. Dr. Ratner is a former musician and works with musicians' hearing needs, which is worth asking about if Caramoor is on your calendar."
+      },
+      {
+        title: "Outdoor summer concerts and the lawn",
+        body:
+          "Sitting out on a lawn is a different listening problem from sitting in a hall. There are no walls to reflect sound toward you, so distance takes the top off speech and music alike, and wind adds a roar straight across the microphones. Wind handling varies a lot between models and is worth comparing before you commit."
       },
       {
         title: "The village and the train",
         body:
-          "Small shops with hard surfaces and a platform announcement you cannot ask to have repeated. Modest problems, ordinary fixes."
+          "Small shops with hard surfaces and a platform announcement you cannot ask to have repeated. Modest problems, ordinary fixes, and worth naming at the fitting anyway, because a program built against a room you actually use beats one built against a category."
       }
     ],
     hearingPriorities: [
       "tinnitus appointments with a certified clinician",
       "musician's plugs and custom protection",
       "hearing tests and follow-up at the Somers office"
+    ],
+    faqs: [
+      {
+        question: "My ears ring most at night. What happens at a tinnitus appointment?",
+        answer:
+          "It starts with a diagnostic hearing test, because hearing loss is often what is driving the ringing and that changes the plan. From there the conversation covers what makes it worse, what masks it, and which of sound therapy, hearing aids with a tinnitus program, or a referral is the sensible next step. Dr. Ratner and Dr. Savin both hold tinnitus certification."
+      },
+      {
+        question: "I play in an ensemble. Will earplugs ruin the sound?",
+        answer:
+          "Not the custom ones. Musician's plugs use a filter that lowers every frequency by roughly the same amount, so the balance you rely on stays intact and the music simply gets quieter. Foam does not do that, which is why it sounds dull and ends up out of the ear by the second half. The impression is taken in the office."
+      },
+      {
+        question: "Which office should Katonah patients book?",
+        answer:
+          "Somers, at 325 NY 100, on (914) 556-6720. It runs Monday through Wednesday and Friday morning and is closed Thursday. It is the nearer of the two offices for Katonah and Bedford by a comfortable margin."
+      }
     ]
   },
   bedford: {
@@ -1003,12 +1240,22 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       {
         title: "Meetings, dinners, and soft voices",
         body:
-          "Group rooms with a hard floor and a soft speaker are the hardest ordinary listening there is. Speech-in-noise testing measures it directly. Ask for that result in plain words rather than a number on a chart."
+          "Group rooms with a hard floor and a soft speaker are the hardest ordinary listening there is. Speech-in-noise testing measures it directly. Ask for that result in plain words rather than a number on a chart, because the useful answer is whether the room will be manageable and what would make it better."
       },
       {
         title: "Outdoors, at a distance",
         body:
-          "Wind and distance take the top of speech off before it reaches you. Hearing aids have limits outdoors that nobody selling them enjoys mentioning, and knowing them ahead of time saves a disappointing first week."
+          "Wind and distance take the top of speech off before it reaches you. Hearing aids have limits outdoors that nobody selling them enjoys mentioning, and knowing them ahead of time saves a disappointing first week. If most of your conversation happens on a trail or across a paddock, say so before the fitting rather than after."
+      },
+      {
+        title: "Barns, tractors, and machinery",
+        body:
+          "Equipment that runs for an hour at a time sits above the level where protection matters, and the exposure repeats all season. Custom plugs are molded from an impression taken in the office and still let a shout or an engine note through, which is why they stay in. Ringing that outlasts the work belongs in a tinnitus appointment."
+      },
+      {
+        title: "Large rooms and old houses",
+        body:
+          "High ceilings and hard floors make a room reverberant, and reverberation smears speech in a way that raising the volume cannot repair. It is why a dinner in a handsome room can be harder than one in a plain one. A microphone placed near the person talking does more than any setting will."
       }
     ],
     hearingPriorities: [
@@ -1016,6 +1263,23 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "hearing aid settings for meetings and dinners",
       "custom hearing protection",
       "tinnitus appointments at the Somers office"
+    ],
+    faqs: [
+      {
+        question: "Which office do Bedford patients use?",
+        answer:
+          "Somers, at 325 NY 100, on (914) 556-6720. It takes appointments Monday through Wednesday and on Friday morning and is closed Thursdays. Harrison, on (914) 949-0034, is open five weekdays if the only day your week leaves you is a Thursday."
+      },
+      {
+        question: "I have read a lot about hearing aids. What does a test actually add?",
+        answer:
+          "It tells you which frequencies you have lost and how well you separate speech from noise, and those two results decide almost everything that follows. Most of what is written about hearing aids is about features. What determines whether a given device helps you is your own audiogram and your speech-in-noise score. Bring your notes and they will be gone through against the results."
+      },
+      {
+        question: "Will hearing aids work outdoors and at a distance?",
+        answer:
+          "Less well than indoors, and it is better to know that beforehand. Microphones are a few millimetres across and sit at your ear, so past a certain distance they collect wind and space rather than voice. Wind handling differs a lot between models. For conversation that regularly happens at a distance, a remote microphone is the honest answer rather than a more expensive hearing aid."
+      }
     ]
   },
   chappaqua: {
@@ -1026,44 +1290,95 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       {
         title: "Auditoriums, gyms, and distance",
         body:
-          "Beyond a few feet a hearing aid microphone picks up as much room as it does talker, which is what a microphone on the speaker fixes."
+          "Beyond a few feet a hearing aid microphone picks up as much room as it does talker, which is what a microphone on the speaker fixes. A gym is the worst case: hard floor, high ceiling, and a public address system that was installed for volume rather than clarity."
       },
       {
         title: "The house, once it has gone quiet",
         body:
-          "Wooded neighborhoods are quiet at night, and quiet is when tinnitus takes over. A hearing test comes first, because hearing loss is often what is driving it."
+          "Wooded neighborhoods are quiet at night, and quiet is when tinnitus takes over. A hearing test comes first, because hearing loss is often what is driving it. Ringing that is inaudible on the parkway in the morning can be the only thing in the room at eleven."
+      },
+      {
+        title: "Performances and talks at Chappaqua Crossing",
+        body:
+          "A seated venue is a different problem from a restaurant and often has a different solution. Many run an assistive listening system that sends sound to a receiver at the door or, if your hearing aids carry a telecoil, straight to your ears. Ask the venue what it offers and ask the audiologist whether your devices can use it."
+      },
+      {
+        title: "The commute, and calls from a moving train",
+        body:
+          "Station announcements are compressed and said once. A phone call on a train adds engine noise to a connection that is already thin. Streaming the call into both hearing aids removes the carriage from the equation, which is the version of that conversation people find least embarrassing."
       }
     ],
     hearingPriorities: [
       "remote microphones for school and community events",
       "diagnostic testing and follow-up programming",
-      "tinnitus appointments"
+      "tinnitus appointments",
+      "hearing tests at whichever office fits the week"
+    ],
+    faqs: [
+      {
+        question: "Which of the two offices should I book?",
+        answer:
+          "Chappaqua sits between them, so the deciding factor is usually your calendar rather than the map. Somers, on (914) 556-6720, runs Monday through Wednesday and Friday morning and is closed Thursday. Harrison, on (914) 949-0034, is open all five weekdays. Say which you want when you call."
+      },
+      {
+        question: "I cannot follow anything at school events. Would better hearing aids help?",
+        answer:
+          "Usually not as much as you would hope, because the problem is distance and reverberation rather than volume. Past a few feet the microphone at your ear collects the room along with the speaker. The reliable fix is a remote microphone near the person talking. Ask to try one before spending on a device upgrade that will not change the physics."
+      },
+      {
+        question: "The ringing is worst when the house is silent. Is that normal?",
+        answer:
+          "It is the usual pattern. Tinnitus is not louder at night; there is simply less around to mask it, and a quiet wooded street offers very little. The evaluation starts with a hearing test because hearing loss frequently drives the ringing, and treating the loss often reduces it. Mention it when you book so enough time is set aside."
+      }
     ]
   },
   armonk: {
     heading: "Hearing Solutions for Armonk's Town Center, Office Corridors, and I-684 Travel",
     intro:
-      "Armonk hearing trouble shows up at work first. A conference room, a speakerphone, a colleague who talks toward the window. People compensate for years, and the compensating is what makes the day tiring. A diagnostic test separates hearing loss from everything else people blame it on.",
+      "Armonk hearing trouble shows up at work first. A conference room, a speakerphone, a colleague who talks toward the window. People compensate for years, and the compensating is what makes the day tiring. A diagnostic test separates hearing loss from everything else people blame it on. Describe the room before anyone talks about devices, because that is the part of the appointment that decides the most.",
     listeningEnvironments: [
       {
         title: "Conference rooms and speakerphones",
         body:
-          "Table microphones flatten everyone to the same level, including the air conditioning. Streaming the call into both hearing aids skips the room, and the audiologist sets that up in the office."
+          "Table microphones flatten everyone to the same level, including the air conditioning. Streaming the call into both hearing aids skips the room, and the audiologist sets that up in the office. Bring the phone and the laptop you actually work on, because the pairing is worth testing here rather than at your desk on a Monday."
       },
       {
         title: "Loud recreation and the ringing after",
         body:
-          "Motorcycles, range time, and power tools all sit above the level where protection matters. Custom plugs are molded from an impression taken in the office, and ringing that outlasts the exposure is worth a tinnitus appointment."
+          "Motorcycles, range time, and power tools all sit above the level where protection matters. Custom plugs are molded from an impression taken in the office, and ringing that outlasts the exposure is worth a tinnitus appointment. Each use takes a different filter, so say what you are protecting against rather than asking for plugs in general."
       },
       {
         title: "Restaurants in the town center",
         body:
-          "Small rooms, full tables, one program that needs to handle it. Name the restaurant at the fitting."
+          "Small rooms, full tables, one program that needs to handle it. Name the restaurant at the fitting. A short downtown means hard surfaces and tables close together, and it is usually the room where somebody first says out loud that they are missing things."
+      },
+      {
+        title: "The house once everyone has gone home",
+        body:
+          "Armonk is quiet at night, and quiet is when ringing gets loud. Tinnitus that is inaudible on I-684 in the morning can be the only thing in the room at eleven. Raise it when you book rather than at the end of the appointment, so there is time set aside to do something about it."
       }
     ],
     hearingPriorities: [
       "meeting and speakerphone clarity",
-      "hearing tests and follow-up at the Harrison office"
+      "hearing tests and follow-up at the Harrison office",
+      "custom hearing protection and tinnitus appointments"
+    ],
+    faqs: [
+      {
+        question: "How far is the Harrison office from Armonk?",
+        answer:
+          "It is a short run south down I-684 and then across, and it is the closer of the practice's two offices for anyone in Armonk or North Castle. Harrison books weekdays from 8:30 to 5:00 on (914) 949-0034. If you are fitting the appointment between meetings, ask for the first slot of the day, when testing is quicker."
+      },
+      {
+        question: "I spend all day on calls. Will hearing aids help with that?",
+        answer:
+          "Usually yes, and often more than they help in a restaurant. A call streamed straight into both hearing aids bypasses the room, so the air conditioning and the table stop competing with the talker. Bring the phone and laptop you actually use and have the pairing set up and tested in the office."
+      },
+      {
+        question: "Nothing is obviously wrong. Is a hearing test still worth having?",
+        answer:
+          "If you are over fifty, or you have spent years around loud equipment, a baseline is worth having. It takes one appointment, you keep the result, and every later test is read against it. That comparison is worth more than any single reading taken once something has already gone wrong."
+      }
     ]
   },
   pleasantville: {
@@ -1079,12 +1394,17 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       {
         title: "Concerts and outdoor events",
         body:
-          "Outdoor events and amplified music are worth protecting against, and custom plugs are molded from an impression taken in the office. Ringing the next morning is the signal to book, not to wait."
+          "Outdoor events and amplified music are worth protecting against, and custom plugs are molded from an impression taken in the office. Ringing the next morning is the signal to book, not to wait. Repeated episodes matter more than any single loud evening."
       },
       {
         title: "Village restaurants and the platform",
         body:
-          "Close tables, background music, and announcements you cannot have repeated. Ordinary problems with ordinary fixes, once the fitting is verified."
+          "Close tables, background music, and announcements you cannot have repeated. Ordinary problems with ordinary fixes, once the fitting is verified in your own ear rather than assumed from the fitting software."
+      },
+      {
+        title: "Subtitles, and what they tell you",
+        body:
+          "Switching the subtitles on at home is the most common unacknowledged sign of hearing loss there is. It is a sensible adaptation and worth keeping, but it is also information. If you have stopped being able to watch anything without them, that belongs in the case history."
       }
     ],
     hearingPriorities: [
@@ -1092,6 +1412,23 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "restaurant and group settings",
       "custom hearing protection",
       "follow-up programming at the Harrison office"
+    ],
+    faqs: [
+      {
+        question: "What is a telecoil, and do I need one?",
+        answer:
+          "It is a small copper coil inside a hearing aid that picks up sound from a venue's assistive listening loop and delivers it straight to your ears without the room in between. In a cinema or theatre it is often the difference between following the dialogue and reconstructing it afterwards. Not every model includes one, so if seated venues matter to you, say so before you choose devices rather than after."
+      },
+      {
+        question: "Which office do Pleasantville patients use?",
+        answer:
+          "Harrison is the one listed, at 550 Mamaroneck Avenue, Suite 407, weekdays on (914) 949-0034. Somers, on (914) 556-6720, may be the easier drive depending on which side of town you are on. Say which you want when you call."
+      },
+      {
+        question: "I watch everything with subtitles now. Should I get tested?",
+        answer:
+          "Yes, and it is a better reason than most. Needing subtitles for ordinary dialogue is a practical measure of speech clarity rather than loudness, which is exactly what age-related hearing loss takes first. It is worth mentioning at the appointment, because it gives the audiologist something concrete to check the fitting against later."
+      }
     ]
   },
   greenwich: {
@@ -1129,22 +1466,27 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
   mahopac: {
     heading: "Hearing Solutions for Mahopac, Lake Life, and Southern Putnam County",
     intro:
-      "On the lake it is wind and engine noise. In the house it is the ringing that turns up once the boat is out of the water for the season. Mahopac patients bring both down to Somers, often in the same appointment.",
+      "On the lake it is wind and engine noise. In the house it is the ringing that turns up once the boat is out of the water for the season. Mahopac patients bring both down to Somers, often in the same appointment, and the two are more related than they look.",
     listeningEnvironments: [
       {
         title: "The lake, the wind, and the engine",
         body:
-          "Wind across a hearing aid microphone is a roar, and an outboard at speed is loud enough to matter over a summer. Wind handling varies a lot between models, so compare before you commit."
+          "Wind across a hearing aid microphone is a roar, and an outboard at speed is loud enough to matter over a summer. Wind handling varies a lot between models, so compare before you commit rather than discovering the difference in July."
       },
       {
         title: "Boats, mowers, and the ringing after",
         body:
-          "A gas mower sits near 90 decibels and a chainsaw runs well past it. Custom plugs are molded from an impression taken in the office and still let a shout through. Ringing that lasts past the end of the job belongs in a tinnitus appointment."
+          "A gas mower sits near 90 decibels and a chainsaw runs well past it. Custom plugs are molded from an impression taken in the office and still let a shout through. Ringing that lasts past the end of the job belongs in a tinnitus appointment rather than in the category of things you put up with."
       },
       {
         title: "Route 6 and the car",
         body:
-          "The passenger faces forward, the road covers the consonants, and you cannot lip-read at the wheel. A remote microphone clipped to the passenger solves more of this than any program change."
+          "The passenger faces forward, the road covers the consonants, and you cannot lip-read at the wheel. A remote microphone clipped to the passenger solves more of this than any program change. It is small, it is inexpensive next to the aids themselves, and almost nobody is offered one."
+      },
+      {
+        title: "Winter evenings, once the season ends",
+        body:
+          "Southern Putnam gets very quiet after the summer, and quiet is when tinnitus is at its loudest because there is nothing left to mask it. That is why the calls cluster in the autumn. The hearing test comes first, since hearing loss is often what is feeding the ringing."
       }
     ],
     hearingPriorities: [
@@ -1152,6 +1494,23 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
       "moisture care for devices used near the lake",
       "custom protection for boats, mowers, and power tools",
       "tinnitus appointments for winter evenings"
+    ],
+    faqs: [
+      {
+        question: "How far is the Somers office from Mahopac?",
+        answer:
+          "It is a short run down NY 100, and Somers is the nearer of the practice's two offices for southern Putnam by a wide margin. It runs Monday through Wednesday all day and Friday until 2:30, closed Thursday, on (914) 556-6720."
+      },
+      {
+        question: "Does being on the water damage hearing aids?",
+        answer:
+          "Moisture is one of the most common reasons a hearing aid stops working, and a summer of lake use is harder on a device than a winter indoors. It is manageable rather than disqualifying: a drying kit, a consistent storage habit, and regular cleaning at the office deal with most of it. Say how you use them at the fitting, because it should influence which model is recommended."
+      },
+      {
+        question: "I already have hearing aids I stopped wearing. Is it worth bringing them?",
+        answer:
+          "Yes, even if they are old and even if you disliked them. What you liked and did not like about them is the most useful information in the room, and it shapes the next fitting more than any brochure will. Bring the chargers too. Some of what gets written off as device failure turns out to be wax in the receiver."
+      }
     ]
   }
 };
