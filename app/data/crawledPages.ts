@@ -5647,5 +5647,13 @@ export const crawledPages: SitePage[] = [
     "desc": "Meta announced an FDA-cleared hearing enhancement feature for its AI glasses at Meta Connect 2026. What it does, who it fits, and where a real hearing test still matters.",
     "h2": [],
     "paragraphs": []
+  },
+  {
+    "path": "/nuance-audio-plus-vs-meta-glasses/",
+    "title": "Nuance Audio Plus vs Meta Glasses: Which Fits You? | California Hearing Center",
+    "h1": "Nuance Audio Plus vs. Meta Glasses: Which Hearing Aid Glasses Are Right for You?",
+    "desc": "Nuance Audio Plus starts at $829. How it compares with Meta's hearing glasses feature, what open-ear design cannot do, and who should get a hearing test first.",
+    "h2": [],
+    "paragraphs": []
   }
 ];

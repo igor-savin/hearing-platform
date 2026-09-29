@@ -1,0 +1,12 @@
+{
+  "slug": "nuance-audio-plus-vs-meta-glasses",
+  "hero": { "title": "Nuance Plus vs. Meta Glasses", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Nuance Audio Plus at a glance", "subtitle": "Announced September 2026, from $829 in the US",
+    "rows": [
+      {"title": "Open-ear speakers in the frame", "desc": "Nothing sits in the ear canal."},
+      {"title": "About 10 hours of battery", "desc": "The first generation ran 6 to 8 hours."},
+      {"title": "Buttons on the frame", "desc": "Power switch and volume controls."},
+      {"title": "Hands-free calls on iPhone", "desc": "Compatible iPhones on iOS 16 or later."},
+      {"title": "Perceived mild to moderate loss", "desc": "Preset amplification, no personal fitting."}
+    ] }
+}

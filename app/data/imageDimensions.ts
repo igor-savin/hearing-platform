@@ -399,6 +399,8 @@ export const imageDimensions: Record<string, readonly [number, number]> = {
   "/assets/blog/latest-study-on-hearing-aids-in-noisy-environments-key-insights-2.svg": [800, 520],
   "/assets/blog/locked-and-used-hearing-aids-1.svg": [800, 560],
   "/assets/blog/locked-and-used-hearing-aids-2.svg": [800, 520],
+  "/assets/blog/nuance-audio-plus-vs-meta-glasses-1.svg": [800, 560],
+  "/assets/blog/nuance-audio-plus-vs-meta-glasses-2.svg": [800, 520],
   "/assets/blog/oticon-reveal-what-we-know-1.svg": [800, 560],
   "/assets/blog/oticon-reveal-what-we-know-2.svg": [800, 588],
   "/assets/blog/oticon-zeal-nxt-invisible-hearing-aids-1.svg": [800, 560],
