@@ -18,6 +18,9 @@
       "The daily costs — fatigue, missed conversation, withdrawal — are real and largely reversible.",
       "A hearing test is quick and low-risk, and it clarifies what, if anything, needs attention.",
     ],
+    extraFigures: [
+      { src: "/assets/core/hearing-better__health-wheel.svg", label: "Hearing and your health", alt: "Wheel graphic with hearing loss in the center and eight linked topics around it: diabetes, smoking, medications, heart health, kidney disease, balance, dementia, and tinnitus.", caption: "Hearing loss is linked to many other conditions. Links are associations, not proof of cause.", href: "/assets/core/hearing-better__health-wheel.svg", after: 0 },
+    ],
     sections: [
       ["The strain you stop noticing", "The first cost of untreated hearing loss is effort. When speech arrives unclear, your brain fills the gaps by working harder, and that extra labor runs in the background all day. People describe coming home drained after a normal afternoon of meetings or errands, without ever connecting the exhaustion to their ears. A well-matched [hearing aid fitting](/hearing-aid-fitting/) is meant to lower that effort so more of your energy goes to the conversation itself, not to decoding it."],
       ["Pulling back from people", "As hearing gets harder, social life often shrinks by degrees. Group dinners, phone calls, and noisy gatherings start to feel like more effort than they are worth, so people accept fewer invitations and speak up less. That retreat feeds loneliness, which carries its own well-documented links to poor health and low mood. Treating hearing tends to reverse the pattern, drawing people back into the relationships they had been letting slide."],

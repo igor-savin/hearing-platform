@@ -52,6 +52,9 @@ export type PageContent = {
   image2Label?: string;
   image2Caption?: string;
   image2Href?: string;      // makes image2 clickable — opens the full-size asset in a new tab
+  image2Alt?: string;       // descriptive alt text for image2 (falls back to image2Label)
+  /** Extra figures shown after the section at index `after`. Use when image2 is already taken. */
+  extraFigures?: { src: string; label: string; alt?: string; caption?: string; href?: string; after: number }[];
   variant?: string;        // per-archetype visual treatment
   datePublished?: string;  // ISO date (original publish) for BlogPosting schema
   dateModified?: string;   // ISO date of last real edit
@@ -1557,7 +1560,7 @@ function breadcrumbSchema(page: SitePage) {
 function articleSchema(page: SitePage, content: PageContent) {
   // Only hand-written blog posts (marked by datePublished) get BlogPosting.
   if (!content.datePublished) return null;
-  const images = [content.image, content.image2].filter(Boolean).map((src) => `${SITE}${src}`);
+  const images = [content.image, content.image2, ...(content.extraFigures ?? []).map((f) => f.src)].filter(Boolean).map((src) => `${SITE}${src}`);
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -1852,14 +1855,26 @@ function InnerPage({ page }: { page: SitePage }) {
                           aria-label={`${content.image2Label || "Figure"} — open the full-size version`}
                           style={{ display: "block", cursor: "zoom-in" }}
                         >
-                          <SiteImage src={content.image2} alt={content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
+                          <SiteImage src={content.image2} alt={content.image2Alt || content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
                         </a>
                       ) : (
-                        <SiteImage src={content.image2} alt={content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
+                        <SiteImage src={content.image2} alt={content.image2Alt || content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
                       )}
                       {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
                     </figure>
                   )}
+                  {content.extraFigures?.filter((f) => f.after === index).map((f) => (
+                    <figure className="body-figure" key={f.src}>
+                      {f.href ? (
+                        <a href={f.href} target="_blank" rel="noopener" aria-label={`${f.label} — open the full-size version`} style={{ display: "block", cursor: "zoom-in" }}>
+                          <SiteImage src={f.src} alt={f.alt || f.label} sizes="(max-width: 860px) 100vw, 760px" />
+                        </a>
+                      ) : (
+                        <SiteImage src={f.src} alt={f.alt || f.label} sizes="(max-width: 860px) 100vw, 760px" />
+                      )}
+                      {f.caption && <figcaption>{f.caption}</figcaption>}
+                    </figure>
+                  ))}
                 </section>
                 {specTable && index === specTableAfter && <SpecTable {...specTable} />}
               </Fragment>

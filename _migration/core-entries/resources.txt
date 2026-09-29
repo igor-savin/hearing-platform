@@ -17,6 +17,7 @@
     ["American Tinnitus Association (ATA)", "ATA is a non-profit organization that supports people with tinnitus through credible information, support and research funding. Learn more at [ata.org](https://www.ata.org/). See also our [tinnitus therapy](/services/tinnitus-therapy/) page."],
     ["Association of Late Deafened Adults (ALDA)", "ALDA is a non-profit that offers support, advocacy and community for people who became deaf later in life. Learn more at [alda.org](https://alda.org/)."],
     ["Two blogs by people who live with hearing loss", "Shari Eberts writes [Living with Hearing Loss](https://livingwithhearingloss.com/), a blog by a hearing health advocate, author and speaker. Gael Hannan is a humorist, author and speaker who writes about life with hearing loss at [gaelhannan.com](https://www.gaelhannan.com/)."],
+    ["Print this list", "Take this list home. [Key Resources for Hearing Better (PDF)](/assets/downloads/chc-key-resources-for-hearing-better.pdf) is a one-page version you can print or share with family."],
     ["How to get started with any of these", "Several of these programs are ones we enroll patients in directly. The simplest route is to mention it at your next appointment, or call us on 650-342-9449 and say which program you are interested in. If you are not sure which would help most, we will talk it through against how and where you actually struggle to hear."]
   ],
   bulletLinks: [
