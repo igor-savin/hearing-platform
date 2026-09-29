@@ -4,7 +4,7 @@
     metaTitle: "Kidney Disease and Hearing Loss: The Connection",
     variant: "condition",
     datePublished: "2023-06-10",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Chronic kidney disease is linked to higher rates of hearing loss. Learn why the two connect, what it means for your care, and when to get a hearing test.",
     intro: [
@@ -22,7 +22,8 @@
       ["The risk factors they share", "Part of the connection has less to do with the organs themselves and more to do with what harms them both. Diabetes and high blood pressure are leading causes of kidney disease, and each is separately tied to hearing loss. Persistently high blood sugar can affect the small blood vessels and nerves that serve the inner ear, and those same vessels also feed the kidneys. Diabetes is a recognized risk factor for hearing loss. Managing blood sugar and blood pressure is good for your whole body, and your hearing is part of what benefits."],
       ["When medication is part of the picture", "Treatment for advanced kidney disease can play a role as well. Certain drugs are known to be hard on hearing, a property clinicians call ototoxicity. Some antibiotics, high doses of loop diuretics, and a few medications used during dialysis fall into this group. This is not a reason to avoid necessary treatment. It is a reason to tell your care team you want your hearing watched, particularly if you notice new ringing, muffled sound, or fresh trouble following conversations after starting something. Your nephrologist and an audiologist can work in step so that protecting your kidneys and protecting your ears never pull in opposite directions."],
       ["Where a hearing test fits in", "If you or someone you care for lives with kidney disease, a [hearing test](/hearing-testing/) belongs on the same list as the regular round of checkups. A baseline evaluation shows where your hearing stands today, which makes any later change easier to spot. Should the results reveal a loss, the response can range from simple monitoring to a [hearing aid fitting](/hearing-aid-fitting/) built around how you live and listen. Modern [hearing aids](/products/hearing-aids/) are discreet and adjustable, and our [team](/about-us/) will explain the findings in plain language and loop in your other providers when that helps."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Shared risk factors", "Diabetes & blood pressure", "Inner-ear anatomy", "Medication safety", "Baseline hearing test", "Coordinated care"],
     faqs: [
       ["Does kidney disease cause hearing loss?", "The honest answer is that no one can call it a direct cause. Hearing loss does turn up more often among people with chronic kidney disease than you would expect by chance, and that association has been consistent. Shared biology and shared risk factors help explain the overlap, and that overlap is reason enough to have your hearing checked."],

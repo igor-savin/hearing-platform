@@ -3,7 +3,7 @@
     headline: "Could There Be a Link Between Hearing Loss and Dementia?",
     variant: "condition",
     datePublished: "2017-07-04",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "The Lancet Commission links untreated hearing loss to cognitive decline, but association isn't proof. Here's what that means and why a hearing test helps.",
     intro: [
@@ -25,7 +25,8 @@
       ["Social withdrawal and isolation", "The most human piece may be withdrawal. As hearing gets harder, plenty of people quietly retreat: group dinners, phone calls, and big gatherings start to feel like more trouble than they are worth. Loneliness and thin engagement carry their own association with cognitive decline. Treatment tends to pull people back into their conversations and relationships, and that payoff shows up right away rather than years down the road. On its own, it is reason enough to look into it."],
       ["What is still being studied", "It is fair to ask what remains unsettled. Scientists are still pinning down how large the benefit of treatment is, whether it helps certain people more than others, and which mechanisms carry the most weight. Sound research moves slowly, and pretending these questions are closed would be dishonest. None of that changes the practical bottom line: hearing loss is worth evaluating and treating for its own sake, whatever the long-range brain studies eventually conclude."],
       ["The hopeful, practical takeaway", "You do not need certainty about dementia to make a smart call about your hearing. An evaluation is quick, comfortable, and low-risk, and treatment dependably sharpens how you communicate and connect today. If your own hearing seems to have slipped, or you have watched it happen to someone you love, a simple [hearing test](/hearing-testing/) is a level-headed place to begin, and our team will walk you through what the results mean."],
-    ],
+    ["The 2024 Lancet numbers", "The 2024 Lancet Commission lists 14 changeable risk factors linked to about 45% of dementia cases. Hearing loss in midlife is tied with high LDL cholesterol at 7% each. These are population estimates, not personal risk, and they show association rather than proof. See the full chart on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page, or read more tips on our [Hearing Better hub](/hearing-better/)."]
+  ],
     bullets: ["Modifiable risk factor", "Listening effort", "Brain stimulation", "Social connection", "Low-risk evaluation", "San Mateo & San Carlos"],
     faqs: [
       ["Does hearing loss cause dementia?", "No one can honestly say it causes dementia. Experts do count untreated hearing loss as a modifiable risk factor tied to cognitive decline, so the two are genuinely linked. A link is not proof of cause, but it is steady enough that having your hearing checked is a sensible move."],

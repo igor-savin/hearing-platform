@@ -4,7 +4,7 @@
     metaTitle: "Hearing Loss & Cognitive Health | California Hearing Center",
     variant: "condition",
     datePublished: "2025-06-20",
-    dateModified: "2026-07-23",
+    dateModified: "2026-09-29",
     metaDescription:
       "Straining to hear taxes your attention and memory in daily life. Learn how hearing loss connects to everyday thinking and why a hearing check can help.",
     intro: [
@@ -23,7 +23,8 @@
       ["Staying in the conversation keeps the mind busy", "Rich, back-and-forth conversation is one of the better daily workouts your brain gets. When hearing makes group settings feel like too much effort, it is tempting to sit them out, and that pullback tends to compound over time. Reduced engagement carries its own association with dulling cognition. Treating hearing helps in a way you feel immediately: you stay in the phone calls, the card games, and the family dinners rather than drifting to the edge of them. That benefit arrives now, not years down the line."],
       ["What treatment can and cannot promise", "It would be dishonest to say [hearing aids](/products/hearing-aids/) sharpen memory or hold off cognitive decline; the research does not support that leap, and no honest clinician should make it. What treatment reliably does is reduce the effort listening demands and keep you connected to the people and activities around you. Those are worthwhile gains on their own terms. Scientists are still sorting out how much treating hearing changes the longer arc of brain health, and for whom, so the case for acting rests on the everyday payoff rather than a guarantee."],
       ["A sensible first step", "You do not need to settle the science to make a smart move about your ears. If conversations have started to feel like harder work, or loved ones repeat themselves more than they used to, a simple [hearing test](/hearing-testing/) will tell you where things stand. Older adults in particular tend to notice the difference quickly, and there are options built with that stage of life in mind, from [hearing aids for seniors](/hearing-aids-for-seniors/) to fittings tuned for busy, noisy days. When you are ready, you can [schedule an evaluation](/contact/) and go from there."],
-    ],
+    ["More help beyond the hearing aid", "Listening can be tiring when hearing is poor. Our [Hearing Better hub](/hearing-better/) shows skills, training and technology that make listening easier."]
+  ],
     bullets: ["Listening effort", "Attention & recall", "Cognitive load", "Social engagement", "Clearer conversation", "Low-risk hearing check"],
     faqs: [
       ["Can hearing loss make me feel more forgetful?", "It genuinely can, in a roundabout way. When words are hard to catch, your brain spends effort decoding them instead of storing them, so conversations do not stick the way they should. That can look and feel like forgetfulness even when memory itself is fine. Improving how well you hear often clears up a good part of it."],

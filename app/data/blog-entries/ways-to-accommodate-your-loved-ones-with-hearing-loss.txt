@@ -4,7 +4,7 @@
     metaTitle: "Accommodating a Loved One With Hearing Loss",
     variant: "condition",
     datePublished: "2021-03-23",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Simple, practical ways to help a loved one with hearing loss communicate and stay connected, plus signs it may be time for a professional hearing test.",
     intro: [
@@ -25,7 +25,8 @@
       ["Let technology carry some of the load", "Plenty of tools can bridge the gap. Turn on captions for the TV and for video calls, which alone can transform family movie nights. Many phones offer live captioning and amplified volume, and simple assistive listening devices can help in the car or across a room. If your loved one already wears [hearing aids](/products/hearing-aids/), make sure they're being worn and are in good shape; a device sitting in a drawer helps no one. When something isn't working right, a professional [hearing aid fitting](/hearing-aid-fitting/) can retune the settings to fit real life."],
       ["Know when it's time for a professional", "Accommodation has real limits. If your family member strains even in quiet rooms, turns the TV up until it bothers everyone, withdraws from gatherings, or seems confused in ways that track with noisy settings, those are signs to stop compensating and get a real evaluation. Sudden hearing loss in one ear, pain, dizziness, or ringing deserve prompt attention. Our [team](/about-us/) can sort out what's going on and explain the options plainly, and much of the guidance we offer for [older adults](/hearing-aids-for-seniors/) is built around exactly these situations."],
       ["Patience is part of the plan", "Some days will go smoothly and some won't, and progress with hearing aids or new habits takes time. Try not to answer for your loved one or finish their sentences, even when it would be faster; that quietly chips away at their confidence. Celebrate the wins — a full dinner conversation, a phone call that went fine — and keep the door open. The goal isn't a perfect fix overnight. It's helping the person you care about stay part of the moments that matter, while you nudge them toward the [help](/contact/) that lasts."],
-    ],
+    ["A family guide", "Our [family guide](/hearing-better/family-guide/) has five simple habits for talking together, and a card you can print."]
+  ],
     bullets: ["Face-to-face talking", "Less background noise", "Good lighting", "Rephrase, don't repeat", "Captions & devices", "Professional evaluation"],
     faqs: [
       ["Should I speak louder to someone with hearing loss?", "Not really — clarity beats volume. Shouting distorts your words and can come across as angry. Face the person, keep your mouth visible, and speak at a steady, slightly slower pace. If they miss something, rephrase it rather than repeating the same words louder."],

@@ -4,7 +4,7 @@
     metaTitle: "Auracast and Hearing Aids: What It Means for You",
     variant: "product",
     datePublished: "2026-03-21",
-    dateModified: "2026-07-23",
+    dateModified: "2026-09-29",
     metaDescription:
       "Auracast is a new Bluetooth broadcast standard that can send sound straight to compatible hearing aids. Here is what it does and where it stands today.",
     intro: [
@@ -25,7 +25,8 @@
       ["Where you can expect to find it", "The natural homes for Auracast are the places where public sound is hard to follow: airports, theaters, houses of worship, gyms, transit hubs, conference rooms, and museums. Some venues and manufacturers have started adding it, and phone makers are building in the controls to find and join broadcasts. Even so, this is a gradual buildout. You may not run into Auracast at your local venues for a while yet, and it is fair to treat broad availability as something coming rather than something already here."],
       ["Whether your hearing aids can tune in", "To receive an Auracast broadcast, a hearing aid has to support Bluetooth LE Audio, which generally means a newer model. Many older hearing aids, even ones with Bluetooth streaming, use the previous standard and cannot join an Auracast broadcast. Some setups also rely on a phone or a small assistant device to browse and select broadcasts. If you are shopping, it is worth checking each brand's LE Audio support, and our team can help you compare what is available across [major hearing aid brands](/products/hearing-aids-by-brand/)."],
       ["What it means for you today", "Auracast is a real step forward, and it is reasonable to be interested in it. It is not a reason to rush a purchase or to feel that your current hearing aids are behind. If your devices work well for you, they still work well. If you are due for new ones or weighing an upgrade, Auracast support is one feature to consider among many, alongside fit, sound quality, and battery life. A good starting point is a current [hearing evaluation](/hearing-testing/) and a conversation about how and where you most want to hear better. From there, our [team](/about-us/) can tell you where Auracast fits into the picture, and where it does not yet."],
-    ],
+    ["Using Auracast for TV", "Want TV sound in your hearing aids now? See our guide to [hearing the TV clearly](/hearing-better/tv-and-streaming/)."]
+  ],
     bullets: ["Bluetooth LE Audio", "One-to-many broadcast", "Clearer public audio", "Like a modern telecoil", "Newer hearing aids only", "Still rolling out"],
     faqs: [
       ["Is Auracast the same as regular Bluetooth?", "Not quite. Standard Bluetooth pairs two devices in a private connection, while Auracast broadcasts one audio stream that many listeners can join at once. It is built on Bluetooth LE Audio, a newer generation, so a device has to support that standard to use it."],

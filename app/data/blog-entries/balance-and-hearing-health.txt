@@ -4,7 +4,7 @@
     metaTitle: "Balance and Hearing Health: The Inner-Ear Link",
     variant: "condition",
     datePublished: "2019-09-16",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Your inner ear powers both hearing and balance. Learn how the two are connected, why dizziness and hearing changes often overlap, and when to get checked.",
     intro: [
@@ -25,7 +25,8 @@
       ["Why hearing and balance changes travel together", "Because the two systems are neighbors, a single event can involve both. Aging gradually thins the hair cells in the cochlea and the vestibular organs alike, so it is common for balance confidence and hearing clarity to soften over the same years. That pattern is one reason [hearing care for older adults](/hearing-aids-for-seniors/) often folds in a conversation about steadiness and fall risk. Certain infections, circulation problems, and inner-ear disorders can strike both functions together. Ringing in the ears can join the mix as well, and our [tinnitus care](/tinnitus/) team frequently sees it alongside balance complaints."],
       ["Signs worth getting checked", "Most passing dizziness is harmless, but a few patterns deserve a professional look. Sudden hearing loss in one ear, especially paired with dizziness, is treated as urgent by audiologists and physicians. New vertigo that will not settle, a persistent feeling of fullness in one ear, or a wobble that has started causing near-falls all warrant an evaluation. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/balance-disorders) describes balance disorders as a recognized medical category, so trust your instinct if something feels wrong rather than waiting it out."],
       ["What an evaluation looks like", "A visit starts with listening to your story, because the timing and triggers of your symptoms tell us a great deal. From there we check your hearing thoroughly and, when balance is part of the picture, coordinate the right next steps, which may include tests focused on the vestibular system or a referral to a physician. The goal is a clear picture rather than a rushed guess. Whether the answer turns out to be your ears or something else entirely, our [audiologists](/about-us/) will explain what the findings mean and help you decide what to do next."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Inner-ear labyrinth", "Vestibular canals", "Eyes and joints", "Vertigo signals", "Fall-risk awareness", "San Mateo & San Carlos"],
     faqs: [
       ["Can hearing loss cause balance problems?", "Not directly in most cases, but the two share the inner ear, so a single condition can affect both. Age-related changes also tend to soften hearing and steadiness over the same period. If you notice both slipping, it is worth having them looked at together."],

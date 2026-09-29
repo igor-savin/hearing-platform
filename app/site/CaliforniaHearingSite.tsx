@@ -169,6 +169,7 @@ const nav: NavItem[] = [
     label: "Resources",
     href: "/resources/",
     items: [
+      ["Hearing Better", "/hearing-better/"],
       ["Blog", "/the-blog/"],
       ["Hearing Healthcare Resources", "/resources/"],
       ["A Patient's Journey to Better Hearing", "/a-patients-journey-to-better-hearing/"],
@@ -241,7 +242,7 @@ const tinnitus = [
 
 const featuredRoutes = [
   "/", "/services/", "/products/hearing-aids/", "/contact/", "/contact/san-carlos/", "/contact/san-mateo/",
-  "/areas-we-serve/", "/tinnitus/", "/resources/", "/reviews/",
+  "/areas-we-serve/", "/tinnitus/", "/hearing-better/", "/resources/", "/reviews/",
 ];
 
 // The clinical team, surfaced as a roster on /about-us/. Credentials and hooks
