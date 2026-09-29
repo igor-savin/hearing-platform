@@ -242,14 +242,6 @@ yet that crawl budget, not page quality, was the binding constraint.
 - https://www.calhearing.com/fortell-hearing-aids-what-we-know/
 - https://www.audiologyassociates.org/fortell-hearing-aids-what-we-know
 
-## Hearing Better: future Facebook and social ideas (added 29 Sep 2026, not scheduled)
+## Hearing Better: social ideas
 
-Site pages ship first. These come after, one post per live page, links go to the page, not the image.
-
-1. Lancet 2024 chart -> /could-there-be-a-link-between-hearing-loss-and-dementia/. Calm words: "linked to", never "causes".
-2. Health wheel -> /hearing-better/hearing-and-your-health/. One condition per caption.
-3. Five ways to hear better -> /hearing-better/. Also a five-slide Instagram carousel.
-4. Family talk card -> /hearing-better/family-guide/. Good for tagging a parent or child.
-5. One post per problem page: TV, phone, noisy rooms.
-6. Share the TIME "10 Things Doctors Want You to Know About Hearing Aids" article (29 Jun 2026) as a link with one short CHC comment. No copied text, images or TIME logo.
-7. Graphics are SVG with live text in public/assets/core/hearing-better__*.svg. Make square PNG copies when a post is scheduled. Use the teal palette. Google posts need one version per office.
+Moved to `marketing/social-ideas-chc.md`, the living list of CHC social post ideas. Add new ideas there.
