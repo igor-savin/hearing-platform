@@ -4,7 +4,7 @@
     metaTitle: "How to Talk With Someone Who Has Hearing Loss",
     variant: "condition",
     datePublished: "2023-02-20",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Simple, practical ways to talk with someone who has hearing loss: get their attention, face them, rephrase rather than repeat, and cut background noise.",
     intro: [
@@ -26,7 +26,8 @@
       ["Tame the background", "Noise is the hidden villain of most difficult conversations. A television murmuring in the corner, a busy kitchen, or a crowded restaurant forces the brain to pull one voice out of a wall of sound, which tires out even typical hearing. Turn the TV off before an important talk, choose the quieter side of a cafe, and ask for a booth against a wall. Well-fit [hearing aids](/products/hearing-aids/) handle noise far better than older models did, though no device erases a loud room completely."],
       ["Say the topic, then the details", "People fill in a surprising amount of any conversation from context. If you switch subjects without warning — from the garden to a doctor's appointment to what's for dinner — a listener with hearing loss has to catch every word cold. Naming the topic first hands them a frame: 'About Saturday...' or 'Switching gears, the pharmacy called.' A one-second heads-up turns guesswork into easy following."],
       ["When the room keeps winning", "Some settings stay hard no matter how careful everyone is: a large family dinner, a house of worship, a car full of road noise. If a loved one is still working this hard in everyday conversation, that is a signal worth acting on rather than adapting around forever. A [hearing evaluation](/hearing-testing/) shows exactly where the gaps are, and a proper [hearing aid fitting](/hearing-aid-fitting/) can be tuned for the noisy places that cause the most trouble. For older adults in particular, the right [hearing technology for seniors](/hearing-aids-for-seniors/) makes group settings livable again. Our team in San Mateo and San Carlos can walk a family through what to expect."],
-    ],
+    ["A family guide", "Our [family guide](/hearing-better/family-guide/) has five simple habits for talking together, and a card you can print."]
+  ],
     bullets: ["Get attention first", "Face the light", "Slow, don't shout", "Rephrase, don't repeat", "Quiet the room", "Name the topic"],
     faqs: [
       ["Why does speaking louder sometimes make things worse?", "Volume and clarity are not the same thing. When you shout, the shape of consonants distorts and the sound can turn harsh, which is uncomfortable for ears that are already sensitive. A calm, even pace at normal volume, with the person facing you, delivers far more usable speech than sheer loudness ever will."],

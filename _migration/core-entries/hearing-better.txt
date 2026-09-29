@@ -1,0 +1,39 @@
+"/hearing-better/": {
+  kicker: "Hearing Better",
+  headline: "Hearing Better: Help Beyond the Hearing Aid",
+  metaTitle: "Hearing Better: Tips and Technology Beyond Hearing Aids",
+  metaDescription: "Hearing aids help, but they do not fix every hearing problem. See five ways to hear better at the TV, on the phone, in noisy rooms and at home. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "No one hears perfectly all the time, even people with normal hearing. Hearing aids help a great deal. They do not solve every problem in every room. Our patients do best when they also learn what else they can do.",
+    "This hub gathers those things in one place. Start with the problem that bothers you most. Try at least two of the options below. Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Five ways to hear better", "First, learn communication skills. The 5 Keys program teaches where to sit, how to set up a room and what to ask the speaker to do. Second, train your listening. LACE and clEAR are practice programs you do at home. Third, use a TV streamer or Auracast to send TV sound straight to your hearing aids. Fourth, consider captioning glasses, which show live captions of speech. Fifth, use a wireless microphone that puts a clearer voice signal into your hearing aids. Each of these fills a gap that a hearing aid alone leaves open."],
+    ["Start with your problem", "Pick the situation that frustrates you most. Each page below explains what helps, what to ask us, and what to expect. Most people find that one or two changes make the biggest difference, so you do not need to try everything."],
+    ["Programs and groups we recommend", "Our [Resources page](/resources/) lists the training programs we enroll patients in and the groups we trust. These include the Hearing Loss Association of America, the Ida Institute, California Connect for free phone equipment, the American Tinnitus Association, and blogs by people who live with hearing loss."],
+    ["Take it home", "Print these one-page guides for your fridge or your family. [Key Tips and Technology for Hearing Better (PDF)](/assets/downloads/chc-key-tips-and-technology-for-hearing-better.pdf) lists the five options above. [Key Resources for Hearing Better (PDF)](/assets/downloads/chc-key-resources-for-hearing-better.pdf) lists the groups and programs we recommend."],
+    ["Bring this to your appointment", "You do not need to know which product you want. Tell us where you struggle. We will suggest options that fit your hearing, your home and your budget. If you already wear hearing aids from another provider, we can still help you add these tools. Call 650-342-9449 or [contact us](/contact/) to book."]
+  ],
+  bulletLinks: [
+    ["I cannot hear the TV", "/hearing-better/tv-and-streaming/"],
+    ["I miss phone calls", "/hearing-better/phones-and-captions/"],
+    ["I cannot follow talk in noise or across a room", "/hearing-better/noisy-rooms-and-distance/"],
+    ["I want to help someone I love", "/hearing-better/family-guide/"],
+    ["What else does hearing touch?", "/hearing-better/hearing-and-your-health/"],
+    ["Programs and groups we recommend", "/resources/"]
+  ],
+  takeaways: [
+    "Hearing aids are a powerful tool, but they are only part of the answer.",
+    "Try at least two of the five options: skills, training, TV streaming, captions, or a wireless microphone.",
+    "Tell us where you struggle. We will suggest what fits your life."
+  ],
+  faqs: [
+    ["Do hearing aids fix all hearing problems?", "No. They make sound louder and clearer, but noise, distance, echo and fast talkers still make listening hard. Skills, training and extra devices fill those gaps."],
+    ["Which of these should I try first?", "Start with the problem that bothers you most. For many people that is the TV or noisy restaurants. Learning simple communication skills costs little and helps everywhere."],
+    ["Can I use these with hearing aids I bought elsewhere?", "Often yes. Many of these tools work with most major hearing aid brands. Bring your devices to an appointment and we will check what works with them."],
+    ["Do you sell every product on these pages?", "Not necessarily. We will tell you plainly which items we can order and fit, and which you would buy from the maker or another source."]
+  ],
+  image: "/assets/core/hearing-better__five-ways.svg",
+  imageLabel: "Five ways to hear better",
+  imageAlt: "Five ways to hear better: communication skills, listening training, a TV streamer, captioning glasses and a wireless microphone."
+},

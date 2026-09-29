@@ -4,7 +4,7 @@
     metaTitle: "The Links Between Smoking and Hearing Loss",
     variant: "condition",
     datePublished: "2018-03-09",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Smoking is linked to a higher risk of hearing loss and tinnitus. How tobacco may affect your ears, why quitting helps, and when to get your hearing tested.",
     intro: [
@@ -25,7 +25,8 @@
       ["The tinnitus connection", "Smoking has also been associated with a greater likelihood of [tinnitus](/tinnitus/), the ringing or buzzing many people notice in quiet moments. The same effects on blood flow may play a part, and nicotine is a stimulant that can make ringing feel more intrusive. We cannot promise that quitting will silence tinnitus, but reducing exposure is a sensible step, and our clinicians can talk through management options if the sound is wearing on you."],
       ["Quitting helps, whenever you do it", "Here is the encouraging part. Cutting down or stopping lowers the exposure that may be working against your ears, and it is worth doing at any age. Quitting will not reverse hearing loss that has already set in, and we will not suggest otherwise, but it removes an ongoing risk and supports the rest of your health at the same time. If you already wear [hearing aids](/products/hearing-aids/) or are considering them, protecting the hearing you have left makes that investment go further."],
       ["Getting your hearing checked", "You do not need symptoms to justify a hearing test, and you certainly do not need to have quit first. A [hearing evaluation](/hearing-testing/) is quick, comfortable, and gives you a clear baseline to measure against over the years. If the results point to loss, we will walk you through what they mean and, where it helps, discuss a [hearing aid fitting](/hearing-aid-fitting/) suited to your life. Reach out to [schedule a visit](/contact/) at either Peninsula office whenever you are ready."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Blood flow & oxygen", "Higher hearing-loss risk", "Secondhand smoke", "Tinnitus link", "Quitting helps", "San Mateo & San Carlos"],
     faqs: [
       ["Can smoking really cause hearing loss?", "Research consistently links smoking to a higher risk of hearing loss, but a link is not the same as proof of cause for any one person. Noise, age, and genetics matter too. Even so, smoking is a risk you can act on, which is why quitting and a [hearing test](/hearing-testing/) both make sense."],

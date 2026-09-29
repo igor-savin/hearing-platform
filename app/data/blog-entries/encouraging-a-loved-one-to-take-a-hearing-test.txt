@@ -4,7 +4,7 @@
     metaTitle: "Encourage a Loved One to Get a Hearing Test",
     variant: "condition",
     datePublished: "2024-05-07",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Worried about a loved one's hearing but not sure how to bring it up? Here are gentle, practical steps to encourage a hearing test and book it together.",
     intro: [
@@ -25,7 +25,8 @@
       ["Make the test easy to say yes to", "A lot of resistance is really about hassle. Offer to remove it. You can [schedule the appointment](/contact/) for them, drive them there, and sit in the room if they want the company. If cost is the worry, you can look into coverage ahead of time so the money question does not stall things; our notes on [insurance](/resources/insurance/) are a practical place to start. The smaller and more handled the whole thing feels, the easier that first yes becomes."],
       ["Meet the common objections gently", "Expect a few standard replies, and have a calm answer ready. 'It's not that bad' can be met with the idea that a baseline is worth having precisely so you know whether it is. 'Everyone mumbles' is worth hearing out, then turning around: a test simply settles the question. If vanity is the sticking point, it can help to note how discreet today's devices are, and that reading real [patient experiences](/reviews/) often eases the worry. You are not arguing them into anything, just keeping the door open."],
       ["Book the appointment together", "Encouragement works best when it ends in something concrete. Once your loved one is willing, pin down a date rather than leaving it as a someday. Our offices serve families across San Mateo and San Carlos, and you are welcome to [reach out](/contact/) together so the visit feels like a shared step instead of a summons. If they would like to know who they will be meeting first, our [team](/about-us/) is happy to answer questions before anyone sets foot in the office."],
-    ],
+    ["A family guide", "Our [family guide](/hearing-better/family-guide/) has five simple habits for talking together, and a card you can print."]
+  ],
     bullets: ["Notice specific signs", "Choose a calm moment", "Lead with connection", "Offer the logistics", "Answer objections", "Book together"],
     faqs: [
       ["What if they get defensive or flat-out refuse?", "Try not to push it into a standoff. Say your piece once, kindly, then let it sit; people often circle back to an idea after it stops feeling like an ambush. You can also mention that a [hearing evaluation](/hearing-testing/) is painless and carries no obligation, which lowers the stakes. Sometimes the seed just needs a week or two to take."],

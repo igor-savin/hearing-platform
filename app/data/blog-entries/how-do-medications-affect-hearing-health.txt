@@ -4,7 +4,7 @@
     metaTitle: "How Medications Can Affect Your Hearing",
     variant: "condition",
     datePublished: "2018-04-15",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Some medications are ototoxic and can affect hearing, cause ringing, or upset balance. Learn the warning signs and why to talk to your doctor before stopping.",
     intro: [
@@ -22,7 +22,8 @@
       ["The medicines most often involved", "A short list accounts for most cases. Aminoglycoside antibiotics, used for serious infections, are well known for it, as are the platinum-based chemotherapy drugs such as cisplatin. Loop diuretics prescribed for heart and kidney problems can affect hearing, usually on a temporary basis. High doses of aspirin, other anti-inflammatory pain relievers, and some anti-malarial drugs can bring on ringing that tends to settle once the dose drops. Because the same drug can behave differently from one person to the next, your prescriber and pharmacist are the best source on your specific medications. If ringing is what you notice, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) explains the symptom and when it is worth evaluating."],
       ["Signs your ears may be affected", "These changes are easy to brush off, so it helps to know them. New or louder ringing, hissing, or buzzing in the ears is one of the earliest. You might notice speech sounding muffled, needing the television turned up, or struggling to follow a conversation in a noisy room. Some ototoxic drugs affect balance instead of, or alongside, hearing, which can feel like dizziness or unsteadiness on your feet. If any of this starts during a course of medication, write down when it began and mention it to both your prescriber and an audiologist. Catching it early gives everyone more room to respond."],
       ["Working with your doctor and your audiologist", "The safest path runs through the people managing your care. Ask your prescriber whether any medicine you take carries a hearing risk, and whether a [baseline hearing evaluation](/hearing-testing/) makes sense before you begin. For high-risk treatments, audiologists often monitor hearing throughout the course so any shift is caught while there is still room to adjust. If you do end up with lasting hearing loss, well-fit [hearing aids](/products/hearing-aids/) can restore a great deal of clarity, and ongoing ringing can be eased with approaches like [sound therapy](/tinnitus/sound-therapy/). None of that means going off your medication. It means managing its effects with a plan."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Ototoxic medications", "Inner ear hair cells", "Tinnitus & balance", "Baseline hearing test", "Never stop meds alone", "Talk to your doctor"],
     faqs: [
       ["Which medications are most likely to affect hearing?", "The ones clinicians watch most closely are aminoglycoside antibiotics, platinum-based chemotherapy drugs like cisplatin, and loop diuretics. High-dose aspirin and some other pain relievers can cause ringing that usually settles once the dose comes down. Because reactions vary from person to person, your pharmacist or prescriber can tell you where your specific medicines fall."],

@@ -8,7 +8,7 @@ export const blogPosts: Record<string, PageContent> = {
     headline: "Adjusting to New Hearing Aids",
     variant: "product",
     datePublished: "2021-03-24",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "New hearing aids take time to get used to. Learn what the first weeks really feel like, how to build up wearing time, and when a small adjustment can help.",
     intro: [
@@ -27,7 +27,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Building up wearing time", "Resist the urge to save the devices for special occasions. Hearing aids do their work through repetition, so the brain needs regular hours to relearn. Some people start with a stretch each day and add time as things feel natural; others are comfortable wearing them morning to evening within the first week. There is no single correct pace, though [how many hours a day to aim for](/how-many-hours-a-day-should-you-wear-new-hearing-aids-a-complete-guide/) has the same answer for everyone in the end. What counts is consistency, because the ears and brain adapt to the sound they get most often, not the sound they get once in a while."],
       ["Sounds that catch you off guard", "Certain sounds surprise almost everyone. Chewing can feel loud, a ceramic plate set on a counter can seem sharp, and the rustle of a jacket may register far more than you expect. These ease off as the brain reclassifies them as ordinary. If a specific sound stays uncomfortable after a couple of weeks, that is worth telling us — it usually points to a small tuning change, not something you have to live with."],
       ["Follow-up is part of the plan", "A fitting is a starting point, not the finish line. We expect to see you again to fine-tune the settings once your brain has spent real time with the devices, and small tweaks at that stage often make a large difference. If something rattles, cuts out, or sounds off, our [repair and service](/services/hearing-aid-repair/) team can help rather than leaving you to guess. Older adults new to devices tend to do especially well with a bit of coaching, which is why our care for [seniors](/hearing-aids-for-seniors/) leans on regular check-ins."],
-    ],
+    ["More help beyond the hearing aid", "Skills, listening training and extra devices can speed up your progress. See our [Hearing Better hub](/hearing-better/)."]
+  ],
     bullets: ["Give it a few weeks", "Start in quiet rooms", "Wear them daily", "Your voice sounds normal soon", "Follow-up adjustments", "Ask us anytime"],
     faqs: [
       ["How long until my hearing aids feel normal?", "For most people it is a matter of weeks, not months. The brain adapts fastest when the devices are worn consistently, so daily practice shortens the curve. If sound still feels harsh or tinny after three to four weeks, let us know, because that usually points to a fitting adjustment rather than a limit of the technology."],
@@ -237,7 +238,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Balance and Hearing Health: The Inner-Ear Link",
     variant: "condition",
     datePublished: "2019-09-16",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Your inner ear powers both hearing and balance. Learn how the two are connected, why dizziness and hearing changes often overlap, and when to get checked.",
     intro: [
@@ -258,7 +259,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Why hearing and balance changes travel together", "Because the two systems are neighbors, a single event can involve both. Aging gradually thins the hair cells in the cochlea and the vestibular organs alike, so it is common for balance confidence and hearing clarity to soften over the same years. That pattern is one reason [hearing care for older adults](/hearing-aids-for-seniors/) often folds in a conversation about steadiness and fall risk. Certain infections, circulation problems, and inner-ear disorders can strike both functions together. Ringing in the ears can join the mix as well, and our [tinnitus care](/tinnitus/) team frequently sees it alongside balance complaints."],
       ["Signs worth getting checked", "Most passing dizziness is harmless, but a few patterns deserve a professional look. Sudden hearing loss in one ear, especially paired with dizziness, is treated as urgent by audiologists and physicians. New vertigo that will not settle, a persistent feeling of fullness in one ear, or a wobble that has started causing near-falls all warrant an evaluation. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/balance-disorders) describes balance disorders as a recognized medical category, so trust your instinct if something feels wrong rather than waiting it out."],
       ["What an evaluation looks like", "A visit starts with listening to your story, because the timing and triggers of your symptoms tell us a great deal. From there we check your hearing thoroughly and, when balance is part of the picture, coordinate the right next steps, which may include tests focused on the vestibular system or a referral to a physician. The goal is a clear picture rather than a rushed guess. Whether the answer turns out to be your ears or something else entirely, our [audiologists](/about-us/) will explain what the findings mean and help you decide what to do next."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Inner-ear labyrinth", "Vestibular canals", "Eyes and joints", "Vertigo signals", "Fall-risk awareness", "San Mateo & San Carlos"],
     faqs: [
       ["Can hearing loss cause balance problems?", "Not directly in most cases, but the two share the inner ear, so a single condition can affect both. Age-related changes also tend to soften hearing and steadiness over the same period. If you notice both slipping, it is worth having them looked at together."],
@@ -886,7 +888,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Kidney Disease and Hearing Loss: The Connection",
     variant: "condition",
     datePublished: "2023-06-10",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Chronic kidney disease is linked to higher rates of hearing loss. Learn why the two connect, what it means for your care, and when to get a hearing test.",
     intro: [
@@ -904,7 +906,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["The risk factors they share", "Part of the connection has less to do with the organs themselves and more to do with what harms them both. Diabetes and high blood pressure are leading causes of kidney disease, and each is separately tied to hearing loss. Persistently high blood sugar can affect the small blood vessels and nerves that serve the inner ear, and those same vessels also feed the kidneys. Diabetes is a recognized risk factor for hearing loss. Managing blood sugar and blood pressure is good for your whole body, and your hearing is part of what benefits."],
       ["When medication is part of the picture", "Treatment for advanced kidney disease can play a role as well. Certain drugs are known to be hard on hearing, a property clinicians call ototoxicity. Some antibiotics, high doses of loop diuretics, and a few medications used during dialysis fall into this group. This is not a reason to avoid necessary treatment. It is a reason to tell your care team you want your hearing watched, particularly if you notice new ringing, muffled sound, or fresh trouble following conversations after starting something. Your nephrologist and an audiologist can work in step so that protecting your kidneys and protecting your ears never pull in opposite directions."],
       ["Where a hearing test fits in", "If you or someone you care for lives with kidney disease, a [hearing test](/hearing-testing/) belongs on the same list as the regular round of checkups. A baseline evaluation shows where your hearing stands today, which makes any later change easier to spot. Should the results reveal a loss, the response can range from simple monitoring to a [hearing aid fitting](/hearing-aid-fitting/) built around how you live and listen. Modern [hearing aids](/products/hearing-aids/) are discreet and adjustable, and our [team](/about-us/) will explain the findings in plain language and loop in your other providers when that helps."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Shared risk factors", "Diabetes & blood pressure", "Inner-ear anatomy", "Medication safety", "Baseline hearing test", "Coordinated care"],
     faqs: [
       ["Does kidney disease cause hearing loss?", "The honest answer is that no one can call it a direct cause. Hearing loss does turn up more often among people with chronic kidney disease than you would expect by chance, and that association has been consistent. Shared biology and shared risk factors help explain the overlap, and that overlap is reason enough to have your hearing checked."],
@@ -962,7 +965,7 @@ export const blogPosts: Record<string, PageContent> = {
     headline: "Could There Be a Link Between Hearing Loss and Dementia?",
     variant: "condition",
     datePublished: "2017-07-04",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "The Lancet Commission links untreated hearing loss to cognitive decline, but association isn't proof. Here's what that means and why a hearing test helps.",
     intro: [
@@ -976,6 +979,9 @@ export const blogPosts: Record<string, PageContent> = {
       "Researchers point to listening effort, reduced stimulation, and social withdrawal as plausible mechanisms.",
       "Getting hearing evaluated and treated is low-risk and helps communication either way.",
     ],
+    extraFigures: [
+      { src: "/assets/core/hearing-better__lancet-2024-chart.svg", label: "14 risk factors for dementia, 2024 Lancet Commission", alt: "Bar chart of 14 changeable dementia risk factors from the 2024 Lancet Commission. Hearing loss and high LDL cholesterol are tied highest at 7% each. Education and social isolation follow at 5%. These are population estimates, not personal risk.", caption: "Redrawn by CHC from the 2024 Lancet Commission report (doi 10.1016/S0140-6736(24)01296-0). Population estimates, not personal risk. Association, not proof of cause.", href: "/assets/core/hearing-better__lancet-2024-chart.svg", after: 0 },
+    ],
     sections: [
       ["Where hearing loss sits on the risk list", "The Lancet Commission on dementia prevention lists hearing loss among the factors that seem to raise the likelihood of cognitive decline, and among the handful people can genuinely influence. That puts it in company with physical activity, blood pressure, and staying socially engaged. The claim is not that hearing loss causes dementia. It is that the two travel together often enough to deserve attention, and that caring for your hearing is one of the more approachable items on that list."],
       ["Why 'association' is not the same as 'cause'", "Here the wording really matters. Two things showing up together does not prove that one drives the other. Adults with untreated hearing loss often differ in other ways as well, and it is entirely possible for hearing changes and early cognitive changes to spring from a shared underlying cause. The link is real and repeatable. The jump to 'hearing aids prevent dementia' still runs ahead of the evidence, which is exactly why researchers keep studying how much treatment helps, and for whom."],
@@ -984,7 +990,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Social withdrawal and isolation", "The most human piece may be withdrawal. As hearing gets harder, plenty of people quietly retreat: group dinners, phone calls, and big gatherings start to feel like more trouble than they are worth. Loneliness and thin engagement carry their own association with cognitive decline. Treatment tends to pull people back into their conversations and relationships, and that payoff shows up right away rather than years down the road. On its own, it is reason enough to look into it."],
       ["What is still being studied", "It is fair to ask what remains unsettled. Scientists are still pinning down how large the benefit of treatment is, whether it helps certain people more than others, and which mechanisms carry the most weight. Sound research moves slowly, and pretending these questions are closed would be dishonest. None of that changes the practical bottom line: hearing loss is worth evaluating and treating for its own sake, whatever the long-range brain studies eventually conclude."],
       ["The hopeful, practical takeaway", "You do not need certainty about dementia to make a smart call about your hearing. An evaluation is quick, comfortable, and low-risk, and treatment dependably sharpens how you communicate and connect today. If your own hearing seems to have slipped, or you have watched it happen to someone you love, a simple [hearing test](/hearing-testing/) is a level-headed place to begin, and our team will walk you through what the results mean."],
-    ],
+      ["The 2024 Lancet numbers", "The 2024 Lancet Commission lists 14 changeable risk factors linked to about 45% of dementia cases. Hearing loss in midlife is tied with high LDL cholesterol at 7% each. These are population estimates, not personal risk, and they show association rather than proof. The chart below shows all 14. See also our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page, or read more tips on our [Hearing Better hub](/hearing-better/)."]
+  ],
     bullets: ["Modifiable risk factor", "Listening effort", "Brain stimulation", "Social connection", "Low-risk evaluation", "San Mateo & San Carlos"],
     faqs: [
       ["Does hearing loss cause dementia?", "No one can honestly say it causes dementia. Experts do count untreated hearing loss as a modifiable risk factor tied to cognitive decline, so the two are genuinely linked. A link is not proof of cause, but it is steady enough that having your hearing checked is a sensible move."],
@@ -1586,7 +1593,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Encourage a Loved One to Get a Hearing Test",
     variant: "condition",
     datePublished: "2024-05-07",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Worried about a loved one's hearing but not sure how to bring it up? Here are gentle, practical steps to encourage a hearing test and book it together.",
     intro: [
@@ -1607,7 +1614,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Make the test easy to say yes to", "A lot of resistance is really about hassle. Offer to remove it. You can [schedule the appointment](/contact/) for them, drive them there, and sit in the room if they want the company. If cost is the worry, you can look into coverage ahead of time so the money question does not stall things; our notes on [insurance](/resources/insurance/) are a practical place to start. The smaller and more handled the whole thing feels, the easier that first yes becomes."],
       ["Meet the common objections gently", "Expect a few standard replies, and have a calm answer ready. 'It's not that bad' can be met with the idea that a baseline is worth having precisely so you know whether it is. 'Everyone mumbles' is worth hearing out, then turning around: a test simply settles the question. If vanity is the sticking point, it can help to note how discreet today's devices are, and that reading real [patient experiences](/reviews/) often eases the worry. You are not arguing them into anything, just keeping the door open."],
       ["Book the appointment together", "Encouragement works best when it ends in something concrete. Once your loved one is willing, pin down a date rather than leaving it as a someday. Our offices serve families across San Mateo and San Carlos, and you are welcome to [reach out](/contact/) together so the visit feels like a shared step instead of a summons. If they would like to know who they will be meeting first, our [team](/about-us/) is happy to answer questions before anyone sets foot in the office."],
-    ],
+    ["A family guide", "Our [family guide](/hearing-better/family-guide/) has five simple habits for talking together, and a card you can print."]
+  ],
     bullets: ["Notice specific signs", "Choose a calm moment", "Lead with connection", "Offer the logistics", "Answer objections", "Book together"],
     faqs: [
       ["What if they get defensive or flat-out refuse?", "Try not to push it into a standoff. Say your piece once, kindly, then let it sit; people often circle back to an idea after it stops feeling like an ambush. You can also mention that a [hearing evaluation](/hearing-testing/) is painless and carries no obligation, which lowers the stakes. Sometimes the seed just needs a week or two to take."],
@@ -2163,7 +2171,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Hearing Loss & Cognitive Health | California Hearing Center",
     variant: "condition",
     datePublished: "2025-06-20",
-    dateModified: "2026-07-23",
+    dateModified: "2026-09-29",
     metaDescription:
       "Straining to hear taxes your attention and memory in daily life. Learn how hearing loss connects to everyday thinking and why a hearing check can help.",
     intro: [
@@ -2182,7 +2190,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Staying in the conversation keeps the mind busy", "Rich, back-and-forth conversation is one of the better daily workouts your brain gets. When hearing makes group settings feel like too much effort, it is tempting to sit them out, and that pullback tends to compound over time. Reduced engagement carries its own association with dulling cognition. Treating hearing helps in a way you feel immediately: you stay in the phone calls, the card games, and the family dinners rather than drifting to the edge of them. That benefit arrives now, not years down the line."],
       ["What treatment can and cannot promise", "It would be dishonest to say [hearing aids](/products/hearing-aids/) sharpen memory or hold off cognitive decline; the research does not support that leap, and no honest clinician should make it. What treatment reliably does is reduce the effort listening demands and keep you connected to the people and activities around you. Those are worthwhile gains on their own terms. Scientists are still sorting out how much treating hearing changes the longer arc of brain health, and for whom, so the case for acting rests on the everyday payoff rather than a guarantee."],
       ["A sensible first step", "You do not need to settle the science to make a smart move about your ears. If conversations have started to feel like harder work, or loved ones repeat themselves more than they used to, a simple [hearing test](/hearing-testing/) will tell you where things stand. Older adults in particular tend to notice the difference quickly, and there are options built with that stage of life in mind, from [hearing aids for seniors](/hearing-aids-for-seniors/) to fittings tuned for busy, noisy days. When you are ready, you can [schedule an evaluation](/contact/) and go from there."],
-    ],
+    ["More help beyond the hearing aid", "Listening can be tiring when hearing is poor. Our [Hearing Better hub](/hearing-better/) shows skills, training and technology that make listening easier."]
+  ],
     bullets: ["Listening effort", "Attention & recall", "Cognitive load", "Social engagement", "Clearer conversation", "Low-risk hearing check"],
     faqs: [
       ["Can hearing loss make me feel more forgetful?", "It genuinely can, in a roundabout way. When words are hard to catch, your brain spends effort decoding them instead of storing them, so conversations do not stick the way they should. That can look and feel like forgetfulness even when memory itself is fine. Improving how well you hear often clears up a good part of it."],
@@ -2446,7 +2455,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "How Medications Can Affect Your Hearing",
     variant: "condition",
     datePublished: "2018-04-15",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Some medications are ototoxic and can affect hearing, cause ringing, or upset balance. Learn the warning signs and why to talk to your doctor before stopping.",
     intro: [
@@ -2464,7 +2473,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["The medicines most often involved", "A short list accounts for most cases. Aminoglycoside antibiotics, used for serious infections, are well known for it, as are the platinum-based chemotherapy drugs such as cisplatin. Loop diuretics prescribed for heart and kidney problems can affect hearing, usually on a temporary basis. High doses of aspirin, other anti-inflammatory pain relievers, and some anti-malarial drugs can bring on ringing that tends to settle once the dose drops. Because the same drug can behave differently from one person to the next, your prescriber and pharmacist are the best source on your specific medications. If ringing is what you notice, our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/) explains the symptom and when it is worth evaluating."],
       ["Signs your ears may be affected", "These changes are easy to brush off, so it helps to know them. New or louder ringing, hissing, or buzzing in the ears is one of the earliest. You might notice speech sounding muffled, needing the television turned up, or struggling to follow a conversation in a noisy room. Some ototoxic drugs affect balance instead of, or alongside, hearing, which can feel like dizziness or unsteadiness on your feet. If any of this starts during a course of medication, write down when it began and mention it to both your prescriber and an audiologist. Catching it early gives everyone more room to respond."],
       ["Working with your doctor and your audiologist", "The safest path runs through the people managing your care. Ask your prescriber whether any medicine you take carries a hearing risk, and whether a [baseline hearing evaluation](/hearing-testing/) makes sense before you begin. For high-risk treatments, audiologists often monitor hearing throughout the course so any shift is caught while there is still room to adjust. If you do end up with lasting hearing loss, well-fit [hearing aids](/products/hearing-aids/) can restore a great deal of clarity, and ongoing ringing can be eased with approaches like [sound therapy](/tinnitus/sound-therapy/). None of that means going off your medication. It means managing its effects with a plan."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Ototoxic medications", "Inner ear hair cells", "Tinnitus & balance", "Baseline hearing test", "Never stop meds alone", "Talk to your doctor"],
     faqs: [
       ["Which medications are most likely to affect hearing?", "The ones clinicians watch most closely are aminoglycoside antibiotics, platinum-based chemotherapy drugs like cisplatin, and loop diuretics. High-dose aspirin and some other pain relievers can cause ringing that usually settles once the dose comes down. Because reactions vary from person to person, your pharmacist or prescriber can tell you where your specific medicines fall."],
@@ -2736,7 +2746,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "How to Talk With Someone Who Has Hearing Loss",
     variant: "condition",
     datePublished: "2023-02-20",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Simple, practical ways to talk with someone who has hearing loss: get their attention, face them, rephrase rather than repeat, and cut background noise.",
     intro: [
@@ -2758,7 +2768,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Tame the background", "Noise is the hidden villain of most difficult conversations. A television murmuring in the corner, a busy kitchen, or a crowded restaurant forces the brain to pull one voice out of a wall of sound, which tires out even typical hearing. Turn the TV off before an important talk, choose the quieter side of a cafe, and ask for a booth against a wall. Well-fit [hearing aids](/products/hearing-aids/) handle noise far better than older models did, though no device erases a loud room completely."],
       ["Say the topic, then the details", "People fill in a surprising amount of any conversation from context. If you switch subjects without warning — from the garden to a doctor's appointment to what's for dinner — a listener with hearing loss has to catch every word cold. Naming the topic first hands them a frame: 'About Saturday...' or 'Switching gears, the pharmacy called.' A one-second heads-up turns guesswork into easy following."],
       ["When the room keeps winning", "Some settings stay hard no matter how careful everyone is: a large family dinner, a house of worship, a car full of road noise. If a loved one is still working this hard in everyday conversation, that is a signal worth acting on rather than adapting around forever. A [hearing evaluation](/hearing-testing/) shows exactly where the gaps are, and a proper [hearing aid fitting](/hearing-aid-fitting/) can be tuned for the noisy places that cause the most trouble. For older adults in particular, the right [hearing technology for seniors](/hearing-aids-for-seniors/) makes group settings livable again. Our team in San Mateo and San Carlos can walk a family through what to expect."],
-    ],
+    ["A family guide", "Our [family guide](/hearing-better/family-guide/) has five simple habits for talking together, and a card you can print."]
+  ],
     bullets: ["Get attention first", "Face the light", "Slow, don't shout", "Rephrase, don't repeat", "Quiet the room", "Name the topic"],
     faqs: [
       ["Why does speaking louder sometimes make things worse?", "Volume and clarity are not the same thing. When you shout, the shape of consonants distorts and the sound can turn harsh, which is uncomfortable for ears that are already sensitive. A calm, even pace at normal volume, with the person facing you, delivers far more usable speech than sheer loudness ever will."],
@@ -3738,7 +3749,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Heart Health & Your Hearing | California Hearing Center",
     variant: "condition",
     datePublished: "2018-05-21",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Your heart and your hearing share the same blood vessels, so heart-healthy habits help protect your ears too. Here are six simple ones worth building on.",
     intro: [
@@ -3759,7 +3770,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Eat with your vessels in mind", "The eating patterns that support heart health, with plenty of vegetables, fruit, whole grains, and fish and less salt and processed food, also support the small vessels that feed your hearing. No single food protects your ears. What seems to help is the overall pattern kept up over time. If you already eat this way for your heart, your hearing is benefiting as well."],
       ["Steer clear of tobacco", "Smoking narrows blood vessels and reduces the oxygen your tissues receive, and the inner ear is no exception. People who smoke are more likely to develop hearing loss than those who do not, and secondhand smoke appears to matter as well. Giving up tobacco is one of the harder heart-healthy changes to make and one of the most rewarding. If you have tried before, your doctor can point you to support that improves the odds."],
       ["Stay ahead of blood sugar", "High blood sugar, as in diabetes, can damage small blood vessels and nerves over time, and hearing is among the things that can be affected. Keeping blood sugar in range protects your heart, your eyes, your kidneys, and, as it turns out, your ears. If you live with diabetes or prediabetes, it is worth pairing your regular checkups with an occasional [hearing test](/hearing-testing/) so any change is caught early."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Blood flow to the ears", "Blood pressure", "Cholesterol", "Physical activity", "Tobacco-free", "Regular hearing checks"],
     faqs: [
       ["Can improving my heart health reverse hearing loss I already have?", "Honest answer: no. Once the hair cells in the inner ear are damaged, healthy habits will not bring them back. What these habits can do is help protect the hearing you still have and support your overall health. If you already notice a change, a professional [hearing aid fitting](/hearing-aid-fitting/) is the proven way to hear more clearly day to day."],
@@ -4157,7 +4169,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Diabetes and Hearing Loss: What You Should Know",
     variant: "condition",
     datePublished: "2018-02-06",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Diabetes is linked to a higher rate of hearing loss, though the link is an association, not a certainty. A baseline hearing test is a low-risk first step.",
     intro: [
@@ -4179,7 +4191,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Caring for both at the same time", "Steady blood sugar control is good for your whole body, and your ears are part of that. Beyond the numbers, regular hearing checks let you act early if a change appears. When treatment makes sense, well-fitted [hearing aids](/products/hearing-aids/) restore clarity and reduce the daily strain of straining to listen. A careful [hearing aid fitting](/hearing-aid-fitting/) tunes the devices to your specific loss, so the goal is easier conversation, not just more volume."],
       ["When a change needs prompt attention", "A few situations call for quick action rather than watchful waiting. Sudden hearing loss in one or both ears, or a fast drop over a day or two, is a medical urgency and should be seen right away, not booked for next month. Temporary muffling or dizziness during a low blood sugar episode is different and usually eases as your levels stabilize, but tell your care team if it keeps happening. When in doubt, it is always reasonable to ask."],
       ["Where our team fits in", "You do not need to sort out the science on your own to make a smart choice about your ears. Our [audiologists](/about-us/) can test your hearing, explain what the results mean in plain language, and lay out your options without pressure. If you are managing diabetes and have wondered about your hearing, [reach out to schedule](/contact/) a visit, and we will help you build hearing care into the routine you already keep."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Small-vessel health", "Inner-ear nerves", "Baseline testing", "Blood sugar control", "Early detection", "Whole-body care"],
     faqs: [
       ["Can diabetes cause hearing loss?", "The honest answer is that diabetes is strongly associated with hearing loss, but association is not the same as proof of cause. High blood sugar is believed to affect the small vessels and nerves in the inner ear over time, which is a plausible pathway. Because hearing can decline for several reasons at once, no test can single out diabetes as the lone culprit for one person."],
@@ -4886,7 +4899,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Accommodating a Loved One With Hearing Loss",
     variant: "condition",
     datePublished: "2021-03-23",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Simple, practical ways to help a loved one with hearing loss communicate and stay connected, plus signs it may be time for a professional hearing test.",
     intro: [
@@ -4907,7 +4920,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Let technology carry some of the load", "Plenty of tools can bridge the gap. Turn on captions for the TV and for video calls, which alone can transform family movie nights. Many phones offer live captioning and amplified volume, and simple assistive listening devices can help in the car or across a room. If your loved one already wears [hearing aids](/products/hearing-aids/), make sure they're being worn and are in good shape; a device sitting in a drawer helps no one. When something isn't working right, a professional [hearing aid fitting](/hearing-aid-fitting/) can retune the settings to fit real life."],
       ["Know when it's time for a professional", "Accommodation has real limits. If your family member strains even in quiet rooms, turns the TV up until it bothers everyone, withdraws from gatherings, or seems confused in ways that track with noisy settings, those are signs to stop compensating and get a real evaluation. Sudden hearing loss in one ear, pain, dizziness, or ringing deserve prompt attention. Our [team](/about-us/) can sort out what's going on and explain the options plainly, and much of the guidance we offer for [older adults](/hearing-aids-for-seniors/) is built around exactly these situations."],
       ["Patience is part of the plan", "Some days will go smoothly and some won't, and progress with hearing aids or new habits takes time. Try not to answer for your loved one or finish their sentences, even when it would be faster; that quietly chips away at their confidence. Celebrate the wins — a full dinner conversation, a phone call that went fine — and keep the door open. The goal isn't a perfect fix overnight. It's helping the person you care about stay part of the moments that matter, while you nudge them toward the [help](/contact/) that lasts."],
-    ],
+    ["A family guide", "Our [family guide](/hearing-better/family-guide/) has five simple habits for talking together, and a card you can print."]
+  ],
     bullets: ["Face-to-face talking", "Less background noise", "Good lighting", "Rephrase, don't repeat", "Captions & devices", "Professional evaluation"],
     faqs: [
       ["Should I speak louder to someone with hearing loss?", "Not really — clarity beats volume. Shouting distorts your words and can come across as angry. Face the person, keep your mouth visible, and speak at a steady, slightly slower pace. If they miss something, rephrase it rather than repeating the same words louder."],
@@ -5054,7 +5068,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Health Implications of Untreated Hearing Loss",
     variant: "condition",
     datePublished: "2019-05-07",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Untreated hearing loss is linked to isolation, falls and cognitive decline, but association isn't proof. What the evidence supports, and why a test helps.",
     intro: [
@@ -5068,6 +5082,9 @@ export const blogPosts: Record<string, PageContent> = {
       "The daily costs — fatigue, missed conversation, withdrawal — are real and largely reversible.",
       "A hearing test is quick and low-risk, and it clarifies what, if anything, needs attention.",
     ],
+    extraFigures: [
+      { src: "/assets/core/hearing-better__health-wheel.svg", label: "Hearing and your health", alt: "Wheel graphic with hearing loss in the center and eight linked topics around it: diabetes, smoking, medications, heart health, kidney disease, balance, dementia, and tinnitus.", caption: "Hearing loss is linked to many other conditions. Links are associations, not proof of cause.", href: "/assets/core/hearing-better__health-wheel.svg", after: 0 },
+    ],
     sections: [
       ["The strain you stop noticing", "The first cost of untreated hearing loss is effort. When speech arrives unclear, your brain fills the gaps by working harder, and that extra labor runs in the background all day. People describe coming home drained after a normal afternoon of meetings or errands, without ever connecting the exhaustion to their ears. A well-matched [hearing aid fitting](/hearing-aid-fitting/) is meant to lower that effort so more of your energy goes to the conversation itself, not to decoding it."],
       ["Pulling back from people", "As hearing gets harder, social life often shrinks by degrees. Group dinners, phone calls, and noisy gatherings start to feel like more effort than they are worth, so people accept fewer invitations and speak up less. That retreat feeds loneliness, which carries its own well-documented links to poor health and low mood. Treating hearing tends to reverse the pattern, drawing people back into the relationships they had been letting slide."],
@@ -5075,7 +5092,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Mood and mental energy", "Difficulty hearing wears on mood. When conversation becomes work, when you miss the joke or the punchline lands a beat late, frustration and self-consciousness build. Over time some people slip toward low mood or anxiety about social situations. This is not a character flaw or an inevitable part of aging; it is a predictable response to a fixable communication problem, and it often eases once hearing is addressed."],
       ["Hearing and thinking over time", "The connection that draws the most attention is between hearing loss and cognitive decline. The Lancet Commission on dementia prevention lists untreated hearing loss among the modifiable risk factors that appear to raise the odds of decline, and it describes the relationship in careful terms. Careful is the right word: association is not proof, and no one can promise that treating your hearing will hold cognitive problems off. What is fair to say is that the link is steady across studies, and that caring for your hearing is one of the more approachable items on any prevention list."],
       ["Why a hearing test is the sensible move", "You do not need certainty about any single condition to make a smart call here. A hearing test is short, comfortable, and low-risk, and it tells you plainly whether hearing is part of what you have been feeling. If it is, options range from simple [hearing aids](/products/hearing-aids/) to guidance built around [older adults](/hearing-aids-for-seniors/) who want to stay active and engaged. Our [team](/about-us/) will walk you through the results without pressure and explain what they do and do not mean."],
-    ],
+    ["How hearing connects to other conditions", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Listening effort", "Social withdrawal", "Balance & falls", "Mood & energy", "Cognitive risk", "San Mateo & San Carlos"],
     faqs: [
       ["Is untreated hearing loss really a health issue, or just an inconvenience?", "It is both. The inconvenience is real, but untreated loss is also linked to isolation, low mood, greater fall risk, and cognitive decline. Not every link is proven cause, yet together they make a strong case for having your hearing checked rather than waiting."],
@@ -5136,7 +5154,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "The Links Between Smoking and Hearing Loss",
     variant: "condition",
     datePublished: "2018-03-09",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Smoking is linked to a higher risk of hearing loss and tinnitus. How tobacco may affect your ears, why quitting helps, and when to get your hearing tested.",
     intro: [
@@ -5157,7 +5175,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["The tinnitus connection", "Smoking has also been associated with a greater likelihood of [tinnitus](/tinnitus/), the ringing or buzzing many people notice in quiet moments. The same effects on blood flow may play a part, and nicotine is a stimulant that can make ringing feel more intrusive. We cannot promise that quitting will silence tinnitus, but reducing exposure is a sensible step, and our clinicians can talk through management options if the sound is wearing on you."],
       ["Quitting helps, whenever you do it", "Here is the encouraging part. Cutting down or stopping lowers the exposure that may be working against your ears, and it is worth doing at any age. Quitting will not reverse hearing loss that has already set in, and we will not suggest otherwise, but it removes an ongoing risk and supports the rest of your health at the same time. If you already wear [hearing aids](/products/hearing-aids/) or are considering them, protecting the hearing you have left makes that investment go further."],
       ["Getting your hearing checked", "You do not need symptoms to justify a hearing test, and you certainly do not need to have quit first. A [hearing evaluation](/hearing-testing/) is quick, comfortable, and gives you a clear baseline to measure against over the years. If the results point to loss, we will walk you through what they mean and, where it helps, discuss a [hearing aid fitting](/hearing-aid-fitting/) suited to your life. Reach out to [schedule a visit](/contact/) at either Peninsula office whenever you are ready."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Blood flow & oxygen", "Higher hearing-loss risk", "Secondhand smoke", "Tinnitus link", "Quitting helps", "San Mateo & San Carlos"],
     faqs: [
       ["Can smoking really cause hearing loss?", "Research consistently links smoking to a higher risk of hearing loss, but a link is not the same as proof of cause for any one person. Noise, age, and genetics matter too. Even so, smoking is a risk you can act on, which is why quitting and a [hearing test](/hearing-testing/) both make sense."],
@@ -5258,7 +5277,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Auracast and Hearing Aids: What It Means for You",
     variant: "product",
     datePublished: "2026-03-21",
-    dateModified: "2026-07-23",
+    dateModified: "2026-09-29",
     metaDescription:
       "Auracast is a new Bluetooth broadcast standard that can send sound straight to compatible hearing aids. Here is what it does and where it stands today.",
     intro: [
@@ -5279,7 +5298,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["Where you can expect to find it", "The natural homes for Auracast are the places where public sound is hard to follow: airports, theaters, houses of worship, gyms, transit hubs, conference rooms, and museums. Some venues and manufacturers have started adding it, and phone makers are building in the controls to find and join broadcasts. Even so, this is a gradual buildout. You may not run into Auracast at your local venues for a while yet, and it is fair to treat broad availability as something coming rather than something already here."],
       ["Whether your hearing aids can tune in", "To receive an Auracast broadcast, a hearing aid has to support Bluetooth LE Audio, which generally means a newer model. Many older hearing aids, even ones with Bluetooth streaming, use the previous standard and cannot join an Auracast broadcast. Some setups also rely on a phone or a small assistant device to browse and select broadcasts. If you are shopping, it is worth checking each brand's LE Audio support, and our team can help you compare what is available across [major hearing aid brands](/products/hearing-aids-by-brand/)."],
       ["What it means for you today", "Auracast is a real step forward, and it is reasonable to be interested in it. It is not a reason to rush a purchase or to feel that your current hearing aids are behind. If your devices work well for you, they still work well. If you are due for new ones or weighing an upgrade, Auracast support is one feature to consider among many, alongside fit, sound quality, and battery life. A good starting point is a current [hearing evaluation](/hearing-testing/) and a conversation about how and where you most want to hear better. From there, our [team](/about-us/) can tell you where Auracast fits into the picture, and where it does not yet."],
-    ],
+    ["Using Auracast for TV", "Want TV sound in your hearing aids now? See our guide to [hearing the TV clearly](/hearing-better/tv-and-streaming/)."]
+  ],
     bullets: ["Bluetooth LE Audio", "One-to-many broadcast", "Clearer public audio", "Like a modern telecoil", "Newer hearing aids only", "Still rolling out"],
     faqs: [
       ["Is Auracast the same as regular Bluetooth?", "Not quite. Standard Bluetooth pairs two devices in a private connection, while Auracast broadcasts one audio stream that many listeners can join at once. It is built on Bluetooth LE Audio, a newer generation, so a device has to support that standard to use it."],
@@ -5381,7 +5401,7 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "Real-Ear Measurement: What It Is & Why It Matters",
     variant: "product",
     datePublished: "2026-03-10",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Real-ear measurement checks the sound your hearing aids deliver at the eardrum, so your fitting matches your prescription instead of a factory estimate.",
     intro: [
@@ -5400,7 +5420,8 @@ export const blogPosts: Record<string, PageContent> = {
       ["How the measurement works", "The appointment stays comfortable. Your audiologist places the soft probe tube in your ear canal, then positions the hearing aid alongside it. Speech plays at conversational levels while a screen shows two lines: the target your hearing calls for, and what your aids are producing. Where the lines separate, small adjustments bring them together, pitch by pitch. The whole check adds only a short while to the visit, and you can often hear speech sharpen as the settings close in."],
       ["Why the target matters for speech", "Speech is not one sound but a spread of them, from low vowels to the faint consonants like 's', 'f', and 'th' that separate similar words. Those quiet high notes are the first to fade with age-related loss and the easiest for a default setting to leave too soft. Matching the prescription across the full range is what lets you catch those consonants rather than guess at them, especially in a noisy restaurant or over the phone. This is the same reason verification matters as much for [hearing aids for seniors](/hearing-aids-for-seniors/) as for anyone else."],
       ["A standard we hold ourselves to", "Real-ear measurement is a recognized best practice in fitting, and we still see aids come in that were never measured this way. As a [HearingUp-approved provider](/resources/hearingup-approved-provider/), our team treats verification as part of the job rather than a premium add-on. If you are unsure whether your current aids were ever measured this way, you can [bring them in](/contact/) and find out. A quick check can reveal settings that have been leaving speech quieter than your prescription intended."],
-    ],
+    ["More help beyond the hearing aid", "A verified fitting is the base. For noisy rooms, TV and phone calls, see our [Hearing Better hub](/hearing-better/)."]
+  ],
     bullets: ["Probe-tube measurement", "Sound at the eardrum", "Prescription targets", "Beyond first-fit", "Clearer consonants", "San Mateo & San Carlos"],
     faqs: [
       ["Is real-ear measurement uncomfortable?", "The probe tube is thin and soft, and most people barely register it. It sits in the canal for a few minutes while speech plays, and nothing is inserted deeply or painfully. If anything, the interesting part is watching the two lines on the screen move together as your audiologist dials in the settings."],

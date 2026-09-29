@@ -1,0 +1,35 @@
+"/hearing-better/noisy-rooms-and-distance/": {
+  kicker: "Hearing Better",
+  headline: "Following Conversation in Noise and Across a Room",
+  metaTitle: "Hearing in Noise and Across a Room: What Helps",
+  metaDescription: "Noise, distance and echo make speech hard to follow, even with hearing aids. Learn communication skills, listening training and wireless microphones. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "Restaurants, family dinners and meetings are the hardest places to hear. Noise, distance and echo all work against you. A hearing aid helps, but it cannot remove every one of these problems.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Learn communication skills", "Communication skills help you hear better, especially in noise. The 5 Keys program teaches simple practical habits. You learn where to sit, how to set up a room and what to ask the speaker to do. Ask us for the simple handouts or the 5 Keys book. Our [Resources page](/resources/) explains how to enroll."],
+    ["Train your listening", "Auditory training is like physical therapy for listening. LACE and clEAR are programs you do at home. They practice hearing speech in noise, fast speech and competing voices. Hearing aids deliver sound. Training helps your brain use it. Ask us how to get started."],
+    ["Use a wireless microphone", "A wireless microphone is worn or placed close to the speaker. It sends a clearer voice signal directly to your hearing aids. Roger microphones from Phonak are one example. This helps when noise, distance or echo get in the way. Some Phonak microphones work with other hearing aid brands, so ask us what fits yours."],
+    ["Make sure your hearing aids are set correctly", "A good fitting matters. Real-ear measurement checks that your hearing aids deliver the right sound to your ears. Read [what real-ear measurement is](/what-is-real-ear-measurement/). If you struggle in noise, we can also check your settings and programs."],
+    ["Simple habits that help", "Choose a seat with your back to a wall. Face the person you want to hear. Ask for a quieter table. Tell people you have hearing loss. These habits cost nothing and help in any room."]
+  ],
+  bulletLinks: [
+    ["Programs: 5 Keys, LACE and clEAR", "/resources/"],
+    ["What is real-ear measurement?", "/what-is-real-ear-measurement/"],
+    ["Adjusting to new hearing aids", "/adjusting-to-new-hearing-aids/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Noise, distance and echo make speech hard to follow, even with good hearing aids.",
+    "Skills, training and a wireless microphone each help in a different way.",
+    "A well-verified fitting is the base for all of them."
+  ],
+  faqs: [
+    ["Why do I hear worse in restaurants?", "Background noise covers speech. Your brain must work harder to sort voices from noise. Hearing loss makes that harder, and hearing aids only partly solve it."],
+    ["Does a wireless microphone replace my hearing aids?", "No. It works with your hearing aids. It sends the speaker's voice straight to them."],
+    ["How long does listening training take?", "It depends on the program. We will explain the time each one needs when you enroll."]
+  ],
+  image: "/assets/core/hearing-better__noisy-rooms-and-distance.svg",
+  imageLabel: "Noisy rooms and distance"
+},

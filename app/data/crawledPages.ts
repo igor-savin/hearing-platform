@@ -41,6 +41,54 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/hearing-better/",
+    "title": "Hearing Better: Help Beyond the Hearing Aid | California Hearing Center",
+    "h1": "Hearing Better: Help Beyond the Hearing Aid",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/hearing-better/tv-and-streaming/",
+    "title": "Hearing the TV Clearly With Hearing Aids | California Hearing Center",
+    "h1": "Hearing the TV Clearly With Hearing Aids",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/hearing-better/phones-and-captions/",
+    "title": "Phone Calls and Captions for People With Hearing Loss | California Hearing Center",
+    "h1": "Phone Calls and Captions for People With Hearing Loss",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/hearing-better/noisy-rooms-and-distance/",
+    "title": "Following Conversation in Noise and Across a Room | California Hearing Center",
+    "h1": "Following Conversation in Noise and Across a Room",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/hearing-better/family-guide/",
+    "title": "A Family Guide: Helping Someone You Love Hear | California Hearing Center",
+    "h1": "A Family Guide: Helping Someone You Love Hear",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/hearing-better/hearing-and-your-health/",
+    "title": "Hearing and Your Health: What Else Hearing Touches | California Hearing Center",
+    "h1": "Hearing and Your Health: What Else Hearing Touches",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/resources/",
     "title": "Resources | California Hearing Center",
     "h1": "Resources",

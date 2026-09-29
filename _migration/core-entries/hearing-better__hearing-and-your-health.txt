@@ -1,0 +1,45 @@
+"/hearing-better/hearing-and-your-health/": {
+  kicker: "Hearing Better",
+  headline: "Hearing and Your Health: What Else Hearing Touches",
+  metaTitle: "Hearing and Your Health: Conditions Linked to Hearing Loss",
+  metaDescription: "Hearing loss is linked to diabetes, heart health, kidney disease, balance, medications, smoking, tinnitus and dementia risk. See the 2024 Lancet numbers. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "Hearing does not stand alone. Research links hearing loss to many other parts of health. These are associations found in studies. They do not prove that one thing causes another. Use them as a reason to check your hearing, not as a reason to worry.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["The 2024 Lancet numbers", "In 2024, the Lancet Commission on dementia prevention named 14 risk factors that can be changed. Together they are linked to about 45% of dementia cases worldwide. Hearing loss in midlife is one of them. It is tied with high LDL cholesterol at 7% each, the highest share on the list. These are estimates for large populations. They are not your personal risk. Studies show an association. No study has proven that hearing aids prevent dementia. See our page on [hearing loss and dementia](/could-there-be-a-link-between-hearing-loss-and-dementia/) for more."],
+    ["Conditions linked to hearing loss", "Researchers have found links between hearing loss and diabetes, smoking, some medications, heart health, kidney disease, balance problems, tinnitus and memory. Each has its own page on our site. Follow the links below. If you have one of these conditions, ask your doctor and your audiologist how it may affect your hearing."],
+    ["What you can do", "Have your hearing tested. Tell your audiologist about your medicines and health conditions. If you need hearing aids, wear them consistently. Stay socially active and keep listening. Treating hearing loss helps you take part in life, and that matters whatever the research shows."],
+    ["Source", "Livingston G, et al. Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission. Lancet 2024. doi 10.1016/S0140-6736(24)01296-0. We redrew the chart from the published numbers. Percentages are population estimates and are updated by the Commission from time to time."]
+  ],
+  bulletLinks: [
+    ["Diabetes and hearing", "/the-connection-between-diabetes-and-hearing-health/"],
+    ["Smoking and hearing loss", "/what-are-the-links-between-smoking-and-hearing-loss/"],
+    ["Medications and hearing", "/how-do-medications-affect-hearing-health/"],
+    ["Heart health and hearing", "/protect-your-heart-and-preserve-hearing/"],
+    ["Kidney disease and hearing", "/connection-between-kidney-disease-and-hearing-loss/"],
+    ["Balance and hearing", "/balance-and-hearing-health/"],
+    ["Tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Hearing loss and dementia", "/could-there-be-a-link-between-hearing-loss-and-dementia/"],
+    ["Health implications of hearing loss", "/what-are-the-health-implications-of-hearing-loss/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Hearing loss is linked to many health conditions. Links are not proof of cause.",
+    "The 2024 Lancet report ties hearing loss with high LDL cholesterol at 7%, the highest on its list.",
+    "A hearing test is a simple first step."
+  ],
+  faqs: [
+    ["Do hearing aids prevent dementia?", "This has not been proven. Studies show that hearing loss is linked to higher dementia risk. Whether treating it lowers that risk is still being studied."],
+    ["Does 7% mean I have a 7% chance of dementia?", "No. It is the estimated share of cases across a population linked to that factor. It is not a personal risk."],
+    ["Should I worry if I have one of these conditions?", "No. Tell your doctor and audiologist, and have your hearing checked."]
+  ],
+  image: "/assets/core/hearing-better__health-wheel.svg",
+  imageLabel: "Hearing and your health",
+  imageAlt: "Wheel graphic with hearing loss in the center and eight linked topics around it: diabetes, smoking, medications, heart health, kidney disease, balance, dementia, and tinnitus.",
+  image2: "/assets/core/hearing-better__lancet-2024-chart.svg",
+  image2Label: "14 risk factors for dementia",
+  image2Caption: "Redrawn from the 2024 Lancet Commission report (doi 10.1016/S0140-6736(24)01296-0). Population estimates, not personal risk.",
+  image2Href: "/assets/core/hearing-better__lancet-2024-chart.svg"
+},

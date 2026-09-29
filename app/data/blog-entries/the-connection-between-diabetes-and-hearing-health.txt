@@ -4,7 +4,7 @@
     metaTitle: "Diabetes and Hearing Loss: What You Should Know",
     variant: "condition",
     datePublished: "2018-02-06",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Diabetes is linked to a higher rate of hearing loss, though the link is an association, not a certainty. A baseline hearing test is a low-risk first step.",
     intro: [
@@ -26,7 +26,8 @@
       ["Caring for both at the same time", "Steady blood sugar control is good for your whole body, and your ears are part of that. Beyond the numbers, regular hearing checks let you act early if a change appears. When treatment makes sense, well-fitted [hearing aids](/products/hearing-aids/) restore clarity and reduce the daily strain of straining to listen. A careful [hearing aid fitting](/hearing-aid-fitting/) tunes the devices to your specific loss, so the goal is easier conversation, not just more volume."],
       ["When a change needs prompt attention", "A few situations call for quick action rather than watchful waiting. Sudden hearing loss in one or both ears, or a fast drop over a day or two, is a medical urgency and should be seen right away, not booked for next month. Temporary muffling or dizziness during a low blood sugar episode is different and usually eases as your levels stabilize, but tell your care team if it keeps happening. When in doubt, it is always reasonable to ask."],
       ["Where our team fits in", "You do not need to sort out the science on your own to make a smart choice about your ears. Our [audiologists](/about-us/) can test your hearing, explain what the results mean in plain language, and lay out your options without pressure. If you are managing diabetes and have wondered about your hearing, [reach out to schedule](/contact/) a visit, and we will help you build hearing care into the routine you already keep."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Small-vessel health", "Inner-ear nerves", "Baseline testing", "Blood sugar control", "Early detection", "Whole-body care"],
     faqs: [
       ["Can diabetes cause hearing loss?", "The honest answer is that diabetes is strongly associated with hearing loss, but association is not the same as proof of cause. High blood sugar is believed to affect the small vessels and nerves in the inner ear over time, which is a plausible pathway. Because hearing can decline for several reasons at once, no test can single out diabetes as the lone culprit for one person."],

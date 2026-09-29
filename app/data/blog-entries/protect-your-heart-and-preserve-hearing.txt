@@ -4,7 +4,7 @@
     metaTitle: "Heart Health & Your Hearing | California Hearing Center",
     variant: "condition",
     datePublished: "2018-05-21",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Your heart and your hearing share the same blood vessels, so heart-healthy habits help protect your ears too. Here are six simple ones worth building on.",
     intro: [
@@ -25,7 +25,8 @@
       ["Eat with your vessels in mind", "The eating patterns that support heart health, with plenty of vegetables, fruit, whole grains, and fish and less salt and processed food, also support the small vessels that feed your hearing. No single food protects your ears. What seems to help is the overall pattern kept up over time. If you already eat this way for your heart, your hearing is benefiting as well."],
       ["Steer clear of tobacco", "Smoking narrows blood vessels and reduces the oxygen your tissues receive, and the inner ear is no exception. People who smoke are more likely to develop hearing loss than those who do not, and secondhand smoke appears to matter as well. Giving up tobacco is one of the harder heart-healthy changes to make and one of the most rewarding. If you have tried before, your doctor can point you to support that improves the odds."],
       ["Stay ahead of blood sugar", "High blood sugar, as in diabetes, can damage small blood vessels and nerves over time, and hearing is among the things that can be affected. Keeping blood sugar in range protects your heart, your eyes, your kidneys, and, as it turns out, your ears. If you live with diabetes or prediabetes, it is worth pairing your regular checkups with an occasional [hearing test](/hearing-testing/) so any change is caught early."],
-    ],
+    ["Hearing and your wider health", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
     bullets: ["Blood flow to the ears", "Blood pressure", "Cholesterol", "Physical activity", "Tobacco-free", "Regular hearing checks"],
     faqs: [
       ["Can improving my heart health reverse hearing loss I already have?", "Honest answer: no. Once the hair cells in the inner ear are damaged, healthy habits will not bring them back. What these habits can do is help protect the hearing you still have and support your overall health. If you already notice a change, a professional [hearing aid fitting](/hearing-aid-fitting/) is the proven way to hear more clearly day to day."],

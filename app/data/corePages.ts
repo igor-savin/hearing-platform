@@ -575,7 +575,8 @@ const rawCorePages: Record<string, PageContent> = {
     ["A comfortable physical fit", "Sound aside, the device has to feel right. We make sure the aid or its dome or earmold rests securely and comfortably, does not whistle from feedback, and stays put when you talk and chew. An aid that pinches, slips, or squeals is one you will not wear, so physical comfort is part of the fitting, not an afterthought."],
     ["Learning your devices", "Before you leave, we walk you through the practical side: inserting and removing the aids, including the [correct insertion depth](/how-far-do-you-push-hearing-aid-in/) for the style you are wearing, changing or charging batteries, cleaning the wax guards and ports, connecting to your phone, and switching programs. We give you clear care instructions so small maintenance never becomes a reason to stop wearing them, and we handle [cleaning, servicing, and repairs](/services/hearing-aid-repair/) down the road."],
     ["Adapting to new hearing takes time", "New hearing aids rarely feel perfect on day one. Your brain has grown used to a quieter world, and sounds you have not heard clearly in years, from footsteps to your own voice, can seem sharp at first. This settles. We encourage you to wear the aids [as many hours a day as you can](/how-many-hours-a-day-should-you-wear-new-hearing-aids-a-complete-guide/), be patient over the first weeks, and keep a simple log of moments when hearing was difficult so we can target the next adjustment."],
-    ["Follow-up and fine-tuning", "About a week or two after the fitting you return so we can refine the settings against your real-world experience and repeat verification. This follow-up is where good hearing aids become great, because it uses what you have learned in actual conversations, restaurants, and meetings rather than the quiet of the booth. Ongoing adjustments remain available whenever your needs change."]
+    ["Follow-up and fine-tuning", "About a week or two after the fitting you return so we can refine the settings against your real-world experience and repeat verification. This follow-up is where good hearing aids become great, because it uses what you have learned in actual conversations, restaurants, and meetings rather than the quiet of the booth. Ongoing adjustments remain available whenever your needs change."],
+    ["Beyond the hearing aid", "A fitting is the start. Skills, listening training and extra devices such as TV streamers and wireless microphones can help in the places hearing aids struggle. See our [Hearing Better hub](/hearing-better/)."]
   ],
   bulletLinks: [
     ["Prescriptive programming", "/hearing-aid-fitting/"],
@@ -670,6 +671,233 @@ const rawCorePages: Record<string, PageContent> = {
   image: "/assets/core-photos/hearing-aid-cost.jpg",
   imageLabel: "Bring your quote and your audiogram",
   imageAlt: "Audiologist reviewing a hearing aid quote with a patient"
+},
+  "/hearing-better/": {
+  kicker: "Hearing Better",
+  headline: "Hearing Better: Help Beyond the Hearing Aid",
+  metaTitle: "Hearing Better: Tips and Technology Beyond Hearing Aids",
+  metaDescription: "Hearing aids help, but they do not fix every hearing problem. See five ways to hear better at the TV, on the phone, in noisy rooms and at home. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "No one hears perfectly all the time, even people with normal hearing. Hearing aids help a great deal. They do not solve every problem in every room. Our patients do best when they also learn what else they can do.",
+    "This hub gathers those things in one place. Start with the problem that bothers you most. Try at least two of the options below. Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Five ways to hear better", "First, learn communication skills. The 5 Keys program teaches where to sit, how to set up a room and what to ask the speaker to do. Second, train your listening. LACE and clEAR are practice programs you do at home. Third, use a TV streamer or Auracast to send TV sound straight to your hearing aids. Fourth, consider captioning glasses, which show live captions of speech. Fifth, use a wireless microphone that puts a clearer voice signal into your hearing aids. Each of these fills a gap that a hearing aid alone leaves open."],
+    ["Start with your problem", "Pick the situation that frustrates you most. Each page below explains what helps, what to ask us, and what to expect. Most people find that one or two changes make the biggest difference, so you do not need to try everything."],
+    ["Programs and groups we recommend", "Our [Resources page](/resources/) lists the training programs we enroll patients in and the groups we trust. These include the Hearing Loss Association of America, the Ida Institute, California Connect for free phone equipment, the American Tinnitus Association, and blogs by people who live with hearing loss."],
+    ["Take it home", "Print these one-page guides for your fridge or your family. [Key Tips and Technology for Hearing Better (PDF)](/assets/downloads/chc-key-tips-and-technology-for-hearing-better.pdf) lists the five options above. [Key Resources for Hearing Better (PDF)](/assets/downloads/chc-key-resources-for-hearing-better.pdf) lists the groups and programs we recommend."],
+    ["Bring this to your appointment", "You do not need to know which product you want. Tell us where you struggle. We will suggest options that fit your hearing, your home and your budget. If you already wear hearing aids from another provider, we can still help you add these tools. Call 650-342-9449 or [contact us](/contact/) to book."]
+  ],
+  bulletLinks: [
+    ["I cannot hear the TV", "/hearing-better/tv-and-streaming/"],
+    ["I miss phone calls", "/hearing-better/phones-and-captions/"],
+    ["I cannot follow talk in noise or across a room", "/hearing-better/noisy-rooms-and-distance/"],
+    ["I want to help someone I love", "/hearing-better/family-guide/"],
+    ["What else does hearing touch?", "/hearing-better/hearing-and-your-health/"],
+    ["Programs and groups we recommend", "/resources/"]
+  ],
+  takeaways: [
+    "Hearing aids are a powerful tool, but they are only part of the answer.",
+    "Try at least two of the five options: skills, training, TV streaming, captions, or a wireless microphone.",
+    "Tell us where you struggle. We will suggest what fits your life."
+  ],
+  faqs: [
+    ["Do hearing aids fix all hearing problems?", "No. They make sound louder and clearer, but noise, distance, echo and fast talkers still make listening hard. Skills, training and extra devices fill those gaps."],
+    ["Which of these should I try first?", "Start with the problem that bothers you most. For many people that is the TV or noisy restaurants. Learning simple communication skills costs little and helps everywhere."],
+    ["Can I use these with hearing aids I bought elsewhere?", "Often yes. Many of these tools work with most major hearing aid brands. Bring your devices to an appointment and we will check what works with them."],
+    ["Do you sell every product on these pages?", "Not necessarily. We will tell you plainly which items we can order and fit, and which you would buy from the maker or another source."]
+  ],
+  image: "/assets/core/hearing-better__five-ways.svg",
+  imageLabel: "Five ways to hear better",
+  imageAlt: "Five ways to hear better: communication skills, listening training, a TV streamer, captioning glasses and a wireless microphone."
+},
+  "/hearing-better/family-guide/": {
+  kicker: "Hearing Better",
+  headline: "A Family Guide: Helping Someone You Love Hear",
+  metaTitle: "Family Guide: Helping a Loved One With Hearing Loss",
+  metaDescription: "Five simple habits for talking with someone who has hearing loss, and how to start the hearing test conversation. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "Hearing loss affects the whole family. You may repeat yourself often. Your loved one may seem to ignore you or avoid gatherings. Small changes in how you talk can help right away.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Five habits for talking together", "First, get their attention. Say their name and wait for eye contact. Second, face them. Keep your face in the light and stay close. Third, rephrase. If they missed a word, use different words instead of repeating the same ones louder. Fourth, cut the noise. Turn off the TV or move to a quiet spot. Fifth, pause. Give them time to follow. Print or share the card below."],
+    ["Do not shout", "Shouting can distort speech and make it harder to understand. Speak clearly at a normal pace and a slightly lower pitch. Do not cover your mouth."],
+    ["Start the hearing test conversation", "Many people wait years before they get help. Choose a calm moment. Talk about what you have noticed, and how it affects you both, instead of telling them what they must do. Offer to come to the appointment. Read our guide on [encouraging a loved one to take a hearing test](/encouraging-a-loved-one-to-take-a-hearing-test/)."],
+    ["Go further", "Our posts on [communicating with someone who has hearing loss](/how-to-best-communicate-with-the-hearing-impaired/) and [ways to accommodate your loved one](/ways-to-accommodate-your-loved-ones-with-hearing-loss/) have more ideas. The Hearing Loss Association of America also offers material for families. See our [Resources page](/resources/)."]
+  ],
+  bulletLinks: [
+    ["Encouraging a loved one to take a hearing test", "/encouraging-a-loved-one-to-take-a-hearing-test/"],
+    ["How to communicate with someone with hearing loss", "/how-to-best-communicate-with-the-hearing-impaired/"],
+    ["Ways to accommodate a loved one", "/ways-to-accommodate-your-loved-ones-with-hearing-loss/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Five habits help: get attention, face them, rephrase, cut noise and pause.",
+    "Do not shout. Speak clearly and face the person.",
+    "Offer to come along to a hearing test."
+  ],
+  faqs: [
+    ["My parent says they hear fine. What should I do?", "Do not argue. Give examples of what you have seen, such as missed words or a loud TV, and suggest a simple hearing test. A test is quick and gives facts."],
+    ["Can I come to the appointment?", "Yes. Family members are welcome, and many patients find it helps."],
+    ["Should I speak louder?", "Speak clearly, not louder. Face the person and cut background noise."]
+  ],
+  image: "/assets/core/hearing-better__family-guide.svg",
+  imageLabel: "Helping someone you love hear",
+  image2: "/assets/core/hearing-better__family-talk-card.svg",
+  image2Label: "Five habits for talking together",
+  image2Caption: "Family talk card: five habits for talking with someone who has hearing loss. Click to open full size for printing.",
+  image2Href: "/assets/core/hearing-better__family-talk-card.svg"
+},
+  "/hearing-better/hearing-and-your-health/": {
+  kicker: "Hearing Better",
+  headline: "Hearing and Your Health: What Else Hearing Touches",
+  metaTitle: "Hearing and Your Health: Conditions Linked to Hearing Loss",
+  metaDescription: "Hearing loss is linked to diabetes, heart health, kidney disease, balance, medications, smoking, tinnitus and dementia risk. See the 2024 Lancet numbers. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "Hearing does not stand alone. Research links hearing loss to many other parts of health. These are associations found in studies. They do not prove that one thing causes another. Use them as a reason to check your hearing, not as a reason to worry.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["The 2024 Lancet numbers", "In 2024, the Lancet Commission on dementia prevention named 14 risk factors that can be changed. Together they are linked to about 45% of dementia cases worldwide. Hearing loss in midlife is one of them. It is tied with high LDL cholesterol at 7% each, the highest share on the list. These are estimates for large populations. They are not your personal risk. Studies show an association. No study has proven that hearing aids prevent dementia. See our page on [hearing loss and dementia](/could-there-be-a-link-between-hearing-loss-and-dementia/) for more."],
+    ["Conditions linked to hearing loss", "Researchers have found links between hearing loss and diabetes, smoking, some medications, heart health, kidney disease, balance problems, tinnitus and memory. Each has its own page on our site. Follow the links below. If you have one of these conditions, ask your doctor and your audiologist how it may affect your hearing."],
+    ["What you can do", "Have your hearing tested. Tell your audiologist about your medicines and health conditions. If you need hearing aids, wear them consistently. Stay socially active and keep listening. Treating hearing loss helps you take part in life, and that matters whatever the research shows."],
+    ["Source", "Livingston G, et al. Dementia prevention, intervention, and care: 2024 report of the Lancet standing Commission. Lancet 2024. doi 10.1016/S0140-6736(24)01296-0. We redrew the chart from the published numbers. Percentages are population estimates and are updated by the Commission from time to time."]
+  ],
+  bulletLinks: [
+    ["Diabetes and hearing", "/the-connection-between-diabetes-and-hearing-health/"],
+    ["Smoking and hearing loss", "/what-are-the-links-between-smoking-and-hearing-loss/"],
+    ["Medications and hearing", "/how-do-medications-affect-hearing-health/"],
+    ["Heart health and hearing", "/protect-your-heart-and-preserve-hearing/"],
+    ["Kidney disease and hearing", "/connection-between-kidney-disease-and-hearing-loss/"],
+    ["Balance and hearing", "/balance-and-hearing-health/"],
+    ["Tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Hearing loss and dementia", "/could-there-be-a-link-between-hearing-loss-and-dementia/"],
+    ["Health implications of hearing loss", "/what-are-the-health-implications-of-hearing-loss/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Hearing loss is linked to many health conditions. Links are not proof of cause.",
+    "The 2024 Lancet report ties hearing loss with high LDL cholesterol at 7%, the highest on its list.",
+    "A hearing test is a simple first step."
+  ],
+  faqs: [
+    ["Do hearing aids prevent dementia?", "This has not been proven. Studies show that hearing loss is linked to higher dementia risk. Whether treating it lowers that risk is still being studied."],
+    ["Does 7% mean I have a 7% chance of dementia?", "No. It is the estimated share of cases across a population linked to that factor. It is not a personal risk."],
+    ["Should I worry if I have one of these conditions?", "No. Tell your doctor and audiologist, and have your hearing checked."]
+  ],
+  image: "/assets/core/hearing-better__health-wheel.svg",
+  imageLabel: "Hearing and your health",
+  imageAlt: "Wheel graphic with hearing loss in the center and eight linked topics around it: diabetes, smoking, medications, heart health, kidney disease, balance, dementia, and tinnitus.",
+  image2: "/assets/core/hearing-better__lancet-2024-chart.svg",
+  image2Label: "14 risk factors for dementia",
+  image2Caption: "Redrawn from the 2024 Lancet Commission report (doi 10.1016/S0140-6736(24)01296-0). Population estimates, not personal risk.",
+  image2Href: "/assets/core/hearing-better__lancet-2024-chart.svg"
+},
+  "/hearing-better/noisy-rooms-and-distance/": {
+  kicker: "Hearing Better",
+  headline: "Following Conversation in Noise and Across a Room",
+  metaTitle: "Hearing in Noise and Across a Room: What Helps",
+  metaDescription: "Noise, distance and echo make speech hard to follow, even with hearing aids. Learn communication skills, listening training and wireless microphones. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "Restaurants, family dinners and meetings are the hardest places to hear. Noise, distance and echo all work against you. A hearing aid helps, but it cannot remove every one of these problems.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Learn communication skills", "Communication skills help you hear better, especially in noise. The 5 Keys program teaches simple practical habits. You learn where to sit, how to set up a room and what to ask the speaker to do. Ask us for the simple handouts or the 5 Keys book. Our [Resources page](/resources/) explains how to enroll."],
+    ["Train your listening", "Auditory training is like physical therapy for listening. LACE and clEAR are programs you do at home. They practice hearing speech in noise, fast speech and competing voices. Hearing aids deliver sound. Training helps your brain use it. Ask us how to get started."],
+    ["Use a wireless microphone", "A wireless microphone is worn or placed close to the speaker. It sends a clearer voice signal directly to your hearing aids. Roger microphones from Phonak are one example. This helps when noise, distance or echo get in the way. Some Phonak microphones work with other hearing aid brands, so ask us what fits yours."],
+    ["Make sure your hearing aids are set correctly", "A good fitting matters. Real-ear measurement checks that your hearing aids deliver the right sound to your ears. Read [what real-ear measurement is](/what-is-real-ear-measurement/). If you struggle in noise, we can also check your settings and programs."],
+    ["Simple habits that help", "Choose a seat with your back to a wall. Face the person you want to hear. Ask for a quieter table. Tell people you have hearing loss. These habits cost nothing and help in any room."]
+  ],
+  bulletLinks: [
+    ["Programs: 5 Keys, LACE and clEAR", "/resources/"],
+    ["What is real-ear measurement?", "/what-is-real-ear-measurement/"],
+    ["Adjusting to new hearing aids", "/adjusting-to-new-hearing-aids/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Noise, distance and echo make speech hard to follow, even with good hearing aids.",
+    "Skills, training and a wireless microphone each help in a different way.",
+    "A well-verified fitting is the base for all of them."
+  ],
+  faqs: [
+    ["Why do I hear worse in restaurants?", "Background noise covers speech. Your brain must work harder to sort voices from noise. Hearing loss makes that harder, and hearing aids only partly solve it."],
+    ["Does a wireless microphone replace my hearing aids?", "No. It works with your hearing aids. It sends the speaker's voice straight to them."],
+    ["How long does listening training take?", "It depends on the program. We will explain the time each one needs when you enroll."]
+  ],
+  image: "/assets/core/hearing-better__noisy-rooms-and-distance.svg",
+  imageLabel: "Noisy rooms and distance"
+},
+  "/hearing-better/phones-and-captions/": {
+  kicker: "Hearing Better",
+  headline: "Phone Calls and Captions for People With Hearing Loss",
+  metaTitle: "Phone Calls and Captions for Hearing Loss",
+  metaDescription: "Missing phone calls? Learn about captioned phones, free California Connect equipment, phone streaming to hearing aids and captioning glasses. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "The phone is hard for many people with hearing loss. You cannot see the speaker's face. The sound is thin. Options exist at every budget, and some are free.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Stream calls to your hearing aids", "Most current hearing aids connect to an iPhone or Android phone. The caller's voice plays in both ears. Your hearing aid microphones can pick up your voice. Ask us to check that your phone and hearing aids are paired and set up well."],
+    ["Captioned and amplified phones", "A captioned phone shows the words of the call on a screen. An amplified phone makes the caller louder. CaptionCall and CapTel are two well-known captioned phone services. See our pages on [CaptionCall](/products/hearing-aids-by-brand/caption-call/) and [CapTel](/products/hearing-aids-by-brand/captel/). Eligibility rules and costs depend on the service, so confirm them with the provider."],
+    ["Free equipment from California Connect", "California Connect is a state program. It gives specialized phone equipment to California residents who have hearing, vision, movement, speech or memory difficulty. This includes amplified phones for people who are hard of hearing. It also runs the California Relay Service. Visit [caconnect.org](https://caconnect.org/) or call 800-806-1191 to apply. Program details can change, so check the website first."],
+    ["Captioning glasses", "Some smart glasses show live captions of speech in your field of view. Captify is one example. Reviews list battery life of around four hours of continuous use, and some models offer a paid monthly plan, as of June 2026. Prices and features change, so check the maker's site at [captify.glass](https://captify.glass). Ask us if glasses might suit how you live."],
+    ["Ask us before you buy", "The best choice depends on your hearing, your phone and how you use it. Bring your phone and hearing aids to your next visit. We will set them up and talk through the options."]
+  ],
+  bulletLinks: [
+    ["CaptionCall", "/products/hearing-aids-by-brand/caption-call/"],
+    ["CapTel", "/products/hearing-aids-by-brand/captel/"],
+    ["Programs and groups we recommend", "/resources/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Your hearing aids can stream phone calls straight to your ears.",
+    "Captioned phones show the words of the call. California Connect may provide equipment free.",
+    "Captioning glasses show live captions of speech. Check current prices with the maker."
+  ],
+  faqs: [
+    ["Who can get free phone equipment from California Connect?", "California residents with hearing, vision, movement, speech, learning or memory difficulty can qualify. Apply at caconnect.org or call 800-806-1191."],
+    ["Are captions on phone calls private?", "Captioned phone services use an operator or software to turn speech into text. Ask the provider how they handle your calls."],
+    ["Can my hearing aids connect to any phone?", "Most current hearing aids pair with recent iPhone and Android phones. Older phones and older hearing aids may not. We will check yours."]
+  ],
+  image: "/assets/core/hearing-better__phones-and-captions.svg",
+  imageLabel: "Phone calls and captions"
+},
+  "/hearing-better/tv-and-streaming/": {
+  kicker: "Hearing Better",
+  headline: "Hearing the TV Clearly With Hearing Aids",
+  metaTitle: "Hearing the TV Clearly: TV Streamers and Auracast",
+  metaDescription: "Cannot hear the TV? A TV streamer or Auracast sends the sound straight to your hearing aids at your own volume. California Hearing Center in San Mateo and San Carlos explains how.",
+  intro: [
+    "Turning the TV up loud does not fix the problem. It bothers the people around you, and speech can still sound unclear. There is a better way. You can send the TV sound straight to your hearing aids.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["What a TV streamer does", "A TV streamer, also called a TV adaptor, is a small device that plugs into your TV. It sends the audio wirelessly to your hearing aids. You hear dialogue clearly, at the volume you choose. The TV speakers can stay at a normal level for everyone else in the room."],
+    ["Will it work with my hearing aids?", "Most major brands make a compatible streamer, including Oticon, Widex, Phonak and Starkey. Each brand's streamer works with that brand's devices, so the right choice depends on the hearing aids you wear. Tell us which ones you have. We can order the compatible product for you."],
+    ["What is Auracast?", "Auracast is a newer wireless standard. It can send audio from a TV, or from other sources, to compatible hearing aids and earbuds. Support depends on your hearing aids and on the TV or venue. Some devices have the hardware but not the feature switched on yet. Read our guide to [Auracast hearing aids](/what-is-auracast-hearing-aids/) for details, and see our page on the [Phonak EON](/products/hearing-aids-by-brand/phonak/phonak-eon/) for one example."],
+    ["Tips for TV listening", "Sit close to the screen and face it. Turn on the TV's subtitles as a backup. Reduce room noise, such as a fan or a dishwasher, while you watch. If dialogue is still hard to follow, tell us at your next visit. We can check your hearing aid settings."]
+  ],
+  bulletLinks: [
+    ["Auracast hearing aids explained", "/what-is-auracast-hearing-aids/"],
+    ["Phonak EON", "/products/hearing-aids-by-brand/phonak/phonak-eon/"],
+    ["Back to Hearing Better", "/hearing-better/"],
+    ["Book a visit", "/contact/"]
+  ],
+  takeaways: [
+    "A TV streamer sends TV sound straight to your hearing aids at your own volume.",
+    "The right streamer depends on your hearing aid brand. Tell us what you wear.",
+    "Auracast is newer. Check that your devices and your TV support it."
+  ],
+  faqs: [
+    ["Do I need a streamer if my hearing aids have Bluetooth?", "Maybe not. Some hearing aids connect directly to TVs that support the right standard. Others need a streamer. We will check your model."],
+    ["Will others hear the TV too?", "Yes. The TV speakers can stay at a normal level for others, while you hear your own volume through your hearing aids."],
+    ["Can I use a TV streamer with hearing aids bought elsewhere?", "Often yes, if the streamer is made for your brand. Bring your devices in and we will confirm."]
+  ],
+  image: "/assets/core/hearing-better__tv-and-streaming.svg",
+  imageLabel: "Hear the TV clearly"
 },
   "/hearing-testing/": {
   kicker: "Diagnostic Hearing Evaluations",
@@ -1071,7 +1299,8 @@ const rawCorePages: Record<string, PageContent> = {
     ["Who it can help", "Captioned phones are often useful for people with moderate to more significant hearing loss who still want to stay connected by phone, including many older adults who rely on calls with family, doctors, pharmacies, and services. It is a practical way to keep important conversations independent and low-stress."],
     ["Often available at no cost to qualifying users", "Captioned telephones like CapTel are frequently provided at no cost to individuals who have hearing loss and qualify, typically through a certification process that documents the need. The exact requirements and paperwork can vary and change over time, so it is worth asking about the current process before you begin."],
     ["A complement to hearing aids, not a replacement", "A captioned phone addresses one specific situation, phone calls, while [hearing aids](/products/hearing-aids-by-brand/) support hearing across all of daily life, from conversations to television to restaurants. Many people benefit from using both together, and we can help you see where each one fits."],
-    ["Where to start", "If phone conversations are a frequent frustration, a [hearing evaluation](/hearing-testing/) is a sensible first step. It clarifies exactly where your hearing needs support and helps us recommend the right mix of technology and communication strategies, which may include a captioned phone like CapTel or CaptionCall."]
+    ["Where to start", "If phone conversations are a frequent frustration, a [hearing evaluation](/hearing-testing/) is a sensible first step. It clarifies exactly where your hearing needs support and helps us recommend the right mix of technology and communication strategies, which may include a captioned phone like CapTel or CaptionCall."],
+    ["Other ways to manage phone calls", "See our guide to [phone calls and captions](/hearing-better/phones-and-captions/) for streaming to hearing aids, free California Connect equipment and captioning glasses."]
   ],
   bulletLinks: [
     ["Get your hearing evaluated", "/hearing-testing/"],
@@ -1108,7 +1337,8 @@ const rawCorePages: Record<string, PageContent> = {
     ["Works with your existing phone service", "You keep your own telephone number, and the phone is designed to work with familiar features like call waiting, call forwarding, and caller ID. It also offers powerful amplification and speakerphone use, and a mobile app option makes captioned calls available on a smartphone as well."],
     ["A good fit for many older adults", "Phone calls with family, physicians, pharmacies, and services matter a great deal, and they are often where hearing loss is most frustrating. Captioned phones like CaptionCall are frequently a welcome help for older adults who want to stay independent and confident by phone."],
     ["Frequently available at no cost to those who qualify", "Captioned telephones are commonly provided at no cost to individuals with hearing loss who qualify, generally through a certification process that documents the need. Requirements and paperwork can change, so ask about the current steps when you are ready, and we can guide you through them."],
-    ["Works with, not instead of, hearing aids", "A captioned phone helps with one situation. [Hearing aids](/products/hearing-aids-by-brand/) help across conversations, television, restaurants, and more. Many people use both, and starting with a [hearing evaluation](/hearing-testing/) helps us recommend the right combination for you."]
+    ["Works with, not instead of, hearing aids", "A captioned phone helps with one situation. [Hearing aids](/products/hearing-aids-by-brand/) help across conversations, television, restaurants, and more. Many people use both, and starting with a [hearing evaluation](/hearing-testing/) helps us recommend the right combination for you."],
+    ["Other ways to manage phone calls", "See our guide to [phone calls and captions](/hearing-better/phones-and-captions/) for streaming to hearing aids, free California Connect equipment and captioning glasses."]
   ],
   bulletLinks: [
     ["Schedule a hearing test", "/hearing-testing/"],
@@ -2613,18 +2843,24 @@ const rawCorePages: Record<string, PageContent> = {
   intro: [
     "This page is the list of programs and organizations we hand out at appointments. The Ida Institute and the Hearing Loss Association of America publish free material for anyone. 5 Keys Communication, clEAR and LACE are training programs we enroll patients in ourselves.",
     "A hearing aid detects sound. It does not teach you how to hold a conversation across a noisy table, and it does not put you in touch with anyone else living with hearing loss. These cover the parts a device does not.",
-    "Ask at your next appointment, or call 650-342-9449 and say which one you want."
+    "Ask at your next appointment, or call 650-342-9449 and say which one you want. For tips and technology beyond the hearing aid, see our [Hearing Better hub](/hearing-better/)."
   ],
   sections: [
     ["The Ida Institute", "The Ida Institute is an independent, non-profit organization working to build a community that embraces person-centered care. Together with clinicians, academics, and people with hearing loss around the world, Ida helps people develop the knowledge, skills, and confidence to better manage hearing loss. California Hearing Center was the first clinic in the world to receive the Inspired by Ida label. Learn more at [idainstitute.com](https://idainstitute.com/)."],
     ["We're all ears", "Helping people hear starts with knowing how to listen. We ask what you need and recommend from there. That is what person-centered care means in practice. Ida's We're All Ears materials are the patient half of that: they set out what to tell your audiologist, and what to bring to the appointment so the hour is spent on your problem rather than on working out what it is."],
     ["Hearing Loss Association of America (HLAA)", "HLAA is the main U.S. consumer organization for people with hearing loss. It runs local chapters and meetings, publishes material for the families, coworkers and teachers around a person as well as for the person themselves, and campaigns on captioning and access. If what you want is other people who already live with this, rather than another clinician explaining it, this is the one to look at. Learn more at [hearingloss.org](https://www.hearingloss.org/)."],
     ["5 Keys to Communication Success", "5 Keys Communication is a program we enroll patients in directly. It teaches the practical strategies that hearing aids do not cover: where to sit, how to set up a room, what to ask the other person to do, and what to do when you have missed something for the third time. You get a communication handbook and weekly eLessons covering strategies, hearing aid tips, other hearing-enhancement technologies, activities, and links to consumer organizations. Ask us how to sign you up."],
-    ["clEAR auditory training", "clEAR is computer-game-based listening training you do at home. According to research from Washington University in St. Louis cited by the program, clEAR improves speech discrimination, meaning your ability to recognize words accurately, and reduces the mental effort listening takes, so it becomes less exhausting. Every subscription includes ongoing contact and guidance from a clEAR hearing healthcare professional. Untreated hearing loss is associated with social isolation, and the Lancet Commission on dementia prevention lists it as the largest modifiable risk factor in midlife. Those are associations rather than proven cause, and training your listening is worth doing on its own terms. Ask us about signing up."],
+    ["clEAR auditory training", "clEAR is computer-game-based listening training you do at home. According to research from Washington University in St. Louis cited by the program, clEAR improves speech discrimination, meaning your ability to recognize words accurately, and reduces the mental effort listening takes, so it becomes less exhausting. Every subscription includes ongoing contact and guidance from a clEAR hearing healthcare professional. Untreated hearing loss is associated with social isolation, and the Lancet Commission on dementia prevention lists it among the largest modifiable risk factors for dementia, tied with high LDL cholesterol at 7% in its 2024 report. Those are associations rather than proven cause, and training your listening is worth doing on its own terms. Ask us about signing up."],
     ["LACE by Neurotone", "LACE (Listening and Communication Enhancement) is a web-based auditory training program developed by audiologists. The program reports that it retrains the brain to comprehend speech substantially better in difficult listening situations. The idea is similar to physical therapy: hearing aids detect sound, but they do not by themselves change listening, communication, and comprehension. LACE's modules cover speech-in-noise (picking a voice out of a noisy room), rapid speech (understanding fast talkers), competing speakers (locking on to the voice you want), and word memory (training your brain to fill in the blanks). Ask us about signing up."],
+    ["California Connect", "California Connect is the state program that provides specialized phone equipment, at no cost, to California residents with hearing, vision, movement, speech, learning or memory difficulty. It includes amplified phones and the California Relay Service. Learn more at [caconnect.org](https://caconnect.org/) or call 800-806-1191. Our [phones and captions page](/hearing-better/phones-and-captions/) explains the options."],
+    ["American Tinnitus Association (ATA)", "ATA is a non-profit organization that supports people with tinnitus through credible information, support and research funding. Learn more at [ata.org](https://www.ata.org/). See also our [tinnitus therapy](/services/tinnitus-therapy/) page."],
+    ["Association of Late Deafened Adults (ALDA)", "ALDA is a non-profit that offers support, advocacy and community for people who became deaf later in life. Learn more at [alda.org](https://alda.org/)."],
+    ["Two blogs by people who live with hearing loss", "Shari Eberts writes [Living with Hearing Loss](https://livingwithhearingloss.com/), a blog by a hearing health advocate, author and speaker. Gael Hannan is a humorist, author and speaker who writes about life with hearing loss at [gaelhannan.com](https://www.gaelhannan.com/)."],
+    ["Print this list", "Take this list home. [Key Resources for Hearing Better (PDF)](/assets/downloads/chc-key-resources-for-hearing-better.pdf) is a one-page version you can print or share with family."],
     ["How to get started with any of these", "Several of these programs are ones we enroll patients in directly. The simplest route is to mention it at your next appointment, or call us on 650-342-9449 and say which program you are interested in. If you are not sure which would help most, we will talk it through against how and where you actually struggle to hear."]
   ],
   bulletLinks: [
+    ["Hearing Better: help beyond the hearing aid", "/hearing-better/"],
     ["A patient's journey to better hearing", "/a-patients-journey-to-better-hearing/"],
     ["Insurance & Medicare", "/resources/insurance/"],
     ["What hearing aids cost", "/hearing-aid-cost/"],
@@ -2836,7 +3072,8 @@ const rawCorePages: Record<string, PageContent> = {
     ["Earwax removal", "Impacted cerumen is the most common reversible cause of muffled hearing and a plugged ear. Our [earwax removal](/services/earwax-removal/) is performed under direct visualisation after an examination of the canal and eardrum, which clears buildup that at-home kits cannot reach and that they often push deeper. We also do it for hearing aid wearers whose receivers keep clogging."],
     ["Hearing aid repair and maintenance", "We clean, maintain and [repair](/services/hearing-aid-repair/) most major brands in-house, whether or not you bought them from us. Receivers, wax filters, tubing, microphone ports and battery contacts are usually same-visit work. When a fault has to go back to the manufacturer we handle the paperwork and tell you what it will cost before it goes. Regular cleaning visits prevent most of the failures we see."],
     ["Hearing protection", "Preserving the hearing you have is worth as much as treating what you have lost, and noise damage does not come back. We make custom [hearing protection](/services/hearing-protection/) for noisy work, music, shooting and other high-noise settings, moulded to your ears so it is comfortable enough that you actually wear it. Off-the-shelf foam only works when it is in."],
-    ["Follow-up and communication strategies", "Fitting hearing aids is the beginning of the work. We schedule follow-up visits to adjust as your brain adapts, and we teach the practical communication skills that devices do not cover: where to sit in a restaurant, how to set up a room, what to ask other people to do. Our [resources page](/resources/) lists the training programmes we enrol patients in."]
+    ["Follow-up and communication strategies", "Fitting hearing aids is the beginning of the work. We schedule follow-up visits to adjust as your brain adapts, and we teach the practical communication skills that devices do not cover: where to sit in a restaurant, how to set up a room, what to ask other people to do. Our [resources page](/resources/) lists the training programmes we enrol patients in."],
+    ["Beyond the hearing aid", "Hearing aids are only part of the answer. Our [Hearing Better hub](/hearing-better/) gathers tips and technology for the TV, the phone, noisy rooms and family life."]
   ],
   bulletLinks: [
     ["Hearing testing", "/hearing-testing/"],

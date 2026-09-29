@@ -4,7 +4,7 @@
     metaTitle: "Real-Ear Measurement: What It Is & Why It Matters",
     variant: "product",
     datePublished: "2026-03-10",
-    dateModified: "2026-08-25",
+    dateModified: "2026-09-29",
     metaDescription:
       "Real-ear measurement checks the sound your hearing aids deliver at the eardrum, so your fitting matches your prescription instead of a factory estimate.",
     intro: [
@@ -23,7 +23,8 @@
       ["How the measurement works", "The appointment stays comfortable. Your audiologist places the soft probe tube in your ear canal, then positions the hearing aid alongside it. Speech plays at conversational levels while a screen shows two lines: the target your hearing calls for, and what your aids are producing. Where the lines separate, small adjustments bring them together, pitch by pitch. The whole check adds only a short while to the visit, and you can often hear speech sharpen as the settings close in."],
       ["Why the target matters for speech", "Speech is not one sound but a spread of them, from low vowels to the faint consonants like 's', 'f', and 'th' that separate similar words. Those quiet high notes are the first to fade with age-related loss and the easiest for a default setting to leave too soft. Matching the prescription across the full range is what lets you catch those consonants rather than guess at them, especially in a noisy restaurant or over the phone. This is the same reason verification matters as much for [hearing aids for seniors](/hearing-aids-for-seniors/) as for anyone else."],
       ["A standard we hold ourselves to", "Real-ear measurement is a recognized best practice in fitting, and we still see aids come in that were never measured this way. As a [HearingUp-approved provider](/resources/hearingup-approved-provider/), our team treats verification as part of the job rather than a premium add-on. If you are unsure whether your current aids were ever measured this way, you can [bring them in](/contact/) and find out. A quick check can reveal settings that have been leaving speech quieter than your prescription intended."],
-    ],
+    ["More help beyond the hearing aid", "A verified fitting is the base. For noisy rooms, TV and phone calls, see our [Hearing Better hub](/hearing-better/)."]
+  ],
     bullets: ["Probe-tube measurement", "Sound at the eardrum", "Prescription targets", "Beyond first-fit", "Clearer consonants", "San Mateo & San Carlos"],
     faqs: [
       ["Is real-ear measurement uncomfortable?", "The probe tube is thin and soft, and most people barely register it. It sits in the canal for a few minutes while speech plays, and nothing is inserted deeply or painfully. If anything, the interesting part is watching the two lines on the screen move together as your audiologist dials in the settings."],
