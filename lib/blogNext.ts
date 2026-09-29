@@ -512,7 +512,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       "Why baseline testing still has value",
       "Adults can legally purchase an OTC hearing aid without an audiogram, but baseline testing provides information that a product questionnaire cannot: ear-specific thresholds, speech understanding, asymmetry, and possible referral needs. It also creates a reference point if hearing changes later and makes it easier to compare aided and unaided performance.",
       "Bottom line",
-      "Hearing aid glasses expand the menu of OTC hearing options, especially for adults drawn to an open-ear and discreet design. Treat them as one tool for a defined user group—not as proof that all hearing difficulty can be safely self-diagnosed or solved by a single form factor."
+      "Hearing aid glasses expand the menu of OTC hearing options, especially for adults drawn to an open-ear and discreet design. Treat them as one tool for a defined user group—not as proof that all hearing difficulty can be safely self-diagnosed or solved by a single form factor. EssilorLuxottica announced a second-generation Nuance Audio model in September 2026, and we compare it with Meta's hearing feature in [Nuance Audio Plus vs. Meta glasses](/nuance-audio-plus-vs-meta-glasses)."
     ],
     faqs: [
       { question: "Are hearing aid glasses FDA cleared?", answer: "Nuance Audio Hearing Aid Software received FDA 510(k) clearance for OTC use with compatible wearable products. Always verify the labeling of the exact product being considered." },
@@ -522,6 +522,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     related: [
       { label: "Are OTC Hearing Aids Right for Me?", href: "/are-otc-hearing-aids-right-for-me" },
       { label: "OTC vs Prescription Hearing Aids", href: "/otc-vs-prescription-hearing-aids-real-world" },
+      { label: "Nuance Audio Plus vs. Meta Glasses", href: "/nuance-audio-plus-vs-meta-glasses" },
       { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" }
     ],
@@ -610,7 +611,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       "A patient forwarded us a headline within an hour of Meta's keynote ending: their glasses can now work as a hearing aid. The short answer is yes, in a specific, regulated sense, and the longer answer is the more useful one.",
       "Meta's \"Hearing Enhancement\" is a real, FDA-cleared over-the-counter hearing aid feature, not a gimmick and not a general medical device. It sits inside a category we already help patients navigate every week, just with a new pair of glasses attached to it.",
       "What Meta actually announced",
-      "At Meta Connect on September 23, 2026, Meta said its newer Meta Glasses models will offer a software feature called Hearing Enhancement, cleared by the FDA for adults with self-assessed mild-to-moderate hearing loss. It sets up at home with no exam or prescription, adjusts each ear separately, and turns on with a voice command. Meta is launching it in the US later this year, starting on select Meta Glasses rather than the Ray-Ban Meta line, with a 30-day free trial and a $149.99 one-time cost afterward, or inclusion with a Meta One subscription.",
+      "At Meta Connect on September 23, 2026, Meta said its newer Meta Glasses models will offer a software feature called Hearing Enhancement, cleared by the FDA for adults with self-assessed mild-to-moderate hearing loss. It sets up at home with no exam or prescription, adjusts each ear separately, and turns on with a voice command. Meta is launching it in the US later this year, starting on select Meta Glasses rather than the Ray-Ban Meta line, with a 30-day free trial and a $149.99 one-time cost afterward, or inclusion with a Meta One subscription. If you are also weighing glasses built only for hearing, we compare [Nuance Audio Plus and Meta's feature](/nuance-audio-plus-vs-meta-glasses) after EssilorLuxottica announced the Plus model.",
       "It's the same OTC category you may already know",
       "Nothing about the regulatory ground here is new. The FDA created the over-the-counter hearing aid category in 2022 for adults with mild-to-moderate, fairly symmetric hearing loss, and we've written before about how [OTC and prescription hearing aids differ in real-world use](/otc-vs-prescription-hearing-aids-real-world) and about [who OTC devices actually suit](/are-otc-hearing-aids-right-for-me). Meta's glasses meet that same bar. \"FDA-cleared\" is worth being precise about, too: it is a narrower claim than \"FDA-approved,\" and it means this software met the OTC category's requirements, not that the glasses were reviewed as a general medical device.",
       "Where this sits next to AirPods and other consumer options",
@@ -630,6 +631,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "OTC vs Prescription Hearing Aids: Real-World Differences", href: "/otc-vs-prescription-hearing-aids-real-world" },
       { label: "Are OTC Hearing Aids Right for Me?", href: "/are-otc-hearing-aids-right-for-me" },
       { label: "AirPods as Hearing Aids: What They Can and Can't Do", href: "/airpods-as-hearing-aids" },
+      { label: "Nuance Audio Plus vs. Meta Glasses", href: "/nuance-audio-plus-vs-meta-glasses" },
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Harrison, NY office", href: "/harrison-ny" },
@@ -653,6 +655,73 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       sources: [
         { label: "Meta: Everything We Announced at Connect 2026", href: "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/" },
         { label: "FDA: Over-the-Counter Hearing Aids", href: "https://www.fda.gov/medical-devices/hearing-aids/otc-hearing-aids" }
+      ]
+    }
+  },
+  {
+    path: "/nuance-audio-plus-vs-meta-glasses",
+    title: "Nuance Audio Plus vs. Meta Glasses: Which Hearing Aid Glasses Fit You?",
+    metaTitle: "Nuance Audio Plus vs. Meta Glasses | Westchester",
+    metaDescription: "Nuance Audio Plus starts at $829 in the US. How it compares with Meta's hearing glasses feature, what open-ear glasses cannot do, and who should test first.",
+    h1: "Nuance Audio Plus vs. Meta Glasses: Which Hearing Aid Glasses Are Right for You?",
+    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Adult comparing newer over-the-counter hearing technology with prescription hearing care" },
+    sections: ["Hearing Technology", "Buyer decision guide", "Audiologist perspective", "Frequently asked questions"],
+    body: [
+      "Two pairs of glasses now claim to help you hear. One is Nuance Audio Plus, the second-generation product from EssilorLuxottica, announced last week. The other is the hearing feature Meta announced on September 23 for its own glasses. Several patients have already asked which one to pick, and whether either replaces a hearing aid.",
+      "They are built differently, and those differences matter more than the gap in price. This page lays out what each one is, what open-ear glasses do well and badly, and who should have a hearing test before spending anything.",
+      "What each product is",
+      "Nuance Audio Plus is a hearing device built into eyewear. Directional microphones and small speakers sit in the temples, and nothing goes into the ear canal. The app offers two listening modes (Frontal and All-Around), four amplification presets and three levels of noise reduction. EssilorLuxottica rates the battery at about 10 hours and describes Plus as FDA-cleared for adults with perceived mild to moderate hearing loss. US pricing starts at $829, depending on the lenses, and it is sold through optical and hearing care professionals. The first-generation glasses stay on sale, listed by HearingTracker at $699.",
+      "Meta's Hearing Enhancement is a software feature, not a separate product. As we explained in [our earlier post on Meta's announcement](/meta-glasses-hearing-aid-feature), it builds a hearing profile from a setup you do yourself, treats each ear separately, and turns on by voice command. Meta says it arrives in the US later this year on its newer Meta Glasses models, with a 30-day free trial and then $149.99 once, or included with a Meta One subscription. You buy the glasses separately, and they do other things besides amplify sound.",
+      "What is new in Plus",
+      "Compared with the first Nuance Audio glasses, the company lists more amplification, clearer speech in noise, a longer battery, a power switch and volume buttons on the frame, hands-free calls with iPhones on iOS 16 or later, and more frame styles and colors. The independent record on the first generation is useful here. A HearingTracker review using HearAdvisor lab tests found good speech scores, poor handling of feedback (whistling), a battery life of six to eight hours, and no streaming. Plus is aimed at the battery and calling complaints. The company also says it improves amplification, and we have not seen independent testing that shows whether the whistling is fixed. Treat those points as claims until someone measures them.",
+      "The open-ear trade-off",
+      "Open-ear means the speaker sits near the ear and the canal stays clear. Your own voice sounds like your own voice, and many people find that more comfortable than a sealed device. The trade is limited amplification, because the speaker can only push so much sound before it whistles, and background noise reaches your ear untouched. Reviewers also reported an echo quality in the wearer's own voice for some people, and less gain on larger heads because the speaker sits farther from the ear. Frames add practical questions of their own: nose pad fit, the weight of your prescription lenses, and losing all amplification when you take them off. We cover the wider picture in [our guide to hearing aid glasses in 2026](/hearing-aid-glasses-2026).",
+      "Who these glasses tend to suit",
+      "Adults who already wear glasses all day, notice missing words in restaurants or group settings, follow quiet conversation without much effort, and would rather not wear something that looks like a hearing aid. Comfort with a phone app helps. The FDA's over-the-counter category is written for adults 18 and older with perceived mild to moderate loss, and perceived is the key word. Nobody verifies your assessment, so the device works from your own description of your hearing. For the wider category, see [Are OTC hearing aids right for me?](/are-otc-hearing-aids-right-for-me) and [OTC vs prescription hearing aids](/otc-vs-prescription-hearing-aids-real-world).",
+      "When to get tested first",
+      "Book an evaluation before trying any self-fit device if your hearing dropped suddenly, one ear is clearly worse than the other, you have ear pain, drainage, dizziness or ringing in one ear, or you hear voices but cannot make out the words. Those are reasons to be seen, not reasons to experiment.",
+      "What a hearing test tells you that a questionnaire cannot",
+      "A [hearing test](/hearing-testing) measures each ear separately, shows the shape of your loss, checks how well you understand speech, and can turn up wax or a middle ear problem. That matters here because open-ear devices tend to work best for mild loss in the higher pitches, and one page of results shows whether you fall in that range. It also gives you a baseline if your hearing changes later. Plus offers four fixed presets. A [fitted hearing aid](/hearing-aid-fitting) is programmed to your results and checked with real-ear measurement. Our [comprehensive hearing assessments](/how-we-can-help/comprehensive-hearing-assessments) cover the full workup.",
+      "Our view",
+      "If you wear glasses all day and your hearing loss is on the milder side, hearing glasses are worth taking seriously. Get a baseline test first, ask about the return window before you pay, and keep your results. If the test shows something the glasses are not built for, you will know before you have spent $829. We see patients in Harrison and Somers and are glad to go through your results whichever route you take."
+    ],
+    faqs: [
+      { question: "Is Nuance Audio Plus FDA-cleared?", answer: "EssilorLuxottica's announcement says it is, for adults with perceived mild to moderate hearing loss. The software in the first-generation glasses has a public FDA 510(k) record, K243150. We have not looked at the filing for Plus itself, only the company's statement, so check the labeling of the exact model before you buy." },
+      { question: "How much does Nuance Audio Plus cost?", answer: "US pricing starts at $829 and depends on the lens configuration, according to the company. The first-generation glasses remain available, and HearingTracker lists them at $699." },
+      { question: "Should I buy Nuance Audio Plus or wait for Meta's hearing feature?", answer: "You cannot compare them fairly yet. Meta's feature has not launched, and Meta has not said which glasses will qualify beyond a hardware minimum. Waiting is a poor reason to put off a hearing test. A test takes under an hour, and the results help with either choice." },
+      { question: "Do hearing glasses replace hearing aids?", answer: "For some adults with mild loss they may cover part of the day. They use presets and an open ear, and they are not meant for more than moderate loss. Prescription aids are programmed to your results and verified, which glasses do not offer. If you struggle with conversation in a quiet room, get tested first." },
+      { question: "What should I ask before buying hearing glasses?", answer: "Ask about the return window, who repairs the frames or speakers, what happens to the hearing hardware when your eyeglass prescription changes, how long the battery lasts on calls, and whether the glasses work with your phone. The company describes hands-free calling for iPhones on iOS 16 or later." }
+    ],
+    related: [
+      { label: "Meta Glasses Hearing Aid Feature", href: "/meta-glasses-hearing-aid-feature" },
+      { label: "Hearing Aid Glasses in 2026", href: "/hearing-aid-glasses-2026" },
+      { label: "Are OTC Hearing Aids Right for Me?", href: "/are-otc-hearing-aids-right-for-me" },
+      { label: "OTC vs Prescription Hearing Aids", href: "/otc-vs-prescription-hearing-aids-real-world" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Buyer decision guide",
+      byline: "A comparison of the two hearing glasses announced in September",
+      reviewedBy,
+      readTime: "5 min read",
+      articleType: "Buyer decision guide",
+      pullQuote: "Both pairs of glasses are self-fit and open-ear. Neither one measures your hearing first, and that step is what tells you whether either is a good idea.",
+      keyTakeaways: [
+        "Nuance Audio Plus is a hearing device in a frame, from $829 in the US. Meta's Hearing Enhancement is software on Meta's glasses, priced at $149.99 after a trial, and it has not launched.",
+        "Open-ear glasses suit mild loss best. Amplification is limited, noise gets through, and the first generation whistled in lab testing. Plus has not been independently tested yet.",
+        "A hearing test shows whether your loss fits what these products are built for, and it rules out problems that no pair of glasses will fix."
+      ],
+      patientQuestion: "Should I buy Nuance Audio Plus or wait for Meta's hearing feature?",
+      storyLead: "Two pairs of glasses now claim to help you hear. Here is how they differ and who should get tested first.",
+      sources: [
+        { label: "EssilorLuxottica: Nuance Audio Plus announcement", href: "https://www.prnewswire.com/news-releases/essilorluxottica-unveils-nuance-audio-plus-the-next-generation-of-hearing-glasses-302891793.html" },
+        { label: "HearingTracker: EssilorLuxottica Launches Nuance Audio Plus", href: "https://www.hearingtracker.com/news/essilorluxottica-launches-nuance-audio-plus-hearing-glasses" },
+        { label: "HearingTracker: Nuance Audio Glasses, Audiologist and Lab Tested", href: "https://www.hearingtracker.com/hearing-aids/nuance-audio-glasses-audiologist-and-lab-tested" },
+        { label: "FDA 510(k): Nuance Audio Hearing Aid Software", href: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K243150" },
+        { label: "Meta: Everything We Announced at Connect 2026", href: "https://www.meta.com/blog/meta-connect-2026-everything-we-announced/" }
       ]
     }
   },
