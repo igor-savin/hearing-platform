@@ -725,6 +725,65 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       ]
     }
   },
+  {
+    path: "/auracast-goes-live-in-a-us-theater",
+    title: "Auracast Goes Live in a U.S. Theater: What It Means for Hearing Aid Wearers",
+    metaTitle: "Auracast Live in a U.S. Theater | Westchester",
+    metaDescription: "A Montana clinic paid for Auracast at Billings Studio Theatre, live since September 11, 2026. What happened, what is still unknown, and what to ask about your hearing aids.",
+    h1: "Auracast Goes Live in a U.S. Theater: What It Means for Hearing Aid Wearers",
+    heroImage: { src: "/assets/blog-headphones.png", alt: "Adult using connected audio technology with accessible listening support" },
+    sections: ["Hearing Technology", "News explained", "Audiologist perspective", "Frequently asked questions"],
+    body: [
+      "Billings Studio Theatre, a community theater in Montana, now broadcasts its shows by Auracast. The system was running for the opening of Come From Away on September 11, 2026. Big Sky Audiology, a local clinic, paid for the equipment and the installation and gave it to the theater.",
+      "Patients have asked us what Auracast looks like outside a product announcement. This is a good example, and it comes with limits. It is not the first U.S. installation, and one theater does not mean the venues near you are ready. This page covers what was reported, what is still unknown, and what to ask before you plan an evening around it.",
+      "What was reported",
+      "A transmitter was installed at the theater and connected to its soundboard. Listeners with compatible hearing aids, cochlear implants, headphones or earbuds can pick the broadcast from their device, much as you pick a Wi-Fi network. Reports say people without a compatible device can still borrow equipment at the theater. Sources differ on what the theater used before and whether it kept the older system, so we will not say either way. The clinic's founder said the clinic covered the purchase and installation, and the clinic has said it wants to work with other venues in Billings.",
+      "Why the soundboard connection matters",
+      "In a theater, the sound you want is the sound at the mixing desk, before the room changes it. A feed taken from the desk gives you the performance without the echo, the seat noise and the people around you. A hearing loop can do that for hearing aids with a telecoil. Auracast does it for a wider set of devices, including earbuds and headphones that a person already owns. Loops are still far more common in real venues, and a telecoil stays a useful feature for years to come.",
+      "What has to line up for you",
+      "Three things must work together. The venue needs a transmitter. Your hearing aids or other device must support Auracast, which generally means a recent model with Bluetooth LE Audio. And you need a way to find and join the broadcast, often through a phone app or a button on the hearing aids. Some hearing aids carry the hardware but wait for a software release before the feature works, so check what your model does today, not what it may do later. Our [Auracast explainer](/auracast-hearing-aids-explained) covers the basics.",
+      "What to ask before a show",
+      "Call the venue and ask whether it offers Auracast, a loop or loaner headsets, what the broadcast is called, and how to join. Ask your audiologist whether your current hearing aids support Auracast now. If you are shopping, ask the same about each model, and ask what joining a broadcast involves in daily use. Venues add features when patrons ask for them, so your call helps.",
+      "Our view",
+      "This is good news, and it is early. If you already own compatible hearing aids, it is worth asking about Auracast at the places you visit. If you do not, hearing aids that work well for you do not need replacing because of one installation. A [hearing test](/hearing-testing) and an honest talk about where you most want to hear better will do more for you than any single feature. We see patients in Harrison and Somers and are glad to go through your options, including [hearing aid fitting](/hearing-aid-fitting) and what your devices support."
+    ],
+    faqs: [
+      { question: "Is this the first U.S. theater to use Auracast?", answer: "No. Other U.S. venues have tried or installed Auracast before. What stands out in Billings is that a local audiology clinic paid for the system and donated it to a community theater." },
+      { question: "Do my hearing aids work with Auracast?", answer: "It depends on the model. Auracast generally needs Bluetooth LE Audio hardware, and some hearing aids also need a software update before the feature switches on. Bring your devices in and we will check what they support." },
+      { question: "Do I still need a telecoil?", answer: "Often, yes. Hearing loops are still much more common in venues than Auracast. A telecoil is useful if you attend places that have not adopted the new standard." },
+      { question: "How do I find out whether a venue near me has Auracast?", answer: "Call and ask. Ask whether it broadcasts by Auracast, what the broadcast is called and how listeners join. Also ask about loops and loaner headsets, since many venues offer those instead." },
+      { question: "Should I wait to buy hearing aids until Auracast is everywhere?", answer: "No. Fit, sound quality and follow-up care matter more today. If Auracast matters to you, choose a model that supports it now and tell us at your appointment." }
+    ],
+    related: [
+      { label: "Auracast and Hearing Aids Explained", href: "/auracast-hearing-aids-explained" },
+      { label: "Bluetooth Hearing Aids Before Buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing Aid Brands", href: "/hearing-aids-brands" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Industry news explained",
+      byline: "What a Montana theater's Auracast system means for patients",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "News explained",
+      pullQuote: "One theater is good news. Before you plan an evening around Auracast, check the venue and check your own hearing aids.",
+      keyTakeaways: [
+        "Billings Studio Theatre in Montana went live with Auracast for the opening of Come From Away on September 11, 2026.",
+        "Big Sky Audiology, a local clinic, paid for the equipment and installation and donated it to the theater.",
+        "Auracast needs a venue transmitter, a compatible device and a way to join. Ask about all three before you count on it."
+      ],
+      patientQuestion: "Will my hearing aids work with Auracast at a theater?",
+      storyLead: "A clinic-funded Auracast system is now running in a Montana community theater. Here is what it means for you.",
+      sources: [
+        { label: "KTVQ: Billings Studio Theater sees upgrades to hearing accessibility technology", href: "https://www.ktvq.com/news/billings-studio-theater-sees-upgrades-to-hearing-accessibility-technology" },
+        { label: "EIN Presswire: Billings Audiology Clinic Donates Auracast System to Billings Studio Theatre", href: "https://www.einpresswire.com/article/942190393/billings-audiology-clinic-donates-auracast-system-to-billings-studio-theatre" },
+        { label: "Aurahear: Auracast at Billings Studio Theatre, Big Sky Audiology gift", href: "https://aurahear.com/2026/09/audiology-clinic-donates-auracast-billings-studio-theatre" }
+      ]
+    }
+  },
 ];
 
 export function buildNextBlogPosts(baseUrl: string, _siteName: string): SitePage[] {
