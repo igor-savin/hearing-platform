@@ -733,7 +733,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     h1: "Auracast Goes Live in a U.S. Theater: What It Means for Hearing Aid Wearers",
     heroImage: { src: "/assets/blog-headphones.png", alt: "Adult using connected audio technology with accessible listening support" },
     sections: ["Hearing Technology", "News explained", "Audiologist perspective", "Frequently asked questions"],
-    body: 
+    body: [
       "Billings Studio Theatre, a community theater in Montana, now broadcasts its shows by Auracast. The system was running for the opening of Come From Away on September 11, 2026. Big Sky Audiology, a local clinic, paid for the equipment and the installation and gave it to the theater.",
       "Patients have asked us what Auracast looks like outside a product announcement. This is a good example, and it comes with limits. It is not the first U.S. installation, and one theater does not mean the venues near you are ready. This page covers what was reported, what is still unknown, and what to ask before you plan an evening around it.",
       "What was reported",
