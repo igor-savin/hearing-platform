@@ -5714,9 +5714,9 @@ export const crawledPages: SitePage[] = [
   },
   {
     "path": "/invisible-cochlear-implant-med-el-tici-unico/",
-    "title": "Invisible Cochlear Implant: MED-EL TICI UNICO Explained | California Hearing Center",
-    "h1": "The World's First Invisible Cochlear Implant: What MED-EL's TICI UNICO Means for U.S. Patients",
-    "desc": "MED-EL launched TICI UNICO, a fully implantable cochlear implant, in Europe on Sept 29, 2026. How it works, who it is for, and what US patients can do now.",
+    "title": "Invisible Cochlear Implant: TICI UNICO and the Bay Area | California Hearing Center",
+    "h1": "The World's First Invisible Cochlear Implant: What TICI UNICO Means for Bay Area Patients",
+    "desc": "MED-EL's TICI UNICO has no outside parts and is not yet in the U.S. What it means in the Bay Area, and five signs you may be a cochlear implant candidate.",
     "h2": [],
     "paragraphs": []
   },
@@ -5724,15 +5724,15 @@ export const crawledPages: SitePage[] = [
     "path": "/samsung-galaxy-buds-hearing-aid-feature/",
     "title": "Samsung Galaxy Buds Hearing Aid: FDA-Cleared, Coming Q4 | California Hearing Center",
     "h1": "Samsung Galaxy Buds Are Becoming Hearing Aids: What the FDA Clearance Means",
-    "desc": "Samsung's Galaxy Buds 3 Pro and 4 Pro are getting an FDA-cleared hearing aid feature. An audiologist explains what it can, and cannot, do for your hearing.",
+    "desc": "Samsung's Galaxy Buds3 Pro and Buds4 Pro are getting an FDA-cleared hearing aid feature. What the numbers say, and when to see an audiologist.",
     "h2": [],
     "paragraphs": []
   },
   {
     "path": "/medicare-open-enrollment-hearing-benefits/",
-    "title": "Medicare Open Enrollment 2027: Hearing Benefits to Check | California Hearing Center",
+    "title": "Medicare Open Enrollment 2027: California Hearing Checks | California Hearing Center",
     "h1": "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
-    "desc": "Medicare open enrollment runs Oct 15 to Dec 7, 2026. Five hearing benefit checks for 2027: hearing aid allowances, in-network audiologists, exam coverage and more.",
+    "desc": "Medicare open enrollment runs Oct 15 to Dec 7, 2026. Five hearing benefit checks for 2027, plus questions to ask if you also have Medi-Cal.",
     "h2": [],
     "paragraphs": []
   }
