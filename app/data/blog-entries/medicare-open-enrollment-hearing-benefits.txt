@@ -1,4 +1,4 @@
-  "/medicare-open-enrollment-2027-hearing-benefits/": {
+  "/medicare-open-enrollment-hearing-benefits/": {
     kicker: "Hearing Insurance",
     headline: "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
     metaTitle: "Medicare Open Enrollment 2027: Hearing Benefits to Check",
@@ -39,9 +39,9 @@
       ["What is the difference between AEP and the January to March window?", "The Annual Enrollment Period, October 15 to December 7, is open to all Medicare members. The Medicare Advantage Open Enrollment Period, January 1 to March 31, is only for people already in a Medicare Advantage plan, and it allows one change."],
       ["Does Original Medicare cover hearing exams?", "Not routine ones. It generally covers a diagnostic hearing or balance exam when a doctor orders it to plan treatment, and you usually pay part of the cost. Ask your clinician to confirm how it applies to you."],
     ],
-    image: "/assets/blog/medicare-open-enrollment-2027-hearing-benefits-1.svg",
+    image: "/assets/blog/medicare-open-enrollment-hearing-benefits-1.svg",
     imageLabel: "Medicare open enrollment, October 15 to December 7, 2026",
-    image2: "/assets/blog/medicare-open-enrollment-2027-hearing-benefits-2.svg",
+    image2: "/assets/blog/medicare-open-enrollment-hearing-benefits-2.svg",
     image2Label: "Medicare enrollment dates that matter for 2027 hearing benefits",
     image2Caption: "Annual Enrollment ends December 7. Current Medicare Advantage members get one more change from January 1 to March 31, 2027.",
   },

@@ -396,4 +396,6 @@ export const redirectedPaths = new Set<string>([
   "/areas-we-serve/santa-clara-country/",
   // 16 Sep 2026 — duplicate of /tinnitus/one-ear/.
   "/tinnitus-in-one-ear/",
+  // 30 Sep 2026 — Medicare open-enrollment page moved to an evergreen slug.
+  "/medicare-open-enrollment-2027-hearing-benefits/",
 ]);

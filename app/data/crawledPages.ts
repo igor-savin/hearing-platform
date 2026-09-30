@@ -5729,7 +5729,7 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
-    "path": "/medicare-open-enrollment-2027-hearing-benefits/",
+    "path": "/medicare-open-enrollment-hearing-benefits/",
     "title": "Medicare Open Enrollment 2027: Hearing Benefits to Check | California Hearing Center",
     "h1": "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
     "desc": "Medicare open enrollment runs Oct 15 to Dec 7, 2026. Five hearing benefit checks for 2027: hearing aid allowances, in-network audiologists, exam coverage and more.",

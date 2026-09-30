@@ -413,7 +413,7 @@ export const contentDates: Record<string, string> = {
   "/locked-and-used-hearing-aids/": "2026-09-21",
   "/loop-systems-availability-and-benefits/": "2026-09-21",
   "/lunch-and-learn-hearing-healthcare-technology/": "2026-09-21",
-  "/medicare-open-enrollment-2027-hearing-benefits/": "2026-09-30",
+  "/medicare-open-enrollment-hearing-benefits/": "2026-09-30",
   "/meet-your-audiologist-dr-kira-savins-approach-to-hearing-care-in-san-mateo/": "2026-09-21",
   "/menieres-disease/": "2026-09-21",
   "/meta-glasses-hearing-aid-feature-explained/": "2026-09-29",

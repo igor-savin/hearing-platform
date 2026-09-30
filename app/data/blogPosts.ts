@@ -3541,7 +3541,7 @@ export const blogPosts: Record<string, PageContent> = {
     image2Caption: "Ask in writing whether the devices are locked, and which manufacturer actually made them.",
   },
 
-  "/medicare-open-enrollment-2027-hearing-benefits/": {
+  "/medicare-open-enrollment-hearing-benefits/": {
     kicker: "Hearing Insurance",
     headline: "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
     metaTitle: "Medicare Open Enrollment 2027: Hearing Benefits to Check",
@@ -3582,9 +3582,9 @@ export const blogPosts: Record<string, PageContent> = {
       ["What is the difference between AEP and the January to March window?", "The Annual Enrollment Period, October 15 to December 7, is open to all Medicare members. The Medicare Advantage Open Enrollment Period, January 1 to March 31, is only for people already in a Medicare Advantage plan, and it allows one change."],
       ["Does Original Medicare cover hearing exams?", "Not routine ones. It generally covers a diagnostic hearing or balance exam when a doctor orders it to plan treatment, and you usually pay part of the cost. Ask your clinician to confirm how it applies to you."],
     ],
-    image: "/assets/blog/medicare-open-enrollment-2027-hearing-benefits-1.svg",
+    image: "/assets/blog/medicare-open-enrollment-hearing-benefits-1.svg",
     imageLabel: "Medicare open enrollment, October 15 to December 7, 2026",
-    image2: "/assets/blog/medicare-open-enrollment-2027-hearing-benefits-2.svg",
+    image2: "/assets/blog/medicare-open-enrollment-hearing-benefits-2.svg",
     image2Label: "Medicare enrollment dates that matter for 2027 hearing benefits",
     image2Caption: "Annual Enrollment ends December 7. Current Medicare Advantage members get one more change from January 1 to March 31, 2027.",
   },
@@ -4050,7 +4050,7 @@ export const blogPosts: Record<string, PageContent> = {
       ["OTC earbuds compared with prescription hearing aids", "Who it suits: earbuds are for adults with perceived mild to moderate loss, while prescription hearing aids cover mild through profound loss, including single-sided loss and complex cases. How it is fitted: earbuds are self-fitted from an in-app test, while prescription aids are programmed from a full evaluation and verified with real-ear measurement. Follow-up: earbuds leave you to adjust on your own, while a clinic provides fine-tuning, cleaning and repairs. Extras: earbuds play music and take calls and, in the Buds4 line, add Bluetooth LE Audio and Auracast, per audioXpress. Hearing aids are built to be worn all day. Neither is better for everyone. The right one depends on your hearing. See our [guide to OTC and prescription hearing aids](/hearing-aids-cost-2026-otc-vs-prescription/)."],
       ["How it compares with AirPods Pro", "Apple's AirPods Pro hearing aid feature received FDA authorization in September 2024, and it follows a similar design: a hearing test, a self-fit, and amplification in the earbuds. Samsung brings this to Android. Reports suggest both can help mild to moderate loss. We have not seen head-to-head independent testing, so we cannot say which sounds better. The better choice is usually the one that matches your phone."],
       ["When you should still get a professional evaluation", "Get tested first, and do not rely on the app, if you have sudden hearing loss, loss that is much worse in one ear, dizziness, ear pain or drainage, ringing in one ear only, trouble understanding words even when they are loud, or a family history that worries you. See a professional also if you already struggle in quiet rooms. Those can signal loss beyond what an OTC device is built for. A [hearing evaluation](/hearing-testing/) takes under an hour, and the results help whichever device you choose."],
-      ["Does Medicare pay for this?", "Original Medicare generally does not cover hearing aids, and OTC earbuds are not covered either. Some Medicare Advantage plans include a hearing allowance or an OTC benefit, and the rules differ by plan. Open enrollment is coming, so read our page on [Medicare open enrollment and hearing benefits](/medicare-open-enrollment-2027-hearing-benefits/)."],
+      ["Does Medicare pay for this?", "Original Medicare generally does not cover hearing aids, and OTC earbuds are not covered either. Some Medicare Advantage plans include a hearing allowance or an OTC benefit, and the rules differ by plan. Open enrollment is coming, so read our page on [Medicare open enrollment and hearing benefits](/medicare-open-enrollment-hearing-benefits/)."],
       ["Status and last update", "Last updated September 30, 2026. What changed: this is the first version of the page. We will update it when Samsung's rollout goes live or independent testing is published. Sources: [Samsung's announcement](https://news.samsung.com/us/?p=87094), [Wareable](https://www.wareable.com/samsung/samsung-galaxy-buds-3-pro-4-pro-otc-hearing-test-aids-amplification), [HearingTracker](https://hearingtracker.com/news/samsung-galaxy-buds-gain-fda-cleared-otc-hearing-aid-feature), [audioXpress](https://audioxpress.com/news/samsung-galaxy-buds-hearing-aid-clearance-confirms-earbuds-are-becoming-regulated-hearing-platforms) and [eWeek](https://www.eweek.com/news/samsung-galaxy-buds-hearing-aid/)."],
       ["Medical information notice", "This page is for general information only. It is not medical advice. Earbud prices are product prices, not the cost of hearing care. If you are unsure whether an OTC device is enough for you, book a hearing evaluation."],
     ],
