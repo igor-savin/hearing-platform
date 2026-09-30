@@ -432,7 +432,8 @@ export const helpServices: HelpService[] = [
       { label: "Dr. Caitlin Dold", href: "/meet-the-team/caitlin-dold" },
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
-      { label: "Sensorineural Hearing Loss", href: "/hearing-loss/sensorineural-hearing-loss" }
+      { label: "Sensorineural Hearing Loss", href: "/hearing-loss/sensorineural-hearing-loss" },
+      { label: "Latest: The Invisible Cochlear Implant (TICI UNICO)", href: "/invisible-cochlear-implant-med-el-tici-unico" }
     ],
     faqs: [
       {

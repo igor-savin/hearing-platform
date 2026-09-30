@@ -3511,6 +3511,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "related": [
       {
+        "label": "Latest: Medicare Open Enrollment 2027 and Hearing Benefits",
+        "href": "/medicare-open-enrollment-hearing-benefits"
+      },
+      {
         "label": "What Questions Should You Ask Before Buying Hearing Aids?",
         "href": "/questions-before-buying-hearing-aids"
       },
