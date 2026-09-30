@@ -733,7 +733,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     h1: "Auracast Goes Live in a U.S. Theater: What It Means for Hearing Aid Wearers",
     heroImage: { src: "/assets/blog-headphones.png", alt: "Adult using connected audio technology with accessible listening support" },
     sections: ["Hearing Technology", "News explained", "Audiologist perspective", "Frequently asked questions"],
-    body: [
+    body: 
       "Billings Studio Theatre, a community theater in Montana, now broadcasts its shows by Auracast. The system was running for the opening of Come From Away on September 11, 2026. Big Sky Audiology, a local clinic, paid for the equipment and the installation and gave it to the theater.",
       "Patients have asked us what Auracast looks like outside a product announcement. This is a good example, and it comes with limits. It is not the first U.S. installation, and one theater does not mean the venues near you are ready. This page covers what was reported, what is still unknown, and what to ask before you plan an evening around it.",
       "What was reported",
@@ -741,11 +741,11 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       "Why the soundboard connection matters",
       "In a theater, the sound you want is the sound at the mixing desk, before the room changes it. A feed taken from the desk gives you the performance without the echo, the seat noise and the people around you. A hearing loop can do that for hearing aids with a telecoil. Auracast does it for a wider set of devices, including earbuds and headphones that a person already owns. Loops are still far more common in real venues, and a telecoil stays a useful feature for years to come.",
       "What has to line up for you",
-      "Three things must work together. The venue needs a transmitter. Your hearing aids or other device must support Auracast, which generally means a recent model with Bluetooth LE Audio. And you need a way to find and join the broadcast, often through a phone app or a button on the hearing aids. Some hearing aids carry the hardware but wait for a software release before the feature works, so check what your model does today, not what it may do later. Our [Auracast explainer](/auracast-hearing-aids-explained) covers the basics.",
+      "Three things must work together. The venue needs a transmitter. Your hearing aids or other device must support Auracast, which generally means a recent model with Bluetooth LE Audio. And you need a way to find and join the broadcast, often through a phone app or a button on the hearing aids. Some hearing aids carry the hardware but wait for a software release before the feature works, so check what your model does today, not what it may do later. Our [Auracast explainer covers the basics.",
       "What to ask before a show",
       "Call the venue and ask whether it offers Auracast, a loop or loaner headsets, what the broadcast is called, and how to join. Ask your audiologist whether your current hearing aids support Auracast now. If you are shopping, ask the same about each model, and ask what joining a broadcast involves in daily use. Venues add features when patrons ask for them, so your call helps.",
       "Our view",
-      "This is good news, and it is early. If you already own compatible hearing aids, it is worth asking about Auracast at the places you visit. If you do not, hearing aids that work well for you do not need replacing because of one installation. A [hearing test](/hearing-testing) and an honest talk about where you most want to hear better will do more for you than any single feature. We see patients in Harrison and Somers and are glad to go through your options, including [hearing aid fitting](/hearing-aid-fitting) and what your devices support."
+      "This is good news, and it is early. If you already own compatible hearing aids, it is worth asking about Auracast at the places you visit. If you do not, hearing aids that work well for you do not need replacing because of one installation. A hearing test and an honest talk about where you most want to hear better will do more for you than any single feature. We see patients in Harrison and Somers and are glad to go through your options, including hearing aid fitting and what your devices support."
     ],
     faqs: [
       { question: "Is this the first U.S. theater to use Auracast?", answer: "No. Other U.S. venues have tried or installed Auracast before. What stands out in Billings is that a local audiology clinic paid for the system and donated it to a community theater." },
