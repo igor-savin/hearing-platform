@@ -396,12 +396,19 @@ const clinicalSpecialty = "https://schema.org/Otolaryngologic";
 // Resolve an optional provider slug on blogMeta to that clinician's Person
 // node. Until reviewers are assigned (see blogMeta.authorSlug in lib/site.ts)
 // every article returns undefined here and falls back to the organization,
-// which is the behaviour the site has today.
+// which is the behaviour the site has today. The reference carries name and url
+// as well as @id so the Person is usable even where the full node is not
+// emitted on the same page.
 function providerRef(slug?: string) {
   if (!slug) return undefined;
   const provider = providerForSlug(slug);
   if (!provider) return undefined;
-  return { "@id": `${baseUrl}${providerPath(provider)}#person` };
+  return {
+    "@type": "Person",
+    "@id": `${baseUrl}${providerPath(provider)}#person`,
+    name: provider.name,
+    url: `${baseUrl}${providerPath(provider)}`
+  };
 }
 
 export function pageSchema(page: SitePage) {
@@ -471,9 +478,15 @@ export function pageSchema(page: SitePage) {
     : {};
 
   if (page.type === "blog-post") {
+    // A named reviewer is emitted on any blog post that sets reviewedBySlug, not
+    // only those classed as clinical. Clinical pages already carry it via
+    // `medical`; this covers the rest, and is absent until a slug is set.
+    const reviewerFields =
+      reviewer && !clinical ? { reviewedBy: reviewer, lastReviewed: page.lastModified } : {};
     return {
       ...base,
       ...medical,
+      ...reviewerFields,
       author: author || { "@id": `${baseUrl}/#organization` }
     };
   }

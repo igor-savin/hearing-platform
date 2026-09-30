@@ -157,6 +157,11 @@ export type SitePage = {
   datePublished?: string;
   canonical: string;
   heroImage?: CrawlImage;
+  // Optional social-share overrides. Absent, openGraph and twitter fall back to
+  // the hero image and to the title / description, exactly as before.
+  ogImage?: { src: string; alt: string };
+  ogTitle?: string;
+  ogDescription?: string;
   images: CrawlImage[];
   sections: string[];
   body: string[];
@@ -185,6 +190,23 @@ export type SitePage = {
     patientQuestion: string;
     storyLead: string;
     sources?: { label: string; href: string }[];
+    // Optional semantic comparison table. Rendered after the body section whose
+    // heading equals `afterHeading`. Use only facts already stated in the page
+    // text; the table adds no new claims and emits no extra schema.
+    comparisonTable?: {
+      afterHeading: string;
+      caption: string;
+      headers: string[];
+      rows: string[][];
+    };
+    // Optional "notify me" email capture. `context` is sent to /api/contact so
+    // the source of each signup can be told apart (must start with "Notify:").
+    notify?: {
+      context: string;
+      heading: string;
+      body: string;
+      button: string;
+    };
   };
 };
 
@@ -1588,6 +1610,13 @@ export const bingSiteVerification =
 
 export function buildMetadata(page: SitePage): Metadata {
   const image = page.heroImage?.src || "/opengraph-image";
+  // A per-page share card, when one exists, replaces the hero in openGraph and
+  // twitter only. Without it the behaviour is unchanged.
+  const shareImages = page.ogImage
+    ? [{ url: page.ogImage.src, width: 1200, height: 630, alt: page.ogImage.alt }]
+    : [image];
+  const shareTitle = page.ogTitle || page.metaTitle;
+  const shareDescription = fitDescription(page.ogDescription || page.metaDescription);
 
   // DO NOT reintroduce `robots: undefined` / `verification: undefined` here.
   // Next resolves metadata by walking layout -> page and letting the closest
@@ -1616,18 +1645,18 @@ export function buildMetadata(page: SitePage): Metadata {
       canonical: page.canonical
     },
     openGraph: {
-      title: page.metaTitle,
-      description: fitDescription(page.metaDescription),
+      title: shareTitle,
+      description: shareDescription,
       url: page.canonical,
       siteName,
       type: page.type === "blog-post" ? "article" : "website",
-      images: [image]
+      images: shareImages
     },
     twitter: {
       card: "summary_large_image",
-      title: page.metaTitle,
-      description: fitDescription(page.metaDescription),
-      images: [image]
+      title: shareTitle,
+      description: shareDescription,
+      images: shareImages
     }
   };
 }

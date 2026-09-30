@@ -132,7 +132,9 @@ async function sendContactEmail(payload: Required<Omit<ContactPayload, "website"
       to: recipients,
       ...(bccRecipients.length ? { bcc: bccRecipients } : {}),
       reply_to: payload.email || undefined,
-      subject: `Website contact form: ${payload.name}`,
+      subject: payload.context.startsWith("Notify:")
+        ? `Email update signup (${payload.context})`
+        : `Website contact form: ${payload.name}`,
       text: textBody(payload),
       html: htmlBody(payload)
     }),
@@ -176,6 +178,24 @@ export async function POST(request: Request) {
       phone: clean(body.phone, 80),
       referralSource
     };
+
+    // Email-only "notify me" signups (components/NotifyForm.tsx) identify
+    // themselves by a context that starts with "Notify:". They carry no name,
+    // phone or message, so those are filled in here for this context only, and
+    // a valid email becomes the one required field. Every other context keeps
+    // the original requirements.
+    const isNotifySignup = payload.context.startsWith("Notify:");
+    if (isNotifySignup) {
+      if (!payload.email) {
+        return NextResponse.json(
+          { ok: false, message: "Please enter your email address." },
+          { status: 400 }
+        );
+      }
+      payload.name = payload.name || "Email update signup";
+      payload.phone = payload.phone || "Not provided";
+      payload.message = payload.message || "Please email me once when this changes. Email only, no other details.";
+    }
 
     if (!payload.name || !payload.phone || !payload.message) {
       return NextResponse.json(

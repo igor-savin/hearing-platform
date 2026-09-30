@@ -23,6 +23,7 @@ import {
   specTableFor
 } from "@/lib/carePageData";
 import { ContactForm } from "@/components/ContactForm";
+import { NotifyForm } from "@/components/NotifyForm";
 import { InteractiveEarHero } from "@/components/InteractiveEarHero";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import {
@@ -97,13 +98,70 @@ import { providerForName, providerForPath, providerForSlug, providerPath, provid
 // a provider slug on its blogMeta, the clinician's name is shown instead and
 // links to their profile, matching the Person node the JSON-LD emits. An
 // unknown slug falls back to the text, so a typo cannot blank out a credit.
-function ProviderCredit({ fallback, slug }: { fallback: string; slug?: string }) {
+function ProviderCredit({ fallback, showCredential = false, slug }: { fallback: string; showCredential?: boolean; slug?: string }) {
   const provider = slug ? providerForSlug(slug) : undefined;
   if (!provider) return <>{fallback}</>;
+  // Most names already end in a credential ("Dr. Caitlin Dold, Au.D."). When one
+  // does not, the role is appended so a reviewer line always says who and what.
+  const credential = showCredential && !provider.name.includes(",") ? `, ${provider.role}` : "";
   return (
-    <Link className="underline underline-offset-2" href={providerPath(provider)}>
-      {provider.name}
-    </Link>
+    <>
+      <Link className="underline underline-offset-2" href={providerPath(provider)}>
+        {provider.name}
+      </Link>
+      {credential}
+    </>
+  );
+}
+
+function BlogComparisonTable({ table }: { table: NonNullable<NonNullable<SitePage["blogMeta"]>["comparisonTable"]> }) {
+  return (
+    <figure className="mt-8">
+      {/* The wrapper scrolls, not the page, so a three-column table stays usable
+          on a phone. It is focusable so keyboard users can scroll it. */}
+      <div
+        aria-label={table.caption}
+        className="focus-ring w-full max-w-full overflow-x-auto border border-[#d5e7f4] bg-white"
+        role="group"
+        tabIndex={0}
+      >
+        <table className="w-full min-w-[560px] border-collapse text-left text-[17px] leading-6 max-md:text-[15px]">
+          <caption className="px-5 pb-3 pt-5 text-left text-[20px] font-black leading-tight text-[#003f6f] max-md:text-[17px]">
+            {table.caption}
+          </caption>
+          <thead>
+            <tr>
+              {table.headers.map((header) => (
+                <th
+                  className="border-b-2 border-[#005a9c] bg-[#dbe9f3] px-5 py-3 text-[14px] font-black text-[#003f6f]"
+                  key={header}
+                  scope="col"
+                >
+                  {header}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {table.rows.map((row) => (
+              <tr className="odd:bg-white even:bg-[#f7fbfd]" key={row[0]}>
+                {row.map((cell, index) =>
+                  index === 0 ? (
+                    <th className="border-t border-[#dedede] px-5 py-3 align-top font-black text-[#262626]" key={`${row[0]}-${index}`} scope="row">
+                      {cell}
+                    </th>
+                  ) : (
+                    <td className="border-t border-[#dedede] px-5 py-3 align-top text-[#333]" key={`${row[0]}-${index}`}>
+                      {cell}
+                    </td>
+                  )
+                )}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </figure>
   );
 }
 
@@ -3768,8 +3826,8 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                 ) : null}
                 {meta?.reviewedBySlug ? (
                   <p>
-                    <span className="font-black text-[#262626]">Medically reviewed by:</span>{" "}
-                    <ProviderCredit fallback={`${siteName} team`} slug={meta.reviewedBySlug} />
+                    <span className="font-black text-[#262626]">Reviewed by:</span>{" "}
+                    <ProviderCredit fallback={`${siteName} team`} showCredential slug={meta.reviewedBySlug} />
                   </p>
                 ) : null}
               </div>
@@ -3849,6 +3907,9 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                     >
                       <h2 className="text-[36px] font-black leading-tight text-[#262626] max-md:text-[28px]">{section.heading}</h2>
                       <p className="mt-4 text-[22px] leading-[1.55] text-[#333] max-md:text-[18px]">{section.text}</p>
+                      {meta?.comparisonTable && meta.comparisonTable.afterHeading === section.heading ? (
+                        <BlogComparisonTable table={meta.comparisonTable} />
+                      ) : null}
                     </section>
                   );
                 })}
@@ -3871,6 +3932,9 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                     ))}
                   </div>
                 </section>
+              ) : null}
+              {meta?.notify ? (
+                <NotifyForm body={meta.notify.body} button={meta.notify.button} context={meta.notify.context} heading={meta.notify.heading} />
               ) : null}
               {meta?.sources?.length ? (
                 <section className="mt-12 border-t border-[#dedede] pt-8" aria-labelledby="article-sources">
