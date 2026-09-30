@@ -178,6 +178,80 @@ export function SpecTable({
   );
 }
 
+/* ── Comparison table for editorial posts (PageContent.comparisonTable) ───── */
+
+// Plain-data sibling of SpecTable: a fragment supplies strings only, so a post
+// needs no component code. headers[0] titles the row-heading column, the rest
+// title the value columns; each row is [row label, ...values].
+export function ComparisonTable({
+  caption,
+  headers,
+  rows,
+  footnote,
+}: {
+  caption: string;
+  headers: string[];
+  rows: string[][];
+  footnote?: string;
+}) {
+  return (
+    <figure className="spec-table-wrap comparison-table-wrap">
+      <div className="spec-table-scroll" tabIndex={0} role="group" aria-label={caption}>
+        <table className="spec-table">
+          <caption>{caption}</caption>
+          <thead>
+            <tr>
+              {headers.map((h, i) => (
+                <th key={`${h}-${i}`} scope="col">{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(([label, ...values]) => (
+              <tr key={label}>
+                <th scope="row">{label}</th>
+                {values.map((v, i) => (
+                  <td key={`${label}-${i}`}>{v}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {footnote ? <figcaption>{footnote}</figcaption> : null}
+    </figure>
+  );
+}
+
+/* ── Numbered self-check list with a closing call to action ─────────────── */
+
+export function SelfCheckList({
+  heading,
+  intro,
+  items,
+  cta,
+}: {
+  heading: string;
+  intro?: string;
+  items: string[];
+  cta: { label: string; href: string };
+}) {
+  return (
+    <section className="self-check">
+      <h2>{heading}</h2>
+      {intro ? <p>{intro}</p> : null}
+      <ol>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ol>
+      <p>
+        <a className="button primary" href={cta.href}>{cta.label}</a>
+      </p>
+    </section>
+  );
+}
+
 /* ── The audiogram, drawn once and reused ───────────────────────────────── */
 
 // Neither practice site had one, which is odd: it is the single most

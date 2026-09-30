@@ -1,5 +1,12 @@
 import type { NextConfig } from "next";
 
+// 30 Sep 2026 — the Medicare open-enrollment page moved to an evergreen slug (no
+// year) so the same URL can carry next year's update. Headline and body keep 2027.
+const newsSlugRedirects = [
+  { source: "/medicare-open-enrollment-2027-hearing-benefits/", destination: "/medicare-open-enrollment-hearing-benefits/", statusCode: 301 },
+  { source: "/medicare-open-enrollment-2027-hearing-benefits", destination: "/medicare-open-enrollment-hearing-benefits/", statusCode: 301 },
+];
+
 // 301 redirects from the blog-curation pass: thin/duplicate/hyperlocal/dated
 // posts point to their most relevant canonical, pillar, or areas-we-serve page.
 // Regenerate via scratchpad curation flow if the keep/redirect split changes.
@@ -14,13 +21,6 @@ import type { NextConfig } from "next";
 // queries. Each now has a written article again. Before adding a redirect here,
 // check the page's clicks in Search Console: a redirect to a hub page throws
 // away the demand rather than consolidating it.
-// 30 Sep 2026 — the Medicare open-enrollment page moved to an evergreen slug (no
-// year) so the same URL can carry next year's update. Headline and body keep 2027.
-const newsSlugRedirects = [
-  { source: "/medicare-open-enrollment-2027-hearing-benefits/", destination: "/medicare-open-enrollment-hearing-benefits/", permanent: true },
-  { source: "/medicare-open-enrollment-2027-hearing-benefits", destination: "/medicare-open-enrollment-hearing-benefits/", permanent: true },
-];
-
 const blogRedirects = [
       // 25 Aug 2026 — per-city service sub-pages consolidated into their city
       // page. Thirteen of these were Atherton alone, with a median pairwise

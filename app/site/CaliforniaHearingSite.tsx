@@ -16,8 +16,9 @@ import { LOCATIONS, LOCATION_LIST, hoursShort, hoursLong, cityLine } from "../da
 import { reviews, googleReviewsUrl } from "../data/reviews";
 import { EarJourneyHero } from "./EarJourneyHero";
 import { LeadForm } from "./LeadForm";
+import { NotifyForm } from "./NotifyForm";
 import { SiteImage } from "./SiteImage";
-import { AudiogramFigure, ClinicianCard, RedFlagPanel, SpecTable, VisitSteps } from "./CareBlocks";
+import { AudiogramFigure, ClinicianCard, ComparisonTable, RedFlagPanel, SelfCheckList, SpecTable, VisitSteps } from "./CareBlocks";
 import { TINNITUS_RED_FLAGS, TINNITUS_VISIT_STEPS, TINNITUS_LEAD_CLINICIAN, AUDIOGRAM_PAGES } from "./carePageData";
 import { specTableFor } from "./productSpecs";
 
@@ -93,6 +94,28 @@ export type PageContent = {
    * 261 pages. `slug` must match a bio under /about-us/.
    */
   reviewedBy?: { slug: string; name: string; credential: string };
+  /**
+   * Semantic comparison table for editorial posts, rendered right after the
+   * section whose heading equals `after` (or after the last section if no
+   * heading matches). `headers[0]` labels the row-heading column; the rest
+   * label the value columns. Every row is [row label, ...one value per column].
+   */
+  comparisonTable?: { after: string; caption: string; headers: string[]; rows: string[][]; footnote?: string };
+  /**
+   * Numbered self-check list with a closing call to action, placed right after
+   * the section whose heading equals `after`.
+   */
+  checklist?: { after: string; heading: string; intro?: string; items: string[]; cta: { label: string; href: string } };
+  /**
+   * Opt-in "notify me" email capture. `context` is the source label sent to
+   * /api/contact (e.g. "Notify: TICI UNICO FDA"). Placed above the FAQ block.
+   */
+  notify?: { context: string; heading: string; body: string; button: string };
+  /** Per-page social card. `ogImage` is a 1200x630 PNG; omit all three to use the defaults. */
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogTitle?: string;
+  ogDescription?: string;
 };
 
 // Convert author-written [label](/internal/path) markdown links into anchors.
@@ -1257,6 +1280,18 @@ export function blogMetaTitle(path: string, fallback: string): string {
   return h.length + brand.length <= 60 ? h + brand : h;
 }
 
+/** Per-page social card overrides (image, alt, title, description), when a post sets them. */
+export function blogOgOverrides(path: string): { image: string; alt: string; title?: string; description?: string } | null {
+  const post = blogPosts[path];
+  if (!post?.ogImage) return null;
+  return {
+    image: post.ogImage,
+    alt: post.ogImageAlt || post.ogTitle || plain(post.headline),
+    title: post.ogTitle,
+    description: post.ogDescription,
+  };
+}
+
 export function blogOgImage(path: string): string | null {
   return blogPhotos[path] ?? blogPosts[path]?.image ?? null;
 }
@@ -1701,6 +1736,13 @@ function InnerPage({ page }: { page: SitePage }) {
   // and wants the summary. Before the framing it is a wall of numbers; after
   // the FAQs nobody scrolls to it. Clamped so a short page still gets one.
   const specTableAfter = Math.min(2, content.sections.length - 1);
+  const afterIndex = (heading?: string) => {
+    if (!heading) return content.sections.length - 1;
+    const i = content.sections.findIndex(([h]) => h === heading);
+    return i >= 0 ? i : content.sections.length - 1;
+  };
+  const comparison = content.comparisonTable ? { table: content.comparisonTable, afterIndex: afterIndex(content.comparisonTable.after) } : null;
+  const checklistIndex = content.checklist ? afterIndex(content.checklist.after) : -1;
   // The careers page is the one page whose calls to action are not for patients.
   const isCareer = page.path === "/about-us/career/";
   // Pages where someone gets in touch: the contact pages, plus the senior-living
@@ -1877,6 +1919,8 @@ function InnerPage({ page }: { page: SitePage }) {
                   ))}
                 </section>
                 {specTable && index === specTableAfter && <SpecTable {...specTable} />}
+                {comparison && comparison.afterIndex === index && <ComparisonTable {...comparison.table} />}
+                {content.checklist && checklistIndex === index && <SelfCheckList {...content.checklist} />}
               </Fragment>
             ))}
           </div>
@@ -1898,6 +1942,7 @@ function InnerPage({ page }: { page: SitePage }) {
                 : content.bullets!.map((bullet) => <span key={bullet}>{bullet}</span>)}
             </div>
           )}
+          {content.notify && <NotifyForm {...content.notify} />}
           {content.faqs && (
             <section className="faq-block">
               <p className="section-kicker">Frequently asked questions</p>

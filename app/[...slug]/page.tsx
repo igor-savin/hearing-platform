@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { crawledPages, type SitePage } from "../data/crawledPages";
 import { redirectedPaths } from "../data/redirectedPaths";
-import { CaliforniaHearingSite, blogMetaDescription, blogMetaTitle, blogOgImage, areaMetaTitle, areaMetaDescription, coreMetaTitle, coreMetaDescription } from "../site/CaliforniaHearingSite";
+import { CaliforniaHearingSite, blogMetaDescription, blogMetaTitle, blogOgImage, blogOgOverrides, areaMetaTitle, areaMetaDescription, coreMetaTitle, coreMetaDescription } from "../site/CaliforniaHearingSite";
 
 type PageProps = {
   params: Promise<{ slug: string[] }>;
@@ -81,6 +81,11 @@ export async function generateMetadata({ params }: PageProps) {
   // publish date. A service or location page is not an article; saying so was
   // simply inaccurate. Everything non-editorial is a website page.
   const isArticle = blogMetaDescription(path) != null;
+  // A post can carry its own 1200x630 card and social title/description. When
+  // it does not, everything below is exactly what it was before.
+  const og = blogOgOverrides(path);
+  const ogTitle = og?.title ?? title;
+  const ogDesc = og?.description ?? desc;
 
   return {
     title,
@@ -88,19 +93,19 @@ export async function generateMetadata({ params }: PageProps) {
     alternates: { canonical: path },
     openGraph: {
       ...OG_SITE,
-      title,
-      description: desc,
+      title: ogTitle,
+      description: ogDesc,
       url: path,
       type: isArticle ? "article" : "website",
       // Only the shared default has known dimensions; per-post photos vary, so
       // they are passed as a bare URL for the platform to measure.
-      images: [blogImg ? ogImg : DEFAULT_OG_IMAGE_SIZED],
+      images: [og ? { url: og.image, width: 1200, height: 630, alt: og.alt } : blogImg ? ogImg : DEFAULT_OG_IMAGE_SIZED],
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description: desc,
-      images: [ogImg],
+      title: ogTitle,
+      description: ogDesc,
+      images: [og ? { url: og.image, alt: og.alt } : ogImg],
     },
   };
 }

@@ -155,7 +155,9 @@ async function sendContactEmail(payload: FullPayload) {
       to: recipients,
       ...(bccRecipients.length ? { bcc: bccRecipients } : {}),
       reply_to: payload.email || undefined,
-      subject: `Website contact form: ${payload.name}`,
+      subject: payload.context.startsWith("Notify:")
+        ? `Update signup: ${payload.context.slice("Notify:".length).trim()}`
+        : `Website contact form: ${payload.name}`,
       text: textBody(payload),
       html: htmlBody(payload)
     }),
@@ -203,7 +205,21 @@ export async function POST(request: Request) {
       referralSource
     };
 
-    if (!payload.name || (!payload.phone && !payload.email)) {
+    // "Notify me" signups (NotifyForm) send an email and nothing else. They are
+    // recognised by their context label, and only they skip the name/phone rule;
+    // every other form keeps the original requirement.
+    const isNotify = payload.context.startsWith("Notify:");
+
+    if (isNotify) {
+      if (!payload.email || !isValidEmail(payload.email)) {
+        return NextResponse.json(
+          { ok: false, message: "Please enter a valid email address." },
+          { status: 400 }
+        );
+      }
+      payload.name = "Update signup (email only)";
+      payload.message = "Asked to be emailed once when this changes. Email only; no health information collected.";
+    } else if (!payload.name || (!payload.phone && !payload.email)) {
       return NextResponse.json(
         { ok: false, message: "Please provide your name and a phone number or email." },
         { status: 400 }
@@ -221,7 +237,9 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       ok: true,
-      message: "Thank you. Your request has been sent and our team can follow up with you."
+      message: isNotify
+        ? "Thank you. We will send you one email when there is news."
+        : "Thank you. Your request has been sent and our team can follow up with you."
     });
   } catch (error) {
     if (error instanceof EmailConfigurationError) {
