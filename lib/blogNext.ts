@@ -784,6 +784,229 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       ]
     }
   },
+  {
+    path: "/invisible-cochlear-implant-med-el-tici-unico",
+    title: "The World's First Invisible Cochlear Implant: What MED-EL's TICI UNICO Means for U.S. Patients",
+    metaTitle: "Invisible Cochlear Implant: MED-EL TICI UNICO Explained",
+    metaDescription: "MED-EL launched TICI UNICO, a fully implantable cochlear implant, in Europe on Sept 29, 2026. How it works, who it is for, and when US patients may get it.",
+    h1: "The World's First Invisible Cochlear Implant: What MED-EL's TICI UNICO Means for U.S. Patients",
+    heroImage: { src: "/assets/news/invisible-cochlear-implant-med-el-tici-unico.png", alt: "Diagram comparing a conventional cochlear implant with an external processor and coil to the fully implantable TICI UNICO, which sits entirely under the skin" },
+    sections: ["Cochlear Implants", "News explained", "Audiologist perspective", "Frequently asked questions"],
+    body: [
+      "MED-EL announced TICI UNICO on September 29, 2026 in Innsbruck, Austria. The company calls it the first commercially available, totally invisible cochlear implant. The microphone, battery and processing all sit under the skin. A wearer has no processor to put on and no coil on the scalp.",
+      "Status as of September 30, 2026: TICI UNICO has a European CE Mark and is launching in European markets. It is not FDA-approved and not available in the United States. We have not seen a U.S. timeline or a price. This page covers what is confirmed, what is still unknown, and what patients in Westchester and the Hudson Valley can do today.",
+      "What MED-EL announced",
+      "MED-EL said the first four commercial implantations took place on launch day. A MED-EL co-founder described the device as a new category of implant. One outside expert quoted by IEEE Spectrum called it the first meaningful innovation in cochlear implants in about 30 years. Those are significant statements, and they come from the company and from early coverage. Long-term results are not yet available.",
+      "How it differs from a conventional implant",
+      "Today's cochlear implants have an internal part placed by a surgeon and an external sound processor that holds the microphone and battery. A coil holds the two together through the skin with a magnet. TICI UNICO removes the external part. IEEE Spectrum reports that the system weighs about 20 grams and has four connected components under the scalp. The microphone is about the width of a nickel and sits roughly 6 millimeters beneath the skin.",
+      "What invisible changes in daily life",
+      "MED-EL says a wearer can hear around the clock, including while asleep, showering and swimming, and while the battery charges. There is no device to lose, keep dry or remember at night. That may matter most for people who stop wearing an external processor because of hair, glasses, sport, sleep or appearance. There is still a routine. The battery charges through the scalp with a small magnetic unit called a GoPod.",
+      "Battery facts reported so far",
+      "IEEE Spectrum reports a battery designed for up to about 40 hours per charge, and a charge time of one to one and a half hours. The battery is not replaceable. The design goal is at least 24 hours of use per charge for at least 15 years. These are design targets. We would want to know what happens at the end of the battery's life before recommending the device to anyone.",
+      "What the evidence shows",
+      "MED-EL published a six-person feasibility study in 2025 that reported a good safety profile and hearing results comparable to conventional implants. The launch material refers to a larger clinical investigation of about 30 patients. Comparable results in small groups over a short time are a promising start. They do not show long-term outcomes across many patients, and they do not show how the under-skin microphone handles noisy rooms.",
+      "What has not been disclosed",
+      "The launch release did not give a price, MRI compatibility details or a U.S. regulatory plan. It did not say whether U.S. insurers would cover it. We will not guess at any of these. We will update this page when MED-EL or the FDA says more.",
+      "Who it is for",
+      "MED-EL designed TICI UNICO for severe-to-profound sensorineural hearing loss. Candidacy is a clinical decision made from formal testing, medical review and imaging. A person cannot choose it from a product page.",
+      "When could U.S. patients get it?",
+      "Cochlear implants are high-risk devices in the United States, and they need FDA approval before sale. TICI UNICO does not have it. No U.S. launch date has been announced. Anyone who gives you a date is guessing.",
+      "What is available in the U.S. today",
+      "Advanced Bionics, Cochlear and MED-EL sell cochlear implant systems in the United States. They all use an external sound processor. For the right candidate, they deliver large gains in understanding speech, especially in quiet and on the phone. Waiting for a future device carries a cost, because ears that go a long time without useful hearing tend to do less well after implantation.",
+      "What we offer today",
+      "Dr. Caitlin Dold does the cochlear implant work at Audiology Associates of Westchester in Harrison and Somers: candidacy testing before surgery, and activation and programming after. The surgery itself is done by an implant surgeon. We do not offer TICI UNICO, and no U.S. practice does yet. What we can do now is find out whether any cochlear implant should be on your list. That starts with aided speech testing, with hearing aids that have been checked with real-ear measurement.",
+      "Should you wait for TICI UNICO?",
+      "No. An evaluation does not commit you to surgery. If you qualify today, waiting years is a poor trade. If you do not qualify yet, your test results give you a baseline, and your hearing aids can be checked and improved. Either way, the results will still be useful if new devices reach the United States. Last updated September 30, 2026. This is the first version of the page.",
+      "Medical information notice",
+      "This page is for general information only. It is not medical advice, and it does not diagnose or recommend treatment. Whether a cochlear implant is right for you depends on testing and a conversation with your clinical team."
+    ],
+    faqs: [
+      { question: "Is TICI UNICO available in the United States?", answer: "No. It has a CE Mark for Europe and is launching there. It does not have FDA approval, and we have not seen a U.S. launch date. We will update this page if that changes." },
+      { question: "How is it different from a regular cochlear implant?", answer: "A regular implant has an external sound processor worn on the ear or head. TICI UNICO puts the microphone, battery and processing under the skin, so nothing is worn outside. The battery is charged through the scalp with a small magnetic unit." },
+      { question: "Who qualifies for a cochlear implant?", answer: "Candidacy depends on how well you understand speech with well-fitted hearing aids, plus medical and imaging review. A pure-tone average of 60 dB HL or worse with speech understanding of 60% or less is a common reason to refer for a full evaluation. The implant team makes the final decision." },
+      { question: "How do I know if I am a candidate?", answer: "Ask for a hearing evaluation that includes aided sentence testing. If the results point toward an implant, Dr. Dold coordinates the next steps with an implant center for imaging and a surgical assessment." },
+      { question: "Should I wait for TICI UNICO or get evaluated now?", answer: "Get evaluated now. An evaluation does not commit you to surgery, and long periods without useful hearing can reduce how well an implant works later. Your test results stay useful if new devices arrive." }
+    ],
+    related: [
+      { label: "Cochlear Implant Support", href: "/how-we-can-help/cochlear-implants" },
+      { label: "When Are Hearing Aids No Longer Enough?", href: "/when-hearing-aids-no-longer-enough-cochlear-implant" },
+      { label: "What Is the 60/60 Rule in Audiology?", href: "/what-is-the-60-60-rule-in-audiology" },
+      { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-2027-hearing-benefits" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Industry news explained",
+      byline: "What a fully implantable cochlear implant means for patients in the U.S.",
+      reviewedBy,
+      readTime: "6 min read",
+      articleType: "News explained",
+      pullQuote: "TICI UNICO is real, and it is not available in the United States. If hearing aids no longer give you clear speech, the useful step today is an evaluation.",
+      keyTakeaways: [
+        "MED-EL announced TICI UNICO on September 29, 2026. It is fully implantable, with no external processor, and has a CE Mark for Europe.",
+        "It is not FDA-approved and not available in the United States. No U.S. timeline, price or MRI information has been announced.",
+        "Candidacy for any cochlear implant starts with aided speech testing. An evaluation does not commit you to surgery, and waiting can cost hearing results."
+      ],
+      patientQuestion: "Should I wait for the invisible cochlear implant or get evaluated now?",
+      storyLead: "MED-EL launched the first fully implantable cochlear implant in Europe. Here is what it means for patients in the U.S.",
+      sources: [
+        { label: "Business Wire: MED-EL launches TICI UNICO", href: "https://www.businesswire.com/news/home/20260929847077/en/MED-EL-Launches-TICI-UNICO-the-Worlds-First-and-Only-Totally-Invisible-Cochlear-Implant" },
+        { label: "IEEE Spectrum: Fully implantable cochlear implant", href: "https://spectrum.ieee.org/fully-implantable-cochlear-implant" },
+        { label: "Hearing Practitioner News: MED-EL launches world-first invisible cochlear implant", href: "https://hearingpractitionernews.com.au/hearing-milestone-med-el-launches-world-first-invisible-cochlear-implant-tici-unico/" },
+        { label: "MED-EL: 2025 TICI feasibility study results", href: "https://www.medel.com/press-room/press-details/2025/02/06/the-future-of-cochlear-implants--promising-feasibility-study-results-for-med-el-s-totally-implantable-cochlear-implant-(tici)" }
+      ]
+    }
+  },
+  {
+    path: "/samsung-galaxy-buds-hearing-aid-feature",
+    title: "Samsung Galaxy Buds Are Becoming Hearing Aids: What the FDA Clearance Means",
+    metaTitle: "Samsung Galaxy Buds Hearing Aid: FDA-Cleared, Coming Q4",
+    metaDescription: "Samsung's Galaxy Buds 3 Pro and 4 Pro are getting an FDA-cleared hearing aid feature. An audiologist explains what it can, and cannot, do.",
+    h1: "Samsung Galaxy Buds Are Becoming Hearing Aids: What the FDA Clearance Means",
+    heroImage: { src: "/assets/news/samsung-galaxy-buds-hearing-aid-feature.png", alt: "Comparison of OTC earbud hearing aids and prescription hearing aids by who they suit, how they are fitted and what follow-up care is included" },
+    sections: ["Hearing Technology", "News explained", "Audiologist perspective", "Frequently asked questions"],
+    body: [
+      "Samsung announced on August 11, 2026 that the FDA cleared a hearing aid feature and a hearing test for the Galaxy Buds3 Pro and Galaxy Buds4 Pro. Samsung says it arrives by software update in the fourth quarter of 2026 in the United States and some other approved markets.",
+      "Status as of September 30, 2026: we have not seen confirmation that the update is live. Check Samsung before you plan around a date. Patients in Harrison and Somers have started asking whether this changes what they should buy. This page gives our answer.",
+      "What was cleared",
+      "There are two features in the Galaxy Buds app. The Hearing Test is a self-administered, five-minute test that uses pure-tone audiometry, one ear at a time, and produces an audiogram. It is registered as Software as a Medical Device. The Hearing Aid feature amplifies sound based on the result. It went through the FDA's over-the-counter pathway, the same category as OTC hearing aids sold in stores. It is for adults 18 and older with perceived mild to moderate hearing loss.",
+      "How the fitting works",
+      "After the test, the app groups your result as normal or one of four stages of loss. The amplification then follows NAL-NL2, a fitting formula from Australia's National Acoustic Laboratories that clinics use for prescription hearing aids. Beamforming microphones favor sound in front of you, and noise reduction works on speech. Wareable reports that the audiogram is stored in Samsung Health.",
+      "What the published figures say",
+      "audioXpress, citing Samsung's data, reports a maximum output of about 111.9 dB SPL, full-on gain of about 31.5 dB, a frequency range of roughly 100 to 9,000 Hz and a processing delay of about 2.7 milliseconds. In a 30-day study of 103 adults with mild to moderate loss, people who fit the feature themselves reported benefit that was not worse than people fitted by a clinician. In a separate 367-person validation, the app's test differed from clinic audiometry by a median of 3.75 dB. These are encouraging figures from Samsung's own data, reported second-hand. We have not seen independent lab testing.",
+      "What you need",
+      "You need Galaxy Buds3 Pro or Galaxy Buds4 Pro, a compatible Galaxy phone and the update. Samsung's own announcement says One UI 9 or later. Some outlets have reported One UI 8. Check Samsung's note for your region. Samsung also says availability varies by market, model and paired device.",
+      "What it does well",
+      "It gets more people to take a hearing test, and many adults wait years. It uses a clinical fitting formula, not a generic volume boost. And it lives in earbuds that people already wear. For someone with mild to moderate loss who wants help in conversation, it may be a good first step.",
+      "Where OTC earbuds run out of road",
+      "A five-minute test at home cannot rule out wax, a middle-ear problem or a difference between the ears that needs a doctor. The power has a ceiling. In our reading, a full-on gain near 31.5 dB suggests that people at the upper end of moderate loss may run out of power in some pitches. Earbud tips can block the canal and change how your own voice sounds. No one verifies what reaches your eardrum or adjusts the fit afterward. HearingTracker summarized recent research on earbud hearing features and found that real gain can fall short of the fitting targets.",
+      "OTC earbuds and prescription hearing aids side by side",
+      "Earbuds suit adults with perceived mild to moderate loss. Prescription hearing aids cover mild through profound loss, including one-sided loss and complex cases. Earbuds are self-fitted from an app test. Prescription aids are programmed from a full evaluation and checked with real-ear measurement. With earbuds you adjust alone. With a clinic you get fine-tuning, cleaning and repairs. Earbuds also play music and take calls, and the Buds4 line adds Bluetooth LE Audio and Auracast, according to audioXpress. Neither is better for everyone.",
+      "How it compares with AirPods Pro",
+      "Apple's AirPods Pro hearing aid feature was authorized in September 2024. It has a similar design: a test, a self-fit and amplification in the earbuds. Samsung brings the idea to Android. Reports say both can help with mild to moderate loss. We have not seen independent head-to-head testing, so the simplest guide is to match the phone you own.",
+      "When to see a professional first",
+      "Get a hearing evaluation before you rely on an app if you have sudden hearing loss, loss much worse in one ear, dizziness, ear pain or drainage, ringing in one ear only, or trouble understanding words even when they are loud. If you struggle even in quiet rooms, that may be more than an OTC device is built for.",
+      "Does Medicare cover it?",
+      "Original Medicare generally does not cover hearing aids, and it does not cover OTC earbuds. Some Medicare Advantage plans include a hearing or OTC allowance, and the rules vary. Open enrollment runs from October 15 to December 7, so read our page on Medicare open enrollment and hearing benefits.",
+      "Status and last update",
+      "Last updated September 30, 2026. This is the first version of the page. We will update it when Samsung's rollout goes live or independent testing is published.",
+      "Medical information notice",
+      "This page is for general information only. It is not medical advice. Earbud prices are product prices, not the cost of hearing care. If you are unsure whether an OTC device is enough for you, book a hearing evaluation."
+    ],
+    faqs: [
+      { question: "Which Galaxy Buds work as hearing aids?", answer: "Only the Galaxy Buds3 Pro and Galaxy Buds4 Pro, once the update arrives. You also need a compatible Galaxy phone. Samsung's announcement says One UI 9 or later." },
+      { question: "When is the hearing aid update coming out?", answer: "Samsung says the fourth quarter of 2026 in the United States and some other approved markets. As of September 30, 2026, we have not seen confirmation that it is live." },
+      { question: "How does it compare to AirPods Pro hearing features?", answer: "Both use a self-administered hearing test and amplify sound in the earbuds for adults with mild to moderate loss. Apple's feature was authorized in September 2024. We have not seen independent head-to-head testing, so match the one that works with your phone." },
+      { question: "Can earbuds replace my hearing aids?", answer: "For mild loss they may be enough. For moderate to profound loss, loss in one ear, or complex needs, prescription hearing aids are built and verified for the job. If your hearing aids work for you, do not swap them without talking to us." },
+      { question: "Do I still need an audiologist?", answer: "Often, yes. An evaluation can rule out wax or a medical cause and checks your hearing more fully than a five-minute app test. It also tells you whether an OTC device is enough." }
+    ],
+    related: [
+      { label: "Prescription vs. OTC Hearing Aids", href: "/prescription-vs-otc-hearing-aids" },
+      { label: "Auracast and Hearing Aids Explained", href: "/auracast-hearing-aids-explained" },
+      { label: "Nuance Audio Plus vs. Meta Glasses", href: "/nuance-audio-plus-vs-meta-glasses" },
+      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-2027-hearing-benefits" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Industry news explained",
+      byline: "What the FDA clearance means for people with hearing loss",
+      reviewedBy,
+      readTime: "6 min read",
+      articleType: "News explained",
+      pullQuote: "The earbuds may be a good first step for mild loss. A five-minute app test is not a hearing evaluation.",
+      keyTakeaways: [
+        "The FDA cleared Samsung's Hearing Aid and Hearing Test for Galaxy Buds3 Pro and Galaxy Buds4 Pro. Samsung plans a Q4 2026 software rollout.",
+        "It is for adults 18 and older with perceived mild to moderate loss, and uses the NAL-NL2 fitting formula. Samsung says it does not replace professional diagnosis.",
+        "Sudden loss, one-sided loss, dizziness, ear pain or severe loss need an evaluation, not an app."
+      ],
+      patientQuestion: "Can Samsung Galaxy Buds replace my hearing aids?",
+      storyLead: "Samsung's earbuds are getting an FDA-cleared hearing aid feature. Here is what they can and cannot do.",
+      sources: [
+        { label: "Samsung Newsroom: hearing aid feature cleared by the FDA", href: "https://news.samsung.com/us/?p=87094" },
+        { label: "Wareable: Samsung's Galaxy Buds cleared as OTC hearing aids", href: "https://www.wareable.com/samsung/samsung-galaxy-buds-3-pro-4-pro-otc-hearing-test-aids-amplification" },
+        { label: "HearingTracker: Samsung Galaxy Buds gain FDA-cleared hearing aid feature", href: "https://hearingtracker.com/news/samsung-galaxy-buds-gain-fda-cleared-otc-hearing-aid-feature" },
+        { label: "audioXpress: FDA clearance and regulated hearing platforms", href: "https://audioxpress.com/news/samsung-galaxy-buds-hearing-aid-clearance-confirms-earbuds-are-becoming-regulated-hearing-platforms" },
+        { label: "eWeek: Samsung Galaxy Buds hearing aid clearance", href: "https://www.eweek.com/news/samsung-galaxy-buds-hearing-aid/" }
+      ]
+    }
+  },
+  {
+    path: "/medicare-open-enrollment-2027-hearing-benefits",
+    title: "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
+    metaTitle: "Medicare Open Enrollment 2027: Hearing Benefits to Check",
+    metaDescription: "Medicare open enrollment runs Oct 15 to Dec 7. Five hearing benefit checks for 2027: hearing aid allowances, in-network audiologists and exam coverage.",
+    h1: "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
+    heroImage: { src: "/assets/news/medicare-open-enrollment-2027-hearing-benefits.png", alt: "Timeline of Medicare dates: Annual Notice of Change in September, open enrollment October 15 to December 7, new plans start January 1, 2027, and the Medicare Advantage window from January 1 to March 31" },
+    sections: ["Hearing Insurance", "Plan guide", "Audiologist perspective", "Frequently asked questions"],
+    body: [
+      "Medicare's Annual Enrollment Period runs from October 15 to December 7, 2026. Changes take effect January 1, 2027. If you have a Medicare Advantage plan, or are thinking of joining one, this is the window to look at what it pays for hearing care.",
+      "CMS released its 2027 projections on September 28, 2026. It expects the average Medicare Advantage premium to drop from about $14.37 to about $12 a month, and says extra benefits such as hearing, dental and vision are anticipated to hold steady. Those are national averages. Your plan's hearing allowance, network and copays can be very different. This page gives five checks to do before December 7. It is general information, not insurance advice.",
+      "The dates that matter",
+      "During the Annual Enrollment Period you can switch Medicare Advantage plans, move between Original Medicare and Medicare Advantage, and change or add Part D drug coverage. The window closes December 7. A second period, the Medicare Advantage Open Enrollment Period, runs January 1 to March 31, 2027. It is only for people already in a Medicare Advantage plan, and it allows one change. Treat it as a backstop, not a plan.",
+      "What CMS expects for 2027",
+      "CMS said about eight in ten Medicare Advantage members should be able to keep their current plan at the same or a lower premium in 2027. It also said supplemental benefits such as hearing are anticipated to hold steady. Plans can still change networks, allowances and copays, and some plans leave counties each year. Your plan's documents decide what applies to you.",
+      "Check 1: Read your Annual Notice of Change",
+      "Plans send an Annual Notice of Change each fall, usually by the end of September. It lists next year's changes to premiums, copays, networks and extra benefits. Find the hearing section. Look for changes to the hearing aid allowance, the number of exams and the list of covered brands. If you cannot find it, call the number on your plan card.",
+      "Check 2: The hearing aid allowance",
+      "Ask four things. How much is the allowance? Does it cover one hearing aid or two? How often does it renew? Which brands and models does it cover? Some plans route hearing benefits through a separate hearing benefit manager, so ask who runs it. A large allowance that covers only a few devices may be worth less than a smaller one you can use on the hearing aids that suit your hearing.",
+      "Check 3: Is your audiologist in network?",
+      "Network status decides what you pay. Do not assume that a practice that takes your plan for one service is in network for hearing aids. Call Audiology Associates of Westchester with your plan name and member number, and we will tell you whether we are in your network. If we are not, we will say so and explain your options.",
+      "Check 4: Exam coverage and referral rules",
+      "Original Medicare does not cover routine hearing exams. It generally covers a diagnostic hearing or balance exam when a doctor orders it to plan treatment, and you usually pay part of the cost. Medicare Advantage plans often include routine exams, but some need a referral from your primary care doctor or limit visits. Ask whether you need a referral and how many exams a year are covered.",
+      "Check 5: OTC and flex-card benefits",
+      "Some Medicare Advantage plans offer a spending card or an over-the-counter benefit. Ask whether it can pay for OTC hearing aids or accessories, and whether it covers earbuds with a hearing feature, such as the Samsung Galaxy Buds update we describe in our guide. Rules differ widely. Get the answer in writing if you can.",
+      "Original Medicare and Medicare Advantage for hearing",
+      "Original Medicare, Parts A and B, does not cover hearing aids, fittings or routine hearing exams. Medicare Advantage plans replace Original Medicare and can add benefits, and hearing is one of the most common. One exception is cochlear implants. Medicare can cover them when its criteria are met, which is very different from hearing aids. Our cochlear implant page explains the evaluation.",
+      "Why timing before year-end can matter",
+      "Many plans reset benefits on January 1. If your plan has a hearing allowance or a set number of exams that renews yearly, unused 2026 benefits generally do not carry over. If you have been putting off a hearing test, use your 2026 benefits first, then see what your 2027 plan offers. If you are switching plans, ask whether service and repairs on your current hearing aids are covered under the new plan.",
+      "Status and last update",
+      "Last updated September 30, 2026. This is the first version of the page. We will update it when CMS publishes final landscape data. For your own plan, use your Annual Notice of Change, your plan's member services and Medicare.gov.",
+      "Insurance and medical notice",
+      "This page is for general information only. It is not insurance, legal or medical advice. Plan benefits, allowances and networks vary by plan and county. Always check with your plan or Medicare.gov before you decide."
+    ],
+    faqs: [
+      { question: "Does Medicare cover hearing aids in 2027?", answer: "Original Medicare does not cover hearing aids. Many Medicare Advantage plans include some hearing aid coverage, and CMS expects those extra benefits to hold steady overall. The amount and rules depend on your plan." },
+      { question: "What is the deadline to change plans?", answer: "December 7, 2026 is the end of the Annual Enrollment Period. Changes made in that window take effect on January 1, 2027." },
+      { question: "What is the Annual Notice of Change?", answer: "It is a document your plan sends each fall that lists next year's changes to premiums, copays, networks and extra benefits. It is the first thing to read for hearing coverage." },
+      { question: "What is the difference between AEP and the January to March window?", answer: "The Annual Enrollment Period, October 15 to December 7, is open to all Medicare members. The Medicare Advantage Open Enrollment Period, January 1 to March 31, is only for people already in a Medicare Advantage plan, and it allows one change." },
+      { question: "Does Original Medicare cover hearing exams?", answer: "Not routine ones. It generally covers a diagnostic hearing or balance exam when a doctor orders it to plan treatment, and you usually pay part of the cost. Ask your clinician to confirm how it applies to you." }
+    ],
+    related: [
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Samsung Galaxy Buds Hearing Aid Feature", href: "/samsung-galaxy-buds-hearing-aid-feature" },
+      { label: "Prescription vs. OTC Hearing Aids", href: "/prescription-vs-otc-hearing-aids" },
+      { label: "Cochlear Implant Support", href: "/how-we-can-help/cochlear-implants" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Plan guide",
+      byline: "Five hearing benefit checks before Medicare open enrollment closes",
+      reviewedBy,
+      readTime: "6 min read",
+      articleType: "Plan guide",
+      pullQuote: "CMS expects hearing benefits to hold steady on average. Your own plan is the only one that matters, so read its notice before December 7.",
+      keyTakeaways: [
+        "Annual Enrollment runs October 15 to December 7, 2026, with changes starting January 1, 2027.",
+        "Original Medicare does not cover hearing aids. Medicare Advantage plans often cover some hearing care, and the amounts and rules differ by plan and county.",
+        "Current Medicare Advantage members get one more change from January 1 to March 31, 2027."
+      ],
+      patientQuestion: "What should I check about hearing benefits before Medicare open enrollment ends?",
+      storyLead: "Medicare open enrollment runs until December 7. Here are five hearing checks to do first.",
+      sources: [
+        { label: "AHA: CMS projects decline in MA, small increase in standalone Part D premiums for 2027", href: "https://www.aha.org/news/headline/2026-09-29-cms-projects-decline-ma-small-increase-standalone-part-d-premiums-2027" },
+        { label: "Becker's Payer: CMS projects lower Medicare Advantage premiums for 2027", href: "https://www.beckerspayer.com/payer/medicare-advantage/cms-projects-lower-medicare-advantage-premiums-flat-enrollment-for-2027/" },
+        { label: "Medicare.gov: Medicare and you", href: "https://www.medicare.gov/" }
+      ]
+    }
+  },
 ];
 
 export function buildNextBlogPosts(baseUrl: string, _siteName: string): SitePage[] {
