@@ -1,0 +1,13 @@
+{
+  "slug": "auracast-goes-live-in-a-us-theater",
+  "hero": { "title": "Auracast Goes Live", "icon": "bluetooth", "accent": "gold" },
+  "info": { "title": "What Has to Line Up", "subtitle": "Auracast at a theater needs three things to work together",
+    "accent": "gold",
+    "rows": [
+      {"title": "The venue broadcasts", "desc": "A transmitter feeds the theater's soundboard"},
+      {"title": "Your device supports it", "desc": "Newer hearing aids, implants, earbuds"},
+      {"title": "Some need an update", "desc": "Hardware may wait for a software switch-on"},
+      {"title": "You can join the stream", "desc": "Often a phone app or a hearing aid button"},
+      {"title": "Ask before you go", "desc": "Call the venue about Auracast, loop or headsets"}
+    ] }
+}

@@ -157,6 +157,7 @@ export const contentDates: Record<string, string> = {
   "/at-what-level-of-hearing-loss-should-you-get-hearing-aids/": "2026-08-25",
   "/atria-park-of-san-mateo/": "2026-08-25",
   "/audiology-associates-of-westchester/": "2026-09-16",
+  "/auracast-goes-live-in-a-us-theater/": "2026-09-30",
   "/balance-and-hearing-health/": "2026-09-29",
   "/bay-area-events-youll-enjoy-more-with-better-hearing-concerts-lectures-theater/": "2026-09-21",
   "/bay-area-union-hearing-benefits-guide-complete-list-of-san-francisco-oakland-san-mateo-locals/": "2026-09-21",

@@ -248,6 +248,8 @@ export const imageDimensions: Record<string, readonly [number, number]> = {
   "/assets/blog/are-hearing-aids-waterproof-2.svg": [800, 520],
   "/assets/blog/at-what-level-of-hearing-loss-should-you-get-hearing-aids-1.svg": [800, 560],
   "/assets/blog/at-what-level-of-hearing-loss-should-you-get-hearing-aids-2.svg": [800, 520],
+  "/assets/blog/auracast-goes-live-in-a-us-theater-1.svg": [800, 560],
+  "/assets/blog/auracast-goes-live-in-a-us-theater-2.svg": [800, 520],
   "/assets/blog/balance-and-hearing-health-1.svg": [800, 560],
   "/assets/blog/balance-and-hearing-health-2.svg": [800, 520],
   "/assets/blog/best-hearing-aids-for-active-grandparents-in-the-bay-area-restaurants-travel-and-grandkids-1.svg": [800, 560],

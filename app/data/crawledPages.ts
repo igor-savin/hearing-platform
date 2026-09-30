@@ -5329,6 +5329,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/auracast-goes-live-in-a-us-theater/",
+    "title": "Auracast Goes Live In A Us Theater | California Hearing Center",
+    "h1": "Auracast Goes Live In A Us Theater",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/what-is-auracast-hearing-aids/",
     "title": "What Is Auracast Hearing Aids | California Hearing Center",
     "h1": "What Is Auracast Hearing Aids",
