@@ -76,6 +76,11 @@ export const permanentRedirects: SiteRedirect[] = [
     destination: "/how-we-can-help/tinnitus-management/:slug",
     reason: "Corrected internal link target"
   },
+  {
+    source: "/medicare-open-enrollment-2027-hearing-benefits",
+    destination: "/medicare-open-enrollment-hearing-benefits",
+    reason: "Evergreen slug: the year stays in the page text, not the URL"
+  },
   // Six towns had both a legacy page and a generated service-area page, both
   // indexable and both self-canonical, competing for the same local intent.
   // The legacy URL wins: it carries the equity and was in the live sitemap.

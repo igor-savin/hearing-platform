@@ -67,7 +67,7 @@ export const contentDates: Record<string, ContentDate> = {
   "/kids-teens-ear-protection-concerts-sports": { published: "2026-07-14", modified: "2026-09-17" },
   "/lenire-for-tinnitus-candidate-guide": { published: "2026-07-14", modified: "2026-09-17" },
   "/lgbtq-affirming-hearing-care": { published: "2026-08-26", modified: "2026-09-18" },
-  "/medicare-open-enrollment-2027-hearing-benefits": { published: "2026-09-30", modified: "2026-09-30" },
+  "/medicare-open-enrollment-hearing-benefits": { published: "2026-09-30", modified: "2026-09-30" },
   "/meta-glasses-hearing-aid-feature": { published: "2026-09-23", modified: "2026-09-29" },
   "/noise-induced-hearing-loss-prevention": { published: "2026-07-14", modified: "2026-09-17" },
   "/nuance-audio-plus-vs-meta-glasses": { published: "2026-09-29", modified: "2026-09-30" },

@@ -833,7 +833,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "What Is the 60/60 Rule in Audiology?", href: "/what-is-the-60-60-rule-in-audiology" },
       { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
       { label: "Hearing Testing", href: "/hearing-testing" },
-      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-2027-hearing-benefits" },
+      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-hearing-benefits" },
       { label: "Harrison, NY office", href: "/harrison-ny" },
       { label: "Somers, NY office", href: "/Somers-NY" }
     ],
@@ -906,7 +906,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Prescription vs. OTC Hearing Aids", href: "/prescription-vs-otc-hearing-aids" },
       { label: "Auracast and Hearing Aids Explained", href: "/auracast-hearing-aids-explained" },
       { label: "Nuance Audio Plus vs. Meta Glasses", href: "/nuance-audio-plus-vs-meta-glasses" },
-      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-2027-hearing-benefits" },
+      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-hearing-benefits" },
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Harrison, NY office", href: "/harrison-ny" },
@@ -936,12 +936,12 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     }
   },
   {
-    path: "/medicare-open-enrollment-2027-hearing-benefits",
+    path: "/medicare-open-enrollment-hearing-benefits",
     title: "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
     metaTitle: "Medicare Open Enrollment 2027: Hearing Benefits to Check",
     metaDescription: "Medicare open enrollment runs Oct 15 to Dec 7. Five hearing benefit checks for 2027: hearing aid allowances, in-network audiologists and exam coverage.",
     h1: "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
-    heroImage: { src: "/assets/news/medicare-open-enrollment-2027-hearing-benefits.png", alt: "Timeline of Medicare dates: Annual Notice of Change in September, open enrollment October 15 to December 7, new plans start January 1, 2027, and the Medicare Advantage window from January 1 to March 31" },
+    heroImage: { src: "/assets/news/medicare-open-enrollment-hearing-benefits.png", alt: "Timeline of Medicare dates: Annual Notice of Change in September, open enrollment October 15 to December 7, new plans start January 1, 2027, and the Medicare Advantage window from January 1 to March 31" },
     sections: ["Hearing Insurance", "Plan guide", "Audiologist perspective", "Frequently asked questions"],
     body: [
       "Medicare's Annual Enrollment Period runs from October 15 to December 7, 2026. Changes take effect January 1, 2027. If you have a Medicare Advantage plan, or are thinking of joining one, this is the window to look at what it pays for hearing care.",
