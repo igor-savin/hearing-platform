@@ -591,7 +591,38 @@ const nextConfig: NextConfig = {
     // Static assets under /public/assets are content-stable (we rename on change),
     // so cache them hard instead of Vercel's default max-age=0, must-revalidate,
     // which forced a revalidation round-trip on every image, on every visit.
+    // The hearing screener collects test answers and contact details. Keep every
+    // third-party tracker off it: this policy blocks GTM, GA4, WhatConverts and
+    // anything else that is not our own server. Production only, so local dev
+    // and Next's dev tooling keep working.
+    const screenerCsp = [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline'",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: blob:",
+      "media-src 'self' blob: data:",
+      "connect-src 'self'",
+      "font-src 'self' data:",
+      "frame-src 'none'",
+      "frame-ancestors 'self'",
+      "base-uri 'self'",
+      "form-action 'self'",
+      "object-src 'none'",
+    ].join("; ");
+    const screenerHeaders =
+      process.env.NODE_ENV === "production"
+        ? [
+            {
+              source: "/free-online-hearing-test/:path*",
+              headers: [
+                { key: "Content-Security-Policy", value: screenerCsp },
+                { key: "Referrer-Policy", value: "no-referrer" },
+              ],
+            },
+          ]
+        : [];
     return [
+      ...screenerHeaders,
       {
         // Keep every *.vercel.app copy of the site out of the index. Until the
         // domain is cut over, that deployment is fully crawlable AND emits
