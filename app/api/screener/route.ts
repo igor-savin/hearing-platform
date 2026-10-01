@@ -5,7 +5,7 @@ import { CLINICAL_APPROVED, PRACTICE, SCREENER_VERSION } from "../../lib/screene
 import { buildReportPdf } from "../../lib/screener/pdf";
 import { patientEmail, staffAlert } from "../../lib/screener/emails";
 import { alertRecipients, sendEmail } from "../../lib/screener/mail";
-import { saveLead, storeConfigured } from "../../lib/screener/store";
+import { saveEvent, saveLead, storeConfigured } from "../../lib/screener/store";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -26,6 +26,8 @@ type Body = {
   consentCall?: unknown;
   run?: { both?: unknown; left?: unknown; right?: unknown; device?: unknown };
   website?: unknown; // honeypot
+  sid?: unknown;
+  source?: unknown;
 };
 
 const clean = (v: unknown, max: number) =>
@@ -107,6 +109,15 @@ export async function POST(request: Request) {
       sampleRate: Number.isFinite(Number(dev.sampleRate)) ? Math.round(Number(dev.sampleRate)) : 0,
     };
 
+    const src = (body.source || {}) as Record<string, unknown>;
+    const source = {
+      ref: clean(src.ref, 80),
+      source: clean(src.source, 60),
+      medium: clean(src.medium, 60),
+      campaign: clean(src.campaign, 60),
+    };
+    const visitId = clean(body.sid, 64);
+
     const now = new Date();
     const pdf = buildReportPdf({ firstName, summary, date: now });
 
@@ -126,6 +137,8 @@ export async function POST(request: Request) {
           screenerVersion: SCREENER_VERSION,
           clinicalApproved: CLINICAL_APPROVED,
           device,
+          source,
+          visitId,
           trials: run,
         })
       ).stored;
@@ -133,6 +146,11 @@ export async function POST(request: Request) {
       console.error("Screener lead save failed", error instanceof Error ? error.message : "unknown");
     }
     if (!stored && storeConfigured()) console.error("Screener lead was not stored although a database is configured.");
+
+    // Count the finished screening on the server, where ad blockers cannot hide it.
+    if (visitId) {
+      saveEvent({ practice: PRACTICE.key, visitId, event: "submit_ok", band: summary.band, source }).catch(() => undefined);
+    }
 
     // Patient email and staff alert go out together; one failing must not stop the other.
     const patient = patientEmail({ firstName, summary });
@@ -152,7 +170,7 @@ export async function POST(request: Request) {
     const patientEmailSent = patientResult[0].status === "fulfilled";
     if (!patientEmailSent) console.error("Screener patient email failed");
 
-    const alert = staffAlert({ firstName, email, phone, consentCall, consentEmail, summary, stored, patientEmailSent, receivedAt: now });
+    const alert = staffAlert({ firstName, email, phone, consentCall, consentEmail, summary, stored, patientEmailSent, receivedAt: now, source });
     try {
       await sendEmail({ to: alertRecipients(), subject: alert.subject, html: alert.html, text: alert.text, replyTo: email });
     } catch {

@@ -53,7 +53,7 @@ export class ScreenerAudio {
 
   /** Call from a tap or click: browsers only allow sound after one. */
   async init() {
-    await this.ctx.resume();
+    await this.wake();
     if (this.noise) return;
     const base = `/screener/audio/${VOICE}`;
     const [noise, ...clips] = await Promise.all([
@@ -62,6 +62,17 @@ export class ScreenerAudio {
     ]);
     this.noise = noise;
     ALLOWED_DIGITS.forEach((d, i) => this.digits.set(d, clips[i]));
+  }
+
+  /** Resume the audio engine. Never waits forever: some phones leave resume() pending. */
+  private async wake() {
+    if (this.ctx.state === "running") return;
+    await Promise.race([this.ctx.resume().catch(() => undefined), new Promise((r) => setTimeout(r, 1500))]);
+  }
+
+  /** True when the browser is letting us play sound. */
+  get running() {
+    return this.ctx.state === "running";
   }
 
   private route(ear: Ear) {
@@ -76,7 +87,8 @@ export class ScreenerAudio {
   }
 
   /** A short beep in one ear, for the headphone check. */
-  tone(side: "left" | "right"): Promise<void> {
+  async tone(side: "left" | "right"): Promise<void> {
+    await this.wake();
     const ctx = this.ctx;
     const { merger, inputs } = this.route(side);
     const osc = ctx.createOscillator();
@@ -98,7 +110,8 @@ export class ScreenerAudio {
   }
 
   /** One triplet in noise at the given speech-to-noise ratio. Resolves when it has finished. */
-  playTriplet(digits: number[], snrDb: number, ear: Ear): Promise<void> {
+  async playTriplet(digits: number[], snrDb: number, ear: Ear): Promise<void> {
+    await this.wake();
     const ctx = this.ctx;
     if (!this.noise) throw new Error("Sounds are not loaded.");
     const ratio = Math.pow(10, snrDb / 10);
@@ -147,7 +160,7 @@ export class ScreenerAudio {
   }
 
   /** A sample at an easy level, for setting the volume. */
-  sample(): Promise<void> {
+  async sample(): Promise<void> {
     return this.playTriplet([2, 5, 9], 6, "both");
   }
 

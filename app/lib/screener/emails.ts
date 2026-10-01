@@ -7,7 +7,7 @@
 // those stay in the database.
 
 import type { Summary } from "./scoring";
-import { BAND_COPY, SCREENING_NOT_DIAGNOSIS, earNote, levelRangeText, reliabilityTips } from "./copy";
+import { BAND_COPY, resultCopy, SCREENING_NOT_DIAGNOSIS, earNote, levelRangeText, reliabilityTips } from "./copy";
 import { CLINICAL_APPROVED, PRACTICE, SCREENER_VERSION } from "./config";
 
 function esc(s: string) {
@@ -27,7 +27,7 @@ const PREVIEW_LINE = "PREVIEW: the result bands have not been reviewed by an aud
 
 export function patientEmail(input: { firstName: string; summary: Summary }) {
   const { firstName, summary } = input;
-  const copy = BAND_COPY[summary.band];
+  const copy = resultCopy(summary.band, summary.asymmetry);
   const ear = earNote(summary);
   const level = levelRangeText(summary.band);
   const tips = summary.band === "unreliable" ? reliabilityTips(summary.validity) : [];
@@ -115,8 +115,10 @@ export function staffAlert(input: {
   stored: boolean;
   patientEmailSent: boolean;
   receivedAt: Date;
+  source?: { ref: string; source: string; medium: string; campaign: string };
 }) {
-  const { firstName, email, phone, consentCall, consentEmail, summary, stored, patientEmailSent, receivedAt } = input;
+  const { firstName, email, phone, consentCall, consentEmail, summary, stored, patientEmailSent, receivedAt, source } = input;
+  const origin = source ? [source.source || source.ref || "direct", source.medium, source.campaign].filter(Boolean).join(" / ") : "";
   const pr = PRIORITY_LINE[summary.priority];
   const copy = BAND_COPY[summary.band];
 
@@ -141,6 +143,7 @@ export function staffAlert(input: {
     ["Ear check", summary.asymmetry ? `${summary.asymmetry.worseEar} ear scored lower` : summary.earCheck],
     ...(summary.band === "unreliable" ? ([["Why not reliable", summary.validity.join(", ")]] as [string, string][]) : []),
     ["Received", when],
+    ...(origin ? ([["Came from", origin]] as [string, string][]) : []),
     ["Results email to patient", patientEmailSent ? "Sent" : "NOT sent"],
     ["Saved to lead database", stored ? "Yes" : "NO: this email is the only record. Keep it."],
     ["Screener version", SCREENER_VERSION],

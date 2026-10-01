@@ -23,7 +23,7 @@ import {
 } from "../lib/screener/scoring";
 import { ScreenerAudio } from "../lib/screener/audio";
 import {
-  BAND_COPY,
+  resultCopy,
   CONSENT_CALL_LABEL,
   CONSENT_EMAIL_LABEL,
   SCREENING_NOT_DIAGNOSIS,
@@ -33,8 +33,8 @@ import {
   levelRangeText,
   reliabilityTips,
 } from "../lib/screener/copy";
-import { CLINICAL_APPROVED, PRACTICE } from "../lib/screener/config";
-import "./screener.css";
+import { CLINICAL_APPROVED, PRACTICE, SCREENER_PATH } from "../lib/screener/config";
+import { track, visitIdForSubmit, visitSource } from "./track";
 
 type Stage = "intro" | "setup" | "both" | "ear-offer" | "left" | "right" | "gate" | "result";
 
@@ -69,6 +69,55 @@ export function ScreenerApp() {
 
   useEffect(() => () => audio?.close(), [audio]);
 
+  // Funnel counting (no personal data; see track.ts).
+  useEffect(() => {
+    track("view");
+  }, []);
+  const stageRef = useRef<Stage>("intro");
+  const cardRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    stageRef.current = stage;
+    track(`stage_${stage}`);
+    // Move keyboard and screen-reader focus to the new heading, so nobody is left on a button that has gone.
+    if (stage !== "intro") {
+      const h = cardRef.current?.querySelector<HTMLElement>("h1, h2");
+      if (h) {
+        h.setAttribute("tabindex", "-1");
+        h.focus({ preventScroll: true });
+        h.scrollIntoView({ block: "start", behavior: "auto" });
+      }
+    }
+  }, [stage]);
+
+  // Keep the screen awake during the test, and bring the sound back if the phone paused it.
+  useEffect(() => {
+    if (stage !== "both" && stage !== "left" && stage !== "right") return;
+    let lock: { release: () => Promise<void> } | null = null;
+    const nav = navigator as unknown as { wakeLock?: { request: (t: "screen") => Promise<{ release: () => Promise<void> }> } };
+    const ask = () => nav.wakeLock?.request("screen").then((l) => (lock = l)).catch(() => undefined);
+    void ask();
+    function onShow() {
+      if (document.visibilityState === "visible") {
+        void ask();
+        void audio?.ctx.resume().catch(() => undefined);
+      }
+    }
+    document.addEventListener("visibilitychange", onShow);
+    return () => {
+      document.removeEventListener("visibilitychange", onShow);
+      void lock?.release().catch(() => undefined);
+    };
+  }, [stage, audio]);
+  useEffect(() => {
+    function onHide() {
+      if (document.visibilityState === "hidden" && stageRef.current !== "result" && stageRef.current !== "intro") {
+        track("leave", { stage: stageRef.current });
+      }
+    }
+    document.addEventListener("visibilitychange", onHide);
+    return () => document.removeEventListener("visibilitychange", onHide);
+  }, []);
+
   async function begin() {
     setStarting(true);
     setStartError("");
@@ -87,6 +136,7 @@ export function ScreenerApp() {
   }
 
   function retake() {
+    track("retake");
     setRun({ both: [] });
     setBothSrt(null);
     setResult(null);
@@ -95,7 +145,7 @@ export function ScreenerApp() {
   }
 
   return (
-    <div className="scr">
+    <div className="scr" ref={cardRef}>
       {!CLINICAL_APPROVED && (
         <p className="scr-preview" role="note">
           PREVIEW. The scoring has not yet been reviewed by an audiologist. Do not rely on this result.
@@ -217,11 +267,15 @@ function Intro({ onStart, starting, error }: { onStart: () => void; starting: bo
         A quick screening, not a diagnosis. You will hear numbers spoken in background noise and tap the ones you hear.
       </p>
       <ol className="scr-steps">
-        <li>Put on headphones.</li>
-        <li>Hear numbers in background noise.</li>
-        <li>Get your result and what to do next.</li>
+        <li>Find a quiet room and put on headphones.</li>
+        <li>Hear numbers in background noise. Tap the ones you hear.</li>
+        <li>Get your result and your next step.</li>
       </ol>
-      <p>No download. No cost. Your results are sent only to you and to our office.</p>
+      <ul className="scr-facts" aria-label="At a glance">
+        <li>About 3 minutes</li>
+        <li>Free</li>
+        <li>Private</li>
+      </ul>
       <div className="scr-actions">
         <button className="scr-btn" onClick={onStart} disabled={starting}>
           {starting ? "Getting ready…" : "Start my free check"}
@@ -237,7 +291,7 @@ function Intro({ onStart, starting, error }: { onStart: () => void; starting: bo
 }
 
 function Setup({ audio, onDone }: { audio: ScreenerAudio; onDone: (speakers: boolean) => void }) {
-  const [step, setStep] = useState<0 | 1 | 2>(0);
+  const [step, setStep] = useState<1 | 2>(1);
   const [side, setSide] = useState<"left" | "right" | null>(null);
   const [playing, setPlaying] = useState(false);
   const [msg, setMsg] = useState("");
@@ -269,24 +323,10 @@ function Setup({ audio, onDone }: { audio: ScreenerAudio; onDone: (speakers: boo
     );
   }
 
-  if (step === 0) {
-    return (
-      <section className="scr-card">
-        <h2>Step 1 of 3: Find a quiet place</h2>
-        <p>Turn off the TV and radio. Close windows and doors if you can. Quiet makes the result more reliable.</p>
-        <div className="scr-actions">
-          <button className="scr-btn" onClick={() => setStep(1)}>
-            Yes, it is quiet
-          </button>
-        </div>
-      </section>
-    );
-  }
-
   if (step === 1) {
     return (
       <section className="scr-card">
-        <h2>Step 2 of 3: Check your headphones</h2>
+        <h2>Step 1 of 2: Check your headphones</h2>
         <p>Put on your headphones. Press Play. You will hear a short beep in one ear.</p>
         <div className="scr-actions">
           <button className="scr-btn" onClick={playTone} disabled={playing}>
@@ -335,7 +375,7 @@ function Setup({ audio, onDone }: { audio: ScreenerAudio; onDone: (speakers: boo
 
   return (
     <section className="scr-card">
-      <h2>Step 3 of 3: Set your volume</h2>
+      <h2>Step 2 of 2: Set your volume</h2>
       <p>
         Press Play. You will hear a voice in noise. Adjust the volume on your device until the voice is clearly loud, but
         comfortable. Then leave the volume alone for the rest of the test.
@@ -565,6 +605,8 @@ function Gate({
           consentEmail: data.get("consentEmail") === "on",
           consentCall: data.get("consentCall") === "on",
           website: String(data.get("website") || ""),
+          sid: visitIdForSubmit(),
+          source: visitSource(),
           run: {
             ...run,
             device: {
@@ -577,6 +619,7 @@ function Gate({
       });
       const json = (await response.json().catch(() => null)) as (ApiResult | { ok: false; message?: string }) | null;
       if (!response.ok || !json || json.ok !== true) {
+        track("submit_error");
         setError((json && "message" in json && json.message) || `Something went wrong. Please call us at ${PRACTICE.phoneDisplay}.`);
         return;
       }
@@ -602,7 +645,9 @@ function Gate({
           <input name="email" type="email" autoComplete="email" inputMode="email" required maxLength={254} />
         </label>
         <label>
-          Mobile phone <span className="scr-opt">(optional)</span>
+          <span>
+            Mobile phone <span className="scr-opt">(optional)</span>
+          </span>
           <input name="phone" type="tel" autoComplete="tel" inputMode="tel" maxLength={20} />
         </label>
 
@@ -649,11 +694,29 @@ function Gate({
 
 function ResultView({ result, onRetake }: { result: ApiResult; onRetake: () => void }) {
   const { band, validity, asymmetry } = result.summary;
-  const copy = BAND_COPY[band];
+  const copy = resultCopy(band, asymmetry);
   const ear = earNote({ asymmetry });
   const levelText = levelRangeText(band);
 
+  const [shared, setShared] = useState(false);
+  async function share() {
+    track("share");
+    const url = `${PRACTICE.siteUrl}${SCREENER_PATH}`;
+    const text = "Someone who cares about you wants you to try this free 3-minute online hearing check.";
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "Free online hearing check", text, url });
+        return;
+      }
+      await navigator.clipboard.writeText(url);
+      setShared(true);
+    } catch {
+      // The person closed the share sheet. Nothing to do.
+    }
+  }
+
   function download() {
+    track("pdf_download", { band });
     const bytes = Uint8Array.from(atob(result.pdfBase64), (c) => c.charCodeAt(0));
     const url = URL.createObjectURL(new Blob([bytes], { type: "application/pdf" }));
     const a = document.createElement("a");
@@ -668,7 +731,7 @@ function ResultView({ result, onRetake }: { result: ApiResult; onRetake: () => v
   return (
     <section className="scr-card" aria-live="polite">
       <p className="scr-eyebrow">Your hearing check</p>
-      <p className={`scr-chip scr-chip-${band}`}>{copy.label}</p>
+      <p className={`scr-chip scr-chip-${copy.look}`}>{copy.label}</p>
       <h2>{copy.headline}</h2>
       <p>{copy.body}</p>
 
@@ -681,6 +744,18 @@ function ResultView({ result, onRetake }: { result: ApiResult; onRetake: () => v
       )}
 
       {ear && <p className="scr-alert">{ear}</p>}
+
+      <p>{copy.next}</p>
+      {band !== "unreliable" && band !== "good" && !asymmetry && <p className="scr-fine">{URGENT_HINT}</p>}
+
+      <div className="scr-actions">
+        <a className="scr-btn" href={PRACTICE.bookingPath} onClick={() => track("cta_book", { band })}>
+          Book your hearing evaluation
+        </a>
+        <a className="scr-btn scr-btn-alt" href={`tel:${PRACTICE.phoneE164}`} onClick={() => track("cta_call", { band })}>
+          Call {PRACTICE.phoneDisplay}
+        </a>
+      </div>
 
       {levelText && (
         <div className="scr-level">
@@ -696,25 +771,15 @@ function ResultView({ result, onRetake }: { result: ApiResult; onRetake: () => v
         </div>
       )}
 
-      <h3>What to do next</h3>
-      <p>{copy.next}</p>
-      {band !== "unreliable" && band !== "good" && !asymmetry && <p className="scr-fine">{URGENT_HINT}</p>}
-
-      <div className="scr-actions">
-        <a className="scr-btn" href={PRACTICE.bookingPath}>
-          Book your hearing evaluation
-        </a>
-        <a className="scr-btn scr-btn-alt" href={`tel:${PRACTICE.phoneE164}`}>
-          Call {PRACTICE.phoneDisplay}
-        </a>
-      </div>
-
       <div className="scr-actions">
         <button className="scr-btn scr-btn-quiet" onClick={download}>
           Download my report (PDF)
         </button>
         <button className="scr-btn scr-btn-quiet" onClick={onRetake}>
           Take the test again
+        </button>
+        <button className="scr-btn scr-btn-quiet" onClick={share}>
+          {shared ? "Link copied" : "Share this check"}
         </button>
       </div>
 

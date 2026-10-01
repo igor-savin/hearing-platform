@@ -9,7 +9,7 @@
 // move to a library such as pdf-lib.
 
 import { PARAMS, type Summary } from "./scoring";
-import { BAND_COPY, SCREENING_NOT_DIAGNOSIS, earNote, levelNotes, levelRangeText, reliabilityTips } from "./copy";
+import { resultCopy, SCREENING_NOT_DIAGNOSIS, earNote, levelNotes, levelRangeText, reliabilityTips } from "./copy";
 import { CLINICAL_APPROVED, PRACTICE, SCREENER_VERSION } from "./config";
 
 type RGB = [number, number, number];
@@ -201,7 +201,7 @@ function scalePosition(srt: number) {
 export function buildReportPdf(input: { firstName: string; summary: Summary; date: Date }): Buffer {
   const { firstName, summary, date } = input;
   const band = summary.band;
-  const copy = BAND_COPY[band];
+  const copy = resultCopy(band, summary.asymmetry);
   const doc = new Doc();
 
   // Header band.
@@ -225,8 +225,8 @@ export function buildReportPdf(input: { firstName: string; summary: Summary; dat
   // Result.
   doc.ensure(120);
   const chipW = 128;
-  doc.rect(MARGIN, doc.top, chipW, 34, THEME.band[band]);
-  doc.text(MARGIN, doc.top + 23, copy.label, { size: 17, bold: true, color: band === "fair" ? THEME.ink : THEME.white, align: "center", width: chipW });
+  doc.rect(MARGIN, doc.top, chipW, 34, THEME.band[copy.look]);
+  doc.text(MARGIN, doc.top + 23, copy.label, { size: 17, bold: true, color: copy.look === "fair" ? THEME.ink : THEME.white, align: "center", width: chipW });
   doc.text(MARGIN + chipW + 16, doc.top + 22, copy.headline, { size: 13, bold: true });
   doc.top += 50;
   doc.para(copy.body, { size: 11.5 });

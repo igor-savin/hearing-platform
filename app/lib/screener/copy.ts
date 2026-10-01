@@ -62,6 +62,30 @@ export function reliabilityTips(reasons: ValidityReason[]): string[] {
   return out.length ? out : ["Try again in a quiet room with headphones."];
 }
 
+const EAR_NEXT =
+  "Please call us this week to book a hearing evaluation. If your hearing in one ear dropped suddenly, call today or see a doctor right away.";
+
+/**
+ * The wording to show for a result. When the ear check found a difference between
+ * the ears, that finding comes first: a Good overall score must never say "check
+ * again in a year" next to an ear difference. "look" is the band whose color to use.
+ */
+export function resultCopy(band: Band, asymmetry: { worseEar: "left" | "right" } | null) {
+  const base = BAND_COPY[band];
+  if (!asymmetry || band === "unreliable") return { ...base, look: band };
+  if (band === "good") {
+    return {
+      label: "Ear check",
+      headline: "One ear needs a closer look.",
+      body:
+        "You picked out the numbers well with both ears together. When we tested each ear alone, one scored lower than the other. There can be a simple reason, such as ear wax, but a difference between the ears is worth checking soon.",
+      next: EAR_NEXT,
+      look: "fair" as Band,
+    };
+  }
+  return { ...base, next: EAR_NEXT, look: band };
+}
+
 /** One sentence on the support levels to ask about, or null when none are suggested. */
 export function levelRangeText(band: Band): string | null {
   const range = BAND_LEVEL_RANGE[band];
@@ -80,7 +104,8 @@ export function levelNotes(band: Band): { level: number; note: string }[] {
 export function earNote(summary: { asymmetry: { worseEar: "left" | "right" } | null }): string | null {
   if (!summary.asymmetry) return null;
   const side = summary.asymmetry.worseEar === "left" ? "left" : "right";
-  return `Your ${side} ear scored lower than the other. ${EAR_NOTE.split(". ").slice(1).join(". ")}`;
+  // Only the finding. The result headline and next step carry the advice.
+  return `Your ${side} ear scored lower than the other.`;
 }
 
 // Consent wording. CONSENT_VERSION is stored with every lead, so change it

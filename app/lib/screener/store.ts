@@ -28,6 +28,8 @@ export type LeadInput = {
   screenerVersion: string;
   clinicalApproved: boolean;
   device: { mobile: boolean; speakers: boolean; sampleRate: number };
+  source: { ref: string; source: string; medium: string; campaign: string };
+  visitId: string;
   trials: { both: Trial[]; left?: Trial[]; right?: Trial[] };
 };
 
@@ -84,6 +86,20 @@ function ensureTable() {
           contacted_at timestamptz,
           notes text
         )`);
+      await query(`ALTER TABLE screener_leads ADD COLUMN IF NOT EXISTS source jsonb`);
+      await query(`ALTER TABLE screener_leads ADD COLUMN IF NOT EXISTS visit_id text`);
+      await query(`
+        CREATE TABLE IF NOT EXISTS screener_events (
+          id bigserial PRIMARY KEY,
+          created_at timestamptz NOT NULL DEFAULT now(),
+          practice text NOT NULL,
+          visit_id text NOT NULL,
+          event text NOT NULL,
+          band text,
+          stage text,
+          source jsonb
+        )`);
+      await query(`CREATE INDEX IF NOT EXISTS screener_events_idx ON screener_events (created_at DESC, event)`);
       await query(`CREATE INDEX IF NOT EXISTS screener_leads_status_idx ON screener_leads (status, priority, created_at DESC)`);
     })().catch((error) => {
       ready = null; // try again on the next request
@@ -106,8 +122,8 @@ export async function saveLead(lead: LeadInput): Promise<{ stored: boolean; id?:
     `INSERT INTO screener_leads (
        practice, first_name, email, phone, consent_email, consent_call, consent_version,
        band, priority, srt_both, srt_left, srt_right, ear_check, ear_gap, worse_ear,
-       validity_reasons, screener_version, clinical_approved, device, trials
-     ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19::jsonb,$20::jsonb)
+       validity_reasons, screener_version, clinical_approved, device, trials, source, visit_id
+     ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19::jsonb,$20::jsonb,$21::jsonb,$22)
      RETURNING id`,
     [
       lead.practice,
@@ -130,7 +146,52 @@ export async function saveLead(lead: LeadInput): Promise<{ stored: boolean; id?:
       lead.clinicalApproved,
       JSON.stringify(lead.device),
       JSON.stringify(lead.trials),
+      JSON.stringify(lead.source),
+      lead.visitId || null,
     ]
   );
   return { stored: true, id: result.rows && result.rows[0] ? String(result.rows[0].id) : undefined };
+}
+
+// ---------------------------------------------------------------------------
+// Funnel events: anonymous, no personal data (see free-online-hearing-test/track.ts).
+// ---------------------------------------------------------------------------
+
+export async function saveEvent(e: {
+  practice: string;
+  visitId: string;
+  event: string;
+  band?: string;
+  stage?: string;
+  source?: unknown;
+}): Promise<void> {
+  if (!storeConfigured()) return;
+  await ensureTable();
+  await query(
+    `INSERT INTO screener_events (practice, visit_id, event, band, stage, source) VALUES ($1,$2,$3,$4,$5,$6::jsonb)`,
+    [e.practice, e.visitId, e.event, e.band || null, e.stage || null, e.source ? JSON.stringify(e.source) : null]
+  );
+}
+
+/** Counts of distinct visits that reached each step, for the last N days. */
+export async function funnel(days: number) {
+  if (!storeConfigured()) return null;
+  await ensureTable();
+  const d = Math.min(Math.max(Math.floor(days) || 30, 1), 365);
+  const steps = await query(
+    `SELECT event, COUNT(DISTINCT visit_id)::int AS visits FROM screener_events
+     WHERE created_at > now() - ($1 || ' days')::interval GROUP BY event`,
+    [String(d)]
+  );
+  const leads = await query(
+    `SELECT band, priority, COUNT(*)::int AS n FROM screener_leads
+     WHERE created_at > now() - ($1 || ' days')::interval GROUP BY band, priority ORDER BY n DESC`,
+    [String(d)]
+  );
+  const sources = await query(
+    `SELECT COALESCE(NULLIF(source->>'source',''), NULLIF(source->>'ref',''), 'direct') AS origin, COUNT(*)::int AS n
+     FROM screener_leads WHERE created_at > now() - ($1 || ' days')::interval GROUP BY 1 ORDER BY n DESC LIMIT 20`,
+    [String(d)]
+  );
+  return { days: d, steps: steps.rows || [], leads: leads.rows || [], sources: sources.rows || [] };
 }
