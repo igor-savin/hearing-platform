@@ -498,6 +498,7 @@ export const contentDates: Record<string, string> = {
   "/resources/insurance/": "2026-07-25",
   "/retirement-and-hearing-healthcare/": "2026-09-21",
   "/reviews/": "2026-09-21",
+  "/practice-facts/": "2026-10-01",
   "/routine-hearing-assessments-in-scotland-a-game-changer-for-older-adults/": "2026-09-21",
   "/samsung-galaxy-buds-hearing-aid-feature/": "2026-09-30",
   "/san-mateo-county-senior-living/": "2026-08-25",

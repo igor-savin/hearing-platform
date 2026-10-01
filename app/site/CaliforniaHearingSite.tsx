@@ -10,6 +10,7 @@ import { videoUploadDates } from "../data/videoUploadDates";
 import { corePages } from "../data/corePages";
 import { YEARS_IN_PRACTICE, YEARS_DARCY, YEARS_LAIS } from "../data/practice";
 import { ReviewBadge, ReviewPanel } from "./ReviewBadge";
+import { PracticeFactsPage } from "./PracticeFactsPage";
 import { corePhotos } from "../data/corePhotos";
 import { cityProfiles, OFFICES as OFFICE_ADDRESSES, type CityProfile } from "../data/cityProfiles";
 import { LOCATIONS, LOCATION_LIST, hoursShort, hoursLong, cityLine } from "../data/locations";
@@ -2651,7 +2652,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
           rather than just scrolling, which is the half of the pattern that is
           usually missed. Matches the sister practice's #main-content anchor. */}
       <main id="main-content" tabIndex={-1}>
-        {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
+        {page?.path === "/the-blog/" ? <BlogIndex /> : page?.path === "/reviews/" ? <ReviewsPage /> : page?.path === "/practice-facts/" ? <PracticeFactsPage /> : page ? <InnerPage page={page} /> : <HomePage />}
       </main>
       <section className="appointment">
         {page?.path === "/about-us/career/" ? (
@@ -2709,6 +2710,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             </svg>
             <span>Follow us on Facebook</span>
           </a>
+          <a className="footer-social" href="/practice-facts/"><span>Practice Facts</span></a>
           <span>© 2026 California Hearing Center and Audiology Services, Inc. All Rights Reserved.</span>
         </div>
       </footer>

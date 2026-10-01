@@ -101,7 +101,7 @@ function build(stats: ReviewStats): string {
   ].join("\n");
 
   const blocks = [
-    section("Start here", take((p) => ["/", "/about-us/", "/services/", "/contact/", "/hearing-testing/", "/hearing-aid-fitting/", "/hearing-aid-cost/", "/hearing-aid-second-opinion/", "/reviews/"].includes(p))),
+    section("Start here", take((p) => ["/", "/about-us/", "/services/", "/contact/", "/hearing-testing/", "/hearing-aid-fitting/", "/hearing-aid-cost/", "/hearing-aid-second-opinion/", "/practice-facts/", "/reviews/"].includes(p))),
     section("Offices and locations", take((p) => p.startsWith("/contact/"))),
     section("The clinical team", take((p) => p.startsWith("/about-us/"))),
     section("Services", take((p) => p.startsWith("/services/"))),

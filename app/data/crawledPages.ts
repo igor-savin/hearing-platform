@@ -137,6 +137,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/practice-facts/",
+    "title": "Practice Facts | California Hearing Center",
+    "h1": "Practice Facts",
+    "desc": "The basic facts about California Hearing Center in one place: two offices in San Mateo and San Carlos, hours, phone, clinicians, services, trial period and common mistakes.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/lgbtq-affirming-hearing-care/",
     "title": "LGBTQ+ Affirming Hearing Care in San Mateo & San Carlos | California Hearing Center",
     "h1": "LGBTQ+ Affirming Hearing Care in San Mateo & San Carlos",

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { crawledPages, type SitePage } from "../data/crawledPages";
 import { redirectedPaths } from "../data/redirectedPaths";
+import { PRACTICE_FACTS_DESC, PRACTICE_FACTS_TITLE } from "../site/PracticeFactsPage";
 import { CaliforniaHearingSite, blogMetaDescription, blogMetaTitle, blogOgImage, blogOgOverrides, areaMetaTitle, areaMetaDescription, coreMetaTitle, coreMetaDescription } from "../site/CaliforniaHearingSite";
 
 type PageProps = {
@@ -58,6 +59,16 @@ export async function generateMetadata({ params }: PageProps) {
       alternates: { canonical: path },
       openGraph: { ...OG_SITE, title: blogTitle, description: blogDesc, url: path, type: "website", images: [DEFAULT_OG_IMAGE_SIZED] },
       twitter: { card: "summary_large_image", title: blogTitle, description: blogDesc, images: [DEFAULT_OG_IMAGE] },
+    };
+  }
+
+  if (path === "/practice-facts/") {
+    return {
+      title: PRACTICE_FACTS_TITLE,
+      description: PRACTICE_FACTS_DESC,
+      alternates: { canonical: path },
+      openGraph: { ...OG_SITE, title: PRACTICE_FACTS_TITLE, description: PRACTICE_FACTS_DESC, url: path, type: "website", images: [DEFAULT_OG_IMAGE_SIZED] },
+      twitter: { card: "summary_large_image", title: PRACTICE_FACTS_TITLE, description: PRACTICE_FACTS_DESC, images: [DEFAULT_OG_IMAGE] },
     };
   }
 
