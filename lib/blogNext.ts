@@ -524,6 +524,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Are OTC Hearing Aids Right for Me?", href: "/are-otc-hearing-aids-right-for-me" },
       { label: "OTC vs Prescription Hearing Aids", href: "/otc-vs-prescription-hearing-aids-real-world" },
       { label: "Nuance Audio Plus vs. Meta Glasses", href: "/nuance-audio-plus-vs-meta-glasses" },
+      { label: "Hearing Glasses Compared: Legato vs Nuance vs Hearing Aids", href: "/hearing-glasses-comparison" },
       { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" }
     ],
@@ -695,6 +696,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     ],
     related: [
       { label: "Meta Glasses Hearing Aid Feature", href: "/meta-glasses-hearing-aid-feature" },
+      { label: "Hearing Glasses Compared: Legato vs Nuance vs Hearing Aids", href: "/hearing-glasses-comparison" },
       { label: "Hearing Aid Glasses in 2026", href: "/hearing-aid-glasses-2026" },
       { label: "Are OTC Hearing Aids Right for Me?", href: "/are-otc-hearing-aids-right-for-me" },
       { label: "OTC vs Prescription Hearing Aids", href: "/otc-vs-prescription-hearing-aids-real-world" },
@@ -1065,6 +1067,111 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
         { label: "AHA: CMS projects decline in MA, small increase in standalone Part D premiums for 2027", href: "https://www.aha.org/news/headline/2026-09-29-cms-projects-decline-ma-small-increase-standalone-part-d-premiums-2027" },
         { label: "Becker's Payer: CMS projects lower Medicare Advantage premiums for 2027", href: "https://www.beckerspayer.com/payer/medicare-advantage/cms-projects-lower-medicare-advantage-premiums-flat-enrollment-for-2027/" },
         { label: "Medicare.gov: Medicare and you", href: "https://www.medicare.gov/" }
+      ]
+    }
+  },
+  {
+    // reviewedBySlug intentionally unset until a clinician reviews this page
+    path: "/hearing-glasses-comparison",
+    title: "Hearing Glasses in 2026: Legato Frames vs. Nuance Audio Plus vs. Prescription Hearing Aids",
+    metaTitle: "Hearing Glasses Compared: Legato vs Nuance vs Hearing Aids",
+    metaDescription: "Two hearing glasses launched in one week. Compare Legato Frames, Nuance Audio Plus and prescription hearing aids, and see who should test first.",
+    h1: "Hearing Glasses in 2026: Legato Frames vs. Nuance Audio Plus vs. Prescription Hearing Aids",
+    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Adult weighing hearing glasses against prescription hearing aids before choosing" },
+    ogImage: { src: "/assets/og/hearing-glasses-comparison.png", alt: "Hearing glasses compared in 2026: Legato, Nuance Audio Plus and hearing aids. Audiology Associates of Westchester." },
+    ogTitle: "Hearing Glasses Compared in 2026",
+    ogDescription: "Legato Frames, Nuance Audio Plus and prescription hearing aids, side by side, with who each one tends to suit.",
+    sections: ["Hearing Technology", "Buyer decision guide", "Comparison", "Frequently asked questions"],
+    body: [
+      "Two pairs of hearing glasses reached the market within three days of each other. EssilorLuxottica announced Nuance Audio Plus on September 29, 2026, and Boston-based Legato began selling Legato Frames on October 1. Until now, hearing glasses were a curiosity. With two launches in one week, patients are asking us which pair to buy and whether either one replaces a hearing aid.",
+      "This page is a buyer's guide, not a verdict. No independent lab has tested the two pairs against each other, so we do not name a winner. We describe who each one tends to suit, set them next to prescription hearing aids, and say who should skip all three and have their hearing measured first. We do not sell either pair of glasses.",
+      "Why hearing glasses suddenly exist",
+      "The FDA created the over-the-counter hearing aid category in 2022 for adults with perceived mild to moderate loss. That opened the door to products sold outside a hearing clinic, and eyewear is a natural fit. Most people who need help with hearing do not have it. By Legato's count, roughly 50 million US adults live with hearing loss, and around 80 percent of the people who could benefit use no device, which the company blames on stigma, cost and comfort. That figure is Legato's, but the pattern behind it matches what we hear from patients every week. Glasses attack the stigma problem directly, because the device looks like something people already wear. They also change who sells hearing help. Both products are sold through eyecare channels, and Legato says purchases through eyecare providers will often be eligible for vision insurance. That is a different path from a hearing clinic, and it is the reason the category deserves attention now.",
+      "Legato Frames, Nuance Audio Plus and hearing aids at a glance",
+      "The table below sets the three options side by side. The glasses columns come from what each company says about its own product. The hearing aid column describes a device that a clinic fits and verifies. Prices are US starting prices, and lenses and care plans change the final number.",
+      "Legato Frames in depth",
+      "On Legato Frames, the microphones, processors and speakers all sit in the arms. Legato calls its processing SpeechSense, a neural network that runs on the glasses and tries to separate speech from background noise. Legato says nothing is processed off the device, and that the glasses have no camera and do not record. Open-ear speakers mean nothing goes into your ear canal. The company says HearAdvisor, an independent lab, scored the glasses 4.6 out of 5 and placed them in its top 10 devices, which is a strong first result and also one lab's standard test, not a promise about your ears. There are three frames. Aria is a browline style at 142 mm, Symphony is a narrow 134 mm, and Harmony comes in 140 mm and 145 mm. Symphony and Harmony start at $999 and Aria at $1,099, with prescription lenses extra. Legato rates the battery at 10 to 12 hours of hearing use. It offers a 45-day money-back guarantee, free lifetime support from its own audiologists and product specialists, and an optional $199 Legato Care plan that extends the one-year warranty to three years. California Hearing Center, our sister practice, covers the launch in more detail in its Legato Frames explainer.",
+      "Nuance Audio Plus in depth",
+      "Nuance Audio Plus is the second generation of hearing glasses from EssilorLuxottica, the eyewear group behind Ray-Ban and Oakley. It starts at $829 in the US, depending on the lenses, and the first-generation glasses remain on sale at $699. The company says Plus adds directional microphones with beamforming, two listening modes called Frontal and All-Around, about 10 hours of battery and hands-free calls with a compatible iPhone. It comes in three shapes, Square, Panthos and Upturn, and five colors, and it accepts prescription lenses. EssilorLuxottica sells through optical and hearing care professionals as well as online, and reports describe a rollout reaching about 18,000 stores in 14 countries. That reach is the company's real advantage, because a pair of glasses can be fitted and adjusted where people already buy eyewear. The first-generation glasses scored well on speech in noise in HearingTracker's lab testing but poorly on feedback, the whistling that comes from open speakers. We have not seen independent lab results for Plus, so claims about its improvements remain the company's own.",
+      "The honest trade-offs",
+      "All open-ear glasses share a physical limit. With nothing in the ear canal, sound leaks out of the speaker and background noise reaches your ear untouched, so amplification is limited, especially for low pitches. That suits mild loss and strains as loss deepens. Both products are self-fit through a phone app, and neither one measures what reaches your eardrum, which a clinic does with real-ear verification. You also wear their frames. If a frame style does not suit your face, or your eyeglass prescription changes, the hearing hardware is tied to that decision. And both rely on your own sense of your hearing, since nobody checks that your loss is mild before you buy. None of that makes the glasses a bad idea. It means they are a trade, and the trade is more comfortable and less visible in exchange for less precision.",
+      "The stigma question: Lyric or glasses",
+      "Lyric and hearing glasses answer the same problem with opposite philosophies. Lyric is an extended-wear hearing aid that a trained professional places deep in the ear canal, designed to stay out of sight and to be worn continuously between office visits. Its answer to stigma is to hide the device. Hearing glasses answer it by making the device a style choice that people choose and show. Lyric is not right for every ear canal or every hearing loss, and it needs a consultation to find out. Glasses need no consultation, but they suit a narrower range of loss. A patient who wants no one to know they use hearing help may prefer Lyric if their ears and loss allow it. A patient who already wears glasses all day, has mild loss and likes the idea of one device may prefer glasses. Neither choice is more honest or more modern. They suit different people, and a hearing test is how you find out which group you are in.",
+      "Who should skip all three and get tested first",
+      "See a hearing professional or a physician before buying any hearing device, glasses included, if your hearing dropped suddenly, if one ear is clearly worse than the other, if you have dizziness or vertigo, ear pain or drainage, or ringing in one ear only, or if you can hear people talking but cannot make out the words. Severe to profound loss is outside what open-ear glasses can do, whatever the marketing suggests. Those signs point to causes that no device fixes, and some need prompt medical attention. Outside those red flags, a hearing evaluation still tells you the degree and shape of your loss, how your two ears compare, and how well you understand speech. That is what lets you judge any product, including these.",
+      "How we would choose",
+      "If you have mild loss, already wear glasses every day, and are comfortable with a phone app, hearing glasses are worth a try. Take a baseline hearing test first, ask about the return window before you pay, and keep your results. Legato's 45-day money-back guarantee is a real safety net for that approach. Ask any seller of Nuance Audio Plus about its return terms in the same way. If your loss is moderate or worse, uneven between the ears, or comes with other symptoms, begin with a professional evaluation, because the answer may be a fitted hearing aid. Not sure which category you belong in? A hearing evaluation answers that in one visit, at our Harrison or Somers office, and we go through your results with you whichever route you pick.",
+      "Status and last update",
+      "Last updated October 5, 2026. Change note: this is the first version, so nothing has changed yet. We will update this page when independent video reviews appear, when US retail reviews of Nuance Audio Plus land, when Legato announces its eyecare provider rollout, or when either product changes price or FDA status. Prices and specifications come from the companies and from news reports. Sources are listed at the end of this page.",
+      "Medical information notice",
+      "This page is for information only and is not medical advice. Hearing aids and hearing glasses do not suit everyone, and a hearing evaluation is the way to find out what suits you."
+    ],
+    faqs: [
+      { question: "Which hearing glasses are better, Legato or Nuance Audio Plus?", answer: "Nobody can say yet. No independent lab has tested them against each other, and we have not seen lab results for Nuance Audio Plus at all. Choose by frame style, price, return terms and how the glasses feel on your face, and get a hearing test before you buy either." },
+      { question: "Can hearing glasses replace my hearing aids?", answer: "For most people who already wear hearing aids, no. Glasses are open-ear and self-fit, and they are meant for mild to moderate loss. Hearing aids that were programmed and checked for your loss give you more precision than glasses can." },
+      { question: "Why are hearing glasses cheaper than hearing aids?", answer: "Part of the answer is what the price includes. What you pay for a fitted hearing aid also buys the hearing test, the programming, the verification and the follow-up visits, while glasses are self-fit and support comes from the seller. The device itself is only part of the difference." },
+      { question: "Do hearing glasses work for severe hearing loss?", answer: "No. Both products are cleared for mild to moderate loss, and an open-ear design cannot deliver the amplification that severe loss needs. If you struggle to follow a conversation in a quiet room, get tested first." },
+      { question: "Can I get my own prescription lenses in them?", answer: "Yes, for both. Legato offers Pentax prescription lenses from -10.0 to +5.0, plus progressive readers from +1.0 to +3.0, and Nuance Audio Plus accepts prescription lenses too. Lenses add to the price, so your lens setup decides your final cost." },
+      { question: "What happens if my hearing gets worse?", answer: "The hearing hardware sits in the frame, so you cannot upgrade it without changing the glasses. If your hearing drops, the next step is usually a prescription hearing aid. A baseline test now gives you a record to compare against, and sudden change needs prompt medical care, not a new gadget." }
+    ],
+    related: [
+      { label: "Hearing Aid Glasses in 2026", href: "/hearing-aid-glasses-2026" },
+      { label: "Nuance Audio Plus vs. Meta Glasses", href: "/nuance-audio-plus-vs-meta-glasses" },
+      { label: "Meta Glasses Hearing Aid Feature", href: "/meta-glasses-hearing-aid-feature" },
+      { label: "Lyric Invisible Hearing", href: "/lyric-invisible-hearing" },
+      { label: "OTC vs Prescription Hearing Aids", href: "/otc-vs-prescription-hearing-aids-real-world" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Buyer decision guide",
+      byline: "A buyer's guide to the two hearing glasses launched in one week",
+      reviewedBy,
+      readTime: "8 min read",
+      articleType: "Buyer decision guide",
+      pullQuote: "Lyric hides the device. Hearing glasses turn it into a style choice. A hearing test tells you which of those is even on the table.",
+      keyTakeaways: [
+        "Two over-the-counter hearing glasses launched in one week: Nuance Audio Plus from $829 and Legato Frames from $999. Both are self-fit and open-ear, for adults with mild to moderate loss.",
+        "No independent test has compared them, so we describe who each suits and name no winner.",
+        "Hearing glasses and Lyric answer the same stigma problem in opposite ways. A hearing test shows which route fits your hearing, or whether any of them does."
+      ],
+      patientQuestion: "Which hearing glasses should I choose, or should I stay with hearing aids?",
+      storyLead: "Two pairs of hearing glasses launched in one week. Here is how they compare with each other and with hearing aids, and who should test first.",
+      comparisonTable: {
+        afterHeading: "Legato Frames, Nuance Audio Plus and hearing aids at a glance",
+        caption: "Legato Frames, Nuance Audio Plus and prescription hearing aids compared",
+        headers: ["", "Legato Frames", "Nuance Audio Plus", "Prescription hearing aids"],
+        rows: [
+          ["Price", "From $999 (Symphony, Harmony) or $1,099 (Aria). Lenses extra", "From $829, depending on lenses. First generation stays on sale at $699", "Varies by device and clinic. Includes testing, fitting and follow-up"],
+          ["FDA status", "FDA-regulated OTC hearing aid, per Legato", "FDA-cleared, per EssilorLuxottica", "Fitted by a hearing professional"],
+          ["Who it is for", "Adults with mild to moderate loss", "Adults with perceived mild to moderate loss", "Mild to profound loss, including one-sided loss"],
+          ["Battery", "10 to 12 hours of hearing use, per Legato", "About 10 hours, per the company", "Varies by model"],
+          ["Styles", "Three frames: Aria, Symphony, Harmony", "Three frames: Square, Panthos, Upturn, in five colors", "Many styles, including invisible devices such as Lyric"],
+          ["Where to buy", "legatohearing.com, with select eyecare providers coming", "Optical and hearing care professionals, and online", "Hearing clinics such as ours"],
+          ["Professional support", "Lifetime support from Legato's own audiologists and specialists at no charge, per Legato", "Depends on the seller", "Fitting, adjustments, cleaning and repairs at the clinic"],
+          ["Fitting and verification", "Self-fit in an app. No real-ear verification", "Self-fit in an app. No real-ear verification", "Programmed to your test results and checked with real-ear measurement"]
+        ]
+      },
+      notify: {
+        context: "Notify: Hearing glasses comparison updates",
+        heading: "Get one email when something changes.",
+        body: "We will send one email when independent reviews appear or when Legato names its eyecare provider rollout.",
+        button: "Notify me"
+      },
+      sources: [
+        { label: "Legato: Frames are now available in the U.S. (GlobeNewswire)", href: "https://www.globenewswire.com/news-release/2026/10/01/3372968/0/en/legato-frames-the-world-s-first-ai-based-hearing-glasses-are-now-available-in-the-u-s.html" },
+        { label: "Legato Hearing", href: "https://www.legatohearing.com/" },
+        { label: "Mixed-News: Legato Frames pricing and specifications", href: "https://mixed-news.com/en/legato-frames-ai-hearing-glasses-999-dollars-bose-frames-founder/" },
+        { label: "audioXpress: Legato Frames combine AI speech enhancement with open-ear hearing assistance", href: "https://audioxpress.com/news/legato-frames-combine-ai-speech-enhancement-with-open-ear-hearing-assistance" },
+        { label: "Hearing Review: Legato Frames now available in the U.S.", href: "https://hearingreview.com/hearing-products/hearing-aids/otc/legato-frames-now-available-in-the-us-combining-ai-hearing-technology-with-prescription-eyewear" },
+        { label: "EssilorLuxottica: Nuance Audio Plus announcement", href: "https://www.prnewswire.com/news-releases/essilorluxottica-unveils-nuance-audio-plus-the-next-generation-of-hearing-glasses-302891793.html" },
+        { label: "HearingTracker: EssilorLuxottica Launches Nuance Audio Plus", href: "https://www.hearingtracker.com/news/essilorluxottica-launches-nuance-audio-plus-hearing-glasses" },
+        { label: "HearingTracker: Nuance Audio Glasses, Audiologist and Lab Tested", href: "https://www.hearingtracker.com/hearing-aids/nuance-audio-glasses-audiologist-and-lab-tested" },
+        { label: "Particle: EssilorLuxottica launches FDA-cleared Nuance Audio Plus", href: "https://particle.news/story/essilorluxottica-launches-fdacleared-nuance-audio-plus-hearing-glasses" },
+        { label: "FDA 510(k): Nuance Audio Hearing Aid Software", href: "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm?ID=K243150" },
+        { label: "California Hearing Center: Legato Frames explainer", href: "https://www.calhearing.com/legato-frames-ai-hearing-glasses/" }
       ]
     }
   },

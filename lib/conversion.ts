@@ -284,6 +284,7 @@ export const comparisonPages: SitePage[] = [
       }
     ],
     related: [
+      { label: "Latest: Hearing Glasses Compared (Legato vs. Nuance Audio Plus)", href: "/hearing-glasses-comparison" },
       { label: "Latest: Samsung Galaxy Buds Are Becoming Hearing Aids", href: "/samsung-galaxy-buds-hearing-aid-feature" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
