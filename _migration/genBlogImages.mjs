@@ -19,6 +19,11 @@ const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 
 // --- Icon library: each returns SVG centered in a 100x100 box, scaled/translated by caller ---
 const ICONS = {
+  glasses: (c = C.paper) => `
+    <g fill="none" stroke="${c}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="16" y="40" width="28" height="24" rx="9"/><rect x="56" y="40" width="28" height="24" rx="9"/>
+      <path d="M44 48 C48 44 52 44 56 48"/><path d="M16 46 L9 38"/><path d="M84 46 L91 38"/></g>
+    <g stroke="${C.gold}" stroke-width="4" fill="none" stroke-linecap="round"><path d="M90 52 a8 8 0 0 1 0 14"/><path d="M95 48 a14 14 0 0 1 0 22"/></g>`,
   ear: (c = C.paper) => `
     <path d="M35 78 C22 70 22 40 42 30 C62 20 82 34 76 54 C72 66 60 62 60 74 C60 84 50 88 43 84" fill="none" stroke="${c}" stroke-width="7" stroke-linecap="round"/>
     <circle cx="49" cy="47" r="7" fill="none" stroke="${c}" stroke-width="6"/>`,
