@@ -407,6 +407,7 @@ export const contentDates: Record<string, string> = {
   "/latest-study-on-hearing-aids-in-noisy-environments-key-insights/": "2026-08-25",
   "/lenire-in-san-mateo-the-bay-area-how-bimodal-neuromodulation-works-in-plain-english/": "2026-09-21",
   "/lgbtq-affirming-hearing-care/": "2026-09-17",
+  "/legato-frames-ai-hearing-glasses/": "2026-10-05",
   "/local-resources-for-seniors-with-hearing-loss-in-atherton/": "2026-09-21",
   "/local-resources-for-seniors-with-hearing-loss-in-burlingame/": "2026-09-21",
   "/local-resources-for-seniors-with-hearing-loss-in-hillsborough/": "2026-09-21",

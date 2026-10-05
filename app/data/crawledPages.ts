@@ -5737,6 +5737,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/legato-frames-ai-hearing-glasses/",
+    "title": "Legato Frames AI Hearing Glasses: $999, Explained | California Hearing Center",
+    "h1": "Legato Frames: The $999 AI Hearing Glasses, Explained",
+    "desc": "Legato's AI hearing glasses launched Oct 1 from $999. See how they work, who they suit, and when to get a hearing test first.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/medicare-open-enrollment-hearing-benefits/",
     "title": "Medicare Open Enrollment 2027: California Hearing Checks | California Hearing Center",
     "h1": "Medicare Open Enrollment 2027: 5 Hearing Benefit Checks Before December 7",
