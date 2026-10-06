@@ -29,6 +29,6 @@
     ["Can I be seen in New York if I am a California Hearing Center patient?", "Yes. If you are travelling or spending time on the East Coast, call the Harrison office on (914) 949-0034 or the Somers office on (914) 556-6720."],
     ["Does Audiology Associates of Westchester have an office in California?", "No. Its offices are in Harrison and Somers, New York. Our offices are in San Mateo and San Carlos."]
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Audiology Associates of Westchester, our sister practice",
 },

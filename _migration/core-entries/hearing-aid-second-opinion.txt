@@ -36,7 +36,7 @@
     ["How long does the appointment take?", "About thirty minutes. If you want a full hearing evaluation as well, allow an hour."],
     ["Can you help if I bought hearing aids somewhere that has closed?", "Usually, yes. We service and reprogram most major brands regardless of where they were purchased. Bring the devices and any paperwork you still have."]
   ],
-  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  image: "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
   imageLabel: "Bring your quote and your audiogram",
   imageAlt: "Audiologist reviewing a hearing aid quote with a patient"
 },

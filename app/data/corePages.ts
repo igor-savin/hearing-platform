@@ -104,7 +104,7 @@ const rawCorePages: Record<string, PageContent> = {
     "Benefits include 99% covered health, dental, and vision premiums, 401k with matching, generous PTO, and a wellness credit.",
     "To apply, email infochc@hearing-care.org."
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Join the California Hearing Center team",
 },
   "/about-us/darcy-benson/": {
@@ -338,7 +338,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Which office should I choose?", "Whichever is easier to reach. San Mateo is our main office and has longer uninterrupted hours; San Carlos includes a midday break. Both share the same team and records, so your care is identical either way."],
     ["Can you combine my test and consultation into one visit?", "Usually yes, and we recommend it if you are driving in from a distance. Mention it when you book on 650-342-9449 and we will schedule enough time."]
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Serving the Peninsula and the wider Bay Area",
 },
   "/atria-park-of-san-mateo/": {
@@ -406,7 +406,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Can I be seen in New York if I am a California Hearing Center patient?", "Yes. If you are travelling or spending time on the East Coast, call the Harrison office on (914) 949-0034 or the Somers office on (914) 556-6720."],
     ["Does Audiology Associates of Westchester have an office in California?", "No. Its offices are in Harrison and Somers, New York. Our offices are in San Mateo and San Carlos."]
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Audiology Associates of Westchester, our sister practice",
 },
   "/contact/san-carlos/": {
@@ -442,7 +442,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Is the San Carlos office the same practice as San Mateo?", "Yes. Both offices are California Hearing Center, share the same phone number, and share the same clinical team and records, so you can be seen at whichever location is more convenient."],
     ["Where do I park?", "There is street parking on Laurel Street and public lots just off it. Downtown San Carlos is flat and walkable; tell us when you book if you would like the closest possible option."]
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Hearing care in downtown San Carlos",
   imageAlt: "An audiologist showing a hearing aid to a couple during a consultation.",
 },
@@ -521,7 +521,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Does insurance cover hearing aids?", "Sometimes, in whole or in part. It depends entirely on your plan. We offer courtesy [benefit verification](/resources/insurance/) so you know what yours contributes before you buy."],
     ["Can I finance hearing aids?", "Yes. We offer [CareCredit financing](/hearing-aid-financing/) to spread the cost into monthly payments, and it can be combined with any insurance benefit."]
   ],
-  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  image: "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
   imageLabel: "Clear numbers before you commit",
 },
   "/hearing-aid-financing/": {
@@ -557,7 +557,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Can I use insurance and financing together?", "Yes, and it is the smart approach. We verify your [insurance benefits](/resources/insurance/) first so any coverage reduces the amount you finance, then CareCredit can cover the remainder."],
     ["Can I pay with an HSA or FSA?", "Hearing aids are typically an eligible HSA/FSA expense, so many patients pay with those pre-tax funds. Bring your card and we will help you apply it, alone or alongside financing."]
   ],
-  image: "/assets/core-photos/hearing-aid-financing.jpg",
+  image: "/assets/core-photos/hearing-aid-financing-san-mateo.jpg",
   imageLabel: "Spread the cost, keep the care",
 },
   "/hearing-aid-fitting/": {
@@ -668,7 +668,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["How long does the appointment take?", "About thirty minutes. If you want a full hearing evaluation as well, allow an hour."],
     ["Can you help if I bought hearing aids somewhere that has closed?", "Usually, yes. We service and reprogram most major brands regardless of where they were purchased. Bring the devices and any paperwork you still have."]
   ],
-  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  image: "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
   imageLabel: "Bring your quote and your audiogram",
   imageAlt: "Audiologist reviewing a hearing aid quote with a patient"
 },
@@ -1531,7 +1531,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Can I use HSA or FSA money for hearing aids?", "Yes. Hearing aids are an eligible medical expense for both, along with batteries and accessories. It is the most commonly overlooked way to reduce the real cost, and worth checking before you set a budget."],
     ["Will Oticon Reveal cost more than Oticon Intent?", "New flagship platforms typically launch at or above the outgoing one, but Oticon has not published figures and we will not guess. What often happens is that the previous generation eases in price, which for many people buys a higher technology tier for the same money. A trade worth discussing."]
   ],
-  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  image: "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
   imageLabel: "What a hearing aid quote actually includes",
   imageAlt: "Understanding what determines the cost of Oticon Reveal hearing aids"
 },
@@ -2873,7 +2873,7 @@ const rawCorePages: Record<string, PageContent> = {
     "The Ida Institute and HLAA offer free, independent education and peer support for people living with hearing loss.",
     "Ask at your appointment or call 650-342-9449 and we will help you pick the program that fits how you struggle to hear."
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Programs and support beyond the fitting",
 },
   "/resources/hearingup-approved-provider/": {

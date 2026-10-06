@@ -31,7 +31,7 @@
     ["Is the San Carlos office the same practice as San Mateo?", "Yes. Both offices are California Hearing Center, share the same phone number, and share the same clinical team and records, so you can be seen at whichever location is more convenient."],
     ["Where do I park?", "There is street parking on Laurel Street and public lots just off it. Downtown San Carlos is flat and walkable; tell us when you book if you would like the closest possible option."]
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Hearing care in downtown San Carlos",
   imageAlt: "An audiologist showing a hearing aid to a couple during a consultation.",
 },

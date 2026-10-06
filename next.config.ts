@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { imageRenames } from "./app/data/imageRenames";
 
 // 30 Sep 2026 — the Medicare open-enrollment page moved to an evergreen slug (no
 // year) so the same URL can carry next year's update. Headline and body keep 2027.
@@ -585,7 +586,9 @@ const nextConfig: NextConfig = {
     root: process.cwd(),
   },
   async redirects() {
-    return [...newsSlugRedirects, ...blogRedirects, ...cityConsolidationRedirects, ...slugCorrectionRedirects, ...wordpressArchiveRedirects, ...legacyPageRedirects, ...legacySitemapRedirects];
+    // Renamed images: old file URL -> new file URL (app/data/imageRenames.ts).
+    const imageRenameRedirects = Object.entries(imageRenames).map(([source, destination]) => ({ source, destination, statusCode: 301 }));
+    return [...imageRenameRedirects, ...newsSlugRedirects, ...blogRedirects, ...cityConsolidationRedirects, ...slugCorrectionRedirects, ...wordpressArchiveRedirects, ...legacyPageRedirects, ...legacySitemapRedirects];
   },
   async headers() {
     // Static assets under /public/assets are content-stable (we rename on change),

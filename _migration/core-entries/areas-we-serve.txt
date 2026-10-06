@@ -25,6 +25,6 @@
     ["Which office should I choose?", "Whichever is easier to reach. San Mateo is our main office and has longer uninterrupted hours; San Carlos includes a midday break. Both share the same team and records, so your care is identical either way."],
     ["Can you combine my test and consultation into one visit?", "Usually yes, and we recommend it if you are driving in from a distance. Mention it when you book on 650-342-9449 and we will schedule enough time."]
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Serving the Peninsula and the wider Bay Area",
 },

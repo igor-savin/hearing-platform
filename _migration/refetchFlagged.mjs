@@ -22,7 +22,7 @@ async function search(q) {
     { headers: { Authorization: KEY }, signal: AbortSignal.timeout(25000) });
   return r.ok ? (await r.json()).photos || [] : [];
 }
-function flat(p) { return p.replace(/^\/|\/$/g, "").replace(/\//g, "__"); }
+function flat(p) { return p.replace(/^\/|\/$/g, "").replace(/\//g, "-"); } // hyphen, not "__": see IMAGE-NAMING.md
 function mapFile(file) { const o = {}; for (const m of readFileSync(join(ROOT, file), "utf8").matchAll(/"(\/[^"]+\/)":\s*"([^"]+)"/g)) o[m[1]] = m[2]; return o; }
 function writeMap(file, name, comment, obj) {
   const body = Object.keys(obj).sort().map((k) => `  "${k}": ${JSON.stringify(obj[k])},`).join("\n");

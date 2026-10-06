@@ -103,7 +103,7 @@ function queryFor(slug, kicker) {
   return q || "audiologist hearing care senior";
 }
 function slugOf(p) { return p.replace(/\/$/, "").split("/").pop(); }
-function flat(p) { return p.replace(/^\/|\/$/g, "").replace(/\//g, "__"); }
+function flat(p) { return p.replace(/^\/|\/$/g, "").replace(/\//g, "-"); } // hyphen, not "__": see IMAGE-NAMING.md
 
 const plan = [
   ...blogTargets.map((f) => ({ kind: "blog", path: f.p, slug: slugOf(f.p), flat: flat(f.p), query: queryFor(slugOf(f.p), f.kicker) })),

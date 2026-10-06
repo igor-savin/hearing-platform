@@ -36,6 +36,6 @@
     ["Does insurance cover hearing aids?", "Sometimes, in whole or in part. It depends entirely on your plan. We offer courtesy [benefit verification](/resources/insurance/) so you know what yours contributes before you buy."],
     ["Can I finance hearing aids?", "Yes. We offer [CareCredit financing](/hearing-aid-financing/) to spread the cost into monthly payments, and it can be combined with any insurance benefit."]
   ],
-  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  image: "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
   imageLabel: "Clear numbers before you commit",
 },

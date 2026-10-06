@@ -31,6 +31,6 @@
     ["Can I use insurance and financing together?", "Yes, and it is the smart approach. We verify your [insurance benefits](/resources/insurance/) first so any coverage reduces the amount you finance, then CareCredit can cover the remainder."],
     ["Can I pay with an HSA or FSA?", "Hearing aids are typically an eligible HSA/FSA expense, so many patients pay with those pre-tax funds. Bring your card and we will help you apply it, alone or alongside financing."]
   ],
-  image: "/assets/core-photos/hearing-aid-financing.jpg",
+  image: "/assets/core-photos/hearing-aid-financing-san-mateo.jpg",
   imageLabel: "Spread the cost, keep the care",
 },

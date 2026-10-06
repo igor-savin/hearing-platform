@@ -27,6 +27,6 @@
     "Benefits include 99% covered health, dental, and vision premiums, 401k with matching, generous PTO, and a wellness credit.",
     "To apply, email infochc@hearing-care.org."
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Join the California Hearing Center team",
 },

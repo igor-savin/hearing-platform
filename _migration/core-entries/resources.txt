@@ -34,6 +34,6 @@
     "The Ida Institute and HLAA offer free, independent education and peer support for people living with hearing loss.",
     "Ask at your appointment or call 650-342-9449 and we will help you pick the program that fits how you struggle to hear."
   ],
-  image: "/assets/core-photos/about-us.webp",
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
   imageLabel: "Programs and support beyond the fitting",
 },

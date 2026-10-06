@@ -39,7 +39,7 @@
     ["Can I use HSA or FSA money for hearing aids?", "Yes. Hearing aids are an eligible medical expense for both, along with batteries and accessories. It is the most commonly overlooked way to reduce the real cost, and worth checking before you set a budget."],
     ["Will Oticon Reveal cost more than Oticon Intent?", "New flagship platforms typically launch at or above the outgoing one, but Oticon has not published figures and we will not guess. What often happens is that the previous generation eases in price, which for many people buys a higher technology tier for the same money. A trade worth discussing."]
   ],
-  image: "/assets/core-photos/hearing-aid-cost.jpg",
+  image: "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
   imageLabel: "What a hearing aid quote actually includes",
   imageAlt: "Understanding what determines the cost of Oticon Reveal hearing aids"
 },
