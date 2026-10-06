@@ -1025,11 +1025,11 @@ const generatedPages = uniqueCrawlPages
   .sort((a, b) => (a.path === "/" ? -1 : b.path === "/" ? 1 : a.path.localeCompare(b.path)));
 
 const editorialImages = {
-  hearingAidFit: { src: "/assets/blog-hearing-aid-fit.png", alt: "Adult adjusting a hearing aid comfortably at home" },
-  conversation: { src: "/assets/blog-conversation.png", alt: "Two adults having an easy conversation at a cafe" },
-  headphones: { src: "/assets/blog-headphones.png", alt: "Adult listening with over-ear headphones at home" },
-  earCare: { src: "/assets/blog-ear-care.png", alt: "Adult gently drying the outside of an ear with a towel" },
-  careOptions: { src: "/assets/blog-hearing-care-options.png", alt: "Adult reviewing hearing care options at home" }
+  hearingAidFit: { src: "/assets/hearing-aid-fit-adjusting-behind-the-ear.png", alt: "Adult adjusting a hearing aid comfortably at home" },
+  conversation: { src: "/assets/couple-conversation-hearing-loss-at-home.png", alt: "Two adults having an easy conversation at a cafe" },
+  headphones: { src: "/assets/headphones-listening-at-home.png", alt: "Adult listening with over-ear headphones at home" },
+  earCare: { src: "/assets/ear-care-drying-ear-with-towel.png", alt: "Adult gently drying the outside of an ear with a towel" },
+  careOptions: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Adult reviewing hearing care options at home" }
 };
 
 const editorialBlogPosts: SitePage[] = [

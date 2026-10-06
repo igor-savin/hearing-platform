@@ -30,14 +30,14 @@ function canonicalUrlFor(path: string) {
 // favicons, OG cards) is furniture, not content, and stays out.
 // Images a page renders from a component rather than from its page data, so
 // nothing in `pages` knows they exist. The homepage hero is the case that
-// matters: /assets/interactive-ear-hero.png is an anatomical cutaway of the ear
+// matters: /assets/ear-anatomy-hearing-aid-sound-waves.png is an anatomical cutaway of the ear
 // with a hearing aid fitted, it is the largest and highest-priority image on
 // the site, and it is the best image-search asset this practice owns. It spent
 // months with an empty alt inside an aria-hidden wrapper (VS-03) telling
 // Google to ignore it. Having just undone that, leaving it out of the sitemap
 // would be an odd way to finish the job.
 const COMPONENT_IMAGES: Record<string, string[]> = {
-  "/": ["/assets/interactive-ear-hero.png"]
+  "/": ["/assets/ear-anatomy-hearing-aid-sound-waves.png"]
 };
 
 const RASTER = /\.(jpe?g|png|webp|avif)$/i;

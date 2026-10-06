@@ -237,15 +237,15 @@ function linkifyPlaces(text: string) {
 }
 
 const homeImages = {
-  banner: "/assets/home-hero.jpg",
+  banner: "/assets/hearing-aids-audiologist-westchester-home-hero.jpg",
   meetTeam: "/assets/duda/meet-the-team.jpg",
   people: "/assets/duda/what-people-are-saying.jpg",
   experts: "/assets/duda/talk-to-experts.jpg",
-  testing: "/assets/duda/w2.jpg",
-  fitting: "/assets/duda/adobestock-232317406.jpg",
-  tinnitus: "/assets/duda/w4.jpg",
-  protection: "/assets/duda/w1.jpg",
-  repair: "/assets/duda/hearst-widex-photo.png"
+  testing: "/assets/duda/hearing-test-audiologist-westchester.jpg",
+  fitting: "/assets/duda/hearing-aid-fitting-ear-exam-westchester.jpg",
+  tinnitus: "/assets/duda/tinnitus-ringing-in-ears-westchester.jpg",
+  protection: "/assets/duda/hearing-protection-earmuffs-westchester.jpg",
+  repair: "/assets/duda/hearing-aid-repair-westchester.png"
 };
 
 const homeServiceCards = [
@@ -385,70 +385,70 @@ const teamMembers = [
     name: "Dr. Jennifer Ratner, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Partner, Doctor of Audiology",
-    image: "/assets/duda/jen-ratner-img.jpg",
+    image: "/assets/duda/dr-jennifer-ratner-audiologist-westchester.jpg",
     alt: "Jennifer Ratner, Au.D. - Doctor of Audiology - Audiology Associates of Westchester"
   },
   {
     name: "Dr. Caitlin Dold, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Lead Audiologist, Doctor of Audiology",
-    image: "/assets/duda/0255mfox9-2021-edit.jpg",
+    image: "/assets/duda/dr-caitlin-dold-audiologist-westchester.jpg",
     alt: "Caitlin Dold, Au.D. - Doctor of Audiology at Audiology Associates of Westchester"
   },
   {
     name: "Dr. Jenna M. Elias, Au.D., F-AAA",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "/assets/duda/untitled-3.jpg",
+    image: "/assets/duda/dr-jenna-elias-audiologist-westchester.jpg",
     alt: "Dr. Jenna Elias"
   },
   {
     name: "Dr. Leannmarie Senat",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "/assets/team/leannmarie-senat.jpg",
+    image: "/assets/team/dr-leannmarie-senat-audiologist-westchester.jpg",
     alt: "Dr. Leannmarie Senat"
   },
   {
     name: "Dr. Julia Rivera, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Audiology Staff, Doctor of Audiology",
-    image: "/assets/team/julia-rivera.jpg",
+    image: "/assets/team/dr-julia-rivera-audiologist-westchester.jpg",
     alt: "Dr. Julia Rivera, Au.D."
   },
   {
     name: "Dr. Kira Savin, Au.D.",
     pronouns: "(she/her/hers)",
     role: "Partner, Doctor of Audiology",
-    image: "/assets/duda/0422mfox9-2021-edit.jpg",
+    image: "/assets/duda/dr-kira-savin-audiologist-westchester.jpg",
     alt: "Kira Savin, Au.D. - Doctor of Audiology at Audiology Associates of Westchester"
   },
   {
     name: "Jennifer Tarlton",
     pronouns: "(she/her/hers)",
     role: "Practice Administrator",
-    image: "/assets/duda/jennifer-tarlton-img.jpg",
+    image: "/assets/duda/jennifer-tarlton-practice-administrator-westchester.jpg",
     alt: "Jennifer Tarlton"
   },
   {
     name: "Alicia Rivera",
     pronouns: "",
     role: "Patient Care Coordinator Lead / Billing Specialist",
-    image: "/assets/duda/0643mfox9-2021-edit.jpg",
+    image: "/assets/duda/alicia-rivera-patient-care-coordinator-westchester.jpg",
     alt: "Alicia Rivera - Patient Care Coordinator Lead/ Billing Specialist"
   },
   {
     name: "Hazel Icaza",
     pronouns: "",
     role: "Patient Care Coordinator",
-    image: "/assets/duda/hazel-26-edit.jpg",
+    image: "/assets/duda/hazel-icaza-patient-care-coordinator-westchester.jpg",
     alt: "Hazel Icaza"
   },
   {
     name: "Francheska Cotto",
     pronouns: "(she/her/hers)",
     role: "Patient Care Coordinator",
-    image: "/assets/team/francheska-cotto.jpg",
+    image: "/assets/team/francheska-cotto-patient-care-coordinator-westchester.jpg",
     alt: "Francheska Cotto"
   }
 ];

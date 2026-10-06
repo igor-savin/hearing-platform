@@ -79,7 +79,7 @@ function recordFromData(id: string, data: DocumentData): CmsArticleRecord | null
           .filter((link) => link.label && link.href.startsWith("/"))
       : [],
     heroImage: {
-      src: text(data.heroImage?.src) || "/assets/blog-hearing-care-options.png",
+      src: text(data.heroImage?.src) || "/assets/hearing-care-options-reviewing-paperwork.png",
       alt: text(data.heroImage?.alt) || h1
     },
     blogMeta: {

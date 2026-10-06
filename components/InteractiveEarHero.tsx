@@ -148,7 +148,7 @@ export function InteractiveEarHero() {
           priority
           quality={78}
           sizes="100vw"
-          src="/assets/interactive-ear-hero.png"
+          src="/assets/ear-anatomy-hearing-aid-sound-waves.png"
         />
       </div>
       <div className="aa-ear-overlay" aria-hidden="true" />
