@@ -474,20 +474,25 @@ export const helpServices: HelpService[] = [
     slug: "earwax-removal",
     shortDescription: "Cerumen management when wax is blocking hearing, a hearing test, or a hearing aid.",
     metaDescription:
-      "Earwax removal and cerumen management at Audiology Associates of Westchester, when it is clinically appropriate. Harrison and Somers, NY.",
+      "Earwax removal and cerumen management at Audiology Associates of Westchester, when it is clinically appropriate. Offices in Harrison and Somers, NY, serving Westchester and southern Putnam.",
     intro: [
       "Wax is normal and most ears clear it on their own. It matters when it blocks the canal, clogs a hearing aid, or stops a hearing test from being accurate.",
-      "We look first. If the canal is blocked and it is safe to clear, cerumen management is done in the office. If what we see is a perforation, an infection, drainage, or an ear that has had surgery, you go to a physician instead."
+      "We look first. If the canal is blocked and it is safe to clear, cerumen management is done in the office. If what we see is a perforation, an infection, drainage, or an ear that has had surgery, you go to a physician instead.",
+      "Both offices do this. Harrison, at 550 Mamaroneck Avenue, is open five weekdays and is the shorter drive from Mamaroneck, Rye, Scarsdale, White Plains and across the line from Greenwich. Somers, on Route 100, covers the north and is the shorter drive from Mount Kisco, Katonah, Bedford, Yorktown Heights and Mahopac. Which one you book is a question about your week rather than a clinical one."
     ],
     whoWeHelp: [
       "People whose ear has gone blocked and muffled",
       "Hearing aid wearers whose devices clog again and again",
-      "Patients whose hearing test could not be completed because of wax"
+      "Patients whose hearing test could not be completed because of wax",
+      "Anyone told by another clinician that their ears are full of wax",
+      "People who have tried drops or a home irrigation kit and not cleared it"
     ],
     signs: [
       "One ear feels plugged and everything through it sounds dull",
       "Your hearing aid sounds weak within days of being cleaned",
-      "You have been using cotton swabs and it has got worse"
+      "You have been using cotton swabs and it has got worse",
+      "Your own voice sounds loud or boomy inside your head",
+      "Ringing that started at the same time as the blocked feeling"
     ],
     appointmentSteps: [
       "We look into the canal before anything is touched.",
@@ -495,7 +500,7 @@ export const helpServices: HelpService[] = [
       "If it is not safe, or something else is going on, you leave with a referral rather than a procedure."
     ],
     whyItMatters:
-      "A fully blocked canal can drop hearing enough to be mistaken for hearing loss, and wax under a receiver makes a working hearing aid sound broken. Keep cotton swabs out of the canal: they push wax deeper.",
+      "A fully blocked canal can drop hearing enough to be mistaken for hearing loss, and wax under a receiver makes a working hearing aid sound broken. Keep cotton swabs out of the canal: they push wax deeper. Home irrigation kits carry the same problem in an ear you cannot see into, and that is the part that matters. A blocked canal and a perforated eardrum can feel much the same from the outside, which is why this is done under direct visualization rather than by feel.",
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Conductive Hearing Loss", href: "/hearing-loss/conductive-hearing-loss" }
@@ -515,6 +520,21 @@ export const helpServices: HelpService[] = [
         question: "Should I use drops first?",
         answer:
           "Ask before you do. What softens wax in a healthy ear is the wrong thing for an ear with a perforation, which is one reason we look before anything else."
+      },
+      {
+        question: "Can an audiologist remove earwax?",
+        answer:
+          "Yes. Cerumen management sits within audiology practice, and it is routine here because wax is one of the most common reasons a hearing test cannot be completed or a hearing aid stops working. What an audiologist will not do is work in an ear that is not safe to work in, which is what the look at the start is for."
+      },
+      {
+        question: "Which office should I book for earwax removal?",
+        answer:
+          "Whichever is the easier drive. Harrison, at 550 Mamaroneck Avenue, Suite 407, books weekdays from 8:30 to 5:00 on (914) 949-0034. Somers, at 325 NY 100, runs Monday through Wednesday and Friday morning and is closed Thursday, on (914) 556-6720. Records and hearing aid settings are shared between them, so it does not matter which one you started at."
+      },
+      {
+        question: "Do I need an appointment, or can I walk in?",
+        answer:
+          "Book it. It is a short visit, but the canal has to be examined before anything is touched, and that is not something to do in a doorway. Say on the phone that an ear feels blocked, because a wax visit is shorter than a full evaluation and gets scheduled differently."
       }
     ]
   },
@@ -846,6 +866,8 @@ export const coreServiceDeepDives: Record<string, CoreServiceDeepDive> = {
       "Plan for an adjustment visit after a week or two of real-world listening."
     ],
     related: [
+      { label: "Hearing Aid Cost in Westchester", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Hearing Aid Insurance", href: "/does-insurance-cover-hearing-aids-tests" },
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
       { label: "Hearing Aid Tune-Ups", href: "/how-we-can-help/hearing-aid-tune-ups" }
     ]

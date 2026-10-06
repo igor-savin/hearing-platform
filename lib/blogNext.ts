@@ -1175,6 +1175,183 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       ]
     }
   },
+  {
+    path: "/hearing-aid-cost-westchester-county",
+    title: "How Much Do Hearing Aids Cost in Westchester County?",
+    metaTitle: "Hearing Aid Cost in Westchester, NY (2026 Guide)",
+    metaDescription: "Hearing aids run about $200 to $8,000+ a pair. See what each price includes, Costco vs clinic, and how to compare quotes. Call us for a hearing test.",
+    h1: "How Much Do Hearing Aids Cost in Westchester County? (2026 Guide)",
+    heroImage: { src: "/assets/blog-seed/photo-v2/hearing-aid-cost-westchester-county-photo-v2.webp", alt: "Comparing hearing aid options and prices before choosing" },
+    sections: [
+      "Why the range is so wide",
+      "Where you buy changes what you get",
+      "What a clinic price usually includes",
+      "Costco and other retailers",
+      "Ways to lower the cost",
+      "Questions to ask about any quote"
+    ],
+    body: [
+      "Hearing aids cost about $200 to more than $8,000 a pair. That is a very wide range, and the figures on this page are broad market estimates as of October 2026. They are not our price list. Your audiologist can give you an exact number only after a hearing test, because the right device depends on your hearing loss, your daily life and your budget.",
+      "Two terms trip people up. The first is \"per pair\" and \"per device\". Many people with hearing loss need two hearing aids, one for each ear. Some prices you see online are for one device. Always check which one a quote means. The second is \"what is included\". Two quotes with the same number can cover very different amounts of care.",
+      "Why the range is so wide",
+      "Three things drive most of the difference. The first is the technology level. Higher levels usually add more advanced noise handling, more automatic adjustment and more features such as phone streaming and rechargeable batteries. A quieter lifestyle often does not need the top level. A busy one, with restaurants, meetings and group events, often benefits from a higher one.",
+      "The second is the style and brand. Small receiver-in-canal devices, custom in-the-ear devices and invisible options are built and priced differently. The third is the care that comes with the device. A hearing aid is a small computer, but it only works well when someone programs it to your hearing and checks the result. That professional work is part of what you pay for at a clinic.",
+      "Where you buy changes what you get",
+      "The table below compares the three main places people buy hearing aids. The ranges are approximate and change often. Use them to set expectations, then ask for a written quote.",
+      "What a clinic price usually includes",
+      "At an independent audiology clinic, the price often bundles more than the devices. Ask whether the quote covers a full hearing test, the fitting visit, real-ear measurement, follow-up visits, cleanings and adjustments, a repair warranty, and loss and damage cover. Real-ear measurement uses a thin probe tube in the ear canal to check what the hearing aid delivers at your eardrum. Many audiologists consider it the best way to confirm that a fitting matches your hearing test. It is worth asking any provider whether they do it.",
+      "Bundled pricing means you pay once and the visits are covered for a set period. Unbundled pricing means you pay for each visit as you go. Neither is wrong. They are different ways to pay, so compare the full cost over the first few years, not just the first number.",
+      "Costco and other retailers",
+      "Costco and other retail chains can be a sensible choice for some people. They often suit adults with straightforward hearing needs who are happy to choose from a smaller range. Before you decide, ask who will fit the devices and what training they have, whether the fitting is verified in your ear canal, how many follow-up visits are included, and how adjustments work after you buy. Retail prices also change, so check the current price directly with the store.",
+      "Over-the-counter hearing aids sit at the low end of the range. The FDA created this category for adults who feel they have mild to moderate hearing loss. They need no prescription and no fitting visit. They can be a good start for some people. They do not replace a hearing test, and they will not help if the cause of your hearing problem is wax, an ear infection or another medical issue. A test is the way to find out which group you are in.",
+      "Ways to lower the cost",
+      "There are several ways to bring the cost down. None of them apply to everyone, so check each one for your own situation. Many Medicare Advantage plans include some hearing benefit. See our page on hearing aid insurance in Westchester and Greenwich for how that works. Some employer plans and some state-regulated plans also help. Veterans may qualify for hearing aids through the VA. Hearing aids are generally an eligible medical expense for a flexible spending account or a health savings account. Ask any provider about payment plans. Last, ask whether a prior-generation or entry-level device would meet your needs. A device does not have to be the newest to work well.",
+      "Questions to ask about any quote",
+      "Use these questions with every provider, including us. Is the price per pair or per device? What exactly is included, and for how long? Does the fitting include real-ear measurement? How many follow-up visits are covered? What is the trial period, and are there restocking or return fees? Please get the answer in writing. Who will fit my devices, and what are their credentials? Can I use any brand, or only one? What does the warranty cover, and does it cover loss and damage? What happens when I need a repair?",
+      "If you would like a quote built around your own hearing test, call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720. Ask for a written quote so you can compare it at home."
+    ],
+    faqs: [
+      { question: "How much do hearing aids cost in Westchester?", answer: "Hearing aids cost about $200 to more than $8,000 a pair as of October 2026. Over-the-counter devices sit at the low end. Independent clinics sit at the higher end because the price often bundles fitting and follow-up care. Your exact cost depends on your hearing test and the technology you choose." },
+      { question: "Is Costco cheaper than a clinic?", answer: "Retail chains such as Costco often have lower sticker prices than independent clinics. The two are not always the same product. Compare who fits the device, whether the fitting is verified, and how many follow-up visits are included. A lower price helps most when the care you need is also included." },
+      { question: "Why do hearing aid prices vary so much?", answer: "Price follows technology level, style, brand and the care that comes with the device. A clinic price often includes the hearing test, fitting, verification and follow-up visits. An online or over-the-counter price usually covers the device only." },
+      { question: "Are over-the-counter hearing aids as good as prescription ones?", answer: "Over-the-counter devices are made for adults with self-perceived mild to moderate hearing loss. They can help some people. Prescription devices are programmed to your own hearing test and can serve a wider range of hearing loss. A hearing test shows which type suits you." },
+      { question: "Do I need a hearing test before I buy hearing aids?", answer: "A test is strongly recommended. It shows the type and level of your hearing loss and can find medical causes such as wax or an ear infection. It also gives you a baseline to compare against later." },
+      { question: "Can I get an exact price from Audiology Associates of Westchester?", answer: "Yes. Your audiologist can quote a price after your hearing test. Call Harrison at (914) 949-0034 or Somers at (914) 556-6720, and ask for the quote in writing." }
+    ],
+    related: [
+      { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Best Hearing Aid at Costco?", href: "/what-is-the-best-hearing-aid-sold-at-costco" },
+      { label: "Prescription vs Over-the-Counter Hearing Aids", href: "/prescription-vs-otc-hearing-aids" },
+      { label: "Costco Hearing Aids vs Audiologist Care", href: "/costco-hearing-aids-vs-audiologist-care" },
+      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" }
+    ],
+    blogMeta: {
+      frame: "Cost guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "6 min read",
+      articleType: "Cost and coverage",
+      pullQuote: "Two quotes with the same number can cover very different amounts of care. Compare what is included, not only the price.",
+      keyTakeaways: [
+        "Hearing aids cost about $200 to $8,000 or more a pair, as of October 2026. These are broad market estimates, not our price list.",
+        "Check whether a quote is per pair or per device.",
+        "A clinic price often bundles the test, fitting, verification and follow-up visits. A device-only price does not.",
+        "Ask for the trial period, return terms and any restocking fee in writing.",
+        "A hearing test comes first. It shows what you need and rules out medical causes."
+      ],
+      patientQuestion: "How much will hearing aids cost me, and what am I paying for?",
+      storyLead: "A plain guide to hearing aid prices in Westchester: what drives the range, what each price includes, and what to ask before you buy.",
+      comparisonTable: {
+        afterHeading: "Where you buy changes what you get",
+        caption: "Where people buy hearing aids, with approximate price ranges per pair as of October 2026",
+        headers: ["Where you buy", "Approximate price per pair", "Who fits and programs them", "Follow-up care"],
+        rows: [
+          ["Over-the-counter (online or in a store)", "About $200 to $2,000", "You, using an app", "Usually phone or online support"],
+          ["Warehouse club or retail chain", "About $1,500 to $3,500", "Retailer staff. Training varies, so ask", "Varies by retailer. Ask what is included"],
+          ["Independent audiology clinic", "About $3,000 to $8,000 or more", "A licensed audiologist", "Often bundled. Confirm in writing"]
+        ]
+      },
+      sources: [
+        { label: "FDA: Over-the-Counter Hearing Aids", href: "https://www.fda.gov/medical-devices/hearing-aids/over-counter-hearing-aids" },
+        { label: "Medicare.gov: Hearing aids", href: "https://www.medicare.gov/coverage/hearing-aids" },
+        { label: "IRS Publication 502: Medical and Dental Expenses", href: "https://www.irs.gov/publications/p502" },
+        { label: "American Academy of Audiology", href: "https://www.audiology.org/" }
+      ]
+    }
+  },
+  {
+    path: "/does-insurance-cover-hearing-aids-tests",
+    title: "Does Insurance Cover Hearing Aids or Hearing Tests?",
+    metaTitle: "Does Insurance Cover Hearing Aids? NY and CT Guide",
+    metaDescription: "Does insurance cover hearing aids? Medicare, Medicare Advantage, NY Medicaid and Connecticut rules explained in plain words. Call us to check your plan.",
+    h1: "Does Insurance Cover Hearing Aids or Hearing Tests? A Westchester and Greenwich Guide",
+    heroImage: { src: "/assets/blog-seed/photo-v2/does-insurance-cover-hearing-aids-tests-photo-v2.webp", alt: "Reviewing hearing aid insurance coverage options" },
+    sections: [
+      "Original Medicare",
+      "Medicare Advantage",
+      "New York Medicaid",
+      "Employer and private plans",
+      "Greenwich and Connecticut",
+      "Veterans",
+      "Pay with pre-tax money",
+      "How to check your own benefit"
+    ],
+    body: [
+      "Coverage for hearing aids depends on the type of plan you have, the state it comes from, and the provider you see. This page gives the general rules as of October 2026. Plans change every year. Always confirm the details with your plan before you buy. We cannot list every plan we work with on this page, so call us to check before you book.",
+      "The sections below explain each plan type in plain words. A summary table sits at the end of the page.",
+      "Original Medicare",
+      "Original Medicare does not cover hearing aids. It also does not cover routine hearing exams that are done to fit hearing aids. It can cover a diagnostic hearing or balance exam when your doctor orders it to find out whether you need medical treatment. You usually pay part of the cost for that exam. If you are on Original Medicare, plan to pay for hearing aids yourself, or look at the other options on this page.",
+      "Medicare Advantage",
+      "Many Medicare Advantage plans include some hearing benefit. The benefit varies a lot. Some plans give a set dollar amount toward hearing aids. Some give a set copay per device. Some only work with a specific network of providers. Ask your plan four things. Is a hearing exam covered? What is the dollar amount for hearing aids, and how often does it renew? Which providers or networks can I use? Do I need a referral or approval first? Use the plan's phone number on your member card. During Medicare open enrollment, you can compare hearing benefits between plans before you choose.",
+      "New York Medicaid",
+      "New York Medicaid can cover hearing aids when they are medically necessary. Rules usually include prior approval, a Medicaid-enrolled provider, and limits on how often you can get new devices. Rules differ between the fee-for-service program and Medicaid managed care plans. Call your plan or the New York State Department of Health to confirm what applies to you. Call us to ask whether we can see you under your plan.",
+      "Employer and private plans",
+      "Many employer and private plans in New York do not pay for adult hearing aids. Some do, with a dollar limit or a set number of years between devices. A plan that your employer pays for itself, rather than buying from an insurer, often follows federal rules instead of state law. This is one reason two people in the same town can have different coverage. Read your plan summary, or ask your benefits office.",
+      "Greenwich and Connecticut",
+      "Our offices are in Harrison and Somers, New York. Harrison is the closer office to Greenwich. If you live in Connecticut, your plan may follow Connecticut rules. According to the American Academy of Audiology, a Connecticut law that took effect on January 1, 2020 expanded coverage to adults. It covers one hearing aid per ear every two years on plans regulated by the state. Plans that an employer pays for itself may not follow that law. Ask your plan whether it applies to you, and what the plan pays.",
+      "Veterans",
+      "Veterans who are enrolled in VA health care may be able to get hearing aids through the VA. Eligibility depends on your service record and your enrollment. Contact the VA to find out what you qualify for. If you choose to buy outside the VA, ask us what we can offer.",
+      "Pay with pre-tax money",
+      "Hearing aids are generally an eligible medical expense for a flexible spending account (FSA) or a health savings account (HSA). Some people can also deduct medical costs on their taxes when the costs pass a set share of their income. Ask your tax adviser how this applies to you.",
+      "How to check your own benefit",
+      "Call the number on your insurance card. Ask these questions. Does my plan cover a hearing exam and hearing aids? What is the dollar limit, and how often does it renew? Do I need a referral or prior approval? Is Audiology Associates of Westchester in my network? Write down the date, the name of the person you spoke with and what they said. Then call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720, and we will help you with the next step."
+    ],
+    faqs: [
+      { question: "Does Medicare cover hearing aids?", answer: "Original Medicare does not cover hearing aids or routine hearing exams for fitting them. It can cover a diagnostic hearing or balance exam when a doctor orders it. Many Medicare Advantage plans include some hearing benefit, and the details vary by plan." },
+      { question: "Does New York Medicaid pay for hearing aids?", answer: "New York Medicaid can cover hearing aids when they are medically necessary. Rules often include prior approval and an enrolled provider. Check with your plan before you book, because rules differ by plan." },
+      { question: "Does Connecticut require insurance to cover adult hearing aids?", answer: "According to the American Academy of Audiology, a Connecticut law that took effect on January 1, 2020 expanded coverage to adults, at one hearing aid per ear every two years. It applies to plans regulated by the state. Employer plans that pay claims themselves may be outside it, so ask your plan." },
+      { question: "Can I use my FSA or HSA for hearing aids?", answer: "Hearing aids are generally an eligible medical expense for an FSA or HSA. Check your plan's rules, and keep your receipt." },
+      { question: "Do you take my insurance?", answer: "Plans and networks change often. Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720 with your plan name and member ID, and we will tell you what applies." },
+      { question: "What if my plan does not cover hearing aids?", answer: "You still have options. You can ask about payment plans, a lower technology level, or an over-the-counter device after a hearing test. Our hearing aid cost guide explains what each option includes." }
+    ],
+    related: [
+      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-hearing-benefits" },
+      { label: "Greenwich, CT", href: "/greenwich-ct" },
+      { label: "Harrison office", href: "/harrison-ny" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Contact Us", href: "/contact-us" }
+    ],
+    blogMeta: {
+      frame: "Coverage guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "5 min read",
+      articleType: "Cost and coverage",
+      pullQuote: "Coverage depends on your plan, your state and your provider. Ask your plan four questions before you buy.",
+      keyTakeaways: [
+        "Original Medicare does not cover hearing aids.",
+        "Many Medicare Advantage plans include some hearing benefit. The amount and the network vary.",
+        "New York Medicaid can cover medically necessary hearing aids. Prior approval and an enrolled provider usually apply.",
+        "Connecticut has a law for adult hearing aid coverage on state-regulated plans. Employer plans that pay claims themselves may be outside it.",
+        "Hearing aids are generally an eligible FSA and HSA expense."
+      ],
+      patientQuestion: "Will my insurance pay for hearing aids?",
+      storyLead: "A plain guide to hearing aid coverage for patients in Westchester and Greenwich: Medicare, Medicare Advantage, New York Medicaid, Connecticut rules and veterans.",
+      comparisonTable: {
+        afterHeading: "How to check your own benefit",
+        caption: "Hearing aid coverage by plan type, as of October 2026. Always confirm with your plan.",
+        headers: ["Plan type", "Hearing aids", "Hearing exams", "What to check"],
+        rows: [
+          ["Original Medicare", "Not covered", "Diagnostic exams may be covered when a doctor orders them", "Whether your doctor can order the exam"],
+          ["Medicare Advantage", "Often some benefit. Varies by plan", "Often covered", "Dollar limit, network and approvals"],
+          ["New York Medicaid", "May be covered when medically necessary", "Varies by plan", "Prior approval and enrolled provider"],
+          ["Employer or private plan", "Varies. Many adult plans exclude them", "Varies", "Your plan summary or benefits office"],
+          ["Connecticut state-regulated plan", "One hearing aid per ear every two years for adults, per the American Academy of Audiology", "Varies", "Whether your plan is state-regulated"],
+          ["VA health care", "May be covered if you qualify", "May be covered", "Your enrollment and eligibility"]
+        ]
+      },
+      sources: [
+        { label: "Medicare.gov: Hearing aids", href: "https://www.medicare.gov/coverage/hearing-aids" },
+        { label: "Medicare.gov: Hearing and balance exams", href: "https://www.medicare.gov/coverage/hearing-and-balance-exams" },
+        { label: "American Academy of Audiology: New laws in Connecticut and Maine expand hearing aid coverage to include adults", href: "https://www.audiology.org/new-laws-in-connecticut-and-maine-effective-january-1-2020-expand-hearing-aid-coverage-to-include-adults" },
+        { label: "New York State Department of Health: Medicaid", href: "https://www.health.ny.gov/health_care/medicaid/" },
+        { label: "IRS Publication 502: Medical and Dental Expenses", href: "https://www.irs.gov/publications/p502" }
+      ]
+    }
+  },
 ];
 
 export function buildNextBlogPosts(baseUrl: string, _siteName: string): SitePage[] {
