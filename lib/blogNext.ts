@@ -12,7 +12,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "LGBTQ+ Affirming Hearing Care | Westchester & Hudson Valley",
     metaDescription: "What affirming care means inside an audiology clinic: chosen name in the chart, how speech testing is recorded, and hearing after decades on HIV treatment.",
     h1: "LGBTQ+ Affirming Hearing Care in Westchester",
-    heroImage: { src: "/assets/blog-conversation.png", alt: "Two adults in unhurried conversation at a hearing care appointment" },
+    heroImage: { src: "/assets/couple-conversation-hearing-loss-at-home.png", alt: "Two adults in unhurried conversation at a hearing care appointment" },
     sections: ["Affirming Care", "The chart, and the New York wrinkle", "Speech testing, talkers, and what we write down", "Hearing and long-term HIV treatment", "Hearing aids after a voice change", "What we do not claim"],
     body: [
       "Most pages like this one say a practice is welcoming and stop there. Welcome is the floor, not the service. What follows is the specific, practical difference affirming care makes inside an audiology clinic: what goes in your chart, how the tests are chosen and recorded, and the two clinical situations where being LGBTQ+ genuinely changes what your audiologist should be doing. We have tried to be honest about the evidence throughout. Two of the four topics below are well studied. Two are not studied at all, and where that is the case we say so rather than dressing an educated guess as established practice.",
@@ -70,7 +70,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Fortell Hearing Aids: What Is Actually Known | Audiology Associates",
     metaDescription: "Fortell fits only in its own clinics, at $6,800 a pair, out of network with every insurer. What the evidence shows, and what to ask before you book a visit.",
     h1: "Fortell Hearing Aids: What Is Actually Known So Far",
-    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Weighing hearing aid options before committing to a purchase" },
+    heroImage: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Weighing hearing aid options before committing to a purchase" },
     sections: ["Why this concerns Westchester now", "The idea", "Following the evidence", "The exclusions", "What is good about it", "What we can and cannot do", "Corrections"],
     body: [
       "Fortell is a New York hearing aid company that launched in December 2025 and has since raised $163 million at a $740 million valuation, been profiled by Wired and the New York Times, and named to Forbes' Next Billion-Dollar Startups. Its founders came from Butterfly Network. The device costs $6,800 a pair and is sold only at Fortell's own clinics, fitted by audiologists Fortell employs.",
@@ -165,7 +165,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Earwax Removal by an Audiologist | Westchester",
     metaDescription: "Audiologists can remove earwax when the ear history and the examination allow it. Here is what happens at the appointment, and when a referral is safer.",
     h1: "Can an Audiologist Remove Earwax? What Westchester Patients Should Know",
-    heroImage: { src: "/assets/blog-ear-care.png", alt: "Adult preparing for safe professional ear care and an ear examination" },
+    heroImage: { src: "/assets/ear-care-drying-ear-with-towel.png", alt: "Adult preparing for safe professional ear care and an ear examination" },
     sections: ["Earwax Removal", "Local Service Guide", "Audiologist perspective", "Frequently asked questions"],
     body: [
       "Yes. Audiologists may provide cerumen management when their training, state scope of practice, equipment, and the patient's ear history make removal appropriate. The first step is always an ear examination—not an assumption that every plugged ear is caused by wax.",
@@ -220,7 +220,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Program Hearing Aids Bought Elsewhere? | Westchester",
     metaDescription: "Hearing aids bought online, at Costco or from another clinic can sometimes be reprogrammed. It depends on the model, the lock status and the software.",
     h1: "Can an Audiologist Program Hearing Aids Bought Somewhere Else?",
-    heroImage: { src: "/assets/blog-hearing-aid-fit.png", alt: "Adult receiving a professional hearing aid fit and programming adjustment" },
+    heroImage: { src: "/assets/hearing-aid-fit-adjusting-behind-the-ear.png", alt: "Adult receiving a professional hearing aid fit and programming adjustment" },
     sections: ["Hearing Aid Support", "Bottom-Funnel Guide", "Buyer decision", "Frequently asked questions"],
     body: [
       "Sometimes. Whether another clinic can program your hearing aids depends on the brand, model, age, condition, software access, device lock status, and whether the clinic supports that manufacturer. A quick phone description can help, but the final answer may require an in-person device inspection.",
@@ -275,7 +275,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Hearing Aid Tune-Up vs Repair | Westchester",
     metaDescription: "A tune-up covers cleaning, parts, comfort and programming. A repair is for damage, no output, or a device that will not charge. Here is how to tell.",
     h1: "Hearing Aid Tune-Up vs Repair: Which Appointment Do You Need?",
-    heroImage: { src: "/assets/blog-hearing-aid-fit.png", alt: "Hearing aids being inspected for cleaning, adjustment, or repair" },
+    heroImage: { src: "/assets/hearing-aid-fit-adjusting-behind-the-ear.png", alt: "Hearing aids being inspected for cleaning, adjustment, or repair" },
     sections: ["Hearing Aid Care", "Decision Guide", "Troubleshooting", "Frequently asked questions"],
     body: [
       "Choose a tune-up when the devices basically work but need cleaning, routine parts, comfort changes, pairing help, or programming refinement. Choose a repair evaluation when a device is dead, physically damaged, intermittent, exposed to moisture, unable to charge, or still malfunctioning after basic cleaning.",
@@ -330,7 +330,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "When Hearing Aids Aren't Enough | Westchester",
     metaDescription: "When well-fitted hearing aids give volume but not words, aided speech testing is the next step. Here is what a cochlear implant evaluation involves.",
     h1: "When Are Hearing Aids No Longer Enough? Cochlear Implant Evaluation Signs",
-    heroImage: { src: "/assets/blog-conversation.png", alt: "Adults discussing speech understanding and advanced hearing care options" },
+    heroImage: { src: "/assets/couple-conversation-hearing-loss-at-home.png", alt: "Adults discussing speech understanding and advanced hearing care options" },
     sections: ["Cochlear Implant Support", "Candidate Guide", "Audiologist perspective", "Frequently asked questions"],
     body: [
       "Hearing aids may no longer be enough when appropriately fitted devices make sound louder but speech remains too unclear for important conversations. A cochlear implant evaluation does not commit someone to surgery; it measures whether another hearing pathway deserves consideration.",
@@ -384,7 +384,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Hearing Tests & Cognitive Screening | Westchester",
     metaDescription: "Hearing tests and cognitive screening measure different things. Here is what each one can show, and what the ACHIEVE trial actually reported.",
     h1: "Hearing Tests and Cognitive Screening: Why Both May Be Discussed",
-    heroImage: { src: "/assets/blog-conversation.png", alt: "Older adult discussing hearing, communication, and cognitive wellness with a clinician" },
+    heroImage: { src: "/assets/couple-conversation-hearing-loss-at-home.png", alt: "Older adult discussing hearing, communication, and cognitive wellness with a clinician" },
     sections: ["Healthy Aging", "Screening Guide", "Evidence update", "Frequently asked questions"],
     body: [
       "Hearing testing and cognitive screening answer different questions. A hearing evaluation measures auditory function and speech understanding; a cognitive screening is a brief check that may identify whether more comprehensive medical assessment should be considered. Neither test, by itself, diagnoses dementia.",
@@ -438,7 +438,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Tinnitus Specialist in Westchester: What to Look For",
     metaDescription: "What to ask a tinnitus provider before booking: how they evaluate, which symptoms they refer on, what the options are, and how progress gets measured.",
     h1: "How to Choose a Tinnitus Specialist in Westchester County",
-    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Patient comparing evidence-informed tinnitus care options in Westchester County" },
+    heroImage: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Patient comparing evidence-informed tinnitus care options in Westchester County" },
     sections: ["Tinnitus Care", "Westchester Guide", "Local decision guide", "Frequently asked questions"],
     body: [
       "Look for tinnitus care that begins with evaluation, explains red flags, measures hearing, sets realistic goals, and offers more than a single product. The right provider should be able to tell you what they can address, when medical referral is needed, and how progress will be measured.",
@@ -495,7 +495,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Hearing Aid Glasses in 2026: Patient Guide",
     metaDescription: "Hearing aid glasses are cleared over the counter for adults with perceived mild to moderate loss. Here is what they do, and what they do not replace.",
     h1: "Hearing Aid Glasses in 2026: What Patients Should Know",
-    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Adult comparing newer over-the-counter hearing technology with prescription hearing care" },
+    heroImage: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Adult comparing newer over-the-counter hearing technology with prescription hearing care" },
     sections: ["Hearing Technology", "2026 Update", "News explained", "Frequently asked questions"],
     body: [
       "Hearing aid glasses combine eyewear with microphones, speakers, and user-adjusted amplification. In the United States, Nuance Audio Hearing Aid Software received FDA clearance for over-the-counter use with compatible wearable products and is intended for adults 18 and older with perceived mild to moderate hearing impairment.",
@@ -551,7 +551,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Auracast Hearing Aids: What Patients Should Know",
     metaDescription: "Auracast broadcasts one audio stream to many listeners, some hearing aids included. Both ends have to support it. Here is what to check before buying.",
     h1: "Auracast and Hearing Aids: What It Could Change for TVs and Public Spaces",
-    heroImage: { src: "/assets/blog-headphones.png", alt: "Adult using connected audio technology at home with accessible listening support" },
+    heroImage: { src: "/assets/headphones-listening-at-home.png", alt: "Adult using connected audio technology at home with accessible listening support" },
     sections: ["Connected Hearing", "Technology Guide", "News explained", "Frequently asked questions"],
     body: [
       "Auracast is a Bluetooth broadcast-audio capability designed to let one transmitter send sound to many compatible receivers, including some hearing aids, earbuds, and headphones. Instead of pairing to one device in the familiar way, a listener may be able to select an available broadcast much like choosing a Wi-Fi network.",
@@ -607,7 +607,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Meta Glasses Hearing Aid Feature | Westchester",
     metaDescription: "Meta announced an FDA-cleared hearing aid feature for its AI glasses at Meta Connect 2026. What it does, how it compares to AirPods, and when to get tested.",
     h1: "Meta's New Glasses Include a Hearing Aid Feature. Should You Try It Instead of a Hearing Aid?",
-    heroImage: { src: "/assets/blog-headphones.png", alt: "Adult wearing consumer audio glasses, representing new self-fit hearing technology" },
+    heroImage: { src: "/assets/headphones-listening-at-home.png", alt: "Adult wearing consumer audio glasses, representing new self-fit hearing technology" },
     sections: ["Hearing Technology", "Buyer decision guide", "Audiologist perspective", "Frequently asked questions"],
     body: [
       "A patient forwarded us a headline within an hour of Meta's keynote ending: their glasses can now work as a hearing aid. The short answer is yes, in a specific, regulated sense, and the longer answer is the more useful one.",
@@ -666,7 +666,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Nuance Audio Plus vs. Meta Glasses | Westchester",
     metaDescription: "Nuance Audio Plus starts at $829 in the US. How it compares with Meta's hearing glasses feature, what open-ear glasses cannot do, and who should test first.",
     h1: "Nuance Audio Plus vs. Meta Glasses: Which Hearing Aid Glasses Are Right for You?",
-    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Adult comparing newer over-the-counter hearing technology with prescription hearing care" },
+    heroImage: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Adult comparing newer over-the-counter hearing technology with prescription hearing care" },
     sections: ["Hearing Technology", "Buyer decision guide", "Audiologist perspective", "Frequently asked questions"],
     body: [
       "Two pairs of glasses now claim to help you hear. One is Nuance Audio Plus, the second-generation product from EssilorLuxottica, announced last week. The other is the hearing feature Meta announced on September 23 for its own glasses. Several patients have already asked which one to pick, and whether either replaces a hearing aid.",
@@ -734,7 +734,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Auracast Live in a U.S. Theater | Westchester",
     metaDescription: "A Montana clinic paid for Auracast at Billings Studio Theatre, live since September 11, 2026. What happened, what is still unknown, and what to ask about your hearing aids.",
     h1: "Auracast Goes Live in a U.S. Theater: What It Means for Hearing Aid Wearers",
-    heroImage: { src: "/assets/blog-headphones.png", alt: "Adult using connected audio technology with accessible listening support" },
+    heroImage: { src: "/assets/headphones-listening-at-home.png", alt: "Adult using connected audio technology with accessible listening support" },
     sections: ["Hearing Technology", "News explained", "Audiologist perspective", "Frequently asked questions"],
     body: [
       "Billings Studio Theatre, a community theater in Montana, now broadcasts its shows by Auracast. The system was running for the opening of Come From Away on September 11, 2026. Big Sky Audiology, a local clinic, paid for the equipment and the installation and gave it to the theater.",
@@ -1077,7 +1077,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
     metaTitle: "Hearing Glasses Compared: Legato vs Nuance vs Hearing Aids",
     metaDescription: "Two hearing glasses launched in one week. Compare Legato Frames, Nuance Audio Plus and prescription hearing aids, and see who should test first.",
     h1: "Hearing Glasses in 2026: Legato Frames vs. Nuance Audio Plus vs. Prescription Hearing Aids",
-    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Adult weighing hearing glasses against prescription hearing aids before choosing" },
+    heroImage: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Adult weighing hearing glasses against prescription hearing aids before choosing" },
     ogImage: { src: "/assets/og/hearing-glasses-comparison.png", alt: "Hearing glasses compared in 2026: Legato, Nuance Audio Plus and hearing aids. Audiology Associates of Westchester." },
     ogTitle: "Hearing Glasses Compared in 2026",
     ogDescription: "Legato Frames, Nuance Audio Plus and prescription hearing aids, side by side, with who each one tends to suit.",

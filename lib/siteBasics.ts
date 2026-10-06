@@ -76,7 +76,7 @@ export const primaryPhone = "(914) 949-0034";
 export const primaryPhoneHref = "tel:+19149490034";
 export const zocdocUrl = "https://www.zocdoc.com/practice/audiology-associates-of-westchester-69184";
 export const zocdocPracticeId = "69184";
-export const logoPath = "/assets/duda/audiologoy-associates-of-west-chester-logo.png";
+export const logoPath = "/assets/duda/audiology-associates-of-westchester-logo.png";
 export const logoUrl = `${baseUrl}${logoPath}`;
 
 // A few topics exist at both a short legacy URL carried over from the Duda

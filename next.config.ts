@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { permanentRedirects } from "./lib/redirects";
+import { imageRenames } from "./lib/imageRenames";
 
 const nextConfig: NextConfig = {
   turbopack: {
@@ -51,11 +52,20 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
-    return permanentRedirects.map(({ source, destination }) => ({
+    // Renamed images: old file URL -> new file URL (lib/imageRenames.ts).
+    const imageRenameRedirects = Object.entries(imageRenames).map(([source, destination]) => ({
       source,
       destination,
       statusCode: 301
     }));
+    return [
+      ...imageRenameRedirects,
+      ...permanentRedirects.map(({ source, destination }) => ({
+        source,
+        destination,
+        statusCode: 301
+      }))
+    ];
   },
   images: {
     formats: ["image/avif", "image/webp"],

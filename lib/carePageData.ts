@@ -105,7 +105,7 @@ export const TINNITUS_LEAD_CLINICIAN = {
   name: "Dr. Jennifer Ratner",
   credential: "Au.D.",
   line: "Partner and Doctor of Audiology, trained at Vanderbilt University School of Medicine. She is a Certificate Holder of Tinnitus Management (CH-TM) and a fellow of the Tinnitus Practitioners Association.",
-  image: "/assets/duda/jen-ratner-img.jpg",
+  image: "/assets/duda/dr-jennifer-ratner-audiologist-westchester.jpg",
   imageAlt: "Jennifer Ratner, Au.D. - Doctor of Audiology - Audiology Associates of Westchester"
 };
 
