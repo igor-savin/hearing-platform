@@ -1348,6 +1348,166 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       ]
     }
   },
+  {
+    path: "/hearing-aid-second-opinion",
+    title: "Hearing Aid Second Opinion in Westchester",
+    metaTitle: "Hearing Aid Second Opinion in Westchester, NY",
+    metaDescription: "Unsure about a hearing aid quote, or your current hearing aids are not working? Get a second opinion from a Doctor of Audiology. Call to book a visit.",
+    h1: "Hearing Aid Second Opinion in Westchester",
+    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Reviewing a hearing test and hearing aid quote with an audiologist" },
+    sections: [
+      "When a second opinion makes sense",
+      "What to bring",
+      "What we check",
+      "What a second opinion does not do",
+      "What it costs",
+      "What happens next"
+    ],
+    body: [
+      "A second opinion means a Doctor of Audiology looks at your hearing test, your hearing aid quote, or the hearing aids you wear now, and tells you what they see. You do not have to be unhappy with your first provider to ask for one. Many people simply want to be sure before they spend money or keep struggling with devices that do not help.",
+      "We offer second opinions at our Harrison and Somers offices. You will leave with a clear answer in plain words, and you decide what to do next. There is no pressure to switch providers or to buy anything from us.",
+      "When a second opinion makes sense",
+      "Some common reasons are a quote that feels too high or too hard to compare, a recommendation you do not fully understand, hearing aids that still do not help after several adjustment visits, or a provider who has not measured the fit in your ear canal. People also ask when a hearing test result seems different from how they hear every day, when they are told they have no hearing loss but still struggle, or when someone suggests a device they did not expect.",
+      "What to bring",
+      "Bring any recent hearing test results, the written quote or purchase agreement, and the hearing aids you wear now, with their chargers and any domes or molds. Bring a list of the situations where you struggle most, such as restaurants, meetings or the phone. Bring the name of the provider, and their trial and return terms, if you still have them. A family member or friend can also help describe how your hearing affects daily life.",
+      "What we check",
+      "The table below shows what we look at in each situation. Your audiologist tells you which of these apply to you. We may repeat parts of your hearing test if your results are old or if something does not match how you hear.",
+      "What a second opinion does not do",
+      "A second opinion does not judge your first provider. Often it confirms the original advice, and we will tell you so. It does not replace medical care. If we find signs that need a physician, such as sudden hearing loss, one-sided hearing loss, drainage or significant ear pain, we will tell you to see a doctor promptly. We also cannot promise that a different device will fix every problem, and we will not promise a result that your hearing test does not support.",
+      "What it costs",
+      "Fees and what the visit includes depend on what you need, such as a review of paperwork only, a repeat hearing test, or a check of your hearing aids. Please ask us about the fee and about insurance when you book, so you know before you come in. If you were quoted a price elsewhere, our guides on hearing aid cost and insurance in Westchester can help you compare it fairly.",
+      "What happens next",
+      "After your visit, you can take our findings back to your first provider, stay with them, or move your care. If you decide to continue with us, we will explain the options and the costs in writing. Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720 to book a second opinion visit."
+    ],
+    faqs: [
+      { question: "Do I need to tell my current audiologist that I want a second opinion?", answer: "No. You can book a visit on your own. Many people ask their first provider for a copy of their hearing test and quote, which helps us compare. Your records belong to you, and you can ask for them." },
+      { question: "Can you review a quote from another provider or from Costco?", answer: "Yes. Bring the written quote. We look at the device, what is included, and how the care is set up, so you can compare it fairly. We tell you what we see and leave the decision to you." },
+      { question: "My hearing aids are not helping. Can you check them?", answer: "Yes. Bring them with their chargers and parts. Your audiologist checks the devices, the fit in your ear, and whether the settings match your hearing test. In many cases, adjustments or reprogramming can help. If the devices are not the right fit for your hearing, we tell you." },
+      { question: "Will you tell me my hearing aids were a bad choice?", answer: "We will tell you what we see, in plain words. Often the original advice was sound, and we say so. If something does not match your hearing test, we explain what and why." },
+      { question: "Do I have to buy hearing aids from you after a second opinion?", answer: "No. There is no obligation. You can take the findings back to your first provider or stay where you are." },
+      { question: "What does a second opinion visit cost?", answer: "It depends on what you need, such as a review of paperwork, a repeat hearing test or a device check. Ask us about the fee and about insurance when you call to book." }
+    ],
+    related: [
+      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
+      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "Programming Hearing Aids Bought Somewhere Else", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing Testing", href: "/hearing-testing" }
+    ],
+    blogMeta: {
+      frame: "Patient guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "Second opinion",
+      pullQuote: "A second opinion does not judge your first provider. Often it confirms the original advice, and we will tell you so.",
+      keyTakeaways: [
+        "You can ask for a second opinion without telling your current provider.",
+        "Bring recent test results, the written quote, and the hearing aids you wear now.",
+        "We review the test, the quote or the devices, and explain what we see in plain words.",
+        "There is no obligation to switch providers or to buy from us.",
+        "Ask us about the visit fee and insurance when you book."
+      ],
+      patientQuestion: "How do I get a second opinion on hearing aids?",
+      storyLead: "What a hearing aid second opinion is, when it helps, what to bring and what to expect at our Harrison and Somers offices.",
+      comparisonTable: {
+        afterHeading: "What we check",
+        caption: "What a second opinion can look at, by situation",
+        headers: ["Your situation", "What we look at", "Possible outcome"],
+        rows: [
+          ["You have a quote and are unsure", "The devices, what is included, and the follow-up care", "A clear comparison you can use with any provider"],
+          ["Your hearing aids do not help", "The fit in your ear, the settings against your hearing test, and the condition of the devices", "Adjustments, reprogramming, or a different option"],
+          ["Your hearing test seems wrong", "A repeat test, if your results are old or do not match how you hear", "Confirmed results, or a new baseline"],
+          ["You were told you have no hearing loss but still struggle", "Speech understanding in noise, not only quiet tones", "An explanation, and next steps"]
+        ]
+      },
+      sources: [
+        { label: "American Academy of Audiology", href: "https://www.audiology.org/" },
+        { label: "Medicare.gov: Hearing and balance exams", href: "https://www.medicare.gov/coverage/hearing-and-balance-exams" }
+      ]
+    }
+  },
+  {
+    path: "/how-much-does-a-hearing-test-cost-westchester",
+    title: "How Much Does a Hearing Test Cost in Westchester?",
+    metaTitle: "Hearing Test Cost in Westchester, NY (2026 Guide)",
+    metaDescription: "A hearing test can cost from nothing to a few hundred dollars. See what a full test includes, what insurance may cover, and how to book. Call us today.",
+    h1: "How Much Does a Hearing Test Cost in Westchester? (2026 Guide)",
+    heroImage: { src: "/assets/blog-hearing-care-options.png", alt: "Audiologist explaining hearing test results to a patient" },
+    sections: [
+      "Screening or full test",
+      "What a full hearing test includes",
+      "What affects the cost",
+      "What insurance may cover",
+      "How to find out your cost before you book"
+    ],
+    body: [
+      "A hearing test can cost anywhere from nothing to a few hundred dollars. That is a broad estimate as of October 2026, not our price list. The range is wide because \"hearing test\" can mean a quick screening at a store or a full diagnostic exam with a Doctor of Audiology.",
+      "The two are not the same. A screening tells you whether you may have a problem. A full test shows the type and level of your hearing loss, how well you understand speech, and whether something medical, such as wax or fluid, is involved. Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720 to ask what applies to you.",
+      "Screening or full test",
+      "A screening is short and usually checks whether you hear a few tones at set levels. Retail hearing centers and some events offer them at no charge, often linked to a hearing aid consultation. Online tests are also screenings. They can point to a need for follow-up. They do not replace a full exam.",
+      "What a full hearing test includes",
+      "A full test usually starts with a case history and a look in your ears. It often includes tests of the middle ear, tones in each ear through earphones and through a bone oscillator, and speech testing. Your audiologist explains the results on a chart called an audiogram, and tells you what the results mean for your daily life. Plan on 30 to 60 minutes. The result also gives you a baseline to compare against in later years.",
+      "What affects the cost",
+      "Cost depends on how much testing you need, the type of practice, and how your insurance treats the visit. A first full exam usually costs more than a repeat test. Some practices include a hearing test in the price of hearing aids. Others bill it on its own. Ask what is included, and whether the test fee is credited toward hearing aids if you buy them.",
+      "What insurance may cover",
+      "Original Medicare does not cover routine hearing exams for fitting hearing aids. It can cover a diagnostic hearing or balance exam when your doctor orders it to find out whether you need medical treatment. Many Medicare Advantage plans include a hearing exam. Employer and private plans vary. New York Medicaid may cover a medically necessary exam, with rules that depend on your plan. Our insurance guide explains each plan type in plain words.",
+      "How to find out your cost before you book",
+      "Call your plan and ask whether a diagnostic hearing test is covered, and whether you need a referral. Then call us with your plan name, and ask what your cost will be. Tell us if you have noticed sudden hearing loss, one-sided hearing loss, dizziness, drainage or ear pain. Those signs need prompt medical care, and we will help you find the right visit."
+    ],
+    faqs: [
+      { question: "How much does a hearing test cost?", answer: "A hearing test can cost from nothing to a few hundred dollars, as a broad estimate as of October 2026. A free screening is not the same as a full diagnostic exam. Call us to find out what applies to you." },
+      { question: "Is a hearing test free?", answer: "Some screenings are free, often at retail hearing centers. A full diagnostic exam with a Doctor of Audiology is a medical service, and it is usually billed to insurance or charged as a fee. Ask what is included before you book." },
+      { question: "Does Medicare cover a hearing test?", answer: "Original Medicare does not cover routine hearing exams for fitting hearing aids. It can cover a diagnostic exam when your doctor orders it. Many Medicare Advantage plans include a hearing exam, so check your plan." },
+      { question: "How long does a hearing test take?", answer: "A full test usually takes 30 to 60 minutes, including time to talk through your results." },
+      { question: "Do I need a referral for a hearing test?", answer: "Many plans do not require one for a hearing test with an audiologist. Some plans, and Medicare when a doctor orders a diagnostic exam, do. Ask your plan before you book." },
+      { question: "Is an online hearing test as good as a clinic test?", answer: "An online test is a screening. It can show that you may need a full exam. It cannot measure each ear with calibrated equipment or check for medical causes." }
+    ],
+    related: [
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
+      { label: "Hearing Screening vs Hearing Test", href: "/hearing-test-vs-hearing-screening-difference" },
+      { label: "How Much Does Costco Charge for a Hearing Test?", href: "/how-much-does-costco-charge-for-a-hearing-test" },
+      { label: "What Happens During a Comprehensive Hearing Evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
+      { label: "Hearing Aid Cost in Westchester County", href: "/hearing-aid-cost-westchester-county" }
+    ],
+    blogMeta: {
+      frame: "Cost guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "Cost and coverage",
+      pullQuote: "A screening tells you whether you may have a problem. A full test shows what the problem is.",
+      keyTakeaways: [
+        "A hearing test can cost from nothing to a few hundred dollars, as a broad estimate as of October 2026.",
+        "A screening and a full diagnostic exam are different services.",
+        "A full test usually takes 30 to 60 minutes and gives you a baseline.",
+        "Original Medicare covers a diagnostic exam only when a doctor orders it. Many Medicare Advantage plans include an exam.",
+        "Ask what the test fee includes, and whether it is credited toward hearing aids."
+      ],
+      patientQuestion: "How much does a hearing test cost, and will insurance pay?",
+      storyLead: "A plain guide to hearing test cost in Westchester: screening versus full exam, what is included, and what insurance may cover.",
+      comparisonTable: {
+        afterHeading: "What a full hearing test includes",
+        caption: "Parts of a full hearing test and what each one shows",
+        headers: ["Part of the test", "What it shows"],
+        rows: [
+          ["Case history", "Your symptoms, noise exposure, medicines and health factors"],
+          ["Ear inspection", "Wax, blockage or signs of infection in the ear canal"],
+          ["Middle-ear test", "How well the eardrum and middle ear work"],
+          ["Tone test through earphones", "The softest sounds you hear in each ear"],
+          ["Tone test through a bone oscillator", "Whether the loss is in the outer, middle or inner ear"],
+          ["Speech testing", "How well you understand words, in quiet and sometimes in noise"]
+        ]
+      },
+      sources: [
+        { label: "Medicare.gov: Hearing and balance exams", href: "https://www.medicare.gov/coverage/hearing-and-balance-exams" },
+        { label: "American Academy of Audiology", href: "https://www.audiology.org/" },
+        { label: "NIDCD: Hearing and balance", href: "https://www.nidcd.nih.gov/health/hearing-ear-infections-deafness" }
+      ]
+    }
+  },
 ];
 
 export function buildNextBlogPosts(baseUrl: string, _siteName: string): SitePage[] {
