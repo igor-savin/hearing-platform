@@ -11,6 +11,7 @@ import {
   titleWithBrand
 } from "@/lib/siteBasics";
 import { buildNextBlogPosts } from "@/lib/blogNext";
+import { servicePageOverrides } from "@/lib/servicePageOverrides";
 import { buildSeedBlogPosts } from "@/lib/blogSeed";
 import { contentDateFor, contentDates } from "@/lib/contentDates";
 import { comparisonPages } from "@/lib/conversion";
@@ -1519,7 +1520,12 @@ const serviceAreaPages: SitePage[] = [
 ];
 
 const nextBlogPosts = buildNextBlogPosts(baseUrl, siteName);
-const seedBlogPosts = buildSeedBlogPosts(baseUrl, siteName);
+// A hand-written page in blogNext.ts replaces the template page the seed list
+// holds for the same path. Without this filter both would be published at one
+// URL and the sitemap would list it twice.
+const seedBlogPosts = buildSeedBlogPosts(baseUrl, siteName).filter(
+  (seedPost) => !nextBlogPosts.some((nextPost) => nextPost.path === seedPost.path)
+);
 
 const providerPages: SitePage[] = providerProfiles.map((provider): SitePage => ({
   path: providerPath(provider),
@@ -1575,7 +1581,10 @@ function withContentDates(page: SitePage): SitePage {
   };
 }
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...productGuides, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...pressPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((page) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...productGuides, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...pressPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((sourcePage) => {
+  const page: SitePage = servicePageOverrides[sourcePage.path]
+    ? { ...sourcePage, ...servicePageOverrides[sourcePage.path] }
+    : sourcePage;
   const withFaqs: SitePage = { ...withContentDates(page), faqs: [] };
   withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);

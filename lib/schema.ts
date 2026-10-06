@@ -37,6 +37,20 @@ function absoluteImageUrl(src: string) {
 // Every entry must be a profile OF this practice. Do not add press coverage,
 // articles, or individual clinicians' profiles — those are different entities
 // and weaken the signal.
+// Third-party records we assert are this practice. sameAs vouches for a record,
+// so a listing that carries the wrong name or the wrong address does not belong
+// here: including it tells Google to trust the bad data rather than to discount
+// it. Audited 2026-09-29. Six records were removed for that reason and should
+// come back only once the record itself is corrected:
+//   superpages.com/bp/harrison-ny/sensible-hearing-solutions-*   (not our name)
+//   yellowpages.com/harrison-ny/...-at-scarsdale-medical-group-* (not a location)
+//   verview.com/...-at-scarsdale-medical-group-harrison-new-york (not a location)
+//   find-open.com/white-plains/...-at-the-burke-rehabilitation-* (not a location)
+//   audiologists.cmac.ws/...-at-the-burke-rehabilitation-hospital (not a location)
+//   locations.starkey.com/ny/whiteplains/...                     (not a location)
+// Records still listed below that show a White Plains address are kept because
+// they at least carry the right business name; those are being corrected at the
+// source (NPPES, then the Thryv feed) rather than disowned.
 const entityCitations = [
   // Social
   "https://www.facebook.com/AAofW",
@@ -56,14 +70,10 @@ const entityCitations = [
 
   // General business directories
   "https://www.yellowpages.com/white-plains-ny/mip/audiology-associates-of-westchester-472805248",
-  "https://www.yellowpages.com/harrison-ny/mip/audiology-associates-of-westchester-at-scarsdale-medical-group-546541162",
   "https://www.superpages.com/bp/white-plains-ny/audiology-associates-of-westchester-L2251951863.htm",
-  "https://www.superpages.com/bp/harrison-ny/sensible-hearing-solutions-L2097124629.htm",
   "https://www.dexknows.com/business_profiles/audiology_associates_of_westchester-b901902168",
   "https://www.dexknows.com/business_profiles/audiology_associates_of_westchester-b2200053408",
   "https://www.whitepages.com/business/NY/Harrison/Audiology-Associates-Of-Westchester/b-1mnh6i4",
-  "https://find-open.com/white-plains/audiology-associates-of-westchester-at-the-burke-rehabilitation-hospital-2013362",
-  "https://verview.com/biz/9759121-audiology-associates-of-westchester-at-scarsdale-medical-group-harrison-new-york",
 
   // Maps
   "https://www.mapquest.com/us/new-york/audiology-associates-of-westchester-266045933",
@@ -71,8 +81,7 @@ const entityCitations = [
   "https://www.mapquest.com/us/new-york/audiology-associates-of-westchester-388226481",
 
   // Industry locators
-  "https://locations.starkey.com/ny/whiteplains/hearing-aids_white-plains_ny_704741.html",
-  "https://audiologists.cmac.ws/audiology-associates-of-westchester-at-the-burke-rehabilitation-hospital/6135/"
+  "https://www.signia.net/en-us/store-locator/shop-details/us/10528/harrison/audiology-associates-of-westchester/983a3cdc-2ff4-409b-bcc3-4797b04533ba"
 ];
 
 type Office = (typeof locations)[number];
