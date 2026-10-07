@@ -204,7 +204,7 @@ const nav: NavItem[] = [
       ["Insurance", "/resources/insurance/"],
       ["Hearing Aid Cost", "/hearing-aid-cost/"],
       ["Hearing Aid Buyer's Guide", "/hearing-plan/"],
-      ["Financing (CareCredit)", "/hearing-aid-financing/"],
+      ["Financing", "/hearing-aid-financing/"],
       ["HearingUp Approved Provider", "/resources/hearingup-approved-provider/"],
       ["Audiology Associates of Westchester", "/audiology-associates-of-westchester/"],
     ],
@@ -1010,6 +1010,8 @@ export function areaMetaTitle(path: string): string | null {
   if (!profile) return null;
   const serviceSlug = areaServiceSlugFromPath(path);
   const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  // A hand-written title for the main city page wins over the template.
+  if (!service && profile.metaTitle) return profile.metaTitle;
   const brand = " | California Hearing Center";
   const core = service ? `${service.label} in ${profile.name}` : `Audiologist in ${profile.name}`;
   return core.length + brand.length <= 62 ? core + brand : core;
@@ -1020,6 +1022,8 @@ export function areaMetaDescription(path: string): string | null {
   if (!profile) return null;
   const serviceSlug = areaServiceSlugFromPath(path);
   const service = serviceSlug ? AREA_SERVICE_INFO[serviceSlug] : null;
+  // A hand-written description for the main city page wins over the template.
+  if (!service && profile.metaDescription) return profile.metaDescription;
   const cta = " Call 650-342-9449.";
   const lead = service
     ? `${service.label} for ${profile.name} patients at California Hearing Center, audiologists in San Mateo & San Carlos.`

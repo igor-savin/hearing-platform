@@ -58,6 +58,11 @@ export type CityProfile = {
   onCaltrain?: boolean;
 
   consolidatedInto?: string | null;
+
+  // Optional hand-written title tag and meta description for the main city page
+  // (not the city x service pages). Use only when the templated ones underperform.
+  metaTitle?: string;
+  metaDescription?: string;
 };
 
 // Two office anchors, referenced in copy + schema.

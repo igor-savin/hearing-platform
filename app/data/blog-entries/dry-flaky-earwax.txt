@@ -1,0 +1,48 @@
+  "/dry-flaky-earwax/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Ear Health",
+    headline: "Dry, Flaky Earwax: What It Means",
+    metaTitle: "Dry, Flaky Earwax: What It Means and When to Worry",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Dry, flaky, gray or tan earwax is usually a normal wax type set by your genes. Learn what it means, what is not normal, and when to see someone.",
+    intro: [
+      "Dry, flaky earwax is usually normal. Earwax comes in two types, wet and dry, and your genes decide which one you have. Cleveland Clinic describes dry wax as flaky and usually gray or tan. It says dry wax is less common than the wet, sticky type, and that it is most common in people of East Asian descent. If you have flaky wax and no pain, no drainage and no hearing change, you probably have nothing to fix.",
+      "This page is about the wax itself. If you mean dry, flaky skin in the ear canal, that is a different problem. Read our page on [dry ears and flaky canals](/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/) instead.",
+    ],
+    takeaways: [
+      "Wet and dry earwax are two normal types. A single gene, ABCC11, decides which one you have.",
+      "Dry wax is flaky and usually gray or tan. Wet wax is soft, sticky, and yellow or brown.",
+      "Green, black, or brown wax with red streaks, a foul smell, pain, or drainage means have the ear looked at.",
+      "Do not dig flakes out with swabs, keys or hairpins. Ask a professional if wax blocks your hearing.",
+    ],
+    sections: [
+      ["Is dry, flaky earwax normal?", "Yes, it is a normal wax type. Cleveland Clinic says the wax in your ear is made by glands in the ear canal. It moisturizes the canal, traps dirt and germs, and has antimicrobial properties. The ear cleans itself, because old wax slowly falls out and new wax replaces it. Dry wax is flaky, so you may see small flakes on a headphone or a pillow. Flakes alone are not a sign of poor hygiene."],
+      ["Why some wax is dry: a gene decides", "A 2006 study in Nature Genetics found that a single DNA change in the ABCC11 gene decides whether earwax is wet or dry. People with two copies of the A version (called AA) have dry earwax. People with one or two copies of the G version (GA or GG) have wet wax. The study found the A version is most common in Chinese and Korean populations. Cleveland Clinic says the same: type depends on the ABCC11 gene, wet wax is more common among people of European and African descent, and dry wax is more common among people of East Asian descent. You cannot change your wax type with a product or a habit."],
+      ["Normal colors and smell", "Cleveland Clinic lists normal earwax colors as off-white, yellow, orange, light brown or dark brown. Lighter wax is usually newer, and darker wax often holds more debris. A mild smell, from sweet to slightly musky, is normal. Dry wax tends to look gray or tan and crumbly, and wet wax tends to look yellow or brown and sticky. Both are fine."],
+      ["Signs that are not just wax type", "Cleveland Clinic says to see a provider for these changes: green wax, which may mean an ear infection; black wax, which is often seen with a blockage; and brown wax with red streaks, which may mean an injury, and with runny discharge may mean a ruptured eardrum. It also says a foul smell, like cheese, fish or vinegar, calls for a visit. The American Academy of Otolaryngology-Head and Neck Surgery Foundation (AAO-HNSF) says ear pain, drainage or bleeding are not symptoms of wax blockage and need further evaluation. See someone if the ear hurts, drains, or bleeds, or if your hearing changes suddenly. The National Institute on Deafness and Other Communication Disorders (NIDCD) says to treat sudden hearing loss as a medical emergency."],
+      ["When dry wax builds up and blocks the ear", "Dry wax can sometimes build up and block the canal. AAO-HNSF lists reduced hearing, ear fullness, ringing, and changes in how your hearing aids work as signs of a blockage. Earbuds, hearing aids and earplugs can trap wax, according to Cleveland Clinic. Genetics and ear hair can also raise wax production, says Cleveland Clinic. If you notice these signs, do not dig. Our page on [how to deal with earwax](/how-to-deal-with-earwax/) explains the options, and we offer [earwax removal](/services/earwax-removal/) at both offices. If your ear is full and you also have ringing, see our page on whether [earwax can cause tinnitus](/tinnitus/earwax/)."],
+      ["What not to do", "AAO-HNSF says not to put cotton swabs, hairpins, keys, toothpicks or other objects in the ear. They can cut the canal, put a hole in the eardrum, or damage the hearing bones. It says not to over-clean, and not to use ear candles, because there is no evidence they remove wax. It also says not to irrigate or use wax-softening drops if you have had ear surgery or a hole in the eardrum unless your ear specialist says it is safe. Cleveland Clinic says to clean only the outer ear with a washcloth. Flaky wax at the opening of the ear can be wiped away gently with a cloth. Leave the canal alone."],
+      ["When to have it checked", "Make an appointment if your hearing feels muffled, if the ear feels full or blocked, if you have ringing, if you wear hearing aids and they act up, or if you cannot tell whether it is wax or something else. AAO-HNSF notes that ear infections and sudden inner ear hearing loss can feel like a wax blockage. A hearing professional can look in the ear and tell you what is going on. Call 650-342-9449 to book at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cleveland Clinic: Earwax](https://my.clevelandclinic.org/health/body/24624-earwax), [AAO-HNSF: Dos and Don'ts of Earwax](https://www.entnet.org/wp-content/uploads/2021/04/earwax_dos-donts_current.pdf), [Yoshiura et al., Nature Genetics 2006 (PubMed)](https://pubmed.ncbi.nlm.nih.gov/16444273/) and [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness)."],
+    ],
+    bullets: ["Wet or dry is genetic", "ABCC11 gene", "Gray or tan flakes", "No swabs", "Green or black needs a look", "Muffled hearing needs a look"],
+    faqs: [
+      ["Why is my earwax dry and flaky?", "Most often it is because of your genes. A single DNA change in the ABCC11 gene decides whether wax is wet or dry. Dry wax is flaky and usually gray or tan, and it is common in people of East Asian descent."],
+      ["Is flaky earwax a sign of a skin condition?", "Not usually. Flaky wax and flaky skin in the canal are different things. If your ear itches or the skin looks red and scaly, see our page on dry ears and flaky canals, and ask a clinician."],
+      ["Should I clean dry earwax out of my ears?", "Not inside the canal. Ears clean themselves. Wipe the outer ear with a washcloth, and leave the canal alone. If wax blocks your hearing, have it removed by a professional."],
+      ["What color earwax is a problem?", "Cleveland Clinic says to see a provider for green wax, black wax, or brown wax with red streaks, and for a foul smell."],
+      ["Can dry earwax cause hearing loss?", "It can if it builds up and blocks the canal. Signs include muffled hearing, a full feeling and ringing. A professional can remove it safely."],
+    ],
+    image: "/assets/blog/dry-flaky-earwax-1.svg",
+    imageLabel: "Dry, flaky earwax: a normal wax type",
+    imageAlt: "Dry, flaky earwax explained with a DNA icon on a teal card",
+    image2: "/assets/blog/dry-flaky-earwax-2.svg",
+    image2Label: "Five things to know about dry, flaky earwax",
+    image2Alt: "Five things to know about dry, flaky earwax and when to see someone",
+    image2Caption: "Wet or dry earwax is set by the ABCC11 gene. Pain, drainage or sudden hearing change needs a visit.",
+  },

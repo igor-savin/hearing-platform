@@ -530,33 +530,38 @@ export const blogPosts: Record<string, PageContent> = {
 
   "/can-audiologists-opt-out-of-medicare/": {
     kicker: "Medicare & Hearing Care",
-    headline: "Audiologists and Medicare: What to Know",
-    metaTitle: "Audiologists and Medicare: What to Know",
+    headline: "Does Medicare Cover Audiologist Visits and Hearing Tests?",
+    metaTitle: "Does Medicare Cover Audiology? Tests and Visits Explained",
     variant: "condition",
     datePublished: "2025-11-20",
-    dateModified: "2026-07-23",
+    dateModified: "2026-10-07",
     metaDescription:
-      "Medicare Part B covers medically necessary hearing and balance tests but not hearing aids. Here is what audiologists and Medicare mean for your hearing care.",
+      "Medicare Part B covers diagnostic hearing and balance exams, and audiologist visits once a year without an order. Hearing aids are not covered.",
     intro: [
-      "Medicare and hearing care overlap less than most patients expect. Original Medicare pays for certain diagnostic testing, but it leaves much of routine hearing care, including hearing aids, to you or to other coverage. Knowing where that line sits saves you a surprise at the front desk, and our page on [insurance and coverage](/resources/insurance/) is a good place to get the short version for your own plan.",
+      "Yes, in part. Original Medicare Part B covers diagnostic hearing and balance exams when a doctor or other health care provider orders them to find out whether you need medical treatment. An audiologist can also see you without an order once every 12 months, but only for non-acute hearing conditions, such as gradual hearing loss over many years, or for diagnostic care tied to surgically implanted hearing devices. Medicare does not cover hearing aids or the exams to fit them. After you meet the Part B deductible, you pay 20 percent of the Medicare-approved amount. This is how Medicare.gov describes it as of October 2026. Our page on [insurance and coverage](/resources/insurance/) gives the short version for your own plan.",
       "People often ask whether an audiologist can opt out of Medicare, the way some physicians do. The honest answer is that the rules governing how audiologists enroll, accept assignment, and bill Medicare are specific, federal, and revised from time to time. What matters for your appointment is simpler: what a given office bills, and what your plan will actually pay.",
       "At our San Mateo and San Carlos offices, we are glad to walk through this before you come in, so the cost side holds no surprises. A [hearing evaluation](/hearing-testing/) is the usual starting point, and we can tell you in plain terms how it is likely to be covered.",
     ],
     takeaways: [
-      "Medicare Part B covers diagnostic hearing and balance testing when it is medically necessary.",
+      "Part B covers diagnostic hearing and balance exams when a provider orders them. You pay 20 percent of the Medicare-approved amount after the deductible.",
+      "An audiologist can see you without an order once every 12 months, for non-acute hearing conditions only.",
       "Original Medicare generally does not pay for hearing aids or routine fitting exams.",
       "Coverage rules and plans change, so verify your current benefits before your visit.",
     ],
     sections: [
-      ["What Medicare Part B typically covers", "Original Medicare (Part B) generally pays for diagnostic hearing and balance exams when a qualified provider orders them to guide medical care, such as sorting out dizziness, a sudden change, or a suspected medical cause. In those cases the testing counts as a medical service, and your usual Part B costs apply. The deciding phrase is medically necessary: the exam has to inform a diagnosis or a treatment decision, not simply check whether you might benefit from a device."],
+      ["What Medicare Part B typically covers", "Medicare.gov says Part B covers diagnostic hearing and balance (fall risk) exams when a doctor or other health care provider orders them to find out whether you need medical treatment. That could be a check for dizziness, a sudden change in hearing, or a suspected medical cause. After you meet the Part B deductible, you pay 20 percent of the Medicare-approved amount. In a hospital outpatient setting you also pay the hospital a copayment. Your actual cost depends on other insurance you have, what the provider charges, whether the provider accepts assignment, and where you get the service. Medicare.gov also says a provider may recommend services Medicare does not cover, so ask why and what Medicare will pay."],
       ["Where hearing aids fall outside the benefit", "This is the part that catches people off guard. Original Medicare does not pay for hearing aids, and it usually will not cover the routine exam done to fit them. That gap is written into the program, not decided office by office. Some Medicare Advantage (Part C) plans add a hearing benefit that helps toward [hearing aids](/products/hearing-aids/) or a fitting, though the dollar amount and the approved devices vary widely from plan to plan. If a hearing benefit matters to you, read the specific plan documents rather than assume."],
-      ["Direct access to an audiologist", "One change worth knowing: Medicare now lets beneficiaries see an audiologist directly for certain non-acute diagnostic testing without a separate physician order, generally once in a twelve-month period. It is a narrower allowance than it first sounds, and it applies to covered diagnostic services rather than to hearing-aid-related visits. Because these details get adjusted over time, treat this as the shape of the rule rather than the fine print, and confirm what applies on the day of your visit."],
+      ["Seeing an audiologist without a doctor's order", "Medicare.gov says an audiologist can perform these exams without an order once every 12 months, but only for non-acute hearing conditions, such as gradual hearing loss over many years, or for diagnostic services related to hearing loss treated with surgically implanted hearing devices. The Centers for Medicare & Medicaid Services (CMS) explains the rule in a 2023 change request, effective July 1, 2023. CMS says it excludes balance (disequilibrium) services and hearing aid services, including exams to prescribe, fit or change hearing aids, and that the patient must come directly to the audiologist. CMS limits it to one direct-access visit per patient every 12 months. If you need a balance exam, a hearing aid fitting, or help with a sudden change, expect to need an order from a doctor or other provider."],
       ["The participation and opt-out question", "Audiologists enroll with Medicare and decide whether to accept assignment, which affects how claims are billed and what you may owe. The formal opt-out-and-privately-contract pathway that some physicians use is governed by federal rules that do not apply the same way to every provider type, and those rules can shift. Rather than lean on a blanket statement, the reliable move is to ask any office directly how they bill Medicare, then check that against your own plan."],
+      ["Finding a Medicare audiologist near you", "Medicare.gov has a find-a-provider tool that searches by ZIP code for providers who accept Medicare. Not every office bills Medicare the same way, so ask any office how it bills and what you would owe before you book. At California Hearing Center in San Mateo and San Carlos, call 650-342-9449. Our biller can check any plan's benefits for you. This page does not say we accept any particular plan."],
       ["How to confirm your own coverage", "A few minutes of checking beats a billing surprise. Call the number on your Medicare or Advantage card and ask specifically about diagnostic hearing testing, any physician-order requirement, and hearing-aid benefits. Then ask the audiology office the same questions so the two answers line up. Our staff is happy to help you sort this out, and you can review the basics on our [insurance](/resources/insurance/) page or reach us through the [contact page](/contact/). For older patients weighing devices, our overview of [hearing aids for seniors](/hearing-aids-for-seniors/) covers what Medicare typically leaves to you."],
+      ["Sources and last update", "Last updated October 7, 2026. Medicare rules and costs change, so confirm with Medicare or your plan. Sources: [Medicare.gov: Hearing and balance exams](https://www.medicare.gov/coverage/hearing-balance-exams), [Medicare.gov: Hearing aids](https://www.medicare.gov/coverage/hearing-aids) and [CMS: Audiologists may provide certain diagnostic tests without a physician order (MM13055)](https://www.cms.gov/files/document/mm13055-audiologists-may-provide-certain-diagnostic-tests-without-physician-order.pdf)."],
     ],
     bullets: ["Medicare Part B", "Diagnostic testing", "Hearing aids not covered", "Advantage plans vary", "Direct access rule", "Verify your plan"],
     faqs: [
-      ["Does Medicare cover hearing tests?", "Original Medicare covers diagnostic hearing and balance testing when it is ordered to guide medical care and considered medically necessary. Routine testing tied to buying a hearing aid is treated differently and often is not covered. Because plans and rules shift, confirm the specifics for your coverage before scheduling."],
+      ["Does Medicare cover audiology?", "Partly. Part B covers diagnostic hearing and balance exams when a provider orders them. An audiologist can also see you without an order once every 12 months for non-acute hearing conditions. Hearing aids and the exams to fit them are not covered by Original Medicare, according to Medicare.gov. Some Medicare Advantage plans add hearing benefits, so ask your plan."],
+      ["Does Medicare cover hearing tests?", "Original Medicare covers diagnostic hearing and balance tests when a provider orders them to guide medical care. You pay 20 percent of the Medicare-approved amount after the Part B deductible. A routine test tied to buying a hearing aid is not covered. Confirm the details for your coverage before you schedule."],
+      ["Do I need a referral to see an audiologist on Medicare?", "Not always. Medicare.gov says an audiologist can perform diagnostic exams without an order once every 12 months for non-acute hearing conditions. For balance exams, hearing aid exams, or anything acute, expect to need an order."],
       ["Will Medicare pay for my hearing aids?", "Original Medicare does not pay for hearing aids or the routine exam to fit them. Some Medicare Advantage plans include a hearing benefit that helps toward the cost, but the amount and the eligible devices depend on the plan. Reading your plan's hearing benefit closely is the surest way to know what you have."],
       ["How do I find out what my plan covers?", "Start with the phone number on your insurance card and ask about diagnostic testing and hearing-aid benefits in plain terms. Then bring those answers to the audiology office so everyone is working from the same information. Our [team](/about-us/) is glad to help you check before your visit rather than after."],
     ],
@@ -968,6 +973,72 @@ export const blogPosts: Record<string, PageContent> = {
     image2Caption: "Shared anatomy, shared risks, and a few medications tie the two together, so a baseline hearing test is a smart move.",
   },
 
+  "/costco-hearing-test/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    kicker: "Hearing Tests",
+    headline: "Costco Hearing Test: Cost, Appointments and What It Includes",
+    metaTitle: "Costco Hearing Test: Cost, Appointment and What's Included",
+    variant: "guide",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Costco says its hearing test is free for members 18 and older and takes about an hour. See how to book it and how an audiology exam differs.",
+    intro: [
+      "Yes, Costco does hearing tests. Costco's own pages say the test is free, and they describe it as a service for members who are 18 or older. The test takes about an hour in a private sound booth. To book, you contact your local Costco Hearing Aid Center. Costco's pages do not say whether the center takes walk-ins, so call first. We read Costco's pages on October 7, 2026, and the details can change.",
+      "A Costco test and a full audiology evaluation are not the same visit. Costco describes its test as a way to learn whether hearing aids may help you. An audiologist's evaluation sets out to find the type of loss, how severe it is, what may have caused it, and what your options are. Both can be useful. This page explains what each one does so you can pick the right starting point.",
+      "We are an audiology practice with offices in San Mateo and San Carlos. We are not connected to Costco. We kept this page fair and stuck to what Costco says on its own pages.",
+    ],
+    takeaways: [
+      "Costco says its hearing test is free. Its pages describe the test as being for members 18 and older.",
+      "Costco's pages say to contact a Hearing Aid Center to schedule. They do not say whether walk-ins are accepted.",
+      "The test takes about an hour in a private sound booth, and Costco's non-commissioned hearing aid staff do the testing.",
+      "Costco says the test shows whether hearing aids may help. A full audiology evaluation also looks for the type and cause of the loss.",
+    ],
+    sections: [
+      ["Does Costco do hearing tests, and is the test free?", "Yes. Costco's Hearing Aid Center page lists a free hearing test. A footnote on that page says the test is for members 18 or older and that it determines whether hearing aids may help. Costco's pages do not tell you what happens if you are not a member, so ask the center before you drive there. Costco also lists free service appointments for hearing aids that you buy from its Hearing Aid Center. A free test is a real benefit. It costs you an hour and no money, and it gives you a first picture of your hearing."],
+      ["Do you need an appointment for a hearing test at Costco?", "Costco's hearing aid FAQ says to contact a Costco Hearing Aid Center near you to schedule a hearing test appointment. Costco's pages say you can book by calling. They do not mention walk-ins, so we cannot say whether a center will test you without a booking. A phone call answers that in a minute. Costco also asks you to print and fill in a patient intake form before you go. If you have no printer, its page says to arrive early and fill it in at the warehouse. The form is available in English and Spanish."],
+      ["What happens during the test", "Costco says the test takes about an hour and takes place in a private sound booth. Costco says its non-commissioned hearing aid staff handle testing, fitting and follow-up visits. Its pages do not say what license or degree those staff members hold, so ask who will test you if that matters to you. Costco's pages also do not list every test in the visit. We cannot tell from them whether the visit includes a look in the ear, a middle-ear test, or speech testing in background noise. Ask the center what is included before you book."],
+      ["What a full audiology evaluation adds", "A diagnostic evaluation by an audiologist is a complete hearing test. The American Speech-Language-Hearing Association (ASHA) says it can tell you the type of hearing loss, how severe it is, what might have caused it, and what treatment options you have. At our offices it has several parts. We start with questions about your health, noise exposure, ringing, and dizziness. We look in your ear canals for wax. We test tones in a quiet booth. We test how well you understand speech, including in noise. We check how your eardrum moves with tympanometry, and we can measure inner-ear hair cell function with otoacoustic emissions. Then we go through your audiogram with you. Our page on [hearing testing](/hearing-testing/) has the full list, and our guide to [what to expect at a hearing test](/what-to-expect-at-a-hearing-test/) walks through the visit."],
+      ["Why the type of test matters", "Most hearing loss is gradual and affects both ears the same way. Some hearing loss is not. Sudden hearing loss, hearing that is much worse in one ear, ear pain or drainage, dizziness, and ringing in only one ear can point to a medical problem. The National Institute on Deafness and Other Communication Disorders (NIDCD) says sudden deafness should be treated as a medical emergency, and that earwax, allergies and sinus problems are common wrong guesses. If you have any of those signs, see a doctor or an audiologist first. Do not wait for a hearing aid appointment. Our guide to the [red flags for audiology referrals](/what-are-the-red-flags-for-audiology-referrals/) lists the signs in plain words."],
+      ["Costco test or audiology exam: how to choose", "Neither visit is wrong. A free test is a fair way to learn whether you have a measurable loss. If you have no warning signs and you are mainly curious, a Costco test can be a reasonable first step. Choose an audiology evaluation if you have any warning sign listed above, ringing or dizziness, a known medical history that touches the ears, or if you want the cause and not just the level. Choose it too if you want a second look at a result you did not understand. Whichever you pick, ask for a copy of your audiogram. It is your record. The next section sets the two visits side by side."],
+      ["If you buy hearing aids after any test", "The test is only the first step. What decides how well hearing aids work is the fitting, the verification and the follow-up care. We explain that in our post on [warehouse-club hearing aids](/what-is-the-best-hearing-aid-sold-at-costco/), which covers the models and the questions to ask before you buy anywhere. If you already own hearing aids from Costco or elsewhere, we can often clean, check and adjust them for a fee, depending on the model. Call us to ask about your device. Original Medicare does not pay for hearing aids or for exams to fit them, which is explained in our page on [Medicare and audiologists](/can-audiologists-opt-out-of-medicare/). Our biller can check any plan's benefits for you."],
+      ["Sources and last update", "Last updated October 7, 2026. Costco prices, rules and wording can change, so confirm with your local Hearing Aid Center. Sources: [Costco Hearing Aid Center](https://www.costco.com/f/-/hearing-aid-center), [Costco Hearing Aid Frequently-Asked Questions](https://www.costco.com/hearing-aid-faqs.html), [Costco General Information About Hearing Aid Centers](https://www.costco.com/hearing-aid-information.html), [ASHA: Hearing Testing](https://www.asha.org/public/hearing/hearing-testing/) and [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness)."],
+      ["Book a full hearing evaluation", "Want the complete picture? Call 650-342-9449 to book at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street. This page is general information and not medical advice."],
+    ],
+    comparisonTable: {
+      after: "Costco test or audiology exam: how to choose",
+      caption: "A Costco hearing test next to an audiology evaluation, as of October 7, 2026",
+      headers: ["", "Costco hearing test", "Audiology evaluation at our offices"],
+      rows: [
+        ["Cost", "Free, according to Costco, for members 18 and older", "Call us. Our biller can check your plan's benefits first"],
+        ["Booking", "Contact a Costco Hearing Aid Center. Walk-ins are not mentioned", "Call 650-342-9449 to book"],
+        ["Length", "About an hour in a private sound booth, according to Costco", "About an hour, with the results explained at the same visit"],
+        ["Who tests", "Non-commissioned hearing aid staff, according to Costco", "An audiologist"],
+        ["Stated goal", "To find out whether hearing aids may help", "To find the type, degree and likely cause of any loss, and your options"],
+        ["Tests listed", "Costco's pages do not list the full set of tests", "Case history, ear exam, tones, speech, tympanometry and otoacoustic emissions"],
+        ["Next step", "Hearing aid fitting and free follow-up if you buy there", "Monitoring, wax removal, a referral, or a hearing aid fitting. The choice is yours"],
+      ],
+      footnote: "Costco column: from Costco's own pages. Ask the center about anything the pages leave out.",
+    },
+    bullets: ["Free test, per Costco", "Call to book", "About an hour", "Members 18 and older", "Ask what is included", "Audiology exam adds cause"],
+    faqs: [
+      ["How much does a Costco hearing test cost?", "Costco's pages say the hearing test is free. They describe it as being for members who are 18 or older. Hearing aids are a separate purchase. Prices can change, so check with your local Hearing Aid Center."],
+      ["Do I need a Costco membership for the hearing test?", "Costco's Hearing Aid Center page says the free test is for members 18 or older. It does not explain what happens for non-members. Ask the center before you go."],
+      ["Do you need an appointment for a hearing test at Costco?", "Costco's FAQ tells you to contact a Hearing Aid Center to schedule a hearing test appointment. It does not mention walk-ins. Call the center to ask."],
+      ["How long does the Costco hearing test take?", "Costco says it takes about an hour and happens in a private sound booth."],
+      ["Is a Costco hearing test the same as an audiologist's exam?", "Not exactly. Costco says its test shows whether hearing aids may help. An audiology evaluation also looks for the type of loss and its likely cause, and it can lead to a medical referral. The two visits answer different questions."],
+      ["Should I get a hearing test before buying hearing aids anywhere?", "Yes. Any hearing aid should be set to your measured hearing. Ask for a copy of your audiogram wherever you are tested, and ask whether the fitting will be checked with real-ear measurement."],
+    ],
+    image: "/assets/blog/costco-hearing-test-1.svg",
+    imageLabel: "Costco hearing test: what it is and what it leaves out",
+    imageAlt: "Costco hearing test explained: a hearing aid icon on a teal card",
+    image2: "/assets/blog/costco-hearing-test-2.svg",
+    image2Label: "Five questions to ask before any hearing test",
+    image2Alt: "Five questions to ask before a Costco hearing test or any hearing test",
+    image2Caption: "Costco details are from its own pages as of October 7, 2026 and may change.",
+  },
+
   "/could-the-severity-of-tinnitus-originate-in-the-brain/": {
     kicker: "Tinnitus & Brain Health",
     headline: "Could the Severity of Tinnitus Originate in the Brain?",
@@ -1048,6 +1119,56 @@ export const blogPosts: Record<string, PageContent> = {
     image2: "/assets/blog/could-there-be-a-link-between-hearing-loss-and-dementia-2.svg",
     image2Label: "Mechanisms researchers are studying, and why evaluation helps regardless",
     image2Caption: "The link is real and worth taking seriously — and getting evaluated is low-risk either way.",
+  },
+
+  "/custom-earplugs/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    kicker: "Hearing Protection",
+    headline: "Custom Earplugs for Sleep, Swimming, Concerts and Work",
+    metaTitle: "Custom Earplugs: Sleep, Swimming, Concerts and Work",
+    variant: "guide",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "We make custom earplugs at our San Mateo and San Carlos offices. See how they are made and which type fits sleep, swimming, concerts or work.",
+    intro: [
+      "Custom earplugs are earplugs made from an impression of your own ear, so they fit your ear and not an average ear. We make them at California Hearing Center in San Mateo and San Carlos. The right type depends on what you need. Sleep calls for a plug that blocks sound and sits comfortably in the ear. Swimming calls for a plug made to keep water out. Concerts and many jobs call for a filtered plug that lowers the volume and still lets you hear speech and music. Call us to ask about your use.",
+      "This page helps you choose by activity. Our main page on [custom hearing protection](/services/hearing-protection/) covers how molds are made, noise ratings, and who benefits. Musicians, hunters and law enforcement have their own pages, linked below.",
+    ],
+    takeaways: [
+      "We make custom earplugs at both offices, from an impression of your ear canal and outer ear.",
+      "Pick by activity: solid for sleep or very loud machines, water-blocking for swimming, filtered for concerts and for work where you need to hear speech.",
+      "Sounds at 85 dBA or louder, heard for long enough, can damage hearing. Hearing cells do not regrow.",
+      "Ask us for details on your use. We do not list prices on this page.",
+    ],
+    sections: [
+      ["What makes an earplug custom", "A custom earplug is built from a soft impression of your ear canal and outer ear. A lab then makes a plug shaped to that exact ear. Because the shape is personal, the plug seals better, stays in place when you move, and stays comfortable for longer than a one-size foam plug. A plug you can stand to wear is a plug you will actually wear, and that is what protects your hearing. If you wear hearing aids, the process is close to how we make earpieces for them."],
+      ["Why protection matters", "The National Institute on Deafness and Other Communication Disorders (NIDCD) says long or repeated exposure to sounds at or above 85 dBA can cause hearing loss, and that the louder the sound, the less time it takes. Its examples include concerts and sporting events at about 94 to 110 dBA, motorcycles at about 80 to 110 dBA, and lawn and woodworking tools around the home. NIDCD says most noise-related hearing loss comes from the death of inner ear hair cells, and human hair cells do not regrow. Ringing after a loud night is a warning sign. The advice is to wear earplugs or other protectors during loud activities."],
+      ["Custom earplugs for sleep", "People sleep with earplugs to block a partner's snoring, traffic, or a noisy building. Solid plugs, which block as much sound as possible, suit this use. A custom plug matters here because a plug that presses on your ear when you lie on your side will not last the night. Tell us which side you sleep on. One caution: ear devices worn for many hours can trap wax, and wax can plug the ear. If your ears feel blocked, see our page on [earwax removal](/services/earwax-removal/). Do not push anything into the ear canal to clear it."],
+      ["Custom earplugs for swimming", "Swim plugs are made to keep water out of the ear canal. Some people need this because water in the ear brings on discomfort or infection, and some simply find water in the ear annoying. If you have ear tubes, a hole in the eardrum, or a history of ear infections, tell us at the visit. Ask your own physician what water protection you need. We can discuss how the plug is built for water use at your appointment, and we do not promise results for deep diving or competition without checking your use first."],
+      ["Custom earplugs for concerts and music", "At a concert you want the sound lower, not gone. Foam plugs often dull the sound so much that people pull them out. A filtered custom plug lowers the volume more evenly, so speech and music stay clear at a safer level. This is the plug most concertgoers want. If you play or work in music, see our page on [musician's earplugs and in-ear monitors](/services/hearing-protection/musicians/), which is built for players. Never turn the volume up to make up for a plug, and give your ears a quiet break after a loud night."],
+      ["Custom earplugs for work", "People who work around power tools, machinery, dental drills, kitchens, airports or loud crowds often need protection for years. A plug that is too tight on the sound can keep you from hearing a coworker or a warning. A filtered plug can lower the level and still let speech through. A solid plug is better for the loudest machinery. The U.S. National Institute for Occupational Safety and Health (NIOSH) says noise at 85 dBA or higher is considered hazardous, and that occupational hearing loss is permanent but nearly always preventable. We help match the plug to your noise and to what you need to hear. For shooting and hunting, see [electronic hearing protection for hunting](/services/hearing-protection/hunting/). For police and security work, see [hearing protection for law enforcement](/services/hearing-protection/law-enforcement/)."],
+      ["If you are sensitive to sound", "Plugs are for loud places, not for everyday life. Cleveland Clinic warns that using earplugs or headphones to block out sound can make hyperacusis worse, because sounds may feel more intense when you take them out. If everyday sounds already feel too loud or painful, talk to us before you buy plugs. Our page on [coping with hyperacusis](/hyperacusis/coping/) explains how to use protection without adding to the problem."],
+      ["What to expect at your visit", "We take a soft impression of each ear. The impression goes to a lab, and the lab builds the plugs. Ask us what happens when the plugs come back from the lab. If your weight or your ear shape changes, the fit can change over time, and we can check the seal and remake the plugs if needed. Ask us how long the process takes and what options fit your use. We make custom earplugs at both our San Mateo office, 88 N. San Mateo Drive, and our San Carlos office, 1008 Laurel Street. We also see patients who need a hearing test before they choose protection. See our [hearing testing](/hearing-testing/) page."],
+      ["Sources and last update", "Last updated October 7, 2026. Sources: [NIDCD: Noise-Induced Hearing Loss](https://www.nidcd.nih.gov/health/noise-induced-hearing-loss), [CDC/NIOSH: Noise and Hearing Loss Prevention](https://www.cdc.gov/niosh/noise/about/index.html) and [Cleveland Clinic: Hyperacusis](https://my.clevelandclinic.org/health/diseases/24320-hyperacusis). The description of how our custom plugs are made and used comes from our own practice."],
+    ],
+    bullets: ["Made from an ear impression", "San Mateo & San Carlos", "Sleep plugs", "Swim plugs", "Filtered for concerts", "Work and noisy jobs"],
+    faqs: [
+      ["Do you make custom earplugs?", "Yes. We make custom earplugs at our San Mateo and San Carlos offices. Call 650-342-9449 to ask about your use."],
+      ["How much do custom earplugs cost?", "Call us and we will go over the options for your use. We do not list prices on this page."],
+      ["Are custom earplugs better than foam?", "Custom plugs are shaped to your ear, so they seal and stay comfortable more reliably. They can also use filters that keep speech and music clearer. Foam plugs are fine for short, occasional use if they fit you."],
+      ["Can I sleep in custom earplugs?", "Many people do. Solid plugs suit sleep. If you wear them every night, watch for ear blockage from wax and for any pain or discharge, and have the ear checked if you notice either."],
+      ["Do custom earplugs work for swimming?", "Swim plugs are made to keep water out of the ear canal. Tell us if you have ear tubes, a hole in the eardrum or frequent ear infections, and ask your physician what protection you need."],
+      ["Where can I get custom earplugs near me?", "You can get them at California Hearing Center in San Mateo at 88 N. San Mateo Drive or in San Carlos at 1008 Laurel Street."],
+    ],
+    image: "/assets/blog/custom-earplugs-1.svg",
+    imageLabel: "Custom earplugs made from an impression of your ear",
+    imageAlt: "Custom earplugs for sleep, swimming, concerts and work: an earbud icon on a gold card",
+    image2: "/assets/blog/custom-earplugs-2.svg",
+    image2Label: "Which custom earplug fits which activity",
+    image2Alt: "Which custom earplugs fit sleep, swimming, concerts, work and sensitive ears",
+    image2Caption: "Ask us about your use. We do not list prices on this page.",
   },
 
   "/debunking-the-myths-of-hearing-loss/": {
@@ -1176,6 +1297,57 @@ export const blogPosts: Record<string, PageContent> = {
     image2: "/assets/blog/different-ways-to-test-for-hearing-loss-2.svg",
     image2Label: "What each part of a full hearing evaluation measures",
     image2Caption: "No single test tells the whole story — together they show where hearing changes and what helps.",
+  },
+
+  "/dizziness-and-eye-twitching/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Balance & Dizziness",
+    headline: "Dizziness and Eye Twitching: Causes and When to Get Checked",
+    metaTitle: "Dizziness and Eye Twitching: Causes and When to Get Checked",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Dizziness with eye twitching is often two common problems at once. Learn the inner-ear causes, what the twitch may be, and which signs mean call 911.",
+    intro: [
+      "Dizziness and eye twitching together are often two common problems that happen at the same time. An eyelid twitch is usually harmless. Cleveland Clinic says the most common kinds go away on their own. Dizziness has many causes, and the inner ear is a frequent one. Sometimes the \"twitch\" is not the eyelid. It can be the eyes themselves moving in a way you cannot control, called nystagmus, and that points to the inner ear or the brain. Sudden dizziness with trouble seeing, speaking or walking is an emergency. Call 911.",
+      "This page helps you sort out what you feel. It covers the common inner-ear causes, what an eyelid twitch usually means, and the signs that say get help now. It cannot tell you what is wrong with you. Only an exam can do that.",
+    ],
+    takeaways: [
+      "Call 911 if dizziness comes on suddenly with trouble seeing, speaking or walking, weakness or numbness, or a severe headache with no known cause.",
+      "An eyelid twitch alone is common and usually goes away on its own. Stress, poor sleep, caffeine and eye strain are common triggers.",
+      "Eyes that move on their own (nystagmus) with dizziness can be a sign of an inner-ear or brain problem and need a medical check.",
+      "Inner-ear problems such as BPPV are a common cause of dizziness. A hearing evaluation can show whether the ear is involved.",
+    ],
+    sections: [
+      ["Get emergency help first: the signs that mean call 911", "The Centers for Disease Control and Prevention (CDC) lists stroke warning signs that include abrupt dizziness, loss of balance or trouble walking, abrupt trouble seeing, sudden numbness or weakness in the face, arm or leg, confusion or trouble speaking, and a severe headache with no known cause. The CDC says to call 9-1-1 right away if you or someone else has any of these. It also says not to drive yourself. The Mayo Clinic adds that dizziness or vertigo with a new or severe headache, fever, double vision, hearing loss, trouble talking, weakness in an arm or leg, passing out, falling, or numbness or tingling needs a health professional right away. If you are unsure, treat it as urgent. Do not wait to see if it passes."],
+      ["Two symptoms or one? Eyelid twitch versus eyes that move", "People use \"eye twitching\" for two different things. The first is a small flutter in the eyelid, called myokymia. The second is nystagmus, which is rapid, repeated, uncontrolled movement of the eyeball itself. Cleveland Clinic says nystagmus can come from the brain, the inner ear balance system, or the eyes. If the movement is in the lid and the room is not moving, it is probably the first kind. If the world seems to shake or jump, or your vision blurs when you move your head, it may be the second. Say which one you have when you talk to a clinician. It changes what they look for."],
+      ["What causes an eyelid twitch", "Cleveland Clinic lists the most common causes of eyelid twitching as stress or anxiety, poor sleep, caffeine or nicotine, medication side effects, sudden bright light, eye strain, and fatigue. A mix of triggers is common. Most kinds are harmless and go away on their own. Less often, a twitch comes from a nerve or brain condition. Cleveland Clinic says to see a provider if the twitching is constant or repeated, if it affects your vision, if it worries you, or if it started after a new medicine. It says to see someone right away for any change in vision. Notice that stress, bad sleep and caffeine can also make you feel off balance. That is one reason the two symptoms can show up together without a shared disease."],
+      ["Inner-ear causes of dizziness", "The inner ear holds your balance organs. Benign paroxysmal positional vertigo (BPPV) is a common cause. The National Institute on Deafness and Other Communication Disorders (NIDCD) describes it as a brief, intense spell of vertigo set off by a head position change, such as bending down, tilting the head back or rolling over in bed. It happens when tiny calcium grains move into one of the inner ear canals. The Mayo Clinic says the spells usually last less than a minute. Other inner-ear causes include vestibular neuritis and labyrinthitis, which are often linked to viral infections, and Meniere's disease. Vestibular migraine can also cause dizziness, with or without a headache. Our pages on [what vertigo is](/what-is-vertigo-and-what-can-i-do-about-it/) and on [vertigo, balance disorders and dizziness](/vertigo-balance-disorders-and-dizziness/) explain each one."],
+      ["When the eyes move because of the ear", "The inner ear and the eyes are linked by a reflex that keeps your vision steady when your head moves. When the inner ear sends a wrong signal, the eyes can move when you do not want them to. The Mayo Clinic says nystagmus is atypical rhythmic eye movement that most often occurs with BPPV. Cleveland Clinic also lists nystagmus as a symptom of vestibular neuritis and labyrinthitis, and it lists dizziness, shaky or blurry vision and a feeling that surroundings are moving as nystagmus symptoms. This is why a clinician may watch your eyes while you change head position. It is a clue, not a diagnosis. If your eyes move on their own and you also feel dizzy, get checked soon."],
+      ["Other things that can cause both", "Several everyday things can play a part in both symptoms. Cleveland Clinic names stress, anxiety, poor sleep, caffeine, fatigue and medicine side effects as causes of eyelid twitching. NIDCD names medicines, low blood pressure when you stand up quickly, and anxiety or panic as things that can go with dizziness. Cleveland Clinic lists some seizure medicines as a cause of nystagmus. If your symptoms began after you started or changed a medicine, tell the prescriber. Do not stop a medicine on your own. Keep a short log of when each symptom happens, how long it lasts, and what you were doing. Clinicians use that information."],
+      ["When to book a visit", "Book a visit if dizziness keeps coming back, lasts longer than a few minutes at a time, or limits what you do. Book one if your eyelid twitch is constant, lasts for weeks, or spreads to other parts of your face. Book one if you notice new ringing, a feeling of fullness in the ear, or any change in hearing along with the dizziness. NIDCD advises talking to a doctor if the room seems to spin, even briefly, if you feel unsteady, if you have lost your balance or fallen, or if you have blurred vision. Sudden hearing loss in one ear is a medical emergency, according to NIDCD, so do not wait."],
+      ["How we can help", "At our San Mateo and San Carlos offices we start with your story and a [hearing evaluation](/hearing-testing/). Hearing and balance share one inner ear, so hearing results can show whether the ear is part of the problem. We also look in the ear canal. If your symptoms point away from the ear, or if any warning sign is present, we tell you to see a physician. Our post on [balance and hearing health](/balance-and-hearing-health/) explains the link, and our page on [audiologists and balance problems](/can-an-audiologist-help-with-balance-problems/) explains what to expect. If your dizziness also brings tiredness, chills or sleepiness, read our page on [vertigo and sleepiness, chills and tiredness](/vertigo-sleepiness-chills-tiredness/)."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [CDC: Signs and Symptoms of Stroke](https://www.cdc.gov/stroke/signs-symptoms/index.html), [Mayo Clinic: Vertigo](https://www.mayoclinic.org/diseases-conditions/vertigo/symptoms-causes/syc-20370055), [NIDCD: Balance Disorders](https://www.nidcd.nih.gov/health/balance-disorders), [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness), [Cleveland Clinic: Eyelid Twitching](https://my.clevelandclinic.org/health/symptoms/17663-eyelid-twitching), [Cleveland Clinic: Nystagmus](https://my.clevelandclinic.org/health/diseases/22064-nystagmus) and [Cleveland Clinic: Vestibular Neuritis](https://my.clevelandclinic.org/health/diseases/15227-vestibular-neuritis)."],
+      ["Medical information notice", "This page is for general information and is not medical advice. It does not replace an exam. For hearing and dizziness checks, call 650-342-9449 to book at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+    ],
+    bullets: ["Call 911 for sudden signs", "Eyelid twitch is common", "Nystagmus needs a check", "BPPV is common", "Track your symptoms", "Hearing check first step"],
+    faqs: [
+      ["Can vertigo cause eye twitching?", "Vertigo can come with eye movements you do not control, called nystagmus. The Mayo Clinic says nystagmus most often occurs with BPPV. A small flutter in the eyelid is a different thing, and it is usually linked to stress, sleep, caffeine or eye strain."],
+      ["Why do I have dizzy spells and eye twitching at the same time?", "They can be two separate common problems, or they can share a trigger such as stress, poor sleep, caffeine or a medicine. Sometimes the eye movement is part of an inner-ear problem. A clinician can sort out which it is."],
+      ["Is eye twitching with dizziness a sign of a stroke?", "It can be, if it comes on suddenly with trouble seeing, speaking or walking, weakness or numbness, or a severe headache. The CDC says to call 9-1-1 right away for any of these. Most eyelid twitching is not a stroke sign, but do not guess if the other signs are present."],
+      ["How long should an eyelid twitch last before I worry?", "Cleveland Clinic says to see a provider if the twitching is constant or repeated, if it affects your vision, if it worries you, or if it began after a new medicine. A twitch that comes and goes over a day or two is common."],
+      ["Which doctor should I see for dizziness and eye twitching?", "For sudden or severe signs, go to emergency care. For dizziness that returns or comes with hearing changes or ringing, a hearing evaluation is a sensible start, and your physician can check the rest. An eye doctor can check twitching that affects your vision."],
+    ],
+    image: "/assets/blog/dizziness-and-eye-twitching-1.svg",
+    imageLabel: "Dizziness and eye twitching: when to get checked",
+    imageAlt: "Dizziness and eye twitching: an ear icon on a teal card",
+    image2: "/assets/blog/dizziness-and-eye-twitching-2.svg",
+    image2Label: "Five things to note about dizziness and eye twitching",
+    image2Alt: "Five things to track when you have dizziness and eye twitching",
+    image2Caption: "Sudden dizziness with trouble seeing, speaking or walking is an emergency. Call 911.",
   },
 
   "/do-audiologists-do-hearing-tests/": {
@@ -1546,6 +1718,55 @@ export const blogPosts: Record<string, PageContent> = {
     image2: "/assets/blog/drive-safely-adaptations.svg",
     image2Label: "Five habits our audiologists recommend for drivers with hearing loss",
     image2Caption: "A wider visual scan and well-fit hearing aids keep you confident on the road.",
+  },
+
+  "/dry-flaky-earwax/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Ear Health",
+    headline: "Dry, Flaky Earwax: What It Means",
+    metaTitle: "Dry, Flaky Earwax: What It Means and When to Worry",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Dry, flaky, gray or tan earwax is usually a normal wax type set by your genes. Learn what it means, what is not normal, and when to see someone.",
+    intro: [
+      "Dry, flaky earwax is usually normal. Earwax comes in two types, wet and dry, and your genes decide which one you have. Cleveland Clinic describes dry wax as flaky and usually gray or tan. It says dry wax is less common than the wet, sticky type, and that it is most common in people of East Asian descent. If you have flaky wax and no pain, no drainage and no hearing change, you probably have nothing to fix.",
+      "This page is about the wax itself. If you mean dry, flaky skin in the ear canal, that is a different problem. Read our page on [dry ears and flaky canals](/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/) instead.",
+    ],
+    takeaways: [
+      "Wet and dry earwax are two normal types. A single gene, ABCC11, decides which one you have.",
+      "Dry wax is flaky and usually gray or tan. Wet wax is soft, sticky, and yellow or brown.",
+      "Green, black, or brown wax with red streaks, a foul smell, pain, or drainage means have the ear looked at.",
+      "Do not dig flakes out with swabs, keys or hairpins. Ask a professional if wax blocks your hearing.",
+    ],
+    sections: [
+      ["Is dry, flaky earwax normal?", "Yes, it is a normal wax type. Cleveland Clinic says the wax in your ear is made by glands in the ear canal. It moisturizes the canal, traps dirt and germs, and has antimicrobial properties. The ear cleans itself, because old wax slowly falls out and new wax replaces it. Dry wax is flaky, so you may see small flakes on a headphone or a pillow. Flakes alone are not a sign of poor hygiene."],
+      ["Why some wax is dry: a gene decides", "A 2006 study in Nature Genetics found that a single DNA change in the ABCC11 gene decides whether earwax is wet or dry. People with two copies of the A version (called AA) have dry earwax. People with one or two copies of the G version (GA or GG) have wet wax. The study found the A version is most common in Chinese and Korean populations. Cleveland Clinic says the same: type depends on the ABCC11 gene, wet wax is more common among people of European and African descent, and dry wax is more common among people of East Asian descent. You cannot change your wax type with a product or a habit."],
+      ["Normal colors and smell", "Cleveland Clinic lists normal earwax colors as off-white, yellow, orange, light brown or dark brown. Lighter wax is usually newer, and darker wax often holds more debris. A mild smell, from sweet to slightly musky, is normal. Dry wax tends to look gray or tan and crumbly, and wet wax tends to look yellow or brown and sticky. Both are fine."],
+      ["Signs that are not just wax type", "Cleveland Clinic says to see a provider for these changes: green wax, which may mean an ear infection; black wax, which is often seen with a blockage; and brown wax with red streaks, which may mean an injury, and with runny discharge may mean a ruptured eardrum. It also says a foul smell, like cheese, fish or vinegar, calls for a visit. The American Academy of Otolaryngology-Head and Neck Surgery Foundation (AAO-HNSF) says ear pain, drainage or bleeding are not symptoms of wax blockage and need further evaluation. See someone if the ear hurts, drains, or bleeds, or if your hearing changes suddenly. The National Institute on Deafness and Other Communication Disorders (NIDCD) says to treat sudden hearing loss as a medical emergency."],
+      ["When dry wax builds up and blocks the ear", "Dry wax can sometimes build up and block the canal. AAO-HNSF lists reduced hearing, ear fullness, ringing, and changes in how your hearing aids work as signs of a blockage. Earbuds, hearing aids and earplugs can trap wax, according to Cleveland Clinic. Genetics and ear hair can also raise wax production, says Cleveland Clinic. If you notice these signs, do not dig. Our page on [how to deal with earwax](/how-to-deal-with-earwax/) explains the options, and we offer [earwax removal](/services/earwax-removal/) at both offices. If your ear is full and you also have ringing, see our page on whether [earwax can cause tinnitus](/tinnitus/earwax/)."],
+      ["What not to do", "AAO-HNSF says not to put cotton swabs, hairpins, keys, toothpicks or other objects in the ear. They can cut the canal, put a hole in the eardrum, or damage the hearing bones. It says not to over-clean, and not to use ear candles, because there is no evidence they remove wax. It also says not to irrigate or use wax-softening drops if you have had ear surgery or a hole in the eardrum unless your ear specialist says it is safe. Cleveland Clinic says to clean only the outer ear with a washcloth. Flaky wax at the opening of the ear can be wiped away gently with a cloth. Leave the canal alone."],
+      ["When to have it checked", "Make an appointment if your hearing feels muffled, if the ear feels full or blocked, if you have ringing, if you wear hearing aids and they act up, or if you cannot tell whether it is wax or something else. AAO-HNSF notes that ear infections and sudden inner ear hearing loss can feel like a wax blockage. A hearing professional can look in the ear and tell you what is going on. Call 650-342-9449 to book at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cleveland Clinic: Earwax](https://my.clevelandclinic.org/health/body/24624-earwax), [AAO-HNSF: Dos and Don'ts of Earwax](https://www.entnet.org/wp-content/uploads/2021/04/earwax_dos-donts_current.pdf), [Yoshiura et al., Nature Genetics 2006 (PubMed)](https://pubmed.ncbi.nlm.nih.gov/16444273/) and [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness)."],
+    ],
+    bullets: ["Wet or dry is genetic", "ABCC11 gene", "Gray or tan flakes", "No swabs", "Green or black needs a look", "Muffled hearing needs a look"],
+    faqs: [
+      ["Why is my earwax dry and flaky?", "Most often it is because of your genes. A single DNA change in the ABCC11 gene decides whether wax is wet or dry. Dry wax is flaky and usually gray or tan, and it is common in people of East Asian descent."],
+      ["Is flaky earwax a sign of a skin condition?", "Not usually. Flaky wax and flaky skin in the canal are different things. If your ear itches or the skin looks red and scaly, see our page on dry ears and flaky canals, and ask a clinician."],
+      ["Should I clean dry earwax out of my ears?", "Not inside the canal. Ears clean themselves. Wipe the outer ear with a washcloth, and leave the canal alone. If wax blocks your hearing, have it removed by a professional."],
+      ["What color earwax is a problem?", "Cleveland Clinic says to see a provider for green wax, black wax, or brown wax with red streaks, and for a foul smell."],
+      ["Can dry earwax cause hearing loss?", "It can if it builds up and blocks the canal. Signs include muffled hearing, a full feeling and ringing. A professional can remove it safely."],
+    ],
+    image: "/assets/blog/dry-flaky-earwax-1.svg",
+    imageLabel: "Dry, flaky earwax: a normal wax type",
+    imageAlt: "Dry, flaky earwax explained with a DNA icon on a teal card",
+    image2: "/assets/blog/dry-flaky-earwax-2.svg",
+    image2Label: "Five things to know about dry, flaky earwax",
+    image2Alt: "Five things to know about dry, flaky earwax and when to see someone",
+    image2Caption: "Wet or dry earwax is set by the ABCC11 gene. Pain, drainage or sudden hearing change needs a visit.",
   },
 
   "/ear-buds-may-lead-to-hearing-loss-but-it-can-be-avoided/": {
@@ -2092,18 +2313,21 @@ export const blogPosts: Record<string, PageContent> = {
   "/hearing-aids-for-seniors/": {
     kicker: "Choosing Hearing Aids",
     headline: "Hearing Aids for Seniors: A Practical Guide",
-    metaTitle: "Hearing Aids for Seniors: A Practical Guide",
+    metaTitle: "Hearing Aids for Seniors: Types, Features and Costs",
     variant: "product",
     datePublished: "2025-05-11",
-    dateModified: "2026-08-25",
+    dateModified: "2026-10-07",
     metaDescription:
-      "A plain guide to hearing aids for seniors: styles, rechargeable options, what a fitting involves, and how to choose a device that fits real daily life.",
+      "Hearing aids for seniors: behind-the-ear and in-the-ear styles, rechargeable batteries, Bluetooth, cost and coverage. A plain guide from our audiologists.",
     intro: [
+      "The best hearing aid for most seniors is one that is easy to handle and set to their own hearing test. For many people that is a behind-the-ear style with a rechargeable battery, because it is simple to put in and has larger controls. Others prefer a custom in-the-ear style that sits out of sight. Your hearing test, your hands and eyesight, and the places you most want to hear decide which one is right. As of October 2026, Original Medicare does not cover hearing aids, but Medi-Cal and some Medicare Advantage plans do. Our guides to [what hearing aids cost](/hearing-aid-cost/) and to [Medi-Cal coverage](/medi-cal-hearing-aids/) explain the price side.",
       "The hearing aid a parent wore twenty years ago and the one an audiologist fits today share a name and little else. The old model was often a beige lump that whistled and turned every sound up at once. A modern [hearing aid](/products/hearing-aids/) is smaller, adjusts itself to the room, and can lift a grandchild's voice out of the clatter of a restaurant. For an older adult weighing whether the effort is worth it, that gap is the whole story.",
       "What makes a device right for a senior is rarely the feature list. It comes down to fit with daily life: steady enough hands to manage a tiny battery, eyesight for the controls, the rooms and gatherings where hearing matters most, and how much high-frequency sound has already faded. A [hearing evaluation](/hearing-testing/) measures that last piece precisely, which is why a sensible choice starts there rather than in a catalog.",
       "Our audiologists in San Mateo and San Carlos fit hearing aids for older adults every week, and the pattern holds: the people who do best are not the ones who bought the priciest model, but the ones whose device suited their hands, their ears, and their routine. You can read how current patients describe that experience in our [reviews](/reviews/).",
     ],
     takeaways: [
+      "Most seniors do best with an easy-to-handle style fitted to their own hearing test. Behind-the-ear with a rechargeable battery suits many.",
+      "As of October 2026, Original Medicare does not cover hearing aids. Medi-Cal and some Medicare Advantage plans do.",
       "Modern devices are smaller, clearer, and far easier to handle than older models.",
       "The right style depends on dexterity, vision, lifestyle, and degree of loss — not price alone.",
       "A proper fitting and steady follow-up matter more than the brand on the box.",
@@ -3097,7 +3321,7 @@ export const blogPosts: Record<string, PageContent> = {
       ["Altitude, flying, and quick elevation changes", "Rapid changes in outside pressure are the classic trigger. Taking off and landing in a plane, driving down a mountain, or riding a fast elevator all shift the air pressure faster than a lazy tube can keep up with. The trapped pressure tugs on your eardrum until the tube finally equalizes. Swallowing, yawning, or chewing gum on the way up and down usually keeps things even. If you get congested before a flight, a decongestant taken ahead of time can help the tube stay open, though it is worth checking with your pharmacist first."],
       ["Colds, allergies, and stubborn congestion", "Anything that swells the lining of your nose and throat also swells the opening of the eustachian tube, and a partly closed tube equalizes poorly. That is why a cold, a sinus infection, or a flare of seasonal allergies so often leaves your ears feeling blocked, sometimes long after your nose has cleared. Treating the congestion at its source — saline rinses, allergy management, time — is what lets the tube drain and the fullness fade. The pressure is a downstream symptom, not the root problem."],
       ["When earwax is behind it", "Not all fullness starts in the eustachian tube. A plug of wax pressed against the eardrum produces its own version of the plugged, muffled feeling, and it will not respond to any pressure-clearing maneuver because the blockage is in the ear canal, not the middle ear. Cotton swabs tend to make this worse by tamping wax deeper. If the fullness comes with reduced hearing and no cold to explain it, a look in the canal will tell you quickly. Safe [earwax removal](/services/earwax-removal/) clears that kind of blockage in a single, comfortable visit."],
-      ["Gentle ways to equalize the pressure", "For tube-related pressure, start with the easy moves: swallow deliberately, take a wide yawn, or chew gum to work the muscles that open the tube. If those fall short, try a soft ear-clearing breath — pinch your nose, close your mouth, and blow so gently that you feel a mild pop, never a hard push. Warm compresses over the ear and steam from a shower can loosen congestion and make the tube more willing to open. Give each of these a little time; the tube often releases on its own once the swelling settles rather than the instant you try."],
+      ["Gentle ways to equalize the pressure", "For tube-related pressure, start with the easy moves: swallow deliberately, take a wide yawn, or chew gum to work the muscles that open the tube. If those fall short, try a soft ear-clearing breath — pinch your nose, close your mouth, and blow so gently that you feel a mild pop, never a hard push. Warm compresses over the ear and steam from a shower can loosen congestion and make the tube more willing to open. Give each of these a little time; the tube often releases on its own once the swelling settles rather than the instant you try. One more gentle technique has its own page: the [Toynbee maneuver](/toynbee-maneuver/), where you pinch your nose and swallow."],
       ["Habits that make it worse", "A few well-meant habits backfire. Blowing your nose hard, or forcing that ear-clearing breath aggressively, can drive pressure the wrong way and, in rare cases, injure the eardrum, so keep every attempt gentle. Forceful equalizing is where people get into trouble. Poking cotton swabs or other objects into the canal risks pushing wax down and scratching the skin. And leaning on decongestant nasal sprays for more than a few days can leave you more congested than you started. If gentle methods are not working, that is a reason to have someone look, not to push harder."],
       ["When to bring it to a professional", "Trust the pattern rather than a single bad day. Ear pressure that drags on past a week or two, keeps coming back, or arrives with real pain, fluid drainage, dizziness, or a noticeable drop in hearing has moved beyond a stubborn tube. A sudden change in hearing in particular is worth acting on quickly. Fullness that shows up alongside new ringing is also worth mentioning, and you can read more about that in our overview of [what tinnitus is](/tinnitus/what-is-tinnitus/). At our San Mateo and San Carlos offices we can look in the ear, check your hearing, and sort a simple wax or tube issue from something that needs more attention; [our team](/about-us/) is glad to take a look, and you can [reach us here](/contact/) to set up a visit."],
     ],
@@ -3372,6 +3596,56 @@ export const blogPosts: Record<string, PageContent> = {
     image2: "/assets/blog/invisible-cochlear-implant-med-el-tici-unico-2.svg",
     image2Label: "What sits outside the body, conventional versus fully implantable",
     image2Caption: "A conventional implant uses an external processor and coil. TICI UNICO places everything under the skin.",
+  },
+
+  "/is-hyperacusis-permanent/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Tinnitus & Sound Sensitivity",
+    headline: "Is Hyperacusis Permanent? Outlook and Recovery",
+    metaTitle: "Is Hyperacusis Permanent? Outlook and Recovery",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Is hyperacusis permanent? There is no cure, but many people improve. See what recovery looks like, why pain hyperacusis is slower, and when to get help.",
+    intro: [
+      "Hyperacusis is not always permanent, but it is not something that reliably goes away on its own either. Cleveland Clinic says there is no cure, but that symptoms may improve over time depending on the cause. For many people it is a long-term condition that they learn to manage with treatment. Cleveland Clinic cites research showing that sound therapy often increases sound tolerance within six months to a year. Recovery is slower and less predictable when sounds cause pain.",
+      "This page covers the outlook and what recovery can look like. It does not repeat how to cope day to day. For that, read our page on [coping with hyperacusis](/hyperacusis/coping/). For the basics, start with our [hyperacusis overview](/hyperacusis/).",
+    ],
+    takeaways: [
+      "There is no cure, but symptoms often improve. The outlook depends on the cause, and Cleveland Clinic says it varies from person to person.",
+      "Sound therapy often raises sound tolerance within six months to a year, according to research Cleveland Clinic cites.",
+      "Pain hyperacusis (sound that hurts) tends to improve slowly. An American Tinnitus Association article describes months and years, with setbacks after further noise injury.",
+      "Hyperacusis is not described as physically dangerous, but it can hurt mood, sleep and social life. Get help if everyday sounds feel unbearable.",
+    ],
+    sections: [
+      ["Is hyperacusis permanent?", "The honest answer is that it depends. Cleveland Clinic says there isn't a cure, but that depending on the cause, your symptoms may improve in time. Some causes can end. Cleveland Clinic says hyperacusis after surgery may resolve once you heal, that it may improve if a medication side effect is addressed, and that it may improve if Meniere's disease goes into remission. Other causes, such as long noise exposure, a sudden loud noise like a gunshot or fireworks, or damage to hearing structures, may leave the sensitivity in place for a long time. Even then, many people find that it becomes much easier to live with."],
+      ["What recovery can look like", "Recovery is usually gradual. It tends to come as a slow rise in the sound level you can comfortably handle, not as a sudden end to the problem. Cleveland Clinic says sound therapy involves gradual, safe exposure to louder sounds, starting at a comfortable low level, and that research suggests sound tolerance often rises within six months to a year. It also describes cognitive behavioral therapy (CBT), which helps with the negative feelings tied to loud sounds, and says research shows it improves loudness discomfort levels in adults. Ask your clinician what timeline fits your case. We cannot promise one."],
+      ["Pain hyperacusis: a slower road", "Cleveland Clinic describes pain hyperacusis as one type of hyperacusis, where extreme sound sensitivity makes the ears and head hurt, and it notes that experts disagree on whether the types are separate or lie on a spectrum. An American Tinnitus Association article on pain hyperacusis, written by a person living with it, says that there is no objective test, that improvement can be very slow over months and years, and that some people improve and then relapse after a setback from further noise injury. The same article says many providers are unfamiliar with pain hyperacusis, and that patients should seek an accurate diagnosis. Treatment advice is not settled. The article's author reports that a sound therapy approach left him worse. Cleveland Clinic supports gradual sound exposure. That mismatch is a reason to work with a clinician who knows the condition and to go slowly."],
+      ["Is hyperacusis dangerous?", "Cleveland Clinic does not describe hyperacusis as physically dangerous. It stresses the effects on mental health and social life, such as anxiety, depression and isolation. It notes that in intense cases, the loudness can cause balance problems or seizures. Do not let that scare you. It is a reason to seek care, not to avoid every sound. If everyday noises feel unbearably loud or painful, Cleveland Clinic advises seeing a healthcare provider and not trying to manage it alone."],
+      ["What can slow recovery", "Cleveland Clinic warns that using earplugs or headphones to block out sound can make things worse, because sounds may feel even more intense when you take them out. It also warns that avoiding social settings can lead to or worsen anxiety, depression and other problems. Cleveland Clinic also lists some medicines that harm the inner ear as a risk factor, so tell your prescriber if your sensitivity began after a new medicine. Protect your ears from truly loud noise, such as a gunshot, a siren or a loud show. Use protection on purpose, not all day. Our page on [custom earplugs](/custom-earplugs/) explains why we ask sound-sensitive patients to talk to us first."],
+      ["What a clinician can do", "A hearing evaluation looks for hearing loss and other ear causes that need different care. Cleveland Clinic lists sound therapy, CBT and tinnitus retraining therapy among the treatments, and surgery in the rare case of facial nerve paralysis. Our team starts with a [hearing evaluation](/hearing-testing/) and a plan that pairs education, counseling and gradual sound enrichment. If tinnitus is part of your picture, read our page on the [overlap between hyperacusis and tinnitus](/hyperacusis/tinnitus/). For red flags that need quick care, read [when to seek help for hyperacusis](/hyperacusis/when-to-seek-help/)."],
+      ["When to get help now", "Sudden hearing loss, severe vertigo, new weakness or numbness, or a sudden change after a head injury calls for urgent care. The National Institute on Deafness and Other Communication Disorders (NIDCD) says to treat sudden hearing loss as a medical emergency. Outside of emergencies, book a visit if sounds hurt, if you have started avoiding work, family or sleep because of noise, or if you feel your mood dropping."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cleveland Clinic: Hyperacusis](https://my.clevelandclinic.org/health/diseases/24320-hyperacusis), [American Tinnitus Association: When Sound Hurts, the Reality of Pain Hyperacusis](https://www.ata.org/when-sound-hurts/) and [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness). The American Tinnitus Association article is one patient's account and not a clinical study. We could not open the ASHA research articles on hyperacusis therapy in time to cite them."],
+      ["Medical information notice", "This page is for general information and is not medical advice. To book a hearing evaluation, call 650-342-9449 at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+    ],
+    bullets: ["No cure, often improves", "Sound therapy", "CBT", "Pain type is slower", "Avoid overusing plugs", "Get help early"],
+    faqs: [
+      ["Is hyperacusis permanent?", "It can be long term, but many people improve. Cleveland Clinic says there is no cure, but that depending on the cause, symptoms may improve in time. Some causes, such as a medicine side effect or recovery after surgery, can resolve."],
+      ["How long does it take to recover from hyperacusis?", "Cleveland Clinic cites research showing sound therapy often increases sound tolerance within six months to a year. Pain hyperacusis can take longer. Timelines vary and we cannot promise one."],
+      ["Is pain hyperacusis permanent?", "There is no clear answer. An American Tinnitus Association article describes improvement as very slow, over months and years, with relapses after noise setbacks. See a clinician who knows the condition."],
+      ["Is hyperacusis dangerous?", "Cleveland Clinic does not call it physically dangerous. It can hurt mood, sleep and social life, and in intense cases it notes balance problems or seizures. Get care if sounds feel unbearable."],
+      ["Should I wear earplugs all day for hyperacusis?", "No. Cleveland Clinic says blocking sound with earplugs or headphones can make things worse, because sounds may feel more intense after you remove them. Use protection for truly loud noise, and ask your clinician."],
+    ],
+    image: "/assets/blog/is-hyperacusis-permanent-1.svg",
+    imageLabel: "Is hyperacusis permanent? The outlook and what recovery looks like",
+    imageAlt: "Is hyperacusis permanent? A sound wave icon on a teal card",
+    image2: "/assets/blog/is-hyperacusis-permanent-2.svg",
+    image2Label: "Five things to know about the hyperacusis outlook",
+    image2Alt: "Five things to know about the outlook for hyperacusis and recovery",
+    image2Caption: "No cure, but symptoms often improve. Pain hyperacusis is slower.",
   },
 
   "/is-it-better-to-get-a-hearing-aid-from-an-audiologist/": {
@@ -3658,6 +3932,71 @@ export const blogPosts: Record<string, PageContent> = {
     image2Caption: "Ask in writing whether the devices are locked, and which manufacturer actually made them.",
   },
 
+  "/medi-cal-hearing-aids/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    kicker: "Insurance & Coverage",
+    headline: "Does Medi-Cal Cover Hearing Aids? Rules and Limits",
+    metaTitle: "Does Medi-Cal Cover Hearing Aids? Rules and Limits",
+    variant: "guide",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Yes, Medi-Cal covers hearing aids, up to a yearly limit for most adults. See what counts, who is exempt, and how to start. Checked October 2026.",
+    intro: [
+      "Yes. Medi-Cal covers hearing aids. The Department of Health Care Services (DHCS) says Medi-Cal pays up to $1,510 per person each fiscal year (July 1 to June 30) for hearing aid benefits, with some groups exempt. That limit has applied since July 1, 2012. Members under 21 who have full-scope Medi-Cal are not held to it. As of October 2026 this is what DHCS pages we read say, and the figures can change, so check with your plan before you buy.",
+      "This page covers Medi-Cal only. For Medicare, private plans and the whole California picture, read our page on [hearing aids and insurance in California](/hearing-aids-and-insurance-in-california-medicare-medi-cal-and-private-plans-explained/).",
+    ],
+    takeaways: [
+      "DHCS pages list a Medi-Cal hearing aid limit of $1,510 per person per fiscal year (July 1 to June 30). Confirm the current figure with your plan.",
+      "The limit does not apply to members under 21 with full-scope Medi-Cal, to pregnancy-related care, to bone-anchored devices, or to some replacements.",
+      "Hearing aids need prior authorization, a prescription from an ear, nose and throat doctor (or your doctor), and an audiology report.",
+      "Call us to ask about your plan. Our biller can check any plan's benefits for you.",
+    ],
+    sections: [
+      ["Does Medi-Cal pay for hearing aids?", "Yes, for members who qualify. The DHCS hearing aid benefit cap page says Medi-Cal pays up to $1,510 per person each fiscal year for hearing aid benefits. A new $1,510 is available each July 1. The same page says the cap can cover two analog hearing aids in one year, and that digital aids cost more, so two may not fit under the cap. DHCS says the cap can be exceeded for medical necessity with prior approval. A DHCS fact sheet for providers dated July 2024 says the same, and describes the approval as coming through your Medi-Cal managed care plan."],
+      ["What counts toward the yearly limit", "DHCS says these count toward the $1,510: the hearing aids themselves; ear molds, supplies and inserts; repairs and replacement parts; the first set of batteries; up to six visits with the same vendor for training, adjustments and fitting after you get the aids; and rental. Because the limit is yearly, timing matters. A repair or a replacement part in the same fiscal year as your purchase uses up the same amount. The fiscal year starts on July 1, so a purchase in June and a repair in July fall in different years."],
+      ["Who is exempt from the limit", "DHCS lists these exemptions: members under 21 who have full-scope Medi-Cal; pregnant members, when the service is part of pregnancy-related care or treats a condition that may cause pregnancy problems; people who use bone-anchored hearing aids (BAHA), which are treated as a prosthetic device; and replacements for aids that were lost, stolen or damaged beyond repair through events beyond the member's control. For damage, DHCS says you need a detailed description signed by your physician, an audiometric report if your old aids were more than three months old, and a police report if they were stolen. DHCS's own words for children's coverage: there is no annual limit for children under 21."],
+      ["Batteries and repairs", "DHCS says everyone gets one standard initial battery packet with new hearing aids. It says replacement batteries are paid only for members younger than 21. Repairs are paid when they fall within the yearly limit, but DHCS says Medi-Cal does not pay to check whether a hearing aid is working. The Medi-Cal audiology manual says repairs that cost more than $25 per service need prior authorization. A DHCS fact sheet from July 2024 says batteries are not covered, which differs from the benefit cap page. The pages do not agree, so ask your plan what applies to you."],
+      ["How to start: the steps Medi-Cal asks for", "The Medi-Cal audiology manual (page updated February 2025) says new hearing aids need a signed prescription, a signed medical history and physical exam by an otolaryngologist (an ear, nose and throat doctor), and a signed audiologic report and hearing aid evaluation. Hearing aids are covered when a hearing aid dispenser supplies them on the prescription of an otolaryngologist, or of the attending physician if no otolaryngologist is available in the community. The manual says purchases and trial rentals need prior authorization. If you are in a Medi-Cal managed care plan, DHCS says the plan handles that approval and the hearing aids come through the plan. Start with your plan's member line and ask who to see."],
+      ["Children and young adults under 21", "DHCS says members under 21 should be referred to California Children's Services (CCS) for hearing services, and that the Early and Periodic Screening, Diagnostic and Treatment (EPSDT) benefit covers all medically necessary services for Medi-Cal members under 21. For children who are not Medi-Cal eligible, DHCS runs the Hearing Aid Coverage for Children Program (HACCP). DHCS describes HACCP as covering ages 0 to 20, with household income above Medi-Cal limits but below 600 percent of the Federal Poverty Level, and with other health insurance that limits hearing aid coverage to $1,500 or less per year. Ask DHCS or your pediatrician for the current rules."],
+      ["Who can bill Medi-Cal for your hearing aids", "DHCS says providers must enroll with DHCS to bill Medi-Cal. If they serve managed care members, they must also contract with each plan in their area. The benefit cap page says a vendor that accepts Medi-Cal payment for a service may not bill you the difference. Whether a particular office is enrolled is a question for that office. We do not state on this page that California Hearing Center accepts Medi-Cal. Call us at 650-342-9449 and our biller will check your plan's benefits and tell you what applies. We offer patient financing for costs a plan does not cover."],
+      ["If you have Medicare too", "If you have both Medicare and Medi-Cal, DHCS says Medicare is the primary payer, and Medi-Cal may pay Medicare cost-sharing. Original Medicare does not cover hearing aids or the exams to fit them, according to Medicare.gov. Some Medicare Advantage plans add hearing benefits, so ask your plan. Our pages on [Medicare and audiologists](/can-audiologists-opt-out-of-medicare/) and on [Medicare open enrollment and hearing benefits](/medicare-open-enrollment-hearing-benefits/) explain the Medicare side."],
+      ["Sources and last update", "Last updated October 7, 2026. We read the DHCS pages in October 2026 and could not confirm the figures for the current fiscal year. Benefit amounts and rules can change. Sources: [DHCS: Hearing Aid Benefit Cap and Benefits FAQ](https://www.dhcs.ca.gov/services/Pages/HearingAidCapFAQ.aspx), [DHCS: Medi-Cal Hearing Aid Benefits and Dyadic Services (November 2024)](https://www.dhcs.ca.gov/wp-content/uploads/2025/10/Medi-Cal-Hearing-Aid-Benefits-and-Dyadic-Services.pdf), [DHCS: Hearing Benefits Provider Fact Sheet (July 2024)](https://www.dhcs.ca.gov/individuals/Documents/Hearing-Benefits-Provider-Fact-Sheet.pdf), [Medi-Cal Hearing Aid Audiology manual](https://mcweb.apps.prd.cammis.medi-cal.ca.gov/file/manual?fn=hearaid.pdf) and [Medicare.gov: Hearing aids](https://www.medicare.gov/coverage/hearing-aids)."],
+      ["Questions about your plan", "Call 650-342-9449 to talk with our team at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street. This page is general information and not legal or insurance advice."],
+    ],
+    comparisonTable: {
+      after: "Who is exempt from the limit",
+      caption: "Medi-Cal hearing aid limit by group, from DHCS pages read in October 2026",
+      headers: ["", "What DHCS says"],
+      rows: [
+        ["Most adult members", "Up to $1,510 per person per fiscal year (July 1 to June 30)"],
+        ["Members under 21 with full-scope Medi-Cal", "Not subject to the limit. No annual limit for children under 21"],
+        ["Pregnancy-related care", "Exempt when the service is part of pregnancy-related care or treats a condition that may cause pregnancy problems"],
+        ["Bone-anchored hearing aids (BAHA)", "Treated as a prosthetic device, so not subject to the limit"],
+        ["Lost, stolen or irreparably damaged aids", "Replacement is not subject to the limit, with documents required"],
+        ["Costs above the limit", "Possible for medical necessity with prior approval"],
+      ],
+      footnote: "Figures and rules can change. Confirm with your plan or DHCS.",
+    },
+    bullets: ["Up to $1,510 a year", "Under-21 exempt", "Prior authorization", "ENT prescription", "Check your plan", "Financing available"],
+    faqs: [
+      ["Does Medi-Cal cover hearing aids?", "Yes, for members who qualify. DHCS says Medi-Cal pays up to $1,510 per person per fiscal year for hearing aid benefits, with exempt groups. Check your plan for current rules."],
+      ["Does Medi-Cal pay for hearing aids for adults?", "Yes, within the yearly limit, and with prior authorization. DHCS says the limit can be exceeded for medical necessity with approval."],
+      ["Does Medi-Cal pay for hearing aid batteries?", "DHCS's benefit cap page says you get one initial set of batteries, and replacement batteries are paid only for members under 21. A DHCS provider fact sheet says batteries are not covered. Ask your plan."],
+      ["Does Medi-Cal cover hearing aid repairs?", "DHCS says repairs are paid when they fall within the yearly limit. The audiology manual says repairs costing more than $25 per service need prior authorization."],
+      ["Do you accept Medi-Cal?", "Call us at 650-342-9449. Our biller can check any plan's benefits for you, including Medi-Cal, and tell you what applies."],
+      ["Does Medi-Cal cover hearing aids for children?", "DHCS says members under 21 with full-scope Medi-Cal have no annual limit, and that they should be referred to California Children's Services. Children who are not Medi-Cal eligible may qualify for HACCP."],
+    ],
+    image: "/assets/blog/medi-cal-hearing-aids-1.svg",
+    imageLabel: "Medi-Cal and hearing aids in California",
+    imageAlt: "Medi-Cal hearing aid coverage explained with a hearing aid icon on a teal card",
+    image2: "/assets/blog/medi-cal-hearing-aids-2.svg",
+    image2Label: "Five things to check about Medi-Cal hearing aid coverage",
+    image2Alt: "Five things to check about Medi-Cal hearing aid coverage before you buy",
+    image2Caption: "Rules are from DHCS pages read in October 2026 and can change.",
+  },
+
   "/medicare-open-enrollment-hearing-benefits/": {
     // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
     // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
@@ -3852,7 +4191,7 @@ export const blogPosts: Record<string, PageContent> = {
     image: "/assets/blog/oticon-reveal-what-we-know-1.svg",
     imageLabel: "Oticon Reveal, launched August 2026",
     image2: "/assets/blog/oticon-reveal-what-we-know-2.svg",
-    image2Label: "Oticon Reveal: what is confirmed, what is claimed, and what is unknown",
+    image2Label: "Confirmed, claimed, and unknown",
     image2Caption: "Ten days after launch, the evidence base is thinner than the headlines suggest.",
   },
 
@@ -3985,7 +4324,7 @@ export const blogPosts: Record<string, PageContent> = {
     image: "/assets/blog/phonak-eon-what-we-know-1.svg",
     imageLabel: "Phonak EON, launched August 24, 2026",
     image2: "/assets/blog/phonak-eon-what-we-know-2.svg",
-    image2Label: "Phonak EON: what is confirmed, what is claimed, and what is unknown",
+    image2Label: "Confirmed, claimed, and unknown",
     image2Caption: "The headline claim is footnoted to a study of the previous platform, published in 2024.",
   },
 
@@ -4352,7 +4691,7 @@ export const blogPosts: Record<string, PageContent> = {
     image: "/assets/blog/signia-max-what-we-know-1.svg",
     imageLabel: "Signia MaX, launched August 24, 2026",
     image2: "/assets/blog/signia-max-what-we-know-2.svg",
-    image2Label: "Signia MaX: what is confirmed, what is claimed, and what is unknown",
+    image2Label: "Confirmed, claimed, and unknown",
     image2Caption: "On launch day, the evidence base is thinner than the headlines suggest.",
   },
 
@@ -4476,6 +4815,56 @@ export const blogPosts: Record<string, PageContent> = {
     image2: "/assets/blog/snoring-can-be-the-cause-of-hearing-loss-2.svg",
     image2Label: "Where snoring and hearing might connect, and where they don't",
     image2Caption: "The links are real but limited — checking your hearing and your sleep both make good sense.",
+  },
+
+  "/somatic-tinnitus-neck/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Tinnitus & Sound Sensitivity",
+    headline: "Somatic Tinnitus and Neck Exercises: What to Know",
+    metaTitle: "Somatic Tinnitus and Neck Exercises: What to Know",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Does your tinnitus change when you move your neck? Learn what somatic tinnitus is, how it is checked, what helps, and which signs need urgent care.",
+    intro: [
+      "Somatic tinnitus is ringing or buzzing that changes when you move your neck, head or jaw. This page covers the neck. A published narrative review calls the neck-related type cervicogenic somatic tinnitus. The review says it comes from changed sensory signals from the cervical spine, and not from the hearing system itself. There is no single neck exercise that treats it. A physical therapist, after an exam, builds the plan. See a clinician first, especially if the sound began after a neck injury.",
+      "Jaw-related tinnitus has its own page: read our guide to [TMJ and tinnitus](/tinnitus/tmj/). For general gentle movement and relaxation, see our page on [tinnitus relief exercises](/tinnitus/exercises/).",
+    ],
+    takeaways: [
+      "Somatic tinnitus changes in pitch or loudness when you move your neck, head or jaw. Cervicogenic somatic tinnitus is the neck-related type.",
+      "A hearing test and an ear exam come first. They rule out ear causes that need different care.",
+      "Physical therapy is described as the cornerstone of treatment, but the evidence is mostly small studies and clinical observation.",
+      "Sudden hearing loss, ringing that beats with your pulse, severe dizziness, or stroke signs need urgent care, not neck exercises.",
+    ],
+    sections: [
+      ["What somatic tinnitus is", "Most tinnitus starts in the ear or in how the brain handles sound. Somatic tinnitus is different. The sound is changed by input from the body, such as the neck, jaw or shoulders. A narrative review describes cervicogenic somatic tinnitus as tinnitus that arises from altered sensory input from the cervical spine, the bones and muscles of the neck. It lists neck conditions commonly associated with it, including degenerative disc disease, cervical spondylosis, whiplash, and neck muscle spasm. It also says how common the condition is has not been well documented."],
+      ["Signs your tinnitus may involve the neck", "Clues include a sound that gets louder, softer, higher or lower when you turn, tilt, bend or hold your head in a position. Others are neck pain or stiffness, a past neck injury or whiplash, and a sound that changes after you press on a tight muscle. The review says clinicians ask which neck postures or movements make tinnitus better or worse, and ask about neck pain, stiffness and injury. Notice and write down what you see, but do not try to force a movement to prove it. A pattern is a clue to share with a clinician, not a diagnosis."],
+      ["How it is checked", "The review says diagnosis is clinical. A clinician takes a history, examines the neck and nervous system, and uses provocative tests: they move the neck through rotation, extension and flexion to see whether the tinnitus changes. It says hearing tests such as pure tone audiometry, tympanometry, otoacoustic emissions and auditory brainstem response help rule out ear causes. Imaging, such as MRI or CT, is used in some cases. At our offices we start with a [hearing and tinnitus evaluation](/hearing-testing/) and ask how the sound changes with movement. If the pattern points to the neck, we suggest you see your physician or a physical therapist, and we keep working on the hearing side with you."],
+      ["Does physical therapy help?", "The review calls physical therapy, including manual therapy, exercise and posture education, the cornerstone of care for cervicogenic somatic tinnitus. It also describes other options, such as medicines, nerve blocks and acupuncture, and notes that some newer ones are still being explored. It is also candid about the evidence. The authors say the condition is supported mainly by smaller studies and clinical observation, and that the wording in the literature is tentative. So it is fair to say physical therapy may help some people, and that we cannot promise a result. If your tinnitus changes with your neck, it is reasonable to ask your physician about a physical therapy referral."],
+      ["Neck exercises: what is reasonable", "We do not prescribe a neck program on this page, because the right exercises depend on what an exam finds. Our general page on [tinnitus relief exercises](/tinnitus/exercises/) suggests a posture check, slow shoulder rolls and gentle neck movement within a comfortable range. Keep everything smooth. Stop if you feel pain, dizziness or strong pulling. Skip any movement that does not feel safe for your body. Do not stretch or twist hard to try to make the sound change. If you have neck, spine or balance problems, check with your physician first."],
+      ["Cautions for manual therapy", "The review says manual therapy is contraindicated in people with severe osteoporosis, rheumatoid arthritis, or cervical spine fractures, and that each patient should be assessed on their own for safety. Tell any therapist about these conditions, about a past neck injury, and about dizziness. The review also proposes that blood-flow effects from muscle spasm or vertebral artery compression might play a part for some people. That is a theory, not something to test at home."],
+      ["When it is not just the neck: get care first", "Seek urgent care for sudden hearing loss in one or both ears. The National Institute on Deafness and Other Communication Disorders (NIDCD) calls it a medical emergency. Get prompt care for ringing that beats in time with your pulse (see our page on [pulsatile tinnitus](/tinnitus/pulsatile/)), for tinnitus in one ear only (see [tinnitus in one ear](/tinnitus/one-ear/)), and for severe dizziness or imbalance. Call 911 for sudden trouble walking, trouble seeing, numbness or weakness in the face, arm or leg, confusion or trouble speaking, or a severe headache with no known cause, which are stroke signs on the CDC list. If you had a head or neck injury, tell the clinician."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cervicogenic Somatic Tinnitus: A Narrative Review Exploring Non-otologic Causes (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11346753/), [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness) and [CDC: Signs and Symptoms of Stroke](https://www.cdc.gov/stroke/signs-symptoms/index.html). We could not open the systematic reviews of physical therapy for tinnitus in time to cite their results."],
+      ["Medical information notice", "This page is for general information and is not medical advice. To book a hearing and tinnitus evaluation, call 650-342-9449 at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street. Our [tinnitus therapy program](/services/tinnitus-therapy/) is described on its own page."],
+    ],
+    bullets: ["Changes with neck movement", "Hearing test first", "Physical therapy referral", "Gentle movement only", "Manual therapy cautions", "Red flags need urgent care"],
+    faqs: [
+      ["What is somatic tinnitus?", "It is tinnitus that changes with input from the body, such as neck, head or jaw movement. The neck-related type is called cervicogenic somatic tinnitus."],
+      ["Can neck problems cause tinnitus?", "They can in some people. A published narrative review describes tinnitus that arises from altered sensory input from the cervical spine, and lists conditions such as degenerative disc disease, whiplash and neck muscle spasm. A hearing test and exam should rule out ear causes first."],
+      ["What are the best neck exercises for tinnitus?", "No single exercise has been proven. Gentle posture work, shoulder rolls and comfortable neck movement are reasonable if you have no warning signs. A physical therapist can design a plan after an exam."],
+      ["Does physical therapy help somatic tinnitus?", "The review calls it the cornerstone of treatment, but says the evidence is mainly smaller studies and clinical observation. Some people improve and we cannot promise a result."],
+      ["When should I worry about tinnitus and my neck?", "Get urgent care for sudden hearing loss, ringing that beats with your pulse, ringing in one ear only, severe dizziness, or stroke signs. Call 911 for stroke signs."],
+    ],
+    image: "/assets/blog/somatic-tinnitus-neck-1.svg",
+    imageLabel: "Somatic tinnitus: when neck movement changes the sound",
+    imageAlt: "Somatic tinnitus and neck exercises explained with a sound wave icon on a teal card",
+    image2: "/assets/blog/somatic-tinnitus-neck-2.svg",
+    image2Label: "Five steps when tinnitus changes with your neck",
+    image2Alt: "Five steps to take when somatic tinnitus changes with neck movement",
+    image2Caption: "Check hearing first. Gentle movement only. Red flags need urgent care.",
   },
 
   "/the-benefits-of-treating-hearing-loss/": {
@@ -4922,6 +5311,56 @@ export const blogPosts: Record<string, PageContent> = {
     image2Caption: "The right hearing aid fits your ears, your routine, and your budget, not just the ad.",
   },
 
+  "/toynbee-maneuver/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Ear Health",
+    headline: "Toynbee Maneuver: How It Works and When to Stop",
+    metaTitle: "Toynbee Maneuver: How It Works and When to Stop",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "The Toynbee maneuver: pinch your nose, close your mouth, and swallow. How it helps a blocked ear, how it differs from Valsalva, and when to stop.",
+    intro: [
+      "The Toynbee maneuver is a way to help a blocked or full ear clear. You close your mouth, pinch your nostrils, and swallow. Cleveland Clinic explains that it does not force air into your ears the way the Valsalva maneuver does. Swallowing helps the eustachian tubes open so air can get in. Stop if you feel pain or dizziness. If the blocked feeling lasts for days, or comes with pain, drainage, dizziness, hearing loss or ringing, have someone look in your ear.",
+      "This page covers the Toynbee move only. Our guide to [how to relieve ear pressure](/how-to-relieve-ear-pressure/) covers the usual causes and the other gentle ways to equalize, so we do not repeat them here.",
+    ],
+    takeaways: [
+      "Toynbee: close your mouth, pinch your nostrils, then swallow. You do not blow.",
+      "It works by helping the eustachian tubes open, not by pushing air into them, according to Cleveland Clinic.",
+      "Stop if you feel pain or dizziness. Do not repeat it hard or many times in a row.",
+      "A plugged ear that lasts days, or comes with pain, drainage, dizziness, hearing loss or ringing, needs an exam.",
+    ],
+    sections: [
+      ["What the Toynbee maneuver is", "The Toynbee maneuver is a pressure-equalizing move. People use it when their ears feel full or plugged after a flight, a drive over a mountain pass, or a cold. Cleveland Clinic describes the steps in one line: close your mouth, pinch your nostrils, and swallow. That is the whole technique. You can try it with a sip of water to make swallowing easier."],
+      ["How it works", "Behind each eardrum is a small air-filled space, the middle ear. A narrow channel called the eustachian tube links it to the back of your nose and throat. The tube opens briefly when you swallow or yawn, which lets the air pressure inside match the air around you. When you pinch your nose and swallow, you change the pressure at the back of the nose. Cleveland Clinic says the Toynbee maneuver helps open the tubes so air can get in, instead of forcing air into them. If the tube is only slow to open, one or two tries may be enough. If the tube is swollen from a cold or allergy, it may not help until the swelling goes down."],
+      ["How it differs from Valsalva", "The Valsalva maneuver is the one most people know. For Valsalva, you close your mouth, pinch your nostrils, and breathe out hard without letting air escape. Cleveland Clinic says Valsalva relieves pressure by pushing air through the eustachian tubes. Toynbee asks you to swallow, not blow. That is why some people see it as the gentler of the two. Gentler does not mean risk free. We cover Valsalva and the other methods on our [ear pressure page](/how-to-relieve-ear-pressure/), where we also explain why forceful blowing is a bad idea."],
+      ["How to try it safely", "Sit upright. Close your mouth and pinch your nostrils shut with your fingers. Swallow once, slowly. Let go of your nose. Wait a moment and see if the ear feels different. You may hear or feel a soft pop. You can repeat it a few times, a minute or so apart. Do not squeeze your nose hard, and do not blow or strain while you swallow. If a plane is landing, start before the plane descends and repeat as the cabin pressure changes. MedlinePlus advises not to sleep during descent so you can keep opening the tubes."],
+      ["When to stop", "Stop right away if you feel pain or dizziness. Cleveland Clinic lists both as reasons to see a provider. Stop if the ear feels worse after you try, or if you notice drainage or bleeding. MedlinePlus lists drainage or bleeding from the ear, fever and severe ear pain as reasons to contact a provider. Do not keep trying again and again. If a few gentle tries do nothing, the problem is probably not a simple slow tube, and more effort will not fix it."],
+      ["When not to try it without asking", "Ask your clinician first if you have ear tubes, a hole in your eardrum, recent ear surgery, an ear infection, or a bad cold with a very stuffy nose. We did not find a medical source that lists these cases for the Toynbee move itself, so treat this as a general caution and not a rule from a study. MedlinePlus also warns that flying or diving with a cold or active allergies raises the chance of ear barotrauma, which is pressure injury to the ear. If you scuba dive, ask your own doctor before using any method to clear your ears."],
+      ["When to have your ear checked", "Cleveland Clinic says clogged ears that last for days, or that come with pain, discharge, dizziness, hearing loss or ringing, can point to an ear infection, swimmer's ear or ongoing eustachian tube dysfunction, which may need treatment. It says not to tough it out if symptoms last or get worse. The National Institute on Deafness and Other Communication Disorders (NIDCD) says to treat sudden hearing loss as a medical emergency, so do not assume a sudden muffled ear is just pressure. A plug of wax can feel the same as a pressure problem, and no pressure trick will clear it. Our team can look in the ear, test your hearing, and tell you whether it is wax, a tube issue or something else. See our page on [earwax removal](/services/earwax-removal/), or book a [hearing evaluation](/hearing-testing/)."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cleveland Clinic: How to Pop Your Ears](https://health.clevelandclinic.org/how-to-pop-your-ears), [Cleveland Clinic: Eustachian Tube Dysfunction](https://my.clevelandclinic.org/health/diseases/22527-eustachian-tube-dysfunction), [MedlinePlus: Ear barotrauma](https://medlineplus.gov/ency/article/001064.htm) and [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness)."],
+      ["Medical information notice", "This page is for general information and is not medical advice. To have an ear checked, call 650-342-9449 to book at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+    ],
+    bullets: ["Pinch nose, swallow", "Not a hard blow", "Stop for pain", "Differs from Valsalva", "Days of blockage need a check", "Wax feels the same"],
+    faqs: [
+      ["How do you do the Toynbee maneuver?", "Close your mouth, pinch your nostrils shut, and swallow. Cleveland Clinic describes it this way. You do not blow air out."],
+      ["Is the Toynbee maneuver safe?", "It is a gentle move for most people when done once or twice without force. Stop if you feel pain or dizziness. Ask a clinician first if you have ear tubes, a hole in the eardrum, recent ear surgery or an ear infection."],
+      ["What is the difference between Toynbee and Valsalva?", "For Toynbee you swallow with your nose pinched. For Valsalva you breathe out hard with your nose pinched and mouth closed. Cleveland Clinic says Valsalva pushes air through the tubes, while Toynbee helps the tubes open."],
+      ["Why does my ear stay plugged after the Toynbee maneuver?", "The tube may be swollen from a cold or allergy, or wax may be blocking the ear canal. Cleveland Clinic says to see a provider if the blockage lasts for days or comes with pain, discharge, dizziness, hearing loss or ringing."],
+      ["Can the Toynbee maneuver help ears on a plane?", "It may help as the plane descends. MedlinePlus advises staying awake during landing and repeating pressure-equalizing steps. If you have a cold or allergy flare, flying can cause more trouble, so ask your doctor ahead of time."],
+    ],
+    image: "/assets/blog/toynbee-maneuver-1.svg",
+    imageLabel: "Toynbee maneuver: pinch, swallow, and stop if it hurts",
+    imageAlt: "Toynbee maneuver explained with an ear icon on a teal card",
+    image2: "/assets/blog/toynbee-maneuver-2.svg",
+    image2Label: "Toynbee maneuver in five steps",
+    image2Alt: "The Toynbee maneuver in five steps, from sitting upright to stopping if it hurts",
+    image2Caption: "Pain, dizziness or drainage mean stop and have the ear checked.",
+  },
+
   "/travel-with-hearing-aids/": {
     kicker: "Living With Hearing Aids",
     headline: "Traveling With Hearing Aids: Planes, Security, and Charging Abroad",
@@ -5004,22 +5443,22 @@ export const blogPosts: Record<string, PageContent> = {
   "/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/": {
     kicker: "Ear Health",
     headline: "Dry Ears: Why Canals Get Flaky and What Actually Helps",
-    metaTitle: "Dry, Flaky Skin in Your Ears: Causes and What Actually Helps",
+    metaTitle: "Dry Ears: Safe Ear Drops and What Actually Helps",
     variant: "condition",
     datePublished: "2026-08-25",
-    dateModified: "2026-08-25",
+    dateModified: "2026-10-07",
     metaDescription:
-      "Dry, itchy, flaky ear canals usually come from over-cleaning, a skin condition, or a device that seals the ear. What helps, what harms, and when to be seen.",
+      "Dry, itchy ear canals: which ear drops are safe, which to avoid, and what helps. Over-cleaning and skin conditions are the usual causes.",
     intro: [
       "A dry ear canal announces itself in small ways. A flake of skin on the pillow, a tickle that returns every evening, a canal that feels tight and papery, sometimes a faint crackle when you yawn. It rarely hurts, which is why most people manage it privately for months with a cotton swab and a hopeful expression. That is usually the reason it will not settle. The most common cause of a dry ear canal is cleaning it.",
       "The canal is not skin like the skin on your arm. It is a narrow blind-ended tube lined with thin, delicate skin that migrates slowly outward, carrying debris with it, and it produces a small amount of cerumen, which most people call earwax. Cerumen is the canal's moisturizer and its defense. It keeps the lining supple, traps dust, and holds the surface slightly acidic, which discourages bacteria and fungus. Strip it out and you have removed the thing that was keeping the canal comfortable.",
-      "Below are the reasons canals dry out, the habits that make it worse, what genuinely helps, what a hearing aid wearer should do differently, and the symptoms that mean stop self-treating and have someone look. If your ears itch more than they flake, our companion piece on [what causes itchy ears](/causes-of-ear-itching/) covers that side in more detail.",
+      "Below are the reasons canals dry out, the habits that make it worse, what genuinely helps, what a hearing aid wearer should do differently, and the symptoms that mean stop self-treating and have someone look. If your ears itch more than they flake, our companion piece on [what causes itchy ears](/causes-of-ear-itching/) covers that side in more detail. If you mean dry, flaky earwax and not dry skin, read our page on [dry, flaky earwax](/dry-flaky-earwax/) instead.",
     ],
     takeaways: [
       "Earwax is the ear canal's own moisturizer. Removing it routinely is the leading cause of a dry canal.",
       "Cotton swabs strip oil, scrape thin skin, and push wax deeper, which makes dryness and itching worse rather than better.",
       "Eczema, seborrheic dermatitis and psoriasis reach into the ear canal, and dry ears alongside dry skin elsewhere points that way.",
-      "Ask a clinician who has looked in your ear before putting oil, drops or anything else into it.",
+      "Ask a clinician who has looked in your ear before putting oil, drops or anything else into it. The drops that treat dry, itchy skin in the canal are usually prescription steroid drops for a skin condition.",
       "Discharge, pain, bleeding or a sudden change in hearing mean be examined rather than treated at home.",
     ],
     sections: [
@@ -5030,10 +5469,12 @@ export const blogPosts: Record<string, PageContent> = {
       ["Devices that seal the canal", "Anything worn in the ear changes its climate. Hearing aid domes and molds, custom earplugs, swim plugs and earbuds all block the outward migration that clears debris, trap heat and perspiration, and can rub. Some people also react to the material rather than the fit. The result can look contradictory: a canal that is both sweaty and flaky. Reducing your wearing time is not the answer. The fixes are practical. Wipe devices down at the end of the day and let them dry overnight out of their case, ask about a more open dome or a vented mold so the canal breathes, and if a specific dome material seems to be the trigger, say so, because there is usually an alternative."],
       ["Weather, water and age", "Ambient conditions matter more than people expect. Dry winter air, forced-air heating, air conditioning and air travel all pull moisture from skin, ears included. Water works the other way and still ends badly: a canal that is repeatedly soaked and then dried out swings between soggy and cracked, which is why swimmers and frequent showerers often have the driest ears of anyone. Age contributes too, since skin produces less oil over time and cerumen becomes drier and harder, so older canals are both less well lubricated and more prone to impaction. None of this is a fault. It does mean the habits that were harmless at thirty can start causing symptoms later."],
       ["What actually helps, and what to ask first", "Start with subtraction. Stop cleaning inside the canal, stop the swabs, and give it a few weeks. Dry the outer ear gently after swimming or showering by tilting your head and blotting the outside, rather than reaching in with a towel corner. If your home air is dry, a humidifier in the bedroom helps ears along with everything else. Treat any skin condition on its own terms, under the guidance of the clinician managing it. Beyond that, be careful. Oils, ear drops, softening agents and hydrogen peroxide are all things people put in ears on a friend's recommendation, and any of them can cause harm in an ear with a perforated eardrum, a tube, an active infection, or a heavy impaction, none of which you can see from outside. Ask someone who has actually looked in your ear before putting anything in it, and ask them what, how much and how often. That is a two-minute conversation and it prevents most of the trouble we see."],
+      ["Ear drops for dry ears: which are safe", "Many people reach for drops when the canal feels dry. No single drop is safe for every ear. Cleveland Clinic describes several kinds: wax-softening drops, antibiotic and antifungal drops, steroid drops and pain drops. It says steroid drops for itchy ears are prescription only. That matters, because the drops that actually treat a dry, itchy canal are usually for eczema or dermatitis, and they need a diagnosis first. The National Eczema Association says steroid ear drops can reduce inflammation in the canal but only under a dermatologist's supervision, and it says to avoid putting products into the canal unless your doctor directs it. For the outer ear, it suggests a gentle, fragrance-free moisturizer once or twice a day. Two kinds of over-the-counter drops are not for dryness. Wax-softening drops are made to loosen wax. Swimmer's-ear drying drops usually contain isopropyl alcohol or glycerin and are made to dry the ear after water, which is the opposite of what a dry canal needs. Do not use any drops if you may have a hole in the eardrum. Cleveland Clinic says medicine can reach the middle or inner ear and cause complications. The American Academy of Otolaryngology-Head and Neck Surgery Foundation says not to use wax-softening drops or irrigation after ear surgery or with a perforated eardrum unless your ear specialist says it is safe. If you do use prescribed drops, warm the bottle in your hand first, because drops that are too cold or too hot can cause dizziness. Stinging that fades in minutes is common. Call your provider if you get a rash, dizziness, new pain, hearing loss or ringing, or if you see no improvement in three days. Sources: [Cleveland Clinic on ear drops](https://my.clevelandclinic.org/health/treatments/24654-ear-drops), [National Eczema Association on ear eczema](https://nationaleczema.org/body/ear-eczema/), [Cleveland Clinic on ear eczema](https://my.clevelandclinic.org/health/diseases/21842-ear-eczema) and [AAO-HNSF dos and don'ts of earwax](https://www.entnet.org/wp-content/uploads/2021/04/earwax_dos-donts_current.pdf). As of October 2026."],
       ["When to stop treating and be seen", "Some symptoms move this out of self-care entirely. Discharge of any kind, whether watery, cloudy or foul-smelling, means be examined. So does pain, whether it is constant, worse when you pull on the ear, or bad enough to disturb sleep. So does bleeding, or blood on a tissue after cleaning. A sudden change in hearing on one side is its own priority and should be treated as urgent rather than watched, and our page on [ear symptoms that need prompt attention](/what-are-the-red-flags-for-audiology-referrals/) explains why the timing matters. Add to the list any dryness that has not budged after a few weeks of leaving the ear alone, and any flaking that keeps returning in the same ear only. An audiologist can look with magnification, clear a build-up safely with [professional earwax removal](/services/earwax-removal/) if that is part of the picture, and tell you when the answer belongs with a physician instead. You can [reach either office](/contact/) in San Mateo or San Carlos to have it looked at."],
     ],
     bullets: ["Wax is the moisturizer", "Stop the swabs", "Eczema and dermatitis", "Domes and earplugs", "Ask before drops", "Discharge means be seen"],
     faqs: [
+      ["What ear drops are safe for dry ears?", "It depends on the cause, so ask a clinician who has looked in your ear. Cleveland Clinic says steroid drops for itchy ears are prescription only. Wax-softening and swimmer's-ear drying drops are not made for dry skin. Do not use any drops if you may have a hole in the eardrum."],
       ["If earwax keeps my ears from drying out, should I never clean them?", "Clean the part you can see and reach with a washcloth in the shower, and leave the canal alone. Healthy canals clear themselves. The exceptions are people whose ears genuinely do impact, often those with narrow canals, very dry wax, or devices worn all day, and they benefit from occasional professional cleaning on a schedule rather than daily attempts at home. Our piece on [dealing with earwax](/how-to-deal-with-earwax/) covers where that line falls."],
       ["Can I put olive oil or baby oil in a dry ear?", "Ask first. Oils are commonly used to soften wax and some clinicians do suggest them, but the advice depends entirely on what your ear looks like inside. Oil in an ear with a perforated eardrum, a ventilation tube, or an active infection can cause real problems, and oil on top of a full impaction can make a blockage worse before anything improves. Have the ear looked at, then follow the instructions you are given for your ear rather than a general recommendation from the internet."],
       ["My ears got dry after I started wearing hearing aids. Do I have to choose?", "No, and reducing your wearing time is the wrong trade, because consistent wear is what makes hearing aids work. Bring the devices to your next visit and describe when the dryness is worst. A more open dome, a vented mold, a change of dome material, or a different daily cleaning and drying routine solves most cases. Persistent irritation in one ear only is worth examining rather than adjusting around."],
@@ -5207,6 +5648,57 @@ export const blogPosts: Record<string, PageContent> = {
     image2: "/assets/blog/vertigo-balance-disorders-and-dizziness-2.svg",
     image2Label: "Common balance disorders and how each one tends to feel",
     image2Caption: "Naming the sensation is the first step toward finding its cause.",
+  },
+
+  "/vertigo-sleepiness-chills-tiredness/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Balance & Dizziness",
+    headline: "Vertigo and Sleepiness, Chills and Tiredness",
+    metaTitle: "Vertigo and Sleepiness, Chills and Tiredness: Why",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Does vertigo make you sleepy? Can it cause chills? Learn why vertigo comes with tiredness, what chills may mean, and which signs need prompt care.",
+    intro: [
+      "Vertigo can leave you very tired and sleepy. The Vestibular Disorders Association (VeDA) says the brain works harder to judge where you are in space when the balance system sends wrong or confusing signals, and that costs energy. Medicines used for vertigo can also cause drowsiness. Chills are different. They are not listed as a symptom of the common inner-ear causes in the sources we read, so chills with vertigo can mean an illness such as a fever. Dizziness with a fever needs a health professional right away, says the Mayo Clinic.",
+      "This page covers the symptoms that travel with vertigo. To learn what vertigo is, read our page on [what vertigo is and what to do about it](/what-is-vertigo-and-what-can-i-do-about-it/). To sort dizziness from an eye twitch, read [dizziness and eye twitching](/dizziness-and-eye-twitching/).",
+    ],
+    takeaways: [
+      "Tiredness is common with vertigo. The brain works harder to stay balanced, and poor sleep makes it worse.",
+      "Some vertigo medicines cause drowsiness. Do not drive if you feel sleepy, and ask your prescriber.",
+      "Chills are not a listed symptom of the common inner-ear causes. Chills or fever with dizziness need medical advice.",
+      "Call 911 for dizziness with trouble speaking, seeing or walking, weakness, numbness, or a severe headache.",
+    ],
+    sections: [
+      ["Get help first: signs that need urgent care", "The Mayo Clinic says to see a health professional right away if dizziness or vertigo comes with a new, different or severe headache, fever, double vision or trouble seeing clearly, hearing loss, trouble talking, weakness in an arm or leg, passing out, falling or trouble walking, or numbness or tingling. The Centers for Disease Control and Prevention (CDC) lists abrupt dizziness with trouble walking or seeing, numbness or weakness, confusion or trouble speaking, or a severe headache with no known cause as stroke signs, and says to call 9-1-1 right away. Do not drive yourself. If you have any of these, stop reading and call."],
+      ["Why vertigo can make you tired or sleepy", "VeDA explains that the eyes, inner ears and the body's position sense all send information to the brain. In inner-ear disorders such as Meniere's disease, BPPV and vestibular neuritis, the signals are wrong or confusing. In central disorders such as vestibular migraine, the signals are sound but the brain handles them poorly. Either way, VeDA says people use more energy just to judge where they are in space. VeDA also lists repeated stress and poor sleep as contributors to fatigue, and describes brain fog, where ordinary tasks take more effort. The National Institute on Deafness and Other Communication Disorders (NIDCD) says balance problems can lead to fatigue and depression. After a hard spell of vertigo, feeling wiped out is common."],
+      ["Medicines that cause drowsiness", "Some medicines for vertigo make you sleepy. The Mayo Clinic says prescription antihistamines and anticholinergics can give fast relief from vertigo and nausea but often cause drowsiness, and that benzodiazepines used for anxiety-related dizziness can cause drowsiness and be habit forming. Over-the-counter antihistamines like meclizine may help dizziness with an upset stomach, but they can cause drowsiness. MedlinePlus lists drowsiness or fatigue as a common side effect of meclizine, and says to tell your doctor if it is severe or does not go away. If sleepiness began when you started a medicine, tell the prescriber. Do not stop a prescribed medicine on your own, and do not drive if you feel drowsy."],
+      ["Sleep, vertigo and migraine", "Poor sleep can set off dizziness as well as follow it. Cleveland Clinic lists fatigue and stress as triggers for vestibular migraine, and lack of sleep among the triggers for episodes of vestibular disorders. It says vestibular migraine episodes can last from five minutes up to 72 hours. Keeping a regular sleep and wake time is one of the steps VeDA suggests for fatigue, along with morning sunlight and dimmer lights and fewer screens in the hour or two before bed."],
+      ["Can vertigo cause chills?", "In the sources we read, chills are not named as a symptom of BPPV, vestibular neuritis, labyrinthitis or vestibular migraine. Cleveland Clinic lists nausea, vomiting, balance trouble and eye movements for these conditions. So if you have chills with vertigo, think about what else is going on. Cleveland Clinic says viral infections, including colds, flu and COVID-19, may trigger vestibular neuritis, and says labyrinthitis is mostly caused by viral infections. An infection can bring fever and chills on its own. NIDCD also lists changes in heart rate and blood pressure, and fear, anxiety or panic, among the symptoms that can come with dizziness. We did not find a source that ties chills to any of these, so we cannot say why chills happen in your case. Because the Mayo Clinic names fever as a reason to be seen right away, call your provider the same day if you have chills or a fever with vertigo."],
+      ["Other symptoms that can come with vertigo", "NIDCD lists nausea, vomiting, diarrhea, changes in heart rate or blood pressure, blurred vision, confusion, and fear, anxiety or panic. VeDA adds that nausea and ringing in the ears (tinnitus) can occur as secondary symptoms, and that people with vestibular conditions often have anxiety or depression. If you have ringing or fullness in one ear with the dizziness, or any drop in hearing, get a hearing evaluation. Our page on [balance and hearing health](/balance-and-hearing-health/) explains why hearing and balance changes travel together."],
+      ["What helps while you wait to be seen", "The Mayo Clinic suggests that at the first sign of dizziness you sit or lie down, and lie still in a dark room during a severe spell. It suggests limiting caffeine, alcohol, salt and tobacco, staying hydrated, sleeping well and managing stress. VeDA suggests keeping a diary for a few weeks to spot energy patterns and triggers, pacing activities, and building rest time between demanding tasks. Do not drive when you feel dizzy without warning. The Mayo Clinic advises against it."],
+      ["When to book a visit", "Book a visit if vertigo keeps coming back, lasts a long time, or leaves you too tired to do your normal day. Book one if you have new ringing, fullness or hearing change. Our [hearing evaluation](/hearing-testing/) can show whether the ear is involved, and our page on [audiologists and balance problems](/can-an-audiologist-help-with-balance-problems/) explains what to expect. If your dizziness keeps happening with eye movements you cannot control, see [dizziness and eye twitching](/dizziness-and-eye-twitching/)."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Mayo Clinic: Vertigo](https://www.mayoclinic.org/diseases-conditions/vertigo/symptoms-causes/syc-20370055), [Mayo Clinic: Dizziness treatment](https://www.mayoclinic.org/diseases-conditions/dizziness/diagnosis-treatment/drc-20371792), [NIDCD: Balance Disorders](https://www.nidcd.nih.gov/health/balance-disorders), [VeDA: 8 Steps to Managing Fatigue](https://vestibular.org/article/coping-support/living-with-a-vestibular-disorder/8-steps-to-managing-fatigue-from-your-vestibular-disorder/), [VeDA: Vestibular Symptoms](https://vestibular.org/article/what-is-vestibular/vestibular-symptoms/), [Cleveland Clinic: Vestibular Neuritis](https://my.clevelandclinic.org/health/diseases/15227-vestibular-neuritis), [Cleveland Clinic: Labyrinthitis](https://my.clevelandclinic.org/health/diseases/22032-labyrinthitis), [Cleveland Clinic: Vestibular Disorders](https://my.clevelandclinic.org/health/diseases/vestibular-disorders), [Cleveland Clinic: Vestibular Migraine](https://my.clevelandclinic.org/health/diseases/25217-vestibular-migraine), [MedlinePlus: Meclizine](https://medlineplus.gov/druginfo/meds/a682548.html) and [CDC: Signs and Symptoms of Stroke](https://www.cdc.gov/stroke/signs-symptoms/index.html)."],
+      ["Medical information notice", "This page is for general information and is not medical advice. To book a hearing evaluation, call 650-342-9449 at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+    ],
+    bullets: ["Tiredness is common", "Medicines cause drowsiness", "Chills may mean illness", "Fever needs prompt care", "Keep a symptom diary", "911 for stroke signs"],
+    faqs: [
+      ["Does vertigo make you sleepy?", "It can make you tired. VeDA says the brain uses more energy to judge position when balance signals are wrong. Medicines for vertigo, such as meclizine, can also cause drowsiness."],
+      ["Can vertigo cause chills?", "Chills are not listed as a symptom of the common inner-ear causes in the sources we read. They can come from an illness such as a viral infection, or from panic or anxiety. The Mayo Clinic says fever with dizziness needs a health professional right away."],
+      ["Why am I so tired after a vertigo attack?", "VeDA describes fatigue as common with vestibular disorders, because the brain works harder to keep you balanced, and stress and poor sleep add to it."],
+      ["Is it safe to drive if my vertigo medicine makes me drowsy?", "No. MedlinePlus lists drowsiness as a common side effect of meclizine, and the Mayo Clinic says such medicines often cause drowsiness. Do not drive if you feel drowsy, and ask your prescriber."],
+      ["When is vertigo with tiredness an emergency?", "Call 911 if it comes with trouble speaking, seeing or walking, weakness or numbness, or a severe headache with no known cause. See a health professional right away for fever, hearing loss, or passing out."],
+    ],
+    image: "/assets/blog/vertigo-sleepiness-chills-tiredness-1.svg",
+    imageLabel: "Vertigo with sleepiness, chills and tiredness",
+    imageAlt: "Vertigo and sleepiness, chills and tiredness explained with an ear icon on a teal card",
+    image2: "/assets/blog/vertigo-sleepiness-chills-tiredness-2.svg",
+    image2Label: "Five things to know about tiredness, chills and vertigo",
+    image2Alt: "Five things to know about vertigo with sleepiness, chills and tiredness",
+    image2Caption: "Fever, trouble speaking or seeing, or weakness with vertigo needs urgent care.",
   },
 
   "/waymo-robotaxi-hearing-loss-hearing-aids/": {
@@ -5719,11 +6211,11 @@ export const blogPosts: Record<string, PageContent> = {
     metaTitle: "High-Frequency Hearing Loss: Causes and Options",
     variant: "condition",
     datePublished: "2021-12-17",
-    dateModified: "2026-08-25",
+    dateModified: "2026-10-07",
     metaDescription:
-      "High-frequency hearing loss steals the consonants that make speech clear, so voices sound mumbled. Learn the causes, the warning signs, and what helps.",
+      "High-frequency hearing loss makes speech sound mumbled because high-pitched consonants fade. Learn the causes, how a test shows it, and what helps.",
     intro: [
-      "High-frequency hearing loss is the loss of the higher-pitched sounds, and those pitches happen to carry most of the clarity in everyday speech. Because the volume of a voice lives in its lower tones, people with this pattern usually still hear that someone is speaking. What slips away is the crispness that tells one word from another. A [hearing test](/hearing-testing/) is what pins down whether this is what's going on.",
+      "High-frequency hearing loss is trouble hearing high-pitched sounds, such as the consonants s, f, th and sh, children's voices and birdsong. You can still hear that people are talking, but the words sound mumbled. The two most common causes are aging and loud noise. It is usually permanent, because the inner ear hair cells do not grow back, but hearing aids can restore much of the clarity. A [hearing test](/hearing-testing/) shows exactly which pitches you have lost. Audiologists see this pattern more than any other, and it comes on slowly.",
       "This is why the complaint is so often 'I can hear, but I can't understand,' especially in a busy restaurant or with several people talking at once. The hearing isn't gone. The top of the range has thinned out, and that top is where consonants live.",
       "It is one of the most common patterns audiologists see, and it tends to arrive gradually enough that a spouse notices before you do. It is also straightforward to measure and, in most cases, manageable with the right [hearing aids](/products/hearing-aids/) or, earlier on, with steps to protect the hearing you still have.",
     ],
@@ -5735,7 +6227,7 @@ export const blogPosts: Record<string, PageContent> = {
     sections: [
       ["Why the high pitches carry the meaning", "Speech is a mix of low and high sounds doing different jobs. Vowels — the a, e, and o sounds — are low and loud, and they carry the power of a voice. Consonants like s, f, th, sh, k, and t are high and soft, and they are what separate 'cat' from 'cap' or 'fifteen' from 'sixteen.' When the high frequencies fade, you keep the loudness of speech but lose the fine detail that makes it intelligible. That is why turning up the volume rarely helps: it makes the vowels boom without bringing the consonants back."],
       ["Why voices sound mumbled, not quiet", "People with this pattern rarely describe the world as silent. They describe it as muddy. A voice registers, but the edges are sanded off, so it feels like everyone has started mumbling. Background noise makes it worse, because the low rumble of a room competes with the low-frequency parts of speech you can still hear, while the high consonants you need are already faint. Phone calls, women's and children's voices, and birdsong are often the first things people notice slipping, since they all sit higher in pitch."],
-      ["What tends to cause it", "Two causes account for most cases. The first is age: the natural wear on the inner ear, called presbycusis, almost always takes the high frequencies first. The second is noise. Loud sound damages the delicate hair cells tuned to high pitches before it touches the rest, whether from years on a job site, power tools, concerts, or firearms. Noise exposure is a leading and largely preventable cause of hearing loss, and ASHA's page on [safe listening levels and how to protect your ears](https://www.asha.org/public/hearing/noise/) covers what that means day to day. Genetics and certain medications can play a part as well. If your hearing is still good, custom [hearing protection](/services/hearing-protection/) is one of the few ways to keep it that way."],
+      ["What tends to cause it", "Two causes account for most cases. The first is age: the natural wear on the inner ear, called presbycusis, almost always takes the high frequencies first. The second is noise. Loud sound damages the delicate hair cells tuned to high pitches before it touches the rest, whether from years on a job site, power tools, concerts, or firearms. Noise exposure is a leading and largely preventable cause of hearing loss, and the National Institute on Deafness and Other Communication Disorders says most noise-related loss comes from the death of inner ear hair cells that do not regrow ([NIDCD](https://www.nidcd.nih.gov/health/noise-induced-hearing-loss)). ASHA's page on [safe listening levels and how to protect your ears](https://www.asha.org/public/hearing/noise/) covers what that means day to day. Genetics and certain medications can play a part as well. If your hearing is still good, custom [hearing protection](/services/hearing-protection/) is one of the few ways to keep it that way."],
       ["How it gets measured", "An audiologist maps your hearing across a range of pitches and plots the results on an audiogram. High-frequency loss shows up as a line that slopes downward toward the right, where the high tones sit: steady in the lows, dropping off in the highs. Noise damage tends to draw [a noise notch rather than a slope](/understanding-hearing-loss-at-4000-hz/), dropping sharply around 4,000 Hz and climbing partway back at 8,000. The shape of that slope matters, because it tells us exactly which sounds you're missing and how much. That is the difference between guessing and fitting a solution to your specific ears. A [hearing evaluation](/hearing-testing/) is painless and takes under an hour."],
       ["What you can do about it", "Because the damaged hair cells don't grow back, the goal is to compensate rather than repair. Modern hearing aids suit this well, since they can be tuned to lift only the high frequencies you've lost while leaving the lows you hear fine alone, restoring the consonants without making everything louder. Getting that balance right is the whole point of a professional [hearing aid fitting](/hearing-aid-fitting/), and it is worth revisiting as your hearing changes. If you are weighing your first devices, our guide to [hearing aids for seniors](/hearing-aids-for-seniors/) walks through what to expect. Our audiologists in San Mateo and San Carlos can help you read your audiogram and decide what, if anything, to do next."],
     ],
@@ -5871,31 +6363,49 @@ export const blogPosts: Record<string, PageContent> = {
 
   "/what-is-the-best-hearing-aid-sold-at-costco/": {
     kicker: "Buying Hearing Aids",
-    headline: "Warehouse-Club Hearing Aids: What to Consider",
-    metaTitle: "Warehouse-Club Hearing Aids: What to Consider",
+    headline: "Costco Hearing Aids: Brands, Prices and What to Consider",
+    metaTitle: "Costco Hearing Aids: Brands, Prices and What to Ask",
     variant: "product",
     datePublished: "2025-07-17",
-    dateModified: "2026-08-25",
+    dateModified: "2026-10-07",
     metaDescription:
-      "Warehouse-club hearing aids can offer real value, but the fitting, real-ear verification, and follow-up care are what decide how well you hear day to day.",
+      "Costco lists four hearing aid models from $1,599.99 a pair as of Oct 7, 2026. See the brands, the prices, and what decides how well they work.",
     intro: [
+      "Costco's Hearing Aid Center page lists four hearing aid models, each sold as a pair with a charger, at starting prices of $1,599.99 to $1,699.99. The brands are Philips, Jabra, Rexton and Sonite. Costco says prices vary by state and that custom earmolds are sold separately. These figures are from Costco's page on October 7, 2026, and they can change. The table below lists each model. Price is only part of the cost of better hearing. The fitting, the verification, and the follow-up decide how well the hearing aids work. Costco also offers a free hearing test, which we cover on our [Costco hearing test page](/costco-hearing-test/).",
       "Is the best hearing aid simply the one you pick up during a warehouse-club run, somewhere between the rotisserie chicken and the paper towels? It is a reasonable question, and plenty of people on the Peninsula ask us a version of it. The honest answer is that the store matters far less than what happens after you choose a device. A [hearing aid](/products/hearing-aids/) earns its keep through how well it is matched to your ears, not where the box came from.",
       "Warehouse clubs can offer genuine value on the hardware itself. Where the differences show up is in the fitting, the verification, and the support you get later. Those pieces are what turn a well-made device into one that helps you follow a conversation at a noisy dinner. As you weigh your options, look past the price tag to the service wrapped around it, whether you shop at a club, a chain, or an independent audiology office.",
       "So the useful question is not which club has the best device this month. It is which combination of device, fitting, and follow-up will help you hear the people you care about. If you would like a second opinion on a purchase you are weighing, or help getting more out of aids you already own, our team in San Mateo and San Carlos is glad to [help](/contact/).",
     ],
     takeaways: [
+      "Costco lists four models at starting prices of $1,599.99 to $1,699.99 a pair, as of October 7, 2026. Prices vary by state.",
       "Warehouse-club hearing aids can be a solid value, especially for simpler hearing needs and tighter budgets.",
       "How a device is fitted and verified shapes your results more than which store sold it.",
       "Real-ear verification and ongoing follow-up are worth asking about no matter where you buy.",
     ],
     sections: [
       ["Where the warehouse-club model keeps costs down", "The savings are real, and it helps to know where they come from. High-volume retailers buy in bulk, run lean, and often sell devices that are close cousins of models you would find elsewhere under a different name. For a shopper comparing sticker prices, that can look like a straightforward win. If your hearing needs are simple and your budget is tight, a warehouse-club device may serve you well. The catch is that a hearing aid is not a finished product the moment it leaves the box. Its price is only one part of what determines how much you will hear."],
+      ["What Costco says the price includes", "Costco's Hearing Aid Center page says the price you see is the price you pay. It lists a free hearing test for members 18 and older, free service appointments for hearing aids bought there, and FSA and HSA eligibility. Its information page lists free loss and damage coverage with no deductible, free cleanings and check-ups, and 10 free zinc air batteries per hearing aid purchased, with warranty periods that vary by model. Costco's hearing care page refers to a 180-day return policy. Ask the Hearing Aid Center how that applies to hearing aids before you buy. The pages we read do not say whether real-ear verification is part of the fitting, so ask that too. Our [Costco hearing test page](/costco-hearing-test/) explains the test itself."],
       ["The part the sticker price leaves out: the fitting", "A hearing aid has to be programmed to your specific hearing, your ear canal, and your listening life. That work is the [hearing aid fitting](/hearing-aid-fitting/), and it does more for your results than the brand printed on the shell. Two people with the same model and very different fittings can have very different days. A careful fitting starts with a full [hearing evaluation](/hearing-testing/), then tunes the device across pitches, matches it to how you spend your time, and adjusts as your ears settle in. Where that step gets rushed or skipped, even a capable device can underperform."],
       ["Real-ear verification, the step that proves the fit", "The most reliable way to confirm a hearing aid is doing its job is real-ear, or probe-microphone, measurement. A thin probe sits near your eardrum and reads the sound the device delivers inside your ear, which is then compared against a target for your hearing. It is a recognized best practice in audiology, yet it is not done everywhere. When you compare where to buy, asking whether real-ear verification is included tells you a great deal about the care behind the price."],
       ["What happens after the sale", "Hearing changes, wax builds up, tubes crack, and settings need revisiting. The value of a provider shows up in the months and years after purchase, through cleanings, adjustments, and [repairs](/services/hearing-aid-repair/) when something goes wrong. Ask how easy it is to get back in for a tweak, who you will see, and what is covered. If a warehouse-club device leaves you wanting closer follow-up, you can still bring it to an independent audiologist for support, and many people do. It also helps to compare the full range of [hearing aids](/products/hearing-aids/) and [brands](/products/hearing-aids-by-brand/) before you commit."],
     ],
+    comparisonTable: {
+      after: "Where the warehouse-club model keeps costs down",
+      caption: "Costco hearing aid models and starting prices, as of October 7, 2026",
+      headers: ["Model, as Costco lists it", "Starting price", "What Costco says comes with it"],
+      rows: [
+        ["Philips HearLink 9050 miniRITE & Charger Plus", "$1,599.99", "Two rechargeable hearing aids and one charger that gives three full charges"],
+        ["Jabra Enhance Pro 30 Micro RIE & Premium Charger", "$1,699.99", "Two rechargeable hearing aids and one premium charger that gives three full charges"],
+        ["Rexton Reach RIC & Travel Charger", "$1,599.99", "Two hearing aids and one travel charger that gives three more days of charge without plugging in"],
+        ["Sonite Rise AI Smart RIC + Charger Go", "$1,599.99", "Two rechargeable hearing aids and one charger that gives three full charges"],
+      ],
+      footnote: "From Costco's Hearing Aid Center page. Costco says prices are starting prices, vary by state, and do not include custom earmolds. Models and prices change, so check with Costco.",
+    },
     bullets: ["Value hardware", "Fitting matters most", "Real-ear verification", "Follow-up care", "Repairs & cleanings", "Second opinions welcome"],
     faqs: [
+      ["How much do Costco hearing aids cost?", "Costco's Hearing Aid Center page lists four models at starting prices of $1,599.99 to $1,699.99, as of October 7, 2026. Each price is for two hearing aids and a charger. Costco says prices vary by state and that custom earmolds are sold separately. Check Costco for the current price."],
+      ["Which brands does Costco sell?", "As of October 7, 2026, its Hearing Aid Center page lists Philips, Jabra, Rexton and Sonite models. Costco's lineup changes, so confirm with your local Hearing Aid Center."],
+      ["Does Costco do hearing tests?", "Costco's pages list a free hearing test for members 18 and older and say to contact a Hearing Aid Center to schedule it. See our [Costco hearing test guide](/costco-hearing-test/) for what it covers and how it differs from an audiology evaluation."],
       ["Are warehouse-club hearing aids any good?", "Many are genuinely capable, often built on the same platforms as devices sold elsewhere. The hardware is rarely the weak point. What varies more is how carefully the aid is programmed to your hearing and how much support you get afterward, and those are the things worth comparing from one store to the next."],
       ["Will a warehouse-club hearing aid pair with my phone?", "Most current models offer Bluetooth streaming for calls, music, and video, though the details differ by brand and tier. If phone use matters to you, confirm the specific model's compatibility with your phone before you buy, and ask how streaming gets set up during the fitting."],
       ["I bought hearing aids elsewhere. Can you still help?", "We regularly see people who bought online or at a retailer and want closer support. Depending on the model, we can often clean, adjust, verify, and [repair](/services/hearing-aid-repair/) them, or talk through whether a different device would serve you better. Bringing in what you already own is a fine place to start."],

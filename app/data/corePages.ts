@@ -132,7 +132,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I schedule with Dr. Benson?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/darcy-benson.jpeg",
+  image: "/assets/team/dr-darcy-benson-audiologist-san-mateo.jpeg",
   imageLabel: "Darcy Benson, AuD",
   imageAlt: "Dr. Darcy Benson, audiologist at California Hearing Center",
 },
@@ -165,7 +165,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["How often is Dr. McMahan at California Hearing Center?", "She visits every six to eight weeks. Between visits she runs her own practice in Alaska, and the rest of our [team](/about-us/) sees patients here every week."],
     ["How do I schedule with Dr. McMahan?", "Call 650-342-9449 and ask to be booked into her next visit. Her appointments fill quickly, so it is worth calling early."]
   ],
-  image: "/assets/team/emily-mcmahan.webp",
+  image: "/assets/team/dr-emily-mcmahan-audiologist-san-mateo.webp",
   imageLabel: "Emily McMahan, AuD",
   imageAlt: "Dr. Emily McMahan, visiting audiologist at California Hearing Center",
 },
@@ -194,7 +194,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I schedule with Dr. Hatem?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/giana-hatem-v2.jpg",
+  image: "/assets/team/dr-giana-hatem-audiologist-san-mateo.jpg",
   imageLabel: "Giana Hatem, AuD",
   imageAlt: "Dr. Giana Hatem, audiologist at California Hearing Center",
 },
@@ -221,7 +221,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I reach the practice?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/jarna-kothari-v2.jpg",
+  image: "/assets/team/jarna-kothari-practice-administrator-san-mateo.jpg",
   imageLabel: "Jarna Kothari, Practice Administrator",
   imageAlt: "Jarna Kothari, Practice Administrator at California Hearing Center",
 },
@@ -250,7 +250,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I schedule with Dr. Ratner?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/jennifer-ratner.jpg",
+  image: "/assets/team/dr-jennifer-ratner-audiologist-san-mateo.jpg",
   imageLabel: "Jennifer Ratner, AuD",
   imageAlt: "Dr. Jennifer Ratner, audiologist at California Hearing Center",
 },
@@ -279,7 +279,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/kira-savin.jpg",
+  image: "/assets/team/dr-kira-savin-audiologist-san-mateo.jpg",
   imageLabel: "Kira Savin, AuD",
   imageAlt: "Dr. Kira Savin, audiologist at California Hearing Center",
 },
@@ -307,7 +307,7 @@ const rawCorePages: Record<string, PageContent> = {
   faqs: [
     ["How do I schedule with Lais?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/lais-ama.jpg",
+  image: "/assets/team/lais-ama-hearing-aid-services-san-mateo.jpg",
   imageLabel: "Lais Ama, Director of Hearing Aid Services",
   imageAlt: "Lais Ama, Director of Hearing Aid Services at California Hearing Center",
 },
@@ -479,7 +479,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Where do I park?", "In the lot behind the building. Turn up the driveway alongside the office, following the banner with our logo, and park at the top. Street parking on N. San Mateo Drive and the downtown public lots and garages are there if you prefer. Tell us when you book if parking or mobility is a concern and we will help you plan the easiest route in."],
     ["Do I need a physician referral?", "Usually no. Most patients book a hearing evaluation directly. Some insurance plans require a referral for coverage, so it is worth checking your plan. Referring offices can fax records to 650-342-4435."]
   ],
-  image: "/assets/core-photos/contact__san-mateo.jpg",
+  image: "/assets/core-photos/contact-california-hearing-center-san-mateo.jpg",
   imageLabel: "88 N. San Mateo Drive, San Mateo",
   imageAlt: "The California Hearing Center office at 88 N. San Mateo Drive: a single-storey building with a red roofline and a red-and-white sign on the lawn.",
 },
@@ -491,7 +491,7 @@ const rawCorePages: Record<string, PageContent> = {
   intro: [
     "Prescription hearing aids in San Mateo and San Carlos typically cost about $2,000 to $8,000 or more per pair, which is roughly $1,000 to $4,000 or more per device. That is a broad U.S. market estimate as of October 2026, not a quote. Over-the-counter and warehouse-club hearing aids usually cost less up front. The difference is what comes with them.",
     "You are buying two things at once: a small computer for your ear, and the professional work that programs it to your hearing and keeps it working for years. The second of those turns out to matter more than the first, and the evidence on that is set out below. It is not a comfortable thing for a practice that sells hearing aids to print, and we print it anyway.",
-    "This page explains what drives the price, how the price changes with where you buy, how Costco compares, what Medi-Cal, the VA and other coverage can pay, and how patients make the rest affordable, including [CareCredit financing](/hearing-aid-financing/). Your own price depends on your [hearing evaluation](/hearing-testing/) and the devices that fit your life.",
+    "This page explains what drives the price, how the price changes with where you buy, how Costco compares, what Medi-Cal, the VA and other coverage can pay, and how patients make the rest affordable, including [patient financing](/hearing-aid-financing/). Your own price depends on your [hearing evaluation](/hearing-testing/) and the devices that fit your life.",
     "At California Hearing Center we give you clear numbers before you commit to anything. You will know what a device costs, what is bundled with it, and what your insurance is likely to contribute. No pressure and no surprises."
   ],
   sections: [
@@ -504,7 +504,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Bundled vs. unbundled pricing", "Some providers bundle the device and all professional services into one price; others itemize them, charging separately for the hardware and each visit. Unbundled pricing can look cheaper up front but adds costs over the years of follow-up that hearing aids need. When you compare quotes, ask what is and is not included so you are comparing the same thing. The cheapest device is not always the cheapest to own. If you already have a quote from somewhere else, we are glad to read it with you in a [second opinion](/hearing-aid-second-opinion/)."],
     ["OTC vs. prescription cost", "Over-the-counter hearing aids, legal for adults with perceived mild-to-moderate loss, are the lowest-cost route and can be a reasonable entry point for the right person. The trade-off is that you become your own fitter, with no professional testing, programming, or follow-up. Prescription hearing aids cost more because they include the evaluation, custom programming, and ongoing care. On the evidence above, those are the parts that most determine your result. Our guide to [OTC and prescription hearing aids](/hearing-aids-cost-2026-otc-vs-prescription/) goes into the detail."],
     ["How insurance, Medi-Cal and the VA can lower the cost", "Original Medicare does not cover hearing aids. Some Medicare Advantage plans and private plans include an allowance or a discount network, and the amount varies a great deal by plan. Medi-Cal can help eligible adults: the California Department of Health Care Services says [Medi-Cal pays up to $1,510 per person each fiscal year](https://www.dhcs.ca.gov/services/Pages/HearingAidCapFAQ.aspx), July 1 to June 30, toward hearing aids, molds, repairs and fitting visits. Veterans enrolled in VA health care can receive hearing aids through VA audiology at no cost, with no service connection needed, according to the [VA hearing aid fact sheet](https://www.rehab.va.gov/PROSTHETICS/audiology/docs/VA-Hearing-Aids-Fact-Sheet.pdf). Our [insurance page](/resources/insurance/) explains each option in more detail, and we offer courtesy benefit verification so you know what your plan contributes before you buy."],
-    ["How patients make it affordable", "Cost should not be the reason you keep straining to hear. Most people combine a few paths: we verify your [insurance benefits](/resources/insurance/) first to see what your plan contributes; [CareCredit financing](/hearing-aid-financing/) spreads the remaining cost into manageable monthly payments; and many patients use HSA or FSA funds, since hearing aids are typically an eligible expense. If the ideal device is a stretch, we can also stage the investment sensibly rather than push you toward technology that will not serve you."]
+    ["How patients make it affordable", "Cost should not be the reason you keep straining to hear. Most people combine a few paths: we verify your [insurance benefits](/resources/insurance/) first to see what your plan contributes; [patient financing](/hearing-aid-financing/) spreads the remaining cost into manageable monthly payments; and many patients use HSA or FSA funds, since hearing aids are typically an eligible expense. If the ideal device is a stretch, we can also stage the investment sensibly rather than push you toward technology that will not serve you."]
   ],
   comparisonTable: {
     after: "Where you buy changes what you get",
@@ -541,7 +541,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Does Medi-Cal pay for hearing aids?", "Medi-Cal can pay for hearing aids for eligible adults. The California Department of Health Care Services says Medi-Cal pays up to $1,510 per person each fiscal year (July 1 to June 30). That covers hearing aids, molds, supplies, repairs, an initial set of batteries and six fitting, training and adjustment visits with the same vendor. Your plan may have its own rules about which providers you can use, so call us before you book and we will tell you what we can do with your coverage."],
     ["Does the VA provide hearing aids?", "Yes. Veterans enrolled in VA health care can receive hearing aids through VA audiology at no cost, and a service-connected disability is not required. Audiology is a direct-schedule service, so you can contact your VA audiology clinic without a referral. Visit co-pays may apply depending on your eligibility. See the [VA hearing aid fact sheet](https://www.rehab.va.gov/PROSTHETICS/audiology/docs/VA-Hearing-Aids-Fact-Sheet.pdf)."],
     ["Does insurance cover hearing aids?", "Sometimes, in whole or in part. Original Medicare does not cover hearing aids. Some Medicare Advantage plans, employer plans and Medi-Cal do. It depends entirely on your plan. We offer courtesy [benefit verification](/resources/insurance/) so you know what yours contributes before you buy."],
-    ["Can I finance hearing aids?", "Yes. We offer [CareCredit financing](/hearing-aid-financing/) to spread the cost into monthly payments, and it can be combined with any insurance benefit."],
+    ["Can I finance hearing aids?", "Yes. We offer [patient financing](/hearing-aid-financing/) to spread the cost into monthly payments, and it can be combined with any insurance benefit."],
     ["Is there a trial period?", "Yes. Every hearing aid we fit has a 45-day trial with no restocking fee. California law also gives any buyer 45 days from delivery to return a hearing aid. See [your right to return hearing aids in California](/california-hearing-aid-return-rights/)."]
   ],
   image: "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
@@ -549,35 +549,38 @@ const rawCorePages: Record<string, PageContent> = {
 },
   "/hearing-aid-financing/": {
   kicker: "Costs & Insurance",
-  headline: "Financing Your Hearing Aids with CareCredit",
+  headline: "Hearing Aid Financing and Payment Plans",
+  metaTitle: "Hearing Aid Financing and Payment Plans: San Mateo",
+  metaDescription: "Hearing aid financing and payment plans at California Hearing Center. Spread the cost, use your benefits first, and get the right device. Call 650-342-9449.",
   intro: [
-    "Better hearing is an investment in your relationships, your work, and your long-term health. It should not have to happen all at once. California Hearing Center offers CareCredit financing so you can get the hearing aids that genuinely fit your needs and pay for them over time, in predictable monthly amounts.",
-    "This page explains how CareCredit works, how it fits alongside your insurance benefits, and the other ways patients manage the [cost of hearing aids](/hearing-aid-cost/). The goal is simple: make sure budget decides the timeline, not the quality of your care.",
-    "If you would like help understanding your options, our team will walk you through them at your consultation. No obligation."
+    "California Hearing Center offers hearing aid financing, so you can pay for your hearing aids over time and not all at once. Financing for hearing aids works best next to any insurance benefit, HSA or FSA funds you already have. Call 650-342-9449 or ask at your visit, and we will explain the payment plan options that apply to you. There is no obligation.",
+    "Better hearing is an investment in your relationships, your work, and your long-term health. It should not have to happen all at once. This page explains how hearing aid payment plans fit with insurance and the other ways patients manage the [cost of hearing aids](/hearing-aid-cost/). The goal is simple: make sure budget decides the timeline, not the quality of your care."
   ],
   sections: [
-    ["What CareCredit is", "CareCredit is a healthcare credit card used by millions of people for medical, dental, vision, and hearing expenses. Instead of paying the full cost up front, you spread it across monthly payments, often with promotional financing periods. It is designed specifically for health and wellness care, which is why so many audiology and medical practices, including ours, accept it."],
-    ["How financing works here", "Once you and your audiologist have chosen the right hearing aids, we help you apply for CareCredit and apply the financing to your purchase. Approval is typically quick, and you choose a payment plan that fits your monthly budget. You leave with the devices you need and a clear, manageable payment schedule rather than a single large bill."],
-    ["Use your insurance benefit first", "Financing works best on top of any coverage you already have. Before you finance anything, we verify your [insurance and Medicare benefits](/resources/insurance/) as a courtesy, so any allowance or contribution from your plan reduces the amount you finance. Many patients cover part of the cost with insurance and finance only the remainder."],
-    ["HSA and FSA funds", "Hearing aids are typically an eligible expense under Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA), which let you pay with pre-tax dollars. If you have one of these accounts, bring the card to your appointment. Many patients combine HSA or FSA funds with financing to lower their real out-of-pocket cost further."],
-    ["Get the right device, not just the cheapest", "The most expensive mistake in hearing care is buying technology that does not match your life because it was all that fit the budget that month. Financing exists precisely so you can choose the device that suits how and where you actually need to hear, and spread the cost sensibly, rather than settling for less and struggling in the settings that matter most to you."],
-    ["How we help", "Tell us your situation and we will lay out the numbers honestly: what your insurance is likely to contribute, what CareCredit can cover, and what a comfortable monthly payment looks like. You decide with the full picture in front of you. Start by [contacting our team](/contact/) or calling 650-342-9449."]
+    ["Hearing aid financing at California Hearing Center", "We offer patient financing for hearing aids. Financing lets you spread the cost of your hearing aids over time. The terms depend on the plan you choose, and we go over them with you before you decide. Ask us about it at your consultation, or call 650-342-9449."],
+    ["Hearing aid payment plans: what to ask", "Before you agree to any payment plan, ask for the monthly amount, how long the plan lasts, and whether there are any fees or interest. Ask for the terms in writing. A good plan fits your monthly budget without pushing you to buy a device that does not suit your hearing. If you would like help comparing options, our team will walk you through the numbers."],
+    ["Financing for hearing aids and your insurance benefit", "Financing works best on top of any coverage you already have. Before you finance anything, we can check your [insurance and Medicare benefits](/resources/insurance/) as a courtesy. Our biller can check any plan's benefits for you, and any allowance from your plan reduces the amount you finance. Original Medicare does not cover hearing aids, according to Medicare.gov, but some Medicare Advantage plans do, and [Medi-Cal](/medi-cal-hearing-aids/) covers hearing aids up to a yearly limit for eligible members. Many patients cover part of the cost with a benefit and finance only the rest."],
+    ["HSA and FSA funds", "Hearing aids are typically an eligible expense under Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA), which let you pay with pre-tax dollars. Check with your plan administrator if you are unsure. If you have one of these accounts, bring the card to your appointment. Many patients combine HSA or FSA funds with financing to lower their real out-of-pocket cost further."],
+    ["Try them with confidence", "Our hearing aid trial lasts 45 days with no restocking fee. That means you can wear your hearing aids in your own life before you are committed. Ask us for the terms in writing when you choose a device."],
+    ["Get the right device, not just the cheapest", "The most expensive mistake in hearing care is buying technology that does not match your life because it was all that fit the budget that month. Financing exists so you can choose the device that suits how and where you need to hear, and spread the cost sensibly, rather than settling for less and struggling in the settings that matter most to you."],
+    ["How we help", "Tell us your situation and we will lay out the numbers honestly: what your insurance is likely to contribute, what financing can cover, and what a comfortable payment looks like. You decide with the full picture in front of you. Start by [contacting our team](/contact/) or calling 650-342-9449."]
   ],
   bulletLinks: [
     ["What hearing aids cost", "/hearing-aid-cost/"],
     ["Insurance & Medicare", "/resources/insurance/"],
+    ["Medi-Cal and hearing aids", "/medi-cal-hearing-aids/"],
     ["Explore hearing aids", "/products/hearing-aids/"],
     ["Book a consultation", "/contact/"]
   ],
   takeaways: [
-    "California Hearing Center offers CareCredit financing so you can pay for hearing aids in manageable monthly amounts.",
+    "California Hearing Center offers hearing aid financing, so you can spread the cost of hearing aids over time.",
     "Financing pairs with your insurance benefit and HSA/FSA funds to lower what you finance.",
-    "The point of financing is to let you choose the right device for your life, not settle for less."
+    "Ask about the monthly amount, the length of the plan and any fees, and get the terms in writing."
   ],
   faqs: [
-    ["Do you offer financing for hearing aids?", "Yes. We offer CareCredit, a healthcare financing option that lets you spread the cost of hearing aids into monthly payments, often with promotional periods. We help you apply during your visit."],
-    ["What is CareCredit?", "CareCredit is a healthcare credit card accepted for medical, dental, vision, and hearing care. It lets you finance out-of-pocket costs over time instead of paying all at once."],
-    ["Can I use insurance and financing together?", "Yes, and it is the smart approach. We verify your [insurance benefits](/resources/insurance/) first so any coverage reduces the amount you finance, then CareCredit can cover the remainder."],
+    ["Do you offer hearing aid financing?", "Yes. We offer patient financing for hearing aids, so you can spread the cost over time. Ask us about the options at your consultation or call 650-342-9449."],
+    ["What are hearing aid payment plans?", "A payment plan lets you pay for your hearing aids in installments instead of all at once. The terms depend on the plan, so ask for the monthly amount, the length and any fees before you agree."],
+    ["Can I use insurance and financing together?", "Yes, and it is the smart approach. We can check your [insurance benefits](/resources/insurance/) first so any coverage reduces the amount you finance, then financing can cover the remainder. Our biller can check any plan's benefits for you."],
     ["Can I pay with an HSA or FSA?", "Hearing aids are typically an eligible HSA/FSA expense, so many patients pay with those pre-tax funds. Bring your card and we will help you apply it, alone or alongside financing."]
   ],
   image: "/assets/core-photos/hearing-aid-financing-san-mateo.jpg",
@@ -988,6 +991,7 @@ const rawCorePages: Record<string, PageContent> = {
   ],
   bulletLinks: [
     ["Coping and gradual exposure", "/hyperacusis/coping/"],
+    ["Is hyperacusis permanent?", "/is-hyperacusis-permanent/"],
     ["When to seek help (red flags)", "/hyperacusis/when-to-seek-help/"],
     ["Start with a hearing test", "/hearing-testing/"],
     ["Tinnitus and sound sensitivity", "/tinnitus/"],
@@ -1266,7 +1270,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Do you make hearing protection for musicians?", "Yes, custom and non-custom filtered plugs and custom in-ear monitors. The filters cut the level while keeping the response roughly flat, so the music gets quieter rather than duller. That is the difference between protection a musician wears and protection a musician abandons."],
     ["How long does it take to get custom ear gear?", "The impression appointment itself is short. We examine the canal and eardrum first, take the impressions, and go through where and how you will use the gear, then order it in. Ask us at the appointment for the current turnaround, since it varies by product and by manufacturer."]
   ],
-  image: "/assets/ear-gear.webp",
+  image: "/assets/custom-earplugs-earmolds-ear-gear.webp",
   imageLabel: "Ear Gear protective sleeves"
 },
   "/products/hearing-aids-by-brand/": {
@@ -2842,7 +2846,7 @@ const rawCorePages: Record<string, PageContent> = {
   bulletLinks: [
     ["Compare brands", "/products/hearing-aids-by-brand/"],
     ["What hearing aids cost", "/hearing-aid-cost/"],
-    ["Financing (CareCredit)", "/hearing-aid-financing/"],
+    ["Financing", "/hearing-aid-financing/"],
     ["The fitting process", "/hearing-aid-fitting/"],
     ["Book a hearing test", "/hearing-testing/"],
     ["Free second opinion on a quote", "/hearing-aid-second-opinion/"],
@@ -2893,7 +2897,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["A patient's journey to better hearing", "/a-patients-journey-to-better-hearing/"],
     ["Insurance & Medicare", "/resources/insurance/"],
     ["What hearing aids cost", "/hearing-aid-cost/"],
-    ["Financing (CareCredit)", "/hearing-aid-financing/"],
+    ["Financing", "/hearing-aid-financing/"],
     ["HearingUp approved provider", "/resources/hearingup-approved-provider/"],
     ["Contact us to sign up", "/contact/"]
   ],
@@ -2950,10 +2954,10 @@ const rawCorePages: Record<string, PageContent> = {
     ["Medicare Advantage and other plans", "Many Medicare Advantage plans, and some private plans, add hearing benefits that Original Medicare does not include, such as an allowance toward hearing aids or access to a discount network. The amount, how often you can use it, and which providers count all differ by plan, so read your plan's Summary of Benefits or Evidence of Coverage, or call the number on your card. Ask whether our office can work with your plan before you book, since some plans send members to a particular network."],
     ["Medi-Cal and hearing aids", "Medi-Cal can pay for hearing aids for eligible members. The California Department of Health Care Services says Medi-Cal will pay [up to $1,510 per person each fiscal year](https://www.dhcs.ca.gov/services/Pages/HearingAidCapFAQ.aspx), from July 1 to June 30, and a new allowance starts each July 1. That amount covers hearing aids, molds, supplies and inserts, repairs, an initial set of batteries, six visits for training, adjustments and fitting with the same vendor, and rental. Adults are not exempt from the cap. Members under 21 with full-scope Medi-Cal, pregnancy-related care, and documented replacement of lost, stolen or irreparably damaged hearing aids are treated differently. Your Medi-Cal plan may also have its own rules about which providers you can use, so call us before you book and we will tell you what we can do with your coverage."],
     ["VA benefits for Veterans", "Veterans enrolled in VA health care can receive hearing aids through VA audiology at no cost. A service-connected disability is not required, and audiology is a direct-schedule service, so you can contact your VA audiology clinic without a referral from primary care. Visit co-pays may apply depending on your eligibility. The first steps are to enroll in VA health care, contact your local VA audiology clinic, and have a hearing test. The [VA hearing aid fact sheet](https://www.rehab.va.gov/PROSTHETICS/audiology/docs/VA-Hearing-Aids-Fact-Sheet.pdf) explains the process. If you want a second opinion on your hearing or on a quote, we are glad to help."],
-    ["Are there free hearing aids for seniors in California?", "There is no single statewide program that gives free hearing aids to every senior. Original Medicare does not pay for them. What exists is a set of separate routes, and which one fits depends on who you are: the VA provides hearing aids at no cost to enrolled Veterans, Medi-Cal pays up to its yearly limit for eligible members, and some Medicare Advantage plans include an allowance. The table below sets them side by side. If none of these applies, our page on [getting hearing aids through Medicare](/how-to-get-free-hearing-aids-with-medicare/) and our guide to [what hearing aids cost with insurance](/how-much-are-hearing-aids-with-insurance/) can help you see what is realistic, and [CareCredit financing](/hearing-aid-financing/) can spread the remaining cost."],
+    ["Are there free hearing aids for seniors in California?", "There is no single statewide program that gives free hearing aids to every senior. Original Medicare does not pay for them. What exists is a set of separate routes, and which one fits depends on who you are: the VA provides hearing aids at no cost to enrolled Veterans, Medi-Cal pays up to its yearly limit for eligible members, and some Medicare Advantage plans include an allowance. The table below sets them side by side. If none of these applies, our page on [getting hearing aids through Medicare](/how-to-get-free-hearing-aids-with-medicare/) and our guide to [what hearing aids cost with insurance](/how-much-are-hearing-aids-with-insurance/) can help you see what is realistic, and [patient financing](/hearing-aid-financing/) can spread the remaining cost."],
     ["Questions worth asking your plan", "Before you buy, it helps to ask a handful of specific questions: Does my plan include a hearing aid benefit at all? What amount or percentage does it put toward devices? Do deductibles or out-of-pocket maximums apply first? How often will it help replace devices (often every three to seven years)? Can I use my own audiologist or must I stay in-network? Are diagnostic hearing evaluations covered, and do they need a physician referral? The answers shape your realistic options."],
     ["Allowances, discounts, and out-of-pocket costs", "A hearing benefit might take the form of a fixed dollar allowance, a discount program, or partial coverage rather than full payment, which means most people should expect some out-of-pocket cost. Understanding the structure of your benefit up front helps you compare technology options realistically."],
-    ["How our office helps", "Our insurance support is a courtesy service: we help you understand and verify your benefits, gather the information carriers ask for, clarify deductibles and co-pays, and explain what your plan indicates before you commit to anything. Our goal is that you decide with clear numbers in front of you. Once you know your coverage, see [what hearing aids cost](/hearing-aid-cost/) and how [CareCredit financing](/hearing-aid-financing/) can spread any remaining balance. Every hearing aid we fit also comes with a 45-day trial and no restocking fee. If you would like help getting started, visit our [contact page](/contact/)."]
+    ["How our office helps", "Our insurance support is a courtesy service: we help you understand and verify your benefits, gather the information carriers ask for, clarify deductibles and co-pays, and explain what your plan indicates before you commit to anything. Our goal is that you decide with clear numbers in front of you. Once you know your coverage, see [what hearing aids cost](/hearing-aid-cost/) and how [patient financing](/hearing-aid-financing/) can spread any remaining balance. Every hearing aid we fit also comes with a 45-day trial and no restocking fee. If you would like help getting started, visit our [contact page](/contact/)."]
   ],
   comparisonTable: {
     after: "Are there free hearing aids for seniors in California?",
@@ -3222,13 +3226,16 @@ const rawCorePages: Record<string, PageContent> = {
 },
   "/services/hearing-aid-repair/": {
   kicker: "Audiology Services",
-  headline: "Hearing Aid Repair & Servicing on the Peninsula",
+  headline: "Hearing Aid Repair & Servicing in San Mateo & San Carlos",
+  metaTitle: "Hearing Aid Repair Near Me: San Mateo & San Carlos",
+  metaDescription: "Hearing aid repair and service near you in San Mateo and San Carlos: cleaning, receivers, tubing, lab repairs and loaners. Call 650-342-9449.",
   intro: [
     "A hearing aid that has gone quiet, weak, scratchy, or full of feedback is not always broken. Many problems come down to wax, moisture, or a worn part, and a lot of them can be solved the same day in our office. A hearing aid you cannot rely on is frustrating and can feel almost worthless, and everyone deserves comfortable, functional devices, so California Hearing Center services hearing aids from most major manufacturers, whether or not the device was originally purchased here.",
     "When a device fails, we start by diagnosing the real cause rather than guessing. A dead-sounding aid might have a clogged receiver, a spent battery contact, a torn wax guard, or moisture trapped inside. If you are hearing whistling, interference, or distortion, or the device simply needs a thorough cleaning, we sort that out quickly to get you hearing again and often save the cost of an unnecessary factory repair. We complete most simple repairs right in the office.",
     "For issues that do need the manufacturer's lab, we handle the paperwork, warranty check, and shipping so you are not left to navigate it alone, and we can loan you a device while yours is away. A loaner will not be tuned to you as finely as your own aids, but it keeps you hearing until yours come back."
   ],
   sections: [
+    ["Hearing aid repair and service near you", "Looking for hearing aid service or repair near you? California Hearing Center has two Peninsula offices: 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos. Call 650-342-9449 to ask about service for your device. We service hearing aids from most major manufacturers. Devices bought elsewhere are serviced for a fee, and the cost depends on the brand, the model and the warranty. We do not promise a turnaround time on this page, because it depends on the problem and on whether the device has to go to the manufacturer. Ask us when you call."],
     ["In-office repairs we handle", "Common fixes include replacing wax guards and domes, retubing behind-the-ear devices, clearing clogged sound ports and receivers, swapping receivers, cleaning corroded battery contacts, and drying out moisture. Many visits end with a working device in hand the same day."],
     ["Moisture damage", "Sweat, humidity, and rain are hard on the electronics inside a hearing aid. We can deep-dry devices with professional dehumidifiers and advise on daily drying habits and covers so it does not keep happening. Custom moisture guards such as sleeves are an option for active or heavy-sweat users."],
     ["Feedback, interference, and distortion", "Whistling, buzzing, or a scratchy signal often points to a cracked tube, a loose receiver, a poor seal, or a failing component rather than a device that is truly finished. We track down the source and correct it, restoring clean, stable sound."],
@@ -3243,6 +3250,7 @@ const rawCorePages: Record<string, PageContent> = {
     "For warranty or lab-level repairs we manage the process end to end and can loan you a device."
   ],
   faqs: [
+    ["Where can I get hearing aid service or repair near me?", "California Hearing Center services and repairs hearing aids for patients in San Mateo, San Carlos and nearby Peninsula communities. Our offices are at 88 N. San Mateo Drive and 1008 Laurel Street. Call 650-342-9449 to ask about your device."],
     ["Do you repair hearing aids not purchased from you?", "Yes. We service devices from most major manufacturers regardless of where they were bought, though the specific repair and any charges depend on the brand, model, and warranty status."],
     ["My hearing aid suddenly stopped working. What should I try first?", "Check the battery or charger, look for wax on the wax guard and receiver, and make sure the sound outlet is not blocked. If a fresh wax guard and clean device do not help, bring it in and we will diagnose it."],
     ["Will I be without my hearing aids if you send them to the manufacturer?", "Usually not. When a device has to go to the lab, we can loan you a device to use in the meantime. It will not be tuned to you as precisely as your own, but it keeps you hearing until your repaired aids return."]
@@ -3263,7 +3271,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Understanding NRR", "The Noise Reduction Rating estimates how many decibels a hearing protector reduces sound under test conditions. A higher NRR is not automatically better; the right amount of reduction depends on how loud your environment is and whether you still need to hear speech, cues, or music around you. We help match the attenuation to the task."],
     ["Filtered vs. solid protection", "Solid plugs block as much as possible and suit sleep, mowing, or very loud machinery. Filtered plugs let a controlled, even amount of sound through, so speech and warning signals stay audible while peaks are tamed, ideal for people who need awareness while protected."],
     ["Who benefits from custom protection", "Musicians, hunters and shooters, dentists and dental hygienists, factory and construction workers, first responders, pilots, motorcyclists, concertgoers, and anyone regularly around loud sound. If you leave a noisy environment with ringing or muffled hearing, that is a signal your ears needed protection."],
-    ["Specialized options we fit", "Beyond general-purpose plugs, we fit purpose-built solutions for [musicians](/services/hearing-protection/musicians/), for [hunting and the shooting range](/services/hearing-protection/hunting/), and for [law enforcement and tactical use](/services/hearing-protection/law-enforcement/). If you already have hearing loss, we can also help protect what remains alongside your [hearing aids](/hearing-aid-fitting/)."]
+    ["Specialized options we fit", "For a plain guide to choosing plugs for sleep, swimming, concerts and work, see our page on [custom earplugs](/custom-earplugs/). Beyond general-purpose plugs, we fit purpose-built solutions for [musicians](/services/hearing-protection/musicians/), for [hunting and the shooting range](/services/hearing-protection/hunting/), and for [law enforcement and tactical use](/services/hearing-protection/law-enforcement/). If you already have hearing loss, we can also help protect what remains alongside your [hearing aids](/hearing-aid-fitting/)."]
   ],
   bullets: ["Custom ear impressions", "Comfortable reusable fit", "Filtered or solid options", "Matched to your noise level", "Work, music & sport", "Peninsula fittings"],
   takeaways: [
@@ -3554,6 +3562,8 @@ const rawCorePages: Record<string, PageContent> = {
   "/tinnitus/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "The Tinnitus Knowledge Hub for San Mateo & San Carlos",
+  metaTitle: "Tinnitus Treatment Near Me: San Mateo & San Carlos",
+  metaDescription: "Tinnitus treatment near you: audiology clinics in San Mateo and San Carlos for evaluation, sound therapy and support. Call 650-342-9449.",
   intro: [
     "Tinnitus, the perception of ringing, buzzing, hissing, or pulsing sound with no external source, is one of the most common reasons people come to California Hearing Center. This hub gathers what we have learned helping Peninsula patients live better with it: how tinnitus is evaluated, which therapies actually help, and how to tell everyday tinnitus from the kind that deserves prompt medical attention.",
     "Tinnitus is a symptom rather than a disease, and it is frequently linked to hearing loss, noise exposure, earwax, certain medications, or stress. For many people the sound becomes far less intrusive once it is explained clearly and paired with a structured plan instead of internet guesswork.",
@@ -3562,6 +3572,7 @@ const rawCorePages: Record<string, PageContent> = {
   sections: [
     ["What we evaluate first", "A tinnitus visit usually begins with a full [hearing test](/hearing-testing/), a symptom history, and a description of the sound and its impact on sleep and concentration. Understanding the whole picture is what makes any later therapy effective rather than generic."],
     ["A dedicated tinnitus focus", "Tinnitus care is a genuine specialty for our practice, not an afterthought bolted onto a hearing aid sale. That focus is why we invest in structured therapy, sound strategies, and advanced options like Lenire bimodal neuromodulation for candidates who qualify."],
+    ["Tinnitus treatment near you: San Mateo and San Carlos", "If you are searching for tinnitus treatment, a tinnitus clinic or a tinnitus specialist near you on the Peninsula, California Hearing Center has two offices. Our San Mateo office is at 88 N. San Mateo Drive, San Mateo, CA 94401. Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070. Call 650-342-9449 to book a tinnitus evaluation at either one. See the office pages for [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/). Patients also travel to us from San Francisco, San Jose and the East Bay, and we have pages for [Peninsula](/tinnitus/peninsula-tinnitus/), [San Francisco](/tinnitus/san-francisco-tinnitus/), [San Jose](/tinnitus/san-jose-tinnitus/) and [East Bay](/tinnitus/east-bay-tinnitus/) tinnitus care. Every plan starts with a hearing evaluation and a conversation about how the sound affects your day."],
     ["Therapies that help", "Depending on your profile, a plan may combine sound therapy, well-fit hearing aids, tinnitus retraining principles, sleep and stress strategies, and directive counseling. Our page on [tinnitus retraining therapy](/tinnitus/tinnitus-retraining-therapy/) explains one structured approach in detail."],
     ["Sound sensitivity often travels with tinnitus", "Some people with tinnitus also notice that ordinary sounds feel uncomfortably loud, a condition called hyperacusis. If that describes you, our [hyperacusis section](/hyperacusis/) covers evaluation and desensitization, and there is a tinnitus-focused overview at [tinnitus and sound sensitivity](/tinnitus/hyperacusis/)."],
     ["When tinnitus needs prompt medical care", "Most tinnitus is not dangerous, but sudden tinnitus with sudden hearing loss, tinnitus in only one ear, a pulsing sound that matches your heartbeat, or tinnitus with dizziness or neurological symptoms should be evaluated promptly. The NIDCD's page on [tinnitus and when to have it checked](https://www.nidcd.nih.gov/health/tinnitus) treats those patterns the same way."]
@@ -3572,7 +3583,9 @@ const rawCorePages: Record<string, PageContent> = {
     ["What relief typically looks like", "/tinnitus/success-stories/"],
     ["Support and peer resources", "/tinnitus/support-groups/"],
     ["Why patients choose us", "/tinnitus/why-choose-us/"],
-    ["Sound sensitivity & hyperacusis", "/hyperacusis/"]
+    ["Sound sensitivity & hyperacusis", "/hyperacusis/"],
+    ["Tinnitus that changes with your neck", "/somatic-tinnitus-neck/"],
+    ["Pulsatile tinnitus and earwax", "/tinnitus/earwax/"]
   ],
   takeaways: [
     "Tinnitus is a symptom with many causes, and it is far more manageable once it is properly evaluated and explained.",
@@ -3580,6 +3593,7 @@ const rawCorePages: Record<string, PageContent> = {
     "Certain patterns, especially sudden, one-sided, or pulsatile tinnitus, warrant prompt medical attention."
   ],
   faqs: [
+    ["Is there a tinnitus clinic near me in San Mateo or San Carlos?", "Yes. California Hearing Center evaluates and treats tinnitus at 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos. Call 650-342-9449 to book a tinnitus evaluation."],
     ["Is tinnitus something I just have to live with?", "Not passively. While there is no universal cure, most people can substantially reduce how intrusive tinnitus feels through evidence-based management that improves sleep, lowers distress, and makes the sound fade into the background."],
     ["Do I need a hearing test if my main concern is tinnitus?", "Yes, in nearly every case. Tinnitus is closely tied to hearing, and a current [hearing evaluation](/hearing-testing/) helps identify contributing factors and shapes which therapies are likely to help you."],
     ["When should I treat tinnitus as urgent?", "Seek prompt medical care for tinnitus that begins suddenly, affects only one ear, pulses in time with your heartbeat, or comes with hearing loss, dizziness, or neurological symptoms."]
@@ -3779,6 +3793,8 @@ const rawCorePages: Record<string, PageContent> = {
   "/tinnitus/earwax/": {
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Can Earwax Cause Tinnitus? A Treatable Cause Worth Checking",
+  metaTitle: "Can Earwax Cause Tinnitus or Pulsatile Tinnitus?",
+  metaDescription: "Earwax can cause ringing and make tinnitus louder. A sound that beats with your pulse usually has another cause. What to know and when to be seen.",
   intro: [
     "If your ears feel clogged and you hear ringing, buzzing, or whooshing, you might wonder whether it is just earwax or something more serious. The answer is that yes, earwax can cause tinnitus, but it is not the only possible reason for those sounds.",
     "On this page, our Bay Area audiologists explain how earwax buildup can trigger tinnitus, what symptoms suggest a simple blockage, when it may point to a more complex issue, and why safe ear cleaning matters for protecting your hearing.",
@@ -3789,6 +3805,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["How buildup can cause tinnitus", "Earwax can contribute to tinnitus in a few ways. A physical blockage changes how sound and vibration reach the eardrum. When sound is blocked, the brain receives less input and may turn up its internal volume, producing ringing, buzzing, or roaring. And wax pressed against the eardrum can create a sensation of pressure or fullness that may come with echoing or a hollow sound. This kind of tinnitus often improves significantly once the wax is cleared."],
     ["Signs your tinnitus might be earwax-related", "Only an in-person exam can confirm the cause, but some clues point toward wax: clogged or muffled hearing in one ear, especially if tinnitus is stronger on that side; a feeling of fullness or water in the ear; tinnitus that began or worsened after frequent cotton-swab, earbud, or earplug use; hearing your own voice as unusually loud or echoing; and occasional sharp discomfort when chewing, yawning, or inserting earbuds. If both ears feel plugged, tinnitus may simply be more noticeable because everything else sounds quieter."],
     ["When it is probably not just earwax", "Even if you have wax, it might not be the whole story. Seek prompt or urgent care if you also have sudden tinnitus with noticeable hearing loss in one ear, tinnitus plus spinning vertigo or severe imbalance, tinnitus that sounds like a heartbeat or whooshing in time with your pulse, significant ear pain, drainage, or fever, or tinnitus following a head or neck injury. These patterns can point to conditions like sudden hearing loss, Meniere's disease, pulsatile tinnitus, or infection."],
+    ["Earwax and pulsatile tinnitus (a heartbeat sound)", "Pulsatile tinnitus is a sound that beats in time with your pulse, like a whoosh or a thump. Earwax is a documented cause of tinnitus in general. The Mayo Clinic lists wax, dirt or other debris in the ear canal as a cause, and Cleveland Clinic says wax buildup can make tinnitus more noticeable because it makes it harder to hear the sounds around you. A pulsing sound is different. The Mayo Clinic says pulsatile tinnitus is usually caused by blood vessel conditions. So wax alone is not the likely source of a heartbeat sound, although a blocked ear can make any sound in your head easier to notice. We did not find a source that confirms that last point for pulsatile tinnitus, so treat it as a possibility and not a fact. Do not assume it is wax. Cleveland Clinic advises contacting your primary care doctor if you hear your heartbeat in your ears, and says they may refer you to a cardiovascular doctor or an ear, nose and throat doctor. A check of the ear canal for wax can be part of the first visit, and our [earwax removal](/services/earwax-removal/) can clear a blockage. Our page on [pulsatile tinnitus](/tinnitus/pulsatile/) explains the causes and the signs that need urgent care. Sources: [Mayo Clinic on tinnitus](https://www.mayoclinic.org/diseases-conditions/tinnitus/symptoms-causes/syc-20350156) and [Cleveland Clinic on tinnitus](https://my.clevelandclinic.org/health/symptoms/14164-tinnitus). As of October 2026."],
     ["Earwax don'ts and safe removal", "Aggressive home cleaning is one of the most common ways wax gets pushed deeper. Do not insert cotton swabs, hairpins, or other objects; do not attempt ear candling, which has no proven benefit and carries burn risk; and do not use high-pressure irrigation without medical guidance. At California Hearing Center we focus on safe, gentle removal tailored to your ears, sometimes softening wax with drops first when appropriate, always protecting the eardrum. A [hearing test](/hearing-testing/) during the same visit can screen for other causes."],
     ["If tinnitus stays after wax is removed", "Many patients hope tinnitus will vanish the moment wax is cleared. Sometimes it does, but not always. Earwax and hearing loss can coexist, so removing wax may reveal underlying hearing changes that were already there. The brain may stay on high alert after a period of blockage, keeping tinnitus pathways active. And other factors like noise exposure, stress, medications, or TMJ may be contributing. If tinnitus persists, a fuller workup helps identify patterns and options."]
   ],
@@ -3798,14 +3815,17 @@ const rawCorePages: Record<string, PageContent> = {
     ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
     ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
     ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Pulsatile tinnitus (heartbeat sound)", "/tinnitus/pulsatile/"],
     ["Explore the tinnitus hub", "/tinnitus/"]
   ],
   takeaways: [
     "Impacted earwax can cause tinnitus, and this type often improves once the blockage is safely removed.",
     "Never dig at wax with swabs or attempt ear candling, which can push wax deeper and worsen symptoms.",
-    "Sudden, one-sided, pulsatile, or pain-related tinnitus warrants prompt medical evaluation, not just wax removal."
+    "Sudden, one-sided, pulsatile, or pain-related tinnitus warrants prompt medical evaluation, not just wax removal.",
+    "A heartbeat-like sound is usually a blood vessel issue, not wax. See our pulsatile tinnitus page."
   ],
   faqs: [
+    ["Can earwax cause pulsatile tinnitus?", "Earwax can cause tinnitus and make it more noticeable. A sound that beats with your pulse is usually caused by blood vessel conditions, according to the Mayo Clinic, so do not assume it is wax. Contact your primary care doctor, and have the ear checked for wax at the same time."],
     ["Will removing earwax get rid of my tinnitus?", "Sometimes it does, especially when a blockage is the main cause. But earwax and hearing loss can coexist, and the brain may stay on high alert, so tinnitus does not always disappear the moment wax is cleared."],
     ["Is it safe to remove earwax at home?", "Gentle over-the-counter softening drops can help some people, but avoid cotton swabs, ear candling, and high-pressure irrigation. When in doubt, let a professional evaluate your ears, especially if you have had ear surgery, tubes, or eardrum issues."],
     ["Why do my ears build up so much wax?", "Some people are simply more prone to it, including those who use earbuds or earplugs for many hours, have naturally narrow or curved canals, or have tried to clean their ears with swabs, which often pushes wax deeper."],
@@ -3861,7 +3881,7 @@ const rawCorePages: Record<string, PageContent> = {
   sections: [
     ["Before you start: safety first", "These exercises are general suggestions and do not replace medical advice. Stop immediately if you feel pain, dizziness, or worsening symptoms, and skip any movement that does not feel safe for your body. Talk with your physician first if you have neck, jaw, spine, heart, or balance issues, and seek emergency care for sudden hearing loss, severe vertigo, or neurologic symptoms."],
     ["Relaxation and breathing", "Calming your nervous system is one of the most powerful exercises you can do for tinnitus. Try slow belly breathing with slightly longer exhales than inhales, for example four seconds in and six seconds out, for three to five minutes. Progressive muscle relaxation, gently tensing and releasing each muscle group from your feet upward, pairs well with sound therapy. A simple body scan before bed can help you notice and soften areas of tension."],
-    ["Gentle neck and shoulder exercises", "Many people hold tension in the neck and shoulders, especially with long hours at computers or on phones, and in some cases this tension can make tinnitus feel more intrusive. A posture check, slow shoulder rolls, and gentle neck range-of-motion movements can all help. Keep everything smooth and comfortable, and stop if you feel pain, dizziness, or strong pulling. If your tinnitus started after a neck injury or changes when you move your neck, mention that at your appointment."],
+    ["Gentle neck and shoulder exercises", "Many people hold tension in the neck and shoulders, especially with long hours at computers or on phones, and in some cases this tension can make tinnitus feel more intrusive. A posture check, slow shoulder rolls, and gentle neck range-of-motion movements can all help. Keep everything smooth and comfortable, and stop if you feel pain, dizziness, or strong pulling. If your tinnitus started after a neck injury or changes when you move your neck, mention that at your appointment, and read our page on [somatic tinnitus and neck exercises](/somatic-tinnitus-neck/)."],
     ["Jaw and TMJ-friendly exercises", "For some people, tinnitus is linked to the jaw joint. If your tinnitus changes when you move your jaw, clench, or chew, notice whether your teeth are touching during the day; ideally they rest slightly apart with lips together. Practice small, comfortable jaw movements without forcing, and stop for any pain, clicking, or locking. Because the neck and jaw are closely connected, pairing light jaw awareness with the neck exercises above often helps."],
     ["Balance and body awareness", "Some people with tinnitus also experience imbalance, especially with inner-ear conditions like Meniere's disease. If you have significant dizziness or a history of falls, check with your physician first. Grounding through your feet near a sturdy surface and slow, mindful walking, paying attention to each step rather than the tinnitus, can help train your brain to focus outward instead of inward."],
     ["Building a simple daily routine", "You do not need to do every exercise on this page. Start small: a brief posture check and a minute of belly breathing in the morning, a short walk and body scan midday, and progressive muscle relaxation or gentle stretching as part of your evening wind-down. Pairing movement with gentle background sound and a consistent bedtime routine tends to work better than pushing hard once in a while."]
@@ -4199,7 +4219,7 @@ const rawCorePages: Record<string, PageContent> = {
   ],
   sections: [
     ["How it differs from typical tinnitus", "Most tinnitus is subjective and steady, described as ringing, hissing, buzzing, or roaring, and is usually linked to hearing loss and inner-ear changes. Pulsatile tinnitus, by contrast, has a rhythm that follows your pulse and may sometimes be heard by a clinician using a stethoscope (objective tinnitus). Both types can be distressing and can occur together. Because a physical source may be identifiable, doctors and audiologists take pulsatile tinnitus seriously and usually recommend medical evaluation."],
-    ["Possible causes and sources", "Pulsatile tinnitus is a symptom, not a diagnosis, and only a medical workup can identify the cause in your case. Possibilities include turbulent blood flow in vessels near the ear or skull, elevated blood pressure or cardiovascular changes, vessel abnormalities or malformations (such as a dural arteriovenous fistula or aneurysm), middle-ear conditions like glomus tumors or eustachian-tube problems, raised pressure inside the skull (idiopathic intracranial hypertension), and risk factors like smoking, high cholesterol, or diabetes that affect circulation."],
+    ["Possible causes and sources", "Pulsatile tinnitus is a symptom, not a diagnosis, and only a medical workup can identify the cause in your case. Possibilities include turbulent blood flow in vessels near the ear or skull, elevated blood pressure or cardiovascular changes, vessel abnormalities or malformations (such as a dural arteriovenous fistula or aneurysm), middle-ear conditions like glomus tumors or eustachian-tube problems, raised pressure inside the skull (idiopathic intracranial hypertension), and risk factors like smoking, high cholesterol, or diabetes that affect circulation. Earwax is not a usual cause of a heartbeat sound, although it can make tinnitus in general more noticeable; see our page on [earwax and tinnitus](/tinnitus/earwax/)."],
     ["When pulsatile tinnitus is a red flag", "Seek urgent medical attention if pulsatile tinnitus comes with sudden or new hearing loss, dizziness or balance problems, vision changes, double vision, or frequent severe headaches, weakness, numbness, or facial drooping, or a known history of stroke, aneurysm, or significant vascular disease. These symptoms do not always mean something dangerous is happening, but they can signal conditions that need prompt evaluation. When in doubt, call your doctor, an advice nurse, or emergency services."],
     ["How it is evaluated", "Evaluating pulsatile tinnitus is often a team effort. Your provider reviews your history (when it started, one ear or both, what makes it better or worse, whether it changes with head position or neck pressure), performs a physical exam of the ears, head, and neck, and an audiologist performs a full [hearing evaluation](/hearing-testing/) to check for hearing loss and middle-ear issues. Depending on your case, physicians may order imaging such as MRI, CT, MR angiography, or CT angiography, along with blood work or blood-pressure evaluation."],
     ["Treatment and management", "Treatment depends heavily on the underlying cause. In some cases, addressing the medical condition, for example managing blood pressure or treating a middle-ear issue, can significantly improve or even resolve pulsatile tinnitus. When it persists or remains bothersome, many of the same tools used for other tinnitus help: sound therapy and sound machines, hearing aids if hearing loss is present, Tinnitus Retraining Therapy, cognitive strategies to reduce fear, and lifestyle support for vascular and overall health. Explore our [tinnitus therapy program](/services/tinnitus-therapy/)."],
@@ -4210,6 +4230,7 @@ const rawCorePages: Record<string, PageContent> = {
     ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
     ["Sudden tinnitus: ER or not?", "/tinnitus/sudden-onset/"],
     ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Can earwax cause it?", "/tinnitus/earwax/"],
     ["Start with a hearing test", "/hearing-testing/"],
     ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
   ],
@@ -4608,7 +4629,7 @@ const rawCorePages: Record<string, PageContent> = {
   ],
   sections: [
     ["How the jaw and ear connect", "The relationship is complex, but several factors help explain it. The TMJ sits right next to the ear canal and middle ear, and muscles, ligaments, and nerves in the area interact closely. Sensory nerves from the jaw and neck feed into some of the same brain centers that process sound, so when TMJ structures are irritated, those signals can influence how tinnitus is perceived. Tight jaw and neck muscles can also change pressure around the ear and alter how you hear your own tinnitus."],
-    ["This is somatosensory tinnitus", "Tinnitus that changes when you move your jaw, neck, or head is called somatosensory tinnitus, and TMJ-related tinnitus is one example. The hallmark is that the sound can shift with movement or pressure, and that clue often points the way to the cause. Many people also clench or grind their teeth when stressed, which can raise tinnitus intensity at the same time."],
+    ["This is somatosensory tinnitus", "Tinnitus that changes when you move your jaw, neck, or head is called somatosensory tinnitus, and TMJ-related tinnitus is one example. The hallmark is that the sound can shift with movement or pressure, and that clue often points the way to the cause. Many people also clench or grind their teeth when stressed, which can raise tinnitus intensity at the same time. If the sound changes with your neck instead, see our page on [somatic tinnitus and the neck](/somatic-tinnitus-neck/)."],
     ["Signs your tinnitus may be TMJ-related", "Suspect a jaw connection if your tinnitus gets louder, softer, higher, or lower when you open wide, clench, or move your jaw side to side; if ear fullness, pressure, or mild ear pain arrive alongside jaw pain, clicking, morning soreness, or temple headaches; if tinnitus, fullness, and jaw pain are all stronger on the same side; or if you clench during the day, grind at night, and notice the sound is louder during stressful periods."],
     ["When it is likely not just TMJ", "Even with jaw symptoms, tinnitus is not always primarily TMJ-related. Red flags that suggest a broader problem include sudden hearing loss, a heartbeat or whooshing sound in time with your pulse, severe vertigo or balance changes, neurological symptoms such as facial weakness or numbness, or persistent ear pain or drainage. These can overlap with sudden hearing loss, Meniere's disease, or vascular tinnitus, so do not assume it is just TMJ, seek prompt care."],
     ["Who to see and how it is evaluated", "TMJ-related tinnitus is usually managed by a team: an audiologist evaluates hearing, tinnitus, and ear health; a dentist or TMJ specialist assesses the jaw joint, bite, and muscle tension; and sometimes a physical therapist addresses neck and posture issues. At California Hearing Center we begin with a full [hearing and tinnitus evaluation](/hearing-testing/), ask how the sound changes with jaw movement, document your baseline, and coordinate with your TMJ providers."],

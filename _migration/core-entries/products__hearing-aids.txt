@@ -20,7 +20,7 @@
   bulletLinks: [
     ["Compare brands", "/products/hearing-aids-by-brand/"],
     ["What hearing aids cost", "/hearing-aid-cost/"],
-    ["Financing (CareCredit)", "/hearing-aid-financing/"],
+    ["Financing", "/hearing-aid-financing/"],
     ["The fitting process", "/hearing-aid-fitting/"],
     ["Book a hearing test", "/hearing-testing/"],
     ["Free second opinion on a quote", "/hearing-aid-second-opinion/"],

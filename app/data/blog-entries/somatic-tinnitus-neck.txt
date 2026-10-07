@@ -1,0 +1,49 @@
+  "/somatic-tinnitus-neck/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Tinnitus & Sound Sensitivity",
+    headline: "Somatic Tinnitus and Neck Exercises: What to Know",
+    metaTitle: "Somatic Tinnitus and Neck Exercises: What to Know",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Does your tinnitus change when you move your neck? Learn what somatic tinnitus is, how it is checked, what helps, and which signs need urgent care.",
+    intro: [
+      "Somatic tinnitus is ringing or buzzing that changes when you move your neck, head or jaw. This page covers the neck. A published narrative review calls the neck-related type cervicogenic somatic tinnitus. The review says it comes from changed sensory signals from the cervical spine, and not from the hearing system itself. There is no single neck exercise that treats it. A physical therapist, after an exam, builds the plan. See a clinician first, especially if the sound began after a neck injury.",
+      "Jaw-related tinnitus has its own page: read our guide to [TMJ and tinnitus](/tinnitus/tmj/). For general gentle movement and relaxation, see our page on [tinnitus relief exercises](/tinnitus/exercises/).",
+    ],
+    takeaways: [
+      "Somatic tinnitus changes in pitch or loudness when you move your neck, head or jaw. Cervicogenic somatic tinnitus is the neck-related type.",
+      "A hearing test and an ear exam come first. They rule out ear causes that need different care.",
+      "Physical therapy is described as the cornerstone of treatment, but the evidence is mostly small studies and clinical observation.",
+      "Sudden hearing loss, ringing that beats with your pulse, severe dizziness, or stroke signs need urgent care, not neck exercises.",
+    ],
+    sections: [
+      ["What somatic tinnitus is", "Most tinnitus starts in the ear or in how the brain handles sound. Somatic tinnitus is different. The sound is changed by input from the body, such as the neck, jaw or shoulders. A narrative review describes cervicogenic somatic tinnitus as tinnitus that arises from altered sensory input from the cervical spine, the bones and muscles of the neck. It lists neck conditions commonly associated with it, including degenerative disc disease, cervical spondylosis, whiplash, and neck muscle spasm. It also says how common the condition is has not been well documented."],
+      ["Signs your tinnitus may involve the neck", "Clues include a sound that gets louder, softer, higher or lower when you turn, tilt, bend or hold your head in a position. Others are neck pain or stiffness, a past neck injury or whiplash, and a sound that changes after you press on a tight muscle. The review says clinicians ask which neck postures or movements make tinnitus better or worse, and ask about neck pain, stiffness and injury. Notice and write down what you see, but do not try to force a movement to prove it. A pattern is a clue to share with a clinician, not a diagnosis."],
+      ["How it is checked", "The review says diagnosis is clinical. A clinician takes a history, examines the neck and nervous system, and uses provocative tests: they move the neck through rotation, extension and flexion to see whether the tinnitus changes. It says hearing tests such as pure tone audiometry, tympanometry, otoacoustic emissions and auditory brainstem response help rule out ear causes. Imaging, such as MRI or CT, is used in some cases. At our offices we start with a [hearing and tinnitus evaluation](/hearing-testing/) and ask how the sound changes with movement. If the pattern points to the neck, we suggest you see your physician or a physical therapist, and we keep working on the hearing side with you."],
+      ["Does physical therapy help?", "The review calls physical therapy, including manual therapy, exercise and posture education, the cornerstone of care for cervicogenic somatic tinnitus. It also describes other options, such as medicines, nerve blocks and acupuncture, and notes that some newer ones are still being explored. It is also candid about the evidence. The authors say the condition is supported mainly by smaller studies and clinical observation, and that the wording in the literature is tentative. So it is fair to say physical therapy may help some people, and that we cannot promise a result. If your tinnitus changes with your neck, it is reasonable to ask your physician about a physical therapy referral."],
+      ["Neck exercises: what is reasonable", "We do not prescribe a neck program on this page, because the right exercises depend on what an exam finds. Our general page on [tinnitus relief exercises](/tinnitus/exercises/) suggests a posture check, slow shoulder rolls and gentle neck movement within a comfortable range. Keep everything smooth. Stop if you feel pain, dizziness or strong pulling. Skip any movement that does not feel safe for your body. Do not stretch or twist hard to try to make the sound change. If you have neck, spine or balance problems, check with your physician first."],
+      ["Cautions for manual therapy", "The review says manual therapy is contraindicated in people with severe osteoporosis, rheumatoid arthritis, or cervical spine fractures, and that each patient should be assessed on their own for safety. Tell any therapist about these conditions, about a past neck injury, and about dizziness. The review also proposes that blood-flow effects from muscle spasm or vertebral artery compression might play a part for some people. That is a theory, not something to test at home."],
+      ["When it is not just the neck: get care first", "Seek urgent care for sudden hearing loss in one or both ears. The National Institute on Deafness and Other Communication Disorders (NIDCD) calls it a medical emergency. Get prompt care for ringing that beats in time with your pulse (see our page on [pulsatile tinnitus](/tinnitus/pulsatile/)), for tinnitus in one ear only (see [tinnitus in one ear](/tinnitus/one-ear/)), and for severe dizziness or imbalance. Call 911 for sudden trouble walking, trouble seeing, numbness or weakness in the face, arm or leg, confusion or trouble speaking, or a severe headache with no known cause, which are stroke signs on the CDC list. If you had a head or neck injury, tell the clinician."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cervicogenic Somatic Tinnitus: A Narrative Review Exploring Non-otologic Causes (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11346753/), [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness) and [CDC: Signs and Symptoms of Stroke](https://www.cdc.gov/stroke/signs-symptoms/index.html). We could not open the systematic reviews of physical therapy for tinnitus in time to cite their results."],
+      ["Medical information notice", "This page is for general information and is not medical advice. To book a hearing and tinnitus evaluation, call 650-342-9449 at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street. Our [tinnitus therapy program](/services/tinnitus-therapy/) is described on its own page."],
+    ],
+    bullets: ["Changes with neck movement", "Hearing test first", "Physical therapy referral", "Gentle movement only", "Manual therapy cautions", "Red flags need urgent care"],
+    faqs: [
+      ["What is somatic tinnitus?", "It is tinnitus that changes with input from the body, such as neck, head or jaw movement. The neck-related type is called cervicogenic somatic tinnitus."],
+      ["Can neck problems cause tinnitus?", "They can in some people. A published narrative review describes tinnitus that arises from altered sensory input from the cervical spine, and lists conditions such as degenerative disc disease, whiplash and neck muscle spasm. A hearing test and exam should rule out ear causes first."],
+      ["What are the best neck exercises for tinnitus?", "No single exercise has been proven. Gentle posture work, shoulder rolls and comfortable neck movement are reasonable if you have no warning signs. A physical therapist can design a plan after an exam."],
+      ["Does physical therapy help somatic tinnitus?", "The review calls it the cornerstone of treatment, but says the evidence is mainly smaller studies and clinical observation. Some people improve and we cannot promise a result."],
+      ["When should I worry about tinnitus and my neck?", "Get urgent care for sudden hearing loss, ringing that beats with your pulse, ringing in one ear only, severe dizziness, or stroke signs. Call 911 for stroke signs."],
+    ],
+    image: "/assets/blog/somatic-tinnitus-neck-1.svg",
+    imageLabel: "Somatic tinnitus: when neck movement changes the sound",
+    imageAlt: "Somatic tinnitus and neck exercises explained with a sound wave icon on a teal card",
+    image2: "/assets/blog/somatic-tinnitus-neck-2.svg",
+    image2Label: "Five steps when tinnitus changes with your neck",
+    image2Alt: "Five steps to take when somatic tinnitus changes with neck movement",
+    image2Caption: "Check hearing first. Gentle movement only. Red flags need urgent care.",
+  },

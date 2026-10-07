@@ -25,7 +25,7 @@
     ["A patient's journey to better hearing", "/a-patients-journey-to-better-hearing/"],
     ["Insurance & Medicare", "/resources/insurance/"],
     ["What hearing aids cost", "/hearing-aid-cost/"],
-    ["Financing (CareCredit)", "/hearing-aid-financing/"],
+    ["Financing", "/hearing-aid-financing/"],
     ["HearingUp approved provider", "/resources/hearingup-approved-provider/"],
     ["Contact us to sign up", "/contact/"]
   ],

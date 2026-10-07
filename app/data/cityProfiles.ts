@@ -58,6 +58,11 @@ export type CityProfile = {
   onCaltrain?: boolean;
 
   consolidatedInto?: string | null;
+
+  // Optional hand-written title tag and meta description for the main city page
+  // (not the city x service pages). Use only when the templated ones underperform.
+  metaTitle?: string;
+  metaDescription?: string;
 };
 
 // Two office anchors, referenced in copy + schema.
@@ -1246,6 +1251,8 @@ export const cityProfiles: Record<string, CityProfile> = {
       ["Which office serves Menlo Park?", "Our San Carlos office is closest, about 12 minutes from most of Menlo Park via the 101 or El Camino Real. Call 650-342-9449 to schedule."],
     ],
     onCaltrain: true,
+    metaTitle: "Audiologist in Menlo Park: Hearing Tests and Aids",
+    metaDescription: "Menlo Park hearing tests, hearing aids and tinnitus care at our San Carlos office, 1008 Laurel Street. Real-ear verified fittings. Call 650-342-9449.",
   },
 
   // ---------------------------------------------------------------- FAR / REGIONAL
@@ -1989,13 +1996,16 @@ export const cityProfiles: Record<string, CityProfile> = {
     whyHere:
       "San Francisco patients come to us for meticulous testing, honest technology recommendations, and specialized [tinnitus care](/tinnitus/) that can be hard to find in a busy city practice. Many first drove down for a stubborn tinnitus problem or a second opinion and stayed because they see the same audiologist every visit.",
     landmarks:
-      "We are roughly 20-30 minutes from the Sunset, the Mission, downtown, and the city's southern neighborhoods, down the 101 or 280 to our San Mateo office.",
+      "We are roughly 20-30 minutes from the Sunset, the Mission, downtown, and the city's southern neighborhoods, down the 101 or 280 to our San Mateo office, at 88 N. San Mateo Drive. We have no office in San Francisco. Caltrain's schedule tables show sample San Mateo-to-San Francisco trips of about 23 to 29 minutes (checked October 2026).",
     faqs: [
+      ["Where can I get a hearing test or hearing aids near San Francisco?", "We have no office in San Francisco. Our San Mateo office, at 88 N. San Mateo Drive, offers hearing tests, hearing aid fittings and tinnitus care for San Francisco patients, and our San Carlos office is at 1008 Laurel Street. Call 650-342-9449 to book."],
       ["Why do my hearing aids act up in the Sunset and Richmond?", "Those neighborhoods sit under the fog belt, and the constant marine humidity lets moisture build up inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices, nightly drying, and regular cleaning prevent most of it."],
       ["Is it worth driving down from the city instead of finding someone in San Francisco?", "For routine care, plenty of city residents make the short trip south for our testing standards and tinnitus focus. It's 20-30 minutes down the 101 or 280, and we make each visit thorough so it's worth the drive."],
       ["Do you test hearing for noisy restaurants and meetings?", "Yes. We do speech-in-noise testing and real-ear verification specifically so your hearing aids perform where San Franciscans struggle most — loud restaurants, open offices, and busy rooms. Call 650-342-9449 to book."],
     ],
     onCaltrain: true,
+    metaTitle: "Hearing Test and Hearing Aids for San Francisco Patients",
+    metaDescription: "No office in San Francisco: our San Mateo office offers hearing tests, hearing aids and tinnitus care for city patients. Call 650-342-9449.",
   },
   "san-jose": {
     name: "San Jose",

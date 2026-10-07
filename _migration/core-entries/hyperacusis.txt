@@ -16,6 +16,7 @@
   ],
   bulletLinks: [
     ["Coping and gradual exposure", "/hyperacusis/coping/"],
+    ["Is hyperacusis permanent?", "/is-hyperacusis-permanent/"],
     ["When to seek help (red flags)", "/hyperacusis/when-to-seek-help/"],
     ["Start with a hearing test", "/hearing-testing/"],
     ["Tinnitus and sound sensitivity", "/tinnitus/"],

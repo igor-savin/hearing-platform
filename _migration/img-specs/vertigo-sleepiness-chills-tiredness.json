@@ -1,0 +1,34 @@
+{
+  "slug": "vertigo-sleepiness-chills-tiredness",
+  "hero": {
+    "title": "Vertigo & Tiredness",
+    "icon": "brain",
+    "accent": "gold"
+  },
+  "info": {
+    "title": "Vertigo, Tiredness and Chills",
+    "subtitle": "Five things to know",
+    "rows": [
+      {
+        "title": "Tiredness is common",
+        "desc": "The brain works harder to stay balanced"
+      },
+      {
+        "title": "Some medicines cause drowsiness",
+        "desc": "Do not drive if you feel sleepy"
+      },
+      {
+        "title": "Chills are not typical",
+        "desc": "Not a listed inner-ear symptom"
+      },
+      {
+        "title": "Fever needs prompt care",
+        "desc": "Dizziness with fever: call a clinician"
+      },
+      {
+        "title": "Red flags: call 911",
+        "desc": "Trouble speaking, seeing or walking"
+      }
+    ]
+  }
+}

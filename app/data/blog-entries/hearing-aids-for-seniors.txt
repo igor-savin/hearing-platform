@@ -1,18 +1,21 @@
   "/hearing-aids-for-seniors/": {
     kicker: "Choosing Hearing Aids",
     headline: "Hearing Aids for Seniors: A Practical Guide",
-    metaTitle: "Hearing Aids for Seniors: A Practical Guide",
+    metaTitle: "Hearing Aids for Seniors: Types, Features and Costs",
     variant: "product",
     datePublished: "2025-05-11",
-    dateModified: "2026-08-25",
+    dateModified: "2026-10-07",
     metaDescription:
-      "A plain guide to hearing aids for seniors: styles, rechargeable options, what a fitting involves, and how to choose a device that fits real daily life.",
+      "Hearing aids for seniors: behind-the-ear and in-the-ear styles, rechargeable batteries, Bluetooth, cost and coverage. A plain guide from our audiologists.",
     intro: [
+      "The best hearing aid for most seniors is one that is easy to handle and set to their own hearing test. For many people that is a behind-the-ear style with a rechargeable battery, because it is simple to put in and has larger controls. Others prefer a custom in-the-ear style that sits out of sight. Your hearing test, your hands and eyesight, and the places you most want to hear decide which one is right. As of October 2026, Original Medicare does not cover hearing aids, but Medi-Cal and some Medicare Advantage plans do. Our guides to [what hearing aids cost](/hearing-aid-cost/) and to [Medi-Cal coverage](/medi-cal-hearing-aids/) explain the price side.",
       "The hearing aid a parent wore twenty years ago and the one an audiologist fits today share a name and little else. The old model was often a beige lump that whistled and turned every sound up at once. A modern [hearing aid](/products/hearing-aids/) is smaller, adjusts itself to the room, and can lift a grandchild's voice out of the clatter of a restaurant. For an older adult weighing whether the effort is worth it, that gap is the whole story.",
       "What makes a device right for a senior is rarely the feature list. It comes down to fit with daily life: steady enough hands to manage a tiny battery, eyesight for the controls, the rooms and gatherings where hearing matters most, and how much high-frequency sound has already faded. A [hearing evaluation](/hearing-testing/) measures that last piece precisely, which is why a sensible choice starts there rather than in a catalog.",
       "Our audiologists in San Mateo and San Carlos fit hearing aids for older adults every week, and the pattern holds: the people who do best are not the ones who bought the priciest model, but the ones whose device suited their hands, their ears, and their routine. You can read how current patients describe that experience in our [reviews](/reviews/).",
     ],
     takeaways: [
+      "Most seniors do best with an easy-to-handle style fitted to their own hearing test. Behind-the-ear with a rechargeable battery suits many.",
+      "As of October 2026, Original Medicare does not cover hearing aids. Medi-Cal and some Medicare Advantage plans do.",
       "Modern devices are smaller, clearer, and far easier to handle than older models.",
       "The right style depends on dexterity, vision, lifestyle, and degree of loss — not price alone.",
       "A proper fitting and steady follow-up matter more than the brand on the box.",

@@ -5620,15 +5620,15 @@ export const crawledPages: SitePage[] = [
     "path": "/hearing-aid-cost/",
     "title": "How Much Do Hearing Aids Cost? | California Hearing Center",
     "h1": "How Much Do Hearing Aids Cost?",
-    "desc": "Hearing aids typically cost about $1,000–$4,000+ per device. See what drives the price, what's included, and how insurance, CareCredit financing & HSA/FSA make it affordable.",
+    "desc": "Hearing aids typically cost about $1,000–$4,000+ per device. See what drives the price, what's included, and how insurance, financing & HSA/FSA make it affordable.",
     "h2": [],
     "paragraphs": []
   },
   {
     "path": "/hearing-aid-financing/",
-    "title": "Hearing Aid Financing with CareCredit | California Hearing Center",
-    "h1": "Financing Your Hearing Aids with CareCredit",
-    "desc": "California Hearing Center offers CareCredit financing so you can pay for hearing aids in manageable monthly payments — combined with your insurance benefit and HSA/FSA funds.",
+    "title": "Hearing Aid Financing and Payment Plans | California Hearing Center",
+    "h1": "Hearing Aid Financing and Payment Plans",
+    "desc": "Hearing aid financing and payment plans at California Hearing Center. Spread the cost, use your benefits first, and get the right device. Call 650-342-9449.",
     "h2": [],
     "paragraphs": []
   },
@@ -5749,6 +5749,78 @@ export const crawledPages: SitePage[] = [
     "title": "Legato Frames AI Hearing Glasses: $999, Explained | California Hearing Center",
     "h1": "Legato Frames: The $999 AI Hearing Glasses, Explained",
     "desc": "Legato's AI hearing glasses launched Oct 1 from $999. See how they work, who they suit, and when to get a hearing test first.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/costco-hearing-test/",
+    "title": "Costco Hearing Test: Cost, Appointment and What's Included | California Hearing Center",
+    "h1": "Costco Hearing Test: Cost, Appointments and What It Includes",
+    "desc": "Costco says its hearing test is free for members 18 and older and takes about an hour. See how to book it and how an audiology exam differs.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/dizziness-and-eye-twitching/",
+    "title": "Dizziness and Eye Twitching: Causes and When to Get Checked | California Hearing Center",
+    "h1": "Dizziness and Eye Twitching: Causes and When to Get Checked",
+    "desc": "Dizziness with eye twitching is often two common problems at once. Learn the inner-ear causes, what the twitch may be, and which signs mean call 911.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/toynbee-maneuver/",
+    "title": "Toynbee Maneuver: How It Works and When to Stop | California Hearing Center",
+    "h1": "Toynbee Maneuver: How It Works and When to Stop",
+    "desc": "The Toynbee maneuver: pinch your nose, close your mouth, and swallow. How it helps a blocked ear, how it differs from Valsalva, and when to stop.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/custom-earplugs/",
+    "title": "Custom Earplugs: Sleep, Swimming, Concerts and Work | California Hearing Center",
+    "h1": "Custom Earplugs for Sleep, Swimming, Concerts and Work",
+    "desc": "We make custom earplugs at our San Mateo and San Carlos offices. See how they are made and which type fits sleep, swimming, concerts or work.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/dry-flaky-earwax/",
+    "title": "Dry, Flaky Earwax: What It Means and When to Worry | California Hearing Center",
+    "h1": "Dry, Flaky Earwax: What It Means",
+    "desc": "Dry, flaky, gray or tan earwax is usually a normal wax type set by your genes. Learn what it means, what is not normal, and when to see someone.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/medi-cal-hearing-aids/",
+    "title": "Does Medi-Cal Cover Hearing Aids? Rules and Limits | California Hearing Center",
+    "h1": "Does Medi-Cal Cover Hearing Aids? Rules and Limits",
+    "desc": "Yes, Medi-Cal covers hearing aids, up to a yearly limit for most adults. See what counts, who is exempt, and how to start. Checked October 2026.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/somatic-tinnitus-neck/",
+    "title": "Somatic Tinnitus and Neck Exercises: What to Know | California Hearing Center",
+    "h1": "Somatic Tinnitus and Neck Exercises: What to Know",
+    "desc": "Does your tinnitus change when you move your neck? Learn what somatic tinnitus is, how it is checked, what helps, and which signs need urgent care.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/is-hyperacusis-permanent/",
+    "title": "Is Hyperacusis Permanent? Outlook and Recovery | California Hearing Center",
+    "h1": "Is Hyperacusis Permanent? Outlook and Recovery",
+    "desc": "Is hyperacusis permanent? There is no cure, but many people improve. See what recovery looks like, why pain hyperacusis is slower, and when to get help.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/vertigo-sleepiness-chills-tiredness/",
+    "title": "Vertigo and Sleepiness, Chills and Tiredness: Why | California Hearing Center",
+    "h1": "Vertigo and Sleepiness, Chills and Tiredness",
+    "desc": "Does vertigo make you sleepy? Can it cause chills? Learn why vertigo comes with tiredness, what chills may mean, and which signs need prompt care.",
     "h2": [],
     "paragraphs": []
   },
