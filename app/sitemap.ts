@@ -1,3 +1,4 @@
+import { PLAN_INDEXABLE } from "./data/hearingPlan";
 import type { MetadataRoute } from "next";
 import { crawledPages } from "./data/crawledPages";
 import { redirectedPaths } from "./data/redirectedPaths";
@@ -87,6 +88,7 @@ function imagesFor(path: string): string[] {
 export default function sitemap(): MetadataRoute.Sitemap {
   return crawledPages
     .filter((p) => !EXCLUDE.has(p.path))
+    .filter((p) => PLAN_INDEXABLE || p.path !== "/hearing-plan/")
     .filter((p) => !redirectedPaths.has(p.path))
     .map((p) => {
       const lastModified = lastModifiedFor(p.path);

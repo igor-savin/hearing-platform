@@ -137,6 +137,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/hearing-plan/",
+    "title": "Hearing Aid Buyer's Guide and Quote Check | California Hearing Center",
+    "h1": "Your Hearing Plan",
+    "desc": "A free, plain guide to getting your hearing checked, what hearing aids cost, and how to check any quote. No sign-up. Checklists you can print.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/practice-facts/",
     "title": "Practice Facts | California Hearing Center",
     "h1": "Practice Facts",
