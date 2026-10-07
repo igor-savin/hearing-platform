@@ -31,7 +31,7 @@ const DEFAULT_OG_IMAGE = "/og.jpg";
 const OG_SITE = { siteName: "California Hearing Center", locale: "en_US" } as const;
 // og.jpg is 1200x630. Declaring it lets Facebook and LinkedIn lay the card out
 // on first scrape instead of showing a blank box until they fetch the file.
-const DEFAULT_OG_IMAGE_SIZED = { url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "California Hearing Center" };
+const DEFAULT_OG_IMAGE_SIZED = { url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: "California Hearing Center: hearing tests and hearing aids in San Mateo and San Carlos" };
 
 function metaDescription(page: SitePage): string {
   if (page.desc && page.desc !== GENERIC_DESC) return page.desc.slice(0, 160);

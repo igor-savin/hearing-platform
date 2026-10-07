@@ -3852,7 +3852,7 @@ export const blogPosts: Record<string, PageContent> = {
     image: "/assets/blog/oticon-reveal-what-we-know-1.svg",
     imageLabel: "Oticon Reveal, launched August 2026",
     image2: "/assets/blog/oticon-reveal-what-we-know-2.svg",
-    image2Label: "Confirmed, claimed, and unknown",
+    image2Label: "Oticon Reveal: what is confirmed, what is claimed, and what is unknown",
     image2Caption: "Ten days after launch, the evidence base is thinner than the headlines suggest.",
   },
 
@@ -3985,7 +3985,7 @@ export const blogPosts: Record<string, PageContent> = {
     image: "/assets/blog/phonak-eon-what-we-know-1.svg",
     imageLabel: "Phonak EON, launched August 24, 2026",
     image2: "/assets/blog/phonak-eon-what-we-know-2.svg",
-    image2Label: "Confirmed, claimed, and unknown",
+    image2Label: "Phonak EON: what is confirmed, what is claimed, and what is unknown",
     image2Caption: "The headline claim is footnoted to a study of the previous platform, published in 2024.",
   },
 
@@ -4352,7 +4352,7 @@ export const blogPosts: Record<string, PageContent> = {
     image: "/assets/blog/signia-max-what-we-know-1.svg",
     imageLabel: "Signia MaX, launched August 24, 2026",
     image2: "/assets/blog/signia-max-what-we-know-2.svg",
-    image2Label: "Confirmed, claimed, and unknown",
+    image2Label: "Signia MaX: what is confirmed, what is claimed, and what is unknown",
     image2Caption: "On launch day, the evidence base is thinner than the headlines suggest.",
   },
 

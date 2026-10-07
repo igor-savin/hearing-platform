@@ -104,7 +104,7 @@ export const metadata: Metadata = {
       "See how sound travels through the ear—and how modern hearing technology helps every word arrive more clearly.",
     // Explicit dimensions let Facebook and LinkedIn lay the card out on first
     // scrape instead of rendering a blank box until they fetch the image.
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "California Hearing Center" }],
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "California Hearing Center: hearing tests and hearing aids in San Mateo and San Carlos" }],
   },
   twitter: {
     card: "summary_large_image",

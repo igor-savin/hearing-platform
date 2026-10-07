@@ -1476,7 +1476,7 @@ function buildPageContent(page: SitePage): PageContent {
     takeaways: ["California Hearing Center supports patients with hearing care, tinnitus care, hearing technology, and education.", "Helpful pages should answer patient questions clearly and make next steps obvious.", "Structured headings, FAQs, and related links help both people and search engines understand the page."],
     faqs: [["What does California Hearing Center help with?", "The practice helps with hearing tests, hearing aids, fittings, tinnitus, hearing protection, repairs, resources, insurance questions, and follow-up care."], ["Where is California Hearing Center located?", "California Hearing Center has offices in San Mateo and San Carlos, serving patients across the Peninsula and Bay Area."], ["How should I choose my next page?", "Start with services for care options, tinnitus pages for ringing or sound sensitivity, hearing aid pages for technology, or contact for scheduling help."]],
     image: "/assets/hearing-aids-hearing-test-san-mateo-hero.webp",
-    imageLabel: "California Hearing Center"
+    imageLabel: "Hearing tests and hearing aids at California Hearing Center, San Mateo"
   };
 }
 
@@ -1898,10 +1898,10 @@ function InnerPage({ page }: { page: SitePage }) {
                           aria-label={`${content.image2Label || "Figure"} — open the full-size version`}
                           style={{ display: "block", cursor: "zoom-in" }}
                         >
-                          <SiteImage src={content.image2} alt={content.image2Alt || content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
+                          <SiteImage src={content.image2} alt={content.image2Alt || content.image2Label || plain(content.headline)} sizes="(max-width: 860px) 100vw, 760px" />
                         </a>
                       ) : (
-                        <SiteImage src={content.image2} alt={content.image2Alt || content.image2Label || ""} sizes="(max-width: 860px) 100vw, 760px" />
+                        <SiteImage src={content.image2} alt={content.image2Alt || content.image2Label || plain(content.headline)} sizes="(max-width: 860px) 100vw, 760px" />
                       )}
                       {content.image2Caption && <figcaption>{content.image2Caption}</figcaption>}
                     </figure>
@@ -1969,7 +1969,7 @@ function InnerPage({ page }: { page: SitePage }) {
         </article>
         <aside className="sidebar-card">
           <div className="page-visual">
-            <SiteImage src={content.image} alt={content.imageAlt || content.imageLabel || ""} box={{ width: 260, height: 185 }} />
+            <SiteImage src={content.image} alt={content.imageAlt || content.imageLabel || plain(content.headline)} box={{ width: 260, height: 185 }} />
             <span>{content.imageLabel}</span>
           </div>
           {isCareer ? (
@@ -2168,7 +2168,7 @@ function HomePage() {
           <p>The Inspired by Ida label is a benchmark of quality awarded to clinics dedicated to providing person-centered care. California Hearing Center is proud to be <strong>the first clinic in the world</strong> to receive this prestigious label, demonstrating our commitment to you and to high-quality hearing healthcare.</p>
           <p>We take the time to discover what you need, what fits the way you live, and what matters to you most.</p>
           <a className="ida-inline" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <SiteImage src="/assets/ida-institute-person-centered-care-clinic-badge.webp" alt="Inspired by Ida — person-centered care label" box={{ width: 54, height: 54 }} />
+            <SiteImage src="/assets/ida-institute-person-centered-care-clinic-badge.webp" alt="Ida Institute person-centered care badge" box={{ width: 54, height: 54 }} />
             <span>Learn how person-centered care leads to better hearing care</span>
           </a>
         </div>
@@ -2499,7 +2499,7 @@ function BlogIndex() {
               {groups[category].map(({ path, post }) => (
                 <a className="blog-card" href={path} key={path}>
                   <div className="blog-card-img">
-                    <SiteImage src={blogPhotos[path] ?? post.image} alt={post.imageLabel || ""} sizes="(max-width: 700px) 100vw, 380px" />
+                    <SiteImage src={blogPhotos[path] ?? post.image} alt={post.imageLabel || plain(post.headline)} sizes="(max-width: 700px) 100vw, 380px" />
                   </div>
                   <div className="blog-card-body">
                     <p className="blog-card-kicker">{post.kicker}</p>
@@ -2682,7 +2682,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//88+N.+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
-            <SiteImage src="/assets/california-hearing-center-google-verified-reviews.webp" alt="See our Patient Reviews" box={{ width: 142, height: 89 }} />
+            <SiteImage src="/assets/california-hearing-center-google-verified-reviews.webp" alt="Google verified patient reviews for California Hearing Center" box={{ width: 142, height: 89 }} />
           </a>
           <section className="footer-location">
             <h2 className="footer-heading">San Carlos</h2>
@@ -2691,7 +2691,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <SiteImage src="/assets/ida-institute-person-centered-care-clinic-badge.webp" alt="Ida Institute" box={{ width: 96, height: 96 }} />
+            <SiteImage src="/assets/ida-institute-person-centered-care-clinic-badge.webp" alt="Ida Institute person-centered care badge" box={{ width: 96, height: 96 }} />
             <span>Explore the Ida Institute</span>
           </a>
         </div>
