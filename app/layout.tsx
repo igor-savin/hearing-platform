@@ -229,10 +229,25 @@ const organizationSchema = {
     { "@type": "City", name: "San Carlos" },
     { "@type": "AdministrativeArea", name: "San Francisco Bay Area" },
   ],
-  // Google Business Profile listings for the two offices.
+  // Every third-party record we have verified as this practice. sameAs is how we
+  // tell Google which listings are us; a live listing we do not claim here is
+  // prominence we have earned and then declined to collect. Audited 2026-09-29
+  // by live search. Two records are deliberately absent because they carry
+  // legacy entity names a patient would not recognise and claiming them would
+  // confirm the wrong name: the Zocdoc profile ("California Hearing and
+  // Research Institute Inc") and MyAudiologyDirectory ("California Hearing
+  // Center and Audiology Services Inc."). Add them once the names are fixed.
   sameAs: [
+    // Google Business Profile listings for the two offices.
     "https://www.google.com/search?q=California+Hearing+Center&stick=H4sIAAAAAAAAAONgU1I1qLAwsEizTDU3MbIwNEixMEuzMqhISTM3M05NNk5KNTC0NLAwXsQq6ZyYk5mWX5SXmajgkZpYlJmXruCcmleSWgQAfY_KOkUAAAA",
     "https://www.google.com/search?q=California+Hearing+Center&stick=H4sIAAAAAAAAAONgU1I1qLAwsEhLNDK0TDY2TrRINE-zMqgwT01NSTJLNk9JMk42SUlLWcQq6ZyYk5mWX5SXmajgkZpYlJmXruCcmleSWgQAW8hyKkUAAAA",
+
+    // Social.
+    "https://www.facebook.com/CaliforniaHearingCenter/",
+
+    // Review and consumer hearing directories.
+    "https://www.yelp.com/biz/california-hearing-center-san-mateo-4",
+    "https://www.healthyhearing.com/hearing-aids/34062-california-hearing-center-san-mateo",
   ],
   // No top-level openingHoursSpecification: the two offices keep different
   // hours, and a parent-level schedule showed San Mateo's hours on San Carlos
