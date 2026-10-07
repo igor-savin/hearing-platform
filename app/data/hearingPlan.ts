@@ -17,9 +17,9 @@
 //  5. Facts about the practice come from the rest of the site, not from memory.
 
 export const PLAN_PATH = "/hearing-plan/";
-export const PLAN_TITLE = "Hearing Aid Buyer's Guide and Quote Check | California Hearing Center";
+export const PLAN_TITLE = "Hearing Aid Buyer's Guide for Any Audiologist | California Hearing Center";
 export const PLAN_DESC =
-  "A free, plain guide to getting your hearing checked, what hearing aids cost, and how to check any quote. No sign-up. Checklists you can print.";
+  "A free, plain guide to use with any audiologist or hearing aid provider: what a good first visit includes, what hearing aids cost, and how to check any quote. No sign-up. Checklists you can print.";
 
 /** Day the words on this page were last checked. */
 export const PLAN_REVIEWED = "October 6, 2026";
@@ -398,9 +398,12 @@ export const METHOD = {
   ],
 };
 
-/** True only when a named audiologist has signed off AND the flag is set. */
-export const PLAN_INDEXABLE =
-  process.env.NEXT_PUBLIC_HEARING_PLAN_REVIEWED === "true" && REVIEWED_BY !== "";
+/**
+ * The page is public and indexed. It is a patient's guide to approaching any
+ * provider, not a clinical protocol. Do not add a "Reviewed by" line unless a
+ * named audiologist really signs off: fill in REVIEWED_BY and REVIEWED_ON.
+ */
+export const PLAN_INDEXABLE = true;
 
 export const SCHEDULE_URL =
   "https://www.zocdoc.com/practice/california-hearing-and-research-institute-inc-72249";

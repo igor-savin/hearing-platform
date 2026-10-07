@@ -203,6 +203,7 @@ const nav: NavItem[] = [
       ["A Patient's Journey to Better Hearing", "/a-patients-journey-to-better-hearing/"],
       ["Insurance", "/resources/insurance/"],
       ["Hearing Aid Cost", "/hearing-aid-cost/"],
+      ["Hearing Aid Buyer's Guide", "/hearing-plan/"],
       ["Financing (CareCredit)", "/hearing-aid-financing/"],
       ["HearingUp Approved Provider", "/resources/hearingup-approved-provider/"],
       ["Audiology Associates of Westchester", "/audiology-associates-of-westchester/"],

@@ -78,7 +78,7 @@ export function HearingPlanPage() {
             "@type": "WebPage",
             "@id": `${SITE}${PLAN_PATH}#webpage`,
             url: `${SITE}${PLAN_PATH}`,
-            name: "Hearing Aid Buyer's Guide and Quote Check",
+            name: "Hearing Aid Buyer's Guide for Any Audiologist",
             dateModified: "2026-10-06",
             isPartOf: { "@id": `${SITE}/#website` },
             publisher: { "@id": `${SITE}/#organization` },
@@ -89,17 +89,16 @@ export function HearingPlanPage() {
         <h1>Your Hearing Plan</h1>
         <p className="hp-meta">
           Last checked {PLAN_REVIEWED}. Next check {PLAN_NEXT_REVIEW}.
-          {PLAN_INDEXABLE && REVIEWED_BY ? ` Reviewed by ${REVIEWED_BY}${REVIEWED_ON ? `, ${REVIEWED_ON}` : ""}.` : ""}
+          {REVIEWED_BY ? ` Reviewed by ${REVIEWED_BY}${REVIEWED_ON ? `, ${REVIEWED_ON}` : ""}.` : ""}
         </p>
         <p>
           A free, plain guide to getting your hearing checked, what hearing aids cost, and how to check any quote. There is no
-          sign-up. Use it with any provider, including one that is not us.
+          sign-up.
         </p>
-        {!PLAN_INDEXABLE && (
-          <p className="hp-review" role="note">
-            <strong>Draft for audiologist review.</strong> An audiologist has not yet signed off on this page.
-          </p>
-        )}
+        <p>
+          <strong>This guide works with any audiologist.</strong> Print it. Take it to any clinic you visit, including one that
+          is not us. The questions and the quote check are the same wherever you go. A good provider will welcome them.
+        </p>
 
         <StartHere />
 
