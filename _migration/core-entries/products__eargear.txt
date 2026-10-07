@@ -37,6 +37,6 @@
     ["Do you make hearing protection for musicians?", "Yes, custom and non-custom filtered plugs and custom in-ear monitors. The filters cut the level while keeping the response roughly flat, so the music gets quieter rather than duller. That is the difference between protection a musician wears and protection a musician abandons."],
     ["How long does it take to get custom ear gear?", "The impression appointment itself is short. We examine the canal and eardrum first, take the impressions, and go through where and how you will use the gear, then order it in. Ask us at the appointment for the current turnaround, since it varies by product and by manufacturer."]
   ],
-  image: "/assets/ear-gear.webp",
+  image: "/assets/custom-earplugs-earmolds-ear-gear.webp",
   imageLabel: "Ear Gear protective sleeves"
 },

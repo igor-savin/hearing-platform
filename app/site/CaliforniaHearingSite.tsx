@@ -254,7 +254,7 @@ const hearingAidColumns: ProductMenuLink[][] = [
   [
     ["Starkey Omega AI", "Starkey's flagship since October 2025: grade A, second of the 36 devices HearAdvisor has tested.", "/products/hearing-aids-by-brand/starkey/", "/assets/starkey.webp"],
     ["Signia IX", "The wider Signia family \u2014 custom, instant-fit, slim and CROS styles, independently tested.", "/products/hearing-aids-by-brand/signia/signia-ix/", "/assets/signia.webp"],
-    ["Ear Gear", "Custom earplugs and earmolds, made from impressions of your own ears.", "/products/eargear/", "/assets/ear-gear.webp"],
+    ["Ear Gear", "Custom earplugs and earmolds, made from impressions of your own ears.", "/products/eargear/", "/assets/custom-earplugs-earmolds-ear-gear.webp"],
   ],
 ];
 
@@ -276,13 +276,13 @@ const featuredRoutes = [
 // are drawn from each person's own bio page — the strongest trust signal the
 // practice has, and previously only reachable via a bare list of names.
 const TEAM_ROSTER: { slug: string; name: string; credential: string; hook: string; image: string }[] = [
-  { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/thumb/kira-savin.webp" },
-  { slug: "lais-ama", name: "Lais Ama", credential: "Director of Hearing Aid Services", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama.webp" },
-  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/giana-hatem-v2.webp" },
-  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/darcy-benson.webp" },
-  { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/jennifer-ratner.webp" },
-  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/emily-mcmahan.webp" },
-  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari-v2.webp" },
+  { slug: "kira-savin", name: "Dr. Kira Savin", credential: "AuD", hook: "Personalized solutions using the most discreet technology, including Lyric.", image: "/assets/team/thumb/dr-kira-savin-audiologist-san-mateo.webp" },
+  { slug: "lais-ama", name: "Lais Ama", credential: "Director of Hearing Aid Services", hook: `${YEARS_LAIS} years of hearing care, beginning in her native Brazil.`, image: "/assets/team/thumb/lais-ama-hearing-aid-services-san-mateo.webp" },
+  { slug: "giana-hatem", name: "Dr. Giana Hatem", credential: "AuD", hook: "Adult and pediatric diagnostics, tinnitus, and hearing aid programming.", image: "/assets/team/thumb/dr-giana-hatem-audiologist-san-mateo.webp" },
+  { slug: "darcy-benson", name: "Dr. Darcy Benson", credential: "AuD", hook: `${YEARS_DARCY} years of evidence-based hearing care on the Peninsula.`, image: "/assets/team/thumb/dr-darcy-benson-audiologist-san-mateo.webp" },
+  { slug: "jennifer-ratner", name: "Dr. Jennifer Ratner", credential: "AuD", hook: "Vanderbilt-trained, with a hearing aid research background.", image: "/assets/team/thumb/dr-jennifer-ratner-audiologist-san-mateo.webp" },
+  { slug: "emily-mcmahan", name: "Dr. Emily McMahan", credential: "AuD", hook: "Nationally recognized for tinnitus management and telehealth audiology.", image: "/assets/team/thumb/dr-emily-mcmahan-audiologist-san-mateo.webp" },
+  { slug: "jarna-kothari", name: "Jarna Kothari", credential: "Practice Administrator", hook: "Focused on the patient experience and quality of care delivery.", image: "/assets/team/thumb/jarna-kothari-practice-administrator-san-mateo.webp" },
 ];
 
 // Embedded office maps. Uses the keyless Google Maps embed (no API key needed)
@@ -588,7 +588,7 @@ const bespokeContent: Record<string, PageContent> = {
     bullets: ["Tinnitus evaluation", "Sound therapy", "Sleep strategies", "Hearing aids", "Trigger review", "Long-term support"],
     takeaways: ["Tinnitus is a symptom, not a personal failure or something patients should simply be told to ignore.", "Treatment often combines education, hearing care, sound therapy, counseling, sleep support, and realistic habit changes.", "Some tinnitus patterns require medical evaluation before routine management."],
     faqs: [["Is there a cure for tinnitus?", "There is not one universal cure for tinnitus, but many patients improve with evidence-based management that reduces distress, improves sleep, and makes the sound less intrusive."], ["Can hearing aids help tinnitus?", "Hearing aids can help many patients when tinnitus is connected to hearing loss by restoring environmental sound and reducing listening strain."], ["When should tinnitus be checked urgently?", "Seek prompt medical care for sudden hearing loss, one-sided sudden symptoms, pulsatile heartbeat-like tinnitus, dizziness, neurological symptoms, severe pain, or drainage."]],
-    image: "/assets/hero.webp",
+    image: "/assets/hearing-aids-hearing-test-san-mateo-hero.webp",
     imageLabel: "Tinnitus care with perspective"
   },
   "/reviews/": {
@@ -605,7 +605,7 @@ const bespokeContent: Record<string, PageContent> = {
       ["Support over time", "Adjustments, repairs, and follow-up visits help protect the investment patients make in hearing care."]
     ],
     bullets: ["Restaurants", "Work meetings", "Family conversations", "Follow-up care", "Clear explanations", "Trusted local team"],
-    image: "/assets/google-reviews.webp",
+    image: "/assets/california-hearing-center-google-verified-reviews.webp",
     imageLabel: "Patient feedback"
   },
   "/contact/": {
@@ -639,7 +639,7 @@ const bespokeContent: Record<string, PageContent> = {
       ["Better education", "Resources help patients and families talk about hearing loss, tinnitus, communication, and long-term hearing wellness."]
     ],
     bullets: ["Patient journey", "Insurance", "HearingUp", "Tinnitus hub", "Blog", "Family guidance"],
-    image: "/assets/ida.webp",
+    image: "/assets/ida-institute-person-centered-care-clinic-badge.webp",
     imageLabel: "Person-centered resources"
   },
   "/about-us/": {
@@ -1089,7 +1089,7 @@ function productImage(pageTitle: string) {
   if (title.includes("starkey")) return "/assets/starkey.webp";
   if (title.includes("signia max")) return "/assets/signia-max.webp";
   if (title.includes("signia")) return "/assets/signia.webp";
-  if (title.includes("eargear") || title.includes("ear gear")) return "/assets/ear-gear.webp";
+  if (title.includes("eargear") || title.includes("ear gear")) return "/assets/custom-earplugs-earmolds-ear-gear.webp";
   if (title.includes("reveal")) return "/assets/oticon-reveal.webp";
   if (title.includes("zeal")) return "/assets/oticon-zeal.png";
   return "/assets/oticon.webp";
@@ -1254,7 +1254,7 @@ function tinnitusGuideContent(page: SitePage, pageTitle: string): PageContent {
       ["Should I sleep in silence with tinnitus?", "Many people sleep better with gentle background sound rather than silence. The sound should be comfortable and not painfully loud."],
       ["What should I do first?", "Start with a hearing evaluation and a careful review of symptoms, especially if tinnitus is persistent, new, one-sided, pulsatile, or affecting sleep and daily life."]
     ],
-    image: "/assets/hero.webp",
+    image: "/assets/hearing-aids-hearing-test-san-mateo-hero.webp",
     imageLabel: "Tinnitus education"
   };
 }
@@ -1370,7 +1370,7 @@ function buildPageContent(page: SitePage): PageContent {
       bullets: [`${city} hearing care`, "San Mateo office", "San Carlos office", "Hearing tests", "Hearing aids", "Tinnitus support"],
       takeaways: [`Patients in ${city} can access California Hearing Center through the San Mateo and San Carlos offices.`, "The right first step depends on symptoms, hearing history, tinnitus, ear health, and communication goals.", "Follow-up care helps patients continue improving after testing or fitting."],
       faqs: [[`Do you see patients from ${city}?`, `Yes. California Hearing Center serves patients from ${city} and communities across the Bay Area through the San Mateo and San Carlos offices.`], ["What should I bring to a hearing appointment?", "Bring your hearing concerns, medication list, insurance information, prior hearing tests if available, and any hearing aids or accessories you currently use."], ["Can I schedule if I am not sure what service I need?", "Yes. The team can help determine whether you need a hearing test, hearing aid consultation, tinnitus visit, repair appointment, or another service."]],
-      image: "/assets/hero.webp",
+      image: "/assets/hearing-aids-hearing-test-san-mateo-hero.webp",
       imageLabel: `Local care for ${city}`
     };
   }
@@ -1475,7 +1475,7 @@ function buildPageContent(page: SitePage): PageContent {
     bullets: ["Personal care", "Clear education", "Hearing tests", "Hearing aids", "Tinnitus care", "Bay Area offices"],
     takeaways: ["California Hearing Center supports patients with hearing care, tinnitus care, hearing technology, and education.", "Helpful pages should answer patient questions clearly and make next steps obvious.", "Structured headings, FAQs, and related links help both people and search engines understand the page."],
     faqs: [["What does California Hearing Center help with?", "The practice helps with hearing tests, hearing aids, fittings, tinnitus, hearing protection, repairs, resources, insurance questions, and follow-up care."], ["Where is California Hearing Center located?", "California Hearing Center has offices in San Mateo and San Carlos, serving patients across the Peninsula and Bay Area."], ["How should I choose my next page?", "Start with services for care options, tinnitus pages for ringing or sound sensitivity, hearing aid pages for technology, or contact for scheduling help."]],
-    image: "/assets/hero.webp",
+    image: "/assets/hearing-aids-hearing-test-san-mateo-hero.webp",
     imageLabel: "California Hearing Center"
   };
 }
@@ -2124,7 +2124,7 @@ function HomePage() {
       <section className="container office-showcase">
         <div className="office-showcase-media">
           <SiteImage
-            src="/assets/core-photos/contact__san-mateo.jpg"
+            src="/assets/core-photos/contact-california-hearing-center-san-mateo.jpg"
             alt="The California Hearing Center office at 88 N. San Mateo Drive: a single-storey building with a red roofline, and a red-and-white sign on the lawn at the sidewalk."
             sizes="(max-width: 900px) 92vw, 540px"
           />
@@ -2168,7 +2168,7 @@ function HomePage() {
           <p>The Inspired by Ida label is a benchmark of quality awarded to clinics dedicated to providing person-centered care. California Hearing Center is proud to be <strong>the first clinic in the world</strong> to receive this prestigious label, demonstrating our commitment to you and to high-quality hearing healthcare.</p>
           <p>We take the time to discover what you need, what fits the way you live, and what matters to you most.</p>
           <a className="ida-inline" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <SiteImage src="/assets/ida.webp" alt="Inspired by Ida — person-centered care label" box={{ width: 54, height: 54 }} />
+            <SiteImage src="/assets/ida-institute-person-centered-care-clinic-badge.webp" alt="Inspired by Ida — person-centered care label" box={{ width: 54, height: 54 }} />
             <span>Learn how person-centered care leads to better hearing care</span>
           </a>
         </div>
@@ -2682,7 +2682,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//88+N.+San+Mateo+Drive,+San+Mateo,+CA+94401" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge" href="https://www.google.com/maps/place/California+Hearing+Center" target="_blank" rel="noopener noreferrer">
-            <SiteImage src="/assets/google-reviews.webp" alt="See our Patient Reviews" box={{ width: 142, height: 89 }} />
+            <SiteImage src="/assets/california-hearing-center-google-verified-reviews.webp" alt="See our Patient Reviews" box={{ width: 142, height: 89 }} />
           </a>
           <section className="footer-location">
             <h2 className="footer-heading">San Carlos</h2>
@@ -2691,7 +2691,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             <a className="footer-button" href="https://www.google.com/maps/dir//1008+Laurel+St,+San+Carlos,+CA+94070" target="_blank" rel="noopener noreferrer">Get Directions</a>
           </section>
           <a className="footer-badge ida-badge" href="https://idainstitute.com/" target="_blank" rel="noopener noreferrer">
-            <SiteImage src="/assets/ida.webp" alt="Ida Institute" box={{ width: 96, height: 96 }} />
+            <SiteImage src="/assets/ida-institute-person-centered-care-clinic-badge.webp" alt="Ida Institute" box={{ width: 96, height: 96 }} />
             <span>Explore the Ida Institute</span>
           </a>
         </div>

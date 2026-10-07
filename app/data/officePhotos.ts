@@ -66,5 +66,5 @@ export const officePhotosByPath: Record<string, string[]> = {
   // VS-19: the homepage office band. The same building shot the San Mateo
   // contact page uses as its hero -- one file, two pages, which is fine: both
   // pages genuinely show it.
-  "/": ["/assets/core-photos/contact__san-mateo.jpg"],
+  "/": ["/assets/core-photos/contact-california-hearing-center-san-mateo.jpg"],
 };

@@ -22,7 +22,7 @@
   faqs: [
     ["How do I schedule with Lais?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/lais-ama.jpg",
+  image: "/assets/team/lais-ama-hearing-aid-services-san-mateo.jpg",
   imageLabel: "Lais Ama, Director of Hearing Aid Services",
   imageAlt: "Lais Ama, Director of Hearing Aid Services at California Hearing Center",
 },

@@ -23,7 +23,7 @@
   faqs: [
     ["How do I schedule with Dr. Hatem?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/giana-hatem-v2.jpg",
+  image: "/assets/team/dr-giana-hatem-audiologist-san-mateo.jpg",
   imageLabel: "Giana Hatem, AuD",
   imageAlt: "Dr. Giana Hatem, audiologist at California Hearing Center",
 },

@@ -31,7 +31,7 @@
     ["Where do I park?", "In the lot behind the building. Turn up the driveway alongside the office, following the banner with our logo, and park at the top. Street parking on N. San Mateo Drive and the downtown public lots and garages are there if you prefer. Tell us when you book if parking or mobility is a concern and we will help you plan the easiest route in."],
     ["Do I need a physician referral?", "Usually no. Most patients book a hearing evaluation directly. Some insurance plans require a referral for coverage, so it is worth checking your plan. Referring offices can fax records to 650-342-4435."]
   ],
-  image: "/assets/core-photos/contact__san-mateo.jpg",
+  image: "/assets/core-photos/contact-california-hearing-center-san-mateo.jpg",
   imageLabel: "88 N. San Mateo Drive, San Mateo",
   imageAlt: "The California Hearing Center office at 88 N. San Mateo Drive: a single-storey building with a red roofline and a red-and-white sign on the lawn.",
 },

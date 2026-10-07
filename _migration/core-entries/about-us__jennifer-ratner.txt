@@ -23,7 +23,7 @@
   faqs: [
     ["How do I schedule with Dr. Ratner?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/jennifer-ratner.jpg",
+  image: "/assets/team/dr-jennifer-ratner-audiologist-san-mateo.jpg",
   imageLabel: "Jennifer Ratner, AuD",
   imageAlt: "Dr. Jennifer Ratner, audiologist at California Hearing Center",
 },

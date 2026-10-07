@@ -6,9 +6,9 @@
 // the redirect is what carries the old URL's ranking to the new one.
 //
 // next.config.ts imports this file, so keep it free of imports.
-
 export const imageRenames: Record<string, string> = {
   "/assets/core-photos/about-us.webp": "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
+  "/assets/core-photos/contact__san-mateo.jpg": "/assets/core-photos/contact-california-hearing-center-san-mateo.jpg",
   "/assets/core-photos/hearing-aid-cost.jpg": "/assets/core-photos/hearing-aid-cost-san-mateo.jpg",
   "/assets/core-photos/hearing-aid-financing.jpg": "/assets/core-photos/hearing-aid-financing-san-mateo.jpg",
   "/assets/core-photos/hearing-aid-fitting.webp": "/assets/core-photos/hearing-aid-fitting-san-mateo.webp",
@@ -63,10 +63,32 @@ export const imageRenames: Record<string, string> = {
   "/assets/core-photos/tinnitus__what-to-expect.jpg": "/assets/core-photos/tinnitus-what-to-expect.jpg",
   "/assets/core-photos/tinnitus__when-to-see-doctor.jpg": "/assets/core-photos/tinnitus-when-to-see-doctor.jpg",
   "/assets/core-photos/tinnitus__why-choose-us.jpg": "/assets/core-photos/tinnitus-why-choose-us.jpg",
+  "/assets/ear-gear.webp": "/assets/custom-earplugs-earmolds-ear-gear.webp",
+  "/assets/google-reviews.webp": "/assets/california-hearing-center-google-verified-reviews.webp",
+  "/assets/hero-1600.avif": "/assets/hearing-aids-hearing-test-san-mateo-hero-1600.avif",
+  "/assets/hero-1600.webp": "/assets/hearing-aids-hearing-test-san-mateo-hero-1600.webp",
+  "/assets/hero-900.avif": "/assets/hearing-aids-hearing-test-san-mateo-hero-900.avif",
+  "/assets/hero-900.webp": "/assets/hearing-aids-hearing-test-san-mateo-hero-900.webp",
+  "/assets/hero.webp": "/assets/hearing-aids-hearing-test-san-mateo-hero.webp",
+  "/assets/ida.webp": "/assets/ida-institute-person-centered-care-clinic-badge.webp",
   "/assets/office/san-mateo__00-building.jpg": "/assets/office/california-hearing-center-san-mateo-office-building.jpg",
   "/assets/office/san-mateo__01-sign.jpg": "/assets/office/california-hearing-center-san-mateo-office-sign.jpg",
   "/assets/office/san-mateo__02-driveway.jpg": "/assets/office/california-hearing-center-san-mateo-parking-driveway.jpg",
   "/assets/office/san-mateo__03-parking.jpg": "/assets/office/california-hearing-center-san-mateo-parking-lot.jpg",
   "/assets/office/san-mateo__04-ramp.jpg": "/assets/office/california-hearing-center-san-mateo-accessible-entrance-ramp.jpg",
   "/assets/office/san-mateo__05-entrance.jpg": "/assets/office/california-hearing-center-san-mateo-office-entrance.jpg",
+  "/assets/team/darcy-benson.jpeg": "/assets/team/dr-darcy-benson-audiologist-san-mateo.jpeg",
+  "/assets/team/emily-mcmahan.webp": "/assets/team/dr-emily-mcmahan-audiologist-san-mateo.webp",
+  "/assets/team/giana-hatem-v2.jpg": "/assets/team/dr-giana-hatem-audiologist-san-mateo.jpg",
+  "/assets/team/jarna-kothari-v2.jpg": "/assets/team/jarna-kothari-practice-administrator-san-mateo.jpg",
+  "/assets/team/jennifer-ratner.jpg": "/assets/team/dr-jennifer-ratner-audiologist-san-mateo.jpg",
+  "/assets/team/kira-savin.jpg": "/assets/team/dr-kira-savin-audiologist-san-mateo.jpg",
+  "/assets/team/lais-ama.jpg": "/assets/team/lais-ama-hearing-aid-services-san-mateo.jpg",
+  "/assets/team/thumb/darcy-benson.webp": "/assets/team/thumb/dr-darcy-benson-audiologist-san-mateo.webp",
+  "/assets/team/thumb/emily-mcmahan.webp": "/assets/team/thumb/dr-emily-mcmahan-audiologist-san-mateo.webp",
+  "/assets/team/thumb/giana-hatem-v2.webp": "/assets/team/thumb/dr-giana-hatem-audiologist-san-mateo.webp",
+  "/assets/team/thumb/jarna-kothari-v2.webp": "/assets/team/thumb/jarna-kothari-practice-administrator-san-mateo.webp",
+  "/assets/team/thumb/jennifer-ratner.webp": "/assets/team/thumb/dr-jennifer-ratner-audiologist-san-mateo.webp",
+  "/assets/team/thumb/kira-savin.webp": "/assets/team/thumb/dr-kira-savin-audiologist-san-mateo.webp",
+  "/assets/team/thumb/lais-ama.webp": "/assets/team/thumb/lais-ama-hearing-aid-services-san-mateo.webp",
 };

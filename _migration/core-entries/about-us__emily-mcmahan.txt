@@ -27,7 +27,7 @@
     ["How often is Dr. McMahan at California Hearing Center?", "She visits every six to eight weeks. Between visits she runs her own practice in Alaska, and the rest of our [team](/about-us/) sees patients here every week."],
     ["How do I schedule with Dr. McMahan?", "Call 650-342-9449 and ask to be booked into her next visit. Her appointments fill quickly, so it is worth calling early."]
   ],
-  image: "/assets/team/emily-mcmahan.webp",
+  image: "/assets/team/dr-emily-mcmahan-audiologist-san-mateo.webp",
   imageLabel: "Emily McMahan, AuD",
   imageAlt: "Dr. Emily McMahan, visiting audiologist at California Hearing Center",
 },

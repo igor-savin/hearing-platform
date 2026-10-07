@@ -23,7 +23,7 @@
   faqs: [
     ["How do I schedule with Dr. Benson?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/darcy-benson.jpeg",
+  image: "/assets/team/dr-darcy-benson-audiologist-san-mateo.jpeg",
   imageLabel: "Darcy Benson, AuD",
   imageAlt: "Dr. Darcy Benson, audiologist at California Hearing Center",
 },

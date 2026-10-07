@@ -1,6 +1,6 @@
 // Topical hero SVGs for enriched core pages (tinnitus/service/facility/resource)
-// that would otherwise share /assets/hero.webp. Reads _migration/core-entries/*.txt,
-// and for any fragment whose image is "/assets/hero.webp": picks an icon by topic,
+// that would otherwise share /assets/hearing-aids-hearing-test-san-mateo-hero.webp. Reads _migration/core-entries/*.txt,
+// and for any fragment whose image is "/assets/hearing-aids-hearing-test-san-mateo-hero.webp": picks an icon by topic,
 // writes public/assets/core/{flat}.svg, and rewrites the fragment's image field.
 // Product pages (brand images) are left untouched. Re-run assembler afterward.
 //

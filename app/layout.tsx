@@ -291,7 +291,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/assets/hero-1600.avif"
+          href="/assets/hearing-aids-hearing-test-san-mateo-hero-1600.avif"
           type="image/avif"
           fetchPriority="high"
           media="(min-width: 761px)"
@@ -299,7 +299,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/assets/hero-900.avif"
+          href="/assets/hearing-aids-hearing-test-san-mateo-hero-900.avif"
           type="image/avif"
           fetchPriority="high"
           media="(max-width: 760px)"

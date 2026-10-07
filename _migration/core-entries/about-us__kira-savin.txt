@@ -23,7 +23,7 @@
   faqs: [
     ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
   ],
-  image: "/assets/team/kira-savin.jpg",
+  image: "/assets/team/dr-kira-savin-audiologist-san-mateo.jpg",
   imageLabel: "Kira Savin, AuD",
   imageAlt: "Dr. Kira Savin, audiologist at California Hearing Center",
 },

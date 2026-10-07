@@ -64,7 +64,7 @@ export const TINNITUS_LEAD_CLINICIAN = {
   name: "Dr. Emily McMahan",
   credential: "AuD",
   line: "Nationally recognised for tinnitus management. She visits our practice every six to eight weeks, and her appointments book up quickly, so call 650-342-9449 to get on her next visit.",
-  image: "/assets/team/thumb/emily-mcmahan.webp",
+  image: "/assets/team/thumb/dr-emily-mcmahan-audiologist-san-mateo.webp",
 };
 
 /**
