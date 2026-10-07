@@ -442,7 +442,7 @@ const teamMembers = [
     pronouns: "",
     role: "Patient Care Coordinator",
     image: "/assets/duda/hazel-icaza-patient-care-coordinator-westchester.jpg",
-    alt: "Hazel Icaza"
+    alt: "Hazel Icaza, Patient Care Coordinator at Audiology Associates of Westchester"
   },
   {
     name: "Francheska Cotto",
