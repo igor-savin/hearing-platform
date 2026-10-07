@@ -14,6 +14,8 @@
     ["Learning your devices", "Before you leave, we walk you through the practical side: inserting and removing the aids, including the [correct insertion depth](/how-far-do-you-push-hearing-aid-in/) for the style you are wearing, changing or charging batteries, cleaning the wax guards and ports, connecting to your phone, and switching programs. We give you clear care instructions so small maintenance never becomes a reason to stop wearing them, and we handle [cleaning, servicing, and repairs](/services/hearing-aid-repair/) down the road."],
     ["Adapting to new hearing takes time", "New hearing aids rarely feel perfect on day one. Your brain has grown used to a quieter world, and sounds you have not heard clearly in years, from footsteps to your own voice, can seem sharp at first. This settles. We encourage you to wear the aids [as many hours a day as you can](/how-many-hours-a-day-should-you-wear-new-hearing-aids-a-complete-guide/), be patient over the first weeks, and keep a simple log of moments when hearing was difficult so we can target the next adjustment."],
     ["Follow-up and fine-tuning", "About a week or two after the fitting you return so we can refine the settings against your real-world experience and repeat verification. This follow-up is where good hearing aids become great, because it uses what you have learned in actual conversations, restaurants, and meetings rather than the quiet of the booth. Ongoing adjustments remain available whenever your needs change."],
+    ["Trial period and returns", "Every hearing aid we fit comes with a 45-day trial and no restocking fee. Use the devices in your real life, in restaurants, meetings and the car, then come back for your follow-up visits so we can adjust them to what you find. If they are not right for you, you can return them within the trial with no restocking fee. California law also gives every hearing aid buyer 45 days from delivery to return a device, and bars return fees when a sale is cancelled under that law. See [your right to return hearing aids in California](/california-hearing-aid-return-rights/) and [what hearing aids cost](/hearing-aid-cost/)."],
+    ["Hearing aids you bought somewhere else", "If you bought your hearing aids at Costco, online or from another clinic, we can service and reprogram many of them for a fee. Some devices are locked to the original seller's software, which limits what any other clinic can do, so call ahead with the brand and model. See our page on [locked and used hearing aids](/locked-and-used-hearing-aids/)."],
     ["Beyond the hearing aid", "A fitting is the start. Skills, listening training and extra devices such as TV streamers and wireless microphones can help in the places hearing aids struggle. See our [Hearing Better hub](/hearing-better/)."]
   ],
   bulletLinks: [
@@ -23,18 +25,22 @@
     ["Comfort and feedback check", "/hearing-aid-fitting/"],
     ["Care and cleaning guidance", "/services/hearing-aid-repair/"],
     ["Follow-up fine-tuning", "/contact/"],
+    ["45-day trial, no restocking fee", "/california-hearing-aid-return-rights/"],
     ["Fitted somewhere else? We will verify it", "/fortell-hearing-aids-what-we-know/"]
   ],
   takeaways: [
     "A fitting programs the device to your prescription and verifies it with real-ear measurement, not by ear alone.",
     "Physical comfort and feedback-free fit matter as much as the sound settings.",
-    "Adapting takes a few weeks; follow-up appointments are where the fitting is refined to real life."
+    "Adapting takes a few weeks; follow-up appointments are where the fitting is refined to real life.",
+    "Every hearing aid we fit has a 45-day trial and no restocking fee."
   ],
   faqs: [
     ["Do I need a fitting, or can I just wear the hearing aids?", "You need a fitting. Out of the box, hearing aids are not matched to your hearing loss or your ear canals. Programming them to your prescription and verifying the result is what makes speech clear and comfortable rather than simply loud."],
     ["What is real-ear measurement?", "Real-ear measurement, or REM, uses a thin probe microphone in your ear canal to measure the exact sound the hearing aid delivers near your eardrum. We compare it to your prescriptive target and adjust to match. It is an objective way to confirm the aids are set correctly for you."],
     ["How long does it take to get used to new hearing aids?", "Usually a few weeks to a couple of months. The more hearing you have lost, the longer your brain takes to readjust to sounds it has been missing. Wearing the aids consistently and returning for follow-up adjustments speeds the process."],
-    ["Can my hearing aids be adjusted if my hearing changes?", "Yes. The devices are digital and can be reprogrammed as your hearing evolves, so a change in your hearing does not necessarily mean new hardware. Regular follow-up lets us keep them tuned to your current needs. To schedule, call 650-342-9449."]
+    ["Can my hearing aids be adjusted if my hearing changes?", "Yes. The devices are digital and can be reprogrammed as your hearing evolves, so a change in your hearing does not necessarily mean new hardware. Regular follow-up lets us keep them tuned to your current needs. To schedule, call 650-342-9449."],
+    ["Is there a trial period?", "Yes. Every hearing aid we fit has a 45-day trial with no restocking fee. California law also gives any buyer 45 days from delivery to return a hearing aid. See [your right to return hearing aids in California](/california-hearing-aid-return-rights/)."],
+    ["Can you adjust hearing aids I bought somewhere else?", "In many cases, yes, for a fee. Some devices are locked to the seller's software, which limits what any other clinic can do, so call ahead with the brand and model and we will tell you what is possible."]
   ],
   image: "/assets/core/hearing-aid-fitting.svg",
   imageLabel: "Verified, real-ear hearing aid fitting",
