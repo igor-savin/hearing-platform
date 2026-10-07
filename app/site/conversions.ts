@@ -41,7 +41,8 @@ export type ConversionName =
   | "get_directions"           // click through to Google Maps
   | "schedule_an_appointment"  // click on a booking CTA
   | "facebook_outbound_click"  // click through to the practice's Facebook page
-  | "contact_form_submit";     // the form actually sent
+  | "contact_form_submit"      // the form actually sent
+  | "hearing_plan_use";         // a Hearing Plan tool was used (tool name only, never content)
 
 export function trackConversion(name: ConversionName, params: ConversionParams = {}) {
   if (typeof window === "undefined") return;

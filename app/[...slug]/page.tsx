@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { crawledPages, type SitePage } from "../data/crawledPages";
 import { redirectedPaths } from "../data/redirectedPaths";
+import { HEARING_PLAN_DESC, HEARING_PLAN_TITLE } from "../site/HearingPlanPage";
+import { PLAN_INDEXABLE } from "../data/hearingPlan";
 import { PRACTICE_FACTS_DESC, PRACTICE_FACTS_TITLE } from "../site/PracticeFactsPage";
 import { CaliforniaHearingSite, blogMetaDescription, blogMetaTitle, blogOgImage, blogOgOverrides, areaMetaTitle, areaMetaDescription, coreMetaTitle, coreMetaDescription } from "../site/CaliforniaHearingSite";
 
@@ -69,6 +71,17 @@ export async function generateMetadata({ params }: PageProps) {
       alternates: { canonical: path },
       openGraph: { ...OG_SITE, title: PRACTICE_FACTS_TITLE, description: PRACTICE_FACTS_DESC, url: path, type: "website", images: [DEFAULT_OG_IMAGE_SIZED] },
       twitter: { card: "summary_large_image", title: PRACTICE_FACTS_TITLE, description: PRACTICE_FACTS_DESC, images: [DEFAULT_OG_IMAGE] },
+    };
+  }
+
+  if (path === "/hearing-plan/") {
+    return {
+      title: HEARING_PLAN_TITLE,
+      description: HEARING_PLAN_DESC,
+      alternates: { canonical: path },
+      robots: PLAN_INDEXABLE ? { index: true, follow: true } : { index: false, follow: false },
+      openGraph: { ...OG_SITE, title: HEARING_PLAN_TITLE, description: HEARING_PLAN_DESC, url: path, type: "website", images: [DEFAULT_OG_IMAGE_SIZED] },
+      twitter: { card: "summary_large_image", title: HEARING_PLAN_TITLE, description: HEARING_PLAN_DESC, images: [DEFAULT_OG_IMAGE] },
     };
   }
 
