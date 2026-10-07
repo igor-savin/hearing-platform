@@ -691,60 +691,78 @@ export const tinnitusPages: TinnitusPage[] = [
     title: "Why Is My Tinnitus Getting Louder?",
     slug: "getting-louder",
     description:
-      "Explore common reasons tinnitus can feel louder, the warning signs that need prompt attention, and practical next steps for Westchester patients.",
+      "Tinnitus suddenly louder? See common causes, which signs need a doctor, and what you can do now. Call our Harrison or Somers office to book a hearing test.",
     intro: [
-      "A tinnitus spike can feel frightening, particularly when a sound that was manageable suddenly seems louder, sharper, or harder to ignore. A louder day does not necessarily mean permanent damage, but it is worth paying attention to what changed.",
-      "Noise, poor sleep, stress, illness, ear pressure, hearing changes, and quiet surroundings can all affect how noticeable tinnitus feels. A sudden or dramatic change deserves a more careful look."
+      "Tinnitus can get louder for many reasons. Often the cause is loud noise, earwax, a cold, a medicine, poor sleep, or a change in your hearing. Many of these are temporary. Some are not. This page explains what to check first, which signs mean you should see a doctor soon, and when to book an appointment with us.",
+      "A louder day does not always mean permanent damage. It is still worth noting what changed. If the change was sudden, or if it came with hearing loss, dizziness, numbness or weakness, do not wait. Contact a doctor promptly."
     ],
     sections: [
       {
-        title: "A louder sound versus a louder experience",
+        title: "Why is my tinnitus getting louder?",
         body: [
-          "Sometimes the tinnitus signal changes. Other times, the sound is similar but your nervous system has less capacity to filter it out because you are tired, stressed, sick, or sitting in a very quiet room.",
-          "Both experiences are real. Tracking the setting and the symptoms around a spike gives your audiologist useful information."
+          "Sometimes the sound itself changes. Other times the sound stays the same, but you notice it more. You may be tired, ill, stressed, or sitting in a very quiet room.",
+          "The National Institute on Deafness and Other Communication Disorders (NIDCD) says the exact causes of tinnitus are not fully understood. It also says tinnitus may improve over time, but in some cases it gets worse. Keeping notes on when it is louder helps your audiologist find the pattern."
         ]
       },
       {
-        title: "Common short-term triggers",
-        body: ["Patients often notice a pattern with one or more of the following."],
+        title: "Why is my tinnitus suddenly louder?",
+        body: ["A sudden rise often has a trigger. Think back over the last day or two."],
         bullets: [
-          "A loud restaurant, concert, work site, power tool, or headphone session",
-          "Poor sleep, fatigue, stress, or a demanding week",
-          "A cold, congestion, ear pressure, or a blocked-ear sensation",
-          "Changes in jaw or neck tension",
-          "New medications or a medication change that should be discussed with the prescriber",
-          "More silence than usual, especially at bedtime"
+          "Loud sound, such as a concert, a restaurant, power tools, or loud headphones",
+          "Earwax or something else blocking the ear canal",
+          "A cold, congestion, or ear pressure",
+          "A new medicine, or a change in dose. Do not stop a medicine on your own. Ask the prescriber or the pharmacist",
+          "Caffeine, alcohol or nicotine, which the Mayo Clinic says can worsen tinnitus",
+          "Poor sleep or a stressful week. Many people say tinnitus feels louder then, even if the sound has not changed",
+          "A very quiet room, especially at bedtime"
         ]
       },
       {
-        title: "When louder tinnitus is a red flag",
-        body: ["Seek prompt medical guidance rather than trying home strategies if the change is accompanied by concerning symptoms."],
+        title: "Can hearing loss make tinnitus louder?",
+        body: [
+          "The NIDCD links tinnitus to hearing loss, although some people with hearing loss never have tinnitus. If your hearing has changed, your tinnitus may seem different too. A hearing test shows whether your hearing has changed. If it has, treating the hearing loss can help, and the NIDCD lists hearing aids among the devices used for sound therapy."
+        ]
+      },
+      {
+        title: "What can I do when my tinnitus gets louder?",
+        body: [
+          "Protect your ears from more loud sound. Do not sit in total silence. Soft background sound, such as a fan, nature sound or quiet music, can make tinnitus stand out less. Keep the volume low, because louder is not better.",
+          "Do not put cotton swabs or other objects in your ear. If you think wax is the cause, have your ear checked. A regular sleep routine, a short walk and slow breathing can help when stress or tiredness is part of the cause."
+        ]
+      },
+      {
+        title: "When does louder tinnitus need a doctor?",
+        body: ["Get medical help promptly, and do not wait for a routine visit, if louder tinnitus comes with any of these signs."],
         bullets: [
-          "Sudden hearing loss or a major difference between ears",
-          "A sudden one-sided spike",
-          "Severe vertigo, balance trouble, neurological symptoms, or new severe headache",
-          "A heartbeat-like or whooshing sound",
-          "Symptoms after head or neck trauma"
+          "Sudden hearing loss, or a big difference between your ears",
+          "Dizziness, balance trouble, numbness, or weakness. The Mayo Clinic says to seek care as soon as possible for these",
+          "A sound that beats with your pulse. The NIDCD says an ear, nose and throat doctor may order imaging for this",
+          "Tinnitus after a head or neck injury or an accident. Seek emergency care",
+          "Tinnitus that began after a cold and has not gone away within a week",
+          "Tinnitus that makes you anxious or low, or that disrupts your sleep"
         ]
       },
       {
-        title: "What can help during a stable spike",
+        title: "How is tinnitus that keeps getting louder treated?",
         body: [
-          "Protect your ears from further loud sound, but avoid isolating yourself in total silence. Comfortable, low-level background sound such as a fan, nature sound, or soft music can reduce the contrast that makes tinnitus stand out.",
-          "A short walk, gentle breathing, hydration, and a more consistent sleep routine can also help when the spike is tied to fatigue or stress. Keep sound at a comfortable level; louder masking is not automatically better."
+          "The NIDCD says there is no cure for tinnitus, but there are ways to reduce symptoms. If a cause such as earwax is found, treating it may reduce the sound. Sound therapy and cognitive behavioral therapy can help you cope with tinnitus that stays.",
+          "At our offices, we start with a hearing test and a look in your ears. Then we talk about what you hear, when it is loudest, and what helps. Our page on tinnitus management explains the support we offer."
         ]
       },
       {
-        title: "When to schedule tinnitus care",
+        title: "How do I book a tinnitus appointment?",
         body: [
-          "Schedule an evaluation when spikes recur, affect sleep or concentration, come with hearing difficulty, or leave you worried about what is happening. We can check hearing, review the pattern, and talk through appropriate support instead of offering a one-size-fits-all answer."
+          "Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720. Tell us when the sound got louder, which ear, and whether your hearing changed. Book sooner if spikes keep coming back, affect your sleep or work, or come with trouble hearing."
         ]
       }
     ],
     faqs: [
-      { question: "Can stress make tinnitus feel louder?", answer: "Yes. Stress and poor sleep can make tinnitus harder to filter out, even if the sound itself has not changed substantially." },
-      { question: "Can a loud event make tinnitus worse permanently?", answer: "Loud sound can cause temporary or lasting changes. If tinnitus persists after noise exposure or you notice hearing changes, schedule an evaluation." },
-      { question: "What should I do if tinnitus gets louder in one ear?", answer: "Contact a medical professional promptly, especially if hearing changed or you have dizziness, pulsatile sound, or neurological symptoms." }
+      { question: "Why is my tinnitus suddenly louder?", answer: "Common triggers are loud sound, earwax, a cold or ear pressure, a new medicine, caffeine, poor sleep, and a very quiet room. If the change was sudden and came with hearing loss, dizziness, numbness or weakness, contact a doctor promptly." },
+      { question: "Can stress make tinnitus louder?", answer: "Many people say it does. The sound may not change, but you notice it more when you are stressed or tired. If tinnitus makes you anxious or disrupts your sleep, ask for help." },
+      { question: "Can earwax make tinnitus louder?", answer: "Yes. The NIDCD and the Mayo Clinic both list earwax blockage as a cause. Have your ear checked before you try to remove wax yourself." },
+      { question: "Does louder tinnitus mean permanent damage?", answer: "Not always. A temporary rise after loud sound or illness can settle. If it does not settle, or your hearing changed, book a hearing test." },
+      { question: "Which signs mean I should not wait?", answer: "Sudden hearing loss, dizziness, numbness, weakness, a pulse-like sound, or tinnitus after a head or neck injury. Seek medical help promptly. After an injury, seek emergency care." },
+      { question: "Can tinnitus be cured?", answer: "The NIDCD says there is no cure for most tinnitus, but there are ways to reduce symptoms. Treating a cause such as earwax can help. Sound therapy and counseling can help you cope." }
     ]
   },
   {

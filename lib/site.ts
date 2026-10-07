@@ -687,7 +687,7 @@ function serviceAreaIndexFaqs() {
     {
       question: "Which Westchester County communities does Audiology Associates of Westchester serve?",
       answer:
-        "The practice serves patients across Westchester County, including Harrison, Somers, White Plains, Scarsdale, Rye, Mamaroneck, Larchmont, Port Chester, Rye Brook, Purchase, New Rochelle, Hartsdale, Mt. Kisco, Yorktown Heights, Katonah, Bedford, Chappaqua, Armonk, and Pleasantville."
+        "The practice serves patients across Westchester County, including Harrison, Somers, White Plains, Scarsdale, Rye, Mamaroneck, Larchmont, Port Chester, Rye Brook, Purchase, New Rochelle, Hartsdale, Mt. Kisco, Yorktown Heights, Katonah, Bedford, Chappaqua, Armonk, Pleasantville, Greenburgh, Elmsford, Ardsley, Yonkers, Dobbs Ferry, Tarrytown, Hastings-on-Hudson, Briarcliff Manor, Sleepy Hollow, Irvington, Ossining, Croton-on-Hudson, and Cortlandt Manor."
     },
     {
       question: "Does the practice see patients from Greenwich, CT and southern Putnam County?",
@@ -1113,16 +1113,32 @@ const editorialBlogPosts: SitePage[] = [
   {
     path: "/how-much-does-costco-charge-for-a-hearing-test",
     url: `${baseUrl}/how-much-does-costco-charge-for-a-hearing-test`,
-    title: "How Much Does a Costco Hearing Test Cost?",
-    metaTitle: titleWithBrand("Costco Hearing Test Cost and What to Compare"),
-    metaDescription: "Learn what to ask when comparing a retail hearing screening with a comprehensive audiology evaluation in Westchester County.",
-    h1: "How Much Does Costco Charge for a Hearing Test?",
-    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/how-much-does-costco-charge-for-a-hearing-test`, heroImage: editorialImages.careOptions, images: [editorialImages.careOptions], sections: [], faqs: [], related: [],
+    title: "Costco Hearing Test: Is It Free? Cost and Appointment",
+    metaTitle: titleWithBrand("Costco Hearing Test: Cost and Appointment"),
+    metaDescription: "Costco lists its hearing test as free for members 18 and older. See how to book, what it includes, and how it differs from an audiology exam.",
+    h1: "Costco Hearing Test: Is It Free? Cost, Appointment and What It Includes",
+    type: "blog-post", lastModified: "2026-07-09", canonical: `${baseUrl}/how-much-does-costco-charge-for-a-hearing-test`, heroImage: editorialImages.careOptions, images: [editorialImages.careOptions], sections: [], faqs: [
+      { question: "Is the Costco hearing test free?", answer: "Costco lists a free hearing test for members age 18 or older, as of October 2026. Costco says the test is to find out whether hearing aids can help you. Policies can change, so confirm with your Costco Hearing Aid Center." },
+      { question: "Do I need a Costco membership for the hearing test?", answer: "Costco's page describes the free test as being for members 18 and older. Ask your Costco Hearing Aid Center what you need to bring." },
+      { question: "How do I make a Costco hearing test appointment?", answer: "Costco's FAQ says to contact the nearest Costco Hearing Aid Center to schedule a hearing test appointment. It also asks you to bring a printed intake form, or arrive early to fill it out at the warehouse." },
+      { question: "Is a Costco hearing test the same as an audiologist's hearing test?", answer: "They have different aims. Costco says its test is done by licensed hearing instrument specialists to find out whether hearing aids can help. A diagnostic evaluation with a Doctor of Audiology also looks for the cause and type of hearing loss, and for signs that need a doctor." },
+      { question: "Can I get a second opinion after a Costco hearing test?", answer: "Yes. Bring your results and any quote. Ask us about the fee and about insurance when you book." }
+    ], related: [],
     body: [
-      "Retail hearing centers may offer a no-cost hearing test or screening, often connected to a hearing-aid consultation. Policies, membership requirements, and what is included can change, so confirm details directly with the location before scheduling.",
-      "Price alone does not show whether two appointments are comparable. Ask whether the visit includes a full case history, ear inspection, hearing thresholds, speech testing, middle-ear testing when appropriate, a review of red flags, and a clear explanation of results.",
-      "A comprehensive audiology evaluation is especially important when you have one-sided symptoms, sudden changes, tinnitus, dizziness, ear pressure, ear pain, or difficulty understanding speech despite ‘normal’ volume.",
-      "At Audiology Associates of Westchester, the goal of testing is to understand your hearing and guide the next step—not simply determine whether a device can be sold."
+      "The Costco hearing test is free for Costco members age 18 and older, according to Costco's own website, as of October 2026. Costco says the test is to find out whether hearing aids can help you. To book it, contact your nearest Costco Hearing Aid Center. Policies, membership rules and what is included can change, so confirm the details directly before you go.",
+      "A free test is a good place to start. This page explains what Costco says the test includes, how to book it, and when an audiology evaluation may be a better first step.",
+      "How to book a Costco hearing test",
+      "Costco's hearing aid FAQ says to contact the nearest Costco Hearing Aid Center to schedule a hearing test appointment. It asks you to print and complete an intake form first and bring it with you. If you cannot print it, arrive early and complete it at the warehouse.",
+      "What the Costco hearing test includes",
+      "Costco says licensed hearing instrument specialists complete the test in a sound-treated room. It starts with an intake form about your health, noise exposure and lifestyle. The specialist then checks your ear canal for excess wax. During the test, you hear sounds at different frequencies and respond when you hear them. Speech tests follow.",
+      "Costco test or audiology evaluation",
+      "Costco states that its test is to determine whether hearing aids can help you. A diagnostic evaluation with a Doctor of Audiology has a wider aim. It measures your hearing across the pitch range and how well you understand speech, and it checks the eardrum and middle ear. The audiologist looks for the type and cause of your hearing loss, and for signs that you need a doctor.",
+      "When to see an audiologist first",
+      "Choose an audiology evaluation first if you have sudden hearing loss, hearing loss in one ear only, ringing in the ears, dizziness, ear pain, drainage, or a feeling of fullness. Also choose it if you hear voices but cannot understand the words, or if hearing aids have not helped in the past. For sudden hearing loss, contact a doctor promptly.",
+      "What to ask at any hearing test",
+      "Ask who performs the test and what is included. Ask whether you get a written copy of your results. Ask how a hearing aid fitting would be checked in your ear, how many follow-up visits are included, and how adjustments work later. Our guides on hearing aid cost and on questions to ask before buying hearing aids give a full list.",
+      "Our hearing test in Harrison and Somers",
+      "At Audiology Associates of Westchester, the hearing test is a full diagnostic evaluation by a Doctor of Audiology. Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720 to book. Ask about the fee and about insurance when you call. If you already have a Costco test result or a quote, bring it. We can review it with you."
     ]
   },
   {
@@ -1230,6 +1246,8 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
   ],
   "/how-much-does-costco-charge-for-a-hearing-test": [
     { label: "Comparing Costco Hearing Aids", href: "/what-is-the-best-hearing-aid-sold-at-costco" },
+    { label: "Hearing Test Cost in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+    { label: "Hearing Aid Second Opinion", href: "/hearing-aid-second-opinion" },
     { label: "Audiology Red Flags", href: "/what-are-the-red-flags-for-audiology-referrals" },
     { label: "Hearing Testing", href: "/hearing-testing" }
   ],
@@ -1501,7 +1519,7 @@ const serviceAreaPages: SitePage[] = [
     path: cityPath(city),
     url: `${baseUrl}${cityPath(city)}`,
     title: `${city.name}, ${city.state}`,
-    metaTitle: titleWithBrand(`Audiologist near ${city.name}, ${city.state}`),
+    metaTitle: titleWithBrand(city.metaTitle ?? `Audiologist near ${city.name}, ${city.state}`),
     // The old tail ("Schedule hearing testing, hearing aid fitting, tinnitus
     // therapy, hearing protection, or hearing aid repair near X") ate 118 of
     // the ~160 characters a searcher ever sees, and repeated "hearing" five

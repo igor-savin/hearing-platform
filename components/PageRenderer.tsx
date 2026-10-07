@@ -690,10 +690,33 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
     heading: "Expert audiologists, just 15 minutes away from Greenwich, CT!",
     paragraphs: [
       "Located at the southwestern tip of Connecticut, Greenwich is considered one of the most affluent areas to live in the United States. Our area is made up primarily of working professionals, though as time passes, many members of our community are beginning to think about their golden stages of life.",
-      "Many people experience hearing loss as they age, though you can experience auditory issues at any age. If you live in Greenwich and are experiencing auditory problems, it's important to seek help right away. Ongoing hearing conditions such as tinnitus or consistent hearing loss can be difficult, annoying, and frightening to handle. An experienced audiologist can help you manage and overcome your symptoms in order to hear normally again.",
+      "Many people experience hearing loss as they age, though you can experience auditory issues at any age. If you live in Greenwich and are experiencing auditory problems, it's important to seek help right away. Ongoing hearing conditions such as tinnitus or consistent hearing loss can be difficult, annoying, and frightening to handle. An experienced audiologist can help you manage your symptoms and hear better.",
       "Audiology Associates of Westchester is conveniently located to provide hearing aids and therapy services to the entire Greenwich area."
     ],
     sections: [
+      {
+        title: "Audiologist Serving Greenwich, CT",
+        background: "white",
+        paragraphs: [
+          `Audiology Associates of Westchester is a New York practice. Greenwich patients come to our Harrison office at 550 Mamaroneck Ave, Suite 407, about fifteen minutes away. Our audiologists are Doctors of Audiology. They provide hearing tests, hearing aids, tinnitus care and repairs there. Call ${primaryPhone} to book.`
+        ]
+      },
+      {
+        title: "Hearing Aids for Greenwich, CT Patients",
+        background: "blue",
+        paragraphs: [
+          "If hearing aids are the answer, we fit and program them at our Harrison office. Every fitting is checked with a probe microphone in your own ear. Follow-up visits fine-tune the sound after you have worn the devices in real rooms.",
+          "Your plan may follow Connecticut rules, and we are a New York practice. Ask your plan how it treats out-of-state providers. Our biller can check any plan for you. Our insurance guide explains the usual rules."
+        ]
+      },
+      {
+        title: "Tinnitus Treatment for Greenwich, CT Patients",
+        background: "white",
+        paragraphs: [
+          "The National Institute on Deafness and Other Communication Disorders says there is no cure for most tinnitus, but there are ways to reduce symptoms. We start with a hearing test and a look in your ears. Then we talk about what you hear and what helps, such as counseling, sound support and hearing aids when hearing loss is part of the picture.",
+          "See a doctor promptly if the ringing came on suddenly, is in one ear only, beats with your pulse, or comes with hearing loss, dizziness or weakness."
+        ]
+      },
       {
         title: "Quality Audiology Services for All of Greenwich, CT!",
         background: "blue",
@@ -807,8 +830,39 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
     ],
     sections: [
       {
-        title: "Nearest Office: Harrison, NY",
+        title: "Audiologist Serving White Plains, NY",
+        background: "white",
+        paragraphs: [
+          `Audiology Associates of Westchester serves White Plains patients from our Harrison office at 550 Mamaroneck Ave, Suite 407. White Plains is a service area, not an office. Our audiologists are Doctors of Audiology. Harrison is open Monday to Friday. Call ${primaryPhone} to book.`
+        ]
+      },
+      {
+        title: "Hearing Test in White Plains, NY",
         background: "blue",
+        paragraphs: [
+          "A hearing test is the first step. Ours is a full diagnostic evaluation, not a screening. We measure the softest tones you can hear across the pitch range and how well you understand speech, and we check the eardrum and middle ear. Your audiologist then explains your audiogram in plain words.",
+          "Book your hearing test at our Harrison office. If you have ringing in your ears, an earwax problem or a sudden change in your hearing, tell us when you call."
+        ]
+      },
+      {
+        title: "Hearing Aids for White Plains Patients",
+        background: "white",
+        paragraphs: [
+          "If hearing aids are the answer, we fit and program them at our Harrison office. Every fitting is checked with a probe microphone in your own ear. Follow-up visits fine-tune the sound after you have worn the devices in real rooms.",
+          "We fit hearing aids from Oticon, Phonak, ReSound, Signia, Starkey, Widex, Unitron and Rexton. Your hearing test, not a brand, decides what we recommend."
+        ]
+      },
+      {
+        title: "Hearing Aid Repair near White Plains, NY",
+        background: "blue",
+        paragraphs: [
+          "Hearing aids that sound weak, whistle, cut out or will not charge are often blocked with wax, or need a new dome or filter. Bring both devices, the charger and spare parts to our Harrison office for cleaning, parts and repair.",
+          "If you bought your hearing aids somewhere else, call first with the make and model. We tell you what we can do before you drive over."
+        ]
+      },
+      {
+        title: "Nearest Office: Harrison, NY",
+        background: "white",
         paragraphs: [
           "If you are searching for an experienced hearing doctor in White Plains, Rye, Port Chester, or the nearby communities, we invite you to reach out to us today. Our caring and compassionate team will listen to your concerns and conduct testing based on your hearing loss symptoms. Following your diagnosis, our hearing doctor will recommend the product or therapy to help improve your hearing health or the hearing health of a loved one.",
           "If you live in White Plains, NY and have questions about your hearing, call Audiology Associates of Westchester today to schedule an appointment."
@@ -833,8 +887,39 @@ const legacyLocationContent: Record<string, LegacyLocationContent> = {
     ],
     sections: [
       {
-        title: "Nearest Office: Harrison, NY",
+        title: "Audiologist Serving Scarsdale, NY",
+        background: "white",
+        paragraphs: [
+          `Audiology Associates of Westchester serves Scarsdale patients from our Harrison office at 550 Mamaroneck Ave, Suite 407. Scarsdale is a service area, not an office. Our audiologists are Doctors of Audiology. Harrison is open Monday to Friday. Call ${primaryPhone} to book.`
+        ]
+      },
+      {
+        title: "Hearing Test in Scarsdale, NY",
         background: "blue",
+        paragraphs: [
+          "A hearing test is the first step. Ours is a full diagnostic evaluation, not a screening. We measure the softest tones you can hear across the pitch range and how well you understand speech, and we check the eardrum and middle ear. Your audiologist then explains your audiogram in plain words.",
+          "Book your hearing test at our Harrison office. If you have ringing in your ears, an earwax problem or a sudden change in your hearing, tell us when you call."
+        ]
+      },
+      {
+        title: "Hearing Aids for Scarsdale Patients",
+        background: "white",
+        paragraphs: [
+          "If hearing aids are the answer, we fit and program them at our Harrison office. Every fitting is checked with a probe microphone in your own ear. Follow-up visits fine-tune the sound after you have worn the devices in real rooms.",
+          "We fit hearing aids from Oticon, Phonak, ReSound, Signia, Starkey, Widex, Unitron and Rexton. Your hearing test, not a brand, decides what we recommend."
+        ]
+      },
+      {
+        title: "Hearing Aid Repair near Scarsdale, NY",
+        background: "blue",
+        paragraphs: [
+          "Hearing aids that sound weak, whistle, cut out or will not charge are often blocked with wax, or need a new dome or filter. Bring both devices, the charger and spare parts to our Harrison office for cleaning, parts and repair.",
+          "If you bought your hearing aids somewhere else, call first with the make and model. We tell you what we can do before you drive over."
+        ]
+      },
+      {
+        title: "Nearest Office: Harrison, NY",
+        background: "white",
         paragraphs: [
           "If you are experiencing hearing loss symptoms or other auditory problems in Scarsdale, NY, our nearby Harrison office is ready to help. Scarsdale is a service area, not a physical Audiology Associates office.",
           "It’s important you don’t trust just anyone with your hearing aid fitting process; choose an experienced team that can perfect your customized fitting. We are proud to serve the entire Scarsdale, NY area and beyond! Contact us today to schedule an appointment!"
@@ -901,6 +986,158 @@ function PatientReviewsBand({
         >
           Read more patient reviews
         </Link>
+      </div>
+    </section>
+  );
+}
+
+// Office addresses, hours and phone numbers in visible text, read from
+// lib/site.ts so they cannot drift from the contact page. Added for the
+// "audiologist near me" and "hearing test near me" searches, which want the
+// address and hours on the page that ranks, not only on /contact-us.
+function OfficesNearYouBand({
+  heading,
+  intro,
+  className = "section bg-white"
+}: {
+  heading: string;
+  intro: string;
+  className?: string;
+}) {
+  const offices = locations.filter((location) => location.type === "office");
+  return (
+    <section className={className}>
+      <div className="container">
+        <h2 className="text-4xl font-black leading-tight text-[#003f6f]">{heading}</h2>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-[var(--foreground)]">{intro}</p>
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          {offices.map((office) => (
+            <article className="rounded-md border border-[#d5e7f4] bg-[#f7fbfd] p-6" key={office.path}>
+              <h3 className="text-2xl font-black text-[#003f6f]">
+                <Link className="focus-ring underline" href={office.path}>
+                  {office.name}
+                </Link>
+              </h3>
+              <address className="mt-3 space-y-1 text-[17px] leading-7 not-italic">
+                <p>{office.address}</p>
+                <p>
+                  Phone:{" "}
+                  <a className="font-bold text-[#005a9c] underline" href={office.phoneHref}>
+                    {office.phone}
+                  </a>
+                </p>
+              </address>
+              <p className="mt-4 font-black">Office hours</p>
+              <ul className="mt-1 text-[17px] leading-7">
+                {office.hours.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+              <a
+                className="focus-ring mt-4 inline-flex items-center gap-2 font-bold text-[#005a9c] underline"
+                href={office.directionsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(office.address)}`}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <MapPin size={18} aria-hidden="true" /> Get directions
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Plain internal links for pages whose template has no related-links block
+// (the recovered legacy pages and the product pages). Keyed by path.
+const pageCrossLinks: Record<string, { heading: string; links: { label: string; href: string }[] }> = {
+  "/lyric-invisible-hearing": {
+    heading: "More about Lyric and invisible hearing aids",
+    links: [
+      { label: "Phonak Lyric: specifications and care", href: "/hearing-aids-brands/phonak/phonak-lyric" },
+      { label: "Invisible Hearing Aids: Pros, Cons and Candidacy", href: "/invisible-hearing-aids-pros-cons-candidacy" },
+      { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+    ]
+  },
+  "/hearing-aids-brands/phonak/phonak-lyric": {
+    heading: "Lyric hearing aids in Westchester",
+    links: [
+      { label: "Lyric Hearing Aids in Westchester, NY", href: "/lyric-invisible-hearing" },
+      { label: "Invisible Hearing Aids: Pros, Cons and Candidacy", href: "/invisible-hearing-aids-pros-cons-candidacy" },
+      { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" }
+    ]
+  },
+  "/types-of-hearing-aids": {
+    heading: "Keep reading about hearing aids",
+    links: [
+      { label: "Hearing Aid Brands and Manufacturers", href: "/hearing-aids-brands" },
+      { label: "Lyric Hearing Aids in Westchester", href: "/lyric-invisible-hearing" },
+      { label: "Invisible Hearing Aids: Pros, Cons and Candidacy", href: "/invisible-hearing-aids-pros-cons-candidacy" },
+      { label: "Rechargeable vs Battery Hearing Aids", href: "/rechargeable-vs-battery-hearing-aids" },
+      { label: "Bluetooth Hearing Aids: What to Know Before Buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "Hearing Testing", href: "/hearing-testing" }
+    ]
+  },
+  "/hearing-aids-brands": {
+    heading: "Keep reading about hearing aids",
+    links: [
+      { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
+      { label: "Lyric Hearing Aids in Westchester", href: "/lyric-invisible-hearing" },
+      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" }
+    ]
+  },
+  "/Scarsdale-NY": {
+    heading: "Services for Scarsdale patients",
+    links: [
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
+      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
+      { label: "Harrison office", href: "/harrison-ny" }
+    ]
+  },
+  "/White-Plains-NY": {
+    heading: "Services for White Plains patients",
+    links: [
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
+      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
+      { label: "Harrison office", href: "/harrison-ny" }
+    ]
+  },
+  "/greenwich-ct": {
+    heading: "Services for Greenwich patients",
+    links: [
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Tinnitus Management", href: "/how-we-can-help/tinnitus-management" },
+      { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
+      { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
+      { label: "Harrison office", href: "/harrison-ny" }
+    ]
+  }
+};
+
+function PageCrossLinks({ page }: { page: SitePage }) {
+  const entry = pageCrossLinks[page.path];
+  if (!entry) return null;
+  return (
+    <section className="bg-[#f7fbfd] py-12">
+      <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
+        <h2 className="text-[30px] font-black leading-tight text-[#003f6f] max-md:text-[25px]">{entry.heading}</h2>
+        <ul className="mt-5 grid gap-3 md:grid-cols-2">
+          {entry.links.map((link) => (
+            <li key={link.href}>
+              <Link className="focus-ring text-[19px] font-bold text-[#005a9c] underline" href={link.href}>
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -1391,6 +1628,11 @@ function HomepageProofFirst() {
           </div>
         </div>
       </section>
+
+      <OfficesNearYouBand
+        heading="Audiologist and hearing test near you in Westchester"
+        intro="Looking for an audiologist or a hearing test near you? Audiology Associates of Westchester has two offices in Westchester County, in Harrison and in Somers. Choose the one that is the easier drive. Call to book a hearing test, a hearing aid fitting, a tinnitus visit or a repair."
+      />
 
       <PatientReviewsBand />
 
@@ -3128,6 +3370,7 @@ function HearingAidProductPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <ProductCta />
     </>
   );
@@ -3686,6 +3929,7 @@ function LiveLocationPage({ page }: { page: SitePage }) {
         <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
       ))}
       <LegacyAreaCityPlanningSection page={page} />
+      <PageCrossLinks page={page} />
       <LocationPlanningSection page={page} />
       <AppointmentDecisionBand page={page} heading="Need help choosing the right office or appointment?" />
     </>
@@ -4614,6 +4858,13 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
       <TinnitusVisitAndClinician page={page} />
 
       <ServiceDecisionGuide page={page} />
+      {page.path === "/hearing-testing" ? (
+        <OfficesNearYouBand
+          className="bg-white py-16"
+          heading="Hearing test near you: Harrison and Somers"
+          intro="Our audiologists test hearing at two offices in Westchester County. Pick the closer one, or the one with the better hours for you. Call to book a hearing test."
+        />
+      ) : null}
       <PatientReviewsBand />
       <TrustProcessSection />
 
@@ -5161,6 +5412,7 @@ function LivePageBody({ page }: { page: SitePage }) {
           branch did not, so five pages emitted FAQPage data for answers that
           appeared nowhere. */}
       <FaqSection page={page} />
+      <PageCrossLinks page={page} />
 
       {page.type === "service" ? <CoreServiceDetail page={page} /> : null}
       {isBlog ? <BlogPostRelated page={page} /> : null}
@@ -5643,6 +5895,12 @@ function LiveBrandsPage({ page }: { page: SitePage }) {
       <section className="bg-white py-10 text-center">
         <div className="mx-auto max-w-[1180px] px-5">
           <h1 className="text-[38px] font-black text-[#333]">{page.h1}</h1>
+          <p className="mx-auto mt-6 max-w-[900px] text-left text-[19px] leading-8 text-[#333]">
+            There is no single best hearing aid brand. Each hearing aid company makes several brands and models, and
+            the right one depends on your hearing test, your daily life and the follow-up care you get. We fit hearing
+            aids from Oticon, Phonak, ReSound, Signia, Starkey, Widex, Unitron and Rexton. The list below shows each
+            brand, and the table further down shows which company makes it.
+          </p>
           <div className="mt-10 grid gap-x-12 gap-y-10 text-left md:grid-cols-2">
             {hearingAidBrands.map(([title, text, src, alt, href]) => {
               // Brands we have a page for get a clickable logo/title plus an
@@ -5689,9 +5947,81 @@ function LiveBrandsPage({ page }: { page: SitePage }) {
               );
             })}
           </div>
+          <HearingAidMakersTable />
         </div>
       </section>
+      <PageCrossLinks page={page} />
     </>
+  );
+}
+
+// Who makes which brand. The company grouping is the only fact added here; the
+// model names come from lib/products.ts so this table cannot list a model the
+// site does not describe. Ownership as of October 2026, from each company's
+// public information. Rexton and Unitron have no product pages of their own.
+const hearingAidMakers: Array<{ company: string; brands: Array<{ name: string; slug?: string }> }> = [
+  { company: "Sonova", brands: [{ name: "Phonak", slug: "phonak" }, { name: "Unitron" }] },
+  { company: "Demant", brands: [{ name: "Oticon", slug: "oticon" }] },
+  { company: "GN", brands: [{ name: "ReSound", slug: "resound" }] },
+  {
+    company: "WS Audiology",
+    brands: [{ name: "Signia", slug: "signia" }, { name: "Widex", slug: "widex" }, { name: "Rexton" }]
+  },
+  { company: "Starkey Hearing Technologies", brands: [{ name: "Starkey", slug: "starkey" }] }
+];
+
+function HearingAidMakersTable() {
+  return (
+    <div className="mt-14 text-left">
+      <h2 className="text-[30px] font-black text-[#333]">Hearing aid companies: who makes which brand</h2>
+      <p className="mt-3 max-w-[900px] text-[18px] leading-8 text-[#333]">
+        Hearing aid manufacturers often own more than one brand. This table shows the company behind each brand we
+        fit, as of October 2026, and the current models we describe on this site.
+      </p>
+      <div className="mt-6 overflow-x-auto">
+        <table className="w-full border-collapse text-left text-[17px] leading-7">
+          <caption className="sr-only">Hearing aid manufacturers, their brands and current models</caption>
+          <thead>
+            <tr className="bg-[#dbe9f3] text-[#003f6f]">
+              <th className="border border-[#d3d3d3] p-3" scope="col">Company</th>
+              <th className="border border-[#d3d3d3] p-3" scope="col">Brands we fit</th>
+              <th className="border border-[#d3d3d3] p-3" scope="col">Current models on this site</th>
+            </tr>
+          </thead>
+          <tbody>
+            {hearingAidMakers.map((maker) => {
+              const models = hearingAidProducts.filter((product) =>
+                maker.brands.some((brand) => brand.slug && brand.slug === product.brandSlug)
+              );
+              return (
+                <tr key={maker.company}>
+                  <th className="border border-[#d3d3d3] p-3 align-top font-black" scope="row">{maker.company}</th>
+                  <td className="border border-[#d3d3d3] p-3 align-top">{maker.brands.map((brand) => brand.name).join(", ")}</td>
+                  <td className="border border-[#d3d3d3] p-3 align-top">
+                    {models.length ? (
+                      models.map((product, index) => (
+                        <span key={product.slug}>
+                          {index > 0 ? ", " : ""}
+                          <Link className="font-bold text-[#005a9c] underline" href={productPath(product)}>
+                            {product.shortTitle}
+                          </Link>
+                        </span>
+                      ))
+                    ) : (
+                      "Ask us which current models we fit"
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-4 max-w-[900px] text-[18px] leading-8 text-[#333]">
+        Not sure which hearing aid type or style suits you? Read our guide to the{" "}
+        <Link className="font-bold text-[#005a9c] underline" href="/types-of-hearing-aids">types of hearing aids</Link>.
+      </p>
+    </div>
   );
 }
 

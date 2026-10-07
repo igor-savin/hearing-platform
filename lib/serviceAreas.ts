@@ -27,6 +27,9 @@ export type AreaCity = {
   nearby: string[];
   localContext: string;
   travelNote: string;
+  // Optional shorter page title for towns whose primary query fits better
+  // than the generic "Audiologist Near X" form. Falls back to the default.
+  metaTitle?: string;
   patientNeeds: string[];
   // Some towns already had a bespoke page on the live Duda site. Those URLs
   // hold the search equity, so we do not also publish a generated
@@ -88,7 +91,20 @@ export const areaCounties: AreaCounty[] = [
       "bedford",
       "chappaqua",
       "armonk",
-      "pleasantville"
+      "pleasantville",
+      "greenburgh",
+      "elmsford",
+      "ardsley",
+      "yonkers",
+      "dobbs-ferry",
+      "tarrytown",
+      "hastings-on-hudson",
+      "briarcliff-manor",
+      "sleepy-hollow",
+      "irvington",
+      "ossining",
+      "croton-on-hudson",
+      "cortlandt-manor"
     ]
   },
   {
@@ -576,6 +592,253 @@ export const areaCities: AreaCity[] = [
       "hearing aids",
       "hearing aid repair",
       "custom hearing protection for boats and yard work"
+    ]
+  },
+  {
+    slug: "greenburgh",
+    name: "Greenburgh",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Hearing Aid Repair and Evaluation in Greenburgh, NY",
+    nearby: ["Hartsdale", "Elmsford", "Ardsley", "Dobbs Ferry", "Tarrytown", "Irvington", "Hastings-on-Hudson"],
+    localContext:
+      "Greenburgh is a town of six villages. Our Harrison office, 550 Mamaroneck Ave, Suite 407, serves the whole town for hearing tests and repairs.",
+    travelNote:
+      "Harrison is about 14 minutes from the middle of Greenburgh, and Somers is about 36 minutes. These are estimates for October 2026 in normal traffic. Villages on the river are farther from Harrison, so check the page for your village. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034.",
+    patientNeeds: [
+      "hearing aid repair and cleaning",
+      "hearing aid evaluations",
+      "hearing tests",
+      "tinnitus appointments"
+    ]
+  },
+  {
+    slug: "elmsford",
+    name: "Elmsford",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Hearing Aids and Hearing Aid Repair in Elmsford, NY",
+    nearby: ["Greenburgh", "Hartsdale", "Ardsley", "Tarrytown", "White Plains"],
+    localContext:
+      "Elmsford patients go to our Harrison office, about 16 minutes away, for in-the-ear and other hearing aids, hearing tests, and hearing aid repair.",
+    travelNote:
+      "Harrison is about 16 minutes from Elmsford. Somers is about 35 minutes. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034. If your hearing aids need repair, call first with the make and model.",
+    patientNeeds: [
+      "in-the-ear and custom hearing aids",
+      "hearing aid repair near Elmsford",
+      "hearing tests",
+      "hearing aid cleaning and parts"
+    ]
+  },
+  {
+    slug: "ardsley",
+    name: "Ardsley",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Audiologist and Hearing Test in Ardsley, NY",
+    nearby: ["Greenburgh", "Hartsdale", "Elmsford", "Irvington", "Dobbs Ferry"],
+    localContext:
+      "Ardsley patients see a Doctor of Audiology at our Harrison office, about 19 minutes away, for hearing tests, hearing aids and follow-up care.",
+    travelNote:
+      "Harrison is about 19 minutes from Ardsley. Somers is about 41 minutes. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034. Ask for a time that fits around work or school drop-off.",
+    patientNeeds: [
+      "hearing tests",
+      "hearing aids and fittings",
+      "audiologist visits for adults",
+      "hearing aid follow-up"
+    ]
+  },
+  {
+    slug: "yonkers",
+    name: "Yonkers",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Audiologist and Hearing Aids in Yonkers, NY",
+    nearby: ["Hartsdale", "Greenburgh", "Scarsdale", "Ardsley", "White Plains"],
+    localContext:
+      "Yonkers is the largest city in Westchester. Our Harrison office is about 19 minutes away for hearing tests, hearing aids, tinnitus care and repairs.",
+    travelNote:
+      "Harrison is about 19 minutes from the center of Yonkers. Somers is about 51 minutes, so Harrison is the practical choice. These are estimates for October 2026 in normal traffic and will differ across a large city. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034.",
+    patientNeeds: [
+      "hearing aids in Yonkers",
+      "choosing an audiologist",
+      "hearing tests",
+      "hearing aid repair and tinnitus appointments"
+    ]
+  },
+  {
+    slug: "dobbs-ferry",
+    name: "Dobbs Ferry",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Audiologist and Hearing Aids in Dobbs Ferry, NY",
+    nearby: ["Greenburgh", "Hastings-on-Hudson", "Irvington", "Ardsley", "Tarrytown"],
+    localContext:
+      "Dobbs Ferry patients visit our Harrison office, about 22 minutes away, for a hearing test, hearing aids and an audiologist who explains the results.",
+    travelNote:
+      "Harrison is about 22 minutes from Dobbs Ferry. Somers is about 44 minutes. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034.",
+    patientNeeds: [
+      "hearing tests",
+      "hearing aids",
+      "audiologist visits",
+      "hearing aid repair and cleaning"
+    ]
+  },
+  {
+    slug: "tarrytown",
+    name: "Tarrytown",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Hearing Test in Tarrytown, NY | Audiologist",
+    nearby: ["Sleepy Hollow", "Irvington", "Elmsford", "Greenburgh", "Dobbs Ferry"],
+    localContext:
+      "To book a hearing test from Tarrytown, call our Harrison office. It is about 22 minutes away, and a Doctor of Audiology explains your results.",
+    travelNote:
+      "Harrison is about 22 minutes from Tarrytown. Somers is about 37 minutes. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034. Somers is closed on Thursdays.",
+    patientNeeds: [
+      "booking a hearing test",
+      "hearing protection for concerts and music",
+      "hearing aids",
+      "tinnitus appointments"
+    ]
+  },
+  {
+    slug: "hastings-on-hudson",
+    name: "Hastings-on-Hudson",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Tinnitus and Hearing Aids in Hastings-on-Hudson, NY",
+    nearby: ["Dobbs Ferry", "Greenburgh", "Yonkers", "Ardsley", "Irvington"],
+    localContext:
+      "Hastings-on-Hudson patients see our Harrison audiologists, about 23 minutes away, for ringing in the ears, hearing tests and buying hearing aids.",
+    travelNote:
+      "Harrison is about 23 minutes from Hastings-on-Hudson. Somers is about 45 minutes. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034.",
+    patientNeeds: [
+      "ringing in the ears (tinnitus) appointments",
+      "where to buy hearing aids",
+      "hearing tests",
+      "hearing aid repair"
+    ]
+  },
+  {
+    slug: "briarcliff-manor",
+    name: "Briarcliff Manor",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Audiologist and Signia Hearing Aids, Briarcliff Manor",
+    nearby: ["Ossining", "Sleepy Hollow", "Pleasantville", "Chappaqua", "Croton-on-Hudson"],
+    localContext:
+      "Briarcliff Manor is about 25 minutes from both our Harrison and Somers offices. Choose by hours, then book a hearing test or Signia fitting.",
+    travelNote:
+      "Both offices are about 25 minutes from Briarcliff Manor: Harrison 24 minutes and Somers 25. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034. Somers is open Monday to Wednesday and Friday until 2:30, on (914) 556-6720.",
+    patientNeeds: [
+      "Signia hearing aid fitting",
+      "choosing an audiologist",
+      "hearing tests",
+      "hearing aid follow-up at the office you prefer"
+    ]
+  },
+  {
+    slug: "sleepy-hollow",
+    name: "Sleepy Hollow",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Tinnitus and Hearing Aid Repair in Sleepy Hollow, NY",
+    nearby: ["Tarrytown", "Briarcliff Manor", "Irvington", "Ossining", "Elmsford"],
+    localContext:
+      "Sleepy Hollow patients visit our Harrison office, about 24 minutes away, for ringing in the ears, hearing tests and hearing aid repair.",
+    travelNote:
+      "Harrison is about 24 minutes from Sleepy Hollow. Somers is about 35 minutes. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034. Somers is closed on Thursdays.",
+    patientNeeds: [
+      "ringing in the ears (tinnitus) appointments",
+      "hearing aid repair",
+      "hearing tests",
+      "earwax checks"
+    ]
+  },
+  {
+    slug: "irvington",
+    name: "Irvington",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "harrison",
+    metaTitle: "Audiologist and Hearing Aid Fitting in Irvington, NY",
+    nearby: ["Tarrytown", "Dobbs Ferry", "Ardsley", "Greenburgh", "Hastings-on-Hudson"],
+    localContext:
+      "Irvington patients go to our Harrison office, about 25 minutes away, for a hearing aid fitting checked in the ear and follow-up visits after.",
+    travelNote:
+      "Harrison is about 25 minutes from Irvington. Somers is about 45 minutes. These are estimates for October 2026 in normal traffic. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034.",
+    patientNeeds: [
+      "hearing aid fitting",
+      "choosing an audiologist",
+      "hearing tests",
+      "hearing aid follow-up and adjustments"
+    ]
+  },
+  {
+    slug: "ossining",
+    name: "Ossining",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "somers",
+    metaTitle: "Audiologist and Hearing Test in Ossining, NY",
+    nearby: ["Briarcliff Manor", "Croton-on-Hudson", "Sleepy Hollow", "Yorktown Heights", "Pleasantville"],
+    localContext:
+      "Ossining patients can reach our Somers office in about 28 minutes, or Harrison in about 31, for hearing tests, hearing aids and repairs.",
+    travelNote:
+      "Somers is about 28 minutes from Ossining and Harrison is about 31. These are estimates for October 2026 in normal traffic. Somers is open Monday to Wednesday, closed Thursday, and open Friday until 2:30, on (914) 556-6720. Harrison is open weekdays, 8:30 to 5:00, on (914) 949-0034.",
+    patientNeeds: [
+      "hearing tests",
+      "best hearing aids for your hearing loss",
+      "choosing between two offices",
+      "hearing aid repair"
+    ]
+  },
+  {
+    slug: "croton-on-hudson",
+    name: "Croton-on-Hudson",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "somers",
+    metaTitle: "Audiologist and Hearing Tests in Croton-on-Hudson, NY",
+    nearby: ["Cortlandt Manor", "Ossining", "Briarcliff Manor", "Yorktown Heights", "Somers"],
+    localContext:
+      "Croton-on-Hudson patients drive about 30 minutes to our Somers office for an audiologist, a hearing test and hearing aids. Harrison is about 38.",
+    travelNote:
+      "Somers is about 30 minutes from Croton-on-Hudson and Harrison is about 38. These are estimates for October 2026 in normal traffic. Somers is open Monday to Wednesday, closed Thursday, and open Friday until 2:30, on (914) 556-6720.",
+    patientNeeds: [
+      "audiologist visits",
+      "hearing tests",
+      "hearing aids",
+      "hearing aid repair and cleaning"
+    ]
+  },
+  {
+    slug: "cortlandt-manor",
+    name: "Cortlandt Manor",
+    state: "NY",
+    countySlug: "westchester-county-ny",
+    nearestOffice: "somers",
+    metaTitle: "Tinnitus and Hearing Aid Repair in Cortlandt Manor, NY",
+    nearby: ["Croton-on-Hudson", "Yorktown Heights", "Ossining", "Somers", "Mahopac"],
+    localContext:
+      "Cortlandt Manor patients reach our Somers office in about 29 minutes for tinnitus appointments, hearing tests and hearing aid repair.",
+    travelNote:
+      "Somers is about 29 minutes from Cortlandt Manor and Harrison is about 46. These are estimates for October 2026 in normal traffic. Somers is open Monday to Wednesday, closed Thursday, and open Friday until 2:30, on (914) 556-6720.",
+    patientNeeds: [
+      "tinnitus (ringing in the ears) appointments",
+      "hearing aid repair",
+      "hearing tests",
+      "hearing aid cleaning and parts"
     ]
   }
 ];
@@ -1510,6 +1773,648 @@ export const cityLocalFlavorBySlug: Record<string, AreaCityLocalFlavor> = {
         question: "I already have hearing aids I stopped wearing. Is it worth bringing them?",
         answer:
           "Yes, even if they are old and even if you disliked them. What you liked and did not like about them is the most useful information in the room, and it shapes the next fitting more than any brochure will. Bring the chargers too. Some of what gets written off as device failure turns out to be wax in the receiver."
+      }
+    ]
+  },
+  greenburgh: {
+    heading: "Hearing Care for Greenburgh, Its Six Villages and Hartsdale",
+    intro:
+      "Greenburgh is a town, not a single place. It holds six villages: Ardsley, Dobbs Ferry, Elmsford, Hastings-on-Hudson, Irvington and Tarrytown. It also holds hamlets such as Hartsdale. Our Harrison office serves all of them. This page is for you if you want a hearing aid evaluation, or a repair for hearing aids you already own.",
+    listeningEnvironments: [
+      {
+        title: "A hearing aid evaluation, step by step",
+        body:
+          "A hearing aid evaluation is a hearing test plus a talk about whether hearing aids can help. We look in your ears, test the softest sounds you hear, and test how well you understand speech. If hearing aids may help, we explain the styles, features and follow-up care in plain words."
+      },
+      {
+        title: "A hearing aid that has stopped working",
+        body:
+          "Hearing aids that sound weak or cut out are often blocked with wax, or need a new dome or filter. Bring both devices, the charger and spare parts. If you bought them somewhere else, call first with the make and model. We tell you what we can do before you drive over."
+      },
+      {
+        title: "Finding your village",
+        body:
+          "Drive times differ across a town this size. Dobbs Ferry, Tarrytown, Irvington, Elmsford, Ardsley and Hastings-on-Hudson each have a page with the drive time from the village center. Hartsdale has one too."
+      }
+    ],
+    hearingPriorities: [
+      "hearing aid evaluations and hearing tests at Harrison",
+      "repair and cleaning for hearing aids you already own",
+      "one office for the whole town, open weekdays"
+    ],
+    faqs: [
+      {
+        question: "Which of your offices serves Greenburgh?",
+        answer:
+          "Harrison, at 550 Mamaroneck Ave, Suite 407, serves the whole town. It is about 14 minutes from the middle of Greenburgh, and Somers is about 36. Harrison is open weekdays, 8:30 to 5:00."
+      },
+      {
+        question: "Do you repair hearing aids for people in Greenburgh?",
+        answer:
+          "We clean hearing aids, replace worn parts and check the programming. If a part has failed, the device may need to go back to its maker. Call with the make and model first, especially if you bought the hearing aids somewhere else."
+      },
+      {
+        question: "What is a hearing aid evaluation?",
+        answer:
+          "It is a hearing test plus a talk about hearing aids. Your audiologist tests your hearing, looks in your ears, and explains whether hearing aids can help and which kind may suit you."
+      },
+      {
+        question: "Which villages are part of Greenburgh?",
+        answer:
+          "Greenburgh contains the villages of Ardsley, Dobbs Ferry, Elmsford, Hastings-on-Hudson, Irvington and Tarrytown. Hartsdale is a hamlet in the town. All are served from our Harrison office."
+      },
+      {
+        question: "Do you have an office in Greenburgh?",
+        answer:
+          "No. Our offices are in Harrison and Somers. Greenburgh is a service area, and Harrison is the closer office."
+      }
+    ]
+  },
+  elmsford: {
+    heading: "In-the-Ear Hearing Aids and Hearing Aid Repair for Elmsford",
+    intro:
+      "Elmsford is where I-287, the Saw Mill River Parkway, the Sprain Brook Parkway and Route 9A meet. If you search from here, you often want one of two things: an in-the-ear hearing aid, or a place to get a hearing aid fixed. This page answers both, and the Harrison office is about 16 minutes away.",
+    listeningEnvironments: [
+      {
+        title: "In-the-ear hearing aids: who they suit",
+        body:
+          "An in-the-ear aid is made to fit the outer ear. The Mayo Clinic says it comes as a full shell or a half shell, helps mild to more serious hearing loss, and has room for features such as directional microphones. It is easier for others to see than smaller styles. An ear exam and a hearing test show whether it is an option for you."
+      },
+      {
+        title: "Where to get a hearing aid fixed",
+        body:
+          "Bring both devices, the charger and spare parts to the Harrison office. We clean them, change domes and filters, and check the settings. If a part has failed, we tell you whether it needs the maker. Call first with the make and model if you bought them elsewhere."
+      },
+      {
+        title: "Road noise on the way to the appointment and everywhere else",
+        body:
+          "Highway noise covers the high sounds in speech, so a conversation in the car can be harder than one at home. Tell your audiologist about long drives. It affects how the hearing aids are set."
+      }
+    ],
+    hearingPriorities: [
+      "in-the-ear and custom hearing aids",
+      "repair, cleaning and new parts",
+      "hearing tests before you choose a style"
+    ],
+    faqs: [
+      {
+        question: "What are the best in-the-ear hearing aids?",
+        answer:
+          "There is no single best one. The right in-the-ear aid depends on your hearing test, the size and shape of your ear canal, and how well you handle small devices. We look in your ears and test your hearing first. Then we show you the choices that fit."
+      },
+      {
+        question: "Where can I get hearing aids fixed near Elmsford?",
+        answer:
+          "At our Harrison office, about 16 minutes from Elmsford. We clean hearing aids, replace parts and check the programming. If a component has failed, the device may have to go to its maker."
+      },
+      {
+        question: "Can you fix hearing aids I bought somewhere else?",
+        answer:
+          "Often yes, but it depends on the brand, the model and the fitting software. Call with the make and model before you book."
+      },
+      {
+        question: "Is an in-the-ear hearing aid right for me?",
+        answer:
+          "Maybe. It needs an ear canal that can hold the device, and a hearing loss that suits its size. A hearing test and an ear exam decide."
+      }
+    ]
+  },
+  ardsley: {
+    heading: "Hearing Tests and Hearing Aids for Ardsley",
+    intro:
+      "Ardsley is a village in the town of Greenburgh. If you are looking for an audiologist, a hearing test or hearing aids in Ardsley, the Harrison office is about 19 minutes away. A small note on names: the Ardsley-on-Hudson area, with its Metro-North station, is part of Irvington, not Ardsley.",
+    listeningEnvironments: [
+      {
+        title: "Hearing test in Ardsley",
+        body:
+          "A full hearing test takes time, and it shows the type and level of your hearing loss. We look in your ears, test the softest tones you hear in each ear, and test how well you understand speech. We then explain the audiogram. If your hearing changed suddenly, call and say so."
+      },
+      {
+        title: "Hearing aids in Ardsley",
+        body:
+          "If hearing aids are the answer, we choose them from your hearing test and your daily life. Every fitting is checked with a probe microphone in your ear, and follow-up visits fine-tune the sound after you have worn them in real rooms."
+      },
+      {
+        title: "An audiologist near Ardsley",
+        body:
+          "Our audiologists are Doctors of Audiology. They see patients at the Harrison office and at Somers. Say which office you want when you call."
+      }
+    ],
+    hearingPriorities: [
+      "a hearing test with the results explained",
+      "hearing aids checked in your own ear",
+      "follow-up visits after you start wearing them"
+    ],
+    faqs: [
+      {
+        question: "Where can I get a hearing test near Ardsley?",
+        answer:
+          "At our Harrison office, about 19 minutes from Ardsley. Call (914) 949-0034. Our hearing test is a full diagnostic evaluation, not a screening."
+      },
+      {
+        question: "Is Ardsley-on-Hudson part of Ardsley?",
+        answer:
+          "No. The Ardsley-on-Hudson area is part of the village of Irvington. Irvington has its own page on this site, with its own drive time."
+      },
+      {
+        question: "Do I need a referral for a hearing test?",
+        answer:
+          "Many people book directly. Some insurance plans have their own rules, so ask your plan. Our biller can check any plan's benefits for you."
+      },
+      {
+        question: "How is an audiologist different from a hearing aid store?",
+        answer:
+          "A Doctor of Audiology tests your hearing, looks for medical causes, and fits and adjusts hearing aids. Ask any provider who will do your testing, how the fitting is checked, and what follow-up is included."
+      }
+    ]
+  },
+  yonkers: {
+    heading: "Choosing an Audiologist and Hearing Aids if You Live in Yonkers",
+    intro:
+      "Yonkers is the largest city in Westchester County, with 211,569 people at the 2020 census. It has the Hudson River on its west side and the Bronx to its south. With that many choices, how do you pick an audiologist? This page gives you a short checklist, and tells you what the Harrison office, about 19 minutes away, offers.",
+    listeningEnvironments: [
+      {
+        title: "A checklist for choosing an audiologist",
+        body:
+          "Ask who does the testing and what their training is. Ask whether the hearing aid fitting is checked in your ear canal with a probe microphone. Ask how many follow-up visits are included, and what happens if the hearing aids do not work for you. A good provider answers these questions in writing."
+      },
+      {
+        title: "Hearing aids in a large city",
+        body:
+          "City life is loud. Trains, traffic and crowded rooms all compete with speech. Tell the audiologist where you struggle. The settings and the style of hearing aid depend on those rooms."
+      },
+      {
+        title: "Repairs and tinnitus",
+        body:
+          "We also see patients for hearing aid repair and for ringing in the ears. If the ringing began suddenly, or in one ear, see a doctor promptly."
+      }
+    ],
+    hearingPriorities: [
+      "a hearing test and a clear explanation of the results",
+      "hearing aids checked in your own ear",
+      "repairs and follow-up at one office"
+    ],
+    faqs: [
+      {
+        question: "Who is the best audiologist in Yonkers?",
+        answer:
+          "We cannot rank providers, and we will not call ourselves the best. Choose a Doctor of Audiology, ask how the fitting is verified in your ear, and ask what follow-up is included. Then pick the office you trust."
+      },
+      {
+        question: "How far is your office from Yonkers?",
+        answer:
+          "Harrison is about 19 minutes from the center of Yonkers in normal traffic, as an estimate for October 2026. Somers is about 51 minutes, so Harrison is the practical choice."
+      },
+      {
+        question: "Where can I get hearing aids in Yonkers?",
+        answer:
+          "We fit hearing aids at our Harrison office. We do not have an office in Yonkers. We fit Oticon, Phonak, ReSound, Signia, Starkey, Widex, Unitron and Rexton hearing aids."
+      },
+      {
+        question: "Do you take my insurance?",
+        answer:
+          "Please call us. Our biller can check the benefits of any plan for you. We do not promise acceptance of a plan on this page."
+      }
+    ]
+  },
+  "dobbs-ferry": {
+    heading: "Hearing Care for Dobbs Ferry, from the River to the Trailway",
+    intro:
+      "Dobbs Ferry is a village in the town of Greenburgh, on the east bank of the Hudson River. It has a Metro-North station, and the Old Croton Aqueduct Trailway runs through it. If you want an audiologist, a hearing test or hearing aids, the Harrison office is about 22 minutes away.",
+    listeningEnvironments: [
+      {
+        title: "The platform and the train",
+        body:
+          "Train platforms are loud, and announcements are hard to follow with hearing loss. If you commute by Metro-North and miss announcements, say so at your hearing test. Phone-connected hearing aids and some settings can help, and we explain which."
+      },
+      {
+        title: "Walks on the trailway and wind",
+        body:
+          "Wind across a hearing aid microphone sounds like a roar. Wind handling differs between models, so ask about it before you choose. If you walk or run outdoors, tell your audiologist."
+      },
+      {
+        title: "What to expect at a hearing test",
+        body:
+          "We ask about your hearing and health, look in your ears, test tones in each ear, and test speech. Your audiologist then explains your results. The visit gives you a baseline, even if you do not need hearing aids yet."
+      }
+    ],
+    hearingPriorities: [
+      "a hearing test with the results explained",
+      "hearing aids that handle trains, wind and busy rooms",
+      "hearing aid repair and cleaning"
+    ],
+    faqs: [
+      {
+        question: "Is there an audiologist in Dobbs Ferry?",
+        answer:
+          "We do not have an office in Dobbs Ferry. Our Harrison office is about 22 minutes away in normal traffic, as an estimate for October 2026. Somers is about 44 minutes."
+      },
+      {
+        question: "Where can I get hearing aids near Dobbs Ferry?",
+        answer:
+          "At our Harrison office. We test your hearing first, then explain which hearing aids may help. Call (914) 949-0034."
+      },
+      {
+        question: "How long does a hearing test take?",
+        answer:
+          "The length depends on the visit. Ask when you book how long to plan for, because your audiologist also explains the results."
+      },
+      {
+        question: "Can I get a hearing test if I only notice trouble in noise?",
+        answer:
+          "Yes. Trouble in noise is a common reason to book. We test how well you understand speech as well as which tones you hear."
+      }
+    ]
+  },
+  tarrytown: {
+    heading: "Booking a Hearing Test from Tarrytown",
+    intro:
+      "Tarrytown is a village in the town of Greenburgh, on the east bank of the Hudson. The Mario Cuomo Bridge crosses the river here, and the village has a Metro-North station. This page is for people who want to book a hearing test in Tarrytown. Our Harrison office is about 22 minutes away.",
+    listeningEnvironments: [
+      {
+        title: "How to book a hearing test, in four steps",
+        body:
+          "First, call (914) 949-0034. Second, tell us what you notice and which ear. Third, choose a time. Fourth, bring your hearing aids if you have them, and a list of the rooms where you struggle. We tell you what to expect on the call."
+      },
+      {
+        title: "Concerts at the Tarrytown Music Hall",
+        body:
+          "The Tarrytown Music Hall is a historic theater in the village. Live music can be loud. If you go to concerts often, ask about custom earplugs. We make them. A hearing test gives you a baseline too."
+      },
+      {
+        title: "Phone calls and the commute",
+        body:
+          "Many people book a test because phone calls got hard. Tell the audiologist if calls are a problem. Phone-connected hearing aids can stream calls, and the fitting can be set for them."
+      }
+    ],
+    hearingPriorities: [
+      "a hearing test you can book by phone",
+      "custom earplugs for concerts",
+      "hearing aids that help on phone calls"
+    ],
+    faqs: [
+      {
+        question: "How do I book a hearing test in Tarrytown, NY?",
+        answer:
+          "Call our Harrison office at (914) 949-0034. Harrison is about 22 minutes from Tarrytown in normal traffic, as an estimate for October 2026. We have no office in Tarrytown."
+      },
+      {
+        question: "What does the hearing test include?",
+        answer:
+          "A case history, a look in your ears, tone tests in each ear, and speech tests. Your audiologist explains the audiogram in plain words."
+      },
+      {
+        question: "Is Somers an option for Tarrytown patients?",
+        answer:
+          "Somers is about 37 minutes from Tarrytown. It is open Monday to Wednesday, closed Thursday, and open Friday until 2:30. Harrison is open weekdays."
+      },
+      {
+        question: "Do you make custom earplugs for concerts?",
+        answer:
+          "Yes. We make custom earplugs. Call and tell us what you need them for."
+      }
+    ]
+  },
+  "hastings-on-hudson": {
+    heading: "Ringing in the Ears and Hearing Aids for Hastings-on-Hudson",
+    intro:
+      "Hastings-on-Hudson is a village in the town of Greenburgh, with the Hudson River on its west side. The Old Croton Aqueduct Trailway passes through the village. This page covers two questions: what can be done about ringing in the ears, and where to buy hearing aids. The Harrison office is about 23 minutes away.",
+    listeningEnvironments: [
+      {
+        title: "Ringing in the ears: a first appointment",
+        body:
+          "The National Institute on Deafness and Other Communication Disorders says there is no cure for tinnitus, but there are ways to reduce symptoms. We look in your ears, test your hearing, and ask what you hear and when it is loudest. If a cause such as earwax is found, treating it may help. Sound therapy and counseling can help you cope with ringing that stays."
+      },
+      {
+        title: "When ringing needs a doctor first",
+        body:
+          "See a doctor promptly if the ringing began suddenly, is in one ear only, beats with your pulse, or comes with hearing loss, dizziness, numbness or weakness."
+      },
+      {
+        title: "Where to buy hearing aids",
+        body:
+          "Buy hearing aids from a licensed provider who tests your hearing first. Ask who fits them, how the fit is checked, how many follow-up visits are included, and what the trial and return terms are. Ask us about ours when you book."
+      }
+    ],
+    hearingPriorities: [
+      "tinnitus appointments with a hearing test first",
+      "hearing aids bought with a tested fit",
+      "follow-up care at the Harrison office"
+    ],
+    faqs: [
+      {
+        question: "What is the treatment for ringing in the ears?",
+        answer:
+          "There is no cure for most tinnitus, according to the National Institute on Deafness and Other Communication Disorders. Treating a cause such as earwax can help. Sound therapy and counseling help many people cope. Start with a hearing test."
+      },
+      {
+        question: "Can hearing aids help with ringing in the ears?",
+        answer:
+          "They can help some people, especially when hearing loss is part of the problem. The Institute lists hearing aids among the devices used for sound therapy. A hearing test shows whether they may help you."
+      },
+      {
+        question: "Where can I buy hearing aids near Hastings-on-Hudson?",
+        answer:
+          "At our Harrison office, about 23 minutes away in normal traffic, as an estimate for October 2026. We test your hearing first, then explain the choices."
+      },
+      {
+        question: "Do you have an office in Hastings-on-Hudson?",
+        answer:
+          "No. Our offices are in Harrison and Somers. Harrison is the closer one."
+      }
+    ]
+  },
+  "briarcliff-manor": {
+    heading: "Two Offices, Both About 25 Minutes from Briarcliff Manor",
+    intro:
+      "Briarcliff Manor is a village that spans the towns of Mount Pleasant and Ossining. Its main street is Pleasantville Road. Our Harrison office is about 24 minutes away, and our Somers office is about 25. So the choice is not about distance. It is about hours and which audiologist you want. This page also covers Signia hearing aids.",
+    listeningEnvironments: [
+      {
+        title: "Which office to choose",
+        body:
+          "Harrison is open weekdays, 8:30 to 5:00. Somers is open Monday to Wednesday, closed Thursday, and open Friday until 2:30. If you need a Thursday or a late Friday visit, choose Harrison. Dr. Dold and Dr. Rivera see patients at both offices."
+      },
+      {
+        title: "Signia hearing aids",
+        body:
+          "We fit Signia hearing aids, including the Signia MaX and the Signia IX range. Whether Signia is right for you depends on your hearing test, your ears and your daily life. We explain the choices and let you decide."
+      },
+      {
+        title: "How to judge an audiologist",
+        body:
+          "Choose a Doctor of Audiology. Ask how the fitting is checked in your ear, how many follow-up visits are included, and what happens if the hearing aids do not work for you."
+      }
+    ],
+    hearingPriorities: [
+      "a choice of two offices at the same drive time",
+      "Signia hearing aid fittings",
+      "a hearing test with the results explained"
+    ],
+    faqs: [
+      {
+        question: "Which office is closer to Briarcliff Manor?",
+        answer:
+          "They are about the same. Harrison is about 24 minutes and Somers is about 25 in normal traffic, as an estimate for October 2026. Choose by hours."
+      },
+      {
+        question: "Do you fit Signia hearing aids?",
+        answer:
+          "Yes. We fit Signia hearing aids, including the Signia MaX and the Signia IX range. A hearing test shows whether they suit you."
+      },
+      {
+        question: "Who is the top audiologist near Briarcliff Manor?",
+        answer:
+          "We do not rank providers. Look for a Doctor of Audiology, a fitting checked in your ear, and clear follow-up care. Our audiologists see patients at both offices."
+      },
+      {
+        question: "Can I switch between your offices?",
+        answer:
+          "Yes. Dr. Dold and Dr. Rivera see patients at both Harrison and Somers. Say which office you want when you call."
+      }
+    ]
+  },
+  "sleepy-hollow": {
+    heading: "Ringing in the Ears and Hearing Aid Repair for Sleepy Hollow",
+    intro:
+      "Sleepy Hollow is a village in the town of Mount Pleasant, on the east bank of the Hudson. It was called North Tarrytown until 1996. The Legend of Sleepy Hollow is an 1820 story by Washington Irving. Our Harrison office is about 24 minutes away. This page covers ringing in the ears and hearing aid repair.",
+    listeningEnvironments: [
+      {
+        title: "Ringing in the ears: what we do",
+        body:
+          "We look in your ears, test your hearing, and ask when the ringing is loudest. The National Institute on Deafness and Other Communication Disorders says there is no cure for most tinnitus, but treating a cause such as earwax can help, and sound therapy and counseling help many people cope."
+      },
+      {
+        title: "When to see a doctor first",
+        body:
+          "See a doctor promptly if the ringing began suddenly, is in one ear only, beats with your pulse, or comes with hearing loss, dizziness, numbness or weakness."
+      },
+      {
+        title: "Hearing aid repair",
+        body:
+          "Hearing aids that whistle, sound weak or will not charge often need cleaning or a new part. Bring both devices, the charger and spare parts to Harrison. Call first with the make and model if you bought them elsewhere."
+      }
+    ],
+    hearingPriorities: [
+      "tinnitus appointments with a hearing test first",
+      "repair, cleaning and new parts",
+      "an earwax check before other steps"
+    ],
+    faqs: [
+      {
+        question: "Where can I get treatment for ringing in my ears near Sleepy Hollow?",
+        answer:
+          "At our Harrison office, about 24 minutes away in normal traffic, as an estimate for October 2026. We start with a look in your ears and a hearing test."
+      },
+      {
+        question: "Where can I get hearing aids repaired in Sleepy Hollow?",
+        answer:
+          "We have no office in Sleepy Hollow. Bring the hearing aids to Harrison for cleaning, parts and checks. Call first with the make and model."
+      },
+      {
+        question: "Is Somers closer for Sleepy Hollow patients?",
+        answer:
+          "No. Somers is about 35 minutes away. Harrison is about 24."
+      },
+      {
+        question: "Can earwax cause ringing in the ears?",
+        answer:
+          "Yes. The Mayo Clinic says a blockage of wax can change pressure in the ear and cause tinnitus. Have your ear checked before you try to remove wax yourself."
+      }
+    ]
+  },
+  irvington: {
+    heading: "Hearing Aid Fittings and Follow-Up for Irvington",
+    intro:
+      "Irvington is a village in the town of Greenburgh. The village includes the Ardsley-on-Hudson station area. Our Harrison office is about 25 minutes away. This page explains a hearing aid fitting and how to pick an audiologist.",
+    listeningEnvironments: [
+      {
+        title: "What happens at a hearing aid fitting",
+        body:
+          "Your audiologist programs the hearing aids from your hearing test, and checks what they deliver with a probe microphone in your ear. You practice handling, cleaning and charging. A follow-up visit comes after you have worn them for a week or two."
+      },
+      {
+        title: "Choosing an audiologist in Irvington",
+        body:
+          "Choose a Doctor of Audiology. Ask how the fit is checked, how many follow-up visits are included, and who adjusts the hearing aids later. Ask for the answers in writing."
+      },
+      {
+        title: "Concerts, theaters and music",
+        body:
+          "Halls and theaters can be hard for hearing aid wearers. If you go often, or you play an instrument, tell your audiologist. Some hearing aids have a music setting."
+      }
+    ],
+    hearingPriorities: [
+      "a hearing aid fitting checked in your own ear",
+      "follow-up visits and adjustments",
+      "settings for music and theaters"
+    ],
+    faqs: [
+      {
+        question: "Where can I get a hearing aid fitting near Irvington?",
+        answer:
+          "At our Harrison office, about 25 minutes from Irvington in normal traffic, as an estimate for October 2026. Somers is about 45 minutes."
+      },
+      {
+        question: "How many visits does a hearing aid fitting take?",
+        answer:
+          "Usually a fitting visit and at least one follow-up after you have worn the hearing aids for a week or two. Your audiologist sets the plan with you."
+      },
+      {
+        question: "Who is the best audiologist in Irvington?",
+        answer:
+          "We do not rank providers. Choose a Doctor of Audiology, ask how the fitting is verified, and ask what follow-up is included."
+      },
+      {
+        question: "Is Ardsley-on-Hudson part of Irvington?",
+        answer:
+          "Yes. The Ardsley-on-Hudson area and its station are part of the village of Irvington."
+      }
+    ]
+  },
+  ossining: {
+    heading: "Hearing Care for Ossining: Two Offices, a Similar Drive",
+    intro:
+      "Ossining has two parts: the village, and the larger town around it. The town sits on the Hudson River. Our Somers office is about 28 minutes from Ossining, and Harrison is about 31. So the two offices are a similar drive. This page helps you choose, and explains how we pick hearing aids.",
+    listeningEnvironments: [
+      {
+        title: "Somers or Harrison: how to choose",
+        body:
+          "Somers is about three minutes closer. But Somers is closed on Thursdays and closes at 2:30 on Fridays. Harrison is open weekdays, 8:30 to 5:00. Choose by the day and time you need. Our audiologists see patients at both."
+      },
+      {
+        title: "Finding the best hearing aids for you",
+        body:
+          "No hearing aid is best for everyone. The right one depends on your hearing test, your ears, how well you handle small devices, and the rooms where you struggle. We fit Oticon, Phonak, ReSound, Signia, Starkey, Widex, Unitron and Rexton hearing aids."
+      },
+      {
+        title: "Your first hearing test",
+        body:
+          "We ask about your hearing and health, look in your ears, test tones and speech, and explain the audiogram. You leave with a clear plan."
+      }
+    ],
+    hearingPriorities: [
+      "a hearing test at whichever office suits your schedule",
+      "hearing aids chosen from your test, not from a brand",
+      "repair and follow-up close to where you live"
+    ],
+    faqs: [
+      {
+        question: "Which office should I use if I live in Ossining?",
+        answer:
+          "Somers is about 28 minutes away and Harrison about 31, as an estimate for October 2026 in normal traffic. Somers is closed on Thursdays. Choose by the day you need."
+      },
+      {
+        question: "What are the best hearing aids in Ossining?",
+        answer:
+          "There is no single best hearing aid. We choose from your hearing test and your daily life. We explain the options and let you decide."
+      },
+      {
+        question: "Do you have an office in Ossining?",
+        answer:
+          "No. Our offices are in Harrison and Somers. Ossining is a service area."
+      },
+      {
+        question: "Can I see the same audiologist at both offices?",
+        answer:
+          "Yes. Dr. Dold and Dr. Rivera see patients at both offices. Say which office and which day you want when you call."
+      }
+    ]
+  },
+  "croton-on-hudson": {
+    heading: "Hearing Care for Croton-on-Hudson and the Croton Valley",
+    intro:
+      "Croton-on-Hudson is a village in the town of Cortlandt, on the shore of the Hudson River. It has the Croton-Harmon station and Croton Point Park. If you are looking for an audiologist, a hearing test or hearing aids in Croton, our Somers office is about 30 minutes away.",
+    listeningEnvironments: [
+      {
+        title: "Hearing test in Croton",
+        body:
+          "We look in your ears, test the softest tones you hear in each ear, and test how well you understand speech. Your audiologist explains the results in plain words. If your hearing changed suddenly, call and say so."
+      },
+      {
+        title: "Wind, water and the park",
+        body:
+          "Croton Point Park is a large park on a peninsula in the Hudson. Wind and water are hard on hearing aid microphones. If you spend time outdoors, ask about wind handling and moisture care when you choose hearing aids."
+      },
+      {
+        title: "The commute from Croton-Harmon",
+        body:
+          "Croton-Harmon is a Metro-North and Amtrak station. Train announcements and platform noise can be hard with hearing loss. Tell your audiologist if you commute. It helps us set up your hearing aids."
+      }
+    ],
+    hearingPriorities: [
+      "a hearing test at the Somers office",
+      "hearing aids set for wind, trains and busy rooms",
+      "repair and cleaning close to home"
+    ],
+    faqs: [
+      {
+        question: "Where is the nearest audiologist to Croton-on-Hudson?",
+        answer:
+          "Our Somers office, about 30 minutes away, as an estimate for October 2026 in normal traffic. Harrison is about 38 minutes. We have no office in Croton."
+      },
+      {
+        question: "When is the Somers office open?",
+        answer:
+          "Monday to Wednesday, 8:30 to 5:00. It is closed on Thursdays and open on Fridays until 2:30. Call (914) 556-6720. Harrison is open weekdays if you need a Thursday."
+      },
+      {
+        question: "Can I get hearing aids in Croton?",
+        answer:
+          "We fit hearing aids at our Somers and Harrison offices. We test your hearing first, then explain the choices."
+      },
+      {
+        question: "Do you repair hearing aids?",
+        answer:
+          "We clean hearing aids, replace worn parts and check the programming. If a part has failed, the device may need to go to its maker. Call first with the make and model."
+      }
+    ]
+  },
+  "cortlandt-manor": {
+    heading: "Tinnitus and Hearing Aid Repair for Cortlandt Manor",
+    intro:
+      "Cortlandt Manor is a hamlet in the town of Cortlandt, with ZIP code 10567. It lies north of Croton-on-Hudson. Our Somers office is about 29 minutes away. This page covers ringing in the ears and hearing aid repair.",
+    listeningEnvironments: [
+      {
+        title: "Tinnitus treatment: where it starts",
+        body:
+          "We look in your ears and test your hearing. The National Institute on Deafness and Other Communication Disorders says there is no cure for most tinnitus, but there are ways to reduce symptoms. Treating a cause such as earwax can help. Sound therapy and counseling help many people cope."
+      },
+      {
+        title: "When to see a doctor first",
+        body:
+          "See a doctor promptly if the ringing began suddenly, is in one ear only, beats with your pulse, or comes with hearing loss, dizziness, numbness or weakness."
+      },
+      {
+        title: "Hearing aid repair near Cortlandt Manor",
+        body:
+          "Bring both hearing aids, the charger and spare parts to the Somers office. We clean them, replace worn parts and check the settings. If you bought them elsewhere, call first with the make and model."
+      }
+    ],
+    hearingPriorities: [
+      "tinnitus appointments with a hearing test first",
+      "hearing aid repair and cleaning at Somers",
+      "an earwax check before other steps"
+    ],
+    faqs: [
+      {
+        question: "Where can I get tinnitus treatment near Cortlandt Manor?",
+        answer:
+          "At our Somers office, about 29 minutes away, as an estimate for October 2026 in normal traffic. We start with a look in your ears and a hearing test. Harrison is about 46 minutes."
+      },
+      {
+        question: "Where can I get hearing aids repaired near Cortlandt Manor?",
+        answer:
+          "At our Somers office. We have no office in Cortlandt Manor. Call (914) 556-6720 first with the make and model."
+      },
+      {
+        question: "Is Cortlandt Manor a town?",
+        answer:
+          "No. It is a hamlet, an unincorporated area, in the town of Cortlandt."
+      },
+      {
+        question: "What days is the Somers office open?",
+        answer:
+          "Monday to Wednesday, 8:30 to 5:00, and Friday until 2:30. It is closed on Thursdays."
       }
     ]
   }

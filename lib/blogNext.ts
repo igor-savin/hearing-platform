@@ -1508,6 +1508,376 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       ]
     }
   },
+  {
+    path: "/employer-union-hearing-aid-benefits-westchester",
+    title: "Employer and Union Hearing Aid Benefits in Westchester",
+    metaTitle: "Hearing Aid Benefits: Empire Plan, UFT, Aetna",
+    metaDescription: "Use a work or union hearing aid benefit in Westchester? See how Empire Plan (NYSHIP), UFT and Aetna benefits work. Call us and our biller will check yours.",
+    h1: "Employer and Union Hearing Aid Benefits in Westchester",
+    heroImage: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Reviewing an employer or union hearing aid benefit before a visit" },
+    sections: [
+      "How the benefit works",
+      "Empire Plan (NYSHIP)",
+      "UFT Welfare Fund",
+      "Aetna and other employer plans",
+      "Pay first, claim later",
+      "What to ask your plan",
+      "How we can help"
+    ],
+    body: [
+      "Can you use an Empire Plan, UFT or Aetna hearing aid benefit with Audiology Associates of Westchester? Please call us before you book. Our biller can check the benefits of any plan for you. We do not say on this page that we are in network with any plan. This page explains how these three benefits work, as of October 2026, so you know what to ask.",
+      "A hearing aid benefit comes from your employer or your union. It is not the same as general health insurance. Two people in the same office can have different hearing aid benefits. The rules are in your own plan documents, so we use named plans below only as examples.",
+      "How the benefit works",
+      "Most work and union hearing aid benefits do one of two things. Some pay a set dollar amount toward hearing aids on a fixed schedule, such as once every few years. Some cover hearing aids as one of many services, with limits. In both cases, ask three things. How much does the plan pay? How often can I use it? Do I pay first and send in a claim, or does the provider bill the plan?",
+      "Empire Plan (NYSHIP)",
+      "The Empire Plan is the main health plan of the New York State Health Insurance Program (NYSHIP). It is for New York State employees, retirees and their dependents. The 2026 Empire Plan summary of benefits lists hearing aids under other covered services and says limitations may apply. It sends you to your plan document for the details. It does not give a dollar amount or a time limit in the summary. For the amount that applies to you, read your plan document or call NYSHIP at 1-877-769-7447. Benefits can differ by bargaining unit and by program, so do not rely on what a co-worker was told.",
+      "UFT Welfare Fund",
+      "The United Federation of Teachers (UFT) Welfare Fund is for UFT-represented employees and their dependents. The UFT website says the fund reimburses up to $4,000 for hearing aids every three years, or the cost of the hearing aids if that is less. The UFT describes this as direct reimbursement. You pay the full cost first and then send a claim to the fund. The UFT also keeps its own preferred provider list with discounts. We do not say here whether any provider is on that list. Ask the UFT Welfare Fund how the list affects your claim.",
+      "Aetna and other employer plans",
+      "Aetna coverage depends on the employer that bought the plan. Aetna's own clinical policy bulletin, last reviewed on 23 September 2026, says most Aetna benefit plans exclude hearing aids. It tells members to check their benefit plan description. For plans that do not exclude hearing aids, it says over-the-counter and prescription hearing aids can both be eligible. The device must be cleared by the FDA, prescribed by a qualified provider and medically necessary. The same idea holds for most other insurers. Your employer chose what to include.",
+      "Pay first, claim later",
+      "Many hearing aid benefits pay you back after you have paid the provider. The UFT Welfare Fund describes its benefit this way. It asks for an itemized receipt marked paid and for claims within 90 days of the date of service. Rules like these are strict, and they are set by your plan, not by us. Read your claim form before your visit. Ask for an itemized receipt when you pay. If you want to spread the cost while you wait for your claim, see our page on hearing aid payment plans.",
+      "What to ask your plan",
+      "Call the number on your member card or your benefits office. Ask these questions. Does my plan cover a hearing exam and hearing aids? What is the dollar limit, and how often does it renew? Does it pay the provider or pay me? Is there a deadline to send a claim? What papers does it need, such as an itemized receipt or a prescription? Does it limit which providers I can use? Write down the date and the name of the person you spoke with.",
+      "How we can help",
+      "Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720. Tell us the name of your plan. Our biller can check the benefits of any plan for you before your visit. We offer patient financing, so you can ask about that on the same call. Plans change each year, so we will tell you what we find and you can confirm it with your plan."
+    ],
+    faqs: [
+      { question: "Do you take the Empire Plan or NYSHIP?", answer: "Please call us. Our biller can check the benefits of any plan for you. We do not promise on this page that we are in network with a plan. Ask your plan how it handles claims for the provider you choose." },
+      { question: "Does the UFT Welfare Fund pay for hearing aids?", answer: "The UFT website says it reimburses up to $4,000 for hearing aids every three years, or the cost of the hearing aids if that is less. You pay first and send a claim. Check the UFT Welfare Fund for the current rules and deadlines." },
+      { question: "Does Aetna cover hearing aids?", answer: "It depends on your employer's plan. Aetna says most of its benefit plans exclude hearing aids. Check your benefit plan description, or call the number on your member card." },
+      { question: "What if my plan reimburses me after I pay?", answer: "Ask us for an itemized receipt when you pay, and read your plan's claim rules before the visit. Some plans have short deadlines. We also offer patient financing if you want to spread the cost while you wait for your claim." },
+      { question: "Does Medicare cover hearing aids?", answer: "Original Medicare does not cover hearing aids. Many Medicare Advantage plans include some benefit. Our insurance guide explains how to check." }
+    ],
+    related: [
+      { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
+      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Hearing Aid Payment Plans in Westchester", href: "/hearing-aid-payment-plans-westchester" },
+      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-hearing-benefits" },
+      { label: "Hearing Testing", href: "/hearing-testing" }
+    ],
+    blogMeta: {
+      frame: "Patient guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "Cost and coverage",
+      pullQuote: "Named plans on this page are examples. Your own plan document decides what you get.",
+      keyTakeaways: [
+        "Call us before you book. Our biller can check the benefits of any plan for you.",
+        "The UFT website says its fund reimburses up to $4,000 for hearing aids every three years. You pay first and send a claim.",
+        "The 2026 Empire Plan summary lists hearing aids as a covered service with limits. Read your plan document for the amount.",
+        "Aetna says most of its plans exclude hearing aids. Employer plans differ, so check yours.",
+        "We do not claim to be in network with any plan on this page."
+      ],
+      patientQuestion: "Can I use my work or union hearing aid benefit?",
+      storyLead: "How Empire Plan (NYSHIP), UFT Welfare Fund and Aetna hearing aid benefits work, what to ask your plan, and how our team can help.",
+      comparisonTable: {
+        afterHeading: "How the benefit works",
+        caption: "What each plan's own pages say, as of October 2026",
+        headers: ["Plan", "What its own pages say", "What to check"],
+        rows: [
+          ["Empire Plan (NYSHIP)", "Hearing aids are listed as an other covered service, with limitations", "The amount and time limit in your plan document"],
+          ["UFT Welfare Fund", "Reimburses up to $4,000 every three years, or the cost if less", "Claim deadline and receipt rules"],
+          ["Aetna employer plans", "Most plans exclude hearing aids", "Your benefit plan description"]
+        ]
+      },
+      sources: [
+        { label: "UFT: Hearing aids and exams", href: "https://www.uft.org/news/you-should-know/know-your-benefits/hearing-aids-and-exams" },
+        { label: "UFT: Hearing aid providers and direct reimbursement", href: "https://www.uft.org/hearing-aid-providers" },
+        { label: "NYSHIP: Empire Plan 2026 Summary of Benefits and Coverage", href: "https://www.cs.ny.gov/employee-benefits/sbc/pdfs/2026/ny-unrep-sbc-2026.pdf" },
+        { label: "NYSHIP: The Empire Plan", href: "https://www.nyship.ny.gov" },
+        { label: "Aetna: Clinical Policy Bulletin, Hearing Aids", href: "https://www.aetna.com/cpb/medical/data/600_699/0612.html" }
+      ]
+    }
+  },
+  {
+    path: "/hearing-aid-adjustments-westchester",
+    title: "Hearing Aid Adjustments in Westchester: Why Visits Matter",
+    metaTitle: "Hearing Aid Adjustment in Westchester, NY",
+    metaDescription: "We adjust hearing aids in person in Harrison and Somers. Learn why regular visits matter, what happens at one, and what you can do by phone or email.",
+    h1: "Hearing Aid Adjustments in Westchester: Why In-Person Visits Matter",
+    heroImage: { src: "/assets/hearing-aid-fit-adjusting-behind-the-ear.png", alt: "Audiologist making a hearing aid adjustment in person" },
+    sections: [
+      "What a hearing aid adjustment is",
+      "Why we adjust in person",
+      "How often to come in",
+      "What you can do by phone or email",
+      "What to bring and what to write down",
+      "When not to wait"
+    ],
+    body: [
+      "We make hearing aid adjustments in person, at our Harrison and Somers offices. We do not offer remote or virtual adjustments. Some people search for them, so we want to be clear. This page explains why we prefer in-person visits, how often we suggest them, and what you can do by phone or email between visits.",
+      "A hearing aid adjustment changes how your devices sound. It also checks that they still fit well and still match your hearing. Most people need a few adjustments in the first months. Many need more as their hearing or their daily life changes.",
+      "What a hearing aid adjustment is",
+      "Your audiologist programs hearing aids from your hearing test. After you wear them in real rooms, you learn what works. Voices may sound sharp. Your own voice may sound boomy. A restaurant may still be hard. An adjustment changes the settings to match what you tell us. The National Institute on Deafness and Other Communication Disorders (NIDCD) advises working with your audiologist until you are comfortable and satisfied. The American Speech-Language-Hearing Association (ASHA) says your audiologist makes the adjustments you need.",
+      "Why we adjust in person",
+      "In the office, your audiologist can do things that a phone call cannot. We look in your ears, because wax or a loose dome can cause problems that look like settings problems. We check how the device sits in your ear. We can measure what the hearing aid delivers at your eardrum with real-ear measurement, and we can repeat your hearing test if your hearing may have changed. We also hear how you do in conversation in the room. Then we make a change and check it with you while you are there. Some providers offer remote adjustment. We do not. We see our patients over time, and we prefer to see you in person.",
+      "How often to come in",
+      "We prefer to see patients a few times a year. These visits check your progress and make adjustments. Your audiologist sets the schedule with you, and it can change as your needs change. New wearers usually come in more often at the start. Our page on follow-up visits for new hearing aids explains what to expect in the first months.",
+      "What you can do by phone or email",
+      "If you are an existing patient and something is wrong, call or email us. Our team will try to troubleshoot with you by phone or email. For example, we can talk you through cleaning, changing a dome or wax guard, checking the charger, or restarting the pairing with your phone. If the problem needs a change to the settings or a closer look, we will book you in. Our pages on why hearing aids whistle and on the difference between a tune-up and a repair can help you before you call.",
+      "What to bring and what to write down",
+      "Bring both hearing aids, even if only one has a problem. Bring the charger and cable, spare domes and filters, and your phone if you use the app. Keep a short list of times when you did not hear well. Note the place, the time of day and what you were trying to hear. This list helps us adjust to your real life, not only to what we can test in a quiet room. If you bought your hearing aids somewhere else, call us with the make and model first. Some brands limit who can program them, so we tell you what we can do before you drive over.",
+      "When not to wait",
+      "A hearing aid adjustment does not fix every problem. Do not wait for your next visit if you have sudden hearing loss, severe dizziness, ear pain, or drainage from the ear. Contact a doctor promptly. If your hearing has changed gradually, book a hearing test. Your settings may need to match a new result. Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720 to book."
+    ],
+    faqs: [
+      { question: "Do you offer remote hearing aid adjustments?", answer: "No. We make adjustments in person at our Harrison and Somers offices. Existing patients can call or email us about a problem, and our team will troubleshoot by phone or email." },
+      { question: "How often should I have my hearing aids adjusted?", answer: "We prefer to see patients a few times a year to check progress and make adjustments. New wearers usually come in more often at first. Your audiologist will set a plan with you." },
+      { question: "My hearing aids sound different today. Should I come in?", answer: "First check the simple causes: a clean dome and wax guard, a full charge, and the right program. If the sound is still wrong, call us. Do not wait if the change in your hearing was sudden." },
+      { question: "Can you adjust hearing aids I bought somewhere else?", answer: "Often, but it depends on the brand, the model and the fitting software. Call us with the make and model before you book." },
+      { question: "Is an adjustment included in the price of hearing aids?", answer: "Ask us what your quote includes before you buy. Our cost guide lists the questions to ask about follow-up visits, adjustments and warranty." }
+    ],
+    related: [
+      { label: "How Many Follow-Up Visits Do New Hearing Aids Need?", href: "/how-many-follow-up-visits-new-hearing-aids" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing Aid Tune-Ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
+      { label: "Hearing Aid Tune-Up vs Repair", href: "/hearing-aid-tune-up-vs-repair" },
+      { label: "Why Hearing Aids Whistle", href: "/why-hearing-aids-whistle" },
+      { label: "Programming Hearing Aids Bought Somewhere Else", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
+      { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" }
+    ],
+    blogMeta: {
+      frame: "Patient guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "Hearing aid care",
+      pullQuote: "We make hearing aid adjustments in person. Here is why, and what you can do between visits.",
+      keyTakeaways: [
+        "We adjust hearing aids in person at our Harrison and Somers offices. We do not offer remote adjustments.",
+        "We prefer to see patients a few times a year to check progress and make adjustments.",
+        "Existing patients can call or email, and our team will troubleshoot by phone or email.",
+        "Bring both hearing aids, the charger, spare parts, and a list of times you did not hear well.",
+        "Do not wait for a visit if you have sudden hearing loss, severe dizziness, ear pain or drainage."
+      ],
+      patientQuestion: "Can my hearing aids be adjusted remotely?",
+      storyLead: "What a hearing aid adjustment is, why we make them in person, how often to come in, and what you can do by phone or email.",
+      sources: [
+        { label: "NIDCD: Hearing Aids", href: "https://www.nidcd.nih.gov/health/hearing-aids" },
+        { label: "ASHA: Hearing Aids", href: "https://www.asha.org/public/hearing/hearing-aids/" }
+      ]
+    }
+  },
+  {
+    path: "/custom-earplugs-westchester",
+    title: "Custom Earplugs in Westchester: Sleep, Swim, Music, Work",
+    metaTitle: "Custom Earplugs in Westchester, NY | Audiologist",
+    metaDescription: "We make custom earplugs at our Harrison and Somers offices, for sleep, swimming, music, work and noisy hobbies. Learn how they work and how to book.",
+    h1: "Custom Earplugs in Westchester: Sleep, Swim, Music and Work",
+    heroImage: { src: "/assets/brands/earmolds-earplugs.webp", alt: "Custom earplugs made by an audiologist in Westchester" },
+    sections: [
+      "What custom earplugs are",
+      "How we make them",
+      "Sleep",
+      "Swimming and water",
+      "Music and concerts",
+      "Work and noisy hobbies",
+      "What custom earplugs do not do",
+      "How to book"
+    ],
+    body: [
+      "Yes, we make custom earplugs. Our audiologists make them at our Harrison and Somers offices. You can get a pair for sleep, swimming, music, work or a noisy hobby. A custom earplug is shaped to your own ear. That is the main difference from the plugs you buy at a store. This page explains the uses, how the plugs are made, and what to expect.",
+      "Patients come to us from White Plains and from towns across Westchester. Harrison is the closer office for central and southern Westchester. Somers is the closer office for the north. Call to ask which office suits you.",
+      "What custom earplugs are",
+      "A custom earplug is made from an impression of your ear. Stores sell foam and pre-molded plugs in standard sizes. These can work, but a standard size may not seal your ear well. A plug that does not seal does not protect as much. The National Institute on Deafness and Other Communication Disorders (NIDCD) says custom musician earplugs are molded to your ear. They are made to reduce sound while letting in as much natural sound as possible. It advises that you consult a hearing health professional for them.",
+      "How we make them",
+      "Your audiologist looks in your ear first. Wax or a medical problem must be dealt with before a plug is made. Then we take an impression of your ear in the office. The impression is used to make the plugs. Tell us what you need them for, because the use decides the type. Ask us about the options for your use. The plug should feel secure and should not hurt. The NIDCD says to never force an earplug into your ear.",
+      "Sleep",
+      "Some people wear earplugs to sleep because of a partner who snores, street noise or shift work. A custom plug can be made small and soft so that it is comfortable when you lie on your side. Tell us how you sleep. Ask how much sound you will still hear, such as an alarm clock or a smoke alarm, and how to clean the plugs.",
+      "Swimming and water",
+      "Water in the ear canal can lead to swimmer's ear, an infection of the outer ear canal. The Centers for Disease Control and Prevention (CDC) advises keeping your ears as dry as possible while swimming. It lists a bathing cap, earplugs or custom-fitted swim molds as ways to do this. The CDC also says to see a healthcare provider for ear pain or drainage. Do not wear any earplug if you have ear pain or drainage until a provider has looked at your ear.",
+      "Music and concerts",
+      "Music plugs lower the sound evenly, so music stays clear and does not sound muffled. The NIDCD lists band and orchestra rehearsals and performances, and concerts, among the times to wear hearing protection. For a closer look at filters and foam plugs, read our guide to concert hearing protection. If you play in a band, tell us which instrument you play and where you stand. We fit hearing aids for musicians as well.",
+      "Work and noisy hobbies",
+      "The NIDCD says sounds at or above 85 dBA can cause hearing loss with long or repeated exposure. The Occupational Safety and Health Administration (OSHA) says employers must run a hearing conservation program when workers are exposed to an average of 85 dBA or more over eight hours. Employers must provide hearing protection free of charge in that program. Many people still want a plug that fits their own ear and that they will wear all day. Custom plugs can suit power tools, lawn work, shooting sports, motorcycles and other loud hobbies. Our article on power tools and yard work gives more detail.",
+      "What custom earplugs do not do",
+      "Hearing protectors do not block all sound. A higher noise reduction rating usually blocks more, but only when the plug is worn correctly. Earplugs do not treat hearing loss or ringing in the ears. If you already have ringing or trouble hearing, book a hearing test. If your hearing changed suddenly after loud noise, do not wait. Contact a doctor promptly.",
+      "How to book",
+      "Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720. Tell us what you want the earplugs for. We do not list prices on this page, so please ask when you call."
+    ],
+    faqs: [
+      { question: "Do you make custom earplugs?", answer: "Yes. We make custom earplugs at our Harrison and Somers offices. Call us and tell us what you want them for." },
+      { question: "How much do custom earplugs cost?", answer: "Please ask when you call. The cost depends on the type of plug you need." },
+      { question: "Can I get custom earplugs for sleeping?", answer: "Yes. Tell your audiologist how you sleep so that the plugs can be comfortable. Ask how much sound you will still hear, such as an alarm." },
+      { question: "Can I get custom swim plugs?", answer: "We make custom earplugs for several uses. The CDC lists custom-fitted swim molds as one way to keep ears dry. Do not wear any plug if you have ear pain or drainage. See a healthcare provider first." },
+      { question: "Are custom earplugs better than foam plugs?", answer: "They fit your own ear and can be more comfortable for long wear. A well-fitted foam plug also protects. The best plug is one that fits and that you will wear." },
+      { question: "Do I need a hearing test first?", answer: "Your audiologist will look in your ear before taking an impression. A hearing test is a good idea if you have been around loud noise for years, or if you have ringing or trouble understanding speech." }
+    ],
+    related: [
+      { label: "Hearing Protection", href: "/hearing-protection" },
+      { label: "Ear Gear: Custom Earplugs and Earmolds", href: "/products/eargear" },
+      { label: "Hearing Protection for Concerts: Musician Earplugs vs Foam Plugs", href: "/hearing-protection-concerts-musician-vs-foam" },
+      { label: "Hearing Protection for Power Tools and Yard Work", href: "/hearing-protection-power-tools-yard-work" },
+      { label: "How Loud Is Too Loud?", href: "/how-loud-is-too-loud-decibels" },
+      { label: "Hearing Aids for Musicians", href: "/musician-hearing-aids-westchester" },
+      { label: "Hearing Testing", href: "/hearing-testing" }
+    ],
+    blogMeta: {
+      frame: "Patient guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "Hearing protection",
+      pullQuote: "A plug that does not seal does not protect as much. A custom plug is shaped to your own ear.",
+      keyTakeaways: [
+        "We make custom earplugs at our Harrison and Somers offices.",
+        "Plugs are made from an impression of your ear, taken in the office.",
+        "Common uses are sleep, swimming, music, work and noisy hobbies.",
+        "Earplugs do not block all sound, and they do not treat hearing loss.",
+        "Do not wear a plug if you have ear pain or drainage. See a provider first."
+      ],
+      patientQuestion: "Where can I get custom earplugs near me?",
+      storyLead: "What custom earplugs are, what they are used for, how we make them, and how to book at our Harrison or Somers office.",
+      sources: [
+        { label: "NIDCD: Hearing Protectors", href: "https://www.nidcd.nih.gov/publication-products/hearing-protectors" },
+        { label: "CDC: Preventing Swimmer's Ear", href: "https://cdc.gov/healthy-swimming/prevention/preventing-swimmers-ear.html" },
+        { label: "OSHA: Occupational Noise Exposure", href: "https://www.osha.gov/noise" }
+      ]
+    }
+  },
+  {
+    path: "/hearing-aid-payment-plans-westchester",
+    title: "Hearing Aid Payment Plans and Financing in Westchester",
+    metaTitle: "Hearing Aid Payment Plans in Westchester, NY",
+    metaDescription: "We offer patient financing for hearing aids. See how paying over time works, what to ask before you sign, and how it differs from insurance. Call to book.",
+    h1: "Hearing Aid Payment Plans and Financing in Westchester",
+    heroImage: { src: "/assets/hearing-care-options-reviewing-paperwork.png", alt: "Reviewing hearing aid payment plan options with an audiologist" },
+    sections: [
+      "Financing and insurance are different",
+      "How paying over time works",
+      "What to ask before you sign",
+      "Watch for deferred interest",
+      "Other ways to lower the cost",
+      "How to book"
+    ],
+    body: [
+      "Yes, we offer patient financing for hearing aids. Financing lets you pay over time instead of all at once. Ask our team how it works for you when you book your visit. This page explains how payment plans work in general, and what to ask about any plan before you sign. We do not list lenders, rates or terms here.",
+      "Hearing aids cost about $200 to more than $8,000 a pair, as a broad market estimate as of October 2026. Our cost guide explains why the range is so wide. A payment plan does not change the price of the hearing aids. It changes when you pay.",
+      "Financing and insurance are different",
+      "Insurance pays part of the cost, if your plan has a hearing aid benefit. Financing does not reduce what you owe. It spreads what you owe over a number of payments. You can use both. Some benefits pay you back after you pay the provider. In that case, financing can help you cover the cost while you wait for your claim. Our guides on hearing aid insurance and on employer and union benefits explain how to check your plan. Call us if you want our biller to check it.",
+      "How paying over time works",
+      "In most financing plans, you agree to a monthly payment for a set number of months. The plan may charge interest, fees, or both. The total you pay can be higher than the price of the hearing aids. The length of the plan changes the monthly payment. A longer plan has a lower monthly payment, but it can cost more in total. Ask our team about the choices that are open to you.",
+      "What to ask before you sign",
+      "Get the answers in writing. What is the total I will pay, including interest and fees? What is the interest rate? How many months is the plan, and what is each payment? Is there a fee for paying early? What happens if I pay late? Does the plan need a credit check? What does the quote include? Does it cover the fitting, follow-up visits, cleanings and the warranty? Our guide to questions before buying hearing aids lists more.",
+      "Watch for deferred interest",
+      "Some health care financing offers no interest for a set time. This is often called deferred interest. The Consumer Financial Protection Bureau (CFPB) has warned about it. If you do not pay the full balance before the promotional period ends, interest can be charged from the original purchase date. The CFPB also notes that minimum payments usually do not pay off the balance by the end of the promotional period. If a plan has a promotional period, ask for the end date and the monthly payment that clears the balance in time.",
+      "Other ways to lower the cost",
+      "Ask your plan about a hearing aid benefit. Hearing aids are generally an eligible expense for a flexible spending account or a health savings account. The Internal Revenue Service (IRS) lists hearing aids among deductible medical expenses, to the extent that your medical expenses exceed 7.5 percent of your adjusted gross income. Ask your tax adviser how this applies to you. Also ask whether a different technology level would meet your needs. A device does not need to be the newest to work well.",
+      "How to book",
+      "Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720. Start with a hearing test. After the test, your audiologist can give you a written quote built around your own hearing. Ask about financing when you book, and again when you have the quote."
+    ],
+    faqs: [
+      { question: "Do you offer payment plans for hearing aids?", answer: "Yes. We offer patient financing. Ask our team how it works for you when you book." },
+      { question: "Does financing lower the price of hearing aids?", answer: "No. Financing spreads the cost over payments. Interest or fees can make the total higher than the price of the hearing aids. Ask for the total in writing." },
+      { question: "Can I use insurance and financing together?", answer: "Often yes. Insurance pays part of the cost if your plan has a hearing aid benefit. Financing can cover the rest, or cover the cost while you wait for a reimbursement. Call us and our biller can check your plan." },
+      { question: "What is deferred interest?", answer: "It is a no-interest offer for a set time. If you do not pay the full balance before the offer ends, interest can be charged from the first day. Ask for the end date." },
+      { question: "Can I pay with an FSA or HSA?", answer: "Hearing aids are generally an eligible expense for a flexible spending account or a health savings account. Check the rules of your own account." }
+    ],
+    related: [
+      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
+      { label: "Employer and Union Hearing Aid Benefits", href: "/employer-union-hearing-aid-benefits-westchester" },
+      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "How Much Does a Hearing Test Cost in Westchester?", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Hearing Testing", href: "/hearing-testing" }
+    ],
+    blogMeta: {
+      frame: "Patient guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "Cost and coverage",
+      pullQuote: "A payment plan does not change the price of the hearing aids. It changes when you pay.",
+      keyTakeaways: [
+        "We offer patient financing. Ask our team how it works when you book.",
+        "Financing spreads the cost. Insurance reduces it. They are not the same.",
+        "Ask for the total cost, the rate, the fees and the length of the plan in writing.",
+        "Be careful with deferred interest offers. Ask for the end date.",
+        "FSA and HSA money can generally be used for hearing aids."
+      ],
+      patientQuestion: "Can I pay for hearing aids over time?",
+      storyLead: "How hearing aid payment plans work, how they differ from insurance, and what to ask before you sign.",
+      sources: [
+        { label: "CFPB: What's the deal with health care credit cards?", href: "https://www.consumerfinance.gov/about-us/blog/whats-the-deal-with-health-care-credit-cards-four-things-you-should-know" },
+        { label: "IRS: Topic no. 502, Medical and dental expenses", href: "https://www.irs.gov/taxtopics/tc502" },
+        { label: "NIDCD: Hearing Aids", href: "https://www.nidcd.nih.gov/health/hearing-aids" }
+      ]
+    }
+  },
+  {
+    path: "/musician-hearing-aids-westchester",
+    title: "Hearing Aids for Musicians in Westchester",
+    metaTitle: "Hearing Aids for Musicians in Westchester, NY",
+    metaDescription: "Hearing aids for musicians need more than a speech setting. Learn about music programs, feedback and sound quality, and how we fit them in Westchester.",
+    h1: "Hearing Aids for Musicians in Westchester",
+    heroImage: { src: "/assets/blog-seed/photo-v2/hearing-protection-concerts-musician-vs-foam-photo-v2.webp", alt: "Musician at a concert who needs hearing aids that keep music clear" },
+    sections: [
+      "Why music is different from speech",
+      "Music programs",
+      "Feedback and sound quality",
+      "Compression and loud peaks",
+      "Protecting the hearing you have",
+      "What to bring to your visit",
+      "What we cannot promise"
+    ],
+    body: [
+      "Yes, we fit hearing aids for musicians. We see patients from every profession, and some of them play or sing. Hearing aids are built mainly to help you understand speech. Music is a different job, so a musician should say so at the first visit. This page explains what is different and what to ask your audiologist.",
+      "Why music is different from speech",
+      "Speech changes level and pitch in a narrow range. Music can be much louder, can last for a long time, and often has pure, steady tones. Hearing aid settings that suit a conversation can distort a flute, flatten a piano, or cut the top off a cymbal. Musicians also need to hear their own instrument and the players around them. The settings that help in a restaurant may not be the settings that help on stage.",
+      "Music programs",
+      "Many hearing aids have a separate music program. Greasley and Crook, writing in ENT & Audiology News in 2021, advise using a manufacturer music program, because it can include other strategies. They also say that research on the benefit is mixed and that each patient should try the program and judge it. We agree with that approach. Try the program in the rooms where you play and listen, and tell us what you hear.",
+      "Feedback and sound quality",
+      "Hearing aids have a feedback manager that removes whistling. It can mistake steady musical notes, such as an organ or a flute, for feedback and suppress them. Greasley and Crook note that an audiologist may switch it off for the music program if you report problems with live music. Marshall Chasin, an audiologist who writes about musicians and hearing aids, also suggests turning off noise reduction and frequency shifting in the music program, because they can change musical sound. These are options for your audiologist to weigh, not a rule for every patient.",
+      "Compression and loud peaks",
+      "Compression changes how a hearing aid handles loud and soft sounds. Greasley and Crook report that slow-acting compression was linked to higher preference ratings for classical music in some studies. They say more research is needed. Chasin suggests devices that can take in loud peaks without clipping, and a low compression ratio so music keeps its dynamics. Your audiologist can explain which of these your devices allow. Not every hearing aid has these options. We do not promise that a specific product will suit your instrument.",
+      "Protecting the hearing you have",
+      "Loud music can harm hearing over time. The National Institute on Deafness and Other Communication Disorders (NIDCD) lists band and orchestra rehearsals and performances among the times to wear hearing protection. Custom musician earplugs are molded to the ear and lower the sound while letting in as much natural sound as possible. We make custom earplugs. Read our pages on custom earplugs and on concert hearing protection.",
+      "What to bring to your visit",
+      "Bring your instrument or tell us what you play. Tell us where you play, how loud it is, and whether you use in-ear monitors or a stage monitor. Bring your hearing aids if you have them. Write down what sounds wrong: notes that sound out of tune, a harsh tone, a cut-off sound, or your own instrument sounding strange. These details help us choose and set up devices for you.",
+      "What we cannot promise",
+      "Hearing aids do not restore normal hearing. The research on hearing aids and music is still limited. The recommendations in the Greasley and Crook article come from a survey of 99 audiologists, and the authors say the evidence is not yet enough for validated guidelines. We will not promise that music will sound the way it did before. We will work with you on settings, check them in the rooms where you play, and adjust. Call our Harrison office at (914) 949-0034 or our Somers office at (914) 556-6720 to book."
+    ],
+    faqs: [
+      { question: "Do you fit hearing aids for musicians?", answer: "Yes. We work with a number of musicians. Tell us what you play and where, so we can plan your fitting around it." },
+      { question: "Can hearing aids make music sound natural?", answer: "They can help, but they may not make music sound as it did before. A music program and careful settings can improve it. Research on this is limited, so we adjust with you and check the result in your own setting." },
+      { question: "Should I turn off the feedback manager for music?", answer: "Your audiologist decides. The feedback manager can mistake steady notes for feedback. Switching it off for a music program is one option when live music is a problem." },
+      { question: "Do hearing aids work with in-ear monitors?", answer: "Tell us if you use in-ear monitors. We plan the fitting around how you perform. Ask about this at your first visit." },
+      { question: "Should I wear earplugs when I play?", answer: "Loud music can harm hearing over time. We make custom earplugs, and the NIDCD advises hearing protection for band and orchestra rehearsals and performances." }
+    ],
+    related: [
+      { label: "Hearing Protection for Concerts: Musician Earplugs vs Foam Plugs", href: "/hearing-protection-concerts-musician-vs-foam" },
+      { label: "Custom Earplugs in Westchester", href: "/custom-earplugs-westchester" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Bluetooth Hearing Aids: What to Know Before Buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "Hearing Aid Adjustments in Westchester", href: "/hearing-aid-adjustments-westchester" },
+      { label: "Hearing Testing", href: "/hearing-testing" }
+    ],
+    blogMeta: {
+      frame: "Patient guide",
+      byline: "From the audiology desk",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "Hearing aids",
+      pullQuote: "Hearing aids are built mainly for speech. Music is a different job, so say so at the first visit.",
+      keyTakeaways: [
+        "We fit hearing aids for musicians. Tell us what you play and where.",
+        "Many hearing aids have a music program. Try it in the rooms where you play.",
+        "Feedback management and noise reduction can change musical sound. Your audiologist can adjust them.",
+        "Research on hearing aids and music is limited, and we do not promise a result.",
+        "Protect the hearing you have. We make custom earplugs."
+      ],
+      patientQuestion: "Are there hearing aids for musicians?",
+      storyLead: "What is different about hearing aids for music, which settings your audiologist can change, and what to bring to a fitting.",
+      sources: [
+        { label: "Greasley and Crook: Clinical strategies for improving music listening (ENT & Audiology News, 2021)", href: "https://www.entandaudiologynews.com/features/audiology-features/post/clinical-strategies-for-improving-music-listening" },
+        { label: "Marshall Chasin: Guidelines for musicians with hearing loss to bring to their audiologist (Hearing Health & Technology Matters, 2020)", href: "https://hearinghealthmatters.org/hear-the-music/2020/top-post-2020-6/" },
+        { label: "NIDCD: Hearing Protectors", href: "https://www.nidcd.nih.gov/publication-products/hearing-protectors" }
+      ]
+    }
+  },
 ];
 
 export function buildNextBlogPosts(baseUrl: string, _siteName: string): SitePage[] {

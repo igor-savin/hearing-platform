@@ -374,6 +374,22 @@ export const hearingAidProducts: HearingAidProduct[] = [
       {
         question: "Is Lyric visible?",
         answer: "Lyric is placed deeply in the ear canal and is designed to be highly discreet, but fit and visibility vary by anatomy."
+      },
+      {
+        question: "Can I shower or swim with Lyric?",
+        answer: "Phonak says you can wear Lyric in the shower. It is water resistant, not waterproof, so Phonak does not recommend underwater swimming or diving."
+      },
+      {
+        question: "Can I have an MRI with Lyric?",
+        answer: "Phonak says Lyric must be removed before an MRI because it contains metal parts. Tell your care team that you wear Lyric before any scan."
+      },
+      {
+        question: "How long does a Lyric device last?",
+        answer: "Phonak says each device lasts for months at a time. How long depends on your ear, your hearing loss and your noise environment. Phonak sells Lyric as a subscription through authorized providers."
+      },
+      {
+        question: "Where can I get Lyric hearing aids in Westchester?",
+        answer: "We fit Lyric at our Harrison and Somers offices. Our Lyric page for Westchester explains the visit and how to book."
       }
     ]
   },
