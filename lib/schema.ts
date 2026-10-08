@@ -117,6 +117,11 @@ function openingHours(location: Office) {
   return undefined;
 }
 
+// FAQ answers may carry [label](/path) links; structured data needs plain text.
+function stripMarkdownLinks(text: string): string {
+  return text.replace(/\[([^\]\n]{1,160})\]\(((?:\/(?!\/)|https?:\/\/)[^)\s]*)\)/g, "$1");
+}
+
 export function officeBusinessSchema(location: Office) {
   return {
     "@context": "https://schema.org",
@@ -513,7 +518,7 @@ export function faqSchema(page: SitePage) {
       name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer
+        text: stripMarkdownLinks(faq.answer)
       }
     }))
   };

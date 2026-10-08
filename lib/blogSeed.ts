@@ -4501,6 +4501,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Fairfield County, CT",
         "href": "/areas-we-serve/fairfield-county-ct"
+      },
+      {
+        "label": "Custom hearing protection",
+        "href": "/hearing-protection"
+      },
+      {
+        "label": "Musician earplugs vs foam earplugs",
+        "href": "/hearing-protection-concerts-musician-vs-foam"
+      },
+      {
+        "label": "How loud is too loud?",
+        "href": "/how-loud-is-too-loud-decibels"
+      },
+      {
+        "label": "The 60/60 rule for headphones",
+        "href": "/what-is-the-60-60-rule-in-audiology"
+      },
+      {
+        "label": "Harrison, NY audiology office",
+        "href": "/harrison-ny"
+      },
+      {
+        "label": "Somers, NY audiology office",
+        "href": "/Somers-NY"
       }
     ],
     "blogMeta": {

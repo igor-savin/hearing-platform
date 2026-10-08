@@ -1222,17 +1222,34 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
   "/how-far-do-you-push-hearing-aid-in": [
     { label: "Wearing New Hearing Aids", href: "/how-many-hours-a-day-should-you-wear-new-hearing-aids" },
     { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-    { label: "Ways to Wear Hearing Aids More Discreetly", href: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly" }
+    { label: "Ways to Wear Hearing Aids More Discreetly", href: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly" },
+    { label: "Hearing aid tune-up or repair?", href: "/hearing-aid-tune-up-vs-repair" },
+    { label: "Hearing aid tune-ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
+    { label: "Hearing aid repair in Westchester", href: "/hearing-aid-repair" },
+    { label: "Making hearing aids more comfortable", href: "/how-to-make-hearing-aids-more-comfortable" },
+    { label: "Harrison, NY audiology office", href: "/harrison-ny" },
+    { label: "Somers, NY audiology office", href: "/Somers-NY" }
   ],
   "/understanding-hearing-loss-at-4000-hz": [
     { label: "The 60–60 Rule for Headphones", href: "/what-is-the-60-60-rule-in-audiology" },
     { label: "Hearing Testing", href: "/hearing-testing" },
-    { label: "Hearing Protection", href: "/hearing-protection" }
+    { label: "Hearing Protection", href: "/hearing-protection" },
+    { label: "What high-frequency hearing loss sounds like", href: "/what-high-frequency-hearing-loss-sounds-like" },
+    { label: "Preventing noise-induced hearing loss", href: "/noise-induced-hearing-loss-prevention" },
+    { label: "Comprehensive hearing assessment", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+    { label: "Hearing test in Harrison, NY", href: "/harrison-ny" },
+    { label: "Hearing test in Somers, NY", href: "/Somers-NY" }
   ],
   "/what-is-the-60-60-rule-in-audiology": [
     { label: "Understanding Hearing Loss at 4,000 Hz", href: "/understanding-hearing-loss-at-4000-hz" },
     { label: "Hearing Protection", href: "/hearing-protection" },
-    { label: "Hearing Testing", href: "/hearing-testing" }
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "How loud is too loud?", href: "/how-loud-is-too-loud-decibels" },
+    { label: "Ringing in your ears after loud noise", href: "/tinnitus-after-loud-noise-what-to-do" },
+    { label: "Preventing noise-induced hearing loss", href: "/noise-induced-hearing-loss-prevention" },
+    { label: "Ear protection for kids and teens", href: "/kids-teens-ear-protection-concerts-sports" },
+    { label: "Book a hearing check in Harrison, NY", href: "/harrison-ny" },
+    { label: "Book a hearing check in Somers, NY", href: "/Somers-NY" }
   ],
   "/understanding-and-treating-dry-ears": [
     { label: "How to Get Water Out of Your Ear Safely", href: "/how-to-get-water-out-of-your-ear" },
@@ -1249,12 +1266,22 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
     { label: "Hearing Test Cost in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
     { label: "Hearing Aid Second Opinion", href: "/hearing-aid-second-opinion" },
     { label: "Audiology Red Flags", href: "/what-are-the-red-flags-for-audiology-referrals" },
-    { label: "Hearing Testing", href: "/hearing-testing" }
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "Comprehensive hearing assessment", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+    { label: "Hearing test and cognitive screening", href: "/hearing-test-and-cognitive-screening" },
+    { label: "Harrison, NY audiology office", href: "/harrison-ny" },
+    { label: "Somers, NY audiology office", href: "/Somers-NY" }
   ],
   "/what-are-the-red-flags-for-audiology-referrals": [
     { label: "Sudden or Worsening Tinnitus", href: "/how-we-can-help/tinnitus-management/sudden-or-worsening-tinnitus" },
     { label: "Ear Pressure: What May Help", href: "/how-to-relieve-ear-pressure" },
-    { label: "Hearing Testing", href: "/hearing-testing" }
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "Why sudden hearing loss should not wait", href: "/sudden-hearing-loss-why-not-wait" },
+    { label: "Hearing loss in one ear: when to get checked", href: "/one-ear-hearing-loss-when-to-get-checked" },
+    { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
+    { label: "Tinnitus management", href: "/how-we-can-help/tinnitus-management" },
+    { label: "Harrison, NY audiology office", href: "/harrison-ny" },
+    { label: "Somers, NY audiology office", href: "/Somers-NY" }
   ],
   "/how-many-hours-a-day-should-you-wear-new-hearing-aids": [
     { label: "How Far Should a Hearing Aid Go In?", href: "/how-far-do-you-push-hearing-aid-in" },

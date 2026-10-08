@@ -199,6 +199,37 @@ const linkedLocationNames = new Map(
 const linkedPlacePattern =
   /(Audiology Associates of Westchester|White Plains, NY|Harrison, NY|Scarsdale, NY|Rye, NY|Mt\. Kisco, NY|Greenwich, CT|Somers, NY)/g;
 
+const markdownLinkPattern = /\[([^\]\n]{1,160})\]\(((?:\/(?!\/)|https?:\/\/)[^)\s]*)\)/g;
+
+// Renders [label](/path) links inside blog text. Text with no markdown link is
+// returned unchanged. Only a href that starts with one "/" or with http(s):// is
+// turned into a link.
+function renderRichText(text: string): ReactNode {
+  const pattern = new RegExp(markdownLinkPattern.source, "g");
+  const nodes: ReactNode[] = [];
+  let last = 0;
+  let match: RegExpExecArray | null;
+  while ((match = pattern.exec(text)) !== null) {
+    const [full, label, href] = match;
+    if (match.index > last) nodes.push(text.slice(last, match.index));
+    nodes.push(
+      href.startsWith("/") ? (
+        <Link className="text-[#005a9c] underline" href={href} key={`md-${match.index}`}>
+          {label}
+        </Link>
+      ) : (
+        <a className="text-[#005a9c] underline break-words" href={href} key={`md-${match.index}`} rel="noopener" target="_blank">
+          {label}
+        </a>
+      )
+    );
+    last = match.index + full.length;
+  }
+  if (!nodes.length) return text;
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
 const urlPattern = /(https?:\/\/[^\s<>"')\]]+[^\s<>"')\].,;:])/g;
 
 function linkifyText(text: string) {
@@ -247,6 +278,17 @@ const homeImages = {
   protection: "/assets/duda/hearing-protection-earmuffs-westchester.jpg",
   repair: "/assets/duda/hearing-aid-repair-westchester.png"
 };
+
+const homeMoreWaysLinks = [
+  { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+  { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+  { label: "Hearing aid tune-ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
+  { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+  { label: "Cochlear implant support", href: "/how-we-can-help/cochlear-implants" },
+  { label: "Cognivue cognitive screening", href: "/how-we-can-help/cognivue-cognitive-screening" },
+  { label: "Adoption plan", href: "/how-we-can-help/adoption-plan" },
+  { label: "Tinnitus management", href: "/how-we-can-help/tinnitus-management" }
+];
 
 const homeServiceCards = [
   ["Hearing Testing", "/hearing-testing", homeImages.testing, "doctor administering hearing test on older man"],
@@ -1106,7 +1148,9 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
       { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
-      { label: "Harrison office", href: "/harrison-ny" }
+      { label: "Harrison office", href: "/harrison-ny" },
+      { label: "Comprehensive hearing assessment", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" }
     ]
   },
   "/greenwich-ct": {
@@ -1118,6 +1162,168 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
       { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
       { label: "Harrison office", href: "/harrison-ny" }
+    ]
+  },
+  "/harrison-ny": {
+    heading: "Services and nearby towns at the Harrison office",
+    links: [
+      { label: "Hearing aid fitting in Harrison", href: "/hearing-aid-fitting" },
+      { label: "Tinnitus therapy in Harrison", href: "/tinnitus-therapy" },
+      { label: "Hearing aid repair in Harrison", href: "/hearing-aid-repair" },
+      { label: "Earwax removal in Harrison", href: "/how-we-can-help/earwax-removal" },
+      { label: "Hearing protection in Harrison", href: "/hearing-protection" },
+      { label: "Comprehensive hearing assessment", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Compare both offices", href: "/contact-us" },
+      { label: "Rye, NY", href: "/rye-ny" },
+      { label: "Greenwich, CT", href: "/greenwich-ct" },
+      { label: "Scarsdale, NY", href: "/Scarsdale-NY" },
+      { label: "White Plains, NY", href: "/White-Plains-NY" }
+    ]
+  },
+  "/Somers-NY": {
+    heading: "Services and nearby communities at the Somers office",
+    links: [
+      { label: "Hearing aid fitting in Somers", href: "/hearing-aid-fitting" },
+      { label: "Tinnitus therapy in Somers", href: "/tinnitus-therapy" },
+      { label: "Hearing aid repair in Somers", href: "/hearing-aid-repair" },
+      { label: "Earwax removal in Somers", href: "/how-we-can-help/earwax-removal" },
+      { label: "Hearing protection in Somers", href: "/hearing-protection" },
+      { label: "Comprehensive hearing assessment", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Compare both offices", href: "/contact-us" },
+      { label: "Mt. Kisco, NY", href: "/mt-kisco-ny" },
+      { label: "Mahopac and Putnam County", href: "/areas-we-serve/putnam-county-ny/mahopac" }
+    ]
+  },
+  "/meet-the-team": {
+    heading: "Book with our team",
+    links: [
+      { label: "Harrison, NY", href: "/harrison-ny" },
+      { label: "Somers, NY", href: "/Somers-NY" },
+      { label: "Hearing evaluation with a Doctor of Audiology", href: "/hearing-testing" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Cognivue cognitive screening", href: "/how-we-can-help/cognivue-cognitive-screening" },
+      { label: "Affirming hearing care for LGBTQ+ patients", href: "/lgbtq-affirming-hearing-care" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/getting-louder": {
+    heading: "Next steps for louder tinnitus",
+    links: [
+      { label: "Tinnitus therapy in Westchester", href: "/tinnitus-therapy" },
+      { label: "Ringing in your ears after loud noise", href: "/tinnitus-after-loud-noise-what-to-do" },
+      { label: "Choosing a tinnitus specialist in Westchester", href: "/how-to-choose-tinnitus-specialist-westchester" },
+      { label: "Hearing protection for noisy places", href: "/hearing-protection" },
+      { label: "Tinnitus evaluation in Harrison, NY", href: "/harrison-ny" },
+      { label: "Tinnitus evaluation in Somers, NY", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/sudden-or-worsening-tinnitus": {
+    heading: "Next steps for sudden or worsening tinnitus",
+    links: [
+      { label: "Tinnitus therapy in Westchester", href: "/tinnitus-therapy" },
+      { label: "Ringing in one ear: red flags and next steps", href: "/ringing-in-one-ear-red-flags-next-steps" },
+      { label: "Sudden hearing loss should not wait", href: "/sudden-hearing-loss-why-not-wait" },
+      { label: "Choosing a tinnitus specialist in Westchester", href: "/how-to-choose-tinnitus-specialist-westchester" },
+      { label: "Hearing evaluation in Harrison, NY", href: "/harrison-ny" },
+      { label: "Hearing evaluation in Somers, NY", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/signia/signia-max-vs-signia-ix": {
+    heading: "Next steps if you wear or are considering Signia",
+    links: [
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing evaluation", href: "/hearing-testing" },
+      { label: "Contact us", href: "/contact-us" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Hearing aid repair", href: "/hearing-aid-repair" },
+      { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
+      { label: "Signia IX", href: "/hearing-aids-brands/signia/signia-ix" },
+      { label: "What Signia MaX costs", href: "/hearing-aids-brands/signia/signia-max-cost" }
+    ]
+  },
+  "/hearing-aids-brands/signia/signia-max": {
+    heading: "Next steps with Signia MaX",
+    links: [
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing evaluation", href: "/hearing-testing" },
+      { label: "Contact us", href: "/contact-us" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Signia MaX vs Signia IX", href: "/hearing-aids-brands/signia/signia-max-vs-signia-ix" },
+      { label: "What Signia MaX costs", href: "/hearing-aids-brands/signia/signia-max-cost" },
+      { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" },
+      { label: "Phonak EON vs Signia MaX", href: "/hearing-aids-brands/phonak/phonak-eon-vs-signia-max" }
+    ]
+  },
+  "/hearing-aids-brands/phonak/phonak-eon-vs-signia-max": {
+    heading: "Next steps if you are comparing EON and MaX",
+    links: [
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing evaluation", href: "/hearing-testing" },
+      { label: "Contact us", href: "/contact-us" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
+      { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
+      { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" }
+    ]
+  },
+  "/hearing-aids-brands/phonak/phonak-eon": {
+    heading: "Next steps with Phonak EON",
+    links: [
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing evaluation", href: "/hearing-testing" },
+      { label: "Contact us", href: "/contact-us" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
+      { label: "What Phonak EON costs", href: "/hearing-aids-brands/phonak/phonak-eon-cost" },
+      { label: "Phonak EON vs Signia MaX", href: "/hearing-aids-brands/phonak/phonak-eon-vs-signia-max" }
+    ]
+  },
+  "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal": {
+    heading: "Next steps if you are comparing MaX and Reveal",
+    links: [
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing evaluation", href: "/hearing-testing" },
+      { label: "Contact us", href: "/contact-us" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
+      { label: "Oticon Reveal", href: "/hearing-aids-brands/oticon/oticon-reveal" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" }
+    ]
+  },
+  "/hearing-aids-brands/oticon/oticon-reveal": {
+    heading: "Next steps with Oticon Reveal",
+    links: [
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing evaluation", href: "/hearing-testing" },
+      { label: "Contact us", href: "/contact-us" },
+      { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" }
+    ]
+  },
+  "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio": {
+    heading: "Next steps if you are weighing EON and Infinio",
+    links: [
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing evaluation", href: "/hearing-testing" },
+      { label: "Contact us", href: "/contact-us" },
+      { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
+      { label: "Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-infinio" },
+      { label: "What Phonak EON costs", href: "/hearing-aids-brands/phonak/phonak-eon-cost" }
     ]
   }
 };
@@ -1573,6 +1779,21 @@ function HomepageProofFirst() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f7fbfd] py-12">
+        <div className="container">
+          <h2 className="text-3xl font-black leading-tight text-[#003f6f]">More ways we can help</h2>
+          <ul className="mt-6 grid gap-3 md:grid-cols-2">
+            {homeMoreWaysLinks.map((link) => (
+              <li key={link.href}>
+                <Link className="focus-ring text-[19px] font-bold text-[#005a9c] underline" href={link.href}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -2929,6 +3150,7 @@ function TinnitusTopicPage({ page, topic }: { page: SitePage; topic: TinnitusPag
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <AreaFaqSection page={page} title={`${topic.title} FAQs`} />
       <ProductCta />
     </>
@@ -4129,7 +4351,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                 <div className="mb-10 border-b border-[#dedede] pb-8">
                   {intro.map((line) => (
                     <p className="mb-5 text-[24px] leading-[1.45] text-[#333] max-md:text-[19px]" key={line}>
-                      {line}
+                      {renderRichText(line)}
                     </p>
                   ))}
                 </div>
@@ -4150,7 +4372,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                       key={`${section.heading}-${index}`}
                     >
                       <h2 className="text-[36px] font-black leading-tight text-[#262626] max-md:text-[28px]">{section.heading}</h2>
-                      <p className="mt-4 text-[22px] leading-[1.55] text-[#333] max-md:text-[18px]">{section.text}</p>
+                      <p className="mt-4 text-[22px] leading-[1.55] text-[#333] max-md:text-[18px]">{renderRichText(section.text)}</p>
                       {meta?.comparisonTable && meta.comparisonTable.afterHeading === section.heading ? (
                         <BlogComparisonTable table={meta.comparisonTable} />
                       ) : null}
@@ -4171,7 +4393,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                     {page.faqs.map((faq) => (
                       <article key={faq.question}>
                         <h3 className="text-[21px] font-black leading-tight text-[#262626]">{faq.question}</h3>
-                        <p className="mt-3 text-[19px] leading-[1.5] text-[#333]">{faq.answer}</p>
+                        <p className="mt-3 text-[19px] leading-[1.5] text-[#333]">{renderRichText(faq.answer)}</p>
                       </article>
                     ))}
                   </div>
@@ -5712,6 +5934,7 @@ function LiveTeamPage({ page }: { page: SitePage }) {
           </div>
         </section>
       ))}
+      <PageCrossLinks page={page} />
     </>
   );
 }
