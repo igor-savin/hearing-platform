@@ -40,7 +40,13 @@ export type ConversionName =
   | "get_directions"           // click through to Google Maps
   | "schedule_an_appointment"  // click on a booking CTA
   | "facebook_outbound_click"  // click through to the practice's Facebook page
-  | "contact_form_submit";     // the form actually sent
+  | "contact_form_submit"      // the form actually sent
+  // Home page hero graphic. Same names on the sister site so the two compare.
+  | "hero_play_click"          // Play / Pause journey (params: action, stage)
+  | "hero_sound_toggle"        // Sound on / off (params: state)
+  | "hero_stage_select"        // a stage was picked (params: stage, source)
+  | "hero_mode_toggle"         // Natural hearing / With hearing aid (params: mode)
+  | "scroll_depth";            // home page reached 25 / 50 / 75 / 100 percent (params: percent, page)
 
 export function trackConversion(name: ConversionName, params: ConversionParams = {}) {
   if (typeof window === "undefined") return;

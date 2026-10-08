@@ -7,6 +7,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { primaryPhone, primaryPhoneHref } from "@/lib/siteBasics";
 import { HearingScene } from "@/lib/audio/hearingScene";
+import { trackConversion } from "@/lib/conversions";
 
 const stages = [
   {
@@ -86,6 +87,34 @@ export function InteractiveEarHero() {
     };
   }, []);
 
+  // Home page scroll depth. GA4's built-in scroll event only fires at 90 percent,
+  // which cannot tell "left at the hero" from "read half the page". This hero
+  // renders only on the home page, so the listener lives here.
+  useEffect(() => {
+    const marks = [25, 50, 75, 100];
+    const sent = new Set<number>();
+    const onScroll = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const percent = (window.scrollY / scrollable) * 100;
+      for (const mark of marks) {
+        if (!sent.has(mark) && percent >= (mark === 100 ? 98 : mark)) {
+          sent.add(mark);
+          trackConversion("scroll_depth", { percent: mark, page: "home" });
+        }
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  function chooseMode(nextAided: boolean) {
+    if (nextAided !== aided) {
+      trackConversion("hero_mode_toggle", { mode: nextAided ? "with_hearing_aid" : "natural" });
+    }
+    setAided(nextAided);
+  }
+
   function enableSound() {
     const Context = window.AudioContext || window.webkitAudioContext;
     const context = audioContext.current ?? new Context();
@@ -99,10 +128,12 @@ export function InteractiveEarHero() {
 
   function toggleJourney() {
     if (playing) {
+      trackConversion("hero_play_click", { action: "pause", stage: stages[activeStage].label });
       setPlaying(false);
       return;
     }
 
+    trackConversion("hero_play_click", { action: "play", stage: stages[activeStage].label });
     enableSound();
     if (activeStage === stages.length - 1) setActiveStage(0);
     setPlaying(true);
@@ -110,15 +141,18 @@ export function InteractiveEarHero() {
 
   function toggleSound() {
     if (!soundEnabled) {
+      trackConversion("hero_sound_toggle", { state: "on" });
       enableSound();
       return;
     }
 
+    trackConversion("hero_sound_toggle", { state: "off" });
     scene.current?.stop();
     setSoundEnabled(false);
   }
 
-  function chooseStage(index: number) {
+  function chooseStage(index: number, source: "hotspot" | "tab") {
+    trackConversion("hero_stage_select", { stage: stages[index].label, source });
     setActiveStage(index);
     setPlaying(false);
     if (soundEnabled && audioContext.current?.state === "suspended") void audioContext.current.resume();
@@ -171,7 +205,7 @@ export function InteractiveEarHero() {
             aria-pressed={activeStage === index}
             className={`aa-ear-hotspot aa-ear-hotspot-${index + 1}`}
             key={stage.label}
-            onClick={() => chooseStage(index)}
+            onClick={() => chooseStage(index, "hotspot")}
             type="button"
           >
             <span>{index + 1}</span>
@@ -188,8 +222,8 @@ export function InteractiveEarHero() {
           </p>
 
           <div className="aa-hearing-toggle" aria-label="Compare the hearing journey">
-            <button aria-pressed={!aided} onClick={() => setAided(false)} type="button">Natural hearing</button>
-            <button aria-pressed={aided} onClick={() => setAided(true)} type="button">With hearing aid</button>
+            <button aria-pressed={!aided} onClick={() => chooseMode(false)} type="button">Natural hearing</button>
+            <button aria-pressed={aided} onClick={() => chooseMode(true)} type="button">With hearing aid</button>
           </div>
 
           <div className="aa-ear-controls">
@@ -225,7 +259,7 @@ export function InteractiveEarHero() {
           <button
             aria-current={activeStage === index ? "step" : undefined}
             key={stage.label}
-            onClick={() => chooseStage(index)}
+            onClick={() => chooseStage(index, "tab")}
             type="button"
           >
             <span>{String(index + 1).padStart(2, "0")}</span>
