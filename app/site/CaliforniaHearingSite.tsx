@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
+import { redirectedPaths } from "../data/redirectedPaths";
 import { blogPhotos } from "../data/blogPhotos";
 import { sanMateoArrival } from "../data/officePhotos";
 import { pageVideos as harvestedVideos } from "../data/pageVideos";
@@ -1699,7 +1700,7 @@ function relatedBlogPosts(path: string, limit = 3): Array<{ path: string; headli
   const selfWords = words(self.headline);
   const selfLinks = linksIn(self);
   return Object.entries(blogPosts)
-    .filter(([p]) => p !== path)
+    .filter(([p]) => p !== path && !redirectedPaths.has(p))
     .map(([p, post]) => {
       let score = [...words(post.headline)].filter((w) => selfWords.has(w)).length * 2;
       if (post.variant && post.variant === self.variant) score += 1;
@@ -1759,9 +1760,13 @@ function InnerPage({ page }: { page: SitePage }) {
   const videoId = pageVideos[page.path];
   const jsonLd = [breadcrumbSchema(page), articleSchema(page, content), faqSchema(page, content), areaServedSchema(page), personSchema(page, content), videoSchema(page, content)].filter(Boolean);
   const areaLinks = kind === "area" ? relatedAreaLinks(page) : [];
-  const related = crawledPages
-    .filter((item) => item.path !== page.path && !NON_CONTENT_ROUTES.has(item.path) && getPageKind(item) === kind)
-    .slice(0, 8);
+  // Blog posts get topic-matched links plus both offices. Other pages keep the
+  // kind-based list (every post of one kind used to share the same 8 links).
+  const related: Array<{ path: string; h1?: string }> = isBlog
+    ? blogTopicLinks(page, relatedPosts)
+    : crawledPages
+        .filter((item) => item.path !== page.path && !NON_CONTENT_ROUTES.has(item.path) && !redirectedPaths.has(item.path) && getPageKind(item) === kind)
+        .slice(0, 8);
 
   return (
     <>
@@ -2250,6 +2255,39 @@ const BLOG_CATEGORY_ORDER = [
   "Hearing Loss & Your Health",
 ];
 
+// Topic to pillar pages for the "Explore related pages" block on blog posts.
+const BLOG_TOPIC_PILLARS: Record<string, string[]> = {
+  "Tinnitus & Sound Sensitivity": ["/tinnitus/", "/services/tinnitus-therapy/", "/tinnitus/one-ear/", "/tinnitus/when-to-see-doctor/"],
+  "Hearing Aids & Technology": ["/products/hearing-aids/", "/products/hearing-aids-by-brand/", "/hearing-aid-fitting/", "/services/hearing-aid-repair/"],
+  "Costs, Insurance & Buying": ["/hearing-aid-cost/", "/hearing-aid-financing/", "/resources/insurance/", "/hearing-aid-second-opinion/"],
+  "Hearing Tests & Audiology": ["/hearing-testing/", "/hearing-aid-fitting/", "/hearing-better/hearing-and-your-health/"],
+  "Ear Care & Earwax": ["/services/earwax-removal/", "/hearing-testing/"],
+  "Prevention & Protection": ["/services/hearing-protection/", "/hearing-testing/"],
+  "Families & Seniors": ["/hearing-better/family-guide/", "/hearing-better/", "/hearing-better/tv-and-streaming/", "/hearing-better/phones-and-captions/"],
+  "Hearing Loss & Your Health": ["/hearing-better/hearing-and-your-health/", "/hearing-testing/", "/resources/insurance/"],
+};
+
+const BLOG_OFFICE_LINKS = [
+  { path: "/contact/san-mateo/", h1: "San Mateo office" },
+  { path: "/contact/san-carlos/", h1: "San Carlos office" },
+];
+
+function blogTopicLinks(page: SitePage, posts: Array<{ path: string; headline: string }>): Array<{ path: string; h1?: string }> {
+  const post = blogPosts[page.path];
+  const cat = post ? blogCategory(page.path.replace(/\//g, ""), post) : "Hearing Loss & Your Health";
+  const out: Array<{ path: string; h1?: string }> = [];
+  const seen = new Set<string>([page.path]);
+  const add = (path: string, h1?: string) => {
+    if (seen.has(path) || NON_CONTENT_ROUTES.has(path) || redirectedPaths.has(path)) return;
+    seen.add(path);
+    out.push({ path, h1 });
+  };
+  for (const p of BLOG_TOPIC_PILLARS[cat] ?? []) add(p, crawledPages.find((c) => c.path === p)?.h1);
+  for (const o of BLOG_OFFICE_LINKS) add(o.path, o.h1);
+  for (const r of posts.slice(0, 3)) add(r.path, plain(r.headline));
+  return out;
+}
+
 function blogCategory(slug: string, post: PageContent): string {
   const s = `${slug} ${(post.kicker || "").toLowerCase()}`;
   if (/tinnitus|ringing|hyperacusis|buzz/.test(s)) return "Tinnitus & Sound Sensitivity";
@@ -2466,6 +2504,7 @@ function ReviewsPage() {
 
 function BlogIndex() {
   const posts = Object.entries(blogPosts)
+    .filter(([path]) => !redirectedPaths.has(path))
     .map(([path, post]) => ({ path, post, slug: path.replace(/\//g, "") }))
     .sort((a, b) => (b.post.datePublished || "").localeCompare(a.post.datePublished || ""));
   const groups: Record<string, typeof posts> = {};
