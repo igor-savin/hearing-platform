@@ -1536,6 +1536,20 @@ function breadcrumbTrail(path: string): { label: string; href: string }[] {
 
 // Person schema for staff bio pages (/about-us/{slug}/ enriched with a team
 // portrait) — an EEAT signal. Name/credential come from the page headline.
+// Third-party articles that feature a team member. Emitted as Person.subjectOf
+// so the press mention is machine-readable. Add an entry per feature; only list
+// articles that are live and that name the person.
+const teamPress: Record<string, { name: string; url: string; publisher: string; datePublished: string }[]> = {
+  "/about-us/kira-savin/": [
+    {
+      name: "Strategies for Stretching Staff Resources",
+      url: "https://hearingreview.com/practice-building/practice-management/management-strategies/strategies-for-stretching-staff-resources",
+      publisher: "Hearing Review",
+      datePublished: "2026-10-07",
+    },
+  ],
+};
+
 function personSchema(page: SitePage, content: PageContent): object | null {
   if (!/^\/about-us\/[a-z-]+\/$/.test(page.path)) return null;
   if (!content.image || !content.image.includes("/assets/team/")) return null;
@@ -1550,6 +1564,17 @@ function personSchema(page: SitePage, content: PageContent): object | null {
     image: `${SITE}${content.image}`,
     url: `${SITE}${page.path}`,
     worksFor: { "@id": `${SITE}/#organization` },
+    ...(teamPress[page.path]
+      ? {
+          subjectOf: teamPress[page.path].map((a) => ({
+            "@type": "Article",
+            headline: a.name,
+            url: a.url,
+            datePublished: a.datePublished,
+            publisher: { "@type": "Organization", name: a.publisher },
+          })),
+        }
+      : {}),
   };
 }
 
