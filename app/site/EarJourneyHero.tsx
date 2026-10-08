@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { trackConversion } from "./conversions";
 
 const stages = [
   {
@@ -61,6 +62,27 @@ export function EarJourneyHero() {
     };
   }, []);
 
+  // Home page scroll depth. GA4's built-in scroll event only fires at 90 percent,
+  // which cannot tell "left at the hero" from "read half the page". This hero
+  // renders only on the home page, so the listener lives here.
+  useEffect(() => {
+    const marks = [25, 50, 75, 100];
+    const sent = new Set<number>();
+    const onScroll = () => {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      if (scrollable <= 0) return;
+      const percent = (window.scrollY / scrollable) * 100;
+      for (const mark of marks) {
+        if (!sent.has(mark) && percent >= (mark === 100 ? 98 : mark)) {
+          sent.add(mark);
+          trackConversion("scroll_depth", { percent: mark, page: "home" });
+        }
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   useEffect(() => {
     const context = audioContextRef.current;
     if (!soundEnabled || !context || context.state === "closed") return;
@@ -113,17 +135,27 @@ export function EarJourneyHero() {
     setSoundEnabled(true);
   };
 
-  const chooseStage = (index: number) => {
+  const chooseStage = (index: number, source: "hotspot" | "tab") => {
+    trackConversion("hero_stage_select", { stage: stages[index].label, source });
     setActiveStage(index);
     setPlaying(false);
   };
 
+  const chooseMode = (nextAided: boolean) => {
+    if (nextAided !== aided) {
+      trackConversion("hero_mode_toggle", { mode: nextAided ? "with_hearing_aid" : "natural" });
+    }
+    setAided(nextAided);
+  };
+
   const toggleJourney = () => {
     if (playing) {
+      trackConversion("hero_play_click", { action: "pause", stage: stage.label });
       setPlaying(false);
       return;
     }
 
+    trackConversion("hero_play_click", { action: "play", stage: stage.label });
     enableSound();
     if (activeStage === stages.length - 1) setActiveStage(0);
     setPlaying(true);
@@ -131,11 +163,13 @@ export function EarJourneyHero() {
 
   const toggleSound = () => {
     if (soundEnabled) {
+      trackConversion("hero_sound_toggle", { state: "off" });
       setSoundEnabled(false);
       void audioContextRef.current?.suspend();
       return;
     }
 
+    trackConversion("hero_sound_toggle", { state: "on" });
     enableSound();
   };
 
@@ -180,17 +214,17 @@ export function EarJourneyHero() {
         <p className="ear-hero-lede">Follow sound from the world around you to the moment your brain understands it—and see where modern hearing technology lends a hand.</p>
 
         <div className="hearing-mode" role="group" aria-label="Compare natural and assisted hearing">
-          <button type="button" className={!aided ? "active" : ""} onClick={() => setAided(false)} aria-pressed={!aided}>
+          <button type="button" className={!aided ? "active" : ""} onClick={() => chooseMode(false)} aria-pressed={!aided}>
             Natural hearing
           </button>
-          <button type="button" className={aided ? "active" : ""} onClick={() => setAided(true)} aria-pressed={aided}>
+          <button type="button" className={aided ? "active" : ""} onClick={() => chooseMode(true)} aria-pressed={aided}>
             <span className="mode-spark" aria-hidden="true" /> With hearing aid
           </button>
         </div>
 
         <div className="ear-hero-actions">
-          <a className="button primary" href="/contact/#request-appointment">Request an appointment</a>
-          <a className="ear-text-link" href="/hearing-aid-fitting/">How fittings work <span aria-hidden="true">↗</span></a>
+          <a className="button primary" href="/contact/#request-appointment" onClick={() => trackConversion("hero_cta_click", { cta: "request_appointment" })}>Request an appointment</a>
+          <a className="ear-text-link" href="/hearing-aid-fitting/" onClick={() => trackConversion("hero_cta_click", { cta: "how_fittings_work" })}>How fittings work <span aria-hidden="true">↗</span></a>
         </div>
       </div>
 
@@ -218,7 +252,7 @@ export function EarJourneyHero() {
             type="button"
             key={item.label}
             className={`hotspot hotspot-${item.position} ${activeStage === index ? "active" : ""}`}
-            onClick={() => chooseStage(index)}
+            onClick={() => chooseStage(index, "hotspot")}
             aria-label={`Explore ${item.label}`}
             aria-pressed={activeStage === index}
           >
@@ -241,7 +275,7 @@ export function EarJourneyHero() {
             type="button"
             key={item.label}
             className={`${activeStage === index ? "active" : ""} ${index < activeStage ? "complete" : ""}`}
-            onClick={() => chooseStage(index)}
+            onClick={() => chooseStage(index, "tab")}
             aria-current={activeStage === index ? "step" : undefined}
           >
             <span>{item.short}</span>
