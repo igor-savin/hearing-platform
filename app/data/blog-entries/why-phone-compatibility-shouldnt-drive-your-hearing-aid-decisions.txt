@@ -28,7 +28,7 @@
     faqs: [
       ["Do I need an iPhone to use hearing aids with my phone?", "An iPhone is not required. Most current hearing aids stream to both iPhone and recent Android phones, though the specific features can differ from one pairing to the next. Bring your phone along and we will confirm what works with the devices you are weighing."],
       ["Should I wait for Auracast before buying hearing aids?", "Waiting rarely pays off here. Auracast support is still spreading across phones and hearing aids, and hearing is easier to help the sooner you address it. A device that fits you today will keep helping as broader streaming standards arrive."],
-      ["How do I know which hearing aid is right for me?", "It starts with understanding your hearing, not comparing phone features. Our [team](/about-us/) tests your hearing, talks through your daily routine, and narrows the options to devices that genuinely fit your ears. From there, connectivity and phone pairing become an easy final detail, and you can [reach us](/contact/) to set up a visit."],
+      ["How do I know which hearing aid is right for me?", "It starts with understanding your hearing, not comparing phone features. Our [audiologists](/about-us/) test your hearing, talks through your daily routine, and narrows the options to devices that genuinely fit your ears. From there, connectivity and phone pairing become an easy final detail, and you can [reach us](/contact/) to set up a visit."],
     ],
     image: "/assets/blog/why-phone-compatibility-shouldnt-drive-your-hearing-aid-decisions-1.svg",
     imageLabel: "Your hearing comes first, the phone pairing second",

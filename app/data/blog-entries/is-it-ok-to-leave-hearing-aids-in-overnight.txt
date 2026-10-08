@@ -9,7 +9,7 @@
     intro: [
       "If you have ever dozed off in a recliner with your [hearing aids](/products/hearing-aids/) still in, the question tends to arrive the next morning: was that a problem? For the great majority of wearers, the honest answer is that bedtime is when the devices should come out, not stay in. It is a small habit that protects both your ears and a piece of equipment you rely on all day.",
       "There is a narrow exception worth knowing about, because a few specialized devices are designed to stay in around the clock. But those are the outliers, and they are fitted and managed differently. If you wear standard behind-the-ear or in-the-ear aids, the nightly routine below is the one that keeps them working.",
-      "And if overnight wear or trapped moisture has already left a device muffled or crackly, our team handles [hearing aid repair](/services/hearing-aid-repair/) at our San Mateo and San Carlos offices, and can set you up with a drying kit so it does not happen again.",
+      "And if overnight wear or trapped moisture has already left a device muffled or crackly, our team handles [hearing aid repair](/services/hearing-aid-repair/) at our [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/) offices, and can set you up with a drying kit so it does not happen again.",
     ],
     takeaways: [
       "For standard hearing aids, take them out at night so they can dry and your ears can rest.",

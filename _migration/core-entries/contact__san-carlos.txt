@@ -4,12 +4,12 @@
   metaTitle: "San Carlos Audiologist: Hearing Tests & Hearing Aids | California Hearing Center",
   metaDescription: "Hearing tests, hearing aid fittings verified with real-ear measurement, adjustments, repairs and tinnitus care at 1008 Laurel Street, San Carlos. Call 650-342-9449.",
   intro: [
-    "Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070, on the city's main street. We see patients here for hearing evaluations, hearing aid consultations and fittings, adjustments and repairs, tinnitus appointments, and earwax removal.",
+    "Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070, on the city's main street. We see patients here for hearing evaluations, hearing aid consultations and fittings, adjustments and repairs, [tinnitus](/services/tinnitus-therapy/) appointments, and [earwax removal](/services/earwax-removal/).",
     "Call 650-342-9449 to book, or send an appointment request through this site and we will call you back.",
     "Office hours: Monday through Wednesday 9am to 1pm and 2pm to 5pm; Thursday 9am to 12pm and 1pm to 5pm; Friday 9am to 12pm and 12:30pm to 3pm."
   ],
   sections: [
-    ["Where we are", "1008 Laurel Street puts us in the middle of downtown San Carlos, a few minutes from the San Carlos Caltrain station and quick to reach from Highway 101 or El Camino Real. Patients from Belmont, Redwood City, San Mateo, and Menlo Park are typically here in well under fifteen minutes."],
+    ["Where we are", "1008 Laurel Street puts us in the middle of downtown San Carlos, a few minutes from the San Carlos Caltrain station and quick to reach from Highway 101 or El Camino Real. Patients from Belmont, [Redwood City](/areas-we-serve/redwood-city/), San Mateo, and [Menlo Park](/areas-we-serve/menlo-park/) are typically here in well under fifteen minutes."],
     ["Please note our midday break", "Unlike our San Mateo office, the San Carlos schedule includes a midday break, and it shifts slightly later in the week. Monday through Wednesday we break from 1pm to 2pm, Thursday from 12pm to 1pm, and Friday from 12pm to 12:30pm. When you call, our team will book you around it so there are no surprises."],
     ["Parking and access", "There is street parking along Laurel Street and in the nearby public lots just off it. Downtown San Carlos is flat and walkable, which many of our patients appreciate. If parking or mobility is a concern, tell us when you book and we will point you to the easiest option."],
     ["What happens at your visit", "Plan on about an hour for a first appointment. We take a history of what you are noticing and where it bothers you most, examine the ears, and complete a full diagnostic evaluation. We then walk you through the audiogram in plain language and discuss the realistic options."],

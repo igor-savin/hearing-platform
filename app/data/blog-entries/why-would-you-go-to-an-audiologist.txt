@@ -28,7 +28,7 @@
     faqs: [
       ["Do I need a referral to see an audiologist?", "In most cases you can book directly without a doctor's referral, though some insurance plans ask for one before they cover the visit. It is worth a quick call to your plan if you are unsure. Either way, our [team](/about-us/) can help you sort out the details before you come in."],
       ["What's the difference between an audiologist and a hearing aid store?", "A retail hearing aid counter focuses on selling and fitting devices. An audiologist is a licensed clinician who diagnoses the cause of a hearing or balance problem first, then recommends treatment, which may or may not involve a device. That diagnostic step is the part that gets skipped when a device is the only product on offer."],
-      ["When should I actually make the appointment?", "Ringing that lingers, a plugged feeling that won't clear, asking people to repeat themselves, sudden changes in one ear, or new dizziness are all good reasons to [get in touch](/contact/). You don't need every symptom on the list. One that has stuck around for a couple of weeks is enough to warrant a look."],
+      ["When should I actually make the appointment?", "Ringing that lingers, a plugged feeling that won't clear, asking people to repeat themselves, sudden changes in one ear, or new dizziness are all good reasons to [schedule a hearing evaluation](/contact/). You don't need every symptom on the list. One that has stuck around for a couple of weeks is enough to warrant a look."],
     ],
     image: "/assets/blog/why-would-you-go-to-an-audiologist-1.svg",
     imageLabel: "One specialist for hearing, balance, and everything in between",

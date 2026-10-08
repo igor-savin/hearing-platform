@@ -10,7 +10,7 @@
     intro: [
       "A running faucet, a clattering plate, a child's laugh across the room — for most people these barely register. If you live with hyperacusis, the same everyday sounds can land like a slap: too sharp, too loud, sometimes genuinely painful. It can leave you flinching in your own kitchen, dreading restaurants, or turning down invitations because the world feels cranked up past where you can stand it.",
       "That heightened response has a name, and it is more common than most people realize. [Hyperacusis](/hyperacusis/) is a reduced tolerance to ordinary sound — the volume in the room may be perfectly normal, but your ears and brain treat it as an assault. It often shows up alongside [tinnitus](/tinnitus/), the ringing or buzzing many people notice in quiet, and the two frequently share roots in how the hearing system processes signals.",
-      "The encouraging part is that hyperacusis usually responds to patient, well-chosen care, and you do not have to sort it out alone. A [hearing evaluation](/hearing-testing/) at our San Mateo or San Carlos office gives us a clear picture of what your ears are doing, which is the honest starting point for any plan that holds up.",
+      "The encouraging part is that hyperacusis usually responds to patient, well-chosen care, and you do not have to sort it out alone. A [hearing evaluation](/hearing-testing/) at our [San Mateo](/contact/san-mateo/) or [San Carlos](/contact/san-carlos/) office gives us a clear picture of what your ears are doing, which is the honest starting point for any plan that holds up.",
     ],
     takeaways: [
       "Hyperacusis is a reduced tolerance to everyday sounds, not simple irritation.",

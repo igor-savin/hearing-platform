@@ -6,7 +6,7 @@
   intro: [
     "These two arrived almost together. ReSound Sensia reached US clinics on 20 August 2026; Oticon Reveal was announced on 11 August and opened for ordering on the 24th. Both are premium platforms, both put a neural network in the sound path, and neither has been measured by any independent laboratory. Anyone telling you which one performs better in noise is guessing.",
     "What we can do is set out what each actually is, where the two genuinely differ, and what the independent test data on ReSound's previous flagship suggests you should ask about. That last part is uncomfortable for ReSound and we are going to include it anyway, because it also happens to be the strongest argument for the way we fit hearing aids.",
-    "We fit both brands at our San Mateo and San Carlos offices."
+    "We fit [both brands](/products/hearing-aids-by-brand/) at our [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/) offices."
   ],
   sections: [
     ["What each one is doing", "Reveal runs two AI systems continuously: a Speech AI that lifts voices and a Context AI that deliberately preserves the surrounding sound most noise reduction removes, on the argument that losing the room costs you your sense of place. Sensia takes a staged approach it calls Intelligent All-Around: an environmental classifier called AcoustIQ samples the acoustics every 1.5 milliseconds and consolidates a picture every few seconds, then escalates through three strategies: omnidirectional in quiet, then asymmetric directionality, then a binaural four-microphone beamformer combined with neural-network denoising when things get genuinely hard. It is a more conditional design: the heaviest processing arrives when the classifier is confident it is needed."],
