@@ -6391,6 +6391,24 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
                   <p key={`${provider.slug}-${paragraph}`}>{paragraph}</p>
                 ))}
               </div>
+              {provider.press?.length ? (
+                <div className="mt-[44px] border-t-4 border-[#dbe9f3] pt-[30px]">
+                  <h2 className="text-[32px] font-black leading-tight text-[#003f6f] max-md:text-[26px]">In the news</h2>
+                  {provider.press.map((item) => (
+                    <article className="mt-[18px] text-[21px] leading-[1.4] text-black max-md:text-[18px]" key={item.url}>
+                      <p>
+                        <a className="font-bold text-[#005a9c] underline" href={item.url} rel="noopener" target="_blank">
+                          {item.headline}
+                        </a>
+                      </p>
+                      <p className="mt-[6px] text-[18px] text-[#3d4a57]">
+                        {item.publication}, {item.dateLabel}
+                      </p>
+                      <p className="mt-[10px]">{item.summary}</p>
+                    </article>
+                  ))}
+                </div>
+              ) : null}
             </div>
             <aside>
               <Image

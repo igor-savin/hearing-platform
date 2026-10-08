@@ -26,6 +26,18 @@ export type ProviderProfile = {
   // deliberate: it tells a patient who needs it that the appointment can happen
   // in that language.
   knowsLanguage?: string[];
+  // Third-party articles that feature this clinician. Shown as an "In the
+  // news" block on the profile and emitted as Person.subjectOf. List only
+  // articles that are live and that name the person. Summaries are in our own
+  // words; the article belongs to the publisher.
+  press?: {
+    headline: string;
+    publication: string;
+    url: string;
+    datePublished: string; // ISO date
+    dateLabel: string;
+    summary: string;
+  }[];
 };
 
 export const providerRootPath = "/meet-the-team";
@@ -216,6 +228,17 @@ export const providerProfiles: ProviderProfile[] = [
       "American Academy of Audiology - Academy Scholar",
       "American Speech-Language-Hearing Association",
       "Long Island Speech and Hearing Association"
+    ],
+    press: [
+      {
+        headline: "Strategies for Stretching Staff Resources",
+        publication: "Hearing Review",
+        url: "https://hearingreview.com/practice-building/practice-management/management-strategies/strategies-for-stretching-staff-resources",
+        datePublished: "2026-10-07",
+        dateLabel: "October 7, 2026",
+        summary:
+          "Dr. Savin was interviewed for this Hearing Review story on how audiology practices make the most of limited staff time. She spoke about block scheduling, training front-office staff to triage calls and fix simple hearing aid problems, drop-off repairs, and working with audiology students. She also explained how the rules on audiology assistants differ between California and New York, and why a practice website can be a good place to send patients for help."
+      }
     ],
     specialties: [
       "Personalized hearing solutions",
