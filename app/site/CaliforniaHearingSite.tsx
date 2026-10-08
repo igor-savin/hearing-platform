@@ -121,13 +121,24 @@ export type PageContent = {
   ogDescription?: string;
 };
 
+// Outside sites we link to as editorial references for a clinician (press
+// features and awards). Links to these hosts are not nofollow.
+const followedHosts = new Set(["hearingreview.com", "thebcw.org"]);
+
 // Convert author-written [label](/internal/path) markdown links into anchors.
 // Only internal links (starting with "/") are permitted. Content is author-controlled.
 function linkify(text: string): string {
   const esc = text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   return esc
     // External citations: open in new tab, no referrer leak
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener nofollow">$1</a>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_m, label: string, href: string) => {
+      // Editorial links to publications and bodies that feature our clinicians
+      // are passed through as normal links, so the mention counts as a
+      // reference to the person. Every other outside link stays nofollow.
+      const host = href.replace(/^https?:\/\//, "").split("/")[0].replace(/^www\./, "");
+      const rel = followedHosts.has(host) ? "noopener" : "noopener nofollow";
+      return `<a href="${href}" target="_blank" rel="${rel}">${label}</a>`;
+    })
     // Internal contextual links
     .replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, '<a href="$2">$1</a>');
 }
@@ -1547,7 +1558,23 @@ const teamPress: Record<string, { name: string; url: string; publisher: string; 
       publisher: "Hearing Review",
       datePublished: "2026-10-07",
     },
+    {
+      name: "The Business Council of Westchester Announces the 2018 Rising Stars",
+      url: "https://thebcw.org/news/the-business-council-of-westchester-announces-the-2018-rising-stars/",
+      publisher: "Business Council of Westchester",
+      datePublished: "2018-05-07",
+    },
   ],
+};
+
+// Identity facts that tie a team page to the same person elsewhere: an earlier
+// professional name, an award, and third-party profiles we have checked.
+const teamIdentity: Record<string, { alternateName?: string; award?: string[]; sameAs?: string[] }> = {
+  "/about-us/kira-savin/": {
+    alternateName: "Kira Pozdnyakova",
+    award: ["40 Under 40 Rising Stars, Business Council of Westchester, 2018"],
+    sameAs: ["https://www.zocdoc.com/doctor/kira-savin-aud-352841"],
+  },
 };
 
 function personSchema(page: SitePage, content: PageContent): object | null {
@@ -1564,6 +1591,7 @@ function personSchema(page: SitePage, content: PageContent): object | null {
     image: `${SITE}${content.image}`,
     url: `${SITE}${page.path}`,
     worksFor: { "@id": `${SITE}/#organization` },
+    ...(teamIdentity[page.path] ?? {}),
     ...(teamPress[page.path]
       ? {
           subjectOf: teamPress[page.path].map((a) => ({

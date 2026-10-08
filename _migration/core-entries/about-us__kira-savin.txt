@@ -6,7 +6,7 @@
     "Dr. Savin specializes in providing personalized hearing solutions using the latest and most discreet technology available, including the [Lyric invisible extended-wear hearing device](/products/hearing-aids-by-brand/lyric/). Her areas of expertise include hearing rehabilitation, auditory counseling, tinnitus management and retraining therapy, and dispensing of hearing devices and other assistive listening technologies."
   ],
   sections: [
-    ["Credentials & training", "Dr. Savin is licensed in Audiology and Hearing Aid Dispensing in both California and New York State. She earned her B.A. in Communication Sciences and Disorders from Pace University in 2005 and her Au.D. from Salus University, George S. Osborne College of Audiology, in 2013. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology, and she holds the Tinnitus Management (CH-TM) certificate. She completed her residency at SUNY Downstate Medical Center in Brooklyn, N.Y. In 2018, she received the Business Council of Westchester's Top 40 under 40 award."],
+    ["Credentials & training", "Dr. Savin is licensed in Audiology and Hearing Aid Dispensing in both California and New York State. She earned her B.A. in Communication Sciences and Disorders from Pace University in 2005 and her Au.D. from Salus University, George S. Osborne College of Audiology, in 2013. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology, and she holds the Tinnitus Management (CH-TM) certificate. She completed her residency at SUNY Downstate Medical Center in Brooklyn, N.Y. In 2018, she was named to the Business Council of Westchester's [40 Under 40 Rising Stars](https://thebcw.org/news/the-business-council-of-westchester-announces-the-2018-rising-stars/). The announcement lists her under her earlier name, Kira Pozdnyakova."],
     ["Focus & approach", "After practicing in New York City, Dr. Savin continued her career in Westchester County, where she co-purchased Audiology Associates of Westchester and remains a co-owner of that practice and its satellite offices. She is thrilled to now call the Bay Area her home."],
     ["In the news", "Dr. Savin was interviewed for [\"Strategies for Stretching Staff Resources\"](https://hearingreview.com/practice-building/practice-management/management-strategies/strategies-for-stretching-staff-resources), published in Hearing Review on October 7, 2026. She spoke about how a busy audiology practice protects clinician time for patients: trained audiology assistants where state rules allow them, block scheduling, front-office triage of calls, and drop-off repairs. She also encouraged practices to welcome audiology students and to use their websites to help patients with simple questions. Hearing Review is a trade publication for hearing health professionals."]
   ],
@@ -16,7 +16,8 @@
     "Hearing rehabilitation and auditory counseling",
     "Tinnitus management and retraining therapy",
     "Co-owner of Audiology Associates of Westchester",
-    "Interviewed in Hearing Review, October 2026"
+    "Interviewed in Hearing Review, October 2026",
+    "40 Under 40 Rising Stars, Business Council of Westchester (2018)"
   ],
   takeaways: [
     "Licensed in Audiology and Hearing Aid Dispensing in both California and New York State.",
