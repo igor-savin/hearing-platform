@@ -30,6 +30,11 @@ export type ProviderProfile = {
   // news" block on the profile and emitted as Person.subjectOf. List only
   // articles that are live and that name the person. Summaries are in our own
   // words; the article belongs to the publisher.
+  // An earlier professional name, so a search engine can match older records
+  // (awards, press, directory listings) to this person.
+  alternateName?: string;
+  // Third-party profiles we have checked belong to this clinician.
+  sameAs?: string[];
   press?: {
     headline: string;
     publication: string;
@@ -217,12 +222,15 @@ export const providerProfiles: ProviderProfile[] = [
       "She holds a New York State license in audiology and in hearing aid dispensing, is a fellow of the American Academy of Audiology, is a member of the American Speech-Language-Hearing Association and the Long Island Speech and Hearing Association, and holds the CH-TM certificate in tinnitus management.",
       "Her work is with adults: hearing rehabilitation, auditory counseling and retraining therapy, tinnitus management, and hearing aids and assistive listening technology. She fits Lyric, the extended-wear device a clinician places in the ear canal and that stays in for months at a time between visits. She sees patients at the Harrison office."
     ],
+    alternateName: "Kira Pozdnyakova",
+    sameAs: ["https://www.zocdoc.com/doctor/kira-savin-aud-352841"],
     credentials: [
       "Audiology Licensure: New York State; New York State Hearing Aid Dispenser",
       "College: B.A., Communication Sciences and Disorders, Pace University, 2005",
       "Graduate: Au.D., Salus University, George S. Osborne College of Audiology, 2013",
       "Certification: American Academy of Audiology",
-      "Certificate Holder: Tinnitus Management (CH-TM)"
+      "Certificate Holder: Tinnitus Management (CH-TM)",
+      "Awards: 40 Under 40 Rising Stars, Business Council of Westchester, 2018"
     ],
     affiliations: [
       "American Academy of Audiology - Academy Scholar",
@@ -238,6 +246,15 @@ export const providerProfiles: ProviderProfile[] = [
         dateLabel: "October 7, 2026",
         summary:
           "Dr. Savin was interviewed for this Hearing Review story on how audiology practices make the most of limited staff time. She spoke about block scheduling, training front-office staff to triage calls and fix simple hearing aid problems, drop-off repairs, and working with audiology students. She also explained how the rules on audiology assistants differ between California and New York, and why a practice website can be a good place to send patients for help."
+      },
+      {
+        headline: "The Business Council of Westchester Announces the 2018 Rising Stars",
+        publication: "Business Council of Westchester",
+        url: "https://thebcw.org/news/the-business-council-of-westchester-announces-the-2018-rising-stars/",
+        datePublished: "2018-05-07",
+        dateLabel: "May 7, 2018",
+        summary:
+          "The Business Council of Westchester named Dr. Savin to its 2018 class of 40 Under 40 Rising Stars. The announcement lists her under her earlier name, Kira Pozdnyakova, as Doctor of Audiology, CEO and Co-Owner of Audiology Associates of Westchester."
       }
     ],
     specialties: [

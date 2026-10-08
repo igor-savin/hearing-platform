@@ -616,6 +616,8 @@ function personSchema(provider: ProviderProfile, description?: string) {
       "@type": "Organization",
       name: affiliation
     })),
+    alternateName: provider.alternateName,
+    sameAs: provider.sameAs,
     knowsAbout: provider.specialties,
     subjectOf: provider.press?.map((item) => ({
       "@type": "Article",
