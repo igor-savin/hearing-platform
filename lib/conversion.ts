@@ -1,4 +1,6 @@
 import type { Location, SitePage } from "@/lib/site";
+import { cityForPath, countyForPath } from "@/lib/serviceAreas";
+import { providerForPath } from "@/lib/team";
 
 const baseUrl = "https://www.audiologyassociates.org";
 export const primaryPhone = "(914) 949-0034";
@@ -166,6 +168,53 @@ export const locationPlanningGuides: Record<string, LocationPlanningGuide> = {
   }
 };
 
+export type NextStepsEntry = { heading: string; links: { label: string; href: string }[] };
+
+// Data-driven "next steps" block for page families where one hand-written entry
+// per page does not scale: the generated town pages, the county pages and the
+// provider pages. PageCrossLinks asks for a hand-written pageCrossLinks entry
+// first and only calls this when there is none, so a hand-written entry always
+// wins. It adds only links the template does not already render (the five core
+// services and the nearest office are already on the town pages) and it makes no
+// claim about an office: every href is a site-wide page.
+export function serviceNextStepsFor(page: SitePage): NextStepsEntry | null {
+  const assess = { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" };
+  const brands = { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" };
+  const offices = { label: "Compare the Harrison and Somers offices", href: "/contact-us" };
+  const testCost = { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" };
+
+  const city = cityForPath(page.path);
+  if (city) {
+    return {
+      heading: `More hearing care for ${city.name} patients`,
+      links: [assess, { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" }, brands, testCost, offices]
+    };
+  }
+
+  const county = countyForPath(page.path);
+  if (county) {
+    return { heading: `More hearing care in ${county.name}`, links: [assess, brands, testCost, offices] };
+  }
+
+  const provider = providerForPath(page.path);
+  if (provider) {
+    const text = provider.specialties.join(" ").toLowerCase();
+    const links = [assess];
+    const add = (test: boolean, label: string, href: string) => {
+      if (test && !links.some((link) => link.href === href)) links.push({ label, href });
+    };
+    add(/hearing aid|amplification|dispens/.test(text), brands.label, brands.href);
+    add(/tinnitus/.test(text), "Tinnitus therapy", "/tinnitus-therapy");
+    add(/cochlear/.test(text), "Cochlear implant support", "/how-we-can-help/cochlear-implants");
+    add(/cerumen/.test(text), "Earwax removal", "/how-we-can-help/earwax-removal");
+    add(/lyric/.test(text), "Lyric invisible hearing aids", "/lyric-invisible-hearing");
+    add(/protection|musician/.test(text), "Hearing protection", "/hearing-protection");
+    return { heading: "Related care and next steps", links: links.slice(0, 6) };
+  }
+
+  return null;
+}
+
 export function planningGuideForLocation(location: Location | null | undefined) {
   if (!location) return null;
   return locationPlanningGuides[location.path] || null;
@@ -216,7 +265,13 @@ export const comparisonPages: SitePage[] = [
     related: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Audiology Red Flags", href: "/what-are-the-red-flags-for-audiology-referrals" },
-      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" }
+      { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
+      { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
+      { label: "Pulsatile tinnitus: why heartbeat-like sounds need attention", href: "/pulsatile-tinnitus-heartbeat-sound" },
+      { label: "Dizziness and ringing in the ears: audiology or ENT?", href: "/dizziness-and-ringing-audiology-or-ent" },
+      { label: "One ear hearing loss: when to get checked", href: "/one-ear-hearing-loss-when-to-get-checked" },
+      { label: "Sudden hearing loss: why not to wait", href: "/sudden-hearing-loss-why-not-wait" },
+      { label: "Harrison, NY office", href: "/harrison-ny" }
     ]
   },
   {
@@ -251,7 +306,13 @@ export const comparisonPages: SitePage[] = [
     related: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Costco Hearing Test Cost", href: "/how-much-does-costco-charge-for-a-hearing-test" },
-      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing test vs hearing screening: what is the difference?", href: "/hearing-test-vs-hearing-screening-difference" },
+      { label: "What happens during a comprehensive hearing evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
     ]
   },
   {
@@ -288,7 +349,10 @@ export const comparisonPages: SitePage[] = [
       { label: "Latest: Samsung Galaxy Buds Are Becoming Hearing Aids", href: "/samsung-galaxy-buds-hearing-aid-feature" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Are OTC hearing aids right for me?", href: "/are-otc-hearing-aids-right-for-me" }
     ]
   }
 ];

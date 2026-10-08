@@ -1219,6 +1219,14 @@ const editorialBlogPosts: SitePage[] = [
 ];
 
 const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[]> = {
+  "/how-to-take-care-of-a-blocked-ear": [
+    { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
+    { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+    { label: "Hearing test or earwax removal?", href: "/hearing-test-or-earwax-removal" },
+    { label: "Ear pressure: what may help", href: "/how-to-relieve-ear-pressure" },
+    { label: "Harrison, NY office", href: "/harrison-ny" },
+    { label: "Somers, NY office", href: "/Somers-NY" }
+  ],
   "/how-far-do-you-push-hearing-aid-in": [
     { label: "Wearing New Hearing Aids", href: "/how-many-hours-a-day-should-you-wear-new-hearing-aids" },
     { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
@@ -1254,12 +1262,22 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
   "/understanding-and-treating-dry-ears": [
     { label: "How to Get Water Out of Your Ear Safely", href: "/how-to-get-water-out-of-your-ear" },
     { label: "Ear Pressure: What May Help", href: "/how-to-relieve-ear-pressure" },
-    { label: "Hearing Testing", href: "/hearing-testing" }
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "How to take care of a blocked ear", href: "/how-to-take-care-of-a-blocked-ear" },
+    { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+    { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
+    { label: "Hearing test or earwax removal?", href: "/hearing-test-or-earwax-removal" },
+    { label: "Harrison, NY office", href: "/harrison-ny" },
+    { label: "Somers, NY office", href: "/Somers-NY" }
   ],
   "/what-is-the-best-hearing-aid-sold-at-costco": [
     { label: "Costco Hearing Test Cost", href: "/how-much-does-costco-charge-for-a-hearing-test" },
     { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-    { label: "Hearing Testing", href: "/hearing-testing" }
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "Costco hearing aids vs audiologist care", href: "/costco-hearing-aids-vs-audiologist-care" },
+    { label: "Questions to ask before buying hearing aids", href: "/questions-before-buying-hearing-aids" },
+    { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+    { label: "How much hearing aids cost in Westchester County", href: "/hearing-aid-cost-westchester-county" }
   ],
   "/how-much-does-costco-charge-for-a-hearing-test": [
     { label: "Comparing Costco Hearing Aids", href: "/what-is-the-best-hearing-aid-sold-at-costco" },
@@ -1270,7 +1288,9 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
     { label: "Comprehensive hearing assessment", href: "/how-we-can-help/comprehensive-hearing-assessments" },
     { label: "Hearing test and cognitive screening", href: "/hearing-test-and-cognitive-screening" },
     { label: "Harrison, NY audiology office", href: "/harrison-ny" },
-    { label: "Somers, NY audiology office", href: "/Somers-NY" }
+    { label: "Somers, NY audiology office", href: "/Somers-NY" },
+    { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
+    { label: "Costco hearing aids vs audiologist care", href: "/costco-hearing-aids-vs-audiologist-care" }
   ],
   "/what-are-the-red-flags-for-audiology-referrals": [
     { label: "Sudden or Worsening Tinnitus", href: "/how-we-can-help/tinnitus-management/sudden-or-worsening-tinnitus" },
@@ -1281,27 +1301,53 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
     { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
     { label: "Tinnitus management", href: "/how-we-can-help/tinnitus-management" },
     { label: "Harrison, NY audiology office", href: "/harrison-ny" },
-    { label: "Somers, NY audiology office", href: "/Somers-NY" }
+    { label: "Somers, NY audiology office", href: "/Somers-NY" },
+    { label: "Pulsatile tinnitus: why heartbeat-like sounds need attention", href: "/pulsatile-tinnitus-heartbeat-sound" },
+    { label: "Audiologist or ENT: who to see first", href: "/audiologist-vs-ent-for-hearing-loss" },
+    { label: "Dizziness and ringing in the ears: audiology or ENT?", href: "/dizziness-and-ringing-audiology-or-ent" }
   ],
   "/how-many-hours-a-day-should-you-wear-new-hearing-aids": [
     { label: "How Far Should a Hearing Aid Go In?", href: "/how-far-do-you-push-hearing-aid-in" },
     { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-    { label: "Ways to Wear Hearing Aids More Discreetly", href: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly" }
+    { label: "Ways to Wear Hearing Aids More Discreetly", href: "/8-expert-tips-to-conceal-your-hearing-aids-discreetly" },
+    { label: "Why new hearing aids sound strange at first", href: "/why-new-hearing-aids-sound-strange" },
+    { label: "How many follow-up visits new hearing aids need", href: "/how-many-follow-up-visits-new-hearing-aids" },
+    { label: "What to expect at a hearing aid fitting", href: "/what-to-expect-hearing-aid-fitting" },
+    { label: "Hearing aid adjustments in Westchester", href: "/hearing-aid-adjustments-westchester" },
+    { label: "Hearing aid tune-ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
+    { label: "Hearing aids 101", href: "/hearing-aids-101" }
   ],
   "/how-to-get-water-out-of-your-ear": [
     { label: "Dry, Itchy Ears", href: "/understanding-and-treating-dry-ears" },
     { label: "Ear Pressure: What May Help", href: "/how-to-relieve-ear-pressure" },
-    { label: "Hearing Testing", href: "/hearing-testing" }
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "How to take care of a blocked ear", href: "/how-to-take-care-of-a-blocked-ear" },
+    { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+    { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
+    { label: "Ear pressure and hearing loss", href: "/ear-pressure-and-hearing-loss-evaluation" },
+    { label: "Harrison, NY office", href: "/harrison-ny" },
+    { label: "Somers, NY office", href: "/Somers-NY" }
   ],
   "/how-to-relieve-ear-pressure": [
     { label: "How to Get Water Out of Your Ear Safely", href: "/how-to-get-water-out-of-your-ear" },
     { label: "Dry, Itchy Ears", href: "/understanding-and-treating-dry-ears" },
-    { label: "Audiology Red Flags", href: "/what-are-the-red-flags-for-audiology-referrals" }
+    { label: "Audiology Red Flags", href: "/what-are-the-red-flags-for-audiology-referrals" },
+    { label: "How to take care of a blocked ear", href: "/how-to-take-care-of-a-blocked-ear" },
+    { label: "Ear pressure and hearing loss: when to schedule an evaluation", href: "/ear-pressure-and-hearing-loss-evaluation" },
+    { label: "Ear fullness without pain", href: "/ear-fullness-no-pain-hearing-loss" },
+    { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+    { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" }
   ],
   "/8-expert-tips-to-conceal-your-hearing-aids-discreetly": [
     { label: "How Far Should a Hearing Aid Go In?", href: "/how-far-do-you-push-hearing-aid-in" },
     { label: "Wearing New Hearing Aids", href: "/how-many-hours-a-day-should-you-wear-new-hearing-aids" },
-    { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+    { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+    { label: "Invisible hearing aids: pros, cons and candidacy", href: "/invisible-hearing-aids-pros-cons-candidacy" },
+    { label: "Lyric invisible hearing aids in Westchester", href: "/lyric-invisible-hearing" },
+    { label: "Phonak Lyric invisible hearing aid", href: "/hearing-aids-brands/phonak/phonak-lyric" },
+    { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
+    { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+    { label: "How to make hearing aids more comfortable", href: "/how-to-make-hearing-aids-more-comfortable" }
   ]
 };
 

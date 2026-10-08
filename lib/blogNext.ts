@@ -214,7 +214,11 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Do I Need a Hearing Test or Just Earwax Removal?", href: "/hearing-test-or-earwax-removal" },
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Harrison office", href: "/harrison-ny" },
-      { label: "Somers office", href: "/Somers-NY" }
+      { label: "Somers office", href: "/Somers-NY" },
+      { label: "How to take care of a blocked ear", href: "/how-to-take-care-of-a-blocked-ear" },
+      { label: "Getting water out of your ear safely", href: "/how-to-get-water-out-of-your-ear" },
+      { label: "Ear pressure: what may help", href: "/how-to-relieve-ear-pressure" },
+      { label: "Dry, itchy ears: causes and next steps", href: "/understanding-and-treating-dry-ears" }
     ],
     blogMeta: {
       frame: "Local service guide",
@@ -269,7 +273,12 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" },
       { label: "Hearing Aid Tune-Ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
       { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
-      { label: "Costco Hearing Aids vs Audiologist Care", href: "/costco-hearing-aids-vs-audiologist-care" }
+      { label: "Costco Hearing Aids vs Audiologist Care", href: "/costco-hearing-aids-vs-audiologist-care" },
+      { label: "Hearing aid adjustments in Westchester", href: "/hearing-aid-adjustments-westchester" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+      { label: "Hearing aid tune-up or repair?", href: "/hearing-aid-tune-up-vs-repair" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
     ],
     blogMeta: {
       frame: "Buyer decision guide",
@@ -489,7 +498,13 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Lenire for Tinnitus", href: "/how-we-can-help/lenire-for-tinnitus" },
       { label: "Tinnitus Treatment and Relief Options", href: "/how-we-can-help/tinnitus-management/treatment-and-relief-options" },
       { label: "Sudden or Worsening Tinnitus", href: "/how-we-can-help/tinnitus-management/sudden-or-worsening-tinnitus" },
-      { label: "Harrison office", href: "/harrison-ny" }
+      { label: "Harrison office", href: "/harrison-ny" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Can Hearing Aids Help Tinnitus?", href: "/can-hearing-aids-help-tinnitus" },
+      { label: "Lenire for tinnitus: who might be a candidate?", href: "/lenire-for-tinnitus-candidate-guide" },
+      { label: "Tinnitus habituation", href: "/how-we-can-help/tinnitus-management/habituation" },
+      { label: "Ringing in one ear: causes, red flags and next steps", href: "/ringing-in-one-ear-red-flags-next-steps" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
     ],
     blogMeta: {
       frame: "Local decision guide",
@@ -1257,7 +1272,10 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Best Hearing Aid at Costco?", href: "/what-is-the-best-hearing-aid-sold-at-costco" },
       { label: "Prescription vs Over-the-Counter Hearing Aids", href: "/prescription-vs-otc-hearing-aids" },
       { label: "Costco Hearing Aids vs Audiologist Care", href: "/costco-hearing-aids-vs-audiologist-care" },
-      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" }
+      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Hearing aids 101", href: "/hearing-aids-101" }
     ],
     blogMeta: {
       frame: "Cost guide",
@@ -1344,7 +1362,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Greenwich, CT", href: "/greenwich-ct" },
       { label: "Harrison office", href: "/harrison-ny" },
       { label: "Hearing Testing", href: "/hearing-testing" },
-      { label: "Contact Us", href: "/contact-us" }
+      { label: "Contact Us", href: "/contact-us" },
+      { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" }
     ],
     blogMeta: {
       frame: "Coverage guide",
@@ -1429,7 +1449,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
       { label: "Programming Hearing Aids Bought Somewhere Else", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Cochlear implant support", href: "/how-we-can-help/cochlear-implants" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1506,7 +1528,10 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Screening vs Hearing Test", href: "/hearing-test-vs-hearing-screening-difference" },
       { label: "How Much Does Costco Charge for a Hearing Test?", href: "/how-much-does-costco-charge-for-a-hearing-test" },
       { label: "What Happens During a Comprehensive Hearing Evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
-      { label: "Hearing Aid Cost in Westchester County", href: "/hearing-aid-cost-westchester-county" }
+      { label: "Hearing Aid Cost in Westchester County", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
+      { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" }
     ],
     blogMeta: {
       frame: "Cost guide",
@@ -1591,7 +1616,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Aid Payment Plans in Westchester", href: "/hearing-aid-payment-plans-westchester" },
       { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
       { label: "Medicare Open Enrollment and Hearing Benefits", href: "/medicare-open-enrollment-hearing-benefits" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1818,7 +1845,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Employer and Union Hearing Aid Benefits", href: "/employer-union-hearing-aid-benefits-westchester" },
       { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
       { label: "How Much Does a Hearing Test Cost in Westchester?", href: "/how-much-does-a-hearing-test-cost-westchester" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1889,7 +1918,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Bluetooth Hearing Aids: What to Know Before Buying", href: "/bluetooth-hearing-aids-before-buying" },
       { label: "Hearing Aid Adjustments in Westchester", href: "/hearing-aid-adjustments-westchester" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing protection", href: "/hearing-protection" },
+      { label: "Tinnitus after loud noise: what to do next", href: "/tinnitus-after-loud-noise-what-to-do" }
     ],
     blogMeta: {
       frame: "Patient guide",

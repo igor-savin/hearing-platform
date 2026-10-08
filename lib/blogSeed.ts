@@ -81,6 +81,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Can an audiologist remove earwax?",
+        "href": "/can-an-audiologist-remove-earwax-westchester"
+      },
+      {
+        "label": "Earwax removal",
+        "href": "/how-we-can-help/earwax-removal"
+      },
+      {
+        "label": "How to take care of a blocked ear",
+        "href": "/how-to-take-care-of-a-blocked-ear"
+      },
+      {
+        "label": "Ear fullness without pain",
+        "href": "/ear-fullness-no-pain-hearing-loss"
+      },
+      {
+        "label": "Ear pressure and hearing loss",
+        "href": "/ear-pressure-and-hearing-loss-evaluation"
+      },
+      {
+        "label": "Somers, NY office",
+        "href": "/Somers-NY"
       }
     ],
     "blogMeta": {
@@ -177,6 +201,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Cochlear implant support",
+        "href": "/how-we-can-help/cochlear-implants"
+      },
+      {
+        "label": "Comprehensive hearing assessments",
+        "href": "/how-we-can-help/comprehensive-hearing-assessments"
+      },
+      {
+        "label": "Cognivue cognitive screening",
+        "href": "/how-we-can-help/cognivue-cognitive-screening"
+      },
+      {
+        "label": "Hearing screening vs hearing test",
+        "href": "/hearing-screening-vs-hearing-test"
       }
     ],
     "blogMeta": {
@@ -273,6 +313,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "White Plains, NY",
         "href": "/White-Plains-NY"
+      },
+      {
+        "label": "Hearing screening vs hearing test",
+        "href": "/hearing-screening-vs-hearing-test"
+      },
+      {
+        "label": "Comprehensive hearing assessments",
+        "href": "/how-we-can-help/comprehensive-hearing-assessments"
+      },
+      {
+        "label": "What a hearing test costs in Westchester",
+        "href": "/how-much-does-a-hearing-test-cost-westchester"
+      },
+      {
+        "label": "Harrison, NY office",
+        "href": "/harrison-ny"
+      },
+      {
+        "label": "Somers, NY office",
+        "href": "/Somers-NY"
       }
     ],
     "blogMeta": {
@@ -369,6 +429,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Scarsdale, NY",
         "href": "/Scarsdale-NY"
+      },
+      {
+        "label": "Hearing screening vs hearing test",
+        "href": "/hearing-screening-vs-hearing-test"
+      },
+      {
+        "label": "Comprehensive hearing assessments",
+        "href": "/how-we-can-help/comprehensive-hearing-assessments"
+      },
+      {
+        "label": "What a hearing test costs in Westchester",
+        "href": "/how-much-does-a-hearing-test-cost-westchester"
+      },
+      {
+        "label": "Somers, NY office",
+        "href": "/Somers-NY"
       }
     ],
     "blogMeta": {
@@ -465,6 +541,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Greenwich, CT",
         "href": "/greenwich-ct"
+      },
+      {
+        "label": "Hearing screening vs hearing test",
+        "href": "/hearing-screening-vs-hearing-test"
+      },
+      {
+        "label": "What a hearing test costs in Westchester",
+        "href": "/how-much-does-a-hearing-test-cost-westchester"
+      },
+      {
+        "label": "Cognivue cognitive screening",
+        "href": "/how-we-can-help/cognivue-cognitive-screening"
       }
     ],
     "blogMeta": {
@@ -561,6 +649,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Rye, NY",
         "href": "/rye-ny"
+      },
+      {
+        "label": "Hearing loss myths and misconceptions",
+        "href": "/hearing-loss-misconceptions"
+      },
+      {
+        "label": "Cognivue cognitive screening",
+        "href": "/how-we-can-help/cognivue-cognitive-screening"
+      },
+      {
+        "label": "Hearing screening vs hearing test",
+        "href": "/hearing-screening-vs-hearing-test"
       }
     ],
     "blogMeta": {
@@ -657,6 +757,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Fairfield County, CT",
         "href": "/areas-we-serve/fairfield-county-ct"
+      },
+      {
+        "label": "Hearing loss myths and misconceptions",
+        "href": "/hearing-loss-misconceptions"
+      },
+      {
+        "label": "Cognivue cognitive screening",
+        "href": "/how-we-can-help/cognivue-cognitive-screening"
+      },
+      {
+        "label": "Hearing aids 101",
+        "href": "/hearing-aids-101"
+      },
+      {
+        "label": "Audiologist near Mt. Kisco, NY",
+        "href": "/mt-kisco-ny"
       }
     ],
     "blogMeta": {
@@ -753,6 +869,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Westchester County, NY",
         "href": "/areas-we-serve/westchester-county-ny"
+      },
+      {
+        "label": "Hearing loss myths and misconceptions",
+        "href": "/hearing-loss-misconceptions"
+      },
+      {
+        "label": "Cognivue cognitive screening",
+        "href": "/how-we-can-help/cognivue-cognitive-screening"
+      },
+      {
+        "label": "Hearing screening vs hearing test",
+        "href": "/hearing-screening-vs-hearing-test"
       }
     ],
     "blogMeta": {
@@ -1233,6 +1361,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Greenwich, CT",
         "href": "/greenwich-ct"
+      },
+      {
+        "label": "Tinnitus in one ear",
+        "href": "/how-we-can-help/tinnitus-management/one-ear"
+      },
+      {
+        "label": "Sudden or worsening tinnitus",
+        "href": "/how-we-can-help/tinnitus-management/sudden-or-worsening-tinnitus"
+      },
+      {
+        "label": "One ear hearing loss: when to get checked",
+        "href": "/one-ear-hearing-loss-when-to-get-checked"
+      },
+      {
+        "label": "Audiologist or ENT: who to see first",
+        "href": "/audiologist-vs-ent-for-hearing-loss"
+      },
+      {
+        "label": "Tinnitus management",
+        "href": "/how-we-can-help/tinnitus-management"
+      },
+      {
+        "label": "Harrison, NY office",
+        "href": "/harrison-ny"
       }
     ],
     "blogMeta": {
@@ -1329,6 +1481,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Rye, NY",
         "href": "/rye-ny"
+      },
+      {
+        "label": "Pulsatile tinnitus guide",
+        "href": "/how-we-can-help/tinnitus-management/pulsatile-tinnitus"
+      },
+      {
+        "label": "Tinnitus management",
+        "href": "/how-we-can-help/tinnitus-management"
+      },
+      {
+        "label": "Ringing in one ear: causes, red flags and next steps",
+        "href": "/ringing-in-one-ear-red-flags-next-steps"
+      },
+      {
+        "label": "Audiologist or ENT: who to see first",
+        "href": "/audiologist-vs-ent-for-hearing-loss"
+      },
+      {
+        "label": "Sudden hearing loss: why not to wait",
+        "href": "/sudden-hearing-loss-why-not-wait"
+      },
+      {
+        "label": "Harrison, NY office",
+        "href": "/harrison-ny"
       }
     ],
     "blogMeta": {
@@ -1425,6 +1601,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Fairfield County, CT",
         "href": "/areas-we-serve/fairfield-county-ct"
+      },
+      {
+        "label": "Causes and triggers of tinnitus",
+        "href": "/how-we-can-help/tinnitus-management/causes-and-triggers"
+      },
+      {
+        "label": "Tinnitus management",
+        "href": "/how-we-can-help/tinnitus-management"
+      },
+      {
+        "label": "Custom earplugs in Westchester",
+        "href": "/custom-earplugs-westchester"
       }
     ],
     "blogMeta": {
@@ -1521,6 +1709,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Westchester County, NY",
         "href": "/areas-we-serve/westchester-county-ny"
+      },
+      {
+        "label": "Tinnitus therapy",
+        "href": "/tinnitus-therapy"
+      },
+      {
+        "label": "Tinnitus management",
+        "href": "/how-we-can-help/tinnitus-management"
+      },
+      {
+        "label": "Lenire for tinnitus",
+        "href": "/how-we-can-help/lenire-for-tinnitus"
+      },
+      {
+        "label": "Choosing a tinnitus specialist in Westchester",
+        "href": "/how-to-choose-tinnitus-specialist-westchester"
+      },
+      {
+        "label": "Tinnitus at night: why it feels louder",
+        "href": "/tinnitus-at-night-why-louder"
+      },
+      {
+        "label": "Harrison, NY office",
+        "href": "/harrison-ny"
       }
     ],
     "blogMeta": {
@@ -1617,6 +1829,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Lenire for tinnitus",
+        "href": "/how-we-can-help/lenire-for-tinnitus"
+      },
+      {
+        "label": "Tinnitus therapy",
+        "href": "/tinnitus-therapy"
+      },
+      {
+        "label": "Can Hearing Aids Help Tinnitus?",
+        "href": "/can-hearing-aids-help-tinnitus"
+      },
+      {
+        "label": "Choosing a tinnitus specialist in Westchester",
+        "href": "/how-to-choose-tinnitus-specialist-westchester"
+      },
+      {
+        "label": "Tinnitus treatment and relief options",
+        "href": "/how-we-can-help/tinnitus-management/treatment-and-relief-options"
+      },
+      {
+        "label": "Somers, NY office",
+        "href": "/Somers-NY"
       }
     ],
     "blogMeta": {
@@ -1713,6 +1949,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Tinnitus relief exercises and sleep",
+        "href": "/how-we-can-help/tinnitus-management/relief-exercises-and-sleep"
+      },
+      {
+        "label": "Tinnitus therapy",
+        "href": "/tinnitus-therapy"
+      },
+      {
+        "label": "Tinnitus habituation",
+        "href": "/how-we-can-help/tinnitus-management/habituation"
+      },
+      {
+        "label": "Can Hearing Aids Help Tinnitus?",
+        "href": "/can-hearing-aids-help-tinnitus"
+      },
+      {
+        "label": "Choosing a tinnitus specialist in Westchester",
+        "href": "/how-to-choose-tinnitus-specialist-westchester"
+      },
+      {
+        "label": "Lenire for tinnitus",
+        "href": "/how-we-can-help/lenire-for-tinnitus"
       }
     ],
     "blogMeta": {
@@ -1809,6 +2069,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "White Plains, NY",
         "href": "/White-Plains-NY"
+      },
+      {
+        "label": "Tinnitus therapy",
+        "href": "/tinnitus-therapy"
+      },
+      {
+        "label": "What is tinnitus?",
+        "href": "/how-we-can-help/tinnitus-management/what-is-tinnitus"
+      },
+      {
+        "label": "Tinnitus habituation",
+        "href": "/how-we-can-help/tinnitus-management/habituation"
+      },
+      {
+        "label": "Tinnitus at night: why it feels louder",
+        "href": "/tinnitus-at-night-why-louder"
       }
     ],
     "blogMeta": {
@@ -1905,6 +2181,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Scarsdale, NY",
         "href": "/Scarsdale-NY"
+      },
+      {
+        "label": "How to take care of a blocked ear",
+        "href": "/how-to-take-care-of-a-blocked-ear"
+      },
+      {
+        "label": "Ear pressure: what may help",
+        "href": "/how-to-relieve-ear-pressure"
+      },
+      {
+        "label": "Earwax removal",
+        "href": "/how-we-can-help/earwax-removal"
+      },
+      {
+        "label": "Harrison, NY office",
+        "href": "/harrison-ny"
       }
     ],
     "blogMeta": {
@@ -2097,6 +2389,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Rye, NY",
         "href": "/rye-ny"
+      },
+      {
+        "label": "How to take care of a blocked ear",
+        "href": "/how-to-take-care-of-a-blocked-ear"
+      },
+      {
+        "label": "Ear pressure: what may help",
+        "href": "/how-to-relieve-ear-pressure"
+      },
+      {
+        "label": "Can an audiologist remove earwax?",
+        "href": "/can-an-audiologist-remove-earwax-westchester"
+      },
+      {
+        "label": "Hearing test or earwax removal?",
+        "href": "/hearing-test-or-earwax-removal"
+      },
+      {
+        "label": "Harrison, NY office",
+        "href": "/harrison-ny"
+      },
+      {
+        "label": "Somers, NY office",
+        "href": "/Somers-NY"
       }
     ],
     "blogMeta": {
@@ -2193,6 +2509,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Fairfield County, CT",
         "href": "/areas-we-serve/fairfield-county-ct"
+      },
+      {
+        "label": "Hearing aid repair",
+        "href": "/hearing-aid-repair"
+      },
+      {
+        "label": "Hearing aid tune-ups",
+        "href": "/how-we-can-help/hearing-aid-tune-ups"
+      },
+      {
+        "label": "Hearing aid adjustments in Westchester",
+        "href": "/hearing-aid-adjustments-westchester"
+      },
+      {
+        "label": "Hearing aid tune-up or repair?",
+        "href": "/hearing-aid-tune-up-vs-repair"
       }
     ],
     "blogMeta": {
@@ -2289,6 +2621,30 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Westchester County, NY",
         "href": "/areas-we-serve/westchester-county-ny"
+      },
+      {
+        "label": "Hearing aid repair",
+        "href": "/hearing-aid-repair"
+      },
+      {
+        "label": "Hearing aid tune-ups",
+        "href": "/how-we-can-help/hearing-aid-tune-ups"
+      },
+      {
+        "label": "Rechargeable vs battery hearing aids",
+        "href": "/rechargeable-vs-battery-hearing-aids"
+      },
+      {
+        "label": "How long hearing aid batteries last",
+        "href": "/how-long-hearing-aid-batteries-last"
+      },
+      {
+        "label": "Hearing aid batteries and accessories",
+        "href": "/batteries-and-accessories"
+      },
+      {
+        "label": "Harrison, NY office",
+        "href": "/harrison-ny"
       }
     ],
     "blogMeta": {
@@ -2865,6 +3221,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Rye, NY",
         "href": "/rye-ny"
+      },
+      {
+        "label": "Hearing aid brands we fit",
+        "href": "/hearing-aids-brands"
       }
     ],
     "blogMeta": {
@@ -2961,6 +3321,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Fairfield County, CT",
         "href": "/areas-we-serve/fairfield-county-ct"
+      },
+      {
+        "label": "Phonak Lyric invisible hearing aid",
+        "href": "/hearing-aids-brands/phonak/phonak-lyric"
+      },
+      {
+        "label": "Lyric invisible hearing aids in Westchester",
+        "href": "/lyric-invisible-hearing"
+      },
+      {
+        "label": "Types of hearing aids",
+        "href": "/types-of-hearing-aids"
+      },
+      {
+        "label": "Ways to wear hearing aids more discreetly",
+        "href": "/8-expert-tips-to-conceal-your-hearing-aids-discreetly"
       }
     ],
     "blogMeta": {
@@ -3057,6 +3433,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Westchester County, NY",
         "href": "/areas-we-serve/westchester-county-ny"
+      },
+      {
+        "label": "Hearing aids 101",
+        "href": "/hearing-aids-101"
+      },
+      {
+        "label": "Hearing aid brands we fit",
+        "href": "/hearing-aids-brands"
+      },
+      {
+        "label": "Prescription vs OTC hearing aids",
+        "href": "/prescription-vs-otc-hearing-aids"
       }
     ],
     "blogMeta": {
@@ -3345,6 +3733,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "White Plains, NY",
         "href": "/White-Plains-NY"
+      },
+      {
+        "label": "The best hearing aid sold at Costco",
+        "href": "/what-is-the-best-hearing-aid-sold-at-costco"
+      },
+      {
+        "label": "Can we program hearing aids bought somewhere else?",
+        "href": "/can-audiologist-program-hearing-aids-bought-elsewhere"
+      },
+      {
+        "label": "Hearing aid second opinion in Westchester",
+        "href": "/hearing-aid-second-opinion"
+      },
+      {
+        "label": "Hearing aid brands we fit",
+        "href": "/hearing-aids-brands"
+      },
+      {
+        "label": "Hearing care across Westchester County",
+        "href": "/areas-we-serve/westchester-county-ny"
       }
     ],
     "blogMeta": {
@@ -3637,6 +4045,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Rye, NY",
         "href": "/rye-ny"
+      },
+      {
+        "label": "Hearing aids 101",
+        "href": "/hearing-aids-101"
+      },
+      {
+        "label": "Hearing aid brands we fit",
+        "href": "/hearing-aids-brands"
+      },
+      {
+        "label": "Types of hearing aids",
+        "href": "/types-of-hearing-aids"
+      },
+      {
+        "label": "How much hearing aids cost in Westchester County",
+        "href": "/hearing-aid-cost-westchester-county"
       }
     ],
     "blogMeta": {
@@ -4213,6 +4637,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Scarsdale, NY",
         "href": "/Scarsdale-NY"
+      },
+      {
+        "label": "Hearing protection",
+        "href": "/hearing-protection"
+      },
+      {
+        "label": "Custom earplugs in Westchester",
+        "href": "/custom-earplugs-westchester"
+      },
+      {
+        "label": "Hearing aids for musicians",
+        "href": "/musician-hearing-aids-westchester"
       }
     ],
     "blogMeta": {
@@ -4309,6 +4745,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Greenwich, CT",
         "href": "/greenwich-ct"
+      },
+      {
+        "label": "Hearing protection",
+        "href": "/hearing-protection"
+      },
+      {
+        "label": "Custom earplugs in Westchester",
+        "href": "/custom-earplugs-westchester"
+      },
+      {
+        "label": "Preventing noise-induced hearing loss",
+        "href": "/noise-induced-hearing-loss-prevention"
       }
     ],
     "blogMeta": {
@@ -4405,6 +4853,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Rye, NY",
         "href": "/rye-ny"
+      },
+      {
+        "label": "Hearing protection",
+        "href": "/hearing-protection"
+      },
+      {
+        "label": "Custom earplugs in Westchester",
+        "href": "/custom-earplugs-westchester"
+      },
+      {
+        "label": "Preventing noise-induced hearing loss",
+        "href": "/noise-induced-hearing-loss-prevention"
+      },
+      {
+        "label": "Hearing protection for power tools and yard work",
+        "href": "/hearing-protection-power-tools-yard-work"
       }
     ],
     "blogMeta": {
@@ -4621,6 +5085,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Westchester County, NY",
         "href": "/areas-we-serve/westchester-county-ny"
+      },
+      {
+        "label": "Hearing protection",
+        "href": "/hearing-protection"
+      },
+      {
+        "label": "Custom earplugs in Westchester",
+        "href": "/custom-earplugs-westchester"
+      },
+      {
+        "label": "Concert earplugs: musician plugs vs foam",
+        "href": "/hearing-protection-concerts-musician-vs-foam"
+      },
+      {
+        "label": "How loud is too loud?",
+        "href": "/how-loud-is-too-loud-decibels"
       }
     ],
     "blogMeta": {
@@ -4813,6 +5293,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Cognivue cognitive screening",
+        "href": "/how-we-can-help/cognivue-cognitive-screening"
+      },
+      {
+        "label": "Comprehensive hearing assessments",
+        "href": "/how-we-can-help/comprehensive-hearing-assessments"
+      },
+      {
+        "label": "Hearing tests and cognitive screening",
+        "href": "/hearing-test-and-cognitive-screening"
+      },
+      {
+        "label": "Audiologist near Mt. Kisco, NY",
+        "href": "/mt-kisco-ny"
       }
     ],
     "blogMeta": {

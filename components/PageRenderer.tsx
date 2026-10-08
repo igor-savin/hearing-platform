@@ -32,6 +32,7 @@ import {
   nearestOfficeText,
   planningGuideForLocation,
   serviceGuideForPage,
+  serviceNextStepsFor,
   trackingHref
 } from "@/lib/conversion";
 import {
@@ -1138,7 +1139,10 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
       { label: "Tinnitus Therapy", href: "/tinnitus-therapy" },
-      { label: "Harrison office", href: "/harrison-ny" }
+      { label: "Harrison office", href: "/harrison-ny" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+      { label: "Hearing protection", href: "/hearing-protection" }
     ]
   },
   "/White-Plains-NY": {
@@ -1161,7 +1165,9 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Tinnitus Management", href: "/how-we-can-help/tinnitus-management" },
       { label: "Hearing Aid Repair", href: "/hearing-aid-repair" },
       { label: "Does Insurance Cover Hearing Aids or Hearing Tests?", href: "/does-insurance-cover-hearing-aids-tests" },
-      { label: "Harrison office", href: "/harrison-ny" }
+      { label: "Harrison office", href: "/harrison-ny" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" }
     ]
   },
   "/harrison-ny": {
@@ -1325,11 +1331,374 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-infinio" },
       { label: "What Phonak EON costs", href: "/hearing-aids-brands/phonak/phonak-eon-cost" }
     ]
+  },
+  "/hearing-aids-brands/oticon/oticon-intent": {
+    heading: "Next steps with Oticon Intent",
+    links: [
+      { label: "Oticon Reveal", href: "/hearing-aids-brands/oticon/oticon-reveal" },
+      { label: "Oticon Zeal", href: "/hearing-aids-brands/oticon/oticon-zeal" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Advanced hearing aid technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/oticon/oticon-zeal": {
+    heading: "Next steps with Oticon Zeal",
+    links: [
+      { label: "Oticon Intent", href: "/hearing-aids-brands/oticon/oticon-intent" },
+      { label: "Oticon Reveal", href: "/hearing-aids-brands/oticon/oticon-reveal" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/phonak/phonak-infinio": {
+    heading: "Next steps with Phonak Infinio",
+    links: [
+      { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
+      { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
+      { label: "Phonak Lyric invisible hearing aid", href: "/hearing-aids-brands/phonak/phonak-lyric" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/signia/signia-ix": {
+    heading: "Next steps with Signia IX",
+    links: [
+      { label: "Signia MaX vs Signia IX", href: "/hearing-aids-brands/signia/signia-max-vs-signia-ix" },
+      { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing aid repair", href: "/hearing-aid-repair" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/widex/widex-allure": {
+    heading: "Next steps with Widex Allure",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/resound/resound-vivia": {
+    heading: "Next steps with ReSound Vivia",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Advanced hearing aid technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
+      { label: "Hearing aid tune-ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/starkey/starkey-edge-ai": {
+    heading: "Next steps with Starkey Edge AI",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Questions to ask before buying hearing aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "Hearing aid repair", href: "/hearing-aid-repair" },
+      { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/signia/signia-max-cost": {
+    heading: "Next steps after reading about cost",
+    links: [
+      { label: "How much hearing aids cost in Westchester County", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Hearing aid payment plans and financing", href: "/hearing-aid-payment-plans-westchester" },
+      { label: "Does insurance cover hearing aids or hearing tests?", href: "/does-insurance-cover-hearing-aids-tests" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-brands/phonak/phonak-eon-cost": {
+    heading: "Next steps after reading about cost",
+    links: [
+      { label: "How much hearing aids cost in Westchester County", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Hearing aid payment plans and financing", href: "/hearing-aid-payment-plans-westchester" },
+      { label: "Employer and union hearing aid benefits", href: "/employer-union-hearing-aid-benefits-westchester" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help": {
+    heading: "More ways to start",
+    links: [
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Hearing aid repair", href: "/hearing-aid-repair" },
+      { label: "Hearing protection", href: "/hearing-protection" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/your-hearing": {
+    heading: "Where to go from here",
+    links: [
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/comprehensive-hearing-assessments": {
+    heading: "Before and after your assessment",
+    links: [
+      { label: "What happens during a comprehensive hearing evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
+      { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Cognivue cognitive screening", href: "/how-we-can-help/cognivue-cognitive-screening" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/advanced-hearing-aid-technology": {
+    heading: "Compare hearing aids before you decide",
+    links: [
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
+      { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
+      { label: "Questions to ask before buying hearing aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "Hearing aid tune-ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
+      { label: "Phonak Lyric invisible hearing aid", href: "/hearing-aids-brands/phonak/phonak-lyric" }
+    ]
+  },
+  "/how-we-can-help/hearing-aid-tune-ups": {
+    heading: "Hearing aid care questions",
+    links: [
+      { label: "Hearing aid tune-up or repair?", href: "/hearing-aid-tune-up-vs-repair" },
+      { label: "Hearing aid adjustments in Westchester", href: "/hearing-aid-adjustments-westchester" },
+      { label: "Can an Audiologist Program Hearing Aids Bought Somewhere Else?", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
+      { label: "Why hearing aids whistle", href: "/why-hearing-aids-whistle" },
+      { label: "Hearing aid not charging?", href: "/hearing-aid-not-charging" },
+      { label: "How often hearing aids need professional cleaning", href: "/how-often-professional-hearing-aid-cleaning" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management": {
+    heading: "Tinnitus questions patients ask",
+    links: [
+      { label: "Pulsatile tinnitus: why heartbeat-like sounds need attention", href: "/pulsatile-tinnitus-heartbeat-sound" },
+      { label: "Ringing in one ear: causes, red flags and next steps", href: "/ringing-in-one-ear-red-flags-next-steps" },
+      { label: "Can Hearing Aids Help Tinnitus?", href: "/can-hearing-aids-help-tinnitus" },
+      { label: "Choosing a tinnitus specialist in Westchester", href: "/how-to-choose-tinnitus-specialist-westchester" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/cochlear-implants": {
+    heading: "When hearing aids may not be enough",
+    links: [
+      { label: "When hearing aids are no longer enough", href: "/when-hearing-aids-no-longer-enough-cochlear-implant" },
+      { label: "Hearing people talk but not understanding the words", href: "/hear-people-talking-not-understand-words" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/earwax-removal": {
+    heading: "Ear blockage questions",
+    links: [
+      { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
+      { label: "Hearing test or earwax removal?", href: "/hearing-test-or-earwax-removal" },
+      { label: "How to take care of a blocked ear", href: "/how-to-take-care-of-a-blocked-ear" },
+      { label: "Ear pressure: what may help", href: "/how-to-relieve-ear-pressure" },
+      { label: "Dry, itchy ears: causes and next steps", href: "/understanding-and-treating-dry-ears" },
+      { label: "Getting water out of your ear safely", href: "/how-to-get-water-out-of-your-ear" }
+    ]
+  },
+  "/how-we-can-help/cognivue-cognitive-screening": {
+    heading: "Hearing and thinking: related reading",
+    links: [
+      { label: "Hearing tests and cognitive screening", href: "/hearing-test-and-cognitive-screening" },
+      { label: "Hearing loss and cognitive effort", href: "/hearing-loss-cognitive-effort-listening-fatigue" },
+      { label: "Is hearing loss normal with age?", href: "/is-hearing-loss-normal-with-age" },
+      { label: "How often adults should get their hearing checked", href: "/how-often-should-adults-get-hearing-checked" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/adoption-plan": {
+    heading: "Hearing aids bought elsewhere",
+    links: [
+      { label: "Can we program hearing aids bought somewhere else?", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+      { label: "Costco hearing aids vs audiologist care", href: "/costco-hearing-aids-vs-audiologist-care" },
+      { label: "Hearing aid adjustments in Westchester", href: "/hearing-aid-adjustments-westchester" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/lenire-for-tinnitus": {
+    heading: "Lenire and other tinnitus options",
+    links: [
+      { label: "Lenire for tinnitus: who might be a candidate?", href: "/lenire-for-tinnitus-candidate-guide" },
+      { label: "Can Hearing Aids Help Tinnitus?", href: "/can-hearing-aids-help-tinnitus" },
+      { label: "Choosing a tinnitus specialist in Westchester", href: "/how-to-choose-tinnitus-specialist-westchester" },
+      { label: "Tinnitus treatment and relief options", href: "/how-we-can-help/tinnitus-management/treatment-and-relief-options" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/executive-assistance": {
+    heading: "Hearing care for work",
+    links: [
+      { label: "Hearing care for professionals: meetings and calls", href: "/hearing-care-professionals-meetings-calls" },
+      { label: "Bluetooth hearing aids: what to know before buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/hearing-protection": {
+    heading: "Hearing protection guides",
+    links: [
+      { label: "Custom earplugs in Westchester", href: "/custom-earplugs-westchester" },
+      { label: "Concert earplugs: musician plugs vs foam", href: "/hearing-protection-concerts-musician-vs-foam" },
+      { label: "Hearing protection for power tools and yard work", href: "/hearing-protection-power-tools-yard-work" },
+      { label: "How loud is too loud?", href: "/how-loud-is-too-loud-decibels" },
+      { label: "Ear protection for kids and teens", href: "/kids-teens-ear-protection-concerts-sports" },
+      { label: "Harrison, NY office", href: "/harrison-ny" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/habituation": {
+    heading: "Next steps for tinnitus habituation",
+    links: [
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Lenire for tinnitus", href: "/how-we-can-help/lenire-for-tinnitus" },
+      { label: "Tinnitus at night: why it feels louder", href: "/tinnitus-at-night-why-louder" },
+      { label: "Sound sensitivity vs tinnitus", href: "/sound-sensitivity-vs-tinnitus" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/pulsatile-tinnitus": {
+    heading: "Next steps for pulsatile tinnitus",
+    links: [
+      { label: "Pulsatile tinnitus: why heartbeat-like sounds need attention", href: "/pulsatile-tinnitus-heartbeat-sound" },
+      { label: "Audiologist or ENT: who to see first", href: "/audiologist-vs-ent-for-hearing-loss" },
+      { label: "Dizziness and ringing in the ears: audiology or ENT?", href: "/dizziness-and-ringing-audiology-or-ent" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/relief-exercises-and-sleep": {
+    heading: "More help with tinnitus and sleep",
+    links: [
+      { label: "Tinnitus at night: why it feels louder", href: "/tinnitus-at-night-why-louder" },
+      { label: "Sound sensitivity vs tinnitus", href: "/sound-sensitivity-vs-tinnitus" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Can Hearing Aids Help Tinnitus?", href: "/can-hearing-aids-help-tinnitus" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/causes-and-triggers": {
+    heading: "Next steps for tinnitus triggers",
+    links: [
+      { label: "Tinnitus after loud noise: what to do next", href: "/tinnitus-after-loud-noise-what-to-do" },
+      { label: "Hearing protection", href: "/hearing-protection" },
+      { label: "Ringing in one ear: causes, red flags and next steps", href: "/ringing-in-one-ear-red-flags-next-steps" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/treatment-and-relief-options": {
+    heading: "Compare tinnitus care options",
+    links: [
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Lenire for tinnitus", href: "/how-we-can-help/lenire-for-tinnitus" },
+      { label: "Can Hearing Aids Help Tinnitus?", href: "/can-hearing-aids-help-tinnitus" },
+      { label: "Choosing a tinnitus specialist in Westchester", href: "/how-to-choose-tinnitus-specialist-westchester" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/what-is-tinnitus": {
+    heading: "Next steps if you hear ringing",
+    links: [
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Sound sensitivity vs tinnitus", href: "/sound-sensitivity-vs-tinnitus" },
+      { label: "Tinnitus after loud noise: what to do next", href: "/tinnitus-after-loud-noise-what-to-do" },
+      { label: "Hearing evaluation for tinnitus", href: "/hearing-testing" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/how-we-can-help/tinnitus-management/one-ear": {
+    heading: "Next steps for ringing in one ear",
+    links: [
+      { label: "Ringing in one ear: causes, red flags and next steps", href: "/ringing-in-one-ear-red-flags-next-steps" },
+      { label: "One ear hearing loss: when to get checked", href: "/one-ear-hearing-loss-when-to-get-checked" },
+      { label: "Audiologist or ENT: who to see first", href: "/audiologist-vs-ent-for-hearing-loss" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/hearing-aids-101": {
+    heading: "Keep learning about hearing aids",
+    links: [
+      { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Questions to ask before buying hearing aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "How much hearing aids cost in Westchester County", href: "/hearing-aid-cost-westchester-county" },
+      { label: "What to expect at a hearing aid fitting", href: "/what-to-expect-hearing-aid-fitting" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" }
+    ]
+  },
+  "/hearing-loss-misconceptions": {
+    heading: "Next steps after the myths",
+    links: [
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Is hearing loss normal with age?", href: "/is-hearing-loss-normal-with-age" },
+      { label: "First signs of hearing loss families notice", href: "/first-signs-of-hearing-loss-family-notice" },
+      { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ]
+  },
+  "/rye-ny": {
+    heading: "More hearing care for Rye patients",
+    links: [
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Hearing aid repair", href: "/hearing-aid-repair" },
+      { label: "Hearing protection", href: "/hearing-protection" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" }
+    ]
+  },
+  "/mt-kisco-ny": {
+    heading: "More hearing care for Mt. Kisco patients",
+    links: [
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Hearing aid repair", href: "/hearing-aid-repair" },
+      { label: "Hearing protection", href: "/hearing-protection" },
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" }
+    ]
   }
 };
 
 function PageCrossLinks({ page }: { page: SitePage }) {
-  const entry = pageCrossLinks[page.path];
+  const entry = pageCrossLinks[page.path] ?? serviceNextStepsFor(page);
   if (!entry) return null;
   return (
     <section className="bg-[#f7fbfd] py-12">
@@ -2533,6 +2902,7 @@ function AreaCountyPage({ page }: { page: SitePage }) {
           <AreaServicesList />
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <AreaFaqSection page={page} title={`Frequently Asked Questions About Hearing Care in ${county.name}`} />
       <AreaAppointmentCta />
     </>
@@ -2711,6 +3081,7 @@ function AreaCityPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <AreaFaqSection page={page} title={`Frequently Asked Questions About Hearing Care Near ${city.name}`} />
       <AreaAppointmentCta cityName={`${city.name}, ${city.state}`} />
     </>
@@ -2841,6 +3212,7 @@ function HowWeCanHelpIndexPage({ page }: { page: SitePage }) {
         </div>
       </section>
       <PatientReviewsBand />
+      <PageCrossLinks page={page} />
       <AreaFaqSection page={page} title="How We Can Help FAQs" />
       <ProductCta />
     </>
@@ -3235,6 +3607,7 @@ function HowWeCanHelpServicePage({ page }: { page: SitePage }) {
       <HelpServiceSeoSection service={service} />
       <TinnitusVisitAndClinician page={page} />
       {page.path === tinnitusRootPath ? <TinnitusHubLinks /> : null}
+      <PageCrossLinks page={page} />
       <AreaFaqSection page={page} title={`${service.title} FAQs`} />
       <ProductCta />
     </>
@@ -3306,6 +3679,7 @@ function HearingLossEducationPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <AreaFaqSection page={page} title={`${page.h1} FAQs`} />
       <ProductCta />
     </>
@@ -6080,6 +6454,7 @@ function ProviderProfilePage({ page }: { page: SitePage }) {
         </div>
       </section>
       <ProviderTrustSection provider={provider} />
+      <PageCrossLinks page={page} />
       <section className="bg-[#dbe9f3] py-[52px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           <h2 className="text-[42px] font-black leading-tight text-[#003f6f] max-md:text-[32px]">Frequently Asked Questions About {provider.name}</h2>
