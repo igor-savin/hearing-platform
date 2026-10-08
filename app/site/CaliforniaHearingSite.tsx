@@ -1894,7 +1894,7 @@ function InnerPage({ page }: { page: SitePage }) {
             <section className="answer-box">
               <p className="section-kicker">At a glance</p>
               <ul>
-                {content.takeaways.map((takeaway) => <li key={takeaway}>{takeaway}</li>)}
+                {content.takeaways.map((takeaway) => <li key={takeaway} dangerouslySetInnerHTML={{ __html: linkify(takeaway) }} />)}
               </ul>
             </section>
           )}
