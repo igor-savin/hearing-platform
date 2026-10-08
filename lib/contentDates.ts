@@ -139,7 +139,7 @@ export const contentDates: Record<string, ContentDate> = {
   "jennifer-ratner": { published: "2026-07-07", modified: "2026-10-06" },
   "julia-rivera": { published: "2026-08-12", modified: "2026-10-06" },
   "katonah": { published: "2026-07-06", modified: "2026-08-25" },
-  "kira-savin": { published: "2026-07-07", modified: "2026-10-06" },
+  "kira-savin": { published: "2026-07-07", modified: "2026-10-08" },
   "larchmont": { published: "2026-07-06", modified: "2026-08-25" },
   "leannmarie-senat": { published: "2026-07-07", modified: "2026-10-06" },
   "lenire-for-tinnitus": { published: "2026-07-07", modified: "2026-08-25" },

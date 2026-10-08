@@ -617,6 +617,13 @@ function personSchema(provider: ProviderProfile, description?: string) {
       name: affiliation
     })),
     knowsAbout: provider.specialties,
+    subjectOf: provider.press?.map((item) => ({
+      "@type": "Article",
+      headline: item.headline,
+      url: item.url,
+      datePublished: item.datePublished,
+      publisher: { "@type": "Organization", name: item.publication }
+    })),
     alumniOf: parsed.alumniOf.map((name) => ({
       "@type": "EducationalOrganization",
       name
