@@ -21,7 +21,7 @@
   takeaways: [
     "Licensed in Audiology and Hearing Aid Dispensing in both California and New York State.",
     "Co-owner of Audiology Associates of Westchester, with expertise in the Lyric invisible hearing device.",
-    "Interviewed by Hearing Review in October 2026 on how audiology practices protect clinician time for patients."
+    "Interviewed by [Hearing Review](https://hearingreview.com/practice-building/practice-management/management-strategies/strategies-for-stretching-staff-resources) in October 2026 on how audiology practices protect clinician time for patients."
   ],
   faqs: [
     ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
