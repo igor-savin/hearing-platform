@@ -47,7 +47,7 @@ const rawCorePages: Record<string, PageContent> = {
   sections: [
     ["Patient-centered care", "We practice person-centered care, which means the plan is shaped with you, not handed to you. We explain your results plainly, lay out realistic options with their trade-offs, and respect that the decision is yours. This philosophy runs through every appointment, from how we describe an audiogram to how we set expectations for new hearing aids."],
     ["Evidence-based methods", "Good outcomes come from doing the fundamentals well. We rely on established, evidence-based methods, comprehensive diagnostic testing, prescriptive programming, and objective verification with real-ear measurement, rather than shortcuts. Our [hearing testing](/hearing-testing/) and [hearing aid fitting](/hearing-aid-fitting/) follow best practices because that is what reliably delivers clear, comfortable hearing."],
-    ["An experienced team", "Our clinicians bring decades of combined experience across diagnostic evaluation, amplification, and tinnitus management, and they stay current as hearing technology evolves. You can read each provider's background on their individual bio pages to learn about their training, focus areas, and what they care about most in patient care."],
+    ["An experienced team", "Our clinicians bring decades of combined experience across diagnostic evaluation, amplification, and tinnitus management, and they stay current as hearing technology evolves. You can read each provider's background on their individual bio pages to learn about their training, focus areas, and what they care about most in patient care. Dr. [Kira Savin](/about-us/kira-savin/) was recently interviewed in Hearing Review about how practices protect clinician time for patients."],
     ["Two convenient Peninsula offices", "We see patients at 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos, making it easy to find care close to home or work. Both offices offer our full range of [services](/services/), so you can choose whichever location is more convenient for you."],
     ["Care for the whole hearing journey", "Hearing care is not a single visit. We support you from the first evaluation through fitting, follow-up adjustments, cleaning and repairs, and rechecks as your hearing changes over time. That continuity is part of the value of choosing an independent local practice; the people who fit your devices are the same people who help you keep them working."],
     ["A specialty in tinnitus", "Ringing, buzzing, or hissing in the ears is one of the most common reasons people find us, and it is an area we focus on. Our [tinnitus](/tinnitus/) care includes evaluation, counseling, and sound-based approaches, and we look for any red flags that call for a medical referral so you get the right kind of help."],
@@ -263,18 +263,21 @@ const rawCorePages: Record<string, PageContent> = {
   ],
   sections: [
     ["Credentials & training", "Dr. Savin is licensed in Audiology and Hearing Aid Dispensing in both California and New York State. She earned her B.A. in Communication Sciences and Disorders from Pace University in 2005 and her Au.D. from Salus University, George S. Osborne College of Audiology, in 2013. She has been accredited by the American Speech-Language-Hearing Association and is a fellow of the American Academy of Audiology, and she holds the Tinnitus Management (CH-TM) certificate. She completed her residency at SUNY Downstate Medical Center in Brooklyn, N.Y. In 2018, she received the Business Council of Westchester's Top 40 under 40 award."],
-    ["Focus & approach", "After practicing in New York City, Dr. Savin continued her career in Westchester County, where she co-purchased Audiology Associates of Westchester and remains a co-owner of that practice and its satellite offices. She is thrilled to now call the Bay Area her home."]
+    ["Focus & approach", "After practicing in New York City, Dr. Savin continued her career in Westchester County, where she co-purchased Audiology Associates of Westchester and remains a co-owner of that practice and its satellite offices. She is thrilled to now call the Bay Area her home."],
+    ["In the news", "Dr. Savin was interviewed for [\"Strategies for Stretching Staff Resources\"](https://hearingreview.com/practice-building/practice-management/management-strategies/strategies-for-stretching-staff-resources), published in Hearing Review on October 7, 2026. She spoke about how a busy audiology practice protects clinician time for patients: trained audiology assistants where state rules allow them, block scheduling, front-office triage of calls, and drop-off repairs. She also encouraged practices to welcome audiology students and to use their websites to help patients with simple questions. Hearing Review is a trade publication for hearing health professionals."]
   ],
   bullets: [
     "Personalized hearing solutions with discreet technology",
     "Lyric invisible extended-wear device expertise",
     "Hearing rehabilitation and auditory counseling",
     "Tinnitus management and retraining therapy",
-    "Co-owner of Audiology Associates of Westchester"
+    "Co-owner of Audiology Associates of Westchester",
+    "Interviewed in Hearing Review, October 2026"
   ],
   takeaways: [
     "Licensed in Audiology and Hearing Aid Dispensing in both California and New York State.",
-    "Co-owner of Audiology Associates of Westchester, with expertise in the Lyric invisible hearing device."
+    "Co-owner of Audiology Associates of Westchester, with expertise in the Lyric invisible hearing device.",
+    "Interviewed by Hearing Review in October 2026 on how audiology practices protect clinician time for patients."
   ],
   faqs: [
     ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
