@@ -730,4 +730,7 @@ export const contentDates: Record<string, string> = {
   "/hearing-better/noisy-rooms-and-distance/": "2026-09-29",
   "/hearing-better/family-guide/": "2026-09-29",
   "/hearing-better/hearing-and-your-health/": "2026-09-29",
+  "/hearing-test-genetic-risk-hearing-loss/": "2026-10-08",
+  "/elehear-beyond-2-pro/": "2026-10-08",
+  "/squid-hearing-loss-research/": "2026-10-08",
 };

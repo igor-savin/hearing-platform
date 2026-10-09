@@ -1,0 +1,12 @@
+{
+  "slug": "elehear-beyond-2-pro",
+  "hero": { "title": "$799 OTC Hearing Aids", "icon": "hearingaid", "accent": "gold" },
+  "info": { "title": "Before You Buy an OTC Hearing Aid", "subtitle": "Five questions that matter more than the spec sheet",
+    "rows": [
+      {"title": "Is your loss mild to moderate?", "desc": "A hearing test tells you before you spend $799"},
+      {"title": "What does the price include?", "desc": "Launch coverage lists $799 a pair. Remote sessions cost extra"},
+      {"title": "Who tunes the sound?", "desc": "You do, in the app, unless you add remote audiology"},
+      {"title": "Where will you use Auracast?", "desc": "Only venues that broadcast it. Those are still limited"},
+      {"title": "What are the return terms?", "desc": "Launch coverage did not state them. Ask before you buy"}
+    ] }
+}

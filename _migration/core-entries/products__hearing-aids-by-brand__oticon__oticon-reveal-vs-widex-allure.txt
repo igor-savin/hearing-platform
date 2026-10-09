@@ -2,7 +2,7 @@
   kicker: "Compare Hearing Aids",
   headline: "Oticon Reveal vs Widex Allure",
   metaTitle: "Oticon Reveal vs Widex Allure | Honest Comparison | California Hearing Center",
-  metaDescription: "Widex Allure has no neural network in its sound path and still outscores several AI flagships in independent testing. But it has no tinnitus program. An honest comparison.",
+  metaDescription: "The original Widex Allure has no neural network yet outscores several AI flagships in testing. But it has no tinnitus program. An honest look.",
   intro: [
     "This comparison is more interesting than the marketing makes it look, because the two devices disagree about the premise. Oticon Reveal, launched August 2026, is built around two artificial-intelligence systems running at once. Widex Allure, the version you can buy in the United States today, has no deep neural network in its sound-processing path at all, and it still outperforms several AI flagships on the independent bench.",
     "Widex has spent years arguing that the most important number in a hearing aid is not how clever the processing is but how fast it happens. Allure moves sound from microphone to receiver in under half a millisecond, which is why people often describe Widex devices as sounding unusually natural, particularly for music and for the sound of their own voice.",

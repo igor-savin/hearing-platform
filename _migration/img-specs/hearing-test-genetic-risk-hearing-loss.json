@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-test-genetic-risk-hearing-loss",
+  "hero": { "title": "Hearing Tests and Genetics", "icon": "dna", "accent": "gold" },
+  "info": { "title": "Hearing Genetics: Five Things to Know", "subtitle": "What the October 2026 study shows, and what it does not",
+    "rows": [
+      {"title": "The audiogram beat diagnosis codes", "desc": "Hearing test data found 3 gene regions. Diagnosis codes found none"},
+      {"title": "Four genes, not a verdict", "desc": "EML6, SPTBN1, ARHGEF28 and EYA4 are linked, not decisive"},
+      {"title": "A risk score is a probability", "desc": "The score's link to self-reported deafness was modest: odds ratio 1.09"},
+      {"title": "There is no genetic test to order", "desc": "This is research. It is not a clinical test for patients"},
+      {"title": "Your own baseline still matters", "desc": "A current audiogram is the data that guides care today"}
+    ] }
+}
