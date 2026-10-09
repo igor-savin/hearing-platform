@@ -2929,6 +2929,7 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
           </a>
           <a className="footer-social" href="/practice-facts/"><span>Practice Facts</span></a>
           <a className="footer-social" href="/ai-tools-terms/"><span>AI Tools Terms</span></a>
+          <a className="footer-social" href="/ai-tools-privacy/"><span>AI Tools Privacy</span></a>
           <span>© 2026 California Hearing Center and Audiology Services, Inc. All Rights Reserved.</span>
         </div>
       </footer>

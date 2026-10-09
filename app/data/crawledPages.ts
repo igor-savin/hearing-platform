@@ -25,6 +25,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/ai-tools-privacy/",
+    "title": "AI Tools Privacy Notice | California Hearing Center",
+    "h1": "AI Tools Privacy Notice",
+    "desc": "How California Hearing Center's AI hearing and balance tools, including those offered through ChatGPT, handle your information.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/products/",
     "title": "Products | California Hearing Center",
     "h1": "Products",

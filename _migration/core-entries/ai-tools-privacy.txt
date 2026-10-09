@@ -1,0 +1,26 @@
+"/ai-tools-privacy/": {
+  kicker: "Legal",
+  headline: "AI Tools Privacy Notice",
+  intro: [
+    "Effective date: October 9, 2026.",
+    "California Hearing Center and Audiology Services, Inc. provides educational hearing and balance tools through ChatGPT and other third-party platforms. This notice explains what information those tools handle and what happens to it. It is separate from the [website Privacy Policy](/privacy-policy/) and from the Notice of Privacy Practices that applies to patients of the practice. The tools are governed by our [AI Tools Terms of Service](/ai-tools-terms/)."
+  ],
+  sections: [
+    ["Information the tools handle", "A tool may ask you questions about your hearing, tinnitus, dizziness or balance. Your answers are used to give you educational guidance and to suggest possible next steps. Near the end of a tool, you may choose to send us your name and contact details so our staff can get in touch with you. Sending them is optional."],
+    ["How we use the information", "We use your answers only to help you during your session and, if you choose to send us your contact details, to help our staff follow up with you. We do not sell your information. We do not use it for advertising."],
+    ["Who receives the information", "If you go through a tool and choose to send us your details, our staff receive what you sent so they can contact you. If you do not choose to send your details, nothing is sent to our clinic. Our tools run through ChatGPT, which is operated by OpenAI and has its own terms and privacy practices. They also use a server hosted on Render, an independent hosting service. Your answers stay on that server and are not taken to the clinic unless you choose to send your details."],
+    ["Retention and deletion", "We keep your answers only for as long as we need them to help you, and then we delete them. We do not keep your answers for other purposes. We do not build a record of your answers for later use."],
+    ["Your choices and deletion requests", "You decide whether to send us your contact details. If you want us to delete information you sent us, contact California Hearing Center by phone or through our [contact page](/contact/), and we will handle your request. Information you share inside ChatGPT is also governed by your ChatGPT settings and OpenAI's privacy policy."],
+    ["Information you should not provide", "Do not submit medical records, insurance identifiers, government-issued identification numbers, or other protected or highly sensitive information through these tools."],
+    ["Age", "Our tools are intended for adults aged 18 and older. We do not knowingly collect information from children through these tools."],
+    ["Changes to this notice", "We may update this notice by posting a new version on this page and changing the effective date."],
+    ["Contact us", "California Hearing Center, 88 N. San Mateo Drive, San Mateo, CA 94401. Phone: (650) 342-9449. Contact: [calhearing.com/contact](/contact/)."]
+  ],
+  bulletLinks: [
+    ["Contact the practice", "/contact/"],
+    ["AI Tools Terms of Service", "/ai-tools-terms/"],
+    ["Website Privacy Policy", "/privacy-policy/"]
+  ],
+  image: "/assets/logo-alt.png",
+  imageLabel: "How our AI tools handle your information",
+},
