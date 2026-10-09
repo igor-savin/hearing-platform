@@ -4396,12 +4396,14 @@ function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
               </p>
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link
-                className="focus-ring inline-flex items-center justify-center rounded-full bg-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
-                href={serviceAreaPath}
-              >
-                View full {city.name} service area
-              </Link>
+              {serviceAreaPath !== page.path ? (
+                <Link
+                  className="focus-ring inline-flex items-center justify-center rounded-full bg-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-white hover:bg-[#004b82]"
+                  href={serviceAreaPath}
+                >
+                  View full {city.name} service area
+                </Link>
+              ) : null}
               {county ? (
                 <Link
                   className="focus-ring inline-flex items-center justify-center rounded-full border-2 border-[#005a9c] px-6 py-4 text-[16px] font-bold uppercase tracking-[0.04em] text-[#005a9c] hover:bg-[#005a9c] hover:text-white"
