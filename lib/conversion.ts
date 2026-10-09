@@ -312,7 +312,8 @@ export const comparisonPages: SitePage[] = [
       { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
       { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
       { label: "Harrison, NY office", href: "/harrison-ny" },
-      { label: "Somers, NY office", href: "/Somers-NY" }
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Precision hearing care: why your audiogram matters more than ever in 2026", href: "/precision-hearing-care-audiogram" }
     ]
   },
   {
@@ -352,7 +353,8 @@ export const comparisonPages: SitePage[] = [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing aids 101", href: "/hearing-aids-101" },
       { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
-      { label: "Are OTC hearing aids right for me?", href: "/are-otc-hearing-aids-right-for-me" }
+      { label: "Are OTC hearing aids right for me?", href: "/are-otc-hearing-aids-right-for-me" },
+      { label: "Latest: Elehear Beyond 2 Pro ($799 OTC) vs. Prescription Hearing Aids", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" }
     ]
   }
 ];

@@ -90,7 +90,8 @@ const conditions: Condition[] = [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Age-Related Hearing Loss", href: "/hearing-loss/age-related-hearing-loss" },
       { label: "Noise-Induced Hearing Loss", href: "/hearing-loss/noise-induced-hearing-loss" },
-      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Latest: Your audiogram and the 2026 hearing genetics study", href: "/precision-hearing-care-audiogram" }
     ],
     sources: [
       { label: "NIDCD: Hearing Loss", href: "https://www.nidcd.nih.gov/health/hearing-ear-infections-deafness" }
@@ -265,7 +266,8 @@ const conditions: Condition[] = [
       { label: "Is Hearing Loss Normal With Age?", href: "/is-hearing-loss-normal-with-age" },
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Sensorineural Hearing Loss", href: "/hearing-loss/sensorineural-hearing-loss" },
-      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" }
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Latest: Why a baseline audiogram matters (2026 study)", href: "/precision-hearing-care-audiogram" }
     ],
     sources: [
       { label: "NIDCD: Age-Related Hearing Loss", href: "https://www.nidcd.nih.gov/health/age-related-hearing-loss" }
@@ -489,7 +491,8 @@ const hubPage: SitePage = {
     { label: "Age-Related Hearing Loss", href: "/hearing-loss/age-related-hearing-loss" },
     { label: "Noise-Induced Hearing Loss", href: "/hearing-loss/noise-induced-hearing-loss" },
     { label: "Sudden Hearing Loss", href: "/hearing-loss/sudden-hearing-loss" },
-    { label: "Hearing Testing", href: "/hearing-testing" }
+    { label: "Hearing Testing", href: "/hearing-testing" },
+    { label: "Latest: Precision Hearing Care Starts With the Audiogram", href: "/precision-hearing-care-audiogram" }
   ],
   blogMeta: {
     frame: "Hearing loss condition hub",
