@@ -149,3 +149,12 @@ homepages and choose which is live.
 Never edit an existing version to try an idea. Copy it. The reason the registry
 exists is that "put the old homepage back" should be one line, not an
 archaeology exercise.
+
+## IndexNow
+
+IndexNow tells Bing and other engines about new or changed pages. Google does not use it.
+
+- The key is the single file `public/<32 hex>.txt`. It must stay deployed at `https://www.audiologyassociates.org/<key>.txt`.
+- Deploy the site first. Then run `npm run indexnow` to send every URL in the live sitemap.
+- Send only some pages: `npm run indexnow -- https://www.audiologyassociates.org/practice-facts`
+- Test without sending: `npm run indexnow -- --dry-run`

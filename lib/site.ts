@@ -18,6 +18,7 @@ import { comparisonPages } from "@/lib/conversion";
 import { productGuides } from "@/lib/productGuides";
 import { hearingLossPages } from "@/lib/hearingLoss";
 import { pressPages } from "@/lib/press";
+import { practiceFactsPages } from "@/lib/practiceFacts";
 import { reviewsPage } from "@/lib/reviews";
 import {
   brandPath,
@@ -1693,7 +1694,7 @@ function withContentDates(page: SitePage): SitePage {
   };
 }
 
-export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...productGuides, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...pressPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((sourcePage) => {
+export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...nextBlogPosts, ...seedBlogPosts, ...comparisonPages, ...productGuides, ...aboutTrustPages, ...howWeCanHelpPages, ...hearingLossPages, reviewsPage, ...pressPages, ...practiceFactsPages, ...productHubPages, ...serviceAreaPages, ...providerPages].map((sourcePage) => {
   const page: SitePage = servicePageOverrides[sourcePage.path]
     ? { ...sourcePage, ...servicePageOverrides[sourcePage.path] }
     : sourcePage;

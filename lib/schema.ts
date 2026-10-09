@@ -54,6 +54,8 @@ function absoluteImageUrl(src: string) {
 const entityCitations = [
   // Social
   "https://www.facebook.com/AAofW",
+  "https://www.instagram.com/westchesteraudiology/",
+  "https://www.threads.com/@westchesteraudiology",
   "https://twitter.com/audiologyassoci",
   "https://foursquare.com/v/audiology-associates-of-westchester/4fdf8720e4b044e8239b27c7",
 
@@ -431,6 +433,7 @@ export function pageSchema(page: SitePage) {
   const reviewer = providerRef(page.blogMeta?.reviewedBySlug);
 
   const type: string[] = [page.type === "blog-post" ? "BlogPosting" : "WebPage"];
+  if (page.path === "/practice-facts") type.push("AboutPage");
   if (clinical) type.push("MedicalWebPage");
 
   const base = {
