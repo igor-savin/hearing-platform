@@ -107,41 +107,48 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Somers, NY audiology office", href: "/Somers-NY" },
       { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
       { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
-      { label: "Questions to ask before buying hearing aids", href: "/questions-before-buying-hearing-aids" }
+      { label: "Questions to ask before buying hearing aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" }
     ]
   },
   {
     path: "/signia-max-what-we-know",
     title: "Signia MaX: What Is Actually Known",
     metaTitle: "Signia MaX: What Is Actually Known | Audiology Associates",
-    metaDescription: "Signia released MaX on 24 August 2026. What is confirmed, which figures come from Signia's own unpublished papers, and what nobody has measured.",
+    metaDescription: "Signia released MaX on 24 August 2026. What is confirmed, what Signia claims, what one lab has now measured, and what is still missing.",
     h1: "Signia MaX: What Is Actually Known So Far",
     heroImage: { src: "/assets/brands/Signia-MaX-device.webp", alt: "Signia Pure Charge and Go MaX rechargeable hearing aid" },
     sections: ["The idea", "Where the numbers come from", "The Auracast caveat", "What is missing", "Who it suits"],
     body: [
       "Signia announced MaX on 24 August 2026 and American dispensers could order it the same day. It now sits above Signia IX at the head of the range, and the pitch behind it is unusual: rather than a single trained system doing everything, four of them, each given a narrower job.",
       "The idea. The industry standard is a lone network trained to pull conversation clear of everything else. Signia's argument is that this asks a single system to settle several unrelated questions simultaneously — is anyone actually talking, is that the wearer's own voice, has the acoustic environment changed underfoot — and that a wrong answer to any of them sends the aid off in the wrong direction. MaX therefore distributes those judgements across four separately trained networks running in concert, badged Acoustic Intelligence. It is a real engineering stance, not a slogan bolted onto last year's silicon.",
-      "Where the numbers come from. Signia reports that 97 per cent of wearers do better in noisy group conversation than with unnamed competitors, and that MaX leads on signal-to-noise performance in the same conditions. Both cite white papers written by Signia in 2026 that we have not been able to find published anywhere, with no stated protocol, sample size or comparator. A third figure — 54 times the processing power — carries a footnote whose entire content is that the yardstick was Signia IX. That is a baseline, not a study. That is not an accusation. Manufacturers validate their own designs because that is how devices get built, and the company has been publishing hearing research for decades. It does mean no outside party has verified any of it, and that the figures doing the heaviest persuasive work describe the chip rather than what a patient experiences across a dinner table.",
+      "Where the numbers come from. Signia reports that 97 per cent of wearers do better in noisy group conversation than with unnamed competitors, and that MaX leads on signal-to-noise performance in the same conditions. Both cite white papers written by Signia in 2026 that we have not been able to find published anywhere, with no stated protocol, sample size or comparator. A third figure — 54 times the processing power — carries a footnote whose entire content is that the yardstick was Signia IX. That is a baseline, not a study. That is not an accusation. Manufacturers validate their own designs because that is how devices get built, and the company has been publishing hearing research for decades. It does mean the white-paper claims stay unverified, and that the figures doing the heaviest persuasive work describe the chip rather than what a patient experiences across a dinner table.",
+      "What a lab has measured since launch. HearAdvisor, the lab HearingTracker works with, has tested the top-level MaX 7 and gave it a SoundScore of 4.3 out of 5, an A grade and its Expert Choice award, against a prescription-category average of 4.19. Speech in noise scored 2.1 untuned and 2.8 after professional tuning, speech in quiet 3.6, own voice 3.7, streamed music 2.9 and feedback handling 4.6, according to HearingTracker. Look at the gap between 2.1 and 2.8: the same aids scored better once they were tuned by a professional, which is the fitting effect in a single number. It is also one lab's standard test of one technology level. MaX 5 and MaX 3 have not been rated separately, and a lab score says nothing about the group conversation in your own restaurant, which is where Signia's 97 per cent claim sits.",
       "The Auracast caveat almost nobody is printing. Every summary of this device lists Auracast, and the hardware genuinely supports it. What the summaries leave out sits in Signia's own small print: the capability is enabled by a software release scheduled before March 2027. Buy today and you own a device built for broadcast audio that cannot yet receive any. With the entire industry marketing this technology at once, the distinction deserves stating plainly. Meanwhile the built-in telecoil is working, and around here that still reaches more venues than Auracast does.",
-      "What is missing. No outside laboratory has measured MaX, and none will for months. There is no published price at any level, no performance-tier breakdown, no fitting range, no receiver strengths and no ingress rating. The platform comes in exactly one form: rechargeable, worn behind the ear with the receiver in the canal, offered in eight colours. Nothing custom, nothing instant-fit, no slim or powerful variant, and no CROS option. And nothing in the launch material refers to tinnitus, although notch therapy and the relief signals have been standard across Signia IX for years. We expect they carry forward and will confirm it in the fitting software before saying so.",
-      "Who it suits. Crowded rooms full of overlapping voices are the situation this design targets most directly — and also the one where the supporting evidence is thinnest, so ask for a demonstration instead of accepting the figure. If your ears need a form MaX is not made in, choosing IX is not settling for less; it is the only Signia that physically fits the brief, and it carries external test results the newer platform lacks. And if your current IX aids have been verified and are doing their job, our advice is to leave them alone. Our Harrison and Somers audiologists will set MaX beside whatever you wear now, in a noisy room rather than a quiet booth, and you can decide with your own ears."
+      "What is missing. A lab has now measured one MaX model, and the other levels are untested. Signia has published no price. One online retailer lists MaX 3 from $2,698, MaX 5 from $2,798 and MaX 7 at $3,298 a pair, according to HearingTracker, but a price at a practice also covers testing, fitting and follow-up, so ask for a written quote. Hearing Review reports an IP68 rating, and HearingTracker lists up to 30 hours of battery per charge. At launch the platform comes in exactly one form: rechargeable, worn behind the ear with the receiver in the canal, offered in eight colours. Nothing custom, nothing instant-fit, no slim or powerful variant, and no CROS option. And nothing in the launch material refers to tinnitus, although notch therapy and the relief signals have been standard across Signia IX for years. We expect they carry forward and will confirm it in the fitting software before saying so.",
+      "Who it suits. Crowded rooms full of overlapping voices are the situation this design targets most directly — and also the one where the supporting evidence is thinnest, so ask for a demonstration instead of accepting the figure. If your ears need a form MaX is not made in, choosing IX is not settling for less; it is the only Signia that physically fits the brief, and it carries external test results the newer platform lacks. And if your current IX aids have been verified and are doing their job, our advice is to leave them alone. Our Harrison and Somers audiologists will set MaX beside whatever you wear now, in a noisy room rather than a quiet booth, and you can decide with your own ears.",
+      "Last updated 8 October 2026. What changed: we added the HearAdvisor lab result for MaX 7, the retailer price listings, the IP68 rating, the battery claim and the United States availability details, and we corrected earlier statements that no outside laboratory had measured MaX. We also added a link to our roundup of the five new AI hearing aids."
     ],
     faqs: [
       { question: "What does MaX stand for?", answer: "Multi-adaptive Xperience. Signia names platforms this way: AX was Augmented Xperience, IX was Integrated Xperience. MaX is the 2026 generation and now sits at the top of the range." },
-      { question: "Has anyone independent tested Signia MaX?", answer: "Not as of late August 2026. Every published figure originates with Signia. Signia IX has been externally measured and performed strongly, which is the relevant comparison if evidence matters more to you than release date." },
+      { question: "Has anyone independent tested Signia MaX?", answer: "One lab has, as of October 2026. HearAdvisor scored the top-level MaX 7 at 4.3 out of 5, an A grade. The other levels are untested, and Signia's group-conversation and processing figures remain company claims. Signia IX has also been externally measured and performed strongly, which is the relevant comparison if evidence matters more to you than release date." },
+      { question: "Is Signia MaX available in the United States?", answer: "Yes. Signia announced MaX on 24 August 2026 with launch in the United States, Germany and the Nordics, according to Hearing Review, and HearUSA reported nationwide availability on 1 September. What any one practice can fit depends on stock and fitting software, so call before you plan around it." },
+      { question: "How does MaX compare with the other new flagship hearing aids?", answer: "Four other makers launched AI flagships within seven weeks of MaX. We set them side by side in one table in our roundup of the five new AI hearing aids of fall 2026, and we name no winner because the right device depends on your hearing and your fitting." },
       { question: "Does MaX support Auracast?", answer: "The chip does. Switching it on waits for a software release Signia has put before March 2027. In the meantime the built-in telecoil is live, and locally that reaches more venues than Auracast currently does anyway." },
-      { question: "Should I wait for it or be fitted now?", answer: "If hearing is a daily struggle, a properly verified fitting today will serve you better than waiting on a platform whose real-world performance nobody has measured. If your present aids work, nothing about this launch obliges you to move." }
+      { question: "Should I wait for it or be fitted now?", answer: "If hearing is a daily struggle, a properly verified fitting today will serve you better than waiting on a platform whose real-world performance has barely been measured. If your present aids work, nothing about this launch obliges you to move." }
     ],
     related: [
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
       { label: "Signia MaX vs Signia IX", href: "/hearing-aids-brands/signia/signia-max-vs-signia-ix" },
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Fortell Hearing Aids: What Is Actually Known", href: "/fortell-hearing-aids-what-we-know" },
       { label: "Harrison, NY audiology office", href: "/harrison-ny" },
       { label: "Somers, NY audiology office", href: "/Somers-NY" },
       { label: "What Signia MaX costs", href: "/hearing-aids-brands/signia/signia-max-cost" },
       { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" },
-      { label: "Signia hearing aids in Westchester", href: "/hearing-aids-brands/signia" }
+      { label: "Signia hearing aids in Westchester", href: "/hearing-aids-brands/signia" },
+      { label: "Phonak EON: what is actually known so far", href: "/phonak-eon-what-we-know" }
     ]
   },
   {
@@ -157,14 +164,15 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       "What changed is the processor. The previous flagship carried two chips, the second doing nothing but running a neural network that separates voices from noise. EON does that on one chip, called HYPERSONIC, and the efficiency saving becomes a shell Phonak puts at 25 per cent smaller and 20 per cent lighter drawing 37 per cent less current. The consequence that matters most is indirect: because the network costs less to run, it now operates at three performance levels rather than being confined to the two most expensive. For a practice that fits plenty of people who cannot justify a top-tier device, that is the most significant thing in the launch.",
       "Following the reference. One sentence is doing most of the work in the coverage: that wearers are twice as likely to catch every word, from any direction. It carries a reference marker, so we followed it. It leads to a Phonak field study from 2024, about the previous platform's version of the same feature, and the comparison described is that feature running against the identical aid with the feature disabled. That is a sound result and we have no argument with it — but it is not a measurement of EON, not a comparison with the platform EON replaces, and not a comparison with whatever you wear now. Anyone already in an Infinio Sphere has had that benefit since 2024. A second claim, that EON Sphere beat four rival devices for clarity in loud noise, comes from a 2026 paper Phonak wrote which never names the four.",
       "What Phonak will not claim. Read the material closely and an absence stands out: nowhere does Phonak argue that EON hears more clearly in a noisy room than the previous flagship did. From a company that has built its reputation on precisely that measure, the restraint is striking, and we read it as honesty rather than evasion. It also reframes the upgrade question entirely. Moving from a working Infinio fitting buys a smaller, lighter aid with broadcast audio that functions — not, on the manufacturer's own account, better hearing in a restaurant.",
-      "What is missing. No independent laboratory has assessed EON; testing is said to be under way and on past form will take months. There is no published price at any level, and no ingress rating in the launch documents. Every EON is receiver-in-canal, so there is no custom shell, no titanium in-the-canal model, no powerful behind-the-ear instrument and nothing for children. And there is no telecoil on any model, which is not new for this line but matters here, because loops remain how most Westchester venues broadcast. Tinnitus goes unmentioned throughout, despite Tinnitus Balance having shipped as standard on these aids for years.",
-      "Who it suits. Anyone for whom Auracast is already real, because a venue they attend has installed it. Anyone with hearing lost on one side, since EON launched with a CROS model and Signia's flagship did not. Anyone who would benefit from a Roger microphone, which carries across and still has no equivalent from another manufacturer. Anyone whose aids sit in a drawer because of their size. And anyone previously priced out of the speech network. If you are wearing verified Infinio aids that work, we would not move you, and we will say so at the appointment rather than afterwards."
+      "What is missing. One lab has now assessed EON, and only at the top level: HearAdvisor gave the EON Sphere 90 a SoundScore of 5.0 out of 5 and an A grade, according to HearingTracker, while the other levels and the EON R are untested. Phonak has published no price. One online retailer lists the Sphere 90 at $4,598, the Advanced 70 at $3,598 and the Standard 50 at $3,198 a pair, and a price at a practice also covers testing, fitting and follow-up. HearingTracker lists an IP68 rating. Every EON is receiver-in-canal, so there is no custom shell, no titanium in-the-canal model, no powerful behind-the-ear instrument and nothing for children. And there is no telecoil on any model, which is not new for this line but matters here, because loops remain how most Westchester venues broadcast. Tinnitus goes unmentioned throughout, despite Tinnitus Balance having shipped as standard on these aids for years.",
+      "Who it suits. Anyone for whom Auracast is already real, because a venue they attend has installed it. Anyone with hearing lost on one side, since EON launched with a CROS model and Signia's flagship did not. Anyone who would benefit from a Roger microphone, which carries across and still has no equivalent from another manufacturer. Anyone whose aids sit in a drawer because of their size. And anyone previously priced out of the speech network. If you are wearing verified Infinio aids that work, we would not move you, and we will say so at the appointment rather than afterwards.",
+      "Last updated 8 October 2026. What changed: we added the HearAdvisor lab result for the EON Sphere 90, retailer price listings and the IP68 rating, and corrected earlier statements that no outside laboratory had assessed EON and that no price had appeared anywhere. We also added a link to our roundup of the five new AI hearing aids."
     ],
     faqs: [
       { question: "When did Phonak EON become available?", answer: "Announced and on sale in the United States on 24 August 2026, with Germany, France, the UK and Australia scheduled for September. What any practice can fit depends on stock and fitting software updates." },
       { question: "Does Phonak EON have a telecoil?", answer: "No, and no model in this line has for several years. EON supports Auracast instead, and unlike some devices launched the same month it works now rather than later. Most looped venues locally are still loops, so name the venue that matters to you and we will check what it uses." },
       { question: "Is EON better than Phonak Infinio in noise?", answer: "Phonak does not claim that it is. The gains claimed are size, weight, efficiency, working Auracast, and the speech network reaching a third performance level." },
-      { question: "Has anyone independent measured it?", answer: "Not yet. Every figure in circulation comes from Phonak's own field studies and insight papers. The platform EON replaces has been externally assessed and scored near the top of its category." }
+      { question: "Has anyone independent measured it?", answer: "One lab has, for the top level. HearAdvisor gave the EON Sphere 90 a SoundScore of 5.0 out of 5, according to HearingTracker. The other levels are untested, and Phonak's own field-study figures remain company claims. The platform EON replaces has also been externally assessed and scored near the top of its category." }
     ],
     related: [
       { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
@@ -175,7 +183,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Somers, NY audiology office", href: "/Somers-NY" },
       { label: "What Phonak EON costs", href: "/hearing-aids-brands/phonak/phonak-eon-cost" },
       { label: "Phonak EON vs Signia MaX", href: "/hearing-aids-brands/phonak/phonak-eon-vs-signia-max" },
-      { label: "Phonak hearing aids in Westchester", href: "/hearing-aids-brands/phonak" }
+      { label: "Phonak hearing aids in Westchester", href: "/hearing-aids-brands/phonak" },
+      { label: "Signia MaX: what is actually known so far", href: "/signia-max-what-we-know" },
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" }
     ]
   },
   {
@@ -278,7 +288,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
       { label: "Hearing aid tune-up or repair?", href: "/hearing-aid-tune-up-vs-repair" },
       { label: "Harrison, NY office", href: "/harrison-ny" },
-      { label: "Somers, NY office", href: "/Somers-NY" }
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" }
     ],
     blogMeta: {
       frame: "Buyer decision guide",
@@ -441,7 +452,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Cognivue Cognitive Screening", href: "/how-we-can-help/cognivue-cognitive-screening" },
       { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
       { label: "Hearing Loss and Listening Fatigue", href: "/hearing-loss-cognitive-effort-listening-fatigue" },
-      { label: "Is Hearing Loss Normal With Age?", href: "/is-hearing-loss-normal-with-age" }
+      { label: "Is Hearing Loss Normal With Age?", href: "/is-hearing-loss-normal-with-age" },
+      { label: "Precision hearing care: why your audiogram matters more than ever in 2026", href: "/precision-hearing-care-audiogram" }
     ],
     blogMeta: {
       frame: "Myth and evidence guide",
@@ -560,7 +572,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Nuance Audio Plus vs. Meta Glasses", href: "/nuance-audio-plus-vs-meta-glasses" },
       { label: "Hearing Glasses Compared: Legato vs Nuance vs Hearing Aids", href: "/hearing-glasses-comparison" },
       { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
-      { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" }
+      { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
+      { label: "Meta glasses hearing aid feature: should you try it?", href: "/meta-glasses-hearing-aid-feature" }
     ],
     blogMeta: {
       frame: "Myth and evidence guide",
@@ -615,7 +628,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Advanced Hearing Aid Technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing Care for Professionals", href: "/hearing-care-professionals-meetings-calls" },
-      { label: "Hearing Aid Brands", href: "/hearing-aids-brands" }
+      { label: "Hearing Aid Brands", href: "/hearing-aids-brands" },
+      { label: "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" },
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" }
     ],
     blogMeta: {
       frame: "Buyer decision guide",
@@ -988,7 +1003,9 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Auracast goes live in a US theater", href: "/auracast-goes-live-in-a-us-theater" },
       { label: "AirPods as hearing aids", href: "/airpods-as-hearing-aids" },
       { label: "Bluetooth hearing aids: what to know before buying", href: "/bluetooth-hearing-aids-before-buying" },
-      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" }
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Meta glasses hearing aid feature: should you try it?", href: "/meta-glasses-hearing-aid-feature" },
+      { label: "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" }
     ],
     blogMeta: {
       frame: "Industry news explained",
@@ -1087,7 +1104,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Cochlear Implant Support", href: "/how-we-can-help/cochlear-implants" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Harrison, NY office", href: "/harrison-ny" },
-      { label: "Somers, NY office", href: "/Somers-NY" }
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Employer and union hearing aid benefits in Westchester", href: "/employer-union-hearing-aid-benefits-westchester" }
     ],
     blogMeta: {
       frame: "Plan guide",
@@ -1174,7 +1192,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Harrison, NY office", href: "/harrison-ny" },
-      { label: "Somers, NY office", href: "/Somers-NY" }
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" }
     ],
     blogMeta: {
       frame: "Buyer decision guide",
@@ -1275,7 +1294,11 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
       { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
       { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
-      { label: "Hearing aids 101", href: "/hearing-aids-101" }
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Fortell hearing aids: what is actually known so far", href: "/fortell-hearing-aids-what-we-know" },
+      { label: "Employer and union hearing aid benefits in Westchester", href: "/employer-union-hearing-aid-benefits-westchester" },
+      { label: "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" },
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" }
     ],
     blogMeta: {
       frame: "Cost guide",
@@ -1364,7 +1387,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Contact Us", href: "/contact-us" },
       { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
-      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" }
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Employer and union hearing aid benefits in Westchester", href: "/employer-union-hearing-aid-benefits-westchester" }
     ],
     blogMeta: {
       frame: "Coverage guide",
@@ -1451,7 +1475,11 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Cochlear implant support", href: "/how-we-can-help/cochlear-implants" },
-      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" }
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Signia MaX: what is actually known so far", href: "/signia-max-what-we-know" },
+      { label: "Phonak EON: what is actually known so far", href: "/phonak-eon-what-we-know" },
+      { label: "When hearing aids are no longer enough: cochlear implant evaluation", href: "/when-hearing-aids-no-longer-enough-cochlear-implant" },
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1531,7 +1559,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Aid Cost in Westchester County", href: "/hearing-aid-cost-westchester-county" },
       { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
       { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
-      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" }
+      { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Precision hearing care: why your audiogram matters more than ever in 2026", href: "/precision-hearing-care-audiogram" }
     ],
     blogMeta: {
       frame: "Cost guide",
@@ -1700,7 +1729,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Aid Tune-Up vs Repair", href: "/hearing-aid-tune-up-vs-repair" },
       { label: "Why Hearing Aids Whistle", href: "/why-hearing-aids-whistle" },
       { label: "Programming Hearing Aids Bought Somewhere Else", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
-      { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" }
+      { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" },
+      { label: "Hearing aids for musicians in Westchester", href: "/musician-hearing-aids-westchester" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1945,6 +1975,342 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       ]
     }
   },
+  {
+    // reviewedBySlug intentionally unset until a clinician reviews this page
+    path: "/precision-hearing-care-audiogram",
+    title: "Precision Hearing Care: Why Your Audiogram Matters More Than Ever",
+    metaTitle: "Precision Hearing Care: Why Your Audiogram Matters (2026)",
+    metaDescription: "A 2026 study found audiograms capture hearing loss risk better than diagnosis codes. See what that means and when to book a baseline test.",
+    h1: "Precision Hearing Care Is Coming: Why Your Audiogram Matters More Than Ever in 2026",
+    heroImage: { src: "/assets/news/precision-hearing-care-audiogram-westchester.png", alt: "Audiogram chart of hearing thresholds beside a DNA helix, illustrating precision hearing care in Westchester" },
+    ogImage: { src: "/assets/og/precision-hearing-care-audiogram.png", alt: "Your audiogram matters more than ever: what a 2026 hearing genetics study means for you. Audiology Associates of Westchester." },
+    ogTitle: "Why Your Audiogram Matters More Than Ever",
+    ogDescription: "A new hearing genetics study found the audiogram carries more signal than diagnosis codes. What it shows, what it does not, and why a baseline test helps.",
+    sections: ["Research explained", "Hearing test", "Brain health", "Frequently asked questions"],
+    body: [
+      "Neuroscience News reported on October 8, 2026 on a new hearing genetics study from Vanderbilt University Medical Center, published in JAMA Otolaryngology–Head & Neck Surgery. The team ran two genetic searches on the same biobank. The search built on diagnosis codes found nothing. The search built on audiogram measurements found three regions of the genome that map to four genes: EML6, SPTBN1, ARHGEF28 and EYA4.",
+      "It is a quiet result, and it is about something our audiologists do every day. A hearing test is not only a way to decide whether you need hearing aids. It is measured data about how your auditory system works, and this study suggests that kind of data is what precision medicine will lean on. We think about hearing the same way at Audiology Associates of Westchester: as part of how your brain gets information from the world, not a box to tick. This page explains what the study found, what it does not show, and why a baseline audiogram is worth having on file. Our sister practice in California covers the same paper from the genetics side in [its own explainer](https://www.calhearing.com/hearing-test-genetic-risk-hearing-loss/).",
+      "What the Vanderbilt team did",
+      "The researchers used whole-genome sequencing data from a Vanderbilt biobank of people of European ancestry. They ran two genome-wide association studies, which scan the genome for small DNA differences that travel with a trait. The first defined hearing loss mainly by diagnosis codes in medical records, with 10,164 cases and 51,305 controls. The second used a number from the audiogram instead: the pure-tone average, which is the average of the quietest tones a person hears at three test pitches, taken from the better ear. That analysis included 16,057 people with audiogram data.",
+      "Why a number beat a label",
+      "Only the audiogram search found anything: three genome-wide significant regions, mapped to four genes. The diagnosis-code search found none. The team also estimated how much of the variation in hearing could be tied to common DNA differences. Audiogram data put that share at 11.78 percent. Diagnosis codes put it at 2.90 percent. Lead author Andrea DeFreese, AuD, described the trouble with codes this way: they leave 'a kind of gray area in which we're not able to accurately define who has hearing loss and who doesn't.' A code says someone has hearing loss. An audiogram shows how much, and at which pitches. The precision lives in that detail.",
+      "What the study does not show",
+      "In a separate check against the NIH All of Us cohort, people with a higher audiogram-based risk score were somewhat more likely to report deafness (odds ratio 1.09, 95 percent confidence interval 1.07 to 1.12). The same check using diagnosis codes showed no link (odds ratio 1.00). A 1.09 is a small nudge, not a forecast. The study has other limits: one medical center, people of European ancestry, and a check against self-reported deafness rather than a hearing test. The four genes are associated regions, not 'the hearing loss genes.' This is research. We do not offer genetic testing for these genes, and nothing in the study says a score can forecast your own hearing.",
+      "The mammogram of hearing, and where the idea breaks",
+      "We like to call a baseline audiogram the mammogram of hearing. That is our analogy, not a medical guideline, and it breaks in places. A mammogram screens for a disease. A baseline audiogram does something quieter: it records where your hearing sits today, so later changes show up against your own history instead of a population average. Hearing often shifts slowly enough that people adapt without noticing. A result on file from your 50s, or earlier if noise or family history worry you, turns 'I think it is worse' into a comparison you can measure. If you have never had a full test, read [what happens during a comprehensive hearing evaluation](/what-happens-during-comprehensive-hearing-evaluation) and [how often adults should get their hearing checked](/how-often-should-adults-get-hearing-checked).",
+      "Where the brain comes in",
+      "Our approach starts from a simple idea: hearing is something the brain does with help from the ears. When sound arrives incomplete, the brain spends effort filling the gaps, which is one reason a restaurant can feel exhausting. An audiogram cannot measure that effort, and a hearing test is not a cognitive test, so we keep the two apart. Cognitive screening is its own service, and our guide to [hearing tests and cognitive screening](/hearing-test-and-cognitive-screening) explains how they fit together. The evidence is modest and specific. In the ACHIEVE randomized trial, hearing treatment did not change three-year cognitive decline across the whole study group, but it did slow decline in a higher-risk subgroup. Read more about [listening effort and fatigue](/hearing-loss-cognitive-effort-listening-fatigue). A carefully measured audiogram is where that kind of care begins.",
+      "Precision care you can use today",
+      "The measurements that power this research also guide a good fitting right now. Your audiologist programs hearing aids to the shape of your audiogram instead of an average, then uses real-ear measurement to check what the devices deliver at your eardrum, and live speech mapping to show the benefit as it happens. That is why we treat [hearing aid fitting](/hearing-aid-fitting) as a precision service, and why we explain [why real-ear verification matters](/why-real-ear-verification-matters). If you are weighing this fall's new devices, our [roundup of the five new AI hearing aids](/best-ai-hearing-aids-fall-2026) shows why the fitting matters as much as the chip. Precision hearing care is not waiting for genetics. It starts with a careful test and a result you understand.",
+      "Planning a baseline test in Westchester",
+      "If you live or work around Harrison, Rye, Scarsdale, White Plains or Greenwich, our [Harrison office](/harrison-ny) is the closest. For northern Westchester and Putnam County, look at our [Somers office](/Somers-NY). Bring any old audiograms, a list of medications, and a short note about where listening feels hard. To learn the price first, see [what a hearing test costs in Westchester](/how-much-does-a-hearing-test-cost-westchester). Sudden hearing loss, hearing that is clearly worse in one ear, ringing in one ear, dizziness or ear pain should not wait for a routine baseline. See a clinician promptly.",
+      "Status and last update",
+      "Last updated October 8, 2026. Change note: this is the first version, written the day the study was reported. We will update this page if the full paper, replication studies or clinical guidance change the picture. We could not open the full JAMA article, which sits behind a verification page, so the study figures here come from the Neuroscience News summary of it. Sources are listed at the end of this page.",
+      "Medical information notice",
+      "This page is for information only and is not medical advice. A hearing test shows how well you hear. It does not diagnose the cause of a hearing loss or predict your future hearing. Talk to your physician about whether genetic testing is right for you."
+    ],
+    faqs: [
+      { question: "What is an audiogram, in plain words?", answer: "An audiogram is a chart of the quietest sounds you can hear at different pitches, usually for each ear. It shows how much hearing you have at low, middle and high pitches. Your audiologist uses it to explain your loss and to program hearing aids if you need them." },
+      { question: "Is a baseline hearing test worth it if I hear fine?", answer: "It can be. A baseline records your hearing while it is still good, so later changes show up against your own history. It also catches slow changes that people often adapt to without noticing." },
+      { question: "At what age should I get a baseline hearing test?", answer: "We know of no single rule that fits everyone. We suggest considering one in your 50s, or sooner if you have noise exposure, a family history of hearing loss or ringing in the ears. Our guide on [how often adults should get their hearing checked](/how-often-should-adults-get-hearing-checked) goes through the factors." },
+      { question: "Does this study mean hearing loss is inherited?", answer: "It shows that common DNA differences account for some of the variation in hearing, about 11.78 percent in this analysis, and that four genes sit near the signals it found. Age, noise exposure and health conditions also matter. The study does not say any one person will or will not lose hearing." },
+      { question: "Can I get a genetic hearing test at Audiology Associates of Westchester?", answer: "No. We do not offer genetic testing for these genes, and the study is research, not a clinical test. If hearing loss runs in your family or began in childhood, talk to your physician about whether genetic counseling makes sense." },
+      { question: "Does a normal audiogram mean I am in the clear?", answer: "Not always. A normal test shows your hearing at the time of the test. Trouble understanding speech in noise, ringing or sudden change still deserve a conversation with an audiologist, and a repeat test over time is how slow change shows up." }
+    ],
+    related: [
+      { label: "Hearing Tests and Cognitive Screening", href: "/hearing-test-and-cognitive-screening" },
+      { label: "What Happens During a Comprehensive Hearing Evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
+      { label: "How Often Should Adults Get Their Hearing Checked?", href: "/how-often-should-adults-get-hearing-checked" },
+      { label: "Hearing Loss and Listening Fatigue", href: "/hearing-loss-cognitive-effort-listening-fatigue" },
+      { label: "Is Hearing Loss Normal With Age?", href: "/is-hearing-loss-normal-with-age" },
+      { label: "Sensorineural hearing loss", href: "/hearing-loss/sensorineural-hearing-loss" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+      { label: "Cognivue Cognitive Screening", href: "/how-we-can-help/cognivue-cognitive-screening" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" },
+      { label: "The 6 hearing aid platforms of fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" }
+    ],
+    blogMeta: {
+      frame: "Research explained",
+      byline: "An explainer on the new hearing genetics research",
+      reviewedBy,
+      readTime: "6 min read",
+      articleType: "Research explained",
+      pullQuote: "A diagnosis code says someone has hearing loss. An audiogram shows how much, and at which pitches. In this study, only the second one found genes.",
+      keyTakeaways: [
+        "A Vanderbilt study in JAMA Otolaryngology–Head & Neck Surgery found three regions mapped to four genes (EML6, SPTBN1, ARHGEF28, EYA4) using audiogram data. A search built on diagnosis codes found none.",
+        "Audiogram data carried more genetic signal: 11.78 percent of variation tied to common DNA differences, against 2.90 percent for diagnosis codes.",
+        "These are research findings. No score in the study predicts your own hearing, and we do not offer genetic testing for these genes.",
+        "A baseline audiogram gives you a personal record to compare against later, and the same data guides a precise hearing aid fitting today."
+      ],
+      patientQuestion: "Why does my audiogram matter if I hear fine?",
+      storyLead: "A new hearing genetics study suggests the audiogram carries more information than we assumed. Here is what it found, what it does not show, and why a baseline test is worth having on file.",
+      comparisonTable: {
+        afterHeading: "Why a number beat a label",
+        caption: "Diagnosis codes versus audiogram data in the Vanderbilt hearing genetics study",
+        headers: ["", "Diagnosis codes", "Audiogram (pure-tone average)"],
+        rows: [
+          ["How hearing loss was defined", "Mainly diagnosis codes in medical records", "Pure-tone average from the better ear, treated as a number"],
+          ["People analyzed", "10,164 cases and 51,305 controls", "16,057 people with audiogram data"],
+          ["Genome-wide significant regions", "None", "Three, mapped to four genes"],
+          ["Genes named", "None", "EML6, SPTBN1, ARHGEF28, EYA4"],
+          ["Variation tied to common DNA differences", "2.90 percent", "11.78 percent"],
+          ["Risk score checked against self-reported deafness in All of Us", "No significant association (odds ratio 1.00)", "Significant association (odds ratio 1.09)"]
+        ]
+      },
+      notify: {
+        context: "Notify: Precision hearing care and audiogram research updates",
+        heading: "Get one email if the research moves.",
+        body: "We will send one email if the full paper, a replication study or new guidance changes what this page says.",
+        button: "Notify me"
+      },
+      sources: [
+        { label: "Neuroscience News: Can we predict hearing loss long before symptoms ever start?", href: "https://neurosciencenews.com/can-we-predict-hearing-loss-long-before-symptoms-ever-start/" },
+        { label: "JAMA Otolaryngology–Head & Neck Surgery: Precision Phenotyping With Audiometric Data and Gene Discovery for Sensorineural Hearing Loss (DOI)", href: "https://doi.org/10.1001/jamaoto.2026.3089" },
+        { label: "JAMA Network: Audiology and hearing collection", href: "https://jamanetwork.com/collections/42098/audiology-and-hearing" },
+        { label: "National Institute on Aging: Hearing aids and cognitive decline (ACHIEVE)", href: "https://www.nia.nih.gov/news/hearing-aids-slow-cognitive-decline-people-high-risk" },
+        { label: "California Hearing Center: Your hearing test may reveal genetic risk for hearing loss", href: "https://www.calhearing.com/hearing-test-genetic-risk-hearing-loss/" }
+      ]
+    }
+  },
+  {
+    // reviewedBySlug intentionally unset until a clinician reviews this page
+    path: "/elehear-beyond-2-pro-vs-prescription-hearing-aids",
+    title: "Elehear Beyond 2 Pro vs. Prescription Hearing Aids",
+    metaTitle: "Elehear Beyond 2 Pro vs Prescription Hearing Aids (2026)",
+    metaDescription: "Elehear's $799 Beyond 2 Pro adds Auracast and translation. See what OTC can and cannot do next to fitted hearing aids, and who should test first.",
+    h1: "Elehear Beyond 2 Pro vs. Prescription Hearing Aids: Who Should Choose Which in 2026",
+    heroImage: { src: "/assets/news/elehear-vs-prescription-hearing-aids-westchester.png", alt: "A phone with tone sliders beside an ear and hearing test card, comparing app-set and clinic-fitted hearing aids in Westchester" },
+    ogImage: { src: "/assets/og/elehear-beyond-2-pro-vs-prescription-hearing-aids.png", alt: "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester guide to the $799 OTC question. Audiology Associates of Westchester." },
+    ogTitle: "Elehear Beyond 2 Pro vs. Prescription Hearing Aids",
+    ogDescription: "The $799 OTC hearing aid with Auracast, set beside fitted hearing aids, with three questions that decide which one suits you.",
+    sections: ["Buyer decision guide", "Hearing aid buying", "Frequently asked questions"],
+    body: [
+      "Elehear launched the Beyond 2 Pro on September 22, 2026. It is a rechargeable receiver-in-canal hearing aid sold directly by the company for $799 a pair, aimed at adults with perceived mild to moderate hearing loss and sold without a prescription. It adds Auracast support, a new generation of speech processing and face-to-face translation in the app. For many of our Westchester and Greenwich patients, the question is not whether it is clever. It is whether $799 and an app can do the work of a fitted hearing aid.",
+      "Our short answer is that it can be a sensible first step for some people and the wrong one for many others. This guide gives you a way to decide. We start with what Elehear says the device does, label every performance number as a company claim, and then walk through the three questions that matter more than any spec. We do not sell Elehear devices, and no independent lab has published results for this model yet, so we rank nothing.",
+      "What the Beyond 2 Pro offers on paper",
+      "Everything here comes from Elehear or from trade press covering the launch. The processing is called VOCCLEAR 3.0. It builds on Elehear's deep neural network noise reduction and adds a feature aimed at competing voices. Auracast support lets the aids receive compatible public Bluetooth broadcasts, though public coverage is still limited. The app offers bass, midrange and treble sliders in 1 dB steps across plus or minus 8 dB, plus real-time AI translation for face-to-face conversation, in 20 languages according to HearingTracker. Each aid weighs about 4.3 grams, has an IP67 rating, and uses user-replaceable receivers in several lengths. Optional ElePro Plus remote audiology costs $99 a session. Elehear also reports a 39 percent improvement in speech understanding in very noisy conditions and feedback suppression that responds 32 percent faster, both against its previous generation and both from internal testing. Treat those as company claims until a lab repeats them.",
+      "What is independent and what is not",
+      "HearingTracker and its lab partner HearAdvisor have said they have not yet published test results for the Beyond 2 Pro. Elehear's earlier Beyond Pro did score well in HearAdvisor's lab, with a SoundScore of 4.8 out of 5, according to HearingTracker. That is useful background on the company's engineering. It is also a different device, and a lab score describes performance in a standard test, not what you will hear in your own kitchen. We will update this page when Beyond 2 Pro results appear.",
+      "The Beyond 2 Pro and prescription hearing aids side by side",
+      "The table sets the Beyond 2 Pro next to a prescription hearing aid fitted in a clinic. The middle column comes from Elehear and press coverage. The last column describes how a fitted device is handled, and we show no price for it because prices vary by device and clinic.",
+      "Three questions that decide it",
+      "First, what does your hearing test show? Over-the-counter hearing aids are built for perceived mild to moderate loss in adults, and the word perceived matters, because nobody confirms the degree of your loss before you buy. A hearing test does. It also shows whether your ears differ and whether you understand speech clearly or only hear it louder. Second, what is your hardest listening moment? If it is a quiet dinner for two, a self-fit device may be enough to try. If it is a loud restaurant, a family table or a work meeting, ask how the device is tuned and checked for that moment, because noise is where precision matters most and where listening effort builds. Third, who adjusts it when it is wrong? Every hearing aid needs fine-tuning in the first weeks. With an over-the-counter device the answer is you, the app and remote support where it exists. With a fitted device it is a person who has measured your ear.",
+      "When an over-the-counter first try is reasonable",
+      "A first try can make sense if your loss feels mild to moderate and about equal in both ears, you are comfortable with phone apps, budget is the main barrier, and nothing on the red-flag list below applies. Do three things first. Get a baseline hearing test, so you know what you are working with. Ask about the return window and warranty before you pay, because we did not find either in the launch coverage we reviewed. Keep your receipt and your test results in case you move to a fitted device later. Hearing help that you actually wear beats hearing help you keep postponing.",
+      "When prescription care tends to win",
+      "Start with a professional evaluation if one ear is worse than the other, if tinnitus bothers you, if you hear people but cannot make out the words, if you have tried over-the-counter devices and still struggle, or if your loss is more than mild to moderate. The same goes for ear pain, drainage, dizziness or a sudden change, which are medical questions before they are hearing aid questions. The FDA also says over-the-counter hearing aids are for adults 18 and older, so children and teens need a professional evaluation. Prescription fitting adds a measured result: your audiologist programs from your audiogram, checks the output in your ear, and adjusts over follow-up visits. Our guides to [why real-ear verification matters](/why-real-ear-verification-matters) and [what to expect at a hearing aid fitting](/what-to-expect-hearing-aid-fitting) explain that process.",
+      "Auracast at $799: a sober note",
+      "Auracast lets hearing devices receive public broadcast audio in venues that install it, and that list is still short. Before you pay for the feature, ask where you would use it. Our guides explain [what Auracast is and how it works](/auracast-hearing-aids-explained) and [what the first US theater going live means](/auracast-goes-live-in-a-us-theater). We also compare this fall's new flagship hearing aids, which all list Auracast, in our [roundup of five new AI hearing aids](/best-ai-hearing-aids-fall-2026).",
+      "The Westchester angle: remote care and local follow-up",
+      "Elehear launched ElePro Plus on August 17, 2026 in nine states, and Hearing Review's list did not include New York or Connecticut. Hearing Health Matters later reported 24 states as of September 9, but we could not find that list, so confirm with Elehear before you count on remote sessions from Westchester or Greenwich. Local follow-up is a separate question. If you already own an over-the-counter device, call us with the make and model. Whether we can adjust it depends on the model, and our guide to [programming hearing aids bought somewhere else](/can-audiologist-program-hearing-aids-bought-elsewhere) explains what to expect. If you are weighing a quote or a device you own, a [hearing aid second opinion](/hearing-aid-second-opinion) at our Harrison or Somers office is built for that.",
+      "Status and last update",
+      "Last updated October 8, 2026. Change note: this is the first version. We will update this page when independent lab results, return terms, FDA listing details or New York and Connecticut remote-care coverage become available. Prices and specifications come from Elehear and trade press as of October 8, 2026 and may change. Sources are listed at the end of this page.",
+      "Medical information notice",
+      "This page is for information only and is not medical advice. Over-the-counter hearing aids do not suit everyone, and a hearing evaluation is the way to find out what suits you. Audiology Associates of Westchester does not sell Elehear devices."
+    ],
+    faqs: [
+      { question: "Is the Elehear Beyond 2 Pro as good as a prescription hearing aid?", answer: "Nobody can say yet, because no independent lab has published results for it. It can be a reasonable first step for mild to moderate loss, but it is self-fit, and the launch coverage we reviewed describes no real-ear verification. A prescription fitting adds a measured result that an app cannot replace." },
+      { question: "Can I bring an Elehear to an audiologist for adjustments?", answer: "Call us with the make and model before you book. Whether we can adjust an over-the-counter device depends on the model and its software. We can always test your hearing and tell you whether the device matches your results." },
+      { question: "Is the Beyond 2 Pro FDA approved?", answer: "It is sold as an over-the-counter hearing aid, a category the FDA created in 2022 for adults with perceived mild to moderate loss. The launch coverage we reviewed does not describe the product's FDA filing, so check Elehear's materials and the FDA's device databases before you buy." },
+      { question: "Will Auracast work where I live?", answer: "Only in venues that have installed it, and public coverage is still limited. Ask yourself where you would use it before you pay for it. Our Auracast guides list what has gone live so far." },
+      { question: "Is $799 a good price for hearing aids?", answer: "It is a price per pair for a self-fit device, and it does not include a hearing test, in-person fitting or follow-up visits. Prescription prices vary widely by device and clinic. Our [hearing aid cost guide for Westchester County](/hearing-aid-cost-westchester-county) explains what a fitted price covers." },
+      { question: "Who should not start with an over-the-counter hearing aid?", answer: "Anyone under 18, and anyone with sudden hearing loss, hearing clearly worse in one ear, ear pain or drainage, dizziness, or ringing in one ear, should get an evaluation first. The same goes if you cannot follow speech in a quiet room." }
+    ],
+    related: [
+      { label: "OTC vs Prescription Hearing Aids: Real-World Differences", href: "/otc-vs-prescription-hearing-aids-real-world" },
+      { label: "Are OTC Hearing Aids Right for Me?", href: "/are-otc-hearing-aids-right-for-me" },
+      { label: "Prescription vs OTC hearing aids", href: "/prescription-vs-otc-hearing-aids" },
+      { label: "Hearing Glasses Compared: Legato vs Nuance vs Hearing Aids", href: "/hearing-glasses-comparison" },
+      { label: "Auracast hearing aids explained", href: "/auracast-hearing-aids-explained" },
+      { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" },
+      { label: "Programming Hearing Aids Bought Somewhere Else", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" },
+      { label: "The 6 hearing aid platforms of fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Buyer decision guide",
+      byline: "A buyer's guide to the $799 over-the-counter question",
+      reviewedBy,
+      readTime: "7 min read",
+      articleType: "Buyer decision guide",
+      pullQuote: "The spec sheet tells you what the device can do. A hearing test tells you what your ears need. You want both before you spend $799.",
+      keyTakeaways: [
+        "Elehear launched the Beyond 2 Pro on September 22, 2026: a $799 per pair over-the-counter receiver-in-canal hearing aid with Auracast support, for adults with perceived mild to moderate loss.",
+        "The 39 percent and 32 percent improvements are Elehear's internal figures. No independent lab has published results for this model yet.",
+        "It can be a reasonable first try for mild, even hearing loss if you test first and check the return terms. One-sided loss, tinnitus, dizziness or a history of struggling with OTC aids points to a professional evaluation.",
+        "Elehear's remote audiology listed no New York or Connecticut coverage in launch reporting. Confirm before you rely on it."
+      ],
+      patientQuestion: "Should I buy the $799 Elehear Beyond 2 Pro or see an audiologist?",
+      storyLead: "Elehear's new over-the-counter hearing aid adds Auracast and AI translation at $799. Here is what it can and cannot do next to a fitted hearing aid, and who should get a hearing test first.",
+      comparisonTable: {
+        afterHeading: "The Beyond 2 Pro and prescription hearing aids side by side",
+        caption: "Elehear Beyond 2 Pro and prescription hearing aids fitted in a clinic compared",
+        headers: ["", "Elehear Beyond 2 Pro", "Prescription hearing aids fitted in a clinic"],
+        rows: [
+          ["Price", "$799 per pair, sold direct by Elehear", "Varies by device and clinic. Ask what testing, fitting and follow-up the price includes"],
+          ["Who it is for", "Adults 18 and older with perceived mild to moderate hearing loss", "Mild to profound loss, including one-sided loss"],
+          ["How it is set", "Self-fit through the Elehear app", "Programmed to your audiogram by an audiologist"],
+          ["Checked in your ear", "No real-ear verification described in the launch coverage", "Real-ear measurement checks the output at your eardrum"],
+          ["Support", "Optional ElePro Plus remote audiology at $99 a session, in a limited list of states", "In-person adjustments, cleaning and repairs at the clinic"],
+          ["Auracast", "Supported, per Elehear. Public venue coverage is still limited", "Varies by model. Ask whether it is active now"],
+          ["Noise performance", "39 percent speech-in-noise improvement over the last generation is Elehear's internal figure. No independent test yet", "Varies by device. Ask for a demonstration in noise"],
+          ["Trial period and warranty", "Not stated in the launch coverage we reviewed. Ask Elehear", "Set by each provider. Ask for it in writing"]
+        ]
+      },
+      notify: {
+        context: "Notify: Elehear Beyond 2 Pro lab results",
+        heading: "Get one email when lab results appear.",
+        body: "We will send one email when independent lab results for the Beyond 2 Pro are published or when Elehear clarifies its return terms and remote-care states.",
+        button: "Notify me"
+      },
+      sources: [
+        { label: "HearingTracker: ELEHEAR Beyond 2 Pro OTC Hearing Aids Debut at $799", href: "https://www.hearingtracker.com/news/elehear-launches-799-beyond-2-pro-otc-hearing-aids" },
+        { label: "Hearing Health Matters: ELEHEAR Introduces Beyond 2 Pro", href: "https://hearinghealthmatters.org/hearing-technologies/2026/beyond-pro-2-launch/" },
+        { label: "audioXpress: Elehear introduces Beyond Pro OTC hearing aids with Auracast", href: "https://audioxpress.com/news/elehear-introduced-beyond-pro-otc-hearing-aids-with-auracast" },
+        { label: "Hearing Review: ELEHEAR launches ElePro Plus live tele-audiology service", href: "https://hearingreview.com/hearing-products/hearing-aids/otc/elehear-launches-elepro-plus-live-tele-audiology-service-for-otc-hearing-aid-users" },
+        { label: "HearingTracker: Elehear Beyond Pro review and lab results", href: "https://legacy.hearingtracker.com/hearing-aids/elehear-beyond-pro" },
+        { label: "FDA: OTC Hearing Aids, What You Should Know", href: "https://www.fda.gov/medical-devices/hearing-aids/otc-hearing-aids-what-you-should-know" },
+        { label: "California Hearing Center: Elehear Beyond 2 Pro explained", href: "https://www.calhearing.com/elehear-beyond-2-pro/" }
+      ]
+    }
+  },
+  {
+    // reviewedBySlug intentionally unset until a clinician reviews this page
+    path: "/best-ai-hearing-aids-fall-2026",
+    title: "The 6 Hearing Aid Platforms to Know in Fall 2026",
+    metaTitle: "Best AI Hearing Aids Fall 2026: 6 Platforms Compared",
+    metaDescription: "Six hearing aid platforms for fall 2026: Sensia, Reveal, EON, MaX, Omega AI+ and Allure AI. Compare them in one table, then see which fits you.",
+    h1: "The 6 Hearing Aid Platforms to Know in Fall 2026: Which One Is Right for You?",
+    heroImage: { src: "/assets/news/best-ai-hearing-aids-fall-2026-westchester.png", alt: "Timeline of six hearing aid announcements from May 20 to October 1, 2026, above a network diagram, for the fall 2026 comparison in Westchester" },
+    ogImage: { src: "/assets/og/best-ai-hearing-aids-fall-2026.png", alt: "6 hearing aid platforms to know in fall 2026: ReSound, Oticon, Phonak, Signia, Starkey and Widex compared. Audiology Associates of Westchester." },
+    ogTitle: "The 6 Hearing Aid Platforms to Know in Fall 2026",
+    ogDescription: "ReSound Sensia, Oticon Reveal, Phonak EON, Signia MaX, Starkey Omega AI+ and Widex Allure AI in one honest table, and how we choose among them.",
+    sections: ["Hearing technology", "Roundup", "Frequently asked questions"],
+    body: [
+      "Between August 10 and October 1, 2026, five of the big hearing aid makers each introduced a new AI flagship: ReSound Sensia, Oticon Reveal, Phonak EON, Signia MaX and Starkey Omega AI+. Widex, the sixth, announced its Allure AI RIC earlier, on May 20, but does not reach the US until November 1, so it belongs on any fall shopping list. That is a lot of acronyms and a lot of marketing, and patients have started asking us by name which one to buy.",
+      "Here is our honest answer. As of October 8, 2026, no independent lab has published results for all six, so we crown no winner. We also do not recommend one brand over another before we know you. This page lays the platforms side by side using what the companies and trade press have published, marks performance figures as company claims, and writes 'not stated' wherever a source is silent. Then it explains why, in our experience, the fitting matters more than the chip.",
+      "The six platforms at a glance",
+      "Dates are announcement dates, and availability is what the sources state. Widex announced in May, earlier than the other five. 'Not stated' means we found no figure in the sources we checked. Battery figures are company claims for the rechargeable models and vary with use. The table is current as of October 8, 2026, and none of these companies has published a price in the launch material we reviewed.",
+      "What the platforms have in common",
+      "Three things stand out. Every one now uses AI to separate speech from noise, through deep neural networks or a dual-AI design, although Widex's Clarity Boost runs only when the wearer switches it on. Five of the six list Auracast, although the public venues that broadcast it are still few, and Signia's waits on a firmware update. For Widex, one trade report calls the device Auracast-ready and the company's own release does not mention it. And none of the launch announcements we reviewed states a price. That last point matters: you cannot budget from a launch article, and anyone quoting a number is quoting a retailer or a practice. HearingTracker lists retail prices per pair for the top level of some of these, from $3,298 for Signia MaX 7 to $4,598 for Oticon Reveal 1 and Phonak EON Sphere 90. Those are retail listings, not manufacturer prices, and a clinic price also covers testing, fitting and follow-up care.",
+      "Reading the lab scores",
+      "HearAdvisor, a hearing aid lab that works with HearingTracker, has published scores for three of the six: Oticon Reveal 1 at 5.1, Phonak EON Sphere 90 at 5.0 and Signia MaX 7 at 4.3, against a prescription-category average of 4.19. All three earned an A grade. Three cautions apply. The scores cover each company's top technology level, not the lower ones. A gap of a tenth of a point is not something we would shop on. And a lab score describes sound quality in a standard test, not the benefit in your ears. HearingTracker says it has not yet tested ReSound Sensia, and HearAdvisor said it would test Starkey Omega AI+ soon. We found no score for Widex Allure AI. The scores HearingTracker lists for Widex are for the earlier, non-AI Allure, which is a different product.",
+      "How the six differ",
+      "ReSound Sensia, announced August 10 and launching August 20 in the US, runs on the same chips as Vivia. ReSound adds AcoustIQ, which classifies the environment, and says all Sensia models are Auracast-compatible with two models carrying a telecoil. Its [brand page](/hearing-aids-brands/resound) lists the family. Oticon Reveal pairs a Speech AI with a Context AI, and Oticon claims a stronger brain response than its previous generation, a company claim from its own research. See our pages on [Oticon Reveal](/hearing-aids-brands/oticon/oticon-reveal) and [Signia MaX against Oticon Reveal](/hearing-aids-brands/signia/signia-max-vs-oticon-reveal). Phonak EON moves the speech-separation network onto a new HYPERSONIC chip and adds a CROS model; our [Phonak EON explainer](/phonak-eon-what-we-know) follows its claims to their references. Signia MaX splits the work across four networks, and our [Signia MaX explainer](/signia-max-what-we-know) covers its Auracast caveat and what has been measured. Starkey Omega AI+, announced October 1, pairs a G4 processor with four networks, longer rechargeable battery claims and a US-only sleep-tracking feature that Starkey says is not a diagnostic tool; see our [Starkey brand page](/hearing-aids-brands/starkey). Widex Allure AI RIC, announced May 20 and due in the US on November 1, adds a dedicated AI co-processor to the W1 chip of the Allure platform. Its Clarity Boost program is switched on by the wearer rather than always running, and Widex claims up to 6 dB better output signal-to-noise ratio than competitors' AI products, a company claim with no named comparison. See our [Widex brand page](/hearing-aids-brands/widex) and [Widex Allure page](/hearing-aids-brands/widex/widex-allure).",
+      "Why the fitting matters more than the chip",
+      "The chip decides what a hearing aid can do. The fitting decides what it does for you. A good [hearing aid fitting](/hearing-aid-fitting) programs the device to your audiogram, uses [real-ear measurement](/why-real-ear-verification-matters) to confirm what reaches your eardrum, and continues over [follow-up visits](/how-many-follow-up-visits-new-hearing-aids) as your brain adapts. That is also the brain-first reason to care. When sound arrives clearly, listening takes less effort, and [listening fatigue](/hearing-loss-cognitive-effort-listening-fatigue) eases. A June 2026 analysis in Cell Reports Medicine pooled 61,089 hearing-impaired adults aged 55 and older and found about 9 percent lower risk of probable dementia among hearing aid users than non-users, and about 14 percent lower among those who reported good hearing improvement. People who reported poor improvement saw no significant reduction. The study was observational, so it cannot prove cause, but the researchers' point is useful: the benefit is not about wearing a device, it is whether the device meaningfully improves hearing in daily life.",
+      "How to choose among them",
+      "We do not recommend a brand up front. The hearing test comes first. Then we learn about you: your days, your phone, your ears and what you want back. Only then does your audiologist narrow the options and recommend the device that serves you best, and that device may be one of these six or none of them. To prepare, start from your life, not the logo. Where does listening break down: restaurants, meetings, the car? Which phone do you use all day? Do you need a telecoil for looped venues? Is one ear much worse? Phonak lists a CROS EON R, Oticon announced a new CROS RE, and ReSound says Sensia Bimodal works with Cochlear Nucleus sound processors, so one-sided loss and [cochlear implant support](/how-we-can-help/cochlear-implants) can shape the shortlist. Bring those answers to an evaluation, and ask for a demonstration in noise, not a quiet booth. Which models we can fit, and when, depends on stock and fitting software and changes week to week, so call before you plan around a model.",
+      "Your next step in Harrison or Somers",
+      "If you have a quote for one of these, or you wear hearing aids that no longer keep up, a [hearing aid second opinion](/hearing-aid-second-opinion) can compare the options against your own test. Our [Harrison](/harrison-ny) and [Somers](/Somers-NY) offices both fit the brands on our [brands page](/hearing-aids-brands). We recommend by fitting the person, not by brand. Our [cost guide for Westchester County](/hearing-aid-cost-westchester-county) explains what to ask about any quote. California Hearing Center, our sister practice, covers [Signia MaX in its own explainer](https://www.calhearing.com/signia-max-what-we-know/).",
+      "Status and last update",
+      "Last updated October 8, 2026. Change note: this is the first version, built from launch coverage, HearingTracker's lab listings and the companies' own announcements. It includes Widex Allure AI RIC. We will update it when independent results arrive for ReSound Sensia, Starkey Omega AI+ and Widex Allure AI, when Widex reaches the US on November 1, when companies publish prices, or when Signia switches on Auracast. Sources are listed at the end of this page.",
+      "Medical information notice",
+      "This page is for information only and is not medical advice. Hearing aids do not suit everyone, and a hearing evaluation is the way to find out what suits you. Performance figures here are company claims or lab scores in standard tests, not promises about your hearing."
+    ],
+    faqs: [
+      { question: "Which of the six hearing aid platforms is best?", answer: "No independent test compares all six yet, so we cannot name a best. We do not recommend a brand before your hearing test and a real conversation about you. Then your audiologist chooses the device that suits your hearing, phone, ears and daily listening, and verifies it in your ear." },
+      { question: "Do all six support Auracast?", answer: "Five of the six list Auracast in the launch coverage we reviewed. Signia MaX needs a firmware update planned by March 2027, and one trade report calls Widex Allure AI Auracast-ready while Widex's own release does not mention it. The venues that broadcast Auracast are still few, so ask where you would use it." },
+      { question: "Are the new hearing aids available in the US now?", answer: "Per the sources we checked, ReSound said Sensia would launch in the US on August 20, Phonak and Signia reported US availability from August 24, HearingLife listed Oticon Reveal in 42 states on August 27, and Widex says Allure AI reaches the US on November 1. Starkey's announcement did not state an availability date. Availability at any one practice depends on stock and software, so call before you plan around a model." },
+      { question: "Do the new hearing aids cost more?", answer: "None of the launch announcements we reviewed states a price. HearingTracker lists retail prices per pair for top levels from $3,298 to $4,598, and clinic prices vary by model, technology level and the care included. Our [cost guide for Westchester County](/hearing-aid-cost-westchester-county) explains what to ask." },
+      { question: "Should I upgrade if my current hearing aids work?", answer: "If your aids are verified and doing their job, a new platform is not an obligation. The clearest reasons to look are a change in your hearing, a feature you need such as a CROS option or a particular phone connection, or devices that no longer meet your listening needs. A second opinion can sort out which applies." },
+      { question: "Can the new hearing aids slow dementia?", answer: "No hearing aid can promise that. An observational analysis of 61,089 adults found about 9 percent lower probable dementia risk among hearing aid users, with the benefit tied to reported hearing improvement, but observational work cannot prove cause. The practical goal is hearing well in daily life." }
+    ],
+    related: [
+      { label: "Phonak EON: What Is Actually Known", href: "/phonak-eon-what-we-know" },
+      { label: "Signia MaX: What Is Actually Known", href: "/signia-max-what-we-know" },
+      { label: "Elehear Beyond 2 Pro vs. Prescription Hearing Aids", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" },
+      { label: "Auracast hearing aids explained", href: "/auracast-hearing-aids-explained" },
+      { label: "Bluetooth hearing aids: what to know before buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+      { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" },
+      { label: "How Many Follow-Up Visits After New Hearing Aids?", href: "/how-many-follow-up-visits-new-hearing-aids" },
+      { label: "Hearing Loss and Listening Fatigue", href: "/hearing-loss-cognitive-effort-listening-fatigue" },
+      { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Widex hearing aids in Westchester", href: "/hearing-aids-brands/widex" },
+      { label: "Widex Allure", href: "/hearing-aids-brands/widex/widex-allure" },
+      { label: "Oticon Reveal", href: "/hearing-aids-brands/oticon/oticon-reveal" },
+      { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" },
+      { label: "Phonak EON vs Signia MaX", href: "/hearing-aids-brands/phonak/phonak-eon-vs-signia-max" },
+      { label: "ReSound hearing aids in Westchester", href: "/hearing-aids-brands/resound" },
+      { label: "Starkey hearing aids in Westchester", href: "/hearing-aids-brands/starkey" },
+      { label: "Cochlear implant support", href: "/how-we-can-help/cochlear-implants" },
+      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" }
+    ],
+    blogMeta: {
+      frame: "Buyer decision guide",
+      byline: "A comparison of six hearing aid platforms for fall 2026",
+      reviewedBy,
+      readTime: "9 min read",
+      articleType: "Buyer decision guide",
+      pullQuote: "The chip decides what a hearing aid can do. The fitting decides what it does for you.",
+      keyTakeaways: [
+        "Six platforms to know: ReSound Sensia (announced Aug 10), Oticon Reveal (Aug 11), Phonak EON (Aug 24), Signia MaX (Aug 24), Starkey Omega AI+ (Oct 1) and Widex Allure AI RIC (May 20, US launch Nov 1). Widex announced before the Aug 10 to Oct 1 window.",
+        "Five of six list Auracast, and Signia's needs a firmware update planned by March 2027. None of the launch announcements we reviewed states a price.",
+        "Performance figures are company claims. HearAdvisor has scored Oticon Reveal 1, Phonak EON Sphere 90 and Signia MaX 7 in its lab. We found no published results for ReSound Sensia, Starkey Omega AI+ or Widex Allure AI.",
+        "We name no winner and recommend no brand up front. After your hearing test and a real conversation about you, your audiologist chooses the device that serves you best."
+      ],
+      patientQuestion: "Which of the six hearing aid platforms is right for me?",
+      storyLead: "Six makers, six platforms, one table: what is known, what is a company claim, and why we choose by fitting the person, not by brand.",
+      comparisonTable: {
+        afterHeading: "The six platforms at a glance",
+        caption: "ReSound Sensia, Oticon Reveal, Phonak EON, Signia MaX, Starkey Omega AI+ and Widex Allure AI RIC compared",
+        headers: ["Hearing aid", "Announced", "US availability, per sources", "Chip and AI, as described", "Auracast and telecoil", "Battery, company claim", "HearAdvisor SoundScore"],
+        rows: [
+          ["ReSound Sensia", "Aug 10, 2026", "US launch Aug 20, per Hearing Review", "Same chips as Vivia, plus AcoustIQ environment classification. DNN count not stated", "Auracast on all models. Telecoil on two models", "At least 24 hours, up to about 30", "Not yet tested, per HearingTracker"],
+          ["Oticon Reveal", "Aug 11, 2026 (some reports say Aug 12)", "Orders from Aug 24. HearingLife listed it in 42 states on Aug 27", "Dual AI: Speech AI and Context AI. Chip and DNN count not stated", "Auracast supported. Telecoil: yes, per HearingTracker's listing", "A full day, per Oticon. HearingTracker's review cites up to about 20 hours", "5.1 (Reveal 1)"],
+          ["Phonak EON", "Aug 24, 2026", "Ordering through US hearing care professionals from Aug 24", "HYPERSONIC chip, deep neural network speech separation. DNN count not stated", "Auracast supported. Telecoil: none, per HearingTracker", "Up to 38 hours", "5.0 (EON Sphere 90)"],
+          ["Signia MaX", "Aug 24, 2026", "US launch Aug 24. HearUSA reported nationwide availability Sept 1", "New MaX chip, four DNNs: speech, own voice, scene and noise", "Auracast hardware-ready, firmware update planned by March 2027. Telecoil: yes", "Up to about 30 hours, per HearingTracker", "4.3 (MaX 7)"],
+          ["Starkey Omega AI+", "Oct 1, 2026", "Not stated in the coverage we reviewed", "G4 Gen AI Neuro Processor, four DNNs", "Auracast supported. Telecoil not stated", "Up to 51 hours (RIC RT), up to 42 hours (mRIC and custom rechargeable)", "Not yet tested. HearAdvisor said it will test soon"],
+          ["Widex Allure AI RIC", "May 20, 2026 (before the other five)", "Five unnamed markets June 1. US and remaining markets Nov 1, 2026, per Widex's release", "W1 chip plus a dedicated AI co-processor for Clarity Boost, which the wearer switches on. DNN count not stated", "LE Audio and telecoil listed. Auracast: one trade report says Auracast-ready, Widex's release does not mention it", "Up to 32 hours including 6 hours of AI use or streaming", "No score for the AI model. Scores listed are for the earlier, non-AI Allure"]
+        ]
+      },
+      notify: {
+        context: "Notify: AI hearing aid roundup updates",
+        heading: "Get one email when independent results land.",
+        body: "We will send one email when independent labs publish results for the remaining hearing aids in this roundup, when Widex reaches the US, or when a company announces prices.",
+        button: "Notify me"
+      },
+      sources: [
+        { label: "Hearing Review: Lifting the voice you choose, ReSound Sensia hearing aids launch", href: "https://hearingreview.com/hearing-products/hearing-aids/lifting-the-voice-you-choose-resound-sensia-hearing-aids-launch" },
+        { label: "HearingTracker: ReSound Sensia launch", href: "https://www.hearingtracker.com/news/resound-sensia-launch-ai-follows-the-voice-you-want-to-hear" },
+        { label: "HearingTracker: Oticon Reveal launches with Dual AI", href: "https://www.hearingtracker.com/news/oticon-reveal-launches-with-dual-ai-for-speech-and-surrounding-sounds" },
+        { label: "Hearing Health Matters: Oticon launches Reveal with Dual AI processing", href: "https://hearinghealthmatters.org/hearing-technologies/2026/oticon-reveal-dual-ai-processing/" },
+        { label: "Hearing Review: HearingLife now offering Oticon Reveal", href: "https://hearingreview.com/practice-building/office-services/dispensing-networks/hearinglife-now-offering-oticon-reveal-a-dual-ai-powered-hearing-aid" },
+        { label: "Hearing Health Matters: Phonak introduces EON with HYPERSONIC chip", href: "https://hearinghealthmatters.org/hearing-technologies/2026/phonak-eon-hearing-aids-new-chip/" },
+        { label: "HearingTracker: Phonak Audeo EON review and lab results", href: "https://www.hearingtracker.com/hearing-aids/phonak-audeo-eon" },
+        { label: "Hearing Review: Signia debuts MaX AI hearing aid platform with 4 DNNs", href: "https://hearingreview.com/hearing-products/hearing-aids/live-noisy-signia-debuts-max-ai-hearing-aid-platform-with-4-dnns" },
+        { label: "Audiology Worldnews: Signia introduces MaX, a 4DNN hearing aid platform", href: "https://www.audiology-worldnews.com/new-products/signia-introduces-max-a-4dnn-hearing-aid-platform/" },
+        { label: "HearingTracker: Signia Pure Charge&Go MaX review and lab results", href: "https://www.hearingtracker.com/hearing-aids/signia-pure-charge-go-max" },
+        { label: "HearUSA: New Signia Pure C&G MaX hearing aids (HearingTracker press releases)", href: "https://www.hearingtracker.com/press-releases/hearusa-expands-portfolio-to-include-new-signia-pure-c-g-max-hearing-aids" },
+        { label: "Hearing Health Matters: Starkey unveils Omega AI+ with G4 Gen AI processor", href: "https://hearinghealthmatters.org/hearing-technologies/2026/omega-ai-plus-g4-hearing-aids/" },
+        { label: "HearingTracker: Starkey launches Omega AI+ with Quad DNN", href: "https://www.hearingtracker.com/news/starkey-launches-omega-ai-with-quad-dnn-and-dual-compression" },
+        { label: "HearingTracker: Oticon Reveal vs. Phonak Audeo EON", href: "https://www.hearingtracker.com/hearing-aids/compare/oticon-reveal-1-minirite-r-vs-phonak-audeo-eon-sphere-90" },
+        { label: "HearingTracker: Oticon Reveal vs. Signia Pure Charge&Go MaX", href: "https://www.hearingtracker.com/hearing-aids/compare/oticon-reveal-1-minirite-r-vs-signia-pure-charge-go-max-7" },
+        { label: "Hearing Review: Widex announces Allure AI RIC with Clarity Boost, Compass Cloud 2.0", href: "https://hearingreview.com/hearing-products/hearing-aids/bte/natural-sound-meets-ai-widex-announces-allure-ai-ric-hearing-aid-with-clarity-boost-compass-cloud-2-0" },
+        { label: "WSA: Widex introduces Allure AI RIC with Clarity Boost (press release)", href: "https://www.wsa.com/press-release/widex-introduces-allure-ai-ric-with-clarity-boost-redefining-how-ai-supports-natural-hearing/" },
+        { label: "Hearing Health Matters: Widex Allure AI RIC with dual-chip AI processing", href: "https://hearinghealthmatters.org/hearing-news-watch/2026/dual-processor-widex-allure-ai/" },
+        { label: "HearingTracker: Widex Allure review", href: "https://www.hearingtracker.com/hearing-aids/widex-allure" },
+        { label: "HKUMed (HKU Lead): Effective hearing aid use and probable dementia, Cell Reports Medicine", href: "https://lead.hku.hk/en/article/2026/06/hkumed-finds-effective-use-of-hearing-aids-may-help-reduce-dementia-risk-in-older-adults" },
+        { label: "California Hearing Center: Signia MaX explained", href: "https://www.calhearing.com/signia-max-what-we-know/" }
+      ]
+    }
+  }
 ];
 
 export function buildNextBlogPosts(baseUrl: string, _siteName: string): SitePage[] {
