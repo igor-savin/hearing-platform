@@ -217,6 +217,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing screening vs hearing test",
         "href": "/hearing-screening-vs-hearing-test"
+      },
+      {
+        "label": "When hearing aids are no longer enough: cochlear implant evaluation",
+        "href": "/when-hearing-aids-no-longer-enough-cochlear-implant"
       }
     ],
     "blogMeta": {
@@ -333,6 +337,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Precision hearing care: why your audiogram matters more than ever in 2026",
+        "href": "/precision-hearing-care-audiogram"
       }
     ],
     "blogMeta": {
@@ -445,6 +453,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Precision hearing care: why your audiogram matters more than ever in 2026",
+        "href": "/precision-hearing-care-audiogram"
       }
     ],
     "blogMeta": {
@@ -553,6 +565,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Cognivue cognitive screening",
         "href": "/how-we-can-help/cognivue-cognitive-screening"
+      },
+      {
+        "label": "Age-related hearing loss (presbycusis)",
+        "href": "/hearing-loss/age-related-hearing-loss"
+      },
+      {
+        "label": "Precision hearing care: why your audiogram matters more than ever in 2026",
+        "href": "/precision-hearing-care-audiogram"
       }
     ],
     "blogMeta": {
@@ -661,6 +681,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing screening vs hearing test",
         "href": "/hearing-screening-vs-hearing-test"
+      },
+      {
+        "label": "Understanding hearing loss: types and causes",
+        "href": "/hearing-loss"
       }
     ],
     "blogMeta": {
@@ -773,6 +797,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Audiologist near Mt. Kisco, NY",
         "href": "/mt-kisco-ny"
+      },
+      {
+        "label": "Age-related hearing loss (presbycusis)",
+        "href": "/hearing-loss/age-related-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -881,6 +909,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing screening vs hearing test",
         "href": "/hearing-screening-vs-hearing-test"
+      },
+      {
+        "label": "Understanding hearing loss: types and causes",
+        "href": "/hearing-loss"
+      },
+      {
+        "label": "Age-related hearing loss (presbycusis)",
+        "href": "/hearing-loss/age-related-hearing-loss"
+      },
+      {
+        "label": "Precision hearing care: why your audiogram matters more than ever in 2026",
+        "href": "/precision-hearing-care-audiogram"
       }
     ],
     "blogMeta": {
@@ -977,6 +1017,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Auracast and hearing aids explained",
+        "href": "/auracast-hearing-aids-explained"
+      },
+      {
+        "label": "Auracast goes live in a U.S. theater",
+        "href": "/auracast-goes-live-in-a-us-theater"
       }
     ],
     "blogMeta": {
@@ -1073,6 +1121,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Understanding hearing loss: types and causes",
+        "href": "/hearing-loss"
       }
     ],
     "blogMeta": {
@@ -1169,6 +1221,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "White Plains, NY",
         "href": "/White-Plains-NY"
+      },
+      {
+        "label": "Sudden hearing loss: signs and what to do",
+        "href": "/hearing-loss/sudden-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -1265,6 +1321,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Scarsdale, NY",
         "href": "/Scarsdale-NY"
+      },
+      {
+        "label": "Sudden hearing loss: signs and what to do",
+        "href": "/hearing-loss/sudden-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -1385,6 +1445,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Sudden hearing loss: signs and what to do",
+        "href": "/hearing-loss/sudden-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -1613,6 +1677,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Custom earplugs in Westchester",
         "href": "/custom-earplugs-westchester"
+      },
+      {
+        "label": "Hearing aids for musicians in Westchester",
+        "href": "/musician-hearing-aids-westchester"
       }
     ],
     "blogMeta": {
@@ -3225,6 +3293,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing aid brands we fit",
         "href": "/hearing-aids-brands"
+      },
+      {
+        "label": "Auracast and hearing aids explained",
+        "href": "/auracast-hearing-aids-explained"
+      },
+      {
+        "label": "Auracast goes live in a U.S. theater",
+        "href": "/auracast-goes-live-in-a-us-theater"
+      },
+      {
+        "label": "The 6 hearing aid platforms of fall 2026, compared",
+        "href": "/best-ai-hearing-aids-fall-2026"
       }
     ],
     "blogMeta": {
@@ -3445,6 +3525,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Prescription vs OTC hearing aids",
         "href": "/prescription-vs-otc-hearing-aids"
+      },
+      {
+        "label": "Meta glasses hearing aid feature: should you try it?",
+        "href": "/meta-glasses-hearing-aid-feature"
+      },
+      {
+        "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
+        "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
       }
     ],
     "blogMeta": {
@@ -3541,6 +3629,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
+        "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
       }
     ],
     "blogMeta": {
@@ -3637,6 +3729,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Auracast and hearing aids explained",
+        "href": "/auracast-hearing-aids-explained"
+      },
+      {
+        "label": "Meta glasses hearing aid feature: should you try it?",
+        "href": "/meta-glasses-hearing-aid-feature"
+      },
+      {
+        "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
+        "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
       }
     ],
     "blogMeta": {
@@ -3753,6 +3857,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing care across Westchester County",
         "href": "/areas-we-serve/westchester-county-ny"
+      },
+      {
+        "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
+        "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
       }
     ],
     "blogMeta": {
@@ -4061,6 +4169,26 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "How much hearing aids cost in Westchester County",
         "href": "/hearing-aid-cost-westchester-county"
+      },
+      {
+        "label": "Signia MaX: what is actually known so far",
+        "href": "/signia-max-what-we-know"
+      },
+      {
+        "label": "Phonak EON: what is actually known so far",
+        "href": "/phonak-eon-what-we-know"
+      },
+      {
+        "label": "Fortell hearing aids: what is actually known so far",
+        "href": "/fortell-hearing-aids-what-we-know"
+      },
+      {
+        "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
+        "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
+      },
+      {
+        "label": "The 6 hearing aid platforms of fall 2026, compared",
+        "href": "/best-ai-hearing-aids-fall-2026"
       }
     ],
     "blogMeta": {
@@ -4157,6 +4285,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Fairfield County, CT",
         "href": "/areas-we-serve/fairfield-county-ct"
+      },
+      {
+        "label": "The 6 hearing aid platforms of fall 2026, compared",
+        "href": "/best-ai-hearing-aids-fall-2026"
       }
     ],
     "blogMeta": {
@@ -4869,6 +5001,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing protection for power tools and yard work",
         "href": "/hearing-protection-power-tools-yard-work"
+      },
+      {
+        "label": "Hearing aids for musicians in Westchester",
+        "href": "/musician-hearing-aids-westchester"
       }
     ],
     "blogMeta": {
@@ -5309,6 +5445,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Audiologist near Mt. Kisco, NY",
         "href": "/mt-kisco-ny"
+      },
+      {
+        "label": "Precision hearing care: why your audiogram matters more than ever in 2026",
+        "href": "/precision-hearing-care-audiogram"
       }
     ],
     "blogMeta": {

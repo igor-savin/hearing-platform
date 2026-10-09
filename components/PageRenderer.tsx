@@ -27,6 +27,7 @@ import { ContactForm } from "@/components/ContactForm";
 import { NotifyForm } from "@/components/NotifyForm";
 import { InteractiveEarHero } from "@/components/InteractiveEarHero";
 import { ZocdocButton } from "@/components/ZocdocButton";
+import { BlogBookingStrip } from "@/components/BlogBookingStrip";
 import {
   appointmentConversionLinks,
   appointmentPrinciples,
@@ -4639,6 +4640,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
   return (
     <>
       <Breadcrumbs page={page} />
+      <BlogBookingStrip pagePath={page.path} />
       <article className="bg-white">
         <section className="border-b border-[#dedede] bg-[#f7f7f5] py-[52px]">
           <div className="mx-auto grid max-w-[1460px] gap-10 px-[64px] max-lg:px-5 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
