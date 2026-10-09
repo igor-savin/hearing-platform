@@ -149,7 +149,7 @@ export const contentDates: Record<string, ContentDate> = {
   "mahopac": { published: "2026-07-06", modified: "2026-10-07" },
   "mamaroneck": { published: "2026-07-06", modified: "2026-08-25" },
   "mixed-hearing-loss": { published: "2026-07-21", modified: "2026-08-25" },
-  "mount-kisco": { published: "2026-07-06", modified: "2026-08-25" },
+  "mount-kisco": { published: "2026-07-06", modified: "2026-10-08" },
   "new-rochelle": { published: "2026-07-06", modified: "2026-08-25" },
   "noise-induced-hearing-loss": { published: "2026-07-21", modified: "2026-08-25" },
   "one-ear": { published: "2026-07-14", modified: "2026-07-14" },

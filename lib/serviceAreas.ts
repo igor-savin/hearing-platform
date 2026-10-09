@@ -438,6 +438,7 @@ export const areaCities: AreaCity[] = [
   },
   {
     slug: "mount-kisco",
+    legacyPath: "/mt-kisco-ny",
     name: "Mt. Kisco",
     state: "NY",
     countySlug: "westchester-county-ny",

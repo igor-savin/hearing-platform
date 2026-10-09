@@ -1677,7 +1677,11 @@ export const pages: SitePage[] = [...generatedPages, ...editorialBlogPosts, ...n
     ? { ...sourcePage, ...servicePageOverrides[sourcePage.path] }
     : sourcePage;
   const withFaqs: SitePage = { ...withContentDates(page), faqs: [] };
-  withFaqs.faqs = page.faqs.length ? page.faqs : baseFaqs(withFaqs);
+  // /mt-kisco-ny absorbed the generated Mt. Kisco page. Its hand-written FAQs
+  // replace the generic set on the surviving legacy page.
+  const legacyCity = areaCities.find((city) => city.legacyPath === page.path);
+  const legacyFaqs = legacyCity ? localFlavorForCity(legacyCity)?.faqs : undefined;
+  withFaqs.faqs = page.faqs.length ? page.faqs : legacyFaqs?.length ? legacyFaqs : baseFaqs(withFaqs);
   withFaqs.related = relatedLinks(withFaqs);
   return withFaqs;
 });
