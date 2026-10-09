@@ -1219,6 +1219,23 @@ const editorialBlogPosts: SitePage[] = [
 ];
 
 const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[]> = {
+  "/psoriasis-affects-more-than-your-skin": [
+    { label: "Sudden hearing loss", href: "/hearing-loss/sudden-hearing-loss" },
+    { label: "Why sudden hearing loss should not wait", href: "/sudden-hearing-loss-why-not-wait" },
+    { label: "Hearing tests and cognitive screening", href: "/hearing-test-and-cognitive-screening" },
+    { label: "Celebrating Pride Month: inclusivity and compassion", href: "/celebrating-pride-month-embracing-inclusivity-and-compassion" },
+    { label: "Hearing testing", href: "/hearing-testing" },
+    { label: "Harrison, NY office", href: "/harrison-ny" },
+    { label: "Somers, NY office", href: "/Somers-NY" }
+  ],
+  "/celebrating-pride-month-embracing-inclusivity-and-compassion": [
+    { label: "Affirming hearing care for LGBTQ+ patients", href: "/lgbtq-affirming-hearing-care" },
+    { label: "Psoriasis affects more than your skin", href: "/psoriasis-affects-more-than-your-skin" },
+    { label: "Meet our team of hearing doctors", href: "/meet-the-team" },
+    { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
+    { label: "Harrison, NY office", href: "/harrison-ny" },
+    { label: "Somers, NY office", href: "/Somers-NY" }
+  ],
   "/how-to-take-care-of-a-blocked-ear": [
     { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
     { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
@@ -1258,7 +1275,8 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
     { label: "Preventing noise-induced hearing loss", href: "/noise-induced-hearing-loss-prevention" },
     { label: "Ear protection for kids and teens", href: "/kids-teens-ear-protection-concerts-sports" },
     { label: "Book a hearing check in Harrison, NY", href: "/harrison-ny" },
-    { label: "Book a hearing check in Somers, NY", href: "/Somers-NY" }
+    { label: "Book a hearing check in Somers, NY", href: "/Somers-NY" },
+    { label: "Our hearing tips: the 85 decibel line and safe listening", href: "/hearing-tips" }
   ],
   "/understanding-and-treating-dry-ears": [
     { label: "How to Get Water Out of Your Ear Safely", href: "/how-to-get-water-out-of-your-ear" },
@@ -1349,7 +1367,8 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
     { label: "Phonak Lyric invisible hearing aid", href: "/hearing-aids-brands/phonak/phonak-lyric" },
     { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
     { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
-    { label: "How to make hearing aids more comfortable", href: "/how-to-make-hearing-aids-more-comfortable" }
+    { label: "How to make hearing aids more comfortable", href: "/how-to-make-hearing-aids-more-comfortable" },
+    { label: "Common misconceptions about hearing loss", href: "/hearing-loss-misconceptions" }
   ]
 };
 

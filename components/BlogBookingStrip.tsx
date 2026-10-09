@@ -14,6 +14,10 @@ import { locations } from "@/lib/site";
 // - Each link is at least 48px tall. Visible text starts with the accessible name.
 // - No claim about price, insurance or free services.
 //
+// Below the lg breakpoint (1024px) the fixed MobileCallBar already shows the same
+// two numbers at the bottom of the screen, so the strip hides there (max-lg:hidden)
+// and shows from lg up. Keep the two breakpoints the same.
+//
 // Pages where a routine booking strip would sit badly: the sudden hearing loss
 // pages tell the reader to get care the same day.
 const NO_STRIP = new Set(["/hearing-loss/sudden-hearing-loss", "/sudden-hearing-loss-why-not-wait"]);
@@ -24,7 +28,7 @@ export function BlogBookingStrip({ pagePath }: { pagePath: string }) {
   if (offices.length < 2) return null;
 
   return (
-    <aside aria-label="Book a hearing visit" className="border-b border-[#d5e7f4] bg-[#eaf4fb]">
+    <aside aria-label="Book a hearing visit" className="border-b border-[#d5e7f4] bg-[#eaf4fb] max-lg:hidden">
       <div className="mx-auto flex max-w-[1460px] flex-col gap-3 px-[64px] py-3 max-lg:px-5 md:flex-row md:items-center md:justify-between">
         <p className="text-[18px] font-black leading-7 text-[#003f6f]">Book a hearing visit at Harrison or Somers.</p>
         <div className="grid gap-3 sm:grid-cols-2 md:min-w-[500px]">

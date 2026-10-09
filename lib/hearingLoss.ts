@@ -267,7 +267,8 @@ const conditions: Condition[] = [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Sensorineural Hearing Loss", href: "/hearing-loss/sensorineural-hearing-loss" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Latest: Why a baseline audiogram matters (2026 study)", href: "/precision-hearing-care-audiogram" }
+      { label: "Latest: Why a baseline audiogram matters (2026 study)", href: "/precision-hearing-care-audiogram" },
+      { label: "Improve your hearing: testing, hearing aids and listening support", href: "/improve-your-hearing" }
     ],
     sources: [
       { label: "NIDCD: Age-Related Hearing Loss", href: "https://www.nidcd.nih.gov/health/age-related-hearing-loss" }
@@ -328,7 +329,8 @@ const conditions: Condition[] = [
       { label: "Hearing Protection", href: "/hearing-protection" },
       { label: "Prevent Hearing Loss", href: "/prevent-hearing-loss" },
       { label: "Understanding Hearing Loss at 4,000 Hz", href: "/understanding-hearing-loss-at-4000-hz" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "What is noise-induced hearing loss, and can it be prevented?", href: "/noise-induced-hearing-loss-prevention" }
     ],
     sources: [
       { label: "NIDCD: Noise-Induced Hearing Loss", href: "https://www.nidcd.nih.gov/health/noise-induced-hearing-loss" }
@@ -386,7 +388,9 @@ const conditions: Condition[] = [
     related: [
       { label: "Sudden Hearing Loss: Why You Should Not Wait", href: "/sudden-hearing-loss-why-not-wait" },
       { label: "Audiologist vs ENT for Hearing Loss", href: "/audiologist-vs-ent-for-hearing-loss" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Dizziness or ringing in your ears: what to know", href: "/dizziness-and-ringing-in-your-ears" },
+      { label: "Psoriasis affects more than your skin", href: "/psoriasis-affects-more-than-your-skin" }
     ],
     sources: [
       { label: "NIDCD: Sudden Deafness", href: "https://www.nidcd.nih.gov/health/sudden-deafness" }

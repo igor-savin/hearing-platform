@@ -149,7 +149,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "What Signia MaX costs", href: "/hearing-aids-brands/signia/signia-max-cost" },
       { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" },
       { label: "Signia hearing aids in Westchester", href: "/hearing-aids-brands/signia" },
-      { label: "Phonak EON: what is actually known so far", href: "/phonak-eon-what-we-know" }
+      { label: "Phonak EON: what is actually known so far", href: "/phonak-eon-what-we-know" },
+      { label: "Signia IX hearing aids", href: "/hearing-aids-brands/signia/signia-ix" }
     ]
   },
   {
@@ -186,7 +187,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Phonak EON vs Signia MaX", href: "/hearing-aids-brands/phonak/phonak-eon-vs-signia-max" },
       { label: "Phonak hearing aids in Westchester", href: "/hearing-aids-brands/phonak" },
       { label: "Signia MaX: what is actually known so far", href: "/signia-max-what-we-know" },
-      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" }
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Phonak Infinio hearing aids", href: "/hearing-aids-brands/phonak/phonak-infinio" }
     ]
   },
   {
@@ -517,7 +519,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Lenire for tinnitus: who might be a candidate?", href: "/lenire-for-tinnitus-candidate-guide" },
       { label: "Tinnitus habituation", href: "/how-we-can-help/tinnitus-management/habituation" },
       { label: "Ringing in one ear: causes, red flags and next steps", href: "/ringing-in-one-ear-red-flags-next-steps" },
-      { label: "Somers, NY office", href: "/Somers-NY" }
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "Tinnitus relief exercises and sleep strategies", href: "/how-we-can-help/tinnitus-management/relief-exercises-and-sleep" }
     ],
     blogMeta: {
       frame: "Local decision guide",
@@ -1480,7 +1483,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Signia MaX: what is actually known so far", href: "/signia-max-what-we-know" },
       { label: "Phonak EON: what is actually known so far", href: "/phonak-eon-what-we-know" },
       { label: "When hearing aids are no longer enough: cochlear implant evaluation", href: "/when-hearing-aids-no-longer-enough-cochlear-implant" },
-      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" }
+      { label: "The 6 hearing aid platforms of fall 2026, compared", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Why choose our hearing doctors", href: "/why-choose-us" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1954,7 +1958,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing protection", href: "/hearing-protection" },
       { label: "Tinnitus after loud noise: what to do next", href: "/tinnitus-after-loud-noise-what-to-do" },
-      { label: "Hearing protection service overview", href: "/how-we-can-help/hearing-protection" }
+      { label: "Hearing protection service overview", href: "/how-we-can-help/hearing-protection" },
+      { label: "Ear Gear custom earplugs and earmolds", href: "/products/eargear" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -2212,7 +2217,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       "Reading the lab scores",
       "HearAdvisor, a hearing aid lab that works with HearingTracker, has published scores for three of the six: Oticon Reveal 1 at 5.1, Phonak EON Sphere 90 at 5.0 and Signia MaX 7 at 4.3, against a prescription-category average of 4.19. All three earned an A grade. Three cautions apply. The scores cover each company's top technology level, not the lower ones. A gap of a tenth of a point is not something we would shop on. And a lab score describes sound quality in a standard test, not the benefit in your ears. HearingTracker says it has not yet tested ReSound Sensia, and HearAdvisor said it would test Starkey Omega AI+ soon. We found no score for Widex Allure AI. The scores HearingTracker lists for Widex are for the earlier, non-AI Allure, which is a different product.",
       "How the six differ",
-      "ReSound Sensia, announced August 10 and launching August 20 in the US, runs on the same chips as Vivia. ReSound adds AcoustIQ, which classifies the environment, and says all Sensia models are Auracast-compatible with two models carrying a telecoil. Its [brand page](/hearing-aids-brands/resound) lists the family. Oticon Reveal pairs a Speech AI with a Context AI, and Oticon claims a stronger brain response than its previous generation, a company claim from its own research. See our pages on [Oticon Reveal](/hearing-aids-brands/oticon/oticon-reveal) and [Signia MaX against Oticon Reveal](/hearing-aids-brands/signia/signia-max-vs-oticon-reveal). Phonak EON moves the speech-separation network onto a new HYPERSONIC chip and adds a CROS model; our [Phonak EON explainer](/phonak-eon-what-we-know) follows its claims to their references. Signia MaX splits the work across four networks, and our [Signia MaX explainer](/signia-max-what-we-know) covers its Auracast caveat and what has been measured. Starkey Omega AI+, announced October 1, pairs a G4 processor with four networks, longer rechargeable battery claims and a US-only sleep-tracking feature that Starkey says is not a diagnostic tool; see our [Starkey brand page](/hearing-aids-brands/starkey). Widex Allure AI RIC, announced May 20 and due in the US on November 1, adds a dedicated AI co-processor to the W1 chip of the Allure platform. Its Clarity Boost program is switched on by the wearer rather than always running, and Widex claims up to 6 dB better output signal-to-noise ratio than competitors' AI products, a company claim with no named comparison. See our [Widex brand page](/hearing-aids-brands/widex) and [Widex Allure page](/hearing-aids-brands/widex/widex-allure).",
+      "ReSound Sensia, announced August 10 and launching August 20 in the US, runs on the same chips as [Vivia](/hearing-aids-brands/resound/resound-vivia). ReSound adds AcoustIQ, which classifies the environment, and says all Sensia models are Auracast-compatible with two models carrying a telecoil. Its [brand page](/hearing-aids-brands/resound) lists the family. Oticon Reveal pairs a Speech AI with a Context AI, and Oticon claims a stronger brain response than its previous generation, a company claim from its own research. See our pages on [Oticon Reveal](/hearing-aids-brands/oticon/oticon-reveal) and [Signia MaX against Oticon Reveal](/hearing-aids-brands/signia/signia-max-vs-oticon-reveal). Phonak EON moves the speech-separation network onto a new HYPERSONIC chip and adds a CROS model; our [Phonak EON explainer](/phonak-eon-what-we-know) follows its claims to their references. Signia MaX splits the work across four networks, and our [Signia MaX explainer](/signia-max-what-we-know) covers its Auracast caveat and what has been measured. Starkey Omega AI+, announced October 1, pairs a G4 processor with four networks, longer rechargeable battery claims and a US-only sleep-tracking feature that Starkey says is not a diagnostic tool; see our [Starkey brand page](/hearing-aids-brands/starkey) and our [Starkey Edge AI page](/hearing-aids-brands/starkey/starkey-edge-ai). Widex Allure AI RIC, announced May 20 and due in the US on November 1, adds a dedicated AI co-processor to the W1 chip of the Allure platform. Its Clarity Boost program is switched on by the wearer rather than always running, and Widex claims up to 6 dB better output signal-to-noise ratio than competitors' AI products, a company claim with no named comparison. See our [Widex brand page](/hearing-aids-brands/widex) and [Widex Allure page](/hearing-aids-brands/widex/widex-allure).",
       "Why the fitting matters more than the chip",
       "The chip decides what a hearing aid can do. The fitting decides what it does for you. A good [hearing aid fitting](/hearing-aid-fitting) programs the device to your audiogram, uses [real-ear measurement](/why-real-ear-verification-matters) to confirm what reaches your eardrum, and continues over [follow-up visits](/how-many-follow-up-visits-new-hearing-aids) as your brain adapts. That is also the brain-first reason to care. When sound arrives clearly, listening takes less effort, and [listening fatigue](/hearing-loss-cognitive-effort-listening-fatigue) eases. A June 2026 analysis in Cell Reports Medicine pooled 61,089 hearing-impaired adults aged 55 and older and found about 9 percent lower risk of probable dementia among hearing aid users than non-users, and about 14 percent lower among those who reported good hearing improvement. People who reported poor improvement saw no significant reduction. The study was observational, so it cannot prove cause, but the researchers' point is useful: the benefit is not about wearing a device, it is whether the device meaningfully improves hearing in daily life.",
       "How to choose among them",

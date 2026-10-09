@@ -229,6 +229,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Understanding hearing loss at 4,000 Hz",
         "href": "/understanding-hearing-loss-at-4000-hz"
+      },
+      {
+        "label": "Improve your hearing: testing, hearing aids and listening support",
+        "href": "/improve-your-hearing"
+      },
+      {
+        "label": "What high-frequency hearing loss sounds like",
+        "href": "/what-high-frequency-hearing-loss-sounds-like"
       }
     ],
     "blogMeta": {
@@ -581,6 +589,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Precision hearing care: why your audiogram matters more than ever in 2026",
         "href": "/precision-hearing-care-audiogram"
+      },
+      {
+        "label": "Hearing loss and hearing aid questions, answered",
+        "href": "/get-answers"
       }
     ],
     "blogMeta": {
@@ -693,6 +705,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Understanding hearing loss: types and causes",
         "href": "/hearing-loss"
+      },
+      {
+        "label": "Helping a loved one with hearing loss",
+        "href": "/help-a-loved-one"
       }
     ],
     "blogMeta": {
@@ -771,10 +787,6 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/pulsatile-tinnitus-heartbeat-sound"
       },
       {
-        "label": "Hearing Aid Not Charging? Common Causes and Next Steps",
-        "href": "/hearing-aid-not-charging"
-      },
-      {
         "label": "Comprehensive Hearing Assessments",
         "href": "/how-we-can-help/comprehensive-hearing-assessments"
       },
@@ -785,10 +797,6 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing Aid Tune-Ups",
         "href": "/how-we-can-help/hearing-aid-tune-ups"
-      },
-      {
-        "label": "Fairfield County, CT",
-        "href": "/areas-we-serve/fairfield-county-ct"
       },
       {
         "label": "Hearing loss myths and misconceptions",
@@ -809,6 +817,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Age-related hearing loss (presbycusis)",
         "href": "/hearing-loss/age-related-hearing-loss"
+      },
+      {
+        "label": "Helping a loved one with hearing loss",
+        "href": "/help-a-loved-one"
+      },
+      {
+        "label": "The first signs of hearing loss families notice",
+        "href": "/first-signs-of-hearing-loss-family-notice"
+      },
+      {
+        "label": "Hearing tests and cognitive screening",
+        "href": "/hearing-test-and-cognitive-screening"
       }
     ],
     "blogMeta": {
@@ -1003,24 +1023,8 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/what-high-frequency-hearing-loss-sounds-like"
       },
       {
-        "label": "Can Hearing Aids Help Tinnitus?",
-        "href": "/can-hearing-aids-help-tinnitus"
-      },
-      {
-        "label": "How Often Should Hearing Aids Be Professionally Cleaned?",
-        "href": "/how-often-professional-hearing-aid-cleaning"
-      },
-      {
         "label": "Hearing Aid Tune-Ups",
         "href": "/how-we-can-help/hearing-aid-tune-ups"
-      },
-      {
-        "label": "Tinnitus Management",
-        "href": "/how-we-can-help/tinnitus-management"
-      },
-      {
-        "label": "Earwax Removal",
-        "href": "/how-we-can-help/earwax-removal"
       },
       {
         "label": "Harrison, NY office",
@@ -1033,6 +1037,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Auracast goes live in a U.S. theater",
         "href": "/auracast-goes-live-in-a-us-theater"
+      },
+      {
+        "label": "Why can I hear people talking but not understand the words?",
+        "href": "/hear-people-talking-not-understand-words"
+      },
+      {
+        "label": "Hearing care for professionals: meetings, calls and listening fatigue",
+        "href": "/hearing-care-professionals-meetings-calls"
+      },
+      {
+        "label": "Hearing loss and cognitive effort: why listening can feel exhausting",
+        "href": "/hearing-loss-cognitive-effort-listening-fatigue"
       }
     ],
     "blogMeta": {
@@ -1107,24 +1123,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/one-ear-hearing-loss-when-to-get-checked"
       },
       {
-        "label": "Lenire for Tinnitus: Who Might Be a Candidate?",
-        "href": "/lenire-for-tinnitus-candidate-guide"
-      },
-      {
-        "label": "Hearing Aid Domes, Wax Guards, and Receivers Explained",
-        "href": "/hearing-aid-domes-wax-guards-receivers"
-      },
-      {
         "label": "Tinnitus Management",
         "href": "/how-we-can-help/tinnitus-management"
       },
       {
         "label": "Earwax Removal",
         "href": "/how-we-can-help/earwax-removal"
-      },
-      {
-        "label": "Executive Assistance",
-        "href": "/how-we-can-help/executive-assistance"
       },
       {
         "label": "Somers, NY office",
@@ -1137,6 +1141,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Understanding hearing loss at 4,000 Hz",
         "href": "/understanding-hearing-loss-at-4000-hz"
+      },
+      {
+        "label": "Why can I hear people talking but not understand the words?",
+        "href": "/hear-people-talking-not-understand-words"
+      },
+      {
+        "label": "Sensorineural hearing loss",
+        "href": "/hearing-loss/sensorineural-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -1237,6 +1249,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Sudden hearing loss: signs and what to do",
         "href": "/hearing-loss/sudden-hearing-loss"
+      },
+      {
+        "label": "Tinnitus in one ear",
+        "href": "/how-we-can-help/tinnitus-management/one-ear"
       }
     ],
     "blogMeta": {
@@ -1337,6 +1353,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Sudden hearing loss: signs and what to do",
         "href": "/hearing-loss/sudden-hearing-loss"
+      },
+      {
+        "label": "Psoriasis affects more than your skin",
+        "href": "/psoriasis-affects-more-than-your-skin"
       }
     ],
     "blogMeta": {
@@ -1581,6 +1601,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Tinnitus in one ear",
+        "href": "/how-we-can-help/tinnitus-management/one-ear"
       }
     ],
     "blogMeta": {
@@ -1697,6 +1721,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "What is the 60-60 rule in audiology?",
         "href": "/what-is-the-60-60-rule-in-audiology"
+      },
+      {
+        "label": "Why is my tinnitus getting louder?",
+        "href": "/how-we-can-help/tinnitus-management/getting-louder"
       }
     ],
     "blogMeta": {
@@ -2057,6 +2085,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Lenire for tinnitus",
         "href": "/how-we-can-help/lenire-for-tinnitus"
+      },
+      {
+        "label": "Why is my tinnitus getting louder?",
+        "href": "/how-we-can-help/tinnitus-management/getting-louder"
       }
     ],
     "blogMeta": {
@@ -2131,20 +2163,8 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/ear-pressure-and-hearing-loss-evaluation"
       },
       {
-        "label": "How Often Should Hearing Aids Be Professionally Cleaned?",
-        "href": "/how-often-professional-hearing-aid-cleaning"
-      },
-      {
-        "label": "How Much Do Hearing Aids Cost in Westchester County?",
-        "href": "/hearing-aid-cost-westchester-county"
-      },
-      {
         "label": "Comprehensive Hearing Assessments",
         "href": "/how-we-can-help/comprehensive-hearing-assessments"
-      },
-      {
-        "label": "Advanced Hearing Aid Technology",
-        "href": "/how-we-can-help/advanced-hearing-aid-technology"
       },
       {
         "label": "Hearing Aid Tune-Ups",
@@ -2169,6 +2189,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Tinnitus at night: why it feels louder",
         "href": "/tinnitus-at-night-why-louder"
+      },
+      {
+        "label": "Tinnitus relief exercises and sleep strategies",
+        "href": "/how-we-can-help/tinnitus-management/relief-exercises-and-sleep"
+      },
+      {
+        "label": "Tinnitus after loud noise: what to do next",
+        "href": "/tinnitus-after-loud-noise-what-to-do"
+      },
+      {
+        "label": "Can hearing aids help tinnitus?",
+        "href": "/can-hearing-aids-help-tinnitus"
       }
     ],
     "blogMeta": {
@@ -2281,6 +2313,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Ear fullness but no pain: could it be hearing loss?",
+        "href": "/ear-fullness-no-pain-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -2355,18 +2391,6 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/ear-fullness-no-pain-hearing-loss"
       },
       {
-        "label": "How Long Should Hearing Aid Batteries Last?",
-        "href": "/how-long-hearing-aid-batteries-last"
-      },
-      {
-        "label": "What Questions Should You Ask Before Buying Hearing Aids?",
-        "href": "/questions-before-buying-hearing-aids"
-      },
-      {
-        "label": "Hearing Aid Tune-Ups",
-        "href": "/how-we-can-help/hearing-aid-tune-ups"
-      },
-      {
         "label": "Tinnitus Management",
         "href": "/how-we-can-help/tinnitus-management"
       },
@@ -2375,8 +2399,20 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/how-we-can-help/earwax-removal"
       },
       {
-        "label": "Greenwich, CT",
-        "href": "/greenwich-ct"
+        "label": "Dizziness or ringing in your ears: what to know",
+        "href": "/dizziness-and-ringing-in-your-ears"
+      },
+      {
+        "label": "Why sudden hearing loss should not wait",
+        "href": "/sudden-hearing-loss-why-not-wait"
+      },
+      {
+        "label": "Ringing in one ear: causes, red flags and next steps",
+        "href": "/ringing-in-one-ear-red-flags-next-steps"
+      },
+      {
+        "label": "Audiologist or ENT: who to see first",
+        "href": "/audiologist-vs-ent-for-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -2497,6 +2533,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Ear pressure and hearing loss: when to schedule an evaluation",
+        "href": "/ear-pressure-and-hearing-loss-evaluation"
       }
     ],
     "blogMeta": {
@@ -2729,6 +2769,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Hearing aid instructional videos by brand",
+        "href": "/instructional-videos"
       }
     ],
     "blogMeta": {
@@ -2995,28 +3039,24 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/how-long-hearing-aid-batteries-last"
       },
       {
-        "label": "AirPods as Hearing Aids: What They Can and Can’t Do",
-        "href": "/airpods-as-hearing-aids"
-      },
-      {
-        "label": "Hearing Protection for Concerts: Musician Earplugs vs Foam Plugs",
-        "href": "/hearing-protection-concerts-musician-vs-foam"
-      },
-      {
-        "label": "Tinnitus Therapy",
-        "href": "/tinnitus-therapy"
-      },
-      {
-        "label": "Hearing Protection",
-        "href": "/hearing-protection"
-      },
-      {
         "label": "Hearing Aid Repair",
         "href": "/hearing-aid-repair"
       },
       {
-        "label": "White Plains, NY",
-        "href": "/White-Plains-NY"
+        "label": "Hearing aid batteries and accessories FAQ",
+        "href": "/batteries-and-accessories"
+      },
+      {
+        "label": "Hearing aid instructional videos by brand",
+        "href": "/instructional-videos"
+      },
+      {
+        "label": "Hearing aid sounds weak: wax, moisture or programming?",
+        "href": "/hearing-aid-sounds-weak"
+      },
+      {
+        "label": "How often should hearing aids be professionally cleaned?",
+        "href": "/how-often-professional-hearing-aid-cleaning"
       }
     ],
     "blogMeta": {
@@ -3091,18 +3131,6 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/rechargeable-vs-battery-hearing-aids"
       },
       {
-        "label": "Costco Hearing Aids vs Audiologist Care: What to Compare",
-        "href": "/costco-hearing-aids-vs-audiologist-care"
-      },
-      {
-        "label": "Best Hearing Protection for Power Tools, Yard Work, and DIY Projects",
-        "href": "/hearing-protection-power-tools-yard-work"
-      },
-      {
-        "label": "Hearing Protection",
-        "href": "/hearing-protection"
-      },
-      {
         "label": "Hearing Aid Repair",
         "href": "/hearing-aid-repair"
       },
@@ -3113,6 +3141,22 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Scarsdale, NY",
         "href": "/Scarsdale-NY"
+      },
+      {
+        "label": "Hearing aid not charging? Common causes and next steps",
+        "href": "/hearing-aid-not-charging"
+      },
+      {
+        "label": "Hearing aid batteries and accessories FAQ",
+        "href": "/batteries-and-accessories"
+      },
+      {
+        "label": "Domes, wax guards and receivers explained",
+        "href": "/hearing-aid-domes-wax-guards-receivers"
+      },
+      {
+        "label": "How often should hearing aids be professionally cleaned?",
+        "href": "/how-often-professional-hearing-aid-cleaning"
       }
     ],
     "blogMeta": {
@@ -3191,10 +3235,6 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/hearing-aid-cost-westchester-county"
       },
       {
-        "label": "How Loud Is Too Loud? Decibels, Daily Noise, and Hearing Risk",
-        "href": "/how-loud-is-too-loud-decibels"
-      },
-      {
         "label": "Hearing Aid Repair",
         "href": "/hearing-aid-repair"
       },
@@ -3207,8 +3247,12 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/how-we-can-help/comprehensive-hearing-assessments"
       },
       {
-        "label": "Greenwich, CT",
-        "href": "/greenwich-ct"
+        "label": "How long should hearing aid batteries last?",
+        "href": "/how-long-hearing-aid-batteries-last"
+      },
+      {
+        "label": "Hearing aid not charging? Common causes and next steps",
+        "href": "/hearing-aid-not-charging"
       }
     ],
     "blogMeta": {
@@ -3433,6 +3477,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Ways to wear hearing aids more discreetly",
         "href": "/8-expert-tips-to-conceal-your-hearing-aids-discreetly"
+      },
+      {
+        "label": "Common misconceptions about hearing loss",
+        "href": "/hearing-loss-misconceptions"
       }
     ],
     "blogMeta": {
@@ -3649,6 +3697,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
         "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
+      },
+      {
+        "label": "Prescription vs OTC hearing aids: how to compare",
+        "href": "/prescription-vs-otc-hearing-aids"
+      },
+      {
+        "label": "Are OTC hearing aids right for me?",
+        "href": "/are-otc-hearing-aids-right-for-me"
       }
     ],
     "blogMeta": {
@@ -3727,20 +3783,8 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/how-many-follow-up-visits-new-hearing-aids"
       },
       {
-        "label": "Do I Need a Hearing Test or Just Earwax Removal?",
-        "href": "/hearing-test-or-earwax-removal"
-      },
-      {
         "label": "Tinnitus Management",
         "href": "/how-we-can-help/tinnitus-management"
-      },
-      {
-        "label": "Earwax Removal",
-        "href": "/how-we-can-help/earwax-removal"
-      },
-      {
-        "label": "Executive Assistance",
-        "href": "/how-we-can-help/executive-assistance"
       },
       {
         "label": "Somers, NY office",
@@ -3757,6 +3801,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
         "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
+      },
+      {
+        "label": "Bluetooth hearing aids: what to know before buying",
+        "href": "/bluetooth-hearing-aids-before-buying"
+      },
+      {
+        "label": "Are OTC hearing aids right for me?",
+        "href": "/are-otc-hearing-aids-right-for-me"
+      },
+      {
+        "label": "Samsung Galaxy Buds hearing aid feature: what patients ask",
+        "href": "/samsung-galaxy-buds-hearing-aid-feature"
       }
     ],
     "blogMeta": {
@@ -3877,6 +3933,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Elehear Beyond 2 Pro vs. prescription hearing aids: a Westchester decision guide",
         "href": "/elehear-beyond-2-pro-vs-prescription-hearing-aids"
+      },
+      {
+        "label": "Costco hearing test: the appointment and what it includes",
+        "href": "/how-much-does-costco-charge-for-a-hearing-test"
       }
     ],
     "blogMeta": {
@@ -4205,6 +4265,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "The 6 hearing aid platforms of fall 2026, compared",
         "href": "/best-ai-hearing-aids-fall-2026"
+      },
+      {
+        "label": "Hearing loss and hearing aid questions, answered",
+        "href": "/get-answers"
       }
     ],
     "blogMeta": {
@@ -4305,6 +4369,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "The 6 hearing aid platforms of fall 2026, compared",
         "href": "/best-ai-hearing-aids-fall-2026"
+      },
+      {
+        "label": "Why choose our hearing doctors",
+        "href": "/why-choose-us"
       }
     ],
     "blogMeta": {
@@ -4379,16 +4447,8 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/how-many-follow-up-visits-new-hearing-aids"
       },
       {
-        "label": "Should Kids and Teens Use Ear Protection at Concerts and Sports?",
-        "href": "/kids-teens-ear-protection-concerts-sports"
-      },
-      {
         "label": "How to Talk to a Parent Who May Need Hearing Help",
         "href": "/how-to-talk-to-parent-about-hearing-help"
-      },
-      {
-        "label": "Hearing Protection",
-        "href": "/hearing-protection"
       },
       {
         "label": "Hearing Aid Repair",
@@ -4401,6 +4461,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Westchester County, NY",
         "href": "/areas-we-serve/westchester-county-ny"
+      },
+      {
+        "label": "Why real-ear verification matters",
+        "href": "/why-real-ear-verification-matters"
+      },
+      {
+        "label": "Why new hearing aids sound strange at first",
+        "href": "/why-new-hearing-aids-sound-strange"
+      },
+      {
+        "label": "How far should a hearing aid go in?",
+        "href": "/how-far-do-you-push-hearing-aid-in"
       }
     ],
     "blogMeta": {
@@ -4475,14 +4547,6 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
         "href": "/why-new-hearing-aids-sound-strange"
       },
       {
-        "label": "What Is Noise-Induced Hearing Loss and Can It Be Prevented?",
-        "href": "/noise-induced-hearing-loss-prevention"
-      },
-      {
-        "label": "Is Hearing Loss Normal With Age? What Is and Isn’t Normal",
-        "href": "/is-hearing-loss-normal-with-age"
-      },
-      {
         "label": "Hearing Aid Repair",
         "href": "/hearing-aid-repair"
       },
@@ -4497,6 +4561,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Harrison, NY office",
         "href": "/harrison-ny"
+      },
+      {
+        "label": "Hearing aid adjustments in Westchester: why in-person visits matter",
+        "href": "/hearing-aid-adjustments-westchester"
+      },
+      {
+        "label": "What to expect during a hearing aid fitting appointment",
+        "href": "/what-to-expect-hearing-aid-fitting"
+      },
+      {
+        "label": "Why real-ear verification matters",
+        "href": "/why-real-ear-verification-matters"
       }
     ],
     "blogMeta": {
@@ -4667,18 +4743,6 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "related": [
       {
-        "label": "Hearing Protection for Concerts: Musician Earplugs vs Foam Plugs",
-        "href": "/hearing-protection-concerts-musician-vs-foam"
-      },
-      {
-        "label": "Hearing Loss and Cognitive Effort: Why Listening Can Feel Exhausting",
-        "href": "/hearing-loss-cognitive-effort-listening-fatigue"
-      },
-      {
-        "label": "What Does High-Frequency Hearing Loss Sound Like?",
-        "href": "/what-high-frequency-hearing-loss-sounds-like"
-      },
-      {
         "label": "Comprehensive Hearing Assessments",
         "href": "/how-we-can-help/comprehensive-hearing-assessments"
       },
@@ -4693,6 +4757,18 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "White Plains, NY",
         "href": "/White-Plains-NY"
+      },
+      {
+        "label": "Why new hearing aids sound strange at first",
+        "href": "/why-new-hearing-aids-sound-strange"
+      },
+      {
+        "label": "How far should a hearing aid go in?",
+        "href": "/how-far-do-you-push-hearing-aid-in"
+      },
+      {
+        "label": "Hearing aid adjustments in Westchester: why in-person visits matter",
+        "href": "/hearing-aid-adjustments-westchester"
       }
     ],
     "blogMeta": {
@@ -4801,6 +4877,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing aids for musicians",
         "href": "/musician-hearing-aids-westchester"
+      },
+      {
+        "label": "Ear Gear custom earplugs and earmolds",
+        "href": "/products/eargear"
+      },
+      {
+        "label": "Custom hearing protection from ear impressions",
+        "href": "/how-we-can-help/hearing-protection"
       }
     ],
     "blogMeta": {
@@ -4909,6 +4993,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Preventing noise-induced hearing loss",
         "href": "/noise-induced-hearing-loss-prevention"
+      },
+      {
+        "label": "Custom hearing protection from ear impressions",
+        "href": "/how-we-can-help/hearing-protection"
       }
     ],
     "blogMeta": {
@@ -5029,6 +5117,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "What is the 60-60 rule in audiology?",
         "href": "/what-is-the-60-60-rule-in-audiology"
+      },
+      {
+        "label": "Our hearing tips: the 85 decibel line and safe listening",
+        "href": "/hearing-tips"
+      },
+      {
+        "label": "Prevent noise-induced and sensorineural hearing loss",
+        "href": "/prevent-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -5261,6 +5357,14 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "How loud is too loud?",
         "href": "/how-loud-is-too-loud-decibels"
+      },
+      {
+        "label": "Prevent noise-induced and sensorineural hearing loss",
+        "href": "/prevent-hearing-loss"
+      },
+      {
+        "label": "Noise-induced hearing loss",
+        "href": "/hearing-loss/noise-induced-hearing-loss"
       }
     ],
     "blogMeta": {

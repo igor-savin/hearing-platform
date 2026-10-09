@@ -410,7 +410,8 @@ export const comparisonPages: SitePage[] = [
       { label: "Hearing aids 101", href: "/hearing-aids-101" },
       { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
       { label: "Are OTC hearing aids right for me?", href: "/are-otc-hearing-aids-right-for-me" },
-      { label: "Latest: Elehear Beyond 2 Pro ($799 OTC) vs. Prescription Hearing Aids", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" }
+      { label: "Latest: Elehear Beyond 2 Pro ($799 OTC) vs. Prescription Hearing Aids", href: "/elehear-beyond-2-pro-vs-prescription-hearing-aids" },
+      { label: "OTC vs prescription hearing aids: real-world differences", href: "/otc-vs-prescription-hearing-aids-real-world" }
     ]
   }
 ];
