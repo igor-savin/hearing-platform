@@ -5831,5 +5831,29 @@ export const crawledPages: SitePage[] = [
     "desc": "Medicare open enrollment runs Oct 15 to Dec 7, 2026. Five hearing benefit checks for 2027, plus questions to ask if you also have Medi-Cal.",
     "h2": [],
     "paragraphs": []
+  },
+  {
+    "path": "/hearing-test-genetic-risk-hearing-loss/",
+    "title": "Hearing Test and Genetic Risk for Hearing Loss: New Study | California Hearing Center",
+    "h1": "Your Hearing Test May Hold Clues to Your Genetic Risk for Hearing Loss",
+    "desc": "A new Vanderbilt study found audiogram data revealed genes linked to hearing loss, and diagnosis codes did not. What it means for you. Book a hearing test.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/elehear-beyond-2-pro/",
+    "title": "Elehear Beyond 2 Pro: $799 OTC Hearing Aid, Explained | California Hearing Center",
+    "h1": "Elehear Beyond 2 Pro: The $799 OTC Hearing Aid With Auracast, Explained",
+    "desc": "ELEHEAR's Beyond 2 Pro OTC hearing aid costs $799. See the features, which claims are the company's own, and who should test first. Book a hearing test.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
+    "path": "/squid-hearing-loss-research/",
+    "title": "Squid Hair Cells and Hearing Loss: What Scientists Found | California Hearing Center",
+    "h1": "What Squid “Ears” Could Teach Us About Human Hearing Loss",
+    "desc": "Squid skin is covered in hair cells that look tuned like the human ear. What the study found and what it means. Protect your hearing.",
+    "h2": [],
+    "paragraphs": []
   }
 ];
