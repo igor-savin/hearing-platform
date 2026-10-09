@@ -26,6 +26,8 @@ import {
 import { ContactForm } from "@/components/ContactForm";
 import { NotifyForm } from "@/components/NotifyForm";
 import { InteractiveEarHero } from "@/components/InteractiveEarHero";
+import { PracticeFactsPage } from "@/components/PracticeFactsPage";
+import { practiceFactsPath } from "@/lib/practiceFacts";
 import { ZocdocButton } from "@/components/ZocdocButton";
 import { BlogBookingStrip } from "@/components/BlogBookingStrip";
 import {
@@ -1029,7 +1031,7 @@ function PatientReviewsBand({
           className="focus-ring mt-8 inline-flex min-h-[44px] items-center rounded-md border-2 border-[#005a9c] px-6 py-3 font-black text-[#005a9c] transition hover:bg-[#eaf4fb]"
           href="/reviews"
         >
-          Read more patient reviews
+          See all patient reviews
         </Link>
       </div>
     </section>
@@ -1390,8 +1392,6 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
-      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Hearing aid repair", href: "/hearing-aid-repair" },
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
       { label: "Signia IX", href: "/hearing-aids-brands/signia/signia-ix" },
@@ -1405,8 +1405,6 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
-      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Signia MaX vs Signia IX", href: "/hearing-aids-brands/signia/signia-max-vs-signia-ix" },
       { label: "What Signia MaX costs", href: "/hearing-aids-brands/signia/signia-max-cost" },
       { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" },
@@ -1420,8 +1418,6 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
-      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
       { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
@@ -1435,7 +1431,6 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
       { label: "What Phonak EON costs", href: "/hearing-aids-brands/phonak/phonak-eon-cost" },
@@ -1449,7 +1444,6 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
       { label: "Oticon Reveal", href: "/hearing-aids-brands/oticon/oticon-reveal" },
@@ -4537,11 +4531,18 @@ function LegacyAreaCityPlanningSection({ page }: { page: SitePage }) {
               <p>{flavor ? city.localContext : city.travelNote}</p>
               {flavor ? <p>{city.travelNote}</p> : null}
               <p>
-                Nearby communities include {city.nearby.join(", ")}. The most practical office is usually{" "}
-                <Link className="font-bold text-[#005a9c] underline" href={officePath}>
-                  {officeLocation ? nearestOfficeText(officeLocation) : "nearest Westchester office"}
-                </Link>
-                .
+                Nearby communities include {city.nearby.join(", ")}.{" "}
+                {officePath === page.path ? (
+                  "This is the most practical office for these communities."
+                ) : (
+                  <>
+                    The most practical office is usually{" "}
+                    <Link className="font-bold text-[#005a9c] underline" href={officePath}>
+                      {officeLocation ? nearestOfficeText(officeLocation) : "nearest Westchester office"}
+                    </Link>
+                    .
+                  </>
+                )}
               </p>
             </div>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -5451,7 +5452,7 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
   const paragraphs = page.body.filter(Boolean).flatMap(splitLongText);
   const highlightedSteps = detail?.appointmentSteps || [];
   const highlightedNotes = detail?.practicalNotes || page.sections.slice(0, 3);
-  const highlightedRelated = detail?.related || page.related;
+  const highlightedRelated = (detail?.related || page.related).filter((link) => link.href !== page.path);
 
   return (
     <>
@@ -6147,6 +6148,15 @@ function LivePageBody({ page }: { page: SitePage }) {
     return <PressIndexPage page={page} />;
   }
 
+  if (page.path === practiceFactsPath) {
+    return (
+      <>
+        <StandardBreadcrumbs crumbs={[{ label: "Home", href: "/" }, { label: "Practice Facts" }]} />
+        <PracticeFactsPage page={page} />
+      </>
+    );
+  }
+
   const pressFeature = pressFeatureForPath(page.path);
   if (pressFeature) {
     return <PressFeaturePage feature={pressFeature} page={page} />;
@@ -6745,7 +6755,7 @@ function LiveBrandsPage({ page }: { page: SitePage }) {
                       className="focus-ring mt-4 inline-block text-[17px] font-bold text-[#005a9c] underline underline-offset-4 hover:text-[#003f7a]"
                       href={href}
                     >
-                      Learn More About {shortName}
+                      {shortName} hearing aids
                     </Link>
                   ) : null}
                 </article>
