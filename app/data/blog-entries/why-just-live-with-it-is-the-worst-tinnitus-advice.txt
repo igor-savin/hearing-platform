@@ -30,7 +30,7 @@
     faqs: [
       ["Is tinnitus ever a sign of something serious?", "Most tinnitus is not dangerous, though a handful of patterns — sudden onset, one ear only, or a pulsing that matches your heartbeat — are worth having checked quickly. For the majority of people it is a manageable symptom rather than an emergency, but that is still a reason to have it evaluated rather than ignored."],
       ["Will the ringing ever go away completely?", "For some people it does, especially when a specific cause like earwax or a medication is behind it. For many others, the realistic goal is a little different: the tinnitus becomes quieter, less constant, or simply easier to ignore. Even that shift can hand you back your sleep and concentration."],
-      ["Do I need to have hearing loss to get help for tinnitus?", "No. Plenty of people with normal or near-normal hearing benefit from sound therapy and counseling. A [hearing evaluation](/hearing-testing/) is still the starting point because it rules loss in or out and shapes the plan, but treatment is not reserved for people who end up wearing hearing aids."],
+      ["Do I need to have hearing loss to get help for tinnitus?", "No. Plenty of people with normal or near-normal hearing benefit from sound therapy and counseling. A hearing evaluation is still the starting point because it rules loss in or out and shapes the plan, but treatment is not reserved for people who end up wearing hearing aids."],
     ],
     image: "/assets/blog/why-just-live-with-it-is-the-worst-tinnitus-advice-1.svg",
     imageLabel: "Ringing in your ears is a starting point, not a dead end",

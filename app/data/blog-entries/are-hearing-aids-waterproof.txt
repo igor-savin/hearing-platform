@@ -23,7 +23,7 @@
     faqs: [
       ["Can I wear my hearing aids in the shower?", "It is best not to. Even a highly rated device is built to resist splashes and humidity, not the direct spray and steam of a shower. Take them out beforehand and set them somewhere dry. A few minutes of quiet costs far less than a repair."],
       ["What IP rating should I look for?", "For most daily wear, an IP67 or IP68 rating gives solid protection against dust and everyday moisture. Higher is nice to have, but how you care for the device — drying it nightly, keeping it clean — matters just as much as the number printed on the box."],
-      ["My hearing aid got wet and stopped working. What now?", "Open the battery door, take out the battery, and gently pat it dry, then place it in a drying kit instead of reaching for rice or a hair dryer. If it stays silent after a full drying cycle, bring it in. Prompt [repair](/services/hearing-aid-repair/) often saves a device that seems gone."],
+      ["My hearing aid got wet and stopped working. What now?", "Open the battery door, take out the battery, and gently pat it dry, then place it in a drying kit instead of reaching for rice or a hair dryer. If it stays silent after a full drying cycle, bring it in. Prompt repair often saves a device that seems gone."],
       ["Are any hearing aids truly waterproof for swimming?", "A few are marketed for water activities, but even those set limits on depth and time, and none are meant for continuous submersion. If swimming matters to you, talk through the trade-offs before you buy; we can walk you through the options during a [fitting](/hearing-aid-fitting/) built around your routine."],
     ],
     image: "/assets/blog/are-hearing-aids-waterproof-1.svg",

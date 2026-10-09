@@ -9,7 +9,7 @@
       "Real-ear measurement checks the sound your hearing aids deliver at the eardrum, so your fitting matches your prescription instead of a factory estimate.",
     intro: [
       "Two people can leave a fitting with the same model of hearing aid, programmed to the same prescription on paper, and still hear the world differently. The reason usually is not the device. It is whether anyone measured what that device was doing once it sat inside the ear.",
-      "Real-ear measurement is that check. [A thin, soft probe tube rests in your ear canal](/what-tools-do-audiologists-use/) next to the hearing aid while real speech plays, and the equipment reads the sound level arriving at your eardrum. Your audiologist compares those readings to the targets your [hearing test](/hearing-testing/) prescribes, then adjusts until the two line up. It turns a [hearing aid fitting](/hearing-aid-fitting/) from an educated guess into something measured.",
+      "Real-ear measurement is that check. A thin, soft [probe tube](/what-tools-do-audiologists-use/) rests in your ear canal next to the hearing aid while real speech plays, and the equipment reads the sound level arriving at your eardrum. Your audiologist compares those readings to the targets your [hearing test](/hearing-testing/) prescribes, then adjusts until the two line up. It turns a [hearing aid fitting](/hearing-aid-fitting/) from an educated guess into something measured.",
       "At our San Mateo and San Carlos offices, real-ear measurement is a routine part of fitting [hearing aids](/products/hearing-aids/), not an upgrade you have to ask for. It is also one of the clearest ways to tell whether a fitting was done well.",
     ],
     takeaways: [

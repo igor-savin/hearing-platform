@@ -34,7 +34,7 @@
     faqs: [
       ["Is untreated hearing loss really a health issue, or just an inconvenience?", "It is both. The inconvenience is real, but untreated loss is also linked to isolation, low mood, greater fall risk, and cognitive decline. Not every link is proven cause, yet together they make a strong case for having your hearing checked rather than waiting."],
       ["Does treating hearing loss reverse these risks?", "Treatment reliably eases the daily costs — the fatigue, the missed conversation, the withdrawal — and those improvements show up quickly. Whether it prevents conditions like dementia is still being studied, so we will not promise that. The everyday benefits are reason enough on their own."],
-      ["I have had hearing loss for years. Is it too late to help?", "No. Treating hearing improves communication and connection at any age and after any length of time. A [hearing evaluation](/hearing-testing/) is the right first step for understanding your options, whatever your starting point."],
+      ["I have had hearing loss for years. Is it too late to help?", "No. Treating hearing improves communication and connection at any age and after any length of time. A hearing evaluation is the right first step for understanding your options, whatever your starting point."],
       ["How do I bring this up with a parent I am worried about?", "Suggest a hearing check rather than opening with concerns about memory or safety. Families often find that hearing explains part of what looked like confusion or withdrawal. [Our audiologists](/about-us/) can test gently and explain the findings without alarm."],
     ],
     image: "/assets/blog/what-are-the-health-implications-of-hearing-loss-1.svg",

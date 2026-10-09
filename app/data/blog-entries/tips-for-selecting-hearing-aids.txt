@@ -28,9 +28,9 @@
     ],
     bullets: ["Hearing test first", "Style & dexterity", "Your listening settings", "Features you'll use", "Fitting & follow-up", "Cost & insurance"],
     faqs: [
-      ["How much do hearing aids cost?", "Prices vary widely depending on the technology level and the services bundled with them. Rather than chase a single number, ask what a quote includes, because fittings, follow-up visits, and repairs often matter more than the sticker price. Checking your [insurance](/resources/insurance/) coverage first can change the picture considerably."],
+      ["How much do hearing aids cost?", "Prices vary widely depending on the technology level and the services bundled with them. Rather than chase a single number, ask what a quote includes, because fittings, follow-up visits, and repairs often matter more than the sticker price. Checking your insurance coverage first can change the picture considerably."],
       ["Are more expensive hearing aids always better?", "Not in the way the price tag implies. Higher tiers add automation and finer noise handling that genuinely help in busy, loud settings, but someone who spends most days in quiet rooms may hear just as well with a mid-range device. The goal is to match the technology to your life, not to the top of the catalog."],
-      ["Can I choose hearing aids online without seeing anyone?", "You can buy them that way, but a lot of the benefit lives in the fitting. A device programmed to your specific [hearing test](/hearing-testing/) and adjusted over a few visits tends to outperform the same hardware set up from a generic profile. If you would rather have that support close by, our team is happy to help."],
+      ["Can I choose hearing aids online without seeing anyone?", "You can buy them that way, but a lot of the benefit lives in the fitting. A device programmed to your specific hearing test and adjusted over a few visits tends to outperform the same hardware set up from a generic profile. If you would rather have that support close by, our team is happy to help."],
     ],
     image: "/assets/blog/tips-for-selecting-hearing-aids-1.svg",
     imageLabel: "A calm, step-by-step way to narrow the choices",

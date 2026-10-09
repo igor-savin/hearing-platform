@@ -29,7 +29,7 @@
     bullets: ["Conductive loss", "Middle-ear fluid", "Usually temporary", "Watch repeat infections", "Rule out earwax", "San Mateo & San Carlos"],
     faqs: [
       ["Can an ear infection cause permanent hearing loss?", "Most infections cause temporary hearing loss that clears as the fluid drains. Permanent loss is uncommon, but repeated or long-lasting infections can affect hearing over time, which is why a run of them is worth having checked."],
-      ["How long does muffled hearing last after an ear infection?", "It varies. Many people notice their hearing improve within days to a couple of weeks as the infection resolves. If it stays muffled beyond that, a [hearing evaluation](/hearing-testing/) can show whether fluid or something else is still in the way."],
+      ["How long does muffled hearing last after an ear infection?", "It varies. Many people notice their hearing improve within days to a couple of weeks as the infection resolves. If it stays muffled beyond that, a hearing evaluation can show whether fluid or something else is still in the way."],
       ["Should I remove earwax at home if my ear feels blocked?", "It's best not to dig at it with swabs, which often push wax deeper. If a blocked ear is bothering you, professional [earwax removal](/services/earwax-removal/) is safer and lets us confirm whether wax, fluid, or an infection is behind the feeling."],
       ["When is an ear infection an emergency?", "Sudden hearing loss, severe pain, high fever, drainage, or intense dizziness are reasons to seek care promptly. Sudden hearing loss is treated as urgent, so don't wait to have it looked at."],
     ],

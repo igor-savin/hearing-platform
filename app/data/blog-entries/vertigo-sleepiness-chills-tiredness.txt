@@ -12,7 +12,7 @@
       "Does vertigo make you sleepy? Can it cause chills? Learn why vertigo comes with tiredness, what chills may mean, and which signs need prompt care.",
     intro: [
       "Vertigo can leave you very tired and sleepy. The Vestibular Disorders Association (VeDA) says the brain works harder to judge where you are in space when the balance system sends wrong or confusing signals, and that costs energy. Medicines used for vertigo can also cause drowsiness. Chills are different. They are not listed as a symptom of the common inner-ear causes in the sources we read, so chills with vertigo can mean an illness such as a fever. Dizziness with a fever needs a health professional right away, says the Mayo Clinic.",
-      "This page covers the symptoms that travel with vertigo. To learn what vertigo is, read our page on [what vertigo is and what to do about it](/what-is-vertigo-and-what-can-i-do-about-it/). To sort dizziness from an eye twitch, read [dizziness and eye twitching](/dizziness-and-eye-twitching/).",
+      "This page covers the symptoms that travel with vertigo. To learn what vertigo is, read our page on [what vertigo is](/what-is-vertigo-and-what-can-i-do-about-it/) and what to do about it. To sort dizziness from an eye twitch, read [dizziness and eye twitching](/dizziness-and-eye-twitching/).",
     ],
     takeaways: [
       "Tiredness is common with vertigo. The brain works harder to stay balanced, and poor sleep makes it worse.",

@@ -18,7 +18,7 @@
       "Marin runs from bayfront towns like Sausalito, Tiburon, and Larkspur to the county seat at San Rafael, the redwood-shaded quiet of Mill Valley beneath Mount Tamalpais, and the more suburban north around Novato — with Muir Woods, Point Reyes, and open coast at the county's edges. Damp bay and marine air are a common thread that can be tough on hearing technology. Wherever in Marin you're coming from, we tailor care to your setting and make the trip over the bridge count by pairing testing, fitting, and follow-up where we can.",
     ],
     whyHere:
-      "Marin patients generally choose us for depth: advanced [tinnitus care](/tinnitus/) and Lenire, honest technology matched to real needs, and the continuity of one audiologist rather than a rotating counter. Many first came for ringing or a fitting that had never sounded right and stayed for the whole of their hearing care. For routine visits, we readily point people to a closer option.",
+      "Marin patients generally choose us for depth: advanced tinnitus care and Lenire, honest technology matched to real needs, and the continuity of one audiologist rather than a rotating counter. Many first came for ringing or a fitting that had never sounded right and stayed for the whole of their hearing care. For routine visits, we readily point people to a closer option.",
     landmarks:
       "From across Marin — Sausalito, Tiburon, San Rafael, Mill Valley, Larkspur, and Novato — the route to us runs south on Highway 101 and over the Golden Gate to our San Mateo office.",
     faqs: [

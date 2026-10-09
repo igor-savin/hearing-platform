@@ -22,7 +22,7 @@
   ],
   faqs: [
     ["Is professional earwax removal safe?", "When performed by a trained clinician who examines the ear first, removal is safe and comfortable for most people. Watching the canal directly during curettage or microsuction lowers the risk of injury compared with blind at-home tools."],
-    ["Can earwax really cause hearing loss?", "Yes. A canal fully blocked by wax can noticeably reduce hearing and create a plugged, full feeling, and it can even affect your sense of balance. This type of loss is [usually temporary and improves once the blockage is cleared](/earwax-vs-hearing-loss-when-a-simple-cleaning-solves-the-problem/)."],
+    ["Can earwax really cause hearing loss?", "Yes. A canal fully blocked by wax can noticeably reduce hearing and create a plugged, full feeling, and it can even affect your sense of balance. This type of loss is [usually temporary](/earwax-vs-hearing-loss-when-a-simple-cleaning-solves-the-problem/) and improves once the blockage is cleared."],
     ["Should I use at-home wax removal kits?", "Softening drops help some people, but irrigation kits and swabs can push wax deeper or irritate the canal, especially with narrow canals, prior ear surgery, or a perforation. If home care is not clearing it, call 650-342-9449 to have it looked at."]
   ],
   image: "/assets/service-2.png",

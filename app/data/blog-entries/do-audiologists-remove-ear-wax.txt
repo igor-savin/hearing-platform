@@ -28,7 +28,7 @@
       ["Is it safe to remove earwax at home?", "For a small, soft amount, gentle over-the-counter drops are usually fine. The trouble comes with cotton swabs, ear candles, or rigid tools, which tend to pack wax deeper or scratch the canal. If a plug will not clear after a few days of drops, that is the point to let a professional take a look."],
       ["Does professional earwax removal hurt?", "Usually it is more odd than painful. Irrigation brings a feeling of pressure and cool water, and microsuction sounds loud up close but works fast. We move slowly and stop the moment anything bothers you, so speak up and we will adjust."],
       ["How often do ears need cleaning?", "There is no fixed schedule, because production varies a lot from person to person. Many people never need help, while others build wax quickly or wear hearing aids that hold it in. If you notice fullness or fading sound every few months, a regular check makes sense."],
-      ["Can earwax really affect a hearing test?", "It can. A canal packed with wax blocks sound on its way in, which can make hearing look worse than it truly is. That is why we clear any blockage first, so your [hearing test](/hearing-testing/) measures your actual hearing rather than the wax in the way."],
+      ["Can earwax really affect a hearing test?", "It can. A canal packed with wax blocks sound on its way in, which can make hearing look worse than it truly is. That is why we clear any blockage first, so your hearing test measures your actual hearing rather than the wax in the way."],
     ],
     image: "/assets/blog/do-audiologists-remove-ear-wax-1.svg",
     imageLabel: "Safe, professional earwax removal, start to finish",

@@ -26,7 +26,7 @@
     bullets: ["3-7 year range", "Moisture & wax", "Device style", "Daily cleaning", "Timely repairs", "Repair vs. replace"],
     faqs: [
       ["How often should hearing aids be replaced?", "There is no fixed schedule, but planning around a five-year mark is reasonable for most people. Some replace sooner when their hearing changes or newer technology offers a real benefit, while others keep a well-cared-for pair going longer. The right time depends on how the devices are performing and whether they still match your hearing."],
-      ["Can a repair really extend the life of my hearing aids?", "In many cases a repair genuinely buys you more years. Clogged receivers, worn tubing, failed microphones, and cracked cases can often be serviced, and handling small problems early prevents larger failures. Our team can tell you when a [repair](/services/hearing-aid-repair/) makes sense and when replacement is the better value."],
+      ["Can a repair really extend the life of my hearing aids?", "In many cases a repair genuinely buys you more years. Clogged receivers, worn tubing, failed microphones, and cracked cases can often be serviced, and handling small problems early prevents larger failures. Our team can tell you when a repair makes sense and when replacement is the better value."],
       ["Do more expensive hearing aids last longer?", "Not necessarily, since price mostly reflects features and processing rather than raw durability. A carefully maintained mid-range device can easily outlast a premium one that is exposed to heavy moisture and never cleaned. How you care for the aids, and the style you wear, tend to matter more than the sticker price."],
     ],
     image: "/assets/blog/whats-your-hearing-aid-life-1.svg",
