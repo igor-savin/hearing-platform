@@ -10,7 +10,7 @@
     intro: [
       "You have said it three times, and your father still answers a question you never asked. Nothing is wrong with either of you — the exchange just needs a few small adjustments to land cleanly. The first strain of [hearing loss](/hearing-testing/) usually shows up in ordinary moments like this, at the dinner table or across a noisy room, well before anyone shops for a device.",
       "Much of this is within your control. Clear communication with someone who is hard of hearing depends more on how you speak and where you talk than on sheer volume. The habits below help right away, whether or not your loved one wears hearing aids yet.",
-      "None of these techniques replace an actual assessment. If the same struggles keep surfacing, our [team](/about-us/) can measure what is really happening and explain the options without any pressure. Think of good communication habits and a proper hearing check as two halves of the same effort.",
+      "None of these techniques replace an actual assessment. If the same struggles keep surfacing, [our audiologists](/about-us/) can measure what is really happening and explain the options without any pressure. Think of good communication habits and a proper hearing check as two halves of the same effort.",
     ],
     takeaways: [
       "Get the person's attention before you start speaking, and let them see your face.",

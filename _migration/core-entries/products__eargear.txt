@@ -6,7 +6,7 @@
   intro: [
     "Noise damage does not come back. That is the whole argument for this page, and it is why we spend an appointment on ear impressions for people whose hearing is currently fine.",
     "Foam plugs work when they are in and rolled correctly, which in practice means they are often working at a fraction of their rating. A custom plug is molded from an impression of your own canal, so it seals the same way every time, and it stays comfortable long enough that you keep it in through the whole shift or the whole set. Comfort is not a luxury here. It is what makes the protection happen.",
-    "We take impressions at both offices and serve patients across San Mateo, San Carlos, Burlingame, Belmont and Millbrae. Call 650-342-9449 or [contact us](/contact/) and tell us where the noise comes from."
+    "We take impressions at both offices and serve patients across San Mateo, San Carlos, [Burlingame](/areas-we-serve/burlingame/), [Belmont](/areas-we-serve/belmont/) and [Millbrae](/areas-we-serve/millbrae/). Call 650-342-9449 or [contact California Hearing Center](/contact/) and tell us where the noise comes from."
   ],
   sections: [
     ["Custom earplugs for noise", "For workshops, concerts, motorsports, firearms and other loud settings, we make solid custom plugs and filtered plugs molded to your ears. The filtered versions let you choose how much attenuation you get, so you can protect your hearing at a level that still lets you hear a colleague or a range officer. Tell us what the noise is and how long you are in it, and we will specify the filter rather than guess."],

@@ -25,7 +25,7 @@
     "Interviewed by [Hearing Review](https://hearingreview.com/practice-building/practice-management/management-strategies/strategies-for-stretching-staff-resources) in October 2026 on how audiology practices protect clinician time for patients."
   ],
   faqs: [
-    ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+    ["How do I schedule with Dr. Savin?", "Call 650-342-9449 to request an appointment with [our audiology team](/about-us/)."]
   ],
   image: "/assets/team/dr-kira-savin-audiologist-san-mateo.jpg",
   imageLabel: "Kira Savin, AuD",

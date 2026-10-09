@@ -3,7 +3,7 @@
   headline: "Peninsula Tinnitus Care in San Mateo & San Carlos",
   intro: [
     "The Peninsula is our home. Both California Hearing Center offices sit here, one at 88 N. San Mateo Drive in San Mateo and one at 1008 Laurel Street in San Carlos, which means Peninsula patients get dedicated tinnitus care close by rather than as a long-distance errand.",
-    "For neighbors in San Mateo, San Carlos, Belmont, Redwood City, Foster City, Burlingame, and the surrounding communities, that proximity makes a real difference. A tinnitus program benefits from convenient follow-up, and being minutes away removes a common barrier to sticking with the plan.",
+    "For neighbors in San Mateo, San Carlos, [Belmont](/areas-we-serve/belmont/), [Redwood City](/areas-we-serve/redwood-city/), [Foster City](/areas-we-serve/foster-city/), [Burlingame](/areas-we-serve/burlingame/), and the surrounding communities, that proximity makes a real difference. A tinnitus program benefits from convenient follow-up, and being minutes away removes a common barrier to sticking with the plan.",
     "This is the practice's core service area, so it is where we can offer the fullest, most convenient tinnitus experience: thorough evaluation, structured therapy, verified hearing aids, and Lenire for suitable candidates."
   ],
   sections: [

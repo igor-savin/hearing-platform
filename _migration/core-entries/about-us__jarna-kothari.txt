@@ -19,7 +19,7 @@
     "Holds a Bachelor's degree in Speech Language Pathology and Audiology."
   ],
   faqs: [
-    ["How do I reach the practice?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+    ["How do I reach the practice?", "Call 650-342-9449 to request an appointment with [our audiology team](/about-us/)."]
   ],
   image: "/assets/team/jarna-kothari-practice-administrator-san-mateo.jpg",
   imageLabel: "Jarna Kothari, Practice Administrator",

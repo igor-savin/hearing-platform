@@ -28,7 +28,7 @@
     faqs: [
       ["Why can I hear that people are talking but not make out the words?", "Because loudness and clarity come from different parts of speech. The low-pitched vowels that carry a voice's volume are usually still intact, so you register that someone is speaking. The high-pitched consonants that distinguish one word from the next are what you've lost, which is why speech sounds present but muddy rather than simply quiet."],
       ["Can high-frequency hearing loss be reversed?", "In the great majority of cases, no. The inner-ear hair cells tuned to high pitches don't regenerate once age or noise has damaged them, so the loss is permanent. Permanent is not the same as untreatable, though — hearing aids can replace much of the clarity those cells used to provide, and protecting your ears now keeps things from sliding further."],
-      ["What's the first step if I think this is happening to me?", "Book a hearing evaluation. It maps precisely which pitches have faded and rules out simpler causes like earwax. From there you'll have a clear picture and real options instead of guesswork. You can reach our [team](/about-us/) to set up a test whenever you're ready."],
+      ["What's the first step if I think this is happening to me?", "Book a hearing evaluation. It maps precisely which pitches have faded and rules out simpler causes like earwax. From there you'll have a clear picture and real options instead of guesswork. You can reach [our audiologists](/about-us/) to set up a test whenever you're ready."],
     ],
     image: "/assets/blog/what-is-high-frequency-hearing-loss-and-what-can-i-do-about-it-1.svg",
     imageLabel: "Consonants live in the high pitches this loss takes first",

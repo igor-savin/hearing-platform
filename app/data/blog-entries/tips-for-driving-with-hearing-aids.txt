@@ -28,7 +28,7 @@
     faqs: [
       ["Do I need special hearing aids to use these features?", "In most cases, no. A car program and Bluetooth streaming are common on current mid-range and premium devices. Older or entry-level aids may lack streaming, though many still hold a dedicated noise program. If you are not sure what yours support, bring them in and we will check."],
       ["Will streaming GPS drain my batteries faster?", "Streaming does use more power than everyday listening, so a full day of navigation and calls will shorten battery life somewhat. Rechargeable aids usually handle a normal commute with room to spare, and starting the day topped off keeps you covered. For very long trips, a phone car charger and a case that recharges the aids both help."],
-      ["Can my audiologist set this up, or do I do it myself?", "Either works, but a visit is the faster route. We can add a driving program, tune it to the noise you deal with, and pair your phone so it connects automatically. If you would rather learn to adjust things yourself, we will show you the app during the same appointment. You can [reach our team](/about-us/) to book a time."],
+      ["Can my audiologist set this up, or do I do it myself?", "Either works, but a visit is the faster route. We can add a driving program, tune it to the noise you deal with, and pair your phone so it connects automatically. If you would rather learn to adjust things yourself, we will show you the app during the same appointment. You can reach [our audiologists](/about-us/) to book a time."],
     ],
     image: "/assets/blog/tips-for-driving-with-hearing-aids-1.svg",
     imageLabel: "Settings that make the drive quieter and easier",

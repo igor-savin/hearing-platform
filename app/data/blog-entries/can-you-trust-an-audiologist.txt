@@ -9,7 +9,7 @@
     intro: [
       "Before you hand your hearing to anyone, it is reasonable to ask what makes an audiologist worth trusting. Hearing care is rarely one appointment and done; it tends to be a relationship that runs for years, through follow-up visits, adjustments, and the occasional repair. That makes the person across the desk matter as much as the technology. A sensible place to start is a proper [hearing evaluation](/hearing-testing/), because how a provider handles the testing tells you a great deal about how they will handle everything after.",
       "Trust in this field rests on a few concrete things you can check rather than a feeling you have to take on faith. Credentials, who owns the practice, how testing is done, and what happens once the sale is over are all fair questions, and a provider worth your time will welcome them. You are allowed to interview the person who wants to care for your ears.",
-      "None of this requires you to become an expert. It asks only that you learn which signals point to careful, honest care and which point the other way. You can meet our [team](/about-us/) and judge for yourself, and the same yardstick works anywhere you look.",
+      "None of this requires you to become an expert. It asks only that you learn which signals point to careful, honest care and which point the other way. You can [meet our audiologists](/about-us/) and judge for yourself, and the same yardstick works anywhere you look.",
     ],
     takeaways: [
       "A licensed audiologist holds a doctoral degree (AuD) and a state license, both of which you can verify.",

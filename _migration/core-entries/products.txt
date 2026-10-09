@@ -13,7 +13,7 @@
     ["Independent, brand-agnostic advice", "We are not tied to one manufacturer. That freedom lets us compare platforms honestly and choose the one that genuinely fits you, rather than the one a single supplier wants us to sell. Browse our [hearing aid brands](/products/hearing-aids-by-brand/)."],
     ["Programmed, then verified", "A product is only as good as its programming. We use real-ear measurement during the [fitting](/hearing-aid-fitting/) to confirm each device delivers the right output across pitches for your specific ears, and we adjust until it does."],
     ["Support for tinnitus, too", "Tinnitus brings a good many patients through the door. Several of the devices we carry double as sound therapy tools, and we set those up as part of a broader tinnitus care plan."],
-    ["Serving the Peninsula", "We see patients from San Mateo, San Carlos, Burlingame, Belmont and Millbrae. Both offices run the same equipment and the same protocol, so book whichever one is easier to park at."]
+    ["Serving the Peninsula", "We see patients from San Mateo, San Carlos, [Burlingame](/areas-we-serve/burlingame/), [Belmont](/areas-we-serve/belmont/) and [Millbrae](/areas-we-serve/millbrae/). Both offices run the same equipment and the same protocol, so book whichever one is easier to park at."]
   ],
   bulletLinks: [
     ["Hearing aids overview", "/products/hearing-aids/"],

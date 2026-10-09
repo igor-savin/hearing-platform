@@ -2,7 +2,7 @@
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Tinnitus Care for San Francisco Patients",
   intro: [
-    "San Francisco patients are well positioned for our tinnitus care. Our offices are a short drive south on the Peninsula, in San Mateo and San Carlos, typically about 20 to 30 minutes from the city depending on where you start and on traffic.",
+    "[San Francisco](/areas-we-serve/san-francisco/) patients are well positioned for our tinnitus care. Our offices are a short drive south on the Peninsula, in San Mateo and San Carlos, typically about 20 to 30 minutes from the city depending on where you start and on traffic.",
     "That closeness makes a difference. A structured tinnitus program relies on periodic follow-up, and a manageable trip down the 101 or 280 means the visits after your first evaluation stay realistic rather than daunting.",
     "For city residents who want a dedicated tinnitus focus, verified hearing aids, and options such as Lenire, the modest drive south often buys a level of specialized attention that is worth the trip."
   ],

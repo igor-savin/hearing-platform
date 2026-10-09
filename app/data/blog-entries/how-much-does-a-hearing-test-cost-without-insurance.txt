@@ -10,7 +10,7 @@
     intro: [
       "The bill people picture for a hearing test and the one they actually receive rarely line up. Many expect a hospital-grade charge and are surprised to learn that a first check is frequently free, or close to it. That mismatch is worth clearing up, because worrying about an unknown cost keeps some people from booking a [hearing evaluation](/hearing-testing/) they would benefit from.",
       "Here is the honest answer: there is no single national price, because a hearing test is not one thing. A brief screening and a full diagnostic evaluation sit at different points on the scale, and providers set their own self-pay rates. Cost also shifts by region and by how much of your history the appointment covers. Even without coverage, our [insurance and payment](/resources/insurance/) page and a quick call can tell you what to expect before you commit.",
-      "For anyone paying out of pocket, the most useful first step is usually the least expensive one. A short conversation with our office can sort out whether you need a quick screening or the full workup, and roughly what each runs. You can [reach the team](/contact/) to ask before you ever sit in the booth.",
+      "For anyone paying out of pocket, the most useful first step is usually the least expensive one. A short conversation with our office can sort out whether you need a quick screening or the full workup, and roughly what each runs. You can [contact our offices](/contact/) to ask before you ever sit in the booth.",
     ],
     takeaways: [
       "There is no single price: a quick screening is often free or low-cost, while a full diagnostic evaluation costs more.",

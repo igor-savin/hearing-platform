@@ -28,7 +28,7 @@
     faqs: [
       ["How do I know which style of hearing aid is right for me?", "It comes down to your hearing loss, your dexterity, and how much the look matters to you. Stronger losses and less nimble fingers often do better with a slightly larger behind-the-ear style, while milder losses open up smaller, more discreet options. An audiologist can match the style to both your test results and your daily habits."],
       ["Are more expensive hearing aids always better?", "Price mostly reflects the number of advanced features, not the quality of the core sound. A mid-range device that is well fitted to your hearing will serve you better than a premium one that never gets tuned properly. Put your money toward the features you will genuinely use, and toward the person doing the fitting."],
-      ["Can I get help choosing without committing to buy?", "You can. A consultation is about understanding your hearing and your options, not signing anything. You are welcome to [reach out to our San Mateo or San Carlos team](/contact/) to talk through what would suit you before you decide."],
+      ["Can I get help choosing without committing to buy?", "You can. A consultation is about understanding your hearing and your options, not signing anything. You are welcome to [contact our San Mateo or San Carlos office](/contact/) to talk through what would suit you before you decide."],
     ],
     image: "/assets/blog/what-to-consider-when-choosing-a-hearing-aid-1.svg",
     imageLabel: "Matching the device to your ears, your hearing, and your day",

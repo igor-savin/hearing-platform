@@ -4,7 +4,7 @@
   intro: [
     "When everyday sounds feel uncomfortably loud, sharp, or even painful, it can quickly affect sleep, work, relationships, and your willingness to leave the house. California Hearing Center helps Bay Area patients understand what is driving sound sensitivity and build an evidence-based plan to rebuild comfort with sound, at your pace.",
     "Many people feel stuck between avoiding sound because it hurts and needing sound because silence can make tinnitus or anxiety feel worse. That is why we focus on a plan that is both safe and realistic for daily life.",
-    "We serve San Mateo, San Carlos, San Francisco, the Peninsula, the South Bay, and the East Bay. If tinnitus is also part of your picture, our [tinnitus resources](/tinnitus/) work hand in hand with this page."
+    "We serve San Mateo, San Carlos, [San Francisco](/areas-we-serve/san-francisco/), the Peninsula, the South Bay, and the East Bay. If tinnitus is also part of your picture, our [tinnitus resources](/tinnitus/) work hand in hand with this page."
   ],
   sections: [
     ["What hyperacusis is", "Hyperacusis is a type of decreased sound tolerance. It can make ordinary sounds, such as dishes clinking, a child's voice, a coffee grinder, traffic, or transit announcements, feel disproportionately intense, uncomfortable, or painful. It is not the same as simply disliking noise; the volume that most people tolerate easily can feel like too much."],

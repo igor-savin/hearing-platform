@@ -21,7 +21,7 @@
     "Board certified by the American Academy of Audiology and licensed in New York State."
   ],
   faqs: [
-    ["How do I schedule with Dr. Ratner?", "Call 650-342-9449 to request an appointment with our [team](/about-us/)."]
+    ["How do I schedule with Dr. Ratner?", "Call 650-342-9449 to request an appointment with [our audiology team](/about-us/)."]
   ],
   image: "/assets/team/dr-jennifer-ratner-audiologist-san-mateo.jpg",
   imageLabel: "Jennifer Ratner, AuD",

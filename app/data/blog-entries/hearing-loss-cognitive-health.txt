@@ -29,7 +29,7 @@
     faqs: [
       ["Can hearing loss make me feel more forgetful?", "It genuinely can, in a roundabout way. When words are hard to catch, your brain spends effort decoding them instead of storing them, so conversations do not stick the way they should. That can look and feel like forgetfulness even when memory itself is fine. Improving how well you hear often clears up a good part of it."],
       ["Does that mean treating my hearing will prevent memory problems?", "That is a bigger claim than the evidence can back, and we would not make it. Hearing aids reliably ease listening and help you stay socially connected, both of which matter for daily sharpness. Whether treatment shifts the long-term picture of brain health is something researchers are still studying."],
-      ["I am tired after social events but hear okay one-on-one. Should I get checked?", "Yes, that pattern is worth a look. Many people manage fine in quiet, close settings and only struggle when background noise and several voices pile up. A [hearing evaluation](/hearing-testing/) can measure exactly that kind of listening, and our [team](/about-us/) can explain what the results suggest for your everyday life."],
+      ["I am tired after social events but hear okay one-on-one. Should I get checked?", "Yes, that pattern is worth a look. Many people manage fine in quiet, close settings and only struggle when background noise and several voices pile up. A [hearing evaluation](/hearing-testing/) can measure exactly that kind of listening, and [our audiologists](/about-us/) can explain what the results suggest for your everyday life."],
     ],
     image: "/assets/blog/hearing-loss-cognitive-health-1.svg",
     imageLabel: "Clear hearing lightens the everyday mental load",
