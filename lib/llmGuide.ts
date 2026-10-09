@@ -14,7 +14,8 @@ const priorityPaths = [
   "/audiologist-vs-ent-for-hearing-loss",
   "/hearing-screening-vs-hearing-test",
   "/prescription-vs-otc-hearing-aids",
-  "/meet-the-team"
+  "/meet-the-team",
+  "/practice-facts"
 ];
 
 const comparisonPaths = [

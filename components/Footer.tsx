@@ -94,9 +94,27 @@ export function Footer() {
           <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/patient-forms">
             Patient Forms
           </Link>
+          <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/practice-facts">
+            Practice Facts
+          </Link>
           <Link className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="/privacy">
             Privacy
           </Link>
+        </nav>
+
+        <nav aria-label="Social media" className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[16px] leading-tight">
+          <a className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="https://www.facebook.com/AAofW" rel="noopener noreferrer" target="_blank">
+            Facebook
+          </a>
+          <a className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="https://www.instagram.com/westchesteraudiology/" rel="noopener noreferrer" target="_blank">
+            Instagram
+          </a>
+          <a className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="https://www.threads.com/@westchesteraudiology" rel="noopener noreferrer" target="_blank">
+            Threads
+          </a>
+          <a className="focus-ring inline-flex min-h-[44px] items-center px-2 text-[#005a9c] underline" href="https://twitter.com/audiologyassoci" rel="noopener noreferrer" target="_blank">
+            X
+          </a>
         </nav>
 
         <p className="mt-[42px] text-[19px] leading-tight text-[#333]">
