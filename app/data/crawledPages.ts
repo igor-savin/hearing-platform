@@ -17,6 +17,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/ai-tools-terms/",
+    "title": "AI Tools Terms of Service | California Hearing Center",
+    "h1": "AI Tools Terms of Service",
+    "desc": "Terms of Service for the informational AI hearing and balance tools from California Hearing Center, including tools offered through ChatGPT.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/products/",
     "title": "Products | California Hearing Center",
     "h1": "Products",

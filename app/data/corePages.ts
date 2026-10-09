@@ -315,6 +315,31 @@ const rawCorePages: Record<string, PageContent> = {
   imageLabel: "Lais Ama, Director of Hearing Aid Services",
   imageAlt: "Lais Ama, Director of Hearing Aid Services at California Hearing Center",
 },
+  "/ai-tools-terms/": {
+  kicker: "Legal",
+  headline: "AI Tools Terms of Service",
+  intro: [
+    "Effective date: October 9, 2026.",
+    "These Terms of Service apply to informational AI-powered screening and educational tools provided by California Hearing Center and Audiology Services, Inc. (\"California Hearing Center,\" \"we,\" or \"us\"), including tools made available through ChatGPT and other supported platforms."
+  ],
+  sections: [
+    ["1. Purpose of our tools", "Our AI tools provide general educational information about hearing, tinnitus, dizziness, balance, hearing aids, and related topics. Some tools may ask structured questions to help users understand possible next steps or when to seek professional evaluation. These tools are intended for informational purposes only. They do not provide a medical diagnosis, medical treatment, or a substitute for a professional healthcare evaluation."],
+    ["2. Medical disclaimer", "Information provided by our AI tools should not be interpreted as individualized medical advice. Do not use these tools to diagnose a condition, delay medical care, or make treatment decisions without consulting an appropriate healthcare professional. For a medical emergency, call 911 or your local emergency number. Sudden severe dizziness, new weakness, difficulty speaking, sudden vision changes, fainting, or other serious neurological symptoms may require immediate medical attention."],
+    ["3. Eligibility and appropriate use", "Our tools are intended for adults aged 18 and older. Parents and guardians seeking guidance about a child's hearing or balance concerns should contact a qualified healthcare professional. Users agree not to misuse the tools, attempt unauthorized access, interfere with their operation, or provide another person's personal information without appropriate authorization."],
+    ["4. Accuracy and limitations", "Our tools may use automated systems and third-party AI platforms. Responses may be incomplete, outdated, or incorrect. We do not guarantee the accuracy, completeness, or suitability of AI-generated responses for any individual circumstances."],
+    ["5. Privacy and personal information", "Use of our AI tools is subject to our AI Tools Privacy Notice and the applicable privacy policies of the platform through which the tools are accessed. Do not enter medical records, insurance identifiers, Social Security numbers, or other highly sensitive personal information into these tools. Our website [Privacy Policy](/privacy-policy/) explains how we handle information collected through this website."],
+    ["6. Appointments and clinical services", "Using an AI tool does not establish a patient-provider relationship with California Hearing Center. Any evaluation, consultation, or treatment provided by California Hearing Center is governed by applicable clinical policies and patient privacy notices."],
+    ["7. Third-party services", "Some tools operate through third-party services, including ChatGPT and independently hosted technology infrastructure. These third-party services may have separate terms and privacy practices."],
+    ["8. Availability and changes", "We may update, suspend, or discontinue an AI tool at any time. We may also revise these terms by posting an updated version on this page."],
+    ["9. Contact information", "California Hearing Center, 88 N. San Mateo Drive, San Mateo, CA 94401. Phone: (650) 342-9449. Website: [calhearing.com](https://calhearing.com). Contact: [calhearing.com/contact](/contact/)."]
+  ],
+  bulletLinks: [
+    ["Contact the practice", "/contact/"],
+    ["Website Privacy Policy", "/privacy-policy/"]
+  ],
+  image: "/assets/logo-alt.png",
+  imageLabel: "Terms for our AI tools",
+},
   "/areas-we-serve/": {
   kicker: "Areas We Serve",
   headline: "Hearing Care Across the Bay Area",

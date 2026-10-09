@@ -448,6 +448,7 @@ export const contentDates: Record<string, string> = {
   "/preparing-for-a-big-life-event-with-new-hearing-aids-weddings-travel-reunions/": "2026-09-21",
   "/preparing-for-a-hearing-aid-fitting/": "2026-07-23",
   "/privacy-policy/": "2026-07-26",
+  "/ai-tools-terms/": "2026-10-09",
   "/products/": "2026-08-25",
   "/products/eargear/": "2026-08-25",
   "/products/hearing-aids-by-brand/": "2026-08-25",
