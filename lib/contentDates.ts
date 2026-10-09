@@ -66,7 +66,7 @@ export const contentDates: Record<string, ContentDate> = {
   "/how-to-choose-tinnitus-specialist-westchester": { published: "2026-07-15", modified: "2026-10-07" },
   "/how-to-make-hearing-aids-more-comfortable": { published: "2026-07-14", modified: "2026-08-25" },
   "/how-to-talk-to-parent-about-hearing-help": { published: "2026-07-14", modified: "2026-10-07" },
-  "/in-the-news": { published: "2026-09-16", modified: "2026-09-17" },
+  "/in-the-news": { published: "2026-09-16", modified: "2026-10-08" },
   "/in-the-news/celebrate-somers-2026": { published: "2026-09-16", modified: "2026-09-18" },
   "/invisible-cochlear-implant-med-el-tici-unico": { published: "2026-09-30", modified: "2026-10-07" },
   "/invisible-hearing-aids-pros-cons-candidacy": { published: "2026-07-14", modified: "2026-10-07" },

@@ -116,6 +116,40 @@ export const celebrateSomers2026: PressFeature = {
 
 export const pressFeatures: PressFeature[] = [celebrateSomers2026];
 
+// Coverage that lives on someone else's website: trade press and awards. There
+// is no clipping to show, so these are listed on /in-the-news as outside links
+// with our own summary. Newest first. Add the clinician's slug so the entry
+// links back to their profile.
+export type OnlineCoverage = {
+  headline: string;
+  publication: string;
+  url: string;
+  dateLabel: string;
+  summary: string;
+  providerSlug: string;
+};
+
+export const onlineCoverage: OnlineCoverage[] = [
+  {
+    headline: "Strategies for Stretching Staff Resources",
+    publication: "Hearing Review",
+    url: "https://hearingreview.com/practice-building/practice-management/management-strategies/strategies-for-stretching-staff-resources",
+    dateLabel: "October 7, 2026",
+    summary:
+      "Dr. Kira Savin was interviewed for this Hearing Review story on how audiology practices make the most of limited staff time. She spoke about block scheduling, training front-office staff to triage calls, drop-off repairs, working with audiology students, and how the rules on audiology assistants differ between California and New York.",
+    providerSlug: "kira-savin"
+  },
+  {
+    headline: "The Business Council of Westchester Announces the 2018 Rising Stars",
+    publication: "Business Council of Westchester",
+    url: "https://thebcw.org/news/the-business-council-of-westchester-announces-the-2018-rising-stars/",
+    dateLabel: "May 7, 2018",
+    summary:
+      "The Business Council of Westchester named Dr. Kira Savin to its 2018 class of 40 Under 40 Rising Stars. The announcement lists her under her earlier name, Kira Pozdnyakova, as Doctor of Audiology, CEO and Co-Owner of Audiology Associates of Westchester.",
+    providerSlug: "kira-savin"
+  }
+];
+
 export function pressFeaturePath(feature: PressFeature) {
   return `${pressRootPath}/${feature.slug}`;
 }
@@ -134,7 +168,7 @@ const pressIndexPage: SitePage = {
   title: "In the News",
   metaTitle: titleWithBrand("In the News"),
   metaDescription:
-    "Press coverage of Audiology Associates of Westchester, including our feature in the Celebrate Somers 2026 edition. Hearing care in Somers and Harrison, NY.",
+    "Press coverage of Audiology Associates of Westchester: Celebrate Somers 2026, Hearing Review and a Rising Stars award. Hearing care in Somers and Harrison, NY.",
   h1: "In the news",
   type: "educational",
   // Fallback only. lib/contentDates.ts replaces these once the page is committed.
@@ -152,6 +186,11 @@ const pressIndexPage: SitePage = {
       question: "Where has Audiology Associates of Westchester been featured?",
       answer:
         "Most recently in the Celebrate Somers 2026 edition, where Dr. Jennifer Ratner talked about hearing loss, hearing evaluations, hearing aid fitting and tinnitus care."
+    },
+    {
+      question: "Has Dr. Kira Savin been in the news?",
+      answer:
+        "Yes. Dr. Savin was interviewed by Hearing Review in October 2026 about how audiology practices use staff time well. She was also named to the Business Council of Westchester's 40 Under 40 Rising Stars in 2018."
     }
   ],
   related: [

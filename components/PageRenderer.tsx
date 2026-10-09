@@ -8,6 +8,7 @@ import {
   pressEventIsUpcoming,
   pressFeatureForPath,
   pressFeaturePath,
+  onlineCoverage,
   pressFeatures,
   pressRootPath,
   type PressFeature
@@ -5747,6 +5748,38 @@ function PressIndexPage({ page }: { page: SitePage }) {
           ))}
         </div>
       </section>
+      {onlineCoverage.length ? (
+        <section className="bg-[#dbe9f3] py-14">
+          <div className="mx-auto max-w-[1100px] px-6">
+            <h2 className="text-[34px] font-black leading-tight text-[#003f6f] max-md:text-[28px]">Online and trade coverage</h2>
+            <div className="mt-8 grid gap-6">
+              {onlineCoverage.map((item) => {
+                const provider = providerForSlug(item.providerSlug);
+                return (
+                  <article className="rounded-2xl bg-white p-8 max-md:p-6" key={item.url}>
+                    <p className="text-sm font-black uppercase tracking-[0.16em] text-[#9f5c1e]">
+                      {item.publication} &middot; {item.dateLabel}
+                    </p>
+                    <h3 className="mt-2 text-[26px] font-black leading-tight text-[#003f6f] max-md:text-[22px]">
+                      <a className="focus-ring underline" href={item.url} rel="noopener" target="_blank">
+                        {item.headline}
+                      </a>
+                    </h3>
+                    <p className="mt-3 text-[18px] leading-8 text-[var(--muted)]">{item.summary}</p>
+                    {provider ? (
+                      <p className="mt-4 text-[17px] font-bold">
+                        <Link className="focus-ring text-[#005a9c] underline" href={providerPath(provider)}>
+                          About {provider.name}
+                        </Link>
+                      </p>
+                    ) : null}
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      ) : null}
     </>
   );
 }
