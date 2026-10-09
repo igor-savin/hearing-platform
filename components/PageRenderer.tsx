@@ -1250,11 +1250,12 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
     ]
   },
   "/hearing-aids-brands/phonak/phonak-lyric": {
-    heading: "Lyric hearing aids in Westchester",
+    heading: "Lyric and other Phonak hearing aids",
     links: [
       { label: "Lyric Hearing Aids in Westchester, NY", href: "/lyric-invisible-hearing" },
       { label: "Invisible Hearing Aids: Pros, Cons and Candidacy", href: "/invisible-hearing-aids-pros-cons-candidacy" },
-      { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" }
+      { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
+      { label: "Phonak Infinio hearing aids", href: "/hearing-aids-brands/phonak/phonak-infinio" }
     ]
   },
   "/types-of-hearing-aids": {
@@ -1461,8 +1462,8 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Harrison, NY office", href: "/harrison-ny" },
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
-      { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
+      { label: "Oticon Intent", href: "/hearing-aids-brands/oticon/oticon-intent" },
+      { label: "Oticon Zeal", href: "/hearing-aids-brands/oticon/oticon-zeal" },
       { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" }
     ]
   },
