@@ -30,7 +30,7 @@
     "Oticon keeps more of the surrounding sound than most competitors, which suits people who found narrow directional systems fatiguing and does not suit everyone.",
     "Reveal, announced August 2026, runs two AI systems at once and ships Bluetooth LE Audio, Auracast and a telecoil all working on day one.",
     "Reveal has not been independently measured. Every performance figure published so far is Oticon's own.",
-    "Reveal comes as a rechargeable miniRITE R only. Intent, Zeal and the Own custom range cover the styles and battery options Reveal does not.",
+    "Reveal comes as a rechargeable miniRITE R only. Intent, [Zeal](/products/hearing-aids-by-brand/oticon/oticon-zeal/) and the Own custom range cover the styles and battery options Reveal does not.",
     "Whichever platform you choose, real-ear verification at the fitting decides most of your result."
   ],
   faqs: [

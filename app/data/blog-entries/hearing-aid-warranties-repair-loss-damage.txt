@@ -8,7 +8,7 @@
     metaDescription:
       "Most hearing aid warranties cover repairs and defects, and many add loss-and-damage protection for a few years. Here is what is included and how to use it.",
     intro: [
-      "A hearing aid warranty is a promise from the manufacturer to repair or replace your device if something goes wrong within a set window. Most new [hearing aids](/products/hearing-aids/) come with one folded into the purchase price, and the coverage is usually broader than people expect. Knowing what yours includes saves money and stress the first time a device stops working the way it should.",
+      "A hearing aid warranty is a promise from the manufacturer to [repair or replace your device](/hearing-aid-repair-vs-replace/) if something goes wrong within a set window. Most new [hearing aids](/products/hearing-aids/) come with one folded into the purchase price, and the coverage is usually broader than people expect. Knowing what yours includes saves money and stress the first time a device stops working the way it should.",
       "Two kinds of protection tend to travel together. The first is a repair warranty for defects and ordinary breakdowns; the second is loss-and-damage coverage, which steps in when a device is dropped, crushed, soaked, or misplaced. Terms and length vary by brand and by the level you bought, so the paperwork on your specific aids matters more than any general rule of thumb.",
       "At our San Mateo and San Carlos offices we register every device we fit and keep the records on file, so when you need a [repair](/services/hearing-aid-repair/) we already know what your coverage allows. If you bought elsewhere or lost track of the terms, bring the aids in and we can help you sort out what still applies.",
     ],

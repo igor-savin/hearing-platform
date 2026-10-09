@@ -15,7 +15,7 @@
     takeaways: [
       "AARP is a membership organization, not an insurer — hearing benefits come through partner programs or AARP-branded plans.",
       "Member programs usually mean discounts, not full coverage, and the terms change, so check current details with the provider.",
-      "Original Medicare does not cover hearing aids, but some AARP-branded Medicare Advantage plans add a hearing benefit.",
+      "[Original Medicare does not cover hearing aids](/does-social-security-pay-for-hearing-aids/), but some AARP-branded Medicare Advantage plans add a hearing benefit.",
     ],
     sections: [
       ["Start with what AARP is", "AARP is a membership organization for people generally 50 and older, not a health insurer. It does not manufacture hearing aids, and it does not pay claims for them. What it has is negotiating weight, which it uses to set up member programs and to endorse insurance products sold by other companies. So when someone mentions an 'AARP hearing benefit,' they are almost always describing a program run by a partner with AARP's name attached. Knowing that up front saves confusion later, especially if you are comparing what you would pay through AARP against a plan you already carry or a [device geared toward older adults](/hearing-aids-for-seniors/)."],

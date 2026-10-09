@@ -21,7 +21,7 @@
     ["Back to Hearing Better", "/hearing-better/"]
   ],
   takeaways: [
-    "Your hearing aids can stream phone calls straight to your ears.",
+    "Your hearing aids can [stream phone calls straight to your ears](/can-hearing-aids-take-phone-calls/).",
     "Captioned phones show the words of the call. California Connect may provide equipment free.",
     "Captioning glasses show live captions of speech. Check current prices with the maker."
   ],

@@ -21,7 +21,7 @@
   ],
   takeaways: [
     "We care for The Stratford residents and families from our nearby San Mateo and San Carlos offices.",
-    "Early signs of hearing loss are worth a simple test: a louder TV, repeated requests, trouble on the phone.",
+    "[Early signs of hearing loss](/identifying-the-signs-of-hearing-loss/) are worth a simple test: a louder TV, repeated requests, trouble on the phone.",
     "Rechargeable, easy-to-use hearing aids and steady local follow-up work best for seniors."
   ],
   faqs: [
