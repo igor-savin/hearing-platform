@@ -5345,6 +5345,14 @@ export const crawledPages: SitePage[] = [
     "paragraphs": []
   },
   {
+    "path": "/sounds-of-america-campaign/",
+    "title": "Sounds Of America 2026: What Sounds Define Home? | California Hearing Center",
+    "h1": "Sounds Of America 2026: What Sounds Define Home For You?",
+    "desc": "California Hearing Center provides patient-centered hearing care in San Mateo, San Carlos, and communities across the Bay Area.",
+    "h2": [],
+    "paragraphs": []
+  },
+  {
     "path": "/auracast-goes-live-in-a-us-theater/",
     "title": "Auracast Goes Live In A Us Theater | California Hearing Center",
     "h1": "Auracast Goes Live In A Us Theater",

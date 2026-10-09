@@ -532,6 +532,7 @@ export const contentDates: Record<string, string> = {
   "/smartphone-hearing-aid-compatibility-fcc-rules/": "2026-09-21",
   "/snoring-can-be-the-cause-of-hearing-loss/": "2026-08-25",
   "/somatic-tinnitus-neck/": "2026-10-07",
+  "/sounds-of-america-campaign/": "2026-10-09",
   "/specialized-hearing-solutions-for-motorsports-racing-motorcycling-off-road-adventures/": "2026-09-21",
   "/specialized-hearing-solutions-for-outdoor-adventures-hiking-cycling-water-sports/": "2026-09-21",
   "/specialized-hearing-solutions-for-racquet-sports-squash-racquetball-badminton/": "2026-09-21",
