@@ -18,7 +18,7 @@
       "Contra Costa is really several regions at once: the West County bayfront around Richmond and El Cerrito; the Lamorinda hills of Lafayette and Orinda; the central hub of Walnut Creek, Concord, and Pleasant Hill under Mount Diablo; the San Ramon Valley through Danville and San Ramon; and the far East County Delta towns of Antioch, Pittsburg, Brentwood, and Oakley. Patients come to us from all of them for the same reasons — thorough diagnostics, honest technology recommendations, and specialized tinnitus and Lenire care worth the drive across the bay.",
     ],
     whyHere:
-      "Across Contra Costa, patients choose California Hearing Center for a level of specialization that's hard to match locally: a tinnitus-focused practice, meticulous [testing](/hearing-testing/) and real-ear verification, and the continuity of the same audiologist each visit. We're honest that routine care is fine to keep close to home, and we're the destination for the complex cases.",
+      "Across Contra Costa, patients choose California Hearing Center for a level of specialization that's hard to match locally: a tinnitus-focused practice, meticulous [testing](/hearing-testing/) and real-ear verification, and the continuity of the same audiologist each visit. We're honest that routine care is fine to keep close to home, and we're the destination for the complex cases. Our pages for [Concord](/areas-we-serve/concord/) and [El Cerrito](/areas-we-serve/el-cerrito/) give the drive time to our San Mateo office.",
     landmarks:
       "From West County's bayfront to the San Ramon Valley and the East County Delta, we're a drive east and northeast of the bay, reached by the region's bridges to our San Mateo and San Carlos offices.",
     faqs: [

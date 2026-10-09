@@ -18,7 +18,7 @@
       "Our two offices put us within easy reach of the county's core — San Mateo, Burlingame, Hillsborough, San Carlos, Belmont, Foster City, and Redwood City — while patients also come to us from the north county cities of Daly City, South San Francisco, and San Bruno, the coastside communities of Pacifica and Half Moon Bay over Highway 92, and the southern estate towns of Atherton, Woodside, and Portola Valley. Wherever you are in San Mateo County, one of our offices is a straightforward drive.",
     ],
     whyHere:
-      "Across the county, patients choose us for real diagnostic depth, honest technology recommendations, and specialized tinnitus care — including Lenire — with the continuity of the same audiologist at every visit. As an independent practice with two convenient locations, we offer the thoroughness and personal attention that a big-box counter cannot.",
+      "Across the county, patients choose us for real diagnostic depth, honest technology recommendations, and specialized tinnitus care — including Lenire — with the continuity of the same audiologist at every visit. As an independent practice with two convenient locations, we offer the thoroughness and personal attention that a big-box counter cannot. Our pages for [San Mateo](/areas-we-serve/san-mateo/) and [San Carlos](/areas-we-serve/san-carlos/) describe the two towns where our offices are.",
     landmarks:
       "Our San Mateo office is at 88 N. San Mateo Drive and our San Carlos office is at 1008 Laurel Street, about eight minutes apart and central to the county from the coast to the bay.",
     faqs: [

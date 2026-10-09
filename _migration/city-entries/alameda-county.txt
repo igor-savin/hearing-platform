@@ -18,7 +18,7 @@
       "The county runs from the ports and neighborhoods of Oakland and the university culture of Berkeley, through the island of Alameda and the shoreline cities of San Leandro and Hayward, down to Union City and Fremont, and inland to the Tri-Valley vineyards of Pleasanton and Livermore. Access to the Peninsula varies — Hayward is a quick 25-30 minutes over the San Mateo Bridge, while Livermore is closer to an hour. Wherever in the county a patient starts, the reason to come to us is the same: specialized, focused hearing care.",
     ],
     whyHere:
-      "East Bay patients choose California Hearing Center for depth rather than proximity — a genuine specialty in tinnitus and Lenire, meticulous diagnostic testing, and honest, verified fittings. They value continuity with one dedicated audiologist and are willing to cross the bay for expertise that is harder to find at a general clinic.",
+      "East Bay patients choose California Hearing Center for depth rather than proximity — a genuine specialty in tinnitus and Lenire, meticulous diagnostic testing, and honest, verified fittings. They value continuity with one dedicated audiologist and are willing to cross the bay for expertise that is harder to find at a general clinic. Our page for [Fremont](/areas-we-serve/fremont/) gives the drive time to our San Carlos office.",
     landmarks:
       "From Oakland and Berkeley in the north to Hayward, Fremont, and the Tri-Valley inland, our San Mateo and San Carlos offices are reached east across the bay, with drive times ranging from about 25-30 minutes to an hour.",
     faqs: [

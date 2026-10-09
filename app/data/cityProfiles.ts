@@ -91,7 +91,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "The county runs from the ports and neighborhoods of Oakland and the university culture of Berkeley, through the island of Alameda and the shoreline cities of San Leandro and Hayward, down to Union City and Fremont, and inland to the Tri-Valley vineyards of Pleasanton and Livermore. Access to the Peninsula varies — Hayward is a quick 25-30 minutes over the San Mateo Bridge, while Livermore is closer to an hour. Wherever in the county a patient starts, the reason to come to us is the same: specialized, focused hearing care.",
     ],
     whyHere:
-      "East Bay patients choose California Hearing Center for depth rather than proximity — a genuine specialty in tinnitus and Lenire, meticulous diagnostic testing, and honest, verified fittings. They value continuity with one dedicated audiologist and are willing to cross the bay for expertise that is harder to find at a general clinic.",
+      "East Bay patients choose California Hearing Center for depth rather than proximity — a genuine specialty in tinnitus and Lenire, meticulous diagnostic testing, and honest, verified fittings. They value continuity with one dedicated audiologist and are willing to cross the bay for expertise that is harder to find at a general clinic. Our page for [Fremont](/areas-we-serve/fremont/) gives the drive time to our San Carlos office.",
     landmarks:
       "From Oakland and Berkeley in the north to Hayward, Fremont, and the Tri-Valley inland, our San Mateo and San Carlos offices are reached east across the bay, with drive times ranging from about 25-30 minutes to an hour.",
     faqs: [
@@ -535,7 +535,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Contra Costa is really several regions at once: the West County bayfront around Richmond and El Cerrito; the Lamorinda hills of Lafayette and Orinda; the central hub of Walnut Creek, Concord, and Pleasant Hill under Mount Diablo; the San Ramon Valley through Danville and San Ramon; and the far East County Delta towns of Antioch, Pittsburg, Brentwood, and Oakley. Patients come to us from all of them for the same reasons — thorough diagnostics, honest technology recommendations, and specialized tinnitus and Lenire care worth the drive across the bay.",
     ],
     whyHere:
-      "Across Contra Costa, patients choose California Hearing Center for a level of specialization that's hard to match locally: a tinnitus-focused practice, meticulous [testing](/hearing-testing/) and real-ear verification, and the continuity of the same audiologist each visit. We're honest that routine care is fine to keep close to home, and we're the destination for the complex cases.",
+      "Across Contra Costa, patients choose California Hearing Center for a level of specialization that's hard to match locally: a tinnitus-focused practice, meticulous [testing](/hearing-testing/) and real-ear verification, and the continuity of the same audiologist each visit. We're honest that routine care is fine to keep close to home, and we're the destination for the complex cases. Our pages for [Concord](/areas-we-serve/concord/) and [El Cerrito](/areas-we-serve/el-cerrito/) give the drive time to our San Mateo office.",
     landmarks:
       "From West County's bayfront to the San Ramon Valley and the East County Delta, we're a drive east and northeast of the bay, reached by the region's bridges to our San Mateo and San Carlos offices.",
     faqs: [
@@ -2087,7 +2087,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Our two offices put us within easy reach of the county's core — San Mateo, Burlingame, Hillsborough, San Carlos, Belmont, Foster City, and Redwood City — while patients also come to us from the north county cities of Daly City, South San Francisco, and San Bruno, the coastside communities of Pacifica and Half Moon Bay over Highway 92, and the southern estate towns of Atherton, Woodside, and Portola Valley. Wherever you are in San Mateo County, one of our offices is a straightforward drive.",
     ],
     whyHere:
-      "Across the county, patients choose us for real diagnostic depth, honest technology recommendations, and specialized tinnitus care — including Lenire — with the continuity of the same audiologist at every visit. As an independent practice with two convenient locations, we offer the thoroughness and personal attention that a big-box counter cannot.",
+      "Across the county, patients choose us for real diagnostic depth, honest technology recommendations, and specialized tinnitus care — including Lenire — with the continuity of the same audiologist at every visit. As an independent practice with two convenient locations, we offer the thoroughness and personal attention that a big-box counter cannot. Our pages for [San Mateo](/areas-we-serve/san-mateo/) and [San Carlos](/areas-we-serve/san-carlos/) describe the two towns where our offices are.",
     landmarks:
       "Our San Mateo office is at 88 N. San Mateo Drive and our San Carlos office is at 1008 Laurel Street, about eight minutes apart and central to the county from the coast to the bay.",
     faqs: [
@@ -2235,7 +2235,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Santa Clara County spans a remarkable range — the tech corridors of Palo Alto, Mountain View, and Cupertino; the affluent foothill towns of Los Altos Hills, Saratoga, and Los Gatos; the big-city neighborhoods of San Jose; and the farm country around Morgan Hill and Gilroy. Listening challenges shift across that map, from demanding open offices to noisy job sites to lively downtowns. Whichever corner you are in, we focus on the harder cases: tinnitus, complex fittings, and verified clarity in real-world noise.",
     ],
     whyHere:
-      "Patients across Santa Clara County choose us for depth rather than proximity — a tinnitus-focused practice with meticulous, verified fittings and the continuity of one familiar audiologist. Many first traveled up the Peninsula for a problem no nearer office had solved, and stayed for the rest of their care.",
+      "Patients across Santa Clara County choose us for depth rather than proximity — a tinnitus-focused practice with meticulous, verified fittings and the continuity of one familiar audiologist. Many first traveled up the Peninsula for a problem no nearer office had solved, and stayed for the rest of their care. Our pages for [Campbell](/areas-we-serve/campbell/), [Gilroy](/areas-we-serve/gilroy/) and [Milpitas](/areas-we-serve/milpitas/) give the drive time to our San Carlos office.",
     landmarks:
       "We draw patients from Palo Alto and Mountain View in the north to San Jose, Los Gatos, Morgan Hill, and Gilroy in the south, all reached via the 101 and 280 to our San Carlos office.",
     faqs: [
@@ -2442,7 +2442,7 @@ export const cityProfiles: Record<string, CityProfile> = {
       "Sonoma County is really a collection of places — Santa Rosa and Petaluma, the town of Sonoma and its Plaza, Sebastopol's apple country, Healdsburg, Windsor, and the Russian River and coastal reaches beyond. All of them sit a genuine distance from the Peninsula, and for routine hearing care we would point you to someone nearer home. For specialized tinnitus treatment, Lenire, or complex diagnostics, some county residents decide the expertise is worth the drive south, and we make the visit earn it.",
     ],
     whyHere:
-      "Patients who travel to us from Sonoma County are usually seeking a depth of tinnitus and diagnostic experience they could not line up locally. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive is the exception rather than the routine.",
+      "Patients who travel to us from Sonoma County are usually seeking a depth of tinnitus and diagnostic experience they could not line up locally. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive is the exception rather than the routine. Our page for [Sebastopol](/areas-we-serve/sebastopol/) gives the drive time to our San Mateo office.",
     landmarks:
       "Patients come south to our Peninsula offices from Santa Rosa, Petaluma, Sonoma, Sebastopol, and Windsor, generally well over an hour down Highway 101.",
     faqs: [

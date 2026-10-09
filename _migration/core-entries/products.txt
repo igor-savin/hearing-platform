@@ -3,7 +3,7 @@
   headline: "Hearing Aids & Hearing Protection in San Mateo & San Carlos",
   intro: [
     "California Hearing Center fits hearing aids and makes custom hearing protection at our San Mateo and San Carlos offices. Ear canals differ in size and shape, and two people with the same audiogram often need different settings, so nothing here comes off a shelf ready to wear.",
-    "Our products fall into two families: hearing aids and Ear Gear. On the hearing aid side we work independently across the major manufacturers rather than pushing a single brand, and we can arrange a trial so you hear the devices in your own life before you decide. On the protection side we make custom earplugs and earmolds for work, music, swimming, sleeping, and more.",
+    "Our products fall into two families: hearing aids and [Ear Gear](/products/eargear/). On the hearing aid side we work independently across the major manufacturers rather than pushing a single brand, and we can arrange a trial so you hear the devices in your own life before you decide. On the protection side we make custom earplugs and earmolds for work, music, swimming, sleeping, and more.",
     "The starting point is a [hearing test](/hearing-testing/). It takes about an hour, and afterwards we sit down with your audiogram and go through it with you before anyone mentions a device. Sometimes the answer is wax removal. Sometimes it is monitoring and nothing else."
   ],
   sections: [

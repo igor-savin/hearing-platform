@@ -18,7 +18,7 @@
       "Santa Clara County spans a remarkable range — the tech corridors of Palo Alto, Mountain View, and Cupertino; the affluent foothill towns of Los Altos Hills, Saratoga, and Los Gatos; the big-city neighborhoods of San Jose; and the farm country around Morgan Hill and Gilroy. Listening challenges shift across that map, from demanding open offices to noisy job sites to lively downtowns. Whichever corner you are in, we focus on the harder cases: tinnitus, complex fittings, and verified clarity in real-world noise.",
     ],
     whyHere:
-      "Patients across Santa Clara County choose us for depth rather than proximity — a tinnitus-focused practice with meticulous, verified fittings and the continuity of one familiar audiologist. Many first traveled up the Peninsula for a problem no nearer office had solved, and stayed for the rest of their care.",
+      "Patients across Santa Clara County choose us for depth rather than proximity — a tinnitus-focused practice with meticulous, verified fittings and the continuity of one familiar audiologist. Many first traveled up the Peninsula for a problem no nearer office had solved, and stayed for the rest of their care. Our pages for [Campbell](/areas-we-serve/campbell/), [Gilroy](/areas-we-serve/gilroy/) and [Milpitas](/areas-we-serve/milpitas/) give the drive time to our San Carlos office.",
     landmarks:
       "We draw patients from Palo Alto and Mountain View in the north to San Jose, Los Gatos, Morgan Hill, and Gilroy in the south, all reached via the 101 and 280 to our San Carlos office.",
     faqs: [

@@ -3,7 +3,7 @@
   headline: "Stress and Tinnitus: Breaking the Vicious Cycle",
   intro: [
     "Stress can make tinnitus louder, sharper, and harder to ignore, and tinnitus itself can create more stress, worry, and exhaustion. If you feel stuck in this loop, you are not alone, and there are ways to change how your brain and body respond to the sound.",
-    "On this page, our Bay Area audiologists explain how stress and tinnitus interact, why your fight-or-flight system matters, and how patients in San Mateo, San Carlos, and across the Peninsula can use practical tools to reduce distress, even if the sound does not completely disappear.",
+    "On this page, our Bay Area audiologists explain [how stress and tinnitus interact](/tinnitus-tech-stress-and-bay-area-life-why-your-brain-wont-switch-off/), why your fight-or-flight system matters, and how patients in San Mateo, San Carlos, and across the Peninsula can use practical tools to reduce distress, even if the sound does not completely disappear.",
     "While you may not be able to flip a switch and turn tinnitus off, you can change how your brain reacts to it. For the underlying science, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
   ],
   sections: [

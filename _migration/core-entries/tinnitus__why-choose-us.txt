@@ -2,7 +2,7 @@
   kicker: "Tinnitus & Sound Sensitivity",
   headline: "Why Choose California Hearing Center for Tinnitus",
   intro: [
-    "Tinnitus is easy to mismanage, either dismissed with a shrug of just live with it, or oversold with products that promise a cure. Our approach sits between those extremes: careful evaluation, honest expectations, and a genuine investment in the therapies that have evidence behind them.",
+    "Tinnitus is easy to mismanage, either dismissed with a shrug of [just live with it](/why-just-live-with-it-is-the-worst-tinnitus-advice/), or [oversold with products that promise a cure](/how-to-find-safe-evidence-based-tinnitus-help-online-without-falling-down-the-rabbit-hole/). Our approach sits between those extremes: careful evaluation, honest expectations, and a genuine investment in the therapies that have evidence behind them. See also: [getting the right care for tinnitus](/tinnitus-patients-deserve-better-how-audiologists-ents-can-refer/).",
     "Tinnitus care is a real focus for our practice, not a line item. That focus shows up in the time we spend on evaluation, the structured therapy we offer, and our ability to discuss advanced options like Lenire bimodal neuromodulation for patients who are appropriate candidates.",
     "Below are the concrete, verifiable reasons Peninsula patients choose us for tinnitus, described without inflated statistics or manufactured awards."
   ],

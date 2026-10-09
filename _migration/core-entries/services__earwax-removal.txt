@@ -3,7 +3,7 @@
   headline: "Professional Earwax Removal in San Mateo & San Carlos",
   intro: [
     "Earwax, or cerumen, is normal and healthy. Specialized glands in the ear canal produce it for a reason: this slightly oily substance is your ears' own self-cleaning mechanism, trapping dust, dead skin cells, debris, and bacteria and then migrating outward on its own as you talk and chew. Trouble starts only when wax builds up faster than it clears, hardens against the eardrum, or gets pushed deeper by a cotton swab. At that point it can muffle hearing, cause a plugged or full feeling, contribute to a sense of imbalance, trigger or worsen tinnitus, and make hearing aids whistle or stop working.",
-    "Some people simply produce more wax than their ears can expel, and that overproduction is what leads to buildup and impaction. At California Hearing Center, wax is removed under direct visualization by clinicians who examine the canal and eardrum first. That matters: a blockage that looks like simple wax can sometimes hide an ear infection, a perforation, or other issues that change how removal should be done, or whether it should be done at all.",
+    "Some people simply produce more wax than their ears can expel, and that overproduction is what leads to buildup and impaction. At California Hearing Center, wax is removed under direct visualization by clinicians who examine the canal and eardrum first. That matters: a blockage that looks like simple wax can sometimes [hide an ear infection](/the-connection-between-hearing-loss-and-ear-infections/), a perforation, or other issues that change how removal should be done, or whether it should be done at all.",
     "Our San Mateo and San Carlos offices handle routine buildup and the stubborn, impacted wax that at-home kits could not clear, using professional-grade equipment so the canal is cleared completely without risking damage."
   ],
   sections: [
@@ -22,7 +22,7 @@
   ],
   faqs: [
     ["Is professional earwax removal safe?", "When performed by a trained clinician who examines the ear first, removal is safe and comfortable for most people. Watching the canal directly during curettage or microsuction lowers the risk of injury compared with blind at-home tools."],
-    ["Can earwax really cause hearing loss?", "Yes. A canal fully blocked by wax can noticeably reduce hearing and create a plugged, full feeling, and it can even affect your sense of balance. This type of loss is usually temporary and improves once the blockage is cleared."],
+    ["Can earwax really cause hearing loss?", "Yes. A canal fully blocked by wax can noticeably reduce hearing and create a plugged, full feeling, and it can even affect your sense of balance. This type of loss is [usually temporary and improves once the blockage is cleared](/earwax-vs-hearing-loss-when-a-simple-cleaning-solves-the-problem/)."],
     ["Should I use at-home wax removal kits?", "Softening drops help some people, but irrigation kits and swabs can push wax deeper or irritate the canal, especially with narrow canals, prior ear surgery, or a perforation. If home care is not clearing it, call 650-342-9449 to have it looked at."]
   ],
   image: "/assets/service-2.png",

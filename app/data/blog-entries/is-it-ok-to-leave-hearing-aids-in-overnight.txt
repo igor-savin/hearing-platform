@@ -29,7 +29,7 @@
     faqs: [
       ["Will one night of sleeping in my hearing aids ruin them?", "One night will not destroy a device. What it does is skip the drying your aids count on and leave your ear canal sealed longer than it likes. Do it now and then and you are fine; make it a habit and the trapped moisture starts to shorten the device's life."],
       ["Are there hearing aids you can wear while sleeping?", "Yes, a small category of extended-wear devices is designed for exactly that, sitting deep in the canal for weeks at a stretch and staying in through sleep. They are placed and managed by a clinician rather than removed each night. Ask us whether that style fits your hearing and your daily life."],
-      ["What is the right way to store my hearing aids overnight?", "Wipe them clean, then set them in a drying kit or dehumidifier to draw out the day's moisture. If they use disposable batteries, open the battery door to save power and let condensation escape; rechargeable models go straight into the charger. A spot on the nightstand keeps the habit easy to remember."],
+      ["What is the right way to store my hearing aids overnight?", "[Wipe them clean, then set them in a drying kit](/hearing-aid-care-2025/) or dehumidifier to draw out the day's moisture. If they use disposable batteries, open the battery door to save power and let condensation escape; rechargeable models go straight into the charger. A spot on the nightstand keeps the habit easy to remember."],
     ],
     image: "/assets/blog/is-it-ok-to-leave-hearing-aids-in-overnight-1.svg",
     imageLabel: "Bedtime is for drying, not for wearing",

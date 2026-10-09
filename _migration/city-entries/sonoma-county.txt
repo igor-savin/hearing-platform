@@ -18,7 +18,7 @@
       "Sonoma County is really a collection of places — Santa Rosa and Petaluma, the town of Sonoma and its Plaza, Sebastopol's apple country, Healdsburg, Windsor, and the Russian River and coastal reaches beyond. All of them sit a genuine distance from the Peninsula, and for routine hearing care we would point you to someone nearer home. For specialized tinnitus treatment, Lenire, or complex diagnostics, some county residents decide the expertise is worth the drive south, and we make the visit earn it.",
     ],
     whyHere:
-      "Patients who travel to us from Sonoma County are usually seeking a depth of tinnitus and diagnostic experience they could not line up locally. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive is the exception rather than the routine.",
+      "Patients who travel to us from Sonoma County are usually seeking a depth of tinnitus and diagnostic experience they could not line up locally. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive is the exception rather than the routine. Our page for [Sebastopol](/areas-we-serve/sebastopol/) gives the drive time to our San Mateo office.",
     landmarks:
       "Patients come south to our Peninsula offices from Santa Rosa, Petaluma, Sonoma, Sebastopol, and Windsor, generally well over an hour down Highway 101.",
     faqs: [

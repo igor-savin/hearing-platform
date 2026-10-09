@@ -2,7 +2,7 @@
   kicker: "Hearing Care for Seniors",
   headline: "Hearing Care for The Peninsula Regent Community in San Mateo",
   intro: [
-    "The Peninsula Regent is an upscale senior-living community near downtown San Mateo and El Camino Real, home to active older adults who expect the same quality in their health care that they expect everywhere else. California Hearing Center provides that standard of hearing care to Regent residents and families, just minutes away at 88 N. San Mateo Drive.",
+    "The Peninsula Regent is an upscale senior-living community near downtown San Mateo and El Camino Real, [home to active older adults](/best-hearing-aids-for-active-grandparents-in-the-bay-area-restaurants-travel-and-grandkids/) who expect the same quality in their health care that they expect everywhere else. California Hearing Center provides that standard of hearing care to Regent residents and families, just minutes away at 88 N. San Mateo Drive.",
     "As an independent audiology practice, we are not tied to any single manufacturer, so our recommendations reflect what fits your hearing, your ears, and your lifestyle. For residents who lead busy, social lives, hearing well is what keeps dinners, lectures, travel and family calls enjoyable."
   ],
   sections: [

@@ -3,7 +3,7 @@
   headline: "Hearing Care Across the Bay Area",
   intro: [
     "California Hearing Center sees patients from across the San Francisco Bay Area at our two Peninsula offices: San Mateo at 88 N. San Mateo Drive and San Carlos at 1008 Laurel Street.",
-    "Many patients are local. Others drive in from Marin, the East Bay, the South Bay, and as far as Napa and Sonoma, usually because they want a specific kind of care: unhurried diagnostics, real-ear verification, and an audiologist who will keep adjusting until it is right.",
+    "Many patients are local. Others drive in from [Marin](/areas-we-serve/marin-county/), the East Bay, the South Bay, and as far as [Napa](/areas-we-serve/napa-county/) and [Sonoma](/areas-we-serve/sonoma-county/), usually because they want a specific kind of care: unhurried diagnostics, real-ear verification, and an audiologist who will keep adjusting until it is right.",
     "Choose your city below for local details: typical travel time, the routes patients use, and the services we see people from your area for most."
   ],
   sections: [
@@ -21,7 +21,7 @@
     ["San Carlos office", "/contact/san-carlos/"]
   ],
   faqs: [
-    ["Do you see patients from outside San Mateo County?", "Yes. Patients travel to us from across the Bay Area, from Santa Clara, San Francisco, Alameda, Contra Costa, Marin, Sonoma, Napa, and Solano counties, and we plan those visits so a single trip covers as much as possible."],
+    ["Do you see patients from outside San Mateo County?", "Yes. Patients travel to us from across the Bay Area, from [Santa Clara](/areas-we-serve/santa-clara-county/), [San Francisco](/areas-we-serve/san-francisco-county/), [Alameda](/areas-we-serve/alameda-county/), [Contra Costa](/areas-we-serve/contra-costa-county/), Marin, Sonoma, Napa, and [Solano](/areas-we-serve/solano-county/) counties, and we plan those visits so a single trip covers as much as possible."],
     ["Which office should I choose?", "Whichever is easier to reach. San Mateo is our main office and has longer uninterrupted hours; San Carlos includes a midday break. Both share the same team and records, so your care is identical either way."],
     ["Can you combine my test and consultation into one visit?", "Usually yes, and we recommend it if you are driving in from a distance. Mention it when you book on 650-342-9449 and we will schedule enough time."]
   ],

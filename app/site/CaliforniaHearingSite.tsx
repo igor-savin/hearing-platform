@@ -1082,20 +1082,91 @@ function areaServedSchema(page: SitePage): object | null {
   };
 }
 
-// Proximity-aware related links for an area page: nearby cities in the same
-// county/region (not the alphabetical first 8), plus the two office cities.
+// Nearby-area links for an area page. Every live city page shows six links.
+// The first four are the nearest live pages, by great-circle distance between
+// the geo points in cityProfiles (ties go to the same nearest office, then to
+// the slug). The last two rotate through the next-nearest pages that have the
+// fewest inbound links so far. This makes the blocks differ from city to city
+// and puts every city page in at least one other city page's block. A final
+// repair pass covers any page still unlinked: it takes the last slot of the
+// nearest page, with the same nearest office first, that can spare it.
+// Consolidated pages are skipped because they 301 to a hub.
+const AREA_BLOCK_SIZE = 6;
+const AREA_NEAREST_SLOTS = 4;
+const AREA_ROTATION_POOL = 14;
+let areaLinkIndex: Record<string, string[]> | null = null;
+
+function geoKm(a: CityProfile["geo"], b: CityProfile["geo"]): number {
+  const rad = Math.PI / 180;
+  const dLat = (b.lat - a.lat) * rad;
+  const dLng = (b.lng - a.lng) * rad;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLng / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(h));
+}
+
+function buildAreaLinkIndex(): Record<string, string[]> {
+  const live = Object.entries(cityProfiles)
+    .filter(([, p]) => !isConsolidated(p))
+    .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0));
+  const ranked: Record<string, string[]> = {};
+  for (const [slug, p] of live) {
+    ranked[slug] = live
+      .filter(([other]) => other !== slug)
+      .map(([other, q]) => ({ other, km: geoKm(p.geo, q.geo), far: q.nearestOffice === p.nearestOffice ? 0 : 1 }))
+      .sort((x, y) => x.km - y.km || x.far - y.far || (x.other < y.other ? -1 : 1))
+      .map((x) => x.other);
+  }
+  const block: Record<string, string[]> = {};
+  const inbound: Record<string, number> = {};
+  for (const [slug] of live) inbound[slug] = 0;
+  for (const [slug] of live) {
+    block[slug] = ranked[slug].slice(0, AREA_NEAREST_SLOTS);
+    for (const t of block[slug]) inbound[t] += 1;
+  }
+  for (const [slug] of live) {
+    const pool = ranked[slug].slice(AREA_NEAREST_SLOTS, AREA_ROTATION_POOL);
+    while (block[slug].length < AREA_BLOCK_SIZE && pool.length > 0) {
+      let best = 0;
+      for (let i = 1; i < pool.length; i += 1) if (inbound[pool[i]] < inbound[pool[best]]) best = i;
+      const t = pool.splice(best, 1)[0];
+      block[slug].push(t);
+      inbound[t] += 1;
+    }
+  }
+  for (const [target, tp] of live) {
+    if (inbound[target] > 0) continue;
+    const sources = live
+      .filter(([s]) => s !== target)
+      .map(([s, sp]) => ({ s, km: geoKm(sp.geo, tp.geo), far: sp.nearestOffice === tp.nearestOffice ? 0 : 1 }))
+      .sort((x, y) => x.far - y.far || x.km - y.km);
+    for (const { s } of sources) {
+      const slot = AREA_BLOCK_SIZE - 1;
+      const dropped = block[s][slot];
+      if (dropped && inbound[dropped] > 1 && !block[s].includes(target)) {
+        block[s][slot] = target;
+        inbound[dropped] -= 1;
+        inbound[target] += 1;
+        break;
+      }
+    }
+  }
+  return block;
+}
+
 function relatedAreaLinks(page: SitePage): { path: string; label: string }[] {
   const profile = cityProfileForPath(page.path);
   if (!profile) return [];
   const here = citySlugFromPath(page.path);
-  const neighbors = Object.entries(cityProfiles)
-    // consolidatedInto pages 301 elsewhere — linking to them would build a
-    // redirect hop into the internal link graph on every remaining area page.
-    .filter(([slug, p]) => slug !== here && !isConsolidated(p)
-      && (p.county === profile.county || p.region === profile.region))
-    .slice(0, 6)
-    .map(([slug, p]) => ({ path: `/areas-we-serve/${slug}/`, label: p.name }));
-  return neighbors;
+  if (!here) return [];
+  if (!areaLinkIndex) areaLinkIndex = buildAreaLinkIndex();
+  // A consolidated slug has no block of its own, so fall back to the nearest
+  // live pages in the same county or region, as before.
+  const slugs = areaLinkIndex[here]
+    ?? Object.entries(cityProfiles)
+      .filter(([slug, p]) => slug !== here && !isConsolidated(p) && (p.county === profile.county || p.region === profile.region))
+      .slice(0, AREA_BLOCK_SIZE)
+      .map(([slug]) => slug);
+  return slugs.map((slug) => ({ path: `/areas-we-serve/${slug}/`, label: cityProfiles[slug].name }));
 }
 
 function productImage(pageTitle: string) {
