@@ -2879,6 +2879,54 @@ export function CaliforniaHearingSite({ page }: { page?: SitePage }) {
             </svg>
             <span>Follow us on Facebook</span>
           </a>
+          <a
+            className="footer-social"
+            href="https://www.instagram.com/calhearing/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm4.5 6.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"
+              />
+              <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" />
+            </svg>
+            <span>Follow us on Instagram</span>
+          </a>
+          <a
+            className="footer-social"
+            href="https://www.threads.com/@calhearing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                d="M17.5 8.5C16.6 5.4 14.6 4 12 4 8.4 4 6 6.8 6 12s2.4 8 6 8c3 0 5-1.6 5-3.8 0-2.3-2-3.4-4.6-3.4-1.9 0-3.1.8-3.1 2 0 1 .9 1.7 2.1 1.7 2.2 0 3.4-1.6 3.4-4.5"
+              />
+            </svg>
+            <span>Follow us on Threads</span>
+          </a>
+          <a
+            className="footer-social"
+            href="https://x.com/cal_hearing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path
+                fill="currentColor"
+                d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.19L2 3h6.33l4.37 5.78L17.75 3Zm-1.08 16.16h1.7L7.4 4.75H5.58l11.09 14.41Z"
+              />
+            </svg>
+            <span>Follow us on X</span>
+          </a>
           <a className="footer-social" href="/practice-facts/"><span>Practice Facts</span></a>
           <span>© 2026 California Hearing Center and Audiology Services, Inc. All Rights Reserved.</span>
         </div>

@@ -1,132 +1,106 @@
-# vinext-starter
+# California Hearing Center
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+The calhearing.com website — a Next.js rebuild of the practice's legacy
+WordPress site, preserving the live URLs and their search equity.
 
-## Prerequisites
+Sister property: [Audiology Associates of Westchester](https://github.com/igor-savin/Audiology-Associates).
+The two sites are the same business and are managed together; anything marked
+"kept identical to the sister practice" in this repo should not be changed on
+one side alone.
 
-- Node.js `>=22.13.0`
+## Stack
 
-## Quick Start
+- Next.js 16 / React 19, App Router, Turbopack
+- Tailwind 4 for utilities, plus a large hand-authored stylesheet in `app/globals.css`
+- Deployed on Vercel — `npm run build` is the whole build
+
+## Quick start
 
 ```bash
 npm install
+```
+
+```bash
 npm run dev
-npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+Copy `.env.example` to `.env.local` first. Only `RESEND_API_KEY` is a real
+secret; everything else is optional and documented inline in that file.
 
-## Included Shape
+## Scripts
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
+| Script | What it does |
+| --- | --- |
+| `npm run dev` | Local dev server |
+| `npm run build` | Production build — 684 static pages |
+| `npm run start` | Serve the production build |
+| `npm run lint` | `tsc --noEmit` plus ESLint |
+| `npm run indexnow` | Submit sitemap URLs to IndexNow (see below) |
 
-## Workspace Auth Headers
+## How the site is put together
 
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
+Everything is prerendered at build time. There is no database and no CMS —
+content lives in the repo as typed TypeScript.
 
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```
+app/[...slug]/page.tsx      one catch-all route; renders every page
+app/site/                   the components; CaliforniaHearingSite.tsx is the shell
+app/data/                   all site content
+  crawledPages.ts             the page inventory (path, title, description)
+  corePages.ts                service / product / facility page content
+  blogPosts.ts                blog post content
+  blog-entries/*.txt          per-post source fragments
+  cityProfiles.ts             areas-we-serve content
+  contentDates.ts             real per-page lastmod dates for the sitemap
+app/lib/contactForm.ts      option lists shared by the form and the API route
+app/api/contact/route.ts    contact form → Resend
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+`app/data/corePages.ts` is **generated** from `_migration/core-entries/*.txt` by
+`_migration/assembleCorePages.mjs`. Edit the fragment and re-run the assembler,
+not the generated file.
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+`app/data/contentDates.ts` is likewise generated — regenerate with
+`node _migration/genContentDates.mjs`. It exists so the sitemap can emit a real
+`lastmod` per URL instead of the build timestamp, which would otherwise claim
+all 684 pages changed on every deploy.
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+## Redirects
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+`next.config.ts` carries three redirect tables covering the WordPress archive
+URLs, the legacy sitemap, and the blog-curation pass. The site uses
+**trailing-slash** URLs (`/hearing-testing/`), matching the legacy site — note
+the sister practice does not, so cross-site links need care.
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
+## Performance
 
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
+`.github/workflows/lighthouse.yml` runs Lighthouse CI on every push and PR,
+asserting performance ≥ 0.80, accessibility ≥ 0.95, best practices ≥ 0.90 and
+SEO ≥ 0.95. The thresholds are deliberately identical to the sister practice's,
+so a score on one site means the same thing as a score on the other.
 
-## Useful Commands
+Two things worth preserving: the site loads no web font (system Arial stack),
+and images carry explicit dimensions plus `loading`/`decoding` hints. Verify any
+change to the frosted-glass header on a **deployed** preview rather than
+locally — `app/globals.css` documents why.
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+## IndexNow
 
-## California Hearing Center — Environment & Cutover
+IndexNow tells Bing and other participating search engines about new or
+changed URLs. Google does not use IndexNow, so it does not replace Search
+Console or the sitemap for Google.
 
-All integrations are **off until their env var is set**, so the code is safe to
-deploy before the domain moves. Set these in the Vercel project (Settings →
-Environment Variables). Scope analytics to **Production only** so the preview
-deployment never sends staging traffic to the live GA4 property.
+After a deploy, run:
 
-### Analytics (match calhearing.com)
+```
+node scripts/indexnow.mjs
+```
 
-| Variable | Value | Scope | Notes |
-|---|---|---|---|
-| `NEXT_PUBLIC_GTM_ID` | `GTM-M9CDTZP` | Production | **Recommended.** Same GTM container as calhearing.com — fires GA4 and everything configured in the container. |
-| `GOOGLE_SITE_VERIFICATION` | `WBZFrlITOmQaGoGa30a3lDHt6muz2pp_U7k-Pvb8sQ4` | Production | Google Search Console ownership meta (matches calhearing.com). |
-| `NEXT_PUBLIC_GA4_ID` | `G-XN799HLKX5` | Production | **Only if GA4 is not already inside GTM.** Do not set alongside GTM for the same property, or hits double-count. |
+This submits every URL in `https://calhearing.com/sitemap.xml`. To submit only
+some URLs, list them: `node scripts/indexnow.mjs https://calhearing.com/a/ https://calhearing.com/b/`.
+Add `--dry-run` to print what would be sent without sending it. The script
+only submits URLs on `calhearing.com`.
 
-- Universal Analytics (`UA-100763869-1`) is intentionally **not** carried over — Google stopped processing UA in 2023.
-- The contact form already pushes a `contact-submit-success` event to `dataLayer`. To count it as a GA4 conversion, add a Custom Event trigger (`website_interaction` / `contact-submit-success`) + a GA4 event tag inside the GTM container.
-- Third-party tools on the legacy site (WhatConverts, DataFast, VisibilityKit) are not included — add only if still in active use.
-
-### Contact form (Resend — shared with the Westchester site)
-
-| Variable | Value | Notes |
-|---|---|---|
-| `RESEND_API_KEY` | *(your Resend key)* | Reuse the Audiology Associates of Westchester account so `hearing-care.org` is already a verified sender — or verify `calhearing.com` in Resend. |
-| `CONTACT_FORM_TO_EMAIL` | *(practice inbox)* | Where lead submissions are delivered. |
-| `CONTACT_FORM_FROM_EMAIL` | `California Hearing Center <noreply@calhearing.com>` | Only needed if sending from the calhearing.com domain (must be verified in Resend). Defaults to the shared hearing-care.org sender. |
-| `CONTACT_FORM_BCC_EMAIL` | *(optional)* | Optional BCC copy. |
-
-### Site domain
-
-| Variable | Value | Notes |
-|---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | `https://calhearing.com` | Drives canonicals, sitemap, robots, and `metadataBase`. Already defaults to this. |
-
-## Learn More
-
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+The key file `public/<key>.txt` (a 32-character hex name, content equal to the
+name) must stay in place. Search engines fetch it to confirm that the site owns
+the key. If you delete or rename it, submissions fail with 403 or 422.

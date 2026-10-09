@@ -240,6 +240,21 @@ export async function PracticeFactsPage() {
             </a>.
           </li>
           <li>
+            <a href="https://www.instagram.com/calhearing/" target="_blank" rel="noopener noreferrer">
+              Instagram: California Hearing Center
+            </a>.
+          </li>
+          <li>
+            <a href="https://www.threads.com/@calhearing" target="_blank" rel="noopener noreferrer">
+              Threads: California Hearing Center
+            </a>.
+          </li>
+          <li>
+            <a href="https://x.com/cal_hearing" target="_blank" rel="noopener noreferrer">
+              X: California Hearing Center
+            </a>.
+          </li>
+          <li>
             Sister practice: <a href="https://www.audiologyassociates.org/" target="_blank" rel="noopener noreferrer">audiologyassociates.org</a>.
           </li>
           <li>

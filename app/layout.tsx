@@ -244,6 +244,9 @@ const organizationSchema = {
 
     // Social.
     "https://www.facebook.com/CaliforniaHearingCenter/",
+    "https://www.instagram.com/calhearing/",
+    "https://www.threads.com/@calhearing",
+    "https://x.com/cal_hearing",
 
     // Review and consumer hearing directories.
     "https://www.yelp.com/biz/california-hearing-center-san-mateo-4",
