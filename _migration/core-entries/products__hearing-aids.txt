@@ -23,7 +23,7 @@
     ["Financing", "/hearing-aid-financing/"],
     ["The fitting process", "/hearing-aid-fitting/"],
     ["Book a hearing test", "/hearing-testing/"],
-    ["Free second opinion on a quote", "/hearing-aid-second-opinion/"],
+    ["Second opinion visit for a quote", "/hearing-aid-second-opinion/"],
     ["Tinnitus support features", "/tinnitus/"],
     ["Repairs and adjustments", "/services/hearing-aid-repair/"]
   ],

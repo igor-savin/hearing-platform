@@ -25,7 +25,7 @@
     ["Earwax removal", "/services/earwax-removal/"],
     ["Hearing aid repair", "/services/hearing-aid-repair/"],
     ["Hearing protection", "/services/hearing-protection/"],
-    ["Free second opinion on a quote", "/hearing-aid-second-opinion/"],
+    ["Second opinion visit for a quote", "/hearing-aid-second-opinion/"],
     ["Contact either office", "/contact/"]
   ],
   takeaways: [
@@ -39,7 +39,7 @@
     ["Do you service hearing aids I bought elsewhere?", "In most cases, yes. We clean, maintain and repair most major brands, and we can reprogram and verify them. Bring the devices in and we will tell you what we can do in the office and what has to go back to the manufacturer, with the cost before we send it."],
     ["Do you treat tinnitus even without hearing loss?", "Yes. Tinnitus occurs with or without measurable hearing loss. We evaluate it, check for the red flags that warrant a medical referral, and discuss counselling and sound-therapy options that suit your situation."],
     ["Which office should I visit?", "Both San Mateo and San Carlos offer the same services. Choose whichever is easier to reach. You can book at either through our [contact page](/contact/) or by calling 650-342-9449."],
-    ["I have a quote from another clinic. Will you look at it?", "Yes, free of charge and with no obligation to buy from us. Our [second opinion on a hearing aid quote](/hearing-aid-second-opinion/) tells you what technology level you are being sold, what is bundled into the price, and whether the fitting includes verification."]
+    ["I have a quote from another clinic. Will you look at it?", "Yes, with no obligation to buy from us. Our [second opinion on a hearing aid quote](/hearing-aid-second-opinion/) tells you what technology level you are being sold, what is bundled into the price, and whether the fitting includes verification."]
   ],
   image: "/assets/core/services.svg",
   imageLabel: "What we do at both Peninsula offices",

@@ -25,7 +25,7 @@
     ["Phonak EON vs Phonak Infinio", "/products/hearing-aids-by-brand/phonak/phonak-eon-vs-phonak-infinio/"],
     ["Oticon Reveal: the third flagship of 2026", "/products/hearing-aids-by-brand/oticon/oticon-reveal/"],
     ["Compare all brands we fit", "/products/hearing-aids-by-brand/"],
-    ["Free second opinion on a quote", "/hearing-aid-second-opinion/"]
+    ["Second opinion visit for a quote", "/hearing-aid-second-opinion/"]
   ],
   takeaways: [
     "Phonak EON and Signia MaX launched on the same day, August 24, 2026. Neither has been measured by any independent laboratory.",

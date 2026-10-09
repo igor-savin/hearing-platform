@@ -162,9 +162,9 @@ export const crawledPages: SitePage[] = [
   },
   {
     "path": "/hearing-aid-second-opinion/",
-    "title": "Free Second Opinion on Your Hearing Aid Quote | California Hearing Center",
-    "h1": "Free Second Opinion on Your Hearing Aid Quote",
-    "desc": "Bring your hearing aid quote and your audiogram. We read both with you, free and with no obligation, at our San Mateo and San Carlos offices. Call 650-342-9449.",
+    "title": "Second Opinion Visit on Your Hearing Aid Quote | California Hearing Center",
+    "h1": "Second Opinion Visit on Your Hearing Aid Quote",
+    "desc": "Bring your hearing aid quote and your audiogram. We read both with you, with no obligation, at our San Mateo and San Carlos offices. Call 650-342-9449.",
     "h2": [],
     "paragraphs": []
   },

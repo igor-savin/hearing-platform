@@ -180,7 +180,7 @@ const nav: NavItem[] = [
     items: [
       ["Hearing Testing", "/hearing-testing/"],
       ["Hearing Aid Fitting", "/hearing-aid-fitting/"],
-      ["Free Second Opinion", "/hearing-aid-second-opinion/"],
+      ["Second Opinion Visit", "/hearing-aid-second-opinion/"],
       ["Senior Living Outreach", "/senior-living/", [
         ["Community Hearing Program", "/senior-living/"],
         ["Request a Visit", "/senior-living/request-a-visit/"],

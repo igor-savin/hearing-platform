@@ -24,7 +24,7 @@
     ["Signia MaX vs Oticon Reveal", "/products/hearing-aids-by-brand/signia/signia-max-vs-oticon-reveal/"],
     ["What Signia MaX costs", "/products/hearing-aids-by-brand/signia/signia-max-cost/"],
     ["Why real-ear measurement decides the outcome", "/hearing-aid-fitting/"],
-    ["Free second opinion on a hearing aid quote", "/hearing-aid-second-opinion/"]
+    ["Second opinion visit for a hearing aid quote", "/hearing-aid-second-opinion/"]
   ],
   takeaways: [
     "MaX is a genuine generational change. Four purpose-trained neural networks on a new chip, own-voice processing without calibration, and telecoil plus Auracast built into the standard device.",

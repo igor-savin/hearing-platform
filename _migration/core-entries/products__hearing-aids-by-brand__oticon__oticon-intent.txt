@@ -15,7 +15,7 @@
     ["What Intent has that Reveal does not", "The miniBTE R behind-the-ear model, which matters for powerful fittings, custom earmoulds and dexterity. Two and a half years of clinical use, which is worth something on its own. And a price that is easing now that it is the previous generation. Reveal launched as a rechargeable miniRITE R only, and no independent laboratory has measured it. We have no independent measurement of Intent to put beside it either, so we are not going to hand you a bench comparison of the two. What we can tell you is which shapes each one comes in and what that means for your ears."],
     ["Connectivity, tinnitus and daily use", "Intent carries an IP68 rating, Tinnitus SoundSupport, Bluetooth LE Audio with Auracast, Made for iPhone and Android streaming, a telecoil, and the Oticon Companion app for adjustments. The accessory range, ConnectClip and the TV Adapter included, works across both platforms. We can also make remote adjustments between visits. During your fitting we set up pairing, go through charging and cleaning, and check you can handle the devices comfortably before you leave."],
     ["Fitting and real-ear verification", "This is where your appointment goes, and it is not a formality. Manufacturer first-fit settings routinely land ten decibels or more below prescriptive targets in the high frequencies, which is exactly where speech clarity lives. We use [real-ear measurement during the fitting](/hearing-aid-fitting/) to confirm what the device delivers at your eardrum against your prescription, then adjust across pitches until they match. Two Oticon platforms one generation apart will feel far more alike than the same device will feel verified against unverified."],
-    ["Come and hear it", "We can demonstrate Intent alongside Reveal in the same appointment, in a noisy room rather than a quiet booth. It takes about thirty minutes and costs nothing. Bring a recent audiogram if you have one, or we will test first. Call 650-342-9449 or [request an appointment](/contact/#request-appointment) at [San Mateo](/contact/san-mateo/) or [San Carlos](/contact/san-carlos/). If you have been quoted for either platform, our [free second opinion](/hearing-aid-second-opinion/) will tell you which tier you are actually being sold."]
+    ["Come and hear it", "We can demonstrate Intent alongside Reveal in the same appointment, in a noisy room rather than a quiet booth. It takes about thirty minutes and costs nothing. Bring a recent audiogram if you have one, or we will test first. Call 650-342-9449 or [request an appointment](/contact/#request-appointment) at [San Mateo](/contact/san-mateo/) or [San Carlos](/contact/san-carlos/). If you have been quoted for either platform, our [second opinion visit](/hearing-aid-second-opinion/) will tell you which tier you are actually being sold."]
   ],
   bulletLinks: [
     ["Oticon Reveal vs Oticon Intent", "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-oticon-intent/"],
@@ -24,7 +24,7 @@
     ["Professional fitting and verification", "/hearing-aid-fitting/"],
     ["Start with a hearing evaluation", "/hearing-testing/"],
     ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
-    ["Free second opinion on a quote", "/hearing-aid-second-opinion/"],
+    ["Second opinion visit for a quote", "/hearing-aid-second-opinion/"],
     ["Visit our San Mateo office", "/contact/san-mateo/"]
   ],
   takeaways: [

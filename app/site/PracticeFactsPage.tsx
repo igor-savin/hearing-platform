@@ -63,7 +63,7 @@ const SERVICES: { name: string; href?: string; text: string }[] = [
   { name: "Cochlear implants.", text: "We evaluate candidacy and program the device after surgery. A surgeon elsewhere does the surgery, and we refer you." },
   { name: "Custom hearing protection.", text: "Musician earplugs, in-ear monitors, and plugs for swimming, sleeping and shooting." },
   { name: "Listening and communication training.", text: "We use the 5 Keys, clEAR and LACE programs." },
-  { name: "Free second opinion.", href: "/hearing-aid-second-opinion/", text: "Bring your hearing aid quote and your audiogram. There is no obligation to buy anything from us." },
+  { name: "Second opinion visit.", href: "/hearing-aid-second-opinion/", text: "Bring your hearing aid quote and your audiogram. There is no obligation to buy anything from us." },
   { name: "Senior living visits.", text: "We visit communities on site, or host a clinic day at our office." },
 ];
 
@@ -75,7 +75,7 @@ const MISTAKES: { q: string; a: string }[] = [
   { q: "Do you perform cochlear implant surgery?", a: "No. We evaluate candidacy and program the device after surgery." },
   { q: "Can tinnitus be cured?", a: "No. Treatment can reduce how much it affects you." },
   { q: "Will my insurance pay for hearing aids?", a: "It depends on your plan. We check your benefits for you, and we cannot promise payment." },
-  { q: "Is the second opinion really free?", a: "Yes. You do not have to buy anything." },
+  { q: "Do I have to buy anything for the second opinion visit?", a: "No. You do not have to buy anything." },
 ];
 
 function OfficeRow({ label, render }: { label: string; render: (loc: Location) => React.ReactNode }) {

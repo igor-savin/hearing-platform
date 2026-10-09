@@ -69,7 +69,7 @@ export const START_HERE: Record<Who, { heading: string; steps: { text: string; h
       { text: "Read the warning signs. They come first.", href: "#doctor-first" },
       { text: "Pick the three places where you most want to hear well.", href: "#goals" },
       { text: "Know what a good first visit includes.", href: "#first-visit" },
-      { text: "Book a visit, or ask for a free second opinion.", href: "#next-steps" },
+      { text: "Book a visit, or ask for a second opinion visit.", href: "#next-steps" },
     ],
   },
   loved: {
@@ -86,7 +86,7 @@ export const START_HERE: Record<Who, { heading: string; steps: { text: string; h
     steps: [
       { text: "Check what your quote includes.", href: "#quote-check" },
       { text: "See what a fair price should cover.", href: "#costs" },
-      { text: "Bring the quote for a free second opinion.", href: "#next-steps" },
+      { text: "Bring the quote for a second opinion visit.", href: "#next-steps" },
     ],
   },
   learning: {
@@ -321,8 +321,8 @@ export const QUOTE_CHECK = {
   ],
   sheetTitle: "Quote Check",
   sheetFooter:
-    "Bring this sheet and your quote to any provider. At California Hearing Center, the second opinion on a quote is free, and you do not have to buy anything.",
-  secondOpinion: { text: "Free second opinion on your quote", href: "/hearing-aid-second-opinion/" },
+    "Bring this sheet and your quote to any provider. At California Hearing Center, you do not have to buy anything to get a second opinion visit on a quote.",
+  secondOpinion: { text: "Second opinion visit on your quote", href: "/hearing-aid-second-opinion/" },
 };
 
 // ---------------------------------------------------------------------------
@@ -385,7 +385,7 @@ export const SHARE = {
 export const NEXT_STEPS = {
   heading: "Next steps",
   intro: "Pick the one that fits. You do not need a referral for most visits.",
-  secondOpinionLine: "Have a quote? Bring it and your hearing test results. We tell you if it matches your hearing and what it includes. It is free, and you do not have to buy anything.",
+  secondOpinionLine: "Have a quote? Bring it and your hearing test results. We tell you if it matches your hearing and what it includes. You do not have to buy anything.",
 };
 
 export const METHOD = {

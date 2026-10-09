@@ -18,7 +18,7 @@
     ["Request an appointment", "/contact/"],
     ["What a hearing test actually measures", "/hearing-testing/"],
     ["How fitting and verification work", "/hearing-aid-fitting/"],
-    ["Free second opinion on a quote", "/hearing-aid-second-opinion/"],
+    ["Second opinion visit for a quote", "/hearing-aid-second-opinion/"],
     ["Our San Mateo office", "/contact/san-mateo/"],
     ["Our San Carlos office", "/contact/san-carlos/"],
     ["When is Pride Month? Dates and Bay Area events", "/celebrating-pride-month-a-month-of-diversity-equality-and-acceptance/"]

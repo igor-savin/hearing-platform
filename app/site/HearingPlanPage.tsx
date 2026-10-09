@@ -187,7 +187,7 @@ export function HearingPlanPage() {
             <p><a className="button primary" href={SCHEDULE_URL}>Schedule an appointment</a></p>
           </div>
           <div className="hp-card">
-            <h3>Get a free second opinion</h3>
+            <h3>Book a second opinion visit</h3>
             <p>{NEXT_STEPS.secondOpinionLine}</p>
             <p><Link className="button outline" href={QUOTE_CHECK.secondOpinion.href}>See how it works</Link></p>
           </div>

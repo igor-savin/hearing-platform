@@ -19,7 +19,7 @@
     ["Request a visit for your community", "/senior-living/request-a-visit/"],
     ["Download the one-page program summary (PDF)", "/assets/senior-living-handout.pdf"],
     ["Book a hearing test", "/hearing-testing/"],
-    ["Free second opinion on hearing aids", "/hearing-aid-second-opinion/"],
+    ["Second opinion visit on hearing aids", "/hearing-aid-second-opinion/"],
     ["Hearing aid repair", "/services/hearing-aid-repair/"],
     ["Our San Mateo office", "/contact/san-mateo/"],
     ["Our San Carlos office", "/contact/san-carlos/"]
