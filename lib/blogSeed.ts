@@ -105,6 +105,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "Mixed hearing loss: a blockage and an inner-ear loss together",
+        "href": "/hearing-loss/mixed-hearing-loss"
       }
     ],
     "blogMeta": {
@@ -221,6 +225,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "When hearing aids are no longer enough: cochlear implant evaluation",
         "href": "/when-hearing-aids-no-longer-enough-cochlear-implant"
+      },
+      {
+        "label": "Understanding hearing loss at 4,000 Hz",
+        "href": "/understanding-hearing-loss-at-4000-hz"
       }
     ],
     "blogMeta": {
@@ -1125,6 +1133,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Understanding hearing loss: types and causes",
         "href": "/hearing-loss"
+      },
+      {
+        "label": "Understanding hearing loss at 4,000 Hz",
+        "href": "/understanding-hearing-loss-at-4000-hz"
       }
     ],
     "blogMeta": {
@@ -1681,6 +1693,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing aids for musicians in Westchester",
         "href": "/musician-hearing-aids-westchester"
+      },
+      {
+        "label": "What is the 60-60 rule in audiology?",
+        "href": "/what-is-the-60-60-rule-in-audiology"
       }
     ],
     "blogMeta": {
@@ -4577,6 +4593,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Somers, NY office",
         "href": "/Somers-NY"
+      },
+      {
+        "label": "How many hours a day should you wear new hearing aids?",
+        "href": "/how-many-hours-a-day-should-you-wear-new-hearing-aids"
       }
     ],
     "blogMeta": {
@@ -5005,6 +5025,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       {
         "label": "Hearing aids for musicians in Westchester",
         "href": "/musician-hearing-aids-westchester"
+      },
+      {
+        "label": "What is the 60-60 rule in audiology?",
+        "href": "/what-is-the-60-60-rule-in-audiology"
       }
     ],
     "blogMeta": {

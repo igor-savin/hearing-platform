@@ -42,7 +42,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
       { label: "Harrison office", href: "/harrison-ny" },
       { label: "Somers office", href: "/Somers-NY" },
-      { label: "Contact Us", href: "/contact-us" }
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
+      { label: "Celebrating Pride Month: inclusivity and compassion", href: "/celebrating-pride-month-embracing-inclusivity-and-compassion" }
     ],
     blogMeta: {
       frame: "Practice guide",
@@ -1385,7 +1386,7 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Greenwich, CT", href: "/greenwich-ct" },
       { label: "Harrison office", href: "/harrison-ny" },
       { label: "Hearing Testing", href: "/hearing-testing" },
-      { label: "Contact Us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Hearing care across Westchester County", href: "/areas-we-serve/westchester-county-ny" },
       { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
       { label: "Employer and union hearing aid benefits in Westchester", href: "/employer-union-hearing-aid-benefits-westchester" }
@@ -1730,7 +1731,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Why Hearing Aids Whistle", href: "/why-hearing-aids-whistle" },
       { label: "Programming Hearing Aids Bought Somewhere Else", href: "/can-audiologist-program-hearing-aids-bought-elsewhere" },
       { label: "Why Real-Ear Verification Matters", href: "/why-real-ear-verification-matters" },
-      { label: "Hearing aids for musicians in Westchester", href: "/musician-hearing-aids-westchester" }
+      { label: "Hearing aids for musicians in Westchester", href: "/musician-hearing-aids-westchester" },
+      { label: "How many hours a day should you wear new hearing aids?", href: "/how-many-hours-a-day-should-you-wear-new-hearing-aids" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1806,7 +1808,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Protection for Power Tools and Yard Work", href: "/hearing-protection-power-tools-yard-work" },
       { label: "How Loud Is Too Loud?", href: "/how-loud-is-too-loud-decibels" },
       { label: "Hearing Aids for Musicians", href: "/musician-hearing-aids-westchester" },
-      { label: "Hearing Testing", href: "/hearing-testing" }
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing protection service overview", href: "/how-we-can-help/hearing-protection" }
     ],
     blogMeta: {
       frame: "Patient guide",
@@ -1950,7 +1953,8 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
       { label: "Hearing Aid Adjustments in Westchester", href: "/hearing-aid-adjustments-westchester" },
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing protection", href: "/hearing-protection" },
-      { label: "Tinnitus after loud noise: what to do next", href: "/tinnitus-after-loud-noise-what-to-do" }
+      { label: "Tinnitus after loud noise: what to do next", href: "/tinnitus-after-loud-noise-what-to-do" },
+      { label: "Hearing protection service overview", href: "/how-we-can-help/hearing-protection" }
     ],
     blogMeta: {
       frame: "Patient guide",

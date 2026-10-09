@@ -165,7 +165,7 @@ export const reviewsPage: SitePage = {
   related: [
     { label: "Meet the Team", href: "/meet-the-team" },
     { label: "Hearing Testing", href: "/hearing-testing" },
-    { label: "Contact Us", href: "/contact-us" },
+    { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
     { label: "Why Choose Us", href: "/why-choose-us" }
   ]
 };

@@ -84,7 +84,7 @@ export const productGuides: SitePage[] = [
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
       { label: "Signia MaX vs Signia IX", href: "/hearing-aids-brands/signia/signia-max-vs-signia-ix" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Contact Us", href: "/contact-us" }
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" }
     ]
   },
   {
@@ -190,7 +190,7 @@ export const productGuides: SitePage[] = [
       { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
       { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Contact Us", href: "/contact-us" }
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" }
     ]
   },
   {

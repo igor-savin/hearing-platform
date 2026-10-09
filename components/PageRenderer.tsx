@@ -1097,6 +1097,149 @@ function OfficesNearYouBand({
 // Plain internal links for pages whose template has no related-links block
 // (the recovered legacy pages and the product pages). Keyed by path.
 const pageCrossLinks: Record<string, { heading: string; links: { label: string; href: string }[] }> = {
+  "/hearing-aids-brands/resound": {
+    heading: "Before you choose ReSound",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "The 6 hearing aid platforms to know in fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Bluetooth hearing aids: what to know before buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "How to make hearing aids more comfortable", href: "/how-to-make-hearing-aids-more-comfortable" },
+      { label: "What questions should you ask before buying hearing aids?", href: "/questions-before-buying-hearing-aids" },
+      { label: "Hearing aid adjustments in Westchester: why in-person visits matter", href: "/hearing-aid-adjustments-westchester" }
+    ]
+  },
+  "/hearing-aids-brands/widex": {
+    heading: "Before you choose Widex",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "The 6 hearing aid platforms to know in fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
+      { label: "How many follow-up visits do new hearing aids need?", href: "/how-many-follow-up-visits-new-hearing-aids" },
+      { label: "Why new hearing aids sound strange at first", href: "/why-new-hearing-aids-sound-strange" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" }
+    ]
+  },
+  "/hearing-aids-brands/signia": {
+    heading: "Before you choose Signia",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Signia MaX: what is actually known so far", href: "/signia-max-what-we-know" },
+      { label: "The 6 hearing aid platforms to know in fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Prescription vs OTC hearing aids: how to compare", href: "/prescription-vs-otc-hearing-aids" },
+      { label: "How many follow-up visits do new hearing aids need?", href: "/how-many-follow-up-visits-new-hearing-aids" },
+      { label: "Types of hearing aids", href: "/types-of-hearing-aids" }
+    ]
+  },
+  "/hearing-aids-brands/starkey": {
+    heading: "Before you choose Starkey",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "The 6 hearing aid platforms to know in fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Hearing aid adjustments in Westchester: why in-person visits matter", href: "/hearing-aid-adjustments-westchester" },
+      { label: "Rechargeable vs battery hearing aids", href: "/rechargeable-vs-battery-hearing-aids" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+      { label: "What questions should you ask before buying hearing aids?", href: "/questions-before-buying-hearing-aids" }
+    ]
+  },
+  "/hearing-aids-brands/phonak": {
+    heading: "Before you choose Phonak",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Phonak EON: what is actually known so far", href: "/phonak-eon-what-we-know" },
+      { label: "Auracast and hearing aids explained", href: "/auracast-hearing-aids-explained" },
+      { label: "Bluetooth hearing aids: what to know before buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "The 6 hearing aid platforms to know in fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Why real-ear verification matters", href: "/why-real-ear-verification-matters" }
+    ]
+  },
+  "/hearing-aids-brands/oticon": {
+    heading: "Before you choose Oticon",
+    links: [
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "What questions should you ask before buying hearing aids?", href: "/questions-before-buying-hearing-aids" },
+      { label: "The 6 hearing aid platforms to know in fall 2026", href: "/best-ai-hearing-aids-fall-2026" },
+      { label: "Hearing loss and cognitive effort: why listening can feel exhausting", href: "/hearing-loss-cognitive-effort-listening-fatigue" },
+      { label: "Rechargeable vs battery hearing aids", href: "/rechargeable-vs-battery-hearing-aids" },
+      { label: "What to expect during a hearing aid fitting appointment", href: "/what-to-expect-hearing-aid-fitting" }
+    ]
+  },
+  "/products": {
+    heading: "Before you compare products",
+    links: [
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
+      { label: "What questions should you ask before buying hearing aids?", href: "/questions-before-buying-hearing-aids" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Custom earplugs in Westchester", href: "/custom-earplugs-westchester" },
+      { label: "Hearing protection", href: "/hearing-protection" }
+    ]
+  },
+  "/contact-us": {
+    heading: "Plan your visit",
+    links: [
+      { label: "Hearing testing", href: "/hearing-testing" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
+      { label: "Hearing aid repair", href: "/hearing-aid-repair" },
+      { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
+      { label: "Patient forms", href: "/patient-forms" },
+      { label: "Meet our team of hearing doctors", href: "/meet-the-team" }
+    ]
+  },
+  "/hearing-aid-repair": {
+    heading: "Fix common hearing aid problems",
+    links: [
+      { label: "Why your hearing aids whistle and how to fix it", href: "/why-hearing-aids-whistle" },
+      { label: "Hearing aid not charging? Common causes and next steps", href: "/hearing-aid-not-charging" },
+      { label: "Hearing aid sounds weak: wax, moisture or programming?", href: "/hearing-aid-sounds-weak" },
+      { label: "Hearing aid tune-up vs repair: which appointment do you need?", href: "/hearing-aid-tune-up-vs-repair" },
+      { label: "How often should hearing aids be professionally cleaned?", href: "/how-often-professional-hearing-aid-cleaning" },
+      { label: "Domes, wax guards and receivers explained", href: "/hearing-aid-domes-wax-guards-receivers" }
+    ]
+  },
+  "/hearing-protection": {
+    heading: "Protect your hearing in loud places",
+    links: [
+      { label: "Custom earplugs in Westchester: sleep, swim, music and work", href: "/custom-earplugs-westchester" },
+      { label: "Hearing protection for concerts: musician earplugs vs foam", href: "/hearing-protection-concerts-musician-vs-foam" },
+      { label: "Hearing protection for power tools, yard work and DIY", href: "/hearing-protection-power-tools-yard-work" },
+      { label: "How loud is too loud? Decibels and daily noise", href: "/how-loud-is-too-loud-decibels" },
+      { label: "What is noise-induced hearing loss, and can it be prevented?", href: "/noise-induced-hearing-loss-prevention" },
+      { label: "Tinnitus after loud noise: what to do next", href: "/tinnitus-after-loud-noise-what-to-do" }
+    ]
+  },
+  "/tinnitus-therapy": {
+    heading: "Common tinnitus questions",
+    links: [
+      { label: "Can hearing aids help tinnitus?", href: "/can-hearing-aids-help-tinnitus" },
+      { label: "Tinnitus at night: why it feels louder", href: "/tinnitus-at-night-why-louder" },
+      { label: "Ringing in one ear: causes, red flags and next steps", href: "/ringing-in-one-ear-red-flags-next-steps" },
+      { label: "Pulsatile tinnitus: why heartbeat-like sounds need attention", href: "/pulsatile-tinnitus-heartbeat-sound" },
+      { label: "How to choose a tinnitus specialist in Westchester County", href: "/how-to-choose-tinnitus-specialist-westchester" },
+      { label: "Tinnitus treatment and relief options", href: "/how-we-can-help/tinnitus-management/treatment-and-relief-options" }
+    ]
+  },
+  "/hearing-aid-fitting": {
+    heading: "Plan your hearing aid fitting",
+    links: [
+      { label: "What to expect during a hearing aid fitting appointment", href: "/what-to-expect-hearing-aid-fitting" },
+      { label: "Why real-ear verification matters", href: "/why-real-ear-verification-matters" },
+      { label: "How many follow-up visits new hearing aids need", href: "/how-many-follow-up-visits-new-hearing-aids" },
+      { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" },
+      { label: "Types of hearing aids", href: "/types-of-hearing-aids" },
+      { label: "Why new hearing aids sound strange at first", href: "/why-new-hearing-aids-sound-strange" }
+    ]
+  },
+  "/hearing-testing": {
+    heading: "Before and after your hearing test",
+    links: [
+      { label: "What happens during a comprehensive hearing evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
+      { label: "Hearing test vs hearing screening: what is the difference?", href: "/hearing-test-vs-hearing-screening-difference" },
+      { label: "How often should adults get their hearing checked?", href: "/how-often-should-adults-get-hearing-checked" },
+      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+      { label: "Why can I hear people talking but not understand the words?", href: "/hear-people-talking-not-understand-words" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" }
+    ]
+  },
   "/lyric-invisible-hearing": {
     heading: "More about Lyric and invisible hearing aids",
     links: [
@@ -1126,12 +1269,14 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
     ]
   },
   "/hearing-aids-brands": {
-    heading: "Keep reading about hearing aids",
+    heading: "Choosing between hearing aid brands",
     links: [
-      { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
-      { label: "Lyric Hearing Aids in Westchester", href: "/lyric-invisible-hearing" },
-      { label: "How Much Do Hearing Aids Cost in Westchester County?", href: "/hearing-aid-cost-westchester-county" },
-      { label: "Questions to Ask Before Buying Hearing Aids", href: "/questions-before-buying-hearing-aids" }
+      { label: "Hearing aids 101", href: "/hearing-aids-101" },
+      { label: "Rechargeable vs battery hearing aids", href: "/rechargeable-vs-battery-hearing-aids" },
+      { label: "Bluetooth hearing aids: what to know before buying", href: "/bluetooth-hearing-aids-before-buying" },
+      { label: "Prescription vs OTC hearing aids: how to compare", href: "/prescription-vs-otc-hearing-aids" },
+      { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+      { label: "Hearing aid fitting", href: "/hearing-aid-fitting" }
     ]
   },
   "/Scarsdale-NY": {
@@ -1244,7 +1389,7 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Contact us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Hearing aid repair", href: "/hearing-aid-repair" },
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
@@ -1259,7 +1404,7 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Contact us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Signia MaX vs Signia IX", href: "/hearing-aids-brands/signia/signia-max-vs-signia-ix" },
       { label: "What Signia MaX costs", href: "/hearing-aids-brands/signia/signia-max-cost" },
@@ -1274,7 +1419,7 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Contact us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
@@ -1289,7 +1434,7 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Contact us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Phonak EON vs Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-eon-vs-phonak-infinio" },
       { label: "What Phonak EON costs", href: "/hearing-aids-brands/phonak/phonak-eon-cost" },
@@ -1303,7 +1448,7 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Contact us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Tinnitus therapy", href: "/tinnitus-therapy" },
       { label: "Signia MaX", href: "/hearing-aids-brands/signia/signia-max" },
       { label: "Oticon Reveal", href: "/hearing-aids-brands/oticon/oticon-reveal" },
@@ -1317,7 +1462,7 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Contact us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Signia MaX vs Oticon Reveal", href: "/hearing-aids-brands/signia/signia-max-vs-oticon-reveal" }
     ]
   },
@@ -1328,7 +1473,7 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Somers, NY office", href: "/Somers-NY" },
       { label: "Hearing aid fitting", href: "/hearing-aid-fitting" },
       { label: "Hearing evaluation", href: "/hearing-testing" },
-      { label: "Contact us", href: "/contact-us" },
+      { label: "Compare the Harrison and Somers offices", href: "/contact-us" },
       { label: "Phonak EON", href: "/hearing-aids-brands/phonak/phonak-eon" },
       { label: "Phonak Infinio", href: "/hearing-aids-brands/phonak/phonak-infinio" },
       { label: "What Phonak EON costs", href: "/hearing-aids-brands/phonak/phonak-eon-cost" }
@@ -1693,8 +1838,8 @@ const pageCrossLinks: Record<string, { heading: string; links: { label: string; 
       { label: "Hearing aid repair", href: "/hearing-aid-repair" },
       { label: "Hearing protection", href: "/hearing-protection" },
       { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
-      { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
-      { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" }
+      { label: "Hearing care near Katonah, NY", href: "/areas-we-serve/westchester-county-ny/katonah" },
+      { label: "Hearing care near Bedford, NY", href: "/areas-we-serve/westchester-county-ny/bedford" }
     ]
   }
 };
@@ -1889,7 +2034,7 @@ function HomepageOriginal() {
               </p>
             </div>
             <Link className="focus-ring inline-flex rounded-md border border-[#005a9c] px-5 py-3 font-black text-[#003f6f] transition hover:bg-[#eaf4fb]" href="/hearing-testing">
-              Read more +
+              Start with a hearing test +
             </Link>
           </div>
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
@@ -2136,7 +2281,7 @@ function HomepageProofFirst() {
               </p>
             </div>
             <Link className="focus-ring inline-flex rounded-md border border-[#005a9c] px-5 py-3 font-black text-[#003f6f] transition hover:bg-[#eaf4fb]" href="/hearing-testing">
-              Read more +
+              Start with a hearing test +
             </Link>
           </div>
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
@@ -2818,7 +2963,7 @@ function ServiceAreasIndexPage({ page }: { page: SitePage }) {
                 <h3 className="text-[29px] font-black">{county.name}, {county.state}</h3>
                 <p className="mt-3 text-[20px] leading-[1.35]">{county.summary}</p>
                 <Link className="mt-5 inline-block text-[18px] font-bold text-[#005a9c] underline" href={countyPath(county.slug)}>
-                  Visit county page →
+                  Visit {county.name} page →
                 </Link>
               </article>
             ))}
@@ -2965,7 +3110,7 @@ function AreaExpertiseSection({ locationLabel, office }: { locationLabel: string
               <p className="mt-1 text-[16px] font-bold text-[#a75e22]">{provider.role}</p>
               <p className="mt-4 text-[17px] leading-7">{providerCredentialHighlights[provider.slug] || provider.credentials[0]}</p>
               <Link className="mt-5 inline-block text-[16px] font-bold text-[#005a9c] underline" href={providerPath(provider)}>
-                View profile
+                View profile: {provider.name}
               </Link>
             </article>
           ))}
@@ -3782,6 +3927,7 @@ function ProductsIndexPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <ProductCta />
     </>
   );
@@ -3819,6 +3965,7 @@ function ProductBrandIndexPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <ProductCta />
     </>
   );
@@ -3889,6 +4036,7 @@ function ProductBrandPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
       <ProductCta />
     </>
   );
@@ -5488,6 +5636,8 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
         </section>
       ) : null}
 
+      <PageCrossLinks page={page} />
+
       <section className="bg-[#003f6f] py-14 text-white">
         <div className="mx-auto flex max-w-[1660px] flex-col gap-6 px-[64px] md:flex-row md:items-center md:justify-between max-md:px-5">
           <div>
@@ -6165,6 +6315,7 @@ function LiveContactPage({ page }: { page: SitePage }) {
           </div>
         </div>
       </section>
+      <PageCrossLinks page={page} />
     </>
   );
 }
