@@ -2319,6 +2319,94 @@ const nextBlogBlueprints: NextBlogBlueprint[] = [
         { label: "California Hearing Center: Signia MaX explained", href: "https://www.calhearing.com/signia-max-what-we-know/" }
       ]
     }
+  },
+  {
+    // reviewedBySlug intentionally unset until a clinician reviews this page
+    path: "/sounds-of-america-campaign",
+    title: "Sounds of America 2026: Make Your Sound List Part of Your Hearing Evaluation",
+    metaTitle: "Sounds of America 2026: Your Sound List for a Hearing Test",
+    metaDescription: "Join Sounds of America, then bring your sound list to a hearing evaluation in Harrison or Somers. See how the campaign works.",
+    h1: "Sounds of America 2026: Make Your Sound List Part of Your Hearing Evaluation",
+    heroImage: { src: "/assets/news/sounds-of-america-campaign-westchester.png", alt: "A worksheet titled My Sound List with three numbered rows for the sound, where you hear it, and whether it is easy, hard or gone" },
+    ogImage: { src: "/assets/og/sounds-of-america-campaign.png", alt: "Sounds of America 2026: make a sound list for your hearing visit. Audiology Associates of Westchester." },
+    ogTitle: "Sounds of America 2026: Make a Sound List for Your Hearing Visit",
+    ogDescription: "A national campaign asks what sounds define home. Write down three you never want to lose and bring the list to your hearing evaluation.",
+    sections: ["Awareness Campaign", "Sound list guide", "Audiologist perspective", "Frequently asked questions"],
+    body: [
+      "Most people arrive at a hearing evaluation with a general complaint: I cannot follow people in restaurants. That is useful. A list of specific sounds is better. It tells your audiologist what to ask about, what to focus on, and how to judge whether a solution is working.",
+      "A national campaign has just given everyone a reason to write that list. Audiology Associates of Westchester is not a partner in the campaign, and the Hearing Industries Association and the Hearing Loss Association of America have not endorsed this page. This is our own take on how to use it.",
+      "The campaign in brief",
+      "The Hearing Industries Association (HIA), working with the Hearing Loss Association of America (HLAA), announced Sounds of America on September 23, 2026. The press release says it runs for eight weeks and asks people across the country what sounds define home. Organizers say they want hearing health to feel more personal and want to reduce the stigma around treatment and hearing aids. To join, record a video and post it on Facebook or Instagram with #SoundsOfAmerica. The campaign page also links to a quick hearing screening and a tool for finding a professional.",
+      "Build your sound list in five minutes",
+      "Write down three sounds you want to keep. Next to each one, note where you hear it and whether it is easy, hard or gone today. The table below shows how. Then add one person you want to hear clearly and one place you want to hear well. Those two lines often matter more than any single number on an audiogram. Your audiologist can use them to set goals for the visit.",
+      "Why we ask about listening goals",
+      "A hearing test measures what your ears detect. It does not tell us what you are trying to do with your hearing. Listening in a crowd can take real effort, and some people notice mental tiredness before they notice a volume problem. If restaurants are your hardest room, our page on why restaurants are hard with hearing loss explains what is going on. We also offer cognitive screening alongside hearing care, and our page on hearing tests and cognitive screening explains how the two fit together.",
+      "Screening versus a full evaluation",
+      "The campaign page offers a screening. A screening is a quick check. A full evaluation goes further and ends with a plan. If you are not sure which you need, read our page on hearing screening versus hearing test, or the one on what happens during a comprehensive hearing evaluation. We do not choose a hearing aid brand before we know you. After the evaluation, we look at your hearing, your situation and your goals, and then work out which device serves you best.",
+      "Signs your sound list is telling you something",
+      "A sound you used to love now seems missing or muffled. You hear people talking but miss the words. Family members notice before you do. It has been a long time since your last check. Any of these is a good reason to book a hearing evaluation. If your hearing changes suddenly in one ear, do not wait. Read our page on sudden hearing loss and call promptly.",
+      "Protect what you have",
+      "Some sounds on your list may be loud ones, such as concerts or yard tools. Our pages on how loud is too loud and on concert hearing protection explain your options.",
+      "Book a visit",
+      "Bring your list to our Harrison or Somers office. Contact us to ask about scheduling. Our sister practice, California Hearing Center, is asking the same question on the West Coast.",
+      "Status and last update",
+      "Last updated October 9, 2026. What changed: this is the first version. The sources we read describe the campaign as lasting eight weeks from the September 23 launch and do not give an end date, so we state none. Sources are listed at the end of this page.",
+      "Medical information notice",
+      "We wrote this to inform, and it is not medical advice. If your hearing drops suddenly, call a doctor promptly instead of waiting."
+    ],
+    faqs: [
+      { question: "What is the best way to take part in Sounds of America?", answer: "Post a short video on Facebook or Instagram with #SoundsOfAmerica. You can also take part privately by writing your own sound list." },
+      { question: "Do I have to share a video?", answer: "No. Sharing is optional. Writing the list for yourself still helps your hearing visit." },
+      { question: "What should I bring to a hearing evaluation?", answer: "Bring your sound list, a note of the people and places that matter most, and any current hearing devices. A family member can add what they notice." },
+      { question: "Can a hearing test show why a sound seems different?", answer: "It measures how well you detect and understand sound. Your audiologist then explains what the results mean for your daily life." },
+      { question: "Is Audiology Associates of Westchester part of the campaign?", answer: "No. HIA and HLAA run the campaign. We are sharing it because the question matters to our patients." },
+      { question: "When does the campaign end?", answer: "It is described as an eight-week campaign from September 23, 2026. The sources we read do not give an end date." }
+    ],
+    related: [
+      { label: "Hearing Testing", href: "/hearing-testing" },
+      { label: "Hearing screening vs hearing test", href: "/hearing-screening-vs-hearing-test" },
+      { label: "What happens during a comprehensive hearing evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
+      { label: "Hearing loss, cognitive effort and listening fatigue", href: "/hearing-loss-cognitive-effort-listening-fatigue" },
+      { label: "Why restaurants are hard with hearing loss", href: "/why-restaurants-hard-with-hearing-loss" },
+      { label: "Hearing test and cognitive screening", href: "/hearing-test-and-cognitive-screening" },
+      { label: "How often should adults get their hearing checked", href: "/how-often-should-adults-get-hearing-checked" },
+      { label: "Sudden hearing loss: why not to wait", href: "/sudden-hearing-loss-why-not-wait" },
+      { label: "How loud is too loud", href: "/how-loud-is-too-loud-decibels" },
+      { label: "Concert hearing protection", href: "/hearing-protection-concerts-musician-vs-foam" },
+      { label: "Harrison, NY office", href: "/harrison-ny" },
+      { label: "Somers, NY office", href: "/Somers-NY" },
+      { label: "California Hearing Center", href: "/california-hearing-center" }
+    ],
+    blogMeta: {
+      frame: "Awareness campaign explained",
+      byline: "A national campaign and your hearing visit",
+      reviewedBy,
+      readTime: "4 min read",
+      articleType: "News explained",
+      pullQuote: "Write down three sounds you never want to lose. Then bring the list to your hearing visit.",
+      keyTakeaways: [
+        "Sounds of America is an eight-week campaign from HIA and HLAA, announced on September 23, 2026.",
+        "You can join by posting a short video on Facebook or Instagram with #SoundsOfAmerica, or privately by writing a sound list.",
+        "A list of specific sounds, people and places helps your audiologist set goals for your hearing evaluation."
+      ],
+      patientQuestion: "What should I bring to a hearing evaluation?",
+      storyLead: "A national campaign asks what sounds define home. Here is how to turn your answer into goals for your hearing visit.",
+      comparisonTable: {
+        afterHeading: "Build your sound list in five minutes",
+        caption: "A sample sound list with three example rows",
+        headers: ["Your sound", "Where you hear it", "Easy, hard or gone?"],
+        rows: [
+          ["Example: a grandchild's voice", "Sunday dinner", "Hard when others are talking"],
+          ["Example: birdsong", "The backyard in Somers", "Seems quieter than it used to"],
+          ["Example: the station announcement", "The Harrison commute", "Hard to catch the words"]
+        ]
+      },
+      sources: [
+        { label: "HIA and HLAA launch press release (PRWeb, Sept. 23, 2026)", href: "https://www.prweb.com/releases/hearing-industries-association-and-hearing-loss-association-of-america-launch-sounds-of-america-campaign-celebrating-the-sounds-of-our-communities-302887273.html" },
+        { label: "Sounds of America campaign page (hearing.org)", href: "https://www.hearing.org/sounds-of-america/" },
+        { label: "HearingTracker: HIA and HLAA launch Sounds of America", href: "https://www.hearingtracker.com/press-releases/hia-and-hlaa-launch-sounds-of-america-campaign" }
+      ]
+    }
   }
 ];
 

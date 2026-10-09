@@ -543,6 +543,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
     ],
     "related": [
       {
+        "label": "Sounds of America 2026: Your Sound List",
+        "href": "/sounds-of-america-campaign"
+      },
+      {
         "label": "The First Signs of Hearing Loss Families Usually Notice",
         "href": "/first-signs-of-hearing-loss-family-notice"
       },
@@ -5530,6 +5534,10 @@ const seedBlogBlueprints: SeedBlogBlueprint[] = [
       }
     ],
     "related": [
+      {
+        "label": "Sounds of America 2026: Your Sound List",
+        "href": "/sounds-of-america-campaign"
+      },
       {
         "label": "Do I Need a Hearing Test or Just Earwax Removal?",
         "href": "/hearing-test-or-earwax-removal"
