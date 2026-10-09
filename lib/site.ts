@@ -1225,7 +1225,8 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
     { label: "Hearing test or earwax removal?", href: "/hearing-test-or-earwax-removal" },
     { label: "Ear pressure: what may help", href: "/how-to-relieve-ear-pressure" },
     { label: "Harrison, NY office", href: "/harrison-ny" },
-    { label: "Somers, NY office", href: "/Somers-NY" }
+    { label: "Somers, NY office", href: "/Somers-NY" },
+    { label: "Mixed hearing loss: a blockage and an inner-ear loss together", href: "/hearing-loss/mixed-hearing-loss" }
   ],
   "/how-far-do-you-push-hearing-aid-in": [
     { label: "Wearing New Hearing Aids", href: "/how-many-hours-a-day-should-you-wear-new-hearing-aids" },
@@ -1268,7 +1269,8 @@ const editorialBlogRelatedLinks: Record<string, { label: string; href: string }[
     { label: "Can an audiologist remove earwax?", href: "/can-an-audiologist-remove-earwax-westchester" },
     { label: "Hearing test or earwax removal?", href: "/hearing-test-or-earwax-removal" },
     { label: "Harrison, NY office", href: "/harrison-ny" },
-    { label: "Somers, NY office", href: "/Somers-NY" }
+    { label: "Somers, NY office", href: "/Somers-NY" },
+    { label: "Psoriasis affects more than your skin", href: "/psoriasis-affects-more-than-your-skin" }
   ],
   "/what-is-the-best-hearing-aid-sold-at-costco": [
     { label: "Costco Hearing Test Cost", href: "/how-much-does-costco-charge-for-a-hearing-test" },

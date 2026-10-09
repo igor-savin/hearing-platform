@@ -1,5 +1,6 @@
 import type { Location, SitePage } from "@/lib/site";
-import { cityForPath, countyForPath } from "@/lib/serviceAreas";
+import { areaCities, areaCounties, cityForPath, cityLinkPath, countyForPath, countyPath } from "@/lib/serviceAreas";
+import { pressFeaturePath, pressFeatures } from "@/lib/press";
 import { providerForPath } from "@/lib/team";
 
 const baseUrl = "https://www.audiologyassociates.org";
@@ -176,7 +177,34 @@ export type NextStepsEntry = { heading: string; links: { label: string; href: st
 // first and only calls this when there is none, so a hand-written entry always
 // wins. It adds only links the template does not already render (the five core
 // services and the nearest office are already on the town pages) and it makes no
-// claim about an office: every href is a site-wide page.
+// claim about an office beyond lib/serviceAreas.ts: every href is a site-wide page.
+type NextStepLink = { label: string; href: string };
+
+// Town blocks must not be the same block with a new town name. Each town gets
+// three fixed links (with the town and office names in the text) and two links
+// picked from rotating sets. The position of the
+// town in the list of generated towns (lib/serviceAreas.ts) decides which item it
+// takes. The nearest office (nearestOffice in the same file) sets the heading and
+// the office link text.
+const townServiceSet: NextStepLink[] = [
+  { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" },
+  { label: "Hearing aid tune-ups", href: "/how-we-can-help/hearing-aid-tune-ups" },
+  { label: "Cochlear implant support", href: "/how-we-can-help/cochlear-implants" },
+  { label: "Cognivue cognitive screening", href: "/how-we-can-help/cognivue-cognitive-screening" },
+  { label: "Advanced hearing aid technology", href: "/how-we-can-help/advanced-hearing-aid-technology" },
+  { label: "Tinnitus management", href: "/how-we-can-help/tinnitus-management" }
+];
+
+const townGuideSet: NextStepLink[] = [
+  { label: "The first signs of hearing loss families notice", href: "/first-signs-of-hearing-loss-family-notice" },
+  { label: "What happens during a comprehensive hearing evaluation", href: "/what-happens-during-comprehensive-hearing-evaluation" },
+  { label: "What a hearing test costs in Westchester", href: "/how-much-does-a-hearing-test-cost-westchester" },
+  { label: "How often adults should get their hearing checked", href: "/how-often-should-adults-get-hearing-checked" },
+  { label: "Questions to ask before buying hearing aids", href: "/questions-before-buying-hearing-aids" },
+  { label: "Hearing aid second opinion in Westchester", href: "/hearing-aid-second-opinion" },
+  { label: "What to expect during a hearing aid fitting", href: "/what-to-expect-hearing-aid-fitting" }
+];
+
 export function serviceNextStepsFor(page: SitePage): NextStepsEntry | null {
   const assess = { label: "Comprehensive hearing assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" };
   const brands = { label: "Hearing aid brands we fit", href: "/hearing-aids-brands" };
@@ -185,15 +213,36 @@ export function serviceNextStepsFor(page: SitePage): NextStepsEntry | null {
 
   const city = cityForPath(page.path);
   if (city) {
-    return {
-      heading: `More hearing care for ${city.name} patients`,
-      links: [assess, { label: "Earwax removal", href: "/how-we-can-help/earwax-removal" }, brands, testCost, offices]
-    };
+    const officeName = city.nearestOffice === "harrison" ? "Harrison" : "Somers";
+    // Set sizes 6 and 7 share no factor, so no two of the 27 towns get the same
+    // service and guide link together.
+    const place = Math.max(0, areaCities.filter((item) => !item.legacyPath).findIndex((item) => item.slug === city.slug));
+    const service = townServiceSet[place % townServiceSet.length];
+    const guide = townGuideSet[place % townGuideSet.length];
+    const links: NextStepLink[] = [
+      { label: `Hearing assessments for ${city.name} patients`, href: assess.href },
+      brands,
+      service,
+      guide,
+      { label: `Compare the offices: ${officeName} is nearest to ${city.name}`, href: offices.href }
+    ];
+    // Reciprocal "nearby" link. Another generated town lists this town as nearby in
+    // lib/serviceAreas.ts, but this town does not list it back. The town page shows
+    // only its own nearby list, so the link is new to the page. The first such town
+    // in the data is used.
+    const reciprocal = areaCities.find(
+      (item) => !item.legacyPath && item.slug !== city.slug && item.nearby.includes(city.name) && !city.nearby.includes(item.name)
+    );
+    if (reciprocal) links.push({ label: `Hearing care near ${reciprocal.name}, ${reciprocal.state}`, href: cityLinkPath(reciprocal) });
+    return { heading: `Next steps for ${city.name} patients near our ${officeName} office`, links };
   }
 
   const county = countyForPath(page.path);
   if (county) {
-    return { heading: `More hearing care in ${county.name}`, links: [assess, brands, testCost, offices] };
+    const otherCounties = areaCounties
+      .filter((item) => item.slug !== county.slug)
+      .map((item) => ({ label: `Hearing care near ${item.name}, ${item.state}`, href: countyPath(item.slug) }));
+    return { heading: `More hearing care in ${county.name}`, links: [assess, brands, testCost, offices, ...otherCounties] };
   }
 
   const provider = providerForPath(page.path);
@@ -209,7 +258,14 @@ export function serviceNextStepsFor(page: SitePage): NextStepsEntry | null {
     add(/cerumen/.test(text), "Earwax removal", "/how-we-can-help/earwax-removal");
     add(/lyric/.test(text), "Lyric invisible hearing aids", "/lyric-invisible-hearing");
     add(/protection|musician/.test(text), "Hearing protection", "/hearing-protection");
-    return { heading: "Related care and next steps", links: links.slice(0, 6) };
+    // The practice's press feature names one interviewee. Their page links to it.
+    // Six links is the most a block shows, so the press link takes the sixth place.
+    const feature = pressFeatures.find((item) => item.interviewee === provider.slug);
+    if (!feature) return { heading: "Related care and next steps", links: links.slice(0, 6) };
+    return {
+      heading: "Related care and next steps",
+      links: [...links.slice(0, 5), { label: `As featured in ${feature.publication}`, href: pressFeaturePath(feature) }]
+    };
   }
 
   return null;

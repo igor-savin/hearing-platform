@@ -197,7 +197,7 @@ const pressIndexPage: SitePage = {
     { label: "Meet the Team", href: "/meet-the-team" },
     { label: "Somers, NY Office", href: "/Somers-NY" },
     { label: "Patient Reviews", href: "/reviews" },
-    { label: "Contact Us", href: "/contact-us" }
+    { label: "Compare the Harrison and Somers offices", href: "/contact-us" }
   ]
 };
 
