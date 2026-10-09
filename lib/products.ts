@@ -90,7 +90,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
     overview: [
       "Multi-adaptive Xperience, shortened to MaX, arrived on 24 August 2026 and now heads the Signia range. It reached American dispensers on announcement day, which is unusually fast, and our Harrison and Somers audiologists are fitting it.",
       "The engineering idea is worth understanding before the marketing around it. Rival platforms lean on a single trained network whose job is to lift voices out of background sound. Signia has split that work four ways: one network decides whether it is hearing speech, a second recognises the wearer's own voice, a third reads the acoustics of the space, and a fourth decides how the remaining noise should be handled. Under the banner Acoustic Intelligence, the four run in concert.",
-      "Because the platform is barely a week old, we have written this page differently from most of what is circulating. Nothing has been through an outside laboratory, the price list is unpublished, and there is exactly one model. Below we separate the specification from the sales figures, and say which is which."
+      "Because the platform is new, we have written this page differently from most of what is circulating. One outside laboratory has scored the top-level model, Signia has published no price, and at launch there is exactly one model. Below we separate the specification from the sales figures, and say which is which."
     ],
     highlights: [
       "Speech, own-voice, scene, and noise each handled by a dedicated neural network rather than one general-purpose model",
@@ -114,7 +114,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
       },
       {
         title: "The Gaps, Stated Plainly",
-        body: "Outside testing: none, from any laboratory. Pricing: unannounced at every level. Also missing are the performance-tier breakdown, the fitting range, receiver strengths, and an ingress rating for dust and water. One absence stands out to us — tinnitus. Signia equips the IX family with tinnitus therapy as a matter of course, yet none of the MaX material refers to it. The likeliest explanation is that it simply carries over, but we would rather open the fitting software and check than print an assumption."
+        body: "Outside testing: one laboratory has scored the top-level MaX 7, and the other levels are untested. Pricing: unannounced by Signia at every level, though one online retailer lists MaX 3, 5 and 7 from $2,698 to $3,298 a pair. Hearing Review reports an IP68 rating. Still missing from Signia's launch material are the fitting range and receiver strengths. One absence stands out to us — tinnitus. Signia equips the IX family with tinnitus therapy as a matter of course, yet none of the MaX material refers to it. The likeliest explanation is that it simply carries over, but we would rather open the fitting software and check than print an assumption."
       },
       {
         title: "Eight Finishes, and Why It Is Not a Trivial Choice",
@@ -146,7 +146,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
       },
       {
         question: "Has anyone outside Signia tested it?",
-        answer: "No. As of late August 2026 every published figure originates with the manufacturer. Signia IX has been through independent laboratory assessment and performed strongly, so if verified measurement carries more weight with you than platform age, that comparison matters."
+        answer: "Not shown. As of October 2026 one lab has scored the top-level MaX 7 at 4.3 out of 5, but the other figures originate with the manufacturer. Signia IX has been through independent laboratory assessment and performed strongly, so if verified measurement carries more weight with you than platform age, that comparison matters."
       },
       {
         question: "Can I get Signia MaX as a custom in-the-ear aid?",
@@ -198,7 +198,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
       },
       {
         title: "What Is Not Available, and What Is Not Yet Known",
-        body: "Every EON is a receiver-in-canal aid. There is no custom in-the-ear shell, no titanium in-the-canal model, no high-power behind-the-ear instrument and nothing for children on this platform; all of those sit on Phonak's older platforms, which remain in the catalogue and in service. No independent laboratory has assessed EON — testing is said to be under way, and on past form the results are months rather than weeks away. Phonak has published no price at any tier, and stated no ingress rating for dust or moisture in the launch documents. Tinnitus goes unmentioned throughout, which is peculiar — Tinnitus Balance has shipped as standard on Audéo aids for a long while. Our expectation is that nothing has changed, but an expectation is not a confirmation, and we will look in the fitting software before putting it in writing."
+        body: "Every EON is a receiver-in-canal aid. There is no custom in-the-ear shell, no titanium in-the-canal model, no high-power behind-the-ear instrument and nothing for children on this platform; all of those sit on Phonak's older platforms, which remain in the catalogue and in service. One laboratory has assessed EON at the top level only, and the other levels are untested. Phonak has published no price at any tier. Tinnitus goes unmentioned throughout, which is peculiar — Tinnitus Balance has shipped as standard on Audéo aids for a long while. Our expectation is that nothing has changed, but an expectation is not a confirmation, and we will look in the fitting software before putting it in writing."
       },
       {
         title: "The Fitting Still Decides the Outcome",
@@ -408,7 +408,7 @@ export const hearingAidProducts: HearingAidProduct[] = [
       "Our Harrison and Somers audiologists fit and verify the whole family. Whether Infinio or EON suits you is a question about your ears, your budget and how much weight you put on published evidence — not about which launched more recently."
     ],
     highlights: [
-      "An outside laboratory has assessed it: grade A, 4.9 out of 5 overall, second in its category among the thirty-six prescription aids tested — EON has no such result and will not for months",
+      "An outside laboratory has assessed it: grade A, 4.9 out of 5 overall, second in its category among the thirty-six prescription aids tested — EON's top level has since scored 5.0 out of 5 and a grade A from the same lab, so the gap is narrower than it was in August",
       "Available as a rechargeable custom in-the-ear shell and as a titanium in-the-canal aid; EON is receiver-in-canal only",
       "Still catalogued, still serviced, still supplied with receivers, filters and firmware — being replaced at the top of the range is not the same as being discontinued",
       "RogerDirect throughout, so a Roger clip, pen or table microphone works without an extra receiver",

@@ -182,7 +182,8 @@ export const helpServices: HelpService[] = [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
       { label: "Types of Hearing Loss", href: "/hearing-loss" },
-      { label: "LGBTQ+ Affirming Hearing Care", href: "/lgbtq-affirming-hearing-care" }
+      { label: "LGBTQ+ Affirming Hearing Care", href: "/lgbtq-affirming-hearing-care" },
+      { label: "Latest: Precision Hearing Care and Your Audiogram (2026 Study)", href: "/precision-hearing-care-audiogram" }
     ],
     faqs: [
       {
@@ -243,7 +244,8 @@ export const helpServices: HelpService[] = [
       { label: "Hearing Aid Brands", href: "/hearing-aids-brands" },
       { label: "Types of Hearing Aids", href: "/types-of-hearing-aids" },
       { label: "Hearing Aid Fitting", href: "/hearing-aid-fitting" },
-      { label: "Lyric Invisible Hearing", href: "/lyric-invisible-hearing" }
+      { label: "Lyric Invisible Hearing", href: "/lyric-invisible-hearing" },
+      { label: "Latest: The 6 Hearing Aid Platforms of Fall 2026, Compared", href: "/best-ai-hearing-aids-fall-2026" }
     ],
     faqs: [
       {
@@ -571,7 +573,8 @@ export const helpServices: HelpService[] = [
     relatedServices: [
       { label: "Hearing Testing", href: "/hearing-testing" },
       { label: "Comprehensive Hearing Assessments", href: "/how-we-can-help/comprehensive-hearing-assessments" },
-      { label: "Meet the Team", href: "/meet-the-team" }
+      { label: "Meet the Team", href: "/meet-the-team" },
+      { label: "Latest: Why Your Audiogram Matters More Than Ever (2026 Study)", href: "/precision-hearing-care-audiogram" }
     ],
     faqs: [
       {
