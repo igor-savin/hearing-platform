@@ -237,7 +237,7 @@ function renderRichText(text: string): ReactNode {
 
 const urlPattern = /(https?:\/\/[^\s<>"')\]]+[^\s<>"')\].,;:])/g;
 
-function linkifyText(text: string) {
+function linkifyText(text: string, selfHref?: string) {
   return text.split(urlPattern).map((chunk, chunkIndex) =>
     /^https?:\/\//.test(chunk) ? (
       <a
@@ -250,19 +250,20 @@ function linkifyText(text: string) {
         {chunk}
       </a>
     ) : (
-      <span key={`chunk-${chunkIndex}`}>{linkifyPlaces(chunk)}</span>
+      <span key={`chunk-${chunkIndex}`}>{linkifyPlaces(chunk, selfHref)}</span>
     )
   );
 }
 
-function linkifyPlaces(text: string) {
+function linkifyPlaces(text: string, selfHref?: string) {
   return text.split(linkedPlacePattern).map((part, index) => {
     const href =
       part === "Audiology Associates of Westchester"
         ? "/"
         : linkedLocationNames.get(part) || null;
 
-    return href ? (
+    // A place name on its own page stays plain text. A page never links to itself.
+    return href && href !== selfHref ? (
       <Link className="text-[#005a9c] underline" href={href} key={`${part}-${index}`}>
         {part}
       </Link>
@@ -3777,7 +3778,7 @@ function HearingLossEducationPage({ page }: { page: SitePage }) {
                   /hearing-loss-misconceptions rendered 2 of its 8. The rest was
                   written, shipped and invisible. */}
               {page.body.map((paragraph) => (
-                <LegacyParagraph key={paragraph} text={paragraph} />
+                <LegacyParagraph key={paragraph} selfHref={page.path} text={paragraph} />
               ))}
             </div>
           </div>
@@ -4334,21 +4335,21 @@ function ProviderTrustSection({ provider }: { provider: ProviderProfile }) {
   );
 }
 
-function LegacyParagraph({ text: paragraph }: { text: string }) {
-  return <p>{linkifyText(paragraph)}</p>;
+function LegacyParagraph({ text: paragraph, selfHref }: { text: string; selfHref?: string }) {
+  return <p>{linkifyText(paragraph, selfHref)}</p>;
 }
 
-function LegacyParagraphs({ paragraphs, className = "" }: { paragraphs: string[]; className?: string }) {
+function LegacyParagraphs({ paragraphs, className = "", selfHref }: { paragraphs: string[]; className?: string; selfHref?: string }) {
   return (
     <div className={`space-y-[30px] text-[24px] leading-[1.35] text-black ${className}`}>
       {paragraphs.map((paragraph) => (
-        <LegacyParagraph key={paragraph} text={paragraph} />
+        <LegacyParagraph key={paragraph} selfHref={selfHref} text={paragraph} />
       ))}
     </div>
   );
 }
 
-function LiveTextBlock({ lines }: { lines: string[] }) {
+function LiveTextBlock({ lines, selfHref }: { lines: string[]; selfHref?: string }) {
   return (
     <div className="legacy-live-copy max-w-[1440px] space-y-[30px] text-left text-[24px] leading-[1.35] text-black">
       {lines.map((line, index) => {
@@ -4372,7 +4373,7 @@ function LiveTextBlock({ lines }: { lines: string[] }) {
             </h2>
           );
         }
-        return <LegacyParagraph key={`${line}-${index}`} text={line} />;
+        return <LegacyParagraph key={`${line}-${index}`} selfHref={selfHref} text={line} />;
       })}
     </div>
   );
@@ -4420,7 +4421,7 @@ function imageFitClass(src: string) {
   return src.includes("/assets/brands/") ? "object-contain bg-white p-4" : "object-cover";
 }
 
-function LegacyLocationSectionView({ section }: { section: LegacyLocationSection }) {
+function LegacyLocationSectionView({ section, selfHref }: { section: LegacyLocationSection; selfHref?: string }) {
   const hasMap = Boolean(section.mapQuery);
   const hasDetails = Boolean(section.addressLines?.length || section.phone || section.hours?.length);
   const office = section.officePath ? locationForPath(section.officePath) : undefined;
@@ -4447,7 +4448,7 @@ function LegacyLocationSectionView({ section }: { section: LegacyLocationSection
 
         <div className={hasMap || hasDetails ? "mt-[48px] grid gap-[64px] lg:grid-cols-[0.9fr_1fr]" : "mt-[48px]"}>
           <div className="space-y-[34px]">
-            {section.paragraphs.length ? <LegacyParagraphs paragraphs={section.paragraphs} /> : null}
+            {section.paragraphs.length ? <LegacyParagraphs paragraphs={section.paragraphs} selfHref={selfHref} /> : null}
             {hasDetails ? (
               <address className="space-y-[10px] text-[24px] leading-[1.35] text-black not-italic">
                 {section.addressLines?.map((line) => <p key={line}>{line}</p>)}
@@ -4653,14 +4654,14 @@ function LiveLocationPage({ page }: { page: SitePage }) {
             {content.intro ? <h2 className="mb-[18px] text-[24px] font-black leading-tight text-[#003f6f]">{content.intro}</h2> : null}
             <h1 className="text-[50px] font-black leading-tight text-[#003f6f] max-md:text-[36px]">{content.heading}</h1>
             <LiveRule />
-            {content.paragraphs.length ? <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} /> : null}
+            {content.paragraphs.length ? <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} selfHref={page.path} /> : null}
           </div>
         </section>
       )}
       {/* Address, hours, arrival note and map come first on an office page. */}
       {thisOffice
         ? detailSections.map((section) => (
-            <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
+            <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} selfHref={page.path} />
           ))
         : null}
       {thisOffice?.path === "/Somers-NY" ? <PressStrip /> : null}
@@ -4671,12 +4672,12 @@ function LiveLocationPage({ page }: { page: SitePage }) {
               Local audiology care for {legacyCity?.name || "this community"}
             </h2>
             <LiveRule />
-            <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} />
+            <LegacyParagraphs className="mt-[38px]" paragraphs={content.paragraphs} selfHref={page.path} />
           </div>
         </section>
       ) : null}
       {(thisOffice ? proseSections : content.sections).map((section) => (
-        <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} />
+        <LegacyLocationSectionView key={`${page.path}-${section.title}`} section={section} selfHref={page.path} />
       ))}
       <LegacyAreaCityPlanningSection page={page} />
       <PageCrossLinks page={page} />
@@ -5526,7 +5527,7 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
             </h2>
             <div className="mt-6 space-y-5 text-[20px] leading-8 text-[var(--muted)]">
               {paragraphs.slice(0, 3).map((paragraph) => (
-                <p key={paragraph}>{linkifyText(paragraph)}</p>
+                <p key={paragraph}>{linkifyText(paragraph, page.path)}</p>
               ))}
             </div>
           </div>
@@ -5594,7 +5595,7 @@ function ServiceLandingPage({ page }: { page: SitePage }) {
                     ) : null}
                     {entry.text ? (
                       <p className={`text-[18px] leading-8 text-[var(--muted)]${entry.label ? " mt-3" : ""}`}>
-                        {linkifyText(entry.text)}
+                        {linkifyText(entry.text, page.path)}
                       </p>
                     ) : null}
                   </article>
@@ -6194,7 +6195,7 @@ function LivePageBody({ page }: { page: SitePage }) {
             />
           ) : null}
           <div className="mt-[38px]">
-            <LiveTextBlock lines={paragraphs.length ? paragraphs : [page.metaDescription]} />
+            <LiveTextBlock lines={paragraphs.length ? paragraphs : [page.metaDescription]} selfHref={page.path} />
           </div>
           <PageSpecTable page={page} />
           <PageAudiogram inline page={page} />
@@ -6240,7 +6241,7 @@ function LiveContactPage({ page }: { page: SitePage }) {
       {intro.slice(1).length || page.body.length > 1 ? (
         <section className="bg-white py-[52px]">
           <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
-            <LegacyParagraphs className="max-w-none" paragraphs={intro.slice(1).length ? intro.slice(1) : page.body.slice(1, 4)} />
+            <LegacyParagraphs className="max-w-none" paragraphs={intro.slice(1).length ? intro.slice(1) : page.body.slice(1, 4)} selfHref={page.path} />
           </div>
         </section>
       ) : null}
@@ -6406,7 +6407,7 @@ function LiveTeamPage({ page }: { page: SitePage }) {
       <section className="bg-white py-[46px]">
         <div className="mx-auto max-w-[1660px] px-[64px] max-md:px-5">
           {intro.slice(1).length ? (
-            <LegacyParagraphs className="max-w-none" paragraphs={intro.slice(1)} />
+            <LegacyParagraphs className="max-w-none" paragraphs={intro.slice(1)} selfHref={page.path} />
           ) : null}
           {/* This page runs to 21,000px on a phone -- twenty-six screens of
               stacked bios. The credential wall stays, because it is the most
@@ -6933,7 +6934,7 @@ function ContentText({ page }: { page: SitePage }) {
             }
             return (
               <p className="text-[var(--foreground)]" key={`${line}-${index}`}>
-                {linkifyText(line)}
+                {linkifyText(line, page.path)}
               </p>
             );
           })}
