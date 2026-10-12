@@ -7,18 +7,24 @@
 //   node scripts/indexnow.mjs --dry-run [URL ...]  print what would be sent, send nothing
 //
 // The key is the single public/<32 hex characters>.txt file. It must stay
-// deployed at https://calhearing.com/<key>.txt so engines can verify it.
+// deployed at https://<host>/<key>.txt so engines can verify it.
 
 import { readdirSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 
-const HOST = "calhearing.com";
+// The host comes from the site's own package.json ("indexnowHost"), so one
+// script serves both sites. Run it from inside apps/<site>.
+const sitePkg = JSON.parse(readFileSync(join(process.cwd(), "package.json"), "utf8"));
+const HOST = sitePkg.indexnowHost;
+if (!HOST) {
+  console.error('Add "indexnowHost" to this site\'s package.json.');
+  process.exit(1);
+}
 const SITEMAP = `https://${HOST}/sitemap.xml`;
 const ENDPOINT = "https://api.indexnow.org/IndexNow";
 const CHUNK = 10000;
 
-const publicDir = join(dirname(fileURLToPath(import.meta.url)), "..", "public");
+const publicDir = join(process.cwd(), "public");
 const keyFiles = readdirSync(publicDir).filter((f) => /^[0-9a-f]{32}\.txt$/.test(f));
 if (keyFiles.length !== 1) {
   console.error(`Expected exactly one public/<32 hex>.txt key file, found ${keyFiles.length}.`);
@@ -89,7 +95,7 @@ for (let i = 0; i < urls.length; i += CHUNK) {
   } else {
     failed = true;
     if (res.status === 422 || res.status === 403) {
-      console.log("  Key or URL problem. Check the key file is deployed at the keyLocation and the URLs are on calhearing.com.");
+      console.log(`  Key or URL problem. Check the key file is deployed at the keyLocation and the URLs are on ${HOST}.`);
     }
   }
 }

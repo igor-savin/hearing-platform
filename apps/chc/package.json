@@ -1,5 +1,5 @@
 {
-  "name": "california-hearing-center",
+  "name": "chc",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -10,12 +10,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit && eslint . --ignore-pattern dist --ignore-pattern .next",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node ../../packages/core/scripts/indexnow.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "16.2.6",
+    "next": "16.2.10",
     "react": "19.2.6",
-    "react-dom": "19.2.6"
+    "react-dom": "19.2.6",
+    "@chc/core": "*"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.2.1",
@@ -23,9 +25,10 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "16.2.10",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3"
   },
-  "type": "module"
+  "type": "module",
+  "indexnowHost": "calhearing.com"
 }

@@ -1,4 +1,7 @@
+import path from "node:path";
 import type { NextConfig } from "next";
+
+const WORKSPACE_ROOT = path.join(process.cwd(), "..", "..");
 import { imageRenames } from "./app/data/imageRenames";
 
 // 30 Sep 2026 — the Medicare open-enrollment page moved to an evergreen slug (no
@@ -581,10 +584,12 @@ const nextConfig: NextConfig = {
   // Next served the no-slash form and 308-redirected the slash form, contradicting
   // the canonical tags (which point at the slash form). Now canonical == served URL.
   trailingSlash: true,
-  outputFileTracingRoot: process.cwd(),
+  // Workspace root holds node_modules and packages/core. Next must see it.
+  outputFileTracingRoot: WORKSPACE_ROOT,
   turbopack: {
-    root: process.cwd(),
+    root: WORKSPACE_ROOT,
   },
+  transpilePackages: ["@chc/core"],
   async redirects() {
     // Renamed images: old file URL -> new file URL (app/data/imageRenames.ts).
     const imageRenameRedirects = Object.entries(imageRenames).map(([source, destination]) => ({ source, destination, statusCode: 301 }));

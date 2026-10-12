@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { FOUNDED } from "./data/practice";
 import { LOCATIONS, postalAddress, schemaHours, type Location } from "./data/locations";
-import { TagLoader } from "./site/TagLoader";
+import { TagLoader, TagNoscripts } from "@chc/core/tags";
 import { ConversionTracking } from "./site/ConversionTracking";
 import "./globals.css";
 
@@ -282,16 +282,7 @@ export default function RootLayout({
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
-        {GTM_ID && (
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-              height="0"
-              width="0"
-              style={{ display: "none", visibility: "hidden" }}
-            />
-          </noscript>
-        )}
+        <TagNoscripts ids={{ gtm: GTM_ID }} />
         <TagLoader
           ids={{
             gtm: GTM_ID,

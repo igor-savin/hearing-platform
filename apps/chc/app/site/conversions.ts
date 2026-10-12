@@ -23,50 +23,12 @@
 //      built-in GTM trigger name (notably "form_submit", which the container's
 //      Contact_Form_Submission tag still listens for).
 
-type ConversionParams = Record<string, string | number | boolean>;
+import { createConversionTracker, type ConversionName as CoreConversionName } from "@chc/core/conversions-core";
 
-type AnalyticsWindow = Window & {
-  dataLayer?: unknown[];
-  gtag?: (...args: unknown[]) => void;
-};
+export type { ConversionParams } from "@chc/core/conversions-core";
 
-/**
- * Names are deliberate. The four lowercase ones already exist as key events in
- * the GA4 property and have never had anything sending them; emitting exactly
- * these names brings them to life with no analytics-admin work.
- */
-export type ConversionName =
-  | "click_to_call"            // every tel: click, any device
-  | "mobile_click_to_call"     // tel: click on a touch device
-  | "get_directions"           // click through to Google Maps
-  | "schedule_an_appointment"  // click on a booking CTA
-  | "facebook_outbound_click"  // click through to the practice's Facebook page
-  | "contact_form_submit"      // the form actually sent
-  | "hearing_plan_use"         // a Hearing Plan tool was used (tool name only, never content)
-  // Home page hero graphic. Same names on the sister site so the two compare.
-  | "hero_play_click"          // Play / Pause journey (params: action, stage)
-  | "hero_sound_toggle"        // Sound on / off (params: state)
-  | "hero_stage_select"        // a stage was picked (params: stage, source)
-  | "hero_mode_toggle"         // Natural hearing / With hearing aid (params: mode)
-  | "hero_cta_click"           // a hero button or link (params: cta)
-  | "scroll_depth";            // home page reached 25 / 50 / 75 / 100 percent (params: percent, page)
+// CHC sends every event the shared core defines.
+export type ConversionName = CoreConversionName;
 
-export function trackConversion(name: ConversionName, params: ConversionParams = {}) {
-  if (typeof window === "undefined") return;
-  const w = window as AnalyticsWindow;
-
-  // Standing up the shim rather than bailing when gtag is missing matters: the
-  // sister site defers its analytics loader until first interaction, so an early
-  // click would otherwise be dropped. Pushing the arguments object is what
-  // gtag.js itself does — it drains the queue when it loads.
-  w.dataLayer = w.dataLayer || [];
-  if (typeof w.gtag !== "function") {
-    w.gtag = function gtagShim() {
-      // eslint-disable-next-line prefer-rest-params
-      (w.dataLayer as unknown[]).push(arguments);
-    };
-  }
-  w.gtag("event", name, params);
-
-  w.dataLayer.push({ event: `chc.${name}`, ...params });
-}
+// The "chc." prefix names the dataLayer copy of each event.
+export const trackConversion = createConversionTracker<ConversionName>("chc");

@@ -1,0 +1,16 @@
+{
+  "name": "@chc/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./conversions-core": "./conversions-core.ts",
+    "./tags": "./tags.tsx",
+    "./contact": "./contact.ts",
+    "./conversion-clicks": "./conversion-clicks.ts"
+  },
+  "peerDependencies": {
+    "next": ">=16.2.10",
+    "react": ">=19.2.6"
+  }
+}

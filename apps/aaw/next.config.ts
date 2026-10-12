@@ -1,11 +1,17 @@
+import path from "node:path";
 import type { NextConfig } from "next";
+
+const WORKSPACE_ROOT = path.join(process.cwd(), "..", "..");
 import { permanentRedirects } from "./lib/redirects";
 import { imageRenames } from "./lib/imageRenames";
 
 const nextConfig: NextConfig = {
+  // Workspace root holds node_modules and packages/core. Next must see it.
+  outputFileTracingRoot: WORKSPACE_ROOT,
   turbopack: {
-    root: process.cwd()
+    root: WORKSPACE_ROOT,
   },
+  transpilePackages: ["@chc/core"],
   async headers() {
     return [
       {

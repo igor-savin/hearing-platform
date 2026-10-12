@@ -1,0 +1,57 @@
+name: Lighthouse CI
+
+# Runs Lighthouse against each built site on every push to main and every PR,
+# so performance, accessibility, best-practices and SEO regressions show up
+# (as warnings) in the Actions log. Both sites use the same four categories and
+# the same thresholds, so a score on one site means the same on the other.
+# The mobile run matters most: phones are where speed regressions hid.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: lighthouse-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - app: chc
+            node: 22 # matches engines.node in apps/chc/package.json
+          - app: aaw
+            node: 24 # matches engines.node in apps/aaw/package.json
+    defaults:
+      run:
+        working-directory: apps/${{ matrix.app }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        working-directory: .
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Run Lighthouse CI
+        run: npx --yes @lhci/cli@0.14.x autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
+      - name: Run Lighthouse CI (mobile)
+        run: npx --yes @lhci/cli@0.14.x autorun --config=.lighthouserc.mobile.json
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
