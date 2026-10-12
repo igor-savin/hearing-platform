@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d"><title id="t">Six hearing aid platforms in order of announcement</title><desc id="d">Six coloured dots in a row for six hearing aid announcements dated May 20, August 10, August 11, August 24, August 24 and October 1, 2026, above a small network of connected nodes.</desc>
+<rect width="1200" height="675" fill="#eef5f9"/>
+<rect x="70" y="70" width="1060" height="535" rx="18" fill="#fff" stroke="#c9dbe6" stroke-width="2"/>
+<line x1="170" y1="200" x2="1030" y2="200" stroke="#c4d6e2" stroke-width="8" stroke-linecap="round"/>
+<circle cx="170" cy="200" r="26" fill="#8e6bbf" stroke="#fff" stroke-width="5"/>
+<text x="170" y="266" text-anchor="middle" font-size="26" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">May 20</text>
+<circle cx="342" cy="200" r="26" fill="#22b8d8" stroke="#fff" stroke-width="5"/>
+<text x="342" y="266" text-anchor="middle" font-size="26" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">Aug 10</text>
+<circle cx="514" cy="200" r="26" fill="#196e8c" stroke="#fff" stroke-width="5"/>
+<text x="514" y="266" text-anchor="middle" font-size="26" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">Aug 11</text>
+<circle cx="686" cy="200" r="26" fill="#13294b" stroke="#fff" stroke-width="5"/>
+<text x="686" y="266" text-anchor="middle" font-size="26" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">Aug 24</text>
+<circle cx="858" cy="200" r="26" fill="#f2b54a" stroke="#fff" stroke-width="5"/>
+<text x="858" y="266" text-anchor="middle" font-size="26" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">Aug 24</text>
+<circle cx="1030" cy="200" r="26" fill="#d1495b" stroke="#fff" stroke-width="5"/>
+<text x="1030" y="266" text-anchor="middle" font-size="26" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">Oct 1</text>
+<line x1="240" y1="390" x2="420" y2="365" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="390" x2="420" y2="420" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="390" x2="420" y2="475" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="390" x2="420" y2="530" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="445" x2="420" y2="365" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="445" x2="420" y2="420" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="445" x2="420" y2="475" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="445" x2="420" y2="530" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="500" x2="420" y2="365" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="500" x2="420" y2="420" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="500" x2="420" y2="475" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="240" y1="500" x2="420" y2="530" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="365" x2="600" y2="365" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="365" x2="600" y2="420" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="365" x2="600" y2="475" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="365" x2="600" y2="530" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="420" x2="600" y2="365" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="420" x2="600" y2="420" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="420" x2="600" y2="475" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="420" x2="600" y2="530" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="475" x2="600" y2="365" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="475" x2="600" y2="420" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="475" x2="600" y2="475" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="475" x2="600" y2="530" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="530" x2="600" y2="365" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="530" x2="600" y2="420" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="530" x2="600" y2="475" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="420" y1="530" x2="600" y2="530" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="365" x2="780" y2="390" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="365" x2="780" y2="445" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="365" x2="780" y2="500" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="420" x2="780" y2="390" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="420" x2="780" y2="445" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="420" x2="780" y2="500" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="475" x2="780" y2="390" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="475" x2="780" y2="445" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="475" x2="780" y2="500" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="530" x2="780" y2="390" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="530" x2="780" y2="445" stroke="#b7d3e0" stroke-width="2"/>
+<line x1="600" y1="530" x2="780" y2="500" stroke="#b7d3e0" stroke-width="2"/>
+<circle cx="240" cy="390" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="240" cy="445" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="240" cy="500" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="420" cy="365" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="420" cy="420" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="420" cy="475" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="420" cy="530" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="600" cy="365" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="600" cy="420" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="600" cy="475" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="600" cy="530" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="780" cy="390" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="780" cy="445" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<circle cx="780" cy="500" r="16" fill="#22b8d8" stroke="#fff" stroke-width="4"/>
+<text x="510" y="578" text-anchor="middle" font-size="22" fill="#55707f" font-family="Arial, Helvetica, sans-serif">AI sound processing at the core of each platform</text>
+<rect x="900" y="430" width="26" height="90" rx="8" fill="#8e6bbf"/>
+<rect x="935" y="394" width="26" height="126" rx="8" fill="#22b8d8"/>
+<rect x="970" y="358" width="26" height="162" rx="8" fill="#196e8c"/>
+<rect x="1005" y="412" width="26" height="108" rx="8" fill="#13294b"/>
+<rect x="1040" y="376" width="26" height="144" rx="8" fill="#f2b54a"/>
+<rect x="1075" y="400" width="26" height="120" rx="8" fill="#d1495b"/>
+<text x="990" y="578" text-anchor="middle" font-size="22" fill="#55707f" font-family="Arial, Helvetica, sans-serif">Six to compare</text></svg>

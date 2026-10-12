@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="t d"><title id="t">App-set hearing aid versus clinic-fitted hearing aid</title><desc id="d">Left, a phone showing three tone sliders. Right, an ear with a thin probe tube and a small hearing test card. A circle between them reads vs.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#eef5f9"/></linearGradient></defs><rect width="1200" height="675" fill="url(#bg)"/>
+<rect x="70" y="70" width="480" height="535" rx="18" fill="#fff" stroke="#c9dbe6" stroke-width="2"/><rect x="650" y="70" width="480" height="535" rx="18" fill="#fff" stroke="#c9dbe6" stroke-width="2"/>
+<rect x="215" y="120" width="190" height="340" rx="28" fill="#13294b"/><rect x="228" y="150" width="164" height="280" rx="12" fill="#f4f9fc"/><rect x="288" y="132" width="44" height="8" rx="4" fill="#3b537a"/>
+<text x="246" y="191" font-size="18" fill="#3b537a" font-family="Arial, Helvetica, sans-serif">Bass</text><line x1="246" y1="211" x2="374" y2="211" stroke="#c4d6e2" stroke-width="8" stroke-linecap="round"/><line x1="246" y1="211" x2="291" y2="211" stroke="#22b8d8" stroke-width="8" stroke-linecap="round"/><circle cx="291" cy="211" r="13" fill="#fff" stroke="#196e8c" stroke-width="4"/>
+<text x="246" y="263" font-size="18" fill="#3b537a" font-family="Arial, Helvetica, sans-serif">Mid</text><line x1="246" y1="283" x2="374" y2="283" stroke="#c4d6e2" stroke-width="8" stroke-linecap="round"/><line x1="246" y1="283" x2="323" y2="283" stroke="#22b8d8" stroke-width="8" stroke-linecap="round"/><circle cx="323" cy="283" r="13" fill="#fff" stroke="#196e8c" stroke-width="4"/>
+<text x="246" y="335" font-size="18" fill="#3b537a" font-family="Arial, Helvetica, sans-serif">Treble</text><line x1="246" y1="355" x2="374" y2="355" stroke="#c4d6e2" stroke-width="8" stroke-linecap="round"/><line x1="246" y1="355" x2="304" y2="355" stroke="#22b8d8" stroke-width="8" stroke-linecap="round"/><circle cx="304" cy="355" r="13" fill="#fff" stroke="#196e8c" stroke-width="4"/>
+<text x="310" y="520" text-anchor="middle" font-size="30" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">Set in an app</text><text x="310" y="556" text-anchor="middle" font-size="22" fill="#55707f" font-family="Arial, Helvetica, sans-serif">by you, at home</text>
+<path d="M930,150 C1005,135 1070,185 1062,265 C1056,325 1010,345 1000,392 C992,430 950,440 925,412 C908,392 918,372 912,352" fill="none" stroke="#13294b" stroke-width="10" stroke-linecap="round"/>
+<path d="M958,200 C995,185 1030,210 1024,250 C1020,280 992,288 988,322" fill="none" stroke="#196e8c" stroke-width="8" stroke-linecap="round"/>
+<circle cx="988" cy="322" r="11" fill="#f2b54a"/>
+<rect x="690" y="150" width="170" height="104" rx="10" fill="#f4f9fc" stroke="#c4d6e2" stroke-width="2"/>
+<line x1="702" y1="174" x2="848" y2="174" stroke="#d6e4ec" stroke-width="2"/>
+<line x1="702" y1="198" x2="848" y2="198" stroke="#d6e4ec" stroke-width="2"/>
+<line x1="702" y1="222" x2="848" y2="222" stroke="#d6e4ec" stroke-width="2"/>
+<polyline points="706,165 742,170 778,190 814,214 846,226" fill="none" stroke="#d1495b" stroke-width="4"/>
+<path d="M868,205 C920,205 960,270 980,316" fill="none" stroke="#f2b54a" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 11"/>
+<text x="890" y="520" text-anchor="middle" font-size="30" font-weight="700" fill="#13294b" font-family="Arial, Helvetica, sans-serif">Set from your test</text><text x="890" y="556" text-anchor="middle" font-size="22" fill="#55707f" font-family="Arial, Helvetica, sans-serif">then measured in your ear</text>
+<circle cx="600" cy="338" r="46" fill="#13294b"/><text x="600" y="351" text-anchor="middle" font-size="36" font-weight="700" fill="#fff" font-family="Arial, Helvetica, sans-serif">vs</text>
+</svg>

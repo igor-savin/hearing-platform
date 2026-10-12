@@ -1,0 +1,22 @@
+# Environment / secrets — never commit real values (keep .env.example as the template)
+.env
+.env.*
+!.env.example
+node_modules
+.next
+out
+dist
+coverage
+*.tsbuildinfo
+.DS_Store
+.npm-cache
+.firebase-cache
+.firebase
+.vercel-home
+firebase-debug.log
+.vercel
+.git-ssh
+
+# Scratch output from scripts/verify-schema.mjs and the workspace mount, which
+# cannot delete files.
+_to_delete/
