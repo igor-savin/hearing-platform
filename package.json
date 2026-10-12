@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/check-admin-allowlist.mjs && next build --webpack",
+    "build": "node scripts/check-admin-allowlist.mjs && next build",
     "start": "next start",
     "lint": "tsc --noEmit && node scripts/check-admin-allowlist.mjs && node scripts/refresh-content-dates.mjs --check",
     "crawl": "node scripts/crawl-site.mjs",
