@@ -6,10 +6,14 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:chc": "npm run dev -w apps/chc",
-    "dev:aaw": "npm run dev -w apps/aaw",
     "build:chc": "npm run build -w apps/chc",
     "build:aaw": "npm run build -w apps/aaw",
-    "typecheck": "npm run typecheck --workspaces --if-present"
+    "dev:chc": "npm run dev -w apps/chc",
+    "dev:aaw": "npm run dev -w apps/aaw"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   }
 }
