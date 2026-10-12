@@ -1841,25 +1841,18 @@ const STOPWORDS = new Set(
   "hearing loss your with what should does about from that this have when will they them your care help".split(" ")
 );
 
-// The subhero background is the LCP element on most pages. It is a CSS
-// background, so the preload scanner cannot see it. Preload the exact file the
-// page kind will use (kept in sync with the .subhero rules at the end of
-// globals.css). Preloading the wrong image costs bandwidth on slow phones and
-// delays the real one. AVIF only: every browser that supports image-set here
-// supports AVIF. Kinds with no photo background (product, general) preload none.
+// Desktop only: the subhero photo is a CSS background, so the preload scanner
+// cannot see it. Preload the exact file this page kind uses (kept in sync with
+// the .subhero rules at the end of globals.css). Phones get a gradient with no
+// photo, so they preload nothing. AVIF only: every browser that supports
+// image-set here supports AVIF. Kinds with no photo (product, general) preload none.
 function preloadSubhero(kind: string) {
-  let base: string | null = null;
-  let small: string | null = null;
-  if (kind === "team" || kind === "service") {
-    base = "/assets/doctor-1200.avif";
-    small = "/assets/doctor-800.avif";
-  } else if (kind === "tinnitus" || kind === "area" || kind === "contact" || kind === "resource") {
-    base = "/assets/hearing-aids-hearing-test-san-mateo-hero-1600.avif";
-    small = "/assets/hearing-aids-hearing-test-san-mateo-hero-900.avif";
-  }
-  if (!base || !small) return;
-  preload(base, { as: "image", type: "image/avif", fetchPriority: "high", media: "(min-width: 761px)" });
-  preload(small, { as: "image", type: "image/avif", fetchPriority: "high", media: "(max-width: 760px)" });
+  let href: string | null = null;
+  if (kind === "team" || kind === "service") href = "/assets/doctor-1200.avif";
+  else if (kind === "tinnitus" || kind === "area" || kind === "contact" || kind === "resource")
+    href = "/assets/hearing-aids-hearing-test-san-mateo-hero-1600.avif";
+  if (!href) return;
+  preload(href, { as: "image", type: "image/avif", fetchPriority: "high", media: "(min-width: 761px)" });
 }
 
 function InnerPage({ page }: { page: SitePage }) {

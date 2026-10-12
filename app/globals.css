@@ -3202,13 +3202,14 @@ p {
    2560px hero and a 1024px JPG; these serve right-sized art instead. */
 @media (max-width: 760px) {
   .hero-media,
+  /* Phones: gradient only. The photo sat under a 72-95% opaque overlay, and as a
+     CSS background it was the LCP element, so lab LCP waited on an image nobody
+     could see. With no photo the h1 is the LCP element and paints with FCP. */
   .subhero,
   .subhero-resource { background-image:
-      linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .74)),
-      url("/assets/hearing-aids-hearing-test-san-mateo-hero-900.webp"); }
+      linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .74)); }
   .subhero-service { background-image:
-      linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .72)),
-      url("/assets/doctor-800.webp"); }
+      linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .72)); }
   .doctor { background-image: url("/assets/doctor-800.webp"); }
 }
 
@@ -3229,13 +3230,9 @@ p {
   @media (max-width: 760px) {
     .subhero,
     .subhero-resource { background-image:
-        linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .74)),
-        image-set(url("/assets/hearing-aids-hearing-test-san-mateo-hero-900.avif") type("image/avif"),
-                  url("/assets/hearing-aids-hearing-test-san-mateo-hero-900.webp") type("image/webp")); }
+        linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .74)); }
     .subhero-service { background-image:
-        linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .72)),
-        image-set(url("/assets/doctor-800.avif") type("image/avif"),
-                  url("/assets/doctor-800.webp") type("image/webp")); }
+        linear-gradient(135deg, rgba(13, 75, 88, .95), rgba(21, 111, 131, .72)); }
     .doctor { background-image:
         image-set(url("/assets/doctor-800.avif") type("image/avif"),
                   url("/assets/doctor-800.webp") type("image/webp")); }
