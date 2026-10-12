@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { preload } from "react-dom";
 import type { SitePage } from "../data/crawledPages";
 import { crawledPages } from "../data/crawledPages";
 import { blogPosts } from "../data/blogPosts";
@@ -1840,8 +1841,30 @@ const STOPWORDS = new Set(
   "hearing loss your with what should does about from that this have when will they them your care help".split(" ")
 );
 
+// The subhero background is the LCP element on most pages. It is a CSS
+// background, so the preload scanner cannot see it. Preload the exact file the
+// page kind will use (kept in sync with the .subhero rules at the end of
+// globals.css). Preloading the wrong image costs bandwidth on slow phones and
+// delays the real one. AVIF only: every browser that supports image-set here
+// supports AVIF. Kinds with no photo background (product, general) preload none.
+function preloadSubhero(kind: string) {
+  let base: string | null = null;
+  let small: string | null = null;
+  if (kind === "team" || kind === "service") {
+    base = "/assets/doctor-1200.avif";
+    small = "/assets/doctor-800.avif";
+  } else if (kind === "tinnitus" || kind === "area" || kind === "contact" || kind === "resource") {
+    base = "/assets/hearing-aids-hearing-test-san-mateo-hero-1600.avif";
+    small = "/assets/hearing-aids-hearing-test-san-mateo-hero-900.avif";
+  }
+  if (!base || !small) return;
+  preload(base, { as: "image", type: "image/avif", fetchPriority: "high", media: "(min-width: 761px)" });
+  preload(small, { as: "image", type: "image/avif", fetchPriority: "high", media: "(max-width: 760px)" });
+}
+
 function InnerPage({ page }: { page: SitePage }) {
   const kind = getPageKind(page);
+  preloadSubhero(kind);
   // Hyperacusis shares the tinnitus page kind for routing and related links,
   // but the tinnitus red flags, visit steps and lead-clinician card describe a
   // tinnitus appointment. They must not render on /hyperacusis/ pages until a

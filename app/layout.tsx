@@ -279,39 +279,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* The subhero background art is the largest-contentful-paint element on
-            almost every page: at 390x844 it covers 236,767 px against the h1's
-            50,160. It is a CSS background behind a media query and an @supports
-            block, so the preload scanner cannot see it and the browser only
-            discovers it after CSSOM and layout. These two links are the whole
-            point — nothing else on the page needs preloading, and until now the
-            only images being preloaded were the header logo and a sidebar
-            decoration 5,249 px down the page.
-
-            Kept in sync by hand with the .subhero rules at the end of
-            globals.css. AVIF only: every browser that supports image-set here
-            supports AVIF, and the WebP fallback path is discovered normally. */}
-        <link
-          rel="preload"
-          as="image"
-          href="/assets/hearing-aids-hearing-test-san-mateo-hero-1600.avif"
-          type="image/avif"
-          fetchPriority="high"
-          media="(min-width: 761px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/assets/hearing-aids-hearing-test-san-mateo-hero-900.avif"
-          type="image/avif"
-          fetchPriority="high"
-          media="(max-width: 760px)"
-        />
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>
         {GTM_ID && (
-          <Script id="gtm-init" strategy="afterInteractive">
+          <Script id="gtm-init" strategy="lazyOnload">
             {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
           </Script>
         )}
@@ -327,8 +299,8 @@ export default function RootLayout({
         )}
         {GA4_ID && (
           <>
-            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="afterInteractive" />
-            <Script id="ga4-init" strategy="afterInteractive">
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="lazyOnload" />
+            <Script id="ga4-init" strategy="lazyOnload">
               {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');`}
             </Script>
           </>
@@ -338,13 +310,13 @@ export default function RootLayout({
             {/* $wc_leads must exist before the tracker loads — it snapshots the
                 landing URL and referrer, which is how WhatConverts attributes a
                 call to its source. Loading the tracker without it loses that. */}
-            <Script id="whatconverts-init" strategy="afterInteractive">
+            <Script id="whatconverts-init" strategy="lazyOnload">
               {`var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};`}
             </Script>
             <Script
               id="whatconverts-tracking-script"
               src={`https://s.ksrndkehqnwntyxlhgto.com/${WHATCONVERTS_ID}.js`}
-              strategy="afterInteractive"
+              strategy="lazyOnload"
             />
           </>
         )}
@@ -355,14 +327,14 @@ export default function RootLayout({
             data-domain={siteUrl}
             data-disable-payments="true"
             src="https://datafa.st/js/script.js"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
           />
         )}
         {VISIBILITYKIT_ID && (
           <Script
             id="vk-core"
             src={`https://cdn.visibilitykit.ai/t/${VISIBILITYKIT_ID}/vk.js`}
-            strategy="afterInteractive"
+            strategy="lazyOnload"
           />
         )}
         <script
