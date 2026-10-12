@@ -4834,6 +4834,7 @@ function BlogArticlePage({ page }: { page: SitePage }) {
                 className={`w-full border border-[#d9d9d9] bg-white shadow-sm ${imageFitClass(image.src)}`}
                 height={675}
                 priority
+                sizes="(min-width: 1024px) 45vw, 100vw"
                 unoptimized={image.src.endsWith(".svg")}
                 src={image.src}
                 width={1200}
