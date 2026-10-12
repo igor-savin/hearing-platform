@@ -37,3 +37,11 @@ jobs:
         env:
           # Post the status + report link back to the PR when the token is available.
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+
+      # Phones are where speed regressions hid: the desktop run above scored
+      # these pages 95+ while the mobile lab score sat near 60. Same thresholds
+      # on both sister sites. Warn-only, like the desktop run.
+      - name: Run Lighthouse CI (mobile)
+        run: npx --yes @lhci/cli@0.14.x autorun --config=.lighthouserc.mobile.json
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
