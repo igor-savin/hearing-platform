@@ -1,0 +1,30 @@
+  "larkspur": {
+    name: "Larkspur",
+    county: "Marin County",
+    region: "north-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly an hour north",
+    distanceTier: "far",
+    geo: { lat: 37.9341, lng: -122.5350 },
+    lede:
+      "Larkspur is a compact, leafy town best known for its ferry terminal to San Francisco and the open-air Marin Country Mart beside it, with a historic downtown of redwood-shaded streets along Magnolia Avenue. It sits well north of us, across the bay and up the 101 — our offices are on the Peninsula, roughly an hour away. We are upfront about that: most Larkspur patients travel to us for something particular.",
+    hook: [
+      "Care worth the ferry-town commute",
+      "Plenty of Larkspur residents already commute — many step onto the ferry each morning — so a longer trip for the right specialist is nothing new. Where we earn that trip is specialized work: complex [tinnitus](/tinnitus/) and Lenire therapy, difficult fittings, and second opinions that call for a deliberate, verified approach. For a routine clean-and-check, a nearer Marin office is the sensible call, and we will point you there without hesitation.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A small town by the water",
+      "Larkspur life gathers around a few landmarks: the ferry terminal and Larkspur Landing, the shops and cafés of Marin Country Mart, the historic downtown along Magnolia Avenue, and the redwood canyon trails up toward Baltimore Canyon. It is walkable and close-knit, the kind of place where people prefer a practice that knows them personally. Because the drive to us is a real commitment, we make visits count — pairing testing, fitting, and follow-up so one trip over the bridge does the most it can.",
+    ],
+    whyHere:
+      "Larkspur patients usually come to us for depth rather than convenience — thorough diagnostics, honest technology recommendations, and specialized [tinnitus care](/tinnitus/) including Lenire, all with the same audiologist each visit. Many arrived first for ringing or a hard-to-solve fitting and stayed for the rest of their hearing care. For basic upkeep, we happily acknowledge a closer office may suit you better.",
+    landmarks:
+      "We are about an hour south of the Larkspur Ferry Terminal, Marin Country Mart, and the Magnolia Avenue downtown, down Highway 101 and across the Golden Gate to our San Mateo office.",
+    faqs: [
+      ["Could I combine a hearing visit with a trip into the city?", "Some patients do plan their visit around a broader day out, though our offices are on the Peninsula rather than in San Francisco. We are glad to schedule so testing, fitting, and follow-up fit into one efficient trip."],
+      ["Why choose a practice an hour away over one in Marin?", "For everyday care, we would not argue with convenience. People choose us for specialized tinnitus and Lenire treatment, difficult fittings, and careful second opinions — situations where expertise and time matter more than the miles."],
+      ["How far is your office from Larkspur?", "Roughly an hour south via Highway 101 and the Golden Gate to San Mateo. Call 650-342-9449 to arrange a visit with enough time set aside to make the drive worthwhile."],
+    ],
+    consolidatedInto: "marin-county",
+  },

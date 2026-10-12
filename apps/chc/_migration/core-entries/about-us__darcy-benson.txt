@@ -1,0 +1,29 @@
+"/about-us/darcy-benson/": {
+  kicker: "Meet the Team",
+  headline: "Darcy Benson, AuD",
+  intro: [
+    "Dr. Darcy Benson is the founder of California Hearing Center and believes that \"regaining the ability to hear brings people back into the world around them.\" With {{yearsDarcy}} years of experience, she brings a dedication to hearing care that stretches far beyond her practice into her daily interactions with the patients she sees.",
+    "Dr. Benson's focus is on providing evidence-based practice in a patient-centered care environment. She is passionate about her work and about improving the lives of her patients through better hearing."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Benson received her clinical doctorate in Audiology in 2006. She is board certified by the American Board of Audiology and is licensed in California as a dispensing audiologist. Her work has been published in professional journals and audiology textbooks. In 2018, she was awarded the Inspired-by-Ida label, a benchmark of quality of care."],
+    ["Focus & approach", "Dr. Benson is active in the field of audiology and is a consultant for companies carrying out research on new technology and fitting systems. As a member of the advisory board of the Ida Institute, she worked with an international team of audiologists to integrate person-centered care into hearing care around the world. She is native to the Bay Area and lives on the peninsula."]
+  ],
+  bullets: [
+    "Founder of California Hearing Center",
+    "{{yearsDarcy}} years of experience in hearing care",
+    "Board certified by the American Board of Audiology",
+    "Ida Institute advisory board member",
+    "Evidence-based, patient-centered care"
+  ],
+  takeaways: [
+    "Founder of the practice with {{yearsDarcy}} years of experience and a clinical doctorate earned in 2006.",
+    "Board certified by the American Board of Audiology and licensed in California as a dispensing audiologist."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Benson?", "Call 650-342-9449 to request an appointment with [our audiology team](/about-us/)."]
+  ],
+  image: "/assets/team/dr-darcy-benson-audiologist-san-mateo.jpeg",
+  imageLabel: "Darcy Benson, AuD",
+  imageAlt: "Dr. Darcy Benson, audiologist at California Hearing Center",
+},

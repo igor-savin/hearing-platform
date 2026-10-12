@@ -1,0 +1,11 @@
+{
+  "slug": "what-is-vertigo-and-what-can-i-do-about-it",
+  "hero": { "title": "Vertigo & Balance", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Vertigo: Common Causes and First Steps", "subtitle": "How the inner ear drives balance, and what to do",
+    "rows": [
+      {"title": "BPPV", "desc": "Loose ear crystals cause brief, position-triggered spins."},
+      {"title": "Meniere's disease", "desc": "Vertigo with hearing loss, ringing, and ear fullness."},
+      {"title": "Vestibular neuritis", "desc": "Inner-ear inflammation brings sudden, lasting vertigo."},
+      {"title": "Move slowly", "desc": "Rise in stages and stay hydrated to ease spells."},
+      {"title": "Get evaluated", "desc": "A hearing and balance check helps find the cause."}
+    ] } }

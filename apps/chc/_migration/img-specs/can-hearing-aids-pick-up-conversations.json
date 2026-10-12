@@ -1,0 +1,12 @@
+{
+  "slug": "can-hearing-aids-pick-up-conversations",
+  "hero": { "title": "Speech in Noise", "icon": "soundwave", "accent": "aqua" },
+  "info": { "title": "Hearing Aids in Noise", "subtitle": "What the technology does, and where it stops",
+    "rows": [
+      {"title": "Directional mics", "desc": "Favor voices in front of you"},
+      {"title": "Noise management", "desc": "Softens steady background sound, not all of it"},
+      {"title": "Volume is not the fix", "desc": "Turning it up lifts the noise too"},
+      {"title": "Fitting matters most", "desc": "Real-ear tuning beats price alone"},
+      {"title": "Set expectations", "desc": "Even normal hearing struggles in a crowd"}
+    ] }
+}

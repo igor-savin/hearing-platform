@@ -1,0 +1,12 @@
+{
+  "slug": "why-do-hearing-aids-whistle-feedback",
+  "hero": { "title": "Why Hearing Aids Whistle", "icon": "soundwave", "accent": "aqua" },
+  "info": { "title": "What Causes Feedback", "subtitle": "The common triggers behind a whistle and how to fix each",
+    "rows": [
+      {"title": "Sound leaks and loops", "desc": "Escaped sound re-enters the mic and repeats"},
+      {"title": "Loose or poor fit", "desc": "Reseat the device or resize the dome"},
+      {"title": "Earwax blockage", "desc": "Wax reflects sound back; clear it safely"},
+      {"title": "Worn tubing or domes", "desc": "Cracked parts leak sound and need swapping"},
+      {"title": "Volume too high", "desc": "Extra gain invites feedback; ease it down"}
+    ] }
+}

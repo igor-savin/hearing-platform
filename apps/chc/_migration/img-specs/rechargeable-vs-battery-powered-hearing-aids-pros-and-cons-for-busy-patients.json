@@ -1,0 +1,12 @@
+{
+  "slug": "rechargeable-vs-battery-powered-hearing-aids-pros-and-cons-for-busy-patients",
+  "hero": { "title": "Rechargeable or Battery?", "icon": "battery", "accent": "aqua" },
+  "info": { "title": "Which Power Style Fits You?", "subtitle": "Comparing rechargeable and disposable-battery hearing aids",
+    "rows": [
+      {"title": "Charging vs. swapping", "desc": "Overnight case or replace a battery every few days"},
+      {"title": "Same sound quality", "desc": "Power source doesn't change how well you hear"},
+      {"title": "Dexterity", "desc": "Rechargeables skip fiddling with tiny batteries"},
+      {"title": "Cost over time", "desc": "Battery savings offset a higher upfront price"},
+      {"title": "Backup power", "desc": "A spare battery beats waiting for a charge"}
+    ] }
+}

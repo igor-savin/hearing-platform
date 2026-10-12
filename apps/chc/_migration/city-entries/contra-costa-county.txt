@@ -1,0 +1,29 @@
+  "contra-costa-county": {
+    name: "Contra Costa County",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "east and northeast of the bay",
+    distanceTier: "far",
+    geo: { lat: 37.92, lng: -122.03 },
+    motif: "civic",
+    lede:
+      "Contra Costa County stretches from the bayfront cities of the west, across the central valleys around Walnut Creek and Concord, out to the Delta towns of far East County. It's a large, varied county that sits east and northeast of the bay from our Peninsula offices — an honest distance rather than a quick hop, and one patients cross for a reason.",
+    hook: [
+      "Why patients travel from across the county",
+      "Contra Costa has no shortage of places to get a routine hearing test close to home, and for everyday needs that's often the sensible choice. What's harder to find is a practice built around complex [tinnitus care](/tinnitus/), Lenire treatment, difficult hearing-aid fittings, and unhurried second opinions. That's the reason people drive in from Walnut Creek, Concord, Danville, and the Delta cities — for the depth of specialized care rather than convenience, and we work to make the trip worthwhile.",
+    ],
+    localScene: [
+      "One county, many communities",
+      "Contra Costa is really several regions at once: the West County bayfront around Richmond and El Cerrito; the Lamorinda hills of Lafayette and Orinda; the central hub of Walnut Creek, Concord, and Pleasant Hill under Mount Diablo; the San Ramon Valley through Danville and San Ramon; and the far East County Delta towns of Antioch, Pittsburg, Brentwood, and Oakley. Patients come to us from all of them for the same reasons — thorough diagnostics, honest technology recommendations, and specialized tinnitus and Lenire care worth the drive across the bay.",
+    ],
+    whyHere:
+      "Across Contra Costa, patients choose California Hearing Center for a level of specialization that's hard to match locally: a tinnitus-focused practice, meticulous [testing](/hearing-testing/) and real-ear verification, and the continuity of the same audiologist each visit. We're honest that routine care is fine to keep close to home, and we're the destination for the complex cases. Our pages for [Concord](/areas-we-serve/concord/) and [El Cerrito](/areas-we-serve/el-cerrito/) give the drive time to our San Mateo office.",
+    landmarks:
+      "From West County's bayfront to the San Ramon Valley and the East County Delta, we're a drive east and northeast of the bay, reached by the region's bridges to our San Mateo and San Carlos offices.",
+    faqs: [
+      ["Why would I travel from Contra Costa to the Peninsula for hearing care?", "For routine testing, a local provider often makes sense. Patients cross the bay to us for specialized tinnitus treatment, Lenire, difficult fittings, and second opinions — the depth of care that's harder to find nearby."],
+      ["Which parts of Contra Costa do you serve?", "Patients come to us from across the county — West County, the Lamorinda hills, the central Walnut Creek and Concord area, the San Ramon Valley, and the East County Delta towns."],
+      ["How do I know if the trip is worth it for me?", "If you're dealing with persistent tinnitus, considering Lenire, or struggling with hearing aids that never fit right, it often is. Call 650-342-9449 and we'll give you an honest read before you drive out."],
+    ],
+  },

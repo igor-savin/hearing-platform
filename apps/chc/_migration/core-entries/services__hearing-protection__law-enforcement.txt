@@ -1,0 +1,29 @@
+"/services/hearing-protection/law-enforcement/": {
+  kicker: "Hearing Protection",
+  headline: "Hearing Protection & Situational Awareness for Law Enforcement",
+  intro: [
+    "For officers, hearing protection cannot come at the cost of hearing. On the range, in training, and on duty, you have to catch a partner's call, a suspect's movement, or a radio transmission at the same time your ears need shielding from gunfire and other sudden noise. The sources add up fast: firearms discharge can reach 140 to 175 dB, sirens 110 to 130 dB, and flash-bangs even higher, all well above the levels that cause cumulative damage over a career. Ordinary plugs force a choice between protection and awareness; purpose-built electronic protection removes that choice.",
+    "California Hearing Center fits hearing protection designed for law enforcement, range, and tactical use: level-dependent solutions that preserve or even enhance low-level sound and communication while instantly suppressing the peak of a gunshot or other impulse noise. Because traditional passive plugs can dull the very sounds an officer's safety depends on, our tactical electronic options compress harmful peaks in milliseconds while keeping speech, footsteps, and radio traffic audible. The aim is protection that supports the mission rather than getting in its way.",
+    "We work with local officers, sheriff's deputies and corrections staff, state troopers, federal agents, tactical units, and firearms instructors to fit protection that fits the job and actually gets worn."
+  ],
+  sections: [
+    ["The awareness problem", "Blocking enough sound to guard against gunfire can also block the sounds an officer's safety depends on: verbal commands, footsteps, a drawn weapon, radio traffic. Level-dependent electronic protection is built to keep those sounds available, and can even improve your ability to locate them, so situational awareness stays intact while the ears are still protected from dangerous peaks."],
+    ["How the technology helps", "Digital electronic protectors use microphones to pass through or amplify quieter environmental sounds, then compress or cut the level the instant a loud impulse is detected. Directional microphones help you place the source of a voice, vehicle, or potential threat, and many solutions can integrate with department radio systems so transmissions stay clear during extended shifts and tactical operations."],
+    ["Fitted to the assignment", "Duty environments differ, and so should the solution. Patrol officers contend with sirens and daily radio traffic; corrections staff work in high-reverberation facilities; highway patrol face prolonged roadway noise; tactical teams deal with breaching, flash-bangs, and firearms. We tailor protection and, where appropriate, discreet devices to the specific acoustic demands of each role rather than issuing one generic plug."],
+    ["Range, training, and instructors", "Firearms instructors and trainers carry some of the highest cumulative noise exposures in the profession. High-volume qualification and scenario training mean repeated impulse exposure that adds up over a career. Consistent, comfortable custom protection during every session, protection that still lets an instructor communicate clearly with trainees, is one of the most important habits for preserving long-term hearing."],
+    ["Baseline, monitoring, and conservation", "Because occupational noise accumulates, a baseline [hearing evaluation](/hearing-testing/) and periodic monitoring help catch changes early, and support agency hearing conservation efforts under standards like OSHA's 85 dB threshold. Custom-molded in-ear options seal reliably, stay comfortable through long shifts, and sit low enough to work with a firearm, radio earpiece, and other gear. If exposure has already caused ringing, our [tinnitus care](/tinnitus/) can help you manage it."]
+  ],
+  bullets: ["Situational awareness kept", "Suppresses gunshot peaks", "Radio & command audible", "Directional sound cues", "Custom tactical fit", "Comfortable for shifts"],
+  takeaways: [
+    "Officers need protection that preserves communication and awareness, not just noise blocking.",
+    "Level-dependent electronic protection passes low-level sound through while suppressing impulse peaks in milliseconds.",
+    "Comfortable custom fits get worn consistently, which is what protects hearing across a career of cumulative exposure."
+  ],
+  faqs: [
+    ["Can hearing protection keep me aware of my surroundings on duty?", "Yes. Level-dependent electronic protection is designed to pass through or amplify normal-level sounds like speech, footsteps, and radio traffic, and can help you locate them, while instantly suppressing the peak of gunfire. Awareness is preserved during protection."],
+    ["Why not just use standard earplugs at the range?", "Passive plugs can dull the sounds you need, including range commands and a partner's voice, so they get taken out, leaving ears unprotected. Electronic tactical protection lets you stay aware and protected at the same time, which is why it gets worn every session."],
+    ["Will custom protection work with a radio earpiece and other gear?", "Custom in-ear protectors are low profile and molded to your ear, so they generally integrate with duty gear and stay comfortable through long shifts, and many can enhance radio and command audio. We fit the solution around how you actually work."]
+  ],
+  image: "/assets/core/services__hearing-protection__law-enforcement.svg",
+  imageLabel: "Tactical hearing protection with awareness",
+},

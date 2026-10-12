@@ -1,0 +1,12 @@
+{
+  "slug": "adjusting-to-new-hearing-aids",
+  "hero": { "title": "Adjusting to Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Your First Few Weeks", "subtitle": "How new hearing aids start to feel natural",
+    "rows": [
+      {"title": "Start at home", "desc": "Wear them first in quiet, familiar rooms"},
+      {"title": "Build wearing time", "desc": "Add hours as the sound feels natural"},
+      {"title": "Expect new sounds", "desc": "Footsteps and your own voice stand out"},
+      {"title": "Give it weeks", "desc": "The brain relearns sound with practice"},
+      {"title": "Come back to tune", "desc": "Follow-up adjustments dial in the fit"}
+    ] }
+}

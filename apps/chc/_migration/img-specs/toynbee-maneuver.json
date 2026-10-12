@@ -1,0 +1,34 @@
+{
+  "slug": "toynbee-maneuver",
+  "hero": {
+    "title": "Toynbee Maneuver",
+    "icon": "ear",
+    "accent": "aqua"
+  },
+  "info": {
+    "title": "The Toynbee Maneuver in Five Steps",
+    "subtitle": "Gentle, and stop if it hurts",
+    "rows": [
+      {
+        "title": "Sit upright",
+        "desc": "Take a sip of water if it helps you swallow"
+      },
+      {
+        "title": "Close your mouth",
+        "desc": "Keep your lips together"
+      },
+      {
+        "title": "Pinch your nostrils",
+        "desc": "Gently, not hard"
+      },
+      {
+        "title": "Swallow once",
+        "desc": "Slowly, then let go of your nose"
+      },
+      {
+        "title": "Stop if it hurts",
+        "desc": "Pain, dizziness or drainage: get it checked"
+      }
+    ]
+  }
+}

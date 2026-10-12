@@ -1,0 +1,15 @@
+{
+  "slug": "what-are-my-hearing-loss-risk-factors",
+  "hero": { "title": "Hearing Loss Risk Factors", "icon": "shield", "accent": "gold" },
+  "info": {
+    "title": "Five Common Risk Factors",
+    "subtitle": "From the ones you control to the ones you monitor",
+    "rows": [
+      { "title": "Noise exposure", "desc": "The most preventable cause; protection works" },
+      { "title": "Aging", "desc": "High pitches fade first, making speech muddy" },
+      { "title": "Family history", "desc": "Genetics raise the value of testing earlier" },
+      { "title": "Health conditions", "desc": "Diabetes, heart disease, and smoking play a role" },
+      { "title": "Medications & earwax", "desc": "Ototoxic drugs or buildup can dull your hearing" }
+    ]
+  }
+}

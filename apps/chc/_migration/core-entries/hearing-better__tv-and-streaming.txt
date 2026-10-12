@@ -1,0 +1,34 @@
+"/hearing-better/tv-and-streaming/": {
+  kicker: "Hearing Better",
+  headline: "Hearing the TV Clearly With Hearing Aids",
+  metaTitle: "Hearing the TV Clearly: TV Streamers and Auracast",
+  metaDescription: "Cannot hear the TV? A TV streamer or Auracast sends the sound straight to your hearing aids at your own volume. California Hearing Center in San Mateo and San Carlos explains how.",
+  intro: [
+    "Turning the TV up loud does not fix the problem. It bothers the people around you, and speech can still sound unclear. There is a better way. You can send the TV sound straight to your hearing aids.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["What a TV streamer does", "A TV streamer, also called a TV adaptor, is a small device that plugs into your TV. It sends the audio wirelessly to your hearing aids. You hear dialogue clearly, at the volume you choose. The TV speakers can stay at a normal level for everyone else in the room."],
+    ["Will it work with my hearing aids?", "Most major brands make a compatible streamer, including Oticon, Widex, Phonak and Starkey. Each brand's streamer works with that brand's devices, so the right choice depends on the hearing aids you wear. Tell us which ones you have. We can order the compatible product for you."],
+    ["What is Auracast?", "Auracast is a newer wireless standard. It can send audio from a TV, or from other sources, to compatible hearing aids and earbuds. Support depends on your hearing aids and on the TV or venue. Some devices have the hardware but not the feature switched on yet. Read our guide to [Auracast hearing aids](/what-is-auracast-hearing-aids/) for details, and see our page on the [Phonak EON](/products/hearing-aids-by-brand/phonak/phonak-eon/) for one example."],
+    ["Tips for TV listening", "Sit close to the screen and face it. Turn on the TV's subtitles as a backup. Reduce room noise, such as a fan or a dishwasher, while you watch. If dialogue is still hard to follow, tell us at your next visit. We can check your hearing aid settings."]
+  ],
+  bulletLinks: [
+    ["Auracast hearing aids explained", "/what-is-auracast-hearing-aids/"],
+    ["Phonak EON", "/products/hearing-aids-by-brand/phonak/phonak-eon/"],
+    ["Back to Hearing Better", "/hearing-better/"],
+    ["Book a visit", "/contact/"]
+  ],
+  takeaways: [
+    "A TV streamer sends TV sound straight to your hearing aids at your own volume.",
+    "The right streamer depends on your hearing aid brand. Tell us what you wear.",
+    "Auracast is newer. Check that your devices and your TV support it."
+  ],
+  faqs: [
+    ["Do I need a streamer if my hearing aids have Bluetooth?", "Maybe not. Some hearing aids connect directly to TVs that support the right standard. Others need a streamer. We will check your model."],
+    ["Will others hear the TV too?", "Yes. The TV speakers can stay at a normal level for others, while you hear your own volume through your hearing aids."],
+    ["Can I use a TV streamer with hearing aids bought elsewhere?", "Often yes, if the streamer is made for your brand. Bring your devices in and we will confirm."]
+  ],
+  image: "/assets/core/hearing-better__tv-and-streaming.svg",
+  imageLabel: "Hear the TV clearly"
+},

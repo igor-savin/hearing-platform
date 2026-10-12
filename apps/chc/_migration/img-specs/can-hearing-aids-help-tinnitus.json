@@ -1,0 +1,12 @@
+{
+  "slug": "can-hearing-aids-help-tinnitus",
+  "hero": { "title": "Hearing Aids & Tinnitus", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "How Hearing Aids Ease Tinnitus", "subtitle": "The everyday relief, from first sound to fine-tuning",
+    "rows": [
+      {"title": "Restore everyday sound", "desc": "Amplification gives the brain real sound to focus on"},
+      {"title": "Mask the ringing", "desc": "Background sound blends tinnitus into the room"},
+      {"title": "Built-in sound therapy", "desc": "Optional tone or noise programs you can customize"},
+      {"title": "Ease listening strain", "desc": "Less effort to hear means less focus on tinnitus"},
+      {"title": "Tune over follow-ups", "desc": "Settings refined across a few fitting visits"}
+    ] }
+}

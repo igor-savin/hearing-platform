@@ -1,0 +1,12 @@
+{
+  "slug": "how-do-i-choose-a-good-audiologist",
+  "hero": { "title": "Choosing an Audiologist", "icon": "people", "accent": "gold" },
+  "info": { "title": "What to Look For in an Audiologist", "subtitle": "Five signs of a practice worth staying with",
+    "rows": [
+      {"title": "Verify credentials", "desc": "Confirm license, degree, and certification first"},
+      {"title": "Range of brands", "desc": "Independent practices fit more than one maker"},
+      {"title": "Thorough evaluation", "desc": "Speech-in-noise testing, not just tones"},
+      {"title": "Clear trial policy", "desc": "Know returns, follow-ups, and what's included"},
+      {"title": "Lasting aftercare", "desc": "Adjustments and repairs handled for years"}
+    ] }
+}

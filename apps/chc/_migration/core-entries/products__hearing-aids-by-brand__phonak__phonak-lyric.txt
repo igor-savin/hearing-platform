@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/phonak/phonak-lyric/": {
+  kicker: "Invisible Hearing Aids",
+  headline: "Phonak Lyric: 100% Invisible, Extended-Wear Hearing in San Mateo & San Carlos",
+  intro: [
+    "Phonak Lyric is a genuinely different kind of hearing aid. It is 100% invisible, placed deep in the ear canal by a trained provider, and worn continuously for months at a time. A helpful comparison is contact lenses, which correct vision without changing how you look, and Lyric aims to do the same for hearing.",
+    "Because it stays in place around the clock, there is nothing to insert or remove each morning, no batteries to change, and no nightly charging. Many people who wear Lyric say they simply forget it is there, and no one around them realizes they are wearing anything at all.",
+    "California Hearing Center is a certified Lyric provider, and our specially trained audiologists place and tune each device for your individual ears. Lyric is a distinctive option that suits some people beautifully and is not right for others, so candidacy always comes first."
+  ],
+  sections: [
+    ["A completely invisible placement", "Lyric is positioned deep within the ear canal, just millimeters from the eardrum, which keeps it entirely out of sight. Soft, biocompatible seals hold it comfortably in place and let it work with your ear's natural anatomy to direct sound where it needs to go."],
+    ["Around-the-clock hearing", "Because Lyric is worn continuously, you can hear on the phone, while you sleep, in the shower, and during exercise without ever handling a device. For people who dislike daily maintenance or want true invisibility, that always-on convenience is the main appeal."],
+    ["Natural sound by design", "Sitting deep in the canal gives Lyric some acoustic advantages. Using your outer ear to gather and direct sound can help reduce wind noise, lessen the hollow occlusion effect that distorts your own voice, and cut down on the feedback and whistling that some traditional devices produce."],
+    ["A subscription-based program", "Unlike hearing aids you buy outright, Lyric is offered through an annual subscription. Each device runs for months and is replaced by your provider when needed, and the subscription covers replacements and servicing through the year, so there is nothing for you to clean, charge, or repair yourself."],
+    ["Candidacy and honest comparison", "Lyric works for many people with mild to moderately severe hearing loss, but certain ear canal shapes or ear-health issues can rule it out. We evaluate your [hearing](/hearing-testing/) and your ears first, and if a rechargeable or behind-the-ear device would serve you better, we will tell you plainly. You can also see our [Lyric program overview](/products/hearing-aids-by-brand/lyric/) for more."]
+  ],
+  bulletLinks: [
+    ["Check your candidacy", "/hearing-testing/"],
+    ["Lyric program overview", "/products/hearing-aids-by-brand/lyric/"],
+    ["Explore all Phonak models", "/products/hearing-aids-by-brand/phonak/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Earwax removal", "/services/earwax-removal/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
+  ],
+  takeaways: [
+    "Phonak Lyric is a 100% invisible hearing aid worn continuously for months, placed and replaced by a provider.",
+    "There is no daily insertion, removal, charging, or battery changing, and its deep-canal placement supports a natural sound.",
+    "Lyric is offered as an annual subscription, and candidacy depends on your ear anatomy, hearing loss, and ear health."
+  ],
+  faqs: [
+    ["How is Lyric different from other hearing aids?", "Lyric is worn 24 hours a day for months at a time, sits invisibly deep in the ear canal, and is placed and replaced by a certified provider rather than removed each night. There is no daily charging, cleaning, or battery swapping to do yourself."],
+    ["Does Lyric require a subscription?", "Yes. Because the devices are replaced on an ongoing basis, Lyric is offered as an annual subscription that covers replacement devices and servicing for the year. We explain how it works during your consultation so you know what to expect."],
+    ["Is Lyric right for everyone?", "No. It works well for many people with mild to moderately severe hearing loss, but certain ear canal shapes or medical conditions can make someone an unsuitable candidate. We evaluate your situation first and recommend alternatives when Lyric is not the best fit."]
+  ],
+  image: "/assets/phonak.webp",
+  imageLabel: "Phonak Lyric invisible hearing"
+},

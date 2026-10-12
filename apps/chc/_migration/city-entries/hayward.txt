@@ -1,0 +1,30 @@
+  "hayward": {
+    name: "Hayward",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 25-30 minutes across the San Mateo Bridge (Highway 92)",
+    distanceTier: "far",
+    geo: { lat: 37.6688, lng: -122.0808 },
+    lede:
+      "Hayward anchors the East Bay at the foot of the San Mateo Bridge, a diverse, working city with a big state university and a long industrial history. Of all the East Bay cities, it is the most straightforward drive to us — Highway 92 lands almost directly at our San Mateo office. Our practice is still on the Peninsula, but for Hayward the crossing is genuinely quick.",
+    hook: [
+      "The most feasible East Bay drive across the 92",
+      "Hayward sits right at the eastern end of the San Mateo-Hayward Bridge, so the trip to our San Mateo office is roughly 25-30 minutes — the shortest of any East Bay city we serve. That makes specialized care realistic here in a way it is not further north: focused [tinnitus](/tinnitus/) and Lenire treatment, verified fittings, and second opinions are all within an easy reach. For routine testing a local clinic is fine, but the short bridge hop means many Hayward patients simply come to us.",
+    ],
+    motif: "transit",
+    localScene: [
+      "A crossroads city by the bridge",
+      "Hayward is a hub — the shops and restaurants of a revitalizing downtown along B Street, the campus of Cal State East Bay up in the hills, the Japanese Gardens, and the shoreline and marsh trails where Highway 92 heads for the bridge. It is a busy, mixed community of students, families, and tradespeople, many with careers spent around noise. Because the bridge is right there, seeing a specialized audiologist is unusually convenient for a city this far east.",
+    ],
+    whyHere:
+      "Hayward patients choose California Hearing Center because the short bridge drive puts specialized care within reach — thorough testing, real-ear-verified fittings, and a genuine focus on tinnitus and Lenire. They get the depth of a dedicated practice and the continuity of one audiologist without a punishing commute.",
+    landmarks:
+      "From downtown Hayward, Cal State East Bay, or the shoreline along Highway 92, our San Mateo office is roughly 25-30 minutes over the San Mateo Bridge.",
+    faqs: [
+      ["Is Hayward really that close to your office?", "Yes — Highway 92 and the San Mateo Bridge put us roughly 25-30 minutes away, the shortest East Bay drive we see. That makes specialized tinnitus care and complex fittings genuinely practical from Hayward."],
+      ["Do you treat tinnitus and offer Lenire?", "We do. Tinnitus is a core focus of the practice, including Lenire therapy, and Hayward's easy bridge access makes the follow-up visits Lenire involves very manageable. Call 650-342-9449 to learn more."],
+      ["Should I still consider a local Hayward provider?", "For simple hearing tests and maintenance, a nearby clinic is reasonable. But given how short the 92 crossing is, many Hayward patients find it easy to come to us for both routine and specialized care."],
+    ],
+    consolidatedInto: "alameda-county",
+  },

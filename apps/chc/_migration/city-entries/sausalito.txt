@@ -1,0 +1,30 @@
+  "sausalito": {
+    name: "Sausalito",
+    county: "Marin County",
+    region: "north-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 50 minutes north over the Golden Gate",
+    distanceTier: "far",
+    geo: { lat: 37.8591, lng: -122.4853 },
+    lede:
+      "Sausalito rises straight out of the water at the north foot of the Golden Gate, its hillside houses and famous houseboat community looking across Richardson Bay to the San Francisco skyline. It is the first town you reach coming over the bridge — which also means the trip runs the other way for us. Our offices are down on the Peninsula, about 50 minutes south, so Sausalito patients typically make the drive by choice.",
+    hook: [
+      "Living on the water, and what it means for hearing aids",
+      "Between the houseboats at Waldo Point, the marinas along Bridgeway, and the salt air off Richardson Bay, a lot of Sausalito life happens right on the water — and marine moisture is hard on hearing aids, showing up as muffled sound, cut-outs, or corroded contacts. It is manageable with moisture-resistant devices, a nightly drying routine, and regular professional cleaning. When something does fail, we handle repairs so a waterfront lifestyle never leaves you without your hearing.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A town built on the bay",
+      "Sausalito strings along the shoreline from the downtown waterfront and Bridgeway's galleries to the old Marinship yards, the Caledonia Street shops, the houseboat docks at Waldo Point, and Fort Baker tucked beneath the bridge. Damp bay air is a constant, and it takes a toll on hearing technology. For patients from Sausalito we lean into moisture-smart devices and durable fittings that stand up to life by the water — and we set up drying habits that keep them working reliably between visits.",
+    ],
+    whyHere:
+      "Sausalito patients tend to seek us out for the specialized end of hearing care — persistent [tinnitus](/tinnitus/) and Lenire therapy, moisture-related repairs, or fittings that need real expertise. They value seeing the same audiologist and getting an honest match of technology to their needs. For routine checks, we readily acknowledge a closer Marin office may be the easier choice.",
+    landmarks:
+      "We are about 50 minutes south of Sausalito's Bridgeway waterfront, the Waldo Point houseboats, and the Caledonia Street district, down Highway 101 and across the Golden Gate to our San Mateo office.",
+    faqs: [
+      ["I live on a houseboat — will the damp air ruin my hearing aids?", "Marine humidity does let moisture build up inside hearing aids, but it is very manageable. Moisture-resistant devices, a nightly drying routine, and regular professional cleaning prevent most trouble, and we help waterfront patients set up a routine that lasts."],
+      ["Is it worth driving from Sausalito to the Peninsula for care?", "For specialized tinnitus or Lenire treatment, tricky fittings, or moisture repairs, most patients feel the trip pays off. For a simple check or cleaning, a nearer Marin provider may make more sense — we would rather be honest than have you drive for something routine."],
+      ["Do you repair hearing aids damaged by moisture?", "Yes. Moisture-related issues are among the most common repairs we see, and many are resolved same-day with professional cleaning and drying. Call 650-342-9449 to arrange a visit."],
+    ],
+    consolidatedInto: "marin-county",
+  },

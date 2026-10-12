@@ -1,0 +1,34 @@
+{
+  "slug": "medi-cal-hearing-aids",
+  "hero": {
+    "title": "Medi-Cal Hearing Aids",
+    "icon": "shield",
+    "accent": "aqua"
+  },
+  "info": {
+    "title": "Five Checks on Medi-Cal Hearing Aids",
+    "subtitle": "Rules are from DHCS pages, October 2026",
+    "rows": [
+      {
+        "title": "Yearly limit",
+        "desc": "DHCS lists $1,510 per person per fiscal year"
+      },
+      {
+        "title": "Who is exempt",
+        "desc": "Members under 21 with full-scope Medi-Cal"
+      },
+      {
+        "title": "Prior approval",
+        "desc": "Needed to buy aids and for costly repairs"
+      },
+      {
+        "title": "Prescription",
+        "desc": "From an ear, nose and throat doctor"
+      },
+      {
+        "title": "Ask your plan",
+        "desc": "Rules and amounts can change"
+      }
+    ]
+  }
+}

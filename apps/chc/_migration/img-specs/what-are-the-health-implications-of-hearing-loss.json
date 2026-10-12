@@ -1,0 +1,12 @@
+{
+  "slug": "what-are-the-health-implications-of-hearing-loss",
+  "hero": { "title": "Hearing & Health", "icon": "ear", "accent": "gold" },
+  "info": { "title": "How Untreated Hearing Loss Reaches Beyond the Ears", "subtitle": "Five effects worth taking seriously",
+    "rows": [
+      {"title":"Listening effort","desc":"Straining to hear tires the brain all day"},
+      {"title":"Social withdrawal","desc":"Conversations feel like work, so people pull back"},
+      {"title":"Balance and falls","desc":"Hearing loss is linked to a higher fall risk"},
+      {"title":"Mood and energy","desc":"Missed conversation can wear down mood over time"},
+      {"title":"Cognitive risk","desc":"A modifiable risk factor tied to decline"}
+    ]}
+}

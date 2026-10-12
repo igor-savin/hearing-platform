@@ -1,0 +1,29 @@
+  "woodside": {
+    name: "Woodside",
+    county: "San Mateo County",
+    region: "peninsula-south",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 15 minutes from our San Carlos office",
+    distanceTier: "near",
+    geo: { lat: 37.4297, lng: -122.2536 },
+    lede:
+      "Woodside is a rural, wooded town of horse properties and estates spread along the base of the Santa Cruz Mountains, where redwoods, riding trails, and winding country roads set the pace. Residents are used to a short drive for their errands, and hearing care is no exception — our San Carlos office is about fifteen minutes down the hill.",
+    hook: [
+      "Discreet devices and calm, private care",
+      "Woodside residents tend to want two things from hearing technology: performance that keeps up with an active life outdoors and in company, and a device that stays discreet. Modern invisible and receiver-in-canal hearing aids do both, but the outcome rests on expert fitting and real-ear verification far more than on the hardware itself. We take the time to program, measure, and refine, in an unhurried, confidential setting where the whole visit feels calm.",
+    ],
+    motif: "estate",
+    localScene: [
+      "A country town among the redwoods",
+      "Woodside gathers around its small Town Center and Roberts Market, then spreads out along Cañada Road past Filoli, up toward Kings Mountain and Skyline, and into the trails of Huddart and Wunderlich Parks. It is equestrian, tree-shaded, and deliberately rural, with no bustling commercial strip. For its residents we offer discreet technology, meticulous fittings, and the private attention of an independent practice, an easy fifteen minutes down to our San Carlos office.",
+    ],
+    whyHere:
+      "Woodside patients choose us for careful testing, premium technology matched honestly to their needs, and specialized tinnitus care — with the continuity of one audiologist who knows them. The pace is unhurried and private, and the follow-through is thorough.",
+    landmarks:
+      "We are about fifteen minutes from Woodside's Town Center, Cañada Road, and the trails at Huddart and Wunderlich Parks, an easy drive to our San Carlos office.",
+    faqs: [
+      ["Do you fit discreet or invisible hearing aids?", "Yes — we offer several invisible and near-invisible styles, including deep-canal options. The right fit depends on your ear anatomy and hearing needs, which we assess during a thorough evaluation."],
+      ["Can I get an unhurried, private appointment?", "That is our standard. Woodside patients appreciate the calm, confidential pace of an independent practice, with time to ask questions and fine-tune results over follow-up visits."],
+      ["How far is your office from Woodside?", "Our San Carlos office is about fifteen minutes from Woodside. Call 650-342-9449 to arrange a visit."],
+    ],
+  },

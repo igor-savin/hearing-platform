@@ -1,0 +1,42 @@
+"/products/eargear/": {
+  kicker: "Ear & Hearing Protection",
+  headline: "Ear Gear & Custom Hearing Protection for San Mateo & San Carlos",
+  metaTitle: "Custom Earplugs & Earmolds | Musicians, Shooting, Swimming, Sleep | California Hearing Center",
+  metaDescription: "Custom-molded earplugs and earmolds made from impressions of your own ears: musician plugs, in-ear monitors, pilot headset molds, swim, sleep and shooting. San Mateo and San Carlos.",
+  intro: [
+    "Noise damage does not come back. That is the whole argument for this page, and it is why we spend an appointment on ear impressions for people whose hearing is currently fine.",
+    "Foam plugs work when they are in and rolled correctly, which in practice means they are often working at a fraction of their rating. A custom plug is molded from an impression of your own canal, so it seals the same way every time, and it stays comfortable long enough that you keep it in through the whole shift or the whole set. Comfort is not a luxury here. It is what makes the protection happen.",
+    "We take impressions at both offices and serve patients across San Mateo, San Carlos, [Burlingame](/areas-we-serve/burlingame/), [Belmont](/areas-we-serve/belmont/) and [Millbrae](/areas-we-serve/millbrae/). Call 650-342-9449 or [contact California Hearing Center](/contact/) and tell us where the noise comes from."
+  ],
+  sections: [
+    ["Custom earplugs for noise", "For workshops, concerts, motorsports, firearms and other loud settings, we make solid custom plugs and filtered plugs molded to your ears. The filtered versions let you choose how much attenuation you get, so you can protect your hearing at a level that still lets you hear a colleague or a range officer. Tell us what the noise is and how long you are in it, and we will specify the filter rather than guess."],
+    ["Specialty earmolds", "Beyond noise, we make molds for pilot headsets, and molds for swimming, sleeping and hunting. A swim mold keeps water out of a canal that keeps getting infected. A sleep mold is shaped to be lain on. A hunting mold has to let you hear the field and still handle the shot. These are different problems and they get different pieces."],
+    ["Musician earplugs and in-ear monitors", "Musicians need attenuation that does not wreck the tone. Foam takes the top end off and leaves you mixing against something that is not what the room is doing. Filtered musician plugs cut the level while keeping the response roughly flat, so what you hear is quieter rather than duller. We fit both custom and non-custom musician plugs and custom in-ear monitors for stage use. Our [musicians' hearing protection page](/services/hearing-protection/musicians/) goes into what to ask for."],
+    ["Earmolds for audiophiles", "If you listen critically, the mold is part of the signal path. A custom shell around a driver seals consistently, which fixes the bass response that shifting eartips keep changing on you. We carry a range of options and can talk through what is worth it and what is not."],
+    ["What a custom fit gets you", "A better seal, consistently, because it was molded from your canal rather than approximated. Comfort over hours instead of minutes, which is the difference between protection you wear and protection in your pocket. And a more even frequency response than a generic plug, which is why musicians and shooters both end up here."],
+    ["Getting started", "It starts with a short appointment. We look in the canal, check the eardrum, take the impressions, and talk through where and how you will use the gear. From there we specify the style and the level of protection and order it in. If you also need advice about noise exposure at work, our [hearing protection service](/services/hearing-protection/) covers that side."]
+  ],
+  bulletLinks: [
+    ["Custom hearing protection", "/services/hearing-protection/"],
+    ["Musicians' hearing protection", "/services/hearing-protection/musicians/"],
+    ["Hunting and shooting protection", "/services/hearing-protection/hunting/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["All products", "/products/"],
+    ["Contact us", "/contact/"]
+  ],
+  takeaways: [
+    "Noise damage is permanent and preventable. Custom protection is the version people actually keep in.",
+    "Filtered plugs let you choose how much attenuation you get, so you can still hear a colleague, a bandmate or a range officer.",
+    "We make molds for pilot headsets, swimming, sleeping, hunting, stage monitors and critical listening.",
+    "It starts with a short impression appointment at either office. Call 650-342-9449."
+  ],
+  faqs: [
+    ["What kinds of custom ear gear do you make?", "Solid and filtered earplugs for high-noise settings, molds for pilot headsets, swimming, sleeping and hunting, musician earplugs, custom in-ear monitors, and shells for critical listening. If you have an unusual requirement, describe it and we will tell you whether it can be made."],
+    ["Why choose custom earplugs over foam?", "Because foam only protects when it is rolled and inserted correctly, and most people do neither reliably. A custom plug seals the same way every time and stays comfortable long enough that you keep it in. Filtered versions also let you pick the attenuation instead of taking whatever the foam gives you."],
+    ["Do you make hearing protection for musicians?", "Yes, custom and non-custom filtered plugs and custom in-ear monitors. The filters cut the level while keeping the response roughly flat, so the music gets quieter rather than duller. That is the difference between protection a musician wears and protection a musician abandons."],
+    ["How long does it take to get custom ear gear?", "The impression appointment itself is short. We examine the canal and eardrum first, take the impressions, and go through where and how you will use the gear, then order it in. Ask us at the appointment for the current turnaround, since it varies by product and by manufacturer."]
+  ],
+  image: "/assets/custom-earplugs-earmolds-ear-gear.webp",
+  imageLabel: "Ear Gear protective sleeves"
+},

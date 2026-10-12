@@ -1,0 +1,29 @@
+  "campbell": {
+    name: "Campbell",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 40 minutes south",
+    distanceTier: "far",
+    geo: { lat: 37.2872, lng: -121.9500 },
+    lede:
+      "Campbell has kept a small-town center that its fruit-drying past would still recognize — the water tower over a walkable downtown, a busy weekend farmers market, and the Los Gatos Creek Trail running through it. It is a good 40 minutes south of our Peninsula offices, but patients travel that distance for specialized hearing and tinnitus care.",
+    hook: [
+      "Clear conversation where Campbell gathers",
+      "Downtown Campbell is built around being together — sidewalk tables, the farmers market, live music, and the trail. Those are precisely the settings where hearing loss shows up first, as speech slipping under background noise. The fix is rarely just a better device; it is a device fitted and verified for real, layered sound. That is the work we specialize in, and it is what makes the drive up from Campbell worthwhile for the patients who choose us.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A downtown made for being together",
+      "The heart of Campbell runs along Campbell Avenue beneath the old water tower, out to the Pruneyard, along the Los Gatos Creek Trail, and through neighborhoods near the light-rail line. Between the market crowds, restaurant patios, and trailside chatter, it is a city where daily life is social and rarely silent. For Campbell patients who come to us, we concentrate on clarity in noise and carefully verified fittings — plus tinnitus care that can be hard to find nearby.",
+    ],
+    whyHere:
+      "Campbell patients travel to us for what a routine visit cannot offer: focused [tinnitus care](/tinnitus/) including Lenire, verified fittings that hold up in noise, and unhurried second opinions. For basic maintenance, a South Bay provider is closer, and we will point that out honestly.",
+    landmarks:
+      "We are about 40 minutes from downtown Campbell, the Pruneyard, and the Los Gatos Creek Trail, north up the 280 to our San Carlos office.",
+    faqs: [
+      ["Is the drive from Campbell really worth it?", "For everyday upkeep, probably not — somewhere local will do. People come to us from Campbell for specialized care: complex tinnitus, difficult fittings, Lenire, or a rigorous reassessment where our expertise makes the difference."],
+      ["Can you help with ringing in my ears, not just hearing loss?", "Yes. Tinnitus care is central to our practice, from evaluation through management options like Lenire, and it often goes hand in hand with a hearing assessment."],
+      ["How far is your office from Campbell?", "About 40 minutes north via the 280 to San Carlos. Call 650-342-9449 and we will plan an efficient visit around the drive."],
+    ],
+  },

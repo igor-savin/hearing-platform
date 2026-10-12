@@ -1,0 +1,29 @@
+"/services/hearing-protection/": {
+  kicker: "Audiology Services",
+  headline: "Custom Hearing Protection in San Mateo & San Carlos",
+  intro: [
+    "Noise-induced hearing loss is one of the few kinds of hearing damage that is almost entirely preventable, and once it happens it does not come back. The trouble with foam plugs from the drugstore is that they are uncomfortable, often fit poorly, and muffle everything so much that people take them out. Custom hearing protection solves that by being molded to your ears and tuned to what you actually do.",
+    "At California Hearing Center, custom protection begins with an impression of your ear canal, the same careful process used for custom earpieces. The result is a comfortable, reusable, precisely sealed plug that you are far more likely to wear consistently, which is what truly protects your hearing over the years.",
+    "We fit protection for work, music, motorsports, shooting, aviation, sleep, swimming, and everyday loud environments across the Peninsula."
+  ],
+  sections: [
+    ["How custom molds are made", "We take a soft impression of your ear canal and outer ear, then a lab builds a plug shaped to that exact anatomy. Because the fit is personal, custom plugs seal better, stay put during movement, and stay comfortable for long stretches, unlike one-size foam."],
+    ["Understanding NRR", "The Noise Reduction Rating estimates how many decibels a hearing protector reduces sound under test conditions. A higher NRR is not automatically better; the right amount of reduction depends on how loud your environment is and whether you still need to hear speech, cues, or music around you. We help match the attenuation to the task."],
+    ["Filtered vs. solid protection", "Solid plugs block as much as possible and suit sleep, mowing, or very loud machinery. Filtered plugs let a controlled, even amount of sound through, so speech and warning signals stay audible while peaks are tamed, ideal for people who need awareness while protected."],
+    ["Who benefits from custom protection", "Musicians, hunters and shooters, dentists and dental hygienists, factory and construction workers, first responders, pilots, motorcyclists, concertgoers, and anyone regularly around loud sound. If you leave a noisy environment with ringing or muffled hearing, that is a signal your ears needed protection. Latest research on hair cells: what [squid skin](/squid-hearing-loss-research/) could teach us about hearing loss."],
+    ["Specialized options we fit", "For a plain guide to choosing plugs for sleep, swimming, concerts and work, see our page on [custom earplugs](/custom-earplugs/). Beyond general-purpose plugs, we fit purpose-built solutions for [musicians](/services/hearing-protection/musicians/), for [hunting and the shooting range](/services/hearing-protection/hunting/), and for [law enforcement and tactical use](/services/hearing-protection/law-enforcement/). If you already have hearing loss, we can also help protect what remains alongside your [hearing aids](/hearing-aid-fitting/)."]
+  ],
+  bullets: ["Custom ear impressions", "Comfortable reusable fit", "Filtered or solid options", "Matched to your noise level", "Work, music & sport", "Peninsula fittings"],
+  takeaways: [
+    "Noise-induced hearing loss is permanent but almost fully preventable.",
+    "Custom-molded plugs are worn more consistently than foam because they fit and feel better.",
+    "The best protector is the one matched to your environment and to what you still need to hear."
+  ],
+  faqs: [
+    ["Why choose custom over foam earplugs?", "Custom plugs are molded to your ear, so they seal more reliably, stay comfortable for hours, and can use filters that preserve speech and music. People wear them consistently, which is what actually prevents damage."],
+    ["Does a higher NRR always mean better protection?", "Not necessarily. Over-attenuating can leave you unable to hear speech or safety cues, so you take the plugs out. The goal is enough reduction for your environment while keeping what you need to hear, which is why fit is chosen per activity."],
+    ["How long do custom earplugs last?", "With proper care, custom plugs typically last for years. Fit can change over time or with weight and anatomy changes, so we can check the seal and remake them if needed."]
+  ],
+  image: "/assets/core/services__hearing-protection.svg",
+  imageLabel: "Custom-molded hearing protection",
+},

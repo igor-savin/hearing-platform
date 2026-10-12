@@ -1,0 +1,30 @@
+  "san-rafael": {
+    name: "San Rafael",
+    county: "Marin County",
+    region: "north-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly an hour north over the Golden Gate",
+    distanceTier: "far",
+    geo: { lat: 37.9735, lng: -122.5311 },
+    lede:
+      "San Rafael is Marin's county seat and its oldest city, built around Mission San Rafael Arcángel and the walkable stretch of Fourth Street downtown. It is a genuine city with theaters, restaurants, and civic life — and our offices sit down on the Peninsula, roughly an hour north over the Golden Gate from us. We are honest about that drive: San Rafael patients come to us on purpose, usually for specialized care.",
+    hook: [
+      "One independent practice, every listening environment",
+      "A day in San Rafael moves through very different sound: a quiet county office, a busy lunch spot on Fourth Street, a crowded event at the Marin Center. Hearing well across all of them takes more than an off-the-shelf device from a big-box counter. We test how you hear speech in noise, verify each fitting with real-ear measurement, and tune for the rooms you actually spend time in — the kind of unhurried, [individualized fitting](/hearing-aid-fitting/) an independent practice is built to provide.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A county seat with a real downtown",
+      "San Rafael packs a lot into a small footprint — the Fourth Street corridor, the Mission and Gerstle Park, the Montecito and Dominican neighborhoods, the Frank Lloyd Wright civic center out toward the freeway, and the tidal marsh at China Camp. Patients here tend to value an independent audiologist who knows them by name over a rotating retail counter. Because the trip south is a real one, we make each visit count, bundling testing, fitting, and follow-up so a single drive over the bridge does the work of several.",
+    ],
+    whyHere:
+      "San Rafael patients typically find us for something specific: complex [tinnitus care](/tinnitus/), Lenire treatment, a difficult fitting no one else has solved, or a second opinion they trust. They stay because we take the time to get it right and they see the same audiologist each visit. For routine cleanings and basic checks, a Marin provider may be more convenient — and we will tell you so.",
+    landmarks:
+      "We are roughly an hour south of San Rafael's Fourth Street, the Marin Civic Center, and the Gerstle Park and Montecito neighborhoods, down Highway 101 and across the Golden Gate to our San Mateo office.",
+    faqs: [
+      ["Why would I drive from San Rafael all the way to the Peninsula?", "Most people don't come to us for routine care — they come for specialized tinnitus treatment, Lenire, or a fitting that has been difficult elsewhere. If that describes you, the trip is usually worth it; if you just need a quick clean-and-check, a closer Marin office may serve you better."],
+      ["Can you help if my hearing aids sound fine in quiet but not in restaurants?", "Yes — that is one of the most common reasons people see us. We test your speech understanding in background noise and use real-ear measurement to verify the settings, then fine-tune for the noisy rooms you actually spend time in."],
+      ["How long is the drive from San Rafael?", "Plan on about an hour down Highway 101 and over the Golden Gate to our San Mateo office. Call 650-342-9449 and we will schedule enough time so one visit accomplishes as much as possible."],
+    ],
+    consolidatedInto: "marin-county",
+  },

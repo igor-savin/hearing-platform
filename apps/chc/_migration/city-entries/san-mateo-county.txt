@@ -1,0 +1,29 @@
+  "san-mateo-county": {
+    name: "San Mateo County",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "both of our offices are in San Mateo County — San Mateo and San Carlos",
+    distanceTier: "near",
+    geo: { lat: 37.56, lng: -122.36 },
+    lede:
+      "San Mateo County is our home. Both of our offices sit right here on the Peninsula — one in San Mateo, one in San Carlos, about eight minutes apart — which means most of the county is a short, familiar drive from full-service audiology. From the foggy coast to the bayside cities to the wooded estate towns, we care for patients across every corner of the county.",
+    hook: [
+      "One county, many listening environments",
+      "San Mateo County is remarkably varied, and so are its hearing needs. The coast and fog belt bring marine humidity that is hard on hearing aids; the airport and industrial north county carry occupational noise; the biotech and office corridors demand clear hearing in meetings and noisy rooms; and the quiet estate towns call for discreet, unhurried care. Rather than a one-size-fits-all approach, we tailor testing, technology, and follow-up to where you actually live, work, and listen.",
+    ],
+    motif: "civic",
+    localScene: [
+      "Serving the whole Peninsula, from two central offices",
+      "Our two offices put us within easy reach of the county's core — San Mateo, Burlingame, Hillsborough, San Carlos, Belmont, Foster City, and Redwood City — while patients also come to us from the north county cities of Daly City, South San Francisco, and San Bruno, the coastside communities of Pacifica and Half Moon Bay over Highway 92, and the southern estate towns of Atherton, Woodside, and Portola Valley. Wherever you are in San Mateo County, one of our offices is a straightforward drive.",
+    ],
+    whyHere:
+      "Across the county, patients choose us for real diagnostic depth, honest technology recommendations, and specialized tinnitus care — including Lenire — with the continuity of the same audiologist at every visit. As an independent practice with two convenient locations, we offer the thoroughness and personal attention that a big-box counter cannot. Our pages for [San Mateo](/areas-we-serve/san-mateo/) and [San Carlos](/areas-we-serve/san-carlos/) describe the two towns where our offices are.",
+    landmarks:
+      "Our San Mateo office is at 88 N. San Mateo Drive and our San Carlos office is at 1008 Laurel Street, about eight minutes apart and central to the county from the coast to the bay.",
+    faqs: [
+      ["Which of your two offices should I visit?", "Whichever is more convenient — San Mateo or San Carlos, about eight minutes apart. Both offer full-service testing, fittings, tinnitus care, and repairs. Call 650-342-9449 and we will help you choose."],
+      ["Do you serve the whole of San Mateo County?", "Yes. Patients come to us from the coast, the north county, the bayside cities, and the southern estate towns. Both offices sit centrally on the Peninsula, so most of the county is a short drive."],
+      ["What makes an independent county practice worth it?", "You get comprehensive [hearing testing](/hearing-testing/), technology chosen for your needs rather than a limited lineup, verified fittings, and specialized tinnitus care — all with continuity of care from one audiologist who knows your history."],
+    ],
+  },

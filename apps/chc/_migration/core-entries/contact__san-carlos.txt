@@ -1,0 +1,37 @@
+"/contact/san-carlos/": {
+  kicker: "San Carlos Office",
+  headline: "See a Hearing Doctor in San Carlos",
+  metaTitle: "San Carlos Audiologist: Hearing Tests & Hearing Aids | California Hearing Center",
+  metaDescription: "Hearing tests, hearing aid fittings verified with real-ear measurement, adjustments, repairs and tinnitus care at 1008 Laurel Street, San Carlos. Call 650-342-9449.",
+  intro: [
+    "Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070, on the city's main street. We see patients here for hearing evaluations, hearing aid consultations and fittings, adjustments and repairs, [tinnitus](/services/tinnitus-therapy/) appointments, and [earwax removal](/services/earwax-removal/).",
+    "Call 650-342-9449 to book, or send an appointment request through this site and we will call you back.",
+    "Office hours: Monday through Wednesday 9am to 1pm and 2pm to 5pm; Thursday 9am to 12pm and 1pm to 5pm; Friday 9am to 12pm and 12:30pm to 3pm."
+  ],
+  sections: [
+    ["Where we are", "1008 Laurel Street puts us in the middle of downtown San Carlos, a few minutes from the San Carlos Caltrain station and quick to reach from Highway 101 or El Camino Real. Patients from [Belmont](/areas-we-serve/belmont/), [Redwood City](/areas-we-serve/redwood-city/), San Mateo, and [Menlo Park](/areas-we-serve/menlo-park/) are typically here in well under fifteen minutes. Patients also visit us from [East Palo Alto](/areas-we-serve/east-palo-alto/), [Atherton](/areas-we-serve/atherton/), [Woodside](/areas-we-serve/woodside/), [Palo Alto](/areas-we-serve/palo-alto/), [Portola Valley](/areas-we-serve/portola-valley/), [Los Altos](/areas-we-serve/los-altos/), [Mountain View](/areas-we-serve/mountain-view/) and [Sunnyvale](/areas-we-serve/sunnyvale/), and each city page gives the drive time to this office."],
+    ["Please note our midday break", "Unlike our San Mateo office, the San Carlos schedule includes a midday break, and it shifts slightly later in the week. Monday through Wednesday we break from 1pm to 2pm, Thursday from 12pm to 1pm, and Friday from 12pm to 12:30pm. When you call, our team will book you around it so there are no surprises."],
+    ["Parking and access", "There is street parking along Laurel Street and in the nearby public lots just off it. Downtown San Carlos is flat and walkable, which many of our patients appreciate. If parking or mobility is a concern, tell us when you book and we will point you to the easiest option."],
+    ["What happens at your visit", "Plan on about an hour for a first appointment. We take a history of what you are noticing and where it bothers you most, examine the ears, and complete a full diagnostic evaluation. We then walk you through the audiogram in plain language and discuss the realistic options."],
+    ["Hearing aids in San Carlos", "We fit [hearing aids](/products/hearing-aids/) from every major manufacturer here, and we are not tied to any one brand. Each fitting is programmed to your hearing and checked with real-ear measurement, and you try the aids in your own daily life before you commit, with the trial terms in writing. If you live in Belmont, Redwood City or San Carlos, this is usually the closer office for follow-up adjustments."],
+    ["Hearing tests in San Carlos", "A full [diagnostic hearing test](/hearing-testing/) is done by an audiologist, and we explain the results at the same visit. Book one if you are noticing a change, if someone close to you has mentioned it, or before you decide on hearing aids."],
+    ["The technology we fit here", "San Carlos sees the same range as our main office: the current 2026 flagships from every major manufacturer, including [Oticon Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/) with its Dual AI system, plus the newest from Phonak, Starkey, ReSound, [Widex](/products/hearing-aids-by-brand/widex/) and [Signia](/products/hearing-aids-by-brand/signia/). If you want to try something specific, mention it when you book and we will have it ready rather than have you make a second trip. We are an independent practice, so the recommendation is about your hearing rather than a manufacturer's target, and we [compare brands](/products/hearing-aids-by-brand/) with you openly. Whichever you choose, the fitting is verified with [real-ear measurement](/hearing-aid-fitting/). That step moves your day-to-day result further than the platform does."],
+    ["Our main office", "Our main office is in San Mateo at 88 N. San Mateo Drive, about ten minutes north, with longer uninterrupted hours. See the [San Mateo office page](/contact/san-mateo/) if that suits your schedule better."]
+  ],
+  bulletLinks: [
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Hearing aids", "/products/hearing-aids/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Hearing aid repair", "/services/hearing-aid-repair/"],
+    ["San Mateo office", "/contact/san-mateo/"],
+    ["Meet the team", "/about-us/"]
+  ],
+  faqs: [
+    ["What are your San Carlos office hours?", "Monday through Wednesday 9am to 1pm and 2pm to 5pm; Thursday 9am to 12pm and 1pm to 5pm; Friday 9am to 12pm and 12:30pm to 3pm. The schedule includes a midday break, so calling ahead on 650-342-9449 is the surest way to get the time you want."],
+    ["Is the San Carlos office the same practice as San Mateo?", "Yes. Both offices are California Hearing Center, share the same phone number, and share the same clinical team and records, so you can be seen at whichever location is more convenient."],
+    ["Where do I park?", "There is street parking on Laurel Street and public lots just off it. Downtown San Carlos is flat and walkable; tell us when you book if you would like the closest possible option."]
+  ],
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
+  imageLabel: "Hearing care in downtown San Carlos",
+  imageAlt: "An audiologist showing a hearing aid to a couple during a consultation.",
+},

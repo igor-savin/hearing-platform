@@ -1,0 +1,39 @@
+  "/adjusting-to-new-hearing-aids/": {
+    kicker: "Getting Started",
+    headline: "Adjusting to New Hearing Aids",
+    variant: "product",
+    datePublished: "2021-03-24",
+    dateModified: "2026-09-29",
+    metaDescription:
+      "New hearing aids take time to get used to. Learn what the first weeks really feel like, how to build up wearing time, and when a small adjustment can help.",
+    intro: [
+      "A new pair of glasses works the instant they land on your nose. New hearing aids ask for more patience than that, and the gap catches many people off guard. If sound feels sharp, busy, or a little artificial in the first days, nothing has gone wrong — your brain is meeting frequencies it has not handled clearly in years. Making the most of that stretch starts before you leave our office, with a [hearing aid fitting](/hearing-aid-fitting/) built around your ears and your goals.",
+      "Think of it as retraining rather than repair. When [hearing loss](/hearing-testing/) sets in gradually, the brain adapts to a muffled version of the world and files it away as normal. Feed it fuller sound again and it has to sort what matters, a voice or a turn signal, from what it can let fade, like the hum of the refrigerator. That sorting is genuine work, and it goes faster with steady practice.",
+      "Most people settle in over a few weeks, though some feel at home sooner. Our part is to fine-tune the [hearing aids](/products/hearing-aids/) as your ears adjust and to stay reachable when questions come up. If you are still choosing devices, [our audiologists](/about-us/) can walk you through the options at either office.",
+    ],
+    takeaways: [
+      "Adjusting to hearing aids takes days to weeks — the brain has to relearn sounds it has been missing.",
+      "Wear them consistently, starting in quiet settings, to speed up the adjustment.",
+      "Follow-up tuning is expected; tell your audiologist about any sound that stays uncomfortable.",
+    ],
+    sections: [
+      ["Your first couple of weeks", "The early days feel loud in an oddly specific way. Sounds you had stopped noticing come back all at once — your own footsteps, papers rustling, water running — and your own voice may seem to boom inside your head. This is the brain recalibrating, not a fault in the devices. Wear them at home first, where the soundscape is calm and familiar, before taking them into a busy restaurant or a crowded store. Each quiet day of practice makes the noisy ones more manageable."],
+      ["What to expect, and what not to", "It helps to separate the reasonable hopes from the ones that lead to letdown. Realistically, hearing aids make speech clearer, ease the strain of following a conversation, and bring back everyday sounds you have been missing. They do not restore the hearing you had at twenty, and they will not erase every background noise or make a loud, echoey room feel calm. The [National Institute on Deafness and Other Communication Disorders](https://www.nidcd.nih.gov/health/hearing-aids) notes that it can take time and follow-up adjustments to get the full benefit, so patience during that window is part of the process, not a sign the fit is wrong. The people who adjust most comfortably tend to expect improvement, not perfection."],
+      ["Building up wearing time", "Resist the urge to save the devices for special occasions. Hearing aids do their work through repetition, so the brain needs regular hours to relearn. Some people start with a stretch each day and add time as things feel natural; others are comfortable wearing them morning to evening within the first week. There is no single correct pace, though [how many hours a day to aim for](/how-many-hours-a-day-should-you-wear-new-hearing-aids-a-complete-guide/) has the same answer for everyone in the end. What counts is consistency, because the ears and brain adapt to the sound they get most often, not the sound they get once in a while."],
+      ["Sounds that catch you off guard", "Certain sounds surprise almost everyone. Chewing can feel loud, a ceramic plate set on a counter can seem sharp, and the rustle of a jacket may register far more than you expect. These ease off as the brain reclassifies them as ordinary. If a specific sound stays uncomfortable after a couple of weeks, that is worth telling us — it usually points to a small tuning change, not something you have to live with."],
+      ["Follow-up is part of the plan", "A fitting is a starting point, not the finish line. We expect to see you again to fine-tune the settings once your brain has spent real time with the devices, and small tweaks at that stage often make a large difference. If something rattles, cuts out, or sounds off, our [repair and service](/services/hearing-aid-repair/) team can help rather than leaving you to guess. Older adults new to devices tend to do especially well with a bit of coaching, which is why our care for [seniors](/hearing-aids-for-seniors/) leans on regular check-ins."],
+    ["More help beyond the hearing aid", "Skills, [listening training](/improve-listening-skills-by-training-your-brain/) and extra devices can speed up your progress. See our [Hearing Better hub](/hearing-better/)."]
+  ],
+    bullets: ["Give it a few weeks", "Start in quiet rooms", "Wear them daily", "Your voice sounds normal soon", "Follow-up adjustments", "Ask us anytime"],
+    faqs: [
+      ["How long until my hearing aids feel normal?", "For most people it is a matter of weeks, not months. The brain adapts fastest when the devices are worn consistently, so daily practice shortens the curve. If sound still feels harsh or tinny after three to four weeks, let us know, because that usually points to a fitting adjustment rather than a limit of the technology."],
+      ["Why does my own voice sound strange?", "That boomy, echoey quality is one of the most common early complaints, and it even has a name — the occlusion effect. Your ears are hearing themselves differently now that something sits in the canal. It typically settles within a week or two, and if it lingers, we can adjust the fit or the settings to soften it."],
+      ["Should I wear them every day, even at home?", "Yes, and home is the best place to begin. A familiar, low-noise setting lets your brain relearn everyday sounds without the pressure of a crowded room. Building up steady hours indoors makes restaurants, meetings, and gatherings far easier once you get there."],
+      ["What if they still do not sound right after adjusting?", "Come back in. A first fitting is calibrated to a starting point, and real-world listening almost always calls for refinement. We would rather retune your [hearing aids](/products/hearing-aids/) than have you push through discomfort — the aim is sound you forget you are wearing."],
+    ],
+    image: "/assets/blog/adjusting-to-new-hearing-aids-1.svg",
+    imageLabel: "The first weeks take patience, and they pass",
+    image2: "/assets/blog/adjusting-to-new-hearing-aids-2.svg",
+    image2Label: "A simple week-by-week guide to settling in",
+    image2Caption: "Steady daily wear, starting in quiet rooms, is what makes new hearing aids feel natural.",
+  },

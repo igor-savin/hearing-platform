@@ -1,0 +1,13 @@
+{
+  "slug": "hearing-aid-replacement-intervals-domes-wax-guards-receivers",
+  "hero": { "title": "When to Replace What", "icon": "hearingaid", "accent": "teal" },
+  "info": { "title": "Replacement Intervals", "subtitle": "Starting points — your wax matters more than the calendar",
+    "rows": [
+      {"title": "Wax guards: monthly", "desc": "Sooner if one aid goes quiet with good power"},
+      {"title": "Domes: 2-3 months", "desc": "Replace when stiff, yellowed, split or whistling"},
+      {"title": "BTE tubing: 4-6 months", "desc": "It hardens and cracks, thinning the sound"},
+      {"title": "Receivers: as needed", "desc": "A clinic job — thin or distorted sound is the sign"},
+      {"title": "Dry them overnight", "desc": "Moisture is what shortens receiver life"},
+      {"title": "Clean and check yearly", "desc": "Vents, sound bore and contacts you cannot reach"}
+    ] }
+}

@@ -1,0 +1,39 @@
+"/hearing-aid-financing/": {
+  kicker: "Costs & Insurance",
+  headline: "Hearing Aid Financing and Payment Plans",
+  metaTitle: "Hearing Aid Financing and Payment Plans: San Mateo",
+  metaDescription: "Hearing aid financing and payment plans at California Hearing Center. Spread the cost, use your benefits first, and get the right device. Call 650-342-9449.",
+  intro: [
+    "California Hearing Center offers hearing aid financing, so you can pay for your hearing aids over time and not all at once. Financing for hearing aids works best next to any insurance benefit, HSA or FSA funds you already have. Call 650-342-9449 or ask at your visit, and we will explain the payment plan options that apply to you. There is no obligation.",
+    "Better hearing is an investment in your relationships, your work, and your long-term health. It should not have to happen all at once. This page explains how hearing aid payment plans fit with insurance and the other ways patients manage the [cost of hearing aids](/hearing-aid-cost/). The goal is simple: make sure budget decides the timeline, not the quality of your care."
+  ],
+  sections: [
+    ["Hearing aid financing at California Hearing Center", "We offer patient financing for hearing aids. Financing lets you spread the cost of your hearing aids over time. The terms depend on the plan you choose, and we go over them with you before you decide. Ask us about it at your consultation, or call 650-342-9449."],
+    ["Hearing aid payment plans: what to ask", "Before you agree to any payment plan, ask for the monthly amount, how long the plan lasts, and whether there are any fees or interest. Ask for the terms in writing. A good plan fits your monthly budget without pushing you to buy a device that does not suit your hearing. If you would like help comparing options, our team will walk you through the numbers."],
+    ["Financing for hearing aids and your insurance benefit", "Financing works best on top of any coverage you already have. Before you finance anything, we can check your [insurance and Medicare benefits](/resources/insurance/) as a courtesy. Our biller can check any plan's benefits for you, and any allowance from your plan reduces the amount you finance. Original Medicare does not cover hearing aids, according to Medicare.gov, but some Medicare Advantage plans do, and [Medi-Cal](/medi-cal-hearing-aids/) covers hearing aids up to a yearly limit for eligible members. Many patients cover part of the cost with a benefit and finance only the rest."],
+    ["HSA and FSA funds", "Hearing aids are typically an eligible expense under Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA), which let you pay with pre-tax dollars. Check with your plan administrator if you are unsure. If you have one of these accounts, bring the card to your appointment. Many patients combine HSA or FSA funds with financing to lower their real out-of-pocket cost further."],
+    ["Try them with confidence", "Our hearing aid trial lasts 45 days with no restocking fee. That means you can wear your hearing aids in your own life before you are committed. Ask us for the terms in writing when you choose a device."],
+    ["Get the right device, not just the cheapest", "The most expensive mistake in hearing care is buying technology that does not match your life because it was all that fit the budget that month. Financing exists so you can choose the device that suits how and where you need to hear, and spread the cost sensibly, rather than settling for less and struggling in the settings that matter most to you."],
+    ["How we help", "Tell us your situation and we will lay out the numbers honestly: what your insurance is likely to contribute, what financing can cover, and what a comfortable payment looks like. You decide with the full picture in front of you. Start by [contacting our team](/contact/) or calling 650-342-9449."]
+  ],
+  bulletLinks: [
+    ["What hearing aids cost", "/hearing-aid-cost/"],
+    ["Insurance & Medicare", "/resources/insurance/"],
+    ["Medi-Cal and hearing aids", "/medi-cal-hearing-aids/"],
+    ["Explore hearing aids", "/products/hearing-aids/"],
+    ["Book a consultation", "/contact/"]
+  ],
+  takeaways: [
+    "California Hearing Center offers hearing aid financing, so you can spread the cost of hearing aids over time.",
+    "Financing pairs with your insurance benefit and HSA/FSA funds to lower what you finance.",
+    "Ask about the monthly amount, the length of the plan and any fees, and get the terms in writing."
+  ],
+  faqs: [
+    ["Do you offer hearing aid financing?", "Yes. We offer patient financing for hearing aids, so you can spread the cost over time. Ask us about the options at your consultation or call 650-342-9449."],
+    ["What are hearing aid payment plans?", "A payment plan lets you pay for your hearing aids in installments instead of all at once. The terms depend on the plan, so ask for the monthly amount, the length and any fees before you agree."],
+    ["Can I use insurance and financing together?", "Yes, and it is the smart approach. We can check your [insurance benefits](/resources/insurance/) first so any coverage reduces the amount you finance, then financing can cover the remainder. Our biller can check any plan's benefits for you."],
+    ["Can I pay with an HSA or FSA?", "Hearing aids are typically an eligible HSA/FSA expense, so many patients pay with those pre-tax funds. Bring your card and we will help you apply it, alone or alongside financing."]
+  ],
+  image: "/assets/core-photos/hearing-aid-financing-san-mateo.jpg",
+  imageLabel: "Spread the cost, keep the care",
+},

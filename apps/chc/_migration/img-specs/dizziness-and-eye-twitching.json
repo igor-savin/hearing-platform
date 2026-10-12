@@ -1,0 +1,34 @@
+{
+  "slug": "dizziness-and-eye-twitching",
+  "hero": {
+    "title": "Dizziness & Eye Twitching",
+    "icon": "ear",
+    "accent": "gold"
+  },
+  "info": {
+    "title": "Five Things to Track",
+    "subtitle": "Notes help a clinician sort out the cause",
+    "rows": [
+      {
+        "title": "Eyelid or eyeball?",
+        "desc": "A lid flutter is not the same as eyes that move"
+      },
+      {
+        "title": "What sets it off?",
+        "desc": "Head turns, bending, rolling over in bed"
+      },
+      {
+        "title": "How long does it last?",
+        "desc": "Seconds, minutes or hours"
+      },
+      {
+        "title": "Any hearing change?",
+        "desc": "New ringing, fullness or muffled hearing"
+      },
+      {
+        "title": "Any red flags?",
+        "desc": "Trouble seeing, speaking or walking: call 911"
+      }
+    ]
+  }
+}

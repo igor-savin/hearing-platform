@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-auracast-hearing-aids",
+  "hero": { "title": "Auracast Explained", "icon": "bluetooth", "accent": "aqua" },
+  "info": { "title": "How Auracast Works", "subtitle": "Wireless audio broadcast, straight to compatible hearing aids",
+    "rows": [
+      {"title": "Bluetooth LE Audio", "desc": "Built on the newest Bluetooth generation"},
+      {"title": "One-to-many broadcast", "desc": "One source reaches many listeners at once"},
+      {"title": "Tune in like radio", "desc": "Compatible devices choose a broadcast to join"},
+      {"title": "Like a modern telecoil", "desc": "Wireless, higher quality, no loop wiring"},
+      {"title": "Still rolling out", "desc": "Newer hearing aids and select venues only"}
+    ] }
+}

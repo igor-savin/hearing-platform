@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="California Hearing Center serving Santa Rosa">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7ef"/><stop offset="1" stop-color="#dff0f1"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="0" y="0" width="900" height="540" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="900" height="540" fill="url(#sky)"/>
+    
+    <path d="M0 330 q225 -60 450 -10 t450 -20 V540 H0 Z" fill="#155f6b" opacity="0.2"/>
+    <path d="M0 400 q225 -40 450 0 t450 -10 V540 H0 Z" fill="#105966" opacity="0.22"/>
+    <circle cx="720" cy="315" r="42" fill="#e0ae3c" opacity="0.9"/>
+    <g stroke="#105966" stroke-width="4" opacity="0.7">
+      <path d="M120 430 L150 360"/><path d="M200 430 L230 360"/><path d="M280 430 L310 360"/><path d="M360 430 L390 360"/><path d="M440 430 L470 360"/><path d="M520 430 L550 360"/><path d="M600 430 L630 360"/><path d="M680 430 L710 360"/><path d="M760 430 L790 360"/>
+    </g>
+    <g fill="#f05a28" opacity="0.8"><circle cx="150" cy="360" r="6"/><circle cx="230" cy="360" r="6"/><circle cx="310" cy="360" r="6"/><circle cx="390" cy="360" r="6"/><circle cx="470" cy="360" r="6"/><circle cx="550" cy="360" r="6"/><circle cx="630" cy="360" r="6"/><circle cx="710" cy="360" r="6"/><circle cx="790" cy="360" r="6"/></g>
+    <!-- unifying hearing motif: soundwave arcs radiating from a listening point -->
+    <g transform="translate(96 150)" fill="none" stroke="#155f6b" stroke-width="6" stroke-linecap="round" opacity="0.55">
+      <circle cx="0" cy="0" r="7" fill="#155f6b" stroke="none"/>
+      <path d="M18 -20 a30 30 0 0 1 0 40"/>
+      <path d="M34 -34 a52 52 0 0 1 0 68"/>
+      <path d="M50 -48 a74 74 0 0 1 0 96"/>
+    </g>
+    <!-- title band -->
+    <rect x="0" y="0" width="900" height="118" fill="#155f6b"/>
+    <text x="60" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#ffffff">Santa Rosa</text>
+    <text x="60" y="88" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#86d0d5" letter-spacing="1.5">CALIFORNIA HEARING CENTER · AREAS WE SERVE</text>
+    <rect x="0" y="118" width="900" height="5" fill="#e0ae3c"/>
+  </g>
+</svg>

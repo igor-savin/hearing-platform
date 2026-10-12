@@ -1,0 +1,12 @@
+{
+  "slug": "does-miracle-ear-have-audiologists",
+  "hero": { "title": "Who Will You See?", "icon": "shield", "accent": "gold" },
+  "info": { "title": "How to Check a Provider's Credentials", "subtitle": "Five quick steps before you book a hearing appointment",
+    "rows": [
+      {"title": "Ask who you'll see", "desc": "Get the provider's name and title upfront"},
+      {"title": "Know the two credentials", "desc": "Audiologist (AuD) vs hearing instrument specialist"},
+      {"title": "Understand the model", "desc": "Retail chain or independent clinical practice"},
+      {"title": "Verify the license", "desc": "Look them up on your state licensing board"},
+      {"title": "Match care to your needs", "desc": "Complex symptoms call for diagnostic training"}
+    ] }
+}

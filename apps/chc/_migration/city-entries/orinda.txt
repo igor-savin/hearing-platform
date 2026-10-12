@@ -1,0 +1,30 @@
+  "orinda": {
+    name: "Orinda",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 50 minutes east",
+    distanceTier: "far",
+    geo: { lat: 37.8771, lng: -122.1797 },
+    motif: "estate",
+    lede:
+      "Orinda sits just through the Caldecott Tunnel in the wooded Lamorinda hills, a leafy, low-key community known for its 1940s Art Deco theatre and its reservoir-and-canyon surroundings. It's about 50 minutes east of our Peninsula offices, so we're honest that we're not the nearest audiologist, though Orinda residents do travel to us for specialized care.",
+    hook: [
+      "Room for careful, private care",
+      "Residents here tend to prefer hearing solutions that are discreet and simply work, achieved through patient fitting rather than the flashiest device. We give each visit the time it needs — testing, programming, and real-ear verification in a calm, private setting. That unhurried attention, together with focused [tinnitus care](/tinnitus/), is what draws Orinda patients over the hill to us.",
+    ],
+    localScene: [
+      "Theatre Square, reservoir, and canyon",
+      "Orinda's character shows in the marquee of the historic Orinda Theatre at Theatre Square, the boaters and anglers at San Pablo Reservoir, the trails of Wildcat Canyon Regional Park, and the quiet homes around Lake Cascade. It's a wooded, unhurried town that values calm and quality. We match that with thorough testing, honest recommendations, and verified fittings suited to an active, outdoor life.",
+    ],
+    whyHere:
+      "Orinda patients tend to come to us for a specific reason — a stubborn case of tinnitus, a Lenire evaluation, or a fitting a closer office couldn't get right. We answer routine questions honestly and point you to a nearer provider when that makes sense, reserving the drive over the hill for the work that genuinely benefits from a specialist's time.",
+    landmarks:
+      "We're about 50 minutes from Theatre Square, the San Pablo Reservoir, and Wildcat Canyon, taking the East Bay bridges over to our San Mateo office.",
+    faqs: [
+      ["Why travel from Orinda when closer options exist?", "For routine care, staying local is reasonable. Patients come to us for specialized tinnitus treatment, Lenire, and the unhurried, meticulous fitting that's harder to find nearby."],
+      ["Do you offer discreet hearing aids?", "Yes. We fit several low-profile and in-canal styles that stay unobtrusive. The right choice depends on your ears and hearing, which we assess in your evaluation."],
+      ["Can you help with tinnitus?", "Yes. Our practice is tinnitus-focused, including Lenire for suitable candidates. We evaluate the cause first, then build a plan. Call 650-342-9449 to learn more."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

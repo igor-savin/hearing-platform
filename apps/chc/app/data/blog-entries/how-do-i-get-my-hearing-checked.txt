@@ -1,0 +1,43 @@
+  "/how-do-i-get-my-hearing-checked/": {
+    kicker: "Hearing Tests & Evaluations",
+    headline: "How Do I Get My Hearing Checked?",
+    variant: "condition",
+    datePublished: "2025-09-22",
+    dateModified: "2026-08-25",
+    metaDescription:
+      "Wondering how to get your hearing checked? Here's what a hearing evaluation involves, when to book one, what your results mean, and how to take the next step.",
+    intro: [
+      "You have started asking people to repeat themselves, or nudging the television a few notches past where anyone else in the room is comfortable. At some point the thought arrives: maybe it is [time to get your hearing checked](/welcome-to-may-better-hearing-month/), even if you are not sure what that involves or where to begin. A [hearing evaluation](/hearing-testing/) is the place to start, and it tends to be calmer and simpler than it sounds.",
+      "The check itself is a painless appointment with an audiologist, usually about an hour, that measures how well you hear across the range of pitches that carry everyday speech. There is nothing to prepare and nothing to memorize; you simply listen and respond. By the end you have a clear map of your hearing rather than a vague worry.",
+      "Whether you are arranging this for yourself or encouraging a parent to finally book, the effort is small and what you get back is a clear picture. You can [schedule a visit](/contact/) at our San Mateo or San Carlos offices whenever you are ready to trade the guessing for an answer.",
+    ],
+    takeaways: [
+      "A hearing evaluation is painless, takes about an hour, and needs no special preparation.",
+      "You usually do not need a doctor's referral to book directly with an audiologist.",
+      "Results come as an audiogram you review the same day, with clear next steps.",
+      "Getting a baseline checked early makes any future changes far easier to track.",
+    ],
+    sections: [
+      ["When it is worth getting checked", "You do not need a dramatic moment to justify a test. Trouble following conversation in a noisy restaurant, a phone that seems quieter than it used to, or relatives commenting on the television volume are all reasonable prompts. [ASHA's page on hearing screening and testing](https://www.asha.org/public/hearing/hearing-testing/) suggests adults have their hearing screened periodically, and more regularly once you pass your mid-fifties. One exception deserves urgency: if hearing drops suddenly in one ear, or arrives with pain, drainage, or dizziness, be seen promptly rather than waiting for a routine visit."],
+      ["Booking the appointment", "In most cases you can see an audiologist directly, without a physician's referral, though some insurance plans still ask for one, so it is worth a quick check first. Booking is usually a short phone call or online request: you pick a time, share a little history, and that is about it. If you are helping an older parent arrange the visit, [our audiologists](/about-us/) are used to making the process feel unhurried, and you can [contact our offices](/contact/) to find a time that works."],
+      ["Inside the appointment", "Plan on roughly an hour. The audiologist will ask about your history and take a quick look in your ears to rule out something as simple as [earwax](/services/earwax-removal/). Then you sit in a quiet booth, wear headphones, and respond to tones and words at different pitches and volumes. None of it is uncomfortable, and there is no way to pass or fail. You are only mapping what you hear so it can be compared against normal ranges."],
+      ["Reading your results", "Your results arrive as an audiogram, a simple graph that plots the softest sounds you can detect across low to high pitches. The audiologist reviews it with you the same day, in plain language, pointing out where your hearing sits comfortably and where it dips. You leave understanding not just whether there is a loss, but its shape and degree, which is what any sensible plan is built on."],
+      ["A quick screening or a full evaluation?", "A free screening at a health fair or pharmacy can flag whether something is worth a closer look, and that has genuine value. What it cannot do is describe the shape or degree of a loss the way a full [hearing evaluation](/hearing-testing/) does. Picture a screening as a smoke alarm and the evaluation as the inspection that follows: one tells you to look closer, the other tells you what is really going on and what to do about it."],
+      ["Cost, insurance, and referrals", "[What you pay](/how-much-does-a-hearing-test-cost-without-insurance/) depends on your plan and the type of appointment. Many diagnostic evaluations are covered or low-cost, and our staff can review your [insurance](/resources/insurance/) benefits before you arrive so there are no surprises at the desk. If your plan does require a referral for coverage, we can tell you exactly what to ask your primary care doctor to send over."],
+      ["From results to a plan", "A hearing test opens a conversation rather than closing one. If the findings point to a loss worth addressing, the next step might be a [hearing aid fitting](/hearing-aid-fitting/), a look at [hearing aids](/products/hearing-aids/) suited to your daily routine, or simply a note to recheck in a year. For many older adults the path is straightforward, and you can read more about [options designed for seniors](/hearing-aids-for-seniors/). Either way, getting checked trades uncertainty for a clear picture and a sensible next move."],
+    ],
+    bullets: ["No referral needed", "About one hour", "Painless tone test", "Same-day audiogram", "Insurance reviewed", "Clear next steps"],
+    faqs: [
+      ["Do I need a referral to get my hearing checked?", "In most cases you can book directly with an audiologist without one. Some insurance plans still require a referral for coverage, so a quick call to your provider first is worth it. Our staff can also tell you what your specific plan needs."],
+      ["How long does a hearing evaluation take?", "Set aside about an hour. That covers a short conversation about your history, a look in your ears, and the listening portion in a sound booth, with time afterward to go over your audiogram the same day."],
+      ["Will the test hurt or be uncomfortable?", "There is nothing painful about it. You listen to tones and words through headphones and respond when you hear them, and for most people the hardest part is simply sitting quietly. Adults and children alike get through it easily."],
+      ["What if the results show I have hearing loss?", "You and the audiologist talk through what fits your life, which might mean [hearing aids](/products/hearing-aids/), a follow-up in a year, or steps to protect the hearing you still have. Nothing is decided for you on the spot."],
+      ["How often should I have my hearing checked?", "For most adults, a baseline around your fifties and periodic checks after that make sense, sooner if you notice changes or work around loud noise. Regular visits let us compare against your own history rather than a generic standard."],
+    ],
+    image: "/assets/blog/how-do-i-get-my-hearing-checked-1.svg",
+    imageLabel: "A calm, hour-long appointment, nothing to dread",
+    image2: "/assets/blog/how-do-i-get-my-hearing-checked-2.svg",
+    image2Label: "From first call to a clear plan, step by step",
+    image2Caption: "Knowing what to expect makes booking that first appointment much easier.",
+  },
+

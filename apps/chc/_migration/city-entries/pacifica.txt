@@ -1,0 +1,29 @@
+  "pacifica": {
+    name: "Pacifica",
+    county: "San Mateo County",
+    region: "peninsula-coast",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 20-25 minutes over the hill from our San Mateo office",
+    distanceTier: "mid",
+    geo: { lat: 37.6138, lng: -122.4869 },
+    lede:
+      "Pacifica strings a series of surf-town neighborhoods along the ocean, from Sharp Park down to Linda Mar, wrapped in the marine layer and the sound of the Pacific. It is a beautiful place to live, over the ridge from the rest of the Peninsula — and the salt air and coastal damp have a direct, practical effect on hearing devices. Our San Mateo office is about twenty to twenty-five minutes over the hill.",
+    hook: [
+      "Salt air, marine humidity, and hearing aid moisture",
+      "Pacifica's oceanfront setting means near-constant humidity and salt in the air, and moisture is the leading cause of hearing aid problems. Coastal residents tend to see it as muffled sound, dropouts, or corroded contacts. The good news is it is very manageable: moisture-resistant devices, a nightly drying routine, and regular professional cleaning keep coastal hearing aids working reliably. When a device does fail, we handle repairs quickly so you are not left without your hearing.",
+    ],
+    motif: "coast",
+    localScene: [
+      "A town shaped by the ocean",
+      "Pacifica runs from Sharp Park and the pier down past Rockaway Beach and Mori Point to the wide bowl of Linda Mar, with the Sanchez Adobe and Pedro Point rounding out its coastside character and Devil's Slide framing the drive south. What every neighborhood shares is damp, salt-laden ocean air that is hard on hearing aids. For Pacifica patients we lean into moisture-resistant technology, drying routines, and durable fittings, an easy trip over Highway 1 and 92 to San Mateo.",
+    ],
+    whyHere:
+      "Pacifica patients make the trip over the hill because full-service audiology is scarce on the coast, and because coastal living calls for climate-smart care. They come for thorough testing, moisture-resistant fittings, dependable repairs, and specialized tinnitus treatment, and we make each visit count.",
+    landmarks:
+      "We are about twenty to twenty-five minutes from Pacifica's Linda Mar, Rockaway Beach, and Sharp Park, over Highway 1 and 92 to our San Mateo office.",
+    faqs: [
+      ["Why do my hearing aids struggle in Pacifica's coastal air?", "Salt and marine humidity let moisture build up inside hearing aids, causing muffled or intermittent sound. Moisture-resistant models, nightly drying, and regular cleaning prevent most problems, and we help you build a routine that holds up at the coast."],
+      ["Is it worth driving over the hill for hearing care?", "For most Pacifica residents, yes — there are few full-service audiology options on the coast. We make visits thorough and efficient, often bundling testing, fitting, and follow-up so the trip accomplishes more at once."],
+      ["Do you repair moisture-damaged hearing aids?", "Yes. Moisture issues are among the most common repairs we see, and many are resolved the same day. Call 650-342-9449 if your devices are acting up."],
+    ],
+  },

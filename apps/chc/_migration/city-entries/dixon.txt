@@ -1,0 +1,30 @@
+  "dixon": {
+    name: "Dixon",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 95 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.4455, lng: -121.8233 },
+    lede:
+      "Dixon is a small agricultural city on the eastern edge of Solano County, surrounded by farmland and known for its long-running Lambtown festival and its Mayfair. It's a genuine haul from the coast — our offices are on the San Mateo Peninsula, around 95 minutes to the southwest — so for routine hearing care, a provider nearer Dixon will nearly always be the practical choice.",
+    hook: [
+      "The specialized needs that bring Dixon patients our way",
+      "We believe in being honest about distance. For standard hearing tests and everyday hearing aids, staying close to home makes sense. The drive to the Peninsula is worth considering only for specialized care — persistent [tinnitus](/tinnitus/), Lenire treatment, a difficult fitting, or a thorough second opinion. Dixon patients who come this far come for that expertise, and we build the day around one comprehensive visit so the long trip does real work.",
+    ],
+    motif: "civic",
+    localScene: [
+      "A farm town on the county's edge",
+      "Dixon keeps its small-town, agricultural character — the historic downtown around First and A Streets, the fairgrounds that host Lambtown and the county's events, and the open farmland that rings the city. Farming and equipment work here often mean long hours around loud machinery, and that kind of sustained occupational noise exposure can contribute to hearing loss over the years. For Dixon residents noticing hearing changes or living with tinnitus, the specialized care down on the Peninsula is a trip a few decide to make.",
+    ],
+    whyHere:
+      "Dixon patients who travel to us are usually seeking tinnitus and diagnostic expertise that isn't available close by. We honor the long distance by consolidating testing, treatment, and counseling into efficient visits and planning follow-up so repeat drives stay rare.",
+    landmarks:
+      "Patients reach our Peninsula offices from Dixon's downtown, the fairgrounds, and the surrounding farmland, generally around 95 minutes southwest along I-80.",
+    faqs: [
+      ["That's a long way from Dixon — why would I come?", "For routine care, a nearby provider is usually best. Dixon patients travel to us mainly for specialized tinnitus care, Lenire, and complex fittings where the expertise justifies the distance. We plan visits to keep repeat trips low."],
+      ["Can years of farm and equipment noise damage hearing?", "Long-term exposure to loud machinery can contribute to hearing loss over time. A full diagnostic evaluation will show whether noise is part of the picture and what will help. Call 650-342-9449 to book."],
+      ["How do you make a trip from this far worthwhile?", "For distant patients, we fold testing, treatment, and counseling into one efficient visit and set up a follow-up plan that limits how often you need to drive down to the Peninsula."],
+    ],
+    consolidatedInto: "solano-county",
+  },

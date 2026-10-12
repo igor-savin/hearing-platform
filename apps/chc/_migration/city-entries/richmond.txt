@@ -1,0 +1,30 @@
+  "richmond": {
+    name: "Richmond",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 45 minutes across the bay",
+    distanceTier: "far",
+    geo: { lat: 37.9358, lng: -122.3477 },
+    motif: "bayside",
+    lede:
+      "Richmond wraps around the north bay with a long, working shoreline — the Rosie the Riveter WWII Home Front park, Point Richmond's old neighborhoods, the refinery and port beyond. Our audiology offices are over on the Peninsula, roughly 45 minutes across the bay, so we're honest that we're a destination rather than a neighborhood stop for Richmond patients.",
+    hook: [
+      "Industrial work and a lifetime of noise",
+      "Richmond's history runs through the WWII Kaiser Shipyards and the industry that still defines its waterfront — the refinery, the port, the rail yards. Heavy industry and the trades come with sustained loud-noise exposure, which over the years can contribute to hearing loss and tinnitus. If you've spent a career around that kind of noise, a thorough baseline [hearing evaluation](/hearing-testing/) is worth it, and we fit custom hearing protection for workers still on the job.",
+    ],
+    localScene: [
+      "A working shoreline and its neighborhoods",
+      "From the Craneway Pavilion in the historic Ford Assembly Building to the trails at Miller/Knox Regional Shoreline, the marina at Marina Bay, and the leafy streets of Point Richmond, this is a city shaped by its bayfront and its industry. Many residents have spent working lives around loud machinery, so we put real weight on baseline testing, honest results, and protection for those still exposed — the groundwork for catching changes early.",
+    ],
+    whyHere:
+      "Richmond patients who come to us are usually after something specific — a careful diagnostic workup, custom hearing protection, or specialized [tinnitus care](/tinnitus/) including Lenire. We're clear that for a simple test a closer provider may do, and reserve the drive for the care that benefits from our focus.",
+    landmarks:
+      "We're roughly 45 minutes from Point Richmond, Marina Bay, and the Craneway Pavilion, crossing the bay to our San Mateo office.",
+    faqs: [
+      ["I worked around heavy industry for years — should I get tested?", "It's a good idea. Long-term loud-noise exposure can contribute to hearing loss and tinnitus, often gradually. A baseline evaluation gives you a clear picture and something to compare against later."],
+      ["Do you make custom hearing protection for people still working?", "Yes. We fit custom-molded protection for industrial and trade workers, which fits better and protects more reliably than generic foam plugs."],
+      ["Is the drive across the bay worth it from Richmond?", "For routine care, a local option may be simpler. Patients travel to us for specialized tinnitus treatment, Lenire, and complex fittings — the depth of care that justifies the trip."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

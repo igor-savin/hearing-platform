@@ -1,0 +1,12 @@
+{
+  "slug": "decoding-the-buzz-understanding-tinnitus-and-your-options",
+  "hero": { "title": "Tinnitus Relief Options", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Ways to Manage Tinnitus", "subtitle": "Proven approaches, matched to what's driving your ringing",
+    "rows": [
+      {"title": "Hearing Evaluation", "desc": "Find the cause before choosing a treatment"},
+      {"title": "Sound Therapy", "desc": "Background sound eases the ringing's grip"},
+      {"title": "Hearing Aids", "desc": "Restore sound when hearing loss is present"},
+      {"title": "Tinnitus Therapy", "desc": "Counseling calms your reaction to the sound"},
+      {"title": "Lenire Neuromodulation", "desc": "Sound plus tongue stimulation over weeks"}
+    ] }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "what-are-the-red-flags-for-audiology-referrals",
+  "hero": { "title": "Ear Red Flags", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Ear Symptoms That Need Prompt Care", "subtitle": "When to call the same day, not wait it out",
+    "rows": [
+      {"title": "Sudden hearing loss", "desc": "One ear drops over hours or days: call today"},
+      {"title": "One-sided symptoms", "desc": "Hearing, ringing, or fullness in just one ear"},
+      {"title": "Pain or drainage", "desc": "Especially with fever or a blocked feeling"},
+      {"title": "Severe dizziness", "desc": "Spinning vertigo alongside hearing changes"},
+      {"title": "Facial weakness", "desc": "Drooping or numbness needs urgent medical care"}
+    ] }
+}

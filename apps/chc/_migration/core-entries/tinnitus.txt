@@ -1,0 +1,42 @@
+"/tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "The Tinnitus Knowledge Hub for San Mateo & San Carlos",
+  metaTitle: "Tinnitus Treatment Near Me: San Mateo & San Carlos",
+  metaDescription: "Tinnitus treatment near you: audiology clinics in San Mateo and San Carlos for evaluation, sound therapy and support. Call 650-342-9449.",
+  intro: [
+    "Tinnitus, the perception of [ringing, buzzing, hissing, or pulsing sound](/tinnitus/types-of-tinnitus-sounds/) with no external source, is one of the most common reasons people come to California Hearing Center. This hub gathers what we have learned helping Peninsula patients live better with it: how tinnitus is evaluated, which therapies actually help, and how to tell everyday tinnitus from the kind that deserves prompt medical attention.",
+    "Tinnitus is a symptom rather than a disease, and it is [frequently linked to hearing loss, noise exposure, earwax](/tinnitus/causes/), certain medications, or stress. For many people the sound becomes far less intrusive once it is explained clearly and paired with a structured plan instead of internet guesswork.",
+    "Use the pages below to go deeper on any subtopic. If you are just getting oriented, start with [what tinnitus is](/tinnitus/what-is-tinnitus/), then explore the therapy and support pages that match your situation."
+  ],
+  sections: [
+    ["What we evaluate first", "[A tinnitus visit usually begins](/tinnitus/what-to-expect/) with a full [hearing test](/hearing-testing/), a symptom history, and a description of the sound and its impact on sleep and concentration. Understanding the whole picture is what makes any later therapy effective rather than generic."],
+    ["A dedicated tinnitus focus", "Tinnitus care is a genuine specialty for our practice, not an afterthought bolted onto a hearing aid sale. That focus is why we invest in structured therapy, sound strategies, and advanced options like Lenire bimodal neuromodulation for candidates who qualify."],
+    ["Tinnitus treatment near you: San Mateo and San Carlos", "If you are searching for tinnitus treatment, a tinnitus clinic or a tinnitus specialist near you on the Peninsula, California Hearing Center has two offices. Our San Mateo office is at 88 N. San Mateo Drive, San Mateo, CA 94401. Our San Carlos office is at 1008 Laurel Street, San Carlos, CA 94070. Call 650-342-9449 to book a tinnitus evaluation at either one. See the office pages for [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/). Patients also travel to us from [San Francisco](/areas-we-serve/san-francisco/), San Jose and the East Bay, and we have pages for [Peninsula](/tinnitus/peninsula-tinnitus/), [San Francisco](/tinnitus/san-francisco-tinnitus/), [San Jose](/tinnitus/san-jose-tinnitus/) and [East Bay](/tinnitus/east-bay-tinnitus/) tinnitus care. Every plan starts with a hearing evaluation and a conversation about how the sound affects your day."],
+    ["Therapies that help", "Depending on your profile, a plan may combine sound therapy, well-fit hearing aids, tinnitus retraining principles, sleep and stress strategies, and directive counseling. Our page on [tinnitus retraining therapy](/tinnitus/tinnitus-retraining-therapy/) explains one structured approach in detail."],
+    ["Sound sensitivity often travels with tinnitus", "Some people with tinnitus also notice that ordinary sounds feel uncomfortably loud, a condition called hyperacusis. If that describes you, our [hyperacusis section](/hyperacusis/) covers evaluation and desensitization, and there is a tinnitus-focused overview at [tinnitus and sound sensitivity](/tinnitus/hyperacusis/)."],
+    ["When tinnitus needs prompt medical care", "Most tinnitus is not dangerous, but sudden tinnitus with sudden hearing loss, tinnitus in only one ear, a pulsing sound that matches your heartbeat, or tinnitus with dizziness or neurological symptoms should be evaluated promptly. The NIDCD's page on [tinnitus and when to have it checked](https://www.nidcd.nih.gov/health/tinnitus) treats those patterns the same way."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus?", "/tinnitus/what-is-tinnitus/"],
+    ["Tinnitus retraining therapy", "/tinnitus/tinnitus-retraining-therapy/"],
+    ["What relief typically looks like", "/tinnitus/success-stories/"],
+    ["Support and peer resources", "/tinnitus/support-groups/"],
+    ["Why patients choose us", "/tinnitus/why-choose-us/"],
+    ["Sound sensitivity & hyperacusis", "/hyperacusis/"],
+    ["Tinnitus that changes with your neck", "/somatic-tinnitus-neck/"],
+    ["Pulsatile tinnitus and earwax", "/tinnitus/earwax/"]
+  ],
+  takeaways: [
+    "Tinnitus is a symptom with many causes, and it is far more manageable once it is properly evaluated and explained.",
+    "Effective plans usually combine hearing care, sound therapy, counseling, and lifestyle strategies rather than a single fix.",
+    "Certain patterns, especially sudden, one-sided, or pulsatile tinnitus, warrant prompt medical attention."
+  ],
+  faqs: [
+    ["Is there a tinnitus clinic near me in San Mateo or San Carlos?", "Yes. California Hearing Center evaluates and treats tinnitus at 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos. Call 650-342-9449 to book a tinnitus evaluation."],
+    ["Is tinnitus something I just have to live with?", "Not passively. While there is no universal cure, most people can substantially reduce how intrusive tinnitus feels through evidence-based management that improves sleep, lowers distress, and makes the sound fade into the background."],
+    ["Do I need a hearing test if my main concern is tinnitus?", "Yes, in nearly every case. Tinnitus is closely tied to hearing, and a current [hearing evaluation](/hearing-testing/) helps identify contributing factors and shapes which therapies are likely to help you."],
+    ["When should I treat tinnitus as urgent?", "Seek prompt medical care for tinnitus that begins suddenly, affects only one ear, pulses in time with your heartbeat, or comes with hearing loss, dizziness, or neurological symptoms."]
+  ],
+  image: "/assets/core/tinnitus.svg",
+  imageLabel: "Structured tinnitus care on the Peninsula"
+},

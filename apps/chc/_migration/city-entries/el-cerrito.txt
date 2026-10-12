@@ -1,0 +1,29 @@
+  "el-cerrito": {
+    name: "El Cerrito",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 45 minutes across the bay",
+    distanceTier: "far",
+    geo: { lat: 37.9161, lng: -122.3108 },
+    motif: "downtown",
+    lede:
+      "El Cerrito runs in a narrow band between the Berkeley hills and the bay, its life strung along San Pablo Avenue and the Ohlone Greenway. Our offices are on the Peninsula, about 45 minutes across the bay, so we're upfront that we're a destination practice for El Cerrito patients rather than the closest one.",
+    hook: [
+      "Between the hills and the bay",
+      "A day in El Cerrito moves through cafes, transit platforms, and busy avenues — a range of listening situations where a properly verified hearing aid earns its keep. Patients who want a careful, independent approach rather than a rushed chain-store fitting are the ones who seek us out. We center on [speech-in-noise testing](/hearing-testing/) and real-ear verification so devices perform where you actually struggle.",
+    ],
+    localScene: [
+      "The greenway and the avenue",
+      "El Cerrito centers on El Cerrito Plaza, the restored Cerrito Theater, the walking-and-biking Ohlone Greenway, the trails of the Hillside Natural Area, and the San Pablo Avenue corridor with its BART stops. It's a compact, transit-woven city full of everyday listening demands. We fit and verify hearing aids to hold up across those settings, and keep up the follow-up care that keeps them working.",
+    ],
+    whyHere:
+      "El Cerrito patients choose us for meticulous diagnostics, honest technology guidance, and dedicated [tinnitus care](/tinnitus/) including Lenire — with the continuity of the same audiologist each visit. We're clear that routine testing can be handled closer to home, and reserve the drive for the specialized work.",
+    landmarks:
+      "We're roughly 45 minutes from El Cerrito Plaza, the Cerrito Theater, and the Ohlone Greenway, crossing the bay to our San Mateo office.",
+    faqs: [
+      ["Why travel across the bay from El Cerrito?", "For routine care, a nearby provider is reasonable. Patients come to us for specialized tinnitus treatment, Lenire, second opinions, and difficult fittings — the depth of care worth the drive."],
+      ["What makes an independent practice different from a big-box store?", "We aren't tied to one manufacturer, so we recommend honestly and verify every fitting with real-ear measurement. You also see the same audiologist for follow-up rather than a rotating counter."],
+      ["Do you offer tinnitus treatment?", "Yes. Our practice is tinnitus-focused, including Lenire for suitable candidates. Call 650-342-9449 to ask whether it's a fit for you."],
+    ],
+  },

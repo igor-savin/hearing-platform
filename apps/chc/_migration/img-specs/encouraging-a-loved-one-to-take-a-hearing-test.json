@@ -1,0 +1,13 @@
+{
+  "slug": "encouraging-a-loved-one-to-take-a-hearing-test",
+  "hero": { "title": "Encouraging a Loved One", "icon": "people", "accent": "gold" },
+  "info": { "title": "How to Encourage a Hearing Test", "subtitle": "Five gentle steps from first concern to a booked appointment",
+    "rows": [
+      {"title": "Notice the signs", "desc": "Jot down specific, recent moments to point to"},
+      {"title": "Choose a calm moment", "desc": "Private, unhurried, not right after a mishear"},
+      {"title": "Lead with connection", "desc": "Say 'I miss talking with you,' not 'you can't hear'"},
+      {"title": "Make it easy", "desc": "Offer to book, drive, and sit in on the visit"},
+      {"title": "Book it together", "desc": "Pin down a real date so it stops being someday"}
+    ]
+  }
+}

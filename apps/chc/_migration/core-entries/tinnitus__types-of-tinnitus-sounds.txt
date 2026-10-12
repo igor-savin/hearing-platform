@@ -1,0 +1,38 @@
+"/tinnitus/types-of-tinnitus-sounds/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Types of Tinnitus Sounds: Ringing, Buzzing, Whooshing & More",
+  metaDescription: "Ringing, hissing, buzzing, clicking, roaring, whooshing. What each sound tends to point to, and which of them we want to look at promptly.",
+  intro: [
+    "Not all tinnitus sounds the same. Tinnitus is the perception of sound when no external sound is present, and while many people describe it as ringing, the reality is far more varied. Patients describe sharp high-pitched ringing or whistling, low rumbling or roaring, soft hissing or static, buzzing and electrical noises, pulsing that matches the heartbeat, and occasionally musical tones.",
+    "The specific quality of your tinnitus can give your audiologist important clues about possible causes and the most helpful treatment approach. That is why we ask detailed questions about what you hear at our [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/) offices.",
+    "Each sound is taken in turn below, with what it tends to point to and which ones are worth an appointment sooner rather than later. For the fundamentals, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["High-pitched ringing or whistling", "This is the most common type. People describe a constant or fluctuating high-pitched tone, a whistling or tea-kettle sound, or ringing that gets louder in quiet rooms. It is frequently associated with hearing loss from aging or noise exposure. When hearing loss is present, the brain receives less input in certain frequencies and may generate a phantom tone in those same regions, which is why [hearing aids that restore missing sound](/products/hearing-aids/) often help."],
+    ["Buzzing, humming, and electrical sounds", "Some people hear no pure tone at all, but rather a constant low or mid-pitched hum, an electrical buzzing like a power line or fluorescent light, or an engine idling in the distance. This can occur with noise exposure, machinery or engine noise, or [earwax and middle-ear issues](/services/earwax-removal/). Because these sounds are broad and fuzzy, many patients benefit from sound enrichment such as soft fan noise, gentle rain, or ocean waves."],
+    ["Hissing, static, and white-noise tinnitus", "Another very common description is hissing, static, or a gentle air-leak sound, like a shower running in the next room. Hissing tinnitus is frequently linked with [high-frequency hearing loss](/what-is-high-frequency-hearing-loss-and-what-can-i-do-about-it/), and many patients first notice it at bedtime when the house is quiet, in quiet offices, or after long days of listening effort. This type tends to blend well with soft background sound, which makes sleep strategies and sound enrichment especially useful."],
+    ["Roaring and low-frequency tinnitus", "Less commonly, tinnitus sounds like a low-frequency roar, rushing, or ocean noise, sometimes described as a deep rumble, sea-shell sound, or low vibration and pressure. This pattern can be associated with fluctuating inner-ear conditions such as Meniere's or with middle-ear fluid and pressure. Because roaring tinnitus can sometimes signal a medical condition, it is important to have a [hearing evaluation](/hearing-testing/) and, when appropriate, an ENT consultation."],
+    ["Pulsatile and somatic tinnitus", "Pulsatile tinnitus is a rhythmic whooshing, thumping, or swooshing that matches your heartbeat and changes when you turn your head or lie down; it is often related to blood flow near the ear and should be evaluated, so see our focused [pulsatile tinnitus page](/tinnitus/pulsatile/). Somatic tinnitus changes when you move your body, especially the jaw, neck, or eyes, and is commonly tied to TMJ disorders, neck tension, or posture, often responding best to a combination of musculoskeletal care and sound therapy."],
+    ["Musical and tonal tinnitus", "Musical tinnitus, sometimes called musical ear syndrome, is a rarer form in which people perceive melodies, songs, or repeating tunes rather than simple noise. Tonal tinnitus may present as one or more distinct tones at different pitches, or several tones like a chord. Musical tinnitus is more common in older adults with significant hearing loss and often improves with a combination of hearing care and counseling."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Pulsatile tinnitus", "/tinnitus/pulsatile/"],
+    ["TMJ and jaw-related tinnitus", "/tinnitus/tmj/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "High-pitched ringing is the most common tinnitus sound and is often tied to hearing loss.",
+    "The quality of the sound, ringing, hissing, roaring, or pulsing, gives clues to the likely cause.",
+    "Pulsatile tinnitus that beats with your heart should always be evaluated promptly."
+  ],
+  faqs: [
+    ["Does the type of sound tell you the cause?", "It offers clues. High-pitched ringing and hissing often accompany hearing loss, roaring can point to inner-ear or pressure changes, and pulsatile whooshing suggests a vascular source. We combine the sound description with a hearing test and history to narrow things down."],
+    ["I hear more than one kind of tinnitus, is that normal?", "Yes. Many people do not fit neatly into one category, hearing high-pitched ringing plus a low hum, or a steady tone with occasional pulsatile overlay. The sound can also change over time with stress, illness, or new medications."],
+    ["Which tinnitus sounds should be checked right away?", "Pulsatile tinnitus that beats with your heartbeat, and any new one-sided or roaring tinnitus, deserve prompt evaluation. See our guide on [when to see a doctor](/tinnitus/when-to-see-doctor/) for the full list of red flags."]
+  ],
+  image: "/assets/core/tinnitus__types-of-tinnitus-sounds.svg",
+  imageLabel: "Ringing, buzzing, hissing, whooshing"
+},

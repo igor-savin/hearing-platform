@@ -1,0 +1,30 @@
+  "st-helena": {
+    name: "St. Helena",
+    county: "Napa County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 90 minutes north in the Napa Valley",
+    distanceTier: "far",
+    geo: { lat: 38.5052, lng: -122.4703 },
+    lede:
+      "St. Helena sits upvalley in the heart of Napa, a small town of tree-lined Main Street storefronts surrounded by some of the most celebrated vineyards in the country. It is roughly ninety minutes north of the Peninsula, and there is no getting around it: our offices are down in San Mateo and San Carlos. The St. Helena patients who make the drive are the ones who want a specialist for care that matters to them.",
+    hook: [
+      "Reserving the trip for care that warrants it",
+      "For a routine hearing screening or an ordinary pair of hearing aids, an upvalley or Napa provider is the practical answer, and we would say so. The Peninsula drive earns its place with the difficult cases: tinnitus that has resisted treatment, Lenire, a fitting that never felt right, or a second opinion after a disappointing experience. St. Helena patients who come for that get a thorough evaluation and a plan built to keep the long drives infrequent.",
+    ],
+    motif: "wine",
+    localScene: [
+      "Upvalley Napa to the bay",
+      "St. Helena's rhythm runs along its historic Main Street, out to the wineries and stone cellars that line Highway 29, and up toward the vineyards near Calistoga. It is a real distance from the Peninsula, and for routine hearing needs we would send you to someone closer. For dedicated tinnitus treatment, Lenire, or a complex fitting, some St. Helena patients decide the specialist experience is worth the drive south, and we make sure the visit rewards it.",
+    ],
+    whyHere:
+      "St. Helena patients who choose us are typically after tinnitus and diagnostic expertise they could not find in the valley. We respect the ninety-minute distance by folding testing, treatment, and counseling into efficient visits and coordinating follow-up so the drive stays a rare event.",
+    landmarks:
+      "Patients travel south to our Peninsula offices from St. Helena's Main Street and the Highway 29 wineries, generally about ninety minutes down through the valley and Highway 101.",
+    faqs: [
+      ["Why drive ninety minutes when there are closer providers?", "For routine care, closer usually makes sense. St. Helena patients come to us mainly for specialized [tinnitus care](/tinnitus/), Lenire, and complex fittings, where the expertise justifies the trip, and we plan visits to reduce repeat drives."],
+      ["Do you offer Lenire tinnitus treatment?", "Yes. Lenire and comprehensive tinnitus management are among the main reasons patients travel to us from the Napa Valley, including St. Helena."],
+      ["Can you consolidate my care into fewer visits?", "Yes. For patients driving a distance we combine [testing](/hearing-testing/) and treatment where possible and set up follow-up so the drive is the exception, not the routine."],
+    ],
+    consolidatedInto: "napa-county",
+  },

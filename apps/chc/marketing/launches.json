@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "launches": {
+    "oticon-reveal": {
+      "name": "Oticon Reveal",
+      "launched": "2026-08-11",
+      "open": {
+        "price": {
+          "what": "US pricing at any technology level",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tiers": {
+          "what": "the technology tier structure",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "independent-lab": {
+          "what": "independent measurement (HearAdvisor or equivalent)",
+          "chase_after_days": 120,
+          "status": "open",
+          "resolved_on": null
+        },
+        "ip-rating": {
+          "what": "the IP dust and moisture rating",
+          "chase_after_days": 30,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "fitting-range": {
+          "what": "fitting range and receiver powers",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "styles": {
+          "what": "custom, BTE, instant-fit or CROS versions",
+          "chase_after_days": 180,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "tinnitus": {
+          "what": "whether the tinnitus programs carry over",
+          "chase_after_days": 30,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "tier-table": {
+          "what": "the confirmed US level-by-level specification table",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        }
+      }
+    },
+    "signia-max": {
+      "name": "Signia MaX",
+      "launched": "2026-08-24",
+      "open": {
+        "price": {
+          "what": "US pricing at any technology level",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tiers": {
+          "what": "the technology tier structure",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "independent-lab": {
+          "what": "independent measurement (HearAdvisor or equivalent)",
+          "chase_after_days": 120,
+          "status": "open",
+          "resolved_on": null
+        },
+        "ip-rating": {
+          "what": "the IP dust and moisture rating",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "fitting-range": {
+          "what": "fitting range and receiver powers",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "styles": {
+          "what": "custom, BTE, instant-fit or CROS versions",
+          "chase_after_days": 180,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tinnitus": {
+          "what": "whether the tinnitus programs carry over",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "auracast": {
+          "what": "whether the March 2027 Auracast firmware actually shipped",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "app-name": {
+          "what": "whether the app is called Signia One or Signia",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        }
+      }
+    },
+    "phonak-eon": {
+      "name": "Phonak EON",
+      "launched": "2026-08-24",
+      "open": {
+        "price": {
+          "what": "US pricing at any technology level",
+          "chase_after_days": 45,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tiers": {
+          "what": "the technology tier structure",
+          "chase_after_days": 45,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "independent-lab": {
+          "what": "independent measurement (HearAdvisor or equivalent)",
+          "chase_after_days": 120,
+          "status": "open",
+          "resolved_on": null
+        },
+        "ip-rating": {
+          "what": "the IP dust and moisture rating",
+          "chase_after_days": 30,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "fitting-range": {
+          "what": "fitting range and receiver powers",
+          "chase_after_days": 30,
+          "status": "resolved",
+          "resolved_on": "2026-08-24"
+        },
+        "styles": {
+          "what": "custom, BTE, instant-fit or CROS versions",
+          "chase_after_days": 180,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tinnitus": {
+          "what": "No EON launch material mentions tinnitus. Confirm Tinnitus Balance in Target 12.0 and update the hub, the blog post and the vs-MaX page",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "ip_rating": {
+          "what": "Phonak has not stated an IP rating in the EON launch materials \u2014 confirm from the product information sheet",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "product_image": {
+          "what": "EON pages use the generic /assets/phonak.webp. Swap in a real Aud\u00e9o EON Sphere render on a NEW path \u2014 never overwrite",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "tier_30": {
+          "what": "Phonak published levels 90/70/50 with Spheric Speech Clarity 3.0. Confirm whether a 30 level exists on EON and what it carries",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        },
+        "infinio_status": {
+          "what": "Phonak still catalogues Infinio Ultra alongside EON. Watch for a discontinuation notice and update the Infinio page if it comes",
+          "chase_after_days": 30,
+          "status": "open",
+          "resolved_on": null
+        }
+      }
+    }
+  }
+}

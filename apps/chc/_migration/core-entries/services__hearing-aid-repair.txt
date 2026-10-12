@@ -1,0 +1,34 @@
+"/services/hearing-aid-repair/": {
+  kicker: "Audiology Services",
+  headline: "Hearing Aid Repair & Servicing in San Mateo & San Carlos",
+  metaTitle: "Hearing Aid Repair Near Me: San Mateo & San Carlos",
+  metaDescription: "Hearing aid repair and service near you in San Mateo and San Carlos: cleaning, receivers, tubing, lab repairs and loaners. Call 650-342-9449.",
+  intro: [
+    "A hearing aid that has gone quiet, weak, scratchy, or full of feedback is not always broken. Many problems come down to wax, moisture, or a worn part, and a lot of them can be solved the same day in our office. A hearing aid you cannot rely on is frustrating and can feel almost worthless, and everyone deserves comfortable, functional devices, so California Hearing Center services hearing aids from most major manufacturers, whether or not the device was originally purchased here.",
+    "When a device fails, we start by diagnosing the real cause rather than guessing. A dead-sounding aid might have a clogged receiver, a spent battery contact, a torn wax guard, or moisture trapped inside. If you are hearing whistling, interference, or distortion, or the device simply needs a thorough cleaning, we sort that out quickly to get you hearing again and often save the cost of an unnecessary factory repair. We complete most simple repairs right in the office.",
+    "For issues that do need the manufacturer's lab, we handle the paperwork, warranty check, and shipping so you are not left to navigate it alone, and we can loan you a device while yours is away. A loaner will not be tuned to you as finely as your own aids, but it keeps you hearing until yours come back."
+  ],
+  sections: [
+    ["Hearing aid repair and service near you", "Looking for hearing aid service or repair near you? California Hearing Center has two Peninsula offices: 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos. Call 650-342-9449 to ask about service for your device. We service hearing aids from most major manufacturers. Devices bought elsewhere are serviced for a fee, and the cost depends on the brand, the model and the warranty. We do not promise a turnaround time on this page, because it depends on the problem and on whether the device has to go to the manufacturer. Ask us when you call."],
+    ["In-office repairs we handle", "Common fixes include [replacing wax guards and domes](/hearing-aid-replacement-intervals-domes-wax-guards-receivers/), retubing behind-the-ear devices, clearing clogged sound ports and receivers, swapping receivers, cleaning corroded battery contacts, and drying out moisture. Many visits end with a working device in hand the same day."],
+    ["Moisture damage", "Sweat, humidity, and rain are hard on the electronics inside a hearing aid. We can deep-dry devices with professional dehumidifiers and advise on daily drying habits and covers so it does not keep happening. Custom moisture guards such as sleeves are an option for active or heavy-sweat users."],
+    ["Feedback, interference, and distortion", "Whistling, buzzing, or a scratchy signal often points to a cracked tube, a loose receiver, a poor seal, or a failing component rather than a device that is truly finished. We track down the source and correct it, restoring clean, stable sound."],
+    ["Dead or distorted receivers", "The receiver is the tiny speaker that delivers sound into your ear, and it is one of the first parts to fail from wax and moisture. Replacing a receiver in a receiver-in-canal device is usually quick and far cheaper than a full lab repair."],
+    ["Retubing and earmold care", "On behind-the-ear aids, the clear tubing stiffens, yellows, and cracks over time, which changes the sound and can cause feedback. Fresh tubing and clean earmolds restore comfort and clarity."],
+    ["Warranties and lab repairs", "If your device is [still under manufacturer warranty](/hearing-aid-warranties-repair-loss-damage/), a covered repair may cost little or nothing. When a repair is beyond in-office work, we coordinate the send-out, provide a loaner, and keep you informed. Once repairs are done, we verify the fit and programming so the device performs the way it should, tying back into [hearing aid fitting](/hearing-aid-fitting/)."]
+  ],
+  bullets: ["Most major brands", "Same-day fixes", "Moisture drying", "Receiver replacement", "Retubing & earmolds", "Loaner while yours ships"],
+  takeaways: [
+    "Many 'dead' hearing aids are just clogged, damp, or due for a small part, and are fixable in-office.",
+    "We service most brands, including devices bought elsewhere.",
+    "For warranty or lab-level repairs we manage the process end to end and can loan you a device."
+  ],
+  faqs: [
+    ["Where can I get hearing aid service or repair near me?", "California Hearing Center services and repairs hearing aids for patients in San Mateo, San Carlos and nearby Peninsula communities. Our offices are at 88 N. San Mateo Drive and 1008 Laurel Street. Call 650-342-9449 to ask about your device."],
+    ["Do you repair hearing aids not purchased from you?", "Yes. We service devices from most major manufacturers regardless of where they were bought, though the specific repair and any charges depend on the brand, model, and warranty status."],
+    ["My hearing aid suddenly stopped working. What should I try first?", "Check the battery or charger, look for wax on the wax guard and receiver, and make sure the sound outlet is not blocked. If a fresh wax guard and clean device do not help, bring it in and we will diagnose it."],
+    ["Will I be without my hearing aids if you send them to the manufacturer?", "Usually not. When a device has to go to the lab, we can loan you a device to use in the meantime. It will not be tuned to you as precisely as your own, but it keeps you hearing until your repaired aids return."]
+  ],
+  image: "/assets/service-3.png",
+  imageLabel: "In-office hearing aid diagnostics and repair",
+},

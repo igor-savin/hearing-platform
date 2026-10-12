@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aids-and-insurance-in-california-medicare-medi-cal-and-private-plans-explained",
+  "hero": { "title": "Hearing Aid Insurance", "icon": "shield", "accent": "aqua" },
+  "info": { "title": "Who Covers Hearing Aids in California?", "subtitle": "How Medicare, Medi-Cal, and private plans compare",
+    "rows": [
+      {"title": "Original Medicare", "desc": "No coverage for hearing aids or fittings"},
+      {"title": "Medicare Advantage", "desc": "Some Part C plans add a hearing benefit"},
+      {"title": "Medi-Cal", "desc": "May cover eligible members; verify the limits"},
+      {"title": "Private plans", "desc": "Coverage varies; call member services"},
+      {"title": "No coverage?", "desc": "Financing and payment plans can help"}
+    ] }
+}

@@ -1,0 +1,29 @@
+"/about-us/giana-hatem/": {
+  kicker: "Meet the Team",
+  headline: "Giana Hatem, AuD",
+  intro: [
+    "Dr. Giana Hatem graduated from University of the Pacific with her Doctor of Audiology. She has specialized in adult diagnostic evaluations, pediatric diagnostic evaluations, tinnitus evaluations, and amplification device/hearing aid programming.",
+    "Dr. Hatem has a passion for helping others and strives to make improvement in patients' lives by addressing hearing loss, tinnitus, and communication-based needs."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Hatem is licensed in audiology and hearing device dispensing by the state of California. She also holds certification by the National Council of Certified Dementia Practitioners as a Certified Dementia Practitioner. She completed her B.A. in Speech and Hearing at Cleveland State University in Cleveland, Ohio, and her Au.D. at the University of the Pacific in San Francisco, California. Her research includes Spectral Analysis of Arabic Speech Sounds and Normative Values for Repeat-Recall Test (RRT) in Young Native English Speakers."],
+    ["Focus & approach", "Dr. Hatem is a first generation American and is fluent in Lebanese Arabic. She is a San Mateo local and is excited to once again call the area home. She also enjoys being outdoors, hiking, and photography."]
+  ],
+  bullets: [
+    "Adult and pediatric diagnostic evaluations",
+    "Tinnitus evaluations",
+    "Hearing aid programming and amplification",
+    "Certified Dementia Practitioner",
+    "Fluent in Lebanese Arabic"
+  ],
+  takeaways: [
+    "Doctor of Audiology from University of the Pacific, licensed in California for audiology and hearing device dispensing.",
+    "First generation American, fluent in Lebanese Arabic, and a Certified Dementia Practitioner."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Hatem?", "Call 650-342-9449 to request an appointment with [our audiology team](/about-us/)."]
+  ],
+  image: "/assets/team/dr-giana-hatem-audiologist-san-mateo.jpg",
+  imageLabel: "Giana Hatem, AuD",
+  imageAlt: "Dr. Giana Hatem, audiologist at California Hearing Center",
+},

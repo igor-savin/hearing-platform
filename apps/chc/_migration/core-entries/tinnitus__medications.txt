@@ -1,0 +1,37 @@
+"/tinnitus/medications/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Medications That Cause Tinnitus (Ototoxic Drugs)",
+  intro: [
+    "Some prescription and over-the-counter medications can cause or worsen tinnitus. That does not mean you should stop taking them, but it does mean that ringing in the ears is a side effect worth discussing with your care team.",
+    "Drugs that can affect the ears are called ototoxic, meaning they may harm the cochlea (hearing) or the vestibular system (balance). In some people they lead to tinnitus, hearing changes, or a sense of imbalance, though not everyone who takes them is affected, and often the benefits of the drug clearly outweigh the risks.",
+    "This page from our San Mateo and San Carlos audiologists explains what ototoxic means, which categories of medication are commonly associated with tinnitus, and how to protect your hearing. It is educational only and is not medical advice, never stop, start, or change a prescription without talking to the clinician who prescribed it. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How medications can trigger or worsen tinnitus", "Medications influence tinnitus in several ways. Some have direct effects on the tiny hair cells of the inner ear. Others change blood flow to the ear, altering how the auditory nerve functions. Some act on the brain or nerves and change how sound signals are processed. And in people who already have hearing loss, certain drugs can make existing tinnitus more noticeable."],
+    ["Common categories linked to tinnitus", "Many medications have been associated with tinnitus in the audiology literature. Broad categories often discussed include high doses of aspirin and certain NSAIDs, some strong antibiotics (especially aminoglycosides, used for serious infections), certain chemotherapy agents, some loop diuretics and heart medications, and, in some reports, particular antidepressants and anti-anxiety medications. Blood pressure and cholesterol drugs appear in some cases too. Your physician or pharmacist is the best source for medication-specific information."],
+    ["Temporary versus permanent effects", "A common question is whether drug-related tinnitus will fade once the medication stops. It depends on the specific drug and dose, how long you took it, other risk factors such as age and noise exposure, and whether you had tinnitus or hearing loss beforehand. Ringing may improve or disappear after the drug is stopped or adjusted, remain but become less noticeable as the brain adapts, or persist, especially when inner-ear damage or existing hearing loss is present."],
+    ["When to call your doctor", "Contact your prescribing clinician promptly if you notice new tinnitus soon after a medication change, sudden or rapidly worsening ringing in one or both ears, new hearing loss, dizziness or balance changes, or a significant impact on sleep, mood, or daily function. These do not automatically mean the medication must stop, but they warrant a conversation about whether tinnitus is a known side effect and whether a dose change or alternative is appropriate."],
+    ["Why you should not stop on your own", "Some medications must be tapered slowly to avoid withdrawal or rebound effects, and suddenly stopping heart, blood pressure, seizure, or psychiatric drugs can be dangerous. Your doctor may have chosen a medication precisely because its benefits outweigh known risks. The safest approach is to note your symptoms, contact your prescriber, ask whether tinnitus is a recognized side effect, and consider a baseline hearing test to monitor any changes."],
+    ["How audiologists help", "At California Hearing Center we frequently support patients starting or taking potentially ototoxic medications, especially during cancer treatment or complex care. We establish a baseline with a [hearing test](/hearing-testing/), monitor for measurable changes over time, document your tinnitus, and, with your permission, share results with your oncologist, cardiologist, or primary-care doctor. We also help you explore [sound therapy and coping tools](/services/tinnitus-therapy/) whether or not a medication is changed."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["What causes tinnitus", "/tinnitus/causes/"],
+    ["Can tinnitus go away?", "/tinnitus/can-tinnitus-go-away/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Ototoxic drugs can affect the inner ear and trigger or worsen tinnitus, but not everyone is affected.",
+    "Categories often linked to tinnitus include high-dose aspirin/NSAIDs, some antibiotics, certain chemo drugs, and some diuretics.",
+    "Never stop a prescribed medication on your own, talk to your prescriber and consider a baseline hearing test."
+  ],
+  faqs: [
+    ["Which medications are most likely to cause tinnitus?", "High doses of aspirin and some NSAIDs, certain strong antibiotics (aminoglycosides), some chemotherapy agents, and certain loop diuretics are among the categories most often associated with tinnitus. Effects vary widely from person to person."],
+    ["Will the tinnitus go away if I stop the drug?", "Sometimes. Aspirin-related tinnitus, for example, is often reversible when the dose is lowered under medical guidance. Other cases may persist, particularly when inner-ear damage or pre-existing hearing loss is involved. Never adjust a prescription without your doctor."],
+    ["Should I get my hearing checked before starting an ototoxic medication?", "Yes, when practical. A baseline [hearing test](/hearing-testing/) before or early in treatment lets us monitor for changes and coordinate with your medical team. Call us at 650-342-9449 to arrange baseline and follow-up testing."]
+  ],
+  image: "/assets/core/tinnitus__medications.svg",
+  imageLabel: "When medications ring in your ears"
+},

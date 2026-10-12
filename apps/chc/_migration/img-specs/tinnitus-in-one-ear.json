@@ -1,0 +1,12 @@
+{
+  "slug": "tinnitus-in-one-ear",
+  "hero": { "title": "Tinnitus in One Ear", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Why One Ear Rings", "subtitle": "Common causes and when to seek prompt care",
+    "rows": [
+      {"title": "Earwax buildup", "desc": "A wax plug on one eardrum can trigger ringing"},
+      {"title": "Ear infection or fluid", "desc": "Infection or fluid behind one eardrum"},
+      {"title": "One-sided noise", "desc": "A loud blast that hit one ear harder"},
+      {"title": "Nerve-related causes", "desc": "One-sided ringing with hearing loss needs a look"},
+      {"title": "Red flags", "desc": "Sudden onset, dizziness, or pain — seek care now"}
+    ] }
+}

@@ -1,0 +1,38 @@
+"/tinnitus/exercises/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Relief Exercises: Gentle Movement to Calm the Ringing",
+  intro: [
+    "Gentle movement and relaxation exercises cannot erase tinnitus, but they can calm your nervous system, reduce tension around the ears and jaw, and make the sound easier to live with. Even a few minutes a day can help, especially over time.",
+    "Tinnitus is generated in the auditory system and brain, but the rest of your body plays a major role in how it feels. Exercises help by reducing muscle tension, lowering stress, improving circulation to the head and ears, supporting better posture and breathing, and helping your brain shift attention away from the sound.",
+    "This guide comes from the audiologists at California Hearing Center in [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/). These ideas work best alongside a broader plan, so consider exploring our [tinnitus therapy program](/services/tinnitus-therapy/) and the wider [tinnitus hub](/tinnitus/) as well."
+  ],
+  sections: [
+    ["Before you start: safety first", "These exercises are general suggestions and do not replace medical advice. Stop immediately if you feel pain, dizziness, or worsening symptoms, and skip any movement that does not feel safe for your body. Talk with your physician first if you have neck, jaw, spine, heart, or balance issues, and seek emergency care for sudden hearing loss, severe vertigo, or neurologic symptoms."],
+    ["Relaxation and breathing", "Calming your nervous system is one of the most powerful exercises you can do for tinnitus. Try slow belly breathing with slightly longer exhales than inhales, for example four seconds in and six seconds out, for three to five minutes. Progressive muscle relaxation, gently tensing and releasing each muscle group from your feet upward, pairs well with sound therapy. A simple body scan before bed can help you notice and soften areas of tension."],
+    ["Gentle neck and shoulder exercises", "Many people hold tension in the neck and shoulders, especially with long hours at computers or on phones, and in some cases this tension can make tinnitus feel more intrusive. A posture check, slow shoulder rolls, and gentle neck range-of-motion movements can all help. Keep everything smooth and comfortable, and stop if you feel pain, dizziness, or strong pulling. If your tinnitus started after a neck injury or changes when you move your neck, mention that at your appointment, and read our page on [somatic tinnitus and neck exercises](/somatic-tinnitus-neck/)."],
+    ["Jaw and TMJ-friendly exercises", "For some people, tinnitus is linked to the jaw joint. If your tinnitus changes when you move your jaw, clench, or chew, notice whether your teeth are touching during the day; ideally they rest slightly apart with lips together. Practice small, comfortable jaw movements without forcing, and stop for any pain, clicking, or locking. Because the neck and jaw are closely connected, pairing light jaw awareness with the neck exercises above often helps."],
+    ["Balance and body awareness", "Some people with tinnitus also experience imbalance, especially with inner-ear conditions like Meniere's disease. If you have significant dizziness or a history of falls, check with your physician first. Grounding through your feet near a sturdy surface and slow, mindful walking, paying attention to each step rather than the tinnitus, can help train your brain to focus outward instead of inward."],
+    ["Building a simple daily routine", "You do not need to do every exercise on this page. Start small: a brief posture check and a minute of belly breathing in the morning, a short walk and body scan midday, and progressive muscle relaxation or gentle stretching as part of your evening wind-down. Pairing movement with gentle background sound and a consistent bedtime routine tends to work better than pushing hard once in a while."]
+  ],
+  bulletLinks: [
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Lifestyle and diet tips", "/tinnitus/diet-lifestyle/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "Exercises do not cure tinnitus, but they reduce tension, improve circulation, and calm the nervous system so the sound feels less intrusive.",
+    "Short, consistent practice a few minutes a day works better than occasional intense sessions.",
+    "Tinnitus that changes with jaw or neck movement is an important clue worth mentioning to your care team."
+  ],
+  faqs: [
+    ["Can exercises really reduce my tinnitus?", "Exercises alone do not cure tinnitus, but they can make it less intrusive by reducing tension, improving blood flow, and calming the nervous system. The best results usually come from combining exercises with sound therapy, [hearing technology](/products/hearing-aids/), and counseling."],
+    ["My tinnitus changes when I move my jaw or head. Is that normal?", "Tinnitus that changes with head or jaw movement may have a somatic or TMJ component. This is a useful clue for your care team, and you may benefit from coordinated care with a TMJ specialist or physical therapist."],
+    ["How often should I do these exercises?", "Many people benefit from short, consistent practice, just a few minutes one to three times per day. It is better to do a small amount regularly than to push too hard occasionally."],
+    ["Do I need special equipment?", "No. Most tinnitus-friendly exercises use only your body, a chair, and a quiet space. If you use hearing aids or sound therapy devices, you can combine your exercises with them."]
+  ],
+  image: "/assets/core/tinnitus__exercises.svg",
+  imageLabel: "Gentle movement and relaxation for tinnitus relief"
+},

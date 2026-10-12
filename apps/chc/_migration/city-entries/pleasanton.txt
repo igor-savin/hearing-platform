@@ -1,0 +1,30 @@
+  "pleasanton": {
+    name: "Pleasanton",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 45 minutes east via the bridges",
+    distanceTier: "far",
+    geo: { lat: 37.6624, lng: -121.8747 },
+    lede:
+      "Pleasanton is a polished Tri-Valley city known for its walkable historic downtown, top-rated schools, and affluent, family-oriented neighborhoods. It sits well inland, so honesty is due: our offices are over on the Peninsula, a good drive west through the bridges. Pleasanton residents who come to us are typically after specialized tinnitus or complex hearing care rather than the nearest appointment.",
+    hook: [
+      "Discreet, unhurried care for an active community",
+      "Pleasanton residents tend to lead full, active lives — professional careers, wineries and golf, downtown dinners on Main Street — and want hearing that keeps pace while staying discreet. Modern near-invisible hearing aids can deliver both, but the result depends on expert fitting and verification, not the device alone. For that unhurried, private approach, or for stubborn [tinnitus care](/tinnitus/), some Pleasanton patients make the drive west; for routine needs a Tri-Valley provider may suit better.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A historic downtown and leafy neighborhoods",
+      "Pleasanton centers on its charming Main Street, with the Alameda County Fairgrounds nearby, the wineries of the Livermore Valley just east, and residential enclaves like Ruby Hill and the neighborhoods around the golf clubs. It is an affluent, community-minded city where an active social calendar puts a premium on clear conversation in restaurants, clubs, and gatherings. Those who seek us out want technology matched honestly to that lifestyle.",
+    ],
+    whyHere:
+      "Pleasanton patients choose California Hearing Center for meticulous testing, premium technology fitted to genuine need rather than a sales quota, and a real specialty in tinnitus and Lenire. Many first came for tinnitus and stayed for the continuity of seeing the same audiologist, which they find worth the longer drive.",
+    landmarks:
+      "From Main Street, the Fairgrounds, or the Ruby Hill area, our San Mateo office is roughly 45 minutes west through the bridges.",
+    faqs: [
+      ["Why travel from Pleasanton for hearing care?", "For routine testing, a Tri-Valley audiologist is often more convenient. Pleasanton patients come to us for specialized tinnitus treatment, Lenire, and discreet, expertly verified fittings where the specialization justifies the trip."],
+      ["Can you fit truly discreet hearing aids?", "Yes. We fit several invisible and near-invisible styles, choosing the right one for your ear anatomy and hearing needs, then verifying performance with real-ear measurement so discretion never costs you clarity."],
+      ["How far is your office from Pleasanton?", "Roughly 45 minutes west via the bridges to San Mateo. We group testing and follow-up where possible so the drive accomplishes more each visit."],
+    ],
+    consolidatedInto: "alameda-county",
+  },

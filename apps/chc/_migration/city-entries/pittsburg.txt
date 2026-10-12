@@ -1,0 +1,30 @@
+  "pittsburg": {
+    name: "Pittsburg",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 65 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.0280, lng: -121.8847 },
+    motif: "bayside",
+    lede:
+      "Pittsburg has long been a working waterfront city, from its steel-mill days to the marina and power plants along the New York Slough. It sits at the far northeast reach of the county, about 65 minutes from our Peninsula offices — so for Pittsburg patients we're a specialist destination rather than a quick local visit.",
+    hook: [
+      "A steel town's noise, years later",
+      "Generations of Pittsburg work happened around loud machinery — the Columbia Steel mill, the docks, the power plants along the water. That kind of sustained industrial and trade noise can contribute to hearing loss and ringing in the ears over time. For anyone with that history, we offer thorough diagnostic [testing](/hearing-testing/) and, for those still on the job, custom-molded hearing protection — plus the tinnitus care that's harder to find out this far east.",
+    ],
+    localScene: [
+      "Old Town and the waterfront",
+      "Pittsburg centers on the Railroad Avenue storefronts of Old Town, the marina and boardwalk on the New York Slough, the restored California Theatre, and the neighborhoods spreading toward Los Medanos. It's a city with deep industrial roots, which means a lot of residents carry years of workplace noise exposure. We put that front and center — baseline testing to catch changes early, and protection for people still working around loud equipment.",
+    ],
+    whyHere:
+      "Pittsburg patients who travel to us are typically after specialized help: a careful evaluation, custom hearing protection, or focused [tinnitus care](/tinnitus/) including Lenire. We're straightforward that routine testing can be handled closer to home, and save the longer trip for the complex work.",
+    landmarks:
+      "We're roughly 65 minutes from Old Town Pittsburg, the marina, and the California Theatre, driving west across the East Bay to our San Mateo office.",
+    faqs: [
+      ["I spent years in the mills and around loud equipment — is testing worthwhile?", "Yes. Long-term industrial noise can gradually contribute to hearing loss and tinnitus. A baseline evaluation tells you where you stand and gives a reference point for the future."],
+      ["Do you fit hearing protection for people still working?", "We do. Custom-molded protection seals better and is more comfortable for all-day wear than generic plugs, which matters for workers around ongoing noise."],
+      ["Why travel all the way to the Peninsula from Pittsburg?", "For routine care, a nearer provider may be the practical choice. Patients come to us for specialized tinnitus treatment, Lenire, and difficult fittings — care worth the drive."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

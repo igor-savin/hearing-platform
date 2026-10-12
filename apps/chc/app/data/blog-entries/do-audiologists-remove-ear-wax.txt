@@ -1,0 +1,38 @@
+  "/do-audiologists-remove-ear-wax/": {
+    kicker: "Earwax & Ear Care",
+    headline: "Do Audiologists Remove Earwax?",
+    variant: "condition",
+    datePublished: "2025-08-12",
+    dateModified: "2026-08-25",
+    metaDescription:
+      "Yes, audiologists safely remove earwax when it builds up. See how professional removal compares with at-home methods, and when a stubborn blockage needs care.",
+    intro: [
+      "Rinsing your ears in the shower and clearing a true blockage are two very different jobs. One you can manage yourself at the sink; the other is worth leaving to a professional. So yes, audiologists remove earwax, and [earwax removal](/services/earwax-removal/) is a routine part of what we do at our San Mateo and San Carlos offices.",
+      "Earwax is not dirt. It traps dust, guards the ear canal, and in most people works its way out on its own without any help. Trouble starts when it gets pushed back in or simply builds faster than it clears. Cotton swabs are a common culprit, since they tend to pack wax deeper rather than pull it out.",
+      "When wax does pack in, it can dull your hearing, plug the ear with a full feeling, or set off a low ring. It can also throw off a [hearing test](/hearing-testing/) or clog up a hearing aid. Getting it cleared safely is quick, and it often makes the difference between guessing at a hearing problem and actually measuring it.",
+    ],
+    takeaways: [
+      "Audiologists routinely and safely remove earwax, including stubborn, impacted buildup.",
+      "Ears usually clean themselves; cotton swabs often push wax deeper and cause blockages.",
+      "Clearing wax sharpens hearing, protects hearing aids, and lets a hearing test read accurately.",
+    ],
+    sections: [
+      ["How we clear stubborn wax", "When buildup is genuinely stuck, we reach for tools built for the job. Under a bright light and magnification, an audiologist can lift wax out with a small curette, soften and flush it with gentle warm-water irrigation, or draw it out with microsuction, a low-noise vacuum. The method depends on how firm the wax is and the shape of your ear canal. Because we can see what we are doing the whole time, [earwax removal](/services/earwax-removal/) in the clinic avoids the guesswork of poking around blind at home."],
+      ["Doing it yourself, or letting a clinician", "Plenty of blockages loosen with a few days of over-the-counter drops, and for mild buildup that is a reasonable first try. The trade-off is control. At home you cannot see the canal, so it is easy to push wax tighter or irritate the skin, and irrigation kits are risky if you have ever had a perforated eardrum or ear surgery. Routine home cleaning of an ear that did not need it is also the usual explanation for [why over-cleaning leaves ears dry](/understanding-and-treating-dry-ears-causes-symptoms-and-solutions/) and itchy. In the clinic, a clinician watches the whole process and stops the moment anything looks off. For a one-time soft plug, drops may be all you need; for wax that keeps returning or will not budge, professional removal is the safer bet."],
+      ["Signs a blockage has set in", "Impacted wax rarely stays quiet. You might notice sound going muffled in one ear, a plugged or full sensation, a mild ache, or a faint ringing that was not there before. Some people feel briefly off-balance. A few warning signs mean you should skip the drops and call us: sharp pain, drainage or bleeding, or hearing that drops suddenly. Those can point to something beyond wax, and a [hearing evaluation](/hearing-testing/) helps sort out what is really going on."],
+      ["Earwax and your hearing aids", "If you wear hearing aids, wax deserves a little extra attention. Devices sit right at the canal opening, so they can nudge wax inward, and wax works its way into receivers and filters where it muffles the output or stops a device cold. Keeping the canal clear protects both your hearing and your investment. When a device does clog, [hearing aid repair](/services/hearing-aid-repair/) is often a simple filter swap, and staying on top of wax means fewer trips in for it. It is also worth clearing before you shop for new [hearing aids](/products/hearing-aids/), so the fitting reads your ears accurately."],
+      ["Booking a cleaning with our team", "A cleaning visit is short and low-stress. We look in first, choose the gentlest method that will work, and talk you through each step. If wax turns out not to be the whole story, we can move straight into checking your hearing while you are here. You can [meet our audiologists](/about-us/) beforehand or simply reach out to [schedule an appointment](/contact/); either way, you leave hearing more clearly than you came in."],
+    ],
+    bullets: ["Cerumen protects the ear", "Skip the cotton swabs", "Microsuction & irrigation", "Cleared under magnification", "Protects your hearing aids", "Fast relief from fullness"],
+    faqs: [
+      ["Is it safe to remove earwax at home?", "For a small, soft amount, gentle over-the-counter drops are usually fine. The trouble comes with cotton swabs, ear candles, or rigid tools, which tend to pack wax deeper or scratch the canal. If a plug will not clear after a few days of drops, that is the point to let a professional take a look."],
+      ["Does professional earwax removal hurt?", "Usually it is more odd than painful. Irrigation brings a feeling of pressure and cool water, and microsuction sounds loud up close but works fast. We move slowly and stop the moment anything bothers you, so speak up and we will adjust."],
+      ["How often do ears need cleaning?", "There is no fixed schedule, because production varies a lot from person to person. Many people never need help, while others build wax quickly or wear hearing aids that hold it in. If you notice fullness or fading sound every few months, a regular check makes sense."],
+      ["Can earwax really affect a hearing test?", "It can. A canal packed with wax blocks sound on its way in, which can make hearing look worse than it truly is. That is why we clear any blockage first, so your hearing test measures your actual hearing rather than the wax in the way."],
+    ],
+    image: "/assets/blog/do-audiologists-remove-ear-wax-1.svg",
+    imageLabel: "Safe, professional earwax removal, start to finish",
+    image2: "/assets/blog/do-audiologists-remove-ear-wax-2.svg",
+    image2Label: "How clinical removal compares with cleaning at home",
+    image2Caption: "For a soft, one-time plug, drops may be enough; for stubborn wax, professional removal is the safer route.",
+  },

@@ -1,0 +1,30 @@
+  "monte-sereno": {
+    name: "Monte Sereno",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 42 minutes from our San Carlos office",
+    distanceTier: "far",
+    geo: { lat: 37.2361, lng: -121.9922 },
+    lede:
+      "Monte Sereno is one of the Bay Area's smallest, quietest cities — almost entirely residential, with wooded lots and no commercial district, tucked between Los Gatos and Saratoga. Its residents already drive elsewhere for nearly every errand, so the roughly 42-minute trip north to our Peninsula offices is simply a longer version of a familiar habit.",
+    hook: [
+      "Private, unhurried care and technology that disappears",
+      "For Monte Sereno patients, discretion and unhurried attention usually matter as much as the hearing itself. They want devices that stay invisible and appointments that never feel rushed, and both depend on expert fitting rather than the hardware alone. We take the time to program, verify, and fine-tune privately, tailoring each device to how you actually live — and for those who travel to us, that depth of care is the point of the drive.",
+    ],
+    motif: "estate",
+    localScene: [
+      "A hidden residential enclave between two towns",
+      "Monte Sereno has no downtown by design — just secluded homes along roads like Via Sereno and Winden Drive, wrapped in oak and set between the villages of Los Gatos and Saratoga, with the creek and foothill trails a short way off. Residents are long accustomed to traveling for services of every kind. Those who choose us are typically seeking specialized help — complex tinnitus, a difficult fitting, a careful reassessment — and for routine needs, somewhere nearer may serve just as well.",
+    ],
+    whyHere:
+      "Monte Sereno patients come to us for expertise and privacy rather than convenience: meticulous verified fittings, honest counsel on technology, and specialized [tinnitus care](/tinnitus/) including Lenire. Many first made the trip for a problem that had gone unsolved closer to home.",
+    landmarks:
+      "We are about 42 minutes from Monte Sereno's residential lanes and the neighboring villages of Los Gatos and Saratoga, north via the 280 to our San Carlos office.",
+    faqs: [
+      ["Why travel this far when I could go local?", "For everyday maintenance, local is easier and we will say so. Patients travel to us for specialized care — persistent tinnitus, tricky fittings, Lenire, or a thorough second opinion — where our focus makes the distance worthwhile."],
+      ["Can you keep everything private and unrushed?", "Yes. We keep visits confidential and unhurried and fit discreet, near-invisible devices, which is a large part of why patients from quiet communities like Monte Sereno choose us."],
+      ["How far is your office from Monte Sereno?", "About 42 minutes north on the 280 to San Carlos. Call 650-342-9449 and we will plan one efficient, comprehensive visit."],
+    ],
+    consolidatedInto: "santa-clara-county",
+  },

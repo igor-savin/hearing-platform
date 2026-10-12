@@ -1,0 +1,13 @@
+{
+  "slug": "connection-between-kidney-disease-and-hearing-loss",
+  "hero": { "title": "Kidneys and Hearing", "icon": "ear", "accent": "gold" },
+  "info": { "title": "How Kidney Disease Touches Your Hearing", "subtitle": "Shared biology and shared risks link the two",
+    "rows": [
+      {"title": "Shared anatomy", "desc": "Inner ear and kidney both rely on fluid balance"},
+      {"title": "Diabetes link", "desc": "High blood sugar harms ears and kidneys alike"},
+      {"title": "Blood pressure", "desc": "Hypertension strains both organs' blood vessels"},
+      {"title": "Ototoxic medications", "desc": "Some kidney and dialysis drugs affect hearing"},
+      {"title": "Get a baseline test", "desc": "A hearing check spots changes early"}
+    ]
+  }
+}

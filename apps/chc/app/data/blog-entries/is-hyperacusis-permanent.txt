@@ -1,0 +1,49 @@
+  "/is-hyperacusis-permanent/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Tinnitus & Sound Sensitivity",
+    headline: "Is Hyperacusis Permanent? Outlook and Recovery",
+    metaTitle: "Is Hyperacusis Permanent? Outlook and Recovery",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "Is hyperacusis permanent? There is no cure, but many people improve. See what recovery looks like, why pain hyperacusis is slower, and when to get help.",
+    intro: [
+      "Hyperacusis is not always permanent, but it is not something that reliably goes away on its own either. Cleveland Clinic says there is no cure, but that symptoms may improve over time depending on the cause. For many people it is a long-term condition that they learn to manage with treatment. Cleveland Clinic cites research showing that sound therapy often increases sound tolerance within six months to a year. Recovery is slower and less predictable when sounds cause pain.",
+      "This page covers the outlook and what recovery can look like. It does not repeat how to cope day to day. For that, read our page on [coping with hyperacusis](/hyperacusis/coping/). For the basics, start with our [hyperacusis overview](/hyperacusis/).",
+    ],
+    takeaways: [
+      "There is no cure, but symptoms often improve. The outlook depends on the cause, and Cleveland Clinic says it varies from person to person.",
+      "Sound therapy often raises sound tolerance within six months to a year, according to research Cleveland Clinic cites.",
+      "Pain hyperacusis (sound that hurts) tends to improve slowly. An American Tinnitus Association article describes months and years, with setbacks after further noise injury.",
+      "Hyperacusis is not described as physically dangerous, but it can hurt mood, sleep and social life. Get help if everyday sounds feel unbearable.",
+    ],
+    sections: [
+      ["Is hyperacusis permanent?", "The honest answer is that it depends. Cleveland Clinic says there isn't a cure, but that depending on the cause, your symptoms may improve in time. Some causes can end. Cleveland Clinic says hyperacusis after surgery may resolve once you heal, that it may improve if a medication side effect is addressed, and that it may improve if Meniere's disease goes into remission. Other causes, such as long noise exposure, a sudden loud noise like a gunshot or fireworks, or damage to hearing structures, may leave the sensitivity in place for a long time. Even then, many people find that it becomes much easier to live with."],
+      ["What recovery can look like", "Recovery is usually gradual. It tends to come as a slow rise in the sound level you can comfortably handle, not as a sudden end to the problem. Cleveland Clinic says sound therapy involves gradual, safe exposure to louder sounds, starting at a comfortable low level, and that research suggests sound tolerance often rises within six months to a year. It also describes cognitive behavioral therapy (CBT), which helps with the negative feelings tied to loud sounds, and says research shows it improves loudness discomfort levels in adults. Ask your clinician what timeline fits your case. We cannot promise one."],
+      ["Pain hyperacusis: a slower road", "Cleveland Clinic describes pain hyperacusis as one type of hyperacusis, where extreme sound sensitivity makes the ears and head hurt, and it notes that experts disagree on whether the types are separate or lie on a spectrum. An American Tinnitus Association article on pain hyperacusis, written by a person living with it, says that there is no objective test, that improvement can be very slow over months and years, and that some people improve and then relapse after a setback from further noise injury. The same article says many providers are unfamiliar with pain hyperacusis, and that patients should seek an accurate diagnosis. Treatment advice is not settled. The article's author reports that a sound therapy approach left him worse. Cleveland Clinic supports gradual sound exposure. That mismatch is a reason to work with a clinician who knows the condition and to go slowly."],
+      ["Is hyperacusis dangerous?", "Cleveland Clinic does not describe hyperacusis as physically dangerous. It stresses the effects on mental health and social life, such as anxiety, depression and isolation. It notes that in intense cases, the loudness can cause balance problems or seizures. Do not let that scare you. It is a reason to seek care, not to avoid every sound. If everyday noises feel unbearably loud or painful, Cleveland Clinic advises seeing a healthcare provider and not trying to manage it alone."],
+      ["What can slow recovery", "Cleveland Clinic warns that using earplugs or headphones to block out sound can make things worse, because sounds may feel even more intense when you take them out. It also warns that avoiding social settings can lead to or worsen anxiety, depression and other problems. Cleveland Clinic also lists some medicines that harm the inner ear as a risk factor, so tell your prescriber if your sensitivity began after a new medicine. Protect your ears from truly loud noise, such as a gunshot, a siren or a loud show. Use protection on purpose, not all day. Our page on [custom earplugs](/custom-earplugs/) explains why we ask sound-sensitive patients to talk to us first."],
+      ["What a clinician can do", "A hearing evaluation looks for hearing loss and other ear causes that need different care. Cleveland Clinic lists sound therapy, CBT and tinnitus retraining therapy among the treatments, and surgery in the rare case of facial nerve paralysis. Our team starts with a [hearing evaluation](/hearing-testing/) and a plan that pairs education, counseling and gradual sound enrichment. If tinnitus is part of your picture, read our page on the [overlap between hyperacusis and tinnitus](/hyperacusis/tinnitus/). For red flags that need quick care, read [when to seek help for hyperacusis](/hyperacusis/when-to-seek-help/)."],
+      ["When to get help now", "Sudden hearing loss, severe vertigo, new weakness or numbness, or a sudden change after a head injury calls for urgent care. The National Institute on Deafness and Other Communication Disorders (NIDCD) says to treat sudden hearing loss as a medical emergency. Outside of emergencies, book a visit if sounds hurt, if you have started avoiding work, family or sleep because of noise, or if you feel your mood dropping."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cleveland Clinic: Hyperacusis](https://my.clevelandclinic.org/health/diseases/24320-hyperacusis), [American Tinnitus Association: When Sound Hurts, the Reality of Pain Hyperacusis](https://www.ata.org/when-sound-hurts/) and [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness). The American Tinnitus Association article is one patient's account and not a clinical study. We could not open the ASHA research articles on hyperacusis therapy in time to cite them."],
+      ["Medical information notice", "This page is for general information and is not medical advice. To book a hearing evaluation, call 650-342-9449 at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+    ],
+    bullets: ["No cure, often improves", "Sound therapy", "CBT", "Pain type is slower", "Avoid overusing plugs", "Get help early"],
+    faqs: [
+      ["Is hyperacusis permanent?", "It can be long term, but many people improve. Cleveland Clinic says there is no cure, but that depending on the cause, symptoms may improve in time. Some causes, such as a medicine side effect or recovery after surgery, can resolve."],
+      ["How long does it take to recover from hyperacusis?", "Cleveland Clinic cites research showing sound therapy often increases sound tolerance within six months to a year. Pain hyperacusis can take longer. Timelines vary and we cannot promise one."],
+      ["Is pain hyperacusis permanent?", "There is no clear answer. An American Tinnitus Association article describes improvement as very slow, over months and years, with relapses after noise setbacks. See a clinician who knows the condition."],
+      ["Is hyperacusis dangerous?", "Cleveland Clinic does not call it physically dangerous. It can hurt mood, sleep and social life, and in intense cases it notes balance problems or seizures. Get care if sounds feel unbearable."],
+      ["Should I wear earplugs all day for hyperacusis?", "No. Cleveland Clinic says blocking sound with earplugs or headphones can make things worse, because sounds may feel more intense after you remove them. Use protection for truly loud noise, and ask your clinician."],
+    ],
+    image: "/assets/blog/is-hyperacusis-permanent-1.svg",
+    imageLabel: "Is hyperacusis permanent? The outlook and what recovery looks like",
+    imageAlt: "Is hyperacusis permanent? A sound wave icon on a teal card",
+    image2: "/assets/blog/is-hyperacusis-permanent-2.svg",
+    image2Label: "Five things to know about the hyperacusis outlook",
+    image2Alt: "Five things to know about the outlook for hyperacusis and recovery",
+    image2Caption: "No cure, but symptoms often improve. Pain hyperacusis is slower.",
+  },

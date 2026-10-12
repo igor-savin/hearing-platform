@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aid-warranties-repair-loss-damage",
+  "hero": { "title": "Hearing Aid Warranties", "icon": "shield", "accent": "aqua" },
+  "info": { "title": "What Your Warranty Covers", "subtitle": "Repair, loss, and damage protection explained",
+    "rows": [
+      {"title": "Repair warranty", "desc": "Fixes defects and failures within the coverage window"},
+      {"title": "Loss & damage", "desc": "Replaces a lost or badly damaged aid, often once"},
+      {"title": "Coverage window", "desc": "Length varies by brand and device level"},
+      {"title": "What's excluded", "desc": "Consumables, wear items, and expired coverage"},
+      {"title": "Extending coverage", "desc": "Renewal plans and insurance can fill gaps"}
+    ] }
+}

@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/widex/widex-allure/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Widex Allure Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Widex Allure is Widex's most advanced hearing platform, combining innovative processing with the refined design and famously natural sound the brand is known for. Widex has been family-owned since the 1950s, and its engineering has long focused on making amplified sound feel authentic rather than artificial.",
+    "Allure is built to keep speech crystal clear while preserving a natural sense of the world around you, so you stay connected to your environment instead of feeling closed off. That balance between clarity and naturalness is central to the Widex philosophy.",
+    "At California Hearing Center, we fit and optimize Widex Allure for patients across the Peninsula. As with any premium device, the fitting is what makes the difference, so we program these hearing aids to your prescription and verify the result before you rely on them daily."
+  ],
+  sections: [
+    ["The W1 chip", "At the heart of Allure is Widex's W1 chip, the brand's fastest processor to date. Its single-chip architecture offers substantially faster processing and more memory than previous generations, which supports more sophisticated sound handling and more precise adjustments to your individual hearing needs."],
+    ["Speech Enhancer Pro", "Allure manages noise through Speech Enhancer Pro, which is designed to soften distracting background sound while keeping speech clear and intelligible. By dynamically adjusting to changing environments, it aims to reduce the listening fatigue that busy, noisy settings can bring on."],
+    ["PureSound and natural low-latency sound", "Building on Widex's ZeroDelay technology, the Allure PureSound program processes sound with extremely low latency, which helps speech and music sound natural and distortion-free. This is especially valuable for new hearing aid users, people with milder hearing loss, and music lovers who want authentic sound."],
+    ["Connectivity and daily use", "Allure connects to your phone for streaming and offers app-based control so you can personalize your listening. During your fitting we set up pairing, walk through charging and cleaning, and make sure you can handle the devices comfortably."],
+    ["Fitting and verification", "The W1 chip and its features only help if the sound is set correctly for your ears. We use [real-ear measurement](/hearing-aid-fitting/) to confirm amplification meets your prescribed targets, then fine-tune clarity and comfort over follow-up visits as your brain adapts to hearing more sound."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Explore all Widex models", "/products/hearing-aids-by-brand/widex/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
+  ],
+  takeaways: [
+    "Widex Allure is the brand's most advanced platform, built on the fast W1 chip and known for natural sound.",
+    "Speech Enhancer Pro targets clarity in noise, while PureSound and low-latency processing keep sound natural for music and new users.",
+    "A verified fitting and follow-up care determine how well the technology performs for your hearing."
+  ],
+  faqs: [
+    ["What is the W1 chip in Widex Allure?", "It is Widex's fastest processor to date, with a single-chip design that offers faster processing and more memory than earlier generations. That extra capability supports more sophisticated sound handling and finer adjustments to your hearing."],
+    ["Why is Widex known for natural sound?", "Widex has long prioritized authentic, low-distortion sound. Allure builds on the brand's ZeroDelay technology with its PureSound program, which processes sound with very low latency so speech and music sound natural, something many music lovers and new users especially appreciate."],
+    ["Do you verify the fitting?", "Yes. We program Allure to your prescription and confirm the sound reaching your eardrum with real-ear measurement, then fine-tune it over follow-up visits as you adapt."]
+  ],
+  image: "/assets/widex.webp",
+  imageLabel: "Widex Allure premium line"
+},

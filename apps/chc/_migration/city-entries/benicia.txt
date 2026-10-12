@@ -1,0 +1,30 @@
+  "benicia": {
+    name: "Benicia",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 70 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.0494, lng: -122.1586 },
+    lede:
+      "Benicia briefly served as California's state capital in the 1850s, and its waterfront downtown along the Carquinez Strait still carries that 19th-century character. It sits well to the northeast of us — our offices are on the Peninsula in San Mateo and San Carlos, about 70 minutes away — so for routine hearing care, a Benicia-area provider will usually be more convenient.",
+    hook: [
+      "Care that's worth the trip from Benicia",
+      "For everyday hearing tests and standard hearing aids, we'll always suggest starting with someone close to home. The drive south becomes worthwhile for specialized care — hard-to-treat [tinnitus](/tinnitus/), Lenire therapy, a fitting that hasn't gone right elsewhere, or a second opinion you want handled carefully. Benicia patients who travel to us come for that expertise, and we organize their visit so one trip covers a full evaluation, treatment, and a follow-up plan.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A historic waterfront on the strait",
+      "Benicia's charm runs along the water — First Street's shops and restaurants leading down to the marina, the Camel Barns and grounds of the old Benicia Arsenal, and the Capitol building from the city's brief turn as state capital. It's a maritime, strait-side town, and that marine air keeps humidity up, which is hard on hearing aids since moisture is the leading cause of device trouble. Waterfront patients benefit from moisture-resistant technology, and those with more complex needs sometimes choose to make the drive to the Peninsula for specialized care.",
+    ],
+    whyHere:
+      "Benicia patients who come to us are typically after a level of tinnitus and diagnostic expertise they couldn't find nearby. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive stays the exception, not the routine.",
+    landmarks:
+      "Patients travel to our Peninsula offices from Benicia's First Street, the marina, and the historic Arsenal district, generally around 70 minutes southwest across the bridges.",
+    faqs: [
+      ["Benicia isn't close to you — why make the drive?", "For routine care, a local provider usually makes better sense. Benicia patients come to us mainly for specialized tinnitus treatment, Lenire, and complex cases where the expertise justifies the trip. We plan visits to minimize repeat drives."],
+      ["Does Benicia's waterfront climate affect hearing aids?", "The damp marine air along the strait lets moisture build up inside hearing aids, which can cause muffled or cutting-out sound. Moisture-resistant devices and a drying routine prevent most of it."],
+      ["Do you provide Lenire and comprehensive tinnitus care?", "Yes. Tinnitus care, including Lenire, is one of the main reasons patients travel to us from around the Bay Area, Benicia included. Call 650-342-9449 to arrange an evaluation."],
+    ],
+    consolidatedInto: "solano-county",
+  },

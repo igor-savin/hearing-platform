@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-word-recognition-score-wrs",
+  "hero": { "title": "Word Recognition Score", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Reading Your Word Recognition Score", "subtitle": "Why the number matters as much as the audiogram",
+    "rows": [
+      {"title": "Words repeated back", "desc": "Your score is the percent you get right"},
+      {"title": "Set comfortably loud", "desc": "Loudness is removed as the obstacle"},
+      {"title": "Clarity, not volume", "desc": "It gauges understanding, not detection"},
+      {"title": "Beyond the audiogram", "desc": "Same tones can hide very different clarity"},
+      {"title": "A mismatch is a flag", "desc": "Poor clarity can prompt further evaluation"}
+    ] }
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "custom-earplugs",
+  "hero": {
+    "title": "Custom Earplugs",
+    "icon": "earbud",
+    "accent": "gold"
+  },
+  "info": {
+    "title": "Which Custom Earplug Fits Which Use",
+    "subtitle": "Ask us about your own use",
+    "rows": [
+      {
+        "title": "Sleep",
+        "desc": "Solid plugs, shaped to sit comfortably"
+      },
+      {
+        "title": "Swimming",
+        "desc": "Plugs made to keep water out"
+      },
+      {
+        "title": "Concerts",
+        "desc": "Filtered, so music stays clear"
+      },
+      {
+        "title": "Work",
+        "desc": "Matched to your noise and what you must hear"
+      },
+      {
+        "title": "Sensitive ears",
+        "desc": "Talk to us before you buy plugs"
+      }
+    ]
+  }
+}

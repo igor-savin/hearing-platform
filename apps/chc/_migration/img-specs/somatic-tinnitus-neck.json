@@ -1,0 +1,34 @@
+{
+  "slug": "somatic-tinnitus-neck",
+  "hero": {
+    "title": "Somatic Tinnitus",
+    "icon": "soundwave",
+    "accent": "gold"
+  },
+  "info": {
+    "title": "When Tinnitus Changes With Your Neck",
+    "subtitle": "Five steps to take",
+    "rows": [
+      {
+        "title": "Notice the pattern",
+        "desc": "Which neck movement changes the sound"
+      },
+      {
+        "title": "Get a hearing test",
+        "desc": "Rule out ear causes first"
+      },
+      {
+        "title": "See your physician",
+        "desc": "Neck exam and possible therapy referral"
+      },
+      {
+        "title": "Move gently only",
+        "desc": "Stop for pain, dizziness or pulling"
+      },
+      {
+        "title": "Know the red flags",
+        "desc": "Sudden loss or pulsing sound: urgent care"
+      }
+    ]
+  }
+}

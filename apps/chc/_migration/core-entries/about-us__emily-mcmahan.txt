@@ -1,0 +1,33 @@
+"/about-us/emily-mcmahan/": {
+  kicker: "Meet the Team",
+  headline: "Emily McMahan, AuD",
+  intro: [
+    "Dr. Emily McMahan is a highly respected audiologist, recognized nationally for her expertise in tinnitus management, hearing care innovation, and advancements in telehealth audiology.",
+    "She is the founder and owner of the Alaska Hearing & Tinnitus Center, a leading practice serving Alaska and the western United States that is especially recognized for its focus on [tinnitus](/tinnitus/) management. Based in Anchorage, Alaska, she is committed to expanding audiological care through remote and field clinics across multiple states.",
+    "Dr. McMahan runs her own practice in Alaska and travels to see patients elsewhere. She comes to California Hearing Center every six to eight weeks, and because she is so well known for tinnitus care, her appointments here book up quickly. Call 650-342-9449 and we will book you into her next visit."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. McMahan earned her Bachelor of Science in Communication Sciences and Disorders from the University of Cincinnati and her Doctorate of Audiology from Salus University in Philadelphia. She completed her residency in Anchorage, Alaska, where she continues to be based. She is certified by the American Board of Audiology and is a Fellow of both the American Academy of Audiology and the Academy of Doctors of Audiology. She was named Alumna of the Year by Salus University's George S. Osborne College of Audiology."],
+    ["Focus & approach", "Her clinical expertise includes diagnostic hearing evaluations, tinnitus assessment and management, and telehealth service delivery, caring for both pediatric and geriatric populations. Dr. McMahan is among the first U.S. clinicians to implement Lenire, the FDA-approved bimodal neuromodulation device for tinnitus, and co-authored a real-world outcomes study on its effectiveness published in Nature Communications Medicine. Her mission centers on helping patients \"hear the life they love\" through individualized care."],
+    ["Leadership & advocacy", "Dr. McMahan holds a board position in the Audiology Practice Standards Organization (APSO), helping to set national standards for audiological care, and is an adjunct professor at the University of Alaska, mentoring audiology students and externs at her clinic. She is a frequent speaker on tinnitus and hearing healthcare innovations and has been featured in publications such as the Washington Post."]
+  ],
+  bullets: [
+    "Founder and owner of the Alaska Hearing & Tinnitus Center",
+    "Tinnitus management specialist",
+    "Telehealth audiology",
+    "Among the first U.S. clinicians to implement Lenire",
+    "Board member of the Audiology Practice Standards Organization (APSO)"
+  ],
+  takeaways: [
+    "Nationally recognized for tinnitus management, telehealth, and pioneering clinical work with the Lenire device.",
+    "Anchorage, Alaska-based founder of the Alaska Hearing & Tinnitus Center, serving patients across the western U.S.",
+    "Sees patients at California Hearing Center every six to eight weeks; her appointments book up quickly."
+  ],
+  faqs: [
+    ["How often is Dr. McMahan at California Hearing Center?", "She visits every six to eight weeks. Between visits she runs her own practice in Alaska, and the rest of [our audiology team](/about-us/) sees patients here every week."],
+    ["How do I schedule with Dr. McMahan?", "Call 650-342-9449 and ask to be booked into her next visit. Her appointments fill quickly, so it is worth calling early."]
+  ],
+  image: "/assets/team/dr-emily-mcmahan-audiologist-san-mateo.webp",
+  imageLabel: "Emily McMahan, AuD",
+  imageAlt: "Dr. Emily McMahan, visiting audiologist at California Hearing Center",
+},

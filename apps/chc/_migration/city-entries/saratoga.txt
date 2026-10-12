@@ -1,0 +1,30 @@
+  "saratoga": {
+    name: "Saratoga",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 40 minutes south",
+    distanceTier: "far",
+    geo: { lat: 37.2638, lng: -122.0230 },
+    lede:
+      "Saratoga sits where the valley meets the hills — a storybook village along Big Basin Way, wineries and gardens up in the foothills, and a reputation for the finer, quieter things. Our offices are a good 40 minutes north on the Peninsula, but Saratoga residents accustomed to seeking out the best will make the trip for care to match.",
+    hook: [
+      "Refined, unhurried care and technology you forget you are wearing",
+      "Saratoga patients often ask for two things together: hearing sharp enough for concerts at the Mountain Winery, dinners in the village, and lively family gatherings, and technology discreet enough to stay invisible. Both hinge on the fitting rather than the label on the box. We take the time to program, measure, and refine each device privately, and that unhurried, high-touch approach is what patients travel here to find.",
+    ],
+    motif: "wine",
+    localScene: [
+      "A foothill village of gardens and wineries",
+      "Saratoga's charm lives along Big Basin Way in the village, up at the Mountain Winery and Hakone Gardens, around Villa Montalvo's arts grounds, and through the wooded neighborhoods climbing toward the hills. It is a place of concerts, tastings, and long dinners — settings where hearing every word and note truly matters. For the Saratoga patients who come to us, we emphasize discreet, precisely verified fittings and focused tinnitus care that closer offices may not provide.",
+    ],
+    whyHere:
+      "Saratoga residents choose us for depth over proximity: meticulous verified fittings, honest technology guidance, and specialized [tinnitus care](/tinnitus/) including Lenire. Many first traveled up for a problem no one nearer had resolved, and stayed for the continuity.",
+    landmarks:
+      "We are about 40 minutes from Saratoga Village, the Mountain Winery, and Hakone Gardens, north via the 280 to our San Carlos office.",
+    faqs: [
+      ["Why come all the way to the Peninsula from Saratoga?", "For routine maintenance a local office is simpler. Patients travel to us for specialized needs — complex tinnitus, difficult or unsatisfying fittings, Lenire, or a careful second opinion — where our focus earns the distance."],
+      ["Can I get hearing aids that stay truly discreet?", "Yes. We fit several invisible and near-invisible styles and take the time to verify each one, keeping both the technology and the visits private and unhurried."],
+      ["How far is your office from Saratoga?", "About 40 minutes north on the 280 to San Carlos. Call 650-342-9449 and we can arrange a longer, thorough visit to make the drive count."],
+    ],
+    consolidatedInto: "santa-clara-county",
+  },

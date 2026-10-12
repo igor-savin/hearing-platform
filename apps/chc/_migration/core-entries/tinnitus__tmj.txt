@@ -1,0 +1,38 @@
+"/tinnitus/tmj/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "TMJ and Tinnitus: The Jaw-Ear Connection",
+  intro: [
+    "Not all tinnitus comes from the ear itself. If you notice jaw pain, clicking, or tightness, and you also hear ringing, buzzing, or fullness in your ears, you may be wondering whether your jaw is affecting your tinnitus. In many people, the answer is yes.",
+    "The temporomandibular joint, or TMJ, is the hinge that connects your lower jaw to your skull, sitting just in front of each ear. Problems with this joint and the surrounding muscles, often called TMD (temporomandibular disorders), can produce or worsen tinnitus, a link that surprises many patients but is well recognized in clinical practice.",
+    "This page explains how TMJ problems can influence tinnitus, which signs suggest a jaw-related component, and how our Bay Area audiologists collaborate with dentists and TMJ specialists. For the underlying mechanism of ear noise, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How the jaw and ear connect", "The relationship is complex, but several factors help explain it. The TMJ sits right next to the ear canal and middle ear, and muscles, ligaments, and nerves in the area interact closely. Sensory nerves from the jaw and neck feed into some of the same brain centers that process sound, so when TMJ structures are irritated, those signals can influence how tinnitus is perceived. Tight jaw and neck muscles can also change pressure around the ear and alter how you hear your own tinnitus."],
+    ["This is somatosensory tinnitus", "Tinnitus that changes when you move your jaw, neck, or head is called somatosensory tinnitus, and TMJ-related tinnitus is one example. The hallmark is that the sound can shift with movement or pressure, and that clue often points the way to the cause. Many people also clench or grind their teeth when stressed, which can raise tinnitus intensity at the same time. If the sound changes with your neck instead, see our page on [somatic tinnitus and the neck](/somatic-tinnitus-neck/)."],
+    ["Signs your tinnitus may be TMJ-related", "Suspect a jaw connection if your tinnitus gets louder, softer, higher, or lower when you open wide, clench, or move your jaw side to side; if ear fullness, pressure, or mild ear pain arrive alongside jaw pain, clicking, morning soreness, or temple headaches; if tinnitus, fullness, and jaw pain are all stronger on the same side; or if you clench during the day, grind at night, and notice the sound is louder during stressful periods."],
+    ["When it is likely not just TMJ", "Even with jaw symptoms, tinnitus is not always primarily TMJ-related. Red flags that suggest a broader problem include sudden hearing loss, a heartbeat or whooshing sound in time with your pulse, severe vertigo or balance changes, neurological symptoms such as facial weakness or numbness, or persistent ear pain or drainage. These can overlap with sudden hearing loss, Meniere's disease, or vascular tinnitus, so do not assume it is just TMJ, seek prompt care."],
+    ["Who to see and how it is evaluated", "TMJ-related tinnitus is usually managed by a team: an audiologist evaluates hearing, tinnitus, and ear health; a dentist or TMJ specialist assesses the jaw joint, bite, and muscle tension; and sometimes a physical therapist addresses neck and posture issues. At California Hearing Center, in [San Mateo](/contact/san-mateo/) and [San Carlos](/contact/san-carlos/), we begin with a full [hearing and tinnitus evaluation](/hearing-testing/), ask how the sound changes with jaw movement, document your baseline, and coordinate with your TMJ providers."],
+    ["Treatment and tinnitus management", "TMJ-focused treatment is typically guided by a dentist, oral surgeon, or TMJ specialist and may include night guards or bite splints, jaw exercises and physical therapy, posture and ergonomics coaching, and short-term medication for pain or muscle tension. On the audiology side we support you with sound therapy, [hearing aids when hearing loss is present](/products/hearing-aids/), counseling to reduce fear and frustration, and strategies that help the brain move tinnitus into the background. Explore our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["Simple self-care that often helps", "While not a substitute for evaluation, many patients benefit from a keep-your-teeth-apart habit: check in through the day and gently let your jaw relax with teeth slightly apart and tongue resting lightly on the roof of your mouth. TMJ-friendly stretches and posture exercises ease muscular tension, stress-reduction practices calm both clenching and tinnitus distress, and [hearing protection in loud settings](/services/hearing-protection/) prevents further sensitization."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Types of tinnitus sounds", "/tinnitus/types-of-tinnitus-sounds/"],
+    ["Tinnitus in one ear vs both", "/tinnitus/one-ear/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "The jaw joint sits right next to the ear and shares nerve pathways, so TMJ problems can cause or worsen tinnitus.",
+    "Tinnitus that changes when you clench, chew, or move your jaw suggests a somatosensory, jaw-related link.",
+    "Care usually combines a TMJ-experienced dentist with audiology support for hearing and sound therapy."
+  ],
+  faqs: [
+    ["Can TMJ problems really cause tinnitus?", "Yes. The jaw joint sits right next to the ear and shares nerve pathways with the auditory system, so TMJ strain or dysfunction can produce or intensify tinnitus, often alongside jaw pain, clicking, or ear fullness."],
+    ["How do I know if my tinnitus is from my jaw?", "A telling sign is that the sound changes when you clench, chew, or move your jaw, or that jaw pain, teeth grinding, and temple headaches occur on the same side. This modulation points toward a somatosensory, jaw-related cause."],
+    ["Who treats TMJ-related tinnitus?", "The jaw problem itself is usually managed by a dentist experienced in TMJ disorders, sometimes with physical therapy or a bite splint. Audiology complements that care by documenting your hearing and offering [sound therapy](/services/tinnitus-therapy/) for the tinnitus."]
+  ],
+  image: "/assets/core/tinnitus__tmj.svg",
+  imageLabel: "When the jaw drives tinnitus"
+},

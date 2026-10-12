@@ -1,0 +1,12 @@
+{
+  "slug": "are-hearing-aids-not-covered-by-insurance",
+  "hero": { "title": "Hearing Aid Coverage", "icon": "shield", "accent": "aqua" },
+  "info": { "title": "Ways to Pay for Hearing Aids", "subtitle": "Five paths when insurance falls short",
+    "rows": [
+      {"title": "Check your plan", "desc": "Benefits vary widely; verify what yours includes."},
+      {"title": "Medicare Advantage", "desc": "Some Part C plans add a hearing benefit."},
+      {"title": "HSA and FSA funds", "desc": "Pre-tax dollars usually cover hearing aids."},
+      {"title": "Financing plans", "desc": "Spread the cost into monthly payments."},
+      {"title": "Ask us to verify", "desc": "We confirm coverage and explain your options."}
+    ] }
+}

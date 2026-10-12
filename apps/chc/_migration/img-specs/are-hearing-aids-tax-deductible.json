@@ -1,0 +1,12 @@
+{
+  "slug": "are-hearing-aids-tax-deductible",
+  "hero": { "title": "Hearing Aids & Taxes", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Hearing Aids and Your Taxes", "subtitle": "How the medical-expense deduction generally works",
+    "rows": [
+      {"title": "Qualified expense", "desc": "Hearing aids count as medical expenses"},
+      {"title": "Itemizing required", "desc": "The deduction only helps if you itemize"},
+      {"title": "Income threshold", "desc": "Only costs above a set percentage count"},
+      {"title": "FSA and HSA", "desc": "Pre-tax accounts can cover the device"},
+      {"title": "Save receipts", "desc": "Keep invoices for exams, repairs, batteries"}
+    ] }
+}

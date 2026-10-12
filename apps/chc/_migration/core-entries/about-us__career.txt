@@ -1,0 +1,32 @@
+"/about-us/career/": {
+  kicker: "Careers",
+  headline: "Looking for Your Next Career Move?",
+  intro: [
+    "California Hearing Center is an independent audiology practice with offices in San Mateo and San Carlos. We have been on the Peninsula for {{yearsInPractice}} years, doing evaluations, hearing aid fittings, rehabilitation and tinnitus therapy.",
+    "Two things before the benefits list. We cover 99% of your health, dental and vision premiums. And real-ear measurement runs on every fitting here, which means the appointment slots are long enough to actually do it. That is the business model rather than a poster in the break room.",
+    "Two roles are open: Audiologist and Hearing Instrument Specialist. Both are set out below, along with what the job actually pays and covers."
+  ],
+  sections: [
+    ["Why join our team", "You would join a practice that spends its money on diagnostics, verification and follow-up rather than on volume. Every fitting is verified with real-ear measurement, and the schedule is built to allow for it. Two offices give you variety in caseload. The team is small enough that everyone knows the patients by name."],
+    ["Compensation and growth", "There is a commission structure with the ability to double or even triple compensation against clear sales goals, and defined advancement paths. Association memberships and conference attendance are paid for."],
+    ["Health, retirement, and time off", "We cover 99% of your health insurance premiums, plus 99% of dental and vision coverage. There is a competitive 401k plan with company matching, a generous PTO program with paid time off and sick leave for everyone, and volunteer time off so you can give back to the community."],
+    ["Life at the practice", "A wellness credit covers gym membership or fitness reimbursement. There is an employee discount on products, a stocked fridge and pantry, and company-sponsored social events and team-building outings. We are a pet-friendly workplace. Well-behaved dogs are welcome in the office."],
+    ["Open role: Audiologist", "We are looking for an Au.D. with current California licensure for audiology and hearing aid dispensing, and board certification. You should bring excellent interpersonal skills that build effective relationships with diverse patients, colleagues, and vendors; strong listening, sales, and problem-solving skills; the ability to organize your time and prioritize numerous duties within deadlines; and a team-oriented, positive, professional attitude in a fast-paced setting."],
+    ["Open role: Hearing Instrument Specialist", "We are looking for an HIS with current California licensure for hearing aid dispensing. You should have experience administering tests to evaluate hearing and to fit hearing aids, exceptional customer service and oral communication skills, teaching ability to educate patients on device care and maintenance, and strong mechanical and problem-solving skills for device troubleshooting and repair."],
+    ["How we actually practise", "Evidence-based here means prescriptive targets and real-ear verification rather than a manufacturer first fit. Patient-centered means an appointment long enough to explain an audiogram properly. And we tell patients their current hearing aids are fine when they are, which happens regularly and costs us sales. If you have had to argue for any of that with a manager before, you would not have to here."],
+    ["How to apply", "Email infochc@hearing-care.org and say which role interests you. If neither is quite right and you want to introduce yourself anyway, that is also fine. We read those."]
+  ],
+  bulletLinks: [
+    ["Meet the clinical team", "/about-us/"],
+    ["About the practice", "/about-us/"],
+    ["Our services", "/services/"],
+    ["Contact us", "/contact/"]
+  ],
+  takeaways: [
+    "California Hearing Center is hiring Audiologists (Au.D.) and Hearing Instrument Specialists across our San Mateo and San Carlos offices.",
+    "Benefits include 99% covered health, dental, and vision premiums, 401k with matching, generous PTO, and a wellness credit.",
+    "To apply, email infochc@hearing-care.org."
+  ],
+  image: "/assets/core-photos/about-california-hearing-center-san-mateo.webp",
+  imageLabel: "Join the California Hearing Center team",
+},

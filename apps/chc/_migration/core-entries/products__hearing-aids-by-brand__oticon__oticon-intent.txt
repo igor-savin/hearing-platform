@@ -1,0 +1,46 @@
+"/products/hearing-aids-by-brand/oticon/oticon-intent/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Oticon Intent Hearing Aids in San Mateo & San Carlos",
+  metaTitle: "Oticon Intent | Behind-the-Ear Option, 4D Sensors, Softening Price | California Hearing Center",
+  metaDescription: "Oticon Intent held the flagship position from February 2024 until Reveal. It still offers a behind-the-ear model Reveal does not, and its price is easing. Fitted and verified in San Mateo and San Carlos.",
+  intro: [
+    "Oticon Intent held the top of the Oticon range from February 2024 until [Reveal](/products/hearing-aids-by-brand/oticon/oticon-reveal/) arrived in August 2026. It is still on our price list, and for a fair number of the people we see it is still the right recommendation.",
+    "The reason is practical rather than sentimental. Intent includes a miniBTE R behind-the-ear model and Reveal, at launch, does not. If you need a behind-the-ear device for a powerful fitting, for a custom earmould, or because that is the shape your hands have got on with for years, Intent is the correct device and Reveal is not yet an option for you. Intent also has two and a half years of clinical use behind it, and as the previous generation its pricing tends to soften, which often buys a higher technology tier for the same money.",
+    "Intent runs on Oticon's Sirius chip with what the company calls 4D user-intent sensors: cues from your conversation activity, your head and body movement and the acoustics around you, used to work out where your attention is going. A deep neural network separates speech from noise while keeping the surrounding sound your brain uses to orient.",
+    "We fit and verify Intent at both offices. The technology is the smaller half of the result, so what follows covers both."
+  ],
+  sections: [
+    ["Sirius and the 4D sensors", "The 4D sensors are what made Intent distinctive, and they carry forward into Reveal unchanged. Rather than assuming everyone in a busy room wants the same thing, the device reads whether you are talking, whether you are moving, and what the room sounds like, and shifts its support as you go from a quiet kitchen to a loud restaurant. In practice you notice this as not having to reach for a program button."],
+    ["Deep neural network processing", "Intent's neural network was trained on a large library of real-world sound scenes and is used to pull speech out of noise while preserving the spatial cues that tell your brain where things are. That second half is the Oticon position in a sentence: clarity that does not cost you the room. Whether you prefer it to a narrower directional system is a question your ears answer in about ten minutes, and we can set both up in one appointment."],
+    ["What Intent has that Reveal does not", "The miniBTE R behind-the-ear model, which matters for powerful fittings, custom earmoulds and dexterity. Two and a half years of clinical use, which is worth something on its own. And a price that is easing now that it is the previous generation. Reveal launched as a rechargeable miniRITE R only, and no independent laboratory has measured it. We have no independent measurement of Intent to put beside it either, so we are not going to hand you a bench comparison of the two. What we can tell you is which shapes each one comes in and what that means for your ears."],
+    ["Connectivity, tinnitus and daily use", "Intent carries an IP68 rating, Tinnitus SoundSupport, Bluetooth LE Audio with Auracast, Made for iPhone and Android streaming, a telecoil, and the Oticon Companion app for adjustments. The accessory range, ConnectClip and the TV Adapter included, works across both platforms. We can also make remote adjustments between visits. During your fitting we set up pairing, go through charging and cleaning, and check you can handle the devices comfortably before you leave."],
+    ["Fitting and real-ear verification", "This is where your appointment goes, and it is not a formality. Manufacturer first-fit settings routinely land ten decibels or more below prescriptive targets in the high frequencies, which is exactly where speech clarity lives. We use [real-ear measurement during the fitting](/hearing-aid-fitting/) to confirm what the device delivers at your eardrum against your prescription, then adjust across pitches until they match. Two Oticon platforms one generation apart will feel far more alike than the same device will feel verified against unverified."],
+    ["Come and hear it", "We can demonstrate Intent alongside Reveal in the same appointment, in a noisy room rather than a quiet booth. It takes about thirty minutes and costs nothing. Bring a recent audiogram if you have one, or we will test first. Call 650-342-9449 or [request an appointment](/contact/#request-appointment) at [San Mateo](/contact/san-mateo/) or [San Carlos](/contact/san-carlos/). If you have been quoted for either platform, our [second opinion visit](/hearing-aid-second-opinion/) will tell you which tier you are actually being sold."]
+  ],
+  bulletLinks: [
+    ["Oticon Reveal vs Oticon Intent", "/products/hearing-aids-by-brand/oticon/oticon-reveal-vs-oticon-intent/"],
+    ["Oticon Reveal: the new flagship", "/products/hearing-aids-by-brand/oticon/oticon-reveal/"],
+    ["Explore the full Oticon range", "/products/hearing-aids-by-brand/oticon/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Hearing aid repairs and service", "/services/hearing-aid-repair/"],
+    ["Second opinion visit for a quote", "/hearing-aid-second-opinion/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"]
+  ],
+  takeaways: [
+    "Intent was Oticon's flagship from February 2024 until Reveal launched in August 2026. It has not been withdrawn and we still fit it.",
+    "It includes a miniBTE R behind-the-ear model that Reveal does not offer, which decides the choice for powerful fittings, custom earmoulds and some dexterity cases.",
+    "Its 4D user-intent sensors read conversation, movement and acoustics, and they carry forward into Reveal unchanged.",
+    "As the previous generation its price is easing, which often buys a higher technology tier for the same money. Tier matters more in hard rooms than platform generation does.",
+    "No independent laboratory has measured Reveal, and we have no independent measurement of Intent to set against it, so the honest comparison is about styles, tiers and how each sounds in your ears."
+  ],
+  faqs: [
+    ["Is Oticon Intent still worth buying now that Reveal has launched?", "For many patients, yes. Intent includes a behind-the-ear model Reveal does not, it has two and a half years of clinical use behind it, and its price is softening as the previous generation. That last point often buys a higher technology tier for the same money, and tier tends to matter more in difficult rooms than platform generation does."],
+    ["What are the 4D user-intent sensors?", "Sensors that draw on your conversation activity, your head and body movement and the acoustics around you to estimate what you are trying to listen to, so the hearing aid adapts as you move between rooms. The same sensor technology carries forward into Reveal unchanged."],
+    ["I bought Intent recently. Should I upgrade to Reveal?", "If it is verified, comfortable and doing its job, no. The gap between two consecutive Oticon flagships is real but incremental, and a second purchase is a poor use of your money while the first is working. If your Intent devices have never had real-ear verification, that is the appointment to book instead."],
+    ["Does Intent have a telecoil and Auracast?", "Yes to both, along with Bluetooth LE Audio, Made for iPhone and Android streaming, an IP68 rating and Tinnitus SoundSupport. The ConnectClip and TV Adapter accessories work with it too, and we can make adjustments remotely between visits."],
+    ["Do you verify the fitting?", "Yes. We program the devices to your prescription and confirm with real-ear measurement that the sound at your eardrum matches your targets across pitches, then adjust over follow-up visits as your brain adapts to hearing more."]
+  ],
+  image: "/assets/oticon.webp",
+  imageLabel: "Oticon Intent: the behind-the-ear option Reveal does not have"
+},

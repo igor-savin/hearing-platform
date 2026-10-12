@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-real-ear-measurement",
+  "hero": { "title": "Real-Ear Measurement", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "How Real-Ear Measurement Works", "subtitle": "Verifying sound at the eardrum, step by step",
+    "rows": [
+      {"title": "Set the prescription", "desc": "Targets come from your hearing test results"},
+      {"title": "Place the probe tube", "desc": "A soft tube rests beside the hearing aid"},
+      {"title": "Play real speech", "desc": "Conversational sound plays at normal levels"},
+      {"title": "Read the two lines", "desc": "Compare output to the prescription target"},
+      {"title": "Fine-tune the fit", "desc": "Adjust pitch by pitch until they match"}
+    ] }
+}

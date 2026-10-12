@@ -1,0 +1,38 @@
+"/hyperacusis/coping/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Coping With Hyperacusis: Gradual Exposure Without Major Setbacks",
+  intro: [
+    "When sound sensitivity flares, it is normal to protect your ears and avoid noisy places. But many people get stuck in a loop where avoidance grows, tolerance shrinks, and everyday sound feels even worse. This guide shares practical steps to rebuild comfort with sound safely, without toughing it out.",
+    "Most people improve with a plan that is gentle, repeatable, and progressive rather than dramatic. Think small wins every day instead of big challenges once in a while.",
+    "If you have sudden hearing changes, severe vertigo, or new neurologic symptoms, review the [red flags](/hyperacusis/when-to-seek-help/) first. Otherwise, this page pairs well with our [hyperacusis overview](/hyperacusis/)."
+  ],
+  sections: [
+    ["The goal: safety plus consistency", "Coping works best when it balances two needs: protecting your ears from truly loud noise and maintaining enough everyday sound exposure so your system does not become more sensitive over time. What helps most is a steady baseline of comfortable sound plus gradual increases in tolerance. What often backfires is all-day silence, all-day earplugs, and unpredictable push-through-it exposures. What you are aiming for is confidence: being around sound without bracing for impact, even if you still prefer calmer environments."],
+    ["Earplugs: when they help and when they backfire", "Earplugs and earmuffs are important tools, but only when used strategically. If you wear protection everywhere, your brain can start treating normal sound as too much, which can increase sensitivity. A simple rule of thumb is to use protection for truly loud situations like concerts, power tools, loud transit, and sporting events, and to avoid constant protection in ordinary day-to-day settings unless your clinician specifically recommends it."],
+    ["Sound enrichment you can start today", "Many people with hyperacusis do better with a gentle baseline of sound rather than total quiet. This is not about blasting noise; it is about reducing the contrast between silence and sudden sound. At home, try a fan, air purifier, low music, or nature sounds at a comfortable level, especially during quiet times of day. Gentle means noticeable but not irritating. If you find yourself tensing or counting the minutes, it is too much. The best level is the one you can repeat daily without spikes."],
+    ["A simple gradual exposure plan", "Your plan should be tailored, but the framework is to increase tolerance slowly and consistently using exposures that are challenging but not painful. Pick one or two starter sounds that are slightly uncomfortable but manageable, keep each exposure short enough to complete calmly, and repeat it daily until it feels easier for several days in a row. Increase only one variable at a time, whether that is duration, environment complexity, or volume, and track your recovery time. A good exposure is one you bounce back from quickly."],
+    ["Graduating to real-life settings", "Once a starter exposure feels comfortable, step it up gradually toward real environments. A typical path might run from a quiet cafe to a slightly busier cafe, then a short restaurant visit, then a longer one. In the Bay Area, have a plan for restaurants, open offices, transit, and busy streets: choose quieter timing, better seating, and quick outdoor breaks instead of white-knuckling indoors. Progress usually looks like handling normal sound without bracing, not everything becoming quiet."],
+    ["What to do after a spike", "Spikes happen; the goal is to recover and return to your baseline plan, not to panic and restart from zero. Reduce sound temporarily but avoid total silence for long periods if silence worsens tinnitus or anxiety. Use gentle background sound and keep your environment predictable for a day or two, then scale back to the last exposure level that felt manageable and rebuild gradually. Prioritize sleep and lower your overall stress load, since spikes are more common when you are exhausted."]
+  ],
+  bulletLinks: [
+    ["Hyperacusis overview", "/hyperacusis/"],
+    ["When to seek help (red flags)", "/hyperacusis/when-to-seek-help/"],
+    ["Tinnitus and sound sensitivity", "/tinnitus/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Rebuild tolerance with small, repeatable exposures that are challenging but never painful, changing one variable at a time.",
+    "Use hearing protection for genuinely loud settings only; constant everyday protection can increase sensitivity.",
+    "After a spike, recover with gentle background sound and rest, then return to your baseline rather than starting over."
+  ],
+  faqs: [
+    ["Should I just avoid loud places until my ears feel better?", "Long-term avoidance and constant silence often make sensitivity worse. A gentle baseline of comfortable sound plus gradual, planned exposure usually rebuilds tolerance more effectively than hiding from sound."],
+    ["How do I know if an exposure was too much?", "A good exposure is one you recover from quickly and do not feel wrecked by afterward. If you find yourself bracing, tensing, or counting the minutes, or if a spike lingers, scale back to the last comfortable level."],
+    ["What if tinnitus is part of the picture?", "Your plan may need to manage the quiet-makes-tinnitus-louder effect while still rebuilding sound tolerance, often using gentle background sound rather than total silence."],
+    ["When should I stop DIY and get help?", "If spikes are frequent, painful, or your tolerance is rapidly worsening, or your world is shrinking, schedule an evaluation. You should not have to guess your way through this."]
+  ],
+  image: "/assets/core/hyperacusis__coping.svg",
+  imageLabel: "Practical, gradual coping strategies"
+},

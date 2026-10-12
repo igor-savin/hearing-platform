@@ -1,0 +1,39 @@
+"/about-us/": {
+  kicker: "About Our Practice",
+  headline: "About California Hearing Center in San Mateo & San Carlos",
+  intro: [
+    "The quality of your hearing touches nearly every part of your life, from the conversations at your dinner table to your confidence at work. California Hearing Center exists to protect and restore that connection. We are an independent audiology practice serving the Peninsula from two offices, in San Mateo and San Carlos, and our focus is straightforward: accurate diagnosis, honest guidance, and hearing solutions built around the individual rather than the sale.",
+    "The team is [doctors of audiology](/what-is-an-audiologist-specialist/) and a hearing instrument specialist. Their training is on their own pages: where each took their degree, which states they are licensed in, which certificates they hold. Every hearing aid we fit is verified with real-ear measurement, and that is the part of the job that most reliably separates a device you keep wearing from one that ends up in a drawer.",
+    "We serve patients throughout San Mateo, San Carlos, [Burlingame](/areas-we-serve/burlingame/), [Belmont](/areas-we-serve/belmont/), [Millbrae](/areas-we-serve/millbrae/), and the surrounding Peninsula communities. Whether you are here for a first evaluation, [tinnitus relief](/decoding-the-buzz-understanding-tinnitus-and-your-options/), or ongoing care, our aim is that you leave understanding your hearing and confident in the path forward."
+  ],
+  sections: [
+    ["Patient-centered care", "We practice person-centered care, which means the plan is shaped with you, not handed to you. We explain your results plainly, lay out realistic options with their trade-offs, and respect that the decision is yours. This philosophy runs through every appointment, from how we describe an audiogram to how we set expectations for new hearing aids."],
+    ["Evidence-based methods", "Good outcomes come from doing the fundamentals well. We rely on established, evidence-based methods, comprehensive diagnostic testing, prescriptive programming, and objective verification with real-ear measurement, rather than shortcuts. Our [hearing testing](/hearing-testing/) and [hearing aid fitting](/hearing-aid-fitting/) follow best practices because that is what reliably delivers clear, comfortable hearing."],
+    ["An experienced team", "Our clinicians bring decades of combined experience across diagnostic evaluation, amplification, and tinnitus management, and they stay current as hearing technology evolves. You can read each provider's background on their individual bio pages to learn about their training, focus areas, and what they care about most in patient care. Dr. [Kira Savin](/about-us/kira-savin/) was recently interviewed in Hearing Review about how practices protect clinician time for patients."],
+    ["Two convenient Peninsula offices", "We see patients at 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos, making it easy to find care close to home or work. Both offices offer our full range of [services](/services/), so you can choose whichever location is more convenient for you."],
+    ["Care for the whole hearing journey", "Hearing care is not a single visit. We support you from the first evaluation through fitting, follow-up adjustments, cleaning and repairs, and rechecks as your hearing changes over time. That continuity is part of the value of choosing an independent local practice; the people who fit your devices are the same people who help you keep them working."],
+    ["A specialty in tinnitus", "Ringing, buzzing, or hissing in the ears is one of the most common reasons people find us, and it is an area we focus on. Our [tinnitus](/tinnitus/) care includes evaluation, counseling, and sound-based approaches, and we look for any red flags that call for a medical referral so you get the right kind of help."],
+    ["Rooted in the community", "We are proud to be a local, independent practice on the Peninsula. Our patients come from across the [areas we serve](/areas-we-serve/), and [much of our growth comes from their referrals](/hearing-aid-referral-program/). You can read what patients say about their experience on our [reviews](/reviews/) page."]
+  ],
+  bulletLinks: [
+    ["Our services", "/services/"],
+    ["Hearing testing", "/hearing-testing/"],
+    ["Hearing aid fitting", "/hearing-aid-fitting/"],
+    ["Tinnitus care", "/tinnitus/"],
+    ["Areas we serve", "/areas-we-serve/"],
+    ["Patient reviews", "/reviews/"]
+  ],
+  takeaways: [
+    "An independent Peninsula audiology practice with offices in San Mateo and San Carlos.",
+    "A team of doctors of audiology and a hearing instrument specialist practicing patient-centered, evidence-based care.",
+    "Support across the whole journey, from first evaluation to follow-up, repairs, and tinnitus care."
+  ],
+  faqs: [
+    ["Where are your offices located?", "We have two Peninsula locations: 88 N. San Mateo Drive in San Mateo and 1008 Laurel Street in San Carlos. Both offer our full range of services, so you can choose whichever is more convenient. Reach either office at 650-342-9449."],
+    ["Who will I see at my appointment?", "You will be seen by a member of our clinical team, which includes doctors of audiology and a hearing instrument specialist. You can read more about each provider's training and focus on their individual bio pages."],
+    ["What areas do you serve?", "We care for patients across the Peninsula, including San Mateo, San Carlos, Burlingame, Belmont, Millbrae, and nearby communities. See our areas we serve page for more on the neighborhoods we reach."],
+    ["What makes California Hearing Center different?", "We are an independent, local practice focused on patient-centered, evidence-based care. That means thorough diagnostics, objective verification of your hearing aids, plain-language explanations, and continuity of care from the same team over time, rather than a one-size-fits-all approach."]
+  ],
+  image: "/assets/core/about-us.svg",
+  imageLabel: "Independent Peninsula audiology practice",
+},

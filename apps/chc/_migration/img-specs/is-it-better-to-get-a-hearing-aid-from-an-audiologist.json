@@ -1,0 +1,12 @@
+{
+  "slug": "is-it-better-to-get-a-hearing-aid-from-an-audiologist",
+  "hero": { "title": "Audiologist or Retail", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Audiologist vs. Store-Bought", "subtitle": "What professional fitting adds to a hearing aid",
+    "rows": [
+      {"title": "Hearing test first", "desc": "Maps your exact loss across pitches"},
+      {"title": "Custom fitting", "desc": "Aids programmed and verified in your ear"},
+      {"title": "Follow-up tuning", "desc": "Settings refined as your ears adjust"},
+      {"title": "Repairs and support", "desc": "In-person help when something goes wrong"},
+      {"title": "OTC has a place", "desc": "Mild, even loss may suit a store-bought aid"}
+    ] }
+}

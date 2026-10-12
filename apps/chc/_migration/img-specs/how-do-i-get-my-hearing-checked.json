@@ -1,0 +1,12 @@
+{
+  "slug": "how-do-i-get-my-hearing-checked",
+  "hero": { "title": "Your Hearing Check", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Getting Your Hearing Checked", "subtitle": "What to expect, from first call to clear results",
+    "rows": [
+      {"title": "Notice the signs", "desc": "Repeats, loud TV, or trouble in noise"},
+      {"title": "Book the appointment", "desc": "No referral needed in most cases"},
+      {"title": "The evaluation", "desc": "Painless tone test, about one hour"},
+      {"title": "Read your audiogram", "desc": "A clear graph of what you hear"},
+      {"title": "Make a plan", "desc": "Next steps reviewed the same day"}
+    ] }
+}

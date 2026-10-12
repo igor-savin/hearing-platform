@@ -1,0 +1,12 @@
+{
+  "slug": "legato-frames-ai-hearing-glasses",
+  "hero": { "title": "AI Hearing Glasses", "icon": "glasses", "accent": "gold" },
+  "info": { "title": "Before You Buy Hearing Glasses", "subtitle": "Five checks that matter more than the frame",
+    "rows": [
+      {"title": "Get your hearing checked", "desc": "A test shows if your loss fits what glasses can do"},
+      {"title": "Know the real price", "desc": "From $999, and lenses and a care plan add to it"},
+      {"title": "Check the red flags", "desc": "Sudden, one-sided or painful symptoms come first"},
+      {"title": "Ask your vision plan", "desc": "Legato says coverage will often apply, not always"},
+      {"title": "Read the return terms", "desc": "Legato offers a 45-day money-back guarantee"}
+    ] }
+}

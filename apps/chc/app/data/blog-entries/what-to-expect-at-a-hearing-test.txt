@@ -1,0 +1,37 @@
+  "/what-to-expect-at-a-hearing-test/": {
+    kicker: "Your First Visit",
+    headline: "What to Expect at a Hearing Test",
+    variant: "condition",
+    datePublished: "2021-03-24",
+    dateModified: "2026-08-25",
+    metaDescription:
+      "A hearing test is a painless, hour-long visit that measures how well you hear and understand speech. Here is what to expect at every step of the visit.",
+    intro: [
+      "A [hearing test](/hearing-testing/) is a painless appointment, usually about an hour, that measures how softly you can hear across different pitches and how clearly you make out speech. Nothing about it hurts, and there is no wrong answer to give. You listen, you respond, and by the end you have a plain picture of how your ears are doing.",
+      "Most people put the visit off because they are not sure what it involves. That uncertainty is easy to clear up. The appointment moves through a handful of predictable, comfortable steps, and your audiologist explains what is happening as you go.",
+      "If you are booking a first visit at our San Mateo or San Carlos office, knowing the shape of the appointment ahead of time tends to settle the nerves. Bring a spouse or friend if you like — a second set of ears often helps when you talk through the results.",
+    ],
+    takeaways: [
+      "A hearing test is painless, takes about an hour, and needs almost no preparation.",
+      "It measures both how softly you hear tones and how clearly you understand speech.",
+      "You leave with an audiogram you understand and a clear, no-pressure sense of next steps.",
+    ],
+    sections: [
+      ["Before you arrive", "Very little preparation is needed, which is part of why a hearing test is such an easy thing to check off. Come with a list of any medications you take, and jot down where you notice trouble — a noisy restaurant, the television, one particular grandchild's voice. If wax tends to build up in your ears, mention it when you book, since a quick look and [earwax removal](/services/earwax-removal/) may come first so the test reflects your true hearing rather than a blockage."],
+      ["The questions that come first", "Every evaluation opens with a conversation rather than a machine. Your audiologist asks about your general health, any ringing or dizziness, noise exposure over the years, and family history of hearing changes. These questions are not filler; they shape which tests matter most and help explain the results later. This is also the moment to describe, in your own words, the situations where hearing feels hardest."],
+      ["Inside the sound booth", "The core of the visit takes place in a quiet room or booth, wearing soft headphones. You will hear tones at different pitches and volumes, and press a button or raise a hand each time you catch one, even faintly. Then comes a speech portion, where you repeat back words at various levels so your audiologist can measure clarity, not just loudness. These are the standard building blocks of a hearing evaluation, and [ASHA's walk-through of a hearing test](https://www.asha.org/public/hearing/hearing-testing/) describes each one. A small probe may also check how your eardrum moves. None of it is uncomfortable."],
+      ["Reading your results together", "Your responses become an audiogram, a simple graph of the softest sounds you can hear at each pitch. Your audiologist walks you through it line by line: where your hearing sits in the normal range, where it dips, and whether one ear differs from the other. Good clinics slow down here. You should leave understanding your own chart, [not just nodding along](/why-pretending-to-hear-doesnt-help/), so ask questions until the picture is clear. A new study suggests those same audiogram numbers can help researchers find genes linked with hearing loss. We explain [what it found](/hearing-test-genetic-risk-hearing-loss/) and what it does not mean."],
+      ["Where things go from here", "For many people the news is reassuring, and the plan is simply to recheck in a year or two. If the test does show a loss, your options depend on its type and degree. That might mean a referral, or a conversation about [hearing aids](/products/hearing-aids/) and a follow-up [fitting](/hearing-aid-fitting/) tailored to your results. Whatever the outcome, you set the pace of the next step, and [our audiologists](/about-us/) are glad to talk it through."],
+    ],
+    bullets: ["Painless & about an hour", "Bring a medication list", "Case-history questions first", "Tones in a quiet booth", "Speech clarity check", "Plain-language results"],
+    faqs: [
+      ["Does a hearing test hurt?", "Not in the slightest. You sit comfortably in a quiet room, listen to tones and words through soft headphones, and respond when you hear them. The only probe involved is a small, painless one that checks how your eardrum moves. Most people are surprised by how relaxed the whole hour feels."],
+      ["How long does the appointment take?", "Plan for about an hour for a first full evaluation. That covers the opening questions, the listening tests themselves, and unhurried time to go over your results. Follow-up checks down the road usually run shorter, since your audiologist already knows your history."],
+      ["Should I bring anyone with me?", "It often helps to bring a spouse, adult child, or friend. A familiar voice can be useful during part of the testing, and a second person tends to catch details when you discuss the results and any next steps. If you would rather come alone, that is completely fine too — you will still leave with everything written down."],
+    ],
+    image: "/assets/blog/what-to-expect-at-a-hearing-test-1.svg",
+    imageLabel: "A calm, painless hour from first question to clear answers",
+    image2: "/assets/blog/what-to-expect-at-a-hearing-test-2.svg",
+    image2Label: "The steps of a hearing evaluation, start to finish",
+    image2Caption: "Each stage is comfortable, and you leave understanding your own results.",
+  },

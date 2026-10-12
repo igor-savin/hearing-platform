@@ -1,0 +1,37 @@
+"/tinnitus/temporary-or-permanent/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Is Tinnitus Temporary or Permanent?",
+  intro: [
+    "One of the most common questions we hear is whether the ringing will ever go away. Tinnitus can behave very differently from person to person. For some it is a short-term buzz after a loud concert; for others it becomes a daily companion.",
+    "Understanding the difference between temporary and long-term (chronic) tinnitus can help set realistic expectations and reduce some of the fear around the unknown. There is no single expiration date that applies to everyone, some tinnitus fades within hours or days, some improves over months, and some becomes long-term.",
+    "Written by our Bay Area audiologists in San Mateo and San Carlos, this page explains how long temporary tinnitus usually lasts, the signs it may be long-term, and why even chronic tinnitus can become much easier to live with. If you are not sure what you are hearing is tinnitus, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How long temporary tinnitus lasts", "Temporary tinnitus is often linked to a specific trigger, and the sound tends to fade as your ears and brain recover. After a loud event, a high-pitched ring or muffled hearing often improves over hours to a few days. With an ear infection or fluid, tinnitus frequently eases as the problem resolves. With a temporary earwax blockage, ringing often disappears once the wax is removed. And some medications cause reversible tinnitus that improves after the drug is stopped or adjusted under a doctor's guidance."],
+    ["Signs your tinnitus may be long-term", "Tinnitus is more likely to be long-lasting when it occurs alongside permanent hearing loss, when it has persisted for several months even if it fluctuates, or when several factors combine, longstanding noise exposure, age-related changes, stress, jaw or neck tension, and certain medical conditions. High anxiety also plays a role: the more frightening tinnitus feels, the more the brain focuses on it, creating a cycle where tinnitus and worry feed each other. Conditions like Meniere's disease and TMJ disorders can be associated with chronic tinnitus."],
+    ["What affects whether tinnitus fades", "Tinnitus is influenced by both the ear and the brain. Untreated hearing loss can keep the brain on high alert, while addressing it can shift attention back to real-world sound. Ongoing loud noise can re-trigger or worsen tinnitus. High stress makes the brain more sensitive to internal signals, and poor sleep makes tinnitus seem louder the next day. Even understanding what tinnitus is, and is not, often reduces the fear that drives how loud it seems."],
+    ["Can chronic tinnitus still improve?", "Yes. Even when tinnitus has been present for years, many people experience major improvements in how loud, intrusive, or bothersome it feels. There are two paths: reducing the sound source (treating earwax, infections, blood pressure, or TMJ, addressing hearing loss with [hearing aids and sound therapy](/services/tinnitus-therapy/), and exploring advanced options like Lenire where appropriate) and changing how the brain responds through habituation, Tinnitus Retraining Therapy, and cognitive behavioral techniques."],
+    ["Tinnitus after noise or medications", "If tinnitus started after a loud event, there is a chance it will improve over days to weeks, especially if it was a one-time exposure and you protect your ears going forward. But if it remains clearly noticeable after a week, schedule a [hearing evaluation](/hearing-testing/), and remember that repeated noise exposure increases the odds of permanent change. Some medications are ototoxic; the ringing may improve after the drug is stopped or changed, or it may linger, so never stop a prescribed medication without talking to your doctor."],
+    ["When to see a doctor or audiologist", "If you are worried about whether your tinnitus is permanent, that alone is a good reason to get it checked, you do not have to wait until it feels bad enough. Sudden hearing loss, one-sided tinnitus with severe dizziness, facial weakness, or a pounding headache should prompt urgent care. For most ongoing tinnitus, especially with possible hearing loss or noise exposure, an audiologist is the best starting point; see our guide on [when to see a doctor](/tinnitus/when-to-see-doctor/)."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Can tinnitus go away?", "/tinnitus/can-tinnitus-go-away/"],
+    ["Medications that cause tinnitus", "/tinnitus/medications/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Temporary tinnitus, from a loud event, infection, wax, or a medication, often fades over hours to weeks.",
+    "Tinnitus lasting several months, especially with hearing loss, is more likely to be long-term.",
+    "Even chronic tinnitus can become far less loud and intrusive through treatment and habituation."
+  ],
+  faqs: [
+    ["How do I know if my tinnitus is permanent?", "There is no exact cutoff, but tinnitus lasting three months or more, especially alongside hearing loss, is more likely long-term. Even then it can change, and most people make it far less bothersome with the right plan."],
+    ["My tinnitus started after a concert, will it go away?", "It may. Tinnitus after a one-time loud event often fades over days to weeks if you protect your ears afterward. If it is still clearly noticeable after about a week, book a hearing evaluation, and take it as a signal to protect your hearing going forward."],
+    ["Is there any hope if my tinnitus has lasted years?", "Yes. Long-standing tinnitus rarely disappears completely, but many people report dramatic improvements in loudness, intrusiveness, and distress through hearing care, sound therapy, and counseling. Our [tinnitus therapy program](/services/tinnitus-therapy/) is built around exactly this."]
+  ],
+  image: "/assets/core/tinnitus__temporary-or-permanent.svg",
+  imageLabel: "Short-lived spike or lasting companion?"
+},

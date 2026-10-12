@@ -1,0 +1,29 @@
+  "milpitas": {
+    name: "Milpitas",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 35 minutes south",
+    distanceTier: "far",
+    geo: { lat: 37.4323, lng: -121.8996 },
+    lede:
+      "Milpitas sits at the crossroads of the South Bay — where the 880 and 680 meet, the Great Mall draws crowds, and a BART station now anchors the transit hub. Our offices are across on the Peninsula, roughly 35 minutes away, and Milpitas patients travel that stretch when they want specialized hearing and tinnitus care.",
+    hook: [
+      "Clear hearing for a commuting, working city",
+      "Milpitas is a city of commuters and industrial and manufacturing workplaces, and two things follow from that. First, some patients carry years of occupational sound exposure, which can contribute to hearing changes and tinnitus over time. Second, daily life plays out in noise — transit platforms, the mall, busy job sites. We evaluate hearing in realistic noisy conditions and verify fittings with real-ear measurement, which is the kind of thorough work that brings Milpitas patients our way.",
+    ],
+    motif: "transit",
+    localScene: [
+      "A transit crossroads of the South Bay",
+      "Milpitas revolves around movement — the Milpitas BART and light-rail station, the Great Mall, the McCarthy Ranch shops, and neighborhoods spread between the 880 and 680 beneath the East Hills. Between commuting, shopping crowds, and industrial workplaces, quiet is scarce and clear speech in noise is the everyday test. For the Milpitas patients who choose us, we focus on speech-in-noise testing, verified fittings, and tinnitus care that closer options may not emphasize.",
+    ],
+    whyHere:
+      "Milpitas patients travel to us for what a quick appointment cannot deliver: verified fittings that work in noise, help with occupational hearing changes and [tinnitus](/tinnitus/), and honest second opinions. For basic maintenance, a South Bay provider is nearer, and we will say so plainly.",
+    landmarks:
+      "We are about 35 minutes from the Great Mall, the Milpitas BART station, and McCarthy Ranch, west and north via the 237 and 101 to our San Carlos office.",
+    faqs: [
+      ["I've worked around loud equipment for years — should I get tested?", "Yes. Long-term occupational noise exposure can contribute to hearing loss and tinnitus. A baseline evaluation shows where you stand and what protection or treatment is worth considering."],
+      ["Why drive to the Peninsula instead of staying in the South Bay?", "For routine care, staying close is sensible. People come to us from Milpitas for specialized needs — complex tinnitus, difficult fittings, Lenire, or a careful reassessment — where our expertise makes the trip worthwhile."],
+      ["How far is your office from Milpitas?", "About 35 minutes west via the 237 and 101 to San Carlos. Call 650-342-9449 and we will plan an efficient, thorough visit."],
+    ],
+  },

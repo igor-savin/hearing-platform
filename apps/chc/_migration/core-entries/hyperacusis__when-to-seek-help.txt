@@ -1,0 +1,38 @@
+"/hyperacusis/when-to-seek-help/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "When to Seek Help for Hyperacusis: Red Flags to Take Seriously",
+  intro: [
+    "Hyperacusis, or sound sensitivity, is often manageable, but some symptoms need urgent medical attention. This page helps you recognize red flags so you can take the right next step quickly and safely.",
+    "If you believe you are having a medical emergency, call 911 or go to the nearest emergency room. The guidance below is educational and does not replace an in-person evaluation.",
+    "If your symptoms have been building gradually without red flags, starting with an audiology evaluation is often the right first step. Our [hyperacusis overview](/hyperacusis/) and [coping guide](/hyperacusis/coping/) can help you plan from there."
+  ],
+  sections: [
+    ["Red flags that need urgent evaluation", "If any of the following are happening now, do not wait for a routine appointment; seek urgent medical care. These include sudden hearing loss or a sudden major change in hearing, especially over hours to a couple of days or when one ear suddenly feels blocked with a real hearing drop. Sudden hearing loss can be time-sensitive, so prompt care matters."],
+    ["Vertigo, neurologic, and trauma warning signs", "Seek urgent evaluation for severe vertigo or new trouble walking, such as spinning, falling, or vomiting with dizziness. New neurologic symptoms like facial weakness, new numbness, a severe headache unlike your usual, confusion, difficulty speaking, or vision changes also need urgent assessment. And after any head or ear trauma, a fall, accident, or blast exposure, a new hearing change, intense sound sensitivity, or dizziness should be checked urgently."],
+    ["Infection signs", "Fever, severe ear pain, or ear drainage can signal an infection or another issue that requires medical treatment rather than self-management. If you notice these alongside sound sensitivity, arrange to be seen promptly rather than waiting to see whether they pass on their own."],
+    ["Symptoms to evaluate soon", "Some symptoms warrant prompt attention without necessarily being emergencies, especially if they are worsening, persistent, or one-sided. These include new one-sided sound sensitivity, tinnitus, or hearing changes; a persistent pulsatile sound, a rhythmic whooshing in time with your heartbeat, which can require medical workup particularly if new or worsening; and rapidly worsening tolerance where you notice more triggers, less tolerance, and frequent spikes."],
+    ["When to start with an audiologist", "If your symptoms have built gradually and you do not have urgent red flags, an audiology evaluation is often the right starting point. This suits gradual-onset sound sensitivity that grows over weeks or months in restaurants, transit, or busy rooms; hyperacusis that shows up together with tinnitus, where the plan often needs to address both sides; and situations where you simply want a safe coping plan and are unsure about earplugs, avoidance, and gradual exposure. A [hearing test](/hearing-testing/) helps clarify what is going on."],
+    ["If you are not sure what category you are in", "That uncertainty is common. If you are unsure whether symptoms are urgent, start with the safest option for your situation: seek urgent care if you have sudden hearing loss, severe vertigo, or neurologic symptoms. Otherwise, schedule an evaluation and we will help triage the next steps, coordinating referrals to ENT or other specialists if anything looks medically concerning."]
+  ],
+  bulletLinks: [
+    ["Hyperacusis overview", "/hyperacusis/"],
+    ["Coping and gradual exposure", "/hyperacusis/coping/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Tinnitus and sound sensitivity", "/tinnitus/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Sudden hearing loss, severe vertigo, new neurologic symptoms, trauma-related changes, or infection signs need urgent care.",
+    "New one-sided symptoms and pulsatile whooshing deserve prompt evaluation even when not an emergency.",
+    "Gradual-onset sound sensitivity without red flags is usually well suited to starting with an audiology evaluation."
+  ],
+  faqs: [
+    ["What counts as a hyperacusis emergency?", "Sudden hearing loss, severe vertigo with falling or vomiting, new neurologic symptoms, hearing changes after head or ear trauma, and signs of infection like fever, severe pain, or drainage all warrant urgent medical care rather than a routine appointment."],
+    ["Is pulsatile whooshing serious?", "A rhythmic whooshing in time with your heartbeat can require medical workup, especially if it is new or worsening. It is worth being evaluated soon even if it is not an emergency."],
+    ["My sound sensitivity is only in one ear. Should I worry?", "New one-sided sound sensitivity, tinnitus, or hearing change should be evaluated. One-sided symptoms are an important clue that deserves prompt professional attention."],
+    ["I do not have red flags but sound bothers me more each week. What now?", "Gradually worsening sensitivity without urgent red flags is a good reason to schedule an audiology evaluation, where we assess your hearing and sound tolerance and build a safe coping plan."]
+  ],
+  image: "/assets/core/hyperacusis__when-to-seek-help.svg",
+  imageLabel: "Knowing when to ask for help"
+},

@@ -1,0 +1,29 @@
+  "atherton": {
+    name: "Atherton",
+    county: "San Mateo County",
+    region: "peninsula-south",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 12–15 minutes from our San Carlos office, down the 101 or El Camino",
+    distanceTier: "near",
+    geo: { lat: 37.4613, lng: -122.1977 },
+    lede:
+      "Atherton is a quiet, tree-canopied residential town with no commercial downtown by design — which means residents travel a short distance for nearly every service, hearing care included. Our San Carlos office is a straightforward 12-to-15-minute drive, and many Atherton patients have been coming to us for years.",
+    hook: [
+      "Discreet technology and unhurried, private care",
+      "Atherton patients often prioritize two things: hearing that keeps up with an active professional and social life, and technology that stays discreet. Modern invisible and receiver-in-canal hearing aids deliver both, and getting the most out of them depends on expert fitting and verification rather than the device alone. We take the time to program, verify, and fine-tune — and to keep it all private and unrushed.",
+    ],
+    motif: "estate",
+    localScene: [
+      "A residential town that travels for its care",
+      "Atherton is almost entirely residential by design — estate lots and tree canopy across Lindenwood, West Atherton, and Lloyden Park, with Holbrook-Palmer Park at its center and no commercial strip to speak of. Residents are used to traveling a few minutes for services, and hearing care is no exception. Many are active professionals and community members who want technology that keeps up with a full calendar while staying completely discreet, and the unhurried privacy of an independent practice over a big-box counter.",
+    ],
+    whyHere:
+      "Atherton residents choose us for meticulous testing, premium technology matched honestly to their needs, and specialized tinnitus care — with the continuity of seeing the same audiologist each time. Many first came for tinnitus or Lenire treatment and stayed for the whole of their hearing care.",
+    landmarks:
+      "We are a short drive from Atherton's Lindenwood, West Atherton, and Lloyden Park areas, and from the Menlo-Atherton corridor along El Camino Real and Marsh Road.",
+    faqs: [
+      ["Do you offer truly invisible hearing aids?", "We fit several invisible and near-invisible styles, including deep-canal options. The right choice depends on your ear anatomy and hearing needs, which we assess during your evaluation."],
+      ["Can I see a tinnitus specialist near Atherton?", "Yes. Dr. Emily McMahan, AuD, focuses on tinnitus care, including Lenire, and sees patients from Atherton and throughout the mid-Peninsula when she visits our practice, every six to eight weeks. Her appointments fill quickly, so call early."],
+      ["How far is the audiologist from Atherton?", "Our San Carlos office is about 12–15 minutes from Atherton via the 101 or El Camino Real. Call 650-342-9449 to arrange a visit."],
+    ],
+  },

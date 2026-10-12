@@ -1,0 +1,29 @@
+  "fremont": {
+    name: "Fremont",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "roughly 30 minutes across the Dumbarton Bridge",
+    distanceTier: "far",
+    geo: { lat: 37.5485, lng: -121.9886 },
+    lede:
+      "Fremont is one of the Bay Area's largest cities, a sprawling collection of former townships anchored by the historic Mission San Jose district and tied to the Peninsula by the Dumbarton Bridge. That bridge keeps our San Carlos office within reasonable range. Even so, our practice sits across the water, so Fremont patients generally come to us for specialized, focused hearing care.",
+    hook: [
+      "A big city one bridge from our San Carlos office",
+      "Fremont stretches across five old districts, but the Dumbarton Bridge lands close to our San Carlos location — roughly half an hour, traffic depending. That makes specialized care realistic here: in-depth [tinnitus](/tinnitus/) and Lenire treatment, real-ear-verified fittings, and second opinions on devices that never quite worked. For routine testing a local Fremont audiologist is a fair choice, but the direct Dumbarton connection is why many patients here decide the trip is worth it.",
+    ],
+    motif: "civic",
+    localScene: [
+      "From Mission San Jose to the flats",
+      "Fremont is really several towns in one — the historic Mission San Jose with its old adobe church, the shops of Niles, the Central Park lawns around Lake Elizabeth, and the Warm Springs district out by the newer BART station. It is a large, family-centered, tech-employing community spread over a wide area. Patients who come to us from Fremont usually do so on purpose, seeking a level of tinnitus and hearing specialization that is harder to find nearby.",
+    ],
+    whyHere:
+      "Fremont patients choose California Hearing Center for its depth in the hard cases — persistent tinnitus, Lenire therapy, and complex fittings — along with thorough testing and honest technology advice. The Dumbarton route keeps San Carlos close enough, and the continuity of one dedicated audiologist keeps them coming back.",
+    landmarks:
+      "From Mission San Jose, Niles, Central Park, or Warm Springs, our San Carlos office is roughly 30 minutes over the Dumbarton Bridge.",
+    faqs: [
+      ["How reachable is your office from Fremont?", "The Dumbarton Bridge lands close to our San Carlos office, roughly 30 minutes away. That makes specialized tinnitus care and complex fittings practical from Fremont."],
+      ["Why not just see a Fremont audiologist?", "For routine testing and maintenance, a local provider is reasonable. People travel to us for specialized tinnitus treatment, Lenire, and second opinions where our narrower focus makes the difference."],
+      ["Do you offer Lenire for tinnitus?", "Yes. Lenire is part of our tinnitus program, and Fremont's straightforward Dumbarton access makes its follow-up visits manageable. Call 650-342-9449 to discuss whether it fits your situation."],
+    ],
+  },

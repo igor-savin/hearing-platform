@@ -1,0 +1,30 @@
+  "vallejo": {
+    name: "Vallejo",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 70 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.1041, lng: -122.2566 },
+    lede:
+      "Vallejo sits on the northern edge of San Pablo Bay, a working waterfront city with deep naval history and its own ferry link to San Francisco. We'll be straight with you: our offices are on the Peninsula in San Mateo and San Carlos, about 70 minutes southwest — so for routine hearing care, a Vallejo-area provider will usually be more convenient.",
+    hook: [
+      "When the drive from Vallejo makes sense",
+      "For standard hearing tests and everyday hearing aids, we'd point you toward someone closer to home. Where the trip can be worth it is specialized care — persistent [tinnitus](/tinnitus/), Lenire treatment, a difficult fitting that hasn't gone right elsewhere, or a second opinion you want done thoroughly. Vallejo patients who come to us tend to come for that kind of expertise, and we build their visits to make the distance count: a full evaluation, treatment, and a follow-up plan that keeps repeat drives to a minimum.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A waterfront city with a naval past",
+      "Vallejo grew up around the water — the ferry terminal on the Mare Island Strait, the former Mare Island Naval Shipyard across the channel, the marina and the historic downtown along Georgia Street. Generations of shipyard and maritime workers here spent careers around heavy machinery, and occupational noise exposure over the years can contribute to hearing loss later in life. For patients who suspect noise has taken a toll, or who are wrestling with tinnitus, some decide the specialized care down on the Peninsula is worth the drive around the bay.",
+    ],
+    whyHere:
+      "Vallejo patients who make the trip are usually after tinnitus and diagnostic expertise they couldn't find nearby. For them we batch the testing and treatment into a small number of thorough appointments, so the bridge drive is rarely something they have to repeat.",
+    landmarks:
+      "Patients travel to our Peninsula offices from Vallejo's waterfront, Mare Island, and the Georgia Street downtown, generally around 70 minutes southwest via the 80 and the bridges.",
+    faqs: [
+      ["Vallejo's an hour-plus away — why would I come to you?", "For routine care, a local provider usually makes more sense. Patients travel to us from Vallejo mainly for specialized tinnitus treatment, Lenire, and complex cases where the expertise justifies the drive. We plan visits to limit repeat trips."],
+      ["I worked at the shipyard for years — could that have affected my hearing?", "Long-term occupational noise exposure can contribute to hearing loss over time. A thorough diagnostic evaluation can show whether noise is part of the picture and what will help. Call 650-342-9449 to arrange one."],
+      ["Can you make one long trip count for more?", "Yes. For patients driving from a distance, we consolidate testing, fitting, and counseling into efficient visits and build a follow-up plan that limits how often you need to come down."],
+    ],
+    consolidatedInto: "solano-county",
+  },

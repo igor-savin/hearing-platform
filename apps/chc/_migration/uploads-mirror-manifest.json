@@ -1,0 +1,2635 @@
+{
+  "count": 438,
+  "inBytes": 215636626,
+  "outBytes": 68894841,
+  "files": [
+    {
+      "rel": "2019/11/California-Hearing-Center-Blog-1_-Tips-for-a-Successful-Virtual-Family-Reunion.png",
+      "from": 509812,
+      "to": 450889,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/02/1.png",
+      "from": 78110,
+      "to": 78110,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/02/California-Hearint-Center1.jpg",
+      "from": 187619,
+      "to": 165510,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/02/Californnia-Hearing-Center-logo.png",
+      "from": 5503,
+      "to": 5503,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/02/Home-California-Hearing.png",
+      "from": 3154225,
+      "to": 234554,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/02/Screen-Shot-2020-02-05-at-7.38.10-AM-92x150.png",
+      "from": 8687,
+      "to": 8687,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/02/Screen-Shot-2020-02-05-at-7.38.10-AM.png",
+      "from": 17653,
+      "to": 17653,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/02/bigstock-Group-Of-Senior-Friends-Walkin-307536172.jpg",
+      "from": 540854,
+      "to": 91703,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/02/hero11.jpg",
+      "from": 180985,
+      "to": 163378,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/02/ida.png",
+      "from": 56222,
+      "to": 56222,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/02/image-placeholder.jpg",
+      "from": 12962,
+      "to": 12962,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/02/orange-gradient2.png",
+      "from": 22913,
+      "to": 22913,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/02/video-placeholder.jpg",
+      "from": 6276,
+      "to": 6276,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/11.png",
+      "from": 437015,
+      "to": 352348,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/03/22.png",
+      "from": 473821,
+      "to": 356032,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/03/C.png",
+      "from": 12876,
+      "to": 12876,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Encouraging-a-Loved-One-to-Take-a-Hearing-Test-100x52.jpeg",
+      "from": 5846,
+      "to": 5846,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Encouraging-a-Loved-One-to-Take-a-Hearing-Test-1024x536.jpeg",
+      "from": 79423,
+      "to": 79423,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Encouraging-a-Loved-One-to-Take-a-Hearing-Test-1184x620.jpeg",
+      "from": 99009,
+      "to": 99009,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Encouraging-a-Loved-One-to-Take-a-Hearing-Test-300x157.jpeg",
+      "from": 15126,
+      "to": 15126,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Encouraging-a-Loved-One-to-Take-a-Hearing-Test-600x314.jpeg",
+      "from": 36663,
+      "to": 36663,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Encouraging-a-Loved-One-to-Take-a-Hearing-Test-768x402.jpeg",
+      "from": 52250,
+      "to": 52250,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Encouraging-a-Loved-One-to-Take-a-Hearing-Test.jpeg",
+      "from": 102956,
+      "to": 89911,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-Identifying-the-Signs-of-Hearing-Loss.jpeg",
+      "from": 75181,
+      "to": 75181,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-The-Benefits-of-Treating-Hearing-Loss-100x52.jpeg",
+      "from": 6043,
+      "to": 6043,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-The-Benefits-of-Treating-Hearing-Loss-1024x536.jpeg",
+      "from": 96108,
+      "to": 96108,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-The-Benefits-of-Treating-Hearing-Loss-1184x620.jpeg",
+      "from": 119366,
+      "to": 101742,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-The-Benefits-of-Treating-Hearing-Loss-300x157.jpeg",
+      "from": 17269,
+      "to": 17269,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-The-Benefits-of-Treating-Hearing-Loss-600x314.jpeg",
+      "from": 44284,
+      "to": 44284,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-The-Benefits-of-Treating-Hearing-Loss-768x402.jpeg",
+      "from": 63723,
+      "to": 63723,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/California-Hearing-Center-The-Benefits-of-Treating-Hearing-Loss.jpeg",
+      "from": 123289,
+      "to": 109428,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/03/Darcy-Bio-Pic-2.jpg",
+      "from": 99887,
+      "to": 99887,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/Geleeza-Idolyantes-2.jpg",
+      "from": 60460,
+      "to": 60460,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/Group-Photo.png",
+      "from": 3599354,
+      "to": 254688,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/03/Lais-Ama-2.jpg",
+      "from": 31266,
+      "to": 31266,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/Samantha-Ramirez-2.jpg",
+      "from": 53416,
+      "to": 53416,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/bg-hearing.jpg",
+      "from": 23161,
+      "to": 23161,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/gradient-1.png",
+      "from": 76582,
+      "to": 76582,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/gradient2.png",
+      "from": 175527,
+      "to": 26996,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/03/ser-2.png",
+      "from": 2706,
+      "to": 2706,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/ser-3.png",
+      "from": 2992,
+      "to": 2992,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/serv-1.png",
+      "from": 802,
+      "to": 802,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/03/turn-up-logo.png",
+      "from": 3482,
+      "to": 3482,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-Tips-for-Selecting-Hearing-Aids-100x52.jpeg",
+      "from": 5469,
+      "to": 5469,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-Tips-for-Selecting-Hearing-Aids-1024x536.jpeg",
+      "from": 46762,
+      "to": 46762,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-Tips-for-Selecting-Hearing-Aids-1184x620.jpeg",
+      "from": 56429,
+      "to": 56429,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-Tips-for-Selecting-Hearing-Aids-300x157.jpeg",
+      "from": 10686,
+      "to": 10686,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-Tips-for-Selecting-Hearing-Aids-600x314.jpeg",
+      "from": 22431,
+      "to": 22431,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-Tips-for-Selecting-Hearing-Aids-768x402.jpeg",
+      "from": 31106,
+      "to": 31106,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-Tips-for-Selecting-Hearing-Aids.jpeg",
+      "from": 59056,
+      "to": 59056,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-What-to-Ask-During-A-Hearing-Consultation.jpeg",
+      "from": 65744,
+      "to": 65744,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/04/California-Hearing-Center-What-to-Expect-at-a-Hearing-Test.jpeg",
+      "from": 70127,
+      "to": 70127,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Adjusting-to-New-Hearing-Aids.jpeg",
+      "from": 109345,
+      "to": 94366,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Communication-At-Work-_-May-is-Better-Hearing-and-Speech-Month-100x52.jpeg",
+      "from": 5809,
+      "to": 5809,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Communication-At-Work-_-May-is-Better-Hearing-and-Speech-Month-1024x536.jpeg",
+      "from": 63064,
+      "to": 63064,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Communication-At-Work-_-May-is-Better-Hearing-and-Speech-Month-1184x620.jpeg",
+      "from": 76608,
+      "to": 76608,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Communication-At-Work-_-May-is-Better-Hearing-and-Speech-Month-300x157.jpeg",
+      "from": 13842,
+      "to": 13842,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Communication-At-Work-_-May-is-Better-Hearing-and-Speech-Month-600x314.jpeg",
+      "from": 31847,
+      "to": 31847,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Communication-At-Work-_-May-is-Better-Hearing-and-Speech-Month-768x402.jpeg",
+      "from": 43293,
+      "to": 43293,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Communication-At-Work-_-May-is-Better-Hearing-and-Speech-Month.jpeg",
+      "from": 80137,
+      "to": 80137,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/California-Hearing-Center-Prepare-for-a-Hearing-Aid-Fitting.jpeg",
+      "from": 92600,
+      "to": 92600,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/05/Screen-Shot-2020-05-24-at-9.55.05-PM.png",
+      "from": 605626,
+      "to": 251076,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/05/Screen-Shot-2020-05-24-at-9.55.52-PM.png",
+      "from": 613389,
+      "to": 281733,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/05/Screen-Shot-2020-05-24-at-9.56.09-PM.png",
+      "from": 589563,
+      "to": 243823,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/05/about-us-scaled.jpg",
+      "from": 202959,
+      "to": 64225,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/05/aboutus.png",
+      "from": 459414,
+      "to": 172822,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/05/bg-our-vertual.jpg",
+      "from": 27938,
+      "to": 27938,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Tips-for-Driving-with-Hearing-Aids.jpeg",
+      "from": 180600,
+      "to": 155821,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Understanding-Noise-Induced-Hearing-Loss-100x52.jpeg",
+      "from": 5710,
+      "to": 5710,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Understanding-Noise-Induced-Hearing-Loss-1024x536.jpeg",
+      "from": 68688,
+      "to": 68688,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Understanding-Noise-Induced-Hearing-Loss-1184x620.jpeg",
+      "from": 86074,
+      "to": 86074,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Understanding-Noise-Induced-Hearing-Loss-300x157.jpeg",
+      "from": 13481,
+      "to": 13481,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Understanding-Noise-Induced-Hearing-Loss-600x314.jpeg",
+      "from": 31213,
+      "to": 31213,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Understanding-Noise-Induced-Hearing-Loss-768x402.jpeg",
+      "from": 45198,
+      "to": 45198,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/06/California-Hearing-Center-Understanding-Noise-Induced-Hearing-Loss.jpeg",
+      "from": 91967,
+      "to": 91967,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/Audiology-Services.png",
+      "from": 472897,
+      "to": 186853,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/07/Ear-Gear-Page-Logos.png",
+      "from": 27558,
+      "to": 27558,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/Ear-Gear-Page-Logos1.png",
+      "from": 24048,
+      "to": 24048,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/Ear-Gear-Page-Logos2.png",
+      "from": 40570,
+      "to": 40570,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/Ear-Gear-Page-Logos3.png",
+      "from": 26039,
+      "to": 26039,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/Ear-Gear-Page-Logos4.png",
+      "from": 28271,
+      "to": 28271,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/Ear-Gear-Page-Logos5.png",
+      "from": 12462,
+      "to": 12462,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/Screen-Shot-2020-07-01-at-9.03.24-AM.png",
+      "from": 302697,
+      "to": 109532,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/07/Screen-Shot-2020-07-01-at-9.07.57-AM.png",
+      "from": 238053,
+      "to": 96957,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/07/audiology1.png",
+      "from": 235309,
+      "to": 207764,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/07/hear-1.png",
+      "from": 48262,
+      "to": 48262,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/hear.png",
+      "from": 36981,
+      "to": 36981,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/hearing-protection.png",
+      "from": 99899,
+      "to": 99899,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/new1.png",
+      "from": 296186,
+      "to": 61801,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/07/new2.png",
+      "from": 113148,
+      "to": 40669,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/07/oticon.png",
+      "from": 25200,
+      "to": 25200,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/phonak.png",
+      "from": 18617,
+      "to": 18617,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/resound-1.png",
+      "from": 14397,
+      "to": 14397,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/07/widex.png",
+      "from": 17262,
+      "to": 17262,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/5-Keys-Logo.png",
+      "from": 32199,
+      "to": 32199,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/5keys.png",
+      "from": 168,
+      "to": 168,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/California-Hearing-Center-comics.jpg",
+      "from": 316593,
+      "to": 126111,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/09/California-Hearing-Center-first-hearing-test.jpg",
+      "from": 3592983,
+      "to": 161263,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/09/California-Hearing-Center-granddaughters-stories-1.jpg",
+      "from": 2849584,
+      "to": 132442,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/09/California-Hearing-Center-granddaughters-stories-scaled.jpg",
+      "from": 386200,
+      "to": 130479,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/09/California-Hearing-Center-nature.jpg",
+      "from": 623016,
+      "to": 274740,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/09/California-Hearing-Center-sunday-drive.jpg",
+      "from": 390328,
+      "to": 175421,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2020/09/Sample-header-image.jpg",
+      "from": 52736,
+      "to": 52736,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/Screen-Shot-2020-09-24-at-1.31.36-AM.png",
+      "from": 21780,
+      "to": 21780,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/Screen-Shot-2020-09-24-at-1.31.46-AM.png",
+      "from": 24021,
+      "to": 24021,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/Screen-Shot-2020-09-24-at-1.31.55-AM-1.png",
+      "from": 23563,
+      "to": 23563,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/Screen-Shot-2020-09-24-at-1.31.55-AM.png",
+      "from": 23736,
+      "to": 23736,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/Screen-Shot-2020-09-24-at-1.32.09-AM.png",
+      "from": 22176,
+      "to": 22176,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/09/Screen-Shot-2020-09-24-at-1.32.22-AM.png",
+      "from": 23231,
+      "to": 23231,
+      "action": "copy"
+    },
+    {
+      "rel": "2020/12/CHC_Logo.png",
+      "from": 28163,
+      "to": 28163,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/01/Father-Son-scaled.jpg",
+      "from": 555200,
+      "to": 179672,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/01/Were-All-Ears.png",
+      "from": 136661,
+      "to": 28161,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/01/bannerAbout.jpg",
+      "from": 37635,
+      "to": 37635,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/02/phonak.png",
+      "from": 332704,
+      "to": 86636,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/27-YEARS.png",
+      "from": 12929,
+      "to": 12929,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/5-Keys-Services-page.jpg",
+      "from": 25293,
+      "to": 25293,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Auditory-Brain-Training-–-Enhance-Your-Hearing-1.jpg",
+      "from": 93459,
+      "to": 93459,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Auditory-Brain-Training-–-Enhance-Your-Hearing.jpg",
+      "from": 411753,
+      "to": 56700,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/CHC-San-Mateo-for-YouTube.jpg",
+      "from": 222138,
+      "to": 82862,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Communication-5-Keys.png",
+      "from": 3260,
+      "to": 3260,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Dark-Blue-Logo-1.png",
+      "from": 25238,
+      "to": 25238,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Dark-Blue-Logo.png",
+      "from": 17924,
+      "to": 17924,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ear-Gear.jpg",
+      "from": 645899,
+      "to": 90058,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Ear-shutterstock-1376904326-scaled.jpg",
+      "from": 182238,
+      "to": 90209,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Etymotic.png",
+      "from": 8951,
+      "to": 8951,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/For-Ear-Gear-Page-Sleep-Plugs.jpg",
+      "from": 49370,
+      "to": 49370,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/HLAA-horiz-logo_4C.png",
+      "from": 26361,
+      "to": 26361,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Header-Image-Products-Hearing-Aid-Page-Hearing-Aid-Banner.png",
+      "from": 81328,
+      "to": 81328,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Hearing-Aid-Lineup.png",
+      "from": 81328,
+      "to": 81328,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Hearing-Aids.png",
+      "from": 236092,
+      "to": 98123,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Hearing-Journey-2021.02.25dB.pdf",
+      "from": 141010,
+      "to": 141010,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ida-Label-Clinic-2021.png",
+      "from": 159522,
+      "to": 37875,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Image-Coming-Soon-Placeholder.png",
+      "from": 22669,
+      "to": 22669,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/IntheCanal-Hearing-Aid.png",
+      "from": 1842072,
+      "to": 271478,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/JH-Audio-logo.gif",
+      "from": 12034,
+      "to": 12034,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/LACE-Logo-SMALL.png",
+      "from": 19179,
+      "to": 19179,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Online-Hearing-Test-page.png",
+      "from": 123865,
+      "to": 51460,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Online-Hearing-Test.jpg",
+      "from": 580275,
+      "to": 100184,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Oticon-Hearing-Aid.png",
+      "from": 520947,
+      "to": 162890,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Oticon-Products-Banner-1920x800-1.jpg",
+      "from": 58580,
+      "to": 58580,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Reviews-page-1.jpg",
+      "from": 473742,
+      "to": 42781,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Reviews-page-scaled.jpg",
+      "from": 132338,
+      "to": 49940,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Sensaphonics.png",
+      "from": 36444,
+      "to": 36444,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Sound-Waves-92254183.jpg",
+      "from": 169120,
+      "to": 38616,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Ultimate-Ears-logo.png",
+      "from": 38014,
+      "to": 38014,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-100x56.jpg",
+      "from": 5784,
+      "to": 5784,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-1024x576.jpg",
+      "from": 89438,
+      "to": 89438,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-1184x666.jpg",
+      "from": 113647,
+      "to": 93485,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-1536x864.jpg",
+      "from": 177497,
+      "to": 148189,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-2048x1152.jpg",
+      "from": 288095,
+      "to": 149726,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-300x169.jpg",
+      "from": 14958,
+      "to": 14958,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-600x338.jpg",
+      "from": 38686,
+      "to": 38686,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss-768x432.jpg",
+      "from": 55887,
+      "to": 55887,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss.jpg",
+      "from": 306385,
+      "to": 158036,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/Westone.png",
+      "from": 10344,
+      "to": 10344,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/YEARS.png",
+      "from": 15834,
+      "to": 15834,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/clEAR-logo-blue.png",
+      "from": 4991,
+      "to": 4991,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/contact-Us.jpg",
+      "from": 740883,
+      "to": 154187,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/03/logo-blue.png",
+      "from": 4991,
+      "to": 4991,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/oticon-hearing-aids.jpg",
+      "from": 66958,
+      "to": 66958,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/oticon.png",
+      "from": 15142,
+      "to": 15142,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/otoscope.png",
+      "from": 8538,
+      "to": 8538,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/sensaphonics-1.png",
+      "from": 7828,
+      "to": 7828,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/03/shutterstock_1727876344.jpeg",
+      "from": 728366,
+      "to": 79819,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-100x56.jpg",
+      "from": 6117,
+      "to": 6117,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-1024x576.jpg",
+      "from": 70761,
+      "to": 70761,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-1184x666.jpg",
+      "from": 86862,
+      "to": 86862,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-1536x864.jpg",
+      "from": 120822,
+      "to": 101976,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-2048x1152.jpg",
+      "from": 176988,
+      "to": 107451,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-300x169.jpg",
+      "from": 15446,
+      "to": 15446,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-600x338.jpg",
+      "from": 35733,
+      "to": 35733,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss-768x432.jpg",
+      "from": 47686,
+      "to": 47686,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/A-Brief-History-of-Hearing-Loss.jpg",
+      "from": 179804,
+      "to": 109827,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/04/Ways-to-Accommodate-Your-Loved-Ones-with-Hearing-Loss.jpg",
+      "from": 236981,
+      "to": 127493,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-100x56.jpg",
+      "from": 5773,
+      "to": 5773,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-1024x576.jpg",
+      "from": 71096,
+      "to": 71096,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-1184x666.jpg",
+      "from": 88107,
+      "to": 88107,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-1536x864.jpg",
+      "from": 127267,
+      "to": 108596,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-2048x1152.jpg",
+      "from": 192886,
+      "to": 110162,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-300x169.jpg",
+      "from": 14191,
+      "to": 14191,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-600x338.jpg",
+      "from": 34098,
+      "to": 34098,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help-768x432.jpg",
+      "from": 46758,
+      "to": 46758,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/04/Why-Pretending-to-Hear-Doesnt-Help.jpg",
+      "from": 192098,
+      "to": 113660,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/05/Azra-Hill-.jpeg",
+      "from": 45220,
+      "to": 45220,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/05/Kira-Podznyakova.png",
+      "from": 582017,
+      "to": 186765,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/10/California_Hearing_Center_WebsitePopup.jpg",
+      "from": 34843,
+      "to": 34843,
+      "action": "copy"
+    },
+    {
+      "rel": "2021/11/Jen-scaled.jpg",
+      "from": 831364,
+      "to": 251002,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/11/Tasha.jpg",
+      "from": 819673,
+      "to": 114269,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2021/11/kira-pozdnyakova.jpg",
+      "from": 22824,
+      "to": 22824,
+      "action": "copy"
+    },
+    {
+      "rel": "2022/02/California-Hearing-Center.png",
+      "from": 12675,
+      "to": 12675,
+      "action": "copy"
+    },
+    {
+      "rel": "2022/05/California-Hearing-Center-1.png",
+      "from": 34974,
+      "to": 34974,
+      "action": "copy"
+    },
+    {
+      "rel": "2022/05/California-Hearing-Center.png",
+      "from": 12843,
+      "to": 12843,
+      "action": "copy"
+    },
+    {
+      "rel": "2023/02/new-nobg.png",
+      "from": 645423,
+      "to": 196600,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2023/06/calhearing_pride_blog_post-1-scaled.jpg",
+      "from": 200306,
+      "to": 72731,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2023/06/calhearing_pride_blog_post-scaled.jpg",
+      "from": 200306,
+      "to": 72731,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2023/10/AdobeStock_378133951.jpeg",
+      "from": 75003,
+      "to": 75003,
+      "action": "copy"
+    },
+    {
+      "rel": "2024/01/JenR.jpg",
+      "from": 205709,
+      "to": 76978,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2024/01/JenR_75.jpg",
+      "from": 115795,
+      "to": 81229,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/03/California-Hearing-Center-comics.webp",
+      "from": 57000,
+      "to": 57000,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/California-Hearing-Center-granddaughters-stories-1.webp",
+      "from": 67004,
+      "to": 67004,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/California-Hearing-Center-nature.webp",
+      "from": 196072,
+      "to": 196072,
+      "action": "copy (re-encode was larger)"
+    },
+    {
+      "rel": "2025/03/California-Hearing-Center-sunday-drive.webp",
+      "from": 95480,
+      "to": 95480,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/CapTel_logo-1920w.webp",
+      "from": 6122,
+      "to": 6122,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/Daniella.png",
+      "from": 428077,
+      "to": 158823,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/03/Father-Son-scaled-1.webp",
+      "from": 94542,
+      "to": 94542,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/Ida-Label-Clinic-2021-300x300.webp",
+      "from": 17664,
+      "to": 17664,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/Ida-Label-Clinic-2021.webp",
+      "from": 38132,
+      "to": 38132,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/LyricLogo-250x128-1920w.webp",
+      "from": 1764,
+      "to": 1764,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/SiemensLogo-250x40-1920w.png",
+      "from": 3656,
+      "to": 3656,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/Signia_logo-1920w.webp",
+      "from": 1896,
+      "to": 1896,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/StarkeyLogo-250x131-1920w.webp",
+      "from": 3336,
+      "to": 3336,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/UnitronLogo-250x64-1920w.webp",
+      "from": 3550,
+      "to": 3550,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/bg-our-vertual.webp",
+      "from": 4236,
+      "to": 4236,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/caption-call-trans-bg1-1920w.webp",
+      "from": 13334,
+      "to": 13334,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/google-reviews.png",
+      "from": 7795,
+      "to": 7795,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/google.png",
+      "from": 173343,
+      "to": 57381,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/03/google2.webp",
+      "from": 22614,
+      "to": 22614,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/03/hero-scaled.jpg",
+      "from": 246609,
+      "to": 101597,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/03/oticon.png",
+      "from": 12708,
+      "to": 12708,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/California-Hearing-Center-1.webp",
+      "from": 15010,
+      "to": 15010,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/Oticon-Intent-scale.webp",
+      "from": 15696,
+      "to": 15696,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/Phonak-Infinio-copper-scale.webp",
+      "from": 9422,
+      "to": 9422,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/Phonak-Lyric-Hearing-Aid.webp",
+      "from": 20082,
+      "to": 20082,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/ReSound-Vivia.webp",
+      "from": 15812,
+      "to": 15812,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/Signia-IX.webp",
+      "from": 12952,
+      "to": 12952,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/Starkey-Edge-AI.webp",
+      "from": 16386,
+      "to": 16386,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/Widex-Allure.webp",
+      "from": 19594,
+      "to": 19594,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/article.png",
+      "from": 1611653,
+      "to": 681166,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/04/hero-scaled-1.webp",
+      "from": 65276,
+      "to": 65276,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/04/image_fx-1.png",
+      "from": 1519524,
+      "to": 440786,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/04/image_fx.png",
+      "from": 1519524,
+      "to": 440786,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/04/new1.webp",
+      "from": 4934,
+      "to": 4934,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/05/Image_fx-17.png",
+      "from": 1153749,
+      "to": 363991,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/Image_fx-18.png",
+      "from": 1095655,
+      "to": 336320,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-11.png",
+      "from": 1332257,
+      "to": 378157,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-12.png",
+      "from": 1370955,
+      "to": 425504,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-13.png",
+      "from": 1391317,
+      "to": 420453,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-14.png",
+      "from": 1619526,
+      "to": 480687,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-15.png",
+      "from": 1452699,
+      "to": 528424,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-16.png",
+      "from": 1318481,
+      "to": 425028,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-2.png",
+      "from": 1496346,
+      "to": 520835,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-3.png",
+      "from": 1119494,
+      "to": 502871,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-4.png",
+      "from": 1558404,
+      "to": 467594,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-5.png",
+      "from": 1540333,
+      "to": 454975,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-6.png",
+      "from": 1283366,
+      "to": 437115,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-7.png",
+      "from": 1445139,
+      "to": 502930,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-8.png",
+      "from": 1409290,
+      "to": 487635,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/05/image_fx-9.png",
+      "from": 1340995,
+      "to": 491289,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T004633.929Z.jpg",
+      "from": 587337,
+      "to": 37769,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T005323.366Z.jpg",
+      "from": 494526,
+      "to": 39155,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T005904.457Z.jpg",
+      "from": 728326,
+      "to": 60798,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T010339.663Z.jpg",
+      "from": 903537,
+      "to": 84128,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T130345.341Z-100x75.jpg",
+      "from": 2573,
+      "to": 2573,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T130345.341Z-300x225.jpg",
+      "from": 12757,
+      "to": 12757,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T130345.341Z-768x576.jpg",
+      "from": 57437,
+      "to": 57437,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-29T130345.341Z.jpg",
+      "from": 802691,
+      "to": 56075,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-30T130050.191Z.jpg",
+      "from": 2367,
+      "to": 2367,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-30T160409.307Z-100x75.jpg",
+      "from": 1291,
+      "to": 1291,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-30T160409.307Z-300x225.jpg",
+      "from": 6596,
+      "to": 6596,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-30T160409.307Z-768x576.jpg",
+      "from": 29808,
+      "to": 29808,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/06/file.png-2025-06-30T160409.307Z.jpg",
+      "from": 486595,
+      "to": 21409,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/2yovDAg3D.png",
+      "from": 1568442,
+      "to": 444123,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/5sUFoXpwCozaBEM3D.png",
+      "from": 793577,
+      "to": 281417,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/FGJ0Kc3D.png",
+      "from": 1361483,
+      "to": 412361,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/FeF4LfCYfefUTnQA3D.png",
+      "from": 1312280,
+      "to": 429938,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/H3EQ3D.png",
+      "from": 649426,
+      "to": 248761,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/HSyNG0igh6Hb4M2BF0WBh3fNOH11vN3scHuHN469HU3D.png",
+      "from": 1068313,
+      "to": 345606,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/SJHukj02iQ3D.png",
+      "from": 952711,
+      "to": 279339,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/TRWrHDWEvP9Ak9HYSBux8jCFUeUFjidaNcQ3D.png",
+      "from": 1204304,
+      "to": 308517,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/TxvQ3D.png",
+      "from": 1124797,
+      "to": 322216,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/WlXzAcDsWLPmkiC0Mt3IvLaU3D.png",
+      "from": 324980,
+      "to": 129133,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.jpeg-2025-07-10T200744.730Z-scaled.jpg",
+      "from": 172521,
+      "to": 66587,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-01T130052.339Z-100x75.jpg",
+      "from": 1577,
+      "to": 1577,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-01T130052.339Z-300x225.jpg",
+      "from": 7602,
+      "to": 7602,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-01T130052.339Z-768x576.jpg",
+      "from": 34311,
+      "to": 34311,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-01T130052.339Z.jpg",
+      "from": 556439,
+      "to": 32790,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-02T130052.899Z.jpg",
+      "from": 616285,
+      "to": 35776,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-03T130046.890Z.jpg",
+      "from": 744766,
+      "to": 56317,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-04T130048.662Z.jpg",
+      "from": 447095,
+      "to": 36314,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-05T130044.625Z.jpg",
+      "from": 2367,
+      "to": 2367,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-06T130040.482Z.jpg",
+      "from": 871379,
+      "to": 68266,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-07T130200.650Z.jpg",
+      "from": 760391,
+      "to": 52214,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-08T130153.812Z.jpg",
+      "from": 603123,
+      "to": 41326,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-09T130213.989Z.jpg",
+      "from": 651463,
+      "to": 45423,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-10T130218.889Z-100x75.jpg",
+      "from": 3342,
+      "to": 3342,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-10T130218.889Z-300x225.jpg",
+      "from": 19097,
+      "to": 19097,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-10T130218.889Z-768x576.jpg",
+      "from": 84380,
+      "to": 84380,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/07/file.png-2025-07-10T130218.889Z.jpg",
+      "from": 992586,
+      "to": 90723,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/gESnAR54d8VPzLsvwgXg3D.png",
+      "from": 1130301,
+      "to": 366917,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/hA6u2EyLqUg3D.png",
+      "from": 1286072,
+      "to": 597749,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/j52BYIvNirbjA3D.png",
+      "from": 662840,
+      "to": 155632,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/lM9a2cMx1lg4k8nXtVQ5Dx06fUDAuxFJWTOG1Q3D.png",
+      "from": 1018714,
+      "to": 343862,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-10T133A003A15Zske2025-07-11T133A003A15Zsksbskv2024-08-04sig9GtJ7Fw9nxNu4MonopbU9XAAyMpdihOPMU67RMCkm8E3D.png",
+      "from": 1291728,
+      "to": 379872,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-10T143A253A11Zske2025-07-11T143A253A11Zsksbskv2024-08-04sig9SdzGLEjI1ACR3Xu87k8dUx4WcuCN8bwsF1Z4yo5pWk3D.png",
+      "from": 972994,
+      "to": 335262,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-11T003A563A56Zske2025-07-12T003A563A56Zsksbskv2024-08-04sigqrnEgiN5hCcgrAAasmSWMrt6pHZc0omqFeMl2YTPfvo3D.png",
+      "from": 1154739,
+      "to": 380298,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-13T083A563A37Zske2025-07-14T083A563A37Zsksbskv2024-08-04sigf9ZJ56EdwvfGFr2BidNarsfh7KhO9BnSUSSYjtACwmTg3D.png",
+      "from": 690375,
+      "to": 275505,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-15T013A573A18Zske2025-07-16T013A573A18Zsksbskv2024-08-04sig2oE97fP2aRXlb2rfxlYOxicL1Rk6naOXN4oqWCRo4Ak3D.png",
+      "from": 1132418,
+      "to": 349548,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-16T063A473A52Zske2025-07-17T063A473A52Zsksbskv2024-08-04sigl9ZjIL3Cw2bFzT7nXby2XbRa8Ho8bSirbQaJKZIgqgY3D.png",
+      "from": 1696738,
+      "to": 516248,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-21T093A263A41Zske2025-07-22T093A263A41Zsksbskv2024-08-04sige2BWkASoFWaB5VYBtT4LkxRraztnvWWX08fXujWvrTAk3D.png",
+      "from": 1323246,
+      "to": 339672,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-29T103A583A09Zske2025-07-30T103A583A09Zsksbskv2024-08-04sigOd3IiDfn4cCzsw0R0v1E8P2HB3pSBfpnsr8KWpDKTYo3D.png",
+      "from": 1144274,
+      "to": 342751,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-07-30T103A293A24Zske2025-07-31T103A293A24Zsksbskv2024-08-04sigHTPcYOHNFsR3NnyEFLU18pcvzzAze0sx0rX84q394J43D.png",
+      "from": 1341861,
+      "to": 393154,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/07/s3D.png",
+      "from": 1106973,
+      "to": 350031,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/30-1.jpg",
+      "from": 88266,
+      "to": 88266,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/30.jpg",
+      "from": 88266,
+      "to": 88266,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/8sQGamDAOdt406BCkFSn7Fs3D.png",
+      "from": 1070633,
+      "to": 338610,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/AAAEarStack-287-800x256.jpg",
+      "from": 37054,
+      "to": 37054,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/Darcy-higher-res-1.jpeg",
+      "from": 86970,
+      "to": 86970,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/Darcy-higher-res.jpeg",
+      "from": 86970,
+      "to": 86970,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/DcIiMCPRZs2v9GgbswW1qqmiI3D.png",
+      "from": 1189312,
+      "to": 403926,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/Giana.png",
+      "from": 60692,
+      "to": 60692,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/LLMD8rWhPik0jJBRJy6m9s9CgwQMfac3D.png",
+      "from": 1125211,
+      "to": 359239,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/MBPwIilaCCSj6UEURY3D.png",
+      "from": 1470692,
+      "to": 388361,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/NCCDP-High-Res-Logo-Shaped-jpeg-300x81.jpg",
+      "from": 8152,
+      "to": 8152,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/Sierra.png",
+      "from": 52665,
+      "to": 52665,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/U3D.png",
+      "from": 1420401,
+      "to": 365650,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/UNmyEY2B3xs7941709jt8E3D.png",
+      "from": 1189081,
+      "to": 318022,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/VZU3D.png",
+      "from": 1345187,
+      "to": 372113,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/W7FSXBFGtxmpPm1qZ8HGmwWivlNYXLHYm043D.png",
+      "from": 1256349,
+      "to": 339008,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/WO2Bi78GgEUwynK5o6HEQ3D.png",
+      "from": 1826752,
+      "to": 520655,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/alaska-lenire-hero-image-updated.webp",
+      "from": 38898,
+      "to": 38898,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/08/bY3D.png",
+      "from": 1260119,
+      "to": 359914,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/esdDI3D.png",
+      "from": 1153238,
+      "to": 310364,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/gjAJ8Q16bk3D.png",
+      "from": 1286271,
+      "to": 391886,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/jXG5WWayLWdUVsXPCmXc3IsnNYI62vHOHdm5wis3D.png",
+      "from": 1545605,
+      "to": 392284,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/kFOTZnT8zs3D.png",
+      "from": 1246043,
+      "to": 377422,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/lL6Hzz00QrU3D.png",
+      "from": 694458,
+      "to": 275189,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/lVi2ezz74nzF9TLQ3D.png",
+      "from": 1574819,
+      "to": 437784,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/mNql2qhhNr4hXpGm4k2BFcE3D.png",
+      "from": 1469722,
+      "to": 404102,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/oVdX2Bmdfpfo3D.png",
+      "from": 977493,
+      "to": 322054,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoid77e5a8ec-6bd1-4477-8afc-16703a64f029sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-08T193A463A14Zske2025-08-09T193A463A14Zsksbskv2024-08-04sigUU7e9FXtleu7HJxDjzqqXyBxvOU1DOobVGVduML3LZM3D.png",
+      "from": 886924,
+      "to": 227932,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-01T123A403A36Zske2025-08-02T123A403A36Zsksbskv2024-08-04sigVhwBeP7pWGYfYczs2QhlKREvlNNQgqyrnl3EiTYHgZg3D.png",
+      "from": 1151037,
+      "to": 397982,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-04T103A393A06Zske2025-08-05T103A393A06Zsksbskv2024-08-04siglgzZW8B0qnr7Rd2BW9oYrRRPzC7sM0iQ3kFiejol4fTg3D.png",
+      "from": 1686834,
+      "to": 454015,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-24T133A013A24Zske2025-08-25T133A013A24Zsksbskv2024-08-04sigqUozot1gCLZw4xxZx3OYxs30ILqqUWeEd7P1U3o2nRs3D.png",
+      "from": 1403056,
+      "to": 409796,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-14T133A013A33Zske2025-08-15T133A013A33Zsksbskv2024-08-04sig2V0ugy40hOEzd857YmgCm8eytHcRY1XXjY3Q4VhKVsk3D.png",
+      "from": 995074,
+      "to": 391441,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-14T143A433A59Zske2025-08-15T143A433A59Zsksbskv2024-08-04sigNaVPG4ADe9vDPTCcHfmUGjIqf90s02RbXjcO2TsVnk83D.png",
+      "from": 1232153,
+      "to": 350776,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-19T133A013A19Zske2025-08-20T133A013A19Zsksbskv2024-08-04sig6vwDBa6ZYB06AWfwTENlByV67AGMfa5iL5UWx2B9rM883D.png",
+      "from": 1299227,
+      "to": 419600,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-21T013A203A55Zske2025-08-22T013A203A55Zsksbskv2024-08-04sigNo52Bj9xXseLm11MVyhmKdmOP20NBC9Blh1JJwG5Na1Q3D.png",
+      "from": 1662781,
+      "to": 428101,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-08-31T133A013A07Zske2025-09-01T133A013A07Zsksbskv2024-08-04sighk4PDoKgwBFFnBoDyGWu6ZXVw6kCCFCJuPZQXRPHAPU3D.png",
+      "from": 1347231,
+      "to": 346725,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/vCHoYob28wer2ta0tWaHV4hf4OfzLV03D.png",
+      "from": 1166768,
+      "to": 349530,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/xe7PdW4b02BM3D.png",
+      "from": 1190522,
+      "to": 359201,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/08/y0xRbRZ95gvNrQbWLywre5M3D.png",
+      "from": 377151,
+      "to": 85423,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/6YbSQXedTBI9Yxz5uOwZW5SE3D.png",
+      "from": 1253487,
+      "to": 350866,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/A3D.png",
+      "from": 1412148,
+      "to": 428840,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/ASK-AN-AUDIOLOGIST-Logo.png",
+      "from": 3761,
+      "to": 3761,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/09/Emily.webp",
+      "from": 132718,
+      "to": 13794,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/GL4mCOLs68BUNw3D.png",
+      "from": 902608,
+      "to": 400856,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/IGCgXx5yFMsk3D.png",
+      "from": 1340693,
+      "to": 392887,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/MImkbmP8Os3D.png",
+      "from": 1671345,
+      "to": 496961,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/MusqQ3D.png",
+      "from": 1493381,
+      "to": 437233,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/S86Ag0cExYoUesCDOuA3D.png",
+      "from": 1273972,
+      "to": 336661,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/TToZIg3D.png",
+      "from": 1073881,
+      "to": 326767,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/The_Logo_of_The_Washington_Post.png",
+      "from": 3175,
+      "to": 3175,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/09/Wbk3D.png",
+      "from": 1086295,
+      "to": 299470,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/ahN7fx7T6NPCx6KoNTyZSlWM3D.png",
+      "from": 1307455,
+      "to": 332004,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/american-tinnitus-logo-480x122.png",
+      "from": 5416,
+      "to": 5416,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/09/american-tinnitus-logo.png",
+      "from": 5033,
+      "to": 5033,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/09/b5UXLcvU3TXaW83D.png",
+      "from": 1420623,
+      "to": 404910,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/ceYRw3D.png",
+      "from": 1158233,
+      "to": 343444,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/communications-medicine.webp",
+      "from": 21670,
+      "to": 21670,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/09/logo.jpg",
+      "from": 5633,
+      "to": 5633,
+      "action": "copy"
+    },
+    {
+      "rel": "2025/09/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-08T073A203A35Zske2025-09-09T073A203A35Zsksbskv2024-08-04sigHjjE3vxrzbociJF5lBrt1C5Qrzvszb6RDn9igugj6U83D.png",
+      "from": 1136619,
+      "to": 340119,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoid8b33a531-2df9-46a3-bc02-d4b1430a422csktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-11T123A113A49Zske2025-09-12T123A113A49Zsksbskv2024-08-04sigA6XHERVuGVI7azDwapYT5rU00Bb5Gqh3JKLIwWF5kOM3D.png",
+      "from": 1242934,
+      "to": 395281,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-08T143A313A51Zske2025-09-09T143A313A51Zsksbskv2024-08-04siguG6wY3yI7JjRLlA3SgBF9LMIe4D7czztXFRfQIX5QKg3D.png",
+      "from": 746132,
+      "to": 247098,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-14T133A003A57Zske2025-09-15T133A003A57Zsksbskv2024-08-04sigJVYPlqn5zKl58SoBgPHArVo6sMKVYKAJRu5gpVxCR0I3D.png",
+      "from": 941865,
+      "to": 295904,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoidb1a0ae1f-618f-4548-84fd-8b16cacd5485sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-22T153A183A04Zske2025-09-23T153A183A04Zsksbskv2024-08-04sigUc8ZnHnHhsykLtFLM51RkuNaBJK2BYDd812BCdJ2gzfoY3D.png",
+      "from": 1536943,
+      "to": 402115,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoided3ea2f9-5e38-44be-9a1b-7c1e65e4d54fsktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-17T033A173A46Zske2025-09-18T033A173A46Zsksbskv2024-08-04sigl4X4fZ2fR0sX3ir7YNWBdAeEkFjHapGyXSDLa6nMOP83D.png",
+      "from": 1715604,
+      "to": 467009,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoidf1dafa11-a0c2-4092-91d4-10981fbda051sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-02T123A103A58Zske2025-09-03T123A103A58Zsksbskv2024-08-04sig89V7oHra18D2BILeF1HhtlbrJPGGYUXILI0Bymdj2BMZY3D.png",
+      "from": 790982,
+      "to": 247194,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoidf1dafa11-a0c2-4092-91d4-10981fbda051sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-15T113A323A57Zske2025-09-16T113A323A57Zsksbskv2024-08-04sigzxPMSWwZJ5XjIiR2BVjPyb3od3cLHItOZnuOx43OInso3D.png",
+      "from": 674750,
+      "to": 275646,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/pngskoidf1dafa11-a0c2-4092-91d4-10981fbda051sktida48cca56-e6da-484e-a814-9c849652bcb3skt2025-09-26T073A433A18Zske2025-09-27T073A433A18Zsksbskv2024-08-04sigKEx2BCGEx1CeTRmsCa2BQbnSzKVIetgwMKC8encvAw4F43D.png",
+      "from": 752295,
+      "to": 246831,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/qbf76b2BBk9kJnolIwY3D.png",
+      "from": 1264121,
+      "to": 395756,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/s43D.png",
+      "from": 719708,
+      "to": 282239,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2025/09/yahoo_finance_logo.png",
+      "from": 2478,
+      "to": 2478,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/01/image-1.png",
+      "from": 184916,
+      "to": 49404,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/01/image.png",
+      "from": 19182,
+      "to": 19182,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/CHC_Full_Logo_openPR_1200x900.gif",
+      "from": 87101,
+      "to": 87101,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/ChatGPT-Image-Feb-24-2026-10_43_47-AM.png",
+      "from": 2177500,
+      "to": 596026,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/ChatGPT-Image-Feb-9-2026-02_49_29-PM.png",
+      "from": 2755597,
+      "to": 848919,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/Gemini_Generated_Image_c31qq5c31qq5c31q.png",
+      "from": 1471910,
+      "to": 389608,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/Oticon-Zeal.jpg",
+      "from": 204445,
+      "to": 20020,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/Oticon-Zeal.png",
+      "from": 86355,
+      "to": 86355,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/W81327_CaliforniaHearingCenter-CA-5.pdf",
+      "from": 1423400,
+      "to": 1423400,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/batteries-100x55.jpg",
+      "from": 2465,
+      "to": 2465,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/batteries-300x164.jpg",
+      "from": 18024,
+      "to": 18024,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/batteries-768x419.jpg",
+      "from": 87020,
+      "to": 87020,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/batteries.jpg",
+      "from": 187831,
+      "to": 124905,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/hearing.jpg",
+      "from": 212962,
+      "to": 149326,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/image-1.png",
+      "from": 2779101,
+      "to": 716674,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/image-100x150.png",
+      "from": 27772,
+      "to": 27772,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/image-200x300.png",
+      "from": 98191,
+      "to": 98191,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/02/image-683x1024.png",
+      "from": 984098,
+      "to": 297475,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/image-768x1152.png",
+      "from": 1230594,
+      "to": 376112,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/image.png",
+      "from": 2627571,
+      "to": 696718,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/02/zeal.jpg",
+      "from": 48188,
+      "to": 48188,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/04/20250915_093450-scaled.jpg",
+      "from": 903411,
+      "to": 276230,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-1-100x75.png",
+      "from": 14144,
+      "to": 14144,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-1-1024x768.png",
+      "from": 1090027,
+      "to": 368385,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-1-1184x888.png",
+      "from": 1412616,
+      "to": 469182,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-1-300x225.png",
+      "from": 110522,
+      "to": 42786,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-1-768x576.png",
+      "from": 644907,
+      "to": 222796,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-1.png",
+      "from": 2249442,
+      "to": 729419,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-2-100x133.png",
+      "from": 26875,
+      "to": 26875,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-2-225x300.png",
+      "from": 120001,
+      "to": 39798,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-2-768x1024.png",
+      "from": 1134826,
+      "to": 333244,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-2.png",
+      "from": 2381958,
+      "to": 639612,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-3-100x134.png",
+      "from": 28037,
+      "to": 28037,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-3-224x300.png",
+      "from": 126927,
+      "to": 44041,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-3-766x1024.png",
+      "from": 1286879,
+      "to": 396298,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-3-768x1026.png",
+      "from": 1292348,
+      "to": 398613,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-3.png",
+      "from": 2691377,
+      "to": 787156,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-4-100x133.png",
+      "from": 28309,
+      "to": 28309,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-4-225x300.png",
+      "from": 124708,
+      "to": 45440,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-4-768x1024.png",
+      "from": 1121588,
+      "to": 370059,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-4.png",
+      "from": 2313310,
+      "to": 702339,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-5-100x133.png",
+      "from": 27534,
+      "to": 27534,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-5-225x300.png",
+      "from": 118972,
+      "to": 41401,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-5-768x1024.png",
+      "from": 1039520,
+      "to": 330950,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-5.png",
+      "from": 2151101,
+      "to": 626765,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-6-100x122.jpg",
+      "from": 5999,
+      "to": 5999,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-6-245x300.jpg",
+      "from": 23242,
+      "to": 23242,
+      "action": "copy"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-6-768x941.jpg",
+      "from": 155897,
+      "to": 136322,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-6-836x1024.jpg",
+      "from": 179815,
+      "to": 157266,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/05/california-hearing-center-lunch-and-learn-6.jpg",
+      "from": 476727,
+      "to": 248916,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/07/California-Hearing-Center-Logo.png",
+      "from": 810351,
+      "to": 215172,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/07/ChatGPT-Image-Jul-9-2026-02_50_43-PM.png",
+      "from": 845963,
+      "to": 254295,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/07/cropped-California-Hearing-Center-Logo.png",
+      "from": 148140,
+      "to": 54128,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/08/Oticon_Reveal.jpg",
+      "from": 147043,
+      "to": 28006,
+      "action": "re-encode"
+    },
+    {
+      "rel": "2026/08/Oticon_Reveal_at_California_Hearing_Center.jpg",
+      "from": 33515,
+      "to": 33515,
+      "action": "copy"
+    },
+    {
+      "rel": "revslider/CHC-Desktop-IDA-Staff-Image.jpg",
+      "from": 215388,
+      "to": 146895,
+      "action": "re-encode"
+    },
+    {
+      "rel": "revslider/CHC-Home-Banner-Staff.jpg",
+      "from": 224457,
+      "to": 97875,
+      "action": "re-encode"
+    },
+    {
+      "rel": "revslider/CHC-IDA-Badge-Circle.png",
+      "from": 28353,
+      "to": 28353,
+      "action": "copy"
+    },
+    {
+      "rel": "revslider/CHC-IDA-Staff-Image_BW.png",
+      "from": 1317453,
+      "to": 580366,
+      "action": "re-encode"
+    },
+    {
+      "rel": "revslider/CHC-Mobile-IDA-Staff-Image-.jpg",
+      "from": 106531,
+      "to": 106531,
+      "action": "copy (re-encode was larger)"
+    },
+    {
+      "rel": "revslider/New-CHC-BLOG-Banner-Change.jpeg",
+      "from": 174839,
+      "to": 72267,
+      "action": "re-encode"
+    },
+    {
+      "rel": "revslider/right-mark-logo-slider.png",
+      "from": 12876,
+      "to": 12876,
+      "action": "copy"
+    },
+    {
+      "rel": "revslider/slider-1.jpg",
+      "from": 70727,
+      "to": 70727,
+      "action": "copy"
+    },
+    {
+      "rel": "revslider/slider-2.jpg",
+      "from": 62707,
+      "to": 62707,
+      "action": "copy"
+    },
+    {
+      "rel": "revslider/slider-3.jpg",
+      "from": 64698,
+      "to": 64698,
+      "action": "copy"
+    },
+    {
+      "rel": "revslider/turn-up-logo1.png",
+      "from": 2867,
+      "to": 2867,
+      "action": "copy"
+    }
+  ]
+}

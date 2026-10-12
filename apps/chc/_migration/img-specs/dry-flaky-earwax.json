@@ -1,0 +1,34 @@
+{
+  "slug": "dry-flaky-earwax",
+  "hero": {
+    "title": "Dry, Flaky Earwax",
+    "icon": "dna",
+    "accent": "teal"
+  },
+  "info": {
+    "title": "Five Things to Know About Dry Earwax",
+    "subtitle": "Wet or dry wax is set by your genes",
+    "rows": [
+      {
+        "title": "It is usually normal",
+        "desc": "Dry wax is flaky and gray or tan"
+      },
+      {
+        "title": "A gene decides",
+        "desc": "ABCC11 sets wet or dry wax"
+      },
+      {
+        "title": "Leave the canal alone",
+        "desc": "No swabs, keys or hairpins"
+      },
+      {
+        "title": "Know the warning signs",
+        "desc": "Green, black or foul wax needs a look"
+      },
+      {
+        "title": "Blocked or muffled?",
+        "desc": "Have a professional check and clear it"
+      }
+    ]
+  }
+}

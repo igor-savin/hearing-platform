@@ -1,0 +1,68 @@
+# calhearing.com — authoritative zone capture 2026-08-20T21:07:50Z
+# source: ns33.domaincontrol.com (GoDaddy). Recreate ALL of these in Cloudflare before switching nameservers.
+
+## SOA
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com SOA +noall +answer
+; (1 server found)
+;; global options: +cmd
+calhearing.com.		3600	IN	SOA	ns33.domaincontrol.com. dns.jomax.net. 2026061602 28800 7200 604800 600
+
+## NS
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com NS +noall +answer
+; (1 server found)
+;; global options: +cmd
+calhearing.com.		3600	IN	NS	ns33.domaincontrol.com.
+calhearing.com.		3600	IN	NS	ns34.domaincontrol.com.
+
+## A
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com A +noall +answer
+; (1 server found)
+;; global options: +cmd
+calhearing.com.		600	IN	A	34.149.86.124
+
+## AAAA
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com AAAA +noall +answer
+; (1 server found)
+;; global options: +cmd
+
+## MX
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com MX +noall +answer
+; (1 server found)
+;; global options: +cmd
+calhearing.com.		3600	IN	MX	5 alt1.aspmx.l.google.com.
+calhearing.com.		3600	IN	MX	1 aspmx.l.google.com.
+calhearing.com.		3600	IN	MX	5 alt2.aspmx.l.google.com.
+calhearing.com.		3600	IN	MX	10 alt4.aspmx.l.google.com.
+calhearing.com.		3600	IN	MX	10 alt3.aspmx.l.google.com.
+
+## TXT
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com TXT +noall +answer
+; (1 server found)
+;; global options: +cmd
+calhearing.com.		3600	IN	TXT	"google-site-verification=4d9EGs-Qji8we9yUnAU7ggJpjqT0HPE6GlaUeGdzUso"
+calhearing.com.		3600	IN	TXT	"google-site-verification=5ZviaZJSPQ5bfBB8WuG9rKo0I8uhXWFeJK7Wx39m3x8"
+
+## CAA
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com CAA +noall +answer
+; (1 server found)
+;; global options: +cmd
+
+## SRV
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com calhearing.com SRV +noall +answer
+; (1 server found)
+;; global options: +cmd
+
+## subdomain sweep
+
+; <<>> DiG 9.10.6 <<>> @ns33.domaincontrol.com www.calhearing.com ANY +noall +answer
+; (1 server found)
+;; global options: +cmd
+www.calhearing.com.	600	IN	CNAME	host.websiteprohosting.com.

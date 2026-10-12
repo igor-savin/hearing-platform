@@ -1,0 +1,33 @@
+  "san-francisco": {
+    name: "San Francisco",
+    county: "San Francisco County",
+    region: "sf",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 20-30 minutes north on the 101 or 280",
+    distanceTier: "mid",
+    geo: { lat: 37.7749, lng: -122.4194 },
+    lede:
+      "San Francisco packs an enormous variety of listening environments into a compact seven-by-seven miles — echoing lobbies downtown, loud South of Market restaurants, foggy avenues out west, and quiet residential blocks in between. That range is exactly why good hearing matters here, and our San Mateo office is a straightforward 20-to-30-minute drive south on the 101 or 280, closer than many city residents expect.",
+    hook: [
+      "City listening, and the case for an independent audiologist",
+      "A day in San Francisco can move from a noisy SoMa lunch to a conference room in the Financial District to a quiet dinner in Noe Valley — each demanding something different from your hearing. Getting that right takes more than picking a device off a shelf. We do speech-in-noise testing and real-ear verification so your [hearing aids](/hearing-aid-fitting/) are tuned to how you actually live, and as an independent practice we fit the technology that fits you, not whatever a big-box counter happens to stock.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "From the fog belt to the waterfront",
+      "San Francisco's neighborhoods each listen differently. The Sunset and the Richmond sit under the marine layer for much of the year, and that persistent damp is hard on hearing aids — moisture-resistant devices and a drying routine matter out in the avenues. Downtown, the Financial District, SoMa, and Union Square throw crowded, reverberant rooms at you. And the city's southern edge — the Excelsior, Ingleside, and Visitacion Valley — is closest to us, a short hop down the 280. Wherever in the city you live, we tune for the rooms you spend time in.",
+    ],
+    whyHere:
+      "San Francisco patients come to us for meticulous testing, honest technology recommendations, and specialized [tinnitus care](/tinnitus/) that can be hard to find in a busy city practice. Many first drove down for a stubborn tinnitus problem or a second opinion and stayed because they see the same audiologist every visit.",
+    landmarks:
+      "We are roughly 20-30 minutes from the Sunset, the Mission, downtown, and the city's southern neighborhoods, down the 101 or 280 to our San Mateo office, at 88 N. San Mateo Drive. We have no office in San Francisco. Caltrain's schedule tables show sample San Mateo-to-San Francisco trips of about 23 to 29 minutes (checked October 2026).",
+    faqs: [
+      ["Where can I get a hearing test or hearing aids near San Francisco?", "We have no office in San Francisco. Our San Mateo office, at 88 N. San Mateo Drive, offers hearing tests, hearing aid fittings and tinnitus care for San Francisco patients, and our San Carlos office is at 1008 Laurel Street. Call 650-342-9449 to book."],
+      ["Why do my hearing aids act up in the Sunset and Richmond?", "Those neighborhoods sit under the fog belt, and the constant marine humidity lets moisture build up inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices, nightly drying, and regular cleaning prevent most of it."],
+      ["Is it worth driving down from the city instead of finding someone in San Francisco?", "For routine care, plenty of city residents make the short trip south for our testing standards and tinnitus focus. It's 20-30 minutes down the 101 or 280, and we make each visit thorough so it's worth the drive."],
+      ["Do you test hearing for noisy restaurants and meetings?", "Yes. We do speech-in-noise testing and real-ear verification specifically so your hearing aids perform where San Franciscans struggle most — loud restaurants, open offices, and busy rooms. Call 650-342-9449 to book."],
+    ],
+    onCaltrain: true,
+    metaTitle: "Hearing Test and Hearing Aids for San Francisco Patients",
+    metaDescription: "No office in San Francisco: our San Mateo office offers hearing tests, hearing aids and tinnitus care for city patients. Call 650-342-9449.",
+  },

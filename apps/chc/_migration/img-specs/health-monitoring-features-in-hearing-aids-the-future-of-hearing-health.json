@@ -1,0 +1,12 @@
+{
+  "slug": "health-monitoring-features-in-hearing-aids-the-future-of-hearing-health",
+  "hero": { "title": "Health Monitoring", "icon": "shield", "accent": "aqua" },
+  "info": { "title": "Health Features in Hearing Aids", "subtitle": "What today's sensors can and can't do",
+    "rows": [
+      {"title": "Step & Activity", "desc": "Counts daily movement like a wrist tracker"},
+      {"title": "Fall Detection", "desc": "Alerts a contact after a detected fall"},
+      {"title": "Heart-Rate Estimate", "desc": "Reads pulse trends from the ear canal"},
+      {"title": "Wellness, Not Medical", "desc": "Best for habits, not clinical decisions"},
+      {"title": "Setup Matters", "desc": "Contacts, pairing, and fit affect accuracy"}
+    ] }
+}

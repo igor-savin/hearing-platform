@@ -1,0 +1,12 @@
+{
+  "slug": "do-audiologists-remove-ear-wax",
+  "hero": { "title": "Earwax Removal", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Professional Earwax Removal", "subtitle": "What to expect when wax needs clearing",
+    "rows": [
+      {"title": "Ears clean themselves", "desc": "Wax usually migrates out on its own"},
+      {"title": "Swabs make it worse", "desc": "Cotton swabs pack wax deeper into the canal"},
+      {"title": "Safe clinical methods", "desc": "Curette, gentle irrigation, or microsuction"},
+      {"title": "Signs of a blockage", "desc": "Muffled hearing, fullness, mild ache or ringing"},
+      {"title": "Protects your devices", "desc": "Clear wax keeps hearing aids working well"}
+    ] }
+}

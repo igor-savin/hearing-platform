@@ -1,0 +1,12 @@
+{
+  "slug": "why-does-hawkeye-have-hearing-aids",
+  "hero": { "title": "Hawkeye's Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Hearing Aid Myths vs Facts", "subtitle": "What Hawkeye teaches us about hearing loss",
+    "rows": [
+      {"title": "Not just for elders", "desc": "People of all ages wear hearing aids"},
+      {"title": "Noise causes loss", "desc": "Blasts and gunfire damage the inner ear"},
+      {"title": "Small and discreet", "desc": "Modern styles are easy to miss"},
+      {"title": "Partial loss counts", "desc": "Early help makes adjusting easier"},
+      {"title": "Stay in the action", "desc": "Devices keep you engaged, not sidelined"}
+    ] }
+}

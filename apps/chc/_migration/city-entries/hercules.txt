@@ -1,0 +1,30 @@
+  "hercules": {
+    name: "Hercules",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 50 minutes across the bay",
+    distanceTier: "far",
+    geo: { lat: 38.0171, lng: -122.2886 },
+    motif: "bayside",
+    lede:
+      "Hercules takes its name from the explosives company that once ran along San Pablo Bay, and today it's a quiet, planned waterfront community at the county's western edge. Our offices are on the Peninsula, roughly 50 minutes across the bay, so we're honest that we're a specialist destination for Hercules patients rather than the nearest audiologist.",
+    hook: [
+      "Bayfront living and your hearing aids",
+      "Living near San Pablo Bay means damp, salty air, and moisture is the single most common cause of hearing-aid trouble — muffled sound, intermittent cut-outs, corroded contacts. It's manageable with moisture-resistant devices, a nightly drying routine, and regular cleaning. Beyond that upkeep, patients here who need specialized [tinnitus care](/tinnitus/) or a fitting that's given real time and attention are the ones who make the trip across the bay to us.",
+    ],
+    localScene: [
+      "A planned town on the water",
+      "Hercules runs from its bayfront and the trails along San Pablo Bay through Refugio Valley Park and the Victoria by the Bay neighborhoods to the Capitol Corridor train station on John Muir Parkway. The waterfront setting is a big part of its appeal — and it means damp, coastal air that's hard on hearing devices over time. We lean into moisture-smart technology and durable fittings that hold up to life near the bay.",
+    ],
+    whyHere:
+      "Hercules patients come to us for what's harder to find nearby: careful diagnostics, moisture-aware hearing-aid fittings, and dedicated tinnitus and Lenire care with the same audiologist each time. For routine testing we'll gladly point you somewhere closer; the drive is for the specialized work.",
+    landmarks:
+      "We're roughly 50 minutes from the Hercules waterfront, Refugio Valley Park, and the John Muir Parkway train station, crossing the bay to our San Mateo office.",
+    faqs: [
+      ["Why do my hearing aids struggle near the bay?", "Damp, salty bayfront air lets moisture build up inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices, nightly drying, and regular cleaning prevent most of it, and we help you set up a routine."],
+      ["Is the drive across the bay worth it from Hercules?", "For routine care, a local provider may be simpler. Patients travel to us for specialized tinnitus treatment, Lenire, and complex fittings — care worth the trip."],
+      ["Do you repair hearing aids damaged by moisture?", "Yes. Moisture-related issues are among the most common repairs we handle, and many can be resolved with professional cleaning and drying."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

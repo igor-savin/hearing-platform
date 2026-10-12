@@ -1,0 +1,30 @@
+  "rio-vista": {
+    name: "Rio Vista",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 90 minutes northeast in the Delta",
+    distanceTier: "far",
+    geo: { lat: 38.1557, lng: -121.6913 },
+    lede:
+      "Rio Vista is a small Sacramento River town deep in the Delta, a boating and fishing community set among the sloughs and drawbridges at the county's far eastern reach. It's a long way from the Peninsula — our offices in San Mateo and San Carlos are around 90 minutes southwest — so for routine hearing care, a provider closer to the Delta will usually make far more sense.",
+    hook: [
+      "When the drive out of the Delta is worth it",
+      "We won't pretend distance doesn't matter. For everyday hearing tests and standard hearing aids, stay close to home. The trip to the Peninsula pays off only for specialized care — stubborn [tinnitus](/tinnitus/), Lenire treatment, a fitting that's been difficult, or a careful second opinion. Rio Vista patients who make the drive come for that expertise, and we shape their visit so one trip out of the Delta covers evaluation, treatment, and a follow-up plan.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "A river town among the sloughs",
+      "Rio Vista lives on the water — the marina and waterfront along the Sacramento River, the drawbridge carrying Highway 12, and the surrounding Delta islands laced with sloughs and boat launches. All that river and Delta air keeps humidity high year-round, and moisture is the single most common cause of hearing aid problems. For Delta patients who wear hearing aids, moisture-resistant devices and a drying routine really matter — and for more complex needs, some choose to travel out to the Peninsula for specialized care.",
+    ],
+    whyHere:
+      "Rio Vista patients who come to us are generally after tinnitus and diagnostic expertise they couldn't find in the Delta. We respect the long haul by consolidating everything into thorough, efficient visits and coordinating follow-up so the drive stays occasional.",
+    landmarks:
+      "Patients travel to our Peninsula offices from Rio Vista's waterfront, marina, and the surrounding Delta islands, generally around 90 minutes southwest by way of Highway 12 and I-80.",
+    faqs: [
+      ["Rio Vista's deep in the Delta — why travel to you?", "For routine care, a closer provider usually makes the most sense. Rio Vista patients come to us mainly for specialized tinnitus care, Lenire, and complex fittings where the expertise justifies the drive. We plan visits to keep repeat trips low."],
+      ["Does the Delta's damp climate affect hearing aids?", "Yes. The constant river and Delta humidity lets moisture build up inside hearing aids, causing muffled or intermittent sound. Moisture-resistant devices and nightly drying prevent most of the trouble."],
+      ["Can you make one long trip accomplish more?", "For distant patients, we combine testing, treatment, and counseling into a single efficient visit and build a follow-up plan that limits how often you need to come down. Call 650-342-9449 to arrange it."],
+    ],
+    consolidatedInto: "solano-county",
+  },

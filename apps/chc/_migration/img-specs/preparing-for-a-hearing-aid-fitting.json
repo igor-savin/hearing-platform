@@ -1,0 +1,12 @@
+{
+  "slug": "preparing-for-a-hearing-aid-fitting",
+  "hero": { "title": "Hearing Aid Fitting", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "What to Expect at Your Fitting", "subtitle": "Preparation and the first weeks with new devices",
+    "rows": [
+      {"title": "Bring Your Records", "desc": "Meds list and recent hearing test results"},
+      {"title": "Programmed to You", "desc": "Set to your prescription, then verified in-ear"},
+      {"title": "Give It Time", "desc": "Your brain adjusts over the first few weeks"},
+      {"title": "Not Just Louder", "desc": "Clarity and comfort matter more than volume"},
+      {"title": "Follow-Up Fine-Tuning", "desc": "Adjustments turn good devices into daily ones"}
+    ] }
+}

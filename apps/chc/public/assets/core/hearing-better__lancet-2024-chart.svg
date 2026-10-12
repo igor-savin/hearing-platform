@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 802" role="img" aria-label="Bar chart of the 14 modifiable dementia risk factors in the 2024 Lancet Commission report. Hearing loss and high LDL cholesterol are tied highest at 7% each. Population estimates, not personal risk.">
+  <rect width="900" height="802" rx="26" fill="#fbf7ef"/>
+  <text x="40" y="70" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#155f6b">14 risk factors for dementia</text>
+  <text x="40" y="104" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#5c7178">Share of dementia cases worldwide linked to each factor. About 45% in total.</text><text x="40" y="174" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">Hearing loss (midlife)</text>
+  <rect x="380" y="154" width="434" height="26" rx="6" fill="#155f6b"/>
+  <text x="824" y="174" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#155f6b">7%</text><text x="40" y="212" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">High LDL cholesterol (midlife)</text>
+  <rect x="380" y="192" width="434" height="26" rx="6" fill="#86d0d5"/>
+  <text x="824" y="212" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">7%</text><text x="40" y="250" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Less education (early life)</text>
+  <rect x="380" y="230" width="310" height="26" rx="6" fill="#86d0d5"/>
+  <text x="700" y="250" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">5%</text><text x="40" y="288" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Social isolation (later life)</text>
+  <rect x="380" y="268" width="310" height="26" rx="6" fill="#86d0d5"/>
+  <text x="700" y="288" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">5%</text><text x="40" y="326" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Depression</text>
+  <rect x="380" y="306" width="186" height="26" rx="6" fill="#86d0d5"/>
+  <text x="576" y="326" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">3%</text><text x="40" y="364" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Traumatic brain injury</text>
+  <rect x="380" y="344" width="186" height="26" rx="6" fill="#86d0d5"/>
+  <text x="576" y="364" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">3%</text><text x="40" y="402" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Air pollution</text>
+  <rect x="380" y="382" width="186" height="26" rx="6" fill="#86d0d5"/>
+  <text x="576" y="402" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">3%</text><text x="40" y="440" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Vision loss (untreated)</text>
+  <rect x="380" y="420" width="124" height="26" rx="6" fill="#86d0d5"/>
+  <text x="514" y="440" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">2%</text><text x="40" y="478" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Physical inactivity</text>
+  <rect x="380" y="458" width="124" height="26" rx="6" fill="#86d0d5"/>
+  <text x="514" y="478" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">2%</text><text x="40" y="516" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Diabetes</text>
+  <rect x="380" y="496" width="124" height="26" rx="6" fill="#86d0d5"/>
+  <text x="514" y="516" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">2%</text><text x="40" y="554" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Smoking</text>
+  <rect x="380" y="534" width="124" height="26" rx="6" fill="#86d0d5"/>
+  <text x="514" y="554" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">2%</text><text x="40" y="592" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">High blood pressure</text>
+  <rect x="380" y="572" width="124" height="26" rx="6" fill="#86d0d5"/>
+  <text x="514" y="592" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">2%</text><text x="40" y="630" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Obesity</text>
+  <rect x="380" y="610" width="62" height="26" rx="6" fill="#86d0d5"/>
+  <text x="452" y="630" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">1%</text><text x="40" y="668" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18"  fill="#21424b">Alcohol (over 21 units a week)</text>
+  <rect x="380" y="648" width="62" height="26" rx="6" fill="#86d0d5"/>
+  <text x="452" y="668" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#21424b">1%</text><text x="40" y="712" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#5c7178">These are population estimates, not your personal risk. They show association, not proof of cause.</text>
+  <text x="40" y="736" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#5c7178">Source: Livingston et al., Lancet Commission, 2024. doi 10.1016/S0140-6736(24)01296-0</text>
+  <text x="40" y="772" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#155f6b" letter-spacing="1">CALIFORNIA HEARING CENTER · Redrawn by CHC</text>
+</svg>

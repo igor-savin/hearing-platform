@@ -1,0 +1,15 @@
+{
+  "slug": "how-to-deal-with-earwax",
+  "hero": { "title": "Earwax, Done Safely", "icon": "ear", "accent": "gold" },
+  "info": {
+    "title": "Caring for Earwax the Right Way",
+    "subtitle": "From leaving it alone to when the clinic helps",
+    "rows": [
+      { "title": "Wax is protective", "desc": "It traps debris and guards the canal skin" },
+      { "title": "Clean the outer ear only", "desc": "A washcloth beats any tool in the canal" },
+      { "title": "Skip swabs and candling", "desc": "Both push wax deeper or injure the ear" },
+      { "title": "Soften stubborn wax", "desc": "Drops or mineral oil help it drain out" },
+      { "title": "Let a pro clear blockages", "desc": "In-clinic removal is quick and gentle" }
+    ]
+  }
+}

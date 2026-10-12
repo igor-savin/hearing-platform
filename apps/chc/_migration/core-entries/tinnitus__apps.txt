@@ -1,0 +1,38 @@
+"/tinnitus/apps/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Best Tinnitus Relief Apps: Sound, Sleep & Relaxation Tools",
+  intro: [
+    "Tinnitus relief apps can be powerful tools, especially for sound masking, sleep, relaxation, and stress management, when they are used in a smart, safe way as part of a broader treatment plan.",
+    "On this page, our Bay Area audiologists explain how tinnitus apps work, the main types to consider, what features to look for, how to use them safely with headphones or hearing aids, and how to combine apps with evidence-based treatments for better long-term results.",
+    "It is important to remember that no app cures tinnitus, but the right ones can still provide real relief and support habituation. Think of apps as tools in a toolbox alongside [sound therapy](/tinnitus/sound-therapy/), hearing aids, and counseling. For the basics, start with [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["What tinnitus relief apps are", "Tinnitus relief apps are mobile applications designed to make tinnitus easier to live with. They usually focus on providing soothing or masking sounds, helping you relax or fall asleep, teaching coping and mindset skills, or tracking tinnitus severity and triggers over time. The right combination, chosen for you, matters far more than any single app."],
+    ["Types of apps to consider", "Most helpful apps fall into a few categories, and many combine several. Sound masking and sound therapy apps provide white, pink, or nature sounds that partially cover tinnitus. Sleep and bedtime apps pair soft soundscapes with timers or sleep stories. Relaxation and mindfulness apps offer guided breathing and body scans. CBT-based apps provide education and thought-reframing exercises. Tinnitus trackers help you log loudness and triggers. And hearing-aid companion apps let you adjust programs and sound generators directly."],
+    ["Benefits and limitations", "Apps are easy to access at home, work, or while traveling, helpful during difficult moments and bedtime, customizable, low cost, and supportive of habituation and coping skills. But they also have real limits: they do not replace a proper tinnitus and hearing evaluation, they may encourage chasing short-term relief instead of long-term strategies, too-loud use can worsen tinnitus or hearing, and not every app is evidence-based or designed by clinicians."],
+    ["How to choose an app", "When browsing the App Store or Google Play, consider your main purpose, whether that is sleep support, daytime masking, relaxation, or education. Check that sounds are smooth and loop well over long listening, that you can blend and save custom mixes, and that timer options exist for overnight use. Look at whether the interface makes it easy to adjust volume quickly, whether the app was created with input from audiologists or tinnitus specialists, and how it is priced."],
+    ["Safe volume and headphone use", "It is possible to overdo sound, even soothing sounds. Keep app volume at the lowest level that feels helpful, not the loudest you can tolerate. Aim for sound that blends with tinnitus rather than blasting it away. Be cautious with in-ear headphones or earbuds during long sessions, and consider speakers or bedside sound machines at night. If you feel discomfort, pain, or a tinnitus spike after listening, reduce the volume, shorten the time, and schedule an evaluation if symptoms persist."],
+    ["How apps fit into your treatment plan", "Apps are one part of a comprehensive approach. We often integrate them with hearing aids and built-in sound generators when hearing loss is present, structured [sound therapy](/tinnitus/sound-therapy/) programs, CBT-based counseling and anxiety management, TRT and habituation protocols, and medical workup when needed. Bay Area patients commonly use apps to mask tinnitus in quiet home offices, wind down after busy workdays, build calming bedtime routines, and track how caffeine, alcohol, and sleep affect their tinnitus."]
+  ],
+  bulletLinks: [
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
+  ],
+  takeaways: [
+    "Apps do not cure tinnitus, but they can provide genuine relief and support habituation when used strategically.",
+    "Choose apps by purpose, sound quality, timer options, and clinical credibility, and keep the volume gentle.",
+    "Apps work best inside a full plan alongside hearing technology, counseling, and lifestyle changes."
+  ],
+  faqs: [
+    ["Can a tinnitus app cure my tinnitus?", "No app can cure tinnitus, but many can reduce how intrusive it feels and support habituation. A proper evaluation is still essential to rule out treatable causes and build a complete plan."],
+    ["Do I need a tinnitus-specific app, or is any sound app fine?", "Both can help. Tinnitus-specific apps may offer educational content and tracking, but many patients do well with high-quality general sound or relaxation apps, especially when guided by their audiologist."],
+    ["Should I use sound all day?", "Not usually. The goal is to help your brain learn that tinnitus is not a threat, so strategic use during difficult moments, quiet times, or bedtime often works better than constant sound exposure."],
+    ["What if an app makes my tinnitus worse?", "Turn the volume down or try a different type of sound. If tinnitus consistently feels worse after sound exposure, schedule an evaluation so we can explore whether sound sensitivity or another issue is present."]
+  ],
+  image: "/assets/core/tinnitus__apps.svg",
+  imageLabel: "Sound therapy in your pocket"
+},

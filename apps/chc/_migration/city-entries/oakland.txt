@@ -1,0 +1,30 @@
+  "oakland": {
+    name: "Oakland",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 35-45 minutes via the San Mateo or Bay Bridge",
+    distanceTier: "far",
+    geo: { lat: 37.8044, lng: -122.2712 },
+    lede:
+      "Oakland is the East Bay's biggest city — a place of distinct neighborhoods, a working port, and a music and dining scene that rewards good hearing. We should be upfront: both of our offices sit across the water on the Peninsula, in San Mateo and San Carlos, so we are not the corner audiologist for most Oaklanders. What brings people over the bridge is specialized tinnitus and complex hearing care.",
+    hook: [
+      "A city built for listening — and a reason some cross the bay",
+      "From live shows around the Fox and Paramount to loud, lively restaurants in Temescal, Oakland is full of the demanding listening situations that make hearing loss and tinnitus hardest to ignore. For everyday testing and hearing aid service, an audiologist closer to home may make more sense. But for stubborn ringing, a difficult fitting that never sat right, or a second opinion on [tinnitus care](/tinnitus/), Oakland patients do make the drive to us for the depth of that focus.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "One city, many neighborhoods",
+      "Oakland is really a patchwork — Rockridge and its College Avenue shops, Temescal's restaurant row, the walkers ringing Lake Merritt, the hills above Montclair, and the crowds downtown near Jack London Square. Each has its own soundscape, and each has residents whose hearing needs range from a first evaluation to advanced tinnitus management. Those who come to us usually do so on purpose, seeking a practice that concentrates on the harder problems rather than the nearest available appointment.",
+    ],
+    whyHere:
+      "Oakland patients who choose California Hearing Center are generally after something specific: focused tinnitus treatment including Lenire, careful real-ear verification, or a fresh look at a fitting that has never felt right. They come for expertise and continuity with the same audiologist, and they accept the drive because the specialization is worth it to them.",
+    landmarks:
+      "From Rockridge, Temescal, Lake Merritt, or Montclair, we are roughly 35-45 minutes away via the San Mateo Bridge or the Bay Bridge to our San Mateo office.",
+    faqs: [
+      ["There are audiologists in Oakland — why travel to you?", "For routine testing and hearing aid maintenance, a local Oakland provider is often the practical choice. Patients cross the bay to us mainly for specialized tinnitus care, Lenire, and complex or previously unsuccessful fittings where a focused, second-opinion approach helps."],
+      ["Do you treat tinnitus for East Bay patients?", "Yes. Tinnitus care is a core focus of our practice, and we see patients from across the East Bay. If ringing or buzzing is affecting your sleep or concentration, call 650-342-9449 to talk through the options."],
+      ["How long is the drive from Oakland?", "Plan on roughly 35-45 minutes to our San Mateo office depending on which bridge you take and traffic. We schedule East Bay patients with that trip in mind, often combining testing and follow-up into fewer visits."],
+    ],
+    consolidatedInto: "alameda-county",
+  },

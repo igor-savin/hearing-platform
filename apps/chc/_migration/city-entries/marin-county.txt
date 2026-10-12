@@ -1,0 +1,29 @@
+  "marin-county": {
+    name: "Marin County",
+    county: "Marin County",
+    region: "north-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "north over the Golden Gate Bridge",
+    distanceTier: "far",
+    geo: { lat: 38.0, lng: -122.55 },
+    lede:
+      "Marin County spans the whole stretch north of the Golden Gate — from the waterfront towns of Sausalito and Tiburon through San Rafael, Mill Valley, and Larkspur up to Novato and out to the coast at Point Reyes. It is a large, varied place, and our offices sit on the opposite side of the bay, down on the Peninsula. We are honest about that geography: Marin residents come to us across the bridge for reasons a nearer provider often cannot cover.",
+    hook: [
+      "A specialized destination, not a routine stop",
+      "There are capable audiologists throughout Marin for everyday hearing care, and for routine needs staying local usually makes sense. Where patients cross the bridge to us is the specialized work: stubborn [tinnitus](/tinnitus/) and Lenire therapy, difficult or previously unsuccessful fittings, moisture-related repairs, and second opinions that call for a thorough, verified approach. We are a tinnitus-focused practice, and that draws people from across the region and beyond.",
+    ],
+    motif: "civic",
+    localScene: [
+      "One county, many communities",
+      "Marin runs from bayfront towns like Sausalito, Tiburon, and Larkspur to the county seat at San Rafael, the redwood-shaded quiet of Mill Valley beneath Mount Tamalpais, and the more suburban north around Novato — with Muir Woods, Point Reyes, and open coast at the county's edges. Damp bay and marine air are a common thread that can be tough on hearing technology. Wherever in Marin you're coming from, we tailor care to your setting and make the trip over the bridge count by pairing testing, fitting, and follow-up where we can.",
+    ],
+    whyHere:
+      "Marin patients generally choose us for depth: advanced tinnitus care and Lenire, honest technology matched to real needs, and the continuity of one audiologist rather than a rotating counter. Many first came for ringing or a fitting that had never sounded right and stayed for the whole of their hearing care. For routine visits, we readily point people to a closer option.",
+    landmarks:
+      "From across Marin — Sausalito, Tiburon, San Rafael, Mill Valley, Larkspur, and Novato — the route to us runs south on Highway 101 and over the Golden Gate to our San Mateo office.",
+    faqs: [
+      ["Why do Marin patients drive all the way to the Peninsula?", "Usually for specialized care — complex tinnitus, Lenire, a difficult fitting, or a second opinion — where our focus and thoroughness justify the trip. For routine cleanings and basic checks, a provider closer to home in Marin is often the more practical choice, and we will say so."],
+      ["What makes your tinnitus care different?", "Tinnitus is a core focus of our practice. We evaluate it carefully, rule out issues needing medical attention, and build a real plan that may include sound therapy or Lenire — rather than telling patients there is nothing to be done."],
+      ["How far is your office from Marin County?", "It depends where in Marin you start, but plan on crossing the Golden Gate and heading down Highway 101 to San Mateo. Call 650-342-9449 and we will schedule enough time to make one visit worthwhile."],
+    ],
+  },

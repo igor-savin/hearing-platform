@@ -1,0 +1,12 @@
+{
+  "slug": "snoring-can-be-the-cause-of-hearing-loss",
+  "hero": { "title": "Snoring and Hearing", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Snoring and Your Ears", "subtitle": "What the limited evidence really says",
+    "rows": [
+      {"title": "Mostly a sleep issue", "desc": "Snoring rarely harms hearing on its own"},
+      {"title": "Snoring can be loud", "desc": "Heavy snoring may approach noisy-street levels"},
+      {"title": "A sleep apnea signal", "desc": "Loud snoring can point to breathing pauses"},
+      {"title": "Blood flow matters", "desc": "The inner ear needs steady, oxygen-rich blood"},
+      {"title": "Get both checked", "desc": "See us for hearing, a doctor for sleep"}
+    ] }
+}

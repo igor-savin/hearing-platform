@@ -1,0 +1,30 @@
+  "san-jose": {
+    name: "San Jose",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 40 minutes south on the 101 or 280",
+    distanceTier: "far",
+    geo: { lat: 37.3382, lng: -121.8863 },
+    lede:
+      "San Jose is the Bay Area's largest city — a sprawl of distinct neighborhoods from Willow Glen to Almaden, downtown to Japantown, each with its own character. It has audiology options of its own, and our Peninsula offices sit about 40 minutes north, so the San Jose residents who travel to us are the ones seeking specialized care rather than the closest door.",
+    hook: [
+      "Specialized tinnitus and complex hearing care",
+      "In a city this size, everyday hearing needs are well covered, so patients tend to come to us for the difficult cases: persistent [tinnitus](/tinnitus/) that has not responded to other approaches, fittings that never sounded right, or a rigorous second opinion. Our practice is organized around exactly that work — deep diagnostics, real-ear-verified fittings, and tinnitus-focused treatment including Lenire — which is what makes a longer drive north worthwhile.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "One city, many neighborhoods",
+      "San Jose is really a collection of communities — the Rose Garden and Willow Glen, Almaden and Cambrian, Japantown and the downtown core near San Pedro Square and Santana Row. Across all of them, life is busy and loud, from arena events to crowded restaurants, and clear speech in noise is the shared challenge. For San Jose patients who make the trip, we focus on the harder problems: tinnitus, complex fittings, and verified clarity in demanding sound.",
+    ],
+    whyHere:
+      "San Jose patients choose us over closer providers when the situation is specialized — intractable tinnitus, a device that failed to satisfy, or a thorough reassessment. We are upfront that for routine testing and maintenance, staying in the South Bay is often the practical choice.",
+    landmarks:
+      "We are about 40 minutes from downtown San Jose, Santana Row, Willow Glen, and the Rose Garden, north via the 101 or 280 to our San Carlos office.",
+    faqs: [
+      ["There are audiologists in San Jose — why come to you?", "For routine care, a local office may be more convenient. Patients travel to us for specialized help: complex tinnitus, Lenire, difficult fittings, and detailed second opinions, where our focus makes the extra distance count."],
+      ["My tinnitus hasn't improved with other treatments. Can you help?", "Often, yes. Tinnitus is a central focus of our practice, and we tailor management — including options like Lenire — to your specific situation after a full evaluation."],
+      ["How far is your office from San Jose?", "Roughly 40 minutes north on the 101 or 280 to San Carlos, depending on your neighborhood. Call 650-342-9449 and we will schedule a comprehensive visit."],
+    ],
+    consolidatedInto: "santa-clara-county",
+  },

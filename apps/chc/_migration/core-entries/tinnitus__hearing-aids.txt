@@ -1,0 +1,38 @@
+"/tinnitus/hearing-aids/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Hearing Aids for Tinnitus: How Technology Helps Quiet the Ringing",
+  intro: [
+    "Modern hearing aids do far more than make things louder. For many Bay Area patients, they are the single most effective tool for reducing tinnitus, improving hearing, and helping the brain tune out constant noise.",
+    "For most people, tinnitus and hearing loss are closely linked. When your ears stop sending a full, clear signal, your brain turns up its internal volume and may start generating phantom sound, which you hear as ringing, buzzing, or hissing. Hearing aids help by restoring that missing input.",
+    "Hearing aids are not a cure for tinnitus, but they are often the foundation of an effective plan, especially when combined with sound therapy, counseling, and lifestyle changes. This page is from the audiologists at California Hearing Center in San Mateo and San Carlos. To learn more, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["Why hearing aids help with tinnitus", "Amplification puts more real sound into your ears, giving your brain something better to listen to than the internal noise. Many devices also include built-in sound therapy that gently masks or blends the ringing. When you are not straining to hear, tinnitus often feels softer, and over time your brain can learn to reclassify it as unimportant background sound, which supports long-term habituation."],
+    ["Who is a good candidate", "You may benefit from tinnitus-focused hearing aids if your tinnitus comes with any degree of hearing loss, even if you only notice it in noise; if voices sound muffled in groups or restaurants; if you turn up the TV more than others need; if tinnitus gets louder when things are quiet; or if you feel exhausted from straining to hear during the day. If you are not sure whether you have hearing loss, a [baseline hearing test](/hearing-testing/) is the best starting point."],
+    ["Key features for tinnitus patients", "Not every hearing aid has the same tools. For tinnitus we look for integrated tinnitus programs or sound generators, advanced noise management that separates speech from background noise, precise frequency shaping that targets both your hearing loss and your tinnitus pitch, comfort for all-day wear so devices stay in during quiet times, and app control with rechargeable, connected options that make daily sound therapy easy."],
+    ["Choosing among the brands", "California Hearing Center partners with leading manufacturers so we can match you with the right tools rather than the brand of the month. Widex is known worldwide for tinnitus solutions and natural sound; Oticon's BrainHearing approach focuses on how your brain processes sound in real situations; Phonak offers strong speech clarity plus the extended-wear, 24/7 Lyric option; ReSound and Starkey bring deep neural-network processing and wellness features; and Signia rounds out a wide menu. The best device for you may differ from a friend's choice."],
+    ["Invisible, rechargeable, and 24/7 options", "Style matters when you wear devices all day for tinnitus. Common options include receiver-in-canal styles that are comfortable and discreet, custom in-the-ear styles, nearly invisible deep-fit options, rechargeable styles with charging cases, and extended-wear Lyric devices placed deep in the canal and worn for months at a time. If tinnitus bothers you most at night, an extended-wear device can help because it stays in during sleep."],
+    ["What a tinnitus-focused fitting involves", "A tinnitus fitting is more than a quick device handoff. Your visit typically includes comprehensive hearing and tinnitus assessment, a discussion of your triggers and hardest times of day, selection of the right style and technology level for your goals and budget, precise [fitting and verification](/hearing-aid-fitting/) including real-ear measurements when appropriate, programming of tinnitus and sound therapy options, coaching on use in quiet and noisy settings, and follow-up visits to fine-tune."]
+  ],
+  bulletLinks: [
+    ["Hearing aid fitting and verification", "/hearing-aid-fitting/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["What to expect at your visit", "/tinnitus/what-to-expect/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
+  ],
+  takeaways: [
+    "Because tinnitus and hearing loss are usually linked, hearing aids are often the foundation of effective tinnitus care.",
+    "Look for devices with integrated tinnitus programs, precise frequency shaping, and easy daily sound therapy control.",
+    "The best brand and style depend on your hearing profile, tinnitus pattern, and lifestyle, verified through careful fitting."
+  ],
+  faqs: [
+    ["Will hearing aids make my tinnitus go away completely?", "Some patients experience near-complete relief, especially when tinnitus is driven by untreated hearing loss. For others, hearing aids significantly reduce the loudness and impact even if they do not erase it. Many people say the ringing fades into the background and stops ruling their day."],
+    ["Does any hearing aid work, or do I need a specific kind?", "Not all devices are equal. We often recommend premium or mid-level technology with robust tinnitus and noise processing, programmed specifically for your hearing and tinnitus profile. The best device for you may differ from a family member's choice."],
+    ["What if my hearing test is normal but I still have tinnitus?", "Some patients with normal tests still benefit from sound therapy or mild amplification. In these cases we may put more emphasis on anxiety management, sleep strategies, and counseling-based approaches."],
+    ["How quickly will I notice a difference?", "Some patients notice a change within days or weeks; for others it builds gradually over months as the brain adapts. We set realistic expectations and schedule follow-ups to support you through the adjustment period."]
+  ],
+  image: "/assets/core/tinnitus__hearing-aids.svg",
+  imageLabel: "Hearing technology that helps the brain tune out tinnitus"
+},

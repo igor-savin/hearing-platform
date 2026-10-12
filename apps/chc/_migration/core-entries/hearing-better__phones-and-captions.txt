@@ -1,0 +1,35 @@
+"/hearing-better/phones-and-captions/": {
+  kicker: "Hearing Better",
+  headline: "Phone Calls and Captions for People With Hearing Loss",
+  metaTitle: "Phone Calls and Captions for Hearing Loss",
+  metaDescription: "Missing phone calls? Learn about captioned phones, free California Connect equipment, phone streaming to hearing aids and captioning glasses. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "The phone is hard for many people with hearing loss. You cannot see the speaker's face. The sound is thin. Options exist at every budget, and some are free.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Stream calls to your hearing aids", "Most current hearing aids [connect to an iPhone or Android phone](/why-phone-compatibility-shouldnt-drive-your-hearing-aid-decisions/). The caller's voice plays in both ears. Your hearing aid microphones can pick up your voice. Ask us to check that your phone and hearing aids are paired and set up well."],
+    ["Captioned and amplified phones", "A captioned phone shows the words of the call on a screen. An amplified phone makes the caller louder. CaptionCall and CapTel are two well-known captioned phone services. See our pages on [CaptionCall](/products/hearing-aids-by-brand/caption-call/) and [CapTel](/products/hearing-aids-by-brand/captel/). Eligibility rules and costs depend on the service, so confirm them with the provider."],
+    ["Free equipment from California Connect", "California Connect is a state program. It gives specialized phone equipment to California residents who have hearing, vision, movement, speech or memory difficulty. This includes amplified phones for people who are hard of hearing. It also runs the California Relay Service. Visit [caconnect.org](https://caconnect.org/) or call 800-806-1191 to apply. Program details can change, so check the website first."],
+    ["Captioning glasses", "Some smart glasses show live captions of speech in your field of view. Captify is one example. Reviews list battery life of around four hours of continuous use, and some models offer a paid monthly plan, as of June 2026. Prices and features change, so check the maker's site at [captify.glass](https://captify.glass). Ask us if glasses might suit how you live."],
+    ["Ask us before you buy", "The best choice depends on your hearing, your phone and how you use it. Bring your phone and hearing aids to your next visit. We will set them up and talk through the options."]
+  ],
+  bulletLinks: [
+    ["CaptionCall", "/products/hearing-aids-by-brand/caption-call/"],
+    ["CapTel", "/products/hearing-aids-by-brand/captel/"],
+    ["Programs and groups we recommend", "/resources/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Your hearing aids can [stream phone calls straight to your ears](/can-hearing-aids-take-phone-calls/).",
+    "Captioned phones show the words of the call. California Connect may provide equipment free.",
+    "Captioning glasses show live captions of speech. Check current prices with the maker."
+  ],
+  faqs: [
+    ["Who can get free phone equipment from California Connect?", "California residents with hearing, vision, movement, speech, learning or memory difficulty can qualify. Apply at caconnect.org or call 800-806-1191."],
+    ["Are captions on phone calls private?", "Captioned phone services use an operator or software to turn speech into text. Ask the provider how they handle your calls."],
+    ["Can my hearing aids connect to any phone?", "Most current hearing aids pair with recent iPhone and Android phones. Older phones and older hearing aids may not. We will check yours."]
+  ],
+  image: "/assets/core/hearing-better__phones-and-captions.svg",
+  imageLabel: "Phone calls and captions"
+},

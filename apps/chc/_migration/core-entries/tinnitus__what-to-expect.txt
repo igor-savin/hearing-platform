@@ -1,0 +1,38 @@
+"/tinnitus/what-to-expect/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "What to Expect at Your Tinnitus Appointment",
+  intro: [
+    "Feeling nervous about your first tinnitus visit is completely normal. Many people worry, what if there is nothing they can do, or what if they don't believe me. This guide walks you through exactly what happens at a tinnitus appointment at California Hearing Center so you know what to expect before you arrive.",
+    "Our Bay Area clinics in San Mateo and San Carlos focus on listening to your story, running the right tests, and building a personalized plan, not just telling you to learn to live with it.",
+    "If you hear ringing, buzzing, or other sounds that others cannot hear and it has lasted more than a few days, it is a good idea to get evaluated. For background first, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["Who should schedule a visit", "Getting evaluated is especially important if the sound is bothering your sleep, focus, or mood, if the tinnitus is in one ear only, if you have noticed changes in your hearing, if you have had significant noise exposure from concerts, loud work, or firearms, or if you feel anxious or overwhelmed by the sound. Sudden or one-sided tinnitus, or tinnitus with dizziness, deserves prompt attention."],
+    ["How to prepare", "A little preparation makes your appointment smoother. Make a symptom list noting when your tinnitus started, what it sounds like, whether it is constant or comes and goes, and what makes it better or worse. Gather medical information including a list of medications and supplements, major health conditions, and any recent illnesses, injuries, or noise exposure, since some medications and conditions can contribute to tinnitus. And think about your goals, whether that is sleeping better, hearing conversations more clearly, or reducing anxiety."],
+    ["Check-in and first conversation", "When you arrive, you will check in, complete any remaining forms, and meet your audiologist. We start by talking, no tests yet. Your audiologist asks when and how your tinnitus started, what the sound is like and which ears are affected, how it affects your sleep, concentration, and mood, your noise exposure history, and your medical history including jaw, neck, dizziness, or balance issues. We then gently examine your ears for earwax, signs of infection or fluid, and clues pointing toward conditions like Meniere's."],
+    ["Hearing and tinnitus testing", "Next we perform a set of painless, non-invasive tests in a sound-treated room. A comprehensive [hearing test](/hearing-testing/) has you listen for tones and words at different pitches and volumes to show whether you have hearing loss and how it lines up with your tinnitus. Middle-ear tests like tympanometry check how your eardrum moves and help rule out certain middle-ear causes. Tinnitus pitch and loudness matching, where we play tones and ask which most closely match your tinnitus, helps us characterize it and tailor sound therapy, hearing aid programming, or TRT."],
+    ["Reviewing results and building your plan", "After testing, your audiologist explains whether you have hearing loss and how it relates to your tinnitus, which type of tinnitus you likely have, whether other medical evaluations are recommended, and how severe your tinnitus appears. We then talk through options matched to your goals, lifestyle, and budget. These may include hearing aids for tinnitus, [sound therapy](/tinnitus/sound-therapy/), CBT and counseling, Tinnitus Retraining Therapy, advanced options like Lenire for select candidates, and lifestyle and home strategies."],
+    ["After the appointment", "Tinnitus care is a process, not a one-time event. Your plan may include follow-up visits to fine-tune hearing aid or sound therapy settings, check-ins to track progress with CBT, TRT, or anxiety management, adjustments based on what you notice, and referrals to other providers like ENT, a TMJ specialist, or a mental-health professional when appropriate. With the right tools and time, many people experience habituation, where the brain gradually learns to tune out the sound. Your first appointment is the starting line, not the finish."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Hearing aids for tinnitus", "/tinnitus/hearing-aids/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Explore the tinnitus hub", "/tinnitus/"]
+  ],
+  takeaways: [
+    "A full tinnitus evaluation combines your history, an ear exam, and painless hearing and tinnitus testing.",
+    "The goal is a personalized plan matched to your goals, not a generic tell you to live with it response.",
+    "Tinnitus care continues with follow-ups, fine-tuning, and referrals as needed over time."
+  ],
+  faqs: [
+    ["How long does a tinnitus appointment take?", "Plan for about 60 to 90 minutes for a full evaluation, including history, hearing tests, tinnitus measurements, and time to review results and next steps. Appointments may run a bit longer if we are also fitting or adjusting hearing aids."],
+    ["Do I need to change my routine before the appointment?", "You do not need to drastically change your routine, but it helps to notice how caffeine or alcohol affect your tinnitus in daily life so you can share that with us."],
+    ["Will I get treatment on the first visit?", "In many cases we can start parts of your plan right away, such as beginning sound therapy, discussing sleep strategies, or starting a hearing aid trial. More complex cases may involve coordinating with other specialists or scheduling follow-ups."],
+    ["What if I feel anxious about the appointment?", "It is completely understandable. We take time to answer your questions and move at your pace. Many patients find it helpful to bring a written list of concerns, and you can reach our team at 650-342-9449."]
+  ],
+  image: "/assets/core/tinnitus__what-to-expect.svg",
+  imageLabel: "Your first tinnitus visit, step by step"
+},

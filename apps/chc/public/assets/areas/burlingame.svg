@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="California Hearing Center serving Burlingame">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7ef"/><stop offset="1" stop-color="#dff0f1"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="0" y="0" width="900" height="540" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="900" height="540" fill="url(#sky)"/>
+    
+    <rect x="0" y="430" width="900" height="110" fill="#155f6b" opacity="0.14"/>
+    <g transform="translate(560 250) rotate(-18)">
+      <path d="M0 0 L150 24 L150 44 L0 40 Z" fill="#155f6b"/>
+      <path d="M40 20 L92 -34 L108 -30 L74 26 Z" fill="#105966"/>
+      <path d="M40 30 L92 78 L108 74 L74 34 Z" fill="#105966"/>
+      <path d="M150 26 L182 14 L184 34 L150 40 Z" fill="#e0ae3c"/>
+    </g>
+    <g stroke="#86d0d5" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M120 300 h120"/><path d="M150 330 h150"/><path d="M120 360 h90"/></g>
+    <g stroke="#ffffff" stroke-width="4" stroke-dasharray="14 16" opacity="0.85"><path d="M60 470 H840"/></g>
+    <!-- unifying hearing motif: soundwave arcs radiating from a listening point -->
+    <g transform="translate(96 150)" fill="none" stroke="#155f6b" stroke-width="6" stroke-linecap="round" opacity="0.55">
+      <circle cx="0" cy="0" r="7" fill="#155f6b" stroke="none"/>
+      <path d="M18 -20 a30 30 0 0 1 0 40"/>
+      <path d="M34 -34 a52 52 0 0 1 0 68"/>
+      <path d="M50 -48 a74 74 0 0 1 0 96"/>
+    </g>
+    <!-- title band -->
+    <rect x="0" y="0" width="900" height="118" fill="#155f6b"/>
+    <text x="60" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#ffffff">Burlingame</text>
+    <text x="60" y="88" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#86d0d5" letter-spacing="1.5">CALIFORNIA HEARING CENTER · AREAS WE SERVE</text>
+    <rect x="0" y="118" width="900" height="5" fill="#e0ae3c"/>
+  </g>
+</svg>

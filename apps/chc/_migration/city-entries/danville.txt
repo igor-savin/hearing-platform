@@ -1,0 +1,30 @@
+  "danville": {
+    name: "Danville",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 50 minutes east",
+    distanceTier: "far",
+    geo: { lat: 37.8216, lng: -121.9999 },
+    motif: "estate",
+    lede:
+      "Danville keeps a small-town feel in the San Ramon Valley — the tree-lined blocks of Hartz Avenue, the estates out toward Blackhawk, Mount Diablo rising behind it all. It's about 50 minutes east of our Peninsula offices, so we're upfront that we're not the nearest audiologist, though Danville residents do travel to us for specialized care.",
+    hook: [
+      "Discreet technology, unhurried care",
+      "Danville patients often want two things at once: hearing that keeps up with an active professional and social life, and technology that stays genuinely discreet. Modern in-canal and receiver-in-canal hearing aids deliver both, but getting the most from them depends on expert fitting and verification far more than the device alone. We take the time to program, measure, and fine-tune — privately and without the rush of a retail counter.",
+    ],
+    localScene: [
+      "From Hartz Avenue to Blackhawk",
+      "Danville's character shows in the boutiques and cafes along Hartz Avenue, the playwright's retreat at Eugene O'Neill's Tao House, the upscale shops of Blackhawk Plaza, and the Iron Horse Trail threading through it under Mount Diablo. Residents here tend to value results and privacy over gadgetry. We match that with careful, verified fittings and technology chosen honestly for the way you actually live and listen.",
+    ],
+    whyHere:
+      "Danville patients choose us for meticulous testing, premium technology matched honestly to their needs, and specialized [tinnitus care](/tinnitus/) — with the continuity of seeing the same audiologist each visit. Many first came for tinnitus or Lenire and stayed for all of their hearing care.",
+    landmarks:
+      "We're about 50 minutes from Hartz Avenue, Blackhawk Plaza, and the Iron Horse Trail, taking the East Bay bridges over to our San Mateo office.",
+    faqs: [
+      ["Do you offer discreet, nearly invisible hearing aids?", "Yes. We fit several discreet and deep-canal styles. The right choice depends on your ear anatomy and hearing needs, which we assess during your evaluation."],
+      ["Why travel from Danville when there are closer options?", "For routine care, staying local is reasonable. Patients come to us for specialized tinnitus treatment, Lenire, and the unhurried, meticulous fitting that's harder to find nearby."],
+      ["Can I see a tinnitus specialist?", "Yes. Our practice is tinnitus-focused, including Lenire, and sees patients from throughout the San Ramon Valley. Call 650-342-9449 to arrange a visit."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

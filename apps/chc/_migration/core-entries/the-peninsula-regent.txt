@@ -1,0 +1,34 @@
+"/the-peninsula-regent/": {
+  kicker: "Hearing Care for Seniors",
+  headline: "Hearing Care for The Peninsula Regent Community in San Mateo",
+  intro: [
+    "The Peninsula Regent is an upscale senior-living community near downtown San Mateo and El Camino Real, [home to active older adults](/best-hearing-aids-for-active-grandparents-in-the-bay-area-restaurants-travel-and-grandkids/) who expect the same quality in their health care that they expect everywhere else. California Hearing Center provides that standard of hearing care to Regent residents and families, just minutes away at 88 N. San Mateo Drive.",
+    "As an independent audiology practice, we are not tied to any single manufacturer, so our recommendations reflect what fits your hearing, your ears, and your lifestyle. For residents who lead busy, social lives, hearing well is what keeps dinners, lectures, travel and family calls enjoyable."
+  ],
+  sections: [
+    ["Hearing care for an active retirement", "Residents at a community like the Regent are often out and about: theater, restaurants, board meetings, grandchildren's events. That lifestyle demands hearing aids that perform in noise and switch environments smoothly, which is exactly where a careful fitting and verification make the difference."],
+    ["Discreet, capable technology", "Many residents want devices that are barely noticeable yet powerful. Today's receiver-in-canal and custom styles can be both, and we help weigh cosmetics against real-world performance so you are not disappointed by an invisible aid that cannot keep up with a lively dinner table."],
+    ["Hearing and staying in the conversation", "The Lancet Commission on dementia prevention lists untreated hearing loss as the largest modifiable risk factor in midlife. That is an association across populations. It is not a promise that hearing aids will protect any one person's memory, and we do not make that promise. The reason to act early at The Peninsula Regent is more ordinary. Residents here have full calendars, and a lecture or a dinner table you cannot follow is one you stop going to."],
+    ["Ongoing service close to home", "Premium hearing aids reward good aftercare, meaning periodic tuning, cleaning and reprogramming as hearing shifts. Being a short drive from The Peninsula Regent means residents keep seeing the same audiologist for those adjustments without a long or difficult trip."]
+  ],
+  bulletLinks: [
+    ["Schedule a hearing evaluation", "/hearing-testing/"],
+    ["Visit our San Mateo office", "/contact/san-mateo/"],
+    ["Senior-living hearing care", "/senior-living/"],
+    ["Atria Park of San Mateo residents", "/atria-park-of-san-mateo/"],
+    ["Sunrise of San Mateo residents", "/sunrise-of-san-mateo/"],
+    ["The Stratford residents", "/the-stratford/"]
+  ],
+  takeaways: [
+    "We provide hearing care to The Peninsula Regent residents and families from our nearby San Mateo and San Carlos offices.",
+    "Active seniors need hearing aids that handle noise and shifting environments, which depends on expert fitting.",
+    "Independent, ongoing audiology care keeps discreet, capable devices performing over the years."
+  ],
+  faqs: [
+    ["I stay very active. Will hearing aids keep up with restaurants and events?", "The right devices, well fitted, absolutely can. We verify performance in noise and program the aids for the environments you actually spend time in, then adjust as you tell us how they do."],
+    ["Can I get hearing aids that no one will notice?", "Often yes. Receiver-in-canal and custom in-canal styles are very discreet. We will be candid about any tradeoff between size and power so your choice looks good and works well."],
+    ["How do I get started as a Peninsula Regent resident?", "Just reach out to arrange an evaluation at our nearby San Mateo office or in San Carlos. We will review your hearing, your lifestyle, and your goals before recommending anything."]
+  ],
+  image: "/assets/core/the-peninsula-regent.svg",
+  imageLabel: "Hearing care for The Peninsula Regent residents"
+},

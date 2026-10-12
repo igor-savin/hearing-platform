@@ -1,0 +1,30 @@
+  "mountain-view": {
+    name: "Mountain View",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 25 minutes from our San Carlos office",
+    distanceTier: "mid",
+    geo: { lat: 37.3861, lng: -122.0839 },
+    lede:
+      "Mountain View mixes a lively Castro Street downtown, a busy Caltrain hub, and one of the densest concentrations of tech work anywhere. It is a well-connected city, and getting to our San Carlos office is an easy 25-minute trip up the Peninsula.",
+    hook: [
+      "Clarity in busy, layered listening environments",
+      "Life in Mountain View happens in noisy places — the restaurants along Castro Street, open offices, transit platforms, and crowded events at Shoreline. Following one voice through that kind of background is a specific challenge, and it is exactly where standard hearing aids often fall short. We test speech-in-noise performance and verify each fitting with real-ear measurement, tuning devices for the demanding, layered sound of daily life here rather than for a quiet test booth.",
+    ],
+    motif: "transit",
+    localScene: [
+      "A connected city that lives in the noise",
+      "Between Castro Street's restaurants, the Mountain View Caltrain and light-rail station, Shoreline Amphitheatre and its park, and neighborhoods like Old Mountain View and Cuesta Park, this is a community always on the move and rarely in silence. Commuting, meeting, and dining out all demand hearing that works in motion and in noise. For Mountain View patients we focus on real-ear-verified fittings and speech-in-noise clarity, so conversations hold up on the platform, at the table, and in the meeting room.",
+    ],
+    whyHere:
+      "Mountain View patients choose us for careful, verified fittings over quick sales, and for specialized [tinnitus care](/tinnitus/) that is hard to find nearby. The short, predictable drive up the Peninsula makes follow-ups and adjustments simple to fit around a full work week.",
+    landmarks:
+      "We are about 25 minutes from Castro Street, the Mountain View transit center, and Shoreline by way of the 101 to our San Carlos office.",
+    faqs: [
+      ["Can hearing aids really help in noisy restaurants and offices?", "Yes, when they are chosen and programmed for it. We use speech-in-noise testing and real-ear verification to fit devices for exactly the busy environments you spend time in, then fine-tune from there."],
+      ["Do you treat tinnitus as well as fit hearing aids?", "We do. Tinnitus care is a core focus of our practice, including options like Lenire, alongside comprehensive hearing testing and fittings."],
+      ["How far is your office from Mountain View?", "Our San Carlos office is about 25 minutes north up the 101. Call 650-342-9449 and we will find a convenient time."],
+    ],
+    onCaltrain: true,
+  },

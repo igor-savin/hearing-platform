@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-get-free-hearing-aids-with-medicare",
+  "hero": { "title": "Medicare & Hearing Aids", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Five Ways to Cover Hearing Aids", "subtitle": "Where each option stands under Medicare and beyond",
+    "rows": [
+      {"title": "Original Medicare", "desc": "Does not cover the hearing aids themselves"},
+      {"title": "Medicare Advantage", "desc": "May add a hearing allowance; varies by plan"},
+      {"title": "Medicaid", "desc": "Coverage depends on your state's rules"},
+      {"title": "VA benefits", "desc": "Often generous for eligible veterans"},
+      {"title": "OTC and assistance", "desc": "Lower-cost devices and support programs"}
+    ] }
+}

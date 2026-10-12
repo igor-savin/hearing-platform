@@ -1,0 +1,11 @@
+{
+  "slug": "the-stigma-of-hearing-loss",
+  "hero": { "title": "Beyond the Stigma", "icon": "hidden", "accent": "gold" },
+  "info": { "title": "Moving Past the Stigma", "subtitle": "Five calm steps from dread to confidence",
+    "rows": [
+      {"title": "Name what you feel", "desc": "Embarrassment is common and worth acknowledging."},
+      {"title": "Know you're not alone", "desc": "Hearing loss is one of the most common conditions."},
+      {"title": "See today's devices", "desc": "Modern hearing aids are small and discreet."},
+      {"title": "Tell your circle", "desc": "A quick heads-up makes conversations easier."},
+      {"title": "Book a hearing test", "desc": "A short, pressure-free first step."}
+    ] } }

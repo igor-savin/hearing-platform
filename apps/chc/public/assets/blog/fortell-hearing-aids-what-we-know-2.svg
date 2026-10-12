@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Fortell at a glance">
+  <defs><linearGradient id="hd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#155f6b"/><stop offset="1" stop-color="#105966"/></linearGradient></defs>
+  <rect width="800" height="520" fill="#ffffff"/>
+  <rect x="0" y="0" width="800" height="90" fill="url(#hd)"/>
+  <rect x="0" y="86" width="800" height="4" fill="#2f7fd6"/>
+  <text x="44" y="44" font-family="Georgia, serif" font-size="25" fill="#ffffff" font-weight="bold">Fortell at a glance</text>
+  <text x="44" y="70" font-family="Georgia, serif" font-size="15" fill="#86d0d5">A competitor's read, as of 8 September 2026</text>
+  
+    <circle cx="66" cy="149.83333333333334" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
+    <text x="66" y="156.83333333333334" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">1</text>
+    <text x="108" y="144.83333333333334" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">$6,800 a pair</text>
+    <text x="108" y="167.83333333333334" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">Bundled: five years of care, three-year warranty, 100-day trial.</text>
+    <line x1="108" y1="181.66666666666669" x2="756" y2="181.66666666666669" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="213.5" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
+    <text x="66" y="220.5" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">2</text>
+    <text x="108" y="208.5" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Own clinics only</text>
+    <text x="108" y="231.5" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">No independent practice can supply or service it.</text>
+    <line x1="108" y1="245.33333333333334" x2="756" y2="245.33333333333334" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="277.16666666666663" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
+    <text x="66" y="284.16666666666663" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">3</text>
+    <text x="108" y="272.16666666666663" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Out-of-network everywhere</text>
+    <text x="108" y="295.16666666666663" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">No insurer contracts. You submit the claim yourself.</text>
+    <line x1="108" y1="308.99999999999994" x2="756" y2="308.99999999999994" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="340.8333333333333" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
+    <text x="66" y="347.8333333333333" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">4</text>
+    <text x="108" y="335.8333333333333" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">No telecoil, iPhone only</text>
+    <text x="108" y="358.8333333333333" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">Rules it out for loop users and Android users outright.</text>
+    <line x1="108" y1="372.66666666666663" x2="756" y2="372.66666666666663" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="404.49999999999994" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
+    <text x="66" y="411.49999999999994" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">5</text>
+    <text x="108" y="399.49999999999994" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">Evidence is company-funded</text>
+    <text x="108" y="422.49999999999994" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">Both studies funded and authored by Fortell.</text>
+    <line x1="108" y1="436.33333333333326" x2="756" y2="436.33333333333326" stroke="#e5eceb" stroke-width="2"/>
+    <circle cx="66" cy="468.16666666666663" r="24" fill="#fbf7ef" stroke="#2f7fd6" stroke-width="3"/>
+    <text x="66" y="475.16666666666663" font-size="21" fill="#155f6b" text-anchor="middle" font-weight="bold" font-family="Georgia, serif">6</text>
+    <text x="108" y="463.16666666666663" font-size="18.5" fill="#21424b" font-weight="bold" font-family="Georgia, serif">SF and Palo Alto not open</text>
+    <text x="108" y="486.16666666666663" font-size="14.5" fill="#6b8086" font-family="Georgia, serif">Waitlists with no address and no date announced.</text>
+    
+</svg>

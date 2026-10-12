@@ -1,0 +1,30 @@
+  "union-city": {
+    name: "Union City",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 30 minutes across the Dumbarton or San Mateo Bridge",
+    distanceTier: "far",
+    geo: { lat: 37.5934, lng: -122.0438 },
+    lede:
+      "Union City sits in the southern East Bay, a diverse commuter community where BART and two bridges tie it to the rest of the region. Its transit links actually make the Peninsula reasonably reachable. That said, our offices are in San Mateo and San Carlos across the water, so Union City patients most often seek us out for specialized hearing care.",
+    hook: [
+      "A commuter hub with two bridges to the Peninsula",
+      "Union City is built around getting places — the Intermodal BART station, the Nimitz and the Dumbarton and San Mateo bridges all within reach. That connectivity means our Peninsula offices are only about half an hour away, which puts specialized care within practical range. For everyday testing a nearby provider is sensible, but for focused [tinnitus care](/tinnitus/), Lenire, or a fitting that never worked, the short bridge trip is one Union City patients are glad to make.",
+    ],
+    motif: "transit",
+    localScene: [
+      "Neighborhoods linked by transit",
+      "Union City brings together the older Alvarado district, the neighborhoods around the BART station, Old Alvarado's historic core, and the trails and parks near the Alameda Creek corridor. It is a community of commuters and families spread across the southern East Bay, many of whom already travel daily for work. For them, crossing a bridge for a specialized audiology appointment is a familiar, manageable errand rather than an ordeal.",
+    ],
+    whyHere:
+      "Union City patients choose California Hearing Center for specialized expertise the neighborhood clinic may not offer — in-depth tinnitus and Lenire treatment, real-ear-verified fittings, and honest guidance. Easy bridge and freeway access, plus continuity with one audiologist, makes the modest drive worthwhile.",
+    landmarks:
+      "From the BART station, Old Alvarado, or the Alameda Creek trails, our San Mateo office is roughly 30 minutes over the Dumbarton or San Mateo Bridge.",
+    faqs: [
+      ["Which bridge is fastest from Union City?", "Either the Dumbarton or the San Mateo Bridge works, and both put us around 30 minutes away depending on traffic. We can suggest the better route for your appointment time."],
+      ["Why choose you over a closer audiologist?", "For routine care, local is often easier. Union City patients come to us for specialized tinnitus treatment, Lenire, and complex second opinions, where a focused practice is worth the short bridge drive."],
+      ["Do you see patients from the southern East Bay regularly?", "Yes, regularly. We schedule around the commute and often group testing and follow-up together. Call 650-342-9449 to arrange a visit."],
+    ],
+    consolidatedInto: "alameda-county",
+  },

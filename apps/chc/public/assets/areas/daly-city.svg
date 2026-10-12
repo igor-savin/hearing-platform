@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" role="img" aria-label="California Hearing Center serving Daly City">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7ef"/><stop offset="1" stop-color="#dff0f1"/>
+    </linearGradient>
+    <clipPath id="card"><rect x="0" y="0" width="900" height="540" rx="26"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="900" height="540" fill="url(#sky)"/>
+    
+    <rect x="0" y="360" width="900" height="180" fill="#7cc0c6"/>
+    <circle cx="720" cy="330" r="46" fill="#e0ae3c" opacity="0.9"/>
+    <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.85">
+      <path d="M120 430 q40 -26 80 0 t80 0 t80 0 t80 0"/>
+      <path d="M120 470 q40 -26 80 0 t80 0 t80 0 t80 0 t80 0"/>
+    </g>
+    <path d="M0 360 q120 -34 240 -6 t240 -2 240 -10 180 4 V540 H0 Z" fill="#155f6b" opacity="0.16"/>
+    <g stroke="#ffffff" stroke-width="4" fill="none" opacity="0.8"><path d="M300 300 q14 -12 28 0"/><path d="M320 300 q14 -12 28 0"/></g>
+    <!-- unifying hearing motif: soundwave arcs radiating from a listening point -->
+    <g transform="translate(96 150)" fill="none" stroke="#155f6b" stroke-width="6" stroke-linecap="round" opacity="0.55">
+      <circle cx="0" cy="0" r="7" fill="#155f6b" stroke="none"/>
+      <path d="M18 -20 a30 30 0 0 1 0 40"/>
+      <path d="M34 -34 a52 52 0 0 1 0 68"/>
+      <path d="M50 -48 a74 74 0 0 1 0 96"/>
+    </g>
+    <!-- title band -->
+    <rect x="0" y="0" width="900" height="118" fill="#155f6b"/>
+    <text x="60" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#ffffff">Daly City</text>
+    <text x="60" y="88" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#86d0d5" letter-spacing="1.5">CALIFORNIA HEARING CENTER · AREAS WE SERVE</text>
+    <rect x="0" y="118" width="900" height="5" fill="#e0ae3c"/>
+  </g>
+</svg>

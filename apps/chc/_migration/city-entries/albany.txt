@@ -1,0 +1,30 @@
+  "albany": {
+    name: "Albany",
+    county: "Alameda County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 45 minutes across the bay",
+    distanceTier: "far",
+    geo: { lat: 37.8869, lng: -122.2977 },
+    lede:
+      "Albany is a small, tight-knit city tucked between Berkeley and El Cerrito — barely a couple of square miles, with a friendly Solano Avenue main street and a strong neighborhood feel. It is worth saying plainly that our offices are on the Peninsula, well across the bay, so for routine hearing care a closer audiologist is often the practical pick. Albany residents who come to us usually want a specialist's focus.",
+    hook: [
+      "A small-town main street where conversation matters",
+      "Life in Albany tends to happen at conversational range — Solano Avenue shops, school events, the community feel that draws families here. That is exactly where hearing loss first shows up, as missed words in a busy cafe or across a crowded room. For a first evaluation or ongoing device care, staying local is reasonable; patients tend to travel to us specifically for [tinnitus](/tinnitus/) and Lenire treatment or a careful second opinion on a fitting that has not worked out.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "Compact, walkable, and close-knit",
+      "For such a small city, Albany packs in a lot — the shops and restaurants along Solano Avenue, the weekend crowds at the Albany Bulb and shoreline, Memorial Park, and the view up to Albany Hill. Neighbors know each other, and much of daily life runs on easy face-to-face conversation. When Albany residents seek us out, it is generally for the specialized care that is harder to find nearby, not for a routine appointment they could book down the street.",
+    ],
+    whyHere:
+      "Albany patients choose California Hearing Center for its concentration on the difficult cases — persistent tinnitus, Lenire therapy, and fittings that other clinics could not get right. They value straightforward advice and the continuity of one audiologist who knows their history, which makes the longer drive feel worthwhile.",
+    landmarks:
+      "From Solano Avenue, Memorial Park, or the Albany waterfront, our San Mateo office is roughly 45 minutes across the bay.",
+    faqs: [
+      ["Why drive from Albany when Berkeley clinics are minutes away?", "For everyday hearing testing and maintenance, a nearby clinic is perfectly reasonable. People come to us across the bay for specialized tinnitus treatment, Lenire, and complex second opinions where our narrower focus is an advantage."],
+      ["Can you help if my hearing aids never sounded right?", "Often, yes. Poor fit or unverified programming is a common reason devices disappoint, and we use real-ear measurement to check that what your ears receive matches your prescription."],
+      ["How far is your practice from Albany?", "About 45 minutes to San Mateo depending on bridge traffic. We plan East Bay visits to accomplish more per trip so the distance is less of a burden."],
+    ],
+    consolidatedInto: "alameda-county",
+  },

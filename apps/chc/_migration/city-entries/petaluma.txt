@@ -1,0 +1,30 @@
+  "petaluma": {
+    name: "Petaluma",
+    county: "Sonoma County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 75 minutes north",
+    distanceTier: "far",
+    geo: { lat: 38.2324, lng: -122.6367 },
+    lede:
+      "Petaluma wears its history openly, from the cast-iron storefronts of its downtown to the riverfront that once made it the self-styled egg capital of the world. It is the closest of the wine-country cities to us, but still about seventy-five minutes north, and our offices are on the Peninsula in San Mateo and San Carlos. Some Petaluma patients make that drive on purpose, for care they want handled by a specialist.",
+    hook: [
+      "Choosing a practice, not just a nearby door",
+      "There is nothing wrong with seeing a hearing provider close to home for a routine test or a simple set of hearing aids, and for that we would steer you local. The reason a Petaluma patient might point the car south is a tougher problem: tinnitus that will not quiet down, Lenire treatment, a fitting that has never felt right, or a fresh opinion after a letdown elsewhere. For those cases we run a thorough workup and lay out a plan meant to limit how often you return.",
+    ],
+    motif: "wine",
+    localScene: [
+      "Iron-front downtown to the Peninsula",
+      "Petaluma's character lives in its unusually intact historic core — the iron-front blocks along Petaluma Boulevard, the turning basin on the Petaluma River, and the neighborhoods spreading east and west of it. It is genuinely far from the Peninsula, and for everyday hearing care we would send you to someone nearer. For dedicated tinnitus treatment, Lenire, or a complicated fitting, some Petaluma patients weigh the specialist experience against the drive and decide it is worth it, and we make the visit earn the trip.",
+    ],
+    whyHere:
+      "Petaluma patients who travel to us are usually looking for tinnitus and diagnostic depth they could not find nearby. We respect the seventy-five-minute drive by consolidating care into focused visits and organizing follow-up so returning is the exception rather than the rhythm.",
+    landmarks:
+      "Patients come south to our Peninsula offices from downtown Petaluma, the riverfront turning basin, and the east-side neighborhoods, about seventy-five minutes down Highway 101.",
+    faqs: [
+      ["Why would I drive from Petaluma when there are closer options?", "For routine hearing care, closer usually wins, and we will say so. Petaluma patients tend to come to us for specialized [tinnitus treatment](/tinnitus/), Lenire, and difficult fittings, where the expertise is worth the extra time. We schedule to keep repeat drives rare."],
+      ["Do you provide Lenire tinnitus therapy?", "Yes. Lenire and full tinnitus care are among the main reasons North Bay patients, including from Petaluma, choose to travel to us."],
+      ["Can one visit cover testing and fitting so I'm not driving back often?", "Yes. For distance patients we bundle the [evaluation](/hearing-testing/) and [fitting](/hearing-aid-fitting/) where we can, then build follow-up so you make the drive as seldom as possible."],
+    ],
+    consolidatedInto: "sonoma-county",
+  },

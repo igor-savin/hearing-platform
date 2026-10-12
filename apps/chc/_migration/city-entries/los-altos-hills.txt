@@ -1,0 +1,30 @@
+  "los-altos-hills": {
+    name: "Los Altos Hills",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 28 minutes from our San Carlos office",
+    distanceTier: "far",
+    geo: { lat: 37.3797, lng: -122.1372 },
+    lede:
+      "Los Altos Hills is almost purely residential — winding lanes, large wooded lots, horse properties, and no commercial district by design. Our offices sit up on the Peninsula rather than in the South Bay, but residents used to traveling for specialized services make the roughly 28-minute drive for care they cannot find closer.",
+    hook: [
+      "Discreet technology and private, unhurried care",
+      "Patients from Los Altos Hills often want hearing that keeps up with an active life while staying completely out of sight, and they value being cared for without being rushed. Modern invisible and receiver-in-canal devices can deliver both, but the result depends on expert programming and verification, not the hardware alone. We take the time to fit, measure, and fine-tune privately — and for those who come to us, it is usually that depth of attention that made the trip worth it.",
+    ],
+    motif: "estate",
+    localScene: [
+      "A rural residential town that travels for its services",
+      "With Foothill College at its edge, the open space of Rancho San Antonio nearby, and estate parcels threaded along roads like Fremont, Page Mill, and Moody, Los Altos Hills has no downtown and never wanted one. Residents are accustomed to driving for nearly everything, so a trip up the Peninsula for a specialist is nothing new. Those who choose us are usually looking for complex tinnitus help, a difficult fitting solved, or an unhurried second opinion — and for routine visits, a closer provider may serve just as well.",
+    ],
+    whyHere:
+      "Los Altos Hills patients come to us for depth rather than convenience: specialized [tinnitus care](/tinnitus/) including Lenire, meticulous verified fittings, and honest guidance on technology. Many first crossed the county line for a problem no one nearby had solved.",
+    landmarks:
+      "We are about 28 minutes from Foothill College, Rancho San Antonio, and the Page Mill corridor, north via the 280 to our San Carlos office.",
+    faqs: [
+      ["Is it worth traveling this far when there are audiologists closer?", "For routine hearing aid checks, a nearby provider may be perfectly fine. Patients travel to us for specialized needs — complex tinnitus, difficult fittings, Lenire, or a thorough second opinion — where the extra distance buys real expertise."],
+      ["Can you keep my care completely discreet and private?", "Yes. We fit several invisible and near-invisible styles and keep every visit unhurried and confidential, which is a large part of why Los Altos Hills patients choose us."],
+      ["How far is your office from Los Altos Hills?", "Our San Carlos office is about 28 minutes north on the 280. Call 650-342-9449 and we can plan a longer, efficient visit to make the drive count."],
+    ],
+    consolidatedInto: "santa-clara-county",
+  },

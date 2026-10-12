@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aids-vs-over-the-counter-devices-what-bay-area-patients-need-to-know",
+  "hero": { "title": "Prescription vs. OTC", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "OTC vs. Prescription Hearing Aids", "subtitle": "Which path fits your hearing and your needs",
+    "rows": [
+      {"title": "Who OTC is for", "desc": "Adults 18+ with perceived mild-to-moderate loss"},
+      {"title": "Who fits it", "desc": "You self-select and self-adjust, often by app"},
+      {"title": "Prescription range", "desc": "Fitted to any degree of loss, including severe"},
+      {"title": "Professional care", "desc": "Test, custom tuning, and follow-up included"},
+      {"title": "Start with a test", "desc": "Confirms your loss and rules out other causes"}
+    ] }
+}

@@ -1,0 +1,40 @@
+  "/what-is-real-ear-measurement/": {
+    kicker: "Hearing Aid Fitting",
+    headline: "What Is Real-Ear Measurement (and Why It Matters)",
+    metaTitle: "Real-Ear Measurement: What It Is & Why It Matters",
+    variant: "product",
+    datePublished: "2026-03-10",
+    dateModified: "2026-09-29",
+    metaDescription:
+      "Real-ear measurement checks the sound your hearing aids deliver at the eardrum, so your fitting matches your prescription instead of a factory estimate.",
+    intro: [
+      "Two people can leave a fitting with the same model of hearing aid, programmed to the same prescription on paper, and still hear the world differently. The reason usually is not the device. It is whether anyone measured what that device was doing once it sat inside the ear.",
+      "Real-ear measurement is that check. A thin, soft [probe tube](/what-tools-do-audiologists-use/) rests in your ear canal next to the hearing aid while real speech plays, and the equipment reads the sound level arriving at your eardrum. Your audiologist compares those readings to the targets your [hearing test](/hearing-testing/) prescribes, then adjusts until the two line up. It turns a [hearing aid fitting](/hearing-aid-fitting/) from an educated guess into something measured.",
+      "At our San Mateo and San Carlos offices, real-ear measurement is a routine part of fitting [hearing aids](/products/hearing-aids/), not an upgrade you have to ask for. It is also one of the clearest ways to tell whether a fitting was done well.",
+    ],
+    takeaways: [
+      "Real-ear measurement checks the sound a hearing aid delivers at your eardrum, not what its software assumes.",
+      "Every ear canal is shaped differently, so identical prescriptions can call for different settings.",
+      "A verified fitting is standard best practice, and it is included at both of our offices.",
+    ],
+    sections: [
+      ["Sound measured where it counts", "Your prescription is calculated from your audiogram, but the number that matters is the sound reaching your eardrum, and that depends on the ear canal it travels through. A long, narrow canal shapes sound differently than a short, wide one. Real-ear measurement puts a measuring point where hearing happens, so the fitting is based on your ear rather than an average one. Skip it, and the audiologist is trusting that the hearing aid's own software guessed your canal correctly."],
+      ["First-fit settings versus a verified fitting", "When a hearing aid is first connected to fitting software, it loads a 'first-fit', the manufacturer's best estimate of your settings from your audiogram alone. It is a reasonable starting point, and some fittings never move past it. A verified fitting takes the next step: the audiologist measures the real output in your ear and corrects it toward the prescription target. First-fit settings routinely fall short of those targets, most often under-amplifying the softer, high-pitched sounds that carry speech clarity. That is the most consistent finding in the fitting literature. The difference between the two approaches is not the hardware. It is whether someone confirmed the hardware was doing its job."],
+      ["How the measurement works", "The appointment stays comfortable. Your audiologist places the soft probe tube in your ear canal, then positions the hearing aid alongside it. Speech plays at conversational levels while a screen shows two lines: the target your hearing calls for, and what your aids are producing. Where the lines separate, small adjustments bring them together, pitch by pitch. The whole check adds only a short while to the visit, and you can often hear speech sharpen as the settings close in."],
+      ["Why the target matters for speech", "Speech is not one sound but a spread of them, from low vowels to the faint consonants like 's', 'f', and 'th' that separate similar words. Those quiet high notes are the first to fade with age-related loss and the easiest for a default setting to leave too soft. Matching the prescription across the full range is what lets you catch those consonants rather than guess at them, especially in a noisy restaurant or over the phone. This is the same reason verification matters as much for [hearing aids for seniors](/hearing-aids-for-seniors/) as for anyone else."],
+      ["A standard we hold ourselves to", "Real-ear measurement is a recognized best practice in fitting, and we still see aids come in that were never measured this way. As a [HearingUp-approved provider](/resources/hearingup-approved-provider/), our team treats verification as part of the job rather than a premium add-on. If you are unsure whether your current aids were ever measured this way, you can [bring them in](/contact/) and find out. A quick check can reveal settings that have been leaving speech quieter than your prescription intended."],
+    ["More help beyond the hearing aid", "A verified fitting is the base. For noisy rooms, TV and phone calls, see our [Hearing Better hub](/hearing-better/)."]
+  ],
+    bullets: ["Probe-tube measurement", "Sound at the eardrum", "Prescription targets", "Beyond first-fit", "Clearer consonants", "San Mateo & San Carlos"],
+    faqs: [
+      ["Is real-ear measurement uncomfortable?", "The probe tube is thin and soft, and most people barely register it. It sits in the canal for a few minutes while speech plays, and nothing is inserted deeply or painfully. If anything, the interesting part is watching the two lines on the screen move together as your audiologist dials in the settings."],
+      ["Do all hearing aids need it?", "Any hearing aid programmed to a prescription benefits from being verified, from basic models to the most advanced. The technology inside the device does not change the fact that every ear canal shapes sound differently. Even premium aids can leave the factory settings well off target until they are measured in your ear."],
+      ["My current aids seem fine. Should I still have them checked?", "Feeling fine and matching your prescription are not always the same thing, because ears adapt to whatever they are given. A verification check can show whether softer speech sounds are reaching you at the right level. If they are, that is reassuring; if not, a small adjustment can make a noticeable difference."],
+      ["How long does it add to a fitting?", "Usually only a few extra minutes per ear. Your audiologist places the probe, plays the speech signal, reads the result, and adjusts. Given how much the check affects how well you hear, it is time well spent, and it is built into how we fit hearing aids here."],
+    ],
+    image: "/assets/blog/what-is-real-ear-measurement-1.svg",
+    imageLabel: "Measuring the sound that reaches your eardrum",
+    image2: "/assets/blog/what-is-real-ear-measurement-2.svg",
+    image2Label: "First-fit estimate versus a verified fitting",
+    image2Caption: "Verification lines up what your aids deliver with what your hearing prescribes.",
+  },

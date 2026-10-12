@@ -1,0 +1,12 @@
+{
+  "slug": "age-related-hearing-loss-understanding-managing-and-preventing-it",
+  "hero": { "title": "Age-Related Hearing Loss", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Managing Age-Related Hearing Loss", "subtitle": "What presbycusis looks like and how to handle it",
+    "rows": [
+      {"title": "Gradual onset", "desc": "Builds over years, affecting both ears"},
+      {"title": "High pitches first", "desc": "Consonants and higher voices fade earliest"},
+      {"title": "Common signs", "desc": "TV loud, frequent repeats, restaurants hard"},
+      {"title": "OTC vs. fitted", "desc": "Self-set devices or programmed to your test"},
+      {"title": "Protect and monitor", "desc": "Guard against noise; get regular checks"}
+    ] }
+}

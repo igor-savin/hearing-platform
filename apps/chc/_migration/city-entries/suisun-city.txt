@@ -1,0 +1,30 @@
+  "suisun-city": {
+    name: "Suisun City",
+    county: "Solano County",
+    region: "solano",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 85 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.2382, lng: -122.0405 },
+    lede:
+      "Suisun City wraps around a tidal channel at the edge of the vast Suisun Marsh, with a revived waterfront district and a working harbor at its heart. It's a fair distance from us — our offices sit on the Peninsula in San Mateo and San Carlos, roughly 85 minutes southwest — so for routine hearing care, a provider nearer Suisun will usually be the sensible option.",
+    hook: [
+      "When Suisun patients choose to travel for care",
+      "Our honest guidance is to keep everyday hearing care close to home. The drive to the Peninsula earns its keep only for specialized situations — persistent [tinnitus](/tinnitus/), Lenire treatment, a complicated fitting, or a second opinion you want done thoroughly. The Suisun-area patients who come to us come for exactly that, and we plan each visit so a single trip delivers a full evaluation, treatment, and a follow-up path.",
+    ],
+    motif: "bayside",
+    localScene: [
+      "Life along the marsh and the waterfront",
+      "Suisun City is defined by water — the restored Old Town waterfront along the promenade, the marina and harbor, and the enormous Suisun Marsh stretching out beyond, one of the largest brackish wetlands on the West Coast. That marine, marsh-side setting keeps humidity high, and moisture is the most common source of hearing aid trouble. For waterfront-area patients who wear hearing aids, moisture-resistant devices and a drying routine matter — and for those with more complex needs, some decide the specialized care on the Peninsula is worth the drive.",
+    ],
+    whyHere:
+      "Suisun City patients who make the trip are usually seeking tinnitus and diagnostic expertise they couldn't find locally. We honor the distance by folding everything into efficient, thorough visits and coordinating follow-up so the long drive stays occasional.",
+    landmarks:
+      "Patients reach our Peninsula offices from Suisun City's Old Town waterfront, the marina, and the neighborhoods bordering the Suisun Marsh, generally around 85 minutes southwest.",
+    faqs: [
+      ["Why would I drive to the Peninsula from Suisun City?", "For routine care, a closer provider usually makes more sense. Suisun patients travel to us mainly for specialized tinnitus care, Lenire, and difficult fittings where the expertise justifies the trip. We plan visits to keep repeat drives to a minimum."],
+      ["Does living by the marsh affect my hearing aids?", "The damp, marine air around the marsh and waterfront lets moisture build up inside hearing aids, which can cause muffled or intermittent sound. Moisture-resistant devices and a nightly drying routine prevent most of it."],
+      ["Can you make one visit count when I'm coming from a distance?", "Yes. We consolidate testing, treatment, and counseling into a single efficient visit and build a follow-up plan that limits how often you need to travel down. Call 650-342-9449 to arrange it."],
+    ],
+    consolidatedInto: "solano-county",
+  },

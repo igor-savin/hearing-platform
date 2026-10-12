@@ -1,0 +1,12 @@
+{
+  "slug": "how-ai-powered-hearing-aids-are-revolutionizing-healthcare",
+  "hero": { "title": "AI Hearing Aids", "icon": "soundwave", "accent": "aqua" },
+  "info": { "title": "What AI Processing Does", "subtitle": "How deep learning reshapes sound before it reaches you",
+    "rows": [
+      {"title": "Trained on real sound", "desc": "Neural net learns from many hours of audio"},
+      {"title": "Sorts speech from noise", "desc": "Separates voices from background in real time"},
+      {"title": "Runs on the chip", "desc": "Processing happens on-device, not in the cloud"},
+      {"title": "Eases listening effort", "desc": "Less strain to follow talk in busy rooms"},
+      {"title": "Still needs a fitting", "desc": "A pro tunes it to your hearing and ears"}
+    ] }
+}

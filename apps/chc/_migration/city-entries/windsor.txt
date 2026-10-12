@@ -1,0 +1,30 @@
+  "windsor": {
+    name: "Windsor",
+    county: "Sonoma County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 100 minutes north",
+    distanceTier: "far",
+    geo: { lat: 38.5471, lng: -122.8164 },
+    lede:
+      "Windsor is one of the newer towns in northern Sonoma County, built around a walkable Town Green that hosts markets and summer concerts and gives the community a real center of gravity. It is also one of the farthest points we serve — close to a hundred minutes north of our Peninsula offices in San Mateo and San Carlos. We are honest about the length of that drive, because the Windsor patients who make it are choosing us on purpose.",
+    hook: [
+      "Long drive, specialized reason",
+      "When the need is a routine hearing test or a basic set of hearing aids, a provider closer to the Town Green is the sensible option, and we will point you there. The trip to the Peninsula makes sense for the difficult cases: tinnitus that has held on despite treatment, Lenire, a fitting that never settled, or a second opinion after a frustrating go elsewhere. For those patients we run a complete evaluation and design a plan meant to keep the long round trips to a minimum.",
+    ],
+    motif: "wine",
+    localScene: [
+      "North county to the Peninsula",
+      "Windsor centers on its Town Green, with neighborhoods spreading out toward the Russian River and the vineyards of the Chalk Hill and Russian River corridors nearby. Being near the top of the county, it is a substantial haul from the Peninsula, and for everyday hearing care we would encourage you to look locally. For focused tinnitus treatment, Lenire, or a complex fitting, though, some Windsor patients weigh the specialist experience against the drive and decide it is worth it, and we make the visit count accordingly.",
+    ],
+    whyHere:
+      "Windsor patients who travel to us are usually after tinnitus and diagnostic expertise they could not assemble nearby. We respect the hundred-minute distance by concentrating care into thorough single visits and coordinating follow-up so the drive stays a rare occasion.",
+    landmarks:
+      "Patients head south to our Peninsula offices from the Windsor Town Green and the surrounding Russian River neighborhoods, roughly a hundred minutes down Highway 101.",
+    faqs: [
+      ["That's a long drive — why choose you over someone in Sonoma County?", "For routine care, closer is usually smarter, and we will say so. Windsor patients come to us mainly for specialized [tinnitus care](/tinnitus/), Lenire, and complex fittings, where the expertise justifies the trip, and we schedule to keep repeat drives rare."],
+      ["Do you provide Lenire tinnitus treatment?", "Yes. Lenire and full tinnitus management are among the main reasons North Bay patients, including from Windsor, decide the drive is worthwhile."],
+      ["Can you handle testing and fitting in one trip?", "Where possible, yes. For distance patients we combine the [evaluation](/hearing-testing/) and [fitting](/hearing-aid-fitting/) and build follow-up so you drive down as seldom as we can manage."],
+    ],
+    consolidatedInto: "sonoma-county",
+  },

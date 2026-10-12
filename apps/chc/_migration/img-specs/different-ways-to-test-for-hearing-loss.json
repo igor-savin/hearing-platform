@@ -1,0 +1,15 @@
+{
+  "slug": "different-ways-to-test-for-hearing-loss",
+  "hero": { "title": "Ways to Test Hearing", "icon": "soundwave", "accent": "gold" },
+  "info": {
+    "title": "What a full hearing evaluation measures",
+    "subtitle": "Each test answers a different question about your ears",
+    "rows": [
+      { "title": "Pure-tone audiometry", "desc": "The softest tones you hear, pitch by pitch" },
+      { "title": "Speech reception", "desc": "The quietest level you can repeat words back" },
+      { "title": "Word recognition", "desc": "How clearly you understand speech, not just volume" },
+      { "title": "Tympanometry", "desc": "Whether the eardrum and middle ear move freely" },
+      { "title": "Bone conduction", "desc": "Pinpoints inner-ear versus blockage-type loss" }
+    ]
+  }
+}

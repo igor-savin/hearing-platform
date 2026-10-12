@@ -1,0 +1,49 @@
+  "/toynbee-maneuver/": {
+    // Byline: no authorName/reviewedBy on purpose. No clinician has reviewed this page, so it names nobody.
+    // Add reviewedBy: { slug, name, credential } only after a named clinician actually reviews it.
+    // Medical-symptom page: needs clinician review before it is promoted.
+    kicker: "Ear Health",
+    headline: "Toynbee Maneuver: How It Works and When to Stop",
+    metaTitle: "Toynbee Maneuver: How It Works and When to Stop",
+    variant: "condition",
+    datePublished: "2026-10-07",
+    dateModified: "2026-10-07",
+    metaDescription:
+      "The Toynbee maneuver: pinch your nose, close your mouth, and swallow. How it helps a blocked ear, how it differs from Valsalva, and when to stop.",
+    intro: [
+      "The Toynbee maneuver is a way to help a blocked or full ear clear. You close your mouth, pinch your nostrils, and swallow. Cleveland Clinic explains that it does not force air into your ears the way the Valsalva maneuver does. Swallowing helps the eustachian tubes open so air can get in. Stop if you feel pain or dizziness. If the blocked feeling lasts for days, or comes with pain, drainage, dizziness, hearing loss or ringing, have someone look in your ear.",
+      "This page covers the Toynbee move only. Our guide to [how to relieve ear pressure](/how-to-relieve-ear-pressure/) covers the usual causes and the other gentle ways to equalize, so we do not repeat them here.",
+    ],
+    takeaways: [
+      "Toynbee: close your mouth, pinch your nostrils, then swallow. You do not blow.",
+      "It works by helping the eustachian tubes open, not by pushing air into them, according to Cleveland Clinic.",
+      "Stop if you feel pain or dizziness. Do not repeat it hard or many times in a row.",
+      "A plugged ear that lasts days, or comes with pain, drainage, dizziness, hearing loss or ringing, needs an exam.",
+    ],
+    sections: [
+      ["What the Toynbee maneuver is", "The Toynbee maneuver is a pressure-equalizing move. People use it when their ears feel full or plugged after a flight, a drive over a mountain pass, or a cold. Cleveland Clinic describes the steps in one line: close your mouth, pinch your nostrils, and swallow. That is the whole technique. You can try it with a sip of water to make swallowing easier."],
+      ["How it works", "Behind each eardrum is a small air-filled space, the middle ear. A narrow channel called the eustachian tube links it to the back of your nose and throat. The tube opens briefly when you swallow or yawn, which lets the air pressure inside match the air around you. When you pinch your nose and swallow, you change the pressure at the back of the nose. Cleveland Clinic says the Toynbee maneuver helps open the tubes so air can get in, instead of forcing air into them. If the tube is only slow to open, one or two tries may be enough. If the tube is swollen from a cold or allergy, it may not help until the swelling goes down."],
+      ["How it differs from Valsalva", "The Valsalva maneuver is the one most people know. For Valsalva, you close your mouth, pinch your nostrils, and breathe out hard without letting air escape. Cleveland Clinic says Valsalva relieves pressure by pushing air through the eustachian tubes. Toynbee asks you to swallow, not blow. That is why some people see it as the gentler of the two. Gentler does not mean risk free. We cover Valsalva and the other methods on our [ear pressure page](/how-to-relieve-ear-pressure/), where we also explain why forceful blowing is a bad idea."],
+      ["How to try it safely", "Sit upright. Close your mouth and pinch your nostrils shut with your fingers. Swallow once, slowly. Let go of your nose. Wait a moment and see if the ear feels different. You may hear or feel a soft pop. You can repeat it a few times, a minute or so apart. Do not squeeze your nose hard, and do not blow or strain while you swallow. If a plane is landing, start before the plane descends and repeat as the cabin pressure changes. MedlinePlus advises not to sleep during descent so you can keep opening the tubes."],
+      ["When to stop", "Stop right away if you feel pain or dizziness. Cleveland Clinic lists both as reasons to see a provider. Stop if the ear feels worse after you try, or if you notice drainage or bleeding. MedlinePlus lists drainage or bleeding from the ear, fever and severe ear pain as reasons to contact a provider. Do not keep trying again and again. If a few gentle tries do nothing, the problem is probably not a simple slow tube, and more effort will not fix it."],
+      ["When not to try it without asking", "Ask your clinician first if you have ear tubes, a hole in your eardrum, recent ear surgery, an ear infection, or a bad cold with a very stuffy nose. We did not find a medical source that lists these cases for the Toynbee move itself, so treat this as a general caution and not a rule from a study. MedlinePlus also warns that flying or diving with a cold or active allergies raises the chance of ear barotrauma, which is pressure injury to the ear. If you scuba dive, ask your own doctor before using any method to clear your ears."],
+      ["When to have your ear checked", "Cleveland Clinic says clogged ears that last for days, or that come with pain, discharge, dizziness, hearing loss or ringing, can point to an ear infection, swimmer's ear or ongoing eustachian tube dysfunction, which may need treatment. It says not to tough it out if symptoms last or get worse. The National Institute on Deafness and Other Communication Disorders (NIDCD) says to treat sudden hearing loss as a medical emergency, so do not assume a sudden muffled ear is just pressure. A plug of wax can feel the same as a pressure problem, and no pressure trick will clear it. Our team can look in the ear, test your hearing, and tell you whether it is wax, a tube issue or something else. See our page on [earwax removal](/services/earwax-removal/), or book a [hearing evaluation](/hearing-testing/)."],
+      ["Sources and last update", "Last updated October 7, 2026. This page has not been reviewed by a clinician yet. Sources: [Cleveland Clinic: How to Pop Your Ears](https://health.clevelandclinic.org/how-to-pop-your-ears), [Cleveland Clinic: Eustachian Tube Dysfunction](https://my.clevelandclinic.org/health/diseases/22527-eustachian-tube-dysfunction), [MedlinePlus: Ear barotrauma](https://medlineplus.gov/ency/article/001064.htm) and [NIDCD: Sudden Deafness](https://www.nidcd.nih.gov/health/sudden-deafness)."],
+      ["Medical information notice", "This page is for general information and is not medical advice. To have an ear checked, call 650-342-9449 to book at our San Mateo office, 88 N. San Mateo Drive, or our San Carlos office, 1008 Laurel Street."],
+    ],
+    bullets: ["Pinch nose, swallow", "Not a hard blow", "Stop for pain", "Differs from Valsalva", "Days of blockage need a check", "Wax feels the same"],
+    faqs: [
+      ["How do you do the Toynbee maneuver?", "Close your mouth, pinch your nostrils shut, and swallow. Cleveland Clinic describes it this way. You do not blow air out."],
+      ["Is the Toynbee maneuver safe?", "It is a gentle move for most people when done once or twice without force. Stop if you feel pain or dizziness. Ask a clinician first if you have ear tubes, a hole in the eardrum, recent ear surgery or an ear infection."],
+      ["What is the difference between Toynbee and Valsalva?", "For Toynbee you swallow with your nose pinched. For Valsalva you breathe out hard with your nose pinched and mouth closed. Cleveland Clinic says Valsalva pushes air through the tubes, while Toynbee helps the tubes open."],
+      ["Why does my ear stay plugged after the Toynbee maneuver?", "The tube may be swollen from a cold or allergy, or wax may be blocking the ear canal. Cleveland Clinic says to see a provider if the blockage lasts for days or comes with pain, discharge, dizziness, hearing loss or ringing."],
+      ["Can the Toynbee maneuver help ears on a plane?", "It may help as the plane descends. MedlinePlus advises staying awake during landing and repeating pressure-equalizing steps. If you have a cold or allergy flare, flying can cause more trouble, so ask your doctor ahead of time."],
+    ],
+    image: "/assets/blog/toynbee-maneuver-1.svg",
+    imageLabel: "Toynbee maneuver: pinch, swallow, and stop if it hurts",
+    imageAlt: "Toynbee maneuver explained with an ear icon on a teal card",
+    image2: "/assets/blog/toynbee-maneuver-2.svg",
+    image2Label: "Toynbee maneuver in five steps",
+    image2Alt: "The Toynbee maneuver in five steps, from sitting upright to stopping if it hurts",
+    image2Caption: "Pain, dizziness or drainage mean stop and have the ear checked.",
+  },

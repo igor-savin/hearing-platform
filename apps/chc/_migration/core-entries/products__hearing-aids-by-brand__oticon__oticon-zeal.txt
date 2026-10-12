@@ -1,0 +1,36 @@
+"/products/hearing-aids-by-brand/oticon/oticon-zeal/": {
+  kicker: "Hearing Aid Technology",
+  headline: "Oticon Zeal Invisible Hearing Aids in San Mateo & San Carlos",
+  intro: [
+    "Oticon Zeal is Oticon's take on a long-standing wish among hearing aid wearers: a device that sits discreetly in the ear yet still offers the performance, rechargeability, and connectivity people expect from a modern premium hearing aid. It is an in-the-ear design meant to be invisible or barely visible in everyday wear.",
+    "For years, people faced a trade-off. A tiny in-the-ear device usually meant giving up streaming and rechargeable batteries, while the fuller-featured behind-the-ear styles were more visible. Zeal is built to narrow that gap, pairing a very discreet fit with the kind of features that used to require a larger device.",
+    "At California Hearing Center, we fit Oticon Zeal for Peninsula patients who want maximum discretion without stepping down to basic technology. Because a deep in-ear device depends heavily on your ear anatomy, the evaluation and fitting matter as much as the hardware itself."
+  ],
+  sections: [
+    ["A discreet in-the-ear design", "[Zeal is a completely-in-canal style](/oticon-zeal-nxt-invisible-hearing-aids/) intended to be invisible or nearly invisible in most ears. It is aimed at people who want the confidence of a device others do not notice, while still keeping the everyday conveniences that make hearing aids easy to live with."],
+    ["Built on the Sirius platform", "Zeal uses the same Sirius platform found in Oticon Intent, which brings Oticon's BrainHearing approach and its Deep Neural Network sound processing into a much smaller shell. The intent is a full, natural sound scene and clearer speech in noise, delivered from a device that stays out of sight."],
+    ["Rechargeable and connected", "Unlike older invisible custom devices that relied on tiny disposable batteries and offered little connectivity, Zeal is designed as a rechargeable device with Bluetooth streaming, including support for newer standards like Bluetooth LE Audio and Auracast broadcast audio through the Oticon Companion app. It also carries a strong moisture and dust resistance rating for everyday durability."],
+    ["Fitting a deep in-ear device", "Because Zeal sits deep in the canal, performance depends on a precise fit. We can fit many patients with medical-grade silicone domes, or take impressions for custom micro-molds when more amplification or a more secure fit is needed. We then confirm the result with [real-ear verification](/hearing-aid-fitting/) so the sound in your ear matches your prescription."],
+    ["Is Zeal the right invisible option?", "Zeal is generally suited to milder-to-moderate hearing losses and to people who prioritize discretion. Availability, candidacy, and whether an [invisible style](/what-are-invisible-hearing-aids/) will meet your needs are all things we confirm during your consultation, and we will say plainly when a different style would serve you better."]
+  ],
+  bulletLinks: [
+    ["Start with a hearing evaluation", "/hearing-testing/"],
+    ["Professional fitting and verification", "/hearing-aid-fitting/"],
+    ["Compare Oticon Intent", "/products/hearing-aids-by-brand/oticon/oticon-intent/"],
+    ["Explore all Oticon models", "/products/hearing-aids-by-brand/oticon/"],
+    ["Compare other brands", "/products/hearing-aids-by-brand/"],
+    ["Visit our San Carlos office", "/contact/san-carlos/"]
+  ],
+  takeaways: [
+    "Oticon Zeal is a discreet, in-the-ear design intended to be invisible or barely visible while keeping modern features.",
+    "It runs on the Sirius platform with BrainHearing processing, rechargeability, and Bluetooth connectivity.",
+    "A deep in-ear fit depends on your ear anatomy, so candidacy, fitting, and verification are essential."
+  ],
+  faqs: [
+    ["How is Zeal different from older invisible hearing aids?", "Traditional completely-in-canal devices often required disposable batteries and offered little or no wireless streaming. Zeal is designed as a rechargeable, Bluetooth-connected invisible device built on Oticon's Sirius platform, so you get discretion without giving up modern conveniences."],
+    ["Am I a candidate for an invisible in-ear device?", "It depends on the size and shape of your ear canal and the type and degree of your hearing loss. We evaluate your ears and your hearing test, then recommend Zeal only if a discreet in-ear style is a good fit for you."],
+    ["Do you verify how it sounds in my ear?", "Yes. After fitting with a dome or a custom mold, we use real-ear measurement to confirm the sound reaching your eardrum matches your prescription, and we fine-tune it over follow-up visits."]
+  ],
+  image: "/assets/oticon-zeal.png",
+  imageLabel: "Oticon hearing technology"
+},

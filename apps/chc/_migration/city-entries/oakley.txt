@@ -1,0 +1,30 @@
+  "oakley": {
+    name: "Oakley",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 75 minutes east",
+    distanceTier: "far",
+    geo: { lat: 37.9974, lng: -121.7124 },
+    motif: "bayside",
+    lede:
+      "Oakley sits right on the Delta, where Big Break Regional Shoreline opens onto the water and old vineyards and orchards still shape the town's character. It's a quiet, out-of-the-way corner of the county — part of its appeal, and also about 75 minutes east of our Peninsula offices, which we won't dress up as a short hop.",
+    hook: [
+      "Delta quiet, and where the specialists are",
+      "Being tucked away on the Delta is part of what makes Oakley pleasant, and also why specialized hearing care isn't around the corner. Patients here dealing with persistent tinnitus, weighing [Lenire treatment](/tinnitus/), or wrestling with hearing aids that never quite fit are the ones who make the longer drive to a focused practice. For a routine test, somewhere closer will likely serve you just as well — we're honest about that.",
+    ],
+    localScene: [
+      "Old vines and Delta shoreline",
+      "Oakley runs from the waterfront trails and fishing pier at Big Break Regional Shoreline to the Main Street core and the pockets of old-vine vineyards the area is quietly known for. It's a small, spread-out Delta town where daily life is calm but specialty services mean a drive. That's the trade-off we work with — making each visit thorough enough that patients from this far out feel the trip was worthwhile.",
+    ],
+    whyHere:
+      "Oakley patients come to us for what's genuinely hard to find nearby: careful diagnostics, honest device recommendations, and dedicated tinnitus and Lenire care with the same audiologist each time. We reserve the drive for the complex work and say so plainly.",
+    landmarks:
+      "We're about 75 minutes from Big Break Regional Shoreline, downtown Oakley, and the Delta waterfront, heading west across the East Bay to our San Mateo office.",
+    faqs: [
+      ["Why would I drive from Oakley to the Peninsula for hearing care?", "For routine testing, a closer provider is the sensible option. Patients travel to us for specialized tinnitus treatment, Lenire, and difficult fittings — care that's worth the distance."],
+      ["Do you treat tinnitus and offer Lenire?", "Yes. Our practice focuses on tinnitus, including Lenire for suitable candidates. We first evaluate what's driving it, then build a plan around your case."],
+      ["Can you make the trip efficient with fewer visits?", "We try to combine testing, fitting, and follow-up for patients coming from the Delta. Call 650-342-9449 and we'll plan around the drive."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

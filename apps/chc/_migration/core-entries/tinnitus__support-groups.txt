@@ -1,0 +1,36 @@
+"/tinnitus/support-groups/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Support Groups & Peer Resources",
+  intro: [
+    "Tinnitus can feel isolating, especially when the people around you cannot hear what you hear. Connecting with others who understand often eases that isolation, and for many people peer support is a genuine part of coping, alongside clinical care rather than a replacement for it.",
+    "This page explains how support and peer resources fit into a tinnitus plan, and where to find reputable options. We point you toward established national networks rather than inventing local meeting details we cannot verify.",
+    "If talking with others helps you feel less alone with tinnitus, that is a meaningful benefit. It works best when combined with proper evaluation and a management plan built around your hearing."
+  ],
+  sections: [
+    ["Why peer support helps", "Hearing that others share the same experience can reduce the fear and catastrophic thinking that make tinnitus worse. Support settings also pass along practical coping ideas, from sound enrichment at bedtime to stress strategies, that people have found useful in daily life."],
+    ["The American Tinnitus Association network", "The American Tinnitus Association maintains support resources and can help people connect with tinnitus support groups and volunteer contacts. It is a widely recognized starting point for finding peer connection and reliable patient education."],
+    ["In-person, online, and hybrid options", "Support happens in many formats, including local in-person meetings, moderated online communities, and phone-based contacts. Online options can be especially helpful if travel, schedule, or symptom severity makes in-person attendance difficult."],
+    ["Support complements clinical care", "Peer groups are valuable, but they do not diagnose or treat. We encourage pairing any support you find with a professional [tinnitus evaluation](/tinnitus/) so your plan reflects your specific hearing and health picture, not only shared anecdotes."],
+    ["Choosing reputable sources", "Tinnitus attracts a lot of online noise and unproven products. Favor established, evidence-informed organizations such as the American Tinnitus Association and ASHA, and be cautious with any group or seller promising a guaranteed cure."]
+  ],
+  bulletLinks: [
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["What relief typically looks like", "/tinnitus/success-stories/"],
+    ["How TRT works", "/tinnitus/tinnitus-retraining-therapy/"],
+    ["Understand what tinnitus is", "/tinnitus/what-is-tinnitus/"],
+    ["Talk to our team", "/contact/"],
+    ["Read patient reviews", "/reviews/"]
+  ],
+  takeaways: [
+    "Peer support can reduce isolation and pass along practical coping strategies.",
+    "The American Tinnitus Association is a reputable place to find support connections.",
+    "Support works best alongside, not instead of, professional evaluation and care."
+  ],
+  faqs: [
+    ["Do you run a local tinnitus support group?", "We focus on clinical tinnitus care and can help you find reputable peer resources, including those through the American Tinnitus Association. If you would like help getting connected, our team can point you in the right direction."],
+    ["Can a support group replace treatment?", "No. Support groups are a helpful complement, but they do not evaluate your hearing or diagnose causes. Pairing peer support with a professional [tinnitus assessment](/tinnitus/) gives you both understanding and a plan."],
+    ["How do I avoid tinnitus scams online?", "Be wary of anyone promising a guaranteed cure or selling miracle supplements. Stick with established organizations like the American Tinnitus Association and ASHA, and bring questions to a qualified provider."]
+  ],
+  image: "/assets/core/tinnitus__support-groups.svg",
+  imageLabel: "Peer support alongside clinical care"
+},

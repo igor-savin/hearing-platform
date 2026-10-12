@@ -1,0 +1,36 @@
+"/tinnitus/hyperacusis/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "For Tinnitus Patients: When Sounds Start Feeling Too Loud",
+  intro: [
+    "If you are managing tinnitus and have started noticing that ordinary sounds feel uncomfortably loud, you are not imagining it, and you are far from alone. Reduced sound tolerance, known as hyperacusis, commonly shows up in people who already have tinnitus, and recognizing it early helps keep it from taking hold.",
+    "This page is written specifically for tinnitus patients who are beginning to notice sound sensitivity. It explains what that added symptom means, why it often appears alongside tinnitus, and what to do so the two do not feed each other.",
+    "For a fuller treatment of the connection between the two conditions, see our page on the [hyperacusis and tinnitus overlap](/hyperacusis/tinnitus/). Here, the focus is practical: what a tinnitus patient should watch for and do."
+  ],
+  sections: [
+    ["Noticing the shift", "Tinnitus patients sometimes find that sounds they used to ignore, clattering plates, a passing bus, or their own hearing aids, start to feel harsh or too loud. Catching this shift early matters, because sound sensitivity is easier to address before avoidance habits set in."],
+    ["Why it often follows tinnitus", "Both conditions involve how the auditory system processes sound and are linked to hearing loss and noise exposure. Stress and heightened attention to sound, common when living with tinnitus, can also make everyday noise feel more intense over time."],
+    ["The habit that makes both worse", "The natural response, retreating into quiet and reaching for earplugs, tends to backfire. Silence makes tinnitus more prominent and can increase sound sensitivity, so leaning on constant protection often deepens both problems rather than easing them."],
+    ["Adjusting your tinnitus plan", "If you are already using sound enrichment or hearing aids for tinnitus, those tools can often be tuned to accommodate new sound sensitivity, easing tinnitus while gently rebuilding tolerance. Tell your audiologist promptly so the plan can adapt rather than working against you."],
+    ["When to have it evaluated", "Mention new sound sensitivity at your next tinnitus visit, and seek prompt attention if it appears suddenly, affects one ear, or arrives with new hearing loss, dizziness, or ear pain. Our [hyperacusis section](/hyperacusis/) covers evaluation and gradual desensitization in more depth."]
+  ],
+  bulletLinks: [
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["The hyperacusis and tinnitus overlap", "/hyperacusis/tinnitus/"],
+    ["Hyperacusis overview", "/hyperacusis/"],
+    ["Coping strategies for sound sensitivity", "/hyperacusis/coping/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Talk to our team", "/contact/"]
+  ],
+  takeaways: [
+    "New sound sensitivity is common in people who already have tinnitus, and catching it early helps.",
+    "Retreating into silence and constant earplugs tends to worsen both tinnitus and sensitivity.",
+    "Tell your audiologist so your existing tinnitus plan can be adjusted, and act promptly on red flags."
+  ],
+  faqs: [
+    ["I have tinnitus and now sounds feel too loud. Is that normal?", "It is a recognized pattern. Reduced sound tolerance often accompanies tinnitus because both involve how the auditory system handles sound. Noticing it early is an advantage, since sensitivity is easier to manage before avoidance habits form."],
+    ["Should I start wearing earplugs more to cope?", "Usually not in ordinary settings. Constant protection can make both tinnitus and sound sensitivity worse over time. Reserve protection for genuinely loud environments, and ask your audiologist about a gradual, balanced approach instead."],
+    ["Can my current tinnitus treatment be adjusted for this?", "Often, yes. Sound enrichment and hearing aids used for tinnitus can frequently be tuned to accommodate new sensitivity, helping both at once. Let your provider know about the change so the plan can be adapted appropriately."]
+  ],
+  image: "/assets/core/tinnitus__hyperacusis.svg",
+  imageLabel: "Sound sensitivity in tinnitus patients"
+},

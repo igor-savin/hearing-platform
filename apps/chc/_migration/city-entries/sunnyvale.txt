@@ -1,0 +1,29 @@
+  "sunnyvale": {
+    name: "Sunnyvale",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 30 minutes south on the 101",
+    distanceTier: "far",
+    geo: { lat: 37.3688, lng: -122.0363 },
+    lede:
+      "Sunnyvale pairs a historic Murphy Avenue downtown with a deep bench of technology employers, from long-established chipmakers to newer campuses. Our practice is up on the Peninsula rather than in Sunnyvale, but the drive north on the 101 runs about 30 minutes, and patients make it for care worth the trip.",
+    hook: [
+      "Following speech where the day gets loud",
+      "Whether the workday means an open-plan office, a factory or lab floor, or a crowded lunch on Murphy Avenue, Sunnyvale patients tend to struggle most with speech in background noise rather than quiet at home. Some also carry years of occupational sound exposure, which can contribute to hearing changes over time. We test how you hear in noise and verify fittings with real-ear measurement, aiming squarely at the environments where clarity is hardest to hold.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "From Murphy Avenue to the tech campuses",
+      "Downtown Sunnyvale centers on the walkable stretch of historic Murphy Avenue and the Caltrain station beside it, ringed by neighborhoods like the Heritage District and Ponderosa and the sprawling office parks toward Moffett. It is a city that lives between busy restaurants and busier workplaces. Those two settings share one demand — clear speech in noise — so for Sunnyvale patients who come our way, we prioritize speech-in-noise testing and precise verification over a one-size fitting.",
+    ],
+    whyHere:
+      "Sunnyvale patients who travel to us are usually after something specific: verified fittings that finally work in noise, help with stubborn [tinnitus](/tinnitus/), or an honest second opinion after a device disappointed. For simple maintenance, a South Bay provider may be closer, and we will say so.",
+    landmarks:
+      "We are about 30 minutes from Murphy Avenue, the Sunnyvale Caltrain station, and the Moffett-area office parks by way of the 101 to our San Carlos office.",
+    faqs: [
+      ["Why would I drive up to the Peninsula instead of staying local?", "For routine care, staying local makes sense. People come to us from Sunnyvale for specialized help — complex tinnitus, difficult fittings, Lenire, or a careful reassessment — where our focus and verification make the distance worthwhile."],
+      ["I work around noise. Could that affect my hearing?", "Long-term occupational noise exposure can contribute to hearing changes and sometimes tinnitus. A baseline evaluation shows where you stand and what protection or treatment makes sense."],
+      ["How long is the drive from Sunnyvale?", "About 30 minutes north on the 101 to our San Carlos office. Call 650-342-9449 and we will schedule a thorough visit so one trip covers a lot."],
+    ],
+  },

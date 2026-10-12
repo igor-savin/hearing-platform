@@ -1,0 +1,30 @@
+  "belmont": {
+    name: "Belmont",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 5 minutes from our San Carlos office, just up El Camino or the 101",
+    distanceTier: "near",
+    geo: { lat: 37.5202, lng: -122.2758 },
+    lede:
+      "Belmont climbs the hills between San Carlos and San Mateo, a leafy residential city built around Ralston Avenue and the wooded ridges above Water Dog Lake. It sits so close to our San Carlos office that many patients are here in about five minutes, which makes routine testing and quick hearing aid check-ins genuinely convenient.",
+    hook: [
+      "A neighbor practice, five minutes up the road",
+      "Being this close changes how hearing care fits into your life. There is no all-day expedition for a clean-and-check, a reprogramming, or a fresh batch of domes and wax guards — Belmont patients tend to drop in, get what they need, and get on with the day. That proximity matters most for the small, ongoing things: fine-tuning a new fitting over a few short visits, or troubleshooting a device the same week something changes rather than living with it.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "From the hills to El Camino",
+      "Belmont spreads from the trails around Water Dog Lake and Twin Pines Park down to the shops and cafes along Ralston Avenue and El Camino Real, with Carlmont and Notre Dame de Namur University anchoring the community. Wherever you are in town — the quiet cul-de-sacs above Hallmark Drive or the bustle near the Caltrain station — we are a short, familiar drive away, straight up El Camino or a quick hop on the 101.",
+    ],
+    whyHere:
+      "Belmont patients choose us for the combination of nearby convenience and genuine depth — thorough diagnostic testing, honest technology recommendations, and specialized tinnitus care from an audiologist they see every visit. The short drive means we can be part of your ongoing care, not just a one-time fitting.",
+    landmarks:
+      "We are minutes from Belmont's Ralston Avenue corridor, Twin Pines Park, and the Water Dog Lake neighborhoods, straight up El Camino Real or the 101 to our San Carlos office.",
+    faqs: [
+      ["Is there an audiologist close to Belmont?", "Yes — our San Carlos office is about five minutes from most of Belmont, just up El Camino Real. It is one of the closest full-service audiology practices to the city."],
+      ["Can I come in quickly for a hearing aid cleaning or adjustment?", "Absolutely. Because Belmont is so close, many patients pop in for cleanings, adjustments, and supplies between longer appointments. Call 650-342-9449 and we will find a time."],
+      ["Do you help with tinnitus, not just hearing aids?", "Yes. We offer dedicated [tinnitus care](/tinnitus/), including Lenire, alongside comprehensive hearing testing and fittings for patients throughout Belmont and the mid-Peninsula."],
+    ],
+    onCaltrain: true,
+  },

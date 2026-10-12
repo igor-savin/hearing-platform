@@ -1,0 +1,29 @@
+  "portola-valley": {
+    name: "Portola Valley",
+    county: "San Mateo County",
+    region: "peninsula-south",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 18 minutes from our San Carlos office",
+    distanceTier: "mid",
+    geo: { lat: 37.3841, lng: -122.2352 },
+    lede:
+      "Portola Valley tucks into the foothills below Windy Hill and Coal Mine Ridge, a small, semi-rural town of open space, oak-studded hills, and homes set back among the trees. Residents choose it for quiet and privacy, and they are accustomed to a short drive for services — our San Carlos office is about eighteen minutes down the hill.",
+    hook: [
+      "Unhurried, discreet hearing care",
+      "For many Portola Valley residents, the priorities are hearing that keeps pace with an active outdoor and social life and technology that stays out of sight. Today's invisible and receiver-in-canal hearing aids deliver both, though the real difference comes from expert fitting and real-ear verification rather than the device on its own. We take the time to program, measure, and refine, in a private, unhurried setting that matches the calm of the town itself.",
+    ],
+    motif: "estate",
+    localScene: [
+      "A town among the foothills",
+      "Portola Valley spreads from its Town Center and the Ladera neighborhood along Portola Road and Alpine Road, up toward the Windy Hill Open Space Preserve, Coal Mine Ridge, and the trails that draw hikers and riders from across the Peninsula. It is deliberately rural, with no commercial strip to speak of. For its residents we offer discreet technology, meticulous fittings, and the personal attention of an independent practice, an easy drive down to our San Carlos office.",
+    ],
+    whyHere:
+      "Portola Valley patients choose us for thorough testing, premium technology matched honestly to their needs, and specialized tinnitus care — with the continuity of the same audiologist each visit. The care is private, patient, and precise, worth the short trip down the hill.",
+    landmarks:
+      "We are about eighteen minutes from Portola Valley's Town Center, Ladera, and the trails at Windy Hill, heading down Alpine Road toward our San Carlos office.",
+    faqs: [
+      ["Do you offer discreet or invisible hearing aids?", "Yes — we fit several invisible and near-invisible styles, including deep-canal options. The best choice depends on your ear anatomy and hearing needs, which we assess carefully during your evaluation."],
+      ["Can I expect a private, unhurried visit?", "That is how we work. Portola Valley patients value the calm, confidential pace of an independent practice, with time to ask questions and refine results across visits."],
+      ["How far is your office from Portola Valley?", "Our San Carlos office is about eighteen minutes away. Call 650-342-9449 to schedule at a time that suits you."],
+    ],
+  },

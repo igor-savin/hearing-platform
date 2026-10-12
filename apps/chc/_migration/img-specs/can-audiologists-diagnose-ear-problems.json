@@ -1,0 +1,12 @@
+{
+  "slug": "can-audiologists-diagnose-ear-problems",
+  "hero": { "title": "What Audiologists Diagnose", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Inside an Audiologist's Scope", "subtitle": "What they diagnose, and when to see a physician",
+    "rows": [
+      {"title": "Hearing loss", "desc": "Type, degree, and where it originates"},
+      {"title": "Tinnitus", "desc": "Ringing or buzzing with no outside source"},
+      {"title": "Balance disorders", "desc": "Inner-ear dizziness and vertigo testing"},
+      {"title": "Sound sensitivity", "desc": "When ordinary noise feels painfully loud"},
+      {"title": "When to see an ENT", "desc": "Infection, sudden loss, pain, or a growth"}
+    ] }
+}

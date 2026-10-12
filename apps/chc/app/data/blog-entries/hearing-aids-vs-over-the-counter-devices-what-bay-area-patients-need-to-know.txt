@@ -1,0 +1,38 @@
+  "/hearing-aids-vs-over-the-counter-devices-what-bay-area-patients-need-to-know/": {
+    kicker: "Hearing Aid Options",
+    headline: "Prescription Hearing Aids vs. OTC Devices",
+    metaTitle: "Prescription vs. OTC Hearing Aids: How to Choose",
+    variant: "product",
+    datePublished: "2025-07-25",
+    dateModified: "2026-09-29",
+    metaDescription:
+      "Over-the-counter hearing aids fit adults with mild to moderate loss; prescription devices are tuned to your hearing test. Here's how to choose between them.",
+    intro: [
+      "Since 2022, adults in the United States have been able to buy hearing aids over the counter, without a prescription and without seeing a clinician first. That opened a lower-cost door for a lot of people, and it also created a genuine question we hear at the front desk: how do these off-the-shelf devices stack up against the [hearing aids](/products/hearing-aids/) a clinic fits for you? They are not the same product aimed at the same person.",
+      "Over-the-counter, or OTC, hearing aids are meant for adults 18 and older who feel they have mild to moderate hearing difficulty. You choose them yourself, usually adjust them with a phone app, and skip the professional fitting. Prescription devices work the other way around: they start with a [hearing test](/hearing-testing/), get programmed to the exact pattern of your loss, and come with follow-up care built in.",
+      "Both can be the right call. Which one fits depends on the degree of your loss, how comfortable you are with a bit of do-it-yourself setup, and what else might be going on with your ears. If you are on the SF Peninsula and weighing the two, here is how our audiologists in San Mateo and San Carlos think it through.",
+    ],
+    takeaways: [
+      "OTC hearing aids are for adults with perceived mild to moderate loss; prescription devices handle any degree, including severe.",
+      "OTC means self-selected and self-adjusted; prescription means fitted to your audiogram with professional follow-up.",
+      "A baseline hearing test is worthwhile either way, since it confirms the degree of loss and rules out treatable causes.",
+    ],
+    sections: [
+      ["The OTC category, in plain terms", "Over-the-counter hearing aids became an official FDA-regulated class in 2022. They are sold directly to consumers in pharmacies and online, priced below most professionally fitted devices, and designed for adults who perceive their own hearing loss as mild to moderate. There is no exam and no clinician in the loop. You set them up and fine-tune the volume and tone yourself, often through an app. [ASHA's comparison of over-the-counter and prescription devices](https://www.asha.org/public/hearing/hearing-aids/) is clear that this category is meant for that narrow group and not for children or for more significant loss."],
+      ["Where prescription devices differ", "A prescription hearing aid is chosen and programmed for you. It begins with a [hearing evaluation](/hearing-testing/) that maps how your hearing varies across pitches, then an audiologist tunes the device to that specific profile during a [fitting](/hearing-aid-fitting/). Because a professional is involved, these devices can be matched to any degree of loss and to trickier situations: hearing that differs a lot between your two ears, ringing that rides along with the loss, or trouble with small controls. Adjustments and repairs are part of the relationship, not an extra errand."],
+      ["Who each option tends to suit", "If you are an adult who notices trouble in restaurants or on the phone, suspects the loss is on the milder side, and does not mind a little app-based tinkering, an OTC device is a reasonable place to start. Professional care makes more sense when the loss feels significant, when one ear is clearly worse than the other, when there is dizziness or persistent ringing, or when handling tiny devices is a struggle. Children should never use OTC hearing aids. For many older adults, the guided route is simply less frustrating, which is part of why we wrote up [hearing aids for seniors](/hearing-aids-for-seniors/) separately. OTC products now include glasses with built-in hearing help, and we compared two of them in [Nuance Audio Plus vs. Meta glasses](/nuance-audio-plus-vs-meta-glasses/)."],
+      ["Why the hearing test still matters", "Even if you lean toward the OTC route, a baseline hearing test is worth the visit. It tells you whether your loss really is mild to moderate or something more, since self-assessment is easy to get wrong in either direction. It can also catch causes that have nothing to do with a device at all, from a plug of [earwax](/services/earwax-removal/) to a medical issue that deserves attention. Walking in with that information means you are shopping for the right tool instead of guessing."],
+      ["Cost, support, and changing your mind", "OTC devices win on upfront price, but the trade-off is that you are on your own for setup and troubleshooting. Prescription care folds fitting, tuning, and service into the cost, which is worth weighing against the sticker difference. Starting with an OTC pair and moving to professional care later is completely fine, and plenty of people do exactly that once they want a better fit or their needs change. If you would like a second opinion on where you land, [contact our offices](/contact/) or read about [our audiology team](/about-us/) before you decide. For a recent example at $799, see [our page on ELEHEAR's Beyond 2 Pro](/elehear-beyond-2-pro/)."],
+    ],
+    bullets: ["OTC: adults 18+", "Perceived mild-to-moderate loss", "No test required for OTC", "Prescription: fitted to you", "Any degree of loss", "San Mateo & San Carlos"],
+    faqs: [
+      ["Are over-the-counter hearing aids as good as prescription ones?", "It depends on your hearing and your expectations. For genuinely mild loss, a well-chosen OTC device can help a lot. What you give up is the professional fitting that shapes the sound to your exact hearing pattern, plus the ongoing adjustments, so people with more than mild loss often find the results fall short of what a fitted device delivers."],
+      ["My loss feels significant. Can I still use an OTC device?", "OTC hearing aids are designed only for perceived mild to moderate loss, so a device meant for that range may not have the power or precision your hearing needs. When the difficulty feels significant, or when one ear is worse than the other, a hearing evaluation is the better first step to see what will actually help."],
+      ["Should I get a hearing test before buying an OTC hearing aid?", "We recommend it. A test confirms whether your loss is in the range OTC devices are built for and rules out things like earwax or a medical cause that no device would fix. You are free to buy without one, but the small step of getting tested tends to save money and disappointment down the line."],
+    ],
+    image: "/assets/blog/hearing-aids-vs-over-the-counter-devices-what-bay-area-patients-need-to-know-1.svg",
+    imageLabel: "Two paths to better hearing, suited to different needs",
+    image2: "/assets/blog/hearing-aids-vs-over-the-counter-devices-what-bay-area-patients-need-to-know-2.svg",
+    image2Label: "How OTC and prescription hearing aids compare",
+    image2Caption: "OTC devices suit milder loss and self-setup; prescription care fits any degree and includes follow-up.",
+  },

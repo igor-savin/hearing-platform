@@ -1,0 +1,13 @@
+{
+  "slug": "locked-and-used-hearing-aids",
+  "hero": { "title": "Locked and Used Hearing Aids", "icon": "hidden", "accent": "orange" },
+  "info": { "title": "Before You Buy", "subtitle": "Who is allowed to program your hearing aids",
+    "rows": [
+      {"title": "Ask if they are locked", "desc": "Only the original seller can adjust a locked aid"},
+      {"title": "Get it in writing", "desc": "With the real manufacturer and model name"},
+      {"title": "BTE can be reused", "desc": "Custom in-the-ear shells usually cannot"},
+      {"title": "Warranty rarely transfers", "desc": "Coverage follows the serial number"},
+      {"title": "Discontinued is not dead", "desc": "Parts and software are what run out first"},
+      {"title": "We service outside aids", "desc": "Unlocked platforms, reprogrammed and verified"}
+    ] }
+}

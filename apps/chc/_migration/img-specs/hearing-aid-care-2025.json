@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aid-care-2025",
+  "hero": { "title": "Hearing Aid Care", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Simple Hearing Aid Care", "subtitle": "A few minutes a day keeps devices clear and lasting",
+    "rows": [
+      {"title": "Wipe It Daily", "desc": "A soft dry cloth clears wax and moisture."},
+      {"title": "Keep It Dry", "desc": "Store in a drying case or dehumidifier overnight."},
+      {"title": "Change Wax Guards", "desc": "Swap the tiny filter when sound turns faint."},
+      {"title": "Open Battery Doors", "desc": "Let air in to prevent moisture buildup."},
+      {"title": "See Us for Repairs", "desc": "Professional service beats risky DIY fixes."}
+    ] }
+}

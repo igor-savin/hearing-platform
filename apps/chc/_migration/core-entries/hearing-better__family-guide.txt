@@ -1,0 +1,39 @@
+"/hearing-better/family-guide/": {
+  kicker: "Hearing Better",
+  headline: "A Family Guide: Helping Someone You Love Hear",
+  metaTitle: "Family Guide: Helping a Loved One With Hearing Loss",
+  metaDescription: "Five simple habits for talking with someone who has hearing loss, and how to start the hearing test conversation. California Hearing Center, San Mateo and San Carlos.",
+  intro: [
+    "Hearing loss affects the whole family. You may repeat yourself often. Your loved one may seem to ignore you or avoid gatherings. Small changes in how you talk can help right away.",
+    "Last reviewed 29 September 2026."
+  ],
+  sections: [
+    ["Five habits for talking together", "First, get their attention. Say their name and wait for eye contact. Second, face them. Keep your face in the light and stay close. Third, rephrase. If they missed a word, use different words instead of repeating the same ones louder. Fourth, cut the noise. Turn off the TV or move to a quiet spot. Fifth, pause. Give them time to follow. Print or share the card below."],
+    ["Do not shout", "Shouting can distort speech and make it harder to understand. Speak clearly at a normal pace and a slightly lower pitch. Do not cover your mouth."],
+    ["Start the hearing test conversation", "Many people wait years before they get help. Choose a calm moment. [Talk about what you have noticed](/how-to-talk-to-a-parent-or-grandparent-about-hearing-loss-without-a-fight/), and how it affects you both, instead of telling them what they must do. Offer to come to the appointment. Read our guide on [encouraging a loved one](/encouraging-a-loved-one-to-take-a-hearing-test/) to take a hearing test."],
+    ["Go further", "Our posts on [communicating with someone who has hearing loss](/how-to-best-communicate-with-the-hearing-impaired/) and [ways to accommodate your loved one](/ways-to-accommodate-your-loved-ones-with-hearing-loss/) have more ideas. The Hearing Loss Association of America also offers material for families. See our [Resources page](/resources/)."]
+  ],
+  bulletLinks: [
+    ["Encouraging a loved one to take a hearing test", "/encouraging-a-loved-one-to-take-a-hearing-test/"],
+    ["How to communicate with someone with hearing loss", "/how-to-best-communicate-with-the-hearing-impaired/"],
+    ["Ways to accommodate a loved one", "/ways-to-accommodate-your-loved-ones-with-hearing-loss/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Back to Hearing Better", "/hearing-better/"]
+  ],
+  takeaways: [
+    "Five habits help: get attention, face them, rephrase, cut noise and pause.",
+    "Do not shout. Speak clearly and face the person.",
+    "Offer to come along to a hearing test."
+  ],
+  faqs: [
+    ["My parent says they hear fine. What should I do?", "Do not argue. Give examples of what you have seen, such as missed words or a loud TV, and suggest a simple hearing test. A test is quick and gives facts."],
+    ["Can I come to the appointment?", "Yes. Family members are welcome, and many patients find it helps."],
+    ["Should I speak louder?", "Speak clearly, not louder. Face the person and cut background noise."]
+  ],
+  image: "/assets/core/hearing-better__family-guide.svg",
+  imageLabel: "Helping someone you love hear",
+  image2: "/assets/core/hearing-better__family-talk-card.svg",
+  image2Label: "Five habits for talking together",
+  image2Caption: "Family talk card: five habits for talking with someone who has hearing loss. Click to open full size for printing.",
+  image2Href: "/assets/core/hearing-better__family-talk-card.svg"
+},

@@ -1,0 +1,38 @@
+"/products/hearing-aids-by-brand/unitron/": {
+  kicker: "Hearing Aid Brands",
+  headline: "Unitron Hearing Aids for Peninsula Patients",
+  intro: [
+    "Founded in Canada in 1964, Unitron has built a reputation for hearing aids designed around the wearer's experience and quality of life. Now part of the Sonova group, alongside Phonak, it combines Swiss precision with Canadian innovation to deliver technology that is both advanced and genuinely user-friendly, and its designs have earned numerous Red Dot awards.",
+    "Because Unitron shares platform engineering with Phonak, its devices benefit from mature, proven technology while emphasizing personalization, comfort, and natural sound. California Hearing Center is proud to offer Unitron at our San Mateo and San Carlos offices among several options.",
+    "Whether Unitron is right for you depends on your hearing loss, lifestyle, and budget, confirmed through testing and [professional fitting](/hearing-aid-fitting/) with real-ear verification."
+  ],
+  sections: [
+    ["The Vivante conversation-focused platform", "Unitron's Vivante platform is designed to help you focus effortlessly on speech while intuitively sensing where conversation is coming from. Features like HyperFocus for clarity in noise and a 360-degree Conversation in Car mode, plus adaptive directional microphones, aim for natural listening in both busy and quiet settings."],
+    ["FLEX trial and upgrade programs", "Unitron's FLEX programs make trying and upgrading technology unusually easy. FLEX:TRIAL lets you experience different technology levels in your own environments before deciding, while FLEX:UPGRADE lets you move up a level without buying new devices as your needs change, with no hardware swap required."],
+    ["Log It All personalization", "Unitron's Log It All feature tracks the unique mix of sound environments you spend time in. That real-world data helps personalize your hearing solution and lets experience ratings fine-tune the devices to your preferences."],
+    ["Value with proven engineering", "Sharing a platform with Phonak through the Sonova group, Unitron gives patients established, reliable technology at a generally accessible price point, with a user-first focus on comfort and simplicity."],
+    ["Who Unitron may suit", "First-time users, value-focused patients, and those who like the reassurance of trying technology in daily life before deciding often find Unitron a comfortable choice."],
+    ["Real-ear verification is the difference", "Whatever level you choose, we program and confirm the devices with real-ear measurement so they match your hearing prescription."]
+  ],
+  bulletLinks: [
+    ["Compare all brands", "/products/hearing-aids-by-brand/"],
+    ["Hearing aids overview", "/products/hearing-aids/"],
+    ["The fitting process", "/hearing-aid-fitting/"],
+    ["Book a hearing test", "/hearing-testing/"],
+    ["Phonak", "/products/hearing-aids-by-brand/phonak/"],
+    ["Rexton", "/products/hearing-aids-by-brand/rexton/"]
+  ],
+  takeaways: [
+    "Unitron is a value-focused, patient-friendly brand sharing Phonak's engineering platform.",
+    "It often suits first-time users who value flexible trials and proven technology at an accessible price.",
+    "Your best brand is decided at the fitting — by measurement and your own listening, not by marketing."
+  ],
+  faqs: [
+    ["What is Unitron known for?", "Unitron, founded in Canada in 1964 and part of the Sonova group alongside Phonak, is known for award-winning, user-focused design, its Vivante conversation platform, and patient-friendly FLEX trial and upgrade programs."],
+    ["What are Unitron's FLEX programs?", "FLEX:TRIAL lets you experience different technology levels in your own environments before you buy, and FLEX:UPGRADE lets you step up a level later without replacing the devices. It takes much of the guesswork out of choosing technology."],
+    ["Is Unitron related to Phonak?", "Yes. Both are part of the Sonova group and share technology platforms, so Unitron devices draw on mature, proven engineering, typically at a more accessible price point."],
+    ["Can I try Unitron hearing aids before committing?", "Yes. Through FLEX:TRIAL, Unitron lets patients experience real-world hearing across technology levels before deciding. We can explain the trial and follow-up options available during your consultation."]
+  ],
+  image: "/assets/core/products__hearing-aids-by-brand__unitron.svg",
+  imageLabel: "Unitron value-focused technology"
+},

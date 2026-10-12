@@ -1,0 +1,12 @@
+{
+  "slug": "do-i-have-tinnitus",
+  "hero": { "title": "Is It Tinnitus?", "icon": "soundwave", "accent": "gold" },
+  "info": { "title": "Do I Have Tinnitus?", "subtitle": "A quick self-check before your visit",
+    "rows": [
+      {"title": "Ringing or buzzing", "desc": "Sound with no outside source"},
+      {"title": "One or both ears", "desc": "May sit in one ear or feel central"},
+      {"title": "Often with hearing loss", "desc": "The most common companion to tinnitus"},
+      {"title": "Note when it happens", "desc": "Track timing, pitch, and triggers"},
+      {"title": "Know the red flags", "desc": "Sudden, one-sided, or pulsing needs care"}
+    ] }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aid-repair-vs-replace",
+  "hero": { "title": "Repair or Replace?", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Repair or Replace?", "subtitle": "Five questions that settle the decision",
+    "rows": [
+      {"title": "Name the problem", "desc": "Wax, moisture, and filters are quick fixes"},
+      {"title": "Check the age", "desc": "Older models lose parts and software support"},
+      {"title": "Price the repair", "desc": "Weigh it against the cost of a new pair"},
+      {"title": "Retest your hearing", "desc": "A shift may call for a fresh fitting"},
+      {"title": "Bring them in", "desc": "We diagnose and advise before you spend"}
+    ] }
+}

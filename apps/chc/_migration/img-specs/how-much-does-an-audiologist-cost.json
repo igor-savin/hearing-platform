@@ -1,0 +1,12 @@
+{
+  "slug": "how-much-does-an-audiologist-cost",
+  "hero": { "title": "Audiologist Costs", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "What Shapes the Price", "subtitle": "The parts that add up to your total",
+    "rows": [
+      {"title": "Hearing Evaluation", "desc": "The smallest, most predictable cost"},
+      {"title": "Hearing Aids", "desc": "Largest line; varies by technology level"},
+      {"title": "Bundled vs Unbundled", "desc": "Follow-up care included, or billed later"},
+      {"title": "Insurance", "desc": "Coverage swings widely by plan"},
+      {"title": "Ongoing Care", "desc": "Fittings, cleanings, and repairs add up"}
+    ] }
+}

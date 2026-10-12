@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Diagram of how a hair cell turns bending of its hair bundle into a nerve signal, and how hair bundle length compares in fish, squid and humans">
+  <defs>
+    <linearGradient id="hd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#155f6b"/><stop offset="1" stop-color="#105966"/></linearGradient>
+    <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#e0ae3c"/></marker>
+  </defs>
+  <rect width="800" height="520" fill="#ffffff"/>
+  <rect x="0" y="0" width="800" height="90" fill="url(#hd)"/>
+  <rect x="0" y="86" width="800" height="4" fill="#e0ae3c"/>
+  <text x="44" y="44" font-family="Georgia, serif" font-size="25" fill="#ffffff" font-weight="bold">How a Hair Cell Works</text>
+  <text x="44" y="70" font-family="Georgia, serif" font-size="15" fill="#86d0d5">Bend, open, signal. Bundle length helps tune the pitch.</text>
+  <rect x="46" y="232" width="96" height="30" rx="12" fill="#fbf7ef" stroke="#155f6b" stroke-width="3"/><line x1="62" y1="232" x2="62" y2="206" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="76" y1="232" x2="76" y2="196" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="90" y1="232" x2="90" y2="186" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="104" y1="232" x2="104" y2="176" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="118" y1="232" x2="118" y2="166" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><path d="M40 150 L96 150" stroke="#e0ae3c" stroke-width="4" stroke-linecap="round" marker-end="url(#ar)"/><rect x="306" y="232" width="96" height="30" rx="12" fill="#fbf7ef" stroke="#155f6b" stroke-width="3"/><line x1="322" y1="232" x2="332.4" y2="208.07999999999998" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><circle cx="332.4" cy="208.07999999999998" r="4.5" fill="#e0ae3c"/><line x1="336" y1="232" x2="350.4" y2="198.88" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><circle cx="350.4" cy="198.88" r="4.5" fill="#e0ae3c"/><line x1="350" y1="232" x2="368.4" y2="189.68" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><circle cx="368.4" cy="189.68" r="4.5" fill="#e0ae3c"/><line x1="364" y1="232" x2="386.4" y2="180.48" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><circle cx="386.4" cy="180.48" r="4.5" fill="#e0ae3c"/><line x1="378" y1="232" x2="404.4" y2="171.28" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><circle cx="404.4" cy="171.28" r="4.5" fill="#e0ae3c"/><rect x="566" y="232" width="96" height="30" rx="12" fill="#fbf7ef" stroke="#155f6b" stroke-width="3"/><path d="M614 232 L614 202 L598 190 L630 176 L606 162 L622 146" fill="none" stroke="#e0ae3c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="646" y="152" font-size="14" fill="#6b8086" font-family="Georgia, serif">to the brain</text>
+  
+  <circle cx="50" cy="284" r="14" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="2.5"/>
+  <text x="50" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#155f6b" font-family="Georgia, serif">1</text>
+  <text x="72" y="284" font-size="16" font-weight="bold" fill="#21424b" font-family="Georgia, serif">Motion bends it</text>
+  <text x="72" y="303" font-size="13" fill="#6b8086" font-family="Georgia, serif">Sound, or water movement,</text>
+  <text x="72" y="319" font-size="13" fill="#6b8086" font-family="Georgia, serif">pushes the hair bundle.</text>
+  
+  <circle cx="310" cy="284" r="14" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="2.5"/>
+  <text x="310" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#155f6b" font-family="Georgia, serif">2</text>
+  <text x="332" y="284" font-size="16" font-weight="bold" fill="#21424b" font-family="Georgia, serif">Channels open</text>
+  <text x="332" y="303" font-size="13" fill="#6b8086" font-family="Georgia, serif">Tiny pores at the tips open</text>
+  <text x="332" y="319" font-size="13" fill="#6b8086" font-family="Georgia, serif">and ions flow in.</text>
+  
+  <circle cx="570" cy="284" r="14" fill="#fbf7ef" stroke="#e0ae3c" stroke-width="2.5"/>
+  <text x="570" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#155f6b" font-family="Georgia, serif">3</text>
+  <text x="592" y="284" font-size="16" font-weight="bold" fill="#21424b" font-family="Georgia, serif">A signal fires</text>
+  <text x="592" y="303" font-size="13" fill="#6b8086" font-family="Georgia, serif">The cell sends an electrical</text>
+  <text x="592" y="319" font-size="13" fill="#6b8086" font-family="Georgia, serif">signal onward.</text>
+  <line x1="40" y1="340" x2="760" y2="340" stroke="#e5eceb" stroke-width="2"/>
+  <text x="40" y="364" font-size="13" fill="#6b8086" font-family="Georgia, serif" letter-spacing="1.5">HAIR BUNDLE LENGTH, COMPARED</text>
+  <line x1="60" y1="408" x2="60" y2="382" stroke="#6b8086" stroke-width="7" stroke-linecap="round"/><line x1="76" y1="408" x2="76" y2="382" stroke="#6b8086" stroke-width="7" stroke-linecap="round"/><line x1="92" y1="408" x2="92" y2="382" stroke="#6b8086" stroke-width="7" stroke-linecap="round"/><line x1="108" y1="408" x2="108" y2="382" stroke="#6b8086" stroke-width="7" stroke-linecap="round"/><line x1="124" y1="408" x2="124" y2="382" stroke="#6b8086" stroke-width="7" stroke-linecap="round"/><line x1="140" y1="408" x2="140" y2="382" stroke="#6b8086" stroke-width="7" stroke-linecap="round"/>
+  <text x="190" y="398" font-size="16" font-weight="bold" fill="#21424b" font-family="Georgia, serif">Fish lateral line</text>
+  <text x="190" y="416" font-size="13.5" fill="#6b8086" font-family="Georgia, serif">Uniform bundle length, as the researchers describe it</text>
+  <line x1="60" y1="452" x2="60" y2="440" stroke="#e0ae3c" stroke-width="7" stroke-linecap="round"/><line x1="76" y1="452" x2="76" y2="436" stroke="#e0ae3c" stroke-width="7" stroke-linecap="round"/><line x1="92" y1="452" x2="92" y2="432" stroke="#e0ae3c" stroke-width="7" stroke-linecap="round"/><line x1="108" y1="452" x2="108" y2="428" stroke="#e0ae3c" stroke-width="7" stroke-linecap="round"/><line x1="124" y1="452" x2="124" y2="424" stroke="#e0ae3c" stroke-width="7" stroke-linecap="round"/><line x1="140" y1="452" x2="140" y2="420" stroke="#e0ae3c" stroke-width="7" stroke-linecap="round"/>
+  <text x="190" y="442" font-size="16" font-weight="bold" fill="#21424b" font-family="Georgia, serif">Squid skin</text>
+  <text x="190" y="460" font-size="13.5" fill="#6b8086" font-family="Georgia, serif">Bundle lengths vary. They may tune cells to different frequencies</text>
+  <line x1="60" y1="496" x2="60" y2="486" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="76" y1="496" x2="76" y2="481" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="92" y1="496" x2="92" y2="476" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="108" y1="496" x2="108" y2="471" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="124" y1="496" x2="124" y2="466" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/><line x1="140" y1="496" x2="140" y2="461" stroke="#155f6b" stroke-width="7" stroke-linecap="round"/>
+  <text x="190" y="486" font-size="16" font-weight="bold" fill="#21424b" font-family="Georgia, serif">Human cochlea</text>
+  <text x="190" y="504" font-size="13.5" fill="#6b8086" font-family="Georgia, serif">Different places along the spiral detect different pitches</text>
+</svg>

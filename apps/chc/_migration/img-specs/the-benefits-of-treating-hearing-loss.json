@@ -1,0 +1,13 @@
+{
+  "slug": "the-benefits-of-treating-hearing-loss",
+  "hero": { "title": "Benefits of Treatment", "icon": "ear", "accent": "gold" },
+  "info": { "title": "What Treatment Gives You", "subtitle": "Everyday gains after treating hearing loss",
+    "rows": [
+      {"title": "Clearer conversation", "desc": "Follow speech in noise and groups more easily"},
+      {"title": "Less listening fatigue", "desc": "Spend less effort decoding every word"},
+      {"title": "Stronger connection", "desc": "Stay engaged with family, friends, and work"},
+      {"title": "Everyday safety", "desc": "Hear alarms, traffic, and warnings around you"},
+      {"title": "Brain engagement", "desc": "Keep more sound and stimulation reaching you"}
+    ]
+  }
+}

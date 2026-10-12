@@ -1,0 +1,15 @@
+{
+  "slug": "what-to-expect-at-a-hearing-test",
+  "hero": { "title": "Your Hearing Test", "icon": "soundwave", "accent": "gold" },
+  "info": {
+    "title": "The steps of a hearing test",
+    "subtitle": "Each stage is quick, painless, and clearly explained",
+    "rows": [
+      { "title": "Case history", "desc": "Your health, habits, and where hearing feels hard" },
+      { "title": "Ear check", "desc": "A quick look for wax or blockage first" },
+      { "title": "Pure-tone testing", "desc": "The softest tones you hear, pitch by pitch" },
+      { "title": "Speech testing", "desc": "How clearly you understand words, not just volume" },
+      { "title": "Results and plan", "desc": "Your audiogram explained, plus next steps if any" }
+    ]
+  }
+}

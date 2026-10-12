@@ -1,0 +1,38 @@
+"/tinnitus/sound-therapy/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Sound Therapy for Tinnitus in San Mateo & San Carlos",
+  intro: [
+    "Sound therapy does not try to drown out tinnitus with louder noise. Instead, it adds gentle, comfortable sound that helps your brain relax, makes the ringing less noticeable, and supports [long-term habituation](/tinnitus/habituation/). Many people describe it simply as taking the edge off.",
+    "The goal is not to blast the tinnitus away. It is to give your brain a steady, neutral background so the sound becomes less front-and-center, and over time less emotionally charged. Sound therapy can be delivered through hearing aids, bedside devices, small speakers, or apps, and it is a key pillar of most tinnitus programs.",
+    "This page explains how our Bay Area audiologists use sound therapy with real patients. If you are just starting out, it helps to read [what tinnitus is](/tinnitus/what-is-tinnitus/) first, then return here for the deeper detail."
+  ],
+  sections: [
+    ["What sound therapy actually is", "Sound therapy is any deliberate use of external sound to change how you perceive and react to tinnitus. Instead of listening to an isolated ringing in a silent room, you hear a more comfortable, blended sound environment. It is a core part of Tinnitus Retraining Therapy, [hearing aids for tinnitus](/tinnitus/hearing-aids/), and the protocols we build inside our [tinnitus therapy program](/services/tinnitus-therapy/)."],
+    ["How it helps your brain", "Tinnitus is most distressing [when the brain labels it a threat](/could-the-severity-of-tinnitus-originate-in-the-brain/) and pays constant attention to it. Sound therapy works on several levels at once: masking partially covers the tinnitus so it feels quieter, sound enrichment reduces the contrast between tinnitus and silence, an external sound gives your brain something else to attend to, and over time habituation helps your brain learn that the tinnitus is not dangerous. Because it touches both the auditory and emotional sides, sound therapy pairs well with anxiety-management and CBT-style strategies."],
+    ["Types of sound we use", "There is no single best sound. We often combine broadband noise (white, pink, or brown), nature and environmental sounds like rain or ocean waves, hearing-aid-based sound generators when hearing loss is also present, notched or tailored sound shaped around your tinnitus pitch, and combination approaches within TRT. We adjust the mix over time based on your feedback and progress rather than setting it once and forgetting it."],
+    ["Daytime versus nighttime strategies", "Tinnitus often behaves differently by day and night, so we design separate strategies. During the day we might use hearing aids with tinnitus programs, low-level background sound in quiet offices, and short sound breaks during spikes. Quiet nights are often the hardest, so at night we lean on bedside sound machines with timers, gentle looping soundscapes, or night-specific hearing aid programs when appropriate."],
+    ["Choosing the right sounds", "Patients often ask what the best sound for tinnitus is. The honest answer: the one you can comfortably listen to, consistently, without irritation or boredom. Start with sounds you find neutral to pleasant, keep the volume below your tinnitus level at first, avoid anything too sharp or busy, and expect to fine-tune your favorites as your brain adapts. Sound therapy should never be uncomfortably loud."],
+    ["How we build your plan", "At California Hearing Center, sound therapy is tailored to your tinnitus pattern, lifestyle, and goals. A typical plan starts with a comprehensive [hearing test](/hearing-testing/) and tinnitus history, moves into strategy design where we select sound types and delivery methods that fit your routine, and continues with coaching and follow-up so we can adjust as your tinnitus changes and coordinate with CBT or TRT when needed."]
+  ],
+  bulletLinks: [
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Explore the tinnitus hub", "/tinnitus/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Hearing aid fitting for tinnitus", "/hearing-aid-fitting/"],
+    ["Sound sensitivity and hyperacusis", "/hyperacusis/"]
+  ],
+  takeaways: [
+    "Sound therapy softens the contrast between tinnitus and silence rather than trying to cover it completely.",
+    "The best sound is one you can listen to comfortably and consistently, kept at a gentle, safe volume.",
+    "It works best inside a full plan alongside hearing technology, counseling, and lifestyle support."
+  ],
+  faqs: [
+    ["How long before I notice a difference?", "Some people feel calmer within days or weeks; for others, improvement builds gradually over several months. Remember, sound therapy is training your brain, not just covering a noise, so consistency matters more than intensity."],
+    ["Will sound therapy work if my tinnitus is very loud?", "Many patients with severe tinnitus still benefit, especially when sound therapy is paired with anxiety management and counseling. We often start slowly and adjust the plan as you build tolerance and familiarity."],
+    ["Can I do sound therapy on my own?", "There are plenty of do-it-yourself tools, but working with an audiologist helps you avoid common pitfalls such as too-loud volumes, the wrong sounds, or inconsistent use, and ensures sound therapy is integrated with a complete plan rather than used in isolation."],
+    ["Does it help if my tinnitus is only in one ear?", "Yes, though the approach may differ. We may use asymmetrical hearing aid fittings, directional sound sources, or customized programs, and we always make sure one-sided tinnitus has been properly evaluated first."]
+  ],
+  image: "/assets/core/tinnitus__sound-therapy.svg",
+  imageLabel: "Gentle sound that helps the brain tune out tinnitus"
+},

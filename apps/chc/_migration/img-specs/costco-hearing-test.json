@@ -1,0 +1,34 @@
+{
+  "slug": "costco-hearing-test",
+  "hero": {
+    "title": "Costco Hearing Test",
+    "icon": "hearingaid",
+    "accent": "aqua"
+  },
+  "info": {
+    "title": "Five Questions Before Any Hearing Test",
+    "subtitle": "Ask these wherever you book",
+    "rows": [
+      {
+        "title": "Is it free?",
+        "desc": "Costco says free for members 18 and older"
+      },
+      {
+        "title": "Do I need to book?",
+        "desc": "Costco says to contact the center to schedule"
+      },
+      {
+        "title": "What tests are included?",
+        "desc": "Ask which tests are in the visit"
+      },
+      {
+        "title": "Who does the test?",
+        "desc": "Ask who tests and what license they hold"
+      },
+      {
+        "title": "Do I get my audiogram?",
+        "desc": "Ask for a copy of your results"
+      }
+    ]
+  }
+}

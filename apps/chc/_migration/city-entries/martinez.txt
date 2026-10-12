@@ -1,0 +1,30 @@
+  "martinez": {
+    name: "Martinez",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 55 minutes northeast",
+    distanceTier: "far",
+    geo: { lat: 38.0194, lng: -122.1341 },
+    motif: "civic",
+    lede:
+      "Martinez wears a lot of hats — Contra Costa's county seat, John Muir's old hometown, a historic downtown by the marina, and a refinery town on the Carquinez Strait. It's roughly 55 minutes northeast of our Peninsula offices, so we're straightforward that we're a destination practice for Martinez patients rather than the nearest one.",
+    hook: [
+      "A county seat with an industrial waterfront",
+      "That industrial side of Martinez matters for hearing. Refinery and trade work along the strait carries years of loud-noise exposure that can contribute to hearing loss and tinnitus over time. A baseline [evaluation](/hearing-testing/) is worthwhile if that's your background, and we fit custom-molded hearing protection for those still on the job — the kind of specialized, preventive attention that's the groundwork for catching problems early.",
+    ],
+    localScene: [
+      "From John Muir's home to the marina",
+      "Martinez runs from the orchards around the John Muir National Historic Site through the brick-front downtown on Main Street to the marina, the waterfront park, and the refineries on the Carquinez Strait. It's a civic and industrial town at once. Many residents carry working lives spent around heavy equipment, so we emphasize baseline testing, honest results, and protection for people still exposed to that noise.",
+    ],
+    whyHere:
+      "Martinez patients who travel to us are usually after specialized help — a thorough diagnostic workup, custom hearing protection, or focused [tinnitus care](/tinnitus/) including Lenire. We say plainly that a routine test can be done closer to home, and reserve the trip for the complex cases.",
+    landmarks:
+      "We're roughly 55 minutes from the John Muir site, downtown Martinez, and the marina, taking the East Bay bridges over to our San Mateo office.",
+    faqs: [
+      ["I worked around the refineries for years — should I get my hearing checked?", "Yes. Long-term industrial noise can contribute to gradual hearing loss and tinnitus. A baseline evaluation gives you a clear picture and a reference point for the future."],
+      ["Do you make custom hearing protection?", "We do. Custom-molded protection fits better and shields more reliably than generic plugs, which matters for anyone still working around loud equipment."],
+      ["Why come to the Peninsula from Martinez?", "For routine care, a closer provider may be simpler. Patients travel to us for specialized tinnitus treatment, Lenire, and difficult fittings. Call 650-342-9449 to talk it through."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

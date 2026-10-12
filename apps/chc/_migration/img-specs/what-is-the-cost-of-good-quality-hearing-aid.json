@@ -1,0 +1,12 @@
+{
+  "slug": "what-is-the-cost-of-good-quality-hearing-aid",
+  "hero": { "title": "Hearing Aid Cost", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "What Drives the Price", "subtitle": "Two halves behind every quote",
+    "rows": [
+      {"title": "The device", "desc": "The hardware and the chip inside it"},
+      {"title": "Technology tier", "desc": "Higher tiers handle noise and crowds better"},
+      {"title": "Professional care", "desc": "Fitting, tuning, and years of follow-up"},
+      {"title": "Bundled vs. unbundled", "desc": "Care paid upfront or as you use it"},
+      {"title": "Insurance & HSA", "desc": "Benefits and pre-tax funds lower your cost"}
+    ] }
+}

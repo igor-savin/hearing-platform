@@ -1,0 +1,12 @@
+{
+  "slug": "how-do-hearing-aids-work",
+  "hero": { "title": "Inside a Hearing Aid", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "How a Hearing Aid Works", "subtitle": "How sound travels from the room to your ear.",
+    "rows": [
+      {"title": "Microphone", "desc": "Catches sound from around you"},
+      {"title": "Processor", "desc": "A chip sorts speech from noise"},
+      {"title": "Frequency shaping", "desc": "Boosts the pitches you are missing"},
+      {"title": "Receiver", "desc": "Sends clearer sound to your ear"},
+      {"title": "Fitting", "desc": "Programmed to your hearing test"}
+    ] }
+}

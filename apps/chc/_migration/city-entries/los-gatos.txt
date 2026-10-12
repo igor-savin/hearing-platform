@@ -1,0 +1,30 @@
+  "los-gatos": {
+    name: "Los Gatos",
+    county: "Santa Clara County",
+    region: "south-bay",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 40 minutes south",
+    distanceTier: "far",
+    geo: { lat: 37.2358, lng: -121.9624 },
+    lede:
+      "Los Gatos tucks itself against the Santa Cruz Mountains — a polished downtown along Santa Cruz Avenue, the creek trail winding up toward the hills, and homes that climb into the trees. Our practice is roughly 40 minutes north on the Peninsula, and Los Gatos residents who expect the best will travel for hearing care that meets that standard.",
+    hook: [
+      "Discreet devices and expert, unhurried fittings",
+      "Los Gatos patients often want hearing that keeps pace with an active, social life without announcing itself, and they value being cared for without a rushed appointment clock. The devices that deliver that — invisible and receiver-in-canal styles — only perform when they are expertly programmed and verified. We spend the time to measure, refine, and personalize each fitting, and it is that thoroughness patients come up the Peninsula to find.",
+    ],
+    motif: "estate",
+    localScene: [
+      "Downtown, Old Town, and the road to the hills",
+      "The town centers on Santa Cruz Avenue and the shops of Old Town, with the Los Gatos Creek Trail leading down to Vasona Lake and neighborhoods rising toward the mountains and Highway 17. It is a place of patio dinners, trail walks, and close-knit gatherings — all of which depend on catching every word. For Los Gatos patients who make the trip, we prioritize discreet, carefully verified fittings and specialized tinnitus care that is not easy to find nearby.",
+    ],
+    whyHere:
+      "Los Gatos residents choose us for precision and continuity: verified fittings, honest technology advice, and focused [tinnitus care](/tinnitus/) including Lenire, all with the same audiologist over time. For simple upkeep, we are candid that a closer office may suit better.",
+    landmarks:
+      "We are about 40 minutes from downtown Los Gatos, Old Town, and the Los Gatos Creek Trail, north up the 280 to our San Carlos office.",
+    faqs: [
+      ["Do you fit hearing aids that stay out of sight?", "Yes. We fit several invisible and near-invisible options and verify each fitting carefully, since the right result depends as much on programming as on the device itself."],
+      ["Is it worth the drive from Los Gatos?", "For routine visits, a local provider may be more practical. Patients come to us for specialized care — stubborn tinnitus, difficult fittings, Lenire, or a detailed second opinion — where our expertise is worth the trip."],
+      ["How far is your office from Los Gatos?", "About 40 minutes north via the 280 to San Carlos. Call 650-342-9449 to arrange a thorough visit built around the drive."],
+    ],
+    consolidatedInto: "santa-clara-county",
+  },

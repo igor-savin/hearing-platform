@@ -1,0 +1,30 @@
+  "palo-alto": {
+    name: "Palo Alto",
+    county: "Santa Clara County",
+    region: "peninsula-south",
+    nearestOffice: "San Carlos",
+    approxDrive: "about 15-20 minutes from our San Carlos office on the 101",
+    distanceTier: "mid",
+    geo: { lat: 37.4419, lng: -122.1430 },
+    lede:
+      "Palo Alto is where Stanford, University Avenue, and a dense cluster of technology companies meet — a city of demanding careers and packed calendars. That pace puts real demands on hearing, and it is a short 15-to-20-minute run up the 101 to our San Carlos office.",
+    hook: [
+      "Hearing well in demanding listening environments",
+      "For many Palo Alto patients, the challenge is not quiet conversation at home but the hard stuff: back-to-back meetings, open-plan offices, video calls, and noisy University Avenue restaurants. Following speech when several people talk at once is a specific skill, and off-the-shelf devices rarely solve it on their own. We use speech-in-noise testing and real-ear verification to fit and program hearing aids for exactly those settings, so you can keep up where it actually matters.",
+    ],
+    motif: "downtown",
+    localScene: [
+      "A city that never stops listening hard",
+      "From Old Palo Alto and Crescent Park to College Terrace and Professorville, and along the two downtowns of University Avenue and California Avenue, Palo Alto is full of people whose work depends on hearing every word. Add the Stanford campus and its lectures and events, and you have a community that needs clarity in complex, layered sound. For these patients we focus on speech-in-noise performance and precise verification, not just an audiogram, so hearing aids earn their keep in the rooms where the day happens.",
+    ],
+    whyHere:
+      "Palo Alto patients tend to be discerning and evidence-minded, and they choose us for measured, verified fittings rather than a quick sale. They also come for specialized [tinnitus care](/tinnitus/) and the continuity of seeing the same audiologist each visit, close enough that a follow-up never means a lost afternoon.",
+    landmarks:
+      "We are about 15-20 minutes from University Avenue, California Avenue, and the Stanford campus by way of the 101 to our San Carlos office.",
+    faqs: [
+      ["Can you help me hear better in meetings and noisy restaurants?", "Yes. This is one of the most common reasons Palo Alto patients see us. We test how you follow speech in background noise and use real-ear verification to program hearing aids specifically for meetings, offices, and busy restaurants."],
+      ["Do you offer speech-in-noise testing?", "We do. A standard audiogram measures soft tones in quiet, but real life is noisier. Speech-in-noise testing shows how you perform in realistic conditions and guides both technology choice and fine-tuning."],
+      ["How far is your office from Palo Alto?", "Our San Carlos office is about 15-20 minutes north on the 101. Call 650-342-9449 to find a time that fits around your schedule."],
+    ],
+    onCaltrain: true,
+  },

@@ -1,0 +1,30 @@
+  "sonoma": {
+    name: "Sonoma",
+    county: "Sonoma County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 80 minutes north",
+    distanceTier: "far",
+    geo: { lat: 38.2919, lng: -122.4580 },
+    lede:
+      "Sonoma is where California winemaking began, and the old Mission and the broad central Plaza still anchor a town that trades happily on its history. It is about eighty minutes north of the Peninsula, where our two offices actually are, in San Mateo and San Carlos. We are up front about that distance, because the Sonoma patients who drive it are doing so deliberately, for care they would rather not compromise on.",
+    hook: [
+      "The kind of care worth going out of your way for",
+      "For a routine hearing test or a straightforward pair of hearing aids, a provider near the Plaza is the practical choice, and we would say as much. The drive to the Peninsula earns its keep on the harder problems: tinnitus that has not eased despite everything, Lenire treatment, a fitting that never felt natural, or a second opinion after care that fell short. When a Sonoma patient comes for that, we take the time to evaluate thoroughly and map out a plan that keeps return drives to a minimum.",
+    ],
+    motif: "wine",
+    localScene: [
+      "From the birthplace of California wine to the bay",
+      "Life in Sonoma orbits the historic Plaza, the Mission San Francisco Solano, and the vineyards fanning out across the valley toward Glen Ellen and Kenwood. It is a real distance from the Peninsula, and for routine hearing care we would point you somewhere closer. But for dedicated tinnitus treatment, Lenire, or a complex fitting, some Sonoma patients decide the specialist expertise outweighs the drive south, and we make certain the visit rewards the effort.",
+    ],
+    whyHere:
+      "Sonoma patients who choose us are generally seeking tinnitus and diagnostic experience they could not find in the valley. We make the long trip worthwhile by scheduling fuller appointments up front and handling as much follow-up as we can by phone, so repeat drives stay uncommon.",
+    landmarks:
+      "Patients drive south to our Peninsula offices from the Sonoma Plaza, the Mission district, and the valley toward Glen Ellen, about eighty minutes by Highways 121 and 101.",
+    faqs: [
+      ["Why travel eighty minutes to you instead of staying local?", "For routine care, local usually makes sense. Sonoma patients come to us chiefly for specialized [tinnitus treatment](/tinnitus/), Lenire, and difficult fittings, where the expertise justifies the drive. We plan each visit to reduce how often you return."],
+      ["Do you offer Lenire tinnitus therapy?", "Yes. Lenire and comprehensive tinnitus care are among the main reasons patients travel to us from the wine country, Sonoma included."],
+      ["Can you fit everything into fewer visits?", "Yes. For distance patients we consolidate [testing](/hearing-testing/) and treatment where possible and build follow-up so the drive stays infrequent. Call 650-342-9449 to plan a visit."],
+    ],
+    consolidatedInto: "sonoma-county",
+  },

@@ -1,0 +1,15 @@
+{
+  "slug": "latest-study-on-hearing-aids-in-noisy-environments-key-insights",
+  "hero": { "title": "Hearing in Noise", "icon": "soundwave", "accent": "aqua" },
+  "info": {
+    "title": "How Hearing Aids Handle Noise",
+    "subtitle": "Two technologies working together in busy rooms",
+    "rows": [
+      {"title": "Directional mics", "desc": "Favor the voice in front, ease off the sides"},
+      {"title": "Noise reduction", "desc": "Trims steady background like fans and crowds"},
+      {"title": "Speech focus", "desc": "Keeps the changing patterns of speech intact"},
+      {"title": "Automatic scenes", "desc": "Adjusts as you move between quiet and loud"},
+      {"title": "Personal fitting", "desc": "Tuned to your hearing and your rooms"}
+    ]
+  }
+}

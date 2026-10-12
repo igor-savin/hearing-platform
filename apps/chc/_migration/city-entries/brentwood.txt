@@ -1,0 +1,30 @@
+  "brentwood": {
+    name: "Brentwood",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 75 minutes east",
+    distanceTier: "far",
+    geo: { lat: 37.9319, lng: -121.6958 },
+    motif: "civic",
+    lede:
+      "Brentwood is still orchard-and-field country at the county's eastern edge, famous for its summer u-pick cherries and sweet corn even as new neighborhoods spread across former farmland. It's one of the longer drives to our Peninsula offices — roughly 75 minutes east — so we're clear that we're a specialist's destination for Brentwood patients, not the closest audiologist.",
+    hook: [
+      "Farm country, and the trip for specialized care",
+      "Farm and equipment work carries its own steady noise exposure, which over the years can contribute to hearing changes worth checking. And because Brentwood sits so far east, patients who want specialized [tinnitus care](/tinnitus/), Lenire, or a meticulous hearing-aid fitting are already accustomed to traveling for it — the drive west to the Peninsula is simply a longer version of that same trip, made for care that's hard to find nearby.",
+    ],
+    localScene: [
+      "Cherry orchards and a growing downtown",
+      "Brentwood keeps its agricultural character along Walnut Boulevard's u-pick farms and the Marsh Creek corridor, even as City Park's farmers market and the Streets of Brentwood shopping district anchor a fast-growing town. It's a place where a lot of people have worked outdoors and around equipment. We take that seriously — thorough baseline testing, honest guidance, and follow-up care that respects the distance you've come.",
+    ],
+    whyHere:
+      "Brentwood patients choose us for depth rather than convenience: careful diagnostics, technology matched honestly to real needs, and dedicated tinnitus and Lenire care. For a routine test we'll happily point you somewhere closer; the longer trip is for the specialized work.",
+    landmarks:
+      "We're about 75 minutes from downtown Brentwood, the u-pick farms along Walnut Boulevard, and the Streets of Brentwood, heading west across the East Bay to our San Mateo office.",
+    faqs: [
+      ["Is the drive from Brentwood really worth it?", "For everyday hearing needs, probably not — a closer provider makes sense. Patients travel to us for complex tinnitus care, Lenire, second opinions, and fittings that need extra expertise, and we plan visits to make the distance count."],
+      ["I've worked around farm and shop equipment for years — should I be tested?", "It's worth doing. Prolonged equipment noise can contribute to gradual hearing loss and tinnitus. A baseline evaluation gives you a clear starting point."],
+      ["Can you handle fitting and follow-up in fewer trips?", "Yes. For patients coming from far East County, we combine steps where we can. Call 650-342-9449 and we'll build a plan around the drive."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

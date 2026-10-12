@@ -1,0 +1,38 @@
+"/tinnitus/getting-louder/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Why Is My Tinnitus Getting Louder?",
+  metaDescription: "A spike usually traces back to noise, stress, poor sleep, wax or illness. Which changes are red flags, which are not, and what to do about it tonight.",
+  intro: [
+    "It can be frightening when tinnitus that was background noise suddenly feels louder, harsher, or more constant. The reassuring news is that a spike does not always mean permanent damage, but it is a sign that something in your ears, brain, or lifestyle has changed.",
+    "When patients tell us their tinnitus is getting louder, they usually mean one of three things: the sound itself has changed, the sound feels louder because they are paying more attention to it, or other factors like stress, poor sleep, or illness are amplifying how noticeable it is.",
+    "What follows is why tinnitus spikes, which spikes we want to see quickly, and what you can do this evening to settle one. For the basics, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["Common reasons tinnitus spikes", "Frequent triggers include recent loud-noise exposure (concerts, sporting events, power tools, or cranked-up headphones can temporarily inflame the auditory system), stress and anxiety that put the nervous system on high alert, poor sleep or fatigue that reduces the brain's ability to filter background sensations, illness such as colds, sinus infections, or allergies that cause ear pressure and fluid, [earwax buildup](/services/earwax-removal/), and certain medications. Hormonal shifts and blood-pressure changes can play a role too."],
+    ["Why tinnitus changes through the day", "Many people notice patterns, such as [louder tinnitus at night](/tinnitus/sleep-strategies/) or spikes in the afternoon at work. At night, when the house is quiet, tinnitus has less competition and feels louder. After a long day of mental effort, the brain has fewer resources to filter it. Caffeine, energy drinks, or alcohol can increase sensitivity, and tight deadlines or constant notifications ramp up nervous-system arousal. Jaw clenching during the day can also change loudness."],
+    ["True worsening versus perceived loudness", "As audiologists we look at two related questions. Is your auditory system actually changing, for example with new or worsening hearing loss or a recent ear injury or illness? Or is your brain reacting differently, with stress, anxiety, or sleep problems making tinnitus feel louder even when the actual sound level has not changed much? A [hearing test](/hearing-testing/) and detailed history help us tell the difference."],
+    ["When a spike is a red flag", "Call a doctor or seek urgent care if your tinnitus suddenly gets much louder in one ear, or if a spike is accompanied by sudden hearing loss, vertigo or severe dizziness, a pulsatile whooshing in time with your heartbeat, or a severe headache, facial weakness, or vision changes. These can signal medical conditions that need prompt attention; our guides on [sudden tinnitus](/tinnitus/sudden-onset/) and [when to see a doctor](/tinnitus/when-to-see-doctor/) give more detail."],
+    ["What you can do right now", "During a spike it is easy to panic and focus on the sound. A few steps reduce distress: if the spike followed a noisy event, give your ears a rest and avoid testing them with loud music; add gentle background sound from a fan, sound machine, or app to soften the contrast; use slow breathing or brief relaxation to interrupt the fight-or-flight response; and review the last 24 to 48 hours for louder environments, extra caffeine or alcohol, high stress, congestion, or [medication changes](/tinnitus/medications/). If louder tinnitus lasts more than a few days, book an evaluation at our [San Mateo office](/contact/san-mateo/) or [San Carlos office](/contact/san-carlos/)."],
+    ["How treatment helps when tinnitus gets louder", "[Tinnitus care](/tinnitus/) aims not only to shrink the sound but also to shrink the fear and distress around it. Effective plans often combine a [hearing and tinnitus evaluation](/services/tinnitus-therapy/) to rule out red flags, TRT-style counseling and sound enrichment, and cognitive strategies to reframe thoughts like it is getting louder, I cannot cope. Many patients tell us their tinnitus still spikes sometimes, but it no longer scares them the way it used to, and spikes become shorter and easier to ride out."]
+  ],
+  bulletLinks: [
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Sudden tinnitus: ER or not?", "/tinnitus/sudden-onset/"],
+    ["Medications that cause tinnitus", "/tinnitus/medications/"],
+    ["When to see a doctor", "/tinnitus/when-to-see-doctor/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Our tinnitus therapy", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "A tinnitus spike usually reflects a temporary trigger, noise, stress, poor sleep, illness, or earwax, not permanent damage.",
+    "Tinnitus often feels louder at night and after long, tiring, or stressful days.",
+    "A sudden loud spike in one ear, or with dizziness, pulsing, or headache, is a red flag that needs prompt care."
+  ],
+  faqs: [
+    ["Does louder tinnitus mean my hearing is getting worse?", "Not necessarily. Sometimes the auditory system has changed, but often the brain is simply turning up the volume on how tinnitus feels because of stress, fatigue, or a noisy day. A hearing test helps distinguish true worsening from heightened sensitivity."],
+    ["Why is my tinnitus louder at night?", "At night the house is quiet, so tinnitus has less external sound to compete with and stands out more. Adding gentle background sound, like a fan or sound machine, reduces the contrast and often helps you fall asleep."],
+    ["When should a tinnitus spike worry me?", "Seek prompt care if the spike is sudden and one-sided, or comes with dizziness, a heartbeat-like pulsing, severe headache, facial weakness, or vision changes. Otherwise, if louder tinnitus persists more than a few days, schedule a hearing and tinnitus evaluation."]
+  ],
+  image: "/assets/core/tinnitus__getting-louder.svg",
+  imageLabel: "When the ringing turns up the volume"
+},

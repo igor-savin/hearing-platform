@@ -1,0 +1,29 @@
+  "san-mateo": {
+    name: "San Mateo",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "here in town, just off N. San Mateo Drive near downtown",
+    distanceTier: "office",
+    geo: { lat: 37.563, lng: -122.3255 },
+    lede:
+      "San Mateo is home. Our main office sits at 88 N. San Mateo Drive, a few blocks from the downtown B Street shops and Central Park, so for most San Mateo residents a hearing appointment is a short drive or even a walk rather than a trek across the county.",
+    hook: [
+      "Being your neighborhood audiologist changes the care",
+      "Because we are based in San Mateo, follow-up is easy: a quick hearing-aid cleaning, a fine-tuning after a noisy weekend, or a fresh set of domes rarely means rearranging your day. That proximity matters more than people expect, because hearing care is not one appointment — it is an ongoing relationship of small adjustments that add up to hearing well in real life.",
+    ],
+    motif: "civic",
+    localScene: [
+      "Rooted in the neighborhoods we serve",
+      "From Baywood and San Mateo Park to Hayward Park, Bay Meadows, and the busy Hillsdale district, San Mateo is a city of distinct neighborhoods — and of distinct listening challenges, from quiet residential streets to the constant hum near the 92/101 interchange and Hillsdale Shopping Center. We know these settings because we live and work here, and we tune hearing aids for the places our patients actually spend their days, whether that's Central Park on a Saturday or a loud lunch spot downtown on B Street.",
+    ],
+    whyHere:
+      "San Mateo patients come to us for the full range of care under one roof — diagnostic hearing evaluations, hearing aid fittings with real-ear verification, tinnitus and Lenire treatment, earwax removal, and repairs — without navigating a large hospital system. Many were referred by a neighbor or family member who is already a patient.",
+    landmarks:
+      "We are easy to reach from Hillsdale, Baywood, Aragon, and the Bay Meadows and Hayward Park neighborhoods, with parking right at the office.",
+    faqs: [
+      ["Where exactly is your San Mateo office?", "Our San Mateo office is at 88 N. San Mateo Drive, 94401, near downtown and Central Park. Call 650-342-9449 for directions or parking details."],
+      ["Do I need a referral to be seen in San Mateo?", "Most hearing evaluations and hearing aid consultations do not require a physician referral. If your insurance plan requires one, our team can walk you through it before your visit."],
+    ],
+    onCaltrain: true,
+  },

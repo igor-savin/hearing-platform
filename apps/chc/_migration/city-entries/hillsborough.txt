@@ -1,0 +1,29 @@
+  "hillsborough": {
+    name: "Hillsborough",
+    county: "San Mateo County",
+    region: "peninsula-core",
+    nearestOffice: "San Mateo",
+    approxDrive: "about 8 minutes from our San Mateo office",
+    distanceTier: "near",
+    geo: { lat: 37.5741, lng: -122.3794 },
+    lede:
+      "Hillsborough is a purely residential town of gracious estates and winding, tree-lined roads, with no commercial district by design — residents cross into Burlingame or San Mateo for nearly every errand. Our San Mateo office is one of the closest, about eight minutes away, and privacy and unhurried care are exactly what many Hillsborough patients are after.",
+    hook: [
+      "Discreet technology and private, unhurried care",
+      "For many Hillsborough residents, two things matter most: hearing that keeps pace with an active professional and social life, and devices that stay out of sight. Today's invisible and receiver-in-canal hearing aids deliver both — but the result depends far more on expert fitting and real-ear verification than on the device alone. We take the time to program, measure, and refine, in a calm setting where nothing feels rushed and everything stays confidential.",
+    ],
+    motif: "estate",
+    localScene: [
+      "A town of estates that travels for its services",
+      "Hillsborough winds through neighborhoods like the Country Club district, Tobin Clark, and the roads around the historic Carolands Chateau, with Crystal Springs and Black Mountain framing the western hills. There is no shopping street here — residents are accustomed to a short drive for their care. Many are active professionals and longtime community members who want technology that keeps up with a full calendar while remaining completely discreet, and the privacy of an independent practice over a big-box counter, just minutes down the hill.",
+    ],
+    whyHere:
+      "Hillsborough patients choose us for meticulous testing, premium technology matched honestly to their needs, and specialized tinnitus care — with the continuity of the same audiologist at every visit. The care is private, patient, and thorough, the way they expect it to be.",
+    landmarks:
+      "We are a short drive from Hillsborough's Country Club district and the roads near Carolands and Crystal Springs, an easy eight minutes to our San Mateo office.",
+    faqs: [
+      ["Do you offer truly discreet or invisible hearing aids?", "Yes — we fit several invisible and near-invisible styles, including deep-canal options. The best fit depends on your ear anatomy and hearing needs, which we assess carefully during your evaluation."],
+      ["Can I expect a private, unhurried appointment?", "That is how we work. Hillsborough patients value the calm, confidential pace of an independent practice, with time to ask questions and fine-tune results across visits."],
+      ["How far is your office from Hillsborough?", "Our San Mateo office is about eight minutes away. Call 650-342-9449 to arrange a visit at a time that suits you."],
+    ],
+  },

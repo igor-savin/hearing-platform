@@ -1,0 +1,29 @@
+  "sonoma-county": {
+    name: "Sonoma County",
+    county: "Sonoma County",
+    region: "wine-country",
+    nearestOffice: "San Mateo",
+    approxDrive: "up in the North Bay wine country",
+    distanceTier: "far",
+    geo: { lat: 38.4, lng: -122.7 },
+    lede:
+      "Sonoma County spreads from the coast through the Russian River valley to the vineyards around Santa Rosa, Sonoma, and Healdsburg — wine country, redwoods, and a string of distinct towns. It is a long way from the Peninsula, where our offices actually are, in San Mateo and San Carlos. We say that plainly, because the Sonoma County patients who come to us are the ones who have decided a specialist is worth the drive.",
+    hook: [
+      "When specialized care justifies the North Bay drive",
+      "For routine hearing tests and everyday hearing aids, a provider in your own part of the county is almost always the better choice, and we will tell you so. The trip south starts to make sense for harder problems — tinnitus that has not responded, Lenire treatment, a fitting that never worked, or a second opinion after care that disappointed. Patients who travel to us from Sonoma County typically come for that kind of expertise, and we structure their visits so the distance buys as much progress as possible.",
+    ],
+    motif: "wine",
+    localScene: [
+      "One county, many communities",
+      "Sonoma County is really a collection of places — Santa Rosa and Petaluma, the town of Sonoma and its Plaza, Sebastopol's apple country, Healdsburg, Windsor, and the Russian River and coastal reaches beyond. All of them sit a genuine distance from the Peninsula, and for routine hearing care we would point you to someone nearer home. For specialized tinnitus treatment, Lenire, or complex diagnostics, some county residents decide the expertise is worth the drive south, and we make the visit earn it.",
+    ],
+    whyHere:
+      "Patients who travel to us from Sonoma County are usually seeking a depth of tinnitus and diagnostic experience they could not line up locally. We respect the distance by consolidating care into efficient visits and coordinating follow-up so the drive is the exception rather than the routine. Our page for [Sebastopol](/areas-we-serve/sebastopol/) gives the drive time to our San Mateo office.",
+    landmarks:
+      "Patients come south to our Peninsula offices from Santa Rosa, Petaluma, Sonoma, Sebastopol, and Windsor, generally well over an hour down Highway 101.",
+    faqs: [
+      ["You're far from Sonoma County — why would I travel to you?", "For routine care, a local provider usually makes more sense. County patients come to us mainly for specialized [tinnitus treatment](/tinnitus/), Lenire, and complex cases, where the expertise justifies the drive. We plan visits to minimize repeat trips."],
+      ["Do you offer Lenire tinnitus treatment?", "Yes. We provide Lenire and comprehensive tinnitus care, which is one of the main reasons patients travel to us from farther parts of the Bay Area, including Sonoma County."],
+      ["Can you coordinate care so I don't drive down often?", "Yes. For distance patients we consolidate testing, treatment, and counseling into efficient visits and build a follow-up plan that limits how often you make the trip."],
+    ],
+  },

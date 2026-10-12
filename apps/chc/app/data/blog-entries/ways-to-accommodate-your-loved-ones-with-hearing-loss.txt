@@ -1,0 +1,42 @@
+  "/ways-to-accommodate-your-loved-ones-with-hearing-loss/": {
+    kicker: "Family & Communication",
+    headline: "Ways to Accommodate a Loved One With Hearing Loss",
+    metaTitle: "Accommodating a Loved One With Hearing Loss",
+    variant: "condition",
+    datePublished: "2021-03-23",
+    dateModified: "2026-09-29",
+    metaDescription:
+      "Simple, practical ways to help a loved one with hearing loss communicate and stay connected, plus signs it may be time for a professional hearing test.",
+    intro: [
+      "When someone close to you has trouble hearing, the strain rarely stays on their side. Repeating yourself, watching a conversation go sideways, feeling shut out at the dinner table — it wears on the whole family. Most of what helps costs nothing and takes only a little practice. A few changes in how you speak and how you set up a room can make the person you love feel included again.",
+      "None of this replaces treatment, and it isn't meant to. If your family member hasn't had their hearing checked in a while, a [hearing evaluation](/hearing-testing/) is still the foundation everything else rests on. But accommodation and treatment work best together, and there is plenty you can do at home starting today.",
+      "Hearing loss is one of the most common health conditions among older adults, and it often goes untreated for years; the federal NIDCD puts numbers to [how common age-related hearing loss is](https://www.nidcd.nih.gov/health/age-related-hearing-loss). That gap is exactly where family members can help — by making everyday communication easier while encouraging a real fix.",
+    ],
+    takeaways: [
+      "Face the person, keep your face visible, and speak clearly rather than loudly.",
+      "Cut background noise: lower the TV, pick quieter tables, and reduce competing sounds.",
+      "Rephrase instead of repeating the same words when you aren't understood.",
+      "Accommodation helps, but a professional hearing evaluation is still the real fix.",
+    ],
+    sections: [
+      ["Talk about it plainly", "It is tempting to work around a hearing problem without naming it, but that usually leaves everyone frustrated. [Choose a calm moment](/how-to-talk-to-a-parent-or-grandparent-about-hearing-loss-without-a-fight/) and say what you have noticed, without blame. Many people know their hearing has slipped and simply feel embarrassed or worried about aging. Framing it around connection — you miss talking with them, you want them at the table — lands far better than a list of complaints. If they are open to it, offer to sit with them during a [hearing test](/hearing-testing/) so the first step feels like a shared one rather than a verdict."],
+      ["Set the room up to help", "A lot of listening trouble comes down to the environment, not just the ears. Background noise is the biggest culprit: a running TV, a busy restaurant, several people talking at once. When you can, turn off competing sound, choose a quieter corner or a table against a wall, and add lamps so your face stays well lit. Good lighting matters more than people expect, because most of us read lips and expressions without realizing it. Small shifts like these often do more for a conversation than raising your voice ever will."],
+      ["Speak in a way that's easier to follow", "Loud and clear are not the same thing. Shouting distorts your words and can feel hostile; speaking clearly does the work. Face the person directly, keep your hands and food away from your mouth, and slow down just slightly. If they miss something, resist repeating the exact same words — rephrase instead, since a new sentence gives their ear a fresh shot at it. Get their attention before you start, use their name, and give a heads-up when the topic changes so they aren't scrambling to catch up mid-thought."],
+      ["Let technology carry some of the load", "Plenty of tools can bridge the gap. Turn on captions for the TV and for video calls, which alone can transform family movie nights. Many phones offer live captioning and amplified volume, and simple assistive listening devices can help in the car or across a room. If your loved one already wears [hearing aids](/products/hearing-aids/), make sure they're being worn and are in good shape; a device sitting in a drawer helps no one. When something isn't working right, a professional [hearing aid fitting](/hearing-aid-fitting/) can retune the settings to fit real life. See also: [how to explain hearing loss to the grandchildren](/how-to-explain-hearing-loss-to-the-grandchildren/)."],
+      ["Know when it's time for a professional", "Accommodation has real limits. If your family member strains even in quiet rooms, turns the TV up until it bothers everyone, withdraws from gatherings, or seems confused in ways that track with noisy settings, those are signs to stop compensating and get a real evaluation. Sudden hearing loss in one ear, pain, dizziness, or ringing deserve prompt attention. [Our audiologists](/about-us/) can sort out what's going on and explain the options plainly, and much of the guidance we offer for [older adults](/hearing-aids-for-seniors/) is built around exactly these situations."],
+      ["Patience is part of the plan", "Some days will go smoothly and some won't, and progress with hearing aids or new habits takes time. Try not to answer for your loved one or finish their sentences, even when it would be faster; that quietly chips away at their confidence. Celebrate the wins — a full dinner conversation, a phone call that went fine — and keep the door open. The goal isn't a perfect fix overnight. It's helping the person you care about stay part of the moments that matter, while you nudge them toward the [help](/contact/) that lasts."],
+    ["A family guide", "Our [family guide](/hearing-better/family-guide/) has five simple habits for talking together, and a card you can print."]
+  ],
+    bullets: ["Face-to-face talking", "Less background noise", "Good lighting", "Rephrase, don't repeat", "Captions & devices", "Professional evaluation"],
+    faqs: [
+      ["Should I speak louder to someone with hearing loss?", "Not really — clarity beats volume. Shouting distorts your words and can come across as angry. Face the person, keep your mouth visible, and speak at a steady, slightly slower pace. If they miss something, rephrase it rather than repeating the same words louder."],
+      ["My parent refuses to get their hearing checked. What can I do?", "This is common, and pushing usually backfires. Lead with connection instead of the problem, and offer to go along to the appointment. Framing a hearing evaluation as a simple, low-pressure step — and sitting beside them for it — often lowers the resistance more than any argument."],
+      ["Do these tips replace hearing aids?", "No. Accommodations make daily communication easier, but they don't restore what's missing. Think of them as support that works alongside treatment. If your loved one has real hearing loss, [hearing aids](/products/hearing-aids/) and a proper fitting address the underlying issue in a way room setup can't."],
+      ["What are the warning signs it's more than a minor problem?", "Straining in quiet rooms, cranking the TV, pulling back from social events, or trouble on the phone all point to hearing loss worth checking. Sudden loss in one ear, pain, dizziness, or persistent ringing warrant prompt care. When in doubt, [our audiologists](/about-us/) can evaluate it and explain what the results mean."],
+    ],
+    image: "/assets/blog/ways-to-accommodate-your-loved-ones-with-hearing-loss-1.svg",
+    imageLabel: "Small changes at home that keep a loved one in the conversation",
+    image2: "/assets/blog/ways-to-accommodate-your-loved-ones-with-hearing-loss-2.svg",
+    image2Label: "Five everyday ways to make communication easier at home",
+    image2Caption: "Accommodation and treatment work best together — start with a conversation, then a hearing test.",
+  },

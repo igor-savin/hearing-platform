@@ -1,0 +1,12 @@
+{
+  "slug": "common-causes-of-hearing-problems-how-to-spot-them",
+  "hero": { "title": "Spotting Hearing Problems", "icon": "ear", "accent": "gold" },
+  "info": { "title": "Five Common Causes of Hearing Problems", "subtitle": "What tends to be behind hearing trouble, and how each one shows up",
+    "rows": [
+      {"title": "Aging", "desc": "Gradual high-pitch loss as inner-ear cells wear down"},
+      {"title": "Noise exposure", "desc": "Loud sound permanently damages the inner ear"},
+      {"title": "Earwax buildup", "desc": "A blockage that muffles sound, and is reversible"},
+      {"title": "Infection or fluid", "desc": "Inflammation behind the eardrum dampens hearing"},
+      {"title": "Medications", "desc": "Some drugs can affect hearing, temporarily or for good"}
+    ] }
+}

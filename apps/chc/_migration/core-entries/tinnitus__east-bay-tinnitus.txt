@@ -1,0 +1,36 @@
+"/tinnitus/east-bay-tinnitus/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Tinnitus Care for East Bay Patients",
+  intro: [
+    "If you live in the East Bay and are searching for serious tinnitus help, it is worth being upfront: our offices are on the Peninsula, in San Mateo and San Carlos, not in the East Bay itself. Many patients decide the trip is worthwhile because dedicated tinnitus care and options like Lenire are not available everywhere.",
+    "East Bay residents typically reach us across the San Mateo or Dumbarton bridges, and for a structured tinnitus program that may mean an initial evaluation followed by periodic follow-ups rather than frequent visits. We plan appointments with that travel in mind.",
+    "This page is honest about geography so you can make an informed choice. If a shorter drive matters more than a dedicated tinnitus focus, a closer provider may suit you; if you want specialized evaluation and advanced therapy, we are glad to help you plan the trip."
+  ],
+  sections: [
+    ["Where we actually are", "Our two offices sit on the Peninsula: San Mateo and San Carlos. There is no East Bay location, so any care happens at one of these sites. Knowing that up front helps you weigh travel against the value of specialized tinnitus care."],
+    ["Why East Bay patients make the drive", "People cross the bridge for a dedicated tinnitus focus, thorough evaluation, real-ear-verified hearing aids, and access to Lenire bimodal neuromodulation for suitable candidates. These offerings are not universal, which is what makes the trip worthwhile for some."],
+    ["Planning visits around travel", "For out-of-area patients we try to make the most of each appointment, front-loading a thorough evaluation and spacing follow-ups sensibly. A structured tinnitus program is measured in months, so most of your time is spent at home applying the plan, not commuting."],
+    ["Getting oriented before you travel", "You can learn a great deal before your first drive over. Start with our [tinnitus knowledge hub](/tinnitus/) and the page on [what tinnitus is](/tinnitus/what-is-tinnitus/) so your evaluation time is spent on your specific situation rather than the basics."],
+    ["When to seek care locally and quickly", "Do not travel for an emergency. Sudden hearing loss, sudden or one-sided tinnitus, pulsatile tinnitus, or tinnitus with dizziness or neurological symptoms should be evaluated promptly by the nearest appropriate provider, then followed up for ongoing management."]
+  ],
+  bulletLinks: [
+    ["Tinnitus knowledge hub", "/tinnitus/"],
+    ["Why choose our tinnitus care", "/tinnitus/why-choose-us/"],
+    ["San Mateo office details", "/contact/san-mateo/"],
+    ["San Carlos office details", "/contact/san-carlos/"],
+    ["Areas we serve", "/areas-we-serve/"],
+    ["Book an appointment", "/contact/"]
+  ],
+  takeaways: [
+    "Both offices sit mid-Peninsula, roughly 30 to 45 minutes from much of the East Bay depending on which bridge you take and the time of day.",
+    "East Bay patients travel across the bridges for specialized tinnitus evaluation and Lenire.",
+    "Emergencies and sudden or one-sided tinnitus should be handled locally and promptly."
+  ],
+  faqs: [
+    ["Do you have an East Bay tinnitus office?", "No. Our offices are in San Mateo and San Carlos on the Peninsula. East Bay patients travel to us, usually across the San Mateo or Dumbarton bridges, when they want dedicated tinnitus care."],
+    ["Is the drive worth it for tinnitus care?", "That is your call. Many East Bay patients feel a dedicated tinnitus focus, real-ear-verified hearing aids, and access to Lenire justify the trip, especially since a tinnitus program involves relatively few in-person visits over several months."],
+    ["What if my tinnitus started suddenly?", "Do not wait for a cross-bridge appointment. Sudden, one-sided, or pulsatile tinnitus, or tinnitus with dizziness, should be evaluated promptly by the nearest appropriate provider, then followed up for longer-term management."]
+  ],
+  image: "/assets/core/tinnitus__east-bay-tinnitus.svg",
+  imageLabel: "Peninsula tinnitus care for East Bay patients"
+},

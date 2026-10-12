@@ -1,0 +1,30 @@
+  "walnut-creek": {
+    name: "Walnut Creek",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 50 minutes east",
+    distanceTier: "far",
+    geo: { lat: 37.9101, lng: -122.0652 },
+    motif: "downtown",
+    lede:
+      "Walnut Creek is the East Bay's upscale shopping and arts hub, where Broadway Plaza's boutiques and the Lesher Center for the Arts draw visitors from across the county, all under the ridgeline of Mount Diablo. It's a solid 50 minutes east of our Peninsula offices, so we won't pretend to be the closest audiologist — but Walnut Creek residents do make the drive for specialized care.",
+    hook: [
+      "Hearing well from Broadway Plaza to the Lesher Center",
+      "So much of Walnut Creek life happens in demanding listening spaces — a lively lunch at a Broadway Plaza restaurant, a performance at the Lesher Center, a meeting downtown. Following conversation there is exactly where basic amplification falls short and precise fitting matters. We focus on [speech-in-noise testing](/hearing-testing/) and real-ear verification, plus discreet, high-performing technology that keeps up with a full social calendar without announcing itself.",
+    ],
+    localScene: [
+      "Downtown polish and a big retirement community",
+      "Walnut Creek runs from the Broadway Plaza shops and Locust Street restaurants to the Iron Horse Trail and the trailheads up Mount Diablo, with the large Rossmoor community just to the south. It's a city with an active older population that wants to stay in the middle of things — theater, dining, walking groups. Getting hearing aids fit and verified for those real settings, rather than a quiet showroom, is what keeps people fully in the conversation.",
+    ],
+    whyHere:
+      "Walnut Creek patients usually reach us through word of mouth — someone whose tinnitus we helped, or whose hearing aids finally sounded right after a proper [real-ear verification](/hearing-aid-fitting/). We're straightforward that everyday visits are easier handled locally; what brings people across the bridges is tinnitus care, Lenire, and complex fittings.",
+    landmarks:
+      "We're about 50 minutes from Broadway Plaza, the Lesher Center, and the Rossmoor area, taking the East Bay bridges over to our San Mateo office.",
+    faqs: [
+      ["Why would I travel from Walnut Creek when there are audiologists nearby?", "For routine testing, staying local makes sense. People make the trip to us for specialized tinnitus treatment, Lenire, and meticulous fittings — the depth of care that's harder to find close to home."],
+      ["Will hearing aids work in a busy Broadway Plaza restaurant?", "They can, when they're programmed and verified for noise. We use real-ear measurement and speech-in-noise testing so devices perform where you actually struggle, not only in the exam room."],
+      ["Do you offer discreet, nearly invisible hearing aids?", "Yes. We fit several discreet and in-canal styles; the right one depends on your ear anatomy and hearing, which we assess during your evaluation."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

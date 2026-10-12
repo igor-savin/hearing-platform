@@ -1,0 +1,30 @@
+  "mill-valley": {
+    name: "Mill Valley",
+    county: "Marin County",
+    region: "north-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 55 minutes north over the Golden Gate",
+    distanceTier: "far",
+    geo: { lat: 37.9060, lng: -122.5450 },
+    lede:
+      "Tucked into the redwoods at the foot of Mount Tamalpais, Mill Valley wraps a small, walkable downtown around Lytton Square and the old railroad depot. It is a place people choose for quiet and beauty — and one where residents are used to traveling a bit for the right specialist. Our offices are on the Peninsula, about 55 minutes south over the Golden Gate, so Mill Valley patients tend to come to us deliberately.",
+    hook: [
+      "Unhurried, private hearing care worth the trip",
+      "Mill Valley residents often want two things from hearing care: technology discreet enough to disappear, and a practice unhurried enough to get it exactly right. Modern receiver-in-canal and near-invisible devices deliver the first; expert programming and verification deliver the second. We spend the time to measure, fit, and fine-tune rather than hand you a device and send you off — the kind of private, attentive care that makes an hour's drive feel reasonable.",
+    ],
+    motif: "estate",
+    localScene: [
+      "Redwoods, trails, and a walkable center",
+      "Mill Valley life runs from the shops and cafés around Lytton Square and Throckmorton Avenue to Old Mill Park's redwoods, the Dipsea steps, and the trailheads climbing toward Mount Tam. Down at Tam Junction and Tam Valley the pace shifts, but the throughline is the same: people who value quiet and want to keep hearing the birdsong, the creek, and the conversation on the deck. For patients here we focus on natural, well-verified sound and technology that stays out of sight.",
+    ],
+    whyHere:
+      "People from Mill Valley generally seek us out for specialized needs — persistent [tinnitus](/tinnitus/), Lenire therapy, or a fitting that finally sounds right after other attempts fell short. They value continuity with a single audiologist and care that isn't rushed. For a quick adjustment or routine check, a closer Marin provider may make more sense, and we are candid about that.",
+    landmarks:
+      "We sit about 55 minutes south of Mill Valley's Lytton Square, Old Mill Park, and the Tam Junction area, down Highway 101 and across the Golden Gate to our San Mateo office.",
+    faqs: [
+      ["Do you offer discreet, nearly invisible hearing aids?", "Yes. We fit several near-invisible and receiver-in-canal styles; the best choice depends on your ear anatomy and hearing needs, which we assess during your evaluation. Getting the most from any of them comes down to careful fitting and verification."],
+      ["Is the drive from Mill Valley worth it for hearing care?", "If you need specialized tinnitus or Lenire care, a second opinion, or a difficult fitting solved, most patients feel it is. For routine maintenance, a nearer Marin office may be the practical choice — we would rather tell you honestly than waste your trip."],
+      ["How far is your office from Mill Valley?", "About 55 minutes down Highway 101 and over the Golden Gate to our San Mateo office. Call 650-342-9449 and we will build in time so a single visit covers testing, fitting, and follow-up where possible."],
+    ],
+    consolidatedInto: "marin-county",
+  },

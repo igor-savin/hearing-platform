@@ -1,0 +1,45 @@
+  "/what-are-the-health-implications-of-hearing-loss/": {
+    kicker: "Hearing & Whole-Body Health",
+    headline: "The Health Implications of Untreated Hearing Loss",
+    metaTitle: "Health Implications of Untreated Hearing Loss",
+    variant: "condition",
+    datePublished: "2019-05-07",
+    dateModified: "2026-09-29",
+    metaDescription:
+      "Untreated hearing loss is linked to isolation, falls and cognitive decline, but association isn't proof. What the evidence supports, and why a test helps.",
+    intro: [
+      "People tend to treat hearing as a standalone sense: it works, or it needs a little help, and either way it feels separate from the rest of the body. That instinct is understandable and mostly wrong. Hearing is wired into balance, attention, mood, and the daily business of staying connected to other people. When it goes untreated, the effects rarely stay confined to the ears, and booking a [hearing test](/hearing-testing/) is how you find out what is really happening.",
+      "None of this means untreated hearing loss dooms anyone to a specific outcome. Much of what researchers have found is a matter of association: people with untreated loss show higher rates of certain problems, but the studies cannot always say hearing loss caused them. We will keep that distinction honest throughout. Where the evidence is strong, we will say so; where it is only suggestive, we will call it that.",
+      "What is not in doubt is the everyday toll, and that alone is worth acting on. Straining to hear is tiring, withdrawing from conversation is lonely, and both are reversible for most people with the right care. Our offices in San Mateo and San Carlos see this every week, and the fix usually starts with something simple.",
+    ],
+    takeaways: [
+      "Untreated hearing loss is tied to isolation, low mood, and greater cognitive and fall risk.",
+      "Much of the evidence is association, not proof — treatment is not a guaranteed shield against any single condition.",
+      "The daily costs — fatigue, missed conversation, withdrawal — are real and largely reversible.",
+      "A hearing test is quick and low-risk, and it clarifies what, if anything, needs attention.",
+    ],
+    extraFigures: [
+      { src: "/assets/core/hearing-better__health-wheel.svg", label: "Hearing and your health", alt: "Wheel graphic with hearing loss in the center and eight linked topics around it: diabetes, smoking, medications, heart health, kidney disease, balance, dementia, and tinnitus.", caption: "Hearing loss is linked to many other conditions. Links are associations, not proof of cause.", href: "/assets/core/hearing-better__health-wheel.svg", after: 0 },
+    ],
+    sections: [
+      ["The strain you stop noticing", "The first cost of untreated hearing loss is effort. When speech arrives unclear, your brain fills the gaps by working harder, and that extra labor runs in the background all day. People describe coming home drained after a normal afternoon of meetings or errands, without ever connecting the exhaustion to their ears. A well-matched [hearing aid fitting](/hearing-aid-fitting/) is meant to lower that effort so more of your energy goes to the conversation itself, not to decoding it."],
+      ["Pulling back from people", "As hearing gets harder, social life often shrinks by degrees. Group dinners, phone calls, and noisy gatherings start to feel like more effort than they are worth, so people accept fewer invitations and speak up less. That retreat feeds loneliness, which carries its own well-documented links to poor health and low mood. Treating hearing tends to reverse the pattern, drawing people back into the relationships they had been letting slide."],
+      ["Balance, falls, and staying steady", "Lin and Ferrucci, writing in Archives of Internal Medicine in 2012, associated every 10 decibels of hearing loss with roughly 1.4 times the odds of a fall. The reasons are still being sorted out: the inner ear helps govern balance, and some scientists suspect that straining to hear leaves less mental bandwidth for staying oriented. The link is association rather than settled cause, but falls are serious enough to take seriously. If your footing feels less sure than it once did, mention it when you come in for a [hearing evaluation](/hearing-testing/)."],
+      ["Mood and mental energy", "Difficulty hearing wears on mood. When conversation becomes work, when you miss the joke or the punchline lands a beat late, frustration and self-consciousness build. Over time some people slip toward low mood or anxiety about social situations. This is not a character flaw or an inevitable part of aging; it is a predictable response to a fixable communication problem, and it often eases once hearing is addressed."],
+      ["Hearing and thinking over time", "The connection that draws the most attention is between hearing loss and cognitive decline. The Lancet Commission on dementia prevention lists untreated hearing loss among the modifiable risk factors that appear to raise the odds of decline, and it describes the relationship in careful terms. Careful is the right word: association is not proof, and no one can promise that treating your hearing will hold cognitive problems off. What is fair to say is that the link is steady across studies, and that caring for your hearing is one of the more approachable items on any prevention list."],
+      ["Why a hearing test is the sensible move", "You do not need certainty about any single condition to make a smart call here. A hearing test is short, comfortable, and low-risk, and it tells you plainly whether hearing is part of what you have been feeling. If it is, options range from simple [hearing aids](/products/hearing-aids/) to guidance built around [older adults](/hearing-aids-for-seniors/) who want to stay active and engaged. [Our audiologists](/about-us/) will walk you through the results without pressure and explain what they do and do not mean."],
+    ["How hearing connects to other conditions", "See how hearing connects to other conditions on our [Hearing and Your Health](/hearing-better/hearing-and-your-health/) page."]
+  ],
+    bullets: ["Listening effort", "Social withdrawal", "Balance & falls", "Mood & energy", "Cognitive risk", "San Mateo & San Carlos"],
+    faqs: [
+      ["Is untreated hearing loss really a health issue, or just an inconvenience?", "It is both. The inconvenience is real, but untreated loss is also linked to isolation, low mood, greater fall risk, and cognitive decline. Not every link is proven cause, yet together they make a strong case for having your hearing checked rather than waiting."],
+      ["Does treating hearing loss reverse these risks?", "Treatment reliably eases the daily costs — the fatigue, the missed conversation, the withdrawal — and those improvements show up quickly. Whether it prevents conditions like dementia is still being studied, so we will not promise that. The everyday benefits are reason enough on their own."],
+      ["I have had hearing loss for years. Is it too late to help?", "No. Treating hearing improves communication and connection at any age and after any length of time. A hearing evaluation is the right first step for understanding your options, whatever your starting point."],
+      ["How do I bring this up with a parent I am worried about?", "Suggest a hearing check rather than opening with concerns about memory or safety. Families often find that hearing explains part of what looked like confusion or withdrawal. [Our audiologists](/about-us/) can test gently and explain the findings without alarm."],
+    ],
+    image: "/assets/blog/what-are-the-health-implications-of-hearing-loss-1.svg",
+    imageLabel: "One sense, wired into the whole of your health",
+    image2: "/assets/blog/what-are-the-health-implications-of-hearing-loss-2.svg",
+    image2Label: "Where untreated hearing loss reaches beyond the ears",
+    image2Caption: "Most of these effects are reversible or manageable, and a hearing test is where clarity begins.",
+  },

@@ -1,0 +1,30 @@
+  "san-pablo": {
+    name: "San Pablo",
+    county: "Contra Costa County",
+    region: "east-bay",
+    nearestOffice: "San Mateo",
+    approxDrive: "roughly 50 minutes across the bay",
+    distanceTier: "far",
+    geo: { lat: 37.9621, lng: -122.3455 },
+    motif: "downtown",
+    lede:
+      "San Pablo is a compact, densely settled city in West County, wrapped by Richmond and threaded by the busy San Pablo Avenue corridor. Our audiology offices are over on the Peninsula, roughly 50 minutes across the bay, so we're honest that we're a destination rather than a neighborhood option for San Pablo patients.",
+    hook: [
+      "Straightforward, specialized care across the bay",
+      "Everyday life in San Pablo runs through plenty of noisy places, and hearing well in them takes a careful fitting rather than a one-size guess. We're upfront that we're across the bay, not around the corner — but for thorough [testing](/hearing-testing/), specialized tinnitus work, and fittings verified with real-ear measurement, San Pablo patients do make the trip, and we make each visit worth it.",
+    ],
+    localScene: [
+      "A dense city along San Pablo Avenue",
+      "San Pablo packs a lot into a small footprint — the San Pablo Avenue commercial spine, Davis Park, the creekside greenery of Wildcat Creek, and the shops around San Pablo Towne Center. It's a busy, urban setting full of everyday listening demands. We fit and verify hearing aids to hold up across those environments, and keep up the follow-up care that makes devices last and keep working.",
+    ],
+    whyHere:
+      "San Pablo patients who come to us are usually after something specific — a meticulous evaluation, honest device guidance, or dedicated [tinnitus care](/tinnitus/) including Lenire. For a simple test we'll gladly say a closer provider may do; we're here for the specialized cases.",
+    landmarks:
+      "We're roughly 50 minutes from San Pablo Avenue, Davis Park, and San Pablo Towne Center, crossing the bay to our San Mateo office.",
+    faqs: [
+      ["Why travel across the bay from San Pablo?", "For routine care, a local provider is the practical choice. Patients come to us for specialized tinnitus treatment, Lenire, second opinions, and difficult fittings — the depth of care worth the drive."],
+      ["Do you treat tinnitus?", "Yes. Our practice is tinnitus-focused, including Lenire for suitable candidates. We evaluate what's driving the ringing, then build a management plan around it. Call 650-342-9449 to learn more."],
+      ["Will hearing aids help in noisy, everyday settings?", "They can, when they're fit and verified properly. We use speech-in-noise testing and real-ear measurement so devices perform in busy places, not just the exam room."],
+    ],
+    consolidatedInto: "contra-costa-county",
+  },

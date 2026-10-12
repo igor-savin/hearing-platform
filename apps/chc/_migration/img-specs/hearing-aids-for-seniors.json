@@ -1,0 +1,12 @@
+{
+  "slug": "hearing-aids-for-seniors",
+  "hero": { "title": "Hearing Aids for Seniors", "icon": "hearingaid", "accent": "aqua" },
+  "info": { "title": "Choosing Senior Hearing Aids", "subtitle": "Five steps to a device that fits your life",
+    "rows": [
+      {"title": "Start with a test", "desc": "A hearing evaluation maps your exact loss"},
+      {"title": "Weigh your dexterity", "desc": "Match controls and battery to steady hands"},
+      {"title": "Pick a style", "desc": "Behind-the-ear or custom in-the-ear"},
+      {"title": "Choose useful features", "desc": "Rechargeable, Bluetooth, TV streaming"},
+      {"title": "Get a real fitting", "desc": "Professional tuning and follow-up care"}
+    ] }
+}

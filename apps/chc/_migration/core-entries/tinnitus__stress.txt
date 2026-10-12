@@ -1,0 +1,38 @@
+"/tinnitus/stress/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Stress and Tinnitus: Breaking the Vicious Cycle",
+  intro: [
+    "Stress can make tinnitus louder, sharper, and harder to ignore, and tinnitus itself can create more stress, worry, and exhaustion. If you feel stuck in this loop, you are not alone, and there are ways to change how your brain and body respond to the sound.",
+    "On this page, our Bay Area audiologists explain [how stress and tinnitus interact](/tinnitus-tech-stress-and-bay-area-life-why-your-brain-wont-switch-off/), why your fight-or-flight system matters, and how patients in San Mateo, San Carlos, and across the Peninsula can use practical tools to reduce distress, even if the sound does not completely disappear.",
+    "While you may not be able to flip a switch and turn tinnitus off, you can change how your brain reacts to it. For the underlying science, see [what tinnitus is](/tinnitus/what-is-tinnitus/)."
+  ],
+  sections: [
+    ["How stress and tinnitus are connected", "Stress does not cause tinnitus on its own in most people, but it can trigger tinnitus to appear in someone already at risk, make existing tinnitus sound louder or more intrusive, and increase how much attention and emotion your brain gives to the sound. Over time, the brain can start to link tinnitus with danger or frustration, keeping your nervous system on high alert and making the sound feel bigger than it is."],
+    ["What stress does in the body", "When you are stressed, your fight-or-flight system activates, producing a faster heart rate and breathing, muscle tension in the jaw, neck, and shoulders, and higher levels of stress hormones like adrenaline and cortisol. For someone with tinnitus, these changes can increase how much you notice the sound, make it feel louder even when the physical signal has not changed, amplify anxious thoughts, and make quiet environments like bedtime feel more uncomfortable. Sleep disruption is especially common."],
+    ["The vicious cycle", "Many patients describe a repeating pattern. First stress rises from work, family, or cost-of-living pressures. Then [tinnitus gets louder](/tinnitus/getting-louder/), or feels louder, because your alert nervous system turns up the internal volume, especially in quiet moments. Distress increases with thoughts like I can't live like this or what if something is seriously wrong. Finally the loop reinforces itself: the more distressed you feel, the more your brain scans for tinnitus. Counseling-based approaches help you step out of this loop."],
+    ["Recognizing your personal patterns", "It helps to track when tinnitus feels louder, your stress level before and during spikes, and how sleep, caffeine, and alcohol affect your perception. Common patterns include evening and bedtime spikes when the day quiets down, work and commute stress that leaves you tense, harsher tinnitus after coffee or energy drinks, and quiet thinky time bringing the sound front-and-center if your brain pairs silence with worry."],
+    ["When stress around tinnitus is a sign to seek help", "It is reasonable to feel frustrated when tinnitus first appears, but reach out if you notice persistent trouble sleeping, increasing irritability or hopelessness, avoiding social or quiet situations, worsening anxiety or panic, or using alcohol or medications in risky ways to escape the noise. If tinnitus distress ever makes you feel unsafe or like you might harm yourself, please contact emergency services or a crisis hotline right away. Support is available even when it does not feel that way."],
+    ["Treatment and everyday self-care", "Most patients do best with a combination of approaches: addressing underlying contributors like hearing loss or TMJ, improving the sound environment with hearing aids and [sound therapy](/tinnitus/sound-therapy/), changing your relationship to the sound through CBT-based counseling and habituation, and supporting the nervous system with lifestyle and relaxation tools. Small daily habits help too, including gentle background sound, short relaxation breaks, regular movement, sensible hearing protection, and connection with others rather than facing tinnitus alone."]
+  ],
+  bulletLinks: [
+    ["Coping with tinnitus anxiety", "/tinnitus/anxiety-management/"],
+    ["Sound therapy for tinnitus", "/tinnitus/sound-therapy/"],
+    ["Tinnitus relief exercises", "/tinnitus/exercises/"],
+    ["Managing tinnitus at night", "/tinnitus/sleep-strategies/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"],
+    ["Start with a hearing test", "/hearing-testing/"]
+  ],
+  takeaways: [
+    "Stress rarely causes tinnitus by itself, but it can make the sound feel louder and more threatening.",
+    "The stress-tinnitus loop is self-reinforcing, and breaking it means calming both the nervous system and the thoughts about tinnitus.",
+    "Persistent low mood, panic, or risky coping deserve professional support alongside audiology care."
+  ],
+  faqs: [
+    ["Can stress alone cause tinnitus?", "In most people stress does not cause tinnitus on its own, but it can trigger it in someone already at risk and make existing tinnitus feel louder and more intrusive. That is why stress management is part of treatment, not a side note."],
+    ["Why does my tinnitus spike in the evening?", "As the day quiets down and your mind slows, there is less background sound to compete with tinnitus, and worries about the next day or about sleep itself can ramp up how loud it feels."],
+    ["Will reducing stress make my tinnitus quieter?", "It can reduce how loud and bothersome tinnitus feels, even if the underlying signal does not change. Calming the nervous system and reframing anxious thoughts are central to most tinnitus management plans."],
+    ["When should I get professional help?", "If tinnitus-related stress is disrupting sleep, mood, work, or relationships, or you are avoiding activities you used to enjoy, a combination of audiology care and mental health support can make a significant difference. You can reach our team at 650-342-9449."]
+  ],
+  image: "/assets/core/tinnitus__stress.svg",
+  imageLabel: "The stress-tinnitus connection"
+},

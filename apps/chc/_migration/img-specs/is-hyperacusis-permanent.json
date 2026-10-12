@@ -1,0 +1,34 @@
+{
+  "slug": "is-hyperacusis-permanent",
+  "hero": {
+    "title": "Hyperacusis Outlook",
+    "icon": "soundwave",
+    "accent": "aqua"
+  },
+  "info": {
+    "title": "Five Things to Know About the Outlook",
+    "subtitle": "Often improves, but not always quickly",
+    "rows": [
+      {
+        "title": "No cure",
+        "desc": "But symptoms may improve over time"
+      },
+      {
+        "title": "Sound therapy",
+        "desc": "Often helps tolerance in 6 to 12 months"
+      },
+      {
+        "title": "Pain type is slower",
+        "desc": "Months and years, with possible setbacks"
+      },
+      {
+        "title": "Do not over-protect",
+        "desc": "All-day plugs can make it worse"
+      },
+      {
+        "title": "Get help early",
+        "desc": "See a clinician if sounds feel unbearable"
+      }
+    ]
+  }
+}

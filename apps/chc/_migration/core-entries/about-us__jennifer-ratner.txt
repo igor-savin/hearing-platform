@@ -1,0 +1,29 @@
+"/about-us/jennifer-ratner/": {
+  kicker: "Meet the Team",
+  headline: "Jennifer Ratner, AuD",
+  intro: [
+    "Dr. Jennifer Ratner was awarded her doctorate in audiology from Vanderbilt University School of Medicine. She worked as a research assistant in the Dan Maddox Hearing Aid Research Laboratory at Vanderbilt University and completed her externship at the Veterans Affairs Medical Center in Nashville, TN.",
+    "Dr. Ratner went on to work at a private practice in Manhattan prior to joining our staff. As a music lover and former musician, she enjoys meeting the unique needs of musicians with hearing loss."
+  ],
+  sections: [
+    ["Credentials & training", "Dr. Ratner earned her B.A. in Communication Sciences and Disorders, Magna Cum Laude, from Florida State University in 2008, and her Au.D. in Audiology from Vanderbilt University School of Medicine in 2012. She is board certified by the American Academy of Audiology and holds the Tinnitus Management (CH-TM) certificate. She is licensed in New York State and as a New York State Hearing Aid Dispenser, and received the American Academy of Audiology 2013-2014 Scholar Award. In 2017, she was awarded the Rising Stars Top 40 Under 40 award from the Business Council of Westchester."],
+    ["Focus & approach", "She has a strong background in diagnostic testing, fitting and verification of hearing aids, counseling and orientation, and auditory rehabilitation. Dr. Ratner is a member of the American Academy of Audiology, accredited by the American Speech-Language-Hearing Association, and a fellow of the Tinnitus Practitioners Association."]
+  ],
+  bullets: [
+    "Diagnostic testing and hearing aid fitting and verification",
+    "Counseling, orientation, and auditory rehabilitation",
+    "Tinnitus Management (CH-TM) certificate holder",
+    "Special focus on musicians with hearing loss",
+    "Member, American Academy of Audiology"
+  ],
+  takeaways: [
+    "Doctorate in audiology from Vanderbilt University School of Medicine, with an externship at the VA Medical Center in Nashville.",
+    "Board certified by the American Academy of Audiology and licensed in New York State."
+  ],
+  faqs: [
+    ["How do I schedule with Dr. Ratner?", "Call 650-342-9449 to request an appointment with [our audiology team](/about-us/)."]
+  ],
+  image: "/assets/team/dr-jennifer-ratner-audiologist-san-mateo.jpg",
+  imageLabel: "Jennifer Ratner, AuD",
+  imageAlt: "Dr. Jennifer Ratner, audiologist at California Hearing Center",
+},

@@ -1,0 +1,39 @@
+"/hyperacusis/": {
+  kicker: "Tinnitus & Sound Sensitivity",
+  headline: "Hyperacusis (Sound Sensitivity) Help in the Bay Area",
+  intro: [
+    "When everyday sounds feel uncomfortably loud, sharp, or even painful, it can quickly affect sleep, work, relationships, and your willingness to leave the house. California Hearing Center helps Bay Area patients understand what is driving sound sensitivity and build an evidence-based plan to rebuild comfort with sound, at your pace.",
+    "Many people feel stuck between avoiding sound because it hurts and needing sound because silence can make tinnitus or anxiety feel worse. That is why we focus on a plan that is both safe and realistic for daily life.",
+    "We serve San Mateo, San Carlos, [San Francisco](/areas-we-serve/san-francisco/), the Peninsula, the South Bay, and the East Bay. If tinnitus is also part of your picture, our [tinnitus resources](/tinnitus/) work hand in hand with this page."
+  ],
+  sections: [
+    ["What hyperacusis is", "[Hyperacusis is a type of decreased sound tolerance](/hyperacusis-what-is-it-and-what-can-i-do/). It can make ordinary sounds, such as dishes clinking, a child's voice, a coffee grinder, traffic, or transit announcements, feel disproportionately intense, uncomfortable, or painful. It is not the same as simply disliking noise; the volume that most people tolerate easily can feel like too much."],
+    ["Hyperacusis, misophonia, and phonophobia", "These related terms describe different experiences. Hyperacusis is mainly about volume tolerance. Misophonia is a strong emotional reaction to specific trigger sounds. Phonophobia is fear-based avoidance that can develop when sound feels threatening. Sorting out which pattern fits you, sometimes more than one, helps shape the right plan."],
+    ["Can you have it with normal hearing?", "Yes. Some people have normal hearing thresholds but reduced sound tolerance. Others have hearing loss, tinnitus, migraine patterns, or stress physiology contributing to their sensitivity. A careful [hearing evaluation](/hearing-testing/) helps separate the sound-tolerance problem from other factors that can amplify it."],
+    ["Common symptoms", "People describe sound sensitivity in different ways. Some feel pain, some feel overwhelm, and some feel a fight-or-flight response to sound. Common experiences include everyday sounds feeling too loud or physically uncomfortable, fatigue or irritability after restaurants, meetings, or errands, avoiding social settings, open offices, or transit, feeling anxious about unpredictable sound environments, and sensitivity alongside tinnitus, jaw and neck tension, or migraine patterns."],
+    ["Why sound sensitivity happens", "Hyperacusis is not one single diagnosis with one single cause. It can follow noise exposure or acoustic shock, develop alongside tinnitus, appear with migraine patterns, or become reinforced by stress and avoidance. Tinnitus and hyperacusis often occur together, and when your nervous system is on high alert, sound can feel more threatening. The most helpful next step is a careful evaluation that separates the tolerance problem from the factors amplifying it."],
+    ["What actually helps", "Evidence-based hyperacusis care typically combines education, counseling, and a structured plan to rebuild tolerance using sound enrichment and gradual exposure, without pushing you into painful spikes. The goal is not to tough it out but to use repeatable, safe exposure that steadily improves comfort with everyday sound. We tailor the plan to your triggers, your daily environments, and your goals for sleep, work, social life, and commuting."]
+  ],
+  bulletLinks: [
+    ["Coping and gradual exposure", "/hyperacusis/coping/"],
+    ["Is hyperacusis permanent?", "/is-hyperacusis-permanent/"],
+    ["When to seek help (red flags)", "/hyperacusis/when-to-seek-help/"],
+    ["Start with a hearing test", "/hearing-testing/"],
+    ["Tinnitus and sound sensitivity", "/tinnitus/"],
+    ["What is tinnitus", "/tinnitus/what-is-tinnitus/"],
+    ["Our tinnitus therapy program", "/services/tinnitus-therapy/"]
+  ],
+  takeaways: [
+    "Hyperacusis is reduced tolerance to everyday sound, and it can occur with or without measurable hearing loss.",
+    "It often overlaps with tinnitus, and treatment frequently needs to address both sides.",
+    "The most effective care rebuilds tolerance gradually with sound enrichment and counseling, not silence or toughing it out."
+  ],
+  faqs: [
+    ["Is hyperacusis the same as just not liking loud noise?", "No. Hyperacusis is a genuine decrease in sound tolerance, where sounds most people handle easily feel disproportionately intense, uncomfortable, or painful. It is different from a preference for quiet."],
+    ["Do earplugs help or hurt?", "Hearing protection is appropriate for truly loud environments, but wearing earplugs all day in ordinary settings can backfire for some people by increasing sensitivity over time. We help you find the right balance."],
+    ["Can hyperacusis get better?", "Many people improve with a gentle, consistent plan that gradually rebuilds tolerance while managing tinnitus, stress, and avoidance. Progress tends to come from small, repeatable wins rather than dramatic challenges."],
+    ["Should I see a doctor or an audiologist first?", "If symptoms are building gradually without red flags, starting with an audiology evaluation is often the right first step. Sudden hearing loss, severe vertigo, or neurologic symptoms need urgent medical care first."]
+  ],
+  image: "/assets/core/hyperacusis.svg",
+  imageLabel: "Understanding and managing sound sensitivity"
+},

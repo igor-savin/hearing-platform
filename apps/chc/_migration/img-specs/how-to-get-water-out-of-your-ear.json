@@ -1,0 +1,12 @@
+{
+  "slug": "how-to-get-water-out-of-your-ear",
+  "hero": { "title": "Clearing a Blocked Ear", "icon": "ear", "accent": "gold" },
+  "info": { "title": "How to Clear Water From Your Ear", "subtitle": "Safe steps to try, and when to call a professional.",
+    "rows": [
+      {"title": "Tilt and drain", "desc": "Face the ear down and let gravity pull water out"},
+      {"title": "Tug the earlobe", "desc": "Gently pull down and back to open the canal"},
+      {"title": "Move your jaw", "desc": "Yawn or chew to shift trapped water loose"},
+      {"title": "Warm air or drops", "desc": "Low-heat dryer or OTC drying drops finish it"},
+      {"title": "Know the red flags", "desc": "Pain, drainage, or fever means see a pro"}
+    ] }
+}

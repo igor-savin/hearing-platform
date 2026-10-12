@@ -1,0 +1,27 @@
+"/about-us/jarna-kothari/": {
+  kicker: "Meet the Team",
+  headline: "Jarna Kothari, Practice Administrator",
+  intro: [
+    "Jarna Kothari is the Practice Administrator at California Hearing Center. Patient services, medical billing, health information management, medical records, referrals and the day-to-day running of the offices are hers.",
+    "She has {{yearsJarna}} years of healthcare experience behind that, much of it supporting patients and clinical teams at the same time."
+  ],
+  sections: [
+    ["Background", "Jarna holds a Bachelor's degree in Speech Language Pathology and Audiology, so the clinical vocabulary of an audiology practice is not new to her. If you call about a bill, a referral or a record, that is her desk."]
+  ],
+  bullets: [
+    "{{yearsJarna}} years of healthcare experience",
+    "Patient services and practice operations",
+    "Medical billing and health information management",
+    "Bachelor's degree in Speech Language Pathology and Audiology"
+  ],
+  takeaways: [
+    "Practice Administrator with {{yearsJarna}} years of healthcare experience across patient services and operations.",
+    "Holds a Bachelor's degree in Speech Language Pathology and Audiology."
+  ],
+  faqs: [
+    ["How do I reach the practice?", "Call 650-342-9449 to request an appointment with [our audiology team](/about-us/)."]
+  ],
+  image: "/assets/team/jarna-kothari-practice-administrator-san-mateo.jpg",
+  imageLabel: "Jarna Kothari, Practice Administrator",
+  imageAlt: "Jarna Kothari, Practice Administrator at California Hearing Center",
+},

@@ -1,0 +1,12 @@
+{
+  "slug": "causes-of-ear-itching",
+  "hero": { "title": "Why Ears Itch", "icon": "ear", "accent": "gold" },
+  "info": { "title": "What Makes Ears Itch", "subtitle": "Five common triggers and how to handle each",
+    "rows": [
+      {"title": "Dry canal skin", "desc": "Low humidity and lost oils leave skin flaky"},
+      {"title": "Earwax imbalance", "desc": "Too little or too much both irritate"},
+      {"title": "Cotton swab use", "desc": "Swabs scrape and pack wax deeper"},
+      {"title": "Skin conditions", "desc": "Eczema, psoriasis, and dermatitis reach the ear"},
+      {"title": "Moisture and devices", "desc": "Trapped water or a tight earbud fit"}
+    ] }
+}
