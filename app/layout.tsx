@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { FOUNDED } from "./data/practice";
 import { LOCATIONS, postalAddress, schemaHours, type Location } from "./data/locations";
-import Script from "next/script";
+import { TagLoader } from "./site/TagLoader";
 import { ConversionTracking } from "./site/ConversionTracking";
 import "./globals.css";
 
@@ -283,11 +283,6 @@ export default function RootLayout({
           Skip to main content
         </a>
         {GTM_ID && (
-          <Script id="gtm-init" strategy="lazyOnload">
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
-          </Script>
-        )}
-        {GTM_ID && (
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
@@ -297,46 +292,16 @@ export default function RootLayout({
             />
           </noscript>
         )}
-        {GA4_ID && (
-          <>
-            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`} strategy="lazyOnload" />
-            <Script id="ga4-init" strategy="lazyOnload">
-              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');`}
-            </Script>
-          </>
-        )}
-        {WHATCONVERTS_ID && (
-          <>
-            {/* $wc_leads must exist before the tracker loads — it snapshots the
-                landing URL and referrer, which is how WhatConverts attributes a
-                call to its source. Loading the tracker without it loses that. */}
-            <Script id="whatconverts-init" strategy="lazyOnload">
-              {`var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};`}
-            </Script>
-            <Script
-              id="whatconverts-tracking-script"
-              src={`https://s.ksrndkehqnwntyxlhgto.com/${WHATCONVERTS_ID}.js`}
-              strategy="lazyOnload"
-            />
-          </>
-        )}
-        {DATAFAST_ID && (
-          <Script
-            id="datafast-tracking"
-            data-website-id={DATAFAST_ID}
-            data-domain={siteUrl}
-            data-disable-payments="true"
-            src="https://datafa.st/js/script.js"
-            strategy="lazyOnload"
-          />
-        )}
-        {VISIBILITYKIT_ID && (
-          <Script
-            id="vk-core"
-            src={`https://cdn.visibilitykit.ai/t/${VISIBILITYKIT_ID}/vk.js`}
-            strategy="lazyOnload"
-          />
-        )}
+        <TagLoader
+          ids={{
+            gtm: GTM_ID,
+            ga4: GA4_ID,
+            whatconverts: WHATCONVERTS_ID,
+            datafast: DATAFAST_ID,
+            datafastDomain: siteUrl,
+            visibilitykit: VISIBILITYKIT_ID,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
