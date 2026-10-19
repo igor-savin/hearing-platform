@@ -16,6 +16,19 @@ Run these from the repository root.
 - `npm run dev:chc` or `npm run dev:aaw` starts one site.
 - `npm run build:chc` or `npm run build:aaw` builds one site.
 - `npm run typecheck` checks types in both sites.
+- `npm run check:robots` checks the built robots.txt of both sites. Build both sites first.
+- `npm run check:robots:live` checks the live robots.txt of both sites.
+
+## Meta AI search (Meta-WebIndexer)
+
+Meta says that allowing the `meta-webindexer` crawler helps Meta AI cite and link to a site. Meta Muse uses Meta AI search.
+
+- Both `robots.ts` files carry a separate `meta-webindexer` group. It allows everything except the private paths.
+- Keep the private `Disallow` lines in that group. A crawler that matches a named group ignores the `*` group.
+- `meta-externalagent` collects content for AI training. It is not named. It is allowed by default. Changing that is a separate decision.
+- `meta-externalfetcher` may ignore robots.txt. Do not rely on robots.txt to control it.
+- Meta says robots.txt changes can take up to 24 hours to take effect.
+- Source: https://developers.facebook.com/docs/sharing/webmasters/web-crawlers
 
 ## The core package
 
