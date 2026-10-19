@@ -9,7 +9,9 @@
     "build:chc": "npm run build -w apps/chc",
     "build:aaw": "npm run build -w apps/aaw",
     "dev:chc": "npm run dev -w apps/chc",
-    "dev:aaw": "npm run dev -w apps/aaw"
+    "dev:aaw": "npm run dev -w apps/aaw",
+    "check:robots": "node packages/core/scripts/check-robots.mjs apps/chc/.next/server/app/robots.txt.body && node packages/core/scripts/check-robots.mjs apps/aaw/.next/server/app/robots.txt.body",
+    "check:robots:live": "node packages/core/scripts/check-robots.mjs https://calhearing.com/robots.txt && node packages/core/scripts/check-robots.mjs https://www.audiologyassociates.org/robots.txt"
   },
   "devDependencies": {
     "@types/node": "22.19.19",
